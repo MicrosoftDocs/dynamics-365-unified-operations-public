@@ -5,7 +5,7 @@ title: Human Resources virtual tables FAQ
 description: This article provides answers to some frequently asked questions about Human Resources virtual entities.
 author: jaredha
 ms.date: 08/23/2021
-ms.topic: article
+ms.topic: faq
 # optional metadata
 
 # ms.search.form:

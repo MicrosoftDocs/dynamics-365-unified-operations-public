@@ -41,9 +41,9 @@ After the policy is enabled with a shared default dimension field, you can't cre
 
 ## FAQ
 
-**If I use Microsoft SQL Server Reporting Services (SSRS) to share a table across all companies, can a dimension be changed from nonglobal to global?**
+**If I use Master record sharing or Single record sharing feature (SRS) to share a table across all companies, can a dimension be changed from nonglobal to global?**
 
-No. The list is static. Even if you share a custom table by using SSRS, and you try to "make it global," the table remains nonglobal. The system uses metadata that is defined in the table itself to determine whether that table is global or nonglobal.
+No. The list is static. Even if you share a custom table by using SRS, and you try to "make it global," the table remains nonglobal. The system uses metadata that is defined in the table itself to determine whether that table is global or nonglobal.
 
 **Can I disable sharing of a default dimension field?**
 

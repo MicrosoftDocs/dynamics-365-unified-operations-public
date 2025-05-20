@@ -3,7 +3,7 @@ title: Run multi-user testing by using the Performance SDK
 description: Learn about how to run multi-user testing by using Microsoft Visual Studio, the Performance software development kit (SDK), and the Task recorder test scripts.
 author: kennysaelen
 ms.author: kesaelen
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/04/2020
 ms.reviewer: twheeloc
 audience: Developer

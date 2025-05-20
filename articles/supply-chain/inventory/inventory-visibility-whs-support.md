@@ -3,7 +3,7 @@ title: Inventory Visibility support for WMS items
 description: Learn about Inventory Visibility support for items that are enabled for warehouse management processes (WMS items) with an outline on the scope of the feature.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/04/2022
 ms.reviewer: kamaybac
 ms.search.form:

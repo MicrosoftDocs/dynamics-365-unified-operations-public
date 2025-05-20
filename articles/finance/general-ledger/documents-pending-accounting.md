@@ -3,7 +3,7 @@ title: Documents pending accounting
 description: Learn about how to use the functionality on the Documents pending accounting page, which posts subledger documents when enabled.
 author: ryanCCarlson2
 ms.author: rcarlson
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/19/2023
 ms.custom:
 ms.reviewer: twheeloc

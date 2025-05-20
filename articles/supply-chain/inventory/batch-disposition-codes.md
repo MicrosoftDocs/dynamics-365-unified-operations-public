@@ -3,7 +3,7 @@ title: Use batch disposition codes to mark batches as available or unavailable
 description: Learn how to set up and use batch disposition codes to mark batches as available or unavailable for use in master planning, reservation, picking, and/or shipping.
 author: t-benebo
 ms.author: benebotg
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/16/2022
 ms.reviewer: kamaybac
 ms.search.form: PdsDispositionMaster, InventBatch

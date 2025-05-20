@@ -3,7 +3,7 @@ title: Receive electronic documents
 description: Learn how to work with incoming electronic documents, including a step-by-step process for receiving electronic invoices.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/12/2024
 ms.custom: 
 ms.reviewer: johnmichalak

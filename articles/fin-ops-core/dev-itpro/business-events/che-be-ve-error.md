@@ -3,7 +3,7 @@ title: Cloud-hosted environments can't use business events or virtual entities a
 description: Learn about how you can troubleshoot business events in cloud-hosted environments, including a PowerShell script.
 author: ramasri
 ms.author: ramasri
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 06/26/2023
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak

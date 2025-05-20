@@ -3,7 +3,7 @@ title: Install business performance planning visuals
 description: Learn how to install business performance planning visuals, including prerequisites and a step-by-step process for connecting your data.
 author: ShielaSogge
 ms.author: twheeloc
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 08/10/2024
 ms.reviewer: twheeloc
 audience: Application User

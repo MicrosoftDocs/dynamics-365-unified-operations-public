@@ -6,7 +6,7 @@ title: Dynamics 365 Human Resources customer migration to the finance and operat
 description: This article describes customer migration of Microsoft Dynamics 365 Human Resources to the finance and operations infrastructure.
 author: twheeloc
 ms.date: 12/02/2023
-ms.topic: conceptual
+ms.topic: article
 # optional metadata
 
 ms.search.form: 

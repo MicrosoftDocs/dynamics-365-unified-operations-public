@@ -3,7 +3,7 @@ title: Set up a legal entity and tax information for Panama
 description: Learn how to set up a legal entity and tax information for a company in Panama, including a step-by-step process on creating a legal entity.
 author: Cpicon85
 ms.author: v-cpicon
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/29/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -30,7 +30,7 @@ Before you begin, open the **Feature management** workspace, and verify that the
 2. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**.
 3. Select **New**, and then, in the **Overview** section, in the **Tax ID type** field, enter **RUC** (Unique Taxpayer Registry), which is one of the tax ID types for Panama.
 4. Set the method validation to **None**. Learn more in [Tax ID types for Latin America](ltm-core-tax-id-type.md).
-5. Go to **Organization administration** \> **Global address book** \> **Addresses**, select the country where the company is set, and then select **LATAM** to add the **RUC** tax ID type. For more information, see [Address setup for Latin America](ltm-core-address-setup.md).
+5. Go to **Organization administration** \> **Global address book** \> **Addresses**, select the country/region where the company is set, and then select **LATAM** to add the **RUC** tax ID type. For more information, see [Address setup for Latin America](ltm-core-address-setup.md).
 6. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Taxpayer type**, and select **New** to create a record that represents organizations.
 7. In the **Type** field, select **persona juridica**. Then add the tax ID type and the document class letter that you created. For more information, see [Taxpayer types for Latin America](ltm-core-taxpayer-type.md).
 8. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and then, in the **LATAM** section, configure the following entity tax and legal information:

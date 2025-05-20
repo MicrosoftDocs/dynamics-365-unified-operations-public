@@ -20,7 +20,7 @@ This article explains how to set the initial page shown to a user when they open
 
 By default the initial page is set to the [default dashboard](default-dashboard.md).
 
-To set the initial page for another user (as system administrator), follow these steps.
+To set the initial page for another user (as system administrator), follow these steps:
 
 1. Go to **System administration** \> **Users** \> **Users**.
 1. In the list, find and select the user you want to set up.
@@ -29,7 +29,7 @@ To set the initial page for another user (as system administrator), follow these
 1. On the **Startup** FastTab, set the **Initial page** field to your preferred initial page.
 1. Select **Save**.
 
-To set your own initial page (as a user), follow these steps.
+To set your own initial page (as a user), follow these steps:
 
 1. Open the **Settings** menu (gear icon) in the top navigation bar.
 1. Select **User options**.

@@ -1,65 +1,65 @@
 ---
 title: Propose special depreciation
-description: In Japan, a special depreciation is permitted under certain conditions. Learn about proposing special depreciations with a step-by-step process.
+description: Learn how to propose special depreciations for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 05/02/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Propose special depreciation
 
 [!include [banner](../../includes/banner.md)]
 
-In Japan, a special depreciation is permitted under certain conditions. For Reserve method, this is a two step task: post reserve, and then post reserve allocation. For Direct-off method, only one step is needed, which is the same procedure as post reserve. 
+This article explains how to propose special depreciations for Japan in Microsoft Dynamics 365 Finance.
 
+In Japan, a special depreciation is permitted under certain conditions. For the reserve method, this is a two-step task: you post the reserve, and then you post the reserve allocation. For the direct-off method, then you just post the reserve allocation. 
 
+Before you complete the following procedure, you must first confirm that the fixed asset has been acquired, and you must first select the **Fixed Asset** configuration key.
 
-Use this procedure to learn how to propose special depreciation under Reserve method.
+The following procedures use the JPMF demo company data.
 
-Make sure that the fixed asset has been acquired before following this procedure. Also, be sure that the Fixed Assets configuration key is selected.
+## **Post** reserve
 
+To post the reserve, follow these steps.
 
+1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
+1. Select **New**.
+1. In the **Name** field, enter a value.
+1. Select **Save**.
+1. Select **Lines**.
+1. Select **Proposals**.
+1. Select **Extraordinary depreciation proposal**.
+1. In the **To date** field, enter a date.
+1. Select **Filter**.
+1. In the **Criteria** field, enter a value.
+1. Select **OK**.
+1. Select **OK**.
+1. Select **Post**.
 
-This procedure uses the JPMF demo company data.
+## **Post** reserve allocation
 
+To post the reserve allocation, follow these steps.
 
-## Post Reserve
-1. Go to Fixed assets > Journal entries > Fixed assets journal.
-2. Click New.
-3. In the Name field, type a value.
-4. Click Save.
-5. Click Lines.
-6. Click Proposals.
-7. Click Extraordinary depreciation proposal.
-8. In the To date field, enter a date.
-9. Click Filter.
-10. In the Criteria field, type a value.
-11. Click OK.
-12. Click OK.
-13. Click Post.
-
-## Post Reserve allocation
-1. Go to Fixed assets > Journal entries > Fixed assets journal.
-2. Click New.
-3. In the Name field, type a value.
-4. Click Save.
-5. Click Lines.
-6. Click Proposals.
-7. Click Extraordinary depreciation proposal.
-8. In the To date field, enter a date.
-    * Depending on the Allocation start convention, the Reserve allocation start date is different.  
-9. Click Filter.
-10. In the Criteria field, type a value.
-11. Click OK.
-12. Click OK.
-13. Click Post.
+1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
+1. Select **New**.
+1. In the **Name** field, enter a value.
+1. Select **Save**.
+1. Select **Lines**.
+1. Select **Proposals**.
+1. Select **Extraordinary depreciation proposal**.
+1. In the **To date** field, enter a date. Depending on the allocation start convention, the reserve allocation start date may be different.  
+1. Select **Filter**.
+1. In the **Criteria** field, enter a value.
+1. Select **OK**.
+1. Select **OK**.
+1. Select **Post**.
 
 
 

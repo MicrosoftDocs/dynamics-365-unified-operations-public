@@ -34,7 +34,7 @@ Before you can enter registration ID, you must set up registration types for the
 | Format              | The validation format for the registration type.|
 | Can be updated      | Defines if the registration number for the registration type can be updated after it is entered.|
 | Unique              | Defines if the registration number for the registration type is unique. |
-| Primary for country | If a party is associated with one or more addresses in a particular country, and the registration ID is valid for all these addresses, you must designate one address as primary for the country/region. You can only register one ID as primary. Defines if the registration number can be entered only for primary for country/region address. |
+| Primary for country | If a party is associated with one or more addresses in a particular country/region, and the registration ID is valid for all these addresses, you must designate one address as primary for the country/region. You can only register one ID as primary. Defines if the registration number can be entered only for primary for country/region address. |
 
 ## Assign a registration type to a registration category
 A registration category is a country/region registration identifier approved for use in a particular country/region for tax, customs, and other purposes. This category defines validation rules of a particular registration ID (including check digits etc.) and inclusion registration ID in different reports. Use the page **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration categories** to assign the registration type of a particular country/region to supported registration category.

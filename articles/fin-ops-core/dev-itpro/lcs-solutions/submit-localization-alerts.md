@@ -3,7 +3,7 @@ title: Submit alerts about country/region-specific regulatory features
 description: Learn about how to use Microsoft Dynamics Lifecycle Services to submit alerts through the Regulatory alert submission service.
 author: filatovm
 ms.author: evgenypopov
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/29/2025
 ms.reviewer: johnmichalak
 ms.search.region: global

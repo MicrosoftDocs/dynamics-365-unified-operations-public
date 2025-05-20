@@ -3,7 +3,7 @@ title: Cash register functionality for Sweden
 description: This article provides an overview of the cash register functionality that is available for Sweden. 
 author: EvgenyPopovMBS
 ms.date: 04/05/2023
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Sweden

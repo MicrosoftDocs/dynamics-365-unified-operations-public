@@ -3,7 +3,7 @@ title: Price FAQ
 description: This article contains answers to frequently asked questions about pricing and discounts in Microsoft Dynamics 365 Commerce.
 author: zhizhen
 ms.date: 10/20/2023
-ms.topic: article
+ms.topic: faq
 audience: Application User
 ms.reviewer:
 ms.search.region: Global

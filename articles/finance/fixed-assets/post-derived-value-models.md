@@ -3,7 +3,7 @@ title: Post with derived books
 description: Learn how to use derived books, which include transactions that are posted automatically in journals, purchase orders, and free text invoices.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/12/2024
 ms.reviewer: twheeloc
 audience: Application User

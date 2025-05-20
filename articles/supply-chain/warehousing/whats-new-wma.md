@@ -5,7 +5,7 @@ author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: conceptual
+ms.topic: whats-new
 ms.date: 11/13/2024
 ms.custom: 
   - bap-template

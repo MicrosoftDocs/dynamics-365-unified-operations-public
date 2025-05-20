@@ -2351,8 +2351,10 @@ items:
         items:
         - name: Overview
           href: copilot/extend-copilot.md
-        - name: Architecture of Copilot in finance and operations
+        - name: Architecture of Copilot for finance and operations
           href: copilot/copilot-architecture.md
+        - name: Use Model Context Protocol for finance and operations
+          href: copilot/copilot-mcp.md
         - name: Using application context with Copilot
           href: copilot/copilot-application-context.md
         - name: Create client plugins for Copilot in finance and operations apps
@@ -2377,8 +2379,10 @@ items:
         href: ../fin-ops/copilot/faq-copilot-suggested-questions.md
       - name: Responsible AI FAQ for Workflow history summary
         href: ../fin-ops/copilot/workflow-history-summary-faq.md
-      - name: Responsible AI FAQ for Immersive Home in finance and operations apps (preview)
+      - name: Responsible AI FAQ for Immersive Home in finance and operations apps (preview)      
         href: ../fin-ops/copilot/faq-immersive-home.md
+      - name: Responsible AI FAQ for Agent management in finance and operations apps (preview)
+        href: ../fin-ops/copilot/faq-agent-mgmt.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/supply-chain-management-welcome.md
   - name: Dynamics 365 Finance 

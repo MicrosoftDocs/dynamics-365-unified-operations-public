@@ -3,7 +3,7 @@ title: Details of specific business scenarios in the JPK-V7 report
 description: Learn about details of specific business scenarios in the JPK-V7 report in Poland, including an outline on reporting overdue customer invoices.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/17/2024

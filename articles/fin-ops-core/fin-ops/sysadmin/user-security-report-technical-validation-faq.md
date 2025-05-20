@@ -3,7 +3,7 @@ title: User security role reporting and technical validation for finance and ope
 description: Get answers to frequently asked questions about integrated license management and the requirements for finance and operations apps.
 author: ceian
 ms.author: ceian
-ms.topic: article
+ms.topic: faq
 ms.date: 04/22/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -99,7 +99,7 @@ For deeper, workload-specific insights, use the following resources:
 
 Yes. The [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) provides consolidated reporting about finance and operations apps license usage. It reveals licensing gaps, such as users who don't have all the required licenses for their security roles. As license assignments are updated in the [Microsoft 365 admin center](https://admin.microsoft.com/), [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) and [Lifecycle Services](https://lcs.dynamics.com/) reporting reflects the changes. Therefore, administrators can track requirements and proactively address any issues.
 
-## What is "User Security Governance," and when does it become generally available?
+## What is "User Security Governance" and when does it become generally available?
 
 [User Security Governance](security-gov-overview.md) is a feature that gives finance and operations apps administrators better visibility into user security and more control over it. It's currently in Public Preview in Dynamics 365 version 10.0.43. General availability is targeted for July 2025, in version 10.0.44. Learn about User Security Governance in [Security governance FAQ](security-governance-faq.md).
 

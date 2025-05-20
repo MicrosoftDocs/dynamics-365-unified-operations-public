@@ -3,7 +3,7 @@ title: Pay statements and payment generation FAQ
 description: Access answers questions that are related to activities that go beyond standard payroll processing, including questions about recording payments made outside Payroll.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: faq
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User

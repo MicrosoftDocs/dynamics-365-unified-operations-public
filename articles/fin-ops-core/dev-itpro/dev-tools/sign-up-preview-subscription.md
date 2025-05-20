@@ -3,7 +3,7 @@ title: Sign up for preview subscriptions
 description: Learn about how to subscribe to the preview/partner offer and deploy an environment, including key terms and prerequisites.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/19/2024
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

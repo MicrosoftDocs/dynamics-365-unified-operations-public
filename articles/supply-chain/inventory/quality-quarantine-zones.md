@@ -3,7 +3,7 @@ title: Quarantine zones for nonconformances
 description: Learn how to create and use quarantine zones for nonconformances, including various examples of quarantine zones and a process for creating a quarantine zone.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/23/2021
 ms.reviewer: kamaybac
 ms.search.form: InventQuarantineZone

@@ -3,7 +3,7 @@ title: Database movement API - Authentication
 description: Learn about overview information about how to authenticate with the Database Movement application programming interface (API).
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 08/09/2022
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak

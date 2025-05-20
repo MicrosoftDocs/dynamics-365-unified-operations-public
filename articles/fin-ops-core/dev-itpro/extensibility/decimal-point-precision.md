@@ -3,7 +3,7 @@ title: Extending decimal point precision for selected data types
 description: Learn how to extend decimal point precision for selected data types, including overviews on data types for weight, width, height, and depth.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
-ms.topic: article
+ms.topic: concept-article
 ms.date: 09/24/2019
 ms.reviewer: johnmichalak
 audience: Developer

@@ -3,7 +3,7 @@ title: Configure invoice layout for Bahrain
 description: Learn how to configure the invoice layout for Bahrain, including prerequisites and outlines on turning on features and importing configurations.
 author: mrolecki
 ms.author: mrolecki
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/08/2020
 ms.reviewer: johnmichalak
 audience: Application User

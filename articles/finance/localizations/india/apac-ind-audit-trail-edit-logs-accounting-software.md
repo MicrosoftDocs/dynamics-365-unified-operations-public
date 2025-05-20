@@ -146,7 +146,7 @@ In March 2021, the Ministry of Corporate Affairs (MCA) in India introduced amend
 
 **I. Accessibility requirement**: Amended *Rule 3 (1)* emphasizes that books of accounts and other relevant documents that are maintained in electronic mode must remain accessible in India at all times for later reference.
 
-**II. Daily backup requirement**: Under amended *Rule 3 (5)*, companies are required to maintain a daily backup of their electronic books of accounts and other relevant documents on servers that are physically located in India, even if backups are also maintained outside the country.
+**II. Daily backup requirement**: Under amended *Rule 3 (5)*, companies are required to maintain a daily backup of their electronic books of accounts and other relevant documents on servers that are physically located in India, even if backups are also maintained outside the country/region.
 
 **III. Annual intimation requirement**: *Rule 3 (6)* requires that companies inform the Registrar about details such as the service provider's name, IP address, and location annually, when they file financial statements. If books of accounts are maintained in the cloud, the address that the service provider provided must also be disclosed.
 

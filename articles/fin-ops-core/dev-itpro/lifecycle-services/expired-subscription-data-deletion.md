@@ -101,13 +101,13 @@ Follow these steps to free up the resources, and to remove application permissio
     1. Determine whether the app is still enabled on the Microsoft Entra tenant.
 
         ```powershell
-        Get-AzureADServicePrincipal -Filter "AppId eq 'b96b7e94-b82e-4e71-99a0-cf7fb188acea'"
+        Get-AzureADServicePrincipal -Filter "AppId eq '00001111-aaaa-2222-bbbb-3333cccc4444'"
         ```
 
     1. If the preceding command returns an object, the app is currently enabled on the tenant, and it might still have access to the subscription. Remove the app from the tenant.
 
         ```powershell
-        $DDSObjectId=$(Get-AzureADServicePrincipal -Filter "AppId eq 'b96b7e94-b82e-4e71-99a0-cf7fb188acea'").ObjectId
+        $DDSObjectId=$(Get-AzureADServicePrincipal -Filter "AppId eq '00001111-aaaa-2222-bbbb-3333cccc4444'").ObjectId
         ```
 
         ```powershell
@@ -117,7 +117,7 @@ Follow these steps to free up the resources, and to remove application permissio
     1. Verify that the app has been removed.
 
         ```powershell
-        Get-AzureADServicePrincipal -Filter "AppId eq ' b96b7e94-b82e-4e71-99a0-cf7fb188acea'"
+        Get-AzureADServicePrincipal -Filter "AppId eq ' 00001111-aaaa-2222-bbbb-3333cccc4444'"
         ```
 
 ## Related topics

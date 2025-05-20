@@ -3,7 +3,7 @@ title: Responsible AI FAQ for AI summaries with Copilot
 description: Access answers to frequently asked questions about the AI technology that's used in AI summaries with Microsoft Copilot in Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.author: benebotg
-ms.topic: article
+ms.topic: faq
 ms.date: 03/26/2025
 ms.custom:
   - responsible-ai-faqs

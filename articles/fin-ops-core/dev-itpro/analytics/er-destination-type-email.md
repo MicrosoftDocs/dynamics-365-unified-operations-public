@@ -3,7 +3,7 @@ title: Email ER destination type
 description: Learn about how to configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/03/2021
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
