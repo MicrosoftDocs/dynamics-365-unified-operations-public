@@ -1,6 +1,6 @@
 ---
 title: Query item data on a mobile device
-description: Learn how to create a mobile device menu item that lets warehouse workers view key inventory details for specific items, including location, available quantity, and reserved quantity.
+description: Learn how to create a mobile device menu item that lets warehouse workers view key inventory details for specific items, including location, available quantity, and reserved quantity
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
