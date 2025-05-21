@@ -8,8 +8,6 @@ ms.custom:
   - bap-template
 ms.date: 05/28/2025
 ms.reviewer: johnmichalak
-ms.custom: 
-  - bap-template
 ---
 
 # EU Sales list for Latvia
