@@ -31,6 +31,9 @@ When Copilot reads a vendor email, it classifies the intent of the message into 
 - *Rejected* – Copilot detected that the vendor can't supply the requested purchase order.
 - *Other* – Copilot couldn't identify each of the previous intents.
 
+- > [!NOTE]
+> The agent is able to read incoming pdf attachments, but not word documents or excel sheets. 
+
 For the first two cases of intent, Copilot identifies which purchase orders the email relates to and matches the information in the email to information in the system.
 
 When you're reviewing incoming changes based on email, the system shows the original email, the current information in the system, plus the specific changes being proposed, which makes it easy to understand each change. After you've reviewed the proposal and made any corrections, the system lets you apply the changes directly to the relevant purchase order.
