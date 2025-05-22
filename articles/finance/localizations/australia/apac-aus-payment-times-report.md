@@ -40,31 +40,43 @@ Follow these steps to identify small business suppliers.
 
 In Finance, import the following versions or later of these Electronic reporting (ER) configurations from the Global repository:
 
-- Statistics on invoices version 40
-- Payment times bill model mapping version 40.10
-- Payment times bill (AU) version 40.20
+| ER configuration name | Type | Description |
+|-----------------------|------|-------------|
+| Statistics on invoices | Model | Generic model for invoice and payment statistics. |
+| Payment times bill model mapping | Model mapping | Model mapping for invoice and payment times statistics. |
+| Payment times - PTRS 2024 (AU) | Format (Excel) | Payment Times Reporting Scheme for Australia for reporting periods starting from July 1, 2024. |
+| Payment times bill (AU) | Format (Excel, CSV) | Payment Times Reporting Scheme for Australia for reporting periods before July 1, 2024. |
 
-    This configuration generates an Excel file and .csv files, and packages them in a zip file.
-
-For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information about how to import ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 ## Statistics on invoices process
+
+This section outlines the reporting process for Australia’s Payment Times Reporting Scheme, applicable to reporting periods starting July 1, 2024.
 
 Before you generate the **Payment times** report, run the **Statistics on invoices** process to generate a specific view of the payments history. This process is created for other features and consumed by the **Payment times** report process to get all invoices that have been fully and partially paid. You can run the process in real time, or you can schedule it to run in the background through batch processing.
 
 1. Go to **Accounts payable** \> **Periodic tasks** \> **Statistics on invoices**.
 2. Select **Calculate statistics**.
-3. Select the "from" and "to" dates. These dates represent the period that should be reported.
-4. Select one or more vendor posting profiles. Vendor posting profiles let you easily include vendor transactions for all vendors, a group of vendors, or a single vendor on the report that is generated. To select all available vendors, leave the field blank.
-5. Optional: Select the vendor group. The **Vendor group** field lets you introduce an additional transaction filter. To select all available vendors, leave the field blank.
-6. Select **OK** to run the process.
+3. Select the **From** and **To** dates. These dates represent the period that should be reported.
+4. Optionally, select one or more vendor posting profiles. Vendor posting profiles let you easily include vendor transactions for all vendors, a group of vendors, or a single vendor on the report that is generated. To select all available vendors, leave the field blank. These settings apply only to the reporting legal entity. Starting from the July 1, 2024 reporting period, your organization may be required by the Australian Payment Times Reporting Regulator to consolidate data from multiple legal entities into a single reporting entity. For further details, refer to the official guidance materials published by the Australian Government.
+5. Optionally, select the vendor group. The **Vendor group** field lets you introduce an additional transaction filter. To select all available vendors, leave the field blank.
+6. Optionally, to consolidate data from multiple legal entities into a single reporting entity, expand the **Cross company** FastTab select the relevant legal entities, along with the appropriate **Posting profile** and **Vendor group** for each.
 
-![Statistics on invoices page](../media/apac-aus-payment-times-reporting-01.JPG)
+![Statistics on invoices page](../media/apac-aus-ptrs-calculate-statistics-dialog.png)
+
+7. Select **OK** to run the process.
+
+![Statistics on invoices page](../media/apac-aus-ptrs-statistics-page.png)
 
 > [!NOTE]
-> When the **Calculate statistics** command is run based on the selected parameters, it selects all invoices that were fully and partially settled during a specific period for all the selected vendors. Payments for vendors that aren't small business suppliers are also included, because this process is used for another feature. The report includes the amount of all payments for a legal entity. The identification of the small vendor supplier can be found in the header section under the **Small business** slicer.
+> When the **Calculate statistics** command is run based on the selected parameters, it selects all invoices that were fully and partially settled during a specific period for all the selected vendors. Payments for vendors that aren't small business suppliers are also included. The report includes the amount of all payments for the selected legal entities and the current (reporting) legal entity. The identification of the small vendor supplier can be found in the header section under the **Small business** slicer.
+
+> [!NOTE]
+> The **Cross company** FastTab, along with the option to consolidate data from multiple legal entities into a single reporting entity, is available for reporting periods starting July 1, 2024.
 
 ### Payment times report pre-processing and generation
+
+This section outlines the reporting process for Australia’s Payment Times Reporting Scheme, applicable to reporting periods starting July 1, 2024.
 
 PTRS processing lets you create or update the booking period, and prepare all the information and metrics that are required on the **Payment times** report. The processing compares and calculates the due dates of the invoices and the receipt date of the payments that are settled to the invoice.
 
