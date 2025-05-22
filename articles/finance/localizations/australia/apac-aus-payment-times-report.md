@@ -66,10 +66,10 @@ Before you generate the **Payment times** report, run the **Statistics on invoic
 
 7. Select **OK** to run the process.
 
-![Statistics on invoices page](../media/apac-aus-ptrs-statistics-page.png)
-
 > [!NOTE]
 > When the **Calculate statistics** command is run based on the selected parameters, it selects all invoices that were fully and partially settled during a specific period for all the selected vendors. Payments for vendors that aren't small business suppliers are also included. The report includes the amount of all payments for the selected legal entities and the current (reporting) legal entity. The identification of the small vendor supplier can be found in the header section under the **Small business** slicer.
+
+![Statistics on invoices page](../media/apac-aus-ptrs-statistics-page.png)
 
 > [!NOTE]
 > The **Cross company** FastTab, along with the option to consolidate data from multiple legal entities into a single reporting entity, is available for reporting periods starting July 1, 2024.
@@ -78,35 +78,22 @@ Before you generate the **Payment times** report, run the **Statistics on invoic
 
 This section outlines the reporting process for Australia’s Payment Times Reporting Scheme, applicable to reporting periods starting July 1, 2024.
 
-PTRS processing lets you create or update the booking period, and prepare all the information and metrics that are required on the **Payment times** report. The processing compares and calculates the due dates of the invoices and the receipt date of the payments that are settled to the invoice.
+PTRS processing lets you create or update the booking period, and prepare all the information and metrics that are required on the **Payment times** report. The processing takes into account the payment terms that are specified for invoices and **Purchase agreements**.
 
 Follow these steps to process and generate the report.
 
 1. On the **Statistics on invoices** page, select **Payment times report**.
-2. Select **PTRS processing**, and create the related booking period by specifying the "from" and "to" dates.
-3. Select **OK**.
-4. Enter the information that is required according to the tax authority's guidelines:
+2. Select **PTRS processing**, and create the related booking period by specifying the **From** and **To** dates.
+3. Optionally, mark the **Recalculate dataset** checkbox to recalculated the **Dataset** for the selected period.
+4. Optionally, expand the Run in the background FastTab and configure the batch parameters to process the dataset in the background.
+5. Select **OK**.
 
-    - The name and Australian Business Number (ABN) of the legal entity
+As a result, the dataset for the PTRS is generated. To see the dataset with all the necessary information for PTRS, click the **Dataset** button on the Action pane of the **Payment times report** page.
+   
+Review the generated dataset and PTRS data. Some of the prepared information can be edited. If any dataset fields that impact the main PTRS report have been modified, you may need to recalculate the PTRS data.
+To do this, run the PTRS processing again for the same period without selecting **Recalculate dataset**. This will update only the PTRS data without altering the dataset itself.
 
-        The **Legal entity name** and **ABN number** fields are automatically filled in from the legal entity information.
-
-    - Information about the controlling corporation and head entity
-    - The reporting period
-    - Details of the person who submitted the report
-    - The approver of the report
-    - The principal governing body of the legal entity
-    - A declaration by a responsible member
-    - Payment period statistics
-    - Invoicing arrangements
-    - The supply change finance arrangement
-    - Notifiable events
-    - Report comments
-    - Submission and approval details
-
-5. Select **PTRS report** to generate the report and a .csv file that is used to enter the payment information in the tax authority portal.
-
-![Payment times report page](../media/apac-aus-payment-times-reporting-02.JPG)
+Select **PTRS report** to generate the report in Excel format that is used to enter the payment information in the tax authority portal.
 
 After the report is generated, the following statistics are included on both reports:
 
