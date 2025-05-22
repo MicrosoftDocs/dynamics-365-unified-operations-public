@@ -85,24 +85,14 @@ Follow these steps to process and generate the report.
 1. On the **Statistics on invoices** page, select **Payment times report**.
 2. Select **PTRS processing**, and create the related booking period by specifying the **From** and **To** dates.
 3. Optionally, mark the **Recalculate dataset** checkbox to recalculated the **Dataset** for the selected period.
-4. Optionally, expand the Run in the background FastTab and configure the batch parameters to process the dataset in the background.
+4. Optionally, expand the **Run in the background** FastTab and configure the batch parameters to process the dataset in the background.
 5. Select **OK**.
 
 As a result, the dataset for the PTRS is generated. To see the dataset with all the necessary information for PTRS, click the **Dataset** button on the Action pane of the **Payment times report** page.
    
 Review the generated dataset and PTRS data. Some of the prepared information can be edited. If any dataset fields that impact the main PTRS report have been modified, you may need to recalculate the PTRS data.
-To do this, run the PTRS processing again for the same period without selecting **Recalculate dataset**. This will update only the PTRS data without altering the dataset itself.
+To do this, run the **PTRS processing** again for the same period without selecting **Recalculate dataset**. This will update only the PTRS data without altering the dataset itself.
 
-Select **PTRS report** to generate the report in Excel format that is used to enter the payment information in the tax authority portal.
-
-After the report is generated, the following statistics are included on both reports:
-
-- **Standard payment periods** – The standard payment period, including the shortest and longest standard payment periods, and other changes that the entity offers to its small business suppliers at the beginning of the booking period. The information is gathered in the **Payment period statistics** session. For example, to report the most common standard payment period in calendar days, you must manually specify 30 days in the **SPP** field.
-- **Small business invoices paid** – The proportion, which is established by tax authorities. It's determined by the total number and total value of small business invoices that are paid during the booking period for each range of days. This statistic includes only small vendor transactions that are fully settled and paid during the booking period. It doesn't include partial settlements and payments, because the related metric (for example, **<20**, **21-30**, and **31-60**) can't be determined.
-- **Small Business procurement** – The total proportion of all invoice payments from small business suppliers during the booking period to all invoices that were paid.
-- **Use of supply chain finance** – If the legal entity offers a different type of arrangements, it must report the proportion (by value and number) of small business invoices that were paid under those arrangements during the booking period. In Finance, these invoices are the paid small business invoices that have a cash discount or a payment fee. When a cash discount is defined on the vendor invoice and taken if the invoice is paid by the cash discount date, this transaction is classified as supply chain finance.
-		
-> [!NOTE]
-> The file that has a Word file name extension is used for signatures and associated declarations. It isn't currently supported.
+Select **PTRS report** to generate the report in Excel format that is used to enter the payment information in the authority portal. On the Statistics on invoices dialog, in the **Format mapping** field, select the **Payment times - PTRS 2024 (AU)** format and click **OK**. To generate the PTRS in the format applicable to periods before July 1, 2024, select the **Payment times bill (AU)** format. Enter the required amount in the **Exclude credit card payments with payment amount less then** field. You can also generate the PTRS in batch mode by expanding the **Run in the background** FastTab and configuring the batch parameters accordingly. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
