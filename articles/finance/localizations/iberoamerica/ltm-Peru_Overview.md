@@ -41,9 +41,9 @@ ms.dyn365.ops.version: App 10.0.44
 - [Electronic general ledger report for Peru](ltm-peru-electronic-general-ledger.md)
 - [Electronic accounting plan for Peru](ltm-peru-accounting-plan.md)
 - [Printed ledger posting report for Peru](ltm-peru-printed-ledger-posting-report.md)
-- [Set up and generate a printed general ledger report for Peru](ltm-peru-printed-general-ledger)
-- [Set up and generate the Annual Declaration of Transactions with Third Parties (DAOT) purchases report for Peru](ltm-peru-daot-purchase-report.md)
-- [Set up and generate the Annual Declaration of Transactions with Third Parties (DAOT) sales report for Peru](ltm-peru-daot-sales-report.md)
+- [Printed general ledger report for Peru](ltm-peru-printed-general-ledger.md)
+- [Annual Declaration of Transactions with Third Parties (DAOT) purchases report for Peru](ltm-peru-daot-purchase-report.md)
+- [Annual Declaration of Transactions with Third Parties (DAOT) sales report for Peru](ltm-peru-daot-sales-report.md)
 
 
 ## Related Information
