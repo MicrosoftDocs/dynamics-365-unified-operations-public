@@ -20,6 +20,9 @@ This article explains how to set up, create, and generate the Payment times repo
 
 The Australian government established the PTRS to help improve payment times for Australian small businesses. Under the schema, large businesses and government enterprises must report their small business payment terms and times every six months during an income year. In addition, legal entities must include payment information about the goods and services that they procured from small business suppliers under a trade credit arrangement.
 
+> [!NOTE]
+> This topic outlines the reporting process for Australia’s Payment Times Reporting Scheme, applicable to reporting periods starting July 1, 2024.
+
 ## General configuration
 
 Before you generate the report, you must identify vendors as small business suppliers and import the required electronic configurations.
@@ -51,8 +54,6 @@ For more information about how to import ER configurations, see [Import Electron
 
 ## Statistics on invoices process
 
-This section outlines the reporting process for Australia’s Payment Times Reporting Scheme, applicable to reporting periods starting July 1, 2024.
-
 Before you generate the **Payment times** report, run the **Statistics on invoices** process to generate a specific view of the payments history. This process is created for other features and consumed by the **Payment times** report process to get all invoices that have been fully and partially paid. You can run the process in real time, or you can schedule it to run in the background through batch processing.
 
 1. Go to **Accounts payable** \> **Periodic tasks** \> **Statistics on invoices**.
@@ -76,8 +77,6 @@ Before you generate the **Payment times** report, run the **Statistics on invoic
 
 ### Payment times report pre-processing and generation
 
-This section outlines the reporting process for Australia’s Payment Times Reporting Scheme, applicable to reporting periods starting July 1, 2024.
-
 PTRS processing lets you create or update the booking period, and prepare all the information and metrics that are required on the **Payment times** report. The processing takes into account the payment terms that are specified for invoices and **Purchase agreements**.
 
 Follow these steps to process and generate the report.
@@ -86,13 +85,11 @@ Follow these steps to process and generate the report.
 2. Select **PTRS processing**, and create the related booking period by specifying the **From** and **To** dates.
 3. Optionally, mark the **Recalculate dataset** checkbox to recalculated the **Dataset** for the selected period.
 4. Optionally, expand the **Run in the background** FastTab and configure the batch parameters to process the dataset in the background.
-5. Select **OK**.
-
-As a result, the dataset for the PTRS is generated. To see the dataset with all the necessary information for PTRS, click the **Dataset** button on the Action pane of the **Payment times report** page.
-   
-Review the generated dataset and PTRS data. Some of the prepared information can be edited. If any dataset fields that impact the main PTRS report have been modified, you may need to recalculate the PTRS data.
-To do this, run the **PTRS processing** again for the same period without selecting **Recalculate dataset**. This will update only the PTRS data without altering the dataset itself.
-
-Select **PTRS report** to generate the report in Excel format that is used to enter the payment information in the authority portal. On the Statistics on invoices dialog, in the **Format mapping** field, select the **Payment times - PTRS 2024 (AU)** format and click **OK**. To generate the PTRS in the format applicable to periods before July 1, 2024, select the **Payment times bill (AU)** format. Enter the required amount in the **Exclude credit card payments with payment amount less then** field. You can also generate the PTRS in batch mode by expanding the **Run in the background** FastTab and configuring the batch parameters accordingly. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+5. Select **OK**. As a result, the dataset for the PTRS is generated.
+6. To see the dataset with all the necessary information for PTRS, click the **Dataset** button on the Action pane of the **Payment times report** page.
+7. Review the generated dataset and PTRS data. Some of the prepared information can be edited. If any dataset fields that impact the main PTRS report have been modified, you may need to recalculate the PTRS data. To do this, run the **PTRS processing** again for the same period without selecting **Recalculate dataset**. This will update only the PTRS data without altering the dataset itself.
+8. Select **PTRS report** to generate the report in Excel format that is used to enter the payment information in the authority portal. On the Statistics on invoices dialog, in the **Format mapping** field, select the **Payment times - PTRS 2024 (AU)** format and click **OK**. To generate the PTRS in the format applicable to periods before July 1, 2024, select the **Payment times bill (AU)** format. Enter the required amount in the **Exclude credit card payments with payment amount less then** field. You can also generate the PTRS in batch mode by expanding the **Run in the background** FastTab and configuring the batch parameters accordingly. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+9. By default, each **Payment times report** is assigned the **Status** **In progress**.  When the report is submitted to the government, you can change its **Status** to **Submitted**. **Payment times report** in the **Submitted** cannot be modified.
+10. To modify and generate a correction of a submitted **Payment times report**, change its **Status** back to **In progress**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
