@@ -29,7 +29,12 @@ Before the Dynamics 365 finance and operations apps administrator can activate t
 
 A Power Platform admin center administrator must ensure that the following prerequisites are met:
 
-- A Dataverse instance must be linked to the environment.
+- Finance and operations has been upgraded to 10.0.44 (10.0.2263.30) or later. Install pending updates in LCS.
+
+- A Dataverse environment must be linked to the Finance and Operations environment.
+
+    To verify open [LCS] (https://lcs.dynamics.com/v2) select your project and click on "Full details" for Finance and Operations your environment. In the section **Power Platform Integration** identify the Power Platform Environment information. If not available commence the indicated steps to deploy the associated Dataverse environment.
+
 - The **Copilot for Finance and Operations apps** solution (logical name: msdyn\_fnocopilot) must be installed in the environment. The minimum accepted version is 1.0.03006.1.
 - The **Copilot** feature flag must be turned on in the Power Platform admin center.
 
@@ -40,7 +45,7 @@ A Power Platform admin center administrator must ensure that the following prere
 
 - Billing must be enabled.
 
-    1. In the Power Platform admin center, go to **Billing** \> **Licenses**. 
+    1. In the Power Platform admin center, go to **Billing** \> **Licenses**.
     1. Select **Copilot Studio**.
     1. Create a new billing plan as necessary.
     1. Assign credits to the relevant environment. Learn more in [AI Builder licensing and credit management](/ai-builder/credit-management).
