@@ -266,7 +266,7 @@ To set up an online store, follow these steps.
 
 ## Online store payments setup
 
-To configure the payment accounts for your online store to use Adyen for external gift card processing, see [Configure the Adyen connector for online stores](adyen-connector-setup.mdconfigure-the-adyen-connector-for-online-stores).
+To configure the payment accounts for your online store to use Adyen for external gift card processing, see [Configure the Adyen connector for online stores](adyen-connector-setup.md#configure-the-adyen-connector-for-online-stores).
 
 #### Test connector external gift card setup
 
