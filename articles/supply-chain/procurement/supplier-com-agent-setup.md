@@ -116,7 +116,7 @@ To enable the email analysis and delivery features of the Supplier Communication
 ### Private mailbox
 
 > [!IMPORTANT]
-> Only the owner of a private mailbox can create an agent configuration and review agent results that are related to it. The owner must have permissions to [manage the agent configuration](./supplier-com-agent-setup.md#permissions-for-users-managing-agent-configuration) and [review agent results](./supplier-com-agent-setup.md#permissions-for-users-reviewing-agent-results).
+> Only the owner of a private mailbox can create an agent configuration and review agent results that are related to it. The owner must have permissions to [manage the agent configuration](./supplier-com-agent-setup.md#permissions-for-users-who-manage-the-agent-configuration) and [review agent results](./supplier-com-agent-setup.md#permissions-for-users-who-review-agent-results).
 
 To set up a private mailbox, follow these steps.
 
@@ -184,7 +184,7 @@ After you enable the Supplier Communications Agent in a sandbox environment, we 
 
 ## <a name="sample-script"></a>Update connection references and enable triggering flows by using a PowerShell script
 
-The following sample PowerShell script finishes [setting up the agent identity](#set-up-agent-identity) by updating the connection references for the agent and activating the triggering Power Automate flows.
+The following sample PowerShell script finishes [setting up the agent identity](#set-up-an-agent-identity) by updating the connection references for the agent and activating the triggering Power Automate flows.
 
 To use the script, follow these steps.
 
@@ -193,8 +193,8 @@ To use the script, follow these steps.
 
     - `environmentId` – Specify the ID of your Dataverse environment. You can find the ID in the Power Platform admin center.
     - `dataverseUrl` – Specify the URL of your Dataverse environment. You can find the URL in the Power Platform admin center.
-    - `DVConnectionName` – Specify the name of the Dataverse connector to use. The connector is named after the agent identity that you signed in as when you [created](#set-up-agent-identity) it. You can find the name on the **Connections** page in Power Apps.
-    - `MCSConnectionName` – Specify the name of the Copilot Studio connector to use. The connector is named after the agent identity that you signed in as when you [created](#set-up-agent-identity) it. You can find the name on the **Connections** page in Power Apps.
+    - `DVConnectionName` – Specify the name of the Dataverse connector to use. The connector is named after the agent identity that you signed in as when you [created](#set-up-an-agent-identity) it. You can find the name on the **Connections** page in Power Apps.
+    - `MCSConnectionName` – Specify the name of the Copilot Studio connector to use. The connector is named after the agent identity that you signed in as when you [created](#set-up-an-agent-identity) it. You can find the name on the **Connections** page in Power Apps.
 
 1. Customize the script as required.
 1. Run the script from any PowerShell console.

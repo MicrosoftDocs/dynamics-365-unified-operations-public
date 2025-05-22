@@ -42,7 +42,7 @@ When you review incoming changes that are based on an email, the system shows th
 
 The Supplier Communications Agent must be configured to monitor a specific email address for incoming messages from vendors. Follow these steps to complete the configuration.
 
-1. Sign in to the Microsoft Dynamics 365 Supply Chain Management environment as a user who has [permissions to manage the agent configuration](./supplier-com-agent-setup.md#permissions-for-users-managing-agent-configuration).
+1. Sign in to the Microsoft Dynamics 365 Supply Chain Management environment as a user who has [permissions to manage the agent configuration](./supplier-com-agent-setup.md#permissions-for-users-who-manage-the-agent-configuration).
 1. Go to **Agents** \> **Agents (Preview)**.
 1. On the **Library** tab, for **Speed up updates in purchase orders with Supplier communications agent**, select **Select**.
 1. On the **Agent configuration** page, use the dropdown menu to specify which vendors the agent should analyze emails for. Select **Any vendor** to track all vendors or **Specific vendors** to track a list of specific vendors that you provide.
