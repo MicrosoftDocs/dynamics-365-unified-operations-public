@@ -21,7 +21,10 @@ This article explains how to set up, create, and generate the Payment times repo
 The Australian government established the PTRS to help improve payment times for Australian small businesses. Under the schema, large businesses and government enterprises must report their small business payment terms and times every six months during an income year. In addition, legal entities must include payment information about the goods and services that they procured from small business suppliers under a trade credit arrangement.
 
 > [!NOTE]
-> This topic outlines the reporting process for Australia’s Payment Times Reporting Scheme, applicable to reporting periods starting July 1, 2024.
+> This topic outlines the reporting process for Australia’s Payment Times Reporting Scheme, applicable to reporting periods starting July 1, 2024. This schema version is supported in Finance version 10.0.45 and in the following builds of earlier versions:
+> - **10.0.44**: 10.0.xxxx.xx
+> - **10.0.43**: 10.0.2177.xx
+> - **10.0.42**: 10.0.2095.xx
 
 ## General configuration
 
