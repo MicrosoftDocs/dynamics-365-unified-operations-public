@@ -12,7 +12,7 @@ ms.collection:
  - bap-ai-copilot
 ---
 
-# Set up Agent management (preview)
+# Set up Agent management (production ready preview)
 
 [!include [preview-banner](../includes/preview-banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -23,7 +23,11 @@ The **Agent management** feature in finance and operations apps enables autonomo
 
 ## Prerequisites
 
-Before you can use the **Agent management** feature, a Power Platform admin center administrator must ensure that the following prerequisites are met:
+Before the Dynamics 365 finance and operations apps administrator can activate the **Agent Management** feature in the **Feature management** workspace, the following prerequisites must be met:
+
+- The [**Immersive Home**](../copilot/immersive-home.md) feature must be enabled in the **Feature management** workspace in your finance and operations environment.
+
+A Power Platform admin center administrator must ensure that the following prerequisites are met:
 
 - A Dataverse instance must be linked to the environment.
 - The **Copilot for Finance and Operations apps** solution (logical name: msdyn\_fnocopilot) must be installed in the environment. The minimum accepted version is 1.0.03006.1.
@@ -41,10 +45,7 @@ Before you can use the **Agent management** feature, a Power Platform admin cent
     1. Create a new billing plan as necessary.
     1. Assign credits to the relevant environment. Learn more in [AI Builder licensing and credit management](/ai-builder/credit-management).
 
-A Dynamics 365 finance and operations apps administrator must ensure that the following additional prerequisites are met:
-
-- The **Immersive Home** feature must be enabled in the **Feature management** workspace in your finance and operations environment.
-- The **Agent Management** feature must be activated in the **Feature management** workspace.
+Only once the prerequisites are met, a Dynamics 365 finance and operations apps administrator can enable the **Agent Management (product ready preview)** feature in the **Feature management** workspace.
 
 ## Navigation options
 

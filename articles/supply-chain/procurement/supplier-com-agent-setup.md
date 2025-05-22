@@ -28,9 +28,12 @@ To use the Supplier Communications Agent, your system must meet the following re
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
 - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the features aren't shown on your system.
-    - *(Preview) Immersive Home*
-    - *(Production ready preview) Agent management*
+
+    - [*(Production ready Preview) Immersive Home*](../../fin-ops-core/fin-ops/copilot/immersive-home.md)
+    - [*(Production ready preview) Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
     - *(Production ready preview) Supplier Communications Agent*
+
+If one of the features can not be enable verify the prerequisites in the feature documentation are fulfilled.
 
 - You must be running the following packages in the Power Platform admin center:
     - *Copilot for finance and operations apps* version 1.0.3048.2 or later

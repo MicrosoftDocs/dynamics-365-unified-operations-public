@@ -1,5 +1,5 @@
 ---
-title: Immersive Home overview (preview)
+title: Immersive Home overview (production ready preview)
 description: Learn about Immersive Home, how it helps you work hand-in-hand with AI agents, and how it helps you stay focused on the most important work items assigned to you.
 author: cabeln
 ms.author: cabeln
@@ -14,7 +14,7 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Immersive Home overview (preview)
+# Immersive Home overview (production ready preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -31,7 +31,7 @@ Immersive Home is a modern, AI-first landing page that adapts to your most impor
 To use Immersive Home, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Immersive Home* must be turned on in [feature management](../get-started/feature-management/feature-management-overview.md).
+- The feature that is named *(production ready preview) Immersive Home* must be turned on in [feature management](../get-started/feature-management/feature-management-overview.md).
 
 ## The components of Immersive Home
 
