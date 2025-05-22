@@ -58,14 +58,14 @@ Transportation management engines that rely on data that is defined in Supply Ch
 
 ## What can be used as search data in rate calculations?
 
-The data that you use when you calculate rates is controlled by the metadata configuration. For example, if you want to search for rates based on postal codes you must set up metadata based on the lookup type of a postal code.
+The metadata configuration controls the data you use when calculating rates. For example, if you want to search for rates based on postal codes you must set up metadata based on the lookup type of a postal code.
 
 ## Do all engine configurations require metadata?
 
 No, transportation management engines that are used to retrieve the data that is required for rate calculation from external systems don't need metadata. The rate data for these engines can be retrieved from external transportation carrier systems, usually through a web service. For example, can use a mileage engine that retrieves data directly from Bing maps so that you don't need a metadata for this engine.
 
 > [!NOTE]
-> The transportation management engines that are delivered with Supply Chain Management rely on data that is retrieved from the application. Engines that connect to external systems are not included with Operations. However, the engine-based extensibility model lets you build extensions using Visual Studio Tools.
+> The transportation management engines that are delivered with Supply Chain Management rely on data that is retrieved from the application. Engines that connect to external systems aren't included with Operations. However, the engine-based extensibility model lets you build extensions using Visual Studio Tools.
 
 ## <a name="config-metadata"></a>How do I configure metadata for a transportation management engine?
 
@@ -73,7 +73,7 @@ Metadata for transportation management engines is configured differently for the
 
 | Transportation management engine | Metadata configuration |
 |--|--|
-| **Rate engine** | Requires a **Rate base type**. The rate base type contains metadata for the rate base data and the rate base assignment data. The structure of rate base metadata is determined by the type of rate engine. The structure of the rate base assignment metadata is determined by the type of rate base assigner that is associated with that rate engine. You set up the rate base type of a rate engine on the **Rate engine** page and on the **Rate master** page. |
+| **Rate engine** | Requires a **Rate base type**. The rate base type contains metadata for the rate base data and the rate base assignment data. The type of rate engine determines the structure of rate base metadata. The type of rate base assigner associated with rate engine determines the structure of its rate base assignment metadata. You set up the rate base type of a rate engine on the **Rate engine** page and on the **Rate master** page. |
 | **Zone engine** | Requires metadata to be set up directly on the zone master. |
 | **Transit time engine** and **Mileage engine** | Retrieves the metadata directly from the mileage engine's configuration setup form. |
 
