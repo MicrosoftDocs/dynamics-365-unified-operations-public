@@ -42,7 +42,7 @@ In addition to the following instructions, you must also configure your Adyen ac
 
 #### Set up a processor for new credit cards
 
-To process payments across point of sale (POS) terminals, a call center, or Commerce, you must configure a new default payment processor for new credit cards. Follow these steps to configure a default payment processor.
+To process payments in Commerce Headquarters (HQ) via Adyen connector, you must configure Adyen connector and set it up as the default payment processor for new credit cards. Follow these steps to configure a default payment processor.
 
 1. Sign in to Commerce headquarters and go to **Accounts receivable \> Payments setup \> Payment services**.
 1. On the Action Pane, select **New**, and then, on the **Setup** tab, enter the following information.
@@ -247,9 +247,9 @@ To configure the Dynamics 365 Payment Connector for Adyen for call center paymen
 
 The configuration in headquarters at **Accounts receivable \> Payments setup \> Payment service** is the connector configuration used in the call center. 3D Secure (3DS) authentication isn't supported in call center. Digital wallet modern payment methods that require users to sign in are also not supported in call center, because call center agents are prohibited from collecting or using user passwords on behalf of customers.
 
-### Configure additional information for the connector
+### Configure the connector for e-commerce
 
-To configure additional information for the connector in Commerce headquarters, follow these steps.
+To configure the connector for online stores, follow these steps.
 
 1. Go to **Retail and Commerce \> Channels \> Online stores**.
 1. Select the online store to add the Dynamics 365 Payment Connector for Adyen.
@@ -284,6 +284,12 @@ To configure additional information for the connector in Commerce headquarters, 
     | Omitted payment methods | (*E-commerce and call center only*) Use this field to omit a payment method from the configuration where an iFrame element is rendered for payments as configured against the merchant account. Separate multiple values with semicolons. Strings used must match the label used in the Adyen portal. Some payment method's security criteria may interfere with the iFrame rendering, so it may be desirable to omit conflicting security criteria from the configuration.  | No | No | "applepay;googlepay" |
 
 1. On the Action Pane, select **Save**.
+
+> [!IMPORTANT]
+> If 3D Secure (3DS) is enabled with Adyen, the following setup is required.
+> -  For customers using **10.0.40**, **10.0.41** or **10.0.42** version, navigate to the Online channel that is mapped to the ecommerce website within Dynamics 365 Commerce. Expand the Adyen payment connector setup and add the following key value pair **{"D365PaymentsIsCheckoutThreeDS1AuthorisationBehaviorEnabled": "true"}** in the **Custom settings** section of the payment connector. Run 1070 and 1110 distribution schedule jobs. Once this is completed, the merchants must contact Adyen customer support to set **"checkoutThreeDS1AuthorisationBehavior"** parameter to **“Manual”** for their merchant account.
+> -  Starting **10.0.43**, the “Custom settings” property does not need to be updated in Dynamics 365 Commerce HQ as it is enabled by default, however, the **merchant still needs to contact Adyen** to set **"checkoutThreeDS1AuthorisationBehavior"** parameter to **“Manual”** for their merchant account. 
+
 
 ## Next steps
 
