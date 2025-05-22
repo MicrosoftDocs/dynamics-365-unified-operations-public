@@ -34,13 +34,13 @@ By default, the system provides two premade queries that you can use to find pur
 
     - The **Confirmed delivery date** field is blank.
     - The **Owner** field is set to your user account (the current user).
-    - The **Deliver remainder** is set to a value other than *0* (zero).
+    - The **Deliver remainder** field is set to a value other than *0* (zero).
 
 - *Delayed purchase orders* – This query finds purchase orders that are assigned to you, and that are delayed (that is, the confirmed delivery date was one or more days ago). The query uses the following specific criteria:
 
     - The **Confirmed delivery date** field is set to a date that is earlier than the current date.
     - The **Owner** field is set to your user account (the current user).
-    - The **Deliver remainder** is set to a value other than *0* (zero).
+    - The **Deliver remainder** field is set to a value other than *0* (zero).
 
 ## Configure query criteria and email settings
 
