@@ -36,8 +36,8 @@ To use the Supplier Communications Agent, your system must meet the following re
 If one of the features can not be enable verify the prerequisites in the feature documentation are fulfilled.
 
 - You must be running the following packages in the Power Platform admin center:
-    - *Copilot for finance and operations apps* version 1.0.3048.2 or later
-    - *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.3046.2 or later
+    - *Copilot for finance and operations apps* version 1.0.03054.2 or later
+    - *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03046.2 or later
 
 - Optionally, you can also use feature management to turn on the following feature if you'd like to automatically send emails. We recommend that you turn it off for sandbox environments where data such as purchase orders might not be up to date or vendor emails could be missing.
     - *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails*
