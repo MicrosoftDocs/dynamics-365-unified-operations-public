@@ -45,7 +45,7 @@ Tags were introduced in the 10.0.32 release of Dynamics 365 Finance. In each new
 
 ## Setup
 
-To use the functionality, you must enable the **Financial tags** feature in the **Feature management** workspace. The feature can be disabled at any time. If the feature is enabled but later disabled, any values that were entered for financial tags on transactions will be maintained in the database. However, they'll no longer be visible on any transactions or in inquiries in Dynamics 365 Finance.
+To use the functionality, you must enable the **Financial tags** feature in the **Feature management** workspace. The feature can be disabled at any time. If the feature is enabled but later disabled, any values that were entered for financial tags on transactions are maintained in the database. However, they'll no longer be visible on any transactions or in inquiries in Dynamics 365 Finance.
 
 The experience of entering tags on transactions resembles the experience of entering a ledger account by using financial dimensions. Tags don't use the same control as a ledger account, but still require a delimiter between the tag values. You should define the tag delimiter before you define any financial tags. On the **General ledger parameters** page, select **Financial tags**, and specify the delimiter. The delimiter that you specify must not be used in any tag values that are entered on transactions. For example, if you define a hyphen (\-) as the delimiter, the customer name that's entered as the tag value can't contain a hyphen. The delimiter can't be changed after it's defined.
 
