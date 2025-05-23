@@ -152,7 +152,7 @@ The following example shows an XML file for importing shipments for an inbound s
 ```
 
 > [!NOTE]
-> If you are importing an ASN for an inbound shipment order (`MODULE="InboundShipmentOrder"`), the `ORDERNUMBER` value must correspond to an external (source system) order number.
+> If you are importing an ASN for an [inbound shipment order](wms-only-mode-overview.md) (`MODULE="InboundShipmentOrder"`), the `ORDERNUMBER` value must correspond to an external (source system) order number.
 
 ## Inspect the results of importing an ASN file
 
