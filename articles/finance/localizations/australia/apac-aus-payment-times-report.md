@@ -30,6 +30,9 @@ The Australian government established the PTRS to help improve payment times for
 
 Before you generate the report, you must identify vendors as small business suppliers and import the required electronic configurations.
 
+**Payment Terms** section of the report contains the **Receivable terms compared to most common payment term** field that is intended to indicate whether the group's receivable terms are longer, shorter or the same as its 
+payment terms to Australian small business suppliers. For this comparison, the system uses the **Terms of payment** specified in **Accounts payable parameters** > **Ledger and Sales tax** > **Cash flow forecast** as the **Receivable terms**. 
+
 ### Identify small business suppliers
 
 Large businesses can use the Small Business Identification (SBI) tool to identify their small business suppliers. The current functionality doesn't include the process of recovering the list of small business suppliers from the SBI tool and then updating Microsoft Dynamics 365 Finance. However, the categorization of this type of suppliers is available in the **Accounts payable** module.
