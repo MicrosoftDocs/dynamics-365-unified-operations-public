@@ -4,21 +4,17 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: v-pedrobusto2025
 ms.author: v-pedrobusto
 ms.topic: overview
-ms.date: 05/12/2025
+ms.date: 05/23/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Perú
 ms.search.validFrom: 2025-05-12
-ms.search.form:
 ms.dyn365.ops.version: App 10.0.44
 ---
 
 
 # Perú overview
-[!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/banner.md)]
 
-
+[!include [banner](../../includes/banner.md)]
 
 ## Principal configurations
 
