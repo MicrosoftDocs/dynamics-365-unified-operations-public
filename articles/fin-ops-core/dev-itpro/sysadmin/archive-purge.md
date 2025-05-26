@@ -21,9 +21,7 @@ If your system doesn't already include the features described in this article, g
 
 - <To be checked with engineering team> Purge From History (preview) 
 
-## Considerations before you purge data from history table
-
-The following points must be met before you execute purge data from history table:
+The following prerequisites must be met before you execute purge data from history table:
 -  Only an archive job must been completed successfully, then user can select that archival job to have the data associated with it be purged from history table.
 -  Users must select at least one archival job before they can click “Delete history data”.
 
