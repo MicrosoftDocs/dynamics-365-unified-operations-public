@@ -34,6 +34,11 @@ To create a purge job to deleta data from history table,follow these steps.
 2. Select an Archive Job or multiple Archive Jobs of the same functional secnarios.
 3. Select **Delete History Data** to open a warning popup with explicit confirmation message, confirm and submit the purge job.
 
+## Purge job status
+1. When a customer has chosen a job to be purged, its Job status should say “Deletion queued” if it can’t be executed instantly 
+1. When a purge job is being executed, its Job Status change to 'Deletion in progress'.
+1. When a purge job has been completed, its Job Status change to 'Deleted',value of field 'Exists in history data' equal to 'No' and value of field 'Results' shows the number of records deleted.
+
 ## Frequent Asked Questions
 
 ### What is the "Purge from History" feature? 
@@ -46,10 +51,10 @@ This feature addresses the need to fully optimize storage and database performan
 The purge process only removes data from the operational history tables in Dynamics 365 Finance. The archived data in Dataverse long-term retention remains unaffected and securely accessible. Users can still retrieve archived records stored in Dataverse for compliance and reporting purposes. 
 
 ### Who can use the "Purge from History" feature? 
-The feature is available to administrators who have access to the Archiving workspace in Dynamics 365 Finance. It is currently being rolled out as part of Private Preview for participants using release update 10.0.43. 
+The feature is available to administrators who have access to the Archiving workspace in Dynamics 365.  
 
 ### What is the eligibility criteria for purging data? 
-A: The Purge from History feature is designed to work only with data from completed archive jobs. If an archival job is still in progress or has not been completed successfully, the "Delete History" button will remain disabled to prevent accidental data deletion. 
+A: The Purge from History feature is designed to work only with data from completed archive jobs. If an archival job is still in progress or has not been completed successfully, the "Delete History Data" button will remain disabled to prevent accidental data deletion. 
 
 ### Can multiple purge jobs be scheduled at the same time? 
 Yes, the feature supports scheduling multiple purge jobs to run simultaneously on different archival scenarios (e.g. general ledger and sales orders). This allows users to clean up history tables for several completed archive jobs in a single operation, improving efficiency. 
