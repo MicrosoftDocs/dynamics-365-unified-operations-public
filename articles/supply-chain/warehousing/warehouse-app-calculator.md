@@ -23,7 +23,7 @@ The Calculator supports the following enhanced gesture controls:
 - Standard numerical input and real-time calculations
 
 > [!IMPORTANT]
-> The gesture controls require a press duration of at least 500ms to activate. Brief taps will not trigger the enhanced functionality.
+> The gesture controls require a press duration of at least 500 ms to activate. Brief taps won't trigger the enhanced functionality.
 
 ## <a name="basic-operations"></a>Basic calculator functionality
 
@@ -51,7 +51,7 @@ The Calculator provides access to four basic mathematical operations through an 
    - **Subtraction** (−)
    - **Multiplication** (×)
    - **Division** (÷)
-1. Select your desired operation to continue the calculation.
+1. To configure calculation, select your desired operation.
 
 ## <a name="usage-examples"></a>Usage examples
 
@@ -60,7 +60,7 @@ The Calculator provides access to four basic mathematical operations through an 
 To perform a basic mathematical operation:
 
 1. Enter your first number using the numeric keypad.
-1. Long press the decimal point (.) to access the operations menu.
+1. To access the operations menu, long press the decimal point (.).
 1. Select your desired operation (addition, subtraction, multiplication, or division).
 1. Enter your second number.
 1. Press equals to view the result.
@@ -70,8 +70,8 @@ To perform a basic mathematical operation:
 To calculate using negative numbers:
 
 1. Enter a positive number (for example, 9).
-1. Long press the 9 to convert it to negative (-9).
-1. Long press the decimal point (.) to access the operations menu.
+1. To convert to negative, long press 9.
+1. To access the operations menu, long press the decimal point (.).
 1. Select your operation and continue the calculation.
 
 ## Troubleshooting
@@ -82,7 +82,7 @@ This section describes common issues and their solutions.
 
 **Problem:** The long press gesture doesn't activate the enhanced functionality.
 
-**Solution:** Ensure you're holding the button for at least 500ms. A brief tap will not activate the gesture control.
+**Solution:** Ensure you're holding the button for at least 500ms. A brief tap won't activate the gesture control.
 
 ### Operations menu not appearing
 
