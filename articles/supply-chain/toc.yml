@@ -3983,6 +3983,10 @@
           href: warehousing/warehouse-app-events.md
         - name: Inspect details of active Warehouse Management mobile app sessions
           href: warehousing/work-user-sessions.md
+        - name: Features of warehouse mobile
+          items:
+          - name: Calculator
+            href: warehousing/warehouse-app-calculator.md
         - name: Extend warehouse mobile processes
           items:
           - name: Process guide framework
