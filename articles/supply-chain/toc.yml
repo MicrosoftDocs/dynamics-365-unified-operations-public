@@ -3553,7 +3553,7 @@
           items:
           - name: Rating profiles
             href: transportation/tasks/setup-a-rating-profile.md
-          - name: Set up rate masters
+          - name: Set up rate masters, rate bases, and break masters
             href: transportation/tasks/set-up-rate-masters.md
           - name: Miscellaneous charges
             href: transportation/transportation-management-misc-charge.md
