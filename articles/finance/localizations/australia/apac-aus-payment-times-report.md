@@ -51,7 +51,7 @@ payment terms to Australian small business suppliers. For this comparison, the s
 
 **Miscellaneous** section of the report contains the **Percentage of Peppol enabled small business procurement** field that is intended to indicate the percentage of all small business trade credit payments in the reporting period that were Peppol eInvoice enabled payments. According to the "Payment Times Reporting: Guidance Materials": _a payment is considered eInvoice capable when the receiving reporting entity is set up to receive eInvoices and has no business rules that block or reroute them_. For more information, refer to the "Payment Times Reporting: Guidance Materials" published by Payment Times Reporting Regulator. 
 
-To identify that the legal entity is "eInvoice capable", follw these steps.
+To identify that the legal entity is "eInvoice capable", follow these steps.
 
 1. Go to **Accountrs receivable** > **Setup** > **Electronic document property types**
 2. Create a new custom property and set:
