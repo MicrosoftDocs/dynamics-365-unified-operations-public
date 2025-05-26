@@ -22,8 +22,8 @@ ms.custom:
 
 *Item inquiry* mobile device menu items provide the following key capabilities:
 
-- **Fast access to inventory details**: Workers can view where an item is stored and see how much stock is available or reserved.
-- **Support for product variants**: If an item uses product dimensions such as color or size, the app shows data for the relevant variant based on the scanned or entered information.
+- **Fast access to inventory details** – Workers can view where an item is stored and see how much stock is available or reserved.
+- **Support for product variants** – If an item uses product dimensions such as color or size, the app shows data for the relevant variant based on the scanned or entered information.
 
 ## Example scenario
 
@@ -42,12 +42,12 @@ To enable this functionality, you must configure the mobile device menu item in 
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
 1. On the Action Pane, **New** to add a mobile device menu item.
 1. Set the following values for the new menu item:
-    - **Menu item name**: Enter an internal name for the menu item (for example, *Item inquiry*).
-    - **Title**: Enter the title for the menu item as workers should see it (for example, *Item inquiry*).
-    - **Mode**: Select *Indirect*.
+    - **Menu item name** – Enter an internal name for the menu item (for example, *Item inquiry*).
+    - **Title** – Enter the title for the menu item as workers should see it (for example, *Item inquiry*).
+    - **Mode** – Select *Indirect*.
 
 1. On the **General** FastTab, set the following values:
-    - **Activity code**: Select *Item inquiry*.
-    - **Use process guide:**: This setting is automatically set to *Yes* and can't be changed.
+    - **Activity code** – Select *Item inquiry*.
+    - **Use process guide** – This setting is automatically set to *Yes* and can't be changed.
 
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device menu** and add the new menu item to each menu where it should be available to workers. Learn more in [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
