@@ -37,9 +37,9 @@ To create a purge job to deleta data from history table,follow these steps.
 3. Select **Delete History Data** to open a warning popup with explicit confirmation message, confirm and submit the purge job.
 
 ## Purge job status
-1. When a customer has chosen a job to be purged, its Job status should say “Deletion queued” if it can’t be executed instantly 
-1. When a purge job is being executed, its Job Status change to 'Deletion in progress'.
-1. When a purge job has been completed, its Job Status change to 'Deleted',value of field 'Exists in history data' equal to 'No' and value of field 'Results' shows the number of records deleted.
+1. When a purge job can’t be executed instantly, its Job status shows 'Deletion queued'.
+1. When a purge job is being executed, its Job Status shows to 'Deletion in progress'.
+1. When a purge job has been completed, its Job Status shows to 'Deleted',value of field 'Exists in history data' equal to 'No' and value of field 'Results' shows the number of records deleted.
 
 ## Frequent Asked Questions
 
