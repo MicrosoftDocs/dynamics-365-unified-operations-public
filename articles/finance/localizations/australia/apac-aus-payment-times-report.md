@@ -58,7 +58,7 @@ To identify that the legal entity is "eInvoice capable", follow these steps.
    - **Type**: **Peppol**
    - **Applicable to**: **Legal entities**
 3. Go to **Organization administration** > **Organizations** > **Legal entities**, select the reporting or subsidiary legal entity whose data is consolidated by the reporting legal entity and click **Electronic document properties** on the Action pane.
-4. Select the **Peppol** electronic document property in the list and specify **Yes** in the **Value** column. If the Value is not filled in of filled in with **No**, the legal entity is considered as not "eInvoice capable".
+4. Select the **Peppol** electronic document property in the list and specify **Yes** in the **Value** column. If the **Value** is not filled in of filled in with **No**, the legal entity is considered as not "eInvoice capable".
 5. Repeat steps 3 and 4 for each legal entity whose data is consolidated by the reporting legal entity.
 
 ### Import electronic configurations
