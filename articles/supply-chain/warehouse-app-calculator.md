@@ -95,11 +95,6 @@ This section describes common issues and their solutions.
 **Problem:** Enhanced functionality triggers during normal use.
 
 **Solution:** Adjust your input technique to use brief taps for standard number entry. Reserve longer presses only when you intend to use the enhanced gesture controls.
-
-## Related information
-
-- [Mobile app user guide](mobile-app-user-guide.md)
-- [App configuration settings](app-configuration.md)
-- [Troubleshooting mobile app issues](mobile-app-troubleshooting.md)
+ 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
