@@ -53,7 +53,8 @@ The Supplier communications agent interacts with Dataverse and Microsoft Copilot
 
 ### Set up agent identity users and assign security roles
 
-Create agent identity user accounts in both Dataverse and Dynamics 365 Supply Chain Management. Assign them the security roles shown in the following lists.
+Create agent identity user in the tenant user management. Assign a Power Automate Premium license and Copilot Studio License.
+The user must be added into both the Dataverse environment and into Dynamics 365 Supply Chain Management. Assign them the security roles shown in the following lists.
 
 - Required Dataverse user roles:
     - *Finance and Operation Basic User*
