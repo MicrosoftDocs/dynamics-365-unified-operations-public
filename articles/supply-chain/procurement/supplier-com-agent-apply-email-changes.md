@@ -31,8 +31,8 @@ When Copilot reads a vendor email, it classifies the intent of the message into 
 - *Rejected* – Copilot detected that the vendor can't supply the requested purchase order.
 - *Other* – Copilot couldn't identify each of the previous intents.
 
-- > [!NOTE]
-> The agent is able to read incoming pdf attachments, but not word documents or excel sheets. 
+> [!NOTE]
+> The agent is able to read incoming PDF attachments but not Microsoft Word or Excel documents.
 
 For the first two cases of intent, Copilot identifies which purchase orders the email relates to and matches the information in the email to information in the system.
 
