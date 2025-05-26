@@ -17,9 +17,13 @@ The ‘Archive with Dataverse long term retention’ feature decreases the space
 
 ## Prerequisites
 
-Enable feature 'Purge From History (preview)' via feature management.
+If your system doesn't already include the features described in this article, go to the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace and turn on the following feature:
 
-In addition, the following prerequisites must be met before you execute purge data from history table:
+- <To be checked with engineering team> Purge From History (preview) 
+
+## Considerations before you purge data from history table
+
+The following points must be met before you execute purge data from history table:
 -  Only an archive job must been completed successfully, then user can select that archival job to have the data associated with it be purged from history table.
 -  Users must select at least one archival job before they can click “Delete history data”.
 
