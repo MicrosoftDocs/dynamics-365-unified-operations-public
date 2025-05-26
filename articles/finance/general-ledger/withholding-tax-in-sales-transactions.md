@@ -4,7 +4,7 @@ description: Learn how to enable the calculation of withholding tax for selected
 author: kailiang
 ms.author: kailiang
 ms.date: 01/12/2021
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: kfend
 audience: Application User
 ms.search.region: Global

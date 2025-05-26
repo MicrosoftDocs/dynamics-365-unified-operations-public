@@ -3,7 +3,7 @@ title: Tax codes, tax groups, and posting definitions FAQ
 description: Access a list of frequently asked questions about tax and posting definitions, including questions about mass-updating tax codes and mass-creating tax groups.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: faq
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User

@@ -3,7 +3,7 @@ title: Planning Optimization release process and release history
 description: Learn about the release process and release history for Planning Optimization, including a table outling various changes.
 author: t-benebo
 ms.author: benebotg
-ms.topic: article
+ms.topic: concept-article
 ms.date: 02/20/2023
 ms.reviewer: kamaybac
 ---

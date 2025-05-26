@@ -3,7 +3,7 @@ title: User-based authentication FAQ
 description: Access answers to many of the most frequently asked questions about user-based authentication (device code flow) for the Warehouse Management mobile app.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: conceptual
+ms.topic: faq
 ms.date: 11/01/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
@@ -129,3 +129,7 @@ If you're using SSO and sign out from one SSO app (such as Microsoft Teams), you
 ## Will user-based authentication work with Dynamics 365 Finance + Operations (on-premises)?
 
 The Warehouse Management mobile app will continue to work with Dynamics 365 Finance + Operations (on-premises), even after service-based authentication is removed. On-premises installations use Active Directory Federation Service (AD&nbsp;FS) instead of Azure. However, the settings are similar, including the settings for user-based authentication methods such as device code flow. Learn more in [Configure the Warehousing app for on-premises deployments](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+
+## Can I authenticate using Microsoft Entra Conditional Access?
+
+No. The Warehouse Management mobile app doesn't support Microsoft Entra Conditional Access.

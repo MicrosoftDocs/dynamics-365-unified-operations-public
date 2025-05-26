@@ -3,7 +3,7 @@ title: Warehouse slotting
 description: Learn about warehouse slotting, which lets you consolidate demand by item and unit of measure from orders that have a status of Ordered, Reserved, or Released.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/13/2020
 ms.custom:
 ms.reviewer: kamaybac
@@ -88,14 +88,14 @@ Next, you must set up the template header, slotting specifications, and location
 
 1. In the header for the template, set the following values:
 
-    - **Slotting template:** _61_
-    - **Description:** _61_
+    - **Slotting template:** *61*
+    - **Description:** *61*
     - **Demand type:** *Sales order*
 
         > [!NOTE]
         > Currently, *Sales orders*, *Transfer orders*, and *Outbound shipment orders* are the only demand types that are supported.
 
-    - **Demand strategy:** _Ordered_
+    - **Demand strategy:** *Ordered*
 
         The following values are available in this field:
 
@@ -103,7 +103,7 @@ Next, you must set up the template header, slotting specifications, and location
         - **Reserved** – Only the sales order line quantities that are reserved (physical and ordered) should be considered demand.
         - **Released** – The released quantity should be considered demand.
 
-    - **Allow wave demand to use unreserved quantities:** _Yes_
+    - **Allow wave demand to use unreserved quantities:** *Yes*
 
 1. Use the **Warehouse selection** fast tab to specify the warehouse where the slotting template will apply.
 
@@ -113,7 +113,7 @@ Next, you must set up the template header, slotting specifications, and location
         - *Warehouse group* – Use the slotting template for all warehouses in the warehouse group that's selected in the **Warehouse group** field.
         - *Warehouse* – Use the slotting template only for the specific warehouse that's selected in the **Warehouse** field.
 
-    - **Warehouse** – If the **Warehouse selection** field is set to *Warehouse*, select the warehouse where the slotting template applies. 
+    - **Warehouse** – If the **Warehouse selection** field is set to *Warehouse*, select the warehouse where the slotting template applies.
     - **Warehouse group** – If the **Warehouse selection** field is set to *Warehouse group*, select the warehouse group where the slotting template applies. For more information about how to set up warehouse groups, see [Warehouse groups](warehouse-groups.md).
 
     For this scenario, set the following values:
@@ -129,13 +129,13 @@ For each sales order template that you create, follow these steps to add a line 
 1. On the **Slotting template details** FastTab, select **New** to create a template line.
 1. On the new line, set the following values:
 
-    - **Sequence:** _1_
-    - **Description:** _Fixed location_
-    - **Minimum quantity:** _1_
+    - **Sequence:** *1*
+    - **Description:** *Fixed location*
+    - **Minimum quantity:** *1*
 
         This field defines the minimum quantity of demand that is required for the line.
 
-    - **Maximum quantity:** _1000000_
+    - **Maximum quantity:** *1000000*
 
         This field defines the maximum quantity of demand that is valid for the line.
 
@@ -143,11 +143,11 @@ For each sales order template that you create, follow these steps to add a line 
 
         This field defines the unit of measure that the minimum and maximum quantities refer to.
 
-    - **Unit of Measure Tier:** _EaBoxPl_
+    - **Unit of Measure Tier:** *EaBoxPl*
 
         This field defines the units of measure of demand that are valid for the line. (Learn more in the [Set up unit-of-measure tiers for slotting](#unit-tiers) section earlier in this article.)
 
-    - **Assign slot criteria:** _Consider qty_
+    - **Assign slot criteria:** *Consider qty*
 
         The following values are available in this field:
 
@@ -155,7 +155,7 @@ For each sales order template that you create, follow these steps to add a line 
         - **Consider qty** – The system should check the locations in the picking area for inventory and should skip any locations that aren't empty.
         - **Consider on-hand** – The system should check whether any target location contains unreserved quantities for the item on the demand line. If the quantity is large enough to satisfy at least one unit of the demand line, the generated slotting plan record is reduced by the available amount. For example, if the demand is 10 cases, and one case is on hand, the located demand will be nine cases. If the demand is 10 cases, and one each is on hand, the located demand will be 10 cases.
 
-    - **Directive code:** _Slotting_
+    - **Directive code:** *Slotting*
 
         This field defines the location directive that is used to find the picking location of the replenishment work.
 
@@ -163,11 +163,11 @@ For each sales order template that you create, follow these steps to add a line 
 
         This field defines the location that inventory that is put to if a location can't be found for the quantity when the line is processed.
 
-    - **Allow let up:** _Yes_
+    - **Allow let up:** *Yes*
 
-        When this option is set to *Yes*, if any demand can't be slotted, movement work will be created to take inventory out of locations where there is inventory, but where nothing was slotted. The template is then run again. This time, it ignores the inventory in the locations. This functionality works best when the **Assign slot criteria** field is set to _Consider qty_.
+        When this option is set to *Yes*, if any demand can't be slotted, movement work will be created to take inventory out of locations where there is inventory, but where nothing was slotted. The template is then run again. This time, it ignores the inventory in the locations. This functionality works best when the **Assign slot criteria** field is set to *Consider qty*.
 
-    - **Fixed location usage:** _Only fixed locations for the product_
+    - **Fixed location usage:** *Only fixed locations for the product*
 
         The following values are available in this field:
 
@@ -182,22 +182,22 @@ For each sales order template that you create, follow these steps to add a line 
 1. Select **New** to create a second template line.
 1. On the new line, set the following values:
 
-    - **Sequence:** _2_
-    - **Description:** _Other_
-    - **Minimum Qty:** _1_
-    - **Maximum Qty:** _1000000_
+    - **Sequence:** *2*
+    - **Description:** *Other*
+    - **Minimum Qty:** *1*
+    - **Maximum Qty:** *1000000*
     - **Unit:** Leave this field blank.
-    - **Unit of measure tier:** _EaBoxPl_
-    - **Assign slot criteria:** _Consider qty_
-    - **Directive code:** _Slotting_
+    - **Unit of measure tier:** *EaBoxPl*
+    - **Assign slot criteria:** *Consider qty*
+    - **Directive code:** *Slotting*
     - **Overflow location:** Leave this field blank.
-    - **Allow let up:** _Yes_
-    - **Use fixed locations:** _Fixed and non-fixed locations_
+    - **Allow let up:** *Yes*
+    - **Use fixed locations:** *Fixed and non-fixed locations*
 
     In the query for the second line, you will now specify the criteria that are used to determine what locations the demand for that line can be slotted to.
 
 1. Select the line where the **Sequence** field is set to *2*.
-1. Select **Edit query**.
+1. Select **Select slot locations** in the FastTab toolbar (this button is labeled **Edit query** in Supply Chain Management version 10.0.43 and earlier).
 1. On the **Range** tab, select **Add** to add a line to the grid.
 1. On the new line, set the following values:
 
@@ -222,10 +222,10 @@ At least one location directive must be set up to support slotting picks. Use th
 
 1. On the **Location directives** FastTab, set the following values. Accept the default values for all other fields.
 
-    - **Work type:** _Pick_
-    - **Site:** _6_
-    - **Warehouse:** _61_
-    - **Directive code:** _Slotting_
+    - **Work type:** *Pick*
+    - **Site:** *6*
+    - **Warehouse:** *61*
+    - **Directive code:** *Slotting*
 
 1. Select **Save** to make the **Lines** FastTab available.
 
@@ -234,8 +234,8 @@ At least one location directive must be set up to support slotting picks. Use th
 1. On the **Lines** FastTab, select **New** to create a line.
 1. On the new line, set the following values.
 
-    - **From quantity:** _0_
-    - **To quantity:** _1000000_
+    - **From quantity:** *0*
+    - **To quantity:** *1000000*
 
 1. Accept the default values for the remaining fields.
 1. Select **Save** to make the **Location Directive Actions** FastTab available.
@@ -246,8 +246,8 @@ At least one location directive must be set up to support slotting picks. Use th
 1. On the new line, set the following values. Accept the default values for all other fields.
 
     - **Sequence number:** Accept the default value.
-    - **Name:** _Bulk_
-    - **Strategy:** _None_
+    - **Name:** *Bulk*
+    - **Strategy:** *None*
 
 1. Accept the default values for the remaining fields.
 1. Select **Save** to make the **Edit query** button available.
@@ -281,27 +281,27 @@ Follow these steps to create the demand that you will apply slotting to.
 
 1. Go to **Sales and marketing \> Sales orders \> All sales order**.
 1. Select **New** to create a sales order.
-1. In the **Create sales order** dialog box, in the **Customer account** field, select _US-007_.
-1. In the **Warehouse** field, select _61_.
+1. In the **Create sales order** dialog box, in the **Customer account** field, select *US-007*.
+1. In the **Warehouse** field, select *61*.
 1. Select **OK**.
 1. The new sales order is opened. It includes an empty line on the **Sales order lines** FastTab. On this line, set the following values:
 
-    - **Item:** _L0101_
-    - **Quantity:** _20_
+    - **Item:** *L0101*
+    - **Quantity:** *20*
 
 1. Select **Add line** to add a new line, and set the following values:
 
-    - **Item:** _T0100_
-    - **Quantity:** _8_
+    - **Item:** *T0100*
+    - **Quantity:** *8*
 
 1. Select **Save**.
 1. Select **New** to create a second sales order.
-1. In the **Create sales order** dialog box, in the **Customer account** field, select _US-008_.
-1. In the **Warehouse** field, select _61_.
+1. In the **Create sales order** dialog box, in the **Customer account** field, select *US-008*.
+1. In the **Warehouse** field, select *61*.
 1. The new sales order is opened. It includes an empty line on the **Sales order lines** FastTab. On this line, set the following values:
 
-    - **Item:** _T0100_
-    - **Quantity:** _1_
+    - **Item:** *T0100*
+    - **Quantity:** *1*
 
 1. Select **Save**.
 
@@ -336,6 +336,7 @@ The slotting plan shows the location that each item/quantity was assigned to, wh
 - On the Action Pane, select **Slotting plan** to view the results.
 
 > [!NOTE]
+>
 > - The **Generate demand**, **Locate demand**, and **Run replenishment** processes are now run in a sandbox. (These processes are available from the Action Pane on the **Slotting templates** page.)
 > - The **Generate demand**, **Locate demand**, and **Run replenishment** processes have a lock to ensure that they can't be triggered at the same time. Otherwise, the data that is used could be deleted.
 > - The **Generate demand** and **Locate demand** processes show a warning if the run didn't generate records, or if the records are missing information.
@@ -370,6 +371,5 @@ After all the required elements are in place, you can set up slotting to run aut
 1. Set the recurrence to run automatically, if you want.
 
 For the exercises in the scenario, do **not** set up automatic slotting.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

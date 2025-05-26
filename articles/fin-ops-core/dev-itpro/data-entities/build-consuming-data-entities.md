@@ -3,7 +3,7 @@ title: Build and consume data entities
 description: Learn how to build an entity and how to consume some out-of-band (OOB) entities in an integration scenario, including prerequisites and key concepts.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/01/2022
 ms.reviewer: johnmichalak
 audience: Developer

@@ -3,7 +3,7 @@ title: Enable Microsoft Dataverse virtual entities
 description: Learn about how to enable finance and operations apps virtual entities in Microsoft Dataverse, including an overview on how to generate virtual entities.
 author: jaredha
 ms.author: kamanick
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/16/2022
 ms.custom: NotInToc
 ms.reviewer: johnmichalak

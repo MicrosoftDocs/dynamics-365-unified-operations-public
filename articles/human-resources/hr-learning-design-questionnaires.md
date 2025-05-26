@@ -5,7 +5,7 @@ title: Create questionnaires
 description: This article describes the process for creating a questionnaire. 
 author: twheeloc
 ms.date: 07/01/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearningWorkspace

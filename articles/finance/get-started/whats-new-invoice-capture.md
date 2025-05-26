@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in Invoice capt
 author: shielas  
 ms.author: shielas
 ms.topic: whats-new
-ms.date: 02/21/2025
+ms.date: 04/21/2025
 ms.reviewer: twheeloc
 ms.custom: 
   - bap-template
@@ -23,6 +23,26 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 [!include [banner](../includes/banner.md)]
 
 This article provides information about the Invoice capture solution that automatically creates vendor invoices from digital invoice images. Learn more in [Invoice capture overview](../accounts-payable/invoice-capture-overview.md).
+
+## May 2025
+
+The May release of the invoice capture solution version 1.9.5.1 contains the following features and bug fixes.
+
+| Feature | Description |
+| --- |--- |
+|Item number doesn't appear in the side-by-side viewer in Invoice capture.| Resolved the issue where the invoice number isn't populated in the header when using the standard model.|
+|Manually selecting a purchase order overrides the invoice information with the purchase order information. | When selecting the purchase order line for an invoice item, the invoice quantity is updated with the purchase order quantity. Updated the logic to retain the details from the invoice line when selecting the purchase order line, unless the unit price, quantity, and unit of measure are all zero or empty.|
+|Improvements to invoice capture installation. | The virtual entity solution installation was timing out and causing the installation to fail. Addressed this item in the April release. In the May release, the following were added: additional retries for solution conflicts, virtual entity refresh and company data, and added exception handling for various operations.|
+
+
+## April 2025
+
+The April release of the Invoice capture solution version 1.9.3.10 contains the following features and bug fixes.
+
+| Feature | Description |
+| --- |--- |
+| Bug fix | Fixed cache issues with custom field mapping. While processing invoices using a custom model with custom fields mapped to the invoice header, users received **Can't find field ‘xxx_xxxx’ with field level '{fieldLevel}'** error. This issue was caused by an outdated internal cache. |
+| Bug fix | Performance issue - Staging invoice derivation uses ecoresreleaseddistinctproductcdsentity. Fixed an issue where captured invoices are stuck in an **In processing** state prior to being available for review. |
 
 ## February 2025
 

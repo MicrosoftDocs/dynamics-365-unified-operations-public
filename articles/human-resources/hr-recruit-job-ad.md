@@ -4,8 +4,8 @@
 title: Set up job ads in the HR Recruiting app (preview)
 description: This article explains how to set up job ads in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/01/2024
-ms.topic: article
+ms.date: 04/17/2025
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Human Resources
 
 This article explains how to set up job ads in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
-*Job ads* are an essential part of the hiring process. They're used to advertise one or more job openings in a company. Job ads are published on various platforms, such as job boards, company websites, social media, and other related channels. 
+*Job ads* are an essential part of the hiring process. They advertise one or more job openings in a company. Job ads are published on various platforms, such as job boards, company websites, social media, and other related channels. 
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -52,11 +52,11 @@ To create a job ad, fill in the following fields:
 
 ## Recruiting requests
 
-A *recruiting request* is a document that hiring managers in Dynamics 365 Finance use to create the requirement for job openings. A recruiting request can be published only if it's in an active status. After a recruiting request is published, it can't be updated. For more information, see [Recruit job candidates](hr-personnel-recruit.md). 
+A *recruiting request* is a document that hiring managers in Dynamics 365 Finance use to create the requirement for job openings. A recruiting request can be published if it has an **Active** status. After a recruiting request is published, it can't be updated. For more information, see [Recruit job candidates](hr-personnel-recruit.md). 
 
 ## Job ad statuses
-
-There are five job ad statuses:
+ 
+There are five statuses of job ads:
 
 - **Draft** – The job ad isn't saved.
 - **In progress** – The job ad was saved, and the process of adding hiring team members, adding a hiring template, or gaining approval is in progress.
@@ -95,7 +95,7 @@ To add a hiring template to a job ad, follow these steps.
 
 1. Open a job ad that's in **Draft** status.
 1. On the **Hiring process** tab, select the search field for the hiring template.
-1. Select the hiring template in the list.
+1. In the list, select the hiring template.
 
 
 ### Screening questions
@@ -143,26 +143,38 @@ In the job ad, recruiters can view the input that the approver provided.
 After the job ad is approved by the assigned approvers, recruiters can move it to the next stage.
 
 > [!NOTE]
-> All thee assigned approvers must provide input before recruiters can move the job ad to the next stage.
+> All the assigned approvers must provide input before recruiters can move the job ad to the next stage.
 
 ### Business process flow
 
 The business process flow of a job ad has the following stages:
 
-1. **Draft** – During this default stage of the business process flow, recruiters can make changes to the job ad. They can provide job ad details such as an external title, skills, an educational requirement, a description, and compensation information. They can also add hiring team members and the hiring template that is required for the hiring process. Finally, they can enable approval if it's required for the job ad.
+1. **Draft** – During this default stage of the business process flow, recruiters can make changes to the job ad. They can provide job ad details such as an external title, skills, educational requirement, a description, and compensation information. They can also add hiring team members and the hiring template that is required for the hiring process. Finally, they can enable approval if it's required for the job ad.
 1. **Approval** (optional) – This stage is shown only if approval is required for the job ad. Otherwise, it's hidden. Approvers receive notification in Teams or Outlook only when the stage is changed from **Draft** to **Approval**. Recruiters can move the job ad to the next stage only after all the approvers approve it.
 1. **Post** – This stage is the final stage of the business process flow. If the job ad is ready to be posted to the careers site, select **Finish**.
 1. **Finished** – After the job ad is finished, it's posted to the careers site, and internal and external candidates can apply for the job.
  
 ## Post a new job ad
 
-To post a new job ad, follow these steps.
+To post a new job ad using a recruiting request, follow these steps:
+1.	Create a recruiting request in Dynamics 365 Human resources. Learn more at [Recruit job candidates](hr-personnel-recruit.md). 
+2.	Select **Job Ads** from the left menu pane.
+3.	Choose **+ New**.
+4.	Select a recruiting request. All the information that's added as a part of recruiting request is extracted and displayed in the relevant fields.
+5.	Fill other required fields.
+6.	Click **Save**.
+7.	Go to the **Hiring team** tab and add hiring team members.
+8.	Go to the **Hiring process** tab and select a hiring template.
+9.	Go to the **Approvals** tab and (optional) turn on the **Approval required** tab and add approvers.
+10.	Move the business process flow from draft to the next stage. 
 
-1. Select **Job ads**.
-1. Select **New**.
-1. Fill in the required fields.
-1. Select **Save**.
-1. On the **Hiring team** tab, add hiring team members.
-1. On the **Hiring process** tab, select a hiring template.
-1.  If approval is required, on the **Approvals** tab, select **Approval required**, and add approvers.
-1. Go to **Business process flow**, and move the job ad from the **Draft** stage to the next stage.
+To post a new job ad without a recruiting request, follow these steps:
+1. Select **Job ads** from the left menu pane.
+2. Click **+New**.
+3. Fill in all the required fields.
+4. Click **Save**.
+5. Go to the **Hiring team** tab and add hiring team members.
+6. Go to the **Hiring process** tab and pick a hiring template.
+7. Go to the **Approvals** tab and (optional) turn on the **Approval required** tab and add approvers.
+8. Move the business process flow from draft to the next stage.
+

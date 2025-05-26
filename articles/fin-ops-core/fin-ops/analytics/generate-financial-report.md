@@ -3,7 +3,7 @@ title: Generate financial reports
 description: Learn about generating a financial report, including a table that provides definitions and states for various statuses.
 author: jinniew
 ms.author: aolson
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/13/2024
 ms.reviewer: twheeloc
 audience: Application User

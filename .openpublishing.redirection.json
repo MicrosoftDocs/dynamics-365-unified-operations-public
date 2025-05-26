@@ -1,6 +1,16 @@
 {
   "redirections": [
     {   
+      "source_path": "articles/fin-ops-core/fin-ops/sysadmin/user-security-report-technical-validation-faq.md",
+      "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2319108",
+      "redirect_document_id": "false"
+    }, 
+    {   
+      "source_path": "articles/finance/localizations/india/apac-ind-audit-trail-edit-logs-accounting-software.md",
+      "redirect_url": "/dynamics365/ffinance/localizations/india/india-audit-trail-edit",
+      "redirect_document_id": "false"
+    }, 
+    {   
       "source_path": "articles/human-resources/hr-infrastructure-merge.md",
       "redirect_url": "/dynamics365/finance/human-resources/hr-cust-migration",
       "redirect_document_id": "false" 

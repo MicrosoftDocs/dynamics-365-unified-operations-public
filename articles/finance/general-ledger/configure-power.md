@@ -3,7 +3,7 @@ title: Configure Microsoft Power Platform for use with the Financial reporting a
 description: Learn how to configure Microsoft Power Platform so that it can be used with the Financial reporting add-in, including a step-by-step process.
 author: jiwo
 ms.author: aolson
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/28/2023
 ms.reviewer: twheeloc
 ms.collection: get-started

@@ -3,7 +3,7 @@ title: Lease termination proposal
 description: Learn how to propose a lease for termination, including tables that outline the debit and credit availability for various types of transactions.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/16/2021
 ms.reviewer: kfend
 audience: Application User

@@ -3,7 +3,7 @@ title: Upgrade or replace the SQL Server instance of Microsoft Dynamics 365 Fina
 description: Learn how to upgrade the Microsoft SQL Server instance or cluster that your environment is using, including prerequisites.
 author: faix
 ms.author: osfaixat
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 04/05/2022
 ms.reviewer: johnmichalak
 audience: IT Pro

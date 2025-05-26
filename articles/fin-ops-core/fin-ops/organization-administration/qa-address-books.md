@@ -3,7 +3,7 @@ title: Address books FAQ
 description: Access answers to frequently asked questions related to address books, including questions about duplicate records and bulk adding and deleting party records. 
 author: msftbrking
 ms.author: brking
-ms.topic: article
+ms.topic: faq
 ms.date: 01/07/2025
 ms.reviewer: twheeloc
 audience: Application User

@@ -3,7 +3,7 @@ title: Print tax information on transfer order documents
 description: Learn how the tax information that is determined by the tax calculation service can be printed on transfer order documents.
 author: Kai-Cloud
 ms.author: kailiang
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/15/2021
 ms.custom: 
 ms.reviewer: johnmichalak

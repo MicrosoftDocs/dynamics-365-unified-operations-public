@@ -3,7 +3,7 @@ title: Copy visual
 description: Learn how to use the Copy visual in the Business performance planning application, including benefits, prerequisites, and an example.
 author: ShielaSogge
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/03/2023
 ms.reviewer: twheeloc
 audience: Application User

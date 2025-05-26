@@ -3,7 +3,7 @@ title: Record leases in foreign currencies
 description: Learn about how to record leases in currencies other than the accounting or reporting currency, including an outline on measurements for foreign currency leases.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/12/2021
 ms.reviewer: kfend
 audience: Application User

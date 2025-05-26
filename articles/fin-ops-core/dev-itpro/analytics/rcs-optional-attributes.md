@@ -3,7 +3,7 @@ title: Import files in XML format with optional attributes
 description: Learn about designing ER formats which specify XML attributes to parse incoming electronic documents in XML format.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/03/2019
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

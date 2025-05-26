@@ -65,7 +65,7 @@ The metadata configuration controls the data you use when calculating rates. For
 No, transportation management engines that are used to retrieve the data that is required for rate calculation from external systems don't need metadata. The rate data for these engines can be retrieved from external transportation carrier systems, usually through a web service. For example, can use a mileage engine that retrieves data directly from Bing maps so that you don't need a metadata for this engine.
 
 > [!NOTE]
-> The transportation management engines that are delivered with Supply Chain Management rely on data that is retrieved from the application. Engines that connect to external systems aren't included with Operations. However, the engine-based extensibility model lets you build extensions using Visual Studio Tools.
+> The transportation management engines that are delivered with Supply Chain Management rely on data that is retrieved from the application. Engines that connect to external systems aren't included. However, the engine-based extensibility model lets you build extensions using Visual Studio Tools.
 
 ## <a name="config-metadata"></a>How do I configure metadata for a transportation management engine?
 
@@ -88,6 +88,9 @@ The transportation management engine requires identification of the origin addre
 | 3        | Destination start postal code | Assignment | String    | Postal Code    | Selected  |
 | 4        | Destination end postal code   | Assignment | String    | Postal Code    | Selected  |
 | 5        | Destination country           | Assignment | String    | Country/region |           |
+
+> [!NOTE]
+> The transportation management engines delivered with Supply Chain Management rely on postal codes. They don't support longitude and latitude data. If you need to use longitude and latitude data, then you must develop a custom engine. Learn more in [Create a new transportation management engine](../supply-chain-dev/create-new-transportation-management-engine.md).
 
 ## White paper
 

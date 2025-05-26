@@ -3,7 +3,7 @@ title: Purchase requisitions
 description: Learn about purchase requisitions, including outlines and step-by-step processes for enabling master plans to include requisitions and approved time fences.
 author: t-benebo
 ms.author: benebotg
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/04/2021
 ms.custom: 
 ms.reviewer: kamaybac

@@ -3,7 +3,7 @@ title: Set up a process hierarchy, roles, and privileges
 description: Learn how to set up a process hierarchy, assign various tasks, and define roles, entry points, and privileges.
 author: saurabhgupta
 ms.author: saurabhgupta
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/14/2025
 ms.custom: 
 ms.reviewer: twheeloc

@@ -3,7 +3,7 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.41 (Se
 description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.41 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
-ms.topic: conceptual
+ms.topic: whats-new
 ms.date: 08/07/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
@@ -36,7 +36,7 @@ The following table lists the features that are included in this release. We mig
 | Procurement and sourcing | [Approve POs and requisitions from mobile device](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/approve-purchase-orders-requisitions-mobile-device) | [Approvals Management mobile app overview](../approval-management-mobile-app/approval-management-app-overview.md) | Dataverse and Power Apps.<br><br>Learn more in [Onboard the Approvals Management mobile app](../approval-management-mobile-app/developer/onboard-approval-app.md) |
 | Production control | [Decouple production registration from time and attendance](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/decouple-production-registration-time-attendance) | [Registration for manufacturing execution](../production-control/registration-manufacturing-execution.md) | Feature management:<br>*Skip time adjustments when calculating actual cost per production order* |
 | Production control | [Register time spent working on projects for production](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/register-time-spent-working-projects-production) | [Registration for manufacturing execution](../production-control/registration-manufacturing-execution.md) | Feature management:<br>*Skip time adjustments when calculating actual cost per production order* |
-| Transportation management | [Enable quality control for goods-in-transit orders](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-quality-control-goods-in-transit-orders) | [Quality orders](../inventory/quality-orders.md) | Feature management:<br>*(Preview) Enable Quality Control for Goods In-Transit Order.* |
+| Transportation management | [Enable quality control for goods-in-transit orders](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-quality-control-goods-in-transit-orders) | [Quality orders](../inventory/quality-orders.md) | Feature management:<br>*Enable Quality Control for Goods In-Transit Order.* |
 | Warehouse management | Outbound shipment processing policies | [Outbound shipment processing policies](../warehousing/outbound-load-handling.md#outbound-shipment-policies) | Enabled by default |
 | Warehouse management | Unannounced returns in Warehouse management only mode <!--KFM: Won't be on release plan --> | [Configure unannounced returns in Warehouse management only mode](../warehousing/wms-only-mode-unannounced-returns-setup.md) | Feature management:<br>*Warehouse management only mode* |
 

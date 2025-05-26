@@ -3,7 +3,7 @@ title: Inventory Visibility reservations
 description: Learn how to set up the reservation feature to create reservations and/or unreserve specified inventory quantities by using Inventory Visibility.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/03/2023
 ms.reviewer: kamaybac
 ms.search.form:

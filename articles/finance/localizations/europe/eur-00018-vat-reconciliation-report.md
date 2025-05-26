@@ -1,35 +1,34 @@
 ---
 title: EUR-00018 VAT reconciliation report
-description: Learn how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities, including a step-by-step process.
+description: Learn how to generate a tax reconciliation report for Icelandic and Norwegian legal entities with Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 03/27/2025
 ms.reviewer: johnmichalak
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.search.validFrom: 2016-06-30
 ms.search.form: MainAccountLookup
-ms.dyn365.ops.version: Version 7.0.0
 ---
 # EUR-00018 VAT reconciliation report
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities. This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.
+This article explains how to generate a tax reconciliation report for Icelandic and Norwegian legal entities with Microsoft Dynamics 365 Finance.
 
-1. Go to Tax > Inquiries and reports > Sales tax reports > Tax reconciliation report.
-2. In the From account field, enter or select a value.
-    * Select the value 200140.  
-3. In the To account field, enter or select a value.
-    * Select the value 600180.  
-4. In the Settlement period field, enter or select a value.
-    * Select the value Mon.  
-5. In the From date field, enter a date.
-    * Select the value 2015-11-01.  
-6. Select Yes in the Show details field.
-7. Click OK.
+The following procedure shows how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities. The procedure was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.
+
+To generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Sales tax reports \> Tax reconciliation report**.
+1. In the **From account** field, enter or select **200140**.  
+1. In the **To account** field, enter or select **600180**.  
+1. In the **Settlement period** field, enter or select **Mon**.  
+1. In the **From date** field, enter a date.
+1. In the **Show details** field, select **Yes**.
+1. Select **OK**.
 
 
 

@@ -158,7 +158,7 @@ Alternatively, you can create a customer's VAT registration number by using the 
 7. On the **Agent** tab, add information about the person who is employed by the enterprise to fill in the report.
     1. In the **Agent** section, in the **Name** field, enter the first and last names of the agent.
     2. In the **Contact information** section, in the **Telephone** field, enter the telephone number of the agent.
-8. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, select **EU** in the **Country/region type** field, so that the country appears on your Intrastat report.
+8. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country/region that is part of the EU, select **EU** in the **Country/region type** field, so that the country/region appears on your Intrastat report.
 
 ### Set up the product parameters for the Intrastat declaration
 
@@ -197,7 +197,7 @@ Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, an
 
 ### Intrastat transfer
 
-On the **Intrastat** page, on the Action Pane, you can select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country or region of destination (for dispatches) or consignment (for arrivals) will be transferred.
+On the **Intrastat** page, on the Action Pane, you can select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country/region as the country or region of destination (for dispatches) or consignment (for arrivals) will be transferred.
 
 Alternatively, you can manually enter transactions by selecting **New** on the Action Pane.
 

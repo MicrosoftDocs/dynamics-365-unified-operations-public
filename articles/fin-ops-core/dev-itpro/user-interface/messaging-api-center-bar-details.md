@@ -3,7 +3,7 @@ title: Messaging APIs - Action center, message bar, and message details
 description: Learn about the messaging system in finance and operations apps, with overviews on backwards compatibility with code examples.
 author: jasongre
 ms.author: jasongre
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: 
   - bap-template
   - evergreen

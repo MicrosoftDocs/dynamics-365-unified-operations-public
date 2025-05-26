@@ -3,7 +3,7 @@ title: Upgrade from AX 2012 - Data upgrade in development environments
 description: Learn about the end-to-end process for upgrading from Microsoft Dynamics AX 2012 to the latest finance and operations development environment.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 12/2/2024
 ms.reviewer: twheeloc
 audience: Developer

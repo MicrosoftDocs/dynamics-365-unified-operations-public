@@ -3,7 +3,7 @@ title: Responsible AI FAQ for Workload insights with Copilot
 description: Get answers to frequently asked questions about the AI technology that is used in Workload insights with Copilot in the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: faq
 ms.date: 01/29/2025
 ms.custom:
   - responsible-ai-faqs

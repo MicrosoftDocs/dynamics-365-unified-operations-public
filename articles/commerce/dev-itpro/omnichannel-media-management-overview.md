@@ -2,7 +2,7 @@
 title: Omnichannel media management overview
 description: This article provides an overview of omnichannel media management in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 10/26/2023
+ms.date: 03/28/2025
 ms.topic: overview
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -19,9 +19,9 @@ ms.custom:
 
 This article provides an overview of omnichannel media management in Microsoft Dynamics 365 Commerce.
 
-Commerce version 10.0.35 introduced an integrated solution for managing merchandising media. This solution makes it easier to assign images and other media to products, product dimensions, and variants. Media assignments are no longer based on legacy file names. Therefore, a single media asset can be reused for multiple merchandising entities. Media can also be assigned to specific product dimensions, and unnecessary dimensions can be ignored. For example, for a shirt product that has size, color, and style dimensions, media can be assigned to color and style dimension combinations, but media assignments can be ignored for the size dimension. In addition,  tab-separated .tsv manifest files can be used to manage large sets of media assignments and metadata via bulk export and import.
+Commerce version 10.0.35 introduced an integrated solution for managing merchandising media. This solution makes it easier to assign images and other media to products, product dimensions, and variants. Media assignments are no longer based on legacy file names. Therefore, a single media asset can be reused for multiple merchandising entities. Media can also be assigned to specific product dimensions, and unnecessary dimensions can be ignored. For example, for a shirt product that has size, color, and style dimensions, you can assign media to color and style dimension combinations, but you can ignore media assignments for the size dimension. In addition, you can use tab-separated .tsv manifest files to manage large sets of media assignments and metadata via bulk export and import.
 
-The omnichannel media management solution integrates media management capabilities into the Commerce headquarters merchandising flow and introduces a new omnichannel content workspace in Commerce site builder. Currently, to use all omnichannel media management capabilities that are introduced as of Commerce version 10.0.35, you must opt in by using feature flags. New implementations activate these capabilities by default. However, for existing solutions, you can opt in on your preferred timeline by following the migration steps. Through these media management capabilities, Dynamics 365 Commerce offers a more flexible native solution for managing merchandising media.
+The omnichannel media management solution integrates media management capabilities into the Commerce headquarters merchandising flow and introduces a new omnichannel content workspace in Commerce site builder. Currently, to use all omnichannel media management capabilities introduced as of Commerce version 10.0.35, you must opt in by using feature flags. New implementations activate these capabilities by default. However, for existing solutions, you can opt in on your preferred timeline by following the migration steps. Through these media management capabilities, Dynamics 365 Commerce offers a more flexible native solution for managing merchandising media.
 
 The following video provides an overview of the omnichannel media management feature.
 
@@ -58,8 +58,8 @@ To configure omnichannel media management features in your Commerce environments
 12. Set the **Batch processing** option to **Yes**.
 13. Select **Recurrence**, and schedule the **CMS to HQ omnichannel media sync** job to run on your preferred schedule (typically once per hour).
 14. Search for and open the **Channel database** page, select **Full data sync \> 1040 (Products)** on the dropdown menu, and then select **OK**.
-15. Search for and open the **Batch jobs** page from the headquarters search control. In the filter control for the **Job description** column, search for "omni", and confirm that the **CMS to HQ omnichannel media sync** job has finished running and has a status of **Ended**.
-16. In the filter control for the **Job description** column, search for "Full sync", and then confirm that the **Full sync...** job has finished running and has a status of **Ended**.
+15. Search for and open the **Batch jobs** page from the headquarters search control. In the filter control for the **Job description** column, search for "omni", and confirm that the **CMS to HQ omnichannel media sync** job is finished running and has a status of **Ended**.
+16. In the filter control for the **Job description** column, search for "Full sync", and then confirm that the **Full sync...** job is finished running and has a status of **Ended**.
 17. Go to **Workspaces \> Feature management**.
 18. On the **All** tab, use the **Filter** field to search for "\*omni".
 19. In the search results, select **Enable omnichannel media assignments for CSU media locations**, and then select **Enable now**. This action changes how CSU delivers product media from the legacy data to the version 10.0.35 product media data model. This feature switch can be disabled if you must revert to the old data model.
@@ -68,7 +68,7 @@ To configure omnichannel media management features in your Commerce environments
 22. If you have an existing custom e-commerce deployment, you must update and redeploy your site's e-commerce modules and data actions to benefit from new omnichannel media scenarios such as "additional media" and "product videos." For instructions on how to pull the latest module library dependencies into your development environment, see [Pull updates](../e-commerce-extensibility/sdk-updates.md#pull-updates).
 
 > [!NOTE]
-> If you do not see the **Enable omnichannel media management** feature switch under a site's **Site settings \> Extensions**, read the documentation on how to [update your site's app.settings.json file](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file), and then add the following code to your app.settings.json file.
+> If you don't see the **Enable omnichannel media management** feature switch under a site's **Site settings \> Extensions**, read the documentation on how to [update your site's app.settings.json file](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file), and then add the following code to your app.settings.json file.
 
 ```javascript
 "OmniChannelMedia":{
@@ -80,15 +80,6 @@ To configure omnichannel media management features in your Commerce environments
   }   
 ```
 
-> [!NOTE]
-> To migrate existing product images that use the legacy filename-based approach, open a support request with the title "**Migrate legacy product images to new omnichannel media data model**."
->
-> Also provide the following information to your support engineer:
-> 1) The site builder URL of the source images.
-> 2) Which source channel and locale to migrate.
-> 3) If you want these source images mapped as default for all channels (Omnichannel) and locales (Neutral), or if you only want them mapped to a specific channel and locale. For more information on the new Omnichannel and Neutral locale media assignment default options, see ([Omnichannel, channel-specific, and locale-specific media assignments](assign-media-omnichannel.md#omnichannel-channel-specific-and-locale-specific-media-assignments).
->
-> In the future, migrations will be self-serve using bulk export -> offline customizable PowerShell script -> bulk import. Until this sample PowerShell script is made publicly available, please follow the instructions above to initiate a migration through a support request. 
 
 ## Omnichannel media publish (and unpublish) architecture and dataflow
 
@@ -107,7 +98,7 @@ As of Commerce version 10.0.35, site builder contains an **Omnichannel content**
 The **Omnichannel content** workspace functions as the central media library for merchandising media items that can be assigned to products and categories. The media library in the **Omnichannel content** workspace behaves like the media library for individual websites in site builder, but there are some important differences:
 
 - The available languages in the **Omnichannel content** media library are a superset of all languages in headquarters across all configured channels.
-- A system-default language that's named **Neutral** can be used as a base configuration and [default fallback](assign-media-omnichannel.md#omnichannel-channel-specific-and-locale-specific-media-assignments) for media items and assignments.
+- A system-default language called "Neutral" can be used as a base configuration and [default fallback](assign-media-omnichannel.md#omnichannel-channel-specific-and-locale-specific-media-assignments) for media items and assignments.
 
 ## Additional resources
 

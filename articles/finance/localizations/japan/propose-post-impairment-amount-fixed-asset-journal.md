@@ -1,45 +1,41 @@
 ---
 title: Propose and post the impairment amount by using fixed asset journal
-description: Learn how to propose and post the impairment amount by using a fixed asset journal, including a step-by-step process using the JPMF demo data company.
+description: Learn how to propose and post the impairment amount by using a fixed asset journal for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 05/02/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Propose and post the impairment amount by using fixed asset journal
 
 [!include [banner](../../includes/banner.md)]
 
-Use this procedure to learn how to propose and post the impairment amount by using a fixed asset journal.
+This article explains how to propose and post the impairment amount by using a fixed asset journal for Japan in Microsoft Dynamics 365 Finance.
 
+Before you complete the following procedure, you must confirm that an impairment test result is already created.
 
+The procedure uses the demo data company JPMF.
 
-Be sure an impairment test result is already created prior to running this task.
+To propose and post an impairment amount using a fixed asset journal, follow these steps.
 
-
-
-This procedure was created using the demo data company JPMF.
-
-1. Go to Fixed assets > Journal entries > Fixed assets journal.
-2. Click New.
-3. In the Name field, click the drop-down button to open the lookup.
-4. In the list, find and select the desired record.
-5. Click Lines.
-6. Click Proposals.
-7. Click Impairment proposal.
-8. In the Impairment test ID field, click the drop-down button to open the lookup.
-9. In the list, click the link in the selected row.
-    * For this example select 'JPMF-000004.'  
-10. Click OK.
-    * Two fixed assets in the Impairment test were proposed with the following information: Fixed asset number, the impairment amount on credit, and the date as the date in impairment test.  
-11. Click Post.
+1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
+1. Select **New**.
+1. In the **Name** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record.
+1. Select **Lines**.
+1. Select **Proposals**.
+1. Select **Impairment proposal**.
+1. In the **Impairment test ID** field, select the drop-down button to open the lookup.
+1. In the list, select **JPMF-000004**.
+1. Select **OK**. Two fixed assets in the impairment test are proposed with the fixed asset number, the impairment amount on credit, and the date of the impairment test.  
+1. Select **Post**.
 
 
 

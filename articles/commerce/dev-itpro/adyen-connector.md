@@ -2,7 +2,7 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 03/21/2025
+ms.date: 04/25/2025
 ms.topic: overview
 ms.reviewer: v-chrgriffin
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -43,11 +43,6 @@ The following list describes the minimum and maximum Adyen firmware versions tha
 ---
 
 
-# [10.0.37](#tab/10-0-37)
-### Dynamics 365 Retail POS version 10.0.37
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_91p15 | adyen_v1_94p4 |
 
 # [10.0.38](#tab/10-0-38)
 ### Dynamics 365 Retail POS version 10.0.38
@@ -84,6 +79,12 @@ The following list describes the minimum and maximum Adyen firmware versions tha
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
 | adyen_v1_109 | adyen_v1_115 |
+
+# [10.0.44](#tab/10-0-44)
+### Dynamics 365 Retail POS version 10.0.44
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_114 | adyen_v1_116 |
 
 ---
 
@@ -162,7 +163,7 @@ The following table lists the current Dynamics 365 Commerce Payment Connector fo
 | Google Pay | ✔ | ✔ |
 | Apple Pay | ✔ | ✔ |
 | Afterpay | No | No |
-| Klarna | No | No |
+| Klarna | ✔ | No |
 | Affirm | ✔ | No |
 | Alipay | ✔ | No |
 | WeChat Pay | ✔ | No |
@@ -315,6 +316,7 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 | [Incremental capture for order invoicing](incremental-capture.md) |  | ✔<br>(Starting with 10.0.18) |
 | [Wallet Payments](../wallets.md) |  | ✔<br>(Starting with 10.0.20) |
 | [Google Pay with Adyen](google-pay-adyen.md) |  | ✔<br>(Starting with 10.0.27) |
+| Adyen risk management for online payments |  | ✔<br>(Starting with 10.0.43) |
 
 ## Next steps
 

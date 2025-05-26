@@ -3,7 +3,7 @@ title: Move Lifecycle Services implementation projects to different Microsoft En
 description: Learn about how to move your subscriptions and Lifecycle Services Implementation project to a different Microsoft Entra tenant.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/18/2023
 ms.reviewer: twheeloc
 audience: IT Pro

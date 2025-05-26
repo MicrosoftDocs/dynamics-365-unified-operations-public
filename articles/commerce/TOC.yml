@@ -14,14 +14,14 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.44 (April 2025)
+          href: get-started/whats-new-commerce-10-0-44.md
         - name: Commerce 10.0.43 (January 2025)
           href: get-started/whats-new-commerce-10-0-43.md
         - name: Commerce 10.0.42 (December 2024)
           href: get-started/whats-new-commerce-10-0-42.md
         - name: Commerce 10.0.41 (September 2024)
           href: get-started/whats-new-commerce-10-0-41.md
-        - name: Commerce 10.0.40 (June 2024)
-          href: get-started/whats-new-commerce-10-0-40.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -144,6 +144,12 @@
         items:
         - name: User interface elements
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/commerce
+        - name: Default dashboard
+          href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/commerce
+        - name: Immersive Home (preview)
+          href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/commerce
+        - name: Set the preferred initial page for each user
+          href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/commerce
         - name: Accessibility features
           href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?context=/dynamics365/context/commerce
         - name: Feature management overview
@@ -422,6 +428,8 @@
               href: define-maintain-channel-clients-registers-hw-stations.md
             - name: Health check for POS peripherals and services
               href: pos-healthcheck.md
+            - name: Health check view for offline readiness (preview)
+              href: health-check-view-offline.md
             - name: Support for network peripherals
               href: dev-itpro/network-peripherals.md
           - name: Screen layouts
@@ -488,7 +496,7 @@
               href: pos-operations.md
             - name: Commerce database index compression
               href: dev-itpro/index-compression.md
-            - name: Offline reliability toast notifications in Store Commerce
+            - name: Offline reliability toast notifications in Store Commerce (preview)
               href: dev-itpro/retail-sdk/offline-reliability-toast-notifications.md
           - name: Authentication
             items:
@@ -510,10 +518,8 @@
               href: charge-send.md
             - name: Enable consistent delivery mode handling in e-commerce channels
               href: consistent-delivery-mode-handling.md
-          - name: POS modernization
-            items:
-            - name: POS modernization and usability improvements
-              href: POS-UX-modernization.md  
+        - name: Modern workflows in POS (preview)
+          href: POS-UX-modernization.md
         - name: Receipts
           items:
           - name: Set up and design receipt formats
@@ -656,6 +662,8 @@
             href: configure-emailed-receipt-formats.md
           - name: Add a QR code or bar code to transactional and receipt emails
             href: add-qr-code-barcode-email.md
+        - name: Manage Azure Maps for your organization
+          href: dev-itpro/manage-azure-maps.md
         - name: Manage Bing Maps for your organization
           href: dev-itpro/manage-bing-maps.md
         - name: Create and update time slots for customer pickup
@@ -1080,6 +1088,8 @@
           href: tasks/define-loyalty-cards.md
         - name: Process adjustments of loyalty reward points
           href: tasks/process-loyalty-reward-point-adjustments.md
+        - name: Loyalty upsell prompt in POS (preview)
+          href: loyalty-upsell-prompt.md
     - name: Manage your financials
       items:
       - name: Statements overview
@@ -2830,7 +2840,7 @@
           items:
           - name: View POS extension package information
             href: dev-itpro/view-pos-extension-package-details.md
-          - name: POS APIs
+          - name: POS APIs (preview)
             href: dev-itpro/pos-apis.md
           - name: Use POS controls in extensions
             href: dev-itpro/pos-extension/controls-pos-extension.md
