@@ -33,6 +33,9 @@ Copilot classifies each vendor email that it reads into one of the following cat
 
 For the first two categories, Copilot identifies which purchase orders the email is related to and matches the information in the email to information in the system.
 
+> [!IMPORTANT]
+> The agent is able to read incoming PDF attachments but not Microsoft Word or Excel documents.
+
 When you review incoming changes that are based on an email, the system shows the original email, the current information in the system, and the specific changes that are being proposed. Therefore, you can more easily understand each change. After you finish reviewing the proposal and making any corrections that are required, you can apply the changes directly to the relevant purchase order.
 
 ## Configure the agent to track your email
