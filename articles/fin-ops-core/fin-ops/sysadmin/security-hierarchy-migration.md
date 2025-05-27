@@ -60,10 +60,19 @@ Majorly, there are 2 scenarios where data migration would be needed:
    > If **EASS + Security configuration** was selected while generating the file in step #8 above, this option is the most suitable choice because then it will restore everything which you are trying to achieve.
 
     In the **Security related action** field, select one of the following options:
-
     - **Create** – Automatically create or push all duties and roles that must be created from the security setup into the publish staging table. The security configuration should show all security objects that were developed by using the security setup and that are ready for publishing.
     - **Clear** – Clear all the security references between user security governance and the Dynamics 365 finance and operations apps security configuration. Every task line that was imported is blank, and you must re-create roles and duties for each line. This option might be helpful when you want to clear off or renew the project.
     - **None** – Move all user security governance security objects that weren't created within the system. If the security objects don't exist, this option might cause complications.
+   > [!IMPORTANT]
+   > In this specific scenario of data migration, **Create** option is the most suitable choice because then it will restore and publish everything which you are trying to migrate into new environment.
+   
+8. After making required selections on the dialog box, click the button **OK** to start the restoration process.
+9. Upon successful processing, you will get a information message confirming the successful restoration otherwise a warning message will appear explaining the problem occured during the process.
+10. The first thing to verify would be security category. You should see the newly restored category on the **Security category** form.
+11. To verify the restored process hierarchy and other objects, navigate to **System administration** \> **Security governance** \> **Security process roles maintain**.
+12. Select the new category under Security category field.
+13. It will load the process hierarchy and underlying objects like security tasks, entry point mapping, duties, privileges and roles.
+14. This completes the data migration process. 
 
 ## Bulk-create a process hierarchy
 
