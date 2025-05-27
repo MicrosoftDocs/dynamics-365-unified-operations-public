@@ -19,7 +19,7 @@ This article explains how to run multi-user testing by using Microsoft Visual St
 
 > [!IMPORTANT]
 > As of September 2024, the Perf SDK is no longer supported. This deprecation follows the end of support for Visual Studio 2019, which was the last version to include web performance and load testing features. 
-> + For more information, see [Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022](../../fin-ops/get-started/removed-deprecated-features-platform-updates#microsoft-will-no-longer-ship-or-support-the-visual-studio-extensions-for-finance-and-operations-apps-power-platform-tools-and-visual-studio-versions-prior-to-2022.md).
+> + For more information, see [Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md#microsoft-will-no-longer-ship-or-support-the-visual-studio-extensions-for-finance-and-operations-apps-power-platform-tools-and-visual-studio-versions-prior-to-2022).
 > 
 > We suggest using Apache JMeter for performance testing. For more information, see [JMeter](https://jmeter.apache.org/).
 > 
