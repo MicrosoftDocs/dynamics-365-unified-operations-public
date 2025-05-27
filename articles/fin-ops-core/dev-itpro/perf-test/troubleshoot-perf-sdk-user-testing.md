@@ -18,7 +18,7 @@ ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 
 > [!IMPORTANT]
 > As of September 2024, the Perf SDK is no longer supported. This deprecation follows the end of support for Visual Studio 2019, which was the last version to include web performance and load testing features.
-> + For more information, see [Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022](../../dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates.md#microsoft-will-no-longer-ship-or-support-the-visual-studio-extensions-for-finance-and-operations-apps-power-platform-tools-and-visual-studio-versions-prior-to-2022).
+> + For more information, see [Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md#microsoft-will-no-longer-ship-or-support-the-visual-studio-extensions-for-finance-and-operations-apps-power-platform-tools-and-visual-studio-versions-prior-to-2022).
 
 ## No client was opened in the time-out period
 
