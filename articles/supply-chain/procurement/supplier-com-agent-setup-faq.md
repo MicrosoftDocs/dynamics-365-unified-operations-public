@@ -39,3 +39,10 @@ PPAC environment has been deployed for Finance and Operations but does not show 
 The Admin navigates to [PPAC](https://aka.ms/ppac)  **Manage** / **Dynamics 365 Apps** and wants to install the applications *Copilot for finance and operations apps* and *Copilot in Microsoft Dynamics 365 Supply Chain Management*, but they cannot find the environment for Finance and Operations in the environment selection.
 
 **Solution:** Open the *Full details* for your Finance and Operations environment in your [LCS](https://lcs.dynamics.com/V2) project. Under Power Platform Integration see if errors have been reported (such as *"LCS Power Platform Integration provisioning fails with timeout"*) and attempt a retry to complete the deployment.
+
+### Symptom: The feature *(Production Ready Preview) Agent Management* in finance and operations cannot not be enabled
+
+When trying to enable feature *(Production Ready Preview) Agent Management* in Feature Management, an error indicates *"You cannot enable this Feature. Environment must be linked to Dataverse for agents to function". And this error appears even though a Dataverse environment has been successfully created in LCS.
+
+**Solution:** Install available feature updates for 10.0.44. After the initial preview release of 10.0.44 changes regarding the Copilot message capacity had been introduced that are required to enable the Agent Management feature.
+
