@@ -1,4 +1,4 @@
-o--- 
+--- 
 title: Security process hierarchy migration
 description: Learn how to perform data migration scenarios for user security governance process hierarchy and security categories. 
 author: saurabhgupta
