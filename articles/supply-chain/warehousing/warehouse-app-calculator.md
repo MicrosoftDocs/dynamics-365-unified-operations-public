@@ -1,128 +1,103 @@
 ---
-title: Calculator feature for mobile app
-description: Learn how to use the Calculator feature in the mobile app to input numerical values with enhanced gesture controls.
-author: pefreita
-ms.author: pefreita
+title: Warehouse Management mobile app calculator
+description: Learn how to use the calculator feature in the Warehouse Management mobile app to perform mathematical calculations with enhanced gesture controls.
+author: Mirzaab
+ms.author: mirzaab
+ms.reviewer: kamaybac
+ms.search.form:
 ms.topic: how-to
 ms.date: 05/26/2025
-ms.custom: bap-template
-ms.reviewer: 
-ms.search.form: 
+ms.custom: 
+  - bap-template
 ---
 
-# Calculator feature for mobile app
+# Warehouse Management mobile app calculator
 
 [!include [banner](../includes/banner.md)]
 
-The Calculator feature provides a specialized numerical input interface within the mobile application, designed specifically for entering numerical values in quantity fields and other number-type inputs as configured by the WMS workflow.
+The Warehouse Management mobile app provides a built-in calculator provides essential numerical entry and mathematical computation capabilities. It enables workers to perform calculations without leaving their current workflow.
 
-> [!NOTE]
-> The Calculator appears automatically when you need to input numerical values such as quantities, based on the flow configuration set by your WMS (Warehouse Mobile Service) system.
+The calculator supports the following enhanced gesture controls:
 
-The Calculator supports the following enhanced gesture controls:
-
-- Long press functionality for negative number input
-- Long press access to mathematical operations menu
-- Standard numerical input and real-time calculations
+- Standard numerical input and real-time calculations.
+- Long press the **9** key to enter negative numbers.
+- Long press the decimal point (**.**) key to open the arithmetical operators menu.
 
 > [!IMPORTANT]
-> The gesture controls require a press duration of at least 500 ms to activate. Brief taps won't trigger the enhanced functionality.
+> The long-press gestures require a press duration of at least 500 ms. Brief taps don't trigger the enhanced functionality.
 
-## <a name="when-calculator-appears"></a>When the Calculator is used
+## Access the calculator
 
-The Calculator interface is automatically activated when the mobile app requires numerical input for specific field types, including:
+The calculator is automatically shown when it's required by the workflow the worker is using. For example, it appears when workers need to enter values for the following types of fields:
 
-- **Quantity fields** - When entering item quantities during warehouse operations
-- **Number-type inputs** - As defined by your WMS workflow configuration
-- **Measurement values** - When precise numerical input is required
+- **Quantity fields** - When entering item quantities during warehouse operations.
+- **Number-type inputs** - As defined by the workflow configuration.
+- **Measurement values** - When precise numerical input is required.
 
-The appearance and availability of the Calculator is controlled by your WMS system configuration and will display contextually based on the current workflow step.
+## Basic calculator functionality
 
-## <a name="basic-operations"></a>Basic calculator functionality
+The calculator functions as a specialized numerical input tool with an enhanced interface. Workers can enter numbers using the numeric keypad and perform mathematical operations in real-time.
 
-The Calculator functions as a specialized numerical input tool with an enhanced interface. Users can input numbers using the numeric keypad and perform mathematical operations when needed to calculate the correct values for quantity fields or other numerical inputs.
+## Select an arithmetical operator
 
-## <a name="negative-numbers"></a>Negative number input
+The calculator provides access to four basic arithmetical operators. To select an operator, follow these steps:
 
-To enter negative numbers in the Calculator:
+1. Long press the decimal point (**.**) key on the keypad.
+1. Select your desired operator (addition (**&plus;**), subtraction (**&minus;**), multiplication (**&times;**), or division (**&divide;**)).
 
-1. Enter your desired number using the numeric keypad.
-1. **Long press** the number **9** on the keypad.
-1. The number toggles to its negative value.
+## Enter a negative number
+
+To enter negative numbers in the calculator, follow these steps:
+
+1. Enter a value using the numeric keypad.
+1. Long press the **9** key on the keypad to toggle the entered value from positive to negative.
 1. Continue with your calculation as normal.
 
 > [!NOTE]
-> This gesture works specifically with the number 9 and provides quick access to negative values without requiring a separate negative sign button.
+> This gesture only works with the **9** key. It provides quick access to negative values without requiring a separate negative sign button.
 
-## <a name="operations-menu"></a>Mathematical operations access
+## Usage examples
 
-The Calculator provides access to four basic mathematical operations through an enhanced gesture control:
+## Enter a quantity value
 
-1. **Long press** the decimal point (**.**) button on the keypad.
-1. A menu appears with the following mathematical operations:
-   - **Addition** (+)
-   - **Subtraction** (−)
-   - **Multiplication** (×)
-   - **Division** (÷)
-1. To configure calculation, select your desired operation.
+To enter a numerical value for a quantity field, follow these steps:
 
-## <a name="usage-examples"></a>Usage examples
-
-### Entering a quantity value
-
-To input a numerical value for a quantity field:
-
-1. When prompted for a quantity input, the Calculator interface will appear automatically.
+1. When the app requires a quantity input, it automatically shows the calculator interface.
 1. Enter your desired quantity using the numeric keypad.
+1. If you need to convert the value to negative, long press the **9** key to toggle the sign.
 1. Confirm the entry to proceed with your workflow.
 
-### Calculating a quantity value
+### Perform a calculation when entering a quantity value
 
-To perform a calculation for a quantity field:
+To perform a calculation when entering a quantity, follow these steps:
 
-1. Enter your first number using the numeric keypad.
-1. To access the operations menu, long press the decimal point (.).
-1. Select your desired operation (addition, subtraction, multiplication, or division).
-1. Enter your second number.
-1. Press equals to view the result.
-1. Confirm the calculated value to input it into the quantity field.
-
-### Working with negative values
-
-To calculate using negative numbers for quantity adjustments:
-
-1. Enter a positive number (for example, 9).
-1. To convert to negative, long press 9.
-1. To access the operations menu, long press the decimal point (.).
-1. Select your operation and continue the calculation.
+1. Enter the first number using the numeric keypad.
+1. Open the operator menu by long pressing the decimal point (**.**) key.
+1. Select your desired operator (addition (**&plus;**), subtraction (**&minus;**), multiplication (**&times;**), or division (**&divide;**)).
+1. Enter the second number.
+1. Press the equals key to view the result.
+1. Confirm the entry to proceed with your workflow.
 
 ## Troubleshooting
 
 This section describes common issues and their solutions.
 
-### Calculator not appearing
-
-**Problem:** The Calculator interface doesn't display when expected.
-
-**Solution:** Verify that your WMS workflow is configured to use numerical input fields for the current step. Contact your system administrator if the Calculator should appear but doesn't.
-
-### Long press gestures not responding
+### Long press gestures aren't responding
 
 **Problem:** The long press gesture doesn't activate the enhanced functionality.
 
-**Solution:** Ensure you're holding the button for at least 500ms. A brief tap won't activate the gesture control.
+**Solution:** Make sure you're holding the button for at least 500 ms. A brief tap doesn't activate the gesture control.
 
-### Operations menu not appearing
+### The operations menu doesn't appear
 
 **Problem:** The mathematical operations menu doesn't display when needed.
 
-**Solution:** Verify that you're long pressing the decimal point (.) button specifically, not another number or function key on the keypad.
+**Solution:** Verify that you're long pressing the decimal point (**.**) key for at least 500 ms. Other numbers and functions keys don't open the menu.
 
-### Gesture activates unintentionally
+### A gesture activates unintentionally
 
 **Problem:** Enhanced functionality triggers during normal use.
 
-**Solution:** Adjust your input technique to use brief taps for standard number entry. Reserve longer presses only when you intend to use the enhanced gesture controls.
- 
+**Solution:** Adjust your input technique to use brief taps when entering standard numbers. Reserve longer presses only for when you intend to use the enhanced gesture controls.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
