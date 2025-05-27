@@ -1,6 +1,6 @@
 ---
 title: Calculator feature for mobile app
-description: Learn how to use the Calculator feature in the mobile app to perform mathematical calculations with enhanced gesture controls.
+description: Learn how to use the Calculator feature in the mobile app to input numerical values with enhanced gesture controls.
 author: pefreita
 ms.author: pefreita
 ms.topic: how-to
@@ -14,7 +14,10 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-The Calculator feature provides essential mathematical computation capabilities within the mobile application, enabling users to perform calculations without leaving their current workflow.
+The Calculator feature provides a specialized numerical input interface within the mobile application, designed specifically for entering numerical values in quantity fields and other number-type inputs as configured by the WMS workflow.
+
+> [!NOTE]
+> The Calculator appears automatically when you need to input numerical values such as quantities, based on the flow configuration set by your WMS (Warehouse Mobile Service) system.
 
 The Calculator supports the following enhanced gesture controls:
 
@@ -25,9 +28,19 @@ The Calculator supports the following enhanced gesture controls:
 > [!IMPORTANT]
 > The gesture controls require a press duration of at least 500 ms to activate. Brief taps won't trigger the enhanced functionality.
 
+## <a name="when-calculator-appears"></a>When the Calculator is used
+
+The Calculator interface is automatically activated when the mobile app requires numerical input for specific field types, including:
+
+- **Quantity fields** - When entering item quantities during warehouse operations
+- **Number-type inputs** - As defined by your WMS workflow configuration
+- **Measurement values** - When precise numerical input is required
+
+The appearance and availability of the Calculator is controlled by your WMS system configuration and will display contextually based on the current workflow step.
+
 ## <a name="basic-operations"></a>Basic calculator functionality
 
-The Calculator functions as a standard computational tool with an enhanced interface. Users can input numbers using the numeric keypad and perform mathematical operations in real-time. 
+The Calculator functions as a specialized numerical input tool with an enhanced interface. Users can input numbers using the numeric keypad and perform mathematical operations when needed to calculate the correct values for quantity fields or other numerical inputs.
 
 ## <a name="negative-numbers"></a>Negative number input
 
@@ -55,19 +68,28 @@ The Calculator provides access to four basic mathematical operations through an 
 
 ## <a name="usage-examples"></a>Usage examples
 
-### Performing a standard calculation
+### Entering a quantity value
 
-To perform a basic mathematical operation:
+To input a numerical value for a quantity field:
+
+1. When prompted for a quantity input, the Calculator interface will appear automatically.
+1. Enter your desired quantity using the numeric keypad.
+1. Confirm the entry to proceed with your workflow.
+
+### Calculating a quantity value
+
+To perform a calculation for a quantity field:
 
 1. Enter your first number using the numeric keypad.
 1. To access the operations menu, long press the decimal point (.).
 1. Select your desired operation (addition, subtraction, multiplication, or division).
 1. Enter your second number.
 1. Press equals to view the result.
+1. Confirm the calculated value to input it into the quantity field.
 
 ### Working with negative values
 
-To calculate using negative numbers:
+To calculate using negative numbers for quantity adjustments:
 
 1. Enter a positive number (for example, 9).
 1. To convert to negative, long press 9.
@@ -77,6 +99,12 @@ To calculate using negative numbers:
 ## Troubleshooting
 
 This section describes common issues and their solutions.
+
+### Calculator not appearing
+
+**Problem:** The Calculator interface doesn't display when expected.
+
+**Solution:** Verify that your WMS workflow is configured to use numerical input fields for the current step. Contact your system administrator if the Calculator should appear but doesn't.
 
 ### Long press gestures not responding
 
