@@ -61,7 +61,9 @@ Create agent identity user in the tenant user management, the assign following  
 
 Assign the requires licenses in [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?referrer=entra#/licenses).
 
-The agent identity user requires at least a **Power Automate Premium** license and **Copilot Studio License**. Alternatively, a **Dynamics 365 Supply Chain Management* user license can be assigned as well which includes these.
+The Suppler Communications Agent utilizes premium tier connectors, and therefore a license is required that permits those. Find more information in the [Power Platform licensing FAQs](https://learn.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) or download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+Examples for sufficient licenses are **Power Apps Premium**, **Power Automate Premium** or **Dynamics 365 Supply Chain Management** .
 
 #### Required security roles
 The user must be added into both the Dataverse environment and into Dynamics 365 Supply Chain Management. Assign them the security roles shown in the following lists.
