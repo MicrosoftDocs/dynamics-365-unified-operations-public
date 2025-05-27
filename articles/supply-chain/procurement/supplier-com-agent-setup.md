@@ -199,7 +199,8 @@ To use the sample PowerShell script, follow these steps.
     - `DVConnectionName` - The name of the Dataverse connector to use. The connector is named after the agent identity you signed in with when [creating](#set-up-agent-identity) it. You can find it on the **Connections** page of the Power Apps Maker portal.
     - `MCSConnectionName` - The name of the Microsoft Copilot Studio connector to use. The connector is named after the agent identity you signed in with when [creating](#set-up-agent-identity) it. You can find it on the **Connections** page of the Power Apps Maker portal.
 3. Customize the script as you require.
-4. Run the script from any PowerShell console. When you're prompted to sign in, sign in as an environment administrator.
+4. Run the script from any PowerShell console or Visual Studio Code. Follow the instructions to update your installed PowerShell version if needed to [version 7](https://github.com/PowerShell/PowerShell/releases).
+When you're prompted to sign in, sign in as an environment administrator.
 
 ```powershell
 Param(
