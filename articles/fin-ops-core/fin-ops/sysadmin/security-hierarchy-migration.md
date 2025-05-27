@@ -74,34 +74,29 @@ Majorly, there are 2 scenarios where data migration would be needed:
 13. It will load the process hierarchy and underlying objects like security tasks, entry point mapping, duties, privileges and roles.
 14. This completes the data migration process. 
 
-## Bulk-create a process hierarchy
+## Deep dive into scenario 2 - migration of process hierarchy and related objects for an existing Security category from EASS to Security governance
 
-System administrators can use the **Restore from XML** feature to create an entire hierarchy under a security category. For this approach, generate the XML file in the correct format, with the desired hierarchy under a category. The hierarchy can optionally include multiple processes in a hierarchy tree and security tasks under each process. Although generation of the XML is a manual process, this approach to creating a hierarchy can still be faster if an accurate template of the XML is followed. Template creation mostly involves copying and pasting with the correct metadata. Make sure that each category has a unique name.
+This scenario is helpful specially in such cases where you already have security category existing between 2 environments and you are trying to migrate the data under that category. With data, it means process hierarchy, security tasks, entry points mapping, duties, privileges and security roles.  
 
+1. Navigate to **System administration** \> **Executive Automats Security Setup** \> **Security Process Roles Maintain**.
+2. Select the desired category which you want to export to other environment.
+3. Select the process hierarchy node.
+4. Under **Process role definition** fast tab, select the **Export** option.
+5. It will open up a dialog **Export Executive Automats Security Setup Data**.
+6. Make the selection under **Type** field. Each option is explained above. 
 > [!TIP]
-> Create one category through the user interface (UI), and use the **Backup as XML** feature to download the initial file. Then modify the category in this file to create the new category that has the desired hierarchy.
+> In this specific scenario of data migration, **EASS + Security configuration** option is the most suitable choice because then it will restore and publish everything which you are trying to migrate into new environment.
+7. You MUST select **User security governance format** option because it will generatge the XML which is compatible with **Security governance** restore process.
+8. Click the **OK** button and it should export the XML file ready with data.
 
-## Security category export and import process
-
-In general, data export and import scenarios apply when a customer migrates data between the legacy tool and user security governance, or when a customer copies data between multiple data areas. This function is available only to the system administrator role.
-
-The first step in the process is to export the data.
-
-1. On the **Security category** page, select the desired security categories or all security categories. Select **Backup as XML**.
-1. Select between the following options:
-
-    - **All categories** – To select all categories, turn on this option.
-    - **Type** – Select an option, based on your requirements. The three available options are explained in detail in the [Back up as XML](#back-up-as-xml) section of this article. You can select only one option in this lookup.
-
-1. Select **OK**. A file in XML format is downloaded. Save the file in your local storage.
-1. Open the file in any XML editor, and confirm that it includes the appropriate user security governance objects or core security configuration objects, based on your selections during the export.
-
-The next step is to import the file into the new data area that you're targeting as the destination.
-
-1. Switch to the environment or the new data area where you want to import the security categories that you exported.
-1. Go to **System administration** \> **Security governance** \> **Security category**.
-1. Select **Restore from XML**.
-1. In the dialog that appears, browse to the XML file that you exported.
-1. In the **Type** field, select the same value that you selected in the **Type** field during export. If you select an incorrect **Type** value, you receive an informational message that explains why the import process might not work.
-1. In the **Options** section, in the **Security relation action** field, select **None**, **Clear**, or **Create**, based on whether you want to create user security governance objects, clear the existing references between finance and operations security objects and user security governance objects, or create all objects.
-1. Select **OK** to start the data import. When the action is completed, you receive an appropriate informational message.
+Once you are ready with the file, next step would be to import this data into **Security governance**.
+1. Navigate to **System administration** \> **Security governance** \> **Security process roles maintain**.
+2. As per the expectation, security category should already exist. Select the category and one of the process hierarchy node underneath it.
+3. Under the **Role definition** fast tab, click button **Restore from XML**.
+4. This should open up the dialog box to restore process role with few configuration options.
+5. You will observe an option **Overwrite**. If this is selected ON, it will overwrite any security object under the selected category from the one which is part of the import file from EASS.
+> [!TIP]
+> Selecting **Overwrite = Yes** is helpful when the selected security category has pre-existing process role hierarchy with some objects where names are matching with the one from EASS. This will ensure that the data import process do not get blocked because of existing objects and it will simply overwrite them. Make sure you are ok with this before seleting this option.
+6. Under the **Options** section in **Security relation action** field, select **None**, **Clear**, or **Create**, based on whether you want to create user security governance objects, clear the existing references between finance and operations security objects and user security governance objects, or create all objects.
+7. Select **OK** to start the data import. When the action is completed, you receive an appropriate informational message.
+8. Refresh the form to verify the data by navigating to the hierarchy node which you selected to restore the XML.
