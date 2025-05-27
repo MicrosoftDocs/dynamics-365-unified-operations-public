@@ -1,4 +1,4 @@
---- 
+o--- 
 title: Security process hierarchy migration
 description: Learn how to perform data migration scenarios for user security governance process hierarchy and security categories. 
 author: saurabhgupta
@@ -34,27 +34,32 @@ Majorly, there are 2 scenarios where data migration would be needed:
 4. It will open up a dialog box.
 5. Under this dialog, there is a toggle button named **All categories**. If you wish to export all categories, select this toggle button.
 6. There is another toggle button named **User security governance format**. You must select this toggle ON to make sure the format of exported file is compatible with **Security governance** feature.
-7. Now, under the option **Type**, most suitable options to select are either **EASS** or **EASS + Security configuration**. And, the reason behind this suggestion is that the primary goal of this data migration activity is to re-create security process hierarchy and related security objects in new environment. Without selecting **EASS**, this goal will not fulfill.  
-
+7. Now, under the option **Type**, most suitable options to select are either **EASS** or **EASS + Security configuration**. And, the reason behind this suggestion is that the primary goal of this data migration activity is to re-create security process hierarchy and related security objects in new environment. Without selecting **EASS**, the data migration to new environment will still work but it will not fulfill the goal of this scenario as with selecting EASS, template file will not contain process hierarchy objects.
+8. Click **Ok** and it should generate the template file with data in desired format compatible for migration into security governance.
     > [!IMPORTANT]
-    > You can back up either a single selected category or all available categories. You can't individually select multiple categories for backup at the same time.
+    > You can back up either a single selected category or all available categories. You can't individually select multiple categories for exporting at the same time without opening the dialog.
+    
 
-1. In the dialog that appears, on the **Parameters** FastTab, in the **Type** field, select one of the following values:
+1. Now, let's go through the process of **restoring security category** downloaded from EASS into the **Security governance** module.
+2. Go to **System administration** \> **Security governance** \> **Security category**.
+3. In ideal case, either there are no pre-existing security categories on this form OR the existing categories are different from the one which you are trying to **restore** from **EASS**.
+4. If the category name alredy exists in security governance, this process will throw a warning and prevent you from moving forward.
+5. Click on the button **Restore from XML**. It will open up a dialog box with multiple fields and file browser control.
+6. In the file browser control, select the file which you generated in step #8 above. 
+7. Under the **Parameters** FastTab, in the **Type** field, there are multiple values. Let me explain each of them so that it will help you make the accurate choice:
+   - **User security governance** – This option will restore security category and its related configuration from the **Process hierarchy** page. If multiple process hierarchies, security tasks, security duties, security privileges, entry points mapping with tasks, or security roles are defined under a category, this option will restore only objects that  are limited to security governance module and it will exclude all objects that were created under **Core security configuration**. For example, the hierarchy, tasks, and entry points mapping will be restored but duties, privileges, and roles will be excluded.
+    > [!IMPORTANT]
+    > If **EASS** was selected while generating the file in step #8 above, you must select this option because they are equivalent to each other. 
+    
+   - **Security configuration** – This option will restore only the core security objects present in the exported file above. It will not restore the security category and its related configuration from the **Process hierarchy** page. If multiple process hierarchies, security tasks, security duties, security privileges, entry points mapping with tasks, or security roles are defined under a category, this option will restore only objects that were created under **Core security configuration** and it will exclude all objects that were created under security governance **process hierarchy**. For example, the security category, hierarchy, tasks, and entry points mapping will be excluded but duties, privileges, and roles will be restored.
+   > [!IMPORTANT]
+   > If **EASS** was selected while generating the file in step #8 above, you must **NOT** select this option because they are exclusive of each other.
+   
+   - **Governance + configuration** – This option will restore the security category and its related configurations from the **Process hierarchy** page as well as under **Core security configuration**. If multiple process hierarchies, security tasks, security duties, security privileges, entry points mappings with task, security roles, and so on, are defined under a category, this option will restore everything that was created under **Core security configuration** and also all objects that are limited to the **Process hierarchy** page. For example, the XML includes everything, such as the hierarchy, tasks, duties, privileges, entry points, and roles.
+   > [!IMPORTANT]
+   > If **EASS + Security configuration** was selected while generating the file in step #8 above, this option is the most suitable choice because then it will restore everything which you are trying to achieve.
 
-    - **User security governance** – Generate a complete XML file of the security category and its related configuration from the **Process hierarchy** page. If multiple hierarchies, tasks, duties, privileges, entry points, or roles are defined under the category, the XML includes only objects that were created on the **Process hierarchy** page. It excludes all objects that were created under **Core security configuration**. For example, the XML includes the hierarchy, tasks, and entry points, but it excludes duties, privileges, and roles.
-    - **Security configuration** – Generate a complete XML file of the security category and its related configurations from **Core security configuration**. If multiple hierarchies, tasks, duties, privileges, entry points, roles, and so on, are defined under the category, the XML includes only objects that were created under **Core security configuration**. It excludes all objects that are limited to the **Process hierarchy** page. For example, the XML includes duties, privileges, and roles, but it excludes the hierarchy, tasks, and entry points.
-    - **Governance + configuration** – Generate a complete XML file of the security category and its related configurations from the **Process hierarchy** page and under **Core security configuration**. If multiple hierarchies, tasks, duties, privileges, entry points, roles, and so on, are defined under the category, the XML includes everything that was created under **Core security configuration** and also all objects that are limited to the **Process hierarchy** page. For example, the XML includes everything, such as the hierarchy, tasks, duties, privileges, entry points, and roles.
-
-1. Select **Types**, and then select **OK**.
-1. When you're prompted, save the XML file in your local browser.
-
-## Restore from XML
-
-1. Go to **System administration** \> **Security governance** \> **Security category**.
-1. Select **Restore from XML**.
-1. In the dialog that appears, use the file browsing option to specify the path of an XML file that has a valid format.
-1. In the **Type** field, select a value.
-1. If you selected **User security governance** in the **Type** field, in the **Security related action** field, select one of the following options:
+    In the **Security related action** field, select one of the following options:
 
     - **Create** – Automatically create or push all duties and roles that must be created from the security setup into the publish staging table. The security configuration should show all security objects that were developed by using the security setup and that are ready for publishing.
     - **Clear** – Clear all the security references between user security governance and the Dynamics 365 finance and operations apps security configuration. Every task line that was imported is blank, and you must re-create roles and duties for each line. This option might be helpful when you want to clear off or renew the project.
