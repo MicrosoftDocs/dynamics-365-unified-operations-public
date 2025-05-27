@@ -1783,8 +1783,6 @@
           href: inventory/inventory-visibility-api.md
         - name: Sync external inventory adjustments through Inventory Visibility
           href: inventory/inventory-visibility-sync-changes.md
-        - name: Inquire into inventory with Copilot (preview)
-          href: inventory/inventory-visibility-copilot-api.md
         - name: Log and view successful API posts
           href: inventory/inventory-visibility-track-inventory-log-history.md
         - name: Inventory Visibility diagnostic tool
@@ -3553,7 +3551,7 @@
           items:
           - name: Rating profiles
             href: transportation/tasks/setup-a-rating-profile.md
-          - name: Set up rate masters
+          - name: Set up rate masters, rate bases, and break masters
             href: transportation/tasks/set-up-rate-masters.md
           - name: Miscellaneous charges
             href: transportation/transportation-management-misc-charge.md
@@ -3971,6 +3969,8 @@
             href: warehousing/display-older-batches-within-warehouses.md
           - name: Pick oldest batch on a mobile device
             href: warehousing/pick-oldest-batch.md
+          - name: Query item data on a mobile device
+            href: warehousing/warehouse-app-item-inquiry.md
         - name: Global mobile device parameters
           href: warehousing/mobile-device-parameters.md
         - name: Warehouse mobile devices workspace
@@ -4191,11 +4191,9 @@
         href: faq-demand-planning-copilot.md
       - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace
         href: faq-confirmed-po-changes.md
-      - name: Responsible AI FAQ for Inquire into inventory with Copilot (preview)
-        href: faq-inventory-query.md
       - name: Responsible AI FAQ for Workload insights with Copilot
         href: faq-wma-copilot.md
-      - name: Responsible AI for Supplier Communications Agent (production ready preview)
+      - name: Responsible AI for the Supplier Communications Agent (production ready preview)
         href: faq-supplier-communications-agent.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
