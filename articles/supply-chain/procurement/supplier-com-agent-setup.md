@@ -35,7 +35,8 @@ To use the Supplier Communications Agent, your system must meet the following re
     - [*(Production ready preview) Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
     - *(Production ready preview) Supplier Communications Agent*
 
-If you can't enable one or more of these features, then make sure that all of the prerequisites in the feature documentation are fulfilled.
+> [!TIP]
+>If you can't enable the *Agent management* features, then make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
 
 - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you are running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
     - First, install (or update to) *Copilot for finance and operations apps* version 1.0.3048.2 or later.
@@ -77,7 +78,7 @@ The user must be added into both the Dataverse environment and into Dynamics 365
     - *(Preview) Supplier Communications Agent*
     - *System user*
 
-### Create required connections and activate the triggering flows
+## Create required connections and activate the triggering flows
 
 1. Open the [Power Apps Maker portal](https://make.powerapps.com) and sign in as an environment administrator user.
 1. In the page header select the **Environment** associated with finance and operations.
