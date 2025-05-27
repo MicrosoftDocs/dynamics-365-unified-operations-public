@@ -22,18 +22,20 @@ ms.custom:
 
 This article explains how system administrators can set up and configure the Supplier Communications Agent.
 
+[!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
+
 ## Prerequisites
 
 To use the Supplier Communications Agent, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later, with available quality updates.  
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later, with all available quality updates.  
 - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the features aren't shown on your system.
 
     - [*(Production ready Preview) Immersive Home*](../../fin-ops-core/fin-ops/copilot/immersive-home.md)
     - [*(Production ready preview) Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
     - *(Production ready preview) Supplier Communications Agent*
 
-If one of the features can not be enable verify the prerequisites in the feature documentation are fulfilled.
+If you can't enable one or more of these features, then make sure that all of the prerequisites in the feature documentation are fulfilled.
 
 - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you are running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
     - First, install (or update to) *Copilot for finance and operations apps* version 1.0.3048.2 or later.
@@ -84,7 +86,8 @@ The user must be added into both the Dataverse environment and into Dynamics 365
 1. At the top of the page, select **New connection**.
 1. Find the connection with a **Name** of *Microsoft Copilot Studio (preview)*. Select **Create** for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
 1. You return to the **Connections** list. Your new connector is now shown at the bottom of the list and is named after the agent identity you signed in with when creating it.
-[<img src="media/sca-connections-setup.png" alt="Example connections setup" title="Example connections setup" width="400" />](media/sca-connections-setup.png)
+
+    :::image type="content" source="media/sca-connections-setup.png" alt-text="Example connections setup" lightbox="media/sca-connections-setup.png":::
 
 1. To finish setting up agent identity, you must update the agent's connection references so that they point to the connections that you created. You must also activate the triggering Power Automate flows. The section [sample PowerShell script](#sample-script) provides a sample PowerShell script that you can use to complete both tasks.
 
