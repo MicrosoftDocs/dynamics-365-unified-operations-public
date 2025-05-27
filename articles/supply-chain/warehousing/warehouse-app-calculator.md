@@ -15,30 +15,30 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-The Warehouse Management mobile app provides a built-in calculator provides essential numerical entry and mathematical computation capabilities. It enables workers to perform calculations without leaving their current workflow.
+The Warehouse Management mobile app includes a built-in calculator that provides essential numerical entry and mathematical computation capabilities. It enables workers to perform calculations without leaving their current workflow.
 
-The calculator supports the following enhanced gesture controls:
+The calculator supports the following features:
 
 - Standard numerical input and real-time calculations.
 - Long press the **9** key to enter negative numbers.
 - Long press the decimal point (**.**) key to open the arithmetical operators menu.
 
 > [!IMPORTANT]
-> The long-press gestures require a press duration of at least 500 ms. Brief taps don't trigger the enhanced functionality.
+> The long-press gestures require a press duration of at least half a second. Brief taps don't trigger the enhanced functionality.
 
 ## Access the calculator
 
 The calculator is automatically shown when it's required by the workflow the worker is using. For example, it appears when workers need to enter values for the following types of fields:
 
-- **Quantity fields** - When entering item quantities during warehouse operations.
-- **Number-type inputs** - As defined by the workflow configuration.
-- **Measurement values** - When precise numerical input is required.
+- **Quantity fields** – When entering item quantities during warehouse operations.
+- **Number-type inputs** – As defined by the workflow configuration.
+- **Measurement values** – When precise numerical input is required.
 
-## Basic calculator functionality
+## Basic input and calculator functionality
 
 The calculator functions as a specialized numerical input tool with an enhanced interface. Workers can enter numbers using the numeric keypad and perform mathematical operations in real-time.
 
-## Select an arithmetical operator
+## Arithmetical operators
 
 The calculator provides access to four basic arithmetical operators. To select an operator, follow these steps:
 
@@ -49,7 +49,7 @@ The calculator provides access to four basic arithmetical operators. To select a
 
 To enter negative numbers in the calculator, follow these steps:
 
-1. Enter a value using the numeric keypad.
+1. Enter the value using the numeric keypad.
 1. Long press the **9** key on the keypad to toggle the entered value from positive to negative.
 1. Continue with your calculation as normal.
 
@@ -58,7 +58,7 @@ To enter negative numbers in the calculator, follow these steps:
 
 ## Usage examples
 
-## Enter a quantity value
+### Enter a quantity value
 
 To enter a numerical value for a quantity field, follow these steps:
 
@@ -86,13 +86,13 @@ This section describes common issues and their solutions.
 
 **Problem:** The long press gesture doesn't activate the enhanced functionality.
 
-**Solution:** Make sure you're holding the button for at least 500 ms. A brief tap doesn't activate the gesture control.
+**Solution:** Make sure you're holding the button for at least half a second. A brief tap doesn't activate the gesture control.
 
 ### The operations menu doesn't appear
 
-**Problem:** The mathematical operations menu doesn't display when needed.
+**Problem:** The arithmetical operators menu doesn't display when needed.
 
-**Solution:** Verify that you're long pressing the decimal point (**.**) key for at least 500 ms. Other numbers and functions keys don't open the menu.
+**Solution:** Verify that you're long pressing the decimal point (**.**) key for at least half a second. Other numbers and function keys don't open the menu.
 
 ### A gesture activates unintentionally
 
