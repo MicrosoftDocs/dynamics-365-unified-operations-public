@@ -86,7 +86,7 @@ The user must be added into both the Dataverse environment and into Dynamics 365
 1. You return to the **Connections** list. Your new connector is now shown at the bottom of the list and is named after the agent identity you signed in with when creating it.
 [<img src="media/sca-connections-setup.png" alt="Example connections setup" title="Example connections setup" width="400" />](media/sca-connections-setup.png)
 
-1. Update the agent's connection references to point to the connections that you created. You must also activate the triggering flows. You can accomplish these tasks using the [sample PowerShell script](#sample-script) provided at the bottom of this article.
+1. To finish setting up agent identity, you must update the agent's connection references so that they point to the connections that you created. You must also activate the triggering Power Automate flows. The section [sample PowerShell script](#sample-script) provides a sample PowerShell script that you can use to complete both tasks.
 
 ## Assign permissions to users working with the agent
 
@@ -104,13 +104,13 @@ Additionally, they need following roles assigned.
 - Required Dynamics 365 Supply Chain Management user roles:
     - *System user*
     - *Purchasing manager* and/or *Purchasing agent*
- 
+
 ### Permissions for users reviewing agent results
 
 - Required Dataverse user roles:
     - *Basic User*
     - *Finance and Operations Basic User*
- 
+
 - Required Dynamics 365 Supply Chain Management user roles:
     - *System user*
     - *Purchasing agent*
@@ -186,14 +186,20 @@ After you enable the supplier communication agent on a sandbox environment, we r
 
 ## <a name="sample-script"></a>Sample script to update connection references and enable triggering flows
 
-This sample PowerShell script finishes [setting up the agent identity](#set-up-agent-identity) by updating the connection references for the agent and activating the triggering Power Automate flows. You must set the following parameters before running the script:
+This sample PowerShell script finishes [setting up the agent identity](#set-up-agent-identity) by updating the connection references for the agent and activating the triggering Power Automate flows. 
 
-- `environmentId` - Your Dataverse environment ID. You can find it in the Power Platform admin center.
-- `dataverseUrl` - Your Dataverse environment URL. You can find it in Power Platform admin center.
-- `DVConnectionName` - The name of the Dataverse connector to use. The connector is named after the agent identity you signed in with when [creating](#set-up-agent-identity) it. You can find it on the **Connections** page of the Power Apps Maker portal.
-- `MCSConnectionName` - The name of the Microsoft Copilot Studio connector to use. The connector is named after the agent identity you signed in with when [creating](#set-up-agent-identity) it. You can find it on the **Connections** page of the Power Apps Maker portal.
+To use the sample PowerShell script, follow these steps.
 
-Copy the following script and save it as a `.ps1` file. Enter the parameter values at the top, customize it if needed, and run it from any PowerShell console. When you run the script, sign in as an environment administrator when prompted.
+1. Copy the script, and save it as a .ps1 file.
+
+2. Before you run the script, set the following four parameters at the top:
+
+    - `environmentId` - Your Dataverse environment ID. You can find it in the Power Platform admin center.
+    - `dataverseUrl` - Your Dataverse environment URL. You can find it in Power Platform admin center. Include the *https://* in URL.
+    - `DVConnectionName` - The name of the Dataverse connector to use. The connector is named after the agent identity you signed in with when [creating](#set-up-agent-identity) it. You can find it on the **Connections** page of the Power Apps Maker portal.
+    - `MCSConnectionName` - The name of the Microsoft Copilot Studio connector to use. The connector is named after the agent identity you signed in with when [creating](#set-up-agent-identity) it. You can find it on the **Connections** page of the Power Apps Maker portal.
+3. Customize the script as you require.
+4. Run the script from any PowerShell console. When you're prompted to sign in, sign in as an environment administrator.
 
 ```powershell
 Param(
