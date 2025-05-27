@@ -68,6 +68,7 @@ The user must be added into both the Dataverse environment and into Dynamics 365
 ### Create required connections and activate the triggering flows
 
 1. Open the [Power Apps Maker portal](https://make.powerapps.com) and sign in as an environment administrator user.
+1. In the page header select the **Environment** associated with finance and operations.
 1. In the left navigator, select **Connections**.
 1. At the top of the page, select **New connection**.
 1. Use the **Search** field at the top-right of the page to find the connection with a **Name** of *Microsoft Dataverse*. Select **Create** for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
