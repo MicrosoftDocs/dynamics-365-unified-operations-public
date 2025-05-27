@@ -27,18 +27,17 @@ This article explains how system administrators can set up and configure the Sup
 Before you can use the Supplier Communications Agent, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). If the features aren't shown for your system, select **Check for updates**.
 
+- In Supply Chain Management, the following features must be turned on in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace. If the features aren't shown for your system, select **Check for updates**.
     - *(Preview) Immersive Home*
     - *(Production ready preview) Agent management*
     - *(Production ready preview) Supplier Communications Agent*
 
     Learn more about the *Immersive Home* feature in [Immersive Home overview](../../fin-ops-core/fin-ops/copilot/immersive-home.md).
 
-- You must be running the following packages in the Power Platform admin center:
-
-    - *Copilot for finance and operations apps*, version 1.0.3048.2 or later
-    - *Copilot in Microsoft Dynamics 365 Supply Chain Management*, version 1.1.3046.2 or later
+- In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you are running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
+    - First, install (or update to) *Copilot for finance and operations apps* version 1.0.3048.2 or later.
+    - Then, install (or update to) *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.3046.2 or later.
 
 - Optional: If you want the agent to send emails automatically, turn on the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature in Feature management. We recommend that you turn off this feature for sandbox environments, where data such as purchase orders might not be up to date, or vendor email addresses might be missing.
 

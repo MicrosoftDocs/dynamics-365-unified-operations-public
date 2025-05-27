@@ -28449,6 +28449,16 @@
       "source_path": "articles/supply-chain/transportation/tasks/set-up-automatic-freight-reconciliation.md",
       "redirect_url": "/dynamics365/supply-chain/transportation/reconcile-freight-transportation-management",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/inventory/inventory-visibility-copilot-api.md",
+      "redirect_url": "/dynamics365/supply-chain/inventory/inventory-visibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/faq-inventory-query.md",
+      "redirect_url": "/dynamics365/supply-chain/responsible-ai-overview",
+      "redirect_document_id": false
     }
   ]
 }

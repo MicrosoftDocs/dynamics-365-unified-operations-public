@@ -1783,8 +1783,6 @@
           href: inventory/inventory-visibility-api.md
         - name: Sync external inventory adjustments through Inventory Visibility
           href: inventory/inventory-visibility-sync-changes.md
-        - name: Inquire into inventory with Copilot (preview)
-          href: inventory/inventory-visibility-copilot-api.md
         - name: Log and view successful API posts
           href: inventory/inventory-visibility-track-inventory-log-history.md
         - name: Inventory Visibility diagnostic tool
@@ -4193,8 +4191,6 @@
         href: faq-demand-planning-copilot.md
       - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace
         href: faq-confirmed-po-changes.md
-      - name: Responsible AI FAQ for Inquire into inventory with Copilot (preview)
-        href: faq-inventory-query.md
       - name: Responsible AI FAQ for Workload insights with Copilot
         href: faq-wma-copilot.md
       - name: Responsible AI for the Supplier Communications Agent (production ready preview)
