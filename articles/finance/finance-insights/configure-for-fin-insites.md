@@ -72,7 +72,8 @@ Installing the Finance insights add-in will automatically enable all Finance Ins
 If you previously installed the Finance insights add-in, uninstall it before you complete the following procedure.
 
 > [!NOTE]
-> If you've already installed the data lake add-in in LCS, Finance insights will use it to save data that is required for predictions. If you haven't yet installed the data lake add-in in LCS, the Finance insights add-in will create a managed data lake for you.
+> If you have already installed the Export to Data Lake add-in in LCS, please uninstall it before installing the Finance Insights add-in, as the Export to Data Lake add-in has been deprecated.
+> For more information, please go to [Export to Data Lake in finance and operations apps](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md).
 
 Follow these steps to install the Finance insights add-in.
 
