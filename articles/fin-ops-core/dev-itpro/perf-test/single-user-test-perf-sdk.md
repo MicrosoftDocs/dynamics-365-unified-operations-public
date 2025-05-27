@@ -4,9 +4,8 @@ description: Learn about how to do single-user testing by using Microsoft Visual
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 05/28/2020
+ms.date: 05/27/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
@@ -21,7 +20,7 @@ Use the information in this article to do single-user testing by using Visual St
 
 > [!IMPORTANT]
 > As of September 2024, the Perf SDK is no longer supported. This deprecation follows the end of support for Visual Studio 2019, which was the last version to include web performance and load testing features.
-> + For more information, see [Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022](./dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#microsoft-will-no-longer-ship-or-support-the-visual-studio-extensions-for-finance-and-operations-apps-power-platform-tools-and-visual-studio-versions-prior-to-2022.md).
+> + For more information, see [Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022](../../dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates.md#microsoft-will-no-longer-ship-or-support-the-visual-studio-extensions-for-finance-and-operations-apps-power-platform-tools-and-visual-studio-versions-prior-to-2022).
 
 ## Use Task recorder to define and record an end-to-end business scenario
 
