@@ -27,14 +27,14 @@ This article explains how system administrators can set up and configure the Sup
 To use the Supplier Communications Agent, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the features aren't shown on your system.
+- In Supply Chain Management, the following features must be turned on in the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace. Select **Check for updates** if the features aren't shown on your system.
     - *(Preview) Immersive Home*
     - *(Production ready preview) Agent management*
     - *(Production ready preview) Supplier Communications Agent*
 
-- You must be running the following packages in the Power Platform admin center - note it is important that they are in the following order:
-    - First,  *Copilot for finance and operations apps* version 1.0.3048.2 or later
-    - After, *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.3046.2 or later
+- In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you are running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
+    - First, install (or update to) *Copilot for finance and operations apps* version 1.0.3048.2 or later.
+    - Then, install (or update to) *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.3046.2 or later.
 
 - Optionally, you can also use feature management to turn on the following feature if you'd like to automatically send emails. We recommend that you turn it off for sandbox environments where data such as purchase orders might not be up to date or vendor emails could be missing.
     - *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails*
