@@ -46,3 +46,13 @@ When trying to enable feature *(Production Ready Preview) Agent Management* in F
 
 **Solution:** Install available feature updates for 10.0.44. After the initial preview release of 10.0.44 changes regarding the Copilot message capacity had been introduced that are required to enable the Agent Management feature.
 
+### Symptom: Inbound Supplier Communications Agent configuration shows error *"Exception has been thrown by target of invocation"*
+
+When configuring the activating the inbound Supplier Communications Agent in finance and operations, and specifying the conditions in which the agent should operate, the error *"Exception has been thrown by target of invocation"* appears when pressing the **Activate** button.
+
+**Solution:** After installing or updating the version of the Dynamics 365 app "Copilot for finance and operations app", the included cloud flows could not be turned on automatically. To resolve the issue navigate to the [Power App maker environment](https://make.powerapps.com/) select the Dataverse environment associated your finance and operations app, select **Solutions** and under **Managed** identify **Copilot for finance and operations apps** and select edit in the ... menu. Select the object category **Cloud flows** and check that each of the two cloud flows is tuned on.
+
+**Solution:** Mailbox email must be lower case only. [With in Powr Platform admin center](https://aka.ms/PPAC) navigate to the environment details, open the settings from the top navigation bar.
+
+1. Under **Email** select **Mailboxes** and identify the mailbox that you have configured in Dataverse for the Supplier Communication Agent and open the details. In the field **Email Address** make sure that the email is written in lower caps.
+1. Under **Business** select **Queues** identify the queue you have created for your team and open it. In the field **Incoming Address** make sure that the email is written in lower caps.
