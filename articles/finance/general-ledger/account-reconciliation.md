@@ -35,7 +35,7 @@ Learn how to set up and configure the Account Reconciliation Agent in [Set up an
 
 ## Address exceptions
 
-If any exceptions must be addressed, select **Mitigate exceptions** on the **Open exceptions** tile in the upper part of the workspace to view all exceptions for all modules across all legal entities. To open the **Mitigate expections** page, select the number of exceptions (in red) for a specific module and legal entity.
+If any exceptions must be addressed, select **Mitigate exceptions** on the **Open exceptions** tile in the upper part of the workspace to view all exceptions for all modules across all legal entities. To open the **Mitigate exceptions** page, select the number of exceptions (in red) for a specific module and legal entity.
 
 On the **Open exceptions** page, you can view the details of each exception and take appropriate action to address it. The actions that are available vary, depending on the exception.
 
