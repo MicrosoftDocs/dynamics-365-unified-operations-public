@@ -1,31 +1,40 @@
 --- 
-title: Security category export/import
-description: Learn how to use the backup and restore processes that are related to security categories. 
+title: Security process hierarchy migration
+description: Learn how to perform data migration scenarios for user security governance process hierarchy and security categories. 
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: how-to
-ms.date: 05/12/2025
+ms.date: 05/26/2025
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
-ms.search.validFrom: 2016-06-30
-ms.search.form: SysSecSegregationOfDutiesRule
+ms.search.validFrom: 2025-05-25
+ms.search.form: SysSecProcessHierarchy
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-# Security category export/import
+# User security governance process hierarchy data migration details
 
 [!include [banner](../../../finance/includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Security categories offer options for both backing up as XML and restoring from XML. Learn more about the import process in [Import an existing category](security-category.md#import-an-existing-category). This article describes various scenarios that system administrators can handle.
+Security governance features offers options for both backing up as XML and restoring from XML in different scenarios. This article focus on specific scenarios of data migration and steps involved for backing up the data, restoring it later and then verifying the restored data. Another related topic to refer is the import process in [Import an existing category](security-category.md#import-an-existing-category). .
 
-## Back up as XML
+## Data migration scenarios
 
-1. Go to **System administration** \> **Security governance** \> **Security category**.
-1. Before you start the backup, confirm that security categories are set up.
-1. Select a security category, and then select **Backup as XML**.
+Majorly, there are 2 scenarios where data migration would be needed: 
+**Scenario 1:** Migrating data from **Executive automats security setup** to **Security governance**.
+**Scenario 2:** Setting up another instance of **Security governance** configurations within the same company.  
+
+## Deep dive into scenario 1 - data migration from EASS to Security governance
+1. Go to **System administration** \> **Executive Automats Security Setup** \> **Security category**.
+2. In ideal case, categories must already be existing. But, if not, then make sure that security categories are set up already.
+3. Select one of the security categories which you desire to migrate and then select **Export**.
+4. It will open up a dialog box.
+5. Under this dialog, there is a toggle button named **All categories**. If you wish to export all categories, select this toggle button.
+6. There is another toggle button named **User security governance format**. You must select this toggle ON to make sure the format of exported file is compatible with **Security governance** feature.
+7. Now, under the option **Type**, most suitable options to select are either **EASS** or **EASS + Security configuration**. And, the reason behind this suggestion is that the primary goal of this data migration activity is to re-create security process hierarchy and related security objects in new environment. Without selecting **EASS**, this goal will not fulfill.  
 
     > [!IMPORTANT]
     > You can back up either a single selected category or all available categories. You can't individually select multiple categories for backup at the same time.
