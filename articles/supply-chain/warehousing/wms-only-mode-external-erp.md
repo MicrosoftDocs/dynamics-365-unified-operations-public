@@ -158,7 +158,7 @@ By default, the *Publish warehouse inventory update log updates* background proc
 Warehouse management processes can use an owner inventory dimension to track the ownership of inventory for items shared across multiple source systems.
 
 To use the owner inventory dimension, products must have a tracking dimension group where the *Owner* dimension is enabled.
-Furthermore, you must create a record on the **Warehouse inventory owner** page (**Warehouse management > Setup > Warehouse management integration > Warehouse inventory owner**).
+Furthermore, you must create a record on the **Warehouse inventory owner** page (**Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Warehouse inventory owner**).
 
 > [!IMPORTANT]
-> The *Warehouse inventory owner* configuration must contain mapping for every *owner* value sent from a source system in the order line. If a mapping is missing, the order message will fail to process. This requirement also applies when the source system sends an empty owner value. In such cases, the configuration must map the empty value from the source system to the appropriate value in the Warehouse Operations Management (WOM) system.
+> The *Warehouse inventory owner* configuration must contain a mapping for every *Owner* value sent from a source system in the order line. If a mapping is missing, the order message will fail to process. This requirement also applies when the source system sends an empty owner value. In such cases, the configuration must map the empty value from the source system to the appropriate value in the warehouse operations management (WOM) system.
