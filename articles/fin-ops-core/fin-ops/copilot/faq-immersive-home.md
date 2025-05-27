@@ -20,7 +20,7 @@ ms.reviewer: kamaybac
 
 This FAQ provides answers to frequently asked questions about the AI technology that's used in relation to the *Immersive Home* feature. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
-
+[!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 ## What is Immersive Home?
 

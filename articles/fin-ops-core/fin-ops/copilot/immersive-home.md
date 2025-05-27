@@ -91,4 +91,4 @@ Workspace tiles highlight information that you have pinned to the dashboard. To 
 
 ## Related information
 
-[Responsible AI FAQ for Immersive Home in finance and operations apps (preview)](faq-immersive-home.md)
+[Responsible AI FAQ for Immersive Home in finance and operations apps (production ready preview)](faq-immersive-home.md)

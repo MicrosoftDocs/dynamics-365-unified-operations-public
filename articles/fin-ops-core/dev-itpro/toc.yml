@@ -2327,9 +2327,9 @@ items:
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
       - name: Generative help and guidance with Copilot
         href: ../fin-ops/copilot/copilot-generative-help.md
-      - name: Agent management (preview)
+      - name: Agent management (production ready preview)
         href: ../fin-ops/copilot/agent-mgmt.md
-      - name: Immersive Home (preview)
+      - name: Immersive Home (production ready preview)
         href: ../fin-ops/copilot/immersive-home.md
       - name: Chat with finance and operations data
         href: copilot/chat-with-fno-data.md
@@ -2377,7 +2377,7 @@ items:
         href: ../fin-ops/copilot/faq-copilot-suggested-questions.md
       - name: Responsible AI FAQ for Workflow history summary
         href: ../fin-ops/copilot/workflow-history-summary-faq.md
-      - name: Responsible AI FAQ for Immersive Home in finance and operations apps (preview)      
+      - name: Responsible AI FAQ for Immersive Home in finance and operations apps (production ready preview)      
         href: ../fin-ops/copilot/faq-immersive-home.md
       - name: Responsible AI FAQ for Agent management in finance and operations apps (preview)
         href: ../fin-ops/copilot/faq-agent-mgmt.md

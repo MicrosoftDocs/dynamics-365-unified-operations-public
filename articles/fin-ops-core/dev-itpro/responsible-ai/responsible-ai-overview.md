@@ -21,7 +21,7 @@ ms.reviewer: johnmichalak
 - [Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps](../../fin-ops/copilot/faq-copilot-generative-help.md)
 - [Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)](../../fin-ops/copilot/faq-copilot-suggested-questions.md)
 - [Responsible AI FAQ for Workflow history summary](../../fin-ops/copilot/workflow-history-summary-FAQ.md)
-- [Responsible AI FAQ for Immersive Home in finance and operations apps (preview)](../../fin-ops/copilot/faq-immersive-home.md)
+- [Responsible AI FAQ for Immersive Home in finance and operations apps (production ready preview)](../../fin-ops/copilot/faq-immersive-home.md)
 
 ## Related information
 
