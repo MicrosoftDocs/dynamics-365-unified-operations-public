@@ -71,14 +71,17 @@ The user must be added into both the Dataverse environment and into Dynamics 365
 1. In the page header select the **Environment** associated with finance and operations.
 1. In the left navigator, select **Connections**.
 1. At the top of the page, select **New connection**.
-1. Use the **Search** field at the top-right of the page to find the connection with a **Name** of *Microsoft Dataverse*. Select **Create** for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
+1. Use the **Search** field at the **right side** of the page to find the connection with a **Name** of *Microsoft Dataverse* (if you see two, use the one with the green icon). Select **Create** for that row and follow the instructions on your screen. Sign in with the intended *agent identity* when prompted.
 1. You return to the **Connections** list. Your new connector is now shown at the bottom of the list and is named after the agent identity you signed in with when creating it.
 1. At the top of the page, select **New connection**.
 1. Find the connection with a **Name** of *Microsoft Copilot Studio (preview)*. Select **Create** for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
 1. You return to the **Connections** list. Your new connector is now shown at the bottom of the list and is named after the agent identity you signed in with when creating it.
+[<img src="media/sca-connections-setup.png" alt="Example connections setup" title="Example connections setup" width="400" />](media/sca-connections-setup.png)
+
 1. Update the agent's connection references to point to the connections that you created. You must also activate the triggering flows. You can accomplish these tasks using the [sample PowerShell script](#sample-script) provided at the bottom of this article.
 
 ## Assign permissions to users working with the agent
+
 All Dynamics 365 Supply Chain Management users working with the agent must also be created as Dataverse users (if they aren't already). To learn how, go to [Create users](/power-platform/admin/create-users).
 
 Additionally, they need following roles assigned.
@@ -159,7 +162,13 @@ If you're using a shared mailbox, then create a queue to allow all users working
 
 For detailed instructions, go to [Set up server-side synchronization of email](/power-platform/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks).
 
-### Troubleshoot server-side synchronization
+### Troubleshooting
+
+#### Issues when setting up Supplier Communications Agent
+
+To solve issues that might occur when setting up the Supplier Communications Agent, go to [FAQ and solving typical issues when setting up and configure the Supplier Communications Agent](supplier-com-agent-setup-faq.md)
+
+#### Server-side synchronization
 
 To learn how to solve common issues related to server-side synchronization, go to [Troubleshooting and monitoring](/power-platform/admin/troubleshooting-monitoring-server-side-synchronization).
 
