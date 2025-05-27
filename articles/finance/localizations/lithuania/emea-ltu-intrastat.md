@@ -221,18 +221,18 @@ To set up foreign trade parameters, follow these steps.
 
 In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Lithuanian Intrastat, select the following fields:
    
-    - Commodity
-    - Transaction code
-    - Country/region of origin
-    - State
-    - Country/region of sender
-    - State of sender
-    - Correction
-    - Country/region
-    - Tax exempt number
-    - Direction
-    - Delivery terms
-    - Transport
+- Commodity
+- Transaction code
+- Country/region of origin
+- State
+- Country/region of sender
+- State of sender
+- Correction
+- Country/region
+- Tax exempt number
+- Direction
+- Delivery terms
+- Transport
 
 ## Intrastat transfer
 
