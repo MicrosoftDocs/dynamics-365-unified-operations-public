@@ -1,6 +1,6 @@
 ---
 title: Account reconciliation
-description: Learn how to use the Account reconciliation page and the Copilot agent that integrates with it.
+description: Learn how to use the Account reconciliation workspace and the Copilot agent that integrates with it.
 author: rcarlson
 ms.author: rcarlson
 ms.topic: article
@@ -15,60 +15,74 @@ ms.dyn365.ops.version: 10.0.42
 
 # Account reconciliation
 
-Starting in Microsoft Dynamics 365 Finance version 10.0.44, the Account reconciliation feature is available. The feature is used instead of the old reactive SSRS reports to reconcile your general ledger with the accounts payable, accounts receivable, tax, and bank subledgers. Users can view reconciled data and automated data analysis on a defined schedule, allowing the processing to happen in the background and in off hours only if desired. The exceptions displayed allow users to take action directly and when the Microsoft CoPilot powered agent is enabled and provides suggestions to the most likely action to take, saving time in the account reconciliation process each period end. 
+The Account reconciliation feature is available as of Microsoft Dynamics 365 Finance version 10.0.44. This feature is used to reconcile your general ledger with the accounts payable, accounts receivable, tax, and bank subledgers. It replaces the old reactive SQL Server Reporting Service (SSRS) reports.
 
-## Account reconciliation workspace page
+Users can view reconciled data and automated data analysis on a defined schedule. Therefore, the processing can be set up so that it's done only in the background or during off-hours.
 
-To access the **Account reconciliation workspace**, go to **Workspaces** > **Account reconciliation**. This page displays open exceptions for the current period, as well as any agent recommended actions, addressed exceptions, and any automatically reconciled transactions in the summary cards near the top of the page. Use the filter options at the top of the page to adjust the data you wish to view on the workspace, such as changing from the current fiscal period to the prior fiscal period.  
+Any exceptions that occur are shown. Users can then take direct action to address each exception. If the Microsoft Copilot–powered agent is enabled, it suggests the most likely action to take. Therefore, it helps save time during the account reconciliation process at the end of each period.
 
-In the bottom section of the workspace page you find details per each module and each company in that module that has transactional data for the period selected. The **Status** column has a button that displays the number of exceptions to deal with or indicates **Fully reconciled** status when all exceptions are dealt with. 
+## Account reconciliation workspace
 
-[![Account Reconciliation workspace](./media/AccountReconciliationWorkspace.png)](./media/AccountReconciliationWorkspace.png)
+To open the **Account reconciliation** workspace, go to **Workspaces** \> **Account reconciliation**. Tiles in the upper part of the workspace show summaries of open exceptions for the current period, addressed exceptions, automatically reconciled transactions, and agent-recommended actions. Use the filter options at the top of the workspace to adjust the data that is shown. For example, you can change from the current fiscal period to the previous fiscal period.
+
+The grid in the lower part of the workspace shows details about each combination of a module (area) and a legal entity (company) that has transactional data for the selected period. If there are exceptions, the **Status** column shows the number of exceptions that must be addressed (in red). After all exceptions are addressed, the **Status** column shows a status of **Fully reconciled** (in green).
+
+[![Screenshot of the Account reconciliation workspace that shows the previously described tiles, filter options, and grid.](./media/AccountReconciliationWorkspace.png)](./media/AccountReconciliationWorkspace.png)
 
 ## Copilot agent for account reconciliation
 
-For more information about setting up and configuring the Account reconciliation agent, see [Set up and configure the Account Reconciliation Agent](acct-rec-agent.md)
+Learn how to set up and configure the Account Reconciliation Agent in [Set up and configure the Account Reconciliation Agent](acct-rec-agent.md).
 
-## Dealing with exceptions
+## Address exceptions
 
-If there are exceptions to address, click **Mitigate exceptions** on the **Open exceptions** card to view all exceptions for all modules across all legal entities. To navigate to the mitigate exceptions page, click **Red status** for a given module and a specific legal entity. 
+If any exceptions must be addressed, select **Mitigate exceptions** on the **Open exceptions** tile in the upper part of the workspace to view all exceptions for all modules across all legal entities. To open the **Mitigate expections** page, select the number of exceptions (in red) for a specific module and legal entity.
 
-The **Open exceptions** page allows you to view the details of each exception and take proper action to reconcile each exception. 
-When the exception is **In Subledger not in ledger** the following actions are available:
-- **Create journal entry** - Users are taken to the General journal where an adjusting entry can be created to address the exception.
-- **Link transactions** - Usera taken to the **Link transactions** page where they can link transactions that are **In subledger not ledger** and **In ledger not subledger**.
-- **Accept without change** - Exception are cleared and accepted as is. Commonly used when the difference is a small amount or rounding difference.
-- **View exception history** - Users can view the history of the exception.
+On the **Open exceptions** page, you can view the details of each exception and take appropriate action to address it. The actions that are available vary, depending on the exception.
 
-When the exception is **In Ledger not in subledger**, the following actions are available:
-- **Reverse general ledger voucher** - Create a reversing entry for the ledger voucher.
-- **Link transactions** - Go to the **Link transactions** page where transactions can be linked. 
-- **Accept without change** - Exceptions are cleared and accepted as is. Commonly used when the difference is a small amount or rounding difference.
-- **Create adjusting journal entry** - Go to the **General journal** where an adjusting entry can be created to address the exception.
+If the exception is **In Subledger not in ledger**, the following actions are available:
 
-When the exception is **Amount mismatch** the following actions are available:
-- **Accept without change** - Exceptions are cleared and accepted as is. Commonly used when the difference is a small amount or rounding difference.
-- **Create adjusting journal entry** - Users are taken to the **General journal** where an adjusting entry can be created to address the exception.
+- **Create journal entry** – Go to the general journal, where you can create an adjusting entry to address the exception.
+- **Link transactions** – Open the **Link transactions** page, where you can link transactions that are in the subledger but not in ledger and transactions that are in the ledger but not in the subledger.
+- **Accept without change** – Accept the exception as is, and clear it. This action is often used when the difference is a small amount or a rounding difference.
+- **View exception history** – View the history of the exception.
 
- ### Undo an action
- If you have marked an exception as addressed and want to change the way the exception was addressed, you may chose to undo the last action. When you **Undo** an addressed exception, the exception is moved back to the list of the open exceptions for you to take action once again. Click **Undo** prompts you for a reason to be entered, and click **OK** to proceed. 
+If the exception is **In Ledger not in subledger**, the following actions are available:
+
+- **Reverse general ledger voucher** – Create a reversing entry for the ledger voucher.
+- **Link transactions** – Open the **Link transactions** page, where you can link transactions.
+- **Accept without change** – Accept the exception as is, and clear it. This action is often used when the difference is a small amount or a rounding difference.
+- **Create adjusting journal entry** – Go to the general journal, where you can create an adjusting entry to address the exception.
+
+If the exception is **Amount mismatch**, the following actions are available:
+
+- **Accept without change** – Accept the exception as is, and clear it. This action is often used when the difference is a small amount or a rounding difference.
+- **Create adjusting journal entry** – Go to the general journal, where you can create an adjusting entry to address the exception.
+
+### Undo an action
+
+If you previously marked an exception as addressed but want to change the way that you addressed it, you can undo the last action. When you undo an addressed exception, the exception is moved back to the list of open exceptions. You can then take action again.
+
+To undo an addressed exception, select **Undo**. You're prompted for a reason. Enter a reason, and then select **OK** to continue.
 
 ## Snapshots
 
-The last column of the main grid in the lower portion of the workspace page is a snapshot of data for the selected period, module, and company combination. The snapshot provides a final summary of all data for the given period including the automatically reconciled transactions and any addressed exceptions you might have dealt with for the period. The snapshot is only available for a ledger calendar fiscal period that is marked as on-hold or permanently closed and is fully reconciled. The generation of the snapshot happens with the same background process and schedule. 
+The last column of the grid in the lower part of the workspace shows a snapshot of data for the selected combination of a module and legal entity for the selected period. The snapshot provides a final summary of all data for the period, including automatically reconciled transactions and any exceptions that were addressed. The snapshot is available only for ledger calendar fiscal periods that are marked as on hold or permanently closed, and that are fully reconciled. The snapshot is generated through the same background process and on the same schedule.
 
 ## Configuration
 
-Using the gear icon on the top right of the workspace page to view the settings and configuration for the account reconciliation feature. On the **Account reconciliation configuration** page you can enable or disable the reconciliation processing for each module. You can view and add/remove accounts used for each module for each legal entity. The list of accounts listed are prepopulated from the existing posting profile setup, bank and tax account setup in each legal entity. 
+To view the settings and configuration for the account reconciliation feature, use the **Settings** button (gear symbol) in the upper right of the workspace. On the **Account reconciliation configuration** page, you can enable or disable the reconciliation processing for each module. In addition, you can view the accounts that are used for each module for each legal entity, and add and remove accounts. The list of accounts is taken from the existing posting profile setup and the bank and tax account setup in each legal entity.
 
 ## Frequently asked questions
 
-The workspace doesn't show any data, what can I do?
-- Verify the last time and next runtime at the top right portion of the workspace. There's an indication similar to: "Data last updated 30 minutes ago, next update in 1 hour".
-- For testing purposes - you can adjust the frequency and next runtime in the process automation - background processes for the **Automatic account reconciliation process** process. For production use, consider the impact of when and how frequently you want the process to execute and set the appropriate schedule.  
-- Check the system batch job is waiting and not withhold status in the batch jobs page. Look for the **Process automation polling system** job.
+### What should I do if the workspace doesn't show any data?
 
-I have chosen the action to create a journal, but I didn't actually create or post the journal and the voucher has been moved to the addressed exception page, what can I do? 
-View the addressed exceptions and click **Undo** to move the exception back to the open exceptions list to be reprocessed accordingly. 
- 
- 
+- A message in the upper right of the workspace indicates the time of the last processing run and the next one. The message resembles the following example:
+
+    > Data last updated 30 minutes ago, next update in 1 hour.
+
+- For testing purposes, you can adjust the frequency and the time of the next processing run in the process automation. Look in the background processes for the **Automatic account reconciliation process** process. For production use, consider the impact of the time and frequency of processing runs, and set an appropriate schedule.
+- On the batch jobs page, confirm that the status of the **Process automation polling system** system batch job is **Waiting**, not **Withhold**.
+
+### I selected the action to create a journal, but I didn't actually create or post the journal. The voucher now appears on the page for addressed exceptions. What should I do?
+
+Review the addressed exceptions, and select **Undo** to move the exception back to the list of open exceptions. It can then be reprocessed.
