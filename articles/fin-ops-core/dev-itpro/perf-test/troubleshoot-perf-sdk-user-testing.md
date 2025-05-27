@@ -17,6 +17,10 @@ ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 
 [!include [banner](../includes/banner.md)]
 
+> [!IMPORTANT]
+> As of September 2024, the Perf SDK is no longer supported. This deprecation follows the end of support for Visual Studio 2019, which was the last version to include web performance and load testing features.
+> + For more information, see [Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022](./dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#microsoft-will-no-longer-ship-or-support-the-visual-studio-extensions-for-finance-and-operations-apps-power-platform-tools-and-visual-studio-versions-prior-to-2022.md).
+
 ## No client was opened in the time-out period
 
 This issue affects only single-user tests. When the test is running, a web client is opened, but a website is never loaded. Instead, there is an empty web client that has a white background. The following message appears at the top of the page, "This is the initial start page for the WebDriver server." The test eventually times out and fails, and an error message is shown.
