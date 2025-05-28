@@ -46,7 +46,7 @@ Before you can use the Supplier Communications Agent, your system must meet the 
 
 - Optional: If you want the agent to send emails automatically, turn on the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature in Feature management. We recommend that you turn off this feature for sandbox environments, where data such as purchase orders might not be up to date, or vendor email addresses might be missing.
 
-## Set up an agent identity
+## <a name="set-up-agent-identity"></a>Set up an agent identity
 
 The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to do its work. You must select the identity that is used for these interactions and create the required connections.
 
