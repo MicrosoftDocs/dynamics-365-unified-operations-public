@@ -3,7 +3,7 @@ title: Devirtualize Company Data
 description: Learn about
 author: ttreen
 ms.author: ttreen
-ms.date: 05/23/2022
+ms.date: 05/30/2025
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -18,7 +18,7 @@ This document outlines the process for devirtualizing company data in Microsoft 
 
 ## Background
 
-Virtual company accounts have been deprecated in Microsoft Dynamics 365 Finance and Operations. See the following for more information:
+Virtual company accounts have been deprecated in Microsoft Dynamics 365 Finance and Operations. Learn more in:
 
 - [Deprecated features - Virtual company accounts](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features#virtual-company-accounts)
 - [Cross-company data sharing (replacement for virtual companies)](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing)
@@ -46,7 +46,7 @@ In this configuration:
 
 For CMP2 and CMP3, data is stored under the `VIR` `DataAreaId`, so their records are shared.
 
-### SQL Behavior in AX 2012 vs. D365
+### SQL Behavior in AX 2012 vs. Dynamics 365
 
 When a SQL query runs, the AX 2012 kernel swaps the actual company ID for the virtual ID in the WHERE clause. This lets the data return from the tables. See the following SQL SELECT examples:
 
@@ -68,9 +68,9 @@ WHERE T1.DATAAREAID = 'VIR'
 AND T1.PARTITION = 5637144576
 ```
 
-In D365, this translation doesn’t happen. The query for CMP2 is:
+In Dynamics 365, this translation doesn’t happen. The query for CMP2 is:
 
-D365 Query: CMP2
+Dynamics 365 Query: CMP2
 
 ```SQL
 SELECT   T1.CUSTGROUP, T1.NAME, T1. TAXGROUPID, T1.DATAAREAID, T1.PARTITION
@@ -85,7 +85,7 @@ Because there aren’t any records with DataAreaId = 'CMP2', the query returns n
 
 Devirtualizing data is complex and depends on the original virtual company setup. If you're unfamiliar with the concepts or tools involved, consider working with a qualified professional.
 
-The steps below are general guidance—not a complete, end-to-end solution. The exact process can differ based on your table collection setup, including the structure, relationships, and data volume, which can vary between implementations.
+The following steps are general guidance—not a complete, end-to-end solution. The exact process can differ based on your table collection setup, including the structure, relationships, and data volume, which can vary between implementations.
 
 > [!IMPORTANT]
 > Always back up your data before you start. Test thoroughly after devirtualization to confirm data integrity.
@@ -104,16 +104,16 @@ For each identified table, check if it has a foreign key referencing the **RecId
 
 For example, if `CustomsTariffCodeTable_IN` was virtualized, use the [AX 2012 Cross-reference Tool](/previous-versions/dynamicsax-2012/developer/cross-reference-tool?redirectedfrom=MSDN) to find related tables.  
 
-You'll see that `TaxData` has the following relation:  
+You notice that `TaxData` has the following relation:  
 **TaxData.CustomsTariffCodeTable_IN = CustomsTariffCodeTable_IN.RecId**
 
-This indicates that `TaxData` references the `RecId` of the virtualized table.
+This relationship indicates that `TaxData` references the `RecId` of the virtualized table.
 
 ### Step 3: Hidden Relationships
 
-In addition to direct table relations defined in the AOT, there may also be references based on **table IDs**. These typically use a pair of fields like `RefTableId` and `RefRecId`, though the exact field names can vary. The combination of a table ID and a RecId establishes the relationship.
+In addition to direct table relations defined in the AOT, there may also be references based on **table IDs**. These references typically use a pair of fields like `RefTableId` and `RefRecId`, though the exact field names can vary. The combination of a table ID and a RecId establishes the relationship.
 
-The following SQL query helps you find such tables and returns only those that have records:
+The following SQL query helps you find such tables and returns only tables that have records:
 
 ```sql
 SELECT T1.TABLE_NAME, T1.COLUMN_NAME, T2.COLUMN_NAME
@@ -136,19 +136,19 @@ ORDER BY T1.TABLE_NAME;
 >
 > This script finds most references, but check the results against any system customizations or changes.
 >
-> After you run the query, check if any of the returned tables reference those in the virtual company setup. Get the table IDs from the AOT. Track any tables that reference virtualized tables.
+> After you run the query, check if any of the returned tables reference tables in the virtual company setup. Get the table IDs from the AOT. Track any tables that reference virtualized tables.
 
 ### Step 4: Other Fields
 
 Check the data in the virtualized tables for any extra fields that can reference the **virtual company ID**.
 
-For example, in the `CUSTQUOTATIONTRANS` table, there's a field named `COMPANY`. If the values in this field match the virtual company ID, document this and include it in the devirtualization process.
+For example, in the `CUSTQUOTATIONTRANS` table, there's a field named `COMPANY`. If the values in this field match the virtual company ID, document this match and include it in the devirtualization process.
 
 These references aren't always part of formal table relationships but can affect how you interpret data, so handle them carefully.
 
 ### Step 5: Copy and create records
 
-Use the script below to copy data from the virtual company to individual legal entities.
+Use the following script to copy data from the virtual company to individual legal entities.
 
 Change the following values:
 
@@ -251,7 +251,7 @@ After you devirtualize the data in a table, update any related table references 
 
 To keep referential integrity, update these related fields with the **new RecId** values, using the corresponding `OLDRECID` from the devirtualized table as a reference.
 
-See the example script below for how this can be done:
+See the example in the following script.
 
 ```SQL
 UPDATE T2
@@ -266,9 +266,9 @@ WHERE T2.DATAAREAID IN ('cmp1', 'cmp2')
 
 ### Step 7: Remove virtualized records
 
-After the data has been successfully devirtualized, you can remove the original records associated with the virtual company. This cleanup must be performed using SQL.
+After the data was successfully devirtualized, you can remove the original records associated with the virtual company. This cleanup must be performed using SQL.
 
-The example below shows how to delete these records:
+The following example shows how to delete these records.
 
 ```SQL
 --Edit TABLE and PARTITIONKEY as needed. 
