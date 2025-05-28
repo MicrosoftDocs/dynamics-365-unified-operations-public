@@ -41,8 +41,10 @@ The **\[Production Ready Preview\] Security enhancements in UK MTD VAT integrati
 
 It's also available in the following versions of Finance:
 
-- 10.0.41 - 10.0.2015.**155**
-- 10.0.42 - 10.0.2095.**77**
+- 10.0.41 - 10.0.2015.**236**
+- 10.0.42 - 10.0.2095.**186**
+- 10.0.43 - 10.0.2177.**108**
+- 10.0.44 - 10.0.2263.**30**
 
 ### Import the required ER configuration updates
 
