@@ -215,8 +215,8 @@ To use the sample PowerShell script, follow these steps.
 1. Before you run the script, enter values for the following four parameters at the top:
     - `environmentId` – Specify the ID of your Dataverse environment. You can find the ID in the Power Platform admin center.
     - `dataverseUrl` – Specify the URL of your Dataverse environment. You can find the URL in the Power Platform admin center. Include *https://* in the URL.
-    - `DVConnectionName` – Specify the name of the Dataverse connector to use. The connector is named after the agent identity that you signed in as when you [created](#set-up-an-agent-identity) it. You can find the name on the **Connections** page in Power Apps.
-    - `MCSConnectionName` – Specify the name of the Copilot Studio connector to use. The connector is named after the agent identity that you signed in as when you [created](#set-up-an-agent-identity) it. You can find the name on the **Connections** page in Power Apps.
+    - `DVConnectionName` – Specify the name of the Dataverse connector to use. The connector is named after the agent identity that you signed in as when you [created](#set-up-agent-identity) it. You can find the name on the **Connections** page in Power Apps.
+    - `MCSConnectionName` – Specify the name of the Copilot Studio connector to use. The connector is named after the agent identity that you signed in as when you [created](#set-up-agent-identity) it. You can find the name on the **Connections** page in Power Apps.
 
 1. Customize the script as required.
 1. Run the script from any PowerShell console or Visual Studio Code. If needed, follow the instructions to update your installed PowerShell to [version 7](https://github.com/PowerShell/PowerShell/releases).
