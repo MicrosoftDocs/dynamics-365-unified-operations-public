@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQ for Immersive Home in finance and operations apps (production ready preview)
 description: This FAQ provides answers to frequently asked questions about the AI technology that's used in connection with Immersive Home. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 04/25/2025
+ms.date: 05/28/2025
 ms.collection:
   - bap-ai-copilot
 ms.custom:

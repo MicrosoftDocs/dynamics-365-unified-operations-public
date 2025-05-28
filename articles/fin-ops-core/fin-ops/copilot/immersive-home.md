@@ -5,7 +5,7 @@ author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
 ms.topic: overview
-ms.date: 04/25/2025
+ms.date: 05/28/2025
 audience: Application User
 ms.search.region: Global
 ms.search.form: ImmersiveHome, DefaultDashboard, SysUserSetup, AppCopilotAgentActivity, AppCopilotAgentLifecycle
