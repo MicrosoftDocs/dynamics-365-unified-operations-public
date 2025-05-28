@@ -3,11 +3,13 @@ title: Create subscription fee transactions
 description: Learn how to create subscription fee transactions, including a step-by-step process for creating subscription fee transactions.
 author: Henrikan
 ms.author: henrikan
-ms.topic: how-to
-ms.date: 05/01/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMASubscriptionCreateDialog
+ms.topic: how-to
+ms.date: 05/28/2025
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Create subscription fee transactions
