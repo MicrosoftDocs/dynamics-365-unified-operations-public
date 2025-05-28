@@ -175,7 +175,7 @@ You can find more details about the product master data in [Master and reference
 > [!NOTE]
 > The products must be linked to a storage dimension group where the **Use warehouse management processes** option is turned on.
 
-To use the *Owner* dimension, you must create a record on the **Warehouse inventory owner** page (**Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Warehouse inventory owner**). You can then assign that record as the default inventory owner for a [source system](wms-only-mode-setup.md#source-systems).
+To use the *Owner* dimension, you must create a record on the **Warehouse inventory owner** page (**Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Warehouse inventory owner**). Learn more in [Warehouse inventory owner](wms-only-mode-external-erp.md#warehouse-inventory-owner).
 
 If you use this example setup in an environment where you already have some released products, ensure that you create the data for the released products and variants on the [**Source system items**](wms-only-mode-exchange-data.md#master-data) page.
 
