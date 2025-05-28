@@ -22,8 +22,6 @@ ms.custom:
 
 This article helps to system administrators to solve typical issues when configuring the Supplier Communications Agent.
 
-[!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
-
 ## The *Dynamics 365 apps* link isn't shown for my environment in the Power Platform admin center
 
 ### Symptoms

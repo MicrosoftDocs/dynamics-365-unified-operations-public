@@ -2413,6 +2413,8 @@
           href: procurement/supplier-com-agent-overview.md
         - name: Set up and configure the Supplier Communications Agent
           href: procurement/supplier-com-agent-setup.md
+        - name: Solve common problems when setting up the Supplier Communications Agent
+          href: procurement/supplier-com-agent-setup-faq.md
         - name: Follow up on purchase orders using the Supplier Communications Agent
           href: procurement/supplier-com-agent-follow-up.md
         - name: Review and apply purchase order changes received in vendor emails
