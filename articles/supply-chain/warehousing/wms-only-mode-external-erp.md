@@ -22,7 +22,7 @@ In addition, the warehouse management processes can use an owner inventory dimen
 
 ## High-level implementation example
 
-The following illustration shows an example where Warehouse management only mode is running in the *WOM* Supply Chain Management legal entity. This legal entity handles logistics warehouse operations for an external ERP system that manages order and financial processing.
+The following illustration shows an example where Warehouse management only mode (WOM) is running in the *WOM* Supply Chain Management legal entity. This legal entity handles logistics warehouse operations for an external ERP system that manages order and financial processing.
 
 :::image type="content" source="media/wms-only-erp-integration.svg" alt-text="Diagram that shows Warehouse management only mode with an external ERP system." lightbox="media/wms-only-erp-integration.svg":::
 
@@ -152,3 +152,13 @@ To view the update log, go to **Warehouse management** \> **Inquiries and report
 > When the **Enable warehouse inventory update logs** option is enabled, be sure to uptake the updates in the external systems in such a way that they don't cause double updates in combination with the data that's used as part of the [*Shipment receipts*](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts) and [*Shipment packing slips*](wms-only-mode-shared-and-external-detail-use.md#shipment-packing-slips) messages.
 
 By default, the *Publish warehouse inventory update log updates* background process is set to run every 10 minutes. It creates data that external systems can consume by using the `WarehouseInventoryUpdateLogs` entity. The `WHSInventoryUpdateLogBusinessEvent` business event can be used as part of this process.
+
+## <a name="warehouse-inventory-owner"></a>Warehouse inventory owner
+
+Warehouse management processes can use an owner inventory dimension to track the ownership of inventory for items shared across multiple source systems.
+
+To use the owner inventory dimension, products must have a tracking dimension group where the *Owner* dimension is enabled.
+Furthermore, you must create a record on the **Warehouse inventory owner** page (**Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Warehouse inventory owner**).
+
+> [!IMPORTANT]
+> The *Warehouse inventory owner* configuration must contain a mapping for every *Owner* value sent from a source system in the order line. If a mapping is missing, the order message will fail to process. This requirement also applies when the source system sends an empty owner value. In such cases, the configuration must map the empty value from the source system to the appropriate value in the *WOM* Supply Chain Management legal entity system.
