@@ -4,7 +4,7 @@ description: Learn how to create and print a vendor self-billed invoice for Mala
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 05/30/2025
+ms.date: 05/29/2025
 ms.reviewer: johnmichalak 
 ms.search.region: Malaysia
 ms.search.validFrom: 2016-06-30
