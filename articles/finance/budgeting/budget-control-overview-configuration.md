@@ -155,4 +155,8 @@ From this page, users can drill into the **Budget control statistics by period**
 
 If budget control is turned on for purchase orders, the budget manager can use the **Ledger budgets and forecasts** workspace to review the queue of all unconfirmed purchase orders that have budget check warnings and errors. If the budget manager has permissions over budgets configured, the purchase orders can be confirmed directly in the workspace.
 
+> [!NOTE]
+> **Use sales tax taxation rules** functionality is enabled for your organization and **Budget reservations for encumbrances** is selected, sales taxes between purchase order and its invoices must match to correctly perform budget checks.
+> In this scenario, you should either update the sales tax group in the PO before creating the invoice, or use sales tax adjustment functionality to update the sales tax amount directly on the invoice.
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
