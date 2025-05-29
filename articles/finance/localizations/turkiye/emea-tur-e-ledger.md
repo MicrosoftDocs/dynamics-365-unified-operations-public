@@ -1,5 +1,5 @@
 ---
-title: Configure e-Ledger (preview)
+title: Use e-Ledger in the Republic of Türkiye (preview)
 description: Learn how to use e-Ledger in the Republic of Türkiye. 
 author: v-omerorhan 
 ms.author: v-omerorhan 
@@ -13,7 +13,7 @@ ms.dyn365.ops.version: 10.0.9
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ---
 
-# Configure e-Ledger (preview)
+# Use e-Ledger in the Republic of Türkiye (preview)
 
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -22,11 +22,11 @@ This article provides detailed instructions on how to configure various paramete
 
 The e-Ledger is a legal and technical framework that collects general ledger records in a journal book and helps to prepare mandatory books in an electronic format in Türkiye. These books must adhere to the specified formats and standards, guaranteeing their immutability, integrity, and source accuracy, and can be used as evidence before authorities. The framework utilizes the internationally adopted XBRL (eXtensible Business Reporting Language) standard for electronic preparation. 
 
-## Configuring e-Ledger
+## Configure e-Ledger
 
 This section explains how to configure e-Ledger to create e-Ledger files and statutory reports in Microsoft Dynamics 365 Finance.
 
-### Configuring electronic reporting for e-Ledger
+### Configure electronic reporting for e-Ledger
 
 Generating e-ledger books in electronic formats utilizes **[Electronic reporting (ER)](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)**.
 The e-Ledger configurations extend the **Standard Audit File (SAF-T)** configuration:
@@ -52,12 +52,12 @@ You must import the latest versions of the following ER configurations:
 To do this, go to the **Electronic reporting** workspace, and import the ER configurations to generate e-Ledger files and reports for Türkiye. 
 For more information about how to import the electronic reporting formats, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
-To configure application-specific parameters of the **XBRL GL (TR) (XML)** format, follow these steps: 
+To configure application-specific parameters of the **XBRL GL (TR) (XML)** format, follow these steps. 
 
 1. Go to **Workspaces > Electronic reporting**, and select **Reporting configurations**.
-2. Select the **XBRL GL (TR) (XML)** configuration, and then select **Setup** in **Configurations > Application specific parameters**.
-3. On the **Application specific parameters** page, on the **Lookups** FastTab, select **ELedgerSetup_Lookup**  in the **Name** field.
-4. On the **Conditions** FastTab, set the following fields:
+1. Select the **XBRL GL (TR) (XML)** configuration, and then select **Setup** in **Configurations > Application specific parameters**.
+1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **ELedgerSetup_Lookup**  in the **Name** field.
+1. On the **Conditions** FastTab, set the following fields:
 
 | Field         | Description  |
 |---------------|--------------|
@@ -168,7 +168,7 @@ To configure this, select the appropriate financial dimension in the **Dimension
 
 This section provides detailed information about the steps to be followed, the relevant pages, and the fields on those pages for generating the e-Ledger file and statutory reports.
 
-In Microsoft Dynamics 365 Finance to generate the e-Ledger file and statutory reports, the steps explained as below must be followed:
+In Microsoft Dynamics 365 Finance to generate the e-Ledger file and statutory reports, follow these steps.
 
 1. **Updating period status**: The status of the relevant ledger calendar period must be changed to **On hold**.
 1. **Journal item numbering**: This process involves enumerating journal entries from the beginning of the year. It is necessary to perform journal item numbering after the period is on hold or closed.
@@ -198,24 +198,24 @@ It also enables tracking of the periods and branches for which e-Ledger files ha
 | Credit balanced | If the **Journal credit total** matches the **e-Ledger credit amount** for the relevant branch, this field will be marked. |
 | Sent | On the **e-Ledger pool** page, this field is marked after the e-Ledger file is generated. Once the file is created, no further changes are allowed on the e-Ledger for the relevant branch. |
 
-### Changing status of a Ledger calendar period
+### Change the status of a ledger calendar period
 
 This section explains how to change the status of a ledger period to create an e-Ledger file.
 To generate an e-Ledger file, the related period status must be changed first. To do this, navigate to the **Ledger calendar** page and set the legal entity period status to **On hold**.
 
-You can access the **Ledger calendar** page via **General ledger > Calendars > Ledger calendars**. In the **Ledger calendars** page;
+You can access the **Ledger calendar** page via **General ledger > Calendars > Ledger calendars**. To change the status of a ledger calendar period, in the **Ledger calendars** page, follow these steps.
 
 1. Select **Calendar**.
-2. Select **Fiscal year**.
-3. Select the period that you want to create e-Ledger file.
-4. In the **Legal entities** FastTab, select **Legal entity**.
-5. Select **On hold** in the **Period status** field.
-6. Select **Save**.
+1. Select **Fiscal year**.
+1. Select the period that you want to create e-Ledger file.
+1. In the **Legal entities** FastTab, select **Legal entity**.
+1. Select **On hold** in the **Period status** field.
+1. Select **Save**.
 
 The system automatically generates the ledger calendar with a total of 14 periods, including each month, an **Opening** and a **Closing** period. The status of the **Opening** period is set to **Permanently closed**, while the **Closing** period status is set to **On hold** until the entire ledger calendar is closed.
 The e-Ledger can only be generated for the periods in between; it cannot be created independently for the **Opening** or **Closing** periods. The **Opening** period is combined with **Period 1** and the **Closing** period is combined with **Period 12** when generating the e-Ledger.
 
-### Assigning journal item numbers
+### Assign journal item numbers
 
 This section explains how to assign journal item numbers to the voucher transactions in e-Ledger.
 
@@ -238,7 +238,7 @@ The following table explains the parameters available on the dialog page that ap
 | Reference | This parameter indicates the period to which the ledger item numbers are to be assigned. |
 | Exclude for zero value voucher in all rows | During the journal item numbering process, if all lines of a voucher have a total value of zero, no journal item number is assigned to those lines. If one line in the voucher has a value of zero, a journal item number will be assigned to that line, but the line will not be created in the e-Ledger. |
 
-### Removing journal item numbers
+### Remove journal item numbers
 
 If the journal item numbering has been performed and the e-Ledger file has not yet been created, the numbering process can be reverted using this button.
 When the numbering is reverted, the e-Ledger records will be deleted both from the **Ledger item number** page and from the **e-Ledger pool**. If the e-Ledger records have already been created, the numbering process cannot be reverted.
@@ -402,21 +402,23 @@ Here are the explanations of the buttons;
 | Voucher transactions | It provides access to voucher transactions.  |
 
 
-### e-Ledger file creation
+### Create an e-Ledger file
 
 This section provides information about generating e-Ledger files and reports.
 
 Once all vouchers have been submitted and the data for the relevant period is confirmed, **Statutory ledger book** and **Statutory general journal** reports will be available to generate. 
 These reports allow you to compare the e-Ledger records and the total debit and credit amounts of the e-Ledger with the Trial balance before generating the e-Ledger file.
 
-The e-Ledger file can be generated once the relevant period is permanently closed. To generate the e-Ledger file; 
+The e-Ledger file can be generated once the relevant period is permanently closed. 
+
+To generate the e-Ledger file, follow these steps.
 
 1. Go to **General ledger > Calendars > Ledger calendars**.
-2. Update the status of the specific period from **On hold** to **Permanently closed** for the relevant legal entity.  
-3. Return to the **e-Ledger pool** page.
-4. Once the period is marked as **Permanently closed**, the **Create e-Ledger file** button will become active in the **e-Ledger pool** page.
-5. Select **Create e-Ledger file**.
-6. Select **OK** to generate the file.
+1. Update the status of the specific period from **On hold** to **Permanently closed** for the relevant legal entity.  
+1. Return to the **e-Ledger pool** page.
+1. Once the period is marked as **Permanently closed**, the **Create e-Ledger file** button will become active in the **e-Ledger pool** page.
+1. Select **Create e-Ledger file**.
+1. Select **OK** to generate the file.
 
 >[!NOTE]
 > To generate the e-Ledger file, the relevant period must be permanently closed.
