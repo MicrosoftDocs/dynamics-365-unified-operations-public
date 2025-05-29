@@ -1,60 +1,64 @@
 ---
 title: LT-00003 Generate a fixed asset transfer between warehouses document
-description: Learn how to move a fixed asset from one department to another and verify the transfer with a packing slip, including an outline on preset vehicle models.
+description: Learn how to move a fixed asset from one department to another and verify the transfer with a packing slip in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/15/2021
+ms.date: 05/29/2025
 ms.reviewer: johnmichalak
 ms.search.region: Lithuania
 ms.search.validFrom: 2016-06-30
 ms.search.form: VehicleModelTable_W, LtInvoiceAutoNumberingGroups, LtInvoiceAutonumberingTable, AssetWarehouseTransfer, HcmWorkerLookUp, SysQueryForm, LtAssetPackingSlip, TransportationDocument, LogisticsPostalAddressLookup
-ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # LT-00003 Generate a fixed asset transfer between warehouses document
 
 [!include [banner](../../includes/banner.md)]
 
+This article explains how to move a fixed asset from one department to another and verify the transfer with a packing slip in Microsoft Dynamics 365 Finance.
+
 If your organization needs to move a fixed asset from one department to another and the two departments are not in the same location, the transfer must be verified by a packing slip. You also need to generate a transfer packing slip if the employee responsible for the fixed asset is changed. Depending on the parameters that are enabled, the packing slip can be numbered automatically or manually.
 
-This procedure applies only for Lithuanian functionality. 
-
-The procedure was created using the demo data company USMF and requires changing USMF legal entity primary address to LTU manually before starting. 
-
-This procedure is intended for accountants who are responsible for fixed assets.
+The following procedures use the demo data company USMF and require you to manually change the USMF legal entity primary address to LTU manually before starting. The procedures are intended for accountants who are responsible for fixed assets, and only apply to Lithuanian functionality. 
 
 ## Preset vehicle models
-1. Go to **Organization administration** > **Setup** > **Vehicle** > **Vehicle models**.
-2. Select **New** and in the **Model** field, enter a value. This value will be printed on the packing slip.
-3. In the **Description** field, enter a value and then select **Save**.
 
+To preset vehicle models, follow these steps.
 
-## Set up packing slip auto-numbering
-1. Go to **Organization administration** > **Number sequences** > **Counters management**.
+1. In Dynamics 365 Finance, go to **Organization administration** > **Setup** > **Vehicle** > **Vehicle models**.
+2. Select **New** and in the **Model** field, enter a value. This value is printed on the packing slip.
+3. In the **Description** field, enter a value, and then select **Save**.
+
+## Set up packing slip autonumbering
+
+To set up packing slip autonumbering, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** > **Number sequences** > **Counters management**.
 2. Select **Edit**.
 3. In the **Module** field, select an option.
 4. In the **Account code** field, select an option.
-5. Select the **Auto numbering** check box and then select **Save**.
+5. Select the **Auto numbering** checkbox and then select **Save**.
 6. Go to **Organization administration** > **Number sequences** > **Invoice numbering setup**.
 7. Select **Edit**.
 8. In the **Numbering** field, enter a value.
 9. In the **Module** field, select an option.
-10. In the **Number sequence code** field, enter or select a value. The number sequence you select should be used for packing slip auto-numbering.  
+10. In the **Number sequence code** field, enter or select a value. The number sequence you select should be used for packing slip autonumbering.  
 11. In the **Account code** field, select an option.
-12. Select the **Continue** check box and then select **Save**.
-
+12. Select the **Continue** checkbox, and then select **Save**.
 
 ## Generate packing slip
 
 ### Specify transportation details
-1. Go to **Fixed assets** > **Inquiries and reports** > **Packing slips**.
+
+To specify transportation details, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets** > **Inquiries and reports** > **Packing slips**.
 2. On the Action Pane, select **General**.
 3. Select **Transportation details**.
 4. Select **Edit**.
-5. In the **Print transportation details** field, select **Yes**. The transportation details that you can specify on this page will be printed on the packing slip.  
+5. In the **Print transportation details** field, select **Yes**. The transportation details that you can specify on this page are printed on the packing slip.  
 6. In the **Goods issued by** field, enter or select a value.
 7. In the **Package** field, enter a value.
 8. In the **Carrier type** field, select an option.
@@ -71,11 +75,13 @@ This procedure is intended for accountants who are responsible for fixed assets.
 19. In the **Unloading address** field, enter or select a value.
 20. Select **Save** and close the page.
 
+### Verify the packing slip report
 
-### Verify the Packing slip report
+To verify the packing slip report, follow these steps.
+
 1. On the Action Pane, select **General**.
 2. Select **Fixed asset packing slip**.
-3. Select **OK**. After the report is generated, all transportation details will be printed.  
+3. Select **OK**. After the report is generated, all transportation details are printed.  
 
 
 
