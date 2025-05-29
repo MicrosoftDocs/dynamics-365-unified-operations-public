@@ -1,5 +1,5 @@
 ---
-title: e-Ledger (preview)
+title: Configure e-Ledger (preview)
 description: Learn how to use e-Ledger in the Republic of Türkiye. 
 author: v-omerorhan 
 ms.author: v-omerorhan 
@@ -13,7 +13,7 @@ ms.dyn365.ops.version: 10.0.9
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ---
 
-# e-Ledger (preview)
+# Configure e-Ledger (preview)
 
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -210,7 +210,7 @@ You can access the **Ledger calendar** page via **General ledger > Calendars > L
 3. Select the period that you want to create e-Ledger file.
 4. In the **Legal entities** FastTab, select **Legal entity**.
 5. Select **On hold** in the **Period status** field.
-6. Click **Save**.
+6. Select **Save**.
 
 The system automatically generates the ledger calendar with a total of 14 periods, including each month, an **Opening** and a **Closing** period. The status of the **Opening** period is set to **Permanently closed**, while the **Closing** period status is set to **On hold** until the entire ledger calendar is closed.
 The e-Ledger can only be generated for the periods in between; it cannot be created independently for the **Opening** or **Closing** periods. The **Opening** period is combined with **Period 1** and the **Closing** period is combined with **Period 12** when generating the e-Ledger.
@@ -225,13 +225,13 @@ Journal item numbering should also be done for Period 0 (the Opening period), wi
 If the e-Ledger is generated based on branches, journal item numbering must be applied separately for each branch.
 
 In order to assign the journal item numbers, first need to navigate the **e-Ledger and statutory ledger** page in **General ledger > Period close > e-Ledger and statutory ledger**. 
-Then, click the **Assign journal item numbers** in **Ledger item number** group in **Statutory ledger** Tab. 
+Then, select the **Assign journal item numbers** in **Ledger item number** group in **Statutory ledger** Tab. 
 This will create the ledger items and will assign a unique number to each voucher transaction in the e-Ledger.
 
 To generate ledger items and assign journal item numbers for the e-Ledger of the next period, the current period must be properly closed and the e-Ledger must be finalized. 
 Even if there are no transactions in the relevant period, the **Assign journal item numbers** process must still be completed to enable the generation of the e-Ledger for the following period.
 
-The following table explains the parameters available on the dialog page that appears when you click **Assign journal item numbers**.
+The following table explains the parameters available on the dialog page that appears when you select **Assign journal item numbers**.
 
 | **Field** | **Description** |
 | --- | --- |
@@ -247,7 +247,7 @@ When the numbering is reverted, the e-Ledger records will be deleted both from t
 
 The **Ledger item number** button is used to access the journal entry lines which will be recorded in the e-Ledger file after journal item numbering has been performed.
 You can access the **Ledger item number** for the relevant period in **Statutory ledgers** tab in **e-Ledger** group in **General ledger > Period close > e-Ledger and statutory ledger** page.
-After clicking **Assign journal item numbers**, the relevant fields are automatically populated based on e-Ledger parameters, and the corresponding e-Ledger items are generated.
+After selecting **Assign journal item numbers**, the relevant fields are automatically populated based on e-Ledger parameters, and the corresponding e-Ledger items are generated.
 
 | **Button** | **Descriptions** |
 | --- | --- |
@@ -266,16 +266,16 @@ For the selected period and branch, it includes mandatory e-Ledger fields such a
 After assigning journal item numbers for the e-Ledger, the journal entries for the period are generated. Based on the definitions made in the parameter page, the required fields for the e-Ledger are automatically populated.
 Using the **Manual** button, the **Document type**, **Document type description**, and **Payment method** fields can be updated manually.
 The **Automatic** button allows these fields to be refreshed automatically, based on the parameter configurations.
-To view the voucher transactions for a journal, click the **Voucher transactions** button.
+To view the voucher transactions for a journal, select the **Voucher transactions** button.
 
-Once the necessary updates are completed in the **Overview** FastTab, the records are sent to the **e-Ledger pool** by clicking for e-Ledger file and report generation.
+Once the necessary updates are completed in the **Overview** FastTab, the records are sent to the **e-Ledger pool** by selecting for e-Ledger file and report generation.
 
 For detailed information about the buttons and fields, see the following section:
 
 | **Button** | **Descriptions** |
 | --- | --- |
 | Refresh | This function refreshes the fields on the e-Ledger summary page. |
-| Automatic | It automatically fills the necessary fields before sending the e-Ledger based on the pre-configured e-Ledger parameters. Automatic option will update all records sync with the latest e-Ledger parameters once its clicked. |
+| Automatic | It automatically fills the necessary fields before sending the e-Ledger based on the pre-configured e-Ledger parameters. Automatic option will update all records sync with the latest e-Ledger parameters once its selecteded. |
 | Manual | This funtion enable to fulfill necessary fields manually per record before sending the e-Ledger. The e-Ledger document type, document type descriptions, payment method can be updated according to the branch. |
 | Voucher transactions | It allows access to journal entry for the relevant ledger item.|
 
@@ -313,7 +313,7 @@ This section helps maintain organized journal entries and supports financial rec
 | Description | Displays the description of the voucher.|
 | Dimension value | Shows the dimension value of the branch.|
 
-Once the necessary updates are completed in the **Overview** FastTab, click the **Send to e-Ledger pool** button to send the ledger items to the **e-Ledger pool** for e-Ledger file and report generation.
+Once the necessary updates are completed in the **Overview** FastTab, select the **Send to e-Ledger pool** button to send the ledger items to the **e-Ledger pool** for e-Ledger file and report generation.
 For detailed information about the buttons and fields, see the following section:
 
 | **Button** | **Descriptions** |
@@ -415,11 +415,12 @@ The e-Ledger file can be generated once the relevant period is permanently close
 2. Update the status of the specific period from **On hold** to **Permanently closed** for the relevant legal entity.  
 3. Return to the **e-Ledger pool** page.
 4. Once the period is marked as **Permanently closed**, the **Create e-Ledger file** button will become active in the **e-Ledger pool** page.
-5. Click **Create e-Ledger file**.
-6. Click **OK** to generate the file.
+5. Select **Create e-Ledger file**.
+6. Select **OK** to generate the file.
 
 >[!NOTE]
 > To generate the e-Ledger file, the relevant period must be permanently closed.
 > Therefore, before closing the period, the records that will be included in the e-Ledger file should be reviewed using the **Statutory ledger Book** and **Statutory general journal** reports.
 > If no issues are found in the e-Ledger records, the period can be permanently closed and the e-Ledger file can be generated.
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
