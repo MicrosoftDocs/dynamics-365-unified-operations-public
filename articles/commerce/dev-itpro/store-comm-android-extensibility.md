@@ -47,7 +47,7 @@ To build out the Store Commerce app for Android or iOS using the Store Commerce 
   - If an Android emulator is configured, you can start debugging the app directly from Visual Studio 2022.
   - If you do not wish to develop an Android app, comment out the net8.0-android target framework in the mobile app project.
 #### iOS
-  - If you are developing on Windows, you need to pair a Mac for iOS development as described in [Pair to Mac for iOS development](https://learn.microsoft.com/en-us/dotnet/maui/ios/pair-to-mac?view=net-maui-8.0).
+  - If you are developing on Windows, you need to pair a Mac for iOS development as described in [Pair to Mac for iOS development](https://learn.microsoft.com/dotnet/maui/ios/pair-to-mac).
   - If you do not wish to develop an iOS app, comment out the net8.0-ios target framework in the mobile app project.
 
 
