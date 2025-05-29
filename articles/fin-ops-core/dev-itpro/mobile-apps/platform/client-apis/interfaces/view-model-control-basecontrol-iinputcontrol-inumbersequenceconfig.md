@@ -1,6 +1,6 @@
 ---
 title: NumberSequenceConfig type
-description: Learn about the NumberSequenceConfig type, which includes the dataType and referencePageName properites with overviews for each property.
+description: Learn about the NumberSequenceConfig type, which includes the dataType and referencePageName properties with overviews for each property.
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
