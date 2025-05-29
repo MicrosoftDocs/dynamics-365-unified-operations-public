@@ -4,7 +4,7 @@ description: Learn how to print a GST tax invoice for Malaysia in Microsoft Dyna
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 05/30/2025
+ms.date: 05/29/2025
 ms.reviewer: johnmichalak 
 audience: Application User  
 ms.search.region: Malaysia
