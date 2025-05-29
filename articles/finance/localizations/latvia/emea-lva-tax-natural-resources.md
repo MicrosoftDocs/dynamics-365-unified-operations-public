@@ -1,24 +1,23 @@
 ---
 title: Tax on natural resources report
-description: Learn how to set up and generate the Tax on natural resources (NR Tax) report, including prerequisites and an outline on reporting groups.
+description: Learn how to set up and generate the tax on natural resources (NR Tax) report for Latvia in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/25/2024
+ms.date: 05/29/2025
 ms.reviewer: johnmichalak
 ms.search.region: Latvia
 ms.search.validFrom: 2016-11-30
 ms.search.form: LvNRTaxItemGroupLookup
-ms.dyn365.ops.version: Version 1611
 ---
 
 # Tax on natural resources report
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up and generate the Tax on natural resources (NR Tax) report.
+This article explains how to set up and generate the tax on natural resources (NR Tax) report for Latvia in Microsoft Dynamics 365 Finance.
 
 Latvian companies must periodically submit a **Tax on natural resources** (**NR tax**) report. This functionality applies only to legal entities in Latvia. Tax must also be calculated on imported or self-produced goods that are used internally. Finally, tax on natural resources must be calculated for packaging materials that are used to package goods that are sold within the reporting period.
 
@@ -35,11 +34,14 @@ Latvian companies must periodically submit a **Tax on natural resources** (**NR 
 | Set up inventory parameters.                                   | On the **Inventory and warehouse management parameters** page, set the **Calculate packing material fees** option to **Yes**. In the **Sales tax group** field, select a sales tax group for the Natural resources tax. By default, this sales tax group is used to find the sales tax code that is used for report calculations if a transaction that is transferred to the report has no sales tax group. |
 | Specify natural resources tax information for an item.         | In Product information management, on the **Released products** page, on the **Manage inventory** tab, in the **Natural resource tax group** field, specify a value to calculate the Natural resources tax for an item in a sale or in inventory transactions.                                                                                                                                              |
 
-## Report setup
+## Set up the report
+
 Before you can generate the **Natural resources tax** report, you must set up the lines for each report layout. Repeat the following steps for every line in each report layout.
 
-1.  Click **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Natural resources tax report setup**.
-2.  Click **New**.
+To set up the report, follow these steps.
+
+1.  In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Natural resources tax report setup**.
+2.  Select **New**.
 3.  In the **Form number** field, select the form to set up:
     -   **Form 2** – This form shows information about the use of natural resources and any environmental pollution that is generated within the reporting period.
     -   **Form 3** – This form shows information about the tax on natural resources that is calculated for goods that were imported or produced by the company and sold in Latvia for the first time.
@@ -101,16 +103,19 @@ This example layout has the following elements:
 | Form 3      | Line      | 13              | 3.3       | Wood, paper, cartons                                              | 3               |             |                            | T-WPC                 |
 | Form 3      | Total     | 14              | 4         | Total line (line1+ line2 + line3)                                 |                 |             |                            |                       |
 
-## Generate the Natural resources tax report
+## Generate the natural resources tax report
+
 Natural resources taxes are calculated during inventory journal transactions, and when sales or project invoices are created for Latvian customers, if the transactions involve items that are subject to the Natural resources tax. This section describes to get a list of the Natural resources tax transactions that are related to packing materials and print the Natural resources tax statement.
 
-1. Click **Tax** &gt; **Declarations** &gt; **Sales tax** &gt; **Tax on natural resources**.
-2. Click **Create** &gt; **Create natural resources tax lines on package**.
+To generate the natural resources tax report, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Tax on natural resources**.
+2. Select **Create** \> **Create natural resources tax lines on package**.
 3. Enter the quarter and the year for the reporting period.
-4. Click **OK** to transfer the information that will be used to generate the report about the tax on packing materials for the reporting period.
-5. Click **Create** &gt; **Create natural resources tax lines on items**.
+4. Select **OK** to transfer the information that will be used to generate the report about the tax on packing materials for the reporting period.
+5. Select **Create** \> **Create natural resources tax lines on items**.
 6. Enter the quarter and the year for the reporting period.
-7. Click **OK** to transfer the information that will be used to generate the report about the tax on dangerous materials.
+7. Select **OK** to transfer the information that will be used to generate the report about the tax on dangerous materials.
 8. After the Natural resources tax lines are created, you can manually add or modify the information on each line.
 
    | Field                      | Description                                                                                                                                                                                                                              |
@@ -130,15 +135,18 @@ Natural resources taxes are calculated during inventory journal transactions, an
    | Reference table ID         | The source table for the transaction.                                                                                                                                                                                                    |
    | Reference                  | The source reference field in a different table.                                                                                                                                                                                         |
 
-   **Note:** The fields in the **Packing material** field group are available only when you select **Tax on packing materials** in the **Transaction type** field.
-9. Click **Data validation** to validate the Natural resources tax transaction lines.
-10. Correct any errors by manually editing the lines.
-11. Click **Print**.
-12. Enter the report year.
-13. Select a managing director.
-14. Select the person who is responsible for the report.
-15. Select the tax authority.
-16. Click **OK** to print the statement for tax on natural resources.
+   > [!NOTE]
+   > The fields in the **Packing material** field group are available only when you select **Tax on packing materials** in the **Transaction type** field.
+
+
+10. Select **Data validation** to validate the Natural resources tax transaction lines.
+11. Correct any errors by manually editing the lines.
+12. Select **Print**.
+13. Enter the report year.
+14. Select a managing director.
+15. Select the person who is responsible for the report.
+16. Select the tax authority.
+17. Select **OK** to print the statement for tax on natural resources.
 
 
 
