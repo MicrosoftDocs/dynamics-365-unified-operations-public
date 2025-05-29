@@ -2,7 +2,7 @@
 title: VAT declaration for Latvia
 description: Learn how to set up a value-added tax (VAT) declaration for legal entities in Latvia in Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 05/28/2025
+ms.date: 05/29/2025
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.search.region: Latvia
