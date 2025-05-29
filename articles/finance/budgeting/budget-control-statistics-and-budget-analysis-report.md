@@ -41,6 +41,9 @@ The following table describes differences between the two reports.
 > [!NOTE]
 > The **Budget analysis** report doesn't distinguish between operating periods and closing periods.
 
+> [!NOTE]
+> The **Budget analysis** inquiry, **Budget analysis** report, and the **Actual vs. Budget** form are using either the default exchange rate defined on the Ledger set up, or the manually updated exchange rate when presenting data in the **Total actual amounts** field. Whereas the **Budget control statistics**, **Budget control statistics by period**, and the **Budget control account detail history** reports are using the Budget exchange rate defined on the Ledger setup when showing **Actual expenditures** in the reports.
+
 ## Troubleshoot budget control issues
 
 ### Budget control data maintenance
