@@ -6,12 +6,12 @@ ms.date: 05/30/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
-ms.author: v-Cpicon85
+ms.author: v-cpicon
 ---
 
 # Configure printing for the ISRL Withholding report for Venezuela
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article explains how to configure the ISRL Withholding report for Venezuela in Microsoft Dynamics 365 Finance.
 
@@ -24,8 +24,8 @@ Before you can generate and print the report, the following prerequisites must b
 * The legal entity's address must be in Venezuela.
 * In Feature management workspace, verify that the LATAM globalization expansion and LATAM globalization expansion – Venezuela features are enabled.
 * You must download the specific report configuration from the Dataverse configuration repository. 
-Learn more in [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md).
-* You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md).
+Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+* You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
 The following formats constitute the ISRL Withholding report:
 
