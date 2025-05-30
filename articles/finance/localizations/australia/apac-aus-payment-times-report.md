@@ -23,9 +23,15 @@ The Australian government established the PTRS to help improve payment times for
 > [!NOTE]
 > This article outlines the reporting process for Australia’s Payment Times Reporting Scheme, which applies to reporting periods starting July 1, 2024. This schema version is supported in Finance version **10.0.45** and in the following builds of earlier versions:
 > 
-> - **10.0.44**: 10.0.xxxx.xx
-> - **10.0.43**: 10.0.2177.xx
-> - **10.0.42**: 10.0.2095.xx
+> - **10.0.44**: 10.0.2263.**41**
+> - **10.0.43**: 10.0.2177.**119**
+> - **10.0.42**: 10.0.2095.**195**
+>
+> The following versions of Electronic Reporting configurations, or later, support the schema version applicable to reporting periods starting on or after July 1, 2024.
+>
+> - Statistics on invoices, model - version **64**
+> - Payment times bill model mapping - version **64.34**
+> - Payment times - PTRS 2024 (AU), Excel format - version **64.4**
 
 ## Prepare your environment to generate a PTRS
 
