@@ -123,7 +123,7 @@ Before you use this class for the first time, you must save its parameters.
 2. Select the **Generating RF-1321** executable class (which is set to call **EMRF1321PayToSelfEmployedVendorController_NO**), and then, on the Action Pane, select **Parameters**.
 3. In the **RF-1321 Payments to self-employed vendors without fixed place of business** dialog box, select **Posting profile** is necessary and click **OK**.
 
-### <a name="registration-number"></a> Set up the organization number
+### <a name="organization-number"></a> Set up the organization number
 
 To set up the organization number that is reported in `<organisasjonsnummer>` field, follow these steps.
 
