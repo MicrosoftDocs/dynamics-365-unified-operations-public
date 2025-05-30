@@ -2902,8 +2902,8 @@
             href: dev-itpro/pos-extension/cpos-extension-package.md
           - name: Create a Store Commerce extension installer package
             href: dev-itpro/store-comm-extension-installer.md
-          - name: Store Commerce Hardware station extensibility for Android devices
-            href: dev-itpro/store-comm-android-extensibility.md            
+          - name: Store Commerce Hardware station extensibility for Android and iOS devices (preview)
+            href: dev-itpro/store-comm-android-ios-ext.md.md            
       - name: E-commerce
         items:
         - name: Overview
