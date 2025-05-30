@@ -6,7 +6,7 @@ ms.date: 05/05/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
-ms.author: v-Cpicon85
+ms.author: v-cpicon
 ---
 
 # Configure Venezuela Purchase VAT book  
