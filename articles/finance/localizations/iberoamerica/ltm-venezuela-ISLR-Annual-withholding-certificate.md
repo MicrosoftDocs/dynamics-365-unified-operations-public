@@ -6,7 +6,7 @@ ms.date: 06/05/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
-ms.author: v-Cpicon85
+ms.author: v-cpicon
 ---
 
 # Printing configuration for the  Annual withholding certificate printing ISLR for Venezuela 
@@ -36,16 +36,16 @@ Before you can generate the report, the following prerequisites must be met:
 To configure application-specific parameters, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
-2. Select the **VEN Annual withholding certificate** format.
-3. On the Action Pane, in the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
-4. On the **Application specific parameters** page, on the **Lookups** tab, select **VendorApplicableInvoices**.
-5. On the **Conditions** FastTab, select **Add**.
-6. In the **Lookup result** field, select **Yes**.
-7. In the **Document classification Id (VoucherClassId)** field, select all document classes that are required for vendor transactions (invoices, debit notes and credit notes).
-8. On the **Lookups** FastTab, select **ApplicableTax**.
-9. On the **Conditions** FastTab, select **Add**.
-10. In the **Lookup result** field, select **Yes**.
-11. In the **Tax code** field, select the tax codes that are used as annual ISLR withholding taxes.
+1. Select the **VEN Annual withholding certificate** format.
+1. On the Action Pane, in the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+1. On the **Application specific parameters** page, on the **Lookups** tab, select **VendorApplicableInvoices**.
+1. On the **Conditions** FastTab, select **Add**.
+1. In the **Lookup result** field, select **Yes**.
+1. In the **Document classification Id (VoucherClassId)** field, select all document classes that are required for vendor transactions (invoices, debit notes and credit notes).
+1. On the **Lookups** FastTab, select **ApplicableTax**.
+1. On the **Conditions** FastTab, select **Add**.
+1. In the **Lookup result** field, select **Yes**.
+1. In the **Tax code** field, select the tax codes that are used as annual ISLR withholding taxes.
 
 > [!NOTE]
 > Complete each lookup with **No** or **Not applicable** conditions where you select **Blank** and **Not blank**.
@@ -55,8 +55,10 @@ To configure application-specific parameters, follow these steps.
 To generate the certificate follow these steps.
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
-2. In the **Format mapping** field, enter or select the **VEN Annual withholding certificate**, and then select **OK**.
-3. In the **From date** and **To date** fields, specify the date range for the report.
-4. Select **OK**.
-5. In the **Account number** you can complete the account to be displayed.
-6. Select **ok**.
+1. In the **Format mapping** field, enter or select the **VEN Annual withholding certificate**, and then select **OK**.
+1. In the **From date** and **To date** fields, specify the date range for the report.
+1. Select **OK**.
+1. In the **Account number** you can complete the account to be displayed.
+1. Select **ok**.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
