@@ -28460,5 +28460,10 @@
       "redirect_url": "/dynamics365/supply-chain/responsible-ai-overview",
       "redirect_document_id": false
     }
+    {
+      "source_path": "articles/commerce/dev-itpro/store-comm-android-extensibility.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/store-comm-android-ios-ext",
+      "redirect_document_id": false
+    }    
   ]
 }
