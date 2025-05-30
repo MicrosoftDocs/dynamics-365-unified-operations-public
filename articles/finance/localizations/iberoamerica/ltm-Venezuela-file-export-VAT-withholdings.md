@@ -33,7 +33,7 @@ Before you can generate the report, the following prerequisites must be met:
 
 ## Additional configuration required for the VAT withholding report
 
-* You must create a **tax application code** to use on this report. Learn more in [Tax application for Latin America](ltm-core-tax-application).
+* You must create a **tax application code** to use on this report. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
 * Enter the withholding tax fiscal code according to the fiscal authority in the Tax income field from the **Tax application** form of the sales tax codes used as VAT withholding taxes.
 * Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class** \> **Tax application** and enter the code establish by the fiscal authority for invoice, debit and credit note.
 
