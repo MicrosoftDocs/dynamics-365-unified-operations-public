@@ -21,7 +21,7 @@ Before you complete the steps in this article to generate the report, the follow
 - The legal entity's address must be in Venezuela.
 - You must enable both the general Latin American (LATAM) feature and the country/region-specific LATAM feature for Venezuela.
 - You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md). 
-- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md).
+- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
 You must download the following reports:
 * LTM Tax Report mapping
