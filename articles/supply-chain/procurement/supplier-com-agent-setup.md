@@ -203,17 +203,17 @@ To use the script, follow these steps.
 
 ```powershell
 Param(
-    [Parameter(Mandatory=$true, HelpMessage="Dataverse environment id")]
-    [string]$environmentId = "", 
+   [Parameter(Mandatory=$true, HelpMessage="Dataverse environment id")]
+   [string]$environmentId = "", 
 
-    [Parameter(Mandatory=$true, HelpMessage="Dataverse environment URL")]
-    [string]$dataverseUrl = "",
+   [Parameter(Mandatory=$true, HelpMessage="Dataverse environment URL")]
+   [string]$dataverseUrl = "",
 
-    [Parameter(Mandatory=$true, HelpMessage="Microsoft Dataverse connection name")]
-    [string]$DVConnectionName = "",
+   [Parameter(Mandatory=$true, HelpMessage="Microsoft Dataverse connection name")]
+   [string]$DVConnectionName = "",
 
-    [Parameter(Mandatory=$true, HelpMessage="Microsoft Copilot Studio connection name")]
-    [string]$MCSConnectionName = ""
+   [Parameter(Mandatory=$true, HelpMessage="Microsoft Copilot Studio connection name")]
+   [string]$MCSConnectionName = ""
 )
 
 # Check PS version
@@ -228,13 +228,13 @@ if (-not (Get-Module -ListAvailable -Name Microsoft.PowerApps.PowerShell)) {
 }
 
 # Install the required modules if not already installed
-if (-not (Get-Module -ListAvailable -Name Az.Accounts)) {
-    Write-Warning -Message 'Installing module Az.Accounts'
-    Install-Module -Name Az.Accounts -AllowClobber -Scope CurrentUser
+if (-not (Get-Module -ListAvailable -Name Az.Accounts | Where-Object Version -ge 2.17)) {
+    Write-Warning -Message 'Installing required version of module Az.Accounts'
+    Install-Module -Name Az.Accounts -AllowClobber -Scope CurrentUser -Force -MinimumVersion 2.17
 }
 
 # Import required modules
-Import-Module Az.Accounts
+Import-Module Az.Accounts -MinimumVersion 2.17
 Import-Module Microsoft.PowerApps.PowerShell
 
 function Get-AccessToken {
