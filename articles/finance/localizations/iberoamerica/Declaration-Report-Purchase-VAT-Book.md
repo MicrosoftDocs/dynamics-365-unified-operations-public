@@ -24,7 +24,7 @@ Before you complete the steps in this article to generate the report, the follow
 - The legal entity's address must be in Venezuela.
 - Both the country/region-specific Venezuela feature and the general LATAM feature must be enabled.
 - You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md). 
-- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - You must post vendor invoices for the relevant period. Learn more in [Purchase invoice posting for Latin America](ltm-core-purchase-invoice-posting.md)
 
 
