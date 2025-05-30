@@ -6,7 +6,7 @@ ms.date: 05/22/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
-ms.author: v-Cpicon85
+ms.author: v-cpicon
 ---
 
 # Printing configuration for the VAT withholding certificate for Venezuela
@@ -33,7 +33,7 @@ Before you can generate the report, the following prerequisites must be met:
 
 ## Additional configuration required for the VAT withholding certificate
 
-- You must create a **tax application code** to use on this report. Learn more in [Tax application for Latin America](ltm-core-tax-application).
+- You must create a **tax application code** to use on this report. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
 - Go to **Tax** \> **Indirect tax** \> **Sales tax**\> **Sales tax codes**\> **Latam**
   - On the Action Pane, select Tax application.
   - In the Tax application ID field, enter the tax application code that was created for this report.
