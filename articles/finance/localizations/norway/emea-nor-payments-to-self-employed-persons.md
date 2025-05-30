@@ -114,7 +114,7 @@ To specify which ER format will be used in **RF-1321** processing, follow these 
 2. In the list of message processing actions select **Generate file**.
 3. In the **Format mapping** field, select **RF-1321 Payments to self-employed persons (NO)** or **RF-1321 Payments to self-employed persons (NO) - Per Vendor**.
 
-## <a id="executable-class-parameters"></a>Save the executable class parameters for Electronic messaging
+### <a id="executable-class-parameters"></a>Save the executable class parameters for Electronic messaging
 
 The **RF-1321** processing uses the **EMRF1321PayToSelfEmployedVendorController_NO** executable class to initiate data collection for the report data provider and further report generation. 
 Before you use this class for the first time, you must save its parameters.
@@ -142,7 +142,7 @@ In Finance, you can generate the RF-1321 using Electronic Messages (EM).
 3. In the **Run processing** dialog box, select **OK**.
 4. A new electronic message is created. Enter a description, and specify the start and end dates of the period that you want to generate the RF-1321 report for.
 
-## Generate an XML file in RF-1321 format
+### Generate an XML file in RF-1321 format
 
 1. On the **Electronic messages** page, on the **Messages** FastTab, select **Generate report**.
 2. In the **Run processing** dialog box, in the **Action** field, select **Generate file**.
