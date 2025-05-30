@@ -46,11 +46,11 @@ To build out the Store Commerce app for Android or iOS using the Store Commerce 
 
 #### Android
   - If an Android emulator is configured, you can start debugging the app directly from Visual Studio 2022.
-  - If you don't want to develop an Android app, comment out the net8.0-android target framework ('<TargetFramework>net8.0-android</TargetFramework>') in the mobile app project.
+  - If you don't want to develop an Android app, comment out the net8.0-android target framework (`<TargetFramework>net8.0-android</TargetFramework>`) in the mobile app project.
 
 #### iOS
-  - If you are developing on Windows, you must pair a Mac for iOS development as described in [Pair to Mac for iOS development](https://learn.microsoft.com/dotnet/maui/ios/pair-to-mac).
-  - If you don't want to develop an iOS app, comment out the net8.0-ios target framework ('<TargetFramework>net8.0-ios</TargetFramework>') in the mobile app project.
+  - If you are developing on Windows, you must pair a Mac for iOS development as described in [Pair to Mac for iOS development](/dotnet/maui/ios/pair-to-mac).
+  - If you don't want to develop an iOS app, comment out the net8.0-ios target framework (`<TargetFramework>net8.0-ios</TargetFramework>`) in the mobile app project.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
