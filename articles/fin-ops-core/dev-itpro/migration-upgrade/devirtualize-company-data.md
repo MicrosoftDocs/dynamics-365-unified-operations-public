@@ -16,6 +16,10 @@ ms.search.form: 2022-04-08
 
 This article outlines the process for devirtualizing company data in Microsoft Dynamics AX 2012 in preparation for an upgrade to Dynamics 365 finance and operations apps.
 
+> [!IMPORTANT]
+> Please be aware that devirtualizing data is not a process supported by Microsoft Support. The information provided in this document is intended solely for informational and guidance purposes.
+
+
 ## Background
 
 Virtual company accounts were deprecated in finance and operations apps. The virtual companies feature was replaced by cross-company data sharing. Learn more:
