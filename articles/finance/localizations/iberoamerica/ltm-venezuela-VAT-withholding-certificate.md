@@ -22,14 +22,14 @@ Before you can generate the report, the following prerequisites must be met:
 
 - The legal entity's address must be in Venezuela.
 - You must enable both the general Latin American (LATAM) feature and the country/region-specific LATAM feature for Venezuela.
-- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md).
+- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
     The following formats constitute the VAT withholding certificate:
     - LTM Tax Report
     - LTM Tax Report mapping
     - VAT withholding certificate
    
-- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md).
+- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
 ## Additional configuration required for the VAT withholding certificate
 
