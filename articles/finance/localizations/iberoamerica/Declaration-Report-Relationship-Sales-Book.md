@@ -6,9 +6,12 @@ ms.date: 05/23/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
-ms.author: v-Cpicon85
+ms.author: v-cpicon
 ---
+
 # Configure printing for the Declaration Reports Relationship Sales Book for Venezuela
+
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the Declaration Reports Relationship Sales Book for Venezuela in Microsoft Dynamics 365 Finance.
 The Declaration Reports Relationship Sales Book in Venezuela is a document that details the sales transactions made by a company during a specific period. This report is essential for compliance with tax obligations, as it allows the tax authorities to verify the accuracy of the income declared and calculate the corresponding taxes. In addition, it facilitates auditing and internal control of companies, ensuring transparency and proper financial management. It is generally issued on a monthly basis and includes details such as the date of the transaction, the invoice number, the amount of the sale, the customer's name and the type of product or service sold. In Dynamics 365 Finance and Operations (D365FO), the report is issued in digital format, allowing export to formats such as Excel and PDF.
@@ -28,7 +31,6 @@ You must download the following reports:
     - LTM Tax Report mapping
     - Declaration Reports Relationship Sales Book VEN
    
-
 ## Additional configuration required for the Declaration Reports Relationship Sales Book for Venezuela
 
 * You must create a **tax application code** to use on this report. Learn more in [Tax application for Latin America](ltm-core-tax-application.mp).
@@ -65,3 +67,6 @@ To generate Declaration Reports Relationship Sales Book  for Venezuela follow th
 1. In the **Format mapping** field, enter or select the **Declaration Reports Relationship Sales Book VEN**, and then select **OK**.
 1. In the **From date** and **To date** fields, specify the date range for the report.
 1. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
