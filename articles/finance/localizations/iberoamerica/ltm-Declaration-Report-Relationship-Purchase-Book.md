@@ -20,7 +20,7 @@ The Declaration Reports Relationship purchases book in Venezuela is a document t
 Before you complete the steps in this article to generate the report, the following prerequisites must be met:
 - The legal entity's address must be in Venezuela.
 - You must enable both the general Latin American (LATAM) feature and the country/region-specific LATAM feature for Venezuela.
-- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md). 
+- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md). 
 - You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md).
 
 You must download the following reports:
