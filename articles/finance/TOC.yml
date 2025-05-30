@@ -3750,6 +3750,8 @@
                       href: localizations/norway/emea-nor-satndard-audit-file-for-tax.md
                     - name: Customer electronic invoices in Norway
                       href: localizations/norway/emea-nor-e-invoices.md
+                    - name: Payments to self-employed persons - RF-1321
+                      href: localizations/norway/emea-nor-payments-to-self-employed-persons.md
                 - name: Oman
                   items:
                     - name: Oman overview
