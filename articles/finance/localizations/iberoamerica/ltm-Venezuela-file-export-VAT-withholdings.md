@@ -6,9 +6,12 @@ ms.date: 05/21/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
-ms.author: v-Cpicon85
+ms.author: v-cpicon
 ---
+
 # Configure printing for the VAT Withholding report in Venezuela
+
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the VAT withholding report for Venezuela in Microsoft Dynamics 365 Finance.
 This document holds information about the withholdings generated from vendor invoices, debit notes, and credit notes.
@@ -40,16 +43,16 @@ Before you can generate the report, the following prerequisites must be met:
 To configure application-specific parameters, follow these steps.
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
-2. Into the LTM Tax report group, select the **File Export VAT Withholdings** format. 
-3. On the Action Pane, in the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
-4. On the **Lookups** FastTab, select **WithholdingTax**.
-5. On the **Conditions** FastTab, select **Add**.
-6. In the **Lookup result** field, select **Withholding**.
-7. In the **Tax code** field, select the tax codes that are used as VAT withholding taxes.
-8. On the **Lookups** FastTab, select **VendorApplicableInvoices**.
-9. On the **Conditions** FastTab, select **Add**.
-10. In the **Lookup result** field, select **Yes**.
-11. In the **Document classification Id (VoucherClassId)** field, select all document classes that are required for vendor transactions (invoices, debit notes and credit notes).
+1. Into the LTM Tax report group, select the **File Export VAT Withholdings** format. 
+1. On the Action Pane, in the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+1. On the **Lookups** FastTab, select **WithholdingTax**.
+1. On the **Conditions** FastTab, select **Add**.
+1. In the **Lookup result** field, select **Withholding**.
+1. In the **Tax code** field, select the tax codes that are used as VAT withholding taxes.
+1. On the **Lookups** FastTab, select **VendorApplicableInvoices**.
+1. On the **Conditions** FastTab, select **Add**.
+1. In the **Lookup result** field, select **Yes**.
+1. In the **Document classification Id (VoucherClassId)** field, select all document classes that are required for vendor transactions (invoices, debit notes and credit notes).
 > [!NOTE]
 > Complete each lookup with **No** or **Not applicable** conditions where you select **Blank** and **Not blank**.
 
@@ -63,3 +66,5 @@ To generate the Report follow these steps.
 1. In the **TAX application Id** field, enter the tax application code that was created for this report.
 1. In the **From date** and **To date** fields, specify the date range for the report.
 1. Select **OK**.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
