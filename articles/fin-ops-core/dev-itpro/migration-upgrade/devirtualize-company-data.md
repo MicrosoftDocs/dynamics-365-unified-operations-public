@@ -17,7 +17,7 @@ ms.search.form: 2022-04-08
 This article outlines the process for devirtualizing company data in Microsoft Dynamics AX 2012 in preparation for an upgrade to Dynamics 365 finance and operations apps.
 
 > [!IMPORTANT]
-> Please be aware that devirtualizing data is not a process supported by Microsoft Support. The information provided in this document is intended solely for informational and guidance purposes.
+> Devirtualizing data isn't a process that's supported by Microsoft Support. The information provided in this document is intended solely for informational and guidance purposes.
 
 
 ## Background
