@@ -33,7 +33,7 @@ You must download the following reports:
    
 ## Additional configuration required for the Declaration Reports Relationship Sales Book for Venezuela
 
-* You must create a **tax application code** to use on this report. Learn more in [Tax application for Latin America](ltm-core-tax-application.mp).
+* You must create a **tax application code** to use on this report. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
 * You must create a **tax application code** for each document type you will use in this report.
 * You must create the following **Sales point** : Manual.
 
