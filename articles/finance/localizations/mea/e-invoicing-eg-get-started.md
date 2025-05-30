@@ -1,24 +1,23 @@
 ---
 title: Electronic invoicing for Egypt
-description: Learna bout what will help you get started with Electronic invoicing for Egypt in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+description: Learn how to get started with electronic invoicing for Egypt in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: ikondratenko
 ms.author: johnmichalak
-ms.topic: article
-ms.date: 02/09/2022
+ms.topic: how-to
+ms.date: 06/5/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-07-08
-ms.search.form: 
-ms.dyn365.ops.version: AX 10.0.12
+ms.custom: 
+  - bap-template
 ---
 
 # Electronic invoicing for Egypt
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Egypt. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS). These steps complement the steps that are described in [Set up Electronic invoicing](../global/e-invoicing-set-up-overview.md).
+This article explains how to get started with electronic invoicing for Egypt in Microsoft Dynamics 365 Finance. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS). These steps complement the steps that are described in [Set up Electronic invoicing](../global/e-invoicing-set-up-overview.md).
 
 ## Prerequisites
 
@@ -37,6 +36,8 @@ Before you begin the procedures in this article, complete the following prerequi
 ## Country/region-specific configuration for the Egyptian electronic invoice (EG) feature
 
 Some of the parameters from the **Egyptian electronic invoice (EG)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operation.
+
+To configure the Egyptian electronic invoice (EG) feature, follow these steps.
 
 1. Import the latest version of the **Egyptian electronic invoice (EG)** Globalization feature as described in [Import features from the Global repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
@@ -61,6 +62,8 @@ For both options, the parameters are the same. If you're setting up your first f
 
 > [!NOTE]
 > Some electronic invoicing feature versions might contain a predefined set of application-specific parameters for Finance or Supply Chain Management. In this case, you should verify that the data is correct. Otherwise, manually set the parameters.
+
+To configure the Egyptian electronic invoice (EG) application setup, follow these steps.
 
 1. Find the copy of the **Egyptian electronic invoice (EG)** Globalization feature that you created.
 2. On the **Versions** tab, verify that the **Draft** version is selected.
