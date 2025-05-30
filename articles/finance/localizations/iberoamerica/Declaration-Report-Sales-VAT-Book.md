@@ -6,10 +6,12 @@ ms.date: 05/26/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
-ms.author: v-Cpicon85
+ms.author: v-cpicon
 ---
 
 # Configure printing for the Declaration Reports Sales VAT Book for Venezuela
+
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article provides a guide on how to set up and generate the Declaration Reports Sales VAT Book for Venezuela.
 The sales VAT book report is the record and accounting document that businesses use to keep a record of their sales transactions including transaction date, customer information and tax information details.
@@ -68,7 +70,9 @@ To configure application-specific parameters, follow these steps:
 
 To generate the Declaration Reports Sales VAT Book follow these steps.
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
-2. In the **Format mapping** field, enter or select **Tax report- declaration Sales VAT Venezuela**, and then select **OK**.
-3.  In the **TAX application Id** field, enter the tax application code that was created for this report.
-4. In the **From date** and **To date** fields, specify the date range for the report.
-5. Select **OK**.
+1. In the **Format mapping** field, enter or select **Tax report- declaration Sales VAT Venezuela**, and then select **OK**.
+1.  In the **TAX application Id** field, enter the tax application code that was created for this report.
+1. In the **From date** and **To date** fields, specify the date range for the report.
+1. Select **OK**.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
