@@ -47,16 +47,16 @@ Follow these steps to configure the applicable VAT and withholding tax rates acc
 To configure application-specific parameters, follow these steps.
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
-2. Select the **VAT Withholding certificate** format.
-3. On the Action Pane, in the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
-4. On the **Application specific parameters** page, on the **Lookups** tab, select **TaxType**.
-5. On the **Conditions** FastTab, select **Add**.
-6. In the **Lookup result** field, select **Yes**.
-7. In the **Tax Code** field, select the tax codes that are used as VAT withholding taxes.
-8. On the **Lookups** FastTab, select **InvoiceIsApplicable**.
-9. On the **Conditions** FastTab, select **Add**.
-10. In the **Lookup result** field, select **Yes**.
-11. In the **Document classification Id (VoucherClassId)** field, select all document classes that are required for vendor transactions (invoices, debit notes and credit notes).
+1. Select the **VAT Withholding certificate** format.
+1. On the Action Pane, in the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+1. On the **Application specific parameters** page, on the **Lookups** tab, select **TaxType**.
+1. On the **Conditions** FastTab, select **Add**.
+1. In the **Lookup result** field, select **Yes**.
+1. In the **Tax Code** field, select the tax codes that are used as VAT withholding taxes.
+1. On the **Lookups** FastTab, select **InvoiceIsApplicable**.
+1. On the **Conditions** FastTab, select **Add**.
+1. In the **Lookup result** field, select **Yes**.
+1. In the **Document classification Id (VoucherClassId)** field, select all document classes that are required for vendor transactions (invoices, debit notes and credit notes).
 > [!NOTE]
 > Complete each lookup with **No** or **Not applicable** conditions where you select **Blank** and **Not blank**.
 
@@ -69,3 +69,5 @@ To generate the certificate follow these steps.
 1. In the **TAX application Id** field, enter the tax application code that was created for this report.
 1. In the **From date** and **To date** fields, specify the date range for the report.
 1. Select **OK**.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
