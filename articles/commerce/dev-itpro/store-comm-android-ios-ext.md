@@ -19,7 +19,10 @@ ms.custom:
 
 This article describes how to build out the Microsoft Dynamics 365 Commerce Store Commerce mobile apps for Android and iOS with Hardware station extensibility.
 
-As of the Dynamics 365 Commerce version 10.0.41 release, the Store Commerce app for Android supports Hardware station extensibility. iOS support for Hardware station extensibility is available starting with Commerce version 10.0.44. This functionality enables the following capabilities:
+- As of the Commerce version 10.0.41 release, the Store Commerce app for Android supports Hardware station extensibility. 
+- As of the Commerce version 10.0.44 release, the Store Commerce app for iOS supports Hardware station extensibility.
+
+This functionality enables the following capabilities:
 - Customers can build extensions to support their various Hardware station requirements.
 - Organizations with fiscal integration requirements can use Android mobile devices with fiscal printers.
 - Customers can create their own Android Application Package (APK) or iOS App Store Package (IPA) and distribute them through their respective app stores or internal channels.
