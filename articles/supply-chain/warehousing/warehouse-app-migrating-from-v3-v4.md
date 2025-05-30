@@ -85,7 +85,7 @@ Comprehensive diagnostic capabilities for improved troubleshooting and maintenan
 
 **Customization Preservation**: All customizations and configurations from V3 are fully compatible and functional in V4.
 
-**Connection Migration**: In most cases, existing connections are automatically migrated. If manual reconfiguration is required, QR code generation and scanning capabilities (camera or beam scanner) are available for easy setup. You can easier distribute connections among all your users by connecting with [Using QR Code to quick connect Warehouse Management Application](warehouse-app-qr-code.md)
+**Connection Migration**: In most cases, existing connections are automatically migrated. If manual reconfiguration is required, QR code generation and scanning capabilities (camera or beam scanner) are available for easy setup. You can more easily distribute connections among all your users by connecting with [Using QR Code to quick connect Warehouse Management Application](warehouse-app-qr-code.md)
 
 ### Authentication Requirements
 

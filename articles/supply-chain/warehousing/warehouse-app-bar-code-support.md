@@ -1,6 +1,6 @@
 ---
 title: Warehouse Management Application supported barcodes
-description: Here are the current barcode supported
+description: This document lists the currently supported barcode formats
 author: pefreita
 ms.author: pefreita
 ms.topic: migration-to
@@ -14,7 +14,7 @@ ms.search.form:  MigrateWMA, WMAV4, NewWMA, UpdateWMA
 
 The Warehouse Mobile Application features built-in camera-based barcode scanning capabilities to streamline inventory management and data capture processes. Our barcode scanner supports a wide range of industry-standard formats across multiple platforms, ensuring compatibility with your existing warehouse operations.
 
-**Important Note:** The supported barcode formats listed below are current as of this version. Support may be expanded or modified in future releases as we continue to enhance the application's capabilities.
+**Important Note:** The table contains all the supported QRCode by operative system. Support may be expanded or modified in future releases as we continue to enhance the application's capabilities.
 
 ## Supported Barcode Formats
 
@@ -71,5 +71,3 @@ These advanced formats are currently exclusive to the Windows version:
 ## Future Updates
 
 We continuously evaluate and expand our barcode format support based on user feedback and industry requirements. Check the application release notes for the latest updates to supported formats.
-
-For technical support or feature requests regarding barcode scanning capabilities, please contact our development team through the standard support channels.
