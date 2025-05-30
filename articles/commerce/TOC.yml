@@ -2903,7 +2903,7 @@
           - name: Create a Store Commerce extension installer package
             href: dev-itpro/store-comm-extension-installer.md
           - name: Store Commerce Hardware station extensibility for Android and iOS devices (preview)
-            href: dev-itpro/store-comm-android-ios-ext.md.md            
+            href: dev-itpro/store-comm-android-ios-ext.md            
       - name: E-commerce
         items:
         - name: Overview
