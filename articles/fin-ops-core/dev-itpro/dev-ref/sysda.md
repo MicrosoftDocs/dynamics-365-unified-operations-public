@@ -315,10 +315,13 @@ var delobj = new SysDaDeleteObject(qe);
 // DELETE_FROM intField FROM TestTable WHERE ((TestTable.intField MOD 2) == 0)
 
 ttsbegin;
-    ds.executeQuery(delobj);
+    // replaced below statement
+    // ds.executeQuery(delobj);
+    // new statement
+    delobj.delete(); ?? Need to verify this
 ttscommit;
 
-info("Number of rows after deletion: " + any2Str(t.RowCount()));
+info("Number of rows deleted: " + any2Str(t.RowCount()));
 ```
 
 ## Clauses
