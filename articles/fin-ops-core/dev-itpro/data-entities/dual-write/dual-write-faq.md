@@ -16,8 +16,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-
-
 This article lists frequently asked questions about dual-write and provides brief answers to help you quickly get the information that you require.
 
 ## Dual-write setup
@@ -41,8 +39,7 @@ End users who are configuring dual-write mappings should have System Administrat
 Dual-write mappings can be accessed by multiple users, as long as all the users and environments belong to a single tenant, and the user has the required security and licenses assignment.
 
 > [NOTE!]
->
-> Guest users, that is users assigned in Entra Id from an outside tenant, cannot be used. 
+> Users assigned in Entra Id from an outside tenant can't be used. 
 
 ### I have multiple legal entities. Some of my maps are legal table–specific or valid for only some of the legal entities. What is the best way to address this requirement? Can I apply a filter such as Company = USMF to address it?
 
