@@ -4,7 +4,7 @@ description: Learn about the Budget control statistics and Budget analysis repor
 author: music727
 ms.author: mibeinar
 ms.topic: how-to
-ms.date: 01/03/2025
+ms.date: 06/02/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -41,8 +41,16 @@ The following table describes differences between the two reports.
 > [!NOTE]
 > The **Budget analysis** report doesn't distinguish between operating periods and closing periods.
 
-> [!NOTE]
-> The **Budget analysis** inquiry, **Budget analysis** report, and the **Actual vs. Budget** form are using either the default exchange rate defined on the Ledger set up, or the manually updated exchange rate when presenting data in the **Total actual amounts** field. Whereas the **Budget control statistics**, **Budget control statistics by period**, and the **Budget control account detail history** reports are using the Budget exchange rate defined on the Ledger setup when showing **Actual expenditures** in the reports.
+Budget reports and inquiry pages can display different default exchange rates.
+The following pages use either the default exchange rate in Ledger setup or the manually updated exchange rate in the **Total actuals amounts** field:
+ - **Budget analysis** inquiry
+ - **Budget analysis** report
+ - **Actual vs. Budget** page 
+
+The following reports use the budget exchange rate defined in Ledger setup when displaying **Actual expenditures**:
+ - **Budget control statistics**
+ - **Budget control statistics by period**
+ - **Budget control account detail history**
 
 ## Troubleshoot budget control issues
 
