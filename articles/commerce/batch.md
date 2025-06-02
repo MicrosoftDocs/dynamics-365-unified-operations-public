@@ -40,7 +40,7 @@ Improvements to Commerce help ensure that when negative inventory is turned on f
 To define the default batch ID that is used for customer orders, follow these steps.
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
-1. On the **Customer orders** tab, on the **Order** FastTab, enter a value in the **Default batch id** field.
+1. On the **Customer orders** tab, on the **Order** FastTab, enable **"Use default batch id when batch numbers are not found"** and enter a value in the **Default batch id** field.
 2. The inventory reservation should be set to "Automatic". Navigate to **"Account receivable parameters"** -> **"General"** -> **"Sales default values"** and set **"Reservation"** field as **"Automatic"**.
 
 > [!NOTE]
