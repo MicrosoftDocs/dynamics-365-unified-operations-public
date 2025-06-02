@@ -33,21 +33,22 @@ There are two ways to create a category:
 To create a new category from scratch, follow these steps.
 
 1. Go to **System administration** \> **Security governance** \> **Security category**.
-1. Select **New**.
-1. Set the **Name** field.
-1. Optional: Set the **Company** and **Description** fields.
-1. Select **Save**.
+2. Select **New**.
+3. Set the **Name** field.
+4. Optional: Set the **Company** and **Description** fields.
+    > Since the security category is a global object, setting a company will not limit its availability to that company alone; it remains accessible to other companies as well. 
+5. Select **Save**.
 
 ### Import an existing category
 
 To import an existing category, follow these steps.
 
 1. Go to **System administration** \> **Security governance** \> **Security category**.
-1. Select **Import**.
-1. Expand the **Parameters** section.
-1. Use the **Browse** button to provide the file path of the attachment.
-1. In the **Type** dropdown, select one of the following values:
- -  **User security governance** - This option impacts the process roles under security governance module and it won't impact the security configuration.
- -  **Security configuration** - This option impacts the security configuration under core platform and not the process roles under security governance module.
- -  **Governance + Configuration** - This option impacts both the security governance as well as security configuration under the core platform.
-1. Select **OK**. A message bar indicates whether the import was successful or failed.
+2. Select **Import**.
+3. Expand the **Parameters** section.
+4. Use the **Browse** button to provide the file path of the attachment.
+5. In the **Type** dropdown, select one of the following values:
+    -  **User security governance** - This option impacts the process roles under security governance module and it won't impact the security configuration.
+    -  **Security configuration** - This option impacts the security configuration under core platform and not the process roles under security governance module.
+    -  **Governance + Configuration** - This option impacts both the security governance as well as security configuration under the core platform.
+6. Select **OK**. A message bar indicates whether the import was successful or failed.
