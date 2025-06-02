@@ -72,7 +72,7 @@ e-Ledger parameters page can be accessed from **General ledger > Ledger setup > 
 
 Here are the details for each Tab: 
 
-- **General**
+#### General
 
 This Tab is used for defining single and multiple branch structures and configuring **Batch thread** definitions within the e-Ledger. Additionally, it allows setting up format mappings to generate e-Ledger files and reports efficiently.
 Before selecting format mappings, please check the [Configuring electronic reporting for e-Ledger](#configuring-electronic-reporting-for-e-ledger). These mappings should be defined beforehand.
@@ -104,14 +104,14 @@ If the e-Ledger will be generated for a single branch only, the parameters in th
 | Enable reporting per branch | Enables to create reports and e-Ledger file per branch. |
 | Dimension value | Specify the dimension name in order to map to relevant branch. |
 
-- **Document type mapping**
+#### Document type mapping
 
 This Tab is used to configure and update e-Ledger records, including transaction types, document types and descriptions, and payment method details, based on voucher filters.
 Voucher filter must be defined and fulfilled in order to find relevant transactions to map and update e-Ledger records.
 
 <table><tbody><tr><th><p><strong>Field</strong></p></th><th><p><strong>Description</strong></p></th></tr><tr><td><p>Transaction type</p></td><td><p>Provides the ability to find the relevant voucher transactions according to the transaction type and the voucher filter.</p></td></tr><tr><td><p>Voucher filter</p></td><td><p>The voucher filter is also defined in order to find the relevant voucher transactions. Here, definition should be done by defining the prefix part of the voucher series and adding “*” at the end.</p><p>For example, if the voucher is "MH00001" and the transaction type is "General journal," the definition should be as follows:</p><ul><li><strong>Transaction Type:</strong> General journal</li><li><strong>Voucher Query Filter:</strong> MH*</li></ul><p>If the query filter includes more than one transaction type, the same voucher query filter can be applied to each transaction type. For example, if vouchers starting with "MH*" contain both the "General journal" transaction type and an empty transaction type, the configuration would be as follows:</p><ul><li><strong>1st line:</strong><ul><li><strong>Transaction Type:</strong> General journal</li><li><strong>Voucher Query Filter:</strong> MH*</li></ul></li><li><strong>2nd line:</strong><ul><li><strong>Transaction Type:</strong> (empty)</li><li><strong>Voucher Query Filter:</strong> MH*</li></ul></li></ul><p>This ensures that the relevant transactions are properly filtered and identified based on their voucher series and transaction type.</p></td></tr><tr><td><p>e-Ledger document type</p></td><td><p>This field is used to select the <strong>Document type</strong>, which enables the automatic generation of document numbers for voucher transactions. The <strong>Document type</strong> should be chosen from the predefined prefix values listed below.</p><ul><li>Check</li><li>Invoice</li><li>Order-customer</li><li>Order-vendor</li><li>Voucher</li><li>Freight</li><li>Receipt</li><li>Other</li></ul></td></tr><tr><td><p>Document type description</p></td><td><p>If the <strong>e-Ledger document type</strong> is <strong>Other</strong>, depending on the legislations, the system allows you to enter a manual description in order to explain the type of the document type.</p></td></tr><tr><td><p>e-Ledger method of payment</p></td><td><p>The system enables the automatic assignment of payment methods to the relevant main accounts in the e-Ledger items, based on the <strong>Payment method mapping</strong> assigned to the main accounts.</p></td></tr><tr><td><p>Use payment method mapping</p></td><td><p>If a <strong>Payment method mapping</strong> will be used, the <strong>Use payment method mapping</strong> field must be marked. When it is marked, e-Ledger items is updated according to the definition in the <strong>Payment method mapping</strong> Tab.</p></td></tr><tr><td><p>Worker</p></td><td><p>e-Ledger must include information about the worker who created each voucher. If this field is left empty, the worker information of the worker who created the voucher will be automatically assigned. However, if a selection is made in this field, the selected worker information will be used when generating the e-Ledger.</p></td></tr></tbody></table>
 
-- **Payment method mapping**
+#### Payment method mapping
 
 This Tab is used to define method of payment based on main account filters. 
 
@@ -123,7 +123,7 @@ In the system, payment and collection vouchers are defined on a main account bas
 | e-Ledger method of payment | It is the field where each method of payment is defined as text in order to map payment types for vouchers. |
 | Main account filter | It is the field where ledger account filter is defined. Here, definition should be done by defining the prefix part of the main accounts with adding “\*” at the end. |
 
-- **Posting layer mapping**
+#### Posting layer mapping
 
 This Tab allows you to select specific layers to be excluded from the e-Ledger reports and e-Ledger file. This ensures that when generating the e-Ledger, vouchers from the excluded layers are not included in the e-Ledger.
 
@@ -132,7 +132,7 @@ This Tab allows you to select specific layers to be excluded from the e-Ledger r
 | Posting Layer | This field is used to categorize different types of financial transactions into distinct layers. |
 | Exclude | This function allows to select which posting layers should be included in the e-Ledger. The **Current** posting layer is used to generate the e-Ledger. |
 
-- **Dimension mapping**
+#### Dimension mapping
 
 This Tab is used to display the names of financial dimensions instead of the main account names in the **General journal account entry** FastTab in the **Ledger item number** page.
 
@@ -142,7 +142,7 @@ This Tab is used to display the names of financial dimensions instead of the mai
 | Main account | The main account to which the name of the financial dimension value should be assigned is selected. |
 | Dimension name | In the **General journal account entry** FastTab, in the **Account name** field, the financial dimension value whose name is to be displayed instead of the selected main account name is chosen. |
 
-- **e-Ledger chart of accounts**
+#### e-Ledger chart of accounts
 
 This Tab is used to define the e-Ledger chart of accounts for e-Ledger files and reports.
 
@@ -179,7 +179,7 @@ In Microsoft Dynamics 365 Finance to generate the e-Ledger file and statutory re
 After the status of the relevant fiscal period is updated, the necessary e-Ledger processes are carried out on the **General ledger > Period close > e-Ledger and statutory** page.
 This page displays the e-Ledger periods and their statuses, the debit and credit totals for each branch for the relevant periods, the last assigned journal item numbers, and the e-Ledger file status.
 
-  - **Statutory ledgers** 
+ #### Statutory ledgers
 
 This FastTab provides an overview of the e-Ledger files and reports generated for each branch ID.
 It allows for comparing the total debit and credit amounts after journal entries are created with the totals after those entries are sent to the e-Ledger pool.
@@ -254,7 +254,7 @@ After selecting **Assign journal item numbers**, the relevant fields are automat
 | Send to e-Ledger pool | This button sends created e-Ledger items to the pool in order to fix related records in the e-Ledger file to be created. It will also allows you to change beginning number of voucher line numbering . |
 | e-Ledger pool | This button redirects to the e-Ledger pool containing the submitted records. |
 
- - **Overview**
+#### Overview
 
 This FastTab allows you to manage and review ledger items for e-Ledger. 
 It includes options to refresh fields, automatically populate required information, or manually update these fields.
@@ -296,7 +296,7 @@ For detailed information about the buttons and fields, see the following section
 | Description | Displays the voucher description. |
 | Dimension value | Shows the dimension value of the branch. |
 
-  - **General journal account entry**
+#### General journal account entry
 
 This FastTab provides a breakdown of e-Ledger transactions, including account details, debit/credit classifications, and categorized dimension values. 
 Each entry consists of an e-Ledger account group code, main account details, voucher amount and description, ensuring structured financial tracking. 
@@ -338,7 +338,7 @@ You can generate the statutory ledger books and general journals in Excel format
 
 **Statutory ledgers** Tab will help you to select which statutory report you want to generate.
 
-  - **Overview**
+#### Overview
 
 This FastTab provides information about the parameters and fields of the ledger items. 
 
@@ -371,7 +371,7 @@ The **e-Ledger pool** ensures that all e-Ledger data is correctly structured bef
 | Journal item description | Allows the definition of journal item descriptions. |
 | Created date and time | Represents the date and time in the UTC timezone when the relevant voucher is sent to the pool. |
 
-  - **Lines**
+#### Lines
 
 This FastTab displays detailed voucher line information in the **e-Ledger pool** . 
 Each line includes a unique **Voucher line number**, main and sub-account details, ledger date, debit/credit status, amount, and a description.
