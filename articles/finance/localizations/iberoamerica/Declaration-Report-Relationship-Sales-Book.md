@@ -14,7 +14,8 @@ ms.author: v-cpicon
 [!INCLUDE[banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the Declaration Reports Relationship Sales Book for Venezuela in Microsoft Dynamics 365 Finance.
-The Declaration Reports Relationship Sales Book in Venezuela is a document that details the sales transactions made by a company during a specific period. This report is essential for compliance with tax obligations, as it allows the tax authorities to verify the accuracy of the income declared and calculate the corresponding taxes. In addition, it facilitates auditing and internal control of companies, ensuring transparency and proper financial management. It is generally issued on a monthly basis and includes details such as the date of the transaction, the invoice number, the amount of the sale, the customer's name and the type of product or service sold. In Dynamics 365 Finance and Operations (D365FO), the report is issued in digital format, allowing export to formats such as Excel and PDF.
+
+The Declaration Reports Relationship Sales Book in Venezuela is a document that details the sales transactions made by a company during a specific period. This report is essential for compliance with tax obligations because it allows the tax authorities to verify the accuracy of the income declared and calculate the corresponding taxes. In addition, it facilitates auditing and internal control of companies, ensuring transparency and proper financial management. It is generally issued on a monthly basis and includes details such as the date of the transaction, the invoice number, the amount of the sale, the customer's name and the type of product or service sold. In Dynamics 365 Finance and Operations (D365FO), the report is issued in digital format, allowing export to formats such as Excel and PDF.
 
 ## Prerequisites
 
@@ -59,9 +60,9 @@ To configure application-specific parameters, follow these steps.
 
 > Complete each lookup with **No** or **Not applicable** conditions where you select **Blank** and **Not blank**.
 
-## Run Declaration Reports Relationship Sales Book  for Venezuela :
+## Run Declaration Reports Relationship Sales Book  for Venezuela 
 
-To generate Declaration Reports Relationship Sales Book  for Venezuela follow these steps:
+To generate Declaration Reports Relationship Sales Book for Venezuela, follow these steps.
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select the **Declaration Reports Relationship Sales Book VEN**, and then select **OK**.
