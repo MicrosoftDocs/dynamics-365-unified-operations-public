@@ -3977,6 +3977,8 @@
           href: warehousing/mobile-device-workspace.md
         - name: Mobile device user settings
           href: warehousing/mobile-device-user-settings.md
+        - name: Warehouse Management mobile app calculator
+          href: warehousing/warehouse-app-calculator.md
         - name: Warehouse app event processing
           href: warehousing/warehouse-app-events.md
         - name: Inspect details of active Warehouse Management mobile app sessions
