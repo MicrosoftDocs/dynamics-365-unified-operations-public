@@ -41,7 +41,11 @@ To define the default batch ID that is used for customer orders, follow these st
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
 1. On the **Customer orders** tab, on the **Order** FastTab, enter a value in the **Default batch id** field.
+2. The inventory reservation should be set to "Automatic". Navigate to **"Account receivable parameters"** -> **"General"** -> **"Sales default values"** and set **"Reservation"** field as **"Automatic"**.
 
+> [!NOTE]
+> Customer orders created from POS do not support inputting a batch id value for the batch controlled items. If POS is used to create orders which includes batch controlled items, then the batch number should be added from Commerce HQ before fulfillment. However, the above mentioned steps provide a way to default a batch ID to the order lines created from POS if the inventory reservation is set to "Automatic".
+  
 ## Define the default batch ID that is used for sales order invoicing through statement posting
 
 To define the default batch ID that is used for sales order invoicing through statement posting, follow these steps.
@@ -49,8 +53,6 @@ To define the default batch ID that is used for sales order invoicing through st
 1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
 1. On the **Posting** tab, on the **Inventory update** FastTab, enter a value in the **Default batch id** field.
 
-> [!NOTE]
-> - Default batch ID functionality is available only when advanced warehousing is enabled for the specific store warehouse and items. In a future release, default batch ID functionality will also be supported for scenarios where advanced warehouse management isn't enabled.
-> - Support for the improved handling of batch-tracked items during statement posting for non-advanced warehouse management scenarios was introduced in the Commerce version 10.0.5 release.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
