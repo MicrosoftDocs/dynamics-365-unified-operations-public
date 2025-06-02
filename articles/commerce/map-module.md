@@ -22,7 +22,7 @@ This article covers map modules and describes how to configure them in Microsoft
 > [!IMPORTANT]
 > Bing Maps for Enterprise is deprecated and will be retired. If you have an enterprise license for Bing Maps for Enterprise, you can continue to use it until June 30, 2028. If you have a free or basic license for Bing Maps for Enterprise, you can continue to use it until June 30, 2025.
 >
-> Until Azure Maps becomes available as a module in Dynamics 365 Commerce version 10.0.45, you can manually enable Azure Maps by following the steps provided in the [Dynamics365Commerce.Solutions GitHub repository](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.54/src/OnlineSDK/Extensibility%20Samples/AzureMaps).
+> Until Azure Maps becomes available as a module in E-Commerce version 10.0.45, you can manually enable Azure Maps by following the steps provided in the [Dynamics365Commerce.Solutions GitHub repository](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.54/src/OnlineSDK/Extensibility%20Samples/AzureMaps).
 
 A map module shows the locations of stores on an interactive map that is rendered by using the [Bing Maps V8 Web Control](/bingmaps/v8-web-control/). A Bing Maps API key is required and must be added to the shared parameters page in Commerce headquarters. Map modules provide different views, such as Road, Aerial, and Streetside, that users can select to view map locations. They also allow for interactions such as zooming and using the user's location.
 
