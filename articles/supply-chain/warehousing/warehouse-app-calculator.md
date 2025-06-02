@@ -28,11 +28,11 @@ The calculator supports the following features:
 
 ## Access the calculator
 
-The calculator is automatically shown when it's required by the workflow the worker is using. For example, it appears when workers need to enter values for the following types of fields:
+The workflow automatically shows the calculator when the worker needs it. For example, it appears when workers need to enter values for the following types of fields:
 
-- **Quantity fields** – When entering item quantities during warehouse operations.
-- **Number-type inputs** – As defined by the workflow configuration.
-- **Measurement values** – When precise numerical input is required.
+- **Quantity fields**: When entering item quantities during warehouse operations.
+- **Number-type inputs**: As defined by the workflow configuration.
+- **Measurement values**: When precise numerical input is required.
 
 ## Basic input and calculator functionality
 
@@ -84,20 +84,20 @@ This section describes common issues and their solutions.
 
 ### Long press gestures aren't responding
 
-**Problem:** The long press gesture doesn't activate the enhanced functionality.
+**Problem**: The long press gesture doesn't activate the enhanced functionality.
 
-**Solution:** Make sure you're holding the button for at least half a second. A brief tap doesn't activate the gesture control.
+**Solution**: Make sure you're holding the button for at least half a second. A brief tap doesn't activate the gesture control.
 
 ### The operations menu doesn't appear
 
-**Problem:** The arithmetical operators menu doesn't display when needed.
+**Problem**: The arithmetical operators menu doesn't display when needed.
 
-**Solution:** Verify that you're long pressing the decimal point (**.**) key for at least half a second. Other numbers and function keys don't open the menu.
+**Solution**: Verify that you're long pressing the decimal point (**.**) key for at least half a second. Other numbers and function keys don't open the menu.
 
 ### A gesture activates unintentionally
 
-**Problem:** Enhanced functionality triggers during normal use.
+**Problem**: Enhanced functionality triggers during normal use.
 
-**Solution:** Adjust your input technique to use brief taps when entering standard numbers. Reserve longer presses only for when you intend to use the enhanced gesture controls.
+**Solution**: Adjust your input technique to use brief taps when entering standard numbers. Reserve longer presses only for when you intend to use the enhanced gesture controls.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
