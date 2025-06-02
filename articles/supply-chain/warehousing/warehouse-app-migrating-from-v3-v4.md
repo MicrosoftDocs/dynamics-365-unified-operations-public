@@ -32,7 +32,7 @@ The entire application is rebuilt from the ground up using modern technologies, 
 Camera scanning capabilities are improved, delivering next-level barcode scanning performance.
 
 **Supported Barcode Formats:**
-The application now supports a comprehensive range of barcode formats, you can find more information in [Warehouse Management Application supported barcodes](warehouse-app-bar-code-support.md).
+The application now supports a comprehensive range of barcode formats. You can find more information in [Warehouse Management Application supported barcodes](warehouse-app-bar-code-support.md).
 
 **Key Improvements:**
 
@@ -89,7 +89,15 @@ Comprehensive diagnostic capabilities for improved troubleshooting and maintenan
 
 ### Authentication Requirements
 
-**One-Time Re-authentication**: Users need to perform a single authentication process for each device during the migration period. Once migrated to V4, the device doesn't need to reauthenticate again.
+**One-Time Re-authentication**: Users must complete a single authentication process for each device during migration to V4. Once successfully migrated, devices remain authenticated without requiring additional re-authentication.
+
+**Windows Platform Configuration**: For Windows applications, you must add a new redirect URI to your Azure application registration:
+
+1. Navigate to [Azure Portal](https://portal.azure.com) > **App Registrations**
+2. Select your Entra Client ID registration
+3. Go to **Manage** > **Authentication**
+4. Click **Add Platform** > **Mobile and desktop applications**
+5. Then write: `ms-appx-web://microsoft.aad.brokerplugin/{clientId}`
 
 ### System Requirements
 

@@ -3902,13 +3902,15 @@
       - name: The Warehouse Management mobile app
         items:
         - name: What's new or changed in the Warehouse Management mobile app
-          href: warehousing/whats-new-wma.md
+          href: warehousing/whats-new-wma.md        
         - name: Warehouse Mobile app accessibility features
           href: warehousing/warehouse-app-accessibility.md
         - name: Workload insights with Copilot
           href: warehousing/warehouse-management-mobile-app-insights.md
         - name: Install, set up, and use mobile devices
           items:
+          - name: Migrating from version 3 to version 4+
+            href: warehousing/warehouse-app-migrating-from-v3-v4.md
           - name: Install the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
           - name: User-based authentication
@@ -3931,6 +3933,8 @@
             href: warehousing/warehouse-app-adv-scanner-config.md
           - name: Scan bar codes using a camera in the Warehouse Management mobile app
             href: warehousing/scan-bar-codes-using-a-camera.md
+          - name: Scanning connections using QRCode
+            href: /warehousing/warehouse-app-qr-code.md
         - name: Set up fields and menus for mobile devices
           items:
           - name: Configure fields for the Warehouse Management mobile app

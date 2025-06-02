@@ -69,7 +69,11 @@ The following procedure shows one way to register an application in Microsoft En
 
     ``` text
     ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333
+
+    For version 4.+ or more.
+    ms-appx-web://microsoft.aad.brokerplugin/{clientId}
     ```
+    
 
 1. Select **Configure** to save your settings and close the dialog boxes.
 1. You return to the **Authentication** page, which now shows your new platform configuration. Select **Add a platform** again.
