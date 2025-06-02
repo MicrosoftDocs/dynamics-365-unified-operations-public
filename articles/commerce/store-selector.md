@@ -61,11 +61,10 @@ Some stores in a fulfillment group might not be valid pickup locations. To ensur
 1. On the Action Pane, select **Save**.
 1. Run the 1070 **Channel configuration** distribution schedule job.
 
-
 > [!IMPORTANT]
-> Bing Maps for Enterprise is deprecated and will be retired. Customers with an enterprise license can continue to use Bing Maps for Enterprise until June 30th, 2028, and customers on the free and basic license for Bing Maps for Enterprise can continue to use Bing Maps for Enterprise until June 30th, 2025.
-> Until Azure Maps becomes available as a module in E-Commerce version 10.0.45, you can manually enable Azure maps by following the steps provided in the GitHub repository: https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.54/src/OnlineSDK/Extensibility%20Samples/AzureMaps.
-
+> Bing Maps for Enterprise is deprecated and will be retired. If you have an enterprise license for Bing Maps for Enterprise, you can continue to use it until June 30, 2028. If you have a free or basic license for Bing Maps for Enterprise, you can continue to use it until June 30, 2025.
+>
+> Until Azure Maps becomes available as a module in Dynamics 365 Commerce version 10.0.45, you can manually enable Azure Maps by following the steps provided in the [Dynamics365Commerce.Solutions GitHub repository](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.54/src/OnlineSDK/Extensibility%20Samples/AzureMaps).
 
 ## Bing Maps integration
 
