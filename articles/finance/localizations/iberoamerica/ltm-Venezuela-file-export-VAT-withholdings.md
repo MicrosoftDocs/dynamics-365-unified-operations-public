@@ -14,6 +14,7 @@ ms.author: v-cpicon
 [!INCLUDE[banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the VAT withholding report for Venezuela in Microsoft Dynamics 365 Finance.
+
 This document holds information about the withholdings generated from vendor invoices, debit notes, and credit notes.
 
 ## Prerequisites
@@ -24,7 +25,7 @@ Before you can generate the report, the following prerequisites must be met:
 * You must enable both the general Latin American (LATAM) feature and the country/region-specific LATAM feature for Venezuela.
 * You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
-    The following formats constitute VAT Withholding report:
+The following formats constitute VAT Withholding report:
     - LTM Tax Report
     - LTM Tax Report mapping
     - File Export VAT Withholdings (VE)
