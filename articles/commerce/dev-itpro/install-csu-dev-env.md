@@ -2,7 +2,7 @@
 title: Install Commerce Scale Unit on a development environment
 description: This article explains how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce.
 author: bstorie
-ms.date: 10/01/2024
+ms.date: 6/01/2025
 ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -19,9 +19,14 @@ ms.custom:
 
 This article provides step-by-step instructions on how to install an Internet Information Services (IIS) based Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and Microsoft Dynamics Lifecycle Services (LCS) cloud development environments for Microsoft Dynamics 365 Commerce. This article is divided into sections representing the different actions you must take to complete the installation, and each section should be followed in order. 
 
-## Create Azure Active Directory apps
+## Prerequisites  
 
-First, you must create two Microsoft Entra ID (formerly known as Azure Active Directory) apps, one for the CSU and one for the Store Commerce for Web app (formerly known as Cloud point of sale or CPOS). For instructions, see [Set up a custom Retail Server app in Microsoft Entra ID](cpos-custom-aad.md#set-up-a-custom-retail-server-app-in-microsoft-entra-id) and [Set up a custom app for Store Commerce for Web in Microsoft Entra ID](cpos-custom-aad.md#set-up-a-custom-app-for-store-commerce-for-web-in-microsoft-entra-id).
+Before beginning a Commerce Scale Unit installation, you must complete various one time tasks. These operations often need specific permissions and therefore may require the help of your organization's administrative personnel.
+
+First, you must create two Microsoft Entra ID (formerly known as Azure Active Directory) apps, one for the CSU and one for the Store Commerce for Web app (formerly known as Cloud point of sale or CPOS). The newly created apps must then be registered in Microsoft Dynamics 365 Commerce headquarters.
+
+Please follow the **Prerequisites** section in [Configure and install Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md#prerequisites) and then return to this document to continue.
+
 
 ## Create an SSL certificate for a website based on the host name
 
@@ -98,74 +103,7 @@ To enter the application ID (client ID) of the CSU Entra ID app in headquarters,
 1. in the **Name** column, enter descriptive text.
 1. In the **User ID** column, enter "RetailServiceAccount".  
 
-### Create a new channel database record
 
-You must create a new channel database record for the CSU. After creating that database record, you should obtain a copy of its configuration file, which will help to simplify the installation process. 
-
-To create a new channel database record for the CSU in headquarters, follow these steps.
-
-1. Go to **Retail and Commerce \> Headquarters Setup \> Commerce Scheduler \> Channel Database**.  
-1. Select **New**. 
-1. For **Channel Database ID**, enter "DevSealedCSU".  
-1. For **Channel Database Group**, enter "Default".  
-1. Select **Save**.  
-1. On the **Retail Channel** FastTab, select **Add**.  
-1. Select the store you normally work with.  
-1. Select **Save**.  
-1. On the **Mapping a New Retail Channel** warning dialog box, select **Yes**.  
-1. Select **Download \> Configuration file**.  
-1. Save the configuration file to C:\temp.  
-1. Rename the configuration file to "StoreSystemSetup.xml".  
-
-### Create a new channel profile  	
-
-Next, you must create a new channel profile record for the CSU URL, and then update the existing store records to use the new channel database and profile. 
-
-> [!NOTE]
-> Alternatively, you can instead modify the existing channel profile record to use the CSU URLs. 
-
-To create a new channel profile in headquarters and update the existing store records to use the new channel database and profile, follow these steps.
-
-1. Go to **Retail and Commerce \> Channel Setup \> Channel Profiles**.  
-1. Select **New**. 
-1. For **Name**, enter "DevSealedCSUProfile".  
-1. Select **Save**. 
-1. Under **Profile Properties**, select **Add**.  
-1. For **Nonexternal VM connectivity**, enter the following:  
-    1. For **Property Key**, enter the property key value.  
-    1. For **Retail Server URL**, enter `https://<HostName>:446/RetailServer/Commerce`.  
-    1. For **Cloud POS URL**, enter `https://<HostName>:446/POS`.  
-1. Go to **Retail and Commerce \> Channels \> Stores \> All Stores**.  
-1. For each store record you normally work, update the following fields:  
-    1. For **Live Channel Database**, enter "DevSealedCSU".  
-    1. For **Channel Profile**, enter "DevSealedCSUProfile".  
-    1. Select **Save**.  
-
-> [!NOTE]
-> - If you receive a warning stating `The store's closing method must be set to 'Shift'`, on the **Statement/Closing** FastTab of the store, update the **Closing Method** value to **Shift**.
-> - The \<HostName\> value typically starts with "DEV" and can be found by opening IIS Manager and reviewing the server name value shown in the upper left corner. It can also be found on the LCS Environments page in the **VM Name** column under **Manage environment \> LOCAL ACCOUNTS**.
-
-### Update CDX data groups
-
-The following change removes the default database from the Commerce Data Exchange (CDX) data groups in headquarters, because this database is no longer used. Failure to make this update can result in data sync errors later on. 
-
-To update CDX data groups in headquarters, follow these steps.
-
-1. Go to **Retail and Commerce \> Distribution Schedule**.
-1. Select the **Default Data** group.
-1. Remove the default database record from this group.
-		
-### Execute sync jobs 
-
-The following sync jobs are executed in headquarters before installation so that data package files are available for the CSU Async Client service once the installation is completed. If CSU installation is successful, these jobs show an applied status as the Async Client applies them. It isn't required to execute this section before CSU installation, however this step can help with early troubleshooting and verification that everything is working. 
-
-To execute sync jobs in headquarters, follow these steps.
-
-1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution Schedule**.   
-1. Select the **9999** job.  
-1. Select **Run now**.  
-1. For each warning, select **Yes**.  
-1. Select **OK** to schedule the job.  
 
 ## Install Sealed CSU prerequisites
 
@@ -183,89 +121,21 @@ To verify that the **IIS 6 Management Compatibility (IIS 6 Metabase Compatibilit
 To install the .NET Core hosting bundle on the development machine, follow these steps.
 
 1. Connect to the development machine using Remote Desktop Protocol (RDP).
-1. Open a web browser and go to [Download .NET 6.0 (Linux, macOS, and Windows](https://dotnet.microsoft.com/en-us/download/dotnet/6.0).
-1. In the **ASP.Net Core Runtime 6.0.X** section, select the **Hosting Bundle** installer for Windows to download it.
-1. Run the **dotnet-hosting-6.0.x-win.exe** installer.
+1. Open a web browser and go to [Download .NET 8.0 (Linux, macOS, and Windows](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
+1. In the **ASP.NET Core Runtime 8.0.X** section, select the **Hosting Bundle** installer for Windows to download it.
+1. Run the **dotnet-hosting-8.0.x-win.exe** installer.
 
-### Download the sealed self-hosted installer
 
-> [!NOTE]
-> Sealed CSU installers are only available from the LCS Asset library.  
+## Download and Install
+To download and execute the Commerce Scale Unit installer, see [Downloading and Running the Commerce Scale Unit Installer](retail-store-scale-unit-download-install). This article describes the steps necessary to download required configuration from Headquarters, download the installation program, and how to run the installer.
 
-To download the sealed self-hosted CSU installer to the development machine, follow these steps.
+Once installation is complete, return here.
 
-1. Open a web browser on the development machine and sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com).
-1. Select your project from the list.
-1. From the hamburger menu at the top of the page, select **Asset library**.
-1. Select **Retail Self-service package**.  
-1. If you already have a sealed CSU installer in your list, select the package name to start the download.  
-1. If you don’t have a CSU sealed installer in the list, select **Import**, select the sealed installer version you want to use, select **Pick**, and then select the package name to start the download. 
-1. Copy the sealed installer from the **Downloads** folder to C:\temp.
-
-## Install the sealed CSU
-
-The process of installing a sealed CSU usually employs a configuration file downloaded from headquarters that contains all of the information needed for Retail Transaction Service (RTS) authentication. If you don't use a configuration file, then you must specify additional parameters such as `--AadTokenIssuerPrefix`, `--StoreSystemAosURL`, `--StoreSystemChannelDatabaseId`, and `--TenantId`. For a full list of installer commands, see [Mass deployment of sealed Commerce self-service components](enhanced-mass-deployment.md). 
-
-To install the sealed CSU on the development machine, follow these steps.
-
-1. Open a Windows Command Prompt with administrator privileges.
-1. Change directory to C:\temp (for example, `CD C:\temp`).
-1. Execute the following command.
-
-```cmd
-CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" --AsyncClientCertThumbprint "<SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<Application ID URI>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck --trustSqlservercertificate
-```
-
-> [!NOTE]
-> - Since this is a development machine, using the same SSL thumbprint to run all services is allowed. For production and user acceptance testing (UAT) environments, these values should be different.
-> - Don't enter port 80 or 443 during installation. Entering either of these values interferes with the application object server (AOS) service that hosts the Commerce headquarters website. 
 
 ## Additional steps for cloud (LCS) deployed development environments 
 
-The setup steps in [Install the sealed CSU](#install-the-sealed-csu) assume that you'll RDP into the development environment when accessing the CSU URL. To make the development environment sealed CSU accessible from outside the development VM, you must perform the following additional tasks.   
+The setup steps in [Download and Install](#download-and-install) assume that you'll RDP into the development environment when accessing the CSU URL. To make the development environment sealed CSU accessible from outside the development VM, you must perform the following additional tasks.   
 
-> [!NOTE]
-> External accessible redirection has only been tested with Commerce version 10.0.39 and earlier. This functionality is based on redirecting the previous legacy (default) Retail Server URL to the sealed CSU on the VM. Support for this functionality will be removed in future versions along with the removal of the legacy (default) Retail Server. 
-
-### Create a channel profile for external access
-
-To create a channel profile for external access, follow these steps.
-
-1. In headquarters, go to **Retail and Commerce \> Channel Setup \> Channel Profiles** and create a new channel profile.
-1. Set the following property values: 
-    1. For **Retail Server URL**, enter `https://<LCSEnvironmentName>devret.axcloud.dynamics.com/RetailServer/Commerce`.
-    1. For **Cloud POS**, enter `https://<LCSEnvironmentName>devret.axcloud.dynamics.com/POS`.	
-1. Select **Save**.
-1. Go to **Retail and Commerce \> Channels \> Stores \> All Stores**.
-1. Edit the store record you normally work with. 
-1. Update the **Channel Profile** to the value you created.
-1. Select **Save**.
-1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution Schedule** and execute the **1070 (Channel configuration)** sync job.
-
-### Update IIS binding for website
-
-The IIS binding for the legacy Retail Server and Sealed CSU must be updated to support the redirection. 
-
-To update the IIS binding for the website, follow these steps.
-
-1. Connect to the development machine using Remote Desktop Protocol (RDP).
-1. Open IIS Manager and expand **Sites**.
-1. Select the **RetailServer** website.
-1. On the right side of the screen, select **Bindings**.
-1. Select the **HTTPS** binding, and then select **Edit**.
-1. Set the **Port** value to "444".
-1. For **Host name**, copy the entire URL string value for use later, and then delete the value.
-1. Select **OK**.
-1. Select **Close**.
-1. Select the **RetailStoreScaleUnitWebsite.AspNetCore** website.
-1. On the right side of the screen, select **Bindings**.
-1. Select the **HTTPS** binding, and then select **Edit**.
-1. Set the **Port** value to "443".
-1. For **Host name**, enter the **Host name** URL string value you copied earlier.
-1. For **SSL Certificate**, select the downward arrow.
-1. Select the SSL certificate that ends in `<LCS name>devaos.axcloud.dynamics.com`.
-1. Select **OK**.
-1. Select **Close**.
 
 ## Database restores from UAT
 
