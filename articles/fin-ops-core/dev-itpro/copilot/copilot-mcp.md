@@ -4,14 +4,12 @@ description: Learn how to use a Model Context Protocol (MCP) server to create an
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 05/18/2024
+ms.date: 06/03/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.collection:
   - bap-ai-copilot
-audience: Application User
 ms.search.region: Global
-ms.search.form:
 ---
 
 # Use Model Context Protocol for finance and operations apps
@@ -50,7 +48,7 @@ To add the tools to your agent, follow these steps.
 After the Dynamics 365 ERP MCP server is added, the agent has access to the tools on it and can use them to perform actions for the related finance and operations apps. To view the list of available tools on the server, open the Dynamics 365 ERP MCP server in the agent.
 
 ## MCP tools
-Below is the list of MCP tools currently available in the **Microsoft Dynamics 365 ERP MCP** server. This is a static list of tools that isn't currently extensible. A broader list of tools and options for extending the list of tools will be available in coming releases. For each tool, the below details include the following information:
+The following list of MCP tools currently available in the **Microsoft Dynamics 365 ERP MCP** server. This is a static list of tools that isn't currently extensible. For each tool, the details include the following information:
 - The **description** of the tool.
 - The **Dataverse custom API** that shows the tool schema and makes the call to perform the operation. The custom API can be found in the related Dataverse solution, either **Copilot in Microsoft Dynamics 365 Finance** or **Copilot in Microsoft Dynamics 365 Supply Chain Management**.
 - A table outlining the **inputs** for the tool.
@@ -129,7 +127,7 @@ For each purchase requisition there may be zero to many requisition lines return
 | ------ | ----------- | --------- |
 | `requisitionnumber` | The requisition number | `string` |
 | `requisitionname` | The requisition name | `string` |
-| `requisitionstatus` | The current status of the requisition | Enum, with the following value options: <ul><li>`200000000`: Draft <li>`200000001`: In review <li>`200000002`: Rejected <li>`200000003`: Approved <li>`200000004`: Cancelled <li>`200000005`: Closed <li>`200000006`: Budget reserved </ul> |
+| `requisitionstatus` | The current status of the requisition | Enum, with the following value options: <ul><li>`200000000`: Draft <li>`200000001`: In review <li>`200000002`: Rejected <li>`200000003`: Approved <li>`200000004`: Canceled <li>`200000005`: Closed <li>`200000006`: Budget reserved </ul> |
 | `lines/requisitionlinenumber` | The requisition line number | `integer` |
 | `lines/itemnumber` | The item number for the line | `string` |
 | `lines/linedescription` | The description of the line | `string` |
@@ -510,10 +508,10 @@ The purchase invoice can include zero to many invoice lines in the output respon
 
 ### **Find Unmatched Invoices**
 - **Name:** `findunmatchedinvoices`
-- **Description:** Retrieves a list of vendor invoices that have not been matched.
+- **Description:** Retrieves a list of vendor invoices that haven't been matched.
 - **Custom API:** `msdyn_VendInvoiceGetUnmatchedInvoicesCustomAPI`
 
-**Input**: This tool does not require input properties.
+**Input**: This tool doesn't require input properties.
 
 **Output**
 
@@ -549,6 +547,6 @@ The purchase invoice can include zero to many invoice lines in the output respon
 | Output | Description | Data type |
 | ------ | ----------- | --------- |
 | `status` | Status of the workflow submission | Enum <br><ul><li>Success <li>Failure </ul> |
-| `message` | Failure details in case of Failure status | `string` |
+| `message` | Failure details when there's a Failure status | `string` |
 
 
