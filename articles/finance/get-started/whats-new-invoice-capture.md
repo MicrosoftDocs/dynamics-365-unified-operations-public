@@ -26,7 +26,7 @@ This article provides information about the Invoice capture solution that automa
 
 ## May 2025
 
-The May release of the invoice capture solution version 1.9.5.1 contains the following features and bug fixes.
+The May release of the invoice capture solution version 1.9.5.3 contains the following features and bug fixes.
 
 | Feature | Description |
 | --- |--- |
