@@ -545,6 +545,7 @@ The purchase invoice can include zero to many invoice lines in the output respon
 | `comment` | Workflow submission comment. | `string` | Yes |
 
 **Output**
+
 | Output | Description | Data type |
 | ------ | ----------- | --------- |
 | `status` | Status of the workflow submission | Enum <br><ul><li>Success <li>Failure </ul> |
