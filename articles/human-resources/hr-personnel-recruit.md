@@ -56,7 +56,7 @@ Once the features are turned on, select the functionality with the following ste
 
 ## Add a recruiting request location
 
-If your organization has multiple locations, you can add them so requestors can select a location where the new recruit will be working. The location will be included in the job posting.
+If your organization has multiple locations, you can add them so requesters can select a location where the new recruit will be working. The location will be included in the job posting.
 
 1. In the search bar, enter **Recruiting request location**.
 2. Select **New**.
