@@ -4,7 +4,7 @@ description: Learn how to get started with phase one of electronic invoicing for
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 06/04/2025
+ms.date: 06/05/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -34,20 +34,20 @@ This section complements the [Country/region-specific configuration of applicati
 To configure the Saudi Arabian electronic invoice (SA) electronic invoicing feature, follow these steps.
 
 1. In RCS, in the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile.
-2. On the **Electronic invoicing features** page, verify that the **Saudi Arabian electronic invoice (SA)** electronic invoicing feature is selected.
-3. On the **Versions** tab, verify that the **Draft** version is selected.
-4. On the **Configurations** tab, go to **Application specific parameters** for a selected configuration. In the **Lookups** section, make sure that the **PaymentMethodSubstitutionLookup** lookup is selected.
-5. In the **Conditions** section, select **Add** to add a condition.
-6. In the **Name** column for the new condition, select the method of payment that's defined in the application. Then, in the **Lookup result** column, select a standardized method of payment code according to [UN/EDIFACT Code list 4461](https://unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred4461.htm).
-7. Add specific conditions for each method of payment that's defined in the system, and save your changes.
+1. On the **Electronic invoicing features** page, verify that the **Saudi Arabian electronic invoice (SA)** electronic invoicing feature is selected.
+1. On the **Versions** tab, verify that the **Draft** version is selected.
+1. On the **Configurations** tab, go to **Application specific parameters** for a selected configuration. In the **Lookups** section, make sure that the **PaymentMethodSubstitutionLookup** lookup is selected.
+1. In the **Conditions** section, select **Add** to add a condition.
+1. In the **Name** column for the new condition, select the method of payment that's defined in the application. Then, in the **Lookup result** column, select a standardized method of payment code according to [UN/EDIFACT Code list 4461](https://unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred4461.htm).
+1. Add specific conditions for each method of payment that's defined in the system, and save your changes.
 
     > [!NOTE]
     > In the **Name** column, you can select the **&ast;Blank&ast;** or **&ast;Not blank&ast;** placeholder value instead of a specific method of payment.
 
-8. On the **Setups** tab, select **Edit** for the selected configuration.
-9. In the **Processing pipeline** section, turn on the **Export result** option for the **Transform document** action.
-10. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see [Deploy the electronic invoicing feature to Service environment](../e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment).
-11. Deploy the **Saudi Arabian electronic invoice (SA)** feature to the connected application. For more information, see [Deploy the electronic invoicing feature to Connected application](../e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application).
+1. On the **Setups** tab, select **Edit** for the selected configuration.
+1. In the **Processing pipeline** section, turn on the **Export result** option for the **Transform document** action.
+1. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see [Deploy the electronic invoicing feature to Service environment](../e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment).
+1. Deploy the **Saudi Arabian electronic invoice (SA)** feature to the connected application. For more information, see [Deploy the electronic invoicing feature to Connected application](../e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application).
 
 ## Additional resources
 
