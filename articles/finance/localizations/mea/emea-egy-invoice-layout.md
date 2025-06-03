@@ -4,7 +4,7 @@ description: Learn how to configure the invoice layout for Egypt in Microsoft Dy
 author: mrolecki
 ms.author: mrolecki
 ms.topic: how-to
-ms.date: 06/03/2025
+ms.date: 06/05/2025
 ms.reviewer: johnmichalak
 ms.search.region: Egypt
 ms.search.validFrom: 2021-02-01
