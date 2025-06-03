@@ -3876,6 +3876,8 @@
                       items:
                         - name: Standard audit file (JPK) overview
                           href: localizations/poland/emea-pol-standard-audit-file-saf.md
+                        - name: SAF Bank statement file - JPK_KR
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-kr.md
                         - name: SAF Bank statement file - JPK_WB
                           href: localizations/poland/emea-pol-standard-audit-file-saf-wb.md
                         - name: SAF Inventory file - JPK_MAG
