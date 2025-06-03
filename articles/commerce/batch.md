@@ -1,27 +1,15 @@
 ---
-# required metadata
-
 title: Improved handling of batch-tracked items
-description: This article describes the improved handling of batch-tracked items during the statement posting process in Microsoft Dynamics 365 Commerce.
+description: Learn about the improved handling of batch-tracked items during the statement posting process in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 09/09/2021
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.date: 06/03/2025
+ms.topic: how-to
+ms.reviewer: johnmichalak
 ms.custom: 
-ms.assetid: 
-ms.search.region: global
+  - bap-template
+ms.search.region: Global
 ms.search.industry: Retail
-ms.author: josaw
-ms.search.validFrom: 2019-05-28
-ms.dyn365.ops.version: 10.0
-
+ms.author: shajain
 ---
 # Improved handling of batch-tracked items
 
@@ -37,14 +25,16 @@ Improvements to Commerce help ensure that when negative inventory is turned on f
 
 ## Define the default batch ID that is used for customer orders
 
+The following procedure enables you to define a default a batch ID to order lines created from POS if the inventory reservation is set to **Automatic**.
+
 To define the default batch ID that is used for customer orders, follow these steps.
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
-1. On the **Customer orders** tab, on the **Order** FastTab, enable **"Use default batch id when batch numbers are not found"** and enter a value in the **Default batch id** field.
-2. The inventory reservation should be set to "Automatic". Navigate to **"Account receivable parameters"** -> **"General"** -> **"Sales default values"** and set **"Reservation"** field as **"Automatic"**.
+1. On the **Customer orders** tab, on the **Order** FastTab, enable the **Use default batch id when batch numbers are not found** option, and then enter a value in the **Default batch id** field.
+1. Go to **Account receivable parameters** \> **General** \> **Sales default values** and set the **Reservation** field to **Automatic**.
 
 > [!NOTE]
-> Customer orders created from POS do not support inputting a batch id value for the batch controlled items. If POS is used to create orders which includes batch controlled items, then the batch number should be added from Commerce HQ before fulfillment. However, the above mentioned steps provide a way to default a batch ID to the order lines created from POS if the inventory reservation is set to "Automatic".
+> Customer orders created from POS don't support adding a batch ID value for batch-controlled items. If POS is used to create orders that include batch-controlled items, then you should add the batch number in headquarters before fulfillment. 
   
 ## Define the default batch ID that is used for sales order invoicing through statement posting
 
