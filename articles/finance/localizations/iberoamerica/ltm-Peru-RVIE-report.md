@@ -2,7 +2,7 @@
 title: Configure printing for the Electronic Sales and Income Registry (RVIE) report for Peru
 description: Learn how to configure printing for the Electronic Sales and Income Registry (RVIE) report for Peru in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
-ms.date: 05/07/2025
+ms.date: 06/03/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -12,7 +12,7 @@ ms.author: v-federicohe
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to configure printing for the Electronic Sales and Income Registry (RVIE) report for Peru in Microsoft Dynamics 365 Finance including the excel output of annex 5.
+This article explains how to configure printing for the Electronic Sales and Income Registry (RVIE) report for Peru in Microsoft Dynamics 365 Finance including the Excel output of annex 5.
 
 The RVIE report in Peru is a record of sales and income. It's used to modify proposed reports by the National Superintendency of Customs and Tax Administration (SUNAT). The RVIE report includes annexes 2, 3, and 5.
 
@@ -31,9 +31,9 @@ Before you can generate and print RVIE reports, the following prerequisites must
     - RVIE-ANEXO 2
     - RVIE-ANEXO 3
     - RVIE-ANEXO 5
-    - PE Sales Vat (excel output)
+    - PE Sales Vat (Excel output)
 
-## Additional configuration required for RVIE annex reports including the excel output
+## Additional configuration required for RVIE annex reports including the Excel output
 
 - You must create a SUNAT tax application code to use on the report. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
 - When you configure document classes for purchase invoices, debit notes, and credit notes, the tax application code must be set according to SUNAT table 3, "Types of Payment Receipts or Documents."
@@ -48,7 +48,7 @@ Before you can generate and print RVIE reports, the following prerequisites must
 - When you create a person of the **Person** type, you can use the **Phonetic last name** field to add a second last name as required.
 - Go to **General ledger** \> **Currencies** \> **Currencies**, and complete the currency tax application code with the appropriate three-letter code from SUNAT table 2, "Currency Type."
 
-## Configure application-specific parameters for the RVIE annex reports including the excel output
+## Configure application-specific parameters for the RVIE annex reports including the Excel output
 
 To configure application-specific parameters for an RVIE report, follow these steps.
 
