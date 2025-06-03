@@ -29,7 +29,7 @@ After an organization is onboarded as a business partner, the organization user 
 
 ## Set up the administrator user for a new business partner
 
-Potential business partners can initiate the onboarding process to a B2B e-commerce website by submitting an onboarding request via a link on the B2B website. They can then use the customizable form to provide the details that are required for onboarding and sign-up. After the request is submitted, a submission confirmation page appears. If the submission is approved, the company that the request was submitted for becomes a business partner, and the requestor (the user who initiated the onboarding request) becomes the administrator user for the business partner.
+Potential business partners can initiate the onboarding process to a B2B e-commerce website by submitting an onboarding request via a link on the B2B website. They can then use the customizable form to provide the details that are required for onboarding and sign-up. After the request is submitted, a submission confirmation page appears. If the submission is approved, the company that the request was submitted for becomes a business partner, and the requester (the user who initiated the onboarding request) becomes the administrator user for the business partner.
 
 To approve a business partner request in Commerce headquarters, follow these steps.
 
@@ -37,7 +37,7 @@ To approve a business partner request in Commerce headquarters, follow these ste
 1. Run the **P-0001** job to pull all business partner onboarding requests into Commerce headquarters.
 1. After the **P-0001** job has successfully run, go to **Retail and Commerce IT \> Customer**, and run the **Synchronize customers and channel requests** job. After this job has successfully run, the onboarding requests are created as prospects of the **B2B prospect** type in Commerce headquarters. 
 1. Go to **Customers \> All prospects**, and select the new business partner's prospect record to open the prospect details page.
-1. On the **General** tab, select **Convert \> Approve/Reject** to approve the onboarding request. When the confirmation message appears, confirm that you want to continue with the process, and then approve the request. The approval changes the **Status** field of the prospect record to **Approved**. An email is then sent to the requestor's email address to confirm that their organization has been approved as a business partner. A customer hierarchy is also created, where the requester is added as an administrator for the business partner.
+1. On the **General** tab, select **Convert \> Approve/Reject** to approve the onboarding request. When the confirmation message appears, confirm that you want to continue with the process, and then approve the request. The approval changes the **Status** field of the prospect record to **Approved**. An email is then sent to the requester's email address to confirm that their organization has been approved as a business partner. A customer hierarchy is also created, where the requester is added as an administrator for the business partner.
 
     > [!NOTE]
     > Currently, the confirmation email is sent immediately on approval. However, future Commerce functionality will let the administrator manually trigger the emails.
@@ -47,7 +47,7 @@ To approve a business partner request in Commerce headquarters, follow these ste
 > [!NOTE]
 > To ensure that the new customer records are sent to the channel database, at least one of the address books that are associated with the customer should be included in the customer address book that is associated with the online store. You can automate this process by configuring the address book on the default customer of the online store so that the system copies the address book value to every new customer.
 
-After the customer hierarchy records are synchronized to the channel database, the requestor can sign in to the B2B e-commerce website by using the email address that they provided when they submitted the onboarding request. Users can use the sign-up flow to define the password for their account. For information about how to enable the Microsoft Entra B2C identity provider record to be linked to the B2B customer record that was created on prospect approval, see [Enable automatic linking](../identity-record-linking.md).
+After the customer hierarchy records are synchronized to the channel database, the requester can sign in to the B2B e-commerce website by using the email address that they provided when they submitted the onboarding request. Users can use the sign-up flow to define the password for their account. For information about how to enable the Microsoft Entra B2C identity provider record to be linked to the B2B customer record that was created on prospect approval, see [Enable automatic linking](../identity-record-linking.md).
 
 ## Notify B2B prospects when they are approved or rejected
 
