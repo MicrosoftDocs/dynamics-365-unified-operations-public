@@ -424,3 +424,9 @@ Enable-TriggerFlow -flowId 'acd7bb36-07a1-ef11-a72d-6045bd0390ae' -accessToken $
 Write-Host
 Write-Host 'Supplier communications agent is ready for use' -ForegroundColor Green
 ```
+
+## Set up yourself as a vendor for testing
+
+To use **Review and apply purchase order changes received in vendor emails**, only emails from vendor domains will be read. This means that when you are testing the system (where you forward emails from vendor communications), you must setup yourself as a vendor email address in the system. To do so, follow the steps:
+1. Go to **All vendors** page
+2. Select any vendor, and under the tab **Contacts**, add your own email address (the one you will use to forward emails)
