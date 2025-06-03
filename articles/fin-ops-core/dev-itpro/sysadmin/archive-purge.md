@@ -56,7 +56,7 @@ The purge process only removes data from the operational history tables in Dynam
 The feature is available to administrators who have access to the Archiving workspace in Dynamics 365.  
 
 ### What is the eligibility criteria for purging data? 
-A: The Purge from History feature is designed to work only with data from completed archive jobs. If an archival job is still in progress or has not been completed successfully, the "Delete History Data" button will remain disabled to prevent accidental data deletion. 
+The Purge from History feature is designed to work only with data from completed archive jobs. If an archival job is still in progress or has not been completed successfully, the "Delete History Data" button will remain disabled to prevent accidental data deletion. 
 
 ### Can multiple purge jobs be scheduled at the same time? 
 Yes, the feature supports scheduling multiple purge jobs to run simultaneously on different archival scenarios (e.g. general ledger and sales orders). This allows users to clean up history tables for several completed archive jobs in a single operation, improving efficiency. 
@@ -70,9 +70,9 @@ Users can monitor the status of purge jobs in real time through the results colu
  
 ### What safeguards are in place to prevent accidental data loss? 
 The Purge from History feature includes multiple safeguards: 
-1. The "Delete History" button is only enabled for completed archive jobs, ensuring no critical data is removed prematurely. 
+1. The "Delete History Data" button is only enabled for completed archive jobs, ensuring no critical data is removed prematurely. 
 1. A confirmation pop-up requires users to acknowledge the irreversible nature of the purge process. 
-1. Archived data in Dataverse long-term retention remains unaffected by the purge. 
+1. Archived data in Dataverse long-term retention remains unaffected by the purge from history feature. 
 
 ### How does this feature help optimize storage and performance? 
 By permanently removing data from history tables: 
