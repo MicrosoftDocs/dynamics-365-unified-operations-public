@@ -2,7 +2,7 @@
 title: Configure printing for the Electronic Purchase Register (RCE) for purchases domiciled in Peru
 description: Learn how to configure printing for the Electronic Purchase Register (RCE) for purchases that are domiciled in Peru in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
-ms.date: 04/24/2025
+ms.date: 06/03/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -35,9 +35,9 @@ Before you can generate and print the reports, the following prerequisites must 
     - RCE-ANEXO 11
     - RCE-ANEXO 12.8.4
     - RCE-ANEXO 13.5.1
-    - PE Purchases vat book (excel output)
+    - PE Purchases vat book (Excel output)
 
-## Additional configuration required for the RCE annexes reports of purchases not domiciled in Peru including the excel output
+## Additional configuration required for the RCE annexes reports of purchases not domiciled in Peru including the Excel output
 
 - You must create a SUNAT tax application code to use on the report. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
 - When you configure document classes for purchase invoices, debit notes, credit notes, and the DUA-DSI declaration (customs legal requirements), the tax application code must be set according to SUNAT table 3, "Types of Payment Receipts or Documents."
@@ -54,7 +54,7 @@ Before you can generate and print the reports, the following prerequisites must 
 - When you create a vendor of the **Person** type, you can use the **Phonetic last name** field to add a second last name as required.
 - Go to **General ledger** \> **Currencies** \> **Currencies**, and complete the currency tax application code with the appropriate three-letter code from SUNAT table 2, "Currency Type."
 
-## Configure application-specific parameters for the RCE annexes formats including the excel output
+## Configure application-specific parameters for the RCE annexes formats including the Excel output
 
 To configure application-specific parameters for purchases that are domiciled in Peru reports formats, follow these steps.
 
@@ -86,7 +86,7 @@ To configure application-specific parameters for purchases that are domiciled in
 
 ## Generate an RCE annex report
 
-To generate any RCE annex reports including the excel output, follow these steps.
+To generate any RCE annex reports including the Excel output, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select a format listed in the [Prerequisites](#prerequisites) section.
