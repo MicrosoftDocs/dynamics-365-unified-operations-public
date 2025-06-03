@@ -386,6 +386,9 @@ In your request, set `QueryATP` to *true* if you want to query scheduled on-hand
 > [!NOTE]
 > Regardless of whether the `returnNegative` parameter is set to *true* or *false* in the request body, the result will include negative values when you query for scheduled on-hand changes and ATP results. These negative values will be included because, if only demand orders are scheduled, or if supply quantities are less than demand quantities, the scheduled on-hand change quantities will be negative. If negative values weren't included, the results would be confusing. For more information about this option and how it works for other types of queries, see [Inventory Visibility public APIs](inventory-visibility-api.md#query-with-post-method).
 
+> [!IMPORTANT]
+> Scheduled on-hand changes are stored only in Dataverse. Therefore, querying scheduled on-hand changes and ATP results is subject to limits of querying Dataverse, especially in terms of performance. To prevent hitting limits, consider applying appropriate filters in your query to reduce the amount of data being accessed.
+
 ### Query by using the POST method
 
 ```txt
