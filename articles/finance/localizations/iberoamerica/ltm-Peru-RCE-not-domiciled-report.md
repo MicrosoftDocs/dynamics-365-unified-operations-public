@@ -2,7 +2,7 @@
 title: Configure printing for the Electronic Purchase Register (RCE) for purchases not domiciled in Peru
 description: Learn how to configure printing for the Electronic Purchase Register (RCE) for purchases that aren't domiciled in Peru in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
-ms.date: 04/24/2025
+ms.date: 06/03/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -36,7 +36,7 @@ Before you can generate and print the reports, the following prerequisites must 
     - RCE-ANEXO 13.5.2
     - Non-resident Purchase Register
 
-## Additional configuration required for the RCE reports of purchases not domiciled in Peru including the excel output
+## Additional configuration required for the RCE reports of purchases not domiciled in Peru including the Excel output
 
 - You must create a SUNAT tax application code to use on the report. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
 - When you configure document classes for purchase invoices, debit notes, credit notes, and the DUA-DSI declaration (customs legal requirements), the tax application code must be set according to SUNAT table 3, "Types of Payment Receipts or Documents."
@@ -55,7 +55,7 @@ Before you can generate and print the reports, the following prerequisites must 
 - Go to **General ledger** \> **Currencies** \> **Currencies**, and complete the currency tax application code with the appropriate three-letter code from SUNAT table 2, "Currency Type."
 - Set up the tax application code of the country/region records that are used with the SUNAT country code table. Set up user-defined field 1 with the SUNAT code of the agreement. This setup helps prevent double taxation. Learn more in [Country/region configuration](ltm-core-address-setup.md#countryregion-configuration).
 
-## Configure application-specific parameters for purchases not domiciled in Peru including the excel output
+## Configure application-specific parameters for purchases not domiciled in Peru including the Excel output
 
 To configure application-specific parameters for purchases that aren't domiciled in Peru, follow these steps.
 
