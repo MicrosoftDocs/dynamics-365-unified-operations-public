@@ -4,13 +4,13 @@ description: Learn how to configure the invoice layout for Bahrain, including pr
 author: mrolecki
 ms.author: mrolecki
 ms.topic: how-to
-ms.date: 09/08/2020
+ms.date: 06/05/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Bahrain
 ms.search.validFrom: 2020-06-03
-ms.search.form: 
-ms.dyn365.ops.version: 10.0.13
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Configure invoice layout for Bahrain (BH-00003)
@@ -62,7 +62,7 @@ By default, invoices are generated as Microsoft Excel files. To enable their con
  
 3. For each format, follow these steps:
 
-    1. Select the **Convert to PDF** check box.
+    1. Select the **Convert to PDF** checkbox.
     2. In the **Page orientation** field, select **Portrait**.
     3. Select **Settings**, and then, on the **Destination settings** page, on the **Screen** tab, set the **Enabled** option to **Yes** to enable printing to the screen.
 
@@ -76,9 +76,11 @@ In the **Electronic reporting** workspace, select the **Project invoice model ma
 
 ## Configure parameters
 
-### Configure Print management 
+### Configure print management
 
-1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup**.
+To configure print management, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup**.
 2. On the **Form setup** page, on the **General** tab, select **Print management**.
 3. On the **Print management setup** page, define the references to the imported formats for the following documents:
 
@@ -97,7 +99,9 @@ In the **Electronic reporting** workspace, select the **Project invoice model ma
 
 ### Configure sales tax specification
 
-1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup**.
+To configure sales tax specification, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup**.
 2. On the **Form setup** page, on the **General** tab, in the **Sales tax specification** field, select **Registration and company currency**.
 
     ![Configuring sales tax specification.](../media/emea-bhr-tax-spec.jpg)
@@ -107,17 +111,21 @@ In the **Electronic reporting** workspace, select the **Project invoice model ma
 
 ### Configure packing slip specification
 
-1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup**.
-2. On the **Form setup** page, on the **Invoice** tab, select the **Print packing slip specifications** check box.
+To configure packing slip specification, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup**.
+2. On the **Form setup** page, on the **Invoice** tab, select the **Print packing slip specifications** checkbox.
 
     ![Configuring packing slip specification.](../media/emea-bhr-packing-spec.jpg)
 
 3. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Forms setup**.
-4. On the **Form setup** page, on the **Invoice** tab, select the **Print packing slip specifications** check box.
+4. On the **Form setup** page, on the **Invoice** tab, select the **Print packing slip specifications** checkbox.
 
-### Activate credit invoicing 
+### Activate credit invoicing
 
-1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+To activate credit invoicing, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 2. On the **Accounts receivable parameters** page, on the **Updates** tab, on the **Invoice** FastTab, set the **Apply the credit invoicing layout into sales and project invoice reports** option to **Yes**.
 
 ![Activating credit invoicing.](../media/emea-bhr-credit.jpg)
