@@ -25,7 +25,7 @@ Improvements to Commerce help ensure that when negative inventory is turned on f
 
 ## Define the default batch ID that is used for customer orders
 
-The following procedure enables you to define a default a batch ID to order lines created from POS if the inventory reservation is set to **Automatic**.
+The following procedure defines a default a batch ID to order lines created from POS if the inventory reservation is set to **Automatic**.
 
 To define the default batch ID that is used for customer orders, follow these steps.
 
