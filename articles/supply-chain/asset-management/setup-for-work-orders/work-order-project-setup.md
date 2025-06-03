@@ -53,9 +53,9 @@ The setup allows for complete integration with the **Project management and acco
     If you select a functional location, the related child locations are automatically included. If you select an asset, you can create more work order project setup lines for the same asset, but you can select different projects for that asset.
 
 4. In the **Project ID** field, select the project that should be related to the setup that you created in step 3.
-5. If the project setup should be valid for only a limited period, select an end date in the **End date** field. Otherwise, select **None**.
+5. If the project setup should be valid for only a limited period, select an end date in the **Expiration** field. Otherwise, select **Never**.
 
-    By default, the start date is the date when you add the work order project to the page. It's controlled by the **Valid from** field, which is hidden by default. To show the **Valid from** field, select **View** \> **All**. You can then use the **Valid from** field together with the **End date** field to set up a limited period of validity for the work order project.
+    By default, the start date is the date when you add the work order project to the page. It's controlled by the **Effective** field, which is hidden by default. To show the **Effective** field, select **View** \> **All**. You can then use the **Effective** field together with the **Expiration** field to set up a limited period of validity for the work order project.
 
     ![Work orders project setup page.](media/17-setup-for-work-orders.png)
 
