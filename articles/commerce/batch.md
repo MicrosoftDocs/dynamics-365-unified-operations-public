@@ -19,9 +19,9 @@ This article describes the improved handling of batch-tracked items during the s
 
 In Dynamics 365 Commerce point of sale (POS), batch numbers can't be captured for batch-tracked items at the time of sale. However, for specific configurations when sales are posted in Commerce headquarters through customer orders or statement posting, Commerce expects that valid batch numbers for batch-tracked items exist and will be used during the invoicing process.
 
-If valid batch numbers are available for products, both the customer order invoicing process and the sales order invoicing process from statement posting use them. If valid batch numbers aren't available for products, the customer order invoicing process can't post, and the POS user receives an error message. Statement posting then goes into an error state, even if negative inventory has been turned on for the products.
+If valid batch numbers are available for products, both the customer order invoicing process and the sales order invoicing process from statement posting use them. If valid batch numbers aren't available for products, the customer order invoicing process can't post, and the POS user receives an error message. Statement posting then goes into an error state, even if negative inventory is turned on for the products.
 
-Improvements to Commerce help ensure that when negative inventory is turned on for batch-tracked items, customer order invoicing and sales order invoicing through statement posting aren't blocked for those items if the inventory is 0 (zero) or a batch number isn't available. The improved functionality uses a default batch ID for the sales lines when batch numbers aren't available.
+Improvements to Commerce help ensure that when negative inventory is turned on for batch-tracked items, customer order and sales order invoicing through statement posting isn't blocked for those items if the inventory is 0 (zero) or a batch number isn't available. The improved functionality uses a default batch ID for the sales lines when batch numbers aren't available.
 
 ## Define the default batch ID that is used for customer orders
 
@@ -30,7 +30,7 @@ The following procedure enables you to define a default a batch ID to order line
 To define the default batch ID that is used for customer orders, follow these steps.
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
-1. On the **Customer orders** tab, on the **Order** FastTab, enable the **Use default batch id when batch numbers are not found** option, and then enter a value in the **Default batch id** field.
+1. On the **Customer orders** tab, on the **Order** FastTab, enable the **Use default batch ID when batch numbers are not found** option, and then enter a value in the **Default batch ID** field.
 1. Go to **Account receivable parameters** \> **General** \> **Sales default values** and set the **Reservation** field to **Automatic**.
 
 > [!NOTE]
