@@ -41,7 +41,7 @@ When you review incoming changes that are based on an email, the system shows th
 ## Configure the agent to track your email
 
 > [!IMPORTANT]
-> Before you begin, complete the steps in [Set up and configure the Supplier Communications Agent](./supplier-com-agent-setup.md).
+> Before you begin, complete the steps in [Set up and configure the Supplier Communications Agent](./supplier-com-agent-setup.md). Note that you must setup your own email address as a vendor for being able to forward the emails to the system, if you forward email communications for testing. 
 
 The Supplier Communications Agent must be configured to monitor a specific email address for incoming messages from vendors. Follow these steps to complete the configuration.
 
@@ -70,6 +70,14 @@ The Supplier Communications Agent must be configured to monitor a specific email
     - To apply all the changes that the agent suggested, select **Apply all suggestions**. This action affects all purchase orders that are mentioned in the message.
     - To apply all suggestions to a single selected purchase header and all its lines, select **Apply suggestions** in the **Purchase order header** section.
     - To apply suggestions to specific purchase order lines, select the relevant lines, and then select **Apply suggestions** in the **Purchaser order lines** section.
+  
+Note the agent detects changes in the following fields:
+1. Quantity
+2. Unit of measure
+3. Price
+4. Confirmation
+5. Delivery date
+6. Cancellation
 
 ## Teach the agent to better interpret incoming email content
 
