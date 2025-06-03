@@ -72,10 +72,10 @@ Below is the list of MCP tools currently available in the **Microsoft Dynamics 3
 
 | Output | Description | Data type |
 | ------ | ----------- | --------- |
-| `itemnumber` | The item number | String |
-| `approvedvendoraccountnumber` | The vendor account number of the approved vendor for the item | String |
-| `validfrom` | The date and time from which the approval is valid | Datetime |
-| `validto` | The date and time from to which the approval is valid | Datetime |
+| `itemnumber` | The item number | `string` |
+| `approvedvendoraccountnumber` | The vendor account number of the approved vendor for the item | `string` |
+| `validfrom` | The date and time from which the approval is valid | `datetime` |
+| `validto` | The date and time from to which the approval is valid | `datetime` |
 
 **Example output**
 
@@ -127,19 +127,19 @@ For each purchase requisition there may be zero to many requisition lines return
 
 | Output | Description | Data type |
 | ------ | ----------- | --------- |
-| `requisitionnumber` | The requisition number | String |
-| `requisitionname` | The requisition name | String |
-| `requisitionstatus` | The current status of the requisition | Choice, with the following value options: <ul><li>200000000: Draft <li>200000001: In review <li>200000002: Rejected <li>200000003: Approved <li>200000004: Cancelled <li>200000005: Closed <li>200000006: Budget reserved </ul> |
-| `lines/requisitionlinenumber` | The requisition line number | Integer |
-| `lines/itemnumber` | The item number for the line | String |
-| `lines/linedescription` | The description of the line | String |
-| `lines/productname` | The line product name | String |
-| `lines/procurementproductcategoryname` | The procurement category for the product | String |
-| `lines/requestedpurchasequantity` | The requested purchase quantity | Decimal |
-| `lines/purchaseprice` | The purchase price per unit | Decimal |
-| `lines/lineamount` | The total amount for the line | Decimal |
-| `lines/currencycode` | The currency code for the line currency values | String |
-| `lines/requesteddate` | The requested date for the line item | Datetime |
+| `requisitionnumber` | The requisition number | `string` |
+| `requisitionname` | The requisition name | `string` |
+| `requisitionstatus` | The current status of the requisition | Enum, with the following value options: <ul><li>`200000000`: Draft <li>`200000001`: In review <li>`200000002`: Rejected <li>`200000003`: Approved <li>`200000004`: Cancelled <li>`200000005`: Closed <li>`200000006`: Budget reserved </ul> |
+| `lines/requisitionlinenumber` | The requisition line number | `integer` |
+| `lines/itemnumber` | The item number for the line | `string` |
+| `lines/linedescription` | The description of the line | `string` |
+| `lines/productname` | The line product name | `string` |
+| `lines/procurementproductcategoryname` | The procurement category for the product | `string` |
+| `lines/requestedpurchasequantity` | The requested purchase quantity | `decimal` |
+| `lines/purchaseprice` | The purchase price per unit | `decimal` |
+| `lines/lineamount` | The total amount for the line | `decimal` |
+| `lines/currencycode` | The currency code for the line currency values | `string` |
+| `lines/requesteddate` | The requested date for the line item | `datetime` |
 
 **Example output**
 ```json
@@ -199,7 +199,7 @@ For each purchase requisition there may be zero to many requisition lines return
 
 | Output | Description | Data type |
 | ------ | ----------- | --------- |
-| `result` | The result of the operation to release the lines | String |
+| `result` | The result of the operation to release the lines | `string` |
 
 **Example output**
 ```json
@@ -227,8 +227,9 @@ For each purchase requisition there may be zero to many requisition lines return
 ```json
 [
   {
-    "organization:: 'usmf',
-    "itemNumber": '1000'
+    "itemNumber": "1000",
+    "siteId": "1",
+    "warehouseId": "11"
   }
 ]
 ```
@@ -237,10 +238,10 @@ For each purchase requisition there may be zero to many requisition lines return
 
 | Output | Description | Data type |
 | ------ | ----------- | --------- |
-| `ItemNumber` | The item number | String | 
-| `SiteID` | Site ID | String | 
-| `WarehouseID` | Warehouse ID | String |
-| `AvailablePhysical` | The available physical inventory for the item, site, and warehouse | Decimal |
+| `ItemNumber` | The item number | `string` | 
+| `SiteID` | Site ID | `string` | 
+| `WarehouseID` | Warehouse ID | `string` |
+| `AvailablePhysical` | The available physical inventory for the item, site, and warehouse | `decimal` |
 
 **Example output**
 ```json
@@ -278,10 +279,10 @@ For each purchase requisition there may be zero to many requisition lines return
 ```json
 [
   {
-    "itemNumber": '1000',
+    "itemNumber": "1000",
     "quantity": 1,
-    "fromWarehouseId": '11',
-    "toWarehouseId": '12'  
+    "fromWarehouseId": "11",
+    "toWarehouseId": "12"  
   }
 ]
 ```
@@ -290,7 +291,7 @@ For each purchase requisition there may be zero to many requisition lines return
 
 | Output | Description | Data type |
 | ------ | ----------- | --------- |
-| `result` | A message indicating the result of the transfer operation | String | 
+| `result` | A message indicating the result of the transfer operation | `string` | 
 
 **Example output**
 ```json
@@ -319,7 +320,7 @@ For each purchase requisition there may be zero to many requisition lines return
 ```json
 [
   {
-    "itemNumber": '1000',
+    "itemNumber": "1000",
     "expectedPurcahseQuantity": 1
   }
 ]
@@ -329,13 +330,13 @@ For each purchase requisition there may be zero to many requisition lines return
 
 | Output | Description | Data type |
 | ------ | ----------- | --------- |
-| `price` | The price for the trade agreement with the vendor. | Decimal | 
-| `currency` | The currency code of the price. | String | 
-| `siteID` | The site for the purchase agreement | String | 
-| `warehouseID` | The warehouse ID for the purchase agreement | String |
-| `vendoraccountnumber` | Vendor account number | String |
-| `itemnumber` | Item number | String |
-| `unit` | Unit of measure | String |
+| `price` | The price for the trade agreement with the vendor. | `decimal` | 
+| `currency` | The currency code of the price. | `string` | 
+| `siteID` | The site for the purchase agreement | `string` | 
+| `warehouseID` | The warehouse ID for the purchase agreement | `string` |
+| `vendoraccountnumber` | Vendor account number | `string` |
+| `itemnumber` | Item number | `string` |
+| `unit` | Unit of measure | `string` |
 
 **Example output**
 ```json
@@ -385,9 +386,9 @@ For each purchase requisition there may be zero to many requisition lines return
 
 | Output | Description | Data type |
 | ------ | ----------- | --------- |
-| `itemnumber` | Item number | String |
-| `displayproductnumber` | Display product number | String |
-| `product_name` | Array of product names for the release products | String |
+| `itemnumber` | Item number | `string` |
+| `displayproductnumber` | Display product number | `string` |
+| `product_name` | Array of product names for the release products | `string` |
 
 **Example output**
 ```json
@@ -439,12 +440,12 @@ The purchase invoice can include zero to many invoice lines in the output respon
 
 | Output | Description | Data type |
 | ------ | ----------- | --------- |
-| `VendName` | Vendor name | String |
-| `EmployeeResponsible` | The responsible employee for the vendor | String |
-| `PurchId` | The ID of the purchase invoice | String | 
-| `ItemList/Item` | The item number of the item in the list | String |
-| `ItemList/Received` | The received quantity of the item on the invoice line | Decimal |
-| `ItemList/Pending` | The pending quantity of the item on the invoice line | Decimal |
+| `VendName` | Vendor name | `string` |
+| `EmployeeResponsible` | The responsible employee for the vendor | `string` |
+| `PurchId` | The ID of the purchase invoice | `string` | 
+| `ItemList/Item` | The item number of the item in the list | `string` |
+| `ItemList/Received` | The received quantity of the item on the invoice line | `decimal` |
+| `ItemList/Pending` | The pending quantity of the item on the invoice line | `decimal` |
 
 ### **Find Invoice Match Status**
 - **Name:** `findinvoicematchstatus`
@@ -461,9 +462,9 @@ The purchase invoice can include zero to many invoice lines in the output respon
 
 | Output | Description | Data type |
 | ------ | ----------- | --------- |
-| `vendAccount` | Vendor account number | String |
-| `invoiceStatus` | Invoice status | VendInvoiceCopilotExceptionStatus enum |
-| `productReceiptToMatch` | Product receipt to match
+| `vendAccount` | Vendor account number | `string` |
+| `invoiceStatus` | Invoice status | `VendInvoiceCopilotExceptionStatus` enum |
+| `productReceiptToMatch` | Product receipt to match | `integer` |
 
 **Example output**
 
@@ -518,8 +519,8 @@ The purchase invoice can include zero to many invoice lines in the output respon
 
 | Output | Description | Data type |
 | ------ | ----------- | --------- |
-| `invoiceId` | The invoice ID of the unmatched invoice | String |
-| `vendorAccount` | The vendor account number | String |
+| `invoiceId` | The invoice ID of the unmatched invoice | `string` |
+| `vendorAccount` | The vendor account number | `string` |
 
 **Output example**
 
@@ -547,6 +548,6 @@ The purchase invoice can include zero to many invoice lines in the output respon
 | Output | Description | Data type |
 | ------ | ----------- | --------- |
 | `status` | Status of the workflow submission | Enum <br><ul><li>Success <li>Failure </ul> |
-| `message` | Failure details in case of Failure status | String |
+| `message` | Failure details in case of Failure status | `string` |
 
 
