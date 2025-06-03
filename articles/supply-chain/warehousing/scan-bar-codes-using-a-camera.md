@@ -1,8 +1,8 @@
 ---
 title: Scan bar codes using a camera in the Warehouse Management mobile app
 description: Learn how to set up the Warehouse Management mobile app to scan bar codes using a camera on a mobile device, including an outline on supported bar code formats. 
-author: pefreita
-ms.author: pefreita
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 02/06/2025
 ms.reviewer: kamaybac
@@ -31,13 +31,13 @@ The camera page will be initiated on each page where the input field has its **P
 
 On the camera page, when you select the camera button, it will appear dimmed while trying to identify a bar code. If a bar code is not identified within 5 seconds, the process will time out and the camera button will become available again. You will then be able to try to scan a bar code again.
 
-When you aim the camera at a bar code, there will be a ✅ signing that you can scan that value. If you click on the button, the value is used. In the situation, were more than one barcode is scanned, a popup is displayed allowing you to specify the right barcode. That is an improvement that we did from version 4+.
+When you aim the camera at a bar code, a green checkmark button indicates that you can scan it. Select the button to scan the code. If more than one barcode is scanned, the app asks you to identify the right barcode.
 
-## Supported Barcode Formats
+## Supported barcode formats
 
-The following table shows which barcode formats are supported on each platform:
+The following table shows which barcode formats are supported on each platform.
 
-| Barcode Format | Android | iOS | Windows | Common Use Cases |
+| Barcode format | Android | iOS | Windows | Common use cases |
 |----------------|---------|-----|---------|------------------|
 | **Aztec** | ✅ | ✅ | ✅ | Transportation tickets, identification documents |
 | **Codabar** | ✅ | ✅ | ✅ | Libraries, blood banks, shipping labels |
@@ -60,9 +60,9 @@ The following table shows which barcode formats are supported on each platform:
 | **UPC-A** | ✅ | ✅ | ✅ | Retail products, grocery items |
 | **UPC-E** | ✅ | ✅ | ✅ | Small retail products, compressed UPC |
 
-## Platform-Specific Information
+## Platform-specific information
 
-### Universal Support (All Platforms)
+### Universal support (all platforms)
 
 The following formats are supported across Android, iOS, and Windows platforms:
 
@@ -70,7 +70,7 @@ The following formats are supported across Android, iOS, and Windows platforms:
 - Data Matrix, EAN-8, EAN-13, ITF (ITF-14)
 - PDF417, QR Code, UPC-A, UPC-E
 
-### Windows-Only Support
+### Windows-only support
 
 These advanced formats are currently exclusive to the Windows version:
 
@@ -78,11 +78,13 @@ These advanced formats are currently exclusive to the Windows version:
 - DX Film Edge, MaxiCode
 - Micro QR Code, rMQR Code
 
-## Usage Tips
+## Usage tips
 
-1. **Optimal Scanning Conditions:** Ensure adequate lighting and hold the device steady for best scanning results
-2. **Format Selection:** The app automatically detects supported formats - no manual selection required
-3. **Compatibility Check:** Verify your specific barcode format is supported on your platform before deployment
-4. **Performance:** QR codes and standard retail formats (UPC, EAN) typically offer the fastest scanning performance
+Here are a few tips for effective barcode scanning in the Warehouse Management mobile app.
+
+- **Optimal scanning conditions** – Ensure adequate lighting and hold the device steady for best scanning results.
+- **Format selection** – The app automatically detects supported formats. No manual selection is required.
+- **Compatibility check** – Verify that your specific barcode format is supported on your platform before deployment.
+- **Performance** – QR codes and standard retail formats (UPC, EAN) typically offer the fastest scanning performance.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
