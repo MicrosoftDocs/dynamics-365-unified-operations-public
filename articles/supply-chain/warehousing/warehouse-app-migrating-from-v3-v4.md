@@ -1,5 +1,5 @@
 ---
-title: Warehouse Management Application V3 to V4 Migration Guide
+title: Migrate the Warehouse Management mobile app from V3 to V4
 description: Learn how to migrate from Warehouse Mobile Application V3 to V4, including compatibility, requirements, and timeline.
 author: pefreita
 ms.author: pefreita
@@ -9,122 +9,110 @@ ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:  MigrateWMA, WMAV4, NewWMA, UpdateWMA
 ---
-# Warehouse Management Application V3 to V4 Migration Guide
 
-The Warehouse Management Application was rewritten using modern technology. It provides better customer support, faster problem solving, and easier development of new features.
+# Migrate the Warehouse Management mobile app from V3 to V4
 
-## What's New in V4
+For V4, we rewrote the Warehouse Management mobile app using more modern technology. The app now provides the following benefits:
 
-### Complete Application Rewrite
+- **Enhanced performance** – Improved application responsiveness and stability
+- **Better customer support capabilities** – Faster issue resolution and customer assistance
+- **Future-ready architecture** – Streamlined development of new features and integrations
 
-The entire application is rebuilt from the ground up using modern technologies, providing:
+## New features added in V4
 
-- **Enhanced Performance**: Improved application responsiveness and stability
-- **Better Support Capabilities**: Faster issue resolution and customer assistance
-- **Future-Ready Architecture**: Streamlined development of new features and integrations
+The following subsections summarize the key new features and improvements introduced in V4 of the Warehouse Management mobile app.
 
----
+### Camera improvements
 
-## New Features
+V4 provides improved camera scanning capabilities, including:
 
-### Camera Improvements
+- **Faster scanning** – Dramatically improved scan speed and accuracy
+- **Expanded barcode support** – The app now supports a wider range of barcode formats. Learn more in [Scan bar codes using a camera in the Warehouse Management mobile app](scan-bar-codes-using-a-camera.md)..
+- **Multiple barcode support** – Simultaneous scanning of multiple barcodes in a single operation
+- **Hardware Independence** – Reduces dependency on physical barcode scanners in environments where camera scanning is viable
 
-Camera scanning capabilities are improved, delivering next-level barcode scanning performance.
+### Customizable themes
 
-**Supported Barcode Formats:**
-The application now supports a comprehensive range of barcode formats. You can find more information in [Warehouse Management Application supported barcodes](warehouse-app-bar-code-support.md).
+V4 provides an enhanced user experience through comprehensive theming options, including:
 
-**Key Improvements:**
+- **11 unique themes** – Complete set of professionally designed themes.
+- **Dual-mode support** – Each theme is available in both dark and light modes.
+- **Unified settings** – Theme preferences are managed through the **Settings** interface.
 
-- **Faster Scanning**: Dramatically improved scan speed and accuracy
-- **Multiple Barcode Support**: Simultaneous scanning of multiple Barcodes in a single operation
-- **Hardware Independence**: Reduces dependency on physical barcode scanners in environments where camera scanning is viable
+### Enhanced audio experience
 
-### Customizable Themes
+V4 offers expanded audio customization for improved user interaction:
 
-Enhanced user experience through comprehensive theming options:
+- **Over 15 sound combinations** – Includes an extensive library of notification and interaction sounds.
+- **Personalization** – Workers can customize their device audio experience.
+- **Centralized configuration** – Sound settings are integrated with theme preferences.
 
-- **11 Unique Themes**: Complete set of professionally designed themes
-- **Dual Mode Support**: Each theme available in both dark and light modes
-- **Unified Settings**: Theme preferences managed through Settings interface
+### Advanced diagnostics
 
-### Enhanced Audio Experience
+V4 supports comprehensive diagnostic capabilities for improved troubleshooting and maintenance, including:
 
-Expanded audio customization for improved user interaction:
+- **WiFi diagnostics**
+    - **Self-diagnostic capabilities** – Each device can independently assess its network connectivity.
+    - **Service ping tests** – Automated connectivity verification to critical services.
+    - **Proactive monitoring** – Early detection of network-related issues.
 
-- **15+ Sound Combinations**: Extensive library of notification and interaction sounds
-- **Personalization**: Users can customize their device audio experience
-- **Centralized Configuration**: Sound settings integrated with theme preferences
+- **Local logging system**
+    - **Human-readable logs** – Improved log format for easier troubleshooting.
+    - **Filtering capabilities** – Advanced log filtering for targeted analysis.
+    - **Export functionality** – Easy log export for support and analysis purposes.
 
-### Advanced Diagnostics
+- **Accessible scan testing**
+    - **Simplified access** – Scan test functionality is available without developer menu navigation.
+    - **User-friendly interface** – Streamlined testing process for end users.
 
-Comprehensive diagnostic capabilities for improved troubleshooting and maintenance.
+## Migration information
 
-#### WiFi Diagnostics
+### Compatibility between V3 and V4
 
-- **Self-Diagnostic Capabilities**: Each device can independently assess its network connectivity
-- **Service Ping Tests**: Automated connectivity verification to critical services
-- **Proactive Monitoring**: Early detection of network-related issues
+When you migrate from V3 to V4, the following compatibility features are available:
 
-#### Local Logging System
+- **Customization preservation** – All customizations and configurations from V3 are fully compatible and functional in V4.
+- **Connection migration** – In most cases, existing connections are automatically migrated. If manual reconfiguration is required, QR code generation and scanning capabilities (camera or beam scanner) are available for easy setup. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
 
-- **Human-Readable Logs**: Improved log format for easier troubleshooting
-- **Filtering Capabilities**: Advanced log filtering for targeted analysis
-- **Export Functionality**: Easy log export for support and analysis purposes
+### Authentication
 
-#### Accessible Scan Testing
+- **One-time reauthentication** – Admins must complete a single authentication process for each device that they migrate to V4. Once successfully migrated, devices remain authenticated without requiring further reauthentication.
+- **Windows platform configuration** – For Windows applications, you must add a new redirect URL to your Azure application registration, as described in the following procedure.
 
-- **Simplified Access**: Scan test functionality available without developer menu navigation
-- **User-Friendly Interface**: Streamlined testing process for end users
+Follow these steps to add the redirect URL for Windows applications:
 
----
+1. Open the [Azure Portal](https://portal.azure.com).
+1. Go to **App Registrations**.
+1. Select your Entra Client ID registration.
+1. Go to **Manage** \> **Authentication**.
+1. Select **Add Platform** \> **Mobile and desktop applications**.
+1. Enter `ms-appx-web://microsoft.aad.brokerplugin/{clientId}` (where *{clientId}* is your Entra Client ID).
 
-## Migration Information
+### System requirements
 
-### Compatibility
+The system requirements for V4 are the [same as for V3](install-configure-warehouse-management-app.md), except for Android devices. V4 requires Android 7 or higher, while V3 which supports Android 5 and above. Devices running older Android versions can continue using V3 until the May 2026 end-of-support date.
 
-**Customization Preservation**: All customizations and configurations from V3 are fully compatible and functional in V4.
+### iOS limitations
 
-**Connection Migration**: In most cases, existing connections are automatically migrated. If manual reconfiguration is required, QR code generation and scanning capabilities (camera or beam scanner) are available for easy setup. You can more easily distribute connections among all your users by connecting with [Using QR Code to quick connect Warehouse Management Application](warehouse-app-qr-code.md)
+Device code authentication is not available on iOS platforms. Username and password authentication is the only supported method for iOS devices.
 
-### Authentication Requirements
+### Certificate authentication isn't supported in V4
 
-**One-Time Re-authentication**: Users must complete a single authentication process for each device during migration to V4. Once successfully migrated, devices remain authenticated without requiring additional re-authentication.
+As with V3, certificate authentication is not supported in V4. Users must use device code or username/password authentication methods.
 
-**Windows Platform Configuration**: For Windows applications, you must add a new redirect URI to your Azure application registration:
+### Transition period support
 
-1. Navigate to [Azure Portal](https://portal.azure.com) > **App Registrations**
-2. Select your Entra Client ID registration
-3. Go to **Manage** > **Authentication**
-4. Click **Add Platform** > **Mobile and desktop applications**
-5. Then write: `ms-appx-web://microsoft.aad.brokerplugin/{clientId}`
+- **Concurrent Operation** – V3 and V4 can operate simultaneously in the same warehouse environment during the transition period without conflicts.
 
-### System Requirements
+- **V4 Release Timeline**
+    - **Public Preview** – Beginning of June 2025
+    - **General Availability** – Planned for August 2025 (subject to public preview results)
 
-**Android Version Requirements**: V4 requires Android 7 or higher, compared to V3 which supports Android 5 and above. Devices running older Android versions can continue using V3 until the May 2026 end-of-support date.
+- **Distribution Channels**
+    - **Windows**: App Center
+    - **Android**: App Center and Open Test Programs
 
-### Platform-Specific Considerations
-
-**iOS Limitation**: Device code authentication is not available on iOS platforms. Username and password authentication is the only supported method for iOS devices.
-
-### Does V4 support certificate authentication?
-
-No, certificate authentication is not supported in V4, consistent with V3 where this feature is also discontinued.
-
-### Transition Period Support
-
-**Concurrent Operation**: V3 and V4 can operate simultaneously in the same warehouse environment during the transition period without conflicts.
-
-**V4 Release Timeline**:
-
-- **Public Preview**: Beginning of January 2026
-- **General Availability**: Planned for August 2026 (subject to public preview results)
-- **Distribution Channels**: 
-  - Windows: App Center
-  - Android: App Center and Open Test Programs
-
-**V3 Support Timeline**: 
-
-- **End of Support**: May 2026
-- **Feature Development**: No new features are developed for V3
-- **Maintenance**: Critical bug fixes and security updates continue until end of support
+- **V3 Support Timeline**
+    - **End of Support** – May 2026
+    - **Feature Development** – No new features are developed for V3
+    - **Maintenance** – Critical bug fixes and security updates continue until end of support

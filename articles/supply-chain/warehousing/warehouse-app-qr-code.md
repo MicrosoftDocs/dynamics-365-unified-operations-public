@@ -1,6 +1,6 @@
 ---
-title: Using QRCode to quick connect Warehouse Management Application
-description: Learn how to generate QR codes for quick Warehouse Management Application configuration
+title: Use a QR code to connect the mobile app to Supply Chain Management
+description: Learn how to generate and scan QR codes to quickly configure the Warehouse Management mobile app
 author: pefreita
 ms.author: pefreita
 ms.topic: how-to
@@ -10,19 +10,15 @@ ms.reviewer: kamaybac
 ms.search.form: WHSMobileDeviceMenuItem, WHSWorkUserDisplaySettings, WHSMobileAppInstallation, WHSMobileDeviceUser, WHSMobileDeviceConfiguration, WHSRFMenuItemTable, WHSParameters, WHSMobileDeviceMenuItemConfiguration, WHSMobileDeviceConnectionSettings, WHSUserSettings, SysAADClientTable, WHSMobileDeviceQRCode, WHSConnectionConfiguration
 ---
 
-# Using QR Code to quick connect Warehouse Management Application
+# Use a QR code to connect the mobile app to Supply Chain Management
 
-The Warehouse Management mobile app supports QR code configuration to simplify the connection setup process. Instead of manually entering connection details, users can scan a QR code that contains all necessary configuration information.
+The Warehouse Management mobile app supports QR code configuration to simplify the connection setup process. Instead of manually entering connection details, you can scan a QR code that contains all necessary configuration information.
 
 ## Overview
 
-QR codes can contain connection configuration data in JSON format, allowing for quick deployment and setup of the Warehouse Management Application across multiple devices. This method is useful for IT administrators who need to configure multiple devices or when sharing configurations with warehouse workers.
+QR codes can contain connection configuration data in JSON format, allowing for quick deployment and setup of the Warehouse Management app across multiple devices. This method is useful for IT administrators who need to configure multiple devices or when sharing configurations with warehouse workers.
 
-## Generating a QR Code
-
-To generate a QR code for your Warehouse Management Application configuration:
-
-### Step 1: Prepare your configuration JSON
+## Step 1: Prepare your configuration JSON
 
 Create a JSON configuration with your connection details. The JSON should follow this structure:
 
@@ -42,29 +38,31 @@ Create a JSON configuration with your connection details. The JSON should follow
 }
 ```
 
-### Step 2: Generate the QR Code
+## Step 2: Generate a QR code
 
-You can use various online QR code generators or programmatic solutions:
+You can use various online QR code generators or programmatic solutions. Choose the method that best suits your needs.
 
-#### Online QR Code Generators
+### Generate a QR code using an online QR code generator
 
-- Visit any reputable QR code generator website
-- Select "Text" or "JSON" format
-- Paste your complete JSON configuration
-- Generate and download the QR code image
+To generate a QR code from your JSON configuration, follow these steps:
 
-#### Microsoft Edge Built-in QR Code Generator
+1. Visit any reputable QR code generator website.
+1. Select *Text* or *JSON* format.
+1. Paste the complete JSON configuration that you prepared previously.
+1. Generate and download the QR code image.
 
-Microsoft Edge includes a built-in QR code generator that you can use:
+### Generate a QR code using Microsoft Edge
 
-1. Open Microsoft Edge browser
-2. Navigate to any webpage or create a new tab
-3. Right-click on the page and select "Create QR code for this page" or use the address bar QR code icon
+Microsoft Edge includes a built-in QR code generator. Follow these steps to use it:
+
+1. Open the Microsoft Edge browser.
+2. Navigate to any webpage or create a new tab.
+3. Right-click on the page and select "Create QR code for this page" or use the address bar QR code icon.
 4. For custom JSON data:
-   - Create a temporary text file with your JSON configuration
-   - Open the file in Edge (drag and drop or File > Open)
-   - Generate the QR code using Edge's built-in feature
-   - Save or share the generated QR code
+   - Create a temporary text file with your JSON configuration.
+   - Open the file in Edge (drag and drop or File > Open).
+   - Generate the QR code using Edge's built-in feature.
+   - Save or share the generated QR code.
 
 #### Programmatic Generation (PowerShell example)
 

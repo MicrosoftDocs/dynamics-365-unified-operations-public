@@ -65,15 +65,18 @@ The following procedure shows one way to register an application in Microsoft En
 1. On the **Authentication** page for the new app, set the **Enable the following mobile and desktop flows** option to *Yes* to enable the device code flow for your application. Then select **Save**.
 1. Select **Add a platform**.
 1. In the **Configure platform** dialog box, select **Mobile and desktop applications**.
-1. In the **Configure Desktop \+ devices** dialog box, set the **Custom redirect URIs** field to the following value:
+1. In the **Configure Desktop \+ devices** dialog box, set the **Custom redirect URIs** field to one of the following values.
+    - If you're using version 3.0 or earlier of the Warehouse Management mobile app, set the field to the following value:
 
-    ``` text
-    ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333
+        ``` text
+        ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333
+        ```
 
-    For version 4.+ or more.
-    ms-appx-web://microsoft.aad.brokerplugin/{clientId}
-    ```
-    
+    - If you're using version 4.0 or later of the Warehouse Management mobile app, set the field to the following value (where *{clientId}* is your Entra Client ID):
+
+        ``` text
+        ms-appx-web://microsoft.aad.brokerplugin/{clientId}
+        ```
 
 1. Select **Configure** to save your settings and close the dialog boxes.
 1. You return to the **Authentication** page, which now shows your new platform configuration. Select **Add a platform** again.

@@ -60,24 +60,6 @@ The following table shows which barcode formats are supported on each platform.
 | **UPC-A** | ✅ | ✅ | ✅ | Retail products, grocery items |
 | **UPC-E** | ✅ | ✅ | ✅ | Small retail products, compressed UPC |
 
-## Platform-specific information
-
-### Universal support (all platforms)
-
-The following formats are supported across Android, iOS, and Windows platforms:
-
-- Aztec, Codabar, Code 39, Code 93, Code 128
-- Data Matrix, EAN-8, EAN-13, ITF (ITF-14)
-- PDF417, QR Code, UPC-A, UPC-E
-
-### Windows-only support
-
-These advanced formats are currently exclusive to the Windows version:
-
-- DataBar family (RSS-14, Limited, Expanded)
-- DX Film Edge, MaxiCode
-- Micro QR Code, rMQR Code
-
 ## Usage tips
 
 Here are a few tips for effective barcode scanning in the Warehouse Management mobile app.
