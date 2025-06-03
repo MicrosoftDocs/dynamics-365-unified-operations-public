@@ -41,7 +41,7 @@ Additional setup steps for specific features are covered in the article for each
 
 
 >[!NOTE]
-> The **Commitment** functionality doesn't support transactions related to Projects. For more information, see [General budget reservations](../public-sector/general-budget-reservation-tasks.md).
+> The **Commitment** functionality doesn't support transactions related to Projects. For more information, see [General budget reservations](/public-sector/general-budget-reservation-tasks).
 
 
 
