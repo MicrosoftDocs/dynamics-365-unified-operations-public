@@ -428,7 +428,7 @@
               href: define-maintain-channel-clients-registers-hw-stations.md
             - name: Health check for POS peripherals and services
               href: pos-healthcheck.md
-            - name: Health check view for offline readiness (preview)
+            - name: Health check view for offline readiness
               href: health-check-view-offline.md
             - name: Support for network peripherals
               href: dev-itpro/network-peripherals.md
@@ -456,7 +456,7 @@
               href: tasks/create-pos-visual-profile-2016-02.md
           - name: Payments
             items:
-            - name: Check out faster with optimized payment flows (preview)
+            - name: Check out faster with optimized payment flows
               href: dev-itpro/faster-checkout-pos.md
             - name: Gift cards
               items:
@@ -496,7 +496,7 @@
               href: pos-operations.md
             - name: Commerce database index compression
               href: dev-itpro/index-compression.md
-            - name: Offline reliability toast notifications in Store Commerce (preview)
+            - name: Offline reliability toast notifications in Store Commerce
               href: dev-itpro/retail-sdk/offline-reliability-toast-notifications.md
           - name: Authentication
             items:
@@ -518,7 +518,7 @@
               href: charge-send.md
             - name: Enable consistent delivery mode handling in e-commerce channels
               href: consistent-delivery-mode-handling.md
-        - name: Modern workflows in POS (preview)
+        - name: Modern workflows in POS
           href: POS-UX-modernization.md
         - name: Receipts
           items:
@@ -1088,7 +1088,7 @@
           href: tasks/define-loyalty-cards.md
         - name: Process adjustments of loyalty reward points
           href: tasks/process-loyalty-reward-point-adjustments.md
-        - name: Loyalty upsell prompt in POS (preview)
+        - name: Loyalty upsell prompt in POS
           href: loyalty-upsell-prompt.md
     - name: Manage your financials
       items:
@@ -2840,7 +2840,7 @@
           items:
           - name: View POS extension package information
             href: dev-itpro/view-pos-extension-package-details.md
-          - name: POS APIs (preview)
+          - name: POS APIs
             href: dev-itpro/pos-apis.md
           - name: Use POS controls in extensions
             href: dev-itpro/pos-extension/controls-pos-extension.md
@@ -2902,7 +2902,7 @@
             href: dev-itpro/pos-extension/cpos-extension-package.md
           - name: Create a Store Commerce extension installer package
             href: dev-itpro/store-comm-extension-installer.md
-          - name: Store Commerce Hardware station extensibility for Android and iOS devices (preview)
+          - name: Store Commerce Hardware station extensibility for Android and iOS devices
             href: dev-itpro/store-comm-android-ios-ext.md            
       - name: E-commerce
         items:
