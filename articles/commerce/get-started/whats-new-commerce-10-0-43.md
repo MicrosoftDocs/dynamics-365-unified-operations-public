@@ -36,7 +36,7 @@ The following table lists the features that are included in this release. We mig
 | Point of sale | Index compression improvements for offline databases | This feature helps organizations further reduce the size of their offline databases on POS devices by extending the index compression capabilities to smaller indexes. | Admins |
 | Point of sale | New network connection health chart  | This feature introduces three new network health charts for connection history, connection types, and Wi-Fi signal strength over a 24 hour period. | Admins |
 | Point of sale | Proactive toast notifications for offline reliability | This feature supports the toast notification framework in Store Commerce and notifies store employees when there's an offline authentication failure, weak or missing Wi-Fi, or a seamless offline switch. | Admins |
-| Distributed Order Management | DOM with Azure Maps | This feature introduces support for Azure Maps with DOM. Learn more in [Set up DOM](../dom-set-up.md) | Admins |
+| Distributed Order Management (DOM) | DOM with Azure Maps | This feature introduces support for Azure Maps with DOM. Learn more in [Set up DOM](../dom-set-up.md) | Admins |
 
 ## Resources
 
