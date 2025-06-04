@@ -29,7 +29,7 @@ Copilot classifies each vendor email that it reads into one of the following cat
 - *Purchase order confirmation* – Copilot detected that the intent of the message is to confirm one or more purchase orders (all the purchase orders that are mentioned in the email).
 - *Purchase order change request* – Copilot detected that the message contains at least one requested change to a purchase order. For example, the vendor wrote to tell you that they can't deliver the full quantity that was requested for one or more lines, to tell you that they can't deliver on time, or to reject the entire order.
 - *Rejected* – Copilot detected that the vendor can't supply the requested purchase order.
-- *Other* – Copilot could not identify any of the previous intents.
+- *Other* – Copilot couldn't identify any of the previous intents.
 
 For the first two categories, Copilot identifies which purchase orders the email is related to and matches the information in the email to information in the system.
 
@@ -40,10 +40,10 @@ When you review incoming changes that are based on an email, the system shows th
 
 ## Configure the agent to track your email
 
-> [!IMPORTANT]
-> Before you begin, complete the steps in [Set up and configure the Supplier Communications Agent](./supplier-com-agent-setup.md).
-
 The Supplier Communications Agent must be configured to monitor a specific email address for incoming messages from vendors. Follow these steps to complete the configuration.
+
+> [!IMPORTANT]
+> Before you begin, complete the steps in [Set up and configure the Supplier Communications Agent](./supplier-com-agent-setup.md). If you want to forward email communications for testing, then you must set up your own email address as a vendor to be able to forward emails to the system.
 
 1. Sign in to the Microsoft Dynamics 365 Supply Chain Management environment as a user who has [permissions to manage the agent configuration](./supplier-com-agent-setup.md#permissions-for-users-who-manage-the-agent-configuration).
 1. Go to **Agents** \> **Agents (Preview)**.
@@ -57,10 +57,21 @@ The Supplier Communications Agent must be configured to monitor a specific email
 
 ## Review and accept changes suggested by the agent
 
+The agent detects changes in the following fields:
+
+- Quantity
+- Unit of measure
+- Price
+- Confirmation
+- Delivery date
+- Cancellation
+
+To review and accept changes that the agent suggests based on the emails that it has read, follow these steps.
+
 > [!IMPORTANT]
 > Before you begin, confirm that the signed-in user has access to the mailboxes. Learn more in [Synchronize mailboxes with Dataverse](./supplier-com-agent-setup.md#synchronize-mailboxes-with-dataverse).
 
-1. Open the **Purchase order receipt and follow-up** workspace. 
+1. Open the **Purchase order receipt and follow-up** workspace.
 1. A **(Preview) Purchase order updates** tile indicates the number of emails that require review. Select the tile.
 
     The left side of the **(Preview) Purchase order updates** page lists all the emails that the agent read. The right side shows summaries that Copilot generated.
