@@ -1,5 +1,5 @@
 ---
-title: Store Commerce Hardware station extensibility for Android and iOS devices (preview)
+title: Store Commerce Hardware station extensibility for Android and iOS devices
 description: This article describes how to build out the Microsoft Dynamics 365 Commerce Store Commerce mobile apps for Android and iOS with Hardware station extensibility.
 author: anush6121
 ms.author: anvenkat
@@ -12,10 +12,9 @@ ms.custom:
   - bap-template
 ---
 
-# Store Commerce Hardware station extensibility for Android and iOS devices (preview)
+# Store Commerce Hardware station extensibility for Android and iOS devices
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 This article describes how to build out the Microsoft Dynamics 365 Commerce Store Commerce mobile apps for Android and iOS with Hardware station extensibility.
 
