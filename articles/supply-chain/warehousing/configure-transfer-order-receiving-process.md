@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Configure the transfer order receiving process (preview)
+# Configure the transfer order receiving process
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.44 GA -->
 
 This article explains how to configure the receiving process for a warehouse. It includes information about the parameters that are available for warehouse receiving and how to configure them.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
