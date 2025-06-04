@@ -35,7 +35,7 @@ This procedure walks through the steps for setting up work environment accommoda
 1. Go to **Human resources \> Workers \> Employees**.
 2. In the list, select an employee.
 3. Select the employee's name to view details about the employee who is requesting the accommodation.
-4. Select the **Compliance** on the Action bar..
+4. On the ribbon, select **Compliance**.
 5. Select **Accommodations**.
 6. Select **New**.
 7. In the **Accommodation type** field, select the appropriate accommodation. For example, select **Keyboard**.
