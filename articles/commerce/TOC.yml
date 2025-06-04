@@ -146,7 +146,7 @@
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/commerce
         - name: Default dashboard
           href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/commerce
-        - name: Immersive Home (preview)
+        - name: Immersive Home (production ready preview)
           href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/commerce
         - name: Set the preferred initial page for each user
           href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/commerce

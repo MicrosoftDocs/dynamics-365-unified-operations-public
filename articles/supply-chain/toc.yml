@@ -122,7 +122,7 @@
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/supply-chain
         - name: Default dashboard
           href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/supply-chain
-        - name: Immersive Home (preview)
+        - name: Immersive Home (production ready preview)
           href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/supply-chain
         - name: Set the preferred initial page for each user
           href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/supply-chain
@@ -2411,6 +2411,8 @@
           href: procurement/supplier-com-agent-overview.md
         - name: Set up and configure the Supplier Communications Agent
           href: procurement/supplier-com-agent-setup.md
+        - name: Solve common problems when setting up the Supplier Communications Agent
+          href: procurement/supplier-com-agent-setup-faq.md
         - name: Follow up on purchase orders using the Supplier Communications Agent
           href: procurement/supplier-com-agent-follow-up.md
         - name: Review and apply purchase order changes received in vendor emails
@@ -4185,7 +4187,7 @@
       items:
       - name: Overview
         href: responsible-ai-overview.md
-      - name: Set up Agent management (preview)
+      - name: Set up Agent management (production ready preview)
         href: ../fin-ops-core/fin-ops/copilot/agent-mgmt.md  
       - name: Responsible AI FAQ for AI summaries with Copilot
         href: faq-summaries.md
