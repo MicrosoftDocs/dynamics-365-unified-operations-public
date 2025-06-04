@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 06/04/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.form: WHSMobileDeviceMenuItem, WHSWorkUserDisplaySettings, WHSMobileAppInstallation, WHSMobileDeviceUser, WHSMobileDeviceConfiguration, WHSRFMenuItemTable, WHSParameters, WHSMobileDeviceMenuItemConfiguration, WHSMobileDeviceConnectionSettings, WHSUserSettings, SysAADClientTable, WHSMobileDeviceQRCode, WHSConnectionConfiguration
+ms.search.form:
 ---
 
 # Use a QR code to connect the mobile app to Supply Chain Management
@@ -16,18 +16,20 @@ The Warehouse Management mobile app supports QR code configuration to simplify t
 
 ## Overview
 
-QR codes can contain connection configuration data in JSON format, allowing for quick deployment and setup of the Warehouse Management app across multiple devices. This method is useful for IT administrators who need to configure multiple devices or when sharing configurations with warehouse workers.
+QR codes can contain connection configuration data in JSON format, allowing for quick deployment and setup of the Warehouse Management app across multiple devices. This method is useful for IT administrators who need to configure multiple devices or when sharing configurations with warehouse workers. 
+
+Other methods for setting connection information include using a connection settings file or manually entering the details. You can learn more about these options in [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
 
 ## Supported connection types
 
-The QR-based connection configuration feature supports all connection types available in the Warehouse Management mobile app, including:
+The QR-based connection configuration feature supports all connection types supported by the Warehouse Management mobile app, including:
 
 - **DeviceCode** – Interactive authentication flow
 - **UsernamePassword** – Username/password authentication
 
-## Step 1: Prepare your configuration JSON
+## Step 1: Prepare your configuration JSON code
 
-Create a JSON configuration with your connection details, as described in[Create a connection settings file or QR code](install-configure-warehouse-management-app.md#connection-file-qr). The JSON should follow this structure:
+Create a JSON configuration with your connection details as described in [Create a connection settings file or QR code](install-configure-warehouse-management-app.md#connection-file-qr). The JSON code should follow this structure:
 
 ```json
 {
@@ -47,13 +49,13 @@ Create a JSON configuration with your connection details, as described in[Create
 
 ## Step 2: Generate a QR code
 
-You can use various online QR code generators or programmatic solutions. Choose the method that best suits your needs.
+There are many ways to generate a QR code. Choose the method that best suits your needs.
 
 ### Option 1: Generate a QR code using Copilot
 
 Follow these steps to ask Copilot to generate a QR code for your JSON configuration:
 
-1. Open a Copilot chat session, for example by selecting the **Copilot** button in Microsoft Edge or by launching Copilot from the Windows taskbar.
+1. Open a Copilot chat session, for example by selecting the **Copilot** button in Microsoft Edge or by launching Microsoft 365 Copilot from the Windows taskbar.
 1. Enter a prompt like the following, but include your specific JSON configuration:
 
    ```text
@@ -86,7 +88,7 @@ To generate a QR code using an online QR code generator, follow these steps:
 
 ### Option 3: Generate a QR code using PowerShell
 
-You can use PowerShell to generate a QR code from your JSON configuration using code similar to the following:
+You can use PowerShell to generate a QR code from your JSON configuration using code similar to the following example:
 
 ```powershell
 # Install QR code module if not already installed
@@ -117,13 +119,13 @@ New-QRCode -Data $jsonConfig -OutPath "warehouse-config.png"
 
 Once you've generated the required QR code, you can distribute it in any of the following ways:
 
-- Print the QR code for physical distribution or send it by email.
+- Print the QR code for physical distribution.
 - Share it digitally via email or collaboration platforms.
 - Display it on screens for easy scanning.
 - Include it in documentation or setup guides.
 
 > [!TIP]
-> Copilot can decode a QR code if you enter a prompt such as "Please decode this QR code," and upload the image. This can be useful for verifying the contents of the QR code before distributing it.
+> Copilot can decode a QR code if you enter a prompt such as "Please decode this QR code" and attach the image. This technique can be useful for verifying the contents of the QR code before distributing it.
 
 ## Step 4: Scan the QR code on each device
 

@@ -16,7 +16,7 @@ ms.search.form:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Starting in June 2025, we will [begin rolling out(#rollout)] Warehouse Management mobile app version 4 (V4). This new version introduces significant improvements and new features, enhancing the user experience and performance of the app. For V4, we rewrote the Warehouse Management mobile app using more modern technology, which adds the following benefits:
+Starting in June 2025, Microsoft will begin [rolling out](#rollout) Warehouse Management mobile app version 4 (V4). This new version introduces significant improvements and new features, enhancing the user experience and performance of the app. For V4, we rewrote the Warehouse Management mobile app using more modern technology, which adds the following benefits:
 
 - **Enhanced performance** – Improved application responsiveness and stability
 - **Better customer support capabilities** – Faster issue resolution and customer assistance
@@ -32,16 +32,16 @@ The following subsections summarize the key new features and improvements introd
 
 V4 provides improved camera scanning capabilities, including:
 
-- **Faster scanning** – Dramatically improved scan speed and accuracy
-- **Expanded barcode support** – The app now supports a wider range of barcode formats. Learn more in [Scan bar codes using a camera in the Warehouse Management mobile app](scan-bar-codes-using-a-camera.md)..
-- **Multiple barcode support** – Simultaneous scanning of multiple barcodes in a single operation
-- **Hardware Independence** – Reduces dependency on physical barcode scanners in environments where camera scanning is viable
+- **Faster scanning** – Dramatically improved scan speed and accuracy.
+- **Expanded barcode support** – The app now supports a wider range of barcode formats. Learn more in [Scan bar codes using a camera in the Warehouse Management mobile app](scan-bar-codes-using-a-camera.md).
+- **Multiple barcode support** – Scan multiple barcodes in a single operation.
+- **Hardware independence** – Reduces dependency on physical barcode scanners in environments where camera scanning is viable.
 
 ### Customizable themes
 
 V4 provides an enhanced user experience through comprehensive theming options, including:
 
-- **11 unique themes** – Complete set of professionally designed themes.
+- **11 unique themes** – A complete set of professionally designed themes.
 - **Dual-mode support** – Each theme is available in both dark and light modes.
 - **Unified settings** – Theme preferences are managed through the **Settings** interface.
 
@@ -87,24 +87,24 @@ When you migrate from V3 to V4, the following compatibility features are availab
 ### Authentication
 
 - **One-time reauthentication** – Admins must complete a single authentication process for each device that they migrate to V4. Once successfully migrated, devices remain authenticated without requiring further reauthentication.
-- **Windows platform configuration** – For Windows applications, you must add a new redirect URL to your Azure application registration, as described in the following procedure.
+- **Windows platform configuration** – For Windows applications, you must add a new redirect URI to your Azure application registration, as described in the following procedure.
 
-Follow these steps to add the redirect URL for Windows applications:
+Follow these steps to add the redirect URI for Windows applications:
 
-1. Open the [Azure Portal](https://portal.azure.com).
+1. Open the [Azure portal](https://portal.azure.com).
 1. Go to **App Registrations**.
-1. Select your Entra Client ID registration.
+1. Select your Microsoft Entra ID registration.
 1. Go to **Manage** \> **Authentication**.
-1. Select **Add Platform** \> **Mobile and desktop applications**.
-1. Enter `ms-appx-web://microsoft.aad.brokerplugin/{clientId}` (where *{clientId}* is your Entra Client ID).
+1. Select **Add a platform** and then select **Mobile and desktop applications**.
+1. In the **Custom redirect URIs** field, enter `ms-appx-web://microsoft.aad.brokerplugin/{clientId}` (where *{clientId}* is your Entra Client ID).
 
 ### iOS limitations
 
-Device code authentication is not available on iOS platforms. Username and password authentication is the only supported method for iOS devices.
+Device code authentication isn't available on iOS platforms. Username and password authentication is the only supported method for iOS devices.
 
 ### Certificate authentication isn't supported in V4
 
-As with V3, certificate authentication is not supported in V4. Users must use device code or username/password authentication methods.
+As with V3, certificate authentication isn't supported in V4. Users must use the device code or username/password authentication methods.
 
 ### <a name="rollout"></a>Rollout schedule and transition period support
 

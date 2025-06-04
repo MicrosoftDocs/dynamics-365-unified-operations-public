@@ -39,26 +39,26 @@ The following table shows which barcode formats are supported on each platform.
 
 | Barcode format | Android | iOS | Windows | Common use cases |
 |----------------|---------|-----|---------|------------------|
-| **Aztec** | ✅ | ✅ | ✅ | Transportation tickets, identification documents |
-| **Codabar** | ✅ | ✅ | ✅ | Libraries, blood banks, shipping labels |
-| **Code 39** | ✅ | ✅ | ✅ | Automotive, healthcare, government applications |
-| **Code 93** | ✅ | ✅ | ✅ | Logistics, inventory management |
-| **Code 128** | ✅ | ✅ | ✅ | Supply chain, shipping, product identification |
-| **DataBar (RSS-14)** | ❌ | ❌ | ✅ | Fresh foods, healthcare, small items |
-| **DataBar Limited** | ❌ | ❌ | ✅ | Small item identification, healthcare |
-| **DataBar Expanded** | ❌ | ❌ | ✅ | Coupons, loyalty cards, variable data |
-| **Data Matrix** | ✅ | ✅ | ✅ | Electronics, automotive parts, pharmaceuticals |
-| **DX Film Edge** | ❌ | ❌ | ✅ | Photography, film processing |
-| **EAN-8** | ✅ | ✅ | ✅ | Small retail products, magazines |
-| **EAN-13** | ✅ | ✅ | ✅ | Retail products, books, international trade |
-| **ITF (ITF-14)** | ✅ | ✅ | ✅ | Shipping cartons, distribution packaging |
-| **MaxiCode** | ❌ | ❌ | ✅ | UPS shipping, package tracking |
-| **PDF417** | ✅ | ✅ | ✅ | Driver's licenses, identification cards, forms |
-| **QR Code** | ✅ | ✅ | ✅ | Marketing, inventory, contact information |
-| **Micro QR Code** | ❌ | ❌ | ✅ | Small components, electronics, jewelry |
-| **rMQR Code** | ❌ | ❌ | ✅ | Rectangular applications, space-constrained items |
-| **UPC-A** | ✅ | ✅ | ✅ | Retail products, grocery items |
-| **UPC-E** | ✅ | ✅ | ✅ | Small retail products, compressed UPC |
+| **Aztec** | Yes | Yes | Yes | Transportation tickets, identification documents |
+| **Codabar** | Yes | Yes | Yes | Libraries, blood banks, shipping labels |
+| **Code 39** | Yes | Yes | Yes | Automotive, healthcare, government applications |
+| **Code 93** | Yes | Yes | Yes | Logistics, inventory management |
+| **Code 128** | Yes | Yes | Yes | Supply chain, shipping, product identification |
+| **DataBar (RSS-14)** | No | No | Yes | Fresh foods, healthcare, small items |
+| **DataBar Limited** | No | No | Yes | Small item identification, healthcare |
+| **DataBar Expanded** | No | No | Yes | Coupons, loyalty cards, variable data |
+| **Data Matrix** | Yes | Yes | Yes | Electronics, automotive parts, pharmaceuticals |
+| **DX Film Edge** | No | No | Yes | Photography, film processing |
+| **EAN-8** | Yes | Yes | Yes | Small retail products, magazines |
+| **EAN-13** | Yes | Yes | Yes | Retail products, books, international trade |
+| **ITF (ITF-14)** | Yes | Yes | Yes | Shipping cartons, distribution packaging |
+| **MaxiCode** | No | No | Yes | UPS shipping, package tracking |
+| **PDF417** | Yes | Yes | Yes | Driver's licenses, identification cards, forms |
+| **QR Code** | Yes | Yes | Yes | Marketing, inventory, contact information |
+| **Micro QR Code** | No | No | Yes | Small components, electronics, jewelry |
+| **rMQR Code** | No | No | Yes | Rectangular applications, space-constrained items |
+| **UPC-A** | Yes | Yes | Yes | Retail products, grocery items |
+| **UPC-E** | Yes | Yes | Yes | Small retail products, compressed UPC |
 
 ## Usage tips
 
