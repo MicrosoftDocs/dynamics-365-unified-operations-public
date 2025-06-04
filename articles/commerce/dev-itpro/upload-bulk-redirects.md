@@ -95,7 +95,7 @@ To update an uploaded redirect CSV file, follow these steps.
 
 To turn off the bulk redirects in an uploaded redirect CSV file, follow these steps.
 
-1. Create and save a new CSV file that has valid but nonexistent source and target URLs (for example, `https://www.com,https://www.com,301`).
+1. Create and save a new CSV file that has valid but nonexistent source and target URLs (for example, `https://www.com,https://www.com/abc,301`).
 1. In Commerce site builder, go to the site that will receive the bulk URL redirects.
 1. Go to **Site settings \> General**.
 1. Under **URL Redirect Mapping**, select **Replace**.
