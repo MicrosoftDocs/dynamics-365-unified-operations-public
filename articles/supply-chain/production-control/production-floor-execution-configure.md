@@ -59,28 +59,18 @@ Before you can use this feature, your system must meet the following requirement
 
 For more information about this feature, see [Register batch/serial numbers for finished products and their components (preview)](production-floor-execution-use.md#tracked-components).
 
-### Select color themes on production floor execution interface (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.44 GA -->
+### Select color themes on production floor execution interface
 
 When configuring the production floor execution interface, supervisors can select one of several default color themes, ranging from dark to light. Each worker can also select their own preferred theme, which overrides the default each time that worker signs in.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Before you can use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
 - The feature that's named *Select color themes on production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### List view for reporting job scrap from the production floor execution interface (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.44 GA -->
+### List view for reporting job scrap from the production floor execution interface
 
 Workers reporting job scrap from the production floor execution interface can choose to work from a list view that shows several jobs at once, or from a detail view that shows more information about one job at a time. Previously, only the detail view was available.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Before you can use this feature, your system must meet the following requirements:
 
