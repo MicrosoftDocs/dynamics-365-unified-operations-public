@@ -74,7 +74,7 @@ The following table lists features that were removed from Feature management in 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.44 includes platform updates. Learn more in [Platform updates for version 10.0.44 of Finance and Operations apps (June 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-44.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.44 includes platform updates. Learn more in [Platform updates for version 10.0.44 of Finance and Operations apps (June 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-44.md).
 
 ### Bug fixes
 
