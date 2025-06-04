@@ -4007,7 +4007,7 @@
           href: warehousing/location-directive-acceptance-tests.md
         - name: Configure product filters for warehouse transactions
           href: warehousing/filters-and-filter-codes.md
-        - name: Configure the transfer order receiving process (preview)
+        - name: Configure the transfer order receiving process
           href: warehousing/configure-transfer-order-receiving-process.md
         - name: Location stocking limits
           href: warehousing/location-stocking-limits.md
