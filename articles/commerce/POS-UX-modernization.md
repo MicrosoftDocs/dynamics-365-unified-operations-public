@@ -1,5 +1,5 @@
 ---
-title: Modern workflows in POS (preview)
+title: Modern workflows in POS
 description: Learn how modern workflows in POS improve the usability, extensibility, and accessibility of Microsoft Dynamics 365 Commerce Store Commerce.
 author: anush6121
 ms.author: anvenkat 
@@ -10,10 +10,9 @@ ms.custom:
   - bap-template
 ---
 
-# Modern workflows in POS (preview)
+# Modern workflows in POS
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [banner](includes/preview-banner.md)]
 
 This article describes modern workflows in POS that improve the usability, extensibility, and accessibility of Microsoft Dynamics 365 Commerce Store Commerce.
 
