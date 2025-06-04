@@ -2,7 +2,7 @@
 title: Preview features in Dynamics 365 Commerce 10.0.43 (January 2025)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.43. 
 author: johnmichalak
-ms.date: 02/11/2025
+ms.date: 06/05/2025
 ms.topic: whats-new
 ms.custom: 
   - bap-template
@@ -11,8 +11,6 @@ ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: johnmichalak
 ms.search.validFrom: 2023-11-01
-ms.dyn365.ops.version: 10.0.40
-
 ---
 
 # What's new or changed in Dynamics 365 Commerce 10.0.43 (January 2025)
