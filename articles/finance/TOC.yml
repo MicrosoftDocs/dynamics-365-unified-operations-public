@@ -3876,6 +3876,8 @@
                       items:
                         - name: Standard audit file (JPK) overview
                           href: localizations/poland/emea-pol-standard-audit-file-saf.md
+                        - name: SAF Bank statement file - JPK_KR
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-kr.md
                         - name: SAF Bank statement file - JPK_WB
                           href: localizations/poland/emea-pol-standard-audit-file-saf-wb.md
                         - name: SAF Inventory file - JPK_MAG
@@ -4280,6 +4282,8 @@
                     href: localizations/turkiye/emea-tur-currency-conversion.md
                   - name: Continuous serial numbering of packing slips and invoices (preview)
                     href: localizations/turkiye/emea-tur-serial-numbering.md
+                  - name: Use e-Ledger in the Republic of Türkiye (preview)
+                    href: localizations/turkiye/emea-tur-e-ledger.md
                   - name: Use Exchange difference invoicing (preview)
                     href: localizations/turkiye/emea-tur-exchange-difference-invoicing.md
                 - name: United Arab Emirates (UAE)
