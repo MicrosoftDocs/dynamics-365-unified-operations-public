@@ -43,7 +43,7 @@ When you review incoming changes that are based on an email, the system shows th
 The Supplier Communications Agent must be configured to monitor a specific email address for incoming messages from vendors. Follow these steps to complete the configuration.
 
 > [!IMPORTANT]
-> Before you begin, complete the steps in [Set up and configure the Supplier Communications Agent](./supplier-com-agent-setup.md). If you want to forward email communications for testing, then you must set up your own email address as a vendor to be able to forward emails to the system.
+> Before you begin, complete the steps in [Set up and configure the Supplier Communications Agent](./supplier-com-agent-setup.md). If you want to send/forward email communications from your own email address for testing, then you must also [set up your email address as a vendor contact](supplier-com-agent-setup.md#own-email).
 
 1. Sign in to the Microsoft Dynamics 365 Supply Chain Management environment as a user who has [permissions to manage the agent configuration](./supplier-com-agent-setup.md#permissions-for-users-who-manage-the-agent-configuration).
 1. Go to **Agents** \> **Agents (Preview)**.

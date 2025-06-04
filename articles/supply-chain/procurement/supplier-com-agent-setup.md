@@ -181,6 +181,14 @@ Learn how to fix common issues that are related to server-side synchronization i
 
 After you enable the Supplier Communications Agent in a sandbox environment, we recommend that you do a data refresh. In this way, when you do testing in the sandbox environment, you can use the same data that you will have in the production environment. Learn how to do a database refresh in [Refresh database](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
 
+## <a name="own-email"></a>Set your email address as a vendor contact for testing
+
+When you use the [review and apply purchase order changes received in vendor emails](supplier-com-agent-apply-email-changes.md) feature, the agent only reads emails from vendor domains. This means that when you are testing the system (and want to send/forward vendor emails from your own email account), you must add your email address as a vendor contact. To do so, follow these steps.
+
+1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
+1. Create or select a vendor.
+1. On the **Contact information** FastTab, add a row with your own email address (the one you will send/forward test messages from).
+
 ## <a name="sample-script"></a>Update connection references and enable triggering flows by using a PowerShell script
 
 The following sample PowerShell script finishes [setting up the agent identity](#set-up-an-agent-identity) by updating the connection references for the agent and activating the triggering Power Automate flows.
@@ -424,9 +432,3 @@ Enable-TriggerFlow -flowId 'acd7bb36-07a1-ef11-a72d-6045bd0390ae' -accessToken $
 Write-Host
 Write-Host 'Supplier communications agent is ready for use' -ForegroundColor Green
 ```
-
-## Set up yourself as a vendor for testing
-
-To use **Review and apply purchase order changes received in vendor emails**, only emails from vendor domains will be read. This means that when you are testing the system (where you forward emails from vendor communications), you must setup yourself as a vendor email address in the system. To do so, follow the steps:
-1. Go to **All vendors** page
-2. Select any vendor, and under the tab **Contacts**, add your own email address (the one you will use to forward emails)
