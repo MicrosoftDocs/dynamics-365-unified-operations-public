@@ -1,11 +1,11 @@
 ---
-title: Immersive Home overview (preview)
+title: Immersive Home overview (production ready preview)
 description: Learn about Immersive Home, how it helps you work hand-in-hand with AI agents, and how it helps you stay focused on the most important work items assigned to you.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
 ms.topic: overview
-ms.date: 04/25/2025
+ms.date: 05/28/2025
 audience: Application User
 ms.search.region: Global
 ms.search.form: ImmersiveHome, DefaultDashboard, SysUserSetup, AppCopilotAgentActivity, AppCopilotAgentLifecycle
@@ -14,13 +14,13 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Immersive Home overview (preview)
+# Immersive Home overview (production ready preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article describes Immersive Home, how it helps you work hand in hand with AI agents and focus on the most important work items assigned to you.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+[!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 Immersive Home is a modern, AI-first landing page that adapts to your most important work, aids decision making, and reduces the need to navigate elsewhere to complete common tasks. It's a modern option for the [initial page](../get-started/set-users-initial-page.md) in finance and operations apps and links to tools for enabling, monitoring, teaching, and interacting with AI agents.
 
@@ -31,7 +31,7 @@ Immersive Home is a modern, AI-first landing page that adapts to your most impor
 To use Immersive Home, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Immersive Home* must be turned on in [feature management](../get-started/feature-management/feature-management-overview.md).
+- The feature that is named *(production ready preview) Immersive Home* must be turned on in [feature management](../get-started/feature-management/feature-management-overview.md).
 
 ## The components of Immersive Home
 
@@ -91,4 +91,4 @@ Workspace tiles highlight information that you have pinned to the dashboard. To 
 
 ## Related information
 
-[Responsible AI FAQ for Immersive Home in finance and operations apps (preview)](faq-immersive-home.md)
+[Responsible AI FAQ for Immersive Home in finance and operations apps (production ready preview)](faq-immersive-home.md)
