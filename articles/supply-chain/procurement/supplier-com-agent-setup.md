@@ -22,6 +22,12 @@ ms.custom:
 
 This article explains how system administrators can set up and configure the Supplier Communications Agent.
 
+## Video instructions
+
+For video instructions on how to set up the Supplier Communications Agent, go to [Supplier Communications Agent: Set up and Configure | Dynamics 365 Bites (video)](https://aka.ms/SupplierCommunicationsAgentSetup).
+
+The remaining sections in this article provide the same instructions in a text-based format.
+
 ## Prerequisites
 
 Before you can use the Supplier Communications Agent, your system must meet the following requirements:
