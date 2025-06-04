@@ -4,7 +4,7 @@
 title: Deliver employee benefits program
 description: This article explains how to create benefit elements which will be used when creating a new benefit. 
 author: twheeloc
-ms.date: 07/02/2024
+ms.date: 06/03/2025
 ms.topic: how-to 
  
 # optional metadata 
@@ -53,23 +53,22 @@ This article explains how to create benefit elements which will be used when cre
 18. In the **Description** field, type a value.
 
 ## Create a benefit
-1. Close the page.
-2. Go to **Human resources** > **Benefits** > **Benefits**.
-3. Click **New** to open the drop dialog.
-4. In the **Plan** field, click the drop-down button to open the lookup.
-5. In the list, find and select the desired record.
-6. In the list, click the link in the selected row.
-7. In the **Option** field, click the drop-down button to open the lookup.
-8. In the list, find and select the desired record.
-9. In the list, click the link in the selected row.
-10. In the **Effective** field, enter a date and time.
-11. Click **Create benefit**.
-12. Toggle the expansion of the **Payroll details** section.
-13. In the **Frequency** field, click the drop-down button to open the lookup.
-14. In the list, find and select the desired record.
-15. In the list, click the link in the selected row.
-16. In the **Basis** field, select an option.
-17. In the **Amount or rate** field, enter a number.
+1. Go to **Human resources** > **Benefits** > **Benefits**.
+2. Click **New** to open the drop dialog.
+3. In the **Plan** field, click the drop-down button to open the lookup.
+4. In the list, find and select the desired record.
+5. In the list, click the link in the selected row.
+6. In the **Option** field, click the drop-down button to open the lookup.
+7. In the list, find and select the desired record.
+8. In the list, click the link in the selected row.
+9. In the **Effective** field, enter a date and time.
+10. Click **Create benefit**.
+11. Toggle the expansion of the **Payroll details** section.
+12. In the **Frequency** field, click the drop-down button to open the lookup.
+13. In the list, find and select the desired record.
+14. In the list, click the link in the selected row.
+15. In the **Basis** field, select an option.
+16. In the **Amount or rate** field, enter a number.
 
 
 
