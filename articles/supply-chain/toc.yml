@@ -3911,8 +3911,10 @@
           items:
           - name: Install the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
-          - name: Migrate the Warehouse Management mobile app from V3 to V4
+          - name: Migrate the Warehouse Management mobile app from V3 to V4 (preview)
             href: warehousing/warehouse-app-migrating-from-v3-v4.md
+          - name: Use a QR code to connect the mobile app to Supply Chain Management
+            href: /warehousing/warehouse-app-qr-code.md
           - name: User-based authentication
             href: warehousing/warehouse-app-authenticate-user-based.md
           - name: User-based authentication FAQ
@@ -3923,8 +3925,6 @@
             href: warehousing/warehouse-app-authenticate-service-based.md
           - name: Mass deploy the mobile app with service-based authentication
             href: warehousing/warehouse-app-intune.md
-          - name: Use a QR code to connect the mobile app to Supply Chain Management
-            href: /warehousing/warehouse-app-qr-code.md
           - name: Mobile device user accounts
             href: warehousing/mobile-device-work-users.md
           - name: Customize the company logo shown in the Warehouse Management mobile app

@@ -4,7 +4,7 @@ description: Learn how to set up the Warehouse Management mobile app to scan bar
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: article
-ms.date: 02/06/2025
+ms.date: 06/04/2025
 ms.reviewer: kamaybac
 ms.search.form: WHSMobileAppField
 ---

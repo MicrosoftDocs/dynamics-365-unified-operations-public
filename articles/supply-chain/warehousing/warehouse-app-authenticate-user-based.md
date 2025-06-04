@@ -72,7 +72,7 @@ The following procedure shows one way to register an application in Microsoft En
         ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333
         ```
 
-    - If you're using version 4.0 or later of the Warehouse Management mobile app, set the field to the following value (where *{clientId}* is your Entra Client ID):
+    - If you're using version 4.0 or later of the Warehouse Management mobile app, set the field to the following value, where *{clientId}* is your Entra Client ID:
 
         ``` text
         ms-appx-web://microsoft.aad.brokerplugin/{clientId}

@@ -1,22 +1,28 @@
 ---
-title: Migrate the Warehouse Management mobile app from V3 to V4
+title: Migrate the Warehouse Management mobile app from V3 to V4 (preview)
 description: Learn how to migrate from Warehouse Mobile Application V3 to V4, including compatibility, requirements, and timeline.
-author: pefreita
-ms.author: pefreita
-ms.topic: migration-to
-ms.date: 05/30/2025
+author: Mirzaab
+ms.author: mirzaab
+ms.topic: how-to
+ms.date: 06/04/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.form:  MigrateWMA, WMAV4, NewWMA, UpdateWMA
+ms.search.form:
 ---
 
-# Migrate the Warehouse Management mobile app from V3 to V4
+# Migrate the Warehouse Management mobile app from V3 to V4 (preview)
 
-For V4, we rewrote the Warehouse Management mobile app using more modern technology. The app now provides the following benefits:
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
+
+Starting in June 2025, we will [begin rolling out(#rollout)] Warehouse Management mobile app version 4 (V4). This new version introduces significant improvements and new features, enhancing the user experience and performance of the app. For V4, we rewrote the Warehouse Management mobile app using more modern technology, which adds the following benefits:
 
 - **Enhanced performance** – Improved application responsiveness and stability
 - **Better customer support capabilities** – Faster issue resolution and customer assistance
 - **Future-ready architecture** – Streamlined development of new features and integrations
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## New features added in V4
 
@@ -67,6 +73,10 @@ V4 supports comprehensive diagnostic capabilities for improved troubleshooting a
 
 ## Migration information
 
+### System requirements
+
+The system requirements for V4 are the [same as for V3](install-configure-warehouse-management-app.md), except for Android devices. V4 requires Android 7 or higher, while V3 which supports Android 5 and above. Devices running older Android versions can continue using V3 until the May 2026 end-of-support date.
+
 ### Compatibility between V3 and V4
 
 When you migrate from V3 to V4, the following compatibility features are available:
@@ -88,10 +98,6 @@ Follow these steps to add the redirect URL for Windows applications:
 1. Select **Add Platform** \> **Mobile and desktop applications**.
 1. Enter `ms-appx-web://microsoft.aad.brokerplugin/{clientId}` (where *{clientId}* is your Entra Client ID).
 
-### System requirements
-
-The system requirements for V4 are the [same as for V3](install-configure-warehouse-management-app.md), except for Android devices. V4 requires Android 7 or higher, while V3 which supports Android 5 and above. Devices running older Android versions can continue using V3 until the May 2026 end-of-support date.
-
 ### iOS limitations
 
 Device code authentication is not available on iOS platforms. Username and password authentication is the only supported method for iOS devices.
@@ -100,19 +106,20 @@ Device code authentication is not available on iOS platforms. Username and passw
 
 As with V3, certificate authentication is not supported in V4. Users must use device code or username/password authentication methods.
 
-### Transition period support
+### <a name="rollout"></a>Rollout schedule and transition period support
 
-- **Concurrent Operation** – V3 and V4 can operate simultaneously in the same warehouse environment during the transition period without conflicts.
+- **Concurrent operation** – V3 and V4 can operate simultaneously in the same warehouse environment during the transition period without conflicts.
 
-- **V4 Release Timeline**
-    - **Public Preview** – Beginning of June 2025
+- **V4 release timeline**
+    - **Public preview** – Beginning of June 2025
     - **General Availability** – Planned for August 2025 (subject to public preview results)
 
-- **Distribution Channels**
-    - **Windows**: App Center
-    - **Android**: App Center and Open Test Programs
+- **Distribution channels**
+    - **Windows** – App store
+    - **iOS** – App store
+    - **Android** – App store and open test programs
 
-- **V3 Support Timeline**
-    - **End of Support** – May 2026
-    - **Feature Development** – No new features are developed for V3
+- **V3 support timeline**
+    - **End of support** – May 2026
+    - **Feature development** – No new features are developed for V3
     - **Maintenance** – Critical bug fixes and security updates continue until end of support
