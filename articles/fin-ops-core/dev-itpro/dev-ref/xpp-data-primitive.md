@@ -23,9 +23,9 @@ This article describes primitive data types in X++. The primitive data types in 
 
 The **anytype** data type is a placeholder for any data type. 
 
-To use **anytype** as a variable, the actual underlying type is determined by the first assignment. If the value is used before an assignment has happened, a run-time error occurs. Once you've assigned a value to **anytype**, you can't convert it to another data type.
+To use **anytype** as a variable, the actual underlying type is determined by the first assignment. If the value is used before an assignment, a run-time error occurs. After you've assigned a value to **anytype**, you can't convert it to another data type.
 
-You can use **anytype** just as you use the data type that you convert it to. For example, if you assign an integer, you can then apply relational and arithmetic operators to the variable.
+You can use **anytype** just as you use the data type that you convert it to. For example, if you assign an integer, you can apply relational and arithmetic operators to the variable.
 
 An **anytype** variable is automatically converted to a date, enumeration (enum), integer, real, string, extended data type (EDT) (record), class, or container when a value is assigned to the type. Additionally, the following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **any2date**, **any2enum**, **any2int**, **any2real**, and **any2str**. 
 
@@ -170,8 +170,8 @@ Thousands of enumerable types are built into the standard application. For examp
 ### Create an enum
 
 Enumerations aren't created in code, but in metadata. 
-To create an enumerated type, follow these steps:
 
+To create an enumerated type, follow these steps:
 1. In Solution Explorer, right-click the project, point to **Add**, and click **New item**.
 2. Under **Dynamics 365 items**, select **Data Types**.
 3. Click **Base Enum** to select the new item type.
@@ -194,7 +194,7 @@ public void EnumMethod()
 
 ## guid
 
-The **guid** data type holds a *globally unique identifier* (GUID) value. A GUID is an integer that can be used across all computers and networks, wherever a unique identifier is required. It's unlikely that the number will be duplicated. A valid GUID meets all the following specifications:
+The **guid** data type holds a *globally unique identifier* (GUID) value. A GUID is an integer that can be used across all computers and networks, wherever a unique identifier is required. It's unlikely that the number is duplicated. A valid GUID meets all the following specifications:
 
 - It must have 32 hexadecimal digits.
 - It must have four dash characters that are embedded at the following locations: 8-4-4-4-12.
@@ -331,7 +331,12 @@ A **real** variable can hold decimal values in addition to integral values. You 
 
 A **real** has a precision of 128 bits, allowing around 28 significant digits, encoded as a binary coded decimal (BCD) number. The default value for a **real** is **0.0**. 
  
-A *decimal number* is a floating point value that consists of a sign, a numeric value where each digit is in the range 0 through 9, and a scaling factor that indicates the position of a floating decimal point that separates the integral and fractional parts of the numeric value. The binary representation of a **real** value consists of a 1-bit sign, a 96-bit integer number, and a scaling factor. The scaling factor is used to divide the 96-bit integer and specify what part of it is a decimal fraction. The scaling factor is implicitly the number 10 raised to an exponent in the range 0 through 28. Therefore, the binary representation of a decimal value represents (\[-2⁹⁶ through 2⁹⁶\] ÷ 10(0\\ through\\ 28)), where -(2⁹⁶-1) is the minimum value that can be expressed and 2⁹⁶-1 is the maximum value. These values are ±1.0 × 10⁻²⁸ to ±7.9 × 10²⁸.
+A *decimal number* is a floating point value that consists of:
+ - a sign
+ - a numeric value where each digit is in the range 0 through 9
+ - a scaling factor that indicates the position of a floating decimal point that separates the integral and fractional parts of the numeric value.
+
+The binary representation of a **real** value consists of a 1-bit sign, a 96-bit integer number, and a scaling factor. The scaling factor is used to divide the 96-bit integer and specify what part of it is a decimal fraction. The scaling factor is implicitly the number 10 raised to an exponent in the range 0 through 28. Therefore, the binary representation of a decimal value represents (\[-2⁹⁶ through 2⁹⁶\] ÷ 10(0\\ through\\ 28)), where -(2⁹⁶-1) is the minimum value that can be expressed and 2⁹⁶-1 is the maximum value. These values are ±1.0 × 10⁻²⁸ to ±7.9 × 10²⁸.
 
 This representation makes the **real** type resilient to rounding errors.
  
