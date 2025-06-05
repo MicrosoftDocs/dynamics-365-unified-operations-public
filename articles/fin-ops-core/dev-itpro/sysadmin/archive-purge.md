@@ -13,7 +13,7 @@ ms.reviewer:
 
 This article describes how to purge data from history table in Microsoft Dynamics 365.
 
-The ‘Archive with Dataverse long term retention’ feature decreases the space used by customers in their FnO database. This reduction is accomplished by reducing the indexing on the relevant data as it gets moved to the history tables for archiving. This minimizes the storage space for cold-to-likewarm data, but, eventually, this archived data grows so cold that it is no longer needed. At this point, customers can purge (AKA delete) their archived data from the history tables to get the full benefit of the ‘Archive with Dataverse long term retention’ feature. 
+The ‘Archive with Dataverse long term retention’ feature decreases the space used by customers in their FnO database. This reduction is accomplished by reducing the indexing on the relevant data as it gets moved to the history tables for archiving. This minimizes the storage space for cold-to-likewarm data, but, eventually, this archived data grows so cold that it is no longer needed. At this point, customers can purge their archived data from the history tables to get the full benefit of the ‘Archive with Dataverse long term retention’ feature. 
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ The following prerequisites must be met before you execute purge data from histo
 To create a purge job to deleta data from history table,follow these steps.
 
 1. Go to **System administration** \> **Archive with Dataverse long term retention** to open the **Archive with Dataverse long term retention** workspace.
-2. Select an Archive Job or multiple Archive Jobs of the same functional secnarios.
+2. Select an completed Archive Job or multiple completed Archive Jobs of the same functional secnarios.
 3. Select **Delete history（Preview）** to open a warning popup with explicit confirmation message, confirm and submit the purge job.
 
 ## Purge job status
