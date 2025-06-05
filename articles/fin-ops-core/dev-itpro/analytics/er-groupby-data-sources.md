@@ -3,7 +3,7 @@ title: Group records and aggregate calculations by using GROUPBY data sources
 description: Learn how you can use GROUPBY type data sources in Electronic reporting (ER), including aggregate functions, alternatives, and examples.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/18/2022
 ms.custom: 
 ms.reviewer: johnmichalak

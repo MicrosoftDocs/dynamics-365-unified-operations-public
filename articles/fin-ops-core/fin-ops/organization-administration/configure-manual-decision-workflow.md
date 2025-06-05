@@ -3,7 +3,7 @@ title: Configure manual decisions in a workflow
 description: Learn about how to configure the properties of a manual decision, including outlines on naming decisions and specifying possible outcomes of decisions.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/15/2020
 ms.reviewer: twheeloc 
 audience: Application User

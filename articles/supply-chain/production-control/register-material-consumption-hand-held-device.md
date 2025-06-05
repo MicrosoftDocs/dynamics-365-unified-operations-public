@@ -3,7 +3,7 @@ title: Register material consumption using a mobile device
 description: Access an introduction about workflows that enable registration of raw material consumption in production by using a handheld device.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
 ms.search.form: WHSRFMenuItem

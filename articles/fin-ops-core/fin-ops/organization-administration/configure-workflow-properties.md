@@ -3,7 +3,7 @@ title: Configure workflow properties
 description: Learn about how to configure the various properties of a workflow, including outlines on naming workflows and specifying the workflow owner.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/07/2020
 ms.reviewer: twheeloc 
 audience: Application User

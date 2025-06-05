@@ -3,7 +3,7 @@ title: Revenue recognition reallocation - Scenario 3
 description: Learn about a reallocation scenario where a new line is added to an existing invoiced sales order. New items can be added to new and existing sales orders.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: conceptual
+ms.topic: article
 ms.date: 12/21/2020
 ms.reviewer: twheeloc
 audience: Application User

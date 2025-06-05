@@ -3,7 +3,7 @@ title: TAXUNITCONVERSION ER function
 description: Learn about how the TAXUNITCONVERSION Electronic reporting (ER) function is used, including syntax strings, arguments, return values, and examples.
 author: johnmichalak
 ms.author: epodkolzina
-ms.topic: conceptual
+ms.topic: article
 ms.date: 03/25/2024
 ms.custom: 
   - bap-template

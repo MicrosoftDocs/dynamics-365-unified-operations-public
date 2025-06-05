@@ -3,7 +3,7 @@ title: Create a SharePoint connection
 description: Learn how to configure a connection so that Electronic invoicing can access a Microsoft SharePoint site, including an outline on granting access to folders.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 09/13/2024

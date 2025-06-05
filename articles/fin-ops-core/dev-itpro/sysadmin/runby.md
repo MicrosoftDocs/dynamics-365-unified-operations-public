@@ -3,7 +3,7 @@ title: Batch manager security role
 description: Learn about the batch manager security role that is used to manage batch job, including an overview on assigning batch manager roles to users.
 author: hasaid
 ms.author: hasaid
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/25/2018
 ms.reviewer: johnmichalak
 audience: IT Pro

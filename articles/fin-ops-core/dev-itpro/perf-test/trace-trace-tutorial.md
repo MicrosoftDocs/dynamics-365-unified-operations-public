@@ -3,7 +3,7 @@ title: Capture a trace
 description: Learn about guidelines for taking traces, including prerequisites and a step-by-step processs of capturing a trace with a client.
 author: ttreen
 ms.author: ttreen
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/28/2023
 ms.reviewer: twheeloc
 audience: Developer

@@ -3,7 +3,7 @@ title: ICMS-ST complement and restitution process and declaration for RS, SC, an
 description: Learn about the process for calculating and reporting the compensation and restitution of ICMS-ST tax amounts in internal operations to final consumers.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: conceptual
+ms.topic: article
 ms.date: 06/27/2024
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

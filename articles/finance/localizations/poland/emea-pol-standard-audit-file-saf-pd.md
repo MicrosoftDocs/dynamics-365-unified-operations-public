@@ -3,7 +3,7 @@ title: SAF Accounting Books Income Tax - JPK_KR_PD
 description: Learn how users in legal entities in Poland can generate a SAF Accounting Books Income Tax - JPK_KR_PD in XML format and preview in Excel.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: reference
 ms.custom: 
   - bap-template
 ms.date: 03/07/2025
@@ -25,7 +25,5 @@ JPK_KR_PD (Jednolity Plik Kontrolny – Księgi Rachunkowe Podatnika) is a repor
 
 > [!NOTE]
 > For reporting periods before January 1, 2025, the earlier SAF Accounting Books - JPK_KR is required. Learn more about how to set up and generate a SAF Accounting Books - JPK_KR to report for periods before January 1, 2025, in [SAF Accounting Books - JPK_KR](emea-pol-standard-audit-file-saf-kr.md).
->
-> As of January 1, 2026, the SAF Accounting Books - JPK_KR will be deprecated. You can find the deprecation announcement in [Removed or deprecated features in Dynamics 365 Finance in the Finance 10.0.43 release](/dynamics365/finance/get-started/removed-deprecated-features-finance#features-removed-or-deprecated-in-the-finance-10043-release).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

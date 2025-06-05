@@ -3,7 +3,7 @@ title: Use cash control limits
 description: Learn how to use cash control to define transaction limits when a transaction will cause the cash balance to fall below a predefined amount.
 author: v-kiarnd
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/21/2020
 ms.custom:
 ms.reviewer: twheeloc

@@ -3,7 +3,7 @@ title: Upload ER configurations and Globalization features as a Dataverse soluti
 description: Learn how to upload Electronic reporting (ER) configurations and Globalization features as a Microsoft Dataverse solution.
 author: filatovm
 ms.author: filatovm
-ms.topic: conceptual 
+ms.topic: how-to
 ms.date: 01/29/2023
 ms.custom: 
   - bap-template

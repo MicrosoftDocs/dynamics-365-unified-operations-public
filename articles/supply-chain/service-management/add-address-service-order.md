@@ -3,7 +3,7 @@ title: Add an address to a service order
 description: Learn how to add a customer address to a service order, including a step-by-step process for creating a customer address for a service order.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/15/2020
 ms.reviewer: kamaybac
 ms.search.form: SMAServiceOrderTable

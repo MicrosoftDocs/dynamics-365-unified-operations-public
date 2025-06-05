@@ -3,7 +3,7 @@ title: Row definitions in financial report designer
 description: Learn about row definitions in financial report designer, including outlines on creating and opening row definitions.
 author: aprilolson
 ms.author: aolson
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/22/2022
 ms.reviewer: twheeloc
 audience: Application User

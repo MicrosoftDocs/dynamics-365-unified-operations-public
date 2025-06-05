@@ -3,7 +3,7 @@ title: Clean up the batch job history
 description: Learn about how to clean up the batch job history, including an overview on batch job history clean-up and a step-by-step process.
 author: snagamalla
 ms.author: snagamalla
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/02/2024
 ms.reviewer: johnmichalak 
 audience: IT Pro

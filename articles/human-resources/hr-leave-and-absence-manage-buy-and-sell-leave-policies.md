@@ -5,7 +5,7 @@ title: Manage buy and sell leave policies
 description: You can enable employees to buy and sell leave in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 10/28/2021
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: LeaveBuySellPolicy, LeavePlanFormPart, LeaveAbsenceWorkspace

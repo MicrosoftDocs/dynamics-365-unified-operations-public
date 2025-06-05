@@ -3,7 +3,7 @@ title: Process guide framework
 description: Learn about the process guide framework for developers who are extending our warehouse mobile processes in X++ with an overview of the existing design.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/01/2018
 ms.custom:
 ms.reviewer: kamaybac

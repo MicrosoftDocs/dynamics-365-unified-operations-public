@@ -3,7 +3,7 @@ title: Resolve issues after entity store maintenance
 description: Learn about procedures that must be completed after entity store maintenance, including if you're using application analytical workspaces.
 author: MilindaV2
 ms.author: milindav
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/09/2025
 ms.reviewer: johnmichalak
 audience: IT Pro
@@ -70,8 +70,9 @@ To resolve this issue, follow one of the following solutions:
 1. Redeploy the reports where the error occurred. Go to **System Administration** \> **Setup** \> **Deploy Power BI files**.
    - This action overwrites the current report and any customizations not in Microsoft Dynamics Lifecycle Services as PBIX are lost. If there are customizations in PowerBI.com, export the report as a PBIX file and upload it to Microsoft Dynamics Lifecycle Services for redeployment.
 
-2. Deploy a sample report. Go to **System Administration** \> **Setup** \> **Deploy Power BI files**. This fixes the above errors for any Entity store based reports in PowerBI.com
+2. Deploy a [sample report](https://download.microsoft.com/download/4990e70d-1c68-45ab-9d23-2475a2b99596/Samplereport.pbix) Go to **System Administration** \> **Setup** \> **Deploy Power BI files**. This fixes the above errors for any Entity store based reports in PowerBI.com
    - Users encountering this issue need to perform this action individually.
+     
 
 > [!NOTE]
 > For errors with the PowerBI.com reports after maintenance activity or if the above solution didn't resolve the issue, you may need to delete the report and the related dataset, and redeploy the report. To redeploy the report, go to **System Administration** \> **Setup** \> **Deploy Power BI files**. Any customizations not in Microsoft Dynamics Lifecycle Services as PBIX are lost.

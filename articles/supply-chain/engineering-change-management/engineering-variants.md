@@ -3,7 +3,7 @@ title: Generate variants for engineering products
 description: Learn how to generate variants for engineering products, including an outline on generating one or more new variants of engineering products.
 author: sgmsft
 ms.author: shwgarg
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/08/2021
 ms.reviewer: kamaybac
 ms.search.form:

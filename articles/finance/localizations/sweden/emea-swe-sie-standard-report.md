@@ -3,7 +3,7 @@ title: Export financial information for auditors in Sweden
 description: Learn about the SIE standard report for Sweden, including a step-by-step process for setting up a SRU code for each general ledger account.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/25/2024
 ms.custom: 
   - bap-template

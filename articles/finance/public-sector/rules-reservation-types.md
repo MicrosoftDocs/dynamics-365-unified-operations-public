@@ -3,7 +3,7 @@ title: Set up general budget reservation rules and reservation types
 description: Learn how to set up and modify general budget reservation rules and reservation types for Public sector with an outline on setting up budgeting parameters.
 author: AlexRenney
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/25/2019
 ms.custom:
 ms.reviewer: twheeloc 

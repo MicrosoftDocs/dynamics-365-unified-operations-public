@@ -3,7 +3,7 @@ title: Set up and run processing to call a simple exporting ER format to generat
 description: Access an example that shows how to set up and use electronic messages, including step-by-step processes for creating message statuses and additional fields.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/06/2021
 ms.custom: 
 ms.reviewer: kfend

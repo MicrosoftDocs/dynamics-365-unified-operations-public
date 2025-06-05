@@ -5,7 +5,7 @@ title: Optimize Dataverse virtual table queries
 description: Optimize and troubleshoot performance of Dataverse virtual table queries
 author: twheeloc
 ms.date: 04/02/2021
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: 

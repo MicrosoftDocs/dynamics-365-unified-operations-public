@@ -3,7 +3,7 @@ title: Packing work for packing outbound containers and processing shipments
 description: Learn about the "Packing" work order type, which manages work for packing containers and supports partial shipments of packed containers.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 7/13/2022
 ms.reviewer: kamaybac
 ms.search.form: WHSPackingWorkLocationSetup, WHSPack, WHSContainerTable

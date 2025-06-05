@@ -3,7 +3,7 @@ title: Copy billing schedules
 description: Learn about how to copy billing schedules, including step-by-step processes for copying billing schedules and copying items across billing schedules.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/04/2021
 ms.reviewer: twheeloc 
 audience: Application User

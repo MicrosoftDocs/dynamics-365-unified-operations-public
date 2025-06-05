@@ -5,7 +5,7 @@ title: Configure future life events
 description: This article describes how to schedule future life events in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/23/2021
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: BenefitFutureLifeEvents, BenefitWorkspace, HcmBenefitSummaryPart

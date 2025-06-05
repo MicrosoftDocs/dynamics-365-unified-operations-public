@@ -1,5 +1,5 @@
 ---
-title: Financial tag rules (preview)
+title: Financial tag rules
 description: Learn how to set up, create, and enter default financial tags on transactions.
 author: rcarlson
 ms.author: rcarlson
@@ -13,16 +13,11 @@ ms.search.form: DimensionFocus, LedgerTrialBalanceListPage, FinTagRule, Financia
 ms.dyn365.ops.version: 10.0.42
 ---
 
-# Financial tag rules (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
+# Financial tag rules
 
 Financial tag rules provide a powerful way to enter default value or automatically populate values in your [financial tags](financial-tag.md). They streamline the process and ensure consistency and efficiency in transaction tagging. Such consistency and efficiency are essential for accurate financial tracking and reporting.
 
 This feature is available as of Microsoft Dynamics 365 Finance version 10.0.42. It's available in Feature management. In each new release, more document entry points are implemented.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Currently, the following journals are supported for financial tag rules:
 
@@ -35,6 +30,11 @@ Currently, the following journals are supported for financial tag rules:
 - Allocation journal
 - Reporting currency adjustment journal
 - Invoice journal (vendor)
+- Vendor payment journal
+- Customer payment journal
+- Fixed asset journal
+- Free text invoice
+- Sales order
 
 ## Setup
 
@@ -54,8 +54,8 @@ Before you create financial tags rules, note the following points:
 
 To create a financial tag rule, follow these steps.
 
-1. Go to **General ledger** \> **Chart of accounts** \> **Financial tags** \> **Financial tags**.
-1. Select **New** to create a financial tag.
+1. Go to **General ledger** \> **Chart of accounts** \> **Financial tags** \> **Financial tag rules**.
+1. Select **New** to create a financial tag rule.
 
    The dialog box that appears has several fields that you can set, including the following three required fields:
 

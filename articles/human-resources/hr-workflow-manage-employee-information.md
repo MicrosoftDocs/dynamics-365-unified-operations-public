@@ -5,7 +5,7 @@ title: Use workflows to manage employee information
 description: This article explains how you can use workflows to manage employee information. 
 author: twheeloc
 ms.date: 04/07/2025
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 # ms.search.form: WorkflowParametersAdmin, WorkflowtableListPageRnr, WorkflowStatus

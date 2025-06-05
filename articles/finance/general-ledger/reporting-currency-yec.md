@@ -3,7 +3,7 @@ title: Reporting currency out of balance when the year-end close is run
 description: Learn how the reporting currency can be out of balance when the year-end close is run, including an outline on posting reporting currency gain/loss.
 author: moaamer
 ms.author: kweekley
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/08/2024
 ms.custom:
 ms.reviewer: twheeloc

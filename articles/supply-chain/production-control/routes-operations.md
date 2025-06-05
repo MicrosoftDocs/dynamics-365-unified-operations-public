@@ -3,7 +3,7 @@ title: Routes and operations
 description: Learn about routes and operations, including definitions for routes and outlines on routes, parallel operations, and operation relations. 
 author: johanhoffmann
 ms.author: johanho
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/19/2024
 ms.custom:
   - bap-template
