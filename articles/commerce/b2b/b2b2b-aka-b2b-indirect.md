@@ -22,8 +22,6 @@ This document provides an overview of introduction of native support for B2B Ind
 
 B2B Indirect is a business strategy positioned within a multifaceted supply chain, where transactions occur from one company to another before reaching the end purchaser. This approach broadens market access by including multiple business intermediaries in the distribution cycle. For instance, producers of consumer packaged goods (CPG manufacturers) could distribute their products via a chain of distributors who then execute sales to business entities such as retail outlets.
 
-![]()
-
 ![B2B2B Overview Conceptual Model](../media/B2B2B-Overview-Conceptual-Model.png)
 
 ## How does Dynamics 365 Commerce support B2B Indirect workflows?
@@ -44,7 +42,7 @@ Dynamics 365 Commerce is designed to support high-volume merchants and provides 
 
 - B2B Indirect workflows are introduced as a natural extension to existing B2B workflows, leveraging the same platform capabilities and data model, and providing a consistent and seamless user experience.
 - B2B Indirect workflows are available in a headless manner, meaning that merchants can use the platform's APIs and SDKs to build custom extensions and integrations to fit their existing business processes and workflows.
-- B2B Indirect workflows are scalable, secure, and reliable, as they are built on the Microsoft Azure cloud platform, which offers high availability, performance, and compliance.
+- B2B Indirect workflows are scalable, secure, and reliable, as they're built on the Microsoft Azure cloud platform, which offers high availability, performance, and compliance.
 - B2B Indirect workflows are flexible and customizable, allowing merchants to configure and modify various aspects of the platform, such as business rules, user interface, workflows, and more, to suit their specific business needs and preferences.
 
 ## B2B Seller Prospect Sign-up and Approval Process
@@ -54,8 +52,8 @@ Dynamics 365 Commerce is designed to support high-volume merchants and provides 
 The following is a brief overview of the steps involved in becoming a B2B seller on the platform:
 
 - Submit B2B Seller Prospect Application: Prospective B2B sellers submit an application expressing their interest in becoming a seller on the platform. The application includes relevant business information, contact details, etc.
-- Sync Prospect Application: The submitted application is synced to HQ and made available for review. Run or schedule a P-001 sync job from the Distribution Schedule and run ‘sync Customer requests’.
-- Review Prospect Application: The platform team evaluates the prospect’s suitability based on predefined criteria. Criteria may include business size, industry, product offerings, and compliance with platform policies. The review process aims to identify genuine businesses and filter out potential fraud or non-serious applicants.
+- Sync Prospect Application: The submitted application is synced to HQ and made available for review. Run or schedule a P-001 sync job from the Distribution Schedule and run "Sync Customer requests".
+- Review Prospect Application: The platform team evaluates the prospect’s suitability based on predefined criteria. Criteria may include business size, industry, product offerings, and compliance with platform policies. The review process aims to identify genuine businesses and filter out potential fraud or unwanted applicants.
 - Approve/Reject B2B Seller Prospect: Based on the review, the prospect application is either approved or rejected. Approved prospects receive confirmation and further instructions on the next steps. Rejected applicants are informed of the decision and the reasons behind it.
 
 Once approved, the system sets up the following elements in the back office and associates them with the B2B seller through these steps:
@@ -71,7 +69,7 @@ By following these steps, the B2B seller can become a part of the platform and c
 
 ![Evolution of Dynamics 365 Commerce to support B2B2B natively](../media/Evolution_of_B2B_to_B2B2B.png)
 
-As part of this feature, you will be able to natively leverage the following capabilities, in addition to all existing B2B capabilities that are already available:
+As part of this feature, you'll be able to natively leverage the following capabilities, in addition to all existing B2B capabilities that are already available:
 
 - Onboard 'B2B Seller' as a new B2B Prospect type.
 - Convert existing 'B2B Buyers’ to become 'B2B Seller and Buyer'.
@@ -82,6 +80,6 @@ As part of this feature, you will be able to natively leverage the following cap
 - Order templates are now catalog-aware.
 - Order-on-behalf-of allows C1 from the Manufacturer (not the B2B Seller) to place an order for C2 (B2B Buyers) directly with both the Manufacturer or a B2B Seller.
 - Order history allows you to filter by various options, including the channel (B2B Seller or Manufacturer) where the order originated.
-- Lastly, there are additional APIs available to allow C1 from the B2B Seller (Distributor's) organization to manage their inventory on hand as well as accept or reject orders.
+- Lastly, there are headless APIs available to allow C1 from the B2B Seller (Distributor's) organization to manage their inventory on hand and accept or reject orders.
 
 ![Glimpse into end-user experience using native experiences of B2B Indirect (aka B2B2B)](../media/B2B-Indirect-Experience-Glimpse.png)
