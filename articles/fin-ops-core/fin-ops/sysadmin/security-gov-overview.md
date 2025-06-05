@@ -17,7 +17,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # User security governance overview
 
 [!include [banner](../../../finance/includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 User security governance helps organizations create a security architecture that is closely aligned with their business processes. It empowers organizations to apply precise role management, advanced audit capabilities, and comprehensive license optimization tools.
 

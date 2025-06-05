@@ -17,7 +17,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Privileged user management
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Privileged user management lets system administrators schedule a session for selected user accounts. All user interactions are recorded in Dynamics 365 finance and operations apps during that session, if the user decides to continue using Dynamics 365 finance and operations after reading the consent on the landing page. This feature is useful when some elevated privileged accounts are used for auditing purposes. It helps ensure that users aren't performing any unauthorized activities in the system and keeps a recording of it, in case it's later needed for audit or compliance reviews.
 
