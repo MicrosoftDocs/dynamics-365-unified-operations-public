@@ -1,7 +1,7 @@
 ---
 
-title: Native support for B2B Indirect (aka B2B2B) workflows in Dynamics 365 Commerce 
-description: This document provides an overview of introduction of native support for B2B Indirect (aka B2B2B) workflows within Dynamics 365 Commerce, detailing its features and benefits.  
+title: Unlock B2B2B Commerce: Native Indirect B2B Workflows in Dynamics 365 Commerce Explained
+description: Overview of native B2B Indirect (B2B2B) workflows in Dynamics 365 Commerce, with key features and benefits for modern B2B commerce scenarios.  
 author: ashishmsft  
 ms.date: 06/05/2025  
 ms.topic: article  
@@ -15,12 +15,12 @@ ms.search.industry: retail
 ms.search.form: RetailOperations  
 ---
 
-# Native support for B2B Indirect (aka B2B2B) workflows in Dynamics 365 Commerce
-This document provides an overview of introduction of native support for B2B Indirect (aka B2B2B) workflows within Dynamics 365 Commerce, detailing its features and benefits.  
+# Unlock B2B2B Commerce: Native Indirect B2B Workflows in Dynamics 365 Commerce Explained
+Get insights on B2B2B commerce in Dynamics 365 Commerce, featuring native indirect B2B workflows for efficient and scalable business operations.
 
 ## What is B2B Indirect?
 
-B2B Indirect is a business strategy positioned within a multifaceted supply chain, where transactions occur from one company to another before reaching the end purchaser. This approach broadens market access by including multiple business intermediaries in the distribution cycle. For instance, producers of consumer packaged goods (CPG manufacturers) could distribute their products via a chain of distributors who then execute sales to business entities such as retail outlets.
+B2B Indirect unlocks new growth by powering dynamic, multi-tiered supply chains—enabling products to flow seamlessly from manufacturers through trusted distributors to business customers. This strategy amplifies market reach, maximizes distribution channels, and accelerates sales by connecting CPG brands with retailers and other businesses via a robust network of intermediaries. Elevate your distribution game with B2B Indirect, where each business intermediary becomes a catalyst for growth, ensuring your products reach the right hands, every time.
 
 ![B2B2B Overview Conceptual Model](../media/B2B2B-Overview-Conceptual-Model.png)
 
