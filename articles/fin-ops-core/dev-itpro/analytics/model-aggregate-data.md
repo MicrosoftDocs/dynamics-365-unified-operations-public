@@ -3,7 +3,7 @@ title: Model aggregate data
 description: This tutorial walks you through the process of modeling aggregate data, including an outline of prerequisites and key concepts.
 author: MilindaV2
 ms.author: milindav
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/18/2017
 ms.reviewer: johnmichalak
 audience: Developer
@@ -175,7 +175,7 @@ Assume that for analysis purposes, you want to enable slicing by the start date 
     | Use table relations | No |
     | Tags                | RolePlayingDate; Fleet |
 
-    Notice the new property called **Tags**. This property enables the discovery of patterns within code and metadata from within the Visual studio environment. You can enter any number of tags and they can be searched using the hot keys or the **Dynamics 365** menu in Visual Studio.
+    Notice the new property called **Tags**. This property enables the discovery of patterns within code and metadata from within the Visual Studio environment. You can enter any number of tags and they can be searched using the hot keys or the **Dynamics 365** menu in Visual Studio.
 
 9. Define the table relationship. Right-click **TransactionDate**, and then click **New Relation**. You do not need to specify any properties in the DimensionsRelation at this point.
 10. Expand **BIDateDimensionValue**, and then select the **Relationship** **Constraint**. Right-click and select the property sheet.

@@ -3,7 +3,7 @@ title: Configure automated tasks in a workflow
 description: Learn about how to configure the properties for an automated task, including outlines on naming tasks and specifying when notifications are sent.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: twheeloc 
 audience: Application User

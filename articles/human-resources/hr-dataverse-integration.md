@@ -5,7 +5,7 @@ title: Configure integration with dataverse tables
 description: This article describes the integration between Microsoft Dynamics 365 Human Resources and Dataverse.
 author: anschmidt  
 ms.date: 01/15/2025
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm
@@ -925,8 +925,7 @@ In the following template mapping tables, the name of the task indicates the ent
 | Compensation Reference Point Setup       | cdm\_name, cdm\_companyid.cdm\_companycode |
 | Compensation Reference Point Setup Line  | cdm\_name, cdm\_referencepointsetupid.cdm\_name, cdm\_referencepointsetupid.cdm\_companyid.cdm\_companycode |
 | Compensation Region                      | cdm\_name |
-| Compensation Structure                   | cdm_companyid.cdm_companycode, cdm_compensationgridid.cdm_companyid.cdm_companycode, cdm_compensationgridid.cdm_name, cdm_compensationlevelid.cdm_name,
-cdm_referencepointid.cdm_name, cdm_referencepointid.cdm_referencepointsetupid.cdm_name, cdm_referencepointid.cdm_referencepointsetupid.cdm_companyid.cdm_companycode, cdm_referencepointsetupid.cdm_companyid.cdm_companycode|
+| Compensation Structure                   | cdm_companyid.cdm_companycode, cdm_compensationgridid.cdm_companyid.cdm_companycode, cdm_compensationgridid.cdm_name, cdm_compensationlevelid.cdm_name, cdm_referencepointid.cdm_name, cdm_referencepointid.cdm_referencepointsetupid.cdm_name, cdm_referencepointid.cdm_referencepointsetupid.cdm_companyid.cdm_companycode, cdm_referencepointsetupid.cdm_companyid.cdm_companycode|
 | Compensation Variable Plan Level         | cdm\_companyid.cdm\_companycode, cdm\_compensationvariableplanid.cdm\_name, cdm\_compensationvariableplanid.cdm\_companyid.cdm\_companycode, cdm\_compensationlevelid.cdm\_name |
 | Compensation Variable Plan Type          | cdm\_name, cdm\_companyid.cdm\_companycode |
 | Currency                                 | isocurrencycode |

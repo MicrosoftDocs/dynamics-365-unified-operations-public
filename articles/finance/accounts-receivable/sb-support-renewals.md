@@ -3,7 +3,7 @@ title: Support and renewals
 description: Learn how to set up and use the support and renewal process on sales orders to create a billing schedule for renewal items.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/04/2021
 ms.reviewer: twheeloc
 audience: Application User

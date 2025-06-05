@@ -82,7 +82,7 @@ The main purpose of installing the Planning Optimization add-in is to connect th
 After you've installed the Planning Optimization Add-in for your environment, you must enable it in Supply Chain Management before you can start using it.
 
 > [!NOTE]
-> You can continue to use the deprecated master planning engine for one or more previously created companies (until you're ready to migrate them) even while using Planning Optimization for the others. For instructions on how to set a company to use the deprecated master planning engine, see [Continue to use deprecated master planning for some companies](../continue-using-deprecated-planning.md).
+> You can continue to use the deprecated master planning engine for one or more previously created companies (until you're ready to migrate them) even while using Planning Optimization for the others. For instructions on how to set a company to use the deprecated master planning engine, see [Continue to use deprecated master planning with existing companies](../continue-using-deprecated-planning.md).
 
 To configure your system to use the Planning Optimization Add-in for master planning, follow these steps:
 
@@ -99,12 +99,9 @@ To configure your system to use the Planning Optimization Add-in for master plan
     | Disabling connection | A request to turn off the connection to the Planning Optimization service is currently in progress. | No |
     | Getting status | The system is waiting for status information from the Planning Optimization service. | No |
 
-1. If the **Connection stats** is *Connected*, then you're ready to enable Planning Optimization. Use the **Use Planning Optimization** option to choose which planning engine is used for master planning. Select one of the following options:
+1. If the **Connection stats** is *Connected*, the **Use Planning Optimization** option is read-only and set to *Yes*. In most cases, Planning Optimization is now the only planning engine available for Supply Chain Management, so you can't turn it off. However, in some rare cases, Microsoft Support might make the deprecated planning available for one or more specific companies (learn more in [Migration to Planning Optimization for master planning](../new-master-planning-engine.md)).
 
-    - *Yes* – Planning Optimization is used for master planning for all companies (unless overridden for one or more specific companies).
-    - *No* – The deprecated master planning engine is used for master planning for all companies.
-
-> [!NOTE]
+> [!IMPORTANT]
 > If existing planning batch jobs that were created for the deprecated master planning engine are triggered while the **Use Planning Optimization** option is set to *Yes*, those jobs will fail.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

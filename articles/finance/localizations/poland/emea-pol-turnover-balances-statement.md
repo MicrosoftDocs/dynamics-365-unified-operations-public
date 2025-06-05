@@ -3,7 +3,7 @@ title: Turnover and balances statement for Poland
 description: For Poland, different calculation rules apply to Accounts receivable and Accounts payable main accounts in the chart of accounts.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 07/10/2024

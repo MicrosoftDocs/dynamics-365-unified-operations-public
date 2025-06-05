@@ -40,7 +40,7 @@ Before you begin the procedures in this article, complete the following prerequi
 
 ## Create the Azure Key Vault configuration
 
-Create an Azure key vault to store the required secrets that are issued for your company. For more information, see [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
+Create an Azure Key Vault to store the required secrets that are issued for your company. For more information, see [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
 
 Add the following required elements in the key vault:
 

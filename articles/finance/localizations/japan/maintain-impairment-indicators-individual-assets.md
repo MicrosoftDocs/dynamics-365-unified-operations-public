@@ -1,78 +1,66 @@
 ---
 title: Maintain impairment indicators on individual assets
-description: Learn how to maintain impairment indicators on individual assets, including a step-by-step process using the JPMF demo data company.
+description: Learn how to maintain impairment indicators on individual assets for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 04/25/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: AssetTable, AssetBook, AssetImpairmentIndicator_JP, AssetImpairmentReview_JP, SysQueryForm
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Maintain impairment indicators on individual assets
 
 [!include [banner](../../includes/banner.md)]
 
-Use this task to learn how to maintain impairment indicators on individual assets.
+This article explains how to maintain impairment indicators on individual assets for Japan in Microsoft Dynamics 365 Finance.
 
+The following procedures use the JPMF demo company data.
 
-
-Run the task 'Setup impairment accounting common parameters' prior to this running this procedure. 
-
-
-
-This task uses the JPMF demo company data.
-
+Before you complete the procedures, you must first set up the impairment accounting common parameters. Learn more in [Set up impairment accounting common parameters and posting profile](impairment-accounting.md).
 
 ## Update impairment indicator on a single fixed asset
-1. Go to Fixed assets > Fixed assets > Fixed assets.
-2. In the list, find and select the desired record.
-    * Example: TOOLM-000006  
-3. Click Books.
-4. Click Functions.
-5. Click Update impairment indicators.
-6. Click New.
-7. In the Modify date field, enter a date.
-    * Example: 2013-04-01  
-8. In the Description field, type a value.
-9. In the Undiscounted cash flow field, enter a number.
-    * In this example, enter field '3900000.'  
-10. In the Recoverable amount field, enter a number.
-    * In this example, enter field '3350226.'  
-11. Click Save.
+
+To update the impairment indicator on a single fixed asset, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
+1. In the list, find and select the desired record. For example, select **TOOLM-000006**.  
+1. Select **Books**.
+1. Select **Functions**.
+1. Select **Update impairment indicators**.
+1. Select **New**.
+1. In the **Modify date** field, enter a date.
+1. In the **Description** field, enter a value.
+1. In the **Undiscounted cash flow** field, enter "3900000".  
+1. In the **Recoverable amount** field, enter "3350226".  
+1. Select **Save**.
 
 ## Update impairment indicator on the impairment management form
-1. Go to Fixed assets > .. > .. > Impairment management.
-2. Click Query.
-3. In the Criteria field for the fixed asset group row, click the drop-down button to open the lookup.
-4. Click OK.
-5. In the list, find and select the desired record.
-    * TOOLM-000007  
-6. In the list, find and select the desired record.
-    * TOOLM-000008  
-7. Click Update impairment indicators.
-8. In the list, mark the selected row.
-    * Select the record with Fixed asset number 'TOOLM-000007.'  
-9. In the Modify date field, enter a date.
-    * Define date = 2013-04-01  
-10. In the Description field, type a value.
-11. In the Undiscounted cash flow field, enter a number.
-    * Enter 2500000.00.  
-12. In the Recoverable amount field, enter a number.
-    * Enter = 2000000.00.  
-13. In the list, find and select the desired record.
-    * Select the row with Fixed asset number 'TOOLM-000008.'  
-14. In the Modify date field, enter a date.
-15. In the Description field, type a value.
-16. In the Undiscounted cash flow field, enter a number.
-    * Enter 2000000.00.  
-17. In the Recoverable amount field, enter a number.
-    * Enter 1500000.00.  
-18. Click Update indicator.
+
+To update impairment indicator on the impairment management form, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets \> Impairment management**.
+1. Select **Query**.
+1. In the **Criteria** field of the fixed asset group row, select the drop-down button to open the lookup.
+1. Select **OK**.
+1. In the list, find and select **TOOLM-000007**.  
+1. In the list, find and select **TOOLM-000008**. 
+1. Select **Update impairment indicators**.
+8. In the list, select the record with fixed asset number **TOOLM-000007**.  
+9. In the **Modify date** field, enter a date.
+1. In the **Description** field, enter a value.
+1. In the **Undiscounted cash flow** field, enter "2500000.00".  
+1. In the **Recoverable amount** field, enter "2000000.00".  
+1. In the list, find and select the row with fixed asset number **TOOLM-000008**.  
+1. In the **Modify date** field, enter a date.
+1. In the **Description** field, enter a value.
+1. In the **Undiscounted cash flow** field, enter "2000000.00".  
+1. In the **Recoverable amount** field, enter "1500000.00".  
+1. Select **Update indicator**.
 
 
 

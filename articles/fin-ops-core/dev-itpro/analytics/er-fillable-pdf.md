@@ -3,7 +3,7 @@ title: Design ER configurations to fill in PDF templates
 description: Learn about how to design an Electronic reporting (ER) format to fill in a PDF template, including prerequisites.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/18/2022
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

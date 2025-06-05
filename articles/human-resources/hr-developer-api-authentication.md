@@ -113,7 +113,7 @@ namespace TalentODataPoC
         // prereq: This client app must be registered in Microsoft Entra ID. The app must be
         // registered as requiring permission to the Dynamics 365 for Talent API (with the Dynamics
         // HCM Workload delegated permission).
-        static string clientId = "4fc703ef-672c-4e2c-813f-2f9d29d726db"; // This value should be obtained from Microsoft Entra and must match your registered app
+        static string clientId = "00001111-aaaa-2222-bbbb-3333cccc4444"; // This value should be obtained from Microsoft Entra and must match your registered app
         static string talentNamespaceUri = "";
 
         public static async Task CallTalentODataService()

@@ -5,7 +5,7 @@ author: twheeloc
 ms.author: twheeloc
 ms.reviewer: twheeloc
 ms.date: 01/24/2024
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.search.region: Global
 ---

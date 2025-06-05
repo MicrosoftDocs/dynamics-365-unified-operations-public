@@ -3,7 +3,7 @@ title: Prepare to migrate code to finance and operations
 description: Learn about how the code upgrade service and Visual Studio tools help you migrate from Dynamics AX 2012 R3 to finance and operations.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 11/10/2017
 ms.reviewer: johnmichalak
 audience: Developer

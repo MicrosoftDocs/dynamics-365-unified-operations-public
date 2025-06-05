@@ -3,8 +3,8 @@ title: Configure electronic invoice parameters for Chile
 description: Learn how to configure the information required to generate the electronic invoice XML for Chile, including prerequisites and a process of electronic invoices.
 author: Fhernandez0088
 ms.author: v-federicohe
-ms.topic: article
-ms.date: 10/20/2023
+ms.topic: how-to
+ms.date: 04/16/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -80,6 +80,28 @@ The following steps go through the information that the XML tags require, in the
     - **Field list 7:** Add elements that have the options for remission types and their codes according to the Chilean normative.
     - **Field list 8:** Add elements that have the options for products transfer types and their codes according to the Chilean normative.
 
+17. Go to **Inventory management** \> **Setup** \> **Inventory breakdown** \> **Warehouses**, and configure the primary address for each warehouse used.
+
 After you complete these steps, you can issue electronic invoices from free text invoices, sales orders, and projects.
+
+## Inventory transfer format for internal products movements
+
+The inventory transfer format (**Invent transfer (CL)**) should be printed from the Electronic Reporting configuration.
+
+### Prerequisites
+
+1. You must download the specific report configurations from the Dataverse configuration repository for Chile Electronic Invoices (**Invent transfer (CL)**). Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+1. You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+1. Enable the general LATAM feature and the specific LATAM feature for Chile.
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting** and configure the format application specific parameters setting the tax codes for taxed (no) and not taxed (yes) transactions.
+
+### Print the Inventory transfer format for Chile
+
+To print the Inventory transfer format for Chile, follow these steps.
+
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+1. Select the format report **Invent transfer (CL)**.
+1. Select the latest version and select **Run**.
+1. Enter the desired filters, and select **Ok**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

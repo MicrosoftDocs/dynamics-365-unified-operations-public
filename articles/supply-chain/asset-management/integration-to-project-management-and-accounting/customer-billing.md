@@ -3,7 +3,7 @@ title: Bill for maintenance on customer-owned assets
 description: Learn how to create, process, and bill maintenance work that is done on assets that your customers own, including an outline on the work order billing feature.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/28/2021
 ms.custom:
 ms.reviewer: kamaybac 
@@ -20,6 +20,7 @@ The *Work order billing* feature lets you create, process, and bill maintenance 
 - Select a customer and view the assets that customer owns when you create a work order.
 - Set up a parent project for each customer.
 - Register hours, items, expenses, and fees against the work order, and then create an invoice proposal for the customer later.
+- Check customer credit limit before dispatching a work order.
 
 In addition, the feature provides the following functionality:
 
@@ -28,7 +29,7 @@ In addition, the feature provides the following functionality:
 
 ## Turn the work order billing feature on or off
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Work order billing* feature in the [**Feature management** workspace](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use the work order billing feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Work order billing* feature in the [**Feature management** workspace](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Example scenario
 
@@ -161,5 +162,38 @@ In this section, you will continue to work on the work order that you worked on 
 1. In the **Create invoice proposal** dialog box, in the **Project transactions** section, select the **Select** check box for every line  that you want to invoice.
 1. Select **OK** to close the dialog box and view the new invoice proposal.
 
+## Credit limit check
+
+The credit limit check feature checks work order dispatches to confirm whether a forecasted work order will cause the customer to exceed their credit limit. If the credit limit is exceeded, a warning or error is triggered based on the feature's configuration.
+
+Each customer's total outstanding credit is calculated as the sum of outstanding sales orders and project credit (work orders accrue toward project credit).
+
+### Prerequisites
+
+To use the credit limit feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
+- The feature that is named *Credit limit check on work order dispatch* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+### Configure the credit limit check
+
+To configure the credit limit check, follow these steps.
+
+1. Go to **Asset Management** \> **Setup** \> **Asset management parameters**.
+1. Open the **Work orders** tab.
+1. Make the following settings on the **Credit limits** FastTab.
+    - **Credit limit check on work order dispatch** – Set to *Yes* to turn on the credit limit check.
+    - **Message when exceeding credit limit** – Choose what to do to if the limit is exceeded. Select one of the following values.
+        - *Warning* – Display a warning but allow the user to override the warning and proceed with dispatching the work order.
+        - *Error* – Display an error and block the user from dispatching the order.
+
+### Set customer credit limits
+
+To set the credit limit for a customer, follow these steps.
+
+1. Go to **Credit and collections** \> **Customers** \> **All customers**.
+1. Select and open a customer record (if you're following the examples provided previously, you could choose *US-013* (*Pelican Wholesales*)).
+1. On the **Credit and collections** FastTab, enter the customer's credit limit in the **Credit limit** field.
+1. On the Action Pane, select **Save**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

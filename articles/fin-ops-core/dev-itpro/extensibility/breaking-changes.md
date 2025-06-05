@@ -3,7 +3,7 @@ title: Breaking changes
 description: Learn about breaking changes, including various changes that can break your code, including data model changes and code changes.
 author: smithanataraj
 ms.author: smnatara
-ms.topic: article
+ms.topic: concept-article
 ms.date: 09/09/2018
 ms.reviewer: johnmichalak
 audience: Developer

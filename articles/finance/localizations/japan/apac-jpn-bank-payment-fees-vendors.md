@@ -3,7 +3,7 @@ title: Bank payment fees covered by vendors in Japan
 description: Access answers some of the frequently asked questions about bank payment fees that are covered by vendors in Japan, including a step-by-step process.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/21/2018
 ms.reviewer: johnmichalak
 audience: Application User 

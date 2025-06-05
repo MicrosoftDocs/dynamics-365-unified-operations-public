@@ -3,7 +3,7 @@ title: Recurring contract billing parameters
 description: Learn how to set up the default values for billing schedules that are created in Recurring contract billing. It also explains how create billing schedule groups.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/25/2024
 ms.reviewer: twheeloc
 audience: Application User

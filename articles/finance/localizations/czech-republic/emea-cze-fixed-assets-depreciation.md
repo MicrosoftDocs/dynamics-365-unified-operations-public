@@ -3,7 +3,7 @@ title: Fixed assets depreciation methods for the Czech Republic
 description: Learn about fixed assets depreciation for legal entities in the Czech Republic, including an outline on depreciation percentages and coefficients.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/20/2017

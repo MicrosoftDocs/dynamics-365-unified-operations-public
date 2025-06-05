@@ -4,8 +4,8 @@
 title: Set up Electronic reporting to print performance reviews
 description: This article explains how to set up Electronic reporting (ER) to print performance reviews in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/15/2024
-ms.topic: article
+ms.date: 06/04/2025
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: 

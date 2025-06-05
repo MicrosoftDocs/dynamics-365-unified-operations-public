@@ -3,7 +3,7 @@ title: Set up general budget reservations and submit them to a workflow
 description: Learn how to set up general budget reservations and submit them to a workflow for Public sector with an outline on setting up reviewers for reservations.
 author: AlexRenney
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/24/2019
 ms.custom:
 ms.reviewer: twheeloc

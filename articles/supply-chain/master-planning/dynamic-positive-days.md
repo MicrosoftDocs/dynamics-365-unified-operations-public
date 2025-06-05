@@ -28,7 +28,7 @@ When the system determines which supply to peg, it doesn't just consider the lea
 Before you can use dynamic positive days, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.38 or later.
-- The feature that's named *Dynamic positive days for Planning Optimization* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Dynamic positive days for Planning Optimization* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.
 
 ## Set up your system to use dynamic positive days
 
@@ -85,15 +85,15 @@ The following scenario shows how the system handles demand that's requested for 
 
 1. The following sales orders are created for the item:
 
-    - Sales order 1 (SO1) has a requested ship date of day 10.
-    - Sales order 2 (SO2) has a requested ship date of day 3.
+    - Sales order 1 (SO1) has a requested ship date of day 3.
+    - Sales order 2 (SO2) has a requested ship date of day 10.
 
 1. The system takes the following actions:
 
-    - Peg SO2 against existing PO1.
-    - Create a new planned purchase order, and peg SO1 against it.
+    - Peg SO1 against existing PO1.
+    - Create a new planned purchase order, and peg SO2 against it.
 
-    Because SO1 is outside the lead time, the system creates a new planned order to supply it. (There's no supply within the positive days.)
+    Because SO2 is outside the lead time, the system creates a new planned order to supply it. (There's no supply within the positive days.)
 
 :::image type="content" source="media/dynamic-pos-days-scenario-2.png" alt-text="Timeline for example scenario 2.":::
 
@@ -112,8 +112,8 @@ The following scenario shows how the system handles demand that's requested for 
 
 1. The following sales orders are created for the item:
 
-    - Sales order 1 (SO1) has a requested ship date of day 10.
-    - Sales order 2 (SO2) has a requested ship date of day 3.
+    - Sales order 1 (SO1) has a requested ship date of day 3.
+    - Sales order 2 (SO2) has a requested ship date of day 10.
 
 1. The system takes the following actions:
 

@@ -3,7 +3,7 @@ title: Create a Retail Server extension API (Retail SDK version 10.0.11 and late
 description: This article explains how to create a new Retail Server API with Retail SDK version 10.0.11 and later.
 author: josaw1
 ms.date: 11/14/2023
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

@@ -1,49 +1,47 @@
 --- 
 title: Post a sales invoice with a payment slip
-description: Learn about the process of posting a free text invoice with a payment slip attachment in a specified format, with an example using the DEMF demo data company. 
+description: This article describes how to post a free text invoice with a payment slip attachment in a specified format in Denmark with Microsoft Dynamics 365 Finance. 
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 08/29/2018
-ms.custom:
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak  
-audience: Application User  
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines  
-ms.dyn365.ops.version: Version 7.0.0 
+ms.custom: 
+  - bap-template
 ---
 
 # Post a sales invoice with a payment slip
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through posting a free text invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment.
+This article describes how to post a free text invoice with a payment slip attachment in a specified format in Denmark with Microsoft Dynamics 365 Finance.
 
-Before you can complete this procedure, you must first set up a payment slip formats and set up payment slips for customer invoices. 
+The following procedure walks you how to post a free text invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment. This procedure was created using the demo data company DEMF. This functionality is available for legal entities whose primary address is in Denmark.
 
-This procedure was created using the demo data company DEMF. This functionality is available for legal entities whose primary address is in Denmark.
+Before you can complete this procedure, you must first set up a payment slip formats and payment slips for customer invoices. 
 
-1. Go to Accounts receivable > Orders > All sales orders.
-2. Click New.
-3. In the Customer account field, click the drop-down button to open the lookup.
-4. In the list, find and select the desired record.
-    * You should set up the associated payment attachment in customer invoice for the selected customer first.  
-5. In the list, click the link in the selected row.
-6. In the Currency field, click the drop-down button to open the lookup.
-    * The payment slip can be printed only for sales orders with the currency Danish kroner (DKK).  
-7. In the list, find and select the desired record.
-8. In the list, click the link in the selected row.
-9. Click OK.
-10. In the list, mark the selected row.
-11. In the Item number field, click the drop-down button to open the lookup.
-12. In the list, click the link in the selected row.
-13. Click Save.
-14. On the Action Pane, click Invoice.
-15. Click Invoice.
-16. Click OK.
-    * Be sure that the associated payment that is attached to the customer invoice is set to FIK 751 or FIK 752.  
-17. Click Yes.
+To post a sales invoice with a payment slip, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
+1. Select **New**.
+1. In the **Customer account** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record. You should set up the associated payment attachment in customer invoice for the selected customer first.  
+1. In the list, select the link in the selected row.
+1. In the **Currency** field, select the drop-down button to open the lookup. The payment slip can only be printed for sales orders with the Danish kroner (DKK) currency.  
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. Select **OK**.
+1. In the list, mark the selected row.
+1. In the Item number field, select the drop-down button to open the lookup.
+1. In the list, select the link in the selected row.
+1. Select **Save**.
+1. On the Action Pane, select **Invoice**.
+1. Select **Invoice**.
+1. Select **OK**. Ensure that the associated payment that is attached to the customer invoice is set to "FIK 751" or "FIK 752".  
+1. Select **Yes**.
 
 
 

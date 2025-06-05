@@ -3,7 +3,7 @@ title: Office integration tutorial
 description: In this tutorial, you will use and build Office integration experiences that involve Excel, Word, document management, and email. 
 author: jasongre
 ms.author: jasongre
-ms.topic: article
+ms.topic: tutorial
 ms.date: 05/24/2021
 ms.reviewer: twheeloc 
 audience: Developer

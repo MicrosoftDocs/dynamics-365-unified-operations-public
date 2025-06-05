@@ -3,7 +3,7 @@ title: Deployment configurations for the local agent
 description: Learn about which deployment configurations can be specified, when deploying the local agent, to indicate a special configuration related to the environment.
 author: faix
 ms.author: osfaixat
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/19/2024

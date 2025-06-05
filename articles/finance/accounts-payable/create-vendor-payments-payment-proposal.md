@@ -4,7 +4,7 @@ description: Learn about the payment proposal options and includes some examples
 author: twheeloc
 ms.author: shpandey
 ms.topic: article
-ms.date: 06/13/2023
+ms.date: 05/09/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -105,6 +105,13 @@ Dimension control allows you to control grouping of generated lines by payment p
 
 >[!NOTE]
 > If you select more than one dimension in the third option, a payment proposal is created for the dimension combination.
+
+### Italy
+
+#### Use future due date
+
+When generating a payment proposal for Italian legal entities, an additional **Use future due date** parameter is available on **Advanced parameters** in the **Payment proposal** sidebar. If **Use future due date** isn't enabled during the payment proposal run, the payment date for all retrieved invoices is set to the **Minimum payment date** defined during the run. If **Use future due date** is enabled during the payment proposal run, the invoices that have a due date later than the defined **Minimum payment date** will have a payment date that is equal to the due date of each invoice. Invoices that have a due date earlier or equal to the **Minimum payment date** will default to the **Minimum payment date**.
+
 
 #### Bank account selection
 

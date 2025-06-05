@@ -3,7 +3,7 @@ title: Configure registration numbers in Egypt
 description: Learn how to configure and use registration numbers in Egypt, including an outline and step-by-step process for configuring commerical registration numbers.
 author: mrolecki
 ms.author: mrolecki
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/15/2021
 ms.custom: 
 ms.reviewer: johnmichalak

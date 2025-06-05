@@ -3,7 +3,7 @@ title: Work split
 description: Learn about work split functionality. This functionality lets you split large work orders into several work orders that you can then assign to multiple workers.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/15/2020
 ms.custom:
 ms.reviewer: kamaybac
@@ -46,9 +46,9 @@ The *Work split* feature adds the following two buttons to the **Work** tab on t
 > - The work is associated with a cluster.
 > - The work order type is something other than one of the following types:
 >
->    - Sales orders
->    - Raw material picking
->    - Transfer issue
+>     - Sales orders
+>     - Raw material picking
+>     - Transfer issue
 >
 > - The work is currently being split by another user. If you try to open the splitting page for work that is already being split by another user, you receive the following error message: "The work with ID \#\#\#\# is currently being split. Retry in a few minutes. If you continue to receive this message, contact a supervisor."
 
@@ -137,6 +137,5 @@ If you try to use the Warehouse Management mobile app to run picking work agains
 ## Other blocked operations
 
 Any operations that modify work lines, work inventory transactions, or replenishment links that are related to work that is being split will fail, and the following error message will be shown: "The work with ID \#\#\#\# is currently being split."
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

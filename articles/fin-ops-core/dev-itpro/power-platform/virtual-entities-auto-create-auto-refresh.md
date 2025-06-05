@@ -3,7 +3,7 @@ title: Create and refresh virtual entities automatically
 description: Learn about automatic creation and refresh of virtual entities for finance and operations apps in Dataverse.
 author: mkannapiran
 ms.author: kamanick
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 05/14/2024

@@ -3,7 +3,7 @@ title: View the start time and duration of a service order
 description: Learn how you can view when the work on the service order was started and when the service order is going to be completed.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac

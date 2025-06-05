@@ -3,7 +3,7 @@ title: Set up alerts
 description: Learn about how to set up alerts for batch jobs, including a step-by-step process on setting up alerts for batch enhanced forms.
 author: hasaid
 ms.author: hasaid
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/12/2019
 ms.reviewer: johnmichalak
 audience: IT Pro

@@ -3,7 +3,7 @@ title: Use stage reason codes
 description: You use a reason code to indicate why a service level agreement (SLA) has been canceled, or why a service order has exceeded the defined time limit.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac

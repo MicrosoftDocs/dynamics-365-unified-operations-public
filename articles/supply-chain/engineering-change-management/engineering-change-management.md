@@ -3,7 +3,7 @@ title: Manage changes to engineering products
 description: Learn about engineering change management, which provides structured processes for managing changes to engineering products.
 author: sgmsft
 ms.author: shwgarg
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/28/2020
 ms.custom:
 ms.reviewer: kamaybac

@@ -37,7 +37,7 @@ To make a backward search, follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Trace** \> **Genealogy trace**.
-1. In the search form, enter a unique identifier (such as a serial, batch, asset, or lot number) of a finished good to retrieve its genealogy, activity, and data collection.
+1. In the search form, enter a unique identifier (such as a serial, batch, asset, or lot number) of a finished good to retrieve its genealogy, activity, and data collection. (If you're exploring the app using sample data, search for *bike-s0001*.)
 1. Traceability shows a genealogy tree for the serial number you entered.
 
     :::image type="content" source="media/backward-search-example.png" alt-text="Example of backward search results in the graphic view" lightbox="media/backward-search-example.png":::
@@ -45,8 +45,11 @@ To make a backward search, follow these steps:
 1. Now you can do an *activity verification* by following these steps:
 
     1. Select a node in the genealogy tree.
-    1. Select the **View detail** button for your selected node to open a dialog.
-    1. Open the **Activities** tab in the dialog. Activity events are displayed in reverse chronological order. For example, you might see five activities for *Consumption* and one activity for *Goods receipt*.
+    1. Select the **View activities** button for your selected node to open a dialog.
+    1. A Copilot-generated summary gives you a quick overview of the tracked object's history.
+    1. Below the summary, all activity events are displayed in reverse chronological order. For example, you might see five activities for *Consumption* and one activity for *Goods receipt*.
+  
+       :::image type="content" source="media/activity-summary.png" alt-text="Example of activity summary in the graphic view" lightbox="media/activity-summary.png":::
 
 1. Until now, you've been working on the **Graphic view** tab. The table views provide another way to view and explore your data. Select **Table view - composition** to see a table view of your backward search.
 
@@ -70,4 +73,8 @@ To make a forward search, follow these steps:
 
 1. Select the relevant node in the genealogy tree.
 1. Select the **Trace** button for your selected node. The app now shows a high-level genealogy list.
-1. Until now, you've been working on the **Graphic view** tab. The table views provide another way to view and explore your data. Select **Table view – where used** to see a table view of your forward search.
+1. Until now, you've been working on the **Graphic view** tab. The table views provide another way to view and explore your data. Select **Table view – where used** to see a table view of your forward search. Two copilot-generated summaries are provided here: one that summarizes items that directly consume the selected material and another that summarizes all items that consume the selected material. To see a full list of items associated with either summary, select the appropriate summary.
+
+   :::image type="content" source="media/item-directly-consumption.png" alt-text="Directly consuming items on the 'Table view – where used' tab." lightbox="media/item-directly-consumption.png":::
+
+   :::image type="content" source="media/item-indirectly-consumption.png" alt-text="All consuming items on the 'Table view – where used' tab" lightbox="media/item-indirectly-consumption.png":::

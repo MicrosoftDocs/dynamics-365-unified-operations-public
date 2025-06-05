@@ -4,7 +4,7 @@
 title: Define compensation process and calculate results
 description: Compensation processes are used to determine new compensation amounts and awards for employees enrolled in fixed and variable compensation plans. 
 author: twheeloc
-ms.date: 08/25/2021
+ms.date: 06/4/2025
 ms.topic: how-to 
  
 # optional metadata 
@@ -28,27 +28,25 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Compensation processes are used to determine new compensation amounts and awards for employees enrolled in fixed and variable compensation plans. Compensation processes can be run multiple times to perform "what-if" analysis, to verify all changes and settings are correct. This procedure will create a compensation process, run the process, and view the results. The demo data company used to create this procedure is USMF.
-
+Compensation processes are used to determine new compensation amounts and awards for employees enrolled in fixed and variable compensation plans. Compensation processes can be run multiple times to perform "what-if" analysis, to verify all changes and settings are correct. This procedure creates a compensation process, runs the process, and view the results. The demo data company used to create this procedure is USMF.
 
 ## Create a compensation process
-1. Go to **Compensation management** > **Process** > **Compensation processes**.
-2. Click **New compensation process**.
-3. In the **Process field**, type a value.
+1. Go to **Human resources** > **Compensation** > **Process** > **Compensation processes**.
+2. Click **New**.
+3. In the **Process** field, type a value.
 4. In the **Description** field, type a value.
 5. In the **Process type** field, select an option.
     * A cycle specifies the time period evaluated to determine compensation. The evaluation considers which positions were held by employees, which performance ratings to include, calculation of the percentage of time the employee was employed during the cycle, and more. An example of a cycle start date might be the first day of the past fiscal year.  
 6. In the **Cycle start** field, enter a date.
     * The cycle end date is important because it is the date used to determine which employees were actively employed and enrolled in one or more compensation plans.  
 7. In the **Cycle end** field, enter a date.
-    * The transaction active date is the date the new compensation rates should take effect. Many companies include a few months between their end of a cycle and the time the new compensation rates go into effect. The additional time is used for processing and reviewing the new compensation.  
-8. In the **Transaction active date** field, enter a date.
-    * The point-in-time date is used for variable compensation plans that determine an employee's award amount based on their compensation rate at this point in time.  
-    * The fixed pay pro rated hire date is used with fixed compensation plans with a hire rule of **Percent**. Employees who are hired between the cycle start and the fixed pay pro rated hire date will receive 100% of their calculated compensation increase, instead of pro-rated percentage.  
-9. In the **Fixed pay pro rated hire date** field, enter a date.
+8. In the **Transaction active date** field, enter a date. The transaction active date is the date the new compensation rates should take effect. Many companies include a few months between their end of a cycle and the time the new compensation rates go into effect. The additional time is used for processing and reviewing the new compensation.
+9. The **Point-in-time date** field is used for variable compensation plans that determine an employee's award amount based on their compensation rate at this point in time.
+10. The **Fixed pay pro rated hire date** is used with fixed compensation plans with a hire rule of **Percent**. Employees who are hired between the cycle start and the fixed pay pro rated hire date will receive 100% of their calculated compensation increase, instead of pro-rated percentage.  
+11. In the **Fixed pay pro rated hire date** field, enter a date.
     * The review deadline is the date by which all process results should be reviewed so that they can be loaded into an employee's compensation record before the transaction active date. This field is informational only.  
-10. In the **Review deadline** field, enter a date.
-11. Click **Save**.
+12. In the **Review deadline** field, enter a date.
+13. Click **Save**.
 
 ## Set up the compensation plans and actions for a compensation process
 1. Click **Setup**.

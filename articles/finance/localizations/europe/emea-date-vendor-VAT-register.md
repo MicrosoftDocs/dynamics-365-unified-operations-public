@@ -3,7 +3,7 @@ title: Date of vendor VAT register
 description: Learn about a feature for enabling date of vendor VAT register. You can deduct the incoming VAT amount for purchase invoices.
 author: epodkolzina
 ms.author: epodkolzina
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 01/15/2022

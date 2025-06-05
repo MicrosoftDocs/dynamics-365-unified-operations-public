@@ -4,7 +4,7 @@ description: Learn how to import Electronic reporting (ER) configurations from M
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 11/06/2024
+ms.date: 03/13/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -48,6 +48,9 @@ You can import the Globalization solution by following these steps.
 
 A new type of repository for getting ER configurations in Dynamics 365 Finance is added. This repository is known as the Dataverse configuration repository. It enables the same user interface (UI) that the Dataverse enables. Therefore, you can import single and filtered configurations.
 
+> [!NOTE]
+> To use the Dataverse configuration repository, make sure that the **Dataverse repository** feature is enabled in the **Feature management** workspace of the Dynamics 365 Finance app. The feature is enabled by default since the service update 10.0.39, however, it may be disabled in your environment.
+
 ### Open the Dataverse configuration repository
 
 To open the Dataverse configuration repository, follow these steps.
@@ -77,7 +80,7 @@ To open the Dataverse configuration repository, follow these steps.
 ## Import a single configuration
 
 > [!NOTE]
-> It may take up to two weeks for a new ER configuration released by Microsoft or a new version of an ER configuration released by Microsoft to appear in the Dataverse configuration repository. If the configuration update is expected but does not appear in the Dataverse configuration repository, or if auto-updates are disabled in your environment, you can also manually trigger the update of the Globalization solution package in your Power Platform admin center (PPAC) portal. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#environment-level-view-of-apps) for more details on how to update solutions in PPAC.
+> It may take up to two weeks for a new ER configuration released by Microsoft or a new version of an ER configuration released by Microsoft to appear in the Dataverse configuration repository. If the configuration update is expected but does not appear in the Dataverse configuration repository, or if auto-updates are disabled in your environment, you can also manually trigger the update of the Globalization solution package in your Power Platform admin center portal. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#environment-level-view-of-apps) for more details on how to update solutions in Power Platform admin center.
 
 To import a single configuration, follow these steps.
 
@@ -110,6 +113,6 @@ To import filtered configurations, follow these steps.
 ## Related resources
 
 - [Get started with Tax Calculation - High-level configuration](../global-get-started-with-tax-calculation-service.md#high-level-configuration)
-- [Globalization feature components](../e-invoicing-working-globalization-features.md)
+- [Globalization feature components](../gs-e-invoicing-working-globalization-features.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
