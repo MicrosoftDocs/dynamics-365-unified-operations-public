@@ -19,11 +19,11 @@ The ‘Archive with Dataverse long term retention’ feature decreases the space
 
 If your system doesn't already include the features described in this article, go to the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace and turn on the following feature:
 
-- <To be checked with engineering team> Purge From History (preview) 
+- (Preview) Purge From History Archive Feature
 
 The following prerequisites must be met before you execute purge data from history table:
 -  Only an archive job must been completed successfully, then user can select that archival job to have the data associated with it be purged from history table.
--  Users must select at least one archival job before they can click “Delete history data”.
+-  Users must select at least one archival job before they can click “Delete History (preview)”.
 
  > [!NOTE]
  > If an archival job is being restored or is scheduled to be restored, then a user can’t purge the data associated with that archival job.
@@ -34,7 +34,7 @@ To create a purge job to deleta data from history table,follow these steps.
 
 1. Go to **System administration** \> **Archive with Dataverse long term retention** to open the **Archive with Dataverse long term retention** workspace.
 2. Select an Archive Job or multiple Archive Jobs of the same functional secnarios.
-3. Select **Delete History Data** to open a warning popup with explicit confirmation message, confirm and submit the purge job.
+3. Select **Delete History（preview）** to open a warning popup with explicit confirmation message, confirm and submit the purge job.
 
 ## Purge job status
 1. When a purge job can’t be executed instantly, its Job status shows 'Deletion queued'.
