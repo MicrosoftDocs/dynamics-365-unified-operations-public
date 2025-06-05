@@ -1601,7 +1601,7 @@
       - name: Channel and catalog selection enhancements in call center for creating B2B orders
         href: b2b-call-center.md
     - name: B2B Indirect (aka B2B2B) e-commerce 
-      href: Native support for B2B Indirect workflows allowing producers of consumer packaged goods (CPG manufacturer) to distribute their products via a chain of distributors who then execute sales to business entities such as retail outlets.
+      href: b2b/b2b2b-aka-b2b-indirect.md
     - name: Monitoring and analysis
       items:
       - name: Monitor sales and margin performance
