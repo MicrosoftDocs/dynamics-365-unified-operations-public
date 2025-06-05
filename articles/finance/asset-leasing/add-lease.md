@@ -4,7 +4,7 @@ description: Learn how to create a new lease by entering information for it in A
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 03/28/2023
+ms.date: 06/05/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -29,16 +29,13 @@ Follow these steps to create a lease in Asset leasing.
 
 The starting date for the lease payment can't be earlier than the lease start date. If you enter a starting date for the lease payment that's earlier than the starting date for the lease, you'll receive an error message.
 
-On the **General** fast tab of a lease or lease book, you can set the **Sales tax group** and **Item sales tax group**. When the lease book is marked **Pay to Vendor,** those values are automatically carried into the vendor invoice journal generated from the payment schedule. If the vendor or main account already has its own sales tax group or item tax group defined, the system uses those; otherwise, it falls back to the defaults specified on the lease.
+On the **General** FastTab of a lease or lease book, you can set the **Sales tax group** and **Item sales tax group**. When the lease book is marked **Pay to Vendor,** those values are automatically carried into the vendor invoice journal generated from the payment schedule. If the vendor or main account already has its own sales tax group or item tax group defined, those are used. If they're not defined, the tax groups specified on the lease are used.
 
 By default, the **Breakdown payment amount** option on the **General** FastTab of the **Lease details** page is set to **No** if the **Allow payment breakdown** option on the **Asset leasing parameters** page is set to **Yes**. 
 
 If the **Breakdown payment amount** option is set to **Yes**, the **Payment amount** field on the **Payment schedule lines** FastTab is locked. It will be set to the total of the payment amounts that are entered later in the **Payment amount breakdown** catalog.
 
 Select **Payment amount breakdown** to open a page where you can add the itemized payment types. The **Add totals to payment amount** button will move the totals to the **Payment amount** field.
-
-
-
 
 > [!NOTE]
 > If you add an itemized payment amount and then select the **Esc** key, the entered amounts won't be added to the **Payment amount** field on the **Payment schedule lines** FastTab. Instead, they will be stored in the **Payment amount breakdown** dialog box. If you want the dialog box to show the total amount, select the **Amount** column, select and hold (or right-click), and then select **Total this column**. 
