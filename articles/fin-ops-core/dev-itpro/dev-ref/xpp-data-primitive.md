@@ -23,7 +23,7 @@ This article describes primitive data types in X++. The primitive data types in 
 
 The **anytype** data type is a placeholder for any data type. 
 
-To use **anytype** as a variable, the actual underlying type is determined by the first assignment. If the value is used before an assignment has happend, a run-time error occurs. Once you've assigned a value to **anytype**, you can't convert it to another data type.
+To use **anytype** as a variable, the actual underlying type is determined by the first assignment. If the value is used before an assignment has happened, a run-time error occurs. Once you've assigned a value to **anytype**, you can't convert it to another data type.
 
 You can use **anytype** just as you use the data type that you convert it to. For example, if you assign an integer, you can then apply relational and arithmetic operators to the variable.
 
@@ -62,12 +62,12 @@ Any value can be interpreted as a boolean as shown in this table
 
 | Data type  | True value | False value |
 |---------------|---------------|---------------|
-| Integer (int, int64) | Any non zero value | 0 |
-| Real (decimal numbers) | Any non zero value | 0.0 |
+| Integer (int, int64) | Any nonzero value | 0 |
+| Real (decimal numbers) | Any nonzero value | 0.0 |
 | Boolean | `true` | `false` |
 | String (str)* | Any non empty string | Empty string (`""`) |
 | Date | Any valid date | Null date (`1900-01-01`) |
-| Enum | Any non-zero value | 0 (first enum value) |
+| Enum | Any nonzero value | 0 (first enum value) |
 | GUID | Any valid GUID | Empty GUID (`{00000000-0000-0000-0000-000000000000}`) |
 | Container | Any non empty container | Empty container (`conNull()`) |
 | Table | Any instantiated table record | A table that has not been fetched from the database (RecId = 0) |
@@ -159,7 +159,7 @@ public void DateMethod()
 
 An **enum** is a list of literals. Before you can use an **enum**, you must declare it in Application Explorer.
 
-An enumerated type (or enum) is a distinct type that defines a set of named constants, making your code more readable and maintainable. Enums are particularly useful when you have a variable that identifies one value out of a small set of predefined values. Enums allows you to assign meaningful names to a set of integer values, improving code clarity. 
+An enumerated type (or enum) is a distinct type that defines a set of named constants, making your code more readable and maintainable. Enums are useful when you have a variable that identifies one value out of a small set of predefined values. Enums allows you to assign meaningful names to a set of integer values, improving code clarity. 
 
 The literal values are represented internally as integers. The first literal has the number 0, the next literal has the number 1, the next literal has the number 2, and so on. You can use **enum** values as integers in expressions. The default value for the first entry is **0**, or **false**.
 
@@ -204,7 +204,7 @@ The **guid** data type holds a *globally unique identifier* (GUID) value. A GUID
 
 The size of a **guid** is 16 bytes or 128-bits. The following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **any2guid**, **guid2str**, **newGuid**, **str2guid**, **Global::guidFromString**, and **Global::stringFromGuid**.
 
-There is only one way to create a new guid value, namely by using the newGuid() predefined function.
+There's only one way to create a new guid value, namely by using the newGuid() predefined function.
 
 ### guid examples
 
@@ -247,7 +247,7 @@ static void GuidRoundTripJob(Args _args)
 
 ### guid code output
 
-The following output appears in the Infolog. Note that the string includes the optional braces.
+The following output appears in the Infolog. The string includes the optional braces.
 
 ```xpp
 Message (02:26:46 pm)
@@ -449,7 +449,7 @@ To declare a string, use the **str** keyword.
 
 String literals are characters that are enclosed in either quotation marks ("") or single quotation marks. String literals can be used wherever string expressions are expected. Examples of string literals include "StringLit" and "Hello world". If you want the string to span more than one line, precede it with an at sign (@). You can use strings in logical expressions, such as comparisons. You can also concatenate strings by using the + operator.
 
-The default value for a string is **empty**, i.e. **""**, and the internal representation is a list of characters. There are no automatic conversions for strings, however, the following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **str2int**, **str2int64**, **int2str**, **str2num**, **num2str**, **str2date**, and **date2str**.
+The default value for a string is **empty**, that is **""**, and the internal representation is a list of characters. There are no automatic conversions for strings, however, the following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **str2int**, **str2int64**, **int2str**, **str2num**, **num2str**, **str2date**, and **date2str**.
 
 A string can hold a practically unlimited number of characters. You can specify the maximum length of a string in the variable declaration. The string is then truncated to that maximum length. An example is shown in the next section.
 
@@ -486,7 +486,7 @@ String values can be declared in X++ to contain a maximum number of characters. 
 
 ![FMCreditCardNum string size.](media/stringtruncation.png)
 
-Run the following code in the debugger by including it in a static **Main** method to observed the behavior.
+Run the following code in the debugger by including it in a static **Main** method to observe the behavior.
 
 ```xpp
 creditCardNumber = "12345678901234567890Excess string";
