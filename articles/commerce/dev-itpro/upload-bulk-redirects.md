@@ -2,7 +2,7 @@
 title: Upload URL redirects in bulk
 description: This article describes how to implement URL redirects in bulk by uploading a redirect comma-separate values (CSV) file in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/02/2024
+ms.date: 06/05/2025
 ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chrgriffin
