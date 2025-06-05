@@ -23,7 +23,7 @@ If your system doesn't already include the features described in this article, g
 
 The following prerequisites must be met before you execute purge data from history table:
 -  Only an archive job must been completed successfully, then user can select that archival job to have the data associated with it be purged from history table.
--  Users must select at least one archival job before they can click “Delete History (preview)”.
+-  Users must select at least one archival job before they can click “Delete history (Preview)”.
 
  > [!NOTE]
  > If an archival job is being restored or is scheduled to be restored, then a user can’t purge the data associated with that archival job.
@@ -34,7 +34,7 @@ To create a purge job to deleta data from history table,follow these steps.
 
 1. Go to **System administration** \> **Archive with Dataverse long term retention** to open the **Archive with Dataverse long term retention** workspace.
 2. Select an Archive Job or multiple Archive Jobs of the same functional secnarios.
-3. Select **Delete History（preview）** to open a warning popup with explicit confirmation message, confirm and submit the purge job.
+3. Select **Delete history（Preview）** to open a warning popup with explicit confirmation message, confirm and submit the purge job.
 
 ## Purge job status
 1. When a purge job can’t be executed instantly, its Job status shows 'Deletion queued'.
@@ -70,7 +70,7 @@ Users can monitor the status of purge jobs in real time through the results colu
  
 ### What safeguards are in place to prevent accidental data loss? 
 The Purge from History feature includes multiple safeguards: 
-1. The "Delete History Data" button is only enabled for completed archive jobs, ensuring no critical data is removed prematurely. 
+1. The "Delete history (Preview)" button is only enabled for completed archive jobs, ensuring no critical data is removed prematurely. 
 1. A confirmation pop-up requires users to acknowledge the irreversible nature of the purge process. 
 1. Archived data in Dataverse long-term retention remains unaffected by the purge from history feature. 
 
