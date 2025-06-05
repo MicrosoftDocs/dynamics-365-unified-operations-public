@@ -17,7 +17,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Security category export/import
 
 [!include [banner](../../../finance/includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Security categories offer options for both backing up as XML and restoring from XML. Learn more about the import process in [Import an existing category](security-category.md#import-an-existing-category). This article describes various scenarios that system administrators can handle.
 

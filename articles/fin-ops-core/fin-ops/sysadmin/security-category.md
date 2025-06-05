@@ -16,7 +16,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Set up security categories
 
 [!include [banner](../../../finance/includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Security categories
 
