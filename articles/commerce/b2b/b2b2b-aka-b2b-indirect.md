@@ -1,7 +1,7 @@
 ---
 
-title: Native support for B2B Indirect (aka B2B2B)  
-description: This document introduces native support for B2B Indirect (aka B2B2B) workflows within Dynamics 365 Commerce, detailing its features and benefits.  
+title: Native support for B2B Indirect (aka B2B2B) workflows in Dynamics 365 Commerce 
+description: This document provides an overview of introduction of native support for B2B Indirect (aka B2B2B) workflows within Dynamics 365 Commerce, detailing its features and benefits.  
 author: ashishmsft  
 ms.date: 06/05/2025  
 ms.topic: article  
@@ -15,9 +15,8 @@ ms.search.industry: retail
 ms.search.form: RetailOperations  
 ---
 
-# Introducing native support for B2B Indirect (aka B2B2B) workflows with Dynamics 365 Commerce
-
-A new feature with a new set of capabilities providing native support for powering B2B Indirect (aka B2B2B) workflows.
+# Native support for B2B Indirect (aka B2B2B) workflows in Dynamics 365 Commerce
+This document provides an overview of introduction of native support for B2B Indirect (aka B2B2B) workflows within Dynamics 365 Commerce, detailing its features and benefits.  
 
 ## What is B2B Indirect?
 
