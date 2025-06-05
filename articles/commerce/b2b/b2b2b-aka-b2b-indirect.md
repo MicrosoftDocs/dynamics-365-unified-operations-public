@@ -20,7 +20,7 @@ A new feature with new set of capabilities providing native support for powering
 ## What is B2B Indirect?
 B2B Indirect is a business strategy positioned within a multifaceted supply chain, where transactions occur from one company to another before reaching the end purchaser. This approach broadens market access by including multiple business intermediaries in the distribution cycle. For instance, producers of consumer packaged goods (CPG manufacturer) could distribute their products via a chain of distributors who then execute sales to business entities such as retail outlets.
 
-![(B2B Indirect (aka B2B2B) conceptual overview)](./media/B2B2B-Overview-Conceptual-Model.png)
+![B2B Indirect (aka B2B2B) conceptual overview](./media/B2B2B-Overview-Conceptual-Model.png)
 
 ## How does Dynamics 365 Commerce support B2B Indirect workflows?
 Dynamics 365 Commerce is a cloud-based platform that provides a comprehensive set of capabilities to enable B2B commerce scenarios. The platform supports both direct and indirect B2B workflows in a headless composable manner, allowing merchants to manage multiple types of business relationships and transactions. Some of the key features of Dynamics 365 Commerce for B2B Indirect workflows are:
