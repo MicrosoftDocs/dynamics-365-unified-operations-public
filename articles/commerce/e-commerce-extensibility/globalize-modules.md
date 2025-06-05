@@ -158,7 +158,7 @@ let options: IDateFormatOptions = <IDateFormatOptions>{};
 options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
 cultureInfoFormatter.formatDate(testDate);
-// expected output:  "Donnerstag, 20. Dezember 2012"
+// expected output:  "Donnerstag, 20. December 2012"
 ```
 
 ### Time formatting
