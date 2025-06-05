@@ -4,7 +4,7 @@ description: Fixed assets can be integrated with General ledger, Inventory manag
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 02/05/2025
+ms.date: 06/05/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -58,10 +58,10 @@ The accounts that fixed asset transactions are posted to depend on two factors: 
 
 The transaction type connects the inventory transaction to the posting profile in Fixed assets. Because the posting profile in Fixed assets defines which accounts are updated, the selection of a transaction type for a fixed asset is also, indirectly, the selection of the main accounts that the transaction is posted to. For both constructed and purchased fixed assets, the transaction type is typically **Acquisition** or **Acquisition adjustment**.
 
-Beginning in version **10.0.44**, the inventory‑closing recalculation automatically updates the fixed‑assets subledger for assets acquired via inventory items, generating an **Acquisition adjustment** transaction type and posting it to the acquisition‑adjustment account defined in your fixed‑assets posting profile page. 
-- When you adjust a purchase‑order invoice that includes an inventory item that was capitalized as a fixed asset, the inventory closing recalculation creates and posts the corresponding acquisition‑adjustment entry to the fixed‑assets subledger; similarly, if an inventory‑to‑fixed‑assets journal records a different costs for the same item to capitalize, the inventory closing recalculation adjustment applies and posts the adjustment to the fixed assets subledger.
-- If the purchase‑order invoice records a different acquisition cost for a fixed asset, that cost variance is automatically captured and posted to the fixed‑assets subledger through the inventory closing recalculation adjustment.
-- Likewise, if the inventory‑to‑fixed‑assets journal entry reflects a different acquisition cost for a fixed asset, the adjustment is automatically posted to the fixed‑assets subledger via the inventory closing recalculation adjustment.
+Starting in Dynamics 365 Finance version 10.0.44, the inventory‑closing recalculation automatically updates the fixed‑assets subledger for assets acquired via inventory items, generating an **Acquisition adjustment** transaction type and posting it to the acquisition‑adjustment account defined in the **Fixed assets posting profile** page. 
+- When you adjust a purchase order invoice that includes an inventory item that was capitalized as a fixed asset, the inventory closing recalculation creates and posts the corresponding acquisition adjustment entry to the fixed‑assets subledger. If an inventory to fixed‑assets journal records a different costs for the same item to capitalize, the inventory closing recalculation adjustment applies and posts the adjustment to the fixed assets subledger.
+- If the purchase order invoice records a different acquisition cost for a fixed asset, the cost variance is automatically captured and posted to the fixed assets subledger through the inventory closing recalculation adjustment.
+- If the inventory to fixed‑assets journal entry reflects a different acquisition cost for a fixed asset, the adjustment is automatically posted to the fixed assets subledger using the inventory closing recalculation adjustment.
 
 
 ## Accounts receivable
