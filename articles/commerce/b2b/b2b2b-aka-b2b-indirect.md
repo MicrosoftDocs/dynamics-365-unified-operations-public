@@ -23,7 +23,9 @@ A new feature with a new set of capabilities providing native support for poweri
 
 B2B Indirect is a business strategy positioned within a multifaceted supply chain, where transactions occur from one company to another before reaching the end purchaser. This approach broadens market access by including multiple business intermediaries in the distribution cycle. For instance, producers of consumer packaged goods (CPG manufacturers) could distribute their products via a chain of distributors who then execute sales to business entities such as retail outlets.
 
-![B2B2B Overview Conceptual Model](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/7b1629c2ea039fc765e1e458f7aa7b159b95bfc5/articles/commerce/media/B2B2B-Overview-Conceptual-Model.png)
+![]()
+
+![B2B2B Overview Conceptual Model](../media/B2B2B-Overview-Conceptual-Model.png)
 
 ## How does Dynamics 365 Commerce support B2B Indirect workflows?
 
@@ -48,7 +50,7 @@ Dynamics 365 Commerce is designed to support high-volume merchants and provides 
 
 ## B2B Seller Prospect Sign-up and Approval Process
 
-![B2B Seller (aka B2B Distributor) approval process visualized in simplest manner](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/af442c26ec0a38f0bf94a73b121c7fcf46787d14/articles/commerce/media/B2BSeller-Approval-Process.png)
+![B2B Seller (aka B2B Distributor) approval process visualized in simplest manner](../media/B2BSeller-Approval-Process.png)
 
 The following is a brief overview of the steps involved in becoming a B2B seller on the platform:
 
@@ -68,7 +70,7 @@ By following these steps, the B2B seller can become a part of the platform and c
 
 ## Overview of Capabilities
 
-![Evolution of Dynamics 365 Commerce to support B2B2B natively](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/881f7a1e4e7e200ea2ca07e79387faa37b592f10/articles/commerce/media/Evolution_of_B2B_to_B2B2B.png)
+![Evolution of Dynamics 365 Commerce to support B2B2B natively](../media/Evolution_of_B2B_to_B2B2B.png)
 
 As part of this feature, you will be able to natively leverage the following capabilities, in addition to all existing B2B capabilities that are already available:
 
@@ -83,4 +85,4 @@ As part of this feature, you will be able to natively leverage the following cap
 - Order history allows you to filter by various options, including the channel (B2B Seller or Manufacturer) where the order originated.
 - Lastly, there are additional APIs available to allow C1 from the B2B Seller (Distributor's) organization to manage their inventory on hand as well as accept or reject orders.
 
-![Glimpse into end-user experience using native experiences of B2B Indirect (aka B2B2B)](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/7e3bcd7f60066ae12e8f337c1ba2901e151e27e4/articles/commerce/media/B2B-Indirect-Experience-Glimpse.png)
+![Glimpse into end-user experience using native experiences of B2B Indirect (aka B2B2B)](../media/B2B-Indirect-Experience-Glimpse.png)
