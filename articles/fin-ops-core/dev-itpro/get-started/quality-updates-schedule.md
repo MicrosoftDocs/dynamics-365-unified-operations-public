@@ -82,7 +82,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.42 PQU-8 | August 22, 2025 | September 1, 2025 to October 5, 2025| Not Started |
 | 10.0.43 PQU-1 | April 9, 2025 | April 14, 2025 to May 18, 2025| Completed |
 | 10.0.43 PQU-2 | May 7, 2025 | May 12, 2025 to June 15, 2025| In-Progress |
-| 10.0.43 PQU-3 | June 4, 2025 | June 9, 2025 to July 13, 2025| Not Started |
+| 10.0.43 PQU-3 | June 4, 2025 | June 9, 2025 to July 13, 2025| In-Progress |
 | 10.0.43 PQU-4 | July 2, 2025 | July 7, 2025 to August 10, 2025| Not Started |
 | 10.0.43 PQU-5 | July 30, 2025 | August 4, 2025 to September 7, 2025| Not Started |
 | 10.0.43 PQU-6 | August 27, 2025 | September 1, 2025 to October 5, 2025| Not Started |
@@ -162,7 +162,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | June 30 to July 3, 2025 | July 12 to July 13, 2025 |
 | Station 6 | July 1 to July 4, 2025 | July 12 to July 13, 2025 |
 
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.43 Release-2 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.43 Release-2 train schedule
 
 **App version: 10.0.2177.96**
 
@@ -178,6 +178,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | May 26 to May 29, 2025 | June 7 to June 8, 2025 |
 | Station 5 | June 2 to June 5, 2025 | June 14 to June 15, 2025 |
 | Station 6 | June 3 to June 6, 2025 | June 14 to June 15, 2025 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.43 Release-3 train schedule
+
+**App version: 10.0.2177.120**
+
+**Platform version: 7.0.7521.224**
+
+**Unified Environment Provisioning Application Version: 10.0.43.7**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | June 9 to June 12, 2025 | NA |
+| Station 2 | June 16 to June 19, 2025 | June 28 to June 29, 2025 |
+| Station 3 | June 17 to June 20, 2025 | June 28 to June 29, 2025 |
+| Station 4 | June 23 to June 29, 2025 | July 5 to July 6, 2025 |
+| Station 5 | June 30 to July 3, 2025 | July 12 to July 13, 2025 |
+| Station 6 | July 1 to July 4, 2025 | July 12 to July 13, 2025 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that are notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
