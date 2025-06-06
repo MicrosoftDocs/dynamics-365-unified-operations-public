@@ -1,11 +1,11 @@
 ---
 title: Classes and methods
 description: Learn how to create and use classes and methods in X++, including overviews on how to declare classes and create instances of objects.
-author: josaw1
-ms.author: josaw
+author: pvillads
+ms.author: pvillads
 ms.topic: article
-ms.date: 08/27/2021
-ms.reviewer: johnmichalak
+ms.date: 06/06/2025
+ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -16,15 +16,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to create and use classes and methods in X++. Most of semantics and syntax of classes and methods are very similar to the semantics from other programming languages, like Java or C#. Classes and methods in X++ map very closely to classes and methods in the managed runtime. In fact, classes from .NET can be directly used from X++.
+This article describes how to create and use classes and methods in X++. Most of semantics and syntax of classes and methods are very similar to the semantics from other programming languages, like Java or C#. Classes and methods in X++ map closely to classes and methods in the managed runtime. In fact, classes from .NET can be directly used from X++.
 
-A *class* is a software construct that defines the data and methods of the instances that are later constructed from that class. The *class* is an abstraction of an *object* in the problem domain. The instances that can be constructed from the *class* are known as *instances* or *objects*. This article uses the term *instance*. The data represents the state of the object, whereas the methods represent the behavior of the object.
+A *class* is a software construct that defines the data and methods of the instances that are later constructed from that class. The *class* is an abstraction of an *object* in the problem domain. The instances that can be constructed from the *class* are known as *instances* or *objects*. This article uses the term *instance*. The data represents the state of the object and the methods represent the behavior of the object.
 
-*Fields* contain the data for the class. Every instance that is constructed from the class declaration has its own copy of the fields. These are known as *instance fields*. This article will use the term *field* in most cases.
+*Fields* contain the data for the class. Every instance that's constructed from the class declaration has its own copy of the fields. These are known as *instance fields*. This article uses the term *field* in most cases.
 
 *Methods* define the behavior of a class. They contain the statements that operate on the data. By default, methods are declared to operate on the instance fields of the class. These methods are known as *instance methods* or *object methods*.
 
-You can declare *static methods* and *static fields*, that do not have access to *instance fields*. These are described in [X++ static classes](xpp-static-classes.md).
+You can declare *static methods* and *static fields* that don't have access to *instance fields*. These are described in [X++ static classes](xpp-static-classes.md).
 
 ## Declare a class
 
@@ -43,7 +43,7 @@ Instance fields are **protected** by default. This means that they can only be a
 > [!NOTE]
 > Making a member field public may not be a good idea since it exposes the internal workings of the class to its consumers, creating a strong dependency between the class implementation and its consumers. You should always strive to only depend on a contract, not an implementation.
 
-You can assign a value to a field inline, that is, along with the declaration of the field itself. This applies to both static and instance fields. These values will be assigned as the class is initialized (for instance classes), or when the sdttic constructor (**typeNew**) is called.
+You can assign a value to a field inline along with the declaration of the field itself. This applies to both static and instance fields. These values are assigned as the class is initialized (for instance classes), or when the satic constructor (**typeNew**) is called.
 
 The following example shows how to use accessor methods to make the field data public. The field **firstName** is protected, so accessor (get and set) methods are implemented to allow access to the protected field. The field **lastName** is public, so code can directly get and set the value of the field.
 
@@ -91,7 +91,7 @@ class MyClass
 }
 ```
 
-One particularly useful attribute is the **SysObsolete** attribute. If the **SysObsolete** attribute is applied to a field, then the compiler generates an error or warning on any reference to the field. Whether it's a warning or error depends on the second parameter in the attribute, as shown below
+One particularly useful attribute is the **SysObsolete** attribute. If the **SysObsolete** attribute is applied to a field, then the compiler generates an error or warning on any reference to the field. Whether it's a warning or error depends on the second parameter in the attribute, as shown below:
 
 ```xpp
 class MyClass
@@ -105,11 +105,11 @@ class MyClass
 
 ## Constructors
 
-To create an instance of a class, you must instantiate it. The class is instantiated by using the **new** keyword. When the **new** expression is evaluated, memory will be allocated on the heap for that state, and the *constructor* will be called.
+To create an instance of a class, you must instantiate it. The class is instantiated by using the **new** keyword. When the **new** expression is evaluated, memory is allocated on the heap for that state, and the *constructor* is called.
 
-+ You can define only one **new** method (constructor) in a class.
-+ If you do not define a constructor, a default constructor with no parameters is created automatically by the compiler.
-+ You can simulate a default constructor by assigning default values to the parameters in the **new** method.
+ - You can define only one **new** method (constructor) in a class.
+ - If you do not define a constructor, a default constructor with no parameters is created automatically by the compiler.
+ - You can simulate a default constructor by assigning default values to the parameters in the **new** method.
 
 The following example defines a parameterless constructor in the **Point** class.
 
@@ -128,13 +128,13 @@ class Point
 }
 ```
 
-In the follwoing we describe how to create a clean inheritance model and minimize problems when code is upgraded.
+To create a clean inheritance model and minimize problems when code is upgraded, follow these steps:
 
-+ Each class must have a single public construction method unless the class is abstract. 
-+ Each class should have at least one static **construct** method.
-+ Each class should have a **new** method (the constructor). This method should be **protected**.
-+ Create accessor methods to get and set class fields.
-+ Create **init** methods to carry out any specialized initialization tasks that should be carried out after instantiation.
+ - Each class must have a single public construction method unless the class is abstract.
+ - Each class should have at least one static **construct** method.
+ - Each class should have a **new** method (the constructor). This method should be **protected**.
+ - Create accessor methods to get and set class fields.
+ - Create **init** methods to carry out any specialized initialization tasks after instantiation.
 
 ## Create an instance of an object
 
@@ -154,7 +154,7 @@ Instances are automatically destroyed when there are no references to them.
 
 ### Use the finalize method
 
-Use the **finalize** method if  you must explicitly clean up the state of an object. This is a convention - there is no special semantics for this method, and there are no implicit calls made to the **finalize** method when the object is disposed by the managed runtime. You must explicity call the method if you want to expliticly clean up. In the large majority of cases, you will not need to provide finalize methods.
+Use the **finalize** method to explicitly clean up the state of an object. This is a convention, there's no special semantics for this method, and no implicit calls made to the **finalize** method when the object is disposed by the managed runtime. You must explicity call the method if you want to expliticly clean up. In the large majority of cases, you won't need to provide finalize methods.
 
 ### Set reference variable to null
 
@@ -197,7 +197,7 @@ info(int2Str(area));
 
 ### Static methods
 
-Static methods, which are also known as *class methods*, belong to a class and are defined by using the  **static** keyword. You don't have to instantiate an object before you use static methods. Static methods can access the values of the class static fields and call static methods.
+Static methods, which are also known as *class methods*, belong to a class and are defined by using the **static** keyword. You don't have to instantiate an object before you use static methods. Static methods can access the values of the class static fields and call static methods.
 
 You use the following syntax to call static methods.
 
@@ -224,7 +224,7 @@ Method declarations consist of a header and a body. The method header declares t
 
 A return type is required for each method. If a method doesn't return anything, use the **void** keyword as the return type.
 
-The following example shows two methods. One method has a return type, but the other method doesn't have a return type.
+The following example shows two methods. One method has a return type, and the other method doesn't have a return type.
 
 ```xpp
 void methodWithNoReturnValue()
@@ -308,21 +308,21 @@ boolean checkAccountBlocked(AmountCur amountCur)
 
 Several modifiers can be applied to method declarations. Some of the modifiers can be combined (for example, **final static**). Here are the method modifier keywords:
 
-+ **abstract**: The method is declared but isn't implemented. The method must be overridden in all subclasses. If you try to create an object from a subclass where one or more abstract methods that belong to the parent class haven't been overridden, you receive a compiler error. Abstract methods can only be defined in abstract classes.
+ - **abstract** - The method is declared but isn't implemented. The method must be overridden in all subclasses. If you try to create an object from a subclass where one or more abstract methods that belong to the parent class haven't been overridden, you receive a compiler error. Abstract methods can only be defined in abstract classes.
 
 Classes can also be abstract. Sometimes, a class should not be instantiated becuase it represents an abstract concept. Only subclasses should be instantiated. Base classes of this type can be declared as **abstract**. For example, you want to model the concept of an account. Accounts are abstract entities, because only derived classes (savings accounts and so on) exist in the real world. This example describes a clear case where you should declare the **Account** class as **abstract** and have derived classes for CheckingAccount and SavingsAccount and so on.
-+ **display**: The method's return value should be shown on a page or a report. The value can't be modified on the page or report. Typically, the return value is a calculated value, such as a sum.
-+ **edit**: The method's return type should be used to provide information for a field that is used on a page. The value in the field can be modified.
-+ **final**: The method can't be overridden in any class that derives from its class.
-+ **public**: Methods that are declared as **public** can be accessed anywhere that the class is accessible, and they can be overridden by subclasses. Methods that have no access modifier are implicitly public.
-+ **protected**: Methods that are declared as **protected** can be called only from methods in the class and in subclasses that extend the class where the method is declared.
-+ **private**: Methods that are declared as **private** can be called only from methods in the class where the private method is declared.
-+ **internal**: Methods that are declared as **internal** can be called only from methods in the class that are defined in the same model as the class where the method is defined.
-+ **static**: The method is a class method. Static methods can't refer to instance fields. They aren't invoked on an instance of the class. Instead, they are invoked by using the class name (for example, **MyClass::aStaticProcedure()**).
+ - **display** - The method's return value should be shown on a page or a report. The value can't be modified on the page or report. Typically, the return value is a calculated value, such as a sum.
+ - **edit** - The method's return type used to provide information for a field that is used on a page. The value in the field can be modified.
+ - **final** - The method can't be overridden in any class that derives from its class.
+ - **public** - Methods that are declared as **public** can be accessed anywhere that the class is accessible, and they can be overridden by subclasses. Methods that have no access modifier are implicitly public.
+ - **protected** - Methods that are declared as **protected** can only be called from methods in the class and in subclasses that extend the class where the method is declared.
+ - **private** - Methods that are declared as **private** can only be called from methods in the class where the private method is declared.
+ - **internal** - Methods that are declared as **internal** can only be called from methods in the class that are defined in the same model as the class where the method is defined.
+ - **static** - The method is a class method. Static methods can't refer to instance fields. They aren't invoked on an instance of the class. Instead, they are invoked by using the class name (for example, **MyClass::aStaticProcedure()**).
 
 ### Methods that have modifiers
 
-The following examples show only the method headers.
+The following examples only show the method headers.
 
 ```xpp
 // A method that cannot be overridden
@@ -337,13 +337,14 @@ display int value()
 
 ## Method access control
 
-You use the accessor keywords **public**, **protected**, and **private** to control whether the methods in other classes can call the methods on your class. The accessor keywords on methods also interact with the rules for class inheritance. Here are the accessor keywords that you use with methods:
+You use the accessor keywords **public**, **protected**, and **private** to control if the methods in other classes can call the methods on your class. The accessor keywords on methods also interact with the rules for class inheritance. 
 
-+ **public**: Methods that are declared as **public** can be called from anywhere that the class is accessible. In addition, a public method can be overridden by a subclass, unless the method is declared as **final**.
-+ **protected**: Methods that are declared as **protected** can be called only from the following methods:
-    + Methods in the class.
-    + Methods in a subclass of the class that contains the protected method. Methods that are protected can be overridden in subclasses.
-+ **private**: Methods that are declared as **private** can be called only from methods in the class where the private method is declared. No private method can be overridden in a subclass. You should hide implementation details as private methods to make maintenance of your code easier.
+The accessor keywords that you use with methods:
+ - **public** - Methods that are declared as **public** can be called from anywhere that the class is accessible. In addition, a public method can be overridden by a subclass, unless the method is declared as **final**.
+ - **protected** - Methods that are declared as **protected** can be called only from the following methods:
+      - Methods in the class.
+      - Methods in a subclass of the class that contains the protected method. Methods that are protected can be overridden in subclasses.
+ - **private** - Methods that are declared as **private** can only be called from methods in the class where the private method is declared. No private method can be overridden in a subclass. You should hide implementation details as private methods to make maintenance of your code easier.
 
 ### Static and instance methods
 
@@ -352,10 +353,9 @@ The accessor keywords on methods never restrict calls between two methods that a
 ### Increasing access during overrides
 
 When a method is overridden in a subclass, the overriding method must be at least as accessible as the overridden method. For example, the following compiler rules apply when a protected method is overridden in a subclass:
-
-+ A public method in a superclass can be overridden only by a public method in the subclass.
-+ In a subclass, a public or protected method can override a protected method of the superclass.
-+ In a subclass, a private method can't override a protected method of the superclass.
+ - A public method in a superclass can be overridden only by a public method in the subclass.
+ - In a subclass, a public or protected method can override a protected method of the superclass.
+ - In a subclass, a private method can't override a protected method of the superclass.
 
 ## Optional parameters
 
@@ -401,7 +401,7 @@ class Person
 }
 ```
 
-This shows how you cannot skip to a second optional parameter. The **addThreeInts** method has two optional parameters. The **callAdditions** method calls the **AddThreeInts** method. The commented out code tries to provide a value only to the **\_i3** parameter (but not for **\_i2**), but the compiler requires that all prior mandatory and optional parameters also be provided in the call.
+This shows how you can't skip to a second optional parameter. The **addThreeInts** method has two optional parameters. The **callAdditions** method calls the **AddThreeInts** method. The commented out code tries to provide a value only to the **\_i3** parameter (but not for **\_i2**), but the compiler requires that all prior mandatory and optional parameters also be provided in the call.
 
 ```xpp
 class Additions
@@ -483,7 +483,7 @@ There are other ways to implement the accessors to private fields. Consider the 
     }
 ```
 
-There is yet another way where the prmIsDefault predefined function is used to determine at runtime if the parameter was provided when the methods was called.
+There's another way where the prmIsDefault predefined function is used to determine at runtime if the parameter was provided when the methods was called.
 
 ```xpp
     public int parmX(int _x = x)
@@ -497,11 +497,11 @@ There is yet another way where the prmIsDefault predefined function is used to d
     }
 ```
 
-In both cases the parm* method can be called with a parameter, which will set the field, or without parameters, which will just return it. In this way, there is only one accessor method instead of two. In any case, the convention is to use a naming convention to identify these methods, naming them with a "parm" prefix.
+In both cases the *parm* method can be called with a parameter, which sets the field, or without parameters, which just returns it. In this way, there is only one accessor method instead of two. In any case, the convention is to use a naming convention to identify these methods, naming them with a "parm" prefix.
 
 ## Parameters
 
-All methods define their own *scope*. Within the scope of the method, the parameters are treated as local variables and are initialized with a value from the expression in the method call. All parameters are passed by value, If a variable is used as a parameter value in the call, that variable will not reflect any changes made to the parameter.
+All methods define their own *scope*. Within the scope of the method, the parameters are treated as local variables and are initialized with a value from the expression in the method call. All parameters are passed by value, if a variable is used as a parameter value in the call, that variable won't reflect any changes made to the parameter.
 
 ## Scope of variables in methods
 
@@ -511,12 +511,12 @@ A scope defines the area in which an item can be accessed. Variables that are de
 
 You can declare functions inside a method. These are called local functions.
 
-+ You can declare more any number of local function in your method. 
-+ Code that is inside the local function can access variables that are declared before it in the method that contains the local function, i.e. in its outer scope.
-+ Code that is outside the local function can't access variables that are declared in the local function.
-+ A local function can be called only by code in the method where the local function is declared.
+ - You can declare more any number of local function in your method.
+ - Code that's inside the local function can access variables that are declared before it in the method that contains the local function.
+ - Code that's outside the local function can't access variables that are declared in the local function.
+ - A local function can only be called by code in the method where the local function is declared.
 
-The following example shows valid declarations of two local functions, **localFunctionA** and **localFunctionB**. Calls to the local functions occur after the function declarations in the example, as is required.
+The following example shows valid declarations of two local functions, **localFunctionA** and **localFunctionB**. Calls to the local functions occur after the function declarations as required.
 
 ```xpp
 static void StaticFunction()
@@ -552,14 +552,14 @@ static void StaticFunction()
 
 ## Extension methods
 
-The extension method feature lets you add extension methods to a target class by writing the methods in a separate extension class. From the user's perspective it is as if the extension method was written on the extended method. The following rules apply:
+The extension method feature adds extension methods to a target class by writing the methods in a separate extension class. From the user's perspective, it's if the extension method was written on the extended method. The following rules apply:
 
 - The extension class must be static.
 - The name of the extension class must end with the ten-character suffix \_Extension. However, there's no restriction on the part of the name that precedes the suffix.
 - Every extension method in the extension class must be declared as public static.
 - The first parameter in every extension method is the type that the extension method extends. However, when the extension method is called, the caller must not pass in anything for the first parameter. Instead, the system automatically passes in the required object for the first parameter.
 
-It's perfectly valid to have private or protected static methods in an extension class. These are typically used for implementation details and are not exposed as extensions. The example below illustrates an extension class holding a few extension methods:
+It's perfectly valid to have private or protected static methods in an extension class. These are typically used for implementation details and aren't exposed as extensions. The example below illustrates an extension class holding a few extension methods:
 
 ```xpp
 public static class AtlInventLocation_Extension
@@ -600,15 +600,14 @@ Regardless of the target type, an extension *class* is used to add extension met
 
 The **this** keyword is a reference to the instance of the class or table where the **this** keyword is used. The **this** reference is required on instance method calls (if the method called in on a class in the class or any of its superclasses), but it can clarify your code and enhances the behavior of IntelliSense in the code editor. All calls to instance methods must be qualified by either the **this** reference or a variable. The **this** reference can be used to qualify the following information:
 
-+ The names of other instance (non-static) methods in the same class where the **this** reference is used. Here is an example: `boolColorChanged = this.colorItOrange();`
-+ The names of methods that are inherited by the **this** object.
-+ The names of fields on the table that contains the method that the **this** keyword is used in.
+ - The names of other instance (non-static) methods in the same class where the **this** reference is used. Here is an example: `boolColorChanged = this.colorItOrange();`
+ - The names of methods that are inherited by the **this** object.
+ - The names of fields on the table that contains the method that the **this** keyword is used in.
 
 The **this** reference can't be used in the following ways:
-
-+ It can't qualify the names of member variables that are declared in the **classDeclaration** code.
-+ It can't be used in a static method.
-+ It can't qualify the names of static methods of the class or table.
+ - It can't qualify the names of member variables that are declared in the **classDeclaration** code.
+ - It can't be used in a static method.
+ - It can't qualify the names of static methods of the class or table.
 
 ## Nested classes
 
@@ -616,6 +615,6 @@ Classes can be nested in X++ source code. Nested classes are available only insi
 
 ## Jobs
 
-To quickly and easily run an X++ method, add a `static Main(xArgs args)` method to a class, and then set the class as the startup object form for the project in Microsoft Visual Studio. When the project is run, the `Main` method will be executed.
+To quickly and easily run an X++ method, add a `static Main(xArgs args)` method to a class, and then set the class as the startup object form for the project in Microsoft Visual Studio. When the project is run, the `Main` method is executed.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
