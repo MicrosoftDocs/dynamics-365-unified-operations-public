@@ -41,10 +41,10 @@ Dynamics 365 Commerce is designed to support high-volume merchants and provides 
 
 ![Evolution of Dynamics 365 Commerce to support B2B2B natively](../media/EvolutionB2BtoB2B2B.png)
 
-- B2B Indirect workflows are introduced as a natural extension to existing B2B workflows, applying the same platform capabilities and data model, and providing a consistent and seamless user experience.
-- B2B Indirect workflows are available in a headless manner, meaning that merchants can use the platform's APIs and SDKs to build custom extensions and integrations to fit their existing business processes and workflows.
+- B2B Indirect workflows build on the existing B2B workflows. They use the same platform features and data model, so users get a consistent and smooth experience.
+- B2B Indirect workflows are available in a headless manner. This means merchants can use the platform's APIs and SDKs to build custom extensions and integrations that fit their existing business processes.
 - B2B Indirect workflows are scalable, secure, and reliable, as they're built on the Microsoft Azure cloud platform, which offers high availability, performance, and compliance.
-- B2B Indirect workflows are flexible and customizable, allowing merchants to configure and modify various aspects of the platform, such as business rules, user interface, workflows, and more, to suit their specific business needs and preferences.
+- B2B Indirect workflows are flexible and customizable. Merchants can configure many parts of the platform—such as business rules, the user interface, and workflows—to fit their specific needs.
 
 ## B2B Seller Prospect Sign-up and Approval Process
 
