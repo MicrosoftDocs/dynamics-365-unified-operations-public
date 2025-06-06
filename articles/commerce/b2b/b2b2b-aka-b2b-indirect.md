@@ -14,7 +14,7 @@ ms.search.industry: retail
 ms.search.form: RetailOperations  
 ---
 
-# Unlock B2B2B Commerce: Native Indirect B2B Workflows in Dynamics 365 Commerce 
+# Unlock B2B2B Commerce: Native Indirect B2B Workflows in Dynamics 365 Commerce
 Get insights on B2B2B commerce in Dynamics 365 Commerce, featuring native indirect B2B workflows for efficient and scalable business operations.
 
 ## What is B2B Indirect?
