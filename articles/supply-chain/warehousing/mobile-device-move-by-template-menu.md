@@ -28,7 +28,12 @@ This article explains how to set up a mobile device menu item that lets workers 
 1. On the **General** FastTab, set the following fields:
 
     - **Work creation process** – Select *Movement by template*, because this type of work is what the menu item supports. The page is updated to provide settings that are relevant to this type of work.
-    - **Display inventory status** – Set this option to *Yes* to show the inventory status on the device. Set it to *No* to use the default inventory status. If the items that are moved have only one inventory status, that status is the default status. If you use only one inventory status, you typically won't have to show this information.
+    - **Display inventory status** 
+        - If this option set to *Yes* the inventory status will be shown on the device. In that case, if the *default data* is set for *from inventory status* or *to inventory status* on the mobile device menu item, those values will be used as defaults.
+        - If this option set to *No*, the default inventory status specified on *Warehouse management parameters* or on *Warehouse* level will be used. 
+        > [!Note] 
+        > If the items that are moved have only one inventory status, that status is the default status. If you use only one inventory status, you typically won't have to show this information.
+
     - **Use default data** – Set this option to *Yes* if you want specific data fields to be shown by default to workers who use the mobile app. Default data field values can provide information that workers typically need in their daily work. After you set this option to *Yes*, select **Default data** on the Action Pane to open a page where you can select the fields to show. For example, the *From location* field is often useful. Set this option to *No* if you don't want to select any default data for the menu item.
     - **Use process guide** – Set this option to *No*, because process guide isn't currently supported for movements of items.
     - **Barcode data policy** – Select the policy to use when multiple fields are filled in based on a single bar code scan. Learn more in [GS1 bar codes](gs1-barcodes.md).
