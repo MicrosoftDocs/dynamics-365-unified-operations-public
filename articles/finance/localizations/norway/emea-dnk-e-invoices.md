@@ -16,7 +16,7 @@ ms.search.validFrom: 2021-01-01
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to configure and issue customer electronic invoices in Denmark by using the [OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html) format for electronic invoices.
+This article explains how to set up and process electronic invoices in Denmark in Microsoft Dynamics 365 Finance.
 
 ## Prerequisites
 
@@ -61,7 +61,7 @@ To configure legal entity parameters, follow these steps.
 
 ### Configure methods of payment
 
-According to OIOUBL standards, the payment method codes in the XML file output of electronic invoices must comply with the [official list of standardized codes](http://www.oioubl.info/codelists/en/urn_oioubl_codelist_paymentmeanscode-1.1.html).
+According to OIOUBL standards, the payment method codes in the XML file output of electronic invoices must comply with the [official list of standardized codes](https://oioubl21.oioubl.dk/codelists/en/urn_oioubl_codelist_paymentmeanscode-1.1.html).
 
 The system supports the following predefined codes for payment methods and provides automatic conversion to the official codes.
 
@@ -97,7 +97,7 @@ When you generate electronic invoices in OIOUBL format, the tax information in t
 
 The top level of the hierarchy is **Tax Scheme**. <!-- The provided link appears to be broken For the official list of tax schemes that are applicable to the OIOUBL format, see [OIOUBL Tax Schemes](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TaxSchemeID-1.5.pdf). -->
 
-The next level of tax data grouping, within the tax scheme, is **Tax Category**. For the official list of tax categories that are applicable to the OIOUBL format, see [OIOUBL Tax Categories](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TAXCATEGORYID.pdf). 
+The next level of tax data grouping, within the tax scheme, is **Tax Category**. For the official list of tax categories that are applicable to the OIOUBL format, see [OIOUBL Tax Categories](https://oioubl21.oioubl.dk/documents/da/da/Kodelister/OIOUBL_CODE_TAXCATEGORYID.pdf). 
 
 For some taxes, an additional attribute, **Tax Type Code**, must also be defined.
 
