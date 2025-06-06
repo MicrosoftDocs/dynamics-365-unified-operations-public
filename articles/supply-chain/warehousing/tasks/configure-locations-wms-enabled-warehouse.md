@@ -165,6 +165,9 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 7. Select **Save**.
 8. Close the page.
 
+> [!NOTE]
+> Stocking limits can be exceeded under specific conditions, such as replenishment with over location capacity enabled and configured, see [Location stocking limits](../location-stocking-limits.md) and [Replenishment over location capacity](../replenishment-over-location-capacity.md).
+
 ## Define fixed picking locations
 
 1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Fixed locations**. You can define the locations to be used per product or per product variant. It's possible to create multiple fixed locations for the same product within the same warehouse.

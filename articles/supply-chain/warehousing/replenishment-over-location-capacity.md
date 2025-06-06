@@ -46,6 +46,8 @@ Enable the replenish over capacity functionality on the location profile.
 
         When enabled, the maximum capacity of the location will be allowed to be exceeded by replenishment work. This also enables other fields on the **Replenishment** FastTab.
 
+        Note that this parameter only enables the feature. For it to be fully in effect, **Work availability threshold type** and the associated value and unit need to be set as well.
+
     - **Work availability threshold type:** *Quantity*
 
         This field defines the method that is used to determine when more work should be released. You can release by either quantity or a percentage:
@@ -86,6 +88,9 @@ Enable the replenish over capacity functionality on the location profile.
 
 > [!IMPORTANT]
 > If you're using the demo data for the **USMF** legal entity and previously turned on the *Location license plate positioning* feature, you must turn off the **Enable license plate positioning** setting for the **BULK-06** location profile to complete the mobile steps in the example scenario.
+
+> [!NOTE]
+> Replenishment settings under Location Profile only affect replenishment work, standard work orders are still subject to configured stocking limits.
 
 ### Wave step code
 
@@ -393,7 +398,7 @@ You can now pick sales order 2. It became unblocked when the replenishment work 
 
 - This functionality works with all types of replenishment: wave demand, min/max, load demand, and slotting.
 - You can manually override the replenishment work availability for each work header from the **Work details** page if you want.
-- When the system sets the replenishment work availability, it considers any inventory that is already in the location before any work is completed
+- When the system sets the replenishment work availability, it considers any inventory that is already in the location before any work is completed.
 - Each piece of sales order work is linked to a specific replenishment work. There is no corresponding sales work availability functionality.
 
 
