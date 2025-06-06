@@ -133,18 +133,18 @@ To create a new channel profile in headquarters and update the existing store re
 
     > [!IMPORTANT]
      ### Update CDX data groups
-        The following change removes the default database from the Commerce Data Exchange (CDX) data groups in headquarters, because this database is no longer used. Failure to make this update can result in data sync errors later on. 
+     The following change removes the default database from the Commerce Data Exchange (CDX) data groups in headquarters, because this database is no longer used. Failure to make this update can result in data sync errors later on. 
 
-        To update CDX data groups in headquarters, follow these steps.
+     To update CDX data groups in headquarters, follow these steps.
 
-        1. Go to **Retail and Commerce \> Distribution Schedule**.
-        1. Select the **Default Data** group.
-        1. Remove the default database record from this group.
+     1. Go to **Retail and Commerce \> Distribution Schedule**.
+     1. Select the **Default Data** group.
+     1. Remove the default database record from this group.
 
     > For on-premises deployments, there's no **Default** channel data group. Create a new data group (and associate it to the channel database and distribution schedule jobs).
     
 ## Download and Install a new Commerce Scale Unit
-To download and execute the Commerce Scale Unit installer, see [Downloading and Running the Commerce Scale Unit Installer](retail-store-scale-unit-download-install). This article describes the steps necessary to download required configuration from Headquarters, download the installation program, and how to run the installer.
+To download and execute the Commerce Scale Unit installer, see [Downloading and Running the Commerce Scale Unit Installer](retail-store-scale-unit-download-install.md). This article describes the steps necessary to download required configuration from Headquarters, download the installation program, and how to run the installer.
 
 Once installation is complete, return here for security recommendations and troubleshooting.
 

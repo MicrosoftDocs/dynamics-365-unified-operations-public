@@ -127,7 +127,7 @@ To install the .NET Core hosting bundle on the development machine, follow these
 
 
 ## Download and Install
-To download and execute the Commerce Scale Unit installer, see [Downloading and Running the Commerce Scale Unit Installer](retail-store-scale-unit-download-install). This article describes the steps necessary to download required configuration from Headquarters, download the installation program, and how to run the installer.
+To download and execute the Commerce Scale Unit installer, see [Downloading and Running the Commerce Scale Unit Installer](retail-store-scale-unit-download-install.md). This article describes the steps necessary to download required configuration from Headquarters, download the installation program, and how to run the installer.
 
 Once installation is complete, return here.
 
@@ -139,7 +139,7 @@ The setup steps in [Download and Install](#download-and-install) assume that you
 
 ## Database restores from UAT
 
-If you previously set up a sealed CSU using the steps in [Install the sealed CSU](#install-the-sealed-csu) and then restored the headquarters database from another environment, you must perform the following steps to make the sealed CSU functional again. 
+If you previously set up a sealed CSU using the steps in [Download and Install](#download-and-install) and then restored the headquarters database from another environment, you must perform the following steps to make the sealed CSU functional again. 
 
 1. To recreate the records, follow the steps in [Update Commerce headquarters](#update-commerce-headquarters). 
     > [!NOTE]

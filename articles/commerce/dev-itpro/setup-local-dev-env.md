@@ -34,7 +34,7 @@ Commerce supports both cloud-based environments and local environments.
 + **Local:** You have two options for setting up a development environment on your own machine:
 
     - **Self-hosted CSU** – This environment type deploys the CSU locally (self-hosted as an executable file). There's no Internet Information Services (IIS), Commerce data synchronization, or Commerce headquarters connectivity for real-time calls. If you use this option, no data synchronization occurs between Commerce headquarters and CSU channel databases. Channel databases are filled with the default demo data for development purposes. All requests and calls to Commerce headquarters, such as a call to issue a gift card, are mocked by the local CSU.
-    - **IIS-hosted CSU** – This environment type deploys the CSU in IIS and sets up an Async Client to sync the data between Commerce headquarters and CSU channel databases. It also sets up support for real-time connections with Commerce headquarters. This setup requires some additional configuration. For example, Microsoft Entr apps must be set up, and certificates must be deployed. For detailed information about how to install the IIS-hosted CSU, see [Configure and install IIS-Hosted Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md#configure-a-new-commerce-scale-unit).
+    - **IIS-hosted CSU** – This environment type deploys the CSU in IIS and sets up an Async Client to sync the data between Commerce headquarters and CSU channel databases. It also sets up support for real-time connections with Commerce headquarters. This setup requires some additional configuration. For example, Microsoft Entra apps must be set up, and certificates must be deployed. For detailed information about how to install the IIS-hosted CSU, see [Configure and install IIS-Hosted Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md#configure-and-install-commerce-scale-unit(self-hosted)).
 
 ## Hardware requirements
 
@@ -77,8 +77,8 @@ IIS mode is a complete on-premises scale unit, where all the components match re
 
 Before you set up the self-hosted or IIS-hosted environment, complete the following prerequisites in this order:
 
-1. Install .NET Core SDK 6.0 for Windows x64 from [Download .NET Core 6.0](https://dotnet.microsoft.com/download/dotnet/6.0).
-2. Install ASP.NET Core Runtime 6.0.x Hosting Bundle for Windows from [Download ASP.NET Core Runtime 6.0](https://dotnet.microsoft.com/download/dotnet/6.0)(select **Hosting Bundle**, not **x64** or **x86**).
+1. Install .NET Core SDK 8.0 for Windows x64 from [Download .NET Core 8.0](https://dotnet.microsoft.com/download/dotnet/8.0).
+2. Install ASP.NET Core Runtime 8.0.x Hosting Bundle for Windows from [Download ASP.NET Core Runtime 8.0](https://dotnet.microsoft.com/download/dotnet/8.0)(select **Hosting Bundle**, not **x64** or **x86**).
 3. Install any edition of [SQL server](/sql/database-engine/install-windows/install-sql-server), and enable full text search. For more information, see [Add Features to an Instance of SQL Server (Setup)](/sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup). The minimum supported version is 13.0.5026.0 SqlServer 2016 SP2.
 
     + Enable Mixed (SQL + Windows/Integrated) authentication.
@@ -133,7 +133,7 @@ Before you set up the self-hosted or IIS-hosted environment, complete the follow
     - **baseProduct\_RetailServerAadResourceId** – The value is the resource ID of the registered Microsoft Entra application. Use the value that is described as the "application ID URI" in step 3c in [How to configure CPOS to use your own Microsoft Entra application](https://community.dynamics.com/blogs/post/?postid=1b41fd96-951d-4f6f-a657-ca59229598df).
     - **baseProduct\_CposAadClientId** – The value is the Microsoft Entra application client ID that represents CPOS. To create the application and retrieve its application (client) ID, follow step 4 in [How to configure CPOS to use your own Microsoft Entra application](https://community.dynamics.com/blogs/post/?postid=1b41fd96-951d-4f6f-a657-ca59229598df). This step completes the CSU/CPOS setup in Microsoft Entra ID. To complete the required setup in Commerce headquarters, follow step 6 in [How to configure CPOS to use your own Microsoft Entra application](https://community.dynamics.com/blogs/post/?postid=1b41fd96-951d-4f6f-a657-ca59229598df).
     - **baseProduct\_AsyncClientAadClientId** – The value is the Microsoft Entra application client ID that Async Client uses when it must authenticate with Commerce headquarters. To create this application, register one more Microsoft Entra application by following steps 3a through 3b in [How to configure CPOS to use your own Microsoft Entra application](https://community.dynamics.com/blogs/post/?postid=1b41fd96-951d-4f6f-a657-ca59229598df). To register only the created application with Commerce headquarters, follow step 2 in [Service to Service authentication in AX7](https://community.dynamics.com/blogs/post/?postid=35a253ca-e72e-4247-8b11-c5a76575a3b3).
-    - **baseProduct\_Config** – Specify only the file name (not the full path) that corresponds to the channel database configuration that can be downloaded from Commerce headquarters as described in step 4 in [Download the CSU installer](retail-store-scale-unit-configuration-installation.md#download-the-commerce-scale-unit-installer). After you download the file from Commerce headquarters, put it in the [Download](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-ScaleUnit?path=/src/ScaleUnitSample/Download&version=GC0acfab2d3d7cbd734ea5b19f2b2ac6713d7391ef) folder.
+    - **baseProduct\_Config** – Specify only the file name (not the full path) that corresponds to the channel database configuration that can be downloaded from Commerce headquarters as described in [Download the Commerce Scale Unit channel configuration file](retail-store-scale-unit-download-install.md#download-the-commerce-scale-unit-channel-configuration-file). After you download the file from Commerce headquarters, put it in the [Download](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-ScaleUnit?path=/src/ScaleUnitSample/Download&version=GC0acfab2d3d7cbd734ea5b19f2b2ac6713d7391ef) folder.
     - **baseProduct\_UseSelfHost** – Set this value to **false**.
 
 ## Debug an extension by using the self-hosted CSU
@@ -169,10 +169,10 @@ You now have a fully functional on-premises deployed scale unit that includes th
 
 - Channel database
 - Async Client
-- ASP.NET Core 3.1–based Retail Server that can interact with Commerce headquarters via RTS
+- ASP.NET Core 8–based Retail Server that can interact with Commerce headquarters via RTS
 - CPOS
 
-To find URLs that correspond to the CPOS and CSU that you deployed, review the base installer's log. The URLs appear near the end of the log, where CSU and CPOS are health-checked. To fill in the channel database with data from Commerce headquarters, follow step 28 in [Configure a new Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md#configure-a-new-commerce-scale-unit) after completing the previous steps in that article.
+To find URLs that correspond to the CPOS and CSU that you deployed, review the base installer's log. The URLs appear near the end of the log, where CSU and CPOS are health-checked. To fill in the channel database with data from Commerce headquarters, follow steps in [Create a new channel profile](retail-store-scale-unit-configuration-installation.md#create-a-new-channel-profile) after completing the previous steps in that article.
 
 ## Switching from IIS mode to self-hosted mode
 
