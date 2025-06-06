@@ -32,7 +32,7 @@ Dynamics 365 Commerce is a cloud-based platform that provides a comprehensive se
 - Ability to create and manage multiple catalogs and assortments for different B2B Seller and B2B Buyer accounts, with the option to inherit, override, or extend the product information from the master catalog.
 - Ability to allow B2B Buyers to buy from a select authorized and approved list of B2B Sellers or from the Manufacturer directly.
 - Ability to allow Customer service agents (aka field sellers) from the Manufacturer’s organization to order on behalf of (OBO) a B2B Buyer (outlet-buyer) with a specific B2B Seller (Distributor/Wholesaler).
-- Ability to provide a rich and responsive user interface for B2B Seller and B2B Buyer portals, with features such as product search, browsing, filtering, sorting, comparison, reviews, ratings, wish lists, cart, checkout, order history, and more.
+- Ability to provide a rich and responsive user interface for B2B Seller and B2B Buyer portals. Features include product search, browsing, filtering, sorting, comparison, reviews, ratings, wish lists, cart, checkout, order history, and more.
 - Ability to integrate with various external systems and services, such as ERP, CRM, payment, tax, shipping, and more, using the platform's APIs and connectors.
 
 ## Why choose Dynamics 365 Commerce for B2B Indirect workflows?
