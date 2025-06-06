@@ -55,7 +55,24 @@ Business performance analytics has data for the most recent eight quarters. This
 
 Data is refreshed twice per day, at 12:00:00 AM and 12:00:00 PM (Coordinated Universal Time). To view exactly when a report's data was last refreshed, open the report. Near the top of the page, the rightmost item shows when the data for the report was last refreshed.
 
-## 5. Storage and capacity
+## Reports
+
+### What should I do if reports in Business performance analytics suddenly stop working and keep showing errors?
+
+If you encounter a full-page error with the message "An unknown error has occurred. Please try again or contact your app administrator" while opening reports, the following steps may help resolve it. These steps will not address issues like no data displayed, refresh errors, or blank pages.
+
+>[!Note]
+These steps are safe to execute, prevent data loss, and do not require re-setup of Business Performance Analytics.
+
+1. Go to https://make.powerapps.com/
+2. Select the affected Organization from the Environment picker (upper right hand side)
+3. Go to "Solutions" (in the menu on the left hand side of the screen)
+4. Find the solutions "msdyn_bpaanchor" and "msdyn_bpareports".  Un-install them in that order.
+5. Re-Install Business performance analytics by following https://learn.microsoft.com/en-us/dynamics365/finance/business-performance-analytics/install-bpa#install-business-performance-analytics-1 (You only need to follow steps 1-4)
+Once installation has finished it will be ~12-24hr before reports become available again.
+
+
+## Storage and capacity
 ### Why does Business performance analytics’ managed data lake storage keep growing, and how is it cleaned up?
 
 Each time Business performance analytics refreshes, your source data are transformed into files in the Dataverse managed data lake without immediately deleting prior files. Older files are purged automatically after 30 days or earlier if usage hits 50 percent. In earlier releases, staging-table references sometimes blocked file deletion, so transform outputs accumulated until Microsoft engineers manually cleaned up every two weeks. As of the January 2025 update (v2.0.29241185+), those dependencies are removed and added a three day retention policy via the autocleanup flight flag, which regularly clears out old files and dramatically reduces manual intervention.
