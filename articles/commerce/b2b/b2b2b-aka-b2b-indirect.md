@@ -80,7 +80,7 @@ As part of this feature, you'll be able to natively leverage the following capab
 - Order templates are now catalog-aware. Allowing customers to bulk-add items from multiple catalogs using order templates.
 - Order history is catalog-aware. Allowing customers to quickly rebuy catalog-specific item directly from order history using "Buy Again"
 - Order history allows you to filter by various options, including the channel (B2B Seller or Manufacturer) where the order originated.
-- Order-on-behalf-of allows customer service agents (C1 employees) from the Manufacturer (not B2B Sellers) to place an order on behalf of their B2B partners (C2 - B2B Buyers) directly with both the Manufacturer or a B2B Seller.
+- Order-on-behalf-of allows customer service agents (C1 employees) from the Manufacturer (not B2B Sellers) to place an order on behalf of their B2B partners (C2 - B2B Buyers) directly with the Manufacturer or a B2B Seller.
 - Additionally, there are headless APIs available to allow C1 from the B2B Seller (Distributor's) organization to manage their inventory on hand and accept or reject orders.
 
 ![Glimpse into end-user experience using native experiences of B2B Indirect (aka B2B2B)](../media/B2B-Indirect-Experience-Glimpse.png)
