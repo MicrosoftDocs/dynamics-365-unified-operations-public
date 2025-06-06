@@ -76,7 +76,7 @@ As part of this feature, you'll be able to natively leverage the following capab
 - Create _B2B catalog-aware_ Commerce orders in HQ and Call Center, along with the ability to choose the fulfilling channel _(B2B Seller or distributor)_ in the order header.
 - Map individual _B2B Buyer_ organizations to _B2B Sellers and/or Manufacturers_, giving you control over who can buy from whom. You can configure this directly from the _B2B Buyer’s customer hierarchy_, by mapping associated _B2B channels_ they can buy from.
 - Allow _B2B Buyers_ to choose to purchase from _multiple B2B Sellers and/or the Manufacturer_.
-- At any point in time, _B2B Buyer_ can buy from a single _B2B Seller (aka distributor) or Manufacturer directly_, but they can have multiple active carts at the same time with individual B2B Sellers or the Manufacturer.
+- At any point in time, B2B buyers can buy from a single _B2B Seller (aka distributor) or Manufacturer directly_, but they can have multiple active carts at the same time with individual B2B Sellers or the Manufacturer.
 - Order templates are now catalog-aware. Allowing customers to bulk-add items from multiple catalogs using order templates.
 - Order history is catalog-aware. Allowing customers to quickly rebuy catalog-specific item directly from order history using "Buy Again"
 - Order history allows you to filter by various options, including the channel (B2B Seller or Manufacturer) where the order originated.
