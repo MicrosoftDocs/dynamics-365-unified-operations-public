@@ -53,7 +53,7 @@ Dynamics 365 Commerce is designed to support high-volume merchants and provides 
 The following is a brief overview of the steps involved in becoming a B2B seller on the platform:
 
 - Submit B2B Seller Prospect Application: Prospective B2B sellers submit an application expressing their interest in becoming a seller on the platform. The application includes relevant business information, contact details, etc.
-- Sync Prospect Application: The submitted application is synced to HQ and made available for review. Run or schedule a P-001 sync job from the Distribution Schedule and run "Sync Customer requests".
+- Sync Prospect Application: The submitted application is synced to HQ and made available for review. Run or schedule a P-001 sync job from the Distribution Schedule and run _Sync Customer requests_.
 - Review Prospect Application: The platform team evaluates the prospect’s suitability based on predefined criteria. Criteria may include business size, industry, product offerings, and compliance with platform policies. The review process aims to identify genuine businesses and filter out potential fraud or unwanted applicants.
 - Approve/Reject B2B Seller Prospect: Based on the review, the prospect application is either approved or rejected. Approved prospects receive confirmation and further instructions on the next steps. Rejected applicants are informed of the decision and the reasons behind it.
 
@@ -76,11 +76,11 @@ As part of this feature, you'll be able to natively leverage the following capab
 - Create _B2B catalog-aware_ Commerce orders in HQ and Call Center, along with the ability to choose the fulfilling channel _(B2B Seller or distributor)_ in the order header.
 - Map individual _B2B Buyer_ organizations to _B2B Sellers and/or Manufacturers_, giving you control over who can buy from whom. You can configure this directly from the _B2B Buyer’s customer hierarchy_, by mapping associated _B2B channels_ they can buy from.
 - Allow _B2B Buyers_ to choose to purchase from _multiple B2B Sellers and/or the Manufacturer_.
-- At any point in time, _B2B Buyer_ can buy from a single _B2B Seller (aka distributor) or Manufacturer direclty_, but they can have multiple active carts at the same time with individual B2B Sellers or the Manufacturer.
+- At any point in time, _B2B Buyer_ can buy from a single _B2B Seller (aka distributor) or Manufacturer directly_, but they can have multiple active carts at the same time with individual B2B Sellers or the Manufacturer.
 - Order templates are now catalog-aware. Allowing customers to bulk-add items from multiple catalogs using order templates.
-- Order history is catalog-aware. Allowing customers to quickly re-buy catalog-specific item directly from order history using "Buy Again"
+- Order history is catalog-aware. Allowing customers to quickly rebuy catalog-specific item directly from order history using "Buy Again"
 - Order history allows you to filter by various options, including the channel (B2B Seller or Manufacturer) where the order originated.
 - Order-on-behalf-of allows customer service agents (C1 employees) from the Manufacturer (not B2B Sellers) to place an order on behalf of their B2B partners (C2 - B2B Buyers) directly with both the Manufacturer or a B2B Seller.
-- Lastly, there are headless APIs available to allow C1 from the B2B Seller (Distributor's) organization to manage their inventory on hand and accept or reject orders.
+- Additionally, there are headless APIs available to allow C1 from the B2B Seller (Distributor's) organization to manage their inventory on hand and accept or reject orders.
 
 ![Glimpse into end-user experience using native experiences of B2B Indirect (aka B2B2B)](../media/B2B-Indirect-Experience-Glimpse.png)
