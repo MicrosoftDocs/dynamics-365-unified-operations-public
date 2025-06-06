@@ -3,7 +3,7 @@ title: Complete and deploy a Globalization feature
 description: Learn about the lifecycle of Globalization features, including overviews on electronic invoicing feature versions and deploying and remove feature versions.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 01/29/2024
 ms.custom:
 ms.reviewer: johnmichalak

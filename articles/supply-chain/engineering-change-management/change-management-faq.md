@@ -3,7 +3,7 @@ title: Engineering change management FAQ
 description: Acess answers to frequently asked questions about the engineering change management feature, including questions about tracking versions in transactions.
 author: sgmsft
 ms.author: shwgarg
-ms.topic: article
+ms.topic: faq
 ms.date: 03/25/2021
 ms.reviewer: kamaybac
 ms.search.form:

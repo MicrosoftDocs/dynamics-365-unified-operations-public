@@ -1,49 +1,55 @@
 ---
 title: Reopen and edit a vendor consolidated invoice
-description: Learn how to reopen and modify a confirmed vendor consolidated invoice, including a step-by-step process using the JPMF demo data company.
+description: Learn how to reopen and modify a confirmed vendor consolidated invoice for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 05/02/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: VendConsInvoice_JP, SysQueryForm
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Reopen and edit a vendor consolidated invoice
 
 [!include [banner](../../includes/banner.md)]
 
-In Japan, when you miss an invoice during the consolidation process, you will need to reopen the consolidated invoice to add the missed invoice. 
+This article explains how to reopen and modify a confirmed vendor consolidated invoice for Japan in Microsoft Dynamics 365 Finance.
 
+In Japan, when you miss an invoice during the consolidation process, you must reopen the consolidated invoice to add the missed invoice. 
 
+The following procedures walk you through how to reopen a confirmed consolidated invoice and modify it. Before you can complete the procedures you must have a confirmed consolidated invoice.
 
-This procedure walks you through reopening a confirmed consolidated invoice and modifying it. You must have a confirmed consolidated invoice before you can complete procedure.
-
-
-
-This procedure was created using the demo data company JPMF.
-
+The procedures use the demo data company JPMF.
 
 ## Reopen a consolidated invoice
-1. Go to Accounts payable > Periodic tasks > Consolidated invoice.
-2. In the list, find and select the desired record.
-3. Click Reopen.
+
+To reopen a consolidated invoice, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts payable \> Periodic tasks \> Consolidated invoice**.
+1. In the list, find and select the desired record.
+1. Select **Reopen**.
 
 ## Remove a purchase order a consolidated invoice
-1. In the list, click the link in the selected row.
-2. Click Edit.
-3. Mark the invoice that you want to remove.
-4. Click Remove.
+
+To remove a purchase order a consolidated invoice, follow these steps.
+
+1. In the list, select the link in the selected row.
+1. Select **Edit**.
+1. Mark the invoice that you want to remove.
+1. Select **Remove**.
 
 ## Add purchase orders and confirm the consolidated invoice
-1. Click Query invoice.
-2. Click OK.
-    * Confirm the purchase orders  invoiced before the Consolidation date  added  
-3. Click Confirm.
+
+To add purchase orders and confirm the consolidated invoice, follow these steps.
+
+1. Select **Query invoice**.
+1. Select **OK**.
+1. Confirm that the purchase orders were invoiced before the consolidation date was added.
+1. Select **Confirm**.
 
 
 

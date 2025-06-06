@@ -3,7 +3,7 @@ title: Start and stop time recording on a service order
 description: Learn how to start and stop time recording on a service order, including step-by-step processes for starting and stopping time recording.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac

@@ -1,10 +1,10 @@
 ---
 title: X++ conditional statements
 description: Learn about conditional statements in X++, including outlines and examples of if, if..else, and switch statements.
-author: josaw1
-ms.author: josaw
+author: pvillads
+ms.author: pvillads
 ms.topic: article
-ms.date: 06/17/2019
+ms.date: 05/17/2025
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,11 +16,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes conditional statements in X++. The conditional statements are **if**, **if**...**else**, **switch**, and the ternary operator (**?**). You use conditional statements to specify whether a block of code is executed. Different conditional statements offer advantages in different situations.
+This article describes the conditional statements in X++. The conditional statements are **if**, **if**...**else**, and **switch**. The ternary operator (**?:**) provides a value based on the provided expression. You use conditional statements to specify whether a statement is executed (with the **if** statement), or which is executed (with the **if**..**else**). Different conditional statements offer advantages in different situations.
 
 ## if and if...else statements
 
-The **if** statement evaluates a conditional expression, and then executes a statement or a set of statements if the conditional expression is evaluated as **true**. You can use the **else** clause to provide an alternative statement or set of statements that is executed if the condition is evaluated as **false**. The syntax for an **if**...**else** statement is:
+The **if** statement evaluates a conditional expression, and then executes a statement if the conditional expression is evaluated as **true**. You can use the **else** clause to provide an alternative statement that's executed if the condition is evaluated as **false**. The syntax for an **if**...**else** statement is:
 
 **if (** *expression* **)** 
     *statement* 
@@ -28,7 +28,7 @@ The **if** statement evaluates a conditional expression, and then executes a sta
     *statement* 
 **\]**
 
-In this syntax, both occurrences of *statement* can be compound statements (statements enclosed in braces). The *expression* in the parentheses (the conditional expression) can be any valid expression that is evaluated as **true** or **false**. All numbers except 0 (zero) are **true**. All non-empty strings are **true**. You can nest **if** statements. However, if the nesting of **if** statements becomes too deep, you should consider using a **switch** statement instead.
+In this syntax, both occurrences of *statement* can be **compound statements** (zero or more statements enclosed in braces). The *expression* in the parentheses (that is, the conditional expression) can be any valid expression that is interpreted as **true** or **false**. Values of all types can be interpreted as boolean values: All numbers except 0 (zero) are **true** and all nonempty strings are **true**. You can nest **if** statements. However, if the nesting of **if** statements becomes too deep, you may consider using a **switch** statement instead to enhance legibility.
 
 ### Examples of if and if...else statements
 
@@ -52,7 +52,7 @@ else
 
 ## switch statements
 
-The **switch** statement is a multibranch language construct that has the same behavior as nested **if**. The expression of the **switch** statement is evaluated and checked against each case value. The case values must be constants that the compiler can evaluate. 
+The **switch** statement is a multibranch language construct that has the same behavior as nested **if** statements. The expression after the **switch** keyword is evaluated and checked against each case value. The case values must be constants so they can be evaluated at compile-time. 
 
 - If a case constant matches the **switch** expression, the **case** statement is executed. 
 - If the case contains a **break** statement, the program then jumps out of the switch. 
@@ -64,12 +64,12 @@ Here is the syntax for a **switch** statement:
 
 **switch** **(** *expression* **)** **{** **{ case }** **\[default:** *statement* **\]** **}**
 
-The syntax for a **case** statement is:
+The syntax for a **case** block is:
 
 **case** *expression* **{ ,** *expression* **} :**
     *statement*
 
-In the syntax for both a **switch** statement and a **case** statement, every occurrence of *statement* can be replaced with a block of statements by enclosing the block in braces ({}).
+In general, you should avoid situations where you don't use the **break** statement to exit each case, since it's easy to misread such code.
 
 ### Examples of switch statements
 
@@ -106,8 +106,9 @@ The following code example makes the execution drop through the first case branc
  }
 ```
 
-If you do not use the break statement, the program flow in the switch statement continues into the next case. Code segments A and B
-have the same behavior. 
+If you don't use the break statement, the program flow in the switch statement continues into the next case. Code segments A and B have the same behavior. 
+
+This flow isn't recommended.
 
 ```xpp
 // Code segment A (break omitted)
@@ -126,13 +127,13 @@ case 13, 17, 21, 500;
 
 ## Ternary operator (?)
 
-The ternary operator (**?**) is a conditional statement that is resolved to one of two expressions. The result can be assigned to a variable. By contrast, an **if** statement provides conditional branching of the program flow but can't be assigned to a variable. Here is the syntax for the ternary operator:
+The ternary operator (**?:**) is a conditional expression that is resolved to one of two values. Here's the syntax for the ternary operator:
 
 *expression1* **?** *expression2* **:** *expression3*
 
-In this syntax, *expression1* must return a value of **true** or **false**. If *expression1* is **true**, the whole ternary statement returns *expression2*. Otherwise, the statement returns *expression3*. Both *expression2* and *expression3* must have the same type.
+In this syntax, *expression1* is interpreted as a boolean value of **true** or **false**. If *expression1* is **true**, the whole ternary statement returns *expression2*. Otherwise, the statement returns *expression3*. Both *expression2* and *expression3* must have the same type.
 
-### Examples of the ternary operator (?)
+### Examples of the ternary operator (?:)
 
 The following code example returns one of two strings based on a Boolean return value from a method call. The Boolean expression indicates whether the CustTable table has a row with a RecId field value of 1. If this Boolean expression is true (meaning RecId != 0), found is assigned to result. Otherwise, the alternative not found is assigned to result.
 
@@ -140,7 +141,7 @@ The following code example returns one of two strings based on a Boolean return 
 result = (custTable::find("1").RecId) ? "found" : "not found";
 ```
 
-You can nest statements with the ternary operator. The following example assigns one of three values to **level** based on the value of **x**.
+You can nest expressions with the ternary operator. The following example assigns one of three values to **level** based on the value of **x**.
 
 ```xpp
 int x = 1001;

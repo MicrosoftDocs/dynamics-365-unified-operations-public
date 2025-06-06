@@ -3,10 +3,9 @@ title: Build automation that uses Microsoft-hosted agents and Azure Pipelines
 description: Learn about how you can automate the process of building X++ on any agents in Microsoft Azure DevOps, including prerequisites.
 author: dedmond83
 ms.author: josaw
-ms.topic: article
-ms.date: 11/22/2024
+ms.topic: how-to
+ms.date: 02/27/2025
 ms.reviewer: twheeloc
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
@@ -196,6 +195,7 @@ The following table describes the variables that are used in the MSBuild argumen
 | /p:ReferenceFolder | A semicolon-separated list of paths that contain binaries of X++ packages that are referenced and required for compilation (for example, Application Platform and Application Suite). If the code that will be compiled has multiple packages that reference each other, the output directory should also be included here. |
 | /p:ReferencePath | A semicolon-separated list of paths that contain any non-X++ binaries that are referenced and required for compilation. You should include the location of the extracted Compiler Tools NuGet package, because it might contain required references. |
 | /p:OutputDirectory | The path where the compiler will create folders and binaries. |
+| /p:CompilerMetadata | The path where the compiler will use created folders and binaries. |
 
 The following example shows a value that can be used for the MSBuild arguments.
 
@@ -205,6 +205,7 @@ The following example shows a value that can be used for the MSBuild arguments.
 /p:FrameworkDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage"
 /p:ReferenceFolder="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Application1.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Application2.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp\ref\net40;$(Build.SourcesDirectory)\Metadata;$(Build.BinariesDirectory)"
 /p:ReferencePath="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage" /p:OutputDirectory="$(Build.BinariesDirectory)"
+/p:CompilerMetadata="$(Build.BinariesDirectory)"
 ```
 
 The preceding example of MSBuild arguments assumes that the NuGet packages are installed in **\$(Pipeline.Workspace)\\NuGets**, the X++ source code is in **\$(Build.SourcesDirectory)\\Metadata**, and the output of the compiler should go in **\$(Build.BinariesDirectory)**.

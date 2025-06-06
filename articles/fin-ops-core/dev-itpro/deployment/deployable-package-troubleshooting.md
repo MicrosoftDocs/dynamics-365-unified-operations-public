@@ -3,7 +3,7 @@ title: Troubleshoot package application issues
 description: Learn about troubleshooting information for issues that might occur when you apply packages on Tier 1 or Tier 2 through Tier 5 environments.  
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.date: 01/21/2022
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

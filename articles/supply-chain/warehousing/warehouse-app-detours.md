@@ -4,7 +4,7 @@ description: Learn how to configure detours for menu items so that workers can p
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 06/07/2024
+ms.date: 02/20/2024
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
@@ -48,13 +48,13 @@ In this procedure, you'll configure a detour for the **Sales picking** menu item
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device steps**.
 1. Find the step ID that is named *LicensePlateId*, and select it.
 1. On the Action Pane, select **Add step configuration**.
-1. In the drop-down dialog box, use the **Menu item** field to find and select *Sales picking*.
+1. In the drop-down dialog, use the **Menu item** field to find and select *Sales picking*.
 1. Select **OK**.
 1. The details page for the override that you just created appears. On the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
-1. In the **Add detour** dialog box, select **Location inquiry** as the detour that will be made available in the Warehouse Management mobile app.
+1. In the **Add detour** dialog, select **Location inquiry** as the detour that will be made available in the Warehouse Management mobile app.
 1. Select **OK**.
 1. On the **Available detours (menu items)** FastTab, select the detour that you just added, and then select **Select fields to send** on the toolbar.
-1. In the **Select fields to send** dialog box, specify the information that should be sent to and from the detour. In this scenario, you're enabling workers to use the location that they're supposed to pick from as input for the location inquiry detour. Therefore, in the **Send from sales picking** section, select **Add** on the toolbar to add a row to the grid. Then set the following values for the new row:
+1. In the **Select fields to send** dialog, specify the information that should be sent to and from the detour. In this scenario, you're enabling workers to use the location that they're supposed to pick from as input for the location inquiry detour. Therefore, in the **Send from sales picking** section, select **Add** on the toolbar to add a row to the grid. Then set the following values for the new row:
 
     - **Copy from Sales Picking:** *Location*
     - **Paste in Location Inquiry:** *Location*
@@ -107,10 +107,10 @@ In this procedure, you'll configure a detour for the **Sales picking** menu item
     > To use an item inquiry instead of a location inquiry, select a row where the step ID is named *ItemInquiryList*. To use a license plate inquiry, select a row where the step ID is named *LPInquiryList*.
 
 1. On the Action Pane, select **Add step configuration**.
-1. In the drop-down dialog box, use the **Menu item** field to find and select *Location inquiry*.
+1. In the drop-down dialog, use the **Menu item** field to find and select *Location inquiry*.
 1. Select **OK**.
 1. The details page for the override that you just created appears. On the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
-1. In the **Add detour** dialog box, select **Movement** as the detour that will be made available in the Warehouse Management mobile app.
+1. In the **Add detour** dialog, select **Movement** as the detour that will be made available in the Warehouse Management mobile app.
 1. Select **OK**.
 1. On the **Available detours (menu items)** FastTab, select the detour that you just added, and then select **Select fields to send** on the toolbar.
 1. In the **Select fields to send** dialog, specify the information that should be sent to and from the detour. In this scenario, you're expecting workers to look for license plate–controlled locations. Therefore, it will be helpful to copy the license plate from the inquiry to the **Movement** detour. In the **Send from sales picking** section, select **Add** on the toolbar to add a row to the grid. Then set the following values for the new row:
@@ -138,7 +138,106 @@ In this procedure, you'll do a location inquiry by using the Warehouse Managemen
 1. You can now follow the standard task flow to complete the movement. After the work is completed, open the actions menu, and select **Cancel**.
 1. You're returned to the **Location inquiry** page. The values aren't automatically updated. Therefore, you must manually refresh the page to see the changes from the movement detour.
 
+## <a name="scenario-3"></a>Sample scenario 3: Movement by template with a data inquiry detour
+
+This scenario shows how to configure movement by template with a data inquiry detour. 
+
+### Enable sample data
+
+To use the specified sample records and values to work through this scenario, you must be using a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. You must also select the **USMF** legal entity before you begin.
+
+In this procedure, you'll configure a data inquiry detour for the **Movement by template** menu item in the **Scan location or license plate** step.
+
+### Configure an Item data inquire mobile device menu item for scenario 3
+
+To create the **Item data inquire** mobile device menu item, follow these steps.
+
+1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
+1. On the Action Pane, select **New** to add a mobile device menu item.
+1. Set the following values for the new menu item:
+
+    - In the **Menu item name** field, enter *Item data inquire*.
+    - In the **Title** field, look up the inventory dimensions by items.
+    - In the **Mode** field, select *Indirect*.
+
+1. On the **General** FastTab, set the following values:
+
+    - In the **Activity code** field, select *Data inquiry*.
+    - In the **Use process guide** field, ensure that *Yes* is selected. (*Yes* is the default value.)
+    - In the **Table name** field, select *InventSum*, because you want to look up inventory dimensions from this table.
+
+1. You must now select the fields that appear on the cards on the **Inquiry list** page. On the Action Pane, select **Field list**.
+1. On the **Field list** page, set the following values:
+
+    - **Display field 1:** *ItemId* (This field will appear as the header for each card.)
+    - **Display field 2:** *InventColorId*
+    - **Display field 3:** *InventSizeId*
+    - **Display field 4:** *WMSLocationId*
+
+1. On the Action Pane, select **Save**.
+1. Close the page.
+
+> [!NOTE]
+> The **Item data inquire** mobile device menu item must be added to mobile device menu before it can be used as part of a detour process. 
+
+### Create a menu-specific override and configure the detour for scenario 3
+
+1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device steps**.
+1. Find and select the step ID that is named *LocOrLP*.
+1. On the Action Pane, select **Add step configuration**.
+1. In the dropdown dialog, in the **Menu item** field, select *Movement by template*.
+1. Select **OK**.
+1. The details page for the override that you just created appears. On the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
+1. In the **Add detour** dialog, select **Item data inquiry** as the detour that will be available in the Warehouse Management mobile app.
+1. Select **OK**.
+1. On the **Available detours (menu items)** FastTab, select the detour that you just added.
+1. In the **Bring back from Items data inquiry** section, select **Add** on the toolbar to add a row to the grid. Then set the following values for the new row:
+
+    - **Copy from Items Inquiry:** *Item number*
+    - **Paste in Movement by template:** *Item*
+    - **Auto submit:** *Yes*
+
+1. Select **Add** on the toolbar to add another row to the grid. Then set the following values for the new row:
+
+    - **Copy from Items Inquiry:** *Size*
+    - **Paste in Movement by template:** *Size*
+    - **Auto submit:** *Yes*
+
+1. Select **Add** on the toolbar to add another row to the grid. Then set the following values for the new row:
+
+    - **Copy from Items Inquiry:** *Color*
+    - **Paste in Movement by template:** *Color*
+    - **Auto submit:** *Yes*
+
+1. Select **Add** on the toolbar to add another row to the grid. Then set the following values for the new row:
+
+    - **Copy from Items Inquiry:** *Location*
+    - **Paste in Movement by template:** *Loc / LP*
+    - **Auto submit:** *No*
+
+1. Select **OK**.
+
+The detour is now fully configured. A button to start the **Item data inquiry** detour now appears in the **Scan location or license plate** step for the **Movement by template** menu item.
+
+### Create a new product master item T-Shirt and add on-hand for scenario 3
+
+Create a new *T-shirt* product master item that has size and color variants. Add one on-hand entry for one specific size and color of this item for warehouse 24.
+
+### Do a movement by template on a mobile device and use the detour
+
+In this procedure, you'll use the Warehouse Management mobile app to do a movement by template. You'll then complete the movement by using the detour to find the item, color, size, and location.
+
+1. Open the Warehouse Management mobile app, and sign in to warehouse 24. (In the standard demo data, sign in by using *24* as the user ID and *1* as the password.)
+1. Select the **Movement by template** menu item.
+1. In the first step that contains the text **Scan location or license plate**, select **Item data inquiry**. 
+1. The detour is started, and the first detour step is **Item number**. Specify *T-shirt*, and then confirm the entry.
+1. Select the card that contains information about the location, color, and size of the existing on-hand entry. You're returned to the movement by template flow and receive a "Work completion" message.
+
+Note that the detour was configured to auto-submit only the item, size, and color. The system also auto-populated the location and quantity. This behavior occurred because the system could determine the size, location, and quantity from the specified color, based on the on-hand data distribution. The detour contained three auto-submit controls that corresponded to three **OK** buttons. Because a default location and a default quantity were entered after the return from the detour, they were automatically confirmed.
+
 > [!NOTE]
 > Multi-level detours enable you to define multi-level detours (detours within detours), which will allow workers to jump from an existing detour two a second one and then back again. The feature supports two levels of detours out of the box and, if necessary, you can customize your system to support three or more levels of detours by creating code extensions on the `WHSWorkUserSessionState` table.
 >
-> Auto-submit detour steps can make it faster and easier for workers to complete detour flows in the Warehouse Management mobile app. It enables some flow steps to be skipped by letting the app populate detour data on the back end and then move automatically to the next step by auto submitting the page, as shown in [*Sample scenario 1: Sales picking where a location inquiry acts as a detour*](#scenario-1).
+> Auto-submit detour steps can make it faster and easier for workers to complete detour flows in the Warehouse Management mobile app. It enables some flow steps to be skipped by letting the app populate detour data on the back end and then move automatically to the next step by auto submitting the page, as shown in [Sample scenario 1: Sales picking where a location inquiry acts as a detour](#scenario-1) earlier in the article.
+>
+> Essentially, the number of auto-submits corresponds to the number of times that the **OK** button is selected. If a mobile app flow has defaulting mechanics, auto-submit for detours can cause variations in behavior, based on the on-hand data composition. An example is shown in [Sample scenario 3: Movement by template with data inquiry detour](#scenario-3).

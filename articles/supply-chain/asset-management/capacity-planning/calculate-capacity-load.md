@@ -3,7 +3,7 @@ title: Calculate capacity load
 description: Learn how to calculate capacity load in Asset Management, including a step-by-step process detailing the process of calculating capacity loads.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/16/2019
 ms.custom:
 ms.reviewer: kamaybac

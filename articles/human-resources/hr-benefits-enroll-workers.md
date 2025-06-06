@@ -4,7 +4,7 @@
 title: Enroll and remove benefits from workers
 description: This procedure shows how to enroll a single worker in one or more benefits, as well as enrolling multiple workers in a benefit. 
 author: twheeloc
-ms.date: 07/02/2024
+ms.date: 06/03/2025
 ms.topic: how-to 
  
 # optional metadata 
@@ -44,21 +44,20 @@ This procedure shows how to enroll a single worker in one or more benefits, as w
 9. You can also edit the details of a benefit enrollment or delete an enrollment on this page. When you have finished making changes to the benefit enrollment, close the page.
 
 ## Enroll multiple workers in a benefit
-1. Close the page.
-2. Go to **Human resources** > **Workers** > **Employees**.
-3. In the list, mark the selected row.
+1. Go to **Human resources** > **Workers** > **Employees**.
+2. In the list, mark the selected row.
+3. In the list, find and select the desired record.
 4. In the list, find and select the desired record.
-5. In the list, find and select the desired record.
-6. Click **Enroll in benefits**.
-7. In the **Benefit** field, enter or select a value.
-8. In the **Coverage start date** field, enter a date and time.
-9. In the **Coverage end date** field, enter a date and time.
-10. Click **Enroll**.
-11. Close the page.
-12. Go to **Human resources** > **Benefits** > **Enrollment** > **Benefit enrollment results**.
-13. Find the benefit results record that you are looking for.
-14. In the list, click the link in the selected row.
-15. This page allows you to view which employees have been enrolled in the benefit, as well as any employees who were not enrolled.
+5. Click **Enroll in benefits**.
+6. In the **Benefit** field, enter or select a value.
+7. In the **Coverage start date** field, enter a date and time.
+8. In the **Coverage end date** field, enter a date and time.
+9. Click **Enroll**.
+10. Close the page.
+11. Go to **Human resources** > **Benefits** > **Enrollment** > **Benefit enrollment results**.
+12. Find the benefit results record that you are looking for.
+13. In the list, click the link in the selected row.
+14. This page allows you to view which employees have been enrolled in the benefit, as well as any employees who aren't enrolled.
 
 
 

@@ -3,7 +3,7 @@ title: Monitor replication for the Data migration toolkit
 description: Learn about how to monitor replication for the Data migration toolkit for Microsoft Dynamics 365, including a replication overview.
 author: ttreen
 ms.author: ttreen
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/26/2023
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

@@ -5,7 +5,7 @@ title: Set up Recency, Frequency, and Monetary (RFM) analysis
 description: This article explains how to set up a Recency, Frequency, and Monetary (RFM) analysis of your customers.
 author: josaw1
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: MCRRFMDefinition

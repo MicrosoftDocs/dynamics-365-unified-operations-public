@@ -3,7 +3,7 @@ title: Work line details
 description: Learn about the Work line details page, which shows a comprehensive, sortable, and filterable list of the individual work lines in your system.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/01/2020
 ms.custom:
 ms.reviewer: kamaybac

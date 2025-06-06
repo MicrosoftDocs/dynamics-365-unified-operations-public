@@ -1,93 +1,93 @@
 --- 
-title: MY-00003 Manage customer Debit note and Credit note for GST
-description: Learn how to print a Malaysian goods and services tax (GST) invoice for a credit note or debit note, including a process for creating a debit note. 
+title: MY-00003 Manage customer debit and credit notes for GST
+description: Learn how to print a Malaysian goods and services tax (GST) invoice for a credit note or debit note in Microsoft Dynamics 365 Finance.
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 08/29/2018
-ms.custom:
+ms.date: 05/29/2025
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak    
-audience: Application User 
 ms.search.region: Malaysia
 ms.search.validFrom: 2016-06-30
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PCProductLookup, CustInvoiceJourLookup_MY, TaxGroupLookup, TaxTmpWorkTrans, SalesEditLines,  CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, SRSPrintDestinationSettingsForm
-ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-# MY-00003 Manage customer Debit note and Credit note for GST
+# MY-00003 Manage customer debit and credit notes for GST
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through how to print a Malaysian goods and services tax (GST) invoice for a credit note or debit note. You can print a GST invoice for a credit note or debit note from a sales order, free text invoice, purchase order, or project proposal but this procedure only shows how to do this from a sales order and a free text invoice.
+This article explains how to print a Malaysian goods and services tax (GST) invoice for a credit or debit notes in Microsoft Dynamics 365 Finance.
 
-Before you can complete this procedure, you must select the Invoice type 'GST invoice' in general ledger parameters.
+The following procedures walk you through how to print a Malaysian goods and services tax (GST) invoice for a credit note or debit note. You can print a GST invoice for a credit note or debit note from a sales order, free text invoice, purchase order, or project proposal but these procedures only shows how to print from a sales order and a free text invoice.
 
-You must be in the Accounting receivable clerk role to complete this procedure.
+Before you can complete this procedure, you must select the **GST invoice** invoice type in general ledger parameters. You must be in the accounting receivable clerk role to complete the procedures.
 
-
-
-This procedure was created using the demo data company MYMF.
-
+The procedures use the demo data company MYMF.
 
 ## Create a debit note from a sales order
-1. Go to Accounts receivable > Orders > All sales orders.
-2. Click New.
-3. In the Customer account field, enter or select a value.
-4. Expand the General section.
-5. In the Site field, enter or select a value.
-6. In the Warehouse field, enter or select a value.
-7. Click OK.
-8. Click Header.
-9. In the Reason code field, enter or select a value.
-10. In the list, find and select the desired record.
-11. In the list, click the link in the selected row.
-12. Click Lines.
-13. In the list, mark the selected row.
-14. In the Item number field, enter or select a value.
-15. In the Quantity field, enter a number.
-16. In the Unit price field, enter a number.
-17. In the Original invoice number field, enter or select a value.
-18. Expand the Line details section.
-19. Click the Setup tab.
-20. In the Sales tax group field, enter or select a value.
-21. In the Item sales tax group field, enter or select a value.
-22. Click Save.
-23. On the Action Pane, click Sell.
-24. Click Sales tax.
-    * Validate the calculated tax amount for the selected tax code.  
-25. Click OK.
-26. On the Action Pane, click Invoice.
-27. Click Invoice.
-28. Expand the Parameters section.
-29. In the Quantity field, select an option.
-30. Select Yes in the Print invoice field.
-    * For this procedure, be sure that this option is set to Yes.  
-31. Click OK.
-32. Click Yes.
+
+To create a debit note from a sales order, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
+1. Select **New**.
+1. In the **Customer account** field, enter or select a value.
+1. Expand the **General** section.
+1. In the **Site** field, enter or select a value.
+1. In the **Warehouse** field, enter or select a value.
+1. Select **OK**.
+1. Select **Header**.
+1. In the **Reason code** field, enter or select a value.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. Select **Lines**.
+1. In the list, mark the selected row.
+1. In the Item number field, enter or select a value.
+1. In the **Quantity** field, enter a number.
+1. In the **Unit price** field, enter a number.
+1. In the **Original invoice number** field, enter or select a value.
+1. Expand the **Line details** section.
+1. Select the **Setup** tab.
+1. In the **Sales tax group** field, enter or select a value.
+1. In the **Item sales tax group** field, enter or select a value.
+1. Select **Save**.
+1. On the Action Pane, select **Sell**.
+1. Select **Sales tax**.
+1. Validate the calculated tax amount for the selected tax code.  
+1. Select **OK**.
+1. On the Action Pane, select **Invoice**.
+1. Expand the **Parameters** section.
+1. In the **Quantity** field, select an option.
+1. In the **Print invoice** field, select **Yes**.
+1. Select **OK**.
+1. Select **Yes**.
 
 ## Create a credit note from a free text invoice
-1. Go to Accounts receivable > Invoices > All free text invoices.
-2. Click New.
-3. In the Customer account field, enter or select a value.
-4. Click Header.
-5. In the Reason code field, enter or select a value.
-6. Click Lines.
-7. In the Description field, type a value.
-8. In the list, mark the selected row.
-9. In the Main account field, specify the desired values.
-10. In the Sales tax group field, enter or select a value.
-11. In the Item sales tax group field, enter or select a value.
-12. In the Quantity field, enter a number.
-13. In the Unit price field, enter a number.
-14. In the Original invoice number field, enter or select a value.
-15. Click Save.
-16. Click Sales tax.
-    * Validate calculated negative tax amount for the tax code AJS  
-17. Click OK.
-18. Click Post.
-19. Select Yes in the Print invoice field.
-20. Click OK.
-21. Click OK.
+
+To create a credit note from a free text invoice, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> All free text invoices**.
+1. Select **New**.
+1. In the **Customer account** field, enter or select a value.
+1. Select **Header**.
+1. In the **Reason code** field, enter or select a value.
+1. Select **Lines**.
+1. In the **Description** field, enter a value.
+1. In the list, mark the selected row.
+1. In the **Main account** field, enter a value.
+1. In the **Sales tax group** field, enter or select a value.
+1. In the **Item sales tax group** field, enter or select a value.
+1. In the **Quantity** field, enter a number.
+1. In the **Unit price** field, enter a number.
+1. In the **Original invoice** number field, enter or select a value.
+1. Select **Save**.
+1. Select **Sales tax**.
+1. Validate the calculated negative tax amount for the tax code "AJS".  
+1. Select **OK**.
+1. Select **Post**.
+1. In the **Print invoice** field, select **Yes**.
+1. Select **OK**.
+1. Select **OK**.
 
 
 

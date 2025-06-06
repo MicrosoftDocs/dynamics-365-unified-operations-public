@@ -3,7 +3,7 @@ title: "Fix the 'Not enough capacity could be found' scheduling engine error and
 description: Learn about the reasons and resolutions for the 'Production order %1 could not be scheduled. Not enough capacity could be found' scheduling engine error.
 author: t-benebo
 ms.author: benebotg
-ms.topic: article
+ms.topic: how-to
 ms.date: 7/29/2021
 ms.reviewer: kamaybac
 ms.search.form: ProdTable

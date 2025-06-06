@@ -1,11 +1,12 @@
 ---
 title: X++ Primitive data types
 description: Learn about primitive data types in X++, which includes anytype, boolean, date, enum, guid, int, int64, real, str. timeOfDay, and utcdatetime.
-author: josaw1
-ms.author: josaw
+author: pvillads
+ms.author: pvillads
 ms.topic: article
-ms.date: 08/27/2021
-ms.reviewer: johnmichalak
+ms.date: 06/05/2025
+ms.reviewer: twheeloc
+
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -22,9 +23,9 @@ This article describes primitive data types in X++. The primitive data types in 
 
 The **anytype** data type is a placeholder for any data type. 
 
-To use **anytype** as a variable, the actual underlying type is determined by the first assignment. If the value is used before an assignment has happend, a run-time error occurs. Once you've assigned a value to **anytype**, you can't convert it to another data type.
+To use **anytype** as a variable, the actual underlying type is determined by the first assignment. If the value is used before an assignment, a run-time error occurs. After you've assigned a value to **anytype**, you can't convert it to another data type.
 
-You can use **anytype** just as you use the data type that you convert it to. For example, if you assign an integer, you can then apply relational and arithmetic operators to the variable.
+You can use **anytype** just as you use the data type that you convert it to. For example, if you assign an integer, you can apply relational and arithmetic operators to the variable.
 
 An **anytype** variable is automatically converted to a date, enumeration (enum), integer, real, string, extended data type (EDT) (record), class, or container when a value is assigned to the type. Additionally, the following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **any2date**, **any2enum**, **any2int**, **any2real**, and **any2str**. 
 
@@ -55,22 +56,22 @@ public void anytypeMethod()
 
 ## boolean
 
-The **boolean** data type contains a value that is evaluated as either **true** or **false**. You can use the reserved literal keywords **true** and **false** wherever a **boolean** expression is expected. The default value is **false**.
+The **boolean** data type contains a value that is evaluated as either true or false. You can use the reserved literal keywords true and false wherever a **boolean** expression is expected. The default value is false.
 
 Any value can be interpreted as a boolean as shown in this table
 
-| **Data Type**  | **True Values** | **False Values** |
+| Data type  | True value | False value |
 |---------------|---------------|---------------|
-| **Integer (int, int64)** | Any non-zero value | 0 |
-| **Real (decimal numbers)** | Any non-zero value | 0.0 |
-| **Boolean** | `true` | `false` |
-| **String (str)** | Any non-empty string | Empty string (`""`) |
-| **Date** | Any valid date | Null date (`1900-01-01`) |
-| **Enum** | Any non-zero value | 0 (first enum value) |
-| **GUID** | Any valid GUID | Empty GUID (`{00000000-0000-0000-0000-000000000000}`) |
-| **Container** | Any non-empty container | Empty container (`conNull()`) |
-| **Table** | Any instantiated table record | A table that has not been fetched from the database (RecId = 0) |
-| **Class** | Any instantiated class object | Uninitialized class object (`null`) |
+| Integer (int, int64) | Any nonzero value | 0 |
+| Real (decimal numbers) | Any nonzero value | 0.0 |
+| Boolean | `true` | `false` |
+| String (str)* | Any non empty string | Empty string (`""`) |
+| Date | Any valid date | Null date (`1900-01-01`) |
+| Enum | Any nonzero value | 0 (first enum value) |
+| GUID | Any valid GUID | Empty GUID (`{00000000-0000-0000-0000-000000000000}`) |
+| Container | Any non empty container | Empty container (`conNull()`) |
+| Table | Any instantiated table record | A table that has not been fetched from the database (RecId = 0) |
+| Class | Any instantiated class object | Uninitialized class object (`null`) |
 
 ### boolean examples
 
@@ -107,13 +108,13 @@ public void booleanMethod()
 
 ## date
 
-The **date** data type contains the day, month, and year. Dates can be written as literals by using the following syntax: **Date literal = day \\ month \\ year**. You must use four digits for the year.
+The **date** data type contains the day, month, and year. Dates can be written as literals by using the following syntax: Date literal = day \\ month \\ year. You must use four digits for the year.
 
-The **date** data type can hold dates between January 1, 1900, and December 31, 2154. The size of a **date** is 32-bits. The default value is **1\\1\\1900**, and the internal representation is a date.
+The **date** data type can hold dates between January 1, 1900, and December 31, 2154. The size of a date is 32-bits. The default value is 1\\1\\1900, and the internal representation is a date.
 
 A **date** has no implicit conversions, however, the following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **str2date**, **date2str**, **date2num**, and **int2date**.
 
-You can add and subtract integers from dates, which moves the date the designated number days into the future and past respectively. Subtracting dates from each other will calculate the difference in days, however, adding two dates together is not possible and will lead to a compiler error.
+You can add and subtract integers from dates, which moves the date the designated number days into the future and past respectively. Subtracting dates from each other calculates the difference in days, however, adding two dates together isn't possible and leads to a compiler error.
 
 ### date examples
 
@@ -158,25 +159,24 @@ public void DateMethod()
 
 An **enum** is a list of literals. Before you can use an **enum**, you must declare it in Application Explorer.
 
+An enumerated type (or enum) is a distinct type that defines a set of named constants, making your code more readable and maintainable. Enums are useful when you have a variable that identifies one value out of a small set of predefined values. Enums allows you to assign meaningful names to a set of integer values, improving code clarity. 
 
-
-An enumerated type (or enum) is a distinct type that defines a set of named constants, making your code more readable and maintainable. Enums are particularly useful when you have a variable that identifies one value out of a small set of predefined values. Enums allow you to assign meaningful names to a set of integer values, improving code clarity. 
-
-The literal values are represented internally as integers. The first literal has the number 0, the next literal has the number 1, the next literal has the number 2, and so on. You can use **enum** values as integers in expressions. The default value for the first entry is **0**, i.e **false**.
+The literal values are represented internally as integers. The first literal has the number 0, the next literal has the number 1, the next literal has the number 2, and so on. You can use **enum** values as integers in expressions. The default value for the first entry is **0**, or **false**.
 
 An **enum** value is automatically converted to a **boolean**, **int**, or **real**. Additionally, the following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **enum2str** and **str2enum**.
 
-Thousands of enumerable types are built into the standard application. For example, the **NoYes** enum has two associated literals: **No** has the value **0**, and **Yes** has the value **1**. You can create as many enum types as you want, and you can declare up to 251 (0 to 250) literals in a single enum type. To reference an **enum** value, enter the name of the enum, two colons, and then the name of the literal. For example, to use the literal **No** in the **NoYes** enum, enter **NoYes::No**.
+Thousands of enumerable types are built into the standard application. For example, the **NoYes** enum has two associated literals: **No** has the value **0**, and **Yes** has the value **1**. You can create as many enum types as you want, and declare up to 251 (0 to 250) literals in a single enum type. To reference an **enum** value, enter the name of the enum, two colons, and then the name of the literal. For example, to use the literal **No** in the **NoYes** enum, enter **NoYes::No**.
 
 ### Create an enum
 
-Enumerations are not created in code, but in metadata. Here is now to create an enumerated type:
+Enumerations aren't created in code, but in metadata. 
 
-1. In Solution Explorer, right-click the project, point to **Add**, and then click **New Item**.
-2. Under **Dynamics 365 Items**, select **Data Types**.
+To create an enumerated type, follow these steps:
+1. In Solution Explorer, right-click the project, point to **Add**, and click **New item**.
+2. Under **Dynamics 365 items**, select **Data Types**.
 3. Click **Base Enum** to select the new item type.
-4. In the **Name** field, enter a name for the enum, and then click **Add**. A new enum is added to the project, and the enum designer for the new element is opened.
-5. In the enum designer, right-click the enum name, and then click **New Element**.
+4. In the **Name** field, enter a name for the enum, click **Add**. A new enum is added to the project, and the enum designer for the new element is opened.
+5. In the enum designer, right-click the enum name, click **New element**.
 6. In the **Properties** window, enter the name of the enum element.
 
 ### enum examples
@@ -194,7 +194,7 @@ public void EnumMethod()
 
 ## guid
 
-The **guid** data type holds a *globally unique identifier* (GUID) value. A GUID is an integer that can be used across all computers and networks, wherever a unique identifier is required. It's very unlikely that the number will be duplicated. A valid GUID meets all the following specifications:
+The **guid** data type holds a *globally unique identifier* (GUID) value. A GUID is an integer that can be used across all computers and networks, wherever a unique identifier is required. It's unlikely that the number is duplicated. A valid GUID meets all the following specifications:
 
 - It must have 32 hexadecimal digits.
 - It must have four dash characters that are embedded at the following locations: 8-4-4-4-12.
@@ -204,7 +204,7 @@ The **guid** data type holds a *globally unique identifier* (GUID) value. A GUID
 
 The size of a **guid** is 16 bytes or 128-bits. The following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **any2guid**, **guid2str**, **newGuid**, **str2guid**, **Global::guidFromString**, and **Global::stringFromGuid**.
 
-There is only one way to create a new guid value, namely by using the newGuid() predefined function.
+There's only one way to create a new guid value, namely by using the newGuid() predefined function.
 
 ### guid examples
 
@@ -247,7 +247,7 @@ static void GuidRoundTripJob(Args _args)
 
 ### guid code output
 
-The following output appears in the Infolog. Note that the string includes the optional braces.
+The following output appears in the Infolog. The string includes the optional braces.
 
 ```xpp
 Message (02:26:46 pm)
@@ -270,7 +270,7 @@ Additionally, the following explicit [conversion functions](xpp-conversion-run-t
 
 ### int and int64 examples
 
-The following example shows how to declare integers and use them in expressions. You can get overflow values by adding a positive value to the largest integer value. This is a consequence of the two's complement format. For instance
+The following example shows how to declare integers and use them in expressions. You can get overflow values by adding a positive value to the largest integer value. This is a consequence of the two's complement format.
 
 ```xpp
 public void integerOverflow()
@@ -286,7 +286,7 @@ public void integerOverflow()
 }
 ```
 
-X++ does not support unsigned integer types.
+X++ doesn't support unsigned integer types.
 
 ```xpp
 public void IntegerMethod()
@@ -327,11 +327,16 @@ public void IntegerMethod()
 
 ## real
 
-A **real** variable can hold decimal (a.k.a. floating point) values in addition to integral values. You can use *decimal literals* anywhere that a **real** is expected. Real literals can be written by using exponential notation, such as **1.0e3**.
+A **real** variable can hold decimal values in addition to integral values. You can use *decimal literals* anywhere that a **real** is expected. Real literals can be written by using exponential notation, such as **1.0e3**.
 
 A **real** has a precision of 128 bits, allowing around 28 significant digits, encoded as a binary coded decimal (BCD) number. The default value for a **real** is **0.0**. 
  
-A *decimal number* is a floating-point value that consists of a sign, a numeric value where each digit is in the range 0 through 9, and a scaling factor that indicates the position of a floating decimal point that separates the integral and fractional parts of the numeric value. The binary representation of a **real** value consists of a 1-bit sign, a 96-bit integer number, and a scaling factor. The scaling factor is used to divide the 96-bit integer and specify what part of it is a decimal fraction. The scaling factor is implicitly the number 10 raised to an exponent in the range 0 through 28. Therefore, the binary representation of a decimal value represents (\[-2⁹⁶ through 2⁹⁶\] ÷ 10(0\\ through\\ 28)), where -(2⁹⁶-1) is the minimum value that can be expressed and 2⁹⁶-1 is the maximum value. These values are ±1.0 × 10⁻²⁸ to ±7.9 × 10²⁸.
+A *decimal number* is a floating point value that consists of:
+ - a sign
+ - a numeric value where each digit is in the range 0 through 9
+ - a scaling factor that indicates the position of a floating decimal point that separates the integral and fractional parts of the numeric value.
+
+The binary representation of a **real** value consists of a 1-bit sign, a 96-bit integer number, and a scaling factor. The scaling factor is used to divide the 96-bit integer and specify what part of it is a decimal fraction. The scaling factor is implicitly the number 10 raised to an exponent in the range 0 through 28. Therefore, the binary representation of a decimal value represents (\[-2⁹⁶ through 2⁹⁶\] ÷ 10(0\\ through\\ 28)), where -(2⁹⁶-1) is the minimum value that can be expressed and 2⁹⁶-1 is the maximum value. These values are ±1.0 × 10⁻²⁸ to ±7.9 × 10²⁸.
 
 This representation makes the **real** type resilient to rounding errors.
  
@@ -443,15 +448,15 @@ void myMethod()
 
 ## str
 
-A **str** variable (otherwise known as *string*) is a sequence of unicode characters that are used as texts, help lines, addresses, telephone numbers, and so on.
+A **str** variable, *string*, is a sequence of unicode characters that are used as texts, help lines, addresses, telephone numbers, and so on.
 
 To declare a string, use the **str** keyword.
 
-*String literals* are characters that are enclosed in either quotation marks ("") or single quotation marks. String literals can be used wherever string expressions are expected. Examples of string literals include "StringLit" and "Hello World". If you want the string to span more than one line, precede it with an at sign (@). You can use strings in logical expressions, such as comparisons. You can also concatenate strings by using the + operator.
+String literals are characters that are enclosed in either quotation marks ("") or single quotation marks. String literals can be used wherever string expressions are expected. Examples of string literals include "StringLit" and "Hello world". If you want the string to span more than one line, precede it with an at sign (@). You can use strings in logical expressions, such as comparisons. You can also concatenate strings by using the + operator.
 
-The default value for a string is **empty**, i.e. **""**, and the internal representation is a list of characters. There are no automatic conversions for strings, however, the following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **str2int**, **str2int64**, **int2str**, **str2num**, **num2str**, **str2date**, and **date2str**.
+The default value for a string is **empty**, that is **""**, and the internal representation is a list of characters. There are no automatic conversions for strings, however, the following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **str2int**, **str2int64**, **int2str**, **str2num**, **num2str**, **str2date**, and **date2str**.
 
-A string can hold a practically unlimited number of characters, however, you can specify the maximum length of a string in the variable declaration. The string is then truncated to that maximum length. An example is shown in the next section.
+A string can hold a practically unlimited number of characters. You can specify the maximum length of a string in the variable declaration. The string is then truncated to that maximum length. An example is shown in the next section.
 
 ### str examples
 
@@ -482,11 +487,11 @@ void StringMethod()
 
 ### String truncation
 
-String values can be declared in X++ to contain a maximum number of characters. Typically, this is achieved by encoding this information in an extended data type and setting the **String Size** in the **Properties** window. In the following screenshot, **FMCreditCardNum** cannot exceed 20 characters.
+String values can be declared in X++ to contain a maximum number of characters. Typically, this is achieved by encoding this information in an extended data type and setting the **String size** in the **Properties** window. In the following screenshot, **FMCreditCardNum** can't exceed 20 characters.
 
 ![FMCreditCardNum string size.](media/stringtruncation.png)
 
-Run the following code in the debugger by including it in a static **Main** method to observed the behavior.
+Run the following code in the debugger by including it in a static **Main** method to observe the behavior.
 
 ```xpp
 creditCardNumber = "12345678901234567890Excess string";
@@ -523,7 +528,7 @@ The **utcdatetime** data type combines the **date** type and the **timeOfDay** t
 
 The format for a **utcdatetime** literal is **yyyy-mm-ddThh:mm:ss**. The uppercase "T" between the date part and the time part is required. The minimum value is **1900-01-01T00:00:00**, and the maximum value is **2154-12-31T23:59:59**. This maximum value matches the upper range of **date** and **timeOfDay**. The smallest unit of time in **utcdatetime** is one second.
 
-A **utcdatetime** variable that has been declared but hasn't been initialized has the default value **1900-01-01T00:00:00**. This value is the value that is returned by **DateTimeUtil::minValue()**. Some functions treat an input parameter of this minimum value as **null**. For example, the **DateTimeUtil::toStr** method returns an empty string, however, the **DateTimeUtil::addSeconds** method returns a usable **utcdatetime** value.
+A **utcdatetime** variable that has been declared but hasn't been initialized has the default value **1900-01-01T00:00:00**. This value is returned by **DateTimeUtil::minValue()**. Some functions treat an input parameter of this minimum value as **null**. For example, the **DateTimeUtil::toStr** method returns an empty string, however, the **DateTimeUtil::addSeconds** method returns a usable **utcdatetime** value.
 
 There are no implicit conversions for the **utcdatetime** data type. The **DateTimeUtil** class provides many methods that you can use to manipulate **utcdatetime** values.
 

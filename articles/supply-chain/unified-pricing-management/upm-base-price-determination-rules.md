@@ -1,20 +1,18 @@
 ---
-title: Sales order base price determination rules (preview)
+title: Sales order base price determination rules
 description: Learn about the price determination rules for calculating an item's base price with a table that defines usage for various terms.
 author: sherry-zheng
 ms.author: chuzheng
-ms.topic: conceptual
+ms.topic: article
 ms.date: 10/25/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Sales order base price determination rules (preview)
+# Sales order base price determination rules
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.34 GA -->
 
 This article describes the price determination rules for calculating the sales order base price.
 

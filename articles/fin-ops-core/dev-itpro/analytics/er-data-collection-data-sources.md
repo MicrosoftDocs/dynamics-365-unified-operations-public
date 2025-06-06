@@ -3,7 +3,7 @@ title: Use DATA COLLECTION data sources in Electronic reporting formats
 description: Learn about how to use DATA COLLECTION data sources in Electronic reporting (ER) formats, including frequently asked questions.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/23/2021
 ms.reviewer: johnmichalak
 audience: IT Pro

@@ -1,58 +1,62 @@
 ---
 title: Create a tax assessment - PIS and COFINS tax (Brazil)
-description: You can create the tax assessment for PIS/COFINS contributions for a given booking period, including a step-by-step process using the BRMF demo company.
+description: This article describes how to create the tax assessment for PIS/COFINS contributions for a given booking period in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/26/2024
+ms.date: 03/20/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Create a tax assessment - PIS and COFINS tax (Brazil)
 
 [!include [banner](../../includes/banner.md)]
 
-You can create the tax assessment for PIS/COFINS contributions for a given booking period. The tax assessment considers the PIS/COFINS contribution amount to recover and the PIS/COFINS contribution amount to pay from the fiscal documents. For the  amount that is due after the tax assessment, you can create the tax payment. This recording uses the BRMF demo company.
+This article describes how to create the tax assessment for Program of Social Integration (PIS)/Contribution for the Financing of Social Security (COFINS) contributions for a given booking period in Brazil with Microsoft Dynamics 365 Finance.
 
-1. Go to Fiscal books > Common > Booking period.
-2. Click Create new booking period to open the drop dialog.
-3. In the Fiscal establishment field, enter or select a value.
-4. In the Month field, select an option.
-5. In the Year field, enter a number.
-6. Click OK.
-7. Click Sync.
-8. Click OK.
-9. Close the page.
-10. Go to Fiscal books > Common > Tax assessment > PIS-COFINS.
-11. Click PIS and COFINS tax assessment to open the drop dialog.
-12. In the Booking period field, enter or select a value.
-13. Click OK.
-14. Click Tax payment.
-15. Click Create from assessment.
-16. Click Edit.
-17. In the Receita Code field, type a value.
-18. In the list, mark the selected row.
-19. In the Due date field, enter a date.
-20. Expand the General section.
-21. In the Authority field, enter or select a value.
-22. Click Post.
-23. Close the page.
-24. In the list, find and select the desired record.
-25. Click Tax payment.
-26. Click Create from assessment.
-27. Click Edit.
-28. In the Receita Code field, type a value.
-29. In the list, mark the selected row.
-30. In the Due date field, enter a date.
-31. In the Authority field, enter or select a value.
-32. Click Post.
-33. Close the page.
-34. Close the page.
+You can create the tax assessment for PIS/COFINS contributions for a given booking period. The tax assessment considers the PIS/COFINS contribution amount to recover and the PIS/COFINS contribution amount to pay from the fiscal documents. For the amount due after the tax assessment, you can create the tax payment. 
+
+The following procedure uses the BRMF demo company.
+
+To create the tax assessment for PIS/COFINS contributions for a given booking period, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fiscal books \> Common \> Booking period**.
+1. Select **Create new booking period** to open the drop dialog.
+1. In the **Fiscal establishment** field, enter or select a value.
+1. In the **Month** field, select a month.
+1. In the **Year** field, enter a year.
+1. Select **OK**.
+1. Select **Sync**.
+1. Select **OK**.
+1. Close the page.
+1. Go to **Fiscal books \> Common \> Tax assessment \> PIS-COFINS**.
+1. Select **PIS and COFINS tax assessment** to open the drop dialog.
+1. In the **Booking period** field, enter or select a value.
+1. Select **OK**.
+1. Select **Tax payment**.
+1. Select **reate from assessment**.
+1. Select **Edit**.
+1. In the **Receita Code** field, enter a value.
+1. In the list, mark the selected row.
+1. In the **Due date** field, enter a date.
+1. Expand the **General** section.
+1. In the **Authority** field, enter or select a value.
+1. Select **Post**.
+1. Close the page.
+1. In the list, find and select the desired record.
+1. Select **Tax payment**.
+1. Select **Create from assessment**.
+1. Select **Edit**.
+1. In the **Receita Code** field, enter a value.
+1. In the list, mark the selected row.
+1. In the **Due date** field, enter a date.
+1. In the **Authority** field, enter or select a value.
+1. Select **Post**.
+1. Close the page.
 
 
 

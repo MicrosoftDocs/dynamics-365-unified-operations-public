@@ -3,7 +3,7 @@ title: Confirm outbound shipments from batch jobs
 description: Learn how to set up a batch job that confirms outbound transfer-order shipments for ready-to-ship loads with an outline on process outbound shipments.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/31/2020
 ms.custom:
 ms.reviewer: kamaybac

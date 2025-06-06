@@ -3,7 +3,7 @@ title: Net requirements and pegging information
 description: Learn about calculated net requirements and pegging information, including an outline on the various methods of opening the net requirements page.
 author: t-benebo
 ms.author: benebotg
-ms.topic: article
+ms.topic: how-to
 ms.date: 7/28/2021
 ms.reviewer: kamaybac
 ms.search.form: ReqTransOverview

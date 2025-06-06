@@ -3,7 +3,7 @@ title: Reimburse customers
 description: Learn how to create reimbursement transactions for a group of customers, including a table that describes various prerequisites.  
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/08/2023
 ms.reviewer: twheeloc
 audience: Application User

@@ -3,7 +3,7 @@ title: Make finished goods physically available before posting to journals
 description: When a manufactured item is reported as finished, it's registered as available for further physical processing, and one or more journals are posted.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/02/2022
 ms.reviewer: kamaybac
 ms.search.form: ProdParameters, JmgProdParameters, InventLocation, JmgMES3PMessageProcessorMessage
@@ -18,10 +18,6 @@ When a worker reports a manufactured item as finished, the system registers it a
 The following illustration shows how processes for posting journals are invoked both with and without deferred posting.
 
 ![The report-as-finished process with and without deferred journal posting.](media/deferred-posting-flowchart.png "The report-as-finished process with and without deferred journal posting")
-
-## Turn on deferred journal posting for your system
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.41, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.41, then admins can turn this functionality on or off by searching for the *Make finished goods physically available before posting to journals* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up journal posting options for reporting as finished
 

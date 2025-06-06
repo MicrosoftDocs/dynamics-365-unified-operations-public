@@ -5,7 +5,7 @@ author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: ProdJournalTransJob, ProdJournalTransProd, ProdJournalTransRoute, ProdParmReportFinished, ProdRouteOprOverview
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/06/2025
 ms.custom: 
   - bap-template

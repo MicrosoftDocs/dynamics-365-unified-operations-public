@@ -3,7 +3,7 @@ title: Synchronize work orders in Field Service to sales orders in Supply Chain 
 description: Learn about the templates and underlying tasks that are used to synchronize work orders in Field Service to sales orders in Supply Chain Management. 
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/10/2024
 ms.custom: 
 ms.reviewer: kamaybac

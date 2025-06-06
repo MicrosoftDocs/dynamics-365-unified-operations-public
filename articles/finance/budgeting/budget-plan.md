@@ -3,7 +3,7 @@ title: Budget planning
 description: Access an illustration of a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration. 
 author: jchrist
 ms.author: jchrist
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/21/2024
 ms.reviewer: twheeloc
 audience: Application User

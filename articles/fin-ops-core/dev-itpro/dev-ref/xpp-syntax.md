@@ -1,10 +1,10 @@
 ---
 title: X++ syntax
 description: Learn about the syntax reference for X++, including a table that outlines descriptions for various reserved keywords.
-author: johnmichalak
-ms.author: johnmichalak
-ms.topic: reference
-ms.date: 10/03/2024
+author: pvillads
+ms.author: pvillads
+ms.topic: language-reference
+ms.date: 05/19/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -112,7 +112,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>,</strong></td>
-<td>Comma operator. Expressions separated by commas are evaluated left-to-right.</td>
+<td>Comma operator. Expressions separated by commas are evaluated sequentially left-to-right.</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -141,28 +141,28 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 <td>Arithmetic Operators</td>
 </tr>
 <tr class="even">
-<td><strong>&lt;/strong&gt;</td>
-<td>Escape in strings. Escapes extra quotation marks, and certain letters such as <span class="code">\t</span> for tab.</td>
+<td><strong>\</td>
+<td>Escape in strings. Escapes extra quotation marks, and certain letters such as <span class="code">'\t'</span> for tab.</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><strong>@</strong></td>
-<td>Escape of keywords. For example, <span class="code">str <xref href="abstract" data-throw-if-not-resolved="False" data-raw-source="@abstract"></xref>;</span> would fail to compile without the <strong>@</strong> sign. Also affects literal strings, by negating the effect of the \ escape character, and by enabling the string to span more than one line in the source code. The new line is represented by one character of hexadecimal 0x0A, which is commonly called a line feed. No carriage return character of hexadecimal 0x0D is included, as in 0x0D0A.</td>
+<td>Escape of keywords. For example, <span class="code">var @str = 1<xref href="abstract" data-throw-if-not-resolved="False" data-raw-source="@abstract"></xref>;</span> fails to compile without the <strong>@</strong> character that causes any string following it to be regarded as an identifier. It also affects literal strings, by negating the effect of the \ escape character, and by enabling the string to span more than one line in the source code. The new line is represented by one character of hexadecimal 0x0A, which is commonly called a line feed. No carriage return character of hexadecimal 0x0D is included, as in 0x0D0A.</td>
 <td></td>
 </tr>
 <tr class="even">
 <td><strong>:</strong></td>
-<td>Field declaration or label specifier. The colon (<span class="code">:</span>) character is also used on the <code>switch</code> statement.</td>
+<td>The colon (<span class="code">:</span>) character is used to delimit case values in the <code>switch</code> statement.</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><strong>::</strong></td>
-<td>Used to call static (class) methods: <span class="code">ClassName::methodName</span>.</td>
+<td>Used to call static (class) methods: <span class="code">ClassName::methodName() and to designate enumeration literals, like NoYes::Yes</span>. </td>
 <td></td>
 </tr>
 <tr class="even">
 <td><strong>;</strong></td>
-<td>Terminates statements. Used in <code>for</code> loops or as a separator of statements.</td>
+<td>Terminates statements. Used in <code>for</code> loops or as a separator of initializer, update, and value check parts.</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -187,7 +187,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="odd">
 <td><strong>==</strong></td>
-<td>Returns true if both expressions are equal.</td>
+<td>Returns true if the expressions are equal.</td>
 <td>Relational Operators</td>
 </tr>
 <tr class="even">
@@ -202,11 +202,12 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>&gt;&gt;</strong></td>
-<td>Right shift.</td>
+<td>Bitwise Right Shift. This operator shifts bits in the left hand side by the amount on the right hand side. Each shift effectively divides the number by 2^n, where n is the number of positions shifted.
+</td>
 <td>Arithmetic Operators</td>
 </tr>
 <tr class="odd">
-<td><strong>?</strong></td>
+<td><strong>?:</strong></td>
 <td>Ternary operator. The question mark (<span class="code">?</span>) character is also used by the <code>like</code> operator to signify exactly one character of any kind. The <code>like</code> operator also uses the <span class="code"><em></span> character.</td>
 <td>Ternary Operator (?)</td>
 </tr>
@@ -222,27 +223,27 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>{</strong></td>
-<td>Indicates the beginning of a number of statements. The last of these statements must be followed by a &quot;<strong>}</strong>&quot;.</td>
+<td>Starts a compound statement that may in turn contain zero or more statements. The compound statement ends with the closest matching &quot;<strong>}</strong>&quot;.</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><strong>}</strong></td>
-<td>Indicates the end of a number of statements. A &quot;<strong>{</strong>&quot; must appear before the first of these statements.</td>
+<td>Indicates the end of the compound statement described above. A &quot;<strong>{</strong>&quot; must appear before the first of these statements.</td>
 <td></td>
 </tr>
 <tr class="even">
 <td><strong>abstract</strong></td>
-<td>Class and method modifier. An <strong>abstract</strong> class can't be constructed with the <strong>new</strong> keyword. An <strong>abstract</strong> method can't be called. A table can also be modified as abstract by setting its <span class="ui">Abstract</span> property to <span class="ui">Yes</span> in the AOT, or by using the <code>DictTable</code> class. The <span class="ui">Abstract</span> property defaults to <span class="ui">No</span>, and it can't be set unless the table is extended by another table. Each row in an abstract table must have a dependent row in a derived table. This means that each row in an abstract table has a value greater than zero in its <span class="ui">InstanceRelationType</span> property field. There are no other effects from marking a table as abstract. Informally, programmers often use the term <span class="term">concrete</span> to describe a class that is non-<strong>abstract</strong>.</td>
+<td>Class and method modifier. An <strong>abstract</strong> class can't be constructed with the <strong>new</strong> keyword - Only the classes derived from it can. An <strong>abstract</strong> method can't be called, only methods that override it can. A table can be modified as abstract by setting its <span class="ui">Abstract</span> property to <span class="ui">Yes</span> in the AOT, or by using the <code>DictTable</code> class. The <span class="ui">Abstract</span> property defaults to <span class="ui">No</span>, and it can't be set unless the table is extended by another table. Each row in an abstract table must have a dependent row in a derived table. This means that each row in an abstract table has a value greater than zero in its <span class="ui">InstanceRelationType</span> property field. There are no other effects from marking a table as abstract. Informally, programmers often use the term <span class="term">concrete</span> to describe a class that is non-<strong>abstract</strong>.</td>
 <td>Method Modifiers Table Inheritance Overview</td>
 </tr>
 <tr class="odd">
 <td><strong>anytype</strong></td>
-<td>The method can return any data type.</td>
+<td>A type that can contain values of any type.</td>
 <td>Anytype</td>
 </tr>
 <tr class="even">
 <td><strong>as</strong></td>
-<td>Needed when you assign a base class variable to a derived class variable. For example, given a <code>Derived</code> class that <strong>extends</strong> a <code>Base</code> class, the statement <code>myDerived = myBase as Derived;</code> avoids a compiler error by using the <strong>as</strong> keyword. This keyword also applies when you assign a base table variable to a derived table variable.</td>
+<td>Needed when you assign a base class variable to a derived class variable. For example, given a <code>Derived</code> class that <strong>extends</strong> a <code>Base</code> class, the statement <code>myDerived = myBase as Derived;</code> avoids a compiler error by using the <strong>as</strong> keyword. This keyword also applies when you assign a base table variable to a derived table variable. If the value (myBase) isn't of the designated type (Derived) the expression returns null.</td>
 <td>Expression Operators: Is and As for Inheritance</td>
 </tr>
 <tr class="odd">
@@ -252,7 +253,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>at</strong></td>
-<td>Specifies the position of a print window.</td>
+<td>Specifies the position of a print window as part of a <code>print</code> statement. The print statement shouldn't be used.</td>
 <td>Print Statements</td>
 </tr>
 <tr class="odd">
@@ -262,7 +263,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>break</strong></td>
-<td>Immediate exit from code block.</td>
+<td>Immediate exit from an iterative code block.</td>
 <td>Break Statements</td>
 </tr>
 <tr class="odd">
@@ -302,12 +303,12 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>client</strong></td>
-<td>Method modifier.</td>
+<td>Method modifier. These modifiers aren't used anymore. All methods are executed on the server tier.</td>
 <td>Method Modifiers</td>
 </tr>
 <tr class="odd">
 <td><strong>container</strong></td>
-<td>Specifies a variable of type <code>container</code>.</td>
+<td>Designates the <code>container</code> type. Containers contain a sequence of atomic values and other containers.</td>
 <td>Containers</td>
 </tr>
 <tr class="even">
@@ -332,7 +333,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>default</strong></td>
-<td>Default case within <code>switch</code> statements.</td>
+<td>Default case within <code>switch</code> statements. The code block in the default part is executed if the switch value does not match any of the <code>case</code> clauses provided in the <code>switch</code> statement.</td>
 <td>Switch Statements</td>
 </tr>
 <tr class="odd">
@@ -347,7 +348,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>delete_from</strong></td>
-<td>Allows you to delete multiple records from the database at the same time.</td>
+<td>Allows you to delete records from the database.</td>
 <td>delete_from</td>
 </tr>
 <tr class="odd">
@@ -357,7 +358,8 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>display</strong></td>
-<td>Method modifier.</td>
+<td>Method modifier. A <code>display</display> method is used to show calculated values in a form control. Unlike regular fields, these values aren't stored in the database but are computed dynamically.
+</td>
 <td>Method Modifiers</td>
 </tr>
 <tr class="odd">
@@ -372,12 +374,13 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="odd">
 <td><strong>edit</strong></td>
-<td>Method modifier.</td>
+<td>Method modifier. An <code>edit</code> method in X++ allows users to modify values in a form control while executing custom logic. Unlike <code>display</code> methods, which only show calculated values, edit methods enable both viewing and editing.
+</td>
 <td>Method Modifiers</td>
 </tr>
 <tr class="even">
 <td><strong>else</strong></td>
-<td>Conditional execution (<code>if...else</code>).</td>
+<td>Conditional execution (<code>if...else</code>). The <code>else</code> part of the <code>if</code> statement is executed if the expression in the if statement is evaluated to <code>false</code></td>
 <td>if and if ... else Statements</td>
 </tr>
 <tr class="odd">
@@ -402,7 +405,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="odd">
 <td><strong>final</strong></td>
-<td>Class and method modifier.</td>
+<td>Class and method modifier. Specifies that this method can't be overridden.</td>
 <td>Method Modifiers</td>
 </tr>
 <tr class="even">
@@ -432,7 +435,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="odd">
 <td><strong>flush</strong></td>
-<td>Clears the entire table cache. This can be particularly useful when you want to ensure that any changes made to the table are immediately reflected in subsequent operations.</td>
+<td>Clears the entire table cache. This can be useful when you want to ensure that any changes made to the table are immediately reflected in subsequent operations.</td>
 <td>Set-based Caching</td>
 </tr>
 <tr class="even">
@@ -467,7 +470,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>from</strong></td>
-<td>Part of a <code>select</code> statement. The <code>from</code> clause specifies the table in which the columns exists.</td>
+<td>Part of a <code>select</code> statement. The <code>from</code> clause specifies the table buffer in which the columns exists.</td>
 <td>Select Statement Syntax</td>
 </tr>
 <tr class="odd">
@@ -482,7 +485,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="odd">
 <td><strong>implements</strong></td>
-<td>Implements an interface.</td>
+<td>Implementation of an <code>interface</code>.</td>
 <td>Interfaces Overview</td>
 </tr>
 <tr class="even">
@@ -512,16 +515,12 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="odd">
 <td><strong>join</strong></td>
-<td>Tables are joined on columns common to both tables. You can generate a single result set based on multiple tables through the use of joins.</td>
+<td>Tables are joined on columns common to both tables. You can generate a single result set based on multiple tables by using joins.</td>
 <td>Select Statement Syntax</td>
 </tr>
 <tr class="even">
 <td><strong>like</strong></td>
-<td>Tests for matches by pattern, with wildcard symbols * and ?. The string on the right side of the <code>like</code> operator must use four backslash characters to represent one backslash. Examples follow:
-<ul>
-<li><span class="code">(&quot;&amp;quot; like &quot;</em>&lt;em&gt;&quot; )</span> //Resolves to false.</li>
-<li><span class="code">(&quot;&amp;quot; like &quot;</em>\*&quot;)</span> //Resolves to true.</li>
-</ul></td>
+<td>Tests for matches by pattern, with wildcard symbols '*' and '?'.</td>
 <td>Relational Operators</td>
 </tr>
 <tr class="odd">
@@ -536,22 +535,22 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="odd">
 <td><strong>mod</strong></td>
-<td>Returns the integer remainder of the left expression1 divided by the right expression2. Informally this is sometimes called the modulo operator. <code>((12 mod 7) == 5)</code> is true.</td>
+<td>Returns the integer remainder of the left expression1 divided by the right expression2. Informally this is sometimes called the modulo operator. <code>(12 mod 7) == 5</code> is true.</td>
 <td></td>
 </tr>
 <tr class="even">
 <td><strong>new</strong></td>
-<td>Operator. Creates an instance of an anonymous class that is assignment-compatible with the named class/interface reference variables, or allocates memory for an array.</td>
+<td>Operator. Creates an instance of a class or allocates memory for an array.</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><strong>next</strong></td>
-<td>Fetches the next record in a table.</td>
+<td>Fetches the next record in a table or calls the next method in a chain-of-command sequence.</td>
 <td></td>
 </tr>
 <tr class="even">
 <td><strong>noFetch</strong></td>
-<td>Indicates that no records are to be fetched at present.</td>
+<td>Indicates that no records are to be fetched now.</td>
 <td>Select Statement Syntax</td>
 </tr>
 <tr class="odd">
@@ -581,7 +580,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>pause</strong></td>
-<td>Halts the execution of a job. The user is asked to state whether execution should continue.</td>
+<td>Halts the execution of a job. The user is asked to state whether execution should continue. You shouldn't use this statement in production code.</td>
 <td>Select Statements</td>
 </tr>
 <tr class="odd">
@@ -591,27 +590,27 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>print</strong></td>
-<td>Allows you to display output on the screen.</td>
+<td>Allows you to display output on the screen. You shouldn't use this statement in production code.</td>
 <td>Print Statements</td>
 </tr>
 <tr class="odd">
 <td><strong>private</strong></td>
-<td>Method access modifier.</td>
+<td>Method access modifier. The method can only be used within the class that declares the method.</td>
 <td>Method Access Control</td>
 </tr>
 <tr class="even">
 <td><strong>protected</strong></td>
-<td>Method access modifier.</td>
+<td>Method access modifier. The method can be used from methods in the class declaring the methods, and in any derived classes.</td>
 <td>Method Access Control</td>
 </tr>
 <tr class="odd">
 <td><strong>public</strong></td>
-<td>Method access modifier.</td>
+<td>Method access modifier. The method may be called from any class.</td>
 <td>Method Access Control</td>
 </tr>
 <tr class="even">
 <td><strong>real</strong></td>
-<td>Specifies a variable of type <code>real</code>.</td>
+<td>Designates the <code>real</code> type, a decimal type without rounding errors.</td>
 <td>Reals</td>
 </tr>
 <tr class="odd">
@@ -626,7 +625,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="odd">
 <td><strong>return</strong></td>
-<td>Exits from a method.</td>
+<td>Returns from a method.</td>
 <td>Declaration of Methods</td>
 </tr>
 <tr class="even">
@@ -641,7 +640,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>server</strong></td>
-<td>Method modifier.</td>
+<td>Method modifier. This modifier is ignored and shouldn't be used, since all methods are executed on the server side.</td>
 <td>Method Modifiers</td>
 </tr>
 <tr class="odd">
@@ -656,7 +655,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="odd">
 <td><strong>str</strong></td>
-<td>Specifies a variable of type <code>string</code>.</td>
+<td>Designates the <code>string</code> type.</td>
 <td>Strings</td>
 </tr>
 <tr class="even">
@@ -671,7 +670,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>switch</strong></td>
-<td>Switch selection statement.</td>
+<td>Switch statement.</td>
 <td>Switch Statements</td>
 </tr>
 <tr class="odd">
@@ -681,8 +680,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>this</strong></td>
-<td>A reference to the current instance of the class. Used in X++ code inside a method of the class. Used to reference <em>method</em> members of the class, but not <em>field</em> members of the class.<code>public str getFullName()</code>  <span class="code">{</span>  <span class="code">    // Next statement fails to compile without &#39;this.&#39;.</span>  <code>    return this.concatenateFirstAndLastNames();</code>  <span class="code">}</span></td>
-<td>Loosely similar to the system variable that is named <code>element</code>. You use <code>element</code> in form control methods to reference the containing form. For more information, see Using Variables with Forms.</td>
+<td>A reference to the current instance of the class. Used in X++ code inside an instance method of the class. Used to reference <em>method</em> members of the class.</td>
 </tr>
 <tr class="odd">
 <td><strong>throw</strong></td>
@@ -701,7 +699,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>ttsAbort</strong></td>
-<td>Discards all changes in the current transaction.</td>
+<td>Roll back (i.e. discard) all changes in the current transaction.</td>
 <td>Transaction Integrity</td>
 </tr>
 <tr class="odd">
@@ -711,7 +709,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>ttsCommit</strong></td>
-<td>Marks the end of a transaction.</td>
+<td>Marks the end of a transaction, commiting the changes to the tables.</td>
 <td>Transaction Integrity</td>
 </tr>
 <tr class="odd">
@@ -736,19 +734,19 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="odd">
 <td><strong>while</strong></td>
-<td>Iteration statement. Executes a statement or block repeatedly when a test condition is true.</td>
-<td>While Loops while select Statements</td>
+<td>Iteration statement. Executes a statement repeatedly as long as the test condition is true.</td>
+<td>While loops while select Statements</td>
 </tr>
 <tr class="even">
 <td><strong>window</strong></td>
-<td>Allows you to alter the size of the output window.</td>
+<td>Allows you to alter the size of the output window. Used with <code>print</print> statements that aren't recommended in production code.</td>
 <td>Print Statements</td>
 </tr>
 </tbody>
 </table>
 
 ## Expressions Syntax
-An expression in X++ is used in either a mathematical or logical way. Expressions are built on the data types of the language; that is, an expression returns a value of some type. This value can be used in calculations, assignments, conditional statements, and so on.
+An expression in X++ is used in either a mathematical or logical way. Expressions are built on the data types of the language; that is, an expression always returns a value of some type. This value can be used in calculations, assignments, conditional statements, and so on.
 
 ### EBNF Description of Expressions in X++
 
@@ -766,7 +764,7 @@ An expression in X++ is used in either a mathematical or logical way. Expression
 |    FunctionCall    | = |                      \[ Expression (.                       |
 |   If-expression    | = |            Expression ? Expression : Expression             |
 
-Semantic restrictions apply on the preceding syntax. You can't call any method using the :: operator. Similarly, you can't use the **this** keyword without an active object; that is, if you aren't within a method and so on.
+Semantic restrictions apply on the preceding syntax. You can't call any method using the :: operator. Similarly, you can't use the **this** keyword without an active object; that is, if you aren't within an instance method and so on.
 
 ### Examples
 
@@ -789,11 +787,11 @@ Semantic restrictions apply on the preceding syntax. You can't call any method u
 Extended Backus Naur Form (EBNF) is a metalanguage and is used in this guide to describe the language syntax. An EBNF definition consists of production rules, nonterminals, and terminals. The key terms are shown in the following table.
 
 
-|    Key terms     |       Example        |                                                                                                          Description                                                                                                          |
-|------------------|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Terminals     |      Work\_Team      |                                                                           A terminal is one character or a string of characters that never change.                                                                            |
+|    Key terms     |       Example        |              Description                                                                                                          |
+|------------------|----------------------|----------------------------------------------------------------------------------------------------------------|
+|    Terminals     |      Work\_Team      |     A terminal is one character or a string of characters that never change.                                                                            |
 |   Nonterminals   |      `Employee`      | A nonterminal is a description of part of a valid sentence in the language that is defined either by a production rule or a textual description. A nonterminal symbol can always be expanded to one or more terminal symbols. |
-| Production rules | Employee = Developer |                                                                                                            Tester                                                                                                             |
+| Production rules | Employee = Developer |           Tester                                                                                                             |
 
 ### Example
 
@@ -813,7 +811,7 @@ For example, if the accessories you buy for your bicycle consist of a saddle, wa
 ## X++ Grammar
 This article shows the formal grammar of the X++ language.
 
-### How to Interpret the Formal BNF Grammar
+### How to interpret the Formal BNF grammar
 
 This section describes the grammar of X++ in Backus Naur Form (BNF). A small example of BNF is described here.
 
@@ -827,7 +825,7 @@ BB ::= JJ_SYM
 
 In the BNF for X++ grammar, most of the terminals have \_SYM as the suffix of their name.
 
-### The Formal X++ Grammar in BNF
+### Formal X++ grammar in BNF
 
 This section contains the BNF that defines the grammar of X++.
 
@@ -1330,141 +1328,6 @@ This section contains the BNF that defines the grammar of X++.
     UNCHECKED_STMT ::= UNCHECKED_HEADER  STATEMENT
     UNCHECKED_HEADER ::= UNCHECKED_SYM  LEFT_PAR_SYM  IF_EXPR  RGHT_PAR_SYM
 ```
- 
-
-## X++ Language Syntax is Stricter in Microsoft Dynamics AX 2012
-Starting in Microsoft Dynamics AX 2012, the syntax rules for X++ are stricter than in previous versions of the product. This article describes the syntax changes.
-
-### Table of X++ Syntax Changes
-
-The following table displays a list of syntax changes that start in Microsoft Dynamics AX 2012.
-
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Area</th>
-<th>Syntax rule</th>
-<th>Before Microsoft Dynamics AX 2012</th>
-<th>Starting with Microsoft Dynamics AX 2012</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Escape</td>
-<td>The backslash character <span class="code">&lt;/span&gt; is rejected by the compiler for unrecognized escapes</td>
-<td>The compiler used to accept &quot;31\12\2002&quot;, but during run time the literal string was interpreted as a different value.</td>
-<td>Now the following X++ statement is rejected by the compiler: <span class="code">str myDateString = &quot;31\12\2002&quot;;</span> The proper syntax is <span class="code">&quot;31\12\2002&quot;</span>.</td>
-</tr>
-<tr class="even">
-<td>Exceptions</td>
-<td>Retry is no longer allowed outside of a catch block</td>
-<td>It was possible to write the <strong>retry</strong> keyword outside of a <strong>catch</strong> block. This caused the program to end when the <strong>retry</strong> was reached during runtime.</td>
-<td>Now <strong>retry</strong> can occur only inside a <strong>catch</strong> block. For more information, see Exception Handling with try, and catch Keywords.</td>
-</tr>
-<tr class="odd">
-<td>Exceptions</td>
-<td>Now you can throw and catch only <code>int</code> values</td>
-<td>It was possible to throw scalar expressions like strings and dates, such as <code>throw &quot;hello world&quot;;</code>, and get no compile error. At runtime this was catch-able by a <code>catch</code> block that wasn't decorated with any specific value, such as <span class="code">catch {print(&quot;Catch worked.&quot;);}</span>.</td>
-<td>Now the only expression you can put on the <strong>throw</strong> keyword is an <code>int</code>. Often the best thing to throw is <span class="code">Global::error(&quot;Explanation&quot;);</span>. Often the best thing to catch is an element of the <code>Exception</code> enum. For more information, see Exception Handling with try, and catch Keywords.</td>
-</tr>
-<tr class="even">
-<td>Inheritance</td>
-<td>Downcasting can now be explicit.
-<table>
-<thead>
-<tr class="header">
-<th><strong>Note</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>It's good programming practice to avoid implicit downcasts.</td>
-</tr>
-</tbody>
-</table></td>
-<td>It was possible to assign a base object to a derived object with the simple assignment operator, which is the equals sign (<code>=</code>). The compiler accepted these assignments, but during run time any misuse of an improper downcast assignment caused an error.</td>
-<td>Now all downcasts can be explicit. This is accomplished with the new <strong>as</strong> expression operator. Explicit downcasting with the <strong>as</strong> keyword is illustrated by the following code example, in which <code>ThingClass</code> extends <code>Object</code>: <code>ThingClass myThing = new ThingClass();</code>  <code>Object myObject = myThing;</code>  <code>myThing = myObject as ThingClass; // Explicit downcast, good.</code> For more information, see Expression Operators: Is and As for Inheritance.</td>
-</tr>
-<tr class="odd">
-<td>Inheritance</td>
-<td>Override of a base method can't be less accessible than the base method</td>
-<td>It was possible to have a base method be decorated with <strong>protected</strong> and yet have an override of that method be <strong>private</strong>.</td>
-<td>Now when a base method is <strong>protected</strong>, the override method must be either <strong>protected</strong> or <strong>public</strong>, and the override method can't be <strong>private</strong>. For more information, see Method Access Control.</td>
-</tr>
-<tr class="even">
-<td>Inheritance</td>
-<td>Override of a base method must have the exact same return type and parameter signature as the base method</td>
-<td>Suppose a base class had a method that inputs a parameter of the <code>Common</code> table, which is the base of all tables. In a derived class it was possible to override the method to instead input <code>MyTable</code>.</td>
-<td>Now the parameter signatures of the base method and its override method must match exactly. Also, the return types must match exactly. For more information, see Overriding a Method.</td>
-</tr>
-<tr class="odd">
-<td>Interfaces</td>
-<td>Implementation of an interface method must match the parameter signature exactly</td>
-<td>Suppose an interface had a method that input a parameter of an <code>int</code>. In a class that implements the interface, it was possible to write the method with a parameter of a <code>str</code>.</td>
-<td>Now the parameter signatures of the method must exactly match between the interface and the implementation of the method on a class. Also, the return types must match exactly. For more information, see Interfaces Overview.</td>
-</tr>
-<tr class="even">
-<td>Interfaces</td>
-<td>A nonabstract base class that implements an interface can't rely on a derived class for that implementation</td>
-<td>When a base class implements an interface, it was possible for the class to not implement the methods of the interface if a derived class implemented the methods. The only limitation was that the <code>new</code> constructor method couldn't be called on the class.</td>
-<td>Now the compiler requires that every class that implements an interface must have or inherit a complete implementation of every method of the interface. For more information, see X++, C# Comparison: Object Oriented Programming.</td>
-</tr>
-<tr class="odd">
-<td>Modifiers</td>
-<td>The <strong>static</strong> modifier shouldn't be applied to an interface</td>
-<td>It was possible to write <span class="code">static interface IMyInterface {}</span>, but the <strong>static</strong> modifier had no effect because it makes no sense in this context.</td>
-<td>Sometime after Dynamics AX 2009 the X++ compiler might stop allowing the <strong>static</strong> modifier on interface declarations. For more information, see Interfaces Overview.</td>
-</tr>
-<tr class="even">
-<td>Modifiers</td>
-<td>The <strong>static</strong> modifier must not be applied to the <code>new</code> constructor</td>
-<td>It was possible to apply the <strong>static</strong> modifier to the declaration of the <code>new</code> constructor method. This caused <code>new MyClass();</code> to behave as a null operation. Instead, the statement <span class="code">MyClass::new();</span> would call the static <code>new</code> method, but that wouldn't construct an object.</td>
-<td>Now the compiler issues an error when the <strong>static</strong> modifier is applied to the <code>new</code> method. For more information, see Constructors.</td>
-</tr>
-<tr class="odd">
-<td>Modifiers</td>
-<td>Use an explicit access modifier on each method</td>
-<td>In the past the menu item of <span class="ui">AOT</span> &gt; <span class="ui">Classes</span> &gt; <em>MyClass</em> &gt; <span class="ui">New Method</span> created the method without any access modifier. This meant that the method was implicitly <strong>public</strong>, although some X++ developers might not have been fully aware of the default. This created extra work later when a developer needed to modify the code in the method, because the developer had to research everywhere that the method might be called from.</td>
-<td>Now the <span class="ui">New Method</span> menu item explicitly includes the <strong>private</strong> keyword in its automatic declaration of the new method. The developer can type in a different modifier if appropriate. For more information, see Method Modifiers.</td>
-</tr>
-<tr class="even">
-<td>Parameters</td>
-<td>Parameters given in a call to a <code>new</code> constructor method must match the parameters on the <code>new</code> constructor method</td>
-<td>It was possible to pass in multiple parameters on call to a <code>new</code> constructor method even when the <code>new</code> method was declared to input no parameters.</td>
-<td>Now the call to the <code>new</code> method must exactly match the declared parameter signature of the <code>new</code> method. For more information, see Creating a Subclass.</td>
-</tr>
-<tr class="odd">
-<td>Parameters</td>
-<td>Parameters with default values must come after all parameters that don't have default values</td>
-<td>It was possible to declare a method that takes in two parameters, and have only the first parameter offer a default value. There was no purpose to this. There was no way to accept the default of the first parameter because the call must specify a value for the second parameter and can't omit the first parameter.</td>
-<td>Now in the declaration of a method, any parameter that offers a default value must come after all the parameters that don't. For more information, see the following topics:
-<ul>
-<li>Using Optional Parameters</li>
-<li>Best Practices for Parameters</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Parameters</td>
-<td>Override of a method must have the same default parameters as the overridden method</td>
-<td>It was possible to declare a method as <span class="code">public void myMethod(int i=22){}</span> and the override as <span class="code">public void myMethod(){}</span>. But if the override method was called as <code>derivedObject(333);</code> an error occurred.</td>
-<td>Now the override method must list the same parameter types in the same sequence that they're declared in the overridden method. For more information, see Overriding a Method.</td>
-</tr>
-<tr class="odd">
-<td>Preprocessor</td>
-<td>A <strong>TODO</strong> in a comment must be the first nonwhitespace on the first line of the comment.</td>
-<td>The X++ preprocessor used to detect the <strong>TODO</strong> keyword in a multi-line <span class="code">/* ... */</span> task comment even when the <strong>TODO</strong> appeared after other text after the first comment line.</td>
-<td>Now the X++ preprocessor detects the <strong>TODO</strong> keyword only if <strong>TODO</strong> appears on the first line of the comment, and as the first nonwhitespace in the comment. For more information, see TODO Comments for X++ Developer Tasks.</td>
-</tr>
-</tbody>
-</table>
-
-
 
 ## Additional resources
 

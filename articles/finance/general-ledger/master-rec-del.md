@@ -3,7 +3,7 @@ title: Delete master records in financial journals
 description: Learn how to delete master records that are used in a financial journal, including examples for deleting a MainAccount master record.
 author: rcarlson
 ms.author: rcarlson
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/01/2024
 ms.custom: 
 ms.reviewer: twheeloc

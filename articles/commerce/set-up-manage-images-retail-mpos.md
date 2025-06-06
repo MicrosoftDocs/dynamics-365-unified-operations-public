@@ -3,7 +3,7 @@ title: Set up and manage images for Store Commerce
 description: This article explains the steps that are involved in setting up and managing images for the various entities that appear in Store Commerce.
 author: josaw1
 ms.date: 02/03/2023
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

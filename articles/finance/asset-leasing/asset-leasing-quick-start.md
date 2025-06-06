@@ -3,9 +3,9 @@ title: Asset leasing get started
 description: Learn about the asset leasing capability and walks through the steps for creating an asset lease and view information for those leases.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
-ms.date: 04/12/2021
-ms.custom: ["4464"]
+ms.topic: get-started
+ms.date: 01/29/2025
+ms.custom: 
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User

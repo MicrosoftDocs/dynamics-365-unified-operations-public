@@ -3,7 +3,7 @@ title: Extend Business performance analytics
 description: Learn how to extend Business performance analytics by bringing external facts and dimensions into a Business performance analytics data model.
 author: lizmota
 ms.author: jiwo
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/30/2024
 ms.custom:
 ms.reviewer: twheeloc 

@@ -3,7 +3,7 @@ title: Advance holders reports
 description: Learn about the Advance holder reports that are available for Russia, including an outline on Advance holder blaance reports and a table that defines fields.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/21/2024

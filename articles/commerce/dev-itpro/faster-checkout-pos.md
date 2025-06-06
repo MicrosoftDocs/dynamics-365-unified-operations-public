@@ -1,10 +1,9 @@
 ---
-title: Check out faster with optimized payment flows (preview)
+title: Check out faster with optimized payment flows
 description: This article provides an overview of modernizing updates to point of sale (POS) payment flows in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/25/2024
+ms.date: 05/16/2025
 ms.topic: overview
-audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: v-chrgriffin
@@ -13,10 +12,9 @@ ms.custom:
   - bap-template
 ---
 
-# Check out faster with optimized payment flows (preview)
+# Check out faster with optimized payment flows
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article provides an overview of modernizing updates to point of sale (POS) payment flows in Microsoft Dynamics 365 Commerce.
 
@@ -27,30 +25,35 @@ The Dynamics 365 Commerce team is modernizing the POS user interface (UI) by tra
 Before you can transition to the upgraded payment flow experience, the following prerequisites must be met:
 
 - You must be running Commerce version 10.0.40 or later.
-- You must enable the **Enable unified payments experience in POS** feature in the Commerce headquarters **Feature management** workspace (**System administration** \> **Workspaces** \> **Feature management**). 
+- You must enable the **Enable unified payments experience in POS** feature in the Commerce headquarters **Feature management** workspace (**System administration** \> **Workspaces** \> **Feature management**).
+- The new payment experiences are enabled by default for all stores. To enable administrators to try the new payment experience only in pilot stores, starting in Commerce version 10.0.44 administrators can turn on the **Disable the unified payments experience** setting from **POS functionality profiles**. When the **Disable the unified payments experience** setting is turned on, the new payment experience is only enabled for stores that have this setting turned off. Once administrators are satisfied with the new payment experiences, they can turn off this configuration for all the stores to enable the new payment experiences for all stores.
 
 ## Feature availability
 
-The modernized UI experience for the **Credit Card**, **Cash**, and **Check** payment methods is available starting with Commerce version 10.0.40, while the new experience for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods are available starting with Commerce version 10.0.42. The payment method options dialog shows updated payment method symbols for all payment methods on the menu. 
-
-Updates for the **Loyalty Card** payment method will be rolled out in a future release. 
+The modernized UI experience for the **Credit Card**, **Cash**, and **Check** payment methods is available starting with Commerce version 10.0.40, while the new experience for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods are available starting with Commerce version 10.0.42. The **Pay by Loyalty** experience is available starting with Commerce version 10.0.44. The payment method options dialog shows updated payment method symbols for all payment methods on the menu. 
 
 > [!NOTE]
-> If you have customized the payment experiences for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods and you would like to continue using those user experiences, you don't need to disable the feature flag. Instead you should contact Microsoft support to disable the new user experiences for these individual payment methods.
+> If you've customized the payment experiences for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods and want to continue using those user experiences, you don't need to disable the feature flag. You should instead contact Microsoft support to disable the new user experiences for these individual payment methods while still benefiting from the additional functionality provided by the other payment methods.
 
 > [!WARNING]
 > The ability to customize the new React components will be delivered in a future Commerce feature. Currently, the availability date hasn't been set. For any customization that you do on the payment user flow screens, Commerce must release React extensibility capabilities. Otherwise, you can't continue to customize actions on those screens.
 
+Apart from unifying the various payment experiences, the following sections describe some of the additional capabilities that the new payment experiences enable.
+
 ## Pay card
 
-The new **Pay Card** payment flow shows the transaction amount that is due, together with **Swipe card** and **Enter manually** input methods.
+The new **Pay Card** payment flow shows the transaction amount that is due and the **Swipe card** and **Enter manually** input methods, as shown in the following example image.
 
 - **Swipe card** directs the payment action to the payment terminal, so that input can be received directly from the terminal.
 - **Enter manually** directs the payment action to the payment terminal, so that the customer or sales associate can manually enter the card number at the terminal. This method is useful if the chip or magnetic stripe on a customer's card is unreadable.
 
+:::image type="content" source="../media/PayCards2.png" alt-text="Pay with card flyout showing the Swipe card and Enter manually input methods.":::
+
 The **Payment amount** screen is then presented. This screen allows for subamount entry if the customer wants to pay a different amount than the preset transaction total. 
 
-New symbols appear in the payment pane to show the sales associate what is occurring on the terminal. The terminal presents a symbol to show that it's prompting the customer to insert or swipe their card. A payment processing loader is also shown while the terminal processes the transaction against the payment gateway.
+New symbols appear in the payment pane to show the sales associate what is occurring on the terminal, as shown in the following example image. The terminal presents a symbol to show that it's prompting the customer to insert or swipe their card. A payment processing loader is also shown while the terminal processes the transaction against the payment gateway.
+
+:::image type="content" source="../media/newPayUX1.png" alt-text="Pay flyout showing new symbols for payment methods.":::
 
 If the transaction is successful, the resulting screen shows the change that is due. Alternatively, if a subamount was paid, the user is returned to the transaction screen for next steps. Any payment errors that are encountered during processing are shown directly in the new payments pane.
 
@@ -82,5 +85,19 @@ Pay exact functionality is configured in the button grid menus for the correspon
 We recommend that you update the button's **Button text** field in the **Appearance** section of the button grid properties to clearly indicate to the sales associate that the button is a pay exact button for the payment method.
 
 Select **OK** to set the change for the button property that you're updating. When you finish configuring your buttons, close the button designer to apply the changes. Then go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**, and select **Run now** to run the **1070 (Channel configuration)** and **1090 (Registers)** jobs.
+
+## Pay with gift card
+
+The **Pay with gift card** payment flow automatically triggers the balance check to show cashiers the gift card balance information on POS before using the gift card for payment. This action prevents the additional clicks that cashiers usually need to do to help customers determine their gift card balance. 
+
+:::image type="content" source="../media/payUXGiftcard.png" alt-text="Display gift card balance before using the gift card.":::
+
+## Pay with loyalty
+
+The **Pay with loyalty** payment flow allows cashiers to initiate the customer search experience if a customer isn't already added to the transaction, as shown in the following example image. Alternatively, if the customer is added to the transaction, then a cashier can view the loyalty cards associated with the customer. The cashier can either select the associated loyalty cards or scan/type a different loyalty card that the customer wants to use for the payment. This payment flow helps cashiers to efficiently perform all the actions that customers usually ask for after a payment process is started.
+
+:::image type="content" source="../media/PayLoyaltyUX.png" alt-text="Search for a customer from the Pay with loyalty program screen and view the associated loyalty cards.":::
+
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

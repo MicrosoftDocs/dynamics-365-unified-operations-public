@@ -1,8 +1,8 @@
 ---
 title: Inventory journals
 description: Learn how you can use inventory journals to post various types of physical inventory transactions with an outline on types of inventory journals.
-author: Weijiesa
-ms.author: weijiesa
+author: banluo-ms
+ms.author: banluo
 ms.topic: overview
 ms.date: 05/27/2024
 ms.custom:

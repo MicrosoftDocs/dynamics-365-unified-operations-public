@@ -38,7 +38,7 @@ The following example shows XML content that was copied from a *Mixed license pl
         <Control controlType="detourButton" name="Look up load" label="Look up load" newLine="1" data="" Icon="USMF|MenuIcon|GenericDataInquiry" type="16806" length="0" error="0" defaultButton="0" enabled="1" selected="" color="0" Status="0" NumDecimals="-1" DisplayArea="" PreferredInputMode="" PreferredInputType="" DisplayPriority="0" DisplaySubPriority="0" DataSequence="8" AttachedTo="" InstructionControl="" Footer1="" Footer2="" InputType="0" />
     </Controls>
     <Step Id="LoadId" Icon="USMF|StepIcon|LoadID" Title="Scan load" />
-    <Auth userId="51" userGUID="{701F34BD-4E6B-475E-9722-95101E890046}" sessionId="{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}" />
+    <Auth userId="51" userGUID="{00aa00aa-bb11-cc22-dd33-44ee44ee44ee}" sessionId="{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}" />
     <UserCulture>en-us</UserCulture>
     <UserDateCulture>en-us</UserDateCulture>
     <OperationalInsightsInstrumentationKey />

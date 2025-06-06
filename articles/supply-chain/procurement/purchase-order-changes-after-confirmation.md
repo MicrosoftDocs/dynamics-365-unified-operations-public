@@ -4,7 +4,7 @@ description: Learn how to use the Confirmed purchase orders with changes workspa
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
-ms.date: 08/26/2024
+ms.date: 02/13/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.collection:

@@ -1,21 +1,18 @@
 ---
-title: Base price versions (preview)
+title: Base price versions
 description: Learn how base price versions work in Unified pricing management, including outlines on determining the base price and base price determination exceptions.
 author: sherry-zheng
 ms.author: chuzheng
-ms.topic: conceptual
+ms.topic: article
 ms.date: 10/25/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: GUPBasePriceVersion, GUPItemBasePrice
 ---
 
-# Base price versions (preview)
+# Base price versions
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-<!-- KFM: Preview until 10.0.34 GA -->
 
 This article describes how base price versions work in Unified pricing management. The primary purpose of a base price version is to maintain a list of *item base prices* for a specific period. The base price is a common price at the level of the stock keeping unit (SKU). Unified pricing management lets you build selling prices by using *cost-plus pricing*. When you use cost-plus pricing, you first build a price structure that starts with the base price.
 
@@ -47,7 +44,7 @@ The following table shows the rules for determining the base price.
 | Product type | Industries | How base prices are determined |
 |---|---|---|
 | Traded items that you procure and then sell | Retail, distribution | <ul><li>Unified pricing management calculates item base prices based on prices that are found on the **Base price versions** page.</li><li>Item base prices are calculated by using the following formula: *Base price* = *Vendor list price* &plusmn; *Vendor price term agreement*.<li>If several calculated prices apply to the same item, the price engine always selects the *lowest* price as the item base price.</li><li>You can activate a calculated item base price. The price engine will then use that calculated price as the base price.</li></ul> |
-| Manufactured items (with BOMs) that use the standard cost model | Manufacturing | <ul><li>Microsoft Dynamics 365 Supply Chain Management can calculate and activate item cost prices based on [costing versions](../cost-management/costing-versions.md).</li><li>Item base prices don't have to be maintained on the **Base price versions** page.</li><li>The price engine will use the active item cost price as the base price.</li><li>Item selling prices are calculated by using the following formula: *Selling price* = *Active calculated item cost (base price)* &plusmn; *Margin component price adjustments*.</li></ul> |
+| Manufactured items (with BOMs) that use the standard cost model | Manufacturing | <ul><li>Microsoft Dynamics 365 Commerce and Dynamics 365 Supply Chain Management can calculate and activate item cost prices based on [costing versions](../cost-management/costing-versions.md).</li><li>Item base prices don't have to be maintained on the **Base price versions** page.</li><li>The price engine will use the active item cost price as the base price.</li><li>Item selling prices are calculated by using the following formula: *Selling price* = *Active calculated item cost (base price)* &plusmn; *Margin component price adjustments*.</li></ul> |
 | Manufactured items (with BOMs) that don't use the standard cost model | Manufacturing | <ul><li>Item base prices are defined on the **Base price versions** page.</li><li>The price engine will use the active item base price as the base price.</li></ul> |
 
 ## Base price determination exception

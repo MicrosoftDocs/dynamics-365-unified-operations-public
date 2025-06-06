@@ -1,52 +1,50 @@
 ---
 title: Enter depreciation rate schedule and associate to depreciation profile
-description: In Japan, the fixed asset depreciation rate is released by a government agency. Learn about modifying depreciation rate schedules.
+description: Learn how to enter the Japan depreciation rate schedule and associate it with a depreciation profile in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 04/25/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: AssetDepRate_JP, AssetDepreciationProfile
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Enter depreciation rate schedule and associate to depreciation profile
 
 [!include [banner](../../includes/banner.md)]
 
+This article explains how to enter the Japan depreciation rate schedule and associate it with a depreciation profile in Microsoft Dynamics 365 Finance.
+
 In Japan, the fixed asset depreciation rate is released by a government agency. You can enter the depreciation rate schedule into the system. The depreciation rate schedule is implemented as a data entity so that it can be imported from a file. 
 
+Use the following procedures to learn how to modify the depreciation rate schedule and associate it to a depreciation profile. The procedures use the JPMF demo company data.
 
-
-Use this task to learn how to modify the depreciation rate schedule and associate it to a depreciation profile. The import is not covered in this task. 
-
-
-
-In order to complete this task, the Fixed Assets configuration key must be selected.
-
-
-
-This task uses the JPMF demo company data.
-
+Before you complete the procedures, you must first select the **Fixed Asset** configuration key.
 
 ## Modify a depreciation rate schedule
-1. Go to Fixed assets > Setup > Depreciation rate schedules > Depreciation rate schedules.
-2. Click Edit.
-3. In the Service life field, enter a number.
-4. In the Depreciation rate field, enter a number.
-5. In the Revised depreciation rate field, enter a number.
-6. In the Guaranteed depreciation rate field, enter a number.
 
-## Associate a depreciation rate schedule to a depreciation profile 
-1. Go to Fixed assets > Setup > Depreciation profiles.
-2. Click Edit.
-3. In the Depreciation rate schedule field, click the drop-down button to open the lookup.
-4. In the list, click the link in the selected row.
-    * Select the depreciation schedule that you modified in the earlier task.  
-5. Click Save.
+To modify a depreciation rate schedule, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Depreciation rate schedules \> Depreciation rate schedules**.
+1. Select **Edit**.
+1. In the **Service life** field, enter a number.
+1. In the **Depreciation rate** field, enter a number.
+1. In the **Revised depreciation rate** field, enter a number.
+1. In the **Guaranteed depreciation rate** field, enter a number.
+
+## Associate a depreciation rate schedule to a depreciation profile
+
+To associate a depreciation rate schedule to a depreciation profile, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Depreciation profiles**.
+1. Select **Edit**.
+1. In the **Depreciation rate schedule** field, select the drop-down button to open the lookup.
+1. In the list, select the depreciation schedule that you modified in the earlier task.  
+1. Select **Save**.
 
 
 

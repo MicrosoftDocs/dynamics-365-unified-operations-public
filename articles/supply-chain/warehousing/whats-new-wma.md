@@ -5,7 +5,7 @@ author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: conceptual
+ms.topic: whats-new
 ms.date: 11/13/2024
 ms.custom: 
   - bap-template
@@ -17,6 +17,12 @@ ms.custom:
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 3.0.7.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Improved security.
 
 ## Version 3.0.6.0
 

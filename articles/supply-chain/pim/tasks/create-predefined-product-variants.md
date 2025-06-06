@@ -104,9 +104,9 @@ This functionality allows for a setup where most released product variants use t
 
 ### Turn the Apply sales tax group for product variants in sales and procurement feature on or off
 
-This feature requires Supply Chain Management version 10.0.34 or later. As of version 10.0.41, it's turned on by default.
+This feature requires Supply Chain Management version 10.0.34 or later.
 
-To use this feature, it must be enabled for your system. Admins can turn this functionality on or off by searching for the *Apply sales tax group for product variants in sales and procurement* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be enabled for your system. As of version 10.0.41, this feature is turned on by default. As of Supply Chain Management version 10.0.43, it's mandatory and can't be turned off. If you're running a version older than 10.0.43, then admins can turn this functionality on or off by searching for the *Apply sales tax group for product variants in sales and procurement* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Assign an item sales tax group to a released product variant
 

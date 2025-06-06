@@ -3,7 +3,7 @@ title: Packing work for packing outbound containers and processing shipments
 description: Learn about the "Packing" work order type, which manages work for packing containers and supports partial shipments of packed containers.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 7/13/2022
 ms.reviewer: kamaybac
 ms.search.form: WHSPackingWorkLocationSetup, WHSPack, WHSContainerTable
@@ -16,6 +16,9 @@ ms.search.form: WHSPackingWorkLocationSetup, WHSPack, WHSContainerTable
 This article describes the *Packing* work order type, which manages work for packing containers and supports partial shipments of packed containers that are related to loads where inventory items remain unpacked. Packing work lets you use [confirm and transfer](confirm-and-transfer.md) functionality to confirm outbound shipments that are associated with containers.
 
 Packing work is automatically created when inventory that is related to source document work is put in locations of the *Packing location* type. The work consists of two lines, one for *Pick* and one for *Put*, and is automatically maintained as part of a container close/reopen process.
+
+> [!NOTE]
+> Packing work is usually maintained automatically by the system rather than directly by a user. Therefore, some fields (such as **User ID**) might not be populated like they are for other work order types.
 
 For more information about how to set up and use the container packing process, see [Pack containers for shipment](packing-containers.md).
 

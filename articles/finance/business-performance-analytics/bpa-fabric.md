@@ -5,8 +5,8 @@ description: This article explains how to link your Business performance analyti
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 8/28/2024
-ms.topic: article
+ms.date: 2/03/2025
+ms.topic: how-to
 ms.custom:
 ms.search.form: business-performance-analytics
 audience: Application User
@@ -65,6 +65,9 @@ To link Business performance analytics data to your organization's Fabric worksp
 
     > [!NOTE]
     > The workspace must be in the same Azure region as the Dataverse environment.
+    
+    > [!IMPORTANT]
+    > Confirm that you're using the correct workspace ID. The workspace ID is the GUID found in the URL when you open the workspace. Don't use a workspace identity ID, as it's not the same and causes issues with Business performance analytics linking and results in **Workspace not found** errors.
 
 5. Select **Connect**.
 
@@ -98,24 +101,19 @@ This section shows how you can create a custom Power BI dataset that extends the
 > [!NOTE]
 > Before you begin this procedure, you must link Business performance analytics data to your Fabric workspace as described earlier in this article.
 
-1. Download the Business performance analytics dataset.
+ - The BPA dataset will be available via Lockbox.
+ - Create a support ticket to receive a link to the Lockbox with the updated .pbix file.
 
-    1. Sign in to [Power Apps](https://make.powerapps.com/).
-    2. Go to **All**, and search for the **msdyn\_BpaReports** solution.
+ >[!Important]
+> We recommend not using the .pbix file from the Maker Portal, it's not parameterized and requires extra set up to connect to your shortcuts.
 
-2. Select the finance and operations dataset.
-3. On the report details page, select **Actions** \> **Download report**. Make a note of the download location.
-4. Upload the Business performance analytics dataset.
-
-    - In [Power BI](https://app.powerbi.com), open your workspace, and upload the Business performance analytics dataset from the location that you downloaded it to in step 3.
-
-5. Connect the dataset to the lakehouse.
+1. Connect the dataset to the lakehouse.
 
     1. In the workspace, under the lakehouse, find the SQL Analytics Endpoint, and copy the SQL connection string.
     2. In the semantic model, go to **Settings** \> **Parameters**, and enter the connection string.
     3. Reload the page, and re-enter the credentials.
 
-6. Validate the connection.
+2. Validate the connection.
 
     1. Refresh the settings, and edit the data source credentials to ensure that OAuth is used for authentication.
     2. Refresh the dataset to view the tables from Business performance analytics.

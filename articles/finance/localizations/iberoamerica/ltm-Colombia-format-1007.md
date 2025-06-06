@@ -3,7 +3,7 @@ title: Format 1007 file for Colombia configuration
 description: Learn how to set up and issue a format 1007 file for Colombia, including an outline on configuring application-specific parameters.
 author: Fhernandez0088
 ms.author: v-federicohe
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/21/2023 
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -18,7 +18,7 @@ This article explains how to set up and issue a format 1007 file. The format 100
 Before you print the report, the following prerequisites must be met:
 
 - The address that's set for the legal entity must be in Colombia.
-- Enable the country-specific Latin American (LATAM) globalization feature and the general LATAM feature.
+- Enable the country/region specific Latin American (LATAM) globalization feature and the general LATAM feature.
 - Import the following configurations from the Global repository:
 
     - LTM Tax Report

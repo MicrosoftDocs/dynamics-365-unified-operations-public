@@ -3,14 +3,13 @@ title: Credit limit holds FAQ
 description: Access answers to some frequently asked questions about credit checks, credit holds, and the warning and error messages that you might receive in Credit management.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
-ms.date: 04/04/2024
+ms.topic: faq
+ms.custom: 
+ms.date: 03/20/2025
 ms.reviewer: twheeloc
-audience: Application User
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.validFrom: 2023-11-29
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.35
 ---
 
@@ -59,3 +58,7 @@ A credit limit of 0.00 indicates unlimited credit only when Credit management is
 ### I set up credit management groups, but sales orders still aren't blocked based on the credit limit.
 
 Sales orders are blocked if blocking rules and credit management checkpoints are set up, even when you use customer credit groups. For more information about how credit is calculated when credit limit groups are used, see [Credit limit scenarios](credit-limit-scenarios.md).
+
+### Credit management check skipped for intercompany sales orders 
+
+Starting in Dynamics 365 Finance version 10.0.43, if the **Intercompany sales order exclusion from credit management** feature is enabled, the blocking rules for the legal entity of the intercompany sales order are skipped. The **Exclude from credit management** option is enabled by default on the sales order header for intercompany sales order. If you want to enforce credit limit checks for specific orders, disable the exclusion property. 

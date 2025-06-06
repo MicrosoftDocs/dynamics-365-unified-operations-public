@@ -3,7 +3,7 @@ title: Batch OData API
 description: Learn about the Batch OData application programming interface (API) and explains how you can use Open Data Protocol (OData) to reschedule a job.
 author: matapg007
 ms.author: matgupta
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/10/2022
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
