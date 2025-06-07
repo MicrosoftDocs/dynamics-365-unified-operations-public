@@ -45,7 +45,7 @@ There are two common scenarios where data migration is required:
 
 1. Go to **System administration** \> **Security governance** \> **Security category**.
 
-    Either there are preexisting security categories on the page, or the existing categories differ from the category that you're trying to restore from the Executive Automats security setup. If a category that has the same **Category name** value already exists in Security governance, you receive a warning message, and the process is stopped.
+    Either there are no preexisting security categories on the page, or the existing categories differ from the category that you're trying to restore from the Executive Automats security setup into User security governance. If a category that has the same **Category name** value already exists in Security governance, you will receive a warning message, and the process will stop.
 
 1. Select **Restore from XML**.
 1. In the dialog that appears, select the file that you exported in the previous procedure.
