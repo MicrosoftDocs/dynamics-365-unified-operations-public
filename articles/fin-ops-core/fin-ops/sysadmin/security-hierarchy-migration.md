@@ -84,7 +84,7 @@ There are two common scenarios where data migration is required:
 1. To verify the restored process hierarchy and other objects, go to **System administration** \> **Security governance** \> **Security process roles maintain**.
 1. In the **Security category** field, select the new category. The process hierarchy and underlying objects (for example, security tasks, entry point mappings, duties, privileges, and roles) are loaded.
 
-### Scenario 2: Migrate the process hierarchy and related objects for an existing security category from the Executive Automats security setup to Security governance
+### Scenario 2: Set up another instance of security governance configurations in the same company
 
 In this scenario, security categories exist in two environments, and you're trying to migrate the data under those categories (the process hierarchy, security tasks, entry point mappings, duties, privileges, and security roles).
 
