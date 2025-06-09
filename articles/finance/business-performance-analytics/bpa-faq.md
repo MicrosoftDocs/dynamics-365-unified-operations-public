@@ -7,7 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 05/06/2025
+ms.date: 06/09/2025
 ---
 
 # Business performance analytics FAQ
@@ -62,14 +62,16 @@ Data is refreshed twice per day, at 12:00:00 AM and 12:00:00 PM (Coordinated Uni
 If you encounter a full-page error with the message "An unknown error has occurred. Please try again or contact your app administrator" while opening reports, the following steps may help resolve it. These steps will not address issues like no data displayed, refresh errors, or blank pages.
 
 >[!Note]
-These steps are safe to execute, prevent data loss, and do not require re-setup of Business Performance Analytics.
+> These steps are safe to execute and prevents data loss
+> This doesn't require to set up Business performance analytics again.
 
 1. Go to https://make.powerapps.com/
-2. Select the affected Organization from the Environment picker (upper right hand side)
-3. Go to "Solutions" (in the menu on the left hand side of the screen)
-4. Find the solutions "msdyn_bpaanchor" and "msdyn_bpareports".  Uninstall them in that order.
-5. Re-Install Business performance analytics by following https://learn.microsoft.com/en-us/dynamics365/finance/business-performance-analytics/install-bpa#install-business-performance-analytics-1 (You only need to follow steps 1-4)
-Once installation has finished it will be ~12-24hr before reports become available again.
+2. From the **Environment picker** (upper right hand side), select the affected organization.
+3. Go to **Solutions**.
+4. Find the "msdyn_bpaanchor" and "msdyn_bpareports" solutions and uninstall them in that order.
+5. Reinstall Business performance analytics. For more information, see [Install Business performance analytics](install-bpa.md#install-business-performance-analytics-1).
+6. Follow steps one through four. 
+After installation is complete, it will be 12-24 hours before reports are available.
 
 
 ## Storage and capacity
