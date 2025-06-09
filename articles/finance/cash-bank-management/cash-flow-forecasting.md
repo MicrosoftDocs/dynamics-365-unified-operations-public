@@ -4,7 +4,7 @@ description: Learn about the cash flow forecasting process, including outlines o
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 07/31/2023
+ms.date: 06/09/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 
@@ -156,7 +156,7 @@ The **Cash overview – current company** workspace shows cash flow forecasting 
 
 For more information about the cash flow forecasting analytics, see [Cash overview Power BI content](Cash-Overview-Power-BI-content.md).
 
-Cash flow forecasting data is also available in **Financial insights**. For more information, please see [Cash forecast](../../finance/finance-insights/cash-flow-forecast-intro.md).
+Cash flow forecasting data is available in **Financial insights**. For more information, see [Cash forecast](../../finance/finance-insights/cash-flow-forecast-intro.md).
 
 Additionally, you can view cash flow forecasting data for specific accounts, orders, and items on the following pages:
 
