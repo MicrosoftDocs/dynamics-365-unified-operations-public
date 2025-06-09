@@ -1876,7 +1876,9 @@ items:
             - name: Set up security governance parameters
               href: ../fin-ops/sysadmin/setup-security-gov-para.md 
             - name: Set up a process hierarchy, roles, and privileges
-              href: ../fin-ops/sysadmin/setup-process-role-hierarchy.md        
+              href: ../fin-ops/sysadmin/setup-process-role-hierarchy.md  
+            - name: Migrate data to User security governance
+              href: ../fin-ops/sysadmin/security-hierarchy-migration.md
             - name: Security tasks under process hierarchy
               href: ../fin-ops/sysadmin/usg-security-tasks-detailed.md          
             - name: Security entry points under process hierarchy
