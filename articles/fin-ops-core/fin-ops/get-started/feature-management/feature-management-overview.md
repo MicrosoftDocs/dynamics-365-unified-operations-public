@@ -4,7 +4,7 @@ description: Learn about Feature management and how you can use it, including an
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 04/25/2023
+ms.date: 06/09/2025
 ms.reviewer: twheeloc
 audience: Application user
 ms.search.region: Global 
