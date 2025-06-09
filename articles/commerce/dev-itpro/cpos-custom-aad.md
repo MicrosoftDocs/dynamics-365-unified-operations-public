@@ -31,7 +31,7 @@ By default, Store Commerce for web points to a registered first-party Microsoft 
 To create and configure a custom Retail Server app in Microsoft Entra ID, follow these steps.
 
 1. Sign in to the [Microsoft Entra admin center](https://aad.portal.azure.com) by using any Microsoft Entra user account. The user account doesn't have to have administrator permissions.
-1. Select **Microsoft Entra ID**.
+1. Select **Applications**.
 1. Select **App registrations**, and then select **New registration** to open the **Register an application** dialog box.
 1. Set the following fields:
 
@@ -41,7 +41,7 @@ To create and configure a custom Retail Server app in Microsoft Entra ID, follow
     - **Service Tree ID** – This field is optional. Leave it blank.
 	
 1. Select **Register**. The configuration page for the newly registered app appears.
-1. In the **Overview \> Essentials** section, select **Add an Application ID URI**, and then select **Set** next to **Application ID URI**. Make a note of the suggested value, and then select **Save** to accept that value. 
+1. In the **Overview \> Essentials** section, select **Add an Application ID URI**, and then select **Add** next to **Application ID URI**. Make a note of the suggested value, and then select **Save** to accept that value. 
 1. Select **Add a scope**, and then set the following fields:
 
     - **Scope name** – Enter a custom name for the scope. For example, enter **Legacy.Access.Full**.
@@ -59,7 +59,7 @@ To create and configure a custom Retail Server app in Microsoft Entra ID, follow
 To create and configure a custom app for Store Commerce for web in Microsoft Entra ID, follow these steps.
 
 1. Sign in to the [Microsoft Entra admin center](https://aad.portal.azure.com) by using any Microsoft Entra user account. The user account doesn't have to have administrator permissions.
-1. Select **Microsoft Entra ID**.
+1. Select **Applications**.
 1. Select **App registrations**, and then select **New registration** to open the **Register an application** dialog box.
 1. Set the following fields:
 
