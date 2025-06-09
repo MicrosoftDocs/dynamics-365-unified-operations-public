@@ -154,7 +154,7 @@ Instances are automatically destroyed when there are no references to them.
 
 ### Use the finalize method
 
-Use the **finalize** method to explicitly clean up the state of an object. This is a convention, there's no special semantics for this method, and no implicit calls made to the **finalize** method when the object is disposed by the managed runtime. You must call the method to explicitly cleanup. In most cases, you don't need to provide final methods.
+Use the **finalize** method to explicitly clean up the state of an object. This is a convention, there's no special semantics for this method, and no implicit calls made to the **finalize** method when the object is disposed by the managed runtime. You must call the method to explicitly clean up. In most cases, you don't need to provide final methods.
 
 ### Set reference variable to null
 
