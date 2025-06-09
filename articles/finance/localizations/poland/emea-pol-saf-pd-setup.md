@@ -159,7 +159,7 @@ Follow these steps to establish the rules of automatic collection of the RPD amo
 3. In **Financial dimension set** field select the **Financial dimension set** created for Income Tax Register (RPD) section of  SAF Accounting Books Income Tax - JPK_KR_PD report.
 4. In **Posting layer** field select one or many posting layers that must be included in amounts collection for RPD.
 5. Mark **Include closing transactions** check box if you wnat to include closing transactions in RPD figures calculation. 
-6. For every RPD figure that you want to be automatically calulated as the balance based on a specific combination of values of the selected **Financial dimension set**, select the corresponding **Additional field** and specify the **Range** of applicble **Financial dimension** values.
+6. For every RPD figure that you want to be automatically calculated as the balance based on a specific combination of values of the selected **Financial dimension set**, select the corresponding **Additional field** and specify the **Range** of applicble **Financial dimension** values.
 7. When all the RPD figures setup is completed, click **OK** button to save settings. User will be able to see and adjust if necessary these settings every time they calculate the RPD figures.
 
 ## <a id="standard-coa"></a>Set up standard chart of accounts (optional, for companies using non-standard chart of accounts in Poland)
