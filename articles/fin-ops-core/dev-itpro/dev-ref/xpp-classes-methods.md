@@ -600,7 +600,7 @@ Regardless of the target type, an extension *class* is used to add extension met
 
 The **this** keyword is a reference to the instance of the class or table where the **this** keyword is used. The **this** reference is required on instance method calls (if the method called in on a class in the class or any of its superclasses), but it can clarify your code and enhances the behavior of IntelliSense in the code editor. All calls to instance methods must be qualified by either the **this** reference or a variable. The **this** reference can be used to qualify the following information:
 
- - The names of other instance (nonstatic) methods in the same class where the **this** reference is used. Here is an example: `boolColorChanged = this.colorItOrange();`
+ - The names of other instance (nonstatic) methods in the same class where the **this** reference is used. Here's an example: `boolColorChanged = this.colorItOrange();`
  - The names of methods that are inherited by the **this** object.
  - The names of fields on the table that contains the method that the **this** keyword is used in.
 
