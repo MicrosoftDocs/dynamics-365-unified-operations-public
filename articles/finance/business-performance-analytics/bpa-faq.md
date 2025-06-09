@@ -67,7 +67,7 @@ These steps are safe to execute, prevent data loss, and do not require re-setup 
 1. Go to https://make.powerapps.com/
 2. Select the affected Organization from the Environment picker (upper right hand side)
 3. Go to "Solutions" (in the menu on the left hand side of the screen)
-4. Find the solutions "msdyn_bpaanchor" and "msdyn_bpareports".  Un-install them in that order.
+4. Find the solutions "msdyn_bpaanchor" and "msdyn_bpareports".  Uninstall them in that order.
 5. Re-Install Business performance analytics by following https://learn.microsoft.com/en-us/dynamics365/finance/business-performance-analytics/install-bpa#install-business-performance-analytics-1 (You only need to follow steps 1-4)
 Once installation has finished it will be ~12-24hr before reports become available again.
 
