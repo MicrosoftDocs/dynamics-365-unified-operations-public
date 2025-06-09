@@ -4,7 +4,7 @@ description: Learn how, when you create cover and signature pages for a payment 
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 02/14/2022
+ms.date: 06/05/2025
 ms.custom:
 ms.reviewer: twheeloc     
 audience: Application User
@@ -26,8 +26,8 @@ When you create cover and signature pages for a payment report, you can specify 
 3. In the **Number of signature lines** field, select an option.
 4. In the **Name** field, type a value.
 5. In the **Title** field, type a value.
-6. Optional: **Select the Print name** check box to print the signatory's name on the report.
-7. Optional: **Select the Print title** check box to print the title on the report.
+6. Optional: Select the **Print name** checkbox to print the signatory's name on the report.
+7. Optional: Select the **Print title** checkbox to print the title on the report.
     * If needed, add additional names, and select any options that you want.  
 8. Click **Save**.
 
