@@ -45,7 +45,7 @@ Instance fields are **protected** by default. This means that they can only be a
 
 You can assign a value to a field inline along with the declaration of the field itself. This applies to both static and instance fields. These values are assigned as the class is initialized (for instance classes), or when the static constructor (**typeNew**) is called.
 
-The following example shows how to use accessor methods to make the field data public. The field **firstName** is protected, so accessor (get and set) methods are implemented to allow access to the protected field. The field **lastName** is public, so code can get and set the value of the field.
+The following example shows how to use accessor methods to make the field data public. The field **firstName** is protected, so accessor (get and set) methods are implemented to allow access to the protected field. The field **lastName** is public, code can get and set the value of the field.
 
 ```xpp
 // This is the class definition.
@@ -154,7 +154,7 @@ Instances are automatically destroyed when there are no references to them.
 
 ### Use the finalize method
 
-Use the **finalize** method to explicitly clean up the state of an object. This is a convention, there's no special semantics for this method, and no implicit calls made to the **finalize** method when the object is disposed by the managed runtime. You must call the method to explicitly cleanup. In the large majority of cases, you won't need to provide final methods.
+Use the **finalize** method to explicitly clean up the state of an object. This is a convention, there's no special semantics for this method, and no implicit calls made to the **finalize** method when the object is disposed by the managed runtime. You must call the method to explicitly cleanup. In most cases, you don't need to provide final methods.
 
 ### Set reference variable to null
 
@@ -246,7 +246,7 @@ int methodNameIntegerReturnValue()
 
 ### Syntax
 
-Method declaration = *Heading*  *Body* Heading = **\[** *Modifiers* **\]**  *ReturnType*  *MethodName*  **(** *ParameterList* **)**
+Method declaration = *Heading* *Body* Heading = **\[** *Modifiers* **\]**  *ReturnType*  *MethodName*  **(** *ParameterList* **)**
 
 Modifiers = **\[edit | display \] \[ public | protected | private \] \[static | abstract | final \]**
 
@@ -256,13 +256,13 @@ MethodName = *Identifier*
 
 ParameterList = **\[** *Parameter* **{ ,** *Parameter* **}\]**
 
-Parameter = *Datatype*  *Variableidentifier*  **\[ =**  *Expression*  **\]**
+Parameter = *Datatype* *Variableidentifier* **\[ =** *Expression* **\]**
 
 Body = { *Statement* }
 
 Statement = *VariableDeclarationStatement* | *EmbeddedFunctionDeclarationStatement* | ... 
 
-EmbeddedFunctionDeclaration = *Heading*  **{\[** *VariableDeclarations* **\] \[** *Statements* **\]}**
+EmbeddedFunctionDeclaration = *Heading* **{\[** *VariableDeclarations* **\] \[** *Statements* **\]}**
 
 ### Example of a method that doesn't have a return type
 
@@ -359,7 +359,7 @@ When a method is overridden in a subclass, the overriding method must be at leas
 
 ## Optional parameters
 
-Parameters can be initialized in the method declaration parameter list. In this case, the parameter becomes an *optional parameter*. If no value is supplied in the method call, the default value is used. All required parameters must be listed before the first optional parameter. The following examples shows how to create and call a method that has optional parameters. 
+Parameters can be initialized in the method declaration parameter list. In this case, the parameter becomes an *optional parameter*. If no value is supplied in the method call, the default value is used. All required parameters must be listed before the first optional parameter. The following examples show how to create and call a method that has optional parameters. 
 
 ### Optional parameters examples
 
@@ -497,7 +497,7 @@ There's another way where the prmIsDefault predefined function is used to determ
     }
 ```
 
-In both cases the *parm* method can be called with a parameter, which sets the field, or without parameters, which returns it. In this way, there is only one accessor method instead of two. In any case, the convention is to use a naming convention to identify these methods, naming them with a "parm" prefix.
+In both cases the *parm* method can be called with a parameter, which sets the field, or without parameters, which returns it. In this way, there's only one accessor method instead of two. In any case, the convention is to use a naming convention to identify these methods, naming them with a "parm" prefix.
 
 ## Parameters
 
@@ -594,7 +594,7 @@ The target of an extension method must be one of the following application objec
 - View
 - Map
 
-Regardless of the target type, an extension *class* is used to add extension methods to the type. For example, an extension table is *not* used to add methods to a table, and there's no such thing as an extension table.
+Regardless of the target type, an extension *class* is used to add extension methods to the type. For example, an extension table isn't used to add methods to a table, and there's no such thing as an extension table.
 
 ## The this keyword
 
