@@ -28464,6 +28464,11 @@
       "source_path": "articles/commerce/dev-itpro/store-comm-android-extensibility.md",
       "redirect_url": "/dynamics365/commerce/dev-itpro/store-comm-android-ios-ext",
       "redirect_document_id": false
+    }, 
+    {
+      "source_path": "articles/commerce/b2b/b2b2b-aka-b2b-indirect.md",
+      "redirect_url": "/dynamics365/commerce/b2b/b2b-indirect",
+      "redirect_document_id": false
     }    
   ]
 }
