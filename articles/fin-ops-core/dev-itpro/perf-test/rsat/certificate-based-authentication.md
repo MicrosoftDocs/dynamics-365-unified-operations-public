@@ -1,6 +1,6 @@
 ---
-title: RSAT certificates 
-description: Learn how to set up and use certificate needed for RSAT.
+title: Regression suite automation certificates tool 
+description: Learn how to set up and use certificate needed for Regression suite automation tool.
 author: pvillads
 ms.author: pvillads
 ms.topic: article
@@ -24,8 +24,7 @@ secure communications across the internet. They provide a way to verifyidentity 
 
 Certificates are arranged as trees, with the Root certificate (also called the CA certificate as explained below) at the top as shown in this diagram:
 
-![Chain of Trust](media/chain-of-trust.png){width="5.0in"height="2.71875in"}
-
+![Chain of Trust](media/chain-of-trust.png)
 Binding intermediate and user certificates to a securely managed root certificate not only secures the foundational trust of your PKI but also makes certificate issuance, management, and eventual revocation more efficient and resilient to potential security breaches. This layered approach is core to modern digital security practices and maintains trust while enabling scalability and flexibility across complex
 environments.
 
@@ -298,41 +297,41 @@ Now that we have generated the certificates it is time to configure the Public K
 
 3)  From there use the Create PKI button. Once in the security Center, under Manage \> Public Key Infrastructure (Preview), Click "Create PKI" button in the top corner and provide a name for the PKI.
 
-![A screenshot of a computer AI-generated content maybe incorrect.](media/create-pki.png){width="3.6041666666666665in"height="2.5104166666666665in"}
+![Public key infrastructure](media/create-pki.png)
 
 Select the PKI created
 
-![A screenshot of a computer AI-generated content may beincorrect.](media/pki.png){width="6.5in"height="2.2576388888888888in"}
+![Create public key infrastructure](media/pki.png)
 
 4)  Click +Add certificate authority
 
 Select the root CA created above, and set \"Is this certificate authority the root?\" = Yes as shown below:
 
-![A screenshot of a certificate AI-generated content may be incorrect.](media/add-root-certificate.png){width="5.948746719160105in" height="6.8134503499562555in"}
+![Add root certification](media/add-root-certificate.png)
 
 5)  Now do the same for the Intermediate one but set \"Is this certificate authority the root?\" = No
  
-![A screenshot of a certificate AI-generated content may be incorrect.](media/add-intermediate-certificate.png){width="6.03209208223972in" height="6.89679571303587in"}
+![Add intermediate certificate](media/add-intermediate-certificate.png)
 
 Both certificates should be listed as shown below:
 
-![A screenshot of a computer AI-generated content may be incorrect.](media/certificate-list.png){width="6.5in" height="1.8256944444444445in"}
+![List of certificates](media/certificate-list.png)
 
 6)  Set up the Authentication Methods.  
 
 Go to: Security Center \> Manage \> Authentication Methods
 
- ![A screenshot of a computer AI-generated content may be incorrect.](media/authentication-methods.png){width="6.5in" height="3.5027777777777778in"}
+ ![Certificate methods](media/authentication-methods.png)
 
 Select **Certificate-based authentication**. Then once in the form, select **Enable**
 
 And add in the group (we had created an Entra ID group for RSAT, and added in a couple users)
 
-![A screenshot of a computer AI-generated content may be incorrect.](media/authentication-settings.png){width="6.5in" height="2.35in"}
+![Authenication settings](media/authentication-settings.png)
 
 After adding in the Group, click on the **Configure** tab.
 
-![A close-up of a computer screen AI-generated content may be incorrect.](media/authentication-settings-configure-tab.jpeg){width="6.5in" height="2.452777777777778in"}
+![Configuration authentication](media/authentication-settings-configure-tab.jpeg)
 
 Click **Add Rule**
 
@@ -345,15 +344,15 @@ Select the Intermediate certificate
 Select Multi-factor authentication
 Affinity binding: low
 
-![A screenshot of a computer AI-generated content may be incorrect.](media/authentication-binding-policy-rule.png){width="4.969443350831146in" height="7.563555336832896in"}
+![Rule policy](media/authentication-binding-policy-rule.png)
 
 Click **Add**. And then acknowledge the message:
 
- ![A close up of a sign AI-generated content may be incorrect.](media/authentication-binding-policy-ack.jpeg){width="6.5in" height="0.9125in"}
+ ![Acknowledge message](media/authentication-binding-policy-ack.jpeg)
 
 Click save. This now enabled the certificate based authentication to be classified as MFA.
 
- ![Certificate based authenication](media/certificate-based-authentication-settings.jpeg){width="6.5in" height="3.2222222222222223in"}
+ ![Certificate based authenication](media/certificate-based-authentication-settings.jpeg)
 
 ### Install the certificates on the computer running RSAT
 
@@ -389,13 +388,13 @@ We describe the methods in a later section of this document. 
 
 It is important to provide the thumbprint from the user certificate.
 
- ![User certificate](media/configure-rsat.jpeg){width="6.5in" height="7.513194444444444in"}
+ ![User certificate](media/configure-regression.jpeg)
 
-![test](media/configure-rsat-2.png){width="6.5in" height="5.979861111111111in"}
+![test](media/configure-refressuib-2.png)
 
 When the "Test Connection..." button is clicked, the system should show that the connection is successful:
 
- ![Test](media/rsat-connected.png){width="4.229166666666667in" height="1.9583333333333333in"}
+ ![Connection successful](media/regression-connected.png)
 
 ### RSAT certification modes
 
