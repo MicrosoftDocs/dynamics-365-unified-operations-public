@@ -1,9 +1,9 @@
 ---
-title: Unlock B2B2B Commerce Native Indirect B2B Workflows in Dynamics 365 Commerce
-description: Overview of native B2B Indirect (B2B2B) workflows in Dynamics 365 Commerce, with key features and benefits for modern B2B commerce scenarios.  
+title: B2B Indirect workflows
+description: Learn about the key features and benefits of native B2B Indirect workflows in Microsoft Dynamics 365 Commerce.  
 author: ashishmsft  
 ms.date: 06/10/2025  
-ms.topic: how-to
+ms.topic: overview
 ms.reviewer: johnmichalak
 ms.search.region: Global  
 ms.author: asharchw  
@@ -13,15 +13,15 @@ ms.custom:
   - bap-template
 ---
 
-# Unlock B2B2B Commerce: Native Indirect B2B Workflows in Dynamics 365 Commerce
+# B2B Indirect workflows
 
 [!include [banner](../../includes/banner.md)]
 
-Get insights on B2B2B commerce in Dynamics 365 Commerce, featuring native indirect B2B workflows for efficient and scalable business operations.
+This article provides an overview of the key features and benefits of native business-to-business (B2B) Indirect workflows in Microsoft Dynamics 365 Commerce.
 
 ## What is B2B Indirect?
 
-B2B Indirect unlocks new growth by powering dynamic, multi-tiered supply chains—enabling products to flow seamlessly from manufacturers through trusted distributors to business customers. This strategy amplifies market reach, maximizes distribution channels, and accelerates sales by connecting CPG brands with retailers and other businesses via a robust network of intermediaries. Elevate your distribution game with B2B Indirect, where each business intermediary becomes a catalyst for growth, ensuring your products reach the right hands, every time.
+The Dynamics 365 Commerce B2B Indirect feature can help your business grow by powering dynamic, multitiered supply chains that enable products to flow seamlessly from manufacturers through trusted distributors to business customers. This strategy amplifies market reach, maximizes distribution channels, and accelerates sales by connecting consumer packaged goods (CPG) brands with retailers and other businesses via a robust network of intermediaries. B2B Indirect can help improve your B2B distribution process because each business intermediary becomes a catalyst for growth, ensuring that your products reach the right customers.
 
 ![B2B2B Overview Conceptual Model](../media/B2B2B-Overview-Conceptual-Model.png)
 
@@ -68,7 +68,7 @@ Once approved, the system sets up the following elements in the back office and 
 
 By following these steps, the B2B seller can become a part of the platform and can start selling to their retail outlets.
 
-## Overview of Capabilities
+## B2B Indirect capabilities
 
 As part of this feature, you'll be able to natively leverage the following capabilities, in addition to all existing B2B capabilities that are already available:
 
