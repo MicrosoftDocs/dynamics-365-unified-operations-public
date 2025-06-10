@@ -24,7 +24,7 @@ secure communications across the internet. They provide a way to verifyidentity 
 
 Certificates are arranged as trees, with the Root certificate (also called the CA certificate as explained below) at the top as shown in this diagram:
 
-![Chain of trust.](media/chain-of-trust.png)
+![Chain of trust.](/media/chain-of-trust.png)
 Binding intermediate and user certificates to a securely managed root certificate not only secures the foundational trust of your PKI but also makes certificate issuance, management, and eventual revocation more efficient and resilient to potential security breaches. This layered approach is core to modern digital security practices and maintains trust while enabling scalability and flexibility across complex
 environments.
 
@@ -297,41 +297,41 @@ Now that we have generated the certificates it is time to configure the Public K
 
 3)  From there use the Create PKI button. Once in the security Center, under Manage \> Public Key Infrastructure (Preview), Click "Create PKI" button in the top corner and provide a name for the PKI.
 
-![Public key infrastructure](media/create-pki.png)
+![Public key infrastructure](/media/create-pki.png)
 
 Select the PKI created
 
-![Create public key infrastructure](media/pki.png)
+![Create public key infrastructure](/media/pki.png)
 
 4)  Click +Add certificate authority
 
 Select the root CA created above, and set \"Is this certificate authority the root?\" = Yes as shown below:
 
-![Add root certification](media/add-root-certificate.png)
+![Add root certification](/media/add-root-certificate.png)
 
 5)  Now do the same for the Intermediate one but set \"Is this certificate authority the root?\" = No
  
-![Add intermediate certificate](media/add-intermediate-certificate.png)
+![Add intermediate certificate](/media/add-intermediate-certificate.png)
 
 Both certificates should be listed as shown below:
 
-![List of certificates](media/certificate-list.png)
+![List of certificates](/media/certificate-list.png)
 
 6)  Set up the Authentication Methods.  
 
 Go to: Security Center \> Manage \> Authentication Methods
 
- ![Certificate methods](media/authentication-methods.png)
+ ![Certificate methods](/media/authentication-methods.png)
 
 Select **Certificate-based authentication**. Then once in the form, select **Enable**
 
 And add in the group (we had created an Entra ID group for RSAT, and added in a couple users)
 
-![Authenication settings](media/authentication-settings.png)
+![Authenication settings](/media/authentication-settings.png)
 
 After adding in the Group, click on the **Configure** tab.
 
-![Configuration authentication](media/authentication-settings-configure-tab.jpeg)
+![Configuration authentication](/media/authentication-settings-configure-tab.jpeg)
 
 Click **Add Rule**
 
@@ -344,15 +344,15 @@ Select the Intermediate certificate
 Select Multi-factor authentication
 Affinity binding: low
 
-![Rule policy](media/authentication-binding-policy-rule.png)
+![Rule policy](/media/authentication-binding-policy-rule.png)
 
 Click **Add**. And then acknowledge the message:
 
- ![Acknowledge message](media/authentication-binding-policy-ack.jpeg)
+ ![Acknowledge message](/media/authentication-binding-policy-ack.jpeg)
 
 Click save. This now enabled the certificate based authentication to be classified as MFA.
 
- ![Certificate based authenication](media/certificate-based-authentication-settings.jpeg)
+ ![Certificate based authenication](/media/certificate-based-authentication-settings.jpeg)
 
 ### Install the certificates on the computer running RSAT
 
@@ -388,11 +388,11 @@ We describe the methods in a later section of this document. 
 
 It is important to provide the thumbprint from the user certificate.
 
- ![User certificate](media/configure-regression.jpeg)
+ ![User certificate](/media/configure-regression.jpeg)
 
 When the "Test Connection..." button is clicked, the system should show that the connection is successful:
 
- ![Connection successful](media/regression-connected.png)
+ ![Connection successful](/media/regression-connected.png)
 
 ### RSAT certification modes
 
