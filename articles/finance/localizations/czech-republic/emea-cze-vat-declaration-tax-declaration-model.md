@@ -6,12 +6,10 @@ ms.author: egolub
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 06/10/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Czech Republic
 ms.search.validFrom: 2017-07-20
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.13
 ---
 
