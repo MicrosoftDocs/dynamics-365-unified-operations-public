@@ -20,7 +20,7 @@ In this article, you will learn how to set up the certificate needed for Regress
 
 Digital certificates are essentially digital \"ID cards\" that help establish trust online. They bind a public key to an entity's identity -whether it\'s a website, an individual, or an organization - using
 cryptography, ensuring secure communication across networks.Certificates are a fundamental building block in modern security,forming part of a broader Public Key Infrastructure (PKI) that underpins
-secure communications across the internet. They provide a way to verifyidentity and establish encrypted channels, helping protect sensitivedata from malicious actors.
+secure communications across the internet. They provide a way to verifyidentity and establish encrypted channels, helping protect sensitive data from malicious actors.
 
 Certificates are arranged as trees, with the Root certificate (also called the CA certificate as explained below) at the top as shown in this diagram:
 
