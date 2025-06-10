@@ -390,8 +390,6 @@ It is important to provide the thumbprint from the user certificate.
 
  ![User certificate](media/configure-regression.jpeg)
 
-![test](media/configure-refressuib-2.png)
-
 When the "Test Connection..." button is clicked, the system should show that the connection is successful:
 
  ![Connection successful](media/regression-connected.png)
