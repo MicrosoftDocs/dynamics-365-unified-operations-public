@@ -4,7 +4,7 @@ description: Learn about the process of creating a bank facility and posting pro
 author: kweekley
 ms.author: kweekley
 ms.topic: how-to
-ms.date: 11/15/2022
+ms.date: 06/05/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -18,16 +18,11 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task creates a Bank facility and posting profile that is needed to process a letter of guarantee.
-
-
+This task creates a bank facility and posting profile that is needed to process a letter of guarantee.
 
 This task uses the USMF demo company. 
 
-
-
-
-## General ledger parameter
+## Cash and bank management parameters
 1. Go to **Cash and bank management > Setup > Cash and bank management parameters**.
 2. Expand the **Bank document** section.
 3. Select the **Enable letter of guarantee** option.
@@ -35,7 +30,7 @@ This task uses the USMF demo company.
 5. In the list, find and select the desired record.
 6. In the list, click the link in the selected row.
 7. Click the **Number sequences** tab.
-    * Define number sequence code for Letter of guarantee number and Letter of guarantee transaction references  
+    * Define **Number sequence** code for letter of guarantee number and letter of guarantee transaction references.  
 8. Click **Save**.
 9. Close the page.
 

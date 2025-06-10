@@ -4,7 +4,7 @@ description: Learn about the procedure of creating a letter of gurantee transact
 author: kweekley
 ms.author: kweekley
 ms.topic: how-to
-ms.date: 11/15/2022
+ms.date: 06/05/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks through the Letter of guarantee process.
+This procedure walks through the letter of guarantee process.
 
 
 
@@ -30,7 +30,7 @@ The following tasks must be complete before completing this procedure:
 This procedure uses the USMF demo company.
 
 
-## Create Sales Order with letter of guarantee
+## Create sales order with letter of guarantee
 1. Go to **Accounts receivable > Orders > All sales orders**.
 2. Click **New**.
 3. In the **Customer account** field, enter or select a value.
