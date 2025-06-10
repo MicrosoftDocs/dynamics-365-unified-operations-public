@@ -27,15 +27,17 @@ The Dynamics 365 Commerce B2B Indirect feature can help your business grow by po
 
 ## How does Dynamics 365 Commerce support B2B Indirect workflows?
 
-Dynamics 365 Commerce is a cloud-based platform that provides a comprehensive set of capabilities to enable B2B commerce scenarios. The platform supports both direct and indirect B2B workflows in a headless, composable manner, allowing merchants to manage multiple types of business relationships and transactions. Some of the key features of Dynamics 365 Commerce for B2B Indirect workflows are:
+The Dynamics 365 Commerce cloud-based platform provides a comprehensive set of capabilities to enable B2B commerce scenarios. The platform supports both direct and indirect B2B workflows with a headless, composable architecture that allows merchants to manage multiple types of business relationships and transactions. 
 
-- Ability to create and manage multiple B2B Seller and B2B Buyer accounts, each with their own pricing, catalog, and inventory management.
-- Ability to configure and apply complex pricing and discount rules based on various criteria such as account type, order quantity, product category, and more.
-- Ability to create and manage multiple catalogs and assortments for different B2B Seller and B2B Buyer accounts. You can choose to inherit, override, or extend product information from the primary catalog.
-- Ability to allow B2B Buyers to buy from a select authorized and approved list of B2B Sellers or from the Manufacturer directly.
-- Ability to allow Customer service agents (aka field sellers) from the Manufacturer’s organization to order on behalf of (OBO) a B2B Buyer (outlet-buyer) with a specific B2B Seller (Distributor/Wholesaler).
-- Ability to provide a rich and responsive user interface for B2B Seller and B2B Buyer portals. Features include product search, browsing, filtering, sorting, comparison, reviews, ratings, wish lists, cart, checkout, order history, and more.
-- Ability to integrate with various external systems and services, such as ERP, CRM, payment, tax, shipping, and more, using the platform's APIs and connectors.
+B2B Indirect workflow capabilities enable you to:
+
+- Create and manage multiple B2B seller and B2B buyer accounts that each have their own pricing, catalog, and inventory management.
+- Configure and apply complex pricing and discount rules based on criteria such as account type, order quantity, and product category.
+- Create and manage multiple catalogs and assortments for different B2B seller and B2B buyer accounts. You can choose to inherit, override, or extend product information from the primary catalog.
+- Allow B2B buyers to purchase from an authorized and approved list of B2B sellers, or directly from the manufacturer.
+- Allow customer service agents (also known as field sellers) from the manufacturer’s organization to order on behalf of (OBO) B2B buyers (outlet-buyer) from specific B2B sellers (distributors/wholesalers).
+- Use a rich and responsive user interface for B2B seller and B2B buyer portals with features that include product search, browsing, filtering, sorting, comparison, reviews, ratings, wish lists, cart, checkout, and order history.
+- Integrate with various external systems and services, such as enterprise resource planning (ERP), customer relationship management (CRM), payment, tax, and shipping using the platform's APIs and connectors.
 
 ## Why choose Dynamics 365 Commerce for B2B Indirect workflows?
 
