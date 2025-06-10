@@ -3,7 +3,7 @@ title: Unlock B2B2B Commerce Native Indirect B2B Workflows in Dynamics 365 Comme
 description: Overview of native B2B Indirect (B2B2B) workflows in Dynamics 365 Commerce, with key features and benefits for modern B2B commerce scenarios.  
 author: ashishmsft  
 ms.date: 06/10/2025  
-ms.topic: how-to audience: Application User  
+ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.search.region: Global  
 ms.author: asharchw  
