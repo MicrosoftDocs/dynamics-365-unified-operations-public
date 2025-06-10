@@ -23,7 +23,9 @@ The Dynamics 365 Commerce B2B indirect feature can help your business grow by po
 
 The following diagram shows a conceptual model of B2B indirect workflows.
 
-![Diagram showing a conceptual model of B2B indirect workflows](../media/B2B2B-Overview-Conceptual-Model.png)
+<!--![Diagram showing a conceptual model of B2B indirect workflows](../media/B2B2B-Overview-Conceptual-Model.png)-->
+
+:::image type="content" source="../media/B2B2B-Overview-Conceptual-Model.png" alt-text="Diagram showing a conceptual model of B2B indirect workflows":::
 
 ## Dynamics 365 Commerce support for B2B indirect workflows
 
@@ -52,7 +54,8 @@ Some of the benefits of choosing Dynamics 365 Commerce for B2B indirect workflow
 
 The following diagram shows the evolution of Dynamics 365 Commerce support for native B2B indirect workflows.
 
-![Diagram showing the evolution of Dynamics 365 Commerce support for native B2B indirect workflows](../media/EvolutionB2BtoB2B2B.png)
+<!--![Diagram showing the evolution of Dynamics 365 Commerce support for native B2B indirect workflows](../media/EvolutionB2BtoB2B2B.png)-->
+:::image type="content" source="../media/EvolutionB2BtoB2B2B.png" alt-text="Diagram showing the evolution of Dynamics 365 Commerce support for native B2B indirect workflows":::
 
 ## B2B seller prospect sign-up and approval process
 
@@ -74,7 +77,8 @@ By following these steps, the B2B seller can become a part of the platform and c
 
 The following diagram shows the B2B seller (B2B distributor) approval process.
 
-![Diagram showing the B2B seller (distributor) approval process](../media/B2BSeller-Approval-Process.png)
+<!--![Diagram showing the B2B seller (distributor) approval process](../media/B2BSeller-Approval-Process.png)-->
+:::image type="content" source="../media/B2BSeller-Approval-Process.png" alt-text="Diagram showing the B2B seller (distributor) approval process":::
 
 ## B2B indirect feature capabilities
 
