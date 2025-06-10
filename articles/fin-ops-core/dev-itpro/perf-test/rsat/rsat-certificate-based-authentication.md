@@ -24,11 +24,7 @@ secure communications across the internet. They provide a way to verifyidentity 
 
 Certificates are arranged as trees, with the Root certificate (also called the CA certificate as explained below) at the top as shown in this diagram:
 
-![Chain of Trust](Media/media/chain-of-trust.png){width="5.0in"height="2.71875in"}
-
- 
-
-Image credit: [Fanyangxi -- CC BY-SA4.0](https://commons.wikimedia.org/wiki/File:Chain_of_trust_v2.svg)
+![Chain of Trust](media/chain-of-trust.png){width="5.0in"height="2.71875in"}
 
 Binding intermediate and user certificates to a securely managed root certificate not only secures the foundational trust of your PKI but also makes certificate issuance, management, and eventual revocation more efficient and resilient to potential security breaches. This layered approach is core to modern digital security practices and maintains trust while enabling scalability and flexibility across complex
 environments.
@@ -71,23 +67,19 @@ Let's break down the script and explain what each parameter means:
 
 \$rootCert = New-SelfSignedCertificate \`
 
-This line calls the New-SelfSignedCertificate cmdlet and assigns the
-generated certificate object to the variable \$rootCert.
+This line calls the New-SelfSignedCertificate cmdlet and assigns the generated certificate object to the variable \$rootCert.
 
 2.  **Subject Parameter**
 
 -Subject \"CN=ContosoRootCA, O=Contoso, OU=IT, C=US\" \`
 
-The -Subject parameter sets the Distinguished Name (DN) for the
-certificate. It contains:
+The -Subject parameter sets the Distinguished Name (DN) for the certificate. It contains:
 
-- **CN (Common Name):** \"ContosoRootCA\": The label for the
-  certificate, typically used as the primary identifier.
+- **CN (Common Name):** \"ContosoRootCA\": The label for the certificate, typically used as the primary identifier.
 
 - **O (Organization):** \"Contoso": Indicates the organization.
 
-- **OU (Organizational Unit):** \"IT\": Denotes a specific department or
-  division within the organization.
+- **OU (Organizational Unit):** \"IT\": Denotes a specific department or  division within the organization.
 
 - **C (Country):** \"US\": The country code.
 
@@ -104,12 +96,9 @@ The -KeyExportPolicy parameter determines whether the private key can be exporte
 The -KeyUsage parameter specifies what the certificate's key can be used for:
 
 - **CertSign:** Allows the certificate to sign other certificates.
-
 - **CRLSign:** Permits signing Certificate Revocation Lists (CRLs).
-
 - **DigitalSignature:** Enables the certificate to be used for creating
-  digital signatures.\
-  These usages are typical for a Certificate Authority (CA) certificate.
+  digital signatures.\ These usages are typical for a Certificate Authority (CA) certificate.
 
 5.  **Type**
 
@@ -133,22 +122,19 @@ The -KeyLength parameter sets the size of the cryptographic key in bits. A 2048-
 
 -HashAlgorithm SHA256 \`
 
-The -HashAlgorithm parameter specifies the algorithm used for hashing during the certificate's creation (i.e., when signing the certificate).
-**SHA256** is a secure and widely adopted hash function.
+The -HashAlgorithm parameter specifies the algorithm used for hashing during the certificate's creation (i.e., when signing the certificate). **SHA256** is a secure and widely adopted hash function.
 
 9.  **Validity Period**
 
 -NotAfter (Get-Date).AddYears(10) \`
 
-The -NotAfter parameter sets the expiration date of the certificate. Using (Get-Date).AddYears(10) means the certificate will be valid for 10
-years from the current date. Long-lived root certificates are common.
+The -NotAfter parameter sets the expiration date of the certificate. Using (Get-Date).AddYears(10) means the certificate will be valid for 10 years from the current date. Long-lived root certificates are common.
 
 10. **Certificate Store Location**
 
 -CertStoreLocation \"Cert:\\LocalMachine\\My\" \`
 
-This parameter indicates where in the certificate store the new certificate will be placed. \"Cert:\\LocalMachine\\My\" refers to the
-personal store for the local computer account.
+This parameter indicates where in the certificate store the new certificate will be placed. \"Cert:\\LocalMachine\\My\" refers to the personal store for the local computer account.
 
 11. **Text Extension**
 
@@ -156,14 +142,11 @@ personal store for the local computer account.
 
 The -TextExtension parameter allows you to add custom certificate extensions using a text-based format:
 
-- **2.5.29.19** is the Object Identifier (OID) for the Basic Constraints
-  extension.
+- **2.5.29.19** is the Object Identifier (OID) for the Basic Constraints extension.
 
-- **{critical}** marks this extension as critical - if a client doesn't
-  understand this extension, it should not trust the certificate.
+- **{critical}** marks this extension as critical - if a client doesn't understand this extension, it should not trust the certificate.
 
-- **{text}ca=true&pathlength=1** conveys that this certificate is a CA certificate (ca=true) with a path length constraint of 1, which limits
-  the number of subordinate certificate issuers that can follow in the chain.
+- **{text}ca=true&pathlength=1** conveys that this certificate is a CA certificate (ca=true) with a path length constraint of 1, which limits the number of subordinate certificate issuers that can follow in the chain.
 
 12. **Exporting the Certificate**
 
@@ -176,9 +159,9 @@ standard certificate file format (usually Base-64 encoded).
 To summarize: This script creates a self-signed root CA certificate with appropriate settings for a Certificate Authority: an exportable key usable for signing operations, a strong cryptographic setup (RSA with a
 2048-bit key and SHA256), and a defined validity period.
 
-### Creating an Intermediate Certificate
+### Creating an intermediate certificate
 
-As described above, we will create an intermediate certificate that is signed with the root certificate we created above.
+We will create an intermediate certificate that is signed with the root certificate we created above.
 
 \# Create an Intermediate CA certificate (self-signed)\
 \$rootSubject = \"CN=ContosoRootCA, O=Contoso, OU=IT, C=US\"
@@ -315,41 +298,41 @@ Now that we have generated the certificates it is time to configure the Public K
 
 3)  From there use the Create PKI button. Once in the security Center, under Manage \> Public Key Infrastructure (Preview), Click "Create PKI" button in the top corner and provide a name for the PKI.
 
-![A screenshot of a computer AI-generated content maybe incorrect.](Media/media/create-pki.png){width="3.6041666666666665in"height="2.5104166666666665in"}
+![A screenshot of a computer AI-generated content maybe incorrect.](media/create-pki.png){width="3.6041666666666665in"height="2.5104166666666665in"}
 
 Select the PKI created
 
-![A screenshot of a computer AI-generated content may beincorrect.](Media/media/pki.png){width="6.5in"height="2.2576388888888888in"}
+![A screenshot of a computer AI-generated content may beincorrect.](media/pki.png){width="6.5in"height="2.2576388888888888in"}
 
 4)  Click +Add certificate authority
 
 Select the root CA created above, and set \"Is this certificate authority the root?\" = Yes as shown below:
 
-![A screenshot of a certificate AI-generated content may be incorrect.](Media/media/add-root-certificate.png){width="5.948746719160105in" height="6.8134503499562555in"}
+![A screenshot of a certificate AI-generated content may be incorrect.](media/add-root-certificate.png){width="5.948746719160105in" height="6.8134503499562555in"}
 
 5)  Now do the same for the Intermediate one but set \"Is this certificate authority the root?\" = No
  
-![A screenshot of a certificate AI-generated content may be incorrect.](Media/media/add-intermediate-certificate.png){width="6.03209208223972in" height="6.89679571303587in"}
+![A screenshot of a certificate AI-generated content may be incorrect.](media/add-intermediate-certificate.png){width="6.03209208223972in" height="6.89679571303587in"}
 
 Both certificates should be listed as shown below:
 
-![A screenshot of a computer AI-generated content may be incorrect.](Media/media/certificate-list.png){width="6.5in" height="1.8256944444444445in"}
+![A screenshot of a computer AI-generated content may be incorrect.](media/certificate-list.png){width="6.5in" height="1.8256944444444445in"}
 
 6)  Set up the Authentication Methods.  
 
 Go to: Security Center \> Manage \> Authentication Methods
 
- ![A screenshot of a computer AI-generated content may be incorrect.](Media/media/authentication-methods.png){width="6.5in" height="3.5027777777777778in"}
+ ![A screenshot of a computer AI-generated content may be incorrect.](media/authentication-methods.png){width="6.5in" height="3.5027777777777778in"}
 
 Select **Certificate-based authentication**. Then once in the form, select **Enable**
 
 And add in the group (we had created an Entra ID group for RSAT, and added in a couple users)
 
-![A screenshot of a computer AI-generated content may be incorrect.](Media/media/authentication-settings.png){width="6.5in" height="2.35in"}
+![A screenshot of a computer AI-generated content may be incorrect.](media/authentication-settings.png){width="6.5in" height="2.35in"}
 
 After adding in the Group, click on the **Configure** tab.
 
-![A close-up of a computer screen AI-generated content may be incorrect.](Media/media/authentication-settings-configure-tab.jpeg){width="6.5in" height="2.452777777777778in"}
+![A close-up of a computer screen AI-generated content may be incorrect.](media/authentication-settings-configure-tab.jpeg){width="6.5in" height="2.452777777777778in"}
 
 Click **Add Rule**
 
@@ -362,15 +345,15 @@ Select the Intermediate certificate
 Select Multi-factor authentication
 Affinity binding: low
 
-![A screenshot of a computer AI-generated content may be incorrect.](Media/media/authentication-binding-policy-rule.png){width="4.969443350831146in" height="7.563555336832896in"}
+![A screenshot of a computer AI-generated content may be incorrect.](media/authentication-binding-policy-rule.png){width="4.969443350831146in" height="7.563555336832896in"}
 
 Click **Add**. And then acknowledge the message:
 
- ![A close up of a sign AI-generated content may be incorrect.](Media/media/authentication-binding-policy-ack.jpeg){width="6.5in" height="0.9125in"}
+ ![A close up of a sign AI-generated content may be incorrect.](media/authentication-binding-policy-ack.jpeg){width="6.5in" height="0.9125in"}
 
-Click save. This now enabled the Certificate Based Authentication to be classified as MFA.
+Click save. This now enabled the certificate based authentication to be classified as MFA.
 
- ![](Media/media/certificate-based-authentication-settings.jpeg){width="6.5in" height="3.2222222222222223in"}
+ ![Certificate based authenication](media/certificate-based-authentication-settings.jpeg){width="6.5in" height="3.2222222222222223in"}
 
 ### Install the certificates on the computer running RSAT
 
@@ -378,8 +361,7 @@ On the Computer where you'll run RSAT, install the certs:
 
 - Root CA certs only need installing if self-signed
 
-Import these to Local Machine \> Trusted Root Certification Authorities: Root CA (.cer file) and Intermediate CA (.cer file) as
-shown below:
+Import these to Local Machine \> Trusted Root Certification Authorities: Root CA (.cer file) and Intermediate CA (.cer file) as shown below:
 
 Import into Local User \> Personal the PFX file for the user cert (you\'ll need to provide the password)
 
@@ -407,13 +389,13 @@ We describe the methods in a later section of this document. 
 
 It is important to provide the thumbprint from the user certificate.
 
- ![](Media/media/configure-rsat.jpeg){width="6.5in" height="7.513194444444444in"}
+ ![User certificate](media/configure-rsat.jpeg){width="6.5in" height="7.513194444444444in"}
 
-![A screenshot of a computer AI-generated content may be incorrect.](Media/media/configure-rsat-2.png){width="6.5in" height="5.979861111111111in"}
+![test](media/configure-rsat-2.png){width="6.5in" height="5.979861111111111in"}
 
 When the "Test Connection..." button is clicked, the system should show that the connection is successful:
 
- ![](Media/media/rsat-connected.png){width="4.229166666666667in" height="1.9583333333333333in"}
+ ![Test](media/rsat-connected.png){width="4.229166666666667in" height="1.9583333333333333in"}
 
 ### RSAT certification modes
 
