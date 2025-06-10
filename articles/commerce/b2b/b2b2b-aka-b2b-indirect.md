@@ -33,58 +33,58 @@ B2B indirect workflow capabilities enable you to:
 - Configure and apply complex pricing and discount rules based on criteria such as account type, order quantity, and product category.
 - Create and manage multiple catalogs and assortments for different B2B seller and B2B buyer accounts. You can choose to inherit, override, or extend product information from the primary catalog.
 - Allow B2B buyers to purchase from an authorized and approved list of B2B sellers, or directly from the manufacturer.
-- Allow customer service agents (also known as field sellers) from the manufacturer’s organization to order on behalf of (OBO) B2B buyers (outlet-buyer) from specific B2B sellers (distributors/wholesalers).
+- Allow customer service agents (also known as field sellers) from the manufacturer's organization to order on behalf of (OBO) B2B buyers (outlet-buyer) from specific B2B sellers (distributors/wholesalers).
 - Use a rich and responsive user interface for B2B seller and B2B buyer portals with features that include product search, browsing, filtering, sorting, comparison, reviews, ratings, wish lists, cart, checkout, and order history.
 - Integrate with various external systems and services, such as enterprise resource planning (ERP), customer relationship management (CRM), payment, tax, and shipping using the platform's APIs and connectors.
 
-## Why choose Dynamics 365 Commerce for B2B indirect workflows?
+## Benefits of choosing Dynamics 365 Commerce for B2B indirect workflows
 
-Dynamics 365 Commerce is designed to support high-volume merchants and provides a suite of advanced features to cater to the specific needs of B2B transactions. 
+Dynamics 365 Commerce is designed to support high-volume merchants and provides a suite of advanced features to cater to the specific requirements of B2B transactions. 
 
 Some of the benefits of choosing Dynamics 365 Commerce for B2B indirect workflows are:
 
+- B2B indirect workflows build on the existing B2B workflows and use the same platform features and data model, so users get a consistent and smooth experience.
+- B2B indirect workflows are available in a headless mode so that merchants can use the platform's APIs and SDKs to build custom extensions and integrations that fit their existing business processes.
+- B2B indirect workflows are scalable, secure, and reliable because they're built on the Microsoft Azure cloud platform, which offers high availability, performance, and compliance.
+- B2B indirect workflows are flexible and customizable. Merchants can configure many parts of the platform such as business rules, workflows, and the user interface to fit their specific needs.
+
 ![Evolution of Dynamics 365 Commerce to support B2B2B natively](../media/EvolutionB2BtoB2B2B.png)
 
-- B2B indirect workflows build on the existing B2B workflows. They use the same platform features and data model, so users get a consistent and smooth experience.
-- B2B indirect workflows are available in a headless manner. This means merchants can use the platform's APIs and SDKs to build custom extensions and integrations that fit their existing business processes.
-- B2B indirect workflows are scalable, secure, and reliable, as they're built on the Microsoft Azure cloud platform, which offers high availability, performance, and compliance.
-- B2B indirect workflows are flexible and customizable. Merchants can configure many parts of the platform—such as business rules, the user interface, and workflows—to fit their specific needs.
+## B2B seller prospect sign-up and approval process
 
-## B2B Seller Prospect Sign-up and Approval Process
+The following steps provide an overview of how tp become a B2B seller on the platform:
 
-![B2B Seller (aka B2B Distributor) approval process visualized in simplest manner](../media/B2BSeller-Approval-Process.png)
+- **Submit a B2B seller prospect application**: Prospective B2B sellers submit an application expressing their interest in becoming a seller on the platform. The application includes relevant business information and contact details.
+- **Sync prospect application**: The submitted application is synced to Commerce headquarters and made available for review. <!--Run or schedule a P-001 sync job from the Distribution Schedule and run **Sync Customer requests**.-->
+- **Review prospect application**: The platform team evaluates the prospect's suitability based on predefined criteria. Criteria may include business size, industry, product offerings, and compliance with platform policies. The review process aims to identify genuine businesses and filter out potential fraud or unwanted applicants.
+- **Approve or reject B2B seller prospect**: Based on the platform team review, the prospect application is either approved or rejected. Approved prospects receive confirmation and further instructions on the next steps. Rejected applicants are informed of the decision and the reasons behind it.
 
-The following is a brief overview of the steps involved in becoming a B2B seller on the platform:
+Once approved, the system sets up the following elements in headquarters and associates them with the B2B seller:
 
-- Submit B2B Seller Prospect Application: Prospective B2B sellers submit an application expressing their interest in becoming a seller on the platform. The application includes relevant business information, contact details, etc.
-- Sync Prospect Application: The submitted application is synced to HQ and made available for review. Run or schedule a P-001 sync job from the Distribution Schedule and run `Sync Customer requests`.
-- Review Prospect Application: The platform team evaluates the prospect’s suitability based on predefined criteria. Criteria may include business size, industry, product offerings, and compliance with platform policies. The review process aims to identify genuine businesses and filter out potential fraud or unwanted applicants.
-- Approve/Reject B2B Seller Prospect: Based on the review, the prospect application is either approved or rejected. Approved prospects receive confirmation and further instructions on the next steps. Rejected applicants are informed of the decision and the reasons behind it.
-
-Once approved, the system sets up the following elements in the back office and associates them with the B2B seller through these steps:
-
-- Creates a Copy of Existing Online B2B Channel: The platform creates a new B2B channel specifically for the approved seller. This channel has a unique site and warehouse, allowing the seller to manage their inventory separately.
-- Employee Record Creation: An employee record is set up automatically for the B2B seller. This record enables the seller to carry out inventory management, order management, and other operational tasks.
-- Customer Hierarchy Mapping: The B2B seller (channel) is mapped to a specific customer hierarchy. This hierarchy defines the relationships between the seller and their customers, such as pricing, discounts, payment terms, etc.
-- Manufacturer Channel Mapping: The B2B seller’s channel is linked to the manufacturer channel. This ensures that the seller can purchase products directly from the manufacturer, maintaining supply chain efficiency and quality control.
+- **Creates a copy of existing online B2B channel**: The platform creates a new B2B channel specifically for the approved seller. This channel has a unique site and warehouse, allowing the seller to manage their inventory separately.
+- **Creates an employee record**: An employee record is set up automatically for the B2B seller. This record enables the seller to carry out inventory management, order management, and other operational tasks.
+- **Maps the customer hierarchy**: The B2B seller (channel) is mapped to a specific customer hierarchy. This hierarchy defines the relationships between the seller and their customers, such as pricing, discounts, and payment terms.
+- **Maps the manufacturer channel**: The B2B seller's channel is mapped to the manufacturer channel, which ensures that the seller can purchase products directly from the manufacturer to maintain supply chain efficiency and quality control.
 
 By following these steps, the B2B seller can become a part of the platform and can start selling to their retail outlets.
 
-## B2B indirect capabilities
+![B2B Seller (aka B2B Distributor) approval process visualized in simplest manner](../media/B2BSeller-Approval-Process.png)
 
-As part of this feature, you'll be able to natively leverage the following capabilities, in addition to all existing B2B capabilities that are already available:
+## B2B indirect feature capabilities
 
-- Onboard _B2B Seller_ as a new B2B Prospect type for _Distributors or Wholesalers_.
-- Convert existing _B2B Buyers_ to become _B2B Seller and Buyer_.
-- Map _B2B Buyers_ to select _B2B Sellers_ and choose if they can also buy from _Manufacturer_ directly. 
-- Create _B2B catalog-aware_ Commerce orders in HQ and Call Center, along with the ability to choose the fulfilling channel _(B2B Seller or distributor)_ in the order header.
-- Map individual _B2B Buyer_ organizations to _B2B Sellers and/or Manufacturers_, giving you control over who can buy from whom. You can configure this directly from the _B2B Buyer’s customer hierarchy_, by mapping associated _B2B channels_ they can buy from.
-- Allow _B2B Buyers_ to choose to purchase from _multiple B2B Sellers and/or the Manufacturer_.
-- At any point in time, B2B buyers can buy from a single _B2B Seller (aka distributor) or Manufacturer directly_, but they can have multiple active carts at the same time with individual B2B Sellers or the Manufacturer.
-- Order templates are now catalog-aware, enabling customers to bulk-add items from multiple catalogs.
-- Order history is catalog-aware, allowing customers to quickly rebuy catalog-specific items directly from order history using "Buy Again."
-- Order history allows you to filter by various options, including the channel (B2B Seller or Manufacturer) where the order originated.
-- Order-on-behalf-of allows customer service agents (C1 employees) from the Manufacturer (not B2B Sellers) to place an order on behalf of their B2B partners (C2 - B2B Buyers) directly with the Manufacturer or a B2B Seller.
-- Additionally, there are headless APIs available to allow C1 from the B2B Seller (Distributor's) organization to manage their inventory on hand and accept or reject orders.
+As part of the B2B indirect feature, you're able to take advantage of the following capabilities:
+
+- Onboard a B2B seller as a new B2B prospect type for distributors or wholesalers.
+- Convert existing B2B buyers to become B2B sellers and buyers.
+- Map B2B buyers to select B2B sellers and decide if they can also buy directly from the manufacturer. 
+- Create B2B catalog-aware Commerce orders in headquarters and call center, along with the ability to choose the fulfilling channel (B2B seller or distributor) in the order header.
+- Map individual B2B buyer organizations to B2B sellers and/or manufacturers, giving you control over who can buy from whom. You can configure this functionality directly from the B2B buyer's customer hierarchy by mapping the associated B2B channels they can buy from.
+- Allow B2B buyers to choose to purchase from multiple B2B sellers and/or the manufacturer.
+- B2B buyers can at any time buy directly from a single B2B seller (distributor) or manufacturer, but can also have multiple active carts at the same time with individual B2B sellers or the manufacturer.
+- Enable customers to bulk-add items from multiple catalogs with catalog-aware order templates.
+- Allow customers to quickly rebuy catalog-specific items directly from their catalog-aware order history using "Buy Again" functionality.
+- Filter order history using various options, including the channel (B2B seller or manufacturer) where the order originated.
+- Allow manufacturer customer service agents to use order-on-behalf-of functionality to place orders directly with the manufacturer or a B2B seller on behalf of their B2B partners.
+- Use available headless APIs to allow representatives from the B2B seller (distributor) organization to manage their inventory on hand and accept or reject orders.
 
 ![Glimpse into end-user experience using native experiences of B2B indirect (aka B2B2B)](../media/B2B-Indirect-Experience-Glimpse.png)
