@@ -12,7 +12,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Creating certificates for the RSAT Certificate based authentication
+# Creating certificates for the RSAT certificate based authentication
 
 In this article, you will learn how to set up the certificate needed for Regression suite automation tool (RSAT) 2.8 certificate based authentication.
 
