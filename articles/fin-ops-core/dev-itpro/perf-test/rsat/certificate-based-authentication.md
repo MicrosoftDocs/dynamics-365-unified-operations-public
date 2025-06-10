@@ -396,7 +396,7 @@ When the "Test Connection..." button is clicked, the system should show that the
 
 ### RSAT certification modes
 
-**Automated**: RSAT will configure registry entries for the policy selection with each test case before running steps, such the CBA auth flow callback from certauth will automatically select a matching user
+**Automated**: RSAT will configure registry entries for the policy selection with each test case before running steps, such the CBA auth flow callback from certauth automatically selects a matching user
 policy. Note policies here store only as "current user" which is because of permissions is required for local machine entries. It is advised that no entries exist for local machine entries when using this option, such if someone has been using predefined and made a single local computer policy then manually delete this before running automated.
 
 **Predefined**: This is if users cannot use automated but want to control their policies themselves, like if filtering by subject from our rule in RSAT will not work, then they can configure this themselves as
