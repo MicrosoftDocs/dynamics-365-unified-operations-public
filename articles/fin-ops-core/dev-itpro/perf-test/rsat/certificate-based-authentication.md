@@ -24,7 +24,7 @@ secure communications across the internet. They provide a way to verifyidentity 
 
 Certificates are arranged as trees, with the Root certificate (also called the CA certificate as explained below) at the top as shown in this diagram:
 
-![Chain of Trust](media/chain-of-trust.png)
+![Chain of trust.](media/chain-of-trust.png)
 Binding intermediate and user certificates to a securely managed root certificate not only secures the foundational trust of your PKI but also makes certificate issuance, management, and eventual revocation more efficient and resilient to potential security breaches. This layered approach is core to modern digital security practices and maintains trust while enabling scalability and flexibility across complex
 environments.
 
