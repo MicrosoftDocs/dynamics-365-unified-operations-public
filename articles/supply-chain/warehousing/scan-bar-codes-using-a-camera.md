@@ -29,7 +29,7 @@ The camera page will be initiated on each page where the input field has its **P
 - Select the pencil on the **Task and details** page to go to a page where you can manually enter input.
 - Select the camera on the **Task and details** page to go back to the camera page.
 
-On the camera page, when you select the camera button, it will appear dimmed while trying to identify a bar code. If a bar code is not identified within five seconds, the process will time out and the camera button will become available again. You will then be able to try to scan a bar code again.
+On the camera page, when you select the camera button, it appears dimmed while the camera tries to identify a bar code. If a bar code isn't identified within five seconds, the process time outs, and the camera button becomes available again. You can then try to scan a bar code again.
 
 When you aim the camera at a bar code, a green check mark button indicates that you can scan it. Select the button to scan the code. If more than one bar code is scanned, the app asks you to identify the correct bar code.
 
