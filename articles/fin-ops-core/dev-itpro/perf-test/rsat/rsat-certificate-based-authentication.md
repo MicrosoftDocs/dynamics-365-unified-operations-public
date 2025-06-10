@@ -292,7 +292,7 @@ purposes.
 
 Now that we have generated the certificates it is time to configure the Public Key Infrastructure (PKI) importing the root certificate.
 
-1)  Go to the Entra admin center at http://entra.microsoft.com and sign in.
+1)  Go to the Entra admin center at https://entra.microsoft.com and sign in.
 
 2)  After logging in, under the Protection tab, select Show More, then select Security Center.
 
