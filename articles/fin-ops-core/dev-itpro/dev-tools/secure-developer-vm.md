@@ -1,14 +1,13 @@
 ---
 title: Secure one-box development environments
-description: Learn about how to help secure one-box developer environments, including outlines on default congigurations and how to deploy to a custom virtual network.
+description: Learn about how to help secure one-box developer environments, including outlines on default configurations and how to deploy to a custom virtual network.
 author: mnordick
 ms.author: mnordick
-ms.date: 07/01/2024
+ms.date: 06/10/2025
 ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2022-09-13
 ---
@@ -49,7 +48,11 @@ Out of the box, your one-box developer environment has the following basic secur
 
 Lifecycle Services lets you select a custom virtual network at the time of deployment. In this way, you can deploy the one-box environment's VM directly to a preconfigured virtual network. However, when you use a custom virtual network, you must consider several points to ensure that Lifecycle Services capabilities continue to function, so that environment deployment can succeed.
 
-- IP addresses from Lifecycle Services must be allowed to access port 5986 on the VM. This port is required to both deploy and manage the environment from Lifecycle Services.
+- IP addresses from Lifecycle Services must be allowed to access port 5986 on the VM. This port is required to both deploy and manage the environment from Lifecycle Services. Ensure IP addresses from Lifecycle Services are allowed to access 5986 in Network security group.
+- Configure port 443 in the Network security group to allow inbound HTTPS traffic for public URLs, or restrict access to specific client IP addresses as required by your organization's security policy.
+
+> [!IMPORTANT]
+> Ensure network security group is attached to subnet that will be selected in Lifecycle Services portal for Custom Virtual network configuration steps before triggering environment deployment.
 
 ### Lifecycle Services regional instances and IPs
 
@@ -119,7 +122,7 @@ If you must use the previously mentioned capabilities in your one-box developmen
     <add key="GraphApi.GraphAPIServicePrincipalCert" value="<certificate thumbprint>" />
     ```
 
-5. In the **wif.config** file under **K:\\AosService\\webroot\\**, Add a new entry under `audienceUris` below the existing value for the customer's Entra AppId. Do not remove the spn:00000015-0000-0000-c000-000000000000 entry.
+5. In the **wif.config** file under **K:\\AosService\\webroot\\**, Add a new entry under `audienceUris` below the existing value for the customer's Entra AppId. Don't remove the spn:00000015-0000-0000-c000-000000000000 entry.
     ```
     <securityTokenHandlerConfiguration>
     <audienceUris>
