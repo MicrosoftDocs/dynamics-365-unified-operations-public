@@ -49,7 +49,11 @@ Out of the box, your one-box developer environment has the following basic secur
 
 Lifecycle Services lets you select a custom virtual network at the time of deployment. In this way, you can deploy the one-box environment's VM directly to a preconfigured virtual network. However, when you use a custom virtual network, you must consider several points to ensure that Lifecycle Services capabilities continue to function, so that environment deployment can succeed.
 
-- IP addresses from Lifecycle Services must be allowed to access port 5986 on the VM. This port is required to both deploy and manage the environment from Lifecycle Services.
+- IP addresses from Lifecycle Services must be allowed to access port 5986 on the VM. This port is required to both deploy and manage the environment from Lifecycle Services. Please ensure IP addresses from Lifecycle Services are allowed to access 5986 in Network security group.
+- Configure port 443 in the Network security group to allow inbound HTTPS traffic for public URLs, or restrict access to specific client IP addresses as required by your organization's security policy.
+
+> [!IMPORTANT]
+> Please ensure network security group is attached to subnet that will be selected in Lifecycle Services portal for Custom Virtual network configuration steps before triggering environment deployment.
 
 ### Lifecycle Services regional instances and IPs
 
