@@ -17,29 +17,34 @@ The ‘Archive with Dataverse long term retention’ feature decreases the space
 
 ## Prerequisites
 
-If your system doesn't already include the features described in this article, go to the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace and turn on the following feature:
+Before you can enable purge from history (preview) feature, your system must meet the following requirement:
+
+- You must be running Dynamics 365 10.0.45 or later.
+  
+## Enable the feature
+Go to the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace and turn on the following feature:
 
 - (Preview) Purge From History Archive Feature
 
-The following prerequisites must be met before you execute purge data from history table:
+## Purge data from history table
+
+The following criteria must be met before you execute purge from history feature:
 -  Only an archive job must been completed successfully, then user can select that archival job to have the data associated with it be purged from history table.
 -  Users must select at least one archival job before they can click “Delete history (Preview)”.
 
  > [!NOTE]
  > If an archival job is being restored or is scheduled to be restored, then a user can’t purge the data associated with that archival job.
 
-## Purge data from history table
-
-To create a purge job to deleta data from history table,follow these steps.
+To create a purge job to deleta data from history table, follow these steps.
 
 1. Go to **System administration** \> **Archive with Dataverse long term retention** to open the **Archive with Dataverse long term retention** workspace.
 2. Select an completed Archive Job or multiple completed Archive Jobs of the same functional secnarios.
-3. Select **Delete history（Preview）** to open a warning popup with explicit confirmation message, confirm and submit the purge job.
+3. Select **Delete history（Preview** to open a warning popup with explicit confirmation message, confirm and submit the purge job.
 
 ## Purge job status
-1. When a purge job can’t be executed instantly, its Job status shows 'Deletion queued'.
-1. When a purge job is being executed, its Job Status shows to 'Deletion in progress'.
-1. When a purge job has been completed, its Job Status shows to 'Deleted',value of field 'Exists in history data' equal to 'No' and value of field 'Results' shows the number of records deleted.
+1. When a purge job can’t be executed instantly, its job status shows 'Deletion queued'.
+1. When a purge job is being executed, its job status shows to 'Deletion in progress'.
+1. When a purge job has been completed, its job status shows to 'Deleted',value of field 'Exists in history data' equal to 'No' and value of field 'Results' shows the number of records deleted.
 
 ## Frequent Asked Questions
 
