@@ -7,7 +7,7 @@ ms.reviewer: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/03/2025
+ms.date: 06/11/2025
 
 ---
 
@@ -160,7 +160,7 @@ You must assign each plugin operation to a security role that grants user access
 
 1. Add the menu item to a [security role](../sysadmin/role-based-security.md) as a privileged item.
 
-After you create and deploy the classes and security objects, you can verify the configuration by viewing the custom API on the **Dataverse Custom APIs** page in finance and operations apps (**System administration** \> **Setup** \> **Synchronize Dataverse Custom APIs**). On this page, ensure that your class is included in the grid. If your class is listed on the page with the appropriate security role, this is an indicator that it is configured correctly to be invoked by an AI plugin. The grid includes every class that meets the following criteria:
+After you create and deploy the classes and security objects, you can verify the configuration by viewing the custom API on the **Dataverse Custom APIs** page in finance and operations apps (**System administration** \> **Setup** \> **Synchronize Dataverse Custom APIs**). On this page, ensure that your class is included in the grid. If your class is listed on the page with the appropriate security role, this is an indicator that it's configured correctly to be invoked by an AI plugin. The grid includes every class that meets the following criteria:
 
 - It implements the `ICustomApi` interface.
 - It contains the `[CustomApi]` attribute.
