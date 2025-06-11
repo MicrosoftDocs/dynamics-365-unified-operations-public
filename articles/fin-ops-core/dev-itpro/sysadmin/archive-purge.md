@@ -1,5 +1,5 @@
 ---
-title: Purge data from history (preview)
+title: Purge from history archive (preview)
 description: Learn about how to purge data from the history table in Microsoft Dynamics 365.
 author:  weijiesa
 ms.author: weijiesa
@@ -10,7 +10,7 @@ ms.custom:
 ms.reviewer: johnmichalak
 ---
 
-# Purge data from history (preview)
+# Purge from history archive (preview)
 
 [!INCLUDE[banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -21,13 +21,13 @@ The **Archive with Dataverse long term retention** feature decreases the space u
 
 ## Prerequisites
 
-Before you can enable the **Purge from history** feature, your system be running version 10.0.45 or later.
+Before you can enable the **Purge from history archive** feature, your system be running version 10.0.45 or later.
   
-## Enable the Purge from history feature
+## Enable the Purge from history archive feature
 
 Go to [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace and turn on the following feature:
 
-- Purge From History Archive Feature
+- Purge from history archive feature
 
 ## Purge data from the history table
 
@@ -53,8 +53,8 @@ To create a purge job to delete data from history table, follow these steps.
 
 ## Frequent Asked Questions
 
-### What is the **Purge from history** feature? 
-The **Purge from history** feature enables users to permanently delete historical data from operational history tables after it has been successfully archived. This ensures the operational database remains streamlined and performs efficiently while retaining the archived data securely in Dataverse long-term retention storage for regulatory and compliance purposes. 
+### What is the **Purge from history archive** feature? 
+The **Purge from history archive** feature enables users to permanently delete historical data from operational history tables after it has been successfully archived. This ensures the operational database remains streamlined and performs efficiently while retaining the archived data securely in Dataverse long-term retention storage for regulatory and compliance purposes. 
 
 ### Why was this feature introduced? 
 This feature addresses the need to fully optimize storage and database performance by removing redundant records from history tables. While the existing **Archive with Long-Term Retention** feature moved inactive data to history tables and Dataverse, the lack of a mechanism to delete data from history tables meant organizations couldn't achieve maximum storage savings. The Purge from History feature resolves this by completing the data lifecycle. 
@@ -62,11 +62,11 @@ This feature addresses the need to fully optimize storage and database performan
 ### What happens to the archived data in Dataverse during the purge? 
 The purge process only removes data from the operational history tables in Dynamics 365 Finance. The archived data in Dataverse long-term retention remains unaffected and securely accessible. Users can still retrieve archived records stored in Dataverse for compliance and reporting purposes. 
 
-### Who can use the "Purge from History" feature? 
+### Who can use the Purge from history archive feature? 
 The feature is available to administrators who have access to the Archiving workspace in Dynamics 365.  
 
 ### What are the eligibility criteria for purging data? 
-The **Purge from history** feature is designed to work only with data from completed archive jobs. If an archival job is still in progress or hasn't completed successfully, the **Delete History Data** button remains disabled to prevent accidental data deletion. 
+The **Purge from history archive** feature is designed to work only with data from completed archive jobs. If an archival job is still in progress or hasn't completed successfully, the **Delete History Data** button remains disabled to prevent accidental data deletion. 
 
 ### Can multiple purge jobs be scheduled at the same time? 
 Yes, the feature supports scheduling multiple purge jobs to run simultaneously on different archival scenarios (for example, general ledger and sales orders). This allows users to clean up history tables for several completed archive jobs in a single operation, improving efficiency. 
@@ -79,7 +79,7 @@ The purge process is fully transparent, with detailed logs available in the Arch
 Users can monitor the status of purge jobs in real time through the results column. 
  
 ### What safeguards are in place to prevent accidental data loss? 
-The Purge from History feature includes multiple safeguards: 
+The **Purge from history archive** feature includes multiple safeguards: 
 1. The **Delete history** button is only enabled for completed archive jobs, ensuring no critical data is removed prematurely. 
 1. A confirmation pop-up requires users to acknowledge the irreversible nature of the purge process. 
 1. Archived data in Dataverse long-term retention remains unaffected by the purge from history feature. 
