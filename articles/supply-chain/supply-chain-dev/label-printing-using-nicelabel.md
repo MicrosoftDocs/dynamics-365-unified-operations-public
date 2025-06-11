@@ -182,7 +182,7 @@ Follow these steps to set up an external service instance for printing through t
 
 1. On the **General** tab, set the following fields:
 
-    - **Base URL** – Enter `https://labelcloudapi.onLoftware.com`.
+    - **Base URL** – Enter `https://labelcloudapi.onnicelabel.com`.
     - **Authentication secret** – Enter your primary or secondary subscription key from the Loftware Developer Portal. You should have made a note of this key earlier, when you were [preparing for Loftware integration](#prepare-integration).
     - **Logging level** – Select *Successes and errors*.
     - **Log request bodies** – Select *Successes and errors*.
@@ -291,7 +291,7 @@ Follow these steps to set up an external service instance for printing through t
 
 1. On the **General** tab, set the following fields:
 
-    - **Base URL** – Enter `https://labelcloudapi.onLoftware.com`.
+    - **Base URL** – Enter `https://labelcloudapi.onnicelabel.com`.
     - **Authentication secret** – Enter your primary or secondary subscription key from the Loftware Developer Portal. You should have made a note of this key earlier, when you were [preparing for Loftware integration](#prepare-integration).
     - **Logging level** – Select *Successes and errors*.
     - **Log request bodies** – Select *Successes and errors*.
