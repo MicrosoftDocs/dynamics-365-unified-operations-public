@@ -66,4 +66,4 @@ If you want to calculate revenue as Price * Quantity, follow these steps:
 1. Add **Price** and **Quantity** drivers.
 2. Create a computed column:  Revenue = Price * Quantity.
 
-For more information, see [Create calculated columns]
+For more information, see [Create calculated columns](calculated-columns).
