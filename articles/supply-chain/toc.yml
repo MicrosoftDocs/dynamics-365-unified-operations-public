@@ -4057,7 +4057,7 @@
             href: warehousing/document-routing-layout-for-license-plates.md
           - name: Print labels using an external service
             href: supply-chain-dev/label-printing-using-external-label-service.md
-          - name: Print labels using the Loftware NiceLabel label service solution
+          - name: Print labels using the Loftware label service solution
             href: supply-chain-dev/label-printing-using-nicelabel.md
           - name: Print labels using the Seagull Scientific BarTender label service solution
             href: supply-chain-dev/label-printing-using-bartender.md
