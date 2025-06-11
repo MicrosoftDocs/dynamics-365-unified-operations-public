@@ -4595,6 +4595,8 @@
               items:
                 - name: Creating cubes
                   href: business-performance-planning/create-cubes.md
+                - name: Custom drivers
+                  href: business-performance-planning/bpp-drivers.md
                 - name: Load data using dataflows
                   href: business-performance-planning/load-data-dataflows.md
             - name: Power BI Visuals
