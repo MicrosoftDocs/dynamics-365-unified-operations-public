@@ -1,15 +1,19 @@
 ---
-title: Purge from history (Preview)
+title: Purge data from history (preview)
 description: Learn about how to purge data from history table in Microsoft Dynamics 365.
 author:  weijiesa
-ms.author: 
+ms.author: weijiesa
 ms.topic: how-to
-ms.date: 
-ms.custom:
-ms.reviewer: 
+ms.date: 06/11/2025
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
 ---
 
-# Purge From History (Preview)
+# Purge data from history (preview)
+
+[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article describes how to purge data from history table in Microsoft Dynamics 365.
 
@@ -87,3 +91,5 @@ By permanently removing data from history tables:
 
 ### Will this feature impact compliance or audit requirements? 
 No, the feature does not compromise compliance or audit readiness. All archived data is securely retained in Dataverse long-term retention storage and remains accessible for reporting, auditing, or regulatory purposes, even after being purged from history tables. 
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
