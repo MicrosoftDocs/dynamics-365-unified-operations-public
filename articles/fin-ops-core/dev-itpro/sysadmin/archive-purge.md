@@ -17,7 +17,7 @@ ms.reviewer: johnmichalak
 
 This article describes how to purge data from the history table in Microsoft Dynamics 365.
 
-The **Archive with Dataverse long term retention** feature decreases the space used by customers in their finance and operations database. This decrease is accomplished by reducing the indexing on the relevant data as it gets moved to the history tables for archiving. This minimizes the storage space for cold-to-lukewarm data, but, eventually, this archived data grows so cold that it's no longer needed. Customers can purge their archived data from the history tables to get the full benefit of the **Archive with Dataverse long term retention** feature. 
+The **Archive with Dataverse long term retention** feature decreases the space used by customers in their finance and operations database. This decrease is accomplished by reducing the indexing on the relevant data as it gets moved to the history tables for archiving. This function can minimizes storage space for data stored in Dynamics 365, due to over time, data stored in history tables can become no longer needed. Customers can purge this data from the history tables to fully benefit from the **Archive with Dataverse Long-Term Retention** feature. 
 
 ## Prerequisites
 
