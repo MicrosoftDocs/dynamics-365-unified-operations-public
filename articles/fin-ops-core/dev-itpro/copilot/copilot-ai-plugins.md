@@ -84,7 +84,7 @@ In X++, you must create a class that is called and can run code when Copilot Stu
 
 ### AI plugin
 
-You must decorate the new class with the `AIPluginOperationAttribute` attribute to define it as an AI operation. Classes that are decorated with this attribute are registered in the Plugin Registration Service in Dataverse during synchronization of Dataverse custom APIs. As a result, a record for the plugin operation is created in the `AIPlugin` and `AIPluginOperation` tables in Dataverse.
+You must decorate the new class with the `AIPluginOperationAttribute` attribute to define it as an AI operation. This enables the class to be associated with the related AI plugin and AI plugin operations records that must be created in the `AIPlugin` and `AIPluginOperation` tables in Dataverse for the class.
 
 ### Data contract
 
@@ -92,7 +92,7 @@ You must decorate the method with the `DataContract` attribute to define it as a
 
 ### Custom API
 
-The new class creates the definition for a [Dataverse custom API](/power-apps/developer/data-platform/custom-api). This custom API is created in Dataverse and associated with your class during the synchronization process. When the plugin is invoked in Copilot Studio, the custom API is called, and the logic in your class is invoked.
+The new class creates the definition for a [Dataverse custom API](/power-apps/developer/data-platform/custom-api). This custom API must be created in Dataverse and associated with your class. When the plugin is invoked in Copilot Studio, the custom API is called, and the logic in your class is invoked.
 
 The new class must implement the `ICustomAPI` class, and you must decorate it with the `CustomAPIAttribute` class. In this way, the class gets attributes that indicate that it's a Custom API that can be called from Dataverse.
 
@@ -150,9 +150,7 @@ To define the code that runs when the operation is invoked, use the `run` method
 
 ## Define plugin security
 
-You must assign each plugin operation to a security role that grants user access to perform the operation from Copilot. When finance and operations apps synchronize the `AIPlugin` and `AIPluginOperation` records in Dataverse, the records are grouped based on the security role that the operation is assigned to. The operation is generated in Dataverse only if it's assigned to a security role.
-
-For each class, follow these steps.
+You must assign each plugin operation to a security role that grants user access to perform the operation from Copilot. For each class, follow these steps.
 
 1. In Visual Studio, in your development project, create an action menu item. Give it a name that is similar to the name of your class.
 1. Set the following properties for the new action menu item:
@@ -162,14 +160,14 @@ For each class, follow these steps.
 
 1. Add the menu item to a [security role](../sysadmin/role-based-security.md) as a privileged item.
 
-After you create and deploy the classes and security objects, you can verify the configuration by viewing the custom API on the **Dataverse Custom APIs** page in finance and operations apps (**System administration** \> **Setup** \> **Synchronize Dataverse Custom APIs**). On this page, ensure that your class is included in the grid. The grid includes every class that meets the following criteria:
+After you create and deploy the classes and security objects, you can verify the configuration by viewing the custom API on the **Dataverse Custom APIs** page in finance and operations apps (**System administration** \> **Setup** \> **Synchronize Dataverse Custom APIs**). On this page, ensure that your class is included in the grid. If your class is listed on the page with the appropriate security role, this is an indicator that it is configured correctly to be invoked by an AI plugin. The grid includes every class that meets the following criteria:
 
 - It implements the `ICustomApi` interface.
 - It contains the `[CustomApi]` attribute.
 - It has an associated action menu item that is included in a security privilege that is assigned to a duty/role.
 
 > [!NOTE]
-> The menu item for the class must be assigned to a security role. Otherwise, the custom API, AI plugin, and AI plugin operation records aren't created in Dataverse.
+> In earlier releases the **Dataverse Custom APIs** page had a Synchronize action to automatically create the related Dataverse objects for the custom API, AI plugin, and AI plugin operation. This action was removed in preview to improve solution awareness and management for the Dataverse objects. These objects must now be manually created, as outlined in steps below. 
 >
 > After deploying the new classes to your environment, you need to ensure the extension cache is flushed before the new classes can be invoked. This is done as part of database synchronization, or by running the `SysFlushAOD` class in your environment. You can do this by adding the class runner to your environment URL:
 >
@@ -337,6 +335,6 @@ When you enable generative mode in a copilot, Copilot Studio uses generative AI 
 When generative mode is enabled in a copilot, you don't have to create a separate topic to invoke the action. For more information about generative mode, see [Orchestrate copilot topics and actions with generative AI (preview)](/microsoft-copilot-studio/advanced-generative-actions).
 
 > [!IMPORTANT]
-> Generative mode is currently in preview. You might consider testing this mode for your custom copilots that include AI actions that use finance and operations business logic. Generative mode isn't currently supported in Copilot for finance and operations apps. However, it should become supported and enabled by default in Copilot for finance and operations apps in a future release, as feature and quality benchmarks are validated.
+> Generative mode isn't currently supported in Copilot for finance and operations apps. However, it should become supported and enabled by default in Copilot for finance and operations apps in a future release, as feature and quality benchmarks are validated.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
