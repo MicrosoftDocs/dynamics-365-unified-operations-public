@@ -18,7 +18,7 @@ ms.dyn365.ops.version:
 This article describes how to extend a planning cube with additional drivers—such as Price, Quantity, or Discount—in addition to the default Amount driver, to support more granular or driver-based planning logic.
 
 ## Overview
-Business performance planning enables planners to perform driver-based modelling directly within planning cubes. In addition to the default Amount driver, you can define additional drivers like **quantity**, 
+Business performance planning enables planners to perform driver-based modeling directly within planning cubes. In addition to the default **Amount** driver, you can define additional drivers like **Quantity**, 
 **Price**, **Discount**, or other user-defined inputs at the cube creation stage. These drivers support flexible allocation, and downstream calculations using the calculated column and DAX measures.
 
 ### Prerequisites
@@ -27,7 +27,7 @@ Business performance planning enables planners to perform driver-based modelling
 
 ### Add additional drivers
 To add additional drivers, follow these steps:
-1.	In Business performance planning > **Cubes**.
+1.	In Business performance planning, go to **Cubes**.
 2.	Select **+ New cube**.
 3.	Select relevant dimensions. For example, **Product**, **Region**, or **Channel**.
 4.	In the driver section, add drivers.
@@ -52,13 +52,13 @@ All drivers created in a cube, including the default **Amount** driver and any c
 This enables planners to:
 •	Enter values directly into the driver fields
 •	Update planning scenarios interactively
-•	Triggers allocation when value are entered at an Aggregated level
+•	Trigger allocation when values are entered at an aggregated level
 •	Trigger real-time recalculations through computed columns
 Unlike computed columns, driver fields are fully editable and user-controlled through these write-back surfaces.
 
 ### Limitations
 •	 You can't add or remove drivers after data is uploaded into the cube.
-•	 You can reference any defined driver, within the same cube, in a computed columns after the cube is created.
+•	 You can reference any defined driver, within the same cube, in a computed column after the cube is created.
 
 ### Example 
 
@@ -66,4 +66,4 @@ If you want to calculate revenue as Price * Quantity, follow these steps:
 1. Add **Price** and **Quantity** drivers.
 2. Create a computed column:  Revenue = Price * Quantity.
 
-For additional information, see [Create calculated columns]
+For more information, see [Create calculated columns]
