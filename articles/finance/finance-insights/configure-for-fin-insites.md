@@ -6,8 +6,6 @@ ms.author: shpandey
 ms.topic: article
 ms.date: 06/12/2025
 ms.reviewer: twheeloc
-ms.search.form: 
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
