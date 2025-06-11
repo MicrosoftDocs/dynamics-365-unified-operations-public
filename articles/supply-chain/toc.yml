@@ -3916,7 +3916,7 @@
           - name: Migrate the Warehouse Management mobile app from V3 to V4 (preview)
             href: warehousing/warehouse-app-migrating-from-v3-v4.md
           - name: Use a QR code to connect the mobile app to Supply Chain Management
-            href: /warehousing/warehouse-app-qr-code.md
+            href: warehousing/warehouse-app-qr-code.md
           - name: User-based authentication
             href: warehousing/warehouse-app-authenticate-user-based.md
           - name: User-based authentication FAQ
