@@ -4,12 +4,10 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: kfend
 ms.author: kfend
 ms.topic: overview
-ms.date: 11/02/2023
+ms.date: 06/11/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Costa Rica
 ms.search.validFrom: 2023-10-20
-ms.search.form: 
 ms.dyn365.ops.version: App 10.0.38
 ---
 
