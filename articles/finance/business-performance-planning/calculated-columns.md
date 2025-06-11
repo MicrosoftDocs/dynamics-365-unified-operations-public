@@ -110,7 +110,7 @@ This hybrid architecture proved these benefits:
 
 |Benefit|	DirectQuery (Business performance planning)	|Import (External)|
 |---|---|---| 
-|Real-time planning and write-back|	X	| |
+|Real-time planning and write-back|	X	| No |
 |High performance analytics|	Slower for large sets|	X|
 |Complex DAX modeling|	Limited	|Fully supported|
 |Combining data sources|	Limited	| using composite model|
