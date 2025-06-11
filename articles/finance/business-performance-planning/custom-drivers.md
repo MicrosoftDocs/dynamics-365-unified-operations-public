@@ -67,7 +67,7 @@ Unlike computed columns, driver fields are fully editable and user-controlled th
 ## Limitations
 
 - You can't add or remove drivers after data is uploaded into the cube.
-- After the cube is created, you can reference any defined driver in the same cube in a computed column.
+- After the cube is created, you can't reference any defined driver in the same cube in a computed column.
 
 ## Example
 
