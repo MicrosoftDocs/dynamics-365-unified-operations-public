@@ -25,7 +25,7 @@ The following diagram shows a conceptual model of B2B indirect workflows.
 
 <!--![Diagram showing a conceptual model of B2B indirect workflows](../media/B2B2B-Overview-Conceptual-Model.png)-->
 
-:::image type="content" source="../media/B2B2B-Overview-Conceptual-Model.png" alt-text="Diagram showing the interrelations among a manufacturer business, distributors, a field seller (sales rep), and  and an outlet (business partner) in B2B indirect workflows.":::
+:::image type="content" source="../media/B2B2B-Overview-Conceptual-Model.png" alt-text="Diagram showing the interrelations among a manufacturer business, distributors, a field seller (sales rep), and an outlet (business partner) in B2B indirect workflows.":::
 
 ## Dynamics 365 Commerce support for B2B indirect workflows
 
@@ -37,7 +37,7 @@ B2B indirect workflow capabilities enable you to:
 - Configure and apply complex pricing and discount rules based on criteria such as account type, order quantity, and product category.
 - Create and manage multiple catalogs and assortments for different B2B seller and B2B buyer accounts. You can choose to inherit, override, or extend product information from the primary catalog.
 - Allow B2B buyers to purchase either from an authorized and approved list of B2B sellers or directly from the manufacturer.
-- Allow customer service agents (also known as field sellers) from the manufacturer's organization to order from specific B2B sellers (distributors/wholesalers) on behalf of B2B buyers.
+- Allow customer service representatives (also known as field sellers) from the manufacturer's organization to order from specific B2B sellers (distributors/wholesalers) on behalf of B2B buyers.
 - Use a rich and responsive user interface (UI) for B2B seller and B2B buyer portals. Features include product search, browsing, filtering, sorting, comparison, reviews, ratings, wish lists, cart, checkout, and order history.
 - Integrate with various external systems and services, such as enterprise resource planning (ERP), customer relationship management (CRM), payment, tax, and shipping, through the platform's application programming interfaces (APIs) and connectors.
 
