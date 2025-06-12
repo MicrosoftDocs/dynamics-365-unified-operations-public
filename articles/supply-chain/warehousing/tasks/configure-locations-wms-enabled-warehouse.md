@@ -166,7 +166,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 8. Close the page.
 
 > [!NOTE]
-> Stocking limits can be exceeded under specific conditions, such as replenishment with over location capacity enabled and configured, see [Location stocking limits](../location-stocking-limits.md) and [Replenishment over location capacity](../replenishment-over-location-capacity.md).
+> It's possible to allow stocking limits for specific locations to be exceeded for replenishment work. Learn more in  [Location stocking limits](../location-stocking-limits.md) and [Replenishment over location capacity](../replenishment-over-location-capacity.md).
 
 ## Define fixed picking locations
 

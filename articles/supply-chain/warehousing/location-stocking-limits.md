@@ -39,7 +39,7 @@ In the **Products** section of the page, you can define the following field valu
 For more information about how to set up stocking limits based on container types, see [Manage inbound putaway based on container types](inbound-putaway-by-container-type.md).
 
 > [!NOTE]
-> Stocking limits on specific locations can be exceeded for replenishment work with over location capacity enabled and configured, see [Replenishment over location capacity](./replenishment-over-location-capacity.md).
+> It's possible to allow stocking limits for specific locations to be exceeded for replenishment work. Learn more in [Replenishment over location capacity](replenishment-over-location-capacity.md).
 
 ## Example – Purchase order receiving
 

@@ -31,14 +31,14 @@ This section provides guidelines and an example that shows how to set up this fe
 
 ### Enable sample data
 
-To work through the [example scenario](#example-scenario) by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
+To work through the [example scenario](#example-scenario) by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the *USMF* legal entity before you begin.
 
 ### Location profile
 
 Enable the replenish over capacity functionality on the location profile.
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Locations profiles**.
-1. In the left pane, select **PICK-06**.
+1. In the left pane, select *PICK-06*.
 1. On the Action Pane, select **Edit**.
 1. On the **Replenishment** FastTab, set the following values:
 
@@ -46,7 +46,7 @@ Enable the replenish over capacity functionality on the location profile.
 
         When enabled, the maximum capacity of the location will be allowed to be exceeded by replenishment work. This also enables other fields on the **Replenishment** FastTab.
 
-        Note that this parameter only enables the feature. For it to be fully in effect, **Work availability threshold type** and the associated value and unit need to be set as well.
+        This parameter only enables the feature. For it to have an effect, you must also set the **Work availability threshold type**, **Overflow quantity**, and **Overflow unit**.
 
     - **Work availability threshold type:** *Quantity*
 
@@ -87,10 +87,10 @@ Enable the replenish over capacity functionality on the location profile.
         Location stocking limits are considered when the work quantity percentage is calculated. If no location stocking limits are defined, the work quantity percentage is calculated by volume if volume constraints are defined for the location profile.
 
 > [!IMPORTANT]
-> If you're using the demo data for the **USMF** legal entity and previously turned on the *Location license plate positioning* feature, you must turn off the **Enable license plate positioning** setting for the **BULK-06** location profile to complete the mobile steps in the example scenario.
+> If you're using the demo data for the *USMF* legal entity and previously turned on the *Location license plate positioning* feature, you must turn off the **Enable license plate positioning** setting for the *BULK-06* location profile to complete the mobile steps in the example scenario.
 
 > [!NOTE]
-> Replenishment settings under Location Profile only affect replenishment work, standard work orders are still subject to configured stocking limits.
+> Location profile replenishment settings only affect replenishment work. Other types of work are still subject to configured stocking limits.
 
 ### Wave step code
 
@@ -124,11 +124,11 @@ Replenishment templates are a set of rules that control when and how a location 
 
 1. Go to **Warehouse management \> Setup \> Waves \> Wave templates**.
 1. In the left pane, set the **Wave template type** field to *Shipping*.
-1. Select template **61 Shipping** in the list.
+1. Select template *61 Shipping* in the list.
 1. On the Action Pane, select **Edit**.
 1. On the **General** FastTab, set the **Automate replenishment work release** option to *Yes*.
 
-    Set this option to *Yes* to create demand-based replenishment work and release it automatically. You must add the replenishment wave method to the wave template and create a replenishment template of the **Wave demand** type. Set up a replenishment template on the **Replenishment templates** page. To set up a replenishment template, you must add the replenish method to the wave template.
+    Set this option to *Yes* to create demand-based replenishment work and release it automatically. You must add the replenishment wave method to the wave template and create a replenishment template of the *Wave demand* type. Set up a replenishment template on the **Replenishment templates** page. To set up a replenishment template, you must add the replenish method to the wave template.
 
 1. On the **Methods** FastTab, in the **Selected methods** column, find the following line:
 
@@ -140,7 +140,7 @@ Replenishment templates are a set of rules that control when and how a location 
 
 ## Example scenario
 
-After you've made all the previously described sample data available and set it up, you can work through this scenario to try out the *Replenishment over location capacity* feature. The values that are shown in this scenario assume that you're working with the standard demo data, that you selected the **USMF** legal entity, and that you prepared the sample records that are described earlier in this article. This scenario also serves as an example that shows how the feature can be used in a production setting.
+After you've made all the previously described sample data available and set it up, you can work through this scenario to try out the *Replenishment over location capacity* feature. The values that are shown in this scenario assume that you're working with the standard demo data, that you selected the *USMF* legal entity, and that you prepared the sample records that are described earlier in this article. This scenario also serves as an example that shows how the feature can be used in a production setting.
 
 ### Create replenishment work
 
@@ -271,7 +271,7 @@ You will perform the warehouse location replenishment for the first two work IDs
 
 1. Select **OK** to confirm the value.
 
-    Put work is shown that instructs the user to put the target license plate into the replenishment location. The *Put* location should be **06A01R2S1B**.
+    Put work is shown that instructs the user to put the target license plate into the replenishment location. The **Put** location should be *06A01R2S1B*.
 
 1. Confirm the put details, and select **OK**.
 
@@ -279,7 +279,7 @@ You will perform the warehouse location replenishment for the first two work IDs
 
 1. Repeat the preceding steps to complete the replenishment work for the second work task. The quantity and target license plate will differ from the quantity and target license plate for the first work task.
 
-After the second replenishment work is completed, you receive a "Work Completed" message. The mobile device also informs you that there is no work available, even though some replenishment work remains. This behavior occurs because the replenishment work has an availability status of *Held* and is therefore marked as **Blocked**.
+After the second replenishment work is completed, you receive a "Work Completed" message. The mobile device also informs you that there is no work available, even though some replenishment work remains. This behavior occurs because the replenishment work has an availability status of *Held* and is therefore marked as *Blocked*.
 
 The *Held* status was triggered because the location profile for the picking location that the work is being assigned to has an **Overflow quantity** value of *0.65 PL*. The two previous replenishment work tasks filled the location almost to its overflow limit for item *T0100*. (The unit conversion for the item is *1 PL = 100 ea*.) Therefore, the remaining replenishment work would cause the location to exceed its overflow limit.
 
@@ -368,7 +368,7 @@ You can now process this replenishment work via the mobile device.
 
 1. Select **OK** to confirm the value.
 
-    Put work is shown that instructs the user to put the target license plate into the replenishment location. The *Put* location should be **06A01R2S1B**.
+    Put work is shown that instructs the user to put the target license plate into the replenishment location. The **Put** location should be *06A01R2S1B*.
 
 1. Confirm the put details, and select **OK**.
 
@@ -400,6 +400,5 @@ You can now pick sales order 2. It became unblocked when the replenishment work 
 - You can manually override the replenishment work availability for each work header from the **Work details** page if you want.
 - When the system sets the replenishment work availability, it considers any inventory that is already in the location before any work is completed.
 - Each piece of sales order work is linked to a specific replenishment work. There is no corresponding sales work availability functionality.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
