@@ -1,10 +1,10 @@
 ---
 title: Make payments to self-employed persons - RF-1321 for Norway
-description: Learn how to set up and generate the Payments to self-employed persons RF-1321 report for legal entities that have their primary address in Norway.
+description: Learn how to set up and generate payments to self-employed persons using the RF-1321 report for legal entities in Norway with Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 06/02/2025
+ms.date: 06/12/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -15,9 +15,9 @@ ms.search.region: Norway
 
 [!include [banner](../../includes/banner.md)]
 
-In Norway, all business employers who made payments to self-employed persons who did not have a fixed place of business during the income year must submit information about those payments in form RF-1321.
+This article explains how to set up and generate payments to self-employed persons using the RF-1321 report for legal entities in Norway with Microsoft Dynamics 365 Finance.
 
-This article includes country/region-specific information about how to set up the **Payments to self-employed persons RF-1321** report for legal entities that have their primary address in Norway.
+In Norway, all business employers who made payments to self-employed persons who did not have a fixed place of business during the income year must submit information about those payments in form RF-1321.
 
 ## Set up the Payments to self-employed persons RF-1321 report for Norway
 
@@ -83,11 +83,13 @@ To import ER configurations into Finance, follow these steps.
 
 Learn more in [Data management overview](../../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
-### <a id="number-sequences"></a>Set up number sequences for the Electronic messages functionality
+### <a id="number-sequences"></a>Set up number sequences for the electronic messages functionality
 
 To work with the Electronic messages functionality, you must define the related number sequences.
 
-1. Go to **Tax** \> **Setup** \> **General ledger parameters**.
+To set up number sequences, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **General ledger parameters**.
 1. On the **Number sequences** tab, set up number sequences for **Message**.
 
 ### <a id="document-management-parameters"></a>Set up document management parameters
@@ -105,7 +107,7 @@ Different groups of users might require access to different electronic message p
 
 To define which security roles have access to the **RF-1321** processing, follow these steps.
 
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
 1. Select the **RF-1321** processing, and add the security groups that must work with this processing.
 
 If security roles aren't defined for electronic message processing, only a system admin can view the electronic message processing by going to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
@@ -119,7 +121,7 @@ Two ER formats are supported for the **RF-1321** processing:
 
 To specify which ER format is used in the **RF-1321** processing, follow these steps.
 
-1. Go to **Tax** \> **Setup** \> **Electronic messages** >\ **Message processing actions**.
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** >\ **Message processing actions**.
 1. In the list of message processing actions, select **Generate file**.
 1. In the **Format mapping** field, select **RF-1321 Payments to self-employed persons (NO)** or **RF-1321 Payments to self-employed persons (NO) - Per Vendor**.
 
@@ -127,7 +129,7 @@ To specify which ER format is used in the **RF-1321** processing, follow these s
 
 The **RF-1321** processing uses the **EMRF1321PayToSelfEmployedVendorController_NO** executable class to initiate data collection for the report data provider and further report generation. Before you use this class for the first time, you must save its parameters.
 
-1. Go to **Tax** \> **Setup** \> **Electronic messaging** \> **Executable class settings**.
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messaging** \> **Executable class settings**.
 1. Select the **Generating RF-1321** executable class, and then, on the Action Pane, select **Parameters**. (The **Generating RF-1321** executable class is set to call **EMRF1321PayToSelfEmployedVendorController_NO**.)
 1. In the **RF-1321 Payments to self-employed vendors without fixed place of business** dialog, select a posting profile as required, and then select **OK**.
 
@@ -135,7 +137,7 @@ The **RF-1321** processing uses the **EMRF1321PayToSelfEmployedVendorController_
 
 To set up the organization number that is reported in the `<organisasjonsnummer>` field, follow these steps.
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. On the **Bank account information** FastTab, in the **Routing number** field, specify the organization number that is reported in the `<organisasjonsnummer>` field.
 
 ## Payments to self-employed persons RF-1321 reporting
@@ -144,7 +146,7 @@ In Finance, you can use the Electronic messages functionality to generate the **
 
 ### Create an electronic message for RF-1321 reporting
 
-1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
 1. Select **RF-1321**, and then, on the **Messages** FastTab, select **New**.
 1. In the **Run processing** dialog, select **OK**.
 1. A new electronic message is created. Enter a description, and specify the start and end dates of the period that you want to generate the report for.
