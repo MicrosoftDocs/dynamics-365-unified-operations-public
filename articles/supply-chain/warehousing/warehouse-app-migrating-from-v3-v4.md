@@ -93,7 +93,7 @@ When you migrate from V3 to V4, the following compatibility features are availab
 
 ### Authentication
 
-- **One-time reauthentication** – Admins must complete a single authentication process for each device that they migrate to V4. After a device is successfully migrated, it remains authenticated. No reauthentication is required.
+- **One-time reauthentication** – Admins must complete a single authentication process for each device that they migrate to V4. After a device is successfully migrated, it remains authenticated. No further reauthentication is required.
 - **Windows platform configuration** – For Windows applications, you must follow these steps to add a new redirect URI to your Azure application registration.
 
     1. Open the [Azure portal](https://portal.azure.com).
@@ -122,7 +122,7 @@ V4, like V3, doesn't support certificate authentication. Users must use the devi
 
 - **Concurrent operation** – During the transition period, V3 and V4 can operate simultaneously in the same warehouse environment without conflicts. We recommend that you roll out the new version gradually rather than installing it on all devices at once.
 
-- **Sign in** - Early adopters won't have problems with newest versions of reauthentication.
+- **Authentication benefits for early adopters** – Each device that you update from V3 to V4 must be reauthenticated after the initial update. However, you won't need to reauthenticate the device again when updating to future versions of V4.
 
 ### V4 general availability for Android and Windows
 
