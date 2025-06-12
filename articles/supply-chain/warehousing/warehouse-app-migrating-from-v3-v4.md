@@ -80,7 +80,7 @@ V4 supports comprehensive diagnostic capabilities for improved troubleshooting a
 
 ### System requirements
 
-The system requirements for V4 are the same as the [system requirements for V3](install-configure-warehouse-management-app.md), except on Android devices. V4 requires Android 7 or later, whereas V3 supports Android 5 and later. Devices that run older Android versions can continue to use V3 until the May 2026 end-of-support date.
+The system requirements for V4 are the same as the [system requirements for V3](install-configure-warehouse-management-app.md), except on Android devices. V4 requires Android 7 or later, whereas V3 supports Android 5 and later. Devices that run older Android versions can continue to use V3 until the May 2026 end-of-support date. The V4 is compatible with newest android versions where with V3 we started to see some problems already.
 
 ### Compatibility between V3 and V4
 
@@ -111,20 +111,30 @@ V4, like V3, doesn't support certificate authentication. Users must use the devi
 
 ### <a name="rollout"></a>Rollout schedule and transition period support
 
-- **Concurrent operation** – During the transition period, V3 and V4 can operate simultaneously in the same warehouse environment without conflicts.
-- **V4 release timeline**
+#### V4 Public preview (beta version)
+Date: End of June 2025
+- **Distribution channels**- 
+    - **Windows** – [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
+    - **Android** – Google Beta Testers and [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
 
-    - **Public preview** – Beginning of June 2025
-    - **General Availability** – Planned for August 2025 (subject to public preview results)
+Notes:  
+- **Concurrent operation** – During the transition period, V3 and V4 can operate simultaneously in the same warehouse environment without conflicts. We don't recommend to replace all the warehouse at once with this version.
+- **Login** - Earlier adopters won't have problems with newest versions of re-authentication.
 
-- **Distribution channels**
+#### V4 General Availability
+Date: End of August 2025 (placeholder date)
+- **Distribution channels**- 
+    - **Windows** – Microsoft store and [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
+    - **Android** – Google Play and [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
+Notes:  
+- **Concurrent operation** – You can still use both apps, but we recommend getting to the newest version.
 
-    - **Windows** – App store
-    - **iOS** – App store
-    - **Android** – App store and open test programs
+### V4 General Availability for IOS
+Date: End of November 2025 (placeholder date)
+ **Distribution channels**
+    - **Apple** – Apple store
 
-- **V3 support timeline**
-
+#### V3 support timeline 
     - **End of support** – May 2026.
     - **Feature development** – No new features are developed for V3.
     - **Maintenance** – Critical bug fixes and security updates continue until the end of support.
