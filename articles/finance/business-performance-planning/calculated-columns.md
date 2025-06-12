@@ -1,6 +1,6 @@
 ---
 title: Calculated columns in Dynamics 365 Finance business performance planning
-description: This article describes how to create calculated columns using formulas in Dynamics 365 Finance business performance planning.
+description: Learn how to create calculated columns by using formulas in Microsoft Dynamics 365 Finance business performance planning.
 author: ShielaSogge
 ms.author: romainpham
 ms.topic: how-to
@@ -15,115 +15,132 @@ ms.dyn365.ops.version:
 
 # Calculated columns in Dynamics 365 Finance business performance planning
 
-This article describes how to create computed columns inside a cube using expressions powered by Dataverse formula columns, enabling dynamic and context-aware calculations.
+Business performance planning in Microsoft Dynamics 365 Finance supports calculated columns that are known as *computed columns*. You can use them to define formula-based logic directly in your planning cube. These columns use the Dataverse formula column engine to drive financial modeling, workforce planning, revenue calculations, and more.
 
-## Overview
-Business performance planning in Dynamics 365 Finance supports calculated columns, known as computed columns, that allows you to define formula-based logic directly within your planning cube. These columns use the Dataverse formula column engine to drive financial modeling, workforce planning, revenue calculations, and more. 
+This article explains how to create computed columns inside a cube by using expressions that are powered by Dataverse formula columns. In this way, you enable dynamic and context-aware calculations. The article also highlights typical financial planning and analysis use cases. In addition, it provides best practices for using computed columns to optimize performance for the direct query data model in Power BI and Excel.
 
-This article describes how to create computed columns and showcases typical financial planning and analysis use cases, plus best practices on how to use computed column to optimize performance for direct query data model in Power BI and Excel.
+## Prerequisites
 
-### Prerequisites
- - Access to Business performance planning in Dynamics 365 Finance.
- - An existing cube with dimensions and drivers defined.
- - Security role with permissions to edit cubes and add computed columns.
- - Understanding of the Dataverse formula column syntax. For more information, see [Formula columns](/power-apps/maker/data-platform/formula-columns).
+- Access to business performance planning in Dynamics 365 Finance.
+- An existing cube where dimensions and drivers are defined.
+- A security role that has permissions to edit cubes and add computed columns.
+- An understanding of the syntax for Dataverse formula columns. Learn more in [Work with formula columns](/power-apps/maker/data-platform/formula-columns).
 
-### Create a calculated column
+## Create a calculated column
 
-To create a calculated column, follow these steps:
-1.	In Business performance planning, select **Cubes**.
-2.	Open the cube to add the computed column.
-3.	In **Computed columns**, select **+ Add**.
-4.	In the **Name** field, enter a name.
-5.	In the **Description** field, enter a short explanation of the formula.
-6.	In the **Formula** field, enter the Dataverse formula syntax.
-7.	Click **Submit** to save your column.
+To create a calculated column, follow these steps.
 
-#### Formula syntax guidelines
+1. In business performance planning, select **Cubes**.
+1. Open the cube that you want to add a computed column to.
+1. In **Computed columns**, select **Add**.
+1. In the **Name** field, enter a name.
+1. In the **Description** field, enter a short explanation of the formula.
+1. In the **Formula** field, enter the Dataverse formula syntax.
+1. Select **Submit** to save the column.
 
-You can reference:
- - Other computed columns in the same cube
- - Columns from dimensions used to build the cube
+### Formula syntax guidelines
 
-You can't reference:
- - Rows other than the current one (no lookup/aggregation across rows)
- - Reference dimensions that aren't included in the cube
-o	Be edited or overwritten by users using Excel or Power BI write-back visuals.
+You can reference the following elements:
 
-### Example formulas
+- Other computed columns in the same cube
+- Columns from dimensions that were used to build the cube
 
-Example: Revenue planning: Price × Quantity
-Price * Quantity
-Use: Revenue forecast modelling by SKU, region, or channel.
+You can't reference the following elements:
 
-Example: Gross Margin and Margin %
-GrossMargin = Revenue - COGS
-MarginPercent = (Revenue - COGS) / Revenue Example 3: Total Compensation
-Use: Profitability modelling by product line.
+- Rows other than the current row (In other words, lookup/aggregation across rows can't be done.)
+- Reference dimensions that aren't included in the cube
 
-Example: Operating expense allocation (Headcount-Based)
-(DepartmentHeadcount / TotalHeadcount) * ITCost
-Note: Total headcount must be stored or precalculated in your dataset.
-Use: Shared cost allocation.
+o Be edited or overwritten by users using Excel or Power BI write-back visuals.
 
-Example: CapEx depreciation (Straight-Line)
-CapExAmount / UsefulLifeYears
-Use: Fixed asset and depreciation forecasting.
+## Example formulas
 
-Example: Workforce planning: Fully Loaded full-time employee (FTE) cost
-In Human resources planning scenarios, calculated columns allow modeling fully loaded FTE cost based on:
-•	Base salary
-•	Bonus 
-•	Benefits
-•	Tax
-FTETotalCost = BaseSalary + Bonus + Benefits + Taxes
+### Revenue planning: Price &times; Quantity
 
-### Power BI integration and performance considerations
+Use this formula for revenue forecast modeling by stock-keeping unit (SKU), region, or channel.
 
-Using DirectQuery mode with Dataverse to enable write-back and bring real time access to planning data in Power BI and Excel comes with some performance limitations when calculations are handled entirely
-using DAX. 
+*Price* \* *Quantity*
 
-Use computed columns instead of DAX when:
- - The same Key performance indicators (KPI) is repeatedly calculated (for example, margin, bonus, adjusted cost)
- - You want to centralize business rules and avoid duplication
- - You want consistent logic across multiple reports
+### Gross Margin and Margin %
 
+*GrossMargin* = *Revenue* - *COGS*
+
+*MarginPercent* = (*Revenue* - *COGS*) / *Revenue*
+
+### Total Compensation
+
+Use this formula for profitability modeling by product line.
+
+### Operating expense allocation (Headcount-Based)
+
+Use this formula for shared cost allocation.
+
+(*DepartmentHeadcount* / *TotalHeadcount*) \* *ITCost*
+
+> [!NOTE]
+> Total headcount must be stored or precalculated in your dataset.
+
+### CapEx depreciation (Straight-Line)
+
+Use this formula for fixed asset and depreciation forecasting.
+
+*CapExAmount* / *UsefulLifeYears*
+
+### Workforce planning: Fully Loaded full-time employee (FTE) cost
+
+In Human Resources planning scenarios, you can use calculated columns to model fully loaded full-time employee (FTE) cost based on the following information:
+
+- Base salary
+- Bonus
+- Benefits
+- Tax
+
+*FTETotalCost* = *BaseSalary* + *Bonus* + *Benefits* + *Taxes*
+
+## Power BI integration and performance considerations
+
+If you use DirectQuery mode with Dataverse to enable write-back and bring real-time access to planning data in Power BI and Excel, there are some performance limitations when calculations are handled entirely through Data Analysis Expressions (DAX).
+
+Use computed columns instead of DAX in the following situations:
+
+- The same key performance indicator (KPI) is repeatedly calculated (for example, margin, bonus, or adjusted cost).
+- You want to centralize business rules and avoid duplication.
+- You want consistent logic across multiple reports.
 
 ### Example
 
-Instead of defining margin in DAX, create a computed column.
-Revenue - COGS
-Power BI only fetches a precomputed column — improving performance, reducing DAX load, and ensuring reusability.
+Instead of defining margin in DAX, create a computed column. Here is an example:
 
-#### Best practices
- - Computed columns for all common KPIs
- - Format results (for example, % or currency) in Power BI visuals
- - Use dimension security and OAuth2 in Power BI for row-level filtering
+*Revenue* \* *COGS*
 
-#### Use Composite models to blend planning and analytics
+In this case, Power BI fetches only a precomputed column. Therefore, this approach improves performance, reduces the DAX load, and ensures reusability.
 
-A composite model combines:
- - DirectQuery connections to the Business performance planning cube (for planning and write-back)
- - Imported data (for example, previous years actuals, external KPIs, warehouse data)
+### Best practices
 
-This hybrid architecture proved these benefits: 
+- Use computed columns for all common KPIs.
+- Format the results (for example, a percentage or currency) in Power BI visuals.
+- Use dimension security and OAuth 2.0 in Power BI for row-level filtering.
 
-|Benefit|	DirectQuery (Business performance planning)	|Import (External)|
-|---|---|---| 
-|Real-time planning and write-back|	X	| No |
-|High performance analytics|	Slower for large sets|	X|
-|Complex DAX modeling|	Limited	|Fully supported|
-|Combining data sources|	Limited	| using composite model|
+### Use composite models to blend planning and analytics
 
-Common scenarios for composite models:
- - Optimize performance for reporting requiring many years of actuals
- - Compare budget (Business performance planning) with actuals (Data warehouse)
- - Add benchmarks or ratios not available in Dataverse
+A *composite model* combines the following elements:
 
->[!Note]
+- DirectQuery connections to the business performance planning cube (for planning and write-back)
+- Imported data (for example, previous year actuals, external KPIs, or warehouse data)
+
+This hybrid architecture provides the following benefits.
+
+| Benefit | DirectQuery (business performance planning) | Import (external)|
+|---|---|---|
+| Real-time planning and write-back | X | No |
+| High-performance analytics | Slower for large sets | X |
+| Complex DAX modeling | Limited | Fully supported |
+| Combination of data sources|  Limited | Through the composite model |
+
+Here are some common scenarios for composite models:
+
+- Optimize performance for reporting that requires many years of actuals.
+- Compare budget (in business performance planning) with actuals (in the data warehouse).
+- Add benchmarks or ratios that aren't available in Dataverse.
+
+> [!NOTE]
 > The planning cube must remain in DirectQuery mode to support write-back. Imported tables can enhance reporting logic without breaking this behavior.
-
-
-
-
-
