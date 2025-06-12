@@ -129,7 +129,7 @@ Date: End of August 2025 (placeholder date)
 Notes:  
 - **Concurrent operation** – You can still use both apps, but we recommend getting to the newest version.
 
-### V4 General Availability for IOS
+#### V4 General Availability for IOS
 Date: End of November 2025 (placeholder date)
  **Distribution channels**
     - **Apple** – Apple store
