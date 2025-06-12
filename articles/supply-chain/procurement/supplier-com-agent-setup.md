@@ -46,7 +46,7 @@ Before you can use the Supplier Communications Agent, your system must meet the 
     - First, install (or update to) *Copilot for finance and operations apps* version 1.0.3048.2 or later.
     - Then, install (or update to) *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.3046.2 or later.
 
-- In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you are running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
+- In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
     - First, install (or update to) *Copilot for finance and operations apps* version 1.0.3048.2 or later.
     - Then, install (or update to) *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.3046.2 or later.
 
@@ -144,7 +144,7 @@ Additionally, they be assigned the roles described in the following subsections.
 
 ## Synchronize mailboxes with Dataverse
 
-To enable the email analysis and delivery features of the Supplier Communications Agent, you must set up targeted mailboxes so that they are synchronized with Dataverse at the server level.
+To enable the email analysis and delivery features of the Supplier Communications Agent, you must set up targeted mailboxes so that they're synchronized with Dataverse at the server level.
 
 ### Private mailbox
 
@@ -219,12 +219,12 @@ Learn how to fix common issues that are related to server-side synchronization i
 
 ## Refresh data (optional)
 
-After you enable the Supplier Communications Agent in a sandbox environment, we recommend that you do a data refresh. In this way, when you do testing in the sandbox environment, you can use the same data that you will have in the production environment. Learn how to do a database refresh in [Refresh database](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
+After you enable the Supplier Communications Agent in a sandbox environment, we recommend that you do a data refresh. In this way, when you do testing in the sandbox environment, you can use the same data that you have in the production environment. Learn how to do a database refresh in [Refresh database](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
 
 ## <a name="own-email"></a>Set your email address as a vendor contact for testing
 
-When you use the [review and apply purchase order changes received in vendor emails](supplier-com-agent-apply-email-changes.md) feature, the agent only reads emails from vendor domains. This means that when you are testing the system (and want to send/forward vendor emails from your own email account), you must add your email address as a vendor contact. To do so, follow these steps.
+When you use the [review and apply purchase order changes received in vendor emails](supplier-com-agent-apply-email-changes.md) feature, the agent only reads emails from vendor domains. This means that when you're testing the system (and want to send/forward vendor emails from your own email account), you must add your email address as a vendor contact. To do so, follow these steps.
 
 1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
 1. Create or select a vendor.
-1. On the **Contact information** FastTab, add a row with your own email address (the one you will send/forward test messages from).
+1. On the **Contact information** FastTab, add a row with your own email address (the one you'll send/forward test messages from).
