@@ -29,6 +29,9 @@ For more information, see [Cash application in advanced bank reconciliation](app
 > - Customer and vendor journal posting directly from the bank reconciliation worksheet. For more information, see [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md).
 > - Generation of general ledger vouchers directly from the bank reconciliation worksheet. For more information, see [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md).
 
+> [!NOTE]
+> To avoid issues with reconciliation reversal, it is recommended to reconcile all the existing bank statements thas has new lines before enabling **Modern bank reconciliation** feature.
+
 ## Import an electronic bank statement by using Electronic reporting
 
 You import your bank statements by using the **Import statement** action on the **Bank statements** page. On the bank statement, the bank account is identified through a combination of values that are set on the bank account details. These values include the bank name, bank account number, routing number, Society for Worldwide Interbank Financial Telecommunication (SWIFT) code, and International Bank Account Number (IBAN). 
