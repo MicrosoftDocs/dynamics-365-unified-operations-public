@@ -1,6 +1,6 @@
 ---
 title: NO-00003 Customer and vendor payment formats
-description: Learn how to set up and maintain Norwegian payment IDs in Microsoft Dynamics 365 Finance.
+description: Learn how to set up and maintain customer and vendor payment formats for Norway in Microsoft Dynamics 365 Finance.
 author: kailiang
 ms.author: kailiang
 ms.topic: how-to
