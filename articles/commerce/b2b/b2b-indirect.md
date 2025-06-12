@@ -2,7 +2,7 @@
 title: B2B indirect workflows
 description: Learn about the key features and benefits of native business-to-business (B2B) indirect workflows in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 06/10/2025
+ms.date: 06/13/2025
 ms.topic: overview
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -17,15 +17,9 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides an overview of the key features and benefits of native business-to-business (B2B) indirect workflows in Microsoft Dynamics 365 Commerce.
+This article provides an overview of the key features and benefits of native business-to-business (B2B) indirect workflows in Microsoft Dynamics 365 Commerce. B2B indirect is also known as business-to-business-to-business (B2B2B). 
 
 The Dynamics 365 Commerce B2B indirect feature can help your business grow by powering dynamic, multitiered supply chains that enable products to flow seamlessly from manufacturers through trusted distributors to business customers. This strategy amplifies market reach, maximizes distribution channels, and accelerates sales by connecting consumer packaged goods (CPG) brands with retailers and other businesses via a robust network of intermediaries. The B2B indirect feature can help improve your B2B distribution process, because each business intermediary becomes a catalyst for growth by ensuring that your products reach the right customers.
-
-The following diagram shows a conceptual model of B2B indirect workflows.
-
-<!--![Diagram showing a conceptual model of B2B indirect workflows](../media/B2B2B-Overview-Conceptual-Model.png)-->
-
-:::image type="content" source="../media/B2B2B-Overview-Conceptual-Model.png" alt-text="Diagram showing the interrelations among a manufacturer business, distributors, a field seller (sales rep), and an outlet (business partner) in B2B indirect workflows.":::
 
 ## Dynamics 365 Commerce support for B2B indirect workflows
 
@@ -52,11 +46,6 @@ The benefits of choosing Dynamics 365 Commerce for B2B indirect workflows includ
 - B2B indirect workflows are scalable, secure, and reliable because they are built on the Microsoft Azure cloud platform. This platform offers high availability, performance, and compliance.
 - B2B indirect workflows are flexible and customizable. Merchants can configure many parts of the platform, such as business rules, workflows, and the UI, to fit their specific needs.
 
-The following diagram shows the evolution of Dynamics 365 Commerce support for native B2B indirect workflows.
-
-<!--![Diagram showing the evolution of Dynamics 365 Commerce support for native B2B indirect workflows](../media/EvolutionB2BtoB2B2B.png)-->
-:::image type="content" source="../media/EvolutionB2BtoB2B2B.png" alt-text="Diagram showing how support for native B2B indirect workflows in Dynamics 365 Commerce evolved, listing relevant Common Core, B2C, B2B, and B2B2B capabilities.":::
-
 ## B2B seller prospect sign-up and approval process
 
 The following steps provide an overview of the process for becoming a B2B seller on the platform:
@@ -75,11 +64,6 @@ After a B2B seller is approved, the system completes the following setup in head
 
 Through these steps, the B2B seller can become a part of the platform and start to sell to their retail outlets.
 
-The following diagram shows the B2B seller (B2B distributor) approval process.
-
-<!--![Diagram showing the B2B seller (distributor) approval process](../media/B2BSeller-Approval-Process.png)-->
-:::image type="content" source="../media/B2BSeller-Approval-Process.png" alt-text="Diagram of the previously described B2B seller (distributor) approval process, showing the different systems that different roles use: Commerce headquarters, external systems, the distributor portal, Site builder, and the eCommerce B2B2B self-serve portal.":::
-
 ## B2B indirect feature capabilities
 
 As part of the B2B indirect feature, you can take advantage of the following capabilities:
@@ -96,5 +80,3 @@ As part of the B2B indirect feature, you can take advantage of the following cap
 - Filter order history through various options, including the channel (B2B seller or manufacturer) that the order originated from.
 - Allow a manufacturer's customer service representatives to use on behalf of (OBO) functionality to place orders directly with the manufacturer or a B2B seller on behalf of their B2B partners.
 - Use available headless APIs to allow representatives from the B2B seller (distributor) organization to manage their on-hand inventory and accept or reject orders.
-
-![Glimpses into the user experience of native B2B indirect workflows, showing a snapshot of processes such as launching the site, signing in, selecting a distributor, browsing distributor-specific catalogs and catalog-specific product pages, adding products from a catalog to the cart, switching distributors, and confirming distributors.](../media/B2B-Indirect-Experience-Glimpse.png)
