@@ -4,7 +4,7 @@ description: Learn how to migrate from Warehouse Management mobile application f
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 06/04/2025
+ms.date: 06/12/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -37,7 +37,7 @@ V4 provides improved camera scanning capabilities. Here are some examples:
 - **Faster scanning** – Scan speed and accuracy are dramatically improved.
 - **Expanded bar code support** – The app now supports a wider range of bar code formats. Learn more in [Scan bar codes using a camera in the Warehouse Management mobile app](scan-bar-codes-using-a-camera.md).
 - **Multiple bar code support** – Scan multiple bar codes in a single operation.
-- **Hardware independence** – There is less dependency on physical bar code scanners in environments where camera scanning is viable.
+- **Hardware independence** – There's less dependency on physical bar code scanners in environments where camera scanning is viable.
 
 ### Customizable themes
 
@@ -82,6 +82,8 @@ V4 supports comprehensive diagnostic capabilities for improved troubleshooting a
 
 The system requirements for V4 are the same as the [system requirements for V3](install-configure-warehouse-management-app.md), except on Android devices. V4 requires Android 7 or later, whereas V3 supports Android 5 and later. Devices that run older Android versions can continue to use V3 until the May 2026 end-of-support date.
 
+If you're running a newer version of Android, then we recommend using V4 because it provides better compatibility than V3 on newer systems.
+
 ### Compatibility between V3 and V4
 
 When you migrate from V3 to V4, the following compatibility features are available:
@@ -91,7 +93,7 @@ When you migrate from V3 to V4, the following compatibility features are availab
 
 ### Authentication
 
-- **One-time reauthentication** – Admins must complete a single authentication process for each device that they migrate to V4. After a device is successfully migrated, it remains authenticated. No reauthentication is required.
+- **One-time reauthentication** – Admins must complete a single authentication process for each device that they migrate to V4. After a device is successfully migrated, it remains authenticated. No further reauthentication is required.
 - **Windows platform configuration** – For Windows applications, you must follow these steps to add a new redirect URI to your Azure application registration.
 
     1. Open the [Azure portal](https://portal.azure.com).
@@ -109,22 +111,36 @@ Device code authentication isn't available on iOS platforms. Username and passwo
 
 V4, like V3, doesn't support certificate authentication. Users must use the device code or username/password authentication method.
 
-### <a name="rollout"></a>Rollout schedule and transition period support
+## <a name="rollout"></a>Rollout schedule and transition period support
 
-- **Concurrent operation** – During the transition period, V3 and V4 can operate simultaneously in the same warehouse environment without conflicts.
-- **V4 release timeline**
+### V4 public preview
 
-    - **Public preview** – Beginning of June 2025
-    - **General Availability** – Planned for August 2025 (subject to public preview results)
+- **Date of availability** – End of June 2025
+- **Distribution channels**
+    – **Windows** – [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
+    - **Android** – Google Beta Testers and [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
+
+- **Concurrent operation** – During the transition period, V3 and V4 can operate simultaneously in the same warehouse environment without conflicts. We recommend that you roll out the new version gradually rather than installing it on all devices at once.
+
+- **Authentication benefits for early adopters** – Each device that you update from V3 to V4 must be reauthenticated after the initial update. However, you won't need to reauthenticate the device again when updating to future versions of V4.
+
+### V4 general availability for Android and Windows
+
+- **Date of availability** – End of August 2025 (estimated)
 
 - **Distribution channels**
+    - **Windows** – Microsoft Store and [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
+    - **Android** – Google Play and [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
 
-    - **Windows** – App store
-    - **iOS** – App store
-    - **Android** – App store and open test programs
+- **Concurrent operation** – V3 and V4 can operate simultaneously in the same warehouse environment without conflicts, but we recommend moving to V4 when it becomes generally available.
 
-- **V3 support timeline**
+### V4 general availability for iOS
 
-    - **End of support** – May 2026.
-    - **Feature development** – No new features are developed for V3.
-    - **Maintenance** – Critical bug fixes and security updates continue until the end of support.
+- **Date of availability**: End of November 2025 (estimated)
+ **Distribution channel** – Apple App Store
+
+### V3 support timeline
+
+- **End of support** – May 2026 (estimated).
+- **Feature development** – No new features will be developed for V3.
+- **Maintenance** – Critical bug fixes and security updates continue until the end of support.
