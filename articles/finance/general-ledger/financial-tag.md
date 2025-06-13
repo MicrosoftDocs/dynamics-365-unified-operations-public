@@ -69,9 +69,9 @@ Follow these steps to create a financial tag.
 2. Select **New** to create a financial tag.
 3. Enter a label for the tag. The label must start with a letter or underscore, and it can contain only letters, numbers, and underscores. No special characters, including spaces, are permitted.
 4. In the **Value type** field, select **Text**, **List**, or **Custom list**.
-- NOTE: Beginning in release 10.0.44 there is the ability to select a **Fixed list** and a **Fixed custom list** as the value type. Selecting either of these items will run additional validation at form entry. 
-6. If you selected **List** in the **Value type** field, select the value source in the **Use values from** field. The field contains a list of entities that the tag values can be selected from during transaction entry.
-7. If you selected **Custom list** in the **Value type** field, select **Tag values** to create the custom list of tag values that will be available for selection during transaction entry.
+5. If you selected **List** in the **Value type** field, select the value source in the **Use values from** field. The field contains a list of entities that the tag values can be selected from during transaction entry.
+6. If you selected **Custom list** in the **Value type** field, select **Tag values** to create the custom list of tag values that will be available for selection during transaction entry.
+7. NOTE: Beginning in release 10.0.44 there is the ability to select a **Fixed list** and a **Fixed custom list** as the value type. Selecting either of these items will run additional validation at form entry. Only the values found in the list will be allowed for entry when this option is selected.
 8. Select **Activate** to activate the tag.
 
 ## Entering financial tag values on transactions
