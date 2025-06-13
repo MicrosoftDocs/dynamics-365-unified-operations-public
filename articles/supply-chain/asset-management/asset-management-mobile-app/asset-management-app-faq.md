@@ -5,7 +5,7 @@ author: jodahlMSFT
 ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: how-to
+ms.topic: faq
 ms.date: 06/13/2025
 ms.custom: 
   - bap-template

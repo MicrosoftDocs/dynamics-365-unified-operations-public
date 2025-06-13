@@ -1,13 +1,14 @@
---- 
+---
 title: Quality management item sampling
-description: Learn how to set up item sampling and how it is used as part of a quality association, including an outline and step-by-step process for setting up item sampling.
+description: Learn how to set up item sampling and how it's used as part of a quality association, including an outline and step-by-step process for setting up item sampling.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: how-to
-ms.date: 03/23/2021
-ms.custom:
-ms.reviewer: kamaybac 
+ms.reviewer: kamaybac
 ms.search.form: InventItemSampling
+ms.topic: how-to
+ms.date: 06/13/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Quality management item sampling
