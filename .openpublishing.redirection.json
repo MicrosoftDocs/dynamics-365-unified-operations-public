@@ -28469,6 +28469,11 @@
       "source_path": "articles/finance/localizations/norway/emea-fin-sales-tax-payment-report-finland.md",
       "redirect_url": "/dynamics365/finance/localizations/finland/emea-fin-sales-tax-payment-report-finland",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "articles/commerce/b2b/b2b2b-aka-b2b-indirect.md",
+      "redirect_url": "/dynamics365/commerce/b2b/b2b-indirect",
+      "redirect_document_id": false
+    }    
   ]
 }
