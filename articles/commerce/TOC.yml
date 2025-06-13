@@ -1580,6 +1580,8 @@
         href: b2b/payment-method.md
       - name: Set product quantity limits for B2B e-commerce sites
         href: b2b/quantity-limits.md
+      - name: B2B indirect workflows 
+        href: b2b/b2b-indirect.md
       - name: Commerce catalogs for B2B sites
         items:
         - name: Create Commerce catalogs for B2B sites
@@ -1600,8 +1602,6 @@
           href: dev-itpro/obo-configure-hq.md
       - name: Channel and catalog selection enhancements in call center for creating B2B orders
         href: b2b-call-center.md
-    - name: B2B Indirect (aka B2B2B) e-commerce 
-      href: b2b/b2b2b-aka-b2b-indirect.md
     - name: Monitoring and analysis
       items:
       - name: Monitor sales and margin performance
