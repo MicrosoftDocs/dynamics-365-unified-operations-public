@@ -49,7 +49,7 @@ To use the functionality, you must enable the **Financial tags** feature in the 
 
 The experience of entering tags on transactions resembles the experience of entering a ledger account by using financial dimensions. Tags don't use the same control as a ledger account, but still require a delimiter between the tag values. You should define the tag delimiter before you define any financial tags. On the **General ledger parameters** page, select **Financial tags**, and specify the delimiter. The delimiter that you specify must not be used in any tag values that are entered on transactions. For example, if you define a hyphen (\-) as the delimiter, the customer name that's entered as the tag value can't contain a hyphen. The delimiter can't be changed after it's defined.
 
-After the feature is enabled, each legal entity can define up to 20 financial tags. Tags are legal entity–specific. You can use the **Financial tag configuration** and **Financial tags custom list value** entities to import the tags for each legal entity. Therefore, you can quickly and easily define the same initial setup in multiple legal entities. 
+After the feature is enabled, each legal entity can define up to 20 financial tags. Tags are legal entity–specific. You can use the **Financial tag configuration** and **Financial tags custom list value** entities to import the tags for each legal entity. Therefore, you can quickly and easily define the same initial setup in multiple legal entities.
 
 ## Creating financial tags
 
