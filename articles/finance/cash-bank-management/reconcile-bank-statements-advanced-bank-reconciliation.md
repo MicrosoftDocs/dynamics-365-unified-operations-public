@@ -4,7 +4,7 @@ description: The Advanced bank reconciliation feature lets you import electronic
 author: music727
 ms.author: mibeinar
 ms.topic: how-to
-ms.date: 01/07/2025
+ms.date: 06/12/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -28,6 +28,9 @@ The Advanced bank reconciliation feature lets you import electronic bank stateme
 For more information, see [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md), [Clear reversal bank statement transactions](clear-reverse-bank-stmt-trx.md), [Clear reversal company transactions](clear-reverse-comp-trans.md), [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md) and [Set up bank reconciliation matching rules](set-up-bank-reconciliation-matching-rules.md).
 > - Customer and vendor journal posting directly from the bank reconciliation worksheet. For more information, see [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md).
 > - Generation of general ledger vouchers directly from the bank reconciliation worksheet. For more information, see [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md).
+
+> [!NOTE]
+> To avoid issues with reconciliation reversal, it's recommended to reconcile all the existing bank statements thas has new lines before enabling the **Modern bank reconciliation** feature.
 
 ## Import an electronic bank statement by using Electronic reporting
 

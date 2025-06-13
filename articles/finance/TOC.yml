@@ -2711,7 +2711,7 @@
                     - name: Finland overview
                       href: localizations/finland/finland.md
                     - name: Sales tax payment report for Finland
-                      href: localizations/norway/emea-fin-sales-tax-payment-report-finland.md
+                      href: localizations/finland/emea-fin-sales-tax-payment-report-finland.md
                     - name: Finnish Intrastat
                       href: localizations/finland/emea-fin-intrastat.md
                     - name: VAT declaration
@@ -4597,6 +4597,8 @@
                   href: business-performance-planning/create-cubes.md
                 - name: Custom drivers
                   href: business-performance-planning/custom-drivers.md
+                - name: Create calculated columns
+                  href: business-performance-planning/calculated-columns.md
                 - name: Load data using dataflows
                   href: business-performance-planning/load-data-dataflows.md
             - name: Power BI Visuals
