@@ -37,6 +37,7 @@ The following table lists the features that are included in this release. We mig
 | Point of sale | New network connection health chart  | This feature introduces three new network health charts for connection history, connection types, and Wi-Fi signal strength over a 24 hour period. | Admins |
 | Point of sale | Proactive toast notifications for offline reliability | This feature supports the toast notification framework in Store Commerce and notifies store employees when there's an offline authentication failure, weak or missing Wi-Fi, or a seamless offline switch. | Admins |
 | Distributed Order Management (DOM) | DOM with Azure Maps | This feature introduces support for Azure Maps with DOM. Learn more in [Set up DOM](../dom-set-up.md) | Admins |
+| Point of sale | Unblock returns for direct delivery items  | A new feature named "Default the requested ship and receipt dates to a future date on the returned order lines" is created. This sets the Requested ship date and Requested receipt date for return order lines to one day in future, which unblocks returning direct delivery items from POS. | Admins |
 
 ## Resources
 
