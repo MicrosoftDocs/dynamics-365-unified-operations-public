@@ -28459,6 +28459,16 @@
       "source_path": "articles/supply-chain/faq-inventory-query.md",
       "redirect_url": "/dynamics365/supply-chain/responsible-ai-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/store-comm-android-extensibility.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/store-comm-android-ios-ext",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "articles/finance/localizations/norway/emea-fin-sales-tax-payment-report-finland.md",
+      "redirect_url": "/dynamics365/finance/localizations/finland/emea-fin-sales-tax-payment-report-finland",
+      "redirect_document_id": false
     }
   ]
 }

@@ -207,7 +207,7 @@ uo.whereClause(new SysDaEqualsExpression(
 
 // Update the rows.
 ttsbegin;
-    new SysDaUpdateStatement().execute(uo);
+    new SysDaUpdateStatement().update(uo);
 ttscommit;
 
 // Verify the results of the update query.
@@ -266,7 +266,7 @@ insertObject.query(qe);
 
 var insertStmt = new SysDaInsertStatement();
 ttsbegin;
-    insertStmt.executeQuery(insertObject);
+    insertStmt.insert(insertObject);
 ttscommit;
 
 // Verify the results of the insert query.
@@ -315,10 +315,10 @@ var delobj = new SysDaDeleteObject(qe);
 // DELETE_FROM intField FROM TestTable WHERE ((TestTable.intField MOD 2) == 0)
 
 ttsbegin;
-    ds.executeQuery(delobj);
+    ds.delete(delobj);
 ttscommit;
 
-info("Number of rows after deletion: " + any2Str(t.RowCount()));
+info("Number of rows deleted: " + any2Str(t.RowCount()));
 ```
 
 ## Clauses

@@ -4,7 +4,7 @@ description: Learn about the budget control feature and how to configure budget 
 author: music727  
 ms.author: mibeinar
 ms.topic: overview
-ms.date: 1/29/2025
+ms.date: 6/02/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 ms.custom: evergreen
@@ -77,9 +77,9 @@ On the **Budget funds available** tab, you can define the formula that is used t
 
 ### Documents and journals
 
-On the **Documents and journals** tab, you can select which source documents and journals are subject to budget control checks, and whether the checks occur at the level of the line entry or the whole document. In addition, the new **Budget control document filtering enhancement** feature that is available as of Microsoft Dynamics 365 Finance version 10.0.27 provides a query-based filter option for each document that is included in budget control. Therefore, you can specify which budget control documents are budget checked. In this way, the feature enables only a subset of a document type to be budget checked. For example, you can check only purchase orders where the **Pool** field is set to **01**. A new column that is added to the **Documents and journals** tab indicates whether a query is defined for the selected document type. In addition, two new buttons that are added to the toolbar above the document grid let you add, edit, or delete filtering. 
+On the **Documents and journals** tab, you can select which source documents and journals are subject to budget control checks, and whether the checks occur at the level of the line entry or the whole document. In addition, the new **Budget control document filtering enhancement** feature provides a query-based filter option for each document that is included in budget control. Therefore, you can specify which budget control documents are budget checked. In this way, the feature enables only a subset of a document type to be budget checked. For example, you can check only purchase orders where the **Pool** field is set to **01**. A new column that is added to the **Documents and journals** tab indicates whether a query is defined for the selected document type. In addition, two new buttons that are added to the toolbar above the document grid let you add, edit, or delete filtering. 
 
-You should match the source documents that are selected with the check boxes for balances that are included in the calculation of available budget funds. For example, if you selected **Budget reservations for encumbrances**, you should select the **Purchase orders** option. When a budget check is performed for the amounts and accounts on a purchase line, the budget control category that is assigned to the reservation is **Encumbrance**. When a budget check is performed for the amounts and accounts on a purchase requisition, the budget control category that is assigned to the reservation is **Pre-encumbrance**. 
+You should match the source documents that are selected with the check boxes for balances that are included in the calculation of available budget funds. For example, if you selected **Budget reservations for encumbrances**, you should select the **Purchase orders** option. When a budget check is performed for the amounts and accounts on a purchase line, the budget control category that is assigned to the reservation is **Encumbrance**. When a budget check is performed for the amounts and accounts on a purchase requisition, the budget control category that is assigned to the reservation is **Preencumbrance**. 
 
 If **Budget reservations for encumbrance** and/or **Budget reservations for pre-encumbrance** are included in the calculation of available budget funds and must be reflected through postings in the general ledger, you should mark those selections in the **Commitment accounting** group on the **General ledger parameters** page.
 
@@ -107,7 +107,7 @@ In this example, budget control is required on all accounts, except 600120, whic
 
 ![Select main accounts](./media/budgetcontrolconfigurationmainaccounts.png)
 
-If a purchase order is created for expenses associated to main account 600120, then the budget check isn't performed for these lines, every other main account that's selected in the **Select main accounts** tab is contolled. In this example *FREIGHT* procurement category is associated to the main account 600120.
+If a purchase order is created for expenses associated to main account 600120, then the budget check isn't performed for these lines, every other main account that's selected in the **Select main accounts** tab is controlled. In this example *FREIGHT* procurement category is associated to the main account 600120.
 
 ![Purchase order](./media/budgetcheckpurchaseorder.png) 
 
@@ -154,5 +154,8 @@ After budget control is turned on, you receive budget control warning and error 
 From this page, users can drill into the **Budget control statistics by period** page to view budget availability details and reservations for a selected budget control dimension combination. Users can drill into the **Budget control statistic** page to view the budget availability for all financial dimension combinations that are used in budget control.
 
 If budget control is turned on for purchase orders, the budget manager can use the **Ledger budgets and forecasts** workspace to review the queue of all unconfirmed purchase orders that have budget check warnings and errors. If the budget manager has permissions over budgets configured, the purchase orders can be confirmed directly in the workspace.
+
+> [!NOTE]
+> If the **Use sales tax taxation rules** feature is enabled for your organization and **Budget reservations for encumbrances** is selected, sales taxes between purchase order and its invoices must match to correctly perform budget checks. You should either update the sales tax group in the purchase order before creating the invoice, or use sales tax adjustment functionality to update the sales tax amount directly on the invoice.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

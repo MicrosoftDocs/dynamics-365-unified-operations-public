@@ -1,10 +1,10 @@
 ---
 title: Commitments in the public sector in France
 description: Commitments are budget control source documents used by public sector entities in France. They are used to reserve budgeted amounts.
-author: brpotter
-ms.author: brpotter
+author: music727
+ms.author: mibeinar
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 06/03/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: France
@@ -23,6 +23,10 @@ Commitments are budget control source documents used by public sector entities i
 When commitments are used as part of the budgeting process, each purchase agreement, purchase order, and vendor invoice is associated with at least one commitment. The commitment is relieved when the funds are released from the purchase agreement and the purchase order is confirmed. When an invoice does not reference a purchase order or purchase agreement, the commitment associated with the invoice is relieved when the invoice is posted. In addition, a commitment may specify a vendor. When a vendor is specified, any purchase order, purchase agreement, or vendor invoice that references the commitment must have the same vendor. Commitments are valid from the date they are created through the end of the fiscal year or until they are closed. Commitments cannot be carried over from one fiscal year to the next.  
 >[!NOTE]
 >The **Commitment type** field on the **Purchase agreement** page is not related to the commitment document. That field only specifies whether the purchase agreement is based on a value or a quantity.
+
+
+>[!NOTE]
+> The **Commitment** functionality doesn't support transactions related to Projects. 
 
 ## Set up budget control and related prerequisites
 Before you can use commitments, commitment number sequences must be defined, budget control must be set up, and available budget amounts must be available. The commitment workflow is optional, but recommended.

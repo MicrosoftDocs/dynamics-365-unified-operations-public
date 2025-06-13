@@ -124,7 +124,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/finance
                 - name: Default dashboard
                   href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/finance
-                - name: Immersive Home (preview)
+                - name: Immersive Home (production ready preview)
                   href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/finance
                 - name: Set the preferred initial page for each user
                   href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/finance
@@ -1346,10 +1346,14 @@
                   href: general-ledger/ledger-allocation-rules.md
                 - name: Journalize posted journal entries
                   href: general-ledger/tasks/journalize-posted-journal-entries.md
-                - name: Set up and configure the Account reconciliation agent
-                  href: general-ledger/configure-acct-recon-agent.md
-                - name: Account reconciliation agent (Preview)
-                  href: general-ledger/acct-rec-agent.md
+                - name: Account reconcilication agent (Preview)
+                  items:
+                    - name: Account reconciliation agent overview
+                      href: general-ledger/acct-rec-agent.md
+                    - name: Set up and configure the Account reconciliation agent 
+                      href: general-ledger/configure-acct-recon-agent.md
+                    - name: Account reconciliation workspace
+                      href: general-ledger/account-reconciliation.md
             - name: Consolidations and eliminations
               items:
                 - name: Consolidation and elimination overview
@@ -2707,7 +2711,7 @@
                     - name: Finland overview
                       href: localizations/finland/finland.md
                     - name: Sales tax payment report for Finland
-                      href: localizations/norway/emea-fin-sales-tax-payment-report-finland.md
+                      href: localizations/finland/emea-fin-sales-tax-payment-report-finland.md
                     - name: Finnish Intrastat
                       href: localizations/finland/emea-fin-intrastat.md
                     - name: VAT declaration
@@ -3750,6 +3754,8 @@
                       href: localizations/norway/emea-nor-satndard-audit-file-for-tax.md
                     - name: Customer electronic invoices in Norway
                       href: localizations/norway/emea-nor-e-invoices.md
+                    - name: Payments to self-employed persons - RF-1321
+                      href: localizations/norway/emea-nor-payments-to-self-employed-persons.md
                 - name: Oman
                   items:
                     - name: Oman overview
@@ -3872,6 +3878,8 @@
                       items:
                         - name: Standard audit file (JPK) overview
                           href: localizations/poland/emea-pol-standard-audit-file-saf.md
+                        - name: SAF Bank statement file - JPK_KR
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-kr.md
                         - name: SAF Bank statement file - JPK_WB
                           href: localizations/poland/emea-pol-standard-audit-file-saf-wb.md
                         - name: SAF Inventory file - JPK_MAG
@@ -4276,6 +4284,8 @@
                     href: localizations/turkiye/emea-tur-currency-conversion.md
                   - name: Continuous serial numbering of packing slips and invoices (preview)
                     href: localizations/turkiye/emea-tur-serial-numbering.md
+                  - name: Use e-Ledger in the Republic of Türkiye (preview)
+                    href: localizations/turkiye/emea-tur-e-ledger.md
                   - name: Use Exchange difference invoicing (preview)
                     href: localizations/turkiye/emea-tur-exchange-difference-invoicing.md
                 - name: United Arab Emirates (UAE)
@@ -4362,6 +4372,8 @@
                     href: localizations/iberoamerica/ltm-configure-invoices-venezuela.md
                   - name: Create customer and vendor records with an address in Venezuela
                     href: localizations/iberoamerica/ltm-create-customer-and-vendor-venezuela.md
+                  - name: Printing configuration for the ISLR withholding certificate for Venezuela
+                    href: localizations/iberoamerica/ltm-venezuela-ISLR-withholding-certificate.md
                   - name: Set up a legal entity and tax information for Venezuela
                     href: localizations/iberoamerica/ltm-ven-set-up-legal-entity.md
         - name: Reporting and Power BI integrations
@@ -5571,7 +5583,7 @@
       items:
         - name: Overview
           href: ../finance/transparency-note.md
-        - name: Set up Agent management (preview)
+        - name: Set up Agent management (production ready preview)
           href: ../fin-ops-core/fin-ops/copilot/agent-mgmt.md
         - name: Collections coordinator summary FAQ
           href: accounts-receivable/collections-coordinator-summary-faq.md

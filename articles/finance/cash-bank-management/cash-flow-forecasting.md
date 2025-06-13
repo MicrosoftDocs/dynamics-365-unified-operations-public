@@ -4,7 +4,7 @@ description: Learn about the cash flow forecasting process, including outlines o
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 07/31/2023
+ms.date: 06/09/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 
@@ -124,6 +124,7 @@ You can also use batch processing for your cash flow forecasting. To help ensure
 
 In version 10.0.13, an enhancement to the calculation process was released that uses the process automation framework to schedule the cash flow calculation job. This is enabled using the **Cash flow forecast automation** feature in the **Feature Management** workspace. Once enabled, select the **Cash flow forecast automation** link to display the new automation page where you can schedule the cash flow calculation process. To create a new cash flow forecast schedule, select **Create new process automation** and then select **Cash flow forecast automation** in the **Schedule type** drop-down menu. You must set a schedule for each company that you're updating the cash flow forecast data for.  This page also shows which cash flow forecast automation jobs are pending, and when the last job was completed.  
 
+
 > [!NOTE] 
 > If existing batch jobs are already scheduled for cash flow forecasts, you will receive an error message and you won't be able to enable this feature. Existing batch jobs will need to be cleared before you can enable this feature. 
 
@@ -154,6 +155,8 @@ The **Cash overview – all companies** workspace shows cash flow forecasting an
 The **Cash overview – current company** workspace shows cash flow forecasting analytics in the company's defined accounting currency. The accounting currency that is used for the analytics is defined on the **Ledger** page. This workspace shows an overview of cash flow forecasting and bank account balances for the current company. A chart of cash inflows and outflows gives an overview of future cash movements and balances in the accounting currency, together with detailed information about the forecasted transactions. You can also see the forecasted currency balances.
 
 For more information about the cash flow forecasting analytics, see [Cash overview Power BI content](Cash-Overview-Power-BI-content.md).
+
+Cash flow forecasting data is available in **Financial insights**. For more information, see [Cash forecast](../../finance/finance-insights/cash-flow-forecast-intro.md).
 
 Additionally, you can view cash flow forecasting data for specific accounts, orders, and items on the following pages:
 

@@ -1,23 +1,22 @@
 ---
 title: VAT declaration for Oman (OM-00003)
-description: Learn how to configure and generate the value-added tax (VAT) return form for Oman, including an outline on uploading electronic reporting configurations.
+description: Learn how to configure and generate the value-added tax (VAT) return form for Oman in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 06/05/2025
 ms.reviewer: johnmichalak
 ms.search.region: Oman
 ms.search.validFrom: 2021-06-10
-ms.dyn365.ops.version: 10.0.22
 ---
 
 # VAT declaration for Oman (OM-00003)
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up and generate the value-added tax (VAT) return form for legal entities in Oman.
+This article explains how to set up and generate the value-added tax (VAT) return form for legal entities in Oman in Microsoft Dynamics 365 Finance.
 
 The VAT return form for Oman is the standard document that summarizes the total output VAT amount due, the total input VAT amount recoverable, and the related VAT amount liability. The form is used for all types of taxpayers and should be manually completed through the tax authority portal. The VAT return form is commonly referred to as *Filing VAT returns*.
 
@@ -37,9 +36,9 @@ The VAT return form in Microsoft Dynamics 365 Finance includes the following rep
 
     For more information about how to enable features, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-## Upload Electronic reporting configurations
+## Upload electronic reporting configurations
 
-The implementation of the VAT return form for Oman is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
+The implementation of the VAT return form for Oman is based on electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 In the **Electronic reporting** workspace, import the **VAT Return Filing Excel (OM)** ER format from the repository.
 
@@ -62,29 +61,32 @@ The **Application-specific parameters** option lets you establish the criteria t
 
 Per the legal definition, the value of box 1a, "Supplies of goods / services taxed at 5%," should be the reported total value of standard rate supplies of goods and services in the Sultanate, including deemed supplies. Report the VAT-exclusive value only.
 
-In Finance, and depending on the tax configuration, you can implement a specific sales tax group code that represents and calculates the operations at a standard sales rate. The following procedure shows how to configure box 1a for this example.
+In Finance, and depending on the tax configuration, you can implement a specific sales tax group code that represents and calculates the operations at a standard sales rate. 
 
-1. In the **Electronic reporting** workspace, select **Configurations** \> **Setup** to set up the rules that will be used identify the tax transaction in the related box of the VAT return form.
-2. Select the current version, and then, on the **Lookups** FastTab, select the **VATBoxesLookup** lookup. This lookup identifies the list of boxes that the tax authority requires in the VAT form.
-3. On the **Conditions** FastTab, select **Add**.
-4. On the new line, in the **Lookup result** field, select the related line of the VAT return form.
-5. In the **Sales tax group** field, select the sales tax group that is used to calculate the related line of VAT return form. For example, select **VAT\_DOM**.
-6. In the **Item sales tax group** field, select **\*Not blank\***. Box 1a will be identified by sales tax group only.
-7. In the **Tax code** field, select **\*Not blank\***. Box 1a will be identified by sales tax group only.
-8. In the **Transaction classifier** field, select the tax transaction classification where the sales tax group code is used.
-9. Repeat steps 3 through 8 for all boxes in the VAT return form, and for the combination of sales tax codes and tax transaction types that is configured in your legal entity.
-10. Select **Add**, and then follow these steps to define the last record line:
+To configure box 1a for this example, follow these steps.
+
+1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace
+1. Select **Configurations** \> **Setup** to set up the rules used to identify the tax transaction in the related box of the VAT return form.
+1. Select the current version, and then, on the **Lookups** FastTab, select the **VATBoxesLookup** lookup. This lookup identifies the list of boxes that the tax authority requires in the VAT form.
+1. On the **Conditions** FastTab, select **Add**.
+1. On the new line, in the **Lookup result** field, select the related line of the VAT return form.
+1. In the **Sales tax group** field, select the sales tax group that is used to calculate the related line of VAT return form. For example, select **VAT\_DOM**.
+1. In the **Item sales tax group** field, select **\*Not blank\***. Box 1a will be identified by sales tax group only.
+1. In the **Tax code** field, select **\*Not blank\***. Box 1a will be identified by sales tax group only.
+1. In the **Transaction classifier** field, select the tax transaction classification where the sales tax group code is used.
+1. Repeat steps 3 through 8 for all boxes in the VAT return form, and for the combination of sales tax codes and tax transaction types that is configured in your legal entity.
+1. Select **Add**, and then follow these steps to define the last record line:
 
     1. In the **Lookup result** field, select **Not applicable**.
-    2. In the **Sales tax group** field, select **\*Not blank\***.
-    3. In the **Item sales tax group** field, select **\*Not blank\***.
-    4. In the **Tax code** field, select **\*Not blank\***.
-    5. In the **Transaction classifier** field, select **\*Not blank\***.
+    1. In the **Sales tax group** field, select **\*Not blank\***.
+    1. In the **Item sales tax group** field, select **\*Not blank\***.
+    1. In the **Tax code** field, select **\*Not blank\***.
+    1. In the **Transaction classifier** field, select **\*Not blank\***.
 
     By adding this last record, you define the following rule: If the tax code and name that are passed as an argument don't satisfy any of the previous rules, the transactions won't be included in the VAT return form. Although this rule isn't used when the report is generated, it helps prevent errors during report generation if a rule configuration is missing.
 	
-11. In the **State** field, select **Completed**, and then select **Save**.
-12. Close the **Application specific parameters** page.
+1. In the **State** field, select **Completed**, and then select **Save**.
+1. Close the **Application specific parameters** page.
 
 The following table represent an example that shows how you must configure these parameters to establish the configuration between the different boxes in the declaration form and sales tax code configuration that is implemented in Finance.
 
@@ -143,30 +145,30 @@ The following table provides the available values for the **Transaction classifi
 | SalesReverseChargeCreditNote    | <ul><li>Credit note</li><li>Tax direction = Sales tax payable</li><li>ReverseCharge\_W = Yes</li></ul> |
 | SalesReverseCharge              | <ul><li>Not credit note</li><li>Tax direction = Sales tax payable</li><li>ReverseCharge\_W = Yes</li></ul> |
 
-## Set up General ledger parameters
+## Set up general ledger parameters
 
 To generate the VAT return form report in Excel format, define an ER format on the **General ledger parameters** page.
 
-1. Go to **Tax** \> **Setup** \> **General ledger parameters**.
-2. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Return Filing Excel (OM)**. If you leave the field blank, the standard sales tax report will be generated in SQL Server Reporting Services (SSRS) format.
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **General ledger parameters**.
+1. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Return Filing Excel (OM)**. If you leave the field blank, the standard sales tax report will be generated in SQL Server Reporting Services (SSRS) format.
 
 ## Generate a VAT return report
 
 The process of preparing and submitting a VAT return report for a period is based on sales tax payment transactions that were posted during the **Settle and post sales tax** job. For more information about sales tax settlement and reporting, see [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
 
-Follow these steps to generate the tax declaration report.
+To generate the tax declaration report, follow these steps.
 
-1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period** or **Settle and post sales tax**.
-2. Select the settlement period.
-3. Select the "from" date.
-4. Select the sales tax payment version.
-5. Select **OK**. 
-6. Enter the amount of the credit from the previous period, if applicable, or leave the amount as **0** (zero).
-7. In the **Generate details** field, select one or both of the following options. The VAT return form is always generated in this process.
+1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period** or **Settle and post sales tax**.
+1. Select the settlement period.
+1. Select the "from" date.
+1. Select the sales tax payment version.
+1. Select **OK**. 
+1. Enter the amount of the credit from the previous period, if applicable, or leave the amount as **0** (zero).
+1. In the **Generate details** field, select one or both of the following options. The VAT return form is always generated in this process.
 
     - Purchase transactions
     - Sales transactions
 
-8. Select **OK** to confirm the generation of reports.
+1. Select **OK** to confirm the generation of reports.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

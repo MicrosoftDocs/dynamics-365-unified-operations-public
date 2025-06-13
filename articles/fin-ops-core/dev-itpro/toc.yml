@@ -1865,7 +1865,7 @@ items:
           href: ../fin-ops/sysadmin/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: ../fin-ops/sysadmin/assign-users-security-roles.md
-        - name: Security governance (preview)
+        - name: Security governance 
           items:
             - name: User security governance overview
               href: ../fin-ops/sysadmin/security-gov-overview.md
@@ -1876,7 +1876,9 @@ items:
             - name: Set up security governance parameters
               href: ../fin-ops/sysadmin/setup-security-gov-para.md 
             - name: Set up a process hierarchy, roles, and privileges
-              href: ../fin-ops/sysadmin/setup-process-role-hierarchy.md        
+              href: ../fin-ops/sysadmin/setup-process-role-hierarchy.md  
+            - name: Migrate data to User security governance
+              href: ../fin-ops/sysadmin/security-hierarchy-migration.md
             - name: Security tasks under process hierarchy
               href: ../fin-ops/sysadmin/usg-security-tasks-detailed.md          
             - name: Security entry points under process hierarchy
@@ -2039,6 +2041,8 @@ items:
             href: migration-upgrade/clean-up-source-data-upgrade.md
           - name: Compress tables in Dynamics AX 2012 environments
             href: migration-upgrade/compress-tables-ax-2012.md
+          - name: Devirtualize company data
+            href: migration-upgrade/devirtualize-company-data.md
           - name: Change the database collation for development environments
             href: migration-upgrade/coll-dev-env.md
       - name: Migrate data from AX 2009
@@ -2327,9 +2331,9 @@ items:
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
       - name: Generative help and guidance with Copilot
         href: ../fin-ops/copilot/copilot-generative-help.md
-      - name: Agent management (preview)
+      - name: Agent management (production ready preview)
         href: ../fin-ops/copilot/agent-mgmt.md
-      - name: Immersive Home (preview)
+      - name: Immersive Home (production ready preview)
         href: ../fin-ops/copilot/immersive-home.md
       - name: Chat with finance and operations data
         href: copilot/chat-with-fno-data.md
@@ -2377,7 +2381,7 @@ items:
         href: ../fin-ops/copilot/faq-copilot-suggested-questions.md
       - name: Responsible AI FAQ for Workflow history summary
         href: ../fin-ops/copilot/workflow-history-summary-faq.md
-      - name: Responsible AI FAQ for Immersive Home in finance and operations apps (preview)      
+      - name: Responsible AI FAQ for Immersive Home in finance and operations apps (production ready preview)      
         href: ../fin-ops/copilot/faq-immersive-home.md
       - name: Responsible AI FAQ for Agent management in finance and operations apps (preview)
         href: ../fin-ops/copilot/faq-agent-mgmt.md
