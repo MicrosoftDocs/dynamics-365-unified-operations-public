@@ -80,3 +80,6 @@ As part of the B2B indirect feature, you can take advantage of the following cap
 - Filter order history through various options, including the channel (B2B seller or manufacturer) that the order originated from.
 - Allow a manufacturer's customer service representatives to use on behalf of (OBO) functionality to place orders directly with the manufacturer or a B2B seller on behalf of their B2B partners.
 - Use available headless APIs to allow representatives from the B2B seller (distributor) organization to manage their on-hand inventory and accept or reject orders.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
