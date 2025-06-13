@@ -1,8 +1,8 @@
 ---
 title: Cancel a planning job
 description: Learn how to cancel an active planning job that uses the Planning optimization functionality with a step-by-step process.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 02/18/2020
 ms.custom: 

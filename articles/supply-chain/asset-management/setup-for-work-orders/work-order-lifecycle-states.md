@@ -3,11 +3,12 @@ title: Work order lifecycle states
 description: Learn about work order lifecycle states in Asset Management, including a step-by-step process and table that defines various option names.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: how-to
-ms.date: 08/13/2019
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: EntAssetWorkOrderLifecycleState, EntAssetWorkOrderLifecycleModel
+ms.topic: how-to
+ms.date: 06/13/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Work order lifecycle states
@@ -82,7 +83,7 @@ To use the role-based access feature (on the **Security roles** FastTab), as des
     - The **Maintenance downtime**, **Maintenance checklist**, **Fault symptom**, **Fault cause**, and **Fault remedy** options are related to the options in the **Mandatory** section on the **Work order types** page (**Asset management** \> **Setup** \> **Work orders** \> **Work order types**). To activate these validations, the related options must also be set to *Yes* on the work order type that is used for the work order.
     - If the **Maintenance checklist** option is set to *Yes* for the lifecycle state that a work order is updated to, validation is done to verify that maintenance checklist lines that are marked as **Mandatory** have been registered as either **Checked** or **Not applicable**. If neither of those registrations has been made on the mandatory lines, an informational, error, or warning message is shown when the work order is updated to this lifecycle state.
     - If the **Committed cost** option is set to *Yes* for the lifecycle state that a work order is updated to, total amount of committed costs (that is, the total amount of expenses that the legal entity has committed to pay) are calculated for each work order job. A message is shown if the committed cost amount is more than 0 (zero). You select the types of cost commitment that are included on the **Cost commitments** FastTab on the **Cost control** tab of the **Project management and accounting parameters** page (**Project management and accounting** \> **Setup** \> **Project management and accounting parameters**).
-    - If the **Maintenance downtime** option is set to *Yes* for the lifecycle state that a work order is updated to, maintenance downtime validation is done on the asset that is related to the work order. If a maintenance downtime registration has been made, but there is no **Ended** registration, a message is shown when the work order is updated to this lifecycle state.
+    - If the **Maintenance downtime** option is set to *Yes* for the lifecycle state that a work order is updated to, maintenance downtime validation is done on the asset that is related to the work order. If a maintenance downtime registration has been made, but there's no **Ended** registration, a message is shown when the work order is updated to this lifecycle state.
     - If the standard project setup doesn't include all the stages that you require for your Asset Management setup, you can set up user-defined project stages on the **Project stage** tab of the **Project management and accounting parameters** page. The following illustration shows the **Project stage** tab on the **Project management and accounting parameters** page.
 
     ![Set up project stages for various project types page.](media/10-setup-for-work-orders.png)

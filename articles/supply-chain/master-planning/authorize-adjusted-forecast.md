@@ -1,8 +1,8 @@
 ---
 title: Authorize an adjusted forecast
 description: Learn how you can specify the period that a forecast is authorized for, including an outline on authorizing the forecast for specific companies and forecast models.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
