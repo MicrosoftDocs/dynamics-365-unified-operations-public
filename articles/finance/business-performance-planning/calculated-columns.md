@@ -46,43 +46,32 @@ You can reference the following elements:
 - Columns from dimensions that were used to build the cube
 
 You can't reference the following elements:
-
 - Rows other than the current row (In other words, lookup/aggregation across rows can't be done.)
 - Reference dimensions that aren't included in the cube
 
-o Be edited or overwritten by users using Excel or Power BI write-back visuals.
+
 
 ## Example formulas
 
 ### Revenue planning: Price &times; Quantity
-
 Use this formula for revenue forecast modeling by stock-keeping unit (SKU), region, or channel.
-
 *Price* \* *Quantity*
 
 ### Gross Margin and Margin %
-
+Use this formula for profitability modeling by product line.
 *GrossMargin* = *Revenue* - *COGS*
-
 *MarginPercent* = (*Revenue* - *COGS*) / *Revenue*
 
-### Total Compensation
-
-Use this formula for profitability modeling by product line.
 
 ### Operating expense allocation (Headcount-Based)
-
 Use this formula for shared cost allocation.
-
 (*DepartmentHeadcount* / *TotalHeadcount*) \* *ITCost*
 
 > [!NOTE]
 > Total headcount must be stored or precalculated in your dataset.
 
 ### CapEx depreciation (Straight-Line)
-
 Use this formula for fixed asset and depreciation forecasting.
-
 *CapExAmount* / *UsefulLifeYears*
 
 ### Workforce planning: Fully Loaded full-time employee (FTE) cost
@@ -131,8 +120,8 @@ This hybrid architecture provides the following benefits.
 
 | Benefit | DirectQuery (business performance planning) | Import (external)|
 |---|---|---|
-| Real-time planning and write-back | X | No |
-| High-performance analytics | Slower for large sets | X |
+| Real-time planning and write-back |Yes | No |
+| High-performance analytics | Slower for large sets | Yes |
 | Complex DAX modeling | Limited | Fully supported |
 | Combination of data sources|  Limited | Through the composite model |
 
