@@ -72,6 +72,17 @@ Detailed information about objects in finance and operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | End of support in production environments is April 30, 2025 (Phased rollout from May 1, 2025 to June 15, 2025) starting with 10.0.39 (PU63) and greater releases. |
 
+### Disable Finance and Operations functionality on Workers > Commerce > Create new identity 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Improve platform security, and disable Finance and Operations access to the tenant user directory. |
+| **Replaced by another feature?**   | New users can be created directly in Microsoft Entra ID. |
+| **What do you need to do?**        | <p>When the **Create new identity** option is disabled or fail, new identities need to be created directly in Microsoft Entra ID, then associated with the worker through the **Associate existing identity** option.</p>|
+| **Product areas affected**         | Finance and Operations and Commerce |
+| **Deployment option**              | All |
+| **Status**                         | <p>The functionality was disabled in release 10.0.44 (PU68) with a deprecation message, but the access to the tenant's user directory will be removed globally and even older releases won't work after July 2025.</p><p>For more information, and for updates about this change, see [Manage activation accounts and validate devices](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/set-up-activation-accounts-validate-devices-hq).</p> |
+
 ## Feature deprecation effective January 2025
 
 ### Azure Active Directory Authentication Library (ADAL)
