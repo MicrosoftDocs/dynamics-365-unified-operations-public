@@ -21,7 +21,7 @@ The **Archive with Dataverse long term retention** feature decreases the amount 
 
 ## Prerequisites
 
-Before you can enable the **Purge from history archive** feature, your system be running version 10.0.45 or later.
+Before you can enable the **Purge from history archive** feature, your system must be running version 10.0.45 or later.
 
 ## Enable the Purge from history archive feature
 
