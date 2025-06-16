@@ -18,6 +18,10 @@ ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPe
 # Manage activation accounts and validate devices
 
 [!include [banner](../includes/banner.md)]
+> [!WARNING]
+> Due to security compliance, the feature **Commerce \> Create new identity** was deprecated in release 10.0.44 (PU68).
+> 
+> New users should be created directly through Microsoft Entra ID's [new user workflow](https://entra.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/CreateUser.ReactView).
 
 This article explains how an IT Pro can set up Commerce activation accounts for workers to activate Store Commerce devices.
 
@@ -37,11 +41,6 @@ This procedure should be completed before you activate Store Commerce for web.
 5. Complete and save the changes on the **Workers** page, and then refresh the page. The section that contains external identity information should be updated with the new information. The mapped Microsoft Entra account is now your activation account for the Store Commerce app and Store Commerce for web. This account is mapped to a worker for the required POS permissions. You can use this Microsoft Entra account for Store Commerce app and Store Commerce for web activation.
 6. You can either manually enter the alias to generate or use the **Reset to default** button. Then manually enter a strong password, and select **OK**.
 7. If the worker is created successfully, you receive a message on the **Workers** page. The mapped Microsoft Entra account is now the user's activation account for the Store Commerce app and Store Commerce for web. This account is mapped to a worker for the required POS permissions. You can use this Microsoft Entra account for Store Commerce app or Store Commerce for web activation.
-
-## Setting up device activation accounts for multiple workers
-
-> [!WARNING]
-> Due to security compliance, the feature **Commerce \> Create new identity** was deprecated in release 10.0.44 (PU68). New users should be created directly in Microsoft Entra ID. This also impacted the functionality to create multiple users and associate them in bulk that was previously supported.
 
 ## Run the Validate Devices for activation check at headquarters
 
