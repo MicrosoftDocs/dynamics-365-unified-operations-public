@@ -23,16 +23,15 @@ This article explains how you can use self-service to configure a Commerce Scale
 
 > [!IMPORTANT]
 > - A basic design principle to follow is that if you're not able to customize in a requested manner on a Commerce Scale Unit (Cloud), you should not customize this way with a CSU (self-hosted). It is critical to understand that direct database access is not supported and can easily cause breaks in customizations that use this concept. A CSU (self-hosted) is primarily for enabling cross-terminal scenarios, reducing latency or backup for poor WAN connectivity, and providing scale-out to spread the load of POS terminals across multiple CSU components.
-> - Do not install a CSU on a developer environment, which typically already has a configured Retail Server and Channel database.
 > - This component uses a server certificate in addition to Azure Service-to-Service authentication. Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration. By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
 > - It's critical that you have a plan to rotate this key at least one month prior to expiration. Planning is necessary when working with a high number of stores to ensure that there's sufficient time to roll out the change to all stores.
 
 ## Prerequisites  
 
-Before beginning a Commerce Scale Unit installation, you must complete the following one time tasks. These operations often need specific permissions and therefore may require the help of your organization's administrative personnel.
+Before beginning a Commerce Scale Unit (Retail Server) installation, you must complete the following one time tasks. These operations often need specific permissions and therefore may require the help of your organization's administrative personnel.
 
 
-#### Create Azure Active Directory apps and Register in Headquarters
+### 1. Create Azure Active Directory apps and Register in Headquarters
 
 First, you must create two Microsoft Entra ID (formerly known as Azure Active Directory) apps, one for the CSU and one for the Store Commerce for Web app (formerly known as Cloud point of sale or CPOS). For instructions, see [Set up a custom Retail Server app in Microsoft Entra ID](cpos-custom-aad.md#set-up-a-custom-retail-server-app-in-microsoft-entra-id), [Set up a custom app for Store Commerce for Web in Microsoft Entra ID](cpos-custom-aad.md#set-up-a-custom-app-for-store-commerce-for-web-in-microsoft-entra-id).
 and [Update identity providers settings in Commerce headquarters](cpos-custom-aad.md#update-identity-providers-settings-in-commerce-headquarters).
@@ -42,7 +41,7 @@ and [Update identity providers settings in Commerce headquarters](cpos-custom-aa
 > - If you're installing Commerce Scale Unit for use with an on-premises environment using Active Directory Federation Services, instead of Azure, follow the instructions in the Commerce installation document for on-premises environments. For more information, see [Installation steps for Commerce channel components in an on-premises environment](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md).
 
 
-## Configure headquarters for a new Commerce Scale Unit
+### 2. Configure headquarters for a new Commerce Scale Unit
 To create a functioning Commerce Scale Unit, complete the procedures in all sections of this article. You will first complete the initial configuration in headquarters then continue with installing the Commerce Scale Unit. 
 
 > [!IMPORTANT]
@@ -77,10 +76,7 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
 
     You can also add channels that don't use this database. In this way, you keep the data for those channels in the Commerce Scale Unit channel database. The channels that actively use this database can then access that data locally.
 
-10. On the **Commerce Scale Unit package** FastTab, in the **Package reference** field, select the appropriate Commerce Scale Unit package. Each environment generates a base Commerce Scale Unit package. Therefore, this field always contains at least one option.
-11. On the Action Pane, select **Save**.
-
-### Create a new channel profile
+### 3. Create a new channel profile
 Next, you must create a new channel profile record for the CSU URL, and then update the existing store records to use the new channel database and profile. 
 
 > [!NOTE]
@@ -130,6 +126,8 @@ To create a new channel profile in headquarters and update the existing store re
 
 29. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database group**.
 30. Select the **Default** data group, and then, on the Action Pane, select **Full data sync**. In the **Select a distribution schedule** field, select job **9999**, and then select **OK**. In the dialog box that appears, select **OK** to confirm the full synchronization. All the data in the channel database is prepared for download.
+
+If no jobs appear, then initialize the base configuration [Update configurations](cdx-best-practices.md#update-configurations)
 
     > [!IMPORTANT]
      ### Update CDX data groups

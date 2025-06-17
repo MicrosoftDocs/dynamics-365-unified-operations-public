@@ -78,7 +78,7 @@ Next, you must add the SSL certificate you created and converted to the `.CER` f
 
 To add the SSL certificate you created to the CSU Entra ID app, follow these steps.
 
-1. In a web browser on the virtual machine (VM), edit the CSU Azure App registration created earlier.
+1. In a web browser on the machine where the .CER file was previously saved, visit the [Microsoft Entra admin center](https://aad.portal.azure.com) and edit the CSU Azure App registration created earlier.
 1. For **Client Credentials**, select **Add a certificate or secret**. 
 1. Select the **Certificates** tab.
 1. Select **Upload Certificate**.
@@ -99,7 +99,7 @@ The following sections list all the changes you must make in Commerce headquarte
 To enter the application ID (client ID) of the CSU Entra ID app in headquarters, follow these steps.
 
 1. Go to **System administration \> Setup \> Azure Active Directory applications (Microsoft Entra ID Applications)**.
-1. In the **Client ID** column, enter the application ID (client ID) of the CSU Entra ID app in the Entra portal.
+1. In the **Client ID** column, enter the application ID (client ID) of the "Retail Server app" from the Entra portal.
 1. in the **Name** column, enter descriptive text.
 1. In the **User ID** column, enter "RetailServiceAccount".  
 
@@ -159,6 +159,11 @@ To update an expiring or expired certificate for the Sealed CSU, you don't need 
 ```cmd
 CommerceStoreScaleUnitSetup.exe updateCertificates --SslCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewSslCertificateThumbprint" --AsyncClientCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewAsyncClientAadAppCertThumbprint" --RetailServerCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewRsAadAppCertThumbprint"
 ```
+
+## Unified Development Environment Finance and Operations Support
+
+For details on support for the Power Platform unified developer experience, see 
+[Unified Development Environment](https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-dev-overview)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
