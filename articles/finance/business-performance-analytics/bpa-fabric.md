@@ -5,7 +5,7 @@ description: This article explains how to link your Business performance analyti
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 2/03/2025
+ms.date: 6/17/2025
 ms.topic: how-to
 ms.custom:
 ms.search.form: business-performance-analytics
@@ -106,11 +106,11 @@ This section shows how you can create a custom Power BI dataset that extends the
 > We recommend not using the .pbix file from the Maker Portal, it's not parameterized and requires extra set up to connect to your shortcuts.
 
 
-### Step 1: Request the BPA dataset (.pbix)
+### Step 1: Request the Business performance analytics dataset (.pbix)
 
 1. Create a support ticket through your standard Microsoft support channel.
 2. In the ticket, request a secure download link for the BPA `.pbix` file.
-3. Once approved, you will receive a secured link to download the file.
+3. Once approved, you receive a secured link to download the file.
 
 ### Step 2: Open the dataset in Power BI Desktop
 
@@ -123,7 +123,7 @@ This section shows how you can create a custom Power BI dataset that extends the
 2. Update the following parameters:
    - `CdsOrgUrl` → Paste the SQL Analytics Endpoint connection string from your Fabric Lakehouse.
    - `AnalyticalDataDatabase` → Enter the name of your Lakehouse (should include `"far_workspace"`).
-3. Click **OK**, then **Close & Apply** to confirm the changes.
+3. Click **OK**, then **Close and apply** to confirm the changes.
 
 ### Step 4 (Optional): Publish the dataset to Fabric
 
