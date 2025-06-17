@@ -1,8 +1,8 @@
 ---
 title: Coverage settings
 description: Learn about the coverage settings that master scheduling uses to calculate item requirements, including an outline on coverage codes.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqGroup, ReqItemTable, ReqItemTableWizard, ReqItemTableSetup
 ms.topic: how-to

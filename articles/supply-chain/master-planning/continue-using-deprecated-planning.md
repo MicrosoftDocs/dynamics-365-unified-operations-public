@@ -1,8 +1,8 @@
 ---
 title: Continue to use deprecated master planning with existing companies
 description: Learn how to continue using the deprecated master planning engine for existing companies until they're ready to be migrated.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 09/18/2023
 ms.custom: bap-template

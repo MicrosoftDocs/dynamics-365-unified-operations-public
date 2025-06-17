@@ -1,8 +1,8 @@
 ---
 title: Delays
 description: Learn about delayed dates in master planning, which is a due date that a transaction receives if the earliest fulfillment date is later than the requested date.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 03/31/2020
 ms.reviewer: kamaybac

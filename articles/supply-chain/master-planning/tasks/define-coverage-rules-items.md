@@ -1,12 +1,12 @@
 --- 
 title: Define coverage rules for items
 description: This procedure shows how to create coverage rules and override coverage settings for a specific item. It also shows how to specify default inventory settings.
-author: t-benebo
+author: Henrikan
 ms.date: 07/01/2019
 ms.topic: how-to 
 ms.search.form: ReqGroup, DefaultDashboard, EcoResProductDetailsExtended, EcoResProductCreate, InventItemOrderSetup, ReqItemTable   
 ms.reviewer: kamaybac
-ms.author: benebotg
+ms.author: henrikan
 ---
 # Define coverage rules for items
 

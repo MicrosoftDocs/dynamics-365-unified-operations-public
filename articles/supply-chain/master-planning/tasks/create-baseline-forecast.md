@@ -1,12 +1,12 @@
 --- 
 title: "Guide: Create a baseline forecast"
 description: A production planner can create a baseline forecast either by using time series forecast models or by copying the historical demand. 
-author: t-benebo
+author: Henrikan
 ms.date: 08/29/2018
 ms.topic: how-to 
 ms.search.form: ReqIntercompanyPlanningGroupSetup, ReqIntercompanyPlanningGroupAllocKeys, ReqDemPlanForecastParameters, ReqDemPlanCreateForecastDialog, SysQueryForm, ReqDemPlanForecastViewer   
 ms.reviewer: kamaybac
-ms.author: benebotg
+ms.author: henrikan
 ---
 # Guide: Create a baseline forecast
 
