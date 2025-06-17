@@ -4,9 +4,9 @@ description: Learn how to configure the system to apportion freight costs for mu
 author: lisascholz91
 ms.author: lisascholz
 ms.reviewer: kamaybac
-ms.search.form: XXXX
+ms.search.form:
 ms.topic: how-to
-ms.date: 06/13/2025
+ms.date: 06/17/2025
 ms.custom: 
   - bap-template
 ---

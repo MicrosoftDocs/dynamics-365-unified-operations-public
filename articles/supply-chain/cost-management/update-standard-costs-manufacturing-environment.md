@@ -6,7 +6,7 @@ ms.author: prasungoel
 ms.reviewer: kamaybac
 ms.search.form: CostingVersion, InventStdCostConv
 ms.topic: how-to
-ms.date: 06/16/2025
+ms.date: 06/17/2025
 ms.custom: 
   - bap-template
 ---

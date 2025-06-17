@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
 ms.topic: faq
-ms.date: 06/16/2025
+ms.date: 06/17/2025
 ms.custom: 
   - bap-template
 ---
