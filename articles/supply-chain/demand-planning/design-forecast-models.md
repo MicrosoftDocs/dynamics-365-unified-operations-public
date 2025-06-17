@@ -111,7 +111,7 @@ When you add a *Signal* step, the system automatically creates a parallel branch
 
 - **Interquartile range multiplier** – This field is available only when the **Handle outliers** field is set to *IQR*. It affects the number of data points that are removed as outliers. Learn more about this setting in the [How the handle outliers options work](#handle-outlier-options) section.
 - **Correction methods** – This field is available only when the **Handle outliers** field is set to *IQR*. It affects how outliers are replaced in the data after they are removed. The available options are *Median smoothing* and *Mean smoothing*.
-- **Seasonality hint** – This field is available only when the **Handle outliers** field is set to *STL*. It influences the size of the window that is used for locally estimated scatterplot smoothing (LOESS) when the seasonal component is estimated. Learn more about this setting in the [Seasonality in forecasts](#seasonality) section.
+- **Select seasonality detection setting** – This field is available only when the **Handle outliers** field is set to *STL*. It influences the size of the window that is used for locally estimated scatterplot smoothing (LOESS) when the seasonal component is estimated. Learn more about this setting in the [Seasonality in forecasts](#seasonality) section.
 
 #### How to choose the method for handling outliers
 
@@ -167,7 +167,7 @@ After STL calculates the mean and standard deviation, it uses them to eliminate 
 
 Finally, STL reintroduces the seasonality and trend to the newly smoothed residual.
 
-When you use the STL method to handle outliers, you must also set a **Seasonality hint** value. This value influences the size of the period (in time buckets) that is used when the seasonality component is estimated. It helps divide the data into segments to ensure that the algorithm correctly extracts repeating patterns. For example, if you notice a weekly seasonality pattern where most customers shop on Saturdays, and you're using buckets in days, enter *7* as the **Seasonality hint** value. Learn more about seasonality and seasonality hints in the [Seasonality in forecasts](#seasonality) section.
+When you use the STL method to handle outliers, you must also set the **Select seasonality detection setting** option. This setting influences the size of the period (in time buckets) that is used when the seasonality component is estimated. It helps divide the data into segments to ensure that the algorithm correctly extracts repeating patterns. Learn more in [Seasonality in forecasts](#seasonality).
 
 ### Forecast steps
 
@@ -187,7 +187,7 @@ When you use the STL method to handle outliers, you must also set a **Seasonalit
     - *ETS* (error, trend, seasonality)
     - *Prophet*
 
-- **Seasonality hint (in periods of time buckets)** – Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule. If your data has such a pattern, enter the frequency (in time buckets). For example, if you notice a weekly seasonality pattern where most customers shop on Saturdays, and you're using buckets in days, enter *7* here. Learn more about seasonality and seasonality hints in the [Seasonality in forecasts](#seasonality) section.
+- **Select seasonality detection setting (preview)** – Choose how the forecast should identify seasonality patterns. Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule. Learn more about seasonality, seasonality auto detection, and seasonality hints in the [Seasonality in forecasts](#seasonality) section.
 
 ### Forecast with signals (preview)
 
@@ -206,15 +206,19 @@ You can use this type of step only if your forecast model has at least two paral
 - **Description** – A short description of the step.
 - **Created by** – The user who created the step.
 - **Model type** – Select the forecast algorithm to use. In the current version, only the *XGBoost* algorithm is available.
-- **Seasonality hint (in periods of time buckets)** – Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule. If your data has such a pattern, enter the frequency (in time buckets). For example, if you notice a weekly seasonality pattern where most customers shop on Saturdays, and you're using buckets in days, enter *7* here. Learn more about seasonality and seasonality hints in the [Seasonality in forecasts](#seasonality) section.
+- **Seasonality hint (in periods of time buckets)** – Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule. If your data has such a pattern, enter the frequency (in time buckets). For example, if you notice a weekly seasonality pattern where most customers shop on Saturdays, and you're using buckets in days, enter *7* here. Learn more about seasonality and seasonality hints in the [Seasonality in forecasts](#seasonality) section. <!-- KFM: No seasonality for XGBoost? Remove this point? -->
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-### Finance and operations – Azure Machine Learning steps
+### Finance and operations steps
 
-You might already be using your own custom Microsoft Azure Machine Learning algorithms for demand forecasting in Dynamics 365 Supply Chain Management, as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md). In this case, you can continue to use those algorithms while you use Demand planning. Just put a *Finance and operations – Azure Machine Learning* step in your forecast model instead of a *Forecast* step.
+You might already be using your own custom Microsoft Azure Machine Learning algorithms for demand forecasting in Dynamics 365 Supply Chain Management, as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md). In this case, you can continue to use those algorithms while you use Demand planning. Just put a *Finance and operations* step in your forecast model instead of a *Forecast* step.
 
 Learn how to set up Demand planning to connect to and use your Azure Machine Learning algorithms in [Use your own custom Azure Machine Learning algorithms in Demand planning](custom-azure-machine-learning-algorithms.md).
+
+### Custom steps
+
+<!-- KFM: description needed. How are these different from the Finance and operation steps just mentioned? When do we choose which? -->
 
 ### Phase in/out steps
 
@@ -261,9 +265,18 @@ Although both seasonality and cycles involve repeating patterns, there are key d
 | Cause | Calendar-based events or natural patterns | Economic, social, or structural forces |
 | Examples | Summer travel peaks or holiday shopping trends | Economic recession cycles or stock market booms and busts |
 
-### Seasonality hints
+### Autodetect seasonality patterns (preview)
 
-Some forecast and outlier detection algorithms provide a **Seasonality hint** setting. This setting influences the size of the period (in time buckets) that is used in the identification of seasonality patterns. It helps divide the data into segments to ensure that the algorithm correctly extracts repeating patterns. For example, if you notice a weekly seasonality pattern where most customers shop on Saturdays, and you're using buckets in days, enter *7* as the **Seasonality hint** value.
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
+
+Auto seasonality detection uses an algorithm that automatically detects seasonality patterns for each combination of a location and a product, and applies the result to forecast calculations. Seasonality patterns typically vary for different products and different locations. Therefore, auto detection often works better than application of the same pattern everywhere.
+
+To set a *Forecast* or *Handle outliers* step to use seasonality auto detection, edit the step's settings, and then set **Select seasonality detection setting (preview)** to *Auto detection*. <!-- KFM: No seasonality for XGBoost? -->
+
+### Detect seasonality using a hint
+
+The system can detect seasonality by using a *seasonality hint* that you choose. This option works best when you know the seasonality pattern in advance. The **Seasonality hint** setting influences the size of the period (in time buckets) that is used in the identification of seasonality patterns. It helps divide the data into segments to ensure that the algorithm correctly extracts repeating patterns. For example, if you notice a weekly seasonality pattern where most customers shop on Saturdays, and you're using buckets in days, enter *7* as the **Seasonality hint** value.
 
 A well-defined seasonal period captures the true periodicity of the data. It enables the algorithm to successfully isolate the seasonality. As a result, the trend and residuals are more interpretable. By contrast, an incorrect seasonal period leads to poor seasonal extraction. As a result, trend and residual components are inaccurate.
 
@@ -280,17 +293,10 @@ If the seasonal period that you use is too long (that is, longer than the actual
 - **Overfitting** – Noise or random fluctuations might be falsely interpreted as seasonality.
 - **Distorted decomposition** – Artificially long seasonal cycles might obscure the true trend or residual components.
 - **Increased complexity** – The model might become unnecessarily complex and therefore harder to interpret and validate.
--
+
 For example, you use a seasonal period of *24 months* for data that has an annual cycle. The result is overfitting, where small irregularities in the data are treated as seasonal patterns.
 
-### Autodetect seasonality patterns (preview)
+To set a *Forecast* or *Handle outliers* step to use a seasonality hint, edit the step's settings, and then set **Select seasonality detection setting (preview)** to *Detection using hint*. Then, enter the number of time buckets in the **Seasonality hint (in periods of time buckets)** field. <!-- KFM: No seasonality for XGBoost? -->
 
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until further notice -->
-
-If you're using the ARIMA forecast algorithm, the **Seasonality hint (in periods of time buckets)** setting is replaced by the **Select seasonality detection setting (preview)** setting. This setting provides the following options:
-
-- *Auto detection* – Select this option to enable an algorithm that automatically detects seasonality patterns for each combination of a location and a product, and applies the result to forecast calculations. Seasonality patterns typically vary for different products and different locations. Therefore, auto detection often works better than application of the same pattern everywhere.
-- *Detection using hint* – Select this option to use the value that you enter in the **Seasonality hint (in periods of time buckets)** field to help identify seasonality patterns. This option works best when you know the seasonality pattern in advance. For example, if you know that you have a strong weekly seasonality pattern where most customers shop on Saturdays, and you're using buckets in days, select this option, and then enter *7* in the **Seasonality hint (in periods of time buckets)** field. Learn more about this setting in the previous section.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]

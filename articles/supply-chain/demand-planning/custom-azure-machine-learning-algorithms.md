@@ -18,6 +18,8 @@ If you're already using your own Microsoft Azure Machine Learning algorithms for
 
 This article describes the setup that is required to enable Demand planning to connect to your [Azure Machine Learning workspace](/azure/machine-learning/concept-workspace).
 
+<!-- KFM: We have two tiles related to this: Finance and operations and Custom. We need to clarify how these are different and which to use when. Can we explain both in this topic? If not, which one are we actually talking about here? -->
+
 ## Set up a new Microsoft Entra application
 
 Follow the steps in this section to create a new Microsoft Entra application in your Azure Machine Learning workspace. This resource in the [Azure portal](/azure/azure-portal/azure-portal-overview) holds your algorithms. The Microsoft Entra application is an enterprise application that enables Demand planning to connect to your Azure Machine Learning algorithms. (For more information about how to set up a Microsoft Entra application, see [Register an application](/entra/identity-platform/quickstart-register-app#register-an-application).)
@@ -79,5 +81,13 @@ Follow these steps to set up a forecast that uses your own Azure Machine Learnin
 1. Create a new forecast profile as described in [Create and manage forecast profiles](forecast-profiles.md#create-profile).
 1. On the **Select a forecasting model preset** page, select *None*.
 1. After you've created and saved the profile, select the **Forecast model** tab. (Learn more in [Design forecast models](design-forecast-models.md).)
-1. Set up your model. Include a *Finance and operations – Azure Machine Learning* step in the position where you want to run your algorithm.
+1. Set up your model. Add a *Finance and operations* step in the position where you want to run your algorithm. <!-- KFM: Or maybe the *Custom* step? Or mention both?-->
+1. Open the **Actions** menu for the *Finance and operations* step and then select **Settings**.
+1. In the **Configure step** dialog, make the following settings for the step:
+    - **Step name** – Enter a name for the step.
+    - **Description** – Enter a description for the step.
+    - **Custom action configuration** – <!-- KFM: description needed -->
+    - **Azure ML endpoint** – <!-- KFM: description needed -->
+    - **Custom parameters** – <!-- KFM: description needed -->
+1. Select **Save** to close the dialog.
 1. Complete the model by adding a *Save* step.
