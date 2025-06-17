@@ -1711,6 +1711,8 @@ items:
         href: perf-test/rsat/rsat-install-configure.md
       - name: Use the Regression suite automation tool
         href: perf-test/rsat/rsat-run.md
+      - name: Regression suite automation tool certificates
+        href: perf-test/rsat/certificate-based-authentication.md
       - name: Maintain test cases within Regression suite automation tool
         href: perf-test/rsat/rsat-maintain-test-cases.md
       - name: Validate expected values
