@@ -1,5 +1,5 @@
 ﻿---
-title: Responsible AI for the Supplier Communications Agent (production ready preview)
+title: Responsible AI FAQ for the Supplier Communications Agent (production ready preview)
 description: Get answers to frequently asked questions about the AI technology that is used in the Supplier Communications Agent with Copilot in Microsoft Dynamics 365 Supply Chain Management. This FAQ includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 author: t-benebo
 ms.author: benebotg
@@ -12,7 +12,7 @@ ms.collection:
   - bap-ai-Copilot
 ---
 
-# Responsible AI for the Supplier Communications Agent (production ready preview)
+# Responsible AI FAQ for the Supplier Communications Agent (production ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

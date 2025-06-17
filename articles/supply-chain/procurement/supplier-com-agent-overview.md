@@ -47,4 +47,4 @@ Learn about the billing rates and management for Copilot Studio in [Billing rate
 
 ## Related information
 
-- [Responsible AI for the Supplier Communications Agent](../faq-supplier-communications-agent.md)
+- [Responsible AI FAQ for the Supplier Communications Agent](../faq-supplier-communications-agent.md)
