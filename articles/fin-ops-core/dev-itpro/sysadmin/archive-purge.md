@@ -25,7 +25,7 @@ Before you can enable the **Purge from history archive** feature, your system mu
 
 ## Enable the Purge from history archive feature
 
-Open the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace, and turn on the **Purge from history archive feature** feature.
+Open the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace, and turn on the **Purge from history archive** feature.
 
 ## Purge data from the history table
 
@@ -39,7 +39,7 @@ Before you can purge data from the history table, the following conditions must 
 
 To create a purge job to delete data from the history table, follow these steps.
 
-1. Go to **System administration** \> **Archive with Dataverse long term retention**.
+1. Go to **System administration** \> **Workspaces** \> **Archive with Dataverse long term retention**.
 1. In the **Archive with Dataverse long term retention** workspace, select a completed archival job. You can also select multiple completed archival jobs for the same functional scenario.
 1. Select **Delete history**.
 1. A confirmation message prompts you to acknowledge that the purge process can't be reversed. Acknowledge the message, and submit the purge job.
@@ -66,11 +66,11 @@ The **Purge from history archive** feature addresses the need to fully optimize 
 
 ### What happens to the archived data in Dataverse during a purge?
 
-The purge process removes data only from the operational history tables in Dynamics 365 Finance. The archived data in Dataverse long-term retention remains unaffected and securely accessible. Users can still retrieve archived records that are stored in Dataverse for compliance and reporting purposes.
+The purge process removes data only from the operational history tables in Dynamics 365. The archived data in Dataverse long-term retention remains unaffected and securely accessible. Users can still retrieve archived records that are stored in Dataverse for compliance and reporting purposes.
 
 ### Who can use the feature?
 
-The  **Purge from history archive** feature is available to administrators who have access to the Archiving workspace in Dynamics 365.
+The  **Purge from history archive** feature is available to administrators who have access to the **Archive with Dataverse long term retention** workspace in Dynamics 365.
 
 ### What are the eligibility criteria for purging data?
 
@@ -82,7 +82,7 @@ Yes, multiple purge jobs can be scheduled to run simultaneously on different arc
 
 ### How can I track the progress of a purge job?
 
-The purge process is fully transparent. Detailed logs are available in the Archiving workspace. These logs include the following information:
+The purge process is fully transparent. Detailed logs are available in the **Archive with Dataverse long term retention** workspace. These logs include the following information:
 
 - The number of records that were deleted
 - The tables that were affected
