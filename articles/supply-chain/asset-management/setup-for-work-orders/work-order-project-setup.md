@@ -3,11 +3,12 @@ title: Work order project setup
 description: Learn about work order project setup in Asset Management, including outlines on project setup for work order jobs and setting up work order projects.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: install-set-up-deploy
-ms.date: 06/09/2024
-ms.custom:
-ms.reviewer: kamaybac 
+ms.reviewer: kamaybac
 ms.search.form: EntAssetWorkOrderProjectSetup 
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Work order project setup
@@ -28,7 +29,7 @@ When you create a work order job on a work order, the project setup in the **Pro
 
 - Financial dimensions are copied from the asset and merged with the parent project.
 
-The next section explains how to set up parent projects and project groups. Parent project and parent groups are used to control work orders. They are also used for reporting about work orders.
+The next section explains how to set up parent projects and project groups. Parent project and parent groups are used to control work orders. They're also used for reporting about work orders.
 
 ## Set up work order projects
 

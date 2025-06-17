@@ -1,12 +1,12 @@
 ---
 title: "Guide: Modify a demand forecast manually"
 description: This article describes how to modify the forecast for an item
-author: t-benebo
+author: Henrikan
 ms.date: 08/12/2019
 ms.topic: how-to
 ms.search.form: EcoResProductDetailsExtended, ForecastSales   
 ms.reviewer: kamaybac
-ms.author: benebotg
+ms.author: henrikan
 ---
 
 # Guide: Modify a demand forecast manually

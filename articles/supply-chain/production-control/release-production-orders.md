@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: ProdParmRelease
 ms.topic: how-to
-ms.date: 03/02/2021
+ms.date: 06/17/2025
 ms.custom: 
   - bap-template
 ---
@@ -19,10 +19,10 @@ A released production order is an order that has been authorized for production.
 
 ## Characteristics of the Released state
 
-The **Released** state is one state in the production order life cycle. Production orders that are in the **Released** state are available for execution on the production shop floor and for warehouse processes. The **Released** state has the following characteristics:
+The *Released* state is one state in the production order life cycle. Production orders that are in the *Released* state are available for execution on the production shop floor and for warehouse processes. The *Released* state has the following characteristics:
 
-- A production order can be changed to the **Released** state either from the production order or by using a batch process. The production order can also be updated automatically from planned production orders that are firmed by using the **Firming time fence** field on the **Master plan** page.
-- The **Released** state is the signal for the shop floor operators (operators) to start executing the production jobs on the shop floor.
+- A production order can be changed to the *Released* state either from the production order or by using a batch process. The production order can also be updated automatically from planned production orders that are firmed by using the **Firming time fence** field on the **Master plan** page.
+- The *Released* state is the signal for the shop floor operators (operators) to start executing the production jobs on the shop floor.
 - Production papers, such as route cards, route jobs, and jobs cards provide information about production jobs and can be issued.
 - For materials that are physically reserved, warehouse work is generated to pick materials for the production order.
 
@@ -55,7 +55,7 @@ When using license plate controlled locations, you can choose whether the ordere
 1. Go to **Product information management \> Products \> Released products** and open the relevant item.
 1. Expand the **Warehouse** FastTab.
 1. Select one of the following options for the  **Material picking in license plate locations** field:
-    - *Order picking*: Only the ordered quantity should be picked.
-    - *Staging*: Whenever possible, the full quantity available at the license plate should be picked. For a worker to be able to pick the full license plate quantity, the license plate must not contain mixed items and must not have mixed dimensions. If the license plate contains mixed dimensions or items, the pick will proceed as if it were set to *Order picking*.
+    - *Order picking* – Only the ordered quantity should be picked.
+    - *Staging* – Whenever possible, the full quantity available at the license plate should be picked. For a worker to be able to pick the full license plate quantity, the license plate must not contain mixed items and must not have mixed dimensions. If the license plate contains mixed dimensions or items, the pick will proceed as if it were set to *Order picking*.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
