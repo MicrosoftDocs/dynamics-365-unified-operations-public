@@ -162,7 +162,9 @@ CommerceStoreScaleUnitSetup.exe updateCertificates --SslCertFullPath "store:///M
 
 ## Unified Development Environment Finance and Operations Support
 
-For details on support for the Power Platform unified developer experience, see 
+Cloud hosted Finance and Operations can be provisioned with the Unified Development Environment.
+
+For details on support for the Power Platform unified developer environment, see 
 [Unified Development Environment](https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-dev-overview)
 
 
