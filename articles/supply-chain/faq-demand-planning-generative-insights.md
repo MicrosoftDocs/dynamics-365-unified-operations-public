@@ -29,7 +29,7 @@ Generative insights for Demand planning analyzes your demand plans to detect sea
 
 By using Generative insights, you can quickly gain valuable insights across multiple dimensions. You can use these insights to improve operational efficiency, increase profitability, and improve customer satisfaction.
 
-Learn more about this feature in [Generative insights for Demand planning (preview)](generative-insights.md).
+Learn more about this feature in [Generative insights for Demand planning (preview)](demand-planning/generative-insights.md).
 
 ## What are the capabilities of Generative insights?
 
@@ -66,6 +66,5 @@ When you use this feature, follow these recommendations:
 
 ## Related information
 
-- [Generative insights for Demand planning (preview)](generative-insights.md)
-
+- [Generative insights for Demand planning (preview)](demand-planning/generative-insights.md)
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
