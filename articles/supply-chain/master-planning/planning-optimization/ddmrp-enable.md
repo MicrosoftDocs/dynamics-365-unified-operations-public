@@ -1,8 +1,8 @@
 ---
 title: Turn on the DDMRP feature for your system
 description: Learn how to turn on the DDMRP feature and its prerequisites for your system, including definitions of various features.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 06/30/2022
 ms.reviewer: kamaybac

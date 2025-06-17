@@ -3,11 +3,12 @@ title: Get started with setting up the Warehouse management module
 description: Learn how to work with the built-in wizards and checklists that help you quickly and efficiently set up and configure the Warehouse management module.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: how-to
-ms.date: 06/01/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSWarehouseInitiationWizard, WHSManagementInitiationWizard, WHSImplementationWorkspace, WHSImplementationTaskListPage
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Get started with setting up the Warehouse management module
@@ -99,7 +100,7 @@ When your task list is ready, follow these steps to work through it.
     - **Filter** – To quickly find a specific task in a long list, enter a value here, and then select the column where that value should be found.
     - **Hide completed tasks** or **Show completed tasks** – Select whether to hide or show tasks that have already been completed. The button label changes, depending on whether completed tasks are currently shown or hidden.
 
-    To view the full task list (including both completed and non-completed tasks), on the **Links** FastTab, select the **All tasks** link. The page that appears is the same page that appears when you select the **Warehouse implementation tasks** tile on the **Summary** FastTab. It provides the same information as, and works like, the **Task list** FastTab on the **Warehouse implementation tasks** page.
+    To view the full task list (including both completed and uncompleted tasks), on the **Links** FastTab, select the **All tasks** link. The page that appears is the same page that appears when you select the **Warehouse implementation tasks** tile on the **Summary** FastTab. It provides the same information as, and works like, the **Task list** FastTab on the **Warehouse implementation tasks** page.
 
 1. Continue to work until all tasks are completed.
 
@@ -285,7 +286,7 @@ Follow these steps to open and complete the *Outbound configuration wizard*.
 1. Select **Next** to continue. If you selected the **Create work to move container from packing station to location** option on the **Release container** page, the **Container staging area** page opens. In this case, move on to the next step. If you selected one of the other options on the **Release container** page, skip ahead to step 21.
 1. On the **Container staging area** page, use the following fields to set up a staging area for staging packed items before moving them to the final shipping area. Default values are suggested, but you can edit them as you require.
 
-    - **Use staging area** – Select this checkbox if you will use a staging area. If you clear this checkbox, no staging area will be set up, and all the other fields on the page will be unavailable.
+    - **Use staging area** – Select this checkbox if you'll use a staging area. If you clear this checkbox, no staging area will be set up, and all the other fields on the page will be unavailable.
     - **Location** – Specify the name of the staging location.
     - **Directive code** – Specify the name of the directive code for the shipping process. This value will be used in the shipping work template and the location directive to link them together.
     - **Packing work class** – Specify the name of the work class for the packing process. This value will be used in the work template.

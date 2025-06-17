@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot Planning Optimization
 description: Learn how to fix issues that you might encounter while working with Planning Optimization with an outline on possible errors when installing the add-in.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: troubleshooting-general
 ms.date: 05/01/2023
 ms.custom: bap-template

@@ -1,8 +1,8 @@
 ---
 title: Maintain planned orders
 description: Learn how to manage planned orders. It describes how you can update the status of planned orders, firm them, and filter for planned orders.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 12/10/2019
 ms.reviewer: kamaybac

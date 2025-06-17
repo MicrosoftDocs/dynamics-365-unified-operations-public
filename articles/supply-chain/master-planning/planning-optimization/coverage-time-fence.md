@@ -1,8 +1,8 @@
 ---
 title: Coverage time fences
 description: Learn how to set up coverage time fences. A coverage time fence indicates your planning horizon and limit including definitions for coverage time fence levels.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 01/18/2021
 ms.custom: 

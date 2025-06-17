@@ -1,8 +1,8 @@
 ---
 title: Finite capacity planning and scheduling
 description: Finite capacity planning and scheduling helps you understand how much work can be produced during a specific period when limitations are taken into consideration.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 09/19/2022
 ms.reviewer: kamaybac

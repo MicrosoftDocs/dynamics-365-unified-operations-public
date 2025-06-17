@@ -1,12 +1,12 @@
 --- 
 title: Create a plan for a site
 description: The production planner calculates the material and capacity requirements for the production of a specific item. 
-author: t-benebo
+author: Henrikan
 ms.date: 08/29/2018
 ms.topic: how-to 
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqTransPOUrgentFormPart, SysQueryForm   
 ms.reviewer: kamaybac
-ms.author: benebotg
+ms.author: henrikan
 ---
 # Create a plan for a site
 
