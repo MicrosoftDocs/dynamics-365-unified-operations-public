@@ -85,7 +85,7 @@ The following table provides an example that shows how the *select all* operator
   </tbody>
 </table>
 
-#### Multiple roles for time freezes
+#### Multiple rules for time freezes
 
 Demand planning now lets you assign multiple rules to forecast calculation action cards. Each rule can have a different time freeze horizon. In this way, updates to a continuous forecast calculation are prevented during the selected periods.
 
