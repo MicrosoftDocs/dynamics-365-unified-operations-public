@@ -2095,8 +2095,8 @@
         items:
         - name: Time series, worksheets, and planning data
           href: demand-planning/time-series.md
-        - name: Smart cursor
-          href: demand-planning/smart-cursor.md
+        - name: Copilot grid cursor
+          href: demand-planning/copilot-grid-cursor.md
         - name: Generative insights for Demand planning (production ready preview)
           href: demand-planning/generative-insights.md
         - name: Analyze demand plans with Copilot

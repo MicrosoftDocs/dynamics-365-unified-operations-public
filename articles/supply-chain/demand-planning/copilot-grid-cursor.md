@@ -26,7 +26,7 @@ To use the Copilot grid cursor, follow these steps:
 
 1. Select the Copilot grid cursor icon to open the **Cell analysis** dialog for your selected grid.
 
-    :::image type="content" source="media/copilot-grid-cursor-info.png" alt-text="The Copilot grid cursor icon.":::
+    :::image type="content" source="media/copilot-grid-cursor-info.png" alt-text="The Copilot grid cursor dialog.":::
 
 1. Use the following features of the **Cell analysis** dialog to analyze the selected cell:
 
