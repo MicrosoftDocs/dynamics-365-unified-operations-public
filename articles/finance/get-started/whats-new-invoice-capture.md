@@ -29,11 +29,10 @@ The June release of the invoice capture solution version 1.9.6.x contains the fo
 
 ### Bug fixes 
 
- - Currency code derivation fix - Resolved an issue where the system was assigning incorrect currency codes for certain currencies. 
-
-With this fix: 
- - For PO-based and header-only invoices, the currency code is now be correctly derived from the associated purchase order.
- - For cost invoices, the currency code is derived from the vendor master if the **Derive currency code for cost invoices** configuration is enabled.
+ - Currency code derivation fix - Resolved an issue where the system was assigning incorrect currency codes for certain currencies.
+   With this fix: 
+     - For PO-based and header-only invoices, the currency code is now be correctly derived from the associated purchase order.
+     - For cost invoices, the currency code is derived from the vendor master if the **Derive currency code for cost invoices** configuration is enabled.
 
 >[!Note]
 > This is a preview fix and is being rolled out to specific customers. Reach out to us if you would like this enabled for your cloud environment.  
