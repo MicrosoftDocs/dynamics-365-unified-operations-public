@@ -2057,6 +2057,8 @@
           href: demand-planning/demand-planning-licensing.md
         - name: Install and enable Demand planning
           href: demand-planning/install-demand-planning.md
+        - name: Clean up staging data
+          href: demand-planning/clean-up-staging-data.md
         - name: Security roles and row-level security
           href: demand-planning/users-access.md
         - name: Convert a Demand planning environment from sandbox to production

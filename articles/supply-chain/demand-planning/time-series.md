@@ -113,10 +113,10 @@ Legend:
 
 You can add comments to a time series to communicate with other users. For example, you can explain why you chose to edit specific time series values or how to understand a saved data view. Users can also reply to each other's comments, edit or delete comments, and mark comment threads as resolved.
 
-To view and work with comments, open a time series, and select the **Comments** button in the toolbar at the top of the page. The commenting pane that appears shows all the comments that have been made so far for the current series. From here, you can perform the following actions:
+To view and work with comments, open a time series, and select the **Comments** button in the Action Pane at the top of the page. The commenting pane that appears shows all the comments that have been made so far for the current series. From here, you can perform the following actions:
 
 - Select **New** to add a new comment.
 - For exiting comments, select the **More thread actions** button :::image type="icon" source="media/button-more-actions.png" border="false"::: to open a menu where you can choose to edit or delete the selected comment or mark the selected thread as resolved.
 - Reply to an existing comment by entering text in its **Reply** field.
 
-As mentioned [previously](#explore), you can also add comments to specific cells in the data table. To do this, select a cell and select the **Add a cell comment** button above the data grid. Cells that have comments show a comment symbol (purple speech bubble). To view the comment for a cell, select its comment symbol (or use the [Copilot grid cursor](copilot-grid-cursor.md)). When you select the **Comments** button in the toolbar at the top of the page, you'll see both the overall time series comments and all cell-specific comments.
+As mentioned [previously](#explore), you can also add comments to specific cells in the data table. To do this, select a cell and select the **Add a cell comment** button in the toolbar above the data grid. Cells that have comments show a comment symbol (purple speech bubble). To view the comment for a cell, select its comment symbol (or use the [Copilot grid cursor](copilot-grid-cursor.md)). When you select the **Comments** button in the Action Pane at the top of the page, you'll see both the overall time series comments and all cell-specific comments.

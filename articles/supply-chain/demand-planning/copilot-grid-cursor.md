@@ -30,8 +30,8 @@ To use the Copilot grid cursor, follow these steps:
 
 1. Use the following features of the **Cell analysis** dialog to analyze the selected cell:
 
-    - **Summary** – At the top of the dialog, you can see a summary of the cell and its history.
+    - **Summary** – At the top of the dialog, you can see a summary of the cell's value and its history.
     - **Breakdown** – Select this button to see a graph that shows how the cell's value has been adjusted over time.
-    - **Adjustment history** – Select this button to see a timeline that lists each time the cell was edited or a comment was entered. To read the comments associated with a listed event, select the **Show details** button for the relevant row.
+    - **Adjustment history** – Select this button to see a timeline that lists each time the cell was edited. To read the comments associated with a listed event, select the **Show details** button for the relevant row.
 
 1. When you're done exploring the cell history, select the **Close** button in the upper-right corner of the dialog.
