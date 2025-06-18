@@ -124,7 +124,7 @@ There are two options supported in Finance to report account tags in JPK_KR_PD:
 The decision on which option to use depends on your organization’s structure, reporting requirements, and the level of detail needed for financial tracking.
 
 > [!NOTE]
-> The JPK_KR_PD solution uses the **Performance enhancement for general ledger dimension set balance calculation** feature. To learn more about the feature, see [New financial dimension sets](../../general-ledger/financial-dimension-set-new). The **Performance enhancement for general ledger dimension set balance calculation** feature must be enabled to calculate the amounts in ZOiS section of JPK_KR_PD.
+> The JPK_KR_PD solution uses the **Performance enhancement for general ledger dimension set balance calculation** feature. To learn more about the feature, see [New financial dimension sets](../../general-ledger/financial-dimension-set-new.md). The **Performance enhancement for general ledger dimension set balance calculation** feature must be enabled to calculate the amounts in ZOiS section of JPK_KR_PD.
 
 ### <a id="fin-dim"></a>Option 1: Using Financial dimensions and Financial dimension set
 
