@@ -45,6 +45,7 @@ Legend:
 1. **Time series values** – This FastTab shows tabular data for the selected time series. The following features and toolbar buttons are available:
 
     - **Row selection** – Select a row to see only that row reflected in the timeline chart. To select multiple rows, select the **Shift** key while you tap or click. A blue check mark indicates each row that's selected. Select the check mark to clear the selection of a row. Select the check mark at the top of the table to clear the selection of all rows.
+    - **Add a cell comment** – Enter a comment for the selected cell. The comment is saved with the time series and can be viewed by other users. Cells that have comments show a comment symbol (purple speech bubble). To view the comment for a cell, select the comment symbol (or use the [Copilot grid cursor](copilot-grid-cursor.md)).
     - **Fit to data** – Adjust the width of visible columns to ensure that the data isn't clipped.
     - **Downloads** – Download the data as a comma-separated values (CSV) file where the current filter and group options are applied.
     - **Group by** – Select which of the available dimensions to use to group the data. For example, if you have dimensions for warehouses and product variants, you can group by both warehouse and variant (to show each warehouse, with each product variant listed under it), group by variant only (to show the variants but not the warehouses), or group by warehouse only (to show the warehouses but not the variants). Totals values are aggregated to match the group selection.
@@ -59,6 +60,9 @@ Select the **General** tab of the time series details page to view and adjust th
 - **Category** – The category of the time series. This setting controls which navigation entry, in addition to **All**, the time series is listed in under **Planning data** on the navigation pane. Select the **Search** button (magnifying glass symbol) to select a category.
 - **Time buckets** – The time buckets that are used by the time series (daily, monthly, or yearly).
 - **Allow manual edits** – A value that indicates whether the series allows users to manually edit data values by using the data table.
+
+> [!TIP]
+> In addition to the features described in this article, time series also provide *generative insights* and a *Copilot grid cursor*, each of which help you analyze and explore time series data with the help of AI. Learn more in [Generative insights for Demand planning (production ready preview)](generative-insights.md) and [Copilot grid cursor](copilot-grid-cursor.md).
 
 ## Customize time series chart and data table layouts
 
@@ -109,8 +113,10 @@ Legend:
 
 You can add comments to a time series to communicate with other users. For example, you can explain why you chose to edit specific time series values or how to understand a saved data view. Users can also reply to each other's comments, edit or delete comments, and mark comment threads as resolved.
 
-To view and work with comments, open a time series, and select the **Commenting Pane** button :::image type="icon" source="media/button-commenting-pane.png" border="false"::: in the upper-right corner of the page. The commenting pane that appears shows all the comments that have been made so far for the current series. From here, you can perform the following actions:
+To view and work with comments, open a time series, and select the **Comments** button in the toolbar at the top of the page. The commenting pane that appears shows all the comments that have been made so far for the current series. From here, you can perform the following actions:
 
 - Select **New** to add a new comment.
 - For exiting comments, select the **More thread actions** button :::image type="icon" source="media/button-more-actions.png" border="false"::: to open a menu where you can choose to edit or delete the selected comment or mark the selected thread as resolved.
 - Reply to an existing comment by entering text in its **Reply** field.
+
+As mentioned [previously](#explore), you can also add comments to specific cells in the data table. To do this, select a cell and select the **Add a cell comment** button above the data grid. Cells that have comments show a comment symbol (purple speech bubble). To view the comment for a cell, select its comment symbol (or use the [Copilot grid cursor](copilot-grid-cursor.md)). When you select the **Comments** button in the toolbar at the top of the page, you'll see both the overall time series comments and all cell-specific comments.

@@ -19,7 +19,7 @@ This article lists new features, fixes, improvements, and known issues for each 
 
 ## New feature introduced in version 1.0.0.2999
 
-This version of Demand planning marks the public preview of *Generative insights*, which offers detailed insights calculated using AI models. The public preview supports two metrics: *seasonality* and *signal correlation*. The system clusters forecast data based on distinct patterns found for each metric. For each cluster, the system provides insights such as its relative size and confidence level. You can also choose the major contributor across various dimensions in the forecast.
+This version of Demand planning marks the public preview of *Generative insights*, which offers detailed insights calculated using AI models. The production ready preview supports two metrics: *seasonality* and *signal correlation*. The system clusters forecast data based on distinct patterns found for each metric. For each cluster, the system provides insights such as its relative size and confidence level. You can also choose the major contributor across various dimensions in the forecast. Learn more in [Generative insights for Demand planning (production ready preview)](generative-insights.md).
 
 ## New fixes and improvements in version 1.0.0.2999
 
@@ -36,7 +36,7 @@ This version of Demand planning adds several new features, as described in the f
 
 #### Copilot grid cursor
 
-The *Copilot grid cursor* offers detailed insights into a selected cell's value, including its original value, manual adjustments, and full adjustment history. User comments are also shown, to help make the changes easier to understand.
+The *Copilot grid cursor* offers detailed insights into a selected cell's value, including its original value, manual adjustments, and full adjustment history. User comments are also shown, to help make the changes easier to understand. Learn more in [Copilot grid cursor](copilot-grid-cursor.md).
 
 #### New operator in rules: Select all
 
@@ -87,7 +87,7 @@ The following table provides an example that shows how the *select all* operator
 
 #### Multiple rules for time freezes
 
-Demand planning now lets you assign multiple rules to forecast calculation action cards. Each rule can have a different time freeze horizon. In this way, updates to a continuous forecast calculation are prevented during the selected periods.
+Demand planning now lets you assign multiple rules to forecast calculation steps. Each rule can have a different time freeze horizon. In this way, updates to a continuous forecast calculation are prevented during the selected periods. Learn more in [Limit time series updates with time freezes](time-freeze.md).
 
 ### New fixes and improvements in version 1.0.0.2794
 
@@ -108,11 +108,11 @@ Automatic detection of seasonality patterns was introduced in Demand planning ve
 
 #### Time freeze rules
 
-*Time freeze rules* let demand planning managers establish policies that prevent forecast calculations from recalculating and overwriting manual adjustments in an existing forecast during a specified date range. Time freeze rules are based on the dimensions that are available in each forecast, and they are easy to maintain.
+*Time freeze rules* let demand planning managers establish policies that prevent forecast calculations from recalculating and overwriting manual adjustments in an existing forecast during a specified date range. Time freeze rules are based on the dimensions that are available in each forecast, and they are easy to maintain. Learn more in [Limit time series updates with time freezes](time-freeze.md).
 
-#### Generative insights into seasonality patterns (preview)
+#### Generative insights into seasonality patterns (production ready preview)
 
-Generative insights provide AI-generated insights into your data. The initial preview of the feature provides generative insights into your seasonality patterns. Visual displays make it easy for planners to understand seasonality data and make business decisions based on it. Information is clustered (grouped) according to the detected seasonality patterns. For each cluster, generative insights provide a confidence score and describe the seasonality pattern in natural language. The system also indicates the proportion of planning items that follow the pattern.
+Generative insights provide AI-generated insights into your data. The initial preview of the feature provides generative insights into your seasonality patterns. Visual displays make it easy for planners to understand seasonality data and make business decisions based on it. Information is clustered (grouped) according to the detected seasonality patterns. For each cluster, generative insights provide a confidence score and describe the seasonality pattern in natural language. The system also indicates the proportion of planning items that follow the pattern. Learn more in [Generative insights for Demand planning (production ready preview)](generative-insights.md).
 
 #### Simplified security role dependencies
 

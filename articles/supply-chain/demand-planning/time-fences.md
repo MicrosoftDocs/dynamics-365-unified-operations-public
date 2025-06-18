@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-*Time fences* let demand planning managers define rules that prevent users from manually editing time series values that are associated with a specified time span. They ensure that agreed-upon plans remain intact and unchanged during specified periods.
+*Time fences* let demand planning managers define rules that prevent users from *manually* editing time series values that are associated with a specified time span. They ensure that agreed-upon plans remain intact and unchanged during specified periods. Time fences are similar to [time freezes](time-freezes.md), which are used to prevent the system from *automatically* editing certain existing time series values when you use [rolling forecasts](rolling-forecasts.md) or when you manually rerun a forecast to update an existing time series. However, time fences only prevent *manual* updates.
 
 For example, users might be prevented from editing specific time series values that fall within the current month. However, they can still edit values for the previous month or the next month. Every time fence uses the bucket size of the time series to establish a time span that starts in the current period and extends a fixed number of periods into the future.
 
@@ -45,23 +45,23 @@ To view, create, edit, or delete a time fence, follow these steps.
     - To create a new time fence, select **New** on the Action Pane.
     - To edit an existing time fence, select the link in the **Name** column.
     - To delete a time fence, select the row for it, and then, on the Action Pane, select **Delete**.
-    - To view and edit deactivated time fences, select the **Active time fence rules** heading, and then select **Deactivated time fence rules** in the dropdown list.
+    - To view and edit inactive time fences, select the **Active time fence rules** heading, and then select **Inactive time fence rules** in the dropdown list. <!-- KFM: No longer true? On my Aurora build, these does nothing and inactive time fences are shown in the Active time fence rules view. Remove this? -->
 
-1. If you chose to create or edit a time fence in the previous step, a tabbed window appears. On the **Summary** tab, set the following fields:
+1. If you chose to edit a time fence in the previous step, a tabbed window appears. If you choose to create a new time freeze, then a wizard launches, which offers similar settings. On the **Summary** edit tab (or **Get started** wizard page), set the following fields:
 
     - **Name** – Enter a name for the time fence.
     - **Description** – Enter a short description of the time fence.
     - **Owner** – Select the user account that owns the time fence record.
-    - **Active** – Select whether the time fence should be active.
+    - **Active** – Select whether the time fence should be active. (This option is only shown on the **Summary** edit tab. In the wizard, you can set this field on the **Review and finish** page.)
 
-1. On the **Conditions** tab, define the conditions under which the time fence applies. Use the **Add condition** and **Delete** (trashcan) buttons to add or remove rows as required. The rows are combined by using an *AND* operator. Therefore, the time fence locks only cells where the condition in *every* row is true. For each row, set the following fields:
+1. On the **Conditions** edit tab (or **Add conditions** wizard page), define the conditions under which the time fence applies. Use the **Add condition** and **Delete** (trashcan) buttons to add or remove rows as required. The rows are combined by using an *AND* operator. Therefore, the time fence locks only cells where the condition in *every* row is true. For each row, set the following fields:
 
     - **Table** – Select the data table that provides the cell value to compare.
     - **Column** – For the selected table, select the column that provides the cell value to compare.
     - **Operator** – Select the logic to apply to test the cell value against the row value. For example, select *equals*, *greater than*, or *less than*.
     - **Value** – Enter a comma-separated list of values to compare the cell value to. You can either select among available values in a dropdown list or enter custom values. If you specify more than one value, the values are combined by using an *OR* operator. Therefore, the condition in the row is true for every time series cell that matches any one of the specified values.
 
-1. On the **Time fence horizon** page, define the time span that the time fence applies to. The time span always starts in the time bucket that includes the current date. It then extends a fixed number of time buckets into the future. Set the following fields:
+1. On the **Time fence horizon** edit tab or wizard page, define the time span that the time fence applies to. The time span always starts in the time bucket that includes the current date. It then extends a fixed number of time buckets into the future. Set the following fields:
 
     - **Time buckets** – Specify the size of the time buckets that you want to use to define the time span. The time fence applies only to time series that also use this time bucket size. The system doesn't convert between time bucket sizes. For example, if you select *Monthly* here, your rule doesn't apply to time series that use *Weekly* time buckets (even though a month is about four weeks long).
     - **Current period +** – Specify the total number of time buckets, after the current one, to include in the time fence. The time fence always applies to the current time bucket. Therefore, if you want to include only the current time bucket in the time fence, set this field to *0* (zero). To include only the current time bucket and the next one, set this field to *1*.
@@ -72,7 +72,7 @@ To view, create, edit, or delete a time fence, follow these steps.
 
 ## Overlapping time fences
 
-In situations where time fences overlap, the more permissive condition applies. Here are some examples:
+In situations where time fences overlap, the more specific condition applies. Here are some examples:
 
 - A time fence for *all users* prevents a specific cell from being edited, but the time fence for the *manager* user role allows the cell to be edited. In this case, a user who has the *manager* role is allowed to edit the cell.
 - A time fence of four months is set for location 1, but a time fence of two months is set for product 00001. In this case, the time fence for product 0001 at location 1 is two months.
