@@ -37,10 +37,9 @@ The June release of the invoice capture solution version 1.9.6.x contains the fo
 >[!Note]
 > This is a preview fix and is being rolled out to specific customers. Reach out to us if you would like this enabled for your cloud environment.  
 
- - Product variant matching fix - Resolved an issue where invoices with product variants triggered a “Item number is not the same as the one on the purchase order line” validation error, even when a matching PO line existed. 
-
-With this fix: 
- - Item numbers are accurately matched with variants during the derive and check process. 
+ - Product variant matching fix - Resolved an issue where invoices with product variants triggered a “Item number is not the same as the one on the purchase order line” validation error, even when a matching PO line existed.
+   With this fix: 
+     - Item numbers are accurately matched with variants during the derive and check process. 
 
 ### Feature enhancements
 
