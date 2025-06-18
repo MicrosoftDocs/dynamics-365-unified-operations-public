@@ -37,7 +37,7 @@ The June release of the invoice capture solution version 1.9.6.x contains the fo
 >[!Note]
 > This is a preview fix and is being rolled out to specific customers. Reach out to us if you would like this enabled for your cloud environment.  
 
- - Product variant matching fix - Resolved an issue where invoices with product variants triggered a “Item number is not the same as the one on the purchase order line” validation error, even when a matching PO line existed.
+ - Product variant matching fix - Resolved an issue where invoices with product variants triggered a “Item number isn't the same as the one on the purchase order line” validation error, even when a matching PO line existed.
    With this fix: 
      - Item numbers are accurately matched with variants during the derive and check process. 
 
@@ -45,8 +45,8 @@ The June release of the invoice capture solution version 1.9.6.x contains the fo
 
 | Feature | Description |
 | --- |--- |
-|Multi-line selection and removal for invoice lines | The select all and multi-line removal feature simplifies the review process for invoices with multiple lines. Users can now select or deselect all invoice lines on the current page using a single checkbox. This enables faster removal of unwanted lines—especially useful for invoices with hundreds of entries. A confirmation dialog ensures safe deletion, and a notification confirms success. | 
-|Quantity decimal precision configuration | The **Quantity decimal precision** feature allows users to control the number of decimal places displayed for quantity fields. Previously limited to two decimals, this caused issues in precision-sensitive industries like steel manufacturing. A new dropdown parameter allows users choose between 2 (default) and 3 decimal places for greater accuracy. |
+|Multi-line selection and removal for invoice lines | The select all and multi-line removal feature simplifies the review process for invoices with multiple lines. Users can now select or deselect all invoice lines on the current page using a single checkbox. This enables faster removal of unwanted lines, this is useful for invoices with hundreds of entries. A confirmation dialog ensures safe deletion, and a notification confirms success. | 
+|Quantity decimal precision configuration | The **Quantity decimal precision** feature allows users to control the number of decimal places displayed for quantity fields. Previously limited to two decimals, this caused issues in precision-sensitive industries like steel manufacturing. A new dropdown parameter allows users to choose between two (default) and three decimal places for greater accuracy. |
 
 ## May 2025
 
