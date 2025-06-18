@@ -7,7 +7,7 @@ ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: ritakimani1
+ms.author: ritakimani
 ms.search.validFrom: 2025-06-18
 ms.custom: 
   - bap-template
