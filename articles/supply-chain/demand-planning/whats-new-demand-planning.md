@@ -40,54 +40,11 @@ The *Copilot grid cursor* offers detailed insights into a selected cell's value,
 
 #### New operator in rules: Select all
 
-To improve efficiency and make queries easier to formulate, Demand planning now provides a *select all* operator. The new operator is available in the following policies: *time fence*, *time freeze*, and *row level access*.
-
-The following table provides an example that shows how the *select all* operator can be used in a time fence rule. As a result of the rules, all products except *Product A* have a two-month time fence. *Product A* has a three-month time fence.
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="4">Conditions</th>
-      <th colspan="4">Ruling</th>
-    </tr>
-    <tr>
-      <th>Table</th>
-      <th>Column</th>
-      <th>Operator</th>
-      <th>Value</th>
-      <th>Time bucket</th>
-      <th>Time bucket size</th>
-      <th>Role</th>
-      <th>Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Product</td>
-      <td>Product name</td>
-      <td>Select all</td>
-      <td>Not applicable</td>
-      <td>Monthly</td>
-      <td>2&nbsp;months</td>
-      <td>All</td>
-      <td>Active</td>
-    </tr>
-    <tr>
-      <td>Product</td>
-      <td>Product name</td>
-      <td>Equals</td>
-      <td>Product&nbsp;A</td>
-      <td>Monthly</td>
-      <td>3&nbsp;months</td>
-      <td>All</td>
-      <td>Active</td>
-    </tr>
-  </tbody>
-</table>
+To improve efficiency and make queries easier to formulate, Demand planning now provides a *select all* operator. The new operator is available in the following policies: *time fence*, *time freeze*, and *row level access*. Learn more in learn more in [Using the select all operator](time-fences.md#select-all).
 
 #### Multiple rules for time freezes
 
-Demand planning now lets you assign multiple rules to forecast calculation steps. Each rule can have a different time freeze horizon. In this way, updates to a continuous forecast calculation are prevented during the selected periods. Learn more in [Limit time series updates with time freezes](time-freeze.md).
+Demand planning now lets you assign multiple time freeze rules to *Forecast* and *Forecast with signals* steps. Each rule can have a different time freeze horizon. In this way, updates to a continuous forecast calculation are prevented during the selected periods. <!-- KFM: This isn't clear, really. Maybe improve this (though maybe the main (linked) topic will be enough) --> Learn more in [Design forecast models](design-forecast-models.md).
 
 ### New fixes and improvements in version 1.0.0.2794
 

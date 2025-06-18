@@ -58,8 +58,8 @@ To view, create, edit, or delete a time fence, follow these steps.
 
     - **Table** – Select the data table that provides the cell value to compare.
     - **Column** – For the selected table, select the column that provides the cell value to compare.
-    - **Operator** – Select the logic to apply to test the cell value against the row value. For example, select *equals*, *greater than*, or *less than*.
-    - **Value** – Enter a comma-separated list of values to compare the cell value to. You can either select among available values in a dropdown list or enter custom values. If you specify more than one value, the values are combined by using an *OR* operator. Therefore, the condition in the row is true for every time series cell that matches any one of the specified values.
+    - **Operator** – Select the logic to apply to test the cell value against the row value. For example, select *equals*, *greater than*, or *less than*. There is also a *Select all* operator, which matches all values in the column; learn more in [Using the select all operator](#select-all).
+    - **Value** – Enter a comma-separated list of values to compare the cell value to. You can either select among available values in a dropdown list or enter custom values. If you specify more than one value, the values are combined by using an *OR* operator. Therefore, the condition in the row is true for every time series cell that matches any one of the specified values. The **Value** field is disabled when you use the *Select all* operator.
 
 1. On the **Time fence horizon** edit tab or wizard page, define the time span that the time fence applies to. The time span always starts in the time bucket that includes the current date. It then extends a fixed number of time buckets into the future. Set the following fields:
 
@@ -69,6 +69,53 @@ To view, create, edit, or delete a time fence, follow these steps.
     The **Example** area shows the time fence that results from your settings on this page.
 
 1. On the **Role** page, select the user security roles that the time fence applies to.
+
+## <a name="select-all"></a>Using the select all operator
+
+To improve efficiency and make queries easier to formulate, Demand planning provides a *select all* operator for creating rules for time fences, time freezes, and row level access.
+
+The following table provides an example that shows how the *select all* operator can be used in a time fence rule. As a result of the rules, all products except *Product A* have a two-month time fence. *Product A* has a three-month time fence.
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Conditions</th>
+      <th colspan="4">Ruling</th>
+    </tr>
+    <tr>
+      <th>Table</th>
+      <th>Column</th>
+      <th>Operator</th>
+      <th>Value</th>
+      <th>Time bucket</th>
+      <th>Time bucket size</th>
+      <th>Role</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Product</td>
+      <td>Product name</td>
+      <td>Select all</td>
+      <td>Not applicable</td>
+      <td>Monthly</td>
+      <td>2&nbsp;months</td>
+      <td>All</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <td>Product</td>
+      <td>Product name</td>
+      <td>Equals</td>
+      <td>Product&nbsp;A</td>
+      <td>Monthly</td>
+      <td>3&nbsp;months</td>
+      <td>All</td>
+      <td>Active</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Overlapping time fences
 

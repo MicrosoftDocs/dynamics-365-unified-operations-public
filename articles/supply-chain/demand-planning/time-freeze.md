@@ -36,7 +36,7 @@ To view, create, edit, or delete a time freeze, follow these steps.
     - To create a new time freeze, select **New** on the Action Pane.
     - To edit an existing time freeze, select the link in the **Name** column.
     - To delete a time freeze, select the row for it, and then, on the Action Pane, select **Delete**.
-    - To view and edit deactivated time freezes, select the **Active time freeze rules** heading, and then select **Inactive time freeze rules** in the dropdown list. Other views are also available here, including views for viewing only daily, monthly, or weekly time freeze rules. <!-- KFM: No longer true? On my Aurora build, these does nothing and inactive time fences are shown in the Active time fence rules view. Remove this? -->
+    - To view and edit deactivated time freezes, select the **Active time freeze rules** heading, and then select **Inactive time freeze rules** in the dropdown list. Other views are also available here, including views for viewing only daily, monthly, or weekly time freeze rules. <!-- KFM: No longer true? On my Aurora build, these do nothing and inactive time fences are shown in the Active time fence rules view. Remove this? -->
 
 1. If you chose to edit a time freeze in the previous step, a tabbed window appears. If you choose to create a new time freeze, then a wizard launches, which offers similar settings. On the **Summary** edit tab (or **Get started** wizard page), set the following fields:
 
@@ -49,8 +49,8 @@ To view, create, edit, or delete a time freeze, follow these steps.
 
     - **Table** – Select the data table that provides the cell value to compare.
     - **Column** – For the selected table, select the column that provides the cell value to compare.
-    - **Operator** – Select the logic to apply to test the cell value against the row value. For example, select *equals*, *greater than*, or *less than*.
-    - **Value** – Enter a comma-separated list of values to compare the cell value to. You can either select among available values in a dropdown list or enter custom values. If you specify more than one value, the values are combined by using an *OR* operator. Therefore, the condition in the row is true for every time series cell that matches any one of the specified values.
+    - **Operator** – Select the logic to apply to test the cell value against the row value. For example, select *equals*, *greater than*, or *less than*. There is also a *Select all* operator, which matches all values in the column; learn more in [Using the select all operator](time-fences.md#select-all).
+    - **Value** – Enter a comma-separated list of values to compare the cell value to. You can either select among available values in a dropdown list or enter custom values. If you specify more than one value, the values are combined by using an *OR* operator. Therefore, the condition in the row is true for every time series cell that matches any one of the specified values. The **Value** field is disabled when you use the *Select all* operator.
 
 1. On the **Time freeze horizon** edit tab or wizard page, define the time span that the time freeze applies to. The time span always starts in the time bucket that includes the current date. It then extends a fixed number of time buckets into the future. Set the following fields:
 
@@ -58,3 +58,5 @@ To view, create, edit, or delete a time freeze, follow these steps.
     - **Current period +** – Specify the total number of time buckets, after the current one, to include in the time freeze. The time freeze always applies to the current time bucket. Therefore, if you want to include only the current time bucket in the time freeze, set this field to *0* (zero). To include only the current time bucket and the next one, set this field to *1*.
 
     The **Example** area shows the time freeze that results from your settings on this page.
+
+<!-- KFM: We have a Time freeze rules setting for *Forecast* steps and for *Forecast with signals* steps. We should describe that here. But what effects do these settings have? Are these settings required in order for a time freeze rule to have any effect?-->
