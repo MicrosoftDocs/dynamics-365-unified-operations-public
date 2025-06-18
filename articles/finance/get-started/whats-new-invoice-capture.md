@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in Invoice capt
 author: shielas  
 ms.author: shielas
 ms.topic: whats-new
-ms.date: 04/21/2025
+ms.date: 06/18/2025
 ms.reviewer: twheeloc
 ms.custom: 
   - bap-template
@@ -23,6 +23,32 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 [!include [banner](../includes/banner.md)]
 
 This article provides information about the Invoice capture solution that automatically creates vendor invoices from digital invoice images. Learn more in [Invoice capture overview](../accounts-payable/invoice-capture-overview.md).
+
+## June 2025
+The June release of the invoice capture solution version 1.9.6.x contains the following feature enhancements and bug fixes.  
+
+### Bug fixes 
+
+ - Currency code derivation fix - Resolved an issue where the system was assigning incorrect currency codes for certain currencies. 
+
+With this fix: 
+ - For PO-based and header-only invoices, the currency code is now be correctly derived from the associated purchase order.
+ - For cost invoices, the currency code is derived from the vendor master if the **Derive currency code for cost invoices** configuration is enabled.
+
+>[!Note]
+> This is a preview fix and is being rolled out to specific customers. Reach out to us if you would like this enabled for your cloud environment.  
+
+ - Product variant matching fix - Resolved an issue where invoices with product variants triggered a “Item number is not the same as the one on the purchase order line” validation error, even when a matching PO line existed. 
+
+With this fix: 
+ - Item numbers are accurately matched with variants during the derive and check process. 
+
+### Feature enhancements
+
+| Feature | Description |
+| --- |--- |
+|Multi-line selection and removal for invoice lines | The select all and multi-line removal feature simplifies the review process for invoices with multiple lines. Users can now select or deselect all invoice lines on the current page using a single checkbox. This enables faster removal of unwanted lines—especially useful for invoices with hundreds of entries. A confirmation dialog ensures safe deletion, and a notification confirms success. | 
+|Quantity decimal precision configuration | The **Quantity decimal precision** feature allows users to control the number of decimal places displayed for quantity fields. Previously limited to two decimals, this caused issues in precision-sensitive industries like steel manufacturing. A new dropdown parameter allows users choose between 2 (default) and 3 decimal places for greater accuracy. |
 
 ## May 2025
 
