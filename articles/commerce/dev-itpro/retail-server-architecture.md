@@ -53,5 +53,8 @@ CRT is a collection of portable .NET libraries that contain the core commerce bu
 
 The channel database holds transactional data and master data from one or more commerce channels, such as an online store or a brick-and-mortar store. Master data is pushed down from Commerce headquarters to the channel database by using Commerce Data Exchange (CDX). Transactional data that is stored in the channel database is pulled back to Commerce headquarters by using CDX. For more information, see [Channel database extensions](channel-db-extensions.md).
 
+## Headless Commerce Integration
+To help you **kickstart and accelerate** the development of custom storefronts using Dynamics 365 Headless Commerce, Microsoft provides a set of sample implementations tailored for headless and composable commerce scenarios. The [Headless Commerce Samples GitHub repository](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Commerce/HeadlessCommerceSamples) includes both technical guidance and hands-on code samples to help you quickly get started. These samples serve as quickstart templates and reference implementations for partners, ISVs, and customers, covering core scenarios such as authentication, customer data, product data, pricing, cart, checkout, and order ingestion. For detailed information on each commerce API endpoint, as well as guidance on packaging, deploying, and operating headless commerce solutions, see resources linked in the **Components** section above.
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
