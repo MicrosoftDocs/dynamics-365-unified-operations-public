@@ -92,12 +92,13 @@ The following invoices aren't included in the proposal:
 
 -   1001, because the discount date of June 29 has already expired, so this invoice is no longer eligible for the cash discount, and the due date of July 15 is also outside the date range.
 
-To edit invoices and their details that were defined for the payment lines, follow these steps:
-1. Go to the **Payment proposal** section.
-2. In the action pane of the payment journal lines, select **Edit invoices for selected payment**.
-This allows you to modify the invoice details as needed.
-
 >[!NOTE]
+>To edit invoices and their details that were defined for the payment lines, follow these steps:
+>1. Go to the **Payment proposal** section.
+>2. In the action pane of the payment journal lines, select **Edit invoices for selected payment**.
+>This allows you to modify the invoice details as needed.
+
+>[!Important]
 > When running payment proposals, the behavior of vendor bank account updates depends on the status of the public sector configuration key:
 > Public sector configuration key is turned on - Changes made on the vendor bank accounts aren't moved to the payemnt journal lines. 
 > Public sector configuration key is turned off - Editing is possible at the time of the proposal run, and changes made during this step are moved to the payment journal lines.
