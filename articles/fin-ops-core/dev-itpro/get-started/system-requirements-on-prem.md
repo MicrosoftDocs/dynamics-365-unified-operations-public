@@ -111,7 +111,7 @@ The actual hardware requirements vary, based on the system configuration, the da
 
 - The number of transactions per hour
 - The number of concurrent users
-- Intergration loads
+- Integration loads
 
 ## Minimum infrastructure requirements
 

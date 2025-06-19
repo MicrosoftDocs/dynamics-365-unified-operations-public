@@ -356,7 +356,7 @@ To add a Guide to a route operation relation:
 1. In the top grid, select the operation you want to provide guidance for.
 1. In the bottom grid, select a specific relation (or the generic **All** relation).
     ![Select an operation and then a relation.](media/instruction-guides-RouteOperationRelation.png "Select an operation and then a relation")
-1. Above the bottom gird, open the **Associated Guides** tab.
+1. Above the bottom grid, open the **Associated Guides** tab.
     ![The Associated Guides tab.](media/instruction-guides-RouteOperationRelation-AddGuide.png "The Associated Guides tab")
 1. Select **Add** from the toolbar at the top of the bottom grid to add a new line to the grid.
 1. For the new row, use the drop-down list in the **Name** column to choose the Guide you want to assign. In the rest of the row, select the check box for each context where the selected Guide should be available.
