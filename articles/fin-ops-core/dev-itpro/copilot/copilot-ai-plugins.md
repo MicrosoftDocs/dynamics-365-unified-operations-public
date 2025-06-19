@@ -235,7 +235,7 @@ To add your AI operation to the in-app sidecar chat experiences in finance and o
 1. Select a **Connection**, and select **Add and configure**.
 1. In the **Details** section:
    
-   1. provide a **Name** value that is specific to the operation. This could be the same name as the Custom API.
+   1. Provide a **Name** value that is specific to the operation. This could be the same name as the Custom API.
    1. Provide a **Description** that describes the operation to be performed. This is the field the agent orchestrator will use to understand when the operation needs to be called by generative orchestration.
    1. Select the appropriate **Authentication** option for your agent.
 
@@ -259,9 +259,9 @@ The agent where you added the new tool must be able to determine when it should 
 
 #### Create a topic in the copilot
 
-If the classic orchestration is used in your agent, the agent responds to users by triggering the topic that has trigger phrases that most closely match the user's prompt. It then fills in the topic inputs from the conversation context. To confirm whether your copilot is in classic mode, select **No** in the **Use generative AI orchestration for your agent's response?** section of the **Generative AI** tab in the copilot settings.
+If classic orchestration is used in your agent, the agent responds to users by triggering the topic that has trigger phrases that most closely match the user's prompt. It then fills in the topic inputs from the conversation context. To confirm whether your copilot is in classic mode, select **No** in the **Use generative AI orchestration for your agent's response?** section of the **Generative AI** tab in the agent settings.
 
-When classic orchestration is enabled in a copilot, you must create a separate topic to invoke the action that is added to the copilot.
+When classic orchestration is enabled in an agent, you must create a separate topic to invoke the action that is added to the agent.
 
 1. In Copilot Studio, open the agent.
 1. On the **Topics** tab, select **Add a topic** \> **From blank**.
