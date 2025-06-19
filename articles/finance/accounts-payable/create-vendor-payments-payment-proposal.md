@@ -100,7 +100,7 @@ The following invoices aren't included in the proposal:
 
 >[!Important]
 > When running payment proposals, the behavior of vendor bank account updates depends on the status of the public sector configuration key:
-> Public sector configuration key is turned on - Changes made on the vendor bank accounts aren't moved to the payemnt journal lines. 
+> Public sector configuration key is turned on - Changes made on the vendor bank accounts aren't moved to the payment journal lines. 
 > Public sector configuration key is turned off - Editing is possible at the time of the proposal run, and changes made during this step are moved to the payment journal lines.
 > This design aims to prevent scenarios where payments could be redirected without proper oversight and ensure required segregation of duties and audit trail is in place, which is a critical control for public sector customers.
 
