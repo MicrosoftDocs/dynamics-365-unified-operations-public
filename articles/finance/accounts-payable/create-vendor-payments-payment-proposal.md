@@ -92,6 +92,18 @@ The following invoices aren't included in the proposal:
 
 -   1001, because the discount date of June 29 has already expired, so this invoice is no longer eligible for the cash discount, and the due date of July 15 is also outside the date range.
 
+>[!NOTE]
+> To edit invoices and their details that were defined for the payment lines, follow these steps:
+> 1. Navigate to the **Payment proposal** section.
+> 2. In the action pane of the payment journal lines, select **Edit invoices for selected payment**.
+> This will allow you to modify the invoice details as needed.
+
+>[!NOTE]
+> When running payment proposals, the behavior of vendor bank account updates depends on the status of the public sector configuration key:
+> Public sector configuration key is turned on: changes made on the vendor bank accounts are not moved to the payemnt journal lines. Functionality **Edit invoices for selected payment** should be used to make changes.
+> Public sector configuration key is turned off - Editing is possible at the time of the proposal run, and changes made during this step are move to the payment journal lines.
+> This design in D365 Finance aims to prevent scenarios where payments could be redirected without proper oversight and ensure required segregation of duties and audit trail is in place, which is a critical control for public sector customers.
+
 ## Country/Region specific considerations
 ### Norway
 
