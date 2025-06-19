@@ -68,7 +68,9 @@ To view, create, edit, or delete a time fence, follow these steps.
 
     The **Example** area shows the time fence that results from your settings on this page.
 
-1. On the **Role** page, select the user security roles that the time fence applies to.
+1. On the **Role** edit tab (or **Select roles** wizard page), select the user security roles that the time fence applies to.
+
+1. On the **Review and finish** wizard page (which isn't shown when you edit an existing time fence), review the settings that you made in the previous steps and set the **Active** option as needed. If everything looks correct, select **Review and Finish** to create the time fence.
 
 ## <a name="select-all"></a>Using the select all operator
 

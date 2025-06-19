@@ -59,4 +59,6 @@ To view, create, edit, or delete a time freeze, follow these steps.
 
     The **Example** area shows the time freeze that results from your settings on this page.
 
+1. On the **Review and finish** wizard page (which isn't shown when you edit an existing time freeze), review the settings that you made in the previous steps and set the **Active** option as needed. If everything looks correct, select **Review and Finish** to create the time freeze.
+
 <!-- KFM: We have a Time freeze rules setting for *Forecast* steps and for *Forecast with signals* steps. We should describe that here. But what effects do these settings have? Are these settings required in order for a time freeze rule to have any effect?-->
