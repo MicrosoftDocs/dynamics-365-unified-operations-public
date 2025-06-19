@@ -161,7 +161,7 @@ After the operation is defined in X++ and deployed in your finance and operation
 
 ### Create the Dataverse custom API
 
-The [Dataverse custom API](/power-apps/developer/data-platform/custom-api) is the API object that has the request and response parameters that are used to invoke the X++ class in finance and operations apps. Complete the procedures in this section to create the custom API.
+The [Dataverse custom API](/power-apps/developer/data-platform/custom-api) is the API object that has the request and response parameters used to invoke the X++ class in finance and operations apps. Follow the steps in this section to create the custom API.
 
 #### Create the API
 
@@ -222,99 +222,61 @@ Response properties are the outputs of the action. To create response properties
 
 1. Save and close the custom API response property.
 
-### Create the AI plugin
+## Add the action as a tool in your agent
 
-The AI plugin is the grouping of AI operations that are associated with the security role. The AI plugin record is the registration for the plugin in the Dataverse plugin registry. The plugin should be based on a specific security role. Users who have access to the plugin should have permissions to perform all operations in it.
-
-1. In your solution, select **New** \> **More** \> **Other** \> **AIPlugin**.
-1. On the **New AIPlugin** page, enter the following details for the AI plugin record:
-
-    - **Name**: Use the following format:
-
-        \<*Your solution's prefix*\>\_\<*Name of the security role*\>
-
-        For example, enter **jch_SalesTeamCopilotRole**.
-
-    - **PluginType**: Select **Dataverse**.
-    - **ModelName**: Use the label for the security role in finance and operations apps. This label is shown for the plugin in Copilot Studio.
-    - **ModelDescription** and **HumanDescription**: Provide a description of the plugin and related operations.
-
-1. Save and close the AI plugin record.
-
-### Create the AI plugin operation
-
-The AI plugin operation is the registration in the Dataverse plugin registry for the business operation that is defined in your X++ class. The operation is assigned to an AI plugin in the registry. It then becomes available so that it can be added as an action in an agent. The operation is associated with the custom API to ensure that the correct logic is invoked when the action is included in an agent.
-
-1. In your solution, select **New** \> **More** \> **Other** \> **AIPluginOperation**.
-1. On the **New AIPluginOperation** page, enter the following details for the AI plugin operation record:
-
-    - **Name**: Use the following format:
-
-        \<*Your solution's prefix*\>\_\<*Name of the X++ class for the operation*\>
-
-        For example, enter **jch_CustomAPICalculateCustomerBalance**.
-
-    - **AIPlugin**: Select the `AIPlugin` record that you created.
-    - **OperationId**: Use the following format:
-
-        \<*Your solution's prefix*\>\_\<*Name of the X++ class for the operation*\>
-
-    - **AI Plugin Operation Export Key**: Use the following format:
-
-        aiplugin.name=\<*Name of the AI plugin*\>,operationid=\<*Name of the AI plugin operation*\>
-
-        For example, enter **aiplugin.name=jch_SalesTeamCopilotRole,operationid=jch_CustomAPICalculateCustomerBalance**.
-
-    - **Description**: Enter a description of the operation from your X++ class.
-
-1. Save and close the AI plugin operation record.
-
-## Add the action to your copilot
-
-For each operation that is listed in the plugin registry, you can add the action to any copilot that is connected to the registry in Copilot Studio. For example, you can add the action to Copilot for finance and operations apps or custom copilots.
+For each operation with a Custom API, you can add the action to any agent in Copilot Studio with access to the object. For example, you can add the action to Copilot for finance and operations apps or custom agents. 
 
 To add your AI operation to the in-app sidecar chat experiences in finance and operations apps, or to a custom copilot, follow these steps.
 
-1. In Copilot Studio, open the copilot where you want to add the plugin capability.
-1. On the **Actions** page, select **Add an action**.
-1. In the **Search** field, search for the name of your AI plugin operation. Select your plugin.
-1. Follow the steps in the wizard. Select the inputs and outputs from your custom API.
-1. Select **Finish**.
+1. In Copilot Studio, open the agent where you want to add the new capability.
+1. On the **Tools** page, select **Add a tool**.
+1. Search for and select the **Microsoft Dataverse** connector.
+1. Select the **Perform an unbound action in selected environment** connector action.
+1. Select a **Connection**, and select **Add and configure**.
+1. In the **Details** section:
+   1. provide a **Name** value that is specific to the operation. This could be the same name as the Custom API.
+   1. Provide a **Description** that describes the operation to be performed. This is the field the agent orchestrator will use to understand when the operation needs to be called by generative orchestration.
+   1. Select the appropriate **Authentication** option for your agent.
+1. In the **Inputs** section:
+   1. For the **Environment**, set the **Fill using** value to **Custom value**. You can select a specific environment or select the **(Current)** environment if the agent solution will be deployed in other environments.
+   2. For the **Action Name**, set the **Fill using** value to **Customer value**. In the **Choose an action** drop-down list, select the unique name of your Custom API created earlier.
+   3. Select the **Add input** action to add each request parameter from your Custom API. For each parameter, provide a **Description** for the input to help generative AI fill the properties from the prompt.
+1. In the **Completion** section, open the settings for each of the outputs from the Custom API, and provide a **Description** for each.
+2. **Save** and close the new tool.
 
-For more information about how to add actions to your copilot, see [Use actions with custom copilots in Copilot Studio (preview)](/microsoft-copilot-studio/advanced-plugin-actions).
+For more information about how to add actions to your agent, see [Add tools to custom agents](/microsoft-copilot-studio/advanced-plugin-actions).
 
 ### Configure the copilot to invoke the action
 
-The copilot where you added the new action must be able to determine when it should invoke the action as part of the copilot orchestration. The copilot needs a way to match a user's prompt in the chat pane to your action or sequence of actions. There are two ways to enable the copilot to include the action in the copilot orchestration:
+The agent where you added the new tool must be able to determine when it should invoke the action as part of the agent orchestration. The copilot needs a way to match a user's prompt in the chat pane or autonomous trigger to your action or sequence of actions. There are two ways to enable the copilot to include the action in the copilot orchestration:
 
-- In the copilot, create a topic that calls the action.
+- If your agent uses classic orchestration, then create a topic that calls the action.
 - Enable the copilot to let generative AI orchestrate copilot topics and actions.
 
 #### Create a topic in the copilot
 
-If the default classic mode is used in a copilot, the copilot responds to users by triggering the topic that has trigger phrases that most closely match the user's prompt. It then fills in the topic inputs from the conversation context. To confirm that your copilot is in classic mode, select the **Classic** option in the **How should your copilot decide how to respond** section of the **Generative AI** tab in the copilot settings.
+If the classic orchestration is used in your agent, the agent responds to users by triggering the topic that has trigger phrases that most closely match the user's prompt. It then fills in the topic inputs from the conversation context. To confirm whether your copilot is in classic mode, select **No** in the **Use generative AI orchestration for your agent's response?** section of the **Generative AI** tab in the copilot settings.
 
-When classic mode is enabled in a copilot, you must create a separate topic to invoke the action that is added to the copilot.
+When classic orchestration is enabled in a copilot, you must create a separate topic to invoke the action that is added to the copilot.
 
-1. In Copilot Studio, open the copilot.
+1. In Copilot Studio, open the agent.
 1. On the **Topics** tab, select **Add a topic** \> **From blank**.
 1. On the **Trigger** node, edit the trigger phrases to provide the types of user prompts that should trigger the action.
 1. Add a **Plugin action** node to the topic for your action:
 
     1. Select **Add node (+)**.
-    1. Select **Class an action** \> **Plugin (preview)**.
+    1. Select **Add a tool** \> **Tool**.
     1. Select your action in the list.
-    1. Save the topic, and publish the change to the copilot.
+    2. If you don't have a response defined for the tool in the **Completion** section of the tool definition, you may also want to add a **Message** node afterwards to provide a response to the user or agent after the action is run.
+    1. Save the topic, and publish the change to the agent.
 
-For more information, see [Call an action from within a topic](/microsoft-copilot-studio/advanced-plugin-actions#call-action-from-within-a-topic).
+For more information, see [Call an existing tool from within a topic](/microsoft-copilot-studio/advanced-plugin-actions#call-an-existing-tool-from-within-a-topic).
 
 #### Let generative AI orchestrate copilot topics and actions
 
-When you enable generative mode in a copilot, Copilot Studio uses generative AI to determine the user's intent. It then uses generative AI to identify the most appropriate action, topic, or combination of actions and topics that should be invoked to respond to the user prompt.
-
-When generative mode is enabled in a copilot, you don't have to create a separate topic to invoke the action. For more information about generative mode, see [Orchestrate copilot topics and actions with generative AI (preview)](/microsoft-copilot-studio/advanced-generative-actions).
+When you enable generative AI orchestration in an agent, Copilot Studio uses generative AI to determine the user's intent. It then uses generative AI to identify the most appropriate action, topic, or combination of actions and topics that should be invoked to respond to the user prompt or autonomous trigger. In this case, you don't have to create a separate topic to invoke the tool. For more information about generative mode, see [Orchestrate agent behavior with generative AI](/microsoft-copilot-studio/advanced-generative-actions).
 
 > [!IMPORTANT]
-> Generative mode isn't currently supported in Copilot for finance and operations apps. However, it should become supported and enabled by default in Copilot for finance and operations apps in a future release, as feature and quality benchmarks are validated.
+> Generative mode isn't currently supported in Copilot for finance and operations apps. It will become supported and enabled by default in Copilot for finance and operations apps in a future release, as feature and quality benchmarks are validated.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
