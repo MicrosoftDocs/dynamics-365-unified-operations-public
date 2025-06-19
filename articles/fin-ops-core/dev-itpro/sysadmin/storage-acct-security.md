@@ -6,7 +6,7 @@ ms.author: mansijain
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 01/15/2025
+ms.date: 06/19/2025
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2024-09-12
@@ -161,7 +161,7 @@ It works. If Managed Identity is enabled, a user-delegated SAS URL can be used t
 This error may occur when the user-delegated SAS URL provided to the File.UseFileFromURL method is being truncated due to insufficient string length in the variable used.
 
 **Cause:**
-The user-delegated SAS URL, which is often long, may be cut off if the variable holding it is not large enough to store the full value. This truncation results in an invalid or incomplete URL, triggering a 409 Conflict error from the remote server.
+The user-delegated SAS URL, which is often long, may be cut off if the variable holding it isn't large enough to store the full value. This truncation results in an invalid or incomplete URL, triggering a 409 Conflict error from the remote server.
 
 **Resolution**:
 1. Check the Variable Type and Length:
