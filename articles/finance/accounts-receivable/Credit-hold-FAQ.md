@@ -45,7 +45,7 @@ When a sales order is sent to the Credit management hold list, the following pos
 
 > Order has been sent to credit management
 
-[![Screenshot that shows an example of a Credit managment error message.](./media/CreditManagementError.png)](./media/CreditManagementError.png)
+[![Screenshot that shows an example of a Credit management error message.](./media/CreditManagementError.png)](./media/CreditManagementError.png)
 
 The order appears in the Credit management hold list at **Credit and collections** \> **Credit management hold list** \> **All credit holds** or **Open credit holds**.
 
