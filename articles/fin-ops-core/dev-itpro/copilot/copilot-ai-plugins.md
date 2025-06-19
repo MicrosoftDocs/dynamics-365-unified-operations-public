@@ -54,7 +54,7 @@ Before you begin to develop AI tools that use finance and operations business lo
 
 The development of AI tools for finance and operations apps has three key components:
 
-- A class must be created in X++ and deployed to the finance and operations environment, defining the business logic to be run when the AI tool is called. Copilot Studio invokes this class. It runs the defined application code and returns the response to agent. The agent then translates the response into natural language for the user.
+- A class must be created in X++ and deployed to the finance and operations environment, defining the business logic to be run when the AI tool is called. Copilot Studio invokes this class. It runs the defined application code and returns the response to the agent. The agent then translates the response into natural language for the user.
 - A Dataverse Custom API must be created in Dataverse.
 - A tool must be added for the operation in your agent in Copilot Studio.
 
@@ -234,13 +234,17 @@ To add your AI operation to the in-app sidecar chat experiences in finance and o
 1. Select the **Perform an unbound action in selected environment** connector action.
 1. Select a **Connection**, and select **Add and configure**.
 1. In the **Details** section:
+   
    1. provide a **Name** value that is specific to the operation. This could be the same name as the Custom API.
    1. Provide a **Description** that describes the operation to be performed. This is the field the agent orchestrator will use to understand when the operation needs to be called by generative orchestration.
    1. Select the appropriate **Authentication** option for your agent.
+
 1. In the **Inputs** section:
+
    1. For the **Environment**, set the **Fill using** value to **Custom value**. You can select a specific environment or select the **(Current)** environment if the agent solution will be deployed in other environments.
    2. For the **Action Name**, set the **Fill using** value to **Customer value**. In the **Choose an action** drop-down list, select the unique name of your Custom API created earlier.
    3. Select the **Add input** action to add each request parameter from your Custom API. For each parameter, provide a **Description** for the input to help generative AI fill the properties from the prompt.
+
 1. In the **Completion** section, open the settings for each of the outputs from the Custom API, and provide a **Description** for each.
 2. **Save** and close the new tool.
 
