@@ -155,5 +155,24 @@ It works. If Managed Identity is enabled, a user-delegated SAS URL can be used t
 ### Will a SAS URL that was created previously stop working once the storage account access key is disabled?
 
  Yes, previously created SAS URLs stop working when the account access key is disabled, because seven days are the maximum TimeToLive value (Validity of the URL). Therefore, the SAS URL expires and won't work after seven days.
- 
+
+### Resolving the Error: "The remote server returned an error: (409) Conflict" When Using File.UseFileFromURL for any file operations (Import/export/upload/downlaod)
+
+The issue could be with the URL truncation due to its variable string size. The variable which is holding the user-delegated SAS URL should have minimun string size 500. If the variable type capacity is less than to 500, then you will get this error. Identify the variable type and its length. If the variable is not of type string or if its capacity is less than to 500, then update the size minimum to 500. If you are using any EDT variable, then update it to "SharedServiceUnitURL" whose string size is 1000 and can accommodate the full URL.
+
+This error may occur when the user-delegated SAS URL provided to the File.UseFileFromURL method is being truncated due to insufficient string length in the variable used.
+
+**Cause:**
+The user-delegated SAS URL, which is often long, may be cut off if the variable holding it is not large enough to store the full value. This truncation results in an invalid or incomplete URL, triggering a 409 Conflict error from the remote server.
+
+**Resolution**:
+1. Check the Variable Type and Length:
+- Ensure the variable used to store the SAS URL is of type string.
+- Confirm that it has a minimum length capacity of 500 characters.
+2. If You're Using an Extended Data Type (EDT):
+- Replace the current EDT with one that supports longer strings.
+- We recommend using the EDT SharedServiceUnitURL, which has a string length of 1000 characters, sufficient to accommodate most SAS URLs.
+
+By ensuring the variable can store the entire URL without truncation, the error should be resolved.
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
