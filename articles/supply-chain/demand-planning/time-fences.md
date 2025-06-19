@@ -19,7 +19,7 @@ ms.custom:
 
 For example, users might be prevented from editing specific time series values that fall within the current month. However, they can still edit values for the previous month or the next month. Every time fence uses the bucket size of the time series to establish a time span that starts in the current period and extends a fixed number of periods into the future.
 
-Time fences are defined as logical expressions and apply to all time series cells where the expression is true. For example, you create a time fence that lasts two months and applies to product ID *K0001* in color *Red* for all time series that use *Monthly* time buckets.
+Time fences are defined as logical expressions and apply to all time series cells where the expression is true. For example, you could create a time fence that lasts two months and applies to product ID *K0001* in color *Red* for all time series that use *Monthly* time buckets.
 
 Time fences are both flexible and easy to maintain. Managers create time fence rules based on the dimensions that are available in each plan. For example, a single product can be set up so that different time fences apply to each store or geographical location. Time fence rules can also apply based on each user's role. For example, a role-based time fence rule might allow managers to edit a forecast in a period that planners can't edit.
 
@@ -122,4 +122,4 @@ The following table provides an example that shows how the *select all* operator
 In situations where time fences overlap, the more specific condition applies. Here are some examples:
 
 - A time fence for *all users* prevents a specific cell from being edited, but the time fence for the *manager* user role allows the cell to be edited. In this case, a user who has the *manager* role is allowed to edit the cell.
-- A time fence of four months is set for location 1, but a time fence of two months is set for product 00001. In this case, the time fence for product 0001 at location 1 is two months.
+- A time fence of four months is set for *all products*, but a time fence of two months is set for *product 00001*. In this case, the time fence for *product 0001* is two months, but is four months for all other products that don't have more specific rules defined for them.

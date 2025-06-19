@@ -15,13 +15,13 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-<!-- KFM: This is a copy of the time fence article with freeze pasted in everywhere. Careful review and update still needed. -->
+<!-- KFM: This is a copy of the time fence article with freeze pasted in everywhere. Careful review needed. -->
 
-*Time freezes* let demand planning managers define rules that prevent the system from automatically updating existing time series when a forecast gets recalculated, such as when you use [rolling forecasts](rolling-forecasts.md) or when you manually rerun a forecast to update an existing time series. Time freezes are similar to [time fences](time-fences.md), which are used to prevent users from *manually* editing certain time series values. However, time freezes only prevent *automated* updates that would otherwise occur when you rerun a forecast; users can still edit those values manually in the time series.
+*Time freezes* let demand planning managers define rules that prevent the system from automatically updating selected cells in existing time series when a forecast gets recalculated, such as when you use [rolling forecasts](rolling-forecasts.md) or when you manually rerun a forecast to update an existing time series. Time freezes are similar to [time fences](time-fences.md), which are used to prevent users from *manually* editing certain time series values. However, time freezes only prevent *automated* updates that would otherwise occur when you rerun a forecast; users can still edit those values manually in the time series.
 
 For example, the system might be prevented from updating specific time series values that fall within the next three months. However, the system can still update values for the previous month or for four months from now. Time freezes use the bucket size of the time series to establish a time span that starts in the current period and extends a fixed number of periods into the future.
 
-Time freezes are defined as logical expressions and apply to all time series cells where the expression is true. For example, you create a time freeze that lasts two months and applies to product ID *K0001* in color *Red* for all time series that use *Monthly* time buckets.
+Time freezes are defined as logical expressions and apply to all time series cells where the expression is true. For example, you could create a time freeze that lasts two months and applies to product ID *K0001* in color *Red* for all time series that use *Monthly* time buckets.
 
 Time freezes are both flexible and easy to maintain. Managers create time freeze rules based on the dimensions that are available in each plan. For example, a single product can be set up so that different time freezes apply to each store or geographical location.
 

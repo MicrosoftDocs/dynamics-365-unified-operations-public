@@ -22,8 +22,6 @@ This article explains how to set up a forecast model that includes both a primar
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-<!--KFM: More detail needed here. -->
-
 ## Set up a forecast model that includes both input and a signal
 
 Follow these steps to set up a forecast that includes both input and a signal.
@@ -41,3 +39,33 @@ Follow these steps to set up a forecast that includes both input and a signal.
     :::image type="content" source="media/forecast-with-signal-model.png" alt-text="Screenshot of a simple forecast model that uses a Forecast with signals step." lightbox="media/forecast-with-signal-model.png":::
 
 1. On the Action Pane, select **Save**.
+
+## Align input and signal time series
+
+<!-- KFM: this section should be reviewed by Anders -->
+
+To calculate a forecast with signals, the input and signal time series must be aligned. This means that they must have compatible time bucket sizes, dimensions, and time spans.
+
+### Time span requirements
+
+The time span of the signal time series must cover all of the historical input data that you want to consider and extend to the end of the forecast time horizon. If the input time series extends further into the past than the signal time series, then the forecast calculation will ignore all input data that is older than the oldest signal data. If the forecast time horizon extends further into the future than the signal time series, then the forecast will fail and you'll see an error message.
+
+The following illustration provides examples of successful and unsuccessful time span alignments.
+
+- The first example won't work because the signal time series doesn't include any data for the forecast horizon.
+- The second example won't work because the signal time series doesn't include enough data to cover the full forecast horizon.
+- The third example is perfectly aligned.
+- The fourth example works, but the forecast will ignore the input data that is older than the oldest signal data.
+
+:::image type="content" source="media/forecast-signal-time-overlap.svg" alt-text="Examples of how to align the time spans for the input and signal time series." lightbox="media/forecast-signal-time-overlap.svg":::
+
+### Dimension requirements
+
+The input and signal time series must have compatible dimensions. For example, if the input time series has dimensions for *Country* and *Month*, then the signal time series must also have *Country* and *Month* dimensions. The system uses these dimensions to align the two time series. If the dimensions don't match, the forecast calculation will fail and you'll see an error message.
+
+The following illustration provides examples of successful and unsuccessful dimension alignments.
+
+- The first example won't work because the input time series has a *Country* dimension, but the signal time series doesn't.
+- The second example works because both time series include dimensions for both the *Country* and the *Month*.
+
+:::image type="content" source="media/forecast-signal-dimension-match.svg" alt-text="Examples of how to align dimensions in the input and signal time series." lightbox="media/forecast-signal-dimension-match.svg":::

@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1349.9259"
+   height="718.81482"
+   overflow="hidden"
+   version="1.1"
+   id="svg45"
+   sodipodi:docname="Slide1.SVG"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview45"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.84375"
+     inkscape:cx="439.11111"
+     inkscape:cy="350.22222"
+     inkscape:window-width="2560"
+     inkscape:window-height="1417"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg45" />
+  <defs
+     id="defs1">
+    <image
+       width="64"
+       height="64"
+       xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCABAAEADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDCr9cKKKACiiigAoor8j6ACiiigD9cKKKKACiivyPoAKKKKACv1woooAKKK/I+gAooooAK/XCiigAooooA/I+iiigAr9cKKKACiiigAoor8j6AP//Z"
+       preserveAspectRatio="none"
+       id="img0" />
+    <pattern
+       width="64"
+       height="64"
+       patternUnits="userSpaceOnUse"
+       id="pattern1"
+       overflow="hidden"
+       patternTransform="matrix(0.125 0 0 0.125 272 624)">
+      <use
+         width="100%"
+         height="100%"
+         xlink:href="#img0"
+         id="use1" />
+    </pattern>
+  </defs>
+  <g
+     id="g45"
+     transform="translate(69.925926)">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect1" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="42.6667px"
+       transform="translate(139.394,76)"
+       id="text1">Forecast with signals</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="42.6667px"
+       transform="translate(551.354,76)"
+       id="text2">–</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="42.6667px"
+       transform="translate(584.354,76)"
+       id="text3">Data overlap</text>
+    <rect
+       x="550"
+       y="188"
+       width="424"
+       height="32"
+       fill="#d7d7da"
+       id="rect3" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(782.284,207)"
+       id="text4">12</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(801.951,207)"
+       id="text5">months</text>
+    <path
+       d="m 664.5,181.5 c 0,-6.627 0.895,-12 2,-12 h 151 c 1.105,0 2,-5.373 2,-12 0,6.627 0.895,12 2,12 h 151 c 1.105,0 2,5.373 2,12"
+       stroke="#878790"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path5" />
+    <rect
+       x="273"
+       y="188"
+       width="391"
+       height="32"
+       fill="#7f7f7f"
+       id="rect5" />
+    <path
+       d="m 273.5,181.5 c 0,-6.627 1.892,-12 4.226,-12 h 187.048 c 2.334,0 4.226,-5.372 4.226,-12 0,6.628 1.892,12 4.226,12 h 187.048 c 2.334,0 4.226,5.373 4.226,12"
+       stroke="#878790"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path6" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(790.567,142)"
+       id="text6">Forecast</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(148.227,210)"
+       id="text7">Historical Sales</text>
+    <rect
+       x="273"
+       y="225"
+       width="391"
+       height="32"
+       fill="#00b0f0"
+       id="rect7" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(425.725,208)"
+       id="text8">48</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(445.392,208)"
+       id="text9">months</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(422.809,245)"
+       id="text10">48</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(442.476,245)"
+       id="text11">months</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(206.554,248)"
+       id="text12">Signal</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(433.716,142)"
+       id="text13">Input data</text>
+    <path
+       d="m 1037.84,201.768 10.35,-13.99 20.81,15.396 20.81,-15.396 10.35,13.99 -16.53,12.232 16.53,12.232 -10.35,13.99 -20.81,-15.396 -20.81,15.396 -10.35,-13.99 16.53,-12.232 z"
+       fill="#ff0000"
+       fill-rule="evenodd"
+       id="path13" />
+    <rect
+       x="550"
+       y="339"
+       width="424"
+       height="31"
+       fill="#d7d7da"
+       id="rect13" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(782.284,357)"
+       id="text14">12</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(801.951,357)"
+       id="text15">months</text>
+    <path
+       d="m 664.5,332.5 c 0,-6.904 0.933,-12.5 2.083,-12.5 h 150.834 c 1.15,0 2.083,-5.596 2.083,-12.5 0,6.904 0.933,12.5 2.083,12.5 h 150.834 c 1.15,0 2.083,5.597 2.083,12.5"
+       stroke="#878790"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15" />
+    <rect
+       x="273"
+       y="339"
+       width="391"
+       height="31"
+       fill="#7f7f7f"
+       id="rect15" />
+    <path
+       d="m 273.5,332.5 c 0,-6.904 1.971,-12.5 4.402,-12.5 h 186.696 c 2.431,0 4.402,-5.596 4.402,-12.5 0,6.904 1.971,12.5 4.402,12.5 h 186.696 c 2.431,0 4.402,5.597 4.402,12.5"
+       stroke="#878790"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path16" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(790.567,292)"
+       id="text16">Forecast</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(148.227,360)"
+       id="text17">Historical Sales</text>
+    <rect
+       x="424"
+       y="375"
+       width="391"
+       height="32"
+       fill="#00b0f0"
+       id="rect17" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(425.725,358)"
+       id="text18">48</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(445.392,358)"
+       id="text19">months</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(597.467,395)"
+       id="text20">48</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(617.134,395)"
+       id="text21">months</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(206.554,399)"
+       id="text22">Signal</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(433.716,292)"
+       id="text23">Input data</text>
+    <path
+       d="m 1037.73,352.069 10.58,-14.112 20.69,15.518 20.69,-15.518 10.58,14.112 -16.57,12.431 16.57,12.431 -10.58,14.112 -20.69,-15.518 -20.69,15.518 -10.58,-14.112 16.57,-12.431 z"
+       fill="#ff0000"
+       fill-rule="evenodd"
+       id="path23" />
+    <rect
+       x="550"
+       y="488"
+       width="424"
+       height="32"
+       fill="#d7d7da"
+       id="rect23" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(782.284,507)"
+       id="text24">12</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(801.951,507)"
+       id="text25">months</text>
+    <path
+       d="m 664.5,481.5 c 0,-6.627 0.895,-12 2,-12 h 151 c 1.105,0 2,-5.373 2,-12 0,6.627 0.895,12 2,12 h 151 c 1.105,0 2,5.373 2,12"
+       stroke="#878790"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path25" />
+    <rect
+       x="273"
+       y="488"
+       width="391"
+       height="32"
+       fill="#7f7f7f"
+       id="rect25" />
+    <path
+       d="m 273.5,481.5 c 0,-6.627 1.892,-12 4.226,-12 h 187.048 c 2.334,0 4.226,-5.372 4.226,-12 0,6.628 1.892,12 4.226,12 h 187.048 c 2.334,0 4.226,5.373 4.226,12"
+       stroke="#878790"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path26" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(790.567,442)"
+       id="text26">Forecast</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(148.227,510)"
+       id="text27">Historical Sales</text>
+    <rect
+       x="273"
+       y="526"
+       width="702"
+       height="32"
+       fill="#00b0f0"
+       id="rect27" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(425.725,508)"
+       id="text28">48</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(445.392,508)"
+       id="text29">months</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(597.467,545)"
+       id="text30">60</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(617.134,545)"
+       id="text31">months</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(206.554,548)"
+       id="text32">Signal</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(433.716,442)"
+       id="text33">Input data</text>
+    <path
+       d="m 1042.81,500.798 h 18.49 v -21.061 h 17.4 v 21.061 h 18.49 v 17.404 h -18.49 v 21.061 h -17.4 v -21.061 h -18.49 z"
+       fill="#00b050"
+       fill-rule="evenodd"
+       id="path33" />
+    <rect
+       x="549"
+       y="628"
+       width="425"
+       height="31"
+       fill="#d7d7da"
+       id="rect33" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(781.725,646)"
+       id="text34">12</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(801.392,646)"
+       id="text35">months</text>
+    <path
+       d="m 663.5,621.5 c 0,-6.904 0.933,-12.5 2.083,-12.5 h 151.334 c 1.15,0 2.083,-5.596 2.083,-12.5 0,6.904 0.933,12.5 2.083,12.5 h 151.334 c 1.15,0 2.083,5.596 2.083,12.5"
+       stroke="#878790"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path35" />
+    <rect
+       x="348"
+       y="628"
+       width="315"
+       height="31"
+       fill="#7f7f7f"
+       id="rect35" />
+    <path
+       d="m 348.5,621.5 c 0,-6.904 1.971,-12.5 4.402,-12.5 h 148.696 c 2.431,0 4.402,-5.596 4.402,-12.5 0,6.904 1.971,12.5 4.402,12.5 h 148.696 c 2.431,0 4.402,5.597 4.402,12.5"
+       stroke="#878790"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path36" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(790.008,581)"
+       id="text36">Forecast</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(147.668,649)"
+       id="text37">Historical Sales</text>
+    <rect
+       x="348"
+       y="665"
+       width="626"
+       height="31"
+       fill="#00b0f0"
+       id="rect37" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(425.166,647)"
+       id="text38">48</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(444.833,647)"
+       id="text39">months</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(665.835,685)"
+       id="text40">48</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="14.6667px"
+       transform="translate(685.502,685)"
+       id="text41">months</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(205.995,688)"
+       id="text42">Signal</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(465.275,584)"
+       id="text43">Input data</text>
+    <path
+       d="m 1042.81,643.298 h 18.49 v -21.429 h 17.4 v 21.429 h 18.49 v 17.404 h -18.49 v 21.429 h -17.4 v -21.429 h -18.49 z"
+       fill="#00b050"
+       fill-rule="evenodd"
+       id="path43" />
+    <path
+       d="M 0,0 1.04987e-4,38.1985"
+       stroke="#00b0f0"
+       stroke-width="4"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,348,661.199)"
+       id="path44" />
+    <rect
+       x="273"
+       y="628"
+       width="72"
+       height="31"
+       fill="url(#pattern1)"
+       id="rect44" />
+    <path
+       d="m 272.5,620.5 c 0,-6.627 1.892,-12 4.226,-12 h 28.048 c 2.334,0 4.226,-5.372 4.226,-12 0,6.628 1.892,12 4.226,12 h 28.048 c 2.334,0 4.226,5.373 4.226,12"
+       stroke="#878790"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path45" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(266.972,586)"
+       id="text45">Data not used</text>
+  </g>
+</svg>

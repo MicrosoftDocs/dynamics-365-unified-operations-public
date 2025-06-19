@@ -17,6 +17,8 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
+<!-- KFM: Any setup needed to enable this feature? Or is it OOB? -->
+
 *Generative insights* offers detailed insights calculated using AI models. It currently supports two metrics: *seasonality* and *signal correlation*. The system clusters forecast data based on distinct patterns found for each metric.
 
 Visual displays make it easy for planners to understand time series data and make business decisions based on it. Information is clustered (grouped) according to the detected patterns. For each cluster, generative insights provide a confidence score and describe the pattern in natural language. The system also indicates the proportion of planning items that follow the pattern.

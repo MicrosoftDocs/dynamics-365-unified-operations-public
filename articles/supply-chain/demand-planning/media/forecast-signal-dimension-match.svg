@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1365.3333"
+   height="644.14813"
+   overflow="hidden"
+   version="1.1"
+   id="svg120"
+   sodipodi:docname="Slide2.SVG"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview120"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.84375"
+     inkscape:cx="509.03704"
+     inkscape:cy="345.48148"
+     inkscape:window-width="2560"
+     inkscape:window-height="1417"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg120" />
+  <defs
+     id="defs8">
+    <linearGradient
+       x1="508.92001"
+       y1="429.505"
+       x2="508.92001"
+       y2="448.70499"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect"
+       id="fill0">
+      <stop
+         offset="0"
+         stop-color="#3C3C41"
+         id="stop1" />
+      <stop
+         offset="0.02917"
+         stop-color="#3C3C41"
+         id="stop2" />
+      <stop
+         offset="0.3"
+         stop-color="#3C3C41"
+         id="stop3" />
+      <stop
+         offset="1"
+         stop-color="#3C3C41"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       x1="508.92001"
+       y1="429.505"
+       x2="508.92001"
+       y2="448.70499"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect"
+       id="fill1">
+      <stop
+         offset="0"
+         stop-color="#3C3C41"
+         id="stop5" />
+      <stop
+         offset="0.02917"
+         stop-color="#3C3C41"
+         id="stop6" />
+      <stop
+         offset="0.3"
+         stop-color="#3C3C41"
+         id="stop7" />
+      <stop
+         offset="1"
+         stop-color="#3C3C41"
+         id="stop8" />
+    </linearGradient>
+  </defs>
+  <g
+     id="g120"
+     transform="translate(73.481482,-23.703704)">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect8" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="42.6667px"
+       transform="translate(134.677,101)"
+       id="text8">Forecast with signals</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="42.6667px"
+       transform="translate(546.638,101)"
+       id="text9">–</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="42.6667px"
+       transform="translate(579.638,101)"
+       id="text10">Dimension matching</text>
+    <path
+       d="m 130.485,242.841 h 139.411 v 34.527 H 130.485 Z"
+       fill="#ebebeb"
+       fill-rule="evenodd"
+       id="path10" />
+    <path
+       d="m 269.896,242.841 h 139.411 v 34.527 H 269.896 Z"
+       fill="#ebebeb"
+       fill-rule="evenodd"
+       id="path11" />
+    <path
+       d="m 409.307,242.841 h 139.411 v 34.527 H 409.307 Z"
+       fill="#ebebeb"
+       fill-rule="evenodd"
+       id="path12" />
+    <path
+       d="m 130.485,277.368 h 139.411 v 41.873 H 130.485 Z"
+       fill="#f7f7f7"
+       fill-rule="evenodd"
+       id="path13" />
+    <path
+       d="m 269.896,277.368 h 139.411 v 41.873 H 269.896 Z"
+       fill="#f7f7f7"
+       fill-rule="evenodd"
+       id="path14" />
+    <path
+       d="m 409.307,277.368 h 139.411 v 41.873 H 409.307 Z"
+       fill="#f7f7f7"
+       fill-rule="evenodd"
+       id="path15" />
+    <path
+       d="m 130.485,319.241 h 139.411 v 41.873 H 130.485 Z"
+       fill="#fbfbfb"
+       fill-rule="evenodd"
+       id="path16" />
+    <path
+       d="m 269.896,319.241 h 139.411 v 41.873 H 269.896 Z"
+       fill="#fbfbfb"
+       fill-rule="evenodd"
+       id="path17" />
+    <path
+       d="m 409.307,319.241 h 139.411 v 41.873 H 409.307 Z"
+       fill="#fbfbfb"
+       fill-rule="evenodd"
+       id="path18" />
+    <path
+       d="M 269.896,242.174 V 361.78"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path19" />
+    <path
+       d="M 409.307,242.174 V 361.78"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path20" />
+    <path
+       d="M 129.819,277.368 H 549.385"
+       stroke="#ffffff"
+       stroke-width="4"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path21" />
+    <path
+       d="M 129.819,319.241 H 549.385"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path22" />
+    <path
+       d="M 130.485,242.174 V 361.78"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path23" />
+    <path
+       d="M 548.718,242.174 V 361.78"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path24" />
+    <path
+       d="M 129.819,242.841 H 549.385"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path25" />
+    <path
+       d="M 129.819,361.114 H 549.385"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path26" />
+    <g
+       id="g26">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="700"
+         font-size="20.7733px"
+         transform="translate(418.907,268)"
+         id="text26">Quantity</text>
+    </g>
+    <g
+       id="g27">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="700"
+         font-size="20.7733px"
+         transform="translate(279.496,268)"
+         id="text27">Month</text>
+    </g>
+    <g
+       id="g28">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="700"
+         font-size="20.7733px"
+         transform="translate(140.085,268)"
+         id="text28">Product</text>
+    </g>
+    <g
+       id="g29">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(418.907,302)"
+         id="text29">10</text>
+    </g>
+    <g
+       id="g30">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(279.496,302)"
+         id="text30">Jan</text>
+    </g>
+    <g
+       id="g31">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(140.085,302)"
+         id="text31">Product A</text>
+    </g>
+    <g
+       id="g32">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(418.907,344)"
+         id="text32">12</text>
+    </g>
+    <g
+       id="g33">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(279.496,344)"
+         id="text33">Feb</text>
+    </g>
+    <g
+       id="g34">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(140.085,344)"
+         id="text34">Product A</text>
+    </g>
+    <path
+       d="m 130.485,518.117 h 118.512 v 34.526 H 130.485 Z"
+       fill="#ebebeb"
+       fill-rule="evenodd"
+       id="path34" />
+    <path
+       d="m 248.997,518.117 h 118.512 v 34.526 H 248.997 Z"
+       fill="#ebebeb"
+       fill-rule="evenodd"
+       id="path35" />
+    <path
+       d="M 367.509,518.117 H 486.02 v 34.526 H 367.509 Z"
+       fill="#ebebeb"
+       fill-rule="evenodd"
+       id="path36" />
+    <path
+       d="m 486.02,518.117 h 118.512 v 34.526 H 486.02 Z"
+       fill="#ebebeb"
+       fill-rule="evenodd"
+       id="path37" />
+    <path
+       d="m 130.485,552.643 h 118.512 v 41.873 H 130.485 Z"
+       fill="#f7f7f7"
+       fill-rule="evenodd"
+       id="path38" />
+    <path
+       d="m 248.997,552.643 h 118.512 v 41.873 H 248.997 Z"
+       fill="#f7f7f7"
+       fill-rule="evenodd"
+       id="path39" />
+    <path
+       d="M 367.509,552.643 H 486.02 v 41.873 H 367.509 Z"
+       fill="#f7f7f7"
+       fill-rule="evenodd"
+       id="path40" />
+    <path
+       d="m 486.02,552.643 h 118.512 v 41.873 H 486.02 Z"
+       fill="#f7f7f7"
+       fill-rule="evenodd"
+       id="path41" />
+    <path
+       d="m 130.485,594.516 h 118.512 v 41.873 H 130.485 Z"
+       fill="#fbfbfb"
+       fill-rule="evenodd"
+       id="path42" />
+    <path
+       d="m 248.997,594.516 h 118.512 v 41.873 H 248.997 Z"
+       fill="#fbfbfb"
+       fill-rule="evenodd"
+       id="path43" />
+    <path
+       d="M 367.509,594.516 H 486.02 v 41.873 H 367.509 Z"
+       fill="#fbfbfb"
+       fill-rule="evenodd"
+       id="path44" />
+    <path
+       d="m 486.02,594.516 h 118.512 v 41.873 H 486.02 Z"
+       fill="#fbfbfb"
+       fill-rule="evenodd"
+       id="path45" />
+    <path
+       d="M 248.997,517.45 V 637.056"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path46" />
+    <path
+       d="M 367.509,517.45 V 637.056"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path47" />
+    <path
+       d="M 486.02,517.45 V 637.056"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path48" />
+    <path
+       d="m 129.819,552.643 h 475.38"
+       stroke="#ffffff"
+       stroke-width="4"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path49" />
+    <path
+       d="m 129.819,594.516 h 475.38"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path50" />
+    <path
+       d="M 130.485,517.45 V 637.056"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path51" />
+    <path
+       d="M 604.532,517.45 V 637.056"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path52" />
+    <path
+       d="m 129.819,518.117 h 475.38"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path53" />
+    <path
+       d="m 129.819,636.389 h 475.38"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path54" />
+    <g
+       id="g54">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="700"
+         font-size="20.7733px"
+         transform="translate(495.62,543)"
+         id="text54">Quantity</text>
+    </g>
+    <g
+       id="g55">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="700"
+         font-size="20.7733px"
+         transform="translate(377.109,543)"
+         id="text55">Month</text>
+    </g>
+    <g
+       id="g56">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="700"
+         font-size="20.7733px"
+         transform="translate(258.597,543)"
+         id="text56">Country</text>
+    </g>
+    <g
+       id="g57">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="700"
+         font-size="20.7733px"
+         transform="translate(140.085,543)"
+         id="text57">Product</text>
+    </g>
+    <g
+       id="g58">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(495.62,577)"
+         id="text58">10</text>
+    </g>
+    <g
+       id="g59">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(377.109,577)"
+         id="text59">Jan</text>
+    </g>
+    <g
+       id="g60">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(258.597,577)"
+         id="text60">USA</text>
+    </g>
+    <g
+       id="g61">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(140.085,577)"
+         id="text61">Product A</text>
+    </g>
+    <g
+       id="g62">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(495.62,619)"
+         id="text62">12</text>
+    </g>
+    <g
+       id="g63">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(377.109,619)"
+         id="text63">Feb</text>
+    </g>
+    <g
+       id="g64">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(258.597,619)"
+         id="text64">USA</text>
+    </g>
+    <g
+       id="g65">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(140.085,619)"
+         id="text65">Product A</text>
+    </g>
+    <path
+       d="m 630.95,242.841 h 125.861 v 34.527 H 630.95 Z"
+       fill="#ebebeb"
+       fill-rule="evenodd"
+       id="path65" />
+    <path
+       d="m 756.811,242.841 h 125.86 v 34.527 h -125.86 z"
+       fill="#ebebeb"
+       fill-rule="evenodd"
+       id="path66" />
+    <path
+       d="m 882.671,242.841 h 125.859 v 34.527 H 882.671 Z"
+       fill="#ebebeb"
+       fill-rule="evenodd"
+       id="path67" />
+    <path
+       d="m 630.95,277.368 h 125.861 v 41.873 H 630.95 Z"
+       fill="#f7f7f7"
+       fill-rule="evenodd"
+       id="path68" />
+    <path
+       d="m 756.811,277.368 h 125.86 v 41.873 h -125.86 z"
+       fill="#f7f7f7"
+       fill-rule="evenodd"
+       id="path69" />
+    <path
+       d="m 882.671,277.368 h 125.859 v 41.873 H 882.671 Z"
+       fill="#f7f7f7"
+       fill-rule="evenodd"
+       id="path70" />
+    <path
+       d="m 630.95,319.241 h 125.861 v 41.873 H 630.95 Z"
+       fill="#fbfbfb"
+       fill-rule="evenodd"
+       id="path71" />
+    <path
+       d="m 756.811,319.241 h 125.86 v 41.873 h -125.86 z"
+       fill="#fbfbfb"
+       fill-rule="evenodd"
+       id="path72" />
+    <path
+       d="m 882.671,319.241 h 125.859 v 41.873 H 882.671 Z"
+       fill="#fbfbfb"
+       fill-rule="evenodd"
+       id="path73" />
+    <path
+       d="M 756.811,242.174 V 361.78"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path74" />
+    <path
+       d="M 882.671,242.174 V 361.78"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path75" />
+    <path
+       d="M 630.284,277.368 H 1009.2"
+       stroke="#ffffff"
+       stroke-width="4"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path76" />
+    <path
+       d="M 630.284,319.241 H 1009.2"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path77" />
+    <path
+       d="M 630.95,242.174 V 361.78"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path78" />
+    <path
+       d="M 1008.53,242.174 V 361.78"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path79" />
+    <path
+       d="M 630.284,242.841 H 1009.2"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path80" />
+    <path
+       d="M 630.284,361.114 H 1009.2"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path81" />
+    <g
+       id="g81">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="700"
+         font-size="20.7733px"
+         transform="translate(892.271,268)"
+         id="text81">Inflation%</text>
+    </g>
+    <g
+       id="g82">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="700"
+         font-size="20.7733px"
+         transform="translate(766.411,268)"
+         id="text82">Month</text>
+    </g>
+    <g
+       id="g83">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="700"
+         font-size="20.7733px"
+         transform="translate(640.55,268)"
+         id="text83">Country</text>
+    </g>
+    <g
+       id="g84">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(892.271,302)"
+         id="text84">5.00</text>
+    </g>
+    <g
+       id="g85">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(766.411,302)"
+         id="text85">Jan</text>
+    </g>
+    <g
+       id="g86">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(640.55,302)"
+         id="text86">USA</text>
+    </g>
+    <g
+       id="g87">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(892.271,344)"
+         id="text87">5.50</text>
+    </g>
+    <g
+       id="g88">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(766.411,344)"
+         id="text88">Feb</text>
+    </g>
+    <g
+       id="g89">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(640.55,344)"
+         id="text89">USA</text>
+    </g>
+    <path
+       d="m 1077.45,279.044 10.65,-14.061 20.4,15.452 20.4,-15.452 10.65,14.061 -16.44,12.456 16.44,12.456 -10.65,14.061 -20.4,-15.452 -20.4,15.452 -10.65,-14.061 16.44,-12.456 z"
+       fill="#ff0000"
+       fill-rule="evenodd"
+       id="path89" />
+    <path
+       d="m 630.95,518.116 h 125.861 v 34.527 H 630.95 Z"
+       fill="#ebebeb"
+       fill-rule="evenodd"
+       id="path90" />
+    <path
+       d="m 756.811,518.116 h 125.86 v 34.527 h -125.86 z"
+       fill="#ebebeb"
+       fill-rule="evenodd"
+       id="path91" />
+    <path
+       d="m 882.671,518.116 h 125.859 v 34.527 H 882.671 Z"
+       fill="#ebebeb"
+       fill-rule="evenodd"
+       id="path92" />
+    <path
+       d="m 630.95,552.643 h 125.861 v 41.873 H 630.95 Z"
+       fill="#f7f7f7"
+       fill-rule="evenodd"
+       id="path93" />
+    <path
+       d="m 756.811,552.643 h 125.86 v 41.873 h -125.86 z"
+       fill="#f7f7f7"
+       fill-rule="evenodd"
+       id="path94" />
+    <path
+       d="m 882.671,552.643 h 125.859 v 41.873 H 882.671 Z"
+       fill="#f7f7f7"
+       fill-rule="evenodd"
+       id="path95" />
+    <path
+       d="m 630.95,594.516 h 125.861 v 41.873 H 630.95 Z"
+       fill="#fbfbfb"
+       fill-rule="evenodd"
+       id="path96" />
+    <path
+       d="m 756.811,594.516 h 125.86 v 41.873 h -125.86 z"
+       fill="#fbfbfb"
+       fill-rule="evenodd"
+       id="path97" />
+    <path
+       d="m 882.671,594.516 h 125.859 v 41.873 H 882.671 Z"
+       fill="#fbfbfb"
+       fill-rule="evenodd"
+       id="path98" />
+    <path
+       d="M 756.811,517.45 V 637.056"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path99" />
+    <path
+       d="M 882.671,517.45 V 637.056"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path100" />
+    <path
+       d="M 630.284,552.643 H 1009.2"
+       stroke="#ffffff"
+       stroke-width="4"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path101" />
+    <path
+       d="M 630.284,594.516 H 1009.2"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path102" />
+    <path
+       d="M 630.95,517.45 V 637.056"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path103" />
+    <path
+       d="M 1008.53,517.45 V 637.056"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path104" />
+    <path
+       d="M 630.284,518.116 H 1009.2"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path105" />
+    <path
+       d="M 630.284,636.389 H 1009.2"
+       stroke="#ffffff"
+       stroke-width="1.33333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path106" />
+    <g
+       id="g106">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="700"
+         font-size="20.7733px"
+         transform="translate(892.271,543)"
+         id="text106">Inflation%</text>
+    </g>
+    <g
+       id="g107">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="700"
+         font-size="20.7733px"
+         transform="translate(766.411,543)"
+         id="text107">Month</text>
+    </g>
+    <g
+       id="g108">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="700"
+         font-size="20.7733px"
+         transform="translate(640.55,543)"
+         id="text108">Country</text>
+    </g>
+    <g
+       id="g109">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(892.271,577)"
+         id="text109">5.00</text>
+    </g>
+    <g
+       id="g110">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(766.411,577)"
+         id="text110">Jan</text>
+    </g>
+    <g
+       id="g111">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(640.55,577)"
+         id="text111">USA</text>
+    </g>
+    <g
+       id="g112">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(892.271,619)"
+         id="text112">5.50</text>
+    </g>
+    <g
+       id="g113">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(766.411,619)"
+         id="text113">Feb</text>
+    </g>
+    <g
+       id="g114">
+      <text
+         fill="#3c3c41"
+         font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="20.7733px"
+         transform="translate(640.55,619)"
+         id="text114">USA</text>
+    </g>
+    <path
+       d="m 314.5,511.5 c 0,-16.016 2.164,-29 4.833,-29 h 179.334 c 2.669,0 4.833,-12.984 4.833,-29 0,16.016 2.164,29 4.833,29 h 179.334 c 2.669,0 4.833,12.984 4.833,29"
+       stroke="#878790"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path114" />
+    <path
+       d="m 509.094,438.315 c -0.823,0 -1.474,0.28 -1.953,0.84 -0.479,0.56 -0.719,1.332 -0.719,2.316 0,0.948 0.243,1.696 0.727,2.243 0.484,0.546 1.133,0.82 1.945,0.82 0.828,0 1.465,-0.268 1.911,-0.805 0.445,-0.536 0.667,-1.299 0.667,-2.289 0,-1 -0.222,-1.771 -0.667,-2.312 -0.446,-0.542 -1.083,-0.813 -1.911,-0.813 z m -28.32,0 c -0.604,0 -1.117,0.216 -1.539,0.649 -0.422,0.432 -0.682,0.997 -0.781,1.695 h 4.32 c -0.005,-0.74 -0.184,-1.315 -0.535,-1.727 -0.352,-0.411 -0.84,-0.617 -1.465,-0.617 z m 20.883,-0.89 h 1.281 v 8 h -1.281 z m -42,0 h 1.281 v 8 h -1.281 z m 58.937,-0.188 c 0.875,0 1.545,0.283 2.008,0.848 0.464,0.565 0.695,1.381 0.695,2.449 v 4.891 h -1.281 v -4.563 c 0,-1.698 -0.62,-2.547 -1.859,-2.547 -0.641,0 -1.171,0.241 -1.59,0.723 -0.419,0.482 -0.629,1.09 -0.629,1.824 v 4.563 h -1.281 v -8 h 1.281 v 1.328 h 0.031 c 0.605,-1.011 1.48,-1.516 2.625,-1.516 z m -9.406,0 c 1.193,0 2.124,0.367 2.793,1.102 0.669,0.734 1.004,1.752 1.004,3.054 0,1.276 -0.361,2.298 -1.082,3.067 -0.721,0.768 -1.689,1.152 -2.902,1.152 -1.183,0 -2.127,-0.374 -2.832,-1.121 -0.706,-0.747 -1.059,-1.738 -1.059,-2.973 0,-1.343 0.367,-2.393 1.102,-3.148 0.734,-0.755 1.726,-1.133 2.976,-1.133 z m -11.937,0 c 0.692,0 1.312,0.12 1.859,0.359 v 1.297 c -0.589,-0.385 -1.266,-0.578 -2.031,-0.578 -0.24,0 -0.456,0.028 -0.649,0.082 -0.192,0.055 -0.358,0.132 -0.496,0.231 -0.138,0.099 -0.245,0.217 -0.32,0.355 -0.076,0.138 -0.113,0.291 -0.113,0.457 0,0.209 0.037,0.383 0.113,0.524 0.075,0.14 0.186,0.265 0.332,0.375 0.146,0.109 0.323,0.208 0.531,0.296 0.209,0.089 0.445,0.185 0.711,0.29 0.354,0.135 0.672,0.274 0.953,0.418 0.281,0.143 0.521,0.304 0.719,0.484 0.198,0.18 0.35,0.387 0.457,0.621 0.107,0.234 0.16,0.513 0.16,0.836 0,0.396 -0.087,0.74 -0.262,1.031 -0.174,0.292 -0.407,0.534 -0.699,0.727 -0.291,0.192 -0.627,0.336 -1.008,0.429 -0.38,0.094 -0.778,0.141 -1.195,0.141 -0.823,0 -1.536,-0.159 -2.141,-0.477 v -1.375 c 0.698,0.516 1.467,0.774 2.305,0.774 1.125,0 1.688,-0.375 1.688,-1.125 0,-0.214 -0.048,-0.395 -0.145,-0.543 -0.096,-0.148 -0.226,-0.28 -0.39,-0.395 -0.165,-0.114 -0.357,-0.217 -0.579,-0.308 -0.221,-0.091 -0.459,-0.186 -0.714,-0.285 -0.355,-0.141 -0.666,-0.283 -0.934,-0.426 -0.268,-0.143 -0.492,-0.305 -0.672,-0.484 -0.18,-0.18 -0.315,-0.385 -0.406,-0.614 -0.091,-0.229 -0.137,-0.497 -0.137,-0.804 0,-0.375 0.086,-0.707 0.258,-0.997 0.172,-0.289 0.401,-0.531 0.687,-0.726 0.287,-0.195 0.614,-0.343 0.981,-0.442 0.367,-0.098 0.746,-0.148 1.137,-0.148 z m -7.657,0 c 0.875,0 1.545,0.283 2.008,0.848 0.464,0.565 0.695,1.381 0.695,2.449 v 4.891 h -1.281 v -4.563 c 0,-1.698 -0.62,-2.547 -1.859,-2.547 -0.641,0 -1.171,0.241 -1.59,0.723 -0.419,0.482 -0.629,1.09 -0.629,1.824 v 4.563 h -1.281 v -8 h 1.281 v 1.328 h 0.031 c 0.605,-1.011 1.48,-1.516 2.625,-1.516 z m -8.797,0 c 1.047,0 1.857,0.339 2.43,1.016 0.573,0.677 0.86,1.617 0.86,2.82 v 0.672 h -5.649 c 0.021,0.89 0.261,1.578 0.719,2.062 0.458,0.485 1.088,0.727 1.89,0.727 0.902,0 1.73,-0.297 2.485,-0.891 v 1.203 c -0.703,0.511 -1.633,0.766 -2.789,0.766 -1.13,0 -2.018,-0.363 -2.664,-1.09 -0.646,-0.726 -0.969,-1.748 -0.969,-3.066 0,-1.245 0.353,-2.259 1.059,-3.043 0.705,-0.784 1.582,-1.176 2.628,-1.176 z m -13.343,0 c 0.547,0 1.023,0.152 1.429,0.457 0.407,0.305 0.685,0.705 0.836,1.199 0.594,-1.104 1.48,-1.656 2.657,-1.656 1.76,0 2.64,1.086 2.64,3.258 v 4.93 h -1.281 v -4.594 c 0,-0.886 -0.137,-1.526 -0.41,-1.922 -0.274,-0.396 -0.733,-0.594 -1.379,-0.594 -0.547,0 -1.012,0.25 -1.395,0.75 -0.382,0.5 -0.574,1.099 -0.574,1.797 v 4.563 h -1.281 v -4.75 c 0,-1.573 -0.607,-2.36 -1.82,-2.36 -0.563,0 -1.026,0.236 -1.391,0.707 -0.365,0.472 -0.547,1.085 -0.547,1.84 v 4.563 h -1.281 v -8 h 1.281 v 1.265 h 0.031 c 0.568,-0.969 1.396,-1.453 2.485,-1.453 z m -17.313,-1.828 v 8.828 h 1.672 c 1.469,0 2.612,-0.393 3.43,-1.18 0.818,-0.786 1.226,-1.901 1.226,-3.343 0,-2.87 -1.526,-4.305 -4.578,-4.305 z m -1.312,-1.188 h 3.094 c 3.947,0 5.921,1.821 5.921,5.461 0,1.73 -0.548,3.119 -1.644,4.168 -1.097,1.05 -2.564,1.575 -4.402,1.575 h -2.969 z m 53.484,-0.492 c 0.234,0 0.434,0.08 0.598,0.239 0.164,0.158 0.246,0.358 0.246,0.597 0,0.229 -0.082,0.425 -0.246,0.586 -0.164,0.162 -0.364,0.242 -0.598,0.242 -0.229,0 -0.424,-0.078 -0.586,-0.234 -0.161,-0.156 -0.242,-0.354 -0.242,-0.594 0,-0.239 0.081,-0.439 0.242,-0.597 0.162,-0.159 0.357,-0.239 0.586,-0.239 z m -42,0 c 0.235,0 0.434,0.08 0.598,0.239 0.164,0.158 0.246,0.358 0.246,0.597 0,0.229 -0.082,0.425 -0.246,0.586 -0.164,0.162 -0.363,0.242 -0.598,0.242 -0.229,0 -0.424,-0.078 -0.586,-0.234 -0.161,-0.156 -0.242,-0.354 -0.242,-0.594 0,-0.239 0.081,-0.439 0.242,-0.597 0.162,-0.159 0.357,-0.239 0.586,-0.239 z"
+       fill="url(#fill0)"
+       fill-rule="evenodd"
+       id="path115"
+       style="fill:url(#fill0)" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-size="11.8828px"
+       x="448.82901"
+       y="444.12701"
+       id="text115">Dimension</text>
+    <path
+       d="m 546.602,441.378 -1.93,0.265 c -0.593,0.084 -1.041,0.231 -1.343,0.442 -0.302,0.211 -0.453,0.584 -0.453,1.121 0,0.39 0.139,0.709 0.418,0.957 0.278,0.247 0.649,0.371 1.113,0.371 0.635,0 1.16,-0.223 1.574,-0.668 0.414,-0.445 0.621,-1.009 0.621,-1.691 z m 12.164,-4.141 c 0.703,0 1.323,0.13 1.86,0.391 v 1.312 c -0.594,-0.416 -1.23,-0.625 -1.907,-0.625 -0.817,0 -1.488,0.293 -2.011,0.879 -0.524,0.586 -0.786,1.356 -0.786,2.309 0,0.937 0.247,1.677 0.739,2.218 0.492,0.542 1.152,0.813 1.98,0.813 0.698,0 1.354,-0.232 1.969,-0.695 v 1.218 c -0.615,0.37 -1.344,0.555 -2.188,0.555 -1.14,0 -2.061,-0.371 -2.761,-1.113 -0.701,-0.742 -1.051,-1.705 -1.051,-2.887 0,-1.318 0.378,-2.376 1.133,-3.176 0.755,-0.799 1.763,-1.199 3.023,-1.199 z m -13.703,0 c 1.88,0 2.82,0.995 2.82,2.984 v 5.204 h -1.281 v -1.25 h -0.031 c -0.557,0.958 -1.378,1.437 -2.461,1.437 -0.797,0 -1.421,-0.211 -1.871,-0.633 -0.451,-0.422 -0.676,-0.982 -0.676,-1.679 0,-1.495 0.88,-2.365 2.641,-2.61 l 2.398,-0.336 c 0,-1.359 -0.549,-2.039 -1.648,-2.039 -0.964,0 -1.834,0.328 -2.61,0.985 v -1.313 c 0.787,-0.5 1.693,-0.75 2.719,-0.75 z m -13.109,0 c 0.547,0 1.023,0.152 1.429,0.457 0.407,0.305 0.685,0.705 0.836,1.199 0.594,-1.104 1.48,-1.656 2.657,-1.656 1.76,0 2.64,1.086 2.64,3.258 v 4.93 h -1.281 v -4.594 c 0,-0.886 -0.137,-1.526 -0.41,-1.922 -0.274,-0.396 -0.733,-0.594 -1.379,-0.594 -0.547,0 -1.012,0.25 -1.395,0.75 -0.382,0.5 -0.574,1.099 -0.574,1.797 v 4.563 h -1.281 v -4.75 c 0,-1.573 -0.607,-2.36 -1.82,-2.36 -0.563,0 -1.026,0.236 -1.391,0.707 -0.365,0.472 -0.547,1.085 -0.547,1.84 v 4.563 h -1.281 v -8 h 1.281 v 1.265 h 0.031 c 0.568,-0.969 1.396,-1.453 2.485,-1.453 z m 19.898,-2.18 v 2.368 h 2.016 v 1.093 h -2.016 v 4.508 c 0,0.537 0.091,0.919 0.274,1.149 0.182,0.229 0.484,0.343 0.906,0.343 0.323,0 0.601,-0.088 0.836,-0.265 v 1.093 c -0.302,0.167 -0.701,0.25 -1.196,0.25 -1.401,0 -2.101,-0.781 -2.101,-2.343 v -4.735 h -1.375 v -1.093 h 1.375 v -1.954 z m 11.305,-1.476 h 1.281 v 5.172 h 0.031 c 0.615,-1.011 1.49,-1.516 2.625,-1.516 1.802,0 2.703,1.086 2.703,3.258 v 4.93 h -1.281 v -4.61 c 0,-1.666 -0.62,-2.5 -1.859,-2.5 -0.625,0 -1.151,0.241 -1.578,0.723 -0.427,0.482 -0.641,1.1 -0.641,1.855 v 4.532 h -1.281 z"
+       fill="url(#fill1)"
+       fill-rule="evenodd"
+       id="path116"
+       style="fill:url(#fill1)" />
+    <text
+       fill="#000000"
+       fill-opacity="0"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-size="12.0312px"
+       x="528.15698"
+       y="444.108"
+       id="text116">match</text>
+    <path
+       d="m 1081.68,568.915 h 18.24 v -21.178 h 17.16 v 21.178 h 18.24 v 17.17 h -18.24 v 21.178 h -17.16 v -21.178 h -18.24 z"
+       fill="#00b050"
+       fill-rule="evenodd"
+       id="path117" />
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="700"
+       font-size="21.3333px"
+       transform="translate(144.277,180)"
+       id="text117">Historical Sales</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="700"
+       font-size="21.3333px"
+       transform="translate(295.611,180)"
+       id="text118">:</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="700"
+       font-size="21.3333px"
+       transform="translate(636.622,180)"
+       id="text119">Signal</text>
+    <text
+       fill="#3c3c41"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="700"
+       font-size="21.3333px"
+       transform="translate(698.122,180)"
+       id="text120">:</text>
+  </g>
+</svg>
