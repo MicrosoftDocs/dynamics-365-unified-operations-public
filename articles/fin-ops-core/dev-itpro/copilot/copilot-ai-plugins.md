@@ -11,16 +11,16 @@ ms.date: 06/11/2025
 
 ---
 
-# Create AI tools for copilots with finance and operations business logic (preview)
+# Create AI tools with finance and operations business logic (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Finance and operations apps let you create AI tools to extend the capabilities of copilot experiences in Microsoft Copilot Studio. These tools can be added to the in-app Copilot for finance and operations apps, other Microsoft copilots or agents, or custom agents.
 
-The tools that you create can use finance and operations business logic that you want to use in your agents across Microsoft products. These tools are headless operations. They don't require specific context in the finance and operations client. They are enabled by creating an X++ class deployed in the environment, decorated with attributes identifying the class as one that can be invoked from Microsoft Copilot Studio. The class has request and response parameters defining the inputs received from the agent, and the outputs returned after the business logic has been executed. You can then create Dataverse and Copilot Studio objects that make the operation available as a tool in your agent. Users in copilot chat can invoke the business logic in natural language and receive copilot responses that are based on the business logic of the finance and operations code base, and agents can use the business logic as a tool in the orchestration.
+The tools that you create can use finance and operations business logic that you want to use in your agents across Microsoft products. These tools are headless operations. They don't require specific context in the finance and operations client. They are enabled by creating an X++ class deployed in the environment, decorated with attributes identifying the class as one that can be invoked from Microsoft Copilot Studio. The class has request and response parameters defining the inputs received from the agent, and the outputs returned after the business logic has been executed. 
 
-For example, a method in finance and operations apps has a calculation for customer balances, and input and output parameters are specified. Information about a customer's balance is useful even outside the context of finance and operations apps. It might also make sense in other natural language contexts, such as a Teams chat or an Outlook email message. By using the feature that this article describes, you can package the customer balance calculation as a copilot tool and publish it to copilots and agents across Microsoft products, making it a calculation that can be included in agentic orchestration.
+You can then create Dataverse and Copilot Studio objects that make the operation available as a tool in your agent. Users in copilot chat can invoke the business logic in natural language and receive copilot responses that are based on the business logic of the finance and operations code base, and agents can use the business logic as a tool in the orchestration.
 
 Finance and operations apps offer many scenarios and opportunities for AI tools. The following table provides some examples.
 
