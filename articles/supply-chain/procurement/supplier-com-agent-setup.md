@@ -98,7 +98,10 @@ To create the required connections, follow these steps.
 
     :::image type="content" source="media/sca-connections-setup.png" alt-text="Example connections setup" lightbox="media/sca-connections-setup.png":::
 
-### Activate the flows
+### <a name="trigger-flows"></a>Activate the triggering Power Automate flows
+
+> [!NOTE]
+> This section describes one of two ways to activate the triggering Power Automate flows. The other way is to use a PowerShell script, which is described in the [Activate the triggering Power Automate flows by using a PowerShell script](#sample-script) section later in this article. You don't need to do both; you can choose the method that you prefer.
 
 To finish setting up the agent identity, you must activate the triggering Power Automate flows. A Canvas app is provided to help you do this. To use the app, follow these steps.
 
@@ -224,3 +227,253 @@ When you use the [review and apply purchase order changes received in vendor ema
 1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
 1. Create or select a vendor.
 1. On the **Contact information** FastTab, add a row with your own email address (the one you'll send/forward test messages from).
+
+## <a name="sample-script"></a>Activate the triggering Power Automate flows by using a PowerShell script
+
+> [!NOTE]
+> This section describes one of two ways to activate the triggering Power Automate flows. The other way is to use a Canvas app, which is described in the [Activate the triggering Power Automate flows](#trigger-flows) section earlier in this article. You don't need to do both; you can choose the method that you prefer.
+
+This sample PowerShell script finishes [setting up the agent identity](#set-up-agent-identity) by updating the connection references for the agent and activating the triggering Power Automate flows.
+
+To use the sample PowerShell script, follow these steps.
+
+1. Copy the script, and save it as a `.ps1` file.
+
+1. Before you run the script, enter values for the following four parameters at the top:
+    - `environmentId` – Specify the ID of your Dataverse environment. You can find the ID in the Power Platform admin center.
+    - `dataverseUrl` – Specify the URL of your Dataverse environment. You can find the URL in the Power Platform admin center. Include *https://* in the URL.
+    - `DVConnectionName` – Specify the name of the Dataverse connector to use. The connector is named after the agent identity that you signed in as when you [created](#set-up-agent-identity) it. You can find the name on the **Connections** page in Power Apps.
+    - `MCSConnectionName` – Specify the name of the Copilot Studio connector to use. The connector is named after the agent identity that you signed in as when you [created](#set-up-agent-identity) it. You can find the name on the **Connections** page in Power Apps.
+
+1. Customize the script as required.
+1. Run the script from any PowerShell console or Visual Studio Code. If needed, follow the instructions to update your installed PowerShell to [version 7](https://github.com/PowerShell/PowerShell/releases). When you're prompted to sign in, sign in as an environment administrator.
+
+Here's the script:
+
+```powershell
+Param(
+   [Parameter(Mandatory=$true, HelpMessage="Dataverse environment id")]
+   [string]$environmentId = "", 
+
+   [Parameter(Mandatory=$true, HelpMessage="Dataverse environment URL")]
+   [string]$dataverseUrl = "",
+
+   [Parameter(Mandatory=$true, HelpMessage="Microsoft Dataverse connection name")]
+   [string]$DVConnectionName = "",
+
+   [Parameter(Mandatory=$true, HelpMessage="Microsoft Copilot Studio connection name")]
+   [string]$MCSConnectionName = ""
+)
+
+# Check PS version
+if ($PSVersionTable.PSVersion.Major -lt 7) {
+    Write-Error 'This script requires at least PowerShell version 7' -ErrorAction Stop
+}
+
+# Install the required modules if not already installed
+if (-not (Get-Module -ListAvailable -Name Microsoft.PowerApps.PowerShell)) {
+    Write-Warning -Message 'Installing module Microsoft.PowerApps.PowerShell'
+    Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Scope CurrentUser
+}
+
+# Install the required modules if not already installed
+if (-not (Get-Module -ListAvailable -Name Az.Accounts | Where-Object Version -ge 2.17)) {
+    Write-Warning -Message 'Installing required version of module Az.Accounts'
+    Install-Module -Name Az.Accounts -AllowClobber -Scope CurrentUser -Force -MinimumVersion 2.17
+}
+
+# Import required modules
+Import-Module Az.Accounts -MinimumVersion 2.17
+Import-Module Microsoft.PowerApps.PowerShell
+
+function Get-AccessToken {
+    # Retrieve the access token for the Dataverse environment
+    $accessToken = Get-AzAccessToken -ResourceUrl "$dataverseUrl"
+    $token = $accessToken.Token
+    $userId = $accessToken.UserId
+    Write-Host "Access token for $userId retrieved successfully." -ForegroundColor Green
+
+    return $token
+}
+
+function Get-ConnectionId {
+    param (
+        [string]$userProvidedName,
+        [string]$providerName
+    )
+
+    $matchedConnectionId = $null
+
+    $connections = Get-PowerAppConnection -EnvironmentName $environmentId -ConnectorNameFilter $providerName
+    foreach ($con in $connections) {
+        if (($con.ConnectionName -eq $userProvidedName) -or ($con.DisplayName -eq $userProvidedName))
+        {
+            $matchedConnectionId = $con.ConnectionName
+            break
+        }
+    }
+
+    if ($null -eq $matchedConnectionId)
+    {
+        Write-Error -Message "Unable to find connection $userProvidedName ($providerName)" -ErrorAction Stop
+    }
+
+    Write-Host "Found connection id $matchedConnectionId for connection $userProvidedName"
+
+    return $matchedConnectionId
+}
+
+function Get-ConnectionReferenceId {
+    param(
+        [string]$connectionReferenceLogicalName,
+        [string]$accessToken
+    )
+
+    $headers = @{ Authorization = "Bearer $accessToken" }
+    $uri = "$dataverseUrl/api/data/v9.2/connectionreferences?`$filter=connectionreferencelogicalname eq '$connectionReferenceLogicalName'"
+    $response = Invoke-RestMethod -Method Get `
+        -Uri $uri `
+        -Headers $headers `
+        -ContentType 'application/json'
+        
+    
+    if ($null -eq $response) {
+        Write-Error -Message "Connection reference not found for logical name $connectionReferenceLogicalName" -ErrorAction Stop
+    }
+
+    $connectionReferenceDisplayName = $response.value[0].connectionreferencedisplayname
+    $connectionReferenceId = $response.value[0].connectionreferenceid
+
+    Write-Host "Found connection reference id $connectionReferenceId for $connectionReferenceDisplayName ($connectionReferenceLogicalName)"
+
+    return $connectionReferenceId
+}
+
+function Set-ConnectionReferenceConnection {
+    param (
+        [string]$connectionReferenceLogicalName,
+        [string]$userProvidedConnectionName,
+        [string]$providerName,
+        [string]$accessToken
+    )
+
+    Write-Host "Updating connection reference ${connectionReferenceLogicalName}..."
+
+    $headers = @{ Authorization = "Bearer $accessToken" }
+
+    $connectionReferenceId = Get-ConnectionReferenceId -connectionReferenceLogicalName $connectionReferenceLogicalName -accessToken $accessToken
+    $connectionId = Get-ConnectionId -userProvidedName $userProvidedConnectionName -providerName $providerName
+
+    $body = @{
+        "connectionid" = "$connectionId"
+    } | ConvertTo-Json -Depth 1
+
+    $uri = "$dataverseUrl/api/data/v9.2/connectionreferences($connectionReferenceId)"
+    Write-Host "Updating connection reference URI: $uri with connection id $connectionId"
+
+    Invoke-RestMethod -Method Patch `
+        -Uri $uri `
+        -Headers $headers `
+        -ContentType 'application/json' `
+        -Body $body
+   
+    Write-Host "Connection reference updated successfully." -ForegroundColor Green
+    Write-Host
+}
+
+function ValidateUserEnvironment {
+    param (
+        [string]$environmentId
+    )
+
+    $env = Get-PowerAppEnvironment -EnvironmentName $environmentId
+    if ($null -eq $env) {
+        Write-Error -Message "Environment $environmentId was not found" -ErrorAction Stop
+    }
+
+    $displayName = $env.DisplayName
+    Write-Host "Connected to environment: $displayName ($environmentId)"
+}
+
+function Enable-TriggerFlow {
+    param (
+        [string]$flowId,
+        [string]$accessToken
+    )
+
+    $headers = @{ Authorization = "Bearer $accessToken" }
+    $flowUri = "$dataverseUrl/api/data/v9.2/workflows($flowId)"
+    $flow = $null
+
+    Write-Host "Enabling flow $flowId with uri $flowUri"
+
+    try {
+        $flow = Invoke-RestMethod -Method Get `
+            -Uri $flowUri `
+            -Headers $headers `
+            -ContentType 'application/json'
+    }
+    catch {
+        Write-Error -Message $_.Exception -ErrorAction Stop
+    }
+
+    $displayName = $flow.name
+    Write-Host "Activating flow $displayName for id $flowId"
+
+    $body = @{
+        "statecode" = 1  # Activated
+        "statuscode" = 2 # Activated
+    } | ConvertTo-Json -Depth 1 -Compress
+    
+    try {
+        Invoke-RestMethod -Method Patch `
+            -Uri $flowUri `
+            -Headers $headers `
+            -ContentType 'application/json' `
+            -Body $body
+    }
+    catch {
+        Write-Error -Message $_.Exception -ErrorAction Stop
+    }
+
+    Write-Host "Activated flow $displayName" -ForegroundColor Green
+    Write-Host
+}
+
+# Actual script body
+
+Write-Host
+Write-Host "Authenticating interactively..."
+Write-Host
+
+Connect-AzAccount -UseDeviceAuthentication
+$accessToken = Get-AccessToken
+ValidateUserEnvironment -environmentId $environmentId
+
+Write-Host
+Write-Host 'Setting up connection references...'
+Write-Host
+
+Set-ConnectionReferenceConnection `
+    -userProvidedConnectionName $DVConnectionName `
+    -providerName "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps" `
+    -connectionReferenceLogicalName "new_sharedcommondataserviceforapps_6ae5d" `
+    -accessToken $accessToken
+
+Set-ConnectionReferenceConnection `
+    -userProvidedConnectionName $MCSConnectionName `
+    -providerName "/providers/Microsoft.PowerApps/apis/shared_microsoftcopilotstudio" `
+    -connectionReferenceLogicalName "msdyn_sharedmicrosoftcopilotstudio_0be09" `
+    -accessToken $accessToken
+
+Write-Host
+Write-Host 'Activating flows...'
+Write-Host
+
+Enable-TriggerFlow -flowId 'c1061034-ff20-f011-9989-002248095ade' -accessToken $accessToken # (Self Heal) Speed up updates in purchase orders with Supplier Communications Agent
+Enable-TriggerFlow -flowId '1db577aa-83fe-ef11-bae1-000d3a34a571' -accessToken $accessToken # Speed up updates in purchase orders with Supplier Communications Agent
+Enable-TriggerFlow -flowId 'acd7bb36-07a1-ef11-a72d-6045bd0390ae' -accessToken $accessToken # Send follow-up emails to vendors with Supplier Communications Agent
+
+Write-Host
+Write-Host 'Supplier communications agent is ready for use' -ForegroundColor Green
+```
