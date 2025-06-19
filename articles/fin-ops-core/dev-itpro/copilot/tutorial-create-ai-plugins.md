@@ -185,33 +185,33 @@ In your unified developer environment, you must create a class in X++ that is ca
 ## Step 3: Add the action as a tool in your agent
 
 1. Open [Copilot Studio](https://web.powerva.microsoft.com), and select your environment.
-1. Select an existing agent, or create a new custom agent.
-1. In the agent, on the **Tools** menu, select **Add a tool**.
-2. Search for and select the **Microsoft Dataverse** connector.
-3. Select the **Peform an unbound action in selected environment** connector action.
-4. Select a **Connection**, and select **Add and configure**.
-5. In the **Details** section enter the following values:
+2. Select an existing agent, or create a new custom agent.
+3. In the agent, on the **Tools** menu, select **Add a tool**.
+4. Search for and select the **Microsoft Dataverse** connector.
+5. Select the **Peform an unbound action in selected environment** connector action.
+6. Select a **Connection**, and select **Add and configure**.
+7. In the **Details** section enter the following values:
 
-   6. **Name:** "Calculate customer balance"
-   7. **Description:** "Calculates the current balance for a customer in the local currency defined for the customer"
+   1. **Name:** "Calculate customer balance"
+   2. **Description:** "Calculates the current balance for a customer in the local currency defined for the customer"
 
-1. In the **Inputs** section enter the following:
+8. In the **Inputs** section enter the following:
 
-   2. **Environment:** Set the **Fill using** value to **Custom value**, and select a **Value** of **(Current)**.
-   3. **Action Name:** Set the **Fill using** value to **Custom value**, and set the **Value** to `cr689_CustomAPICalculateCustomerBalance`.
-   4. Select the **Add input** action, and select `cr689_CustomAPICalculateCustomerBalance_accountNumber`.
-   5. Set the **Fill using** value to **Dynamically fill with AI**.
-   6. In the **Value** field, select **Customize**.
-   7. In the **Description** field for the parameter: "The customer account number".
+   1. **Environment:** Set the **Fill using** value to **Custom value**, and select a **Value** of **(Current)**.
+   2. **Action Name:** Set the **Fill using** value to **Custom value**, and set the **Value** to `cr689_CustomAPICalculateCustomerBalance`.
+   3. Select the **Add input** action, and select `cr689_CustomAPICalculateCustomerBalance_accountNumber`.
+   4. Set the **Fill using** value to **Dynamically fill with AI**.
+   5. In the **Value** field, select **Customize**.
+   6. In the **Description** field for the parameter: "The customer account number".
 
-1. In the **Completion** section:
+9. In the **Completion** section:
    
-   2. Open the **Advanced** section.
-   3. Open the settings for the `cr689_CustomAPICalculateCustomerBalance_balance` output, and enter the following for the **Description**: "The current customer account balance".
-   4. Open the settings for the `cr689_CustomAPICalculateCustomerBalance_currencyCode` output, and enter the following for the **Description**: "The currency code for the customer balance".
-   5. Open the settings for the `cr689_CustomAPICalculateCustomerBalance_customerFound` output, and enter the following for the **Description**: "Indicator whether the customer record exists".
+   1. Open the **Advanced** section.
+   2. Open the settings for the `cr689_CustomAPICalculateCustomerBalance_balance` output, and enter the following for the **Description**: "The current customer account balance".
+   3. Open the settings for the `cr689_CustomAPICalculateCustomerBalance_currencyCode` output, and enter the following for the **Description**: "The currency code for the customer balance".
+   4. Open the settings for the `cr689_CustomAPICalculateCustomerBalance_customerFound` output, and enter the following for the **Description**: "Indicator whether the customer record exists".
 
-1. **Save** and close the new tool.
+10. **Save** and close the new tool.
 
 
 > [!NOTE]
