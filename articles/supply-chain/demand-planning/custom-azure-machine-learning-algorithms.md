@@ -4,7 +4,7 @@ description: Learn how to use custom Microsoft Azure Machine Learning algorithms
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 11/29/2024
+ms.date: 06/17/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:

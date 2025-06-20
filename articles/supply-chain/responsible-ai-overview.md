@@ -4,7 +4,7 @@ description: Responsible AI FAQs provide information about the AI technology tha
 author: kamaybac
 ms.author: kamaybac
 ms.topic: faq
-ms.date: 01/27/2025
+ms.date: 06/17/2025
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac

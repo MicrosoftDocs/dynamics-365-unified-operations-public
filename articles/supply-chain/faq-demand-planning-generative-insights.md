@@ -23,11 +23,11 @@ This FAQ provides answers to frequently asked questions about the AI technology 
 
 [!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
-<!-- KFM: This text mentions seasonality many times, but we now also support signal correlation patterns. We need to edit this to account for both metrics. -->
+<!-- KFM: This text mentioned seasonality many times, but we now also support signal correlation patterns. I updated to mention both (or to just say "patterns"). Review is needed -->
 
 ## What are Generative insights for Demand planning?
 
-Generative insights for Demand planning analyzes your demand plans to detect seasonality patterns across products and locations. The feature provides answers using natural language and visualizations.
+Generative insights for Demand planning analyzes your demand plans to detect patterns (such as seasonality and signal correlations) across products and locations. The feature provides answers using natural language and visualizations.
 
 By using Generative insights, you can quickly gain valuable insights across multiple dimensions. You can use these insights to improve operational efficiency, increase profitability, and improve customer satisfaction.
 
@@ -35,11 +35,11 @@ Learn more about this feature in [Generative insights for Demand planning (previ
 
 ## What are the capabilities of Generative insights?
 
-This feature lets you analyze your multidimensional demand plans for seasonality patterns. The system queries the data for all dimensions, and returns natural-language summaries, graphs, and other visualizations.
+This feature lets you analyze your multidimensional demand plans for patterns such as seasonality and signal correlations. The system queries the data for all dimensions, and returns natural-language summaries, graphs, and other visualizations.
 
 ## What is the intended use of Generative insights?
 
-Demand planners spend considerable time analyzing demand plans. This feature helps them gain valuable insights into the seasonality patterns that can be found in their data. These insights help planners make informed decisions about when to initiate promotions and also help them to predict the potential impact of those promotions.
+Demand planners spend considerable time analyzing demand plans. This feature helps them gain valuable insights into the patterns that can be found in their data. These insights help planners make informed decisions about when to initiate promotions and also help them to predict the potential impact of those promotions.
 
 ## How was Generative insights evaluated? What metrics are used to measure performance?
 
@@ -51,7 +51,7 @@ Microsoft might disable Copilot-driven features for selected customers if the ab
 
 ## What are the limitations of Generative insights? How can users minimize the impact of these limitations when they use the system?
 
-A maximum of fifteen seasonal patterns can be detected. Generative insights calculates a confidence score for each seasonal pattern and sorts them according to that score. Results of equal confidence are ordered arbitrarily.
+A maximum of fifteen seasonal patterns can be detected. Generative insights calculates a confidence score for each seasonal pattern and sorts them according to that score. Results of equal confidence are ordered arbitrarily. <!-- KFM: Are there similar limits for signal correlation? -->
 
 Products with insufficient data are grouped into a system-generated seasonal pattern named *Insufficient data*. This approach ensures that all data is analyzed and assigned a classification.
 

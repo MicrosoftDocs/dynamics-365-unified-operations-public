@@ -4,7 +4,7 @@ description: Learn about forecast models, which let you arrange and configure st
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 11/29/2024
+ms.date: 06/17/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
