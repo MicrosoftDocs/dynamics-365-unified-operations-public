@@ -203,7 +203,7 @@ When a master planning run indicates that a planned order is needed, the order d
 
 The requested ship date is also calculated for manually created planned purchase orders.
 
-### Recalculations for updated orders
+### <a name="recalculations"></a>Recalculations for updated orders
 
 When you edit a purchase order where the requested and/or confirmed ship date has already been calculated, the system does the following recalculations:
 
@@ -272,7 +272,7 @@ This guide explains how **Requested Ship Date** and **Requested Receipt Date** a
    - When enabled, lead time is calculated using only open working days.
 
 8. **Update Header vs Line Dates**  
-   → See [Recalculations for updated orders](# for more details.
+   → See [Recalculations for updated orders](#recalculations) for more details.
    
 ## Example date calculation scenarios
 
