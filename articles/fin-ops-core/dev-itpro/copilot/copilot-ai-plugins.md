@@ -7,7 +7,7 @@ ms.reviewer: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/11/2025
+ms.date: 06/20/2025
 
 ---
 
@@ -18,7 +18,7 @@ ms.date: 06/11/2025
 
 Finance and operations apps let you create AI tools to extend the capabilities of copilot experiences in Microsoft Copilot Studio. These tools can be added to the in-app Copilot for finance and operations apps, other Microsoft copilots or agents, or custom agents.
 
-The tools that you create can use finance and operations business logic that you want to use in your agents across Microsoft products. These tools are headless operations. They don't require specific context in the finance and operations client. They are enabled by creating an X++ class deployed in the environment, decorated with attributes identifying the class as one that can be invoked from Microsoft Copilot Studio. The class has request and response parameters defining the inputs received from the agent, and the outputs returned after the business logic has been executed. 
+The tools that you create can use the finance and operations business logic that you want to use in your agents across Microsoft products. These tools are headless operations. They don't require specific context in the finance and operations client. They're enabled by creating an X++ class deployed in the environment, decorated with attributes identifying the class as one that can be invoked from Microsoft Copilot Studio. The class has request and response parameters defining the inputs received from the agent, and the outputs returned after the business logic has been executed. 
 
 You can then create Dataverse and Copilot Studio objects that make the operation available as a tool in your agent. Users in copilot chat can invoke the business logic in natural language and receive copilot responses that are based on the business logic of the finance and operations code base, and agents can use the business logic as a tool in the orchestration.
 
@@ -31,13 +31,13 @@ Finance and operations apps offer many scenarios and opportunities for AI tools.
 | Perform an action | "Approve Paul Cannon's expense report." |
 
 > [!IMPORTANT]
-> This feature is a preview feature. It's subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274). Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that customers can get early access and provide feedback. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+> This feature is a preview feature. It's subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274). Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that customers can get early access and provide feedback. learn more about preview releases in [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
 ## Prerequisites
 
 Before you begin to develop AI tools that use finance and operations business logic, your system must meet the following requirements:
 
-- You must have a unified developer environment. The development of AI tools that use finance and operations business logic is available only in the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview). For information about how to create a unified developer environment from the [unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview), see [Tutorial: Install the Finance and Operations Provisioning App](/power-platform/admin/unified-experience/tutorial-install-finance-operations-provisioning-app).
+- You must have a unified developer environment. The development of AI tools that use finance and operations business logic is available only in the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview). Learn more about how to create a unified developer environment from the [unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview) in [Tutorial: Install the Finance and Operations Provisioning App](/power-platform/admin/unified-experience/tutorial-install-finance-operations-provisioning-app).
 - The following solutions must be installed in the Power Platform environment. If they aren't already installed, see [Manage Dynamics 365 apps](/power-platform/admin/manage-apps) for information about how to install Dynamics 365 solution packages in Dataverse.
 
     - The Copilot for finance and operations package, which includes the following solutions:
@@ -58,7 +58,7 @@ The development of AI tools for finance and operations apps has three key compon
 - A Dataverse Custom API must be created in Dataverse.
 - A tool must be added for the operation in your agent in Copilot Studio.
 
-For more information about the tool architecture and execution, see [Architecture of Copilot in finance and operations](copilot-architecture.md).
+Learn more about the tool architecture and execution in [Architecture of Copilot in finance and operations](copilot-architecture.md).
 
 ## Define the operation in X++
 
@@ -66,11 +66,11 @@ In X++, you must create a class that is called and can run code when Copilot Stu
 
 ### AI tool
 
-You must decorate the new class with the `AIPluginOperationAttribute` attribute to define it as an AI operation. This enables the class to be associated with the related Custom API and AI tool that must be created in Dataverse for the class.
+You must decorate the new class with the `AIPluginOperationAttribute` attribute to define it as an AI operation. This attribute enables the class to be associated with the related Custom API and AI tool that must be created in Dataverse for the class.
 
 ### Data contract
 
-You must decorate the method with the `DataContract` attribute to define it as a data contract. Complex data types can then be passed as input and output parameters of the method, so that serialization and deserialization of the parameters aren't required for communication with Copilot Studio. For more information about how to implement data contracts in X++, see [Using Data Contracts in X++](/dynamicsax-2012/appuser-itpro/using-data-contracts-in-x).
+You must decorate the method with the `DataContract` attribute to define it as a data contract. Complex data types can then be passed as input and output parameters of the method, so that serialization and deserialization of the parameters aren't required for communication with Copilot Studio. Learn more about how to implement data contracts in X++ in [Using Data Contracts in X++](/dynamicsax-2012/appuser-itpro/using-data-contracts-in-x).
 
 ### Custom API
 
@@ -149,9 +149,9 @@ After you create and deploy the classes and security objects, you can verify the
 - It has an associated action menu item that is included in a security privilege that is assigned to a duty/role.
 
 > [!NOTE]
-> In earlier releases the **Dataverse Custom APIs** page had a **Synchronize** action to automatically create the related Dataverse objects for the custom API. This action was removed in preview to improve solution awareness and management of the Dataverse objects. These objects must now be manually created, as outlined in steps below. 
+> In earlier releases the **Dataverse Custom APIs** page had a **Synchronize** action to automatically create the related Dataverse objects for the custom API. This action was removed in preview to improve solution awareness and management of the Dataverse objects. These objects must now be manually created, as outlined in the following steps. 
 >
-> After deploying the new classes to your environment, you need to ensure the extension cache is flushed before the new classes can be invoked. This is done as part of database synchronization, or by running the `SysFlushAOD` class in your environment. You can do this by adding the class runner to your environment URL:
+> After deploying the new classes to your environment, you need to ensure the extension cache is flushed before the new classes can be invoked. Flushing the cache is done as part of database synchronization, or by running the `SysFlushAOD` class in your environment. Run `SysFlushAOD` by adding the class runner to your environment URL:
 >
 > `https://<environment>.operations.dynamics.com/?cmp=usmf&mi=SysClassRunner&cls=SysFlushAOD`
 
@@ -235,20 +235,20 @@ To add your AI operation to the in-app sidecar chat experiences in finance and o
 1. Select a **Connection**, and select **Add and configure**.
 1. In the **Details** section:
    
-   1. Provide a **Name** value that is specific to the operation. This could be the same name as the Custom API.
-   1. Provide a **Description** that describes the operation to be performed. This is the field the agent orchestrator will use to understand when the operation needs to be called by generative orchestration.
+   1. Provide a **Name** value that is specific to the operation. This value could be the same name as the Custom API.
+   1. Provide a **Description** that describes the operation to be performed. This description is the field the agent orchestrator is used to understand when the operation needs to be called by generative orchestration.
    1. Select the appropriate **Authentication** option for your agent.
 
 1. In the **Inputs** section:
 
-   1. For the **Environment**, set the **Fill using** value to **Custom value**. You can select a specific environment or select the **(Current)** environment if the agent solution will be deployed in other environments.
-   2. For the **Action Name**, set the **Fill using** value to **Customer value**. In the **Choose an action** drop-down list, select the unique name of your Custom API created earlier.
-   3. Select the **Add input** action to add each request parameter from your Custom API. For each parameter, provide a **Description** for the input to help generative AI fill the properties from the prompt.
+   1. For the **Environment**, set the **Fill using** value to **Custom value**. You can select a specific environment or select the **(Current)** environment if the agent solution is deployed in other environments.
+   1. For the **Action Name**, set the **Fill using** value to **Customer value**. In the **Choose an action** drop-down list, select the unique name of your Custom API created earlier.
+   1. Select the **Add input** action to add each request parameter from your Custom API. For each parameter, provide a **Description** for the input to help generative AI fill the properties from the prompt.
 
 1. In the **Completion** section, open the settings for each of the outputs from the Custom API, and provide a **Description** for each.
-2. **Save** and close the new tool.
+1. **Save** and close the new tool.
 
-For more information about how to add actions to your agent, see [Add tools to custom agents](/microsoft-copilot-studio/advanced-plugin-actions).
+Learn more about how to add actions to your agent in [Add tools to custom agents](/microsoft-copilot-studio/advanced-plugin-actions).
 
 ### Configure the copilot to invoke the action
 
@@ -271,16 +271,16 @@ When classic orchestration is enabled in an agent, you must create a separate to
     1. Select **Add node (+)**.
     1. Select **Add a tool** \> **Tool**.
     1. Select your action in the list.
-    2. If you don't have a response defined for the tool in the **Completion** section of the tool definition, you may also want to add a **Message** node afterwards to provide a response to the user or agent after the action is run.
+    1. If you don't have a response defined for the tool in the **Completion** section of the tool definition, you may also want to add a **Message** node afterwards to provide a response to the user or agent after the action is run.
     1. Save the topic, and publish the change to the agent.
 
-For more information, see [Call an existing tool from within a topic](/microsoft-copilot-studio/advanced-plugin-actions#call-an-existing-tool-from-within-a-topic).
+Learn more in [Call an existing tool from within a topic](/microsoft-copilot-studio/advanced-plugin-actions#call-an-existing-tool-from-within-a-topic).
 
 #### Let generative AI orchestrate copilot topics and actions
 
-When you enable generative AI orchestration in an agent, Copilot Studio uses generative AI to determine the user's intent. It then uses generative AI to identify the most appropriate action, topic, or combination of actions and topics that should be invoked to respond to the user prompt or autonomous trigger. In this case, you don't have to create a separate topic to invoke the tool. For more information about generative mode, see [Orchestrate agent behavior with generative AI](/microsoft-copilot-studio/advanced-generative-actions).
+When you enable generative AI orchestration in an agent, Copilot Studio uses generative AI to determine the user's intent. It then uses generative AI to identify the most appropriate action, topic, or combination of actions and topics that should be invoked to respond to the user prompt or autonomous trigger. In this case, you don't have to create a separate topic to invoke the tool. Learn more about generative mode in [Orchestrate agent behavior with generative AI](/microsoft-copilot-studio/advanced-generative-actions).
 
 > [!IMPORTANT]
-> Generative mode isn't currently supported in Copilot for finance and operations apps. It will become supported and enabled by default in Copilot for finance and operations apps in a future release, as feature and quality benchmarks are validated.
+> Generative mode isn't currently supported by Copilot for finance and operations apps. It becomes supported and enabled by default in Copilot for finance and operations apps in a future release, as feature and quality benchmarks are validated.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
