@@ -101,7 +101,7 @@ To create a new webhook, follow these steps.
     - **URL**: Enter `https://login.microsoftonline.com/{tenantid}/oauth2/v2.0/token` after replacing {tenantID} with the **Directory (tenant) ID** value you copied earlier.
     - **Scope**: Enter "a013b12b-2624-40b4-b15b-b7751d733a22/.default". 
 
-    ![Screenshot that shows the OAuth settings in Adyen](../media/adyen-oauth.)
+    ![Screenshot that shows the OAuth settings in Adyen](media/adyen-oauth.png)
 
 1. Generate a new Hash-based Message Authentication Code (HMAC) key and copy it. You won't be able to view this key again, so keep it somewhere safe. 
 1. In the **Events** section, select **Authorization**.
@@ -187,7 +187,7 @@ Once the payment link is created, the system shows the payment link and a corres
 
 The payment link is an Adyen-hosted webpage that can be branded according to you needs. Contact Adyen to learn more about the branding options. Some payment methods such as "Buy Now, Pay Later" require the billing address to be provided for the customer. The payment link created by default doesn't include the billing address information. If the "RequiredShopperFields:billingAddress" key value pair is added in the **Custom Settings** property of the hardware profile, then when the payment link is opened, the customer must enter the billing address before being able to see the payment options. While the customer is making the payment, the system automatically checks for the payment status every five seconds, or the cashier can manually check for the payment status by selecting the **Check status**.  
 
-![Screenshot that shows the pay by link user experience in Point of Sale](/media/pay-by-link-main.png)
+![Screenshot that shows the pay by link user experience in Point of Sale](media/pay-by-link-main.png)
 
 If the cashier needs to cancel the payment link for some reason (for example, the customer wants to add or remove some items), then the cashier can select **Exit Pay By Link** and then select **Cancel payment link**. Once the payment link is canceled, the payment link is considered expired and can't be used for accepting payments. However, if the customer needs more time and the cashier wants to help other customers, then the cashier can select **Cancel payment link**, and then select **Suspend payment link**. Assuming that the cashier has the required permissions, this action suspends the transaction, and the cashier can help the next customer in line. This action can also be helpful for "line busting" scenarios where a store associate scans customer items, generates a payment link, and suspends the transaction. Customers can make the payment before reaching the counter, and once they do so the cashier can resume the suspended transaction and check for the payment. If the payment has been received, then a payment line is added on resuming the transaction. If the payment hasn't been received, the cashier can view the incomplete payment line in the **Payments** section of the transaction to check the payment status. 
 
