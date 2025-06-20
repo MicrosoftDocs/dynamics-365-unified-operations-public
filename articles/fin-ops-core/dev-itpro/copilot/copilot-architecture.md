@@ -4,7 +4,7 @@ description: Learn about the architecture of Copilot in finance and operations a
 author: jaredha
 ms.author: jaredha
 ms.topic: article
-ms.date: 05/08/2025
+ms.date: 06/20/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.collection:
@@ -40,13 +40,13 @@ Capabilities are added to Copilot in finance and operations apps by adding *tool
 
 Conceptually, a tool is something that Copilot knows how to do. For example, you want Copilot to be able to get customer balances. In this case, create a tool that describes the capability, and that knows which API to call to get the information that must be returned to the user.
 
-When you design your Copilot experiences, consider the types of questions that the application user might expect to ask Copilot to answer or the types of actions that they might expect to prompt Copilot to perform. tools themselves shouldn't be thought of as an end-to-end scenario. Instead, each tool should be thought of as an individual skill that the user can prompt in Copilot in various scenarios and sequences, as part of the natural language conversation. The Copilot Studio orchestration can chain the tools together to create an end-to-end conversational experience. However, the sequence isn't necessarily the same each time. The conversation of chained-together tools becomes the end-to-end business scenario.
+When you design your Copilot experiences, consider the types of questions that the application user might expect to ask Copilot to answer or the types of actions that they might expect to prompt Copilot to perform. Tools themselves shouldn't be thought of as an end-to-end scenario. Instead, each tool should be thought of as an individual skill that the user can prompt in Copilot in various scenarios and sequences, as part of the natural language conversation. The Copilot Studio orchestration can chain the tools together to create an end-to-end conversational experience. However, the sequence isn't necessarily the same each time. The conversation of chained-together tools becomes the end-to-end business scenario.
 
 ### Tool context
 
 When you develop your tools for Copilot in finance and operations apps, consider the user context that the tool will be run in. Some tools enable prompts that can be applicable in multiple user interfaces (UIs). However, other tools are ideal for use cases only in the context of a flow in finance and operations apps.
 
-- **AI tools** – AI tools are headless operations that are ideal for scenarios where there isn't a specific user interface required to perform the action or operation. If the tool queries general information that's applicable in any user interface, it should be engineered as a AI tool. For example, you might want to check a customer balance or on-hand inventory from data in finance and operations apps while you're in a Teams conversation. This information doesn't necessarily require application context to understand and receive values from the data. 
+- **AI tools** – AI tools are headless operations that are ideal for scenarios where there isn't a specific user interface required to perform the action or operation. If the tool queries general information that's applicable in any user interface, it should be engineered as an AI tool. For example, you might want to check a customer balance or on-hand inventory from data in finance and operations apps while you're in a Teams conversation. This information doesn't necessarily require application context to understand and receive values from the data. 
 
     If an AI tool is the right approach for your business scenario, create the tool in Copilot Studio as a Copilot tool that connects data across multiple sources, and that can be used across any Copilot interface from Copilot Studio, such as [Copilot for Microsoft 365](https://www.microsoft.com/microsoft-365/copilot-for-work) and Copilot in finance and operations apps. For more information, see [Create AI tools with finance and operations business logic](copilot-ai-plugins.md).
 
