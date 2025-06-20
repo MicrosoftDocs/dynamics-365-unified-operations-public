@@ -222,6 +222,58 @@ If you change the **Requested ship date** or **Confirmed ship date** value on th
 > [!NOTE]
 > If any subsequent changes are made at the line level (such as modifying the unit, warehouse quantity, or site), the line **Requested ship date** and **Requested receipt date** are recalculated based on the current date rather than the header date. To ensure accurate date calculations, we recommend that you complete all necessary updates at the line level before updating the header **Requested ship date** or **Confirmed ship date**.
 
+## Purchase Order Ship and Receipt Date Calculation Logic
+
+This guide explains how **Requested Ship Date** and **Requested Receipt Date** are calculated in purchase orders (POs) in Dynamics 365 Supply Chain Management. These dates are influenced by lead times, transport days, vendor calendars, and system settings.
+
+---
+### Key Concepts
+
+| Term                     | Description                                                  |
+|--------------------------|--------------------------------------------------------------|
+| **Requested Ship Date**  | When your company wants the vendor to ship the goods.        |
+| **Requested Receipt Date** | When your company wants to receive the goods.             |
+| **Confirmed Ship Date**  | When the vendor confirms they will ship the goods.           |
+| **Confirmed Receipt Date** | When the vendor confirms the goods will be received.      |
+| **Lead Time**            | Days the vendor needs to prepare the item.                   |
+| **Transport Days**       | Days needed to ship goods from vendor to warehouse.          |
+| **Purchase Calendar**    | This calendar defines when a vendor is open.                 |
+| **Vendor Ship Calendar** | Defines vendor’s working days for shipping.                  |
+| **Warehouse Calendar**   | Defines your warehouse’s working days for receiving.         |
+| **Item Coverage Calendar** | Optional calendar used to adjust receipt dates.           |
+
+---
+### Calculation Logic
+
+1. **Requested Ship Date** = Today + Lead Time  
+   → Adjusted to the next working day if the relevant calendar is **active**.
+
+2. **Requested Receipt Date** = Requested Ship Date + Transport Days  
+   → Adjusted to the next working day if the relevant calendar is **active**.
+
+3. **Lead Time** (on the **Line details** tab) is populated only if:
+   - The PO originates from a Purchase Requisition, Purchase Agreement, or Request for Quotation, **or**
+   - The **“Calculate PO delivery date”** setting is enabled.
+
+4. **Transport Days** are applied based on:
+   - The selected mode of delivery at the purchase order line level, **or**
+   - The default mode of delivery configured at the warehouse master.
+
+5. **Confirmed Dates** are manually entered by the vendor  
+   → These are **not** adjusted by any calendar.
+
+6. **Calendar Operating Days**
+   - **Purchase calendar** adjusts the vendor’s acceptance of the order.
+   - **Vendor ship calendar** adjusts the ship date based on vendor working days.
+   - **Warehouse calendar** adjusts the receipt date based on warehouse working days.
+   - **Item coverage calendar** adjusts the receipt date if configured.
+
+7. **Trade Agreement Working Days**  
+   - When enabled, lead time is calculated using only open working days.
+
+8. **Update Header vs Line Dates**  
+   → See [Recalculations for updated orders](# for more details.
+   
 ## Example date calculation scenarios
 
 This section provides examples that show how requested ship and receipt dates for purchase orders are calculated in various scenarios.
