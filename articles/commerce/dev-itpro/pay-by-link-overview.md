@@ -83,11 +83,7 @@ Once the new application is registered, then from the Overview page, copy the va
 - **Application (client) ID**
 - **Directory (tenant) ID**
 
-![Screenshot that shows the Client ID and Tenant ID properties on Azure portal](media/app-registration-1.png)
-
 Next, you must create a client secret for the application. To do so, select the **Certificates & secrets** section, and then select **New client secret**. Provide a description of the secret and an expiration period for the secret. Ensure that you create a business process for rotating this secret because payment notifications fail when the secret expires. Copy the secret value and save it somewhere for later use. 
-
-![Screenshot that shows the Client sercret location in Azure portal](media/app-registration-2.png)
 
 To create a new webhook, follow these steps.
 
