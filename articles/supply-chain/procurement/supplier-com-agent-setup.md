@@ -288,7 +288,7 @@ Import-Module Microsoft.PowerApps.PowerShell
 
 function Get-AccessToken {
     # Retrieve the access token for the Dataverse environment
-    $accessToken = Get-AzAccessToken -ResourceUrl "$dataverseUrl"
+    $accessToken = Get-AzAccessToken -ResourceUrl "$dataverseUrl" -AsSecureString
     $token = $accessToken.Token
     $userId = $accessToken.UserId
     Write-Host "Access token for $userId retrieved successfully." -ForegroundColor Green
@@ -326,14 +326,13 @@ function Get-ConnectionId {
 function Get-ConnectionReferenceId {
     param(
         [string]$connectionReferenceLogicalName,
-        [string]$accessToken
+        [securestring]$accessToken
     )
 
-    $headers = @{ Authorization = "Bearer $accessToken" }
     $uri = "$dataverseUrl/api/data/v9.2/connectionreferences?`$filter=connectionreferencelogicalname eq '$connectionReferenceLogicalName'"
     $response = Invoke-RestMethod -Method Get `
         -Uri $uri `
-        -Headers $headers `
+        -Authentication Bearer -Token $accessToken `
         -ContentType 'application/json'
         
     
@@ -354,12 +353,10 @@ function Set-ConnectionReferenceConnection {
         [string]$connectionReferenceLogicalName,
         [string]$userProvidedConnectionName,
         [string]$providerName,
-        [string]$accessToken
+        [securestring]$accessToken
     )
 
     Write-Host "Updating connection reference ${connectionReferenceLogicalName}..."
-
-    $headers = @{ Authorization = "Bearer $accessToken" }
 
     $connectionReferenceId = Get-ConnectionReferenceId -connectionReferenceLogicalName $connectionReferenceLogicalName -accessToken $accessToken
     $connectionId = Get-ConnectionId -userProvidedName $userProvidedConnectionName -providerName $providerName
@@ -373,7 +370,7 @@ function Set-ConnectionReferenceConnection {
 
     Invoke-RestMethod -Method Patch `
         -Uri $uri `
-        -Headers $headers `
+        -Authentication Bearer -Token $accessToken `
         -ContentType 'application/json' `
         -Body $body
    
@@ -398,10 +395,9 @@ function ValidateUserEnvironment {
 function Enable-TriggerFlow {
     param (
         [string]$flowId,
-        [string]$accessToken
+        [securestring]$accessToken
     )
 
-    $headers = @{ Authorization = "Bearer $accessToken" }
     $flowUri = "$dataverseUrl/api/data/v9.2/workflows($flowId)"
     $flow = $null
 
@@ -410,7 +406,7 @@ function Enable-TriggerFlow {
     try {
         $flow = Invoke-RestMethod -Method Get `
             -Uri $flowUri `
-            -Headers $headers `
+            -Authentication Bearer -Token $accessToken `
             -ContentType 'application/json'
     }
     catch {
@@ -428,7 +424,7 @@ function Enable-TriggerFlow {
     try {
         Invoke-RestMethod -Method Patch `
             -Uri $flowUri `
-            -Headers $headers `
+            -Authentication Bearer -Token $accessToken `
             -ContentType 'application/json' `
             -Body $body
     }
