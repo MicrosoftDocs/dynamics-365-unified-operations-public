@@ -83,11 +83,11 @@ Once the new application is registered, then from the Overview page, copy the va
 - **Application (client) ID**
 - **Directory (tenant) ID**
 
-![Screenshot that shows the Client ID and Tenant ID properties on Azure portal](./media/app-registration_1.png)
+![Screenshot that shows the Client ID and Tenant ID properties on Azure portal](./media/app-registration_1.)
 
 Next, you must create a client secret for the application. To do so, select the **Certificates & secrets** section, and then select **New client secret**. Provide a description of the secret and an expiration period for the secret. Ensure that you create a business process for rotating this secret because payment notifications fail when the secret expires. Copy the secret value and save it somewhere for later use. 
 
-![Screenshot that shows the Client sercret location in Azure portal](./media/app-registration_2.png)
+![Screenshot that shows the Client sercret location in Azure portal](./media/app-registration_2.)
 
 To create a new webhook, follow these steps.
 
@@ -101,7 +101,7 @@ To create a new webhook, follow these steps.
     - **URL**: Enter `https://login.microsoftonline.com/{tenantid}/oauth2/v2.0/token` after replacing {tenantID} with the **Directory (tenant) ID** value you copied earlier.
     - **Scope**: Enter "a013b12b-2624-40b4-b15b-b7751d733a22/.default". 
 
-    ![Screenshot that shows the OAuth settings in Adyen](./media/adyen-oauth.png)
+    ![Screenshot that shows the OAuth settings in Adyen](./media/adyen-oauth.)
 
 1. Generate a new Hash-based Message Authentication Code (HMAC) key and copy it. You won't be able to view this key again, so keep it somewhere safe. 
 1. In the **Events** section, select **Authorisation**.
@@ -138,7 +138,7 @@ In either case, for the pay by link option to be displayed, the administrator mu
 > [!NOTE]
 > The payment input type option is only available for payment methods that have **Function** set to **Card** or **Wallet**, and **Operation name** set to **Pay card**.  
 
-![Screenshot showing the payment input type options in Commerce headquarters](./media/payment_input_type.png)
+![Screenshot showing the payment input type options in Commerce headquarters](./media/payment-input-type.png)
 
 If **Manual entry** is added as a payment input type, then when a cashier on POS selects this payment method, the customer is prompted to manually enter their credit card number on the payment terminal. Also, enabling manual entry sets the **Electronic payment setup** \> **Allow manual card numbers** property to **True**, and it is disabled. If the manual entry option is removed, then the **Allow manual card numbers** property remains disabled but can be edited by the user.
 
