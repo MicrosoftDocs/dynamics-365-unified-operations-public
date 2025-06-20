@@ -181,8 +181,8 @@ When you use the STL method to handle outliers, you must also set the **Select s
     - *ETS* (error, trend, seasonality)
     - *Prophet*
 
-- **Select seasonality detection setting (preview)** – Choose how the forecast should identify seasonality patterns. Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule. Learn more about seasonality, seasonality auto detection, and seasonality hints in the [Seasonality in forecasts](#seasonality) section.
-- **Time freeze rules** – <!-- KFM: More info needed. When is this required and what affects can it have? Mention option to assign multiple rules. --> Learn more in [Limit time series updates with time freezes](time-freeze.md)
+- **Select seasonality detection setting** – Choose how the forecast should identify seasonality patterns. Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule. Learn more about seasonality, seasonality auto detection, and seasonality hints in the [Seasonality in forecasts](#seasonality) section.
+- **Time freeze rules** – Search for and select the time freeze rules (if any) that should apply to the current step. You can add multiple time freeze rules if needed. Learn more in [Limit automatic time series updates with time freezes](time-freeze.md)
 
 ### Forecast with signals steps (preview)
 
@@ -202,7 +202,7 @@ You can use this type of step only if your forecast model has at least two paral
 - **Created by** – The user who created the step.
 - **Model type** – Select the forecast algorithm to use. In the current version, only the *XGBoost* algorithm is available.
 - **Seasonality hint (in periods of time buckets)** – Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule. If your data has such a pattern, enter the frequency (in time buckets). For example, if you notice a weekly seasonality pattern where most customers shop on Saturdays, and you're using buckets in days, enter *7* here. Learn more about seasonality and seasonality hints in the [Seasonality in forecasts](#seasonality) section. <!-- KFM: No seasonality for XGBoost? Remove this point? -->
-- **Time freeze rules** – <!-- KFM: More info needed. When is this required and what affects can it have? Mention option to assign multiple rules. --> Learn more in [Limit time series updates with time freezes](time-freeze.md)
+- **Time freeze rules** – Search for and select the time freeze rules (if any) that should apply to the current step. You can add multiple time freeze rules if needed. Learn more in [Limit automatic time series updates with time freezes](time-freeze.md)
 
 ### Finance and operations steps
 
@@ -264,7 +264,9 @@ Although both seasonality and cycles involve repeating patterns, there are key d
 
 Auto seasonality detection uses an algorithm that automatically detects seasonality patterns for each combination of a location and a product, and applies the result to forecast calculations. Seasonality patterns typically vary for different products and different locations. Therefore, auto detection often works better than application of the same pattern everywhere.
 
-To set a *Forecast* or *Handle outliers* step to use seasonality auto detection, edit the step's settings, and then set **Select seasonality detection setting (preview)** to *Auto detection*. <!-- KFM: No seasonality for XGBoost? -->
+To set a *Forecast* or *Handle outliers* step to use seasonality auto detection, edit the step's settings, and then set **Select seasonality detection setting** to *Auto detection*. <!-- KFM: No seasonality for XGBoost? -->
+
+<!-- KFM: I think the wrong setting is marked as (preview) in the UI -->
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -290,6 +292,6 @@ If the seasonal period that you use is too long (that is, longer than the actual
 
 For example, you use a seasonal period of *24 months* for data that has an annual cycle. The result is overfitting, where small irregularities in the data are treated as seasonal patterns.
 
-To set a *Forecast* or *Handle outliers* step to use a seasonality hint, edit the step's settings, and set **Select seasonality detection setting (preview)** to *Detection using hint*. Then, enter the number of time buckets in the **Seasonality hint (in periods of time buckets)** field. <!-- KFM: No seasonality for XGBoost? -->
+To set a *Forecast* or *Handle outliers* step to use a seasonality hint, edit the step's settings, and set **Select seasonality detection setting** to *Detection using hint*. Then, enter the number of time buckets in the **Seasonality hint (in periods of time buckets)** field. <!-- KFM: No seasonality for XGBoost? -->
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]

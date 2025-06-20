@@ -1,8 +1,8 @@
 ---
-title: Limit time series edits with time fences
+title: Limit manual time series edits with time fences
 description: Learn how to create and use time fences, which let demand planning managers define rules that prevent users from manually editing time series values that are associated with a specified time span.
-author: t-benebo
-ms.author: benebotg
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Limit time series edits with time fences
+# Limit manual time series edits with time fences
 
 [!include [banner](../includes/banner.md)]
 

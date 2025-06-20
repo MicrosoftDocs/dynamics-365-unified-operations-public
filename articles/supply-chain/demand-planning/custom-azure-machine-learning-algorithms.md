@@ -22,7 +22,7 @@ This article describes the setup that is required to enable Demand planning to c
 
 ## Set up a new Microsoft Entra application
 
-Follow the steps in this section to create a new Microsoft Entra application in your Azure Machine Learning workspace. This resource in the [Azure portal](/azure/azure-portal/azure-portal-overview) holds your algorithms. The Microsoft Entra application is an enterprise application that enables Demand planning to connect to your Azure Machine Learning algorithms. (For more information about how to set up a Microsoft Entra application, see [Register an application](/entra/identity-platform/quickstart-register-app#register-an-application).)
+Follow the steps in this section to create a new Microsoft Entra application in your Azure Machine Learning workspace. This resource in the [Azure portal](/azure/azure-portal/azure-portal-overview) holds your algorithms. The Microsoft Entra application is an enterprise application that enables Demand planning to connect to your Azure Machine Learning algorithms. Learn more about how to set up a Microsoft Entra application in [Register an application](/entra/identity-platform/quickstart-register-app#register-an-application).
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) by using an account that has at least *Cloud Application Administrator* privileges.
 1. Register a new Microsoft Entra application as described in [Create a Microsoft Entra application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
@@ -64,7 +64,7 @@ Follow these steps to set up the Azure Machine Learning service connection in De
 
 1. Sign in to Demand planning.
 1. On the left navigation pane, select **Custom Azure ML**.
-1. Select the plus sign (**&plus;**) button to create a new connection, and set the following fields for it:
+1. In the toolbar, select **New** to create a new connection and set the following fields for it:
 
     - **Name** – Enter a name for the connection.
     - **Subscription ID** – Enter the ID for your Azure subscription.
@@ -73,6 +73,8 @@ Follow these steps to set up the Azure Machine Learning service connection in De
     - **Storage Account Name** – Enter the name of the Azure storage account that you specified when you ran the setup wizard in your Azure workspace.
     - **Application ID** – Enter the application ID of the Microsoft Entra application that you created. This value is used to authorize API requests to the Azure Machine Learning service.
     - **Application secret** – Enter the service principal application secret for the Microsoft Entra application that you created. This value is used to acquire the access token for the security principal that you created to perform authorized operations against Azure Storage and the Azure Machine Language workspace.
+
+1. <!-- KFM: Describe **Custom machine learning pipeline configurations**. What is this? How do we work with these? What is the **Add existing** option? -->
 
 ## Set up a forecast that uses your own Azure Machine Learning algorithms
 
@@ -91,3 +93,7 @@ Follow these steps to set up a forecast that uses your own Azure Machine Learnin
     - **Custom parameters** – <!-- KFM: description needed -->
 1. Select **Save** to close the dialog.
 1. Complete the model by adding a *Save* step.
+
+## Download sample code and other resources
+
+To download sample code and other resources that demonstrate how to use custom Azure Machine Learning algorithms in Demand planning, go to the [Custom-ML-in-DemandPlanning repository on GitHub](https://github.com/microsoft/Dynamics-365-Demand-Planning-Custom-Azure-ML-Template). It provides insights into how to read input data, handle standard and custom parameters, and generate output that aligns with the application's consumption requirements. The repository consists of a readme file, a scoring script, a docker file, and demonstrative videos.

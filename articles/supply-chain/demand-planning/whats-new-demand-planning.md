@@ -44,7 +44,7 @@ To improve efficiency and make queries easier to formulate, Demand planning now 
 
 #### Multiple rules for time freezes
 
-Demand planning now lets you assign multiple time freeze rules to *Forecast* and *Forecast with signals* steps. Each rule can have a different time freeze horizon. In this way, updates to a continuous forecast calculation are prevented during the selected periods. <!-- KFM: This isn't clear, really. Maybe improve this (though maybe the main (linked) topic will be enough) --> Learn more in [Design forecast models](design-forecast-models.md).
+Demand planning now lets you assign multiple time freeze rules to *Forecast* and *Forecast with signals* steps. Each rule can have a different time freeze horizon. In this way, updates to a continuous forecast calculation are prevented during the selected periods. Learn more in [Limit automatic time series updates with time freezes](time-freeze.md).
 
 ### New fixes and improvements in version 1.0.0.2794
 
@@ -65,7 +65,7 @@ Automatic detection of seasonality patterns was introduced in Demand planning ve
 
 #### Time freeze rules
 
-*Time freeze rules* let demand planning managers establish policies that prevent forecast calculations from recalculating and overwriting manual adjustments in an existing forecast during a specified date range. Time freeze rules are based on the dimensions that are available in each forecast, and they are easy to maintain. Learn more in [Limit time series updates with time freezes](time-freeze.md).
+*Time freeze rules* let demand planning managers establish policies that prevent forecast calculations from recalculating and overwriting manual adjustments in an existing forecast during a specified date range. Time freeze rules are based on the dimensions that are available in each forecast, and they are easy to maintain. Learn more in [Limit automatic time series updates with time freezes](time-freeze.md).
 
 #### Generative insights into seasonality patterns (production ready preview)
 
@@ -120,7 +120,7 @@ This version of Demand planning introduces the following fixes and improvements:
 
 ### New feature introduced in version 1.0.0.1281
 
-This version adds support for *time fences*, which allow demand planning managers to establish policies that prevent planners from editing certain date ranges of a forecast. Time fences are both flexible and simple to maintain. Managers create time fence rules based on the dimensions available in each plan. For example, a single product could be set up with different time fences for each store or geographical location. Time fence rules can also apply based on each user's role. For example, a role-based time fence rule could allow managers to edit a forecast in a period that can't be edited by planners. Learn more in [Limit time series edits with time fences](time-fences.md).
+This version adds support for *time fences*, which allow demand planning managers to establish policies that prevent planners from editing certain date ranges of a forecast. Time fences are both flexible and simple to maintain. Managers create time fence rules based on the dimensions available in each plan. For example, a single product could be set up with different time fences for each store or geographical location. Time fence rules can also apply based on each user's role. For example, a role-based time fence rule could allow managers to edit a forecast in a period that can't be edited by planners. Learn more in [Limit manual time series edits with time fences](time-fences.md).
 
 ### New fixes and improvements in version 1.0.0.1281
 

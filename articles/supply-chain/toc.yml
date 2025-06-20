@@ -2103,9 +2103,9 @@
           href: demand-planning/generative-insights.md
         - name: Analyze demand plans with Copilot
           href: demand-planning/demand-planning-copilot.md
-        - name: Limit time series edits with time fences
+        - name: Limit manual time series edits with time fences
           href: demand-planning/time-fences.md
-        - name: Limit time series updates with time freezes
+        - name: Limit automatic time series updates with time freezes
           href: demand-planning/time-freeze.md
       - name: Export and download data
         href: demand-planning/export-data.md
