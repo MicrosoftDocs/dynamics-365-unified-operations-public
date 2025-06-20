@@ -262,11 +262,11 @@ Although both seasonality and cycles involve repeating patterns, there are key d
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
-Auto seasonality detection uses an algorithm that automatically detects seasonality patterns for each combination of a location and a product, and applies the result to forecast calculations. Seasonality patterns typically vary for different products and different locations. Therefore, auto detection often works better than application of the same pattern everywhere.
+Automatic seasonality detection uses an algorithm that finds seasonality patterns for each combination of a location and a product, and applies the result to forecast calculations. Seasonality patterns typically vary for different products and different locations. Therefore, auto detection often works better than applying the same pattern everywhere.
 
 To set a *Forecast* or *Handle outliers* step to use seasonality auto detection, edit the step's settings, and then set **Select seasonality detection setting** to *Auto detection*. <!-- KFM: No seasonality for XGBoost? -->
 
-<!-- KFM: I think the wrong setting is marked as (preview) in the UI -->
+<!-- KFM: I think only autodetect is in preview, right? Or is the hint method also in preview? The UI text implies both are in preview, but I don't think that's right. -->
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
