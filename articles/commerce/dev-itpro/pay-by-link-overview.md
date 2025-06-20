@@ -83,11 +83,11 @@ Once the new application is registered, then from the Overview page, copy the va
 - **Application (client) ID**
 - **Directory (tenant) ID**
 
-![Screenshot that shows the Client ID and Tenant ID properties on Azure portal](../media/app-registration-1.png)
+![Screenshot that shows the Client ID and Tenant ID properties on Azure portal](media/app-registration-1.png)
 
 Next, you must create a client secret for the application. To do so, select the **Certificates & secrets** section, and then select **New client secret**. Provide a description of the secret and an expiration period for the secret. Ensure that you create a business process for rotating this secret because payment notifications fail when the secret expires. Copy the secret value and save it somewhere for later use. 
 
-![Screenshot that shows the Client sercret location in Azure portal](../media/app-registration-2.png)
+![Screenshot that shows the Client sercret location in Azure portal](media/app-registration-2.png)
 
 To create a new webhook, follow these steps.
 
@@ -140,7 +140,7 @@ In either case, for the pay by link option to be displayed, the administrator mu
 > [!NOTE]
 > The payment input type option is only available for payment methods that have **Function** set to **Card** or **Wallet**, and **Operation name** set to **Pay card**.  
 
-![Screenshot showing the payment input type options in Commerce headquarters](../media/payment-input-type.png)
+![Screenshot showing the payment input type options in Commerce headquarters](media/payment-input-type.png)
 
 If **Manual entry** is added as a payment input type, then when a cashier on POS selects this payment method, the customer is prompted to manually enter their credit card number on the payment terminal. Also, enabling manual entry sets the **Electronic payment setup** \> **Allow manual card numbers** property to **True**, and it's disabled. If the manual entry option is removed, then the **Allow manual card numbers** property remains disabled but can be edited by the user.
 
@@ -151,7 +151,7 @@ To support payment options such as quick response (QR) code-based wallets, setti
 
 Pay by link doesn't require Hardware station to be enabled for Cloud POS or the Store Commerce app. If you want to use pay by link with a register that isn't paired with a hardware station, then the register must be configured to use Commerce Scale Unit (AKA Retail Server) for **Card not present processing**. In headquarters, go to the **Register** form and in the **General** section, set the value for **Card not present processing** to **Use retail server**.
 
-![Screenshot showing the payment input type options in Commerce headquarters](../media/register-card-not-present.png)
+![Screenshot showing the card not present processing options in Commerce headquarters](media/register-card-not-present.png)
 
 > [!IMPORTANT]
 > If you don't intend to pair the hardware station with POS, then contact Microsoft support to enable the flight named "Payments.PayByLinkVisibleWhenHWSOrTerminalInactive" in your environment. This flight is automatically enabled starting with Commerce version 10.0.45.
@@ -187,7 +187,7 @@ Once the payment link is created, the system shows the payment link and a corres
 
 The payment link is an Adyen-hosted webpage that can be branded according to you needs. Contact Adyen to learn more about the branding options. Some payment methods such as "Buy Now, Pay Later" require the billing address to be provided for the customer. The payment link created by default doesn't include the billing address information. If the "RequiredShopperFields:billingAddress" key value pair is added in the **Custom Settings** property of the hardware profile, then when the payment link is opened, the customer must enter the billing address before being able to see the payment options. While the customer is making the payment, the system automatically checks for the payment status every five seconds, or the cashier can manually check for the payment status by selecting the **Check status**.  
 
-![Screenshot that shows the pay by link user experience in Point of Sale](../media/pay-by-link-main.png)
+![Screenshot that shows the pay by link user experience in Point of Sale](/media/pay-by-link-main.png)
 
 If the cashier needs to cancel the payment link for some reason (for example, the customer wants to add or remove some items), then the cashier can select **Exit Pay By Link** and then select **Cancel payment link**. Once the payment link is canceled, the payment link is considered expired and can't be used for accepting payments. However, if the customer needs more time and the cashier wants to help other customers, then the cashier can select **Cancel payment link**, and then select **Suspend payment link**. Assuming that the cashier has the required permissions, this action suspends the transaction, and the cashier can help the next customer in line. This action can also be helpful for "line busting" scenarios where a store associate scans customer items, generates a payment link, and suspends the transaction. Customers can make the payment before reaching the counter, and once they do so the cashier can resume the suspended transaction and check for the payment. If the payment has been received, then a payment line is added on resuming the transaction. If the payment hasn't been received, the cashier can view the incomplete payment line in the **Payments** section of the transaction to check the payment status. 
 
