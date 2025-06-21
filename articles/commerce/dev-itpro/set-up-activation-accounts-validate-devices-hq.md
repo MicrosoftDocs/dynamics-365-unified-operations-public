@@ -18,6 +18,10 @@ ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPe
 # Manage activation accounts and validate devices
 
 [!include [banner](../includes/banner.md)]
+> [!WARNING]
+> Due to security compliance, the feature **Commerce \> Create new identity** was deprecated in release 10.0.44 (PU68).
+> 
+> New users should be created directly through Microsoft Entra ID's [new user workflow](https://entra.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/CreateUser.ReactView).
 
 This article explains how an IT Pro can set up Commerce activation accounts for workers to activate Store Commerce devices.
 
@@ -33,25 +37,10 @@ This procedure should be completed before you activate Store Commerce for web.
     - UPN
     - External identifier
 
-4. You can update the **External identity** fields by using an existing Microsoft Entra account or creating a new Microsoft Entra account. To update the fields, access the **External identity** options from the **Commerce** main menu (**Commerce \> Associate existing identity \> Commerce \> Create new identity**).
-5. To use an existing Microsoft Entra account, select **Commerce \> Associate existing identity**. In the slider, select the Microsoft Entra account that has the correct name, and then select **OK**. The Microsoft Entra account that is associated with that name and alias is the user's activation account for the Store Commerce app.
-6. Complete and save the changes on the **Workers** page, and then refresh the page. The section that contains external identity information should be updated with the new information. The mapped Microsoft Entra account is now your activation account for the Store Commerce app and Store Commerce for web. This account is mapped to a worker for the required POS permissions. You can use this Microsoft Entra account for Store Commerce app and Store Commerce for web activation.
-7. The Create external identity feature creates a new Microsoft Entra account for you by using the alias that you enter. To update the fields, access the **External identity** options from the **Commerce** main menu (**Commerce \> Create new identity**).
-8. You can either manually enter the alias to generate or use the **Reset to default** button. Then manually enter a strong password, and select **OK**.
-9. If the worker is created successfully, you receive a message on the **Workers** page. The mapped Microsoft Entra account is now the user's activation account for the Store Commerce app and Store Commerce for web. This account is mapped to a worker for the required POS permissions. You can use this Microsoft Entra account for Store Commerce app or Store Commerce for web activation.
-
-## Setting up device activation accounts for multiple workers
-
-You can set up activation accounts for multiple workers in bulk. However, this functionality is supported only if you're creating new external identities, not if you're associating identities.
-
-1. In the workers form, select the list of workers to set the activation account for.
-2. Select **Commerce \> Create external identity** to update the fields. Any Microsoft Entra accounts that are associated with the workers appear in this pane.
-
-    > [!NOTE]
-    > These accounts aren't device activation accounts until you map them by using the external identity flow options.
-
-3. If you want to use the existing Microsoft Entra accounts as activation accounts, you can't map them in bulk. Cancel the selection of those workers, and then map them individually by using **Use existing external identity**.
-4. To create new Microsoft Entra accounts and associate them with the workers, so that they can be used as activation accounts, update the **Alias** and **Password** fields, and then select **OK**. In the main worker form, you receive a message as activation accounts are created for each worker.
+4. To use an existing Microsoft Entra account, select **Commerce \> Associate existing identity**. In the slider, select the Microsoft Entra account that has the correct name, and then select **OK**. The Microsoft Entra account that is associated with that name and alias is the user's activation account for the Store Commerce app.
+5. Complete and save the changes on the **Workers** page, and then refresh the page. The section that contains external identity information should be updated with the new information. The mapped Microsoft Entra account is now your activation account for the Store Commerce app and Store Commerce for web. This account is mapped to a worker for the required POS permissions. You can use this Microsoft Entra account for Store Commerce app and Store Commerce for web activation.
+6. You can either manually enter the alias to generate or use the **Reset to default** button. Then manually enter a strong password, and select **OK**.
+7. If the worker is created successfully, you receive a message on the **Workers** page. The mapped Microsoft Entra account is now the user's activation account for the Store Commerce app and Store Commerce for web. This account is mapped to a worker for the required POS permissions. You can use this Microsoft Entra account for Store Commerce app or Store Commerce for web activation.
 
 ## Run the Validate Devices for activation check at headquarters
 
