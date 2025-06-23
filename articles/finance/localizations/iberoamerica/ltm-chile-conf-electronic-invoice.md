@@ -46,6 +46,7 @@ The following steps go through the information that the XML tags require, in the
     2. Assign a tax code to the terms of payment according the Chilean normative.
 
 5. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class sales point**, and assign a document number sequence to the document class sales point configuration. This number sequence is used for the document number for the fiscal document.
+1. In the **Document class sales point** form complete the **Printing concept** 1, 2 and 3 with the street and street number, province and commune respectively.
 6. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Sales point prefix**, and set the tax application code to the sales points that are used with the codification that the fiscal authority assigned to it.
 7. Go to **Accounts receivable** \> **Customers** \> **All customers**, and follow these steps:
 
@@ -59,29 +60,36 @@ The following steps go through the information that the XML tags require, in the
 
 9. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class**, and configure the required information for fiscal documents.
 
-    1. For remission document classes, select each one that has been created. Then, in the **General** section, set **Concept Label 1** field to **RUT Chofer** and the **Concept Label 3** field to **Nombre Chofer**.
-    2. In the **Additional data** section, configure the fields for each remission document class to match the information requirements for electronic invoicing. For remission document classes, the **Free text 1** field should be required and should be for the driver's RUT number. The **Free text 3** field should be required and should be for the driver's name.
-    3. In the **Additional data** section, enable lists 3, 4, 5, 7, and 8.
-    4. For each credit/debit note document class that has been created, in the **Additional data** section, enable lists 9 and 10.
+    1. For remission document classes, select each one that has been created. Then, in the **General** section, set **Concept Label 1** field to **RUT Chofer**, **Concept Label 2** field to **RUT Transportista** and the **Concept Label 3** field to **Nombre Chofer**.
+    2. In the **Additional data** section, configure the fields for each remission document class to match the information requirements for electronic invoicing. For remission document classes, the **Free text 1** field should be required and should be for the driver's RUT number. The **Free text 2** field should be required and should be for the transporter’s RUT. The **Free text 3** field should be required and should be for the driver's name. 
+    3. In the **Additional data** section, enable lists 1, 3, 4, 5, 6, 7, and 8 as the electronic document requires.
 
     For more information, see [Document classes for Latin America](ltm-core-document-class.md).
 
-10. Go to **Sales and marketing \> Setup \> Distribution \> Reasons for delivery**, and set the options for selling modes according to the Chilean normative that's established by the customs office. This information is used only for export documents.
-11. Go to **Sales and marketing \> Setup \> Distribution \> Terms of delivery**, and set the options for selling clauses according to the Chilean normative (FOB, CIF, and so on).
-12. Go to **Sales and marketing \> Setup \> Distribution \> Modes of delivery**, and set the options for transportation routes according to the Chilean normative (aerial, terrestrial, maritime, and so on).
+10. Go to **Sales and marketing \> Setup \> Distribution \> Reasons for delivery**, and set the options for selling modes according to the Chilean normative that's established by the customs office. This information is used only for export documents. Add a **Tax application code** for these records.
+11. Go to **Sales and marketing \> Setup \> Distribution \> Terms of delivery**, and set the options for selling clauses according to the Chilean normative (FOB, CIF, and so on). Add a **Tax application code** for these records.
+12. Go to **Sales and marketing \> Setup \> Distribution \> Modes of delivery**, and set the options for transportation routes according to the Chilean normative (aerial, terrestrial, maritime, and so on). Add a **Tax application code** for these records.
 13. Go to **General ledger \> Currencies \> Currencies**. For each currency that's used in transactions set the **Tax application** code with the currency indicator according to the electronic invoice schema (PESO CL, DOLAR USA, EURO, and so on).	
 14. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Electronic documents references**. Set the **Tax application id** value that has been created for electronic invoicing for Chile (**CHFE**), and set the limit to trigger the global indicator according to the Chilean normative (**20**). These settings will trigger the limit for references in one document and make a summary of the references.
 15. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**, and configure the tax application code for the units that will be used, according to the Chilean customs office normative.
 16. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Field master list**, and create the following field lists:
-
+    - **Field list 1:** Add elements that have the type of services included in the document according to the Chilean normative.
     - **Field list 3:** Add elements that have the ports of shipment and their codes according to the Chilean normative.
     - **Field list 4:** Add elements that have the landing ports and their codes according to the Chilean normative.
     - **Field list 5:** Add elements that have the options for transport type indicators and their codes according to the Chilean normative.
+    - **Field list 6:** Add elements that have the patents used in transport transactions.
     - **Field list 7:** Add elements that have the options for remission types and their codes according to the Chilean normative.
     - **Field list 8:** Add elements that have the options for products transfer types and their codes according to the Chilean normative.
+    - **Field list 9:** Add elements that have the options for reference document codes according to the Chilean normative.
+    - **Field list 10:** Add elements that have fiscal document type codes according to the Chilean normative.
+
 
 17. Go to **Inventory management** \> **Setup** \> **Inventory breakdown** \> **Warehouses**, and configure the primary address for each warehouse used.
-
+1. Go to **Organization administration > Setup >LATAM > SSRS Reports / Services references** create a record to be used for the Chilean Electronic Invoice.
+1. In the **SSRS Reports / Services references** form complete the **ID**, **Report/Service name**.
+1. In the **SSRS Reports / Services references** form set the ** Report/Service type** field to **Service** and the **Sales point type** to **Pre-printed**.
+1. In the **SSRS Reports / Services references** form in the **Parameters** section create a new record and in the **Name** field enter **TaxApplicationID** and in the **Value** field enter the tax application id used for this the Chilean electronic invoice.
+1. Go to **Organization administration > Workspaces > Electronic reporting** and configure the format application specific parameters setting the **Tax type** lookup condition **No** with the tax codes for taxed transactions and the lookup condition **Yes** with the tax codes for untaxed transaction. You also need to set up **NA** condition with the tax code **Blank** and **Not blank** at the end of the list.
 After you complete these steps, you can issue electronic invoices from free text invoices, sales orders, and projects.
 
 ## Inventory transfer format for internal products movements
