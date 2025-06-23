@@ -98,10 +98,12 @@ The following sections list all the changes you must make in Commerce headquarte
 
 To enter the application ID (client ID) of the CSU Entra ID app in headquarters, follow these steps.
 
-1. Go to **System administration \> Setup \> Azure Active Directory applications (Microsoft Entra ID Applications)**.
+1. Go to **System administration \> Setup \> Microsoft Entra ID Applications**.
+1. Select **New**
 1. In the **Client ID** column, enter the application ID (client ID) of the "Retail Server app" from the Entra portal.
 1. in the **Name** column, enter descriptive text.
-1. In the **User ID** column, enter "RetailServiceAccount".  
+1. In the **User ID** column, enter "RetailServiceAccount". 
+1. Select **Save** 
 
 
 
@@ -165,7 +167,7 @@ CommerceStoreScaleUnitSetup.exe updateCertificates --SslCertFullPath "store:///M
 Cloud hosted Finance and Operations can be provisioned with the Unified Development Environment.
 
 For details on support for the Power Platform unified developer environment, see 
-[Unified Development Environment](https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-dev-overview)
+[Unified Development Environment](/power-platform/developer/unified-experience/finance-operations-dev-overview)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

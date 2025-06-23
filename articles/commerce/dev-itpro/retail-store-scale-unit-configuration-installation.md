@@ -84,23 +84,23 @@ Next, you must create a new channel profile record for the CSU URL, and then upd
 
 To create a new channel profile in headquarters and update the existing store records to use the new channel database and profile, follow these steps.
 
-12. Go to **Retail and Commerce \> Channel setup \> Channel profiles**.
-13. On the Action Pane, select **New**.
-14. In the **Name** field, enter a unique name for the channel profile.
+10. Go to **Retail and Commerce \> Channel setup \> Channel profiles**.
+11. On the Action Pane, select **New**.
+12. In the **Name** field, enter a unique name for the channel profile.
 
     > [!IMPORTANT]
     > For on-premises deployments, any value can be entered in this field, however, the value **Default** is common.
 
-15. On the Action Pane, select **Save**.
-16. On the **Profile properties** FastTab for the new channel profile, select **Add**.
-17. In the **Property key** field, select **Retail Server URL**.
-18. In the **Property value** field, enter the URL of the Retail Server that will be installed. (Note: When configuring for a development environment, enter `https://<HostName>:446/RetailServer/Commerce`.)
+13. On the Action Pane, select **Save**.
+14. On the **Profile properties** FastTab for the new channel profile, select **Add**.
+15. In the **Property key** field, select **Retail Server URL**.
+16. In the **Property value** field, enter the URL of the Retail Server that will be installed. (Note: When configuring for a development environment, enter `https://<HostName>:446/RetailServer/Commerce`.)
 
     The standard format for the URL of Commerce Scale Unit is `https://<Computer Name>:<Port>/RetailServer/Commerce`. In this format, **\<Computer Name\>** is either the fully qualified domain name (FQDN) of the computer where Commerce Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **\<Port\>** is the port number that should be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
 
-19. On the **Profile properties** FastTab for the new channel profile, select **Add**.
-20. In the **Property key** field, select **Cloud POS URL**.
-21. In the **Property value** field, enter the URL of the Cloud POS instance that should be installed for Commerce Scale Unit. 
+17. On the **Profile properties** FastTab for the new channel profile, select **Add**.
+18. In the **Property key** field, select **Cloud POS URL**.
+19. In the **Property value** field, enter the URL of the Cloud POS instance that should be installed for Commerce Scale Unit. 
 
     The standard format for the URL of Cloud POS is `https://<Computer Name>:<Port>/POS`. In this format, **\<Computer Name\>** is either the FQDN of the computer where the Commerce Scale Unit is installed. or for systems that aren't joined to a domain, the full computer name. **\<Port\>** is the port number that used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
 
@@ -108,38 +108,38 @@ To create a new channel profile in headquarters and update the existing store re
     > - When configuring for a development environment, enter `https://<HostName>:446/POS`. 
     > - The \<HostName\> value typically starts with "DEV" and can be found by opening IIS Manager and reviewing the server name value shown in the upper left corner. It can also be found on the LCS Environments page in the **VM Name** column under **Manage environment \> LOCAL ACCOUNTS**.
 
-22. On the Action Pane, select **Save**.
+20. On the Action Pane, select **Save**.
 
     > [!NOTE]
     > - If media is commonly used, it will be necessary to generate a **Media Server Base URL** for the profile. For testing and simplicity, the URL that exists for the **Default** Channel profile can be reused.
     > - For on-premises deployments, the **Media Server Base URL** will be where all media is stored for POS devices.
 
-23. Go to **Retail and Commerce \> Channels \> Stores \> All stores**.
-24. Click the channel ID link for the store that uses the new channel database.
-25. On the details page for the selected store, on the Action Pane, select **Edit**.
-26. On the **General** FastTab for the store, in the **Live channel database** field, select the channel database that you created in step 3.
+21. Go to **Retail and Commerce \> Channels \> Stores \> All stores**.
+22. Click the channel ID link for the store that uses the new channel database.
+23. On the details page for the selected store, on the Action Pane, select **Edit**.
+24. On the **General** FastTab for the store, in the **Live channel database** field, select the channel database that you created in step 3.
+25. On the Action Pane, select **Save**.
+26. On the **General** FastTab for the store, in the **Channel profile** field, select the channel profile that you created in step 12.
 27. On the Action Pane, select **Save**.
-28. On the **General** FastTab for the store, in the **Channel profile** field, select the channel profile that you created in step 12.
-28. On the Action Pane, select **Save**.
 > [!NOTE]
 > - If you receive a warning stating `The store's closing method must be set to 'Shift'`, on the **Statement/Closing** FastTab of the store, update the **Closing Method** value to **Shift**.
 
-29. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database group**.
-30. Select the **Default** data group, and then, on the Action Pane, select **Full data sync**. In the **Select a distribution schedule** field, select job **9999**, and then select **OK**. In the dialog box that appears, select **OK** to confirm the full synchronization. All the data in the channel database is prepared for download.
+28. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database group**.
+29. Select the **Default** data group, and then, on the Action Pane, select **Full data sync**. In the **Select a distribution schedule** field, select job **9999**, and then select **OK**. In the dialog box that appears, select **OK** to confirm the full synchronization. All the data in the channel database is prepared for download.
 
 If no jobs appear, then initialize the base configuration [Update configurations](cdx-best-practices.md#update-configurations)
 
-    > [!IMPORTANT]
-     ### Update CDX data groups
-     The following change removes the default database from the Commerce Data Exchange (CDX) data groups in headquarters, because this database is no longer used. Failure to make this update can result in data sync errors later on. 
-
-     To update CDX data groups in headquarters, follow these steps.
-
-     1. Go to **Retail and Commerce \> Distribution Schedule**.
-     1. Select the **Default Data** group.
-     1. Remove the default database record from this group.
-
-    > For on-premises deployments, there's no **Default** channel data group. Create a new data group (and associate it to the channel database and distribution schedule jobs).
+> [!IMPORTANT]
+>   ### Update CDX data groups
+>   The following change removes the default database from the Commerce Data Exchange (CDX) data groups in headquarters, because this database is no longer used. Failure to make this update can result in data sync errors later on. 
+>
+>   To update CDX data groups in headquarters, follow these steps.
+>
+>   1. Go to **Retail and Commerce \> Distribution Schedule**.
+>   2. Select the **Default Data** group.
+>   3. Remove the default database record from this group.
+>
+>   For on-premises deployments, there's no **Default** channel data group. Create a new data group (and associate it to the channel database and distribution schedule jobs).
     
 ## Download and Install a new Commerce Scale Unit
 To download and execute the Commerce Scale Unit installer, see [Downloading and Running the Commerce Scale Unit Installer](retail-store-scale-unit-download-install.md). This article describes the steps necessary to download required configuration from Headquarters, download the installation program, and how to run the installer.
@@ -186,7 +186,7 @@ According to current security standards, the following options should be set in 
 Here's a checklist of things to verify:
 
 1. Open the configuration file and verify that the Retail Server URL specified contains the suffix **/Commerce** and is correctly formed based on what is expected for the machine name and port used. Validate that there's no trailing or additional slash (the character **/**) in the URL or at the end of it.
-2. In headquarters, on the **Commerce shared parameters** page, verify that the correct client ID is added to the **Relying parties** FastTab. Additionally, verify that the correct `https://retailstorescaleunit.retailserver.com` entry is added to the **Server resource IDs** FastTab.
+2. In headquarters, on the **Commerce shared parameters** page, verify that the correct client ID is added to the **Relying parties** FastTab. Additionally, verify that the correct `https://retailstorescaleunit.retailserver.com` entry is added to the **Server resource IDs** FastTab (substitute the actual URL of the Retail Server).
 3. In headquarters, verify that every client ID that was generated for each store exists on the **Microsoft Entra applications** page.
 4. On the headquarters **Channel profile** page, verify that the computer name in each URL is correct, and that each URL is correctly formatted, and so on.
 5. On the headquarters **Channel database** page, verify that full and correct synchronization occurred for the new channel database.

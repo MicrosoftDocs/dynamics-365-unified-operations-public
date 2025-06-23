@@ -44,14 +44,13 @@ To download the sealed self-hosted CSU installer, follow these steps.
 4. On the drop-down menu, select **Configuration file**.
 
     > [!NOTE]
-    > - Save the configuration file (XML file) to the same location as the installer. Example: C:\temp\StoreSystemSetup.xml
-    > - For on-premises deployments, currently the configuration file requires the following manual edits:
-    >     - StoreSystemAosUrl should have the value used to access headquarters. It is critical to keep a trailing slash at the end of this URL (for example, `https://myContosoURL.com/namespaces/AXSF/`).
-    >     - Microsoft Entra IDTokenIssuerPrefix should have the value `https://NOTUSED.microsoft.com`
-    >     - TransactionServiceAzureAuthority should have the value `https://<ADFS FQDN including .com>/adfs`.
-    >     - TransactionServiceAzureResource should have the base URL value of **StoreSystemAosUrl**. For example, `https://myContosoURL.com` is the base URL value, after removing the **/namespaces/AXSF/** portion of the URL.
+    > For on-premises deployments, currently the configuration file requires the following manual edits:
+    > - StoreSystemAosUrl should have the value used to access headquarters. It is critical to keep a trailing slash at the end of this URL (for example, `https://myContosoURL.com/namespaces/AXSF/`).
+    > - Microsoft Entra IDTokenIssuerPrefix should have the value `https://NOTUSED.microsoft.com`
+    > - TransactionServiceAzureAuthority should have the value `https://<ADFS FQDN including .com>/adfs`.
+    > - TransactionServiceAzureResource should have the base URL value of **StoreSystemAosUrl**. For example, `https://myContosoURL.com` is the base URL value, after removing the **/namespaces/AXSF/** portion of the URL.
 
-5. On the notification bar that appears at the bottom of the Microsoft Edge window, select **Save**. (The notification bar might appear in a different place in other browsers.)
+5. On the notification bar that appears at the bottom of the Microsoft Edge window, select **Save**. (The notification bar might appear in a different place in other browsers.). Save the configuration file (XML file) to the same location as the installer. Example: C:\temp\StoreSystemSetup.xml
 
     Browsers might block the download pop-up that is generated. Select either **Allow once** or **Options for this site \> Always allow**. Then select **Download** again.
 
@@ -73,3 +72,5 @@ CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thu
 > - When installing on a development machine, using the same SSL thumbprint to run all services is allowed. For production and user acceptance testing (UAT) environments, these values should be different.
 > - Don't enter port 80 or 443 during installation. Entering either of these values interferes with the application object server (AOS) service that hosts the Commerce headquarters website. 
 
+## Health Check
+The installer will automaticlaly execute a health check as a final step and show the results. To check the health of a Dynamics 365 Commerce Scale Unit (CSU) at anytime, you can access a specific URL in a web browser. The URL format is: https://\<CommerceScaleUnitURL\>/healthcheck?testname=ping. Replace \<CommerceScaleUnitURL\> with the actual URL of your CSU instance. Be sure to include the port number specified during installation. This will execute a ping test and return the results, indicating whether the CSU is reachable and healthy.

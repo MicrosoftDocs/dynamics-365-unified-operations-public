@@ -172,7 +172,7 @@ You now have a fully functional on-premises deployed scale unit that includes th
 - ASP.NET Core 8–based Retail Server that can interact with Commerce headquarters via RTS
 - CPOS
 
-To find URLs that correspond to the CPOS and CSU that you deployed, review the base installer's log. The URLs appear near the end of the log, where CSU and CPOS are health-checked. To fill in the channel database with data from Commerce headquarters, follow steps in [Create a new channel profile](retail-store-scale-unit-configuration-installation.md#create-a-new-channel-profile) after completing the previous steps in that article.
+To find URLs that correspond to the CPOS and CSU that you deployed, review the base installer's log. The URLs appear near the end of the log, where CSU and CPOS are health-checked. To fill in the channel database with data from Commerce headquarters, follow steps in [Create a new channel profile](retail-store-scale-unit-configuration-installation.md#3-create-a-new-channel-profile) after completing the previous steps in that article.
 
 ## Switching from IIS mode to self-hosted mode
 
