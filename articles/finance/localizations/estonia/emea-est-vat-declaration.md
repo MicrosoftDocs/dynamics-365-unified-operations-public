@@ -4,7 +4,7 @@ description: Learn how to set up a value-added tax (VAT) declaration for legal e
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 01/15/2024
+ms.date: 06/23/2025
 ms.custom: 266904
 ms.reviewer: johnmichalak
 audience: Application User
