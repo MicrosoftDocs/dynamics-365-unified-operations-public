@@ -63,6 +63,7 @@ The **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile conn
 | Name | Code | Original name |
 |---|---|---|
 | Invoice | 33 | Factura Electrónica |
+| Untaxed Invoice | 34 | Factura no afecta Electrónica |
 | Packing slip (e-shipping guide) | 52 | Guía de Despacho Electrónica |
 | Debit note | 56 | Nota de Débito Electrónica |
 | Credit note | 61 | Nota de Crédito Electrónica |
