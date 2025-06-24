@@ -2,7 +2,7 @@
 title: Set up Dynamics 365 Payment Connector for Adyen
 description: This article describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 05/22/2025
+ms.date: 06/24/2025
 ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
