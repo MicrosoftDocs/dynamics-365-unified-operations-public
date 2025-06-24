@@ -181,7 +181,7 @@ The following table lists the current Dynamics 365 Commerce Payment Connector fo
 | Dip | ✔ | |
 | Swipe | ✔ | |
 | Tap | ✔ | |
-| Manual Entry through POS UI. |  | Not supported at this time |
+| Manual Entry through POS UI. |  | Not supported for Adyen connector |
 | Manual Entry through Payment Terminal. | ✔ | Supports manual entry of credit, debit, and gift cards with pin entry. | 
 
 
