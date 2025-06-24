@@ -81,6 +81,9 @@ The *order shipped* notification type is triggered when an order that has a non-
 
 The *order invoiced* notification type is triggered when an order is invoiced in POS or Commerce headquarters.
 
+> [!NOTE]
+> The order invoiced notification type isn't triggered for cash-and-carry transactions processed during statement posting.
+
 ### Issue gift card
 
 The *issue gift card* notification type is triggered when a sales order that contains a product of the gift card type is invoiced.
