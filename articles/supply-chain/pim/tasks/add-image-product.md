@@ -22,9 +22,7 @@ This procedure shows how to add an image to a product.
 1. On the **Related information** pane, expand the **Product image** FastTab.
 1. Select **Change image** to open the **Product images** dialog, where you can upload an image or select an existing one from the gallery.
 1. Select **OK** to apply the image and close the dialog.
-1. In the warehouse mobile app, go to **Settings** > **Product photo placement**. You can choose from the following options:
-    - **Default (show photo card):** Displays the product image as a large photo card.
-    - **Only in step header:** Shows the product image within the header section.
-    - **Do not show:** Hides the product image in the mobile app.
+
+Admins can set how product images should be shown in the Warehouse Management mobile app, and workers can override this setting on their local device if they wish. Learn more in [Mobile device user settings](../../warehousing/mobile-device-user-settings.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

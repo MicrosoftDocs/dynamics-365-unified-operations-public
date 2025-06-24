@@ -24,13 +24,6 @@ This feature can help workers get started more quickly whenever they begin to us
 - If your company has a pool of identical devices that are shared among workers, workers will see their preferred setup every time that they sign in, even if they have never used the specific physical device that they selected on a given day.
 - In Supply Chain Management, admins can view and edit all stored settings, even for individual workers. This capability can help them troubleshoot or fine-tune new features.
 
-> [!IMPORTANT]
-> The *mobile device user settings* feature applies only to the new Warehouse Management mobile app. It doesn't work with the old warehouse app.
-
-## Turn the mobile device user settings feature on or off
-
-To use the functionality described in this article, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *User settings, icons, and step titles for the new warehouse app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
 ## Create and manage user settings
 
 Use the **Mobile device user settings** page to create, view, and manage settings profiles at all levels of granularity. The first time that a worker edits their user settings on a new device, a new profile is automatically added on this page, if it doesn't already exist. That profile is then updated every time that the worker makes a change.
@@ -53,14 +46,26 @@ Follow these steps to create and manage user settings for your mobile devices.
 1. On the **General** FastTab, set the following fields:
 
     - **Button position** – Select how buttons should be positioned on the device. Elements in the app will be moved to better fit the preference or handedness of the worker. The available options are *Bottom right (default)*, *Bottom left*, *Top right*, and *Top left*.
-    - **Display orientation** – Select the display orientation that should be applied by default in the app.
     - **Scan with camera** – Set this option to *Yes* to use the device camera to scan input fields where the preferred input mode is set to *Scanning*. If your device has a built-in scanner, set this option to *No* to use the scanner instead.
-    - **Show product photo** – Select whether product photos should be shown if they are available for the released product. For more information about how to add product images, see [Add an image to a product](../pim/tasks/add-image-product.md).
+    - **Product photo placement** – Select how product photos should be shown in the app. Choose one of the following options:
+        - *Default (show photo card)* – Display the product image as a large photo card.
+        - *Only in step header* – Show the product image within the header section.
+        - *Do not show* – Hide the product image in the mobile app.
     - **Display color theme** – Select a color theme for the device.
     - **Sound level** – Select the sound level for the device. Select a value between 0 (zero) and 10. A value of *0* represents no sound, and a value of *10* represents maximum volume. The default value is *4*.
     - **Vibration level** – Select the vibration level for the device. Select a value between 0 (zero) and 5. A value of *0* represents no vibration, and a value of *5* represents maximum vibration. The default value is *1*.
     - **Text scale percentage** – Specify the text size as a percentage of the standard size. Enter a value between 70 and 400. A value of *70* represents the smallest text scale, and a value of *400* represents the largest text scale. The default value is *100*.
     - **Button scale percentage** – Specify the button size as a percentage of the standard size. Enter a value between 50 and 200. A value of *50* represents the smallest button scale, and a value of *200* represents the largest button scale. The default value is *100*.
+    - **Field filtering and sorting** – <!-- KFM: description needed -->
+    - **Button style** – <!-- KFM: description needed -->
+    - **Spinner mode** – <!-- KFM: description needed -->
+    - **Play sound when rescan is required** – <!-- KFM: description needed -->
+    - **Show copilot on startup** – <!-- KFM: description needed -->
+    - **Show copilot data as** – <!-- KFM: description needed -->
+
+## Set local user settings in the Warehouse Management mobile app
+
+<!-- KFM: add this section. Just explain how to open the menu. Refer to previous section for field descriptions. -->
 
 ## Create and manage mobile device brands
 
