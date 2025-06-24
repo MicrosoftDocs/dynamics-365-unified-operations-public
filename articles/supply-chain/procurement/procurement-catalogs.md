@@ -48,7 +48,7 @@ The catalog defines which products are available when purchase requisitions are 
 |--|--|--|
 | Create a new catalog. | Purchasing agent | When you create a catalog, you specify a name and description for the catalog. You also define whether the catalog is updated manually or automatically, and specify the catalog owner. |
 | Control whether products are available in the catalog. | Purchasing agent | Because the products are inherited from the procurement categories, they all appear in the appropriate catalog nodes. You can control whether all products in a node are hidden or shown when the catalog is used in a purchase requisition. You can also control whether individual products in a node are hidden or shown. |
-| Publish the catalog. | Purchasing agent | Before a catalog is available for employees to use in a requisition, you must define a catalog policy rule for the catalog, set the catalog’s status to **Active**, and publish the catalog. You can inactivate catalogs that you no longer want to be available to your users. |
+| Publish the catalog. | Purchasing agent | Before a catalog is available for employees to use in a requisition, you must define a catalog policy rule for the catalog, set the catalog’s status to **Active**, and publish the catalog. You can deactivate catalogs that you no longer want to be available to your users. |
 
 Updates are published either automatically or manually, depending on the option that you select for the catalog in the **Default update type** field on the **Catalogs** page. The following default update types are available for catalogs:
 

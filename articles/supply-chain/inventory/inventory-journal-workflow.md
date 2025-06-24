@@ -42,7 +42,7 @@ To create your inventory journal approval workflows:
     ![The Create workflow dialog box.](media/journal-workflow-create-workflow.png "The Create workflow dialog box")
 
 1. The workflow editor app launches on your machine. (You may be asked to approve this action.) Use it to design your workflow as needed. For details about how to use the workflow editor, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
-1. After saving and closing the workflow editor app, you must choose whether to activate this workflow version or keep it as inactivate.
+1. After saving and closing the workflow editor app, you must choose whether to activate this workflow version or keep it as deactivate.
 
 > [!NOTE]
 > Workflows provide version control, which means that you can view a list of versions you have created and choose which one is active. To view the list of available versions and choose which to activate, select a workflow listed on the **Inventory management workflows** page. On the Action Pane, open the **Workflow** tab, and select **Versions**. Only one version can be active at a time for each workflow ID.

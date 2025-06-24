@@ -49,7 +49,7 @@ If an address that you're trying to delete is linked to another record, you rece
 
 Alternatively, you can set up a SysOperation framework batch job to delete multiple historical addresses.
 
-1. Go to **Organization administration \> Periodic \> Delete inactivated addresses**.
+1. Go to **Organization administration \> Periodic \> Delete deactivated addresses**.
 2. Select **OK**.
 
 You're notified whether the batch job succeeded or failed.

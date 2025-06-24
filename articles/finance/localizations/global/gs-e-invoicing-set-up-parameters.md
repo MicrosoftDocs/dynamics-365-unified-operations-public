@@ -123,6 +123,6 @@ To delete a number sequence if it's no longer used, select **Delete**.
 
 ## Inactivate legacy Electronic invoicing functionality
 
-To inactivate old (legacy) ER functionality for some features, and to activate additional functionality in Finance and Supply Chain Management for some country/region-specific scenarios, enable the corresponding feature on the **Features** tab of the **Electronic document parameters** page.
+To deactivate old (legacy) ER functionality for some features, and to activate additional functionality in Finance and Supply Chain Management for some country/region-specific scenarios, enable the corresponding feature on the **Features** tab of the **Electronic document parameters** page.
 
-When you enable a feature in the list, the legacy functionality is inactivated for the corresponding country or region and feature name.
+When you enable a feature in the list, the legacy functionality is deactivated for the corresponding country or region and feature name.
