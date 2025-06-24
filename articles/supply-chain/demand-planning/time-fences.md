@@ -74,7 +74,7 @@ To view, create, edit, or delete a time fence, follow these steps.
 
 ## <a name="select-all"></a>Using the select all operator
 
-To improve efficiency and make queries easier to formulate, Demand planning provides a *select all* operator for creating rules for time fences, time freezes, and row level access.
+To improve efficiency and make queries easier to formulate, Demand planning provides a *select all* operator for creating rules for time fences, time freezes, and row level access. The *Select all* operator matches all values in a selected column and doesn't require a value to compare to.
 
 The following table provides an example that shows how the *select all* operator can be used in a time fence rule. As a result of the rules, all products except *Product A* have a two-month time fence. *Product A* has a three-month time fence.
 
