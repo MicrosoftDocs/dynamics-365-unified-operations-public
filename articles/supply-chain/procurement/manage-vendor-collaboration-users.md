@@ -40,7 +40,7 @@ Vendor collaboration user requests can be raised by a procurement professional, 
 - If you're an external vendor, you submit requests from the **All contacts** page within the **Vendor collaboration** module.
 - If you're a procurement professional, you submit requests from the **View contacts** page. To do this, on the vendor record, in the **Setup** section on the Action Pane, select **Contacts** &gt; **View contacts**.
 
-You can make a request to provision a user, to inactivate a user, or to modify security roles. If you're an external vendor administrator, you must be registered as a contact person for the vendor accounts that you want to make user requests for, and you must have access to the vendor collaboration interface for those vendor accounts.  
+You can make a request to provision a user, to deactivate a user, or to modify security roles. If you're an external vendor administrator, you must be registered as a contact person for the vendor accounts that you want to make user requests for, and you must have access to the vendor collaboration interface for those vendor accounts.  
 
 When a request is submitted, it's added to the **Vendor collaboration user requests** list in the **Vendor collaboration** module, and to the **Vendor collaboration user request** list in the **Procurement and sourcing** module (the Procurement and sourcing module isn't accessible to external users).
 
@@ -63,7 +63,7 @@ There are two ways to remove access to vendor collaboration for a user:
 - On the **Contacts** page for the vendor, set the **Vendor collaboration access allowed** option to **No** for the contact. This can be done individually per legal entity that the person is a contact for. This option can only be used by procurement professionals.
 - Inactivate the entire user account, by submitting an **Inactivate vendor user** request.
 
-To request that a user is inactivated:
+To request that a user is deactivated:
 
 1. On the **All contacts** page, select **Inactivate** **vendor user**.
 1. Write a comment in the **Business justification** field.
