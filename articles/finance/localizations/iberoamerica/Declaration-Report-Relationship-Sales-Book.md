@@ -62,7 +62,7 @@ To configure application-specific parameters, follow these steps.
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **Yes**.
 1. In the **Document classification Id (VoucherClassId)** field, select all document classes that are required for customers transactions.
-1. Repeat steps 12 through 14 to add as many more tax codes as you need.
+
 
 > [!NOTE]
 > Complete each lookup with **No** or **Not applicable** conditions where you select **Blank** and **Not blank**.
