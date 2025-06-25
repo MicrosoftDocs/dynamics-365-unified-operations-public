@@ -4348,6 +4348,24 @@
                       href: localizations/iberoamerica/ltm-create-customer-vendor-uruguay.md
                     - name: Set up a legal entity and tax information for Uruguay
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay.md
+                  - name: Venezuela
+                    items:
+                    - name: Configure printing for the annual ISLR withholding certificate for Venezuela
+                      href: localizations/iberoamerica/ltm-venezuela-ISLR-Annual-withholding-certificate.md
+                    - name: Configure printing for the Declaration Reports Relationship Sales Book for Venezuela
+                      href: localizations/iberoamerica/Declaration-Report-Relationship-Sales-Book.md
+                    - name: Configure printing for the Declaration Reports Sales VAT Book for Venezuela
+                      href: localizations/iberoamerica/Declaration-Report-Sales-VAT-Book.md
+                    - name: Configure printing for the ISRL Withholding report for Venezuela
+                      href: localizations/iberoamerica/ltm-Venezuela-file-export-ISRL-withholdings.md
+                    - name: Configure printing for Relationship purchases Book reports for Venezuela
+                      href: localizations/iberoamerica/ltm-Declaration-Report-Relationship-Purchase-Book.md
+                    - name: Configure printing for the VAT withholding certificate for Venezuela
+                      href: localizations/iberoamerica/ltm-venezuela-VAT-withholding-certificate.md
+                    - name: Configure printing for the VAT Withholding report for Venezuela
+                      href: localizations/iberoamerica/ltm-Venezuela-file-export-VAT-withholdings.md
+                    - name: Configure printing for Venezuelan Purchase VAT book details
+                      href: localizations/iberoamerica/Declaration-Report-Purchase-VAT-Book.md
         - name: Reporting and Power BI integrations
           items:
             - name: Reporting and analytics with Power BI
