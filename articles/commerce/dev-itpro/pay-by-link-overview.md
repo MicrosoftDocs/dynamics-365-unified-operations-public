@@ -26,7 +26,7 @@ Pay by link functionality is a controlled release. To check participation availa
 
 ### Enable OAuth authentication from Adyen
 
-Payment notifications for the pay by link payment method use Open Authorization (OAuth)–based authentication. Before you can set up pay by link, OAuth authentication must be enabled by both the Dynamics 365 Commerce team and Adyen. To enable OAuth from Commerce, you must contact Microsoft Support and ask to have a flight enabled in your Commerce environments. You must also ask your Adyen representative to enable OAuth authentication for webhooks for your account. In addition, you must ask Adyen to set the time to live (TTL) value for the OAuth token to 3,599 seconds. This value is one second less than an hour, the default TTL value for the OAuth token in Azure.
+Payment notifications for the pay by link payment method use Open Authorization (OAuth)–based authentication. Before you can set up pay by link, both the Dynamics 365 Commerce team and Adyen must enable OAuth authentication. To enable OAuth from Commerce, you must contact Microsoft Support and ask to have a flight enabled in your Commerce environments. You must also ask your Adyen representative to enable OAuth authentication for webhooks for your account. In addition, you must ask Adyen to set the time to live (TTL) value for the OAuth token to 3,599 seconds. This value is one second less than an hour, the default TTL value for the OAuth token in Azure.
 
 > [!NOTE]
 > If Adyen can't set the OAuth TTL value to 3,599 seconds, contact Microsoft Support to get instructions for overriding the default TTL value in the Azure portal.
@@ -138,7 +138,7 @@ To test the connection, follow these steps.
 
 ### Set up the pay by link payment method for the store
 
-You can create the pay by link payment method either as a new payment method that can be shown in the list of payment methods or as a dedicated button. You can also add it to the existing payment method that was created for credit/debit cards. In this way, when a cashier selects the existing payment method, the POS shows pay by link as one of the input types for payment capture.
+You can create the pay by link payment method either as a dedicated button or as a new payment method that can be shown in the list of payment methods. You can also add it to the existing payment method that was created for credit/debit cards. In this way, when a cashier selects the existing payment method, the POS shows pay by link as one of the input types for payment capture.
 
 In both cases, the pay by link option is shown only if the administrator selects **Pay By Link** as a payment input type for a payment method. In headquarters, open the **Payment methods** page, and select a payment method. Then, on the Action Pane, select **Payment Input Type**. To create a dedicated payment method for pay by link, select only **Pay By Link** on the **Payment Input Type** page. To add pay by link as one of the input type options for capturing payments, select **Pay By Link** together with **Payment on terminal** and **Manual entry** (optional).
 
@@ -152,9 +152,9 @@ If **Manual entry** is added as a payment input type, when a cashier selects the
 To support payment options such as Quick Response (QR) code–based wallets, setup of bin ranges isn't. New card types must be created and mapped to corresponding payment variants. These card types must be added to the payment method where pay by link is enabled. Learn more in [Wallet payment support](/dynamics365/commerce/dev-itpro/wallets).
 
 > [!NOTE]
-> If you're creating a new payment method for pay by link, you don't have to add electronic payment types that were previously added to other payment methods that are available for the store. For example, if the **Visa**, **Mastercard**, **American Express** payment types were previously added to the **Cards** payment method, you don't have to add them to the pay by link payment method. The system looks through all the payment methods that are associated with the store to find a matching electronic payment type that is used for payments.
+> If you create a new payment method for pay by link, you don't have to add electronic payment types that were previously added to other payment methods that are available for the store. For example, if the **Visa**, **Mastercard**, **American Express** payment types were previously added to the **Cards** payment method, you don't have to add them to the pay by link payment method. The system looks through all the payment methods that are associated with the store to find a matching electronic payment type that is used for payments.
 
-Pay by link doesn't require that Hardware station is enabled for Cloud POS or the Store Commerce app. If you want to use pay by link with a register that isn't paired with a hardware station, the register must be configured to use Commerce Scale Unit (also known as Retail Server) for "card not present" processing. In headquarters, open the register page, and then, in the **General** section, set the **Card not present processing** field to **Use retail server**.
+Pay by link doesn't require that Hardware station is enabled for Cloud POS or the Store Commerce app. If you want to use pay by link with a register that isn't paired with a hardware station, the register must be configured to use Commerce Scale Unit for "card not present" processing. (Commerce Scale Unit is also known as Retail Server.) In headquarters, open the register page, and then, in the **General** section, set the **Card not present processing** field to **Use retail server**.
 
 ![Screenshot that shows the Card not present processing field set to Use retail server for a register in Commerce headquarters.](media/register-card-not-present.png)
 
@@ -185,7 +185,7 @@ To set up the Adyen connector in the hardware profile, follow these steps.
 
 ## Payment experience for pay by link
 
-When the pay by link payment method is selected, the POS displays a dialog that shows basic customer information, such as the name, email address, and primary delivery address. The values are automatically taken from the customer who is added to the transaction. However, the cashier can change the values before they create the payment link. If no customer is added to the transaction, the name and email fields are blank, and the store's address is used as the default delivery address.
+When the pay by link payment method is selected, the POS displays a dialog. This dialog shows basic customer information, such as the name, email address, and primary delivery address. The values are automatically taken from the customer who is added to the transaction. However, the cashier can change the values before they create the payment link. If no customer is added to the transaction, the name and email fields are blank, and the store's address is used as the default delivery address.
 
 Although none of this information is required to generate the payment link, it's recorded against the customer details for the payment link. Some payment methods might require some of this payment information. Therefore, those payment methods don't work if the information is missing.
 
