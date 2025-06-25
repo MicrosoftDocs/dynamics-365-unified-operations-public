@@ -4,7 +4,7 @@ description: Access resources that can help you use Fixed assets for Microsoft D
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 03/22/2024
+ms.date: 05/15/2025
 ms.custom: evergreen 
 ms.reviewer: twheeloc
 ms.collection: get-started

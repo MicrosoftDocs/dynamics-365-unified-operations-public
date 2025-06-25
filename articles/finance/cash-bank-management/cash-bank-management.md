@@ -4,7 +4,7 @@ description: Learn how you can use Cash and bank management to maintain the lega
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
-ms.date: 05/24/2024
+ms.date: 05/15/2025
 ms.custom: evergreen
 ms.reviewer: twheeloc
 ms.collection: get-started

@@ -3,11 +3,12 @@ title: Change the type of existing functional locations
 description: Learn how to change the functional location type of an existing functional location, including prerequisites and a step-by-step process.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: how-to
-ms.date: 10/27/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Change the type of existing functional locations

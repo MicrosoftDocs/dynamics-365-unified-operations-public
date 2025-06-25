@@ -14,40 +14,39 @@ ms.search.form: EntAssetWorkOrderTableCreateRelated, EntAssetWorkOrderTableCreat
 
 [!include [banner](../../includes/banner.md)]
 
+You can create work orders manually in two places:
 
-You can create work orders manually in two ways:
-
-- On the **All work orders** or **Active work orders** page 
-- On the **All maintenance requests** or **Active maintenance requests** or **My functional location maintenance requests** page 
+- On the **All work orders** or **Active work orders** page.
+- On the **All maintenance requests** or **Active maintenance requests** or **My functional location maintenance requests** page.
 
 ## Create work order
 
-1. Selece **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
+1. Go to **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**.
 
 2. Select **New**.
 
 3. In the **Create work order** dialog, select a work order type in the **Work order type** field.
 
-4. If required, select a **Description**.
+4. If necessary, select a **Description**.
 
 5. In the **Asset** field, select the asset.
 
->[!NOTE]
->When you select an asset, three tabs might be available in the **Asset** drop-down: 
-
-- **Active assets** - This tab contains a list of all assets that have an "Active" asset lifecycle state. 
-- **Asset view** - This tab displays a tree view of functional locations and the assets installed on them.
-- **My assets** - This tab contains assets that are related to the functional locations that you (the worker who is signed in to the system) may be allocated to. (For information about the setup, see [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).) If no functional locations are set up on a worker in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md), the **My assets** tab isn't available. 
+    > [!NOTE]
+    > When you select an asset, three tabs might be available in the **Asset** drop-down:
+    >
+    > - **Active assets** – This tab contains a list of all assets that have an "Active" asset lifecycle state.
+    > - **Asset view** – This tab displays a tree view of functional locations and the assets installed on them.
+    > - **My assets** – This tab contains assets that are related to the functional locations that you (the worker who is signed in to the system) might be allocated to. (For information about the setup, see [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).) If no functional locations are set up on a worker in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md), the **My assets** tab isn't available.
 
 6. In the **Maintenance job type** field, select a maintenance job type for the work order.
 
-7. If required, select **Maintenance job type variant** and **Trade**.
+7. If necessary, select **Maintenance job type variant** and **Trade**.
 
-8. If required, you can change the work order service level in the **Service level** field.
+8. If necessary, you can change the work order service level in the **Service level** field.
 
 9. Select **Expected start** and **Expected end** dates in the related fields.
 
-10. Click **OK** to create the work order.
+10. Select **OK** to create the work order.
 
 11. On the **All work orders** list page, you can edit the work order as you require.
 
@@ -65,12 +64,11 @@ Note the following points:
 
 - In the details view of the **All work orders** page, on the **Line details** FastTab, you can use the **Latitude** and **Longitude** fields to add geographic coordinates for the asset that is selected on the work order job.  
 
-
 ## Create related work order
 
 You can create a work order that is related to an existing work order. This capability is useful if, for example, you want to work with primary and secondary work orders. A new work order is based on a work order job from an existing work order.
 
-1. Select **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
+1. Select **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**.
 
 2. Select the work order to create a related work order for.
 
@@ -99,20 +97,20 @@ You can create a work order that is related to an existing work order. This capa
 
 The illustration below shows an example of the **Create related work order** dialog.
 
-![Figure 1.](media/03-work-orders.png)
+![An example of the Create related work order dialog.](media/03-work-orders.png)
 
 >[!NOTE]
->If you've set up a related work order mask in **Asset management parameters** > **Work orders** tab > **Related work order mask** field, work order IDs are created according to the mask setup. If no related work order mask is set up, the next available work order ID is used for related work orders.
+>If you've set up a related work order mask in **Asset management parameters** \> **Work orders** tab > **Related work order mask** field, work order IDs are created according to the mask setup. If no related work order mask is set up, the next available work order ID is used for related work orders.
 
 ## Copy a work order
 
 You can quickly create a new work order from an existing work order. This way of working with work orders differs from the creation of work orders based on [maintenance plans](../preventive-and-reactive-maintenance/maintenance-plans.md). It's useful if, for example, a work order contains many work order jobs, and the various jobs should be completed on different assets at regular intervals.
 
-1. Select **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
+1. Select **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**.
 
 2. Select the work order to copy content from.
 
-3. On the Action Pane > **Work order** tab > **New** group, select **Copy work order**.
+3. On the Action Pane, open the **Work order** tab and, from the **New** group, select **Copy work order**.
 
 4. The work order setup from the selected work order is shown. You can edit some of the fields as you require.
 
@@ -125,16 +123,15 @@ You can quickly create a new work order from an existing work order. This way of
 
 The illustration below shows an example of the **Copy work order** dialog.
 
-![Figure 2.](media/04-work-orders.png)
-
+![An example of the Copy work order dialog.](media/04-work-orders.png)
 
 ## Create a work order based on a maintenance request
 
-1. Select **Asset management** > **Maintenance requests** > **All maintenance requests** or **Active maintenance requests**.
+1. Select **Asset management** \> **Maintenance requests** \> **All maintenance requests** or **Active maintenance requests**.
 
-2. Select the maintenance request to create a work order for, and click **Edit**.
+2. Select the maintenance request to create a work order for, and select **Edit**.
 
-3. On the Action Pane > **Maintenance request** tab > **New** group, select **Work order**.
+3. On the Action Pane, open the **Maintenance request** tab and, from the **New** group, select **Work order**.
 
 4. In the **Work order** dialog, set the fields. If a maintenance job type has been selected in the maintenance request, you can select a different maintenance job type when you create the work order, as you require.
 
@@ -142,15 +139,11 @@ The illustration below shows an example of the **Copy work order** dialog.
 
 6. To view the work orders that are connected to a maintenance request, on the **All maintenance requests** or **Active maintenance requests** list page, select the maintenance request. Then, on the Action Pane, on the **Maintenance request** tab, in the **View** group, select **Work orders**.
 
-
 The illustration below shows an example of the **Create work order** dialog.
 
-![Figure 3.](media/05-work-orders.png)
+![An example of the Create work order dialog.](media/05-work-orders.png)
 
-
->[!NOTE]
->If you want work orders to be created automatically, you can schedule maintenance plan jobs, or you can set up "Auto create" [maintenance plans](../preventive-and-reactive-maintenance/maintenance-plans.md) or [maintenance rounds](../preventive-and-reactive-maintenance/maintenance-rounds.md) on an asset. Work orders that are created from maintenance requests on the **All maintenance schedule** list page have the maintenance job types that are selected on the maintenance requests.
-
-
+> [!NOTE]
+> If you want work orders to be created automatically, you can schedule maintenance plan jobs, or you can set up "Auto create" [maintenance plans](../preventive-and-reactive-maintenance/maintenance-plans.md) or [maintenance rounds](../preventive-and-reactive-maintenance/maintenance-rounds.md) on an asset. Work orders that are created from maintenance requests on the **All maintenance schedule** list page have the maintenance job types that are selected on the maintenance requests.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,10 +1,10 @@
 ---
 title: X++ exception handling
 description: Learn about exception handling in X++, which are regulated jumps away from sequence of program executions. These include throw statements andg global class methods.
-author: josaw1
-ms.author: josaw
+author: pvillads
+ms.author: pvillads
 ms.topic: language-reference
-ms.date: 09/28/2022
+ms.date: 05/19/2025
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes exception handling in X++. You handle errors by using the **throw**, **try**...**catch**, **finally**, and **retry** statements to generate and handle exceptions.
 
-An *exception* is a regulated jump away from the sequence of program execution. The instruction where program execution resumes is determined by `try...catch` blocks and the type of exception that is thrown. An exception is represented by a value of the **Exception** enumeration, or an instance of .NET's `System.Exception` class or a derived class. One exception that is often thrown is the **Exception::error** enum value. A common practice is to write diagnostic information to the Infolog before the exception is thrown.
+An *exception* is a regulated jump away from the sequence of program execution. The instruction where program execution resumes is determined by `try...catch` blocks and the type of exception that is thrown. An exception is represented by a value of the **Exception** enumeration, or an instance of .NET's `System.Exception` class or a class derived from it. One exception that is often thrown is the **Exception::error** enum value. A common practice is to write diagnostic information to the Infolog before the exception is thrown.
 
 The **Global::error** method is often the best way to write diagnostic information to the Infolog. For example, your method might receive an input parameter value that isn't valid. In this case, the method can throw an exception to immediately transfer control to a **catch** code block that contains logic for handling this error situation. You don't necessarily have to know the location of the **catch** block that will receive control when the exception is thrown.
 
@@ -33,7 +33,7 @@ throw Exception::error;
 Instead of throwing an enum value, a best practice is to use the output of the **Global::error** method as the operand for **throw**.
 
 ```xpp
-throw Global::error("The parameter value is invalid.");
+throw Global::error('The parameter value is invalid.');
 ```
 
 The **Global::error** method can automatically convert a label into the corresponding text. This functionality helps you write code that can be localized more easily.
@@ -45,16 +45,16 @@ throw Global::error("@SYS98765");
 The static methods on the **Global** class can be called without the **Global::** prefix. For example, the **Global::error** method can be called like this.
 
 ```xpp
-error("My message.");
+error('My message.');
 ```
 
-In Platform update 31 or later versions, the **throw** keyword can be used to throw .NET exceptions.
+The **throw** keyword can be used to throw .NET exceptions as well as the values of the enumerated Exception type.
 
 ```xpp
-throw new InvalidOperationException("This function is not allowed");
+throw new System.InvalidOperationException("This function is not allowed");
 ```
 
-Also in Platform update 31 or later, the **throw** keyword can be used by itself inside a catch block. In such a case, **throw** will behave like the **rethrow** statement in C\#. The original exception, exception message and its context such as call stack will be rethrown and be available to any catch statements in calling code.
+The **throw** keyword can be used by itself inside a catch block. In this case, **throw** will behave like the **rethrow** statement in C\#. The original exception, exception message and its context such as call stack will be rethrown and be available to any catch statements in calling code.
 
 ```xpp
 try
@@ -77,7 +77,7 @@ It's a common practice to have the first **catch** statement handle the **Except
 
 An optional *finally* clause can be included in **try**...**catch** statements. The semantics of a **finally** clause are the same as they are in C\#. The statements in the **finally** clause are executed when control leaves the **try** block, either normally or through an exception.
 
-The **retry** statement can be written only in a **catch** block. The **retry** statement causes control to jump up to the first line of code in the associated **try** block. The **retry** statement is used when the cause of the exception can be fixed by the code in the **catch** block. The **retry** statement gives the code in the **try** block another opportunity to succeed. The **retry** statement erases all messages that have been written to the Infolog since program control entered the **try** block.
+The **retry** statement can appear only in a **catch** block. The **retry** statement causes control to jump up to the first line of code in the associated **try** block. The **retry** statement is used when the cause of the exception can be fixed by the code in the **catch** block. The **retry** statement gives the code in the **try** block another opportunity to succeed. The **retry** statement erases all messages that have been written to the Infolog since program control entered the **try** block.
 
 > [!NOTE]
 > You must make sure that your **retry** statements don't cause an infinite loop. As a best practice, the **try** block should include a variable that you can test to find out whether you're in a loop.
@@ -103,7 +103,7 @@ finally
 
 ### The system exception handler
 
-If no **catch** statement handles the exception, it's handled by the system exception handler. The system exception handler doesn't write to the Infolog. Therefore, an unhandled exception can be hard to diagnose. We recommended that you follow all these guidelines to provide effective exception handling:
+If no **catch** statement handles the exception, it's handled by the system exception handler. The system exception handler doesn't write to the Infolog. Therefore, unhandled exceptions can be hard to diagnose. We recommended that you follow all these guidelines to provide effective exception handling:
 
 + Have a **try** block that contains all your statements in the outermost frame on the call stack.
 + Have an unqualified **catch** block at the end of your outermost **catch** list.
@@ -123,13 +123,13 @@ try
 {
     throw new System.ArgumentException("Invalid argument specified");
 }
-catch(ex)
+catch(ex) // Will catch the System.ArgumentException, given the type of ex.
 {
     error(ex.Message);
 }
 ```
 
-In releases prior to Platform update 31, .NET exceptions can be caught by referencing **Exception::CLRError**. Your code can obtain a reference to the **System.Exception** instance by calling the **CLRInterop::getLastException** method.
+.NET exceptions can be caught by referencing **Exception::CLRError**. Your code can obtain a reference to the **System.Exception** instance by calling the **CLRInterop::getLastException** method. 
 
 ```xpp
 try
@@ -186,7 +186,7 @@ The finally clause is executed even in transaction scope.
 
 ## Exceptions and `using` statements
 
-The semantics of us `using` statements are not impacted by exception scope.
+The semantics of us `using` statements are not impacted by exception scope. The using statement:
 
 ```xpp
 using (var athing = new SomethingDisposable())
@@ -195,7 +195,7 @@ using (var athing = new SomethingDisposable())
 }
 ```
 
-Is exactly the same as:
+Is semantically identical to:
 
 ```xpp
 var athing = new SomethingDisposable();
@@ -388,7 +388,7 @@ The following code example throws an exception in a transaction block.
 ```xpp
 // This examples uses three levels of try nesting to illustrate
 // where an exception is caught when the exception is thrown inside
-// a ttsBegin-ttsCommit transaction block.
+// a ttsBegin ... ttsCommit transaction block.
 static void TryCatchTransaction5Job(Args _args)
 {
     /***

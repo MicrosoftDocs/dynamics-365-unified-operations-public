@@ -1711,6 +1711,8 @@ items:
         href: perf-test/rsat/rsat-install-configure.md
       - name: Use the Regression suite automation tool
         href: perf-test/rsat/rsat-run.md
+      - name: Regression suite automation tool certificates
+        href: perf-test/rsat/certificate-based-authentication.md
       - name: Maintain test cases within Regression suite automation tool
         href: perf-test/rsat/rsat-maintain-test-cases.md
       - name: Validate expected values
@@ -1799,8 +1801,6 @@ items:
         href: sysadmin/system-administration-home-page.md
       - name: Add links to your legal terms and privacy statement      
         href: sysadmin/legal-terms-privacy-statement.md
-      - name: User security role reporting and technical validation FAQ
-        href: ../fin-ops/sysadmin/user-security-report-technical-validation-faq.md
       - name: License codes and configuration keys report
         href: sysadmin/license-codes-configuration-keys-report.md
       - name: Cross-company data sharing
@@ -1867,7 +1867,7 @@ items:
           href: ../fin-ops/sysadmin/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: ../fin-ops/sysadmin/assign-users-security-roles.md
-        - name: Security governance (preview)
+        - name: Security governance 
           items:
             - name: User security governance overview
               href: ../fin-ops/sysadmin/security-gov-overview.md
@@ -1878,7 +1878,9 @@ items:
             - name: Set up security governance parameters
               href: ../fin-ops/sysadmin/setup-security-gov-para.md 
             - name: Set up a process hierarchy, roles, and privileges
-              href: ../fin-ops/sysadmin/setup-process-role-hierarchy.md        
+              href: ../fin-ops/sysadmin/setup-process-role-hierarchy.md  
+            - name: Migrate data to User security governance
+              href: ../fin-ops/sysadmin/security-hierarchy-migration.md
             - name: Security tasks under process hierarchy
               href: ../fin-ops/sysadmin/usg-security-tasks-detailed.md          
             - name: Security entry points under process hierarchy
@@ -2041,6 +2043,8 @@ items:
             href: migration-upgrade/clean-up-source-data-upgrade.md
           - name: Compress tables in Dynamics AX 2012 environments
             href: migration-upgrade/compress-tables-ax-2012.md
+          - name: Devirtualize company data
+            href: migration-upgrade/devirtualize-company-data.md
           - name: Change the database collation for development environments
             href: migration-upgrade/coll-dev-env.md
       - name: Migrate data from AX 2009
@@ -2329,9 +2333,9 @@ items:
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
       - name: Generative help and guidance with Copilot
         href: ../fin-ops/copilot/copilot-generative-help.md
-      - name: Agent management (preview)
+      - name: Agent management (production ready preview)
         href: ../fin-ops/copilot/agent-mgmt.md
-      - name: Immersive Home (preview)
+      - name: Immersive Home (production ready preview)
         href: ../fin-ops/copilot/immersive-home.md
       - name: Chat with finance and operations data
         href: copilot/chat-with-fno-data.md
@@ -2351,13 +2355,15 @@ items:
         items:
         - name: Overview
           href: copilot/extend-copilot.md
-        - name: Architecture of Copilot in finance and operations
+        - name: Architecture of Copilot for finance and operations
           href: copilot/copilot-architecture.md
+        - name: Use Model Context Protocol for finance and operations
+          href: copilot/copilot-mcp.md
         - name: Using application context with Copilot
           href: copilot/copilot-application-context.md
         - name: Create client plugins for Copilot in finance and operations apps
           href: copilot/copilot-client-plugins.md
-        - name: Create AI plugins with finance and operations business logic (preview)
+        - name: Create AI tools with finance and operations business logic (preview)
           href: copilot/copilot-ai-plugins.md
         - name: Tutorials
           items:
@@ -2365,7 +2371,7 @@ items:
             href: copilot/tutorial-create-low-code-plugins.md
           - name: Create client plugins for Copilot in finance and operations apps
             href: copilot/tutorial-create-client-plugins.md
-          - name: Create AI plugins with finance and operations business logic
+          - name: Create AI tools with finance and operations business logic
             href: copilot/tutorial-create-ai-plugins.md
     - name: Responsible AI
       items:
@@ -2377,8 +2383,10 @@ items:
         href: ../fin-ops/copilot/faq-copilot-suggested-questions.md
       - name: Responsible AI FAQ for Workflow history summary
         href: ../fin-ops/copilot/workflow-history-summary-faq.md
-      - name: Responsible AI FAQ for Immersive Home in finance and operations apps (preview)
+      - name: Responsible AI FAQ for Immersive Home in finance and operations apps (production ready preview)      
         href: ../fin-ops/copilot/faq-immersive-home.md
+      - name: Responsible AI FAQ for Agent management in finance and operations apps (preview)
+        href: ../fin-ops/copilot/faq-agent-mgmt.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/supply-chain-management-welcome.md
   - name: Dynamics 365 Finance 

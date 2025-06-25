@@ -1,23 +1,22 @@
 ---
 title: FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates
-description: Learn how to set up the FTA Tax Audit File (FAF) in TXT format for legal entities that have their primary address in the United Arab Emirates (UAE).
+description: Learn how to set up the FTA Tax Audit File (FAF) in TXT format for legal entities that have their primary address in the United Arab Emirates (UAE) with Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
-ms.topic: overview
+ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 06/05/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: United Arab Emirates (UAE)
 ms.search.validFrom: 2017-06-30
-ms.search.form: 
-ms.dyn365.ops.version: July 2017 update
 ---
 
 # FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates
 
-This article includes country/region-specific information about how to set up the Federal Tax Authority (FTA) Tax Audit File (FAF) in TXT format for legal entities that have their primary address in the United Arab Emirates (UAE).
+[!include [banner](../../includes/banner.md)]
+
+This article explains how to set up the FTA Tax Audit File (FAF) in TXT format for legal entities that have their primary address in the United Arab Emirates (UAE) with Microsoft Dynamics 365 Finance.
 
 > [!NOTE]
 > The **FTA VAT Audit File (AE)** Electronic reporting (ER) format that uses the **Standard Audit File** model mapping and the **FAF declaration** menu item (**Tax** \> **Declarations** \> **FAF declaration**) is being deprecated and will no longer be supported. A new **FTA Tax Audit File - FAF in TXT (AE)** ER format that uses the **SAF-T General** model mapping can be used with the [Standard Audit File for Tax (SAF-T) electronic report](../../general-ledger/standard-audit-file.md). For more information, see [Removed or deprecated features in Dynamics 365 Finance](../../get-started/removed-deprecated-features-finance.md).
@@ -27,9 +26,9 @@ This article includes country/region-specific information about how to set up th
 To work with the FAF for the UAE, you must complete the following tasks:
 
 1. [Import ER configurations](#import).
-2. [Enable features in Feature management](#features).
-3. [Select the ER configuration in General ledger parameters](#gl-param).
-4. [Set up company information for the reporting header](#header-information).
+1. [Enable features in Feature management](#features).
+1. [Select the ER configuration in General ledger parameters](#gl-param).
+1. [Set up company information for the reporting header](#header-information).
 
 ### <a name="import"></a>Import ER configurations
 
@@ -48,10 +47,12 @@ Import the most recent versions of the configurations. The version description u
 > [!IMPORTANT]
 > After all the ER configurations are imported, set the **Default for model mapping** option to **Yes** for the **SAF-T General model mapping** configuration.
 
-### <a name="features"></a>Enable features in Feature management
+### <a name="features"></a>Enable features in the Feature management workspace
 
-1. Open the **Feature management** workspace.
-2. On the **All** tab, find and select the following features in the feature list. Note that enabling some of these features is optional.
+To enable features in the Feature management workspace, follow these steps.
+
+1. In Dynamics 365 Finance, go to the **Feature management** workspace.
+1. On the **All** tab, find and select the following features in the feature list. Note that enabling some of these features is optional.
 
     | Feature name | Mandatory or optional |
     |--------------|-----------------------|
@@ -59,12 +60,14 @@ Import the most recent versions of the configurations. The version description u
     | [Optimization of query data source creation time during execution of ER reports](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) | Optional |
     | [Optimize datasets memory consumption at ER reports runtime](../../../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md) | Optional |
 
-3. Select **Enable now**.
+1. Select **Enable now**.
 
-### <a name="gl-param"></a>Select the ER configuration in General ledger parameters
+### <a name="gl-param"></a>Select the ER configuration in general ledger parameters
 
-1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
-2. On the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **FTA Tax Audit File - FAF in TXT (AE)**.
+To select the ER configuration in general ledger parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **General ledger** \> **Setup** \> **General ledger parameters**.
+1. On the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **FTA Tax Audit File - FAF in TXT (AE)**.
 
 [![FTA Tax Audit File - FAF in TXT (AE) selected on the General ledger parameters page.](../media/uae-faf-gl.png)]
 
@@ -80,8 +83,8 @@ The first section of the FAF for the UAE represents the following information ab
 
 To generate a FAF for the UAE, follow these steps.
 
-1. Go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
-2. In the **Electronic report parameters** dialog box, set the following fields.
+1. In Dynamics 365 Finance, go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
+1. In the **Electronic report parameters** dialog box, set the following fields.
 
     | Field name | Description |
     | ---------- | ----------- |
@@ -97,8 +100,8 @@ To generate a FAF for the UAE, follow these steps.
     | Settlement period | Select a settlement period to filter sales tax transactions on the report. If you leave this field blank, sales tax transactions from all settlement periods are included on the report. |
     | Include invoices by | Data that's reported in the **Purchase listing table** and **Supply listing table** sections of the report is filtered according to the dates that are specified in the **From date** and **To date** fields. Use this parameter to define which field of the data this filter must be applied to. The following options are available: **Invoice date**, **Tax transaction date**, and **Date of VAT register**. The **Date of VAT register** option is available only when the [Date of VAT register](../united-kingdom/emea-tax-point-date.md) feature is enabled. |
 
-3. Use the **Records to include** FastTab to filter the data on the report by one or more main accounts. This filter affects only the **General ledger table** section of the report.
-4. Use the **Run in the background** FastTab to specify the parameters of a batch job and run the report in batch mode. When an electronic report is generated in batch mode, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs** to find related batch information and the generated output file (as an attachment). For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+1. Use the **Records to include** FastTab to filter the data on the report by one or more main accounts. This filter affects only the **General ledger table** section of the report.
+1. Use the **Run in the background** FastTab to specify the parameters of a batch job and run the report in batch mode. When an electronic report is generated in batch mode, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs** to find related batch information and the generated output file (as an attachment). For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 [![Example the Electronic report parameters dialog box for a FAF.](../media/uae-faf-ud.png)]
 
