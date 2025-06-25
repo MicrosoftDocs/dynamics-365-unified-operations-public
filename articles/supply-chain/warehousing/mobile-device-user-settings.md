@@ -47,7 +47,7 @@ Follow these steps to create and manage user settings for your mobile devices.
 
     - **Button position** – Select how buttons should be positioned on the device. Elements in the app will be moved to better fit the preference or handedness of the worker. The available options are *Bottom right (default)*, *Bottom left*, *Top right*, and *Top left*.
     - **Scan with camera** – Set this option to *Yes* to use the device camera to scan input fields where the preferred input mode is set to *Scanning*. If your device has a built-in scanner, set this option to *No* to use the scanner instead.
-    - **Product photo placement** – Select how product photos should be shown in the app. Choose one of the following options:
+    - **Product photo placement** – Select how product photos should be shown in the app (learn more about product images in [Add an image to a product](../pim/tasks/add-image-product.md)). Choose one of the following options:
         - *Default (show photo card)* – Display the product image as a large photo card.
         - *Only in step header* – Show the product image within the header section.
         - *Do not show* – Hide the product image in the mobile app.
