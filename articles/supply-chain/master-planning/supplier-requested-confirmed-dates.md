@@ -252,8 +252,8 @@ This guide explains how **Requested Ship Date** and **Requested Receipt Date** a
    → Adjusted to the next working day if the assigned calendar is **active**.
 
 3. **Lead Time** (on the **Line details** tab) is populated only if the **“Calculate PO delivery date”** setting is enabled :
-    → The PO originates from a Purchase Requisition, Purchase Agreement, or Request for Quotation.
-        
+   → The PO originates from a Purchase Requisition, Purchase Agreement, or Request for Quotation.
+           
 4. **Transport Days** are applied based on:
    → The selected mode of delivery at the purchase order line level, **or**
    → The default mode of delivery configured at the warehouse master.
