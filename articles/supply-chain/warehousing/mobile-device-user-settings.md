@@ -4,7 +4,7 @@ description: Learn how to manage mobile device user settings for warehouse worke
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: article
-ms.date: 02/09/2021
+ms.date: 06/25/2025
 ms.custom: 
 ms.reviewer: kamaybac
 ms.search.form: WHSMobileAppDeviceBrand,WHSMobileAppUserDisplaySettings

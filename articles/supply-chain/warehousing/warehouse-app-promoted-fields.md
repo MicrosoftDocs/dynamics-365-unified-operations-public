@@ -4,7 +4,7 @@ description: Learn how to promote and highlight specific information for any ste
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 08/09/2022
+ms.date: 06/25/2025
 ms.reviewer: kamaybac
 ms.search.form: WHSMobileAppFlowStepSelectPromotedFields, WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields
 ---

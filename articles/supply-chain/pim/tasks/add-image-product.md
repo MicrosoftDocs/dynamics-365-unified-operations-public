@@ -4,7 +4,7 @@ description: Learn how to add an image to a product.
 author: sgmsft
 ms.author: shwgarg
 ms.topic: how-to
-ms.date: 09/03/2024
+ms.date: 06/25/2025
 ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductDetailsExtended, EcoResProductPerCompanyImagePart, EcoResProductImage, DocumentUpload
