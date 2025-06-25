@@ -2754,6 +2754,8 @@
           items:
           - name: Introduction to Commerce Scale Unit (CSU) Core
             href: dev-itpro/CSU-core.md
+          - name: Get started with Headless Commerce Integration
+            href: dev-itpro/headless-commerce-integration.md
         - name: APIs and reference
           items:
           - name: Commerce Scale Unit customer and consumer APIs
