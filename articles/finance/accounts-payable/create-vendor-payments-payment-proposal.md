@@ -4,7 +4,7 @@ description: Learn about the payment proposal options and includes some examples
 author: music727
 ms.author: mibeinar
 ms.topic: article
-ms.date: 06/19/2025
+ms.date: 06/25/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -102,7 +102,7 @@ The following invoices aren't included in the proposal:
 > When running payment proposals, the behavior of vendor bank account updates depends on the status of the public sector configuration key:
 > Public sector configuration key is turned on - Changes made on the vendor bank accounts aren't moved to the payment journal lines. 
 > Public sector configuration key is turned off - Editing is possible at the time of the proposal run, and changes made during this step are moved to the payment journal lines.
-> This design aims to prevent scenarios where payments could be redirected without proper oversight and ensure required segregation of duties and audit trail is in place, which is a critical control for public sector customers.
+> This prevents scenarios where payments are redirected without proper oversight and ensure required segregation of duties and the audit trail is in place.
 
 ## Country/Region specific considerations
 ### Norway
