@@ -56,16 +56,21 @@ Follow these steps to create and manage user settings for your mobile devices.
     - **Vibration level** – Select the vibration level for the device. Select a value between 0 (zero) and 5. A value of *0* represents no vibration, and a value of *5* represents maximum vibration. The default value is *1*.
     - **Text scale percentage** – Specify the text size as a percentage of the standard size. Enter a value between 70 and 400. A value of *70* represents the smallest text scale, and a value of *400* represents the largest text scale. The default value is *100*.
     - **Button scale percentage** – Specify the button size as a percentage of the standard size. Enter a value between 50 and 200. A value of *50* represents the smallest button scale, and a value of *200* represents the largest button scale. The default value is *100*.
-    - **Field filtering and sorting** – <!-- KFM: description needed -->
-    - **Button style** – <!-- KFM: description needed -->
-    - **Spinner mode** – <!-- KFM: description needed -->
-    - **Play sound when rescan is required** – <!-- KFM: description needed -->
-    - **Show copilot on startup** – <!-- KFM: description needed -->
-    - **Show copilot data as** – <!-- KFM: description needed -->
+    - **Field filtering and sorting** – Select which fields are shown on the device and how they're ordered. You can choose to show all fields or just the promoted fields, and you can choose to sort them or not. Learn more in [Configure promoted fields for steps in the Warehouse Management mobile app](warehouse-app-promoted-fields.md).
+    - **Button style** – Choose how certain buttons should be displayed in the app. The available options are *Buttons* and *Slider*.
+    - **Spinner mode** – *Spinners* provide a way for workers to enter quantity values by spinning through digits using a sliding gesture, similar to using a combination lock. Use this setting to control how spinners are displayed. Choose one of the following values:
+        - *Auto* – Allow the system to choose the appearance based on how much room there is on the screen.
+        - *Small* – Always show the small spinner, which presents a compact control.
+        - *None* – Don't use spinners. Instead, allow workers to enter numerical values using an on-screen keypad.
+    - **Play sound when rescan is required** – Choose whether to play a sound when a rescan is required. A rescan might be required, for example, when a scanned value results in an error, such as an invalid item ID.
+    - **Show copilot on startup** – Specify whether the Copilot workload page should be shown each time the user signs in to the app. The workload page shows work summaries and AI-generated insights to help warehouse workers better plan their shift. Learn more in [Workload insights with Copilot in the Warehouse Management mobile app](warehouse-management-mobile-app-insights.md).
+    - **Show copilot data as** – Specify whether Copilot summaries should be based on work headers or work lines. The choice depends on how workers prefer to think about their daily workload. For example, if all your orders typically contain just a few items, workers might prefer to think about their work in terms of whole orders (*Work headers*). However, if quantities vary greatly from order to order, workers might prefer to think about their work in terms of individual items (*Work lines*).
 
 ## Set local user settings in the Warehouse Management mobile app
 
-<!-- KFM: add this section. Just explain how to open the menu. Refer to previous section for field descriptions. -->
+Workers can set their own local user settings in the Warehouse Management mobile app. These settings are stored on the device and override the default settings. For example, a worker might prefer to use a different sound level or text scale than the global settings. When a worker signs in to the Warehouse Management mobile app, the app fetches and applies the most specific settings profile that is stored in Supply Chain Management for the matching brand, device, and user ID. When a worker changes their local settings, the app updates the settings profile that is stored in Supply Chain Management for the matching brand, device, and user ID. If no matching profile exists, a new one is created.
+
+To set local user settings in the Warehouse Management mobile app, sign in to the app and then select the **Settings** button, which is the gear icon in the top-right corner of the screen. The settings provided are the same as those that are available in Supply Chain Management and are described in the previous section.
 
 ## Create and manage mobile device brands
 
