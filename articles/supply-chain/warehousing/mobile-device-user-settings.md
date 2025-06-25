@@ -68,9 +68,9 @@ Follow these steps to create and manage user settings for your mobile devices.
 
 ## Set local user settings in the Warehouse Management mobile app
 
-Workers can set their own local user settings in the Warehouse Management mobile app. These settings are stored on the device and override the default settings. For example, a worker might prefer to use a different sound level or text scale than the global settings. When a worker signs in to the Warehouse Management mobile app, the app fetches and applies the most specific settings profile that is stored in Supply Chain Management for the matching brand, device, and user ID. When a worker changes their local settings, the app updates the settings profile that is stored in Supply Chain Management for the matching brand, device, and user ID. If no matching profile exists, a new one is created.
+Workers can set their own local user settings in the Warehouse Management mobile app. These settings override the default settings set by the admin. For example, a worker might prefer to use a different theme, sound level, or text scale. When a worker signs in to the Warehouse Management mobile app, the app fetches and applies the most specific settings profile that is stored in Supply Chain Management for the matching brand, device, and user ID. When a worker changes their local settings, the app updates the settings profile that is stored in Supply Chain Management for the matching brand, device, and user ID. If no matching profile exists, a new one is created.
 
-To set local user settings in the Warehouse Management mobile app, sign in to the app and then select the **Settings** button, which is the gear icon in the top-right corner of the screen. The settings provided are the same as those that are available in Supply Chain Management and are described in the previous section.
+To set local user settings in the Warehouse Management mobile app, sign in to the app and then select the **Settings** button, which is the gear icon in the top-right corner of the screen. The settings provided are the same as those that are available in Supply Chain Management, as described in the previous section.
 
 ## Create and manage mobile device brands
 
