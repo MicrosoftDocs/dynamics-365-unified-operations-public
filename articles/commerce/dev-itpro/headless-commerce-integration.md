@@ -42,6 +42,6 @@ The repository includes:
 1. *SampleCustomerCreateSearch* – Logic App samples to demonstrate creating and searching for customers.
 1. *HeadlessSampleConsoleApp* – A console-based sample that shows how to ingest orders into CSU.
 
-These samples serve as quick start templates and reference implementations for partners, ISVs, and customers building their own headless commerce experiences. For detailed information on each commerce API endpoint, as well as guidance on packaging, deploying, and operating headless commerce solutions, see [Commerce Scale Unit (CSU) and Core service APIs](retail-server-customer-consumer-api.md).
+These samples serve as quick start templates and reference implementations for partners, ISVs, and customers building their own headless commerce experiences. For detailed information on each commerce API endpoint, and read guidance on packaging, deploying, and operating headless commerce solutions, see [Commerce Scale Unit (CSU) and Core service APIs](retail-server-customer-consumer-api.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
