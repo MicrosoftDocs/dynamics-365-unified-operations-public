@@ -58,7 +58,7 @@ In general, Commerce is optimized for the internet. The number of round trips fr
 
 ## .NET Framework requirements
 
-Commerce requires the Microsoft .NET Framework version 4.7.2 or later for Call ClickOnce applications, such as the document routing agent. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For Commerce client components (sealed or legacy installers), we recommend that you always use the latest version of the .NET Framework that is available.
+Commerce requires the Microsoft .NET Framework version 4.8 or later for Call ClickOnce applications, such as the document routing agent. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For Commerce client components (sealed or legacy installers), we recommend that you always use the latest version of the .NET Framework that is available.
 
 ## Supported Microsoft Office applications
 
