@@ -34,7 +34,7 @@ Before you can generate the report, the following prerequisites must be met:
 ## Additional configuration required for the VAT withholding certificate
 
 - You must create a **tax application code** to use on this report. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
-- Follow these steps to configure the tax application:
+- Follow these steps to configure the applicable VAT and withholding tax rates and codes according to your requirements:
 
     1. Go to **Tax** \> **Indirect tax** \> **Sales tax**\> **Sales tax codes**\> **Latam**.
     1. On the Action Pane, select **Tax application**.
@@ -42,7 +42,6 @@ Before you can generate the report, the following prerequisites must be met:
     1. In the **Income tax code** field, enter **IVA**.
     1. In the **Code regime** field, enter **16** if you're configuring VAT 16% rate.
 
-- Follow these steps to configure the applicable VAT and withholding tax rates according to your requirements.
 
 ## Configure application-specific parameters for the VAT withholding certificate
 
