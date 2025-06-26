@@ -43,9 +43,20 @@ The process requires the following information (at a minimum):
 - **Packing location** – This value identifies the location where the container is created. You can assign a default value for each worker by going to **Warehouse management \> Setup \> Worker** and/or by setting up a [detour](warehouse-app-detours.md) to look up the value.
 - **Shipment ID** or **License plate ID** – These values are used to validate which inventory items should be packed. The process depends on the mobile device menu item's **[Packing policy ID](warehouse-app-pack-containers-policies.md)** setting.
 
-If you want to keep track of container line packing details, such as the worker ID, packing quantity. You can go to **Warehouse management parameters** \> **Packing** and enable **Create container line packing details**. This is useful when there are multiple workers processing a container line and you want to keep track of it.
- 
- To view the logs, navigate to **Warehouse management** \> **Packing and containerization** \> **Containers**, where you can click **Container line packing details** button to view details for the selected container line, or **Container lines packing details** button to view details for all the container lines in the selected container.
+### Record and view container line packing details
+
+When workers use the Warehouse Management mobile app to pack items into containers, the system can record container line packing details (such as worker IDs and packed quantities). This functionality can be useful, for example, if you have multiple workers processing a container line and you want to keep track of who did what. To enable this functionality, follow these steps:
+
+1. Go to **Warehouse management** \> **Setup** \>  **Warehouse management parameters**.
+1. Open the **Packing** tab.
+1. Set **Create container line packing details** to *Yes*.
+
+To view the logs created when **Create container line packing details** is set to *Yes*, follow these steps:
+
+1. Go to **Warehouse management** \> **Packing and containerization** \> **Containers**.
+1. On the upper pane, select the container  you want to inspect.
+1. On the lower pane, select the container line that you want to inspect.
+1. On the lower pane toolbar, select **Container line packing details** to view details for the selected container line. Select **Container lines packing details** to view details for all the container lines in the selected container. <!-- KFM: I can't find that second button. Where is it? -->
 
 > [!NOTE]
 > A default container packing policy must be assigned to each relevant worker on the **Worker** page (**Warehouse management \> Setup \> Worker**).
@@ -59,7 +70,7 @@ To create containers by using the Warehouse Management mobile app, workers must 
 - **Container type ID** – This value is used to identify the maximum physical volume and maximum weight capacity of the container.
 - **Container ID** – This value is a unique number that identifies the shipping container.
 
-ID of the worker who created the container is recorded in the **Created by** field in overview grid in **Warehouse management** \> **Packing and containerization** \> **Containers**.
+The system records the ID of the worker who created the container. To view this information, go to **Warehouse management** \> **Packing and containerization** \> **Containers** and inspect the **Created by** field. <!-- KFM: Where is this field? I don't see it. Also, do we need to enable the **Create container line packing details** option for this work? -->
 
 > [!NOTE]
 > A default container packing policy must be assigned to each relevant worker on the **Worker** page (**Warehouse management \> Setup \> Worker**).
@@ -71,7 +82,7 @@ Workers can trigger the *Container closing* process directly, by using a Warehou
 - **Container ID** – The container that is being closed.
 - **Weight** – The weight of the container. The system assigns a default value, based on the item master weight definition.
 
-ID of the worker who closed the container is recorded in the **Closed by** field in overview grid in **Warehouse management** \> **Packing and containerization** \> **Containers**.
+The system records the ID of the worker who closed the container. To view this information, go to **Warehouse management** \> **Packing and containerization** \> **Containers** and inspect the **Closed by** field. <!-- KFM: Where is this field? I don't see it. Also, do we need to enable the **Create container line packing details** option for this work? -->
 
 ## Supported and unsupported processes
 
