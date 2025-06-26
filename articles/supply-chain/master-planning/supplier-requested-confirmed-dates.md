@@ -119,6 +119,9 @@ The following calendars are relevant for ship and receipt date calculations:
 
 The purchase and vendor ship calendars are considered when the ship date is calculated. The warehouse (item coverage group) calendar is used when the receipt date is calculated.
 
+> [!NOTE]
+> If no coverage group is assigned to an item on the mentioned pages(**Released product details**, **Item coverage** page, **Master planning parameters** page), master planning uses the general coverage group that's set in the **General coverage group** field on the **Master planning parameters** page and calculate the working days based on the calendar assigned in the general coverage group.
+
 Learn more in [Calendars and master planning](supply-chain-calendars-master-planning.md).
 
 The following examples show how calendars affect the calculation of requested ship and receipt dates for purchase orders.
