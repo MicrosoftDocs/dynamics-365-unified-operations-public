@@ -1,6 +1,6 @@
 ---
-title: Get Started with Headless Commerce Integration
-description: This article provides information and samples on how to start your Headless Commerce Integration.
+title: Get started with Headless Commerce Integration
+description: Learn about the information and samples that are available to help you start your Headless Commerce Integration.
 author: ritakimani1
 ms.date: 06/18/2025
 ms.topic: how-to
@@ -17,31 +17,33 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information and samples on how to start your Headless Commerce Integration.
+This article describes the information and samples that are available to help you start your Headless Commerce Integration.
 
-To help you *kickstart and accelerate* the development of custom storefronts using Dynamics 365 Commerce headless engine commonly referred to as Headless Commerce, Microsoft provides a set of sample implementations tailored for headless and composable commerce scenarios.
+Microsoft provides a set of sample implementations that are tailored to headless and composable commerce scenarios. These samples can help you *kick-start* and *accelerate* the development of custom storefronts by using Microsoft Dynamics 365 Commerce headless engine (commonly referred to as headless commerce).
 
 The [Headless Commerce Integration Samples GitHub repository](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Commerce/HeadlessCommerceSamples) includes both technical guidance and working code samples to help you build and integrate with the Retail Server APIs.
 
-The repository includes:
+## Guidance and architecture
 
-*Guidance and Architecture*
+The Docs folder of the repo contains technical guidance and architecture information.
 
-1. *Architecture* – Overview of headless integration patterns and concepts.
-1. *Customers* – Working with customer master data and account integration.
-1. *Inventory* – Querying real-time product inventory.
-1. *Orders* – Order creation and processing via the Headless Commerce Engine (CSU).
-1. *Payments* – Strategies for integrating payments in headless scenarios.
-1. *Prices* – Handling product pricing, discounts, and price lookups.
-1. *Products* – Accessing and managing product master data.
+- *Architecture* – An overview of headless integration patterns and concepts.
+- *Customers* – Information about how to work with customer master data and account integration.
+- *Inventory* – Information about how to query real-time product inventory.
+- *Orders* – Information about order creation and processing via the Headless Commerce Engine (CSU).
+- *Payments* – Strategies for integrating payments in headless scenarios.
+- *Prices* – Information about how to handle product pricing, discounts, and price lookups.
+- *Products* – Information about how to access and manage product master data.
 
-*Code Samples*
+## Code samples
 
-1. *HeadlessCommerceCommonAPICollection* – A curated set of common API calls for easy testing and exploration.
-1. *SampleCommerceProductPublisher* – An Azure Function and publisher component that uses the Commerce Proxy to retrieve product data via headless APIs.
-1. *SampleCustomerCreateSearch* – Logic App samples to demonstrate creating and searching for customers.
-1. *HeadlessSampleConsoleApp* – A console-based sample that shows how to ingest orders into CSU.
+The Assets folder of the repo contains working code samples.
 
-These samples serve as quick start templates and reference implementations for partners, ISVs, and customers building their own headless commerce experiences. For detailed information on each commerce API endpoint, and read guidance on packaging, deploying, and operating headless commerce solutions, see [Commerce Scale Unit (CSU) and Core service APIs](retail-server-customer-consumer-api.md).
+- *HeadlessCommerceCommonAPICollection* – A curated set of common API calls for easy testing and exploration.
+- *SampleCommerceProductPublisher* – An Azure Function and publisher component that uses the Commerce Proxy to retrieve product data via headless APIs.
+- *SampleCustomerCreateSearch* – Logic App samples that show how to create and search for customers.
+- *HeadlessSampleConsoleApp* – A console-based sample that shows how to ingest orders into CSU.
+
+These samples serve as quick-start templates and reference implementations for partners, software development companies (formerly referred to as independent software vendors or ISVs), and customers that build their own headless commerce experiences. You can find detailed information about each commerce API endpoint in [Commerce Scale Unit (CSU) and Core service APIs](retail-server-customer-consumer-api.md). There, you can also find guidance for packaging, deploying, and operating headless commerce solutions.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
