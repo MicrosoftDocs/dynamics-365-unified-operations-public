@@ -58,7 +58,7 @@ Before you enable cross-company data sharing for products, work through the foll
 
 ## <a name="old-version-setup"></a>Set up your system for product sharing in version 10.0.42 and older
 
-As mentioned in the [prerequisites](#prerequisites), if you are running Supply Chain Management version 10.0.42 or older, you can only enable this feature with assistance from the [Cross-company product sharing team](mailto:productsharing@service.microsoft.com). After the team enables the feature for you, you must also complete the following procedure. Don't do this if you are running version 10.0.43 or later.
+As mentioned in the [prerequisites](#prerequisites), if you are running Supply Chain Management version 10.0.42 or older, you can only enable this feature with assistance from the Microsoft Support. After Microsoft Support team enables the feature for you, you must also complete the following procedure. Don't do this if you are running version 10.0.43 or later.
 
 1. Enable the following flights. If you don't know how to complete this step, contact Microsoft Support.
 
