@@ -473,3 +473,7 @@ Follow these steps to create a new message type.
     
     }
     ```
+
+## Additional resources
+
+- [Cleanup processed and canceled message processor messages](../warehousing/message-processor-cleanup.md)

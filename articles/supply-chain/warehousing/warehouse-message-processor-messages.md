@@ -31,3 +31,7 @@ You should schedule a periodic batch job to process the messages, by going to **
 ## Set up business events to deliver alerts for failed processing results
 
 On the **Message processor messages** page, you can filter on the  *Failed* value of the **Message state** field to inquire about failed messages. In addition, you can set up [business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) to alert you about failed processing results. Learn more in [Set up business events to deliver alerts for failed processing results](../supply-chain-dev/message-processor.md#business-events).
+
+## Cleanup processed and canceled message processor messages
+
+Over time, processed and canceled messages, which are no longer needed, can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency. To learn more, go to [Cleanup processed and canceled message processor messages](message-processor-cleanup.md).

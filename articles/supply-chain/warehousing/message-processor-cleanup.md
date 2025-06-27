@@ -38,7 +38,7 @@ To configure message cleanup, follow these steps:
     - **Days before canceled message deletion** - Specify of days to wait before canceled messages should be cleaned up (deleted). To turn off canceled message cleanup, set this field to zero (0).
 
 1. On the Action Pane, select **Save**. The system automatically creates a background process to run the cleanup job. By default, the process is set to run daily, but you can modify this schedule in the [Process automation](../../fin-ops-core/fin-ops/sysadmin/process-automation.md) workspace, as described in the next section.
-1. Go to **System administration** \> **Setup** \> **Process automation** and, on the Action Pane, select **Initialize process automation**. <!-- KFM: It doesn't seem like this step is needed. For me, the job was added automatically when I configured the queues and when I selected **Initialize process automation**, the system said automation was already initialized (as they will probably already be for almost all of our readers) -->
+1. Go to **System administration** \> **Setup** \> **Process automation** and, on the Action Pane, select **Initialize process automation**. <!-- KFM: It doesn't seem like this step is needed. For me, the job was added automatically when I configured the queues and when I selected **Initialize process automation**, the system said automation was already initialized (as it will probably already be for almost all of our readers) -->
 
 ## Review and manage cleanup jobs
 
@@ -58,6 +58,15 @@ The [Optimization advisor](../../fin-ops-core/fin-ops/sysadmin/optimization-advi
 To view and act on your optimization opportunities, including those related to cleaning up aged messages, follow these steps.
 
 1. Go to **System administration** \> **Workspaces** \> **Optimization advisor**. Here, you can see a list of optimization opportunities that the system has identified, including those related to message processor cleanup.
-1. Select the relevant optimization opportunity from the list <!-- KFM: please specify how to identify it by **Area** and **Optimization opportunity** value. -->
+1. Select the relevant optimization opportunity from the list <!-- KFM: please specify how to identify it by **Area** and **Optimization opportunity** values. -->
 1. From the toolbar, select **More information** to learn more about the opportunity and the recommended action.
 1. If you want to act on the opportunity, select **Take action** from the toolbar to open the **Message queue setup** page, where you can configure the cleanup settings as described previously in this article.
+
+## Additional resources
+
+- [Create and process message queues and message types](../supply-chain-dev/message-processor.md)
+- [Message processor messages for warehouse management processes](warehouse-message-processor-messages.md)
+- [Exchange data between systems](wms-only-mode-exchange-data.md)
+- [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md)
+- [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](../../fin-ops-core/fin-ops/data-entities/add-efficiency-in-quote-to-cash-enable.md)
+- [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md)
