@@ -89,7 +89,7 @@ To process a message queue, you must set up a batch job to run it. Usually you'l
 
 ## Message processor queue setup
 
-You can configure the number of processor tasks that should be dedicated to each message processor queue. Unconfigured queues will use a default value that you can override as you require. Follow these steps to customize one or more queues.
+You can configure the number of processor tasks that should be dedicated to each message processor queue and set rules for how often the queue should cleaned of processed and canceled messages. Unconfigured queues will use a default value that you can override as you require. Follow these steps to customize one or more queues.
 
 1. Go to **System administration \> Message processor \> Message queue setup**.
 1. Follow one of these steps:
@@ -97,7 +97,11 @@ You can configure the number of processor tasks that should be dedicated to each
     - To edit an existing queue, select **Edit** on the Action Pane, and then select the target queue in the grid.
     - To add a new configuration, select **Add** on the Action Pane to add a new row to the grid. Then, in the **Message queue** field for the new row, select the name of the queue that you want to configure.
 
-1. For the new or selected row, set the **Number of processor tasks** field to the number of processor tasks that should be dedicated to the specified queue. The maximum value is *8*. The minimum value depends on the minimum number of batch threads that are configured for your system (typically *2*).
+1. For the new or selected row, make the following settings:
+    - **Number of processor tasks** – Specify the number of processor tasks that should be dedicated to the specified queue. The maximum value is *8*. The minimum value depends on the minimum number of batch threads that are configured for your system (typically *2*).
+    - **Days before processed message deletion** - Specify the number of days before processed messages should be cleaned up (deleted). Set this field to zero (0) to turn off processed message cleanup. Learn more in [Cleanup for message processor](message-processor-cleanup.md).
+    - **Days before canceled message deletion** - Specify of days before canceled messages should be cleaned up (deleted).  Set this field to zero (0) to turn off canceled message cleanup. Learn more in [Cleanup for message processor](message-processor-cleanup.md).
+
 1. On the Action Pane, select **Save**.
 
 ## <a name="business-events"></a>Set up business events to deliver alerts for failed processing results
