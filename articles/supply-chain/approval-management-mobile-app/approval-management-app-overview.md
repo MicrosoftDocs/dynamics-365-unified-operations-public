@@ -2,7 +2,7 @@
 title: Approvals Management mobile app overview
 description: This article introduces the Approvals Management mobile app.
 author: kamaybac
-ms.author: akshaykmr
+ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview

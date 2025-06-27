@@ -2,11 +2,11 @@
 title: Approvals Management mobile app FAQ and known issues
 description: This article answers frequently asked questions about the Approvals Management mobile app. It also describes known issues that affect the app and explains how to work around them.
 author: kamaybac
-ms.author: akshaykmr
+ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 07/29/2024
+ms.date: 06/27/2025
 ms.custom: 
   - bap-template
 ---
@@ -71,14 +71,16 @@ This error can occur because the *Approvals Management app* role doesn't have th
 
 The Approvals Management mobile app is a canvas app. The update process fails with an error if it detects that the canvas app has been customized. This behavior helps prevent the updater from overwriting your customizations. To fix the error, remove any customization layers by restoring the oldest version of the app. If the oldest version is more than six months old, you must manually delete the `msdyn_ApprovalsManagementAnchor` and `msdyn_ApprovalsManagement` solutions, and then reinstall the app from Dynamics 365 apps or AppSource.
 
-Steps to Manually Delete the Solutions:
-
-1. Go to the Maker Portal of your environment.
-1. Navigate to the "Solutions" section.
-1. Click on the "Managed" tab to view managed solutions.
-1. Delete the following solutions: Dynamics 365 Approvals Management Anchor Solution and Dynamics 365 Approvals Management Solution
-
 Consider cloning the canvas app before you remove your customizations, just in case you want to copy the customizations to the updated app.
+
+To delete the solutions, follow these steps:
+
+1. Open the [Power Apps Maker portal](https://make.powerapps.com) for your environment.
+1. On the left navigation pane, select **Solutions**.
+1. Open the **Managed** tab to view managed solutions.
+1. Find and delete each of the following solutions. The **Search** field in the top-right corner of the page can help you find the solutions quickly. The **Delete** button is available in the **Commands** menu (three dots) provided for each solution.
+    - Dynamics 365 Approvals Management Anchor Solution
+    - Dynamics 365 Approvals Management Solution
 
 > [!NOTE]
 > Microsoft doesn't support [customizing or extending](#customize) the Approvals Management mobile app.
