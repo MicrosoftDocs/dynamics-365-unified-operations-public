@@ -266,6 +266,6 @@ For example, you might set up the following alerts to provide feedback about the
 - Create a business event ("Send externally") that is used when a message is *Failed*.
 - Send a notification and email to the IT admin or production floor manager.
 
-## Cleanup functionality
-To configure automatic message cleanup for third-party manufacturing execution systems, see [message cleanup](../supply-chain-dev/message-processor-cleanup.md) for setup instructions and process details.
+## Clean up processed and canceled message processor messages
 
+Over time, processed and canceled messages related to third-party MES systems can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency. Learn more in [Clean up processed and canceled message processor messages](message-processor-cleanup.md).
