@@ -70,9 +70,9 @@ As mentioned in the [prerequisites](#prerequisites), if you are running Supply C
 2. Do a database synchronization.
 3. Restart Internet Information Services (IIS).
 4. Put your environment in [maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-5. Go to the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the [*(Preview) Master company data sharing*](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md#master-company-sharing-preview) feature.
+5. Go to the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the [*Master company data sharing*](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md#master-company-sharing) feature.
 6. Turn off [maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-7. Go to the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *(Preview) Cross-company data sharing for products* feature. This feature won't appear in the **Feature management** workspace until after you've turned on the "*(Preview) Master company data sharing*" feature.
+7. Go to the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *(Preview) Cross-company data sharing for products* feature.
 
 ## Set up sharing policies for products and product-related information
 
