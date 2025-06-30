@@ -182,8 +182,11 @@ You can set up as many load build templates as you require. However, to use adva
     | Load mix group ID | Select the load mix group to use if the item is allowed on the load. The mix group establishes rules for the types of items that can be combined on a single load. You should select one of the mix groups that you created earlier in this setup. | *TV* |
     | Use open loads | Select whether existing open loads should be added. The following options are available:<ul><li>**None** – Don't add open loads to any existing loads.</li><li>**Any** – Add open loads to any existing loads that are valid for the line.</li><li>**Assigned** – Add open loads to the load that is assigned to the wave.</li></ul> | *Any* |
     | Create loads | Specify whether new loads should be created if no existing loads match the criteria. | Selected (= *Yes*) |
-    | Allow shipment line split | Specify whether a single load line can be split across multiple loads if the full line exceeds the maximum capacity of the load template. | Cleared (= *No*) |
+    | Allow load line split | Specify whether a single load line can be split across multiple loads if the full line exceeds the maximum capacity (**Quantity**) of the load template. | Cleared (= *No*) |
     | Validate volumetrics | Specify whether load building should check the weight and volume as each load line is added, to ensure that the volumetric limits of the load template are respected. | Cleared (= *No*) |
+
+> [!NOTE]
+> **Allow load line split** field only splits based on quantity limit, not volume/weight limits. It's different from the **Allow load split during ship confirm** field from load template. Learn more at [Confirm and transfer](confirm-and-transfer.md).
 
 1. On the Action Pane, select **Save** to make the **Edit query** option available.
 1. On the Action Pane, select **Edit query** to open a dialog box for editing the query.
