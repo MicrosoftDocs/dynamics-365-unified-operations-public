@@ -21,7 +21,7 @@ This article describes the work blocking functionality and reasons.
 
 The following are the supported work blocking reasons:
 
-- **Unprocessed deferred put operation**: The work is blocked by a deferred put processing task that is not processed.
+- **Unprocessed deferred put operation**: The work is blocked by a deferred put processing task that isn't processed.
 
 - **Demand replen wave in process**: The work is blocked by a demand wave that is in process.
 
@@ -29,18 +29,18 @@ The following are the supported work blocking reasons:
 
 - **Held wave**: The work is blocked by a wave with status Held.
 
-- **Split work**: The work is blocked because it is being splitted.
+- **Split work**: The work is blocked because it's being split.
 
-- **Unprocessed production over pick work**: The work is blocked because it is linked to a unprocessed staging over pick work.
+- **Unprocessed production over pick work**: The work is blocked because it's linked to an unprocessed staging over pick work.
 
-- **Unprocessed replenishment work**: The work is blocked because it is linked to a unprocessed replenishment work.
+- **Unprocessed replenishment work**: The work is blocked because it's linked to an unprocessed replenishment work.
 
 - **Undefined reason**: The work is blocked by undefined reason.
 
-- **Initial pick work in progress**: Used when the work cannot be blocked or unblocked because it is in an in progress state.
+- **Initial pick work in progress**: Used when the work can't be blocked or unblocked because it's in an in progress state.
 
 **Only these blocking functionalities are supported.**
 
-You can select multiple works to block or unblock them at once. If you manually block work, it will be assigned the reason **Undefined reason**.
+You can select multiple works to block or unblock them at once. If you manually block work, it is assigned the reason **Undefined reason**.
 
 To view blocking reasons, go to **Work details** > **Blocking reasons** tab.
