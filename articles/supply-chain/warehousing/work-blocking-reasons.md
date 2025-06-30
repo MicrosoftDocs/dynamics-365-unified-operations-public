@@ -39,8 +39,8 @@ No other blocking reasons are supported.
 To find all blocked work and check the reasons why each of them blocked, follow these steps.
 
 1. Go to **Warehouse management** \> **Work** \> **All work**.
-1. Blocked work records show a check mark in the **Blocked wave** column. You can use the column filter to find all blocked work records at once.
-1. To we the blocking reason for a list work record, select the link in the **Work ID** column to open the **Work details** page for that work record. Then open the **Blocking reasons** tab, which shows all blocking reasons for that work record, along with who blocked it and the date and time when each reason was applied.
+1. Blocked work records show a check mark in the **Blocked wave** column. You can use the column filter to find all blocked work records at once. <!-- KFM: please confirm that this is the correct column to check. -->
+1. To see the reasons why a work record is shown as blocked, select the link in the **Work ID** column to open the **Work details** page for that work record. Then open the **Blocking reasons** tab, which shows all blocking reasons for that work record, along with who blocked it and the date and time when each reason was applied.
 
 <!-- KFM: There is also a page called **Work blocked by replenishment work**. Should we describe that here too?-->
 
@@ -54,6 +54,6 @@ You can manually unblock work that is currently blocked for one of the following
 - Undefined reason
 - Replenishment overflow capacity <!-- KFM: Does this reason still exist (it's mentioned in the tooltip) -->
 
-<!-- KFM: Briefly mention how other types of blocking reasons get unblocked (I assume it's automatic and depends on the reason stated) -->
+<!-- KFM: Briefly mention how other types of blocking reasons get unblocked (I assume it's automatic and depends on the reason stated). Also, what happens if we manually unblock when there are multiple blocks and some allow manual unblock while others don't? -->
 
 To manually block or unblock work, go to **Warehouse management** \> **Work** \> **All work** and select one or more work records that you want to block or unblock. Then, on the Action Pane, select **Block work** or **Unblock work**.
