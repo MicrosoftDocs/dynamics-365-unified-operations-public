@@ -42,13 +42,13 @@ To restore the security configurations to a version that was created earlier, fo
 1. In the dialog box that appears, select options as required.
 
        - **User security governance** - Restore all objects configured on the **Process hierarchy** page, including the **Security category**, **Process role**, and **Security tasks**. This also restores the related security roles, duties, and privileges created on the page. This doesn’t restore the security objects created from **Core Security configuration**.
-    - **Security configuration** - Restore security roles, duties and privileges created from **Core security configuration**.
-    - **Remove customizations** - Remove the security roles, duties and privileges before restoring. This option is only available when the **Security configuration** option is enabled. Enabling this option ensures that the security objects are restored exactly to the version being restored.
+    - **Security configuration** - Restore security roles, duties, and privileges created from **Core security configuration**.
+    - **Remove customizations** - Remove the security roles, duties, and privileges before restoring. This option is only available when the **Security configuration** option is enabled. Enabling this option ensures that the security objects are restored exactly to the version being restored.
 
    
 1. Select **OK**.
 
-This action resets this environment to the selected version state. All security metadata customizations and user security governance data changes since the selected version will be removed. It is highly recommended to first create a new version to save any current changes before performing this action.
+This action resets this environment to the selected version state. All security metadata customizations and user security governance data changes since the selected version will be removed. It's highly recommended to first create a new version to save any current changes before performing this action.
 
 ## Compare versions
 
