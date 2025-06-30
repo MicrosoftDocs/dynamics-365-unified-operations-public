@@ -1,6 +1,6 @@
 ---
 title: Work blocking reasons
-description: Learn about Work blocking reasons.
+description: Learn about the supported work blocking reasons.
 author: yanghaomingms
 ms.author: yanghaomingms
 ms.topic: faq
@@ -41,6 +41,6 @@ The following are the supported work blocking reasons:
 
 **Only these blocking functionalities are supported.**
 
-You can select multiple works to block or unblock them at once. If you manually block work, it is assigned the reason **Undefined reason**.
+You can select multiple works to block or unblock them at once. If you manually block work, it's assigned with the reason **Undefined reason**.
 
 To view blocking reasons, go to **Work details** > **Blocking reasons** tab.
