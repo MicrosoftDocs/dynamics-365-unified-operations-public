@@ -4,7 +4,7 @@ description: Learn how to set up a value-added tax (VAT) declaration for legal e
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 06/23/2025
+ms.date: 07/01/2025
 ms.custom: 266904
 ms.reviewer: johnmichalak
 audience: Application User
@@ -100,7 +100,7 @@ These tasks will prepare your Finance environment to generate the electronic fil
 - [Set up application-specific parameters for VAT declaration fields](#set-up).
 - [Set up the VAT reporting format to preview amounts in Excel](#setup-preview).
 - [Set up electronic messages](#setup-em).
-- [Set up the VAT registration number of the company that's reporting VAT](#vat-id).
+- [Set up the taxpayer registration number of the reporting company](#vat-id).
 
 ### <a name="import-er"></a>Import ER configurations
 
@@ -187,14 +187,14 @@ For more information about how you can use the data management framework, see [D
 3. Use the filter to specify the settlement periods to include on the report.
 4. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
 
-### <a id="vat-id"></a>Set up the VAT registration number of the company that's reporting VAT
+### <a id="vat-id"></a>Set up the taxpayer registration number of the reporting company
 
-To generate the VAT declaration, you must configure the tax registration number of your organization.
+To generate the VAT declaration, you must configure the taxpayer registration number of your organization. This value is populated in \<TaxPayerRegCode\> field of the report.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
 3. Select or create the address in Estonia, and then, on the **Registration ID** FastTab, select **Add**.
-4. In the **Registration type** field, select the registration type that's dedicated to Estonia and that uses the **VAT ID** registration category.
+4. In the **Registration type** field, select the registration type that's dedicated to Estonia and that uses the **Enterprise ID** registration category.
 5. In the **Registration number** field, enter the tax number.
 6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
@@ -206,7 +206,7 @@ Follow these steps to define the VAT registration number that EM uses during gen
 2. On the **Message additional fields** FastTab, in the **Tax registration number** field, define the VAT registration number that should be used in the VAT declaration for Estonia.
 3. Save your changes.
 
-If the VAT registration number isn't specified in the **Tax registration number** additional field of the **EE VAT declaration** processing, the system retrieves it from the registration ID that's defined in the properties of the legal entity that's associated with the **VAT ID** registration category.
+If the VAT registration number isn't specified in the **Tax registration number** additional field of the **EE VAT declaration** processing, the system retrieves it from the registration ID that's defined in the properties of the legal entity that's associated with the **Enterprise ID** registration category.
 
 ## Preview the VAT declaration in Excel
 
