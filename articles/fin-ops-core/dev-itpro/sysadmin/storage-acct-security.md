@@ -173,4 +173,15 @@ The user-delegated SAS URL, which is often long, may be cut off if the variable 
 
 By ensuring the variable can store the entire URL without truncation, the error should be resolved.
 
+### Error: "403 (Forbidden): Server failed to authenticate the request."
+
+This error may occur if you're using an old or cached connection string on FnO-managed storage accounts. This is often due to secrets rotation following planned maintenance.
+
+**What to check first:**
+Please review the "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#windows". If the issue occurs after the scheduled maintenance window, proceed with the resolution below.
+
+**Resolution**
+If you're using or caching a connection string for the storage account, it may no longer be valid.
+Retrieve a new connection string after the environment restart to restore access.  
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
