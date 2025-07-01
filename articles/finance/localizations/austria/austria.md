@@ -39,14 +39,6 @@ To specify the value of the purchase duty, click **Purchase duty value** to open
 
 Purchase duties are generated when you settle and post sales taxes. You can generate the **Purchase duty** report from the **Purchase duty reporting** menu.
 
-## VAT
-For information about setting up the value-added tax (VAT) statement for legal entities in Austria, see [VAT statement details for Austria](../emea-aut-vat-statement-details.md). 
-
-For general information about the setup of VAT statements, see [VAT reporting for Europe](../europe/emea-vat-reporting.md).
-
-## New VAT declaration U30
-Find more details about new design of VAT declaration U30 for Austria in [VAT declaration (Austria)](emea-aut-vat-declaration-austria.md)
-
 ## Reports for Austria
 
 | Report                     | How to get to the report | Additional information                 |
@@ -54,6 +46,8 @@ Find more details about new design of VAT declaration U30 for Austria in [VAT de
 |Cross-border services report|**General ledger** > **Reports** > **External** > **Cross-border services**|This report prints a summary of the incoming and outgoing cross-border services, countries/regions that are the providers or recipients of the cross-border services, and net amounts paid for the services. This report is typically used by accounting managers, accountants, and sales managers to inquire into the status of sales transactions. For more information, see [Cross-border services report](emea-aut-cross-border-services-report.md).|
 |Intrastat report|**Tax** > **Declarations** > **Foreign trade** > **Intrastat**|You can use the Intrastat page to generate and report information about trade among European Union (EU) countries/regions. The Austrian Intrastat declaration contains information about the trade of goods for reporting. For more information, see [Austrian Intrastat](emea-aut-intrastat.md).|
 |EU sales list for Austria|**Tax** > **Declarations** > **Foreign trade** > **EU sales list**|This article provides information about the European Union (EU) sales list report that is based on form U13. The Austrian EU sales list report contains information about the sale of goods and services. For more information, see [EU sales list for Austria](emea-aut-eu-sales-list.md).|
+| VAT declaration U30 |**Tax** > **Declarations** > **Report sales tax for settlement period**|This article describes how to set up and generate an advance value-added tax (VAT) declaration U30 for Austria in the official XML format. It also describes how to preview the VAT declaration in Microsoft Excel. For more information, see [VAT declaration (Austria)](emea-aut-vat-declaration-austria.md).|
+| Annual sales tax report U1 |**Tax** > **Inquires and reports** > **Sales tax reports**|This article describes how to generate an Annual sales tax report U1 for Austria in PDF format. For more information, see [Annual sales tax report U1](emea-aut-annual-sales-tax-report.md).|
 
 
 ## Additional resources
