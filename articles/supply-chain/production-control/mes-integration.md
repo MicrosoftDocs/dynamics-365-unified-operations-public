@@ -268,4 +268,4 @@ For example, you might set up the following alerts to provide feedback about the
 
 ## Clean up processed and canceled message processor messages
 
-Over time, processed and canceled messages related to third-party MES systems can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency. Learn more in [Clean up processed and canceled message processor messages](message-processor-cleanup.md).
+Over time, processed and canceled messages related to third-party MES systems can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency. Learn more in [Clean up processed and canceled message processor messages](../message-processor/message-processor-cleanup.md).
