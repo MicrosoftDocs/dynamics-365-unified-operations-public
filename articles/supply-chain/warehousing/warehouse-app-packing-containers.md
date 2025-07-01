@@ -3,8 +3,8 @@ title: Packing containers with the Warehouse Management mobile app
 description: Learn about the process for packing containers by using the Warehouse Management mobile app with an outline on the Warehouse Management packing process.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: concept-article
-ms.date: 01/30/2023
+ms.topic: how-to
+ms.date: 07/28/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields, WHSRFMenuItem, WHSPackProfile, WHSWorker, WHSPack, WHSMobileDeviceContainerPackingPolicy
@@ -43,7 +43,33 @@ The process requires the following information (at a minimum):
 - **Packing location** – This value identifies the location where the container is created. You can assign a default value for each worker by going to **Warehouse management \> Setup \> Worker** and/or by setting up a [detour](warehouse-app-detours.md) to look up the value.
 - **Shipment ID** or **License plate ID** – These values are used to validate which inventory items should be packed. The process depends on the mobile device menu item's **[Packing policy ID](warehouse-app-pack-containers-policies.md)** setting.
 
+### Record and view container line packing details (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.45 GA -->
+
+When workers use the Warehouse Management mobile app to pack items into containers, the system can record container line packing details (such as worker IDs and packed quantities). This functionality can be useful, for example, if you have multiple workers processing a container line and you want to keep track of who did what.
+
 > [!NOTE]
+> The functionality described in this section requires Supply Chain Management version 10.0.45 or later.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+To enable this functionality, follow these steps:
+
+1. Go to **Warehouse management** \> **Setup** \>  **Warehouse management parameters**.
+1. Open the **Packing** tab.
+1. Set **Create container line packing details** to *Yes*.
+
+To view the logs created when **Create container line packing details** is set to *Yes*, follow these steps:
+
+1. Go to **Warehouse management** \> **Packing and containerization** \> **Containers**.
+1. On the upper pane, select the container  you want to inspect.
+1. Do one of the following steps:
+    - To view details for all the container lines in the selected container, select **Container lines packing details** on the Action Pane.
+    - To view details for a single container line, select the line in the lower pane and then select **Container line packing details** on the lower pane toolbar.
+
+> [!IMPORTANT]
 > A default container packing policy must be assigned to each relevant worker on the **Worker** page (**Warehouse management \> Setup \> Worker**).
 
 ### Create containers
@@ -55,7 +81,12 @@ To create containers by using the Warehouse Management mobile app, workers must 
 - **Container type ID** – This value is used to identify the maximum physical volume and maximum weight capacity of the container.
 - **Container ID** – This value is a unique number that identifies the shipping container.
 
-> [!NOTE]
+In Supply Chain Management version 10.0.45 and later, the system records the ID of the worker who created the container. To view this information, go to **Warehouse management** \> **Packing and containerization** \> **Containers** and inspect the **Created by** field.
+
+> [!TIP]
+> The **Created by** field might not be shown. If you don't see it on your system, then you can add it by opening the **Grid options** menu (shown as a button with three dots at the right side of the grid heading) and selecting **Insert columns** .
+
+> [!IMPORTANT]
 > A default container packing policy must be assigned to each relevant worker on the **Worker** page (**Warehouse management \> Setup \> Worker**).
 
 ### Close containers
@@ -64,6 +95,11 @@ Workers can trigger the *Container closing* process directly, by using a Warehou
 
 - **Container ID** – The container that is being closed.
 - **Weight** – The weight of the container. The system assigns a default value, based on the item master weight definition.
+
+In Supply Chain Management version 10.0.45 and later, the system records the ID of the worker who closed the container. To view this information, go to **Warehouse management** \> **Packing and containerization** \> **Containers** and inspect the **Closed by** field.
+
+> [!TIP]
+> The **Close by** field might not be shown. If you don't see it on your system, then you can add it by opening the **Grid options** menu (shown as a button with three dots at the right side of the grid heading) and selecting **Insert columns** .
 
 ## Supported and unsupported processes
 
