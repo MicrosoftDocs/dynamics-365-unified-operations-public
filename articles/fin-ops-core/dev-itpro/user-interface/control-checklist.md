@@ -3,7 +3,7 @@ title: Control checklist
 description: Learn about control checklists, including overviews for various checklist types, including classes, resource, and X++ runtime.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: checklist
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak
 audience: Developer

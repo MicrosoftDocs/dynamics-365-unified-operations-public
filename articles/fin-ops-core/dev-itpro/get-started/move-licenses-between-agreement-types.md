@@ -3,7 +3,7 @@ title: Move licenses between agreement types
 description: Learn about how to move licenses between agreement types, including outlines on default and add-on environments.
 author: markusotte08
 ms.author: maotte
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/26/2022
 ms.reviewer: johnmichalak
 audience: IT Pro

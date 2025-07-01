@@ -1,13 +1,14 @@
---- 
+---
 title: Enter and compare RFQ bids and award contracts
 description: Learn how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: how-to
-ms.date: 07/09/2019
-ms.custom:
-ms.reviewer: kamaybac 
+ms.reviewer: kamaybac
 ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Enter and compare RFQ bids and award contracts
@@ -23,7 +24,7 @@ You can enter the bid as either a vendor or a procurement professional. Learn mo
 ## Enter a reply as a vendor
 
 1. Go to **Vendor collaboration \> Workspaces \> Vendor bidding**.
-2. In the **New bid invitations** list, find an RFQ that was just sent. Select the RFQ to review what was requested.
+2. In the **New bid invitations** list, find an RFQ that was recently sent. Select the RFQ to review what was requested.
 3. Select **RFQ attachments** to review any attachments that have been added.
 4. Select **Bid** to make the fields editable. Notice that the **Bid progress** field is set to **Vendor is updating**.
 5. On the header and lines, enter the values from the bid reply.
@@ -35,7 +36,7 @@ You can enter the bid as either a vendor or a procurement professional. Learn mo
 11. Select **Reset from RFQ** only if you must reset the values that have been entered to the original RFQ values.
 12. You can save the bid at any time and do additional processing later, provided that the expiration date and time haven't passed. In this case, you can find the bid in the **Bids in progress** list in the **Vendor bidding** workspace.
 13. When the bid is ready to be sent, select **Submit**. If you don't want to bid, select **Decline**. Submitted bids are available in the **Submitted bids** list in the **Vendor bidding** workspace.  
-14. After the bid is submitted, you can recall it at any time before the expiration date and time. Note that when a bid is recalled, it isn't treated as submitted. When the bid is accepted or rejected by the procurement department, it appears in either the **Awarded bids** or **Lost bids** list in the **Vendor bidding** workspace.  
+14. After the bid is submitted, you can recall it at any time before the expiration date and time. When a bid is recalled, it isn't treated as submitted. When the bid is accepted or rejected by the procurement department, it appears in either the **Awarded bids** or **Lost bids** list in the **Vendor bidding** workspace.  
 
 ## Enter a reply from a vendor as a procurement professional
 
@@ -94,6 +95,5 @@ You can enter the bid as either a vendor or a procurement professional. Learn mo
 ## View the purchase order that is generated
 
 On the Action Pane, on the **General** tab, select **Purchase order**. The page that appears shows the purchase order that was generated when you accepted the bid.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

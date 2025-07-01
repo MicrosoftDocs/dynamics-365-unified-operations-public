@@ -743,7 +743,7 @@ The structure of the PriceLookupContext class is shown in the following example.
 </details>
 
 > [!NOTE]
-> - There isn't a customer group specified in the PriceLookupHeaderContext paramter becuase it had be inferred by the customer account number.
+> - There isn't a customer group specified in the PriceLookupHeaderContext parameter becuase it had be inferred by the customer account number.
 > - The ChannelId can be specified in the PriceLookupHeaderContext parameter. If it isn't specified, the ChannelId from the request context (the current channel when using Store Commerce) is used.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

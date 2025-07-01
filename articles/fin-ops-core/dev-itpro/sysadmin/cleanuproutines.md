@@ -4,7 +4,7 @@ description: Learn about cleanup routines in Microsoft Dynamics 365 Finance and 
 author: dvliegen
 ms.author: dvliegen
 ms.topic: article
-ms.date: 07/10/2024
+ms.date: 03/14/2025
 ms.custom: 
 ms.reviewer: johnmichalak 
 audience: IT Pro
@@ -130,5 +130,11 @@ The following table describes the cleanup jobs that are available for the Invent
 | Path | Description |
 |------|-------------|
 | Master planning \> Master planning \> Maintain plans \> Plan version cleanup | Usually, this cleanup is done automatically. However, automatic cleanup sometimes malfunctions, and orphan data remains in the system. This orphan data slows down queries and causes the database size to grow. We recommend that you do a preventive run one time per month, when master resource planning (MRP) isn't running. |
+
+## Project management and accounting
+
+| Path | Description |
+|------|-------------|
+| Project management and accounting \> Periodic \> Delete project journals | <p>This cleanup routine deletes project hour fee, and beginning balance journals that have been posted. When you delete a posted ledger journal, all information that is related to the original transaction is removed.</p><p>**Note:** You should delete this information only if you're sure that you won't have to reverse the ledger journal transactions.</p> |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -6,7 +6,7 @@ description: This article describes the templates that are available for Human R
 author: twheeloc
 ms.author: twheeloc
 ms.reviewer: twheeloc
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 5/25/2023
 ms.custom:
 

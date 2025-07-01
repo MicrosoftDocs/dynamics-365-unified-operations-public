@@ -3,7 +3,7 @@ title: Supported electronic invoicing countries and regions
 description: This article describes for which countries and regions electronic invoicing is supported or planned in Microsoft Dynamics 365 Finance.
 author: ilikond
 ms.date: 02/25/2025
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -41,7 +41,7 @@ The next section contains detailed information about out-of-box e-invoicing func
 | Argentina | Generation of electronic documents in the predefined XML formats and submission through WebServices to AFIP. | Planned for 2025 release wave 1 |
 | Australia | <p>Generation of electronic invoices for sales and project invoices and credit notes in the Australian extension of the **PEPPOL** format.</p><p>Learn more: [Electronic invoicing for Australia](../apac/gs-apac-aus-nzl-electronic-invoices.md)</p> | Available |
 | Austria | Generation of electronic invoices for sales and project invoices and credit notes in the **PEPPOL** format. | Available |
-| Belgium | Generation of electronic invoices for sales and project invoices and credit notes in the **PEPPOL** format. | <ul><li>Available</li><li>B2B end-to-end communication implementation is planned for 2025 release wave 1</li></ul> |
+| Belgium | <p>Generation of electronic invoices for sales and project invoices and credit notes in the **PEPPOL** format and submission to PEPPOL Delivery Network via the "last-mile" third-party connector. Import of vendor electronic invoices.</p><p>Learn more: [Electronic invoicing for Belgium](../belgium/emea-bel-e-invoices.md)</p> | Available |
 | Bolivia | Generation of electronic invoices with the right to fiscal credit, invoices without the right to fiscal credit, and adjustment documents in XML format. | Planned for 2025 release wave 1 |
 | Brazil | <p>Generation and direct submission to the authorities of fiscal documents in the **NF-e** and **NFS-e** formats. Import of incoming documents from the authorities into Dynamics 365 Finance.</p><p>Learn more: [NF-e process overview](../brazil/latam-bra-nf-e-process.md)</p> | Available |
 | Chile | <p>Generation of electronic tax documents (DTE) in country-specific format for invoices, debit notes, credit notes, export invoices, export debit notes, export credit notes, and packing slips. Import of vendor electronic invoices (inbound flow).</p><p>Learn more:</p><ul><li>[Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md)</li><li>[Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md)</li> | Available |

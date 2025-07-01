@@ -3,7 +3,7 @@ title: Tax integration overview
 description: Access an overview and introduces the flow of Tax integration, including an overview on the TaxIntegrationFacade class, which realizes the flow of tax integration.
 author: Qiuchen-Ren
 ms.author: qire
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/25/2022
 ms.custom: bap-template
 ms.reviewer: johnmichalak

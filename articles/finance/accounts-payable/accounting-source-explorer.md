@@ -3,7 +3,7 @@ title: Accounting source explorer
 description: Learn about the Accounting source explorer page, which you can use for detailed analysis of the source information behind general ledger accounting entries.
 author: RyanCCarlson2
 ms.author: rcarlson
-ms.topic: article
+ms.topic: concept-article
 ms.date: 12/13/2024
 ms.reviewer: twheeloc
 audience: Application User

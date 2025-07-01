@@ -3,7 +3,7 @@ title: Reprint and void wave labels
 description: Learn how to void and reprint existing wave labels, including outlines on reprinting labels from the web client and reprinting labels from the warehousing app.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/09/2020
 ms.custom:
 ms.reviewer: kamaybac

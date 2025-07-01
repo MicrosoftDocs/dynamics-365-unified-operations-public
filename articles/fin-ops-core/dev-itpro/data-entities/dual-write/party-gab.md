@@ -3,7 +3,7 @@ title: Party and global address book
 description: Learn about the Party and global address book functionality of dual-write, including a table that describes various row types for contacts.
 author: RamaKrishnamoorthy
 ms.author: ramasri
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/05/2024
 ms.reviewer: twheeloc
 audience: IT Pro
@@ -297,9 +297,10 @@ A postal address or an electronic address can serve more than one purpose. For e
 
 + In finance and operations apps, when you create a customer along with address and save it, the address might not synchronize to the **Address** table. This is because of a dual-write platform sequencing issue. As a workaround, create the customer first and save it. Then add the address.
 + In finance and operations apps, when a customer record has a primary address and you create a new contact for that customer, then the contact record inherits a primary address from the associated customer record. This happens for vendor contact, too. Dataverse doesn't currently support this behavior. If dual-write is enabled, a customer contacts that is inherited with a primary address from the finance and operations app is synchronized to Dataverse along with its address.
-+ In finance and operations apps, you can create a contact record from the **Add Contact** form. When you try to create a new contact from the **View Contact** form, the action fails. This is a known issue.
++ In finance and operations apps, you can create a contact record from the **Add Contact** page. When you try to create a new contact from the **View Contact** page, the action fails. This is a known issue.
 
     ![Known issue with Add Contact.](media/party-gab-contact-issue.png)
-
-+ **Initial sync** does not support the **Available From** and **Available To** time fields on **ContactForParty**, because DIXF converts the value into a string instead of an integer. The conversion triggers the error `Cannot convert the literal '<say 08:00:00>' to the expected type edm.int32`.
-+ You can't enter a forward-dated postal address using a finance and operations app with dual-write, because Dataverse does not support date effectivity. If you enter a future-dated postal address using a finance and operations app, it synchronizes to Dataverse fully and you will see the address on the user interface immediately. Any updates to this record will result in an error as it is future-dated and not current in the finance and operations app.
+  
++ Finance and operations apps provides lookups for County/Region, Zip code, City, State, and County. Customer engagement apps uses free text. 
++ **Initial sync** doesn't support the **Available From** and **Available To** time fields on **ContactForParty**, because DIXF converts the value into a string instead of an integer. The conversion triggers the error `Cannot convert the literal '<say 08:00:00>' to the expected type edm.int32`.
++ You can't enter a forward-dated postal address using a finance and operations app with dual-write, because Dataverse doesn't support date effectivity. If you enter a future-dated postal address using a finance and operations app, it synchronizes to Dataverse fully and you will see the address on the user interface immediately. Any updates to this record results in an error as it is future-dated and not current in the finance and operations app.

@@ -3,7 +3,7 @@ title: Create checks that have Blank status
 description: Learn about how to create blank checks for a bank account, including a step-by-step process that details creating a blank check, which can't be deleted or reused.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/24/2023
 ms.reviewer: twheeloc
 audience: Application User

@@ -5,7 +5,7 @@ title: Submit a leave request to workflow
 description: In Microsoft Dynamics 365 Human Resources, you can use the MyLeaveRequests submit() application programming interface (API) to submit a leave request to workflow.
 author: twheeloc
 ms.date: 07/09/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: 

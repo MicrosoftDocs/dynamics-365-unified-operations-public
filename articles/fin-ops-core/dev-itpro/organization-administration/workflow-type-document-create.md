@@ -3,7 +3,7 @@ title: Create a workflow document class
 description: Learn about how to create a workflow document class, including an overview on how to add a calculated field to the workflow document class.
 author: josaw1
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/19/2019
 ms.reviewer: twheeloc
 audience: Developer, IT Pro

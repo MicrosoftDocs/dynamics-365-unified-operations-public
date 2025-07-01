@@ -6,7 +6,7 @@ ms.author: shwgarg
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: overview
-ms.date: 01/31/2025
+ms.date: 03/18/2025
 ms.custom: 
   - bap-template
 ---
@@ -38,24 +38,9 @@ The preceding video ([Change management capabilities in Dynamics 365 Supply Chai
 
 To use engineering change management, both the BOM number sequence and the formula number sequence (if you're using formulas) must be set to *Automatic* on the **Number sequences** page.
 
-## Turn on the engineering change management features for your system
+## Turn the required configuration keys on or off
 
-Before you can use engineering change management, you must enable both the *Engineering Change Management* feature and its configuration keys. If you also want to track the version dimension of products in transactions (optional), you must also enable both the *Product version dimension* feature and its configuration key. After those prerequisites are set up as required, you'll be able to turn on additional optional features for engineering change management.
-
-As of Supply Chain Management version 10.0.36, both the *Engineering Change Management* and *Product dimension version* features are mandatory and can't be turned off. The engineering change management license keys are also turned on by default in version 10.0.36 and later, but you can turn them off if you don't use the feature. The product version dimension key is turned on by default for new systems, but it remains turned off by default for systems that have been upgraded from versions earlier than 10.0.36.
-
-### Turn the basic engineering change management features on or off
-
-To turn the basic engineering change management features on or off, follow these steps. As of Supply Chain Management version 10.0.25, the *Engineering Change Management* feature is turned on by default. As of Supply Chain Management version 10.0.36, both the *Engineering Change Management* and *Product dimension version* features are mandatory and can't be turned off.
-
-1. Go to the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-1. Check for updates.
-1. Turn the feature named *Engineering Change Management* on or off, as needed.
-1. If you want to track the [version dimension](../pim/product-dimensions.md#version-dim) of products in transactions (optional), turn on the feature that is named *Product dimension version*.
-
-### Turn the required configuration keys on or off
-
-Next, turn on the configuration keys by following these steps. As of Supply Chain Management version 10.0.36, all **Engineering Change Management** keys are turned on by default, but the **Product dimension - Version** key will only be turned on by default for new systems (not for older systems that are upgraded to version 10.0.36 or later).
+As of Supply Chain Management version 10.0.36, all **Engineering Change Management** keys are turned on by default, but the **Product dimension - Version** key will only be turned on by default for new systems (not for older systems that are upgraded to version 10.0.36 or later). If you need to turn any of these keys on or off, follow these steps.
 
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.
@@ -75,18 +60,5 @@ Next, turn on the configuration keys by following these steps. As of Supply Chai
 1. The database must be synchronized to ensure that the configuration keys are properly updated to reflect your changes. If you changed any of the key settings, do one of the following steps, depending on which type of environment you're working on:
     - **For Tier 1 (development) environments**: Open your project in Microsoft Visual Studio and then select **Dynamics 365 \> Synchronize database \> Synchronize**.
     - **For Tier 2 (and higher) environments**: The database syncs automatically after you put the environment in and out of maintenance mode, so you can skip this step.
-
-### Turn on additional engineering change management features
-
-After you turn on the basic engineering change management features and enable their configuration keys, several additional and optional engineering change management features are added to [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Each of those features is listed under the **Engineering change management** module. The following table describes each optional feature and provides links for more information.
-
-| Feature name in feature management | Description | Feature state |
-|---|---|---|
-| Enable change management on existing products | <p>This feature lets you convert existing products to engineering products so that you can start to manage them by using engineering change management.</p><p>Learn more in [Enable change management on existing products](change-management-existing-products.md).</p> | On by default as of version 10.0.25. <br><br>Mandatory as of version 10.0.32. |
-| Engineering notifications for production | <p>When a product is changed in engineering, it might be important to notify production about those changes. In that way, production workers can take appropriate action, such as component substitution, bill of materials (BOM) replacement, or route replacement. This feature lets you notify production about changes to products that are being produced.</p><p>Learn more in [Manage changes to engineering products](engineering-change-management.md).</p> |  On by default as of version 10.0.25. <br><br>Mandatory as of version 10.0.32. |
-| Improved attribute inheritance for Engineering Change Management | <p>This feature simplifies the management of attributes for finished goods or intermediate items. When this feature is turned on, it's easier to identify all the attributes that belong to an item, and you can select the attributes that should be propagated from that item to its parent item. This feature is useful when, for example, one component of a finished good is fragile, toxic, or flammable, because you can easily identify the fragile, toxic, or flammable attribute and propagate it to the finished good.</p><p>Learn more in [Engineering attributes and engineering attribute search](engineering-attributes-and-search.md).</p> |  On by default as of version 10.0.25. <br><br>Mandatory as of version 10.0.32. |
-| Product readiness checks | <p>This feature lets you set up readiness checks for standard (non-engineering) products. Use product readiness checks to ensure that each product is fully defined and all the required policies are configured before the product is made available and used in transactions. If you disable this feature after you've used it for a while, all existing readiness checks for standard products will be deleted.</p><p>Learn more in [Product readiness](product-readiness.md).</p> |  On by default as of version 10.0.25. <br><br>Mandatory as of version 10.0.32. |
-| Manage changes to formulas and their ingredients | <p>This feature lets you track changes to formula ingredients, co-products, and by-products.</p><p>Learn more in [Manage changes in formulas and their ingredients](manage-formula-changes.md).</p> |  On by default as of version 10.0.25.<br><br>Mandatory as of version 10.0.36. |
-| Variant generation for engineering products | <p>This feature lets you generate variants for engineering products, based on available dimension values.</p><p>Learn more in [Generate variants for engineering products](engineering-variants.md).</p> |  On by default as of version 10.0.25.<br><br>Mandatory as of version 10.0.32. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

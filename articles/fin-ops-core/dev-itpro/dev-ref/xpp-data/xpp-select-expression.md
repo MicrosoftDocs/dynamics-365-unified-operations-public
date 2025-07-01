@@ -3,7 +3,7 @@ title: Write select statements as expressions
 description: Learn how you can use a select statement as an expression including X++ expressions and examples for select statements on fields.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/16/2020
 ms.reviewer: johnmichalak
 audience: Developer

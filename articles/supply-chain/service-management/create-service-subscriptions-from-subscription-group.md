@@ -3,7 +3,7 @@ title: Create service subscriptions from a subscription group
 description: Learn how you can create service subscriptions from a subscription group, including a step-by-step process for creating service subscriptions. 
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac 

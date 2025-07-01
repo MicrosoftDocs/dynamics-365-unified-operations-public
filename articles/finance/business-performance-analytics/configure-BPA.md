@@ -3,7 +3,7 @@ title: What are the prerequisites to installing Business performance analytics
 description: This article describes how to complete the prerequisites for Business performance analytics, including outlines on availability, and systema and version requirements.
 author: jinniew
 ms.author: jiwo
-ms.topic: conceptual
+ms.topic: article
 ms.date: 02/03/2025
 
 ms.custom:
@@ -16,6 +16,10 @@ audience: Application User
 ## Before you install
 
 Business performance analytics is generally available in public cloud the following countries and regions: APAC, Australia, Canada, EMEA, India, Japan, North America, Norway, South Africa, South America, Switzerland, United Arab Emirates, and United Kingdom.
+
+> [!NOTE]
+> Business performance analytics is currently unavailable in France due to regulatory limitations. The initial release is only available in English (EN-US). Additional language support will be introduced in future release waves. You can stay informed throught our monthly customer advisory board (https://aka.ms/BPACAB).
+
 
 ### System requirements
 

@@ -3,7 +3,7 @@ title: Configure system parameters to report sales tax books for Italy
 description: Learn how to configure system parameters to report sales tax books for legal entities in Italy, including an outline on the address of the legal entity.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/04/2024
 ms.reviewer: johnmichalak
 audience: Application User

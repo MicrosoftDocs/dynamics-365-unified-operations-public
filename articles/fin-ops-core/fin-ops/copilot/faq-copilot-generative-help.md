@@ -7,7 +7,7 @@ ms.collection:
 ms.custom:
   - responsible-ai-faqs
   - copilot-learning-hub
-ms.topic: article
+ms.topic: faq
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
@@ -32,6 +32,8 @@ The feature is built on top of *Generative Answers* and inherits the [Responsibl
 The capabilities of *Generative help and guidance with Copilot* include providing real-time, context-aware assistance within finance and operations apps. It simplifies complex tasks by interpreting user queries and pulling relevant information from an extensive pool of public documentation.
 
 Future enhancements might allow direct navigation and suggest actions within the application to further streamline user tasks.
+
+[!INCLUDE[rai-feedback-mechanism.md](../../../includes/rai-feedback-mechanism.md)]
 
 ## What is the intended use of Generative help and guidance with Copilot?
 

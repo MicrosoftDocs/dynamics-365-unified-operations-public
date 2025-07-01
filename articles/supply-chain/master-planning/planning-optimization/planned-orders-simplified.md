@@ -1,8 +1,8 @@
 ---
 title: Planned orders simplified
 description: Learn how you can view, manage, and firm planned orders by using the Planned orders simplified page, including an outline on toggling this feature.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 01/24/2022
 ms.reviewer: kamaybac

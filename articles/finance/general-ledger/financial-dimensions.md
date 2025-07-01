@@ -4,7 +4,7 @@ description: Learn about the various types of financial dimensions and how they'
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 03/07/2024
+ms.date: 05/20/2025
 ms.custom: evergreen
 ms.reviewer: twheeloc
 audience: Application User

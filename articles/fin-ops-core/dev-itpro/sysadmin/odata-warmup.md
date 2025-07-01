@@ -3,7 +3,7 @@ title: Build OData metadata cache when the AOS starts
 description: Learn about how to build an OData metadata cache when the AOS starts, when your metadata cache needs to be quickly built.
 author: hasaid
 ms.author: hasaid
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/25/2020
 ms.custom: 
 ms.reviewer: johnmichalak

@@ -1,10 +1,10 @@
 ---
 title: Dual-write FAQ
 description: Read answers to frequently asked questions about dual-write including questions about dual-write setup, administration, management, and mapping concepts between apps.
-author: sericks007
+author: twheeloc
 ms.author: ramasri
-ms.topic: article
-ms.date: 05/20/2022
+ms.topic: faq
+ms.date: 06/2/2025
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -15,8 +15,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Dual-write FAQ
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 This article lists frequently asked questions about dual-write and provides brief answers to help you quickly get the information that you require.
 
@@ -39,6 +37,9 @@ You must have two Microsoft Entra applications set up for the finance and operat
 End users who are configuring dual-write mappings should have System Administrator security roles assigned in both Dataverse and finance and operations environments.
 
 Dual-write mappings can be accessed by multiple users, as long as all the users and environments belong to a single tenant, and the user has the required security and licenses assignment.
+
+> [NOTE!]
+> Users assigned in Entra Id from an outside tenant can't be used. 
 
 ### I have multiple legal entities. Some of my maps are legal table–specific or valid for only some of the legal entities. What is the best way to address this requirement? Can I apply a filter such as Company = USMF to address it?
 

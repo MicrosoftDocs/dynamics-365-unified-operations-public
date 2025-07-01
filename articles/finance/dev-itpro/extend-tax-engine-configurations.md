@@ -3,7 +3,7 @@ title: Extend tax engine configurations
 description: Learn about extending tax engine configurations, including prerequisites and a table that provides full names for various tax terms.
 author: Kai-Cloud
 ms.author: kailiang
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/24/2024
 ms.reviewer: twheeloc
 audience: IT Pro 

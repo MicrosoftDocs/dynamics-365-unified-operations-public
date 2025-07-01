@@ -3,7 +3,7 @@ title: Upgrade to the party and global address book model
 description: Learn how to upgrade dual-write data to the party and global address book model, including a table outlining the purpose of various file names.
 author: RamaKrishnamoorthy
 ms.author: ramasri
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 02/22/2025
 ms.reviewer: twheeloc
 audience: IT Pro
@@ -14,8 +14,6 @@ ms.search.validFrom: 2021-03-31
 # Upgrade to the party and global address book model
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 The [Microsoft Azure Data Factory templates](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema) help you upgrade the following existing data in dual-write to the party and global address book model: data in the **Account**, **Contact**, and **Vendor** tables, and postal and electronic addresses.
 

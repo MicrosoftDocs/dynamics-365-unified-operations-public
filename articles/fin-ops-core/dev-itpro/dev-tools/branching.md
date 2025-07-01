@@ -3,7 +3,7 @@ title: Branching overview
 description: Learn about branching strategy considerations for X++ development, including considerations, branching criteria, and guidance.
 author: skaue-ms
 ms.author: toskaue
-ms.topic: article
+ms.topic: concept-article
 ms.date: 01/04/2023
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

@@ -6,7 +6,7 @@ ms.author: shwgarg
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 ms.topic: how-to
-ms.date: 01/31/2025
+ms.date: 03/18/2025
 ms.custom: 
   - bap-template
 ---
@@ -75,6 +75,8 @@ As a standard product dimension, version will behave similarly to the existing p
 
 ### <a name="enable-version-dim"></a>Turn on the version dimension
 
+As of Supply Chain Management version 10.0.36, the version dimension is turned on by default for new systems, but not for older systems that are upgraded to version 10.0.36 or later. If you need to turn on the version dimension for your system, then follow the advice and procedures in this section.
+
 #### Before you turn on the version dimension
 
 When you turn on the version dimension, some functionality could become broken or stop working as expected if you've installed other solutions that add customizations to the inventory dimensions. For the version dimension to be fully functional, you might have to update those solutions so that they include the version dimension in their references to the inventory dimensions.
@@ -97,12 +99,10 @@ When you're testing your solutions for compatibility with the version dimension,
 1. **Maps:** If any maps use the inventory dimensions, the corresponding relation mapping to these maps must be updated so that they include the version dimension. In the extended model or table extensions, look out for tables where the fields include inventory dimensions.
 1. **Microsoft Dynamics 365 Commerce functionality:** After it's turned on, the version dimension will appear throughout the Commerce-specific code in Dynamics 365 Supply Chain Management. However, the version dimension isn't yet supported by the Commerce channel database or in the Point of Sale (POS) or e-commerce applications. These Commerce-specific applications don't support users selling/shipping or returning/receiving inventory by version dimension. Inventory availability lookup functions won't discern inventory by version dimension in Commerce apps. This behavior resembles the current behavior of the config dimension throughout Commerce.
 
-#### Turn on the version dimension
+#### Turn on the version dimension configuration key
 
-Before you can use the version dimension, it must be turned on for your system. This task requires admin permissions.
+Before you can use the version dimension, its configuration key must be turned on for your system. As of Supply Chain Management version 10.0.36, the key is turned on by default for new systems, but not for older systems that are upgraded to version 10.0.36 or later. If you need to turn the version dimension on or off, follow these steps. This task requires admin permissions.
 
-1. Go to **System administration \> Workspaces \> Feature management**.
-1. Turn on the feature that is named *Product dimension version*. (As of Supply Chain Management 10.0.36, this feature is mandatory and can't be turned off.) Learn more in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Put your system into [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.
 1. On the **Configuration keys** tab, expand **Trade**, and select the check box for **Product dimension - Version**.

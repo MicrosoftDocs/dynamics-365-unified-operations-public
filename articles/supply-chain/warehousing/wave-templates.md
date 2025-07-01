@@ -3,11 +3,12 @@ title: Wave templates
 description: Learn how to set up the criteria that determine whether waves are processed manually or automatically, including an outline on settings for wave templates.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: how-to
-ms.date: 01/29/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Wave templates
@@ -87,7 +88,7 @@ To set up a wave template, follow these steps:
 
 1. Set **Wave notification policy** to the policy you want to use for generating notifications related to waves that use this template. For an example of a wave notification policy, see [Wave execution notifications](wave-execution-notifications.md).
 
-1. On the **Methods** FastTab, the **Selected methods** pane lists the methods for the selected wave template. The wave methods perform the actions that are created by the template, such creating or distributing work. These actions are also referred to as wave steps. Wave methods are predefined for each type of wave template. You cannot remove the predefined wave methods. However, you can rearrange the order of the methods and add additional methods. For example, if you’re creating a wave template for shipping, you can add methods for replenishment and containerization. Wave containerization can be added to a sequence of wave methods to define the containerization of the lines processed in a wave template. To add an additional method, do the following:
+1. On the **Methods** FastTab, the **Selected methods** pane lists the methods for the selected wave template. The wave methods perform the actions that are created by the template, such creating or distributing work. These actions are also referred to as wave steps. Wave methods are predefined for each type of wave template. You can't remove the predefined wave methods. However, you can rearrange the order of the methods and add additional methods. For example, if you’re creating a wave template for shipping, you can add methods for replenishment and containerization. Wave containerization can be added to a sequence of wave methods to define the containerization of the lines processed in a wave template. To add an additional method, do the following:
 
     - Select a method on the **Remaining methods** pane, and then select the **Left** arrow to add it to the **Selected methods** pane.
     - To change the sequence, select a method, and then select **Up** or **Down** arrows.

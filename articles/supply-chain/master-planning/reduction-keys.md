@@ -1,10 +1,10 @@
 ---
 title: Forecast reduction keys
 description: Learn how to set up a reduction key, including key settings and the results of each. You can use a reduction key to define how to reduce forecast requirements.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.date: 04/15/2020
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: kamaybac
 ms.search.form: ReqPlanSched, ReqReduceKeyDefaultDataWizard, ReqReduceKey
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2

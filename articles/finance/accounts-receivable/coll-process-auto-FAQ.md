@@ -3,7 +3,7 @@ title: Collections process automation FAQ
 description: Access answers to some frequently asked questions about collections process automation, including questions about automation setup.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: conceptual
+ms.topic: faq
 ms.date: 01/17/2025
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot 

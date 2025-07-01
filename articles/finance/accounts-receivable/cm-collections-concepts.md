@@ -3,7 +3,7 @@ title: Collections management key concepts
 description: Learn about key concepts for collections management, including overviews on customer aging snapshots, collections customer pools, and collections pages.
 author: JodiChristiansen
 ms.author: kweekley
-ms.topic: article
+ms.topic: concept-article
 ms.date: 11/27/2019
 ms.custom:   
 ms.reviewer: twheeloc

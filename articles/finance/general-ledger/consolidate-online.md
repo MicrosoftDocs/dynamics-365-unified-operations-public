@@ -4,7 +4,7 @@ description: Learn about online financial consolidations that use templates in G
 author: jchrist
 ms.author: jchrist
 ms.topic: article
-ms.date: 04/22/2024
+ms.date: 05/06/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -28,10 +28,7 @@ After the consolidation templates are set up, use the **Consolidate online** pag
 1. On the **Consolidate online** page, on the Action Pane, select **Perform consolidation**.
 1. Use the **From** and **To** fields to specify the date range that you want to use for the consolidation.
 1. In the **Template** field, select the consolidation template.
-
-    > [!NOTE]
-    > We don't recommend that you set the **Rebuild balances during consolidation** option to **Yes**. Instead, rebuild balances as a separate batch job.
-
+2. To rebuild the account balances after the consolidation process is complete, set the **Rebuild balances during consolidation process** to **Yes**. After running the consolidation process, it's necessary to perform a **Rebuild balances** operation to ensure the **Trial balance inquiry** reflects accurate and up-to-date balances. When this option is set to **Yes**, the rebuild process is optimized by limiting it to the specified consolidation period using the defined **From date** and **To date**. If this option is set to **No** and the rebuild process is scheduled separately as a batch job, it's important that the **From date** and **To date** used in the batch job matches those used during the consolidation process. This alignment results in account balances that are consistent and accurate. 
 1. By default, the **Description** field is set to the template name, but you can edit the value.
 1. To run the consolidation as a batch job, set the **Batch process** option to **Yes**, and update the fields as required.
 1. Select **OK** to start the consolidation process.

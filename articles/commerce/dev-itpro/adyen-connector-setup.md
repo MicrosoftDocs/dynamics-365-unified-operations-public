@@ -2,7 +2,7 @@
 title: Set up Dynamics 365 Payment Connector for Adyen
 description: This article describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 11/08/2024
+ms.date: 06/24/2025
 ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
@@ -42,7 +42,9 @@ In addition to the following instructions, you must also configure your Adyen ac
 
 #### Set up a processor for new credit cards
 
-To process payments across point of sale (POS) terminals, a call center, or Commerce, you must configure a new default payment processor for new credit cards. Follow these steps to configure a default payment processor.
+To process payments in Commerce headquarters via the Adyen connector, you must configure Adyen connector and set it up as the default payment processor for new credit cards. 
+
+To configure a default payment processor, follow these steps.
 
 1. Sign in to Commerce headquarters and go to **Accounts receivable \> Payments setup \> Payment services**.
 1. On the Action Pane, select **New**, and then, on the **Setup** tab, enter the following information.
@@ -247,9 +249,12 @@ To configure the Dynamics 365 Payment Connector for Adyen for call center paymen
 
 The configuration in headquarters at **Accounts receivable \> Payments setup \> Payment service** is the connector configuration used in the call center. 3D Secure (3DS) authentication isn't supported in call center. Digital wallet modern payment methods that require users to sign in are also not supported in call center, because call center agents are prohibited from collecting or using user passwords on behalf of customers.
 
-### Configure additional information for the connector
+> [!NOTE]
+> Merchants should train call center users to ensure credit and debit card information is only entered in the iFrame payment form to reduce the changes of sensitive data breach.
 
-To configure additional information for the connector in Commerce headquarters, follow these steps.
+### Configure the Adyen connector for online stores
+
+To configure the Adyen connector for online stores, follow these steps.
 
 1. Go to **Retail and Commerce \> Channels \> Online stores**.
 1. Select the online store to add the Dynamics 365 Payment Connector for Adyen.
@@ -284,6 +289,13 @@ To configure additional information for the connector in Commerce headquarters, 
     | Omitted payment methods | (*E-commerce and call center only*) Use this field to omit a payment method from the configuration where an iFrame element is rendered for payments as configured against the merchant account. Separate multiple values with semicolons. Strings used must match the label used in the Adyen portal. Some payment method's security criteria may interfere with the iFrame rendering, so it may be desirable to omit conflicting security criteria from the configuration.  | No | No | "applepay;googlepay" |
 
 1. On the Action Pane, select **Save**.
+
+> [!IMPORTANT]
+> - If 3D Secure (3DS) is enabled with Adyen, you must complete the following required steps if they apply to your setup.
+>      1. If you're using Commerce versions 10.0.40, 10.0.41, or 10.0.42, in Commerce headquarters, navigate to the online channel that's mapped to your e-commerce website.
+>      1. Expand the Adyen payment connector setup section, and in the **Custom settings** property of the payment connector, add the following key value pair: `{"D365PaymentsIsCheckoutThreeDS1AuthorisationBehaviorEnabled": "true"}`.
+>      1. Run the **1070** and **1110** distribution schedule jobs. Once these jobs are completed, you must contact Adyen customer support to set the **checkoutThreeDS1AuthorisationBehavior** parameter to **Manual** for your merchant account.
+> -  Starting with Commerce version 10.0.43, you don't need to update the **Custom settings** property in Commerce headquarters because it's enabled by default. However, you must still contact Adyen customer support to set the **checkoutThreeDS1AuthorisationBehavior** parameter to **Manual** for your merchant account. 
 
 ## Next steps
 

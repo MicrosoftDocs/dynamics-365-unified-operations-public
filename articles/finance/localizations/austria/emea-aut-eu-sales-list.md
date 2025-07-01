@@ -81,7 +81,7 @@ For more information, see [Download Electronic reporting configurations from Lif
     - In the **Country/region** field, select **AUT**.
     - In the **Country/region type** field, select **Domestic**.
 
-6. List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU** to show trade with those countries on the **EU sales list** page.
+6. List all the countries or regions that your company does business with. For each country/region that is part of the EU, in the **Country/region type** field, select **EU** to show trade with those countries/regions on the **EU sales list** page.
 
 ### Set up a sales tax authority
 

@@ -3,7 +3,7 @@ title: Make finished goods physically available before posting to journals
 description: When a manufactured item is reported as finished, it's registered as available for further physical processing, and one or more journals are posted.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/02/2022
 ms.reviewer: kamaybac
 ms.search.form: ProdParameters, JmgProdParameters, InventLocation, JmgMES3PMessageProcessorMessage

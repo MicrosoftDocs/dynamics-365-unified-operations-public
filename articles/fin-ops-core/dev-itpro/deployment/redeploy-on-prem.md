@@ -3,7 +3,7 @@ title: Redeploy on-premises environments
 description: Learn about redeploying an on-premises environment, including overviews on how to save and redeploy your configurations.
 author: faix
 ms.author: osfaixat
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 06/19/2024

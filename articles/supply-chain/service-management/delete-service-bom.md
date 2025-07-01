@@ -3,7 +3,7 @@ title: Delete a service BOM
 description: Access a procedure that shows how to delete a service BOM, including a step-by-step process for deleting service BOMs and additional resources.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac

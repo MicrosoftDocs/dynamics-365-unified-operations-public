@@ -1,8 +1,8 @@
 ---
 title: Arrival overview
 description: Learn about the Arrival overview feature, which is part of this feature and provides an overview of all items that are expected to arrive as incoming items.
-author: Weijiesa
-ms.author: weijiesa
+author: banluo-ms
+ms.author: banluo
 ms.topic: how-to
 ms.date: 05/27/2024
 ms.custom:

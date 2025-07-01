@@ -1,12 +1,14 @@
 ---
 title: "Fix the 'Not enough capacity could be found' scheduling engine error and finite capacity"
 description: Learn about the reasons and resolutions for the 'Production order %1 could not be scheduled. Not enough capacity could be found' scheduling engine error.
-author: t-benebo
-ms.author: benebotg
-ms.topic: article
-ms.date: 7/29/2021
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ProdTable
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Fix the "Not enough capacity could be found" scheduling engine error
@@ -137,6 +139,5 @@ Use the following procedure to check both the specified quantity and applicable 
 1. Select an operation from the list of the selected route operations.
 1. Select **Applicable resources** to open a dialog where you can view the applicable resources for the selected route operation.
 1. Open the **Resource load** tab. The **Quantity** field here shows the resource quantity required for the selected route operation. View and/or edit it as needed.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

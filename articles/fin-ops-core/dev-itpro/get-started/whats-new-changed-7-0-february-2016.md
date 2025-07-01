@@ -472,7 +472,7 @@ No new features have been added.
 </tr>
 <tr>
 <td>(EU) Configure reverse charge applicability rules.</td>
-<td>Reverse charge applicability rules are hard-coded for the domestic reverse charge scenario. The applicability threshold can be set up per item group. The functionality is available to Great Britain only.</td>
+<td>Reverse charge applicability rules are hard-coded for the domestic reverse charge scenario. The applicability threshold can be set up per item group. The functionality is available to the United Kingdom only.</td>
 <td>You can configure reverse charge applicability rules per document type (purchase/sales order, vendor invoice, free text invoice, etc.) and a reverse charge group that combines items, items groups, and purchase/sales categories. The applicability rules are date effective. You can also mark individual sales tax codes in sales tax groups as applicable for reverse charge. The sales invoice report is adjusted to represent details of the applied reverse charge. The functionality is available to all European countries/regions.</td>
 <td>This change unifies the configuration of the reverse charge applicability rules and supports the adoption of the domestic reverse charge regulations by European countries/regions.</td>
 </tr>

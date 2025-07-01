@@ -3,7 +3,7 @@ title: Upgrade data in development or demo environments
 description: Access instructions for upgrading your finance and operations application release, including an overview on selecting the correct data upgrade deployable package.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 11/01/2021
 ms.custom: 
 ms.reviewer: johnmichalak 

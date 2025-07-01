@@ -3,7 +3,7 @@ title: Connect to an external tax solution provider via the Universal Tax Rate A
 description: Learn about the overall scope of the Universal Tax Rate API feature for Tax calculation, including outlines on availability and versions.
 author: Kai-Cloud
 ms.author: kailiang
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/27/2024
 ms.custom: 
   - bap-template
@@ -110,7 +110,7 @@ For more information about supported countries/regions, contact your tax solutio
 - [Vertex](https://go.microsoft.com/fwlink/?linkid=2258342) (available)
 - [Avalara](https://go.microsoft.com/fwlink/?linkid=2258284) (planned)
 - [Wolters Kluwer](https://go.microsoft.com/fwlink/?linkid=2265094) (planned)
-- [Thomson Reuters](https://go.microsoft.com/fwlink/?linkid=2271303) (planned)
+- [Thomson Reuters](https://go.microsoft.com/fwlink/?linkid=2271303) (available)
 
 For additional details on release information, available solutions, and supported countries/regions, we recommend reaching out to your tax solution providers.
 

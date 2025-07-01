@@ -3,7 +3,7 @@ title: Warehouse parameters for wave processing
 description: Learn how to set up warehouse parameters for wave processing. You can use wave processing to group picking work for multiple work orders into a single wave.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/08/2021
 ms.custom:
 ms.reviewer: kamaybac
