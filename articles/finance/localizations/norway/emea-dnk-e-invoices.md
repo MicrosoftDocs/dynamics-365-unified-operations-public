@@ -16,7 +16,7 @@ ms.search.validFrom: 2021-01-01
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up and process electronic invoices in Denmark in Microsoft Dynamics 365 Finance.
+This article explains how to set up and process outgoing customers-related electronic invoices in Denmark in Microsoft Dynamics 365 Finance.
 
 ## Prerequisites
 
