@@ -3,7 +3,7 @@ title: Wave execution notifications
 description: Learn about wave execution notifications and explains how to set them up, including an outline on toggling the Wave execution notifications feature.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/09/2022
 ms.custom:
 ms.reviewer: kamaybac

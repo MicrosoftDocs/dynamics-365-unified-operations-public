@@ -3,7 +3,7 @@ title: SAF Inventory file - JPK_MAG
 description: This article explains how users in legal entities in Poland can generate a SAF Inventory file - JPK_MAG in XML format.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: reference
 ms.custom: 
   - bap-template
 ms.date: 11/26/2024

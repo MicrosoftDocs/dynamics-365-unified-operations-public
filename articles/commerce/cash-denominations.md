@@ -3,7 +3,7 @@ title: Configure cash denominations for the point of sale (POS)
 description: Cash denominations for notes and coins can be defined in the back office to be used by cashiers, sales associates, and managers at the store from within the POS.
 author: josaw1
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

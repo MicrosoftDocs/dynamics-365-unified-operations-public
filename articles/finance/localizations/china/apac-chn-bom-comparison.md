@@ -3,7 +3,7 @@ title: Bill of materials comparison for China
 description: A product might be accompanied by several versions of its bill of materials in its lifecycle, because many products are redesigned to meet changing requirements. 
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/27/2024

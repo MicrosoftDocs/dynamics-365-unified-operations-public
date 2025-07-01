@@ -3,7 +3,7 @@ title: Order promising
 description: Learn about order promising, which helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: conceptual
+ms.topic: article
 ms.date: 06/07/2024
 ms.custom: 
   - bap-template

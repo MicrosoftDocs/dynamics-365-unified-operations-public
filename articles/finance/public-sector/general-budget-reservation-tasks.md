@@ -3,7 +3,7 @@ title: Maintain general budget reservations
 description: Learn how to complete typical tasks for general budget reservations, including a step-by-step process on creating and encumbering a general budget reservation.
 author: AlexRenney
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/25/2019
 ms.custom:
 ms.reviewer: twheeloc

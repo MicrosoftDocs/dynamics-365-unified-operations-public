@@ -1,29 +1,28 @@
 ---
 title: VAT statement details for Lithuania
-description: Learn how to set up a VAT statement for legal entities in Lithuania, including outlines on setting up sales tax authorities and reporting codes.
+description: Learn how to set up a VAT statement for legal entities in Lithuania in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/17/2024
+ms.date: 05/29/2025
 ms.reviewer: johnmichalak
 ms.search.region: Lithuania
 ms.search.validFrom: 2016-05-31
 ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
-ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # VAT statement details for Lithuania
 
 [!include [banner](../../includes/banner.md)]
 
+This article explains how to set up a VAT statement for legal entities in Lithuania in Microsoft Dynamics 365 Finance.
+
 > [!NOTE]
 > This feature has been replaced with the value-added tax (VAT) declaration functionality. For more information, see [VAT declaration (Lithuania)](emea-ltu-vat-declaration-lithuania.md).
 
-This article explains how to set up a VAT statement for legal entities in Lithuania.
-
-This article includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Lithuania only. For more information about the setup of VAT statements, see [VAT reporting for Europe](../europe/emea-vat-reporting.md).
+This article includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Lithuania only. Learn more at [VAT reporting for Europe](../europe/emea-vat-reporting.md).
 
 ## Set up sales tax authorities
 To generate a VAT declaration in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. On the **Sales tax authorities** page, in the **Report layout** field, select **Default**. Select the same sales tax authority for the sales tax settlement period that will be used for sales tax codes.
@@ -58,11 +57,17 @@ Here is an example that show how you can use sales tax reporting codes to genera
 | 34                       | Sales VAT of goods that are purchased in the EU                       | E34                    |
 | 35                       | Deductible purchase and import VAT amount                             | E35                    |
 
-## Configure the Electronic reporting model and format for the report
-To review or change the VAT statement configuration, on the **Reporting configurations** page, select **VAT declaration model**. Then click **Designer** to review or change the model. To review or change the VAT statement format, on the **Reporting configurations** page, select **VAT declaration model**, and then click **Designer**.
+## Configure the electronic reporting model and format for the report
+
+To configure the electronic reporting model and format for the report, follow these steps.
+
+1. To review or change the VAT statement configuration, on the **Reporting configurations** page, select **VAT declaration model**. 
+1. Select **Designer** to review or change the model.
+1. To review or change the VAT statement format, on the **Reporting configurations** page, select **VAT declaration model**, and then select **Designer**.
 
 ## Generate a VAT statement
-To generate a VAT XML file, on the **Sales tax payments** page, select one or more vouchers, and then click **Export VAT XML file**.
+
+To generate a VAT XML file, on the **Sales tax payments** page, select one or more vouchers, and then select **Export VAT XML file**.
 
 
 

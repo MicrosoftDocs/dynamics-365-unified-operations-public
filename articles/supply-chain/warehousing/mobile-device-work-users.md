@@ -3,11 +3,12 @@ title: Mobile device user accounts
 description: Learn how to set up and manage warehouse worker records and their associated mobile device user accounts, which enable workers to sign in and use the warehouse app.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: how-to
-ms.date: 03/07/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Mobile device user accounts

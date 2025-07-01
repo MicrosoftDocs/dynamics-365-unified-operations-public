@@ -3,7 +3,7 @@ title: Electronic Invoicing service FAQ
 description: Access answers to frequently asked questions about Electronic invoicing, including questions about the importance of electronic invoicing.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: faq
 ms.date: 01/29/2024
 ms.reviewer: johnmichalak
 audience: Application User

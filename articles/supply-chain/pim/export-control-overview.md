@@ -3,11 +3,12 @@ title: Advanced export management overview
 description: Learn about the advanced export management solution that lets you manage, track, and check export compliance with an outline on jurisdictions.
 author: sgmsft
 ms.author: shwgarg
-ms.topic: overview
-ms.date: 08/29/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: 
+ms.topic: overview
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Advanced export management overview
@@ -55,7 +56,7 @@ Each export control jurisdiction defines a set of restrictions under which expor
 
 Often, restrictions are defined in terms of a commerce country/region chart, as in [this downloadable example from the US EAR](https://www.bis.doc.gov/index.php/documents/regulations-docs/2253-supplement-no-1-to-part-738-commerce-country-chart/file). In the example in the following illustration, a rule for the US EAR restrictions is defined based on the country/region chart. According to this rule, if an order or quotation contains any items that have an ECCN in the *MT* or *NS* control category, the system won't allow it to be sold to Angola. If a user tries to confirm an order or quotation that contains one of these items for shipment to Angola, they receive the following error message: "Action blocked by US EAR restrictions."
 
-[<img src="media/export-control-restriction.png" alt="Example rule for the US EAR restrictions." title="Example rule for the US EAR restrictions" width="720" />](media/export-control-restriction.png#lightbox)
+:::image type="content" source="media/export-control-restriction.png" alt-text="Example rule for the US EAR restrictions." lightbox="media/export-control-restriction.png":::
 
 ## Exceptions
 
@@ -63,7 +64,7 @@ Exceptions allow an action that a restriction would otherwise block. Common type
 
 The following illustration shows an example of the setup for an exception.
 
-[<img src="media/export-control-exception.png" alt="Example of an exception." title="Example of an exception" width="720" />](media/export-control-exception.png#lightbox)
+:::image type="content" source="media/export-control-exception.png" alt-text="Example of an exception." lightbox="media/export-control-exception.png":::
 
 ## Licenses
 

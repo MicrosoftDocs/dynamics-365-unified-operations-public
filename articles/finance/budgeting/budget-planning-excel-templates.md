@@ -3,7 +3,7 @@ title: Budget planning templates for Excel
 description: Learn how to create Microsoft Excel templates that can be used with budget plans, including outlines on creating document layouts and template tables.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/12/2024
 ms.custom: evergreen
 ms.reviewer: twheeloc

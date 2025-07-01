@@ -6,7 +6,7 @@ title: Dynamics 365 Human Resources infrastructure merge known issues
 description: This article lists issues that can occur during the Microsoft Dynamics 365 Human Resources infrastructure merge.
 author: twheeloc
 ms.date: 02/17/2023
-ms.topic: article
+ms.topic: troubleshooting-known-issue
 # optional metadata
 
 ms.search.form: 

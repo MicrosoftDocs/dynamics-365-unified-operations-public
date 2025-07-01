@@ -3,7 +3,7 @@ title: Cash discounts
 description: Cash discounts are setup and shared for Accounts payable and Accounts receivable and can be defined on the customer invoice or vendor invoice.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/23/2024
 ms.reviewer: twheeloc
 ms.custom: evergreen

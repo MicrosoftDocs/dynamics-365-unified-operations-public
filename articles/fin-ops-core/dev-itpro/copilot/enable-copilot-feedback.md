@@ -1,5 +1,5 @@
 ---
-title: Enable enhanced user feedback for Copilot and related experiences (preview)
+title: Enable enhanced user feedback for Copilot and related experiences
 description: Learn how administrators can enable and review user feedback for Copilot and related experiences in finance and operations apps.
 author: cabeln
 ms.author: cabeln
@@ -11,11 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# Enable enhanced user feedback for Copilot and related experiences (preview)
+# Enable enhanced user feedback for Copilot and related experiences
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 The *Enhanced user feedback for Copilot and related experiences* feature lets users provide product feedback to Microsoft by selecting thumbs-up or thumbs-down buttons. These buttons are currently available in experiences such as the Copilot sidecar and summary cards.
 
@@ -33,8 +31,6 @@ When enhanced user feedback is turned on, if users select a thumbs-up or thumbs-
 When users submit feedback, they can choose to attach system-collected information to provide richer context. For example, in the Copilot sidecar, users can attach the conversation history to their feedback. Before users finalize their submission, they have an opportunity to review all attached data and can opt out of including attachments.
 
 Administrators can disable attachments across the tenant as necessary.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -65,10 +61,10 @@ To turn enhanced user feedback on or off at the finance and operations environme
 
 1. Sign in to your finance and operations apps environment.
 1. Go to **System administration** \> **Workspaces** \> **Feature management**. (Learn more about Feature management in [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md).)
-1. Find and select the feature that is named *(Preview) Enable user feedback for Copilot and related experiences*. Then select **Enable now** to turn it on or **Disable** to turn it off.
+1. Find and select the feature that is named *Enable user feedback for Copilot and related experiences*. Then select **Enable now** to turn it on or **Disable** to turn it off. As of Supply Chain Management version 10.0.44, the feature is turned on by default
 
     > [!NOTE]
-    > If the tenant-level **Copilot feedback** setting and/or the organizational-level **Allow users to provide feedback to improve Copilot experiences** setting is turned off, the *(Preview) Enable user feedback for Copilot and related experiences* feature is automatically disabled and marked as *Feature disabled by Microsoft* in Feature management. You must turn on each of the higher-level settings before you can turn on the feature in Feature management.
+    > If the tenant-level **Copilot feedback** setting and/or the organizational-level **Allow users to provide feedback to improve Copilot experiences** setting is turned off, the *Enable user feedback for Copilot and related experiences* feature is automatically disabled and marked as *Feature disabled by Microsoft* in Feature management. You must turn on each of the higher-level settings before you can turn on the feature in Feature management.
 
 ## Review and manage feedback
 
@@ -81,4 +77,4 @@ The portal shows all collected feedback. Admins can filter, review details, and 
 
 ## Related information
 
-Enhanced user feedback for Copilot and related experiences uses the same [in-product feedback system as Microsoft 365 apps](https://learn.microsoft.com/en-us/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide). For information about what feedback data is collected about Copilot and how it's used, see [Providing feedback about Microsoft Copilot with Microsoft 365 apps](https://support.microsoft.com/en-us/topic/providing-feedback-about-microsoft-copilot-with-microsoft-365-apps-c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
+Enhanced user feedback for Copilot and related experiences uses the same [in-product feedback system as Microsoft 365 apps](/microsoft-365/admin/misc/feedback-user-control). For information about what feedback data is collected about Copilot and how it's used, see [Providing feedback about Microsoft Copilot with Microsoft 365 apps](https://support.microsoft.com/topic/providing-feedback-about-microsoft-copilot-with-microsoft-365-apps-c481c26a-e01a-4be3-bdd0-aee0b0b2a423).

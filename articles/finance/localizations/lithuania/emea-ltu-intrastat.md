@@ -1,12 +1,12 @@
 ---
 title: Lithuanian Intrastat
-description: Learn about the Lithuanian Intrastat report, including a table that defines various field names and an outline on setting up Intrastat.
+description: Learn how to set up the Lithuanian Intrastat report in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/26/2024
+ms.date: 05/29/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ---
@@ -14,6 +14,8 @@ ms.search.region: Global
 # Lithuanian Intrastat
 
 [!include [banner](../../includes/banner.md)]
+
+This article explains how to set up the Lithuanian Intrastat report in Microsoft Dynamics 365 Finance.
 
 The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries/regions. The Lithuanian Intrastat declaration contains information about the trade of goods for reporting.
 
@@ -71,11 +73,13 @@ From the Global repository, import the latest version of the following Electroni
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-## Set up region codes
+## Set up region code
 
-The Intrastat declaration requires that a county code be reported. To set up the county code, follow these steps.
+The Intrastat declaration requires that a region code be reported. 
 
-1. In Microsoft Dynamics 365 Finance, go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**.
+To set up the region code, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**.
 2. On the **State/province** tab, select **New**.
 3. In the **Country/region** field, select **LTU**.
 4. In the **State** field, enter the name of the state.
@@ -83,7 +87,9 @@ The Intrastat declaration requires that a county code be reported. To set up the
 
 ## Set up an address for a legal entity
 
-1. Go to **Organization administration** > **Organizations** > **Legal entities.**
+To set up an address for a legal entity, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities.**
 2. In the grid, select your company.
 3. On the **Addresses** FastTab, select **Edit**.
 4. In the **Edit address** dialog box, in the **Country/region** field, select **LTU**.
@@ -96,7 +102,9 @@ The Intrastat declaration requires that a county code be reported. To set up the
 
 You must set up your company's telephone number, email address, URL, and fax number.
 
-1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+To set up contact information, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
 2. In the grid, select your company.
 3. On the **Contact information** FastTab, select **Add** to create a contact.
 4. In the **Type** field, select the type of communication.
@@ -107,7 +115,9 @@ You must set up your company's telephone number, email address, URL, and fax num
 
 ### Set up the VAT ID of your company
 
-1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+To set up the VAT ID of your company, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
 2. In the grid, select your company.
 3. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the VAT ID of your company.
 
@@ -117,7 +127,9 @@ You must set up your company's telephone number, email address, URL, and fax num
 
 You must create VAT ID registration types for all the countries or regions that your company does business with.
 
-1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
+To create a registration type for the company code, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
 2. On the Action Pane, select **New** to create a registration type for the VAT ID.
 3. In the **Enter registration type details** dialog box, in the **Name** field, enter a name for the new registration type. For example, enter **VAT ID**.
 4. In the **Country/region** field, select **the country** or region that your company does business with.
@@ -125,14 +137,18 @@ You must create VAT ID registration types for all the countries or regions that 
 
 #### Match the registration type with a registration category
 
-1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
+To match the registration type with a registration category, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
 2. On the Action Pane, select **New** to create a link between a registration type and a registration category.
 3. For the registration type for the VAT ID, select the **VAT ID** registration category.
 4. Repeat steps 2 and 3 for the other registration types that you created for the countries or regions that your company does business with.
 
 #### Create a customer's VAT registration number
 
-1. Go to **Accounts receivable** > **Customers** > **All customers.**
+To create a customer's VAT registration number, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** > **Customers** > **All customers.**
 2. In the grid, select a customer.
 3. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 4. On the **Registration ID** FastTab, select **Add** to create a registration ID.
@@ -144,7 +160,7 @@ You must create VAT ID registration types for all the countries or regions that 
 
 Alternatively, you can create a customer's VAT registration number by using the **Tax exempt number** page.
 
-1. Go to **Tax** > **Setup** > **Sales tax** > **Tax exempt numbers**.
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Sales tax** > **Tax exempt numbers**.
 2. For each tax-exempt number, create a record that includes the following information:
     - In the **Country/region** field, select the tax registration of the counterparty.
     - In the **Tax exempt number** field, enter the tax-exempt number of the counterparty.
@@ -155,7 +171,9 @@ Alternatively, you can create a customer's VAT registration number by using the 
 
 ## Set up product parameters for the Intrastat declaration
 
-1. Go to **Product information management** > **Products** > **Released products**.
+To set up product parameters for the Intrastat declaration, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Product information management** > **Products** > **Released products**.
 2. In the grid, select a product.
 3. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select the commodity code. The name of the commodity will be printed in the **Description of goods** field in the Intrastat declaration.
 4. In the **Statistics procedure** field, select the statistical sign if it's required. The values that are available for selection depend on the commodity code that you selected.
@@ -164,8 +182,10 @@ Alternatively, you can create a customer's VAT registration number by using the 
 
 ## Set up the transport method and delivery terms
 
+To set up the transport method and delivery terms, follow these steps.
+
 1. Set up transport codes.
-    1. Go to **Tax** > **Setup** > **Foreign trade** > **Transport method**.
+    1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Transport method**.
     2. On the Action Pane, select **New**.
     3. In the **Transport** field, enter a unique code. Lithuanian companies use one-digit transport codes.
 2. Set up mode of delivery Intrastat codes.
@@ -175,7 +195,7 @@ Alternatively, you can create a customer's VAT registration number by using the 
 
 ## Set up the Intrastat authority
 
-- Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**, and enter the following information for the Intrastat authority:
+- In Dynamics 365 Finance, go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**, and enter the following information for the Intrastat authority:
 
     - Authority identification
     - Address
@@ -185,7 +205,9 @@ Alternatively, you can create a customer's VAT registration number by using the 
 
 ## Set up foreign trade parameters
 
-1. Go to **Tax** > **Setup** > **Foreign trade parameters**.
+To set up foreign trade parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade parameters**.
 2. On the **Intrastat** tab, on the **Electronic reporting** FastTab, in the **File format mapping** field, select **INSTAT XML (LT)**.
 3. In the **Report format mapping** field, select **Intrastat report**.
 4. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
@@ -197,20 +219,20 @@ Alternatively, you can create a customer's VAT registration number by using the 
 
 ## Set up compression of Intrastat
 
-- Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Lithuanian Intrastat, select the following fields:
+In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Lithuanian Intrastat, select the following fields:
    
-    - Commodity
-    - Transaction code
-    - Country/region of origin
-    - State
-    - Country/region of sender
-    - State of sender
-    - Correction
-    - Country/region
-    - Tax exempt number
-    - Direction
-    - Delivery terms
-    - Transport
+- Commodity
+- Transaction code
+- Country/region of origin
+- State
+- Country/region of sender
+- State of sender
+- Correction
+- Country/region
+- Tax exempt number
+- Direction
+- Delivery terms
+- Transport
 
 ## Intrastat transfer
 
@@ -220,7 +242,9 @@ You can also manually enter transactions by selecting **New** on the Action Pane
 
 ### Generate an Intrastat report
 
-1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
+To generate an Intrastat report, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
 2. On the Action Pane, select **Output** > **Report**.
 3. In the **Intrastat Report** dialog box, enter the start date for the report.
 4. Set the **Generate file** option to **Yes** to generate a .xml file.
@@ -236,7 +260,9 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Preliminary setup
 
-1. Go to **Organization administration** > **Organization** > **Legal entities**.
+To do the preliminary setup, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** > **Organization** > **Legal entities**.
 2. In the grid, select the **DEMF** legal entity.
 3. On the **Addresses** FastTab, select **Edit**, and then, in the **Country/region** field, select **LTU (Lithuania)**.
 4. Import the latest version of the following ER configurations:
@@ -247,7 +273,9 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Set up a company address
 
-1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**.
+To set up a company address, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**.
 2. On the **State/province** tab, select **New** and enter the following information:
 
     - In the **Country/region** field, select **LTU**.
@@ -281,7 +309,9 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Set up contact information
 
-1. Go to **Organization administration** > **Organization** > **Legal entities.**
+To set up contact information, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** > **Organization** > **Legal entities.**
 2. In the grid, select the **DEMF** legal entity.
 3. On the **Contact information** FastTab, select **Add** to create a contact.
 4. In the **Type** field, select **Phone**.
@@ -298,13 +328,17 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 #### Set up the VAT ID of your company
 
-1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+To set up the VAT ID of your company, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
 2. In the grid, select the **DEMF** legal entity.
 3. On the **Tax registration** FastTab, in the **Tax registration number** field, enter **1234567890**.
 
 #### Create registration types for company codes
 
-1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
+To create registration types for company codes, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
 2. On the Action Pane, select **New** to create a registration type for the VAT ID.
 3. In the **Enter registration type details** dialog box, in the **Name** field, enter **VAT ID**.
 4. In the **Country/region** field, select **DEU**.
@@ -313,13 +347,17 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 #### Match the registration type with a registration category
 
-1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
+To match the registration type with a registration category, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
 2. On the Action Pane, select **New** to create a link between the registration type and the registration category.
 3. For the **VAT ID** registration type, select the **VAT ID** registration category.
 
 #### Set up the customer's VAT registration number
 
-1. Go to **Accounts receivable** > **Customers** > **All customers**.
+To set up the customer's VAT registration number, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** > **Customers** > **All customers**.
 2. In the grid, select **DE-016**.
 3. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 4. On the **Registration ID** FastTab, select **Add** to create a registration ID.
@@ -329,7 +367,9 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Set up product information
 
-1. Go to **Product information management** > **Products** > **Released products**.
+To set up product information, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Product information management** > **Products** > **Released products**.
 2. In the grid, select **D0001**.
 3. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select **100 200 30**.
 4. In the **Origin** section, in the **Country/region** field, select **LTU**.
@@ -343,8 +383,10 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Set up a transport method
 
+To set up a transport method, follow these steps.
+
 1. Create a transport method.
-    1. Go to **Tax** > **Setup** > **Foreign trade** > **Transport method**.
+    1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Transport method**.
     2. On the Action Pane, select **New**.
     3. In the **Transport** field, enter **3**.
     4. In the **Description** field, enter **Road transport**.
@@ -363,8 +405,10 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Set up codes for terms of delivery
 
+To set up codes for terms of delivery, follow these steps.
+
 1. Set up an Intrastat code for the terms of delivery.
-    1. Go to **Procurement and sourcing** > **Setup** > **Distribution** > **Terms of delivery**.
+    1. In Dynamics 365 Finance, go to **Procurement and sourcing** > **Setup** > **Distribution** > **Terms of delivery**.
     2. In the grid, select **CIF**.
     3. On the **General** FastTab, in the **Intrastat code** field, enter **L**.
 2. Select the default delivery terms for a customer.
@@ -378,7 +422,9 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Set up the authority identification number
 
-1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**.
+To set up the authority identification number, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**.
 2. In the list, select **TA**.
 3. In the **Authority identification** field, enter **123**.
 4. In the **Name** field, enter **Tax authority**.
@@ -394,7 +440,9 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Set up foreign trade parameters
 
-1. Go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
+To set up foreign trade parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
 2. On the **Intrastat** tab, on the **General** FastTab, in the **Transaction** **code** field, select **11**.
 3. In the **Authority** field, select **TA**.
 4. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **INSTAT XML (LT)**.
@@ -410,7 +458,9 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Change the site address
 
-1. Go to **Warehouse management** > **Setup** > **Warehouse** > **Sites**.
+To change the site address, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Warehouse management** > **Setup** > **Warehouse** > **Sites**.
 2. In the grid, select **1**.
 3. On the **Addresses** FastTab, select **Edit**.
 4. In the **Edit address** dialog box, in the **Country/region** field, select **LTU**.
@@ -418,7 +468,9 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Create a sales order with an EU customer
 
-1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
+To create a sales order with an EU customer, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** > **Orders** > **All sales orders**.
 2. On the Action Pane, select **New**.
 3. In the **Create sales order** dialog box, on the **Customer** FastTab, in the **Customer** section, in the **Customer account** field, select **DE-016**.
 4. On the **General** FastTab, in the **Storage dimensions** section, in the **Site** field, select **1**.
@@ -439,7 +491,9 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Transfer the transaction to the Intrastat journal and review the result
 
-1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
+To transfer the transaction to the Intrastat journal and review the result, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
 2. On the Action Pane, select **Transfer**.
 3. In the **Intrastat (Transfer)** dialog box, in the **Parameters** section, set the **Customer invoice** option to **Yes**.
 4. Select **Filter**.
@@ -510,7 +564,9 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Create a purchase order
 
-1. Go to **Accounts payable** > **Purchase orders** > **All purchase orders**.
+To create a purchase order, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts payable** > **Purchase orders** > **All purchase orders**.
 2. On the Action Pane, select **New**.
 3. In the **Create purchase order** dialog box, in the **Vendor account** field, select **DE-001**.
 4. In the **Site** field, select **1**.
@@ -532,7 +588,9 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Create an Intrastat declaration for arrivals
 
-1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
+To create an Intrastat declaration for arrivals, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
 2. On the Action Pane, select **Transfer**.
 3. In the **Intrastat (Transfer)** dialog box, set the **Vendor invoice** option to **Yes**.
 4. Select **Filter**.

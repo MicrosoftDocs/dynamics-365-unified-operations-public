@@ -3,7 +3,7 @@ title: AX 2009 migration - Create migration groups
 description: Learn about how to create migration groups to upgrade from Microsoft Dynamics AX 2009 to finance and operations apps.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/13/2018
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

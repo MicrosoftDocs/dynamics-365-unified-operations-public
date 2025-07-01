@@ -3,10 +3,12 @@ title: Inventory Visibility reservations
 description: Learn how to set up the reservation feature to create reservations and/or unreserve specified inventory quantities by using Inventory Visibility.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: article
-ms.date: 03/03/2023
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Inventory Visibility reservations
@@ -374,7 +376,7 @@ It's likely that your company has other order channels that also post soft reser
 1. After the file is successfully imported, you can confirm that the new sales orders have soft reservation details by opening those orders in Supply Chain Management.
 
 > [!NOTE]
-> After you import sales orders that include soft reservation details, you won't be able to modify the soft reservation or revert it from Supply Chain Management. If the data that you imported isn't correct, delete the affected sales line, and then re-import it.
+> After you import sales orders that include soft reservation details, you won't be able to modify the soft reservation or revert it from Supply Chain Management. If the data that you imported isn't correct, delete the affected sales line, and then reimport it.
 
 ### Create soft reservations and offsets when you use the Inventory Visibility integration with reservation offset feature
 
@@ -416,4 +418,4 @@ To check for failed reservation offsets, go to **Inventory Management** \> **Per
 If an original order line is canceled or deleted, and you must revert the corresponding soft reservation, take one of the following actions:
 
 - Post a soft reservation event with a negative quantity that has the same exact information in your API query body.
-- Post an unreserve request with the same quantity and reservation ID. See [Reverse reservation events](inventory-visibility-api.md#reverse-reservation-events) for more information.
+- Post an unreserve request with the same quantity and reservation ID. Learn more in [Reverse reservation events](inventory-visibility-api.md#reverse-reservation-events).

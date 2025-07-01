@@ -3,7 +3,7 @@ title: Removed or deprecated features in Dynamics 365 Supply Chain Management
 description: Learn about features that have been removed, deprecated, or that are planned for removal in Dynamics 365 Supply Chain Management.
 author: kamaybac
 ms.author: kamaybac
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/27/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
@@ -25,6 +25,26 @@ This list is intended to help you consider these removals and deprecations for y
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.44 release
+
+### Inquire into inventory with Copilot (preview)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Microsoft has decided not to continue development on this preview feature. |
+| **Replaced by another feature?** | No |
+| **Product areas affected** | Supply Chain Management – Inventory management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Removed. This preview feature was never made generally available and is now completely removed from the [Inventory Visibility service](../inventory/inventory-visibility.md). |
+
+### SHA1 hashing in the InventDim table
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | To ensure that data in the `InventDim` table is unique and easy to search for, the system hashes some of its data. The system previously used SHA1 hashing, which is now outdated, so we're replacing it with SpookyHash. |
+| **Replaced by another feature?** | Yes. SHA1 hashing is being replaced by SpookyHash. |
+| **Product areas affected** | Supply Chain Management – Inventory |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | As of Supply Chain Management version 10.0.44, the system uses SpookyHash instead of SHA1 to hash data in the `InventDim` table. When you upgrade to version 10.0.44, the system automatically schedules a batch job that converts all `InventDim` data hashed using SHA1 to instead use SpookyHash. Version 10.0.44 can work with both SHA1 and SpookyHash data, but the ability to use SHA1 will be removed in Supply Chain Management version 10.0.45. Extensibility was never supported for this part of the application, but if you have external code that uses SHA1 when creating, updating, or searching data in the `InventDim` table, you must stop using that code before upgrading to Supply Chain Management 10.0.44 because it will corrupt your data. |
 
 ### Rename item number (preview)
 

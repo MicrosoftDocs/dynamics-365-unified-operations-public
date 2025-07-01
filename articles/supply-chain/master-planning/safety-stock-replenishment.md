@@ -1,8 +1,8 @@
 ---
 title: Safety stock fulfillment for items
 description: Learn about safety stock fulfillment and how to set up safety stock quantity for items with a process for setting the safety stock level for an item. 
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended, ReqSafetyKeyDefaultDataWizard
 ms.topic: how-to

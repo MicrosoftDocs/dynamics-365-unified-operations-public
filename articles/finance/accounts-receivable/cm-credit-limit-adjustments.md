@@ -3,7 +3,7 @@ title: Credit limit adjustments
 description: Learn about how to set up and add credit limit adjustments, including a step-by-step process on setting up credit limit adjustments.
 author: JodiChristiansen
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/04/2019
 ms.custom:  
 ms.reviewer: twheeloc

@@ -3,7 +3,7 @@ title: Payroll data updates FAQ
 description: Access a list of questions and answers that address changes to payroll data, including questions about preparing payroll for new fiscal years and adjusting balances.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: faq
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User

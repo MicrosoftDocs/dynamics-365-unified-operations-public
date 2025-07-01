@@ -3,7 +3,7 @@ title: Synchronize date and time in import jobs
 description: Learn about how to synchronize date and time in import jobs to Coordinated Universal Time (UTC), including a step-by-step process.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/01/2020
 ms.reviewer: johnmichalak
 audience: Application user

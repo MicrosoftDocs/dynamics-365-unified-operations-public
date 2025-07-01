@@ -3,7 +3,7 @@ title: SAF Bank statement file - JPK_WB
 description: This article explains how users in legal entities in Poland can generate a SAF Bank statement file - JPK_WB in XML format.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: reference
 ms.custom: 
   - bap-template
 ms.date: 11/27/2024

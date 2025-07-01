@@ -1,9 +1,9 @@
 ---
 title: DDMRP FAQ
 description: Access answers to frequently asked questions (FAQ) about Demand Driven Material Requirements Planning (DDMRP) in Microsoft Dynamics 365 Supply Chain Management.
-author: t-benebo
-ms.author: benebotg
-ms.topic: conceptual
+author: Henrikan
+ms.author: henrikan
+ms.topic: faq
 ms.date: 11/24/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac

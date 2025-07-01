@@ -3,7 +3,7 @@ title: Troubleshoot on-premises deployments
 description: Access troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises), including an overview of monitoring deployment.
 author: faix
 ms.author: osfaixat
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.custom: 
   - bap-template
 ms.date: 02/03/2025
@@ -27,7 +27,7 @@ To verify the address, note the value that was used in the "Create DNS zones and
 - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#createdns)
 - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#createdns)
 
-You can access the site only if the client certificate is in cert:\\CurrentUser\\My on the machine that you're accessing the site on. (In Certificate Manger, go to **Certificates - Current User** \> **Personal** \> **Certificates**.) When you access the site, select the client certificate when you're prompted.
+You can access the site only if the client certificate is in cert:\\CurrentUser\\My on the machine that you're accessing the site on. (In Certificate Manager, go to **Certificates - Current User** \> **Personal** \> **Certificates**.) When you access the site, select the client certificate when you're prompted.
 
 ## Monitor the deployment
 

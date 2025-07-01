@@ -3,7 +3,7 @@ title: Finance troubleshooting and FAQs
 description: Access links to troubleshooting resources and answers to various frequently asked question articles for Dynamics 365 Finance.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: faq
 ms.date: 07/18/2024
 ms.custom: bap-template
 ms.reviewer: twheeloc

@@ -1,12 +1,12 @@
 --- 
 title: Create an intercompany plan
 description: This procedure shows how to create an intercompany plan. 
-author: t-benebo
+author: Henrikan
 ms.date: 08/13/2019
 ms.topic: how-to 
 ms.search.form: ReqIntercompanyPlanningGroupSetup,  ReqCreatePlanWorkspace   
 ms.reviewer: kamaybac
-ms.author: benebotg
+ms.author: henrikan
 ---
 # Create an intercompany plan
 

@@ -3,7 +3,7 @@ title: Cash out gift card balance for a retail customer
 description: This article provides an overview of the cash out gift card feature for the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: josaw1
 ms.date: 02/01/2023
-ms.topic: article
+ms.topic: how-to
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

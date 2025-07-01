@@ -3,7 +3,7 @@ title: Configure product filters for warehouse transactions
 description: Learnhow to configure product filters and filter codes to categorize inventory items in a warehouse, including instructions for various prerequisites.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/04/2021
 ms.custom:
 ms.reviewer: kamaybac

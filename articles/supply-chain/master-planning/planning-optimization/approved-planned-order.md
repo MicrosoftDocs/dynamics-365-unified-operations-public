@@ -1,8 +1,8 @@
 ---
 title: View, manage, and approve planned orders
 description: Learn about how to view, manage, and approve planned orders, including outlines and step-by-step processes for viewing and editing planned order statuses. 
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 04/07/2021
 ms.custom: 

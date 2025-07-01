@@ -1,8 +1,8 @@
 ---
 title: Get started with master planning
 description: Learn how to start to use master planning functionality in Dynamics 365 Supply Chain Management, including outlines on availability and licensing. 
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 05/15/2023
 ms.custom: bap-template
@@ -99,13 +99,7 @@ To configure your system to use the Planning Optimization Add-in for master plan
     | Disabling connection | A request to turn off the connection to the Planning Optimization service is currently in progress. | No |
     | Getting status | The system is waiting for status information from the Planning Optimization service. | No |
 
-1. If the **Connection stats** is *Connected*, then you're ready to enable Planning Optimization. Use the **Use Planning Optimization** option to choose which planning engine is used for master planning. Select one of the following options:
-
-    - *Yes* – Planning Optimization is used for master planning for all companies (unless overridden for one or more specific companies).
-    - *No* – The deprecated master planning engine is used for master planning for all companies.
-
-> [!NOTE]
-> Starting in Supply Chain Management version 10.0.41, the deprecated master planning engine is unavailable for all new deployments. There is no manual way to enable the deprecated master planning engine for these environments. Learn more in [Migration to Planning Optimization for master planning](../new-master-planning-engine.md).
+1. If the **Connection stats** is *Connected*, the **Use Planning Optimization** option is read-only and set to *Yes*. In most cases, Planning Optimization is now the only planning engine available for Supply Chain Management, so you can't turn it off. However, in some rare cases, Microsoft Support might make the deprecated planning available for one or more specific companies (learn more in [Migration to Planning Optimization for master planning](../new-master-planning-engine.md)).
 
 > [!IMPORTANT]
 > If existing planning batch jobs that were created for the deprecated master planning engine are triggered while the **Use Planning Optimization** option is set to *Yes*, those jobs will fail.

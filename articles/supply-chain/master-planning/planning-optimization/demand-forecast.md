@@ -1,8 +1,8 @@
 ---
 title: Master planning with demand forecasts
 description: Learn how to include demand forecasts during master planning, with an outline on setting up a master plan to include a demand forecast.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 01/06/2023
 ms.custom: bap-template

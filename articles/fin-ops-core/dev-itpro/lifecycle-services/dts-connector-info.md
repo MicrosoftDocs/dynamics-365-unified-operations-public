@@ -12,6 +12,8 @@ ms.search.validFrom: 2023-03-22
 ---
 # Dynamics 365 Translation Service Connector
 
+[!INCLUDE[dts-deprecation](../../fin-ops/includes/dts-deprecation.md)]
+
 The Microsoft Dynamics 365 Translation Service Connector integrates with Microsoft Power Platform. Therefore, you can access Dynamics Translation Service (DTS) directly from a flow or app. This connector calls the DTS API on your behalf, saving you a trip to the website.
 
 The following functionality is supported:

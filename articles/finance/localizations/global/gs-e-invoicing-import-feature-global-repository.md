@@ -3,7 +3,7 @@ title: Import features from the repository
 description: Learn how to import Globalization features from the Dataverse repository, including a step-by-step process for importing features.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/10/2025
 ms.custom: 
 ms.reviewer: johnmichalak
@@ -46,7 +46,7 @@ You should also add a security role to access tables in Dataverse by following t
 To view the imported Electronic invoicing feature, make sure that the correct configuration provider is selected. By default, features that the active configuration provider created are filtered out. You can adjust the filter to view features that were created by other configuration providers, such as Microsoft.
 
 > [!NOTE]
-> It may take up to two weeks for a new Electronic invoicing feature released by Microsoft or a new version of a feature released by Microsoft to appear in the Dataverse repository. If the feature update is expected but does not appear in the Dataverse repository, or if auto-updates are disabled in your environment, you can also manually trigger the update of the Globalization solution package in your Power Platform admin center (PPAC) portal. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#environment-level-view-of-apps) for more details on how to update solutions in PPAC.
+> It may take up to two weeks for a new Electronic invoicing feature released by Microsoft or a new version of a feature released by Microsoft to appear in the Dataverse repository. If the feature update is expected but does not appear in the Dataverse repository, or if auto-updates are disabled in your environment, you can also manually trigger the update of the Globalization solution package in your Power Platform admin center portal. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#environment-level-view-of-apps) for more details on how to update solutions in Power Platform admin center.
 
 You can now work with the imported feature. You can review its details and create a new feature by using the imported feature as a template.
 

@@ -1,48 +1,43 @@
 ---
 title: Import customer payment with JBA file format
-description: Learn how to import EFT files with a Japanese Bankers Association file format, including a step-by-step process using the JPMF demo data company.
+description: Learn how to import EFT files with a JBA file format for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
-ms.date: 08/29/2018
+ms.date: 04/25/2025
 ms.topic: how-to
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, SrsReportViewerForm
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Import customer payment with JBA file format
 
 [!include [banner](../../includes/banner.md)]
 
-In Japan, the Japanese Bankers Association (JBA) file format is commonly used for Electronic Fund Transfer (EFT) among banks. 
+This article explains how to import electronic funds transfer (EFT) files with a Japanese Bankers Association (JBA) file format for Japan in Microsoft Dynamics 365 Finance.
 
+In Japan, the JBA file format is commonly used for EFT among banks. 
 
+The following procedure was created using the demo company data JPMF.
 
-This task walks you through importing an EFT file with a JBA format.
+To import EFT files with a JBA file format, follow these steps.
 
-
-
-This procedure was created using the demo company data JPMF.
-
-1. Go to Accounts receivable > Payments > Payment journal.
-2. Click New.
-3. In the Name field, type 'CustPay'.
-4. Click Lines.
-5. Click Functions.
-6. Click Import payments.
-7. In the Method of payment field, type a value.
-    * For example, enter the method of payment that uses JBA(JP) - Format A.  
-8. Click OK.
-    * Select the file to upload.  
-9. Click OK.
-10. Close the report
-    * A control report is generated.  
-    * Note that the payment amount and description are imported.  
-11. In the Account field, specify the values 'JPMF-000001'.
-12. Click Post.
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments \> Payment journal**.
+1. Select **New**.
+1. In the **Name** field, enter "CustPay".
+1. Select **Lines**.
+1. Select **Functions**.
+1. Select **Import payments**.
+1. In the **Method of payment** field, enter a value. For example, enter the method of payment that uses JBA(JP) - Format A.  
+1. Select **OK**.
+1. Select the file to upload.  
+1. Select **OK**.
+1. Close the report. The payment amount and description are imported and a control report is generated.  
+1. In the **Account** field, enter "JPMF-000001".
+1. Select **Post**.
 
 
 

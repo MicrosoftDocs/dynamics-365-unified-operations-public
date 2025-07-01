@@ -3,7 +3,7 @@ title: Set up a legal entity and tax information for Guatemala
 description: Learn how to set up a legal entity and tax information for a company in Guatemala, including a step-by-step process for creating a legal entity.
 author: Cpicon85
 ms.author: v-cpicon
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/07/2023
 ms.custom: bap-template
 ms.reviewer: johnmichalak

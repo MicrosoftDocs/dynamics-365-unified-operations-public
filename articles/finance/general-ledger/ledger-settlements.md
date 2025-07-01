@@ -4,7 +4,7 @@ description: Learn how to use the Ledger settlements page to settle ledger trans
 author: kweekley
 ms.author: kweekley
 ms.topic: article
-ms.date: 11/08/2024
+ms.date: 03/25/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -120,6 +120,17 @@ As of Finance release 10.0.29, you can identify vouchers that were ledger settle
 It's important that you export the data to Excel before you unsettle records. When you select the **Unsettle marked records** action, two warning messages are shown to ensure that the transaction details are exported to Excel before the transactions are unsettled. If you accidentally unsettle ledger transactions before you send the details to Excel, there's no way to reverse the unsettlement.
 
 For more information about how to use the **Review cross-year settlements** page to help you with year-end close processes, see [Awareness between ledger settlement feature before year-end close using the inquiry page](ledger-settlement-yec-inquiry-before.md) and [Awareness between ledger settlement feature after year-end close using the inquiry page](ledger-settlement-yec-inquiry-after.md).
+
+## Review missing settlement accounts
+
+As of Finance release 10.0.44, missing settlement accounts can be reviewed using the **Review missing settlement accounts** page. 
+To review missing settlement accounts, follow these steps:
+1. On the **Ledger settlements** page, select **Review missing settlement accounts** in the action pane.
+2. Select the fiscal year. The page displays ledger accounts that have ledger settlements but are missing from the **Ledger settlement** page in General ledger parameters.
+3. On the **Review missing settlement accounts** page, click **Add to Ledger settlement accounts** to add the missing accounts to the **Ledger settlements** page in General ledger parameters.
+4. If there are no missing accounts, the **No missing ledger settlement accounts found** message is displayed at the top of the page. 
+
+If accounts are ledger settled but the accounts aren't set up on the **Ledger settlements** page in General ledger parameters, this can cause the year-end close to fail. If you see ledger settlements in the **Ledger settlement inquiry** page but not in **Ledger settlements**, one reason is the account isn't set up on the **Ledger settlements** page in General ledger parameters. 
 
 ## Post foreign currency realized gains/losses for ledger settlements
 

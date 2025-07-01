@@ -3,7 +3,7 @@ title: Update model versions in the automated build
 description: Learn about how to update the models in a source package and deployable package of the build output with the version of the build that produced them.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/25/2017
 ms.reviewer: johnmichalak
 audience: Developer

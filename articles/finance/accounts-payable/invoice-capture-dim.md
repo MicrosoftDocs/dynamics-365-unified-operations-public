@@ -4,7 +4,7 @@ description: Learn about how to use financial dimensions in Invoice capture, inc
 author: sunfzam
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 12/07/2023
+ms.date: 04/22/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -129,8 +129,10 @@ The following example shows the logic for serializing the financial dimension se
             } 
             displayValue += ((displayValue == "")? segmentValue : (dimensionSegmentDelimiter + segmentValue)); 
         } 
-        _line.DimensionDisplayValue = displayValue; 
-        _line.update(); 
+        VendorInvoiceLineEntity vendinvoiceinfoline;
+        select firstonly forupdate vendinvoiceinfoline where vendinvoiceinfoline.RecId == _line.RecId;
+        vendinvoiceinfoline.DimensionDisplayValue = dimensionValue;
+        vendinvoiceinfoline.update();
     } 
 }
 ```

@@ -3,7 +3,7 @@ title: Consolidate inventory transactions
 description: Learn how to consolidate inventory transaction data to help improve system performance with an outline on toggling the feature in your system.
 author: banluo-ms
 ms.author: banluo
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/11/2024
 ms.custom:
 ms.reviewer: kamaybac
@@ -59,6 +59,7 @@ To consolidate inventory transactions, follow these steps.
 
     - **From date in closed ledger period** – Select the earliest transaction date to include in the consolidation.
     - **To date in closed ledger period** – Select the newest transaction date to include in the consolidation.
+    - **Bundle size** – Specify the number of unique combinations of item ID and inventory dimension ID values the system can group into a single SQL transaction when consolidating inventory transactions. The bundle size you should choose depends on the number of inventory transactions you have per combination. For combinations with a high transaction count, we recommend a smaller bundle size to avoid performance issues. Conversely, if the number of transactions per combination is low, a larger bundle size might be more efficient. Aim to keep the number of transactions per bundle at or below 100,000. If your environment includes a small number of combinations but a high overall transaction volume, consider narrowing the consolidation timeframe to maintain performance.
 
     > [!NOTE]
     > Only periods that meet the [prerequisites](#prerequisites) will be available for selection.

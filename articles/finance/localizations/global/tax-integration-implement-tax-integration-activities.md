@@ -3,7 +3,7 @@ title: Implement tax integration activities
 description: Learn about the activities that must be implemented to integrate a new transaction, including an overview on the data retrieval activity.
 author: Qiuchen-Ren
 ms.author: qire
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/25/2022
 ms.custom: bap-template
 ms.reviewer: johnmichalak

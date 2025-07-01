@@ -3,7 +3,7 @@ title: Consume Retail Server APIs in external applications
 description: This article describes how to consume the Retail Server APIs in external applications.
 author: josaw1
 ms.date: 01/11/2022
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

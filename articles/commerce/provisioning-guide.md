@@ -3,7 +3,7 @@ title: Provision a Dynamics 365 Commerce sandbox environment
 description: This article explains how to provision a Microsoft Dynamics 365 Commerce sandbox environment for demo or sandbox usage with built-in demo data.
 author: josaw1
 ms.date: 07/25/2024
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global

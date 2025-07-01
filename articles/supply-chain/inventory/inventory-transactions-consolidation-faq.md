@@ -17,6 +17,15 @@ ms.custom:
 
 This article provides answers to frequently asked questions about inventory transaction consolidation in Microsoft Dynamics 365 Supply Chain Management.
 
+## What should I consider when choosing a bundle size?
+
+The **Bundle size** setting on the [**Inventory transaction consolidation**](archive-inventory-transactions.md) dialog controls how many unique combinations of item ID and inventory dimension ID values the system can group into a single SQL transaction when consolidating inventory transactions.
+
+The bundle size you should choose depends on the number of inventory transactions you have per combination. For combinations with a high transaction count, we recommend a smaller bundle size to avoid performance issues. Conversely, if the number of transactions per combination is low, a larger bundle size might be more efficient.
+
+> [!NOTE]
+> Aim to keep the number of transactions per bundle at or below 100,000. If your environment includes a small number of combinations but a high overall transaction volume, consider narrowing the consolidation timeframe to maintain performance.
+
 ## Why are there more rows in the InventTransOrigin table after consolidation?
 
 This result is expected. The *Inventory transactions consolidation* job works by creating new inventory transaction (`InventTrans`) and inventory transactions originator (`InventTransOrigin`) records.

@@ -3,7 +3,7 @@ title: Set up lease posting accounts
 description: Learn about the posting accounts that are required for Asset leasing transactions and explains how to define posting accounts on the Lease posting parameters page.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/12/2021
 ms.reviewer: kfend
 audience: Application User

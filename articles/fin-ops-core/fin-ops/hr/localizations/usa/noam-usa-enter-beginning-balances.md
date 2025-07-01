@@ -3,7 +3,7 @@ title: Enter payroll beginning balances
 description: Learn about the steps for entering beginning balances for earning codes, deductions, benefits, and taxes, including an overview on what to do in case of mistakes.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/20/2020
 ms.reviewer: twheeloc
 audience: Application User

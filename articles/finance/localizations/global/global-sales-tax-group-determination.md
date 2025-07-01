@@ -3,7 +3,7 @@ title: Sales tax applicability and sales tax group determination logic
 description: Learn about the logic for determining sales tax applicability and sales tax groups in the tax feature setup, including an overview on matching logic.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 02/09/2024
 ms.custom: 
   - bap-template
