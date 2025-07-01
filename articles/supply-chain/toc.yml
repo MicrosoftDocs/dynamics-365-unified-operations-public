@@ -4084,9 +4084,11 @@
     - name: Message processor
       items:
       - name: Create and process message queues and message types
-        href: supply-chain-dev/message-processor.md
+        href: message-processor/message-processor.md
       - name: Clean up processed and canceled message processor messages
-        href: warehousing/message-processor-cleanup.md
+        href: message-processor/message-processor-cleanup.md
+      - name: Business events, custom message queues, and custom message types for the message processor
+        href: message-processor/developer/message-processor-develop.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide

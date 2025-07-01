@@ -40,7 +40,7 @@ Here's a high-level description of the inbound process. Steps that start with *E
 
     - Manually, by using the [Inbound load planning workbench](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually)
     - By importing [advanced shipping notices (ASNs)](import-asn-data-entity.md)
-    - Automatically during [message processing](../supply-chain-dev/message-processor.md)
+    - Automatically during [message processing](../message-processor/message-processor.md)
     - Automatically during the Warehouse Management mobile app receiving process
 
 1. *WOM:* Warehouse workers use the Warehouse Management mobile app to *register* the inbound shipment transactions.
@@ -62,7 +62,7 @@ Here's a high-level description of the outbound process. Steps that start with *
 1. *WOM:* Supply Chain Management processes the message in Warehouse management only mode and creates orders.
 1. *WOM:* Inventory reservations are created in one of two ways, as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management:
 
-    - Automatically by the [message processor](../supply-chain-dev/message-processor.md)
+    - Automatically by the [message processor](../message-processor/message-processor.md)
     - Manually, as part of the release process
 
 1. *WOM:* The orders are released for further warehouse processing, either manually or automatically (via the *Automatic release of outbound shipment orders* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md)).

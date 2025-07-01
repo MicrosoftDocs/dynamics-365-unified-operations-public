@@ -15,7 +15,7 @@ ms.custom:
 
 <!-- KFM: Who is the PM for this feature? We normally use the PM as the author in metadata. -->
 
-The [message processor](../supply-chain-dev/message-processor.md) is a framework that processes messages in the system. It can handle various types of messages, such as those related to inventory transactions, sales orders, and more. Over time, processed and canceled messages, which are no longer needed, can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency. <!-- KFM: I added this intro. Please confirm and enhance as needed. -->
+The [message processor](../message-processor/message-processor.md) is a framework that processes messages in the system. It can handle various types of messages, such as those related to inventory transactions, sales orders, and more. Over time, processed and canceled messages, which are no longer needed, can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency. <!-- KFM: I added this intro. Please confirm and enhance as needed. -->
 
 ## Prerequisites
 
@@ -64,7 +64,8 @@ To view and act on your optimization opportunities, including those related to c
 
 ## Additional resources
 
-- [Create and process message queues and message types](../supply-chain-dev/message-processor.md)
+- [Monitor and control message processor messages](message-processor.md)
+- [Business events, custom message queues, and custom message types for the message processor](developer/message-processor-develop.md)
 - [Message processor messages for warehouse management processes](warehouse-message-processor-messages.md)
 - [Exchange data between systems](wms-only-mode-exchange-data.md)
 - [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md)
