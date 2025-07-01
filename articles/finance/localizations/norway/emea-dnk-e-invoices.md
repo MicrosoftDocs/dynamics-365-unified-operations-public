@@ -93,6 +93,9 @@ To configure legal entity parameters, follow these steps.
 3. On the **Bank account information** FastTab, in the **Routing number** field, enter the company's registration number.
 4. In the **FI-Creditor ID** field, enter the creditor's identification number if you plan to use FIK payments.
 
+> [!NOTE]
+> The contact information for the legal entity is automatically retrieved from the related Person that is associated with the current user in Dynamics 365 Finance. Make sure that the person has a valid email address and phone number. The phone number must start from **+** and the country code. 
+
 ### Configure methods of payment
 
 According to OIOUBL standards, the payment method codes in the XML file output of electronic invoices must comply with the [official list of standardized codes](https://oioubl21.oioubl.dk/codelists/en/urn_oioubl_codelist_paymentmeanscode-1.1.html).
@@ -175,14 +178,15 @@ For each configuration, follow these steps.
 To configure customer parameters, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
-2. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable the generation of electronic invoices.
-3. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice.
-4. In the **Tax exempt number** field, enter the customer's VAT exempt number.
-5. In the **EAN** field, enter the customer's identification number. This number will be used as the **Endpoint ID** value in the output XML file of the electronic invoice.
-6. On the **Sales demographics** FastTab, in the **Primary contact** field, select a person who will be considered the buyer's contact.
+2. On the Addresses FastTab, add a valid address for the selected customer.
+3. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable the generation of electronic invoices.
+4. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice.
+5. In the **Tax exempt number** field, enter the customer's VAT exempt number.
+6. In the **EAN** field, enter the customer's identification number. This number will be used as the **Endpoint ID** value in the output XML file of the electronic invoice.
+7. On the **Sales demographics** FastTab, in the **Primary contact** field, select a person who will be considered the buyer's contact.
 
     > [!NOTE]
-    > All available contact persons must already be defined for this customer.
+    > All available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid email address and phone number. The phone number must start from **+** and the country code.
 
 ## Export customer electronic invoices
 
