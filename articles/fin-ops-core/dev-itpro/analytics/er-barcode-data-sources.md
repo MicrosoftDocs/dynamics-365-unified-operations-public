@@ -3,7 +3,7 @@ title: Use Barcode data sources to generate bar code images
 description: Learn about how to use Barcode data sources to generate bar code images, including an example of generating a payment check.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/21/2020
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

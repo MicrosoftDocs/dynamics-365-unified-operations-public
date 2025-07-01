@@ -3,7 +3,7 @@ title: Optimize year-end close
 description: Learn about the Optimize year-end close service add-in that's available for the general ledger year-end close process, including an outline on improved performance.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/02/2022
 ms.reviewer: twheeloc
 audience: Application User

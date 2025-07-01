@@ -3,7 +3,7 @@ title: Generate invoices from billing schedules
 description: Learn about how to create invoices from billing schedules in Subscription billing, including overviews on consolidation and top billing items.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/27/2025
 ms.reviewer: twheeloc
 audience: Application User

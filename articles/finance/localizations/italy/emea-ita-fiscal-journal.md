@@ -3,7 +3,7 @@ title: Fiscal journal report
 description: Learn about the Fiscal journal report in Italy, including an outline and step-by-step process on fiscal journal page numbering improvements.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 6/17/2024

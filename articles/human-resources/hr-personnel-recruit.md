@@ -5,7 +5,7 @@ title: Recruit job candidates
 description: This article describes how to recruit candidates in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 04/07/2025
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: 

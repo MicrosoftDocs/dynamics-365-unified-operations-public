@@ -3,7 +3,7 @@ title: Bank foreign currency revaluation
 description: Learn about the process of bank foreign currency revaluation, including outlines on setup, running the process, and reversal of revaluation transactions.
 author: ericwangchen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/31/2023
 ms.custom:
 ms.reviewer: twheeloc
@@ -62,6 +62,9 @@ The revaluation process can be run for one or more legal entities. The lookup sh
 Set the **Preview before posting** option to **Yes** if you want to review the results of the revaluation before you post it. The foreign currency revaluation has a preview that can be posted. You don't have to run the revaluation process again. You can export the results in the preview to Microsoft Excel to keep a history of how the amounts were calculated. You can't use batch processing if you want to preview the results of the revaluation.
 
 Select **OK** to process the foreign currency revaluation. A record is created to track the history of each run. A separate record is created for each legal entity and posting layer.
+
+>[!NOTE]
+> If the **Enable process automation for bank foreign currency revaluation** feature is enabled, process automations for bank foreign currency revaluations are available. For more information, see [Process automation](../../fin-ops-core/fin-ops/sysadmin/process-automation.md).
 
 ## Calculate unrealized gain/loss
 

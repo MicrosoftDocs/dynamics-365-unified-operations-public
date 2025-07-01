@@ -7,7 +7,7 @@ ms.collection:
 ms.custom:
   - responsible-ai-faqs
   - copilot-learning-hub
-ms.topic: article
+ms.topic: faq
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac

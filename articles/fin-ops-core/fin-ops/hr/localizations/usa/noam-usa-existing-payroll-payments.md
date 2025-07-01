@@ -3,7 +3,7 @@ title: Process existing payroll payments
 description: Learn about tasks such as reprinting pay statements, and replacing paychecks that have been lost or damaged, including step-by-step processes.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/24/2019
 ms.reviewer: twheeloc
 audience: Application User

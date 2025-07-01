@@ -3,7 +3,7 @@ title: Demand planning license requirements
 description: Learn about licensing requirements for Demand planning in Microsoft Dynamics 365 Supply Chain Management.
 author: AndersEvenGirke
 ms.author: aevengir
-ms.topic: conceptual
+ms.topic: article
 ms.date: 08/14/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac

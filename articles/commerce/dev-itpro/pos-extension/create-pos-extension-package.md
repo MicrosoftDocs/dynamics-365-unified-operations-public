@@ -3,7 +3,7 @@ title: Create a POS extension package project
 description: This article explains how to create a Point of Sale (POS) extension package project.
 author: josaw1
 ms.date: 04/13/2021
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

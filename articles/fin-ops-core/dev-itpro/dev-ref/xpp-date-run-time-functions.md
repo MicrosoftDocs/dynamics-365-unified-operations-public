@@ -1,10 +1,10 @@
 ---
 title: X++ date runtime functions
 description: Learn about the date run-time functions, including the dyName, dayOfMth, dayOfWk, and dayOfYr functions, with parameters, return values, and examples.
-author: josaw1
-ms.author: josaw
+author: pvillads
+ms.author: pvillads
 ms.topic: language-reference
-ms.date: 11/03/2017
+ms.date: 05/19/2025
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -45,9 +45,7 @@ The valid values for the number parameter are **1** through **7**. Monday is rep
 ```xpp
 static void dayNameExample(Args _arg)
 {
-    str s;
-    ;
-    s = dayName(01);
+    str s = dayName(1);
     print "First day of the week's name is " + s;
     pause;
 }
@@ -64,7 +62,7 @@ int dayOfMth(date date)
 
 | Parameter | Description       |
 |-----------|-------------------|
-| date      | The date to test. |
+| date      | The date for which to return the day in the month. |
 
 ### Return value
 
@@ -73,7 +71,7 @@ An integer between 1 and 31 that indicates the day of the month for the specifie
 ### Remarks
 
 ```xpp
-dayOfMth(31122001) //returns 31.
+dayOfMth(31\12\2001) // returns 31.
 ```
 
 ### Example
@@ -82,9 +80,8 @@ dayOfMth(31122001) //returns 31.
 static void dayOfMthExample(Args _arg)
 {
     date d = today();
-    int i;
-    ;
-    i = dayOfMth(d);
+    int i = dayOfMth(d);
+
     print "Today's day of the month is " + int2Str(i);
     pause;
 }
@@ -113,9 +110,8 @@ The number of the specified day in the week.
 static void dayOfWkExample(Args _arg)
 {
     date d = today();
-    int i;
-    ;
-    i = dayOfWk(d);
+    int i = dayOfWk(d);
+
     print "Today's day of the week is " + int2Str(i);
     pause;
 }
@@ -140,7 +136,7 @@ The number of days between January 1 and the specified date, inclusive.
 
 ### Remarks
 
-January 1 is **1**, and December 31 is either **365** or **366**.
+January 1 is **1**, and December 31 is either **365** or **366** depending on whether the year is a leap year.
 
 ### Example
 
@@ -148,9 +144,8 @@ January 1 is **1**, and December 31 is either **365** or **366**.
 static void dayOfYrExample(Args _arg)
 {
     date d = today();
-    int i;
-    ;
-    i = dayOfYr(d);
+    int i = dayOfYr(d);
+
     print "Today's day of the year is " + int2Str(i);
     pause;
 }
@@ -176,12 +171,12 @@ The **date** value of the last day in the specified month.
 ### Remarks
 
 ```xpp
-endMth(0221988); //Returns the date 2921988 because 1988 is a leap year.
-endMth(0221989); //Returns the date 2821989.
+endMth(02\2\1988); //Returns the date 29\2\1988 because 1988 is a leap year.
+endMth(02\2\1989); //Returns the date 28\2\1989.
 ```
 
 ## mkDate
-Creates a date, based on three integers that indicate the day, month, and year, respectively. "Shorthand" values for the year argument, for example, "y", are not supported.
+Creates a date, based on three integers that indicate the day, month, and year, respectively. 
 
 ```xpp
 date mkDate(int day, int month, int year)
@@ -201,7 +196,7 @@ A **date** value that is based on the values of the *day*, *month*, and *year* p
 
 ### Remarks
 
-If the date isn't valid, this method returns a **0** (zero, 1/1/1900) date. Beginning with Dynamics AX 7.0(February 2016), shortcut values for the year, e.g. 75 for 1975, are not supported. If you provide a shortcut value for the year, a date of 1/1/1900 is returned.
+If the date isn't valid, this method returns a **0** (zero, 1/1/1900) date. 
 
 ### Example
 
@@ -209,8 +204,8 @@ If the date isn't valid, this method returns a **0** (zero, 1/1/1900) date. Begi
 static void mkDateExample(Args _arg)
 {
     date d;
-    ;
-    // Returns the date 0112005.
+    
+    // Returns the date 01\01\2005.
     d = mkDate(1, 1, 2005);
     print d;
     pause;
@@ -243,10 +238,9 @@ The valid values of the *number* parameter are **1** through **12**. January is 
 ```xpp
 static void mthNameExample(Args _arg)
 {
-    str s;
-    ;
     // MthName(6) returns the text string "June".
-    s = mthName(6);
+    str s = mthName(6);
+
     print "Month name is " + s;
     pause;
 }
@@ -274,9 +268,8 @@ The number of the month in the year, for the month that is represented by the *d
 ```xpp
 static void mthOfYrExample(Args _arg)
 {
-    int i;
-    ;
-    i = mthOfYr(today());
+    int i = mthOfYr(today());
+
     print "The number of the month in today's date is " + int2Str(i);
     pause;
 }
@@ -302,8 +295,8 @@ The closest match to the specified date that is found in the next month.
 ### Remarks
 
 ```xpp
-nextMth(2921996); //returns 29/03/1996.
-nextMth(3111996); //returns 2921996, because 1996 is a leap year.
+nextMth(29\2\1996); //returns 29/03/1996.
+nextMth(31\1\1996); //returns 2921996, because 1996 is a leap year.
 ```
 
 ### Example
@@ -311,9 +304,8 @@ nextMth(3111996); //returns 2921996, because 1996 is a leap year.
 ```xpp
 static void nextMthExample(Args _arg)
 {
-    date d;
-    ;
-    d = nextMth(today());
+    date d = nextMth(today());
+
     print "Closest date next month is "
     + date2Str(d, 2, 2, -1, 2, -1, 4);
     pause;
@@ -339,16 +331,15 @@ The closest match to specified date that is found in the next quarter.
 
 ### Remarks
 
-For example, **nextQtr(3111998)** returns **3041998**.
+For example, **nextQtr(31\\1\\1998)** returns **30\\4\\1998**.
 
 ### Example
 
 ```xpp
 static void nextQtrExample(Args _arg)
 {
-    date d;
-    ;
-    d = nextQtr(today());
+    date d = nextQtr(today());
+
     print "Closest date next quarter is "
         + date2Str(d, 2, 2, -1, 2, -1, 4);
     pause;
@@ -374,16 +365,15 @@ The closest match to the specified date that is found in the following year.
 
 ### Remarks
 
-For example, **nextyr(2921998)** returns **2821999**.
+For example, **nextyr(29\\2\\1998)** returns **28\\2\\1999**.
 
 ### Example
 
 ```xpp
 static void nextYrExample(Args _arg)
 {
-    date d;
-    ;
-    d = nextYr(today());
+    date d = nextYr(today());
+
     print "Closest date next year is "
         + date2Str(d, 2, 2, -1, 2, -1, 4);
     pause;
@@ -410,8 +400,8 @@ The closest match to the specified date that is found in the previous month.
 ### Remarks
 
 ```xpp
-prevMth(3131996); //Returns the date 29/02/1996 because 1996 is a leap year.
-prevMth(2821998); //Returns the date 28/01/1998.
+prevMth(31\3\1996); // Returns the date 29/02/1996 because 1996 is a leap year.
+prevMth(28\2\1998); // Returns the date 28/01/1998.
 ```
 
 ## prevQtr
@@ -434,8 +424,8 @@ The closest match to the specified date that is found in the previous quarter.
 ### Remarks
 
 ```xpp
-prevQtr(3041998); //Returns the date 30/01/1998.
-prevQtr(2951996); //Returns the date 29/02/1996, because 1996 is a leap year.
+prevQtr(30\4\1998); // Returns the date 30/01/1998.
+prevQtr(29\5\1996); // Returns the date 29/02/1996, because 1996 is a leap year.
 ```
 
 ## prevYr
@@ -458,8 +448,8 @@ The closest match to the specified date that is found in the previous year.
 ### Remarks
 
 ```xpp
-prevYr(2921996); //Returns the date 28/02/1995 because 1996 is a leap year.
-prevYr(2821998); //Returns the date 28/02/1997.
+prevYr(29\2\1996); //Returns the date 28/02/1995 because 1996 is a leap year.
+prevYr(28\2\1998); //Returns the date 28/02/1997.
 ```
 
 ## systemDateGet
@@ -551,9 +541,8 @@ The number of seconds that have passed since midnight.
 ```xpp
 static void timeNowExample(Args _arg)
 {
-    int i;
-    ;
-    i = timeNow();
+    int i = timeNow();
+
     print "The number of seconds since midnight is " + int2Str(i);
     pause;
 }
@@ -575,9 +564,8 @@ The current date.
 ```xpp
 static void todayExample(Args _arg)
 {
-    date d;
-    ;
-    d = today();
+    date d = today();
+    
     print "Today's date is " + date2Str(d, 0, 2, -1, 2, -1, 4);
     pause;
 }
@@ -608,36 +596,40 @@ The following code example compares the **wkOfYr** function with the **Global::w
 // X++ job, under AOT > Jobs.
 static void WeekTests3Job(Args _args)
 {
-int weekNum, i;
-date dateTest;
-str sMessages[];
-//---------------------------------------------
-sMessages[1] = "----- #1.  For Sunday, January 5, 2003 -----";
-dateTest = 512003; // DayMonthYear  format.
-weekNum = wkOfYr(dateTest);
-sMessages[2] = int2str(weekNum) + " = wkOfYr funtion";
-weekNum = Global::weekOfYear(dateTest);
-sMessages[3] = int2str(weekNum) + " = Global::weekOfYear method";
-//---------------------------------------------
-sMessages[4] = " ";
-sMessages[5] = "----- #2.  For Wednesday, August 20, 2003 -----";
-dateTest = 2082003;
-weekNum = wkOfYr(dateTest);
-sMessages[6] = int2str(weekNum) + " = wkOfYr funtion";
-weekNum = Global::weekOfYear(dateTest);
-sMessages[7] = int2str(weekNum) + " = Global::weekOfYear method";
-//---------------------------------------------
-sMessages[8] = " ";
-sMessages[9] = "----- #3.  For Sunday, December 28, 2003 -----";
-dateTest = 28122003;
-weekNum = wkOfYr(dateTest);
-sMessages[10] = int2str(weekNum) + " = wkOfYr funtion";
-weekNum = Global::weekOfYear(dateTest);
-sMessages[11] = int2str(weekNum) + " = Global::weekOfYear method";
-for (i=1; i<= 11; i++)
-{
-Global::info(sMessages[i]);
-}
+    int weekNum, i;
+    date dateTest;
+    str sMessages[];
+
+    //---------------------------------------------
+    sMessages[1] = "----- #1.  For Sunday, January 5, 2003 -----";
+    dateTest = 512003; // DayMonthYear  format.
+    weekNum = wkOfYr(dateTest);
+    sMessages[2] = int2str(weekNum) + " = wkOfYr funtion";
+    weekNum = Global::weekOfYear(dateTest);
+    sMessages[3] = int2str(weekNum) + " = Global::weekOfYear method";
+    
+    //---------------------------------------------
+    sMessages[4] = " ";
+    sMessages[5] = "----- #2.  For Wednesday, August 20, 2003 -----";
+    dateTest = 2082003;
+    weekNum = wkOfYr(dateTest);
+    sMessages[6] = int2str(weekNum) + " = wkOfYr funtion";
+    weekNum = Global::weekOfYear(dateTest);
+    sMessages[7] = int2str(weekNum) + " = Global::weekOfYear method";
+    
+    //---------------------------------------------
+    sMessages[8] = " ";
+    sMessages[9] = "----- #3.  For Sunday, December 28, 2003 -----";
+    dateTest = 28122003;
+    weekNum = wkOfYr(dateTest);
+    sMessages[10] = int2str(weekNum) + " = wkOfYr funtion";
+    weekNum = Global::weekOfYear(dateTest);
+    sMessages[11] = int2str(weekNum) + " = Global::weekOfYear method";
+    
+    for (i=1; i<= 11; i++)
+    {
+        Global::info(sMessages[i]);
+    }
 }
 ```
 

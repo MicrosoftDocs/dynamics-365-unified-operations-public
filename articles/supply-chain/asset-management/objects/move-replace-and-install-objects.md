@@ -3,7 +3,7 @@ title: Move, replace, and install assets
 description: Learn how to move, replace, and install assets in Asset Management, including outlines and step-by-step processes for each type of asset.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 06/26/2019
 ms.reviewer: kamaybac
 ms.search.form: EntAssetObjectReplace, EntAssetObjectInstallLookup, EntAssetObjectMove, EntAssetObjectTableEditSubObjects

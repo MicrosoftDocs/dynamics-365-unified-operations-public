@@ -3,7 +3,7 @@ title: Company directory mobile workspace
 description: Learn about the Company directory mobile workspace, which lets users view and contact other employees in their organization.
 author: jcart1106
 ms.author: jcart
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/24/2022
 ms.custom:
 ms.reviewer: johnmichalak

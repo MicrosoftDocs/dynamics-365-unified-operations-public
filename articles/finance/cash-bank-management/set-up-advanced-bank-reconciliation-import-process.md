@@ -3,7 +3,7 @@ title: Set up the advanced bank reconciliation import process
 description: Learn how to import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/24/2024
 ms.reviewer: twheeloc
 ms.custom: evergreen

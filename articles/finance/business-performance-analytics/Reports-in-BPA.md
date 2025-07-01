@@ -3,7 +3,7 @@ title: Reports in Business performance analytics
 description: Learn about reports that are related to the record-to-report value chain in business performance analytics, including a table outlining various aspects of reports.
 author: jinniew
 ms.author: jiwo
-ms.topic: conceptual
+ms.topic: article
 ms.date: 05/20/2024
 ms.custom:
 ms.reviewer: twheeloc 

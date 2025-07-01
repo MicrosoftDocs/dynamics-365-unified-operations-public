@@ -6,7 +6,7 @@ title: Go-live FAQ
 description: This article lists frequently asked questions about how to go live with a Dynamics 365 Human Resources implementation project. 
 author: rachel-profitt
 ms.date: 10/13/2020
-ms.topic: article
+ms.topic: faq
 # optional metadata
 
 ms.search.form: 

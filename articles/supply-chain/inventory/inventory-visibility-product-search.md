@@ -3,11 +3,12 @@ title: Set up product search for Inventory Visibility
 description: Learn how to set up product search for Inventory Visibility, which lets users search for products and on-hand inventory information based on specific attributes.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: how-to
-ms.date: 11/20/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Set up product search for Inventory Visibility
@@ -60,7 +61,6 @@ If some table maps fail to do an initial synchronization because of a permission
 1. Sign in to your Dataverse environment, go to **Settings** \> **Security**, and select **Teams**.
 1. Open your team, and select **Manage Roles**.
 1. Make sure that the following role is assigned to your team:
-    
     - *System Administrator*
 
 For more information about how to set up dual-write security roles, see [Set up dual-write security roles and permissions](../../fin-ops-core/dev-itpro/data-entities/dual-write/security-roles.md).

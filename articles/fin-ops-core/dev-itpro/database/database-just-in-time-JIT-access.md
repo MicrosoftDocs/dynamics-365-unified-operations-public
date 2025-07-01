@@ -15,7 +15,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../includes/banner.md)]
 
-This article provides the steps necessary to enable database access using a just-in-time (JIT) fashion. JTT is useful if access to the database is required for various troubleshooting efforts, running unplanned queries, or data upgrade problem solving. This process is available for both Lifecycle Services managed environments and PPAC managed environments. For more information about the available environment types, see [Deployment overview](../deployment/cloud-deployment-overview.md).
+This article provides the steps necessary to enable database access using a just-in-time (JIT) fashion. JTT is useful if access to the database is required for various troubleshooting efforts, running unplanned queries, or data upgrade problem solving. This process is available for both Lifecycle Services managed environments and Power Platform admin center managed environments. For more information about the available environment types, see [Deployment overview](../deployment/cloud-deployment-overview.md).
 
 ## Lifecycle Services Managed Self-service environments
 

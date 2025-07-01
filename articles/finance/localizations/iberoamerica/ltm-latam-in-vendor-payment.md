@@ -3,7 +3,7 @@ title: Use the LATAM extension in vendor payments journals
 description: Learn how to use payment methods in vendor payments, including prerequisites and a process for adding LATAM information to vendor payment journal lines.
 author: Cpicon85
 ms.author: v-cpicon
-ms.topic: article 
+ms.topic: how-to
 ms.date: 10/18/2023 
 ms.custom: bap-template
 ms.reviewer: johnmichalak

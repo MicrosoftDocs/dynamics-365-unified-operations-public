@@ -3,7 +3,7 @@ title: Revenue recognition reallocation - Scenario 1
 description: Access a reallocation scenario where two sales orders are entered, but they are only confirmed. You can get similar results if more than two sales orders are confirmed.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: conceptual
+ms.topic: article
 ms.date: 12/21/2020
 ms.custom:
 ms.reviewer: twheeloc

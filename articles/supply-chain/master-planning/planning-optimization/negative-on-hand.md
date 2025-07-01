@@ -1,9 +1,9 @@
 ---
 title: Planning with negative on-hand quantities
 description: Learn how negative on-hand is handled, including a step-by-step process describing how functionality works and various examples. 
-author: t-benebo
-ms.author: benebotg
-ms.topic: article
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 07/22/2021
 ms.custom:
 ms.reviewer: kamaybac 

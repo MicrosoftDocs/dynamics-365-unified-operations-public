@@ -5,7 +5,7 @@ author: prasungoel
 ms.author: prasungoel
 ms.reviewer: kamaybac
 ms.search.form: CostingVersion
-ms.topic: conceptual
+ms.topic: article
 ms.date: 02/06/2025
 ms.custom: 
   - bap-template

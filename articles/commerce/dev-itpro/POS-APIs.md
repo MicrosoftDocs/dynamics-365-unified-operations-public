@@ -2,24 +2,22 @@
 title: Point of sale (POS) APIs
 description: This article contains a list of available POS APIs and how to access them.
 author: josaw1
-ms.date: 11/03/2020
-ms.topic: article
-audience: Developer
+ms.date: 04/30/2025
+ms.topic: how-to
 ms.reviewer: josaw
-ms.search.region: global
+ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-29
-ms.dyn365.ops.version: AX 8.0, AX 8.1
 ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
+  - bap-template
 ---
 # Point of sale (POS) APIs
+
 [!include [banner](../includes/banner.md)]
 
-Retail POS APIs help you to easily build extensions or new features to the POS app. For example, if you are extending the Retail POS application to add new features in which to want to get product details, change prices, or add items to a cart. you can consume APIs that will do the work for you. To do this, you need to call the APIs to do the work. The POS API simplifies the extension pattern and provides continuous support to build the extensions.
+Retail POS APIs help you to easily build extensions or new features to the POS app. For example, if you're extending the Retail POS application to add new features in which to want to get product details, change prices, or add items to a cart. You can consume APIs that do the work for you by calling the APIs to do the work. The POS API simplifies the extension pattern and provides continuous support to build the extensions.
 
-Extension patterns have been unified across commerce runtime (CRT), POS, and Hardware station (HWS) by following the request/response pattern. All the POS APIs are exposed as request/response like CRT and HWS. 
+Extension patterns are unified across Commerce runtime (CRT), POS, and Hardware station (HWS) by following the request/response pattern. All the POS APIs are exposed as request/response like CRT and HWS. 
 
 POS APIs are categorized into three different scenarios:
 
@@ -29,10 +27,10 @@ POS APIs are categorized into three different scenarios:
 
 - **Create** – Create new APIs using the exposed POS interface, which can be used across extensions.
 
-Many APIs can be consumed in extensions. For example, if you want to change the price of the item based on an external web service call, you can call PriceOverrideOperationRequest to change the price of the item. Within the consume, the APIs are sub categorized by module like cart, peripherals, store operations, etc.
+Many APIs can be consumed in extensions. For example, if you want to change the price of an item based on an external web service call, you can call PriceOverrideOperationRequest to change the price of the item. The APIs are subcategorized by module by functionality, for example by cart, peripherals, or store operations.
 
 > [!NOTE]
-> A list of the all of the APIs is available in **Pos.Api.d.ts**, which is part of the Retail SDK (...Retail SDK\POS\Extensions\Pos.Api.d.ts). Extensions must consume only the exposed request and response from the POS.Api.d.ts and no modification is allowed to Pos.Api.d.ts. Extensions should not consume or update any POS APIs, properties, methods, or handlers directly from POS commerce or sessions objects. 
+> A list of the all of the APIs is available in **Pos.Api.d.ts**, which is part of the Retail SDK (...Retail SDK\POS\Extensions\Pos.Api.d.ts). Extensions must consume only the exposed request and response from the POS.Api.d.ts and no modification is allowed to Pos.Api.d.ts. Extensions shouldn't consume or update any POS APIs, properties, methods, or handlers directly from POS commerce or sessions objects. 
 
 ## How to consume APIs in your extension
 
@@ -40,9 +38,9 @@ Use the following steps to consume Retail APIs in your extensions.
 
 1.  Import the API in your extension file.
 
-    For example, if you want to consume the save attribute on cart API in your extension, then you need to add the following import statements.
+    For example, if you want to consume the "Save attribute on cart" API in your extension, then you must add the following import statements.
 
-    The pattern is import { api name } from "PosApi/Consume/Module name";
+    The pattern is import { API name } from "PosApi/Consume/Module name";
  
     ```typescript
     import { SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse } from "PosApi/Consume/Cart";
@@ -55,13 +53,13 @@ Use the following steps to consume Retail APIs in your extensions.
 
     import { ProxyEntities } from "PosApi/Entities";
     ```
-3.  Declare the API variable and execute it using the POS runtime, which you can access the runtime by using: this.context.runtime.executeAsync("api name")
+3.  Declare the API variable and execute it using the POS runtime, which you can access the runtime by using: this.context.runtime.executeAsync("API name")
 
     ```typescript
     executeAsync<TResponse extends Response>(request: Request<TResponse>): Promise<Client.Entities.ICancelableDataResult<TResponse>>;
     ```
     
-    For example, if you want to execute the tender removal, use SaveAttributesOnCartClientRequest api, and refer to the following steps.
+    For example, if you want to execute the tender removal, use the SaveAttributesOnCartClientRequest API and refer to the following steps.
  
     ```typescript
     let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
@@ -136,13 +134,44 @@ currentCart = getCurrentCartClientResponse.data.result;
  });
 ```
 
+**Trigger toast notification**
+```typescript
+import {
+    TriggerToastNotificationClientRequest,
+    TriggerToastNotificationClientResponse
+} from "PosApi/Consume/Device";
+import { ClientEntities } from "PosApi/Entities";
+........
+
+const contentProps: ClientEntities.IToastNotificationComponentContent = {
+    notificationTitle: "title",
+    notificationBody: "body",
+    primaryFooterButton: {
+        label: "primary_label",
+        action: () => doSomethingPrimary()
+    },
+    secondaryFooterButton: {
+        label: "secondary_label",
+        action: () => doSomethingSecondary()
+    },
+    notificationMessageType: ClientEntities.ToastMessageType.WARNING
+};
+
+const triggerToastNotificationClientRequest: TriggerToastNotificationClientRequest<TriggerToastNotificationClientResponse> =
+    new TriggerToastNotificationClientRequest<TriggerToastNotificationClientResponse>("correlationId", contentProps);
+
+this.context.runtime.executeAsync(triggerToastNotificationClientRequest)
+    .then((triggerToastNotificationClientResponse: ClientEntities.ICancelableDataResult<TriggerToastNotificationClientResponse>) => {
+        doSomething(triggerToastNotificationClientResponse);
+    });
+```
 ### Cart
 
 The following table lists APIs exposed to perform cart-related functionality.
 
 | POS API                                   | Description                            | Release                  |
 |-------------------------------------------|----------------------------------------|--------------------------|
-| AddPreprocessedTenderLineToCartClientRequest    | Adds the pre-processed tender line to the cart.   | 10.0.14  |
+| AddPreprocessedTenderLineToCartClientRequest    | Adds the preprocessed tender line to the cart.   | 10.0.14  |
 | AddTenderLineToCartClientRequest                | Adds the tender line to the cart.  | 10.0.14  |
 | ConcludeTransactionClientRequest                | Concludes the transaction.    | 10.0.14  |
 | GetCurrentCartClientRequest                     | Gets the current cart.   | 10.0.14  |
@@ -300,6 +329,7 @@ The following table lists APIs exposed to perform device-related functionality.
 | GetActiveHardwareStationClientRequest |
 | GetApplicationVersionClientRequest    |
 | GetChannelConfigurationClientRequest  |
+| TriggerToastNotificationClientRequest |
 
 ### Diagnostics 
 
@@ -436,7 +466,7 @@ The following table lists APIs exposed to perform store operations-related funct
 | LoyaltyCardPointsBalanceOperationRequest        | Gets the loyalty card balance.  | 10.0.14        |
 | GetCommissionSalesGroupsServiceRequest          | Gets the commission sales group.  |  10.0.14        |
 | GetCurrenciesServiceRequest                     | Gets the store currencies. | 10.0.14        |
-| GetSrsReportDataSetServiceRequest               | Gets the Srs report data.  |  10.0.14        |
+| GetSrsReportDataSetServiceRequest               | Gets the software requirements specification (SRS) report data.  |  10.0.14        |
 | SearchCommissionSalesGroupsServiceRequest       |  Search commission sales groups request.   | 10.0.14        |
 | IssueLoyaltyCardOperationRequest                |  Issues loyalty card.  |  10.0.14        |
 | GetPickingAndReceivingOrdersClientRequest       |  Gets the picking and receiving orders list.  |    10.0.14        |

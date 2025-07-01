@@ -3,7 +3,7 @@ title: Revenue recognition reallocation - Scenario 2
 description: Access a reallocation scenario where two sales orders are entered, and then the customer adds an item to the contract after first sales order is invoiced.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: conceptual
+ms.topic: article
 ms.date: 12/21/2020
 ms.custom: 
 ms.reviewer: twheeloc

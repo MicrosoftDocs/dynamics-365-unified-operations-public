@@ -3,7 +3,7 @@ title: Update maintenance budgets
 description: Learn how to update a maintenance budget in Asset Management, including an outline and step-by-step process for recalculating maintenance budgets.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/13/2019
 ms.custom: 
 ms.reviewer: kamaybac 

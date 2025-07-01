@@ -3,7 +3,7 @@ title: Format 1003 file for Colombia configuration
 description: Learn about the configuration that's required to issue the format 1003 file for Colombia, including an outline on configuring application-specific parameters.
 author: Fhernandez0088
 ms.author: v-federicohe
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/20/2023 
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -17,8 +17,8 @@ This article explains the configuration that's required to issue a format 1003 f
 
 Before you print the report, the following prerequisites must be met:
 
-- The legal entity must have an address in a country within the Latin American (LATAM) localization.
-- The country-specific LATAM feature and the general feature must be activated.
+- The legal entity must have an address in a country/region within the Latin American (LATAM) localization.
+- The country/region specific LATAM feature and the general feature must be activated.
 - The following configurations must be imported from the Global repository:
 
     - LTM Tax Report

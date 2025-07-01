@@ -3,7 +3,7 @@ title: Garnishments, tax levies, and administrative fees FAQ
 description: Access frequently asked questions and answers about garnishments and tax levies, including questions about deducted amounts and sums.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: faq
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User

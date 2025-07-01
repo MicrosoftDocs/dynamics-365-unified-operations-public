@@ -3,7 +3,7 @@ title: Deploy a new environment
 description: Learn how to deploy a new environment using the self-service deployment experience, including how to delete an environment.
 author: rashmansur
 ms.author: rashmim
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 05/10/2023
 ms.reviewer: johnmichalak
 audience: Developer

@@ -3,7 +3,7 @@ title: Wave template grouping
 description: Wave template grouping enables the system to use wave template setups to determine, based on criteria that you define and assign them to new or existing waves.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/01/2020
 ms.custom:
 ms.reviewer: kamaybac

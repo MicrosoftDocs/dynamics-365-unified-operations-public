@@ -1,37 +1,41 @@
 ---
 title: Reverse an endorsed bill of exchange
-description: Learn about reversing an endorsed bill of exchange from the accounts payable option, including a step-by-step process using the JPMF demo data company.
+description: Learn how to reverse an endorsed bill of exchange from the accounts payable option for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 05/02/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseReverse, LedgerTransVoucher
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Reverse an endorsed bill of exchange
 
 [!include [banner](../../includes/banner.md)]
 
-This task walks you through reversing an endorsed bill of exchange.
+This article explains how to reverse an endorsed bill of exchange from the accounts payable option for Japan in Microsoft Dynamics 365 Finance.
 
-Before you can complete this task, you must have at least one endorsed bill of exchange. 
+Before you can complete the following procedure, you must have at least one endorsed bill of exchange. 
 
-This task was created using the demo data company JPMF.
+The procedure uses the demo data company JPMF.
 
-1. Go to Accounts payable > Payments > Endorse bills of exchange.
-2. In the list, find and select the desired record.
-    * Select a bill of exchange that has a status of "Endorsed". You can't reserve a bill of exchange if the vendor transaction is already settled. Before you reserve the endorsement, undo the settlement.  
-3. Click Reverse endorsement to open the drop dialog.
-4. Click Reverse endorsement.
-    * You can change the reverse date if necessary.  
-5. Click Inquiry.
-6. Click Voucher.
-    * Verify that an accounting voucher was generated for the reversal.  
+To reverse an endorsed bill of exchange, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts payable \> Payments \> Endorse bills of exchange**.
+1. In the list, find and select a bill of exchange with a status of **Endorsed**.
+
+    > [!NOTE]
+    > You can't reserve a bill of exchange if the vendor transaction is already settled. Before you reserve the endorsement, you must undo the settlement.  
+
+1. Select  **Reverse endorsement** to open the drop dialog.
+1. Select  **Reverse endorsement**. You can change the reverse date if necessary.  
+1. Select  **Inquiry**.
+1. Select  **Voucher**.
+1. Verify that an accounting voucher was generated for the reversal.  
 
 
 

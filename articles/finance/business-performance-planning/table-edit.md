@@ -3,7 +3,7 @@ title: Table edit visual
 description: Learn how to use the Table edit visual in the Business performance planning application, including an example and an outline on configuration settings.
 author: ShielaSogge
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/07/2023
 ms.reviewer: twheeloc
 audience: Application User

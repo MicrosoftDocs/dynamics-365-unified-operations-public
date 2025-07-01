@@ -3,7 +3,7 @@ title: Formulas and formula versions
 description: Learn about formulas and formula versions, which define the materials, ingredients, and outcomes of a specific process in process manufacturing.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: conceptual
+ms.topic: article
 ms.date: 05/22/2024
 ms.custom:
   - bap-template

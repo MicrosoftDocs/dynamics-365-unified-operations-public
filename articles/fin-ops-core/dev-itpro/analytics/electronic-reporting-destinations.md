@@ -1,12 +1,13 @@
 ---
 title: Electronic reporting (ER) destinations
 description: Learn about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
-author: liza
-ms.author: filatovm
-ms.topic: article
-ms.date: 02/05/2025
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 04/23/2025
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.search.form: DocuType, ERSolutionTable
@@ -67,7 +68,7 @@ You can create **multiple file destinations** for each output component of the s
 
 [![Configuring multiple destinations for a single format element.](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
-When you run an ER format, all destinations that were configured for components of the format are always run. In addition, the ER destinations functionality lets you configure different sets of destinations for a single ER format. This configuration marks each set as configured for a particular user action. The ER API has been [extended](er-apis-app10-0-17.md) so that an action can be provided that the user performs by running an ER format. The action code that is provided is passed to ER destinations. You can run different destinations of an ER format, depending on the action code that is provided. For more information, see [Configure action-dependent ER destinations](er-action-dependent-destinations.md).
+When you run an ER format, all destinations that were configured for components of the format are always run. In addition, the ER destinations functionality lets you configure different sets of destinations for a single ER format. This configuration marks each set as configured for a particular user action. The ER API was [extended](er-apis-app10-0-17.md) so that an action can be provided that the user performs by running an ER format. The action code that is provided is passed to ER destinations. You can run different destinations of an ER format, depending on the action code that is provided. For more information, see [Configure action-dependent ER destinations](er-action-dependent-destinations.md).
 
 ## Destination types
 
@@ -82,7 +83,7 @@ The following destinations are currently supported for ER formats. You can disab
 
 ## Applicability
 
-You can set up destinations only for ER configurations that have been imported, and for the formats that are available on the **Electronic reporting configurations** page.
+You can set up destinations only for ER configurations that were imported, and for the formats that are available on the **Electronic reporting configurations** page.
 
 > [!NOTE]
 > Configured destinations are company-specific. If you plan to use an ER format in different companies of the current Finance instance, you must configure destinations for that ER format for each of those companies.
@@ -95,7 +96,7 @@ At the same time, you might have multiple versions of the format that have been 
 
 [![Configuration versions.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
-By default, configured destinations are applied only when you run an ER format version that has a status of either **Completed** or **Shared**. However, you must sometimes use configured destinations when the draft version of an ER format is run. For example, you modify a draft version of your format, and you want to use configured destinations to test how generated output will be delivered. Follow these steps to apply destinations for an ER format when the draft version is run.
+By default, configured destinations are applied only when you run an ER format version that has a status of either **Completed** or **Shared**. However, you must sometimes use configured destinations when the draft version of an ER format is run. For example, you modify a draft version of your format, and you want to use configured destinations to test how generated output is delivered. Follow these steps to apply destinations for an ER format when the draft version is run.
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
@@ -119,11 +120,11 @@ After you complete this setup, the **Run draft** option becomes available for ER
 
 Usually, an ER format is run within the scope of a specific business process. However, the delivery of an outbound document that is generated during execution of an ER format must sometimes be considered part of that business process. In this case, if delivery of a generated outbound document to a configured destination is unsuccessful, execution of the business process must be canceled. To configure the appropriate ER destination, select the **Stop processing on failure** option.
 
-For example, you configure vendor payment processing so that the **ISO20022 Credit Transfer** ER format is run to generate the payment file and supplementary documents (for example, the covering letter and control report). If a payment should be considered successfully processed only if the covering letter is successfully delivered by email, you must select the **Stop processing on failure** checkbox for the **CoveringLetter** component in the appropriate file destination, as shown in the following illustration. In this case, the status of the payment that is selected for processing will be changed from **None** to **Sent** only when the covering letter that is generated is successfully accepted for delivery by an email provider that is configured in the Finance instance.
+For example, you configure vendor payment processing so that the **ISO20022 Credit Transfer** ER format is run to generate the payment file and supplementary documents (for example, the covering letter and control report). If a payment should be considered successfully processed only if the covering letter is successfully delivered by email, you must select the **Stop processing on failure** checkbox for the **CoveringLetter** component in the appropriate file destination, as shown in the following illustration. In this case, the status of the payment that is selected for processing changes from **None** to **Sent** only when the covering letter that is generated is successfully accepted for delivery by an email provider that is configured in the Finance instance.
 
 [![Configuring process handling for file destination failure.](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
 
-If you clear the **Stop processing on failure** checkbox for the **CoveringLetter** component in the destination, a payment is considered successfully processed even if the covering letter isn't successfully delivered by email. The status of the payment will be changed from **None** to **Sent** even if the covering letter can't be sent because, for example, the email address of the recipient or sender is missing or incorrect.
+If you clear the **Stop processing on failure** checkbox for the **CoveringLetter** component in the destination, a payment is considered successfully processed even if the covering letter isn't successfully delivered by email. The status of the payment changes from **None** to **Sent** even if the covering letter can't be sent because, for example, the email address of the recipient or sender is missing or incorrect.
 
 ## <a name="OutputConversionToPDF"></a>Output conversion to PDF
 
@@ -132,9 +133,9 @@ You can use the PDF conversion option to convert output in Microsoft Office (Exc
 The PDF conversion option can be turned on for **Excel\\File** and  **Common\\File** components that are used to generate output in Office (Excel or Word) format. When this option is turned on, output that is generated in Office format is automatically converted to PDF format.
 
 > [!NOTE]
-> Pay attention to the warning message that you receive when you turn on the PDF conversion option for an ER component of the **Common\\File** type. This message informs you that there is no way to guarantee, at design time, that the selected file component exposes the content in PDF format or the PDF-convertible content at runtime. Therefore, you should turn on the option only if you're sure that the selected file component was configured to expose the content in PDF format or the PDF-convertible content at runtime.
+> Pay attention to the warning message that you receive when you turn on the PDF conversion option for an ER component of the **Common\\File** type. This message informs you that there isn't a way to guarantee, at design time, that the selected file component exposes the content in PDF format or the PDF-convertible content at runtime. Therefore, you should turn on the option only if you're sure that the selected file component was configured to expose the content in PDF format or the PDF-convertible content at runtime.
 > 
-> If you turn on the PDF conversion option for a format component, if that component exposes content in a format other than PDF, and if the exposed content can't be converted to PDF format, an exception will occur at runtime. The message that you receive informs you that the generated content can't be converted to PDF format.
+> If you turn on the PDF conversion option for a format component, if that component exposes content in a format other than PDF, and if the exposed content can't be converted to PDF format, an exception occurs at runtime. The message that you receive informs you that the generated content can't be converted to PDF format.
 
 ### Limitations
 
@@ -143,9 +144,14 @@ In versions earlier than Dynamics 365 Finance version 10.0.43, the PDF conversio
 - the PDF conversion option is available for cloud deployments and on-premises deployment that has [Internet connectivity](../user-interface/client-disconnected.md) enabled.
 - the PDF document that is produced is limited to a maximum length of 300 pages.
 
-In Dynamics 365 Finance version 10.0.43 and later, you can enable the **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature in **Feature management** to facilitate the seamless conversion of configurable business documents from Word or Excel formats to PDF. This feature utilizes AOS (Application Object Server) resources, eliminating the need for external conversion services. By leveraging in-app capabilities, it ensures efficient and secure document processing, reducing dependency on tools outside of Finance while maintaining high performance and reliability. This enhancement supports a wide range of business scenarios, providing users with the flexibility to generate and distribute professional-grade PDF documents directly within the application.
+In Dynamics 365 Finance version 10.0.43 and later, you can enable the **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature in **Feature management** to facilitate the seamless conversion of configurable business documents from Word or Excel formats to PDF. 
 
-The advantages of in-app PDF conversion when the **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature is enabled are:
+> [!NOTE]
+> The **In-App PDF conversion for Configurable Business Documents \(CBD\) \(preview\)** feature is available in Finance version 10.0.43 and the 10.0.2095.**124** build and later of the 10.0.42 version.
+
+This feature utilizes Application Object Server (AOS) resources to eliminate the need for external conversion services. Using in-app capabilities ensures efficient and secure document processing and reduces dependency on tools outside of Finance while maintaining high performance and reliability. This enhancement supports a wide range of business scenarios to provide users with the flexibility to generate and distribute professional-grade PDF documents directly within the application.
+
+The following are advantages of in-app PDF conversion when the **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature is enabled:
 
 - The PDF document that is produced isn't limited to 300 pages.
 - The Word document that is converted can contain a [large number of content controls](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
@@ -292,7 +298,7 @@ The formula is specific to the ER configuration. For example, if you use the ISO
 
 Your format must first be available in the ER configurations. If this prerequisite is met, open the **Electronic reporting destination** page, and create a new reference to the configuration. You must then have four file destinations, one for each output component. Create the first file destination, give it a name such as **Folder**, and select a file name that represents a folder in your configuration. Then select **Settings**, and make sure that all the destinations are disabled. For this file destination, the folder won't be created. By default, because of hierarchical dependencies between files and parent folders, the files behave in the same way. In other words, they won't be sent anywhere. To override that default behavior, you must create three more file destinations, one for each file. In the destination settings for each, you must enable the destination that the file should be sent to.
 
-## Additional resources
+## More information
 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 

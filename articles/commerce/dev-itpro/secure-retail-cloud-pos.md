@@ -3,7 +3,7 @@ title: Security best practices for Store Commerce for web in shared environments
 description: This article provides recommendations that can help secure Store Commerce for web in a shared environment.
 author: josaw1
 ms.date: 02/17/2023
-ms.topic: article
+ms.topic: best-practice
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

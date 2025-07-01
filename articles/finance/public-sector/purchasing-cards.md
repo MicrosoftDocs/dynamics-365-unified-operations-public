@@ -3,7 +3,7 @@ title: Purchasing cards
 description: Learn how to setup and track purchasing card transactions, including an outline and step-by-step process for enabling purchasing card pages and fields.
 author: velofog
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/03/2019
 ms.reviewer: twheeloc
 audience: Application User
