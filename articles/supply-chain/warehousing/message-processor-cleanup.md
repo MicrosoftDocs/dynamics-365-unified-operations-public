@@ -15,7 +15,7 @@ ms.custom:
 
 <!-- KFM: Who is the PM for this feature? We normally use the PM as the author in metadata. -->
 
-The [message processor](../supply-chain-dev/message-processor.md) is a framework that processes messages in the system. It can handle various types of messages, such as those related to inventory transactions, sales orders, and more. Over time, processed and canceled messages, which are no longer needed, can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency. <!-- KFM: I added this. Please confirm and enhance as needed. -->
+The [message processor](../supply-chain-dev/message-processor.md) is a framework that processes messages in the system. It can handle various types of messages, such as those related to inventory transactions, sales orders, and more. Over time, processed and canceled messages, which are no longer needed, can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency. <!-- KFM: I added this intro. Please confirm and enhance as needed. -->
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ Whenever you have at least one message queue set to be cleaned up, the system au
 
 ## Optimization advisor
 
-The [Optimization advisor](../../fin-ops-core/fin-ops/sysadmin/optimization-advisor-overview.md) can remind you to manage outdated messages when they exist in the message processor. The Optimization advisor includes a diagnostic called *Check for aged processed or canceled messages*<!-- KFM: where do we see this name? --> , which checks for processed or canceled messages that are older than a specified number of days <!-- KFM: how many days? can we configure this? -->and creates an optimization opportunity for them so you can take action directly from the **Optimization advisor** workspace. By default<!-- KFM: Can we change this? How? -->, the *Check for aged processed or canceled messages* rule runs on a monthly basis.
+The [Optimization advisor](../../fin-ops-core/fin-ops/sysadmin/optimization-advisor-overview.md) can remind you to manage outdated messages when they exist in the message processor<!-- KFM: Is this considered an alternative to using the scheduled task? Is there a scenario where we would use both? -->. The Optimization advisor includes a diagnostic called *Check for aged processed or canceled messages*<!-- KFM: where do we see this name? --> , which checks for processed or canceled messages that are older than a specified number of days <!-- KFM: how many days? can we configure this? -->and creates an optimization opportunity for them so you can take action directly from the **Optimization advisor** workspace. By default<!-- KFM: Can we change this? How? -->, the *Check for aged processed or canceled messages* rule runs on a monthly basis.
 
 To view and act on your optimization opportunities, including those related to cleaning up aged messages, follow these steps.
 
