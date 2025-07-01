@@ -52,4 +52,9 @@ This article describes how to set up information about the locations in a wareho
 7. Close the page.
 8. Refresh the page.
 
+## Warehouse blocking limitations
+
+Is there a way a warehouse to be blocked/closed/locked/stopped for future transactions? Blocking an entire warehouse for future transactions is not supported in the Inventory management module. However, you can block individual locations within a warehouse as needed. For more information about blocking specific locations, see [Inventory locations](../inventory-locations.md#blocked-locations).
+
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
