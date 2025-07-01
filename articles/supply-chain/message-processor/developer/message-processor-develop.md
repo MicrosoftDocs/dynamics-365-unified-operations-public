@@ -389,4 +389,5 @@ Follow these steps to create a new message type.
 
 ## Additional resources
 
+- [Monitor and control message processor messages](../message-processor.md)
 - [Clean up processed and canceled message processor messages](../warehousing/message-processor-cleanup.md)
