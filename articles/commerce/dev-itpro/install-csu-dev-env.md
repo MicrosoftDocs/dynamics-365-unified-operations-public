@@ -2,7 +2,7 @@
 title: Install Commerce Scale Unit on a development environment
 description: This article explains how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce.
 author: bstorie
-ms.date: 10/01/2024
+ms.date: 7/01/2025
 ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -183,9 +183,9 @@ To verify that the **IIS 6 Management Compatibility (IIS 6 Metabase Compatibilit
 To install the .NET Core hosting bundle on the development machine, follow these steps.
 
 1. Connect to the development machine using Remote Desktop Protocol (RDP).
-1. Open a web browser and go to [Download .NET 6.0 (Linux, macOS, and Windows](https://dotnet.microsoft.com/en-us/download/dotnet/6.0).
-1. In the **ASP.Net Core Runtime 6.0.X** section, select the **Hosting Bundle** installer for Windows to download it.
-1. Run the **dotnet-hosting-6.0.x-win.exe** installer.
+1. Open a web browser and go to [Download .NET 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
+1. In the **ASP.Net Core Runtime 8.0.X** section, select the **Hosting Bundle** installer for Windows to download it.
+1. Run the **dotnet-hosting-8.0.x-win.exe** installer.
 
 ### Download the sealed self-hosted installer
 
@@ -219,53 +219,6 @@ CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thu
 > [!NOTE]
 > - Since this is a development machine, using the same SSL thumbprint to run all services is allowed. For production and user acceptance testing (UAT) environments, these values should be different.
 > - Don't enter port 80 or 443 during installation. Entering either of these values interferes with the application object server (AOS) service that hosts the Commerce headquarters website. 
-
-## Additional steps for cloud (LCS) deployed development environments 
-
-The setup steps in [Install the sealed CSU](#install-the-sealed-csu) assume that you'll RDP into the development environment when accessing the CSU URL. To make the development environment sealed CSU accessible from outside the development VM, you must perform the following additional tasks.   
-
-> [!NOTE]
-> External accessible redirection has only been tested with Commerce version 10.0.39 and earlier. This functionality is based on redirecting the previous legacy (default) Retail Server URL to the sealed CSU on the VM. Support for this functionality will be removed in future versions along with the removal of the legacy (default) Retail Server. 
-
-### Create a channel profile for external access
-
-To create a channel profile for external access, follow these steps.
-
-1. In headquarters, go to **Retail and Commerce \> Channel Setup \> Channel Profiles** and create a new channel profile.
-1. Set the following property values: 
-    1. For **Retail Server URL**, enter `https://<LCSEnvironmentName>devret.axcloud.dynamics.com/RetailServer/Commerce`.
-    1. For **Cloud POS**, enter `https://<LCSEnvironmentName>devret.axcloud.dynamics.com/POS`.	
-1. Select **Save**.
-1. Go to **Retail and Commerce \> Channels \> Stores \> All Stores**.
-1. Edit the store record you normally work with. 
-1. Update the **Channel Profile** to the value you created.
-1. Select **Save**.
-1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution Schedule** and execute the **1070 (Channel configuration)** sync job.
-
-### Update IIS binding for website
-
-The IIS binding for the legacy Retail Server and Sealed CSU must be updated to support the redirection. 
-
-To update the IIS binding for the website, follow these steps.
-
-1. Connect to the development machine using Remote Desktop Protocol (RDP).
-1. Open IIS Manager and expand **Sites**.
-1. Select the **RetailServer** website.
-1. On the right side of the screen, select **Bindings**.
-1. Select the **HTTPS** binding, and then select **Edit**.
-1. Set the **Port** value to "444".
-1. For **Host name**, copy the entire URL string value for use later, and then delete the value.
-1. Select **OK**.
-1. Select **Close**.
-1. Select the **RetailStoreScaleUnitWebsite.AspNetCore** website.
-1. On the right side of the screen, select **Bindings**.
-1. Select the **HTTPS** binding, and then select **Edit**.
-1. Set the **Port** value to "443".
-1. For **Host name**, enter the **Host name** URL string value you copied earlier.
-1. For **SSL Certificate**, select the downward arrow.
-1. Select the SSL certificate that ends in `<LCS name>devaos.axcloud.dynamics.com`.
-1. Select **OK**.
-1. Select **Close**.
 
 ## Database restores from UAT
 
