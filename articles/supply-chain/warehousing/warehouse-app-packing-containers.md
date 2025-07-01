@@ -4,7 +4,7 @@ description: Learn about the process for packing containers by using the Warehou
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: conceptual
-ms.date: 01/30/2023
+ms.date: 07/01/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields, WHSRFMenuItem, WHSPackProfile, WHSWorker, WHSPack, WHSMobileDeviceContainerPackingPolicy
@@ -55,10 +55,11 @@ To view the logs created when **Create container line packing details** is set t
 
 1. Go to **Warehouse management** \> **Packing and containerization** \> **Containers**.
 1. On the upper pane, select the container  you want to inspect.
-1. On the lower pane, select the container line that you want to inspect.
-1. On the lower pane toolbar, select **Container line packing details** to view details for the selected container line. Select **Container lines packing details** to view details for all the container lines in the selected container. <!-- KFM: I can't find that second button. Where is it? -->
+1. Do one of the following steps:
+    - To view details for all the container lines in the selected container, select **Container lines packing details** on the Action Pane.
+    - To view details for a single container line, select the line in the lower pane and then select **Container line packing details** on the lower pane toolbar.
 
-> [!NOTE]
+> [!IMPORTANT]
 > A default container packing policy must be assigned to each relevant worker on the **Worker** page (**Warehouse management \> Setup \> Worker**).
 
 ### Create containers
@@ -70,9 +71,12 @@ To create containers by using the Warehouse Management mobile app, workers must 
 - **Container type ID** – This value is used to identify the maximum physical volume and maximum weight capacity of the container.
 - **Container ID** – This value is a unique number that identifies the shipping container.
 
-The system records the ID of the worker who created the container. To view this information, go to **Warehouse management** \> **Packing and containerization** \> **Containers** and inspect the **Created by** field. <!-- KFM: Where is this field? I don't see it. Also, do we need to enable the **Create container line packing details** option for this work? -->
+The system records the ID of the worker who created the container. To view this information, go to **Warehouse management** \> **Packing and containerization** \> **Containers** and inspect the **Created by** field.
 
-> [!NOTE]
+> [!TIP]
+> The **Created by** field might not be shown. If you don't see it on your system, then you can add it by opening the **Grid options** menu (shown as a button with three dots at the right side of the grid heading) and selecting **Insert columns** .
+
+> [!IMPORTANT]
 > A default container packing policy must be assigned to each relevant worker on the **Worker** page (**Warehouse management \> Setup \> Worker**).
 
 ### Close containers
@@ -82,7 +86,10 @@ Workers can trigger the *Container closing* process directly, by using a Warehou
 - **Container ID** – The container that is being closed.
 - **Weight** – The weight of the container. The system assigns a default value, based on the item master weight definition.
 
-The system records the ID of the worker who closed the container. To view this information, go to **Warehouse management** \> **Packing and containerization** \> **Containers** and inspect the **Closed by** field. <!-- KFM: Where is this field? I don't see it. Also, do we need to enable the **Create container line packing details** option for this work? -->
+The system records the ID of the worker who closed the container. To view this information, go to **Warehouse management** \> **Packing and containerization** \> **Containers** and inspect the **Closed by** field.
+
+> [!TIP]
+> The **Close by** field might not be shown. If you don't see it on your system, then you can add it by opening the **Grid options** menu (shown as a button with three dots at the right side of the grid heading) and selecting **Insert columns** .
 
 ## Supported and unsupported processes
 
