@@ -5,7 +5,7 @@ author: prasungoel
 ms.author: prasungoel
 ms.reviewer: kamaybac
 ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage, ProdSetupHistoricalCost
-ms.topic: conceptual
+ms.topic: article
 ms.date: 12/02/2024
 ms.custom: 
   - bap-template

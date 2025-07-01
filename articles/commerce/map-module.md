@@ -17,8 +17,12 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-
 This article covers map modules and describes how to configure them in Microsoft Dynamics 365 Commerce.
+
+> [!IMPORTANT]
+> Bing Maps for Enterprise is deprecated and will be retired. If you have an enterprise license for Bing Maps for Enterprise, you can continue to use it until June 30, 2028. If you have a free or basic license for Bing Maps for Enterprise, you can continue to use it until June 30, 2025.
+>
+> Until Azure Maps becomes available as a module in E-Commerce version 10.0.45, you can manually enable Azure Maps by following the steps provided in the [Dynamics365Commerce.Solutions GitHub repository](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.54/src/OnlineSDK/Extensibility%20Samples/AzureMaps).
 
 A map module shows the locations of stores on an interactive map that is rendered by using the [Bing Maps V8 Web Control](/bingmaps/v8-web-control/). A Bing Maps API key is required and must be added to the shared parameters page in Commerce headquarters. Map modules provide different views, such as Road, Aerial, and Streetside, that users can select to view map locations. They also allow for interactions such as zooming and using the user's location.
 
@@ -44,7 +48,7 @@ The following image shows an example of a map module that is used on a store loc
 
 ## Add allowed mapping URLs to a site's content security policy directives
 
-For the maps module to interact with Bing Maps, you must ensure that the following mapping URLs are allowed per your site's content security policy (CSP). This setup is done in Commerce site builder, by adding allowed URLs to various site CSP directives (for example, **img-src**). For more information, see [Content security policy](dev-itpro/manage-csp.md). 
+For the maps module to interact with Bing Maps, you must ensure that the following mapping URLs are allowed per your site's content security policy (CSP). This setup is done in Commerce site builder, by adding allowed URLs to various site CSP directives (for example, **img-src**). For more information, see [Content security policy](dev-itpro/manage-csp.md).
 
 - To the **connect-src** directive, add **&#42;.bing.com**.
 - To the **img-src** directive, add **&#42;.virtualearth.net**.
@@ -53,8 +57,8 @@ For the maps module to interact with Bing Maps, you must ensure that the followi
 
 ## Add a map module to a page
 
-For detailed information about how to configure a map module on a page, see [Store selector module](store-selector.md). 
- 
+For detailed information about how to configure a map module on a page, see [Store selector module](store-selector.md).
+
 ## Additional resources
 
 [Module library overview](starter-kit-overview.md)
@@ -68,6 +72,5 @@ For detailed information about how to configure a map module on a page, see [Sto
 [Manage Bing Maps for your organization](./dev-itpro/manage-bing-maps.md)
 
 [Bing Maps V8 Web Control](/bingmaps/v8-web-control/)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

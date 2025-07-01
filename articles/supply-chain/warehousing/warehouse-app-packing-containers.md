@@ -3,7 +3,7 @@ title: Packing containers with the Warehouse Management mobile app
 description: Learn about the process for packing containers by using the Warehouse Management mobile app with an outline on the Warehouse Management packing process.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/01/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac

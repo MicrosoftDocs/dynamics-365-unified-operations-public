@@ -3,7 +3,7 @@ title: Enable Budget proposal
 description: Learn how to configure the Budget proposal feature in Finance Insights by navigating through the Budgeting widget and selecting the Enable feature option.
 author: ShivamPandeyMSFT
 ms.author: shpandey
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/11/2023
 ms.reviewer: twheeloc
 audience: Application User

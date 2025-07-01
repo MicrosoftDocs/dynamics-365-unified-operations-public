@@ -3,7 +3,7 @@ title: View and export field descriptions
 description: Learn about how to view field descriptions and how to use the Field descriptions page to export descriptions and see field descriptions in the user interface.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Developer, IT Pro

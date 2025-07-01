@@ -4,7 +4,7 @@ description: Learn about how to configure document management (document handling
 author: jasongre
 ms.author: jasongre
 ms.date: 01/02/2025
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30

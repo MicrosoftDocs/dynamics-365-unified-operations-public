@@ -3,7 +3,7 @@ title: Recruiting Power BI content
 description: Learn about recruiting Power BI content, including a table outlining reports and visuals in the recruitment management workspace.
 author: jcart1106
 ms.author: jcart
-ms.topic: article
+ms.topic: concept-article
 ms.date: 12/19/2017
 ms.reviewer: twheeloc
 audience: IT Pro

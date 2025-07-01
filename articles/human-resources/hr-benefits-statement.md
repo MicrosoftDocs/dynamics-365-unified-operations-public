@@ -5,7 +5,7 @@ title: Benefit statement
 description: The Benefit statement report explains the benefits that an employee is currently enrolled in.
 author: twheeloc
 ms.date: 07/02/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 # ms.search.form: HcmACACoverageGroup, BenefitWorkspace, HcmBenefitSummaryPart

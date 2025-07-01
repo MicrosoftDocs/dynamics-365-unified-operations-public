@@ -3,7 +3,7 @@ title: Set up charges on intercompany orders
 description: Learn how to set up charges on intercompany orders, including a step-by-step process for setting up charges for intercompany customers.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/01/2021
 ms.reviewer: kamaybac
 ms.search.form: CustTable, VendTable, EcoResProductListPage

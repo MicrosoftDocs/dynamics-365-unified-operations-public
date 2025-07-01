@@ -1,9 +1,9 @@
 ---
 title: Improve scheduling engine performance
 description: Learn about the scheduling engine and how to improve performance, including an overview of basic scheduling flow and loading data into the engine. 
-author: t-benebo
-ms.author: benebotg
-ms.topic: article
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 09/03/2020
 ms.reviewer: kamaybac
 ms.search.form: 

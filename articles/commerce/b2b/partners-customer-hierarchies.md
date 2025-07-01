@@ -5,7 +5,7 @@ title: Manage B2B business partners using customer hierarchies
 description: This article describes how to use customer hierarchies to manage business partners for Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites.
 author: josaw1
 ms.date: 02/08/2024
-ms.topic: article
+ms.topic: how-to
 ms.search.form: RetailOperations
 audience: Application User
 ms.reviewer: v-chgriffin

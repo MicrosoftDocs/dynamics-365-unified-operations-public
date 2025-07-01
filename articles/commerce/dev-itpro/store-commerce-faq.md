@@ -3,7 +3,7 @@ title: Store Commerce app FAQ
 description: This article answers frequently asked questions about the Microsoft Dynamics 365 Commerce Store Commerce app and Commerce SDK migration.
 author: josaw1
 ms.date: 09/22/2023
-ms.topic: article
+ms.topic: faq
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

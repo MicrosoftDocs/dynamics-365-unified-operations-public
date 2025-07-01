@@ -3,7 +3,7 @@ title: Tax engine applicability
 description: Learn about Tax engine applicability, including prerequisites and outlines on conditions and lookup, with various code examples.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/07/2018
 ms.reviewer: kfend
 audience: IT Pro 

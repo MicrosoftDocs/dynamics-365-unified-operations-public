@@ -3,7 +3,7 @@ title: Run the Document Routing Agent as a Windows service
 description: Learn how to select the execution mode that is used by the Document Routing Agent, including an overview of service applications and troubleshooting tips.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/11/2021
 ms.reviewer: johnmichalak
 audience: IT Pro

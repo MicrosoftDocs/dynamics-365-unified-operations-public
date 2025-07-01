@@ -4,12 +4,10 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: kfend
 ms.author: kfend
 ms.topic: overview
-ms.date: 11/02/2023
+ms.date: 06/11/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Costa Rica
 ms.search.validFrom: 2023-10-20
-ms.search.form: 
 ms.dyn365.ops.version: App 10.0.38
 ---
 
@@ -18,12 +16,15 @@ ms.dyn365.ops.version: App 10.0.38
 [!include [banner](../../includes/banner.md)]
 
 This article includes information and links to resources that can help you set up legal entities with a primary address in Costa Rica.
+
+## Principal configurations
+- [Set up a legal entity and tax information for Costa Rica](set-up-legal-entity-tax-costa-rica.md)
+- [Create customer and vendor records with an address in Costa Rica](ltm-create-customer-vendor-costa-rica.md)
+- [Configure sales and purchase invoices for Costa Rica](ltm-configure-invoices-costa-rica.md)
+
+## Electronic Invoice format
 - [Connection configuration for Costa Rica electronic invoicing](ltm-costa-rica-ei-connec-configuration.md)
 - [Configure electronic invoice parameters for Costa Rica](ltm-costa-rica-electronic-invoice-conf.md)
-- [Set up a legal entity and tax information for Costa Rica](set-up-legal-entity-tax-costa-rica.md)
-- [Configure sales and purchase invoices for Costa Rica](ltm-configure-invoices-costa-rica.md)
-- [Create customer and vendor records with an address in Costa Rica](ltm-create-customer-vendor-costa-rica.md)
-
 
 ## Additional resources
 

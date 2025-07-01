@@ -3,7 +3,7 @@ title: Archive Dynamics 365 Supply Chain Management Inventory journal data
 description: Learn about how to archive Dynamics 365 Supply Chain Management Inventory journal data, including prerequisites and an overview on setting up archival jobs.
 author: epodkolz
 ms.author: epodkolzina
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 4/10/2024
 ms.custom:
 ms.reviewer: twheeloc

@@ -2,10 +2,10 @@
 title: Commerce posting parameters
 description: This article describes the parameters that are specific to the posting of financial and physical transactions in Microsoft Dynamics 365 Commerce.
 author: analpert
-ms.date: 04/27/2022
+ms.date: 06/13/2025
 ms.topic: how-to
 audience: IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: johhmichalak
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2022-04-12
@@ -47,7 +47,7 @@ The following table lists the aggregation parameters that are specific to the po
 |-----------|-------------|
 | Safe drop | Enable this parameter to aggregate all transactions during statement posting and create a single line in the journal for posting instead of a separate line for each drop. |
 | Bank drop | Enable this parameter to aggregate all transactions during statement posting and create a single line in the journal for posting instead of a separate line for each drop. |
-| Sales transactions | Enable this parameter to consolidate the transactions as part of the transaction statement posting process. We recommend that you enable this parameter. It was previously named **Voucher transactions**. |
+| Sales transactions | Enable this parameter to consolidate the transactions as part of the transaction statement posting process. We recommend that you enable this parameter. It was previously named **Voucher transactions**.<br><br> **NOTE:** Changing this parameter from **True** to **False** can negatively impact returns. Return sales lines may be created with an empty return lot ID, resulting in a different cost price than the original sales transaction. |
 | Do not aggregate returns | If this option is selected, each return transaction will be posted as a separate sales order when a retail statement is posted. |
 
 ## Batch processing parameters

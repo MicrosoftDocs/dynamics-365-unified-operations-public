@@ -3,7 +3,7 @@ title: Impair right-of-use assets
 description: Learn about the functionality that records an impairment and adjusts the asset depreciation schedule of an Accounting Standards Codification Topic 842 operating lease.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/03/2021
 ms.reviewer: twheeloc
 audience: Application User

@@ -1,8 +1,8 @@
 ---
 title: Maintain bar code types
 description: Learn how to set up a new bar code definition which can then be used as part of the picking list report, including a step-by-step process. 
-author: Weijiesa
-ms.author: weijiesa
+author: banluo-ms
+ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: BarcodeSetup, InventParameters
 ms.topic: how-to

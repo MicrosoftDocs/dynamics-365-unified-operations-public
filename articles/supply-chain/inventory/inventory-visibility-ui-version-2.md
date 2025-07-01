@@ -3,11 +3,12 @@ title: Inventory Visibility app user interface versions
 description: Learn about the differences between version 1 and version 2 of the Inventory Visibility app user interface with an outline on supported features and configurations.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: how-to
-ms.date: 11/27/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Inventory Visibility app user interface version
@@ -22,7 +23,7 @@ The Inventory Visibility app runs in Microsoft Power Apps. The current version o
 This article describes the differences between the two versions, the new operations that are supported in UI version 2, and how to migrate from UI version 1 to UI version 2.
 
 > [!NOTE]
-> User interface version 1 will be deprecated in a future release. Users are suggested to switch to UI version 2 when possible. 
+> User interface version 1 will be deprecated in a future release. Users are suggested to switch to UI version 2 when possible.
 
 ## Features and configurations supported by each version
 

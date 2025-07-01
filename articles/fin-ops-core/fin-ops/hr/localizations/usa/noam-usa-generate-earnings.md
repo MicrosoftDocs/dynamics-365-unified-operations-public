@@ -3,7 +3,7 @@ title: Generate earnings for workers
 description: Learn about the various ways that you can generate earnings for workers, including outlines on how to manually enter earnings and generating premium earnings.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User

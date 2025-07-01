@@ -1,9 +1,9 @@
 ---
 title: Scheduling with infinite capacity
 description: Learn about infinite capacity scheduling. It also describes current feature limitations, including an outline on added functionality.
-author: t-benebo
-ms.author: benebotg
-ms.topic: article
+author: Henrikan
+ms.author: henrikan
+ms.topic: concept-article
 ms.date: 08/09/2022
 ms.reviewer: kamaybac
 ms.search.form: RouteInventProd

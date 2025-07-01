@@ -3,7 +3,7 @@ title: Project accounting with general budget reservations
 description: Learn about project accounting used for general budget reservations, including a process for tracking committed costs for general budget reservations.
 author: AlexRenney
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/25/2019
 ms.custom:
 ms.reviewer: twheeloc 

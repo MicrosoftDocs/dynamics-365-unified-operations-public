@@ -3,7 +3,7 @@ title: Year-end activities FAQ
 description: Access answers to questions that can arise when closing a year, and the answers that can assist with year-end closing activities.
 author: moaamer
 ms.author: moaamer
-ms.topic: conceptual
+ms.topic: faq
 ms.date: 11/14/2024
 ms.custom: 
 ms.reviewer: twheeloc

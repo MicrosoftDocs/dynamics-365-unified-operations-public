@@ -3,7 +3,7 @@ title: Importing vouchers by using the General journal entity
 description: Learn how to import data into the General journal by using the General journal entity, including outlines on setup and journal batch numbers.  
 author: rcarlson
 ms.author: rcarlson
-ms.topic: article
+ms.topic: concept-article
 ms.date: 10/25/2024
 ms.reviewer: twheeloc 
 audience: Application User

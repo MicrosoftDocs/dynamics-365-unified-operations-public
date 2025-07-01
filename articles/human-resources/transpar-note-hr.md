@@ -3,7 +3,7 @@ title: Responsible AI FAQs for Dynamics 365 Human Resources
 description: Learn about transparency FAQs for Microsoft Dynamics 365 Human Resources, with information on how AI is used, how it was tested and evaluated, and any limitations.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: faq
 ms.date: 01/27/2025
 ms.custom: transparency-note
 ms.reviewer: twheeloc

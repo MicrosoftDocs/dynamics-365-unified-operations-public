@@ -3,7 +3,7 @@ title: Set up work schedules and leave
 description: Learn about the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/22/2019
 ms.reviewer: twheeloc
 audience: Application User

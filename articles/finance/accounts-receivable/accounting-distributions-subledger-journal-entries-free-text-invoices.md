@@ -3,7 +3,7 @@ title: Accounting distributions and journal entries for free text invoices
 description: Accounting distributions are used to define how an amount will be accounted for, such as how the revenue, tax, or charges will be accounted for on a free text invoice.
 author: ShivamPandeyMSFT
 ms.author: shpandey
-ms.topic: article
+ms.topic: concept-article
 ms.date: 08/22/2017
 ms.reviewer: twheeloc
 audience: Application User

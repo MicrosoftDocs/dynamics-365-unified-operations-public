@@ -3,7 +3,7 @@ title: Filtering options
 description: Learn about the filtering options that are available, including various tables that define the available filter options.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/18/2024
 ms.reviewer: johnmichalak
 audience: Developer

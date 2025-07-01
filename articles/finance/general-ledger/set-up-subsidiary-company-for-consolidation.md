@@ -3,7 +3,7 @@ title: Set up a subsidiary legal entity for consolidation
 description: Learn how to work with charts of accounts for consolidation companies, including an outline on map subsidiary main accounts to consolidated main accounts.
 author: jinniew
 ms.author: jiwo
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/30/2020
 ms.custom:
 ms.reviewer: kfend 

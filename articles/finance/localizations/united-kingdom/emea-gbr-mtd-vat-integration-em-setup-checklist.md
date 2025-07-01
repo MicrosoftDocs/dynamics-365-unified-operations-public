@@ -3,7 +3,7 @@ title: Checklist for Electronic messages setup for MTD VAT
 description: Learn about what will help determine whether the Electronic messages functionality is correctly set up for Making Tax Digital for value-added tax (MTD VAT).
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: checklist
 ms.custom: 
   - bap-template
 ms.date: 07/11/2024

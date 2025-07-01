@@ -3,7 +3,7 @@ title: Add credit management information for customers
 description: Learn about how to add credit management information for a customer, including outlines on customer information and temporary credit limits.
 author: JodiChristiansen
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/04/2019
 ms.custom: 
 ms.reviewer: twheeloc 

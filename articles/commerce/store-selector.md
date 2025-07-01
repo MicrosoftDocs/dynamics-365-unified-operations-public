@@ -61,6 +61,11 @@ Some stores in a fulfillment group might not be valid pickup locations. To ensur
 1. On the Action Pane, select **Save**.
 1. Run the 1070 **Channel configuration** distribution schedule job.
 
+> [!IMPORTANT]
+> Bing Maps for Enterprise is deprecated and will be retired. If you have an enterprise license for Bing Maps for Enterprise, you can continue to use it until June 30, 2028. If you have a free or basic license for Bing Maps for Enterprise, you can continue to use it until June 30, 2025.
+>
+> Until Azure Maps becomes available as a module in E-Commerce version version 10.0.45, you can manually enable Azure Maps by following the steps provided in the [Dynamics365Commerce.Solutions GitHub repository](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.54/src/OnlineSDK/Extensibility%20Samples/AzureMaps).
+
 ## Bing Maps integration
 
 The store selector module is integrated with the [Bing Maps REST application programming interfaces (APIs)](/bingmaps/rest-services/) to use Bing's Geocoding and Autosuggest features. A Bing Maps API key is required and must be added to the shared parameters page in Commerce headquarters. The Geocoding API is used to convert a location to latitude and longitude values. The integration with the Autosuggest API is used to show search suggestions when users enter locations in the search field.

@@ -5,7 +5,7 @@ title: Commerce Data Exchange troubleshooting
 description: This article provides information that helps you troubleshoot CDX in implementations.
 author: aneesa
 ms.date: 04/02/2024
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: IT Pro
 ms.reviewer: sericks

@@ -3,7 +3,7 @@ title: Customize model elements through extension
 description: Learn about the Fleet Management Extension model. This model contains elements that extend the functionality of the Fleet Management application.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/08/2017
 ms.reviewer: johnmichalak
 audience: Developer
@@ -220,7 +220,7 @@ This section shows how you can use the Visual Studio tools to create and interac
 ### Extend the FMVehicle Table
 
 1. In **Solution Explorer**, select the **FleetManagement Discounts** project.
-2. In Visual studio, in **Application Explorer,** select **View &gt; Application Explorer**, and search for the table named FMVehicle. Type `FMVehicle type:Table` in the filter bar and press **Enter**.
+2. In Visual Studio, in **Application Explorer,** select **View &gt; Application Explorer**, and search for the table named FMVehicle. Type `FMVehicle type:Table` in the filter bar and press **Enter**.
 
     [![AppExplorer search for FMVehicle.](./media/appexplorersmall_customizemodel.png)](./media/appexplorersmall_customizemodel.png)
 

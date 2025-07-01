@@ -3,7 +3,7 @@ title: Credit holds for sales orders
 description: Learn about how to set up rules used to place a sales order on credit hold, including an outline on setting up blocking rules and exclusion rules. 
 author: JodiChristiansen
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/28/2024
 ms.custom:  
 ms.reviewer: twheeloc 

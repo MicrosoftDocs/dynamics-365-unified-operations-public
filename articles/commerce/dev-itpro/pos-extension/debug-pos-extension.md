@@ -3,7 +3,7 @@ title: Debug MPOS (sealed) and CPOS extensions
 description: This article explains how to debug Modern Point of Sale (Sealed) and Cloud POS extensions.
 author: josaw1
 ms.date: 05/05/2022
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

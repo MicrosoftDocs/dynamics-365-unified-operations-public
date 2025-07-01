@@ -3,7 +3,7 @@ title: Import and export tax calculations
 description: Learn about the import and export functionality of the tax calculation feature, including processes for importing and exporting tax codes.
 author: Kai-Cloud
 ms.author: kailiang
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/09/2024
 ms.custom: 
 ms.reviewer: johnmichalak

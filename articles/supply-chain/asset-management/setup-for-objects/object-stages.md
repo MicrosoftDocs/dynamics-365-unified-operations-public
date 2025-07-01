@@ -3,24 +3,22 @@ title: Asset lifecycle states
 description: Learn about asset lifecycle states and lifecycle models in Asset Management, including a step-by-step process for creating lifecycle models.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
-ms.date: 06/26/2019
 ms.reviewer: kamaybac
 ms.search.form: EntAssetLifecycleModelStateNext, EntAssetObjectLifecycleState, EntAssetLifecycleStateUpdate, EntAssetObjectLifecycleModel
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Asset lifecycle states
 
 [!include [banner](../../includes/banner.md)]
 
- 
-
 This article explains asset lifecycle states and lifecycle models in Asset Management. Asset lifecycle states are used to define whether an asset is active or inactive. For example, you can set up asset lifecycle states such as **Created**, **Active**, and **Terminated**.
 
 > [!NOTE]
-> - Request lifecycle states are linked to asset lifecycle states. Therefore, when a request is changed to a new request lifecycle state, the asset that is attached to the request is changed to a new asset lifecycle state. For example, if the lifecycle state of a request is changed to **Inbound**, the lifecycle state of the attached asset is changed to the lifecycle state that is selected in the **Inbound lifecycle state** field on the **Asset lifecycle state** FastTab of the **Asset lifecycle state models** page. 
-
+> Request lifecycle states are linked to asset lifecycle states. Therefore, when a request is changed to a new request lifecycle state, the asset that is attached to the request is changed to a new asset lifecycle state. For example, if the lifecycle state of a request is changed to **Inbound**, the lifecycle state of the attached asset is changed to the lifecycle state that is selected in the **Inbound lifecycle state** field on the **Asset lifecycle state** FastTab of the **Asset lifecycle state models** page.
 
 Asset lifecycle states can be set up in asset lifecycle models, where you can define the required lifecycle states for various types of assets. You first set up lifecycle states. You then create a lifecycle model and select lifecycle states for it.
 
@@ -35,8 +33,7 @@ Asset lifecycle states can be set up in asset lifecycle models, where you can de
 6. Set the **Delete open calendar lines** option to **Yes** if open asset calendar lines that have an asset lifecycle state of **Created** should be deleted when they are in this lifecycle state. This setting is useful if you want to clean up any open maintenance schedules that are no longer relevant for the asset (for example, if the asset is no longer active).
 
 > [!NOTE]
-> Asset lifecycle states, asset lifecycle models, and asset types are related. They are used in the same way as work order lifecycle states, work order lifecycle models, and work order types. 
-
+> Asset lifecycle states, asset lifecycle models, and asset types are related. They're used in the same way as work order lifecycle states, work order lifecycle models, and work order types.
 
 After you've created the required asset lifecycle states, you can set up lifecycle states in asset lifecycle models.
 
@@ -55,6 +52,5 @@ After you've created the required asset lifecycle states, you can set up lifecyc
 
 6. Select **Lifecycle state updates** to define the asset lifecycle states that can follow a selected lifecycle state.
 7. You use the **Asset state** FastTab if you handle assets that you receive for repair. In the **Inbound/outbound** section, you can select asset lifecycle states to indicate the workflow of an asset that you receive for repair. If you offer loan assets to customers or departments, in the **Loan** section, you can select lifecycle states for loan assets.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

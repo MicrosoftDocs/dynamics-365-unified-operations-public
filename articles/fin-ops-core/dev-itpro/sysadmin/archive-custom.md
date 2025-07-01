@@ -3,7 +3,7 @@ title: Archive customization
 description: Learn about how the archive feature in Microsoft Dynamics 365 finance and operations apps supports table customizations, including code examples.
 author: pnghub
 ms.author: fangzhan
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/24/2025
 ms.custom:
 ms.reviewer: twheeloc

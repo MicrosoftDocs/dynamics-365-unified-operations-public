@@ -3,7 +3,7 @@ title: AX 2009 migration - Export packages
 description: Learn how to export a data package for migration from Microsoft Dynamics AX 2009 to finance and operations through a job ID.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/26/2018
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

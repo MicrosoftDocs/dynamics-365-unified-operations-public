@@ -3,7 +3,7 @@ title: Reference original invoices in credit notes (vendor invoices)
 description: Learn about how to create a reference to an original invoice when you create a credit note, including prerequisites.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/28/2021
 ms.reviewer: twheeloc
 audience: Application User

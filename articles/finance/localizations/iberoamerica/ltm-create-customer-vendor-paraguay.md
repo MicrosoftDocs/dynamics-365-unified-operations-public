@@ -3,7 +3,7 @@ title: Create customer and vendor records with an address in Paraguay
 description: Learn how to set up records for customers and vendors in Paraguay, including prerequisites, including an outline on create a record for a customer.
 author: Cpicon85
 ms.author: v-cpicon
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/07/2023
 ms.custom: bap-template
 ms.reviewer: johnmichalak

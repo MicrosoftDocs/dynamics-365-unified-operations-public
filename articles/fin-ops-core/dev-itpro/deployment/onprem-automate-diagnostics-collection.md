@@ -3,7 +3,7 @@ title: Microsoft Dynamics 365 Finance + Operations (on-premises) automated diagn
 description: Learn how to quickly collect information that is required to troubleshoot issues in your Dynamics 365 finance and operations environment.
 author: faix
 ms.author: osfaixat
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 9/28/2023
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak
