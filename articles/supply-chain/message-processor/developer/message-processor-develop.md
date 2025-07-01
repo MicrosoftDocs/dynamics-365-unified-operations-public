@@ -1,6 +1,6 @@
 ---
-title: Business events, custom message queues, and custom message types for the message processor
-description: Learn how to design custom message queues and message types by using Visual Studio, and how to set up business events to deliver alerts for failed processing results.
+title: Business events, custom message queues, and custom message types
+description: Learn how to design custom message queues and message types for the message processor by using Visual Studio, and how to set up business events to deliver alerts for failed processing results.
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Business events, custom message queues, and custom message types for the message processor
+# Business events, custom message queues, and custom message types
 
 [!include [banner](../../includes/banner.md)]
 
@@ -24,7 +24,7 @@ You can set up [business events](../../../fin-ops-core/dev-itpro/business-events
 > [!NOTE]
 > If **When a Business Event occurs** is set to *Microsoft Power Automate* (instead of *HTTPS*, for example), the endpoint name will automatically be created in Supply Chain Management, based on the *Microsoft Power Automate* setup.
 
-## Power Automate example
+## Business events Power Automate example
 
 In this example, **When a Business Event occurs** is set to *Microsoft Power Automate* to send email notifications that containing Action center (formerly Infolog) messages and hyperlinks that open the **Message processor messages** page for a specific failed message. As you require, you can add extra logic to send the notifications in parallel via different channels and control the recipients based on the event data.
 
@@ -151,7 +151,7 @@ In this example, **When a Business Event occurs** is set to *Microsoft Power Aut
 
 When you save the business event, it's automatically activated and is ready to be used as part of Supply Chain Management.
 
-## Scheduler
+## Message processor scheduler
 
 The message processor has one scheduler. The `SysMessageKeyDateTimeSequenceProcessorScheduler` class schedules messages that have dependencies that are based on a key, date, and time, so that the messages are processed in the correct order. Messages that must be processed are stored in the `SysMessageProcessorTaskBundle` and `SysMessageProcessorTaskBundleMessage` tables. Dependent messages must be in the same bundle.
 
@@ -182,11 +182,7 @@ Because a bottleneck can occur when records are picked up for processing for mul
 
 For scalability, when you develop a new queue, you can configure the number of tasks that should process the bundles. (Learn more in [Implement a new queue](#custom-queue).) If the configuration uses two message processor tasks, the two bundles can be processed in parallel.
 
-## Implementation examples
-
-This section provides examples that show how to develop new message queues and message types that can be used with the message processor.
-
-### <a name="custom-queue"></a>Implement a new queue
+## <a name="custom-queue"></a>Development example: Implement a custom message queue
 
 This example shows how to add a new queue. After the queue is created, you'll be able to submit messages to it. Those messages will then be processed by the message processor according to the settings that were described earlier.
 
@@ -265,7 +261,7 @@ This example shows how to add a new queue. After the queue is created, you'll be
     }
     ```
 
-### Implement a new message type
+## Development example: Implement a custom message type
 
 This example shows how to create a message type for each type of process that you want to make available to the message processor. The message type establishes which processes can be run by messages of that type. The name of the message type will be shown on the **Message processor messages** page to identify the purpose of each message in the queue.
 

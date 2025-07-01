@@ -107,7 +107,7 @@ You can configure the number of processor tasks that should be dedicated to each
 ## Additional resources
 
 - [Clean up processed and canceled message processor messages](message-processor-cleanup.md)
-- [Business events, custom message queues, and custom message types for the message processor](developer/message-processor-develop.md)
+- [Business events, custom message queues, and custom message types](developer/message-processor-develop.md)
 - [Message processor messages for warehouse management processes](../warehousing/warehouse-message-processor-messages.md)
 - [Exchange data between systems](../warehousing/wms-only-mode-exchange-data.md)
 - [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md)

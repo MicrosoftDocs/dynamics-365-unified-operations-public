@@ -65,7 +65,7 @@ To view and act on your optimization opportunities, including those related to c
 ## Additional resources
 
 - [Monitor and control message processor messages](message-processor.md)
-- [Business events, custom message queues, and custom message types for the message processor](developer/message-processor-develop.md)
+- [Business events, custom message queues, and custom message types](developer/message-processor-develop.md)
 - [Message processor messages for warehouse management processes](../warehousing/warehouse-message-processor-messages.md)
 - [Exchange data between systems](../warehousing/wms-only-mode-exchange-data.md)
 - [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md)

@@ -4133,11 +4133,11 @@
           href: warehousing/wms-only-mode-faq.md
     - name: Message processor
       items:
-      - name: Create and process message queues and message types
+      - name: Monitor and control message processor messages
         href: message-processor/message-processor.md
       - name: Clean up processed and canceled message processor messages
         href: message-processor/message-processor-cleanup.md
-      - name: Business events, custom message queues, and custom message types for the message processor
+      - name: Business events, custom message queues, and custom message types
         href: message-processor/developer/message-processor-develop.md
     - name: Supply Chain Management development 
       items:
