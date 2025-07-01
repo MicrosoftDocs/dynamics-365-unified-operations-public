@@ -34,4 +34,4 @@ On the **Message processor messages** page, you can filter on the  *Failed* valu
 
 ## Clean up processed and canceled message processor messages
 
-Over time, processed and canceled messages, which are no longer needed, can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency. Learn more in [Clean up processed and canceled message processor messages](message-processor-cleanup.md).
+Over time, processed and canceled messages, which are no longer needed, can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency. Learn more in [Clean up processed and canceled message processor messages](../message-processor/message-processor-cleanup.md).

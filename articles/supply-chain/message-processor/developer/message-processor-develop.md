@@ -13,13 +13,13 @@ ms.custom:
 
 # Business events, custom message queues, and custom message types for the message processor
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This article describes how to design your own custom message queues and message types for the [message processor](../message-processor.md) by using Visual Studio. It also describes how to set up business events to deliver alerts for failed processing results.
 
 ## <a name="business-events"></a>Set up business events to deliver alerts for failed processing results
 
-You can set up [business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) to alert you about failed processing results. To complete this setup, activate the *Message processor message processed* business event on the **Business events catalog** page (**System administration \> Setup \> Business events \> Business events catalog**). As part of the activation process, you'll be directed to specify whether the event is specific to one legal entity or all legal entities. You'll also be directed to provide an endpoint name, which must be defined in advance.
+You can set up [business events](../../../fin-ops-core/dev-itpro/business-events/home-page.md) to alert you about failed processing results. To complete this setup, activate the *Message processor message processed* business event on the **Business events catalog** page (**System administration \> Setup \> Business events \> Business events catalog**). As part of the activation process, you'll be directed to specify whether the event is specific to one legal entity or all legal entities. You'll also be directed to provide an endpoint name, which must be defined in advance.
 
 > [!NOTE]
 > If **When a Business Event occurs** is set to *Microsoft Power Automate* (instead of *HTTPS*, for example), the endpoint name will automatically be created in Supply Chain Management, based on the *Microsoft Power Automate* setup.
@@ -155,7 +155,7 @@ When you save the business event, it's automatically activated and is ready to b
 
 The message processor has one scheduler. The `SysMessageKeyDateTimeSequenceProcessorScheduler` class schedules messages that have dependencies that are based on a key, date, and time, so that the messages are processed in the correct order. Messages that must be processed are stored in the `SysMessageProcessorTaskBundle` and `SysMessageProcessorTaskBundleMessage` tables. Dependent messages must be in the same bundle.
 
-The `SysMessageKeyDateTimeSequenceProcessorScheduler` class is used by the [third-party MES integration](../production-control/mes-integration.md) feature to secure messages that are related to a production order, and that are processed in the order that they're received or created in. The dependencies are defined by a key (production order number) and the time.
+The `SysMessageKeyDateTimeSequenceProcessorScheduler` class is used by the [third-party MES integration](../../production-control/mes-integration.md) feature to secure messages that are related to a production order, and that are processed in the order that they're received or created in. The dependencies are defined by a key (production order number) and the time.
 
 For example, the system receives or creates the following messages:
 
@@ -390,4 +390,4 @@ Follow these steps to create a new message type.
 ## Additional resources
 
 - [Monitor and control message processor messages](../message-processor.md)
-- [Clean up processed and canceled message processor messages](../warehousing/message-processor-cleanup.md)
+- [Clean up processed and canceled message processor messages](../message-processor-cleanup.md)

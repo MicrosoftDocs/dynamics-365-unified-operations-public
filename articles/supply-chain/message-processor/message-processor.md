@@ -99,8 +99,8 @@ You can configure the number of processor tasks that should be dedicated to each
 
 1. For the new or selected row, make the following settings:
     - **Number of processor tasks** – Specify the number of processor tasks that should be dedicated to the specified queue. The maximum value is *8*. The minimum value depends on the minimum number of batch threads that are configured for your system (typically *2*).
-    - **Days before processed message deletion** - Specify the number of days before processed messages should be cleaned up (deleted). Set this field to zero (0) to turn off processed message cleanup. Learn more in [Clean up processed and canceled message processor messages](../warehousing/message-processor-cleanup.md).
-    - **Days before canceled message deletion** - Specify of days before canceled messages should be cleaned up (deleted).  Set this field to zero (0) to turn off canceled message cleanup. Learn more in [Clean up processed and canceled message processor messages](../warehousing/message-processor-cleanup.md).
+    - **Days before processed message deletion** - Specify the number of days before processed messages should be cleaned up (deleted). Set this field to zero (0) to turn off processed message cleanup. Learn more in [Clean up processed and canceled message processor messages](message-processor-cleanup.md).
+    - **Days before canceled message deletion** - Specify of days before canceled messages should be cleaned up (deleted).  Set this field to zero (0) to turn off canceled message cleanup. Learn more in [Clean up processed and canceled message processor messages](message-processor-cleanup.md).
 
 1. On the Action Pane, select **Save**.
 
@@ -108,8 +108,8 @@ You can configure the number of processor tasks that should be dedicated to each
 
 - [Clean up processed and canceled message processor messages](message-processor-cleanup.md)
 - [Business events, custom message queues, and custom message types for the message processor](developer/message-processor-develop.md)
-- [Message processor messages for warehouse management processes](warehouse-message-processor-messages.md)
-- [Exchange data between systems](wms-only-mode-exchange-data.md)
+- [Message processor messages for warehouse management processes](../warehousing/warehouse-message-processor-messages.md)
+- [Exchange data between systems](../warehousing/wms-only-mode-exchange-data.md)
 - [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md)
 - [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](../../fin-ops-core/fin-ops/data-entities/add-efficiency-in-quote-to-cash-enable.md)
 - [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md)

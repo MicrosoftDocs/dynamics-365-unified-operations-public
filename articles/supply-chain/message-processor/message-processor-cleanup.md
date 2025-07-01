@@ -66,8 +66,8 @@ To view and act on your optimization opportunities, including those related to c
 
 - [Monitor and control message processor messages](message-processor.md)
 - [Business events, custom message queues, and custom message types for the message processor](developer/message-processor-develop.md)
-- [Message processor messages for warehouse management processes](warehouse-message-processor-messages.md)
-- [Exchange data between systems](wms-only-mode-exchange-data.md)
+- [Message processor messages for warehouse management processes](../warehousing/warehouse-message-processor-messages.md)
+- [Exchange data between systems](../warehousing/wms-only-mode-exchange-data.md)
 - [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md)
 - [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](../../fin-ops-core/fin-ops/data-entities/add-efficiency-in-quote-to-cash-enable.md)
 - [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md)

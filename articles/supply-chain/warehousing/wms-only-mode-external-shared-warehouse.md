@@ -26,7 +26,7 @@ The following articles provide detailed information about how *Warehouse managem
 
 - [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md)
 - [Exchange data between systems](wms-only-mode-exchange-data.md)
-- [Create and process message queues and message types](../supply-chain-dev/message-processor.md)
+- [Monitor and control message processor messages](../message-processor/message-processor.md)
 
 ## High-level implementation example
 
@@ -66,8 +66,8 @@ Here's a high-level description of the outbound process. Steps that start with *
 1. *WOM:* The orders are released for further warehouse processing, either manually or automatically. If you use outbound load planning processes, you can create loads by using the Outbound load planning workbench before you release the orders.
 1. *WOM:* Depending on the setup of your [wave template](wave-templates.md) definitions, warehouse work might be created and released immediately.
 1. *WOM:* Outbound warehouse work is processed, and the status of the related outbound shipment order line transactions is updated to *Picked*.
-1. *WOM:* The loads are outbound ship confirmed. As a result, external warehouse inbound shipment order updates are generated for *LE1*.
-1. *LE1:* During the processing of the external warehouse inbound shipment order updates, outbound shipment data and the related sales order line transactions are updated. The transactions become *Picked*. This update enables further processing of the packing slip and invoice. You can enable automatic [message processing](../message-processor/message-processor.md) for the *External warehouse shipment order updates* message queue.
+1. *WOM:* The loads are outbound ship confirmed. As a result, external warehouse outbound shipment order updates are generated for *LE1*.
+1. *LE1:* During the processing of the external warehouse outbound shipment order updates, outbound shipment data and the related sales order line transactions are updated. The transactions become *Picked*. This update allows further processing of the packing slip and invoice. You can turn on automatic [message processing](../message-processor/message-processor.md) for the *External warehouse shipment order updates* message queue.
 1. *WOM:* The warehousing entity finalizes the outbound shipment order line transactions by running the *Post shipment packing slips* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 For a more detailed description of this process and the related processes, go to [Work with warehouse management only mode in Supply Chain Management](wms-only-mode-shared-and-external-detail-use.md).
