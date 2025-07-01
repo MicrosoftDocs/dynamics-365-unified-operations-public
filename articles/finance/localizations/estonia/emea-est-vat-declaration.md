@@ -4,7 +4,7 @@ description: Learn how to set up a value-added tax (VAT) declaration for legal e
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 06/23/2025
+ms.date: 07/01/2025
 ms.custom: 266904
 ms.reviewer: johnmichalak
 audience: Application User
@@ -194,7 +194,7 @@ To generate the VAT declaration, you must configure the taxpayer registration nu
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
 3. Select or create the address in Estonia, and then, on the **Registration ID** FastTab, select **Add**.
-4. In the **Registration type** field, select the registration type that's dedicated to Estonia and that uses the **Enterprise Id** registration category.
+4. In the **Registration type** field, select the registration type that's dedicated to Estonia and that uses the **Enterprise ID** registration category.
 5. In the **Registration number** field, enter the tax number.
 6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
@@ -206,7 +206,7 @@ Follow these steps to define the VAT registration number that EM uses during gen
 2. On the **Message additional fields** FastTab, in the **Tax registration number** field, define the VAT registration number that should be used in the VAT declaration for Estonia.
 3. Save your changes.
 
-If the VAT registration number isn't specified in the **Tax registration number** additional field of the **EE VAT declaration** processing, the system retrieves it from the registration ID that's defined in the properties of the legal entity that's associated with the **Enterprise Id** registration category.
+If the VAT registration number isn't specified in the **Tax registration number** additional field of the **EE VAT declaration** processing, the system retrieves it from the registration ID that's defined in the properties of the legal entity that's associated with the **Enterprise ID** registration category.
 
 ## Preview the VAT declaration in Excel
 
