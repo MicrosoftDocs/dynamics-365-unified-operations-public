@@ -120,12 +120,25 @@ To configure methods of payment, follow these steps.
 
 To configure units of measure, follow these steps.
 
-1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
-2. Select a unit ID in the list, and then select **External codes**.
-3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-4. In the **Value** section, in the **Value** field, enter the external code that should be used as the recommended unit of measure code according to [Codes for Units of Measure Used in International Trade](https://docs.oasis-open.org/ubl/prd1-UBL-2.1/cva/UBL-DefaultDTQ-2.1.html#d27e1).
+1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
+1. Select a unit ID, and then select **External codes**.
+1. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code that is equal to the selected unit ID.
+1. In the **Standard code** column, select the checkbox.
+1. In the **Value** section, in the **Value** field, enter the external code according to [the required codification](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/).
 
-### Configure sales tax codes
+    > [!NOTE]
+    > For scenarios where no specific units of measure are assumed, the default value **EA** is used.
+
+### Configure sales tax codes for the version 3 of OIOUBL format
+
+To additionally configure sales tax codes, follow these steps.
+
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
+1. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
+1. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code you selected in step 2.
+1. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to [Duty or tax or fee category code (Subset of UNCL5305)](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/).
+
+### Configure sales tax codes for the previous OIOUBL format versions
 
 When you generate electronic invoices in OIOUBL format, the tax information in the output XML file must be hierarchically structured in a specific way.
 
