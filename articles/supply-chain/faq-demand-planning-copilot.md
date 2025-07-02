@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about the AI technolog
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: faq
-ms.date: 11/15/2024
+ms.date: 07/02/2025
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac
