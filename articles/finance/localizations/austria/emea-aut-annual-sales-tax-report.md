@@ -1,5 +1,5 @@
 ---
-title: Annual sales tax report U1
+title: Generate an Annual sales tax report U1
 description: Learn how to generate an annual sales tax report U1 for Austria in PDF format.
 author: liza-golub
 ms.author: egolub
@@ -12,7 +12,7 @@ ms.search.region: Global
 
 ---
 
-# Annual sales tax report U1
+# Generate an Annual sales tax report U1
 
 [!include[banner](../../includes/banner.md)]
 
@@ -30,7 +30,7 @@ The four-digit sales tax reporting code syntax is based on the structure of the 
 In the VAT statement, amounts are displayed in the Tax base amounts and Tax amounts columns. 
 Sales tax reporting codes that begin with 10 are included in the tax boxes in the Tax base amounts column. 
 Codes that begin with 11 are contained in the tax boxes in the Tax amounts column. 
-The last two digits of the sales tax reporting codes refer to the tax box number.
+The last two digits of the sales tax reporting code refer to the tax box number.
 
 Example: The tax base amount corresponding to sales tax reporting code 1022 and the tax corresponding to the sales tax reporting code 1122 
 are reported in tax box 022.
