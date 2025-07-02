@@ -18,7 +18,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 [!include [banner](../includes/banner.md)]
 
-This article lists and briefly describes the reports that are available in Asset leasing. Most reports display by completing these steps or steps that are very similar, as noted). 
+This article lists and briefly describes the reports that are available in Asset leasing. Most reports display by completing these or similar steps. 
 
 - To view most Asset leasing reports, go to **Asset Leasing > Inquiries and reports > Lease reports** and then select a report to view. For the reports that require a different selection path, the steps to open the report are included with that report's description. 
 - When you select a report to print, a parameters page opens that lets you filter the information that's included on the report. Enter filter criteria, and then select **OK** to generate the report. The generated report shows information that falls within the filters that you specified.
@@ -88,14 +88,14 @@ The Lease balances forecast lists information directly from the liability amorti
 |     Report fields                	|     Description                                                                                       	|
 |---------------------------------	|--------------------------------------------------------------------------------------------------------------------	|
 |     Beginning balance           	|     The beginning balance in the lease’s amortization schedule for the period containing the start date of the report.         	|
-|     Initial recognition         	|     If the commencement date of the lease falls within the date range defined for the report, this column displays the liability account value of the initial recognition journal entry.    	|
+|  Initial recognition 	|  If the commencement date of the lease falls within the date range defined for the report, this column displays the liability account value of the initial recognition journal entry.  	|
 |     Payments                    	|     The sum of the lease’s payments that fall within the date range defined for the report.                            	|
 |     Interest                    	|     The sum of the lease’s interest expenses that fall within the date range defined for the report.                    |
 |     Ending balance              	|     The liability balance of the lease as of the **To date**.                                                         	|
 |     Short-term liability        	|     The short-term liability amount in the lease’s amortization schedule as of the **To date**.                        	|
 |     Long term liability         	|     The long-term liability amount in the lease’s amortization schedule as of the **To date**.                         	|
 |     Beginning Net Book Value    	|     The “Beginning Net Book Value” in the lease’s asset depreciation schedule for the period containing the start date of the report    	|
-|     Initial recognition  	|     If the commencement date of the lease falls between the report’s date parameters, this column will display the asset account value of the initial recognition journal entry. 	|
+|     Initial recognition  	|     If the commencement date of the lease falls between the report’s date parameters, this column displays the asset account value of the initial recognition journal entry. 	|
 |     Depreciation expense        	|     The sum of the lease’s depreciation expenses that fall within the date range defined for the report.                  |
 |     Ending balance              	|     The asset balance as of the lease as of the **To date**.                                                             	|
 |     Equity adjustment           	|     The beginning balance minus the beginning net book value.                                                             |
