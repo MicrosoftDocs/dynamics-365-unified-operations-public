@@ -5,6 +5,7 @@ author: aprilolson
 ms.author: aolson
 ms.date: 07/01/2025
 ms.reviewer: twheeloc
+ms.topic: article
 ms.collection: get-started 
 audience: Application User
 ms.search.region: Global
