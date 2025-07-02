@@ -3,7 +3,7 @@ title: Support custom pricing attributes in POS
 description: Learn how to support custom pricing attributes in POS by implementing a custom request handler
 author: cbarrientos
 ms.author: cbarrientos
-ms.topic: custom-pricing-attributes
+ms.topic: custom pricing attributes
 ms.date: 07/02/2025
 ms.custom: bap-template
 ms.reviewer:
@@ -28,7 +28,7 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
 
 1. Implement custom request handler to process custom pricing attributes. 
 
-    Sample custom request handler: [GetCustomizedPricingPropertiesRequestHandler-Sample.txt](unified-pricing-management/media/GetCustomizedPricingPropertiesRequestHandler-Sample.txt))
+    Sample custom request handler: [GetCustomizedPricingPropertiesRequestHandler-Sample.txt](unified-pricing-management/media/GetCustomizedPricingPropertiesRequestHandler-Sample.txt)
 
 2. Register the output library in the CommerceRuntime.Ext.config file.
 
