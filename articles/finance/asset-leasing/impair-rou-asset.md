@@ -4,7 +4,7 @@ description: Learn about the functionality that records an impairment and adjust
 author: moaamer
 ms.author: moaamer
 ms.topic: how-to
-ms.date: 12/03/2021
+ms.date: 07/03/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -35,13 +35,11 @@ The impairment number sequence must be defined on the **Asset leasing parameters
 7. Set the **Close book** option to **Yes** to close the lease book. You can undo this action by using the **Reopen lease** status. Entries can't be posted against closed leases, and closed leases can't be adjusted. 
 8. Select **Post** to create or post the impairment entry.
 
-    > [!NOTE]
-    > After the impairment transaction is posted, a new book version is created.
-
-    > If the lease is classified as an operating lease, the monthly depreciation after impairment will be calculated using straight-line depreciation.
-    >
-    > [!NOTE]
-    > If the impairment workflow is configured, the post button will not be visible and the impairment must be submitted for approval.
+> [!NOTE]
+> After the impairment transaction is posted, a new book version is created.
+> If the lease is classified as an operating lease, the monthly depreciation after impairment will be calculated using straight-line depreciation.
+>
+> If the impairment workflow is configured, the **Post** button isn't visible and the impairment must be submitted for approval.
 
 9. To view the impaired asset depreciation schedule, open the asset depreciation schedule for the lease book. The asset will now be depreciated on a straight-line basis over the number of months that you entered in the **Periods remaining** field.
 10. To view the impairment expense journal entry, select **Asset leasing journal** on the Action Pane of the impaired lease book. The system creates a journal entry that debits the impairment expense posting account and credits the lease asset posting account. 
@@ -104,7 +102,8 @@ The impairment has one other effect that you should consider. Because the ROU as
 
 ## Lease impairment workflow 
 
-The Lease **Impairment workflow** is used to ensure a consistent impairment process. The workflow guides each lease impairment through predefined approval steps, assigning tasks to specific users. After a lease impairment is approved, you finalize it on the **Lease Impairment** list page. To begin, open the **Lease impairment** dialog from the **Lease book**, click **Submit** to workflow, and then manage the approval directly from the Lease **Impairment page**.
+The Lease **Impairment workflow** is used to ensure a consistent impairment process. The workflow guides each lease impairment through predefined approval steps, assigning tasks to specific users. After a lease impairment is approved, it's finalized on the **Lease impairment** list page. 
+To approve a lease impairment, go to the **Lease book** and open the **Lease impairment** dialog, click **Submit** to workflow. You manage the approval directly from the **Lease impairment** page.
 
 
 
