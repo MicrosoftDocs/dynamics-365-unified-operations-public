@@ -86,7 +86,7 @@ To configure customer parameters, follow these steps.
 6. In the **EAN** field, enter the customer's identification number. 
 
     > [!NOTE]
-    > If no EAN is defined, the customer's tax exempt number is used.
+    > If no EAN is defined, the customer's tax exempt number is used for the customer's company identification.
 
 7. On the **Sales demographics** FastTab, in the **Primary contact** field, select a person who will be considered the buyer's contact.
 
@@ -169,6 +169,34 @@ For each configuration, follow these steps.
 9. On the **Lookups** FastTab, select **TaxCodeTypeSelector** in the grid.
 10. On the **Conditions** FastTab, repeat steps 4 through 6 to configure the correspondence between internal sales tax codes and tax type codes. If no tax type code is required, select **Not applicable**.
 11. In the **State** field at the top of the page, select **Completed**, and then save your changes.
+
+## Buyer reference
+
+According to OIOUBL version 3 requirements, when you register free text invoices, invoices that are based on sales orders, or project invoices, you must enter either a customer reference.
+
+### Free text invoices
+
+1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
+1. Create a new invoice, or select an existing invoice.
+1. In the **Header** view, on the **Customer** FastTab, in the **References** section, enter a value in the **Customer reference** field.
+
+### Sales orders
+
+1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+1. Create a new sales order, or select an existing sales order.
+1. In the **Header** view, on the **General** FastTab, in the **References** section, enter a value in the **Customer reference** field.
+
+### Project invoices
+
+1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
+1. Create a new project contract, or select an existing project contract.
+1. On the **Funding sources** FastTab, select or create a funding source of the **Customer** type, and then select **Details**.
+1. On the **Funding source details** page, on the **Other** FastTab, in the **References** section, in the **Customer reference** field, enter default value for the contract. Alternatively, you can enter project-specific value in the corresponding field on the **E-invoice** FastTab.
+1. To enter customer reference values directly on the project invoice proposal, follow these steps:
+
+    1. Go to **Project management and accounting** \> **Projects invoices** \> **Project invoice proposals**.
+    1. Create a new invoice proposal, or select an existing invoice proposal.
+    1. On the **Invoice proposal header** FastTab, in the **e-Invoice** section, enter a value in the **Customer reference** field.
 
 ## Export customer electronic invoices
 
