@@ -24,15 +24,15 @@ The primary address of the legal entity must be in Denmark.
 
 ## Import electronic reporting configurations
 
-In the **Electronic reporting** workspace, import the following electronic reporting (ER) formats from the repository:
+In the **Electronic reporting** workspace, import the following or later versions of the electronic reporting (ER) formats from the repository to enable electronic invoices generation in the **OIOUBL version 3** format:
 
-- OIOUBL Sales invoice (DK)
-- OIOUBL Project invoice (DK)
-- OIOUBL Sales credit note (DK)
-- OIOUBL Project credit note (DK)
+- OIOUBL Sales invoice (DK) **version 272.46.9**
+- OIOUBL Project invoice (DK) **version 272.40.9**
+- OIOUBL Sales credit note (DK) **version 272.45.10**
+- OIOUBL Project credit note (DK) **version 272.36.6**
 
 > [!NOTE]
-> Any other required configurations are automatically imported.
+> If the versions of the ER configurations earlier than mentioned above are used, then the system will continue electronic invoices generation following the previous OIOUBL format version, older then version 3.
 
 For more information about how to import ER configurations, see [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
