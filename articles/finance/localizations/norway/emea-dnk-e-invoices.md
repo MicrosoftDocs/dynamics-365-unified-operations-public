@@ -50,30 +50,6 @@ To reference the imported ER format configurations, follow these steps.
 
 ## Configure parameters
 
-### Seller identification
-
-Companies that submit electronic invoices can be identified by their CVR number or their [Global Location Number (GLN)](https://en.gs1.dk/services/gln). The GLN is also known as a European article numbering (EAN) location number.
-
-To identify a company by its CVR number, follow these steps.
-
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-1. On the **Bank account information** FastTab, in the **Codes** section, in the **Routing number** field, make sure that a valid CVR number is entered for the legal entity.
-
-    The CVR number is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the seller's identification during the submission process.
-
-To identify a company by its GLN, follow these steps.
-
-1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
-1. Define a new registration type for Denmark that has the name **EAN**. You must enter the name exactly as it appears here.
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select **Registration IDs** on the Action Pane.
-1. On the **Registration ID** FastTab, add the **EAN** registration type that you created.
-1. In the **Registration number** field, enter a valid GLN.
-
-    The GLN is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the seller's identification during the submission process.
-
-    > [!NOTE]
-    > The GLN has higher priority than the CVR number. If both numbers are configured at the same time, the GLN is used.
-
 ### Buyer identification
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
@@ -88,10 +64,22 @@ To identify a company by its GLN, follow these steps.
 
 To configure legal entity parameters, follow these steps.
 
-1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's value-added tax (VAT) number.
-3. On the **Bank account information** FastTab, in the **Routing number** field, enter the company's registration number.
-4. In the **FI-Creditor ID** field, enter the creditor's identification number if you plan to use FIK payments.
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**, and select a legal entity.
+2. On the **Addresses** FastTab, add a valid primary address for the selected legal entity.
+3. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's VAT number.
+4. On the **Bank account information** FastTab, in the **Routing number** field, enter the company's CVR number.
+5. Companies can be identified by their CVR number or their Global Location Number (GLN). The GLN is also known as a European article numbering (EAN) location number. To identify a company by its EAN, follow these steps.
+
+    - Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
+    - Define a new registration type for Denmark that has the name **EAN**. You must enter the name exactly as it appears here.
+    - Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select **Registration IDs** on the Action Pane.
+    - On the **Registration ID** FastTab, add the **EAN** registration type that you created.
+    - In the **Registration number** field, enter a valid EAN number.
+      
+    > [!NOTE]
+    > The GLN has higher priority than the CVR number. If both numbers are configured at the same time, the GLN is used.  
+
+6. In the **FI-Creditor ID** field, enter the creditor's identification number if you plan to use FIK payments.
 
 > [!NOTE]
 > The contact information for the legal entity is automatically retrieved from the related Person that is associated with the current user in Dynamics 365 Finance. Make sure that the person has a valid email address and phone number. The phone number must start from **+** and the country code. 
