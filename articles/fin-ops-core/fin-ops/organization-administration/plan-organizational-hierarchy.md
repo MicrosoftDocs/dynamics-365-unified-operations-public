@@ -22,7 +22,7 @@ Before you set up organizations and organization hierarchies, make sure that you
 
 Organizational hierarchies represent the relationships between the organizations that make up a business. Therefore, the most important consideration when you model organizations is the structure of your business. We recommend that you define organization structures based on feedback from executives and senior managers from functional areas, such as finance and accounting, human resources, operations, purchasing, and sales and marketing.
 
-When you are planning hierarchies, it is also important to consider the relationship between the organizational hierarchy and financial dimensions. You can set up multiple organizational hierarchies to represent different views of your business. By using financial dimensions, you can create reports based on these views. Work with your partner to create hierarchies that address both organizational and statutory reporting needs.
+When you're planning hierarchies, it's also important to consider the relationship between the organizational hierarchy and financial dimensions. You can set up multiple organizational hierarchies to represent different views of your business. By using financial dimensions, you can create reports based on these views. Work with your partner to create hierarchies that address both organizational and statutory reporting needs.
 
 > [!NOTE]
 > Although you can use financial dimensions to represent legal entities without creating the legal entities, financial dimensions aren't designed to address the operational or business needs of legal entities. The interunit accounting functionality is designed to address only the accounting entries that are created by each transaction.
@@ -34,7 +34,7 @@ When you are planning hierarchies, it is also important to consider the relation
 
 You must have at least one legal entity to represent your business. A legal entity can enter legal contracts and is required to prepare financial statements that report on its performance.
 
-Legal entities can be used for transactional business or for consolidation. This means that a legal entity in finance and operations does not necessarily represent a real entity in your business. For example, a company that participates in transactions can own subsidiary legal entities. In this scenario, a legal entity is required for transactions, and a virtual legal entity is required to consolidate the results and balances of the subsidiary legal entities.
+Legal entities can be used for transactional business or for consolidation. This means that a legal entity in finance and operations doesn't necessarily represent a real entity in your business. For example, a company that participates in transactions can own subsidiary legal entities. In this scenario, a legal entity is required for transactions, and a virtual legal entity is required to consolidate the results and balances of the subsidiary legal entities.
 
 Internal organizations in your business, such as regional offices, can be represented as additional legal entities, or as operating units of the main legal entity. An operating unit isn't required to be a legally defined organization. Operating units are used to control economic resources and operational processes in the business. For example, departments and cost centers are operating units.
 
@@ -64,7 +64,7 @@ Module parameters are shared among operating units.
 
 #### If the organization is modeled as a legal entity
 
-Most data is automatically secured by company ID. A company ID is a unique identifier for the data that is associated with a legal entity. A company can be associated with only one legal entity, and a legal entity can be associated with only one company. Users can access data only for the companies that they have access to. You do not need to customize to secure data by company ID.
+Most data is automatically secured by company ID. A company ID is a unique identifier for the data that is associated with a legal entity. A company can be associated with only one legal entity, and a legal entity can be associated with only one company. Users can access data only for the companies that they have access to. You don't need to customize to secure data by company ID.
 
 #### If the organization is modeled as an operating unit
 
@@ -78,7 +78,7 @@ Each legal entity requires a ledger that provides a chart of accounts, accountin
 
 #### If the organization is modeled as an operating unit
 
-An operating unit can't have its own ledger information. If your internal organizations do not require unique ledgers, you can model them as operating units. Ledger information will be set up for the parent legal entity in the hierarchy. Income statements can be created for operating units within a legal entity or for the parent legal entity.
+An operating unit can't have its own ledger information. If your internal organizations don't require unique ledgers, you can model them as operating units. Ledger information is set up for the parent legal entity in the hierarchy. Income statements can be created for operating units within a legal entity or for the parent legal entity.
 
 ### Fiscal calendars
 
@@ -121,7 +121,7 @@ Intercompany sales orders, purchase orders, payments, or receipts can be applied
 If you model the regional office as a legal entity, you have the following options:
 
 - Headquarters creates a journal entry to cross-charge the regional office for the expense. The transactions can't be aged.
-- Headquarters sends a purchase order for the services to the regional office. A sales order is automatically created in the legal entity for the regional office, with intercompany sub-ledger transactions.
+- Headquarters sends a purchase order for the services to the regional office. A sales order is automatically created in the legal entity for the regional office, with intercompany subledger transactions.
 
 ##### Example 2: Headquarters procures and pays for service that is delivered to a regional office
 
