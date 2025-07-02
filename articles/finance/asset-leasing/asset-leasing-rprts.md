@@ -4,8 +4,8 @@ description: Learn about the reports that are available in asset leasing, with o
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 04/05/2022
-ms.reviewer: kfend
+ms.date: 07/02/2025
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-10-27
@@ -22,7 +22,7 @@ This article lists and briefly describes the reports that are available in Asset
 
 - To view most Asset leasing reports, go to **Asset Leasing > Inquiries and reports > Lease reports** and then select a report to view. For the reports that require a different selection path, the steps to open the report are included with that report's description. 
 - When you select a report to print, a parameters page will open that lets you filter the information that's included on the report. Enter filter criteria, and then select **OK** to generate the report. The generated report will show information that falls within the filters that you specified.
--In version **10.0.44**, after you enable the **Multi-company purpose** under **Feature Management**, any organization hierarchy with that purpose assigned will appear in the new multi-company control—replacing the flat multi-selection list in asset leasing reports that already supports companies multi selection. This control displays your legal entities in a hierarchical parent-child view with search and sort capabilities while still offering a redesigned flat list option.
+-  In Dynamics 365 Finance version 10.0.44, when the **Multi-company purpose** feature under **Feature Management** is enabled, any organization hierarchy with that purpose assigned appear in the new multi-company control—replacing the flat multi-selection list in asset leasing reports that already supports companies multi selection. This control displays your legal entities in a hierarchical parent-child view with search and sort capabilities and still offers a redesigned flat list option.
 
 ## Asset movement
 The Asset movement report serves as a rollforward report for the right-of-use asset balances for each lease. This report lets you view the asset transactions of a lease during a specified period. The report includes the following fields. 
