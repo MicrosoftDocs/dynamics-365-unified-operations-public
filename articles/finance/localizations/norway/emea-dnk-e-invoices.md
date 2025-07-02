@@ -50,16 +50,6 @@ To reference the imported ER format configurations, follow these steps.
 
 ## Configure parameters
 
-### Buyer identification
-
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
-1. On the **Invoice and delivery** FastTab, in the **EAN** field, make sure that a valid GLN is entered for the customer.
-
-    The GLN is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
-
-    > [!NOTE]
-    > If no GLN is defined, the customer's tax exempt number is used.
-
 ### Configure legal entity parameters
 
 To configure legal entity parameters, follow these steps.
@@ -77,12 +67,31 @@ To configure legal entity parameters, follow these steps.
     - In the **Registration number** field, enter a valid EAN number.
       
     > [!NOTE]
-    > The GLN has higher priority than the CVR number. If both numbers are configured at the same time, the GLN is used.  
+    > The EAN has higher priority than the CVR number. If both numbers are configured at the same time, the EAN is used.  
 
 6. In the **FI-Creditor ID** field, enter the creditor's identification number if you plan to use FIK payments.
 
 > [!NOTE]
 > The contact information for the legal entity is automatically retrieved from the related Person that is associated with the current user in Dynamics 365 Finance. Make sure that the person has a valid email address and phone number. The phone number must start from **+** and the country code. 
+
+### Configure customer parameters
+
+To configure customer parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
+2. On the **Addresses** FastTab, add a valid address for the selected customer.
+3. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable the generation of electronic invoices.
+4. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice.
+5. In the **Tax exempt number** field, enter the customer's tax exempt number.
+6. In the **EAN** field, enter the customer's identification number. 
+
+    > [!NOTE]
+    > If no EAN is defined, the customer's tax exempt number is used.
+
+7. On the **Sales demographics** FastTab, in the **Primary contact** field, select a person who will be considered the buyer's contact.
+
+    > [!NOTE]
+    > All available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid email address and phone number. The phone number must start from **+** and the country code.
 
 ### Configure methods of payment
 
@@ -160,21 +169,6 @@ For each configuration, follow these steps.
 9. On the **Lookups** FastTab, select **TaxCodeTypeSelector** in the grid.
 10. On the **Conditions** FastTab, repeat steps 4 through 6 to configure the correspondence between internal sales tax codes and tax type codes. If no tax type code is required, select **Not applicable**.
 11. In the **State** field at the top of the page, select **Completed**, and then save your changes.
-
-### Configure customer parameters
-
-To configure customer parameters, follow these steps.
-
-1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
-2. On the Addresses FastTab, add a valid address for the selected customer.
-3. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable the generation of electronic invoices.
-4. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice.
-5. In the **Tax exempt number** field, enter the customer's VAT exempt number.
-6. In the **EAN** field, enter the customer's identification number. This number will be used as the **Endpoint ID** value in the output XML file of the electronic invoice.
-7. On the **Sales demographics** FastTab, in the **Primary contact** field, select a person who will be considered the buyer's contact.
-
-    > [!NOTE]
-    > All available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid email address and phone number. The phone number must start from **+** and the country code.
 
 ## Export customer electronic invoices
 
