@@ -58,8 +58,8 @@ To configure legal entity parameters, follow these steps.
 2. On the **Addresses** FastTab, add a valid primary address for the selected legal entity.
 3. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's VAT number.
 4. On the **Bank account information** FastTab, in the **Routing number** field, enter the company's CVR number.
-5. Companies can be identified by their CVR number or their Global Location Number (GLN). The GLN is also known as a European article numbering (EAN) location number. To identify a company by its EAN, follow these steps.
-
+5. Companies can be identified by their CVR number (with **0184** schema value) or their Global Location Number, GLN (with **0088** schema value). The GLN is also known as a European article numbering (EAN) location number. To identify a company by its EAN, follow these steps.
+ 
     - Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
     - Define a new registration type for Denmark that has the name **EAN**. You must enter the name exactly as it appears here.
     - Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select **Registration IDs** on the Action Pane.
