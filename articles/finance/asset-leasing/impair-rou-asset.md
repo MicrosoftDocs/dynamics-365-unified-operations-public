@@ -42,12 +42,12 @@ The impairment number sequence must be defined on the **Asset leasing parameters
 > If the impairment workflow is configured, the **Post** button isn't visible and the impairment must be submitted for approval.
 
 9. To view the impaired asset depreciation schedule, open the asset depreciation schedule for the lease book. The asset will now be depreciated on a straight-line basis over the number of months that you entered in the **Periods remaining** field.
-10. To view the impairment expense journal entry, select **Asset leasing journal** on the Action Pane of the impaired lease book. The system creates a journal entry that debits the impairment expense posting account and credits the lease asset posting account. 
-11. To view the new carrying value of the ROU asset, select **Asset transactions** on the Action Pane of the lease book.
+10. To view the impairment expense journal entry, select **Asset leasing journal** on the Action pane of the impaired lease book. The system creates a journal entry that debits the impairment expense posting account and credits the lease asset posting account. 
+11. To view the new carrying value of the ROU asset, select **Asset transactions** on the Action pane of the lease book.
 
 ## Example of ROU asset impairment
 
-For this example, the lease is a non-specialized asset that doesn't transfer ownership or grant the lessee the option to purchase.
+For this example, the lease is a nonspecialized asset that doesn't transfer ownership or grant the lessee the option to purchase.
 
 ### Setup
 
