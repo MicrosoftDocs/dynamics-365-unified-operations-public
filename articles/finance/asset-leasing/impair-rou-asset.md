@@ -31,7 +31,7 @@ The impairment number sequence must be defined on the **Asset leasing parameters
 3. In the dialog box that appears, in the **Impairment amount** field, enter the amount of the asset impairment. To decrease the ROU asset, you should enter a positive value.
 4. In the **Transaction date** field, enter the date when the impairment entry should be posted.
 5. In the **Periods remaining** field, enter the remaining number of months to amortize.
-6. Set the **Preview** option to view the proposed asset balance and financial entry before they are created or posted.
+6. Set the **Preview** option to view the proposed asset balance and financial entry before they're created or posted.
 7. Set the **Close book** option to **Yes** to close the lease book. You can undo this action by using the **Reopen lease** status. Entries can't be posted against closed leases, and closed leases can't be adjusted. 
 8. Select **Post** to create or post the impairment entry.
 
