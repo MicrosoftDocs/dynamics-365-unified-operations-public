@@ -49,9 +49,7 @@ Import the most recent versions of the configurations. The version description u
 > After you import all the ER configurations from the preceding table, set the **Default for model mapping** option to **Yes** for the **Statistics on invoices model mapping** configuration.
 
 ## Generate the report
-General ledger > Inquiries and reports > Statistics > Statistics on invoices report. On the Statistics on invoices dialog select one of the ER formats:
 
-On the Electronic report parameters dialog, specify the reporting period and optionally Vendor posting profile and Print document details parameters.
 1. Go to **General ledger** > **Inquiries and reports** > **Statistics** > **Statistics on invoices report**.
 2. In the **Statistics on invoices** dialog box, in the **Format mapping** field, select one of the ER formats.
   
