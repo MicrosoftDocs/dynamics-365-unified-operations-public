@@ -17,7 +17,7 @@ ms.search.region: France
 
 This article explains how to configure and generate reports on payment deadlines for customer and vendor invoices for legal entities in France using Microsoft Dynamics 365 Finance.
 
-In France, legal entities are required to report on payment practices as part of their annual management report, in accordance with Article L.441-6-1 and Article D.441-4 of the French Commercial Code. 
+In France, legal entities are required to report on payment practices as part of their annual management report, in accordance with the French Commercial Code. 
 This regulation aims to increase transparency and reduce late payments in commercial transactions. 
 Companies must disclose the number and total value of invoices paid late, both to suppliers and by customers, and provide a breakdown by delay intervals. 
 
