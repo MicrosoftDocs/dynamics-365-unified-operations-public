@@ -45,6 +45,12 @@ These sales tax reporting codes are entered in the **Taxable sales** and **Sales
 6. In the **Brief description** field, enter a brief description for the sales tax reporting code.
 7. Close the form to save your changes.
 
+## Set up tax number of the reporting organization
+
+The tax number of the reporting organization, shown in the \<Steuernummer\> field of the Austrian annual sales tax report, is derived from the **Tax registration number** field of your legal entity.
+
+The format follows the standard Austrian Steuernummer pattern: 12-345/6789.
+
 ## Generate the annual sales tax report U1
 
 1. Go to **Tax** > **Inquires and reports** > **Sales tax reports** > **Annual sales tax (Austria)**.
