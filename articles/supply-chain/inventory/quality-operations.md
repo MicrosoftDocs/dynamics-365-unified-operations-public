@@ -52,23 +52,23 @@ For this example, the following operations can be created to represent the work 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: preview until further notice -->
 
-Use *nonconformance operation groups* to collect related operations that you can [apply quickly to a nonconformance](tasks/create-process-non-conformance.md) all at once. For example, you might create a group of operations that together describe the steps your company would take to resolve a problem with purchased raw materials (research, repair, and retest).
+Use *nonconformance operation groups* to collect related operations that you can [apply quickly to a nonconformance](tasks/create-process-non-conformance.md) all at once. For example, you might create a group of operations that together describe the steps that your company takes to fix issues with purchased raw materials (research, repair, and retest).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Prerequisites
 
-To use nonconformance operation groups, your system must meet the following requirements:
+Before you can use nonconformance operation groups, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *(Preview) Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Manage nonconformance operation groups
 
-1. Go to **Inventory management \> Setup \> Quality management \> Non conformance operation groups**.
-1. Use the buttons on the Action Pane to create, delete, or edit groups shown in the list pane.
-1. In the heading of a new or selected group, enter a name and description for the group.
-1. On the **Operations** FastTab, use the toolbar buttons to add and remove operations that belong to the current group.
+1. Go to **Inventory management** \> **Setup** \> **Quality management* \> *Non conformance operation groups**.
+1. Use the buttons on the Action Pane to create new nonconformance operation groups in the list pane or edit existing ones. (You can also delete existing groups.)
+1. On the heading of a new or selected group, enter a name and description for the group.
+1. On the **Operations** FastTab, use the buttons on the toolbar to add and remove operations that belong to the current group.
 
 ## Related information
 

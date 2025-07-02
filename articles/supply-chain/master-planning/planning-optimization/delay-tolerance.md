@@ -1,8 +1,8 @@
 ---
 title: Delay tolerance (negative days)
 description: Learn about the delay tolerance calculation and how it affects planned order creation in Planning Optimization with an outline on toggling delay tolerance.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 08/09/2022
 ms.reviewer: kamaybac

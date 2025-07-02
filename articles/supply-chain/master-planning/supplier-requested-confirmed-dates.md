@@ -1,8 +1,8 @@
 ---
 title: Calculate requested ship dates for purchase orders
 description: Learn how the system calculates requested ship dates for purchase orders, including prerequisites and an outline on receipt dates on purchase orders.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: VendCustTransportPoint2Point, SrmParameters, VendTable
 ms.topic: how-to
@@ -218,6 +218,9 @@ When you edit a purchase order where the requested and/or confirmed ship date ha
     - Warehouse on a line
 
 If you change the **Requested ship date** or **Confirmed ship date** value on the header of a purchase order, the system asks you whether the relevant ship and receipt dates should also be updated for each line.
+
+> [!NOTE]
+> If any subsequent changes are made at the line level (such as modifying the unit, warehouse quantity, or site), the line **Requested ship date** and **Requested receipt date** are recalculated based on the current date rather than the header date. To ensure accurate date calculations, we recommend that you complete all necessary updates at the line level before updating the header **Requested ship date** or **Confirmed ship date**.
 
 ## Example date calculation scenarios
 

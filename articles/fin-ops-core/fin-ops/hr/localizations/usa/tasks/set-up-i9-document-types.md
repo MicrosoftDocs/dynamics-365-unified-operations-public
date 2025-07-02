@@ -4,7 +4,7 @@ description: Access a procedure that shows how to view and set up document types
 author: ShielaSogge
 ms.author: shielas
 ms.topic: how-to
-ms.date: 01/10/2022
+ms.date: 06/04/2025
 ms.custom:
 ms.reviewer: twheeloc  
 audience: Application User 
@@ -35,8 +35,8 @@ This procedure shows how to view and set up document types that are used for I-9
 
     The official form numbers can be found on the [US Citizenship and Immigration Services website](https://www.uscis.gov).
 
-7. Select or clear the **Active** checkbox.
-8. In the **Expire** field, set the date to **2019-10-27** (October 27, 2019).
+7. Select or clear the **Active** toggle.
+8. In the **Expire** field, set the date to **2024-10-27** (October 27, 2024).
 
     The expiration date is optional.
 

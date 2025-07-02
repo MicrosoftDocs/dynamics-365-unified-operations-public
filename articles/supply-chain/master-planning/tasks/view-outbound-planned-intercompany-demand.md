@@ -1,12 +1,12 @@
 --- 
 title: View outbound planned intercompany demand
 description: This article provides a procedure that shows how to view outbound planned intercompany demand. 
-author: t-benebo
+author: Henrikan
 ms.date: 08/29/2018
 ms.topic: how-to 
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqOutboundIntercompanyDemand   
 ms.reviewer: kamaybac
-ms.author: benebotg
+ms.author: henrikan
 ---
 # View outbound planned intercompany demand
 

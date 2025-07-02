@@ -4,7 +4,7 @@ description: Learn about the Accounts receivable home page, including outlines o
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: article
-ms.date: 03/22/2024
+ms.date: 05/12/2025
 ms.custom: evergreen
 ms.reviewer: twheeloc
 ms.collection: get-started

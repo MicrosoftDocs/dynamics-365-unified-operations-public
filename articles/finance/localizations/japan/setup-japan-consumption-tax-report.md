@@ -1,63 +1,69 @@
 ---
-title: Setup Japan consumption tax report
-description: Learn about setting up the system to support the Japan consumption tax report, including a step-by-step process for enabling consumption tax reports.
+title: Set up Japan consumption tax report
+description: Learn how to set up the system to support the Japan consumption tax report in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 12/02/2019
+ms.date: 05/09/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: LedgerParameters, LedgerBadDebtAccounts_JP, OMLegalEntity, TaxTable
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
-# Setup Japan consumption tax report
+# Set up Japan consumption tax report
 
 [!include [banner](../../includes/banner.md)]
 
-This task walks you through setting up the system to support the Japan consumption tax report. In this task, you will modify General ledger parameters, a legal entity, sales tax reporting accounts and a sales tax code. 
+This article explains how to set up the system to support the Japan consumption tax report in Microsoft Dynamics 365 Finance.
 
-This task was created using the demo data company JPMF.
+The following procedures walk you through how to set up the system to support the Japan consumption tax report. 
 
-
-
+The procedures use the demo data company JPMF.
 
 ## Enable the consumption tax report
-1. Go to Tax > Setup > Parameters > General ledger parameters.
-2. Click the Sales tax tab.
-3. Expand the Japanese tax reporting section.
-4. Select Yes in the Consumption tax reports field.
 
-## Tax reporting accounts
-1. Go to Tax > Setup > Sales tax > Tax reporting accounts.
-2. Click Edit.
-3. In the Bad debt field, specify the desired values.
-    * Example: 84720  
-4. In the Collected bad debt field, specify the desired values.
-    * Example: 84710  
+To enable the consumption tax report, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax \> Setup \> Parameters \> General ledger parameters**.
+1. Select the **Sales tax** FastTab.
+1. Expand the **Japanese tax reporting** section.
+1. In the **Consumption tax reports** field, select **Yes**.
+
+## Configure tax reporting accounts
+
+To configure tax reporting accounts, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax \> Setup \> Sales tax \> Tax reporting accounts**.
+1. Select **Edit**.
+1. In the **Bad debt** field, enter a value. For example, enter "84720".  
+1. In the **Collected bad debt** field, enter a value. For example, enter "84710".
 
 ## Enter Japan reporting information for a legal entity
-1. Go to Organization administration > Organizations > Legal entities.
-2. Expand the Registration numbers section.
-3. Click Edit.
-4. In the Accounting personnel field, type a value.
-5. In the Company representative field, type a value.
+
+To enter Japan reporting information for a legal entity, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Legal entities**.
+1. Expand the **Registration numbers** section.
+1. Select **Edit**.
+1. In the **Accounting personnel** field, enter a value.
+1. In the **Company representative** field, enter a value.
 
 ## Enter report setup information for a sales tax code
-1. Go to Tax > Indirect taxes > Sales tax > Sales tax codes.
-2. Use the Quick Filter to find records. For example, filter on the Sales tax code field with a value of 'JP Cons'.
-3. Expand the Report setup section.
-4. Click Edit.
-    * Confirm the reporting codes were configured properly. 
-    
-  > [!NOTE] 
-  > For setting reporting codes in sales tax codes you may use the table below.     
- 
-**Using reporting codes in Japanese sales tax report base items**
 
-| **Reporting code** | **Reporting code name**                                                               | **Calculation Sheet column**                                  | **3 - (1) report column**  | **3 - (2) report**  **column**         |
+To enter report setup information for a sales tax code, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**.
+1. Use the Quick Filter to find records. For example, filter on the **Sales tax code** field with a value of "JP Cons".
+1. Expand the **Report setup** section.
+1. Select **Edit**.
+1. Confirm that the reporting codes are configured properly using the information in the following table.
+      
+### Reporting codes in Japanese sales tax report base items
+
+| **Reporting code** | **Reporting code name**                                                               | **Calculation sheet column**                                  | **3 - (1) report column**  | **3 - (2) report**  **column**         |
 |--------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------|----------------------------|----------------------------------------|
 | 1                  | Taxable sales                                                                         | Item 1                                                        | Item 1                     | Item 1, Item 2-Item 6 (at tax rates) |
 | 202                | Tax-exempted sales                                                                    | Item 2                                                        | Item 15                    | \-                                     |

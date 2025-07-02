@@ -4,7 +4,7 @@ description: This article explains how to configure and process customer prepaym
 author: raynezou
 ms.author: raynezou
 ms.topic: how-to
-ms.date: 04/30/2025
+ms.date: 06/30/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -14,23 +14,19 @@ ms.search.form: SalesTableListPage, SalesEditLines, SysQueryForm, SysRecurrence
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-# Create customer prepayment invoices
+# Customer prepayment invoices
 
 [!include [banner](../../includes/banner.md)]
 
 This article explains how to configure and process customer prepayment invoices.
 
-## Customer prepayment invoices
+## Types of prepayment processes
 
-Sellers can request a deposit or advance payment to secure a commitment from the customer before they deliver goods or services. The customer prepayment invoice feature provides up-front funds to cover initial costs, reduce financial risk, and ensure that the buyer is committed to the transaction.
-
-### Types of prepayment processes
-
-#### Prepayment as a deposit
+### Prepayment as a deposit
 
 In this process, the buyer makes an initial partial payment to secure goods, services, or a contract. This partial payment is often referred to as a deposit. It's either a percentage or a fixed amount of the total value of the sales order. The prepayment invoice functions similarly to a billing document. The final invoice is issued later and reflects the full amount of the sales order.
 
-#### Prepayment invoice as a tax invoice
+### Prepayment invoice as a tax invoice
 
 In this process, the seller issues a real prepayment invoice to the buyer. This invoice includes sales taxes, if they are applicable. The buyer pays the invoice amount up front. Then, when the payment is completed, the seller can proceed with the delivery of goods or services. Later, the official invoice is sent out. The value of this invoice is the total outstanding amount, which is the difference between the total sales order value and the total prepaid amount.
 
@@ -131,7 +127,7 @@ When you create a sales order, you can define the prepayment amount by following
 After the prepayment proposal is confirmed, generate the prepayment invoice by following these steps.
 
 1. Go to **Invoice** \> **Prepayment**, and select **Prepayment invoice**.
-2. Review and post the prepayment invoice. The page shows information about the overall prepayment invoice, including the customer invoice account, posting and due date, prepayment invoice number, prepayment status, and prepayment amount.
+2. Review and post the prepayment invoice. The page shows information about the overall prepayment invoice, including the customer invoice account, posting and due dates, prepayment invoice number, prepayment status, and prepayment amount.
 3. Select **Post**. The open customer transaction is created, and the status of the prepayment invoice is **Pending**.
 4. After the transaction is posted, you can reverse this transaction using the **Reverse transaction** button on the action pane. You can select the **Reversal posting date**, **Reason code**, and **Reason comment** before the reversal is posted. 
 

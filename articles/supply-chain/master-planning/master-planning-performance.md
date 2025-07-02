@@ -1,8 +1,8 @@
 ---
 title: Improve master planning performance
 description: Learn about the various options that can help you improve the performance of master planning or troubleshoot issues with an outline on parameters.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 12/18/2019
 ms.custom: 

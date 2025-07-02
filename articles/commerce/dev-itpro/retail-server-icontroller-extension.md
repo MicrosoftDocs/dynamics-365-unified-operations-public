@@ -284,7 +284,7 @@ To debug the RS extension project in Visual Studio. Go to **Debug > Attach to Pr
 
 ## Generate the Typescript proxy for POS
 
-The POS uses the Typescript proxy to access the Retail Server APIs and CRT entities. The proxy class acts as manger class or wrapper to access the Retail server APIs without the proxy extension manually finding the Retail server API and entities metadata.
+The POS uses the Typescript proxy to access the Retail Server APIs and CRT entities. The proxy class acts as manager class or wrapper to access the Retail server APIs without the proxy extension manually finding the Retail server API and entities metadata.
 
 ### Steps to generate the proxy files
 

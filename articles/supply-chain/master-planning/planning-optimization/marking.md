@@ -1,8 +1,8 @@
 ---
 title: Inventory marking
 description: Learn about the options that are available for marking inventory in firmed orders, including outlines on marking and pegging.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 12/02/2020
 ms.custom: 

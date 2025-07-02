@@ -1,8 +1,8 @@
 ---
 title: Master planning setup wizard  (contains video)
 description: Learn how to run the master planning setup wizard to set up master planning, including an outline on company-specific requirements.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: install-set-up-deploy
 ms.date: 10/21/2019
 ms.custom: 

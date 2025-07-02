@@ -122,7 +122,7 @@
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/supply-chain
         - name: Default dashboard
           href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/supply-chain
-        - name: Immersive Home (preview)
+        - name: Immersive Home (production ready preview)
           href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/supply-chain
         - name: Set the preferred initial page for each user
           href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/supply-chain
@@ -1783,8 +1783,6 @@
           href: inventory/inventory-visibility-api.md
         - name: Sync external inventory adjustments through Inventory Visibility
           href: inventory/inventory-visibility-sync-changes.md
-        - name: Inquire into inventory with Copilot (preview)
-          href: inventory/inventory-visibility-copilot-api.md
         - name: Log and view successful API posts
           href: inventory/inventory-visibility-track-inventory-log-history.md
         - name: Inventory Visibility diagnostic tool
@@ -2413,6 +2411,8 @@
           href: procurement/supplier-com-agent-overview.md
         - name: Set up and configure the Supplier Communications Agent
           href: procurement/supplier-com-agent-setup.md
+        - name: Solve common problems when setting up the Supplier Communications Agent
+          href: procurement/supplier-com-agent-setup-faq.md
         - name: Follow up on purchase orders using the Supplier Communications Agent
           href: procurement/supplier-com-agent-follow-up.md
         - name: Review and apply purchase order changes received in vendor emails
@@ -3553,7 +3553,7 @@
           items:
           - name: Rating profiles
             href: transportation/tasks/setup-a-rating-profile.md
-          - name: Set up rate masters
+          - name: Set up rate masters, rate bases, and break masters
             href: transportation/tasks/set-up-rate-masters.md
           - name: Miscellaneous charges
             href: transportation/transportation-management-misc-charge.md
@@ -3913,6 +3913,10 @@
           items:
           - name: Install the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
+          - name: Migrate the Warehouse Management mobile app from V3 to V4 (preview)
+            href: warehousing/warehouse-app-migrating-from-v3-v4.md
+          - name: Use a QR code to connect the mobile app to Supply Chain Management
+            href: warehousing/warehouse-app-qr-code.md
           - name: User-based authentication
             href: warehousing/warehouse-app-authenticate-user-based.md
           - name: User-based authentication FAQ
@@ -3971,12 +3975,16 @@
             href: warehousing/display-older-batches-within-warehouses.md
           - name: Pick oldest batch on a mobile device
             href: warehousing/pick-oldest-batch.md
+          - name: Query item data on a mobile device
+            href: warehousing/warehouse-app-item-inquiry.md
         - name: Global mobile device parameters
           href: warehousing/mobile-device-parameters.md
         - name: Warehouse mobile devices workspace
           href: warehousing/mobile-device-workspace.md
         - name: Mobile device user settings
           href: warehousing/mobile-device-user-settings.md
+        - name: Warehouse Management mobile app calculator
+          href: warehousing/warehouse-app-calculator.md
         - name: Warehouse app event processing
           href: warehousing/warehouse-app-events.md
         - name: Inspect details of active Warehouse Management mobile app sessions
@@ -4003,7 +4011,7 @@
           href: warehousing/location-directive-acceptance-tests.md
         - name: Configure product filters for warehouse transactions
           href: warehousing/filters-and-filter-codes.md
-        - name: Configure the transfer order receiving process (preview)
+        - name: Configure the transfer order receiving process
           href: warehousing/configure-transfer-order-receiving-process.md
         - name: Location stocking limits
           href: warehousing/location-stocking-limits.md
@@ -4049,7 +4057,7 @@
             href: warehousing/document-routing-layout-for-license-plates.md
           - name: Print labels using an external service
             href: supply-chain-dev/label-printing-using-external-label-service.md
-          - name: Print labels using the Loftware NiceLabel label service solution
+          - name: Print labels using the Loftware label service solution
             href: supply-chain-dev/label-printing-using-nicelabel.md
           - name: Print labels using the Seagull Scientific BarTender label service solution
             href: supply-chain-dev/label-printing-using-bartender.md
@@ -4183,17 +4191,17 @@
       items:
       - name: Overview
         href: responsible-ai-overview.md
+      - name: Set up Agent management (production ready preview)
+        href: ../fin-ops-core/fin-ops/copilot/agent-mgmt.md  
       - name: Responsible AI FAQ for AI summaries with Copilot
         href: faq-summaries.md
       - name: Responsible AI FAQ for Analyze demand plans with Copilot
         href: faq-demand-planning-copilot.md
       - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace
         href: faq-confirmed-po-changes.md
-      - name: Responsible AI FAQ for Inquire into inventory with Copilot (preview)
-        href: faq-inventory-query.md
       - name: Responsible AI FAQ for Workload insights with Copilot
         href: faq-wma-copilot.md
-      - name: Responsible AI for Supplier Communications Agent (production ready preview)
+      - name: Responsible AI for the Supplier Communications Agent (production ready preview)
         href: faq-supplier-communications-agent.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md

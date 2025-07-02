@@ -1,7 +1,7 @@
 ---
-title: Responsible AI FAQ for Immersive Home in finance and operations apps (preview)
-description: This FAQ provides answers to frequently asked questions about the AI technology that's used in connection to Immersive Home. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 04/25/2025
+title: Responsible AI FAQ for Immersive Home in finance and operations apps (production ready preview)
+description: This FAQ provides answers to frequently asked questions about the AI technology that's used with Immersive Home. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+ms.date: 05/28/2025
 ms.collection:
   - bap-ai-copilot
 ms.custom:
@@ -13,64 +13,62 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ---
 
-# Responsible AI FAQ for Immersive Home in finance and operations apps (preview)
+# Responsible AI FAQ for Immersive Home in finance and operations apps (production ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This FAQ provides answers to frequently asked questions about the AI technology that's used in relation to the *Immersive Home* feature. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 ## What is Immersive Home?
 
-The [*Immersive Home*](immersive-home.md) is a modern, AI-first landing page that adapts to each user's most important work, aids decision making, and reduces the need to navigate elsewhere to complete common tasks.
+[*Immersive Home*](immersive-home.md) is a modern, AI-first landing page that adapts to each user's most important work, aids decision making, and reduces the need to navigate elsewhere to complete common tasks.
 
 ## What are capabilities of Immersive Home?
 
-The capabilities of *Immersive Home* include the following features
+Immersive Home includes the following capabilities:
 
-- Promotes suggested agents that could help the user in their tasks
-- Shows a ranked list of work items assigned by agents and workflows
-- Shows a summary of agent activities
-- Provides access to agent management surfaces
-- Provides an individual agent task space where user can work hand in hand with agents
-- Provides spaces that cover multiple tasks and jobs to be done
+- Promotes suggested agents that could help the users in their tasks.
+- Shows a ranked list of work items assigned by agents and workflows.
+- Shows a summary of agent activities.
+- Provides access to agent management surfaces.
+- Provides an individual agent task space where users can work hand-in-hand with agents.
+- Provides spaces that cover multiple tasks and jobs to be done.
 
 [!INCLUDE[rai-feedback-mechanism.md](../../../includes/rai-feedback-mechanism.md)]
 
 ## What is the intended use of Immersive Home?
 
-The intended use of *Immersive Home* is to provide users with an AI-first modern landing page within finance and operations apps.
+The intended use of Immersive Home is to provide users with an AI-first modern landing page within finance and operations apps.
 
-It's designed to bring work to the user and keep users in the loop with what agents are doing for the user and in relevant work domains.
+It brings work to the user and keeps users in the loop with what agents are doing on their behalf and within relevant work domains.
 
 ## How was Immersive Home evaluated? What metrics are used to measure performance?
 
-The evaluation of *Immersive Home* was conducted through rigorous testing across various scenarios within finance and operations apps and AI agents such as for procurement and finance. Performance metrics include accuracy of information provided, user satisfaction ratings, reduction in support ticket volumes, and overall impact on user productivity and application usability.
+The evaluation of Immersive Home was conducted through rigorous testing across various scenarios within finance and operations apps and AI agents such as for procurement and finance. Performance metrics include accuracy of information provided, user satisfaction ratings, reduction in support ticket volumes, and overall impact on user productivity and application usability.
 
 If you encounter inappropriate generated content, report it to Microsoft by using this feedback form: [Report abuse](https://msrc.microsoft.com/report). Your feedback helps improve the functionality.
 
 Microsoft might disable Copilot-driven features for selected customers if abuse of the functionality is detected.
 
-## What are the limitations ofImmersive Home? How can users minimize the impact of its limitations when they use it?
+## What are the limitations of Immersive Home? How can users minimize the impact of its limitations when they use it?
 
-*Immersive Home* does not yet use AI to rank work or identify the most relevant tasks. In this release it is a surface where tasks from classic workflows blend with activities generated by AI agents that users have activated.
+Immersive Home doesn't yet use AI to rank work or identify the most relevant tasks. In this release, it's a surface where tasks from classic workflows blend with activities generated by user-activated AI agents.
 
-When you use the feature, follow these recommendations:
-
-- Always review AI generated work items, when commencing the tasks.
+When you use the feature, always review AI-generated work items when beginning the tasks.
 
 ## What operational factors and settings allow for effective and responsible use of Immersive Home?
 
-Effective and responsible use of *Immersive Home* depends on appropriate AI Agent configurations settings, data privacy configurations, content moderation mechanisms, and adherence to responsible AI principles such as fairness, transparency, and accountability.
+Effective and responsible use of Immersive Home depends on appropriate AI agent configuration settings, data privacy configurations, content moderation mechanisms, and adherence to responsible AI principles such as fairness, transparency, and accountability.
 
-Users should have clear guidelines on use of AI agents suitable their work and understand the importance of critical assessment of the AI-generated tasks and agent execution.
+Users should have clear guidelines on the use of AI agents suitable for their work and understand the importance of critical assessment of the AI-generated tasks and agent execution.
 
 Additionally, system administrators should monitor usage patterns and agent activities to ensure the tool is used as intended and to identify any areas for improvement.
 
-## See also
+## Related information
 
-- [Immersive Home](immersive-home.md)
+[Immersive Home overview](immersive-home.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

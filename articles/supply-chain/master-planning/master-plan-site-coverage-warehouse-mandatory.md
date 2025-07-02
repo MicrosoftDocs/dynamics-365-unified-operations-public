@@ -1,8 +1,8 @@
 ---
 title: Master planning for site coverage, mandatory warehouse
 description: Learn how an item that has the site as coverage dimension is planned, including outlines on conditions involved in master planning scenarios.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
