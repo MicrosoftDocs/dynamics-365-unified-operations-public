@@ -1,11 +1,11 @@
 ---
 title: Plan your organizational hierarchy
 description: Before you set up organizations and organization hierarchies, make sure that you understand how to best model your business.
-author: sericks007
-ms.author: sericks
+author: moaamer
+ms.author: moaamer
 ms.topic: article
-ms.date: 02/19/2021
-ms.reviewer: johnmichalak
+ms.date: 07/02/2025
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -218,9 +218,9 @@ You must manually change companies to enter transactions and perform inquiries i
 
 You do not need to change companies to access data from multiple operating units. Consolidated inquiry and reporting and individual regional inquiry is easier and faster.
 
-## Introducing Multi-Company Processing for Hierarchical Legal-Entity Selection
+## Multi company processing for hierarchical legal entity selection
 
-To enable users with access to multiple companies to execute transactions, generate reports, or inquire transactions, assign the “Multi-company processing” purpose to one or more Organization hierarchies. Introduced in version **10.0.44** under **Feature Management** as **Multi-Company purpose,** this setting activates a hierarchical parent-child control for legal-entity selection. In **10.0.44**, that new multi-company control replaces the existing flat multi-selection list in Fixed asset depreciation proposals, Asset leasing batch journal creation, and Asset leasing reports.
+To enable users with access to multiple companies to execute transactions, generate reports, or inquire transactions, assign the “Multi-company processing” purpose to one or more Organization hierarchies. In Dynamics 365 Finance version 10.0.44, go to **Feature Management** and activate **Multi-Company purpose**. This feature activates a hierarchical parent-child control for legal entity selection. The new multi-company control replaces the existing flat multi-selection list in **Fixed asset depreciation proposals**, **Asset leasing batch journal** creation, and Asset leasing reports.
 
 ## Best practices for modeling organizations and hierarchies
 
