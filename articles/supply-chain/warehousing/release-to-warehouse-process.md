@@ -109,7 +109,7 @@ To open the **Outbound load planning workbench** page, go to **Warehouse managem
 - Outbound shipment order lines
 - Transportation request lines (To view this information, you must enable [*In transit planning*](/dynamicsax-2012/appuser-itpro/set-up-transportation-parameters#set-up-general-transportation-parameters).)
 
-On each tab, select lines, and then add them to a new or existing load.
+On each tab, select lines, and then add them to a new or existing load. You can filter the available lines using **Filters** > **Load planning filters**. Learn more in [Load planning filters](tasks/use-load-planning-workbench-plan-loads-shipments.md#load-planning-filters).
 
 The **Supply and demand** tab on the Action Pane includes the following buttons that you can use to add order lines in the upper section to a load:
 

@@ -50,4 +50,16 @@ This article shows how to use the outbound load planning workbench to create a l
 5. Select **Assign**.
 6. Close the page.
 
+## Load planning filters
+
+From **Outbound load planning workbench**, go to **Filters** > **Load planning filters**. You can customize filters here to only show the lines you want. For example, you can only show fully reserved transfer order lines. Below is the set up on how to achieve this.
+
+1. In **Load planning filters**, add a new load planning filter, set **Load planning filter type** to *Transfer order*.
+2. Go to **Edit quey** > **Joins**.
+3. Click on *Transfer order lines*, then **Add table join**, add *Relationship between the inventory transfer order line and the inventory transactions originator of the shipment transactions* (Join mode 1:n).
+4. Click on *Relationship between the inventory transfer order line and the inventory transactions originator of the shipment transactions*, then **Add table join**, add *Inventory transactions originator (Inventory transactions originator)*.
+5. Click on *Inventory transactions originator (Inventory transactions originator)*, then **Add table join**, add *Inventory transactions (NotExist Record-ID)* (Relation source *InventTrans : InventTransOrigin*). ![](../media/load-planning-workbench-query-joins.png)
+6. Go to **Range**, add a new range on *Inventory transactions (NotExist)* on field *Issue status* with Criteria *!Reserved physical* (not *Reserved physical*). This filter then only includes the transfer order lines with inventory transactions status *Reserved Physical*, which means those fully reserved lines. ![](../media/load-planning-workbench-query-range.png)
+7. Save. Go back to **Outbound load planning workbench**, select the newly created filter in **Supply and demand filter**. You can set it as default in **Filters** > **Set as default**.
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
