@@ -35,6 +35,10 @@ You can establish a packing flow by creating mobile device menu items and detour
 
 To see the newest icons and user experience (UX) enhancements that are related to the mobile app packing process, you must use Warehouse Management mobile app version 2.0.37.0 or later.
 
+### Make Warehouse Management mobile app fields available
+
+To configure detours used in the mobile application, make sure the default mobile application fields are created in the system. To do that, navigate to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names**, if there are no entries in the list, select *Create default setup* on the Action Pane. The default fields should now be synchronized and available for selection during detour configuration.
+
 ### Make sample data available
 
 To work through this scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the *USMF* legal entity before you begin. You can also use this scenario as guidance for using the feature on a production system. However, in that case, you must substitute your own values for each setting that is described here.
@@ -143,9 +147,6 @@ Follow these steps to enable new containers to be created on the packing flow pa
     - **Copy from Packing:** *Location*
     - **Paste in Create container:** *Location*
     - **Auto submit:** *Selected* (Use this setting so that the worker doesn't have to confirm the value.)
-
-> [!NOTE]
-> If the expected fields aren't available for selection in the dialog box, make sure the default mobile application fields are created in the system. To do that, navigate to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and select *Create default setup* on the Action Pane. The default fields should now be synchronized and available for selection.
 
 1. Select **Add** on the toolbar to add another row. Then set the following values for it:
 
