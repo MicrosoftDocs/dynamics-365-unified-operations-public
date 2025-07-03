@@ -148,6 +148,9 @@ Follow these steps to enable new containers to be created on the packing flow pa
     - **Paste in Create container:** *Location*
     - **Auto submit:** *Selected* (Use this setting so that the worker doesn't have to confirm the value.)
 
+> [!NOTE]
+> If the expected fields aren't available for selection in the dialog box, make sure the default mobile application fields are created in the system, as noted in the prerequisites.
+
 1. Select **Add** on the toolbar to add another row. Then set the following values for it:
 
     - **Copy from Packing:** *Shipment*
