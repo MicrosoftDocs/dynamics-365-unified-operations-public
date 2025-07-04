@@ -34,4 +34,6 @@ Follow these steps to set up item sampling.
 > [!NOTE]
 > The *Quality management for warehouse processes* feature provides additional item sampling capabilities. It adds the concept of *item sampling scope* and lets you define a full license plate as the quantity specification. If you've turned on this feature, see [Quality management for warehouse processes](quality-management-for-warehouses-processes.md).
 
+<!-- KFM: Maybe add mention and link to acceptance sampling [Acceptance sampling (preview)](quality-acceptance-sampling.md) -->
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
