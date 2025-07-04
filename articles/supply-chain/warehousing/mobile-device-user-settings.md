@@ -70,7 +70,10 @@ Follow these steps to create and manage user settings for your mobile devices.
 
 Workers can set their own local user settings in the Warehouse Management mobile app. These settings override the default settings set by the admin. For example, a worker might prefer to use a different theme, sound level, or text scale. When a worker signs in to the Warehouse Management mobile app, the app fetches and applies the most specific settings profile that is stored in Supply Chain Management for the matching brand, device, and user ID. When a worker changes their local settings, the app updates the settings profile that is stored in Supply Chain Management for the matching brand, device, and user ID. If no matching profile exists, a new one is created.
 
-To set local user settings in the Warehouse Management mobile app, sign in to the app and then select the **Settings** button, which is the gear icon in the top-right corner of the screen. The settings provided are the same as those that are available in Supply Chain Management, as described in the previous section.
+To set local user settings in the Warehouse Management mobile app, sign in to the app and then select the **Settings** button, which is the gear icon in the top-right corner of the screen. In addition to the settings managed in Supply Chain Management (described above), the app provides several extra options:
+
+- **Server request timeout** - Set how long the app waits for a response from the server before timing out. You can select a duration from 1 to 30 minutes.
+- **Configuration mode** - Enable this option to explore and understand the relationship between UI controls and their underlying XML, which can help you customize mobile flow behavior. After setting it to *Yes*, you can press and hold the desired button or label to drill down into the session XML. Note: This feature may not be available for all controls because not all of them are connected to session XML.
 
 ## Create and manage mobile device brands
 
