@@ -41,6 +41,7 @@ Follow these steps to create a test.
     - **Type** – Select the type of results that the test produces. For quantitative tests, select *Fraction* or *Integer*. For qualitative tests, select *Option*.
     - **Test instrument** – Select a [test instrument](quality-test-instruments.md) that should be used for the test.
     - **Unit** – If you selected *Fraction* or *Integer* in the **Type** field (that is, if the test is a quantitative test), select the unit of measure that test results should be recorded in.
+    - **Defect type** – Choose between the defect types as described in the previous section. <!-- KFM: Give a little more detail and link to [Acceptance sampling (preview)](quality-acceptance-sampling.md) -->
 
 1. Close the page.
 

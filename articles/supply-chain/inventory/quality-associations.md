@@ -51,8 +51,6 @@ For a given business process, the quality association record identifies the even
 
 To work with quality associations, go to **Inventory management \> Setup \> Quality control \> Quality associations**. The following examples show how a quality association record is defined for the variations in each business process. For each example, the following table summarizes the events and conditions that are defined by a quality association record.
 
-<!-- Johanho: Add a prerequsite section and also a list of association types -->
-
 > [!NOTE]
 > The *Quality management for warehouse processes* feature adds capabilities for quality order processing for production where the **Event type** field is set to *Report as finished* and the **Execution** field is set to *After*, and for purchases where the **Event type** field is set to *Registration*. Learn more in [Quality management for warehouse processes](quality-management-for-warehouses-processes.md).
 

@@ -23,7 +23,7 @@ ms.custom:
 - **Major defects** – Defects that significantly reduce the usability or performance of a product but don't pose safety risks. A limited number of major defects may be acceptable depending on the sampling plan.
 - **Minor defects** – Defects that don't affect a product's function or safety but may impact appearance or user satisfaction. A higher tolerance is usually allowed for minor defects.
 
-Acceptance criteria are defined in advance, often using standards like ANSI/ASQ Z1.4 or ISO 2859-1, which specify how many defects of each type <!-- KFM: do we mean *type* or *category* here? --> are permissible in a sample before the lot is rejected. This structured approach helps ensure consistent product quality while optimizing inspection resources.
+Acceptance criteria are defined in advance, often using standards like ANSI/ASQ Z1.4 or ISO 2859-1, which specify how many defects of each category are permissible in a sample before the lot is rejected. This structured approach helps ensure consistent product quality while optimizing inspection resources.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -71,6 +71,10 @@ To set up inspection levels, follow these steps:
 
 <!-- KFM: Explain what these are, how they are used, and how to set them up. -->
 
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Acceptance sampling indexes**.
+1. Select **New** to create a new inspection level and set the following fields:
+    - **Acceptable quality limit index** – <!-- KFM: description needed -->
+    - **Description** – <!-- KFM: description needed -->
 
 ## Set up acceptance sampling charts
 
@@ -105,9 +109,9 @@ To set up an acceptance sampling chart, follow these steps:
 
 1. On the **Inspection levels to include** FastTab, use the buttons in the toolbar to add and remove inspection levels for the current chart. <!-- KFM: explain what these do and how they affect the chart. Maybe link to earlier section where we describe how to set these up. -->
 
-1. On the **AQL indexes to include** FastTab, use the button in the toolbar to add and remove AQL indexes for the current chart. <!-- KFM: explain what these do, where they come from, and how they affect the chart. This is a lookup--how do we manage these? What do they mean? Are these the same as "acceptance sampling indexes"? -->
+1. On the **AQL indexes to include** FastTab, use the buttons in the toolbar to add and remove AQL indexes for the current chart. <!-- KFM: explain what these do, where they come from, and how they affect the chart. This is a lookup--how do we manage these? What do they mean? Are these the same as "acceptance sampling indexes"? -->
 
-1. On the **Lot/batch size ranges** FastTab, use the buttons in the toolbar to add and remove Lot/batch size ranges for the current chart. Use the **Unlimited** button in the toolbar to set a range to have no upper limit (this sets the **To** field to *Unlimited* for the selected row). <!-- KFM: explain what these do and how they affect the chart. Explain any rules that apply (no overlaps, continuous, etc.) -->
+1. On the **Lot/batch size ranges** FastTab, use the buttons in the toolbar to add and remove lot/batch size ranges for the current chart. Use the **Unlimited** button in the toolbar to set a range to have no upper limit (this sets the **To** field to *Unlimited* for the selected row). <!-- KFM: explain what these do and how they affect the chart. Explain any rules that apply (no overlaps, continuous, etc.) -->
 
 1. When you're done setting up the chart, select **Validate** in the Action Pane to validate the integrity of the data in the plan. The system checks your settings and if the chart is valid, it sets the **Validated** field to *Yes*. Only validated charts can be used for acceptance sampling.
 
@@ -130,7 +134,7 @@ To set up a test to be used in acceptance sampling, follow these steps:
 
 ## Set up a test group for acceptance sampling
 
-<!-- KFM: Intro needed. Briefly explain what test groups are and how they are used in acceptance sampling? Link to the existing topic [Quality management test groups](quality-test-groups.md) for more info) -->
+<!-- KFM: Intro needed. Briefly explain what test groups are and how they are used in acceptance sampling. Link to the existing topic [Quality management test groups](quality-test-groups.md) for more info) -->
 
 To set up test groups for acceptance sampling, follow these steps:
 
@@ -141,14 +145,14 @@ To set up test groups for acceptance sampling, follow these steps:
     - **Description** – Enter a short description of the test group.
 
     > [!NOTE]
-    > All other fields on the header are not required for acceptance sampling. <!-- KFM: not required, or do nothing? -->
+    > All other fields on the header don't affect acceptance sampling.
 
 1. With your new or selected test group still selected, go to the lower grid, which is the lines section of the test group. This is where you define the tests that are included in the test group. Add a line for each test that you want to include in the group and make the following settings for each line:
     - **Sequence** – Enter an integer value, that sets the sorting order of the tests in the group.
     - **Test** – Choose a test with an associated defect type. <!-- KFM: link (and/or explain) for more info about how to create tests and how to use them. -->
 
     > [!NOTE]
-    > All other fields on the test group line are not required for acceptance sampling.  <!-- KFM: not required, or do nothing? -->
+    > All other fields on the test group line don't affect acceptance sampling.
 
 ## Set up up item sampling for acceptance testing
 
@@ -185,4 +189,4 @@ To set up item samplings for acceptance sampling, follow these steps:
     - **Test group** – Select a test group with tests defined for acceptance sampling.
     - **Item sampling** – Select an item sampling defined for acceptance sampling.
 
-<!-- KFM: We should maybe have a topic that walks through the procedure for how to do the test, sort of like the video does. -->
+<!-- KFM: It looks like we have a new **Acceptance sampling** tab on the **Quality orders** page. We should describe that somewhere. Link to and maybe also update [Quality orders](quality-orders.md) -->
