@@ -129,6 +129,10 @@ To configure units of measure, follow these steps.
     > [!NOTE]
     > For scenarios where no specific units of measure are assumed, the default value **EA** is used.
 
+## Configure sales tax codes
+
+Configuration of sales tax codes depends on which OIOUBL format is used, version 3 or earlier. Refer to the respective chapter below.
+
 ### Configure sales tax codes for the version 3 of OIOUBL format
 
 To additionally configure sales tax codes, follow these steps.
@@ -148,9 +152,7 @@ The next level of tax data grouping, within the tax scheme, is **Tax Category**.
 
 For some taxes, an additional attribute, **Tax Type Code**, must also be defined.
 
-You can associate tax schemes, tax categories, and tax type codes with sales tax codes by using application-specific parameters. For information about how to configure application-specific parameters, see the next section.
-
-### Configure application-specific parameters 
+You can associate tax schemes, tax categories, and tax type codes with sales tax codes by using application-specific parameters. 
 
 Application-specific parameters must be configured for the following configurations:
 
@@ -185,7 +187,7 @@ For each configuration, follow these steps.
 
 ## Buyer reference
 
-According to OIOUBL version 3 requirements, when you register free text invoices, invoices that are based on sales orders, or project invoices, you must enter either a customer reference.
+According to **OIOUBL version 3** requirements, when you register free text invoices, invoices that are based on sales orders, or project invoices, you must enter either a customer reference.
 
 ### Free text invoices
 
