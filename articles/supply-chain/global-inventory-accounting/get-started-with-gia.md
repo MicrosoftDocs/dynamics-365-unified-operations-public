@@ -74,11 +74,7 @@ To install or update the add-in and solution:
    1. Select **Install App**.
    1. Select **Dynamics 365 Global Inventory Accounting**.
    1. Select **Next** to install.
-1. After the solution is completely installed, go back to the Lifecycle Services environment. On the **Environment add-ins** FastTab, select **Install a new add-in**.
-1. Select **Global inventory accounting**.
-1. Follow the installation guide, and agree to the terms and conditions.
-1. Select **Install**.
-1. On the **Environment add-ins** FastTab, you should see that Global Inventory Accounting is being installed. After a few minutes, the status should change from *Installing* to *Installed*. (You might have to refresh the page to see this change.) At that point, Global Inventory Accounting is ready to use.
+1. After the solution is completely installed, go back to the Lifecycle Services environment. On the **Environment add-ins** FastTab, you should see that Global Inventory Accounting is being installed. After a few minutes, the status should change from *Installing* to *Installed*. (You might have to refresh the page to see this change.) At that point, Global Inventory Accounting is ready to use.
 
 If the default language of your Dataverse installation isn't English, follow these steps:
 
