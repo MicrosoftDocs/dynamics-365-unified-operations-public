@@ -41,8 +41,9 @@ To define the default batch ID that is used for customer orders, follow these st
 To define the default batch ID that is used for sales order invoicing through statement posting, follow these steps.
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
-1. On the **Posting** tab, on the **Inventory update** FastTab, enter a value in the **Default batch id** field.
+2. On the **Posting** tab, on the **Inventory update** FastTab, enter a value in the **Default batch id** field and enable **Use default batch id when batch numbers are not found**.
 
-
+> [!NOTE]
+> Physical negative inventory must be turned on for the batch-tracked item's item model group.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
