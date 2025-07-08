@@ -151,7 +151,7 @@ Follow these steps to enable licensing for your solution.
 
     Example for HSM based key.
      > [!NOTE]
-     > To use the subjectname and thumbprint parameter: first install the certificate to Current User | My store, and then run the following command:
+     > To use the subject name and thumbprint parameters, first install the certificate to the Windows certificate store. Go to **Current user** > **Personal (My)** and run the following command:
     ```Console
     C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /licensecode:ISVLicenseCode /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /subjectName:"ISVCert" /thumbprint:******** /expirationdate:11/30/2023 
      ```
