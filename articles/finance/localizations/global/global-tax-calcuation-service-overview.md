@@ -38,13 +38,11 @@ We recommend that you import and set up your Tax Calculation configuration with 
 
 | Finance or Supply Chain Management version | Tax configuration version |
 | --------------- | --------------------------------------- |
+| 10.0.44         | Tax Calculation Configuration 44.70.262 |
 | 10.0.43         | Tax Calculation Configuration 44.70.262 |
 | 10.0.42         | Tax Calculation Configuration 44.70.262 |
 | 10.0.41         | Tax Calculation Configuration 43.68.254 |
 | 10.0.40         | Tax Calculation Configuration 43.68.254 |
-| 10.0.39         | Tax Calculation Configuration 40.65.249 |
-| 10.0.38         | Tax Calculation Configuration 40.61.246 |
-
 
 ## Data flow
 
