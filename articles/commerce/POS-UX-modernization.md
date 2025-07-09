@@ -66,7 +66,7 @@ Inline actions on the transaction grid are available for common line actions suc
 
 To launch the inline actions list, hover over a line on the transaction grid and select the 3 dots (**…**). On mobile and touch devices, inline actions can be accessed by long-pressing the line on the transaction grid, which provides a more intuitive mobile-optimized experience.
 
-There's an option for a more extensive list of line actions. To access additional line actions, you must enable the **Enable Advanced Line Inline Actions** feature in the Commerce headquarters **Feature management workspace** (**System administration \> Workspaces \> Feature management**).
+There's an option for a more extensive list of line actions. To access additional line actions, you must enable the **Enable advanced inline actions** feature in the Commerce headquarters **Feature management workspace** (**System administration \> Workspaces \> Feature management**).
 
 Inline actions remove the need for nested buttons to access line operations, allowing for a cluster-free transaction page with fewer buttons.
 
