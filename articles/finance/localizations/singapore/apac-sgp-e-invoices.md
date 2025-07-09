@@ -291,7 +291,7 @@ To configure units of measure, follow these steps.
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 2. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
 3. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code you selected in step 2.
-4. In the **Value** section, in the **Value** field, enter an external code which must be one of the [valid Singapore code values](https://www.peppolguide.sg/billing/syntax/ubl-invoice/cac-TaxTotal/cac-TaxSubtotal/cac-TaxCategory/cbc-ID/). 
+4. In the **Value** section, in the **Value** field, enter an external code which must be one of the Singapore specific [Duty or tax or fee category codes](https://www.peppolguide.sg/billing/codelist/SGTaxCat/). 
 
 ## Issue electronic invoices
 
