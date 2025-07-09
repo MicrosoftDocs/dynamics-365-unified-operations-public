@@ -71,7 +71,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.41 PQU-5 | February 26, 2025 | March 3, 2025 to April 6, 2025| Completed |
 | 10.0.41 PQU-6 | March 26, 2025 | March 31, 2025 to May 4, 2025| Completed |
 | 10.0.41 PQU-7 | April 23, 2025 | April 28, 2025 to June 1, 2025| Completed |
-| 10.0.41 PQU-8 | May 23, 2025 | June 2, 2025 to July 6, 2025| In-Progress |
+| 10.0.41 PQU-8 | May 23, 2025 | June 2, 2025 to July 6, 2025| Completed |
 | 10.0.42 PQU-1 | February 12, 2025 | February 18, 2025 to March 23, 2025| Completed |
 | 10.0.42 PQU-2 | March 12, 2025 | March 17, 2025 to April 20, 2025| Completed |
 | 10.0.42 PQU-3 | April 9, 2025 | April 14, 2025 to May 18, 2025| Completed |
@@ -89,7 +89,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.43 PQU-7 | September 24, 2025 | September 29, 2025 to November 2, 2025| Not Started |
 | 10.0.43 PQU-8 | October 22, 2025 | October 27, 2025 to December 7, 2025| Not Started |
 | 10.0.43 PQU-9 | November 26, 2025 | December 1, 2025 to January 18, 2026| Not Started |
-| 10.0.44 PQU-1 | July 9, 2025 | July 14, 2025 to August 17, 2025| Not Started |
+| 10.0.44 PQU-1 | July 9, 2025 | July 14, 2025 to August 17, 2025| In-Progress |
 | 10.0.44 PQU-2 | August 6, 2025 | August 11, 2025 to September 14, 2025| Not Started |
 | 10.0.44 PQU-3 | September 3, 2025 | September 8, 2025 to October 12, 2025| Not Started |
 | 10.0.44 PQU-4 | October 1, 2025 | October 6, 2025 to November 9, 2025| Not Started |
@@ -110,23 +110,6 @@ The following table shows the high-level train schedule. It includes a descripti
 
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
-
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.41 Release-8 train schedule
-
-**App version: 10.0.2015.236**
-
-**Platform version: 7.0.7367.177**
-
-**Unified Environment Provisioning Application Version: 10.0.41.11**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | June 2 to June 5, 2025 | NA |
-| Station 2 | June 9 to June 12, 2025 | June 21 to June 22, 2025 |
-| Station 3 | June 10 to June 13, 2025 | June 21 to June 22, 2025 |
-| Station 4 | June 16 to June 19, 2025 | June 28 to June 29, 2025 |
-| Station 5 | June 23 to June 26, 2025 | July 5 to July 6, 2025 |
-| Station 6 | June 24 to June 27, 2025 | July 5 to July 6, 2025 |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.42 Release-5 train schedule
 
@@ -195,6 +178,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | July 21 to July 24, 2025 | August 2 to August 3, 2025 |
 | Station 5 | July 28 to July 31, 2025 | August 9 to August 10, 2025 |
 | Station 6 | July 29 to August 1, 2025 | August 9 to August 10, 2025 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.44 Release-1 train schedule
+
+**App version: 10.0.2263.74**
+
+**Platform version: 7.0.7606.108**
+
+**Unified Environment Provisioning Application Version: 10.0.44.3**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | July 14 to July 17, 2025 | NA |
+| Station 2 | July 21 to July 24, 2025 | August 2 to August 3, 2025 |
+| Station 3 | July 22 to July 25, 2025 | August 2 to August 3, 2025 |
+| Station 4 | July 28 to July 31, 2025 | August 9 to August 10, 2025 |
+| Station 5 | August 4 to August 7, 2025 | August 16 to August 17, 2025 |
+| Station 6 | August 5 to August 8, 2025 | August 16 to August 17, 2025 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that are notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
