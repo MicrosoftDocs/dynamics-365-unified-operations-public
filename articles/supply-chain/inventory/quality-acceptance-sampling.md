@@ -51,7 +51,7 @@ Acceptance sampling uses the following two charts to validate if a lot has passe
 
 The following image shows an example of an acceptable quality limit chart. In this example, if you use code letter G with an AQL index of 2.5%, then up to two defects will be accepted for the lot to pass, but three or more defects will cause the lot to fail inspection. If the code letter G is used for AQL index 0.65%, then the arrow in the chart indicates that an AQL level for a different code letter should be used. In this case, the code letter with the nearest AQL values is F, which has a different sample size than code letter G, and zero defects will be accepted for the lot to pass.
 
-
+:::image type="content" source="media/Sampling plan chart.jpg" alt-text="Acceptable quality limit chart":::
 
 In Supply Chain Management, all the data for gen:::image type="content" source="media/Sampling plan chart.jpg" alt-text="":::erating the sampling code letter chart and the acceptable quality limit chart can be loaded from a template. The template generates inspection levels, AQL indexes, and lot size ranges. Once these values are loaded from the template, you can customize the charts as needed.
 
