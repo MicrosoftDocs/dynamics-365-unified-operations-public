@@ -139,8 +139,8 @@ To configure electronic document parameters, follow these steps.
 1. On the **Features** tab, select and enable the **Malaysian electronic invoice** feature.
 1. Save your changes on the **Electronic document parameters** page, and then close the page.
 
-Watch the following video about the configuration of Malaysian electronic self invoices.
-
+> [!NOTE]
+> Watch the following video about the configuration of Malaysian electronic **Self invoices**.
 > [!VIDEO 012f47ed-0472-4e12-a5be-5f7a594c1cb5]
 
 ## <a id="NRIC"></a>Configure registration numbers
