@@ -41,9 +41,11 @@ In acceptance sampling, single and double sampling plans represent two different
 
 Acceptance sampling uses the following two charts to validate if a lot has passed or failed: *sampling code letter chart* and *acceptable quality limit chart*.
 
-- *Sampling code letter chart* – Provides a chart that defines code letters for each combination of lot size and inspection level. The selected code letter is then used as input to the acceptable quality limit chart. An inspection level is a code or category that indicates the extent of inspection based on the importance of the product, the production history, and customer requirements. There are two categories inspection level:
+- *Sampling code letter chart* – Provides a chart that defines code letters for each combination of lot size and inspection level. The selected code letter is then used as input to the acceptable quality limit chart. An inspection level is a code or category that is determined by the business user. It indicates the extent of inspection based on the importance of the product, the production history, and customer requirements. There are two categories inspection level:
     - *General inspection level* – Used for routine, more thorough inspections
     - *Special inspection level* – Apply to less critical checks with smaller sample sizes.
+
+
 
 - *Acceptable quality limit chart* – Provides a chart that defines the acceptable quality level for each combination of sampling code letter and acceptable quality level (AQL) index. The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. Lower indexes are used for high-risk or critical items, while higher AQLs are acceptable for less critical products where some defects are tolerable. Businesses can, for example, use index 0.1% for testing for critical defects, 0.65% for major defects, and 2.5% for minor defects. The selected code letter and AQL index resolve to find the sample size and acceptable quality level for the test.
 
@@ -95,9 +97,7 @@ To set up defect types, follow these steps:
 
 ## Set up inspection levels
 
-An inspection level is a code or category that indicates the extent of inspection based on the importance of the product, the production history, and customer requirements. It is used as input to the code letter chart, and guides how many samples you take from a lot.
-
-To set up inspection levels, follow these steps:
+An inspection level is a code or category set by the business user that indicates the extent of inspection based on the importance of the product, the production history, and customer requirements. It is used as input to the code letter chart, and guides how many samples you take from a lot. If you don't want to use the option to generate the inspection levels by loading the AQL chart template, then use the following steps to create them manually:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Inspection levels**.
 1. Select **New** to create a new inspection level and set the following fields:
@@ -107,7 +107,7 @@ To set up inspection levels, follow these steps:
 
 ## Set up acceptance sampling indexes
 
-<!-- KFM: Explain what these are, how they are used, and how to set them up. -->
+ The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. If you don't want to use the option to generate the AQL indexes by loading the AQL chart template, then you can use the following steps to create them manually:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Acceptance sampling indexes**.
 1. Select **New** to create a new inspection level and set the following fields:
@@ -125,7 +125,7 @@ To set up an acceptance sampling chart, follow these steps:
     - **Description** – Enter a short description of the sampling chart.
 
 1. To get started quickly, you can choose start by copying an existing cart or loading a predefined template. If you'd like to do this, select one of the following options in the Action Pane. Be careful, because all of the settings for the current chart (other than name and description) will be replaced with the template or copied chart.
-    - **Load AQL chart template** – Load all the data needed for the acceptance sampling chart from a predefined template. <!-- KFM: Where does this template come from? Can I customize it? What is the one we supply designed for/after? -->
+    - **Load AQL chart template** – Load all the data needed for the acceptance sampling chart from a predefined template. The template is loaded from a pre-defined json file. The content of the file is aligned with the ANSI/ASQ Z1.4 or ISO 2859-1 standards.
     - **Copy** – Copy data from another chart. The system asks you to choose an existing chart to copy from.
 
 1. On the **Inspection levels to include** FastTab, use the buttons in the toolbar to add and remove inspection levels for the current chart. <!-- KFM: explain what these do and how they affect the chart. Maybe link to earlier section where we describe how to set these up. -->
