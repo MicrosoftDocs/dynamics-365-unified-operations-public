@@ -45,15 +45,15 @@ Acceptance sampling uses the following two charts to validate if a lot has passe
     - *General inspection level* – Used for routine, more thorough inspections
     - *Special inspection level* – Apply to less critical checks with smaller sample sizes.
 
-
+:::image type="content" source="media/Code letter chart.jpg" alt-text="Code letter chart":::
 
 - *Acceptable quality limit chart* – Provides a chart that defines the acceptable quality level for each combination of sampling code letter and acceptable quality level (AQL) index. The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. Lower indexes are used for high-risk or critical items, while higher AQLs are acceptable for less critical products where some defects are tolerable. Businesses can, for example, use index 0.1% for testing for critical defects, 0.65% for major defects, and 2.5% for minor defects. The selected code letter and AQL index resolve to find the sample size and acceptable quality level for the test.
 
 The following image shows an example of an acceptable quality limit chart. In this example, if you use code letter G with an AQL index of 2.5%, then up to two defects will be accepted for the lot to pass, but three or more defects will cause the lot to fail inspection. If the code letter G is used for AQL index 0.65%, then the arrow in the chart indicates that an AQL level for a different code letter should be used. In this case, the code letter with the nearest AQL values is F, which has a different sample size than code letter G, and zero defects will be accepted for the lot to pass.
 
-<!-- Johan: TO-DO add images of the charts -->
 
-In Supply Chain Management, all the data for generating the sampling code letter chart and the acceptable quality limit chart can be loaded from a template. The template generates inspection levels, AQL indexes, and lot size ranges. Once these values are loaded from the template, you can customize the charts as needed.
+
+In Supply Chain Management, all the data for gen:::image type="content" source="media/Sampling plan chart.jpg" alt-text="":::erating the sampling code letter chart and the acceptable quality limit chart can be loaded from a template. The template generates inspection levels, AQL indexes, and lot size ranges. Once these values are loaded from the template, you can customize the charts as needed.
 
 You can learn more about how to use the charts in the following video: <!-- KFM: Video review and hosting in progress... -->
 
