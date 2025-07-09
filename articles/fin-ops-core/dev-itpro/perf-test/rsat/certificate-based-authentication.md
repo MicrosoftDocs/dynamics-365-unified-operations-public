@@ -62,7 +62,7 @@ Export-Certificate -Cert \$rootCert -FilePath
 \"C:\\Temp\\ContosoRootCA.cer\"
 ```
 
-Here is an explanation of the script.
+Here's an explanation of the script.
 
 1. **Certificate creation**
 
@@ -162,7 +162,7 @@ Here is an explanation of the script.
     The `TextExtension` parameter is used to add custom certificate extensions in a text-based format. In this example, the value consists of the following parts:
 
     - `2.5.29.19` – The object identifier (OID) of the basic constraints extension.
-    - `{critical}` – The extension is critical. If a client doesn't understand the extension, it should not trust the certificate.
+    - `{critical}` – The extension is critical. If a client doesn't understand the extension, it shouldn't trust the certificate.
     - `{text}ca=true&pathlength=1` – The certificate is a CA certificate (`ca=true`) that has a path length constraint of 1 (`pathlength=1`). The path length constraint limits the number of subordinate certificate issuers that can follow in the chain.
 
 1. **Certificate export**
@@ -215,7 +215,7 @@ C=US\" \`\
 Export-Certificate -Cert \$intermediateCert -FilePath \"C:\\Temp\\.cer\"
 ```
 
-Here is an explanation of the script.
+Here's an explanation of the script.
 
 1. **Definition of the root subject**
 
@@ -295,7 +295,7 @@ Export-PfxCertificate -Cert \$userCert -FilePath
 \"C:\\Temp\\\$subjectPrefix-UserCert.pfx\" -password \$certpwd
 ```
 
-Here is an explanation of the script.
+Here's an explanation of the script.
 
 1. **User identity construction**
 
@@ -386,7 +386,7 @@ After the certificates are generated, configure the PKI by importing the root ce
 Next, install the certificates on the computer where you run RSAT.
 
 > [!NOTE]
-> Root CA certificates must be installed only if they are self-signed.
+> Root CA certificates must be installed only if they're self-signed.
 
 1. Import the root CA (.cer file) and intermediate CA (.cer file) into **Local machine** \> **Trusted Root Certification Authorities**.
 1. Import the .pfx file for the user certificate into **Local user** \> **Personal**.
@@ -422,4 +422,4 @@ When you select **Test Connection**, you should receive a message that states th
 
 - **Automated** – RSAT configures registry entries for the policy selection with each test case before it runs steps, so that the CBA authorization flow callback from certauth automatically selects a matching user policy. Because of the permissions that are required for local machine entries, the policies are stored only as current user entries. If you use this mode, we recommend that no local machine entries exist, for example, if someone was using a predefined, single local computer policy and manually deleted it before they ran RSAT in **Automated** mode.
 - **Predefined** – Users can't use **Automated** mode but want to control their policies themselves. If filtering by subject from the rule in RSAT doesn't work, it's feasible to configure this filtering. It might be challenging to make a general policy work with all accounts. In **Predefined** mode, RSAT doesn't touch policy entries in the registry at all. Instead of configuring the policy under current users, you can configure it under the local machine. In this way, the policy can be shared between users.
-- **Manual** – When RSAT plays back a test, it removes any policy entries that already exist, but only from the current user. Therefore, if the current user has a policy from the local machine, execution falls back on this policy. Therefore, that policy should not be mixed. **Manual** mode gives a window of 10 seconds for manual selection of the policy when certauth calls back for the selection of this policy.
+- **Manual** – When RSAT plays back a test, it removes any policy entries that already exist, but only from the current user. Therefore, if the current user has a policy from the local machine, execution falls back on this policy. Therefore, that policy shouldn't be mixed. **Manual** mode gives a window of 10 seconds for manual selection of the policy when certauth calls back for the selection of this policy.
