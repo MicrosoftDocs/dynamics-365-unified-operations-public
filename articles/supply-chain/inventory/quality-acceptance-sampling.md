@@ -17,30 +17,57 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.46 GA -->
 
-*Acceptance sampling* is a quality control method used to evaluate a batch of products by inspecting a representative sample. Instead of checking every item, a subset of items is examined to determine whether the entire lot meets predefined quality standards. This approach is widely used in manufacturing and supply chain operations to balance inspection effort with quality assurance. In many practical applications, sampled items are inspected for different *types* of defects, each of which is typically placed in one of the following *categories*:
+*Acceptance sampling* is a quality control method used to evaluate a batch of products by inspecting a representative sample. Instead of checking every item, a subset of items is examined to determine whether the entire lot meets predefined quality standards. This approach is widely used in manufacturing and supply chain operations to balance inspection effort with quality assurance.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+## Acceptance sampling overview
+
+### Defect types and categories
+
+In many practical applications, sampled items are inspected for different *types* of defects, each of which is typically placed in one of the following *categories*:
 
 - **Critical defects** – Defects that could cause harm or render a product unsafe or unusable. Even a single critical defect may lead to rejection of the entire lot.
 - **Major defects** – Defects that significantly reduce the usability or performance of a product but don't pose safety risks. A limited number of major defects may be acceptable depending on the sampling plan.
 - **Minor defects** – Defects that don't affect a product's function or safety but may impact appearance or user satisfaction. A higher tolerance is usually allowed for minor defects.
 
-Acceptance criteria are defined in advance, often using standards like ANSI/ASQ Z1.4 or ISO 2859-1, which specify how many defects of each category are permissible in a sample before the lot is rejected. This structured approach helps ensure consistent product quality while optimizing inspection resources. 
+Acceptance criteria are defined in advance, often using standards like ANSI/ASQ Z1.4 or ISO 2859-1, which specify how many defects of each category are permissible in a sample before the lot is rejected. This structured approach helps ensure consistent product quality while optimizing inspection resources.
+
+### Single and double sampling plans
 
 In acceptance sampling, single and double sampling plans represent two different strategies for determining whether a lot meets quality standards. A single sampling plan involves selecting and inspecting one sample from the lot. Based on the number of defects found, the lot is either accepted or rejected. This method is straightforward and commonly used when simplicity and speed are important. A double sampling plan introduces a second step. If the first sample yields an inconclusive result, a second sample is taken. The final decision is then based on the combined results of both samples. This strategy can reduce inspection effort over time while maintaining decision accuracy. In this solution, only the single sampling strategy is supported, meaning each lot is evaluated using one sample and a fixed acceptance threshold.
 
-Acceptance sampling uses the following two charts to validate if a lot has passed or failed: **Sampling code letter chart** and **Acceptable quality limit chart**. In the Sampling code letter chart, a code letter is found based on the lot size to inspect and the selected inspection level chosen by the user. An inspection level is a code or category that indicates the extent of inspection based on the importance of the product, the production history, and customer requirements. The inspection level is divided into the following two categories: General inspection level and Special inspection level. General inspection levels are used for routine, more thorough inspections, while special inspection levels apply to less critical checks with smaller sample sizes. By using the lot size range and a chosen inspection level, the user can find the code letter. The code letter found is now used as input to the Acceptable quality limit chart. In the acceptable quality limit chart, the code letter found is used in combination with the AQL indexes. The AQL indexes are determined by the business user and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. Lower indexes are used for high-risk or critical items, while higher AQLs are acceptable for less critical products where some defects are tolerable. Businesses can, for example, use index 0.1% for testing for critical defects, 0.65% for major defects, and 2.5% for minor defects. With the use of the code letter and the AQL index, the sample size and acceptable quality levels can be found. Using the example from the acceptable quality limit chart, using code letter G with an AQL index of 2.5%, up to two defects will be accepted for the lot to pass, but three or more defects will cause the lot to fail inspection. If the code letter G is used for AQL index 0.65%, then the arrow in the chart indicates that an AQL level for a different code letter should be used. In this case, the code letter with the nearest AQL values is F, which has a different sample size than code letter G, and zero defects will be accepted for the lot to pass.
+### Acceptance sampling charts
+
+Acceptance sampling uses the following two charts to validate if a lot has passed or failed: *sampling code letter chart* and *acceptable quality limit chart*.
+
+- *Sampling code letter chart* – Provides a chart that defines code letters for each combination of lot size and inspection level. The selected code letter is then used as input to the acceptable quality limit chart. An inspection level is a code or category that indicates the extent of inspection based on the importance of the product, the production history, and customer requirements. There are two categories inspection level:
+    - *General inspection level* – Used for routine, more thorough inspections
+    - *Special inspection level* – Apply to less critical checks with smaller sample sizes.
+
+- *Acceptable quality limit chart* – Provides a chart that defines the acceptable quality level for each combination of sampling code letter and acceptable quality level (AQL) index. The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. Lower indexes are used for high-risk or critical items, while higher AQLs are acceptable for less critical products where some defects are tolerable. Businesses can, for example, use index 0.1% for testing for critical defects, 0.65% for major defects, and 2.5% for minor defects. The selected code letter and AQL index resolve to find the sample size and acceptable quality level for the test.
+
+The following image shows an example of an acceptable quality limit chart. In this example, if you use code letter G with an AQL index of 2.5%, then up to two defects will be accepted for the lot to pass, but three or more defects will cause the lot to fail inspection. If the code letter G is used for AQL index 0.65%, then the arrow in the chart indicates that an AQL level for a different code letter should be used. In this case, the code letter with the nearest AQL values is F, which has a different sample size than code letter G, and zero defects will be accepted for the lot to pass.
 
 <!-- Johan: TO-DO add images of the charts -->
 
-In Dynamics Supply Chain Management, all the data for generating the sampling code letter chart and the acceptable quality limit chart can be loaded from a template. This routine includes the generation of inspection levels, AQL indexes, and lot size ranges. Once these values are loaded from the template, business users can make changes as required to the loaded data. 
+In Supply Chain Management, all the data for generating the sampling code letter chart and the acceptable quality limit chart can be loaded from a template. The template generates inspection levels, AQL indexes, and lot size ranges. Once these values are loaded from the template, you can customize the charts as needed.
 
-In Dynamics Supply Chain Management, a quality order is used to perform testing based on acceptance sampling. To enable this functionality, you must first define an appropriate Item sampling method that supports acceptance sampling. An item sampling in Dynamics Supply Chain Management defines how much of a product should be inspected during a quality order. It specifies the sample quantity or percentage to be tested from a lot, and is essential for enabling acceptance sampling in quality control processes. Learn more about item sampling here: [Quality management item sampling](quality-item-sampling.md). When the item sampling method is defined, associate it to a quality association. A quality association in Dynamics Supply Chain Management is a rule that automatically triggers a quality order based on specific events, such as product receipt, production output, or inventory movement. It links a product, process, or condition to a quality inspection requirement, ensuring consistent and automated quality control. Learn more about quality associations here: [Quality associations](quality-associations.md). 
+You can learn more about how to use the charts in the following video: <!-- KFM: Video review and hosting in progress... -->
 
-When a quality order is triggered based on an event defined in a quality association, the system automatically creates a quality order that can be used for acceptance sampling. The quality association links the triggering event—such as a product receipt or production output—to a specific test process. If the associated item sampling is configured for acceptance sampling, the generated quality order will use the defined sampling criteria to determine how much of the lot should be inspected.
+> [!VIDEO 1e6ef0b8-0c35-4560-9f2a-926da8a6fd9b]
 
-On the quality order for acceptance sampling, the different categories of tests (critical, major, and minor), their sample sizes, and acceptable quality levels are clearly indicated. If a test falls outside a quality level, then the entire quality order will fail during validation. 
+### Quality orders, item sampling methods, and quality associations
 
+Supply Chain Management uses *quality orders* to schedule and manage testing based on acceptance sampling. To enable this functionality, you must define an appropriate item sampling method that supports acceptance sampling.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+Supply Chain Management uses *item sampling methods* to define how much of a product should be inspected during a quality order. It specifies the sample quantity or percentage to be tested from a lot, and is essential for enabling acceptance sampling in quality control processes. You can learn more about item sampling in [Quality management item sampling](quality-item-sampling.md).
+
+Item sampling methods take affect when they are assigned to *quality associations*. Supply Chain Management uses quality associations to establish an apply rules that automatically trigger a quality order based on specific events, such as product receipt, production output, or inventory movement. Each quality association links a product, process, or condition to a quality inspection requirement, ensuring consistent and automated quality control. You can learn more about quality associations in [Quality associations](quality-associations.md).
+
+When a quality order is triggered based on an event defined in a quality association, the system automatically creates a quality order that can be used for acceptance sampling. The quality association links the triggering event (such as a product receipt or production output) to a specific test process. If the associated item sampling is configured for acceptance sampling, the generated quality order will use the defined sampling criteria to determine how much of the lot should be inspected.
+
+On the quality order for acceptance sampling, the various categories of tests (critical, major, and minor), their sample sizes, and acceptable quality levels are clearly indicated. If a test falls outside a quality level, then the entire quality order will fail during validation.
 
 ## Prerequisites
 
@@ -53,13 +80,13 @@ To use the features described in this article, your system must meet the followi
 
 ## Set up defect types
 
-First, define the types of defects that the users will be testing for when using acceptance sampling. 
+First, define the types of defects that the users will be testing for when using acceptance sampling.
 
 To set up defect types, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Defect types**.
 1. Select **New** to create a new defect type and set the following fields:
-    - **Defect type** – Identification of the types of defects defect the users will test for such as *paint chipped*, *screen cracked*, *packaging damaged*, etc. 
+    - **Defect type** – Identification of the types of defects defect the users will test for such as *paint chipped*, *screen cracked*, *packaging damaged*, and so on.
     - **Description** – Elaborated description of the defect type.
     - **Defect category** –  Categorize the defect type with one of the three following fixed categories:
         - *Critical** – Could cause harm or render a product unsafe or unusable. Even a single critical defect may lead to rejection of the entire lot.
@@ -68,7 +95,7 @@ To set up defect types, follow these steps:
 
 ## Set up inspection levels
 
-An inspection level is a code or category that indicates the extent of inspection based on the importance of the product, the production history, and customer requirements. It is used as input to the code letter chart, and guides how many samples you take from a lot. 
+An inspection level is a code or category that indicates the extent of inspection based on the importance of the product, the production history, and customer requirements. It is used as input to the code letter chart, and guides how many samples you take from a lot.
 
 To set up inspection levels, follow these steps:
 
@@ -88,23 +115,6 @@ To set up inspection levels, follow these steps:
     - **Description** – <!-- KFM: description needed -->
 
 ## Set up acceptance sampling charts
-
-<!-- KFM: Start by briefly explaining what an acceptance chart is and what to use it for. -->
-
-An *acceptance sampling chart* is a collection of the following charts:
-
-- Sampling size code letter chart <!-- KFM: define/explain this. We probably also need a section for how to understand this chart and a procedure for how to create and work with this chart. -->
-- Acceptable quality limit chart <!-- KFM: define/explain this. We probably also need a section for how to understand this chart and a procedure for how to create and work with this chart.  -->
-
-Acceptance sampling charts also include the following supporting data for each chart:
-
-- Inspection levels <!-- KFM: define/explain this -->
-- AQL indexes <!-- KFM: define/explain this. Spell out "AQL" -->
-- Lot/batch size ranges <!-- KFM: define/explain this -->
-
-Learn more about how to use the charts in the following video: <!-- KFM: your video isn't being hosted in the right way to be embedded. And I'm not sure whether we can share it using the host/URL you provided. We should check with Tammy. -->
-
-> [!VIDEO 1e6ef0b8-0c35-4560-9f2a-926da8a6fd9b]
 
 To set up an acceptance sampling chart, follow these steps:
 
