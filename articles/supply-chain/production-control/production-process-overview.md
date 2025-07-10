@@ -5,6 +5,7 @@ author: johanhoffmann
 ms.author: johanho
 ms.topic: overview
 ms.date: 07/10/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen
