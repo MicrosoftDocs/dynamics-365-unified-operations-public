@@ -4,7 +4,7 @@ description: Operations resources perform the activities of a project or a produ
 author: johanhoffmann
 ms.author: johanho
 ms.topic: how-to
-ms.date: 05/22/2024
+ms.date: 07/10/2025
 ms.custom:
   - bap-template
   - evergreen

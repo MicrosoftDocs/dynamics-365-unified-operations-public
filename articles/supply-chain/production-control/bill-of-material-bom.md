@@ -4,7 +4,7 @@ description: This article provides information about bills of materials (BOMs) a
 author: johanhoffmann
 ms.author: johanho
 ms.topic: article
-ms.date: 04/19/2024
+ms.date: 07/10/2025
 ms.custom:
   - bap-template
   - evergreen

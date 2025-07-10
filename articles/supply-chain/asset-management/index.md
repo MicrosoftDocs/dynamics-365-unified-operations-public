@@ -4,7 +4,7 @@ description: Learn about Asset Management functionality in Dynamics 365 Supply C
 author: jodahlMSFT
 ms.author: jodahl
 ms.topic: overview
-ms.date: 04/19/2024
+ms.date: 07/10/2025
 ms.custom:
   - bap-template
   - evergreen

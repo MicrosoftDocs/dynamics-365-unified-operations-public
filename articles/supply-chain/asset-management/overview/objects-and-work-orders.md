@@ -4,7 +4,7 @@ description: Learn about assets and work orders in Asset Management, including o
 author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
-ms.date: 05/22/2024
+ms.date: 07/10/2025
 ms.custom:
   - bap-template
   - evergreen

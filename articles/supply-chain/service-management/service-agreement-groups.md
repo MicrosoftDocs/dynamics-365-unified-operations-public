@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SMAAgreementGroup
 ms.topic: overview
-ms.date: 08/26/2024
+ms.date: 07/10/2025
 ms.custom: 
   - bap-template
   - evergreen
