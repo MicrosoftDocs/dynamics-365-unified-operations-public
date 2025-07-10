@@ -1,3 +1,16 @@
+---
+title: GetCustomizedPricingPropertiesRequestHandler sample code
+description: Learn how to implement GetCustomizedPricingPropertiesRequestHandler for custom pricing attributes
+author: cbarrientos
+ms.author: cbarrientos
+ms.topic: custom pricing attributes
+ms.date: 07/10/2025
+ms.custom: bap-template
+ms.reviewer:
+ms.search.form:
+---
+
+``` txt
 /**
  * SAMPLE CODE NOTICE
  * 
@@ -253,3 +266,4 @@ namespace Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages
         }
     }
 }
+```
