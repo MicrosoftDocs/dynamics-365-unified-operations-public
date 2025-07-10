@@ -5,6 +5,7 @@ author: cabeln
 ms.author: cabeln
 ms.topic: faq
 ms.date: 02/13/2025
+ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac

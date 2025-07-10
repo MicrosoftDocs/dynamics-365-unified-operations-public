@@ -7,6 +7,7 @@ ms.topic: faq
 ms.custom: 
   - bap-template
 ms.date: 1/23/2025
+ms.update-cycle: 180-days
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
 ---

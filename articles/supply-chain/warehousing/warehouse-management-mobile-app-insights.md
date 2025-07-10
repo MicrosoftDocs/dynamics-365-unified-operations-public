@@ -7,6 +7,7 @@ ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
 ms.date: 01/29/2025
+ms.update-cycle: 180-days
 ms.custom: 
   - bap-template
 ms.collection:
