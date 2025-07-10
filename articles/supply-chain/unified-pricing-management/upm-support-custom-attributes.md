@@ -28,7 +28,7 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
 
 1. Implement custom request handler to process custom pricing attributes. 
 
-    Sample custom request handler: [GetCustomizedPricingPropertiesRequestHandler-Sample.txt](unified-pricing-management/media/GetCustomizedPricingPropertiesRequestHandler-Sample.txt)
+    Sample custom request handler: [GetCustomizedPricingPropertiesRequestHandler-Sample.md](unified-pricing-management/media/GetCustomizedPricingPropertiesRequestHandler-Sample.md)
 
 2. Register the output library in the CommerceRuntime.Ext.config file.
 
