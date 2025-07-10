@@ -175,7 +175,7 @@ By ensuring the variable can store the entire URL without truncation, the error 
 
 ### UserDelegatedSASURL Length Consideration
 
-UserDelegatedSASURL can be up to or slightly below 500 characters in length. To ensure reliability, it is recommended you treat the 500 characters as the minimum expected size. Always use a variable type that can safely accommodate the full URL as described in the resolution above.
+UserDelegatedSASURL can be up to or slightly below 500 characters in length. To ensure reliability, it's recommended you treat the 500 characters as the minimum expected size. Always use a variable type that can safely accommodate the full URL as described in the resolution above.
 
 > [!IMPORTANT]
 > If the URL is truncated due to insufficient variable length, users may encounter errors such as (403) Forbidden, (404) Not Found, (409) Conflict, or PublicAccessNotPermitted-especially when the access key is disabled.
