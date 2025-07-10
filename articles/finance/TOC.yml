@@ -4620,7 +4620,7 @@
                 - name: Audit cubes
                   items:
                    - name: Audit cubes
-                     href: business-performance-planning/cubes-audit.md
+                     href: business-performance-planning/cube-audit.md
             - name: Power BI Visuals
               items:
                 - name: Overview
