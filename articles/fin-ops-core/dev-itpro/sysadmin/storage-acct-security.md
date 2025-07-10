@@ -6,7 +6,7 @@ ms.author: mansijain
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/010/2025
+ms.date: 07/10/2025
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2024-09-12
