@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesDeliverySchedule, SalesEditLines,  SrsReportViewerForm
 ms.topic: how-to
-ms.date: 01/07/2025
+ms.date: 07/10/2025
 ms.custom: 
   - bap-template
   - Evergreen
