@@ -41,7 +41,7 @@ Use this procedure to deploy a demo environment on Azure using LCS.
     - For finance and operations, select the most recent Azure Resource Manager (ARM) topology for finance and operations.
     - For Commerce, select **Dynamics 365 for Commerce - Demo**.
 4. In the **Deploy environment** dialog box, enter the name of the environment. This name should be unique in the Azure subscription. To make environments easy to identify, consider forming an acronym using the user’s name and the topology.
-5. Select the size of the virtual machine (VM). You must use **Ev3-series sizes** for finance and operations workloads. We recommend **Ev3**. If you experience allocation failures, see the [Azure troubleshooting guide](/azure/virtual-machines/troubleshooting/allocation-failure).
+5. Select the size of the virtual machine (VM). You must use **Ev5-series sizes** for finance and operations workloads. We recommend **Ev5**. If you experience allocation failures, see the [Azure troubleshooting guide](/azure/virtual-machines/troubleshooting/allocation-failure).
 6. Set the **Instances** field to 1.
 
     > [!NOTE] 
