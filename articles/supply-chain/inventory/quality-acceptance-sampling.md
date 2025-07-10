@@ -185,7 +185,7 @@ To set up item samplings for acceptance sampling, follow these steps:
 1. Select **New** to create a new item sampling and set the following fields:
     - **Item sampling** – Identification of the item sampling.
     - **Description** – Elaborated description of the item sampling. 
-    - **Sampling Scope** – Use the default value: *Order*. <!-- KFM: Describe what this setting does and how to use each of its options -->
+    - **Sampling Scope** – Scope that will be used when evaluating if quality work should be created. When set to *Shipment* or *Load*, those entities will be used if available. If not, the *Order* will be used.
     - **Use acceptance sampling charts** – In the drop-down you have following two options:
         - *Single* - Select this option to use acceptance sampling. The value indicates that you will use a single sampling plan. Read this section for more information about single and double sampling plans: [Single and double sampling plans](#single-and-double-sampling-plans).
         - *None* - Use this option if you don't want to use the acceptance sampling method for quality inspection.
@@ -193,18 +193,22 @@ To set up item samplings for acceptance sampling, follow these steps:
 1. On the **Acceptance sampling** FastTab, set the following required fields:
     - **Acceptance sampling chart name** – Select the sampling chart you want to use for this item sampling.
     - **Description** – Field that displays the name of the select acceptance sampling chart.
-    - **Inspection level** – Select which inspection level you want to use for this item sampling. Learn more about the use of inspection levels: [Acceptance sampling charts](#acceptance-sampling-charts).
+    - **Inspection level** – Select which inspection level you want to use for this item sampling. An inspection level is a code or category that is determined by the business user. It indicates the extent of inspection based on the importance of the product, the production history, and customer requirements. Learn more about the use of inspection levels: [Acceptance sampling charts](#acceptance-sampling-charts).
+    - **Description** – Displays the description of the selected AQL index.
+    - **Minor AQL%** – Enter the AQL index for minor defects for the item sampling. The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. Learn more how to use AQL indexes here: [Acceptance sampling charts](#acceptance-sampling-charts).
+    - **Description** – Displays the description of the selected AQL index.
+    - **Major AQL%** – Enter the AQL index for major defects for the item sampling. The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. Learn more how to use AQL indexes here: [Acceptance sampling charts](#acceptance-sampling-charts).
     - **Description** – <!-- KFM: again... -->
-    - **Minor AQL%** – Enter the percentage value for the minor acceptable quality level. <!-- KFM: Percentage of what? What do we mean by "minor". What is the effect of this setting?  -->
-    - **Description** – <!-- KFM: again... -->
-    - **Major AQL%** – Enter the percentage value for the major acceptable quality level. <!-- KFM: Percentage of what? What do we mean by "major". What is the effect of this setting?  -->
-    - **Description** – <!-- KFM: again... -->
-    - **Critical AQL%** – Enter the percentage value for the critical acceptable quality level. <!-- KFM: Percentage of what? What do we mean by "critical". What is the effect of this setting?  -->
-    - **Description** – <!-- KFM: again... -->
+    - **Critical AQL%** – Enter the AQL index for critical defects for the item sampling. The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. Learn more how to use AQL indexes here: [Acceptance sampling charts](#acceptance-sampling-charts).
+    - **Description** – Displays the description of the selected AQL index.
 
 ## Set up a quality association for acceptance sampling
 
-<!-- KFM: Intro needed. What are we about to do and why? Link to existing topic [Quality associations](quality-associations.md). Review that topic to see if we should expand it after adding this feature, and maybe link back to here. -->
+Supply Chain Management uses quality associations to establish an apply rules that automatically trigger a quality order based on specific events, such as product receipt, production output, or inventory movement. Each quality association links a product, process, or condition to a quality inspection requirement, ensuring consistent and automated quality control. You can learn more about quality associations in [Quality associations](quality-associations.md).
+
+When a quality order is triggered based on an event defined in a quality association, the system automatically creates a quality order that can be used for acceptance sampling. The quality association links the triggering event (such as a product receipt or production output) to a specific test process. If the associated item sampling is configured for acceptance sampling, the generated quality order will use the defined sampling criteria to determine how much of the lot should be inspected.
+
+Follow these steps to create a quality association for acceptance sampling:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Quality associations**.
 1. On the Action Pane, select **New** to create a new quality association and fill out the required fields for references and conditions. <!-- KFM: we should list and describe these fields. -->
@@ -212,4 +216,15 @@ To set up item samplings for acceptance sampling, follow these steps:
     - **Test group** – Select a test group with tests defined for acceptance sampling.
     - **Item sampling** – Select an item sampling defined for acceptance sampling.
 
-<!-- KFM: It looks like we have a new **Acceptance sampling** tab on the **Quality orders** page. We should describe that somewhere. Link to and maybe also update [Quality orders](quality-orders.md) -->
+## Using acceptance sampling on quality orders
+
+When a quality order is created for acceptance sampling, a new Tab *Acceptance sampling* appears on the header of the quality order. Under this tab, a grid that contains line item for each test that needs to be conducted. The grid provides the following information:
+    - **Defect category** - Indicates one of the three fixed categories of the test *Critical*, *Major*, or *Minor*.
+    - **Defect type** - Indicates the type of the test defined in the configuration. Learn more about defect types here: [Set up defect types](#set-up-defect-types).
+    - **Acceptable quality level index** - Indicates the AQL index for the specific test as specified on the configuration of the item sampling for the quality order.
+    - **Sample size** - The sample size of the test. 
+    - **Target Ac** - Maximum number of defects accepted for the test to fail.
+    - **Target Re** - Minimum number of defects for the test to fail.
+    - **Test result** - Graphical indication if the test has passed or failed.
+
+The business user enters the test results for the individual test in the lines section of the quality order or by using the *Quick result entry* page opened from the Action pane.
