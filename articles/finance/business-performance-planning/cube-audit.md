@@ -1,6 +1,6 @@
 ---
 title: Cube audit in Business performance planning 
-description: Learn how to use audit cubes in Business performance planning.
+description: Learn how to audit cubes in Business performance planning.
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: how-to
