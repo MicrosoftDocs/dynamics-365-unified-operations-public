@@ -28,15 +28,15 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
 
 1. Implement custom request handler to process custom pricing attributes. 
 
-    Sample custom request handler: [GetCustomizedPricingPropertiesRequestHandler-Sample.md](unified-pricing-management/media/GetCustomizedPricingPropertiesRequestHandler-Sample.md)
+    Sample custom request handler: [GetCustomizedPricingPropertiesRequestHandler-Sample.md](media/GetCustomizedPricingPropertiesRequestHandler-Sample.md)
 
 2. Register the output library in the CommerceRuntime.Ext.config file.
 
     Sample custom request handler registration (if output library were 'Contoso.Commerce.Runtime.Services'):
 
-    [<img src="unified-pricing-management/media/commerce-runtime.png" alt="Custom request handler registration." title="Custom request handler registration" width="720" />](unified-pricing-management/media/commerce-runtime.png#lightbox)
+    [<img src="media/commerce-runtime.png" alt="Custom request handler registration." title="Custom request handler registration" width="720" />](media/commerce-runtime.png#lightbox)
 
-3. Enable the CSU flight UPSupportCustomPricingAttributesFlight.
+4. Enable the CSU flight UPSupportCustomPricingAttributesFlight.
 
 
 
@@ -158,7 +158,7 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
                 set TYPENAME = 'Customization'
                 where ATTRIBUTENAME = 'Custom attribute name'
 
-   [<img src="unified-pricing-management/media/ssms-customization.png" alt="SSMS customization." title="SSMS customization" width="360" />](unified-pricing-management/media/ssms-customization.png#lightbox)
+   [<img src="media/ssms-customization.png" alt="SSMS customization." title="SSMS customization" width="360" />](media/ssms-customization.png#lightbox)
 
 8. For Customer or Product, create a trade agreement journal that tests the new custom pricing attribute. For SalesTable or SalesLine, create an auto charge that tests the new custom pricing attribute. In both cases, make sure to set a specific value. 
 
@@ -175,7 +175,7 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
 
 ### If user recieves a POS notification that a custom request handler has not been implemented:
 
-[<img src="unified-pricing-management/media/request-handler-custom.png" alt="Custom request handler" title="Custom request handler" width="360" />](unified-pricing-management/media/request-handler-custom.png#lightbox)
+[<img src="media/request-handler-custom.png" alt="Custom request handler" title="Custom request handler" width="360" />](media/request-handler-custom.png#lightbox)
 
 
 1. Verify that a custom request handler has been implemented and included in the build.
@@ -186,7 +186,7 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
 
 ### If user recieves a POS notification that custom pricing attributes are detected among OOB attributes:
 
-[<img src="unified-pricing-management/media/custom-customer-attribute.png" alt="Custom customer attribute" title="Custom customer attribute" width="360" />](unified-pricing-management/media/custom-customer-attribute.png#lightbox) [<img src="unified-pricing-management/media/custom-product-attribute.png" alt="Custom product attribute" title="Custom product attribute" width="360" />](unified-pricing-management/media/custom-product-attribute.png#lightbox)
+[<img src="media/custom-customer-attribute.png" alt="Custom customer attribute" title="Custom customer attribute" width="360" />](media/custom-customer-attribute.png#lightbox) [<img src="media/custom-product-attribute.png" alt="Custom product attribute" title="Custom product attribute" width="360" />](media/custom-product-attribute.png#lightbox)
 
 
 1. Verify that the CSU flight UPSupportCustomPricingAttributesFlight has been enabled.
@@ -209,7 +209,7 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
     Troublshooting through telemetry wiki: https://msazure.visualstudio.com/D365/_wiki/wikis/D365.wiki/9342/Troubleshooting-Through-Telemetry
 
 
-   [<img src="unified-pricing-management/media/telemetry-troubleshooting.png" alt="Telemetry troubleshooting" title="Telemetry troubleshooting" width="720" />](unified-pricing-management/media/telemetry-troubleshooting.png#lightbox)
+   [<img src="media/telemetry-troubleshooting.png" alt="Telemetry troubleshooting" title="Telemetry troubleshooting" width="720" />](media/telemetry-troubleshooting.png#lightbox)
     
 
     - Starting query template for CSU logs:
@@ -227,4 +227,4 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
 
     - Example of locating full database error in CSU logs:
     
-        [<img src="unified-pricing-management/media/retail-server-logs.png" alt="Retail server logs" title="Retail server logs" width="720" />](unified-pricing-management/media/retail-server-logs.png#lightbox)
+        [<img src="media/retail-server-logs.png" alt="Retail server logs" title="Retail server logs" width="720" />](media/retail-server-logs.png#lightbox)
