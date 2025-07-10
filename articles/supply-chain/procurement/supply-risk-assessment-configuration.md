@@ -1,8 +1,8 @@
 ---
 title: Configure Supply risk assessment
 description: Learn how to enable and set up Supply risk assessment, including prerequisites and an outline and process on configuring thresholds.
-author: cabeln
-ms.author: cabeln
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to 
 ms.date: 05/22/2024 
 ms.custom: bap-template
