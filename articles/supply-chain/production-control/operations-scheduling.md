@@ -4,7 +4,7 @@ description: Learn about operations scheduling. You can use operations schedulin
 author: johanhoffmann
 ms.author: johanho
 ms.topic: article
-ms.date: 05/22/2024
+ms.date: 07/10/2025
 ms.custom:
   - bap-template
   - evergreen

@@ -4,7 +4,7 @@ description: Learn aboutthe purchase requisition workflow and the different stat
 author: ShriramSivasankaran
 ms.author: shriramsiv
 ms.topic: how-to
-ms.date: 05/02/2024
+ms.date: 07/10/2025
 ms.custom: 
   - bap-template
   - evergreen

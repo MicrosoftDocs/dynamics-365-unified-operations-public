@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SMASubscriptionTable
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 07/10/2025
 ms.custom: 
   - bap-template
   - evergreen
