@@ -3,7 +3,7 @@ title: Support custom pricing attributes in POS
 description: Learn how to support custom pricing attributes in POS by implementing a custom request handler
 author: cbarrientos
 ms.author: cbarrientos
-ms.topic: custom pricing attributes
+ms.topic: article
 ms.date: 07/02/2025
 ms.custom: bap-template
 ms.reviewer:
@@ -11,7 +11,7 @@ ms.search.form:
 ---
 
 
-## Support custom pricing attributes in POS
+# Support custom pricing attributes in POS
 
 From version 10.0.45, customers will be empowered to configure pricing rules based on custom Product, Customer, SalesLine, and SalesTable pricing attributes.
 
@@ -48,97 +48,102 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
 
     - Example for header-level custom pricing attribute (Customer):
 
-
-            /// <summary>
-            /// PricingAttribute of table <c>CustTable</c> field StatisticsGroup.
-            /// </summary>
-            [GUPPricingMetadataDiscovery][GUPPricingAttributeSourceDiscovery(GUPPricingAttributeSource::Customer, GUPPricingAttributeSourceLevel::Header)]
-            [GUPPricingAttributeFieldsDiscovery(fieldStr(CustTable, StatisticsGroup))]
-            internal class GUPPricingAttributeCustTableStatisticsGroup extends GUPPricingAttributeCustTable implements GUPIPricingAttribute
-            {
-                private Name typeName = 'Customization';
-                
-                public anytype getValueOfAttribute(Common _pricingObject)
-                {
-                    return this.getTableRecord(_pricingObject).StatisticsGroup;
-                }
-
-                public str getName()
-                {
-                    return this.getNameFromField();
-                }
-
-                public AttributeDataType getDataType()
-                {
-                    return AttributeDataType::Text;
-                }
-
-                public Name getAttributeType()
-                {
-                    return this.typeName;
-                }
-
-            }
+    ```
+    /// <summary>
+    /// PricingAttribute of table <c>CustTable</c> field StatisticsGroup.
+    /// </summary>
+    [GUPPricingMetadataDiscovery][GUPPricingAttributeSourceDiscovery(GUPPricingAttributeSource::Customer, GUPPricingAttributeSourceLevel::Header)]
+    [GUPPricingAttributeFieldsDiscovery(fieldStr(CustTable, StatisticsGroup))]
+    internal class GUPPricingAttributeCustTableStatisticsGroup extends GUPPricingAttributeCustTable implements GUPIPricingAttribute
+    {
+        private Name typeName = 'Customization';
+        
+        public anytype getValueOfAttribute(Common _pricingObject)
+        {
+            return this.getTableRecord(_pricingObject).StatisticsGroup;
+        }
+    
+        public str getName()
+        {
+            return this.getNameFromField();
+        }
+    
+        public AttributeDataType getDataType()
+        {
+            return AttributeDataType::Text;
+        }
+    
+        public Name getAttributeType()
+        {
+            return this.typeName;
+        }
+    
+    }
+    ```
     
     - Example for line-level custom pricing attribute (SalesLine):
 
-            /// <summary>
-            /// PricingAttribute of table <c>SalesLine</c> field LineNum.
-            /// </summary>
-            [GUPPricingMetadataDiscovery][GUPPricingAttributeSourceDiscovery(GUPPricingAttributeSource::SalesLine, GUPPricingAttributeSourceLevel::Line)]
-            [GUPPricingAttributeFieldsDiscovery(fieldStr(SalesLine, LineNum))]
-            internal final class GUPPricingAttributeSalesLineLineNum extends GUPPricingAttributeSalesLine implements GUPIPricingAttribute
-            {
-                private Name typeName = 'Customization';
-
-                public anytype getValueOfAttribute(Common _pricingObject)
-                {
-                    return this.getTableRecord(_pricingObject).LineNum;
-                }
-
-                public str getName()
-                {
-                    return this.getNameFromField();
-                }
-
-                public AttributeDataType getDataType()
-                {
-                    return AttributeDataType::Integer;
-                }
-
-                public FieldId getField()
-                {
-                    return fieldNum(SalesLine, LineNum);
-                }
-
-                public Name getAttributeType()
-                {
-                    return this.typeName;
-                }
-
-            }
+    ```
+    /// <summary>
+    /// PricingAttribute of table <c>SalesLine</c> field LineNum.
+    /// </summary>
+    [GUPPricingMetadataDiscovery][GUPPricingAttributeSourceDiscovery(GUPPricingAttributeSource::SalesLine, GUPPricingAttributeSourceLevel::Line)]
+    [GUPPricingAttributeFieldsDiscovery(fieldStr(SalesLine, LineNum))]
+    internal final class GUPPricingAttributeSalesLineLineNum extends GUPPricingAttributeSalesLine implements GUPIPricingAttribute
+    {
+        private Name typeName = 'Customization';
+    
+        public anytype getValueOfAttribute(Common _pricingObject)
+        {
+            return this.getTableRecord(_pricingObject).LineNum;
+        }
+    
+        public str getName()
+        {
+            return this.getNameFromField();
+        }
+    
+        public AttributeDataType getDataType()
+        {
+            return AttributeDataType::Integer;
+        }
+    
+        public FieldId getField()
+        {
+            return fieldNum(SalesLine, LineNum);
+        }
+    
+        public Name getAttributeType()
+        {
+            return this.typeName;
+        }
+    
+    }
+    ```
 
 2. For **new** custom pricing attributes, the customer should  programmatically set the TypeName column on the GUPPRICINGATTRIBUTELINK table to 'Customization'.
     - In AppSuite repo,  create an extension to [GUPPricingAttributeRepository.xml](https://msdyneng.visualstudio.com/FinOps/_git/ApplicationSuite?path=/Source/Metadata/GlobalUnifiedPricing/GlobalUnifiedPricing/AxClass/GUPPricingAttributeRepository.xml&version=GBmaster&line=271&lineEnd=271&lineStartColumn=45&lineEndColumn=65&lineStyle=plain&_a=contents) and add a statement to the toPriceAttributeLink() method that programmatically sets the TypeName column for each new custom pricing attribute.
 
     - Example of creating such an extension:
 
-            [ExtensionOf(classStr(GUPPricingAttributeRepository))]
-            public static final class GUPPricingAttributeRepository_Extension
+    ```
+    [ExtensionOf(classStr(GUPPricingAttributeRepository))]
+    public static final class GUPPricingAttributeRepository_Extension
+    {
+        public static GUPPricingAttributeLink toPriceAttributeLink(GUPIPricingAttribute _pricingAttr)
+        {
+            GUPPricingAttributeLink link = next toPriceAttributeLink(_pricingAttr);
+    
+            if (link.AttributeName == "StatisticsGroup")
             {
-                public static GUPPricingAttributeLink toPriceAttributeLink(GUPIPricingAttribute _pricingAttr)
-                {
-                    GUPPricingAttributeLink link = next toPriceAttributeLink(_pricingAttr);
-            
-                    if (link.AttributeName == "StatisticsGroup")
-                    {
-                        link.TypeName = (_pricingAttr as GUPPricingAttributeCustTableStatisticsGroup).getAttributeType();
-                    }
-            
-                    return link;
-                }
-            
+                link.TypeName = (_pricingAttr as GUPPricingAttributeCustTableStatisticsGroup).getAttributeType();
             }
+    
+            return link;
+        }
+    
+    }
+    ```
 
 3. Build the relevant models (GUP or extension), restart IIS and clear the cache. 
 
@@ -154,9 +159,11 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
     
     Example of setting 'Customization' identifier:
 
-                update dbo.GUPPRICINGATTRIBUTELINK
-                set TYPENAME = 'Customization'
-                where ATTRIBUTENAME = 'Custom attribute name'
+    ```
+    update dbo.GUPPRICINGATTRIBUTELINK
+    set TYPENAME = 'Customization'
+    where ATTRIBUTENAME = 'Custom attribute name'
+    ```
 
    [<img src="media/ssms-customization.png" alt="SSMS customization." title="SSMS customization" width="360" />](media/ssms-customization.png#lightbox)
 
@@ -214,16 +221,20 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
 
     - Starting query template for CSU logs:
 
-            traces
-            | where customDimensions.UserSessionId == "UserSessionId"
- 
+    ```
+    traces
+    | where customDimensions.UserSessionId == "UserSessionId"
+    ```
 
-            traces
-            | where customDimensions.AppSessionId == "AppSessionId"
+    ```
+    traces
+    | where customDimensions.AppSessionId == "AppSessionId"
+    ```
 
-
-            traces
-            | where customDimensions.ActivityId == "ActivityId"
+    ```
+    traces
+    | where customDimensions.ActivityId == "ActivityId"
+    ```
 
     - Example of locating full database error in CSU logs:
     
