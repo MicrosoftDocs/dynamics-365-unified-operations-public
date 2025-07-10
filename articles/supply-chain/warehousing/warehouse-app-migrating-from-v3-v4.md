@@ -24,6 +24,8 @@ For V4, we rewrote the code of the Warehouse Management mobile app by using more
 - **Better customer support capabilities** – Faster issue resolution and customer assistance.
 - **Future-ready architecture** – Streamlined development of new features and integrations.
 
+If you have any feedback about the preview version of this app, please send us email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
+
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## New features in V4
