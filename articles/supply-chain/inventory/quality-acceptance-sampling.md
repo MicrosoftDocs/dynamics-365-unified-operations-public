@@ -184,14 +184,16 @@ To set up item samplings for acceptance sampling, follow these steps:
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Item sampling**.
 1. Select **New** to create a new item sampling and set the following fields:
     - **Item sampling** – Identification of the item sampling.
-    - **Description** – <!-- KFM: description needed -->
+    - **Description** – Elaborated description of the item sampling. 
     - **Sampling Scope** – Use the default value: *Order*. <!-- KFM: Describe what this setting does and how to use each of its options -->
-    - **Use acceptance sampling charts** – Select: *Single*. <!-- KFM: Describe what this setting does and how to use each of its options -->
+    - **Use acceptance sampling charts** – In the drop-down you have following two options:
+        - *Single* - Select this option to use acceptance sampling. The value indicates that you will use a single sampling plan. Read this section for more information about single and double sampling plans: [Single and double sampling plans](#single-and-double-sampling-plans).
+        - *None* - Use this option if you don't want to use the acceptance sampling method for quality inspection.
 
 1. On the **Acceptance sampling** FastTab, set the following required fields:
     - **Acceptance sampling chart name** – Select the sampling chart you want to use for this item sampling.
-    - **Description** – <!-- KFM: Description needed. It's a bad thing that we have multiple fields with identical names in the UI. Maybe we can combine these into a single entry in this list and say something like "a **Description** field is provided under each filed on this FastTab. You can use these to add notes about each setting. -->
-    - **Inspection level** – <!-- KFM: description needed -->
+    - **Description** – Field that displays the name of the select acceptance sampling chart.
+    - **Inspection level** – Select which inspection level you want to use for this item sampling. Learn more about the use of inspection levels: [Acceptance sampling charts](#acceptance-sampling-charts).
     - **Description** – <!-- KFM: again... -->
     - **Minor AQL%** – Enter the percentage value for the minor acceptable quality level. <!-- KFM: Percentage of what? What do we mean by "minor". What is the effect of this setting?  -->
     - **Description** – <!-- KFM: again... -->
