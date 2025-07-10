@@ -198,7 +198,7 @@ To set up item samplings for acceptance sampling, follow these steps:
     - **Minor AQL%** – Enter the AQL index for minor defects for the item sampling. The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. Learn more how to use AQL indexes here: [Acceptance sampling charts](#acceptance-sampling-charts).
     - **Description** – Displays the description of the selected AQL index.
     - **Major AQL%** – Enter the AQL index for major defects for the item sampling. The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. Learn more how to use AQL indexes here: [Acceptance sampling charts](#acceptance-sampling-charts).
-    - **Description** – <!-- KFM: again... -->
+    - **Description** – Displays the description of the selected AQL index.
     - **Critical AQL%** – Enter the AQL index for critical defects for the item sampling. The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. Learn more how to use AQL indexes here: [Acceptance sampling charts](#acceptance-sampling-charts).
     - **Description** – Displays the description of the selected AQL index.
 
