@@ -173,6 +173,11 @@ The user-delegated SAS URL, which is often long, may be cut off if the variable 
 
 By ensuring the variable can store the entire URL without truncation, the error should be resolved.
 
+### UserDelegatedSASURL Length Consideration
+
+The UserDelegatedSASURL can be up to or slightly below 500 characters in length. To ensure reliability, it is recommended to treat 500 characters as the minimum expected size. Always use a variable type that can safely accommodate the full URL, as outlined in the resolution above.
+**Important:** If the URL is truncated due to insufficient variable length, users may encounter errors such as (403) Forbidden, (404) Not Found, (409) Conflict, or PublicAccessNotPermitted-especially when the access key is disabled.
+
 ### Error: "403 (Forbidden): Server failed to authenticate the request."
 This error may occur if you're using an old or cached connection string on finance and operations managed storage accounts. This is often due to secrets rotation following planned maintenance.
 
