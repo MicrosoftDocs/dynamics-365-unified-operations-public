@@ -31,24 +31,25 @@ The advance VAT declaration in Spain contains the following information.
 
 **VAT accrued**
 
-| Box – tax base     | Box – rate %       | Box – tax amount | Description      | Lookup result / Total      |
-|--------------------|--------------------|------------------|---------------------------------------------------------------------------------------|----------------------|
+
+| Box – tax base | Box – rate % | Box – tax amount | Description | Lookup result / Total   |
+|--------------------|--------------------|------------------|---------------|----------------------|
 | 150                 | 151                 | 152            | VAT accrued - General regime - zero rate.                                  | VATAccruedGeneralRegimeZero</br>UseTaxGeneralRegimeZero (also reported in boxes 28/29)                                     |
-| 165                 | 166                 | 167            | VAT accrued - General regime - Extra reduced rate.                                  | VATAccruedGeneralRegimeExtra</br>UseTaxGeneralRegimeExtra (also reported in boxes 28/29)                                     |
+| 165                 | 166                 | 167            | VAT accrued - General regime - Extra reduced rate.                         | VATAccruedGeneralRegimeExtra</br>UseTaxGeneralRegimeExtra (also reported in boxes 28/29)                                     |
 | 01                 | 02                 | 03               | VAT accrued - General regime - Super reduced rate.                         | VATAccruedGeneralRegimeSuperReduced</br>UseTaxGeneralRegimeSuperReduced (also reported in boxes 28/29)                                     |
 | 153                 | 154                 | 155            | VAT accrued - General regime - Mid-reduced rate.                           | VATAccruedGeneralRegimeMidReduced</br>UseTaxGeneralRegimeMidReduced  (also reported in boxes 28/29)                                     |
 | 04                 | 05                 | 06               | VAT accrued - General regime - Reduced rate.                               | VATAccruedGeneralRegimeReduced</br>UseTaxGeneralRegimeReduced (also reported in boxes 28/29)                                               |
-| 07                 | 08                 | 09               | VAT accrued - General regime - Standard rate.                              | VATAccruedGeneralRegimeStandard</br>UseTaxGeneralRegimeStandard (also reported in boxes 28/29)                                             |
+| 07                 | 08                 | 09               | VAT accrued - General regime - Standard rate.                              | VATAccruedGeneralRegimeStandard</br>UseTaxGeneralRegimeStandard (also reported in boxes 28/29)      |
 | 10                 | Not applicable     | 11               | VAT accrued - Intra-community acquisitions of goods and services.          | VATAccruedEUPurchase</br> UseTaxEUPurchaseCurrentGoodsServices (also reported in boxes 36/37)</br>UseTaxEUPurchaseInvestmentGoods (also reported in boxes 38/39) |
-| 12                 | Not applicable     | 13               | VAT accrued - Other operations with investment by the taxpayer (except EU purchases). | VATAccruedOtherOperationsInvestment</br>UseTaxOtherOperationsInvestment (also reported in boxes 38/39)                                    |
-| 14                 | Not applicable     | 15               | Modification of bases and fees                                             | VATAccruedModifications</br>UseTaxModificationsGoodsServices (also reported in boxes 36/37)</br>UseTaxModificationsInvestment (also reported in boxes 38/39)    |
+| 12                 | Not applicable     | 13               | VAT accrued - Other operations with investment by the taxpayer (except EU purchases). | VATAccruedOtherOperationsInvestment</br>UseTaxOtherOperationsInvestment (also reported in boxes 38/39)   |
+| 14 | Not applicable  | 15 | Modification of bases and fees  | VATAccruedModifications</br>UseTaxModificationsGoodsServices (also reported in boxes 36/37)</br>UseTaxModificationsInvestment (also reported in boxes 38/39)  |
 | 156                | 157                | 158              | Equivalence surcharge - Mid-reduced rate                                              | EquivalenceSurchargeMidReduced |
 | 168                | 169                | 170              | Equivalence surcharge - Extra-reduced rate                                            | EquivalenceSurchargeExtraReduced |
 | 16                 | 17                 | 18               | Equivalence surcharge - Super reduced rate.                                           | EquivalenceSurchargeSuperReduced |
 | 19                 | 20                 | 21               | Equivalence surcharge - Reduced rate.                                                 | EquivalenceSurchargeReduced |
 | 22                 | 23                 | 24               | Equivalence surcharge - Standard rate.                                                | EquivalenceSurchargeStandard |
 | 25                 | Not applicable     | 26               | Modifications bases and fees of the equivalence surcharge.                            | EquivalenceSurchargeModifications |
-| Not applicable | Not applicable | 27           | Total VAT accrued.                                                                | [152] + [03] + [155] + [06] + [09] + [11] + [13] + [15] + [158] + [18] + [21] + [24] + [26] + [167] + [170]        |                                       |
+| Not applicable | Not applicable | 27    | Total VAT accrued.   | [152] + [03] + [155] + [06] + [09] + [11] + [13] + [15] + [158] + [18] + [21] + [24] + [26] + [167] + [170]        |                                       |
 
 
 **VAT deductible**
@@ -161,9 +162,10 @@ To define which sales tax codes generate which boxes on the VAT declaration, fol
 1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **Report field lookup**.
 1. On the **Conditions** FastTab, set values for the following fields to associate the sales tax codes and report fields.
 
-    | Field                  | Description                                         |
-    |------------------------|------------------------------------------------------------------------------------|
-    | Lookup result          | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this article.    |                                                                                           |
+
+    | Field  | Description  |
+    |------------------------|-----------------------------|
+    | Lookup result   | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this article.    |                                                                                           |
     | Tax code               | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
     | Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available: </br>-   **Purchase**</br>-   **PurchaseExempt** (tax-exempt purchase)</br>-   **PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</br>-   **Sales**</br>-   **SalesExempt** (tax-exempt sale)</br>-   **SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</br>-   **Use tax**. </br>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</br>Be sure to create two lines for each sales tax code: one that has the transaction classifier value and one that has the transaction classifier for credit note value. |
 
