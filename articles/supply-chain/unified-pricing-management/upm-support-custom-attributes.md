@@ -13,14 +13,14 @@ ms.search.form:
 
 # Support custom pricing attributes in POS
 
-From version 10.0.45, customers will be empowered to configure pricing rules based on custom Product, Customer, SalesLine, and SalesTable pricing attributes.
+From version 10.0.45, customers are empowered to configure pricing rules based on custom Product, Customer, SalesLine, and SalesTable pricing attributes.
 
-We have introduced GetCustomizedPricingPropertiesRequest and GetCustomizedPricingPropertiesResponse, and will allow the customer to implement their own custom request handler to develop their logic.
+We introduced GetCustomizedPricingPropertiesRequest and GetCustomizedPricingPropertiesResponse, and allow the customer to implement their own custom request handler to develop their logic.
 
-Custom attributes are marked in GUPPRICINGATTRIBUTELINK using a specific identifier, indicating that they require special logic in CSU to be supported in POS.
+Custom attributes are marked in GUPPRICINGATTRIBUTELINK using a specific identifier, indicating that they require special logic in Commerce Scale Unit (CSU) to be supported in POS.
 To mark a pricing attribute as custom, its GUPPRICINGATTRIBUTELINK.TypeName column must be set to 'Customization'.
 
-In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTELINK.TypeName = 'Customization', then the custom request handler will  be called.
+In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTELINK.TypeName = 'Customization', then the custom request handler is called.
 
 
 
@@ -44,7 +44,7 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
 
 1. In AppSuite repo, create new custom pricing attributes according to: [How to add a new pricing attribute](https://eng.ms/docs/cloud-ai-platform/business-and-industry-copilot/bic-bis-ai-erp-smb/aierp-finance/d365-finance-application-core-services/dynamics-365-ai-erp/domainknowledge/scm/pricingmanagement/howto/howtoaddanewpricingattribute).
     
-    - A new class will need to be added for each new custom pricing attribute. 
+    - A new class needs to be added for each new custom pricing attribute. 
 
     - Example for header-level custom pricing attribute (Customer):
 
@@ -153,7 +153,7 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
 
 4. In FnO UI, navigate to Price attribute groups form and add custom pricing attributes to the corresponding Price attribute group.
 
-5. Run the 1210 (Pricing management) job to sync changes to Channel database.
+5. Run the 1210 (Pricing management) job and sync changes to Channel database.
 
 6. For **existing** custom pricing attributes, manually set the TypeName column on the GUPPRICINGATTRIBUTELINK table to 'Customization' in SSMS.
     
@@ -169,7 +169,7 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
 
 8. For Customer or Product, create a trade agreement journal that tests the new custom pricing attribute. For SalesTable or SalesLine, create an auto charge that tests the new custom pricing attribute. In both cases, make sure to set a specific value. 
 
-9. Run the 9999 (full sync) to sync to Channel database.
+9. Run the 9999 (full sync) and sync to Channel database.
 
 10. In POS, we should see the value configured in trade agreement journal  or auto charge get correctly applied.
 
@@ -191,14 +191,14 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
 
 
 
-### If user receives a POS notification that custom pricing attributes are detected among OOB attributes:
+### If user receives a POS notification that custom pricing attributes are detected among out-of-box attributes:
 
 [<img src="media/custom-customer-attribute.png" alt="Custom customer attribute" title="Custom customer attribute" width="360" />](media/custom-customer-attribute.png#lightbox) [<img src="media/custom-product-attribute.png" alt="Custom product attribute" title="Custom product attribute" width="360" />](media/custom-product-attribute.png#lightbox)
 
 
 1. Verify that the CSU flight UPSupportCustomPricingAttributesFlight is enabled.
 
-2. Confirm that the new custom pricing attributes is identified as custom. The GUPPRICINGATTRIBUTELINK.TypeName column should be set to 'Customization' for all custom pricing attributes.
+2. Confirm that the new custom pricing attributes are identified as custom. The GUPPRICINGATTRIBUTELINK.TypeName column should be set to 'Customization' for all custom pricing attributes.
 
 
 
