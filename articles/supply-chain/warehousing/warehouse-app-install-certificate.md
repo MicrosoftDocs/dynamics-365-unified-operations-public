@@ -1,5 +1,5 @@
 ---
-title: Migrate the Warehouse Management mobile app from V3 to V4 (preview)
+title: How to Install the Certificate for Warehouse Management Mobile Application (Windows - Version 4)
 description: Learn how to install certificate for Warehouse Management mobile application Windows to install version 4 (V4). The article includes information about setup instructions.
 author: nsayginer
 ms.author: nsayginer
