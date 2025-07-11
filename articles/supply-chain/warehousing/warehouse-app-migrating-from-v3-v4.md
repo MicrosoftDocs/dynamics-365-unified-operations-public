@@ -146,3 +146,18 @@ V4, like V3, doesn't support certificate authentication. Users must use the devi
 - **End of support** – May 2026 (estimated).
 - **Feature development** – No new features will be developed for V3.
 - **Maintenance** – Critical bug fixes and security updates continue until the end of support.
+
+### How to install certificate for Windows App 
+
+- **Install the certificate**: Right click on the folder(**.msixbundle**) that you installed from AppCenter.
+    1. Select  **Properties**.
+    1. Go to  **Digital Signatures** tab and select the only signature in the list.
+    1. Click  **Details**.
+    1. Click  **View Certificate**.
+    1. Certificate page will open, click **Install Certificate**.
+    1. When you click on Install Certificate, Digital Certificate Wizard will open.
+    1. Select **Local Machine**, then click Next.
+    1. Choose **Place all certificates in the following store** \> **Browse** for **Trusted Root Certification Authorities**.
+    1. Click Next.
+    1. Click Finish.   
+- **Install App**: Double click on the folder(**.msixbundle**) that you installed from AppCenter and select **Install**.
