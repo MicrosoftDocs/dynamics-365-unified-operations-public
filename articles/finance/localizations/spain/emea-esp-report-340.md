@@ -81,8 +81,7 @@ To generate a Spanish VAT book and export the Report 340 ASCII file, follow thes
     | Replacement   declaration                               | Set this option to **Yes** to replace the previous declaration.   |
     | Previous   declaration number                          | Enter the 13-digit number of the   previous declaration. This field can be edited only if the **Replacement declaration** option is set to **Yes**. |
     | Minimum   payment account in cash     | Enter the minimum cash payment   amount that should be reported in the declaration. If you don't need to include cash payments in the report, enter 9999999999 in this field.   |
-
-                                                                                                                                                                           |
+                                                                                                                                                                         |
 1. Select **OK** to create a line on the **Spanish VAT reports** page, based on the criteria that you defined in the previous step.
 1. Review the new line you created.
 
