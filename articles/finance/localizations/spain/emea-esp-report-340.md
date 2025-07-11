@@ -67,6 +67,7 @@ To generate a Spanish VAT book and export the Report 340 ASCII file, follow thes
 1. Select **Spanish VAT reports** to open the **Spanish VAT reports** page.
 1. Select **Create new** to create a report.
 1. In the **Spanish VAT list** dialog, set values for the following fields.
+
     | Field                                                   | Description            |
     |---------------------------------------------------------|------------------------------------|
     | VAT book                                                | Select a VAT book.          |
