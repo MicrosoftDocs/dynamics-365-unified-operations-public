@@ -180,7 +180,7 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
 ## Troubleshooting
 
 
-### If user receives a POS notification that a custom request handler is not implemented:
+### If user receives a POS notification that a custom request handler is not implemented
 
 [<img src="media/request-handler-custom.png" alt="Custom request handler" title="Custom request handler" width="360" />](media/request-handler-custom.png#lightbox)
 
@@ -191,7 +191,7 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
 
 
 
-### If user receives a POS notification that custom pricing attributes are detected among out-of-box attributes:
+### If user receives a POS notification that custom pricing attributes are detected among out-of-box attributes
 
 [<img src="media/custom-customer-attribute.png" alt="Custom customer attribute" title="Custom customer attribute" width="360" />](media/custom-customer-attribute.png#lightbox) [<img src="media/custom-product-attribute.png" alt="Custom product attribute" title="Custom product attribute" width="360" />](media/custom-product-attribute.png#lightbox)
 
