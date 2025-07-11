@@ -6,7 +6,7 @@ ms.author: priysharma
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 03/11/2025
+ms.date: 07/11/2025
 ms.reviewer: johnmichalak 
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -159,7 +159,7 @@ New Design: There's one regular batch job (Job1) that creates a new runtime chil
 > If you've customized your code that involves DMFBatchImporter, DMFImportTaskScheduler, DMFBatchExporter, DMFExportTaskScheduler classes, you may encounter issues with the import/export in batch feature under the new design. For example, if you have created your own custom batch task and are adding task to Job1 as per previous design, then you're adding tasks to the wrong job. You should now add your custom tasks to job2 instead of job1 as per new design.
 
 > [!NOTE]
-> If you have any usecase where it depends on the enddateTime of the DMFBatchImporter or DMFBatchExporter tasks to track completion of DMF Execution, you may notice that these values now differ from the DMF execution end datetime. This change is due to the recent retry design updates: DMFBatchImporter/DMFBatchExporter now create a new batch job2, mark themselves complete, and job2 handles adding and waiting for other required tasks to finish. As a result, if your use case depends on the enddatetime of DMFBatchImporter or DMFBatchExporter, you should now monitor the enddatetime of the last DMFImportTaskScheduler or DMFExportTaskScheduler task instead, as this provides accurate information about the completion of DMFExecution.
+> If you have any use case that depends on the enddateTime of the DMFBatchImporter or DMFBatchExporter tasks to track completion of DMF Execution, you may notice that these values now differ from the DMF execution end datetime. This change is due to the recent retry design updates: DMFBatchImporter/DMFBatchExporter now creates a new batch job2, marka them complete, and job2 handles adding and waiting for other required tasks to finish. As a result, if your use case depends on the enddatetime of DMFBatchImporter or DMFBatchExporter, you should now monitor the enddatetime of the last DMFImportTaskScheduler or DMFExportTaskScheduler task instead, as this provides accurate information about the completion of DMFExecution.
 
 ## Validate that the job ran as expected
 The job history is available for troubleshooting and investigation on both import and export jobs. Historical job runs are organized by time ranges.
