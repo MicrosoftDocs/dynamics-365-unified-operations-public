@@ -1,24 +1,25 @@
 ---
 title: EU sales list for Spain (Report 349)
-description: Learn about the European Union (EU) sales list report for Spain, also known as Report 349, including an outline on setting up company information.
+description: Learn how to set up the European Union (EU) sales list report for Spain, also known as Report 349, in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/27/2024
+ms.date: 07/11/2025
 ms.reviewer: johnmichalak
 ms.search.region: Spain
 ms.search.validFrom: 2016-02-28
 ms.search.form: EUSalesList
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # EU sales list for Spain (Report 349)
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about the European Union (EU) sales list report for Spain, also known as Report 349. The Spanish EU sales list report contains information about sale and purchase of goods and services for reporting in text format.
+This article explains how to set up the European Union (EU) sales list report for Spain, also known as Report 349, in Microsoft Dynamics 365 Finance.
+
+The Spanish EU sales list report contains information about sale and purchase of goods and services for reporting in text format.
 
 The following fields are included on the Spanish EU sales list report:
 
@@ -53,28 +54,32 @@ The following fields are included on the Spanish EU sales list report:
   - Correction amount
 
 ## Setup
+
 For general setup information, see [EU sales list reporting](../europe/emea-eu-sales-list.md).
 
 > [!NOTE]
 > The company name and the value from the **Tax registration number** field on the **Tax registration** FastTab of the **Legal entities** page are used in the .xlsx file for the EU sales list report.
 
-
 ### Set up company information
-Create a registration type, and assign it to the **VAT ID** registration category for Spain and every country or region that your company does business with. For more information, see [Registration IDs](../europe/emea-registration-ids.md).
 
-1. In Microsoft Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
-2. In the grid, select your company.
-3. On the Action Pane, select **Registration IDs**.
-4. On the **Registration ID** FastTab, select **Add**.
-5. On the **Overview** tab, in the **Registration type** field, select the registration type that you created.
-6. Enter your company's value-added tax (VAT) ID.
-7. Optional: On the **General** tab, in the **General** section, you can change the period that the VAT ID is used for.
-8. Close the page.
+Create a registration type, and assign it to the **VAT ID** registration category for Spain and every country or region that your company does business with. Learn more in [Registration IDs](../europe/emea-registration-ids.md).
+
+To set up company information, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1. In the grid, select your company.
+1. On the Action Pane, select **Registration IDs**.
+1. On the **Registration ID** FastTab, select **Add**.
+1. On the **Overview** tab, in the **Registration type** field, select the registration type you created.
+1. Enter your company's value-added tax (VAT) ID.
+1. Optional: On the **General** tab, in the **General** section, you can change the period for which the VAT ID is used.
+1. Close the page.
 
 > [!NOTE]
-> The VAT ID that you created is used in the .txt file of the EU sales list report. If the **VAT exempt number export** field in the **Intrastat** section on the **Foreign trade and logistics** FastTab is set (that is, it isn't blank), the value of that field is used instead of the VAT ID.
+> The VAT ID that create is used in the .txt file of the EU sales list report. If the **VAT exempt number export** field in the **Intrastat** section on the **Foreign trade and logistics** FastTab is set (not blank), the value of that field is used instead of the VAT ID.
 
-### Import Electronic reporting configurations
+### Import electronic reporting configurations
+
 In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list:
 
   - EU Sales list model
@@ -82,35 +87,38 @@ In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/
   - EU Sales list by rows report
   - EU Sales list (ES)
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+Learn more in [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ### Set up foreign trade parameters
 
-1. In Finance, go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
-2. On the **EU sales list** tab, set the **Transfer purchases** option to **Yes**.
-3. Set the **Report cash discount** option to **Yes** if a cash discount should be included in the value when a transaction is included in the EU sales list.
-4. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list (ES)**.
-5. In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
-6. On the C**ountry/region properties** tab, select **New**, and specify the following information:
+To set up foreign trade parameters, follow these steps.
 
-    •	In the **Country/region** column, select **ESP**.
-    •	In the **Country/region type** column, select **Domestic**.
-
-7. List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU** to show trade with those countries on the **EU sales list** page.
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Foreign trade parameters**.
+1. On the **EU sales list** tab, set the **Transfer purchases** option to **Yes**.
+1. Set the **Report cash discount** option to **Yes** if a cash discount should be included in the value when a transaction is included in the EU sales list.
+1. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list (ES)**.
+1. In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
+1. On the C**ountry/region properties** tab, select **New**, and specify the following information:
+    1. In the **Country/region** column, select **ESP**.
+    1. In the **Country/region type** column, select **Domestic**.
+1. List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU** to show trade with those countries on the **EU sales list** page.
 
 ### Create a contact for the person who is responsible for the report
 
-1. Go to **Sales and marketing** > **Relationships** > **Contacts** > **All contacts**.
-2. On the Action Pane, select **New**.
-3. In the **Create contact** dialog box, in the **Contact for** field, select your company. Then select **Select**.
-4. On the **Details** FastTab, set the **First name**, **Middle name**, **Last name prefix**, and **Last name** fields.
-5. On the **Contact information** FastTab, set the **Phone** field. The value of this field is set as **Primary**.
-6. Select **Save**.
+To create a contact for the person who is responsible for the report, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Sales and marketing** \> **Relationships** \> **Contacts** \> **All contacts**.
+1. On the Action Pane, select **New**.
+1. In the **Create contact** dialog, in the **Contact for** field, select your company. Then select **Select**.
+1. On the **Details** FastTab, set the **First name**, **Middle name**, **Last name prefix**, and **Last name** fields.
+1. On the **Contact information** FastTab, set the **Phone** field. The value of this field is set as **Primary**.
+1. Select **Save**.
 
 > [!NOTE]
-> Values from the **First name** and **Last name** fields and primary telephone number of the contact will be shown in the .txt file for the EU sales list report.
+> Values from the **First name** and **Last name** fields and primary telephone number of the contact are shown in the .txt file for the EU sales list report.
 
 ## Work with the EU sales list
+
 For general information about which types of transactions are included in the EU sales list, how to generate the EU sales list report, and how to close the EU sales list reporting period, see [EU sales list reporting](../europe/emea-eu-sales-list.md#working-with-the-esl).
 
 Before you generate the EU sales list report, you can add the **Delivery code** column and select the delivery code for the sale of items: **E - Normal delivery**, **H - Delivery of goods from a tax-exempt importation by an official tax representative**, or **M - Delivery of goods from a tax-exempt importation**.
@@ -120,10 +128,12 @@ Before you generate the EU sales list report, you can add the **Delivery code** 
 
 ### Generate the EU sales list report
 
-1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
-2. Transfer transactions.
-3. On the Action Pane, select **Reporting**.
-4. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields.
+To generate the EU sales list report, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
+1. Transfer transactions.
+1. On the Action Pane, select **Reporting**.
+1. In the **EU sales list reporting** dialog, on the **Parameters** FastTab, set values for the following fields.
 
     |  Field  |  Description  |
     |---------|---------------|
@@ -138,21 +148,23 @@ Before you generate the EU sales list report, you can add the **Delivery code** 
     | Contact ID   | Select a contact for the person who is responsible for the report.  |
     | Presentation type   |  Select **Telematic** or **DVD**. |  
    
-5. Select **OK**, and review the generated reports.
+1. Select **OK**, and review the generated reports.
 
 ### Create a corrective EU sales list report
 
-1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
-2. Transfer transactions.
-3. Select a corrective line, and then switch to the **Correction** view.
-4. On the Action Pane, select **Edit**.
-5. Set the **Services** or **Items** option to **Yes**, depending on the type of line you selected.
-6. In the **Fiscal year** field, enter the corrected year.
-7. In the **Correction period** field, select **Month**, **Quarter**, or **Year**.
-8. In the **Correction month or quarter** field, enter the number that corresponds to the corrected month or quarter.
-9. In the **Amount** field, enter the declared base amount that is being corrected by the selected line.
-10. Switch to the **Overview** view.
-11. In the **Items value** or **Services value** field, enter the corrected amount, which is calculated by using the following formula:
+To create a corrective EU sales list report, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
+1. Transfer transactions.
+1. Select a corrective line, and then switch to the **Correction** view.
+1. On the Action Pane, select **Edit**.
+1. Set the **Services** or **Items** option to **Yes**, depending on the type of line you selected.
+1. In the **Fiscal year** field, enter the corrected year.
+1. In the **Correction period** field, select **Month**, **Quarter**, or **Year**.
+1. In the **Correction month or quarter** field, enter the number that corresponds to the corrected month or quarter.
+1. In the **Amount** field, enter the declared base amount that is being corrected by the selected line.
+1. Switch to the **Overview** view.
+1. In the **Items value** or **Services value** field, enter the corrected amount, which is calculated by using the following formula:
 
     *n = d – (+) o*
 
@@ -162,8 +174,8 @@ Before you generate the EU sales list report, you can add the **Delivery code** 
      - d is the declared base amount from the **Amount** field in the **Correction** view.
      - o is the amount of the **Items value** or **Services value** field after transactions are transferred to the **EU sales list** page. (In other words, it's the amount of the corrective document.)
 
-12.	On the Action Pane, select **Reporting**.
-13.	In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields in addition to the general fields that are used to generate a report.
+1. On the Action Pane, select **Reporting**.
+1. In the **EU sales list reporting** dialog, on the **Parameters** FastTab, set the following fields in addition to the general fields that are used to generate a report.
 
     | Field | Description |
     |-------|-------------|
@@ -171,6 +183,7 @@ Before you generate the EU sales list report, you can add the **Delivery code** 
     | Corrected declaration | Enter the document number of the previous EU sales list declaration that is being corrected. |
 
 ## Example
+
 For general information about how to set up and transfer transactions, see [Example for generic EU Sales list](../europe/emea-eu-sales-list-example.md).
 Before you begin, create the company VAT ID **ESB12345678**, and set the company's tax registration number to **222444666**.
 
@@ -178,32 +191,34 @@ For information about how to set up purchases and create a vendor invoice, see [
 
 ### Create a contact for the person who is responsible for the report
 
-1. Go to **Sales and marketing** > **Relationships** > **Contacts** > **All contacts**.
-2. On the Action Pane, select **New**.
-3. In the **Create contact** dialog box, in the **Contact for** field, select **Contoso Entertainment System Spain**. Then select **Select**.
-4. In the **First name** field, select **Aaren Ekelund**. Then select **Select**.
-5. Select **Save**.
-6. In the grid, select **Aaren Ekelund**.
-7. On the **Contact information** FastTab, on the line where the **Type** field is set to **Phone**, enter **75 555-5153** in the **Contact number/address** field.
+To create a contact for the person who is responsible for the report, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Sales and marketing** \> **Relationships** \> **Contacts** \> **All contacts**.
+1. On the Action Pane, select **New**.
+1. In the **Create contact** dialog, in the **Contact for** field, select **Contoso Entertainment System Spain**. Then select **Select**.
+1. In the **First name** field, select **Aaren Ekelund**. Then select **Select**.
+1. Select **Save**.
+1. In the grid, select **Aaren Ekelund**.
+1. On the **Contact information** FastTab, on the line where the **Type** field is set to **Phone**, enter "75 555-5153" in the **Contact number/address** field.
 
 ### Create an EU sales list report
 
-1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
-2. Add the **Delivery code** column.
-3. On the Action Pane, select **Reporting**.
-4. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
+To create an EU sales list report, follow these steps.
 
-    - In the **Reporting period** field, select **Monthly**.
-    - In the **From date** field, select **8/1/2021** (August 1, 2021).
-    - Set the **Generate file** option to **Yes**.
-    - In the **File name** field, enter **ES-001F**.
-    - Set the **Generate report** option to **Yes**.
-    - In the **Report file name** field, enter **ES-001R**.
-    - In the **Document number of the declaration** field, enter **3490000000001**.
-    - In the **Contact ID** field, select **Aaren Ekelund**.
-    - In the **Presentation type** field, select **Telematic**.
-
-5. Select **OK**, and review the report in text format that is generated. The following tables show the values in the example report.
+1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
+1. Add the **Delivery code** column.
+1. On the Action Pane, select **Reporting**.
+1. In the **EU sales list reporting** dialog, on the **Parameters** FastTab, set the following fields:
+    1. In the **Reporting period** field, select **Monthly**.
+    1. In the **From date** field, select **8/1/2021** (August 1, 2021).
+    1. Set the **Generate file** option to **Yes**.
+    1. In the **File name** field, enter "ES-001F".
+    1. Set the **Generate report** option to **Yes**.
+    1. In the **Report file name** field, enter "ES-001R".
+    1. In the **Document number of the declaration** field, enter "3490000000001".
+    1. In the **Contact ID** field, select **Aaren Ekelund**.
+    1. In the **Presentation type** field, select **Telematic**.
+1. Select **OK**, and review the report in text format that is generated. The following tables show the values in the example report.
 
    **EU sales list header**
 
@@ -241,53 +256,49 @@ For information about how to set up purchases and create a vendor invoice, see [
    | Operation code      | A      |  S     |  For a triangular trade record, the value is **T**. <br> For a service record, the value is **S** for sales and **I** for purchases. <br> For an item record, the value is **A** for purchases. <br> For sales, the value depends on the delivery code: **E** for the **E - Normal delivery** delivery code, **H** for the **H - Delivery of goods from a tax-exempt importation by an official tax representative** delivery code, or **M** for the **M - Delivery of goods from a tax-exempt importation** delivery code.  |
    | Record amount  |  0000000000120  | 0000000000240  |  The sum of all invoices by customer or vendor.  |
 
-6. Review the report in Excel format that is generated. 
+1. Review the report in Excel format that is generated. 
 
    ![EU sales list for Spain.](../media/eusl-spain-example.png)
    
 ### Create a corrective EU sales list report
 
-1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
-2. Verify that there are one service line and one item line in the EU sales list page.
+To create a corrective EU sales list report, follow these steps.
 
-  ![EU sales list page.](../media/EUSL_esp_ex.png)
+1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
+1. Verify that there are one service line and one item line in the EU sales list page.
+
+    ![EU sales list page.](../media/EUSL_esp_ex.png)
   
-3. Select an item line, and then follow these steps:
-
+1. Select an item line, and then follow these steps:
     1. Switch to the **Correction** view.
-    2. On the Action Pane, select **Edit**.
-    3. In the **Fiscal year** field, enter **2021**.
-    4. In the **Correction period** field, select **Month**.
-    5. In the **Correction month or quarter** field, enter **7**.
-    6. In the **Amount** field, enter **333** as the declared base amount.
-    7. Switch to the **Overview** view.
-    8. In the **Items value** field, enter **213** (= 333 – 120).
-
-4. Select a service line, and then follow these steps:
-
+    1. On the Action Pane, select **Edit**.
+    1. In the **Fiscal year** field, enter "2021".
+    1. In the **Correction period** field, select **Month**.
+    1. In the **Correction month or quarter** field, enter "7".
+    1. In the **Amount** field, enter "333" as the declared base amount.
+    1. Switch to the **Overview** view.
+    1. In the **Items value** field, enter "213" (= 333 – 120).
+1. Select a service line, and then follow these steps:
     1. Switch to the **Correction** view.
-    2. In the **Fiscal year** field, enter **2021**.
-    3. In the **Correction period** field, select **Month**.
-    4. In the **Correction month or quarter** field, enter **7**.
-    5. In the **Amount** field, enter **411** as the declared base amount.
-    6. Switch to the **Overview** view.
-    7. In the **Services value** field, enter **171** (= 411 – 240).
-
-5.	On the Action Pane, select **Save**.
-6.	On the Action Pane, select **Reporting**.
-7.	In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
-
+    1. In the **Fiscal year** field, enter "2021".
+    1. In the **Correction period** field, select **Month**.
+    1. In the **Correction month or quarter** field, enter "7".
+    1. In the **Amount** field, enter "411" as the declared base amount.
+    1. Switch to the **Overview** view.
+    1. In the **Services value** field, enter "171" (= 411 – 240).
+1. On the Action Pane, select **Save**.
+1. On the Action Pane, select **Reporting**.
+1. In the **EU sales list reporting** dialog, on the **Parameters** FastTab, set the following fields:
     1. In the **Reporting period** field, select **Monthly**.
-    2. In the **From date** field, select **8/1/2021** (August 1, 2021).
-    3. Set the **Generate file** option to **Yes**.
-    4. In the **File name** field, enter **ES-002c**.
-    5. In the **Document number of the declaration** field, enter **3490000000002**.
-    6. In the **Contact ID** field, select the contact that you created earlier.
-    7. In the **Presentation type** field, select **Telematic**.
-
-8.	In the **Correction** field, select **Complementary**.
-9.	In the **Corrected declaration** field, enter **3490000000001**.
-10.	Select **OK**, and review the correction report in text format that is generated. The following tables show the values in the example report.
+    1. In the **From date** field, select **8/1/2021** (August 1, 2021).
+    1. Set the **Generate file** option to **Yes**.
+    1. In the **File name** field, enter "ES-002c".
+    1. In the **Document number of the declaration** field, enter "3490000000002".
+    1. In the **Contact ID** field, select the contact that you created earlier.
+    1. In the **Presentation type** field, select **Telematic**.
+1. In the **Correction** field, select **Complementary**.
+1. In the **Corrected declaration** field, enter "3490000000001".
+1. Select **OK**, and review the correction report in text format that is generated. The following tables show the values in the example report.
 
     **EU sales list header**
     
