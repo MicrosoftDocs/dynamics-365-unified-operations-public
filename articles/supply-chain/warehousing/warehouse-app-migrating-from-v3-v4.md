@@ -147,6 +147,6 @@ V4, like V3, doesn't support certificate authentication. Users must use the devi
 - **Feature development** – No new features will be developed for V3.
 - **Maintenance** – Critical bug fixes and security updates continue until the end of support.
 
-### Installation of certificate for WMA v4 (Windows)
+### Install Warehouse Management mobile app V4 on Windows
 
-- If you have any questions regarding certificate installation for Windows, please check  [How to Install the Certificate for Warehouse Management Mobile Application (Windows - Version 4)](warehouse-app-install-certificate.md).
+Before you can install the app on Windows, you must install the certificate that is used to sign the app. For instructions, go to [Install Warehouse Management mobile app V4 on Windows (preview)](warehouse-app-install-certificate.md).

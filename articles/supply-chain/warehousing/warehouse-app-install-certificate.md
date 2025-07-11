@@ -1,6 +1,6 @@
 ---
-title: How to Install the Certificate for Warehouse Management Mobile Application (Windows - Version 4)
-description: Learn how to install certificate for Warehouse Management mobile application Windows to install version 4 (V4). The article includes information about setup instructions.
+title: Install Warehouse Management mobile app V4 on Windows (preview)
+description: Learn how to install Warehouse Management mobile app V4 and its required certificate on Windows.
 author: nsayginer
 ms.author: nsayginer
 ms.topic: how-to
@@ -10,26 +10,44 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# How to Install the Certificate for Warehouse Management Mobile Application (Windows - Version 4) 
+# Install Warehouse Management mobile app V4 on Windows (preview)
 
-Version 4 (preview) of the Warehouse Mobile App is now available. This version introduces significant improvements and new features to enhance the user experience and the app's performance. If you'd like to try out the preview, you can install it directly from App Center. This document will guide you through the steps to install the required certificate on Windows.  
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
-### Step1: Download the App 
- 1. Go to [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release).
- 1. Download the **.msixbundle** file to your device.
+Warehouse Management mobile app V4 (now in preview) is available for Microsoft Windows, Apple iOS, and Google Android. This article explains how to install the app and its required certificate on Windows.  
 
-### Step 2: Install the certificate 
- 1. Right click the **.msixbundle** file that you just downloaded from AppCenter.
- 1. Select **Properties**.
- 1. Go to **Digital Signatures** tab. .
- 1. Select the signature in the list and click **Details**.
- 1. Click **View Certificate**.
- 1. Certificate page will open, click **Install Certificate**.
- 1. When you click on Install Certificate, Digital Certificate Wizard will open.
- 1. Select **Local Machine**, then click Next.
- 1. Choose **Place all certificates in the following store** \> **Browse** for **Trusted Root Certification Authorities**.
- 1. Click Next.
- 1. Click Finish.
-    
-### Step 3: Install the app
-Double click on the **.msixbundle** file that you installed from AppCenter and click **Install** when it prompted.
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+## Download the App
+
+To download the app to your Windows computer, follow these steps:
+
+ 1. Go to the [Warehouse Management (Windows) page on App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release).
+ 1. Download the `.msixbundle` file to your device.
+
+## Install the certificate
+
+Before you can install the app on Windows, you must install the certificate that is used to sign the app. Follow these steps to install the certificate:
+
+1. Open Windows File Explorer and navigate to the location where you downloaded the `.msixbundle` file.
+1. Right-click the `.msixbundle` file.
+1. Select **Properties**.
+1. Open the **Digital signatures** tab.
+1. Select the signature in the **Embedded signatures** list and then select **Details**.
+1. Select **View Certificate**.
+1. Select **Install Certificate**.
+1. The **Digital Certificate Wizard** opens. Select **Local machine**. Then select **Next**.
+1. Choose **Place all certificates in the following store**.
+1. Select **Browse**.
+1. Select **Trusted Root Certification Authorities** and then select **OK**.
+1. Select **Next**.
+1. Select **Finish**.
+
+## Install the app
+
+After you have downloaded the app and installed the certificate, you're ready to install the app. Follow these steps:
+
+ 1. Open Windows File Explorer and navigate to the location where you downloaded the `.msixbundle` file.
+ 1. Double-click on the `.msixbundle` file.
+ 1. The installer opens and shows information about the app. Select **Install** to install the app.
