@@ -180,25 +180,25 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
 ## Troubleshooting
 
 
-### If user recieves a POS notification that a custom request handler has not been implemented:
+### If user receives a POS notification that a custom request handler is not implemented:
 
 [<img src="media/request-handler-custom.png" alt="Custom request handler" title="Custom request handler" width="360" />](media/request-handler-custom.png#lightbox)
 
 
-1. Verify that a custom request handler has been implemented and included in the build.
+1. Verify that a custom request handler is implemented and included in the build.
 
-2. Ensure that the custom request handler has been correctly registered in the CommerceRuntime.Ext.config file. Keep in mind that this registration can be overwritten during the build process, so it is important for the customer to confirm the registration after build completion.
+2. Ensure that the custom request handler is correctly registered in the CommerceRuntime.Ext.config file. Keep in mind that this registration can be overwritten during the build process, so it is important for the customer to confirm the registration after build completion.
 
 
 
-### If user recieves a POS notification that custom pricing attributes are detected among OOB attributes:
+### If user receives a POS notification that custom pricing attributes are detected among OOB attributes:
 
 [<img src="media/custom-customer-attribute.png" alt="Custom customer attribute" title="Custom customer attribute" width="360" />](media/custom-customer-attribute.png#lightbox) [<img src="media/custom-product-attribute.png" alt="Custom product attribute" title="Custom product attribute" width="360" />](media/custom-product-attribute.png#lightbox)
 
 
-1. Verify that the CSU flight UPSupportCustomPricingAttributesFlight has been enabled.
+1. Verify that the CSU flight UPSupportCustomPricingAttributesFlight is enabled.
 
-2. Confirm that the new custom pricing attributes have been identified as custom. The GUPPRICINGATTRIBUTELINK.TypeName column should be set to 'Customization' for all custom pricing attributes.
+2. Confirm that the new custom pricing attributes is identified as custom. The GUPPRICINGATTRIBUTELINK.TypeName column should be set to 'Customization' for all custom pricing attributes.
 
 
 
@@ -211,9 +211,9 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
         - POS logs: https://dataexplorer.azure.com/dashboards/8ad7df1a-a343-459b-beeb-5f4cafabe91c
         - Drill MPOS - CPOS - CSU - RSSU sessions logs: https://dataexplorer.azure.com/dashboards/32491967-1eff-4b22-b161-f4bb8db6e550
 
-2. Given the app session id, user session id or activity id, it is possible to trace AppInsights. (AppInsights PROD stores all Commerce customer logs.)
+2. Given the app session id, user session id, or activity id, it is possible to trace AppInsights. (AppInsights PROD stores all Commerce customer logs.)
 
-    Troublshooting through telemetry wiki: https://msazure.visualstudio.com/D365/_wiki/wikis/D365.wiki/9342/Troubleshooting-Through-Telemetry
+    Troubleshooting through telemetry wiki: https://msazure.visualstudio.com/D365/_wiki/wikis/D365.wiki/9342/Troubleshooting-Through-Telemetry
 
 
    [<img src="media/telemetry-troubleshooting.png" alt="Telemetry troubleshooting" title="Telemetry troubleshooting" width="720" />](media/telemetry-troubleshooting.png#lightbox)
