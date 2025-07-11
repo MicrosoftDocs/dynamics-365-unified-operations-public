@@ -146,3 +146,7 @@ V4, like V3, doesn't support certificate authentication. Users must use the devi
 - **End of support** – May 2026 (estimated).
 - **Feature development** – No new features will be developed for V3.
 - **Maintenance** – Critical bug fixes and security updates continue until the end of support.
+
+### Installation of certificate for WMA v4 (Windows)
+
+- If you have any questions regarding certificate installation for Windows, please check  [How to Install the Certificate for Warehouse Management Mobile Application (Windows - Version 4)](warehouse-app-install-certificate.md).
