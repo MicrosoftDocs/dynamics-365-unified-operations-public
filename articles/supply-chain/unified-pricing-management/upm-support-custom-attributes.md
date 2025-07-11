@@ -18,7 +18,7 @@ From version 10.0.45, customers are empowered to configure pricing rules based o
 We introduced GetCustomizedPricingPropertiesRequest and GetCustomizedPricingPropertiesResponse, and allow the customer to implement their own custom request handler to develop their logic.
 
 Custom attributes are marked in GUPPRICINGATTRIBUTELINK using a specific identifier, indicating that they require special logic in Commerce Scale Unit (CSU) to be supported in POS.
-To mark a pricing attribute as custom, its GUPPRICINGATTRIBUTELINK.TypeName column must be set to 'Customization'.
+To mark a pricing attribute as custom, its GUPPRICINGATTRIBUTELINK.TypeName column must be set to 'Customization' always.
 
 In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTELINK.TypeName = 'Customization', then the custom request handler is called.
 
@@ -145,7 +145,7 @@ In CSU logic, if a custom pricing attribute is validated as GUPPRICINGATTRIBUTEL
     }
     ```
 
-3. Build the relevant models (GUP or extension), restart IIS and clear the cache. 
+3. Build the relevant models (GUP or extension), restart Internet Information Services (IIS) and clear the cache. 
 
     - Example link to clear cache: 
         - https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=usrt&mi=SysClassRunner&cls=SysFlushAOD 
