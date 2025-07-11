@@ -5,6 +5,7 @@ title: What's new or changed in Dynamics 365 for Retail (April 2019)
 description: This article describes features that are in preview in Dynamics 365 Retail (April 2019). 
 author: josaw1
 ms.date: 04/12/2024
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 audience: Developer, IT Pro
 ms.reviewer: josaw

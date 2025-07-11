@@ -5,6 +5,7 @@ author: t-benebo
 ms.author: benebotg
 ms.topic: article
 ms.date: 04/25/2025
+ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac

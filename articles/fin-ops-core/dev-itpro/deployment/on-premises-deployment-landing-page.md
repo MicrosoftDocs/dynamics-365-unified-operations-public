@@ -8,6 +8,7 @@ ms.custom:
   - bap-template
   - evergreen
 ms.date: 06/07/2024
+ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global

@@ -3,6 +3,7 @@ title: Preview of Dynamics 365 Commerce 10.0.30 (November 2022)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.30. 
 author: josaw1
 ms.date: 04/12/2024
+ms.update-cycle: 1095-days
 ms.topic: article
 audience: Application User
 ms.custom: 

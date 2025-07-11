@@ -5,6 +5,7 @@ author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: faq
 ms.date: 07/02/2025
+ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac
