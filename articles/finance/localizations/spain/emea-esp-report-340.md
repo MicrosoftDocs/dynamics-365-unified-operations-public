@@ -57,7 +57,7 @@ To generate a Spanish VAT book and export the Report 340 ASCII file, follow thes
 1. In the **Number sequence code** field, select a number sequence code.
 1. On the **Setup** FastTab, select **Add**, and then set the following fields to set up the sales tax codes that should be included in the VAT book.
 
-    | **Field**               | **Description**              |
+    | Field               | Description              |
     |-------------------------|---------------------------------------------------------------------------------------------------------------|
     | Sales tax code          | Select a sales tax code.                |
     | Equivalence charge code | Select a sales tax code for equivalence charge, if equivalence charge is applicable.                       |
@@ -67,6 +67,7 @@ To generate a Spanish VAT book and export the Report 340 ASCII file, follow thes
 1. Select **Spanish VAT reports** to open the **Spanish VAT reports** page.
 1. Select **Create new** to create a report.
 1. In the **Spanish VAT list** dialog, set values for the following fields.
+
 
     | Field                                                   | Description            |
     |---------------------------------------------------------|------------------------------------|
@@ -79,7 +80,9 @@ To generate a Spanish VAT book and export the Report 340 ASCII file, follow thes
     | Template (in the **Manual numbering** section)        | Enter the template for the line number. For example, enter #####.   |
     | Replacement   declaration                               | Set this option to **Yes** to replace the previous declaration.   |
     | Previous   declaration number                          | Enter the 13-digit number of the   previous declaration. This field can be edited only if the **Replacement declaration** option is set to **Yes**. |
-    | Minimum   payment account in cash     | Enter the minimum cash payment   amount that should be reported in the declaration. If you don't need to include cash payments in the report, enter 9999999999 in this field.   |                                                                                                                                                                                                                                                                                                                                                                                |
+    | Minimum   payment account in cash     | Enter the minimum cash payment   amount that should be reported in the declaration. If you don't need to include cash payments in the report, enter 9999999999 in this field.   |
+
+                                                                                                                                                                           |
 1. Select **OK** to create a line on the **Spanish VAT reports** page, based on the criteria that you defined in the previous step.
 1. Review the new line you created.
 
@@ -119,7 +122,7 @@ To run through an example, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**, and create the following codes.
 
-    | **Sales tax code** | **Percentage** | **Description**                                                                                                                |
+    | Sales tax code | Percentage | Description                                                          |
     |--------------------|----------------|--------------------------------------------------------------------------------------------------------------------------------|
     | VAT21              | 21             | Domestic sales at a rate of 21 percent.                                                                                        |
     | VAT10              | 10             | Domestic sales at a rate of 10 percent.                                                                                        |
@@ -139,7 +142,7 @@ To run through an example, follow these steps.
 1. Set up intra-community VAT for EU purchases. Learn more in [Intra-community VAT for Spain](emea-esp-intra-community-vat.md).
 1. Post the following transactions. For example, for customer invoices, go to **Accounts receivable \> Invoices \> All free text invoices**. For vendor invoices, go to **Accounts payable \> Invoices \> Invoice journal**.
 
-    | **Date**        | **Invoice** | **Tax exempt number** | **Transaction type** | **Amount net** | **VAT amount** | **Sales tax code** |
+    | Date        | Invoice | Tax exempt number | Transaction type | Amount net | VAT amount | Sales tax code |
     |-----------------|-------------|-----------------------|----------------------|----------------|----------------|--------------------|
     | January 1, 2020 | FTI-000007  | 01396364B             | Customer invoice     | 500            | 0              | EUS                |
     | January 1, 2020 | FTI-000008  | 01396365B             | Customer invoice     | 300            | 30             | VAT10              |
