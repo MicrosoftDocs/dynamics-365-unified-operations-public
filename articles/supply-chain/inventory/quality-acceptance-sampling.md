@@ -165,9 +165,7 @@ To set up defect types, follow these steps:
 
 ## Set up a test for acceptance sampling
 
-You must define each of the tests that you want to use on quality orders, and each test must be associated a defect type. Learn more about tests for quality orders in [Quality management tests](quality-tests.md).
-
-<!-- KFM: TO-DO: Describe defect types in existing topic for tests ([Quality management tests](quality-tests.md)  -->
+You must define each of the tests that you want to use on quality orders, and each test must be associated with one of the defect types that  you set up in the previous section. Learn more about tests for quality orders in [Quality management tests](quality-tests.md).
 
 ## Set up a test group for acceptance sampling
 
