@@ -1629,6 +1629,8 @@
           href: inventory/quality-instrument-calibration.md
         - name: Flexible sampling plans (preview)
           href: inventory/quality-flexible-sampling-plans.md
+        - name: Acceptance sampling (preview)
+          href: inventory/quality-acceptance-sampling.md
         - name: Work with quality orders
           href: inventory/quality-orders.md
         - name: Customer specific certificate of analysis (COA) (preview)
