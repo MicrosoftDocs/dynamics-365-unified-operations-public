@@ -801,10 +801,11 @@ Electronic message items of the **Collections in cash** (**CobrosEnMetálico**) 
 To maintain data integrity between these electronic message items and report lines, the system monitors changes on the **Collections in cash** report and automatically reflects the changes in the following way.
 
 | **Action in the Collections in cash report** | **Reflection in the SII register**            |
-|----------------------------------------------|----------------------------------------------------------------------|
+|----------------------------------------------|-------------------------------------------------|
 | A cash amount is updated during **Generation** function | If a related electronic message item was already registered, its status is changed back to **Corregido** (**Item corrected**). Therefore, this register must be resubmitted to SII system.                                                                               |
 | A report line is deleted  during **Generation** function.                    | If a related SII line was already registered, its status is changed back to **Pending cancel**. Therefore, you should delete the related record in the SII system's database and then update the status of the line to **Canceled** by selecting **Status \> Canceled**. |
-| A report line is added during **Generation** function.                      | This will be a new electronic message item. Use the standard process to register it in the SII system.    |                                                                                                                                                               |
+| A report line is added during **Generation** function.                      | This will be a new electronic message item. Use the standard process to register it in the SII system.    |                         
+
 To maintain data integrity, lines on the **Collections in cash** report can't be manually deleted.
 
 
