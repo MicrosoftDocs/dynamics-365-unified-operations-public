@@ -8,6 +8,7 @@ ms.custom:
   - bap-template
   - evergreen
 ms.date: 07/15/2024
+ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.search.region: India
 ms.dyn365.ops.version: 10.0.15, 10.0.16, 10.0.17, 10.0.18, 10.0.19

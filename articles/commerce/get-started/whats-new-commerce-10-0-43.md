@@ -3,6 +3,7 @@ title: Preview features in Dynamics 365 Commerce 10.0.43 (January 2025)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.43. 
 author: johnmichalak
 ms.date: 06/16/2025
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
   - bap-template

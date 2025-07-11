@@ -5,6 +5,7 @@ title: What's new or changed in Dynamics 365 Human Resources April 19, 2021
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for April 19, 2021.
 author: marcelbf
 ms.date: 04/19/2021
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 # optional metadata
 

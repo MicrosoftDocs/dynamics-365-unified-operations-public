@@ -5,6 +5,7 @@ author: twheeloc
 ms.author: twheeloc
 ms.topic: whats-new
 ms.date: 04/25/2025
+ms.update-cycle: 1095-days
 ms.custom:   
   - bap-template
   - evergreen

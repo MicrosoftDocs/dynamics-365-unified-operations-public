@@ -5,6 +5,7 @@ title: What's new or changed in Dynamics 365 Human Resources
 description: This article points to articles that describe the new and changed features in each release of Dynamics 365 Human Resources
 author: twheeloc
 ms.date: 01/25/2025
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 
 # optional metadata
