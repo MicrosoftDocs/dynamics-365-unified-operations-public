@@ -31,13 +31,12 @@ To download the app to your Windows computer, follow these steps:
 Before you can install the app on Windows, you must install the certificate that is used to sign the app. Follow these steps to install the certificate:
 
 1. Open Windows File Explorer and navigate to the location where you downloaded the `.msixbundle` file.
-1. Right-click the `.msixbundle` file.
-1. Select **Properties**.
+1. Right-click the `.msixbundle` file and select **Properties**.
 1. Open the **Digital signatures** tab.
 1. Select the signature in the **Embedded signatures** list and then select **Details**.
-1. Select **View Certificate**.
-1. Select **Install Certificate**.
-1. The **Digital Certificate Wizard** opens. Select **Local machine**. Then select **Next**.
+1. Select **View certificate**.
+1. Select **Install certificate**.
+1. The **Certificate Import Wizard** opens. Select **Local machine**. Then select **Next**.
 1. Choose **Place all certificates in the following store**.
 1. Select **Browse**.
 1. Select **Trusted Root Certification Authorities** and then select **OK**.
@@ -50,4 +49,4 @@ After you have downloaded the app and installed the certificate, you're ready to
 
  1. Open Windows File Explorer and navigate to the location where you downloaded the `.msixbundle` file.
  1. Double-click on the `.msixbundle` file.
- 1. The installer opens and shows information about the app. Select **Install** to install the app.
+ 1. The installer opens and shows information about the app. Select **Install** to install it.
