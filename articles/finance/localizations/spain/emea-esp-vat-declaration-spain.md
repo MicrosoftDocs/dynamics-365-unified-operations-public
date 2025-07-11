@@ -31,7 +31,7 @@ The advance VAT declaration in Spain contains the following information.
 
 **VAT accrued**
 
-| Box – tax base     | Box – rate %       | Box – tax amount | Description                                                                           | Lookup result / Total                                                                                                 |
+| Box – tax base     | Box – rate %       | Box – tax amount | Description      | Lookup result / Total      |
 |--------------------|--------------------|------------------|---------------------------------------------------------------------------------------|----------------------|
 | 150                 | 151                 | 152            | VAT accrued - General regime - zero rate.                                  | VATAccruedGeneralRegimeZero</br>UseTaxGeneralRegimeZero (also reported in boxes 28/29)                                     |
 | 165                 | 166                 | 167            | VAT accrued - General regime - Extra reduced rate.                                  | VATAccruedGeneralRegimeExtra</br>UseTaxGeneralRegimeExtra (also reported in boxes 28/29)                                     |
@@ -166,6 +166,7 @@ To define which sales tax codes generate which boxes on the VAT declaration, fol
     | Lookup result          | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this article.    |                                                                                           |
     | Tax code               | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
     | Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available: </br>-   **Purchase**</br>-   **PurchaseExempt** (tax-exempt purchase)</br>-   **PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</br>-   **Sales**</br>-   **SalesExempt** (tax-exempt sale)</br>-   **SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</br>-   **Use tax**. </br>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</br>Be sure to create two lines for each sales tax code: one that has the transaction classifier value and one that has the transaction classifier for credit note value. |
+
 
     > [!NOTE]
     > Associate all sales tax codes with lookup results. If any sales tax codes should not generate values on the VAT declaration, associate them with the **Other** lookup result.
@@ -331,6 +332,7 @@ To set up electronic messages to collect tax data from several legal entities, f
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**.
 1. On the **Populate records action** page, select the line for **ES Populate VAT return records**. In the **Datasources setup** grid, a new **Company** field is available. For existing records, this field shows the identifier of the current legal entity.
 1. In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting. For each new line, set values for the following fields.
+
     | Field                  | Description                                                                                                                   |
     |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
     | Name                   | Enter a value that will help you understand where this record comes from. For example, enter **VAT payment of Subsidiary 1**. |
@@ -342,6 +344,7 @@ To set up electronic messages to collect tax data from several legal entities, f
     | Document account field | Specify **TaxPeriod** for all the records.                                                                                    |
     | Company                | Select the ID of the legal entity.                                                                                            |
     | User query             | This checkbox is automatically selected when you define criteria by selecting **Edit query**.                                 |
+
 1. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that is specified in the **Company** field on the line.
 
    When the setup is completed, the **Collect data** function on the **Electronic messages** page collects sales tax payments from all legal entities that you defined.
