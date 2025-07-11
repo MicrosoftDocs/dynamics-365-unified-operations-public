@@ -4,7 +4,7 @@ description: Learn about how to configure the Invoice capture solution, includin
 author: leizi2015
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 08/05/2024
+ms.date: 07/11/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -87,12 +87,12 @@ Configure the following settings in the file filter:
 
     - PDF
     - PNG
-    - JPG
     - JPEG
-    - TIF
-    - TIFF
 
 3. **Supported file names** – Use file name rules to filter out files that aren't relevant to invoices. Different rules can be applied to accept files only when the name contains predefined strings, or to exclude files that contain the defined strings.
+4. **Image dimensions** – The image dimensions must be between 50 x 50 pixels and 10,000 x 10,000 pixels.
+5.	**PDF dimensions** – The PDF dimensions must be at most 17 x 17 inches, which is the equivalent of the legal or A3 paper sizes or smaller.
+
 
 ## Definition of master data
 
