@@ -3,6 +3,7 @@ title: Electronic invoicing for Poland
 description: Learn how to get started with electronic invoicing for Poland in Microsoft Dynamics 365 Finance.
 author: ikondratenko
 ms.date: 06/19/2025
+ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection:
   - bap-ai-copilot

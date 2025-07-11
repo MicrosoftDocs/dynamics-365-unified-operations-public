@@ -7,6 +7,7 @@ ms.reviewer: johnmichalak
 ms.search.form:
 ms.topic: how-to
 ms.date: 10/29/2024
+ms.update-cycle: 180-days
 audience: Application User
 ms.custom: 
   - bap-template
