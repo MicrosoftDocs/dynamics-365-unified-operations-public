@@ -1,8 +1,8 @@
 ---
-title: GetCustomizedPricingPropertiesRequestHandler sample code
-description: Learn how to implement GetCustomizedPricingPropertiesRequestHandler for custom pricing attributes
-author: cbarrientos
-ms.author: cbarrientos
+title: Example custom request handler code
+description: Learn how to implement a custom request handler for custom pricing attributes
+author: sherry-zheng
+ms.author: chuzheng
 ms.topic: article
 ms.date: 07/10/2025
 ms.custom: bap-template
@@ -10,9 +10,13 @@ ms.reviewer:
 ms.search.form:
 ---
 
-# GetCustomizedPricingPropertiesRequestHandler sample code
+# Example custom request handler code
 
-``` txt
+This article provides sample code for `GetCustomizedPricingPropertiesRequestHandler`. <!-- KFM: We need a bit more detail for this introduction. Describe the context and purpose of this code and tell how to use it. --> Learn more in [Add custom pricing attributes for POS](upm-support-custom-attributes.md).
+
+<!-- KFM: what code language do we see here? X++? -->
+
+```txt
 /**
  * SAMPLE CODE NOTICE
  * 
