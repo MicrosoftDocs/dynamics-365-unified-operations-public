@@ -211,7 +211,7 @@ To set up a quality association for acceptance sampling, follow the instructions
 
 ## Using acceptance sampling on quality orders
 
-When a quality order is created for acceptance sampling, the **Acceptance sampling** tab is available on the header of the quality order. This tab includes a grid that contains line items for each test that needs to be conducted. The grid provides the following information:
+Quality orders created for acceptance sampling includes an **Acceptance sampling** tab when selected on the **Quality orders** page. This tab includes a grid that contains line items for each test that needs to be conducted. The grid provides the following information:
 
 - **Defect category** – Indicates one of the three fixed categories of the test *Critical*, *Major*, or *Minor*.
 - **Defect type** – Indicates the type of the test defined in the configuration. Learn more about defect types here: [Set up defect types](#set-up-defect-types).
@@ -221,4 +221,4 @@ When a quality order is created for acceptance sampling, the **Acceptance sampli
 - **Target Re** – Minimum number of defects for the test to fail.
 - **Test result** – Graphical indication if the test has passed or failed.
 
-To enter test results, go to the **Quality orders** page and select the quality order you want to work with. Then either enter the results directly into the test lines in the bottom grid or select **Quick result entry** from the Action Pane to use the quick-entry form.
+To record test results for a selected quality order, either enter them directly into the test lines or select **Quick result entry** from the Action Pane to use the quick-entry form.
