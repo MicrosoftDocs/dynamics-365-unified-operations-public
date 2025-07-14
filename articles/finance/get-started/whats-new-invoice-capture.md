@@ -5,6 +5,7 @@ author: shielas
 ms.author: shielas
 ms.topic: whats-new
 ms.date: 06/18/2025
+ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.custom: 
   - bap-template

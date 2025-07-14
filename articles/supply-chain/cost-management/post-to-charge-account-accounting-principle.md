@@ -1,12 +1,13 @@
 ---
 title: Post to charge account accounting principle
 description: Learn about the post to charge account accounting principle, including overviews on European special accounting rules and prerequisites.
-author: rachel-profitt
-ms.author: raprofit
+author: prasungoel
+ms.author: prasungoel
 ms.reviewer: kamaybac
 ms.search.form: InventPosting, InventItemGroup
 ms.topic: how-to
-ms.date: 06/07/2024
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
   - evergreen

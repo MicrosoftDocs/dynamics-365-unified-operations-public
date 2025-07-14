@@ -5,6 +5,7 @@ author: josaw1
 ms.author: josaw
 ms.topic: language-reference
 ms.date: 05/02/2025
+ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: johnmichalak
 audience: Developer
