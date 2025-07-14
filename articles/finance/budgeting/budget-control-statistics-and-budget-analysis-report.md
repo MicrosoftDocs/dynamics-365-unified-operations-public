@@ -41,6 +41,9 @@ The following table describes differences between the two reports.
 > [!NOTE]
 > The **Budget analysis** report doesn't distinguish between operating periods and closing periods.
 
+> [!NOTE]
+> The parameter **Display legacy budget analysis inquiry** in the **Budgeting parameters** controls the version of **Budget analysis** form that is displayed. Enabling this parameter will display the *BudgetAnalysisInquiry* form, which does not include P&L accounts. If parameter is disabled, the *BudgetAnalysisDimensionFocusSummary* form is displayed which includes P&L accounts.
+
 Budget reports and inquiry pages can display different default exchange rates.
 The following pages use either the default exchange rate in Ledger setup or the manually updated exchange rate in the **Total actuals amounts** field:
  - **Budget analysis** inquiry
