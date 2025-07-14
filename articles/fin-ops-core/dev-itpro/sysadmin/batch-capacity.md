@@ -41,7 +41,6 @@ Conversely, the upper load threshold indicates when the service scales out. If t
 > - After batch auto scaling is activated for the environment, the platform periodically adjusts the thread count for each server as per batch capacity. Any manual alterations to the thread count are disregarded and overridden by the platform's automated processes.
 
 In PBS-enabled environments, autoscaling now ensures a constant total thread count across all batch servers, whatever of scale-up or scale-down events.
-
 Here’s how it works:
 For example, your environment starts with six batch servers, each configured with eight threads, totaling 48 threads. As the environment scales:
 
