@@ -211,7 +211,7 @@ To set up a quality association for acceptance sampling, follow the instructions
 
 ## Using acceptance sampling on quality orders
 
-Quality orders created for acceptance sampling includes an **Acceptance sampling** tab when selected on the **Quality orders** page. This tab includes a grid that contains line items for each test that needs to be conducted. The grid provides the following information:
+Quality orders created for acceptance sampling include an **Acceptance sampling** tab when selected on the **Quality orders** page. This tab includes a grid that contains line items for each test that needs to be conducted. The grid provides the following information:
 
 - **Defect category** – Indicates one of the three fixed categories of the test *Critical*, *Major*, or *Minor*.
 - **Defect type** – Indicates the type of the test defined in the configuration. Learn more about defect types here: [Set up defect types](#set-up-defect-types).
