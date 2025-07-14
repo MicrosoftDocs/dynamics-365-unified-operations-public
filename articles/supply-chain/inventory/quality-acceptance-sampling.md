@@ -107,7 +107,7 @@ To set up your acceptance sampling charts, follow these steps:
 
 If you don't use the option to load your charts from a template, you must create the inspection levels and sampling indexes manually.
 
-### Setup inspection levels
+### Set up inspection levels
 
 An inspection level is a code or category set by the business user that indicates the extent of inspection based on the importance of the product, the production history, and customer requirements. It's used as input to the code letter chart, and guides how many samples you take from a lot. Follow these steps to create them manually:
 
