@@ -92,6 +92,7 @@ When you migrate from V3 to V4, the following compatibility features are availab
 
 - **Customization preservation** – All customizations and configurations from V3 are fully compatible with V4 and remain functional.
 - **Connection migration** – In most cases, existing connections are automatically migrated. If manual reconfiguration is required, QR code generation and scanning capabilities (camera or beam scanner) are available for easy setup. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
+- **Connection Settings migration** – To preserve your connection settings, make sure to **upgrade** the WMA directly. If you uninstall version 3 and then install version 4, your connection settings will be lost. We only support preserving connection settings during an upgrade, not during a fresh installation.
 
 ### Authentication
 
