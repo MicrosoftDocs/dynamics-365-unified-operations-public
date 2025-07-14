@@ -204,7 +204,10 @@ Supply Chain Management uses quality associations to establish an apply rules th
 
 When a quality order is triggered based on an event defined in a quality association, the system automatically creates a quality order that can be used for acceptance sampling. The quality association links the triggering event (such as a product receipt or production output) to a specific test process. If the associated item sampling is configured for acceptance sampling, the generated quality order uses the defined sampling criteria to determine how much of the lot should be inspected.
 
-To set up a quality association for acceptance sampling, follow the instructions provided in [Quality associations](quality-associations.md). Pay special attention to following settings, which are specific to acceptance sampling: <!-- KFM: add a list of relevant settings with comments here. Maybe also link back to here from  [Quality associations](quality-associations.md) -->
+To set up a quality association for acceptance sampling, follow the instructions provided in [Quality associations](quality-associations.md). When you're setting up your quality associations on the **Quality associations** page, pay special attention to following settings , which are specific to acceptance sampling:
+
+- Use the **Item sampling** field on the **Specifications** FastTab to select an item sampling record. This setting enables acceptance sampling for the quality association.
+- Use the **Test group** field on the **Specifications** FastTab to select a test group that contains the tests you want to use for acceptance sampling. The test group must contain tests that are associated with defect types that you set up in [Set up defect types](#set-up-defect-types).
 
 ## Using acceptance sampling on quality orders
 

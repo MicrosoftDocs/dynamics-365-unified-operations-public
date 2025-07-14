@@ -87,7 +87,7 @@ Follow these steps to create a quality association:
 
 1. On the **Conditions** FastTab, make the following settings:
     - **Site** – Select the site where the rule applies.
-    - **Applicable warehouse type** – Select the type of warehouse that the quality association is used for. Choose one of the following values: <!-- KFM: NOTE: I added this based on the tooltip. Good enough? -->
+    - **Applicable warehouse type** – Select the type of warehouse that the quality association is used for. Choose one of the following values:
         - *All* – Include all warehouses. Quality order functionality for warehouse processes isn't available for the quality association when **Applicable warehouse type** is set to *All*.
         - *Quality order for warehouse processes only* – Only include warehouses that have **Enable quality order for warehouse processes** set to *Yes*.
     - **Account code** – Select the vendor or customer account to whom this rule applies. The options available here depend on which **Reference type** is selected.
@@ -112,13 +112,13 @@ Follow these steps to create a quality association:
     - **Use for certificate of analysis** – Choose one of the following values:
         - *No* – Don't make it possible to generate a certificate of analysis for this quality association.
         - *Yes* – Make it possible to generate a certificate of analysis for this quality association.
-    - **Quality processing policy** – Choose one of the following values: <!-- KFM: NOTE: I added this based on the tooltip. Good enough? -->
+    - **Quality processing policy** – Choose one of the following values:
         - *Create quality order* – Use the full quality process and create quality orders.
         - *Create item sampling work only* – Use a minimal quality process that creates quality item sampling work but doesn't create quality orders or inventory blocking. This option only applies when the **Applicable warehouse type** is set to *Quality order for warehouse processes only*.
 
 1. On the **Specifications** FastTab, make the following settings:
-    - **Test group** – Select a test group with tests defined for acceptance sampling.
-    - **Item sampling** – Select an item sampling defined for acceptance sampling.
+    - **Test group** – Select a test group with tests defined for acceptance sampling. Learn more in [Acceptance sampling (preview)](quality-acceptance-sampling.md)
+    - **Item sampling** – Select an item sampling defined for acceptance sampling. Learn more in [Acceptance sampling (preview)](quality-acceptance-sampling.md)
     - **Acceptable quality level** – <!-- KFM: description needed. No tooltip. -->
     - **Flexible sampling** – Choose whether to use the flexible sampling plans as part of this quality association.
     - **Flexible sampling plan code** – If **Flexible sampling** is set to *Yes*, then select a flexible sampling plan code.

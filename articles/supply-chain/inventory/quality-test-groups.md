@@ -24,8 +24,6 @@ The test group that is assigned to a quality order defines the default set of te
 
 When you define a test group, you can optionally specify an item sampling. Item samplings are used to define the amount of the product that must be tested. Learn more in [Quality management item sampling](quality-item-sampling.md). You can also indicate whether the tests in a test group are destructive. In a destructive test, the item sampling is destroyed, and the quantity is removed from the on-hand inventory.
 
-<!-- KFM: maybe also mention acceptance sampling and link to [Acceptance sampling (preview)](quality-acceptance-sampling.md). Maybe add mentions of acceptance sampling and any new fields related to it in the other sections of this topic? -->
-
 ## Example of a test group
 
 A manufacturing company defines a test group for each variation of its quality guidelines. The various test groups reflect differences in the sampling plans, the sets of tests that must be performed together, the AQL, and other factors. For quantitative tests, there are also differences in the acceptable measurement values. To enforce its quality guidelines, the company assigns a test group to each rule that is used to automatically generate quality orders on the **Quality associations** page. It also assigns a test group to quality orders that are manually created.
