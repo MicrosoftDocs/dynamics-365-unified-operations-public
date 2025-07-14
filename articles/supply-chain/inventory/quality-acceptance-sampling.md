@@ -221,4 +221,4 @@ When a quality order is created for acceptance sampling, the **Acceptance sampli
 - **Target Re** – Minimum number of defects for the test to fail.
 - **Test result** – Graphical indication if the test has passed or failed.
 
-Business users can enter the test results for the individual test in the lines section of the quality order or by using the *Quick result entry* page opened from the Action Pane.
+To enter test results, go to the **Quality orders** page and select the quality order you want to work with. Then either enter the results directly into the test lines in the bottom grid or select **Quick result entry** from the Action Pane to use the quick-entry form.
