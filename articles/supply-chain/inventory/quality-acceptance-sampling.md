@@ -159,9 +159,9 @@ To set up defect types, follow these steps:
     - **Defect type** – Identification of the type of defect to be tested for.
     - **Description** – Elaborated description of the defect type.
     - **Defect category** –  Categorize the defect type with one of the three following fixed categories:
-        - *Critical** – Could cause harm or render a product unsafe or unusable. Even a single critical defect might lead to rejection of the entire lot.
-        - *Major** – Significantly reduces the usability or performance of a product but don't pose safety risks. A limited number of major defects might be acceptable depending on the sampling plan.
-        - *Minor** – Doesn't affect function or safety but might impact appearance or user satisfaction. A higher tolerance is usually allowed for minor defects
+        - *Critical* – Could cause harm or render a product unsafe or unusable. Even a single critical defect might lead to rejection of the entire lot.
+        - *Major* – Significantly reduces the usability or performance of a product but don't pose safety risks. A limited number of major defects might be acceptable depending on the sampling plan.
+        - *Minor* – Doesn't affect function or safety but might impact appearance or user satisfaction. A higher tolerance is usually allowed for minor defects
 
 ## Set up a test for acceptance sampling
 
@@ -212,12 +212,13 @@ To set up a quality association for acceptance sampling, follow the instructions
 ## Using acceptance sampling on quality orders
 
 When a quality order is created for acceptance sampling, the **Acceptance sampling** tab is available on the header of the quality order. This tab includes a grid that contains line items for each test that needs to be conducted. The grid provides the following information:
-    - **Defect category** – Indicates one of the three fixed categories of the test *Critical*, *Major*, or *Minor*.
-    - **Defect type** – Indicates the type of the test defined in the configuration. Learn more about defect types here: [Set up defect types](#set-up-defect-types).
-    - **Acceptable quality level index** – Indicates the AQL index for the specific test as specified on the configuration of the item sampling for the quality order.
-    - **Sample size** – The sample size of the test.
-    - **Target Ac** – Maximum number of defects accepted for the test to fail.
-    - **Target Re** – Minimum number of defects for the test to fail.
-    - **Test result** – Graphical indication if the test has passed or failed.
+
+- **Defect category** – Indicates one of the three fixed categories of the test *Critical*, *Major*, or *Minor*.
+- **Defect type** – Indicates the type of the test defined in the configuration. Learn more about defect types here: [Set up defect types](#set-up-defect-types).
+- **Acceptable quality level index** – Indicates the AQL index for the specific test as specified on the configuration of the item sampling for the quality order.
+- **Sample size** – The sample size of the test.
+- **Target Ac** – Maximum number of defects accepted for the test to fail.
+- **Target Re** – Minimum number of defects for the test to fail.
+- **Test result** – Graphical indication if the test has passed or failed.
 
 Business users can enter the test results for the individual test in the lines section of the quality order or by using the *Quick result entry* page opened from the Action Pane.
