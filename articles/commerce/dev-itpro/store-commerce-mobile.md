@@ -48,7 +48,7 @@ The following table compares the capabilities of the Store Commerce app across W
 | Shared hardware station                                      | Yes     | Yes     | Yes  |
 | Communication with networked peripherals (payment terminal, printer, and cash drawer) | Yes     | Yes     | Yes  |
 | OLE for Point of Sale (OPOS) peripherals through a local hardware station | Yes     | No      | No   |
-| Offline mode                                                 | Yes     | No      | No   |
+| Offline mode                                                 | Yes     | Yes      | Yes   |
 | [Adyen cloud architecture](https://docs.adyen.com/point-of-sale/design-your-integration/choose-your-architecture/) | Yes     | Yes     | Yes  |
 | [Adyen local architecture](https://docs.adyen.com/point-of-sale/design-your-integration/choose-your-architecture/) | Yes     | Yes     | No   |
 
@@ -146,6 +146,23 @@ If the scan icon appears but the camera is blocked, confirm that you have camera
 ### Payment terminal
 
 See the [Payment terminals and PIN pads](../retail-peripherals-overview.md#payment-terminals-and-pin-pads) section of the [Retail Peripherals](../retail-peripherals-overview.md) help topic for information about how to connect Store Commerce mobile app to a payment terminal. 
+
+### Offline Capability in iOS and Android 
+
+The offline capability for iOS and Android is in Public Preview starting 10.0.45
+Following features are now available:
+1. **Data Sync Scenarios in SQLite**: Enables efficient data synchronization using SQLite. 
+1. **Store Commerce SDK**: Provides a comprehensive SDK for developing offline capabilities on iOS.
+1. **Offline Support**: Offline mode is now available on both iOS and Android, enabling uninterrupted
+   operations during connectivity disruptions
+1. **Offline Extensions**: Allows for the extension of offline functionalities both in app and database.
+1. Support for Offline 100+ Retail Operations in SQLite.   
+1. **Database Upgrade Support**: Offline now supports database upgrades on both iOS and Android, ensuring
+   smoother transitions and improved data integrity. 
+1. **Enhanced Offline Register Form**: Improved logging for offline switching events to help diagnose and
+   support offline mode transitions effectively. 
+1. **Consistent Activation Experience**: A unified setup flow across platforms, with an in-app option to
+    enable support offline mode transitions effectively.
 
 ## Additional resources
 
