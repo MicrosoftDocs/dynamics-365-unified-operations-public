@@ -47,13 +47,13 @@ The *sampling code letter chart* defines code letters for each combination of lo
 
 The following image shows an example of a code letter chart. In this example, if you have a lot size between 151 and 280 and use a general inspection level II, then code letter G should be used as input in the acceptable quality limit chart.
 
-:::image type="content" source="media/Code letter chart.jpg" alt-text="Code letter chart":::
+:::image type="content" source="media/code-letter-chart.jpg" alt-text="Example of a code letter chart" lightbox="media/code-letter-chart.jpg":::
 
 The *acceptable quality limit chart* defines the acceptable quality level for each combination of sampling code letter and acceptable quality level (AQL) index. The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. Lower indexes are used for high-risk or critical items, while higher AQLs are acceptable for less critical products where some defects are tolerable. Businesses can, for example, use index 0.1% for testing for critical defects, 0.65% for major defects, and 2.5% for minor defects. The selected code letter and AQL index resolve to find the sample size and acceptable quality level for the test.
 
 The following image shows an example of an acceptable quality limit chart. In this example, if you use code letter G with an AQL index of 2.5%, then up to two defects will be accepted for the lot to pass, but three or more defects will cause the lot to fail inspection. If the code letter G is used for AQL index 0.65%, then the arrow in the chart indicates that an AQL level for a different code letter should be used. In this case, the code letter with the nearest AQL values is F, which has a different sample size than code letter G, and zero defects will be accepted for the lot to pass.
 
-:::image type="content" source="media/Sampling plan chart.jpg" alt-text="Acceptable quality limit chart":::
+:::image type="content" source="media/sampling-plan-chart.jpg" alt-text="Example of an acceptable quality limit chart" lightbox="media/sampling-plan-chart.jpg":::
 
 In Supply Chain Management, you can load all the data for generating the sampling code letter chart and the acceptable quality limit chart from a template. The template generates inspection levels, AQL indexes, and lot size ranges. Once these values are loaded from the template, you can customize the charts as needed.
 
@@ -204,9 +204,9 @@ Supply Chain Management uses quality associations to establish an apply rules th
 
 When a quality order is triggered based on an event defined in a quality association, the system automatically creates a quality order that can be used for acceptance sampling. The quality association links the triggering event (such as a product receipt or production output) to a specific test process. If the associated item sampling is configured for acceptance sampling, the generated quality order uses the defined sampling criteria to determine how much of the lot should be inspected.
 
-To set up a quality association for acceptance sampling, follow the instructions provided in [Quality associations](quality-associations.md). When you're setting up your quality associations on the **Quality associations** page, pay special attention to following settings , which are specific to acceptance sampling:
+To set up a quality association for acceptance sampling, follow the instructions provided in [Quality associations](quality-associations.md). When you're setting up your quality associations on the **Quality associations** page, pay special attention to following settings, which are specific to acceptance sampling:
 
-- Use the **Item sampling** field on the **Specifications** FastTab to select an item sampling record. This setting enables acceptance sampling for the quality association.
+- Use the **Item sampling** field on the **Specifications** FastTab to select an item sampling record. This setting is required to enable acceptance sampling for the quality association.
 - Use the **Test group** field on the **Specifications** FastTab to select a test group that contains the tests you want to use for acceptance sampling. The test group must contain tests that are associated with defect types that you set up in [Set up defect types](#set-up-defect-types).
 
 ## Using acceptance sampling on quality orders
