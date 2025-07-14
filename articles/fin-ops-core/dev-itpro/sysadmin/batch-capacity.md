@@ -4,9 +4,8 @@ description: Learn about the batch capacity, including overviews on batch auto s
 author: cwithfourplus
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 03/07/2024
+ms.date: 07/14/2025
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2024-03-07
 ms.dyn365.ops.version: Platform Update50
@@ -40,19 +39,16 @@ Conversely, the upper load threshold indicates when the service scales out. If t
 > - For batch auto scaling to work, your environment should have [batch priority-based scheduling](priority-based-batch-scheduling.md) enabled, and your PU should be 10.0.26 (PU 50) or higher.
 > - After batch auto scaling is activated for the environment, the platform periodically adjusts the thread count for each server as per batch capacity. Any manual alterations to the thread count are disregarded and overridden by the platform's automated processes.
 
-In PBS-enabled environments, autoscaling now ensures a constant total thread count across all batch servers, whatever of scale-up or scale-down events.
-Here’s how it works:
-For example, your environment starts with six batch servers, each configured with eight threads, totaling 48 threads. As the environment scales:
+In PBS-enabled environments, autoscaling now ensures a constant total thread count across all batch servers, regardless of scale-up or scale-down events.
 
-Let's say if autoscaling increases the number of servers to 8, the system will automatically adjust each server to use six threads, keeping the total at 48 (8 × 6 = 48).
-Similarly, if the environment scales down to four servers, each one will be assigned 12 threads to maintain the same total (4 × 12 = 48).
+For example, your environment starts with six batch servers, each configured with eight threads, totaling 48 threads. As the environment scales, let's say if autoscaling increases the number of servers to 8, the system automatically adjusts each server to use six threads, keeping the total at 48 (8 × 6 = 48). Similarly, if the environment scales down to four servers, each one is assigned 12 threads to maintain the same total (4 × 12 = 48).
 
 In both cases, the overall thread capacity stays consistent—only the distribution changes.
 
 This approach ensures that batch processing capacity remains consistent, even when CPU or memory usage alone wouldn't trigger autoscale.
 
 > [!NOTE]
-> - The thread count per server won't exceed 16, in line with platform safeguards to prevent resource saturation. By default, the thread count is set to 8. When autoscaling is enabled, users can no longer manually configure the thread count, as it's automatically managed by the platform. 
+> - The thread count per server doesn't exceed 16, in line with platform safeguards to prevent resource saturation. By default, the thread count is set to 8. When autoscaling is enabled, users can no longer manually configure the thread count, as it's automatically managed by the platform. 
 
 ## How to increase batch capacity
 
