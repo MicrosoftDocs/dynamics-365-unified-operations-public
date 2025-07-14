@@ -40,54 +40,22 @@ Conversely, the upper load threshold indicates when the service scales out. If t
 > - For batch auto scaling to work, your environment should have [batch priority-based scheduling](priority-based-batch-scheduling.md) enabled, and your PU should be 10.0.26 (PU 50) or higher.
 > - After batch auto scaling is activated for the environment, the platform periodically adjusts the thread count for each server as per batch capacity. Any manual alterations to the thread count are disregarded and overridden by the platform's automated processes.
 
-For example, where your environment comprises six batch servers, each with eight threads, totaling 48 batch threads. 
+In PBS-enabled environments, autoscaling now ensures a constant total thread count across all batch servers, whatever of scale-up or scale-down events. This change addresses scenarios where customers run large batch workloads that are thread-heavy but low in CPU and memory usage.
 
-If your environment encounters elevated CPU and memory usage on batch servers, the platform might introduce another batch server while decreasing the thread count per server to seven. This action ensures that even with seven batch servers, the total thread count remains consistent at 49, closely aligning with the initial count of 48.
+Here’s how it works:
+For Example, your environment starts with six batch servers, each configured with eight threads, totaling 48 threads. As the environment scales:
 
-Conversely, when batch server CPU and memory utilization are low, platform might opt to remove two servers while increasing the thread count per server to 12, maintaining a total of 48 threads.
+For example, if autoscaling increases the number of servers to 8, the system will automatically adjust each server to use six threads, keeping the total at 48 (8 × 6 = 48).
+Similarly, if the environment scales down to four servers, each one will be assigned 12 threads to maintain the same total (4 × 12 = 48).
 
-This approach ensures that the total active threads for your environment remain constant while optimizing the number of batch servers, thus ensuring appropriate allocation of infrastructure resources. 
+In both cases, the overall thread capacity stays consistent—only the distribution changes.
 
-## Batch Thread Update
-The goal of autoscale is to scale up or down the number of servers the environment has based on defined metrics. Currently we have two metrics, namely CPU and Memory usage, which decide the Autoscale criteria. However, it was recently pointed out that Autoscale doesn't consider batch thread saturation.
+This approach ensures that batch processing capacity remains consistent, even when CPU or memory usage alone wouldn't trigger autoscale.
 
-For example, The customer wants to run 500-K tasks in 5 hrs. Looking at the following table, the customer won't be able to complete the tasks in the target time of 5 hrs for which they had configured the thread count post autoscale. Autoscale wouldn't trigger since there's no memory/CPU spike.
-
-| Scenario | Server Count | Threads/Server | Total Tasks | Time/Task | Total Time
-|----------|--------|--------- |-----------|------------|------------|-----------|
-| Before Autoscale | 10 | 14 | 500k | 5 s  | 4.96 Hrs |
-| After Autoscale | 8 | 14 | 500k | 5 s    | 6.2 Hrs  |
-
-As per Proposed solution, When we increase or decrease the number of servers for the given environment that should have constant number of threads distributed equally across the server.
-We should calculate the total number of threads an environment can have as following:
-
-*Total number of threads* = *Number of batch servers* &times; *Number of batch threads per server*
-
-This total number of threads should remain the same whenever we do scale up or scale down.
-During initialization, we would keep the default number of threads each server can have. 
-
-Let’s take this default value as 8, for example,  following
-
-1. If an environment has four batch servers with eight threads each
-
-Total number of threads = 8 x 4 = 32
-
-If we scale down the environment from 4 to 2 servers, then each server will get 32/2 = 16 threads.
-Lets say if we scale up the environment again from 2 to 3, each server should get 32/3 = 11 threads.
-
-2. If a customer has max server defined as 4 but they have more threads count currently let's say 16. Then according to above logic
-
-Total number of threads the customer has = 4 x 16 = 64
-
-Expected number of servers based on new logic = 64/ Default thread count (8) = 8
-
-So, we'll give them four extra servers initially and we expect Autoscale to scale it down appropriately to reduce this number later.
-
-> [!NOTE] 
-> - We'll limit the number of batch threads per server to a maximum of 16 to prevent overloading the server cores.
-> - We need to take away the capability to adjust the thread count from customers. It doesn't make sense anyways to keep this capability considering in PBS, it's going to be universal for all batch servers.
-
-Using above approach, we can ensure that our system is optimized for performance and scalability. This approach simplifies our system and reduces costs by removing another metrics and scaling rules.
+> [!NOTE]
+> - The thread count per server won't exceed 16, in line with platform safeguards to prevent the server crash.
+> - Default Thread Count of 8. It can be revisited it later as per the feedback.
+> - When autoscaling is enabled, users will no longer can manually update the thread count, as it's now managed automatically by the platform.
 
 ## How to increase batch capacity
 
