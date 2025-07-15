@@ -34,7 +34,7 @@ In the illustration, the **Contact** section shows the person who submitted the 
 
 Per the standard lead qualification process in Sales, when a user "qualifies" the lead, an *opportunity* record, a *contact* record, and an *account* record are created. The dual-write infrastructure is used to write the contact and the account records to Commerce. The contact is created as a customer of the *person* type, and the company is created as a customer of the *organization* type. If a user selects **Close as Won** for the opportunity, the prospect is approved in Commerce. Approval of a prospect causes a customer hierarchy to be created.
 
-All remaining business processes occur in Commerce. These processes include sending email to the business partner, defining credit limit management for the users, and adding more users to the B2B site. However, if a user disqualifies the lead or marks the opportunity as lost instead of qualifying the lead, the prospect in Commerce is marked as rejected, and a decline onboarding email is sent to the requestor.
+All remaining business processes occur in Commerce. These processes include sending email to the business partner, defining credit limit management for the users, and adding more users to the B2B site. However, if a user disqualifies the lead or marks the opportunity as lost instead of qualifying the lead, the prospect in Commerce is marked as rejected, and a decline onboarding email is sent to the requester.
 
 ## Enable integration between Sales and Commerce
 

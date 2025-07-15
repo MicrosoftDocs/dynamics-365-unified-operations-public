@@ -234,7 +234,7 @@ Controllers can use the following information to complete DSR requests.
 
 + **Data inventory and tagging** – Microsoft has enabled a tagging infrastructure that developers and customers can use. Each data field that is defined in metadata contains a classification property that has a suggested value that the controller can confirm or change to any value or term they choose in order to identify data that they deem fits within the definition of personal data.
 + **Data flow diagram** – Microsoft will publish a data flow diagram that identifies flows of data between systems in the customers production environments.
-+ **Person search report** – Finance and operations includes the Person search report, which can be used to gather information in support of a request for a copy of the requestor's personal information. 
++ **Person search report** – Finance and operations includes the Person search report, which can be used to gather information in support of a request for a copy of the requester's personal information. 
 
 ## Activity and diagnostic information
 
