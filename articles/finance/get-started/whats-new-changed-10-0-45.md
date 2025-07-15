@@ -48,8 +48,7 @@ The following table lists the features that were removed from Feature management
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance version 10.0.45 includes platform updates. To learn more, see [Platform updates for version 10.0.45 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update
-s-10-0-45.md).
+Dynamics 365 Finance version 10.0.45 includes platform updates. To learn more, see [Platform updates for version 10.0.45 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-45.md).
 
 ### Bug fixes
 
@@ -64,8 +63,7 @@ Services and view the planned regulatory updates using the issue search tool. Is
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out [Dynamics 365 and industry clouds: 2025 release wave 1 plan](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, that 
-you can use for planning.
+Check out [Dynamics 365 and industry clouds: 2025 release wave 1 plan](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
 
 
 
