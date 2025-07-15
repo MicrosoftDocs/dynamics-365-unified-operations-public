@@ -347,7 +347,7 @@ This section describes the setup that is required before you run the Party posta
 
             + Microsoft.Dynamics.GABExtended.Plugins.DeletePartyElectronicAddressSync: Delete of msdyn_partyelectronicaddress
 
-12. In the customer engagement app, activate the following workflows if you previously inactivated them:
+12. In the customer engagement app, activate the following workflows if you previously deactivated them:
 
     + Create Vendors in Accounts Table
     + Create Vendors in Vendors Table

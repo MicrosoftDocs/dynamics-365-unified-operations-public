@@ -93,7 +93,7 @@ To use the role-based access feature (on the **Security roles** FastTab), as des
 > [!NOTE]
 > If the lifecycle state that you update a work order to is inactive, journals that are related to the work order but that haven't yet been posted are automatically deleted. This behavior helps guarantee automatic cleanup of unused data. (A lifecycle state is inactive if the **Active** option for it is set to *No* on the **General** FastTab of the **Work order lifecycle state** page.)
 >
-> However, if you manually set a work order so that it's inactive, journals that are related to the work order but that haven't yet been posted are *not* automatically deleted. (To manually inactivate a work order, select **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**. Open the work order, and switch to the **Header** view. On the **General** FastTab, select **Edit**, and then set the **Active** option to *No*.)
+> However, if you manually set a work order so that it's inactive, journals that are related to the work order but that haven't yet been posted are *not* automatically deleted. (To manually deactivate a work order, select **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**. Open the work order, and switch to the **Header** view. On the **General** FastTab, select **Edit**, and then set the **Active** option to *No*.)
 
 ## Relations among work order lifecycle models, work order types, and work order lifecycle states
 
