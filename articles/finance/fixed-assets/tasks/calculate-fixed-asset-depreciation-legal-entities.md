@@ -4,7 +4,7 @@ description: Learn about how to calculate fixed asset depreciation, which can be
 author: moaamer
 ms.author: moaamer
 ms.topic: how-to
-ms.date: 03/28/2023
+ms.date: 07/02/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 
@@ -20,6 +20,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 Fixed asset depreciation can be run across legal entities in a single step. This procedure shows you to how set up and run the process for multiple legal entities. It uses the accountant role and demo data for the USMF legal entity.
 
+In Dynamics 365 Finance version 10.0.44, after the **Multi-company purpose** feature is enabled under **Feature Management**, any organization hierarchy with that purpose assigned appears in the new multi-company control—replacing the flat multi-selection list in Fixed asset depreciation proposals. This control displays your legal entities in a hierarchical parent-child view with search and sort capabilities while still offering a redesigned flat list option. To ensure each company appears in the hierarchy control, go to **Fixed assets parameters** and define a depreciation journal name for every company. Any company missing a journal definition won’t be populated.
 
 ## Set up cross company depreciation run journals
 1. Go to **Fixed assets > Setup > Fixed assets parameters**.
