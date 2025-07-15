@@ -157,7 +157,7 @@ while select count(CreditMax) from custTable
     order by custGroup.Name
     group by custGroup.CustGroup
     where custTable.CustGroup == custGroup.CustGroup
-        && custGroup.Name like "%Days%"
+        && custGroup.Name like "*Days*"
 {
 
     groupSummary.value("CustomerCount", custTable.CreditMax);
@@ -225,7 +225,7 @@ The **asc** keyword is an option on the **order by** or **group by** clause. It 
 ```xpp
 CustTable custTable;
 select * from custTable
-    order by Value asc;
+    order by CredMax asc;
 ```
 
 ## avg keyword
@@ -234,8 +234,8 @@ The **avg** keyword returns the average of the fields.
 
 ```xpp
 CustTable custTable;
-select avg(Value) from custTable;
-info(int642Str(custTable.Value));
+select avg(CreditMax) from custTable;
+info(strFmt('%1', custTable.CreditMax));
 ```
 
 ## count keyword
@@ -294,7 +294,7 @@ The **desc** keyword is an option on the **order by** or **group by** clause. It
 ```xpp
 CustTable custTable;
 select * from custTable
-    order by Value desc;
+    order by AccountNum desc;
 ```
 
 ## exists keyword
@@ -492,7 +492,7 @@ CustTable custTable;
 while select AccountNum, Value from custTable
     index AccountIdx
 {
-    Info(custTable.AccountNum +  ": " + int642Str(custTable.Value));
+    Info(custTable.AccountNum +  ": " + int642Str(custTable.RecID));
 }
 ```
 
@@ -543,7 +543,7 @@ The **maxof** keyword returns the maximum of the fields.
 ```xpp
 CustTable custTable;
 select maxof(CreditMax) from custTable;
-info(int642Str(custTable.Value));
+info(strFmt('%1', custTable.CreditMax));
 ```
 
 ## minof keyword
@@ -553,7 +553,7 @@ The **minof** keyword returns the minimum of the fields.
 ```xpp
 CustTable custTable;
 select minof(CreditMax) from custTable;
-info(int642Str(custTable.Value));
+info(strFmt('%1', custTable.CreditMax));
 ```
 
 ## noFetch keyword
@@ -715,7 +715,7 @@ The **sum** keyword returns the sum of the fields. It can be used to sum all acc
 ```xpp
 CustTable custTable;
 select sum(CreditMax) from custTable;
-info(int642Str(custTable.Value));
+info(strFmt('%1', custTable.CreditMax));
 ```
 
 ## validTimeState keyword

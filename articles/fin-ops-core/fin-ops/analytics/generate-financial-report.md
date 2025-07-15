@@ -88,14 +88,14 @@ As report schedules are created and saved, they're displayed in the navigation p
 
 1. In **Report designer**, on the **File** menu, select **New**, and then select **Report schedule**. The **New report schedule** dialog box opens.
 2. Under **Settings**, select an individual report or a report group to schedule. Only reports or report groups for the company or building block selection that you are currently logged on to are available.
-3. Select the **Active** checkbox to turn on the report schedule. Only the creator of the report or an administrator can activate or inactivate a report schedule.
+3. Select the **Active** checkbox to turn on the report schedule. Only the creator of the report or an administrator can activate or deactivate a report schedule.
 4. Under **Frequency**, in the **Start recurrence** field, select the date when the schedule is to start. By default, the current system date of the client computer is selected.
 5. In the **Run report at** field, select the time when the report should run. If you enter a time that is before the current system time, the report runs on the next scheduled date.
 6. In **Recurrence pattern**, specify how often the report is run. By default, **Daily** is selected with an **Interval (days)** value of **1**. Other options include **Weekly**, **Monthly**, and **Yearly**.
 7. In **Range of recurrence**, select when the report should stop being generated.
 
     - **No end date** – The report schedule runs indefinitely.
-    - **Set number of occurrences** – The report schedule runs for the specified number of times, and then is inactivated.
+    - **Set number of occurrences** – The report schedule runs for the specified number of times, and then is deactivated.
     - **End by** – The report schedule ends on the specified date.
 
 8. Select **Save**. In the **Save as** dialog box, enter a unique name and description for the report schedule.
