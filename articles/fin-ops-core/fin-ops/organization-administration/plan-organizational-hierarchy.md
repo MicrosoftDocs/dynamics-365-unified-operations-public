@@ -1,11 +1,11 @@
 ---
 title: Plan your organizational hierarchy
 description: Before you set up organizations and organization hierarchies, make sure that you understand how to best model your business.
-author: sericks007
-ms.author: sericks
+author: moaamer
+ms.author: moaamer
 ms.topic: article
-ms.date: 02/19/2021
-ms.reviewer: johnmichalak
+ms.date: 07/02/2025
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -22,21 +22,21 @@ Before you set up organizations and organization hierarchies, make sure that you
 
 Organizational hierarchies represent the relationships between the organizations that make up a business. Therefore, the most important consideration when you model organizations is the structure of your business. We recommend that you define organization structures based on feedback from executives and senior managers from functional areas, such as finance and accounting, human resources, operations, purchasing, and sales and marketing.
 
-When you are planning hierarchies, it is also important to consider the relationship between the organizational hierarchy and financial dimensions. You can set up multiple organizational hierarchies to represent different views of your business. By using financial dimensions, you can create reports based on these views. Work with your partner to create hierarchies that address both organizational and statutory reporting needs.
+When you're planning hierarchies, it's also important to consider the relationship between the organizational hierarchy and financial dimensions. You can set up multiple organizational hierarchies to represent different views of your business. By using financial dimensions, you can create reports based on these views. Work with your partner to create hierarchies that address both organizational and statutory reporting needs.
 
 > [!NOTE]
 > Although you can use financial dimensions to represent legal entities without creating the legal entities, financial dimensions aren't designed to address the operational or business needs of legal entities. The interunit accounting functionality is designed to address only the accounting entries that are created by each transaction.
 
 > [!IMPORTANT]
-> You shouldn't decide how to model organizations based only on the information in this article. This documentation is a guide. You can work with your Partner for additional guidance. Your Partner has gained experience in various industries and across the customer base.
+> You shouldn't decide how to model organizations based only on the information in this article. This documentation is a guide. You can work with your partner for additional guidance. Your partner has gained experience in various industries and across the customer base.
 
 ## Decide whether to model internal organizations as legal entities or operating units
 
 You must have at least one legal entity to represent your business. A legal entity can enter legal contracts and is required to prepare financial statements that report on its performance.
 
-Legal entities can be used for transactional business or for consolidation. This means that a legal entity in finance and operations does not necessarily represent a real entity in your business. For example, a company that participates in transactions can own subsidiary legal entities. In this scenario, a legal entity is required for transactions, and a virtual legal entity is required to consolidate the results and balances of the subsidiary legal entities.
+Legal entities can be used for transactional business or for consolidation. This means that a legal entity in finance and operations doesn't necessarily represent a real entity in your business. For example, a company that participates in transactions can own subsidiary legal entities. In this scenario, a legal entity is required for transactions, and a virtual legal entity is required to consolidate the results and balances of the subsidiary legal entities.
 
-Internal organizations in your business, such as regional offices, can be represented as additional legal entities, or as operating units of the main legal entity. An operating unit is not required to be a legally defined organization. Operating units are used to control economic resources and operational processes in the business. For example, departments and cost centers are operating units.
+Internal organizations in your business, such as regional offices, can be represented as additional legal entities, or as operating units of the main legal entity. An operating unit isn't required to be a legally defined organization. Operating units are used to control economic resources and operational processes in the business. For example, departments and cost centers are operating units.
 
 Some functionality works differently depending on whether the organization is a legal entity or an operating unit. Carefully consider the functionality described below as you make your decision.
 
@@ -54,7 +54,7 @@ Master data is shared among operating units.
 
 #### If the organization is modeled as a legal entity
 
-Parameters for modules, such as Accounts receivable parameters, Accounts payable parameters, and Cash and bank management parameters, must be set per legal entity. Because the module setup for legal entities is separate, each subsidiary can comply with local statutory requirements and business practices. For example, a professional services legal entity and a manufacturing legal entity can have different module parameters even though they report to the same parent company.
+Parameters for modules, such as Accounts receivable, Accounts payable, and Cash and bank management, must be set per legal entity. Because the module setup for legal entities is separate, each subsidiary can comply with local statutory requirements and business practices. For example, a professional services legal entity and a manufacturing legal entity can have different module parameters even though they report to the same parent company.
 
 #### If the organization is modeled as an operating unit
 
@@ -64,7 +64,7 @@ Module parameters are shared among operating units.
 
 #### If the organization is modeled as a legal entity
 
-Most data is automatically secured by company ID. A company ID is a unique identifier for the data that is associated with a legal entity. A company can be associated with only one legal entity, and a legal entity can be associated with only one company. Users can access data only for the companies that they have access to. You do not need to customize to secure data by company ID.
+Most data is automatically secured by company ID. A company ID is a unique identifier for the data that is associated with a legal entity. A company can be associated with only one legal entity, and a legal entity can be associated with only one company. Users can access data only for the companies that they have access to. You don't need to customize to secure data by company ID.
 
 #### If the organization is modeled as an operating unit
 
@@ -78,7 +78,7 @@ Each legal entity requires a ledger that provides a chart of accounts, accountin
 
 #### If the organization is modeled as an operating unit
 
-An operating unit can't have its own ledger information. If your internal organizations do not require unique ledgers, you can model them as operating units. Ledger information will be set up for the parent legal entity in the hierarchy. Income statements can be created for operating units within a legal entity or for the parent legal entity.
+An operating unit can't have its own ledger information. If your internal organizations don't require unique ledgers, you can model them as operating units. Ledger information is set up for the parent legal entity in the hierarchy. Income statements can be created for operating units within a legal entity or for the parent legal entity.
 
 ### Fiscal calendars
 
@@ -98,7 +98,7 @@ You must consolidate the financial results for regional offices into a single, c
 
 #### If the organization is modeled as an operating unit
 
-Consolidation is not required, because data is already shared among operating units.
+Consolidation isn't required, because data is already shared among operating units.
 
 ### Centralized payments
 
@@ -108,31 +108,31 @@ Centralized payments must be set up so that invoices for all child legal entitie
 
 #### If the organization is modeled as an operating unit
 
-Centralized payments are not required because all invoices are recorded in a single legal entity.
+Centralized payments aren't required because all invoices are recorded in a single legal entity.
 
 ### Intercompany transactions
 
 #### If the organization is modeled as a legal entity
 
-Intercompany sales orders, purchase orders, payments, or receipts can be applied to one another. You are not required to use journal vouchers. You can view intercompany transactions at the sub-ledger level (Accounts receivable, Accounts payable). The following examples illustrate how intercompany transactions are handled.
+Intercompany sales orders, purchase orders, payments, or receipts can be applied to one another. You aren't required to use journal vouchers. You can view intercompany transactions at the subledger level (Accounts receivable, Accounts payable). The following examples illustrate how intercompany transactions are handled.
 
 ##### Example 1: Headquarters provides services to regional offices and must charge the costs of those services to the regional offices
 
 If you model the regional office as a legal entity, you have the following options:
 
-- Headquarters creates a journal entry to cross-charge the regional office for the expense. The transactions cannot be aged.
-- Headquarters sends a purchase order for the services to the regional office. A sales order is automatically created in the legal entity for the regional office, with intercompany sub-ledger transactions.
+- Headquarters creates a journal entry to cross-charge the regional office for the expense. The transactions can't be aged.
+- Headquarters sends a purchase order for the services to the regional office. A sales order is automatically created in the legal entity for the regional office, with intercompany subledger transactions.
 
 ##### Example 2: Headquarters procures and pays for service that is delivered to a regional office
 
 If you model the regional office as a legal entity, you have the following options:
 
-- The invoice and payment follow the regulatory requirements of headquarters. Headquarters can create a journal entry to cross-charge the regional office for the expense. The transactions cannot be aged.
-- The invoice and payment follow the regulatory requirements of headquarters. Headquarters can create an intercompany sub-ledger transaction.
+- The invoice and payment follow the regulatory requirements of headquarters. Headquarters can create a journal entry to cross-charge the regional office for the expense. The transactions can't be aged.
+- The invoice and payment follow the regulatory requirements of headquarters. Headquarters can create an intercompany subledger transaction.
 
 #### If the organization is modeled as an operating unit
 
-Intercompany transactions among operating units are supported only through journal vouchers. An operating unit cannot issue or receive a purchase order, sales order, or invoice from another operating unit in the same legal entity. You cannot view intercompany transactions at the sub-ledger level (Accounts receivable, Accounts payable). The following examples illustrate how intercompany transactions are handled.
+Intercompany transactions among operating units are supported only through journal vouchers. An operating unit can't issue or receive a purchase order, sales order, or invoice from another operating unit in the same legal entity. You can't view intercompany transactions at the subledger level (Accounts receivable, Accounts payable). The following examples illustrate how intercompany transactions are handled.
 
 ##### Example 1: Headquarters provides services to regional offices and must charge the costs of those services to the regional offices
 
@@ -150,7 +150,7 @@ A legal entity is subject to the tax laws of the tax authority in the country/re
 
 #### If the organization is modeled as an operating unit
 
-Operating units use the country context of the parent legal entity. Operating units in the same legal entity cannot have different country/region-specific requirements. If your organizations are in the same country/region and use the same tax options, you can set them up as operating units.
+Operating units use the country context of the parent legal entity. Operating units in the same legal entity can't have different country/region-specific requirements. If your organizations are in the same country/region and use the same tax options, you can set them up as operating units.
 
 ### Statutory reporting for a country/region
 
@@ -159,7 +159,7 @@ Operating units use the country context of the parent legal entity. Operating un
 For countries/regions that are supported, most statutory reports can be created. 
 
 > [!NOTE]
-> A posting layer in the general ledger allows you to make adjusting entries to a parent company that uses a different accounting standard than the child company. For example, for a company that uses generally accepted accounting practices in the United Kingdom (UK GAAP), you can make adjusting entries in the posting layer. These entries can be consolidated into a parent company that uses generally accepted accounting principles (GAAP) in the United States. The adjusting entries do not affect UK GAAP reporting.
+> A posting layer in the general ledger allows you to make adjusting entries to a parent company that uses a different accounting standard than the child company. For example, for a company that uses generally accepted accounting practices in the United Kingdom (UK GAAP), you can make adjusting entries in the posting layer. These entries can be consolidated into a parent company that uses generally accepted accounting principles (GAAP) in the United States. The adjusting entries don't affect UK GAAP reporting.
 
 #### If the organization is modeled as an operating unit
 
@@ -216,18 +216,22 @@ You must manually change companies to enter transactions and perform inquiries i
 
 #### If the organization is modeled as an operating unit
 
-You do not need to change companies to access data from multiple operating units. Consolidated inquiry and reporting and individual regional inquiry is easier and faster.
+You don't need to change companies to access data from multiple operating units. Consolidated inquiry and reporting and individual regional inquiry is easier and faster.
+
+## Multi company processing for hierarchical legal entity selection
+
+To enable users with access to multiple companies to execute transactions, generate reports, or inquire transactions, assign the “Multi-company processing” purpose to one or more Organization hierarchies. In Dynamics 365 Finance version 10.0.44, go to **Feature Management** and activate **Multi-Company purpose**. This feature activates a hierarchical parent-child control for legal entity selection. The new multi-company control replaces the existing flat multi-selection list in **Fixed asset depreciation proposals**, **Asset leasing batch journal** creation, and Asset leasing reports.
 
 ## Best practices for modeling organizations and hierarchies
 
 Consider the following best practices when you implement an organization hierarchy:
 
-- Create a department to model the intersection between a legal entity and a business unit. You can then roll up data from a department to a legal entity for statutory reporting, and from a department to a business unit for internal reporting. Departments can serve as profit centers. If you use departments, you do not have to use legal entities and business units as dimensions in the account structure. You can use just departments as a dimension. However, you must use both cost centers and departments as dimensions in the account structure if cost centers are used only as cost accumulators, and departments are used for revenue recognition.
+- Create a department to model the intersection between a legal entity and a business unit. You can then roll up data from a department to a legal entity for statutory reporting, and from a department to a business unit for internal reporting. Departments can serve as profit centers. If you use departments, you don't have to use legal entities and business units as dimensions in the account structure. You can use just departments as a dimension. However, you must use both cost centers and departments as dimensions in the account structure if cost centers are used only as cost accumulators, and departments are used for revenue recognition.
 - Model multiple hierarchies for operating units if you have complex requirements for reporting profit and loss.
-- In a single legal entity, do not model multiple hierarchies for the same hierarchy purpose.
-- Do not create a hierarchy for every purpose. Usually, you can use one hierarchy for multiple purposes. For example, one hierarchy of operating units can be assigned to all policy-related purposes.
+- In a single legal entity, don't model multiple hierarchies for the same hierarchy purpose.
+- Don't create a hierarchy for every purpose. Usually, you can use one hierarchy for multiple purposes. For example, one hierarchy of operating units can be assigned to all policy-related purposes.
 - Create balanced hierarchies. In a hierarchy, all nodes that are the same distance from the root node are defined as a level. In a balanced hierarchy, only one type of operating unit can occur at each level, and the distance from the root node to each level is consistent. If there are intermediate levels between a department and a legal entity or a business unit, placeholder organizations may be required to create a balanced hierarchy.
-- Do not model a separate hierarchy of operating units if the structure for legal entities is also your operating structure. A mixed hierarchy of legal entities and operating units may serve both purposes.
+- Don't model a separate hierarchy of operating units if the structure for legal entities is also your operating structure. A mixed hierarchy of legal entities and operating units may serve both purposes.
 - Before you model major restructuring scenarios, use the hierarchy's effective dates to perform an impact analysis and a validation test.
 - Use draft mode to change a hierarchy before you publish a new version in a production environment.
 - Limit the number of people who have permissions to add or remove organizations from a hierarchy in a production environment. A smaller number reduces the chance that costly mistakes can occur and corrections must be made.
