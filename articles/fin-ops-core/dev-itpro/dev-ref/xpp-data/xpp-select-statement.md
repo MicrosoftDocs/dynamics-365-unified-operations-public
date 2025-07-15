@@ -157,7 +157,7 @@ while select count(CreditMax) from custTable
     order by custGroup.Name
     group by custGroup.CustGroup
     where custTable.CustGroup == custGroup.CustGroup
-        && custGroup.Name like "%Days%"
+        && custGroup.Name like "*Days*"
 {
 
     groupSummary.value("CustomerCount", custTable.CreditMax);
