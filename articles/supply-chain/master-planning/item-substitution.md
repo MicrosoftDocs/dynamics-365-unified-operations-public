@@ -1,8 +1,8 @@
 ---
 title: Item substitution for formulas
 description: Learn how to set up item substitution for formulas in master planning, including an outline and process on setting up item substitution.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 03/07/2024
 ms.custom: bap-template

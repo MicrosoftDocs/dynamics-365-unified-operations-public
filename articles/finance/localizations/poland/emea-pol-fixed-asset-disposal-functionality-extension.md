@@ -1,24 +1,23 @@
 ---
 title: Fixed assets disposal for Poland
-description: Learn about fixed asset disposal functionality for users in legal entities in Poland, including an outline on templates for fixed asset disposal.
+description: Learn how to set up fixed asset disposal functionality for users in legal entities in Poland with Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/20/2017
+ms.date: 06/19/2025
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-05-31
 ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTable
-ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Fixed assets disposal for Poland
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about fixed asset disposal functionality for users in legal entities in Poland. 
+This article explains how to set up fixed asset disposal functionality for users in legal entities in Poland with Microsoft Dynamics 365 Finance. 
 
 Fixed assets can be sold using disposal functionality through a free text invoice, fixed asset journal, or general journal in General ledger. For more information about fixed asset disposal, see [Fixed asset disposal posting accounts](../../fixed-assets/fixed-asset-disposal-posting-accounts.md). For users in legal entities in Poland, the fixed assets disposal functionality extension includes:
 
@@ -28,10 +27,13 @@ Fixed assets can be sold using disposal functionality through a free text invoic
 -   An additional field on the** Partial disposal** page for users to enter a percentage. This percentage will be used for calculation of a line amount as a selected fixed asset net book value multiplied on the percentage.
 
 ## Templates for fixed asset disposal
-You can use a template for fixed asset disposal as an option to simplify setting up accounts for asset disposal for posting profiles. To create or edit a template for fixed asset disposal, complete the following steps.
 
-1. Click **Fixed assets** &gt; **Setup** &gt; **Fixed asset posting profiles**.
-2. In the **Disposal** section, click **Create template** and select a fixed asset posting profile.
+You can use a template for fixed asset disposal as an option to simplify setting up accounts for asset disposal for posting profiles. 
+
+To create or edit a template for fixed asset disposal, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets** \> **Setup** \> **Fixed asset posting profiles**.
+2. In the **Disposal** section, select **Create template**, and then select a fixed asset posting profile.
 3. Complete the following fields
 
    |                  Field          |                     Description                                                                                                             |
@@ -42,7 +44,7 @@ You can use a template for fixed asset disposal as an option to simplify setting
    |   <strong>Overwrite</strong>    |                   If selected, the system will replace existing disposal accounts for the selected <strong>Book</strong>.                   |
 
 
-4. Click **OK**. The system automatically creates or updates posting rules for the selected book for the following fixed asset disposal components (transaction types):
+4. Select **OK**. The system automatically creates or updates posting rules for the selected book for the following fixed asset disposal components (transaction types):
    -   Depreciation (prior years)
    -   Depreciation (this year)
    -   Depreciation adjustment (prior years)
@@ -55,15 +57,18 @@ You can use a template for fixed asset disposal as an option to simplify setting
    -   Revaluation of accumulated depreciation (this year)
 
 ## Permission to sell
+
 Permission to sell functionality extends basic disposal by sale functionality for users in legal entities in Poland with two additional parameters:
 
--   **Check whether asset can be sold** – Use this check box to activate an additional filter on the lookup field when selecting a fixed asset to be sold in a free text invoice or a journal line. The additional filter affects transactions with type **Disposal - sale** only. To edit the **Check whether asset can be sold** field, open the **Sale** FastTab on the **Fixed assets** &gt; **Setup** &gt; **Fixed assets parameters** page.
+-   **Check whether asset can be sold** – Use this check box to activate an additional filter on the lookup field when selecting a fixed asset to be sold in a free text invoice or a journal line. The additional filter affects transactions with type **Disposal - sale** only. To edit the **Check whether asset can be sold** field, open the **Sale** FastTab on the **Fixed assets** \> **Setup** \> **Fixed assets parameters** page.
 -   **Permission to sell fixed asset** – Use this check box to select whether an individual parameter for each fixed asset can be sold. To edit this field, open the **Reference and notes** FastTab for the selected fixed asset.
 
 ## Sales account for fixed assets disposal
-When a sales disposal transaction is created using a fixed asset journal or general journal in General ledger, a sales account defaults to the journal line from the setup on the **Fixed asset posting profiles** page. When a sales disposal transaction is created using a free text invoice, a user should fill in the **Main account** field with a sales account. Sales account for fixed assets disposal functionality lets users in legal entities in Poland set up a ledger account which will be taken as a sales account for sales disposal transaction created using a Free text invoice, by default. To set up a sales account for fixed assets disposal, open the **Sale** FastTab on the **Fixed assets** &gt; **Setup** &gt; **Fixed assets parameters** page.
+
+When a sales disposal transaction is created using a fixed asset journal or general journal in General ledger, a sales account defaults to the journal line from the setup on the **Fixed asset posting profiles** page. When a sales disposal transaction is created using a free text invoice, a user should fill in the **Main account** field with a sales account. Sales account for fixed assets disposal functionality lets users in legal entities in Poland set up a ledger account which will be taken as a sales account for sales disposal transaction created using a Free text invoice, by default. To set up a sales account for fixed assets disposal, open the **Sale** FastTab on the **Fixed assets** \> **Setup** \> **Fixed assets parameters** page.
 
 ## Partial sales of fixed assets
+
 A sale or scrap disposal of a fixed asset allows disposal of an entire fixed asset only. Partial sales of fixed assets functionality allows users in legal entities in Poland to dispose partially of a fixed asset through both sale or scrap types of transactions. Partial sale of fixed assets is available through a free text invoice, fixed asset journal or general journal in General ledger. To partially dispose a fixed asset, enter a percentage (an integer between 0 and 100) in the **Partial sales** field in one of the following locations:
 
 -   **General** tab on the **Fixed asset journal** line.

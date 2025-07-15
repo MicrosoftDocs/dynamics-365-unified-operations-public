@@ -1,6 +1,6 @@
 ---
 title: FAQ and solving typical issues when setting up and configure the Supplier Communications Agent (production ready preview)
-description: Identify and solve typical issues when configure the Supplier Communications Agent in Dynamics 365 Supply Chain Management to streamline vendor communication.
+description: Identify and solve typical issues when configuring the Supplier Communications Agent in Dynamics 365 Supply Chain Management to streamline vendor communication.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
@@ -20,7 +20,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article helps to system administrators to solve typical issues when configuring the Supplier Communications Agent.
+This article helps system administrators to solve typical issues when configuring the Supplier Communications Agent.
 
 ## The *Dynamics 365 apps* link isn't shown for my environment in the Power Platform admin center
 
@@ -33,7 +33,7 @@ In the [Power Platform admin center](https://aka.ms/ppac), the environment is de
 Open your project in [Lifecycle Services (LCS)](https://lcs.dynamics.com/V2) and then open the **Full details** for your finance and operations apps environment. Under **Power Platform Integration**, check whether any errors are reported (such as "LCS Power Platform Integration provisioning fails with timeout"). Then attempt a retry to complete the deployment.
 
 > [!NOTE]
-> Dual-write isn't required for agent deployment.
+> Dual write isn't required for agent deployment.
 
 ## It isn't possible to install the Copilot apps on my environment in the Power Platform admin center
 
@@ -63,7 +63,7 @@ If you're running version 10.0.44 of finance and operations apps, then install t
 
 ### Symptoms
 
-When you're configuring the activating the Supplier Communications Agent, and specifying the conditions in which the agent should operate, the following error is shown when you press the **Activate** button:
+When you're configuring the Supplier Communications Agent, and specifying the conditions in which the agent should operate, the following error is shown when you press the **Activate** button:
 
 > Exception has been thrown by target of invocation
 

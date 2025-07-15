@@ -1,8 +1,8 @@
 ---
 title: Inventory positioning
 description: Learn about strategic inventory positioning, which involves identifying decoupling points in your supply chain, where you can build up on-hand inventory.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 06/30/2022
 ms.reviewer: kamaybac

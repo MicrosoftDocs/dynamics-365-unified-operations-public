@@ -331,6 +331,8 @@ items:
             href: sysadmin/archive-inventory-journal.md
           - name: Archive Commerce transactions
             href: ../../commerce/archive-transactions.md
+          - name: Purge from history archive (preview)
+            href: sysadmin/archive-purge.md
         - name: Finance and operations apps archive with Dataverse long term retention FAQ
           href: sysadmin/archive-faq.md
     - name: Azure Data Lake
@@ -1711,6 +1713,8 @@ items:
         href: perf-test/rsat/rsat-install-configure.md
       - name: Use the Regression suite automation tool
         href: perf-test/rsat/rsat-run.md
+      - name: Regression suite automation tool certificates
+        href: perf-test/rsat/certificate-based-authentication.md
       - name: Maintain test cases within Regression suite automation tool
         href: perf-test/rsat/rsat-maintain-test-cases.md
       - name: Validate expected values
@@ -1865,7 +1869,7 @@ items:
           href: ../fin-ops/sysadmin/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: ../fin-ops/sysadmin/assign-users-security-roles.md
-        - name: Security governance (preview)
+        - name: Security governance 
           items:
             - name: User security governance overview
               href: ../fin-ops/sysadmin/security-gov-overview.md
@@ -1876,7 +1880,9 @@ items:
             - name: Set up security governance parameters
               href: ../fin-ops/sysadmin/setup-security-gov-para.md 
             - name: Set up a process hierarchy, roles, and privileges
-              href: ../fin-ops/sysadmin/setup-process-role-hierarchy.md        
+              href: ../fin-ops/sysadmin/setup-process-role-hierarchy.md  
+            - name: Migrate data to User security governance
+              href: ../fin-ops/sysadmin/security-hierarchy-migration.md
             - name: Security tasks under process hierarchy
               href: ../fin-ops/sysadmin/usg-security-tasks-detailed.md          
             - name: Security entry points under process hierarchy
@@ -2359,7 +2365,7 @@ items:
           href: copilot/copilot-application-context.md
         - name: Create client plugins for Copilot in finance and operations apps
           href: copilot/copilot-client-plugins.md
-        - name: Create AI plugins with finance and operations business logic (preview)
+        - name: Create AI tools with finance and operations business logic (preview)
           href: copilot/copilot-ai-plugins.md
         - name: Tutorials
           items:
@@ -2367,7 +2373,7 @@ items:
             href: copilot/tutorial-create-low-code-plugins.md
           - name: Create client plugins for Copilot in finance and operations apps
             href: copilot/tutorial-create-client-plugins.md
-          - name: Create AI plugins with finance and operations business logic
+          - name: Create AI tools with finance and operations business logic
             href: copilot/tutorial-create-ai-plugins.md
     - name: Responsible AI
       items:

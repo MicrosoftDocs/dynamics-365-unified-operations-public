@@ -4,6 +4,7 @@ description: Access various resources and topics that describe the new and chang
 author: johnmichalak
 ms.author: johnmichalak
 ms.date: 04/25/2025
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
   - bap-template

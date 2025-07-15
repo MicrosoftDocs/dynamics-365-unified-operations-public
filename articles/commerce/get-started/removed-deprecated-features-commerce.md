@@ -2,7 +2,7 @@
 title: Removed or deprecated features in Dynamics 365 Commerce
 description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 author: josaw1
-ms.date: 10/02/2024
+ms.date: 06/27/2025
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -27,6 +27,19 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
+
+## Features removed or deprecated in the Commerce 10.0.44 release
+
+### Creation of worker new identity in tenant directory
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Improve platform security by removing Finance and Operations access to the tenant's user directory. |
+| **Replaced by another feature?**   | New users can be created directly in Microsoft Entra ID. |
+| **What do you need to do?**        | <p>In form **Workers**, tab **Commerce**, when the **Create new identity** option is disabled or fail, new identities need to be created directly in Microsoft Entra ID, then associated with the worker through the **Associate existing identity** option.</p>|
+| **Product areas affected**         | Commerce headquarters |
+| **Deployment option**              | All |
+| **Status**                         | <p>The functionality was disabled in release 10.0.44 (PU68) with a deprecation message, but the access to the tenant's user directory will be removed globally and even older releases won't work after July 2025.</p><p>For more information, and for updates about this change, see [Manage activation accounts and validate devices](/dynamics365/commerce/dev-itpro/set-up-activation-accounts-validate-devices-hq).</p> |
 
 ## Features removed or deprecated in the Commerce 10.0.39 release
 
@@ -264,4 +277,3 @@ To learn more about features that are removed or deprecated in previous releases
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

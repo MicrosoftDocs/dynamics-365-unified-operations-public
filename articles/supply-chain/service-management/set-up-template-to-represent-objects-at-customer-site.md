@@ -3,11 +3,14 @@ title: Set up template to represent objects at customer site
 description: Learn how to set up template to represent objects at customer site, including a step-by-step process for setting up templates.
 author: Henrikan
 ms.author: henrikan
-ms.topic: how-to
-ms.date: 05/07/2018
-ms.custom:
-ms.reviewer: kamaybac 
+ms.reviewer: kamaybac
 ms.search.form: SMAAgreementTable
+ms.topic: how-to
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Set up template to represent objects at customer site

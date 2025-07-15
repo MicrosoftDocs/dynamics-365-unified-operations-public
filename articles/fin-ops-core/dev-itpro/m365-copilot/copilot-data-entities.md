@@ -5,6 +5,7 @@ author: RamaKrishnamoorthy
 ms.author: ramasri
 ms.topic: article
 ms.date: 08/29/2024
+ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.collection:
   - bap-ai-copilot 

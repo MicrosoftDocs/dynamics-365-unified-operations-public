@@ -17,7 +17,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Security governance FAQ
 
 [!include [banner](../../../finance/includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article provides answers to the most frequently asked questions about setting up and using the security governance feature.
 

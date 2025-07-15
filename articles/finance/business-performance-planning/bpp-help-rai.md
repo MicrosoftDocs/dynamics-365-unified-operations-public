@@ -5,6 +5,7 @@ author: twheeloc
 ms.author: romainpham
 ms.topic: article
 ms.date: 04/23/2025
+ms.update-cycle: 180-days
 ms.collection: bap-ai-copilot
 
 ms.custom:

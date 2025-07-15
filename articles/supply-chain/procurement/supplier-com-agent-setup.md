@@ -43,12 +43,8 @@ Before you can use the Supplier Communications Agent, your system must meet the 
 > If you can't enable the *Agent management* features, then make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
 
 - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
-    - First, install (or update to) *Copilot for finance and operations apps* version 1.0.3048.2 or later.
-    - Then, install (or update to) *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.3046.2 or later.
-
-- In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you are running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
-    - First, install (or update to) *Copilot for finance and operations apps* version 1.0.3048.2 or later.
-    - Then, install (or update to) *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.3046.2 or later.
+    - First, install *Copilot for finance and operations apps* version 1.0.3048.2 or later. If it's already installed, update it to the latest version.
+    - Then, install *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03071.1 or later. If it's already installed, update it to the latest version.
 
 - Optional: If you want the agent to send emails automatically, turn on the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature in Feature management. We recommend that you turn off this feature for sandbox environments, where data such as purchase orders might not be up to date, or vendor email addresses might be missing.
 
@@ -86,7 +82,9 @@ Add the agent identity user both to the Dataverse environment and to Supply Chai
     - *(Preview) Supplier Communications Agent*
     - *System user*
 
-## Create required connections and activate the triggering flows
+### Create the required connections
+
+To create the required connections, follow these steps.
 
 1. Open the [Power Apps Maker portal](https://make.powerapps.com) and sign in as an environment administrator user.
 1. Use the **Environment** drop-down list in the page header to select the environment associated with your finance and operations apps.
@@ -100,7 +98,19 @@ Add the agent identity user both to the Dataverse environment and to Supply Chai
 
     :::image type="content" source="media/sca-connections-setup.png" alt-text="Example connections setup" lightbox="media/sca-connections-setup.png":::
 
-1. To finish setting up agent identity, you must update the agent's connection references so that they point to the connections that you created. You must also activate the triggering Power Automate flows. The section [sample PowerShell script](#sample-script) provides a sample PowerShell script that you can use to complete both tasks.
+### <a name="trigger-flows"></a>Activate the triggering Power Automate flows
+
+> [!NOTE]
+> This section describes one of two ways to activate the triggering Power Automate flows. The other way is to use a PowerShell script, which is described in the [Activate the triggering Power Automate flows by using a PowerShell script](#sample-script) section later in this article. You don't need to do both; you can choose the method that you prefer.
+
+To finish setting up the agent identity, you must activate the triggering Power Automate flows. A Canvas app is provided to help you do this. To use the app, follow these steps.
+
+1. Sign in to [Power Apps](https://make.powerapps.com) as an environment administrator user.
+1. In the left pane, select **Apps**.
+1. Select the app with a **Name** of *(Production ready preview) Setup Supplier Communications Agent*.
+1. On the command bar, select **Play**.
+1. Under **Connections**, select the connections you created in the previous section for both *Microsoft Dataverse* and *Microsoft Copilot Studio*.
+1. Select **Apply** at the bottom-right of the page and wait for all of the flows listed under **Agent trigger flows status** to switch to a state of *Activated*.
 
 ## Assign permissions to users working with the agent
 
@@ -133,7 +143,7 @@ Additionally, they be assigned the roles described in the following subsections.
 
 ## Synchronize mailboxes with Dataverse
 
-To enable the email analysis and delivery features of the Supplier Communications Agent, you must set up targeted mailboxes so that they are synchronized with Dataverse at the server level.
+To enable the email analysis and delivery features of the Supplier Communications Agent, you must set up targeted mailboxes so that they're synchronized with Dataverse at the server level.
 
 ### Private mailbox
 
@@ -187,10 +197,10 @@ If you're using a shared mailbox, create a queue so that all users who work on t
     > [!TIP]
     > If this operation fails, review the **Alerts** section for the mailbox. If it includes an error message that states that approval is required, you must ask your global or Exchange admin to approve the mailbox. Learn more in [Approve email](/power-platform/admin/connect-exchange-online#approve-email).
 
-1. Ensure that no other mailboxes that have the same email address are set up and active. 
+1. Ensure that no other mailboxes that have the same email address are set up and active.
 
     1. Return to the **Settings** page for your environment.
-    1. Under **Email**, select **Mailboxes**. 
+    1. Under **Email**, select **Mailboxes**.
     1. On the **Select a view** dropdown menu at the top of the page, select **Active Mailboxes**.
     1. If any other mailboxes have the same email address as the shared mailbox email address, deactivate them.
 
@@ -208,17 +218,20 @@ Learn how to fix common issues that are related to server-side synchronization i
 
 ## Refresh data (optional)
 
-After you enable the Supplier Communications Agent in a sandbox environment, we recommend that you do a data refresh. In this way, when you do testing in the sandbox environment, you can use the same data that you will have in the production environment. Learn how to do a database refresh in [Refresh database](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
+After you enable the Supplier Communications Agent in a sandbox environment, we recommend that you do a data refresh. In this way, when you do testing in the sandbox environment, you can use the same data that you have in the production environment. Learn how to do a database refresh in [Refresh database](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
 
 ## <a name="own-email"></a>Set your email address as a vendor contact for testing
 
-When you use the [review and apply purchase order changes received in vendor emails](supplier-com-agent-apply-email-changes.md) feature, the agent only reads emails from vendor domains. This means that when you are testing the system (and want to send/forward vendor emails from your own email account), you must add your email address as a vendor contact. To do so, follow these steps.
+When you use the [review and apply purchase order changes received in vendor emails](supplier-com-agent-apply-email-changes.md) feature, the agent only reads emails from vendor domains. This means that when you're testing the system (and want to send/forward vendor emails from your own email account), you must add your email address as a vendor contact. To do so, follow these steps.
 
 1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
 1. Create or select a vendor.
-1. On the **Contact information** FastTab, add a row with your own email address (the one you will send/forward test messages from).
+1. On the **Contact information** FastTab, add a row with your own email address (the one you'll send/forward test messages from).
 
-## <a name="sample-script"></a>Update connection references and enable triggering flows by using a PowerShell script
+## <a name="sample-script"></a>Activate the triggering Power Automate flows by using a PowerShell script
+
+> [!NOTE]
+> This section describes one of two ways to activate the triggering Power Automate flows. The other way is to use a Canvas app, which is described in the [Activate the triggering Power Automate flows](#trigger-flows) section earlier in this article. You don't need to do both; you can choose the method that you prefer.
 
 This sample PowerShell script finishes [setting up the agent identity](#set-up-agent-identity) by updating the connection references for the agent and activating the triggering Power Automate flows.
 
@@ -233,8 +246,9 @@ To use the sample PowerShell script, follow these steps.
     - `MCSConnectionName` – Specify the name of the Copilot Studio connector to use. The connector is named after the agent identity that you signed in as when you [created](#set-up-agent-identity) it. You can find the name on the **Connections** page in Power Apps.
 
 1. Customize the script as required.
-1. Run the script from any PowerShell console or Visual Studio Code. If needed, follow the instructions to update your installed PowerShell to [version 7](https://github.com/PowerShell/PowerShell/releases).
-When you're prompted to sign in, sign in as an environment administrator.
+1. Run the script from any PowerShell console or Visual Studio Code. If needed, follow the instructions to update your installed PowerShell to [version 7](https://github.com/PowerShell/PowerShell/releases). When you're prompted to sign in, sign in as an environment administrator.
+
+Here's the script:
 
 ```powershell
 Param(
