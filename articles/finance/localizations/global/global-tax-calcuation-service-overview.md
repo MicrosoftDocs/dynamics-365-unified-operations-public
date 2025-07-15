@@ -1,12 +1,12 @@
 ---
 title: Tax Calculation overview
 description: Learn about the overall scope and features of the Tax Calculation capability, including outlines on versions, data flows, and supported transactions.
-author: EricWangChen
-ms.author: wangchen
+author: epodkolzina
+ms.author: epodkolzina
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 02/12/2025
+ms.date: 7/15/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
