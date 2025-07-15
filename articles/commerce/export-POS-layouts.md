@@ -33,10 +33,10 @@ To export screen layout data from an environment, follow these steps.
 1. For each of the following entities, filter for the entity in the **Entities** box, select the entity result in the **Entity** column, and then select **Add selected**.
 
     - **Layout sizes** (Include this entity only when you're exporting new layout sizes that don't exist in the new environment.)
+    - **POS layout images**
     - **RetailTillLayoutConfigurationEntity**
     - **POS button grid**
     - **POS button grid buttons**
-    - **POS layout images**
     - **POS screen layouts**
     - **POS screen layout button grid zones**
     - **POS screen layout image zones**
