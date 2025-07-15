@@ -4,13 +4,14 @@ description: Learn about how you can fix issues that might occur during initial 
 author: RamaKrishnamoorthy
 ms.author: ramasri
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 05/20/2024
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global
 ms.search.validFrom: 2020-01-06
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Troubleshoot issues during initial synchronization

@@ -12,6 +12,7 @@ ms.search.validFrom: 2018-08-15
 ms.search.form: 
 ms.dyn365.ops.version: Platform update 20
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
+ms.custom: sfi-image-nochange
 ---
 
 # Batch manager security role

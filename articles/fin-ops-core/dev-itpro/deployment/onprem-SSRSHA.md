@@ -4,14 +4,15 @@ description: Learn how to configure Microsoft SQL Server Reporting Services (SSR
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 06/19/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-03-21
 ms.dyn365.ops.version: 10.0.17
 ms.service: dynamics-365-op
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Configure high availability for SQL Server Reporting Services (SSRS) nodes

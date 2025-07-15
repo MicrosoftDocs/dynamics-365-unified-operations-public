@@ -4,14 +4,15 @@ description: Learn about how to expose the diagnostic data for Dynamics 365 Fina
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 06/19/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
 ms.service: dynamics-365-op
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # On-premises diagnostics

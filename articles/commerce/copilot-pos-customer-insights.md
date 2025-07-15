@@ -11,6 +11,7 @@ ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.collection:
   - bap-ai-copilot
+ms.custom: sfi-image-nochange
 ---
 
 # Customer insights by Copilot

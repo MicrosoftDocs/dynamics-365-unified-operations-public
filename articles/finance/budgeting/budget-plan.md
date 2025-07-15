@@ -12,6 +12,7 @@ ms.search.validFrom: 2016-02-28
 ms.search.form: BudgetPlanningConfiguration
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
+ms.custom: sfi-image-nochange
 ---
 
 # Budget planning

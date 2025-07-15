@@ -4,14 +4,15 @@ description: Learn how to set up and generate the Standard Audit File for Tax (S
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Denmark
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Standard Audit File for Tax (SAF-T) for Denmark

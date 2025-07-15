@@ -6,15 +6,16 @@ ms.author: sericks
 ms.topic: whats-new
 ms.date: 07/12/2024
 ms.update-cycle: 1095-days
-ms.custom: 
-  - bap-template
-  - evergreen
 ms.reviewer: johnmichalak
 ms.search.region: global
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 ms.assetid: a98f6291-347c-4616-ad80-84d3eb648cba
 ROBOTS: NOINDEX, NOFOLLOW
+ms.custom:
+  - bap-template
+  - evergreen
+  - sfi-image-nochange
 ---
 
 # What's new or changed in Dynamics 365 for Operations platform update 4 (February 2017)

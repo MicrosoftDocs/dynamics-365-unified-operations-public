@@ -11,6 +11,7 @@ ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: f061b6cf-16f7-440e-94b9-f40666dd7431
+ms.custom: sfi-image-nochange
 ---
 
 # Build operations

@@ -4,13 +4,14 @@ description: This article describes the latest security enhancements in the fina
 author: mansijainms
 ms.author: mansijain 
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 07/10/2025
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2024-09-12
 ms.dyn365.ops.version: 
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 
 # Finance and operations storage account security updates

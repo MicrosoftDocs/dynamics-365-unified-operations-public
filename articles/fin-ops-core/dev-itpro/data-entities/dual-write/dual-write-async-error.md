@@ -5,8 +5,9 @@ author: pnghub
 ms.author: gned
 ms.topic: article
 ms.date: 09/26/2024
-ms.custom:
 ms.reviewer: twheeloc
+ms.custom:
+  - sfi-image-nochange
 ---
 
 # Manage errors in dual-write async in finance and operations apps (preview)

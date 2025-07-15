@@ -5,13 +5,14 @@ author: sericks007
 ms.author: sericks
 ms.topic: article
 ms.date: 09/20/2019
-ms.custom:
 ms.reviewer: johnmichalak
 audience: Application user
 ms.search.region: Global
 ms.search.validFrom: 2019-1-29
 ms.search.form: EventCreateRule
 ms.dyn365.ops.version: Platform update 24
+ms.custom:
+  - sfi-image-nochange
 ---
 
 # Client alert notifications by email

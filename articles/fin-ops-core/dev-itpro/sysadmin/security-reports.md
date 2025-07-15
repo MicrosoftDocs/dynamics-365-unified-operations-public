@@ -5,13 +5,14 @@ author: pnghub
 ms.author: gned
 ms.topic: article
 ms.date: 08/14/2019
-ms.custom: 
-  - bap-template
 ms.reviewer: johnmichalak 
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.search.form:  SysSecConfiguration, SrsReportViewerForm
 ms.dyn365.ops.version: Platform update 8
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Out-of-box security reports

@@ -11,8 +11,9 @@ ms.author: brstor
 ms.search.validFrom: 2016-11-30
 ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
 ms.search.form: SysMicrosoft Entra IDClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-ropc-nochange
 ---
 
 # Configure and install Commerce Scale Unit (self-hosted)
