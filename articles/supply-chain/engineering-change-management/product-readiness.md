@@ -118,7 +118,7 @@ Set the following fields on the **General** FastTab of a product readiness polic
 | Field | Description |
 |---|---|
 | Product type | Select whether the policy applies to products of the *Item* or *Service* type. You can't change this setting after you save the record. |
-| Active | Use this option to help maintain your readiness policies. Set it to *Yes* for all readiness policies that you use. Set it to *No* to mark a readiness policy as inactive when it isn't used. Note that you can't inactivate a readiness policy that is assigned to an engineering product category or a shared product, and you can delete only inactive release policies. |
+| Active | Use this option to help maintain your readiness policies. Set it to *Yes* for all readiness policies that you use. Set it to *No* to mark a readiness policy as inactive when it isn't used. Note that you can't deactivate a readiness policy that is assigned to an engineering product category or a shared product, and you can delete only inactive release policies. |
 
 ### Readiness control FastTab
 
