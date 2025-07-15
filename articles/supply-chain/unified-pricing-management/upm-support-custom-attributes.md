@@ -31,7 +31,7 @@ To use the features described in this article, you must be running version 10.0.
 
 1. Implement a custom request handler to process custom pricing attributes. For an example, see [Example custom request handler code](upm-custom-request-handler-example.md)
 
-1. Register the output library in the `CommerceRuntime.Ext.config` file. Here is an example of a custom request handler registration (if the output library were `Contoso.Commerce.Runtime.Services`).
+1. Register the output library in the `CommerceRuntime.Ext.config` file. Here's an example of a custom request handler registration (if the output library were `Contoso.Commerce.Runtime.Services`).
 
     :::image type="content" source="media/commerce-runtime.png" alt-text="Custom request handler registration." lightbox="media/commerce-runtime.png"::: <!-- KFM: We should provide this as text instead of an image. -->
 
@@ -45,7 +45,7 @@ To use the features described in this article, you must be running version 10.0.
 
 1. In AppSuite repo <!-- KFM: What is this? Where do I find it? -->, create new custom pricing attributes according to: [How to add a new pricing attribute](https://eng.ms/docs/cloud-ai-platform/business-and-industry-copilot/bic-bis-ai-erp-smb/aierp-finance/d365-finance-application-core-services/dynamics-365-ai-erp/domainknowledge/scm/pricingmanagement/howto/howtoaddanewpricingattribute). <!-- KFM: This link requires a VPN; I think it's internal (not public). Our customers won't be able to open it. Do we have public link for this info? --> You must add a new class for each custom pricing attribute you want to add.
 
-    - Here is an example of code that creates a header-level custom pricing attribute (for `Customer`): <!-- KFM: What is the text in parentheses? A table name? Should we say "for" or maybe "in"? Also,what language is this example? -->
+    - Here's an example of code that creates a header-level custom pricing attribute (for `Customer`): <!-- KFM: What is the text in parentheses? A table name? Should we say "for" or maybe "in"? Also,what language is this example? -->
 
         ```text
         /// <summary>
@@ -80,7 +80,7 @@ To use the features described in this article, you must be running version 10.0.
         }
         ```
 
-    - Here is an example of code that creates a line-level custom pricing attribute (for `SalesLine`): <!-- KFM: What is the text in parentheses? A table name? Should we say "for" or maybe "in"? Also,what language is this example? -->
+    - Here's an example of code that creates a line-level custom pricing attribute (for `SalesLine`): <!-- KFM: What is the text in parentheses? A table name? Should we say "for" or maybe "in"? Also,what language is this example? -->
 
         ```text
         /// <summary>
@@ -120,7 +120,7 @@ To use the features described in this article, you must be running version 10.0.
         }
         ```
 
-1. For **new** <!-- KFM: How much of this procedure applies just for **new** groups? Just this step, or everything up to the step where we mention **existing** groups? --> custom pricing attributes, you must programmatically set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization`. In AppSuite repo,  create an extension to [GUPPricingAttributeRepository.xml](https://msdyneng.visualstudio.com/FinOps/_git/ApplicationSuite?path=/Source/Metadata/GlobalUnifiedPricing/GlobalUnifiedPricing/AxClass/GUPPricingAttributeRepository.xml&version=GBmaster&line=271&lineEnd=271&lineStartColumn=45&lineEndColumn=65&lineStyle=plain&_a=contents) <!-- KFM: Will customers be able to open this link? --> and add a statement to the `toPriceAttributeLink()` method that programmatically sets the `TypeName` column for each new custom pricing attribute. Here is an example of how to do this: <!-- what language is this example? -->
+1. For **new** <!-- KFM: How much of this procedure applies just for **new** groups? Just this step, or everything up to the step where we mention **existing** groups? --> custom pricing attributes, you must programmatically set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization`. In AppSuite repo,  create an extension to [GUPPricingAttributeRepository.xml](https://msdyneng.visualstudio.com/FinOps/_git/ApplicationSuite?path=/Source/Metadata/GlobalUnifiedPricing/GlobalUnifiedPricing/AxClass/GUPPricingAttributeRepository.xml&version=GBmaster&line=271&lineEnd=271&lineStartColumn=45&lineEndColumn=65&lineStyle=plain&_a=contents) <!-- KFM: Will customers be able to open this link? --> and add a statement to the `toPriceAttributeLink()` method that programmatically sets the `TypeName` column for each new custom pricing attribute. Here's an example of how to do this: <!-- what language is this example? -->
 
     ```text
     [ExtensionOf(classStr(GUPPricingAttributeRepository))]
@@ -141,13 +141,13 @@ To use the features described in this article, you must be running version 10.0.
     }
     ```
 
-1. Build the relevant models (GUP or extension) <!-- KFM: Spell out "GUP". What do these values in parentheses mean? -->, restart Internet Information Services (IIS), and clear the cache using a URL such as `<https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=usrt&mi=SysClassRunner&cls=SysFlushAOD>`. <!-- KFM: Can we give a more generic URL for this? We maybe shouldn't expose our internal server names. -->
+1. Build the relevant models (GUP or extension)<!-- KFM: Spell out "GUP". What do these values in parentheses mean? -->, restart Internet Information Services (IIS), and clear the cache using a URL such as `<https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=usrt&mi=SysClassRunner&cls=SysFlushAOD>`. <!-- KFM: Can we give a more generic URL for this? We maybe shouldn't expose our internal server names. -->
 
 1. Sign in to your Microsoft finance and operations app and go to **Pricing management** \> **Setup** \> **Price attribute groups** \> **Price attribute groups**. Select the price attribute group that you want to customize and then use the **Attributes** FastTab to add your custom pricing attributes to it. Update each group as needed.
 
 1. Run the 1210 (Pricing management) job and sync changes to Channel database. <!-- KFM: I'm not familiar with any of this. More detail and instructions are probably needed. How/where do we do this? What is the "Channel database"? -->
 
-1. For **existing** custom pricing attributes, manually set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization` in SSMS. <!-- KFM: Spell out "SSMS". -->. Here's an example of how to set the `Customization` identifier: <!-- KFM: What coding language is this?. -->
+1. For **existing** custom pricing attributes, manually set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization` in SSMS.<!-- KFM: Spell out "SSMS". --> Here's an example of how to set the `Customization` identifier: <!-- KFM: What coding language is this?. -->
 
     ```text
     update dbo.GUPPRICINGATTRIBUTELINK
@@ -155,7 +155,7 @@ To use the features described in this article, you must be running version 10.0.
     where ATTRIBUTENAME = 'Custom attribute name'
     ```
 
-    <!-- KFM: We should add some text here that introduces this image. What are we showing here? -->
+    <!-- KFM: We should add some text here that introduces this image. What are we showing here? I think maybe we don't need this image anyway. -->
 
     :::image type="content" source="media/ssms-customization.png" alt-text="SSMS customization." lightbox="media/ssms-customization.png":::
 
@@ -163,58 +163,66 @@ To use the features described in this article, you must be running version 10.0.
 
 1. Run the 9999 (full sync) and sync to Channel database. <!-- KFM: I'm not familiar with any of this. More detail and instructions are probably needed. How/where do we do this? What is the "Channel database"? -->
 
-1. In POS <!-- KFM: What is this? -->, you should see the value configured in the trade agreement journal or that an auto charge was correctly applied.
+1. In POS<!-- KFM: What is this? -->, you should see the value configured in the trade agreement journal or that an auto charge was correctly applied.
 
 ## Troubleshooting
 
-### You receive a POS notification that a custom request handler is not implemented
+### You receive a POS notification that a custom request handler isn't implemented
 
-[<img src="media/request-handler-custom.png" alt="Custom request handler" title="Custom request handler" width="360" />](media/request-handler-custom.png#lightbox)
+<!-- KFM: It would be better to provide this error message as text instead of a screenshot. Many users copy/paste error messages into Google, so a text version of the error enabled Google to find this page. Also, introduce the error message by describing where the user is and what they are trying to do when it appears. -->
+
+:::image type="content" source="media/request-handler-custom.png" alt-text="Custom request handler." lightbox="media/request-handler-custom.png":::
 
 1. Verify that a custom request handler is implemented and included in the build.
 
-1. Ensure that the custom request handler is correctly registered in the CommerceRuntime.Ext.config file. Keep in mind that this registration can be overwritten during the build process, so it is important for the customer to confirm the registration after build completion.
+1. Ensure that the custom request handler is correctly registered in the `CommerceRuntime.Ext.config` file. Keep in mind that this registration can be overwritten during the build process, so it's important for you to confirm the registration after the build completes.
 
 ### You receive a POS notification that custom pricing attributes are detected among out-of-box attributes
 
-[<img src="media/custom-customer-attribute.png" alt="Custom customer attribute" title="Custom customer attribute" width="360" />](media/custom-customer-attribute.png#lightbox) [<img src="media/custom-product-attribute.png" alt="Custom product attribute" title="Custom product attribute" width="360" />](media/custom-product-attribute.png#lightbox)
+<!-- KFM: Same comments as above; replace images with text and add an intro that describes where the user is and what they are trying to do when this message appears. -->
 
-1. Verify that the CSU flight UPSupportCustomPricingAttributesFlight is enabled.
+:::image type="content" source="media/custom-customer-attribute.png" alt-text="Custom customer attribute." lightbox="media/custom-customer-attribute.png":::
 
-1. Confirm that the new custom pricing attributes are identified as custom. The GUPPRICINGATTRIBUTELINK.TypeName column should be set to 'Customization' for all custom pricing attributes.
+:::image type="content" source="media/custom-product-attribute.png" alt-text="Custom product attribute." lightbox="media/custom-product-attribute.png":::
+
+1. Verify that the CSU flight `UPSupportCustomPricingAttributesFlight` is enabled.
+
+1. Confirm that the new custom pricing attributes are identified as custom. The `GUPPRICINGATTRIBUTELINK.TypeName` column should be set to `Customization` for all custom pricing attributes.
 
 ### Further troubleshooting
 
-1. It is possible to find more details on errors or exceptions in our AzureDataExplorer dashboards.
+1. It's possible to find more details on errors or exceptions in our AzureDataExplorer dashboards.
 
-    - Useful dashboards (Must access with PME account):
+    - Useful dashboards (Must access with PME account): <!-- KFM: Can customers access these links? -->
         - CSU logs: <https://dataexplorer.azure.com/dashboards/db50f9f4-9a19-4a4c-9993-17e0861444d1>
         - POS logs: <https://dataexplorer.azure.com/dashboards/8ad7df1a-a343-459b-beeb-5f4cafabe91c>
         - Drill MPOS - CPOS - CSU - RSSU sessions logs: <https://dataexplorer.azure.com/dashboards/32491967-1eff-4b22-b161-f4bb8db6e550>
 
-1. Given the app session id, user session id, or activity id, it is possible to trace AppInsights. (AppInsights PROD stores all Commerce customer logs.)
+1. Given the app session ID, user session ID, or activity ID, it's possible to trace AppInsights. (AppInsights PROD stores all Commerce customer logs.)
 
-    Troubleshooting through telemetry wiki: <https://msazure.visualstudio.com/D365/_wiki/wikis/D365.wiki/9342/Troubleshooting-Through-Telemetry>
+    Troubleshooting through telemetry wiki: <https://msazure.visualstudio.com/D365/_wiki/wikis/D365.wiki/9342/Troubleshooting-Through-Telemetry> <!-- KFM: Can customers access this link? -->
 
-   [<img src="media/telemetry-troubleshooting.png" alt="Telemetry troubleshooting" title="Telemetry troubleshooting" width="720" />](media/telemetry-troubleshooting.png#lightbox)
+    <!-- KFM: Introduce the following image. Explain what it is showing and what the highlights mean.  -->
 
-    - Starting query template for CSU logs:
+    :::image type="content" source="media/telemetry-troubleshooting.png" alt-text="Telemetry troubleshooting." lightbox="media/telemetry-troubleshooting.png":::
 
-    ```
-    traces
-    | where customDimensions.UserSessionId == "UserSessionId"
-    ```
+    - Starting query template for CSU logs: <!-- KFM: What coding language do we see here? -->
 
-    ```
-    traces
-    | where customDimensions.AppSessionId == "AppSessionId"
-    ```
+        ```text
+        traces
+        | where customDimensions.UserSessionId == "UserSessionId"
+        ```
 
-    ```
-    traces
-    | where customDimensions.ActivityId == "ActivityId"
-    ```
+        ```text
+        traces
+        | where customDimensions.AppSessionId == "AppSessionId"
+        ```
 
-    - Example of locating full database error in CSU logs:
+        ```text
+        traces
+        | where customDimensions.ActivityId == "ActivityId"
+        ```
+
+    - Example of locating full database error in CSU logs: <!-- KFM: Explain a little more about what we are looking at here and what we should notice about it. Maybe we don't really need this example? -->
 
         [<img src="media/retail-server-logs.png" alt="Retail server logs" title="Retail server logs" width="720" />](media/retail-server-logs.png#lightbox)
