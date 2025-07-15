@@ -39,7 +39,7 @@ You can configure budget control according to several factors:
 - **Financial dimensions** – What financial dimensions must be used to report budget and actuals, and what financial dimensions are required to control budgets? Are there specific dimension combinations or main accounts that require particular attention? For example, is there a requirement to track budget to actuals by cost center and program? Do travel expenses require special attention?
 - **Time** – What time frame (fiscal period, fiscal period to date, and so on) will be used to evaluate available budget funds?
 - **Source documents** – What source documents must be evaluated for budget control? Should the documents be evaluated per line or per document?
-- **Funds available calculation** – Should documents such as purchase requisitions (pre-encumbrances) and purchase orders (encumbrances) be considered in the calculation of available funds? Should documents that are in a draft state be considered in the calculation?
+- **Funds available calculation** – Should documents such as purchase requisitions (preencumbrances) and purchase orders (encumbrances) be considered in the calculation of available funds? Should documents that are in a draft state be considered in the calculation?
 - **Override permission** – Who has permission to exceed the available budget?
 
 Budget control is fully integrated with the application. Therefore, you can evaluate the available budget for both planned purchases and actual purchases. Budget inquiries and reports are available. Therefore, users can evaluate the budget throughout the budget cycle, and can make any adjustments that are required, in the form of budget revisions or transfers. A budget manager can also export the budget and actuals into Microsoft Excel to better analyze and forecast as required.
@@ -90,14 +90,14 @@ Next, on the **Assign budget models** tab, you assign budget models to the budge
 
 ### Define budget control rules
 
-Next, on the **Define budget control rules** tab, you must create specific rules, based on the financial dimensions that are enabled for budget control. For example, if there is a focus on the expenditure or range of expenditures for a department, you can use the settings on this tab to define and evaluate those expenditures. You can define different thresholds for each budget control rule. 
+Next, on the **Define budget control rules** tab, you must create specific rules, based on the financial dimensions that are enabled for budget control. For example, if there's a focus on the expenditure or range of expenditures for a department, you can use the settings on this tab to define and evaluate those expenditures. You can define different thresholds for each budget control rule. 
 
 > [!Important]
 > Budget control will be enabled for any main account of the **Profit and Loss**, **Expense**, **Revenue, Balance sheet, Liability, Equity** or **Asset** type. If **Define budget control rules** tab contains a rule that has empty criteria, budget control will be enabled for **all** financial dimension combinations that include main accounts of those types. Therefore, make sure that you create budget control rules that define only the ranges of financial dimension combinations where it's important for budget control to be turned on.
 
 ### Select main accounts
 
-If **Main account** isn't selected as a budget control dimension on the **Define parameters** page, but specific expenditures are being managed, you can select those expenditures on the **Select main accounts** tab. The **Select main accounts** option ensures budget control checks are only performed for selected main accounts (or not performed on unselected main accounts) even when **Main account** is not part of **Defined parameters** in budget control. 
+If **Main account** isn't selected as a budget control dimension on the **Define parameters** page, but specific expenditures are being managed, you can select those expenditures on the **Select main accounts** tab. The **Select main accounts** option ensures budget control checks are only performed for selected main accounts (or not performed on unselected main accounts) even when **Main account** isn't part of **Defined parameters** in budget control. 
 
 Example: 
 On the **Define parameters** page, **Budget control dimensions** is selected, the budget is controlled only at *Business Unit* and *Department* level.
