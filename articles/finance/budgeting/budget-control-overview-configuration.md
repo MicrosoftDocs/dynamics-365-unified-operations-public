@@ -90,7 +90,10 @@ Next, on the **Assign budget models** tab, you assign budget models to the budge
 
 ### Define budget control rules
 
-Next, on the **Define budget control rules** tab, you must create specific rules, based on the financial dimensions that are enabled for budget control. For example, if there is a focus on the expenditure or range of expenditures for a department, you can use the settings on this tab to define and evaluate those expenditures. You can define different thresholds for each budget control rule. 
+Next, on the **Define budget control rules** tab, you must create specific rules, based on the financial dimensions that are enabled for budget control. For example, if there's a focus on the expenditure or range of expenditures for a department, you can use the settings on this tab to define and evaluate those expenditures, like Department = Sales, and Cost Center = *, where the asterisk (`*`) is a wildcard character that includes any cost center. You can define different thresholds for each budget control rule. 
+
+> [!NOTE]
+> If your financial dimensions include any wildcard characters, such as underscore (`_`), when defining budget control rules, users should use asterisk (`*`) for the criteria definition to ensure the accurate expression is found. For example, if you have Department as Department_1, when defining budget control rule, you should use expression Deparment is like Deparment*1. The asterisk (`*`) matches any number of characters, for example, *Department_1* as well as *Deparment_A1* or *DeparmentA_1*.
 
 > [!Important]
 > Budget control will be enabled for any main account of the **Profit and Loss**, **Expense**, **Revenue, Balance sheet, Liability, Equity** or **Asset** type. If **Define budget control rules** tab contains a rule that has empty criteria, budget control will be enabled for **all** financial dimension combinations that include main accounts of those types. Therefore, make sure that you create budget control rules that define only the ranges of financial dimension combinations where it's important for budget control to be turned on.
