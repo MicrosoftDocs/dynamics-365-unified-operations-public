@@ -4,7 +4,7 @@ description: Learn how to set up a mobile device menu item that lets workers reg
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 06/11/2025
+ms.date: 07/16/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSRFMenuItem
