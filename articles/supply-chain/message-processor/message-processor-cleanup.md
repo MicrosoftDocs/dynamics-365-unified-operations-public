@@ -1,8 +1,8 @@
 ---
 title: Clean up processed and canceled message processor messages
 description: Learn how to set up a cleanup job for the message processor
-author: juhnkim
-ms.author: juhnkim
+author: johanhoffmann
+ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: SysMessageQueueSetup, DiagnosticsValidationRule, ProcessScheduleSeries
 ms.topic: how-to
@@ -13,9 +13,7 @@ ms.custom:
 
 # Clean up processed and canceled message processor messages
 
-<!-- KFM: Who is the PM for this feature? We normally use the PM as the author in metadata. -->
-
-The [message processor](../message-processor/message-processor.md) is a framework that processes messages in the system. It can handle various types of messages, such as those related to inventory transactions, sales orders, and more. Over time, processed and canceled messages, which are no longer needed, can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency. <!-- KFM: I added this intro. Please confirm and enhance as needed. -->
+The [message processor](../message-processor/message-processor.md) is a framework that processes messages in the system, such as those related to inventory transactions, sales orders, and more. Over time, processed and canceled messages, which are no longer needed, can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency.
 
 ## Prerequisites
 
@@ -38,11 +36,10 @@ To configure message cleanup, follow these steps:
     - **Days before canceled message deletion** - Specify of days to wait before canceled messages should be cleaned up (deleted). To turn off canceled message cleanup, set this field to zero (0).
 
 1. On the Action Pane, select **Save**. The system automatically creates a background process to run the cleanup job. By default, the process is set to run daily, but you can modify this schedule in the [Process automation](../../fin-ops-core/fin-ops/sysadmin/process-automation.md) workspace, as described in the next section.
-1. Go to **System administration** \> **Setup** \> **Process automation** and, on the Action Pane, select **Initialize process automation**. <!-- KFM: It doesn't seem like this step is needed. For me, the job was added automatically when I configured the queues and when I selected **Initialize process automation**, the system said automation was already initialized (as it will probably already be for almost all of our readers) -->
 
 ## Review and manage cleanup jobs
 
-Whenever you have at least one message queue set to be cleaned up, the system automatically creates a background process to run the cleanup operation on a regular basis. Follow these steps to review, schedule, and manage this process in the [Process automation](../../fin-ops-core/fin-ops/sysadmin/process-automation.md) workspace:
+Whenever you have at least one message queue set to be cleaned up, the system automatically creates a background process to run the cleanup operation regularly. Follow these steps to review, schedule, and manage this process in the [Process automation](../../fin-ops-core/fin-ops/sysadmin/process-automation.md) workspace:
 
 1. Go to **System administration** \> **Setup** \> **Process automation**.
 1. Open the **Background processes** tab to view the list of background processes.
@@ -53,12 +50,20 @@ Whenever you have at least one message queue set to be cleaned up, the system au
 
 ## Optimization advisor
 
-The [Optimization advisor](../../fin-ops-core/fin-ops/sysadmin/optimization-advisor-overview.md) can remind you to manage outdated messages when they exist in the message processor<!-- KFM: Is this considered an alternative to using the scheduled task? Is there a scenario where we would use both? -->. The Optimization advisor includes a diagnostic called *Check for aged processed or canceled messages*<!-- KFM: where do we see this name? --> , which checks for processed or canceled messages that are older than a specified number of days <!-- KFM: how many days? can we configure this? -->and creates an optimization opportunity for them so you can take action directly from the **Optimization advisor** workspace. By default<!-- KFM: Can we change this? How? -->, the *Check for aged processed or canceled messages* rule runs on a monthly basis.
+The [Optimization advisor](../../fin-ops-core/fin-ops/sysadmin/optimization-advisor-overview.md) can remind you to manage outdated messages when they exist in the message processor. The Optimization advisor includes a diagnostic called *Check for aged processed or canceled messages*, which checks for processed or canceled messages that are older than 30 days and creates an optimization opportunity for them so you can take action directly from the **Optimization advisor** workspace. By default, the *Check for aged processed or canceled messages* rule runs on a monthly basis.
+
+To turn the rule on or off, or to change the frequency of the rule, follow these steps:
+
+1. Go to **System administration** \> **Periodic tasks** \> **Maintain diagnostic validation rules**.
+1. Find the row where **Rule name** is *Check for aged processed or canceled messages*.
+1. Make the following settings for the rule as needed:
+    - **Status** – Set to *Active* or *Inactive*.
+    - *Run frequency* – Chow often to run the check (*Daily*, *Weekly*, *Monthly*, or *Unscheduled*).
 
 To view and act on your optimization opportunities, including those related to cleaning up aged messages, follow these steps.
 
 1. Go to **System administration** \> **Workspaces** \> **Optimization advisor**. Here, you can see a list of optimization opportunities that the system has identified, including those related to message processor cleanup.
-1. Select the relevant optimization opportunity from the list <!-- KFM: please specify how to identify it by **Area** and **Optimization opportunity** values. -->
+1. Select the row where **Area** is *SCM* and **Optimization opportunity** is *Cleanup job for message processor*.
 1. From the toolbar, select **More information** to learn more about the opportunity and the recommended action.
 1. If you want to act on the opportunity, select **Take action** from the toolbar to open the **Message queue setup** page, where you can configure the cleanup settings as described previously in this article.
 
