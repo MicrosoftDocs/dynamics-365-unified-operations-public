@@ -50,7 +50,7 @@ This tutorial uses the following technologies:
         - [OneDrive for Business](/azure/connectors/connectors-create-api-onedriveforbusiness) connector
 
 - **[DMF package REST API](../fin-ops-core/dev-itpro/data-entities/data-management-api.md)** – The technology that is used to trigger the export and monitor its progress.
-- **[OneDrive for Business](https://azure.microsoft.com/microsoft-365/onedrive/onedrive-for-business/)** – The destination for the exported workers.
+- **[OneDrive for Business](https://onedrive.live.com/about/business/)** – The destination for the exported workers.
 
 ## Prerequisites
 
