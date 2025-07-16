@@ -2,7 +2,7 @@
 title: Service endpoints overview
 description: Learn about the service endpoints that are available, including a table that lists services avaialable for various service endpoints.
 author: pnghub
-ms.author: gned
+ms.author: priysharma
 ms.topic: overview
 ms.date: 06/22/2020
 ms.reviewer: johnmichalak

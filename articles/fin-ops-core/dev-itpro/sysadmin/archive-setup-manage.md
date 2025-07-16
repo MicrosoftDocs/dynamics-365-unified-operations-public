@@ -2,7 +2,7 @@
 title: Set up and manage archive data in finance and operations apps
 description: Learn about how to set up and manage archive data in finance and operations apps, including an overview on preparing environments.
 author: pnghub
-ms.author: gned
+ms.author: priysharma
 ms.topic: how-to
 ms.date: 06/11/2024
 ms.custom:
