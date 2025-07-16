@@ -35,7 +35,7 @@ Policies are configured on the **Work processing policies** page. The following 
 | Deferred processing threshold   | A value of **0** (zero) indicates that there is no threshold. In this case, deferred processing is used if it can be used. If the specific threshold calculation is below the threshold, the Immediate method is used. Otherwise, the Deferred method is used if it can be used. For sales and transfer-related work, the threshold is calculated as the number of associated source load lines that are being processed for the work. For replenishment work, the threshold is calculated as the number of work lines that are being replenished by the work. By setting a threshold of, for example, **5** for sales, smaller works that have fewer than five initial source load lines won't use deferred processing, but larger works will use it. The threshold has an effect only if the work processing method is set to **Deferred**. |
 | Deferred processing batch group |The batch group that is used for processing. |
 
-For deferred put-processing, the following work order types are supported: sales order, transfer order issue, and replenishment.
+For deferred put-processing, the following work order types are supported: sales order, transfer order issue, replenishment and packed container picking.
 
 ## Assigning the work creation policy
 
