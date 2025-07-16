@@ -4,13 +4,14 @@ description: Access troubleshooting information for deployments of Microsoft Dyn
 author: faix
 ms.author: osfaixat
 ms.topic: troubleshooting-general
-ms.custom: 
-  - bap-template
 ms.date: 02/03/2025
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.service: dynamics-365-op
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 # Troubleshoot on-premises deployments
 

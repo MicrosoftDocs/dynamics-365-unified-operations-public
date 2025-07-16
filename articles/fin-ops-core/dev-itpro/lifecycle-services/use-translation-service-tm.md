@@ -12,6 +12,7 @@ ms.search.validFrom: 2018-03-27
 ms.search.form: 
 ms.dyn365.ops.version: AX 7.3.0
 ms.assetid: 
+ms.custom: sfi-image-nochange
 ---
 
 # Translation memory files

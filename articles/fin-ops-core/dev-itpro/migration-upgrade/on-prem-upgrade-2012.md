@@ -4,8 +4,6 @@ description: Learn about the process for upgrading Microsoft Dynamics AX 2012 da
 author: faix
 ms.author: osfaixat
 ms.topic: upgrade-and-migration-article
-ms.custom: 
-  - bap-template
 ms.date: 06/19/2024
 ms.reviewer: johnmichalak 
 ms.search.region: Global
@@ -14,6 +12,9 @@ ms.dyn365.ops.version: 10.0.0
 search.app:
   - financeandoperationsonprem-docs
 ms.service: dynamics-365-op
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 
 # Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on-premises)

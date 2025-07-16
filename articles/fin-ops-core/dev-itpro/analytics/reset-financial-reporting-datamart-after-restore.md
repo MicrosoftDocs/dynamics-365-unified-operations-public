@@ -4,14 +4,15 @@ description: Learn how to reset the Financial reporting data mart for Microsoft 
 author: aprilolson
 ms.author: aolson
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 01/24/2024
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.search.form: FinancialReports
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 
 # Reset the Financial reporting data mart

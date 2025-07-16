@@ -6,7 +6,6 @@ ms.author: twheeloc
 ms.topic: how-to
 ms.date: 03/12/2024
 ms.update-cycle: 1095-days
-ms.custom: evergreen
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -14,6 +13,9 @@ ms.search.validFrom: 2016-11-30
 ms.search.form: BudgetPlanSetLayout
 ms.dyn365.ops.version: Version 1611
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
+ms.custom:
+  - evergreen
+  - sfi-image-nochange
 ---
 
 # Budget planning templates for Excel

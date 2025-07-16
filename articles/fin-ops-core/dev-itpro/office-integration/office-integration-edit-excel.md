@@ -4,9 +4,6 @@ description: Learn about creating Open in Office experiences for Excel and Word,
 author: jasongre
 ms.author: jasongre
 ms.topic: faq
-ms.custom: 
-  - bap-template
-  - evergreen
 ms.date: 01/23/2025
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
@@ -14,6 +11,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 05d8f7af-df6a-452f-a532-0f059eba4377
+ms.custom:
+  - bap-template
+  - evergreen
+  - sfi-image-nochange
 ---
 
 # Open in Excel experiences FAQ

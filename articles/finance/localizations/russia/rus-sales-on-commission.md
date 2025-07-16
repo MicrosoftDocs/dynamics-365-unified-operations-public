@@ -4,13 +4,14 @@ description: Learn about the functionality for sales on commission, including a 
 author: evgenypopov
 ms.author: evgenypopov
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 06/26/2024
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Sales on commission
