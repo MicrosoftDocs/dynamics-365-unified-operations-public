@@ -1,6 +1,6 @@
 ---
-title: Preview features in Dynamics 365 Commerce 10.0.44 (April 2025)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.44. 
+title: Preview features in Dynamics 365 Commerce 10.0.45 (September 2025)
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.45. 
 author: johnmichalak
 ms.date: 07/25/2025
 ms.update-cycle: 1095-days
@@ -12,11 +12,11 @@ ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: johnmichalak
 ms.search.validFrom: 2023-11-01
-ms.dyn365.ops.version: 10.0.44
+ms.dyn365.ops.version: 10.0.45
 
 ---
 
-# What's new or changed in Dynamics 365 Commerce 10.0.45 (July 2025)
+# What's new or changed in Dynamics 365 Commerce 10.0.45 (September 2025)
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,7 +43,7 @@ Microsoft Dynamics 365 Commerce version 10.0.45 includes platform updates. To le
   
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.44, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXXX).
+For information about the bug fixes included in each of the updates that are part of version 10.0.45, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXXX).
 
 ### Dynamics 365 and industry clouds: 2024 release wave 2 plan
 
