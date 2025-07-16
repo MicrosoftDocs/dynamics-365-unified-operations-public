@@ -4,13 +4,14 @@ description: Learn about features that have been removed, or that are planned fo
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.custom: 
-  - bap-template
 ms.date: 07/10/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 
 # Removed or deprecated platform features

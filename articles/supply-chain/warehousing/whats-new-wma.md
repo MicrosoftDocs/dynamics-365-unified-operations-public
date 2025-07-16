@@ -7,8 +7,9 @@ ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
 ms.date: 07/09/2025
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-ropc-nochange
 ---
 
 # What's new or changed in the Warehouse Management mobile app

@@ -5,8 +5,10 @@ author: Fhernandez0088
 ms.author: ankviklis
 ms.topic: get-started
 ms.date: 06/24/2025
-ms.custom: bap-template
 ms.reviewer: johnmichalak
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Get started with Electronic invoicing for Chile

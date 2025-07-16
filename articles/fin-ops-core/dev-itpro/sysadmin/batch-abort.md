@@ -12,6 +12,7 @@ ms.search.validFrom: 2019-05-08
 ms.search.form: 
 ms.dyn365.ops.version: Platform update 27
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
+ms.custom: sfi-image-nochange
 ---
 
 # <a id="legacy-abort"></a>Cancel a running batch job

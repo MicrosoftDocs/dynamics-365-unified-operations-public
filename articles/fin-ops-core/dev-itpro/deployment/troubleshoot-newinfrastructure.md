@@ -5,13 +5,14 @@ author: laneswenka
 ms.author: laswenka
 ms.topic: troubleshooting-general
 ms.date: 12/18/2018
-ms.custom: 
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2018-12-31
 ms.search.form: 
 ms.dyn365.ops.version: 8.1.1
+ms.custom:
+  - sfi-image-nochange
 ---
 
 # Troubleshoot environments deployed through self-service deployment

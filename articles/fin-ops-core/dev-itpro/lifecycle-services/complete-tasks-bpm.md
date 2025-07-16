@@ -11,6 +11,7 @@ ms.search.region: Global
 ms.search.validFrom:
 ms.search.form:
 ms.dyn365.ops.version: 2012
+ms.custom: sfi-image-nochange
 ---
 
 # Complete tasks in Business process modeler (BPM)

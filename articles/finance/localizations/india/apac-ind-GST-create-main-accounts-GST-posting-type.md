@@ -4,13 +4,14 @@ description: Learn how to create main accounts for the GST posting type, part of
 author: epodkolzina
 ms.author: epodkolzina
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 07/01/2024
 ms.reviewer: johnmichalak 
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Create main accounts for the GST posting type

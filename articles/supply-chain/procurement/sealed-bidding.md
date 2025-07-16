@@ -7,8 +7,9 @@ ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
 ms.date: 01/24/2025
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Sealed bidding for RFQs

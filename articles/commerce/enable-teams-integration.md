@@ -8,8 +8,9 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2021-01-15
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Enable Dynamics 365 Commerce and Microsoft Teams integration

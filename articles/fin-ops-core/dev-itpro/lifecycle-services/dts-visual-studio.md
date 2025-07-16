@@ -9,6 +9,7 @@ ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-12-13
+ms.custom: sfi-image-nochange
 ---
 
 # Dynamics 365 Translation Service Visual Studio extension
