@@ -4,7 +4,7 @@ description: Learn how to set up a mobile device menu item that lets workers reg
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 02/05/2024
+ms.date: 07/16/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSRFMenuItem
@@ -21,14 +21,20 @@ This article explains how to set up a mobile device menu item that lets workers 
 1. On the header of the new record, set the following fields:
 
     - **Menu item name** – Enter a unique name to identify the menu item.
-    - **Title** – The title that you enter will be shown in the user interface (UI). It doesn't have to be unique.
+    - **Title** – The title that you enter is shown in the user interface (UI). It doesn't have to be unique.
     - **Mode** – Select *Work*. This value is required because this mobile flow involves work.
     - **Use existing work** – Set this option to *No*, because the work is created as the movement is done.
 
 1. On the **General** FastTab, set the following fields:
 
     - **Work creation process** – Select *Movement by template*, because this type of work is what the menu item supports. The page is updated to provide settings that are relevant to this type of work.
-    - **Display inventory status** – Set this option to *Yes* to show the inventory status on the device. Set it to *No* to use the default inventory status. If the items that are moved have only one inventory status, that status is the default status. If you use only one inventory status, you typically won't have to show this information.
+    - **Display inventory status** – Select one of the following options:
+        - *Yes* – Show inventory status on the device. In this case, if default values are set for the **From inventory status** and/or **To inventory status** fields, then those values are used as defaults. To set these default data field values, select **Default data** on the Action Pane.
+        - *No* – Use the default inventory status specified on **Warehouse management parameters** page or at the warehouse level (available at **Warehouse management** \> **Setup** \> **Warehouse** \> **Warehouses**). The **Default data** settings for inventory status aren't used in this case.
+
+        > [!Note]
+        > If the moved items have only one inventory status, that status is the default status. If you only use one inventory status, you typically won't need to show this information on the device.
+
     - **Use default data** – Set this option to *Yes* if you want specific data fields to be shown by default to workers who use the mobile app. Default data field values can provide information that workers typically need in their daily work. After you set this option to *Yes*, select **Default data** on the Action Pane to open a page where you can select the fields to show. For example, the *From location* field is often useful. Set this option to *No* if you don't want to select any default data for the menu item.
     - **Use process guide** – Set this option to *No*, because process guide isn't currently supported for movements of items.
     - **Barcode data policy** – Select the policy to use when multiple fields are filled in based on a single bar code scan. Learn more in [GS1 bar codes](gs1-barcodes.md).
