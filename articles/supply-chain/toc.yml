@@ -1861,8 +1861,6 @@
           href: master-planning/supplier-requested-confirmed-dates.md
         - name: Create a schedule for a site
           href: master-planning/tasks/create-schedule-site.md
-        - name: Create a plan for a site
-          href: master-planning/tasks/create-plan-site.md
         - name: Master planning with demand forecasts
           href: master-planning/planning-optimization/demand-forecast.md
         - name: Master planning with supply forecasts
