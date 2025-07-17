@@ -4,7 +4,7 @@ description: Learn about how to configure virtual entities for finance and opera
 author: pnghub
 ms.author: abhijanand
 ms.topic: how-to
-ms.date: 04/09/2025
+ms.date: 07/17/2025
 ms.custom: NotInToc
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -21,10 +21,11 @@ ms.dyn365.ops.version: 10.0.12
 This article explains how to configure virtual entities for finance and operations apps in Microsoft Dataverse.
 
 > [!IMPORTANT]
-> For finance and operations apps environments for which the Microsoft Power Platform integration is enabled, the virtual entity configuration is automatically performed as part of the process for enabling the integration.The earlier manual configuration is no longer supported.
+> For finance and operations apps environments for which the Microsoft Power Platform integration is enabled, the virtual entity configuration is automatically performed as part of the process for enabling the integration. The manual configuration is no longer supported.
 > 
-> Note that each Dataverse environment must point to only one finance and operations instance at any time, and each finance and operations environment must point to only one Dataverse environment.
-> Virtual entities are not supported across tenants. The Microsoft Power Platform environment must be on the same Microsoft Entra tenant as the finance and operations apps environment.
+> Each Dataverse environment must point to only one finance and operations instance at any time, and each finance and operations environment must point to only one Dataverse environment.
+> 
+> Virtual entities aren't supported across tenants. The Microsoft Power Platform environment must be on the same Microsoft Entra tenant as the finance and operations apps environment.
 > 
 > For more information about how to enable the Microsoft Power Platform integration for finance and operations apps environments, see [Enable the Microsoft Power Platform integration](enable-power-platform-integration.md).
 
