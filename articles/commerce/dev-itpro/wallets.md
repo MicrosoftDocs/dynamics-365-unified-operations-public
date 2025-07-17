@@ -134,7 +134,6 @@ The following section describes the current limitations with wallet payment meth
 The following limitations will be fixed in future releases.
 
 - If the **Enable use of non-recurring tokens in Commerce** feature is enabled and the wallet is used for authorization of the remaining balance for a customer order in POS, then during order pickup in POS, the authorization isn't found and the customer needs to present the payment again.
-- If the wallet is used for customer order deposit, the customer order can't be returned via the call center, but can be returned in POS.
 - The standard customer receipt doesn't show the card type information (for example, Alipay or WeChat Pay) on the receipt.
    
 #### Limitations without a planned fix date
