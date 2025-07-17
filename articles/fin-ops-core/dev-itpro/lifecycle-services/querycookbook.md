@@ -2,7 +2,7 @@
 title: Query cookbook
 description: Learn about queries in the SQL Insights tab and how they should be used when troubleshooting performance issues.
 author: sericks007
-ms.author: gned
+ms.author: priysharma
 ms.topic: article
 ms.date: 11/09/2021
 ms.reviewer: johnmichalak

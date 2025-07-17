@@ -2,7 +2,7 @@
 title: Data entity export performance tips
 description: Access tips that can help improve performance during export, including an overview of limiting the number of data sources.
 author: pnghub
-ms.author: gned
+ms.author: priysharma
 ms.topic: article
 ms.custom: 
   - bap-template
