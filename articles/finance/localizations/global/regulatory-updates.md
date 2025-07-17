@@ -33,6 +33,12 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
+| Estonia | July 2025 | 10.0.46, also available in prior versions | Regulatory update to support changes in VAT declaration format for Estonia 2025. [VAT declaration for Estonia](../estonia/emea-est-vat-declaration.md) |
+| Australia | May 2025| 10.0.45, 10.0.44HF, 10.0.43HF, 10.0.42HF | Regulatory update to support changes in Payment times reporting schema (PTRS) required for Australian legal entities for periods from July 1, 2024. [Payment times reporting schema](../australia/apac-aus-payment-times-report.md) |
+| Czech Republic | May 2025 | 10.0.45, also available in prior versions | Regulatory update to support changes in VAT declaration format for Czech Republic 2025. [VAT declaration - Czech Republic](../czech-republic/emea-cze-vat-declaration-tax-declaration-model.md) |
+| Hungary | April 2025 | 10.0.45, also available in prior versions | Regulatory update to support changes in VAT declaration format for Hungary 2024-2025. [VAT declaration (Hungary)](../hungary/emea-hun-vat-declaration-hungary.md). |
+| Mexico | March 2025 | 10.0.44, 10.0.43HF, 10.0.42HF, 10.0.41HF | DIOT declaration statement regulatory update to support new rules for DIOT 2025. [DIOT declaration statement](../iberoamerica/latam-mex-diot-declaration-statement.md) | 
+| Italy | February 2025 | 10.0.44, 10.0.43HF, 10.0.42HF, 10.0.41HF | [Unique certification](../italy/emea-ita-exil-unique-certification.md) - 2025 |
 | Poland | November 2024 | 10.0.40HF, 10.0.41HF, 10.0.42HF, 10.0.43 | [SAF Accounting Books Income Tax - JPK_KR_PD](../poland/emea-pol-standard-audit-file-saf-pd.md) |
 | Japan | September 2024 | 10.0.39HF, 10.0.40HF, 10.0.41HF, 10.0.42 | Japan consumption Tax return report layout change - 2024 for periods after October 1, 5th year of Reiwa. [Japan consumption tax report](../japan/apac-jpn-consumption-tax-report.md) |
 | Norway | August 2024 | 10.0.39HF, 10.0.40HF, 10.0.41HF, 10.0.42 | [Standard Audit File for Tax (SAF-T) for Norway](../norway/emea-nor-satndard-audit-file-for-tax.md) version 1.30 required from January 1, 2025. |
