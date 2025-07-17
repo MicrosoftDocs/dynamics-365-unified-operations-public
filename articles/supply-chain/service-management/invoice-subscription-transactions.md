@@ -3,11 +3,14 @@ title: Invoice subscription transactions
 description: Learn how you can invoice subscription transactions, including a step-by-step process for invoicing subscription transactions.
 author: Henrikan
 ms.author: henrikan
-ms.topic: how-to
-ms.date: 05/03/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMASubscriptionTable
+ms.topic: how-to
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 
@@ -27,6 +30,6 @@ ms.search.form: SMASubscriptionTable
 
 6. Select **OK** to create the invoice proposal on the **Invoice proposals** page.
 
-7. Verify the contents of the invoice, select **Post invoice** to open the **Post invoice** page to post the invoice. You can also print the invoice from the **Post invoice** page.
+7. Verify the contents of the invoice. Select **Post invoice** to open the **Post invoice** page to post the invoice. You can also print the invoice from the **Post invoice** page.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

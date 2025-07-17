@@ -4,10 +4,11 @@ description: Learn how to set up Microsoft Dynamics 365 Finance to use Panamania
 author: Fhernandez0088
 ms.author: ankviklis
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 02/10/2025 
 ms.reviewer: johnmichalak
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Get started with Electronic invoicing for Panama

@@ -4,7 +4,8 @@ description: This article provides information about bills of materials (BOMs) a
 author: johanhoffmann
 ms.author: johanho
 ms.topic: article
-ms.date: 04/19/2024
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen
@@ -65,7 +66,7 @@ Before a BOM version can be used in the planning or manufacturing process, it mu
 
 ### Activation of the default BOM or formula version
 
-To set a specific BOM or formula as the default BOM version or formula version that will be used by master planning or used to create of production orders, you must activate the version. When a version is activated, the uniqueness of the version for the given constraints (for example, period, site, or quantity) is verified. You receive an error message if the version that you're trying to activate conflicts with a version that is already active. You must then either inactivate the conflicting version or modify the version constraints (usually the period) to prevent an ambiguous activation.
+To set a specific BOM or formula as the default BOM version or formula version that will be used by master planning or used to create of production orders, you must activate the version. When a version is activated, the uniqueness of the version for the given constraints (for example, period, site, or quantity) is verified. You receive an error message if the version that you're trying to activate conflicts with a version that is already active. You must then either deactivate the conflicting version or modify the version constraints (usually the period) to prevent an ambiguous activation.
 
 ### Product change with case management
 

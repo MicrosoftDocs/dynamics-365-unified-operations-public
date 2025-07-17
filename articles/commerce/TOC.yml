@@ -620,6 +620,8 @@
               href: dev-itpro/apple-pay-adyen.md
             - name: Enable Tap to Pay on iPhone
               href: dev-itpro/tap-to-pay-iphone.md
+            - name: Enable Pay by Link in point of sale using Adyen connector
+              href: dev-itpro/pay-by-link-overview.md
             - name: Troubleshoot Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-troubleshoot.md
           - name: Saving online payment instruments with the Adyen connector
@@ -2754,6 +2756,8 @@
           items:
           - name: Introduction to Commerce Scale Unit (CSU) Core
             href: dev-itpro/CSU-core.md
+          - name: Get started with Headless Commerce Integration
+            href: dev-itpro/headless-commerce-integration.md
         - name: APIs and reference
           items:
           - name: Commerce Scale Unit customer and consumer APIs

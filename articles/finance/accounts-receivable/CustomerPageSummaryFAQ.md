@@ -5,6 +5,7 @@ author: EricWang
 ms.author: wangchen
 ms.topic: faq
 ms.date: 01/31/2025
+ms.update-cycle: 180-days
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
 audience: Application User

@@ -1,12 +1,12 @@
 ---
 title: IRAS Audit File (IAF) for Singapore
-description: Learn how to set up and generate the IRAS Audit File (IAF) for Singapore for legal entities that have a primary address in Singapore.
+description: Learn how to set up and generate the IRAS Audit File (IAF) for Singapore for legal entities that have a primary address in Singapore in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/26/2024
+ms.date: 07/11/2025
 ms.reviewer: johnmichalak
 ms.search.region: Singapore
 
@@ -16,9 +16,9 @@ ms.search.region: Singapore
 
 [!include [banner](../../includes/banner.md)]
 
-According to Inland Revenue Authority of Singapore (IRAS), companies in Singapore should maintain a listing of sales and purchases to support the figures that are reported in Goods and Services Tax (GST) returns. During an audit, the listing is provided in the form of an IRAS Audit File (IAF).
+This article explains how to set up and generate the IRAS Audit File (IAF) for Singapore for legal entities that have a primary address in Singapore in Microsoft Dynamics 365 Finance.
 
-This article describes how to set up Microsoft Dynamics 365 Finance to prepare the IAF in text format for legal entities that have a primary address in Singapore.
+According to Inland Revenue Authority of Singapore (IRAS), companies in Singapore should maintain a listing of sales and purchases to support the figures that are reported in Goods and Services Tax (GST) returns. During an audit, the listing is provided in the form of an IRAS Audit File (IAF).
 
 The IAF in text format is available in Finance as of version 10.0.26.
 
@@ -56,25 +56,27 @@ In the IAF for Singapore, sales tax codes that are used in Finance must be assoc
 If your legal entity's GST codes are set up in accordance with the Singaporean standard GST codes, follow these steps.
 
 1. In the **Electronic reporting** workspace, in the configuration tree, select the **IRAS Audit File - IAF in TXT (SG)** ER format.
-2. Make sure that the company that you're working in is the company that you will run the IAF for Singapore for.
+2. Confirm that the company that you're working in is the company for which you'll run the IAF for Singapore.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 4. On the left side of the **Application specific parameters** page, select the version of the format that you want to use.
 5. Change the value of the **State** field to **Completed**, save your changes, and close the page.
 
-If your legal entity's GST codes are **not** set up in accordance with the Singaporean standard GST codes, follow these steps to associate GST codes that are used in Finance with Singaporean standard GST codes.
+If your legal entity's GST codes aren't set up in accordance with the Singaporean standard GST codes, follow these steps to associate GST codes that are used in Finance with Singaporean standard GST codes.
 
 1. In the **Electronic reporting** workspace, in the configuration tree, select the **IRAS Audit File - IAF in TXT (SG)** ER format.
-2. Make sure that the company that you're working in is the company that you will run the IAF for Singapore for.
+2. Confirm that the company that you're working in is the company for which you'll run the IAF for Singapore.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 4. On the left side of the **Application specific parameters** page, select the version of the format that you want to use.
 5. On the **Lookup** FastTab, select **StandardTaxCodes\_Lookup**.
 6. On the **Conditions** FastTab, specify criteria by adding lines for each **Result** value that must be used in the selected company. If several GST codes in the selected company must result in the same standard GST code, add a separate line for each GST code, and specify the same standard GST code for each.
 7. Select the **Other** value as the last condition in the list. This condition must be set to **\*Not blank\*** in the **GST code** column. Use the value in the **Line** column to verify that **Other** is the last condition in the table.
-8. When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
+8. When you finish setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
 
 ### <a name="features"></a>Enable features in Feature management
 
-1. Open the **Feature management** workspace.
+To enable features in Feature management, follow these steps.
+
+1. Go to the **Feature management** workspace.
 2. On the **All** tab, find and select the following features in the feature list. Note that enabling some of these features is optional.
 
     | Feature name | Mandatory or optional |
@@ -88,6 +90,8 @@ If your legal entity's GST codes are **not** set up in accordance with the Singa
 3. Select **Enable now**.
 
 ### <a name="gl-param"></a>Select the ER configuration in General ledger parameters
+
+To select the ER configuration in General ledger parameters, follow these steps.
 
 1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
 2. On the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **IRAS Audit File - IAF in TXT (SG)**.
@@ -117,7 +121,7 @@ To report the GST Registration Number of the company that is reporting the IAF, 
 To generate an IAF for Singapore, follow these steps.
 
 1. Go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
-2. In the report dialog box, set the following fields.
+2. In the report dialog, set the following fields.
 
     | Field name | Description |
     | ---------- | ----------- |

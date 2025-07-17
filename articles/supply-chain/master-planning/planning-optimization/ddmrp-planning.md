@@ -1,8 +1,8 @@
 ---
 title: Demand-driven planning
 description: Learn how to generate planned orders for items that are set up as decoupling points with an outline on net flow and qualified demand.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 06/30/2022
 ms.reviewer: kamaybac

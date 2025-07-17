@@ -4,13 +4,14 @@ description: Learn how to set up electronic messages for SPED-Reinf events for B
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 06/26/2024
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8.1
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Set up electronic messages for SPED-Reinf events

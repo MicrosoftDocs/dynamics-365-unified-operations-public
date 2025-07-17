@@ -7,8 +7,9 @@ ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
 ms.date: 06/24/2024
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Install and set up Inventory Visibility

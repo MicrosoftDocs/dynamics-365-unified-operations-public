@@ -4,7 +4,7 @@ description: Access links to troubleshooting resources and frequently asked ques
 author: kamaybac
 ms.author: kamaybac
 ms.topic: overview
-ms.date: 04/19/2024
+ms.date: 07/09/2025
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -15,7 +15,6 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../includes/azure-ad-to-microsoft-entra-id.md)]
-
 
 ## Troubleshooting articles
 

@@ -106,15 +106,15 @@ After business events are activated, they appear on the **Active events** tab.
 
 ![Active business events.](../media/businesseventsactivetab.png)
 
-From the **Active events** tab, you can inactivate business events. The system doesn't perform outbound processing for inactivated events.
+From the **Active events** tab, you can deactivate business events. The system doesn't perform outbound processing for deactivated events.
 
-After business events are inactivated, they appear on the **Inactive events** tab.
+After business events are deactivated, they appear on the **Inactive events** tab.
 
 ![Inactive business events.](../media/businesseventsinactivetab.png)
 
-Business events can be inactivated when processing of business events must be paused for a period because of specific system maintenance activities in the integration landscape.
+Business events can be deactivated when processing of business events must be paused for a period because of specific system maintenance activities in the integration landscape.
 
-When business requirements change, some business events might no longer be required. In this case, you can inactivate them instead of deleting them from the list of active events. This approach is useful if the history of errors for the business events must be preserved. Inactivated business events can be deleted later, when there's no longer a business need to keep them inactivated.
+When business requirements change, some business events might no longer be required. In this case, you can deactivate them instead of deleting them from the list of active events. This approach is useful if the history of errors for the business events must be preserved. Inactivated business events can be deleted later, when there's no longer a business need to keep them deactivated.
 
 ## Errors
 

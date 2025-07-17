@@ -2,6 +2,7 @@
 title: Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)
 description: This FAQ provides answers to frequently asked questions about the AI technology that's used to generate follow-up questions in the Copilot sidecar in finance and operations apps. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 10/29/2024
+ms.update-cycle: 180-days
 ms.collection:
   - bap-ai-copilot
 ms.custom:

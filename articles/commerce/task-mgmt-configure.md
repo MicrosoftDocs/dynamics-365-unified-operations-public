@@ -9,6 +9,7 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2020-02-03
+ms.custom: sfi-image-nochange
 ---
 
 # Configure task management

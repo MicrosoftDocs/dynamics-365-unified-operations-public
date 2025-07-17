@@ -4,14 +4,15 @@ description: Learn about recurring integrations, including the process of data m
 author: pnghub
 ms.author: priysharma
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 03/13/2025
 ms.reviewer: johnmichalak
 ms.assetid: 70a4f748-b0bd-44b1-a118-56aacb91481c
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Recurring integrations

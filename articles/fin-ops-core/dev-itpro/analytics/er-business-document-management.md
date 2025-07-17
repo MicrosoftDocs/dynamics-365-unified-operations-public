@@ -12,6 +12,7 @@ ms.search.validFrom: 2019-08-01
 ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 ms.dyn365.ops.version: 10.0.5
 ms.assetid: 
+ms.custom: sfi-image-nochange
 ---
 
 # Business document management overview

@@ -1,12 +1,12 @@
 --- 
 title: Generate a constrained plan
 description: This article explains how to create a plan that takes into account both material and capacity constraints. 
-author: t-benebo
+author: Henrikan
 ms.date: 08/02/2019
 ms.topic: how-to 
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqPlanSched   
 ms.reviewer: kamaybac
-ms.author: benebotg
+ms.author: henrikan
 ---
 # Generate a constrained plan
 

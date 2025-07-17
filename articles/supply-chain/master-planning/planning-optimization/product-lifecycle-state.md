@@ -1,8 +1,8 @@
 ---
 title: Exclude products that have specific product lifecycle states
 description: Learn how to exclude products based on their lifecycle state, including an outline on the Is active for planning option being toggled.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 11/13/2020
 ms.custom: 

@@ -2,7 +2,7 @@
 title: Troubleshoot service authentication issues
 description: Access some tips for troubleshooting issues that involve service authentication, including reviewing event logs.
 author: pnghub
-ms.author: gned
+ms.author: priysharma
 ms.topic: troubleshooting-general
 ms.date: 12/20/2024
 ms.reviewer: johnmichalak
@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: sfi-image-nochange
 ---
 
 # Troubleshoot service authentication issues

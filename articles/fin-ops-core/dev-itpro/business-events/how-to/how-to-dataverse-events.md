@@ -4,13 +4,14 @@ description: Learn about how to subscribe to and manage finance and operations a
 author: jaredha
 ms.author: kamanick
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 06/19/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-11-03
 ms.dyn365.ops.version: 10.0.22
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Subscribe to events in Dataverse

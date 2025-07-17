@@ -1,8 +1,8 @@
 ---
 title: Supply risk assessment overview
 description: Access an overview of the Supply risk assessment workspace, which helps supply managers understand the risk of encountering sourcing shortages and delays.
-author: cabeln
-ms.author: cabeln
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: overview 
 ms.date: 05/22/2024
 ms.custom: bap-template

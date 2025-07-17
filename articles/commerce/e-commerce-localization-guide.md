@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce e-commerce localization guide
 description: This article describes how to localize a Microsoft Dynamics 365 Commerce e-commerce site into additional languages and configure the site to support multiple channels.
 author: bicyclingfool
-ms.date: 08/02/2024
+ms.date: 07/16/2025
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -176,7 +176,7 @@ In most cases, you'll work with a localization vendor to translate your XLIFF fi
     > This locale identifier must match the locale identifier from the **Channels** page in site settings.
 - For each //source element, add a target element sibling where the text value is the localized version of the content of that source element.
 
-For information about the schema that governs XLIFF files, see the [XLIFF 1.2 Specification](http://docs.oasis-open.org/xliff/xliff-core/xliff-core.html).
+For information about the schema that governs XLIFF files, see the [XLIFF 2.2 Specification](https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2-part1.html).
 
 > [!NOTE]
 > To localize an asset into multiple languages, you must create a localized XLIFF file for each of those languages.

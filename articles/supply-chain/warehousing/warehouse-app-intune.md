@@ -5,9 +5,11 @@ author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
 ms.date: 02/20/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Mass deploy the mobile app with service-based authentication

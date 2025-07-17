@@ -331,6 +331,8 @@ items:
             href: sysadmin/archive-inventory-journal.md
           - name: Archive Commerce transactions
             href: ../../commerce/archive-transactions.md
+          - name: Purge from history archive (preview)
+            href: sysadmin/archive-purge.md
         - name: Finance and operations apps archive with Dataverse long term retention FAQ
           href: sysadmin/archive-faq.md
     - name: Azure Data Lake
@@ -2363,7 +2365,7 @@ items:
           href: copilot/copilot-application-context.md
         - name: Create client plugins for Copilot in finance and operations apps
           href: copilot/copilot-client-plugins.md
-        - name: Create AI plugins with finance and operations business logic (preview)
+        - name: Create AI tools with finance and operations business logic (preview)
           href: copilot/copilot-ai-plugins.md
         - name: Tutorials
           items:
@@ -2371,7 +2373,7 @@ items:
             href: copilot/tutorial-create-low-code-plugins.md
           - name: Create client plugins for Copilot in finance and operations apps
             href: copilot/tutorial-create-client-plugins.md
-          - name: Create AI plugins with finance and operations business logic
+          - name: Create AI tools with finance and operations business logic
             href: copilot/tutorial-create-ai-plugins.md
     - name: Responsible AI
       items:

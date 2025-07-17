@@ -1,8 +1,8 @@
 ---
 title: Net requirements and pegging information with the deprecated master planning engine
 description: Learn about calculated net requirements and pegging information in the deprecated master planning engine when you run master planning.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 04/20/2022
 ms.reviewer: kamaybac

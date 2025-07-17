@@ -5,13 +5,14 @@ author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 06/10/2024
-ms.custom: 
 ms.reviewer: kamaybac
 audience: IT Pro
 ms.search.region: global
 ms.dyn365.ops.version: July 2017 update
 ms.search.form: 
 ms.search.validFrom: 2017-07-8
+ms.custom:
+  - sfi-image-nochange
 ---
 
 # Synchronize contacts directly from Sales to contacts or customers in Supply Chain Management

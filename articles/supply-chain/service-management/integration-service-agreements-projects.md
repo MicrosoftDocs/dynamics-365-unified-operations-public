@@ -3,11 +3,14 @@ title: Integration for service agreements and projects
 description: When you work with service agreements and service agreement lines, you use data that is set up in the areas in Project management and accounting.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 05/01/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: ProjParameters
+ms.topic: how-to
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Integration for service agreements and projects

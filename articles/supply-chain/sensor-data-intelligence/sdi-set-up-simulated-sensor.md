@@ -7,6 +7,7 @@ ms.topic: how-to
 ms.date: 09/02/2022
 ms.reviewer: kamaybac
 ms.search.form:
+ms.custom: sfi-ropc-blocked
 ---
 
 # Set up a simulated sensor for testing (preview)

@@ -4,10 +4,11 @@ description: Learn how to generate the EU sales list for Netherlands in Microsof
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 06/05/2025
 ms.reviewer: johnmichalak
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # EU sales list for Netherlands

@@ -9,8 +9,9 @@ ms.search.region: Global
 ms.author: asharchw
 ms.reviewer: v-chrgriffin
 ms.search.validFrom: 2022-12-30
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Comparison of ETW and EventLog logger functionality

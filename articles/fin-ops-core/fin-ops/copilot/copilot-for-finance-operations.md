@@ -7,6 +7,7 @@ ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
 ms.date: 06/17/2025
+ms.update-cycle: 180-days
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template

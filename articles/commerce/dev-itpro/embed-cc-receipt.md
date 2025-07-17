@@ -12,6 +12,7 @@ ms.search.validFrom: 04-31-2020
 ms.dyn365.ops.version: AX 7.0.1
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.industry: Retail
+ms.custom: sfi-image-nochange
 ---
 
 # Embed processor credit card receipts in customer receipts

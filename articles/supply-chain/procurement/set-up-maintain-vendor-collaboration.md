@@ -45,10 +45,10 @@ The **Vendor admin (external)** role can be used for external vendors that maint
 - View and modify contact person information, such as the person's title, email address, and telephone number.
 - Add a new or existing contact person to the vendor accounts that they are a contact for.
 - Delete any contact person that they have created.
-- Activate or inactivate the association between a contact person and a vendor account. After the association between a contact person and a vendor account is inactivated, the contact person can't be referred to on new purchase orders or other documents.
-- Deny or allow a contact person's access to documents on the vendor collaboration interface that are specific to the vendor account. After the association between a contact person and a vendor account is inactivated, access to documents that are specific to the vendor account is always denied.
+- Activate or deactivate the association between a contact person and a vendor account. After the association between a contact person and a vendor account is deactivated, the contact person can't be referred to on new purchase orders or other documents.
+- Deny or allow a contact person's access to documents on the vendor collaboration interface that are specific to the vendor account. After the association between a contact person and a vendor account is deactivated, access to documents that are specific to the vendor account is always denied.
 - Request a new user account for a contact person by using the **Provision user** action.
-- Request that a contact person's user account be inactivated.
+- Request that a contact person's user account be deactivated.
 - Request that a contact person's user account be modified to add or remove security roles.
 - View RFQs.
 
@@ -86,7 +86,7 @@ Vendor collaboration user requests are submitted either by external vendors that
 There are three types of requests:
 
 - Requests to provision a new user
-- Requests to inactivate an existing user
+- Requests to deactivate an existing user
 - Requests to modify the security roles of an existing user
 
 For more information about vendor collaboration user requests, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
@@ -119,8 +119,8 @@ To set up this branching, create a new workflow of the **User Request Workflow (
 
 Create a workflow of the **Inactivate user request workflow platform** type, and then add the following tasks.
 
-1. Assign an approval task to the person who is responsible for accepting requests to inactivate users. You can add conditions to automate this approval step.
-2. Add an automated task that inactivates the user. Use the **Automated user inactivation** task for this step.
+1. Assign an approval task to the person who is responsible for accepting requests to deactivate users. You can add conditions to automate this approval step.
+2. Add an automated task that deactivates the user. Use the **Automated user inactivation** task for this step.
 3. Add any clean-up tasks that are required. For example, you can add a task that removes the account from your directory in Azure portal.
 
 ## Enable vendor collaboration for a specific vendor
@@ -137,8 +137,7 @@ For more information about the process that is used in the **Send Azure B2B user
 
 ## Related information
 
-[Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md)
-
-Watch a short video on the vendor onboarding process: [Onboard a new vendor](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
+- [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md)
+- Watch a short video on the vendor onboarding process: [Onboard a new vendor](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
