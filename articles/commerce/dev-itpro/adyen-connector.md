@@ -172,7 +172,7 @@ The following table lists the current Dynamics 365 Commerce Payment Connector fo
 | WeChat Pay | ✔ | No |
 
 > [!NOTE]
-> Support for Affirm, Alipay, and WeChatPay payment methods is added for "card present" scenarios starting with Commerce version 10.0.40. For information on setup and known limitations, see [Wallet payment support](wallets.md).
+> To enable the scenario of using digial wallets for placing the orders through point of sale and returning such orders in call center, a flight named RetailPaymentCreateNonRecurringCreditCardFlight needs to be enabled for versions prior to 10.0.45. Contact Microsoft support to enable this flight. For information on setup and known limitations for digital wallets, see [Wallet payment support](wallets.md).
 
 #### Supported card present input methods
 
