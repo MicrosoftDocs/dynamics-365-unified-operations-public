@@ -100,7 +100,10 @@ To enable the **Compress payment tokens** feature in headquarters, follow these 
 1. Under **All**, search for the **Compress payment tokens** feature.
 1. Select the feature, and then select **Enable now** in the properties pane.
 
-Once the **Compress payment tokens** feature is enabled, the **Use compression** parameter in the **Archive credit card transaction data** parameters section can be set to **Yes**. (The **Use compression** parameter is available in Commerce versions 10.0.31 and higher).
+Once the **Compress payment tokens** feature is enabled, the **Use compression** parameter in the **Archive credit card transaction data** parameters section can be set to **Yes**.
+
+> [!IMPORTANT]
+> The **Use compression** parameter is displayed after 7 days of enabling the feature in the feature management. This restriction could be removed in future based on customer feedback.
 
 ## Additional resources
 
