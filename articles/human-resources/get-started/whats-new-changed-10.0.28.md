@@ -46,7 +46,7 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature name | More information |
 |--------------|------------------|
-| Task management information added to **Personnel management** workspace | The employee cards have been updated so that they include a checklist button that has the following options: **Apply checklist**, **"N" overdue tasks**, and **"N" open tasks**. For more information, see [Personnel workspace](/hr-personnel-personnel-management-workspace#starting-soon). |
+| Task management information added to **Personnel management** workspace | The employee cards have been updated so that they include a checklist button that has the following options: **Apply checklist**, **"N" overdue tasks**, and **"N" open tasks**. For more information, see [Personnel workspace](../../human-resources/hr-personnel-personnel-management-workspace.md#starting-soon). |
 | Signing limits logic updated to account for multiple compensation levels | When the multiple compensation levels feature is turned on, if more than one compensation level is assigned to a job, the most recent fixed compensation record is retrieved from the employee and used to determine the compensation level that is required for signing limits. If only one compensation level is assigned to the job, that compensation level is used. This behavior matches the behavior when the multiple compensation levels feature is turned off. |
 
 ## Additional resources
