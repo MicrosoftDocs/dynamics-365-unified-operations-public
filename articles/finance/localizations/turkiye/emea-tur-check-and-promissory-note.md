@@ -3,7 +3,7 @@ title: Use Check and promissory note for Türkiye
 description: Learn how to use check and promissory note in the Republic of Türkiye. 
 author: v-omerorhan 
 ms.author: v-omerorhan 
-ms.topic: Check and promissory note for Türkiye 
+ms.topic: how-to 
 ms.date: 07/15/2025 
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye 
