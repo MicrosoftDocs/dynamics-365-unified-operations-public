@@ -4278,22 +4278,22 @@
                       href: localizations/thailand/apac-tha-sales-vat-report.md
                     - name: Withholding tax
                       href: localizations/thailand/apac-tha-withholding-tax.md
-		            - name: Türkiye
+                - name: Türkiye
                   items:
-                  - name: Türkiye overview
-                    href: localizations/turkiye/turkiye.md
-                  - name: Set up a legal entity for Türkiye
-                    href: localizations/turkiye/emea-tur-set-up-legal-entity.md
-                  - name: Import currency exchange rates from Central Bank of the Republic of Türkiye (CBRT)
-                    href: general-ledger/import-currency-exchange-rates.md
-                  - name: Use continuous serial numbering of packing slips and invoices
-                    href: localizations/turkiye/emea-tur-serial-numbering.md
-                  - name: Use Exchange difference invoicing
-                    href: localizations/turkiye/emea-tur-exchange-difference-invoicing.md
-                  - name: Use currency conversion
-                    href: localizations/turkiye/emea-tur-currency-conversion.md
-                  - name: Generate e-Ledger
-                    href: localizations/turkiye/emea-tur-e-ledger.md
+                    - name: Türkiye overview
+                      href: localizations/turkiye/turkiye.md
+                    - name: Set up a legal entity for Türkiye
+                      href: localizations/turkiye/emea-tur-set-up-legal-entity.md
+                    - name: Import currency exchange rates from Central Bank of the Republic of Türkiye (CBRT)
+                      href: general-ledger/import-currency-exchange-rates.md
+                    - name: Use continuous serial numbering of packing slips and invoices
+                      href: localizations/turkiye/emea-tur-serial-numbering.md
+                    - name: Use Exchange difference invoicing
+                      href: localizations/turkiye/emea-tur-exchange-difference-invoicing.md
+                    - name: Use currency conversion
+                      href: localizations/turkiye/emea-tur-currency-conversion.md
+                    - name: Generate e-Ledger
+                      href: localizations/turkiye/emea-tur-e-ledger.md
                 - name: United Arab Emirates (UAE)
                   items:
                     - name: United Arab Emirates (UAE) overview
