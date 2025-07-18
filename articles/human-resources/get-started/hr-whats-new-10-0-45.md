@@ -39,5 +39,6 @@ This section contains a table that lists the enhancements that are included in t
 ## Features removed from Feature management
 
 The following table lists the features that were removed from Feature management in version 10.0.45.
+
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
