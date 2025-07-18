@@ -1,5 +1,5 @@
 ---
-title: Use serial numbering (preview)
+title: Use continuous serial numbering of packing slips and invoices
 description: Learn how to use serial numbering for packing slips and invoices in the Republic of Türkiye. 
 author: v-omerorhan 
 ms.author: v-omerorhan 
