@@ -4,7 +4,7 @@ description: Learn how to export financial information for auditors in Sweden in
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 07/18/2025
+ms.date: 07/21/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
