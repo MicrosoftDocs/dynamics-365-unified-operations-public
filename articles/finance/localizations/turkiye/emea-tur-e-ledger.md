@@ -1,5 +1,5 @@
 ---
-title: Use e-Ledger in the Republic of Türkiye (preview)
+title: Generate e-Ledger
 description: Learn how to use e-Ledger in the Republic of Türkiye.
 author: v-omerorhan 
 ms.author: v-omerorhan 
