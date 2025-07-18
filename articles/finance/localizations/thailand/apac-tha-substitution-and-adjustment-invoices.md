@@ -50,10 +50,10 @@ If the substitution/adjustment tax invoice functionality is enabled, the origina
 To print a substitution invoice, follow these steps.
 
 1. In Dynamics 365 Finance, go to the **Invoice journal** page and select the invoice to reprint.
-2. On the Action Pane, on the **Invoice** tab, select **Adjustment**.
-3. On the **Adjust tax invoice** page, create a new record, and then set the **Adjustment type** field to **Substitution**.
-4. In the **Description** field, enter the reason for the substitution.
-5. Return to the **Invoice journal** page, and select **View** \> **Substitution preview**. Confirm that you want to print the substitution invoice.
+1. On the Action Pane, on the **Invoice** tab, select **Adjustment**.
+1. On the **Adjust tax invoice** page, create a new record, and then set the **Adjustment type** field to **Substitution**.
+1. In the **Description** field, enter the reason for the substitution.
+1. Return to the **Invoice journal** page, and select **View** \> **Substitution preview**. Confirm that you want to print the substitution invoice.
 
 The substitution tax invoice includes the same information as the original tax invoice, but it has a "Substitution" mark. Additionally, a comment is added to the bottom of the substitution tax invoice. This comment includes the reason for the substitution, the sequence number, and the date of the substitution.
 
@@ -75,10 +75,10 @@ If the substitution/adjustment tax invoice functionality is enabled, you can adj
  To adjust the customer information and reprint the tax invoice, follow these steps.
 
 1. In Dynamics 365 Finance, go to the **Invoice journal** page and select the invoice to reprint.
-2. On the Action Pane, on the **Invoice** tab, select **Adjustment**.
-3. On the **Adjust tax invoice** page, create a new record, and set the **Adjustment type** field to **Adjustment**. In the **Description** field, enter the reason for the adjustment.
-4. Adjust the customer information fields as you require.
-5. Return to the **Invoice journal** page, and select **View** \> **Adjustment preview**. Confirm that you want to print the tax invoice.
+1. On the Action Pane, on the **Invoice** tab, select **Adjustment**.
+1. On the **Adjust tax invoice** page, create a new record, and set the **Adjustment type** field to **Adjustment**. In the **Description** field, enter the reason for the adjustment.
+1. Adjust the customer information fields as you require.
+1. Return to the **Invoice journal** page, and select **View** \> **Adjustment preview**. Confirm that you want to print the tax invoice.
 
 The adjusted tax invoice includes a new tax invoice number and adjusted customer information. All other information is the same as the information on the original tax invoice. A comment is added to the bottom of the adjusted tax invoice. This comment includes the reference to the original tax invoice, the reason for the adjustment, and the date of the adjustment.
 
