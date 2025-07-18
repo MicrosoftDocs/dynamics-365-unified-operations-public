@@ -13,10 +13,9 @@ ms.dyn365.ops.version: 10.0.9
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ---
 
-# Use serial numbering (preview)
+# Use continuous serial numbering of packing slips and invoices
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 In the Republic of Türkiye, specific number sequences are required for packing slips and invoices to ensure legal compliance and accurate tracking. To manage and track numbers in a system, you must follow a set of rules for number sequences. These rules ensure that each number is unique, in order, and easy to understand.
 
