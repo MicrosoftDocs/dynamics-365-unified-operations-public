@@ -1,11 +1,11 @@
 ---
 title: Currency capabilities in financial reporting
 description: Learn about financial reporting includes features that support complex currency reporting requirements, including an outline on filtering by currency.
-author: kfend
-ms.author: kfend
+author: twheeloc
+ms.author: jiwo
 ms.topic: article
-ms.date: 07/27/2021
-ms.reviewer: kfend
+ms.date: 07/18/2025
+ms.reviewer: twheeloc
 audience: IT Pro, Developer 
 ms.search.region: Global
 ms.search.validFrom: 2020-01-09
@@ -78,7 +78,7 @@ Currency translation for retained earnings accounts is subject to some specific 
    > [!NOTE]
    > You may have to personalize the form and add **Reference ID** as a column in order for this to display on the page.
 - The retained earnings account only translates system-generated transactions initiated through the fiscal year-end close process. If any transactions are posted directly, they will not be accurately reflected through translation. 
-- The retained earnings balance is translated at the rate that exists at the end of the most recently closed year. This means that it is a point-in time-calculation, not an accumulation of amounts and rates calculated from the beginning balance entered through today. 
+- The retained earnings balance is translated at the rate that exists at the end of the most recently closed year as long as the translation type for the account is set to transaction date. This means that it is a point-in time-calculation, not an accumulation of amounts and rates calculated from the beginning balance entered through today. 
 
 Functionality that was introduced in preview for Dynamics 365 Finance version 10.0.7 enables functionality for enhanced flexibility for consolidation and dual currency. To enable this functionality in preview, create a support incident for financial reporting to be enabled in a sandbox or development environment. 
 
