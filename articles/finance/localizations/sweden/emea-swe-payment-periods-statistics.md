@@ -4,7 +4,7 @@ description: Learn how to set up and generate the statistics of vendor payment p
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.date: 07/18/2025
+ms.date: 07/21/2025
 ms.reviewer: johnmichalak
 ms.search.region: APAC
 ms.search.validFrom: 2023-09-12
