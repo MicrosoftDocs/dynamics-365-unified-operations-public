@@ -77,8 +77,8 @@ Currency translation for retained earnings accounts is subject to some specific 
 - If the default category was renamed, financial reporting still expects the original with **Reference ID** of 29. 
    > [!NOTE]
    > You may have to personalize the form and add **Reference ID** as a column in order for this to display on the page.
-- The retained earnings account only translates system-generated transactions initiated through the fiscal year-end close process. If any transactions are posted directly, they will not be accurately reflected through translation. 
-- The retained earnings balance is translated at the rate that exists at the end of the most recently closed year as long as the translation type for the account is set to transaction date. This means that it is a point-in time-calculation, not an accumulation of amounts and rates calculated from the beginning balance entered through today. 
+- The retained earnings account only translates system-generated transactions initiated through the fiscal year-end close process. If any transactions are posted directly, they won't be accurately reflected through translation. 
+- The retained earnings balance is translated at the rate that exists at the end of the most recently closed year as long as the translation type for the account is set to transaction date. This means that it's a point-in time-calculation, not an accumulation of amounts and rates calculated from the beginning balance entered through today. 
 
 This feature improves the precision of calculations of retained earnings when earnings are calculated across multiple years using currency translation. When you enable this feature, any retained earnings account that has the **Currency translation type** field on the **Main accounts** page set to **Transaction date** calculates the translated balance of the account using rates and balances from its entire history using the end-of-year rate X the balance for all years, rather than only using the most recent year and rate.
 
@@ -112,11 +112,11 @@ You can use Financial reporting to calculate the CTA in two ways:
 
 1. Use the Rounding Adjustments dialog in the row definition
 
-Financial reporting calculates the amount of the difference from currency calculations using the rounding adjustments calculation. To use this calculation, edit the **Row Definition** and click **Edit > Rounding Adjustment**. Set the total assets row, total liabilities and equities row, and a threshold for maximum variance to silently accept. A line named **Rounding Adjustment** is created for the rounding difference row and shown upon drill-down of the row you've selected.
+Financial reporting calculates the amount of the difference from currency calculations using the rounding adjustments calculation. To use this calculation, edit the **Row Definition** and click **Edit > Rounding Adjustment**. Set the total assets row, total liabilities and equities row, and a threshold for maximum variance to silently accept. A line named **Rounding Adjustment** is created for the rounding difference row and shown upon drill-down of the selected row.
  
 2. Create a single line that includes all accounts and use it to calculate the CTA.
 
-Put all of the accounts in a range, from assets to expenses. The difference will be the same amount as the rounding adjustment (CTA) and you can use the total to verify that the rounding adjustment dialog doesn't include any missing account balances. 
+Put all of the accounts in a range, from assets to expenses. The difference is the same amount as the rounding adjustment (CTA) and you can use the total to verify that the rounding adjustment dialog doesn't include any missing account balances. 
 
 
 
