@@ -48,7 +48,7 @@ The following table shows the POS views that currently support extensions. It al
 | PaymentView                     | No                            | No                           | Yes                                  |
 | PriceCheckView                  | Yes                           | No                           | Yes                                   |
 | PriceCheckViewPhone             | No                            | No                           | Yes                                   |
-| SearchOrdersView                | No                            | Yes                          | No                                   |
+| SearchOrdersView                | No                            | Yes                          | Yes                                   |
 | SearchPickingAndReceivingView   | No                            | Yes                          | Yes                                   |
 | CustomerOrderHistoryView        | No                            | Yes                          | No                                   |
 | SearchStockCountView            | No                            | Yes                          | No                                   |
