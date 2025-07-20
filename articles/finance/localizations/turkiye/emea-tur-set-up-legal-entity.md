@@ -25,8 +25,7 @@ If it is not enabled, enable it. After you're sure that the feature is enabled, 
 
 ## Create a legal entity
 
-This section explains on how to create
-To create a legal entity;
+To create a legal entity:
 
 - Go to **Organization administration > Organizations > Legal entities**, create a legal entity, and set the country of the primary address to Türkiye. Some functionality is enabled only for Türkiye. Examples include specific reports or electronic invoices.
 
@@ -64,7 +63,7 @@ In the **Format** field;
 - For TURVAT_Organization, enter 10-digit "##########".
 - For TURVAT_Person, enter 11-digit "###########".
 
-Complete setting up the registration type and registration category for VAT ID by following the steps described in [Registration IDs](../../localizations/europe/emea-registration-ids.md).
+Complete setting up the registration type and registration category for VAT ID by following the steps described in [Set up VAT ID](../../localizations/europe/eur-00015-vat-id.md).
 
 ### Set up VAT ID of legal entity
 
@@ -88,7 +87,7 @@ To create a VAT ID for the legal entity follow these steps;
 
 ### Set up VAT IDs of customers and vendors
 
-This section explains how to add VAT registration IDs and to a customer and vendor account. This process is similar for legal entities and customers in all European countries/regions. 
+This section explains how to add VAT registration IDs to a customer or vendor account. 
 
 To create a VAT ID for a customer or a vendor, follow these steps:
 
