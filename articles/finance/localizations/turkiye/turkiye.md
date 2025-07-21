@@ -28,7 +28,7 @@ This section explains how to configure a legal entity for companies operating in
 You will learn how to define the legal entity, configure VAT-specific registration types, and assign VAT IDs for the legal entity, vendors, and customers. 
 These settings are essential for enabling local functionality such as tax reporting and e-document compliance.
 
-- [Set up a legal entity for Türkiye](../../localizations/turkiye/emea-tur-set-up-legal-entity.md)
+- [Set up a legal entity for Türkiye](../../localizations/turkiye/emea-turkiye-set-up-legal-entity.md)
 
 ## Import currency exchange rates from Central Bank of the Republic of Türkiye (CBRT)
 
