@@ -1,17 +1,16 @@
 ---
 title: Thailand unrealized and realized VAT
-description: Learn about unrealized and realized value-added tax (VAT) for Thailand, including an outline and step-by-step process for setting up VATs.
+description: Learn how to set up and work with unrealized and realized value-added tax (VAT) for Thailand in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 07/21/2025
 ms.reviewer: johnmichalak
 ms.search.region: Thailand
 ms.search.validFrom: 2016-11-30
 ms.search.form: TaxTable, VendParameters, CustParameters
-ms.dyn365.ops.version: Version 1611
 ms.assetid: 829a101f-e329-48b9-baf8-e36670ff43c8
 ---
 
@@ -19,7 +18,7 @@ ms.assetid: 829a101f-e329-48b9-baf8-e36670ff43c8
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about unrealized and realized value-added tax (VAT) for Thailand. It also explains how to settle transactions that have unrealized VAT, how to reverse unrealized VAT, and what reports can be generated.
+This article explains how to set up and work with unrealized and realized value-added tax (VAT) for Thailand in Microsoft Dynamics 365 Finance, including how to settle transactions that have unrealized VAT, reverse unrealized VAT, and generate reports.
 
 Currently, four types of VAT can be calculated. They are defined by two categorical attributes: **Purchase/Sales VAT** and **Realized/Unrealized VAT**. The following table provides information about each type of VAT.
 
@@ -98,37 +97,28 @@ Currently, four types of VAT can be calculated. They are defined by two categori
 
 ## Set up unrealized VAT and realized VAT
 
-1. Go to **Tax** > **Parameters** > **Setup** > **General ledger parameters**, and make sure that the **Manage realized and unrealized VAT** option is set to **Yes**, and that the **Calculation method** field is set to **Total**.
+To set up unrealized VAT and realized VAT, follow these steps.
 
-2. Go to **Tax** > **Setup** > **Sales tax** > **Ledger posting groups**, and set up ledger posting groups for unrealized VAT and realized VAT. For example, create two ledger posting groups: **UVAT** for unrealized VAT and **VAT** for realized VAT.
-
-    For more information, see [Set up Ledger posting groups for sales tax](../../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md).
-
-3. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**, and set up sales tax codes for unrealized VAT and realized VAT. For example, create two sales tax codes: **UVAT** for unrealized VAT and **VAT** for realized VAT.
+1. In Dynamics 365 Finance, go to **Tax** \> **Parameters** \> **Setup** \> **General ledger parameters**.
+1. Confirm that the **Manage realized and unrealized VAT** option is set to **Yes**, and that the **Calculation method** field is set to **Total**.
+1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Ledger posting groups**, and set up ledger posting groups for unrealized VAT and realized VAT. For example, create two ledger posting groups: **UVAT** for unrealized VAT and **VAT** for realized VAT. Learn more in [Set up Ledger posting groups for sales tax](../../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md).
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and set up sales tax codes for unrealized VAT and realized VAT. For example, create two sales tax codes: **UVAT** for unrealized VAT and **VAT** for realized VAT.
 
     > [!NOTE]
-    > 
-    > For both sales tax codes, the **Tax type** field should beset to **Normal**.
+    > For both sales tax codes, the **Tax type** field should be set to **Normal**.
 
-4. For each sales tax code, in the **Ledger posting group** field, select the corresponding ledger posting group that you created in step 2.
-
-5. For the sales tax code for unrealized VAT, in the **Payment sales tax code** field, select the corresponding sales tax code for realized VAT to enable unrealized VAT to be reversed to realized VAT at the time of payment.
-
-    For more information, see [Set up sales tax codes](../../general-ledger/tasks/set-up-sales-tax-codes.md).
-
-6. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**, and set up sales tax groups for unrealized VAT and realized VAT.
-
-7. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Item sales tax groups**, and set up item sales tax groups for unrealized VAT and realized VAT.
-
-8. Assign sales tax codes to sales tax groups and item sales tax groups.
+1. For each sales tax code, in the **Ledger posting group** field, select the corresponding ledger posting group that you created.
+1. For the sales tax code for unrealized VAT, in the **Payment sales tax code** field, select the corresponding sales tax code for realized VAT to enable unrealized VAT to be reversed to realized VAT at the time of payment. Learn more in [Set up sales tax codes](../../general-ledger/tasks/set-up-sales-tax-codes.md).
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax groups** and set up sales tax groups for unrealized VAT and realized VAT.
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Item sales tax groups** and set up item sales tax groups for unrealized VAT and realized VAT.
+1. Assign sales tax codes to sales tax groups and item sales tax groups.
 
 > [!IMPORTANT]
-> 
 > To prevent both unrealized VAT and realized VAT from being calculated for the same record, be sure to add the sales tax codes only to the sales tax group or item sales tax group that has the same tax type. For example, add the sales tax codes for unrealized VAT only to the sales tax group or item sales tax group for unrealized VAT.
 
 For more information about how to set up sales taxes, see [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
 
-## Working with unrealized and realized sales VAT
+## Work with unrealized and realized sales VAT
 
 ### Create and post a sales order or free text invoice that has unrealized VAT
 
@@ -142,9 +132,7 @@ When you post the sales order before you receive the payment from the customer, 
 | Unrealized VAT payable | -7.00 |
 | Trade Receivables - Domestic | 107.00 |
 
-
 > [!NOTE]
-> 
 > If you already received the payment for the sale from the customer, select the sales tax group and item sales tax group for realized VAT in the **Sales tax group** and **Item sales tax group** fields.
 
 ### Settle a customer transaction to generate a tax invoice or receipt and reverse posted unrealized sales VAT
@@ -159,18 +147,14 @@ After you reverse the unrealized sales VAT, the following tax transactions are g
 | Voucher | UVAT | -1000.00 | -70.00 |  |  |  |
 | Voucher | VAT | 1000.00 | 70.00 | THMF-000006 | 12/2/2020 | 12/3/2020 |
 
-
 > [!NOTE]
-> 
 > You can also settle the payment to the invoice from the **Settle open transactions** page.
 
-You must print a tax invoice before you make the payment and settle the customer transaction.
+You must print a tax invoice before you make the payment and settle the customer transaction. For more information about how to enter and settle customer payments, see [Customer payment overview](../../cash-bank-management/tasks/customer-payment-overview.md).
 
-For more information about how to enter and settle customer payments, see [Customer payment overview](../../cash-bank-management/tasks/customer-payment-overview.md).
+You can generate the **Sales VAT** report, which includes the realized sales VAT transactions together with the details of the VAT that the legal entity receives for the sales of goods and services. Learn more in [Sales tax reports](apac-tha-sales-vat-report.md).
 
-You can generate the **Sales VAT** report, which includes the realized sales VAT transactions together with the details of the VAT that the legal entity receives for the sales of goods and services. For more information, see [Sales tax reports](apac-tha-sales-vat-report.md).
-
-## Working with unrealized and realized purchase VAT
+## Work with unrealized and realized purchase VAT
 
 ### Create and post a purchase order that has unrealized VAT
 
@@ -184,9 +168,7 @@ When you post the purchase order before you receive the tax invoice from the ven
 | Accounts Payable | -107.00 |
 | Unrealized VAT receivable | 7.00 |
 
-
 > [!NOTE]
-> 
 > If you already received the tax invoice for the purchase from the vendor, select the sales tax group and item sales tax group for realized VAT in the **Sales tax group** and **Item sales tax group** fields. When you post the vendor invoice, enter the number of the tax invoice that you received from the vendor in the **Tax invoice number** field, enter the date when the vendor generated the tax invoice in the **Tax invoice date** field, and enter the date when you received the tax invoice from the vendor in the **Tax invoice receipt date** field.
 
 ### Create and post a vendor invoice journal that has unrealized VAT
@@ -201,33 +183,31 @@ You can generate the **Purchase Unrealized VAT Remaining** report, which include
 
 The process for reversing the unrealized purchase VAT varies, depending on when you receive the tax invoice from the vendor.
 
-- If you receive the tax invoice when you post the purchase order, follow these steps:
+If you receive the tax invoice when you post the purchase order, follow these steps.
 
-    1. Create a purchase order. On the **Line details** FastTab, on the **Setup** tab, in the **Sales tax** section, in the **Item sales tax** **group** and **Sales tax group** fields, select the corresponding sales tax group for realized VAT.
-    
-    2. Generate an invoice for the order. On the **Vendor invoice header** FastTab, set the **Tax invoice number**, **Tax invoice date**, and **Tax invoice receipt date** fields.
+1. In Dynamics 365 Finance, create a purchase order.
+1. On the **Line details** FastTab, on the **Setup** tab, in the **Sales tax** section, in the **Item sales tax** **group** and **Sales tax group** fields, select the corresponding sales tax group for realized VAT.
+1. Generate an invoice for the order.
+1. On the **Vendor invoice header** FastTab, set the **Tax invoice number**, **Tax invoice date**, and **Tax invoice receipt date** fields.
 
-- If you receive the tax invoice when you post the Vendor payment journal: On the **Vendor payments** page, on the **Payment** FastTab, set the **Tax invoice number**, **Tax invoice date**, and **Tax invoice receipt date** fields.
+If you receive the tax invoice when you post the vendor payment journal, follow these steps.
 
-- If you receive the tax invoice after you've made the payment and settled the invoice, follow these steps:
+1. In Dynamics 365 Finance, go to the **Vendor payments** page.
+1. On the **Payment** FastTab, set the **Tax invoice number**, **Tax invoice date**, and **Tax invoice receipt date** fields.
 
-    1.  Go to **Accounts payable** > **Payments** > **Reverse unrealized VAT**.
+If you receive the tax invoice after you've made the payment and settled the invoice, follow these steps.
 
-    2.  On the Action Pane, on the **Reversal journal** tab, in the **New** group, select **Reversal journal**.
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payments** \> **Reverse unrealized VAT**.
+1. On the Action Pane, on the **Reversal journal** tab, in the **New** group, select **Reversal journal**.
+1. Select criteria to include the payment journals that aren't realized, and then select **OK**.
+1. Select the **Vendor unrealized reversal ID** value of the journal. Alternatively, select the line for the journal, and then, on the Action Pane, on the **Reversal journal** tab, in the **Maintain** group, select **Edit**.
+1. Use the **Mark** field to select the transactions for which the tax invoice was received, and for which the unrealized purchase VAT must be reversed.
+1. On the **Reversal journal header** FastTab, set the **Tax invoice number**, **Tax invoice date**, and **Tax invoice receipt date** fields.
+1. On the Action Pane, on the **Reversal journal** tab, in the **Maintain** group, select **Post** to post the journal.
 
-    3.  Select criteria to include the payment journals that aren't realized, and then select **OK**.
+![Reversal journal page.](../media/apac_tha_reversal_journal_page.png)
 
-    4.  Select the **Vendor unrealized reversal ID** value of the journal. Alternatively, select the line for the journal, and then, on the Action Pane, on the **Reversal journal** tab, in the **Maintain** group, select **Edit**.
-
-    5.  Use the **Mark** field to select the transactions that the tax invoice was received for, and that the unrealized purchase VAT must be reversed for.
-
-    6.  On the **Reversal journal header** FastTab, set the **Tax invoice number**, **Tax invoice date**, and **Tax invoice receipt date** fields.
-
-    7.  On the Action Pane, on the **Reversal journal** tab, in the **Maintain** group, select **Post** to post the journal.
-
-        ![Reversal journal page.](../media/apac_tha_reversal_journal_page.png)
-
-After you reverse the unrealized purchase VAT, the following tax transactions will be present.
+After you reverse the unrealized purchase VAT, the following tax transactions are present.
 
 | **Source** | **Sales tax code** | **Amount origin** | **Calculated sales tax amount** | **Tax invoice number** | **Tax invoice date** | **Tax invoice receipt date** |
 |-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
@@ -235,10 +215,9 @@ After you reverse the unrealized purchase VAT, the following tax transactions wi
 | Voucher | UVAT | -75.00 | -5.25 |  |  |  |
 | Voucher | VAT | 75.00 | 5.25 | TH-0004 | 12/2/2020 | 12/3/2020 |
 
-
 The realized purchase VAT is posted to the purchase VAT account.
 
-You can generate the **Purchase VAT** report, which includes the realized purchase VAT transactions together with the details of the VAT that the legal entity must pay for the purchase of goods and services. For more information, see [Sales tax reports](apac-tha-sales-vat-report.md).
+You can generate the **Purchase VAT** report, which includes the realized purchase VAT transactions together with the details of the VAT that the legal entity must pay for the purchase of goods and services. Learn more in [Sales tax reports](apac-tha-sales-vat-report.md).
 
 
 

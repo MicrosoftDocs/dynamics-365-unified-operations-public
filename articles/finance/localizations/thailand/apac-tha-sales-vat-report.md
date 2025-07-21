@@ -1,12 +1,12 @@
 ---
 title: VAT reports
-description: Learn about the reports that you can use to submit information about value-added tax (VAT) amounts for sales and purchases to tax authorities in Thailand.
+description: Learn how to generate value-added tax (VAT) reports to submit to tax authorities in Thailand in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 07/21/2025
 ms.reviewer: johnmichalak
 ms.search.validFrom: 1900-01-02
 
@@ -16,17 +16,17 @@ ms.search.validFrom: 1900-01-02
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes the reports in Microsoft Dynamics 365 Finance that you can use to submit information about value-added tax (VAT) amounts for sales and purchases to tax authorities in Thailand.
+This article explains how to generate value-added tax (VAT) reports to submit to tax authorities in Thailand in Microsoft Dynamics 365 Finance.
 
 ## Generate the Purchase unrealized VAT remaining report
 
-The **Unrealized VAT remaining** report includes transactions that taxes haven't been realized for.
+The *Unrealized VAT remaining* report includes transactions for which taxes haven't been realized.
 
-1. Go to **Tax** > **Inquiries and reports** > **Sales tax reports** > **Purchase Unrealized VAT Remaining**.
+To generate the Purchase unrealized VAT remaining report, follow these steps.
 
-2. In the **Tax branch code** field, select a tax branch to generate the report only for the selected tax branch. For more information, see [Tax branch page](apac-tha-tax-branch-dimensions.md).
-
-3. Select **OK**, and review the report that is generated.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Purchase Unrealized VAT Remaining**.
+1. In the **Tax branch code** field, select a tax branch to generate the report only for the selected tax branch. Learn more in [Tax branch page](apac-tha-tax-branch-dimensions.md).
+1. Select **OK**, and review the report that is generated.
 
     ![Unrealized VAT remaining report.](../media/apac-tha-unrealized-VAT-remaining-report.png)
 
@@ -44,26 +44,21 @@ The **Unrealized VAT remaining** report includes transactions that taxes haven't
     | Tax amount | The calculated tax amount. |
     | Tax remaining amount | The tax amount that isn't due. |
 
+## Generate the Purchase VAT report for internal use
 
-## Generate the Purchase VAT report (for internal use)
+The *Purchase VAT* report for internal use includes transactions for which purchase VAT is realized. It also includes details of the VAT that the legal entity paid for the purchase of goods and services. This report is used internally to review the transactions for a specific period. It isn't submitted to the government.
 
-Two versions of the **Purchase VAT** report are available. One version is for internal use only, and the other is submitted to the government.
+Two versions of the Purchase VAT report are available. One version is for internal use only, and the other is submitted to the government.
 
-The **Purchase VAT** report for internal use includes transactions that purchase VAT is realized for. It also includes details of the VAT that the legal entity paid for the purchase of goods and services. This report is used internally to review the transactions for a specific period. It isn't submitted to the government.
+To generate the Purchase VAT report for internal use, follow these steps.
 
-1. Go to **Tax** > **Inquiries and reports** > **Sales tax reports** > **Purchase VAT report (for internal use)**.
-
-2. In the **Start date** and **End date** fields, define the period to generate the report for.
-
-3. In the **Tax branch** field, select a tax branch to generate the report only for the selected tax branch. For more information, see [Tax branch page](apac-tha-tax-branch-dimensions.md).
-
-4. In the **Sales tax code** field, select a sales tax code to generate the report only for the selected sales tax code.
-
-5. In the **Tax invoice number** field, enter the number of a tax invoice to generate the report only for the specified tax invoice.
-
-6. In the **Tax invoice date** field, select the date when the vendor generated the tax invoice.
-
-7. Select **OK**, and review the report that is generated.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Purchase VAT report (for internal use)**.
+1. In the **Start date** and **End date** fields, define the period for which to generate the report.
+1. In the **Tax branch** field, select a tax branch to generate the report only for the selected tax branch. Learn more in [Tax branch page](apac-tha-tax-branch-dimensions.md).
+1. In the **Sales tax code** field, select a sales tax code to generate the report only for the selected sales tax code.
+1. In the **Tax invoice number** field, enter the number of a tax invoice to generate the report only for the specified tax invoice.
+1. In the **Tax invoice date** field, select the date when the vendor generated the tax invoice.
+1. Select **OK**, and review the report that is generated.
 
     ![Purchase VAT report  for internal use .](../media/apac-tha-purchase-VAT-report-for-internal-use.png)
 
@@ -84,24 +79,19 @@ The **Purchase VAT** report for internal use includes transactions that purchase
     | Total amount | The total amount of goods and services. This amount includes calculated tax. |
     | Voucher | The number of the voucher for the transaction. |
 
-
 ## Generate the Purchase VAT report
 
-The **Purchase VAT** report includes transactions that purchase VAT is realized for. It includes details of the VAT that the legal entity paid for the purchase of goods and services. This report is generated every month and submitted to the government.
+The *Purchase VAT* report includes transactions for which purchase VAT is realized. It includes details of the VAT that the legal entity paid for the purchase of goods and services. This report is generated every month and submitted to the government.
 
-1. Go to **Tax** > **Inquiries and reports** > **Sales tax reports** > **Purchase VAT report**.
+To generate the Purchase VAT report, follow these steps.
 
-2. In the **Tax month** field, select the month to generate the report for.
-
-3. In the **Tax branch** field, select a tax branch to generate the report only for the selected tax branch. For more information, see [Tax branch page](apac-tha-tax-branch-dimensions.md).
-
-4. In the **Sales tax code** field, select a sales tax code to generate the report only for the selected sales tax code.
-
-5. In the **Tax invoice date** field, select the date when the vendor generated the tax invoice.
-
-6. In the **Tax invoice number** field, enter the sales tax code that the report should include transactions for.
-
-7. Select **OK**, and review the report that is generated.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Purchase VAT report**.
+1. In the **Tax month** field, select the month for which to generate the report.
+1. In the **Tax branch** field, select a tax branch to generate the report only for the selected tax branch. Learn more in [Tax branch page](apac-tha-tax-branch-dimensions.md).
+1. In the **Sales tax code** field, select a sales tax code to generate the report only for the selected sales tax code.
+1. In the **Tax invoice date** field, select the date when the vendor generated the tax invoice.
+1. In the **Tax invoice number** field, enter the sales tax code for which the report should include transactions.
+1. Select **OK**, and review the report that is generated.
 
     ![Purchase VAT report.](../media/apac-tha-purchase-VAT-report.png)
 
@@ -121,26 +111,21 @@ The **Purchase VAT** report includes transactions that purchase VAT is realized 
     | Tax amount | The calculated tax amount. |
     | Total amount | The total amount of goods and services. This amount includes calculated tax. |
 
+## Generate the Sales VAT report for internal use
 
-## Generate the Sales VAT report (for internal use)
+The *Sales VAT* report for internal use includes transactions for which sales VAT is realized. It also includes details of the VAT that the legal entity received for the sale of goods and services. This report is used internally to review the transactions for a specific period. It isn't submitted to the government.
 
-Two versions of the **Sales VAT** report are available. One version is for internal use only, and the other is submitted to the government.
+Two versions of the Sales VAT report are available. One version is for internal use only, and the other is submitted to the government.
 
-The **Sales VAT** report for internal use includes transactions that sales VAT is realized for. It also includes details of the VAT that the legal entity received for the sale of goods and services. This report is used internally to review the transactions for a specific period. It isn't submitted to the government.
+To generate the Sales VAT report for internal use, follow these steps.
 
-1. Go to **Tax** > **Inquiries and reports** > **Sales tax reports** > **Sales VAT report (for internal use)**.
-
-2. In the **Start date** and **End date** fields, define the period to generate the report for.
-
-3. In the **Tax branch** field, select a tax branch to generate the report only for the selected tax branch. For more information, see [Tax branch page](apac-tha-tax-branch-dimensions.md).
-
-4. In the **Sales tax code** field, select a sales tax code to generate the report only for the selected sales tax code.
-
-5. In the **Tax invoice date** field, select the date when the vendor generated the tax invoice.
-
-6. In the **Tax invoice number** field, enter the sales tax code that the report should include transactions for.
-
-7. Select **OK**, and review the report that is generated.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales VAT report (for internal use)**.
+1. In the **Start date** and **End date** fields, define the period for which to generate the report.
+1. In the **Tax branch** field, select a tax branch to generate the report only for the selected tax branch. Learn more in [Tax branch page](apac-tha-tax-branch-dimensions.md).
+1. In the **Sales tax code** field, select a sales tax code to generate the report only for the selected sales tax code.
+1. In the **Tax invoice date** field, select the date when the vendor generated the tax invoice.
+1. In the **Tax invoice number** field, enter the sales tax code for which the report should include transactions.
+1. Select **OK**, and review the report that is generated.
 
     ![Sales VAT report for internal use .](../media/apac-tha-sales-VAT-report-for-internal-use.png)
 
@@ -160,24 +145,19 @@ The **Sales VAT** report for internal use includes transactions that sales VAT i
     | Total amount | The total amount of goods and services. This amount includes calculated tax. |
     | Voucher | The number of the voucher for the transaction. |
 
-
 ## Generate the Sales VAT report
 
-The **Sales VAT** report includes transactions that sales VAT is realized for. It also includes details of the VAT that the legal entity received for the sale of goods and services. This report is generated every month and submitted to the government.
+The **Sales VAT** report includes transactions for which sales VAT is realized. It also includes details of the VAT that the legal entity received for the sale of goods and services. This report is generated every month and submitted to the government.
 
-1. Go to **Tax** > **Inquiries and reports** > **Sales tax reports** > **Sales VAT report**.
+To generate the Sales VAT report, follow these steps.
 
-2. In the **Tax month** field, select the month to generate the report for.
-
-3. In the **Tax branch** field, select a tax branch to generate the report only for the selected tax branch. For more information, see [Tax branch page](apac-tha-tax-branch-dimensions.md).
-
-4. In the **Sales tax code** field, select a sales tax code to generate the report only for the selected sales tax code.
-
-5. In the **Tax invoice date** field, select the date when the vendor generated the tax invoice.
-
-6. In the **Tax invoice number** field, enter the sales tax code that the report should include transactions for.
-
-7. Select **OK**, and review the report that is generated.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales VAT report**.
+1. In the **Tax month** field, select the month for which to generate the report.
+1. In the **Tax branch** field, select a tax branch to generate the report only for the selected tax branch. Learn more in [Tax branch page](apac-tha-tax-branch-dimensions.md).
+1. In the **Sales tax code** field, select a sales tax code to generate the report only for the selected sales tax code.
+1. In the **Tax invoice date** field, select the date when the vendor generated the tax invoice.
+1. In the **Tax invoice number** field, enter the sales tax code for which the report should include transactions.
+1. Select **OK**, and review the report that is generated.
 
     ![Sales VAT report.](../media/apac-tha-sales-VAT-report.png)
 
