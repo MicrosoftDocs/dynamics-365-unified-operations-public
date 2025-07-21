@@ -114,6 +114,13 @@ When an expiration, such as 90 days, is selected, it's applied 90 days from toda
 
 Additional options will be considered in future functionality. The expiration of 90 days will be the default, and users with appropriate permissions can override the default on the **Financial reports** list page.
 
+### Historical accuracy after transaction edits
+Beginning with Financial reporting release 10.0.45, fact versioning was removed from the Financial reporting database (MRDB). When you rerun or drill into a previously generated report, the detail is recalculated using the current transaction data. If the underlying transaction was edited after the original report was produced, drill-down lines may differ from the snapshot you first saw. Top-level balances in the saved report don't change.
+
+>[!Tip]
+> Export the report to Excel or PDF when it's finalized if you require an immutable audit copy.
+
+
 ## Default reports
 
 Financial reporting provides 22 default financial reports. Every report uses the default main account categories. You can use these reports as is or as a starting point for your financial reporting needs. In addition to the traditional financial statements, such as Income statement and Balance sheet, these default reports include reports that show the different types of financial reports that you can create. 
