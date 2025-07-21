@@ -2786,6 +2786,8 @@
                       href: localizations/france/emea-fra-VAT-declaration-preview-France.md
                     - name: DAS-2 report
                       href: localizations/france/emea-fra-das2-report.md
+                    - name: Reporting on payment deadlines for customer and vendor invoices
+                      href: localizations/france/emea-fra-reporting-on-payment-deadlines.md
                 - name: Germany
                   items:
                     - name: Germany overview
