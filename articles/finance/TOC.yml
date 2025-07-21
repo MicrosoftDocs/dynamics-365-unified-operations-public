@@ -4283,7 +4283,7 @@
                     - name: Türkiye overview
                       href: localizations/turkiye/turkiye.md
                     - name: Set up a legal entity for Türkiye
-                      href: localizations/turkiye/emea-tur-set-up-legal-entity.md
+                      href: localizations/turkiye/emea-turkiye-set-up-legal-entity.md
                     - name: Import currency exchange rates from Central Bank of the Republic of Türkiye (CBRT)
                       href: general-ledger/import-currency-exchange-rates.md
                     - name: Use continuous serial numbering of packing slips and invoices
