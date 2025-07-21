@@ -3,12 +3,12 @@ title: Set up vendor accounts
 description: Learn about the types of information that you must specify when you create a new vendor account, including an outline on vendor account numbers.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: how-to
-ms.date: 06/07/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable, VendOnHoldUpdate
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+- bap-template
 ---
 
 # Set up vendor accounts
@@ -28,7 +28,7 @@ When you create a vendor account, you enter information about the vendor. This i
 - Set up tax, delivery, invoice, and payment information for the vendor. By default, these settings are copied to new documents that you create for the vendor.
 - Set up default financial dimensions that are used to automatically post transactions with the vendor to financial accounts.
 
-To speed up the process of creating vendor accounts, you can create templates. To create a template, on the **Vendor** page, on the Action Pane, select **Options \> Record info**. Then select **Company accounts template**. Company account templates are shared with other users.  
+To speed up the process of creating vendor accounts, you can create templates. To create a template, on the **Vendor** page, on the Action Pane, select **Options** \> **Record info**. Then select **Company accounts template**. Company account templates are shared with other users.  
 
 You can also create a user template for your own use. You can't delete a vendor that is associated with other records, such as contacts or products.
 
@@ -52,7 +52,7 @@ For each vendor, you can define multiple addresses, each of which is used for a 
 
 You can store contacts for a vendor. These contacts can then be used on documents such as purchase orders or requests for quotation (RFQs).  
 
-To add contacts for a vendor, on the **All vendors** page, on the **Vendor** tab, in the **Set up** group, select **Contacts \> Add contacts**.  
+To add contacts for a vendor, on the **All vendors** page, on the **Vendor** tab, in the **Set up** group, select **Contacts** \> **Add contacts**.  
 
 You can create vendor contacts from scratch. Alternatively, you can copy details from another person who is already registered in Supply Chain Management, and edit the information as you require.  
 
@@ -95,7 +95,7 @@ You can bulk update the on-hold status to *All* for vendors based on the selecte
 The following criteria are used to include vendors that have been inactive in a period, include or exclude vendors that are employees, and exclude vendors that are under a grace time before the next hold.
 
 - Based on the number of days that you enter in the **In activity period** field on the **Vendor inactivation** page, the application calculates the latest date where the vendor can have any activity to be considered inactive. That is, the current date minus the number of days that you enter. If one or more invoices exist for the vendor where the date is later than the calculated latest date, the vendor will be excluded from the inactivation. This is also validated if the vendor has payments after that date, open purchase requisitions, open purchase orders, requests for quotations, or replies.
-- The number of days in the **Grace time before next hold** field is used to calculate the latest grace date. That is, the current date minus the days that you enter. This only applies to vendors who have previously been deactivated. In the case of a previous inactivation, the application verifies the history of other occurrences of inactivation for the vendor and checks if the latest inactivation occurred before the latest grace date. If this is the case, the vendor will be included in the inactivation process.
+- The number of days in the **Grace time before next hold** field is used to calculate the latest grace date. That is, the current date minus the days that you enter. This only applies to vendors who have previously been deactivated. The application verifies the history of other occurrences of inactivation for the vendor and checks if the latest inactivation occurred before the latest grace date. If so, the vendor will be included in the inactivation process.
 - The parameter **Include employees** refers to vendors that are linked to an employee. You can set if you want to include those employees.
 
 This process will always exclude vendors where the value in the **Vendor hold** field is *Never*.

@@ -3,12 +3,12 @@ title: Rebate management deal workflows
 description: Learn how to set up a Rebate management deal workflow to approve and activate deals with an outline on creating and managing Rebate management deal workflows.
 author: sherry-zheng
 ms.author: chuzheng
-ms.topic: how-to
-ms.date: 05/15/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: WorkflowTableListPageRnr
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+- bap-template
 ---
 
 # Rebate management deal workflows
@@ -26,11 +26,11 @@ Users can't manually approve deals. The workflow must always be used.
 
 ## Create and manage Rebate management deal workflows
 
-To work with your Rebate management deal workflows, go to **Rebate management \> Setup \> Rebate management workflows**. There, you can view, create, and update workflows as required. Only one workflow of this type can be active at a time. For more information about workflows, how to work with the **Rebate management workflows** page, and how to create workflows, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md) and its related articles.
+To work with your Rebate management deal workflows, go to **Rebate management** \> **Setup** \> **Rebate management workflows**. There, you can view, create, and update workflows as required. Only one workflow of this type can be active at a time. For more information about workflows, how to work with the **Rebate management workflows** page, and how to create workflows, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md) and its related articles.
 
 ## Use a workflow to activate a deal
 
-To activate a deal through a workflow, open the deal (for example, on the **All rebate management deals** page). Then, on the Action Pane, select **Workflow \> Submit**. After the new deal has been processed and approved through the workflow, it will be active and ready to use.
+To activate a deal through a workflow, open the deal (for example, on the **All rebate management deals** page). Then, on the Action Pane, select **Workflow** \> **Submit**. After the new deal has been processed and approved through the workflow, it will be active and ready to use.
 
 After a deal has been activated, you can't change most of its setup. If you must change an active deal, first deactivate it, and then create a new deal. If the new deal should resemble the old deal, you can create it by copying the old deal.
 
