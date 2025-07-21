@@ -3,12 +3,12 @@ title: Rebate management deals
 description: Learn how to create Rebate management deals. Deals are used to control different methods and bases for calculating rebates and royalties.
 author: sherry-zheng
 ms.author: chuzheng
-ms.topic: how-to
-ms.date: 05/15/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: TAMRebateDeal
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+- bap-template
 ---
 
 # Rebate management deals
@@ -19,13 +19,13 @@ Rebate management deals are used to control different methods and bases for calc
 
 ## Create a deal
 
-1. Go to **Rebate management \> Rebate management deals \> All rebate management deals**. On the **All rebate management deals** list page, you can create and work with deals of all three types.
+1. Go to **Rebate management** \> **Rebate management deals** \> **All rebate management deals**. On the **All rebate management deals** list page, you can create and work with deals of all three types.
 
     Alternatively, follow one of these steps. In each case, the list page that appears provides all the same settings as the **All rebate management deals** list page, but it's filtered to show deals of only one type.
 
-    - Go to **Rebate management \> Rebate management deals \> Customer rebate deals** to create only customer rebate deals.
-    - Go to **Rebate management \> Rebate management deals \> Customer royalty deals** to create only customer royalty deals.
-    - Go to **Rebate management \> Rebate management deals \> Vendor rebate deals** to create only vendor rebate deals.
+    - Go to **Rebate management** \> **Rebate management deals** \> **Customer rebate deals** to create only customer rebate deals.
+    - Go to **Rebate management** \> **Rebate management deals** \> **Customer royalty deals** to create only customer royalty deals.
+    - Go to **Rebate management** \> **Rebate management deals** \> **Vendor rebate deals** to create only vendor rebate deals.
 
 1. On the Action Pane, select **New**.
 1. In the **Create new deal** dialog box, set the following fields:
@@ -40,11 +40,11 @@ Rebate management deals are used to control different methods and bases for calc
         - *Line* – Rebates should be processed for each line in a deal.
 
     - **Posting profile** – Select the [posting profile](rebate-management-posting.md) to use for transactions where the deal applies. This field is available only when the **Reconcile by** field is set to *Deal*. If it's set to *Line*, you'll assign the profile later, for each line that you add to the deal.
-    - **Posting profile for guarantee** – Select the [posting profile](rebate-management-posting.md) to use for guarantee transactions. Posting profiles are required for guarantee transactions only if the guarantee applies to a royalty. Otherwise, although a posting profile isn't mandatory, if no posting profile is specified, an error will be shown when guarantees are posted. This field is available only when the **Type** field is set to *Royalty*.
+    - **Posting profile for guarantee** – Select the [posting profile](rebate-management-posting.md) to use for guarantee transactions. Posting profiles are required for guarantee transactions only if the guarantee applies to a royalty. Otherwise, although a posting profile isn't mandatory, if no posting profile is specified, an error is shown when guarantees are posted. This field is available only when the **Type** field is set to *Royalty*.
     - **Rebate output** – Select how the rebate or royalty should be paid:
 
-        - *Financial* – Generate a free text credit note or accounts payable debit note, so that monies can be paid or received later. Note that provisions **can** be used with rebates where this option is selected. This option is the only available option when the **Type** field is set to *Royalty*.
-        - *Item* – Generate a sales order for items according to the deal setup. On this sales order, a price of 0 (zero) is assigned to each item. Note that provisions **can't** be used with rebates where this option is selected.
+        - *Financial* – Generate a free text credit note or accounts payable debit note, so that monies can be paid or received later. Provisions *can* be used with rebates where this option is selected. This option is the only available option when the **Type** field is set to *Royalty*.
+        - *Item* – Generate a sales order for items according to the deal setup. On this sales order, a price of 0 (zero) is assigned to each item. Provisions *can't* be used with rebates where this option is selected.
 
     - **Rebate currency** – Select the currency to use when the rebate, deduction, or royalty is paid.
     - **Document notes** – Enter notes about the deal, as required.
@@ -117,7 +117,7 @@ The **General** tab on the **Rebate management details** FastTab lets you set up
 | Rebate reduction principle | Select the [rebate reduction principle](rebate-reduction-principle.md) that applies to the deal line. |
 | Variant number | If the deal line applies to an item that has variants, select the variant that the deal line applies to. |
 | Vendor rebate basis | <p>This field is shown only for vendor rebates (that is, deals where the **Module** field is set to *Vendor*). Select the basis for the vendor rebate:</p><ul><li>*Purchase order* – The rebate that the vendor receives is based on the quantity or value on the purchase order.</li><li>*Sales order* – The vendor receives a rebate only after the goods have been sold. The rebate is based on the quantity or value on the sales order.</li></ul> |
-| Price basis | <p>This field is shown only for vendor rebates (deals where the **Module** field is set to *Vendor*). If you selected *Sales order* in the **Vendor rebate basis** field, select the applicable price basis:</p><ul><li><p>*FIFO* – The **Calculate FIFO purchase price** periodic task must be run to calculate the rebate. (To run the task, go to **Rebates management \> Periodic tasks \> Calculate FIFO purchase price**.) A first in, first out (FIFO) rule will be used to calculate the value of the stock that is sold. This value will then be used to calculate the vendor rebates. Here's an example:</p><ul><li>**Stock sold:** 1,000 units at $3.00 each = $3,000</li><li>**Current purchase price, based on FIFO:** $2.00</li><li>**Working calculation:** *Units sold* × *Current purchase price* = 1,000 × $2.00 = $2,000</li></ul></li><li><p>*Latest Purchase Price* – The value from the last purchase transaction will be used to calculate the vendor rebates. Here's an example:</p><ul><li>**Stock sold:** 1,000 units at $3.00 each = $3,000</li><li>**Latest purchase price:** $2.00</li><li>**Working calculation:** *Units sold* × *Latest purchase price* = 1,000 × $2.00 = $2,000</li></ul></li><li><p>*Average Purchase Price* – The weighted average value for the last *X* months will be used to calculate the vendor rebates. If you select this option, you must enter the number of months in the **Number of months** field (which is available only when the **Price basis** field is set to *Average Purchase Price*). Here's an example:</p><ul><li>**Stock sold:** 1,000 units at $3.00 each = $3,000</li><li>**Average purchase price:** $2.00</li><li>**Working calculation:** *Units sold* × *Average purchase price* = 1,000 × $2.00 = $2,000</li></ul></li><li><p>*Sales Price* – The sales price will be used to calculate the vendor rebates. Here's an example:</p><ul><li>**Stock sold:** 1,000 units at $3.00 each = $3,000</li><li>**Average purchase price:** $2.00</li><li>**Working calculation:** *Units sold* × *Sales price* = 1,000 × $3.00 = $3,000</li></ul></li></ul> |
+| Price basis | <p>This field is shown only for vendor rebates (deals where the **Module** field is set to *Vendor*). If you selected *Sales order* in the **Vendor rebate basis** field, select the applicable price basis:</p><ul><li><p>*FIFO* – The **Calculate FIFO purchase price** periodic task must be run to calculate the rebate. (To run the task, go to **Rebates management** \> **Periodic tasks** \> **Calculate FIFO purchase price**.) A first in, first out (FIFO) rule will be used to calculate the value of the stock that is sold. This value will then be used to calculate the vendor rebates. Here's an example:</p><ul><li>**Stock sold:** 1,000 units at $3.00 each = $3,000</li><li>**Current purchase price, based on FIFO:** $2.00</li><li>**Working calculation:** *Units sold* × *Current purchase price* = 1,000 × $2.00 = $2,000</li></ul></li><li><p>*Latest Purchase Price* – The value from the last purchase transaction will be used to calculate the vendor rebates. Here's an example:</p><ul><li>**Stock sold:** 1,000 units at $3.00 each = $3,000</li><li>**Latest purchase price:** $2.00</li><li>**Working calculation:** *Units sold* × *Latest purchase price* = 1,000 × $2.00 = $2,000</li></ul></li><li><p>*Average Purchase Price* – The weighted average value for the last *X* months will be used to calculate the vendor rebates. If you select this option, you must enter the number of months in the **Number of months** field (which is available only when the **Price basis** field is set to *Average Purchase Price*). Here's an example:</p><ul><li>**Stock sold:** 1,000 units at $3.00 each = $3,000</li><li>**Average purchase price:** $2.00</li><li>**Working calculation:** *Units sold* × *Average purchase price* = 1,000 × $2.00 = $2,000</li></ul></li><li><p>*Sales Price* – The sales price will be used to calculate the vendor rebates. Here's an example:</p><ul><li>**Stock sold:** 1,000 units at $3.00 each = $3,000</li><li>**Average purchase price:** $2.00</li><li>**Working calculation:** *Units sold* × *Sales price* = 1,000 × $3.00 = $3,000</li></ul></li></ul> |
 | Number of months | This field is shown only for vendor rebates (deals where the **Module** field is set to *Vendor*). If you selected *Average Purchase Price* in the **Price basis** field, enter the number of months that should be used. |
 | Posting profile | Select the [posting profile](rebate-management-posting.md) that applies to the selected deal line. This profile is used only when the **Reconcile by** field on the deal header is set to *Line*. If the **Reconcile by** field is set to *Deal*, the posting profile that is set on the deal header is always used. If no posting profile is set on the deal line, the posting profile that is set on the deal header is used. |
 | Posting profile for guarantee | This field works like the **Posting profile** field, but it applies only to royalties. |

@@ -2008,14 +2008,16 @@
                       href: localizations/austria/emea-aut-packing-material-fee-calculation.md
                     - name: Cross-border services report
                       href: localizations/austria/emea-aut-cross-border-services-report.md
-                    - name: Austrian Intrastat
-                      href: localizations/austria/emea-aut-intrastat.md
                     - name: Purchase duties
                       href: localizations/austria/emea-aut-purchase-duties.md
-                    - name: VAT declaration
-                      href: localizations/austria/emea-aut-vat-declaration-austria.md
+                    - name: Austrian Intrastat
+                      href: localizations/austria/emea-aut-intrastat.md
                     - name: EU sales list
                       href: localizations/austria/emea-aut-eu-sales-list.md
+                    - name: VAT declaration U30
+                      href: localizations/austria/emea-aut-vat-declaration-austria.md
+                    - name: Generate an Annual sales tax report U1
+                      href: localizations/austria/emea-aut-annual-sales-tax-report.md
                 - name: Bahrain
                   items:
                     - name: Bahrain overview
@@ -2786,6 +2788,8 @@
                       href: localizations/france/emea-fra-VAT-declaration-preview-France.md
                     - name: DAS-2 report
                       href: localizations/france/emea-fra-das2-report.md
+                    - name: Reporting on payment deadlines for customer and vendor invoices
+                      href: localizations/france/emea-fra-reporting-on-payment-deadlines.md
                 - name: Germany
                   items:
                     - name: Germany overview
