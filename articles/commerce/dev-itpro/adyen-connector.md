@@ -95,7 +95,7 @@ The following list describes the minimum and maximum Adyen firmware versions tha
 The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnostic [Adyen Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api). It supports all payment terminals that this application programming interface (API) supports. For a complete list of Adyen payment terminals, visit the [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals) page.
 
 > [!NOTE]
-> We recommend using the payment terminals which are PCI Approved PIN Transaction Security Point of Interaction (PTS POI) devices. The list of approved devices for Adyen can be found here: [PCI PTS POI devices](https://listings.pcisecuritystandards.org/assessors_and_solutions/point_to_point_encryption_solutions?agree=true)
+> Microsoft recommends that you use payment card industry (PCI) approved payment terminals that are PIN Transaction Security Point of Interaction (PTS POI) devices. For a list of approved devices for Adyen, see [PCI PTS POI devices](https://listings.pcisecuritystandards.org/assessors_and_solutions/point_to_point_encryption_solutions?agree=true)
 
 The following video describes the capabilities of the Adyen Castles SE1 Android payment terminal.
 
