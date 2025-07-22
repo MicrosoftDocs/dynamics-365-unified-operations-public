@@ -138,7 +138,7 @@ The following important limitations apply when you use product bundle items:
 - Product bundle items aren't supported in direct deliveries.
 - Product bundle items aren't supported in delivery schedules.
 - The delivery type of the sales order line for bundle components is always *Stock*, regardless of the direct delivery setting on the released product.
-- Unless you're using the *(Preview) Product bundles in journals* feature, you can reprint an invoice or sales order confirmation only if the related sales order that includes the product bundle order lines still exists. If the sales order lines were deleted, the reprinted invoices and sales order confirmations include the component items but not the parent item.
+- Unless you're using the *Product bundles in journals* feature, you can reprint an invoice or sales order confirmation only if the related sales order that includes the product bundle order lines still exists. If the sales order lines were deleted, the reprinted invoices and sales order confirmations include the component items but not the parent item.
 - Miscellaneous charges that are added to a parent item line aren't allocated to the component item lines when the parent item is exploded.
 
 ## Related information
