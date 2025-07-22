@@ -2,7 +2,7 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 06/24/2025
+ms.date: 07/22/2025
 ms.topic: overview
 ms.reviewer: v-chrgriffin
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -92,7 +92,7 @@ The following list describes the minimum and maximum Adyen firmware versions tha
 > - Adyen may release minor version updates after Microsoft tests the major version. As long as a major version is supported, it's acceptable to have minor version updates within the same major version. These updates are normally targeted fixes and don't meet the bar for full retesting as long as the same major firmware version was previously tested. Updates shouldn't exceed the maximum Adyen firmware version listed in the documentation. 
 
 ### Supported payment terminals
-The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api). It supports all payment terminals that this application programming interface (API) supports. For a complete list of Adyen payment terminals, visit the [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals) page.
+The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnostic [Adyen Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api). It supports all payment terminals that this application programming interface (API) supports. For a complete list of Adyen payment terminals, visit the [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals) page.
 
 > [!NOTE]
 > We recommend using the payment terminals which are PCI Approved PIN Transaction Security Point of Interaction (PTS POI) devices. The list of approved devices for Adyen can be found here: [PCI PTS POI devices](https://listings.pcisecuritystandards.org/assessors_and_solutions/point_to_point_encryption_solutions?agree=true)
@@ -172,7 +172,7 @@ The following table lists the current Dynamics 365 Commerce Payment Connector fo
 | WeChat Pay | ✔ | No |
 
 > [!NOTE]
-> To enable the scenario of using digial wallets for placing the orders through point of sale and returning such orders in call center, a flight named RetailPaymentCreateNonRecurringCreditCardFlight needs to be enabled for versions prior to 10.0.45. Contact Microsoft support to enable this flight. For information on setup and known limitations for digital wallets, see [Wallet payment support](wallets.md).
+> In Commerce releases before version 10.0.45, to enable using digital wallets to place orders via POS and return those orders in call center, you must contact Microsoft to enable the **RetailPaymentCreateNonRecurringCreditCardFlight** flight. For information on setup and the known limitations for digital wallets, see [Wallet payment support](wallets.md).
 
 #### Supported card present input methods
 
