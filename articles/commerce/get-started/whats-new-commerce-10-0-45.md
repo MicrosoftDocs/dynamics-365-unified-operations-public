@@ -33,6 +33,7 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Point of sale  | Store Commerce offline in iOS and Android Public Preview  | This release introduces offline capabilities for Store Commerce on iOS and Android devices. Customers can now use Store Commerce on these platforms even when offline, ensuring seamless operations and reliable business continuity. Key features include support for SQLite-based offline capabilities,new SDK experience for iOS enabling extensibility in app and database, database upgrade support, and enhanced offline register form. |  admins |
+| Commerce Store App | Replace Bing Maps with Azure Maps                     | This feature replaces the deprecated Bing Maps integration with Azure Maps in the Commerce Store app. It ensures continued support for map-based functionality and enhances the user experience with improved performance, security, and scalability. Key capabilities include store locator, map rendering, geocoding, and user location detection. | admins |
 
 
 ## Resources
