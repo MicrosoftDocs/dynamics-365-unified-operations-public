@@ -114,6 +114,15 @@ To create a new webhook, follow these steps.
 > [!NOTE]
 > Don't test the configuration yet, because the setup isn't completed. The configuration is validated after the next step.
 
+> [!IMPORTANT]
+> If saving the configuration on the Adyen portal throws the error **"Domain could not be resolved"**, then it is due to a known issue with the placement of the period (.) in the subdomain portion of the URL which is resolved with 10.0.45. In the meanwhile, please follow the below workaroundand of reformatting the Payment notification endpoint URL.
+>
+> Customers may currently see a URL formatted like this: '{30 or 31 characters}.{1 character}.organization.api.powerplatform.com/dynamics/api/payment/notifications/1'. However, the correct format should be:{29 or 30 characters}.{2 characters}.organization.api.powerplatform.com/dynamics/api/payment/notifications/1
+>
+> **What’s the difference?**
+> The period (.) separating the subdomain segments is currently placed one character too far to the right. To resolve the issue, simply move the period one character to the left so that the second segment contains two characters instead of one. This adjustment ensures the URL resolves correctly and can be used to create a webhook.
+> If you need assistance identifying or correcting the URL in your configuration, please reach out to the Microsoft support team.
+
 ### Update Commerce headquarters with the HMAC and application client ID details to authenticate the payment notifications sent by Adyen
 
 To update the details to authenticate the payment notifications that Adyen sends, follow these steps.
