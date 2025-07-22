@@ -25,7 +25,7 @@ For every credit card authorization, the authentication binary large object ([au
 The parameters for the archival job are based on the age of the transaction in days. For example, if the **Minimum transaction age in days** field for the job is set to **365**, all XML data about credit card authorizations older than 365 days are subject to archiving when the job is run.
 
 > [!IMPORTANT]
-> Data can't easily be restored after it's archived. Therefore, transactions that are subject to [linked refunds](#key-terms) shouldn't be archived. For example, if a merchant's returns policy allows transactions to be returned for refund to the same credit card within two years, the **Minimum transaction age in days** field for the job should be set to 730 days (two years). In this case, if a transaction is returned after 730 days, the XML required to do a linked refund isn't found. Therefore, the customer has to be refunded via a [standalone refund](#key-terms) to either a credit card or some other payment method, such as a credit memo or gift card.
+> Data can't easily be restored after it's archived, so transactions that are subject to [linked refunds](#key-terms) shouldn't be archived. For example, if a merchant's returns policy allows transactions to be returned for refund to the same credit card within two years, the **Minimum transaction age in days** field for the job should be set to 730 days (two years). In this case, if a transaction is returned after 730 days, the XML required to do a linked refund isn't available. The customer then has to be refunded via a [standalone refund](#key-terms) to either a credit card or some other payment method such as a credit memo or gift card.
 
 ## Key terms
 
@@ -81,7 +81,7 @@ After you set the **Minimum transaction age in days** field and batch details, s
 > [!IMPORTANT]
 > The data that is subject to archiving includes personally identifiable customer information such as the name of the cardholder. This sensitive data should be handled according to your local regulatory requirements.
 
-After you confirm the parameters of data to be archived, you're prompted to confirm that you understand that the data is being archived and can't easily be restored, as shown in the following illustration.
+After you confirm the parameters of the data to be archived, you're prompted to confirm that you understand that the data is being archived and can't easily be restored, as shown in the following illustration.
 
 ![Confirmation message box.](media/PAYMENTS/Batch3.png)
 
