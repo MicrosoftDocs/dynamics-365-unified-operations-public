@@ -163,7 +163,7 @@ These three fields aren't discrete fields in the database, and are only shown in
 
 ### Support for unidentified card types
 
-In some scenarios, a payment connector may return a card that doesn't have a BIN range or processor payment method mapping. If this issue occurs, the payment terminal authorizes the payment but the payment authorization is reversed when the point of sale (POS) can't map the authorization response to a specific card type. To address this issue, a capability is provided to map unknown authorization responses to a default card type. 
+In some scenarios, a payment connector may return a card that doesn't have a BIN range or processor payment method mapping. If this issue occurs, the payment terminal authorizes the payment, but the payment authorization is reversed when the point of sale (POS) can't map the authorization response to a specific card type. To address this issue, a capability is provided to map unknown authorization responses to a default card type. 
 
 ![Default for unmapped cards.](../media/Payments/DefaultUnmapped.png)
 
