@@ -6,7 +6,7 @@ ms.author: v-omerorhan
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/06/2025
+ms.date: 07/23/2025
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye
 ms.search.validFrom: 2016-06-30
@@ -17,22 +17,20 @@ ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationL
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up a legal entity for a company that's located in Türkiye and is using the features for Türkiye that are available in Microsoft Dynamics 365 Finance. 
-A legal entity represents the company, and it contains the tax and legal attributes that are required for the rest of the configuration for Türkiye.
+This article explains how to set up a legal entity for a company that's located in Türkiye and is using the features for Türkiye that are available in Microsoft Dynamics 365 Finance. A legal entity represents the company, and it contains the tax and legal attributes that are required for the rest of the configuration for Türkiye.
 
-Before you begin, open the **Feature management** workspace, and verify that the **(Preview) Globalization expansion - Türkiye** feature is enabled. 
+Before you begin, open the **Feature management** workspace, and verify that the **Globalization expansion - Türkiye** feature is enabled. 
 If it is not enabled, enable it. After you're sure that the feature is enabled, complete the following procedures.
 
 ## Create a legal entity
 
-To create a legal entity:
+To create a legal entity, follow this step.
 
 - Go to **Organization administration > Organizations > Legal entities**, create a legal entity, and set the country of the primary address to Türkiye. Some functionality is enabled only for Türkiye. Examples include specific reports or electronic invoices.
 
 ## Configure VAT IDs of the legal entity, customers, and vendors
 
-In Türkiye, the Value-added tax (VAT) ID is a 10-digit numeric code assigned by the Revenue Administration (GIB) to individuals and legal entities for use in tax-related transactions. 
-While Turkish citizens may use their Turkish Citizenship Number which is 11-digit for personal tax matters, obtaining a VAT number is mandatory for legal entities (such as companies, associations, and foundations) as well as for individuals engaged in commercial activities.
+In Türkiye, the Value-added tax (VAT) ID is a 10-digit numeric code assigned by the Revenue Administration (GIB) to individuals and legal entities for use in tax-related transactions. While Turkish citizens may use their Turkish Citizenship Number which is 11-digit for personal tax matters, obtaining a VAT number is mandatory for legal entities (such as companies, associations, and foundations) as well as for individuals engaged in commercial activities.
 
 You can set up the VAT ID of the legal entity and its vendors and customers using the [Registration IDs](../../localizations/europe/emea-registration-ids.md) functionality.
 
@@ -43,7 +41,7 @@ Before you set up the VAT ID of the legal entity and its vendors and customers, 
 > [!NOTE] 
 > When creating a new Registration type, the **Country/Region** value must be set to **TUR** for Türkiye.
 
-Note that you need to configure two distinct registration types for the following party types:
+You need to configure two distinct registration types for the following party types:
 
 - Organizations
 - Persons
@@ -69,7 +67,7 @@ Complete setting up the registration type and registration category for VAT ID b
 
 This section provides information about on how to set up a VAT ID of a legal entity in Türkiye.
 
-To create a VAT ID for the legal entity follow these steps; 
+To create a VAT ID for the legal entity, follow these steps. 
 
 1. Go to **Organization administration > Organizations > Legal entities**.
 1. In the list find and select the legal entity you want to work with.
@@ -89,7 +87,7 @@ To create a VAT ID for the legal entity follow these steps;
 
 This section explains how to add VAT registration IDs to a customer or vendor account. 
 
-To create a VAT ID for a customer or a vendor, follow these steps:
+To create a VAT ID for a customer or a vendor, follow these steps.
 
 1. Go to **Accounts payable** > **Vendors** > **All vendors** or **Accounts receivable** > **Customers** > **All customers**.
 1. In the list find and select the vendor or the customer record you want to work with.
