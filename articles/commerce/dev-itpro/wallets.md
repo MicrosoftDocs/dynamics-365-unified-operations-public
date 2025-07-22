@@ -2,7 +2,7 @@
 title: Wallet payment support
 description: This article provides an overview of wallet payment support for Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/10/2024
+ms.date: 07/22/2025
 ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
