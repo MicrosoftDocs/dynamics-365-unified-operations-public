@@ -23,7 +23,7 @@ This article provides step-by-step instructions on how to install an Internet In
 
 Before beginning a Commerce Scale Unit installation, you must complete various one time tasks. These operations often need specific permissions and therefore may require the help of your organization's administrative personnel.
 
-First, you must create two Microsoft Entra ID (formerly known as Azure Active Directory) apps, one for the CSU and one for the Store Commerce for Web app (formerly known as Cloud point of sale or CPOS). The newly created apps must then be registered in Microsoft Dynamics 365 Commerce headquarters.
+First, you must create Microsoft Entra ID (formerly known as Azure Active Directory) apps for Retail Server, Store Commerce for Web app (formerly known as Cloud point of sale or CPOS) and Async Client. The newly created apps for Retail Server and Async Client must also be registered in Microsoft Dynamics 365 Commerce headquarters.
 
 Please follow the **Prerequisites** section in [Configure and install Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md#prerequisites) and then return to this document to continue.
 
@@ -34,7 +34,7 @@ Next, you need to create a Secure Sockets Layer (SSL) certificate based on the h
 
 To create the SSL certificate, follow these steps.
 
-1. Connect to the development machine using Remote Desktop Protocol (RDP).
+1. Connect to the development machine.
 1. Open PowerShell with administrator privileges from Command Prompt.
 1. Enter the following command.
 ```cmd
@@ -122,7 +122,7 @@ To verify that the **IIS 6 Management Compatibility (IIS 6 Metabase Compatibilit
 
 To install the .NET Core hosting bundle on the development machine, follow these steps.
 
-1. Connect to the development machine using Remote Desktop Protocol (RDP).
+1. Connect to the development machine.
 1. Open a web browser and go to [Download .NET 8.0 (Linux, macOS, and Windows](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
 1. In the **ASP.NET Core Runtime 8.0.X** section, select the **Hosting Bundle** installer for Windows to download it.
 1. Run the **dotnet-hosting-8.0.x-win.exe** installer.
@@ -132,12 +132,6 @@ To install the .NET Core hosting bundle on the development machine, follow these
 To download and execute the Commerce Scale Unit installer, see [Downloading and Running the Commerce Scale Unit Installer](retail-store-scale-unit-download-install.md). This article describes the steps necessary to download required configuration from Headquarters, download the installation program, and how to run the installer.
 
 Once installation is complete, return here.
-
-
-## Additional steps for cloud (LCS) deployed development environments 
-
-The setup steps in [Download and Install](#download-and-install) assume that you'll RDP into the development environment when accessing the CSU URL. To make the development environment sealed CSU accessible from outside the development VM, you must perform the following additional tasks.   
-
 
 ## Database restores from UAT
 

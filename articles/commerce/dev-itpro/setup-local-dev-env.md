@@ -77,7 +77,7 @@ IIS mode is a complete on-premises scale unit, where all the components match re
 
 Before you set up the self-hosted or IIS-hosted environment, complete the following prerequisites in this order:
 
-1. Install .NET Core SDK 8.0 for Windows x64 from [Download .NET Core 8.0](https://dotnet.microsoft.com/download/dotnet/8.0).
+1. Install .NET Core SDK 8.0 for Windows x64 from [Download .NET Core 8.0](https://dotnet.microsoft.com/download/dotnet/8.0). The .NET Core SDK is only needed for extension development.
 2. Install ASP.NET Core Runtime 8.0.x Hosting Bundle for Windows from [Download ASP.NET Core Runtime 8.0](https://dotnet.microsoft.com/download/dotnet/8.0)(select **Hosting Bundle**, not **x64** or **x86**).
 3. Install any edition of [SQL server](/sql/database-engine/install-windows/install-sql-server), and enable full text search. For more information, see [Add Features to an Instance of SQL Server (Setup)](/sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup). The minimum supported version is 13.0.5026.0 SqlServer 2016 SP2.
 
@@ -172,7 +172,7 @@ You now have a fully functional on-premises deployed scale unit that includes th
 - ASP.NET Core 8–based Retail Server that can interact with Commerce headquarters via RTS
 - CPOS
 
-To find URLs that correspond to the CPOS and CSU that you deployed, review the base installer's log. The URLs appear near the end of the log, where CSU and CPOS are health-checked. To fill in the channel database with data from Commerce headquarters, follow steps in [Create a new channel profile](retail-store-scale-unit-configuration-installation.md#3-create-a-new-channel-profile) after completing the previous steps in that article.
+To find URLs that correspond to the CPOS and CSU that you deployed, review the console output of the  installer. The URLs appear near the end of the process, where CSU and CPOS are health-checked. To fill in the channel database with data from Commerce headquarters, follow steps in [Create a new channel profile](retail-store-scale-unit-configuration-installation.md#3-create-a-new-channel-profile) after completing the previous steps in that article.
 
 ## Switching from IIS mode to self-hosted mode
 

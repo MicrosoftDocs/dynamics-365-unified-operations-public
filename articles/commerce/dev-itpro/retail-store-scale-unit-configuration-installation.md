@@ -30,18 +30,7 @@ This article explains how you can use self-service to configure a Commerce Scale
 
 Before beginning a Commerce Scale Unit (Retail Server) installation, you must complete the following one time tasks. These operations often need specific permissions and therefore may require the help of your organization's administrative personnel.
 
-
-### 1. Create Azure Active Directory apps and Register in Headquarters
-
-First, you must create two Microsoft Entra ID (formerly known as Azure Active Directory) apps, one for the CSU and one for the Store Commerce for Web app (formerly known as Cloud point of sale or CPOS). For instructions, see [Set up a custom Retail Server app in Microsoft Entra ID](cpos-custom-aad.md#set-up-a-custom-retail-server-app-in-microsoft-entra-id), [Set up a custom app for Store Commerce for Web in Microsoft Entra ID](cpos-custom-aad.md#set-up-a-custom-app-for-store-commerce-for-web-in-microsoft-entra-id).
-and [Update identity providers settings in Commerce headquarters](cpos-custom-aad.md#update-identity-providers-settings-in-commerce-headquarters).
-
-[!IMPORTANT]
-> - To help maintain a high level of security across the company, we strongly recommend that you create a new application ID (client ID) and key (secret) for each store that is created.
-> - If you're installing Commerce Scale Unit for use with an on-premises environment using Active Directory Federation Services, instead of Azure, follow the instructions in the Commerce installation document for on-premises environments. For more information, see [Installation steps for Commerce channel components in an on-premises environment](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md).
-
-
-### 2. Configure headquarters for a new Commerce Scale Unit
+### 1. Configure headquarters for a new Commerce Scale Unit
 To create a functioning Commerce Scale Unit, complete the procedures in all sections of this article. You will first complete the initial configuration in headquarters then continue with installing the Commerce Scale Unit. 
 
 > [!IMPORTANT]
@@ -140,6 +129,15 @@ If no jobs appear, then initialize the base configuration [Update configurations
 >   3. Remove the default database record from this group.
 >
 >   For on-premises deployments, there's no **Default** channel data group. Create a new data group (and associate it to the channel database and distribution schedule jobs).
+
+### 1. Create Azure Active Directory apps and Register in Headquarters
+
+First, you must create two Microsoft Entra ID (formerly known as Azure Active Directory) apps, one for the Retail Server and one for the Store Commerce for Web app (formerly known as Cloud point of sale or CPOS). For instructions, see [Set up a custom Retail Server app in Microsoft Entra ID](cpos-custom-aad.md#set-up-a-custom-retail-server-app-in-microsoft-entra-id), [Set up a custom app for Store Commerce for Web in Microsoft Entra ID](cpos-custom-aad.md#set-up-a-custom-app-for-store-commerce-for-web-in-microsoft-entra-id).
+and [Update identity providers settings in Commerce headquarters](cpos-custom-aad.md#update-identity-providers-settings-in-commerce-headquarters).
+
+[!IMPORTANT]
+> - To help maintain a high level of security across the company, we strongly recommend that you create a new application ID (client ID) and key (secret) for each store that is created.
+> - If you're installing Commerce Scale Unit for use with an on-premises environment using Active Directory Federation Services, instead of Azure, follow the instructions in the Commerce installation document for on-premises environments. For more information, see [Installation steps for Commerce channel components in an on-premises environment](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md).
     
 ## Download and Install a new Commerce Scale Unit
 To download and execute the Commerce Scale Unit installer, see [Downloading and Running the Commerce Scale Unit Installer](retail-store-scale-unit-download-install.md). This article describes the steps necessary to download required configuration from Headquarters, download the installation program, and how to run the installer.

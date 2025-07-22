@@ -29,8 +29,7 @@ This article explains how you can download and install a Commerce Scale Unit on 
 To download the sealed self-hosted CSU installer, follow these steps.
 
 1. Open a web browser and sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com).
-1. Select your project from the list.
-1. From the hamburger menu at the top of the page, select **Asset library**.
+1. From the home page, select **Shared asset library**.
 1. Select **Retail Self-service package**.  
 1. If you already have a sealed CSU installer in your list, select the package name to start the download.  
 1. If you don’t have a CSU sealed installer in the list, select **Import**, select the sealed installer version you want to use, select **Pick**, and then select the package name to start the download. 

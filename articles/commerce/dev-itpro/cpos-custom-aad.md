@@ -69,8 +69,6 @@ To create and configure a custom app for Store Commerce for web in Microsoft Ent
     - **Service Tree ID** – This field is optional. Leave it blank.
 
 1. Select **Register**. The configuration page for the newly registered app appears.
-1. In the **Manifest** section, set  
-properties **enableAccessTokenIssuance** and **enableIdTokenIssuance** to **true**. These properties can be located under the **implicitGrantSettings** property which is under  **web**.  Then select **Save**.
 1. In the **Token configuration** section, follow these steps to add two claims:
 
     1. Select **Add optional claim**. Set the **Token type** field to **ID**, and then select the **sid** claim. Select **Add**.
