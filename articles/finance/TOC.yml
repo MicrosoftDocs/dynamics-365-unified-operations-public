@@ -1995,7 +1995,7 @@
                     - name: Payment times reporting schema
                       href: localizations/australia/apac-aus-payment-times-report.md
                     - name: Customer electronic invoices
-                      href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md
+                      href: localizations/apac/apac-aus-nzl-e-invoices.md
                     - name: Taxable Payments Annual Report
                       href: localizations/australia/apac-aus-tpar.md
                 - name: Austria
@@ -3715,7 +3715,7 @@
                     - name: GST declaration form GST101A for New Zealand (NZ-00003)
                       href: localizations/new-zealand/apac-nzl-gst-declaration.md
                     - name: Customer electronic invoices
-                      href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md
+                      href: localizations/apac/apac-aus-nzl-e-invoices.md
                 - name: Nicaragua
                   items:
                     - name: Nicaragua overview

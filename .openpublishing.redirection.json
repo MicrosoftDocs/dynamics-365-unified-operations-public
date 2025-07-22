@@ -16,11 +16,6 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "articles/finance/localizations/apac/apac-aus-nzl-e-invoices.md",
-      "redirect_url": "/dynamics365/finance/localizations/gs-apac-aus-nzl-e-invoices",
-      "redirect_document_id": "false"
-    },
-    {
       "source_path": "articles/finance/localizations/denmark/e-invoicing-dk-get-started.md",
       "redirect_url": "/dynamics365/finance/localizations/denmark/gs-e-invoicing-dk-get-started",
       "redirect_document_id": "false"
