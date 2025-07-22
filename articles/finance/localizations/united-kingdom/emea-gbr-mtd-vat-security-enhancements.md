@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 05/29/2025
+ms.date: 07/16/2025
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2025-03-25
@@ -53,8 +53,9 @@ To work with the **\[Production Ready Preview\] Security enhancements in UK MTD 
 - MTD VAT model mapping, version **46.74**, under the Electronic Messages framework model
 - MTD VAT authorization format (UK), version **46.17**, under the Electronic Messages framework model
 - MTD VAT web request headers format (UK), version **46.48**, under the Electronic Messages framework model
+- MTD VAT return response importing JSON (UK), version **46.14**, under the Electronic Messages framework model
 - MTD VAT interoperation (UK), version **31.11**, under the Tax declaration model
-
+  
 Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 ### Enable the Electronic Invoicing add-in

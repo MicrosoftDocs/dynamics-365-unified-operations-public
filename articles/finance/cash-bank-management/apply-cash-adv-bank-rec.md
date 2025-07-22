@@ -59,7 +59,7 @@ To manually complete cash application on the reconciliation worksheet, follow th
 
 ### Settle customer invoices
 
-To use matching rules to automatically settle open customer invoices, follow these steps.
+To use matching rules to automatically settle open customer invoices, including project invoices, follow these steps.
 
 1. Go to **Cash and bank management** \> **Setup** \> **Advanced bank reconciliation setup** \> **Reconciliation matching rules**.
 2. Select **New** to create a matching rule.

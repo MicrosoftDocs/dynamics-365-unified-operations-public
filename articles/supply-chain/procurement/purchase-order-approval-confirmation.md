@@ -3,11 +3,12 @@ title: Approve and confirm purchase orders
 description: Learn about the statuses that a purchase order goes through after it has been created, and the effect of enabling change management on POs.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: how-to
-ms.date: 05/02/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+- bap-template
 ---
 
 # Approve and confirm purchase orders
@@ -16,7 +17,7 @@ ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApprov
 
 This article describes the statuses that a purchase order (PO) goes through after it has been created, and the effect of enabling change management on POs.
 
-After a purchase order (PO) has been created, it might have to go through an approval process. After the vendor has agreed to the order, the PO is set to a status of *Confirmed*.
+After a PO has been created, it might have to go through an approval process. After the vendor has agreed to the order, the PO is set to a status of *Confirmed*.
 
 ## Approval of purchase orders
 

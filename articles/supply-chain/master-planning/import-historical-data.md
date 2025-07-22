@@ -1,8 +1,8 @@
 ---
 title: Import historical data for demand forecasts
 description: Learn how to use data entities to import historical demand data from any system, so that you have a longer history of demand forecast data.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 05/10/2017
 ms.custom: 

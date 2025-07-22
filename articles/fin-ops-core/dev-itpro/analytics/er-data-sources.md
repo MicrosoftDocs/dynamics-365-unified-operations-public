@@ -5,7 +5,6 @@ author: kfend
 ms.author: kfend
 ms.topic: article
 ms.date: 04/28/2023
-ms.custom: bap-template
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -13,6 +12,9 @@ ms.search.validFrom: 2016-02-28
 ms.search.form: ERSolutionTable, EROperationDesigner, ERModelMappingDesigner, ERExpressionDesignerFormula
 ms.dyn365.ops.version: Release 7.0.0
 ms.assetid: 
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Supported data source types for ER components

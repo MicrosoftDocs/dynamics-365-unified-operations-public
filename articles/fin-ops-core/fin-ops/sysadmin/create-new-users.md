@@ -2,7 +2,7 @@
 title: Create new users
 description: Users are internal employees of your organization, or external customers and vendors, who require access to the system to perform their jobs. 
 author: pnghub
-ms.author: gned
+ms.author: priysharma
 ms.topic: how-to
 ms.date: 03/12/2024
 ms.custom:

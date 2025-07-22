@@ -2,15 +2,16 @@
 title: Set up new environments, Azure DevOps, and branches for projects
 description: This article describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 Commerce projects.
 author: andreashofmann1
-ms.date: 11/26/2024
+ms.date: 07/16/2025
 ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Set up new environments, Azure DevOps, and branches for projects
@@ -25,7 +26,7 @@ Most environments for Microsoft Dynamics 365 Commerce projects are hosted in the
 
 Development environments are called Tier 1 environments. There are three options for hosting a development environment:
 
-+ The Commerce app comes with one Sandbox Tier 1 environment. (For more information, see the [Microsoft Dynamics 365, Enterprise edition, Licensing Guide](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI).)
++ The Commerce app comes with one Sandbox Tier 1 environment. For more information, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 + A cloud-hosted environment that you run on your own Microsoft Azure subscription. This type of environment is known as "cloud-hosted" in Microsoft Dynamics Lifecycle Services (LCS).
 + A downloaded virtual machine (VM) that you host in a location of your choice.
 

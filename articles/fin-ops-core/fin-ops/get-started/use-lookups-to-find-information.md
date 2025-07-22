@@ -9,6 +9,7 @@ ms.custom:
   - evergreen
 ms.reviewer: johnmichalak
 ms.date: 01/23/2025
+ms.update-cycle: 1095-days
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0

@@ -10,8 +10,9 @@ ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2019-01-01
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce

@@ -34,7 +34,7 @@ This article describes how to set up information about the locations in a wareho
 3. In the **Warehouse** field, type a value.
 4. In the **Name** field, type a value.
 5. In the **Site** field, select the desired record in the lookup.
-6. Toggle the expansion of the **Location names** section. The options in this section define the default format for location names. In our example, we'll include the aisle number, rack number and shelf number.  
+6. Toggle the expansion of the **Location names** section. The options in this section define the default format for location names. In our example, we'll include the aisle number, rack number, and shelf number.  
 7. Set the **Include aisle** option to *Yes*.
 8. Set the **Include rack** option to *Yes*.
 9. In the **Format** field, for the rack, type a value.
@@ -51,5 +51,9 @@ This article describes how to set up information about the locations in a wareho
 6. Select **Next** until you come to the option to select **Finish**.
 7. Close the page.
 8. Refresh the page.
+
+## Warehouse blocking limitations
+
+The Inventory management module doesn't support blocking or closing an entire warehouse for future transactions. As a workaround, you can rename the warehouse to indicate that it shouldn't be used for future transactions. Alternatively, you can block individual locations within the warehouse as needed. For details about blocking specific locations, see [Inventory locations](../inventory-locations.md#blocked-locations).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

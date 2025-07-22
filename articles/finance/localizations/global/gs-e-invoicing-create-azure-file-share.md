@@ -4,13 +4,14 @@ description: Learn how to create a Microsoft Azure file share for Electronic inv
 author: achansoriya
 ms.author: achansoriya
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 09/18/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 09/18/2024
 ms.dyn365.ops.version: 10.0.39
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Create an Azure file share in the Azure portal

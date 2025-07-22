@@ -2,7 +2,7 @@
 title: Import users from Microsoft Entra ID
 description: This procedure can be used by system administrators to manually import selected users or to import a large number of users from Microsoft Entra ID. 
 author: pnghub
-ms.author: gned
+ms.author: priysharma
 ms.topic: how-to
 ms.date: 07/07/2017
 ms.custom:

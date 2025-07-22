@@ -9,6 +9,7 @@ ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Norway
 ms.search.validFrom: 2022-11-15
+ms.custom: sfi-image-nochange
 ---
 
 # Register an integration point in the ID-porten web portal

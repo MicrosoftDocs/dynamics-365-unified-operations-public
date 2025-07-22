@@ -124,7 +124,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/finance
                 - name: Default dashboard
                   href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/finance
-                - name: Immersive Home (preview)
+                - name: Immersive Home (production ready preview)
                   href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/finance
                 - name: Set the preferred initial page for each user
                   href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/finance
@@ -2008,14 +2008,16 @@
                       href: localizations/austria/emea-aut-packing-material-fee-calculation.md
                     - name: Cross-border services report
                       href: localizations/austria/emea-aut-cross-border-services-report.md
-                    - name: Austrian Intrastat
-                      href: localizations/austria/emea-aut-intrastat.md
                     - name: Purchase duties
                       href: localizations/austria/emea-aut-purchase-duties.md
-                    - name: VAT declaration
-                      href: localizations/austria/emea-aut-vat-declaration-austria.md
+                    - name: Austrian Intrastat
+                      href: localizations/austria/emea-aut-intrastat.md
                     - name: EU sales list
                       href: localizations/austria/emea-aut-eu-sales-list.md
+                    - name: VAT declaration U30
+                      href: localizations/austria/emea-aut-vat-declaration-austria.md
+                    - name: Generate an Annual sales tax report U1
+                      href: localizations/austria/emea-aut-annual-sales-tax-report.md
                 - name: Bahrain
                   items:
                     - name: Bahrain overview
@@ -2711,7 +2713,7 @@
                     - name: Finland overview
                       href: localizations/finland/finland.md
                     - name: Sales tax payment report for Finland
-                      href: localizations/norway/emea-fin-sales-tax-payment-report-finland.md
+                      href: localizations/finland/emea-fin-sales-tax-payment-report-finland.md
                     - name: Finnish Intrastat
                       href: localizations/finland/emea-fin-intrastat.md
                     - name: VAT declaration
@@ -2786,6 +2788,8 @@
                       href: localizations/france/emea-fra-VAT-declaration-preview-France.md
                     - name: DAS-2 report
                       href: localizations/france/emea-fra-das2-report.md
+                    - name: Reporting on payment deadlines for customer and vendor invoices
+                      href: localizations/france/emea-fra-reporting-on-payment-deadlines.md
                 - name: Germany
                   items:
                     - name: Germany overview
@@ -3754,6 +3758,8 @@
                       href: localizations/norway/emea-nor-satndard-audit-file-for-tax.md
                     - name: Customer electronic invoices in Norway
                       href: localizations/norway/emea-nor-e-invoices.md
+                    - name: Payments to self-employed persons - RF-1321
+                      href: localizations/norway/emea-nor-payments-to-self-employed-persons.md
                 - name: Oman
                   items:
                     - name: Oman overview
@@ -3876,6 +3882,8 @@
                       items:
                         - name: Standard audit file (JPK) overview
                           href: localizations/poland/emea-pol-standard-audit-file-saf.md
+                        - name: SAF Bank statement file - JPK_KR
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-kr.md
                         - name: SAF Bank statement file - JPK_WB
                           href: localizations/poland/emea-pol-standard-audit-file-saf-wb.md
                         - name: SAF Inventory file - JPK_MAG
@@ -4280,6 +4288,8 @@
                     href: localizations/turkiye/emea-tur-currency-conversion.md
                   - name: Continuous serial numbering of packing slips and invoices (preview)
                     href: localizations/turkiye/emea-tur-serial-numbering.md
+                  - name: Use e-Ledger in the Republic of Türkiye (preview)
+                    href: localizations/turkiye/emea-tur-e-ledger.md
                   - name: Use Exchange difference invoicing (preview)
                     href: localizations/turkiye/emea-tur-exchange-difference-invoicing.md
                 - name: United Arab Emirates (UAE)
@@ -4360,14 +4370,30 @@
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay.md
                 - name: Venezuela
                   items:
+                  - name: Configure printing for the annual ISLR withholding certificate for Venezuela
+                    href: localizations/iberoamerica/ltm-venezuela-ISLR-Annual-withholding-certificate.md
+                  - name: Configure printing for the Declaration Reports Relationship Sales Book for Venezuela
+                    href: localizations/iberoamerica/Declaration-Report-Relationship-Sales-Book.md
+                  - name: Configure printing for the Declaration Reports Sales VAT Book for Venezuela
+                    href: localizations/iberoamerica/Declaration-Report-Sales-VAT-Book.md
+                  - name: Configure printing for the ISRL Withholding report for Venezuela
+                    href: localizations/iberoamerica/ltm-Venezuela-file-export-ISRL-withholdings.md
+                  - name: Printing configuration for the ISLR withholding certificate for Venezuela
+                    href: localizations/iberoamerica/ltm-venezuela-ISLR-withholding-certificate.md
                   - name: Configure printing for the Printed General Ledger for Venezuela
                     href: localizations/iberoamerica/ltm-venezuela-printed-general-ledger.md
+                  - name: Configure printing for Relationship purchases Book reports for Venezuela
+                    href: localizations/iberoamerica/ltm-Declaration-Report-Relationship-Purchase-Book.md
+                  - name: Configure printing for the VAT withholding certificate for Venezuela
+                    href: localizations/iberoamerica/ltm-venezuela-VAT-withholding-certificate.md
+                  - name: Configure printing for the VAT Withholding report for Venezuela
+                    href: localizations/iberoamerica/ltm-Venezuela-file-export-VAT-withholdings.md
+                  - name: Configure printing for Venezuelan Purchase VAT book details
+                    href: localizations/iberoamerica/Declaration-Report-Purchase-VAT-Book.md
                   - name: Configure sales and purchase invoices for Venezuela
                     href: localizations/iberoamerica/ltm-configure-invoices-venezuela.md
                   - name: Create customer and vendor records with an address in Venezuela
                     href: localizations/iberoamerica/ltm-create-customer-and-vendor-venezuela.md
-                  - name: Printing configuration for the ISLR withholding certificate for Venezuela
-                    href: localizations/iberoamerica/ltm-venezuela-ISLR-withholding-certificate.md
                   - name: Set up a legal entity and tax information for Venezuela
                     href: localizations/iberoamerica/ltm-ven-set-up-legal-entity.md
         - name: Reporting and Power BI integrations
@@ -4589,6 +4615,10 @@
               items:
                 - name: Creating cubes
                   href: business-performance-planning/create-cubes.md
+                - name: Custom drivers
+                  href: business-performance-planning/custom-drivers.md
+                - name: Create calculated columns
+                  href: business-performance-planning/calculated-columns.md
                 - name: Load data using dataflows
                   href: business-performance-planning/load-data-dataflows.md
             - name: Power BI Visuals
@@ -5577,7 +5607,7 @@
       items:
         - name: Overview
           href: ../finance/transparency-note.md
-        - name: Set up Agent management (preview)
+        - name: Set up Agent management (production ready preview)
           href: ../fin-ops-core/fin-ops/copilot/agent-mgmt.md
         - name: Collections coordinator summary FAQ
           href: accounts-receivable/collections-coordinator-summary-faq.md

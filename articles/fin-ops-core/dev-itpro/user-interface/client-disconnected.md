@@ -1,6 +1,6 @@
 ---
 title: Client internet connectivity
-description: Learn about client internet connectivity, including an overview of degredations of lack of internet access and client internet connectivity options.
+description: Learn about client internet connectivity, including an overview of degradations of lack of internet access and client internet connectivity options.
 author: jasongre
 ms.author: jasongre
 ms.topic: article

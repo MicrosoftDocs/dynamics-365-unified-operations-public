@@ -5,6 +5,7 @@ author: liza-golub
 ms.author: egolub
 ms.topic: overview
 ms.date: 05/23/2024
+ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: johnmichalak  
 audience: Application User
@@ -31,8 +32,9 @@ This article provides links to documentation resources for Poland.
 - [Sales tax reports](emea-pol-sales-tax-reports.md)
 - [Polish Intrastat](emea-pol-intrastat.md)
 - [VAT declaration with registers (JPK_V7M, VDEK)](emea-pol-vdek.md)
+- [SAF Accounting Books Income Tax (JPK_KR_PD)](emea-pol-standard-audit-file-saf-pd.md)
 - [Standard audit file (SAF)](emea-pol-standard-audit-file-saf.md)
-  - [SAF Accounting Books Income Tax - JPK_KR_PD](emea-pol-standard-audit-file-saf-pd.md)
+  - [SAF Accounting Books - JPK_KR](emea-pol-standard-audit-file-saf-kr.md)
   - [SAF Bank statement file - JPK_WB](emea-pol-standard-audit-file-saf-wb.md)
   - [SAF Inventory file - JPK_MAG](emea-pol-standard-audit-file-saf-mag.md)
   - [SAF VAT sales and purchase register - JPK_VAT](emea-pol-standard-audit-file-saf-vat.md)

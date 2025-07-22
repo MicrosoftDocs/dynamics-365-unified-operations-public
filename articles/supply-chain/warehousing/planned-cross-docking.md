@@ -3,11 +3,12 @@ title: Planned cross docking
 description: Learn about advanced planned cross-docking, where the inventory quantity that is required for an order is directed from receipt or creation to the outbound dock.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
-ms.date: 08/09/2022
-ms.custom:
 ms.reviewer: kamaybac
-ms.search.form:  WHSCrossDockingTemplate, WHSLoadPostMethod, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSPlannedCrossDocking
+ms.search.form: WHSCrossDockingTemplate, WHSLoadPostMethod, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSPlannedCrossDocking
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Planned cross-docking
@@ -16,7 +17,7 @@ ms.search.form:  WHSCrossDockingTemplate, WHSLoadPostMethod, WHSWorkClass, WHSWo
 
 This article describes advanced planned cross-docking. Cross-docking is a warehouse process where the inventory quantity that is required for an order is directed straight from receipt or creation to the correct outbound dock or staging area. All remaining inventory from the inbound source is directed to the correct storage location through the regular put-away process.
 
-Cross-docking lets workers skip inbound put-away and outbound picking of inventory that is already marked for an outbound order. Therefore, the number of times that inventory is touched is minimized, where possible. Additionally, because there is less interaction with the system, time and space savings on the warehouse shop floor are increased.
+Cross-docking lets workers skip inbound put-away and outbound picking of inventory that is already marked for an outbound order. Therefore, the number of times that inventory is touched is minimized, where possible. Additionally, because there's less interaction with the system, time and space savings on the warehouse shop floor are increased.
 
 Before you can run cross-docking, you must configure a new cross-docking template, where the supply source and other sets of requirements for cross-docking are specified. As the outbound order is created, the line must be marked against an inbound order that contains the same item. You can select the directive code field on the cross-docking template, similar to the way you set up replenishment and purchase orders.
 
@@ -24,15 +25,6 @@ At the time of inbound order receiving, the cross-docking setup automatically id
 
 > [!NOTE]
 > Inventory transactions are *not* unregistered when crossing-dock work is canceled, even if the setting for this capability is turned on in Warehouse management parameters.
-
-## Turn on the planned cross docking features
-
-If you're running Supply Chain Management version 10.0.28 or earlier, you may need to enable planned cross docking before you can use it. Go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the following features in the following order:
-
-1. *Planned cross docking*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off.)
-1. *Cross docking templates with location directives*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default. As of Supply Chain Management version 10.0.32, it's mandatory and can't be turned off.)
-    > [!NOTE]
-    > This feature enables the **Directive code** field to be specified on the cross-docking template, similar to the way you set up replenishment templates. Enabling this feature prevents you from adding a directive code on the cross-docking work template lines for the final *Put* line. This ensures that the final put location can be determined during work creation before considering work templates.
 
 ## Setup
 
@@ -122,7 +114,7 @@ Planned cross-docking is implemented as a load posting method. After you turn on
     - **Supply source:** *Purchase order*
 
 > [!NOTE]
-> You can set up a query to control when a specific cross docking template is used. The query for cross docking templates has only the *InventTable* (items) table and the inner-joined *WHSInventTable* (WMS items) table. If you want to add other tables to the query, you can join them by using only *exist joins* or *not exist joins*. When you filter on the joined tables, a record from the main table is retrieved for each matching record in the joined table. If the join type is *exist join*, the search ends after the first match has been found. For example, if you join the sales order line table to the items table, the system validates and returns items for which at least one sales order line has the defined condition. Essentially, the data is fetched from the parent (items) table, not from the child (sales order line) table. Therefore, filtering by source documents such as sales order lines or customers can't be done out of the box.
+> You can set up a query to control when a specific cross docking template is used. The query for cross docking templates has only the `InventTable` (standard items) table and the inner-joined `WHSInventTable` (warehouse management processes (WMS) items) table. If you want to add other tables to the query, you can join them by using only *exist joins* or *not exist joins*. When you filter on the joined tables, a record from the main table is retrieved for each matching record in the joined table. If the join type is *exist join*, the search ends after the first match has been found. For example, if you join the sales order line table to the items table, the system validates and returns items for which at least one sales order line has the defined condition. Essentially, the data is fetched from the parent (items) table, not from the child (sales order line) table. Therefore, filtering by source documents such as sales order lines or customers can't be done out of the box.
 
 ### Create a work class
 
@@ -267,8 +259,8 @@ Follow these steps to create the planned cross-docking from the sales order.
 1. In the **Sales order details** page for the sales order that you just created, on the Action Pane, on the **Warehouse** tab, in the **Actions** group, select **Release to warehouse**.
 
     The release to warehouse action creates a shipment and load line for the sales order line, and tries to allocate inventory.
-    
-    You receive an informational message. You also receive the following warning message: "No work was created for wave XXXX. See the work creation history log for details." This behavior is expected, because there is no inventory in the warehouse.
+
+    You receive an informational message. You also receive the following warning message: "No work was created for wave XXXX. See the work creation history log for details." This behavior is expected, because there's no inventory in the warehouse.
 
 1. On the **Sales order lines** FastTab, on the **Warehouse** menu, select **Shipment details**.
 

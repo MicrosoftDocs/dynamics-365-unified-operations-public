@@ -122,7 +122,7 @@
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/supply-chain
         - name: Default dashboard
           href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/supply-chain
-        - name: Immersive Home (preview)
+        - name: Immersive Home (production ready preview)
           href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/supply-chain
         - name: Set the preferred initial page for each user
           href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/supply-chain
@@ -1861,8 +1861,6 @@
           href: master-planning/supplier-requested-confirmed-dates.md
         - name: Create a schedule for a site
           href: master-planning/tasks/create-schedule-site.md
-        - name: Create a plan for a site
-          href: master-planning/tasks/create-plan-site.md
         - name: Master planning with demand forecasts
           href: master-planning/planning-optimization/demand-forecast.md
         - name: Master planning with supply forecasts
@@ -2411,6 +2409,8 @@
           href: procurement/supplier-com-agent-overview.md
         - name: Set up and configure the Supplier Communications Agent
           href: procurement/supplier-com-agent-setup.md
+        - name: Solve common problems when setting up the Supplier Communications Agent
+          href: procurement/supplier-com-agent-setup-faq.md
         - name: Follow up on purchase orders using the Supplier Communications Agent
           href: procurement/supplier-com-agent-follow-up.md
         - name: Review and apply purchase order changes received in vendor emails
@@ -3911,6 +3911,12 @@
           items:
           - name: Install the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
+          - name: Migrate the Warehouse Management mobile app from V3 to V4 (preview)
+            href: warehousing/warehouse-app-migrating-from-v3-v4.md
+          - name: Install Warehouse Management mobile app V4 on Windows (preview)
+            href: warehousing/warehouse-app-install-certificate.md
+          - name: Use a QR code to connect the mobile app to Supply Chain Management
+            href: warehousing/warehouse-app-qr-code.md
           - name: User-based authentication
             href: warehousing/warehouse-app-authenticate-user-based.md
           - name: User-based authentication FAQ
@@ -4005,7 +4011,7 @@
           href: warehousing/location-directive-acceptance-tests.md
         - name: Configure product filters for warehouse transactions
           href: warehousing/filters-and-filter-codes.md
-        - name: Configure the transfer order receiving process (preview)
+        - name: Configure the transfer order receiving process
           href: warehousing/configure-transfer-order-receiving-process.md
         - name: Location stocking limits
           href: warehousing/location-stocking-limits.md
@@ -4051,7 +4057,7 @@
             href: warehousing/document-routing-layout-for-license-plates.md
           - name: Print labels using an external service
             href: supply-chain-dev/label-printing-using-external-label-service.md
-          - name: Print labels using the Loftware NiceLabel label service solution
+          - name: Print labels using the Loftware label service solution
             href: supply-chain-dev/label-printing-using-nicelabel.md
           - name: Print labels using the Seagull Scientific BarTender label service solution
             href: supply-chain-dev/label-printing-using-bartender.md
@@ -4185,7 +4191,7 @@
       items:
       - name: Overview
         href: responsible-ai-overview.md
-      - name: Set up Agent management (preview)
+      - name: Set up Agent management (production ready preview)
         href: ../fin-ops-core/fin-ops/copilot/agent-mgmt.md  
       - name: Responsible AI FAQ for AI summaries with Copilot
         href: faq-summaries.md

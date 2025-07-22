@@ -2,7 +2,8 @@
 title: Preview features in Dynamics 365 Commerce 10.0.43 (January 2025)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.43. 
 author: johnmichalak
-ms.date: 02/11/2025
+ms.date: 06/16/2025
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
   - bap-template
@@ -11,8 +12,6 @@ ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: johnmichalak
 ms.search.validFrom: 2023-11-01
-ms.dyn365.ops.version: 10.0.40
-
 ---
 
 # What's new or changed in Dynamics 365 Commerce 10.0.43 (January 2025)
@@ -38,6 +37,8 @@ The following table lists the features that are included in this release. We mig
 | Point of sale | Index compression improvements for offline databases | This feature helps organizations further reduce the size of their offline databases on POS devices by extending the index compression capabilities to smaller indexes. | Admins |
 | Point of sale | New network connection health chart  | This feature introduces three new network health charts for connection history, connection types, and Wi-Fi signal strength over a 24 hour period. | Admins |
 | Point of sale | Proactive toast notifications for offline reliability | This feature supports the toast notification framework in Store Commerce and notifies store employees when there's an offline authentication failure, weak or missing Wi-Fi, or a seamless offline switch. | Admins |
+| Distributed Order Management (DOM) | DOM with Azure Maps | This feature introduces support for Azure Maps with DOM. Learn more in [Set up DOM](../dom-set-up.md) | Admins |
+| Point of sale | Default the requested ship and receipt dates on returned order lines to a future date | This feature unblocks returns for direct delivery items from POS by setting the requested ship date and requested receipt date for return order lines to one day in the future. | Admins |
 
 ## Resources
 

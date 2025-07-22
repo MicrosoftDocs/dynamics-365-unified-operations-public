@@ -1,8 +1,8 @@
 ---
 title: Production planning
 description: Learn about planning for production and explains how to modify planned production orders by using Planning Optimization.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 12/09/2024
 ms.reviewer: kamaybac

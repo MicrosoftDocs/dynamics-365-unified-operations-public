@@ -2,7 +2,7 @@
 title: Install Commerce Scale Unit on a development environment
 description: This article explains how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce.
 author: bstorie
-ms.date: 6/01/2025
+ms.date: 7/01/2025
 ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -123,14 +123,12 @@ To verify that the **IIS 6 Management Compatibility (IIS 6 Metabase Compatibilit
 To install the .NET Core hosting bundle on the development machine, follow these steps.
 
 1. Connect to the development machine.
-1. Open a web browser and go to [Download .NET 8.0 (Linux, macOS, and Windows](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
+1. Open a web browser and go to [Download .NET 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
 1. In the **ASP.NET Core Runtime 8.0.X** section, select the **Hosting Bundle** installer for Windows to download it.
 1. Run the **dotnet-hosting-8.0.x-win.exe** installer.
 
-
 ## Download and Install
 To download and execute the Commerce Scale Unit installer, see [Downloading and Running the Commerce Scale Unit Installer](retail-store-scale-unit-download-install.md). This article describes the steps necessary to download required configuration from Headquarters, download the installation program, and how to run the installer.
-
 Once installation is complete, return here.
 
 ## Database restores from UAT

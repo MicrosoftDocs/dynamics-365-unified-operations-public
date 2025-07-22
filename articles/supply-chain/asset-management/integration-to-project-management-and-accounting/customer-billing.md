@@ -162,16 +162,11 @@ In this section, you will continue to work on the work order that you worked on 
 1. In the **Create invoice proposal** dialog box, in the **Project transactions** section, select the **Select** check box for every line  that you want to invoice.
 1. Select **OK** to close the dialog box and view the new invoice proposal.
 
-## Credit limit check (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.44 GA -->
+## Credit limit check
 
 The credit limit check feature checks work order dispatches to confirm whether a forecasted work order will cause the customer to exceed their credit limit. If the credit limit is exceeded, a warning or error is triggered based on the feature's configuration.
 
 Each customer's total outstanding credit is calculated as the sum of outstanding sales orders and project credit (work orders accrue toward project credit).
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Prerequisites
 

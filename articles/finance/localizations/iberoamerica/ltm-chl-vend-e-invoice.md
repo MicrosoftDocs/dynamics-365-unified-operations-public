@@ -4,13 +4,14 @@ description: Learn how to configure and use vendor electronic invoice import for
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 08/19/2024
 ms.reviewer: johnmichalak
 ms.search.region: Chile
 ms.search.validFrom: 2024-08-07
 ms.dyn365.ops.version: AX 10.0.41
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Vendor electronic invoice import in Chile

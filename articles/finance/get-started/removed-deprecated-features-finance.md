@@ -8,6 +8,7 @@ ms.custom:
   - bap-template
   - evergreen
 ms.date: 12/05/2024
+ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-03-02
@@ -63,18 +64,6 @@ This list is intended to help you consider these removals and deprecations for y
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: By June 6, 2025, we plan to no longer support batch mode for submission of VAT return in the Making Tax Digital feature. It's still possible to generate in batch the report (VAT 100) in Excel and JSON formats. |
-
-### SAF Accounting books (JPK_KR) for Poland
-
-[SAF Accounting Books - JPK_KR](../localizations/poland/emea-pol-standard-audit-file-saf-kr.md)
-
-| &nbsp;  | &nbsp;  |
-|---|---|
-| **Reason for deprecation/removal** | Replaced with the new, regulatory-required [SAF Accounting Books Income Tax - JPK_KR_PD](../localizations/poland/emea-pol-standard-audit-file-saf-pd.md). | 
-| **Replaced by another feature?**   | Yes |
-| **Product areas affected**         | Application |
-| **Deployment option**              | All |
-| **Status**                         | Deprecated: By January 1, 2026, we plan to no longer support the SAF Accounting Books - JPK_KR, including the **Accounting Books (PL)** Electronic reporting (ER) format, the **SAF Accounting books** parameter in General ledger parameters, and the **SAF Accounting books** menu item in the **General ledger** module. |
 
 ### SAF VAT sales and purchase register (JPK_VAT) for Poland
 

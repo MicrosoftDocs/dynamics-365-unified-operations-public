@@ -4,7 +4,8 @@ description: Learn about routes and operations, including definitions for routes
 author: johanhoffmann
 ms.author: johanho
 ms.topic: article
-ms.date: 04/19/2024
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen
@@ -173,7 +174,7 @@ Before a route version can be used in the planning or manufacturing process, it 
 
 ### Activating the default route version
 
-When you activate a route version, you designate it as the default route version that master planning will use, or that will be used to create production orders. You can have only one active route version for a given set of constraints (for example, period, site, or quantity). If the version that you’re trying to activate conflicts with a version that is already active, you receive an error message. To prevent an ambiguous activation, you must then either inactivate the conflicting version or modify the constraints (usually the period) on the route version.
+When you activate a route version, you designate it as the default route version that master planning will use, or that will be used to create production orders. You can have only one active route version for a given set of constraints (for example, period, site, or quantity). If the version that you’re trying to activate conflicts with a version that is already active, you receive an error message. To prevent an ambiguous activation, you must then either deactivate the conflicting version or modify the constraints (usually the period) on the route version.
 
 ### Electronic signatures
 

@@ -1,19 +1,18 @@
 ---
-title: Modern workflows in POS (preview)
+title: Modern workflows in POS
 description: Learn how modern workflows in POS improve the usability, extensibility, and accessibility of Microsoft Dynamics 365 Commerce Store Commerce.
 author: anush6121
 ms.author: anvenkat 
 ms.topic: how-to 
-ms.date: 04/30/2025
+ms.date: 07/09/2025
 ms.reviewer: v-chrgriffin
 ms.custom: 
   - bap-template
 ---
 
-# Modern workflows in POS (preview)
+# Modern workflows in POS
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [banner](includes/preview-banner.md)]
 
 This article describes modern workflows in POS that improve the usability, extensibility, and accessibility of Microsoft Dynamics 365 Commerce Store Commerce.
 
@@ -67,7 +66,7 @@ Inline actions on the transaction grid are available for common line actions suc
 
 To launch the inline actions list, hover over a line on the transaction grid and select the 3 dots (**…**). On mobile and touch devices, inline actions can be accessed by long-pressing the line on the transaction grid, which provides a more intuitive mobile-optimized experience.
 
-There's an option for a more extensive list of line actions. To access additional line actions, you must enable the **Enable Advanced Line Inline Actions** feature in the Commerce headquarters **Feature management workspace** (**System administration \> Workspaces \> Feature management**).
+There's an option for a more extensive list of line actions. To access more line actions, you must enable the **Enable advanced inline actions** feature in the Commerce headquarters **Feature management workspace** (**System administration \> Workspaces \> Feature management**).
 
 Inline actions remove the need for nested buttons to access line operations, allowing for a cluster-free transaction page with fewer buttons.
 
@@ -151,6 +150,6 @@ This feature is available starting with the Commerce 10.0.39 release.
 
 ## Extensibility
 
-The modernization and move to React-based controls on the transaction page keeps full parity with existing extensibility capabilities. Custom columns, fields, and controls continue to work as expected, making it easier to adopt the new experience without additional development effort.
+The modernization and move to React-based controls on the transaction page keeps full parity with existing extensibility capabilities. Custom columns, fields, and controls continue to work as expected, making it easier to adopt the new experience without extra development effort.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

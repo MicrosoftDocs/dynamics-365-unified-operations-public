@@ -5,6 +5,7 @@ author: MOAAMER
 ms.author: moaamer 
 ms.topic: article
 ms.date: 09/25/2024
+ms.update-cycle: 1095-days
 ms.custom: evergreen 
 ms.reviewer: twheeloc
 audience: Application User
@@ -32,7 +33,7 @@ Before you run the year-end close process, validate the settings for the followi
 On the **Main account** page:
 
 - Verify that the **Main account type** field is correctly set for each main account. The main account type determines whether the balance of the main account will be brought forward as an opening balance or closed into retained earnings in the opening transaction.
-- The balance of the main account can be transferred to a new main account during the year-end close. Enter the new main account in the **Opening account** field. Typically, this field is used for balance sheet main accounts when the main account is inactivated and a new main account is used for the new fiscal year.
+- The balance of the main account can be transferred to a new main account during the year-end close. Enter the new main account in the **Opening account** field. Typically, this field is used for balance sheet main accounts when the main account is deactivated and a new main account is used for the new fiscal year.
 - In Microsoft Dynamics 365 Finance version 10.0.41, the **Validate year-end close** feature performs validation checks before the year-end close to detect issues and suggest a resolution. It ensures accurate ledger balances in both accounting and reporting currencies, advises you about best practices for managing large dimension sets, and improves the year-end close experience. You must select the target legal entity and the target year. 
 
 On the **General ledger parameters** page under **Fiscal year close**:

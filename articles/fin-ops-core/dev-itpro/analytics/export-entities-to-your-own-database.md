@@ -5,12 +5,14 @@ author: priyanshasharma2808
 ms.author: priysharma
 ms.topic: how-to
 ms.date: 04/03/2025
-ms.custom: 
-  - bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global 
 ms.search.validFrom: 2016-08-30 
 ms.dyn365.ops.version: Platform update 2
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
 # Bring your own database (BYOD)

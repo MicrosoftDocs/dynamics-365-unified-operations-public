@@ -1,12 +1,14 @@
 ---
 title: Finite capacity planning and scheduling
 description: Finite capacity planning and scheduling helps you understand how much work can be produced during a specific period when limitations are taken into consideration.
-author: t-benebo
-ms.author: benebotg
-ms.topic: article
-ms.date: 09/19/2022
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqParameters, ReqPlanSched, WrkCtrTable
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+- bap-template
 ---
 
 # Finite capacity planning and scheduling
@@ -15,27 +17,27 @@ ms.search.form: ReqParameters, ReqPlanSched, WrkCtrTable
 
 Finite capacity is an approach that helps you understand how much work can be produced during a specific period when limitations on different resources are taken into consideration. The purpose of finite capacity scheduling is to ensure that work proceeds at an even and efficient pace throughout the plant.
 
-Finite capacity planning and scheduling creates a more realistic schedule for the production processes than the infinite loading approach creates. If there isn't enough capacity on the resources, the delivery date will be pushed out, and the job will be scheduled when there is enough capacity.
+Finite capacity planning and scheduling creates a more realistic schedule for the production processes than the infinite loading approach creates. If there isn't enough capacity on the resources, the delivery date is pushed out, and the job is scheduled when there's enough capacity.
 
 > [!NOTE]
 > Finite capacity planning and scheduling works in nearly the same way, regardless of whether you use Planning Optimization or the deprecated master planning engine. However, Planning Optimization doesn't use the **Bottleneck time** fence parameter. When you use Planning Optimization, bottleneck resources are always scheduled by using the same time fence as non-bottleneck resources (as indicated by the finite capacity time fence).
 
 ## Set up finite capacity functionality
 
-To use finite capacity functionality, you must enable capacity planning globally, and you must enable finite capacity planning both for the master plan where you want to use it and for each resource where it applies. For plans and resources where finite capacity is enabled, scheduling of planned production orders will consider capacity that has already been reserved. Planned production orders are backward-scheduled from the requirement date. If capacity isn't available to meet the optimal schedule, the system will try to require component items on an earlier date. If your capacity can change as requirements change (for example, when you're working with shifts), you should not use finite capacity functionality, because the calculated processing times won't be correct. Scheduling considers only capacity that is already reserved for resources where finite capacity is enabled. By enabling finite capacity for a resource, you make it possible to modify the finite capacity time fence.
+To use finite capacity functionality, you must enable capacity planning globally, and you must enable finite capacity planning both for the master plan where you want to use it and for each resource where it applies. For plans and resources where finite capacity is enabled, scheduling of planned production orders considers capacity that is already reserved. Planned production orders are backward-scheduled from the requirement date. If capacity isn't available to meet the optimal schedule, the system tries to require component items on an earlier date. If your capacity can change as requirements change (for example, when you're working with shifts), you shouldn't use finite capacity functionality, because the calculated processing times won't be correct. Scheduling considers only capacity that is already reserved for resources where finite capacity is enabled. By enabling finite capacity for a resource, you make it possible to modify the finite capacity time fence.
 
 ### Activate Master planning parameters
 
 To use finite capacity functionality, you must enable capacity planning on the **Master planning parameters** page.
 
-1. Go to **Master planning \> Setup \> Master planning parameters**.
+1. Go to **Master planning** \> **Setup** \> **Master planning parameters**.
 1. On the **Planned orders** tab, in the **Capacity planning** section, set the **Production** option to *Yes*.
 
 ### Activate a master plan
 
 You must enable finite capacity planning and scheduling for each master plan where you want to use it.
 
-1. Go to **Master planning \> Setup \> Plans \> Master plans**.
+1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
 1. In the list pane, select a master plan that you want to set up to use finite capacity planning and scheduling.
 1. On the **General** FastTab, in the **Planned production orders** section, set the **Finite capacity** option to *Yes*.
 1. Repeat steps 2 and 3 for each additional master plan that you want to set up.
@@ -44,7 +46,7 @@ You must enable finite capacity planning and scheduling for each master plan whe
 
 You must enable finite capacity planning and scheduling for each resource where you want to use it.
 
-1. Go to **Production control \> Setup \> Resources \> Resources**.
+1. Go to **Production control** \> **Setup** \> **Resources** \> **Resources**.
 1. In the list pane, select a resource that you want to set up to use finite capacity planning and scheduling.
 1. On the **Operation** FastTab, in the **Capacity button** section, set the **Finite capacity** option to *Yes*.
 1. Repeat steps 2 and 3 for each additional resource that you want to set up.
@@ -70,7 +72,7 @@ Product *Product1* has a route that contains the following operations.
 
 Workers at your company work in one shift for eight hours (8:00–16:00).
 
-There is a scheduled production order for *24 pcs* of *Product1*. It has a delivery date of *Today + 3 days*.
+There's a scheduled production order for *24 pcs* of *Product1*. It has a delivery date of *Today + 3 days*.
 
 As a result of planning, the system loads the resources in the following way:
 

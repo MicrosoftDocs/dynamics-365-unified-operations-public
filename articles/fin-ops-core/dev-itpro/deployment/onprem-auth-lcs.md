@@ -4,13 +4,14 @@ description: Learn how to configure your tenant to allow your local agent to aut
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 02/21/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2024-09-10
 ms.dyn365.ops.version: Platform update 64
+ms.custom:
+  - bap-template
+  - sfi-ga-nochange
 ---
 
 # Configure Lifecycle Services connectivity for Finance + Operations (on-premises) deployments

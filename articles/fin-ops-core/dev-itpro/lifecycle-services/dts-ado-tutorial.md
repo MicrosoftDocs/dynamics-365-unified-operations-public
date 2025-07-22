@@ -9,6 +9,7 @@ ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 03-28-2022
+ms.custom: sfi-image-nochange
 ---
 
 # Dynamics 365 Translation Service Azure DevOps extension tutorial 

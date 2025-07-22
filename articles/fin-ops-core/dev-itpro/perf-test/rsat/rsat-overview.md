@@ -10,6 +10,7 @@ audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: sfi-image-nochange
 ---
 
 # Regression suite automation tool (RSAT)

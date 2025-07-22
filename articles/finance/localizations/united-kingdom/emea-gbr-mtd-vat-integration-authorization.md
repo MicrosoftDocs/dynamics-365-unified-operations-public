@@ -4,12 +4,13 @@ description: Learn how to authorize your Microsoft Dynamics 365 Finance environm
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 12/05/2024
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-08-07
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Authorize your Finance environment to interoperate with HMRC's MTD web service

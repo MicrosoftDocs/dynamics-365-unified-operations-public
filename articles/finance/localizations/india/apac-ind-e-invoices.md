@@ -5,9 +5,10 @@ author: ilikond
 ms.author: ikondratenko
 ms.date: 06/04/2024
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.reviewer: johnmichalak
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 
 ---
 

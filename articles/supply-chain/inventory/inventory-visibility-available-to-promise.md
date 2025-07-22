@@ -3,11 +3,12 @@ title: Inventory Visibility on-hand change schedules and ATP
 description: Learn how to schedule future on-hand changes and calculate available-to-promise (ATP) quantities, including an outline on calculated measures for ATP quantities.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: how-to
-ms.date: 11/30/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Inventory Visibility on-hand change schedules and ATP
@@ -385,6 +386,9 @@ In your request, set `QueryATP` to *true* if you want to query scheduled on-hand
 
 > [!NOTE]
 > Regardless of whether the `returnNegative` parameter is set to *true* or *false* in the request body, the result will include negative values when you query for scheduled on-hand changes and ATP results. These negative values will be included because, if only demand orders are scheduled, or if supply quantities are less than demand quantities, the scheduled on-hand change quantities will be negative. If negative values weren't included, the results would be confusing. For more information about this option and how it works for other types of queries, see [Inventory Visibility public APIs](inventory-visibility-api.md#query-with-post-method).
+
+> [!IMPORTANT]
+> Scheduled on-hand changes are stored exclusively in Dataverse, which means that queries for scheduled on-hand changes and ATP results are subject to Dataverse's performance and data access limits. To avoid exceeding these limits and ensure optimal performance, apply targeted filters to your queries to minimize the volume of data retrieved.
 
 ### Query by using the POST method
 

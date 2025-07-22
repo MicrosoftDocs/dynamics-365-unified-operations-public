@@ -46,6 +46,7 @@ This article includes information and links to resources that can help you set u
 - [Update method of payment on customer](fr-00004-update-method-payment-customer.md)
 - [VAT declaration](emea-fra-VAT-declaration-preview-France.md)
 - [DAS2 report](emea-fra-das2-report.md)
+- [Reporting on payment deadlines for customer and vendor invoices](emea-fra-reporting-on-payment-deadlines.md)
 - Commerce
   - [Cash register functionality](../../../commerce/localizations/france/emea-fra-cash-registers.md)
   - [Deployment guidelines for cash registers](../../../commerce/localizations/france/emea-fra-deployment.md)

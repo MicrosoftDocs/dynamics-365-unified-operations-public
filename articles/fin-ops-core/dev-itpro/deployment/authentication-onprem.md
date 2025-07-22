@@ -4,14 +4,15 @@ description: Learn about how the authentication process works for Dynamics 365 f
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 06/19/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.15
 ms.service: dynamics-365-op
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Authentication in Dynamics 365 Finance + Operations (on-premises) environments

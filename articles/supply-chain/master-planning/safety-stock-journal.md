@@ -1,8 +1,8 @@
 ---
 title: Use the safety stock journal to update minimum coverage for items
 description: Learn how to use safety stock journal to update safety stock quantity for items by calculating minimum coverage proposals based on historical transactions.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 10/28/2021
 ms.reviewer: kamaybac

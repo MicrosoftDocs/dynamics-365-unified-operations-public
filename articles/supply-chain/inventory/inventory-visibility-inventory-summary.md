@@ -3,11 +3,13 @@ title: Inventory Visibility inventory summary
 description: Learn how to use inventory summary feature, which provides an inventory summary for products together with all dimensions.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: how-to
-ms.date: 12/01/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Inventory Visibility inventory summary
@@ -62,13 +64,13 @@ To enable the **Inventory summary** page and set the synchronization frequency i
 
 ## <a name="additional-tip-for-viewing-data"></a>Filter and browse the inventory summaries
 
-Follow these steps to open the **Inventory summary** page, where you can filter and browse your inventory summaries. <!--KFM: Is this the same for both UI versions? If so, we should probably mention that. -->
+Follow these steps to open the **Inventory summary** page, where you can filter and browse your inventory summaries.
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the **Change area** menu at the bottom of the navigation pane, select **Inventory Visibility**.
 1. On the navigation pane, select **Inventory summary**.
 
-    - On the **Inventory summary** page, there are three fields above the grid: **Default dimension**, **Custom dimension**, and **Measure**. Use these fields to control which columns are visible. You can also select any column header in the grid to filter or sort the current result by that column. 
+    - On the **Inventory summary** page, there are three fields above the grid: **Default dimension**, **Custom dimension**, and **Measure**. Use these fields to control which columns are visible. You can also select any column header in the grid to filter or sort the current result by that column.
     - Use the **Edit filters** button in the upper right of the page to create a personal view that shows the rows that are important to you. The filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters. For more information about how to use the advanced filter, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced).
     - The lower left of the page shows information such as *2 records (2 selected)* or *50 records*. This information refers to the records that are currently loaded from the **Edit filters** result. The text *2 selected* refers to the number of records that have been selected by using the column header filters for the loaded records. There's a **Load More** button that you can use to load more records from Dataverse. By default, 50 records are loaded. When you select **Load More**, the next 1,000 available records are loaded into the view. The numbers on the **Load More** button indicate the number of currently loaded records and the total number of records that the **Edit filters** result found. For example, the text *(5/5)* indicates that all five of the records from the **Edit filters** result are currently loaded into the view.
 

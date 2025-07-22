@@ -10,8 +10,9 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2017-07-31
 ms.search.form: SysMicrosoft Entra IDClientTable, RetailTransactionServiceProfile
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-ropc-nochange
 ---
 
 # Phased Rollout (N-1) installation, configuration, and cutover guide

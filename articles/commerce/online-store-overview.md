@@ -5,6 +5,7 @@ title: E-commerce site overview
 description: This article provides an overview of the support for e-commerce sites in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 05/28/2024
+ms.update-cycle: 1095-days
 ms.topic: overview
 audience: Application user
 ms.reviewer: josaw

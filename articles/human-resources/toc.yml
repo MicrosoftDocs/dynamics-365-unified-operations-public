@@ -209,7 +209,7 @@ items:
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json
         - name: Default dashboard
           href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?toc=/dynamics365/human-resources/toc.json
-        - name: Immersive Home (preview)
+        - name: Immersive Home (production ready preview)
           href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?toc=/dynamics365/human-resources/toc.json
         - name: Set the preferred initial page for each user
           href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?toc=/dynamics365/human-resources/toc.json
@@ -783,7 +783,7 @@ items:
       items:
       - name: Performance management overview
         href: hr-develop-performance-management-overview.md
-      - name: Set up electronic reporting to print preformance reviews
+      - name: Set up electronic reporting to print performance reviews
         href: perf-mgmt-print.md
       - name: Skills
         items:
