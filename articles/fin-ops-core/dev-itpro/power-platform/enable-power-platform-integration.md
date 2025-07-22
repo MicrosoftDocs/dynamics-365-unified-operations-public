@@ -76,7 +76,12 @@ Based on the error message, you might have to address licensing or capacity issu
 
 ## Enable the integration for cloud-hosted development environments
 
-Because of the architecture differences between cloud-hosted development environments and the sandbox or production environments, Power Platform Integration can't be set up after the developer environment is created. Therefore, you can set up Power Platform Integration only during the deployment of your cloud-hosted environment. In addition, you can connect a new cloud-hosted environment only with a new Power Platform environment. You can't connect an existing environment of any type via Lifecycle Services.
+> [!NOTE]
+> Power Platform Integration for cloud-hosted development environments is a deprecated feature and is no longer supported. While the option may still appear during environment deployment, it is not recommended for use.
+> 
+> For testing and development scenarios, we recommend using a Sandbox environment and/or a Unified Developer Environment (UDE), which are fully supported and better suited for integration with Power Platform.
+> 
+> Information on UDE can be found here: [Unified developer experience for finance and operations apps](./power-platform/developer/unified-experience/finance-operations-dev-overview.md)
 
 ## Verify Power Platform integration status at runtime
 
