@@ -20,6 +20,8 @@ ms.dyn365.ops.version:
 
 This article describes the options that you can use to configure Credit management to meet your business's requirements. To use Credit management features, set up the parameters on the **Credit and collections parameters** page (**Credit and collections \> Setup \> Credit and collections parameters**).
 
+As of 10.0.43 the Credit management feature has been moved to a parameter in **Accounts receivable parameters**, **Credit management** tab. By default the **Credit management** parameter is set to Yes. If the Credit management feature in Feature management is disabled you will see a messgage that it cannot be enabled through Feature management and is now controlled by the accounts receivable parameter. You can set it to No in the Accounts receivable parameter if you do not want to use Credit management. 
+
 ## Credit parameters
 
 There are four FastTabs in the **Credit** section where you can change the parameters that control Credit management: **Credit holds**, **Credit management checkpoint**, **Credit management statistics**, and **Credit limits**. The following sections describe the settings that are available on each FastTab.
