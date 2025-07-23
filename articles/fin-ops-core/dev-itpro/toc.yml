@@ -1873,7 +1873,7 @@ items:
           items:
             - name: User security governance overview
               href: ../fin-ops/sysadmin/security-gov-overview.md
-            - name: License Usage Summary Report
+            - name: License usage summary report (preview)
               href: ../fin-ops/sysadmin/security-gov-license-usage-summary.md
             - name: Set up security categories
               href: ../fin-ops/sysadmin/security-category.md
