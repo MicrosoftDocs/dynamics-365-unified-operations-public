@@ -30,7 +30,7 @@ This form provides a telemetry-driven view of user activities and calculates the
 
 The User Security Governance feature and its related license usage summary tools will start being available in version **10.0.44** of Dynamics 365 Finance and Operations apps.
 
-### Enabling USG
+### Enabling User security governance license usage summary report
 
 Before accessing the USG workspace, you must activate it in **Feature Management**:
 
@@ -54,14 +54,14 @@ To access the **User License Summary** form:
 
 ## What Does This Form Show?
 
-The User Security Governance (USG) reports provide a layered view of:
+The User Security Governance (USG) license usage summary report provide a layered view of:
 
 - How system permissions are exercised
 - Which responsibilities map to different role types
 
 This enables deeper visibility into user access patterns and ensures that roles align with intended responsibilities.
 
-> For a consolidated view across all environments within the same tenant, refer to the reports in the **Power Platform Admin Center**.
+> For a consolidated view across all environments within the same tenant, refer to the reports in the **Power Platform admin center**.
 
 The report offers summaries across multiple dimensions:
 
