@@ -71,8 +71,6 @@ The report offers summaries across multiple dimensions:
 - **Duty**: Functional areas or grouped operations
 - **Privilege**: Specific actions/menu items tied to user tasks
 
----
-
 ## Key Attributes to Understand
 
 Each **securable object** is tagged with:
@@ -84,8 +82,6 @@ Each **securable object** is tagged with:
 
 These simplify reviews and help ensure that security access matches business needs.
 
----
-
 ## Detailed License Contributors
 
 The **bottom panel** breaks down license requirements at the securable object level:
@@ -95,6 +91,8 @@ The **bottom panel** breaks down license requirements at the securable object le
 - **Access Level** (e.g., Read, Write)
 
 ### Example:
+
+:::image type="content" source="security-governance-license-usage-summary-example.png" alt-text="License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
 
 - The user *Cassie* requires:
   - Finance (Base)
