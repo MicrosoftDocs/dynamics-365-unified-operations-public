@@ -33,7 +33,7 @@ The following calculations are performed for a consolidated invoice:
 
 After you create and confirm a consolidated invoice on the **Consolidated invoice** page, the following amounts are calculated:
 
-- **Previous invoice amount** – The total invoice amount for the previous consolidation period.
+- **Previous invoice amount** – The total invoice amount for the previous consolidation period.  
 - **Previously paid amount** – The total amount that was paid for the previous consolidation period.
 - **Adjustment amount** – The adjustment amount for the previous consolidation period. The adjustment amount includes cash discounts and bank charges.
 - **Outstanding amount** – The total outstanding amount for the current consolidation period. The outstanding amount is calculated by using the following formula: Previous invoice amount – Paid amount – Adjustment amount.
