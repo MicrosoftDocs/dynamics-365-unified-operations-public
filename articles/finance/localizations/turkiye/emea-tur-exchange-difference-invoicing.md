@@ -1,6 +1,6 @@
 ---
-title: Use Exchange difference invoicing (preview)
-description: Learn about exchange difference invoicing for the Republic of Türkiye.
+title: Use Exchange difference invoicing
+description: Learn about how to use exchange difference invoicing for the Republic of Türkiye.
 author: v-omerorhan 
 ms.author: v-omerorhan
 ms.topic: how-to
@@ -15,10 +15,8 @@ ms.dyn365.ops.version: 10.0.9
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ---
 
-# Use Exchange difference invoicing (preview)
-
+# Use Exchange difference invoicing
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article explains how you must create and process exchange difference invoices in the Republic of Türkiye because of the behavior of the floating exchange rate system.
 
