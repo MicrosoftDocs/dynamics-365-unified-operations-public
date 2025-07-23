@@ -2,7 +2,7 @@
 title: Enable pay by link in POS by using the Adyen connector 
 description: Learn how to set up and enable the pay by link payment method to capture payments in stores in Microsoft Dynamics 365 Commerce.
 author: shajain
-ms.date: 07/23/2025
+ms.date: 07/24/2025
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -115,9 +115,10 @@ To create a new webhook, follow these steps.
 > Don't test the configuration yet, because the setup isn't completed. The configuration is validated after the next step.
 
 > [!IMPORTANT]
-> - If saving the configuration on the Adyen portal throws the error **Domain could not be resolved**, then it's due to a known issue with the placement of the period (.) separator in the subdomain portion of the URL. This issue is resolved by Commerce version 10.0.45. For Commerce versions before 10.0.45, follow the workaround to reformat the payment notification endpoint URL.
-> - Customers may currently see a URL formatted like this: `<30 or 31 characters>.<1 character>.organization.api.powerplatform.com/dynamics/api/payment/notifications/1`. However, the correct format should be:`<29 or 30 characters>.<2 characters>.organization.api.powerplatform.com/dynamics/api/payment/notifications/1`. For example, you should modify a URL shown as `https://xxxxxxxxxxxxxxxxxxxxxxxxxxxabc5.0.organization.api.powerplatform.com/dynamics/api/payment/notifications/1` to ` https://xxxxxxxxxxxxxxxxxxxxxxxxxxxabc.50.organization.api.powerplatform.com/dynamics/api/payment/notifications/1`.
-> - The period (.) separating the subdomain segments is currently placed one character too far to the right. To resolve the issue, move the period one character to the left so that the second segment contains two characters instead of one. This adjustment ensures the URL resolves correctly and can be used to create a webhook. If you need assistance identifying or correcting the URL in your configuration, contact Microsoft support.
+> - If you save the configuration on the Adyen portal and it generates a **Domain could not be resolved** error message, it's due to a known issue with the placement of the period (.) separator in the subdomain segment of the payment notification endpoint URL. The period (.) separating the subdomain segments is currently placed one character too far to the right. This issue is resolved in Commerce version 10.0.45.
+> - To resolve the issue for Commerce versions before 10.0.45, move the period separator one character to the left so that the second segment contains two characters instead of one. This adjustment ensures that the URL resolves correctly and can be used to create a webhook.
+> - For example, if the incorrect URL format is `<30 or 31 characters>.<1 character>.organization.api.powerplatform.com/dynamics/api/payment/notifications/1`, the correct URL format should be:`<29 or 30 characters>.<2 characters>.organization.api.powerplatform.com/dynamics/api/payment/notifications/1`. Put differently, if the incorrect URL is `https://xxxxxxxxxxxxxxxxxxxxxxxxxxxabc5.0.organization.api.powerplatform.com/dynamics/api/payment/notifications/1`, it should be modified to be  `https://xxxxxxxxxxxxxxxxxxxxxxxxxxxabc.50.organization.api.powerplatform.com/dynamics/api/payment/notifications/1`.
+> - If you need assistance identifying or correcting the payment notification endpoint URL in your configuration, contact Microsoft support.
 
 ### Update Commerce headquarters with the HMAC and application client ID details to authenticate the payment notifications sent by Adyen
 
