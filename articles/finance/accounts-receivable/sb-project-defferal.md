@@ -46,17 +46,17 @@ To ensure the feature operates as intended, initialize the background process au
 
 When an inventory closing or recalculation process is triggered, the system:
  - Identifies impacted consumption deferral schedules.
- - Updates the **Inventory cost adjustment** field in COGS Deferral schedule to reflect any change in the original inventory cost.
+ - Updates the **Inventory cost adjustment** field in the COGS Deferral schedule to reflect any change in the original inventory cost.
  - Executes the update asynchronously.
 These adjustments ensure that any cost changes even those made after the original posting are accurately reflected in deferred COGS recognition.
 
 
 ### Example
 If a sales order is created from a project for a stocked item, when the sales order is posted: 
- - A revenue deferral schedule with **Recognition type** as **Credit**.
- - A consumption deferral schedule (COGS) with **Recognition type** as **Debit**.
+ - A revenue deferral schedule with **Recognition type** of **Credit**.
+ - A consumption deferral schedule (COGS) with **Recognition type** of **Debit**.
 
-After inventory closing or recalculate physical inventory adjustment:
+After inventory closing or physical inventory adjustment is recalculated:
  - The deferred COGS is automatically recalculated.
  - The deferral schedule is updated with an **Inventory cost adjustment** amount in a consumption deferral schedule (COGS).
  - No new deferral schedule is created and the existing one is updated with the revised cost value.
