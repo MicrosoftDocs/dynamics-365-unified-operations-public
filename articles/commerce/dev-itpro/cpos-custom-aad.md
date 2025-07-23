@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure Store Commerce for web to use a custom Microsoft Entra app
-description: This article explains how to configure Microsoft Dynamics 365 Commerce Store Commerce for web to use a custom Microsoft Entra app.
+description: Learn how to configure Microsoft Dynamics 365 Commerce Store Commerce for web to use a custom Microsoft Entra app.
 author: boycez
-ms.date: 08/02/2024
+ms.date: 07/25/2025
 ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
@@ -86,26 +86,26 @@ To upgrade an existing custom Store Commerce for web Microsoft Entra app created
 1. Select the **Authentication** tab.
 1. Copy and save the original redirect URI from the **Web** type for use later, and then delete it.
 1. Select **Add a platform**, and then select **Single-page application (SPA)**.
-1. Add the original web redirect URI copied above to the SPA platform.
+1. Add the original web redirect URI you copied earlier to the SPA platform.
 1. In the **Token configuration** section, follow these steps to add two claims:
     1. Select **Add optional claim**. Set the **Token type** field to **ID**, and then select the **sid** claim. Select **Add**.
     1. Select **Add optional claim**. Set the **Token type** field to **Access**, and then select the **sid** claim. Select **Add**.
 
 ## Update the Store Commerce for web configuration file
 
-The following steps only apply to a CSU (self-hosted) that uses the Retail SDK. If you are using a sealed CSU installer, this process is completed automatically during the installation process. Open the Store Commerce for web config.json file, and make the following changes.
+The following steps only apply to a CSU (self-hosted) that uses the Retail SDK. If you're using a sealed CSU installer, this process is completed automatically during the installation process. Open the Store Commerce for web config.json file, and make the following changes.
 
 1. Replace the **Microsoft Entra IDClientId** key value with the **Application (client) ID** value of the custom Store Commerce for web app that you created in the [Set up a custom Store Commerce for web app in Microsoft Entra ID](#set-up-a-custom-app-for-store-commerce-for-web-in-microsoft-entra-id) section.
 1. Replace the **Microsoft Entra IDRetailServerResourceId** key value with the **Application ID URI** value of the custom Retail Server app that you created in the [Set up a custom Retail Server app in Microsoft Entra ID](#set-up-a-custom-retail-server-app-in-microsoft-entra-id) section.
 
-Store Commerce for web will use both parameters when it sends requests to Microsoft Entra ID to acquire a security token.
+Store Commerce for web uses both parameters when it sends requests to Microsoft Entra ID to acquire a security token.
 
 ## Update identity providers settings in Commerce headquarters
 
 Next, you must update identity providers settings in Commerce headquarters.
 
 1. In Commerce headquarters, open the **Commerce shared parameters** page.
-1. On the **Identity Providers** tab, in the **Identity providers** section, select the row where the **Type** field is set to **Microsoft Entra** and the **Issuer** field points to your Microsoft Entra tenant. This setting declares that you'll work with child grids that contain the data that's related to the identity provider that corresponds to your Microsoft Entra tenant.
+1. On the **Identity Providers** tab, in the **Identity providers** section, select the row where the **Type** field is set to **Microsoft Entra** and the **Issuer** field points to your Microsoft Entra tenant. This setting declares that you work with child grids that contain the data related to the identity provider that corresponds to your Microsoft Entra tenant.
 1. In the **Relying parties** section, select **Add** to add a row.
 1. Set the following fields:
 
