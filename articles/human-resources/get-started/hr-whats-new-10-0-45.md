@@ -34,11 +34,16 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+| Personnel management  |Streamlined employee entry|	The streamlined employee entry page becomed mandatory starting with the Dynamics 365 Finance version 10.0.45. A new **Disable streamlined employee entry** parameter is introduced on the **Human resources shared parameters**. When this setting is enabled, the streamlined employee entry experience is turned off.| Parameter |
+| Recruiting     |Enable recruitment add-on	|The feature is currently in public preview. General availability is planned in Dynamics 365 Finance version 10.0.45. The related public documentation is in its preview version and will be updated when the feature is generally available.  | Parameter |
 
 
-## Features removed from Feature management
+## Features turned on by default in this release
 
-The following table lists the features that were removed from Feature management in version 10.0.45.
+The following table lists the features that are turned on by default in version 10.0.45. Most features that have been turned on can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). 
 
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
+|Disable the assignment of duplicate identification numbers	|	Mandatory	|Human resources |
+|Streamlined employee entry	| Mandatory|	Human resources|
+
