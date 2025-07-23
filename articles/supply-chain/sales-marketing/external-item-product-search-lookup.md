@@ -36,7 +36,7 @@ External item identifiers are set up on the account for the customer that uses t
 1. Find and open the customer you want to set up with external item identifiers.
 1. On the Action Pane, open the **Sell** tab and then select **Setup** \> **External item description**.
 1. The **External item description** page opens, showing the existing external item identifiers for the customer. To add a new one, select **New** on the Action Pane and then enter values for the following fields:
-    - **ABC code** – <!-- KFM: Description needed -->
+    - **ABC code** – If the customer has assigned an ABC inventory classification to the item, you can note that here. ABC analysis is an inventory management technique that determines the value of inventory items based on their importance to the business.
     - **Item number** – Select your standard (internal) item number for the product.
     - **External item number** – Enter the external item identifier that this customer uses to identify the item you specified. Users will be able to search for this number when creating a sales order.
     - **Description** – Enter the name or other short description that the customer uses to identify the item. Users will be able to search for this description when creating a sales order.
