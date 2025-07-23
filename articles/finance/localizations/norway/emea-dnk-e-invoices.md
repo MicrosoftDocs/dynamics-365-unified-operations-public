@@ -26,10 +26,10 @@ The primary address of the legal entity must be in Denmark.
 
 In the **Electronic reporting** workspace, import the following or later versions of the electronic reporting (ER) formats from the repository to enable electronic invoices generation in the **OIOUBL version 3** format:
 
-- OIOUBL Sales invoice (DK) **version 272.46.9**
-- OIOUBL Project invoice (DK) **version 272.40.9**
-- OIOUBL Sales credit note (DK) **version 272.45.10**
-- OIOUBL Project credit note (DK) **version 272.36.6**
+- OIOUBL Sales invoice (DK) **version 272.46.13**
+- OIOUBL Project invoice (DK) **version 272.40.12**
+- OIOUBL Sales credit note (DK) **version 272.45.13**
+- OIOUBL Project credit note (DK) **version 272.36.9**
 
 > [!NOTE]
 > If the versions of the ER configurations earlier than mentioned above are used, then the system will continue electronic invoices generation following the previous OIOUBL format version, older then version 3.
