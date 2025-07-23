@@ -20,7 +20,7 @@ If you're unfamiliar with how Dynamics 365 licenses work or want to review the l
 
 The **User License Summary** page in the **User Security Governance (USG)** workspace helps administrators understand how security roles and respective permissions define the license requirements across their Dynamics 365 Finance and Operations environment.
 
-:::image type="content" source="security-governance-sysadmin-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="media/security-governance-sysadmin-license-usage-summary-overview.png":::
+:::image type="content" source="security-governance-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="media/security-governance-license-usage-summary-overview.png":::
 
 This form provides a telemetry-driven view of user activities and calculates the effective license requirements based on actual usage—enabling organizations to align licensing with Microsoft’s current licensing guide.
 
@@ -40,7 +40,7 @@ Before accessing the USG workspace, you must activate it in **Feature Management
    - *User security governance license usage summary report*
 3. Select and enable both features.
 
-:::image type="content" source="media/security-governance-sysadmin-license-usage-summary-feature-enable.png" alt-text="Security governance in the system admin user experience." lightbox="media/security-governance-sysadmin-license-usage-summary-feature-enable.png":::
+:::image type="content" source="media/security-governance-license-usage-summary-feature-enable.png" alt-text="Security governance in the system admin user experience." lightbox="media/security-governance-license-usage-summary-feature-enable.png":::
 
 ### Navigation
 
