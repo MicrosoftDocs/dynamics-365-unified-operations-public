@@ -18,7 +18,7 @@ ms.custom:
 This feature currently supports lookup based search using External Item Identifier on a Sales order line when you try to add an item. The functionality is visible behind a feature named **SalesExternalItemLookupSearchFeature** with label visible in the UI as "**Enable lookup based search for Sales External Item Identifier field**".
 
 1. Enable the feature **Enable lookup based search for Sales External Item Identifier field** via Feature Management workspace.
-1. Go to **Account Receivable** \> **All customers** \>.
+1. Go to **Account Receivable** \> **All customers**.
 1. Click on any one customer say US-001 in this case where you would like to do the set up for External Item Identifiers.
 1. Click **Setup** from the top pane and click **External item description** from the dropdown.
 1. You will be able to add a product and its corresponding External item details such as External item number, External item text and Description etc.
