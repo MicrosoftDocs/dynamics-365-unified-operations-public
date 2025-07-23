@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 07/09/2025
+ms.date: 07/23/2025
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
