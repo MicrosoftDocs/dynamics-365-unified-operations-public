@@ -17,7 +17,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.45 GA -->
 
-When you're adding an item to a sales order, you can search for it using its external item identifier or external description/name. This feature is useful when taking an order from a customer who prefers to identify products using their own terminology or codes.
+When you're adding an item to a sales order, you can search for it using its external item identifier or external description/name. External item identifiers and descriptions can be defined for each customer, allowing you to use the customer's terminology when adding products to orders.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
