@@ -109,8 +109,13 @@ The following table lists the features that were removed from Feature management
 | Globalization Studio | The related functionality is enabled out of the box. | Globalization Studio |
 | E-invoicing service workspace designer | The related functionality is enabled out of the box. | Globalization Studio |
 | Utilize application resources to perform CBD documents conversion from Word to PDF format | Disabled in Feature management due to replacement by In-App PDF conversion for Configurable Business Documents (CBD) | Electronic reporting (ER) |
-|Selection of advance invoices for reversing while posting sales order credit note |	Remove or obsolete feature |	Accounts receivable|
-|(Lithuania) Do not add the VAT keyword to the beginning of the invoice title| Remove or obsolete feature|Accounts receivable|
+|Selection of advance invoices for reversing while posting sales order credit note | Remove or obsolete feature |	Accounts receivable|
+|(Lithuania) Do not add the VAT keyword to the beginning of the invoice title| Remove or obsolete feature | Accounts receivable|
+| Control zero-amount sales tax difference entries for Czech Republic (CZ) | The related functionality is enabled out of the box | Tax |
+| Separate sales tax payment report generation from sales tax settlement | The related functionality is enabled out of the box | Tax |
+| Populate financial dimensions to the realized currency adjustment profits/loss accounts for sales tax settlement | The related functionality is enabled out of the box | Tax |
+| Sales tax rate on invoice date in purchase order credit note | The related functionality is enabled out of the box | Tax |
+
 
 
 ## More information
