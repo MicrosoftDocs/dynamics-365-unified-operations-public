@@ -14,7 +14,13 @@ ms.dyn365.ops.version: 10.0.24
 ---
 
 # Project subscription billing deferral COGS adjustment (preview)
+
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 This article explains how to set up and use the project subscription billing deferral COGS adjustment feature in Microsoft Dynamics 365 Finance. 
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 Before using the project subscription billing deferral COGS adjustment feature, ensure your environment is updated to version 10.0.45 or later. This feature is currently available in Preview and must be explicitly
