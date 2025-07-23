@@ -27,7 +27,7 @@ ms.dyn365.ops.version:
 Dynamics 365 Human Resources allows efficient entry of employee and employment data. You can quickly update work history information for past, active, and future employees and contractors.
 
 > [!NOTE]
-> Starting with the Dynamics 365 Finance and Operations 10.0.45 release, the **Streamlined employee entry** feature will become mandatory. A new parameter, **Disable streamlined employee entry** has been added to the Human resources shared parameters. When this parameter is enabled streamlined employee entry experience will be turned off.
+> Starting with the Dynamics 365 Finance and Operations 10.0.45 release, the **Streamlined employee entry** feature will become mandatory. A new parameter, **Disable streamlined employee entry** has been added to the Human resources shared parameters. When this parameter is enabled streamlined employee entry experience will be turned off. 
 
 
 ## View options
