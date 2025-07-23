@@ -29,11 +29,11 @@ If you have any feedback about the preview version of this app, please send us e
 
 This app is in preview. By installing this preview app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
 
-### What's new
+### What's new in version 4.0.3.0
 
-Version 4 introduces many new features and improvements that will enhance your warehouse management experience. For details, see Migrate the Warehouse Management mobile app from V3 to V4.
+Version 4 introduces many new features and improvements that will enhance your warehouse management experience. For details, see [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
-Version 4.0.3.0 introduces the following fixes and improvements:
+Version 4.0.3.0 adds the following fixes and improvements:
 
 - Improved the sign-in process.
 - Added a sign-in hint page.
