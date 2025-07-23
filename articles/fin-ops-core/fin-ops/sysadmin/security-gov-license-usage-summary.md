@@ -20,7 +20,7 @@ If you're unfamiliar with how Dynamics 365 licenses work or want to review the l
 
 The **User License Summary** page in the **User Security Governance (USG)** workspace helps administrators understand how security roles and respective permissions define the license requirements across their Dynamics 365 Finance and Operations environment.
 
-:::image type="content" source="security-governance-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="media/security-governance-license-usage-summary-overview.png":::
+:::image type="content" source="media/ssecurity-governance-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="media/security-governance-license-usage-summary-overview.png":::
 
 This form provides a telemetry-driven view of user activities and calculates the effective license requirements based on actual usage—enabling organizations to align licensing with Microsoft’s current licensing guide.
 
@@ -92,7 +92,7 @@ The **bottom panel** breaks down license requirements at the securable object le
 
 ### Example:
 
-:::image type="content" source="security-governance-license-usage-summary-example.png" alt-text="License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
+:::image type="content" source="media/ssecurity-governance-license-usage-summary-example.png" alt-text="License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
 
 - The user *Cassie* requires:
   - Finance (Base)
@@ -105,8 +105,6 @@ The **bottom panel** breaks down license requirements at the securable object le
 
 Use the bottom panel to inspect specific objects and identify contributors to higher-tier licenses.
 
----
-
 ## Use Cases
 
 Organizations can use this summary to:
@@ -115,8 +113,6 @@ Organizations can use this summary to:
 - Identify and remediate excessive or outdated role assignments  
 - Improve governance by aligning usage with internal controls  
 - Prepare for future compliance and audits  
-
----
 
 ## Next Steps
 
