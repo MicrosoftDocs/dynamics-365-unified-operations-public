@@ -29,7 +29,6 @@ Dynamics 365 Human Resources allows efficient entry of employee and employment d
 > [!NOTE]
 > Starting with the Dynamics 365 Finance and Operations 10.0.45 release, the **Streamlined employee entry** feature will become mandatory. A new parameter, **Disable streamlined employee entry** has been added to the Human resources shared parameters. When this parameter is enabled streamlined employee entry experience will be turned off. 
 
-
 ## View options
 
 You can use **View options** on the **Worker** page to select any combination of employees and contractors from a single list. These options allow you to view workers across legal entities or for the legal entity you're currently signed into. You can also view active, pending, and exited workers, and you can restrict results based on the type of worker (employee or contractor). If advanced security is enabled, you will only see those employees and contractors in the legal entities you have access to.
@@ -81,8 +80,6 @@ The **Work history** tab shows work history across all legal entities and is ava
 ## Position history
 
 The **Positions** tab on the main worker page provides a full view of all positions held within the organization, including past, present, and any future assignments. You can  navigate directly to the worker's position history in the action pane as well.
-
-
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
