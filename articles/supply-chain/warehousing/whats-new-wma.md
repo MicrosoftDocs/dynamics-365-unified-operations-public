@@ -19,6 +19,28 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 4.0.3.0
+
+This is the second preview release of Warehouse Management mobile app version 4.
+
+If you have any feedback about the preview version of this app, please send us email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
+
+### Preview release
+
+This app is in preview. By installing this preview app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
+
+### What's new
+
+Version 4 introduces many new features and improvements that will enhance your warehouse management experience. For details, see Migrate the Warehouse Management mobile app from V3 to V4.
+
+Version 4.0.3.0 introduces the following fixes and improvements:
+
+- Improved the sign-in process.
+- Added a sign-in hint page.
+- Added an automatic sign-in function.
+- Improved the performance of the quantity spinner.
+- Fixed an issue that could sometimes occur when changing between different users.
+
 ## Version 4.0.2.0
 
 This is the first preview release of Warehouse Management mobile app version 4.
