@@ -1,5 +1,5 @@
 ---
-title: User security governance license usage summary
+title: User security governance license usage summary (preview)
 description: Learn about user security governance license usage summary report
 author: ceian
 ms.author: ceian
@@ -14,27 +14,31 @@ ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm,
 ms.dyn365.ops.version: Version 7.0.0
 ---
 
-# Understand the User License Summary (Preview) in User Security Governance
+# Understand the User license summary (Preview) in User security governance
 
-If you're unfamiliar with how Dynamics 365 licenses work or want to review the licensing model, please visit the official [Dynamics 365 Licensing Resources](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all) for the most up-to-date details on licensing.
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The **User License Summary** page in the **User Security Governance (USG)** workspace helps administrators understand how security roles and respective permissions define the license requirements across their Dynamics 365 Finance and Operations environment.
+If you're unfamiliar with how Dynamics 365 licenses work or want to review the licensing model, see [Dynamics 365 Licensing Resources](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all) for the most up-to-date details on licensing.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+The **User license summary** page in the **User security governance** workspace helps administrators understand how security roles and respective permissions define the license requirements across their Dynamics 365 finance and operations environment.
 
 :::image type="content" source="media/security-governance-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="media/security-governance-license-usage-summary-overview.png":::
 
-This form provides a telemetry-driven view of user activities and calculates the effective license requirements based on actual usage—enabling organizations to align licensing with Microsoft’s current licensing guide.
+This page provides a telemetry-driven view of user activities and calculates the effective license requirements based on actual usage—enabling organizations to align licensing with Microsoft’s current licensing guide.
 
-> ⚠️ **Note**: The User License Summary is currently available in **preview**. Functionality and layout may change before general availability.
 
 ## Availability
 
-The User Security Governance feature and its related license usage summary tools will start being available in version **10.0.44** of Dynamics 365 Finance and Operations apps.
+The User security governance feature and its related license usage summary tools are available in Dynamics 365 finance and operations version 10.0.44.
 
 ### Enabling User security governance license usage summary report
 
-Before accessing the USG workspace, you must activate it in **Feature Management**:
+Before accessing the User security governance workspace, you must activate it in **Feature management**:
 
-1. Go to **System administration > Feature management**
+1. Go to **System administration > Feature management**.
 2. Search for:
    - *User security governance*
    - *User security governance license usage summary report*
@@ -44,53 +48,46 @@ Before accessing the USG workspace, you must activate it in **Feature Management
 
 ### Navigation
 
-To access the **User License Summary** form:
+To access the **User License Summary** page, follow these steps:
 
-1. Sign in to your Dynamics 365 Finance and Operations environment.
-2. Navigate to:  
-   **System administration > Security > Security Governance > License usage summary**
+1. Sign in to your Dynamics 365 finance and operations.
+2. Go to **System administration > Security > Security Governance > License usage summary**.
 
----
+## What does this page show?
 
-## What Does This Form Show?
-
-The User Security Governance (USG) license usage summary report provide a layered view of:
-
+The User security governance license usage summary report provides a layered view of:
 - How system permissions are exercised
 - Which responsibilities map to different role types
 
 This enables deeper visibility into user access patterns and ensures that roles align with intended responsibilities.
 
-> For a consolidated view across all environments within the same tenant, refer to the reports in the **Power Platform admin center**.
+For a consolidated view across all environments within the same tenant, see the reports in the **Power Platform admin center**.
 
 The report offers summaries across multiple dimensions:
+- **User** - Individual usage patterns from telemetry
+- **User Role License** - Role-to-license tier mapping
+- **Role** - Aggregate role-level permissions
+- **Duty** - Functional areas or grouped operations
+- **Privilege** - Specific actions or menu items tied to user tasks
 
-- **User**: Individual usage patterns from telemetry
-- **User Role License**: Role-to-license tier mapping
-- **Role**: Aggregate role-level permissions
-- **Duty**: Functional areas or grouped operations
-- **Privilege**: Specific actions/menu items tied to user tasks
+## Key attributes 
 
-## Key Attributes to Understand
+Each securable object is tagged with:
+- **License type** - Associated license level
+- **Entitled** - Included in the current license’s scope
+- **Not Entitled** - Not included in the mapped license
+- **Not Required** - Doesn’t affect license assessment 
 
-Each **securable object** is tagged with:
+These simplify reviews and ensures that security access matches business needs.
 
-- **License type**: Associated license level
-- **Entitled**: Included in the current license’s scope
-- **Not Entitled**: Not included in the mapped license
-- **Not Required**: Doesn’t affect license assessment (e.g., system functions)
+## Detailed license contributors
 
-These simplify reviews and help ensure that security access matches business needs.
+The bottom panel breaks down license requirements at the securable object level:
+- **SecurableType** - Menu item display
+- **AOT Name / Child Name** - From the application object tree
+- **Access Level** - Read or write
 
-## Detailed License Contributors
-
-The **bottom panel** breaks down license requirements at the securable object level:
-
-- **SecurableType** (e.g., Menu item display)
-- **AOT Name / Child Name**: From Application Object Tree
-- **Access Level** (e.g., Read, Write)
-
-### Example:
+### Example
 
 :::image type="content" source="media/security-governance-license-usage-summary-example.png" alt-text="License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
 
@@ -105,21 +102,20 @@ The **bottom panel** breaks down license requirements at the securable object le
 
 Use the bottom panel to inspect specific objects and identify contributors to higher-tier licenses.
 
-## Use Cases
+### Use cases
 
 Organizations can use this summary to:
+- Validate that security roles reflect actual user responsibilities.  
+- Identify and remediate excessive or outdated role assignments.  
+- Improve governance by aligning usage with internal controls.  
+- Prepare for future compliance and audits.  
 
-- Validate that security roles reflect actual user responsibilities  
-- Identify and remediate excessive or outdated role assignments  
-- Improve governance by aligning usage with internal controls  
-- Prepare for future compliance and audits  
+## Next 
 
-## Next Steps
-
-From this form, administrators can:
-
+From this page, administrators can:
 - Evaluate roles for review or refinement  
-- Identify Segregation of Duties (SoD) risks  
+- Identify segregation of duties risks  
 - Export data for audit, license planning, or governance  
 
-> **Tip**: Each panel's data can be exported to Excel to support compliance or reporting needs.
+>[!Tip]
+> Each panel's data can be exported to Excel to support compliance or reporting needs.
