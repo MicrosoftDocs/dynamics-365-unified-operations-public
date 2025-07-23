@@ -1,7 +1,7 @@
 ---
 title: User security governance license usage summary (preview)
 description: Learn about user security governance license usage summary report
-author: ceian
+author: ceian  
 ms.author: ceian
 ms.topic: concept-article
 ms.date: 07/25/2025
