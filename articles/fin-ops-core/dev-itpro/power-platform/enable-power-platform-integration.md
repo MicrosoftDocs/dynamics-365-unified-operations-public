@@ -6,7 +6,7 @@ ms.author: laswenka
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 04/29/2025
+ms.date: 07/24/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.0
 [!include[banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Beginning **May 1, 2025**, all environments for finance and operations apps are required to have the Power Platform Integration enabled. Before this date, environment administrators should enable Power Platform Integration by following the steps in this article, and selecting the Power Platform environment to which the environment for your finance and operations apps should be linked. Any finance and operations apps environments that aren't linked to a Power Platform environment through the Power Platform Integration after this date will have the Power Platform Integration automatically enabled for the environment. During automated enablement, the environment will either be linked to a newly provisioned Power Platform environment, or linked to an existing Power Platform environment if either [dual-write](../data-entities/dual-write/dual-write-home-page.md) or [virtual entities for finance and operations apps](../power-platform/virtual-entities-overview.md) has already been enabled for the environment.
+> Beginning **May 1, 2025**, all environments for finance and operations apps are required to have the Power Platform integration enabled. Before this date, environment administrators should enable Power Platform integration by following the steps in this article, and selecting the Power Platform environment to which the environment for your finance and operations apps should be linked. Any finance and operations apps environments that aren't linked to a Power Platform environment through the Power Platform integration after this date will have the Power Platform integration automatically enabled for the environment. During automated enablement, the environment will either be linked to a newly provisioned Power Platform environment, or linked to an existing Power Platform environment if either [dual-write](../data-entities/dual-write/dual-write-home-page.md) or [virtual entities for finance and operations apps](../power-platform/virtual-entities-overview.md) has already been enabled for the environment.
 > Learn more in [Microsoft Power Platform integration with finance and operations apps](overview.md#tools-and-services-unlocked-with-microsoft-power-platform-integration) that includes which features are enabled by the Power Platform integration.
 
 As part of the One Dynamics, One Platform effort, a growing number of customers get value out of integrating their finance and operations apps with Microsoft Dataverse and the Microsoft Power Platform ecosystem. Whether it's used to build low-code applications, or to fully integrate front-office and back-office processes and applications, the integration of these two systems is a common requirement for many customers.
@@ -77,11 +77,9 @@ Based on the error message, you might have to address licensing or capacity issu
 ## Enable the integration for cloud-hosted development environments
 
 > [!NOTE]
-> Power Platform Integration for cloud-hosted development environments is a deprecated feature and is no longer supported. While the option may still appear during environment deployment, it is not recommended for use.
-> 
+> Power Platform integration for cloud-hosted development environments is a deprecated feature and is no longer supported. While the option may still appear during environment deployment, it's not recommended for use. 
 > For testing and development scenarios, we recommend using a Sandbox environment and/or a Unified Developer Environment (UDE), which are fully supported and better suited for integration with Power Platform.
-> 
-> Information on UDE can be found here: [Unified developer experience for finance and operations apps](./power-platform/developer/unified-experience/finance-operations-dev-overview.md)
+> For more information about UDE, see [Unified developer experience for finance and operations apps](/power-platform/developer/unified-experience/finance-operations-dev-overview).
 
 ## Verify Power Platform integration status at runtime
 
