@@ -1,8 +1,8 @@
 ---
 title: Check for highly variable dimensions 
 description: Use a tool to check for highly variable dimensions in D365 Finance. These financial dimensions are characterized by values that aren't reused, either individually or in combination with other values.
-author: twheeloc
-ms.author: JodiChristiansen
+author: JodiChristiansen
+ms.author: JChrist
 ms.topic: how-to
 ms.date: 07/24/2025
 ms.custom:
