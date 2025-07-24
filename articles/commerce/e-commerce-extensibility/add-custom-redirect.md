@@ -3,8 +3,8 @@ title: Add custom redirect for pages inside online SDK
 description: Learn how to implement a custom redirect for category and product pages by extending modules in the online SDK.
 author: krishnabh
 ms.date: 07/24/2025
-ms.topic: Application User
-audience: 
+ms.topic: how-to
+audience: Application User
 ms.reviewer: adpattanaik
 ms.search.region: Global
 ms.author: krishnabh
