@@ -1,8 +1,8 @@
 ---
 title: Install Commerce Scale Unit on a development environment
-description: This article explains how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce.
+description: Learn how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce.
 author: bstorie
-ms.date: 7/01/2025
+ms.date: 7/25/2025
 ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -21,12 +21,11 @@ This article provides step-by-step instructions on how to install an Internet In
 
 ## Prerequisites  
 
-Before beginning a Commerce Scale Unit installation, you must complete various one time tasks. These operations often need specific permissions and therefore may require the help of your organization's administrative personnel.
+Before beginning a CSU installation, you must complete various one-time tasks. These operations often need specific permissions and may require the help of your organization's administrative personnel.
 
-First, you must create Microsoft Entra ID (formerly known as Azure Active Directory) apps for Retail Server, Store Commerce for Web app (formerly known as Cloud point of sale or CPOS) and Async Client. The newly created apps for Retail Server and Async Client must also be registered in Microsoft Dynamics 365 Commerce headquarters.
+First, you must create Microsoft Entra ID (formerly known as Azure Active Directory) apps for Retail Server, the Store Commerce for web app (formerly known as Cloud point of sale or CPOS), and the Async Client. The newly created apps for Retail Server and Async Client must also be registered in Microsoft Dynamics 365 Commerce headquarters.
 
-Please follow the **Prerequisites** section in [Configure and install Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md#prerequisites) and then return to this document to continue.
-
+Next, follow the instructions in [Configure and install Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md#prerequisites) and then proceed to the next section to continue installation.
 
 ## Create an SSL certificate for a website based on the host name
 
@@ -78,7 +77,7 @@ Next, you must add the SSL certificate you created and converted to the `.CER` f
 
 To add the SSL certificate you created to the CSU Entra ID app, follow these steps.
 
-1. In a web browser on the machine where the .CER file was previously saved, visit the [Microsoft Entra admin center](https://aad.portal.azure.com) and edit the CSU Azure App registration created earlier.
+1. In a web browser on the machine where the .CER file was previously saved, go to the [Microsoft Entra admin center](https://aad.portal.azure.com) and edit the CSU Azure App registration you created earlier.
 1. For **Client Credentials**, select **Add a certificate or secret**. 
 1. Select the **Certificates** tab.
 1. Select **Upload Certificate**.
@@ -100,12 +99,10 @@ To enter the application ID (client ID) of the CSU Entra ID app in headquarters,
 
 1. Go to **System administration \> Setup \> Microsoft Entra ID Applications**.
 1. Select **New**
-1. In the **Client ID** column, enter the application ID (client ID) of the "Retail Server app" from the Entra portal.
+1. In the **Client ID** column, enter the application ID (client ID) of the Retail Server app from the Entra portal.
 1. in the **Name** column, enter descriptive text.
 1. In the **User ID** column, enter "RetailServiceAccount". 
 1. Select **Save** 
-
-
 
 ## Install Sealed CSU prerequisites
 
@@ -127,9 +124,11 @@ To install the .NET Core hosting bundle on the development machine, follow these
 1. In the **ASP.NET Core Runtime 8.0.X** section, select the **Hosting Bundle** installer for Windows to download it.
 1. Run the **dotnet-hosting-8.0.x-win.exe** installer.
 
-## Download and Install
-To download and execute the Commerce Scale Unit installer, see [Downloading and Running the Commerce Scale Unit Installer](retail-store-scale-unit-download-install.md). This article describes the steps necessary to download required configuration from Headquarters, download the installation program, and how to run the installer.
-Once installation is complete, return here.
+## Download and install
+
+For information on downloading and executing the Commerce Scale Unit installer, see [Downloading and Running the Commerce Scale Unit Installer](retail-store-scale-unit-download-install.md). This article describes the steps necessary to download required the configuration from headquarters, download the installation program, and run the installer.
+
+Once installation is complete, proceed to the next section.
 
 ## Database restores from UAT
 
@@ -154,12 +153,9 @@ To update an expiring or expired certificate for the Sealed CSU, you don't need 
 CommerceStoreScaleUnitSetup.exe updateCertificates --SslCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewSslCertificateThumbprint" --AsyncClientCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewAsyncClientAadAppCertThumbprint" --RetailServerCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewRsAadAppCertThumbprint"
 ```
 
-## Unified Development Environment Finance and Operations Support
+## Unified developer experience for finance and operations apps support
 
-Cloud hosted Finance and Operations can be provisioned with the Unified Development Environment.
-
-For details on support for the Power Platform unified developer environment, see 
-[Unified Development Environment](/power-platform/developer/unified-experience/finance-operations-dev-overview)
+Cloud-hosted finance and operations apps can be provisioned with the unified developer experience. Learn more in [Unified developer experience for finance and operations apps](/power-platform/developer/unified-experience/finance-operations-dev-overview)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
