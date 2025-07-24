@@ -72,7 +72,7 @@ if (canonicalUrl && context && context.request && context.request.url && canonic
 
 [Module library overview](starter-kit-overview.md)
 
-[Page Summary Module](page-summary-module.md)
+[Page Summary Module](../dev-itpro/page-summary-module.md)
 
 [Meta Tags Module](metatags-module.md)
 
