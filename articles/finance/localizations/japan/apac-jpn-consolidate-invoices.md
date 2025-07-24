@@ -2,9 +2,9 @@
 title: Consolidated invoices for Japan
 description: In Japan, invoices are consolidated each month for payment. Learn about consolidated invoices, and explains how the invoice amount and due date are calculated.
 author: EricWangChen
-ms.author: wangchen
+ms.author: reetuchopra
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 07/23/2025
 ms.reviewer: johnmichalak
 audience: Application User 
 ms.search.region: Japan
@@ -33,12 +33,23 @@ The following calculations are performed for a consolidated invoice:
 
 After you create and confirm a consolidated invoice on the **Consolidated invoice** page, the following amounts are calculated:
 
-- **Previous invoice amount** – The total invoice amount for the previous consolidation period.
+- **Previous invoice amount** – The total invoice amount for the previous consolidation period.  
 - **Previously paid amount** – The total amount that was paid for the previous consolidation period.
 - **Adjustment amount** – The adjustment amount for the previous consolidation period. The adjustment amount includes cash discounts and bank charges.
-- **Outstanding amount** – The total outstanding amount for the current consolidation period. The outstanding amount is calculated by using the following formula: Previous invoice amount – Paid amount – Adjustment amount
+- **Outstanding amount** – The total outstanding amount for the current consolidation period. The outstanding amount is calculated by using the following formula: Previous invoice amount – Paid amount – Adjustment amount.
 - **Invoice amount during consolidation period** – The total invoice amount for the current consolidated invoice. This amount includes the sales tax.
-- **Total invoice amount** – The new total invoice amount for the current invoice. This amount is calculated by using the following formula: Outstanding amount + Invoice amount during consolidation period
+- **Total invoice amount** – The new total invoice amount for the current invoice. This amount is calculated by using the following formula: Outstanding amount + Invoice amount during consolidation period.
+
+If the user generates one consolidated invoice per consolidation period (e.g., monthly), then the total invoice amount from the immediate previous period is displayed directly on a monthly basis. However, if the user generates two or more consolidated invoices within the same consolidation period, then the amounts are accumulated for that period and displayed as **Previous consolidated period invoice amount**. 
+
+Let’s say consolidated invoices A, B, and C are generated:
+ - If A, B, and C are each posted in different consolidation periods, the **Previous consolidated period invoice amount** and **Invoice paid amount** is displayed.
+ - In period B, invoice A's consolidated period invoice details are displayed.
+ - In period C, invoice B’s consolidated period invoice details are displayed.
+ - If A, B, and C are all posted in the same consolidation period, then invoices A,B,C values are accummlated and displayed on invoice D which is posted in next consolidation period.
+ - For invoices A, B, and C, the **Previous consolidated period** field is blank.
+ - In the next consolidation period, invoice D, the **Previous consolidated period invoice amount** is the sum of A + B + C.
+
 
 ## Calculating the due date for a consolidated invoice
 
