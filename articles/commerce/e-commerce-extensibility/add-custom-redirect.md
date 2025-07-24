@@ -21,14 +21,26 @@ This article describes how to implement server-side redirects (301 or 302) for c
 
 ## Why use custom redirects?
 
-Category and product pages  allow extraneous values in their URLs. While functional, such URLs may be undesirable from a user experience perspective. You can ensure clean, canonical URLs by implementing custom redirects.
+Category and product pages allow extraneous values in their URLs. While functional, such URLs may be undesirable from a user experience perspective. You can ensure clean, canonical URLs by implementing custom redirects.
 
 ## Prerequisites
 
 - A working Dynamics 365 Commerce online SDK environment.
 - Familiarity with extending modules.
 
-## Implementation
+## Example scenario
+
+### Redirect a category page to its canonical URL
+
+If a page request URL differs from its canonical URL, issue a redirect to the canonical version. For example:
+
+Request URL: https://www.fabrikam.com/womens-clothing/garbagevalue/dresses
+
+Canonical URL: https://www.fabrikam.com/womens-clothing/dresses
+
+In this case, the module detects the mismatch and triggers a redirect to the clean canonical URL.
+
+### Implementation
 
 **Step 1:** Clone the **default-page-summary** module and implement custom logic to throw a HttpRedirectException. Below is a sample code to throw a HttpRedirectException error when the canonical URL for the category page does not match the it's request URL, causing a redirect. 
 
