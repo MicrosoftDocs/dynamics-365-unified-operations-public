@@ -59,6 +59,8 @@ if (canonicalUrl && context && context.request && context.request.url && canonic
 
 
 
+
+
 > [!NOTE]
 > **Avoid Infinite Redirects**: when implementing bulk redirects in conjunction with custom redirects, exercise caution to prevent infinite redirect loops.
 > Always verify that URLs targeted for client-side or server-side redirection are not themselves sources or destinations in bulk redirect rules.
