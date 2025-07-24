@@ -99,7 +99,7 @@ The store selector module also supports a **Find stores** mode. This mode can be
 
 The following illustration shows an example of a store selector module that is used together with an azure maps module on a store locations page.
 
-![Example of a store selector module and azure map module on a store locations page.](./media/ecommerce-Storelocator-azure.PNG)
+![Example of a store selector module and azure map module on a store locations page.](./media/ecommerce-storelocator-azure.PNG)
 
 ## Render a map
 
