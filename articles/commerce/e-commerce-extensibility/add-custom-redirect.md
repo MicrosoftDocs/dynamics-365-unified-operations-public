@@ -13,7 +13,7 @@ ms.custom:
   - bap-template
 ---
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article demonstrates how to do a custom redirect for pages like categories, products etc from online sdk by [ extending existing modules](clone-starter-module.md)
 
@@ -70,7 +70,7 @@ if (canonicalUrl && context && context.request && context.request.url && canonic
 
 [Module library overview](starter-kit-overview.md)
 
-[Page Summary Module](/page-summary-module.md)
+[Page Summary Module](page-summary-module.md)
 
 [Meta Tags Module](metatags-module.md)
 
