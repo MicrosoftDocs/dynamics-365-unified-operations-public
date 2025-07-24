@@ -23,7 +23,9 @@ To perform a 301 or 302 redirect inside a module, throw a HttpRedirectException 
 
 ## Example : Implement Redirect for category pages to sanitize the garbage values in the url and redirect to a canonical url.
 
-Category and product pages may accept extraneous values in their URLs which some customer do not prefer. In that case,you can implement custom redirects for category and product pages by extending modules in the online SDK 
+
+Category and product pages can accept extraneous values in their URLs which may not be preferable by some customers. In that case, you can implement custom redirects for category and product pages by extending modules in the online SDK.
+
 The example below demonstrates how to implement a canonical redirect for category pages by extending the default-page-summary module. This approach ensures that if the current page URL differs from the canonicalUrl, the page will redirect to the canonical URL.
 
 **Step 1:** Clone the **default-page-summary** module and implement custom logic to throw a HttpRedirectException. Added HttpRedirectException logic in default-page-summery-extension.tsx.// This will throw HttpRedirectException error when canonical url for the category doesn't match the requesturl causing a redirect.
@@ -51,7 +53,8 @@ if (canonicalUrl && context && context.request && context.request.url && canonic
 
 ```
 
-**Step 3:**  Replace the category-page-summary module with new module in category template with new module. 
+**Step 3:**  Replace the category-page-summary module with new module in category template. 
+
 
 
 > [!NOTE]
@@ -61,23 +64,17 @@ if (canonicalUrl && context && context.request && context.request.url && canonic
 
 ## Additional resources
 
-[EX
+[Module library overview](starter-kit-overview.md)
 
-[Extend a Module](cli-command-reference.md)
+[Page Summary Module](/page-summary-module.md)
 
-[Theming overview](theming.md)
+[Meta Tags Module](metatags-module.md)
 
-[Create a new theme](create-theme.md)
+[Default Page Module](default-page-module.md)
 
-[Configure theme settings](configure-theme-settings.md)
+[Extend Module Definition](extend-module-definition.md)
 
-[Configure theme style presets](theme-style-presets.md)
-
-[Extend a theme to add module extensions](theme-module-extensions.md)
-
-[Override a module library component in a theme](override-theme-component.md)
-
-[Extend a theme from a base theme](extend-theme.md)
+[Create New Module](create-new-module.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
