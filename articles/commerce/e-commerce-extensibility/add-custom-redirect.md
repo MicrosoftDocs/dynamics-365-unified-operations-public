@@ -21,7 +21,7 @@ This article describes how to implement server-side redirects (301 or 302) for c
 
 ## Why use custom redirects?
 
-Category and product pages often allow extraneous values in their URLs. While functional, such URLs may be undesirable from a search engine optimization (SEO) or user experience perspective. You can ensure clean, canonical URLs by implementing custom redirects.
+Category and product pages  allow extraneous values in their URLs. While functional, such URLs may be undesirable from a user experience perspective. You can ensure clean, canonical URLs by implementing custom redirects.
 
 ## Prerequisites
 
