@@ -27,15 +27,15 @@ ms.dyn365.ops.version: 10.0.45
 
 [!include [banner](../includes/banner.md)]
 
-If there are out of balance ledger settlements, the year-end close fails with an out of balance error. To address these out of balance errors so the year can be closed successfully, any out of balance ledger settlements need to be reversed. This page helps find those out of balance ledger settlements. 
+If there are out of balance ledger settlements, the year-end close fails with an out of balance error. To address out of balance errors so the year can be closed successfully, any out of balance ledger settlements need to be reversed. This page helps find out of balance ledger settlements. 
 
-Once these ledger settlements have been reversed, they shouldn't be settled again in the same manner because they were out of balance. 
+Once these ledger settlements are reversed, they shouldn't be settled again in the same manner because they were out of balance. 
 
 ## Out of balance
 
 To find settlements that are out of balance, follow these steps:
 1. Go to **General ledger > Periodic tasks > Out of balance ledger settlements**.
-2. Select the fiscal year, and select **Show ledger settlements**. Only open fiscal years, that haven't been closed by the year-end process, can be selected in **Fiscal year**.
+2. Select the fiscal year, and select **Show ledger settlements**. Only open fiscal years can be selected in **Fiscal year**.
 3. To see the detail of the ledger settlement, select **Settlement ID**. Out of balance ledger settlements for each settlement ID display all settled transactions for the settlement ID, including any outside of the target fiscal year that are involved with the selected settlement ID. 
 For each settlement ID, the following are displayed:
  - **Settlement ID**
@@ -49,12 +49,12 @@ If the ledger settlement can't be reversed from this page, the **Reversal blocke
 ### Reversal blocked
 The **Reversal blocked** column indicates if an out of balance ledger settlement can be reversed. Out of balance ledger settlements with transactions posted in a closed fiscal year can't be reversed. To reverse them, the closed fiscal year must be reopened by reversing the year-end close voucher of the target fiscal year. Out of balance ledger settlements with realized gain/loss adjustment transactions can't be reversed on this page. The **Ledger settlements page** can be used for reversal. 
 
-Out of balance ledger settlements aren't allowed when doing ledger settlements. However, we have found there are instances when an out of balance ledger settlement has happened, and it needs to be reversed so the year-end close can run successfully. 
+Out of balance ledger settlements aren't allowed when doing ledger settlements. There are instances when an out of balance ledger settlement has happened and needs to be reversed so the year-end close can run successfully. 
 
 ### Example
 Some examples of ledger settlements that may appear on this page include: 
 - Any cross-year ledger settlements when the **Enable advanced awareness option** is set to **Yes** in **General ledger parameters**, **Ledger settlements** tab.
 When using the Advanced awareness options, cross-year settlements aren't supported. If the Advanced awareness feature was set to **Yes** after a cross-year settlement was done, cross-year settlements show on this page and must be unsettled.
-- If a ledger settlement was done for transactions where a realized gain or loss should have been calculated and wasn't, it is considered out of balance.
+- If a ledger settlement was done for transactions where a realized gain or loss should have been calculated and wasn't, it's considered out of balance.
 - Select **Settlement ID** to see if the **Amount in transaction currency** is equal but the **Amount in accounting currency** and/or reporting currency isn't equal. The accounting currency and reporting currency won't balance with no gain or loss calculated. The **Enable post currency realized gain/losses for ledger settlements** needs to be set to **Yes** in **General ledger parameters**, **Ledger settlements** tab to calculate the gain/loss during ledger settlement. 
 
