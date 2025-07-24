@@ -32,6 +32,8 @@ This article lists the features that are new or changed for Microsoft Dynamics 3
 |Asset leasing|  Workflow for lease impairment | This feature enables a new workflow for the lease impairment process by adding a **Submit** button to the right-of-use asset impairment dialogue. It also introduces a new **Lease impairment** page that allows users to continue the impairment process after the record has been approved in the workflow. |Feature management|
 |Asset leasing|  Asset leasing journal description | This feature prevents posting the asset leasing journal without a mandatory description.| Mandatory|
 |Asset leasing  | Lease termination triggers fixed asset posting  | This feature automates the posting of lease termination transactions to the fixed assets subledger. |Mandatory|
+| Cash and bank management | Automatic vendor account matching | When the feature is enabled, the **Generate vendor payment** bank reconciliation rule allows for auto search of vendor account based on the match of International Bank Account Number (IBAN) and bank account number fields in vendor master data with the information on bank statement lines. If matching is successful, the relevant vendor account is used to post the vendor payment journal. | Feature management |
+| Cash and bank management | Optimized auto settlement | This feature focuses on optimizing the auto settlement process performance for customer and vendor transactions by addressing inefficiencies in handling multiple open transactions and reducing the number of database calls. | Feature management |
 | Electronic reporting (ER) | In-App PDF conversion for configurable business documents (CBD) | This Electronic Reporting (ER) feature enables in-app PDF conversion of configurable business documents in Word and Excel formats using AOS resources, allowing complete processing within the application and eliminating reliance on external services. | Feature management |
 | Electronic reporting (ER) | Suppress forced batch job retries on failure for Electronic reporting | When the feature enabled, further batch job retries are suppressed for failed Electronic reporting jobs. | Feature management |
 | Globalization studio | Electronic reporting globalization feature JSON import/export | This feature enables the JSON import/export function for Electronic reporting globalization features. It allows users to import new features from JSON files and export their features into JSON files for storage and transfer purposes. | Feature management |
@@ -67,6 +69,8 @@ This section contains a table that lists the enhancements that are included in t
 |---|---|---|---|
 |Accounts receivable|	Accounts receivable|	When a free text invoice is created and posted, the posted invoice journal total is incorrect where the calculation isn't considering all total lines amount. Although the Ledger entries are correct but Custtrans amounts and CustInvoiceJour are incorrect.	|Feature management|
 |Accounts receivable|	Accounts receivable|	Invoice and invoice line details information in the **Associations** fasttab in **My cases** page. |	Feature management|
+| Cash and bank management | Modern bank reconciliation | Unintended matches between bank statement and bank transactions are prevented, unless explicitly defined and configured on the reconciliation rule. | Feature management |
+| Cash and bank management | Modern bank reconciliation | When the feature is enabled, customer and vendor bank accounts are automatically found when manual payment journal is created during bank reconciliation process. The suggestion of customer or vendor account is based on bank account number, IBAN, or trading party name available on the bank statement line. | Feature management |
 |Credit and collections	|Accounts receivable	|The user should be able to view and select the option for the due date and the terms of payment while posting a customer interest note.|	Feature management|
 |Credit and collections|	Accounts receivable|	Email template on the collection process automation uses the variables on the Subject line.	|Feature management |
 |Fixed assets |  Asset split logic independent of labels |  The feature involves researching and refactoring code paths that rely on localized labels for the split fixed asset process. It transitions from using labels to using a split subtype, ensuring that the logic is based on stable and consistent criteria. This change addresses issues where user-modifiable labels could cause unexpected behavior in the system.|  |
@@ -84,6 +88,12 @@ The following table lists the features that are turned on by default in version 
 |Custom search on the customer page|	Mandatory|	Accounts receivable|
 |Copy financial dimensions from sales order header to penny difference voucher transaction|	On by default|	Accounts receivable|
 |Add support for financial tags to the free text invoice entity within data management|	Released|	Accounts receivable|
+| Mark all bank transactions as cleared in account reconciliation | On by default | Cash and bank management |
+| Enable prepayment and posting profile when generating payment journal in advanced bank reconciliation | On by default | Cash and bank management |
+| Payment journal cancellation from bank reconciliation worksheet | On by default | Cash and bank management |
+| Enable offset account financial dimensions for general ledger voucher posting during bank account reconciliation | On by default | Cash and bank management |
+| Use latest exchange rate to post bank transactions | On by default | Cash and bank management |
+| Enable default descriptions for advanced bank reconciliation | On by default | Cash and bank management |
 |Separate accounts for credit notes|	Mandatory	|Credits and collections|
 |Automate split transaction posting from main book to derived books|	On by default	|Fixed assets|
 |Propagate the **Allow depreciation when placed in service and disposal are in the same fiscal year** from fixed asset parameters for all newly created asset books|	On by default|	Fixed assets|
