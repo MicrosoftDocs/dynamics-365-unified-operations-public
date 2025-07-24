@@ -21,14 +21,27 @@ This article covers custom redirects and describes how to implement them in E-co
 
 ## Why use custom redirects?
 
-As part of the e-commerce SDK, we provide customers with the flexibility to build and customize their own sites. By default, category and product pages allow arbitrary or random values in their URLs. While these URLs function correctly, they may not align with customer expectations for a clean and professional user experience. Implementing custom redirects helps enforce clean URLs for improved user experience.
+As part of the e-commerce SDK, we provide customers with the flexibility to build and customize their own sites. By default, category and product pages can contain arbitrary or random values in their URLs. Although these URLs function correctly, they may not meet customer expectations for a clean and professional user experience. Implementing custom redirects helps ensure clean URLs, resulting in an improved user experience. 
 
 ## Prerequisites
 
 - A working Dynamics 365 Commerce online SDK environment.
 - Familiarity with extending modules.
 
-## Example scenario
+
+## Implementing an HTTP Redirect within a Module 
+
+- Begin by cloning or creating a new module. Ensure you define the custom redirect URL as needed for your use case. 
+
+- In the module's view file (.tsx), implement the logic required to conditionally trigger a redirect based on your criteria. 
+
+- When a redirect is necessary, throw a HttpRedirectException. Assign the desired redirect URL to HttpRedirectException.location and specify the redirect type using HttpRedirectException.statusCode. 
+
+- The HttpRedirectException can be imported from the core-internal package.
+
+
+
+## Example
 
 ### Redirect a category page to its canonical URL
 
@@ -40,7 +53,6 @@ Canonical URL: https://www.fabrikam.com/womens-clothing/dresses
 
 In this case, the module detects the mismatch and triggers a redirect to the clean canonical URL.
 
-### Implementation
 
 **Step 1:** Clone the **default-page-summary** module and implement custom logic to throw a HttpRedirectException. Below is a sample code to throw a HttpRedirectException error when the canonical URL for the category page does not match the it's request URL, causing a redirect. 
 
