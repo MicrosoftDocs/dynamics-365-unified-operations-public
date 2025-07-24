@@ -38,7 +38,7 @@ The next section contains detailed information about out-of-box e-invoicing func
 
 | Country or region | Description | Availability |
 |---|---|---|
-| Argentina | Generation of electronic documents in the predefined XML formats and direct submission through WebServices to the Argentinian Tax Authority AFIP. | Planned for 2026 release wave 1 or later |
+| Argentina | Generation of electronic documents in the predefined XML formats and direct submission through WebServices to the Argentinian Tax Authority (ARCA). | Planned for 2026 release wave 1 or later |
 | Australia | <p>Generation of electronic invoices for sales and project invoices and credit notes in the Australian extension of the **PEPPOL** format.</p><p>Learn more: [Electronic invoicing for Australia](../apac/gs-apac-aus-nzl-electronic-invoices.md)</p> | Available |
 | Austria | Generation of electronic invoices for sales and project invoices and credit notes in the **PEPPOL** format. | Available |
 | Belgium | <p>Generation of electronic invoices for sales and project invoices and credit notes in the **PEPPOL** format and submission to the PEPPOL Delivery Network via the "last-mile" third-party connection to Edicom. Import of vendor electronic invoices.</p><p>Learn more: [Electronic invoicing for Belgium](../belgium/emea-bel-e-invoices.md)</p> | Available |
