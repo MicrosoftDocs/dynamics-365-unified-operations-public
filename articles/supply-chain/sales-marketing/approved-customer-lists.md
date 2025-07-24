@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.45 GA -->
 
 You might sell products and services on a recurring basis to specific customers or groups of customers who are preapproved for these purchases based on their previous and ongoing business relationship. By preapproving customers, you expedite the sales order process and shipment of the product. In addition, you ensure that the product is sold only to customers who are authorized to buy it and prevent it from being sold to other customers.
 
@@ -30,8 +30,8 @@ Before you can use the features that are described in this article, your system 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
 - The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-    - *(Preview) Advanced quality management*
-    - *(Preview) Approved customer list*
+    - *Advanced quality management*
+    - *Approved customer list*
 
 ## Set up approved customers
 

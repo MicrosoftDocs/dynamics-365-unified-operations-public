@@ -31,7 +31,7 @@ To use Traceability, your system must meet the following requirements:
 
 To use Traceability together with Dynamics 365 Supply Chain Management, you must enable the following features in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- *Tracked components* – Enables component tracking in Supply Chain Management.
+- *Tracked components* – Enables component tracking in Supply Chain Management. As of Supply Chain Management version 10.0.45, this feature is turned on by default.
 - *(Preview) Traceability* – Integrates Traceability with the component tracking features in Supply Chain Management.
 
 ## Microsoft Azure configuration

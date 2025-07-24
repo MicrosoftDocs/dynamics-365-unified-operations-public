@@ -14,7 +14,7 @@ ms.custom:
 # Enter quality test results quickly (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.45 GA -->
 
 The **Quick result entry** page makes the process of entering quality order test results faster and more flexible than the **Quality order line results** page. The **Quick result entry** page consolidates data from all tests into a single view to streamline the result entry process. Quantities are automatically populated based on the quality order quantities. Other details are also populated, such as minimum, maximum, and target values.
 
@@ -25,7 +25,7 @@ The **Quick result entry** page makes the process of entering quality order test
 Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Enter quality test results
 

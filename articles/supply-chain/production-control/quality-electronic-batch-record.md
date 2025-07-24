@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.45 GA -->
 
 Electronic batch records (EBRs) are required by part 11 of Title 21 of the Code of Federal Regulations (21 CFR Part 11), which applies to life science and pharmaceutical industries. EBRs consist of two major components:
 
@@ -31,8 +31,8 @@ Before you can use the features that are described in this article, your system 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
 - The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-    - *(Preview) Advanced quality management*
-    - *(Preview) Electronic signature improvements*
+    - *Advanced quality management*
+    - *Electronic signature improvements*
 
 ## Turn electronic signature requirements for EBRs on or off
 

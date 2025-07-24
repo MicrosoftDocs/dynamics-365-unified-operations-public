@@ -44,7 +44,7 @@ The following table describes the options in the **Work order** and **Schedule**
 To use the role-based access feature (on the **Security roles** FastTab), as described later in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.43 or later.
-- The feature that's named *Role-based access control for work order lifecycle stages* must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Role-based access control for work order lifecycle stages* must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
 
 ## Set up project stages and work order lifecycle states
 

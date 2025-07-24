@@ -16,7 +16,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-<!--KFM: Preview until further notice. -->
+<!--KFM: Preview until 10.0.45 GA. -->
 
 Microsoft Dynamics 365 Supply Chain Management lets you create transfer order lines directly from sales order lines. This functionality is useful when the goods that you must supply are located in a different warehouse than the warehouse that you're shipping from.
 
@@ -36,7 +36,7 @@ The feature that is described in this article expands on that functionality by l
 Before you can use the feature that is described in this article, your system must meet the following requirements:
 
 - You must be running Dynamics 365 Supply Chain Management version 10.0.41 or later.
-- The feature that is named *(Preview) Pair transfer order lines with sales order lines* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Pair transfer order lines with sales order lines* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Add and link lines to a new or existing transfer order from a sales order
 

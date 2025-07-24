@@ -49,9 +49,9 @@ Before you can use the features that this article describes, your system must me
 
 - The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-    - *Inventory Visibility integration with inventory adjustment posting*
-    - *Inventory Visibility integration with inventory adjustment offset*
-    - *Enable warehouse items in Inventory Visibility*
+    - *Inventory Visibility integration with inventory adjustment posting* (As of Supply Chain Management version 10.0.45, this feature is mandatory and can't be turned off.)
+    - *Inventory Visibility integration with inventory adjustment offset* (As of Supply Chain Management version 10.0.45, this feature is mandatory and can't be turned off.)
+    - *Enable warehouse items in Inventory Visibility* (As of Supply Chain Management version 10.0.45, this feature is turned on by default.)
 
 - [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md) must be enabled for your environment.
 
