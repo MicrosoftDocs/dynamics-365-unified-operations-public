@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Configure Store Commerce for web to use a custom Microsoft Entra app
 description: Learn how to configure Microsoft Dynamics 365 Commerce Store Commerce for web to use a custom Microsoft Entra app.
 author: boycez
@@ -32,7 +30,7 @@ To create and configure a custom Retail Server app in Microsoft Entra ID, follow
 
 1. Sign in to the [Microsoft Entra admin center](https://aad.portal.azure.com) by using any Microsoft Entra user account. The user account doesn't have to have administrator permissions.
 1. Select **Applications**.
-1. Select **App registrations**, and then select **New registration** to open the **Register an application** dialog box.
+1. Select **App registrations**, and then select **New registration** to open the **Register an application** dialog.
 1. Set the following fields:
 
     - **Name** – Enter a custom name for the app. For example, enter **Custom Retail Server**.
@@ -60,7 +58,7 @@ To create and configure a custom app for Store Commerce for web in Microsoft Ent
 
 1. Sign in to the [Microsoft Entra admin center](https://aad.portal.azure.com) by using any Microsoft Entra user account. The user account doesn't have to have administrator permissions.
 1. Select **Applications**.
-1. Select **App registrations**, and then select **New registration** to open the **Register an application** dialog box.
+1. Select **App registrations**, and then select **New registration** to open the **Register an application** dialog.
 1. Set the following fields:
 
     - **Name** – Enter a name for the app. For example, enter **Custom Store Commerce for web**.
@@ -129,5 +127,7 @@ You can now activate Store Commerce for web devices by using your own Microsoft 
 [Point of sale (POS) device activation](retail-device-activation.md)
 
 [Manage activation accounts and validate devices](set-up-activation-accounts-validate-devices-hq.md)
+
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
