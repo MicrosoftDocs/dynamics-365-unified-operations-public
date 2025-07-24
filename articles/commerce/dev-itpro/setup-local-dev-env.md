@@ -4,7 +4,7 @@ description: Learn how to set up a local development environment for the Commerc
 author: josaw1
 ms.date: 07/25/2025
 ms.topic: how-to
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-09-16
@@ -160,7 +160,7 @@ While the local scale unit is serving the requests, use the Debug Console to wat
 
 1. In Visual Studio Code, select **Run and Debug** (or select **Ctrl+Shift+D**). A drop-down menu that has a green arrow appears under the top navigation bar. Select **Debug with IIS**.
 1. Select the **F5** key. As when you debug in self-hosted CSU mode, the base installer is deployed first. Then the extension installer is deployed.
-1. The base installer performs prerequisite checks and reports any actions that are required. The prerequisites include SQL Server, IIS, TLS, and .Net Core Hosting Bundle.
+1. The base installer performs prerequisite checks and reports any actions that are required. The prerequisites include SQL Server, IIS, TLS, and .NET Core Hosting Bundle.
 1. After the base and extension packages are deployed, Visual Studio Code opens a web browser window that shows the results of a call to health check. Visual Studio Code also opens a dialog box that prompts you to attach a debugger. This step is optional. If you want to attach a debugger, enter **w3wp** in the list of processes, and select the row that contains **RssuCore**. RssuCore is the name of the IIS application pool that is used to run the CSU website.
 
 You now have a fully functional on-premises deployed scale unit that includes the following elements:
@@ -231,8 +231,8 @@ The following set of tasks is available when you select the **Run Task** command
 
 If the setup doesn't work as expected, or if you need help, use the following links to get support:
 
-+ [microsoft/Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/issues)
-+ [Dynamics 365 Commerce Forum](https://community.dynamics.com/forums/thread/?discussionforumid=c3698582-d578-4d1a-acff-b4b8180a422d)
-+ [Retail Interest Group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=1585934)
++ [Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/issues)
++ [Dynamics 365 Supply Chain Management and Commerce forum](https://community.dynamics.com/forums/thread/?groupid=7592059c-9686-ef11-ac21-7c1e520a09df)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
