@@ -1,5 +1,5 @@
 ---
-title: Add custom redirect for categories and product pages in cusotomized module
+title: Add custom redirect for pages inside online SDK
 description: This article describes how to implement a custom redirect for category and product pages by extending modules in online SDK.
 author: krishnabh
 ms.date: 07/24/2025
@@ -12,37 +12,52 @@ ms.search.validFrom: 2019-10-31
 ms.custom: 
   - bap-template
 ---
-Category and product pages may accept extraneous values in their URLs, which can negatively impact SEO by spreading product traffic across multiple URLs. Additionally, this behavior may introduce security risks by allowing unauthorized or inappropriate content within URLs. To mitigate these issues, you can implement custom redirects for category and product pages by extending modules in the online SDK 
+
+[!include [banner](includes/banner.md)]
+
+This article demonstrates how to do a custom redirect for pages like categories, products etc from online sdk by [ extending existing modules](clone-starter-module.md)
 
 ## Implementation
 
 To perform a 301 or 302 redirect inside a module, throw a HttpRedirectException within the relevant module. Assign the redirect URL to HttpRedirectException.Location, and set the appropriate HTTP status code (301 or 302)
 
-## Example
-The example below demonstrates how to implement a canonical redirect for category pages by extending the default-page-summary module. This approach ensures that if the current page URL differs from the canonicalUrl, the page will redirect to the canonical URL. 
-Step 1: Clone the category page-summary module and add custom logic to throw a HttpRedirectException. 
+## Example : Implement Redirect for category pages to sanitize the garbage values in the url and redirect to a canonical url.
 
-```TS
-import { HttpRedirectException } from '@msdyn365-commerce/core-internal'; 
+Category and product pages may accept extraneous values in their URLs which some customer do not prefer. In that case,you can implement custom redirects for category and product pages by extending modules in the online SDK 
+The example below demonstrates how to implement a canonical redirect for category pages by extending the default-page-summary module. This approach ensures that if the current page URL differs from the canonicalUrl, the page will redirect to the canonical URL.
 
-      // if the canonical url is different from the current page url, then redirect via throwing an error also check if request url ends with .c 
+**Step 1:** Clone the **default-page-summary** module and implement custom logic to throw a HttpRedirectException. Added HttpRedirectException logic in default-page-summery-extension.tsx.// This will throw HttpRedirectException error when canonical url for the category doesn't match the requesturl causing a redirect.
 
-        // // verify if context.request.url.requestUrl.href is a category url 
+**src\modules\default-page-summery-extension\default-page-summery-extension.tsx**
 
-        if (canonicalUrl && context && context.request && context.request.url && canonicalUrl !== context.request.url.requestUrl.href) { 
+```typescript
 
-            const e = new HttpRedirectException(canonicalUrl); 
+import { HttpRedirectException } from '@msdyn365-commerce/core-internal';
 
-            e.name = 'HttpRedirectException'; 
-
-            throw e; 
-
-        } 
+if (canonicalUrl && context && context.request && context.request.url && canonicalUrl !== context.request.url.requestUrl.href) {
+    const e = new HttpRedirectException(canonicalUrl);
+    e.name = 'HttpRedirectException';
+    throw e;
+}
+});
 ```
-Step2:  Replace the page-summary mdoule in category template with new module. 
+**Step 2:** Extend **category-page-summary-module**. update its definition to use **default-page-summary-extension.tsx** as view
 
-## Important Note : Avoid Infinite Redirects
- When implementing bulk redirects in conjunction with custom redirects, exercise caution to prevent infinite redirect loops. Always verify that URLs targeted for client-side or server-side redirection are not themselves sources or destinations in bulk redirect rules. Properly auditing and testing your redirect logic will help you maintain site stability and avoid unnecessary redirect chains that could negatively affect both user experience and SEO. 
+```json
+
+"module": {
+		"view": "../default-page-summery-extension/default-page-summery-extension"
+	}
+
+```
+
+**Step 3:**  Replace the category-page-summary module with new module in category template with new module. 
+
+> [!Note : **Avoid Infinite Redirects**]
+> When implementing bulk redirects in conjunction with custom redirects, exercise caution to prevent infinite redirect loops. Always verify that URLs targeted for client-side or server-side redirection are not themselves sources or destinations in bulk redirect rules.
+
+##
+
 
 
 ## Additional resources
