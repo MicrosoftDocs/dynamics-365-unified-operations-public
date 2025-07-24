@@ -1,10 +1,10 @@
 ---
 title: Year-end close validation
 description: Learn how to validate the general ledger year-end close process.
-author: MOAAMER
-ms.author: moaamer 
+author: JodiChristiansen 
+ms.author: jchrist 
 ms.topic: article
-ms.date: 09/25/2024
+ms.date: 07/25/2025
 ms.update-cycle: 1095-days
 ms.custom: evergreen 
 ms.reviewer: twheeloc
@@ -27,7 +27,7 @@ The **Year-end close validation** feature helps improve accuracy and performance
 - Highly variable dimensions that can slow performance if more than one million unique ledger combinations are identified
 - Out-of-balance entries that are caused by settled ledger transactions
 - Overflow amounts that exceed 16 digits
-- Additional checks for partial ledger settlements were added in 10.0.45
+- Additional checks for partial ledger settlements were added in Microsoft Dynamics 365 Finance version 10.0.45
 
 For each issue, the feature provides guidance that can help optimize performance. It might also recommend that you enable specific features or run a consistency check to fix errors.
 
