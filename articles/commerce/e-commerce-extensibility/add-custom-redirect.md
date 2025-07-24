@@ -17,11 +17,11 @@ ms.custom:
 
 # Add custom redirect for category and product pages in the online SDK
 
-This article describes how to implement server-side redirects (301 or 302) for category and product pages in Microsoft Dynamics 365 Commerce by extending existing modules in the online SDK.
+This article covers custom redirects and describes how to implement them in E-commerce Online SDK with a sample UseCase.
 
 ## Why use custom redirects?
 
-Category and product pages allow extraneous values in their URLs. While functional, such URLs may be undesirable from a user experience perspective. You can ensure clean, canonical URLs by implementing custom redirects.
+As part of the e-commerce SDK, we provide customers with the flexibility to build and customize their own sites. By default, category and product pages allow arbitrary or random values in their URLs. While these URLs function correctly, they may not align with customer expectations for a clean and professional user experience. Implementing custom redirects helps enforce clean URLs for improved user experience.
 
 ## Prerequisites
 
