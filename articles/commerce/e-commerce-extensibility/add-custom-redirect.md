@@ -30,7 +30,7 @@ Category and product pages  allow extraneous values in their URLs. While functio
 
 ## Implementation
 
-**Step 1:** Clone the **default-page-summary** module and implement custom logic to throw a HttpRedirectException. Added HttpRedirectException logic in default-page-summery-extension.tsx.// This will throw HttpRedirectException error when canonical url for the category doesn't match the requesturl causing a redirect.
+**Step 1:** Clone the **default-page-summary** module and implement custom logic to throw a HttpRedirectException. Below is a sample code to throw a HttpRedirectException error when the canonical URL for the category page does not match the it's request URL, causing a redirect. 
 
 **src\modules\default-page-summery-extension\default-page-summery-extension.tsx**
 
@@ -46,7 +46,7 @@ if (canonicalUrl && context && context.request && context.request.url && canonic
 });
 ```
 
-**Step 2:** Extend **category-page-summary-module**. Modify the definition of the category-page-summary-extension module to point to your custom view.
+**Step 2:** Extend the **category-page-summary-module**. Modify the definition of the category-page-summary-extension module to point to your custom view.
 
 **src\modules\category-page-summary-extension\category-page-summary-extension.definition.json**
 ```json
@@ -57,15 +57,15 @@ if (canonicalUrl && context && context.request && context.request.url && canonic
 
 ```
 
-**Step 3:**  Replace the **category-page-summary** module with **category-page-summary-extension** module in category template. 
+**Step 3:**  Replace the **category-page-summary** module with the **category-page-summary-extension** module in the category template. 
 
 
 
 
 
 > [!NOTE]
-> **Avoid Infinite Redirects**: when implementing bulk redirects in conjunction with custom redirects, exercise caution to prevent infinite redirect loops.
-> Always verify that URLs targeted for client-side or server-side redirection are not themselves sources or destinations in bulk redirect rules.
+> **Avoid Infinite Redirects** : When implementing bulk redirects alongside custom redirects, exercise caution to prevent infinite redirect loops. 
+>Always verify that URLs set for client-side or server-side redirection are not also listed as sources or destinations in bulk redirect rules. 
 
 
 ## Additional resources
