@@ -57,7 +57,7 @@ To download the Commerce Scale Unit channel configuration file, follow these ste
 
 ## Install the sealed CSU
 
-The process of installing a sealed CSU usually employs a configuration file downloaded from headquarters that contains all of the information needed for Retail Transaction Service (RTS) authentication. If you don't use a configuration file, you must specify additional parameters such as `--AadTokenIssuerPrefix`, `--StoreSystemAosURL`, `--StoreSystemChannelDatabaseId`, and `--TenantId`. For a full list of installer commands, see [Mass deployment of sealed Commerce self-service components](enhanced-mass-deployment.md). 
+The process of installing a sealed CSU usually employs a configuration file downloaded from headquarters that contains all of the information needed for Retail Transaction Service (RTS) authentication. If you don't use a configuration file, you must specify parameters such as `--AadTokenIssuerPrefix`, `--StoreSystemAosURL`, `--StoreSystemChannelDatabaseId`, and `--TenantId`. For a full list of installer commands, see [Mass deployment of sealed Commerce self-service components](enhanced-mass-deployment.md). 
 
 To install the sealed CSU, follow these steps.
 
@@ -70,12 +70,12 @@ CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thu
 ```
 
 > [!NOTE]
-> - When you install the sealed CSU on a development machine, you are allowed to use the same SSL thumbprint to run all services. For production and user acceptance testing (UAT) environments, these values should be different.
+> - When you install the sealed CSU on a development machine, you're allowed to use the same SSL thumbprint to run all services. For production and user acceptance testing (UAT) environments, these values should be different.
 > - Don't enter port 80 or 443 during installation. Entering either of these values interferes with the application object server (AOS) service that hosts Commerce headquarters. 
 
 ## Health check
 
-As a final step, the installer automatically executes a health check and show the results.
+As a final step, the installer automatically executes a health check and shows the results.
 
 To check the health of a CSU at any time, you can access a specific URL in a web browser. The URL format is `https://<CommerceScaleUnitURL>/healthcheck?testname=ping`. Replace `<CommerceScaleUnitURL\>` with the actual URL of your CSU instance. Be sure to include the port number specified during installation. Accessing this URL executes a ping test and returns results indicating whether the CSU is reachable and healthy.
 
