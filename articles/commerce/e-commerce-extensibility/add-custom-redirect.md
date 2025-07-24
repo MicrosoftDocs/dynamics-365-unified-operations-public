@@ -31,6 +31,8 @@ As part of the e-commerce SDK, we provide customers with the flexibility to buil
 
 ## Implementing an HTTP Redirect within a Module 
 
+Custom Redirect inside a module can be implemented by throwing a "HttpRedirectException" error wherever customer wants to do a redirect inside the relevant module. This will stop the rendering of the subsequent modules and does a redirect to the "Location" value passed to the "HttpRedirectException" error. 
+
 - Begin by cloning or creating a new module. Ensure you define the custom redirect URL as needed for your use case. 
 
 - In the module's view file (.tsx), implement the logic required to conditionally trigger a redirect based on your criteria. 
@@ -41,7 +43,7 @@ As part of the e-commerce SDK, we provide customers with the flexibility to buil
 
 
 
-## Example
+## Sample Implementation of custom redirect for category pages
 
 ### Redirect a category page to its canonical URL
 
