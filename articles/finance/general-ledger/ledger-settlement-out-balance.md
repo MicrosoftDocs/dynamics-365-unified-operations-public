@@ -29,15 +29,15 @@ ms.dyn365.ops.version: 10.0.45
 
 [!include [banner](../includes/banner.md)]
 
-If there are out of balance ledger settlements, the year-end close can fail with an out-of-balance error. To address these out of balance errors so the year can be closed successfully, any out of balance ledger settlements need to be reversed. This page will help find those out of balance ledger settlements. 
+If there are out of balance ledger settlements, the year-end close will fail with an out-of-balance error. To address these out of balance errors so the year can be closed successfully, any out of balance ledger settlements need to be reversed. This page will help find those out of balance ledger settlements. 
 
 Once these ledger settlements have been reversed they should not be settled again in the same manner because they were out of balance. 
 
-In **Out of balance ledger settlements** (**General ledger > Periodic tasks > Out of balance ledger settleents**) select the fiscal year and then select **Show ledger settlements**. Only open fiscal years that have not been closed by the year-end process, can be selected in Fiscal year.
+In **Out of balance ledger settlements** (**General ledger > Periodic tasks > Out of balance ledger settleents**) select the fiscal year and then select **Show ledger settlements**. Only open fiscal years, that have not been closed by the year-end process, can be selected in Fiscal year.
 
-To see the detail of the ledger settlement select the Settlement ID hyperlink. The page with the out of balance ledger settlements for each settlement ID will show all settled transactions for the settlementID, including any outside of the target fiscal year, that are involved with the selected settlement ID. 
+To see the detail of the ledger settlement select the Settlement ID hyperlink. The page with the out of balance ledger settlements for each settlement ID will show all settled transactions for the settlement ID, including any outside of the target fiscal year, that are involved with the selected settlement ID. 
 
-The Settlement ID, Date settled, Automation rule (if using process automation for ledger settlements), Total balance in accounting currency and Total balance in reporting currency, display for each settlement ID. If the ledger settlement cannot be reversed from this page the **Reversal blocked** column is marked. To reverse any ledger settlements on this page, mark the settlement line(s) and then select the button **Unsettle marked records**.
+The Settlement ID, Date settled, Automation rule (if using process automation for ledger settlements), Total balance in accounting currency and Total balance in reporting currency, display for each settlement ID. If the ledger settlement cannot be reversed from this page the **Reversal blocked** column is marked. To reverse a ledger settlement on this page, mark the settlement line(s) and then select **Unsettle marked records**.
 
 The **Reversal blocked** column indicates whether an out of balance ledger settlement can be reversed. Out of balance ledger settlements with transactions posted in a closed fiscal year cannot be reversed. To reverse them, the closed fiscal year must be reopened by reversing the year-end close voucher of the target fiscal year. Out of balance ledger settlements with realized gain/loss adjustment transactions cannot be reversed on this page. Use the Ledger settlements page for reversal. 
 
