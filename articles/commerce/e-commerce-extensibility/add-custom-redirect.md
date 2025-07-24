@@ -19,7 +19,7 @@ This article demonstrates how to do a custom redirect for pages like categories,
 
 ## Implementation
 
-To perform a 301 or 302 redirect inside a module, throw a HttpRedirectException within the relevant module. Assign the redirect URL to HttpRedirectException.Location, and set the appropriate HTTP status code (301 or 302)
+To perform a 301 or 302 redirect inside a module, throw a HttpRedirectException within the relevant module. Assign the redirect URL to **HttpRedirectException.Location**, and set the appropriate http status code(301 or 302) to **HttpRedirectException.statusCode**.
 
 ## Example : Implement Redirect for category pages to sanitize the garbage values in the url and redirect to a canonical url.
 
@@ -53,11 +53,10 @@ if (canonicalUrl && context && context.request && context.request.url && canonic
 
 **Step 3:**  Replace the category-page-summary module with new module in category template with new module. 
 
-> [!Note : **Avoid Infinite Redirects**]
-> When implementing bulk redirects in conjunction with custom redirects, exercise caution to prevent infinite redirect loops. Always verify that URLs targeted for client-side or server-side redirection are not themselves sources or destinations in bulk redirect rules.
 
-##
-
+> [!NOTE]
+> **Avoid Infinite Redirects**: when implementing bulk redirects in conjunction with custom redirects, exercise caution to prevent infinite redirect loops.
+> Always verify that URLs targeted for client-side or server-side redirection are not themselves sources or destinations in bulk redirect rules.
 
 
 ## Additional resources
