@@ -70,13 +70,13 @@ if (canonicalUrl && context && context.request && context.request.url && canonic
 
 ## Additional resources
 
-[Module library overview](starter-kit-overview.md)
+[Module library overview](../starter-kit-overview.md)
 
 [Page Summary Module](../dev-itpro/page-summary-module.md)
 
-[Meta Tags Module](metatags-module.md)
+[Meta Tags Module](../dev-itpro/metatags-module.md)
 
-[Default Page Module](default-page-module.md)
+[Default Page Module](../dev-itpro/default-page-module.md)
 
 [Extend Module Definition](extend-module-definition.md)
 
