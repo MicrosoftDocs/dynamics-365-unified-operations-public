@@ -56,16 +56,16 @@ Next, you must convert the SSL certificate you created to the .CER file format.
 
 To convert the SSL certificate you created to the `.CER` file format, follow these steps.
 
-1. On the development machine, select the Windows logo key + R to open the **Run** dialog box.  
+1. On the development machine, select the Windows logo key + R to open the **Run** dialog.  
 1. Enter "MMC" to open the Microsoft Management Console.  
 1. Select **File > Add/Remove Snap-in**.
 1. Under **Available snap-ins**, select **Certificates**, and then select **Add**.
-1. In the **Certificates snap-in** dialog box, select **Computer Account**, and then select **Next**.
+1. In the **Certificates snap-in** dialog, select **Computer Account**, and then select **Next**.
 1. Select **Local Computer**, and then select **Finish**. 
 1. Select **OK**.  
 1. Expand **Certificates \> Personal > Certificates**.  
 1. Locate the SSL certificate you created earlier, right-click the certificate, and then select **All Tasks \> Export**.  
-1. In the export dialog box, select **Next**.  
+1. In the export dialog, select **Next**.  
 1. Select **No, do not export the private key**, and then select **Next**.  
 1. Select **DER encoded binary X.509 (.CER)**.  
 1. Select the C:\temp folder, and then enter "DevBoxSelfSigned" as the file name.  
@@ -130,14 +130,14 @@ For information on downloading and executing the Commerce Scale Unit installer, 
 
 Once installation is complete, proceed to the next section.
 
-## Database restores from UAT
+## Database restores from User Acceptance Testing (UAT)
 
 If you previously set up a sealed CSU using the steps in [Download and Install](#download-and-install) and then restored the headquarters database from another environment, you must perform the following steps to make the sealed CSU functional again. 
 
 1. To recreate the records, follow the steps in [Update Commerce headquarters](#update-commerce-headquarters). 
     > [!NOTE]
     > You must use the same values for **Channel Database ID** and **Channel Profile** that you used in the previous installation. If these values are different than the previous installation, you must rerun the installer. 
-2. Check your download sessions to see if the jobs are applying. 
+1. Check your download sessions to see if the jobs are applying. 
     - If the jobs are applying, then your CSU is working and you don't need to rerun the installer steps.
     - If the download jobs aren't applying, first check the Windows Event logs to see if there are any obvious errors, then download a new configuration file from the channel database form and rerun the CSU installer using the new configuration file.
     - 
@@ -147,7 +147,7 @@ To update the sealed CSU to a newer version, obtain a newer version of the Seale
 
 ## Update an expired SSL certificate
 
-To update an expiring or expired certificate for the Sealed CSU, you don't need to completely reinstall the Sealed CSU. Instead, create the new SSL certificate, and then execute the following command.
+To update an expiring or expired certificate for the sealed CSU, you don't need to completely reinstall the sealed CSU. Instead, create the new Secure Sockets Layer (SSL) certificate, and then execute the following command.
 
 ```cmd
 CommerceStoreScaleUnitSetup.exe updateCertificates --SslCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewSslCertificateThumbprint" --AsyncClientCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewAsyncClientAadAppCertThumbprint" --RetailServerCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewRsAadAppCertThumbprint"
