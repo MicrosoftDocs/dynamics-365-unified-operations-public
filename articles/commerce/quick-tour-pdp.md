@@ -33,7 +33,7 @@ The top of a PDP has a header that shows all the product categories and other pa
 
 The most important module on a PDP is the buy box module, which appears as the first item in the main section of the page. A buy box module shows important product information, such as the product name, the product description, the product price, product images, and product ratings.
 
-The buy box module lets the customer select product options (for example, a size, style, and color) and add the product to the cart. It also lets the customer buy the product online and pick it up in a store. The buy online and pick up in store module uses integration with Bing Maps application programming interfaces (APIs) to find nearby stores or stores in another location that the customer specifies.
+The buy box module lets the customer select product options (for example, a size, style, and color) and add the product to the cart. It also lets the customer buy the product online and pick it up in a store. The buy online and pick up in store module uses integration with Azure Maps application programming interfaces (APIs) to find nearby stores or stores in another location that the customer specifies.
 
 A buy box module requires a product ID. This ID is derived from the page context. If a buy box module is added to a page where the page context doesn't include a product ID, it won't render the information correctly.
 
