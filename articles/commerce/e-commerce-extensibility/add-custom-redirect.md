@@ -17,7 +17,6 @@ ms.custom:
 
 # Add custom redirect for pages inside online SDK
 
-
 This article demonstrates how to do a custom redirect for pages like categories, products etc from online sdk by [ extending existing modules](clone-starter-module.md)
 
 ## Implementation
