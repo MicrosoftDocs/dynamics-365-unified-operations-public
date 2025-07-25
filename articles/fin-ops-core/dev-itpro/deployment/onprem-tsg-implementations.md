@@ -60,7 +60,7 @@ For more information about how to resolve issues in on-premises environments, se
 3. From the relevant section of this article, copy the code that you require to fix your issue, and paste it into a new file. Save this file in the same folder where your Predeployment.ps1 script is stored. The file name must match the title of the section that you copied the code from. Repeat this step for other issues that you must fix.
 4. In the Predeployment.ps1 script, in the code that you added earlier, uncomment the lines that invoke the scripts that you want to use.
 
-## <a name="sysclassrunner"></a>TSG\_SysClassRunner.ps1
+## <a name="sysclassrunner"></a>TSG\_SysClassRunner.ps1 
 
 The following script is used to fix an issue that occurs when SysClassRunner is run in some versions of the platform. For more information about this issue, see [SysClassRunner doesn't run successfully](troubleshoot-on-prem.md#SysClassRunner).
 
