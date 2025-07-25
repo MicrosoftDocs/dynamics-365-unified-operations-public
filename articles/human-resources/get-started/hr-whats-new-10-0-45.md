@@ -25,7 +25,7 @@ This article lists the features that are new or changed for Microsoft Dynamics 3
 
 ## Features included in this release
 
-This section will contain a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
+This section contains a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
@@ -36,7 +36,7 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| Personnel management  |Streamlined employee entry|	The streamlined employee entry page becomed mandatory starting with the Dynamics 365 Finance version 10.0.45. A new **Disable streamlined employee entry** parameter is introduced on the **Human resources shared parameters**. When this setting is enabled, the streamlined employee entry experience is turned off.| Parameter |
+| Personnel management  |Streamlined employee entry|	The streamlined employee entry page became mandatory starting with the Dynamics 365 Finance 10.0.45 release. A new **Disable streamlined employee entry** parameter is introduced on the **Human resources shared parameters**. When this setting is enabled, the streamlined employee entry experience is turned off.| Parameter |
 | Recruiting     |Enable recruitment add-on	|The feature is currently in public preview. General availability is planned in Dynamics 365 Finance version 10.0.45. The related public documentation is in its preview version and will be updated when the feature is generally available.  | Parameter |
 
 
