@@ -52,6 +52,9 @@ For more information about how to resolve issues in on-premises environments, se
     # The following script (when enabled) configures HTTPS for SSRS, and enables reporting services to run under a gMSA account.
     # NOTE!!! If you have used an IP address in LCS for your SSRS server, update the IP address to a Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed on the Environment page. Go to Maintain > Update settings.
     #& $agentShare\scripts\TSG_SSRSEnableHTTPS.ps1 -agentShare $agentShare -ssrsSslCertificateThumbprint "<ssrshttcertthumbprint>" -principalUserAccountName contoso\svc-reportsvc$
+
+    # When enabled, the following script resolves a version mismatch issue with Microsoft.Identity.Client, allowing the Reporting Services app to install successfully.
+    # & $agentShare\scripts\TSG_UpdateSSRSIdentityClient.ps1 -SSRSServers BI1,BI2 # Edit list of servers as needed, separated by a comma 
     ```
 
 3. From the relevant section of this article, copy the code that you require to fix your issue, and paste it into a new file. Save this file in the same folder where your Predeployment.ps1 script is stored. The file name must match the title of the section that you copied the code from. Repeat this step for other issues that you must fix.
@@ -525,5 +528,182 @@ $configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
 
 Write-Output "Successfully updated the configuration HTTPS (443) for Reporting Services"
 ```
+
+## <a name="SSRSIdentityClient"></a>TSG\_UpdateSSRSIdentityClient.ps1
+
+The following script addresses an issue where the D365 Reporting Services extensions fail to install. This problem arises due to the version of Microsoft.Identity.Client bundled with D365. During installation, the Reporting Services configuration updates the SSRS DLLs and configuration files with outdated binding redirect versions, leading to compatibility issues.
+
+> [!NOTE]
+>
+> The script relies on WinRM for remote execution. If you're unable to run PowerShell scripts remotely, you can extract the embedded script content from the $scriptContent variable and save it locally on your BI nodes as LBDUpdateSSRSClientIdentity.ps1. In that case, you'll need to run the script manually on each BI node during deployment.
+
+```PowerShell
+#
+# This source code is freeware and is provided on an "as is" basis without warranties of any kind, 
+# whether express or implied, including without limitation warranties that the code is free of defect, 
+# fit for a particular purpose or non-infringing.  The entire risk as to the quality and performance of 
+# the code is with the end user.
+# 
+
+param (
+    [Parameter(Mandatory = $true)]
+    [string]$SSRSServers = ''  
+)
+
+$remoteFolder = "C:\Temp"
+$remoteScriptName = "LBDUpdateSSRSClientIdentity.ps1"
+$remoteScriptPath = Join-Path $remoteFolder $remoteScriptName
+
+$scriptContent = @'
+#
+# This source code is freeware and is provided on an "as is" basis without warranties of any kind, 
+# whether express or implied, including without limitation warranties that the code is free of defect, 
+# fit for a particular purpose or non-infringing.  The entire risk as to the quality and performance of 
+# the code is with the end user.
+# 
+
+$exeToWatch = "AxReportVmRoleStartupTask.exe"
+$maxWaitMinutes = 120
+$checkInterval = 10          
+$updateInterval = 5          
+$binPath = "C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer\bin"
+$webConfigPath = "C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer\web.config"
+$dllFile = "Microsoft.Identity.Client.dll"
+$exeConfigFile = "ReportingServicesService.exe.config"
+$serviceName = "SQLServerReportingServices"
+
+$dllPath = Join-Path $binPath $dllFile
+$exeConfigPath = Join-Path $binPath $exeConfigFile
+
+function Update-BindingRedirect {
+    param (
+        [string]$configPath,
+        [string]$assemblyName = "Microsoft.Identity.Client",
+        [string]$publicKeyToken = "0a613f4dd989e8ae",
+        [string]$newVersion
+    )
+
+    $updated = $false
+
+    if (-not (Test-Path $configPath)) {
+        Write-Warning "Config not found: $configPath"
+        return $false
+    }
+
+    [xml]$xml = Get-Content $configPath
+    $nsMgr = New-Object System.Xml.XmlNamespaceManager($xml.NameTable)
+    $nsMgr.AddNamespace("asm", "urn:schemas-microsoft-com:asm.v1")
+
+    $node = $xml.SelectSingleNode("//asm:assemblyIdentity[@name='$assemblyName']/..", $nsMgr)
+    if (-not $node) {
+        Write-Warning "Could not find dependentAssembly for $assemblyName in $configPath"
+        return $false
+    }
+
+    $bindingRedirect = $node.bindingRedirect
+    if ($bindingRedirect) {
+        $currentVersion = $bindingRedirect.newVersion
+        if ($currentVersion -ne $newVersion) {
+            Write-Host "Updating $assemblyName in $configPath from $currentVersion to $newVersion"
+            $bindingRedirect.oldVersion = "0.0.0.0-$newVersion"
+            $bindingRedirect.newVersion = $newVersion
+
+            $backupPath = "$configPath.bak"
+            Copy-Item $configPath $backupPath -Force
+            $xml.Save($configPath)
+            Write-Host "Saved updated config and created backup: $backupPath"
+            $updated = $true
+        } else {
+            Write-Host "$assemblyName in $configPath is already up to date."
+        }
+    } else {
+        Write-Warning "bindingRedirect not found in $configPath for $assemblyName"
+    }
+
+    return $updated
+}
+
+$waitedSeconds = 0
+$maxWaitSeconds = $maxWaitMinutes * 60
+
+Write-Host "Waiting for $exeToWatch to start (timeout: $maxWaitMinutes minutes)..."
+
+while ($waitedSeconds -lt $maxWaitSeconds) {
+    $running = Get-Process | Where-Object { $_.Name -eq [System.IO.Path]::GetFileNameWithoutExtension($exeToWatch) }
+    if ($running) {
+        Write-Host "$exeToWatch detected. Monitoring configs..."
+        break
+    }
+    Start-Sleep -Seconds $checkInterval
+    $waitedSeconds += $checkInterval
+}
+
+if (-not $running) {
+    Write-Warning "$exeToWatch did not start within $maxWaitMinutes minutes. Exiting."
+    exit 0
+}
+
+while (Get-Process -Name ([System.IO.Path]::GetFileNameWithoutExtension($exeToWatch)) -ErrorAction SilentlyContinue) {
+    if (-Not (Test-Path $dllPath)) {
+        Write-Warning "DLL not found: $dllPath. Skipping check..."
+        Start-Sleep -Seconds $updateInterval
+        continue
+    }
+    $dllVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($dllPath).FileVersion
+    $updatedExeConfig = Update-BindingRedirect -configPath $exeConfigPath -newVersion $dllVersion
+    $updatedWebConfig = Update-BindingRedirect -configPath $webConfigPath -newVersion $dllVersion
+
+    if ($updatedExeConfig -or $updatedWebConfig) {
+        Write-Host "Restarting Reporting Services ($serviceName)..."
+        Restart-Service -Name $serviceName -Force
+        Write-Host "Service restarted."
+    }
+    Start-Sleep -Seconds $updateInterval
+}
+
+Write-Host "$exeToWatch has exited. Script completed."
+
+'@
+
+# --- Split server list ---
+$servers = $SSRSServers -split ',' | ForEach-Object { $_.Trim() }
+
+foreach ($server in $servers) {
+    Write-Host "`n--- Processing server: $server ---`n"
+
+    try {
+        Invoke-Command -ComputerName $server -ScriptBlock {
+            $path = "C:\Temp"
+            if (-not (Test-Path $path)) {
+                New-Item -Path $path -ItemType Directory -Force | Out-Null
+                Write-Host "Created folder: $path"
+            } else {
+                Write-Host "Folder already exists: $path"
+            }
+        }
+
+        Invoke-Command -ComputerName $server -ScriptBlock {
+            param ($remoteScriptPath, $content)
+            Set-Content -Path $remoteScriptPath -Value $content -Force -Encoding UTF8
+            Write-Host "Saved script to: $remoteScriptPath"
+        } -ArgumentList $remoteScriptPath, $scriptContent
+
+        # 3. Start the script in background
+        Invoke-Command -ComputerName $server -ScriptBlock {
+            param ($remoteScriptPath)
+            Start-Process powershell.exe -ArgumentList "-ExecutionPolicy Bypass -File `"$remoteScriptPath`"" -WindowStyle Hidden
+            Write-Host "Started script: $remoteScriptPath"
+        } -ArgumentList $remoteScriptPath
+
+        Write-Host "Successfully deployed and started script on $server"
+    }
+    catch {
+        Write-Warning "Failed to process ${server}: $_"
+    }
+}
+
+Write-Host "`nAll deployments completed."
+```
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
