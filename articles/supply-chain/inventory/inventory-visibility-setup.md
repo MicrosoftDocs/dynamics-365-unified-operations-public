@@ -6,7 +6,7 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 06/24/2024
+ms.date: 07/24/2025
 ms.custom:
   - bap-template
   - sfi-image-nochange
@@ -22,9 +22,9 @@ This article describes how to install the Inventory Visibility Add-in for Micros
 > [!TIP]
 > If you're a feature consultant or solution consultant, we recommend that you join the [Inventory Visibility Add-in Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=46697168896), where you can read about the latest developments, exchange tips with other consultants and developers, and discuss features.
 >
-> If you're experiencing technical issues or running into exceptions, you can get help by sending email directly to the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) (please be sure to include your Supply Chain Management environment ID).
->
 > For useful code samples and troubleshooting guides, visit the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples).
+>
+> If you're experiencing technical issues or running into exceptions, you can get help by contacting Microsoft Support through Microsoft Dynamics Lifecycle Services or the Power Platform admin center. Be sure to include your Supply Chain Management environment ID when you contact them.
 
 ## Inventory Visibility prerequisites
 
@@ -66,8 +66,6 @@ The following table lists the countries/regions where Inventory Visibility is cu
 | US East | eus |
 | US West | wus |
 
-If you have any questions about these prerequisites, contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
-
 ## <a name="install-add-in"></a>Install the Inventory Visibility Add-in
 
 Before you install the add-in, register an application and add a client secret to Microsoft Entra under your Azure subscription. For instructions, see [Register an application](/azure/active-directory/develop/quickstart-register-app) and [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Be sure to make a note of the **Application (client) ID**, **Client secret**, and **Tenant ID** values, because you'll need them later.
@@ -104,7 +102,7 @@ After you register an application and add a client secret to Microsoft Entra ID,
 
 1. Agree to the terms and conditions by selecting the **Terms and conditions** checkbox.
 1. Select **Install**. The status of the add-in is shown as **Installing**. When the installation is completed, refresh the page. The status should change to **Installed**.
-1. In Dataverse, select the **Apps** section in the left navigation, and verify that the **Inventory Visibility** Power Apps is installed successfully. If the **Apps** section doesn't exist, contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
+1. In Dataverse, select the **Apps** section in the left navigation, and verify that the **Inventory Visibility** Power Apps is installed successfully.
 
 > [!NOTE]
 > If the system warns you that you don't have permission to install Inventory Visibility on Lifecycle Services, you must contact the administrator to modify your permission.
@@ -144,26 +142,7 @@ Follow these steps to install the Inventory Visibility Add-in.
 1. Agree to the terms of service.
 1. Select **Install**. During the installation, the status of the add-in is shown as *Installing*. After the installation is completed, refresh the page. The status should change to *Installed*.
 
-> [!NOTE]
-> If the installation fails, contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
-
 ## <a name="setup-dynamics-scm"></a>Set up Inventory Visibility in Supply Chain Management
-
-### <a name="deploy-inventory-visibility-package"></a>Deploy the Inventory Visibility integration package
-
-If you're running Supply Chain Management version 10.0.18 or later, you can skip this deployment session and jump ahead to the [Set up Inventory Visibility integration](#setup-inventory-visibility-integration) section.
-
-If you're running Supply Chain Management version 10.0.17 or earlier, contact the Inventory Visibility on-board support team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to get the package file. Then deploy the package in Lifecycle Services.
-
-> [!NOTE]
-> If a version mismatch error occurs during deployment, you must manually import the X++ project into your development environment. Then create the deployable package in your development environment, and deploy it in your production environment.
-
-Make sure that the following features are turned on in your Supply Chain Management environment. (By default, they're turned on.)
-
-| Feature description | Code version | Toggle class |
-|---|---|---|
-| Enable or disable using inventory dimensions on InventSum table      | 10.0.11 | InventUseDimOfInventSumToggle      |
-| Enable or disable using inventory dimensions on InventSumDelta table | 10.0.12 | InventUseDimOfInventSumDeltaToggle |
 
 ### <a name="setup-inventory-visibility-integration"></a>Set up Inventory Visibility integration
 
@@ -197,7 +176,7 @@ For a list of the latest hotfixes available for Inventory Visibility integration
 
 When you try to enable the Inventory Visibility integration batch job from Supply Chain Management, you might receive the following error:
 
-> Cannot sync more than 500000 records in the same warehouse. To mitigate this issue, update partition schema to 2 in Inventory Visibility Add-in. Contact Inventory Visibility Support Team at `inventvisibilitysupp@microsoft.com` for more info.
+> Cannot sync more than 500000 records in the same warehouse. To mitigate this issue, update partition schema to 2 in Inventory Visibility Add-in.
 
 If you receive this error, follow these steps to update your [partition schema](inventory-visibility-power-platform.md#data-partition) to help prevent out-of-memory issues. If you don't receive this error, you can skip this procedure.
 
@@ -223,7 +202,7 @@ To update an installed version of the Inventory Visibility Add-in to the latest 
     - If the **Status** is *Update available*, then an update is available. Continue with the next step.
 
     > [!TIP]
-    > To see which version of the add-in you are currently running, regardless of the status, open the **More application actions** menu (ellipsis button), and then select **Details**.
+    > To see which version of the add-in you're currently running, regardless of the status, open the **More application actions** menu (ellipsis button), and then select **Details**.
 
 1. If the page shows that an update is available, open the **More application actions** menu (ellipsis button), and then select **Update**.
 1. In the dialog box that appears, select the **I agree to the terms of service** checkbox, and then select **Update**.
@@ -244,7 +223,7 @@ To uninstall the Inventory Visibility Add-in, follow these steps:
 The uninstall process terminates the Inventory Visibility Add-in, unregisters the add-in from Lifecycle Services, and deletes any temporary data that's stored in the Inventory Visibility Add-in data cache. Primary inventory data that was synced to your Dataverse subscription isn't deleted.
 
 > [!IMPORTANT]
-> If you want to continue to use Inventory Visibility in the current environment, we recommend that you don't delete all solutions from your Dataverse environment. If you want to delete all inventory data in Dataverse, we recommend that you use the [delete all inventory data](inventory-visibility-power-platform.md#delete-data) option. If you aren't sure about your scenario, contact [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) for assistance.
+> If you want to continue to use Inventory Visibility in the current environment, we recommend that you don't delete all solutions from your Dataverse environment. If you want to delete all inventory data in Dataverse, we recommend that you use the [delete all inventory data](inventory-visibility-power-platform.md#delete-data) option.
 
 > [!NOTE]
 > If you must delete all solutions that are related to Inventory Visibility, follow these steps.
@@ -266,6 +245,6 @@ The uninstall process terminates the Inventory Visibility Add-in, unregisters th
 
 ## <a name="move-data"></a>Move data between Supply Chain Management databases and Dataverse environments
 
-There are several ways to migrate data between Supply Chain Management databases and Dataverse environments. For instructions, see the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples/blob/main/Troubleshooting%20Guide/Database%20and%20Dataverse%20Movement.md). If the target environment of your movement operation is a production environment, or if your scenario isn't listed in the guide, contact [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) for assistance.
+There are several ways to migrate data between Supply Chain Management databases and Dataverse environments. For instructions, see the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples/blob/main/Troubleshooting%20Guide/Database%20and%20Dataverse%20Movement.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
