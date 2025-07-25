@@ -38,7 +38,7 @@ Maintenance request lifecycle states define the stages that a request can go thr
 
 7. On the **Update** FastTab, the **Inbound** and **Outbound** options in the **Asset** section are relevant if you use depot repair. Set the appropriate option to **Yes** if the asset lifecycle state of assets that are selected on a maintenance request should automatically be updated to **Inbound** or **Outbound** when the maintenance request lifecycle state of that maintenance request is set to **Inbound** or **Outbound**.
 
-The follow illustration shows an example of the **Maintenance request lifecycle states** page.
+The next illustration shows an example of the **Maintenance request lifecycle states** page.
 
 ![Maintenance request lifecycle states page.](media/02-setup-for-requests.png)
 
