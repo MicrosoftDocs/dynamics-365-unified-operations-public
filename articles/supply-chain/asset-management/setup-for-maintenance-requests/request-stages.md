@@ -25,14 +25,18 @@ Maintenance request lifecycle states define the stages that a request can go thr
 2. Select **New** to create a maintenance request lifecycle state.
 3. In the **Lifecycle state** field, enter an ID for the lifecycle state.
 4. In the **Name** field, enter a name.
+5. On the **Details** FastTab, the **Lifecycle models** field shows the number of maintenance request lifecycle models that use this lifecycle state.
+6. The following table describes the options in the **General** FastTab.
 
-    On the **Details** FastTab, the **Lifecycle models** field shows the number of maintenance request lifecycle models that use this lifecycle state.
+| Option name | Description |
+|--|--|
+| Active | Set this option to *Yes* if a maintenance request should be active while it's in this lifecycle state. |
+| Set actual end | Set this option to *Yes* if an actual end date and time should automatically be entered on a maintenance request that is in this lifecycle state. |
+| Delete open schedule lines | Set this option to *Yes* if maintenance schedule lines without a work order reference should be deleted automatically on a maintenance request that is in this lifecycle state. |
+| Create work order | Set this option to *Yes* if a work order can be created from a maintenance request that is in this lifecycle state. |
+| Delete | Set this option to *Yes* if a maintenance request can be deleted while it's in this lifecycle state. |
 
-5. On the **General** FastTab, set the **Active** option to **Yes** if a maintenance request should be active while it's in this lifecycle state.
-6. Set the **Set actual end** option to **Yes** if an actual end date and time should automatically be entered on a maintenance request that is in this lifecycle state.
-7. Set the **Create work order** option to **Yes** if a work order can be created from a maintenance request that is in this lifecycle state.
-8. Set the **Delete** option to **Yes** if a maintenance request can be deleted while it's in this lifecycle state.
-9. On the **Update** FastTab, the **Inbound** and **Outbound** options in the **Asset** section are relevant if you use depot repair. Set the appropriate option to **Yes** if the asset lifecycle state of assets that are selected on a maintenance request should automatically be updated to **Inbound** or **Outbound** when the maintenance request lifecycle state of that maintenance request is set to **Inbound** or **Outbound**.
+7. On the **Update** FastTab, the **Inbound** and **Outbound** options in the **Asset** section are relevant if you use depot repair. Set the appropriate option to **Yes** if the asset lifecycle state of assets that are selected on a maintenance request should automatically be updated to **Inbound** or **Outbound** when the maintenance request lifecycle state of that maintenance request is set to **Inbound** or **Outbound**.
 
 The follow illustration shows an example of the **Maintenance request lifecycle states** page.
 
@@ -49,8 +53,7 @@ After you've created the lifecycle states that are required for your maintenance
 2. Select **New** to create a maintenance request lifecycle model.
 3. In the **Lifecycle model** field, enter an ID for the lifecycle model.
 4. In the **Name** field, enter a name.
-
-    On the **Details** FastTab, the **Lifecycle states** shows the number of lifecycle states that are selected in this lifecycle model. The **Maintenance request types** field shows the number of maintenance request types that use this lifecycle model.
+5. On the **Details** FastTab, the **Lifecycle states** shows the number of lifecycle states that are selected in this lifecycle model. The **Maintenance request types** field shows the number of maintenance request types that use this lifecycle model.
 
 5. On the **Lifecycle states** FastTab, select the lifecycle states that should be included in the lifecycle model:
 
