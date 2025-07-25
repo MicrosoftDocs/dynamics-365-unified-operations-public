@@ -22,7 +22,7 @@ This article describes how to install the Inventory Visibility Add-in for Micros
 > [!TIP]
 > If you're a feature consultant or solution consultant, we recommend that you join the [Inventory Visibility Add-in Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=46697168896), where you can read about the latest developments, exchange tips with other consultants and developers, and discuss features.
 >
-> If you're experiencing technical issues or running into exceptions, you can get help by sending email directly to the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) (please be sure to include your Supply Chain Management environment ID).
+> If you're experiencing technical issues or running into exceptions, please kindly open a support ticket directly via LCS or power platfrom admin center(PPAC), we no longer take support request via email. please be sure to include your environment ID and detailed repro steps in your ticket.
 >
 > For useful code samples and troubleshooting guides, visit the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples).
 
