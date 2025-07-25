@@ -270,6 +270,8 @@
           href: dev-itpro/retail-store-system-begin.md
         - name: Configure and install Commerce Scale Unit (self-hosted)
           href: dev-itpro/retail-store-scale-unit-configuration-installation.md
+        - name: Download and install Commerce Scale Unit
+          href: dev-itpro/retail-store-scale-unit-download-install.md
         - name: Modern POS configuration and installation
           href: dev-itpro/retail-modern-pos-device-activation.md
         - name: Manage accounts and devices from headquarters
