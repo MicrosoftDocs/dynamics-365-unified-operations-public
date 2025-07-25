@@ -17,7 +17,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.45 GA -->
 
-When you're adding an item to a sales order, you can search for it using its external item identifier or external description/name. External item identifiers and descriptions can be defined for each customer, allowing you to use the customer's terminology when adding products to orders.
+When you're adding an item to a sales order, you can search for it using its external item identifier or external description/name. You can define external item identifiers and descriptions for each customer, allowing you to use the customer's terminology when adding products to orders.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -26,7 +26,7 @@ When you're adding an item to a sales order, you can search for it using its ext
 To use the features described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.45 or later.
-- The feature that is named *Enable lookup based search for Sales External Item Identifier field* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- You must ensure that the feature named *Enable lookup based search for Sales External Item Identifier field* is turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Specify external item identifiers for a customer
 
