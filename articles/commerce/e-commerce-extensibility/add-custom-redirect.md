@@ -1,5 +1,5 @@
 ---
-title: Redirecting to Canonical URLs for Category and Product Pages in the Online SDK 
+title: Redirecting to Canonical URLs for Category and Product Pages in the Online SDK (preview)
 description: Learn how to implement a custom redirect for category and product pages by extending modules in the online SDK.
 author: krishnabh
 ms.date: 07/24/2025
@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-# Redirecting to Canonical URLs for Category and Product Pages in the Online SDK 
+# Redirecting to Canonical URLs for Category and Product Pages in the Online SDK (preview)
 
 This guide outlines how to implement redirects to canonical URLs for category and product detail pages using the Dynamics 365 Commerce Online SDK. This ensures that users and search engines consistently access the clean, intended version of each page.  
 ## Why Are Canonical URLs Important? 
