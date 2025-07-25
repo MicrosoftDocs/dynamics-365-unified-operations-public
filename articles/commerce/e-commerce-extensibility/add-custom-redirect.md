@@ -1,5 +1,5 @@
 ---
-title: Add custom redirect for pages inside online SDK
+title: Redirecting to Canonical URLs for Category and Product Pages in the Online SDK 
 description: Learn how to implement a custom redirect for category and product pages by extending modules in the online SDK.
 author: krishnabh
 ms.date: 07/24/2025
@@ -15,33 +15,50 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-# Add custom redirect for category and product pages in the online SDK
+# Redirecting to Canonical URLs for Category and Product Pages in the Online SDK 
 
-This article covers how to implement custom redirects in the E-commerce Online SDK, using a sample use case involving category page URLs.
+This guide outlines how to implement redirects to canonical URLs for category and product detail pages using the Dynamics 365 Commerce Online SDK. This ensures that users and search engines consistently access the clean, intended version of each page.  
+## Why Are Canonical URLs Important? 
 
-## Why use custom redirects?
+In the e-commerce SDK, category and product pages can be accessed through URLs that include unnecessary or random segments. While these URLs are technically valid, they can lead to - 
 
-As part of the e-commerce SDK, we provide customers with the flexibility to build and customize their own sites. By default, category and product pages can contain arbitrary or random values in their URLs. Although these URLs function correctly, they may not meet customer expectations for a clean and professional user experience. Implementing custom redirects helps ensure clean URLs, resulting in an improved user experience. 
+- Duplicate content issues  
+
+- Poor SEO performance  
+
+- Confusing user experience
+
+Redirecting to canonical URLs helps maintain a consistent structure, improves search engine indexing, and enhances overall site usability.   
 
 ## Prerequisites
 
 - A working Dynamics 365 Commerce online SDK environment.
 - Familiarity with extending modules.
 
+## How Canonical Redirects Work? 
 
-## Implementing an HTTP Redirect within a Module 
+The canonical url redirects works in following manner -  
+
+- Detect when the requested URL does not match the canonical format.  
+
+- Throw an instance of HttpRedirectException with the correct URL set in the Location property.  
+
+- This halts further rendering and initiates a redirection to the canonical URL.  
+
+
+**Example**: Redirecting a Category Page if it is accessed via a non-canonical URL, the module should identify the discrepancy and redirect to the correct version.  
+
+Canonical URL: https://www.fabrikam.com/womens-clothing/45678.p 
+
+Requested URL:https://www.fabrikam.com/womens-clothing/unecessaryparameter/45678.p  
+
+In this case, the module detects the extra segment (unnecessary parameter) and issues a redirect to the clean, canonical URL. 
+
+
+## Implementing within a Module 
 
 To implement a custom redirect within a module, throw an instance of the HttpRedirectException at the appropriate location in the module. This action halts the rendering of subsequent modules and initiate a redirect to the URL specified in the Location property of the HttpRedirectException. 
 
-### Example: Redirection of category pages to their canonical URL 
-
-If the category page request URL differs from its canonical URL, issue a redirect to the canonical version. For example:
-
-Request URL: https://www.fabrikam.com/womens-clothing/garbagevalue/dresses
-
-Canonical URL: https://www.fabrikam.com/womens-clothing/dresses
-
-In this case, the module detects the mismatch and triggers a redirect to the clean canonical URL.
 
 ## Solution Approach
 
