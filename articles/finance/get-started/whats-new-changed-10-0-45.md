@@ -25,6 +25,7 @@ This article lists the features that are new or changed for Microsoft Dynamics 3
 - **General availability of release (auto-update):** October 2025
 
 ## Features included in this release
+This section contains a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
@@ -107,8 +108,6 @@ The following table lists the features that are turned on by default in version 
 |Enable external tax solution providers for Tax Calculation |Mandatory |Tax|
 
 
-
-
 ## Features removed from Feature management
 
 The following table lists the features that were removed from Feature management in version 10.0.45.
@@ -149,9 +148,3 @@ Wondering about upcoming and recently released capabilities in any of our busine
 
 Check out [Dynamics 365 and industry clouds: 2025 release wave 1 plan](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
 
-
-
-
-
-
-This section contains a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
