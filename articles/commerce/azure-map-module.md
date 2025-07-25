@@ -13,7 +13,7 @@ ms.custom:
   - bap-template
 ---
 
-# Azure Maps module
+# Azure Maps module (Preview)
 
 [!include [banner](includes/banner.md)]
 
