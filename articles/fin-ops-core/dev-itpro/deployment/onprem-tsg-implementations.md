@@ -4,7 +4,7 @@ description: Learn scripts that you can use to resolve issues in on-premises env
 author: faix
 ms.author: osfaixat
 ms.topic: upgrade-and-migration-article
-ms.date: 12/02/2024
+ms.date: 07/25/2025
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak
 audience: Developer
@@ -133,7 +133,7 @@ Write-Output "TSG SysClassRunner script succeeded"
 
 ## <a name="frdeployer"></a>TSG\_UpdateFRDeployerConfig.ps1
 
-The following script is used to fix an issue that occurs when Financial Reporting is deployed in some versions of the platform. For more information about this issue, see [Couldn't load file or assembly EntityFramework](troubleshoot-on-prem.md#FREntityFramework).
+The following script is used to fix an issue that occurs when Financial reporting is deployed in some versions of the platform. For more information about this issue, see [Couldn't load file or assembly EntityFramework](troubleshoot-on-prem.md#FREntityFramework).
 
 ```powershell
 param (
@@ -306,7 +306,7 @@ The following script is used to change the account the AOS runs under from an Ac
 
 > [!NOTE]
 > This script can only be used starting with version 10.0.17.
-> You need to reinstall the printers on each AOS node as they are not available to the gMSA account. For more information, see [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md).
+> You need to reinstall the printers on each AOS node as they aren't available to the gMSA account. For more information, see [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md).
 > This script has been updated to work with Application version 10.0.32, but also works with older Application versions.
 
 ```powershell
@@ -432,7 +432,7 @@ Write-Output "Successfully updated the configuration and enabled DixfService."
 
 ## <a name="disableMR"></a>TSG\_DisableMRDeployment.ps1
 
-The following script is used to prevent the Financial Reporting service from being deployed.
+The following script is used to prevent the Financial reporting service from being deployed.
 
 ```powershell
 param (
@@ -463,10 +463,10 @@ Write-Host "Finished Disabling FinancialReporting component."
 
 ## <a name="SSRSEnableHTTPS"></a>TSG\_SSRSEnableHTTPS.ps1
 
-The following script can be used for older environments to configure SSRS with HTTPS and enbable the gMSA account that is used in new configurations.
+The following script can be used for older environments to configure SSRS with HTTPS and enable the gMSA account that's used in new configurations.
 
 >[!NOTE]
->If you have used an IP address in LCS for your SSRS server, you'll need to change that to the Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed on the Environment page then Maintain > Update Settings
+>If you have used an IP address in LCS for your SSRS server, you need to change that to the Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed on the **Environment** page then **Maintain** > **Update settings**.
 
 ```powershell
 param (
@@ -531,11 +531,10 @@ Write-Output "Successfully updated the configuration HTTPS (443) for Reporting S
 
 ## <a name="SSRSIdentityClient"></a>TSG\_UpdateSSRSIdentityClient.ps1
 
-The following script addresses an issue where the D365 Reporting Services extensions fail to install. This problem arises due to the version of Microsoft.Identity.Client bundled with D365. During installation, the Reporting Services configuration updates the SSRS DLLs and configuration files with outdated binding redirect versions, leading to compatibility issues.
+The following script addresses an issue where the Dynamics 365 Reporting services extensions fail to install. This problem arises due to the version of Microsoft.Identity.Client bundled with Dynamics 365. During installation, the Reporting services configuration updates the SSRS DLLs and configuration files with outdated binding redirect versions, leading to compatibility issues.
 
 > [!NOTE]
->
-> The script relies on WinRM for remote execution. If you're unable to run PowerShell scripts remotely, you can extract the embedded script content from the $scriptContent variable and save it locally on your BI nodes as LBDUpdateSSRSClientIdentity.ps1. In that case, you'll need to run the script manually on each BI node during deployment.
+> The script relies on WinRM for remote execution. If you're unable to run PowerShell scripts remotely, you can extract the embedded script content from the $scriptContent variable and save it locally on your BI nodes as LBDUpdateSSRSClientIdentity.ps1. In that case, you need to run the script manually on each BI node during deployment.
 
 ```PowerShell
 #
