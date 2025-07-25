@@ -1,6 +1,6 @@
 ---
 title: Redirecting to Canonical URLs for Category and Product Pages in the Online SDK (preview)
-description: Learn how to implement a canonical redirect for category and product pages by extending modules in the online SDK.
+description: Learn how to redirect to canonical url for category and product pages by extending modules in the online SDK.
 author: krishnabh
 ms.date: 07/24/2025
 ms.topic: how-to
