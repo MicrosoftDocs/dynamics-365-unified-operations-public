@@ -1,23 +1,22 @@
 ---
 title: VAT setup details for VAT declarations in the United Kingdom
-description: Learn about the value-added tax (VAT) setup for VAT declarations in the United Kingdom with a process on country/region type in foreign trade parameters.
+description: Learn how to set up value-added tax (VAT) for VAT declarations in the United Kingdom in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 07/31/2025
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-08-03
-ms.dyn365.ops.version: AX 10.0.22
 ---
 
 # VAT setup details for VAT declarations in the United Kingdom
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides details about the value-added tax (VAT) setup for VAT declarations in the United Kingdom (UK).
+This article explains how to set up value-added tax (VAT) for VAT declarations in the United Kingdom (UK) in Microsoft Dynamics 365 Finance.
 
 Information about the administration of VAT in the UK can be found on the official website for the tax authority of the UK, [Her Majesty's Revenue and Customs (HMRC)](https://www.gov.uk/topic/business-tax/vat).
 
@@ -47,19 +46,23 @@ The VAT return for the UK consists of the following boxes:
 
 In Microsoft Dynamics 365 Finance, you must complete the following setup to ensure that VAT returns are correctly calculated.
 
-## Country/region type in Foreign trade parameters
+## Configure country/region type
 
-1. Go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
-2. On the **Countries/regions properties** FastTab, set the country/region of the current legal entity to **Domestic**.
-3. If your current legal entity is in Northern Ireland, set the country/region of EU countries/regions that participate in EU trade with the current legal entity to **EU**. For each country/region, identify the country/region code for foreign trade purposes.
-4. Set the country/region of all other countries/regions that do business with the current legal entity to **Third country/region**.
+To configure the country/region type, follow these steps.
 
-## Company tax registration in customer invoices
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Foreign trade parameters**.
+1. On the **Countries/regions properties** FastTab, set the country/region of the current legal entity to **Domestic**.
+1. If your current legal entity is in Northern Ireland, set the country/region of EU countries/regions that participate in EU trade with the current legal entity to **EU**. For each country/region, identify the country/region code for foreign trade purposes.
+1. Set the country/region of all other countries/regions that do business with the current legal entity to **Third country/region**.
+
+## Enable the Company tax registration in customer invoices feature
 
 If your company is in Northern Ireland and provides services to counterparties in the EU, or if you trade in goods from locations in England, Scotland, Wales, and Northern Ireland, enable and use the **Company tax registration in customer invoices** feature.
 
-1. Go to **Workspaces** > **Feature management**.
-2. In the feature list, find and select, **Company tax registration in customer invoices**, and then select **Enable**.
+To enable the **Company tax registration in customer invoices** feature, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Workspaces** \> **Feature management**.
+1. In the feature list, find and select, **Company tax registration in customer invoices**, and then select **Enable**.
 
 For more information about feature management and available options, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -75,35 +78,45 @@ To use the **Company tax registration in customer invoices** feature, set up the
 
 When the **Company tax registration in customer invoices** feature is enabled, the registration type, or the value in the **Primary for country** field, is associated with the VAT ID registration category. The registration type is used to define the tax registration number for the registration ID of the legal entity. This number is used as the default value in the **Tax registration number** field on sales orders during invoicing, packing slip posting, and project invoice proposal posting.
 
-## Sales tax authorities
+## Set up sales tax authorities
 
-1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**.
-2. Select **New** to create a record, and specify the parameters of the tax authority. For more information, see [Set up sales tax authorities](../../general-ledger/tasks/set-up-sales-tax-authorities.md).
-3. In the **Report layout** field, select **Default**.
+To set up sales tax authorities, follow these steps.
 
-## Sales tax settlement periods
+1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**.
+1. Select **New** to create a record, and specify the parameters of the tax authority. For more information, see [Set up sales tax authorities](../../general-ledger/tasks/set-up-sales-tax-authorities.md).
+1. In the **Report layout** field, select **Default**.
 
-1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax settlement periods**.
-2. Select **New** to create a record, and specify the parameters of the sales tax settlement period. For more information, see [Set up sales tax settlement periods](../../general-ledger/tasks/set-up-sales-tax-settlement-periods.md).
-3. Make sure that the sales tax settlement periods that you create correlate with the VAT obligation periods that are specified for your company's account in HMRC.
+## Set up sales tax settlement periods
 
-## Ledger posting groups
+To set up sales tax settlement periods, follow these steps.
 
-1. Go to **Tax** > **Setup** > **Sales tax** > **Ledger posting groups**.
-2. Select **New** to create a record, and specify the parameters of the ledger posting group to define the VAT posting rules in your legal entity. The posting type of general ledger accounts for VAT should be **Sales tax**. For more information, see [Set up Ledger posting groups for sales tax](../../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md).
+1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
+1. Select **New** to create a record, and specify the parameters of the sales tax settlement period. For more information, see [Set up sales tax settlement periods](../../general-ledger/tasks/set-up-sales-tax-settlement-periods.md).
+1. Make sure that the sales tax settlement periods that you create correlate with the VAT obligation periods that are specified for your company's account in HMRC.
 
-## Sales tax groups
+## Set up ledger posting groups
+
+To set up ledger posting groups, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Ledger posting groups**.
+1. Select **New** to create a record, and specify the parameters of the ledger posting group to define the VAT posting rules in your legal entity. The posting type of general ledger accounts for VAT should be **Sales tax**. For more information, see [Set up Ledger posting groups for sales tax](../../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md).
+
+## Set up sales tax groups
 
 Create sales tax groups for the different types of business operations that are applicable to your company. These operation types can include, for example, **Accounts payable Domestic**, **Accounts payable Third country/region**, **Accounts receivable Domestic**, **Accounts receivable Third country/region**, **Reverse charge VAT**.
 
-1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**.
-2. Select **New** to create a record, and specify the parameters of the sales tax group. For more information, see [Set up sales tax groups and item sales tax groups](../../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md).
+To set up sales tax groups, follow these steps.
 
-## Item sales tax groups
+1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax groups**.
+1. Select **New** to create a record, and specify the parameters of the sales tax group. For more information, see [Set up sales tax groups and item sales tax groups](../../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md).
 
-1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Item sales tax groups**.
-2. Select **New** to create a record, and specify the parameters of the item sales tax group. For more information, see [Set up sales tax groups and item sales tax groups](../../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md).
-3. Specify the reporting type for the item sales tax group. For the reporting types that are applicable to the business operations of your company, more than three item sales tax groups are required. You can select among the following groups:
+## Set up item sales tax groups
+
+To set up item sales tax groups, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Item sales tax groups**.
+1. Select **New** to create a record, and specify the parameters of the item sales tax group. For more information, see [Set up sales tax groups and item sales tax groups](../../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md).
+1. Specify the reporting type for the item sales tax group. For the reporting types that are applicable to the business operations of your company, more than three item sales tax groups are required. You can select among the following groups:
 
     - Full (Reporting type = Item)
     - Full (Reporting type = Service)
@@ -113,14 +126,16 @@ Create sales tax groups for the different types of business operations that are 
     - Zero (Reporting type = Service)
     - Reverse charge (Reporting type = Empty)
 
-## Sales tax codes
+## Set up sales tax codes
 
-1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
-2. Select **New** to create a record, and specify the parameters of the sales tax code.
-3. In the **Sales tax currency** field, select **GBP**. For more information, see [Set up sales tax codes](../../general-ledger/tasks/set-up-sales-tax-codes.md).
-4. In the **Country/region** field, select the country/region type that the tax code will be used for. For sales tax codes used to post intra-community dispatches of goods from Northern Ireland to EU Member States, in **Country/Region type** field, select **EU**. For other operations, select **Domestic** or **Third** depending on whether the sales tax code will be used for posting domestic operations or operations with counterparties in other countries/regions.
-5. For reverse charge VAT operations, create two sales tax codes, one that has a negative rate and one that has a positive rate. For more information, see [Reverse charge mechanism for VAT/GST scheme](../global/emea-reverse-charge.md). As of January 1, 2021, a “reverse charge” approach can be used for acquisitions that companies in the United Kingdom make from counterparties in the EU, and that can be accounted for as import VAT on a VAT Return. This accounting is also known as *postponed VAT accounting*. 
-6. Distribute the new sales tax codes into sales tax groups and item sales tax groups. Make sure that each sales tax code is added to an item sales tax group and a sales tax group, and that the required fields are set on the **Setup** FastTab of the **Sales tax groups** page. The required fields include:
+To set up sales tax codes, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
+1. Select **New** to create a record, and specify the parameters of the sales tax code.
+1. In the **Sales tax currency** field, select **GBP**. For more information, see [Set up sales tax codes](../../general-ledger/tasks/set-up-sales-tax-codes.md).
+1. In the **Country/region** field, select the country/region type that the tax code will be used for. For sales tax codes used to post intra-community dispatches of goods from Northern Ireland to EU Member States, in **Country/Region type** field, select **EU**. For other operations, select **Domestic** or **Third** depending on whether the sales tax code will be used for posting domestic operations or operations with counterparties in other countries/regions.
+1. For reverse charge VAT operations, create two sales tax codes, one that has a negative rate and one that has a positive rate. For more information, see [Reverse charge mechanism for VAT/GST scheme](../global/emea-reverse-charge.md). As of January 1, 2021, a “reverse charge” approach can be used for acquisitions that companies in the United Kingdom make from counterparties in the EU, and that can be accounted for as import VAT on a VAT Return. This accounting is also known as *postponed VAT accounting*. 
+1. Distribute the new sales tax codes into sales tax groups and item sales tax groups. Make sure that each sales tax code is added to an item sales tax group and a sales tax group, and that the required fields are set on the **Setup** FastTab of the **Sales tax groups** page. The required fields include:
 
     - **Exempt** and **Exempt code**: For VAT exempt operations.
     - **Reverse charge**: For sales tax codes that are set up for importing and reverse change operations with a negative rate.
@@ -133,19 +148,23 @@ Create sales tax groups for the different types of business operations that are 
 
 ## Set up reverse charge rules
 
-1. Go to **Tax** > **Setup** > **Parameters** > **General ledger parameters**. 
-2. On the **Reverse charge** tab, select the **Enable reverse charge** check box. 
-3. In the **Purchase order sales tax group** field, select the sales tax group created and set up for importing/reverse change operations.
+To set up reverse charge rules, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Parameters** \> **General ledger parameters**. 
+1. On the **Reverse charge** tab, select the **Enable reverse charge** checkbox. 
+1. In the **Purchase order sales tax group** field, select the sales tax group created and set up for importing/reverse change operations.
 
 For more information, see [Reverse charge mechanism for VAT/GST scheme](../global/emea-reverse-charge.md).
  
 There are several scenarios, such as postponed VAT accounting and VAT reverse charge for building and construction services, where the deemed output VAT will be accounted for on the value of the invoice and added to box 1 of the VAT return. However nothing will be entered in box 6 for the transaction. To exclude the tax base amount from box 6, you must complete the following setup. This steps in this procedure use the example of postponed VAT accounting.
 
-1. Go to **Tax** > **Setup** > **Sales tax** > **Reverse charge rules**, and select **New**.
-2. In the **Partner country/region type** field, select **Third country/region**. The same partner country/region type must be specified in the master data for related vendors.
-3. In the **Reverse charge item group** field select **All**.
-4. In the **Threshold amount** field, enter **0.00**.
-5. Select the **Empty tax base for outgoing tax** check box.
+To exclude the tax base amount from box 6, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Reverse charge rules**, and select **New**.
+1. In the **Partner country/region type** field, select **Third country/region**. The same partner country/region type must be specified in the master data for related vendors.
+1. In the **Reverse charge item group** field select **All**.
+1. In the **Threshold amount** field, enter **0.00**.
+1. Select the **Empty tax base for outgoing tax** checkbox.
 
 ## <a id="boxes"></a>Box calculation for the VAT declaration
 
@@ -155,9 +174,9 @@ The default setup of the VAT declaration that is proposed in the scope of the Ma
 |------------|-------------------|-------------------------|
 | Box 1      | VAT that is due in the period on sales and other outputs. | <p>To calculate the amount in this box, combine the tax amounts of tax transactions that are posted during the reporting period and that have the following classification values:</p><ul><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul> |
 | Box 2      | VAT that is due in the period on intra-community acquisitions of goods in Northern Ireland from EU member states. | <p>To calculate the amount in this box, combine the tax amounts of tax transactions that are posted during the reporting period, and that have a **Reporting type** value other than **Service**, a **Country/Region type** value of **EU**, and the following classification values:</p><ul><li>UseTax</li><li>UseTaxCreditNote</li></ul> |
-| Box 3      | The total VAT that is due. | Box 1 + box 2. |
+| Box 3      | The total VAT that is due. | Box 1 + box 1. |
 | Box 4      | VAT that is reclaimed in the period on purchases and other inputs, including acquisitions from the EU. | <p>To calculate the amount in this box, combine the tax amounts of tax transactions that are posted during the reporting period and that have the following classification values:</p><ul><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li><li>PurchaseExempt</li><li>PurchaseExemptCreditNote</li><li>UseTax</li><li>UseTaxCreditNote</li></ul> |
-| Box 5      | The net VAT to pay to HMRC or to reclaim. | The absolute value of box 3 – box 4. |
+| Box 5      | The net VAT to pay to HMRC or to reclaim. | The absolute value of box 3 – box 1. |
 | Box 6      | The total value of sales and all other outputs, excluding any VAT. | <p>To calculate the amount in this box, combine the tax base amounts of tax transactions that are posted during the reporting period and that have the following classification values:</p><ul><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li><li>SaleExempt</li><li>SalesExemptCreditNote</li></ul> |
 | Box 7      | The total value of purchases and all other inputs, excluding any VAT. | <p>To calculate the amount in this box, combine the tax base amounts of tax transactions that are posted during the reporting period and that have the following classification values:</p><ul><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li><li>PurchaseExempt</li><li>PurchaseExemptCreditNote</li><li>UseTax</li><li>UseTaxCreditNote</li></ul> |
 | Box 8      | The total value of intra-community dispatches of goods and related costs, excluding VAT, from Northern Ireland to EU member states. | <p>To calculate the amount in this box, combine the tax base amounts of tax transactions that are posted during the reporting period, and that have a **Reporting type** other than **Service**, a **Country/Region type** value of **EU**, and the following classification values:</p><ul><li>SaleExempt</li><li>SalesExemptCreditNote</li><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul> |
@@ -169,33 +188,42 @@ This section provides details about sales tax setup and reporting in the VAT 100
 
 ### Domestic purchase
 
+To run through the domestic purchase example, follow these steps.
+
 1. Set up a sales tax code, a sales tax group, and an item sales tax group.
 
     ![Sales tax setup for Domestic purchase.](../media/uk-mtd-setup-vatp20.png)
 
-2. Post a vendor invoice and generate the VAT 100 report. 
-3. Verify the amounts in box 4 and box 7.
+1. Post a vendor invoice and generate the VAT 100 report. 
+1. Verify the amounts in box 4 and box 7.
 
     ![VAT 100 report for Domestic purchase.](../media/uk-mtd-report-vatp20.png)
 
 ### Domestic sale
 
+To run through the domestic sale example, follow these steps.
+
 1. Set up a sales tax code, a sales tax group, and an item sales tax group.
 
     ![Sales tax setup for Domestic sale.](../media/uk-mtd-setup-vats20.png)
 
-2. Post a free text invoice and generate the VAT 100 report. 
-3. Verify the amounts in box 1 and box 6.
+1. Post a free text invoice and generate the VAT 100 report. 
+1. Verify the amounts in box 1 and box 6.
 
     ![VAT 100 report for Domestic sale.](../media/uk-mtd-report-vats20.png)
 
 ### Domestic reverse charge for services
 
+To run through the domestic reverse charge for services example, follow these steps.
+
 1. Set up a sales tax code, a sales tax group, and an item sales tax group.
 
     ![Sales tax setup for domestic reverse charge.](../media/uk-mtd-setup-rch.png)
 
-2. Post a vendor invoice and generate the VAT 100 report. 
-3. Verify the amounts in box 1, 4, 6, and box 7.
+1. Post a vendor invoice and generate the VAT 100 report. 
+1. Verify the amounts in box 1, 4, 6, and box 7.
 
     ![VAT 100 report for export.](../media/uk-mtd-report-rch.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
