@@ -1,22 +1,24 @@
 ---
 title: Use serial numbering (preview)
-description: Learn how to use serial numbering for packing slips and invoices in the Republic of Türkiye. 
+description: Learn how to use serial numbering for packing slips and invoices for the Republic of Türkiye in Microsoft Dynamics 365 Finance.
 author: v-omerorhan 
 ms.author: v-omerorhan 
-ms.topic: overview 
-ms.date: 04/17/2025 
+ms.topic: how-to
+ms.date: 07/31/2025 
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye 
 ms.search.validFrom: 2020-02-03 
 ms.search.form: SerialNumbering 
-ms.dyn365.ops.version: 10.0.9 
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
+ms.custom: 
+  - bap-template
 ---
 
-# Use serial numbering (preview)
+# Use serial numbering
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+This article explains how to use serial numbering for packing slips and invoices for the Republic of Türkiye in Microsoft Dynamics 365 Finance.
 
 In the Republic of Türkiye, specific number sequences are required for packing slips and invoices to ensure legal compliance and accurate tracking. To manage and track numbers in a system, you must follow a set of rules for number sequences. These rules ensure that each number is unique, in order, and easy to understand.
 
@@ -88,18 +90,18 @@ The serial number format is then formed by sequentially combining the values of 
 
 For example, to generate a 16-digit preprinted serial number (such as *AAA2025000000001*) that complies with legal regulations, follow these steps.
 
-1. Go to **Accounts payable** or **Accounts receivable** \> **Setup** \> **Preprinted serial numbers** \> **Parameters**.
+1. In Dynamics 365 Finance, go to **Accounts payable** or **Accounts receivable** \> **Setup** \> **Preprinted serial numbers** \> **Parameters**.
 1. On the **Serial number formats** tab, select **New**.
 1. In the **Format name** field, enter a name.
-1. In the **1.field name** field, select *Serial prefix*.
+1. In the **1.field name** field, select **Serial prefix**.
 1. Leave the **1.separator** field blank.
-1. In the **2.field name** field, select *Fiscal year*.
+1. In the **2.field name** field, select **Fiscal year**.
 1. Leave the **2.separator** field blank.
-1. In the **3.field name** field, select *Number*.
+1. In the **3.field name** field, select **Number**.
 1. Leave the **3.separator** field blank.
-1. In the **4.field name** field, select *None*.
+1. In the **4.field name** field, select **None**.
 1. Leave the **4.separator** field blank.
-1. In the **5.field name** field, select *None*.
+1. In the **5.field name** field, select **None**.
 1. Select **Save**.
 
 In this case, the serial number format is as follows:
@@ -124,27 +126,27 @@ The following table describes the fields that are used to set up a serial prefix
 > [!NOTE]
 > A separate number sequence group must be assigned to each serial prefix. If more than one serial prefix uses the same number sequence group, the integrity of the number series is disrupted.
 
-After you define a serial number format, you should set up a serial prefix for the document type. For example, for the serial number format that you created for a 16-digit preprinted serial number (such as *AAA2025000000001*), follow these steps.
+After you define a serial number format, you should set up a serial prefix for the document type. 
 
-1. Go to **Accounts payable** or **Accounts receivable** \> **Setup** \> **Preprinted serial numbers** \> **Preprinted serial numbers**.
+For example, to set up a serial prefix for the document type for the serial number format that you created for a 16-digit preprinted serial number (such as *AAA2025000000001*), follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts payable** or **Accounts receivable** \> **Setup** \> **Preprinted serial numbers** \> **Preprinted serial numbers**.
 1. In the **Document type** field, select the document type to create the serial prefix for.
 1. Select **New**.
-1. In the **Serial prefix** field, enter *AAA* as the three-digit prefix.
+1. In the **Serial prefix** field, enter "AAA" as the three-digit prefix.
 1. In the **Number sequence group** field, select the number sequence group that you created for the serial prefix.
 1. Select **Save**.
 1. In the **Reference** section, select the number sequence code that was created for the number sequence group. To create a number sequence, follow these steps:
-
     1. Go to **Organization administration** \> **Number sequences** \> **Number sequences**.
     1. In the **New** section, select **Number sequence**.
     1. In the **Number sequence code** field, enter a code for the new number sequence.
     1. In the **Name** field, enter a name for the number sequence.
     1. On the **Scope parameters** FastTab, in the **Scope** field, select *Company*. Then, in the **Company** field, select your company.
-    1. On the **Segments** FastTab, define a single segment where the **Segment** field is set to *Alphanumeric*. In the **Value** field, enter 16 number signs (*\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#*).
+    1. On the **Segments** FastTab, define a single segment where the **Segment** field is set to **Alphanumeric**. In the **Value** field, enter 16 number signs ("\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#").
     1. Select **Save**.
-
 1. In the **Serial type** field, select the relevant serial type.
-1. In the **Fiscal year** field, enter *2025*.
-1. In the **Number of digits** field, enter *9*.
+1. In the **Fiscal year** field, enter "2025".
+1. In the **Number of digits** field, enter "9".
 1. In the **Serial format** field, select the serial number format that you created.
 1. Select the **Default prefix** option if the serial prefix is the default serial prefix.
 1. Select **Save**.
@@ -158,9 +160,8 @@ Use the **Open**, **Closed**, and **Cancelled** tabs to manage and track the sta
 | Cancelled | This tab lists preprinted serial numbers that have been invalidated or voided. These serial numbers aren't available for use and are marked as canceled because of errors, duplicates or other reasons. However, they are retained in the system for audit and compliance purposes. You can change the status of a preprinted serial number from *Cancelled* to *Open* by using the **Open** button. |
 
 > [!NOTE]
-> If an error occurs during the posting process, the system creates the preprinted serial number and assigns *Free* status to it on the **Open** tab. After the errors are fixed, and posting is completed, the system reuses the preprinted serial number and moves it to the **Closed** tab.
->
-> If the intended posting date is earlier than the date of the last posted document for the same serial prefix, the system prevents the posting and shows an error message. In this case, you must select a different serial prefix and then reattempt the posting.
+> - If an error occurs during the posting process, the system creates the preprinted serial number and assigns *Free* status to it on the **Open** tab. After the errors are fixed, and posting is completed, the system reuses the preprinted serial number and moves it to the **Closed** tab.
+> - If the intended posting date is earlier than the date of the last posted document for the same serial prefix, the system prevents the posting and shows an error message. In this case, you must select a different serial prefix and then reattempt the posting.
 
 ## Use a serial prefix
 
@@ -182,7 +183,7 @@ When you want to create a packing slip for a *sales order*, you must select the 
 
 To assign a serial prefix in a packing slip for a sales order, follow these steps.
 
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Select the sales order to create a packing slip for.
 1. On the Action Pane, on the **Pick and pack** tab, in the **Generate** group, select **Packing slip**.
 1. On the **Packing slip posting** page, on the **Overview** FastTab, in the **Serial prefix** field, select the serial prefix.
@@ -200,7 +201,7 @@ When you want to create a packing slip for a *sales return order*, you can't sel
 
 To create a packing slip for a sales return order, follow these steps.
 
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Select the sales order to create a packing slip for.
 1. On the Action Pane, on the **Pick and pack** tab, in the **Generate** group, select **Packing slip**.
 1. On the **Packing slip posting** page, in the **Serial number** field, enter to the packing slip number from the document that you received from the customer.
@@ -214,7 +215,7 @@ When you want to create a product receipt for a *purchase order*, you can't sele
 
 To create a product receipt for a purchase order, follow these steps.
 
-1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Select the purchase order to create a product receipt for.
 1. On the Action Pane, on the **Receive** tab, in the **Generate** group, select **Product receipt**.
 1. On the **Posting product receipt** page, in the **Product receipt** field, enter the product receipt number from the document that you received from the vendor.
@@ -224,7 +225,7 @@ When you want to create a product receipt for a *purchase return order*, you mus
 
 To assign a serial prefix in a product receipt for a purchase return order, follow these steps.
 
-1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Select the purchase order to create a product receipt for.
 1. On the Action Pane, on the **Receive** tab, in the **Generate** group, select **Product receipt**.
 1. On the **Product receipt posting** page, on the **Overview** FastTab, in the **Serial prefix** field, select the serial prefix.
@@ -246,7 +247,7 @@ When you want to create a free text invoice that has a *positive* amount, you mu
 
 To assign a serial prefix in a free text invoice that has a positive amount, follow these steps.
 
-1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. Select the free text invoice to post.
 1. On the **Free text invoice header** FastTab, in the **Serial prefix** field, select the serial prefix.
 1. Select **Post**.
@@ -257,7 +258,7 @@ When you want to create a free text invoice that has a *negative* amount, you ca
 
 To create a free text invoice that has a negative amount, follow these steps.
 
-1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. Select the free text invoice to post.
 1. On the **Free text invoice header** FastTab, in the **Preprinted invoice** field, enter the invoice number that the customer provided.
 1. Select **Post**.
@@ -270,7 +271,7 @@ When you want to create an invoice for a *sales order*, you must select the seri
 
 To assign a serial prefix in an invoice for a sales order, follow these steps.
 
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Select the sales order to create an invoice for.
 1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
 1. On the **Posting invoice** page, on the **Overview** FastTab, in the **Serial prefix** field, select the serial prefix.
@@ -282,7 +283,7 @@ When you want to create an invoice for a *sales return order*, you can't select 
 
 To create an invoice for a sales return order, follow these steps.
 
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Select the sales order to create an invoice for.
 1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
 1. On the **Posting invoice** page, in the **Serial number** field, enter the invoice number from the document that you received from the customer.
@@ -296,7 +297,7 @@ When you want to create an invoice for a *purchase order*, you can't select the 
 
 To create an invoice for a purchase order, follow these steps.
 
-1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Select the purchase order to create an invoice for.
 1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
 1. On the **Vendor invoice** page, on the **Vendor invoice header** FastTab, in the **Number** field, enter the invoice number from the document that you received from the vendor.
@@ -306,7 +307,7 @@ When you want to create an invoice for a *purchase return order*, you must selec
 
 To assign a serial prefix in an invoice for a purchase return order, follow these steps.
 
-1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Select the purchase order to create an invoice for.
 1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
 1. On the **Vendor invoice** page, on the **Vendor invoice header** FastTab, in the **Serial prefix** field, select the serial prefix.
@@ -332,12 +333,10 @@ This section explains how to use a serial prefix in general journals.
 When you want to create a customer invoice in general journals, use of the serial prefix depends on whether the account type is *Customer* or *Vendor*, and whether the amount of the account is a debit or a credit.
 
 - If the account type is *Customer*:
-
     - If the customer account has a *credit* amount, you can't select the serial prefix. Instead, you must set the **Invoice** field to the invoice number from the document that you received from the customer.
     - If the customer account has a *debit* amount, you must select the serial prefix in the **Serial prefix** field.
 
 - If the account type is *Vendor*:
-
     - If the vendor account has a *credit* amount, you can't select the serial prefix. Instead, you must set the **Invoice** field to the invoice number that the vendor provided.
     - If the vendor account has a *debit* amount, you must select the serial prefix in the **Serial prefix** field.
 
@@ -348,5 +347,9 @@ After the posting process, you can find the preprinted serial number that is ass
 >
 > - If the **Default prefix** option on the **Preprinted serial numbers** page is selected for a serial prefix for *Invoice* document type, the serial prefix is automatically selected in the **Serial prefix** field.
 > - If the **Default prefix** option isn't selected, the serial prefix must be manually selected in the **Serial prefix** field.
+
+
+
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
