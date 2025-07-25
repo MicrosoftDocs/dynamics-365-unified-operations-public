@@ -46,7 +46,7 @@ The canonical url redirects works in following manner -
 - This halts further rendering and initiates a redirection to the canonical URL.  
 
 
-**Example**: If a user accesses a Category Page through a non-canonical URL, the module should detect and redirect them to the correct canonical URL. 
+**Example**: If a user accesses a **Product** Page through a non-canonical URL, the module should detect and redirect them to the correct canonical URL. 
 
 Canonical URL: https://www.fabrikam.com/womens-clothing/45678.p 
 
