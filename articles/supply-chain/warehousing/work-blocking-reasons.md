@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-*Work blocking* provides a standard way to block or unblock warehouse work. The system prevents blocked work from being processed until it's unblocked. You can block work records automatically when certain conditions are met you can also block them manually at any time. Multiple reasons can cause work to be blocked, and in some cases, a single work record can be blocked for several reasons at once. The system provides visibility into the reasons why a work record is blocked. You can only block work records with the status *Open*. This article describes the work blocking functionality and reasons.
+*Work blocking* provides a standard way to block or unblock warehouse work. The system prevents blocked work from being processed until it's unblocked. You can block work records automatically when certain conditions are met and you can also block them manually at any time. Multiple reasons can cause work to be blocked, and in some cases, a single work record can be blocked for several reasons at once. The system provides visibility into the reasons why a work record is blocked. You can only block work records with the status *Open*. This article describes the work blocking functionality and reasons.
 
 ## Supported work blocking reasons
 
