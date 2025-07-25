@@ -1,14 +1,14 @@
 ---
 title: Purchase agreements
-description: Learn about purchase agreements, which are contracts that commits an organization to buy a specified quantity or amount by using multiple purchase orders over time.
+description: Learn about purchase agreements, which are contracts that commit an organization to buy a specified quantity or amount by using multiple purchase orders over time.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: how-to
-ms.date: 06/07/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+- bap-template
 ---
 
 # Purchase agreements
@@ -21,9 +21,9 @@ Purchase agreements can apply to a specific quantity of a product, a specific cu
 
 On the **Purchase agreements** page, you can create, apply, and follow up on purchase agreements that exist between your organization and your vendors. For example, after you create a purchase agreement, you can order directly from it. Each purchase agreement has a validity period that is defined by the person who creates the purchase agreement. The receipt date of a purchase must be within the effective dates of this validity period.  
 
-After you create a purchase agreement, you must activate it before it becomes effective. To activate a purchase agreement, set the **Mark agreement as effective** option to **Yes**.
+After you create a purchase agreement, you must activate it before it becomes effective. To activate a purchase agreement, set the **Mark agreement as effective** option to *Yes*.
 
-To prevent your purchase agreement from being used and confirmed, mark the agreement status as **Closed**. You can still update the status to **Effective** any time after making this change.
+To prevent your purchase agreement from being used and confirmed, mark the agreement status as *Closed*. You can still update the status to *Effective** at any time after making this change.
 
 ## Responsible workers on purchase agreements
 
@@ -40,7 +40,7 @@ Each line in a purchase agreement is a commitment to buy something. You can use 
 
 ## Pricing terms for purchase agreements
 
-Pricing terms can vary, depending on the type of commitment. The pricing terms from purchase agreements override any other pricing terms that are set up for trade agreements. The following table describes the price-related fields that are affected by each commitment type. Fields that contain **Yes** can be updated on an order line.
+Pricing terms can vary, depending on the type of commitment. The pricing terms from purchase agreements override any other pricing terms that are set up for trade agreements. The following table describes the price-related fields that are affected by each commitment type. Fields that contain *Yes* can be updated on an order line.
 
 | Commitment type                   | Unit price | Price unit | Discount percent | Cash discount amount |
 |-----------------------------------|------------|------------|------------------|----------------------|
@@ -80,7 +80,7 @@ In some situations where POs are created indirectly, you can control whetherSupp
 
 ## Matching policy on purchase agreements
 
-You can define a line matching policy on the header of the purchase agreement. This line matching policy will respect the accounts payable parameters line matching policy when the **Allow matching policy override** field on the **Accounts payable parameters** page (on the **Price and quantity matching** FastTab) is set to **Higher than company policy**. Documents that reference the purchase agreement will use the line matching policy that's defined on the purchase agreement header unless otherwise defined on the corresponding item, item and vendor, or category purchasing policy.
+You can define a line matching policy on the header of the purchase agreement. This line matching policy will respect the accounts payable parameters line matching policy when the **Allow matching policy override** field on the **Accounts payable parameters** page (on the **Price and quantity matching** FastTab) is set to *Higher than company policy*. Documents that reference the purchase agreement will use the line matching policy that's defined on the purchase agreement header unless otherwise defined on the corresponding item, item and vendor, or category purchasing policy.
 
 ## Purchase agreements and intercompany trade
 

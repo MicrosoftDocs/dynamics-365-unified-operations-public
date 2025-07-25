@@ -3,12 +3,12 @@ title: Rebate reduction principles
 description: Learn how to set up reduction principles, which control the behavior when multiple rebates apply to the same item or transaction.
 author: sherry-zheng
 ms.author: chuzheng
-ms.topic: how-to
-ms.date: 05/15/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: TAMRebateCategory
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+- bap-template
 ---
 
 # Rebate reduction principles
@@ -21,15 +21,15 @@ The rebate reduction principle rules apply only when rebate deals overlap. There
 
 ## Manage rebate reduction principles
 
-To work with rebate reduction principles, go to **Rebate management \> Setup \> Rebate reduction principles**. Then use the buttons on the Action Pane to add and remove reduction principles as required. For each principle, set the fields as described in the following table.
+To work with rebate reduction principles, go to **Rebate management** \> **Setup** \> **Rebate reduction principles**. Then use the buttons on the Action Pane to add and remove reduction principles as required. For each principle, set the fields as described in the following table.
 
 | Field | Description |
 |---|---|
 | Rebate reduction principle | Enter a unique name for the rebate reduction principle. |
 | Description | Enter a description of the rebate reduction principle. |
 | Apply reduction | Select this check box to apply a reduction basis to rebates that belong to this rebate reduction principle. |
-| Reduction basis | If you selected the **Apply reduction** check box, select the reduction basis (*Provision*, *Rebates*, or *Both*). If you select *Both*, and if both a provision and a rebate have been posted for a previous deal, only the rebate will be applied. |
-| Exclude from reduction | If this check box is selected, provisions and rebates that belong to this rebate reduction principle will be excluded from subsequent reductions. The setting of the **Reduction basis** field doesn't apply to this setting. |
+| Reduction basis | If you selected the **Apply reduction** check box, select the reduction basis (*Provision*, *Rebates*, or *Both*). If you select *Both*, and if both a provision and a rebate have been posted for a previous deal, only the rebate is applied. |
+| Exclude from reduction | If this check box is selected, provisions and rebates that belong to this rebate reduction principle are excluded from subsequent reductions. The setting of the **Reduction basis** field doesn't apply to this setting. |
 
 ## Examples of rebate reduction principle setups
 

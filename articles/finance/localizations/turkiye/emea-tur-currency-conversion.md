@@ -1,5 +1,5 @@
 ---
-title: Currency conversion (preview)
+title: Use currency conversion
 description: Learn how to use currency conversion on free text invoices and purchase orders for the Republic of Türkiye in Microsoft Dynamics 365 Finance. 
 author: v-omerorhan 
 ms.author: v-omerorhan 
@@ -12,7 +12,7 @@ ms.search.form: CurrencyConversion
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ---
 
-# Currency conversion (preview)
+# Use currency conversion
 
 [!INCLUDE[banner](../../includes/banner.md)]
 

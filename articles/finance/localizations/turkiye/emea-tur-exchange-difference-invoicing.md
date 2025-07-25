@@ -14,7 +14,7 @@ ms.search.form: ExchangeDifferenceInvoicing
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ---
 
-# Use Exchange difference invoicing
+# Use exchange difference invoicing
 
 [!INCLUDE[banner](../../includes/banner.md)]
 

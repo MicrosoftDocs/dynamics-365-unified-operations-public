@@ -3,10 +3,12 @@ title: Net requirements and pegging information
 description: Learn about calculated net requirements and pegging information, including an outline on the various methods of opening the net requirements page.
 author: Henrikan
 ms.author: henrikan
-ms.topic: how-to
-ms.date: 7/28/2021
 ms.reviewer: kamaybac
 ms.search.form: ReqTransOverview
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+- bap-template
 ---
 
 # Net requirements and pegging information
@@ -21,9 +23,9 @@ The **Net requirements** page shows the net requirements that master planning ca
 
 You can open the **Net requirements** page in any of the following ways:
 
-- Go to **Product information management \> Products \> Released products**. Select or open a product. Then, on the Action Pane, on the **Plan** tab, in the **Requirement** group, select **Net requirements**.
-- Go to **Sales and marketing \> Sales orders \> All sales orders**. Open a sales order. Then, on the **Sales order lines** FastTab, on the toolbar, select **Product and supply \> Net requirements**.
-- Go to **Master planning \> Master planning \> Planned orders**. Select or open a planned order. Then, on the Action Pane, on the **View** tab, in the **Requirements** group, select **Requirement profile**.
+- Go to **Product information management** \> **Products** \> **Released products**. Select or open a product. Then, on the Action Pane, on the **Plan** tab, in the **Requirement** group, select **Net requirements**.
+- Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**. Open a sales order. Then, on the **Sales order lines** FastTab, on the toolbar, select **Product and supply** \> **Net requirements**.
+- Go to **Master planning** \> **Master planning** \> **Planned orders**. Select or open a planned order. Then, on the Action Pane, on the **View** tab, in the **Requirements** group, select **Requirement profile**.
 
 ## Use the Net requirements page
 
@@ -63,9 +65,9 @@ The lower section of the page provides the following tabs:
 
 The following commands are available on the Action Pane:
 
-- **Update \> Master planning** – Run master planning directly from the **Net requirements** page.
-- **Update \> Forecast planning** – Run forecast planning directly from the **Net requirements** page. Planning Optimization doesn't support this operation.
-- **Update \> Continuity scheduling** – Run continuity scheduling directly from the **Net requirements** page. Planning Optimization doesn't support this operation.
+- **Update** \> **Master planning** – Run master planning directly from the **Net requirements** page.
+- **Update** \> **Forecast planning** – Run forecast planning directly from the **Net requirements** page. Planning Optimization doesn't support this operation.
+- **Update** \> **Continuity scheduling** – Run continuity scheduling directly from the **Net requirements** page. Planning Optimization doesn't support this operation.
 
 ## Example scenario
 
@@ -76,7 +78,7 @@ This example shows how pegging information is presented on the **Net requirement
 Before you work through the scenario, prepare the following prerequisites:
 
 1. You must work on a system where the standard sample data is available, and you must set the legal entity to *USMF*.
-2. This example uses product *1000*, which is part of the USMF sample data. Make sure that this product is available, and that it is set up in the following way:
+2. This example uses product *1000*, which is part of the USMF sample data. Make sure that this product is available, and that it's set up in the following way:
 
     - **Default order type:** *Purchase order*
     - **Inventory on-hand:** *10.00*
@@ -86,9 +88,9 @@ Before you work through the scenario, prepare the following prerequisites:
 
 ### Review the calculated requirements
 
-Next, you will open the **Net requirements** page for product *1000* to review how calculated requirements correspond to each other.
+Next, you'll open the **Net requirements** page for product *1000* to review how calculated requirements correspond to each other.
 
-1. Go to **Product information management \> Products \> Released products**.
+1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Select the product that has an **Item number** value of *1000*.
 1. On the Action Pane, on the **Plan** tab, in the **Requirement** group, select **Net requirements**.
 1. On the **Net requirements** page, set the **Plan** field to *DynPlan*.
@@ -119,7 +121,7 @@ Next, you will open the **Net requirements** page for product *1000* to review h
     |---|---|---|
     | Sales order | -25.00 | -15.00 |
 
-    Because the sales order has already been partially covered, the system creates a planned purchase order for the remaining uncovered quantity.
+    Because the sales order is already partially covered, the system creates a planned purchase order for the remaining uncovered quantity.
 
     ![Pegging information for the planned purchase order](media/pegging-planned-purchase-order.png "Pegging information for the planned purchase order")
 

@@ -1,5 +1,5 @@
 ---
-title: Use e-Ledger in the Republic of Türkiye
+title: Work with e-Ledger
 description: Learn how to work with e-Ledger for the Republic of Türkiye in Microsoft Dynamics 365 Finance.
 author: v-omerorhan 
 ms.author: v-omerorhan 
@@ -12,7 +12,7 @@ ms.search.form: ELedger
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ---
 
-# Use e-Ledger in the Republic of Türkiye (preview)
+# Work with e-Ledger
 
 [!INCLUDE[banner](../../includes/banner.md)]
 

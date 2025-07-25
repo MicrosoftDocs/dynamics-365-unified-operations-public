@@ -3,12 +3,12 @@ title: Rebate management posting setup
 description: Learn how to set up posting profiles. Posting profiles are used to determine posting entries for Rebate management calculation lines.
 author: sherry-zheng
 ms.author: chuzheng
-ms.topic: how-to
-ms.date: 05/15/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: TAMRebatePosting
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+- bap-template
 ---
 
 # Rebate management posting setup
@@ -19,7 +19,7 @@ Rebate management posting profiles are used to determine posting entries for Reb
 
 This feature works across companies (legal entities). You can specify the company that provisions will be accrued to and that claims will be paid by. You can also set different provision debit accounts and write-off credit accounts per source posting company.
 
-To set up Rebate management posting profiles for customers and vendors, go to **Rebate management \> Rebate management posting setup \> Rebate management posting profiles**. The **Rebate management posting profiles** page includes a list pane that shows all your existing profiles. You can use the buttons on the Action Pane to add profiles to the list or remove them.
+To set up Rebate management posting profiles for customers and vendors, go to **Rebate management** \> **Rebate management posting setup** \> **Rebate management posting profiles**. The **Rebate management posting profiles** page includes a list pane that shows all your existing profiles. You can use the buttons on the Action Pane to add profiles to the list or remove them.
 
 The remaining sections of this article describe how to use the available fields when you create or edit a profile.
 

@@ -4,7 +4,7 @@ description: Learn about the options that you can use to configure Credit manage
 author: JodiChristiansen
 ms.author: twheeloc
 ms.topic: install-set-up-deploy
-ms.date: 05/07/2024
+ms.date: 07/23/2025
 ms.custom:  
 ms.reviewer: twheeloc 
 audience: Application User
@@ -19,6 +19,8 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 
 This article describes the options that you can use to configure Credit management to meet your business's requirements. To use Credit management features, set up the parameters on the **Credit and collections parameters** page (**Credit and collections \> Setup \> Credit and collections parameters**).
+
+As of Microsoft Dynamics 365 Finance 10.0.43 the Credit management feature has been moved to a parameter in **Accounts receivable parameters**, **Credit management** tab. By default the **Credit management** parameter is set to **Yes**. If the Credit management feature in Feature management is disabled, you see a messgage that it can't be enabled through Feature management and is controlled by the Accounts receivable parameter. You can set it to **No** in the Accounts receivable parameters if you don't want to use Credit management. 
 
 ## Credit parameters
 

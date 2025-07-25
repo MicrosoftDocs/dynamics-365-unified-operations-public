@@ -1,6 +1,6 @@
 ---
-title: Use serial numbering (preview)
-description: Learn how to use serial numbering for packing slips and invoices for the Republic of Türkiye in Microsoft Dynamics 365 Finance.
+title: Use continuous serial numbering of packing slips and invoices
+description: Learn how to use continuous serial numbering for packing slips and invoices for the Republic of Türkiye in Microsoft Dynamics 365 Finance.
 author: v-omerorhan 
 ms.author: v-omerorhan 
 ms.topic: how-to
@@ -14,11 +14,12 @@ ms.custom:
   - bap-template
 ---
 
-# Use serial numbering
+
+# Use continuous serial numbering of packing slips and invoices
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-This article explains how to use serial numbering for packing slips and invoices for the Republic of Türkiye in Microsoft Dynamics 365 Finance.
+This article explains how to use continuous serial numbering for packing slips and invoices for the Republic of Türkiye in Microsoft Dynamics 365 Finance.
 
 In the Republic of Türkiye, specific number sequences are required for packing slips and invoices to ensure legal compliance and accurate tracking. To manage and track numbers in a system, you must follow a set of rules for number sequences. These rules ensure that each number is unique, in order, and easy to understand.
 

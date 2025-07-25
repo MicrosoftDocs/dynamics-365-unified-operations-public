@@ -1995,7 +1995,7 @@
                     - name: Payment times reporting schema
                       href: localizations/australia/apac-aus-payment-times-report.md
                     - name: Customer electronic invoices
-                      href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md
+                      href: localizations/apac/apac-aus-nzl-e-invoices.md
                     - name: Taxable Payments Annual Report
                       href: localizations/australia/apac-aus-tpar.md
                 - name: Austria
@@ -2008,14 +2008,16 @@
                       href: localizations/austria/emea-aut-packing-material-fee-calculation.md
                     - name: Cross-border services report
                       href: localizations/austria/emea-aut-cross-border-services-report.md
-                    - name: Austrian Intrastat
-                      href: localizations/austria/emea-aut-intrastat.md
                     - name: Purchase duties
                       href: localizations/austria/emea-aut-purchase-duties.md
-                    - name: VAT declaration
-                      href: localizations/austria/emea-aut-vat-declaration-austria.md
+                    - name: Austrian Intrastat
+                      href: localizations/austria/emea-aut-intrastat.md
                     - name: EU sales list
                       href: localizations/austria/emea-aut-eu-sales-list.md
+                    - name: VAT declaration U30
+                      href: localizations/austria/emea-aut-vat-declaration-austria.md
+                    - name: Generate an Annual sales tax report U1
+                      href: localizations/austria/emea-aut-annual-sales-tax-report.md
                 - name: Bahrain
                   items:
                     - name: Bahrain overview
@@ -2786,6 +2788,8 @@
                       href: localizations/france/emea-fra-VAT-declaration-preview-France.md
                     - name: DAS-2 report
                       href: localizations/france/emea-fra-das2-report.md
+                    - name: Reporting on payment deadlines for customer and vendor invoices
+                      href: localizations/france/emea-fra-reporting-on-payment-deadlines.md
                 - name: Germany
                   items:
                     - name: Germany overview
@@ -3711,7 +3715,7 @@
                     - name: GST declaration form GST101A for New Zealand (NZ-00003)
                       href: localizations/new-zealand/apac-nzl-gst-declaration.md
                     - name: Customer electronic invoices
-                      href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md
+                      href: localizations/apac/apac-aus-nzl-e-invoices.md
                 - name: Nicaragua
                   items:
                     - name: Nicaragua overview
@@ -4280,14 +4284,20 @@
                       href: localizations/thailand/apac-tha-withholding-tax.md
                 - name: Türkiye
                   items:
-                  - name: Currency conversion
-                    href: localizations/turkiye/emea-tur-currency-conversion.md
-                  - name: Continuous serial numbering of packing slips and invoices (preview)
-                    href: localizations/turkiye/emea-tur-serial-numbering.md
-                  - name: Use e-Ledger in the Republic of Türkiye (preview)
-                    href: localizations/turkiye/emea-tur-e-ledger.md
-                  - name: Use Exchange difference invoicing (preview)
-                    href: localizations/turkiye/emea-tur-exchange-difference-invoicing.md
+                    - name: Türkiye overview
+                      href: localizations/turkiye/turkiye.md
+                    - name: Set up a legal entity for Türkiye
+                      href: localizations/turkiye/emea-turkiye-set-up-legal-entity.md
+                    - name: Import currency exchange rates from Central Bank of the Republic of Türkiye (CBRT)
+                      href: general-ledger/import-currency-exchange-rates.md
+                    - name: Use continuous serial numbering of packing slips and invoices
+                      href: localizations/turkiye/emea-tur-serial-numbering.md
+                    - name: Use Exchange difference invoicing
+                      href: localizations/turkiye/emea-tur-exchange-difference-invoicing.md
+                    - name: Use currency conversion
+                      href: localizations/turkiye/emea-tur-currency-conversion.md
+                    - name: Generate e-Ledger
+                      href: localizations/turkiye/emea-tur-e-ledger.md
                 - name: United Arab Emirates (UAE)
                   items:
                     - name: United Arab Emirates (UAE) overview
