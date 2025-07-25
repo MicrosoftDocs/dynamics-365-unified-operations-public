@@ -24,7 +24,7 @@ This article describes how to install the Inventory Visibility Add-in for Micros
 >
 > For useful code samples and troubleshooting guides, visit the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples).
 >
-> If you're experiencing technical issues or running into exceptions, you can get help by contacting Microsoft Support via Microsoft Dynamics Lifecycle Services or Power Platform admin center (please be sure to include your Supply Chain Management environment ID).
+> If you're experiencing technical issues or running into exceptions, you can get help by contacting Microsoft Support through Microsoft Dynamics Lifecycle Services or the Power Platform admin center. Be sure to include your Supply Chain Management environment ID when you contact them.
 
 ## Inventory Visibility prerequisites
 
@@ -202,7 +202,7 @@ To update an installed version of the Inventory Visibility Add-in to the latest 
     - If the **Status** is *Update available*, then an update is available. Continue with the next step.
 
     > [!TIP]
-    > To see which version of the add-in you are currently running, regardless of the status, open the **More application actions** menu (ellipsis button), and then select **Details**.
+    > To see which version of the add-in you're currently running, regardless of the status, open the **More application actions** menu (ellipsis button), and then select **Details**.
 
 1. If the page shows that an update is available, open the **More application actions** menu (ellipsis button), and then select **Update**.
 1. In the dialog box that appears, select the **I agree to the terms of service** checkbox, and then select **Update**.
