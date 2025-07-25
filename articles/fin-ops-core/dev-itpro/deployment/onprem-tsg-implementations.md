@@ -307,7 +307,7 @@ The following script is used to change the account the AOS runs under from an Ac
 > [!NOTE]
 > This script can only be used starting with version 10.0.17.
 > You need to reinstall the printers on each AOS node as they aren't available to the gMSA account. For more information, see [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md).
-> This script has been updated to work with Application version 10.0.32, but also works with older Application versions.
+> This script has been updated to work with application version 10.0.32, but also works with older application versions.
 
 ```powershell
 param (
