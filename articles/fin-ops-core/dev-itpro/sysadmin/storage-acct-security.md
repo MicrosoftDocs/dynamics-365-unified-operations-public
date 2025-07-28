@@ -4,7 +4,7 @@ description: This article describes the latest security enhancements in the fina
 author: mansijainms
 ms.author: mansijain 
 ms.topic: how-to
-ms.date: 07/10/2025
+ms.date: 07/28/2025
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2024-09-12
@@ -72,13 +72,13 @@ The following APIs are available in **SharedServiceUnitStorage**:
 
 We plan to retire all APIs that provide access to the connection string, such as **CloudInfrastructure.GetCsuStorageConnectionString()**. Although there might be alternative ways to obtain a handle to the connection string, other restrictions are put in place to render those methods ineffective.
 
-When the managed identity–based integration is enabled, it won't be possible to connect to the storage account by using connection strings shared through APIs outside the finance and operations process, such as interactive AOS, Batch AOS, or the Data Import/Export Framework (DIXF) service.
+When the managed identity–based integration is enabled, it isn't possible to connect to the storage account by using connection strings shared through APIs outside the finance and operations process, such as interactive AOS, Batch AOS, or the Data Import/Export Framework (DIXF) service.
 
-Because we're disabling the account access key at the storage account level, any access that uses the account access key won't work.
+Because we're disabling the account access key at the storage account level, any access that uses the account access key doesn't work.
 
 ### What happens when I invoke CloudInfrastructure.GetCsuStorageConnectionString() in environments when the managed identity–based integration is also enabled?
 
-When the managed identity–based integration is enabled, an invalid connection string is returned in this situation.
+When enabled, the managed identity–based integration an invalid connection string is returned in this situation.
 
 If you use the invalid connection string, all the existing constructs continue to work, if they're accessed within the AOS process space. The exceptions are those constructs that are tightly coupled with the access key, such as **GetSharedAccessSignature**.
 
@@ -155,7 +155,7 @@ It works. If Managed Identity is enabled, a user-delegated SAS URL can be used t
 
 ### Will a SAS URL that was created previously stop working once the storage account access key is disabled?
 
- Yes, previously created SAS URLs stop working when the account access key is disabled, because seven days are the maximum TimeToLive value (Validity of the URL). Therefore, the SAS URL expires and won't work after seven days.
+ Yes, previously created SAS URLs stop working when the account access key is disabled, because seven days are the maximum TimeToLive value (Validity of the URL). Therefore, the SAS URL expires and doesn't work after seven days.
 
 ### Resolving the Error: "The remote server returned an error: (409) Conflict" When Using File.UseFileFromURL for any file operations (Import/export/upload/downlaod)
 
@@ -182,15 +182,32 @@ UserDelegatedSASURL can be up to or slightly below 500 characters in length. To 
 > If the URL is truncated due to insufficient variable length, users may encounter errors such as (403) Forbidden, (404) Not Found, (409) Conflict, or PublicAccessNotPermitted-especially when the access key is disabled.
 
 ### Error: "403 (Forbidden): Server failed to authenticate the request."
-This error may occur if you're using an old or cached connection string on finance and operations managed storage accounts. This is often due to secrets rotation following planned maintenance.
+This error typically occurs when using an old or cached connection string for finance and operations apps managed storage accounts. This error is often triggered when secret rotation occurs following scheduled platform maintenance.
 
 **What to check first:**
-Review [What are the planned maintenance windows?
-](/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#windows). If the issue occurs after the scheduled maintenance window, proceed with the following resolution.
+Before proceeding with troubleshooting, check your Message Center for any recent communications regarding planned maintenance for secret rotation. For example, you may see a message like:
+"During this maintenance, the secrets for your storage accounts rotate. This activity is essential to ensure the security and integrity of your data."
+If your environment was included in such a communication, the connection string may have changed.
 
 **Resolution**
-If you're using or caching a connection string for the storage account, it may no longer be valid.
-Retrieve a new connection string after the environment restarts to restore access. 
- 
+If you're using or caching a connection string for the storage account, it may no longer be valid. To restore access, retrieve a new connection string after the environment restarts.
+
+**How to Retrieve the Updated Connection String**
+You can retrieve the current connection string for your finance and operations apps managed storage account using either of the following two methods in X++:
+
+```
+// Method 1: Using the CloudInfrastructure service wrapper
+var connectionString1 = Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString();
+
+// Method 2: Using the application environment context
+var environment = Microsoft.Dynamics.ApplicationPlatform.Environment.EnvironmentFactory::GetApplicationEnvironment();
+var connectionString2 = environment.AzureStorage.StorageConnectionString;
+
+// Output the connection strings
+info("Connection Strings via GetCsuStorageConnectionString method");
+info(connectionString1);
+info("Connection Strings via EnvironmentFactory");
+info(connectionString2);
+```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
