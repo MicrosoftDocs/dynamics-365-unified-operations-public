@@ -33,7 +33,7 @@ To configure message cleanup, follow these steps:
 1. For the new or selected row, make the following settings:
     - **Number of processor tasks**: Specify the number of processor tasks that should be dedicated to the specified queue. The maximum value is *8*. The minimum value depends on the minimum number of batch threads that are configured for your system (typically *2*). This setting isn't related to the cleanup job, but ensures that the queue can process messages efficiently.
     - **Days before processed message deletion**: Specify the number of days to retain processed messages before deletion. To turn off processed message cleanup, set this field to 0.
-    - **Days before canceled message deletion**: Specify the number of days to retain cancelled messages before deletion. To disable cleanup, set this field to 0.
+    - **Days before canceled message deletion**: Specify the number of days to retain cancelled messages before deletion. To turn off cleanup, set this field to 0.
 
 1. On the Action Pane, select **Save**. The system automatically creates a background process to run the cleanup job. By default, the process runs daily, but you can modify this schedule in the [Process automation](../../fin-ops-core/fin-ops/sysadmin/process-automation.md) workspace, as described in the next section.
 
