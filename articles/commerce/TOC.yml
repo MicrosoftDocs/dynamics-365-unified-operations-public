@@ -21,6 +21,7 @@
         - name: Commerce 10.0.43 (January 2025)
           href: get-started/whats-new-commerce-10-0-43.md
         - name: Commerce 10.0.42 (December 2024)
+          href: get-started/whats-new-commerce-10-0-42.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
