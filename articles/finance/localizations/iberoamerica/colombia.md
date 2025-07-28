@@ -1,8 +1,8 @@
 ---
 title: Colombia overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Colombia, including links to resources about configurations for files. 
-author: kfend
-ms.author: kfend
+author: v-pedrobusto2025
+ms.author: v-pedrobusto
 ms.topic: overview
 ms.date: 10/31/2023
 ms.reviewer: johnmichalak
