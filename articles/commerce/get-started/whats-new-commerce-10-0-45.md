@@ -2,7 +2,7 @@
 title: Preview features in Dynamics 365 Commerce 10.0.45 (September 2025)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.45. 
 author: johnmichalak
-ms.date: 07/25/2025
+ms.date: 07/28/2025
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -32,7 +32,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Point of sale  | Store Commerce offline in iOS and Android Public Preview  | This release introduces offline capabilities for Store Commerce on iOS and Android devices. Customers can now use Store Commerce on these platforms even when offline, ensuring seamless operations and reliable business continuity. Key features include support for SQLite-based offline capabilities,new SDK experience for iOS enabling extensibility in app and database, database upgrade support, and enhanced offline register form. |  admins |
+| Point of sale  | Store Commerce offline in iOS and Android Public Preview  | This release introduces offline capabilities for Store Commerce on iOS and Android devices. You can now use Store Commerce on these platforms even when offline, ensuring seamless operations and reliable business continuity. Key features include support for SQLite-based offline capabilities, a new SDK experience for iOS that enables extensibility in the app and database, database upgrade support, and an enhanced offline registration form. |  admins |
 
 
 ## Resources
