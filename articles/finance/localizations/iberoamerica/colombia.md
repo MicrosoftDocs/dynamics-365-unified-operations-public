@@ -14,12 +14,30 @@ ms.dyn365.ops.version: App 10.0.38
 ---
 
 # Colombia overview
-
 [!include [banner](../../includes/banner.md)]
+This overview provides a comprehensive guide to setting up legal entities in Colombia within Microsoft Dynamics 365 Finance. It covers key configurations, Colombia-specific reports, electronic invoicing formats, and additional resources for electronic reporting.
 
-This article includes information and links to resources that can help you set up legal entities with a primary address in Colombia.
-- [Configure sales and purchase invoices for Colombia](ltm-configure-invoices-colombia.md)
+## Table of contents
+
+- [Main configurations](#main-configurations)
+- [General Reports](#general-reports)
+- [Especific Reporting for Colombia](#especific-reporting-for-colombia)
+- [Additional resources](#additional-resources)
+
+## Main configurations
+
+- [Set up legal entity and tax information for Colombia](ltm-set-up-legal-entity-tax-colombia.md)
 - [Create customer and vendor records with an address in Colombia](ltm-create-customer-vendor-colombia.md)
+- [Configure sales and purchase invoices for Colombia](ltm-configure-invoices-colombia.md)
+
+## General Reports
+- [Printing configuration for General Ledger LATAM](ltm-general-ledger.md)
+- [Print a Ledger Posting report for LATAM](ltm-ledger-posting-report.md)
+- [VAT book printing configuration](ltm-vat-book.md)
+- [Pinting configuration for invoice layout](ltm-invoice-layout-print.md)
+
+## Specific Reporting for Colombia
+
 - [Format 1001 file for Colombia issue configuration](ltm-Colombia-format-1001.md)
 - [Format 1003 file for Colombia configuration](ltm-Colombia-format-1003.md)
 - [Format 1005 file for Colombia configuration](ltm-Colombia-format-1005.md)
@@ -28,8 +46,7 @@ This article includes information and links to resources that can help you set u
 - [Format 1008 file for Colombia configuration](ltm-Colombia-format-1008.md)
 - [Format 1009 file for Colombia configuration](ltm-Colombia-foramt-1009.md)
 - [Format 1012 file for Colombia configuration](ltm-Colombia-format-1012.md)
-- [Set up legal entity and tax information for Colombia](ltm-set-up-legal-entity-tax-colombia.md)
-  
+
 
 ## Additional resources
 

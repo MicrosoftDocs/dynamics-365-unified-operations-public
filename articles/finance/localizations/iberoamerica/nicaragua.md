@@ -19,10 +19,23 @@ ms.dyn365.ops.version: App 10.0.38
 
 This article includes information and links to resources that can help you set up legal entities with a primary address in Nicaragua.
 
+## Table of contents
+- [Nicaragua overview](#nicaragua-overview)
+- [Main configurations](#main-configurations)
+- [General Reports](#general-reports)
+- [Additional resources](#additional-resources)
+
+## Main configurations
+
 - [Set up a legal entity and tax information for Nicaragua](ltm-set-up-legal-entity-tax-nicaragua.md)
 - [Configure sales and purchase invoices for Nicaragua](ltm-configure-invoices-nicaragua.md)
 - [Create customer and vendor records with an address in Nicaragua](ltm-create-customer-vendor-nicaragua.md)
-  
+
+## General Reports
+
+- [Printing configuration for General Ledger LATAM](ltm-general-ledger.md)
+- [Print a Ledger Posting report for LATAM](ltm-ledger-posting-report.md)
+- [VAT book printing configuration](ltm-vat-book.md)
 
 ## Additional resources
 

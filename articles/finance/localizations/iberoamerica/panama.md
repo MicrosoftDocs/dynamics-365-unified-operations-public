@@ -17,10 +17,24 @@ ms.dyn365.ops.version: App 10.0.38
 
 This article includes information and links to resources that can help you set up legal entities with a primary address in Panama.
 
-## Principal configurations
+## Table of contents
+
+- [Main configurations](#main-configurations)
+- [General Reports](#general-reports)
+- [Electronic Invoice format](#electronic-invoice-format)
+- [Additional resources](#additional-resources)
+
+## Main configurations
 - [Set up a legal entity and tax information for Panama](ltm-set-up-legal-entity-tax-panama.md)
 - [Create customer and vendor records with an address in Panama](ltm-create-customer-vendor-panama.md)
 - [Configure sales and purchase invoices for Panama](ltm-configure-invoices-panama.md)
+
+## General Reports
+
+- [Printing configuration for General Ledger LATAM](ltm-general-ledger.md)
+- [Print a Ledger Posting report for LATAM](ltm-ledger-posting-report.md)
+- [VAT book printing configuration](ltm-vat-book.md)
+- [printing configuration for invoice layout](ltm-invoice-layout-print.md)
 
 ## Electronic Invoice format
 - [Set up electronic invoicing for Panama](ltm-panama-ei-connec-configuration.md)
