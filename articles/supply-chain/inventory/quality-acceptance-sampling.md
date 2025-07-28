@@ -109,9 +109,9 @@ To set up your acceptance sampling charts, follow these steps:
 
 1. On the **Inspection levels to include** FastTab, use the buttons in the toolbar to add and remove inspection levels for the current chart. The inspection levels are used as a criteria to find the applicable code letter in the code letter chart. You can find more information about inspection levels in [Acceptance sampling charts](#acceptance-sampling-charts).
 
-1. On the **AQL indexes to include** FastTab, use the buttons in the toolbar to add and remove AQL indexes for the current chart. The AQL index defines the maximum acceptable defect rate in a sample that determines whether a production lot passes or fails inspection. You can find more information about the use of AQL indexes in [Acceptance sampling charts](#acceptance-sampling-charts).
+1. On the **AQL indexes to include** FastTab, use the buttons in the toolbar to add and remove AQL indexes. The AQL index defines the maximum acceptable defect rate in a sample that determines whether a production lot passes or fails inspection. You can find more information about the use of AQL indexes in [Acceptance sampling charts](#acceptance-sampling-charts).
 
-1. On the **Lot/batch size ranges** FastTab, use the buttons in the toolbar to add and remove lot/batch size ranges for the current chart. Use the **Unlimited** button in the toolbar to set a range to have no upper limit (this sets the **To** field to *Unlimited* for the selected row). The lot/batch size ranges are groupings of total units in a production batch used as input in the code letter chart to find the applicable code letter. You can find more information about the use of lot/batch size ranges in  [Acceptance sampling charts](#acceptance-sampling-charts).
+1. On the **Lot/batch size ranges** FastTab, use the buttons in the toolbar to add and remove lot/batch size ranges for the current chart. Use the **Unlimited** button in the toolbar to set a range to have no upper limit (this sets the **To** field to *Unlimited* for the selected row). The lot/batch size ranges group total units in a production batch and help find the applicable code letter. You can find more information about the use of lot/batch size ranges in  [Acceptance sampling charts](#acceptance-sampling-charts).
 
 ## Set up inspection levels and acceptance sampling indexes
 
@@ -119,7 +119,7 @@ If you don't use the option to load your charts from a template, you must create
 
 ### Set up inspection levels
 
-An inspection level is a code or category set by the business user that indicates the extent of inspection based on the importance of the product, the production history, and customer requirements. It's used as input to the code letter chart, and guides how many samples you take from a lot. Follow these steps to create them manually:
+Follow these steps to create inspection levels manually:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Inspection levels**.
 1. Select **New** to create a new inspection level and set the following fields:
@@ -129,43 +129,43 @@ An inspection level is a code or category set by the business user that indicate
 
 ### Set up acceptance sampling indexes
 
- The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. If you don't want to use the option to generate the AQL indexes by loading the AQL chart template, then you can use the following steps to create them manually:
+AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. If you don't want to use the option to generate the AQL indexes by loading the AQL chart template, then you can use the following steps to create them manually:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Acceptance sampling indexes**.
 1. Select **New** to create a new inspection level and set the following fields:
     - **Acceptable quality limit index**: The identification of the acceptance sampling index. The AQL index defines the maximum acceptable defect rate in a sample that determines whether a production lot passes or fails inspection.
     - **Description**: User defined description of the acceptance sampling index.
 
-1. When you're done setting up the chart, select **Validate** in the Action Pane to validate the integrity of the data in the plan. The system checks your settings and if the chart is valid, it sets the **Validated** field to *Yes*. Only validated charts can be used for acceptance sampling.
+1. When you're done setting up the chart, select **Validate** in the Action Pane to check data integrity. If the chart is valid, it sets the **Validated** field to *Yes*. Only validated charts can be used for acceptance sampling.
 
 ## View the sampling size code letter chart
 
-When an acceptance sampling chart is created and validated, you can view. To view the sampling size code letter chart, follow these steps:
+Once an acceptance sampling chart is created and validated, you can view the sampling size code letter chart:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Acceptance sampling chart**.
-1. Select the acceptance sampling chart where you want to view the sampling size code letter chart.
-1. On the Action Pane, select **Sampling size code letter chart**. On the Action Pane of the sampling size code letter chart, you can open the corresponding acceptable quality limit chart by selecting **Acceptable quality limit chart**.
+1. Select the chart you want to view.
+1. On the Action Pane, select **Sampling size code letter chart**. You can then open the corresponding acceptable quality limit chart by selecting **Acceptable quality limit chart**.
 
 ## View or edit the acceptable quality limit chart
 
-When an acceptance sampling chart is created and validated, you can view or make edits to the acceptable quality limit chart. To edit the acceptable quality limit chart, follow these steps:
+To view or edit the acceptable quality limit chart, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Acceptance sampling chart**.
-1. Select the acceptance sampling chart where you want to edit the acceptable quality limit chart.
-1. On the Action Pane select *Acceptable quality limit chart* to open the chart.
-1. On the Action Pane of the chart, use the following options to make edits:
-    - **Up**: Use this option to add an arrow pointing upwards in the selected cell in the chart. The arrow indicates in which direction the the AQL levels and sample size must be found. You can find more information about the use of the arrows in the acceptable quality limit chart in [Acceptance sampling charts](#acceptance-sampling-charts).
-    - **Down**: Use this option, to add an arrow pointing downwards in the selected cell in the chart. The arrow indicates in which direction the the AQL levels and sample size must be found. You can find more information about the use of the arrows in the acceptable quality limit chart in [Acceptance sampling charts](#acceptance-sampling-charts).  
-    - **Accept**: Use this option to set the acceptance level in the selected cell. The acceptance level the maximum number of defects allowed for a given sample size range and AQL index. You can find more information about the use of the acceptable quality limit chart in [Acceptance sampling charts](#acceptance-sampling-charts).
+1. Select the chart you want want to edit.
+1. On the Action Pane, select *Acceptable quality limit chart* to open the chart.
+1. Use the following options to make edits:
+    - **Up**: Adds an upward arrow in the selected cell, indicating the direction to find the AQL level and sample size. You can find more information about the use of the arrows in the acceptable quality limit chart in [Acceptance sampling charts](#acceptance-sampling-charts).
+    - **Down**: Adds a downward arrow in the selected cell, indicating the direction to find the AQL level and sample size. You can find more information about the use of the arrows in the acceptable quality limit chart in [Acceptance sampling charts](#acceptance-sampling-charts).  
+    - **Accept**: Sets the acceptance level in the selected cell, defining the maximum number of defects allowed for a given sample size and AQL index. You can find more information about the use of the acceptable quality limit chart in [Acceptance sampling charts](#acceptance-sampling-charts).
 
 ## Set up defect types
 
-Defect types identify the types of defects that users test for, such as *paint chipped*, *screen cracked*, *packaging damaged*, and so on. Each defect type is categorized with a defect category of *Critical*, *Major*, or *Minor*.
+Defect types identify the types of defects that users test for, such as *paint chipped*, *screen cracked*, *packaging damaged*, and so on. Each defect type is categorized as *Critical*, *Major*, or *Minor*.
 
 To set up defect types, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Defect types**.
-1. Select **New** to create a new defect type and set the following fields:
+1. Select **New** and set the following fields:
     - **Defect type**: Identification of the type of defect to be tested for.
     - **Description**: Elaborated description of the defect type.
     - **Defect category**:  Categorize the defect type with one of the three following fixed categories:
@@ -179,55 +179,55 @@ You must define each of the tests that you want to use on quality orders, and ea
 
 ## Set up a test group for acceptance sampling
 
-Each of the tests that you use for acceptance sampling must be associated a *test group*. A test group is a collection of tests needed on a quality order. Each quality association has a test group assigned, which it uses for automatic generation of quality orders. You can learn more about the use of test groups in [Quality management test groups](quality-test-groups.md)
+Each of the tests that you use for acceptance sampling must be associated with a *test group*. A test group is a collection of tests needed on a quality order. Each quality association has an assigned test group, which it uses to automatically generate quality orders. You can learn more about the use of test groups in [Quality management test groups](quality-test-groups.md)
 
 ## Set up item sampling for acceptance testing
 
-Use *item sampling* records to define how much of a product should be inspected during a quality order. Each one specifies the sample quantity or percentage to be tested from a lot, and is essential for enabling acceptance sampling in quality control processes. Learn more about how item sampling is used in acceptance sampling in [Quality orders, item sampling methods, and quality associations](#orders-methods-associations). For general information about item sampling, see [Quality management item sampling](quality-item-sampling.md).
+Use *item sampling* records to define how much of a product should be inspected during a quality order. Each record specifies the sample quantity or percentage to be tested from a lot, and is essential for enabling acceptance sampling in quality control processes. Learn more about item sampling in [Quality orders, item sampling methods, and quality associations](#orders-methods-associations) and [Quality management item sampling](quality-item-sampling.md).
 
-To set up item samplings for acceptance sampling, follow these steps:
+To set up item sampling for acceptance sampling, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Item sampling**.
 1. Select **New** to create a new item sampling and set the following fields:
     - **Item sampling**: Enter a name for the item sampling record.
     - **Description**: Enter a short description of the item sampling record.
-    - **Sampling Scope**: Select the scope to use when evaluating if quality work should be created. When set to *Shipment* or *Load*, those entities are used if available. If not, the *Order* is used.
+    - **Sampling scope**: Select the scope to use when evaluating if quality work should be created. When set to *Shipment* or *Load*, those entities are used if available. If not, the *Order* is used.
     - **Use acceptance sampling charts**: Choose one of the following options:
-        - *Single*: Use acceptance sampling. The value indicates that you'll use a single sampling plan. Learn more in [Single and double sampling plans](#single-and-double-sampling-plans).
+        - *Single*: Use acceptance sampling. This value indicates that you'll use a single sampling plan. Learn more in [Single and double sampling plans](#single-and-double-sampling-plans).
         - *None*: Don't use acceptance sampling for quality inspection.
 
 1. On the **Acceptance sampling** FastTab, set the following required fields:
     - **Acceptance sampling chart name**: Select the sampling chart you want to use for this item sampling.
-    - **Description**: Field that displays the name of the select acceptance sampling chart.
-    - **Inspection level**: Select which inspection level you want to use for this item sampling. An inspection level is a code or category that is determined by the business user. It indicates the extent of inspection based on the importance of the product, the production history, and customer requirements. Learn more about the use of inspection levels: [Acceptance sampling charts](#acceptance-sampling-charts).
+    - **Description**: Displays the name of the selected acceptance sampling chart.
+    - **Inspection level**: Select the inspection level you want to use for this item sampling. Learn more about the use of inspection levels: [Acceptance sampling charts](#acceptance-sampling-charts).
     - **Description**: Displays the description of the selected AQL index.
-    - **Minor AQL%**: Enter the AQL index for minor defects for the item sampling. The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. Learn more how to use AQL indexes here: [Acceptance sampling charts](#acceptance-sampling-charts).
+    - **Minor AQL%**: Enter the AQL index for minor defects for the item sampling. Learn more how to use AQL indexes here: [Acceptance sampling charts](#acceptance-sampling-charts).
     - **Description**: Displays the description of the selected AQL index.
-    - **Major AQL%**: Enter the AQL index for major defects for the item sampling. The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. Learn more how to use AQL indexes here: [Acceptance sampling charts](#acceptance-sampling-charts).
+    - **Major AQL%**: Enter the AQL index for major defects for the item sampling. Learn more how to use AQL indexes here: [Acceptance sampling charts](#acceptance-sampling-charts).
     - **Description**: Displays the description of the selected AQL index.
-    - **Critical AQL%**: Enter the AQL index for critical defects for the item sampling. The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. Learn more how to use AQL indexes here: [Acceptance sampling charts](#acceptance-sampling-charts).
+    - **Critical AQL%**: Enter the AQL index for critical defects for the item sampling. Learn more how to use AQL indexes here: [Acceptance sampling charts](#acceptance-sampling-charts).
     - **Description**: Displays the description of the selected AQL index.
 
 ## Set up a quality association for acceptance sampling
 
-Supply Chain Management uses quality associations to establish an apply rules that automatically trigger a quality order based on specific events, such as product receipt, production output, or inventory movement. Each quality association links a product, process, or condition to a quality inspection requirement, ensuring consistent and automated quality control. You can learn more about quality associations in [Quality associations](quality-associations.md).
+Supply Chain Management uses quality associations to define and apply rules that automatically trigger a quality order based on specific events, such as product receipt, production output, or inventory movement. Each quality association links a product, process, or condition to a quality inspection requirement, ensuring consistent and automated quality control. You can learn more about quality associations in [Quality associations](quality-associations.md).
 
-When a quality order is triggered based on an event defined in a quality association, the system automatically creates a quality order that can be used for acceptance sampling. The quality association links the triggering event (such as a product receipt or production output) to a specific test process. If the associated item sampling is configured for acceptance sampling, the generated quality order uses the defined sampling criteria to determine how much of the lot should be inspected.
+When a quality order is triggered by an event defined in a quality association, the system automatically creates a quality order that can be used for acceptance sampling. The quality association links the triggering event (such as a product receipt or production output) to a specific test process. If the associated item sampling is configured for acceptance sampling, the generated quality order uses the defined sampling criteria to determine how much of the lot should be inspected.
 
-To set up a quality association for acceptance sampling, follow the instructions provided in [Quality associations](quality-associations.md). When you're setting up your quality associations on the **Quality associations** page, pay special attention to following settings, which are specific to acceptance sampling:
+To set up a quality association for acceptance sampling, follow the instructions provided in [Quality associations](quality-associations.md). When you're setting up your quality associations on the **Quality associations** page, pay special attention to the following settings, which are specific to acceptance sampling:
 
 - Use the **Item sampling** field on the **Specifications** FastTab to select an item sampling record. This setting is required to enable acceptance sampling for the quality association.
 - Use the **Test group** field on the **Specifications** FastTab to select a test group that contains the tests you want to use for acceptance sampling. The test group must contain tests that are associated with defect types that you set up in [Set up defect types](#set-up-defect-types).
 
 ## Using acceptance sampling on quality orders
 
-Quality orders created for acceptance sampling include an **Acceptance sampling** tab when selected on the **Quality orders** page. This tab includes a grid that contains line items for each test that needs to be conducted. The grid provides the following information:
+Quality orders created for acceptance sampling include an **Acceptance sampling** tab on the **Quality orders** page. This tab contains a grid with line items for each test that needs to be conducted. The grid provides the following information:
 
-- **Defect category**: Indicates one of the three fixed categories of the test *Critical*, *Major*, or *Minor*.
+- **Defect category**: Indicates one of the three fixed categories of the test, *Critical*, *Major*, or *Minor*.
 - **Defect type**: Indicates the type of the test defined in the configuration. Learn more about defect types here: [Set up defect types](#set-up-defect-types).
-- **Acceptable quality level index**: Indicates the AQL index for the specific test as specified on the configuration of the item sampling for the quality order.
-- **Sample size**: The sample size of the test.
-- **Target Ac**: Maximum number of defects accepted for the test to fail.
+- **Acceptable quality level index**: Indicates the AQL index for the specific test as specified in the configuration of the item sampling for the quality order.
+- **Sample size**: The number of items to be tested.
+- **Target Ac**: Maximum number of defects accepted for the test to pass.
 - **Target Re**: Minimum number of defects for the test to fail.
 - **Test result**: Graphical indication if the test has passed or failed.
 
