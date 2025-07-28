@@ -1,10 +1,10 @@
 ---
 title: Financial dimensions
-description: Learn about the various types of financial dimensions and how they're set up, including outlines on custom dimensions, activating dimensions, and translations.
+description: Learn about the various types of financial dimensions and tags and how they're set up.
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 05/20/2025
+ms.date: 07/28/2025
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -19,33 +19,26 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This article explains the various types of financial dimensions and how they're set up.
+Financial dimensions are used to further categorize financial transactions. Financial dimension values become segments within the ledger account and are used for further analysis such as generating a Profit and loss financial statement by a dimension or a trial balance by dimension.  
 
-Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions. Custom dimensions are shared across legal entities, and the values are entered and maintained by users. For entity-backed dimensions, the values are defined somewhere else in the system, such as in Customers or Stores entities. Some entity-backed dimensions are shared across legal entities, whereas other entity-backed dimensions are company-specific.
+Financial tags (tags) are an alternative to financial dimensions. An organization can create up to 20 user-defined financial tags and enter values for them on transactions. For more information, see Financial tags. Also, explore the differences between the two in the document Differences between financial tags and financial dimensions.  
 
-After you've created the financial dimensions, use the **Financial dimension values** page to assign additional properties to each financial dimension.
+When creating a financial dimension, this article explains the various types of financial dimensions and how they're set up.
 
-You can use financial dimensions to represent legal entities. You don't have to create the legal entities in Dynamics 365 Finance. However, financial dimensions aren't designed to address the operational or business requirements of legal entities. The interunit accounting functionality in Finance is designed to address only the accounting entries that are created by each transaction.
+## Create financial dimensions
 
-Before you set up financial dimensions as legal entities, evaluate your business processes in the following areas to determine whether this setup will work for your organization:
-
-- Inventory
-- Sales and purchases between financial dimensions and legal entities
-- Sales tax calculation and reporting
-- Operational reporting
-
-Here are some of the limitations:
-
-- You can use sales tax functionality only with legal entities, not with financial dimensions.
-- Some reports don't include financial dimensions. Therefore, to report by financial dimension, you might have to modify the reports.
-
-Financial tags (tags) are an alternative to financial dimensions. An organization can create up to 20 user-defined financial tags and enter values for them on transactions. For more information, see [Financial tags](financial-tag.md).
+Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions. 
 
 ## Custom dimensions
 
-To create a user-defined financial dimension, in the **Use values from** field, select **Custom dimension**.
+To create a user-defined financial dimension, in the **Use values from** field, select **Custom dimension**. Custom dimensions are shared across legal entities, and the values are entered and maintained by users. 
 
-You can also specify an account mask to limit the amount and type of information that can be entered for dimension values. You can enter characters that remain the same for each dimension value, such as letters or a hyphen (-). You can also enter number signs (\#) and ampersands (&) as placeholders for characters that change every time that a dimension value is created. Use a number sign (\#) as a placeholder for a number and an ampersand (&) as a placeholder for a letter. The field for the format mask is available only when you select **Custom dimension** in the **Use values from** field.
+You can specify a dimension value mask to limit the amount and type of information that can be entered for dimension values. You can enter characters that remain the same for each dimension value, such as letters or a symbol. 
+
+>[!Important]
+> Don't use the chart of accounts delimiter in the dimension value mask.    
+
+You can also enter number signs (\#) and ampersands (&) as placeholders for characters that change every time that a dimension value is created. Use a number sign (\#) as a placeholder for a number and an ampersand (&) as a placeholder for a letter. The field for the format mask is available only when you select **Custom dimension** in the **Use values from** field.
 
 **Example**
 
@@ -53,19 +46,67 @@ To limit the dimension value to the letters "CC" and three numbers, enter **CC-\
 
 ## Entity-backed dimensions
 
-To create an entity-backed financial dimension, in the **Use values from** field, select a system-defined entity to base the financial dimension on. Financial dimension values are then created from that entity. For example, to create dimension values for projects, select **Projects**. A dimension value is then created for each project name. The **Financial dimension values** page shows the values for the entity. If those values are company-specific, the page also shows the company.
+To create an entity-backed financial dimension, in the **Use values from** field, select a system-defined entity to base the financial dimension on. For entity-backed dimensions, the values are defined somewhere else in the system, such as in Customers or Stores entities. Some entity-backed dimensions are shared across legal entities, whereas other entity-backed dimensions are company-specific. 
 
+For example, to create dimension values for projects, select **Projects**. This allows any value from the project table to be used as a dimension value directly. 
+A dimension value is then created for each project name. The **Financial dimension values** page shows the values for the entity. If those values are company-specific, the page also shows the company.
+
+>[!Important]
+> Important: When exporting financial dimension values, only the following values are exported:
+>  - Custom dimension values
+>  - Only entity-back dimension values that have been used or entered as a dimension value.  For example, the value was entered as a default dimension value or entered on a transaction.
+>  - Only entity-backed dimension values that have a property defined for the value, such as the value is suspended or active from/to dates are defined.
+
+### Financial dimension values 
+
+After you've created a financial dimension, use the **Financial dimension values** page to create, view or assign additional properties to each financial dimension value.  
+
+For a custom financial dimension, this page creates and edits dimension values. The **Dimension value** and **Description** fields can only be entered or edited for custom dimensions.  
+
+For an entity-backed financial dimension, no dimension values can be created from this page. Also, the dimension value and descriptions can’t be edited from within the page. For example, let’s say you created the Project financial dimension previously described. On the **Financial dimension values** page, you can’t edit the project **Dimension value** or **Description**. This information is taken directly from the project setup. If a new project value is necessary, it must be created from the **Project** page.  
+ 
 ## Activating dimensions
 
-When you activate a financial dimension, the table is updated so that it includes the name of the financial dimension. Deleted dimensions are removed. You can enter dimension values before you activate a financial dimension. However, a financial dimension can't be consumed anywhere until it's activated. For example, you can't add a financial dimension to an account structure until the financial dimension has been activated. When you select **Activate**, all dimensions are updated and show status changes.
+When you activate a financial dimension, the table is updated so that it includes the name of the financial dimension. Deleted dimensions are removed. You can create and edit dimension values before you activate a financial dimension. However, a financial dimension can't be consumed anywhere until it's activated. For example, you can't add a financial dimension to an account structure until the financial dimension has been activated. 
 
-## Translations
+When you select **Activate all**, all inactive or renamed dimensions are updated to active, and which is shown in the **Status changes** field. The system must be in maintenance mode when activating financial dimensions.  
 
-On the **Text translation** page, you can enter text for the selected financial dimension in various languages. On the **Main account translation** page, you can enter text for the main account in various languages. 
+### Translations
+
+The **Text translation** page an be used to translate the following text in various languages: 
+ - **Dimension name** from **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimensions** > **Translations**.
+ - **Financial dimension value description** from **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimensions**. Select custom financial dimension > **Dimension values** > **Translations**.
+ - **Main account name** from **General ledger** > **Chart of accounts** > **Accounts** > **Main accounts** > **Name translations**.   
+
+When entering your financial dimension name and financial dimension value description, the system assumes those values are entered in the system language. You can see the system language in the Default language code shown on the Text translation page.  
+
+>[!Important]
+>Translated text is only used when the user language is different than the system language. The system is designed this way to increase performance.  
+
+If you don’t enter the values in the system language, you may not get the expected results. The solution is to change the financial dimension name and financial dimension value description to the system language. The translated text isn’t necessary for the system language.  
+
+### Example 
+
+The system language is set to “es” (Spanish).  
+A new financial dimension is created. The dimension name is entered in English, not Spanish: “Ownership.”   
+ - Defining the name in a non-system language is not recommended, but is permitted. 
+Two translations are created for the “Ownership” dimension name: 
+ - “es” (Spanish) = Propiedad
+ - “de” (German) = Besitz 
+
+User 1 has a user language of “de”. When they see the dimension name, it displays as “Besitz”.  
+
+User 2 has a user language of “es”. When they see the dimension name, it displays as “Ownership”. The dimension name of “Ownership” is shown because the user language is the same as the system language. As a result, the system doesn’t look for any translations.  
+
 
 ## Legal entity overrides
 
-Not all dimensions are valid for all legal entities. Additionally, some dimensions might be relevant only for a specific period. In these cases, you can use the **Legal entity overrides** section to specify the companies that the dimension should be suspended for, the owner, and the period when the dimension is active.
+All custom dimensions and some entity-backed dimensions (such as dimensions created from an operating unit) are global. Having global values means that all dimension values for that dimension are, by default, active for all legal entities that include that dimension in their account structure
+
+But, not all dimensions are valid for all legal entities. Additionally, some dimensions might be relevant only for a specific period. In these cases, you can use the **Legal entity overrides** section to specify the companies that the dimension should be suspended for, the owner, and the period when the dimension is active.
+
+### Example
+Department has dimension values of 100, 200 and 300.  USMF, USSI and DEMF all use the Department dimension. DEMF is only permitted to use department 100 and 200. In order to restrict DEMF using Department 300, a legal entity override can be created, where the dimension value is marked as Suspended. USMF and USSI still have full access to departments 100, 200 and 300.  
 
 ## Deleting financial dimensions
 
@@ -81,6 +122,21 @@ If any of the criteria are met, you can't delete the financial dimension.
 
 > [!NOTE]
 > Starting in Finance version 10.0.27, financial dimensions will no longer be automatically selected for financial reporting setup as they are created.
+
+### Financial dimensions as legal entities 
+
+You can use financial dimensions to represent legal entities. You don't have to create the legal entities in Dynamics 365 Finance. However, financial dimensions aren't designed to address the operational or business requirements of legal entities. The interunit accounting functionality in Finance is designed to address only the accounting entries that are created by each transaction. 
+
+Before you set up financial dimensions as legal entities, evaluate your business processes in the following areas to determine whether this setup will work for your organization: 
+ - Inventory
+ - Sales and purchases between financial dimensions and legal entities
+ - Sales tax calculation and reporting
+ - Operational reporting 
+
+Here are some of the limitations: 
+ - You can use sales tax functionality only with legal entities, not with financial dimensions.
+ - Some reports don't include financial dimensions. Therefore, to report by financial dimension, you might have to modify the reports. 
+
 
 ## Default dimension values
 
