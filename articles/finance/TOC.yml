@@ -1114,6 +1114,8 @@
                       href: general-ledger/tasks/define-financial-dimensions.md
                     - name: Highly variable dimensions
                       href: cost-accounting/high-var-dimensions.md  
+                    - name: Check for highly variable dimensions
+                      href: cost-accounting/high-var-dimension-tool.md
                     - name: Account and dimension combinations
                       href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
                     - name: Financial dimension sets
