@@ -182,15 +182,31 @@ UserDelegatedSASURL can be up to or slightly below 500 characters in length. To 
 > If the URL is truncated due to insufficient variable length, users may encounter errors such as (403) Forbidden, (404) Not Found, (409) Conflict, or PublicAccessNotPermitted-especially when the access key is disabled.
 
 ### Error: "403 (Forbidden): Server failed to authenticate the request."
-This error may occur if you're using an old or cached connection string on finance and operations managed storage accounts. This is often due to secrets rotation following planned maintenance.
+This error typically occurs when using an old or cached connection string for Finance and Operations managed storage accounts. It is often triggered by secret rotation following scheduled platform maintenance.
 
 **What to check first:**
-Review [What are the planned maintenance windows?
-](/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#windows). If the issue occurs after the scheduled maintenance window, proceed with the following resolution.
+Before proceeding with troubleshooting, please check your Message Center for any recent communications regarding planned maintenance for secret rotation. For example, you may see a message like:
+“During this maintenance, we will rotate the secrets for your storage accounts. This activity is essential to ensure the security and integrity of your data.”
+If your environment was included in such a communication, the connection string may have changed.
 
 **Resolution**
-If you're using or caching a connection string for the storage account, it may no longer be valid.
-Retrieve a new connection string after the environment restarts to restore access. 
- 
+If you're using or caching a connection string for the storage account, it may no longer be valid. To restore access, retrieve a new connection string after the environment restarts.
+
+**How to Retrieve the Updated Connection String**
+You can retrieve the current connection string for your Finance and Operations managed storage account using either of the following two methods in X++:
+```
+// Method 1: Using the CloudInfrastructure service wrapper
+var connectionString1 = Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString();
+
+// Method 2: Using the application environment context
+var environment = Microsoft.Dynamics.ApplicationPlatform.Environment.EnvironmentFactory::GetApplicationEnvironment();
+var connectionString2 = environment.AzureStorage.StorageConnectionString;
+
+// Output the connection strings
+info("Connection Strings via GetCsuStorageConnectionString method");
+info(connectionString1);
+info("Connection Strings via EnvironmentFactory");
+info(connectionString2);
+```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
