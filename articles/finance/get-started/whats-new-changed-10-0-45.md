@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in the Microsof
 author: twheeloc
 ms.author: twheeloc
 ms.topic: whats-new
-ms.date: 07/25/2025
+ms.date: 07/28/2025
 ms.update-cycle: 1095-days
 ms.custom:   
   - bap-template
@@ -18,7 +18,7 @@ ms.search.region: Global
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.45. This version has a build number of 10.0.XXXX and is available on the following schedule:
+This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.45. This version has a build number of 10.0.2345 and is available on the following schedule:
 
 - **Preview of release:** July 2025
 - **General availability of release (self-update):** September 2025
@@ -135,7 +135,7 @@ Dynamics 365 Finance version 10.0.45 includes platform updates. To learn more, s
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics 365 Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xxxxx).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics 365 Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1043223).
 
 ### Regulatory updates
 
