@@ -4,7 +4,7 @@ description: This article describes the latest security enhancements in the fina
 author: mansijainms
 ms.author: mansijain 
 ms.topic: how-to
-ms.date: 07/10/2025
+ms.date: 07/28/2025
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2024-09-12
@@ -182,18 +182,19 @@ UserDelegatedSASURL can be up to or slightly below 500 characters in length. To 
 > If the URL is truncated due to insufficient variable length, users may encounter errors such as (403) Forbidden, (404) Not Found, (409) Conflict, or PublicAccessNotPermitted-especially when the access key is disabled.
 
 ### Error: "403 (Forbidden): Server failed to authenticate the request."
-This error typically occurs when using an old or cached connection string for Finance and Operations managed storage accounts. It is often triggered by secret rotation following scheduled platform maintenance.
+This error typically occurs when using an old or cached connection string for finance and operations apps managed storage accounts. It is often triggered by secret rotation following scheduled platform maintenance.
 
 **What to check first:**
 Before proceeding with troubleshooting, please check your Message Center for any recent communications regarding planned maintenance for secret rotation. For example, you may see a message like:
-“During this maintenance, we will rotate the secrets for your storage accounts. This activity is essential to ensure the security and integrity of your data.”
+"During this maintenance, we will rotate the secrets for your storage accounts. This activity is essential to ensure the security and integrity of your data."
 If your environment was included in such a communication, the connection string may have changed.
 
 **Resolution**
 If you're using or caching a connection string for the storage account, it may no longer be valid. To restore access, retrieve a new connection string after the environment restarts.
 
 **How to Retrieve the Updated Connection String**
-You can retrieve the current connection string for your Finance and Operations managed storage account using either of the following two methods in X++:
+You can retrieve the current connection string for your finance and operations apps managed storage account using either of the following two methods in X++:
+
 ```
 // Method 1: Using the CloudInfrastructure service wrapper
 var connectionString1 = Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString();
