@@ -1,8 +1,8 @@
 ---
 title: Costa Rica overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Costa Rica, including links that direct to resources about creating vendor records. 
-author: kfend
-ms.author: kfend
+author: v-pedrobusto2025
+ms.author: v-pedrobusto
 ms.topic: overview
 ms.date: 06/11/2025
 ms.reviewer: johnmichalak

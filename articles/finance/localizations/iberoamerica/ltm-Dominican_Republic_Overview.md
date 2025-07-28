@@ -22,7 +22,7 @@ This overview provides a centralized entry point to Microsoft Dynamics 365 Finan
 - [Main configurations](#main-configurations)
 - [General Reports](#general-reports)
 - [Especific Reporting for Dominican Republic](#especific-reporting-for-dominican-republic)
-- [Related Information](#related-information)
+- [Additional resources](#additional-resources)
 
 ## Main configurations
 

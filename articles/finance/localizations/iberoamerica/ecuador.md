@@ -23,7 +23,6 @@ This overview provides a comprehensive guide to setting up legal entities in Ecu
 - [General reporting](#general-reporting)
 - [Specific reporting for Ecuador](#specific-reporting-for-ecuador)
 - [Electronic Invoice format](#electronic-invoice-format)
-- [Other invoicing](#other-invoicing)
 - [Additional resources](#additional-resources)
 
 ## Main configurations
@@ -51,8 +50,6 @@ This overview provides a comprehensive guide to setting up legal entities in Ecu
 ## Electronic Invoice format
 - [Configure electronic invoice parameters for Ecuador](ltm-ecuador-conf-electronic-invoice.md)
 
-Other invoicing
-- [Configure the layout of a printed invoice for Latin America](ltm-invoice-layout-print.md)
 
 ## Additional resources
 

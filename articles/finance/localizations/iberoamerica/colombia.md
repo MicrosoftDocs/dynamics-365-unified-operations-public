@@ -21,7 +21,7 @@ This overview provides a comprehensive guide to setting up legal entities in Col
 
 - [Main configurations](#main-configurations)
 - [General Reports](#general-reports)
-- [Especific Reporting for Colombia](#especific-reporting-for-colombia)
+- [Specific Reporting for Colombia](#specific-reporting-for-colombia)
 - [Additional resources](#additional-resources)
 
 ## Main configurations

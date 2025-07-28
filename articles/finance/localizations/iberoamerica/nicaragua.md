@@ -1,8 +1,8 @@
 ---
 title: Nicaragua overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Nicaragua directing to resources about legal entites, invoices, and records. 
-author: kfend
-ms.author: kfend
+author: v-pedrobusto2025
+ms.author: v-pedrobusto
 ms.topic: overview
 ms.date: 11/02/2023
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: Bolivia overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Bolivia, including links that direct to resources about electronic invoicing. 
 author: Cpicon85
-ms.author: Cpicon85
+ms.author: v-cpicon
 ms.topic: overview
 ms.date: 03/17/2025
 ms.reviewer: johnmichalak
