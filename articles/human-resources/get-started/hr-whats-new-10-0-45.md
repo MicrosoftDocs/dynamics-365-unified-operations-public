@@ -17,7 +17,7 @@ ms.search.region: Global
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This article lists the features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.45. This version has a build number of 10.0.XXXX and is available on the following schedule:
+This article lists the features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.45. This version has a build number of 10.0.2345 and is available on the following schedule:
 
 - **Preview of release:** July 2025
 - **General availability of release (self-update):** September 2025
@@ -57,7 +57,7 @@ Dynamics 365 Human Resources version 10.0.45 includes platform updates. To learn
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXXX).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1043223).
 
 ### Regulatory updates
 
