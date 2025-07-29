@@ -1466,8 +1466,8 @@
           items:
           - name: Map module
             href: map-module.md
-          - name: Azure Map module
-            href: azure-map-module.md
+          - name: Azure Maps module (preview)
+            href: azure-maps-module.md
           - name: Store selector module
             href: store-selector.md
         - name: Account management modules
