@@ -1322,6 +1322,8 @@
                   href: general-ledger/ledger-settlements.md
                 - name: Partial ledger settlements
                   href: general-ledger/ledger-settlements-partial.md
+                - name: Out of balance ledger settlements
+                  href: general-ledger/ledger-settlement-out-balance.md
                 - name: Awareness between ledger settlement and year-end close
                   items:
                     - name: Awareness between ledger settlement and year-end close
