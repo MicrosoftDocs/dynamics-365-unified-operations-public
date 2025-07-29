@@ -31,9 +31,9 @@ To configure message cleanup, follow these steps:
     - To add a new configuration, select **Add** on the Action Pane to add a new row to the grid. Then, in the **Message queue** field for the new row, select the name of the queue that you want to configure.
 
 1. For the new or selected row, make the following settings:
-    - **Number of processor tasks**: Specify the number of processor tasks that should be dedicated to the specified queue. The maximum value is *8*. The minimum value depends on the minimum number of batch threads that are configured for your system (typically *2*). This setting isn't related to the cleanup job, but ensures that the queue can process messages efficiently.
-    - **Days before processed message deletion**: Specify the number of days to retain processed messages before deletion. To turn off processed message cleanup, set this field to 0.
-    - **Days before canceled message deletion**: Specify the number of days to retain cancelled messages before deletion. To turn off cleanup, set this field to 0.
+    - **Number of processor tasks** – Specify the number of processor tasks that should be dedicated to the specified queue. The maximum value is *8*. The minimum value depends on the minimum number of batch threads that are configured for your system (typically *2*). This setting isn't related to the cleanup job, but ensures that the queue can process messages efficiently.
+    - **Days before processed message deletion** – Specify the number of days to retain processed messages before deletion. To turn off processed message cleanup, set this field to 0.
+    - **Days before canceled message deletion** – Specify the number of days to retain cancelled messages before deletion. To turn off cleanup, set this field to 0.
 
 1. On the Action Pane, select **Save**. The system automatically creates a background process to run the cleanup job. By default, the process runs daily, but you can modify this schedule in the [Process automation](../../fin-ops-core/fin-ops/sysadmin/process-automation.md) workspace, as described in the next section.
 
@@ -57,8 +57,8 @@ To turn the rule on or off, or to change the frequency of the rule, follow these
 1. Go to **System administration** \> **Periodic tasks** \> **Maintain diagnostic validation rules**.
 1. Find the row where **Rule name** is *Check for aged processed or canceled messages*.
 1. Make the following settings for the rule as needed:
-    - **Status**: Set to *Active* or *Inactive*.
-    - *Run frequency*: Choose how often to run the check (*Daily*, *Weekly*, *Monthly*, or *Unscheduled*).
+    - **Status** – Set to *Active* or *Inactive*.
+    - **Run frequency** – Choose how often to run the check (*Daily*, *Weekly*, *Monthly*, or *Unscheduled*).
 
 To view and act on your optimization opportunities, including those related to cleaning up aged messages, follow these steps.
 
