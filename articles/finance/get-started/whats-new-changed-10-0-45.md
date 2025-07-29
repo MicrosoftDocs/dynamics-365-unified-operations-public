@@ -71,11 +71,11 @@ This section contains a table that lists the enhancements that are included in t
 |Accounts receivable|	Accounts receivable|	When a free text invoice is created and posted, the posted invoice journal total is incorrect where the calculation isn't considering all total lines amount. Although the Ledger entries are correct but Custtrans amounts and CustInvoiceJour are incorrect.	|Feature management|
 |Accounts receivable|	Accounts receivable|	Invoice and invoice line details information in the **Associations** FastTab in **My cases** page. |	Feature management|
 | Cash and bank management | Modern bank reconciliation | Unintended matches between bank statement and bank transactions are prevented, unless explicitly defined and configured on the reconciliation rule. | Feature management |
-| Cash and bank management | Modern bank reconciliation | When the feature is enabled, customer and vendor bank accounts are automatically found when manual payment journal is created during bank reconciliation process. The suggestion of customer or vendor account is based on bank account number, IBAN, or trading party name available on the bank statement line. | Feature management |
+| Cash and bank management | Modern bank reconciliation | When the feature is enabled, customer and vendor bank accounts are automatically found when the manual payment journal is created during the bank reconciliation process. The suggestion of customer or vendor account is based on bank account number, IBAN, or trading party name available on the bank statement line. | Feature management |
 |Credit and collections	|Accounts receivable	|The user should be able to view and select the option for the due date and the terms of payment while posting a customer interest note.|	Feature management|
 |Credit and collections|	Accounts receivable|	Email template on the collection process automation uses the variables on the Subject line.	|Feature management |
 |Fixed assets |  Asset split logic independent of labels |  The feature involves researching and refactoring code paths that rely on localized labels for the split fixed asset process. It transitions from using labels to using a split subtype, ensuring that the logic is based on stable and consistent criteria. This change addresses issues where user-modifiable labels could cause unexpected behavior in the system.|  |
-|General ledger| Validate year-end close enhanced |  When running the **Validate year-end close** process additional checks are done with partial ledger settlements. |  Default|
+|General ledger| Validate year-end close enhanced |  When running the **Validate year-end close** process, additional checks are done with partial ledger settlements. |  Default|
 |General ledger | Ledger settlements audit trail includes description and reason | On the **Ledger settlements** page, the **Description** column displays the description from the original transaction. The **Reason** column displays the comment entered for the ledger settlement. The **Ledger settlements inquiry** page also displays both the **Description** and **Reason** columns.|  Default|
 |General ledger |LedgerTransSettlementEntity V2 | When partial ledger settlements is enabled, a new entity is used for export/import in Ledger settlements. The marked column required a new entity when using partial ledger settlements. | Default|
 |Subscription billing	|Subscription billing|	At the termination of billing schedule, a credit note is created against the invoices (sales orders) with the same exchange rate used at the time of invoicing.|	Feature management|
@@ -114,9 +114,9 @@ The following table lists the features that were removed from Feature management
 
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
-| Extended look up of Electronic reporting format configurations allowing to inquire the Global repository | The related functionality is enabled out of the box. | Electronic reporting (ER) |
-| Globalization Studio | The related functionality is enabled out of the box. | Globalization Studio |
-| E-invoicing service workspace designer | The related functionality is enabled out of the box. | Globalization Studio |
+| Extended look up of Electronic reporting format configurations allowing to inquire the Global repository | The related functionality is enabled out of the box | Electronic reporting (ER) |
+| Globalization Studio | The related functionality is enabled out of the box | Globalization Studio |
+| E-invoicing service workspace designer | The related functionality is enabled out of the box | Globalization Studio |
 | Utilize application resources to perform CBD documents conversion from Word to PDF format | Disabled in Feature management due to replacement by In-App PDF conversion for Configurable Business Documents (CBD) | Electronic reporting (ER) |
 |Selection of advance invoices for reversing while posting sales order credit note | Remove or obsolete feature |	Accounts receivable|
 |(Lithuania) Don't add the VAT keyword to the beginning of the invoice title| Remove or obsolete feature | Accounts receivable|
@@ -139,8 +139,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 ### Regulatory updates
 
-For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle 
-Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
+For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
 
 ### Dynamics 365 and industry clouds: 2025 release wave 1 plan
 
