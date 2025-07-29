@@ -3,7 +3,7 @@ title: Reverse changes in a dispatch board
 description: Learn how to reverse unsaved modifications that you make in a dispatch board, including a step-by-step process for reversing unsaved changes. 
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac 

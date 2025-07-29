@@ -3,8 +3,9 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.13 (Oc
 description: Learn about features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.13 with an outline on included features. 
 author: kamaybac
 ms.author: kamaybac
-ms.topic: conceptual
-ms.date: 05/28/2024
+ms.topic: whats-new
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen

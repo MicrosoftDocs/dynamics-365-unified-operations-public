@@ -3,7 +3,7 @@ title: Configure PowerBI.com integration
 description: Learn how to configure a new finance and operations environment to support integration with PowerBI.com, including a list of thing to know before starting.
 author: RichdiMSFT
 ms.author: sericks
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/21/2022
 ms.reviewer: johnmichalak
 ms.search.form: PowerBIConfiguration
@@ -13,6 +13,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: sfi-image-nochange
 ---
 
 # Configure PowerBI.com integration

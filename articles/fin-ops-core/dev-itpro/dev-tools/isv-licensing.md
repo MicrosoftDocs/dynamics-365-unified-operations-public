@@ -11,6 +11,7 @@ ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
+ms.custom: sfi-image-nochange
 ---
 
 # Independent software vendor (ISV) licensing
@@ -28,7 +29,7 @@ The Microsoft Dynamics ecosystem provides tools and frameworks that let independ
 This feature doesn't enable ISV competitor copycat protection (that is, source-based protection).
 
 > [!IMPORTANT]
->  Starting with Dynamics 365 Finance version 10.0.43, all licenses are issued at the tenant level. This means a single license can potentially be used across multiple environments that share the same tenant ID.
+>  Starting with Dynamics 365 Finance version 10.0.43, all licenses are issued at the tenant level. This means a single license can potentially be used across multiple environments that share the same tenant ID. Licenses generated in Dynamics 365 Finance version 10.0.43 and later aren't compatible with older versions of the application.
 
 ## Capabilities
 This section describes various capabilities of the ISV licensing feature.
@@ -151,7 +152,7 @@ Follow these steps to enable licensing for your solution.
 
     Example for HSM based key.
      > [!NOTE]
-     > To use the subjectname and thumbprint parameter: first install the certificate to Current User | My store, and then run the following command:
+     > To use the subject name and thumbprint parameters, first install the certificate to the Windows certificate store. Go to **Current user** > **Personal (My)** and run the following command:
     ```Console
     C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /licensecode:ISVLicenseCode /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /subjectName:"ISVCert" /thumbprint:******** /expirationdate:11/30/2023 
      ```

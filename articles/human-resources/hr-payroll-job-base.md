@@ -5,7 +5,7 @@ title: Job base entity
 description: This article provides details and an example query for the Job base entity in Microsoft Dynamics 365 Human Resources.
 author: jcart
 ms.date: 04/04/2024
-ms.topic: article
+ms.topic: how-to
 
 # optional metadata
 

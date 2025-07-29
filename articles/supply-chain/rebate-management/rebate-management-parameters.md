@@ -3,12 +3,12 @@ title: Rebate management parameters
 description: Learn about the Rebate management parameters page. This page contains settings that affect posting, status updates, number sequences, and other behavior.
 author: sherry-zheng
 ms.author: chuzheng
-ms.topic: how-to
-ms.date: 05/15/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: TAMRebateParameters
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+- bap-template
 ---
 
 # Rebate management parameters
@@ -17,7 +17,7 @@ ms.search.form: TAMRebateParameters
 
 The **Rebate management parameters** page is used to define settings that apply across the **Rebate management** module. These settings affect posting, status updates, number sequences, and other behavior. The setup on this page is shared across legal entities and can be modified by users who have the appropriate security permissions.
 
-To open the **Rebate management parameters** page, go to **Rebate management \> Setup \> Rebate management parameters**. Then set the fields as described in the following subsections.
+To open the **Rebate management parameters** page, go to **Rebate management** \> **Setup** \> **Rebate management parameters**. Then set the fields as described in the following subsections.
 
 ## Rebate management tab
 

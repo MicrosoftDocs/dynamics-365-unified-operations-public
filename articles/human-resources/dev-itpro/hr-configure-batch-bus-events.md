@@ -6,7 +6,7 @@ description: This article describes how to configure business events to run in a
 author: twheeloc
 ms.author: twheeloc
 ms.reviewer: twheeloc
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 5/23/2023
 ms.custom:
 

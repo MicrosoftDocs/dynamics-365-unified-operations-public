@@ -5,7 +5,7 @@ title: Set up prospects in the HR Recruiting app (preview)
 description: This article explains how to set up prospects in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/01/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: 

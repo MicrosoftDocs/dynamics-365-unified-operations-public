@@ -1,69 +1,61 @@
---- 
+---
 title: Associate a fuel index with a carrier as an accessorial charge
 description: Learn how to create an accessorial assignment, accessorial master for fuel surcharge, and associate carrier fuel indexes with a carrier.
 author: lisascholz91
 ms.author: lisascholz
-ms.topic: how-to
-ms.date: 11/14/2016
-ms.custom:
-ms.reviewer: kamaybac 
+ms.reviewer: kamaybac
 ms.search.form: TMSRatingProfile
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Associate a fuel index with a carrier as an accessorial charge
 
 [!include [banner](../../includes/banner.md)]
 
-This guide shows how to create an accessorial assignment, carrier accessorial charge, accessorial master for fuel surcharge, and associate a carrier fuel index with a carrier. You need to have set up a carrier fuel index before you run this guide. You can use the "Set up a carrier fuel index" guide to do this. These setup tasks are typically done by a Logistics manager. The demo data used to create this procedure is USMF.
-
+This guide shows how to create an accessorial assignment, carrier accessorial charge, and accessorial master for fuel surcharge. It also shows how to associate a carrier fuel index with a carrier. A carrier fuel index must already exist before you run this guide (learn more in [Set up a carrier fuel index](set-up-carrier-fuel-index.md)). These setup tasks are typically done by a logistics manager.
 
 ## Create an accessorial master
-1. Go to Transportation management > Setup > Rating > Accessorial masters.
-2. Click New.
-3. In the Accessorial master field, type a value.
-4. In the Name field, type a value.
-5. Click Save.
+
+1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Accessorial masters**.
+1. Select **New**.
+1. In the **Accessorial master** field, type a value.
+1. In the **Name** field, type a value.
+1. Select **Save**.
 
 ## Create a carrier accessorial charge
-1. Go to Transportation management > Setup > Rating > Carrier accessorial charges.
-2. Click New.
-3. In the Carrier accessorial ID field, type a value.
-4. In the Shipping carrier field, click the drop-down button to open the lookup.
-5. In the list, find and select the desired record.
-    * In this example, choose Truck Carrier.  
-6. In the list, click the link in the selected row.
-7. In the Carrier service field, click the drop-down button to open the lookup.
-8. In the list, click the link in the selected row.
-9. In the Accessorial master field, click the drop-down button to open the lookup.
-10. In the list, find and select the desired record.
-    * In this example, choose the newly created Accessorial master.  
-11. Click Save.
+
+1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Carrier accessorial charges**.
+1. Select **New**.
+1. In the **Carrier accessorial ID** field, type a value.
+1. In the **Shipping carrier** field, find and select the desired record.
+1. In the **Carrier service** field, select the link in the selected row.
+1. In the **Accessorial master** field, select the desired record.
+1. Select **Save**.
 
 ## Create an accessorial assignment
-1. Click Accessorial assignments.
-2. Click New.
-3. In the Name field, type a value.
-4. Toggle the expansion of the Criteria section.
-    * In the criteria, you can choose to always apply the fuel surcharge or for this example choose that it only applies within a certain region.  
-5. In the ZIP/postal code from field, type a value.
-6. In the ZIP/postal code to field, type a value.
-7. Toggle the expansion of the Calculation section.
-    * In the calculation section you can specify how to calculate the fuel surcharge. This calculation depends on the Accessorial unit that you chose as the base for your calculation.  
-8. In the Accessorial fee type field, select 'Fuel surcharge'.
-9. In the Accessorial unit field, select 'Mileage'.
-10. In the Region field, click the drop-down button to open the lookup.
-11. In the list, click the link in the selected row.
-12. Click Save.
+
+1. Select **Accessorial assignments**.
+1. Select **New**.
+1. In the **Name** field, type a value.
+1. Expand the **Criteria** FastTab. Here, you can choose to always apply the fuel surcharge or, for this example, choose that it only applies within a certain region.  
+1. In the **ZIP/postal code from** field, type a value.
+1. In the **ZIP/postal code to** field, type a value.
+1. Expand the **Calculation** FastTab. Here, you can specify how to calculate the fuel surcharge. This calculation depends on the accessorial unit that you chose as the base for your calculation.  
+1. In the **Accessorial fee type** field, select a fee type (such as *Fuel surcharge*).
+1. In the **Accessorial unit** field, select a unit (such as *Mileage*).
+1. In the **Region** field, select the link in the selected row.
+1. Select **Save**.
 
 ## Update the carrier rating profile
-1. Go to Transportation management > Setup > Carriers > Shipping carriers.
-2. In the list, find and select the desired record.
-3. Toggle the expansion of the Rating profiles section.
-4. Click Edit.
-5. In the Carrier fuel index field, click the drop-down button to open the lookup.
-6. In the list, click the link in the selected row.
-7. Click Save.
 
-
+1. Go to **Transportation management** \> **Setup** \> **Carriers** \> **Shipping carriers**.
+1. In the list, find and select the desired record.
+1. Expand the **Rating profiles** FastTab.
+1. Select **Edit**.
+1. In the **Carrier fuel index** field, select the link in the selected row.
+1. Select **Save**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

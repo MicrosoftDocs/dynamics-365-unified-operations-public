@@ -5,7 +5,7 @@ title: Define a loyalty program with two loyalty tiers
 description: This article describes how to set up a loyalty program with two loyalty tiers in Microsoft Dynamics 365 Commerce. 
 author: jashanno
 ms.date: 12/21/2023
-ms.topic: article  
+ms.topic: how-to
 audience: Application User 
 ms.reviewer: josaw
 ms.search.region: Global

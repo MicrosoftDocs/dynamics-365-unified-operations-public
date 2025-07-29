@@ -3,7 +3,7 @@ title: Refresh database
 description: Learn how to perform a refresh of a database for Microsoft Dynamics 365 Finance, including an overview of known issues.
 author: LaneSwenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/06/2023
 ms.reviewer: johnmichalak
 audience: IT Pro, Developer

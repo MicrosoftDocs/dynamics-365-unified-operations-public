@@ -9,8 +9,9 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment

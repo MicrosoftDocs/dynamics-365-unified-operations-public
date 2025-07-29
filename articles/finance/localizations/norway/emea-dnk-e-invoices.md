@@ -1,31 +1,30 @@
 ---
 title: Customer electronic invoices in Denmark
-description: Learn how to set up and process electronic invoices in Denmark, including prerequisites and anoutline on importing electronic reporting configurations.
+description: Learn how to set up and process electronic invoices in Denmark in Microsoft Dynamics 365 Finance.
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/06/2024
+ms.date: 06/12/2025
 ms.reviewer: johnmichalak
 ms.search.region: Norway
 ms.search.validFrom: 2021-01-01
-ms.dyn365.ops.version: 10.0.21
 ---
 
 # Customer electronic invoices in Denmark
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to configure and issue customer electronic invoices in Denmark by using the [OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html) format for electronic invoices.
+This article explains how to set up and process electronic invoices in Denmark in Microsoft Dynamics 365 Finance.
 
 ## Prerequisites
 
 The primary address of the legal entity must be in Denmark.
 
-## Import Electronic reporting configurations
+## Import electronic reporting configurations
 
-In the **Electronic reporting** workspace, import the following Electronic reporting (ER) formats from the repository:
+In the **Electronic reporting** workspace, import the following electronic reporting (ER) formats from the repository:
 
 - OIOUBL Sales invoice (DK)
 - OIOUBL Project invoice (DK)
@@ -35,11 +34,13 @@ In the **Electronic reporting** workspace, import the following Electronic repor
 > [!NOTE]
 > Any other required configurations are automatically imported.
 
-For more information about how to import ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+For more information about how to import ER configurations, see [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 ### Reference the imported ER format configurations
 
-1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+To reference the imported ER format configurations, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, select the imported formats for electronic documents:
 
     - **Sales and Free text invoice:** OIOUBL Sales invoice (DK)
@@ -51,14 +52,16 @@ For more information about how to import ER configurations, see [Import Electron
 
 ### Configure legal entity parameters
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+To configure legal entity parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's value-added tax (VAT) number.
 3. On the **Bank account information** FastTab, in the **Routing number** field, enter the company's registration number.
 4. In the **FI-Creditor ID** field, enter the creditor's identification number if you plan to use FIK payments.
 
 ### Configure methods of payment
 
-According to OIOUBL standards, the payment method codes in the XML file output of electronic invoices must comply with the [official list of standardized codes](http://www.oioubl.info/codelists/en/urn_oioubl_codelist_paymentmeanscode-1.1.html).
+According to OIOUBL standards, the payment method codes in the XML file output of electronic invoices must comply with the [official list of standardized codes](https://oioubl21.oioubl.dk/codelists/en/urn_oioubl_codelist_paymentmeanscode-1.1.html).
 
 The system supports the following predefined codes for payment methods and provides automatic conversion to the official codes.
 
@@ -69,9 +72,9 @@ The system supports the following predefined codes for payment methods and provi
 | DK:GIRO                      | 50                           |
 | All other codes              | 97                           |
 
-Follow these steps to configure methods of payment.
+To configure methods of payment, follow these steps.
 
-1. Go to **Accounts receivable** \> **Setup** \> **Payments setup** \> **Methods of payment**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Payments setup** \> **Methods of payment**.
 2. Create a new method of payment, or select an existing method to configure.
 3. On the **General** FastTab, in the **Posting** section, in the **Account type** field, select **Bank**.
 4. In the **Payment account** field, enter the company bank account that is associated with the method of payment.
@@ -81,7 +84,9 @@ Follow these steps to configure methods of payment.
 
 ### Configure units of measure
 
-1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
+To configure units of measure, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID in the list, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
 4. In the **Value** section, in the **Value** field, enter the external code that should be used as the recommended unit of measure code according to [Codes for Units of Measure Used in International Trade](https://docs.oasis-open.org/ubl/prd1-UBL-2.1/cva/UBL-DefaultDTQ-2.1.html#d27e1).
@@ -92,7 +97,7 @@ When you generate electronic invoices in OIOUBL format, the tax information in t
 
 The top level of the hierarchy is **Tax Scheme**. <!-- The provided link appears to be broken For the official list of tax schemes that are applicable to the OIOUBL format, see [OIOUBL Tax Schemes](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TaxSchemeID-1.5.pdf). -->
 
-The next level of tax data grouping, within the tax scheme, is **Tax Category**. For the official list of tax categories that are applicable to the OIOUBL format, see [OIOUBL Tax Categories](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TAXCATEGORYID.pdf). 
+The next level of tax data grouping, within the tax scheme, is **Tax Category**. For the official list of tax categories that are applicable to the OIOUBL format, see [OIOUBL Tax Categories](https://oioubl21.oioubl.dk/documents/da/da/Kodelister/OIOUBL_CODE_TAXCATEGORYID.pdf). 
 
 For some taxes, an additional attribute, **Tax Type Code**, must also be defined.
 
@@ -133,7 +138,9 @@ For each configuration, follow these steps.
 
 ### Configure customer parameters
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
+To configure customer parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
 2. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable the generation of electronic invoices.
 3. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice.
 4. In the **Tax exempt number** field, enter the customer's VAT exempt number.
@@ -151,11 +158,11 @@ After an invoice is posted, you can generate an electronic invoice by selecting 
 
 ![Sending an e-invoice.](../media/emea-nor-ger-einvoice.jpg)
 
-### View e-invoices
+### View electronic invoices
 
-Follow these steps to inquire about the XML files of electronic invoices that have been generated.
+To view electronic invoices, follow these steps.
 
-1. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
 2. Select a job, and then select **Show files**.
 3. Select **Open** to download the file that contains the electronic invoice.
 

@@ -3,7 +3,7 @@ title: Extend the budget planning layout
 description: This article explains how to extend the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout.
 author: kfend
 ms.author: kfend
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/24/2020
 ms.custom:
 ms.reviewer: kfend

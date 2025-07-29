@@ -1,16 +1,17 @@
 ---
-title: GS1 bar codes
+title: GS1 bar codes and QR codes
 description: Learn how to set up GS1 bar codes and QR codes so that labels can be scanned in a warehouse with an outline on the GS1 bar code format.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: how-to
-ms.date: 05/26/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSGS1ParsingSetup, WHSGS1GenericSetup, WHSGS1PolicyTable, WHSWorkUserSession
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
-# GS1 bar codes
+# GS1 bar codes and QR codes
 
 [!include [banner](../includes/banner.md)]
 
@@ -264,7 +265,7 @@ To set up and customize your bar code data policies, follow these steps.
 >
 > - For bar codes that include more than one identical application identifier, you *must* use the **Sorting** field to establish the order of the fields.
 > - When **Auto Submit** is set to *Yes*, the mobile device immediately sends scanned information to the system. After the information is received, the mobile device displays a new screen, ready for the next input. This feature allows for a quick and efficient scanning process. The device only displays data after scanning when user interaction is required.
-> - Select the **Allow overwriting** checkbox for rows where scanned information should replace the default data in the system. For example, if there is a purchase order for 10 pieces, but you only need to scan 5 pieces, this option will allow the scanned data to override the default quantity.
+> - Select the **Allow overwriting** checkbox for rows where scanned information should replace the default data in the system. For example, if there's a purchase order for 10 pieces, but you only need to scan 5 pieces, this option will allow the scanned data to override the default quantity.
 
 ## Assign bar code data policies to mobile device menu items
 

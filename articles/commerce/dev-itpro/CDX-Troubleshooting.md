@@ -5,7 +5,7 @@ title: Commerce Data Exchange troubleshooting
 description: This article provides information that helps you troubleshoot CDX in implementations.
 author: aneesa
 ms.date: 04/02/2024
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,6 +14,7 @@ ms.search.industry: Retail
 ms.author: aneesa
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
+ms.custom: sfi-ropc-nochange
 ---
 
 # Commerce Data Exchange troubleshooting

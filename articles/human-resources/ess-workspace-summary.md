@@ -5,6 +5,7 @@ title: Employee self service leave summary
 description: This article provides an overview of the Employee self service leave summary feature.
 author: jcart
 ms.date: 01/17/2025
+ms.update-cycle: 180-days
 ms.topic: overview
 ms.reviewer: twheeloc
 # optional metadata

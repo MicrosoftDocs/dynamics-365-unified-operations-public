@@ -10,6 +10,7 @@ ms.collection: get-started
 ms.search.region: Global
 ms.search.validFrom: 2023-12-01
 ms.dyn365.ops.version: AX 10.0.37
+ms.custom: sfi-image-nochange
 ---
 
 # Electronic Invoicing service ISV last-mile connector

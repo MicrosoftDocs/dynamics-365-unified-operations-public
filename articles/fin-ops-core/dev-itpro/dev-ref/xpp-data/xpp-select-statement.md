@@ -1,10 +1,10 @@
 ---
 title: Select statement
 description: Learn about select statements in the X++ language, including examples for select, insert, update, and delete statements, including a syntax table.
-author: josaw1
-ms.author: josaw
-ms.topic: article
-ms.date: 08/27/2021
+author: pvillads
+ms.author: pvillads
+ms.topic: how-to
+ms.date: 05/19/2025
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,20 +16,21 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-The **select** statement fetches or manipulates data from the database.
+The **select** statement fetches data from the database.
 
-+ All **select** statements use a table variable to fetch records. This variable must be declared before a **select** statement can be run.
-+ The **select** statement fetches only one record, or field. To fetch or traverse multiple records, you can use the **next** statement or the **[while select](xpp-while-select.md)** statement.
++ All **select** statements use a table variable to fetch records. The type of this variable is a Table that is defined in the Application Object Tree. This variable must be declared before a **select** statement can be run.
++ The **select** statement fetches only one record, or field. To fetch or traverse multiple records, you can use the **next** statement or the **[while select](xpp-while-select.md)** statement. 
 
     + The **next** statement fetches the next record in the table. If no **select** statement precedes the **next** statement, an error occurs. If you use a **next** statement, don't use the **firstOnly** find option.
     + It's more appropriate to use a **while select** statement to traverse multiple records.
 
 + The results of a **select** statement are returned in a table buffer variable.
-+ If you use a field list in the **select** statement, only those fields are available in the table variable.
++ If you use a field list in the **select** statement, only those fields are available in the table variable. All other fields will have their default values.
++ Each table has a set of predefined fields. One of these, the RecId field, contains a value that is unique to each record in that table. If this value is **0** then no record was selected from the database.
 
 ## Select example
 
-The following example fetches all the columns in the first row of the CustTable table and prints the value in the **AccountNum** column of that row.
+The following example fetches all the columns in a record from the CustTable table and prints the value in the **AccountNum** column of that row. The record fetched is unpredictable, since no **order by** clause was provided.
 
 ```xpp
 CustTable custTable;
@@ -41,14 +42,15 @@ For more examples of data selection, see [Select data](xpp-select.md).
 
 ## Insert example
 
-The following example inserts a new record into the CustTable table. The **AccountNum** column of the new record is set to **2000**, and the **CustGroup** column is set to **1**. Other fields in the record will be blank.
+The following example inserts a new record into the CustTable table. The **AccountNum** column of the new record is set to **2000**, and the **CustGroup** column is set to **1**. 
 
 ```xpp
 ttsBegin;
     CustTable custTable;
-    custTable.initValue();
+
     custTable.AccountNum = '2000';
     custTable.CustGroup = '1';
+
     custTable.insert();
 ttsCommit;
 ```
@@ -57,15 +59,19 @@ For more examples of data insertion, see [Insert data](xpp-insert.md).
 
 ## Update example
 
-The following example selects the CustTable table for update. Only records where the value of the **AccountNum** field equals **2000** are updated. Because there is no call to **next**, and this example doesn't use a **select while** statement, only one record is updated. The value of the **CreditMax** field is changed to **5000**.
+The following example selects the CustTable table for update. Only the record where the value of the **AccountNum** field equals **2000** are updated. Because there is no call to **next**, and this example doesn't use a **select while** statement, only one record is updated. The value of the **CreditMax** field is changed to **5000** if the a CustTable instance with the AccountNum equals to **2000** was found.
 
 ```xpp
 ttsBegin;
     CustTable custTable;
     select forUpdate custTable
         where custTable.AccountNum == '2000';
-    custTable.CreditMax = 5000;
-    custTable.update();
+
+    if (custTable)
+    {
+        custTable.CreditMax = 5000;
+        custTable.update();
+    }
 ttsCommit;
 ```
 
@@ -219,7 +225,7 @@ The **asc** keyword is an option on the **order by** or **group by** clause. It 
 ```xpp
 CustTable custTable;
 select * from custTable
-    order by Value asc;
+    order by CredMax asc;
 ```
 
 ## avg keyword
@@ -228,8 +234,8 @@ The **avg** keyword returns the average of the fields.
 
 ```xpp
 CustTable custTable;
-select avg(Value) from custTable;
-info(int642Str(custTable.Value));
+select avg(CreditMax) from custTable;
+info(strFmt('%1', custTable.CreditMax));
 ```
 
 ## count keyword
@@ -288,7 +294,7 @@ The **desc** keyword is an option on the **order by** or **group by** clause. It
 ```xpp
 CustTable custTable;
 select * from custTable
-    order by Value desc;
+    order by AccountNum desc;
 ```
 
 ## exists keyword
@@ -404,8 +410,10 @@ The **forUpdate** keyword selects records for update only. Depending on the unde
 ```xpp
 ttsBegin;
     CustTable custTable;
+
     select forUpdate custTable
         where custTable.AccountNum == '2000';
+    
     custTable.CreditMax = 5000;
     custTable.update();
 ttsCommit;
@@ -471,8 +479,7 @@ return [
     LedgerPostingType::purchStdProfit,
     LedgerPostingType::PurchStdLoss,
     LedgerPostingType::InventStdProfit,
-    LedgerPostingType::InventStdLoss
-];
+    LedgerPostingType::InventStdLoss];
 }
 ```
 
@@ -485,7 +492,7 @@ CustTable custTable;
 while select AccountNum, Value from custTable
     index AccountIdx
 {
-    Info(custTable.AccountNum +  ": " + int642Str(custTable.Value));
+    Info(custTable.AccountNum +  ": " + int642Str(custTable.RecID));
 }
 ```
 
@@ -496,18 +503,18 @@ The **index hint** keyword forces SQL Server to use a specific index. Using **in
 Before you can use **index hint** in queries, you must call **allowIndexHint(true)** on the table. The default behavior for **index hint** is **false**, and the hint is ignored.
 
 > [!WARNING]
-> You should use **index hint** sparingly and with caution, and only when you can be sure that it improves performance. The **index hint** keyword and API let you pass the correct hints when they are required. If you're ever in doubt, avoid using **index hint**.
+> You should use **index hint** sparingly and with caution, and only when you can be sure that it improves performance. The **index hint** keyword and API let you pass the correct hints when they are required. If you're in doubt, avoid using **index hint**.
 
 In the following example, the **AccountIdx** index is used to sort the records in the query on the CustTable table.
 
 ```xpp
-str _accountNum = '111';
+str accountNum = '111';
 CustTable custTable;
 custTable.allowIndexHint(true);
 
 while select forUpdate custTable
     index hint AccountIdx
-    where custTable.AccountNum == _accountNum
+    where custTable.AccountNum == accountNum
 {
 }
 ```
@@ -527,7 +534,6 @@ while select custGroup
 {
     totalCredit += custTable.CreditMax;
 }
-}
 ```
 
 ## maxof keyword
@@ -537,7 +543,7 @@ The **maxof** keyword returns the maximum of the fields.
 ```xpp
 CustTable custTable;
 select maxof(CreditMax) from custTable;
-info(int642Str(custTable.Value));
+info(strFmt('%1', custTable.CreditMax));
 ```
 
 ## minof keyword
@@ -547,7 +553,7 @@ The **minof** keyword returns the minimum of the fields.
 ```xpp
 CustTable custTable;
 select minof(CreditMax) from custTable;
-info(int642Str(custTable.Value));
+info(strFmt('%1', custTable.CreditMax));
 ```
 
 ## noFetch keyword
@@ -562,9 +568,11 @@ select noFetch custTable
     order by AccountNum;
 ```
 
+The matching record will be fetched when the first call to **next** is executed. This is useful for limiting lock contention with tables that have many rows.
+
 ## notExists keyword
 
-The **notExists** keyword is selected only if there are no posts.
+The **notExists** keyword checks for the absence of related records in the joined table. If a match does exist, teh record is excluded from the results. If no match is found, the record is included in the results.
 
 ``` xpp
 CustTable custTable;
@@ -590,7 +598,7 @@ select optimisticLock custTable
 
 ## order by keyword
 
-The **order by** keyword instructs the database to sort the selected records by the fields in the **order by** list. The keyword **by** is optional.
+The **order by** keyword instructs the database to sort the selected records by the fields in the **order by** list. The **by** keyword is optional.
 
 ```xpp
 CustTable custTable;
@@ -707,7 +715,7 @@ The **sum** keyword returns the sum of the fields. It can be used to sum all acc
 ```xpp
 CustTable custTable;
 select sum(CreditMax) from custTable;
-info(int642Str(custTable.Value));
+info(strFmt('%1', custTable.CreditMax));
 ```
 
 ## validTimeState keyword
@@ -718,11 +726,10 @@ The **validTimeState** keyword selects rows from a table where the **ValidTimeSt
 CustPackingSlipTransHistory history;
 utcDateTime dateFrom, dateTo = DateTimeUtil::utcNow();
 anytype recid = -1;
-select
-    validTimeState(dateFrom, dateTo)
-    *
-    from history;
+
+select validTimeState(dateFrom, dateTo) * from history;
 recid = history.RecId;
+
 info('RecId:' + int642Str(recid));
 ```
 

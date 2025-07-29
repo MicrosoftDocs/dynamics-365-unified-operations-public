@@ -3,8 +3,8 @@ title: Format 1005 file for Colombia configuration
 description: Learn about the configuration that's required to issue the format 1005 file for Colombia, including an outline on configuring application-specific parameters.
 author: Fhernandez0088
 ms.author: v-federicohe
-ms.topic: article
-ms.date: 11/20/2023 
+ms.topic: how-to
+ms.date: 04/29/2025 
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -17,20 +17,20 @@ This article explains the configuration that's required to issue a format 1005 f
 
 Before you print the report, the following prerequisites must be met:
 
-- The legal entity must have an address in a country within the Latin American (LATAM) localization.
-- The country-specific LATAM feature and the general feature must be activated.
+- The legal entity must have an address in a country/region within the Latin American (LATAM) localization.
+- The country/region specific LATAM feature and the general feature must be activated.
 - The following configurations must be imported from the Global repository:
 
     - LTM Tax Report
     - Format 1005 file
 
-    For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+    For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 - The Electronic reporting (ER) parameters must be configured. For more information, see [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
 ## Configure application-specific parameters for format 1005
 
-Lookups and conditions are designed so that you can select the combination of document classification IDs and tax codes that's used in the transactions that are shown on the report.
+Lookups and conditions are designed so that you can select the combination of document classification IDs and tax codes that's used in the transactions that are shown in the report.
 
 After the previously listed prerequisites are met, follow these steps.
 
@@ -70,13 +70,18 @@ After the previously listed prerequisites are met, follow these steps.
     2. In the **Document classification id.** field, select **Not Blank**.
 
     > [!NOTE]
-    > The document classes that are selected in this configuration must be used in the company transactions that are included on the report.
+    > The document classes that are selected in this configuration must be used in the company transactions that are included in the report.
 
 12. In the **Lookups** section, select **TaxType**.
 13. In the **Conditions** section, select **Add**, and then follow these steps:
 
     1. In the **Lookup result** field, select **Tax credit**.
     2. In the **Tax code** field, select an option that represents the VAT.
+
+14. Select **Add** again, and then follow these steps:
+
+    1. In the **Lookup result** field, select **Vat Cost**.
+    2. In the **Tax code** field, select an option that represents the VAT charged at cost.
 
 14. Select **Add** again, and then follow these steps:
 
@@ -115,7 +120,7 @@ After the previously listed prerequisites are met, follow these steps.
 ## Issue a format 1005 file
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
-2. In the **Format mapping** field, select **Format 1009**.
+2. In the **Format mapping** field, select **Format 1005**.
 3. Select **OK**.
 4. Select a date range.
 5. Select **OK**.

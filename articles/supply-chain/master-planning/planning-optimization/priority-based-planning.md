@@ -1,12 +1,14 @@
 ---
 title: Priority-based planning
 description: Learn about the priority-based planning feature of Microsoft Dynamics 365 Supply Chain Management with an outline on toggling priority-based planning.
-author: t-benebo
-ms.author: benebotg
-ms.topic: article
-ms.date: 10/15/2021
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: 
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Priority-based planning
@@ -64,15 +66,15 @@ The following additional rules become effective when the **Priority calculation 
 
 - If the **Consider demand priority** option for the planned priority model is set to *Yes*, priority that is set on each demand line will limit the priority range bucket. The priority of any new planned order for supply will be no lower than the demand's priority. The range's upper value is considered a threshold that the demand's priority value is compared against. If the demand's priority is exactly in the middle between the upper threshold values of two ranges, the range that has the highest priority (that is, the lowest priority value) will be selected.
 - If the **Planned order creation** field for the planned priority model is set to *Single supply with most important priority*, only one supply will be created to fulfill all the way up to the maximum. The priority will be set to the priority of the first range that will trigger a supply.
-- If there is no on-hand inventory, no supply, and no demand, the line in the **Planning priority ranges** grid where the **From quantity** field is set to *Zero* will be used.
-- If there is demand, but there is no on-hand inventory or expected supply, the line in the **Planning priority ranges** grid where the **From quantity** field is set to *Zero or less* will be used.
+- If there's no on-hand inventory, no supply, and no demand, the line in the **Planning priority ranges** grid where the **From quantity** field is set to *Zero* will be used.
+- If there is demand, but no on-hand inventory or expected supply, the line in the **Planning priority ranges** grid where the **From quantity** field is set to *Zero or less* will be used.
 - When the range that the demand is part of is evaluated, the setting of the **Consider demand priority** option will still have an effect.
 
 ## Differences between traditional timeline calculations and priority-based planning
 
 Priority-based planning differs from traditional timeline calculations in the following ways:
 
-- All the regular preplanning processors are still in effect. These pre-processors include pegging of approved planned orders against sales demand, purchase requisition mapping, and reservation logic. Only demand that isn't fulfilled by these pre-processors is processed.
+- All the regular preplanning processors are still in effect. These preprocessors include pegging of approved planned orders against sales demand, purchase requisition mapping, and reservation logic. Only demand that isn't fulfilled by these preprocessors is processed.
 - During pegging, all supply is considered, regardless of its priority. This supply includes on-hand inventory, released supply, and the non-pegged portion of approved planned orders.
 - No "negative days" demand can be pegged against supply during the whole coverage time.
 - When supply is pegged against demand, the supply that has the highest priority (that is, the lowest priority value) is used up first. On-hand supply is considered to have a priority value of 0 (zero). Therefore, it will be consumed as the very first source.

@@ -4,7 +4,7 @@ description: Learn about the Restrict to sales unit functionality for products.
 ms.author: atapiabailon
 author: Atapiabailon
 ms.date: 02/20/2025
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductDetailsExtendedGrid, WHSAutoReleaseToWarehouse
 ms.custom: bap-template

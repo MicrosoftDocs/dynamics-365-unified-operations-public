@@ -5,7 +5,7 @@ author: jkhaira7
 ms.author: jkhaira 
 ms.reviewer: twheeloc
 ms.date: 11/14/2024
-ms.topic: conceptual
+ms.topic: how-to
 audience: Application User
 ---
 

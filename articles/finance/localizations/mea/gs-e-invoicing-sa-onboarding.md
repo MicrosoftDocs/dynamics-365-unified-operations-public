@@ -1,26 +1,24 @@
 ---
 title: Onboarding for electronic invoicing in Saudi Arabia
-description: Learn how to onboard taxpayers and their electronic invoicing software with the Saudi Arabian tax authority, including an outline on the onboarding process.
+description: Learn how to onboard taxpayers and their electronic invoicing software with the Saudi Arabian tax authority in Microsoft Dynamics 365 Finance.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
-ms.date: 01/29/2024
-ms.custom:
+ms.topic: how-to
+ms.date: 06/05/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2024-01-29
-ms.search.form: 
-ms.dyn365.ops.version: 10.0.39
+ms.custom: 
+  - bap-template
 ---
 
 # Onboarding for electronic invoicing in Saudi Arabia
 
 [!INCLUDE[banner](../../../includes/banner.md)]
 
-Onboarding is mandatory for all taxpayers who are subject to electronic invoicing in Saudi Arabia. As a result of the onboarding process, taxpayers obtain Cryptographic Stamp Identifiers (CSIDs). CSIDs are required for integration with the electronic invoicing portal that the Saudi Arabian tax authority (Zakat, Tax and Customs Authority \[ZATCA\]) manages, and for further submission of electronic invoices.
+This article explains how to onboard taxpayers and their electronic invoicing software with the Saudi Arabian tax authority in Microsoft Dynamics 365 Finance.
 
-This article explains how to onboard taxpayers and their electronic invoicing software with ZATCA.
+Onboarding is mandatory for all taxpayers who are subject to electronic invoicing in Saudi Arabia. As a result of the onboarding process, taxpayers obtain Cryptographic Stamp Identifiers (CSIDs). CSIDs are required for integration with the electronic invoicing portal that the Saudi Arabian tax authority (Zakat, Tax and Customs Authority \[ZATCA\]) manages, and for further submission of electronic invoices.
 
 ## Prerequisites
 
@@ -35,6 +33,8 @@ The onboarding process consists of two steps:
 1. Obtain a Production CSID (PCSID), which ZATCA assigns to compliant EGSs.
 
 ### Obtain a CCSID
+
+To obtain a CCSID, follow these steps.
 
 1. In the [Saudi Arabian Taxation Portal (ERAD)](https://fatoora.zatca.gov.sa/), go to the Onboarding and Management Portal by selecting the relevant tile.
 1. On the main landing page of the Onboarding and Management Portal, select the **Onboard new solution unit/device** tile, and then select **Generate OTP code**.
@@ -142,7 +142,9 @@ After the compliance checks are successfully completed, use the PowerShell scrip
 
 To obtain a PCSID, you must correctly configure the solution for electronic invoice generation and submission, and the solution must be fully functioning. To achieve this result, you must complete all the required preliminary configuration steps. For more information, see [Electronic invoicing in Saudi Arabia - Phase two](GS-e-invoicing-sa-get-started.md).
 
-1. Make sure that all electronic invoices are successfully submitted to ZATCA.
+To obtain a PCSID, follow these steps.
+
+1. Ensure that all electronic invoices are successfully submitted to ZATCA.
 1. Run the [onboarding script](#script) that's provided later in this article. Specify the CCSID as an input parameter. Here's an example.
 
     `.\OnboardingScript.ps1 -action getProductionCSID -password 123`

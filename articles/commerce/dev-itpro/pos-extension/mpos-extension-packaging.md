@@ -3,7 +3,7 @@ title: Create a Modern POS extension package
 description: This article explains how to create a Modern POS extension package.
 author: josaw1
 ms.date: 05/03/2023
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

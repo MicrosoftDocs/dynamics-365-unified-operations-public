@@ -3,7 +3,7 @@ title: Throttling prioritization
 description: Learn about priority-based throttling for OData and custom service-based integrations, including how to determine prioritization.
 author: jaredha
 ms.author: sumadhey
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/25/2022
 ms.reviewer: johnmichalak
 audience: Developer 

@@ -3,7 +3,7 @@ title: Configure SharePoint channels
 description: Learn how to configure a Microsoft SharePoint channel to process incoming electronic invoices, including a step-by-step process.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/12/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started

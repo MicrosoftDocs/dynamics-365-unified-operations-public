@@ -3,7 +3,7 @@ title: Delete a return order
 description: Learn how to use the Delete return order form to delete multiple return orders, including a step-by-step process for using the delete return order form.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/01/2018
 ms.custom:
 ms.search.form: SalesDeleteOrder

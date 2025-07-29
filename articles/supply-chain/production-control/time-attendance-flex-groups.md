@@ -3,7 +3,7 @@ title: Flex groups
 description: Learn how flex groups are used in Time and attendance, including outlines on setting up flexible working hours in flex groups and rules for flex regulations.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/15/2017
 ms.reviewer: kamaybac
 ms.search.form: JmgFlexGroup, JmgFlexCorrection

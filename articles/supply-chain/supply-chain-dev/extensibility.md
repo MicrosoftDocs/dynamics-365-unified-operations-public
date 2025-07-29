@@ -3,7 +3,7 @@ title: Planning Optimization extensibility
 description: Learn about the extensibility scenarios that are supported in Planning Optimization with an outline on custom processing.
 author: t-benebo
 ms.author: benebotg
-ms.topic: article
+ms.topic: concept-article
 ms.date: 08/05/2020
 ms.custom:
 ms.reviewer: kamaybac

@@ -3,12 +3,12 @@ title: Inventory close
 description: As part of the process to settle issue transactions with receipt transactions, you can choose to have the general ledger updated to reflect adjustments.
 author: prasungoel
 ms.author: prasungoel
-ms.topic: conceptual
-ms.date: 05/27/2024
-ms.custom:
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: InventClosing
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+- bap-template
 ---
 
 # Inventory close
@@ -48,7 +48,7 @@ The ledger accounts that are updated because of these tasks are linked to the or
 
 > [!NOTE]
 >
-> - Inventory close is a required step in the month-end closing procedure for all inventory models except moving average.  You will be warned if you try to close a financial period without first performing the inventory close as of the period end date.
+> - Inventory close is a required step in the month-end closing procedure for all inventory models except moving average. You'll be warned if you try to close a financial period without first performing the inventory close as of the period end date.
 > - Before you run the closing procedure, you can view a list of items that can't be settled during the update.
 > - We recommend that you run inventory close during off-peak hours, to distribute computing resources more evenly.
 

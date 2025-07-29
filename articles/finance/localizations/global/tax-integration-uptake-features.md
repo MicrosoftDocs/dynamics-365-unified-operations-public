@@ -3,7 +3,7 @@ title: Uptake features and functions
 description: Learn about the features and functions that must be implemented to integrate a new transaction, including an overview overriding sales tax.
 author: Qiuchen-Ren
 ms.author: qire
-ms.topic: conceptual
+ms.topic: article
 ms.date: 02/14/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak

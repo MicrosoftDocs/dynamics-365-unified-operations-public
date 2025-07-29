@@ -3,7 +3,7 @@ title: Class extension model in X++
 description: Learn about the class extension model in X++, including overviews on the effective class concept and extension class variations.
 author: pvillads
 ms.author: pvillads
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 02/03/2025

@@ -5,7 +5,8 @@ title: What's new or changed in Dynamics 365 Human Resources July 12, 2021
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for July 12, 2021.
 author: marcelbf
 ms.date: 07/12/2021
-ms.topic: article
+ms.update-cycle: 1095-days
+ms.topic: whats-new
 # optional metadata
 
 ms.search.form:

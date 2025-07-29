@@ -3,7 +3,7 @@ title: Upgrades, updates, and hotfixes resources
 description: Learn about where to find information about upgrading, updating, and applying hotfixes to your finance and operations environment and data.
 author: LaneSwenka
 ms.author: laswenka
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.date: 07/23/2019
 ms.reviewer: johnmichalak
 ms.collection: get-started

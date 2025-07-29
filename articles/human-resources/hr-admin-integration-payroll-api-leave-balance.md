@@ -5,7 +5,7 @@ title: Leave balance
 description: This article provides details and an example query for the leave balance entity in Dynamics 365 Human Resources.
 author: marcelbf
 ms.date: 03/20/2023
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 # ms.search.form: 

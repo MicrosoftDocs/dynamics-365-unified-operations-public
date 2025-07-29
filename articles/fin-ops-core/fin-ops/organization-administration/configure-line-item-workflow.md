@@ -3,7 +3,7 @@ title: Configure line-item workflows
 description: Learn about how to configure a line-item workflow element, including outlines on naming line-item workflow elements and specifying whether workflows process all line items.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/03/2017
 ms.reviewer: twheeloc 
 audience: Application User

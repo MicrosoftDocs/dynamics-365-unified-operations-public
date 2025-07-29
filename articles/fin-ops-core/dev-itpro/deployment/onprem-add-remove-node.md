@@ -4,7 +4,7 @@ title: Add or remove a node from an existing environment
 description: Learn how to add or remove a node in your existing Microsoft Dynamics 365 Finance + Operations (on-premises) environment.
 author: faix
 ms.author: osfaixat
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/03/2025
 ms.custom:
 ms.reviewer: 

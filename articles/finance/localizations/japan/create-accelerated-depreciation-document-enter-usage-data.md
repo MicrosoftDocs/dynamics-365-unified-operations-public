@@ -1,88 +1,78 @@
 ---
 title: Create an accelerated depreciation document and enter usage data
-description: For Japan, Accelerated depreciation is declared on a per document basis, including a process for creating a fixed asset with accelerated depreciation.
+description: Learn how to create an accelerated depreciation document and enter usage data for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 04/18/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, AssetAcceleratedDepDocument_JP, SysQueryForm
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Create an accelerated depreciation document and enter usage data
 
 [!include [banner](../../includes/banner.md)]
 
-For Japan, Accelerated depreciation is declared on a per document basis. Each document can contain multiple fixed assets. You must calculate an overuse rate on the accelerated depreciation document and multiply it by the ordinary depreciation amount to get the amount for the accelerated depreciation. 
+This article explains how to create an accelerated depreciation document and enter usage data for Japan in Microsoft Dynamics 365 Finance.
 
+For Japan, accelerated depreciation is declared on a per document basis. Each document can contain multiple fixed assets. You must calculate an overuse rate on the accelerated depreciation document and multiply it by the ordinary depreciation amount to get the amount for the accelerated depreciation. The details of the accelerated depreciation declaration are listed on the document. Only a confirmed accelerated depreciation document can be used at accelerated depreciation proposal for posting. 
 
+The following procedures walk you through how to create a fixed asset with an accelerated depreciation profile, create an accelerated depreciation document and assign the fixed asset to it, enter overuse hours for the fixed asset, and calculate the overuse rate on the document. The procedures were created using the demo data company JPMF.
 
-The details of the accelerated depreciation declaration are listed on the document. Only a confirmed accelerated depreciation document can be used at accelerated depreciation proposal for posting. 
-
-
-
-This procedure walks you through creating a fixed asset with an accelerated depreciation profile and then creating an accelerated depreciation document and assigning the fixed asset to it. Finally, you can enter the overuse hours for the fixed asset and calculate overuse rate on the document.
-
-
-
-In order to complete this procedure, the Fixed asset configuration key must be selected.
-
-
-
-This procedure was created using the demo data company JPMF.
-
+Before you complete the procedures, you must first select the **Fixed Asset** configuration key.
 
 ## Create a fixed asset with accelerated depreciation
-1. Go to Fixed assets > Fixed assets > Fixed assets.
-2. Click New.
-3. In the Fixed asset group field, type a value.
-    * Example: VEHI-M  
-4. Note the fixed asset number for later reference
-5. In the Name field, type a value.
-6. Click Save.
-7. Click Books.
-8. Expand the Depreciation section.
-    * Confirm that the Accelerated depreciation profile field is configured properly.  
-    * For the existing fixed assets, you can also manually enter this value to apply accelerated depreciation profile to it.  
+
+To create a fixed asset with accelerated depreciation, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
+1. Select **New**.
+1. In the **Fixed asset group** field, enter a value. For example enter "VEHI-M".  
+1. Note the fixed asset number for later reference.
+1. In the **Name** field, enter a value.
+1. Select **Save**.
+1. Select **Books**.
+1. Expand the **Depreciation** section.
+1. Confirm that the **Accelerated depreciation profile** field is configured properly. For the existing fixed assets, you can also manually enter this value to apply accelerated depreciation profile to it.  
 
 ## Acquire the fixed asset
-1. Go to Fixed assets > Journal entries > Fixed assets journal.
-2. Click New.
-3. In the Name field, type a value.
-4. Click Save.
-5. Click Lines.
-6. In the Date field, enter a date.
-7. Use the previously noted fixed asset number
-8. In the Debit field, enter a number.
-9. Click Save.
-10. Click Post.
+
+To acquire the fixed asset, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
+1. Select **New**.
+1. In the **Name** field, enter a value.
+1. Select **Save**.
+1. Select **Lines**.
+1. In the **Date** field, enter a date.
+1. Use the previously noted fixed asset number.
+1. In the **Debit** field, enter a number.
+1. Select **Save**.
+1. Select **Post**.
 
 ## Enter overuse information in the accelerated depreciation document
-1. Go to Fixed assets > Periodic tasks > Accelerated depreciation > Accelerated depreciation document.
-2. Click New.
-3. In the Description field, type a value.
-4. In the Fixed asset equipment group field, type a value.
-5. In the From date field, enter a date.
-    * The From date and To date are used to define the declaration period during which to apply and to declare the accelerated depreciation.  
-6. In the To date field, enter a date.
-    * The From date and To date are used to define the declaration period during which to apply and to declare the accelerated depreciation.  
-7. Expand the Fixed assets and working hours detail section.
-    * It is recommended to enter working hours by fixed assets so that the data is accurate and complete.  
-8. Click Add by query.
-9. In the Criteria field, Filter the proper fixed assets.
-10. Click OK.
-11. In the Planned field, enter a number.
-    * Other than Planned hours, you can also choose to enter Reserved or Actual hours if they apply.  
-12. Click Save.
-13. Click Calculate daily average hour.
-    * Confirm that the Overuse rate is calculated and updated.  
-    * If you have already calculated the Overuse rate you can choose to skip the calculate step and directly enter the Overuse rate and confirm the document for proposal purpose.  
-14. Click Confirm.
-    * Only confirmed Accelerated depreciation documents can be used for the proposal.  
+
+To enter overuse information in the accelerated depreciation document, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Periodic tasks \> Accelerated depreciation \> Accelerated depreciation document**.
+1. Select **New**.
+1. In the **Description** field, enter a value.
+1. In the **Fixed asset equipment group** field, enter a value.
+1. In the **From date** field, enter a date. The **From date** and **To date** values are used to define the declaration period during which to apply and declare the accelerated depreciation. 
+1. In the **To date** field, enter a date.
+1. Expand the **Fixed assets and working hours detail** section. Microsoft recommends that you enter working hours by fixed assets so that the data is accurate and complete.  
+1. Select **Add by query**.
+1. In the **Criteria** field, filter to find the fixed assets.
+1. Select **OK**.
+1. In the **Planned** field, enter a number. Other than planned hours, you can also choose to enter reserved or actual hours if they apply.  
+1. Select **Save**.
+1. Select **Calculate daily average hour**.
+1. Confirm that the overuse rate is calculated and updated. If you've already calculated the overuse rate, you can choose to skip the calculate step and directly enter the overuse rate and confirm the document for proposal purpose.  
+1. Select **Confirm**. Only confirmed accelerated depreciation documents can be used for the proposal.  
 
 
 

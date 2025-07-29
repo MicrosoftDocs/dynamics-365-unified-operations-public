@@ -1,10 +1,10 @@
 ---
 title: Standard Audit File for Tax (SAF-T) for Norway
-description: Learn how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway.
+description: Learn how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 03/17/2025
+ms.date: 06/12/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -15,12 +15,11 @@ ms.search.region: Norway
 
 [!include [banner](../../includes/banner.md)]
 
-This article includes country/region-specific information about how to set up the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway.
+This article explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway in Microsoft Dynamics 365 Finance.
 
 > [!NOTE]
-> As of version 175.137 of `SAF-T Format (NO)` and 175.92 of `SAF-T Financial data model mapping`, the version 1.30 of SAF-T Financial is supported. SAF-T Financial of version 1.30 is required on January 1, 2025, but can be used for earlier periods if preferred. The old form, version 1.20, can be used for previous years (financial year 2024 and earlier).
->
-> Use of the [One voucher](../../general-ledger/one-voucher.md) functionality introduces a limitation on further SAF-T reporting for some scenarios that are subject to SAF-T. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. Learn more about how to use the One voucher functionality and SAF-T in the [SAF-T report and One voucher](#one-voucher) section later in this article.
+> - As of version 175.137 of `SAF-T Format (NO)` and 175.92 of `SAF-T Financial data model mapping`, the version 1.30 of SAF-T Financial is supported. SAF-T Financial of version 1.30 is required on January 1, 2025, but can be used for earlier periods if preferred. The old form, version 1.20, can be used for previous years (financial year 2024 and earlier).
+> - Use of the [One voucher](../../general-ledger/one-voucher.md) functionality introduces a limitation on further SAF-T reporting for some scenarios that are subject to SAF-T. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. Learn more about how to use the One voucher functionality and SAF-T in the [SAF-T report and One voucher](#one-voucher) section later in this article.
 
 ## Set up SAF-T for Norway
 
@@ -39,7 +38,7 @@ To use the **Norwegian SAF-T Financial data** report in Dynamics 365 Finance, co
 
 To enable features in Feature management, follow these steps.
 
-1. Go to **Feature management** \> **All**.
+1. In Dynamics 365 Finance, go to **Feature management** \> **All**.
 1. In the feature list, find and select the following features:
 
     - **Optimize datasets memory consumption at ER reports runtime**
@@ -85,7 +84,7 @@ Organization registration number of the legal entity is reported in SAF-T file i
 
 To set up the organization registration number, follow these steps.
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select your legal entity.
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**, and select your legal entity.
 1. On the **Bank account information** FastTab, assign the organization number to the **Routing code** field.
 
 ### <a name="registration-number"></a> Set up the company tax registration numbers
@@ -94,7 +93,7 @@ As of version 175.119 of the **SAF-T Format (NO)** ER format, the **TaxRegistrat
 
 To set up the company tax registration numbers, follow these steps.
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select the legal entity, and then select **Registration IDs**.
 1. Select or create the address in Norway, and then, on the **Registration ID** FastTab, select **Add**.
 1. In the **Registration type** field, select the registration type that's dedicated to Norway, and that uses the **VAT ID** registration category.
@@ -144,7 +143,7 @@ To associate sales tax codes that are used in Finance with Norwegian standard VA
 
 To associate sales tax codes that are used in Finance with Norwegian standard VAT codes by using the External codes functionality, follow these steps.
 
-1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
+1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. On the **Sales tax code** page, select the **Sales tax code** record, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
 
     ![External codes button on the Action Pane of the Sales tax code page.](../media/nor-saf-standard-tax-codes.jpg)
@@ -182,16 +181,14 @@ Learn more about additional consolidation accounts in [Consolidation account gro
 #### Option 2: Associate main accounts used in Finance with Norwegian standard accounts by using the application-specific parameters of the ER format
 
 > [!NOTE]
-> This option isn't supported after January 1, 2025, due to changes introduced in SAF-T Financial of version 1.30.
->
-> It's recommended to use the following or a higher version of the ER configurations:
->
+> This option isn't supported after January 1, 2025, due to changes introduced in SAF-T Financial of version 1.30. Microsoft recommends that you use the following or a higher version of the ER configurations:
 > - SAF-T Format (NO) **175.137**
 > - SAF-T Financial data model mapping **175.92**
 
 To associate the main accounts that are used in Finance with Norwegian standard accounts by using the application-specific parameters, follow these steps.
 
-1. In the **Electronic reporting** workspace, in the configuration tree, select the **SAF-T Format (NO)** ER format.
+1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace.
+1. In the configuration tree, select the **SAF-T Format (NO)** ER format.
 1. Make sure that the company that you're working in is the company for which you want to set up the application-specific parameters.
 1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 1. On the left side of the **Application specific parameters** page, select the version of the format that you want to use.
@@ -209,7 +206,8 @@ Regardless of whether you use the options to associate standard tax codes and st
 
 To complete the configuration of application-specific parameters, follow these steps.
 
-1. In the **Electronic reporting** workspace, in the configuration tree, select the **SAF-T Format (NO)** ER format.
+1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace.
+1. In the configuration tree, select the **SAF-T Format (NO)** ER format.
 1. Make sure that the company that you're working in is the company for which you want to set up the application-specific parameters.
 1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 1. On the left side of the **Application specific parameters** page, select the version of the format that you want to use.
@@ -219,7 +217,7 @@ To complete the configuration of application-specific parameters, follow these s
 
 To generate the **Norwegian SAF-T Financial data** report, follow these steps.
 
-1. In Finance, go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
+1. In Dynamics 365 Finance, go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
 1. In the dialog for the report, in the **From date** and **To date** fields, specify the start and end dates of the period that you want to generate the report for.
 1. Select the checkboxes for **Customers**, **Vendors**, and **Financial dimensions** to include all the records from the related tables on the report.
 
@@ -267,7 +265,7 @@ A SAF-T report for a long time period, such as a quarter or a year, can include 
 
 To review batch jobs or find a generated file, follow these steps.
 
-1. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
 1. Find a line that is related to your job, and then select **Show log**. If nothing is shown, no messages were produced when the file was generated.
 1. To view a file, select **Show files**, find the file that you need, and then select **Open**.
 

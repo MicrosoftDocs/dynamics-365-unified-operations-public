@@ -3,8 +3,9 @@ title: Collections coordinator workspace
 description: Learn about the Collections coordinator overview and workspace, including the aged balances and customer timeline summary.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/17/2025
+ms.update-cycle: 180-days
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot 
 audience: Application User

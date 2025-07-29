@@ -3,7 +3,7 @@ title: Complete tasks in Business process modeler (BPM)
 description: Learn about additional tasks that you can complete in Business process modeler (BPM), including the process of uploading a task recording.
 author: AngelMarshall
 ms.author: tsmarsha
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/15/2020
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -11,6 +11,7 @@ ms.search.region: Global
 ms.search.validFrom:
 ms.search.form:
 ms.dyn365.ops.version: 2012
+ms.custom: sfi-image-nochange
 ---
 
 # Complete tasks in Business process modeler (BPM)

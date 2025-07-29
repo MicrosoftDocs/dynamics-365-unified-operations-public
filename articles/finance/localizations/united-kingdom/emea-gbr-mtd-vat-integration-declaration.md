@@ -56,7 +56,7 @@ In Microsoft Dynamics 365 Finance, you must complete the following setup to ensu
 
 ## Company tax registration in customer invoices
 
-If your company is in Northern Ireland and provides services to counterparties in the EU, or if you trade in goods from locations in Great Britain (England, Scotland, and Wales) and Northern Ireland, enable and use the **Company tax registration in customer invoices** feature.
+If your company is in Northern Ireland and provides services to counterparties in the EU, or if you trade in goods from locations in England, Scotland, Wales, and Northern Ireland, enable and use the **Company tax registration in customer invoices** feature.
 
 1. Go to **Workspaces** > **Feature management**.
 2. In the feature list, find and select, **Company tax registration in customer invoices**, and then select **Enable**.
@@ -119,17 +119,17 @@ Create sales tax groups for the different types of business operations that are 
 2. Select **New** to create a record, and specify the parameters of the sales tax code.
 3. In the **Sales tax currency** field, select **GBP**. For more information, see [Set up sales tax codes](../../general-ledger/tasks/set-up-sales-tax-codes.md).
 4. In the **Country/region** field, select the country/region type that the tax code will be used for. For sales tax codes used to post intra-community dispatches of goods from Northern Ireland to EU Member States, in **Country/Region type** field, select **EU**. For other operations, select **Domestic** or **Third** depending on whether the sales tax code will be used for posting domestic operations or operations with counterparties in other countries/regions.
-5. For reverse charge VAT operations, create two sales tax codes, one that has a negative rate and one that has a positive rate. For more information, see [Reverse charge mechanism for VAT/GST scheme](../global/emea-reverse-charge.md). As of January 1, 2021, a “reverse charge” approach can be used for acquisitions that companies in Great Britain make from counterparties in the EU, and that can be accounted for as import VAT on a VAT Return. This accounting is also known as *postponed VAT accounting*. 
+5. For reverse charge VAT operations, create two sales tax codes, one that has a negative rate and one that has a positive rate. For more information, see [Reverse charge mechanism for VAT/GST scheme](../global/emea-reverse-charge.md). As of January 1, 2021, a “reverse charge” approach can be used for acquisitions that companies in the United Kingdom make from counterparties in the EU, and that can be accounted for as import VAT on a VAT Return. This accounting is also known as *postponed VAT accounting*. 
 6. Distribute the new sales tax codes into sales tax groups and item sales tax groups. Make sure that each sales tax code is added to an item sales tax group and a sales tax group, and that the required fields are set on the **Setup** FastTab of the **Sales tax groups** page. The required fields include:
 
     - **Exempt** and **Exempt code**: For VAT exempt operations.
     - **Reverse charge**: For sales tax codes that are set up for importing and reverse change operations with a negative rate.
-    - **Use tax**: For intra-community acquisitions of goods made in Northern Ireland from EU Member States. As of January 1, 2021, tax setups that use the **use tax** approach will no longer be applicable to acquisitions that companies in Great Britain make from the EU.
+    - **Use tax**: For intra-community acquisitions of goods made in Northern Ireland from EU Member States. As of January 1, 2021, tax setups that use the **use tax** approach will no longer be applicable to acquisitions that companies in the United Kingdom make from the EU.
 
     The combination of these groups must lead to one sales tax code. There is an exception for the setup of reverse charge VAT operations, which Finance uses for VAT posting. These two groups, together with **Reporting type** defind for **Item sales tax group** and the **Country/region type** of the **Sales tax code**, will lead to reporting in different [boxes of the VAT declaration](#boxes).
  
 > [!NOTE]
-> As of January 1, 2021, dispatch of goods and related costs to customers in the EU must be excluded from box 8 if the dispatches are from Great Britain. Therefore, the sales tax code with the **Country/Region type** value set up to **EU** can be used for intra-community dispatches of goods from Northern Ireland to EU Member States only.
+> As of January 1, 2021, dispatch of goods and related costs to customers in the EU must be excluded from box 8 if the dispatches are from the United Kingdom. Therefore, the sales tax code with the **Country/Region type** value set up to **EU** can be used for intra-community dispatches of goods from Northern Ireland to EU Member States only.
 
 ## Set up reverse charge rules
 

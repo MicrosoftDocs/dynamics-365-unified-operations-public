@@ -3,7 +3,7 @@ title: Cash flow tax registers
 description: Learn about cash flow tax registers, including outlines on the cash payment receipt and cash payment issue types of tax registers.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 06/21/2024

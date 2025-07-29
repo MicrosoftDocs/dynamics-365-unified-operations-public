@@ -3,7 +3,7 @@ title: Add a new activity in tax integration
 description: Learn how to add a new activity in tax integration, including overviews on creating a new activity and appending an activity to the sequence with code examples.
 author: Qiuchen-Ren
 ms.author: qire
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/25/2022
 ms.custom: bap-template
 ms.reviewer: johnmichalak

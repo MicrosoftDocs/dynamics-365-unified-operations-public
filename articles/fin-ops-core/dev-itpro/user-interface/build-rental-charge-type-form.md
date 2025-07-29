@@ -3,7 +3,7 @@ title: Build the Rental Charge Type form
 description: Learn about building rental charge type forms, including prerequisites, key concepts, and overviews on various forms.
 author: jasongre
 ms.author: jasongre
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 01/23/2025

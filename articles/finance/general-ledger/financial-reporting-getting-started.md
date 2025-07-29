@@ -3,9 +3,9 @@ title: Financial reporting overview
 description: Learn about where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
 ms.author: aolson
-ms.topic: article
-ms.date: 05/20/2024
+ms.date: 07/01/2025
 ms.reviewer: twheeloc
+ms.topic: article
 ms.collection: get-started 
 audience: Application User
 ms.search.region: Global
@@ -31,6 +31,9 @@ The Financial reporting add-in lets financial and business professionals create,
 1. In Lifecycle Services, confirm that the Power Platform integration is configured and available. For more information, see [Configure Microsoft Power Platform](../business-performance-analytics/configure-bpa.md#configure-microsoft-power-platform) 
 2. Select **Install a new add-in**, and search for **Financial reporting**.
 3. Agree to the terms, and then select **Install**.
+
+> [!NOTE]
+> Environments managed in Power Platform admin center (PPAC) such as Unified developer experience environments don't have the option to install the Financial reporting add-in. Contace support if you need to set up Financial reporting on a PPAC based environment. 
 
 ## Uninstall the Financial reporting add-in
 

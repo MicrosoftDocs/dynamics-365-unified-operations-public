@@ -3,12 +3,12 @@ title: Purchase requisition workflow
 description: The workflow process moves purchase requisitions through the review process, from an initial status of Draft to a final status of Approved.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: conceptual
-ms.date: 06/07/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+- bap-template
 ---
 
 # Purchase requisition workflow
@@ -19,7 +19,7 @@ The workflow process moves purchase requisitions through the review process, fro
 
 Before a purchase requisition can be submitted for review, you must configure a workflow. The workflow process can include one or more review steps, in any order. The workflow process can also be configured to skip the review tasks and automatically approve the purchase requisition. You can configure the workflow to route the purchase requisition as a single document, or you can route individual purchase requisition lines to the appropriate reviewers. You can also create a scenario where the purchase requisition is routed as a single document to some reviewers and selected purchase requisition lines are routed to other reviewers.  
 
-If purchase requisition lines are reviewed individually, the review process must be completed for all purchase requisition lines before the workflow process can move to the next step, and before the review process for the purchase requisition as a whole can be completed. When the review process has been completed for the purchase requisition and all its lines, the overall status of the purchase requisition is updated to **Approved**.  
+If purchase requisition lines are reviewed individually, the review process must be completed for all purchase requisition lines before the workflow process can move to the next step, and before the review process for the purchase requisition as a whole can be completed. When the review process has been completed for the purchase requisition and all its lines, the overall status of the purchase requisition is updated to *Approved*.  
 
 You can configure your workflow to represent the business process for purchase requisitions in your organization. When you configure your purchase requisition workflow process, consider the following questions:
 
@@ -34,12 +34,9 @@ The following examples illustrate two ways that you can configure a workflow for
 
 The following illustration shows how a purchase requisition can flow through the workflow review process as a single document. The lines on the purchase requisition aren't routed individually. The following roles are included in the workflow process for this example:
 
-- **Requester** – The user who requests the items or services. The requester can prepare the purchase requisition, or another worker can prepare the purchase requisition on the requester’s behalf. This worker is the preparer. The preparer is responsible for managing the purchase requisition throughout the review process. Only the preparer of the purchase requisition can modify it.
-
-**Note:** A worker must be granted the appropriate permissions to create a purchase requisition on behalf of someone else. Use the **Purchase requisition permission** page to set up these permissions.
-
-- **Purchasing agent** – The user who performs a procurement review and can approve the document.
-- **The requester's manager** – The user who performs a managerial review and can approve the document.
+- *Requester* – The user who requests the items or services. The requester can prepare the purchase requisition, or another worker can prepare the purchase requisition on the requester’s behalf. This worker is the preparer. The preparer is responsible for managing the purchase requisition throughout the review process. Only the preparer of the purchase requisition can modify it. A worker must be granted the appropriate permissions to create a purchase requisition on behalf of someone else. Use the **Purchase requisition permission** page to set up these permissions.
+- *Purchasing agent* – The user who performs a procurement review and can approve the document.
+- *The requester's manager* – The user who performs a managerial review and can approve the document.
 
 ![Purchase requisition workflow review process.](./media/purchreqworkflowoverview_submission.gif)  
 In this example, the workflow process for the purchase requisition includes the following steps:
@@ -56,15 +53,11 @@ In this example, a worker enters a request for posters and T-shirts for a market
 
 The following roles are included in the workflow process for this example:
 
-- **Requester** – The user who requests the items or services. The requester can prepare the purchase requisition, or another worker can prepare the purchase requisition on the requester’s behalf. This worker is the preparer. The preparer is responsible for managing the purchase requisition throughout the review process. Only the preparer of the purchase requisition can modify it.
-
-> [!NOTE]
-> A worker must be granted the appropriate permissions to create a purchase requisition on behalf of someone else. Use the **Purchase requisition permission** page to set up these permissions.
-
-- **Purchasing agent** – The user who performs a procurement review and can approve the document.
-- **The requester's manager** – The user who performs a managerial review and can approve the document.
-- **Department manager** – The user who performs an expenditure review and can approve the document.
-- **Group manager** – The user who performs a signature authority review and can approve the document.
+- *Requester* – The user who requests the items or services. The requester can prepare the purchase requisition, or another worker can prepare the purchase requisition on the requester’s behalf. This worker is the preparer. The preparer is responsible for managing the purchase requisition throughout the review process. Only the preparer of the purchase requisition can modify it. A worker must be granted the appropriate permissions to create a purchase requisition on behalf of someone else. Use the **Purchase requisition permission** page to set up these permissions.
+- *Purchasing agent* – The user who performs a procurement review and can approve the document.
+- *The requester's manager* – The user who performs a managerial review and can approve the document.
+- *Department manager* – The user who performs an expenditure review and can approve the document.
+- *Group manager* – The user who performs a signature authority review and can approve the document.
 
 ![Purchase requisition line workflow review process.](./media/purchreqlineworkflowoverview.gif)  
 

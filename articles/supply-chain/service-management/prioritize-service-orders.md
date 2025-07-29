@@ -3,7 +3,7 @@ title: Prioritize service orders
 description: Learn how to prioritize service orders, including a step-by-step process for saving and prioritizing service orders and additional resources.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac

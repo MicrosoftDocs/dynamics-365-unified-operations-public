@@ -3,7 +3,7 @@ title: Land tax declaration
 description: Learn about the land tax declaration for Russia, including outlines on setting up land tax setting up parameters for land tax calculation.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 06/21/2024

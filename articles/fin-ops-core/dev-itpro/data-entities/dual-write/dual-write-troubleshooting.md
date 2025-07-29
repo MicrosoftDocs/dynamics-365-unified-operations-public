@@ -3,7 +3,7 @@ title: General troubleshooting
 description: Learn about general troubleshooting information for dual-write integration between finance and operations apps and Dataverse.
 author: RamaKrishnamoorthy
 ms.author: ramasri
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.date: 04/18/2022
 ms.reviewer: johnmichalak
 audience: IT Pro

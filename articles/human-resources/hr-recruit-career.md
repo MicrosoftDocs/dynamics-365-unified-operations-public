@@ -5,7 +5,7 @@ title: Configure the careers site in the HR Recruiting app (preview)
 description: This article explains how to configure the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/23/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: 

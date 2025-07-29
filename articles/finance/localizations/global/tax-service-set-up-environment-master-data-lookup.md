@@ -3,15 +3,16 @@ title: Enable master data lookup for tax calculation configuration
 description: Learn how to set up and enable the tax calculation master data lookup functionality, including an overview on installing finance and operations virtual entities.
 author: kai-cloud
 ms.author: pashao
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/09/2024
-ms.custom: 
 ms.reviewer: johnmichalak
 audience: Application user
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
 ms.search.form:
 ms.dyn365.ops.version: 10.0.18
+ms.custom:
+  - sfi-image-nochange
 ---
 
 # Enable master data lookup for tax calculation configuration 

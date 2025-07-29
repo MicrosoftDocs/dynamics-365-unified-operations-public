@@ -2,8 +2,8 @@
 title: Set up and manage dual-write async in finance and operations apps (preview)
 description: Learn how to set up and manage dual-write async in Microsoft Dynamics 365 finance and operations apps.
 author: pnghub
-ms.author: gned
-ms.topic: conceptual
+ms.author: priysharma
+ms.topic: how-to
 ms.date: 09/26/2024
 ms.custom:
 ms.reviewer: twheeloc

@@ -3,7 +3,7 @@ title: Clear reversal bank statement transactions in advanced bank reconciliatio
 description: Learn about how to clear bank statement transactions in advanced bank reconciliation, including prerequisites and a process for clearing reversal bank transactions.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/18/2024
 ms.custom: 
 ms.reviewer: twheeloc

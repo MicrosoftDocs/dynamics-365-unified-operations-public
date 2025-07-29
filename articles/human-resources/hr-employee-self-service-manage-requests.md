@@ -5,7 +5,7 @@ title: Manage leave and absence requests
 description: View and approve leave and absence requests in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 06/24/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: EssWorkspace

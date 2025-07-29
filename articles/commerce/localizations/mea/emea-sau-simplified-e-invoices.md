@@ -4,7 +4,7 @@ description: This article explains the functionality and setup of simplified ele
 author: ilikond
 ms.author: ikondratenko
 ms.date: 09/03/2024
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: v-chgriffin
 ms.search.region: Saudi Arabia
 ms.search.industry: Retail

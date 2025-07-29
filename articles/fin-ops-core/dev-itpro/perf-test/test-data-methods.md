@@ -3,7 +3,7 @@ title: Test data methods
 description: Learn about the most common types of test data methods, including naming conventions and code examples for various methods.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/27/2019
 ms.custom: 
 ms.reviewer: johnmichalak

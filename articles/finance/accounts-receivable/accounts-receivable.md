@@ -3,8 +3,9 @@ title: Accounts receivable home page
 description: Learn about the Accounts receivable home page, including outlines on setting up Accounts receivable, subscription billings, and setting up credit and collections.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: conceptual
-ms.date: 03/22/2024
+ms.topic: article
+ms.date: 05/12/2025
+ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
 ms.collection: get-started

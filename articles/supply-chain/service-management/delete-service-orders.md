@@ -3,7 +3,7 @@ title: Delete service orders
 description: Learn about how to delete service orders, including a step-by-step process for deleting service orders and additional resources.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/19/2023
 ms.custom:
 ms.reviewer: kamaybac

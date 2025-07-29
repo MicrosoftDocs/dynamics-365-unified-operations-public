@@ -3,7 +3,7 @@ title: Cost and date control
 description: Learn about cost and date control in Asset Management, including an outline and process for cost control for assets, functional locations, and work orders.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/23/2019
 ms.custom:
 ms.reviewer: kamaybac

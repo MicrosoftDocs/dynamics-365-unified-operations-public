@@ -3,7 +3,7 @@ title: Anchoring
 description: Learn how to enable and use anchoring, including an outline on scenario setup and a process for setting up a mobile device menu item to enable anchoring.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/29/2021
 ms.reviewer: kamaybac
 ms.search.form: WHSRFMenuItem, WHSOutboundLoadPlanningWorkbench

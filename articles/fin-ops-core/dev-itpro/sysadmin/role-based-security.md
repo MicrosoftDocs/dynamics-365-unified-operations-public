@@ -2,7 +2,7 @@
 title: Role-based security
 description: Learn about the elements of role-based security, including overviews of security roles, duties, privileges, and permissions.
 author: gned
-ms.author: gned
+ms.author: priysharma
 ms.topic: overview
 ms.date: 04/02/2024
 ms.custom: 

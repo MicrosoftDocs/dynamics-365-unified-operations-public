@@ -3,7 +3,7 @@ title: Accounts payable home page
 description: Learn about the Accounts payable home page, including overviews on setting up Accounts payable and configuring vendor invoices and accounts.
 author: sunfzam
 ms.author: twheeloc
-ms.topic: conceptual
+ms.topic: article
 ms.date: 11/21/2024
 ms.reviewer: twheeloc
 ms.collection: get-started

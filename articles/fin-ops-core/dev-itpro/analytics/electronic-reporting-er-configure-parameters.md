@@ -3,7 +3,7 @@ title: Configure the Electronic reporting (ER) framework
 description: Learn about how to configure parameters of the Electronic reporting (ER) framework, including learning about the prerequisites for electronic reporting setup.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/23/2020
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

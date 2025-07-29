@@ -1,13 +1,14 @@
---- 
+---
 title: Carrier groups
 description: Learn how to set up data for carrier groups, which are collections of shipping carriers and carrier services, included a step-by-step process.
 author: lisascholz91
 ms.author: lisascholz
-ms.topic: how-to
-ms.date: 10/30/2020
-ms.custom:
-ms.reviewer: kamaybac    
+ms.reviewer: kamaybac
 ms.search.form: TMSCarrierGroup 
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Carrier groups
@@ -26,6 +27,5 @@ When multiple shipping carriers and carrier services exist for the same route se
 1. In the **Name** field, enter a descriptive name for the group.
 1. On the **Details** FastTab, add a row, and select a shipping carrier and a carrier service for it. Repeat this step until you've added as many carriers as you require for the group.
 1. Close the page.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

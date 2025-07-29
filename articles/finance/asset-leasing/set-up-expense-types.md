@@ -3,7 +3,7 @@ title: Set up expense types
 description: Learn about how to set up expense types in Asset leasing, including outlines on adding administrative expense types and assigning accounts to administrative costs.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/12/2021
 ms.reviewer: kfend
 audience: Application User

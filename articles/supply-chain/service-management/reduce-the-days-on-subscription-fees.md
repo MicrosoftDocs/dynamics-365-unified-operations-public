@@ -3,7 +3,7 @@ title: Reduce the days on subscription fees
 description: Learn how to reduce the number of days of an existing subscription fee, including a step-by-step process and examples of subscription fee reductions.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac

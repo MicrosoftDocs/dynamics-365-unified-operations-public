@@ -2,9 +2,8 @@
 title: Shipping address module
 description: This article covers the shipping address module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 06/25/2024
+ms.date: 04/16/2025
 ms.topic: how-to
-audience: Application user
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: anupamar
@@ -40,6 +39,7 @@ The following illustration shows an example of a new shipping address module on 
 | Enable auto suggestion| **True** or **False** | If this optional property is set to **True**, automatic address suggestions are provided. These suggestions are powered by Bing Maps. For information about how to set up Bing Maps integration for your site, see [Store selector module](store-selector.md). This feature is available as of the Commerce version 10.0.15 release.|
 |Auto suggest options| A number| If automatic address suggestions are enabled, you can specify additional options, such as the maximum number of suggestions that should be provided.|
 |Enable multiple shipping addresses for an order| **True** or **False**| If this optional property is set to **True**, then a customer can select multiple shipping addresses for an order by selecting a shipping address for each order line. Because each shipping address requires an individual delivery option, this configuration is dependent on the **Enable multiple delivery options for an order**  configuration of the delivery options module. This feature is available as of the Commerce version 10.0.40 release.|
+|Enable forced reselection of shipping address| **True** or **False** |If this optional property is set to **True** (the recommended value), then in some edge cases customers are required to reenter a shipping address during checkout. This requirement helps in scenarios where a customer deletes a saved address that's present in the checkout cart. If this property is set to **False**, the sales order might not be associated with a shipping address.|
 
 ## Add a shipping address module to a checkout page and set the required properties
 

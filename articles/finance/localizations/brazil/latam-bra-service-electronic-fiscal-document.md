@@ -3,7 +3,7 @@ title: Service electronic fiscal document for Brazil
 description: Learn about the service electronic fiscal document for Brazil, including prerequisites and an overview on how to export and import RPS files.
 author: ankviklis
 ms.author: ankviklis
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 07/10/2024

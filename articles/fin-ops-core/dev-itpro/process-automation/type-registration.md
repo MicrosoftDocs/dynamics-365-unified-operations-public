@@ -3,7 +3,7 @@ title: Type registration
 description: Learn abouthow to register types from the process automation framework, including overviews and code examples for various classes.
 author: RyanCCarlson2
 ms.author: rcarlson
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/10/2024
 ms.custom:
 ms.reviewer: johnmichalak

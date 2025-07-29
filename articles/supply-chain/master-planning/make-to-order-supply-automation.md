@@ -1,8 +1,8 @@
 ---
 title: Make-to-order supply automation
 description: Learn how to set up and use the various enhancements that are added by the Make-to-order supply automation feature, including step-by-step processes.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 07/27/2022
 ms.reviewer: kamaybac

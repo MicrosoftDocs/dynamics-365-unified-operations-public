@@ -10,8 +10,9 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2017-07-31
 ms.search.form: SysMicrosoft Entra IDClientTable, RetailTransactionServiceProfile
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-ropc-nochange
 ---
 
 # Phased Rollout (N-1) installation, configuration, and cutover guide
@@ -344,7 +345,7 @@ This section describes troubleshooting steps for errors that you might encounter
 | Field | Value |
 |---|---|
 | Event Log | Microsoft-Dynamics-Commerce-AsyncServerConnectorService/Operational |
-| Sample Event Log Error Message | Async server connector service encounters error in download timer tick. CorrelationId {4c9cd9a0-d4e3-43e5-80da-59ea2eb01acf}; Error details: Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.SyncMetadataException: Failed synchronizing metadata. ---\> Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.MessageDBOperationException: Failed updating metadata in HQ message DB. ---\> System.Data.SqlClient.SqlException: A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.) ---\> System.ComponentModel.Win32Exception: The certificate chain was issued by an authority that is not trusted |
+| Sample Event Log Error Message | Async server connector service encounters error in download timer tick. CorrelationId {aaaa0000-bb11-2222-33cc-444444dddddd}; Error details: Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.SyncMetadataException: Failed synchronizing metadata. ---\> Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.MessageDBOperationException: Failed updating metadata in HQ message DB. ---\> System.Data.SqlClient.SqlException: A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.) ---\> System.ComponentModel.Win32Exception: The certificate chain was issued by an authority that is not trusted |
 | Troubleshooting Steps | This issue could happen because the Synch service web.config connection string has the TrustServerCertificate set to false. To fix the issue, browse the Sync service website and open the web.config. Find the connectionStrings section, and update the TrustServerCertificate to True if it's false. |
 
 #### Metadata synchronization fails
@@ -352,7 +353,7 @@ This section describes troubleshooting steps for errors that you might encounter
 | Field | Value |
 |---|---|
 | Event Log | Microsoft-Dynamics-Commerce-AsyncServerConnectorService/Operational |
-| Sample Event Log Error Message | Async server connector service encounters error in download timer tick. CorrelationId {73d9d0d3-4d12-42ca-ac65-3f1f947c7840}; Error details: Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.SyncMetadataException: Failed synchronizing metadata. ---\> Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.MessageDBOperationException: Failed updating metadata in HQ message DB. ---\> System.Data.SqlClient.SqlException: Cannot open database "HQMessageDB" requested by the login. The login failed. Login failed for user 'localhost\\RetailAsUser'. |
+| Sample Event Log Error Message | Async server connector service encounters error in download timer tick. CorrelationId {bbbb1111-cc22-3333-44dd-555555eeeeee}; Error details: Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.SyncMetadataException: Failed synchronizing metadata. ---\> Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.MessageDBOperationException: Failed updating metadata in HQ message DB. ---\> System.Data.SqlClient.SqlException: Cannot open database "HQMessageDB" requested by the login. The login failed. Login failed for user 'localhost\\RetailAsUser'. |
 | Troubleshooting Steps | This issue could happen because the user who runs the Async server connector service doesn't have access to the headquarters message database. To fix the issue, run services.msc, check the user who runs the Async server connector service. Provide this user access to headquarters message database in SQL. |
 
 #### Metadata synchronization fails, or CDX jobs are successfully downloaded but aren't applied

@@ -3,7 +3,7 @@ title: Modify the properties of form controls through extension
 description: Learn about how you can modify the properties of a control by using an extension, including a step-by-step example.
 author: ivanv-microsoft
 ms.author: ivanv
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/10/2017
 ms.reviewer: johnmichalak
 audience: Developer

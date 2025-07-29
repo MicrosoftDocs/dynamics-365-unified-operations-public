@@ -3,7 +3,7 @@ title: Workflow business events
 description: Learn about workflow business events, which are generated at various points in the processing of a workflow, including an overview of workflow components.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 01/18/2022
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak

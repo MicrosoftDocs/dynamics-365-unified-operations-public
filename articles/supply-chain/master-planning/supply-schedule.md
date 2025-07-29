@@ -1,8 +1,8 @@
 ---
 title: Supply schedule
 description: Learn about the Supply schedule page and its capabilities, including outlines on opening the supply schedule page and using the supply schedule page.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 9/3/2021
 ms.reviewer: kamaybac

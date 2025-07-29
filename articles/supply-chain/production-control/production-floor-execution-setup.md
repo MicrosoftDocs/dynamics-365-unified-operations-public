@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 ms.topic: how-to
-ms.date: 01/06/2025
+ms.date: 04/25/2025
 ms.custom: 
   - bap-template
 ---
@@ -36,6 +36,8 @@ To set the configuration and job filters for a device, sign in to the **Producti
     - **Resource group** – This filter is a mid-level filter. It typically refers to a collection of related resources in a limited area of the workspace. If you select a **Production unit** filter first, the list of resource groups shows only groups from that unit. Otherwise, it shows all available resource groups.
     - **Resource** – This filter is the most specific filter. It typically refers to a specific machine or other single resource. If you select a **Resource group** and/or **Production unit** filter first, the list of resources shows only resources from that group and/or unit. Otherwise, it shows all available resources.
 
+1. Select **Next**.
+1. Select the display color theme to apply to the current device.
 1. Select **OK**.
 1. The sign-in page appears, and your device is ready for use.
 

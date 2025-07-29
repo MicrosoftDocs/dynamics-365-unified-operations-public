@@ -5,7 +5,7 @@ title: Use the careers site in the HR Recruiting app (preview)
 description: This article explains how to use the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 03/03/2025
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: 

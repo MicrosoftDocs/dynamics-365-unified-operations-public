@@ -3,7 +3,7 @@ title: Organize report components in report designer
 description: Learn about how to organize existing reports, building blocks, and objects in report designer, with an overview on renaming folders or building blocks.
 author: aprilolson
 ms.author: aolson
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/22/2022
 ms.reviewer: twheeloc
 audience: Application User 

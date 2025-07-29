@@ -1,47 +1,43 @@
 ---
 title: Depreciation of fixed assets with reduction entry posted
-description: Learn how to run fixed asset depreciation with reduction entries. In order to complete this task, the Fixed Asset configuration key must be selected.
+description: Learn how to run fixed asset depreciation with reduction entries for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 04/25/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Depreciation of fixed assets with reduction entry posted
 
 [!include [banner](../../includes/banner.md)]
 
-Use this task to learn how to run fixed asset depreciation with reduction entries
+This article explains how to run fixed asset depreciation with reduction entries for Japan in Microsoft Dynamics 365 Finance.
 
+The following procedure was created using the JPMF demo data company.
 
+Before you complete the procedure, you must first select the **Fixed Asset** configuration key.
 
-In order to complete this task, the Fixed Asset configuration key must be selected.
+To run fixed asset depreciation with reduction entries, follow these steps.
 
-
-
-This task was created using the JPMF demo data company.
-
-1. Go to Fixed assets > Journal entries > Fixed assets journal.
-2. Click New.
-3. In the Name field, type a value.
-4. Click Lines.
-5. Click Proposals.
-6. Click Depreciation proposal.
-7. In the To date field, enter a date.
-8. Verify that Reduction entry allocation is selected.
-9. Click Filter.
-    * Optional: Using the filter can help make the process faster by processing only the necessary fixed assets.  
-10. In the Criteria field, type a value.
-11. Click OK.
-12. Click OK.
-    * The depreciation that is attributed to the reduction entry is separated from that of the underline fixed asset by Document type.  
-13. Click Post.
+1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
+1. Select **New**.
+1. In the **Name** field, enter a value.
+1. Select **Lines**.
+1. Select **Proposals**.
+1. Select **Depreciation proposal**.
+1. In the **To date** field, enter a date.
+1. Verify that **Reduction entry allocation** is selected.
+1. Optionally, select **Filter** to filter only the necessary fixed assets to help speed up the process.  
+1. In the **Criteria** field, enter a value.
+1. Select **OK**.
+1. Select **OK**. The depreciation that is attributed to the reduction entry is separated from that of the underline fixed asset by document type.  
+1. Select **Post**.
 
 
 

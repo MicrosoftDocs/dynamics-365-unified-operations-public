@@ -1,8 +1,8 @@
 ---
 title: Source products and materials from multiple vendors
 description: Learn how to enable the system to automatically suggest a vendor for each planned purchase order so that, over time, specified percentages are respected.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 12/02/2022
 ms.custom: bap-template

@@ -3,19 +3,23 @@ title: Troubleshooting guide for testing with the Performance SDK
 description: Learn about how to troubleshoot for issues that you might encounter during single-user or multi-user testing that uses the Performance SDK.
 author: josaw1
 ms.author: josaw
-ms.topic: article
-ms.date: 05/28/2020
+ms.topic: troubleshooting-general
+ms.date: 05/27/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
+ms.custom: sfi-image-nochange
 ---
 
 # Troubleshooting guide for testing with the Performance SDK
 
 [!include [banner](../includes/banner.md)]
+
+> [!IMPORTANT]
+> As of September 2024, the Perf SDK is no longer supported. This deprecation follows the end of support for Visual Studio 2019, which was the last version to include web performance and load testing features.
+> + For more information, see [Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md#microsoft-will-no-longer-ship-or-support-the-visual-studio-extensions-for-finance-and-operations-apps-power-platform-tools-and-visual-studio-versions-prior-to-2022).
 
 ## No client was opened in the time-out period
 

@@ -5,6 +5,7 @@ author: jaredha
 ms.author: jaredha
 ms.topic: whats-new
 ms.date: 01/24/2025
+ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
   - evergreen

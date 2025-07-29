@@ -79,7 +79,7 @@ The following example shows how to export an inventory aging report storage repo
 
 1. On the Action Pane, select **Save**.
 1. On the Action Pane, open the **Export options** tab and select **Export now**.
-1. The **Execution summary** page opens. Here you can view the status of your export job and a list of the entities that were exported. In the **Entity processing status** section, select the **Inventory value** entity in the list, and then select **Download file** to download the data that was exported from that entity.
+1. The **Execution summary** page opens. Here you can view the status of your export job and a list of the entities that were exported. In the **Entity processing status** section, select the *Inventory aging report storage* entity in the list, and then select **Download file** to download the data that was exported from that entity.
 
 For more information about how to use data management to export data, see [Data import and export jobs overview](../../fin-ops-core/fin-ops/data-entities/data-import-export-job.md)
 

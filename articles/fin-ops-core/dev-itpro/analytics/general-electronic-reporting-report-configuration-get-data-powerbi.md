@@ -3,7 +3,7 @@ title: Configure Electronic reporting (ER) to pull data into Power BI
 description: Learn about how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance to Power BI services.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/23/2021
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

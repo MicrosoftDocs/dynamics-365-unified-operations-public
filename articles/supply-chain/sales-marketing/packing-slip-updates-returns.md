@@ -3,7 +3,7 @@ title: Packing slip updates for returns
 description: Before returned items can be received into inventory, the packing slip for the order to which they belong must be updated.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
+ms.topic: concept-article
 ms.date: 05/01/2018
 ms.custom: 
 ms.reviewer: kamaybac

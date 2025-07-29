@@ -3,7 +3,7 @@ title: Upgrade to the party and global address book model
 description: Learn how to upgrade dual-write data to the party and global address book model, including a table outlining the purpose of various file names.
 author: RamaKrishnamoorthy
 ms.author: ramasri
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 02/22/2025
 ms.reviewer: twheeloc
 audience: IT Pro
@@ -347,7 +347,7 @@ This section describes the setup that is required before you run the Party posta
 
             + Microsoft.Dynamics.GABExtended.Plugins.DeletePartyElectronicAddressSync: Delete of msdyn_partyelectronicaddress
 
-12. In the customer engagement app, activate the following workflows if you previously inactivated them:
+12. In the customer engagement app, activate the following workflows if you previously deactivated them:
 
     + Create Vendors in Accounts Table
     + Create Vendors in Vendors Table

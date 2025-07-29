@@ -5,7 +5,7 @@ title: Configure eligibility rules and options
 description: This article describes how to set eligibility rules and options in Benefits management in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/02/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
@@ -156,7 +156,7 @@ Similar to above, custom fields can be used when creating eligibility rules and 
 
 The custom eligibility rules would need to be set up as indicated in the following image. 
 
-![Eligibility conditions within a cusom field criterion.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+![Eligibility conditions within a custom field criterion.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
 ## Configure bundles
 

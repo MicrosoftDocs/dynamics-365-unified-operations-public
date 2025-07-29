@@ -3,7 +3,7 @@ title: Work split
 description: Learn about work split functionality. This functionality lets you split large work orders into several work orders that you can then assign to multiple workers.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/15/2020
 ms.custom:
 ms.reviewer: kamaybac

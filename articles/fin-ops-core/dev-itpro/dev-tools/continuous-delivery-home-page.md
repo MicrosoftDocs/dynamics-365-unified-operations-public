@@ -3,7 +3,7 @@ title: Continuous delivery home page
 description: Learn about tools and guidelines related to application lifecycle management and continuous delivery of your solution.
 author: josaw1
 ms.author: josaw
-ms.topic: conceptual
+ms.topic: article
 ms.date: 10/16/2019
 ms.reviewer: johnmichalak
 ms.collection: get-started

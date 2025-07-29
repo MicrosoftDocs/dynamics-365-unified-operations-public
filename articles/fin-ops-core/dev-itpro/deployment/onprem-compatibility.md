@@ -3,7 +3,7 @@ title: Microsoft Dynamics 365 Finance + Operations (on-premises) supported softw
 description: Learn about which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
 ms.author: osfaixat
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 01/28/2025

@@ -3,7 +3,7 @@ title: Extend Tax engine configurations for slab price
 description: This article explains how to extend Goods and Services Tax (GST) tax configurations to add the slab price function in India.
 author: prabhatb
 ms.author: yungu
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/27/2024
 ms.reviewer: twheeloc
 audience: IT Pro 

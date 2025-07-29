@@ -3,7 +3,7 @@ title: Configure the code upgrade service in Lifecycle Services (LCS)
 description: Learn about how to configure the Code upgrade tile to migrate your solution to the latest version of the finance and operations apps.
 author: LaneSwenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 08/01/2017
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -12,6 +12,7 @@ ms.search.validFrom: 2016-02-28
 ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 964b5a15-9b9c-434c-a4c2-e14406ebfaeb
+ms.custom: sfi-image-nochange
 ---
 
 # Configure the code upgrade service in Lifecycle Services (LCS)

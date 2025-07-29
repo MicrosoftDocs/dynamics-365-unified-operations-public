@@ -10,8 +10,9 @@ ms.search.region: France
 ms.author: ritakimani
 ms.search.validFrom: 2018-02-28
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 # Cash register functionality for France (preview)
 

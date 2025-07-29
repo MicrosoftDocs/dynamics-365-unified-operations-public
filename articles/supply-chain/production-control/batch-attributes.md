@@ -5,7 +5,7 @@ author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: PdsBatchAttrib, PdsBatchAttribAssociate, PdsBatchAttribByAttribGroup, PdsBatchAttribByItem, PdsBatchAttribByitemCustomer, PdsBatchAttribGroup, WHSBatchAttribReserve
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/31/2025
 ms.custom: 
   - bap-template

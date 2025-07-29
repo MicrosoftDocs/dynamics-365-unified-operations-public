@@ -3,12 +3,13 @@ title: Change data in Azure Data Lake
 description: Learn about change data in a data lake and explains what you can do with it, including a table that outlines the contents of various field names.
 author: MilindaV2
 ms.author: milindav
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/27/2023
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-06-10
+ms.custom: sfi-image-nochange
 
 ---
 
@@ -57,7 +58,7 @@ The following illustration shows how change feeds work in finance and operations
 
 When you enable the **Enable near real-time data changes** feature, change feeds are automatically added when you add tables to a data lake.
 
-When you add a table to a data lake, or when you activate a table that has been inactivated, the system makes an initial copy of the data in the data lake. At this point, the table's status is shown as **Initializing**. When the initial copy is completed, the system changes the status to **Running**. When the table is in **Running** status, changes in the finance and operations database are reflected in the data lake, and change feeds are added. The **Change feed** folder might be empty if there have been no changes to the table since it was initialized. 
+When you add a table to a data lake, or when you activate a table that has been deactivated, the system makes an initial copy of the data in the data lake. At this point, the table's status is shown as **Initializing**. When the initial copy is completed, the system changes the status to **Running**. When the table is in **Running** status, changes in the finance and operations database are reflected in the data lake, and change feeds are added. The **Change feed** folder might be empty if there have been no changes to the table since it was initialized. 
 
 To access change folders, open the Azure portal, and find and select the storage account that is associated with your finance and operations environment. You should see the **Change feed** folder in the data lake folder structure. The following illustration shows an example.
 

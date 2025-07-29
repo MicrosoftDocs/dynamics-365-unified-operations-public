@@ -1,24 +1,24 @@
 ---
 title: Electronic invoicing for Poland
-description: The article provides information that will help you get started with Electronic invoicing for Poland.
+description: Learn how to get started with electronic invoicing for Poland in Microsoft Dynamics 365 Finance.
 author: ikondratenko
-ms.date: 11/27/2024
+ms.date: 06/19/2025
+ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection:
   - bap-ai-copilot
-audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.author: ikondratenko
 ms.search.validFrom: 2024-05-01
-ms.dyn365.ops.version: AX 10.0.39
+ms.custom: sfi-image-nochange
 ---
 
 # Electronic invoicing for Poland
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Poland. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. 
+This article explains how to get started with electronic invoicing for Poland in Microsoft Dynamics 365 Finance. 
 
 After you configure electronic invoicing, you can submit and receive the XML files of electronic invoices according to the regulatory requirements in Poland.
 
@@ -59,7 +59,7 @@ Add the following required elements in the key vault:
 
 To configure electronic invoicing Key Vault parameters, follow these steps.
 
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field, select the reference to the key vault that you created in the previous section of this article.
 1. In the **SAS token secret** field, select the name of the storage account secret URL that must be used to authenticate access to the storage account.
 1. Select **Key Vault parameters**.
@@ -72,10 +72,11 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     > [!NOTE]
     > The values in the **Name** column should match the names of the secrets that are described in the previous section.
 
-
 ## Import the electronic invoicing feature
 
-1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+To import the electronic invoicing feature, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, make sure that the following Electronic reporting configurations are successfully imported as result of the **Polish electronic invoice (PL)** Globalization feature import.
 
     - **Invoice model**
@@ -99,8 +100,10 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     
 ## Configure the import channel
 
+To configure the import channel, follow these steps.
+
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
-1. <a id="Context"></a>Select **Create configuration**, and then, in the dropdown dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
+1. <a id="Context"></a>Select **Create configuration**, and then, in the dropdown dialog, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
 1. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
 1. Open the **DataChannel** definition for editing in the designer.
 1. In the **Data sources** tree, expand the **$Context\_Channel** container.
@@ -117,7 +120,7 @@ Some of the parameters from the **Polish electronic invoice (PL)** electronic in
 
 To review and update the **Polish electronic invoice (PL)** electronic invoicing feature configuration, follow these steps.
 
-1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. In Dynamics 365 Finance, go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that the **Draft** version is selected.
 1. On the **Feature parameters** tab, specify values for the following connection and integration parameters. These parameters are required for interoperation with Polish KSEF services.
@@ -138,7 +141,9 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
 
 ## Configure electronic document parameters
 
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+To configure electronic document parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic document** tab, add records for the **Customer Invoice journal**, **Project invoice**, and **Advance invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
@@ -183,7 +188,7 @@ To configure the legal entity data, complete the steps in each of the following 
 
 To enter a legal entity's address, follow these steps.
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity, and then, on the **Addresses** FastTab, add a valid primary address for the legal entity.
 
     > [!NOTE]
@@ -193,7 +198,7 @@ To enter a legal entity's address, follow these steps.
 
 To enter a legal entity's tax registration number, follow these steps.
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. This number will be used as the seller's tax identification number (NIP).
 
 ### Configure customer data
@@ -204,7 +209,7 @@ To configure the customer data, complete the steps in each of the following sect
 
 To enter a customer's address, follow these steps.
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer, and then, on the **Addresses** FastTab, add a valid address for the customer.
 
     > [!NOTE]
@@ -215,7 +220,7 @@ To enter a customer's address, follow these steps.
 
 To enter a customer's tax registration number, follow these steps.
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer. This number will be used as the buyer's tax identification number (NIP).
 
 ### Configure additional data
@@ -226,7 +231,7 @@ You can add any additional arbitrary data to invoices. This data will be put in 
 
 To configure electronic document properties, follow these steps.
 
-1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
 1. Select **New** to add a property type.
 1. In the **Type** field, enter the value to use as an additional data key (`Klucz`) in the resulting XML file of an electronic invoice.
 1. Select **Applicability** to add an applicable table.
@@ -238,7 +243,7 @@ To configure electronic document properties, follow these steps.
 
 To enter additional invoice data, follow these steps.
 
-1. Go to **Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**.
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**.
 1. Select an invoice in the list, and then, on the Action Pane, on the **Invoice** tab, in the **Properties** group, select **Electronic document properties**.
 1. Enter a required value. This value will be used in the `Wartosc` field in the resulting XML file of an electronic invoice.
 
@@ -259,14 +264,14 @@ You must configure the following types of master data to provide a match for inc
 
 To configure vendors, follow these steps.
 
-1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select a vendor.
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Vendors** \> **All vendors**, and select a vendor.
 1. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid value. The vendor's tax exempt number is used to identify the vendor during the import process for incoming electronic invoices. If no vendor that has matching data is found in the system, the import process fails, and a related error message is shown.
 
 #### Configure products
 
 To configure products, follow these steps.
 
-1. Go to **Product information management** \> **Products** \> **Released products**, and select a product.
+1. In Dynamics 365 Finance, go to **Product information management** \> **Products** \> **Released products**, and select a product.
 1. On the Action Pane, on the **Purchase** tab, in the **Related information** group, select **External item description**.
 1. In the **Vendor relation** field, select the vendor or vendor group that the product's external identification is being set up for.
 1. In the **External item number** field, enter the identification number of the product for a specific vendor or the group of vendors. External item numbers are used to identify the product during the import process for incoming electronic invoices. If no product that has matching criteria is found in the system, the import process fails, and a related error message is shown.
@@ -275,7 +280,7 @@ To configure products, follow these steps.
 
 To configure units, follow these steps.
 
-1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 1. Select a unit, and then select **External codes**.
 1. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit.
 1. In the **Value** section, in the **Value** field, enter the external code to match with the unit codes from incoming electronic invoices during the import process.
@@ -294,7 +299,7 @@ You can inquire about the results of a submission by going to **Organization adm
 
 To receive electronic invoices, follow these steps.
 
-1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents**.
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents**.
 1. Select **OK**, and then close the page.
 
 During the import process, the system tries to automatically match incoming electronic vendor invoices with existing confirmed purchase orders.

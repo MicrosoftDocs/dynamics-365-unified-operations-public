@@ -3,10 +3,11 @@ title: Set up a simulated sensor for testing (preview)
 description: Learn how to set up a simulator that you can use to test Sensor Data Intelligence without installing any physical sensors, including video instructions.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/02/2022
 ms.reviewer: kamaybac
 ms.search.form:
+ms.custom: sfi-ropc-blocked
 ---
 
 # Set up a simulated sensor for testing (preview)

@@ -2,15 +2,16 @@
 title: Support for external gift cards
 description: This article explains how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 author: BrianShook
-ms.date: 08/06/2024
+ms.date: 05/22/2025
 ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2017-10-02
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Support for external gift cards
@@ -266,7 +267,7 @@ To set up an online store, follow these steps.
 
 ## Online store payments setup
 
-To configure the payment accounts for your online store to use Adyen for external gift card processing, see [Configure additional information for the Adyen connector](adyen-connector-setup.md#configure-additional-information-for-the-connector). 
+To configure the payment accounts for your online store to use Adyen for external gift card processing, see [Configure the Adyen connector for online stores](adyen-connector-setup.md#configure-the-adyen-connector-for-online-stores).
 
 #### Test connector external gift card setup
 

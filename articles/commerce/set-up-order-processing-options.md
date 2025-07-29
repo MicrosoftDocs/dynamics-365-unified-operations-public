@@ -3,6 +3,7 @@ title: Set up call center channels
 description: This article describes how to process orders for call centers in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 05/28/2024
+ms.update-cycle: 1095-days
 ms.topic: article
 audience: Application User 
 ms.reviewer: v-chrgriffin

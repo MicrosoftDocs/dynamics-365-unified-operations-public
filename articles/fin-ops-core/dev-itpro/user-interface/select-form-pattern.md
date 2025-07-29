@@ -3,11 +3,12 @@ title: Form patterns for migrated forms
 description: Learn about form patterns for migrated forms, including an overview on selecting a form and a form pattern reference guide.
 author: jasongre
 ms.author: jasongre
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.custom: 
   - bap-template
   - evergreen
 ms.date: 01/23/2025
+ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

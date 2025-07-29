@@ -3,7 +3,7 @@ title: Print the Sales tax payment by code report
 description: Learn about the settings and actions that are required to print the Sales tax payment by code report in the accounting or tax code currency.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/27/2020
 ms.reviewer: kfend
 audience: Application User

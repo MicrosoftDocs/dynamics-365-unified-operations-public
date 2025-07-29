@@ -3,7 +3,7 @@ title: Cancel a running batch job
 description: Learn about how to cancel a batch job that is running, including overviews on aborting tasks in a batch job and enhanced batch abort features.
 author: karimelazzouni
 ms.author: sopat
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/17/2023
 ms.reviewer: johnmichalak
 audience: IT Pro 
@@ -12,6 +12,7 @@ ms.search.validFrom: 2019-05-08
 ms.search.form: 
 ms.dyn365.ops.version: Platform update 27
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
+ms.custom: sfi-image-nochange
 ---
 
 # <a id="legacy-abort"></a>Cancel a running batch job

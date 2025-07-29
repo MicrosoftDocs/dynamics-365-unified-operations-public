@@ -3,7 +3,7 @@ title: Fixed assets accounting for tax purposes
 description: Learn about the tax Depreciation functionality for Latvia, including fields to consider when setting up a depreciation profile.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/20/2017

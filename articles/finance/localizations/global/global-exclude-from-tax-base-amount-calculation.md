@@ -3,7 +3,7 @@ title: Calculate tax on prices when Prices include taxes is enabled
 description: Learn about the functionality for calculating tax on prices when the Prices include taxes option is enabled, including an overview on aspects of tax codes.
 author: epodkolzina
 ms.author: epodkolzina
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 07/28/2021

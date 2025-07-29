@@ -3,7 +3,7 @@ title: Access Business performance analytics
 description: Learn about how to access Business performance analytics, including an outline on how to share performance analytics with users.
 author: jkhaira7
 ms.author: jkhaira
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom:
 ms.date: 10/30/2024
 ms.reviewer: twheeloc 

@@ -3,7 +3,7 @@ title: Warehouse slotting
 description: Learn about warehouse slotting, which lets you consolidate demand by item and unit of measure from orders that have a status of Ordered, Reserved, or Released.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/13/2020
 ms.custom:
 ms.reviewer: kamaybac

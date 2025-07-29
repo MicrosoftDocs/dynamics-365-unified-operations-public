@@ -3,7 +3,7 @@ title: Acceptance test library FAQ
 description: Acccess answers to frequently asked questions about the Acceptance test library, including whether entities or creator classes should be implemented.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
-ms.topic: article
+ms.topic: faq
 ms.date: 03/27/2019
 ms.custom:
 ms.reviewer: johnmichalak

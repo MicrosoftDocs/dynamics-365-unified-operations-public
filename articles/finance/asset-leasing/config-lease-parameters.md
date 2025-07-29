@@ -3,7 +3,7 @@ title: Configure lease parameters
 description: Learn about the configuration settings for Asset leasing, such as security information and accounting settings, including a step-by-step process.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/11/2022
 ms.reviewer: twheeloc
 audience: Application User

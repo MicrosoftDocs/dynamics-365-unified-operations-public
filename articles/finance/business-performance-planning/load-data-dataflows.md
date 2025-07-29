@@ -3,8 +3,8 @@ title: Load data into Business performance planning using dataflows
 description: Learn how to use dataflows to load data into the Business performance planning application, including a process for populating dimensions and cubes.
 author: ShielaSogge
 ms.author: twheeloc
-ms.topic: article
-ms.date: 06/04/2024
+ms.topic: how-to
+ms.date: 05/08/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -67,7 +67,14 @@ To create the cube in Business performance planning dimensions, follow these ste
 1. Select **Load data**, select **Create dataflow**. This launches the **Power Query** window.
 
 >[!Important]
->The user must have the Dataflow Maker role assigned to be able to create the dataflow. If they don't have the role, the **Create dataflow** button isn't available.
+> To create a dataflow in Business performance planning, a user must have either the Business performance planning admin or Business performance planning Power User role. The **Create dataflow** button is only visible to users with these roles.
+>
+> Additionally, while users don't need the Dataflow maker role to create and configure a dataflow, they must have this role to successfully publish and load data into any Business performance planning or a standard Dataverse entity tables.
+>
+> If a user attempts to publish a dataflow without having the necessary role (such as Dataflow Maker), the system returns an error similar to the following:
+> User with id <user_id> doesn't have CreateAccess right(s) for record with id <record_id> of entity <Display_Name_Entity>. Consider assigning a role with the required access level to the user or team.
+
+
 
 2. Select dataflows. For more information about dataflows, see [Create and use dataflows in Power Apps](/power-apps/maker/data-platform/create-and-use-dataflows).
 

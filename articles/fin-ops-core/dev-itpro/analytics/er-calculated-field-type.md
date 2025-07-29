@@ -3,7 +3,7 @@ title: Support parameterized calls of ER data sources of the Calculated field ty
 description: Learn about how to use the Calculated field type for ER data sources, including learning about the prerequisites and reviewing ER solutions.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/04/2022
 ms.custom: 
 ms.reviewer: johnmichalak

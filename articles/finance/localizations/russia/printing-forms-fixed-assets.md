@@ -3,7 +3,7 @@ title: Unified printing forms for fixed assets (Russia)
 description: Learn about fixed asset unified printing forms for Microsoft Dynamics 365 Finance in Russia, including a table that provides form names for various form codes.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/21/2024

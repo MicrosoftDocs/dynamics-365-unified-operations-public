@@ -3,7 +3,7 @@ title: Billing schedule features
 description: Learn about the features of billing schedules, such as pricing methods, escalations and discounts, alignment dates, proration, reverse billing, and split item groups. 
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/04/2025
 ms.reviewer: twheeloc 
 audience: Application User

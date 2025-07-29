@@ -3,7 +3,7 @@ title: Tax amount adjustment
 description: Learn how to adjust tax amounts on purchase and sales orders during invoicing, including a process on validating tax details and resetting adjustments.
 author: kfend
 ms.author: kfend
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/05/2019
 ms.custom: 
 audience: Application User 

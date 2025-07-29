@@ -5,6 +5,7 @@ author: sericks007
 ms.author: sericks
 ms.topic: whats-new
 ms.date: 07/12/2024
+ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
   - evergreen
@@ -48,7 +49,7 @@ The Finance and Operations web client has started its journey of aligning to Mic
 
 -  **Dashboard** - Workspace cards on the dashboard now have a more tile-like appearance, with a white background color and box shadow to make them stand out more from the page background. The font size and weight have also been adjusted to allow more room for workspace titles. 
 
-    The following image shows how workspce cards appeared on the dashboard before Platform update 20:
+    The following image shows how workspace cards appeared on the dashboard before Platform update 20:
 
     ![Old dashboard.](../../fin-ops/get-started/media/prePU20-dashboard-cropped.png  "Old dashboard")
   
@@ -76,7 +77,7 @@ The Finance and Operations web client has started its journey of aligning to Mic
 
     ![New list page.](../../fin-ops/get-started/media/postPU20-customers-cropped.png  "New list page")
 
--  **FactBox pane** - The FactBox pane has also gotten a facelift. The pane now appears to span the full height of the page when open, and most importantly, the collapsed version is more discoverable and shows as a **Related information** blade along the right edge of the screen, instead of being an easily overlooed icon on the right.  
+-  **FactBox pane** - The FactBox pane has also gotten a facelift. The pane now appears to span the full height of the page when open, and most importantly, the collapsed version is more discoverable and shows as a **Related information** blade along the right edge of the screen, instead of being an easily overlooked icon on the right.  
 
     The following image shows how the FactBox pane appeared before Platform update 20:
 
@@ -156,7 +157,7 @@ Platform update 20 includes the following extensibility enhancements:
 - Add query object support for set-based update statements by using an update\_recordset method.
 - Allow a query extension to add a root data source to a union query.
 - Enable the addition of ranges into a view using an extension.
-- Enable setting **SupportsSetBasedSqlOperations** on data entity view extensions. **Yes** can only be set if all extensions have are set to **Yes**, including the base element. If any extension or the base element has the value set to **No**, then the runtime result will be **No**.
+- Enable setting **SupportsSetBasedSqlOperations** on data entity view extensions. **Yes** can only be set if all extensions are set to **Yes**, including the base element. If any extension or the base element has the value set to **No**, then the runtime result will be **No**.
 - Allow a form extension to add workflow to a form by editing **WorkflowEnabled**, **WorkflowDataSource**, and **WorkflowType**.
 - Enable Chain of Command for form methods. This allows an extension to add workflow to a form by overriding the **canSubmitToWorkflow** method. Note that if the targeted form method is a kernel method without an X++ override, then you will need to recompile the target form.
 - Enable Chain of Command for data entities.

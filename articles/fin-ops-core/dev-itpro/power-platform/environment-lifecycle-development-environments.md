@@ -3,7 +3,7 @@ title: Set up developer cloud-hosted environments by using Power Platform Integr
 description: Learna bout how to setup finance and operations developer cloud-hosted environments by using Microsoft Power Platform Integration.
 author: abunduc-ms
 ms.author: abunduc
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/02/2023
 ms.custom: bap-template
 ms.reviewer: johnmichalak

@@ -3,13 +3,16 @@ title: Deploy and access development environments
 description: Learn how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 02/16/2024
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
 # Deploy and access development environments

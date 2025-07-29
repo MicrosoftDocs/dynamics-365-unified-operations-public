@@ -3,7 +3,7 @@ title: Specify a custom storage location for generated documents
 description: Learn about how to extend the list of storage locations for documents that Electronic reporting (ER) formats generate.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/22/2019
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

@@ -218,7 +218,7 @@ Maintenance checklist templates can be used as a common set of tasks that a work
     On the **Maintenance job type defaults** page, each line shows the number of forecasted hours, and also the number of lines that have been created for items, expenses, maintenance checklists, and tools. The **Assets** field shows the number of active assets that are related to the maintenance job type default line.
 
 1. To copy a maintenance job type default to another maintenance job type default, select the maintenance job type default line to copy another setup to, select **Copy setup**, and then select the maintenance job type default to copy.
-1. To view a list of the assets, maintenance plans, or maintenance rounds that currently use a maintenance job type default line, select the line, and then select **Used by**.
+1. To view a list of the maintenance plans or maintenance rounds that currently use a maintenance job type default line, select the line, and then select **Used by**.
 
 ![Maintenance job type defaults page.](media/07-setup-for-work-orders.png)
 

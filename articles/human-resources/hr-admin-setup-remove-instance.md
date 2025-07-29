@@ -5,7 +5,7 @@ title: Remove an instance
 description: This article describes the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/11/2021
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm

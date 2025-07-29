@@ -3,7 +3,7 @@ title: Create a data integration project
 description: Learn how to create a data integration project, including a step-by-step process detailing the creation of data integration projects.
 author: ShivamPandeyMSFT
 ms.author: shpandey
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/06/2022
 ms.reviewer: kfend
 audience: Application User

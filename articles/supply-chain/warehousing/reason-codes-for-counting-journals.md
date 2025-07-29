@@ -3,7 +3,7 @@ title: Reason codes for inventory counting
 description: Learn how to set up and apply reason codes for counting tasks, including outlines on toggling the reason code features and recommendations.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/02/2021
 ms.reviewer: kamaybac
 ms.search.form: InventCountingReasonCodePolicy, InventCountingReasonCode

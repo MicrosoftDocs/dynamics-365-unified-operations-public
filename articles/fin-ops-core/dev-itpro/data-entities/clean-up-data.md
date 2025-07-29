@@ -2,8 +2,8 @@
 title: Clean up data management job history
 description: Learn how to clean up data management job history, including how to troubleshoot an execution history cleanup batch error.
 author: pnghub
-ms.author: gned
-ms.topic: conceptual
+ms.author: priysharma
+ms.topic: how-to
 ms.date: 01/27/2025
 ms.custom:
 ms.reviewer: twheeloc

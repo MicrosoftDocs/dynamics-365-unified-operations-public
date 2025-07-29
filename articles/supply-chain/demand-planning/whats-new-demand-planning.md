@@ -5,8 +5,8 @@ author: AndersEvenGirke
 ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
-ms.topic: conceptual
-ms.date: 04/08/2025
+ms.topic: whats-new
+ms.date: 05/06/2025
 ms.custom: 
   - bap-template
 ---
@@ -15,9 +15,22 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of Demand planning in Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 1.0.0.2999
+
+## New feature introduced in version 1.0.0.2999
+
+This version of Demand planning marks the public preview of *Generative insights*, which offers detailed insights calculated using AI models. The public preview supports two metrics: *seasonality* and *signal correlation*. The system clusters forecast data based on distinct patterns found for each metric. For each cluster, the system provides insights such as its relative size and confidence level. You can also choose the major contributor across various dimensions in the forecast.
+
+## New fixes and improvements in version 1.0.0.2999
+
+This version of Demand planning introduces the following fixes and improvements:
+
+- Increased stability.
+- Improvements in demo data. Features like row level security, time fence, and time freeze now work seamlessly when using demo data.
+
 ## Version 1.0.0.2794
 
-### New feature introduced in version 1.0.0.2794
+### New features introduced in version 1.0.0.2794
 
 This version of Demand planning adds several new features, as described in the following subsections.
 
@@ -109,8 +122,8 @@ The *Basic user* security role no longer has to be applied to all users of Deman
 
 This version of Demand planning introduces the following fixes and improvements:
 
-- Increased stability
-- New demo data that includes seasonal clusters
+- Increased stability.
+- New demo data that includes seasonal clusters.
 
 ## Version 1.0.0.1700
 

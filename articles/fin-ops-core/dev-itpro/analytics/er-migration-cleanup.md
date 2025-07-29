@@ -5,7 +5,6 @@ author: kfend
 ms.author: filatovm
 ms.topic: article
 ms.date: 04/29/2020
-ms.custom: 
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -13,6 +12,8 @@ ms.search.validFrom: 2018-01-01
 ms.search.form: ERSolutionTable, ERWorkspace, ERParameters, ERMigrationCleanup
 ms.dyn365.ops.version: AX 8.0.0
 ms.assetid: 
+ms.custom:
+  - sfi-image-nochange
 ---
 
 # ER migration cleanup 

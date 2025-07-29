@@ -3,7 +3,7 @@ title: Upload images
 description: This article describes how to upload images in Microsoft Dynamics 365 Commerce site builder.
 author: josaw1
 ms.date: 12/03/2021
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

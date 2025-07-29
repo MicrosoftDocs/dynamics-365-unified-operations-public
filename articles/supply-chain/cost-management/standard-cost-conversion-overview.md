@@ -90,6 +90,6 @@ The **Variance analysis statement** report lets you analyze revaluation variance
 
 ## Related information
 
-[Prerequisites for a standard cost conversion](prerequisites-standard-cost-conversion.md)
+- [Prerequisites for a standard cost conversion](prerequisites-standard-cost-conversion.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

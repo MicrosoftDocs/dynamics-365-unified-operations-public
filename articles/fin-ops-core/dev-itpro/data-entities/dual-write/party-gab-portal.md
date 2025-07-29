@@ -3,7 +3,7 @@ title: Using Microsoft Power Apps portals with the Party data model
 description: Learn about the changes to the web roles for Microsoft Power Apps portals because of the party data model in dual-write.
 author: RamaKrishnamoorthy
 ms.author: ramasri
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/22/2021
 ms.reviewer: johnmichalak
 audience: IT Pro

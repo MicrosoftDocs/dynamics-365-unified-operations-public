@@ -3,7 +3,7 @@ title: Personal information requests for Estonia
 description: Learn about personal information requests for Estonia, including an outline on various reports that are available and additional resources.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 11/06/2024

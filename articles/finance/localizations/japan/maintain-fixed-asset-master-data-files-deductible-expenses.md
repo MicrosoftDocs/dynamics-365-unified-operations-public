@@ -1,62 +1,58 @@
 ---
 title: Maintain fixed-asset master data files for deductible expenses
-description: Learn about maintaining fixed asset master data files for deductible expenses, including a process for setups in fixed assets groups.
+description: Learn how to maintain fixed asset master data files for deductible expenses for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 04/25/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: 
   - AssetGroup, AssetGroupBookSetup
   - AssetTable, AssetBook
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Maintain fixed-asset master data files for deductible expenses
 
 [!include [banner](../../includes/banner.md)]
 
-This task walks you through maintaining fixed asset master data files for deductible expenses.
+This article explains how to maintain fixed asset master data files for deductible expenses for Japan in Microsoft Dynamics 365 Finance.
 
+The following procedures were created using the demo data company JPMF.
 
+## Set up a fixed asset group
 
-This task was created using the demo data company JPMF.
+To set up a fixed asset group, follow these steps.
 
+1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed asset groups**.
+1. Select **New**.
+1. In the **Fixed asset group** field, enter a value.
+1. In the **Name** field, enter a value.
+1. In the **Autonumber fixed assets** field ,select **Yes**.
+1. Select a number sequence code to autogenerate the fixed asset number.
+1. Select the default location for new fixed assets.
+1. Select **Books**.
+9. Select **New**.
+1. In the **Book** field, enter a value. For example, enter "200RED_CUR".  
+1. Expand the **General** section and configure the options.
+1. Select **Save**.
+1. Select **New**.
+1. In the **Book** field, enter a value. For example, enter "250NDB_TAX".  
+1. Expand the **General** section and configure the options.  
+1. Select **Save**.
 
-## Setups in Fixed asset groups
-1. Go to Fixed assets > Setup > Fixed asset groups.
-2. Click New.
-3. In the Fixed asset group field, type a value.
-4. In the Name field, type a value.
-5. Select Yes in the Autonumber fixed assets field.
-6. Select a number sequence code to autogenerate the fixed asset number.
-7. Select the default  location for new fixed assets.
-8. Click Books.
-9. Click New.
-10. In the Book field, type a value.
-    * Example: 200RED_CUR  
-11. Expand the General section.
-    * Configure the options.  
-    * Refer other materials for the details of each of the options.  
-12. Click Save.
-13. Click New.
-14. In the Book field, type a value.
-    * Example: 250NDB_TAX  
-15. Expand the General section.
-    * Configure the options.  
-    * Refer other materials for the details of each of the options.  
-16. Click Save.
+## Create a fixed asset
 
-## Creation of Fixed asset
-1. Go to Fixed assets > Fixed assets > Fixed assets.
-2. Click New.
-3. In the Fixed asset group field, type a value.
-    * You can use the fixed asset group that you have just created, or you can use BUIL-M.  
-4. Click Books.
-    * Verify that the books were created automatically.  
+To create a fixed asset, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
+1. Select **New**.
+1. In the **Fixed asset group** field, enter a value. You can use the fixed asset group that you created, or you can use "BUIL-M".  
+1. Select **Books**.
+1. Verify that the books were created automatically.  
 
 
 

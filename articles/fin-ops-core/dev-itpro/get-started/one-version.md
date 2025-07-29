@@ -3,7 +3,7 @@ title: One Version service updates FAQ
 description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: rashmansur
 ms.date: 03/2/2025
-ms.topic: article
+ms.topic: faq
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak

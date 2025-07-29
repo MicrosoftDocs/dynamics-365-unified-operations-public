@@ -33,6 +33,9 @@ The order of the activities in the grid is determined by the order of the legs i
 
 You can update the dates for all containers by selecting **Update start date** or **Update actual end date** on the Action Pane. Alternatively, you can enter the dates per container on the shipment. This approach allows for greater flexibility, because containers can be split in a multi-journey environment.
 
+> [!NOTE]
+> The Landed cost tracking control center feature doesn't consider vendor lead times on individual purchase lines when calculating expected delivery dates.
+
 ## Buttons on the Action Pane
 
 You can use the buttons on the Action Pane of the **Inbound tracking** page to work with inbound voyages and journeys. The following table describes the buttons that are available.

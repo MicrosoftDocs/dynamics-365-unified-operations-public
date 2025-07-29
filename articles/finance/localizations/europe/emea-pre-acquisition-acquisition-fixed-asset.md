@@ -3,7 +3,7 @@ title: Post the preacquisition of a fixed asset
 description: This article describes how to set up and post fixed asset preacquisitions with Microsoft Dynamics 365 Finance.
 author: EvgenyPopovMBS
 ms.author: evgenypopov
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/27/2025
 ms.reviewer: johnmichalak
 ms.search.region: Czech Republic, Hungary

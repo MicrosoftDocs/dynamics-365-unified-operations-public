@@ -1,30 +1,29 @@
 ---
 title: Audit file (XML Auditfile Financieel, XAF)
-description: Learn how to set up and generate the Audit file for legal entities in the Netherlands, including an outline on importing and setting up ER configurations.
+description: Learn how to set up and generate the Audit file for legal entities in the Netherlands in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 06/05/2025
 ms.reviewer: johnmichalak
 ms.search.region: Netherlands
 ms.search.validFrom: 2016-06-30
 ms.search.form: TaxEvatParameters_NL
-ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Audit file (XML Auditfile Financieel, XAF)
 
 [!include [banner](../../includes/banner.md)]
 
+This article explains how to set up and generate the Audit file for legal entities in the Netherlands in Microsoft Dynamics 365 Finance.
+
 This functionality is available for legal entities whose primary address is in the Netherlands.
 
-This article explains how to import Electronic reporting (ER) configurations for the Audit file and then generate the Audit file for legal entities in the Netherlands.
+## Import and set up electronic reporting configurations
 
-## Import and set up ER configurations
-
-To prepare Microsoft Dynamics 365 Finance to generate the Audit file, you must import the following ER configurations.
+To prepare Microsoft Dynamics 365 Finance to generate the Audit file, you must first import the following electronic reporting (ER) configurations.
 
 | Number | ER configuration name         | Type                                 | Description |
 |--------|-------------------------------|--------------------------------------|-------------|
@@ -33,13 +32,13 @@ To prepare Microsoft Dynamics 365 Finance to generate the Audit file, you must i
 
 ## Generate the Audit file
 
-The steps in this procedure walk you through using the Audit file.
+To generate the Audit file, follow these steps.
 
-1. Go to **General ledger** > **Periodic tasks** > **Audit file**.
-2. In the **From date** field, enter a date. 
-3. In the **To date** field, enter a date. 
-4. In the **Format mapping** field, enter **Audit file (NL)**.
-5. Select **OK**.
+1. In Dynamics 365 Finance, go to **General ledger** \> **Periodic tasks** \> **Audit file**.
+1. In the **From date** field, enter a date. 
+1. In the **To date** field, enter a date. 
+1. In the **Format mapping** field, enter "Audit file (NL)".
+1. Select **OK**.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,7 +65,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 5. On the **Country/region properties** tab, select **New**, and specify the following information:
     - In the **Country/region** column, select **GBR**.
     - In the **Country/region type** column, select **Domestic**.
-6. List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
+6. List all the countries or regions that your company does business with. For each country/region that is part of the EU, in the **Country/region type** field, select **EU**.
 
 ## Work with the EU sales list
 

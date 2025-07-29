@@ -3,8 +3,9 @@ title: Responsible AI FAQs for Dynamics 365 Supply Chain Management
 description: Responsible AI FAQs provide information about the AI technology that's used in Microsoft Dynamics 365 Supply Chain Management.
 author: kamaybac
 ms.author: kamaybac
-ms.topic: article
+ms.topic: faq
 ms.date: 01/27/2025
+ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac
@@ -21,8 +22,8 @@ ms.collection:
 - [Responsible AI FAQ for AI summaries with Copilot](faq-summaries.md)
 - [Responsible AI FAQ for Analyze demand plans with Copilot](faq-demand-planning-copilot.md)
 - [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](faq-confirmed-po-changes.md)
-- [Responsible AI FAQ for Inquire into inventory with Copilot through API (preview)](faq-inventory-query.md)
 - [Responsible AI FAQ for Workload insights with Copilot](faq-wma-copilot.md)
+- [Responsible AI for the Supplier Communications Agent (production ready preview)](faq-supplier-communications-agent.md)
 
 ## Related information
 

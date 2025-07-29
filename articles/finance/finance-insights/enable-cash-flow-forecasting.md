@@ -3,7 +3,7 @@ title: Enable cash flow forecasting
 description: Learn how to configure the Cash flow forecasts feature in Finance Insights, including a step-by-step process detailing how to enable this setting.
 author: ShivamPandeyMSFT
 ms.author: shpandey
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/11/2023
 ms.reviewer: twheeloc
 audience: Application User
