@@ -1,8 +1,8 @@
 ---
 title: Store selector module
-description: This article covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+description: Learn about the store selector module and how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 03/28/2025
+ms.date: 07/29/2025
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -72,11 +72,11 @@ The store selector module is integrated with the [Azure Maps REST application pr
 
 For the Azure Maps REST SDK, you must ensure that the following URLs are allowed per your site's content security policy (CSP). This setup is done in Commerce site builder, by adding allowed URLs to various CSP directives for the site (for example, **img-src**). For more information, see [Content security policy](dev-itpro/manage-csp.md).
 
-- To the **child-src** directive, add **blob:**.
-- To the **connect-src** directive, add **https://atlas.microsoft.com/** and **https://js.monitor.azure.com/**.
-- To the **font-src** directive, add **https://atlas.microsoft.com/**.
-- To the **script-src** directive, add **https://atlas.microsoft.com/**.
-- To the **style-src** directive, add **https://atlas.microsoft.com/**.
+- To the **child-src** directive, add "blob:".
+- To the **connect-src** directive, add `https://atlas.microsoft.com/` and `https://js.monitor.azure.com/`.
+- To the **font-src** directive, add `https://atlas.microsoft.com/`.
+- To the **script-src** directive, add `https://atlas.microsoft.com/`.
+- To the **style-src** directive, add `https://atlas.microsoft.com/`.
 
 ## Pickup in store mode
 
@@ -97,13 +97,13 @@ The following image shows an example of a store selector module used on a PDP.
 
 The store selector module also supports a **Find stores** mode. This mode can be used to create a store locations page that shows available stores and their information. In this mode, the store selector module works without product context and can be used as a standalone module on any site page. In addition, if the relevant settings are turned on for the module, users can select a store as their preferred store. When a store is selected as a user's preferred store, the store ID is maintained in the browser cookie. Therefore, the user must accept a cookie consent message.
 
-The following illustration shows an example of a store selector module that is used together with an azure maps module on a store locations page.
+The following illustration shows an example of a store selector module that is used together with an Azure Maps module on a store locations page.
 
-![Example of a store selector module and azure map module on a store locations page.](./media/ecommerce-storelocator-azure.PNG)
+![Example of a store selector module and Azure Maps module on a store locations page.](./media/store-locator-azure.PNG)
 
 ## Render a map
 
-The store selector module can be used together with the azure maps module to show the store locations on a map. For more information about the azure maps module, see [Azure Maps module](azure-map-module.md)
+The store selector module can be used together with the Azure Maps module to show the store locations on a map. Learn more in [Azure Maps module](azure-map-module.md)
 
 ## Store selector module properties
 
@@ -114,7 +114,7 @@ The store selector module can be used together with the azure maps module to sho
 | Style | **Dialog** or **Inline** | The module can be rendered either inline or in a dialog box. |
 | Set as preferred store | **True** or **False** | When this property is set to **True**, users can set a preferred store. This feature requires that users accept a cookie consent message. |
 | Show all stores | **True** or **False** | When this property is set to **True**, users can bypass the **Search radius** property and view all stores. |
-| Autosuggest options: Max results | Number | This property defines the maximum number of autosuggest results that can be shown via the Azure Fuzzy Search API. |
+| Autosuggest options: Max results | Number | This property defines the maximum number of autosuggest results that can be shown via the Azure Maps Fuzzy Search API. |
 | Search radius | Number | This property defines the search radius for stores, in miles. If no value is specified, the default search radius of 50 miles is used. |
 | Terms of service | URL |  This property specifies the terms of service URL that is required to use the Azure Maps service. |
 
