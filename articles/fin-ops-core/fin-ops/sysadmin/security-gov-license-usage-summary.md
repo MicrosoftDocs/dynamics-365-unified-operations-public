@@ -4,7 +4,7 @@ description: Learn about user security governance license usage summary report
 author: ceian  
 ms.author: ceian
 ms.topic: concept-article
-ms.date: 07/25/2025
+ms.date: 07/29/2025
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
