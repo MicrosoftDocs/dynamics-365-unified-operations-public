@@ -28474,11 +28474,6 @@
       "source_path": "articles/supply-chain/master-planning/tasks/create-plan-site.md",
       "redirect_url": "/dynamics365/supply-chain/master-planning/master-planning-home-page",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/supply-chain/supply-chain-dev/message-processor.md",
-      "redirect_url": "/dynamics365/supply-chain/message-processor/message-processor",
-      "redirect_document_id": false
-    }    
+    }
   ]
 }
