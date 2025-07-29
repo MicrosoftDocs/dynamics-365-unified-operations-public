@@ -30,7 +30,7 @@ To use the features described in this article, your system must meet the followi
 
 ## Specify external item identifiers for a customer
 
-External item identifiers are set up on the account for the customer to use. You can add external item identifiers to a customer account by following these steps:
+External item identifiers are set up on the account for the customer that uses them. You can add external item identifiers to a customer account by following these steps:
 
 1. Go to **Account Receivable** \> **All customers**.
 1. Find and open the customer you want to set up with external item identifiers.
