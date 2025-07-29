@@ -205,13 +205,15 @@ You can use this type of step only if your forecast model has at least two paral
 
 ### Finance and operations steps
 
-You might already be using your own custom Microsoft Azure Machine Learning algorithms for demand forecasting in Dynamics 365 Supply Chain Management, as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md). In this case, you can continue to use those algorithms while you use Demand planning. Just put a *Finance and operations* step in your forecast model instead of a *Forecast* step.
+You might already be using your own custom Microsoft Azure Machine Learning algorithms for demand forecasting in Dynamics 365 Supply Chain Management, as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md). To use them with Demand planning, you must set up the connection to Azure and then add calculation to your forecast model using put a *Custom* step instead of a *Forecast* step.
 
 Learn how to set up Demand planning to connect to and use your Azure Machine Learning algorithms in [Use your own custom Azure Machine Learning algorithms in Demand planning](custom-azure-machine-learning-algorithms.md).
 
 ### Custom steps
 
-<!-- KFM: description needed. How are these different from the Finance and operation steps just mentioned? When do we choose which? -->
+It's possible for you to design your your own custom Microsoft Azure Machine Learning algorithms for demand forecasting, even if you've never used them with Dynamics 365 Supply Chain Management. To use them with Demand planning, you must set up the connection to Azure and then add calculation to your forecast model using put a *Custom* step instead of a *Forecast* step.
+
+Learn how to set up Demand planning to connect to and use your Azure Machine Learning algorithms in [Use your own custom Azure Machine Learning algorithms in Demand planning](custom-azure-machine-learning-algorithms.md).
 
 ### Phase in/out steps
 

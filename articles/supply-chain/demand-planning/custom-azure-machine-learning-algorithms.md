@@ -14,11 +14,12 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-If you're already using your own Microsoft Azure Machine Learning algorithms for demand forecasting in Dynamics 365 Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use Demand planning in Microsoft Dynamics 365 Supply Chain Management.
+In addition to the standard forecasting algorithms provided with Demand planning, you can also create your own custom algorithms and use them in your [Demand planning forecast models](design-forecast-models.md). To do so, you must create and publish your algorithms using Microsoft Azure Machine Learning, set up a connection from Demand planning to Azure, and place one of the following types of steps to your forecast models as needed (instead of using the standard *Forecast* step):
 
-This article describes the setup that is required to enable Demand planning to connect to your [Azure Machine Learning workspace](/azure/machine-learning/concept-workspace).
+- *Custom* step – Lets you use custom algorithms that you've created using Microsoft Azure Machine Learning, but which you've never before used with Dynamics 365 Supply Chain Management.
+- *Finance and operation* step – Lets you use custom algorithms that you previoiusly used in Dynamics 365 Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)).
 
-<!-- KFM: We have two tiles related to this: Finance and operations and Custom. We need to clarify how these are different and which to use when. Can we explain both in this topic? If not, which one are we actually talking about here? -->
+This article describes the setup that is required to enable Demand planning to connect to your [Azure Machine Learning workspace](/azure/machine-learning/concept-workspace). It also explains how to set up each type of custom algorithm step in your forecat models.
 
 ## Set up a new Microsoft Entra application
 
@@ -30,9 +31,9 @@ Follow the steps in this section to create a new Microsoft Entra application in 
 1. In the **Certificates & secrets** section of the new Microsoft Entra application, create a secret for the application as described in [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret).
 1. Make a note of the application ID and its secret. You'll need these details later.
 
-## Assign access for the new Microsoft Entra application to the Azure Machine Learning workspace and Azure Machine Learning workspace storage account
+## Grant access for the new Microsoft Entra application to the Azure Machine Learning workspace and Azure Machine Learning workspace storage account
 
-Follow these steps to assign access for the new Microsoft Entra application to the Azure Machine Learning workspace.
+Follow these steps to grant access for the new Microsoft Entra application to the Azure Machine Learning workspace.
 
 1. In the [Azure portal](https://portal.azure.com/), go to the resource group that contains your Azure Machine Learning workspace.
 1. On the left navigation pane, select **Access control**.
@@ -44,7 +45,7 @@ Follow these steps to assign access for the new Microsoft Entra application to t
 1. The application now appears in the **Members** list. Select **Next**.
 1. On the **Review \+ assign** tab, select **Next**.
 
-Follow these steps to assign access for the new Microsoft Entra application to the storage account that Azure Machine Learning workspace is connected to.
+Follow these steps to allow the new Microsoft Entra application to access the storage account that Azure Machine Learning workspace is connected to.
 
 1. In the [Azure portal](https://portal.azure.com/), go to the resource group that contains your storage account (the storage account that your Azure Machine Learning workspace is using).
 1. On the left navigation pane, select **Access control**.
@@ -74,7 +75,8 @@ Follow these steps to set up the Azure Machine Learning service connection in De
     - **Application ID** – Enter the application ID of the Microsoft Entra application that you created. This value is used to authorize API requests to the Azure Machine Learning service.
     - **Application secret** – Enter the service principal application secret for the Microsoft Entra application that you created. This value is used to acquire the access token for the security principal that you created to perform authorized operations against Azure Storage and the Azure Machine Language workspace.
 
-1. <!-- KFM: Describe **Custom machine learning pipeline configurations**. What is this? How do we work with these? What is the **Add existing** option? -->
+1. On the Action Pane, select **Save**.
+1. On the **ML workspace pipelines URLs** FastTab, add a row for each pipeline provided by your workspace. Each pipeline requires a unique **Name** (which is only used internally in Demand planning) and a **Pipeline URL**, which is the full URL that Demand planning must use to access the pipeline. <!-- KFM: Few more details are needed here. For example: What is a "pipeline" and what do we need it for? What do the **Activate** and **Deactivate** toolbar buttons do--do we need to use them? I understand we use "pipelines" for *FnO* steps, but "batch" for *Custom* steps--what does that mean for the settings we see here? Where do we find URLs to communicate via "batch" instead of "pipeline"? "Batch" is not mentioned anywhere in this article. -->
 
 ## Set up a forecast that uses your own Azure Machine Learning algorithms
 

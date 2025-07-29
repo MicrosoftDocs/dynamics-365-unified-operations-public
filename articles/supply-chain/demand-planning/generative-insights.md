@@ -48,8 +48,6 @@ To view generative insights, follow these steps:
 
 1. When you're done exploring the insights, select **Back to time series** to return to the time series.
 
-<!-- KFM: Do we have anything more that we want to describe or promote here? -->
-
 ## Related information
 
 - [Responsible AI FAQ for Generative insights for Demand planning (production ready preview)](../faq-demand-planning-generative-insights.md)

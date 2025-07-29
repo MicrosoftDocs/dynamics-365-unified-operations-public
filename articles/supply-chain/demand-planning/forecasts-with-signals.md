@@ -42,8 +42,6 @@ Follow these steps to set up a forecast that includes both input and a signal.
 
 ## Align input and signal time series
 
-<!-- KFM: this section should be reviewed by Anders -->
-
 To calculate a forecast with signals, the input and signal time series must be aligned. This means that they must have compatible time bucket sizes, dimensions, and time spans.
 
 ### Time span requirements
@@ -65,7 +63,7 @@ The input and signal time series must have compatible dimensions. For example, i
 
 The following illustration provides examples of successful and unsuccessful dimension alignments.
 
-- The first example won't work because the input time series has a *Country* dimension, but the signal time series doesn't.
+- The first example won't work because the signal time series has a *Country* dimension, but the input time series doesn't.
 - The second example works because both time series include dimensions for both the *Country* and the *Month*.
 
 :::image type="content" source="media/forecast-signal-dimension-match.svg" alt-text="Examples of how to align dimensions in the input and signal time series." lightbox="media/forecast-signal-dimension-match.svg":::
