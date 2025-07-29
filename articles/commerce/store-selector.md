@@ -103,7 +103,7 @@ The following illustration shows an example of a store selector module that is u
 
 ## Render a map
 
-The store selector module can be used together with the Azure Maps module to show the store locations on a map. Learn more in [Azure Maps module](azure-map-module.md)
+The store selector module can be used together with the Azure Maps module to show the store locations on a map. Learn more in [Azure Maps module](azure-maps-module.md)
 
 ## Store selector module properties
 
@@ -176,7 +176,7 @@ To configure the store selector module to show available stores for a store loca
 
 [Azure Maps REST SDK](/azure/azure-maps/how-to-use-ts-rest-sdk)
 
-[Azure Maps module](azure-map-module.md)
+[Azure Maps module](azure-maps-module.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
