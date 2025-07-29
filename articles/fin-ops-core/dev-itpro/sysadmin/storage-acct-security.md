@@ -22,6 +22,40 @@ This article describes the latest security enhancements in the finance and opera
 
 ## Frequently asked questions
 
+### I get error  'System.IO.IOException: The parameter is incorrect' or 'System.UnauthorizedAccessException: Access to the path \\storageAccount.file.core.windows.net\dixfshare\' is denied.
+
+The Dynamics for Finance and Operations data import/export framework will stop mounting the file share as a drive accessible from AOS instances with disablement of access keys. Access will only be allowed through the Azure storage interface to enhance security. Most users won’t be affected, but custom code using `getSharedFilePath` will see changes: this method will now place files in the AOS temp folder instead of the file share, returning the new path. This ensures temporary file operations continue working without code updates, provided you’re only reading or verifying file contents.
+
+Key limitations:
+-	The temp folder is unique to each AOS instance; do not store file paths in a database for cross-instance access.
+-	Avoid using the file share for permanent storage—files older than one day are deleted.
+-	Don’t query the `DMFParameters` table’s `SharedFolderPath` field for cloud environments; its value is not accurate outside local/dev setups.
+
+#### What if I need to create or modify a file on the export file share?
+Avoid using the data import/export file share in customizations. If necessary, use the DMFFileShareHelper class and its createFileFromStream method to save a stream to the file share. This returns a file interface for confirming creation, downloading, or deleting the file.
+
+#### Code example to create, read, and delete a file on dixf share
+
+```
+// creating a new file on the dixf share
+str filename = 'FrmStm.txt';
+str expectedContents = 'file contents';
+System.Byte[] byteArray = System.Text.Encoding::UTF8.GetBytes(expectedContents);
+MemoryStream stream = new MemoryStream(byteArray);
+
+IFile newFile = DMFFileShareHelper::createFileFromStream(filename, stream);
+stream.Dispose();
+
+// reading the file contents using IFile
+// To get an IFile instance for an existing file, DMFFileShareHelper::findFileOnShare(filename) can be called.
+Stream stream2 = newFile.Download();
+StreamReader reader = new StreamReader(stream2);
+str actualContent = reader.ReadToEnd();
+reader.Close();
+
+```
+You can also look at method getSharedFilePathV2 in DMFStagingWriter for an example of use of DMFFileShareHelper to download a file from shared storage and put it on the data import and export share. 
+
 ### I receive the following error on my developer machine/customer-hosted environment: "Fetching a valid storage connection string is disabled." How can I fix this error?
 
 The **Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString()** public method is being deprecated. Learn more in [End of support for sharing storage account connection strings via public API GetCsuStorageConnectionString](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md#end-of-support-for-sharing-storage-account-connection-strings-via-public-api-getcsustorageconnectionstring).
