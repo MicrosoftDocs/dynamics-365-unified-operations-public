@@ -4133,6 +4133,14 @@
           href: warehousing/wms-only-mode-example.md
         - name: Warehouse management only mode frequently asked questions
           href: warehousing/wms-only-mode-faq.md
+    - name: Message processor
+      items:
+      - name: Monitor and control message processor messages
+        href: message-processor/message-processor.md
+      - name: Clean up processed and canceled message processor messages
+        href: message-processor/message-processor-cleanup.md
+      - name: Business events, custom message queues, and custom message types
+        href: message-processor/developer/message-processor-develop.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
@@ -4141,8 +4149,6 @@
         href: supply-chain-dev/create-new-transportation-management-engine.md?context=/dynamics365/context/supply-chain
       - name: Extend inventory on-hand data entities
         href: inventory/extend-on-hand-entities.md
-      - name: Create and process message queues and message types
-        href: supply-chain-dev/message-processor.md
     - name: Distributed hybrid topology (deprecated)
       items:
       - name: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers
