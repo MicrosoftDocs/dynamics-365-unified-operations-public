@@ -34,8 +34,8 @@ External item identifiers are set up on the account for the customer to use. You
 
 1. Go to **Account Receivable** \> **All customers**.
 1. Find and open the customer you want to set up with external item identifiers.
-1. On the **Action** pane, open the **Sell** tab and then select **Setup** \> **External item description**.
-1. The **External item description** page opens, showing the existing external item identifiers for the customer. To add a new one, select **New** on the **Action** pane and then enter values for the following fields:
+1. On the Action Pane, open the **Sell** tab and then select **Setup** \> **External item description**.
+1. The **External item description** page opens, showing the existing external item identifiers for the customer. To add a new one, select **New** on the Action Pane and then enter values for the following fields:
     - **ABC code** – If the customer has assigned an ABC inventory classification to the item, you can note that here. ABC analysis is an inventory management technique that determines the value of inventory items based on their importance to the business.
     - **Item number** – Select your standard (internal) item number for the product.
     - **External item number** – Enter the external item identifier that this customer uses to identify the item you specified. Users will be able to search for this number when creating a sales order.
@@ -43,7 +43,7 @@ External item identifiers are set up on the account for the customer to use. You
     - **External item text** – Enter text that this customer uses to describe the item.
     - *Other dimensions* – If the external item number is associated with other specific dimension values (such as configuration, size, color, style, and so on), then enter these dimension values in the remaining columns as needed to finish identifying the item.
 
-1. Continue to add external item identifiers as needed. When you're done, select **Save** on the **Action** pane.
+1. Continue to add external item identifiers as needed. When you're done, select **Save** on the Action Pane.
 
 ## Add a product to a sales order using its external item identifier
 
