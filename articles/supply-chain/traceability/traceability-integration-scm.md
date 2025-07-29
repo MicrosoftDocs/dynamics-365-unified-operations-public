@@ -27,7 +27,7 @@ To integrate Traceability with the tracked components feature Supply Chain Manag
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
 - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
     - *(Preview) Traceability*
-    - *Tracked components*
+    - *Tracked components* (As of Supply Chain Management version 10.0.45, this feature is turned on by default.)
 
 ## Configure activities in Traceability
 

@@ -17,7 +17,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.45 GA -->
 
-When you're adding an item to a sales order, you can search for it using its external item identifier or external description/name. External item identifiers and descriptions can be defined for each customer, allowing you to use the customer's terminology when adding products to orders.
+When you're adding an item to a sales order, you can search for it using its external item identifier or external description/name. You can define external item identifiers and descriptions for each customer, allowing you to use the customer's terminology when adding products to orders.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -26,7 +26,7 @@ When you're adding an item to a sales order, you can search for it using its ext
 To use the features described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.45 or later.
-- The feature that is named *Enable lookup based search for Sales External Item Identifier field* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- You must ensure that the feature named *Enable lookup based search for Sales External Item Identifier field* is turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Specify external item identifiers for a customer
 
@@ -52,9 +52,9 @@ When a customer has external item identifiers defined, you can use them to quick
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Either [create a new sales order](tasks/create-sales-orders.md) or open an existing one that you want to add lines to. The sales order must be for a customer that has external item identifiers defined.
 1. Make sure that the **External** column is visible in the grid on the **Sales order line** FastTab. If it isn't, you can add it by doing the following steps:
-    1. Open the **Grid options** drop-down list, which is the button with three dots on it located at the right side of the heading row of the grid.
+    1. Open the **Grid options** dropdown list, which is the button with three dots on it located at the right side of the heading row of the grid.
     1. Select **Insert columns** to open the **Insert columns** dialog.
-    1. Find the row with **Field** name *External* and select the check box in that row.
+    1. Find the row with **Field** name *External* and select the checkbox in that row.
     1. Select **Update** to apply the change and close the dialog.
 1. On the **Sales order line** FastTab toolbar, select **Add line**.
 1. In the **External** column for the new line, select the item that you want to use based on its external item number or description. You can either type it in the field or select it from the lookup list. The field supports *search as you type*, which filters the list based on the **External item number** and **Description** values from the external item description.

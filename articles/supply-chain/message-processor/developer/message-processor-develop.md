@@ -1,6 +1,6 @@
 ---
-title: Create and process message queues and message types
-description: Learn how to design custom message queues and message types by using Visual Studio, and how to monitor and control the processing of all message types.
+title: Business events, custom message queues, and custom message types
+description: Learn how to design custom message queues and message types for the message processor by using Visual Studio, and how to set up business events to deliver alerts for failed processing results.
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
@@ -11,103 +11,20 @@ ms.custom:
   - bap-template
 ---
 
-# Create and process message queues and message types
+# Business events, custom message queues, and custom message types
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-The message processor is a framework for processing messages that represent events. It has the following properties:
-
-- It processes messages in the correct order. (Dependent messages are processed in sequence.)
-- It's scalable. (Independent messages can be processed in parallel.)
-- It uses the required system resources.
-- It avoids exhaustion of system resources if a spike in messages occurs.
-- It's reliable.
-- It's traceable.
-
-You might use this framework, for example, to develop and manage custom integration with external systems, and to process other custom functionality. Microsoft Dynamics 365 Supply Chain Management includes, for example, several out-of-box features that use predefined message types and message queues. These features include [third-party manufacturing execution system (MES) integration](../production-control/mes-integration.md), [deferred posting](../production-control/deferred-posting.md), and [packing slip posting during container close](../warehousing/packing-containers.md#set-up-the-packing-process). [Warehouse management only mode](../warehousing/wms-only-mode-overview.md) uses the message processor framework to manage *inbound and outbound shipment orders*.
-
-This article describes how to design your own custom message queues and message types by using Visual Studio, and how to monitor and control the processing of all message types (including the predefined message types) by using the **Message processor messages** page.
-
-## <a name="message-processor-page"></a>Message processor messages page
-
-Use the **Message processor messages** page to view the list of incoming messages, view the message log, manually process messages, and troubleshoot issues.
-
-### Open the Message processor messages page
-
-To view the list of messages that have been processed by the message processor, go to **System administration \> Message processor \> Message processor messages**.
-
-### Grid columns and filters on the Message processor messages page
-
-You can use the fields at the top of the **Message processor messages** page to find specific messages that you're looking for. Most of these filters match the column headings in the message grid. The following filters and column headings are available:
-
-- **Message type** – The type of message.
-- **Message queue** – The name of the queue that the message will be processed in. The following queues are provided:
-
-    - *Manufacturing Execution 3rd Party* – This queue holds messages that are created as part of the *Manufacturing execution system integration* feature. These messages are also listed on the **Manufacturing execution systems integration** page, which is like the **Message processor messages** page but is focused exclusively on that feature. Learn more in [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md).
-    - *Production* – This queue holds messages that are created as part of the *Make finished goods physically available before posting to journals* feature. These messages are also listed on the **Deferred production order posting** page, which is like the **Message processor messages** page but is focused exclusively on that feature. Learn more in [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md).
-    - *Warehouse*  – This queue holds messages that are created for warehouse management, such as to post a sales packing slip when the last shipment container is closed as part of a [manual packing process](../warehousing/packing-containers.md). (This message has a message type of *Run packing slip for container*.)
-    - *Shipment Orders* – This queue holds messages that support [Warehouse management only mode](../warehousing/wms-only-mode-overview.md).
-    - *Source System Products* – This queue holds messages that support [source product master data](../warehousing/wms-only-mode-exchange-data.md).
-    - *External warehouse shipment order updates* – This queue holds messages that support [external shared warehouse processing](../warehousing/wms-only-mode-external-shared-warehouse.md).
-    - *Dynamics 365 Sales Integration* – This queue holds messages that integrate with Dynamics 365 Sales. For more information about this feature and the messages that it might add to this queue, see [Work with added efficiency in quote-to-cash with Dynamics 365 Sales](../../fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-use.md).
-    - *\<Custom queues\>* – If your system has been customized to support additional types of queues, they'll also be listed here. For more information about how to add custom queues, see [Implement a new queue](#custom-queue).
-
-- **Message state** – The state of the message. The following states exist:
-
-    - *Queued* – The message is ready to be processed by the message processor.
-    - *Processed* – The message was successfully processed by the message processor.
-    - *Canceled* – The message was canceled by a user.
-    - *Failed* – The message failed to be processed.
-
-- **Message content** – This filter does a full-text search of message content. (Message content isn't shown in the grid.) The filter treats most special symbols (such as hyphens) as spaces, and it treats all space characters as Boolean OR operators. For example, if you search for a specific `journalid` value that equals *USMF-123456*, the system will find all messages that contain either "USMF" or "123456," and the list is likely to be long. Therefore, it's better to enter just *123456* in this case, because more specific results will be returned.
-
-### <a name = "view-message-log"></a> View the message log, message content, and details
-
-To view detailed information about a message, select it in the grid, and then select the **Log** or **Message content** tab under the message grid, where each processing event is shown.
-
-The text on the **Message content** tab depends on the **Message type** value. Therefore, the text length varies. A typical message content text will start with an opening brace (**{**) and end with a closing brace (**}**). In between will be field names (for example, `journalId`), each of which is followed by a colon and a value (for example, *USMF-123456*).
-
-The toolbar on the **Log** tab includes the following buttons:
-
-- **Log** – Select this button to show the processing results. This function is especially helpful when messages have a **Processing result** value of *Failed*, and you want to understand the reasons for the processing failure.
-- **Bundle** – Multiple message processing operations can run as part of the same batch process. Select this button to view the detailed data. For example, you can see whether dependencies exist that require the system to process some messages in a specific sequence.
-
-### Manually process, cancel, or requeue a message
-
-Depending on the current state of a message, you can manually process or cancel it as you require. Select the message in the grid, and then select **Process** or **Cancel** on the Action Pane.
-
-If you want to requeue a message that was previously canceled, select it in the grid, and then select **queue** on the Action Pane. The system will process the message as usual.
-
-## <a name="processor-batch-job"></a>Schedule message processing by using the message processor batch job
-
-To process a message queue, you must set up a batch job to run it. Usually you'll set up a fixed, regular schedule for processing each queue. However, you can also run any queue on demand. To create and schedule the required batch jobs, follow these steps.
-
-1. Go to **System administration \> Message processor \> Message processor**.
-1. In the **Message processor** dialog box, in the **Message queue** field, select the message queue that's associated with the messages that you want to process. The queue that you select will depend on the feature or system that generated the messages.
-1. On the **Run in the background** FastTab, set up batch and scheduling options as you require, just as you would do for [other types of jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
-1. Select **OK** to run or schedule the job based on your settings.
-
-## Message processor queue setup
-
-You can configure the number of processor tasks that should be dedicated to each message processor queue. Unconfigured queues will use a default value that you can override as you require. Follow these steps to customize one or more queues.
-
-1. Go to **System administration \> Message processor \> Message queue setup**.
-1. Follow one of these steps:
-
-    - To edit an existing queue, select **Edit** on the Action Pane, and then select the target queue in the grid.
-    - To add a new configuration, select **Add** on the Action Pane to add a new row to the grid. Then, in the **Message queue** field for the new row, select the name of the queue that you want to configure.
-
-1. For the new or selected row, set the **Number of processor tasks** field to the number of processor tasks that should be dedicated to the specified queue. The maximum value is *8*. The minimum value depends on the minimum number of batch threads that are configured for your system (typically *2*).
-1. On the Action Pane, select **Save**.
+This article describes how to design your own custom message queues and message types for the [message processor](../message-processor.md) by using Visual Studio. It also describes how to set up business events to deliver alerts for failed processing results.
 
 ## <a name="business-events"></a>Set up business events to deliver alerts for failed processing results
 
-You can inquire about failed messages by filtering on the *Failed* (or possibly *Canceled*) value for the **Message state** field, as described earlier in this article. In addition, you can set up [business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) to alert you about failed processing results. To complete this setup, activate the *Message processor message processed* business event on the **Business events catalog** page (**System administration \> Setup \> Business events \> Business events catalog**). As part of the activation process, you'll be directed to specify whether the event is specific to one legal entity or all legal entities. You'll also be directed to provide an endpoint name, which must be defined in advance.
+You can set up [business events](../../../fin-ops-core/dev-itpro/business-events/home-page.md) to alert you about failed processing results. To complete this setup, activate the *Message processor message processed* business event on the **Business events catalog** page (**System administration \> Setup \> Business events \> Business events catalog**). As part of the activation process, you'll be directed to specify whether the event is specific to one legal entity or all legal entities. You'll also be directed to provide an endpoint name, which must be defined in advance.
 
 > [!NOTE]
 > If **When a Business Event occurs** is set to *Microsoft Power Automate* (instead of *HTTPS*, for example), the endpoint name will automatically be created in Supply Chain Management, based on the *Microsoft Power Automate* setup.
 
-## Power Automate example
+## Business events Power Automate example
 
 In this example, **When a Business Event occurs** is set to *Microsoft Power Automate* to send email notifications that containing Action center (formerly Infolog) messages and hyperlinks that open the **Message processor messages** page for a specific failed message. As you require, you can add extra logic to send the notifications in parallel via different channels and control the recipients based on the event data.
 
@@ -234,11 +151,11 @@ In this example, **When a Business Event occurs** is set to *Microsoft Power Aut
 
 When you save the business event, it's automatically activated and is ready to be used as part of Supply Chain Management.
 
-## Scheduler
+## Message processor scheduler
 
 The message processor has one scheduler. The `SysMessageKeyDateTimeSequenceProcessorScheduler` class schedules messages that have dependencies that are based on a key, date, and time, so that the messages are processed in the correct order. Messages that must be processed are stored in the `SysMessageProcessorTaskBundle` and `SysMessageProcessorTaskBundleMessage` tables. Dependent messages must be in the same bundle.
 
-The `SysMessageKeyDateTimeSequenceProcessorScheduler` class is used by the [third-party MES integration](../production-control/mes-integration.md) feature to secure messages that are related to a production order, and that are processed in the order that they're received or created in. The dependencies are defined by a key (production order number) and the time.
+The `SysMessageKeyDateTimeSequenceProcessorScheduler` class is used by the [third-party MES integration](../../production-control/mes-integration.md) feature to secure messages that are related to a production order, and that are processed in the order that they're received or created in. The dependencies are defined by a key (production order number) and the time.
 
 For example, the system receives or creates the following messages:
 
@@ -265,11 +182,7 @@ Because a bottleneck can occur when records are picked up for processing for mul
 
 For scalability, when you develop a new queue, you can configure the number of tasks that should process the bundles. (Learn more in [Implement a new queue](#custom-queue).) If the configuration uses two message processor tasks, the two bundles can be processed in parallel.
 
-## Implementation examples
-
-This section provides examples that show how to develop new message queues and message types that can be used with the message processor.
-
-### <a name="custom-queue"></a>Implement a new queue
+## <a name="custom-queue"></a>Development example: Implement a custom message queue
 
 This example shows how to add a new queue. After the queue is created, you'll be able to submit messages to it. Those messages will then be processed by the message processor according to the settings that were described earlier.
 
@@ -348,7 +261,7 @@ This example shows how to add a new queue. After the queue is created, you'll be
     }
     ```
 
-### Implement a new message type
+## Development example: Implement a custom message type
 
 This example shows how to create a message type for each type of process that you want to make available to the message processor. The message type establishes which processes can be run by messages of that type. The name of the message type will be shown on the **Message processor messages** page to identify the purpose of each message in the queue.
 
@@ -469,3 +382,8 @@ Follow these steps to create a new message type.
     
     }
     ```
+
+## Additional resources
+
+- [Monitor and control message processor messages](../message-processor.md)
+- [Clean up processed and canceled message processor messages](../message-processor-cleanup.md)

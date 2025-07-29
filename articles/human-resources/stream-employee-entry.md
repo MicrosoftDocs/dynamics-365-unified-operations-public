@@ -3,8 +3,8 @@
 
 title: Streamlined employee entry and navigation
 description: Data entry for workers in Dynamics 365 Human Resources provides quick entry for all employees, past, active or future.
-author: twheeloc
-ms.date: 07/09/2024
+author: ramagadu
+ms.date: 07/23/2025
 ms.topic: article
 # optional metadata
 
@@ -16,7 +16,7 @@ audience: Application User
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ajitchandran
+ms.author: ramagadu
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 
 
@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 # Streamlined employee navigation and entry
 
 Dynamics 365 Human Resources allows efficient entry of employee and employment data. You can quickly update work history information for past, active, and future employees and contractors.
+
+> [!NOTE]
+> Starting with the Dynamics 365 finance and operations 10.0.45 release, the **Streamlined employee entry** feature is mandatory. A new **Disable streamlined employee entry** parameter is added to **Human resources shared parameters**. When this parameter is enabled, streamlined employee entry experience is turned off. 
 
 ## View options
 

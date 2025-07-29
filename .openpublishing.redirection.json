@@ -28466,6 +28466,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/supply-chain/supply-chain-dev/message-processor.md",
+      "redirect_url": "/dynamics365/supply-chain/message-processor/message-processor",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/commerce/b2b/b2b2b-aka-b2b-indirect.md",
       "redirect_url": "/dynamics365/commerce/b2b/b2b-indirect",
       "redirect_document_id": false

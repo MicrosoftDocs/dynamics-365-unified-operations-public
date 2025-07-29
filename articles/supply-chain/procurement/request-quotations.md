@@ -98,7 +98,6 @@ A purchasing manager or agent can create and maintain solicitation types to suit
 
 You can specify specific types of information that you want to receive from vendors when they reply to (bid on) a request for quotation (RFQ). Fields that you mark as default are included on the online form provided for vendor collaboration. To make these settings:
 
-1. If you haven't already done so, use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to enable the *Select RFQ fields to include in vendor RFQ reply forms* feature.
 1. Go to **Procurement and sourcing > Setup > Procurement and sourcing parameters**.
 1. Open the **Request for quotation** tab.
 1. Select the **Default requests for quotation** reply fields link under the **Set up default values for requests for quotations** heading.
