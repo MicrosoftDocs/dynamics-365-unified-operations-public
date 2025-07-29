@@ -56,7 +56,17 @@ If you're using the BYOD feature for integration for analytical purposes, you sh
 > [!NOTE]
 > Your BYOD database must be accessible to finance and operations apps. If you encounter issues where you're unable to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately. For more information about self-service deployments, see [Self-service deployment FAQ](../deployment/deploymentFAQ.md).
 > > 
-> Selecting the correct service tier and compute size, is critical to secure expected performance. While doing this, it's important to consider the total, targeted workload and not just the load based on the finance and operations export. For production environments, it's recommended to use, at a minimum, compute size P2 in the Premium service tier or compute size S4 in the Standard service tier. Your specific BYOD usage might very well require a service tier greater than the above minimum. For more details about tiers and compute sizes, see [SQL Azure service tiers](/azure/azure-sql/database/service-tiers-dtu) and [Detailed resource limits](/azure/azure-sql/database/resource-limits-dtu-single-databases#single-database-storage-sizes-and-compute-sizes). To determine DTU needs or utilization, see [Determine number of DTUs needed by a workload](/azure/azure-sql/database/purchasing-models#determine-the-number-of-dtus-needed-by-a-workload)
+Selecting the correct service tier and compute size, is critical to secure expected performance. While doing this, it's important to consider the total, targeted workload and not just the load based on the finance and operations export. For production environments, it is recommended to use at least the minimum tier specified in the table below:
+
+|    Edition            | Minimum Tier |
+|----------------------|-------------|
+| Premium | P4 or higher |
+| Standard | S6 or higher |
+| Business Critical | BC_Gen5_8 or higher |
+| Hyperscale | HS_Gen5_24 or higher |
+| General Purpose | GP_Gen5_8 or higher |
+
+Your specific BYOD usage might very well require a service tier greater than the above minimum. For more details about tiers and compute sizes, see [SQL Azure service tiers](/azure/azure-sql/database/service-tiers-dtu) and [Detailed resource limits](/azure/azure-sql/database/resource-limits-dtu-single-databases#single-database-storage-sizes-and-compute-sizes). To determine DTU needs or utilization, see [Determine number of DTUs needed by a workload](/azure/azure-sql/database/purchasing-models#determine-the-number-of-dtus-needed-by-a-workload)
 
 ## Configuring the entity export option
 
