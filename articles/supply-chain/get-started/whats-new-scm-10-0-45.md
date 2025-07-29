@@ -14,7 +14,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.45. This version has a build number of 10.0.XXXX<!-- KFM: Update build number --> is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.45. This version has a build number of 10.0.2345 and is available on the following schedule:
 
 - **Preview of release:** July 2025
 - **General availability of release (self-update):** September  2025
@@ -31,7 +31,7 @@ The following table lists the features that are included in this release. We mig
 | Message processor | Clean up processed and canceled message processor messages | [Clean up processed and canceled message processor messages](../message-processor/message-processor-cleanup.md) | Enabled by default. |
 | Production control | Generate license plates and print labels for MES integration | [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md) | Enabled by default you have [set up MES integration](../production-control/mes-integration.md). |
 | Sales and marketing | Use external item identifiers to add products to orders | [Use external item identifiers to add products to orders](../sales-marketing/external-item-product-search-lookup.md) | Feature management:<br>*Enable lookup based search for Sales External Item Identifier field* |
-| Warehouse management | [Improve operations with Warehouse Management mobile app V4](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/improve-operations-warehouse-management-mobile-app-v4) | [Migrate the Warehouse Management mobile app from V3 to V4 (preview)](../warehousing/warehouse-app-migrating-from-v3-v4.md) | Enabled by default in Supply Chain Management.<p>Must be [installed or upgraded locally]((../warehousing/warehouse-app-migrating-from-v3-v4.md)) on each device. |
+| Warehouse management | [Improve operations with Warehouse Management mobile app V4](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/improve-operations-warehouse-management-mobile-app-v4) | [Migrate the Warehouse Management mobile app from V3 to V4 (preview)](../warehousing/warehouse-app-migrating-from-v3-v4.md) | Enabled by default in Supply Chain Management.<p>Must be [installed or upgraded locally](../warehousing/warehouse-app-migrating-from-v3-v4.md) on each device. |
 | Warehouse management | Record and view container line packing details | [Packing containers with the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md) | Enabled by default. |
 
 ## <a name="enhancements"></a>Feature enhancements added in this release
@@ -149,7 +149,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.45 includes platform updates
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.45, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXX). <!-- KFM: Get new link -->
+For information about the bug fixes included in each of the updates that are part of version 10.0.45, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1043223).
 
 ### Dynamics 365: 2025 release wave 1 plan
 

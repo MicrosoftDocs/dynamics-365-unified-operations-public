@@ -526,10 +526,14 @@
                       href: accounts-receivable/sb-deferrals.md
                     - name: Revenue and expense deferrals with project
                       href: accounts-receivable/sb-project-deferrals.md
-                    - name: Migrate revenue recognition data to revenue and expense deferrals
+                    - name: Project subscription billing deferral COGS adjustment (preview)
+                      href: accounts-receivable/sb-project-defferal.md
+                    - name: Migrate revenue recognition data to revenue and expense deferrals                    
                       href: accounts-receivable/sb-RevRecSubBillMigration.md
                     - name: Deferral posting method
                       href: accounts-receivable/Deferral-posting-methods.md
+                    - name: Subscription billing defferal COGS (preview)
+                      href: accounts-receivable/sb-defferal-cogs.md
                     - name: Create deferral schedules
                       href: accounts-receivable/sb-deferrals-schedules.md
                     - name: Deferral default transactions
@@ -1114,6 +1118,8 @@
                       href: general-ledger/tasks/define-financial-dimensions.md
                     - name: Highly variable dimensions
                       href: cost-accounting/high-var-dimensions.md  
+                    - name: Check for highly variable dimensions
+                      href: cost-accounting/high-var-dimension-tool.md
                     - name: Account and dimension combinations
                       href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
                     - name: Financial dimension sets
@@ -1320,6 +1326,8 @@
                   href: general-ledger/ledger-settlements.md
                 - name: Partial ledger settlements
                   href: general-ledger/ledger-settlements-partial.md
+                - name: Out of balance ledger settlements
+                  href: general-ledger/ledger-settlement-out-balance.md
                 - name: Awareness between ledger settlement and year-end close
                   items:
                     - name: Awareness between ledger settlement and year-end close
