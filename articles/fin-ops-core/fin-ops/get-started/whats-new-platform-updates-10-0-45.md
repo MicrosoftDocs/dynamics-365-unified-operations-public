@@ -3,7 +3,7 @@ title: Platform updates for version 10.0.45 of finance and operations apps (Sept
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.45 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
-ms.date: 07/25/2025
+ms.date: 07/29/2025
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -16,7 +16,7 @@ ms.search.region: Global
 
 [!include [banner](../includes/banner.md)]
 
-This article lists the features that are included in the platform updates for version 10.0.45 of finance and operations apps. This version has a build number of 7.0.XXXXX and is available on the following schedule:
+This article lists the features that are included in the platform updates for version 10.0.45 of finance and operations apps. This version has a build number of 7.0.7690.12 and is available on the following schedule:
 
 - **Preview of release:** July 2025
 - **General availability of release (self-update):** September 2025
@@ -41,7 +41,7 @@ This section will contain a table that lists the enhancements that are included 
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXXX).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1043223).
 
 ### Dynamics 365: 2025 release wave 2 plan
 
