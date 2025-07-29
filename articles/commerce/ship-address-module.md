@@ -18,11 +18,11 @@ ms.custom:
 
 This article describes covers the shipping address module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 
-The shipping address module lets customers add or select the shipping address for an order during the checkout flow. If a customer is signed in, any addresses that were previously saved for that customer are shown, and the customer can select among them. The customer can also add a new address. The shipping address module is used for all items on an order that require shipping.
+The shipping address module lets customers add or select the shipping address for an order during the checkout flow. If a customer is signed in, any addresses   previously saved for that customer are shown to the customer to select from. The customer can also add a new address. The shipping address module is used for all items on an order that require shipping.
 
 Shipping address formats can be defined in Commerce headquarters for each country or region, and the shipping address module then enforces country/region-specific rules.
 
-When customers enter a shipping address during the checkout flow, they have the option to save the address as a primary address. This option is shown only if a customer is signed in.
+When customers enter a shipping address during the checkout flow, they are presented the option to save the address as a primary address. This option is shown only if a customer is signed in.
 
 Although the shipping address module doesn't provide address validation, this functionality can be implemented through customization.
 
