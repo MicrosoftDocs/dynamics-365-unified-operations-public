@@ -1,12 +1,11 @@
 ---
 title: User-based authentication for the Warehouse Management mobile app in on-premises deployments
-description: Learn how to configure the user-based Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Finance + Operations (on-premises) environment.
+description: Learn how to configure the Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Finance + Operations (on-premises) environment.
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.date: 10/18/2023
+ms.date: 07/29/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.service: dynamics-365-op
 ---
@@ -59,7 +58,7 @@ For more information about `SSOLifetime`, see [AD&nbsp;FS single sign-on setting
 To enable the Warehouse Management mobile app to interact with a specific Dynamics 365 Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in AD FS. The following procedure shows one way to complete this task.
 
 1. Decide which device types your native application supports. For example, you might want to support Windows, Android, and iOS devices.
-1. Make a note of the redirect URIs for each device type. You'll need these URIs when you create the native application in AD&nbsp;FS.
+1. Make a note of the redirect URIs for each device type. You need these URIs when you create the native application in AD&nbsp;FS.
 
     For V4 of the Warehouse Management mobile app, the redirect URIs are as follows:
         - **Windows:** *ms-appx-web://microsoft.aad.brokerplugin/{clientId}*
@@ -106,7 +105,7 @@ To create a user that corresponds to the user credentials for the Warehouse Mana
 
 ## <a name="revoke"></a>Remove access for a device that uses user-based authentication
 
-If a device is lost or compromised, you must remove its ability to access Finance + Operations (on-premises). If the lost or compromised device is authenticated by using the device code flow, it's essential that you disable the associated user in Active Directory. In this way, you effectively revoke access for any device that uses the device code that's associated with that user. For this reason, we recommend that you have one Active Directory user per device.
+If a device is lost or compromised, you must remove its ability to access Finance + Operations (on-premises). If the lost or compromised device is authenticated by using the device code flow, it's essential that you disable the associated user in Active Directory. In this way, you effectively revoke access for any device that uses the device code associated with that user. For this reason, we recommend that you have one Active Directory user per device.
 
 To disable a user in Active Directory, follow these steps.
 
