@@ -15,20 +15,20 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-*Work blocking* provides a standard way to block or unblock warehouse work. The system prevents blocked work from being processed until it's unblocked. Work records can be blocked automatically when certain conditions are met and can also be blocked manually at any time. Multiple reasons can cause work to be blocked, and in some cases, a single work record can be blocked for several reasons at once. The system provides visibility into the reasons why a work record is blocked. Only work records with a status of *Open* can be blocked. This article describes the work blocking functionality and reasons.
+*Work blocking* provides a standard way to block or unblock warehouse work. The system prevents blocked work from being processed until it's unblocked. You can block work records automatically when certain conditions are met and you can also block them manually at any time. Multiple reasons can cause work to be blocked, and in some cases, a single work record can be blocked for several reasons at once. The system provides visibility into the reasons why a work record is blocked. You can only block work records with the status *Open*. This article describes the work blocking functionality and reasons.
 
 ## Supported work blocking reasons
 
 The following work blocking reasons are supported:
 
-- *Unprocessed replenishment work* – The work is blocked because it's linked to an unprocessed replenishment work record.
-- *Held wave* – The work is blocked by a wave with status *Held*.
-- *Unprocessed production over pick work* – The work is blocked because it's linked to an unprocessed staging over-pick work record.
-- *Unprocessed deferred put operation* – The work is blocked by an unprocessed deferred-put processing task.
-- *Split work* – The work is blocked because it's being split.
-- *Replenishment overflow capacity* – The replenishment work is blocked because it would overflow the capacity of the put location.
-- *Processing wave* – The work is blocked by a processing wave.
-- *Undefined reason* – The work is blocked for an undefined reason.
+- **Unprocessed replenishment work**: The work is blocked because it's linked to an unprocessed replenishment work record.
+- **Held wave**: The work is blocked by a wave with status *Held*.
+- **Unprocessed production over pick work**: The work is blocked because it's linked to an unprocessed staging over-pick work record.
+- **Unprocessed deferred put operation**: The work is blocked by an unprocessed deferred-put processing task.
+- **Split work**: The work is blocked because it's being split.
+- **Replenishment overflow capacity**: The replenishment work is blocked because it would overflow the capacity of the put location.
+- **Processing wave**: The work is blocked by a processing wave.
+- **Undefined reason**: The work is blocked for an undefined reason.
 
 No other blocking reasons are supported.
 
@@ -41,7 +41,7 @@ To find all blocked work and check the reasons why each of them blocked, follow 
 1. To see the reasons why a work record is shown as blocked, select the link in the **Work ID** column to open the **Work details** page for that work record. Then open the **Blocking reasons** tab, which shows all blocking reasons for that work record, along with who blocked it and the date and time when each reason was applied.
 
 > [!TIP]
-> If you only want to find work that is blocked by replenishment work, you could instead go to **Warehouse management** \> **Work** \> **Outbound** \> **Work blocked by replenishment work**.
+> If you only want to find work that is blocked by replenishment work, you can go to **Warehouse management** \> **Work** \> **Outbound** \> **Work blocked by replenishment work**.
 
 ## Manually block or unblock work
 
@@ -55,4 +55,4 @@ You can manually unblock work that is currently blocked for one of the following
 
 To manually block or unblock work, go to **Warehouse management** \> **Work** \> **All work** and select one or more work records that you want to block or unblock. Then, on the Action Pane, select **Block work** or **Unblock work**.
 
-The work that is blocked for other reasons are automatically unblocked when the blocking reason is resolved.
+The system automatically unblocks work that is blocked for other reasons when the blocking reason is resolved.
