@@ -21,14 +21,14 @@ ms.custom:
 
 The following work blocking reasons are supported:
 
-- **Unprocessed replenishment work**: The work is blocked because it's linked to an unprocessed replenishment work record.
-- **Held wave**: The work is blocked by a wave with status *Held*.
-- **Unprocessed production over pick work**: The work is blocked because it's linked to an unprocessed staging over-pick work record.
-- **Unprocessed deferred put operation**: The work is blocked by an unprocessed deferred-put processing task.
-- **Split work**: The work is blocked because it's being split.
-- **Replenishment overflow capacity**: The replenishment work is blocked because it would overflow the capacity of the put location.
-- **Processing wave**: The work is blocked by a processing wave.
-- **Undefined reason**: The work is blocked for an undefined reason.
+- **Unprocessed replenishment work** – The work is blocked because it's linked to an unprocessed replenishment work record.
+- **Held wave** – The work is blocked by a wave with status *Held*.
+- **Unprocessed production over pick work** – The work is blocked because it's linked to an unprocessed staging over-pick work record.
+- **Unprocessed deferred put operation** – The work is blocked by an unprocessed deferred-put processing task.
+- **Split work** – The work is blocked because it's being split.
+- **Replenishment overflow capacity** – The replenishment work is blocked because it would overflow the capacity of the put location.
+- **Processing wave** – The work is blocked by a processing wave.
+- **Undefined reason** – The work is blocked for an undefined reason.
 
 No other blocking reasons are supported.
 
