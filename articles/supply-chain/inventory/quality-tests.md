@@ -36,12 +36,12 @@ Follow these steps to create a test.
 1. Go to **Inventory management \> Setup \> Quality control \> Tests**.
 1. On the Action Pane, select **New** to add a row to the grid. Then set the following fields for the new row:
 
-    - **Test**: Enter a unique ID or name for the test.
-    - **Description**: Enter a detailed description of the test.
-    - **Type**: Select the type of results that the test produces. For quantitative tests, select *Fraction* or *Integer*. For qualitative tests, select *Option*.
-    - **Test instrument**: Select a [test instrument](quality-test-instruments.md) that should be used for the test.
-    - **Unit**: If you selected *Fraction* or *Integer* in the **Type** field (that is, if the test is a quantitative test), select the unit of measure that test results should be recorded in.
-    - **Defect type**: If you're using acceptance sampling, then choose a defect type that applies for this test. Learn more about defect types, how to set them up, and how to use them in [Acceptance sampling](quality-acceptance-sampling.md).
+    - **Test** – Enter a unique ID or name for the test.
+    - **Description** – Enter a detailed description of the test.
+    - **Type** – Select the type of results that the test produces. For quantitative tests, select *Fraction* or *Integer*. For qualitative tests, select *Option*.
+    - **Test instrument** – Select a [test instrument](quality-test-instruments.md) that should be used for the test.
+    - **Unit** – If you selected *Fraction* or *Integer* in the **Type** field (that is, if the test is a quantitative test), select the unit of measure that test results should be recorded in.
+    - **Defect type** – If you're using acceptance sampling, then choose a defect type that applies for this test. Learn more about defect types, how to set them up, and how to use them in [Acceptance sampling](quality-acceptance-sampling.md).
 
 1. Close the page.
 
