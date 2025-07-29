@@ -4,7 +4,7 @@ description: Learn how to set up the Subscription billing deferral COGS adjustme
 author: JodiChristiansen
 ms.author: reetuchopra
 ms.topic: how-to
-ms.date: 07/25/2025
+ms.date: 07/29/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
