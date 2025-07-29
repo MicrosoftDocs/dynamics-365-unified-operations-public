@@ -20,13 +20,6 @@ Components or routes can often change at the last minute of the manufacturing pr
 
 Sometimes, a bill of materials (BOM) item must be changed on multiple production orders. These changes are common when a change or revision is applied to a raw item. To allow for such changes, you can change one BOM item to another on estimated or scheduled production orders. Alternatively, you can use all the existing on-hand inventory of an item and then substitute a new item for that item.
 
-### Prerequisites to change BOM items on production orders
-
-Before you can change BOM items on production orders, your system must meet the following requirements:
-
-- You must be running Supply Chain Management 10.0.38 or later.
-- The feature that's named *Change BOM item* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.41, this feature is turned on by default. As of Supply Chain Management version 10.0.43, it's mandatory and can't be turned off.
-
 ### Change a BOM item on a production order
 
 To change a BOM item that's used on any production order, follow these steps.
@@ -63,15 +56,6 @@ When the change is applied, the system changes the quantity of the BOM line for 
 ## Change production order routes
 
 It's often useful to change the setup times for routes when improvements are made or machines are changed for the same process.
-
-### Prerequisites to change production order routes
-
-Before you can change production order routes, your system must meet the following requirements:
-
-- You must be running Supply Chain Management 10.0.38 or later.
-- The feature that's named *Production order route change* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.41, this feature is turned on by default. As of Supply Chain Management version 10.0.43, it's mandatory and can't be turned off.
-
-### Change a production order route
 
 To change a production order route, follow these steps.
 
