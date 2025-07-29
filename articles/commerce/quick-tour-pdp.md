@@ -2,9 +2,8 @@
 title: Product details pages overview
 description: This article provides an overview of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 08/02/2024
+ms.date: 07/29/2025
 ms.topic: overview
-audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
