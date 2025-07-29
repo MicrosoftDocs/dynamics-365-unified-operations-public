@@ -61,9 +61,18 @@ To enable the Warehouse Management mobile app to interact with a specific Dynami
 1. Decide which device types your native application supports. For example, you might want to support Windows, Android, and iOS devices.
 1. Make a note of the redirect URIs for each device type. You'll need these URIs when you create the native application in AD&nbsp;FS.
 
-    - **Windows:** *ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333*
-    - **Android:** *msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
-    - **iOS:** *msauth.com.microsoft.WarehouseManagement://auth*
+    For V4 of the Warehouse Management mobile app, the redirect URIs are as follows:
+        - **Windows:** *ms-appx-web://microsoft.aad.brokerplugin/{clientId}*
+        - **Android:** *msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
+        - **iOS:** *msauth.com.microsoft.WarehouseManagement://auth*
+
+    > [!NOTE]
+    > For Windows, the `{clientId}` placeholder is replaced with the client ID of the application that you create in AD&nbsp;FS. The client ID is a unique identifier for the application.
+
+    For V3 of the Warehouse Management mobile app, the redirect URIs are as follows:
+        - **Windows:** *ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333*
+        - **Android:** *msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
+        - **iOS:** *msauth.com.microsoft.WarehouseManagement://auth*
 
     > [!NOTE]
     > The redirect URIs aren't required for the device code flow. However, you must provide them if you want to use the user name and password authentication method.
