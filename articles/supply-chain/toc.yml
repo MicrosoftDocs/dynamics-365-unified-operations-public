@@ -3893,6 +3893,8 @@
           items:
           - name: Work line details
             href: warehousing/work-line-details.md
+          - name: Work blocking and blocking reasons
+            href: warehousing/work-blocking-reasons.md
           - name: Location license plate positioning
             href: warehousing/location-license-plate-positioning.md
           - name: Change work pool on work
