@@ -37,7 +37,7 @@ In addition, for each store in the fulfillment group, the latitude and longitude
 
 To enter the latitude and longitude values for a retail store in Commerce headquarters, follow these steps.
 
-1. Go to **Organization administration \> Organizations  \> Operating unit**.
+1. In Commerce headquarters, go to **Organization administration \> Organizations  \> Operating unit**.
 1. Search by the operating unit number in the left pane.
 1. On the **Addresses** FastTab, select **More options -> Advanced**.
 
@@ -55,16 +55,15 @@ To enter the latitude and longitude values for a retail store in Commerce headqu
 
 Some stores in a fulfillment group might not be valid pickup locations. To ensure that only valid pickup locations appear as options in the store selector module, follow these steps in Commerce headquarters.
 
-1. Go to **Retail and Commerce \> Commerce setup \> Fulfillment groups \> All stores**.
+1. In Commerce headquarters, go to **Retail and Commerce \> Commerce setup \> Fulfillment groups \> All stores**.
 1. On the Action Pane, select **Edit**.
 1. Under **Setup**, for every store that isn't a valid pickup location, clear the **Is Pickup Location** checkbox.
 1. On the Action Pane, select **Save**.
 1. Run the 1070 **Channel configuration** distribution schedule job.
 
 > [!IMPORTANT]
-> Bing Maps for Enterprise is deprecated and will be retired. If you have an enterprise license for Bing Maps for Enterprise, you can continue to use it until June 30, 2028. If you have a free or basic license for Bing Maps for Enterprise, you can continue to use it until June 30, 2025.
->
-> Until Azure Maps becomes available as a module in E-Commerce version version 10.0.45, you can manually enable Azure Maps by following the steps provided in the [Dynamics365Commerce.Solutions GitHub repository](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.54/src/OnlineSDK/Extensibility%20Samples/AzureMaps).
+> - Bing Maps for Enterprise is deprecated and is scheduled to be retired. If you have an enterprise license for Bing Maps for Enterprise, you can continue to use it until June 30, 2028. If you have a free or basic license for Bing Maps for Enterprise, you can continue to use it until June 30, 2025.
+> - Until the Azure Maps modules becomes available in Commerce version 10.0.45, you can manually enable Azure Maps by following the steps provided in the [Dynamics365Commerce.Solutions GitHub repository](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.54/src/OnlineSDK/Extensibility%20Samples/AzureMaps).
 
 ## Azure Maps integration
 
@@ -129,9 +128,9 @@ For **Pickup in store** mode, the module can be used only on PDPs and cart pages
 - For information on how to add a store selector module to a buy box module, see [Buy box module](add-buy-box.md). 
 - For information on how to add a store selector module to a cart module, see [Cart module](add-cart-module.md)
 
-To configure the store selector module to show available stores for a store locations page, as in the illustration that appears earlier in this article, follow these steps.
+To configure the store selector module to show available stores for a store locations page, follow these steps.
 
-1. Go to **Templates**, and select **New** to create a new template.
+1. In Commerce headquarters, go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, under **Template name**, enter **Marketing template**, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Go to **Pages**, and select **New** to create a new page.
