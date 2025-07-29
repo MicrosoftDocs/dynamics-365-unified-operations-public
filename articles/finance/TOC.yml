@@ -526,7 +526,9 @@
                       href: accounts-receivable/sb-deferrals.md
                     - name: Revenue and expense deferrals with project
                       href: accounts-receivable/sb-project-deferrals.md
-                    - name: Migrate revenue recognition data to revenue and expense deferrals
+                    - name: Project subscription billing deferral COGS adjustment (preview)
+                      href: accounts-receivable/sb-project-defferal.md
+                    - name: Migrate revenue recognition data to revenue and expense deferrals                    
                       href: accounts-receivable/sb-RevRecSubBillMigration.md
                     - name: Deferral posting method
                       href: accounts-receivable/Deferral-posting-methods.md
