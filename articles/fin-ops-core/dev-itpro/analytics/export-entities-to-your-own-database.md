@@ -81,7 +81,7 @@ Your specific BYOD usage might require a service tier greater than the above min
  
     
 > [!NOTE]
-> The default extension field shown in the previouse image doesn't apply to BYOD.
+> The default extension field shown in the previous image doesn't apply to BYOD.
 
 4. Select **Validate**, and make sure that the connection is successful.
 
