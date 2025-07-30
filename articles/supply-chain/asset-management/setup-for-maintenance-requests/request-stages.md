@@ -3,69 +3,77 @@ title: Maintenance request lifecycle states
 description: Learn how to set up maintenance request lifecycle states in Asset Management, including a process for setting up maintenance request lifecycle states.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
-ms.date: 04/20/2020
-ms.custom:
-ms.reviewer: kamaybac 
+ms.reviewer: kamaybac
 ms.search.form: EntAssetRequestLifecycleState, EntAssetRequestLifecycleModel
+ms.topic: how-to
+ms.date: 07/30/2025
+ms.custom:
+- bap-template
 ---
 
 # Maintenance request lifecycle states
 
 [!include [banner](../../includes/banner.md)]
 
- 
+Maintenance request lifecycle states define the stages that a request can go through. Examples include *Created*, *Active*, and *Ended*. When a maintenance request is converted to a work order, the maintenance request lifecycle state should be updated to *Ended* or *Closed* to indicate that the maintenance request is no longer active. On the **All maintenance requests** list page, you can view all maintenance requests, regardless of their lifecycle state.
 
+## Turn the depot repair option on or off
 
-Maintenance request lifecycle states define the stages that a request can go through. Examples include **Created**, **Active**, and **Ended**. When a maintenance request is converted to a work order, the maintenance request lifecycle state should be updated to **Ended** or **Closed** to indicate that the maintenance request is no longer active. On the **All maintenance requests** list page, you can view all maintenance requests, regardless of their lifecycle state.
+*Depot repair* is a maintenance request type that lets you receive assets from another location so that you can do a maintenance or repair job, and then return the asset after the job is completed. To use depot repair, you must enable its configuration key by following these steps:
 
-## Set up maintenance request lifecycle states
+1. Put your system into maintenance mode, as described in [Maintenance mode](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Go to **System administration** \> **Setup** \> **License configuration**.
+1. On the **Configuration keys** tab, expand the **Asset management** node and then select the check box for **Inbound/outbound**.
+1. Turn off maintenance mode, as described in [Maintenance mode](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
-1. Select **Asset management** \> **Setup** \> **Maintenance requests** \> **Lifecycle states**.
-2. Select **New** to create a maintenance request lifecycle state.
-3. In the **Lifecycle state** field, enter an ID for the lifecycle state.
-4. In the **Name** field, enter a name.
+## Manage maintenance request lifecycle states
 
-    On the **Details** FastTab, the **Lifecycle models** field shows the number of maintenance request lifecycle models that use this lifecycle state.
+To manage the maintenance request lifecycle states that you need, follow these steps.
 
-5. On the **General** FastTab, set the **Active** option to **Yes** if a maintenance request should be active while it's in this lifecycle state.
-6. Set the **Set actual end** option to **Yes** if an actual end date and time should automatically be entered on a maintenance request that is in this lifecycle state.
-7. Set the **Create work order** option to **Yes** if a work order can be created from a maintenance request that is in this lifecycle state.
-8. Set the **Delete** option to **Yes** if a maintenance request can be deleted while it's in this lifecycle state.
-9. On the **Update** FastTab, the **Inbound** and **Outbound** options in the **Asset** section are relevant if you use depot repair. Set the appropriate option to **Yes** if the asset lifecycle state of assets that are selected on a maintenance request should automatically be updated to **Inbound** or **Outbound** when the maintenance request lifecycle state of that maintenance request is set to **Inbound** or **Outbound**.
+1. Go to **Asset management** \> **Setup** \> **Maintenance requests** \> **Lifecycle states**.
+    :::image type="content" source="media/02-setup-for-requests.png" alt-text="Screenshot of the Maintenance request lifecycle states page." lightbox="media/02-setup-for-requests.png":::
 
-The follow illustration shows an example of the **Maintenance request lifecycle states** page.
+1. Use the buttons on the Action Pane to add, remove, or edit a lifecycle state.
+1. Make the following settings in the header of your new or selected lifecycle state:
+    - **Lifecycle state** – Enter an ID for the lifecycle state.
+    - **Name** – Enter a name for the lifecycle state.
+1. For existing lifecycle states, the **Lifecycle models** field on the **Details** FastTab shows the number of maintenance request lifecycle models that use this lifecycle state.
+1. Set the following options on the **General** FastTab:
+    - **Active** – Choose whether a maintenance request should be active while it's in this lifecycle state.
+    - **Set actual end** – Choose whether an actual end date and time should automatically be entered on a maintenance request that's in this lifecycle state.
+    - **Delete open schedule lines** – Choose whether all maintenance schedule lines without a work order reference should be deleted automatically on a maintenance request that's in this lifecycle state.
+    - **Create work order** – Choose whether a work order can be created from a maintenance request that's in this lifecycle state.
+    - **Delete** – Choose whether a maintenance request can be deleted while it's in this lifecycle state.
 
-![Maintenance request lifecycle states page.](media/02-setup-for-requests.png)
+1. If you use depot repair, then the **Update** FastTab is shown. Make the following settings here:
+    - **Inbound** – Choose whether the asset lifecycle state of assets that are selected on a maintenance request should automatically be updated to **Inbound** when the maintenance request lifecycle state of that maintenance request is set to **Inbound**.
+    - **Outbound** – Choose whether the asset lifecycle state of assets that are selected on a maintenance request should automatically be updated to **Outbound** when the maintenance request lifecycle state of that maintenance request is set to **Outbound**.
 
 > [!NOTE]
-> Maintenance request lifecycle states, lifecycle state groups, and types are related to, and used in the same way as, work order lifecycle states, lifecycle state groups, and types. 
+> Maintenance request lifecycle states, lifecycle state groups, and lifecycle state types are related to, and used in the same way as, work order lifecycle states, lifecycle state groups, and lifecycle state types.
 
 ## Set up maintenance request lifecycle models
 
 After you've created the lifecycle states that are required for your maintenance requests, they can be divided into lifecycle state groups, or lifecycle models. Maintenance request lifecycle models are used to create the flow that can be used for different types of maintenance requests. At a minimum, one standard maintenance request lifecycle model should be created.
 
-1. Select **Asset management** \> **Setup** \> **Maintenance requests** \> **Lifecycle models**.
-2. Select **New** to create a maintenance request lifecycle model.
-3. In the **Lifecycle model** field, enter an ID for the lifecycle model.
-4. In the **Name** field, enter a name.
+1. Go to **Asset management** \> **Setup** \> **Maintenance requests** \> **Lifecycle models**.
+    :::image type="content" source="media/06-setup-for-requests.png" alt-text="Screenshot of the Maintenance request lifecycle models page." lightbox="media/06-setup-for-requests.png":::
 
-    On the **Details** FastTab, the **Lifecycle states** shows the number of lifecycle states that are selected in this lifecycle model. The **Maintenance request types** field shows the number of maintenance request types that use this lifecycle model.
+1. Use the buttons on the Action Pane to add, remove, or edit a lifecycle model.
+1. Make the following settings in the header of your new or selected lifecycle model:
+    - **Lifecycle model** – Enter an ID for the lifecycle model.
+    - **Name** – Enter a name for the lifecycle model.
 
-5. On the **Lifecycle states** FastTab, select the lifecycle states that should be included in the lifecycle model:
+1. For existing lifecycle models, the **Details** FastTab displays the following information:
+    - **Lifecycle states** – Shows the number of lifecycle states that are selected in this lifecycle model.
+    - **Maintenance request types** – Shows the number of maintenance request types that use this lifecycle model.
 
-    - To include a lifecycle state in the lifecycle model, select it in the **Lifecycle states remaining** section, and then select the right arrow button ![Right arrow.](media/03-setup-for-requests.png) to move it to the **Lifecycle states selected** section.
-    - To include all the available lifecycle states in the lifecycle model, select the **Select all available states** button ![Select all available states.](media/04-setup-for-requests.png). All lifecycle states are moved to the **Lifecycle states selected** section.
-    - To remove a lifecycle state from the lifecycle model, select it in the **Lifecycle states selected** section, and then select the left arrow button ![Left arrow.](media/05-setup-for-requests.png) to move it to the **Lifecycle states remaining** section.
+1. On the **Lifecycle states** FastTab, move all of the lifecycle states that should be included in this lifecycle model into the **Lifecycle states selected** column.
+    - Use the buttons between the columns to move one or more selected lifecycle states from one column to the other.
+    - When a user changes the lifecycle state of a maintenance request, the states are displayed in the order shown in the **Lifecycle states selected** column, which should indicate the way maintenance requests typically progress from start to finish. Use the up and down buttons next to the **Lifecycle states selected** column to adjust the order of the lifecycle states.
 
-6. On the **General** FastTab, the fields in the **Updates** section are relevant if you use depot repair.
-
-    - In the **Lifecycle state for asset received** field, select the asset lifecycle state that assets that are selected on a maintenance request should automatically be updated to when they are received for depot repair.
-    - In the **Lifecycle state for asset delivered** field, select the lifecycle state that assets that are selected on a maintenance request should automatically be updated to when they are returned after repair.
-
-The following illustration shows an example of the **Maintenance request lifecycle models** page.
-
-![Maintenance request lifecycle models page.](media/06-setup-for-requests.png)
-
+1. If you use depot repair, then the **General** FastTab is shown. Make the following settings here:
+    - **Lifecycle state for asset received** – Select the asset lifecycle state that assets selected on a maintenance request should automatically be updated to when they're received for depot repair.
+    - **Lifecycle state for asset delivered** – Select the lifecycle state that assets selected on a maintenance request should automatically be updated to when they're returned after depot repair.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

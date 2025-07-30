@@ -4384,6 +4384,8 @@
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay.md
                 - name: Venezuela
                   items:
+                  - name: Venezuela overview
+                    href: localizations/iberoamerica/venezuela.md
                   - name: Configure printing for the annual ISLR withholding certificate for Venezuela
                     href: localizations/iberoamerica/ltm-venezuela-ISLR-Annual-withholding-certificate.md
                   - name: Configure printing for the Declaration Reports Relationship Sales Book for Venezuela
