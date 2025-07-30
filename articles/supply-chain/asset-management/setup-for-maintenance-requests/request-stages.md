@@ -41,7 +41,7 @@ To manage the maintenance request lifecycle states that you need, follow these s
 1. Set the following options on the **General** FastTab:
     - **Active** – Choose whether a maintenance request should be active while it's in this lifecycle state.
     - **Set actual end** – Choose whether an actual end date and time should automatically be entered on a maintenance request that's in this lifecycle state.
-    - **Delete open schedule lines** – Choose whether a maintenance schedule lines without a work order reference should be deleted automatically on a maintenance request that's in this lifecycle state.
+    - **Delete open schedule lines** – Choose whether all maintenance schedule lines without a work order reference should be deleted automatically on a maintenance request that's in this lifecycle state.
     - **Create work order** – Choose whether a work order can be created from a maintenance request that's in this lifecycle state.
     - **Delete** – Choose whether a maintenance request can be deleted while it's in this lifecycle state.
 
@@ -68,9 +68,9 @@ After you've created the lifecycle states that are required for your maintenance
     - **Lifecycle states** – Shows the number of lifecycle states that are selected in this lifecycle model.
     - **Maintenance request types** – Shows the number of maintenance request types that use this lifecycle model.
 
-1. On the **Lifecycle states** FastTab, move all of the lifecycle states that should be included in this lifecycle model into the **Lifecycle sates selected** column.
+1. On the **Lifecycle states** FastTab, move all of the lifecycle states that should be included in this lifecycle model into the **Lifecycle states selected** column.
     - Use the buttons between the columns to move one or more selected lifecycle states between the columns.
-    - When a user changes the lifecycle sate of a maintenance request, the states are displayed in the same order shown in the **Lifecycle sates selected** column, which should indicate the way maintenance requests typically progress from start to finish. Use the up and down buttons next to the **Lifecycle sates selected** column to adjust the order of the lifecycle states.
+    - When a user changes the lifecycle state of a maintenance request, the states are displayed in the same order shown in the **Lifecycle states selected** column, which should indicate the way maintenance requests typically progress from start to finish. Use the up and down buttons next to the **Lifecycle states selected** column to adjust the order of the lifecycle states.
 
 1. If you use depot repair, then the **General** FastTab is shown. Make the following settings here:
     - **Lifecycle state for asset received** – Select the asset lifecycle state that assets selected on a maintenance request should automatically be updated to when they're received for depot repair.
