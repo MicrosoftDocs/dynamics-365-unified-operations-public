@@ -4,7 +4,7 @@ description: Learn how to authorize your Microsoft Dynamics 365 Finance environm
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 07/31/2025
+ms.date: 07/30/2025
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-08-07
