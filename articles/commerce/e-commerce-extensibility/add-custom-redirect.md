@@ -42,7 +42,7 @@ A canonical URL redirect works in the following ways:
 - Throws an instance of the HttpRedirectException class with the correct URL set in the **Location** property.  
 - Halts further page rendering and initiates a redirection to the canonical URL.  
 
-If a user accesses a product page using a noncanonical URL, the Commerce page module should detect this action and redirect them to the correct canonical URL. 
+If a user accesses a product page using a noncanonical URL, the Commerce page module should detect this action and redirect the user to the correct canonical URL. 
 
 Using the following URL example, the custom module logic detects the extraneous `<unecessaryparameter>` segment of the requested URL and issues a redirect to the clean, canonical URL. 
 
@@ -51,11 +51,11 @@ Using the following URL example, the custom module logic detects the extraneous 
 
 ## Implement a custom redirect within a module 
 
-To implement a custom redirect within a module, redirect logic throws an instance of the HttpRedirectException class at the appropriate location in the module. This action halts the rendering of subsequent modules and initiates a redirect to the URL specified in the **Location** property of the HttpRedirectException class. 
+To implement a custom redirect within a module, you add custom redirect logic that throws an instance of the HttpRedirectException class at the appropriate location in the module. This action halts the rendering of subsequent modules and initiates a redirect to the URL specified in the **Location** property of the HttpRedirectException class. 
 
 ## Example
 
-All e-commerce site pages hosted on the Dynamics 365 Commerce domain include a canonical URL in the HTML page metadata by default. To implement a redirect based on this canonical URL, you must first identify the module responsible for generating it and insert your redirect logic there.
+All e-commerce site pages hosted on the Dynamics 365 Commerce domain include a canonical URL in the page metadata by default. To implement a redirect based on this canonical URL, you must first identify the module responsible for generating it and insert your redirect logic there.
 
 In this example, the category page template uses the category page summary module to generate its canonical URL. The category page summary module references the default page summary module view file. Adding conditional redirect logic to the default page summary module ensures that the redirect occurs wherever category pages are accessed. 
 
@@ -80,7 +80,7 @@ if (canonicalUrl && context && context.request && context.request.url && canonic
 	}
 ```
 
-**Step 3 - Edit the category page template**:  In the category page template in Dynamics 365 Commerce site builder, you substiute references to the category page summary module with the custom category page summary extension module. 
+**Step 3 - Edit the category page template**:  In the category page template in Dynamics 365 Commerce site builder, you substitute references to the category page summary module with references to the custom category page summary extension module. 
 
 > [!NOTE]
 > When you implement bulk redirects alongside canonical redirects, take care to avoid creating infinite redirect loops. 
