@@ -4,7 +4,7 @@ description: Learn  how to export entities to your own Azure SQL database, inclu
 author: priyanshasharma2808
 ms.author: priysharma
 ms.topic: how-to
-ms.date: 04/03/2025
+ms.date: 07/30/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global 
 ms.search.validFrom: 2016-08-30 
@@ -24,7 +24,7 @@ This article explains how administrators can export data entities from the appli
 The BYOD feature lets administrators configure their own database, and then export one or more data entities that are available in the application into the database. (Currently, more than 1,700 data entities are available.) Specifically, this feature lets you complete these tasks:
 
 - Define one or more SQL databases that you can export entity data into.
-- Export either all the records (*full push*) or only the records that have changed or been deleted (*incremental push*).
+- Export either all the records (*full push*) or only the records that have changed or deleted (*incremental push*).
 - Use the rich scheduling capabilities of the batch framework to enable periodic exports.
 - Access the entity database by using Transact-SQL (T-SQL), and even extend the database by adding more tables.
 
@@ -54,9 +54,10 @@ You should also create a SQL user account for sign-in to the database. Write dow
 If you're using the BYOD feature for integration for analytical purposes, you should consider using clustered columnstore indexes as described in [Columnstore indexes: Overview](/sql/relational-databases/indexes/columnstore-indexes-overview).
 
 > [!NOTE]
-> Your BYOD database must be accessible to finance and operations apps. If you encounter issues where you're unable to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately. For more information about self-service deployments, see [Self-service deployment FAQ](../deployment/deploymentFAQ.md).
+> Your BYOD database must be accessible to finance and operations apps. If you encounter issues where you're unable to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately. Learn more about self-service deployments in [Self-service deployment FAQ](../deployment/deploymentFAQ.md).
 > > 
-Selecting the correct service tier and compute size, is critical to secure expected performance. While doing this, it's important to consider the total, targeted workload and not just the load based on the finance and operations export. For production environments, it is recommended to use at least the minimum tier specified in the table below:
+
+Selecting the correct service tier and compute size is critical to secure expected performance. While doing this, it's important to consider the total, targeted workload, and not just the load based on the finance and operations export. For production environments, it's recommended to use at least the minimum tier specified in the table below:
 
 |    Edition            | Minimum Tier |
 |----------------------|-------------|
@@ -66,12 +67,12 @@ Selecting the correct service tier and compute size, is critical to secure expec
 | Hyperscale | HS_Gen5_24 or higher |
 | General Purpose | GP_Gen5_8 or higher |
 
-Your specific BYOD usage might very well require a service tier greater than the above minimum. For more details about tiers and compute sizes, see [SQL Azure service tiers](/azure/azure-sql/database/service-tiers-dtu) and [Detailed resource limits](/azure/azure-sql/database/resource-limits-dtu-single-databases#single-database-storage-sizes-and-compute-sizes). To determine DTU needs or utilization, see [Determine number of DTUs needed by a workload](/azure/azure-sql/database/purchasing-models#determine-the-number-of-dtus-needed-by-a-workload)
+Your specific BYOD usage might require a service tier greater than the above minimum.  Learn more about tiers and compute sizes in [SQL Azure service tiers](/azure/azure-sql/database/service-tiers-dtu) and [Detailed resource limits](/azure/azure-sql/database/resource-limits-dtu-single-databases#single-database-storage-sizes-and-compute-sizes). To determine DTU needs or utilization, see [Determine number of DTUs needed by a workload](/azure/azure-sql/database/purchasing-models#determine-the-number-of-dtus-needed-by-a-workload)
 
 ## Configuring the entity export option
 
 1. Start the client, and then, in the **Data management** workspace, select the **Configure Entity export to database** tile.
-2. If you've configured any databases, a list is shown. Otherwise, you must configure a new database. In this case, select **New**, and then enter a unique name and a description for the new database. Note that you can export entities into multiple databases.
+2. If you've configured any databases, a list is shown. Otherwise, you must configure a new database. In this case, select **New**, and then enter a unique name and a description for the new database. You can export entities into multiple databases.
 3. Enter the connection string in the following format:
 
     Data Source=&lt;logical server name&gt;,1433; Initial Catalog=&lt;your DB name&gt;; Integrated Security=False; User ID=&lt;SQL user ID&gt;; Password=&lt;password&gt;
@@ -80,18 +81,18 @@ Your specific BYOD usage might very well require a service tier greater than the
  
     
 > [!NOTE]
-> The default extension field shown in the image above doesn't apply to BYOD.
+> The default extension field shown in the previouse image doesn't apply to BYOD.
 
 4. Select **Validate**, and make sure that the connection is successful.
 
     - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining columnstore indexes for entities that are copied. 
-    - The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option lets you hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger is supported per bulk insert operation. The size of the bulk insert is determined by the **Maximum insert commit size** parameter in the Data management framework.
+    - The **Enable triggers in target database** option sets  jobs to enable SQL triggers in the target database. This option lets you hook downstream processes into the trigger to orchestrate actions that must be started after records are inserted. One trigger is supported per bulk insert operation. The size of the bulk insert is determined by the **Maximum insert commit size** parameter in the Data management framework.
 
-For scenarios in which analytical applications data is read from BYOD, there's always the challenge of ensuring that the reporting systems get consistent data from BYOD while the sync is in progress. You can achieve this result by not reading the analytical data apps directly from the staging tables created by the BYOD process. The staging tables hold the data while data is being synced from the instance and hence constantly changes. Use the SQL trigger feature to determine when the data sync has been completed, and then transform and fill data to the downstream analytical data scenarios.
+For scenarios in which analytical applications data is read from BYOD, there's always the challenge of ensuring that the reporting systems get consistent data from BYOD while the sync is in progress. You can achieve this result by not reading the analytical data apps directly from the staging tables created by the BYOD process. The staging tables hold the data while data is being synced from the instance and hence constantly changes. Use the SQL trigger feature to determine when the data sync was completed, and then transform and fill data to the downstream analytical data scenarios.
 
-When the validation is passed, the database that you configured for entity export appears in lists of databases, as shown in the following illustration.
+When the validation is passed, the database that you configured for entity  appears in lists of databases, as shown in the following illustration.
 
-![Database for entity export.](media/e3bcecdb0ff1532d890915903b378c60.png)
+![Database for entity .](media/e3bcecdb0ff1532d890915903b378c60.png)
 
 You can now publish one or more entities to the new database by selecting the **Publish** option on the menu.
 
@@ -110,7 +111,7 @@ The following sections discuss each option.
 
 The **Publish** option defines the entity database schema on the destination database. When you select one or more entities, and then select the **Publish** option, a batch job is started. This job creates the entities in the destination database. When the database definition job is completed, you receive a message, which you can access by using the bell symbol in the upper right.
 
-The actual data update occurs when you export data. At this point, you're just creating the schema.
+The actual data update occurs when you  data. At this point, you're just creating the schema.
 
 #### Drop entity
 
@@ -122,7 +123,7 @@ The **Compare source names** option lets you compare the entity schema in the de
 
 #### Configure change tracking
 
-Change tracking is a feature that is provided in SQL Server and SQL Database. Change tracking enables the database to track changes including deletes that are made on tables. The system uses change tracking to identify changes that are made to tables as transactions. However, because the application must track changes at the data entity level, there's additional logic on top of SQL change tracking to make this functionality work. The steps to enable change tracking are explained later in this section.
+Change tracking is a feature that is provided in SQL Server and SQL Database. Change tracking enables the database to track changes including deletes that are made on tables. The system uses change tracking to identify changes that are made to tables as transactions. However, because the application must track changes at the data entity level, there's more logic on top of SQL change tracking to make this functionality work. The steps to enable change tracking are explained later in this section.
 
 The **Change tracking** option on the **Publish** page lets you configure how changes are tracked on the underlying entity.
 
@@ -134,7 +135,7 @@ The following table describes the change tracking options that are available.
 |----------------------|-------------|
 | Enable primary table | An entity consists of several tables. Select this option to track all changes that are made to the primary table of the entity. When changes are made to the primary table, the corresponding record is inserted into or updated in the destination database. Although data from the whole entity is written to the destination table, the system triggers the insert or update option only when the primary table is modified. |
 | Enable entire entity | Select this option to track all changes to the entity. (These changes include changes to all the tables that make up the entity.) When changes are made to the entity, corresponding updates are made to the destination. |
-| Enable custom query  | This option lets a developer provide a custom query that the system runs to evaluate changes. This option is useful when you have a complex requirement to track changes from only a selected set of fields. You can also select this option when the entities that's exported were built by using a hierarchy of nested views. For more information, see [Enable change tracking for entities](../data-entities/entity-change-track.md). |
+| Enable custom query  | This option lets a developer provide a custom query that the system runs to evaluate changes. This option is useful when you have a complex requirement to track changes from only a selected set of fields. You can also select this option when the entities that's exported were built by using a hierarchy of nested views. Learn more in [Enable change tracking for entities](../data-entities/entity-change-track.md). |
 
 To use change tracking, you must enable the **Change tracking** option as shown above in data management. This action is available on the **Data entities** list page, by going to **Data management > Data entities**. You need to select an entity and select from one of the options listed above to enable change tracking on the data entity.
 
@@ -188,11 +189,11 @@ When you add an entity for data export, you can select to do an incremental expo
 >[!NOTE]
 > A full push deletes all existing records from an entity and then inserts the current set of records from the selected entity.
 
-If you select an incremental push, the first push is always going to be a full push. This is because SQL needs to know which records have been 'tracked' in order to be able to track subsequent changes. Whenever a new record is inserted, or a record is added or deleted, the corresponding change are reflected in the destination entity.
+If you select an incremental push, the first push is always going to be a full push. This is because SQL needs to know which records were 'tracked' in order to be able to track subsequent changes. Whenever a new record is inserted, or a record is added or deleted, the corresponding change are reflected in the destination entity.
 
 Because the first push is always a full push, we don't recommend that you do an explicit full push before you enable change tracking.
 
-We recommend that you first enable change tracking and schedule a export job with incremental push. This takes care of the first full push and the subsequent incremental exports.
+We recommend that you first enable change tracking and schedule an export job with incremental push. This takes care of the first full push and the subsequent incremental exports.
 
 >[!NOTE]
 > If you notice that the incremental push setting is acting like a full push in certain scenarios, there are two possible reasons:
@@ -200,7 +201,7 @@ We recommend that you first enable change tracking and schedule a export job wit
 > 2. If the incremental push export doesn't run within the retention period, to prevent data loss, the export automatically falls back to the full push setting.
 
 ### Timeouts
-The default timeouts for BYOD exports are set to ten minutes for truncation operations and one hour for actual bulk insert operations. When volumes are high, these timeout settings may not be sufficient and must be updated. You can update the timeout settings by navigating to **Data management** > **Framework parameters** > **Bring your own database**. These timeouts are company specific and must be set separately for each company.
+The default timeouts for BYOD exports are set to 10 minutes for truncation operations and one hour for actual bulk insert operations. When volumes are high, these timeout settings may not be sufficient and must be updated. You can update the timeout settings by navigating to **Data management** > **Framework parameters** > **Bring your own database**. These timeouts are company specific and must be set separately for each company.
 
 ### Known limitations
 
