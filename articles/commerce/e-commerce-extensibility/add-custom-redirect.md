@@ -44,9 +44,9 @@ A canonical URL redirect works in the following ways:
 
 If a user accesses a product page using a noncanonical URL, the Commerce page module should detect this action and redirect the user to the correct canonical URL. 
 
-Using the following URL example, the custom module logic detects the extraneous `<unecessaryparameter>` segment of the requested URL and issues a redirect to the clean, canonical URL. 
+In the following URL example, the custom module logic detects the extraneous `<unnecessaryparameter>` segment of the requested URL and issues a redirect to the clean, canonical URL. 
 
-- **Requested URL**: `https://www.fabrikam.com/womens-clothing/<unecessaryparameter>/45678.p` 
+- **Requested URL**: `https://www.fabrikam.com/womens-clothing/<unnecessaryparameter>/45678.p` 
 - **Canonical URL**: `https://www.fabrikam.com/womens-clothing/45678.p` 
 
 ## Implement a custom redirect within a module 
@@ -59,7 +59,7 @@ All e-commerce site pages hosted on the Dynamics 365 Commerce domain include a c
 
 In this example, the category page template uses the category page summary module to generate its canonical URL. The category page summary module references the default page summary module view file. Adding conditional redirect logic to the default page summary module ensures that the redirect occurs wherever category pages are accessed. 
 
-**Step 1 - Customize the default page summary module**: In the default-page-summary-extension.tsx file (src\modules\default-page-summery-extension\default-page-summary-extension.tsx), you customize the default page summary module to implement custom logic that throws the HttpRedirectException error, as shown in the following code sample.
+**Step 1 - Customize the default page summary module**: In the default-page-summary-extension.tsx file (src\modules\default-page-summery-extension\default-page-summary-extension.tsx), we customize the default page summary module to implement custom logic that throws the HttpRedirectException error, as shown in the following code sample.
 
 ```typescript
 import { HttpRedirectException } from '@msdyn365-commerce/core-internal';
@@ -72,7 +72,7 @@ if (canonicalUrl && context && context.request && context.request.url && canonic
 });
 ```
 
-**Step 2 - Customize the category page summary module**: In the category-page-summary-extension.definition.json file (src\modules\category-page-summary-extension\category-page-summary-extension.definition.json), you customize the category page summary module and update the module definition to point to your custom view, as shown in the following code sample.
+**Step 2 - Customize the category page summary module**: In the category-page-summary-extension.definition.json file (src\modules\category-page-summary-extension\category-page-summary-extension.definition.json), we customize the category page summary module and update the module definition to point to the custom view, as shown in the following code sample.
 
 ```json
 "module": {
@@ -80,7 +80,7 @@ if (canonicalUrl && context && context.request && context.request.url && canonic
 	}
 ```
 
-**Step 3 - Edit the category page template**:  In the category page template in Dynamics 365 Commerce site builder, you substitute references to the category page summary module with references to the custom category page summary extension module. 
+**Step 3 - Edit the category page template**:  In the category page template in Dynamics 365 Commerce site builder, we substitute references to the category page summary module with references to the custom category page summary extension module. 
 
 > [!NOTE]
 > When you implement bulk redirects alongside canonical redirects, take care to avoid creating infinite redirect loops. 
