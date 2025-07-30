@@ -37,14 +37,18 @@ To view generative insights, follow these steps:
     - **Summary** – Summarizes the insights that were detected.
 
 1. In the **Insight detection** tile, select **View insights** to see the details. Depending on what was detected, the system shows one or more of the following:
-    - Several graphs of relevant data. Select any of these graphs to drill down to a larger view.
+    - Several graphs of relevant data, with tabs that organize the data by insight type (**Signal correlation** and **Seasonality**). Select a tab to view insights of the indicated type.
     - A confidence score that indicates how confident the system is about each detected insight.
     - Various relevant KPI values for each insight.
     - A description of each insight, which is written in natural language. This description typically explains the detected pattern and its significance.
+
+    :::image type="content" source="media/generative-insights-example-1.png" alt-text="A screenshot showing an example of the generative insights summary view." lightbox="media/generative-insights-example-1.png":::
+
+1. Select a graph on the **Signal correlation** or **Seasonality** tab to view even more details about it.
     - Some detailed graphs provide both a timeline view and data grid. Hover the mouse pointer to read timeline values. Select a row in the grid to add that row to the graph.
     - Some detailed graphs provide a dimension breakdown that lets you review the major contributors to the detected insights. For example, you can see which products or locations contributed most to the detected seasonality or signal correlation.
 
-    :::image type="content" source="media/generative-insights-example.png" alt-text="A screenshot showing an example of generative insights." lightbox="media/generative-insights-example.png":::
+    :::image type="content" source="media/generative-insights-example-2.png" alt-text="A screenshot showing an example of the generative insights detailed view." lightbox="media/generative-insights-example-2.png":::
 
 1. When you're done exploring the insights, select **Back to time series** to return to the time series.
 
