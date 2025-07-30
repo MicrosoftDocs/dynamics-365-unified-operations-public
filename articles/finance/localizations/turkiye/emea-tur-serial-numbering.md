@@ -4,7 +4,7 @@ description: Learn how to use continuous serial numbering for packing slips and 
 author: v-omerorhan 
 ms.author: v-omerorhan 
 ms.topic: how-to
-ms.date: 07/31/2025 
+ms.date: 07/30/2025 
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye 
 ms.search.validFrom: 2020-02-03 
