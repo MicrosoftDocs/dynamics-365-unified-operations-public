@@ -22,17 +22,17 @@ This article describes the latest security enhancements in the finance and opera
 
 ## Frequently asked questions
 
-### I get error  'System.IO.IOException: The parameter is incorrect' or 'System.UnauthorizedAccessException: Access to the path \\storageAccount.file.core.windows.net\dixfshare\' is denied.
+### I get error 'System.IO.IOException: The parameter is incorrect' or 'System.UnauthorizedAccessException: Access to the path \\storageAccount.file.core.windows.net\dixfshare\' is denied.
 
-The Dynamics for Finance and Operations data import/export framework will stop mounting the file share as a drive accessible from AOS instances with disablement of access keys. Access will only be allowed through the Azure storage interface to enhance security. Most users won’t be affected, but custom code using `getSharedFilePath` will see changes: this method will now place files in the AOS temp folder instead of the file share, returning the new path. This ensures temporary file operations continue working without code updates, provided you’re only reading or verifying file contents.
+The Dynamics for finance and operations apps data import/export framework stops mounting the file share as a drive accessible from AOS instances with disablement of access keys. Access is only allowed through the Azure storage interface to enhance security. Most users aren't affected, but custom code using **getSharedFilePath** is affected. The **getSharedFilePath** method now places files in the AOS temp folder instead of the file share, returning the new path. This ensures temporary file operations continue to work without code updates, provided you’re only reading or verifying file contents.
 
 Key limitations:
--	The temp folder is unique to each AOS instance; do not store file paths in a database for cross-instance access.
--	Avoid using the file share for permanent storage — files older than one day are deleted.
--	Don’t query the `DMFParameters` table’s `SharedFolderPath` field for cloud environments; its value is not accurate outside local/dev setups.
+-	The temp folder is unique to each AOS instance; don't store file paths in a database for cross-instance access.
+-	Avoid using the file share for permanent storage. Files older than one day are deleted.
+-	Don’t query the **DMFParameters** table’s **SharedFolderPath** field for cloud environments; its value isn't accurate outside local/dev setups.
 
 #### What if I need to create or modify a file on the export file share?
-Avoid using the data import/export file share in customizations. If necessary, use the DMFFileShareHelper class and its createFileFromStream method to save a stream to the file share. This returns a file interface for confirming creation, downloading, or deleting the file.
+Avoid using the data import/export file share in customizations. If necessary, use the **DMFFileShareHelper** class and its **createFileFromStream** method to save a stream to the file share. This method returns a file interface for confirming creation, downloading, or deleting the file.
 
 #### Code example to create, read, and delete a file on dixf share
 
@@ -56,7 +56,7 @@ reader.Close();
 // deleting a file using IFile
 newFile.Delete();
 ```
-You can also look at method getSharedFilePathV2 in DMFStagingWriter for an example of use of DMFFileShareHelper to download a file from shared storage and put it on the data import and export share.
+You can also look at method getSharedFilePathV2 in **DMFStagingWriter** for an example of use of **DMFFileShareHelper** to download a file from shared storage and put it on the data import and export share.
 
 ### I receive the following error on my developer machine/customer-hosted environment: "Fetching a valid storage connection string is disabled." How can I fix this error?
 
@@ -185,7 +185,7 @@ Yes, this is a more secure method for connecting to the storage account compared
 
 We're moving away from connection string, also known as account access key, and rotation of an account access key isn't needed.
 
-### We have a process for LBD customers migrating from Dynamics 365 Finance on-premises (LBD) to cloud. Currently for the finance and operations attachments we provide customers with a SAS token. Is this affected by the changes? If so, do we need to have a way to help out customers migrate their attachments.
+### We have a process for LBD customers migrating from Dynamics 365 Finance + Operations (on-premises) (LBD) to cloud. Currently for the finance and operations attachments we provide customers with a SAS token. Is this affected by the changes? If so, do we need to have a way to help out customers migrate their attachments.
 
 It works. If Managed Identity is enabled, a user-delegated SAS URL can be used to generate a SAS URL that can be shared with customers. However, a user-delegated SAS URL is valid for a maximum of seven days. Azure Storage doesn't support generating SAS URLs with a longer validity period. 
 
@@ -212,7 +212,7 @@ By ensuring the variable can store the entire URL without truncation, the error 
 
 ### UserDelegatedSASURL Length Consideration
 
-UserDelegatedSASURL can be up to or slightly below 500 characters in length. To ensure reliability, it's recommended you treat the 500 characters as the minimum expected size. Always use a variable type that can safely accommodate the full URL as described in the resolution above.
+UserDelegatedSASURL can be up to or slightly below 500 characters in length. To ensure reliability, it's recommended you treat the 500 characters as the minimum expected size. Always use a variable type that can safely accommodate the full URL as described in the resolution in the previous section.
 
 > [!IMPORTANT]
 > If the URL is truncated due to insufficient variable length, users may encounter errors such as (403) Forbidden, (404) Not Found, (409) Conflict, or PublicAccessNotPermitted-especially when the access key is disabled.
