@@ -17,6 +17,15 @@ ms.custom:
 
 Maintenance request lifecycle states define the stages that a request can go through. Examples include *Created*, *Active*, and *Ended*. When a maintenance request is converted to a work order, the maintenance request lifecycle state should be updated to *Ended* or *Closed* to indicate that the maintenance request is no longer active. On the **All maintenance requests** list page, you can view all maintenance requests, regardless of their lifecycle state.
 
+## Turn the depot repair option on or off
+
+*Depot repair* is a maintenance request type that lets you receive assets from another location so that you can do a maintenance or repair job, and then return the asset after the job is completed. To use depot repair, you must enable its configuration key by following these steps:
+
+1. Put your system into maintenance mode, as described in [Maintenance mode](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Go to **System administration** \> **Setup** \> **License configuration**.
+1. On the **Configuration keys** tab, expand the **Asset management** node and then select the check box for **Inbound/outbound**.
+1. Turn off maintenance mode, as described in [Maintenance mode](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
 ## Manage maintenance request lifecycle states
 
 To manage the maintenance request lifecycle states that you need, follow these steps.
@@ -36,7 +45,7 @@ To manage the maintenance request lifecycle states that you need, follow these s
     - **Create work order** – Choose whether a work order can be created from a maintenance request that's in this lifecycle state.
     - **Delete** – Choose whether a maintenance request can be deleted while it's in this lifecycle state.
 
-1. If you use depot repair, then the **Update** FastTab is shown. Make the following settings here: <!-- KFM: I don't see this section. What is "depot repair" and how do I turn it on? -->
+1. If you use depot repair, then the **Update** FastTab is shown. Make the following settings here:
     - **Inbound** – Choose whether the asset lifecycle state of assets that are selected on a maintenance request should automatically be updated to **Inbound** when the maintenance request lifecycle state of that maintenance request is set to **Inbound**.
     - **Outbound** – Choose whether the asset lifecycle state of assets that are selected on a maintenance request should automatically be updated to **Outbound** when the maintenance request lifecycle state of that maintenance request is set to **Outbound**.
 
@@ -59,10 +68,12 @@ After you've created the lifecycle states that are required for your maintenance
     - **Lifecycle states** – Shows the number of lifecycle states that are selected in this lifecycle model.
     - **Maintenance request types** – Shows the number of maintenance request types that use this lifecycle model.
 
-1. On the **Lifecycle states** FastTab, move all of the lifecycle states that should be included in this lifecycle model into the **Lifecycle sates selected** column. Use the buttons between the columns to move one or more selected lifecycle states between the columns. <!-- KFM: We also have buttons to move rows up and down within the **Lifecycle sates selected** column. Why would I do this? How does the row order affect the functionality? -->
+1. On the **Lifecycle states** FastTab, move all of the lifecycle states that should be included in this lifecycle model into the **Lifecycle sates selected** column.
+    - Use the buttons between the columns to move one or more selected lifecycle states between the columns.
+    - When a user changes the lifecycle sate of a maintenance request, the states are displayed in the same order shown in the **Lifecycle sates selected** column, which should indicate the way maintenance requests typically progress from start to finish. Use the up and down buttons next to the **Lifecycle sates selected** column to adjust the order of the lifecycle states.
 
-1. If you use depot repair, then the **General** FastTab is shown. Make the following settings here: <!-- KFM: I don't see this section. What is "depot repair" and how do I turn it on? -->
-    - **Lifecycle state for asset received** – Select the asset lifecycle state that assets selected on a maintenance request should automatically be updated to when they are received for depot repair.
-    - **Lifecycle state for asset delivered** – Select the lifecycle state that assets selected on a maintenance request should automatically be updated to when they are returned after depot repair.
+1. If you use depot repair, then the **General** FastTab is shown. Make the following settings here:
+    - **Lifecycle state for asset received** – Select the asset lifecycle state that assets selected on a maintenance request should automatically be updated to when they're received for depot repair.
+    - **Lifecycle state for asset delivered** – Select the lifecycle state that assets selected on a maintenance request should automatically be updated to when they're returned after depot repair.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
