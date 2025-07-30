@@ -4,7 +4,7 @@ description: Learn how to get started with Electronic invoicing for Denmark in M
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 09/10/2024
+ms.date: 07/30/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
