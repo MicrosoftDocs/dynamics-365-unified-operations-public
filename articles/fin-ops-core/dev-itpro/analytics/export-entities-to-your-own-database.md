@@ -111,7 +111,7 @@ The following sections discuss each option.
 
 The **Publish** option defines the entity database schema on the destination database. When you select one or more entities, and then select the **Publish** option, a batch job is started. This job creates the entities in the destination database. When the database definition job is completed, you receive a message, which you can access by using the bell symbol in the upper right.
 
-The actual data update occurs when you  data. At this point, you're just creating the schema.
+The actual data update occurs when you export data. At this point, you're just creating the schema.
 
 #### Drop entity
 
@@ -160,9 +160,9 @@ You can create a data project that has multiple entities. You can schedule this 
 
 #### Exporting data across companies
 
-Jobs that are executed in batch can also be used to export data across companies. This requires that the **Enable all company export** option is enabled under **Data import/export framework parameters > Bring your own database**. Concurrent exports for the same entity to the BYOD database may cause high DTU usage and can result in data loss for incremental exports. To avoid this risk, starting in version 10.0.16, all execution across companies is sequential per company. This means that jobs with a high number of entities and companies take longer to run.
+Jobs that are executed in batch can also be used to export data across companies. This batch export requires that the **Enable all company export** option is enabled under **Data import/export framework parameters > Bring your own database**. Concurrent exports for the same entity to the BYOD database may cause high DTU usage and can result in data loss for incremental exports. To avoid this risk, starting in version 10.0.16, all execution across companies is sequential per company. This means that jobs with a high number of entities and companies take longer to run.
 
-To reduce the overall export times, consider the following:
+To reduce the overall export times, consider the following practices:
 
 - Make sure that the same data entity isn't in multiple projects so that the projects can run without conflicting with each other.
 - Put entities that take a long time to run in separate projects. This allows the other projects to run faster. 
@@ -189,11 +189,11 @@ When you add an entity for data export, you can select to do an incremental expo
 >[!NOTE]
 > A full push deletes all existing records from an entity and then inserts the current set of records from the selected entity.
 
-If you select an incremental push, the first push is always going to be a full push. This is because SQL needs to know which records were 'tracked' in order to be able to track subsequent changes. Whenever a new record is inserted, or a record is added or deleted, the corresponding change are reflected in the destination entity.
+If you select an incremental push, the first push is always going to be a full push. This push is full because SQL needs to know which records were 'tracked' in order to be able to track subsequent changes. Whenever a new record is inserted, or a record is added or deleted, the corresponding change are reflected in the destination entity.
 
 Because the first push is always a full push, we don't recommend that you do an explicit full push before you enable change tracking.
 
-We recommend that you first enable change tracking and schedule an export job with incremental push. This takes care of the first full push and the subsequent incremental exports.
+We recommend that you first enable change tracking and schedule an export job with incremental push. This change takes care of the first full push and the subsequent incremental exports.
 
 >[!NOTE]
 > If you notice that the incremental push setting is acting like a full push in certain scenarios, there are two possible reasons:
@@ -212,7 +212,7 @@ Because BYOD is your own database, you must ensure that there are no active lock
 
 #### You can't export composite entities into your own database
 
-Currently, composite entities aren't supported. You must export individual entities that make up the composite entity which can be done in the same data project.
+Currently, composite entities aren't supported. You must export individual entities that make up the composite entity that can be done in the same data project.
 
 #### Entities that don't have unique keys can't be exported by using incremental push
 
@@ -228,7 +228,7 @@ You might face this limitation especially when you try to incrementally export r
 
 ### SSIS Error Code DTS_E_OLEDBERROR.  An OLE DB error has occurred. Error code: 0x80004005
 
-**Issue** - Export to BYOD fails with an SSIS exception shown below.
+**Issue** - Export to BYOD fails with an SSIS exception.
 
 ```Console
 An OLE DB error has occurred. Error code: 0x80004005.
@@ -242,7 +242,7 @@ Failed to open a fastload rowset for <entityStaging>. Check that the object exis
 OLE DB Destination failed the pre-execute phase and returned error code 0xC0202040.
 ```
 
-**Solution** - This can occur if the connection policy on the Azure SQL BYOD server is set to Proxy. This must be changed to 'Redirect' as explained in [SQL DB Connectivity Architecture](/azure/sql-database/sql-database-connectivity-architecture)
+**Solution** - This issue can occur if the connection policy on the Azure SQL BYOD server is set to Proxy. This policy must be changed to 'Redirect' as explained in [SQL DB Connectivity Architecture](/azure/sql-database/sql-database-connectivity-architecture)
 
 
 
