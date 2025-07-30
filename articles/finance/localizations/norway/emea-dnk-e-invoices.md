@@ -6,7 +6,7 @@ ms.author: ikondratenko
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/12/2025
+ms.date: 07/30/2025
 ms.reviewer: johnmichalak
 ms.search.region: Norway
 ms.search.validFrom: 2021-01-01
@@ -32,7 +32,7 @@ In the **Electronic reporting** workspace, import the following or later version
 - OIOUBL Project credit note (DK) **version 272.36.9**
 
 > [!NOTE]
-> If the versions of the ER configurations earlier than mentioned above are used, then the system will continue electronic invoices generation following the previous OIOUBL format version, older then version 3.
+> If the versions of the ER configurations earlier than listed above are used, then the system will continue electronic invoices generation following the previous OIOUBL format version, older then version 3.
 
 For more information about how to import ER configurations, see [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
@@ -55,10 +55,10 @@ To reference the imported ER format configurations, follow these steps.
 To configure legal entity parameters, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**, and select a legal entity.
-2. On the **Addresses** FastTab, add a valid primary address for the selected legal entity.
-3. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's VAT number.
-4. On the **Bank account information** FastTab, in the **Routing number** field, enter the company's CVR number.
-5. Companies can be identified by their CVR number (with **0184** schema value) or their Global Location Number, GLN (with **0088** schema value). The GLN is also known as a European article numbering (EAN) location number. To identify a company by its EAN, follow these steps.
+1. On the **Addresses** FastTab, add a valid primary address for the selected legal entity.
+1. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's VAT number.
+1. On the **Bank account information** FastTab, in the **Routing number** field, enter the company's CVR number.
+1. Companies can be identified by their CVR number (with **0184** schema value) or their Global Location Number, GLN (with **0088** schema value). The GLN is also known as a European article numbering (EAN) location number. To identify a company by its EAN, follow these steps.
  
     - Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
     - Define a new registration type for Denmark that has the name **EAN**. You must enter the name exactly as it appears here.
@@ -69,7 +69,7 @@ To configure legal entity parameters, follow these steps.
     > [!NOTE]
     > The EAN has higher priority than the CVR number. If both numbers are configured at the same time, the EAN is used.  
 
-6. In the **FI-Creditor ID** field, enter the creditor's identification number if you plan to use FIK payments.
+1. In the **FI-Creditor ID** field, enter the creditor's identification number if you plan to use FIK payments.
 
 > [!NOTE]
 > The contact information for the legal entity is automatically retrieved from the related Person that is associated with the current user in Dynamics 365 Finance. Make sure that the person has a valid email address and phone number. The phone number must start from **+** and the country code. 
@@ -79,19 +79,19 @@ To configure legal entity parameters, follow these steps.
 To configure customer parameters, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
-2. On the **Addresses** FastTab, add a valid address for the selected customer.
-3. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable the generation of electronic invoices.
-4. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice.
-5. In the **Tax exempt number** field, enter the customer's tax exempt number.
-6. In the **EAN** field, enter the customer's identification number. 
+1. On the **Addresses** FastTab, add a valid address for the selected customer.
+1. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable the generation of electronic invoices.
+1. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice.
+1. In the **Tax exempt number** field, enter the customer's tax exempt number.
+1. In the **EAN** field, enter the customer's identification number. 
 
     > [!NOTE]
     > If no EAN is defined, the customer's tax exempt number is used for the customer's company identification.
 
-7. On the **Sales demographics** FastTab, in the **Primary contact** field, select a person who will be considered the buyer's contact.
+1. On the **Sales demographics** FastTab, in the **Primary contact** field, select a person who will be considered the buyer's contact.
 
     > [!NOTE]
-    > All available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid email address and phone number. The phone number must start from **+** and the country code.
+    > All available contact people must already be defined for the selected customer. Make sure that the selected contact person has a valid email address and phone number. The phone number must start from **+** and the country code.
 
 ### Configure methods of payment
 
@@ -109,9 +109,9 @@ The system supports the following predefined codes for payment methods and provi
 To configure methods of payment, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Payments setup** \> **Methods of payment**.
-2. Create a new method of payment, or select an existing method to configure.
-3. On the **General** FastTab, in the **Posting** section, in the **Account type** field, select **Bank**.
-4. In the **Payment account** field, enter the company bank account that is associated with the method of payment.
+1. Create a new method of payment, or select an existing method to configure.
+1. On the **General** FastTab, in the **Posting** section, in the **Account type** field, select **Bank**.
+1. In the **Payment account** field, enter the company bank account that is associated with the method of payment.
 
     > [!NOTE]
     > The company bank account must already be set up at **Cash and bank management** \> **Bank accounts** \> **Bank accounts**.
@@ -164,26 +164,26 @@ Application-specific parameters must be configured for the following configurati
 For each configuration, follow these steps.
 
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, in the list of configurations, select a required configuration. For example, select **OIOUBL Sales invoice (DK)**.
-2. On the **Configurations** menu, in the **Application specific parameters** section, select **Setup**.
-3. On the **Application specific parameters** page, on the **Lookups** FastTab, select **TaxSchemeSelector** in the grid.
+1. On the **Configurations** menu, in the **Application specific parameters** section, select **Setup**.
+1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **TaxSchemeSelector** in the grid.
 
     Next, on the **Conditions** FastTab, you will configure the correspondence between internal sales tax codes and official tax schemes codes. 
 
-4. On the **Conditions** FastTab, select **Add** to add a condition to the grid.
-5. In the **Code** field for the new condition, select the sales tax code that is defined in the system. 
+1. On the **Conditions** FastTab, select **Add** to add a condition to the grid.
+1. In the **Code** field for the new condition, select the sales tax code that is defined in the system. 
 
     > [!NOTE]
     > In the **Code** field, you can select the **\*Blank\*** or **\*Not blank\*** placeholder value instead of a specific sales tax code.
 
-6. In the **Lookup result** field, select a corresponding official tax schemes code.
+1. In the **Lookup result** field, select a corresponding official tax schemes code.
 
     ![Defining conditions for the TaxSchemeSelector lookup on the Application specific parameters page.](../media/emea-dnk-ASP-parameters.jpg)
 
-7. On the **Lookups** FastTab, select **TaxCategorySelector** in the grid.
-8. On the **Conditions** FastTab, repeat steps 4 through 6 to configure the correspondence between internal sales tax codes and official tax categories codes.
-9. On the **Lookups** FastTab, select **TaxCodeTypeSelector** in the grid.
-10. On the **Conditions** FastTab, repeat steps 4 through 6 to configure the correspondence between internal sales tax codes and tax type codes. If no tax type code is required, select **Not applicable**.
-11. In the **State** field at the top of the page, select **Completed**, and then save your changes.
+1. On the **Lookups** FastTab, select **TaxCategorySelector** in the grid.
+1. On the **Conditions** FastTab, repeat steps 4 through 6 to configure the correspondence between internal sales tax codes and official tax categories codes.
+1. On the **Lookups** FastTab, select **TaxCodeTypeSelector** in the grid.
+1. On the **Conditions** FastTab, repeat steps 4 through 6 to configure the correspondence between internal sales tax codes and tax type codes. If no tax type code is required, select **Not applicable**.
+1. In the **State** field at the top of the page, select **Completed**, and then save your changes.
 
 ## Buyer reference
 
@@ -226,8 +226,8 @@ After an invoice is posted, you can generate an electronic invoice by selecting 
 To view electronic invoices, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
-2. Select a job, and then select **Show files**.
-3. Select **Open** to download the file that contains the electronic invoice.
+1. Select a job, and then select **Show files**.
+1. Select **Open** to download the file that contains the electronic invoice.
 
     If generation of the electronic invoices failed because of errors, select **Show log**. Then select **Message details** in the message bar to view more details about the error.
 
