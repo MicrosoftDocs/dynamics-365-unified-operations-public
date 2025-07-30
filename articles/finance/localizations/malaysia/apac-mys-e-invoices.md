@@ -4,7 +4,7 @@ description: This article explains how to get started with electronic invoicing 
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 05/29/2025
+ms.date: 07/30/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
