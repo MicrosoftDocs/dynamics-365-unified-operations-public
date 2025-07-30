@@ -25,10 +25,10 @@ To manage the maintenance request lifecycle states that you need, follow these s
     :::image type="content" source="media/02-setup-for-requests.png" alt-text="Screenshot of the Maintenance request lifecycle states page." lightbox="media/02-setup-for-requests.png":::
 
 1. Use the buttons on the Action Pane to add, remove, or edit a lifecycle state.
-1. Make the following settings in the header of the new or selected lifecycle state:
+1. Make the following settings in the header of your new or selected lifecycle state:
     - **Lifecycle state** – Enter an ID for the lifecycle state.
     - **Name** – Enter a name for the lifecycle state.
-1. On the **Details** FastTab, the **Lifecycle models** field shows the number of maintenance request lifecycle models that use this lifecycle state.
+1. For existing lifecycle states, the **Lifecycle models** field on the **Details** FastTab shows the number of maintenance request lifecycle models that use this lifecycle state.
 1. Set the following options on the **General** FastTab:
     - **Active** – Choose whether a maintenance request should be active while it's in this lifecycle state.
     - **Set actual end** – Choose whether an actual end date and time should automatically be entered on a maintenance request that's in this lifecycle state.
@@ -51,11 +51,11 @@ After you've created the lifecycle states that are required for your maintenance
     :::image type="content" source="media/06-setup-for-requests.png" alt-text="Screenshot of the Maintenance request lifecycle models page." lightbox="media/06-setup-for-requests.png":::
 
 1. Use the buttons on the Action Pane to add, remove, or edit a lifecycle model.
-1. Make the following settings in the header of the new or selected lifecycle model:
+1. Make the following settings in the header of your new or selected lifecycle model:
     - **Lifecycle model** – Enter an ID for the lifecycle model.
     - **Name** – Enter a name for the lifecycle model.
 
-1. The **Details** FastTab displays the following information:
+1. For existing lifecycle models, the **Details** FastTab displays the following information:
     - **Lifecycle states** – Shows the number of lifecycle states that are selected in this lifecycle model.
     - **Maintenance request types** – Shows the number of maintenance request types that use this lifecycle model.
 
