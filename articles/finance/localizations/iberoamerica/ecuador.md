@@ -4,7 +4,7 @@ description: Learn about Microsoft Dynamics 365 Finance documentation resources 
 author: Cpicon85
 ms.author: v-cpicon
 ms.topic: overview
-ms.date: 01/30/2025
+ms.date: 07/30/2025
 ms.reviewer: johnmichalak
 ms.search.region: Ecuador
 ms.search.validFrom: 2025-01-27
