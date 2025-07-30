@@ -34,9 +34,9 @@ Key limitations:
 #### What if I need to create or modify a file on the export file share?
 Avoid using the data import/export file share in customizations. If necessary, use the **DMFFileShareHelper** class and its **createFileFromStream** method to save a stream to the file share. This method returns a file interface for confirming creation, downloading, or deleting the file.
 
-#### Code example to create, read, and delete a file on dixf share
+#### X++ Code example to create, read, and delete a file on dixf share
 
-``` X++
+``` csharp
 // creating a new file on the dixf share
 str filename = 'FrmStm.txt';
 str expectedContents = 'file contents';
