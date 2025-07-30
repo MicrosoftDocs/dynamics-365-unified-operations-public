@@ -87,16 +87,16 @@ If you don’t enter the values in the system language, you may not get the expe
 
 ### Example 
 
-The system language is set to “es” (Spanish).  
-A new financial dimension is created. The dimension name is entered in English, not Spanish: "Ownership".   
+The system language is set to "es" (Spanish).  
+A new financial dimension is created. The dimension name is entered in English, not Spanish: "Ownership."   
  - Defining the name in a nonsystem language isn't recommended, but is permitted. 
 Two translations are created for the "Ownership" dimension name: 
  - "es" (Spanish) = Propiedad
  - "de" (German) = Besitz 
 
-User 1 has a user language of "de". When they see the dimension name, it displays as "Besitz".  
+User 1 has a user language of "de." When they see the dimension name, it displays as "Besitz."  
 
-User 2 has a user language of "es". When they see the dimension name, it displays as "Ownership". The dimension name of "Ownership" is shown because the user language is the same as the system language. As a result, the system doesn’t look for any translations.  
+User 2 has a user language of "es." When they see the dimension name, it displays as "Ownership." The dimension name of "Ownership" is shown because the user language is the same as the system language. As a result, the system doesn’t look for any translations.  
 
 
 ## Legal entity overrides
@@ -106,7 +106,7 @@ All custom dimensions and some entity-backed dimensions (such as dimensions crea
 But, not all dimensions are valid for all legal entities. Additionally, some dimensions might be relevant only for a specific period. In these cases, you can use the **Legal entity overrides** section to specify the companies that the dimension should be suspended for, the owner, and the period when the dimension is active.
 
 ### Example
-Department has dimension values of 100, 200 and 300.  USMF, USSI, and DEMF all use the Department dimension. DEMF is only permitted to use department 100 and 200. In order to restrict DEMF using Department 300, a legal entity override can be created, where the dimension value is marked as Suspended. USMF and USSI still have full access to departments 100, 200 and 300.  
+Department has dimension values of 100, 200 and 300. USMF, USSI, and DEMF all use the Department dimension. DEMF is only permitted to use department 100 and 200. In order to restrict DEMF using Department 300, a legal entity override can be created, where the dimension value is marked as Suspended. USMF and USSI still have full access to departments 100, 200 and 300.  
 
 ## Deleting financial dimensions
 
