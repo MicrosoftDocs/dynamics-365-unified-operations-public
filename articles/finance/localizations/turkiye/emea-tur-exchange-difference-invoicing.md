@@ -6,7 +6,7 @@ ms.author: v-omerorhan
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/31/2025
+ms.date: 07/30/2025
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye
 ms.search.validFrom: 2020-02-03
