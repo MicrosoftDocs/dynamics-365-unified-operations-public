@@ -36,7 +36,7 @@ Avoid using the data import/export file share in customizations. If necessary, u
 
 #### Code example to create, read, and delete a file on dixf share
 
-```
+``` X++
 // creating a new file on the dixf share
 str filename = 'FrmStm.txt';
 str expectedContents = 'file contents';
