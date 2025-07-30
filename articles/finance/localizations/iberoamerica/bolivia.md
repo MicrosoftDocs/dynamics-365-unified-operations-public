@@ -6,7 +6,6 @@ ms.author: v-cpicon
 ms.topic: overview
 ms.date: 07/30/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Bolivia
 ms.search.validFrom: 2025-02-11
 ms.dyn365.ops.version: App 10.0.43
