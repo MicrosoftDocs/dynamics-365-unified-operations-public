@@ -30,20 +30,20 @@ Several feature flags enable this functionality with the default status disabled
 
 ## How the check works
 1. When the LedgerDimensionUsageCountCheckFlight is enabled, you can view the status of highly variable dimensions in **General Ledger > Period Close > Year-end close**. Select **Dimension usage count check history** in the action pane.
-2. The system periodically checks the number of distinct values for each dimension by ledger and fiscal year and can be viewed in the **Dimension usage count check history** page.
+2. The system periodically checks the number of distinct values for each dimension by ledger and fiscal year and can be viewed on the **Dimension usage count check history** page.
 3. Dimensions are categorized based on thresholds:
    - Normal: less than 5,000 values
    - PossibleHigh: 5,000 values
    - High: 10,000 values
    - ExtremeHigh: 50,000 values
-4. The check typically covers the most recent two fiscal years, including the current year.
-5. These thresholds and parameters are configurable in the LedgerDimensionUsageCountParameters table.
+4. The thresholds and parameters are configurable in the LedgerDimensionUsageCountParameters table.
+5. The check typically covers the most recent two fiscal years, including the current year.
 6. Results are stored in two tables:
    - LedgerDimensionUsageCountCheckHistory: stores process metadata
    - LedgerDimensionUsageCount: stores counts and categories for each dimension
-7. In the **Dimension usage count check history** page, select **Run dimension usage count check** to run the check and **Delete dimension usage count check** to delete the check. 
+7. On the **Dimension usage count check history** page, select **Run dimension usage count check** to run the check and **Delete dimension usage count check** to delete the check. 
 
-## Scheduled Actions and Services
+## Scheduled actions and aervices
 To keep the data up-to-date, this check runs several automated actions:
 - LedgerDimensionUsageCountScanAction (monthly): Checks for new transactions and flags records for review.
 - LedgerDimensionUsageCountCheckAction (daily): Executes checks on flagged records.
