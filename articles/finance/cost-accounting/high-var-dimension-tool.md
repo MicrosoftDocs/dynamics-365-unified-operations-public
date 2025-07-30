@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Check for highly variable dimensions
-In Dynamics 365 Finance, managing financial dimensions efficiently is crucial for maintaining performance during key processes like year-end close, trial balance reporting, and consolidation. Highly variable dimensions, those with a large number of distinct values, can significantly impact system performance. To address this, a feature was added in Micorsoft Dynamics 365 Finance 10.0.45 that identifies and monitors these dimensions. For more information on highly variable dimensions and how to avoid them, see [Highly variable dimensions](high-var-dimensions.md). 
+In Dynamics 365 Finance, managing financial dimensions efficiently is crucial for maintaining performance during key processes like year-end close, trial balance reporting, and consolidation. Highly variable dimensions, those with a large number of distinct values, can significantly impact system performance. To address this, a feature was added in Microsoft Dynamics 365 Finance 10.0.45 that identifies and monitors these dimensions. For more information on highly variable dimensions and how to avoid them, see [Highly variable dimensions](high-var-dimensions.md). 
 
 ## Purpose of the check
 The system runs a process called LedgerDimensionUsageCountCheckAction to count how many distinct values each financial dimension has used in a fiscal year for each company. This helps users understand which dimensions might be causing performance issues and provides guidance for smoother financial operations.
@@ -43,7 +43,7 @@ Several feature flags enable this functionality with the default status disabled
    - LedgerDimensionUsageCount: stores counts and categories for each dimension
 7. On the **Dimension usage count check history** page, select **Run dimension usage count check** to run the check and **Delete dimension usage count check** to delete the check. 
 
-## Scheduled actions and aervices
+## Scheduled actions and services
 To keep the data up-to-date, this check runs several automated actions:
 - LedgerDimensionUsageCountScanAction (monthly): Checks for new transactions and flags records for review.
 - LedgerDimensionUsageCountCheckAction (daily): Executes checks on flagged records.
