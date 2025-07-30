@@ -1,24 +1,23 @@
 ---
-title: Cash register functionality for France (preview)
-description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
+title: Cash register functionality for France
+description: This article provides an overview of the cash register functionality available for France in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 01/28/2025
+ms.date: 07/29/2025
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: johnmichalak
 ms.search.region: France
 ms.author: ritakimani
 ms.search.validFrom: 2018-02-28
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 # Cash register functionality for France (preview)
 
 [!include [banner](../../../finance/includes/banner.md)]
-[!include [banner](../../../finance/includes/preview-banner.md)]
 
-This article provides an overview of the cash register functionality that is available for France in Microsoft Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
+This article provides an overview of the cash register functionality available for France in Microsoft Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
 
 ## Certification information
 
@@ -34,7 +33,7 @@ An up-to-date certificate can be found on the [portal of the certification body]
 You can also view the certification information in the point of sale (POS) in the **NF 525 certification** dialog. You can open this dialog by selecting **View details** in the **NF 525 certification** section under **France** on the **Settings** page. If France-specific features are [enabled](#enable-features-for-france) in the **Feature management** workspace, and the fiscal registration functionality for France is correctly [enabled and configured](#set-up-fiscal-registration), the **NF 525 certification** dialog shows the certified software name and version, the certification category, and the NF 525 certificate number.
 
  > [!NOTE]
-  > - To comply with NF 525 certification requirements for updating software versions, we use a separate NF 525 specific version. The current NF 525 certified version is **Microsoft Dynamics 365 Commerce, version 10.0**, which maps to the global major Dynamics 365 Commerce version **10.0**. For more information on Microsoft's versioning approach, see [NF 525 compliance documentation](#nf-525-compliance-documentation). 
+  > - To comply with NF 525 certification requirements for updating software versions, Microsoft uses a separate NF 525 specific version. The current NF 525 certified major version is Dynamics 365 Commerce version 10.0, which maps to the global major Dynamics 365 Commerce version 10.0. The specific service update version is Dynamics 365 Commerce version 10.0.40, which corresponds to Store Commerce POS build 9.50.x. Learn more in [NF 525 compliance documentation](#nf-525-compliance-documentation).
   > - Microsoft ensures the authenticity and security of the Dynamics 365 Commerce software through a rigorous code signing process. Each component is digitally signed with a Microsoft certificate, which guarantees that the software has been authored by Microsoft and hasn't been tampered with. This secure signing process provides customers with confidence in the integrity and origin of the software they use.
   > - Microsoft maintains source code for all supported versions of Dynamics 365 Commerce in a secure version control system that is in accordance with the [Microsoft Secure Development Lifecycle](https://www.microsoft.com/securityengineering/sdl). If you need more details about a specific version of Dynamics 365 Commerce, please open a support request and a Microsoft engineer will work with you to provide the required information.
 

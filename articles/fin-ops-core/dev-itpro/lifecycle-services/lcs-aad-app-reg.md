@@ -9,6 +9,7 @@ ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2023-03-22
+ms.custom: sfi-ropc-nochange
 ---
 
 # Dynamics Lifecycle Services API - Authentication

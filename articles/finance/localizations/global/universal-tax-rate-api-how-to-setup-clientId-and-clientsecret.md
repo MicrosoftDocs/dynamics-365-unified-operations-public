@@ -5,14 +5,15 @@ author: Kai-Cloud
 ms.author: hailxu
 ms.topic: overview
 ms.date: 01/20/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: johnmichalak
 audience: Application user
 ms.search.region: Global
 ms.search.validFrom: 2024-02-01
 ms.search.form:
 ms.dyn365.ops.version: 10.0.39 
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Set up a client ID and a client secret

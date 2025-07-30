@@ -5,6 +5,7 @@ title: What's new or changed in Dynamics 365 Human Resources August 9, 2021
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for August 9, 2021.
 author: marcelbf
 ms.date: 08/09/2021
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 # optional metadata
 

@@ -11,6 +11,7 @@ ms.search.region: Global
 ms.search.validFrom: 2018-04-01
 ms.search.form: ERSolutionTable, ERFormatBaselineTable, ERFormatMappingRunLogTable, ERParameters
 ms.dyn365.ops.version: Release 8.0
+ms.custom: sfi-image-nochange
 ---
 
 # Automate testing with Electronic reporting

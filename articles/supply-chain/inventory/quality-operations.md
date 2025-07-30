@@ -50,7 +50,7 @@ For this example, the following operations can be created to represent the work 
 ## Nonconformance operation groups (preview)
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
+<!-- KFM: Preview until 10.0.45 GA -->
 
 Use *nonconformance operation groups* to collect related operations that you can [apply quickly to a nonconformance](tasks/create-process-non-conformance.md) all at once. For example, you might create a group of operations that together describe the steps that your company takes to fix issues with purchased raw materials (research, repair, and retest).
 
@@ -61,7 +61,7 @@ Use *nonconformance operation groups* to collect related operations that you can
 Before you can use nonconformance operation groups, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Manage nonconformance operation groups
 

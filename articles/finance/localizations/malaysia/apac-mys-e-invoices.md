@@ -10,6 +10,9 @@ ms.custom:
 ms.reviewer: johnmichalak
 ms.search.region: Malaysia
 ms.search.validFrom: 2024-05-09
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Get started with electronic invoicing for Malaysia

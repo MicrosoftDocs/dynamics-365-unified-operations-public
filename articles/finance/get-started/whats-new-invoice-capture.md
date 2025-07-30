@@ -4,7 +4,8 @@ description: Learn about features that are either new or changed in Invoice capt
 author: shielas  
 ms.author: shielas
 ms.topic: whats-new
-ms.date: 06/18/2025
+ms.date: 07/18/2025
+ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.custom: 
   - bap-template
@@ -23,6 +24,19 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 [!include [banner](../includes/banner.md)]
 
 This article provides information about the Invoice capture solution that automatically creates vendor invoices from digital invoice images. Learn more in [Invoice capture overview](../accounts-payable/invoice-capture-overview.md).
+
+## July 2025 
+
+The July release of the Invoice capture solution version 1.9.7.x contains the following feature enhancements and bug fixes.
+
+### Bug fixes
+The following bugs were fixed in the July release:
+ - Credit memo amounts might incorrectly appear as positive during the derivation phase when continuous learning is enabled.
+ - Derivation process behaves inconsistently when a custom header field of type Date is added and subsequently removed.
+ - Invoices stuck in a **Processing** or **Time out** states when the AI model couldn't be identified.
+ - Vvendors with the same tax registration number across multiple legal entities aren't derived correctly. The derivation logic has been updated to include the legal entity when resolving vendor accounts.
+ - The item number isn't derived when the invoice line contained a product with variants.
+
 
 ## June 2025
 

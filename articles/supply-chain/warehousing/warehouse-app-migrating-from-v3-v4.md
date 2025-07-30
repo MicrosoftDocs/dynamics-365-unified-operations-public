@@ -24,6 +24,8 @@ For V4, we rewrote the code of the Warehouse Management mobile app by using more
 - **Better customer support capabilities** – Faster issue resolution and customer assistance.
 - **Future-ready architecture** – Streamlined development of new features and integrations.
 
+If you have any feedback about the preview version of this app, please send us email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
+
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## New features in V4
@@ -88,8 +90,8 @@ If you're running a newer version of Android, then we recommend using V4 because
 
 When you migrate from V3 to V4, the following compatibility features are available:
 
-- **Customization preservation** – All customizations and configurations from V3 are fully compatible with V4 and remain functional.
-- **Connection migration** – In most cases, existing connections are automatically migrated. If manual reconfiguration is required, QR code generation and scanning capabilities (camera or beam scanner) are available for easy setup. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
+- **Customizations are preserved** – All customizations and configurations from V3 are fully compatible with V4 and remain functional.
+- **Connection settings can be preserved** – In most cases, your existing connection settings from V3 are automatically migrated when you upgrade to V4. To preserve your connection settings, don't uninstall V3, download the V4 installer to your device, and be sure to select the **Upgrade** option when you run it. If you uninstall V3 and then install V4, your connection settings will be lost. Connection settings are only preserved during an upgrade, not during a fresh installation. If manual reconfiguration is required, QR code generation and scanning capabilities (camera or beam scanner) are available for easy setup. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
 
 ### Authentication
 
@@ -144,3 +146,7 @@ V4, like V3, doesn't support certificate authentication. Users must use the devi
 - **End of support** – May 2026 (estimated).
 - **Feature development** – No new features will be developed for V3.
 - **Maintenance** – Critical bug fixes and security updates continue until the end of support.
+
+### Install Warehouse Management mobile app V4 on Windows
+
+Before you can install the app on Windows, you must install the certificate that is used to sign the app. For instructions, go to [Install Warehouse Management mobile app V4 on Windows (preview)](warehouse-app-install-certificate.md).

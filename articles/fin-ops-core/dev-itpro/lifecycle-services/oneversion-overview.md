@@ -5,13 +5,15 @@ author: angelmarshall
 ms.author: tsmarsha
 ms.topic: overview
 ms.date: 09/29/2023
-ms.custom: bap-template
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2019-3-31
 ms.search.form: 
 ms.dyn365.ops.version: Platform update 24 
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # One Version service updates overview

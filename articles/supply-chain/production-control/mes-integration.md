@@ -59,7 +59,7 @@ To monitor the incoming MES messages to the system, go to **Production control \
 
 All messages for a specific production order are processed in the sequence they are received. However, messages for different production orders may not be processed in the received sequence because batch jobs are processed in parallel. In case of failure, the batch job will attempt to process each message three times before setting it to *Failed* status.
 
-The **Manufacturing execution systems integration** page works in the same way as the **Message processor messages** page and represents very similar functionality. (It even shows MES messages in addition to other types of messages.) For information about how to use either page to review messages, find and fix failed messages, and more, see [Message processor messages page](../supply-chain-dev/message-processor.md#message-processor-page)
+The **Manufacturing execution systems integration** page works in the same way as the **Message processor messages** page and represents very similar functionality. (It even shows MES messages in addition to other types of messages.) For information about how to use either page to review messages, find and fix failed messages, and more, see [Monitor and control message processor messages](../message-processor/message-processor.md).
 
 ## Call the API
 
@@ -103,6 +103,7 @@ For the *report as finished* message, the `_messageType` value is `ProdProductio
 |---|---|---|
 | `ProductionOrderNumber` | Mandatory | String |
 | `ReportFinishedLines` | Mandatory | A list of lines (at least one), each of which contains the payload that is described in the next table |
+| `PrintLabel` | Optional (Requires Supply Chain Management version 10.0.45 or later) | Enum (Yes \| No) |
 
 The following table shows the fields that each line in the `ReportFinishedLines` section of the `ProdProductionOrderReportFinished` message supports.
 
@@ -141,6 +142,7 @@ The following table shows the fields that each line in the `ReportFinishedLines`
 | `ProductVersionId` | Optional | String |
 | `ItemBatchNumber` | Optional | String |
 | `ProductSerialNumber` | Optional | String |
+| `GenerateLicensePlate` | Optional (Requires Supply Chain Management version 10.0.45 or later) | Enum (Yes \| No) |
 | `LicensePlateNumber` | Optional | String |
 | `InventoryStatusId` | Optional | String |
 | `ProductionWarehouseId` | Optional | String |
@@ -266,3 +268,6 @@ For example, you might set up the following alerts to provide feedback about the
 - Create a business event ("Send externally") that is used when a message is *Failed*.
 - Send a notification and email to the IT admin or production floor manager.
 
+## Clean up processed and canceled message processor messages
+
+Over time, processed and canceled messages related to third-party MES systems can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency. Learn more in [Clean up processed and canceled message processor messages](../message-processor/message-processor-cleanup.md).

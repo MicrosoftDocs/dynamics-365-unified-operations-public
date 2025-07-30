@@ -11,6 +11,7 @@ ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 3734bd06-6d4c-42f5-8f2b-30a451189002
+ms.custom: sfi-image-nochange
 ---
 
 # Set up technical support for finance and operations apps 

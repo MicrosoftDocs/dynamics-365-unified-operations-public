@@ -5,6 +5,7 @@ author: kamaybac
 ms.author: kamaybac
 ms.topic: faq
 ms.date: 01/27/2025
+ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac

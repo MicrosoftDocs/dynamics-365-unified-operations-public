@@ -14,6 +14,7 @@ ms.assetid:
 ms.service: dynamics-365-op
 search.app:
   - financeandoperationsonprem-docs
+ms.custom: sfi-image-nochange
 ---
 # Configure SQL Server Reporting Services for on-premises deployments
 

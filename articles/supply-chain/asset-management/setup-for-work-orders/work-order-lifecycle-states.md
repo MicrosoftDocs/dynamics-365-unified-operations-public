@@ -44,7 +44,7 @@ The following table describes the options in the **Work order** and **Schedule**
 To use the role-based access feature (on the **Security roles** FastTab), as described later in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.43 or later.
-- The feature that's named *Role-based access control for work order lifecycle stages* must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Role-based access control for work order lifecycle stages* must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
 
 ## Set up project stages and work order lifecycle states
 
@@ -93,7 +93,7 @@ To use the role-based access feature (on the **Security roles** FastTab), as des
 > [!NOTE]
 > If the lifecycle state that you update a work order to is inactive, journals that are related to the work order but that haven't yet been posted are automatically deleted. This behavior helps guarantee automatic cleanup of unused data. (A lifecycle state is inactive if the **Active** option for it is set to *No* on the **General** FastTab of the **Work order lifecycle state** page.)
 >
-> However, if you manually set a work order so that it's inactive, journals that are related to the work order but that haven't yet been posted are *not* automatically deleted. (To manually inactivate a work order, select **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**. Open the work order, and switch to the **Header** view. On the **General** FastTab, select **Edit**, and then set the **Active** option to *No*.)
+> However, if you manually set a work order so that it's inactive, journals that are related to the work order but that haven't yet been posted are *not* automatically deleted. (To manually deactivate a work order, select **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**. Open the work order, and switch to the **Header** view. On the **General** FastTab, select **Edit**, and then set the **Active** option to *No*.)
 
 ## Relations among work order lifecycle models, work order types, and work order lifecycle states
 

@@ -1,5 +1,5 @@
 ---
-title: Use e-Ledger in the Republic of Türkiye (preview)
+title: Generate e-Ledger
 description: Learn how to use e-Ledger in the Republic of Türkiye.
 author: v-omerorhan 
 ms.author: v-omerorhan 
@@ -13,10 +13,8 @@ ms.dyn365.ops.version: 10.0.9
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ---
 
-# Use e-Ledger in the Republic of Türkiye (preview)
-
+# Generate e-Ledger
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article provides detailed instructions for configuring various parameters for e-Ledger, including parameters for the document type mapping, payment methods for main accounts, exclusion of posting layers, dimensions for main accounts, and the chart of accounts. The article also provides instructions for generating the e-Ledger file and reports.
 

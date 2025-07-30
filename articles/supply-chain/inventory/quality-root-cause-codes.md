@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.45 GA -->
 
 Use *nonconformance root cause codes* to establish standard codes for root causes that are associated with corrections for nonconformance issues that are often encountered at your company. For example, you might create codes for wind damage, water damage, training issues, or other common issues that you encounter. Root cause code give you a consistent way to identify causes that you can apply to the relevant corrective actions.
 
@@ -26,7 +26,7 @@ Use *nonconformance root cause codes* to establish standard codes for root cause
 Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Manage root cause codes
 

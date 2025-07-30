@@ -12,6 +12,7 @@ ms.search.validFrom: 2016-05-31
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 ms.dyn365.ops.version: AX 7.0.1
 ms.assetid: 
+ms.custom: sfi-image-nochange
 ---
 
 # Email ER destination type

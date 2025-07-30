@@ -185,8 +185,8 @@ You can set up as many load build templates as you require. However, to use adva
     | Allow load line split | Specify whether a single load line can be split across multiple loads if the full line exceeds the maximum capacity (**Quantity**) of the load template. | Cleared (= *No*) |
     | Validate volumetrics | Specify whether load building should check the weight and volume as each load line is added, to ensure that the volumetric limits of the load template are respected. | Cleared (= *No*) |
 
-> [!NOTE]
-> The **Allow load line split** field only splits based on a quantity limit, not volume or weight limits. It's different from the **Allow load split during ship confirm** field used by load templates. Learn more at [Confirm and transfer](confirm-and-transfer.md).
+    > [!NOTE]
+    > The **Allow load line split** field only splits based on a quantity limit, not volume or weight limits. It's different from the **Allow load split during ship confirm** field used by load templates. Learn more at [Confirm and transfer](confirm-and-transfer.md).
 
 1. On the Action Pane, select **Save** to make the **Edit query** option available.
 1. On the Action Pane, select **Edit query** to open a dialog box for editing the query.

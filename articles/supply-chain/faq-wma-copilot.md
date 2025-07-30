@@ -5,6 +5,7 @@ author: Mirzaab
 ms.author: mirzaab
 ms.topic: faq
 ms.date: 01/29/2025
+ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac

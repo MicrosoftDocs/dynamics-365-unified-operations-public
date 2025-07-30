@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.45 GA -->
 
 This topic explains how to enable and set up corrective and preventive action (CAPA) management features in Microsoft Dynamics 365 Supply Chain Management.
 
@@ -24,8 +24,8 @@ This topic explains how to enable and set up corrective and preventive action (C
 Before you can use CAPA management features in Supply Chain Management, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-- If you want to require electronic signatures when CAPA cases are closed, the feature that is named *(Preview) Electronic signature improvements* must also be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- If you want to require electronic signatures when CAPA cases are closed, the feature that is named *Electronic signature improvements* must also be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up CAPA parameters
 

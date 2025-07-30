@@ -4,7 +4,8 @@ description: Learn about features that are either new or changed in Microsoft Dy
 author: kamaybac
 ms.author: kamaybac
 ms.topic: whats-new
-ms.date: 04/19/2024
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen
@@ -29,7 +30,6 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Copilot and AI innovation | [Empower users with conversational product help and guidance](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/empower-users-conversational-product-help-guidance) | [Generative help and guidance with Copilot](../../fin-ops-core/fin-ops/copilot/copilot-generative-help.md) | [Enable Copilot capabilities in finance and operations apps](../../fin-ops-core/dev-itpro/copilot/enable-copilot-generative-help.md) |
-| Cost management | [Evaluate discrete manufacturing costs using standard cost](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/evaluate-costs-discrete-manufacturing-using-standard-cost) |  This enhancement for the Global Inventory Accounting enables discrete manufacturing companies to perform parallel inventory accounting practices for standard cost using multiple configurations. Though it's possible to enable this feature in Supply Chain Management 10.0.38, we recommend against doing so until further notice because additional service upgrades are still required (expected in early 2024). | Feature management:<br>*(Preview) Evaluate costs in discrete manufacturing using standard cost in Global Inventory Accounting*  |
 | Inventory and logistics | [Apply compound charges to quotations and sales orders](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/apply-compound-charges-quotations-sales-orders) | [Period charges](../sales-marketing/period-charges.md)<br><br> [Autocharge compounding and sequencing](../sales-marketing/auto-charge-sequence-compound.md)<br><br>[Units of measure for line-level charges](../sales-marketing/line-charges-specific-unit.md) |  <p>Feature&nbsp;management:</p><ul><li>*Period charges*</li><li>*Sequence and compound for customer charges*</li><li>*Unit of measure for line level charges*</li></ul> |
 | Inventory and logistics | [Enhanced order processing in Pricing management](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/enhanced-order-processing-pricing-management) | *Coming soon* | Enabled by default |
 | Inventory and logistics | [Find products and on-hand information by attribute](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/find-products-on-hand-information-attribute) | [Search for products using the Inventory Visibility app](../inventory/inventory-visibility-product-search-app.md)<br><br>[Query with product search](../inventory/inventory-visibility-api.md#product-search-query) (API) | Enabled by default |

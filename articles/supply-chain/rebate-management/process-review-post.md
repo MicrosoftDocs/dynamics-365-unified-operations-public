@@ -3,12 +3,12 @@ title: Process, review, and post rebates
 description: Learn how to process your Rebate management deals, calculate their discounts, review the transactions that are generated.
 author: sherry-zheng
 ms.author: chuzheng
-ms.topic: how-to
-ms.date: 05/15/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: TAMRebateDeal
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+- bap-template
 ---
 
 # Process, review, and post rebates
@@ -30,7 +30,7 @@ You can assign a status to each deal to help track it. The status is for informa
 
 The **Calculate FIFO purchase price** periodic task must be run to calculate the rebates for [deals](rebate-management-deals.md) where the **Price basis** field is set to *FIFO*. The system will use a first in, first out (FIFO) rule to calculate the value of the stock that was sold. This value will then be used to calculate the vendor rebates.
 
-Go to **Rebates management \> Periodic tasks \> Calculate FIFO purchase price**. In the dialog box that appears, select **OK** to run the calculation.
+Go to **Rebates management** \> **Periodic tasks** \> **Calculate FIFO purchase price**. In the dialog box that appears, select **OK** to run the calculation.
 
 ## Create source transactions
 
@@ -42,14 +42,14 @@ You can set up each deal line so that it automatically creates a rebate provisio
 
 Before you can create source transactions, you must enable the **Enable price details** option for account receivables.
 
-1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
+1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Prices** tab, on the **Price details** FastTab, set the **Enable price details** option to *Yes*.
 
 ### Create a source transaction
 
 To create a source transaction, follow these steps.
 
-1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Select **New**.
 
     To mimic the way that rebate claims are generated, you must now create a sales order where the product and quantity qualify the customer for a rebate.
@@ -64,7 +64,7 @@ To create a source transaction, follow these steps.
     - **Site** – Select a site where the product is available, and that qualifies for a rebate deal.
     - **Warehouse** – Select a warehouse where the product is available, and that qualifies for a rebate deal.
 
-1. On the **Sales order lines** FastTab, on the toolbar, select **Sales order line \> Price details**. This command is available only if you enabled price details as described in the previous section.
+1. On the **Sales order lines** FastTab, on the toolbar, select **Sales order line** \> **Price details**. This command is available only if you enabled price details as described in the previous section.
 1. On the **Price details** page, select the **Rebate management** FastTab. This FastTab lists all the rebate management deals that apply to the current order line and shows the estimated rebate amount in the order's currency. The amounts are only estimates of the future rebate claims. The actual rebate amounts might differ. Here are some of the factors that might affect the actual amounts:
 
     - The total sales volume that the customer achieved under a periodic rebate agreement.
@@ -106,9 +106,9 @@ When you process a deal, the system calculates all relevant rebates and royaltie
 1. Select the row for each deal that you want to process (or open the deal that you want to process).
 1. On the Action Pane, on the **Rebate management deals** tab, in the **Generate** group, select one of the following commands:
 
-    - **Process \> Provision** – Provision a set of accruals for each relevant rebate deal, but don't post them. This menu item is unavailable for deals where the **Rebate output** field is set to *Item*.
-    - **Process \> Rebate management** – Process a series of transactions that provide the value of the rebate for each deal.
-    - **Process \> Write off** – For each source transaction for the rebate deal and specified period, process the variance between the amounts that were posted for a provision and for rebate management. This menu item is unavailable for deals where the **Rebate output** field is set to *Item*.
+    - **Process** \> **Provision** – Provision a set of accruals for each relevant rebate deal, but don't post them. This menu item is unavailable for deals where the **Rebate output** field is set to *Item*.
+    - **Process** \> **Rebate management** – Process a series of transactions that provide the value of the rebate for each deal.
+    - **Process** \> **Write off** – For each source transaction for the rebate deal and specified period, process the variance between the amounts that were posted for a provision and for rebate management. This menu item is unavailable for deals where the **Rebate output** field is set to *Item*.
 
 1. In the dialog box that appears, set the **From date** and **To date** fields to define the date range for the calculation.
 1. Select **OK** to run the calculation.
@@ -121,9 +121,9 @@ When you process a deal, the system calculates all relevant rebates and royaltie
 1. On **Rebate management** FastTab, select the row for each deal line that you want to process.
 1. On the toolbar of the **Rebate management** FastTab, select one of the following commands. (These commands are available only for deals where the **Reconcile by** field is set to *Line*.)
 
-    - **Process \> Provision** – Provision a set of accruals for each relevant deal line, but don't post them. This menu item is unavailable for deals where the **Rebate output** field is set to *Item*.
-    - **Process \> Rebate management** – Process a series of transactions that provide the value of the rebate for each deal line.
-    - **Process \> Write off** – For each source transaction for the rebate deal and specified period, process the variance between the amounts that were posted for a provision and for rebate management. This menu item is unavailable for deals where the **Rebate output** field is set to *Item*.
+    - **Process** \> **Provision** – Provision a set of accruals for each relevant deal line, but don't post them. This menu item is unavailable for deals where the **Rebate output** field is set to *Item*.
+    - **Process** \> **Rebate management** – Process a series of transactions that provide the value of the rebate for each deal line.
+    - **Process** \> **Write off** – For each source transaction for the rebate deal and specified period, process the variance between the amounts that were posted for a provision and for rebate management. This menu item is unavailable for deals where the **Rebate output** field is set to *Item*.
 
 1. In the dialog box that appears, set the **From date** and **To date** fields to define the date range for the calculation.
 1. Select **OK** to run the calculation.
@@ -134,9 +134,9 @@ Instead of processing specific deals or deal lines, you can run a batch job to p
 
 1. Follow one of these steps:
 
-    - Go to **Rebate management \> Periodic tasks \> Process \> Provision** to provision a set of accruals for each relevant deal, but without posting them.
-    - Go to **Rebate management \> Periodic tasks \> Process \> Rebate management** to process a series of transactions that provide the value of the rebate for each deal.
-    - Go to **Rebate management \> Periodic tasks \> Process \> Write off** to reverse previously posted transactions to write them off so that new rebate deal transactions can be calculated.
+    - Go to **Rebate management** \> **Periodic tasks** \> **Process** \> **Provision** to provision a set of accruals for each relevant deal, but without posting them.
+    - Go to **Rebate management** \> **Periodic tasks** \> **Process** \> **Rebate management** to process a series of transactions that provide the value of the rebate for each deal.
+    - Go to **Rebate management** \> **Periodic tasks** \> **Process** \> **Write off** to reverse previously posted transactions to write them off so that new rebate deal transactions can be calculated.
 
 1. In the dialog box that appears, on the **Parameters** FastTab, in the **Period** section, set the **From date** and **To date** fields to define the date range for transactions for the calculation.
 1. In the **Guarantee Period** section, set the **From date** and **To date** fields to define the date range for guarantees for the calculation.
@@ -150,12 +150,12 @@ Instead of processing specific deals or deal lines, you can use the *rebate work
 
 To process deals by using the rebate workbench, follow these steps.
 
-1. Go to **Rebate management \> Rebate management deals \> Rebate workbench**.
+1. Go to **Rebate management** \> **Rebate management deals** \> **Rebate workbench**.
 1. On the Action Pane, on the **Rebate workbench** tab, in the **Processing** group, select one of the following commands:
 
-    - **Process \> Provision** – Provision a set of accruals for each relevant deal line, but don't post the accruals.
-    - **Process \> Rebate management** – Process a series of transactions that provide the value of the rebate for each deal line.
-    - **Process \> Write off** – Process the variance between provision and rebate management that is posted for each source transaction per rebate deal and specified period.
+    - **Process** \> **Provision** – Provision a set of accruals for each relevant deal line, but don't post the accruals.
+    - **Process** \> **Rebate management** – Process a series of transactions that provide the value of the rebate for each deal line.
+    - **Process** \> **Write off** – Process the variance between provision and rebate management that is posted for each source transaction per rebate deal and specified period.
 
 1. In the **Rebate management** dialog box, in the **Period** section, set the **From date** and **To date** fields to define the date range for the calculation.
 1. In the **Guarantee period** section, set the **From date** and **To date** fields to define the date range for guarantees for the calculation.
@@ -184,10 +184,10 @@ To view and edit Rebate management transactions using the rebate deals list page
     - To view any reductions that apply, select **Reduction transactions** on the Action Pane. Learn more in [Rebate reduction principles](rebate-reduction-principle.md).
     - To mark transactions as either claimed or unclaimed if you're using a claims process, select the relevant rows, and then, on the Action Pane, select one of the following commands. (You enable claims processes on the [**Rebate management parameters** page](rebate-management-parameters.md).)
 
-        - **Set claimed \> All** – Mark all transactions as claimed.
-        - **Set claimed \> Selected** – Mark the selected transactions as claimed.
-        - **Set unclaimed \> All** – Mark all transactions as unclaimed.
-        - **Set unclaimed \> Selected** – Mark the selected transactions as unclaimed.
+        - **Set claimed** \> **All** – Mark all transactions as claimed.
+        - **Set claimed** \> **Selected** – Mark the selected transactions as claimed.
+        - **Set unclaimed** \> **All** – Mark all transactions as unclaimed.
+        - **Set unclaimed** \> **Selected** – Mark the selected transactions as unclaimed.
 
     - Select **Post** on the Action Pane to post the claim for all the relevant lines. If you're using a claims process (when the **Use claim process** option is enabled on the **Rebate management parameters** page), only the lines that are marked as **Claimed** are posted. Otherwise, all the source transactions for the selected rebate transaction are posted. The **Post** button is available only for rebate transactions. It's unavailable for provision and write-off transactions. In the **Post** dialog box, the **From date** and **To date** fields are automatically set. Set the **Posting date** field, and then select **OK**.
     - To adjust the amount that is shown for any open or unposted transaction, select the transaction, and then follow one of these steps:
@@ -202,7 +202,7 @@ To view and edit Rebate management transactions using the rebate deals list page
 
 To view and edit Rebate management transactions by using the rebate workbench, follow these steps.
 
-1. Go to **Rebate management \> Rebate management deals \> Rebate workbench**.
+1. Go to **Rebate management** \> **Rebate management deals** \> **Rebate workbench**.
 1. Set the **Show** field to *Not posted*.
 1. The **Rebate workbench** page shows a list of the transactions. Each transaction provides relevant details. These details vary, depending on the transaction type. You can perform the following actions on this page:
 
@@ -230,7 +230,7 @@ Sometimes, vendor rebate deals are listed over multiple lines (for example, beca
 Before you can set your system to consolidate vendor invoices, it must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
-- The feature that is named *Consolidate vendor invoices for the same vendor in vendor rebate deals* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Consolidate vendor invoices for the same vendor in vendor rebate deals* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
 
 #### How vendor invoice consolidation works
 
@@ -251,7 +251,7 @@ The following procedure explains how to view the effects of vendor invoice conso
 
     :::image type="content" source="media/vendor-invoice-journal-without-consolidation.png" alt-text="Screenshot showing a vendor invoice journal without consolidation." lightbox="media/vendor-invoice-journal-without-consolidation.png":::
 
-    With vendor consolidation, there is just one vendor line that has multiple ledger lines, as shown in the following screenshot. This consolidation makes it easier for businesses to consolidate and send rebate output to their vendors and to report in the rebate related journals.
+    With vendor consolidation, there's just one vendor line that has multiple ledger lines, as shown in the following screenshot. This consolidation makes it easier for businesses to consolidate and send rebate output to their vendors and to report in the rebate related journals.
 
     :::image type="content" source="media/vendor-invoice-journal-with-consolidation.png" alt-text="Screenshot showing a vendor invoice journal with consolidation." lightbox="media/vendor-invoice-journal-with-consolidation.png":::
 
@@ -271,9 +271,9 @@ After you've processed the relevant deals, follow these steps to review and post
 1. Select the row for each deal that you want to post (or open the deal that you want to post).
 1. On the Action Pane, on the **Rebate management deals** tab, in the **Generate** group, select one of the following commands:
 
-    - **Post \> Provision** – Post available accruals transactions that you've created.
-    - **Post \> Rebate management** – Post available rebate transactions that you've created.
-    - **Post \> Write off** – Post available write-off transactions that you've created.
+    - **Post** \> **Provision** – Post available accruals transactions that you've created.
+    - **Post** \> **Rebate management** – Post available rebate transactions that you've created.
+    - **Post** \> **Write off** – Post available write-off transactions that you've created.
 
 1. In the dialog box that appears, set the **Posting date** field. Then set the **From date** and **To date** fields to define the date range for the transactions that must be posted.
 1. Select **OK** to post the transactions.
@@ -288,9 +288,9 @@ After you've processed the relevant deals, follow these steps to review and post
 1. On **Rebate management** FastTab, select the row for each deal line that you want to post.
 1. On the toolbar of the **Rebate management** FastTab, select one of the following commands. (These commands are available only for deals where **Reconcile by** is set to *Line*.)
 
-    - **Post \> Provision** – Post available accruals transactions that you've created.
-    - **Post \> Rebate management** – Post available rebate transactions that you've created.
-    - **Post \> Write off** – Post available write-off transactions that you've created.
+    - **Post** \> **Provision** – Post available accruals transactions that you've created.
+    - **Post** \> **Rebate management** – Post available rebate transactions that you've created.
+    - **Post** \> **Write off** – Post available write-off transactions that you've created.
 
 1. In the dialog box that appears, set the **Posting date** field. Then set the **From date** and **To date** fields to define the date range for the transactions that must be posted.
 1. Select **OK** to post the transactions.
@@ -301,9 +301,9 @@ Instead of posting transactions for specific deals or deal lines, you can run a 
 
 1. Follow one of these steps:
 
-    - Go to **Rebate management \> Periodic tasks \> Post \> Provision** to post available accrual transactions that you've created.
-    - Go to **Rebate management \> Periodic tasks \> Post \> Rebate management** to post available rebate transactions that you've created.
-    - Go to **Rebate management \> Periodic tasks \> Post \> Write off** to post available write-off transactions that you've created.
+    - Go to **Rebate management** \> **Periodic tasks** \> **Post** \> **Provision** to post available accrual transactions that you've created.
+    - Go to **Rebate management** \> **Periodic tasks** \> **Post** \> **Rebate management** to post available rebate transactions that you've created.
+    - Go to **Rebate management** \> **Periodic tasks** \> **Post** \> **Write off** to post available write-off transactions that you've created.
 
 1. In the dialog box that appears, on the **Parameters** FastTab, in the **Period** section, set the **Posting date** field. Then set the **From date** and **To date** fields to define the date range for the transactions that must be posted.
 1. In the **Guarantee Period** section, set the **From date** and **To date** fields to define the date range for the guarantees that must be posted.
@@ -315,7 +315,7 @@ Instead of posting transactions for specific deals or deal lines, you can run a 
 
 After you've processed provision, rebate, or write-off transactions, follow these steps to use the rebate workbench to review and post the generated transactions for one or more specific transaction lines for all deals.
 
-1. Go to **Rebate management \> Rebate management deals \> Rebate workbench**.
+1. Go to **Rebate management** \> **Rebate management deals** \> **Rebate workbench**.
 1. In the grid, select the row for each transaction line that you want to post. You can select unposted provision, rebate, and/or write-off transactions. The following rules apply:
 
     - The system will also post all lines that have the same **Rebate transaction number** value as the lines that you select.
@@ -350,7 +350,7 @@ To review the journal entries that are associated with a Rebate management deal,
 
 To review journals by using the rebate workbench, follow these steps.
 
-1. Go to **Rebate management \> Rebate management deals \> Rebate workbench**.
+1. Go to **Rebate management** \> **Rebate management deals** \> **Rebate workbench**.
 1. Set the **Show** field to *All* or *Posted*.
 1. Find and select the line that you want to inspect. Then, on the Action Pane, on the **Rebate workbench** tab, in the **View** group, select **Target transactions**. This button is available only if relevant postings exist for the selected line.
 1. A list of relevant journals, documents, or items appears. To view more information about any journal, document, or item, select its row, and then, on the Action Pane, select **View details**.
@@ -364,7 +364,7 @@ When you post a Rebate management transaction that has one of the following **Pa
 - Trade spending
 - Reporting
 
-After a target transaction is created and posted, it will be available as an open transaction on the **Deduction workbench** page (**Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**). Open transactions have a **Claim type** value of *Rebate management*, and a **Rebate transaction number** value is available to enable traceability. The date is set to the posting date of the Rebate management target transaction. To use the deduction workbench to settle open transactions to existing deductions for the same customer account, select **Maintain \> Match** on the Action Pane.
+After a target transaction is created and posted, it will be available as an open transaction on the **Deduction workbench** page (**Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**). Open transactions have a **Claim type** value of *Rebate management*, and a **Rebate transaction number** value is available to enable traceability. The date is set to the posting date of the Rebate management target transaction. To use the deduction workbench to settle open transactions to existing deductions for the same customer account, select **Maintain** \> **Match** on the Action Pane.
 
 Learn more in [Manage deductions using the deduction workbench](deduction-workbench.md).
 
@@ -372,7 +372,7 @@ Learn more in [Manage deductions using the deduction workbench](deduction-workbe
 
 After you've processed provision, rebate, or write-off transactions, follow these steps to purge selected unposted transactions.
 
-1. Go to **Rebate management \> Rebate management deals \> Rebate workbench**.
+1. Go to **Rebate management** \> **Rebate management deals** \> **Rebate workbench**.
 2. Set the **Show** field to *Not posted*.
 3. Find and select the transactions to delete. Then, on the Action Pane, on the **Rebate workbench** tab, in the **Processing** group, select **Purge**.
 4. Select **OK** to delete the unposted transactions.
@@ -381,7 +381,7 @@ After you've processed provision, rebate, or write-off transactions, follow thes
 
 After you've processed and posted a provision, follow these steps to cancel the posted provision transactions.
 
-1. Go to **Rebate management \> Rebate management deals \> Rebate workbench**.
+1. Go to **Rebate management** \> **Rebate management deals** \> **Rebate workbench**.
 2. Set the **Show** field to *Posted*.
 3. Find and select the provision transactions to cancel. Then, on the Action Pane, on the **Rebate workbench** tab, in the **Processing** group, select **Cancel provision**.
 4. Select **OK** to reverse the transactions.
