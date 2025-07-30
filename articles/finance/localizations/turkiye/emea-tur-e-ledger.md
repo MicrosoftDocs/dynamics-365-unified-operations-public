@@ -4,7 +4,7 @@ description: Learn how to work with e-Ledger for the Republic of Türkiye in Mic
 author: v-omerorhan 
 ms.author: v-omerorhan 
 ms.topic: how-to
-ms.date: 07/28/2025 
+ms.date: 07/30/2025 
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye 
 ms.search.validFrom: 2020-02-03 
