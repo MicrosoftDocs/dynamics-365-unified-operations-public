@@ -69,8 +69,8 @@ After you've created the lifecycle states that are required for your maintenance
     - **Maintenance request types** – Shows the number of maintenance request types that use this lifecycle model.
 
 1. On the **Lifecycle states** FastTab, move all of the lifecycle states that should be included in this lifecycle model into the **Lifecycle states selected** column.
-    - Use the buttons between the columns to move one or more selected lifecycle states between the columns.
-    - When a user changes the lifecycle state of a maintenance request, the states are displayed in the same order shown in the **Lifecycle states selected** column, which should indicate the way maintenance requests typically progress from start to finish. Use the up and down buttons next to the **Lifecycle states selected** column to adjust the order of the lifecycle states.
+    - Use the buttons between the columns to move one or more selected lifecycle states from one column to the other.
+    - When a user changes the lifecycle state of a maintenance request, the states are displayed in the order shown in the **Lifecycle states selected** column, which should indicate the way maintenance requests typically progress from start to finish. Use the up and down buttons next to the **Lifecycle states selected** column to adjust the order of the lifecycle states.
 
 1. If you use depot repair, then the **General** FastTab is shown. Make the following settings here:
     - **Lifecycle state for asset received** – Select the asset lifecycle state that assets selected on a maintenance request should automatically be updated to when they're received for depot repair.
