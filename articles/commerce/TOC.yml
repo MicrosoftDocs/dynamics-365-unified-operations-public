@@ -1338,6 +1338,8 @@
             href: customize-site-navigation.md
           - name: Create a page URL
             href: create-page-URL.md
+          - name: Redirect category and product pages to canonical URLs (preview)
+            href: e-commerce-extensibility/add-custom-redirect.md
         - name: Adventure Works theme
           items:
           - name: Adventure Works theme overview
