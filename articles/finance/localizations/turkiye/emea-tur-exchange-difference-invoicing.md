@@ -1,24 +1,24 @@
 ---
-title: Use Exchange difference invoicing
-description: Learn about how to use exchange difference invoicing for the Republic of Türkiye.
+title: Use exchange difference invoicing
+description: Learn how to configure and use exchange difference invoicing for the Republic of Türkiye in Microsoft Dynamics 365 Finance.
 author: v-omerorhan 
 ms.author: v-omerorhan
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 04/24/2024
+ms.date: 07/30/2025
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye
 ms.search.validFrom: 2020-02-03
 ms.search.form: ExchangeDifferenceInvoicing
-ms.dyn365.ops.version: 10.0.9
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ---
 
-# Use Exchange difference invoicing
+# Use exchange difference invoicing
+
 [!INCLUDE[banner](../../includes/banner.md)]
 
-This article explains how you must create and process exchange difference invoices in the Republic of Türkiye because of the behavior of the floating exchange rate system.
+This article explains how to configure and use exchange difference invoicing for the Republic of Türkiye in Microsoft Dynamics 365 Finance.
 
 Exchange difference invoices must reflect the difference between the exchange rate at the time of invoicing and the exchange rate at the time of payment. In Türkiye, the requirement to create an exchange difference invoice comes from the behavior of the floating exchange rate system. In that system, the exchange rate at the time of invoicing might differ from the exchange rate at the time of payment. As a result, the amount in Turkish lira differs, even if the foreign exchange amount remains the same.
 
@@ -32,7 +32,7 @@ This section explains how to configure the system so that you can create exchang
 
 ### Exchange difference invoicing parameters
 
-To configure exchange difference invoicing, use the **Exchange difference invoicing parameters** page (**Accounts payable** or **Accounts receivable** \> **Setup** \> **Exchange difference invoicing** \> **Exchange difference invoicing parameters**). The fields that you must set are divided among several tabs.
+To configure exchange difference invoicing in Dynamics 365 Finance, go to the **Exchange difference invoicing parameters** page (**Accounts payable** or **Accounts receivable** \> **Setup** \> **Exchange difference invoicing** \> **Exchange difference invoicing parameters**). The fields that you must set are divided among several tabs.
 
 The following table describes the fields on the **General** tab.
 
@@ -197,27 +197,21 @@ The following table describes the fields in the **Settled transactions** section
 
 ## Create an exchange difference invoice
 
-This section explains how to create an exchange difference invoice.
-
 To create a new exchange difference invoice, follow these steps.
 
-1. Go to **Accounts payable** or **Accounts receivable** \> **Periodic tasks** \> **Exchange difference invoicing**.
+1. In Dynamics 365 Finance, go to **Accounts payable** or **Accounts receivable** \> **Periodic tasks** \> **Exchange difference invoicing**.
 1. Select **New**, and then select either **Exchange difference invoices for vendors** or **Exchange difference invoices for customers**.
 1. In the **Date** field, select a date.
 1. Set the **Default invoice prefix** option to **Yes** or **No**.
-
     - If you set it to **Yes**, the serial prefix is automatically selected in the **Invoice serial** field, based on the **Default prefix** value that is selected on the **Preprinted serial numbers** page.
     - If you set it to **No**, you must manually select the serial prefix in the **Invoice serial** field. Learn more in [Use serial numbering](emea-tur-serial-numbering.md).
-
 1. Select or change the other filtering parameters.
 1. Select **OK**.
 1. After the exchange difference invoices are listed on the **Exchange difference invoicing** page, select the **Edit** button to update the fields.
 1. In the **Exchange difference type** field, select one of the following values:
-
     - **Pending invoice** – Delay invoicing until the following months. However, perform regular revaluation, and generate vouchers and vendor transactions for the next day. Corrections are made at the end of the period.
     - **Exchange difference invoice** – Create an invoice transaction that can be invoiced either immediately or later. The vendor and customer are reconciled with the invoice, based on these records. When the customer or vendor invoices or advance payments are transferred to other periods, the transfer date of the exchange rate should match the invoice date. The standard foreign currency revaluation should then be run on the transfer date.
     - **Revaluate and close** – No invoice is issued if the other party doesn't accept it, or if you don't want to invoice. Settlement is done by using the standard currency revaluation function. When **Revaluate and close** is selected, the penny differences are closed again by posting again. The amount that remains when the settled transactions are listed for the customer or the vendor doesn't come for exchange difference invoicing.
-
 1. In the **Invoice serial** field, select a serial prefix. If a serial prefix was automatically selected, you can manually change it.
 1. In the **Invoice description** field, enter a description as required.
 1. In the **Sales tax group** field, select a value.
@@ -227,8 +221,6 @@ To create a new exchange difference invoice, follow these steps.
 1. Select **OK**.
 
 ## Edit an exchange difference invoice
-
-This section explains how to edit an exchange difference invoice.
 
 You can use the **Date** field to manually change the posting date of exchange difference invoices. To calculate the tax amount for the exchange difference invoice, you must select a sales tax group and an item sales tax group.
 
@@ -259,17 +251,23 @@ When you reconcile invoices, payments, and collections with customers and vendor
 
 This section explains how to print the Excel reports from the **Exchange difference invoicing** page.
 
-- **Exchange rate adjustment** – You can print this report after the exchange difference invoice is posted. To print it, follow these steps:
+### Print the exchange rate adjustment report
 
-    1. Go to **Accounts payable** or **Accounts receivable** \> **Periodic tasks** \> **Exchange difference invoicing**.
-    1. Select an exchange difference invoice that was posted.
-    1. On the Action Pane, on the **Invoice** tab, in the **Document** group, select **Exchange rate adjustment**.
+You can print the exchange rate adjustment report after the exchange difference invoice is posted.
 
-- **Exchange adjustment statement** – To print this report, follow these steps:
+To print the exchange rate adjustment, follow these steps:
 
-    1. Go to **Accounts payable** or **Accounts receivable** \> **Periodic tasks** \> **Exchange difference invoicing**.
-    1. Select an exchange difference invoice that wasn't posted.
-    1. On the Action Pane, on the **Invoice** tab, in the **Document** group, select **Exchange adjustment statement**.
+1. In Dynamics 365 Finance, go to **Accounts payable** or **Accounts receivable** \> **Periodic tasks** \> **Exchange difference invoicing**.
+1. Select an exchange difference invoice that was posted.
+1. On the Action Pane, on the **Invoice** tab, in the **Document** group, select **Exchange rate adjustment**.
+
+### Print the exchange adjustment statement report
+
+To print the exchange adjustment statement report, follow these steps:
+
+1. In Dynamics 365 Finance, go to **Accounts payable** or **Accounts receivable** \> **Periodic tasks** \> **Exchange difference invoicing**.
+1. Select an exchange difference invoice that wasn't posted.
+1. On the Action Pane, on the **Invoice** tab, in the **Document** group, select **Exchange adjustment statement**.
 
 When the **Exchange adjustment statement** report is printed, the **Reconciliation statement sent** field is marked, and the **Approve** button becomes available in the **Exchange difference invoice** section. If you select **Approve**, the **Approved** and **Approved date** fields are set.
 
@@ -278,5 +276,7 @@ When the **Exchange adjustment statement** report is printed, the **Reconciliati
 >
 > - Before you can post the exchange difference invoice, you must select **Approve** for it in the **Exchange difference invoice** section.
 > - To roll back the exchange difference invoice, select **Reset approval**.
+
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
