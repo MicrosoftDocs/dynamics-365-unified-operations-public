@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 07/30/2025
 ms.custom: 
   - bap-template
 ---
@@ -45,7 +45,7 @@ To view, create, edit, or delete a time fence, follow these steps.
     - To create a new time fence, select **New** on the Action Pane.
     - To edit an existing time fence, select the link in the **Name** column.
     - To delete a time fence, select the row for it, and then, on the Action Pane, select **Delete**.
-    - To view and edit inactive time fences, select the **Active time fence rules** heading, and then select **Inactive time fence rules** in the dropdown list. <!-- KFM: No longer true? On my Aurora build, these does nothing and inactive time fences are shown in the Active time fence rules view. Remove this? -->
+    - To view and edit inactive time fences, select the **Active time fence rules** heading, and then select **Inactive time fence rules** in the dropdown list.
 
 1. If you chose to edit a time fence in the previous step, a tabbed window appears. If you choose to create a new time freeze, then a wizard launches, which offers similar settings. On the **Summary** edit tab (or **Get started** wizard page), set the following fields:
 

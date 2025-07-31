@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: whats-new
-ms.date: 06/17/2025
+ms.date: 07/30/2025
 ms.custom: 
   - bap-template
 ---

@@ -4,7 +4,7 @@ description: Learn how to set up users, security roles, and row-level security f
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 07/30/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:

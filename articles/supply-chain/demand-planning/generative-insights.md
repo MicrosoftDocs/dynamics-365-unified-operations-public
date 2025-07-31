@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 07/30/2025
 ms.custom: 
   - bap-template
 ---
@@ -16,8 +16,6 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
-
-<!-- KFM: Any setup needed to enable this feature? Or is it OOB? -->
 
 *Generative insights* offers detailed insights calculated using AI models. It currently supports two metrics: *seasonality* and *signal correlation*. The system clusters forecast data based on distinct patterns found for each metric.
 

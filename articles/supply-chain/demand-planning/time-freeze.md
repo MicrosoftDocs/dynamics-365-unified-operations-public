@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 07/30/2025
 ms.custom: 
   - bap-template
 ---
@@ -14,8 +14,6 @@ ms.custom:
 # Limit automatic time series updates with time freezes
 
 [!include [banner](../includes/banner.md)]
-
-<!-- KFM: This is based on a copy of the time fence article with freeze pasted in everywhere. Careful review needed. -->
 
 *Time freezes* let planners define rules that prevent the system from automatically updating selected cells in existing time series when a forecast gets recalculated (such as when you use [rolling forecasts](rolling-forecasts.md) or when you manually rerun a forecast to update an existing time series). Time freezes are similar to [time fences](time-fences.md), which are used to prevent users from *manually* editing certain time series values. However, time freezes only prevent *automated* updates that would otherwise occur when you rerun a forecast; users can still edit those values manually in the time series.
 
@@ -38,7 +36,7 @@ To view, create, edit, or delete a time freeze, follow these steps.
     - To create a new time freeze, select **New** on the Action Pane.
     - To edit an existing time freeze, select the link in the **Name** column.
     - To delete a time freeze, select the row for it, and then, on the Action Pane, select **Delete**.
-    - To view and edit deactivated time freezes, select the **Active time freeze rules** heading, and then select **Inactive time freeze rules** in the dropdown list. Other views are also available here, including views for viewing only daily, monthly, or weekly time freeze rules. <!-- KFM: No longer true? On my Aurora build, these do nothing and inactive time fences are shown in the Active time fence rules view. Remove this? -->
+    - To view and edit deactivated time freezes, select the **Active time freeze rules** heading, and then select **Inactive time freeze rules** in the dropdown list. Other views are also available here, including views for viewing only daily, monthly, or weekly time freeze rules.
 
 1. If you chose to edit a time freeze in the previous step, a tabbed window appears. If you choose to create a new time freeze, then a wizard launches, which offers similar settings. On the **Summary** edit tab (or **Get started** wizard page), set the following fields:
 
@@ -70,4 +68,4 @@ As mentioned, you must explicitly configure each relevant *Forecast* and *Foreca
 1. Create the time freeze record that you want to use, as described in the previous sections of this article.
 1. Create or open a relevant forecast profile as described in [Work with forecast profiles](forecast-profiles.md).
 1. On the **Forecast model** tab, crate or select the step that you want to add a time freeze to. The step must be a *Forecast* or *Forecast with signals* step. (Learn more in [Design forecast models](design-forecast-models.md).) If you're editing an existing step, open the **Actions** menu for the step and then select **Settings**.
-1. Use the **Time freeze rules** field to search for and select the time freeze that you want to apply to the step. You can select multiple time freezes if needed. <!-- KFM: We should maybe describe what happens when you use more than one time freeze (what is the combination logic?)-->
+1. Use the **Time freeze rules** field to search for and select the time freeze that you want to apply to the step. You can select multiple time freezes if needed.
