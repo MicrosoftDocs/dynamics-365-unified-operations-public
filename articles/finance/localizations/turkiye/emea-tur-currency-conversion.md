@@ -1,15 +1,14 @@
 ---
 title: Use currency conversion
-description: Learn how to use currency conversion on free text invoices and purchase orders in the Republic of Türkiye. 
+description: Learn how to use currency conversion on free text invoices and purchase orders for the Republic of Türkiye in Microsoft Dynamics 365 Finance. 
 author: v-omerorhan 
 ms.author: v-omerorhan 
-ms.topic: overview 
-ms.date: 04/25/2025 
+ms.topic: how-to
+ms.date: 07/30/2025 
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye 
 ms.search.validFrom: 2020-02-03 
 ms.search.form: CurrencyConversion 
-ms.dyn365.ops.version: 10.0.9 
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ---
 
@@ -17,7 +16,7 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-This article explains how to use the currency conversion feature for the Republic of Türkiye in Microsoft Dynamics 365 Finance.
+This article explains how to use currency conversion on free text invoices and purchase orders for the Republic of Türkiye in Microsoft Dynamics 365 Finance. 
 
 In Türkiye, an order that is issued in Turkish lira can be invoiced in a different currency. However, according to local legislation, the invoice must also include the equivalent amount in Turkish lira. This amount must be calculated by using the exchange rate of the Central Bank of the Republic of Türkiye (CBRT).
 
@@ -31,7 +30,7 @@ This section explains how to use currency conversion on free text invoices.
 
 To manually update the exchange rate on a free text invoice, follow these steps.
 
-1. Go to **Accounts payable** \> **Invoices** \> **All free text invoices**.
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Invoices** \> **All free text invoices**.
 1. Select the free text invoice that you want to change the exchange rate for.
 1. In the **Currency** field, change the currency as required.
 1. On the **Header** tab, on the **Payment** FastTab, in the **Fixed exchange rate** section, set the following fields:
@@ -60,7 +59,7 @@ This section explains how to use currency conversion on purchase orders.
 
 To manually update the exchange rate on a purchase order, follow these steps.
 
-1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Select the purchase order that you want to change the exchange rate for.
 1. On the **Header** tab, on the **Price and discount** FastTab, in the **Currency** section, in the **Currency** field, change the currency as required.
 1. In the **Fixed exchange rate** section, set the following fields:
@@ -79,8 +78,6 @@ After posting, the vendor invoice totals and voucher transaction totals are reca
 If the purchase order that has an updated exchange rate includes any charges, the exchange rate change also affects the charge amounts on the vendor invoice and in the accounting voucher transactions.
 
 > [!NOTE]
-> Negative values aren't allowed in the **Exchange rate** and **Reporting exchange rate** fields for free text invoices and purchase orders. If you enter negative values in these fields, you receive the following warning message:
->
-> > Field 'Exchange rate'(= -x) can only contain positive numbers.
+> - Negative values aren't allowed in the **Exchange rate** and **Reporting exchange rate** fields for free text invoices and purchase orders. If you enter negative values in these fields, you receive the following warning message: **Field 'Exchange rate'(= -x) can only contain positive numbers**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

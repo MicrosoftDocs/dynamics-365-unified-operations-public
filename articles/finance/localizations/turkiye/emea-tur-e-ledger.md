@@ -1,22 +1,22 @@
 ---
-title: Generate e-Ledger
-description: Learn how to use e-Ledger in the Republic of Türkiye.
+title: Work with e-Ledger
+description: Learn how to work with e-Ledger for the Republic of Türkiye in Microsoft Dynamics 365 Finance.
 author: v-omerorhan 
 ms.author: v-omerorhan 
-ms.topic: overview 
-ms.date: 05/23/2025 
+ms.topic: how-to
+ms.date: 07/30/2025 
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye 
 ms.search.validFrom: 2020-02-03 
 ms.search.form: ELedger 
-ms.dyn365.ops.version: 10.0.9 
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ---
 
-# Generate e-Ledger
+# Work with e-Ledger
+
 [!INCLUDE[banner](../../includes/banner.md)]
 
-This article provides detailed instructions for configuring various parameters for e-Ledger, including parameters for the document type mapping, payment methods for main accounts, exclusion of posting layers, dimensions for main accounts, and the chart of accounts. The article also provides instructions for generating the e-Ledger file and reports.
+This article explains how to work with e-Ledger for the Republic of Türkiye in Microsoft Dynamics 365 Finance, including configuring various parameters and generating files and reports.
 
 E-Ledger is a legal and technical framework that collects general ledger records in a journal book and helps prepare mandatory books in electronic format in the Republic of Türkiye. These books must adhere to the specified formats and standards to ensure their immutability, integrity, and source accuracy, and to ensure that they can be used as evidence before authorities. The framework uses the internationally adopted eXtensible Business Reporting Language (XBRL) standard for electronic preparation.
 
@@ -52,9 +52,9 @@ The following table describes the e-Ledger ER configurations.
 | 5 | XBRL GL (TR) (XML) | Format (exporting) | This electronic format implements the XBRL taxonomy that standardizes financial and business information in Türkiye. |
 | 6 | General ledger data model mapping | Model mapping | This model mapping is used to extract and structure financial data from Dynamics 365 for the generation of regulatory and statutory reports such as e-Ledger and SAF-T. |
 
-For the **XBRL GL (TR) (XML)** format, you must follow these steps to configure application-specific parameters.
+To configure application-specific parameters for the **XBRL GL (TR) (XML)** format, follow these steps.
 
-1. In the **Electronic reporting** workspace, select **Reporting configurations**.
+1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace and select **Reporting configurations**.
 1. Select the **XBRL GL (TR) (XML)** configuration, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 1. On the **Application specific parameters** page, on the **Lookups** FastTab, in the **Name** field, select **ELedgerSetup_Lookup**.
 1. On the **Conditions** FastTab, set the following fields.
@@ -190,9 +190,7 @@ To configure this mapping, select the appropriate financial dimension in the **D
 
 ## Generate the e-Ledger file and reports
 
-This section provides detailed information about the steps that are used to generate the e-Ledger file and statutory reports in Dynamics 365 Finance.
-
-Here is an overview of the steps:
+To generate the e-Ledger file and statutory reports, follow these steps.
 
 1. **Update the period status.** The status of the relevant ledger calendar period must be changed to **On hold**.
 1. **Assign journal item numbers.** This step involves enumerating journal entries from the beginning of the year. Journal item numbering must be done after the period is on hold or closed.
@@ -223,7 +221,9 @@ The **Statutory ledgers** FastTab on the **e-Ledger and statutory** page provide
 
 Before an e-Ledger file can be generated, the status of the related ledger calendar period must be changed to **On hold**.
 
-1. Go to **General ledger** \> **Calendars** \> **Ledger calendars**.
+To change the status of the ledger calendar period, follow these steps.
+
+1. In Dynamics 365 Finance, go to **General ledger** \> **Calendars** \> **Ledger calendars**.
 1. Select **Calendar**.
 1. Select **Fiscal year**.
 1. Select the period that you want to generate an e-Ledger file for.
@@ -241,7 +241,9 @@ This section explains how to assign journal item numbers to the voucher transact
 
 Each journal item must have a unique number that is assigned according to dates. The journal item numbering process is managed on the **e-Ledger and statutory ledger** page. Application of the process requires that journal item numbering is completed for all periods, starting from the beginning of the year. Journal item numbering should also be done for period 0 (the **Opening** period), and the first item number should be assigned to the opening voucher. If the e-Ledger is generated based on branches, journal item numbering must be applied separately for each branch.
 
-1. Go to **General ledger** \> **Period close** \> **e-Ledger and statutory ledger**.
+To sssign journal item numbers, follow these steps.
+
+1. In Dynamics 365 Finance, go to **General ledger** \> **Period close** \> **e-Ledger and statutory ledger**.
 1. On the Action Pane, on the **Statutory ledger** tab, in the **Ledger item number** group, select **Assign journal item numbers** to create the ledger items and assign a unique number to each voucher transaction in the e-Ledger.
 
 The following table describes the fields in the dialog that appears when you select **Assign journal item numbers**.
@@ -414,7 +416,7 @@ After all vouchers are submitted, and the data for the relevant period is confir
 
 To generate the e-Ledger file, follow these steps.
 
-1. Go to **General ledger** \> **Calendars** \> **Ledger calendars**.
+1. In Dynamics 365 Finance, go to **General ledger** \> **Calendars** \> **Ledger calendars**.
 1. Update the status of the specific period from **On hold** to **Permanently closed** for the relevant legal entity.
 1. Return to the **e-Ledger pool** page. After the period is marked as **Permanently closed**, the **Create e-Ledger file** button becomes active.
 1. Select **Create e-Ledger file**.
