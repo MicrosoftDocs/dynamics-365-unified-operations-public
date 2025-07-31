@@ -1,14 +1,14 @@
 ---
 title: Set up a location directive for purchase order putaway
 description: Learn how to set up a simple location directive, including pre-conditions and a step-by-step process for creating a location directive header. 
-author: lisascholz91
-ms.author: lisascholz
-ms.topic: how-to
-ms.date: 06/07/2024
-ms.custom: 
-  - bap-template
+author: Mirzaab
+ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSInventFixedLocation
+ms.topic: how-to
+ms.date: 07/31/2025
+ms.custom:
+- bap-template
 ---
 
 # Set up a location directive for purchase order putaway
