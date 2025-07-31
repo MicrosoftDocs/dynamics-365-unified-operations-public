@@ -4,7 +4,7 @@ description: Learn about what Inventory Visibility is and describes its features
 author: yufei-huang
 ms.author: yufeihuang
 ms.topic: overview
-ms.date: 05/27/2024
+ms.date: 07/31/2025
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
