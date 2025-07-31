@@ -3,12 +3,12 @@ title: Transportation management overview
 description: Access an overview of the transportation management functionality in Supply Chain Management, including a table outlining information for various scenarios.
 author: lisascholz91
 ms.author: lisascholz
-ms.topic: overview
-ms.date: 05/22/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench, TMSLoadBuildTemplateApply, WHSLoadTemplate, TMSTransportationStatus, TMSLoadSeal, TMSLoadBuildProposal, TMSLoadBuildWorkbench, TMSLoadBuildStrategy, TMSLoadBuildStrategyAttributeValue
+ms.topic: overview
+ms.date: 07/31/2025
+ms.custom:
+- bap-template
 ---
 
 # Transportation management overview
@@ -46,7 +46,7 @@ You can plan and process an outbound load to ship specific items from a companyâ
 
 ## Load building
 
-Supply Chain Management provides a load building strategy that is named the Volume-based load building strategy. This strategy lets you use the maximum values that are specified for height and weight in the load template, or you can override the settings by entering new values. To use this strategy, select it in the **Load building strategy** field on the **Setup** FastTab on the **Load building workbench** page. In addition, you can add your own load-building strategies by creating a new class in the Application Object Tree (AOT).
+Supply Chain Management provides a load-building strategy called the *Volume-based load building strategy*. This strategy lets you use the maximum values that are specified for height and weight in the load template, or you can override the settings by entering new values. To use this strategy, select it in the **Load building strategy** field on the **Setup** FastTab on the **Load building workbench** page. In addition, you can add your own load-building strategies by creating a new class in the Application Object Tree (AOT).
 
 ## White papers
 

@@ -3706,7 +3706,7 @@
         - name: Cross-dock products from receiving warehouse to stores
           href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
         - name: Set up a location directive for purchase order putaway
-          href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+          href: supply-chain/warehousing/tasks/set-up-location-directive-purchase-order-put-away.md
         - name: Set up a work template for purchase orders
           href: warehousing/tasks/set-up-work-template-purchase-orders.md
         - name: Location product dimension mixing

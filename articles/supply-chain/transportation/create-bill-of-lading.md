@@ -3,12 +3,12 @@ title: Create a bill of lading
 description: Learn how to create a bill of lading when using warehouse management processes (WMS), including an outline on a master bill of lading.  
 author: lisascholz91
 ms.author: lisascholz
-ms.topic: how-to
-ms.date: 06/07/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench, WHSBillOfLadingCarrier, WHSBillOfLadingOrder, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
+ms.topic: how-to
+ms.date: 07/31/2025
+ms.custom:
+- bap-template
 ---
 
 # Create a bill of lading
@@ -26,6 +26,6 @@ If you generate the bill of lading from the **Outbound load planning workbench**
 
 ## Master bill of lading
 
-If there's more than one shipment in the load, you can generate a master bill of lading. This has the same layout and information as a bill of lading, but contains the summarized content for all the shipments. If the **Create a master bill of lading when there's more than one shipment on a load** option is set to **Yes** on the **Transportation management parameters** page, a master bill of lading is automatically generated if you create a bill of lading from the **Outbound load planning workbench** or **Inbound load planning workbench**, and there's more than one shipment. You can also get a list of the bills of lading by clicking **Related information** &gt; **Bill of lading**. If you're creating bills of lading manually, you can create a master bill of lading on the **Bill of lading** page.
+If there's more than one shipment in the load, you can generate a master bill of lading. This has the same layout and information as a bill of lading, but contains the summarized content for all the shipments. If the **Create a master bill of lading when there's more than one shipment on a load** option is set to *Yes* on the **Transportation management parameters** page, a master bill of lading is automatically generated if you create a bill of lading from the **Outbound load planning workbench** or **Inbound load planning workbench**, and there's more than one shipment. You can also get a list of the bills of lading by selecting **Related information** \> **Bill of lading**. If you're creating bills of lading manually, you can create a master bill of lading on the **Bill of lading** page.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
