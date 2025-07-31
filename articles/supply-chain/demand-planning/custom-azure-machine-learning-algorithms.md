@@ -103,11 +103,12 @@ Follow these steps to set up a forecast that uses a custom Azure Machine Learnin
 1. In the **Configure step** dialog, make the following settings for the step:
     - **Step name** – Enter a name for the step.
     - **Description** – Enter a description for the step.
-    - **Custom action configuration** – Select the [Custom Azure ML profile(#azure-ml-profile)] that you created to connect to your Azure Machine Learning resource.
-    - **Azure ML endpoint** – <!-- KFM: I still don't know what this means -->
+    - **Custom action configuration** – Select the [Custom Azure ML profile](#azure-ml-profile) that you created to connect to your Azure Machine Learning resource.
+    - **Azure ML endpoint** – Specify the URL for the Azure Machine Learning endpoint that triggers the batch job of the machine learning algorithm. <!-- KFM: This is a drop-down. Where do these values come from? Are the from the ML configuration? -->
+        - For *Custom* steps, this must be an Azure Machine Learning *batch* endpoint. Learn more in [Batch endpoints](/azure/machine-learning/concept-endpoints-batch?view=azureml-api-2).
+        - For *Finance and operations* steps, this must be an Azure Machine Learning *pipeline* endpoint. <!-- KFM: Can we give a learn-more link for this, or does the above also cover this? -->
     - **Custom parameters** – If you've designed your Azure Machine Learning forecast algorithm to accept input parameters, then add them as key/value pairs here as required.
         - For *Custom* steps, no default parameters are provided. You must manually add each one that you require following the specifications of your algorithm.
         - For *Finance and operations* steps, a collection of default parameter names are provided, so all you need to do is adjust the values as needed. These are the parameters used by the legacy Supply Chain Management forecasting functionality. For details about how to use these settings, see [Default parameters and values for demand forecasting models](../master-planning/demand-forecasting-setup.md#model-parameters).
 1. Select **Save** to close the dialog.
 1. Complete the model by adding a *Save* step.
-
