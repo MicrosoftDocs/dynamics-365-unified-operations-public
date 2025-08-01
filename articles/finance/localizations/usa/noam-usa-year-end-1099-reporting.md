@@ -1,22 +1,24 @@
 ---
 title: Year-end 1099 reporting
-description: If you do business with vendors subject to United States 1099 tax, you must track the amount paid to each vendor and report that information to US tax authorities.
+description: Learn how to track the amount paid to each vendor and report that information to US tax authorities in Microsoft Dynamics 365 Finance.
 author: abruer
 ms.author: johnmichalak
-ms.topic: article
-ms.date: 10/31/2017
+ms.topic: how-to
+ms.date: 08/04/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: USA
 ms.search.validFrom: 2016-02-28
 ms.search.form: Tax1099Fields, Tax1099Summary
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 518633aa-b341-47e6-ac7b-7c5841b50dc3
+ms.custom: 
+  - bap-template
 ---
 
 # Year-end 1099 reporting
 
 [!include [banner](../../includes/banner.md)]
+
+This article explains how to track the amount paid to each vendor and report that information to US tax authorities in Microsoft Dynamics 365 Finance.
 
 If you do business with vendors that are subject to United States (US) 1099 tax, you must track the amount that you pay to each vendor and report that information to the US tax authorities at the end of the calendar year. The vendors are typically individuals who aren't employees, and who provide services to your organization. You must also send a statement to each 1099 vendor that you do business with to inform them about the amount that you're reporting to the tax authorities.
 
@@ -35,25 +37,25 @@ For information about the most current changes for 1099 reporting for calendar y
 
 ## Example of a typical year-end 1099 process
 
-Follow these steps to generate either an export file or a printed 1099 statement that you can send to a vendor, the IRS, or a tax preparer who will transmit the 1099 forms to the IRS on behalf of your organization.
+To generate an export file or a printed 1099 statement that you can send to a vendor, the IRS, or a tax preparer, follow these steps.
 
-1. On the **1099 fields** page (**Accounts payable \> Periodic tasks \> Tax 1099 \> 1099 fields**), verify the information in the fields.
+1. In Dynamics 365 Finance, go to the **1099 fields** page (**Accounts payable** \> **Periodic tasks** \> **Tax 1099** \> **1099 fields**) and verify the information in the fields.
 2. Verify the minimum amounts that are required for 1099 reporting for the current tax year.
 3. Print a **Tax 1099 detail** report to review vendor information and find any vendors that might require changes.
 
-    > [!TIP]
-    > To minimize the amount of data that you see, you can select **Select** to apply a filter.
+   ** \> **[!TIP]
+   ** \> **To minimize the amount of data that you see, you can select **Select** to apply a filter.
 
-    > [!NOTE]
-    > If you notice an issue when you view a report, you can fix it. For example, you might notice that a 1099-G form is no longer required for a vendor because of a new tax regulation.
+   ** \> **[!NOTE]
+   ** \> **If you notice an issue when you view a report, you can fix it. For example, you might notice that a 1099-G form is no longer required for a vendor because of a new tax regulation.
     >
-    > - If the 1099-G form is the only 1099 tax form that the vendor will receive, you can clear the **Report 1099** option on the **Vendors** page. In this case, the vendor won't receive any 1099 forms.
-    > - The **Tax 1099 transactions** page contains 1099 information from paid invoices, and you can modify that information.
+   ** \> **- If the 1099-G form is the only 1099 tax form that the vendor will receive, you can clear the **Report 1099** option on the **Vendors** page. In this case, the vendor won't receive any 1099 forms.
+   ** \> **- The **Tax 1099 transactions** page contains 1099 information from paid invoices, and you can modify that information.
 
-4. On the **Vendor settlement for 1099s** page (**Accounts payable \> Periodic tasks \> Tax 1099 \> Vendor settlement for 1099s**), you can print the 1099 tax information as a paper form or transmit it as an electronic file. After you post a payment for an invoice, the invoice amount appears on the **Tax 1099 summary** page. When totals for a box reach the amount in the **1099 fields** list, the **IRS reportable** option is selected. After you load the printer with a blank 1099 tax form, you can print data to the form. You can also create an export file.
+4. On the **Vendor settlement for 1099s** page (**Accounts payable** \> **Periodic tasks** \> **Tax 1099** \> **Vendor settlement for 1099s**), you can print the 1099 tax information as a paper form or transmit it as an electronic file. After you post a payment for an invoice, the invoice amount appears on the **Tax 1099 summary** page. When totals for a box reach the amount in the **1099 fields** list, the **IRS reportable** option is selected. After you load the printer with a blank 1099 tax form, you can print data to the form. You can also create an export file.
 
-    > [!NOTE]
-    > If validation errors occur when you try to create an export file, you can select **1099 software vendor** and **1099 transmitter** on the **Tax 1099 validation errors** page to enter missing field values. When you've finished, select **Recheck for errors** to revalidate the file.
+   ** \> **[!NOTE]
+   ** \> **If validation errors occur when you try to create an export file, you can select **1099 software vendor** and **1099 transmitter** on the **Tax 1099 validation errors** page to enter missing field values. When you've finished, select **Recheck for errors** to revalidate the file.
 
 ## Create a copy of a 1099 form
 
@@ -85,13 +87,26 @@ The IRS has released a new form, 1099-NEC, that is used to report non-employee c
 
 ## 1099-DIV reporting option for total ordinary dividends
 
-You can specify how the total ordinary dividend amounts will be reported for 1099-DIV processing. By specifying whether ordinary dividend amounts should be totaled for 1099-DIV processing, you can help make it easier to ensure regulatory compliance. To run the 1099-DIV reporting process, go to **Accounts payable \> Periodic tasks \> Tax 1099 \> Vendor settlement for 1099s**. To report the summed result in box 1a of the 1099-DIV, select the **Box 1a represents sum of box 1a and 1b** option on the **Vendor settlement for 1099s** page. This feature is available only if the **1099-DIV reporting options** feature on the **Feature management** page is turned on.
+You can specify how the total ordinary dividend amounts will be reported for 1099-DIV processing. By specifying whether ordinary dividend amounts should be totaled for 1099-DIV processing, you can help make it easier to ensure regulatory compliance. 
+
+To run the 1099-DIV reporting process, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Periodic tasks** \> **Tax 1099** \> **Vendor settlement for 1099s**. 
+To report the summed result in Box 1a of the 1099-DIV, go to the **Vendor settlement for 1099s** page and select the **Box 1a represents sum of box 1a and 1b** option. This feature is available only if the **1099-DIV reporting options** feature is enabled in the **Feature management** workspace.
 
 ## Update tax 1099 information for multiple vendors
 
-You can update the value in the **1099 box** on vendor records and update transactions with this information for multiple vendors in a single step. This process does not support 1099-G or 1099-S box types. If your organization is in the public sector, you can update 1099-G or 1099-S records one vendor record at a time. To do this, go to **Accounts payable > Vendors > All vendors > Vendor tab > Update 1099**. 
+You can update the value in the **1099 box** on vendor records and update transactions with this information for multiple vendors in a single step. This process does not support 1099-G or 1099-S box types. If your organization is in the public sector, you can update 1099-G or 1099-S records one vendor record at a time. To do this, go to **Accounts payable** \> **Vendors** \> **All vendors** \> **Vendor tab** \> **Update 1099**. 
 
-Before you can update 1099 information for multiple vendors, the feature must be turned on in the **Feature management** workspace. Select **Update tax 1099 information for multiple vendors** and select **Enable now**. You can use the **Update 1099 information for multiple vendors** page to update the **1099 box** on a vendor record, and to update transactions with the 1099 box information. You can open this page by going to **Accounts payable > Periodic task > Tax 1099**. You must be assigned to the **Update 1099 box and transactions for multiple vendors** security privilege to access the page.
+Before you can update 1099 information for multiple vendors, the feature must be enabled in the **Feature management** workspace. 
+
+To enable the feature, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Systems administration** \> **Workspaces** \> **Feature management**.
+1. Find and select the **Update tax 1099 information for multiple vendors** feature.
+1. Select **Enable now**. 
+
+You can use the **Update 1099 information for multiple vendors** page to update the **1099 box** on a vendor record, and to update transactions with the 1099 box information. You can open this page by going to **Accounts payable** \> **Periodic task** \> **Tax 1099**. You must be assigned to the **Update 1099 box and transactions for multiple vendors** security privilege to access the page.
 
 Specific parameters are used to update 1099 information for multiple vendors in one step. The following parameters are available:
 - **Update vendor’s 1099 box** – If you set this option to **Yes**, the **1099 box** information for the selected vendors will be updated to the value specified in the **New 1099 box value** parameter. To be updated, the selected vendor records must have the **Report 1099** parameter enabled on the **All vendors** page. Vendors that haven't had the **Report 1099** parameter turned on won't be updated when the process runs. If this option is set to **No**, the vendor **1099 box** won't be changed. 
@@ -102,7 +117,7 @@ Specific parameters are used to update 1099 information for multiple vendors in 
 
 - **From date and To date** – Specify the date range for the 1099 transactions that will be updated. The **From date** must not be before January 1 of the previous calendar year. For example, assume that today’s date is January 2, 2022. The **From date** must not be prior to January 1, 2021. The **From date** and **To date** option is available only if the **Update 1099 transactions** option is selected.
 
-- **Update all** - If you set this option to **Yes**, the 1099 transactions will be updated with the **1099 box** information specified on the **All vendors** page. The 1099 amount for the transactions will be set to the amount that was specified on the settled invoice. The **Update all** option is available only if the **Update 1099 transactions** option is selected. Manual 1099 transactions will not be updated. To update Manual 1099 transaction, go to **Accounts payable > Periodic tasks > Tax 1099 > Vendor settlement for 1099s > Manual 1099 transactions** to edit the information.
+- **Update all** - If you set this option to **Yes**, the 1099 transactions will be updated with the **1099 box** information specified on the **All vendors** page. The 1099 amount for the transactions will be set to the amount that was specified on the settled invoice. The **Update all** option is available only if the **Update 1099 transactions** option is selected. Manual 1099 transactions will not be updated. To update Manual 1099 transaction, go to **Accounts payable** \> **Periodic tasks** \> **Tax 1099** \> **Vendor settlement for 1099s** \> **Manual 1099 transactions** to edit the information.
 
 - **Recalculate existing 1099 amount** – If you set this option to **Yes**, the 1099 amount on the 1099 transactions will be reset to the total paid values. This option is used in conjunction with the **Update all** parameter. For example, assume that you posted an invoice valued at $1,000. At the time the invoice was recorded, the Accounts payable clerk modified the 1099 value to $500. When the invoice is paid, the system will update the settled 1099 value to $500. Assume that you run the **Update 1099 information for multiple vendors** process and set both the **Update all** and the **Recalculate existing 1099 amount** parameters to **Yes**. The settled 1099 value will be changed from $500 to $1,000. The **Recalculate existing 1099 amount** option is available only if the **Update 1099 transactions** option is selected.
 
