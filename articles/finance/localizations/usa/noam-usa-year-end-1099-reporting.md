@@ -43,19 +43,19 @@ To generate an export file or a printed 1099 statement that you can send to a ve
 2. Verify the minimum amounts that are required for 1099 reporting for the current tax year.
 3. Print a **Tax 1099 detail** report to review vendor information and find any vendors that might require changes.
 
-   ** \> **[!TIP]
-   ** \> **To minimize the amount of data that you see, you can select **Select** to apply a filter.
+    > [!TIP]
+    > To minimize the amount of data that you see, you can select **Select** to apply a filter.
 
-   ** \> **[!NOTE]
-   ** \> **If you notice an issue when you view a report, you can fix it. For example, you might notice that a 1099-G form is no longer required for a vendor because of a new tax regulation.
+    > [!NOTE]
+    > If you notice an issue when you view a report, you can fix it. For example, you might notice that a 1099-G form is no longer required for a vendor because of a new tax regulation.
     >
-   ** \> **- If the 1099-G form is the only 1099 tax form that the vendor will receive, you can clear the **Report 1099** option on the **Vendors** page. In this case, the vendor won't receive any 1099 forms.
-   ** \> **- The **Tax 1099 transactions** page contains 1099 information from paid invoices, and you can modify that information.
+    > - If the 1099-G form is the only 1099 tax form that the vendor will receive, you can clear the **Report 1099** option on the **Vendors** page. In this case, the vendor won't receive any 1099 forms.
+    > - The **Tax 1099 transactions** page contains 1099 information from paid invoices, and you can modify that information.
 
 4. On the **Vendor settlement for 1099s** page (**Accounts payable** \> **Periodic tasks** \> **Tax 1099** \> **Vendor settlement for 1099s**), you can print the 1099 tax information as a paper form or transmit it as an electronic file. After you post a payment for an invoice, the invoice amount appears on the **Tax 1099 summary** page. When totals for a box reach the amount in the **1099 fields** list, the **IRS reportable** option is selected. After you load the printer with a blank 1099 tax form, you can print data to the form. You can also create an export file.
 
-   ** \> **[!NOTE]
-   ** \> **If validation errors occur when you try to create an export file, you can select **1099 software vendor** and **1099 transmitter** on the **Tax 1099 validation errors** page to enter missing field values. When you've finished, select **Recheck for errors** to revalidate the file.
+    > [!NOTE]
+    > If validation errors occur when you try to create an export file, you can select **1099 software vendor** and **1099 transmitter** on the **Tax 1099 validation errors** page to enter missing field values. When you've finished, select **Recheck for errors** to revalidate the file.
 
 ## Create a copy of a 1099 form
 
