@@ -1,6 +1,7 @@
 ---
 title: GB-00009 Create a credit note on the settlement discount
 description: Learn how to create a credit note on the settlement discount for the United Kingdom in Microsoft Dynamics 365 Finance.
+author: EricWangChen
 ms.author: wangchen
 ms.topic: how-to
 ms.date: 08/04/2025
