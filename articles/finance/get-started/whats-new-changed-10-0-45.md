@@ -68,6 +68,8 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+|Accounts payable |Accounts payable | In invoice automation, there's an option to override the Actual tax amount with the Imported Tax amount. When this is on, the calculated tax will be overridden with the imported amount.  The default setting is Off. |Default| 
+|Accounts payable |Accounts payable | On **Accounts payable parameters**, there's an option to always used the default description. When this setting is enabled, the purchase order and invoice descriptions always use the default description, even if a description was manually entered. The default setting is Off. |Default |
 |Accounts receivable|	Accounts receivable|	When a free text invoice is created and posted, the total on the posted invoice journal is incorrect where the calculation doesn't consider all of the total lines amount. Although the Ledger entries are correct, the Custtrans and CustInvoiceJour amounts are incorrect.	|Feature management|
 |Accounts receivable|	Accounts receivable|	Invoice and invoice line details information in the **Associations** FastTab in **My cases** page. |	Feature management|
 | Cash and bank management | Modern bank reconciliation | Unintended matches between bank statement and bank transactions are prevented, unless explicitly defined and configured on the reconciliation rule. | Feature management |
