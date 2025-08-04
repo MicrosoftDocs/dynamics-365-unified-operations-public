@@ -1,10 +1,10 @@
 --- 
-title: Key invoice data in AP using a vendor invoice
-description: This task guide will help you create a vendor invoice from a purchase order and view the results of matching the purchase order, receipt, and invoice (3 way matching). 
+title: Key invoice data in accounts payable using a vendor invoice
+description: This task guide creates a vendor invoice from a purchase order and view the results of matching the purchase order, receipt, and invoice (3 way matching). 
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 03/22/2023
+ms.date: 08/04/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -14,11 +14,11 @@ ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchE
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-# Key invoice data in AP using a vendor invoice
+# Key invoice data in accounts payable using a vendor invoice
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide will help you create a vendor invoice from a purchase order and view the results of matching the purchase order, receipt, and invoice (3 way matching).
+This task guide creates a vendor invoice from a purchase order and view the results of matching the purchase order, receipt, and invoice (3 way matching).
 
 
 ## Create a purchase order
@@ -54,18 +54,18 @@ This task guide will help you create a vendor invoice from a purchase order and 
 9. Click **Add line**.
 10. In the **Item number** field, click the drop-down button to open the lookup.
 11. In the list, find the installation charge item number. For example, S0001
-12. Select the installation charge item number. Note that matching has not been performed since you made the changes.  
+12. Select the installation charge item number. Note that matching hasn't been performed since you made the changes.  
 13. Click **Update match status**.
-14. On the Action Pane, click **Review**.
-15. Click **Matching details**. The new line with services does not need to be matched so the status stays **Not performed**.  
-16. Select the product receipt for the inventory item that you received. The line with the product receipt was matched but there is a mismatch of quantity or price so it fails.  
-17. In the **Unit price** field, enter a number. Now that the unit price matches, the status is **Passed**. If your policy allows discrepancies or if matching is only a warning, you can still post the invoice.  
+14. On the action pane, click **Review**.
+15. Click **Matching details**. The new line with services doesn't need to be matched so the status is **Not performed**.  
+16. Select the product receipt for the inventory item that you received. The line with the product receipt was matched but there's a mismatch of quantity or price so it fails.  
+17. In the **Unit price** field, enter a number. Now that the unit price matches, the status is **Passed**. If your policy allows discrepancies or if matching is only a warning, you can post the invoice.  
 18. Close the page.
 19. Click **Post**.
 20. Close the page. 
 
 >[!Note] 
->The purchase order is no longer listed as **Received but not invoiced**.  
+>The purchase order isn't listed as **Received but not invoiced**.  
 
 
 
