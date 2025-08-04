@@ -114,6 +114,22 @@ To set up POS, follow these steps.
     > [!NOTE]
     > You can also use the **New** button to create multiple payment connectors. In this way, you can take advantage of the support for multiple connectors that has been added to the solution. You can then have different payment connectors for different payment methods. For example, all credit cards can be processed through one connector, but gift cards can be processed through a different connector.
 
+### Select when the balance is made available on the gift cards
+
+By default, the balance on gift cards is added immediately when a cashier performs a relevant gift card operation on the transaction — **before** the customer completes payment. If the customer changes their mind, the cashier must void the gift card operation. This results in unnecessary API calls to the gift card processor and introduces business risk, as it may take several seconds for the balance to be reverted.
+Starting with version **10.0.45**, a new feature is available that **delays the balance addition** until **after payment is successfully received**. This enhancement ensures that:
+
+- No API calls are made to issue or void gift cards if the customer cancels before payment.
+- Gift card balances are only updated post-payment, reducing operational risk and improving reliability.
+
+To enable this functionality:
+1. Go to **Feature Management**.
+2. Turn on the feature named **"Enable gift card balance post-payment completion"**.
+3. Run the **1110 - Global configuration job** to apply the changes.
+
+> [!Important]
+> It is strongly advised to enable this feature to streamline gift card operations and minimize risk.
+
 ### Update the button grid
 
 To update the button grid, follow these steps.
