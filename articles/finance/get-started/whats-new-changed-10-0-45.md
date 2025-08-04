@@ -13,7 +13,7 @@ ms.reviewer: twheeloc
 ms.search.region: Global
 ---
 
-# What's new or changed in Dynamics 365 Finance 10.0.45 (September 2025)
+# What's new or changed in Dynamics 365 Finance 10.0.45 (September 2025) 
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
