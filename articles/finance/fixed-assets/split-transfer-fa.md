@@ -36,7 +36,7 @@ Before you begin, enable the following preview features in Feature management:
 - Split and transfer fixed assets between legal entities (preview)
 - Fixed asset history (preview)
 
-## Set up intercompany transfer mapping
+### Set up intercompany transfer mapping
 
 This setup defines how assets are transferred between legal entities. It ensures consistency in asset classification, and field values across companies.
 
@@ -55,12 +55,12 @@ Map the following before splitting and transferring fixed assets:
       - Map values – translate values between entities. For example, map the **Acquisition method** field to **Purchased** in the source asset and is **Transferred** in the destination asset.
       - The copy and map values options enables **Assign field values to define** button to define the constant value or mapping values.
 
-## Configure Fixed assets parameters
+### Configure Fixed assets parameters
 
 This step sets up the foundational numbering rules that govern intercompany transfers. It ensures transfers have number sequence.
 - Under **Shared settings**, set up the intercompany transfer ID number sequence.
 
-## Configure Fixed assets intercompany accounting
+### Configure Fixed assets intercompany accounting
 
 For each legal entity pair: 
  - Configure the fixed asset intercompany accounting by specifying the journal names
@@ -69,7 +69,7 @@ For each legal entity pair:
  - Define the intercompany accounts and clearing accounts for both the source and destination companies
  - Assign the appropriate journals for each company and applicable posting layer 
 
-## Transfer wizard
+### Transfer wizard
 
 The wizard guides you through the transfer process step by step. It simplifies asset selection, destination, review and generate journals.
 
@@ -124,7 +124,7 @@ Select a service life to determine how the destination asset’s service life is
 
 ### Complete worksheet
 
-Using the complete worksheet to review and adjust asset level details before reviewing the transfer journal. 
+Use the worksheet to review and adjust asset level details before reviewing the transfer journal. 
 The following fields can be updated: 
  - **Source asset**
  - **Transfer value method** 
