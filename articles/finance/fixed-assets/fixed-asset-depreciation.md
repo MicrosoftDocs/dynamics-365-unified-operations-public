@@ -45,6 +45,18 @@ You can create shared calendars by using the **Fiscal calendars** page in Genera
 For more information, see [Depreciation methods and conventions](depreciation-methods-conventions.md).
 
 
+## Depreciation Posting Date
+The Depreciation posting date field enforces consistent posting dates for depreciation transactions. The Depreciation posting date field is available only when the **Summary depreciation** option is set to Yes. When **Depreciation posting date** option is enabled, the system ensures that the posting date matches the defined depreciation date. If the defined date is not the last day of the depreciation period, the system defaults to the final day of the previous period.
+
+This behavior is especially beneficial in catch-up depreciation scenarios, where depreciation for prior periods are consolidated and posted on a single, consistent date. This contrasts with the default behavior, which may distribute postings across multiple dates. 
+
+For example, consider an asset acquired on January 1, 2021, and run the depreciation proposal on January 31 2025:
+When the Depreciation posting date option is disabled, depreciation entries are posted at the end of each year (e.g., 12/31/2021 to 12/31/2024), resulting in multiple transactions across different dates.
+When the option is enabled, all prior period depreciation entries are posted on a single, consistent date (e.g., 1/31/2025), simplifying catch-up scenarios by consolidating postings while maintaining period-specific descriptions.
+
+Note: This feature is supported only when using the Straight Line – Service Life depreciation method. It is not available for localized versions.
+
+
 
 
 
