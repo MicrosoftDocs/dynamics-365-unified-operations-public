@@ -87,7 +87,7 @@ Follow these steps to set up the Azure Machine Learning service connection in De
 
 1. On the Action Pane, select **Save**.
 1. On the **ML workspace pipelines URLs** FastTab, add a row for each Azure Machine Learning endpoint that you want to make available to Demand planning. Each endpoint requires a unique **Name** (which is only used internally in Demand planning) and a **Pipeline URL**, which is the full URL that Demand planning must use to access the endpoint.
-    - For *Finance and operations* steps, these must be Azure Machine Learning *pipeline* endpoints. Learn more in [Pipeline endpoints](/azure/machine-learning/concept-endpoints-pipeline).
+    - For *Finance and operations* steps, these must be Azure Machine Learning *pipeline* endpoints.
     - For *Custom* steps, these must be Azure Machine Learning *batch* endpoints. Learn more in [Batch endpoints](/azure/machine-learning/concept-endpoints-batch).
 
 ## Set up a forecast that uses a custom Azure Machine Learning algorithm
