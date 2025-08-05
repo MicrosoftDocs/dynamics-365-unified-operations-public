@@ -102,7 +102,7 @@ You can manually uninstall Business performance analytics through the Power Plat
 
 1. Business performance analytics anchor solution
 2. Business performance analytics solution
-3. Business Performance analytics reports 
+3. Business performance analytics reports 
 4. Business performance analytics plugins solution
 5. Business performance analytics permissions 
 6. Business performance analytics tables
