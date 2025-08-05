@@ -8,7 +8,7 @@ ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, W
 ms.topic: overview
 ms.date: 07/31/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Transportation management overview

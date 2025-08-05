@@ -8,7 +8,7 @@ ms.search.form: EntAssetRequestLifecycleState, EntAssetRequestLifecycleModel
 ms.topic: how-to
 ms.date: 07/30/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Maintenance request lifecycle states

@@ -8,7 +8,7 @@ ms.search.form:
 ms.topic: overview
 ms.date: 07/21/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Rebate management module overview

@@ -67,12 +67,9 @@ The following image shows an example of an acceptable quality limit chart. In th
 
 In Supply Chain Management, you can load all the data for generating the sampling code letter chart and the acceptable quality limit chart from a template. The template generates inspection levels, AQL indexes, and lot size ranges. Once these values are loaded from the template, you can customize the charts as needed.
 
-<!-- KFM: 
-You can learn more about how to use the charts in the following video: 
+You can learn more about how to use the charts in the following video:
 
-> [!VIDEO 1e6ef0b8-0c35-4560-9f2a-926da8a6fd9b]
-
--->
+> [!VIDEO bb27c2c0-ffda-4768-9d06-2ca67c05d508]
 
 <a name="orders-methods-associations"></a>
 

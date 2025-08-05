@@ -8,7 +8,7 @@ ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesT
 ms.topic: how-to
 ms.date: 07/21/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Weighted average with physical value and marking

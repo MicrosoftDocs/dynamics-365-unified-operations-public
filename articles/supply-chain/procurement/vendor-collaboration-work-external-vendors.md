@@ -8,7 +8,7 @@ ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, Purchase
 ms.topic: how-to
 ms.date: 07/21/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Vendor collaboration with external vendors
