@@ -169,7 +169,7 @@ To update the button grid, follow these steps.
 12. Wait until **Applied** appears next to all the jobs, and then close the browser.
 
     > [!NOTE]
-    > - If you're using Retail Commerce Scale Unit (RCSU) that is located in the store, you must perform an Internet Information Services (IIS) reset to clear the cache. You can perform an IIS reset through the IIS application, or open an administrator Command Prompt window and enter `iisreset`. Otherwise, wait for the RCSU to be updated.
+    > - If you're using Retail Commerce Scale Unit (RCSU) that is located in the store, you must perform an Internet Information Services (IIS) reset to clear the cache. You can perform an IIS reset through the IIS application, or open a Command Prompt window as an administrator and enter `iisreset`. Otherwise, wait for the RCSU to be updated.
     > - Existing buttons on the version F2S1m button grid (or version F*n*S1M for layout) can be similarly configured for internal gift cards. The existing issue gift card (sometimes depicted with the card and plus symbol button in the existing layout) requires that the button properties have the **Action** property set (for example, to **Issue gift card**) and the **Payment type** property set (for example, to **Gift card** for internal gift cards). Similarly, for the preconfigured **Add to gift card** and **Check gift card balance** buttons, the gift card **Payment type** properties should be set if the buttons are intended to handle internal gift cards.
 
 ## Configure and test Store Commerce
