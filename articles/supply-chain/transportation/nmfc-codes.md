@@ -8,7 +8,7 @@ ms.search.form: WHSNMFC
 ms.topic: how-to
 ms.date: 07/31/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Work with NMFC codes in Dynamics 365 Supply Chain Management

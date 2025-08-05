@@ -8,7 +8,7 @@ ms.search.form: XXXX
 ms.topic: how-to
 ms.date: 07/31/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # React to last-minute changes in production

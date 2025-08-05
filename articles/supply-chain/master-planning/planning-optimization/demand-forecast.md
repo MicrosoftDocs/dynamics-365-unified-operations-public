@@ -8,7 +8,7 @@ ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 ms.topic: how-to
 ms.date: 07/21/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Master planning with demand forecasts

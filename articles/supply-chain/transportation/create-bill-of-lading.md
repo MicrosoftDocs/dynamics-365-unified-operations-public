@@ -8,7 +8,7 @@ ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench, WHSBillOfLadingCarrie
 ms.topic: how-to
 ms.date: 07/31/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Create a bill of lading
