@@ -2,7 +2,7 @@
 title: Uninstall Business performance analytics
 description: Learn how to uninstall Business performance analytics.
 author: lizmota
-ms.author: jiwo
+ms.author: jiwo;yashkv1
 ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
