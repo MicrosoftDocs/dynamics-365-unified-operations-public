@@ -1,10 +1,9 @@
 ---
 title: Support for external gift cards
-description: This article explains how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
+description: Learn how how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 author: BrianShook
-ms.date: 05/22/2025
+ms.date: 08/05/2025
 ms.topic: how-to
-audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: shajain
@@ -116,23 +115,25 @@ To set up POS, follow these steps.
 
 ### Select when the balance is made available on the gift cards
 
-By default, the balance on gift cards is added immediately when a cashier performs a relevant gift card operation on the transaction — **before** the customer completes payment. If the customer changes their mind, the cashier must void the gift card operation. This results in unnecessary API calls to the gift card processor and introduces business risk, as it may take several seconds for the balance to be reverted.
-Starting with version **10.0.45**, a new feature is available that **delays the balance addition** until **after payment is successfully received**. This enhancement ensures that:
+By default, the balance on gift cards is added immediately after a cashier performs a relevant gift card operation on the transaction, before the customer completes payment. If the customer changes their mind, the cashier must void the gift card operation, which results in unnecessary API calls to the gift card processor. These unnecessary API calls introduce business risk becasue it may take several seconds for the balance to be reverted.
+
+Starting with Commerce version 10.0.45, you can turn on the **Enable gift card balance post-payment completion** feature to delay the balance addition until after payment is successfully received. Enabling this feature ensures that:
 
 - No API calls are made to issue or void gift cards if the customer cancels before payment.
 - Gift card balances are only updated post-payment, reducing operational risk and improving reliability.
 
-To enable this functionality:
-1. Go to **Feature Management**.
-2. Turn on the feature named **"Enable gift card balance post-payment completion"**.
-3. Run the **1110 - Global configuration job** to apply the changes.
+To enable this feature functionality, follow these steps
 
-> [!Note]
-> If you are using Adyen Castle devices with printing capability, and you want to allow multiple gift card activations in a single transaction, then add **“BypassPrintBehaviorOnFundingGiftCards”:true** in the **"Custom settings"** property of the Adyen connector setup. Without this property, the Castle device tries to print a receipt after each gift card operation, and this blocks the activation/balance addition process after the first gift card is processed.
+1. In Commerce headquarters, go to **System administration** \> **Workspaces** \> **Feature management**.
+1. Locate and select the **Enable gift card balance post-payment completion** feature.
+1. Select **Enable now**.
+1. To apply the changes, run the **1110 - Global configuration** job.
 
- 
-> [!Important]
-> It is strongly advised to enable this feature to streamline gift card operations and minimize risk.
+> [!NOTE]
+> If you're using Adyen Castles devices with printing capability and you want to allow multiple gift card activations in a single transaction, in the **Custom settings** property of the Adyen connector setup,  add **"BypassPrintBehaviorOnFundingGiftCards":true**. Without this property configuration, the Castles device tries to print a receipt after each gift card operation, which blocks the activation/balance addition process after the first gift card is processed.
+
+> [!IMPORTANT]
+> Microsoft strongly recommends that you enable this feature to streamline gift card operations and minimize risk.
 
 ### Update the button grid
 
