@@ -86,7 +86,9 @@ Follow these steps to set up the Azure Machine Learning service connection in De
     - **Application secret** – Enter the service principal application secret for the Microsoft Entra application that you created. This value is used to acquire the access token for the security principal that you created to perform authorized operations against Azure Storage and the Azure Machine Language workspace.
 
 1. On the Action Pane, select **Save**.
-1. On the **ML workspace pipelines URLs** FastTab, add a row for each pipeline provided by your workspace. Each pipeline requires a unique **Name** (which is only used internally in Demand planning) and a **Pipeline URL**, which is the full URL that Demand planning must use to access the pipeline. <!-- KFM: Few more details are needed here. For example: What is a "pipeline" and what do we need it for? What do the **Activate** and **Deactivate** toolbar buttons do--do we need to use them? I understand we use "pipelines" for *FnO* steps, but "batch" for *Custom* steps--what does that mean for the settings we see here? Where do we find URLs to communicate via "batch" instead of "pipeline"? "Batch" is not mentioned anywhere in this article. -->
+1. On the **ML workspace pipelines URLs** FastTab, add a row for each Azure Machine Learning endpoint that you want to make available to Demand planning. Each endpoint requires a unique **Name** (which is only used internally in Demand planning) and a **Pipeline URL**, which is the full URL that Demand planning must use to access the endpoint.
+    - For *Finance and operations* steps, these must be Azure Machine Learning *pipeline* endpoints. Learn more in [Pipeline endpoints](/azure/machine-learning/concept-endpoints-pipeline).
+    - For *Custom* steps, these must be Azure Machine Learning *batch* endpoints. Learn more in [Batch endpoints](/azure/machine-learning/concept-endpoints-batch).
 
 ## Set up a forecast that uses a custom Azure Machine Learning algorithm
 
@@ -104,9 +106,7 @@ Follow these steps to set up a forecast that uses a custom Azure Machine Learnin
     - **Step name** – Enter a name for the step.
     - **Description** – Enter a description for the step.
     - **Custom action configuration** – Select the [Custom Azure ML profile](#azure-ml-profile) that you created to connect to your Azure Machine Learning resource.
-    - **Azure ML endpoint** – Specify the URL for the Azure Machine Learning endpoint that triggers the batch job of the machine learning algorithm. <!-- KFM: This is a drop-down. Where do these values come from? Are the from the ML configuration? -->
-        - For *Custom* steps, this must be an Azure Machine Learning *batch* endpoint. Learn more in [Batch endpoints](/azure/machine-learning/concept-endpoints-batch?view=azureml-api-2).
-        - For *Finance and operations* steps, this must be an Azure Machine Learning *pipeline* endpoint. <!-- KFM: Can we give a learn-more link for this, or does the above also cover this? -->
+    - **Azure ML endpoint** – Select the Azure Machine Learning endpoint that triggers the machine learning algorithm that you want to use. The available endpoints must be defined as part of the [Custom Azure ML profile](#azure-ml-profile) that you created.
     - **Custom parameters** – If you've designed your Azure Machine Learning forecast algorithm to accept input parameters, then add them as key/value pairs here as required.
         - For *Custom* steps, no default parameters are provided. You must manually add each one that you require following the specifications of your algorithm.
         - For *Finance and operations* steps, a collection of default parameter names are provided, so all you need to do is adjust the values as needed. These are the parameters used by the legacy Supply Chain Management forecasting functionality. For details about how to use these settings, see [Default parameters and values for demand forecasting models](../master-planning/demand-forecasting-setup.md#model-parameters).
