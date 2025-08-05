@@ -1,22 +1,22 @@
 ---
 title: Unified printing forms for fixed assets (Russia)
-description: Learn about fixed asset unified printing forms for Microsoft Dynamics 365 Finance in Russia, including a table that provides form names for various form codes.
+description: Learn how to work with fixed asset unified printing forms for Russia in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 08/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-04-01
-ms.dyn365.ops.version: 10
 ---
 
 # Unified printing forms for fixed assets (Russia)
 
 [!include [banner](../../includes/banner.md)]
 
+This article explains how to work with fixed asset unified printing forms for Russia in Microsoft Dynamics 365 Finance.
 
 The following unified printing forms for fixed assets are supported.
 
@@ -69,19 +69,18 @@ The following table provides the sources and path for unified printing forms tha
 
 The system saves the information of all printing forms on a special list page. This page can be opened from a fixed asset transaction, transfer history, or from a fixed asset record (\#FA-6 only).
 
-For example, to create a Fixed asset inventory card (\#FA-6):
+For example, to create a Fixed asset inventory card (\#FA-6), follow these steps.
 
-1. Go to **Fixed asset (Russia)** \> **Common** \> **Fixed assets**.
-2. Select the **Fixed assets** tab, and then on the Action Pane, select **Documents** \> **Documents** \> **Inventory card (\#FA6)**.
+1. In Dynamics 365 Finance, go to **Fixed asset (Russia)** \> **Common** \> **Fixed assets**.
+1. Select the **Fixed assets** tab, and then on the Action Pane, select **Documents** \> **Documents** \> **Inventory card (\#FA6)**.
 
-  ![Selection of FA inventory card.](../media/RUS-Selection-of-FA6-inventory-card.png) 
+    ![Selection of FA inventory card.](../media/RUS-Selection-of-FA6-inventory-card.png) 
 
-3. Click **New** in the Inventory card (\#FA-6) page list to create the inventory card for the value model.
+1. In the **Inventory card (\#FA-6)** page list, select **New** to create the inventory card for the value model.
 
- ![FA inventory card.](../media/RUS-FA6-inventory-card.png)
+    ![FA inventory card.](../media/RUS-FA6-inventory-card.png)
 
-
-After the record is created, you can print the unified form from this page list.
+1. After the record is created, print the unified form from this page list.
 
 > [!NOTE]
 > You can use this procedure to create and print other unified forms.
@@ -91,10 +90,12 @@ After the record is created, you can print the unified form from this page list.
 All pro forms can be printed from a fixed asset record, when the transaction that corresponds to the document type has not yet been posted. In this case, the document number can be set manually. However, it is not controlled and saved in the system and the data in the pro forms is partially entered.
 
 > [!NOTE]
-> It is not possible to print pro form of Fixed asset inventory card (#FA-6).
+> It isn't possible to print a pro form of the Fixed asset inventory card (#FA-6).
 
-1. To print pro forms, go to **Fixed asset (Russia)** \> **Common** \> **Fixed assets** and select a fixed asset record.
-2. On the **Fixed assets** tab, select **Documents** \> **Documents** and then select the document to print.
+To print pro forms of unified forms, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed asset (Russia)** \> **Common** \> **Fixed assets** and select a fixed asset record.
+1. On the **Fixed assets** tab, select **Documents** \> **Documents** and then select the document to print.
 
 ## Print unified forms 
 
@@ -105,19 +106,26 @@ You can print existing unified printing forms from different places, including:
 - From the Inquiries page.
 
 ### Print unified forms from a fixed asset record
-To print existing unified printing forms from a fixed asset record, follow these steps:
 
-1. Select the fixed asset record and then on the Action Pane, select **Documents** \> **Documents**. 
-2. Select the unified printing form. If you are printing more than one document, the page list for corresponded document type is displayed. 
-3. Highlight the record to print, and then select **Print**.
+To print existing unified printing forms from a fixed asset record, follow these steps.
 
-If there is only one unified printing form document for the selected fixed asset, then this document will be output by default.
+1. Select the fixed asset record, and then on the Action Pane, select **Documents** \> **Documents**. 
+1. Select the unified printing form. If you're printing more than one document, the page list for corresponded document type is displayed. 
+1. Highlight the record to print, and then select **Print**.
 
-### Print unified forms from Inquiries
+If there's only one unified printing form document for the selected fixed asset, then this document is output by default.
 
-To print documents that are created from inquiries, go to **Fixed assets (Russia)** \> **Inquiries** \> **Documents**. Highlight the document to print and then select **Print**.
+### Print unified forms from inquiries
+
+To print documents that are created from inquiries, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Inquiries** \> **Documents**.
+1. Highlight the document to print, and then select **Print**.
 
 ![Print unified forms from Inquiries.](../media/RUS-Print-unified-forms.png)
+
+
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
