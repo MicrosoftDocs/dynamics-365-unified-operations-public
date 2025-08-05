@@ -33,7 +33,7 @@ To set up parameters, follow these steps:
 4.	The organization can set this value for a maximum period of up to 45 days.
 
 ### Data maintenance jobs 
-Starting in Microsoft Dynamics 365 Finance version 10.0.45, data maintenance jobs are automatically scheduled to run daily. 
+Beginning in Microsoft Dynamics 365 Finance version 10.0.45, data maintenance jobs are automatically scheduled to run daily. 
 These jobs automatically clean up customer data from the following logging tables: 
  - CustomerInvoiceDocumentLifecycleStageTransition
  - CustomerInvoiceDocumentLifecycleStageTransitionLog
