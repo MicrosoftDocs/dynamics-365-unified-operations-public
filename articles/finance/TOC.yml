@@ -530,6 +530,8 @@
                       href: accounts-receivable/sb-project-defferal.md
                     - name: Migrate revenue recognition data to revenue and expense deferrals                    
                       href: accounts-receivable/sb-RevRecSubBillMigration.md
+                    - name: Backfill deferral schedule line fields
+                      href: accounts-receivable/sb-data-main-back-fill.md
                     - name: Deferral posting method
                       href: accounts-receivable/Deferral-posting-methods.md
                     - name: Subscription billing defferal COGS (preview)
