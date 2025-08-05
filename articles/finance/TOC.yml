@@ -4624,9 +4624,13 @@
             - name: Dimensions
               items:
                 - name: Creating and maintaining dimensions
-                  href: business-performance-planning/Dimensions.md
+                  href: business-performance-planning/Dimensions.md                 
                 - name: Load data using dataflows
                   href: business-performance-planning/load-data-dataflows.md
+                - name: Audit dimensions
+                  items:
+                    - name: Audit dimensions
+                      href: business-performance-planning/dimensions-audit.md
             - name: Cubes
               items:
                 - name: Creating cubes
