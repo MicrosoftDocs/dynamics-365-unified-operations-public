@@ -1,6 +1,6 @@
 ---
-title: Support for external gift cards
-description: Learn how how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
+title: Support for external gift cards (preview)
+description: Learn how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 author: BrianShook
 ms.date: 08/05/2025
 ms.topic: how-to
@@ -13,13 +13,14 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-# Support for external gift cards
+# Support for external gift cards (preview)
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 This article explains how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 
-Microsoft Dynamics 365 Commerce supports both *internal* and *external* gift cards. Internal gift cards are managed entirely in Dynamics 365 Commerce, whereas external gift cards are administered by a third party. If a retailer's operations are run entirely in Microsoft Dynamics, internal gift cards are sometimes the best solution. For complex enterprises that span multiple countries or regions, and multiple point of sale (POS) systems, it's often best to use a third party to manage gift card balances and enable gift cards to be used across those systems.
+Microsoft Dynamics 365 Commerce supports both *internal* and *external* gift cards. Internal gift cards are managed entirely in Dynamics 365 Commerce, whereas third parties administer external gift cards. If a retailer's operations are run entirely in Microsoft Dynamics, internal gift cards are sometimes the best solution. For complex enterprises that span multiple countries or regions, and multiple point of sale (POS) systems, it's often best to use a third party to manage gift card balances and enable gift cards to be used across those systems.
 
 Similar to support for other card payment types, support for external gift cards must be built into the payment connector that you use. The out-of-box payment connector for Adyen supports external gift cards through Stored Value Solutions (SVS) and Givex in POS, the call center, and the e-commerce storefront.
 
@@ -84,7 +85,7 @@ To set up a store, follow these steps.
     - Set the **Operation name** field to **Pay gift card**.
     - Set the **Connector name** field to **Dynamics 365 Payment Connector for Adyen**.
 
-9. On the **Posting** FastTab, set the **Gift card item number** field value to a number created to represent an external gift card. For testing purposes, if you're using demo data you can set it to "0010". The **Gift card item number** value selected for external gift cards should be different from the number used to configure internal gift cards (as described in [Set up gift cards](/dynamicsax-2012/appuser-itpro/set-up-gift-cards#set-up-gift-cards-1)). The system uses external and internal gift card values to determine the system processing route for the gift cards. Because external and internal gift cards are processed differently within the system (with external gift cards using the payment gateway), **Gift card item number** values for external gift cards shouldn't match any values in the **Commerce parameters \> Posting \> Gift card \> Gift card product** value set.
+9. On the **Posting** FastTab, set the **Gift card item number** field value to a number created to represent an external gift card. For testing purposes, if you're using demo data you can set it to **0010**. The **Gift card item number** value selected for external gift cards should be different from the number used to configure internal gift cards (as described in [Set up gift cards](/dynamicsax-2012/appuser-itpro/set-up-gift-cards#set-up-gift-cards-1)). The system uses external and internal gift card values to determine the system processing route for the gift cards. Because external and internal gift cards are processed differently within the system (with external gift cards using the payment gateway), **Gift card item number** values for external gift cards shouldn't match any values in the **Commerce parameters \> Posting \> Gift card \> Gift card product** value set.
 
     ![Setting the Gift card item number field.](./media/05_02.png)
 
@@ -103,10 +104,10 @@ To set up POS, follow these steps.
 2. In the left pane, select the hardware profile associated with the San Francisco store (for example, **Virtual**).
 3. Select **Edit**.
 4. On the **EFT service** FastTab, in the **Connectors** grid, select **Dynamics 365 Payment Connector for Adyen**.
-5. In the **Supported Tender Types** field, add **GiftCard** or add a semicolon (";") before **Giftcard** if other tender types are present.
+5. In the **Supported Tender Types** field, enter "GiftCard". If other tender types are present, add a semicolon (";") before "Giftcard" as shown in the following example image.
 6. Set the **Gift card provider** value to **svs** or **givex**, depending on the gift card provider you use.
 
-    ![Adding GiftCard to the list of supported tender types.](./media/01.png)
+    ![Add a gift card to the list of supported tender types.](./media/01.png)
 
 7. Select **Save**.
 
@@ -115,7 +116,7 @@ To set up POS, follow these steps.
 
 ### Select when the balance is made available on the gift cards
 
-By default, the balance on gift cards is added immediately after a cashier performs a relevant gift card operation on the transaction, before the customer completes payment. If the customer changes their mind, the cashier must void the gift card operation, which results in unnecessary API calls to the gift card processor. These unnecessary API calls introduce business risk becasue it may take several seconds for the balance to be reverted.
+By default, the balance on gift cards is added immediately after a cashier performs a relevant gift card operation on the transaction, before the customer completes payment. If the customer changes their mind, the cashier must void the gift card operation, which results in unnecessary API calls to the gift card processor. These unnecessary API calls introduce business risk because it may take several seconds for the balance to be reverted.
 
 Starting with Commerce version 10.0.45, you can turn on the **Enable gift card balance post-payment completion** feature to delay the balance addition until after payment is successfully received. Enabling this feature ensures that:
 
@@ -168,7 +169,7 @@ To update the button grid, follow these steps.
 12. Wait until **Applied** appears next to all the jobs, and then close the browser.
 
     > [!NOTE]
-    > - If you're using Retail Commerce Scale Unit (RCSU) that is located in the store, you must perform an IIS reset to clear the cache. You can perform an IIS reset through the IIS application, or open an administrator Command Prompt window and enter `iisreset`. Otherwise, wait for the RCSU to be updated.
+    > - If you're using Retail Commerce Scale Unit (RCSU) that is located in the store, you must perform an Internet Information Services (IIS) reset to clear the cache. You can perform an IIS reset through the IIS application, or open an administrator Command Prompt window and enter `iisreset`. Otherwise, wait for the RCSU to be updated.
     > - Existing buttons on the version F2S1m button grid (or version F*n*S1M for layout) can be similarly configured for internal gift cards. The existing issue gift card (sometimes depicted with the card and plus symbol button in the existing layout) requires that the button properties have the **Action** property set (for example, to **Issue gift card**) and the **Payment type** property set (for example, to **Gift card** for internal gift cards). Similarly, for the preconfigured **Add to gift card** and **Check gift card balance** buttons, the gift card **Payment type** properties should be set if the buttons are intended to handle internal gift cards.
 
 ## Configure and test Store Commerce
@@ -212,13 +213,13 @@ For the call center and storefront, the Adyen connector supports the following g
 
 ### Tokenization
 
-The out-of-box implementation and Payments software development kit (SDK) support for external gift cards in the call center and storefront requires tokenization. When external gift cards are processed, tokens are used to refer to the actual gift card number. Tokenization is important for third party implementations because without tokens, external gift card processing may not function correctly. For example, if a gift card payment is captured when it's added to an order but an issue occurs during order creation, the gift card payment is reversed using references (tokens) to the transaction itself, not using the actual gift card number. 
+The out-of-box implementation and Payments software development kit (SDK) support for external gift cards in the call center and storefront requires tokenization. When external gift cards are processed, tokens are used to refer to the actual gift card number. Tokenization is important for third party implementations because without tokens, external gift card processing may not function correctly. For example, if a gift card payment is captured when added to an order but an issue occurs during order creation, the gift card payment is reversed using references (tokens) to the transaction itself, not using the actual gift card number. 
 
 ### Purchases and refunds
 
 When an external gift card is used for a purchase, the tender line for the gift card is saved as a prepayment. Therefore, the funds for the purchase are captured when the order is created.
 
-External gift cards aren't eligible for refunds. In part, this limitation is in place to prevent a refund from being given for a gift card discarded by the user. If an unprocessed order includes an external gift card as payment, and the customer wants to cancel the order, a new gift card, or some other form of credit must be issued to the customer.
+External gift cards aren't eligible for refunds. In part, this limitation is in place to prevent a refund from being given for a gift card discarded by the user. If an unprocessed order includes an external gift card as payment, and the customer wants to cancel the order, you must issue a new gift card or some other form of credit to the customer.
 
 Gift cards lines that are issued as part of an order can be canceled before fulfillment.
 
