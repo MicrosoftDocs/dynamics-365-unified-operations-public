@@ -127,6 +127,10 @@ To enable this functionality:
 2. Turn on the feature named **"Enable gift card balance post-payment completion"**.
 3. Run the **1110 - Global configuration job** to apply the changes.
 
+> [!Note]
+> If you are using Adyen Castle devices with printing capability, and you want to allow multiple gift card activations in a single transaction, then add **“BypassPrintBehaviorOnFundingGiftCards”:true** in the **"Custom settings"** property of the Adyen connector setup. Without this property, the Castle device tries to print a receipt after each gift card operation, and this blocks the activation/balance addition process after the first gift card is processed.
+
+ 
 > [!Important]
 > It is strongly advised to enable this feature to streamline gift card operations and minimize risk.
 
