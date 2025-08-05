@@ -8,7 +8,7 @@ ms.reviewer: kamaybac
 ms.search.form: PdsDispositionMaster, InventBatch
 ms.date: 07/31/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Use batch disposition codes to mark batches as available or unavailable

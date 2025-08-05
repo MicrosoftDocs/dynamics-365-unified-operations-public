@@ -8,7 +8,7 @@ ms.search.form: TAMDeduction
 ms.topic: how-to
 ms.date: 07/21/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Manage deductions using the deduction workbench

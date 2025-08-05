@@ -1,8 +1,8 @@
 ---
 title: License plate build on the warehouse app
 description: Learn about the License plate build menu item and how it can streamline warehouse operations by nesting license plates.
-author: Atapiabailon
-ms.author: atapiabailon
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 02/19/2025
 ms.custom:

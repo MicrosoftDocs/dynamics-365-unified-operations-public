@@ -8,7 +8,7 @@ ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateE
 ms.topic: how-to
 ms.date: 07/31/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Transportation management engines

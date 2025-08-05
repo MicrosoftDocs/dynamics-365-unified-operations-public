@@ -8,7 +8,7 @@ ms.search.form: WHSParameters, WHSWorkPool
 ms.topic: how-to
 ms.date: 05/16/2024
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Warehouse management overview
