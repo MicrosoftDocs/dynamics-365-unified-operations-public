@@ -1,23 +1,22 @@
 ---
 title: VAT declaration (Russia)
-description: Learn about the VAT declaration for Russia, including an outline and a step-by-step process for setting up the VAT declaration.
+description: Learn how to set up and generate the VAT declaration for Russia in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 08/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-01-04
-ms.dyn365.ops.version: 10.0.1
 ---
 
 # VAT declaration (Russia)
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about the the value-added tax (VAT) declaration for Russia. It includes instructions for setting up and generating the VAT declaration.
+This article explains how to set up and generate the VAT declaration for Russia in Microsoft Dynamics 365 Finance.
 
 ## Set up the VAT declaration
 
@@ -395,9 +394,11 @@ For the earlier example, the following data will be present in section 6 of the 
 
 ## Generate a VAT declaration in electronic format
 
-1. To generate VAT declaration files, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
+To generate a VAT declaration in electronic format, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
 2. Select the format to generate the report in. For example, select **НДС 5.09 (2022)**.
-3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
+3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog, select **OK**.
 4. Select the row for the message that was created. Enter a description, and specify the start and end dates for the report. The end date is treated as the base date for financial reports.
 5. Optional: On the **Message additional fields** FastTab, enter the following information.
 
@@ -406,9 +407,9 @@ For the earlier example, the following data will be present in section 6 of the 
     | CorrectionNumber | Номер коррекции | Enter the number of the correction for corrective accounting reporting. |
     | ReportingDate | Отчетная дата для коррекции | Optionally enter the reporting date for corrective accounting reporting. (The calculation of cells on financial reports considers transactions of the base period and all later transactions, up to the reporting date, that correct the base period.) |
 
-6. On the **Messages** FastTab, select **Update status**, and then, in the **Run processing** dialog box, select **OK**. Validate that the message status is changed to **Ready to generate**.
+6. On the **Messages** FastTab, select **Update status**, and then, in the **Run processing** dialog, select **OK**. Validate that the message status is changed to **Ready to generate**.
 7. On the **Messages** FastTab, select **Generate report**.
-8. In the **Electronic reporting parameters** dialog box, enter the following information.
+8. In the **Electronic reporting parameters** dialog, enter the following information.
 
     | Field | Description |
     |---|---|
