@@ -23,7 +23,7 @@ The shipping rate that is returned is added to the associated sales order as a m
 
 ## Prepare your system to support SPS
 
-Before you can start to use SPS functionality, you must turn on the SPS feature in Feature management, add your rate engine, and set up the **Transportation management** and **Warehouse management** modules to support it.
+Before you can start to use SPS functionality, you must add your rate engine, and set up the **Transportation management** and **Warehouse management** modules to support it.
 
 ### Deploy and set up rate engines
 
