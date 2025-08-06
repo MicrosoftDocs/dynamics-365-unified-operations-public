@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.46 GA -->
+<!-- KFM: Preview until 10.0.45 GA -->
 
 Lean manufacturing is a production philosophy that maximizes value for customers while minimizing waste. It comes from the Toyota production system and focuses on continuous improvement and operational efficiency. With *Lean manufacturing for Planning Optimization* enabled, demands and supplies that originate from the modeling of lean operations, such as kanbans, will be taken into account during planning.
 
