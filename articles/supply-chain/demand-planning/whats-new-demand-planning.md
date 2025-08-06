@@ -15,6 +15,25 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of Demand planning in Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 1.0.0.3336
+
+### New feature introduced in version 1.0.0.3336
+
+This version of Demand planning enhances the *Copilot grid cursor* feature so that it now shows the impact of the signal input separately from the baseline for a selected forecasted cell.
+
+The following screenshot shows an example, indicating (from left to right) the baseline value (primary input), the signal impact, manual adjustments, and the current final value of a selected cell.
+
+:::image type="content" source="media/copilot-grid-cursor-with-signal.png" alt-text="Screenshot of Copilot grid cursor with signal impact" lightbox="media/copilot-grid-cursor-with-signal.png":::
+
+### New fixes and improvements in version 1.0.0.3336
+
+This version of Demand planning introduces the following fixes and improvements:
+
+- Increased stability.
+- Auto-detect seasonality is improved to account for certain data compositions.
+- Forecast calculations now respect the decimal precision set in the forecast profile.
+- Improved the performance of forecast calculations.
+
 ## Version 1.0.0.2999
 
 ## New feature introduced in version 1.0.0.2999
