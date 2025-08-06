@@ -462,7 +462,7 @@
               href: dev-itpro/faster-checkout-pos.md
             - name: Gift cards
               items:
-              - name: Support for external gift cards
+              - name: Support for external gift cards (preview)
                 href: dev-itpro/gift-card.md
               - name: Cross-company data sharing for gift cards
                 href: dev-itpro/data-sharing-gift-cards.md
