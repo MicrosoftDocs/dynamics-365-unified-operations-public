@@ -41,7 +41,7 @@ The following table lists the features that became turned on by default in versi
 
 | Module | Feature name | More information |
 |--|--|--|
-| Retail and commerce | *Validate Mode of Delivery on Retail Channel Sales Quotation* | This feature ensures that only valid mode of deliveries are used with commerce sales quotations. |
+| Retail and commerce | *Validate Mode of Delivery on Retail Channel Sales Quotation* | This feature ensures that only valid modes of deliveries are used with commerce sales quotations. |
 | Retail and commerce | *Enable generation of a stronger channel reference ID* | This feature generates a more secure 12-character channel reference ID (order confirmation ID) that are passed in the query string when an order is looked up. |
 
 ## Resources
