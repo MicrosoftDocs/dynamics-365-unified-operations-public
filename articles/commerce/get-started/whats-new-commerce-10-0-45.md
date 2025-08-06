@@ -33,16 +33,16 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Point of sale  | Store Commerce offline in iOS and Android Public Preview  | This release introduces offline capabilities for Store Commerce on iOS and Android devices. You can now use Store Commerce on these platforms even when offline, ensuring seamless operations and reliable business continuity. Key features include support for SQLite-based offline capabilities, a new SDK experience for iOS that enables extensibility in the app and database, database upgrade support, and an enhanced offline registration form. |  admins |
-| Point of sale  | Funds available in external gift cards post-payments  | By default, the balance on gift cards is added immediately when a cashier issues a gift card or loads funds onto it—**before** the customer completes payment which increases the business risk until the customer completes the payment. Starting with version **10.0.45**, a new feature is available that **delays the balance addition** until **after payment is successfully received**. Thus, reducing operational risk and improving reliability. Learn more: [External gift cards](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/gift-card)  |  admins |
+| Point of sale  | Funds available in external gift cards post-payments  | By default, the balance on gift cards is added immediately when a cashier issues a gift card or loads funds onto it—**before** the customer completes payment that increases the business risk until the customer completes the payment. Starting with version **10.0.45**, a new feature is available that **delays the balance addition** until **after payment is successfully received**. Thus, reducing operational risk and improving reliability. Learn more: [External gift cards](../dev-itpro/gift-card.md)  |  admins |
 
 ## Features turned on by default in this release
 
-The following table lists the features that became turned on by default in version 10.0.43. You can still turn these features off in **Feature management**, if necessary.
+The following table lists the features that became turned on by default in version 10.0.43. You can still disable these features in **Feature management**, if necessary.
 
 | Module | Feature name | More information |
 |--|--|--|
-| Retail and commerce | *Validate Mode of Delivery on Retail Channel Sales Quotation* | This feature ensures that only valid mode of deliveries can be used with commerce sales quotations. |
-| Retail and commerce | *Enable generation of a stronger channel reference ID* | This feature generates a more secure 12-character channel reference ID (order confirmation ID) that can be passed in the query string when an order is looked up. |
+| Retail and commerce | *Validate Mode of Delivery on Retail Channel Sales Quotation* | This feature ensures that only valid modes of deliveries are used with commerce sales quotations. |
+| Retail and commerce | *Enable generation of a stronger channel reference ID* | This feature generates a more secure 12-character channel reference ID (order confirmation ID) that are passed in the query string when an order is looked up. |
 
 ## Resources
 
