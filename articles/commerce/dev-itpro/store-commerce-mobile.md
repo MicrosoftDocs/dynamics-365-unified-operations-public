@@ -166,6 +166,14 @@ Starting with the Commerce version 10.0.45 release, the following offline capabi
 - **Consistent activation experience**: Provides a unified setup flow across platforms, with an in-app option to
     enable support for effective offline mode transitions.
 
+For iOS and Android, data is stored locally in SQLite to enable full offline functionality. Key product, customer, pricing, discount, and configuration data is synchronized locally for offline use. When you launch the Store Commerce mobile app, you must trigger a download session to synchronize the data to the device.
+
+When the Store Commerce mobile app is offline, transactions are stored and queued locally and marked for synchronization. When connectivity is restored, queued transactions are uploaded and synchronized to the CSU. 
+
+This [Github example](https://github.com/microsoft/Dynamics365Commerce.InStore/blob/8cc06eb869a8bcca238fa0e2a92d5f64ecda8e41/src/PackagingSamples/StoreCommerceMobile/StoreCommerce.MobileApp/Contoso.StoreCommerce.MobileApp.csproj#L5C38-L5C48) shows where iOS dependencies are updated. Learn more in the [README file](https://github.com/microsoft/Dynamics365Commerce.InStore/blob/release/9.54/src/PackagingSamples/StoreCommerceMobile/README.md#ios%E2%80%8B).
+
+
+
 ## Additional resources
 
 [Store Commerce app](store-commerce.md)
