@@ -23,7 +23,7 @@ This article describes the setup that is required to enable Demand planning to c
 
 ## Download sample code and other resources
 
-To download sample code and other resources that demonstrate how to use custom Azure Machine Learning algorithms in Demand planning, go to the [Custom-ML-in-DemandPlanning repository on GitHub](https://github.com/microsoft/Dynamics-365-Demand-Planning-Custom-Azure-ML-Template). It provides insights into how to read input data, handle standard and custom parameters, and generate output that aligns with the application's consumption requirements. The repository consists of a readme file, a scoring script, a docker file, and demonstrative videos.
+To download sample code and other resources that demonstrate how to use custom Azure Machine Learning algorithms in Demand planning, go to the [Custom-ML-in-DemandPlanning repository on GitHub](https://github.com/microsoft/Dynamics-365-Demand-Planning-Custom-Azure-ML-Template). It provides insights into how to read input data, handle standard and custom parameters, and generate output that aligns with the application's consumption requirements. The repository consists of a readme file, a scoring script, and demonstrative videos.
 
 ## Set up your Azure Machine Learning resources
 
