@@ -1,9 +1,9 @@
 ---
 title: Store Commerce app for mobile platforms
-description: This article describes how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
+description: Learn how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
 author: anush6121
 ms.author: anvenkat
-ms.date: 07/24/2024
+ms.date: 08/07/2025
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: global
@@ -17,14 +17,14 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to get started using the Microsoft Dynamics 365 Commerce Store Commerce apps for Android and iOS.
+This article explains how to get started using the Microsoft Dynamics 365 Commerce Store Commerce apps for Android and iOS.
 
-The Dynamics 365 Commerce mobile apps for Android and iOS make the process of deploying full-featured mobile point of sale (POS) devices for your retail environment straightforward and simple. The Store Commerce mobile apps deliver nearly all the capabilities and advantages of the [Store Commerce app for Windows](store-commerce.md), and perform well on a wide range of iOS and Android phones and tablets. The Store Commerce mobile apps can be installed directly from the Apple and Google Play app stores, and don't require a developer to create a new application package to deploy or update them. 
+The Dynamics 365 Commerce mobile apps for Android and iOS make the process of deploying full-featured mobile point of sale (POS) devices for your retail environment straightforward and simple. The Store Commerce mobile apps deliver nearly all the capabilities and advantages of the [Store Commerce app for Windows](store-commerce.md), and perform well on a wide range of iOS and Android phones and tablets. You can install the Store Commerce mobile apps directly from the Apple and Google Play app stores, so you don't require a developer to create a new application package to deploy or update them. 
 
 The Store Commerce mobile apps retain full functional parity with current Retail hybrid apps. In addition, Store Commerce for iOS includes support for a dedicated hardware station, so that iOS devices can communicate with networked payment terminals, receipt printers, and cash drawers without requiring the deployment of a shared hardware station. 
 
 > [!IMPORTANT]
-> The Store Commerce apps for Windows, Android, and iOS are the next generation POS applications for Dynamics 365 Commerce. The Store Commerce apps offer numerous improvements over their predecessors while retaining full functional and feature parity. Microsoft will deprecate MPOS and the Retail Hybrid apps for Android and iOS in late 2023, and recommends that you use the Store Commerce apps for Windows, Android, and iOS and Store Commerce for web for all new POS deployments. Existing customers should plan to migrate from MPOS and the Retail hybrid apps to Store Commerce. For more information, see [Migrate Modern POS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md). 
+> The Store Commerce apps for Windows, Android, and iOS are the next generation POS applications for Dynamics 365 Commerce. The Store Commerce apps offer numerous improvements over their predecessors while retaining full functional and feature parity. Microsoft deprecated Modern point of sale (MPOS) and the Retail Hybrid apps for Android and iOS in late 2023, and recommends that you use the Store Commerce apps for Windows, Android, and iOS and Store Commerce for web for all new POS deployments. Existing customers should plan to migrate from MPOS and the Retail hybrid apps to Store Commerce. For more information, see [Migrate Modern POS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md). 
 
 ## App architecture
 
@@ -54,7 +54,7 @@ The following table compares the capabilities of the Store Commerce app across W
 
 ## Prerequisites
 
-The Store Commerce mobile apps require the CSU and Commerce headquarters components of Dynamics 365 Commerce. The following table lists the minimum operating system (OS) and CSU versions that are required by the Android and iOS mobile apps. 
+The Store Commerce mobile apps require the CSU and Commerce headquarters components of Dynamics 365 Commerce. The following table lists the minimum operating system (OS) and CSU versions that required to run the Android and iOS mobile apps. 
 
 | Prerequisite | Android | iOS  |
 | ------------ | ------- | ---- |
@@ -98,7 +98,7 @@ You can create a new register and associate it with the device that you created,
 
 ### Screen layout setup
 
-If you're repurposing a screen layout included in the demo data that is provided with your Dynamics 365 Commerce license, the Store Commerce app automatically selects the included compact layout if the screen resolution of your device is less than 480 &times; 853 pixels in the portrait orientation. However, if you're creating a screen layout from scratch, or if your mobile device uses a larger resolution than the compact layout supports, ensure that you create a resolution and associated button grids that are appropriate for the phone or tablet that you plan to deploy to. For more information about screen layout configurations, see [POS user interface visual configurations](../pos-screen-layouts.md). 
+If you're repurposing a screen layout included in the demo data that is provided with your Dynamics 365 Commerce license, the Store Commerce app automatically selects the included compact layout if the screen resolution of your device is less than 480 x 853 pixels in the portrait orientation. However, if you're creating a screen layout from scratch, or if your mobile device uses a larger resolution than the compact layout supports, ensure that you create a resolution and associated button grids that are appropriate for the phone or tablet that you plan to deploy to. For more information about screen layout configurations, see [POS user interface visual configurations](../pos-screen-layouts.md). 
 
 After devices and registers are configured, in Commerce headquarters go to **Retail and Commerce \> Retail and Commerce ID \> Distribution Schedules** and run the registers job.
 
@@ -125,7 +125,7 @@ The network protocols for Epson and Star printers enable receipt printing on mob
 
 ### Cash drawer
 
-Cash drawers that are connected through an Epson or Star receipt printer's drawer kick (DK) port are supported. The cash drawer configuration in the hardware profile is similar to that of the receipt printer to which it's connected. Specify "Network" for the **Drawer setting**, specify "Epson" or "Star" for the **Device name**, and then in the **Cash drawer** setting in the register's IP Addresses view, enter the printer's IP address into the **IP address** field. 
+Cash drawers that are connected through an Epson or Star receipt printer's drawer kick (DK) port are supported. The cash drawer configuration in the hardware profile is similar to that of the receipt printer it's connected to. Specify "Network" for the **Drawer setting**, specify "Epson" or "Star" for the **Device name**, and then in the **Cash drawer** setting in the register's IP Addresses view, enter the printer's IP address into the **IP address** field. 
 
 ### Barcode scanner
 
@@ -141,28 +141,30 @@ If the scan icon appears but the camera is blocked, confirm that you have camera
 
 **Optical scanner**: Handheld devices that are equipped with an optical barcode scanner usually include a location in settings or a utility that configures the scanner. Enabling barcode scanning for the Store Commerce app with one of these devices typically only requires that the optical scanner is configured for keyboard wedge mode, and that a newline character is appended to the decoded output. 
 
-**Peripheral scanner**: Barcode scanners that attach to mobile devices as a sled and communicate via Bluetooth have been successfully used with the Store Commerce app to scan barcodes and QR codes. 
+**Peripheral scanner**: Barcode scanners that attach to mobile devices as a sled and communicate via Bluetooth can be successfully used with the Store Commerce app to scan barcodes and QR codes. 
 
 ### Payment terminal
 
 See the [Payment terminals and PIN pads](../retail-peripherals-overview.md#payment-terminals-and-pin-pads) section of the [Retail Peripherals](../retail-peripherals-overview.md) help topic for information about how to connect Store Commerce mobile app to a payment terminal. 
 
-### Offline Capability in iOS and Android 
+### Offline capabilities in iOS and Android (preview)
 
-The offline capability for iOS and Android is in Public Preview starting 10.0.45
-Following features are now available:
-1. **Data Sync Scenarios in SQLite**: Enables efficient data synchronization using SQLite. 
-1. **Store Commerce SDK**: Provides a comprehensive SDK for developing offline capabilities on iOS.
-1. **Offline Support**: Offline mode is now available on both iOS and Android, enabling uninterrupted
-   operations during connectivity disruptions
-1. **Offline Extensions**: Allows for the extension of offline functionalities both in app and database.
-1. Support for Offline 100+ Retail Operations in SQLite.   
-1. **Database Upgrade Support**: Offline now supports database upgrades on both iOS and Android, ensuring
+[!include [banner](../includes/banner.md)]
+
+Starting with the Commerce version 10.0.45 release, the following offline capabilities for iOS and Android are available.
+
+- **Data synchronization scenarios in SQLite**: Enables efficient data synchronization using SQLite. 
+- **Store Commerce SDK**: Provides a comprehensive SDK for developing offline capabilities on iOS.
+- **Offline support**: Makes offline mode available on both iOS and Android, enabling uninterrupted
+   operations during connectivity disruptions.
+- **Offline extensions**: Allows for the extension of offline functionalities both in app and database.
+- **Support for offline**: Supports 100+ offline retail operations in SQLite.   
+- **Database upgrade support**: Supports database upgrades on both iOS and Android, ensuring
    smoother transitions and improved data integrity. 
-1. **Enhanced Offline Register Form**: Improved logging for offline switching events to help diagnose and
-   support offline mode transitions effectively. 
-1. **Consistent Activation Experience**: A unified setup flow across platforms, with an in-app option to
-    enable support offline mode transitions effectively.
+- **Enhanced offline register form**: Improves logging for offline switching events to help diagnose and
+   support effective offline mode transitions. 
+- **Consistent activation experience**: Provides a unified setup flow across platforms, with an in-app option to
+    enable support for effective offline mode transitions.
 
 ## Additional resources
 
