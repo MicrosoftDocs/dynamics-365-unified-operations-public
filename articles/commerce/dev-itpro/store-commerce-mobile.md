@@ -54,7 +54,7 @@ The following table compares the capabilities of the Store Commerce app across W
 
 ## Prerequisites
 
-The Store Commerce mobile apps require the CSU and Commerce headquarters components of Dynamics 365 Commerce. The following table lists the minimum operating system (OS) and CSU versions that required to run the Android and iOS mobile apps. 
+The Store Commerce mobile apps require the CSU and Commerce headquarters components of Dynamics 365 Commerce. The following table lists the minimum operating system (OS) and CSU versions required to run the Android and iOS mobile apps. 
 
 | Prerequisite | Android | iOS  |
 | ------------ | ------- | ---- |
