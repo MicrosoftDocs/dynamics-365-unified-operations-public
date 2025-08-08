@@ -51,7 +51,9 @@ The order appears in the Credit management hold list at **Credit and collections
 
 ### If I set a credit limit of 0.00 USD for a customer, does that customer have unlimited credit?
 
-When Credit management is enabled in Feature management, a credit limit of 0.00 indicates that the customer has *no* credit. If the customer should have unlimited credit, set the **Unlimited credit limit** option to **Yes** on the **Credit and collections** FastTab of the customer record.
+When Credit management is enabled, a credit limit of 0.00 indicates that the customer has *no* credit. To use the blocking rules to put a sales order on hold with 0.00 credit limit, set the **Mandatory credit limit** option to **Yes** on the **Credit and collections** FastTab of the customer record. 
+
+If the customer should have unlimited credit, set the **Unlimited credit limit** option to **Yes** on the **Credit and collections** FastTab of the customer record.
 
 A credit limit of 0.00 indicates unlimited credit only when Credit management is disabled. This behavior is part of the "old" credit functionality.
 
