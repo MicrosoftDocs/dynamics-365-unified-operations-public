@@ -29,9 +29,9 @@ To start to work with the VAT declaration, follow these steps.
     - **VAT declaration format 5.08** – This configuration is required in order to generate the VAT declaration for the year 2021 reporting period.
     - **VAT declaration format 5.09** – This configuration is required in order to generate the VAT declaration for the year 2022 reporting period.
 
-    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    Learn more in [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-2. Download and import the Data management package settings.
+1. Download and import the Data management package settings.
 
     The data package contains the following items:
 
@@ -41,47 +41,47 @@ To start to work with the VAT declaration, follow these steps.
     Follow these steps:
 
     1. In the LCS Shared asset library, select **Data package** as the asset type. Download the package that is named **VAT declaration v.5.08 v.5.09 package**. The file that is downloaded is named **VAT declaration v.5.08 v.5.09 package.zip**.
-    2. In the **Data management** workspace, select **Import**.
-    3. In the **Job details** section, set the following values:
+    1. In the **Data management** workspace, select **Import**.
+    1. In the **Job details** section, set the following values:
 
         - In the **Name** field, enter any name for the job.
         - In the **Data source format** field, select **Package**.
 
-    4. In the **Upload data file** field, select **Upload**, and then select the **VAT declaration v.5.08 v.5.09 package.zip** file that you downloaded earlier.
-    5. After the data entities are uploaded, select **Import**.
+    1. In the **Upload data file** field, select **Upload**, and then select the **VAT declaration v.5.08 v.5.09 package.zip** file that you downloaded earlier.
+    1. After the data entities are uploaded, select **Import**.
 
-3. In Finance, go to **General ledger \> Financial reports setup \> Financial reports**, and validate the financial reports that you imported. (All the data that was imported is presented only in the Russian language.)
+1. In Dynamics 365 Finance, go to **General ledger** \> **Financial reports setup** \> **Financial reports**, and validate the financial reports that you imported. (All the data that was imported is presented only in the Russian language.)
 
     | Report | Report code | Description |
     |---|---|---|
     | VAT declaration 2021 | НДС 2021 | Декларация по налогу на добавленную стоимость (2021) |
     | VAT declaration 2022 | НДС 2022 | Декларация по налогу на добавленную стоимость (2022) |
 
-4. Select the line for the **НДС 2019** report code, and then, on the Action Pane, select **Setup**.
-5. On the **Requisites setup** page, sort the financial report cells by the **Description** column. Then review the list of the financial report cells.
-6. Optional: Set up a financial report for the VAT declaration, and set up calculation rules for financial report cells.
+1. Select the line for the **НДС 2019** report code, and then, on the Action Pane, select **Setup**.
+1. On the **Requisites setup** page, sort the financial report cells by the **Description** column. Then review the list of the financial report cells.
+1. Optional: Set up a financial report for the VAT declaration, and set up calculation rules for financial report cells.
 
     > [!NOTE]
     > You should complete this optional step if you use financial reports to generate data for some cells in section 3 of the VAT declaration, based on the setup of financial report cells.
 
     For more information about how to set up financial reports for Russia, see [Financial reporting (Russia)](rus-financial-reports.md).
 
-7. Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**, and validate the electronic message processing that you imported. (Most of the data that was imported is presented in the Russian language.)
+1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and validate the electronic message processing that you imported. (Most of the data that was imported is presented in the Russian language.)
 
     | Processing | Processing code | Description |
     |---|---|---|
     | VAT declaration 2021 | НДС 5.08 (2021) | Декларация по налогу на добавленную стоимость (2021) |
     | VAT declaration 2022 | НДС 5.09 (2022) | Декларация по налогу на добавленную стоимость (2022) |
 
-8. Follow these steps to set up the ER format that is run when the VAT declaration is generated in electronic format:
+1. Follow these steps to set up the ER format that is run when the VAT declaration is generated in electronic format:
 
-    1. Go to **Tax \> Setup \> Electronic messages \> Message processing actions**.
-    2. Select the **Generate NDS 5.08** action, and then select **Edit**.
-    3. Set the **Show dialog** option to **Yes**.
-    4. In the **Format mapping** field, select the **VAT declaration format 5.08** ER configuration that you downloaded earlier.
-    5. Select the **Generate NDS 5.09** action, and then select **Edit**. 
-    6. Set the **Show dialog** option to **Yes**.
-    7. In the **Format mapping** field, select the **VAT declaration format 5.09** ER configuration that you downloaded earlier.
+    1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions**.
+    1. Select the **Generate NDS 5.08** action, and then select **Edit**.
+    1. Set the **Show dialog** option to **Yes**.
+    1. In the **Format mapping** field, select the **VAT declaration format 5.08** ER configuration that you downloaded earlier.
+    1. Select the **Generate NDS 5.09** action, and then select **Edit**. 
+    1. Set the **Show dialog** option to **Yes**.
+    1. In the **Format mapping** field, select the **VAT declaration format 5.09** ER configuration that you downloaded earlier.
 
 ## Russian VAT declaration versions 5.08 and 5.09 in XML format
 
@@ -107,13 +107,13 @@ In the **Electronic reporting** module, you can review versions 5.08 and 5.09 of
 - **Section 10** – Information about intermediary deals from the Issued factures journal.
 - **Section 11** – Information about intermediary deals from the Received factures journal.
 
-For more information, see [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md).
+Learn more in [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md).
 
 ## Section 2 – The VAT amount that must be paid to budget by the tax agent
 
 Section 2 of the VAT declaration contains VAT amounts that are calculated based on tax agent transactions.
 
-For more information, see [Value-added tax (VAT) for tax agents (Russia)](rus-tax-agent.md).
+Learn more in [Value-added tax (VAT) for tax agents (Russia)](rus-tax-agent.md).
 
 A separate section is created for each tax agent. Each section contains the following information:
 
@@ -159,7 +159,7 @@ Section 3 of the VAT declaration contains the amounts of the registered factures
 
 In section 3, you can also get the amounts of the financial report that is set up for the VAT declaration.
 
-You should set up the financial report and financial report cells to calculate the values of the cells. For more information, see [Financial reporting (Russia)](rus-financial-reports.md).
+You should set up the financial report and financial report cells to calculate the values of the cells. Learn more in [Financial reporting (Russia)](rus-financial-reports.md).
 
 You should define the following names for financial report cells. In this way, the calculated amounts will be automatically exported to section 3 of VAT declaration version 5.09.
 
@@ -239,15 +239,15 @@ To customize the declaration, follow one of these steps.
     In this case, follow these steps:
 
     1. Set up financial report calculation rules for all required cells. These required cells include the cells that marked with an asterisk (\*) in the tables in the previous section.
-    2. Create a customized **Model mapping** ER configuration. Derive it from the configuration that is provided by the Microsoft configuration provider.
-    3. In the customized **Model mapping** ER configuration that you created in the previous step, redefine the model mapping data source so that it's configured as **$RRG.$Section3.$data = '$dataCustom'** instead of **$RRG.$Section3.$data = LISTJOIN(@.'$dataStd', @.'$dataCustom')**.
+    1. Create a customized **Model mapping** ER configuration. Derive it from the configuration that is provided by the Microsoft configuration provider.
+    1. In the customized **Model mapping** ER configuration that you created in the previous step, redefine the model mapping data source so that it's configured as **$RRG.$Section3.$data = '$dataCustom'** instead of **$RRG.$Section3.$data = LISTJOIN(@.'$dataStd', @.'$dataCustom')**.
 
 - Extend the **VAT Declaration helper (RU)** class. (Use methods that start with **getSection3data**, such as **getSection3dataDomesticVAT**.) Or, in a similar manner, create alternative helper methods that calculate the required cells values.
 
     In this case, follow these steps:
 
     1. Create a customized **Model mapping** ER configuration. Derive it from the configuration that is provided by the Microsoft configuration provider.
-    2. Redefine the **$RRG.$Section3.$data.$dataStd** data source element of the model mapping.
+    1. Redefine the **$RRG.$Section3.$data.$dataStd** data source element of the model mapping.
 
 For more information about how to create a derived version of ER configurations to do customization, see [ER Upgrade your format by adopting a new, base version of that format](../../../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md).
 
@@ -273,8 +273,8 @@ Application 1 contains the following information:
 
 Before you generate the sections of the VAT declaration for exports that are taxed at a rate of 0 percent, follow these steps.
 
-1. Go to **Tax \> Setup \> Sales tax \> VAT operation codes**, and create VAT operation codes for export trade.
-2. Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**, and assign VAT operation codes to sales tax codes.
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **VAT operation codes**, and create VAT operation codes for export trade.
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and assign VAT operation codes to sales tax codes.
 
 ### Overview and example
 
@@ -308,7 +308,7 @@ Sections for export are generated based on the registration of export factures a
 
     - 35,400 RUB, which includes 18-percent VAT (5,400 RUB) (This amount is for the goods that were purchased by using Invoice C2.)
 
-For this example, the VAT declaration for the third quarter of 2022 will contain sections 4 and 6. The VAT declaration for the fourth quarter of 2022 will contain section 5.
+For this example, the VAT declaration for the third quarter of 2022 will contain sections 4 and 1. The VAT declaration for the fourth quarter of 2022 will contain section 5.
 
 The following sections provide more details about this example.
 
@@ -396,20 +396,20 @@ For the earlier example, the following data will be present in section 6 of the 
 
 To generate a VAT declaration in electronic format, follow these steps.
 
-1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
-2. Select the format to generate the report in. For example, select **НДС 5.09 (2022)**.
-3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog, select **OK**.
-4. Select the row for the message that was created. Enter a description, and specify the start and end dates for the report. The end date is treated as the base date for financial reports.
-5. Optional: On the **Message additional fields** FastTab, enter the following information.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
+1. Select the format to generate the report in. For example, select **НДС 5.09 (2022)**.
+1. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog, select **OK**.
+1. Select the row for the message that was created. Enter a description, and specify the start and end dates for the report. The end date is treated as the base date for financial reports.
+1. Optional: On the **Message additional fields** FastTab, enter the following information.
 
     | Field name | Description | Field value |
     |---|---|---|
     | CorrectionNumber | Номер коррекции | Enter the number of the correction for corrective accounting reporting. |
     | ReportingDate | Отчетная дата для коррекции | Optionally enter the reporting date for corrective accounting reporting. (The calculation of cells on financial reports considers transactions of the base period and all later transactions, up to the reporting date, that correct the base period.) |
 
-6. On the **Messages** FastTab, select **Update status**, and then, in the **Run processing** dialog, select **OK**. Validate that the message status is changed to **Ready to generate**.
-7. On the **Messages** FastTab, select **Generate report**.
-8. In the **Electronic reporting parameters** dialog, enter the following information.
+1. On the **Messages** FastTab, select **Update status**, and then, in the **Run processing** dialog, select **OK**. Validate that the message status is changed to **Ready to generate**.
+1. On the **Messages** FastTab, select **Generate report**.
+1. In the **Electronic reporting parameters** dialog, enter the following information.
 
     | Field | Description |
     |---|---|
@@ -417,7 +417,7 @@ To generate a VAT declaration in electronic format, follow these steps.
     | At place of | Select where the declaration is provided to the tax authorities: **Location of tax agent**, **Registration of the largest taxpayer**, or **Registration of the taxpayer**. |
     | Correction number | Enter the number of the correction, if you didn't specify it in step 5.|
     | Signatory type | Select who signs the VAT declaration: **Taxpayer** or **Representative**. |
-    | Signatory first name, Signatory middle name, Signatory last name | Enter the full name of the signatory. If you leave these fields blank, the full name of the official of the **Director** type is used as the signatory. (This official is set up at **Organization administration \> Setup \> Contacts \> Officials**.) |
+    | Signatory first name, Signatory middle name, Signatory last name | Enter the full name of the signatory. If you leave these fields blank, the full name of the official of the **Director** type is used as the signatory. (This official is set up at **Organization administration** \> **Setup** \> **Contacts** \> **Officials**.) |
     | Representative company | If you selected **Representative** as the signatory type, enter the name of the representative's company. |
     | Representative document | If you selected **Representative** as the signatory type, enter the document that confirms the representative's authority. |
     | Reporting date | Enter the reporting date, if you didn't specify it in step 5.|
@@ -428,12 +428,12 @@ To generate a VAT declaration in electronic format, follow these steps.
     | The reason code for the tax reimbursement in the application procedure | If you use the application procedure for tax reimbursement, select the reason code for the tax reimbursement in the application procedure. Otherwise, leave the field blank. |
     | The amount of tax claimed for reimbursement in the application procedure | If you use the application procedure for tax reimbursement, enter the amount of tax claimed for reimbursement. Otherwise, leave the field blank. |
 
-8. Select **OK**.
+1. Select **OK**.
 
     When the report is generated, the status of the message is changed to **Generated**. If an error occurs during report generation, the status of the message is changed to **Technical error**.
 
-9. On the **Action log** FastTab, review all user actions for the current message.
-10. Select the **Attachments** button (the paper clip symbol in the upper-right corner of the page), and review the report that was generated. To view the zip file that contains the VAT declaration files, select **Open**.
+1. On the **Action log** FastTab, review all user actions for the current message.
+1. Select the **Attachments** button (the paper clip symbol in the upper-right corner of the page), and review the report that was generated. To view the zip file that contains the VAT declaration files, select **Open**.
 
 Next, you must manually upload the files that are generated to the special third-party software for data preview, data updates, and transfer of the VAT declaration files to the tax authorities through the communication channels.
 
