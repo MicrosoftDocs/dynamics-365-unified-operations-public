@@ -37,7 +37,7 @@ The following illustration shows an example of a warning message and an error me
 
 The type of message (error or warning) depends on the value of the **Message when exceeding credit limit** field on the **Credit limits** FastTab on the **Credit** tab of the **Credit and collections parameters** page. The message is shown because the **Check credit limit on sales order** option is set to **Yes** to specify that the credit limit should be checked on sales orders. 
 
-These warning/error messages can't be suppressed, because they're the same messages that are used with free text invoices. They appear regardless of whether Credit management is enabled or disabled in Feature management. However, when Credit management is enabled, they can be ignored.
+These warning/error messages can't be suppressed, because they're the same messages that are used with free text invoices. They appear regardless of whether Credit management is enabled or disabled. However, when Credit management is enabled, they can be ignored.
 
 ### If the warning/error message isn't used, how can I tell whether a sales order was put on credit hold?
 
