@@ -72,6 +72,11 @@ Data events for update operations are inherently more expensive to process than 
 For more information on virtual fields, see [Computed columns and virtual fields in data entities](../data-entities/data-entity-computed-columns-virtual-fields.md).
 1. The Data events that occur in finance and operations apps are processed asynchronously across multiple systems to deliver them to the target endpoint. Therefore, the order in which they're emitted in finance and operations apps isn't guaranteed to preserve the order in which they're delivered to the endpoints.
 
+2. Data events in D365 F&O are designed to trigger on Create, Update, and Delete (CUD) operations for entities that are backed by tables. When a data entity uses a view as its primary data source, data events do not trigger. This is because:
+ - Views are not directly tied to a single table’s data change.
+ - The system cannot determine which underlying table change should trigger the event.
+ - As a result, the event framework cannot reliably emit notifications for entities based on views.
+
 [!include[banner](../includes/banner.md)]
 
 
