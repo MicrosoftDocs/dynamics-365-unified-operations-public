@@ -23,7 +23,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Use the dashboard in the HR Recruiting app (preview)
+# Use the dashboard in the HR Recruiting app 
 
 This article describes the dashboard in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
