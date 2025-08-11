@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Onboard users to use the HR Recruiting app (preview)
+title: Onboard users to use the HR Recruiting app 
 description: This article explains how to onboard users so that they can use the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/01/2024
+ms.date: 08/11/2025
 ms.topic: article
 # optional metadata
 
@@ -23,9 +23,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Onboard users to use the HR Recruiting app (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Onboard users to use the HR Recruiting app 
 
 This article explains how to onboard users so that they can use the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
@@ -33,8 +31,6 @@ Users who have licenses are seamlessly onboarded to your Dataverse instance in t
 
 - If there's no security group in your Microsoft Power Platform setup, all licensed users in your tenant are automatically synchronized.
 - If there's a security group (recommended), only licensed users in that group are automatically synchronized to Microsoft Power Platform.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Synchronize users
 
