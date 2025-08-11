@@ -47,6 +47,7 @@ If you must reinstall Business performance analytics after you uninstall it, wai
         "msdyn_BpaTablesDataProcessingConfigurations",
         "msdyn_BpaTablesDataLakeSynchronizationWorkspace",
         "msdyn_BpaTablesDataLakeSynchronization",
+        "msdyn_BpaTablesStandardEntities",
         "msdyn_BpaTablesVirtualEntitiesWorkspace",
         "msdyn_BpaTablesVirtualEntities",
         "msdyn_BpaTablesManagedDataLake",
@@ -115,12 +116,13 @@ You can manually uninstall Business performance analytics through the Power Plat
 13. Business performance analytics tables data processing configuration 
 14. Business performance analytics tables data lake synchronization workspace
 15. Business performance analytics tables data lake synchronization
-16. Business performance analytics tables virtual entities workspace
-17. Business performance analytics tables virtual entities
-18. Business performance analytics tables managed data lake 
-19. Business performance analytics pipeline plugins solution
-20. Business performance analytics tables security 
-21. Business performance analytics config 
+16. Business performance analytics tables standard entities
+17. Business performance analytics tables virtual entities workspace
+18. Business performance analytics tables virtual entities
+19. Business performance analytics tables managed data lake 
+20. Business performance analytics pipeline plugins solution
+21. Business performance analytics tables security 
+22. Business performance analytics config 
 
 To delete each of the preceding solutions, follow these steps.
 
