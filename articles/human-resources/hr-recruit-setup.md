@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Set up the HR Recruiting app (preview)
+title: Set up the HR Recruiting app 
 description: This article explains how to set up the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 04/17/2025
+ms.date: 08/15/2025
 ms.topic: how-to
 # optional metadata
 
@@ -23,13 +23,9 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Set up the HR Recruiting app (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Set up the HR Recruiting app 
 
 This article explains how to set up the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -91,32 +87,8 @@ To install the Recruiting add-on app for the first time, follow these steps.
     1. Select **Resources** \> **Dynamics 365 apps**.
     1. Look in the **Status** column for **Dynamics 365 Human Resource recruiting add-on**. If installation was successful, the value is **Installed**. If the value is **Failed**, set up the app again by selecting **Retry installation**.
 
-## Activate connections and flows for the Recruiting app
-
-To activate connections and flows for the Recruiting app, follow these steps.
-
-1. Sign in to [Power Apps](https://make.powerapps.com/).
-2. Select the environment where you installed the Recruiting add-on app.
-3. In the left pane, select **Solutions**.
-4. In the list of solutions, select **Default Solution**.
-5. Select **Connection reference**.
-6. Search for **Recruiting**. The following solutions should be available:
-
-    - Recruiting approvals connection
-    - Recruiting dataverse connection
-
-7. Edit each connection reference. Add a new or existing connection, and make sure that it's enabled.
-
-    - **Recruiting approvals connection:** Add the **Approvals** connector.
-    - **Recruiting dataverse connection:** Add the **Microsoft Dataverse** connector.
-
-8. Go to **Solutions** and select the **Managed** solution.
-9. Select **HCM recruiting flows**.
-10. Select **Cloud flows**, and then select **Turn on** for the cloud flows that are disabled.
-11. Repeat steps 8 through 10 for **HCM Recruiting**.
-
-    > [!NOTE]
-    > Make sure that all the **HCM Recruiting** flows are active. Otherwise, issues can occur. For example, if the **Portal create candidate** flow isn't active, candidates can't create a profile.
+> [!NOTE]
+> Make sure that all the **HCM Recruiting** flows are active. Otherwise, issues can occur. For example, if the **Portal create candidate** flow isn't active, candidates can't create a profile.
 
 ### Recruiting flows
 
