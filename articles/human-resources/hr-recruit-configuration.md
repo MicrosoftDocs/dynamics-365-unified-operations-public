@@ -23,7 +23,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Configuration in the HR Recruiting app (preview)
+# Configuration in the HR Recruiting app 
 
 This article explains how to configure the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
