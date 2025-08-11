@@ -1,6 +1,6 @@
 ---
 title: What's new or changed in Business performance analytics
-description: Learn about feature that are either new or changed in business performance analytics.
+description: Learn about features that are either new or changed in business performance analytics.
 author: jinniew
 ms.author: jiwo
 ms.topic: article
@@ -32,12 +32,11 @@ The June release of Business performance analytics version 2.3.30982 and contain
 |Data model additions and changes| Change BudgetFact partitionId field| Updated BudgetFact to include future dated budget data in incremental refresh. |
 |Data model additions and changes| Update Existing O2C Fact - Sales payment matching|Enhanced O2C fact with updated Sales payment matching logic. |
 |Data model additions and changes| Add LedgerKey into PickingList fact |Added LedgerKey to PickingList fact to support financial traceability.| 
-|Other changes| Purchase invoice charge and tax is not pulling in numbers - P2P| Resolved issue with missing charge and tax values in purchase invoice for P2P scenarios. |
+|Other changes| Purchase invoice charge and tax isn't pulling in numbers - P2P| Resolved issue with missing charge and tax values in purchase invoice for P2P scenarios. |
 |Other changes| Business performance analytics error messages should be enhanced| Improved Business performance analytics self help logs with Microsoft documentation links for better troubleshooting. |
 |Other changes| Balance sheet page filters not set correctly |Corrected filters on Dim - General ledger account. Type to display all values properly. |
 |Other changes| Provide easy way to download Power BI dataset |Enabled Fabric SQL connection for easier Power BI dataset downloads. |
-|Dimension security changes | Dimension security enhancement to enable secure by default| Dimension security is now secure by default. Previously, if fact tables weren't related to a secured dimension, their rows 
-defaulted to visible. The default behavior is updated to hide rows from unrelated Fact tables instead. Users can now select up to eight dimensions.| 
+|Dimension security changes | Dimension security enhancement to enables security by default| Dimension security is now secure by default. Previously, if fact tables weren't related to a secured dimension, their rows defaulted to visible. The default behavior is updated to hide rows from unrelated Fact tables instead. Users can now select up to eight dimensions.| 
 |Other changes| Update UI for new RLS implementation| Refreshed user interface to align with updated role-based security implementation. |
 |Report changes| Rename Dim-Ledger attributes| Updated labels for **Accounting currency** and **Reporting currency** fields in 'Dim - Ledger'. |
 |Report changes| Key fields not exposed in Power BI dataset| Exposed key fields in Fact tables to support extension scenarios. |
