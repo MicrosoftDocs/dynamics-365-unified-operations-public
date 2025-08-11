@@ -29,7 +29,10 @@ To manage the process of shipping your orders, you must apply an *outbound shipm
 The following settings are configured on the **Outbound shipment processing policies** page (**Warehouse management** \> **Setup** \> **Shipping** \> **Outbound shipment processing policies**):
 
 - **Enforce shipment to order matching** – Set this option to *Yes* to allow just one shipment to be associated with each demand order. If you use [Warehouse management only mode with externally managed warehouse processing](wms-only-mode-external-shared-warehouse.md), you must set this option to *Yes*, because that functionality is set up on the source system that is related to the externally managed warehouse.
-- **Fill entire shipment** – Use this field to control whether warehouse wave processing proceeds with shipments only when warehouse work can be created for the full quantities of the shipment lines. The default value is *Respect customer settings*. When that value is used, the **Fill entire shipment** setting that is defined for each customer is respected.
+- **Fill entire shipment** – Choose what to do if work creation fails for one or more lines in a shipment (for example, due to location directive failures). This feature only checks for work creation failures and doesn't check whether the full ordered quantity can be fulfilled. Choose one of the following options:
+    - *Enabled*: If work creation fails for any line in a shipment, then always exclude that entire shipment from the wave (create no work for that shipment), regardless of the setting for each customer.
+    - *Disabled*: If work creation fails for one or more lines in a shipment, then always skip those lines but still create work for all of the other lines, regardless of the setting for each customer.
+    - *Respect customer settings*: Respect the **Fill entire shipment** setting defined for each customer.
 
 ## Define default outbound shipment processing policies
 

@@ -10,6 +10,7 @@ audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-11-29
 ms.service: dynamics-365-op
+ms.custom: sfi-image-nochange
 ---
 
 # Upgrade or replace the SQL Server instance of Microsoft Dynamics 365 Finance + Operations (on-premises) environments

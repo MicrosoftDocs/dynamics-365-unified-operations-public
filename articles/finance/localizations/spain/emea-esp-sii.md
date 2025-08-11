@@ -4,10 +4,11 @@ description: Learn how to set up and use Microsoft Dynamics 365 Finance to work 
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 07/11/2025
 ms.reviewer: johnmichalak
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Immediate supply of information on VAT (Suministro Inmediato de Información del IVA, SII)

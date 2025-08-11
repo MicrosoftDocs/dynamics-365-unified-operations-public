@@ -1,10 +1,10 @@
 --- 
 title: Research or resolve exceptions
-description: Vendor invoice policies run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page. 
+description: Vendor invoice policies run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice policy violations page. 
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 02/11/2022
+ms.date: 08/04/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 
@@ -18,19 +18,19 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Vendor invoice policies are run when you post a vendor invoice by using the **Vendor invoice** page and when you open the vendor invoice **Policy violations** page. You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow. 
+Vendor invoice policies are run when you post a vendor invoice by using the **Vendor invoice** page and when you open the vendor invoice **Policy violations** page. You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow.  
 
-Vendor invoice policies do not apply to invoices that were created in the **Invoice register** or **Invoice journal**. 
+Vendor invoice policies don't apply to invoices created in the **Invoice register** or **Invoice journal**. 
 
-Invoice matching validation does not use vendor invoice policies, but is set up on the **Accounts payable parameters** page.
+Invoice matching validation doesn't use vendor invoice policies, but is set up on the **Accounts payable parameters** page.
 
-This recording uses the USMF demo company. The accounts payable manager or accounting manager role would perform these steps. Before you begin, make sure that the **Invoice matching configuration** key is selected.
+This recording uses the USMF demo company. The accounts payable manager or accounting manager role perform these steps. Before you begin, make sure that the **Invoice matching configuration** key is selected.
 
 
 ## Prepare to create vendor invoice policies
 1. Go to **Accounts payable > Setup > Accounts payable parameters**.
 2. Click the **Invoice validation** tab.
-3. Select or clear the **Automatically update invoice header status** check box.
+3. Select or clear the **Automatically update invoice header status** checkbox.
 4. Click **OK**.
 5. In the **Post invoice with discrepancies** field, select an option.
 6. Close the page.
@@ -73,9 +73,7 @@ This recording uses the USMF demo company. The accounts payable manager or accou
 20. Close the page.
 21. In the **Criteria** field, type a value.
 22. Click **OK**.
-23. Click **OK**.
-24. Close the page.
-25. Close the page.
+23. Close the page.
 
 
 

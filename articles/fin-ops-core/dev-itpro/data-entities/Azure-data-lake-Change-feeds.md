@@ -9,6 +9,7 @@ ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-06-10
+ms.custom: sfi-image-nochange
 
 ---
 

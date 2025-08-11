@@ -8,8 +8,9 @@ ms.date: 12/31/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2017-07-20
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Client-side design APIs

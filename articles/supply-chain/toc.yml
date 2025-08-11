@@ -14,14 +14,14 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.45 (September 2025)
+          href: get-started/whats-new-scm-10-0-45.md         
         - name: Supply Chain Management 10.0.44 (June 2025)
           href: get-started/whats-new-scm-10-0-44.md         
         - name: Supply Chain Management 10.0.43 (March 2025)
           href: get-started/whats-new-scm-10-0-43.md         
         - name: Supply Chain Management 10.0.42 (December 2024)
           href: get-started/whats-new-scm-10-0-42.md
-        - name: Supply Chain Management 10.0.41 (September 2024)
-          href: get-started/whats-new-scm-10-0-41.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1629,6 +1629,8 @@
           href: inventory/quality-instrument-calibration.md
         - name: Flexible sampling plans (preview)
           href: inventory/quality-flexible-sampling-plans.md
+        - name: Acceptance sampling (preview)
+          href: inventory/quality-acceptance-sampling.md
         - name: Work with quality orders
           href: inventory/quality-orders.md
         - name: Customer specific certificate of analysis (COA) (preview)
@@ -1835,6 +1837,8 @@
           href: master-planning/not-enough-capacity-error-resolution.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
+        - name: Lean manufacturing for Planning Optimization (preview)
+          href: master-planning/lean-for-planning-optimization.md
         - name: Unified developer experience for planning optimization (preview)
           href: supply-chain-dev/planning-optimization-dev.md
         - name: Planning Optimization extensibility
@@ -1861,8 +1865,6 @@
           href: master-planning/supplier-requested-confirmed-dates.md
         - name: Create a schedule for a site
           href: master-planning/tasks/create-schedule-site.md
-        - name: Create a plan for a site
-          href: master-planning/tasks/create-plan-site.md
         - name: Master planning with demand forecasts
           href: master-planning/planning-optimization/demand-forecast.md
         - name: Master planning with supply forecasts
@@ -3121,6 +3123,8 @@
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
+        - name: Use external item identifiers to add products to orders (preview)
+          href: sales-marketing/external-item-product-search-lookup.md
         - name: Copy lines between sales orders
           href: sales-marketing/copy-lines-between-sales-orders.md
         - name: Calculate sales totals when prices include sales tax
@@ -3704,7 +3708,7 @@
         - name: Cross-dock products from receiving warehouse to stores
           href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
         - name: Set up a location directive for purchase order putaway
-          href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+          href: warehousing/tasks/set-up-location-directive-purchase-order-put-away.md
         - name: Set up a work template for purchase orders
           href: warehousing/tasks/set-up-work-template-purchase-orders.md
         - name: Location product dimension mixing
@@ -3891,6 +3895,8 @@
           items:
           - name: Work line details
             href: warehousing/work-line-details.md
+          - name: Work blocking and blocking reasons
+            href: warehousing/work-blocking-reasons.md
           - name: Location license plate positioning
             href: warehousing/location-license-plate-positioning.md
           - name: Change work pool on work
@@ -4133,6 +4139,14 @@
           href: warehousing/wms-only-mode-example.md
         - name: Warehouse management only mode frequently asked questions
           href: warehousing/wms-only-mode-faq.md
+    - name: Message processor
+      items:
+      - name: Monitor and control message processor messages
+        href: message-processor/message-processor.md
+      - name: Clean up processed and canceled message processor messages (preview)
+        href: message-processor/message-processor-cleanup.md
+      - name: Business events, custom message queues, and custom message types
+        href: message-processor/developer/message-processor-develop.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
@@ -4141,8 +4155,6 @@
         href: supply-chain-dev/create-new-transportation-management-engine.md?context=/dynamics365/context/supply-chain
       - name: Extend inventory on-hand data entities
         href: inventory/extend-on-hand-entities.md
-      - name: Create and process message queues and message types
-        href: supply-chain-dev/message-processor.md
     - name: Distributed hybrid topology (deprecated)
       items:
       - name: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers

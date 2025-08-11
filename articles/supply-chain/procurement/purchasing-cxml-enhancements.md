@@ -7,8 +7,9 @@ ms.reviewer: kamaybac
 ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
 ms.topic: how-to
 ms.date: 11/18/2024
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Purchasing cXML Enhancements

@@ -4,7 +4,7 @@ description: Learn how to use work templates and location directives to determin
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 04/19/2024
+ms.date: 08/06/2025
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -23,9 +23,12 @@ The instructions that warehouse workers receive on a mobile device are determine
 
 The **Work templates** page lets you define the work operations that must be performed in the warehouse. Typically, warehouse work operations consist of a pair of actions: a warehouse worker picks up on-hand inventory in one location and then puts the picked inventory down in another location.
 
-Work templates consists of a header and associated lines. Each work template is for a specific *work order type*. Many work order types are associated with source documents, such as purchase or sales orders. However, other work order types represent separate warehouse processes, such as cycle counting. The *work pool ID* lets you organize work into groups.
+Work templates consist of a header and associated lines. Each work template is for a specific *work order type*. Many work order types are associated with source documents, such as purchase or sales orders. However, other work order types represent separate warehouse processes, such as cycle counting. The *work pool ID* lets you organize work into groups.
 
-Use the settings in the work header definition to determine when a new piece of work should be created. For example, you can set a maximum number of pick lines and a maximum expected pick time. Then, if the work for a sales order picking process exceeds either of those values, that work is split into two pieces of work.
+Use the settings in the work header definition to determine when a new work record should be created. For example, you can set a maximum number of pick lines and a maximum expected pick time. Then, if the work for a sales order picking process exceeds either of those values, that work is split into two pieces of work. Use the  **General** tab of the work template to set limits associated with each work record and set up work-split criteria such as **Estimated pick time**, **Volume**, **Weight**, **Quantity**, and **Unit**.
+
+> [!NOTE]
+> Items associated with multiple units of measure (such as pieces, boxes, and pallets) should be set up with a unit sequence group and relevant conversion ratios. These settings allow you, for example, to create an order using one unit (such as boxes) and then use a different unit (such as pieces) to split the work associated with the order. Learn more in [Unit of measure and stocking policies](unit-measure-stocking-policies.md).
 
 Use the **Work header breaks** button to define when the system should create new work headers. For example, to create a work header for each *order number*, select **Edit query** on the Action Pane, and then add the **Order number** field to the **Sorting** tab of the query editor. Fields that are added to the **Sorting** tab are available for selection as *grouping fields*. To set your grouping fields, select **Work header breaks** on the Action Pane, and then, for each field that you want to use as a grouping field, select the check box in the **Group by this field** column.
 

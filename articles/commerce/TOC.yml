@@ -21,6 +21,7 @@
         - name: Commerce 10.0.43 (January 2025)
           href: get-started/whats-new-commerce-10-0-43.md
         - name: Commerce 10.0.42 (December 2024)
+          href: get-started/whats-new-commerce-10-0-42.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -269,6 +270,8 @@
           href: dev-itpro/retail-store-system-begin.md
         - name: Configure and install Commerce Scale Unit (self-hosted)
           href: dev-itpro/retail-store-scale-unit-configuration-installation.md
+        - name: Download and install Commerce Scale Unit
+          href: dev-itpro/retail-store-scale-unit-download-install.md
         - name: Modern POS configuration and installation
           href: dev-itpro/retail-modern-pos-device-activation.md
         - name: Manage accounts and devices from headquarters
@@ -459,7 +462,7 @@
               href: dev-itpro/faster-checkout-pos.md
             - name: Gift cards
               items:
-              - name: Support for external gift cards
+              - name: Support for external gift cards (preview)
                 href: dev-itpro/gift-card.md
               - name: Cross-company data sharing for gift cards
                 href: dev-itpro/data-sharing-gift-cards.md
@@ -1335,6 +1338,8 @@
             href: customize-site-navigation.md
           - name: Create a page URL
             href: create-page-URL.md
+          - name: Redirect category and product pages to canonical URLs (preview)
+            href: e-commerce-extensibility/add-custom-redirect.md
         - name: Adventure Works theme
           items:
           - name: Adventure Works theme overview
@@ -1465,6 +1470,8 @@
           items:
           - name: Map module
             href: map-module.md
+          - name: Azure Maps module (preview)
+            href: azure-maps-module.md
           - name: Store selector module
             href: store-selector.md
         - name: Account management modules
@@ -1699,7 +1706,7 @@
             href: localizations/dev-itpro/emea-pol-fpi-sample-sdk.md
       - name: France
         items:
-        - name: Cash register functionality (preview)
+        - name: Cash register functionality
           href: localizations/france/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/france/emea-fra-fi-deployment.md

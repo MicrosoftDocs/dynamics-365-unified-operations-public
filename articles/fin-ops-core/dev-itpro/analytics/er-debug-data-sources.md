@@ -5,7 +5,6 @@ author: kfend
 ms.author: filatovm
 ms.topic: how-to
 ms.date: 04/22/2020
-ms.custom:
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -13,6 +12,8 @@ ms.search.validFrom: 2020-04-01
 ms.search.form: ERSolutionTable, EROperationDesigner
 ms.dyn365.ops.version: Release 10.0.11
 ms.assetid: 
+ms.custom:
+  - sfi-image-nochange
 ---
 
 # Debug data sources of an executed ER format to analyze data flow and transformation

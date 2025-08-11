@@ -11,6 +11,7 @@ ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.author: ikondratenko
 ms.search.validFrom: 2024-05-01
+ms.custom: sfi-image-nochange
 ---
 
 # Electronic invoicing for Poland

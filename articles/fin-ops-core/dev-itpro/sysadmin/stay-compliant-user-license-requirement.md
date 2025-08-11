@@ -5,12 +5,13 @@ author: ianceicys-msft
 ms.author: ceian
 ms.topic: how-to
 ms.date: 05/16/2025
-ms.custom: 
-  - bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Stay compliant with user licensing requirements

@@ -4,13 +4,14 @@ description: Learn how to place existing certificates and update the references 
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 01/30/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global 
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25 
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Certificate rotation

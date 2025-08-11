@@ -1,10 +1,10 @@
 ---
 title: Costa Rica overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Costa Rica, including links that direct to resources about creating vendor records. 
-author: kfend
-ms.author: kfend
+author: v-pedrobusto2025
+ms.author: v-pedrobusto
 ms.topic: overview
-ms.date: 06/11/2025
+ms.date: 07/30/2025
 ms.reviewer: johnmichalak
 ms.search.region: Costa Rica
 ms.search.validFrom: 2023-10-20
@@ -17,10 +17,24 @@ ms.dyn365.ops.version: App 10.0.38
 
 This article includes information and links to resources that can help you set up legal entities with a primary address in Costa Rica.
 
-## Principal configurations
+## Table of contents
+
+- [Main configurations](#main-configurations)
+- [General Reports](#general-reports)
+- [Electronic Invoice format](#electronic-invoice-format)
+- [Additional resources](#additional-resources)
+
+## Main configurations
 - [Set up a legal entity and tax information for Costa Rica](set-up-legal-entity-tax-costa-rica.md)
 - [Create customer and vendor records with an address in Costa Rica](ltm-create-customer-vendor-costa-rica.md)
 - [Configure sales and purchase invoices for Costa Rica](ltm-configure-invoices-costa-rica.md)
+
+## General Reports
+
+- [Printing configuration for General Ledger LATAM](ltm-general-ledger.md)
+- [Print a Ledger Posting report for LATAM](ltm-ledger-posting-report.md)
+- [VAT book printing configuration](ltm-vat-book.md)
+- [Printing configuration for invoice layout](ltm-invoice-layout-print.md)
 
 ## Electronic Invoice format
 - [Connection configuration for Costa Rica electronic invoicing](ltm-costa-rica-ei-connec-configuration.md)

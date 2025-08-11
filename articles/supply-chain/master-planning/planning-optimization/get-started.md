@@ -3,11 +3,12 @@ title: Get started with master planning
 description: Learn how to start to use master planning functionality in Dynamics 365 Supply Chain Management, including outlines on availability and licensing. 
 author: Henrikan
 ms.author: henrikan
-ms.topic: how-to
-ms.date: 05/15/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+  - bap-template
 ---
 
 # Get started with master planning
@@ -18,7 +19,7 @@ Master planning in Supply Chain Management is provided by an external service ca
 
 ## Availability
 
-Planning Optimization is currently available in the following Azure geographies: United States, United States government cloud, Canada, Brazil, Europe, France, United Kingdom, Norway, Switzerland, Australia, Asia Pacific, Japan, United Arab Emirates, South Africa and India. If you try to install the add-in from another geographic region, then LCS will show a message that this geographic isn't supported. For more information about Azure geographies and the related regions, see [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Planning Optimization is currently available in the following Azure geographies: United States, United States government cloud, Canada, Brazil, Europe, France, United Kingdom, Norway, Switzerland, Australia, Asia Pacific, Japan, United Arab Emirates, South Africa, and India. If you try to install the add-in from another geographic region, then Lifecycle Services (LCS) shows a message that this geographic isn't supported. For more information about Azure geographies and the related regions, see [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 > [!NOTE]
 > Planning Optimization doesn't support on-premises deployments of Dynamics 365 Supply Chain Management.
@@ -44,7 +45,7 @@ Before you install the Planning Optimization Add-in, the following prerequisites
 - You must sign in to your Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you get an error message regarding missing user permissions while installing the Planning Optimization Add-in, follow these steps:
     1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
     1. Open the environment where you want to install the add-in.
-    1. Go to **Settings \> Users** and select your user account from the list to see its details.
+    1. Go to **Settings** \> **Users** and select your user account from the list to see its details.
     1. From your user details page, select the **Client Access License (CAL) information** link.
     1. On the **Client Access License (CAL) information** page, make sure that **Access Mode** is set to *Read-Write*.
   
@@ -55,7 +56,7 @@ Before you install the Planning Optimization Add-in, the following prerequisites
 To use Planning Optimization, you must enable its configuration key. To do so:
 
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-1. Go to **System administration \> Setup \> License configuration**.
+1. Go to **System administration** \> **Setup** \> **License configuration**.
 1. On the **Configuration keys** tab, select the check box for **Planning Optimization**.
 1. Turn off maintenance mode, as described in [Maintenance mode](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
@@ -73,7 +74,7 @@ To install the Planning Optimization Add-in:
 1. Follow the installation guide, and agree to the terms and conditions.
 1. Select **Install**.
 1. On the **Environment add-ins** FastTab, you should see that Planning Optimization is installing.
-1. After a few minutes, **Installing** should change to **Installed** (you may need to refresh the page). When installed, you're ready to activate Planning Optimization in Dynamics 365 Supply Chain Management.
+1. After a few minutes, **Installing** should change to **Installed** (you might need to refresh the page). When installed, you're ready to activate Planning Optimization in Dynamics 365 Supply Chain Management.
 
 The main purpose of installing the Planning Optimization add-in is to connect the service and the environment. Therefore, you must install the add-in separately on each environment where you'll use Planning Optimization, regardless of any code moved between the environments.
 

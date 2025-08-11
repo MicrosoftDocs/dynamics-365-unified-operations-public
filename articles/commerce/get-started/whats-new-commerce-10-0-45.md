@@ -2,7 +2,7 @@
 title: Preview features in Dynamics 365 Commerce 10.0.45 (September 2025)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.45. 
 author: johnmichalak
-ms.date: 07/25/2025
+ms.date: 07/28/2025
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.45
 
 [!include [banner](../includes/banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.45. This version has a build number of 10.0.XXXXX and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.45. This version has a build number of 10.0.2345 and is available on the following schedule:
 
 - **Preview of release:** July 2025
 - **General availability of release (self-update):** September 2025
@@ -32,9 +32,18 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Point of sale  | Store Commerce offline in iOS and Android Public Preview  | This release introduces offline capabilities for Store Commerce on iOS and Android devices. Customers can now use Store Commerce on these platforms even when offline, ensuring seamless operations and reliable business continuity. Key features include support for SQLite-based offline capabilities,new SDK experience for iOS enabling extensibility in app and database, database upgrade support, and enhanced offline register form. |  admins |
-| Commerce Store App | Replace Bing Maps with Azure Maps                     | This feature replaces the deprecated Bing Maps integration with Azure Maps in the Commerce Store app. It ensures continued support for map-based functionality and enhances the user experience with improved performance, security, and scalability. Key capabilities include store locator, map rendering, geocoding, and user location detection. | admins |
+| Point of sale  | Store Commerce offline in iOS and Android Public Preview  | This release introduces offline capabilities for Store Commerce on iOS and Android devices. You can now use Store Commerce on these platforms even when offline, ensuring seamless operations and reliable business continuity. Key features include support for SQLite-based offline capabilities, a new SDK experience for iOS that enables extensibility in the app and database, database upgrade support, and an enhanced offline registration form. |  admins |
+| Point of sale  | Funds available in external gift cards post-payments  | By default, the balance on gift cards is added immediately when a cashier issues a gift card or loads funds onto it—**before** the customer completes payment that increases the business risk until the customer completes the payment. Starting with version **10.0.45**, a new feature is available that **delays the balance addition** until **after payment is successfully received**. Thus, reducing operational risk and improving reliability. Learn more: [External gift cards](../dev-itpro/gift-card.md)  |  admins |
+| Point of sale  | Replace Bing Maps with Azure Maps            | This feature replaces the deprecated Bing Maps integration with Azure Maps in the Commerce Store app. It ensures continued support for map-based functionality and enhances the user experience with improved performance, security, and scalability. Key capabilities include store locator, map rendering, geocoding, and user location detection. | admins     |
 
+## Features turned on by default in this release
+
+The following table lists the features that became turned on by default in version 10.0.43. You can still disable these features in **Feature management**, if necessary.
+
+| Module | Feature name | More information |
+|--|--|--|
+| Retail and commerce | *Validate Mode of Delivery on Retail Channel Sales Quotation* | This feature ensures that only valid modes of deliveries are used with commerce sales quotations. |
+| Retail and commerce | *Enable generation of a stronger channel reference ID* | This feature generates a more secure 12-character channel reference ID (order confirmation ID) that are passed in the query string when an order is looked up. |
 
 ## Resources
 
@@ -44,9 +53,9 @@ Microsoft Dynamics 365 Commerce version 10.0.45 includes platform updates. To le
   
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.45, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXXX).
+For information about the bug fixes included in each of the updates that are part of version 10.0.45, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1043223).
 
-### Dynamics 365 and industry clouds: 2024 release wave 2 plan
+### Dynamics 365 and industry clouds: 2025 release wave 2 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 

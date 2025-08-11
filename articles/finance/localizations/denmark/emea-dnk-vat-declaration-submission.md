@@ -9,6 +9,7 @@ ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 
+ms.custom: sfi-image-nochange
 ---
 
 # Submit a VAT return in XML format to the Danish Tax Agency

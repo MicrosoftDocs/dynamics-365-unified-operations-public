@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for PayPal
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal.
 author: BrianShook
-ms.date: 02/28/2024
+ms.date: 07/16/2025
 ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
@@ -83,7 +83,7 @@ To test the PayPal payment connector, you must first create PayPal developer cre
     > The terms agreed to for the creation of a PayPal developer account are between the organization or individual creating the account and PayPal. Microsoft is in no way liable and makes no warranty as to the terms specified the agreement. These instructions are for informational purposes only. 
 
 8. After you agree to the terms, specify your business type, and select **Continue**.
-9. Next, go to the [PayPal Developer page](https://developer.paypal.com/developer/applications) and select **Log in to Dashboard**.
+9. Next, go to the [PayPal Developer page](https://developer.paypal.com/home/) and select **Log In**.
 10. Sign in using the credentials used when creating your PayPal account.
 11. In the developer dashboard, select the **Default Application** in the list of RestAPI apps.
 12. Note the **Client ID** and **Secret** for your sandbox account. These values are used to set up the PayPal payment connector in Dynamics 365 Commerce.

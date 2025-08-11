@@ -10,9 +10,10 @@ ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.assetid: e4518f56-57b5-4cf1-b197-3fbaea7be861
-ms.custom: 
+ms.custom:
   - bap-template
   - evergreen
+  - sfi-image-nochange
 ---
 
 # Details Master form pattern
