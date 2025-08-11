@@ -5,7 +5,7 @@ author: JodiChristiansen
 ms.author: jchrist
 ms.topic: faq
 ms.custom: 
-ms.date: 03/20/2025
+ms.date: 08/11/2025
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.search.region: Global
@@ -53,7 +53,7 @@ The order appears in the Credit management hold list at **Credit and collections
 
 When Credit management is enabled, a credit limit of 0.00 indicates that the customer has *no* credit. To use the blocking rules to put a sales order on hold with 0.00 credit limit, set the **Mandatory credit limit** option to **Yes** on the **Credit and collections** FastTab of the customer record. 
 
-If the customer should have unlimited credit, set the **Unlimited credit limit** option to **Yes** on the **Credit and collections** FastTab of the customer record.
+If the customer should have unlimited credit, on the **Credit and collections** FastTab of the customer record, set the **Unlimited credit limit** option to **Yes**.
 
 A credit limit of 0.00 indicates unlimited credit only when Credit management is disabled. This behavior is part of the "old" credit functionality.
 
