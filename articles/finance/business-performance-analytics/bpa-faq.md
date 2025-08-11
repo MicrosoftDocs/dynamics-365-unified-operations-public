@@ -45,10 +45,10 @@ The recommended workaround is to use **InPrivate** or **Incognito** modes.
 
 If users can't isolate their session using private browsing, follow these steps to ensure correct permissions are applied:
 1. Go to the Power Platform Admin Portal and log in as an admin.
-2. Locate the user account normally used to log into Microsoft services.
-3. Assign the BPA Admin or BPA User role to this account. For more information, see [Access Business performance analytics](/access-bpa.md).
+2. Locate the user account used to log into Microsoft services.
+3. Assign the BPA Admin or BPA User role to this account. For more information, see [Access Business performance analytics](access-bpa).
 4. Wait a few minutes for the role assignment to propagate.
-5. Have the user refresh the page or log out and log back in with the correct account.
+5. Refresh the page or log out and log back in with the correct account.
 
 This process ensures the correct permissions are set, even if private browsing isn't available.
 
