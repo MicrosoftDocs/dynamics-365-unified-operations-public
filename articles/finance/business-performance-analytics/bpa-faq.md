@@ -7,7 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 06/09/2025
+ms.date: 08/11/2025
 ---
 
 # Business performance analytics FAQ
@@ -39,18 +39,18 @@ The setup of the Business performance analytics app takes up to 60 minutes. Howe
 ### I'm having trouble opening Business performance analytics. What can I do? 
 If you're accessing Business performance analytics from the maker portal, click **Play** in the top right corner to avoid viewing the app in editor mode.
 
-### Why am I unable to log into BPA even though I have the correct roles? 
-Some users may encounter login issues when accessing Business Performance Analytics (BPA) due to conflicting cached credentials, especially if they’ve previously signed into multiple environments or tenants. This can prevent the correct authentication token from being used, resulting in access errors.
-Recommended Workaround: Use InPrivate or Incognito Mode
+### Why am I unable to log into Business performance analytics even though I have the correct roles? 
+Some users may encounter login issues when accessing Business performance analytics due to conflicting cached credentials, especially if they’ve previously signed into multiple environments or tenants. This can prevent the correct authentication token from being used, resulting in access errors.
+The recommended workaround is to use **InPrivate** or **Incognito** modes.
 
-If users cannot isolate their session using private browsing, follow these steps to ensure correct permissions are applied:
-Go to the Power Platform Admin Portal and log in as an admin.
-Locate the user account normally used to log into Microsoft services.
-Assign the BPA Admin or BPA User role to this account (as described in the https://learn.microsoft.com/en-us/dynamics365/finance/business-performance-analytics/access-bpa).
-Wait a few minutes for the role assignment to propagate.
-Have the user refresh the page or log out and log back in with the correct account.
+If users can't isolate their session using private browsing, follow these steps to ensure correct permissions are applied:
+1. Go to the Power Platform Admin Portal and log in as an admin.
+2. Locate the user account normally used to log into Microsoft services.
+3. Assign the BPA Admin or BPA User role to this account. For more information, see [Access Business performance analytics](/access-bpa.md).
+4. Wait a few minutes for the role assignment to propagate.
+5. Have the user refresh the page or log out and log back in with the correct account.
 
-This process ensures the correct permissions are set, even if private browsing is not available.
+This process ensures the correct permissions are set, even if private browsing isn't available.
 
 
 ## Data visibility and history
