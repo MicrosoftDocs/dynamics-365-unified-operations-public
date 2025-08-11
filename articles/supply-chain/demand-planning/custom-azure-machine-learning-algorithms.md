@@ -16,7 +16,7 @@ ms.search.form:
 
 In addition to the standard forecasting algorithms provided with Demand planning, you can also create your own custom algorithms and use them in your [Demand planning forecast models](design-forecast-models.md). To do so, you must create and publish your algorithms using Microsoft Azure Machine Learning, set up a connection from Demand planning to Azure, and place one of the following types of steps to your forecast models as needed (instead of using the standard *Forecast* step):
 
-- *Custom* step – Lets you use custom algorithms that you've created using Azure Machine Learning. Use the *Custom* step with custom algorithms that you haven't used with the legacy Supply Chain Management forecasting functionality. This type of step communicates with Azure through a *batch* endpoint and allows you to pass any custom parameters your algorithm requires, though no preconfigured parameters are set up by default.
+- *Custom* step – Lets you use custom algorithms that you've created using Azure Machine Learning. Use the *Custom* step with custom algorithms that you haven't used with the legacy Supply Chain Management forecasting functionality. This type of step communicates with Azure through a [*batch* endpoint](/azure/machine-learning/concept-endpoints-batch) and allows you to pass any custom parameters your algorithm requires, though no preconfigured parameters are set up by default.
 - *Finance and operations* step – Lets you use custom Azure Machine Learning algorithms that you created for use with the legacy Supply Chain Management forecasting functionality, as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md). This type of step communicates with Azure through a *pipeline* endpoint and is preconfigured to pass the parameters supported by legacy Supply Chain Management forecasting functionality.
 
 This article describes the setup that is required to enable Demand planning to connect to your [Azure Machine Learning workspace](/azure/machine-learning/concept-workspace), including how to set up your Azure Machine Learning workspace, how to connect to that workspace in Demand planning, and how to set up your forecast models to run your custom algorithms.
@@ -75,8 +75,11 @@ Follow these steps to set up the Azure Machine Learning service connection in De
 
 1. Sign in to Demand planning.
 1. On the left navigation pane, select **Custom Azure ML**.
-1. In the toolbar, select **New** to create a new connection and set the following fields for it:
+1. In the toolbar, select **New** to create a new connection.
 
+    :::image type="content" source="media/custom-machine-learning-configuration-settings.png" alt-text="Screenshot of the Azure Machine ML configuration page." lightbox="media/custom-machine-learning-configuration-settings.png":::
+
+1. Make the following settings for the new connection:
     - **Name** – Enter a name for the connection.
     - **Subscription ID** – Enter the ID for your Azure subscription.
     - **Resource group name** – Enter the name of the resource group that contains your Azure Machine Learning workspace.
@@ -102,6 +105,9 @@ Follow these steps to set up a forecast model that uses a custom Azure Machine L
     - Use a *Finance and operations* step if you want to connect to an Azure Machine Learning algorithm that you created for use with the legacy Supply Chain Management forecasting functionality.
 
 1. Open the **Actions** menu for the *Finance and operations* or *Custom* step and then select **Settings**.
+
+    :::image type="content" source="media/custom-machine-learning-step-settings.png" alt-text="Screenshot of the Configure step dialog for the Finance and operations step." lightbox="media/custom-machine-learning-step-settings.png":::
+
 1. In the **Configure step** dialog, make the following settings for the step:
     - **Step name** – Enter a name for the step.
     - **Description** – Enter a description for the step.
