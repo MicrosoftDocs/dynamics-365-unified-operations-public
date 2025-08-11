@@ -85,7 +85,7 @@ Each time Business performance analytics refreshes, your source data are transfo
 ## Uninstall
 ### How do I uninstall Business performance analytics?
 
-There are two ways to uninstall Business performance analytics: using code-based uninstallation or manual uninstallation. For detailed instructions, see [Uninstall Business performance analytics](uninstall-bpa.md#uninstall-business-performance-analytics).
+There are two ways to uninstall Business performance analytics: using code-based uninstallation or manual uninstallation. For detailed instructions, see [Uninstall Business performance analytics](uninstall-bpa.md).
 
 > [!NOTE]
 > If you uninstall and then reinstall Business performance analytics, no new reports that were created are saved.
