@@ -557,7 +557,7 @@ items:
           items:
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
-        - name: Human Resources Recruiting app (preview)
+        - name: Human Resources Recruiting app 
           items:
           - name: Configure the Human Resources recruiting app
             items:
@@ -587,7 +587,7 @@ items:
             items:
             - name: Set up interview schedules
               href: hr-interview-schedule.md
-          - name: Upload resumes
+          - name: Upload resumes (preview)
             items:
             - name: Bulk upload resumes
               href: bulk-resume-upload.md
