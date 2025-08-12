@@ -107,15 +107,15 @@ When you migrate from V3 to V4, the following compatibility features are availab
 
 ### iOS limitations
 
-Device code authentication isn't available on iOS platforms. Username and password authentication is the only supported method for iOS devices.
+Device code authentication isn't available on iOS platforms. Username/password authentication is the only supported method for iOS devices.
 
 ### Lack of support for certificate authentication
 
 V4, like V3, doesn't support certificate authentication. Users must use the device code or username/password authentication method.
 
-### Onpremises limitations
+### On-premises limitations
 
-Device code authentication will not be available on iOS and Android platforms for onpremise. Username and password authentication is the only supported method for Android and iOS devices onpremises solutions. 
+For on-premises installations of Supply Chain Management, device code authentication isn't supported for iOS or Android devices; only username/password authentication is available for these platforms.
 
 ## <a name="rollout"></a>Rollout schedule and transition period support
 
