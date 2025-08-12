@@ -19,13 +19,16 @@ When you enable piece picking, product confirmation is automatically selected. F
 
 You can also use the quantity and unit of measure (UOM) that is associated with a scanned bar code. This will work for receiving on inbound flows including mixed license plate receiving, purchase order item, transfer order item, and load item. It also works for piece picking where scanning the bar code will add the quantity to the total number of confirmed pieces converting between the UOM on the bar code and the work unit. When counting the UOM on the bar code, if it is confirmed that the quantity is allowed for counting on the sequence group, the quantity will be added to the total count.
 
+> [!IMPORTANT]
+> When using bar codes to confirm a product, make sure the Scanning option is enabled. You can do this by opening the bar code configuration and selecting the checkbox under the General tab.
+
 ## Where it applies
 
 Piece picking works for all counting work and for the initial pick for any type of work. Piece picking does not apply if the item is controlled by serial numbers or if it is a production or kanban pick from a license plate (LP) location and the item is set to staging.
 
 ## Set up piece picking
 
-1.  On a mobile device menu item, open the setup form for work confirmation: Warehouse management > **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**. 
+1.  On a mobile device menu item, open the setup form for work confirmation: **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**. 
 2. From the mobile device menu item, open Work confirmation setup.
 
 The following options become available for selection when the work type is pick or counting.
@@ -36,6 +39,8 @@ The following options become available for selection when the work type is pick 
 | Piece picking confirmation | Available for pick and counting work types. Product confirmation is automatically selected. Allows you to confirm each piece of inventory from the mobile device. |
 |  Maximum number of pieces  |                   Available for pick work if piece picking confirmation is enabled. Sets a limit to the number of pieces that you must confirm.                   |
 
+> [!NOTE]
+> Eg. If the Maximum number of pieces is set to 1, the system will prompt the worker to confirm the product only once. After that, the remaining quantity for the work must be entered manually.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
