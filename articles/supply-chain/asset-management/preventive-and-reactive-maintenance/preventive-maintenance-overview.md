@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 06/28/2024
+ms.date: 08/12/2025
 ms.custom: 
   - bap-template
 ---
@@ -21,6 +21,6 @@ Maintenance plans are used for preventive maintenance on individual assets. Main
 
 The following illustration provides an overview of the work flow from creating maintenance plans and maintenance rounds to creating work orders for assets, based on those maintenance plans and maintenance rounds.
 
-![Figure 1.](media/01-preventive-maintenance.png)
+:::image type="content" source="media/01-preventive-maintenance.png" alt-text="Diagram of maintenance workflow showing steps from creating maintenance plans and rounds to generating work orders for assets." lightbox="media/01-preventive-maintenance.png":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
