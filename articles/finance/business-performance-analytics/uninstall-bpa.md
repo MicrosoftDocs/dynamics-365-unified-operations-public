@@ -7,7 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 9/11/2024
+ms.date: 8/06/2025
 ---
 
 # Uninstall Business performance analytics
@@ -33,31 +33,27 @@ If you must reinstall Business performance analytics after you uninstall it, wai
     const WEB_API = `https://${ORG}/api/data/v9.2`;
     const SOLUTIONS = [
         "msdyn_BpaAnchor",
-        "msdyn_BpaPlugins",
         "msdyn_Bpa",
+        "msdyn_BpaReports",
+        "msdyn_BpaPlugins",
         "msdyn_BpaPermissions",
-        "msdyn_BpaPermissions_TIP",
         "msdyn_BpaTables",
         "msdyn_BpaControls",
         "msdyn_BpaTablesAnchorSolution",
         "msdyn_BpaTablesUserRoles",
-        "msdyn_BpaTablesUserRoles_TIP",
         "msdyn_BpaAnalyticalTablesWorkspace",
         "msdyn_BpaAnalyticalTables",
         "msdyn_BpaTablesTransformationJobFlows",
-        "msdyn_BpaTablesTransformationJobFlows_TIP",
         "msdyn_BpaTablesDataProcessingConfigurations",
-        "msdyn_BpaTablesDataProcessingConfigurations_TIP",
         "msdyn_BpaTablesDataLakeSynchronizationWorkspace",
         "msdyn_BpaTablesDataLakeSynchronization",
         "msdyn_BpaTablesStandardEntities",
         "msdyn_BpaTablesVirtualEntitiesWorkspace",
         "msdyn_BpaTablesVirtualEntities",
         "msdyn_BpaTablesManagedDataLake",
-        "msdyn_BpaTablesManagedDataLake_TIP",
         "msdyn_BpaPipelinePlugins",
         "msdyn_BpaTablesSecurity",
-        "msdyn_BpaTablesSecurity_TIP",
+        "msdyn_BpaConfig"
     ];
     
     // Get all solutions
@@ -106,23 +102,27 @@ Deletion of all the solutions requires approximately 20 minutes. If the operatio
 You can manually uninstall Business performance analytics through the Power Platform admin center. The solutions must be manually deleted in the following order:
 
 1. Business performance analytics anchor solution
-2. Business performance analytics plugins solution
-3. Business performance analytics solution
-4. Business performance analytics permissions
-5. Business performance analytics tables
-6. Business performance analytics controls
-7. Business performance analytics tables anchor solution
-8. Business performance analytics tables user roles
-9. Business performance analytics analytical tables workspace
-10. Business performance analytics analytical tables
-11. Business performance analytics tables transformation job flows
-12. Business performance analytics tables data processing configuration
-13. Business performance analytics tables data lake synchronization
-14. Business performance analytics tables standard entities
-15. Business performance analytics tables virtual entities
-16. Business performance analytics tables managed data lake
-17. Business performance analytics pipeline plugins solution
-18. Business performance analytics tables security
+2. Business performance analytics solution
+3. Business performance analytics reports 
+4. Business performance analytics plugins solution
+5. Business performance analytics permissions 
+6. Business performance analytics tables
+7. Business performance analytics controls
+8. Business performance analytics tables anchor solution
+9. Business performance analytics tables user roles 
+10. Business performance analytics analytical tables workspace
+11. Business performance analytics analytical tables
+12. Business performance analytics tables transformation job flows
+13. Business performance analytics tables data processing configuration 
+14. Business performance analytics tables data lake synchronization workspace
+15. Business performance analytics tables data lake synchronization
+16. Business performance analytics tables standard entities
+17. Business performance analytics tables virtual entities workspace
+18. Business performance analytics tables virtual entities
+19. Business performance analytics tables managed data lake 
+20. Business performance analytics pipeline plugins solution
+21. Business performance analytics tables security 
+22. Business performance analytics config 
 
 To delete each of the preceding solutions, follow these steps.
 
