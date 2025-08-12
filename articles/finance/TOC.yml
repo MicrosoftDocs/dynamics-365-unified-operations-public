@@ -4567,6 +4567,8 @@
           items:
             - name: Business performance analytics
               href: business-performance-analytics/business-performance-analytics-home-page.md
+            - name: Business performance analytics release notes
+              href:  business-performance-analytics/bpa-release-notes.md
             - name: Setup and administration
               items: 
                 - name: Configure business performance analytics
@@ -4641,6 +4643,10 @@
                   href: business-performance-planning/calculated-columns.md
                 - name: Load data using dataflows
                   href: business-performance-planning/load-data-dataflows.md
+                - name: Audit cubes
+                  items:
+                   - name: Audit cubes
+                     href: business-performance-planning/cube-audit.md
             - name: Power BI Visuals
               items:
                 - name: Overview
