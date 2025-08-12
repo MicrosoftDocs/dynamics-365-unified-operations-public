@@ -924,6 +924,8 @@
               href: fixed-assets/tasks/transfer-fixed-asset.md
             - name: Split a fixed asset
               href: fixed-assets/tasks/split-fixed-asset.md
+            - name: Split and transfer a fixed asset (preview)
+              href: fixed-assets/split-transfer-fa.md
             - name: Reduce balance depreciation after a split
               href: fixed-assets/reduce-balance-depreciation-after-split.md
             - name: Set up fixed asset groups
