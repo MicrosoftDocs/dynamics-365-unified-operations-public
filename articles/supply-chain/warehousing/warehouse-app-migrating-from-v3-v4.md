@@ -113,6 +113,10 @@ Device code authentication isn't available on iOS platforms. Username and passwo
 
 V4, like V3, doesn't support certificate authentication. Users must use the device code or username/password authentication method.
 
+### Onpremises limitations
+
+Device code authentication will not be available on iOS and Android platforms for onpremise. Username and password authentication is the only supported method for Android and iOS devices onpremises solutions. 
+
 ## <a name="rollout"></a>Rollout schedule and transition period support
 
 ### V4 public preview
