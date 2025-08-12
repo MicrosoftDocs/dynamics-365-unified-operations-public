@@ -16,7 +16,7 @@ ms.search.form: SMADispatchBoard
 
 1. Go to **Service management** \> **Periodic** \> **Dispatch board**.
 
-2. Select **Advanced** to display the Gantt chart at the top of the page and the tabs in the lower pane.
+2. On the **Action Pane**, select **Adjust view settings** and then use the **Adjust view settings** dialog to select the date range and other options for the service activities you want to see.
 
 3. Expand each dispatch team list.
 
