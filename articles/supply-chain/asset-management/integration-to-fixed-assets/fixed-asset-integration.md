@@ -3,11 +3,12 @@ title: Integrate asset management with fixed assets
 description: Learn how to integrate the Asset management and Fixed assets modules, so that you can link fixed assets with maintenance assets.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: how-to
-ms.date: 04/17/2020
-ms.custom:
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: 
+ms.topic: how-to
+ms.date: 08/12/2025
+ms.custom:
+  - bap-template
 ---
 
 # Integrate asset management with fixed assets
@@ -103,6 +104,5 @@ To remove an existing association between a maintenance asset and a fixed asset,
 1. Find and open the maintenance asset.
 1. On the **Fixed asset** FastTab, clear the value from the **Fixed asset number** field.
 1. On the Action Pane, select **Save**.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn about types of changes that are often made to components or r
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
-ms.search.form: XXXX
+ms.search.form:
 ms.topic: how-to
 ms.date: 07/31/2025
 ms.custom:
