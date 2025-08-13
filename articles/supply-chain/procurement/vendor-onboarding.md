@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 ms.topic: how-to
-ms.date: 07/30/2024
+ms.date: 08/13/2025
 ms.custom: 
   - bap-template
 ---
@@ -117,8 +117,8 @@ The following table shows the statuses that vendor requests can have.
 |----------------------------|-------------|
 | Draft                      | The vendor request hasn't yet been submitted. |
 | Request submitted          | The vendor request has been submitted, and the first step in the workflow is being processed. |
-| Pending review             | If there are multiple reviewers in a workflow task, a reviewer can accept the task of reviewing the vendor request and then complete the review. If there is only one reviewer, that participant can complete the review by selecting *Completed* in the workflow action. They don't have to accept the work item first. |
-| Request pending approval   | The vendor request has been routed to the participants for approval, and there is an option to request additional information. A request for additional information cause the work item to be routed back to the submitter. The vendor request can also be approved or rejected while it's in this status. |
+| Pending review             | If there are multiple reviewers in a workflow task, a reviewer can accept the task of reviewing the vendor request and then complete the review. If there's only one reviewer, that participant can complete the review by selecting *Completed* in the workflow action. They don't have to accept the work item first. |
+| Request pending approval   | The vendor request has been routed to the participants for approval, and there's an option to request additional information. A request for additional information causes the work item to be routed back to the submitter. The vendor request can also be approved or rejected while it's in this status. |
 | Application change request | Additional information has been requested by the approver, and the vendor request has been routed to the person who submitted the vendor request. The submitter can add required information and then resubmit the vendor request. If a vendor request is resubmitted, the status is changed back to *Request pending approval* status. |
 | Request approved           | This status is a final state. |
 | Request rejected           | This status is a final state. |
