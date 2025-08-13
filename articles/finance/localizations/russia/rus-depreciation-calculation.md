@@ -1,45 +1,45 @@
 ---
 title: Calculate depreciation for Russia
-description: Learn how to calculate depreciation for Russian fixed assets, including an outline and step-by-step process for calculating fixed asset depreciations.
+description: Learn how to calculate depreciation for Russian fixed assets in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 08/15/2025
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
-
 ---
 
 # Calculate depreciation for Russia
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to calculate depreciation for Russian fixed assets.
+This article explains how to calculate depreciation for Russian fixed assets in Microsoft Dynamics 365 Finance.
 
 ## Calculate fixed asset depreciation
 
-1. Select **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
-2. Select the **List** tab, and then select **New** to create a journal.
-3. In the **Name** field, select a journal name.
-4. In the **Description** field, you can change the description of the journal.
-5. Select **Lines** to open the **Journal voucher** page.
-6. Select the **Overview** tab, select **New** to open the **Add to journal** dialog box, and create one depreciation transaction for one fixed asset.
+To calculate fixed asset depreciation, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
+1. Select the **List** tab, and then select **New** to create a journal.
+1. In the **Name** field, select a journal name.
+1. In the **Description** field, you can change the description of the journal.
+1. Select **Lines** to open the **Journal voucher** page.
+1. Select the **Overview** tab, select **New** to open the **Add to journal** dialog, and create one depreciation transaction for one fixed asset.
 
     > [!NOTE]
-    > To create depreciation transactions for several fixed assets, on the **Journal voucher** page, select **Group operations** \> **Depreciation** to open the **Depreciation** dialog box. On the **Records to include** FastTab, select **Filter** to open the **Assets** dialog box, where you can set the criteria that are used to select fixed assets.
+    > To create depreciation transactions for several fixed assets, on the **Journal voucher** page, select **Group operations** \> **Depreciation** to open the **Depreciation** dialog. On the **Records to include** FastTab, select **Filter** to open the **Assets** dialog, where you can set the criteria that are used to select fixed assets.
 
-7. In the **Transaction date** field, select the date of the next calculation period. If no depreciation was calculated for the previous periods, depreciation transactions are created in the journal for all months before the transaction date, except the month of the transaction.
-8. In the **Transaction type** field, select **Depreciation**.
-9. In the **FA inventory number** field, select a fixed asset number.
-10. In the **Value model** field, select a fixed asset value model. If you don't select a model, transactions for all value models are created in the journal.
-11. In the **Reason code** field, select a reason code. In the **Reason comment** field, you can change the reason for the depreciation transaction.
-13. Select **OK**. Depreciation transactions are created in the journal for all value models that you set up on the **Value models** page.
-14. Select **Validate** \> **Validate** to validate the transaction details.
-15. Select **Post** \> **Post** to post the journal. Fixed asset and ledger transactions are created.
+1. In the **Transaction date** field, select the date of the next calculation period. If no depreciation was calculated for the previous periods, depreciation transactions are created in the journal for all months before the transaction date, except the month of the transaction.
+1. In the **Transaction type** field, select **Depreciation**.
+1. In the **FA inventory number** field, select a fixed asset number.
+1. In the **Value model** field, select a fixed asset value model. If you don't select a model, transactions for all value models are created in the journal.
+1. In the **Reason code** field, select a reason code. In the **Reason comment** field, you can change the reason for the depreciation transaction.
+1. Select **OK**. Depreciation transactions are created in the journal for all value models that you set up on the **Value models** page.
+1. Select **Validate** \> **Validate** to validate the transaction details.
+1. Select **Post** \> **Post** to post the journal. Fixed asset and ledger transactions are created.
 
 ## Calculate or reverse depreciation by using the tax non-linear group depreciation method 
 
@@ -51,21 +51,23 @@ Use the following procedures to set up a depreciation method, and to calculate o
 
 ### Calculate fixed asset depreciation by using the tax non-linear group method
 
-1. Select **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
-2. Select **New** to create a journal.
-3. In the **Name** field, select a journal name.
-4. In the **Description** field, change the description of the journal.
-5. Select **Lines** to open the **Journal voucher** page.
-6. Select **Group operations** \> **Depreciation by group** to open the **Depreciation by group** dialog box.
+To calculate fixed asset depreciation by using the tax non-linear group method, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
+1. Select **New** to create a journal.
+1. In the **Name** field, select a journal name.
+1. In the **Description** field, change the description of the journal.
+1. Select **Lines** to open the **Journal voucher** page.
+1. Select **Group operations** \> **Depreciation by group** to open the **Depreciation by group** dialog.
 
     > [!NOTE]
     > If you select **Tax nonlinear group method** as the depreciation method, you can't calculate the depreciation for a tax value model by using the single or group depreciation operation.
 
-7. In the **Transaction date** field, select the date of the transaction.
-8. On the **Records to include** FastTab, select **Filter** to open the **Assets** dialog box, and then set the criteria that are used to select fixed assets.
-9. Select **OK**. Depreciation transactions are created in the journal.
-10. Select **Validate** \> **Validate** to validate the journal.
-11. Select **Post** \> **Post** to post the journal. Corresponding fixed asset and ledger transactions are created.
+1. In the **Transaction date** field, select the date of the transaction.
+1. On the **Records to include** FastTab, select **Filter** to open the **Assets** dialog, and then set the criteria that are used to select fixed assets.
+1. Select **OK**. Depreciation transactions are created in the journal.
+1. Select **Validate** \> **Validate** to validate the journal.
+1. Select **Post** \> **Post** to post the journal. Corresponding fixed asset and ledger transactions are created.
 
 ### Calculating a depreciation bonus
 
@@ -75,18 +77,20 @@ Use the **Depreciation bonus** page to calculate the depreciation bonus for fixe
 
 ### Reverse fixed asset depreciation
 
-1. Select **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
-2. Select the **List** tab, and then select **New** to create a journal.
-3. In the **Name** field, select a journal name.
-4. In the **Description** field, you can change the description of the journal.
-5. Select **Lines** to open the **Journal voucher** page.
-6. Select **Group operations** \> **Storno of depreciation** to open the **Storno of depreciation** dialog box.
-7. In the **Date of storno** field, select a date for the depreciation reversal.
-8. In the **Accounting** field, select a fixed asset value model.
-9. On the **Records to include** FastTab, select **Filter** to open the **Assets** dialog box, and then set the criteria that are used to select fixed assets.
-10. Select **OK**. Depreciation reversal transactions are created in the journal.
-11. Select **Validate** \> **Validate** to validate the transaction details.
-12. Select **Post** \> **Post** to post the journal. The fixed asset depreciation transaction is reversed, and the ledger transaction is updated accordingly.
+To reverse fixed asset depreciation, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
+1. Select the **List** tab, and then select **New** to create a journal.
+1. In the **Name** field, select a journal name.
+1. In the **Description** field, you can change the description of the journal.
+1. Select **Lines** to open the **Journal voucher** page.
+1. Select **Group operations** \> **Storno of depreciation** to open the **Storno of depreciation** dialog.
+1. In the **Date of storno** field, select a date for the depreciation reversal.
+1. In the **Accounting** field, select a fixed asset value model.
+1. On the **Records to include** FastTab, select **Filter** to open the **Assets** dialog, and then set the criteria that are used to select fixed assets.
+1. Select **OK**. Depreciation reversal transactions are created in the journal.
+1. Select **Validate** \> **Validate** to validate the transaction details.
+1. Select **Post** \> **Post** to post the journal. The fixed asset depreciation transaction is reversed, and the ledger transaction is updated accordingly.
 
 ## Additional resources
 
