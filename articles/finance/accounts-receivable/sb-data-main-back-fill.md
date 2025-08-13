@@ -4,7 +4,7 @@ description: Learn how to backfill deferral schedule lines in Microsoft Dynamics
 author: JodiChristiansen
 ms.author: reetuchopra
 ms.topic: how-to
-ms.date: 07/25/2025
+ms.date: 08/13/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
