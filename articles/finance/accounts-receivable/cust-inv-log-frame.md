@@ -4,7 +4,7 @@ description: Learn how to set up and use the Customer invoice logging framework 
 author: JodiChristiansen
 ms.author: reetuchopra
 ms.topic: article
-ms.date: 04/21/2025
+ms.date: 08/13/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -21,7 +21,7 @@ ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 This article explains how to set up and use the customer invoice logging framework to track sales order and free text invoice history Microsoft Dynamics 365 Finance. 
 
 ## Prerequisites
-Before you enable the Customer Invoice Logging Framework for Sales Order and FTI History Tracking, the following prerequisites must be met:
+Before you use the **Customer invoice logging framework for sales order and free text invoice history tracking** feature, the following prerequisites must be met:
 
 In Feature management, enable the **Customer invoice logging framework for sales order and FTI history tracking** feature. This feature introduces a structured logging framework to track the lifecycle of customer 
 invoice documents, including sales orders and free text invoices. The logged data supports a detailed posting history in the **Customer invoice workspace**, improving traceability and diagnostics. 
