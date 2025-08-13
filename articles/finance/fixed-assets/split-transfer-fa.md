@@ -4,7 +4,7 @@ description: Learn about Fixed asset intercompany split and transfer
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 08/06/2025  
+ms.date: 08/13/2025  
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
