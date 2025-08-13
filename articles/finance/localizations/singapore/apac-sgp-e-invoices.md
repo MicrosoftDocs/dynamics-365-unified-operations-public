@@ -116,7 +116,7 @@ To review and update the **Singaporean electronic invoice (SG)** electronic invo
 1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
-![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](../belgium/emea-bel-einoices-docs.jpg)
+ ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](../belgium/emea-bel-einoices-docs.jpg)
 
 > [!NOTE]
 > If you have created the derived analogues of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
@@ -190,9 +190,6 @@ To enter the registration numbers, follow these steps.
 
     The **UEN** number is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element and the **GST** number is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cac:PartyTaxScheme\\cbc:CompanyID** element in the electronic invoice XML file that is generated. It's used as the seller's identification during the submission process.
 
-> [!NOTE]
-> The contact information for the legal entity is automatically retrieved from the related **Person** that is associated with the current user in Dynamics 365 Finance.
-
 ## Configure customer data
 
 ### Enter the address
@@ -202,17 +199,6 @@ To enter the address, follow these steps.
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer.
 1. On the **Addresses** FastTab, add a valid address for the selected customer.
-
-### Enter the contact person
-
-To enter the contact person, follow these steps.
-
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
-1. Select a customer.
-1. On the **Sales demographics** FastTab, in the **Primary contact** field, select the person who is considered the buyer's contact.
-
-    > [!NOTE]
-    > All available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid email address and phone number.
 
 ### Buyer identification
 
@@ -252,7 +238,7 @@ To configure electronic document properties, follow these steps.
 1. Save your changes, and return to the **Electronic document property types** page.
 1. Save your changes, and close the page.
 
-    ![Screenshot that shows the property type added on the Electronic document property types page.](emea-bel-einoices-schemas.jpg)
+    ![Screenshot that shows the property type added on the Electronic document property types page.](../belgium/emea-bel-einoices-schemas.jpg)
 
 ### Enter the Seller schema code
 
