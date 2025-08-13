@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.24
 This article explains how to backfill deferral schedule lines in Microsoft Dynamics 365 Finance. 
 
 ## Data maintenance
-Starting in Microsoft Dynamics 365 Finance version 10.0.45, there's an option for the user to run the data maintenance job for backfilling Deferral schedule line fields. This data maintenance job is designed to 
+Beginning in Microsoft Dynamics 365 Finance version 10.0.45, there's an option for the user to run the data maintenance job for backfilling Deferral schedule line fields. This data maintenance job is designed to 
 backfill essential fields (Voucher, JournalNum, and TransDate) in the SubBillDeferralScheduleLine table. The values are fetched by referencing the corresponding data from the LedgerJournalTrans table. 
 
 
@@ -29,7 +29,7 @@ To run the data maintenance job, follow these steps:
 2. Deferral schedule lines may exist without journal information due to historical gaps or technical constraints during migration. This job ensures that the SubBillDeferralScheduleLine table is
 properly linked to its originating ledger journal transactions.
 3. The goal of this job is to ensure data consistency and accurate journal linkage for each deferral schedule line.
-4. This job isn't scheduled by default and must be run manually by the user. It is intended as a one-time data correction task, typically after an upgrade, migration, or initial setup of the Subscription billing
+4. This job isn't scheduled by default and must be run manually by the user. It's intended as a one-time data correction task, typically after an upgrade, migration, or initial setup of the Subscription billing
 module. Users can rerun the job if data discrepancies are later identified.
 
 
