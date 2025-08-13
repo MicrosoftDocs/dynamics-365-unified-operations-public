@@ -1742,8 +1742,6 @@
                           href: localizations//iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/finance                           
                         - name: Poland (preview)
                           href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
-                        - name: Singapore
-                          href: localizations/singapore/apac-sgp-e-invoices.md?context=/dynamics365/context/finance
                         - name: Saudi Arabia
                           items:
                             - name: Get started with Electronic invoicing for Saudi Arabia
@@ -1752,6 +1750,8 @@
                               href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                             - name: Simplified electronic invoices in Commerce for Saudi Arabia
                               href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
+                        - name: Singapore
+                          href: localizations/singapore/apac-sgp-e-invoices.md?context=/dynamics365/context/finance
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Tax Calculation
