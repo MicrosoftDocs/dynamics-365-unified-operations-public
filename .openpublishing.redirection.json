@@ -28466,6 +28466,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/supply-chain/supply-chain-dev/message-processor.md",
+      "redirect_url": "/dynamics365/supply-chain/message-processor/message-processor",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/commerce/b2b/b2b2b-aka-b2b-indirect.md",
       "redirect_url": "/dynamics365/commerce/b2b/b2b-indirect",
       "redirect_document_id": false
@@ -28473,6 +28478,11 @@
     {
       "source_path": "articles/supply-chain/master-planning/tasks/create-plan-site.md",
       "redirect_url": "/dynamics365/supply-chain/master-planning/master-planning-home-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/transportation/tasks/set-up-location-directive-purchase-order-put-away.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/tasks/set-up-location-directive-purchase-order-put-away",
       "redirect_document_id": false
     }
   ]

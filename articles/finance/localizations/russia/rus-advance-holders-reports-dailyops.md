@@ -1,12 +1,12 @@
 ---
 title: Advance reports with budget control (Russia)
-description: Learn how to generate subledgers from source documents such as invoices, packing slips, and picking lists for customers and vendors.
+description: Learn how to generate subledgers from source documents such as invoices, packing slips, and picking lists for customers and vendors in Russia with Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/01/2024
+ms.date: 08/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-31
@@ -17,9 +17,11 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../../includes/banner.md)]
 
+This article explains how to generate subledgers from source documents such as invoices, packing slips, and picking lists for customers and vendors in Russia with Microsoft Dynamics 365 Finance.
+
 An advance report is used to report travel expenses that an employee incurs during a business trip. You can distribute the expense amount across ledger dimensions. You can view the ledger entries and verify the distribution of the expense amount. Advance report posting supports ledger line functions, exchange adjustments, and advance adjustments. If the advance report transactions are split by distribution, the canceled advance report supports the creation of a storno accounting transaction to account the distribution.
 
-For more information, see [Daily operations for advance holders in Russia](rus-advance-holders-daily-operations.md).
+Learn more in [Daily operations for advance holders in Russia](rus-advance-holders-daily-operations.md).
 
 ## Budget control for advance reports
 
@@ -29,8 +31,9 @@ An advance report is primarily used to report travel expenses that an employee i
 
 To enable budget control for advance reports, follow these steps.
 
-1. On the **Budget control configuration** page, on the **Select source documents** tab, select **Advance reports** as a source document for budget control, and enable budget checks for advance report lines.
-2. On the **Budget funds available** tab, define the calculation that determines whether budget funds for advance reports are available.
+1. In Dynamics 365 Finance, go to the **Budget control configuration** page.
+1. On the **Select source documents** tab, select **Advance reports** as a source document for budget control, and enable budget checks for advance report lines.
+1. On the **Budget funds available** tab, define the calculation that determines whether budget funds for advance reports are available.
 
 ### Budget calculation
 

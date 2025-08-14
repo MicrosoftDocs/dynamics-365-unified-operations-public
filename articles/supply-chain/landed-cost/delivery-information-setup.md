@@ -1,8 +1,8 @@
 ---
 title: Delivery information setup
 description: Learn how to set up delivery information for the Landed cost module, including outlines on shipping ports and tracking control centers.
-author: lisascholz91
-ms.author: lisascholz
+author: prasungoel 
+ms.author: prasungoel 
 ms.reviewer: kamaybac
 ms.search.form: ITMPortTable, ITMLeadTimeTable, ITMLegTable
 ms.topic: how-to
