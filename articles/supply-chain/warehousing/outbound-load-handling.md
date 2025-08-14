@@ -28,11 +28,15 @@ To manage the process of shipping your orders, you must apply an *outbound shipm
 
 The following settings are configured on the **Outbound shipment processing policies** page (**Warehouse management** \> **Setup** \> **Shipping** \> **Outbound shipment processing policies**):
 
-- **Enforce shipment to order matching** – Set this option to *Yes* to allow just one shipment to be associated with each demand order. If you use [Warehouse management only mode with externally managed warehouse processing](wms-only-mode-external-shared-warehouse.md), you must set this option to *Yes*, because that functionality is set up on the source system that is related to the externally managed warehouse.
+- **Enforce shipment to order matching** – Set this option to *Yes* to allow just one shipment to be associated with each demand order. Upon confirming the shipment with this policy, the system updates the deliver remainder on the source order line to reflect the quantity that was actually shipped. Upon reversing the shipment, the deliver remainder is restored to the original ordered quantity.
+If you use [Warehouse management only mode with externally managed warehouse processing](wms-only-mode-external-shared-warehouse.md), you must set this option to *Yes*, because that functionality is set up on the source system that is related to the externally managed warehouse.
 - **Fill entire shipment** – Choose what to do if work creation fails for one or more lines in a shipment (for example, due to location directive failures). This feature only checks for work creation failures and doesn't check whether the full ordered quantity can be fulfilled. Choose one of the following options:
     - *Enabled*: If work creation fails for any line in a shipment, then always exclude that entire shipment from the wave (create no work for that shipment), regardless of the setting for each customer.
     - *Disabled*: If work creation fails for one or more lines in a shipment, then always skip those lines but still create work for all of the other lines, regardless of the setting for each customer.
     - *Respect customer settings*: Respect the **Fill entire shipment** setting defined for each customer.
+
+> [!NOTE]
+> Automatic deliver remainder update upon shipment confirmation and reversal described above, when **Enforce shipment to order matching** is enabled, is the functionality enabled from release 10.0.46.
 
 ## Define default outbound shipment processing policies
 
