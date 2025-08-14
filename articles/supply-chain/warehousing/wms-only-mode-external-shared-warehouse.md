@@ -160,6 +160,10 @@ In the *WOM* legal entity, you must create a [source system](wms-only-mode-setup
 On the source system **Outbound shipment orders** FastTab, the following is a mandatory option to support external shared warehouse processing:
 - **Outbound shipment processing policy** – Select a policy where the **Enforce shipment to order matching** option is set to *Yes*. Learn more in [Outbound shipment processing policies](outbound-load-handling.md#outbound-shipment-policies).
 
+> [!NOTE]
+> [Outbound shipment processing policies](outbound-load-handling.md#outbound-shipment-policies)  have changed for the **Enforce shipment to order matching** option starting from release 10.0.46. In earlier releases, if the shipped quantity differed from the ordered quantity, the deliver remainder has to be manually updated to match the shipped quantity before confirming the shipment.
+Failure to do so results in applying the update on the *LE1* legal entity.
+
 In the *LE1* legal entity, you must set up an external warehouse management system of the *Legal entity* type and link it to the *SS-LE1* [source system](wms-only-mode-setup.md#source-systems) in the *WOM* legal entity. You can complete this setup by going to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **External warehouse management systems**.
 
 In the *LE1* legal entity, you can now go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Warehouses** and select the warehouses that you want to handle externally. Specify the external warehouse management system and the external warehouse name from the *WOM* legal entity. You should select a default location that doesn't use license plates. This location is used for all inventory changes from the external warehouses in the *LE1* legal entity.
