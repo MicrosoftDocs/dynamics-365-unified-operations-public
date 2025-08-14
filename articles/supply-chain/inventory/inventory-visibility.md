@@ -3,12 +3,12 @@ title: Inventory Visibility Add-in overview
 description: Learn about what Inventory Visibility is and describes its features, including outlines on extensibility, scalability, and feature highlights.
 author: yufei-huang
 ms.author: yufeihuang
+ms.reviewer: kamaybac
+ms.search.form: 
 ms.topic: overview
-ms.date: 05/27/2024
+ms.date: 08/13/2025
 ms.custom:
   - bap-template
-ms.reviewer: kamaybac
-ms.search.form:
 ---
 
 # Inventory Visibility Add-in overview
@@ -34,7 +34,7 @@ The Inventory Visibility service can be scaled up or down, depending on your dat
 
 The following illustration shows the Inventory Visibility architecture.
 
-[<img src="media/inventory-visibility-architecture.png" alt="Inventory Visibility architecture." title="Inventory Visibility architecture" width="720" />](media/inventory-visibility-architecture.png)
+:::image type="content" source="media/inventory-visibility-architecture.png" alt-text="Inventory Visibility architecture." lightbox="media/inventory-visibility-architecture.png":::
 
 ## Feature highlights
 
@@ -72,31 +72,32 @@ Microsoft aims to provide out-of-box integration with warehouse management proce
 
 The following illustration shows a high-level summary of existing features and how they can be positioned in the data flow.
 
-[<img src="media/inventory-visibility-feature-overview.png" alt="Inventory Visibility feature overview." title="Inventory Visibility feature overview" width="720" />](media/inventory-visibility-feature-overview.png)
+:::image type="content" source="media/inventory-visibility-feature-overview.png" alt-text="Inventory Visibility feature overview." lightbox="media/inventory-visibility-feature-overview.png":::
 
 ## Licensing, API Usage, and Storage for Inventory Visibility Service
 
-The **Inventory Visibility Service (IVS)** is a first-party microservice available in two versions.
+The Inventory Visibility Service (IVS) is a first-party microservice available in two versions, which are described in the following subsections.
 
-- **Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management** – For companies that have a valid Supply Chain Management license, Inventory Visibility is already included.
+### Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management
 
+The *Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management* version is for companies that have a valid Supply Chain Management license (which always includes Inventory Visibility).
 
-There is **no throttling** on how frequently customers can call IVS APIs. Most **on-hand inventory queries** are served from **in-memory cache** and do **not trigger Dataverse API calls**. However, operations such as **inventory adjustments (post onhand change)**, **soft reservations** or **ATP(shceduled onhand change) queries** via IVS **do result in Dataverse API calls**.
+There's no throttling on how frequently you can call IVS APIs. Most on-hand inventory queries are served from an in-memory cache and therefore don't trigger Dataverse API calls. However, operations such as *inventory adjustments (post on-hand change)*, *soft reservations, or *ATP (scheduled on-hand change) queries* via IVS *do* result in Dataverse API calls. These Dataverse calls are subject to [Dataverse service protection API limits](/power-apps/developer/data-platform/api-limits), which are enforced *per web server*. These limits accumulate across web servers, and Microsoft automatically scales web server capacity based on your usage and performance needs. While the exact number of web servers isn't fixed or user-configurable, the platform scales to meet high-volume enterprise workloads as needed.
 
-These Dataverse calls are subject to [**Dataverse service protection API limits**](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits), which are enforced **per web server**. These limits accumulate across web servers, and Microsoft **automatically scales web server capacity** based on customer usage and performance needs. While the exact number of web servers is not fixed or customer-configurable, the platform is designed to scale to meet high-volume enterprise workloads.
+In terms of storage, IVS usually stores aggregated inventory data in Dataverse. However, there are two exceptions:
 
-In terms of storage, in most use cases Inventory Visibility Service stores **aggregated inventory data** in Dataverse. However, there are two exceptions:
+- **[Transaction logging](inventory-visibility-track-inventory-log-history.md)** – When enabled, this feature logs successful inventory API posts and stores them in Dataverse for audit and traceability.
+- **[Sync external inventory adjustments to Supply Chain Management](inventory-visibility-sync-changes.md)** – This feature stores detailed omnichannel inventory transactions in Dataverse before syncing them to Supply Chain Management.
 
-- [**Transaction logging**](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-track-inventory-log-history): When enabled, this feature logs successful inventory API posts and stores them in Dataverse for audit and traceability.
-- [**Sync external inventory adjustments to Finance and Operations**](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility-sync-changes): This feature stores detailed omnichannel inventory transactions in Dataverse before syncing them to Supply Chain Management.
+Even for these two exceptions, you can archive the transactions if you don't need them anymore.
 
-- Even for these two features the transactions can be archived if no longer needed. 
+For most use cases, therefore, the data footprint is typically small and is usually covered by the Dataverse storage included with your Supply Chain Management licenses. Each full-access user license for a Microsoft finance and operations app (such as Supply Chain Management) contributes additional Dataverse storage capacity, which accumulates across all licensed users (typically at 250 MB of database storage and 2 GB of file storage per user).
 
-Therefore for most use cases, the data footprint is typically **small** and is usually **covered by the Dataverse storage included with Dynamics 365 licenses**. Each full-access Dynamics 365 user license (such as SCM) contributes additional Dataverse storage capacity — typically **250 MB of database storage** and **2 GB of file storage** per user — which accumulates across all licensed users. However, this is intended as a general reference, and actual storage usage may vary depending on the customer’s configuration and transaction volume. For more details, see [Dataverse capacity-based storage details](https://learn.microsoft.com/en-us/power-platform/admin/capacity-storage).If you really want to do an estimate on your usage, you can enable Inventory Visibility on a sandbox environment, test out with a small subset of your data and check the dataverse usage
+Your actual storage usage might vary depending on your configuration and transaction volume. Learn more in [Dataverse capacity-based storage details](/power-platform/admin/capacity-storage). If you need to estimate your usage, you can enable Inventory Visibility on a sandbox environment, load a small subset of your data, and check the Dataverse usage. If your estimated API and storage usage exceeds the standard allocation, you can contact your Microsoft sales representative.
 
-If your estimated API and storage usage exceeds the standard allocation, you can contact your sales representative.
+### Inventory Visibility Service component for IOM
 
-- **Inventory Visibility Service is also available as a component of IOM** – This version is for either Intelligent Order Management (IOM) customers or companies that aren't using Supply Chain Management as their ERP system. The license is included in the Intelligent Order Management bundle. Learn more in [Intelligent Order Management overview](/dynamics365/intelligent-order-management/overview).
+The *Inventory Visibility Service component for Intelligent Order Management (IOM)* version is for companies that use IOM or companies that aren't using Supply Chain Management as their ERP system. The license is included in the Intelligent Order Management bundle. Learn more in [Intelligent Order Management overview](/dynamics365/intelligent-order-management/overview).
 
 ## Inventory Visibility terminology
 
