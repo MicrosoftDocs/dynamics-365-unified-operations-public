@@ -161,8 +161,7 @@ On the source system **Outbound shipment orders** FastTab, the following is a ma
 - **Outbound shipment processing policy** – Select a policy where the **Enforce shipment to order matching** option is set to *Yes*. Learn more in [Outbound shipment processing policies](outbound-load-handling.md#outbound-shipment-policies).
 
 > [!NOTE]
-> [Outbound shipment processing policies](outbound-load-handling.md#outbound-shipment-policies)  have changed for the **Enforce shipment to order matching** option starting from release 10.0.46. In earlier releases, if the shipped quantity differed from the ordered quantity, the deliver remainder has to be manually updated to match the shipped quantity before confirming the shipment.
-Failure to do so results in applying the update on the *LE1* legal entity.
+> [Outbound shipment processing policies](outbound-load-handling.md#outbound-shipment-policies)  have changed for the **Enforce shipment to order matching** option starting from release 10.0.46. In earlier releases, if the shipped quantity differed from the ordered quantity, the deliver remainder has to be manually updated to match the shipped quantity before confirming the shipment. Failure to do so results in applying the update on the *LE1* legal entity.
 
 In the *LE1* legal entity, you must set up an external warehouse management system of the *Legal entity* type and link it to the *SS-LE1* [source system](wms-only-mode-setup.md#source-systems) in the *WOM* legal entity. You can complete this setup by going to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **External warehouse management systems**.
 
