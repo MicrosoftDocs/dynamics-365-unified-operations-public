@@ -11,13 +11,11 @@ ms.custom:
 - bap-template
 ---
 
-# Add custom pricing attributes for POS
+# Add custom pricing attributes for Commerce Point of Sale (POS)
 
-<!-- KFM: We need to define "POS". Point of sale? Is that part of Commerce? -->
+Unified pricing management lets you configure pricing rules that can also consider values of custom pricing attributes for products, customers, sales-lines, and sales-tables. It provides the following two components <!-- KFM: is it correct to call these "methods"? --> that you can use to implement your own custom request handler and develop your logic: `GetCustomizedPricingPropertiesRequest` and `GetCustomizedPricingPropertiesResponse`.
 
-Unified pricing management lets you configure pricing rules that can also consider values of custom pricing attributes for products, customers, sales-lines, and sales-tables. It provides the following two methods <!-- KFM: is it correct to call these "methods"? --> that you can use to implement your own custom request handler and develop your logic: `GetCustomizedPricingPropertiesRequest` and `GetCustomizedPricingPropertiesResponse`.
-
-Custom attributes are marked in `GUPPRICINGATTRIBUTELINK` <!-- KFM: What kind of a thing is `GUPPRICINGATTRIBUTELINK`. A table? Where do we find this? -->using a specific identifier, which indicates that they require special logic in Commerce Scale Unit (CSU) to be supported in POS. To mark a pricing attribute as custom, the `GUPPRICINGATTRIBUTELINK.TypeName` column must be set to `Customization`.
+Custom attributes are marked in the `GUPPRICINGATTRIBUTELINK` table <!-- KFM: What kind of a thing is `GUPPRICINGATTRIBUTELINK`. A table? Where do we find this? -->using a specific identifier, which indicates that they require special logic in Commerce Scale Unit (CSU) to be supported in POS. To mark a pricing attribute as custom, the `GUPPRICINGATTRIBUTELINK.TypeName` column must be set to `Customization`.
 
 In CSU logic, if a custom pricing attribute is validated as `GUPPRICINGATTRIBUTELINK.TypeName = 'Customization'`, then the system calls the custom request handler.
 
@@ -36,8 +34,6 @@ To use the features described in this article, you must be running version 10.0.
     :::image type="content" source="media/commerce-runtime.png" alt-text="Custom request handler registration." lightbox="media/commerce-runtime.png"::: <!-- KFM: We should provide this as text instead of an image. -->
 
 1. Build the solution and deploy it to your Commerce Scale Unit (CSU).
-
-1. Enable the CSU flight `UPSupportCustomPricingAttributesFlight`. <!-- KFM: We don't normally document features that require flights (because they are usually private previews and we don't document private preview features). Is this a private preview? We don't document how to enable flights. -->
 
 ## How to add your custom pricing attributes
 
@@ -141,13 +137,13 @@ To use the features described in this article, you must be running version 10.0.
     }
     ```
 
-1. Build the relevant models (GUP or extension)<!-- KFM: Spell out "GUP". What do these values in parentheses mean? -->, restart Internet Information Services (IIS), and clear the cache using a URL such as `<https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=usrt&mi=SysClassRunner&cls=SysFlushAOD>`. <!-- KFM: Can we give a more generic URL for this? We maybe shouldn't expose our internal server names. -->
+1. Build the relevant models, Global Unified Pricing (GUP) or extension, and restart Internet Information Services (IIS). Then, clear the cache using a URL such as `<https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=usrt&mi=SysClassRunner&cls=SysFlushAOD>`. <!-- KFM: Can we give a more generic URL for this? We maybe shouldn't expose our internal server names. -->
 
 1. Sign in to your Microsoft finance and operations app and go to **Pricing management** \> **Setup** \> **Price attribute groups** \> **Price attribute groups**. Select the price attribute group that you want to customize and then use the **Attributes** FastTab to add your custom pricing attributes to it. Update each group as needed.
 
 1. Run the 1210 (Pricing management) job and sync changes to Channel database. <!-- KFM: I'm not familiar with any of this. More detail and instructions are probably needed. How/where do we do this? What is the "Channel database"? -->
 
-1. For **existing** custom pricing attributes, manually set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization` in SSMS.<!-- KFM: Spell out "SSMS". --> Here's an example of how to set the `Customization` identifier: <!-- KFM: What coding language is this?. -->
+1. For **existing** custom pricing attributes, manually set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization` in SQL Server Management Studio (SSMS). Here's an example of how to set the `Customization` identifier: <!-- KFM: What coding language is this?. -->
 
     ```text
     update dbo.GUPPRICINGATTRIBUTELINK
@@ -161,9 +157,9 @@ To use the features described in this article, you must be running version 10.0.
 
 1. For `Customer` or `Product`, create a trade agreement journal that tests the new custom pricing attribute. For `SalesTable` or `SalesLine`, create an auto charge that tests the new custom pricing attribute. In both cases, make sure to set a specific value.
 
-1. Run the 9999 (full sync) and sync to Channel database. <!-- KFM: I'm not familiar with any of this. More detail and instructions are probably needed. How/where do we do this? What is the "Channel database"? -->
+1. Run the 9999 (full sync) job and sync to Channel database. <!-- KFM: I'm not familiar with any of this. More detail and instructions are probably needed. How/where do we do this? What is the "Channel database"? -->
 
-1. In POS<!-- KFM: What is this? -->, you should see the value configured in the trade agreement journal or that an auto charge was correctly applied.
+1. In POS, you should see the value configured in the trade agreement journal or that an auto charge was correctly applied.
 
 ## Troubleshooting
 
