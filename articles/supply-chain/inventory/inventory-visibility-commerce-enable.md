@@ -6,7 +6,7 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form: InventInventoryDataService, KeyVaultParameters
 ms.topic: how-to
-ms.date: 06/21/2024
+ms.date: 08/14/2025
 ms.custom: 
   - bap-template
 ---

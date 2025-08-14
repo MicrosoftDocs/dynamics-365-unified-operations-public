@@ -3,12 +3,12 @@ title: Inventory Visibility inventory allocation
 description: Learn how to set up and use the inventory allocation feature, which lets you set aside dedicated inventory to fulfill your most profitable channels or customers.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: how-to
-ms.date: 06/03/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
-ms.search.form: 
+ms.search.form:
+ms.topic: how-to
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Inventory Visibility inventory allocation
@@ -373,7 +373,7 @@ After this call, the allocated quantity for the product will be reduced by 3. In
 
 In this request, notice that the physical measure you use in the consume request body should use the opposite modifier type (Addition or Subtraction), compared with the modifier type used in the calculated measure. So in this consume body, `iv.inbound` has the value `Subtraction`, not `Addition`.
 
-The `fno` data source can't be used in the consume body as we always claimed that Inventory Visibility can't change any data for the `fno` data source. The data flow is one-way, which means that all quantity changes for the `fno` data source must come from your Supply Chain Management environment. 
+The `fno` data source can't be used in the consume body as we always claimed that Inventory Visibility can't change any data for the `fno` data source. The data flow is one-way, which means that all quantity changes for the `fno` data source must come from your Supply Chain Management environment.
 
 ### <a name="consume-to-soft-reserved"></a>Consume as a soft reservation
 
