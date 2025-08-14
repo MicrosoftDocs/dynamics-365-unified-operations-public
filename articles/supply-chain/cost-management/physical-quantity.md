@@ -3,11 +3,12 @@ title: Inventory object values
 description: Learn about how the values of an inventory object are calculated, including a table that outlines various aspects of object types. 
 author: prasungoel
 ms.author: prasungoel
-ms.topic: article
-ms.date: 06/20/2017
 ms.reviewer: kamaybac
 ms.search.form: InventCostOnhandItem
-ms.assetid: 56a7c8ba-bf4a-4b1d-918d-56bb96926c4f
+ms.topic: article
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Inventory object values
@@ -22,7 +23,7 @@ A cost object represents the entity level where inventory accounting is performe
 
 To see the values of a specific inventory object, click **Physical quantity** on the **Cost object** page. Here is how the value of an inventory object is calculated:
 
-Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity
+Inventory object.Value = Cost object.Average unit cost &times; Inventory object.Quantity
 
 The following example shows how the values of an inventory object and a cost object are calculated. Two product receipt events are registered on item A:
 

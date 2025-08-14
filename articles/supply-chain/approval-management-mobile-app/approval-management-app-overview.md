@@ -4,10 +4,10 @@ description: This article introduces the Approvals Management mobile app.
 author: ShriramSivasankaran
 ms.author: shriramsiv
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: 
 ms.topic: overview
-ms.date: 07/29/2024
-ms.custom: 
+ms.date: 08/13/2025
+ms.custom:
   - bap-template
 ---
 

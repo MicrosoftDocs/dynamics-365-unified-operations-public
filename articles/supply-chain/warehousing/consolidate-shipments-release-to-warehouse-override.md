@@ -72,5 +72,4 @@ Follow these steps to review the shipments that were created.
 - [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

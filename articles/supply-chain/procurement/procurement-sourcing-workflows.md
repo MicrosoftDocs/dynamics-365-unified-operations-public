@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: WorkflowTableListPageRnr
 ms.topic: how-to
-ms.date: 07/30/2024
+ms.date: 08/13/2025
 ms.custom: 
   - bap-template
 ---
@@ -36,7 +36,7 @@ The following workflow types are available for Procurement and sourcing.
 | Vendor add application workflow | Create review and approval workflows for adding new vendors via vendor requests. |
 
 > [!IMPORTANT]
-> When you are adding a new workflow, you might also see the following obsolete workflows listed in the **Create workflow** dialog box. These are related to the *confirmation of receipt* functionality that was available in [Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows), but which has now been deprecated. These workflows are currently unsupported.
+> When you're adding a new workflow, you might also see the following obsolete workflows listed in the **Create workflow** dialog box. These are related to the *confirmation of receipt* functionality that was available in [Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows), but which has now been deprecated. These workflows are currently unsupported.
 >
 > - Delivery due date notification workflow
 > - Invoice received notification workflow
