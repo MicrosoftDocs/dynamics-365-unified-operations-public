@@ -136,6 +136,16 @@ Follow these steps to print a custom label.
 
 1. Select **OK**.
 
+## Print ZPL labels in arabic
+
+Printing Arabic descriptions in a ZPL printer requires configuring the Electronic Reporting (ER) framework to generate ZPL labels. Follow the below steps:
+
+1. Set up the ER Framework: Configure the ER parameters in D365 to enable label printing. Follow intrsuctions [Design a new ER solution to print ZPL labels](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/er-design-zpl-labels).
+1. Design a Data Model: Create an ER configuration that includes a Warehouse management domain for label printing.
+1. Use Unicode-Compatible Fonts: Ensure your ZPL printer supports Arabic fonts like TT0003M_.TTF or ZEBRA Swiss Unicode.
+1. Generate ZPL Code: Use ER to format the label in ZPL II and include Arabic text using the ^CI28 command for proper character encoding.
+1. Print Labels.
+
 ## Related information
 
 - [Document routing label layouts](document-routing-layout-for-license-plates.md)
