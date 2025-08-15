@@ -11,6 +11,14 @@ ms.custom:
   - bap-template
 ---
 
+> [!NOTE]
+> A Return Purchase Order (Return PO) is created when goods need to be sent back to the vendor due to various reasons. Below are common scenarios where a user might initiate a Return PO:
+Goods Received but Need to be Returned
+Invoice Created, But Goods Were Not Received
+Partial Return of Goods
+Items Received but Not Ordered (Unplanned Receipt)
+Vendor Buyback or Consignment Return
+
 # Create a purchase return order
 
 [!include [banner](../../includes/banner.md)]
