@@ -106,7 +106,7 @@ To create standard printing forms, follow these steps.
 
 You can review all document records that are created at **Fixed assets (Russia)** \> **Inquiries** \> **Documents**.
 
-## Assemble a fixed asset
+## Fixed asset assembly
 
 You can assemble a fixed asset from the inventory items and then put the fixed asset into operation. When an assembled asset is put into operation, components are issued from inventory, based on their current cost.
 
