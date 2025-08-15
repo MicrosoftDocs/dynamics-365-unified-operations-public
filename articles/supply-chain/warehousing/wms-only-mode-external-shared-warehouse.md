@@ -158,7 +158,10 @@ To use Warehouse management only mode as described in this article, you must hav
 In the *WOM* legal entity, you must create a [source system](wms-only-mode-setup.md#source-systems) to handle shipment orders and the inventory on-hand update processes. For this example, this source system is named *SS-LE1*.
 
 > [!IMPORTANT]
-> When you use Warehouse management only mode with external shared warehouses, your [source system](wms-only-mode-setup.md#source-systems) must be set up to use an [outbound shipment processing policy](outbound-load-handling.md#outbound-shipment-policies) that has its **Enforce shipment to order matching** option set to *Yes*.
+> When you use Warehouse management only mode with external shared warehouses, your [source system](wms-only-mode-setup.md#source-systems) must be set up to use an [outbound shipment processing policy](outbound-load-handling.md#outbound-shipment-policies) that has its **Enforce shipment to order matching** option set to *Yes*. The behavior of this setting varies slightly based on the version of Supply Chain Management you are using.
+>
+> - Supply Chain Management version 10.0.46 and later – When you confirm a shipment, the policy instructs the system to update the deliver remainder on the source order line to reflect the quantity that was actually shipped. Upon reversing the shipment, the deliver remainder is restored to the original ordered quantity.
+> -Supply Chain Management version 10.0.45 and earlier – If the shipped quantity differs from the ordered quantity, you must manually update the deliver remainder to match the shipped quantity before you confirm the shipment. Failure to do so results in applying the update on the *LE1* legal entity.
 
 In the *LE1* legal entity, you must set up an external warehouse management system of the *Legal entity* type and link it to the *SS-LE1* [source system](wms-only-mode-setup.md#source-systems) in the *WOM* legal entity. You can complete this setup by going to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **External warehouse management systems**.
 

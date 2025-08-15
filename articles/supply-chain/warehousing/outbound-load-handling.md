@@ -36,10 +36,10 @@ The following settings are configured on the **Outbound shipment processing poli
 - **Enforce shipment to order matching** – Choose whether the policy should permit just one shipment to be related to each outbound order, or whether multiple shipments per order should be allowed. Select one of the following values:
     - *No* – Allow multiple shipments per outbound order.
     - *Yes* (Supply Chain Management version 10.0.46 and later) – Allow just one shipment per outbound order. In version 10.0.46 and later, when you confirm a shipment with this policy, the system updates the deliver remainder on the source order line to reflect the quantity that was actually shipped. Upon reversing the shipment, the deliver remainder is restored to the original ordered quantity.
-    - *Yes* (Supply Chain Management version 10.0.45 and earlier) – Allow just one shipment per outbound order. In version 10.0.45 and earlier, if the shipped quantity differs from the ordered quantity, you must manually update the deliver remainder to match the shipped quantity before you confirm the shipment. Failure to do so results in applying the update on the *LE1* legal entity. <!-- KFM: Clarify final sentence. -->
+    - *Yes* (Supply Chain Management version 10.0.45 and earlier) – Allow just one shipment per outbound order. In version 10.0.45 and earlier, if the shipped quantity differs from the ordered quantity, you must manually update the deliver remainder to match the shipped quantity before you confirm the shipment.
 
     > [!NOTE]
-    > If you use [Warehouse management only mode with external shared warehouses](wms-only-mode-external-shared-warehouse.md), your [source system](wms-only-mode-setup.md#source-systems) must be configured to use an outbound shipment processing policy where **Enforce shipment to order matching** is set to *Yes*, because that functionality is set up on the source system that is related to the externally managed warehouse. <!-- KFM: Clarify final phrase. What do we mean by "that functionality"? -->
+    > If you use [Warehouse management only mode with external shared warehouses](wms-only-mode-external-shared-warehouse.md), your [source system](wms-only-mode-setup.md#source-systems) must be configured to use an outbound shipment processing policy where **Enforce shipment to order matching** is set to *Yes* because that functionality is set up on the source system that is related to the externally managed warehouse.
 
 ## Define default outbound shipment processing policies
 
