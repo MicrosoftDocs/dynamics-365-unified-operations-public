@@ -207,4 +207,4 @@ For information about how to print the following inventory report documents, see
 
 
 
-!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
