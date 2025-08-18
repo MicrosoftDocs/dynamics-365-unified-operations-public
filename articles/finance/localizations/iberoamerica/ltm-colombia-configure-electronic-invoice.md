@@ -19,7 +19,7 @@ This article explains how to configure the information that is required to gener
 
 Before you complete the procedures in this article, the following prerequisites must be met:
 
-- Both the country/region-specific Latin American (LATAM) feature for Colombia and the general LATAM feature must be enabled.
+- Both the country/region specific Latin American (LATAM) feature for Colombia and the general LATAM feature must be enabled.
 - The company's address must be set to Colombia.
 - You must download the specific report configurations from the Dataverse configuration repository for Colombia Electronic Invoices:
 
@@ -50,12 +50,12 @@ Learn more in [Import Electronic reporting (ER) configurations from Dataverse](.
 Go to **Organization administration** \> **Organizations** \> **Legal entities**, and follow these steps:
 
 1. Select the legal entity that you want to work with.
-1. Complete the address with country, state, and county.            
+1. Complete the address with country/region, state, and county.            
 1. Complete the contact information with the email address and set it to **Primary**.
 1. In the LATAM section complete the **Taxpayer type** with an option that represents organizations.
 1. Complete the **Based in country/region** with **COL**.
-1. Complete the **Country document type** with the option that represents the identification document type used by the organization.
-1. In the LATAM section complete the **Country identification number** field, enter the company ID number with the verification code at the end separated with a middle hyphen (i.e. 123456789-0).
+1. Complete the **Country/region document type** with the option that represents the identification document type used by the organization.
+1. In the LATAM section complete the **Country/region identification number** field, enter the company ID number with the verification code at the end separated with a middle hyphen (i.e. 123456789-0).
 
 ### Document classes configuration
 
@@ -104,7 +104,7 @@ Learn more in [Taxpayer types for Latin America](ltm-core-taxpayer-type.md) and 
 
 ### Addresses configurations
 
-Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**. For each record (Country/Region, State and County) used in electronic invoicing go to **LATAM** \> **Tax application** to assign the tax application codes for according to the Colombian normative.
+Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**. For each record (Country/region, State and County) used in electronic invoicing go to **LATAM** \> **Tax application** to assign the tax application codes for according to the Colombian normative.
 
 Learn more in [Address setup for Latin America](ltm-core-address-setup.md).
 
