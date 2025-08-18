@@ -19,6 +19,10 @@ When you enable piece picking, product confirmation is also required. For pickin
 
 The system considers both the quantity and unit of measure (UOM) that is stored in a scanned bar code. This functionality works for receiving inbound flows (including mixed license plate receiving, purchase order item, transfer order item, and load item). It also works for piece picking, where scanning a bar code quantity adds the quantity to the total number of confirmed pieces and converts between the UOM on the bar code and the work unit. When a worker scans a bar code quantity, the system checks the UOM on the bar code, confirms whether the quantity is allowed for counting on the sequence group and, if so, adds the quantity to the total count.
 
+## Where piece picking applies
+
+Piece picking works for all counting work and for the initial pick for any type of work. Piece picking doesn't apply for items that are controlled by serial numbers or for production or kanban picks from a license plate location where the item is set to staging.
+
 ## Ways to confirm a product
 
 There are two ways to confirm a product during piece picking:
@@ -40,10 +44,6 @@ To allow workers to scan bar codes to confirm a product, make sure the **Scannin
 1. On the Action Pane, select **Save**.
 
 Learn more in [Create a bar code for a product](../pim/tasks/create-bar-code-product.md).
-
-## Where it applies
-
-Piece picking works for all counting work and for the initial pick for any type of work. Piece picking doesn't apply for items that are controlled by serial numbers or for production or kanban picks from a license plate location where the item is set to staging.
 
 ## Set up piece picking
 
