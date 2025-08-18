@@ -4,7 +4,7 @@ description: Learn how to get started with Electronic invoicing for Türkiye in 
 author: v-omerorhan
 ms.author: v-omerorhan
 ms.topic: article
-ms.date: 05/27/2023
+ms.date: 08/18/2023
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Türkiye
@@ -13,7 +13,7 @@ ms.search.form:
 ms.dyn365.ops.version: AX 10.0.37
 ---
 
-# Export of electronic invoices for customers 
+# Customer electronic invoices in Türkiye 
 [!INCLUDE[banner](../../includes/banner.md)]
 
 This article describes how to configure and use electronic invoices in Microsoft Dynamics 365 Finance for Türkiye. 
@@ -25,7 +25,7 @@ Before you begin, ensure that the following prerequisites are met:
 
 - Your legal entity’s primary address must be in Türkiye.
 - To generate electronic invoice XML files in the UBL format, you must use Electronic Reporting (ER) configurations. These configurations define the necessary data models, mappings, and output formats required to structure and produce e-invoice documents in compliance with electronic invoicing standards.
-- To enable the generation of electronic invoices in **UBL-TR** format version 1.2 and later, import the specified or later versions of the following Electronic reporting (ER) format configurations. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../localizations/global/workspace/gsw-import-er-config-dataverse.md).
+- To enable the generation of electronic invoices in **UBL-TR** format version 1.2 and later, import the specified or later versions of the following Electronic reporting (ER) format configurations. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
 | Number | ER configuration name | Type | Description |
 |---|---|---|---|
@@ -47,7 +47,7 @@ The code lists can be found in [e-invoice Legislation and Technical Architecture
 ### Reference the imported ER format configurations
 
 1. Go to **Accounts receivable > Setup > Accounts receivable parameters**.
-2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, select the imported formats for electronic documents:
+2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, select the imported formats for electronic documents in the parameter below:
 
     - **Sales and Free text invoice**: E-Invoice (TR)
 
@@ -64,7 +64,7 @@ The code lists can be found in [e-invoice Legislation and Technical Architecture
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
 2. On the **Addresses** FastTab, add a valid address for the customer.
-3. On the **Invoice and delivery** FastTab, select **RegistrationIDs** in the **Tax exempt number** field for the customer. For more, see [Set up a legal entity for Türkiye](../localizations/turkiye/emea-turkiye-set-up-legal-entity.md).
+3. On the **Invoice and delivery** FastTab, select **RegistrationIDs** in the **Tax exempt number** field for the customer. For more, see [Set up a legal entity for Türkiye](../../localizations/turkiye/emea-turkiye-set-up-legal-entity.md).
 4. Set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
 5. Set the **eInvoice attachment** option to **Yes** to attach a XML file to the electronic invoice, if an attachment is necessary.
 6. On the **Sales demographics** FastTab, in the **Primary contact** field, select the person who is considered the customer's contact. All available contact persons must already be defined for the selected customer.
