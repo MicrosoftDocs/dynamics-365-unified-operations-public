@@ -4,7 +4,7 @@ description: Access links to documentation resources for Spain, including links 
 author: kfend
 ms.author: kfend
 ms.topic: overview
-ms.date: 05/26/2022
+ms.date: 08/18/2025
 ms.reviewer: johnmichalak 
 audience: Application User
 ms.search.region: Spain
@@ -16,6 +16,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Spain overview
 
 [!include [banner](../../includes/banner.md)]
+
+>[!IMPORTANT]
+> Dynamics 365 Finance provides capabilities that help taxpayers of Value Added Tax comply with Spain’s Immediate Supply of Information (SII) regulations. Finance should be used only by businesses or professionals that are legally or voluntarily registered with SII. Microsoft is not responsible for any different use of Finance.
 
 This article provides links to documentation resources for Spain. 
 
