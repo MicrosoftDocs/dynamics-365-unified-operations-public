@@ -288,6 +288,7 @@ After you complete all the required configuration steps, you can generate and su
 
 To submit the generated electronic invoices, follow these steps.
 
+1. In the **Feature management** workspace, make sure that the **Export channels for electronic invoicing integration** feature is enabled. Learn more in [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
 1. In the **Channel** field, select the export channel that you [previously created](#ExChannel), and then select **OK**.
 
