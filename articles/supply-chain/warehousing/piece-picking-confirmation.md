@@ -13,7 +13,7 @@ ms.search.form:  WHSRFAutoConfirm, WHSRFMenuItem
 
 [!include [banner](../includes/banner.md)]
 
-*Piece picking* allows workers to use a mobile device to confirm each piece of inventory during picking or counting work. In this context, "confirm" means that the worker verifies the quantity of each item by scanning a bar code or manually entering the information on the device. For picks, you can confirm the quantity of work to be processed up to the quantity that is specified on the work to be picked. For counting work, you can scan the inventory you're counting and track the total amount.
+*Piece picking confirmation* allows workers to use a mobile device to confirm each piece of inventory during picking or counting work. In this context, *confirm* means that the worker verifies the quantity of each item by scanning a bar code or manually entering the information on the device. For picks, workers can confirm the quantity of work to be processed up to the quantity that is specified on the work to be picked. For counting work, workers can scan the inventory they're counting and track the total amount.
 
 When you enable piece picking, product confirmation is also required. For picking work, you can set the maximum number of pieces that workers can be required to confirm while doing picking work. The maximum quantity is based on the current work unit that is being processed. The counting work type doesn't allow a maximum.
 
@@ -23,25 +23,21 @@ You can also use the quantity and unit of measure (UOM) that is associated with 
 
 There are two ways to confirm a product during piece picking:
 
-1. **Scanning a barcode:** Workers can scan a barcode, which may include quantity information depending on the configuration. If the barcode specifies a quantity, the system automatically adds that amount to the total confirmed pieces. If the barcode does not include quantity information, the worker is prompted to enter the quantity manually.
+- **Scanning a barcode** – Workers can scan a barcode, which may include quantity information depending on the configuration. If the barcode specifies a quantity, the system automatically adds that amount to the total confirmed pieces. If the barcode does not include quantity information, the worker is prompted to enter the quantity manually.
+- **Manual entry** – Workers can manually enter the item number to confirm the product. In this case, they must also manually enter the quantity being picked or counted. This method is useful when barcodes aren't configured.
 
-1. **Manual entry:** Workers can manually enter the item number to confirm the product. In this case, they must also manually enter the quantity being picked or counted. This method is useful when barcodes are not configured.
-
-To learn how to create bar codes for a product, refer to this documentation [Create a bar code for a product](create-bar-code-product.md)
+Learn more in [Create a bar code for a product](create-bar-code-product.md).
 
 > [!IMPORTANT]
-> To allow workers to scan bar codes to confirm a product, make sure the **Scanning** option is enabled. You can do this by opening the bar code configuration and selecting the checkbox on the **General** tab.
->
-> To enable the **Scanning** option in a bar code, follow these steps:
+> To allow workers to scan bar codes to confirm a product, make sure the **Scanning** option is enabled for each relevant product. To enable the **Scanning** option, follow these steps:
 >
 > 1. Go to **Product information management \> Products \> Released products**.
 > 1. In the list, find and select the desired product.
-> 1. On the Action Pane, select **Manage inventory**.
-> 1. Select **Bar codes**.
-> 1. Mark the desired bar code.
-> 1. Select the **General** tab.
-> 1. Enable the **Scanning** option.
-> 1. Save the changes.
+> 1. On the Action Pane, open the **Manage inventory** tab and, from the **Warehouse** group, select **Bar codes**.
+> 1. Select the desired bar code.
+> 1. Open the **General** tab.
+> 1. Set **Scanning** to *Yes*.
+> 1. On the Action Pane, select **Save**.
 
 ## Where it applies
 
