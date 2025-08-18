@@ -4,7 +4,7 @@ description: Piece picking allows workers to use a mobile device to confirm each
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 05/26/2017
+ms.date: 08/18/2025
 ms.reviewer: kamaybac
 ms.search.form:  WHSRFAutoConfirm, WHSRFMenuItem
 ---
@@ -17,13 +17,13 @@ ms.search.form:  WHSRFAutoConfirm, WHSRFMenuItem
 
 When you enable piece picking, product confirmation is also required. For picking work, you can set the maximum number of pieces that workers can be required to confirm while doing picking work. The maximum quantity is based on the current work unit that is being processed. The counting work type doesn't allow a maximum.
 
-You can also use the quantity and unit of measure (UOM) that is associated with a scanned bar code. This works for receiving on inbound flows including mixed license plate receiving, purchase order item, transfer order item, and load item. It also works for piece picking, where scanning the bar code adds the quantity to the total number of confirmed pieces converting between the UOM on the bar code and the work unit. When counting the UOM on the bar code, if it's confirmed that the quantity is allowed for counting on the sequence group, the quantity is added to the total count.
+The system considers both the quantity and unit of measure (UOM) that is stored in a scanned bar code. This functionality works for receiving on inbound flows (including mixed license plate receiving, purchase order item, transfer order item, and load item). It also works for piece picking, where scanning the bar code adds the quantity to the total number of confirmed pieces and converts between the UOM on the bar code and the work unit. When a worker scans a bar code quantity, the system checks the UOM on the bar code, confirms whether the quantity is allowed for counting on the sequence group and, if so, adds the quantity to the total count.
 
 ## Ways to confirm a product
 
 There are two ways to confirm a product during piece picking:
 
-- **Scanning a barcode** – Workers can scan a barcode, which may include quantity information depending on the configuration. If the barcode specifies a quantity, the system automatically adds that amount to the total confirmed pieces. If the barcode does not include quantity information, the worker is prompted to enter the quantity manually.
+- **Scanning a barcode** – Workers can scan a barcode, which can include quantity information depending on the configuration. If the barcode specifies a quantity, the system automatically adds that amount to the total confirmed pieces. If the barcode doesn't include quantity information, the worker is prompted to enter the quantity manually.
 - **Manual entry** – Workers can manually enter the item number to confirm the product. In this case, they must also manually enter the quantity being picked or counted. This method is useful when barcodes aren't configured.
 
 Learn more in [Create a bar code for a product](create-bar-code-product.md).
@@ -52,6 +52,6 @@ To set up piece picking, follow these steps:
 1. On the Action Pane, select **Work confirmation setup**.
 1. Use the buttons on the Action Pane, to add, remove, or edit confirmation settings for each work type as needed. For rows with a **Work type** of *Pick* or *Counting*, make the following settings:
     - **Piece picking confirmation** – Select this check box to allow workers to confirm each piece of inventory from the mobile device. While this box is selected, the **Product confirmation** checkbox is also selected automatically.
-    - **Maximum number of pieces** – Enter the maximum number of pieces that workers can be required to confirm while doing picking work. For example, if the **Maximum number of pieces** is set to *1*, the system will prompt the worker to confirm only one product. After confirming the first piece, the worker can manually enter the remaining quantity without additional confirmation prompts. By default, the value is set to 0, which means the worker will be prompted to confirm the product as many times as needed until the entire quantity is picked, based on the quantity entered or scanned with each bar code. This setting is only available when **Work type** is *Pick* and **Piece picking confirmation** is enabled.
+    - **Maximum number of pieces** – Enter the maximum number of pieces that workers can be required to confirm while doing picking work. For example, if the **Maximum number of pieces** is set to *1*, the system will prompt the worker to confirm only one product. After confirming the first piece, the worker can manually enter the remaining quantity without additional confirmation prompts. Set to *0* to remove the maximum limit, which means that workers will be prompted to scan or enter values as many times as needed until the entire picking quantity has been confirmed. This setting is only available when **Work type** is *Pick* and **Piece picking confirmation** is enabled.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
