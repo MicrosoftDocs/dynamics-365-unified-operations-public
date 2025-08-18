@@ -1,46 +1,49 @@
 ---
 title: Dispose of deferrals (Russia)
-description: Learn how to dispose of deferrals in Russia, including a step-by-step process and an outline on how to view the deferrals that are generated.
+description: Learn how to dispose of deferrals in Russia in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/20/2024
+ms.date: 08/18/2025
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
-ms.dyn365.ops.version: 10.0.1
 ---
 
 # Dispose of deferrals (Russia)
 
 [!include [banner](../../includes/banner.md)]
 
-1. Go to **General ledger** \> **Journals** \> **Deferrals journal**.
-2. On the Action Pane, select **New**.
-3. In the **Name** field, select the deferrals journal name.
-4. On the Action Pane, select **Lines** to open the **Journal voucher** page.
-5. On the Action Pane, select **Group operations** \> **Disposal** to open the **Disposal** dialog box.
-6. In the **Disposal date** field, select the disposal date of the transaction.
-7. Set the **Retirement on life time** option to **Yes** to remove of the **Disposal date** value in the deferrals value model.
-8. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can set up the selection criteria.
-9. Select **OK** to return to the **Journal voucher** page. The disposal voucher details are shown for the selected deferrals on the specified date.
-10. To dispose of one deferral voucher, on the **Overview** FastTab, select **New** to open the **Create new line** dialog box.
-11. In the **Transaction date** field, select the disposal date of the transaction.
-12. In the **Transactions type** field, select **Disposal**.
-13. In the **Deferral ID** field, select the deferral code.
-14. In the **Model number** field, select the deferral models number. If the model code isn't specified in the journal, all models that were created for the deferral will be selected.
-15. Select **OK** to return to the **Journal voucher** page.
-16. On the Action Pane, select **Functions** \> **Edit line** to edit the journal before you post it.
-17. On the Action Pane, select **Post** \> **Post** to post the voucher. Retirement on life time is shown as the **Disposal date** value on the deferrals value model.
+This article explains how to dispose of deferrals in Russia in Microsoft Dynamics 365 Finance.
+
+To dispose of deferrals, follow these steps.
+
+1. In Dynamics 365 Finance, go to **General ledger** \> **Journals** \> **Deferrals journal**.
+1. On the Action Pane, select **New**.
+1. In the **Name** field, select the deferrals journal name.
+1. On the Action Pane, select **Lines** to open the **Journal voucher** page.
+1. On the Action Pane, select **Group operations** \> **Disposal** to open the **Disposal** dialog.
+1. In the **Disposal date** field, select the disposal date of the transaction.
+1. Set the **Retirement on life time** option to **Yes** to remove of the **Disposal date** value in the deferrals value model.
+1. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog, where you can set up the selection criteria.
+1. Select **OK** to return to the **Journal voucher** page. The disposal voucher details are shown for the selected deferrals on the specified date.
+1. To dispose of one deferral voucher, on the **Overview** FastTab, select **New** to open the **Create new line** dialog.
+1. In the **Transaction date** field, select the disposal date of the transaction.
+1. In the **Transactions type** field, select **Disposal**.
+1. In the **Deferral ID** field, select the deferral code.
+1. In the **Model number** field, select the deferral models number. If the model code isn't specified in the journal, all models that were created for the deferral will be selected.
+1. Select **OK** to return to the **Journal voucher** page.
+1. On the Action Pane, select **Functions** \> **Edit line** to edit the journal before you post it.
+1. On the Action Pane, select **Post** \> **Post** to post the voucher. Retirement on life time is shown as the **Disposal date** value on the deferrals value model.
 
     ![Deferrals models page.](../media/rus-dispose-deferrals-01.png)
 
     > [!NOTE]
     > A journal line will be posted only if there is no gap between the last posted write-off and the disposal period.
 
-18. To view the posted transactions, go to **General ledger** \> **Deferrals** \> **Deferrals**. On the Action Pane, select **Deferrals models**, and then select **Writing off transactions**.
+1. To view the posted transactions, go to **General ledger** \> **Deferrals** \> **Deferrals**. On the Action Pane, select **Deferrals models**, and then select **Writing off transactions**.
 
     When the status of a deferral is **Closed**, and the line is shaded gray on the **Deferrals models** page, you can post the reversal voucher only if its transaction type is **Writing off** and its status is **Closed**. 
 
