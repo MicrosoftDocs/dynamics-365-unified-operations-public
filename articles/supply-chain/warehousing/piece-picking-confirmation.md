@@ -23,21 +23,23 @@ The system considers both the quantity and unit of measure (UOM) that is stored 
 
 There are two ways to confirm a product during piece picking:
 
-- **Scanning a barcode** – Workers can scan a barcode, which can include quantity information depending on the configuration. If the barcode specifies a quantity, the system automatically adds that amount to the total confirmed pieces. If the barcode doesn't include quantity information, the worker is prompted to enter the quantity manually.
-- **Manual entry** – Workers can manually enter the item number to confirm the product. In this case, they must also manually enter the quantity being picked or counted. This method is useful when barcodes aren't configured.
+- **Scanning a bar code** – Workers can scan a bar code, which can include quantity information depending on the configuration. If the bar code specifies a quantity, the system automatically adds that amount to the total confirmed pieces. If the bar code doesn't include quantity information, the worker is prompted to enter the quantity manually.
+- **Manual entry** – Workers can manually enter the item number to confirm the product. In this case, they must also manually enter the quantity being picked or counted. This method is useful when bar codes aren't configured.
+
+## Enable bar code scanning for products
+
+To allow workers to scan bar codes to confirm a product, make sure the **Scanning** option is enabled for each relevant product. To enable the **Scanning** option, follow these steps:
+
+1. Go to **Product information management \> Products \> Released products**.
+1. In the list, find and select the desired product.
+1. On the Action Pane, open the **Manage inventory** tab and, from the **Warehouse** group, select **Bar codes**.
+1. On the Action Pane, select **Edit**.
+1. Select the desired bar code.
+1. Open the **General** tab.
+1. Set **Scanning** to *Yes*.
+1. On the Action Pane, select **Save**.
 
 Learn more in [Create a bar code for a product](../pim/tasks/create-bar-code-product.md).
-
-> [!IMPORTANT]
-> To allow workers to scan bar codes to confirm a product, make sure the **Scanning** option is enabled for each relevant product. To enable the **Scanning** option, follow these steps:
->
-> 1. Go to **Product information management \> Products \> Released products**.
-> 1. In the list, find and select the desired product.
-> 1. On the Action Pane, open the **Manage inventory** tab and, from the **Warehouse** group, select **Bar codes**.
-> 1. Select the desired bar code.
-> 1. Open the **General** tab.
-> 1. Set **Scanning** to *Yes*.
-> 1. On the Action Pane, select **Save**.
 
 ## Where it applies
 
