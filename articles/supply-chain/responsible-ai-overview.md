@@ -4,7 +4,7 @@ description: Responsible AI FAQs provide information about the AI technology tha
 author: kamaybac
 ms.author: kamaybac
 ms.topic: faq
-ms.date: 01/27/2025
+ms.date: 06/17/2025
 ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs
@@ -23,7 +23,8 @@ ms.collection:
 - [Responsible AI FAQ for Analyze demand plans with Copilot](faq-demand-planning-copilot.md)
 - [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](faq-confirmed-po-changes.md)
 - [Responsible AI FAQ for Workload insights with Copilot](faq-wma-copilot.md)
-- [Responsible AI for the Supplier Communications Agent (production ready preview)](faq-supplier-communications-agent.md)
+- [Responsible AI FAQ for the Supplier Communications Agent (production ready preview)](faq-supplier-communications-agent.md)
+- [Responsible AI FAQ for Generative insights for Demand planning (production ready preview)](faq-demand-planning-generative-insights.md)
 
 ## Related information
 
