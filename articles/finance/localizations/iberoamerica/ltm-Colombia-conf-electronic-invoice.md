@@ -27,14 +27,14 @@ Before you complete the procedures in this article, the following prerequisites 
 |:-------:|:-------------------------------------------------:|
 | Model   | :::no-loc text="Invoice Model LATAM":::                               |
 | Mapping | :::no-loc text="(Invoice Model LATAM) Invoice Model mapping LATAM"::: |
-| Format  | :::no-loc text="Inventory e-Invoice format (CO):::                   |
-| Format  | :::no-loc text="Inventory e-CreditNote (CO):::                       |
-| Format  | :::no-loc text="Inventory e-DebitNote (CO):::                        |
-| Format  | :::no-loc text="Inventory e-Invoice (CO):::                          |
-| Format  | :::no-loc text="Project e-Invoice format (CO):::                     |
-| Format  | :::no-loc text="Project e-CreditNote (CO):::                         |
-| Format  | :::no-loc text="Project e-DebitNote (CO):::                          |
-| Format  | :::no-loc text="Project e-Invoice (CO):::                            |
+| Format  | :::no-loc text="Inventory e-Invoice format (CO)":::                   |
+| Format  | :::no-loc text="Inventory e-CreditNote (CO)":::                       |
+| Format  | :::no-loc text="Inventory e-DebitNote (CO)":::                        |
+| Format  | :::no-loc text="Inventory e-Invoice (CO)":::                          |
+| Format  | :::no-loc text="Project e-Invoice format (CO)":::                     |
+| Format  | :::no-loc text="Project e-CreditNote (CO)":::                         |
+| Format  | :::no-loc text="Project e-DebitNote (CO)":::                          |
+| Format  | :::no-loc text="Project e-Invoice (CO)":::                            |
 
 Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 - You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
