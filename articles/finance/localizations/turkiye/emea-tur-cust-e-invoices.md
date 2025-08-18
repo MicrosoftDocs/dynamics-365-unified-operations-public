@@ -1,5 +1,5 @@
 ---
-title: Customer electronic invoices in Türkiye
+title: Export of customer electronic invoices for Türkiye
 description: Learn how to get started with Electronic invoicing for Türkiye in Microsoft Dynamics 365 Finance, including prerequisites and an outline on configure parameters.
 author: v-omerorhan
 ms.author: v-omerorhan
@@ -13,7 +13,7 @@ ms.search.form:
 ms.dyn365.ops.version: AX 10.0.37
 ---
 
-# Customer electronic invoices in Türkiye 
+# Export of customer electronic invoices for Türkiye 
 [!INCLUDE[banner](../../includes/banner.md)]
 
 This article describes how to configure and use electronic invoices in Microsoft Dynamics 365 Finance for Türkiye. 
@@ -33,7 +33,7 @@ Before you begin, ensure that the following prerequisites are met:
 | 2 | Invoice model mapping | Model mapping | It is the process of linking a data model (like the Invoice model) to the application data sources (such as tables, views, or calculated fields) in Dynamics 365 Finance.  |
 | 3 | UBL Sales invoice | Format | It is an **Electronic reporting (ER)** configuration in Dynamics 365 Finance that enables the generation of electronic invoices in a structured XML format.  |
 | 4 | Peppol Sales Invoice | Format | It is an electronic invoicing format designed to comply with the Pan-European Public Procurement Online (Peppol) framework. The format is based on XML and ensures standardized, structured invoicing in EU.|
-| 5 | E-Invoice (TR) | Format | It is a country/specific configuration designed to support electronic invoicing requirements in Türkiye. |
+| 5 | E-Invoice (TR) | Format | It is a country/region-specific configuration designed to support electronic invoicing requirements in Türkiye. |
 
 ## Configure parameters
 
