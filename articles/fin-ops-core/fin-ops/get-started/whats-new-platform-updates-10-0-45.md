@@ -28,7 +28,7 @@ This section will contain a table that lists the features that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| No changed reported at this time |---|---|---|
+| No change reported at this time |---|---|---|
 
 ## Feature enhancements included in this release
 
@@ -36,7 +36,7 @@ This section will contain a table that lists the enhancements that are included 
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| No changed reported at this time |---|---|---|
+| System Administration | Batch Telemetry integrates with Application Insights | As an enhancement to the existing **Monitoring and Telemetry** feature, the platform is expanding its capabilities to include **Batch telemetry integration with Application Insights**. This update introduces a robust telemetry pipeline that enables visibility into critical batch job behaviors directly within the customer's Azure Application Insights instance. Teams will be able to monitor execution timelines, detect throttling, track task distribution, and capture failure diagnostics, eliminating the need for manual incident reporting. Notably, this feature is not limited to future releases—it will also be **backported to version 10.0.44**, ensuring broader availability and immediate impact for customers seeking improved observability and reduced operational overhead. | Feature Management |
 
 
 ### Bug fixes
