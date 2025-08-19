@@ -45,46 +45,46 @@ You can access the **Check and promissory note parameters** page by navigating t
 
 Here are the details for the fields; 
 
-### _General_ Tab
+### General Tab
 
 | Field | Description |
 |------------|-------------|
-| Settlement status | Defines the default settlement behavior for checks and promissory notes. If set to `None`, no automatic settlement is applied when transactions are posted. |
+| Settlement status | Defines the default settlement behavior for checks and promissory notes. If set to _None_, no automatic settlement is applied when transactions are posted. |
 | Customer method of payment | Specifies the default method of payment to be used for customers when recording check or promissory note transactions. |
 | Vendor method of payment | Specifies the default method of payment to be used for vendors during check or promissory note operations. |
-| Portfolio account type | Indicates the type of account used to represent portfolios in accounting entries. Typically set to `Bank`, but can vary depending on how portfolios are configured. |
+| Portfolio account type | Indicates the type of account used to represent portfolios in accounting entries. Typically set to _Bank_, but can vary depending on how portfolios are configured. |
 | Use due date | Enables due date control on check and promissory note documents. When turned on, the system tracks and validates due dates during operations. |
 | The Printed number field is mandatory | If enabled, the check or note number must be entered before a transaction can be posted. Useful for ensuring traceability of printed documents. |
 | Control of out date for check | When enabled, prevents entry of an issue (out) date that is later than the due date of the check. Ensures compliance with date logic. |
 | Is reverse date | If enabled, the system allows reversal postings to use the original transaction’s date, which is important for maintaining accurate historical records. |
 
-#### _Rediscount_ Tab
+### Rediscount Tab
 
-##### _Overview_ Tab
+#### _Overview_ Tab
 
 | Field name | Description |
 |------------|-------------|
 | Journal name | Specifies the default journal that will be used when posting rediscount transactions. This journal must be previously created and set up under **General ledger > Journal names**. |
-| Exchange rate type | Defines which exchange rate type will be used for rediscount calculations involving foreign currency checks or promissory notes. For example, `Forex Buying` or `Banknote Buying`. |
-| Detail level | Determines the level of detail that will be shown in the rediscount journal lines. Options typically include `Details` (per check/note) or `Summary` (per portfolio or account). |
-| Interest calculation type | Selects the basis on which interest will be calculated. The option `Calculated period date` means the interest is calculated based on the actual number of days between the posting date and maturity date. |
+| Exchange rate type | Defines which exchange rate type will be used for rediscount calculations involving foreign currency checks or promissory notes. For example, _Forex Buying_ or _Banknote Buying_. |
+| Detail level | Determines the level of detail that will be shown in the rediscount journal lines. Options typically include _Details_ (per check/note) or _Summary_ (per portfolio or account). |
+| Interest calculation type | Selects the basis on which interest will be calculated. The option _Calculated period date_ means the interest is calculated based on the actual number of days between the posting date and maturity date. |
 | Automatic posting | If enabled, rediscount entries will be automatically posted after generation. If disabled, the entries must be reviewed and posted manually. |
 
-##### _Accounts receivable_ Tab
+#### _Accounts receivable_ Tab
 
 | Field  | Description  |
 | ------ | ------- |
 | Rediscount account of notes receivable | Specifies the general ledger account used to post rediscounted notes receivable. |
 | Rediscount interest expense account    | Specifies the general ledger account for posting interest expenses from rediscount operations. |
 	
-##### _Accounts payable_ Tab
+#### _Accounts payable_ Tab
 
 | Field  | Description |
 | ------- | -------- |
 | Rediscount account of notes payable | Specifies the general ledger account used to post rediscounted notes receivable. |
 | Rediscount interest income account | Specifies the general ledger account for posting interest expenses from rediscount operations. |
 
-#### _Check dimensions_ Tab
+### Check dimensions Tab
 
 | Field | Description |
 |----|----|
@@ -94,7 +94,7 @@ Here are the details for the fields;
 | Vendor dimension | Applies if vendor (320*) or customer (120*) accounts track check numbers. |
 | Bank dimension | Applies if bank accounts (102*) use check dimension tracking. |
 
-#### _Number sequences_ Tab
+### Number sequences Tab
 
 | Field  | Description  |
 | ------- | -------- |
