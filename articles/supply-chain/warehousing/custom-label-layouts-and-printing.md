@@ -142,7 +142,7 @@ To allow Arabic language descriptions to be printed on a Zebra Programming Langu
 
 1. Set up the electronic reporting (ER) Framework.
 
-    Configure the ER parameters in Supply Chain Management to enable label printing. Learn more in [Design a new ER solution to print ZPL labels](../../fin-ops-core/dev-itpro/analytics/er-design-zpl-labels).
+    Configure the ER parameters in Supply Chain Management to enable label printing. Learn more in [Design a new ER solution to print ZPL labels](../../fin-ops-core/dev-itpro/analytics/er-design-zpl-labels.md).
 
 1. Design a data model.
 
