@@ -204,17 +204,17 @@ These are the first steps to setting up your environment to implement custom pri
 
     - Starting query template for CSU logs: <!-- KFM: What coding language do we see here? -->
 
-        ```text
+        ```KQL
         traces
         | where customDimensions.UserSessionId == "UserSessionId"
         ```
 
-        ```text
+        ```KQL
         traces
         | where customDimensions.AppSessionId == "AppSessionId"
         ```
 
-        ```text
+        ```KQL
         traces
         | where customDimensions.ActivityId == "ActivityId"
         ```
