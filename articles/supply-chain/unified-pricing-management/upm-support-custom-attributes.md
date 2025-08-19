@@ -151,13 +151,13 @@ These are the first steps to setting up your environment to implement custom pri
     where ATTRIBUTENAME = 'Custom attribute name'
     ```
 
-    <!-- KFM: We should add some text here that introduces this image. What are we showing here? I think maybe we don't need this image anyway. -->
+    The following image displays how entries in the GUPPRICINGATTRIBUTELINK table may appear when they have been marked as custom.
 
     :::image type="content" source="media/ssms-customization.png" alt-text="SSMS customization." lightbox="media/ssms-customization.png":::
 
 1. For `Customer` or `Product`, create a trade agreement journal that tests the new custom pricing attribute. For `SalesTable` or `SalesLine`, create an auto charge that tests the new custom pricing attribute. In both cases, make sure to set a specific value.
 
-1. Run the 9999 (full sync) job and sync to Channel database. <!-- KFM: I'm not familiar with any of this. More detail and instructions are probably needed. How/where do we do this? What is the "Channel database"? -->
+1. Navigate to **Retail and Commerce** \> **Retail and Commerce IT**  and run the _9999 All jobs_ job to sync to Channel database.
 
 1. In POS, you should see the value configured in the trade agreement journal or that an auto charge was correctly applied.
 
