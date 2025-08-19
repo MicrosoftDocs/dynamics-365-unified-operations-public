@@ -56,8 +56,8 @@ Follow these steps to set up dual-write from Lifecycle Services **Environment De
 ## Configure app user for one-box environments
 
 > [!NOTE]
-> Power Platform integration for cloud-hosted development environments is a deprecated feature and is no longer supported. While the option may still appear during environment deployment, it's not recommended for use. 
-> For testing and development scenarios, we recommend using a Sandbox environment and/or a Unified Developer Environment (UDE), which are fully supported and better suited for integration with Power Platform.
+> Power Platform integration for cloud-hosted development environments is deprecated and not supported. While the option may still appear during environment deployment, it's not recommended for use. 
+> For testing and development scenarios, we recommend using a Sandbox environment or a Unified Developer Environment (UDE), which are fully supported and better suited for integration with Power Platform.
 > For more information about UDE, see [Unified developer experience for finance and operations apps](/power-platform/developer/unified-experience/finance-operations-dev-overview).
 
 ## Troubleshooting
