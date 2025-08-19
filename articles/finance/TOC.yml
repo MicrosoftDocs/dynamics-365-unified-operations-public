@@ -2384,6 +2384,8 @@
                       href: localizations/iberoamerica/ltm-Colombia-sales-vat-book.md
                     - name: Configure Colombian purchase VAT book printing
                       href: localizations/iberoamerica/ltm-Colombia-purchase-vat-book.md
+                    - name: Configure electronic invoice parameters for Colombia
+                      href: localizations/iberoamerica/ltm-colombia-configure-electronic-invoice.md
                     - name: Format 1001 file for Colombia issue configuration
                       href: localizations/iberoamerica/ltm-Colombia-format-1001.md
                     - name: Format 1003 file for Colombia configuration
