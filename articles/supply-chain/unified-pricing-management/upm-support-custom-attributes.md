@@ -145,7 +145,7 @@ These are the first steps to setting up your environment to implement custom pri
 
 1. For *existing* custom pricing attributes, manually set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization` in SQL Server Management Studio (SSMS). Here's an example of how to set the `Customization` identifier:
 
-    ```C#
+    ```SQL
     update dbo.GUPPRICINGATTRIBUTELINK
     set TYPENAME = 'Customization'
     where ATTRIBUTENAME = 'Custom attribute name'
