@@ -4,7 +4,7 @@ description: Learn how to set up and use Microsoft Dynamics 365 Finance to work 
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
-ms.date: 07/11/2025
+ms.date: 08/18/2025
 ms.reviewer: johnmichalak
 ms.custom:
   - bap-template
@@ -14,6 +14,9 @@ ms.custom:
 # Immediate supply of information on VAT (Suministro Inmediato de Información del IVA, SII)
 
 [!include [banner](../../includes/banner.md)]
+
+>[!IMPORTANT]
+> Dynamics 365 Finance provides capabilities that help taxpayers of Value Added Tax comply with Spain’s Immediate Supply of Information (SII) regulations. Finance should be used only by businesses or professionals that are legally or voluntarily registered with SII. Microsoft is not responsible for any different use of Finance.
 
 Learn how to set up and use Microsoft Dynamics 365 Finance to work with the Suministro Inmediato de Información del IVA (SII) system of Spain.
 
