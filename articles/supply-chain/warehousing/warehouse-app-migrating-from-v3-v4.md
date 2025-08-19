@@ -90,8 +90,8 @@ If you're running a newer version of Android, then we recommend using V4 because
 
 When you migrate from V3 to V4, the following compatibility features are available:
 
-- **Customizations are preserved** – All customizations and configurations from V3 are fully compatible with V4 and remain functional.
-- **Connection settings can be preserved** – In most cases, your existing connection settings from V3 are automatically migrated when you upgrade to V4. To preserve your connection settings, don't uninstall V3, download the V4 installer to your device, and be sure to select the **Upgrade** option when you run it. If you uninstall V3 and then install V4, your connection settings will be lost. Connection settings are only preserved during an upgrade, not during a fresh installation. If manual reconfiguration is required, QR code generation and scanning capabilities (camera or beam scanner) are available for easy setup. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
+- **Customizations are preserved** – All customizations and configurations from V3 are fully compatible with V4 and remain functional. 
+- **Connection settings can be preserved** – Your existing connection settings from V3 are automatically migrated when you upgrade to V4. This only works if you are upgrading from v3.0.8 or higher to v4. We strongly recommend updating to V3.0.8 or later before upgrading to V4. To preserve your connection settings, don't uninstall V3, download the V4 installer to your device, and be sure to select the **Upgrade** option when you run it. If you uninstall V3 and then install V4, your connection settings will be lost. Connection settings are only preserved during an upgrade, not during a fresh installation. If manual reconfiguration is required, QR code generation and scanning capabilities (camera or beam scanner) are available for easy setup. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
 
 ### Authentication
 
@@ -109,10 +109,6 @@ When you migrate from V3 to V4, the following compatibility features are availab
 
 Device code authentication isn't available on iOS platforms. Username/password authentication is the only supported method for iOS devices.
 
-### Lack of support for certificate authentication
-
-V4, like V3, doesn't support certificate authentication. Users must use the device code or username/password authentication method.
-
 ### On-premises limitations
 
 For on-premises installations of Supply Chain Management, device code authentication isn't supported for iOS or Android devices; only username/password authentication is available for these platforms.
@@ -126,7 +122,7 @@ For on-premises installations of Supply Chain Management, device code authentica
     – **Windows** – [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
     - **Android** – Google Beta Testers and [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
 
-- **Concurrent operation** – During the transition period, V3 and V4 can operate simultaneously in the same warehouse environment without conflicts. We recommend that you roll out the new version gradually rather than installing it on all devices at once.
+- **Concurrent operation** – During the transition period, V3 and V4 can operate simultaneously in the same warehouse environment without conflicts, as long as they are installed on separate devices. This allows for a phased rollout of V4 without disrupting ongoing operations. Please note that V3 and V4 cannot be installed on the same device at the same time. We recommend that you roll out the new version gradually rather than installing it on all devices at once.
 
 - **Authentication benefits for early adopters** – Each device that you update from V3 to V4 must be reauthenticated after the initial update. However, you won't need to reauthenticate the device again when updating to future versions of V4.
 
