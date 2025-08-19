@@ -77,19 +77,19 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.42 PQU-3 | April 9, 2025 | April 14, 2025 to May 18, 2025| Completed |
 | 10.0.42 PQU-4 | May 7, 2025 | May 12, 2025 to June 15, 2025| Completed |
 | 10.0.42 PQU-5 | June 4, 2025 | June 9, 2025 to July 13, 2025| Completed |
-| 10.0.42 PQU-6 | July 2, 2025 | July 7, 2025 to August 10, 2025| In-Progress |
+| 10.0.42 PQU-6 | July 2, 2025 | July 7, 2025 to August 10, 2025| Completed |
 | 10.0.42 PQU-7 | July 30, 2025 | August 4, 2025 to September 7, 2025| In-Progress |
-| 10.0.42 PQU-8 | August 22, 2025 | September 1, 2025 to October 5, 2025| Not Started |
+| 10.0.42 PQU-8 | August 22, 2025 | September 1, 2025 to October 5, 2025| In-Progress |
 | 10.0.43 PQU-1 | April 9, 2025 | April 14, 2025 to May 18, 2025| Completed |
 | 10.0.43 PQU-2 | May 7, 2025 | May 12, 2025 to June 15, 2025| Completed |
 | 10.0.43 PQU-3 | June 4, 2025 | June 9, 2025 to July 13, 2025| Completed |
-| 10.0.43 PQU-4 | July 2, 2025 | July 7, 2025 to August 10, 2025| In-Progress |
+| 10.0.43 PQU-4 | July 2, 2025 | July 7, 2025 to August 10, 2025| Completed |
 | 10.0.43 PQU-5 | July 30, 2025 | August 4, 2025 to September 7, 2025| In-Progress |
 | 10.0.43 PQU-6 | August 27, 2025 | September 1, 2025 to October 5, 2025| Not Started |
 | 10.0.43 PQU-7 | September 24, 2025 | September 29, 2025 to November 2, 2025| Not Started |
 | 10.0.43 PQU-8 | October 22, 2025 | October 27, 2025 to December 7, 2025| Not Started |
 | 10.0.43 PQU-9 | November 26, 2025 | December 1, 2025 to January 18, 2026| Not Started |
-| 10.0.44 PQU-1 | July 9, 2025 | July 14, 2025 to August 17, 2025| In-Progress |
+| 10.0.44 PQU-1 | July 9, 2025 | July 14, 2025 to August 17, 2025| Completed |
 | 10.0.44 PQU-2 | August 6, 2025 | August 11, 2025 to September 14, 2025| In-Progress |
 | 10.0.44 PQU-3 | September 3, 2025 | September 8, 2025 to October 12, 2025| Not Started |
 | 10.0.44 PQU-4 | October 1, 2025 | October 6, 2025 to November 9, 2025| Not Started |
@@ -111,24 +111,7 @@ The following table shows the high-level train schedule. It includes a descripti
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.42 Release-6 train schedule
-
-**App version: 10.0.2095.210**
-
-**Platform version: 7.0.7452.161**
-
-**Unified Environment Provisioning Application Version: 10.0.42.9**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | July 7 to July 10, 2025 | NA |
-| Station 2 | July 14 to July 17, 2025 | July 26 to July 27, 2025 |
-| Station 3 | July 15 to July 18, 2025 | July 26 to July 27, 2025 |
-| Station 4 | July 21 to July 24, 2025 | August 2 to August 3, 2025 |
-| Station 5 | July 28 to July 31, 2025 | August 9 to August 10, 2025 |
-| Station 6 | July 29 to August 1, 2025 | August 9 to August 10, 2025 |
-
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.42 Release-7 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.42 Release-7 train schedule
 
 **App version: 10.0.2095.222**
 
@@ -145,22 +128,22 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | August 25 to August 28, 2025 | September 6 to September 7, 2025 |
 | Station 6 | August 26 to August 29, 2025 | September 6 to September 7, 2025 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.43 Release-4 train schedule
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.42 Release-8 train schedule
 
-**App version: 10.0.2177.143**
+**App version: 10.0.2095.223**
 
-**Platform version: 7.0.7521.243**
+**Platform version: 7.0.7452.168**
 
-**Unified Environment Provisioning Application Version: 10.0.43.8**
+**Unified Environment Provisioning Application Version: 10.0.42.11**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
-| Station 1 | July 7 to July 10, 2025 | NA |
-| Station 2 | July 14 to July 17, 2025 | July 26 to July 27, 2025 |
-| Station 3 | July 15 to July 18, 2025 | July 26 to July 27, 2025 |
-| Station 4 | July 21 to July 24, 2025 | August 2 to August 3, 2025 |
-| Station 5 | July 28 to July 31, 2025 | August 9 to August 10, 2025 |
-| Station 6 | July 29 to August 1, 2025 | August 9 to August 10, 2025 |
+| Station 1 | September 1 to September 4, 2025 | NA |
+| Station 2 | September 8 to September 11, 2025 | September 20 to September 21, 2025 |
+| Station 3 | September 9 to September 12, 2025 | September 20 to September 21, 2025 |
+| Station 4 | September 15 to September 18, 2025 | September 27 to September 28, 2025 |
+| Station 5 | September 22 to September 25, 2025 | October 4 to October 5, 2025 |
+| Station 6 | September 23 to September 26, 2025 | October 4 to October 5, 2025 |
 
 ### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.43 Release-5 train schedule
 
@@ -178,23 +161,6 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | August 18 to August 21, 2025 | August 30 to August 31, 2025 |
 | Station 5 | August 25 to August 28, 2025 | September 6 to September 7, 2025 |
 | Station 6 | August 26 to August 29, 2025 | September 6 to September 7, 2025 |
-
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.44 Release-1 train schedule
-
-**App version: 10.0.2263.74**
-
-**Platform version: 7.0.7606.108**
-
-**Unified Environment Provisioning Application Version: 10.0.44.3**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | July 14 to July 17, 2025 | NA |
-| Station 2 | July 21 to July 24, 2025 | August 2 to August 3, 2025 |
-| Station 3 | July 22 to July 25, 2025 | August 2 to August 3, 2025 |
-| Station 4 | July 28 to July 31, 2025 | August 9 to August 10, 2025 |
-| Station 5 | August 4 to August 7, 2025 | August 16 to August 17, 2025 |
-| Station 6 | August 5 to August 8, 2025 | August 16 to August 17, 2025 |
 
 ### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.44 Release-2 train schedule
 
