@@ -12,7 +12,11 @@ ms.search.form:
 
 # Example custom request handler code
 
-This article provides sample code for `GetCustomizedPricingPropertiesRequestHandler`. <!-- KFM: We need a bit more detail for this introduction. Describe the context and purpose of this code and tell how to use it. --> Learn more in [Add custom pricing attributes for POS](upm-support-custom-attributes.md).
+<!-- KFM: This intro was written by AI. Please review it carefully.  -->
+
+This article provides sample code for the `GetCustomizedPricingPropertiesRequestHandler` class, which is used to implement custom pricing attributes in Dynamics 365 Supply Chain Management. This handler enables you to retrieve and process custom pricing properties, such as sales tax inclusion or line numbers, for various entities like customers, items, and sales transactions.
+
+The code demonstrates how to extend the pricing framework by defining custom attributes and linking them to specific fields in the database. It also shows how to process requests programmatically to fetch and merge these attributes into the pricing logic. For more details about adding custom pricing attributes, see [Add custom pricing attributes for POS](upm-support-custom-attributes.md).
 
 <!-- KFM: what code language do we see here? X++? -->
 

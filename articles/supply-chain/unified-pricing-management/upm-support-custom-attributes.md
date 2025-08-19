@@ -13,9 +13,9 @@ ms.custom:
 
 # Add custom pricing attributes for Commerce Point of Sale (POS)
 
-Unified pricing management lets you configure pricing rules that can also consider values of custom pricing attributes for products, customers, sales-lines, and sales-tables. It provides the following two components <!-- KFM: is it correct to call these "methods"? --> that you can use to implement your own custom request handler and develop your logic: `GetCustomizedPricingPropertiesRequest` and `GetCustomizedPricingPropertiesResponse`.
+Unified pricing management lets you configure pricing rules that can also consider values of custom pricing attributes for products, customers, sales-lines, and sales-tables. It provides the following two components that you can use to implement your own custom request handler and develop your logic: `GetCustomizedPricingPropertiesRequest` and `GetCustomizedPricingPropertiesResponse`.
 
-Custom attributes are marked in the `GUPPRICINGATTRIBUTELINK` table <!-- KFM: What kind of a thing is `GUPPRICINGATTRIBUTELINK`. A table? Where do we find this? -->using a specific identifier, which indicates that they require special logic in Commerce Scale Unit (CSU) to be supported in POS. To mark a pricing attribute as custom, the `GUPPRICINGATTRIBUTELINK.TypeName` column must be set to `Customization`.
+Custom attributes are marked in the `GUPPRICINGATTRIBUTELINK` table using a specific identifier, which indicates that they require special logic in Commerce Scale Unit (CSU) to be supported in POS. To mark a pricing attribute as custom, the `GUPPRICINGATTRIBUTELINK.TypeName` column must be set to `Customization`.
 
 In CSU logic, if a custom pricing attribute is validated as `GUPPRICINGATTRIBUTELINK.TypeName = 'Customization'`, then the system calls the custom request handler.
 
@@ -116,7 +116,7 @@ To use the features described in this article, you must be running version 10.0.
         }
         ```
 
-1. For **new** <!-- KFM: How much of this procedure applies just for **new** groups? Just this step, or everything up to the step where we mention **existing** groups? --> custom pricing attributes, you must programmatically set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization`. In AppSuite repo,  create an extension to [GUPPricingAttributeRepository.xml](https://msdyneng.visualstudio.com/FinOps/_git/ApplicationSuite?path=/Source/Metadata/GlobalUnifiedPricing/GlobalUnifiedPricing/AxClass/GUPPricingAttributeRepository.xml&version=GBmaster&line=271&lineEnd=271&lineStartColumn=45&lineEndColumn=65&lineStyle=plain&_a=contents) <!-- KFM: Will customers be able to open this link? --> and add a statement to the `toPriceAttributeLink()` method that programmatically sets the `TypeName` column for each new custom pricing attribute. Here's an example of how to do this: <!-- what language is this example? -->
+1. For *new* <!-- KFM: How much of this procedure applies just for **new** groups? Just this step, or everything up to the step where we mention **existing** groups? --> custom pricing attributes, you must programmatically set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization`. In AppSuite repo,  create an extension to [GUPPricingAttributeRepository.xml](https://msdyneng.visualstudio.com/FinOps/_git/ApplicationSuite?path=/Source/Metadata/GlobalUnifiedPricing/GlobalUnifiedPricing/AxClass/GUPPricingAttributeRepository.xml&version=GBmaster&line=271&lineEnd=271&lineStartColumn=45&lineEndColumn=65&lineStyle=plain&_a=contents) <!-- KFM: Will customers be able to open this link? --> and add a statement to the `toPriceAttributeLink()` method that programmatically sets the `TypeName` column for each new custom pricing attribute. Here's an example of how to do this: <!-- what language is this example? -->
 
     ```text
     [ExtensionOf(classStr(GUPPricingAttributeRepository))]
@@ -143,7 +143,7 @@ To use the features described in this article, you must be running version 10.0.
 
 1. Run the 1210 (Pricing management) job and sync changes to Channel database. <!-- KFM: I'm not familiar with any of this. More detail and instructions are probably needed. How/where do we do this? What is the "Channel database"? -->
 
-1. For **existing** custom pricing attributes, manually set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization` in SQL Server Management Studio (SSMS). Here's an example of how to set the `Customization` identifier: <!-- KFM: What coding language is this?. -->
+1. For *existing* custom pricing attributes, manually set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization` in SQL Server Management Studio (SSMS). Here's an example of how to set the `Customization` identifier: <!-- KFM: What coding language is this?. -->
 
     ```text
     update dbo.GUPPRICINGATTRIBUTELINK
@@ -189,7 +189,7 @@ To use the features described in this article, you must be running version 10.0.
 
 1. It's possible to find more details on errors or exceptions in our AzureDataExplorer dashboards.
 
-    - Useful dashboards (Must access with PME account): <!-- KFM: Can customers access these links? -->
+    - Useful dashboards (Must access with PME account): <!-- KFM: Can customers access these links? What is a PME account (spell it out)?-->
         - CSU logs: <https://dataexplorer.azure.com/dashboards/db50f9f4-9a19-4a4c-9993-17e0861444d1>
         - POS logs: <https://dataexplorer.azure.com/dashboards/8ad7df1a-a343-459b-beeb-5f4cafabe91c>
         - Drill MPOS - CPOS - CSU - RSSU sessions logs: <https://dataexplorer.azure.com/dashboards/32491967-1eff-4b22-b161-f4bb8db6e550>
@@ -221,4 +221,4 @@ To use the features described in this article, you must be running version 10.0.
 
     - Example of locating full database error in CSU logs: <!-- KFM: Explain a little more about what we are looking at here and what we should notice about it. Maybe we don't really need this example? -->
 
-        [<img src="media/retail-server-logs.png" alt="Retail server logs" title="Retail server logs" width="720" />](media/retail-server-logs.png#lightbox)
+        :::image type="content" source="media/retail-server-logs.png" alt-text="Retail server logs." lightbox="media/retail-server-logs.png#lightbox":::
