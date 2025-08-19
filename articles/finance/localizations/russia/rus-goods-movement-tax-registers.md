@@ -3,7 +3,7 @@ title: Goods movement tax registers
 description: Learn how to work with goods movement tax registers in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 08/22/2025
