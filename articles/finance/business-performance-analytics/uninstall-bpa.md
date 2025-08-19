@@ -16,8 +16,13 @@ Two options are available for uninstalling Business performance analytics: code-
 
 If you must reinstall Business performance analytics after you uninstall it, wait four hours before reinstallation.
 
-> [!NOTE]
-> If you uninstall and then reinstall Business performance analytics, no new reports that were created are saved.
+> > [!NOTE]  
+> If you uninstall and then reinstall Business Performance Analytics, custom reports can still be preserved in the following ways:
+> 
+> 1. **Custom reports in the default solution** – When BPA is reinstalled, it automatically looks for reports owned by the BPA app in the default solution. These reports will be restored.  
+> 2. **Reports protected by the `msdyn_bpaconfig` solution** – As long as the `msdyn_bpaconfig` solution is not uninstalled, BPA can recover custom reports from it. This safeguard was introduced to help protect against reports being deleted by an admin or other processes with elevated access.  
+> 3. **Manually saving custom reports** – You can also export and re-import your custom reports as described here: [Preserve and manage custom reports](https://learn.microsoft.com/en-us/dynamics365/finance/business-performance-analytics/custom-reports).  
+ 
 
 ## Option 1: Code-based uninstallation
 
