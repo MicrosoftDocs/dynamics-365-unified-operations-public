@@ -1,27 +1,32 @@
 ---
-title: Use Check and promissory note for Türkiye
-description: Learn how to use check and promissory note in the Republic of Türkiye. 
+title: Use checks and promissory notes
+description: Learn how to use checks and promissory notes in the Republic of Türkiye. 
 author: v-omerorhan 
 ms.author: v-omerorhan 
 ms.topic: how-to 
-ms.date: 07/15/2025 
+ms.date: 08/19/2025 
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye 
 ms.search.validFrom: 2020-02-03 
-ms.search.form: CheckAndPromissoryNote 
+ms.search.form: ChecksAndPromissoryNotes 
 ms.dyn365.ops.version: 10.0.9 
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ---
 
-# Use Check and promissory note for Türkiye
+# Use checks and promissory notes
 [!INCLUDE[banner](../../includes/banner.md)]
 
 In Türkiye, checks and promissory notes are widely used commercial payment instruments that require careful tracking and accounting in accordance with regulations. 
-The Check and promissory note module in Dynamics 365 Finance provides end-to-end functionality to manage the lifecycle of these financial documents, including their receipt, issuance, transfer, collection, endorsement, return, and rediscounting.
+The **Cash and bank management** module in Dynamics 365 Finance provides end-to-end functionality to manage checks and promissory notes, including their receipt, issuance, transfer, collection, endorsement, return, and rediscounting.
+
+The **Check and promissory note operations** feature in Finance helps businesses manage all steps related to checks and promissory notes. 
+You can easily create, record, transfer, and track these documents throughout their lifecycle.
+
+This feature supports using automated processes like transaction codes and rediscount calculations. You can quickly see the status of each document and make sure records are accurate.
 
 This module ensures compliance with the requirements by offering specialized configuration options, automated journal entries, portfolio tracking, and rediscount calculations.
 
-Key capabilities of the Check and promissory note are as below; 
+Key capabilities of the **Check and promissory note operations** feature are as below; 
 
 - Define and manage check/promissory note transaction codes.
 - Group documents using portfolio codes (received/issued).
@@ -29,18 +34,18 @@ Key capabilities of the Check and promissory note are as below;
 - Generate and reverse rediscount entries.
 - Integrate with customer/vendor payments, bank transactions, and posting profiles.
 
-## Configure Check and promissory notes parameters
+## Configure checks and promissory notes parameters
 
-This section provides general information about the parameters for check and promissory note feature for Türkiye.
+This section provides general information about the parameters for **Check and promissory note operations** feature for Türkiye.
 
 The **Check and promissory note parameters** page allows you to define company-wide settings for managing the lifecycle of checks and promissory notes. 
 These parameters determine how documents behave in journals, which default accounts are used, and how legal requirements are applied.
 
-You can access the **Check and promissory note parameters** page by navigating to **Cash and bank management > Setup > Check and promissory operations > Check and promissory note parameters**.
+You can access the **Check and promissory note parameters** page by navigating to **Cash and bank management > Setup > Check and promissory note operations > Check and promissory note parameters**.
 
 Here are the details for the fields; 
 
-- **General** Tab
+### _General_ Tab
 
 | Field | Description |
 |------------|-------------|
@@ -53,9 +58,9 @@ Here are the details for the fields;
 | Control of out date for check | When enabled, prevents entry of an issue (out) date that is later than the due date of the check. Ensures compliance with date logic. |
 | Is reverse date | If enabled, the system allows reversal postings to use the original transaction’s date, which is important for maintaining accurate historical records. |
 
-- **Rediscount** Tab
+#### _Rediscount_ Tab
 
-    - **Overview** Tab
+##### _Overview_ Tab
 
 | Field name | Description |
 |------------|-------------|
@@ -65,21 +70,21 @@ Here are the details for the fields;
 | Interest calculation type | Selects the basis on which interest will be calculated. The option `Calculated period date` means the interest is calculated based on the actual number of days between the posting date and maturity date. |
 | Automatic posting | If enabled, rediscount entries will be automatically posted after generation. If disabled, the entries must be reviewed and posted manually. |
 
-  - **Accounts receivable** Tab
+##### _Accounts receivable_ Tab
 
 | Field  | Description  |
 | ------ | ------- |
 | Rediscount account of notes receivable | Specifies the general ledger account used to post rediscounted notes receivable. |
 | Rediscount interest expense account    | Specifies the general ledger account for posting interest expenses from rediscount operations. |
-
-- **Accounts payable** Tab
+	
+##### _Accounts payable_ Tab
 
 | Field  | Description |
 | ------- | -------- |
 | Rediscount account of notes payable | Specifies the general ledger account used to post rediscounted notes receivable. |
 | Rediscount interest income account | Specifies the general ledger account for posting interest expenses from rediscount operations. |
 
-- **Check dimensions** Tab
+#### _Check dimensions_ Tab
 
 | Field | Description |
 |----|----|
@@ -89,7 +94,7 @@ Here are the details for the fields;
 | Vendor dimension | Applies if vendor (320*) or customer (120*) accounts track check numbers. |
 | Bank dimension | Applies if bank accounts (102*) use check dimension tracking. |
 
-- **Number sequences** Tab
+#### _Number sequences_ Tab
 
 | Field  | Description  |
 | ------- | -------- |
@@ -104,7 +109,7 @@ Here are the details for the fields;
 
 ## Define portfolio codes for Check and promissory notes operations
 
-This section provides an overview of the key features and functionalities available on the **Check and promissory notes portfolio codes** page in Microsoft Dynamics 365 Finance. 
+This section provides an overview of the key features and functionalities available on the **Check and promissory notes portfolio codes** page in Finance. 
 By following the steps outlined, you can effectively manage check-promissory note processes within your organization.
 
 The portfolio codes enable organizations to define and manage portfolio codes for financial instruments such as checks and promissory notes, which are widely used in Turkish commercial transactions.
@@ -156,16 +161,16 @@ To create a new portfolio, follow these steps;
 
 ## Define transaction codes for check and promissory note operations
 
-This section explains how to define transaction codes to create a check and promissory note transaction in Microsoft Dynamics 365 Finance.
+This section explains how to define transaction codes to create a check and promissory note transaction in Finance.
 
-The **Check or promissory note transaction codes** page is used to define standardized transaction codes for managing checks and promissory notes in Dynamics 365 Finance. 
+The **Check or promissory note transaction codes** page is used to define standardized transaction codes for managing checks and promissory notes in Finance. 
 These codes represent actions such as endorsement, collection, return, protest, or cancellation, and are essential for tracking the legal and financial status of commercial paper. 
 
 Transaction codes are central to managing check and promissory note operations in Türkiye. 
-In Dynamics 365 Finance, each type of check or promissory note movement—such as receipt, issue, transfer, collection, return, or bounce—is represented by a unique transaction code.
+Each type of check or promissory note movement—such as receipt, issue, transfer, collection, return, or bounce—is represented by a unique transaction code.
 
 This page allows users to configure these codes to support financial and legal processes, including automated posting, matching, and categorization. 
-These codes are then used in the **Check-promissory note journal** to determine how each document is recorded and processed.
+These codes are then used in the **Check and promissory note journal** to determine how each document is recorded and processed.
 
 The page is used to:
 
@@ -219,7 +224,7 @@ For example, when transferring a check between two portfolios, you can define an
 13. Select or enter a **Bank transaction type** to track the check or promissory note in bank transactions.
 14. Select **Save**.
 
-The transaction code is now available for use in the Check-Promissory note journal and related processes.
+The transaction code is now available for use in the **Check and promissory note journal** and related processes.
 
 > [!NOTE]
 > Only the relevant flags for a single type of transaction should be selected. For example, don't select both **Receipt** and **Return**.
@@ -249,7 +254,7 @@ To create a bank branch, follow these steps;
 
 ## Create a new Check and promissory note journal
 
-This topic provides a detailed overview of the **Check and promissory note journal** functionality in Microsoft Dynamics 365 Finance. 
+This topic provides a detailed overview of the **Check and promissory note journal** in Finance. 
 
 This feature enables organizations operating in Türkiye to manage and track financial transactions related to commercial papers—such as checks and promissory notes—in compliance with Turkish commercial law and local accounting standards.
 You can use this journal for:
@@ -427,7 +432,7 @@ After marked any open transaction, select **Save** and close the page.
 When transferring checks or promissory notes between portfolios for collection or payment purposes, you must select the portfolio that contains the relevant check or promissory note. 
 To do this, select **Select check**. 
 
-## Sent check or promissory note to portfolio account
+## Send check or promissory note to portfolio account
 
 This section provides an overview of the **Select check** page, which allows users to retrieve and transfer previously registered check or promissory note records into the journal for further processing. 
 The form displays eligible documents based on the selected portfolio and currency, ensuring accurate classification and compliance with Turkish financial processes.
@@ -465,7 +470,7 @@ Here are the details for each field in **Receipt checks** Fasttab;
 | Branch code | Specifies the bank branch code where the check was drawn. |
 | Bank branches | Specifies the bank branch name which the check is issued.  |
 
-To sent the check or promissory note to the portfolio, select **Check transfer journal** and close the page.
+To send the check or promissory note to the portfolio, select **Check transfer journal** and close the page.
 Then, you can select **Post** to generate voucher.
 
 After you posted the journal to access the ledger journal and the voucher, select **Journals** in the **Daily** group. 
@@ -473,7 +478,7 @@ After you posted the journal to access the ledger journal and the voucher, selec
 ## Reverse check and promissory note journal
 
 This section explains how to reverse a posted check and promissory note journal.
-When you select the **Reverse journal** button on a posted check or promissory note journal, the system automatically creates a reversal journal that mirrors the original journal. 
+When you select the **Reverse journal** button on a posted check and promissory note journal, the system automatically creates a reversal journal that mirrors the original journal. 
 The reversal is posted to the ledger and is linked to the original journal header to ensure full traceability.
 
 To reverse the journal, follow these steps; 
@@ -488,13 +493,12 @@ To reverse the journal, follow these steps;
 The reversal check journal is linked to the original check journal. 
 The related reverse transaction can be accessed through the **Reversal journal ID** field in the **Check and promissory journal** list page.
 
-## Creation of company checks and promissory notes and monitoring documents
+## Maintain checks and promissory notes
 
-This section provides guidance on how to view, filter, and manage check and promissory note records and how to create company checks and promissory notes for payments using the **Check and promissory note definitions** page in Dynamics 365 Finance. 
+This section provides guidance on how to view, filter, and manage check and promissory note records and how to create company checks and promissory notes for payments using the **Check and promissory note definitions** page in Finance. 
+
 This page offers a centralized view where all received or given checks and promissory notes are listed with key attributes such as type, amount, due date, portfolio, account, and transaction codes. 
-It helps ensure accurate document tracking and supports financial transparency in the check lifecycle.
-
-Also, ensures to create company checks or promissory note for payments in Türkiye.
+It helps ensure accurate document tracking and supports financial transparency in the check lifecycle. Also, ensures to create company checks or promissory note for payments in Türkiye.
 
 The **Check and promissory note definitions** page is used to:
 
@@ -547,7 +551,7 @@ Here are the details for the each field of the **Check and promissory note defin
 
 ### Create company checks or promissory notes for operations
 
-This section provides guidance for creating new check or promissory note records using the **Create a new document** pane on the **Check and promissory note definitions** page in Dynamics 365 Finance. 
+This section provides guidance for creating new check or promissory note records using the **Create a new document** pane on the **Check and promissory note definitions** page in Finance. 
 This functionality is part of the Turkish localization and supports the mass generation of blank checks with predefined structure and numbering logic.
 
 The form enables users to define portfolio ownership, numbering format, and bank association. 
@@ -587,7 +591,7 @@ These checks or promissory notes will now be listed in the **Check and promissor
 
 ### Update check or promissory note information
 
-This section provides guidance on updating existing check or promissory note records using the Update check or promissory note function in the Check and promissory note definitions page in Microsoft Dynamics 365 Finance. 
+This section provides guidance on updating existing check or promissory note records using the Update check or promissory note function in the Check and promissory note definitions page in Finance. 
 
 This function is used when a previously registered check or promissory note needs to be corrected or updated with new values, such as changing the portfolio, amount, or due date.
 When you want to update the check or promissory note **Check or promissory note update**; 
@@ -609,10 +613,10 @@ You can use the **Check or promissory note transactions** to acces the transacti
 
 ## Configure rediscount calculations for check and promissory note operations
 
-This section provides guidance on performing rediscount calculations for checks and promissory notes using the Rediscount Calculation page in Microsoft Dynamics 365 Finance. 
+This section provides guidance on performing rediscount calculations for checks and promissory notes using the Rediscount Calculation page in Finance. 
 
 Rediscounting is a financial operation in Türkye, typically performed at the end of a fiscal period to reflect the current value of checks and promissory notes that have not yet matured.
-The Rediscount calculation feature in Dynamics 365 Finance allows organizations to compute interest income or expenses for postdated commercial papers and reflect them accurately in the general ledger.
+The Rediscount calculation feature allows organizations to compute interest income or expenses for postdated commercial papers and reflect them accurately in the general ledger.
 
 The rediscount calculation functionality helps to:
 
@@ -649,7 +653,7 @@ Here are the details of the each field;
 
 ### Define interest rates for rediscount calculation
 
-This section provides guidance on defining interest rates that will be used during rediscount calculations for checks and promissory notes in Dynamics 365 Finance. 
+This section provides guidance on defining interest rates that will be used during rediscount calculations for checks and promissory notes in Finance. 
 Rediscount interest rates are applied to checks and promissory notes that have not yet matured at the end of a fiscal period.
 
 By defining the interest rates, organizations ensure accurate rediscount value calculations and proper posting to general ledger accounts.
@@ -668,7 +672,7 @@ Here are the details of each field in **Interest rates** page;
 
 ## Calculate rediscount amount for checks and promissory notes
 
-This section provides an overview of the rediscount calculation logic for checks and promissory notes in Dynamics 365 Finance, specifically within the Turkish localization.
+This section provides an overview of the rediscount calculation logic for checks and promissory notes in Finance, specifically within the Turkish localization.
 
 Rediscounting is a financial adjustment process applied to post-dated checks and promissory notes that have not yet matured at the end of a fiscal period. 
 The purpose of this process is to reflect the time value of money by rediscounting the future receivable or payable to its present value.
@@ -679,7 +683,7 @@ In Türkiye, rediscount calculations are typically performed at month-end or yea
   - The applicable interest rate
   - The nominal value of the document
 
-By automating rediscount journal postings and reversals, Dynamics 365 Finance enables organizations to maintain compliant and accurate financial records while reducing manual work. 
+By automating rediscount journal postings and reversals, Finance enables organizations to maintain compliant and accurate financial records while reducing manual work. 
 Rediscount entries are generally reversed in the following fiscal period, restoring the original document value after reporting requirements have been fulfilled.
 
 Here are the details of the parameters in **Check and promissory note rediscount calculation** page;  
@@ -774,10 +778,6 @@ Here are the details for the buttons in **Check or promissory note transactions*
 | Check and promissory note journal | Access the check and promissory note journal entries.|
 | Journal | Access the posted check and promissory note journal entries related to checks and promissory notes.|
 
-The **Check and promissory note** feature in Dynamics 365 Finance helps businesses manage all steps related to checks and promissory notes. 
-You can easily create, record, transfer, and track these documents throughout their lifecycle.
-
-This module supports using automated processes like transaction codes and rediscount calculations. You can quickly see the status of each document and make sure records are accurate..
 
 Using this feature improves control, ensures compliance, and makes check and promissory note operations easier and more reliable.
 
