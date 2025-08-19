@@ -2,7 +2,7 @@
 title: Spain overview
 description: Access links to documentation resources for Spain, including links to resources about discounts, invoices, declarations, and sales lists. 
 author: kfend
-ms.author: kfend
+ms.author: evgenypopov
 ms.topic: overview
 ms.date: 08/18/2025
 ms.reviewer: johnmichalak 
