@@ -54,34 +54,11 @@ Follow these steps to set up dual-write from Lifecycle Services **Environment De
 8. When the linking is complete, a hyperlink is displayed. Use the link to sign in to the dual-write administration area in the finance and operations environment. From there, you can set up entity mappings.
 
 ## Configure app user for one-box environments
-Certificates in your Microsoft Entra tenant are no longer installed in new one-box development environments by default. To enable dual-write on a one-box environment, you must grant the application user configured for the environment with a role and permissions for dual-write. To configure these permissions:
-1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. Select your environment where you're configuring dual-write, and select **Settings** on the environment details page.
-3. On the **Users + permissions** list, select **Application users**.
-4. Select the **New app user** action.
-5. On the **Create a new app user** pane:
-   - Select the **Add an app** action, and select the new application previously registered for your environment following the [Set up a new application and certification registration](../../dev-tools/secure-developer-vm.md#set-up-a-new-application-and-certificate-registration).
-   - In the **Business unit** drop-down list, select the root business unit for the environment.
-   - In the **Security roles** text box, select a security role with create, read, update, and delete permissions on Dataverse tables used for dual-write, such as the **System Administrator** role.
-   - Select **Create**.
-6. Enable the "DualWriteUnoAuthenticationFnoToCds" flight:
-   - Open SQL Server Management Studio and connect to the "AXDB" on your one-box environment.
-   - Run the following SQL script to enable the "DualWriteUnoAuthenticationFnoToCds" flight:
-
-    ```sql
-    DECLARE @flightName NVARCHAR(100) = 'DualWriteUnoAuthenticationFnoToCds';
-    IF NOT EXISTS (SELECT TOP 1 1 FROM SysFlighting WHERE flightName = @flightName)
-    INSERT INTO SYSFLIGHTING(FLIGHTNAME, ENABLED, FLIGHTSERVICEID, PARTITION)
-    SELECT @flightName, 1, 12719367, RECID FROM DBO.[PARTITIONS];
-    ELSE
-    UPDATE SysFlighting SET enabled = 1, flightServiceId = 12719367 WHERE flightName = @flightName;
-    ```
-
-    - Restart the Application Object Server (AOS) service.
 
 > [!NOTE]
-> If permissions for the application user are not configured for your one-box environment, you may receive the following error message during dual-write sync operations:
-> "0x80072560 response message: The user is not a member of the organization".
+> Power Platform integration for cloud-hosted development environments is a deprecated feature and is no longer supported. While the option may still appear during environment deployment, it's not recommended for use. 
+> For testing and development scenarios, we recommend using a Sandbox environment and/or a Unified Developer Environment (UDE), which are fully supported and better suited for integration with Power Platform.
+> For more information about UDE, see [Unified developer experience for finance and operations apps](/power-platform/developer/unified-experience/finance-operations-dev-overview).
 
 ## Troubleshooting
 
