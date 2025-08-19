@@ -1211,8 +1211,6 @@ items:
         href: power-platform/environment-lifecycle-core-concepts.md
       - name: Power Platform integration scenarios
         items: 
-        - name: Connect finance and operations apps with a new Microsoft Dataverse instance
-          href: power-platform/environment-lifecycle-connect-finops-new-dv.md
         - name: Connect finance and operations apps with an existing Microsoft Dataverse instance
           href: power-platform/environment-lifecycle-connect-finops-existing-dv.md
         - name: Dual-write setup from Lifecycle Services
