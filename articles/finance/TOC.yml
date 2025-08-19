@@ -4280,14 +4280,22 @@
                       href: localizations/thailand/apac-tha-withholding-tax.md
                 - name: Türkiye
                   items:
-                  - name: Currency conversion
-                    href: localizations/turkiye/emea-tur-currency-conversion.md
-                  - name: Continuous serial numbering of packing slips and invoices (preview)
-                    href: localizations/turkiye/emea-tur-serial-numbering.md
-                  - name: Use e-Ledger in the Republic of Türkiye (preview)
-                    href: localizations/turkiye/emea-tur-e-ledger.md
-                  - name: Use Exchange difference invoicing (preview)
-                    href: localizations/turkiye/emea-tur-exchange-difference-invoicing.md
+                    - name: Türkiye overview
+                      href: localizations/turkiye/turkiye.md
+                    - name: Set up a legal entity for Türkiye
+                      href: localizations/turkiye/emea-turkiye-set-up-legal-entity.md
+                    - name: Import currency exchange rates from Central Bank of the Republic of Türkiye (CBRT)
+                      href: general-ledger/import-currency-exchange-rates.md
+                    - name: Use continuous serial numbering of packing slips and invoices
+                      href: localizations/turkiye/emea-tur-serial-numbering.md
+                    - name: Use Exchange difference invoicing
+                      href: localizations/turkiye/emea-tur-exchange-difference-invoicing.md
+                    - name: Use currency conversion
+                      href: localizations/turkiye/emea-tur-currency-conversion.md
+                    - name: Use checks and promissory notes
+                      href: localizations/turkiye/emea-tur-checks-and-promissory-notes.md                      
+                    - name: Generate e-Ledger
+                      href: localizations/turkiye/emea-tur-e-ledger.md
                 - name: United Arab Emirates (UAE)
                   items:
                     - name: United Arab Emirates (UAE) overview
