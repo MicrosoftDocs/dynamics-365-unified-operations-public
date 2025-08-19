@@ -13,7 +13,7 @@ ms.custom:
 
 # Add custom pricing attributes for Commerce Point of Sale (POS)
 
-Unified pricing management lets you configure pricing rules that can also consider values of custom pricing attributes for products, customers, sales-lines, and sales-tables. It provides the following two components that you can use to implement your own custom request handler and develop your logic: `GetCustomizedPricingPropertiesRequest` and `GetCustomizedPricingPropertiesResponse`.
+Unified pricing management lets you configure pricing rules that can also consider values of custom pricing attributes for customers, products, and sales transactions. It provides the following two components that you can use to implement your own custom request handler and develop your logic: `GetCustomizedPricingPropertiesRequest` and `GetCustomizedPricingPropertiesResponse`.
 
 Custom attributes are marked in the `GUPPRICINGATTRIBUTELINK` table using a specific identifier, which indicates that they require special logic in Commerce Scale Unit (CSU) to be supported in POS. To mark a pricing attribute as custom, the `GUPPRICINGATTRIBUTELINK.TypeName` column must be set to `Customization`.
 
@@ -21,29 +21,31 @@ In CSU logic, if a custom pricing attribute is validated as `GUPPRICINGATTRIBUTE
 
 ## Prerequisites
 
-To use the features described in this article, you must be running version 10.0.45 or later of your Microsoft finance and operations apps.
+To use the features described in this article, you must be running version 10.0.46 or later of your Microsoft finance and operations apps.
 
 ## First steps
 
-These are the first steps to setting up your environment to implement custom pricing attributes.
+These are the first steps to setting up your developer environment to implement custom pricing attributes.
 
-1. Implement a custom request handler to process custom pricing attributes. For an example, see [Example custom request handler code](upm-custom-request-handler-example.md)
+1. Implement a custom request handler to process custom pricing attributes. For an example, see [Example custom request handler code](upm-custom-request-handler-example.md).
 
 1. Register the output library in the `CommerceRuntime.Ext.config` file. Here's an example of a custom request handler registration (if the output library were `Contoso.Commerce.Runtime.Services`).
 
-    :::image type="content" source="media/commerce-runtime.png" alt-text="Custom request handler registration." lightbox="media/commerce-runtime.png"::: <!-- KFM: We should provide this as text instead of an image. -->
+   ```XML
+   <add source="assembly" value="Contoso.Commerce.Runtime.Services" />
+   ```
 
 1. Build the solution and deploy it to your Commerce Scale Unit (CSU).
 
 ## How to add your custom pricing attributes
 
-<!-- KFM: Introduction is needed here. Explain what we are we about to do and why. -->
+These are the steps needed to implement custom pricing attributes for customers, products, and sales transactions.
 
 1. In ApplicationSuite repo <!-- KFM: What is this? Where do I find it? -->, create new custom pricing attributes according to: [How to add a new pricing attribute](https://eng.ms/docs/cloud-ai-platform/business-and-industry-copilot/bic-bis-ai-erp-smb/aierp-finance/d365-finance-application-core-services/dynamics-365-ai-erp/domainknowledge/scm/pricingmanagement/howto/howtoaddanewpricingattribute). <!-- KFM: This link requires a VPN; I think it's internal (not public). Our customers won't be able to open it. Do we have public link for this info? --> You must add a new class for each custom pricing attribute you want to add.
 
-    - Here's an example of code that creates a header-level custom pricing attribute (for `Customer`): <!-- KFM: What is the text in parentheses? A table name? Should we say "for" or maybe "in"? -->
+    - Here's an example of code that creates a header-level custom pricing attribute (for `Customer` GUPPricingAttributeSource):
 
-        ```C#
+        ```X++
         /// <summary>
         /// PricingAttribute of table <c>CustTable</c> field StatisticsGroup.
         /// </summary>
@@ -76,9 +78,9 @@ These are the first steps to setting up your environment to implement custom pri
         }
         ```
 
-    - Here's an example of code that creates a line-level custom pricing attribute (for `SalesLine`): <!-- KFM: What is the text in parentheses? A table name? Should we say "for" or maybe "in"? -->
+    - Here's an example of code that creates a line-level custom pricing attribute (for `SalesLine` GUPPricingAttributeSource):
 
-        ```C#
+        ```X++
         /// <summary>
         /// PricingAttribute of table <c>SalesLine</c> field LineNum.
         /// </summary>
@@ -118,7 +120,7 @@ These are the first steps to setting up your environment to implement custom pri
 
 1. For *new* custom pricing attributes, you must programmatically set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization`. In ApplicationSuite repo,  create an extension to [GUPPricingAttributeRepository.xml](https://msdyneng.visualstudio.com/FinOps/_git/ApplicationSuite?path=/Source/Metadata/GlobalUnifiedPricing/GlobalUnifiedPricing/AxClass/GUPPricingAttributeRepository.xml&version=GBmaster&line=271&lineEnd=271&lineStartColumn=45&lineEndColumn=65&lineStyle=plain&_a=contents) <!-- KFM: Will customers be able to open this link? --> and add a statement to the `toPriceAttributeLink()` method that programmatically sets the `TypeName` column for each new custom pricing attribute. Here's an example of how to do this:
 
-    ```C#
+    ```X++
     [ExtensionOf(classStr(GUPPricingAttributeRepository))]
     public static final class GUPPricingAttributeRepository_Extension
     {
@@ -139,7 +141,7 @@ These are the first steps to setting up your environment to implement custom pri
 
 1. Build the relevant models, Global Unified Pricing (GUP) or extension, and restart Internet Information Services (IIS). Then, clear the cache for your Microsoft finance and operations app.
 
-1. Sign in to your Microsoft finance and operations app and go to **Pricing management** \> **Setup** \> **Price attribute groups** \> **Price attribute groups**. Select the price attribute group that you want to customize and then use the **Attributes** FastTab to add your custom pricing attributes to it. Update each group as needed.
+1. Within your Microsoft finance and operations app, go to **Pricing management** \> **Setup** \> **Price attribute groups** \> **Price attribute groups**. Select the price attribute group that you want to customize and then use the **Attributes** FastTab to add your custom pricing attributes to it. Update each group as needed.
 
 1. Navigate to **Retail and Commerce** \> **Retail and Commerce IT** and run the _1210 Pricing management_ job to sync changes to Channel database.
 
@@ -157,7 +159,7 @@ These are the first steps to setting up your environment to implement custom pri
 
 1. For `Customer` or `Product`, create a trade agreement journal that tests the new custom pricing attribute. For `SalesTable` or `SalesLine`, create an auto charge that tests the new custom pricing attribute. In both cases, make sure to set a specific value.
 
-1. Navigate to **Retail and Commerce** \> **Retail and Commerce IT**  and run the _9999 All jobs_ job to sync to Channel database.
+1. Navigate to **Retail and Commerce** \> **Retail and Commerce IT**  and run the _9999 All jobs_ job to sync changes to Channel database.
 
 1. In POS, you should see the value configured in the trade agreement journal or that an auto charge was correctly applied.
 
@@ -165,9 +167,9 @@ These are the first steps to setting up your environment to implement custom pri
 
 ### You receive a POS notification that a custom request handler isn't implemented
 
-<!-- KFM: It would be better to provide this error message as text instead of a screenshot. Many users copy/paste error messages into Google, so a text version of the error enabled Google to find this page. Also, introduce the error message by describing where the user is and what they are trying to do when it appears. -->
+The user creates a transaction in POS that is associated with one or more custom pricing attributes and receives an error message like the following:
 
-:::image type="content" source="media/request-handler-custom.png" alt-text="Custom request handler." lightbox="media/request-handler-custom.png":::
+"The request GetCustomizedPricingPropertiesRequest is not implemented in customized code. Please contact your system administrator."
 
 1. Verify that a custom request handler is implemented and included in the build.
 
@@ -175,11 +177,11 @@ These are the first steps to setting up your environment to implement custom pri
 
 ### You receive a POS notification that custom pricing attributes are detected among out-of-box attributes
 
-<!-- KFM: Same comments as above; replace images with text and add an intro that describes where the user is and what they are trying to do when this message appears. -->
+The user creates a transaction in POS that is associated with one or more custom pricing attributes and receives an error message like the following:
 
-:::image type="content" source="media/custom-customer-attribute.png" alt-text="Custom customer attribute." lightbox="media/custom-customer-attribute.png":::
+"A custom product pricing attribute has been detected. Please contact your system administrator to verify the setup of custom attributes."
 
-:::image type="content" source="media/custom-product-attribute.png" alt-text="Custom product attribute." lightbox="media/custom-product-attribute.png":::
+"A custom customer pricing attribute has been detected. Please contact your system administrator to verify the setup of custom attributes."
 
 1. Verify that the CSU flight `UPSupportCustomPricingAttributesFlight` is enabled.
 
@@ -202,7 +204,7 @@ These are the first steps to setting up your environment to implement custom pri
 
     :::image type="content" source="media/telemetry-troubleshooting.png" alt-text="Telemetry troubleshooting." lightbox="media/telemetry-troubleshooting.png":::
 
-    - Starting query template for CSU logs: <!-- KFM: What coding language do we see here? -->
+    - Starting query template for CSU logs:
 
         ```KQL
         traces
