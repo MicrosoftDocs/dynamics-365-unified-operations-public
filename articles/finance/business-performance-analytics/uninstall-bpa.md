@@ -135,3 +135,10 @@ To delete each of the preceding solutions, follow these steps.
 4. Wait for the **Deleting** message box to disappear.
 
 Deletion of all the solution requires approximately 20 minutes. If the operation is successful, you receive the following message: "Successfully deleted solution."
+
+### Data cleanup after uninstall
+
+When Business performance analytics is uninstalled, certain analytical components, such as report backups, transformation job flows, managed lake configurations, and metadata, may remain in the customer’s storage. These residual elements aren't automatically deleted and can persist unless explicitly removed. To help maintain a clean and efficient environment, the **Admin** page provides an option to agree to a post uninstall cleanup. This ensures that no Business performance analytics related data is left on disk, prevents unnecessary storage consumption, and supports compliance with data hygiene standards. Cleanup may include removing folders like msdyn_BpaConfigs, backup directories, and other Business performance analytics managed artifacts that aren't needed.
+
+
+
