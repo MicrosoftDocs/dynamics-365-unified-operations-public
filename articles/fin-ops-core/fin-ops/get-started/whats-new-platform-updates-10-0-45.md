@@ -3,7 +3,7 @@ title: Platform updates for version 10.0.45 of finance and operations apps (Sept
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.45 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
-ms.date: 07/29/2025
+ms.date: 08/19/2025
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -24,11 +24,11 @@ This article lists the features that are included in the platform updates for ve
 
 ## Features included in this release
 
-This section will contain a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
+This section contains a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| No changed reported at this time |---|---|---|
+| No change reported at this time |---|---|---|
 
 ## Feature enhancements included in this release
 
@@ -36,7 +36,7 @@ This section will contain a table that lists the enhancements that are included 
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| No changed reported at this time |---|---|---|
+| System Administration | Batch Telemetry integrates with Application Insights | As an enhancement to the existing **Monitoring and Telemetry** feature, the platform is expanding its capabilities to include **Batch telemetry integration with Application Insights**. This update introduces a robust telemetry pipeline that enables visibility into critical batch job behaviors directly within the customer's Azure Application Insights instance. Teams can monitor execution timelines, detect throttling, track task distribution, and capture failure diagnostics to eliminate the need for manual incident reporting. This feature isn't limited to future releases. It will also be **backported to version 10.0.44**, ensuring broader availability and immediate impact for customers seeking improved observability and reduced operational overhead. | Feature Management |
 
 
 ### Bug fixes
