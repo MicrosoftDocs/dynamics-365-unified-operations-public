@@ -6,7 +6,7 @@ ms.author: peterfriis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 1/03/2025
+ms.date: 08/20/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30
