@@ -48,7 +48,7 @@ These are the steps needed to implement custom pricing attributes for products, 
 
    You must add a new class for each custom pricing attribute you want to add. 
 
-    - Here's an example of code that creates a header-level custom pricing attribute (for `Customer` GUPPricingAttributeSource):
+    - Here's an example of code that creates a header-level custom pricing attribute (for `Customer` `GUPPricingAttributeSource`):
 
         ```X++
         /// <summary>
@@ -83,7 +83,7 @@ These are the steps needed to implement custom pricing attributes for products, 
         }
         ```
 
-    - Here's an example of code that creates a line-level custom pricing attribute (for `SalesLine` GUPPricingAttributeSource):
+    - Here's an example of code that creates a line-level custom pricing attribute (for `SalesLine` `GUPPricingAttributeSource`):
 
         ```X++
         /// <summary>
@@ -123,7 +123,7 @@ These are the steps needed to implement custom pricing attributes for products, 
         }
         ```
 
-1. For *new* custom pricing attributes, you must programmatically set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization`. Create an extension to GUPPricingAttributeRepository and add a statement to the `toPriceAttributeLink()` method that programmatically sets the `TypeName` column for each new custom pricing attribute. Here's an example of how to do this:
+1. For *new* custom pricing attributes, you must programmatically set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization`. Create an extension to `GUPPricingAttributeRepository` and add a statement to the `toPriceAttributeLink()` method that programmatically sets the `TypeName` column for each new custom pricing attribute. Here's an example of how to do this:
 
     ```X++
     [ExtensionOf(classStr(GUPPricingAttributeRepository))]
@@ -158,7 +158,7 @@ These are the steps needed to implement custom pricing attributes for products, 
     where ATTRIBUTENAME = 'Custom attribute name'
     ```
 
-    The following image displays how entries in the GUPPRICINGATTRIBUTELINK table may appear when they have been marked as custom.
+    The following image displays how entries in the `GUPPRICINGATTRIBUTELINK` table may appear when they have been marked as custom.
 
     :::image type="content" source="media/ssms-customization.png" alt-text="SSMS customization." lightbox="media/ssms-customization.png":::
 
