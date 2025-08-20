@@ -26,10 +26,10 @@ This article outlines the lifecycle and support policies for Microsoft Dynamics 
 
 Finance + Operations (on-premises) software is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy rules products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy).
 
-Licensed customers must regularly update their deployment of the Finance + Operations (on-premises) software. The servicing policy requires that you maintain the Software Assurance (SA) or the Enhancement Plan and it requires that you deploy the update releases provided through the [continuous service updates](on-prem-version-update-policy.md#continuous-service-updates). To check for the most up to date status on the lifecycle of the product you can check the lifecycle page [Dynamics 365 for Finance + Operations (on-premises)](/lifecycle/products/dynamics-365-for-finance-and-operations-onpremises).
+Licensed customers must regularly update their deployment of the Finance + Operations (on-premises) software. The servicing policy requires that you maintain the Software Assurance (SA) or the Enhancement Plan and it requires that you deploy the update releases provided through the [continuous service updates](on-prem-version-update-policy.md#continuous-service-updates). To check for the most up to date status on the lifecycle of the product, you can check the lifecycle page [Dynamics 365 for Finance + Operations (on-premises)](/lifecycle/products/dynamics-365-for-finance-and-operations-onpremises).
 
 > [!NOTE]
-> If you want to use the Fixed Support Lifecycle Policy (5+5), you must downgrade to Microsoft Dynamics AX 2012 R3. If you instead lapse on your SA or the Enhancement Plan, you will only be eligible for the perpetual license rights to Microsoft Dynamics AX 2012 R3 and must uninstall Microsoft Dynamics 365 for Finance + Operations (on-premises).
+> If you want to use the Fixed Support Lifecycle Policy (5+5), you must downgrade to Microsoft Dynamics AX 2012 R3. If you instead lapse on your SA or the Enhancement Plan, you'll only be eligible for the perpetual license rights to Microsoft Dynamics AX 2012 R3 and must uninstall Microsoft Dynamics 365 for Finance + Operations (on-premises).
 
 ## On-premises software update policies
 
@@ -82,9 +82,9 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 ### Older application releases
 
   > [!NOTE]
-  > Older platform releases that are passed the expiration date and are no longer supported. Extension requests can't be logged since January 1, 2019.
+  > Older platform releases passed the expiration date and are no longer supported. Extension requests can't be logged since January 1, 2019.
   >
-  > Customer who aren't following the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy) and the [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) may not be entitled to receive support after the expiration date of the deployed application version. Expired versions are removed from Lifecycle Services at some point where after servicing and deployment of such versions from Lifecycle Services may not be possible.
+  > Customers who aren't following the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy) and the [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) may not be entitled to receive support after the expiration date of the deployed application version. Expired versions are removed from Lifecycle Services at some point where after servicing and deployment of such versions from Lifecycle Services may not be possible.
 
 | Product          | Application version |Public availability| Expiration date |
 |------------------|---------|---------|---------|
@@ -98,7 +98,7 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 #### Older platform releases
 
 > [!NOTE]
-> Older platform releases that are passed the expiration date and are no longer supported. Extension requests can't be logged since January 1, 2019.
+> Older platform releases passed the expiration date and are no longer supported. Extension requests can't be logged since January 1, 2019.
 
 | Platform release          |Build Number         | Availability          | Expiration date   |
 |------------------|----------------------|------------------|--------------|
