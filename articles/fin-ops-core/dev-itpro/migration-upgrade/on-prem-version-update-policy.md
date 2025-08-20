@@ -39,7 +39,7 @@ Microsoft supports your deployment of Finance + Operations (on-premises) softwar
 
 Critical fixes and noncritical updates are handled in the following way:
 
-- **Critical fixes** – Critical fixes include security fixes and any fixes that are required to support reliability and availability. Critical fixes will be made available in the latest platform update version.
+- **Critical fixes** – Critical fixes include security fixes and any fixes that are required to support reliability and availability. Critical fixes are made available in the latest platform update version.
 - **Non-critical updates** – Customers must update to the most current Finance + Operations platform and financial reporter version to deploy noncritical updates.
 
 ## Finance + Operations (on-premises) release dates
@@ -82,9 +82,9 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 ### Older application releases
 
   > [!NOTE]
-  > Older platform releases have passed the expiration date and are no longer supported. Extension requests cannot be logged since January 1, 2019.
+  > Older platform releases that are passed the expiration date and are no longer supported. Extension requests can't be logged since January 1, 2019.
   >
-  > Customer who are not following the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy) and the [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) may not be entitled to receive support after the expiration date of the deployed application version. Expired versions will be removed from LCS at some point where after servicing and deployment of such versions from LCS may not be possible.
+  > Customer who aren't following the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy) and the [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) may not be entitled to receive support after the expiration date of the deployed application version. Expired versions are removed from Lifecycle Services at some point where after servicing and deployment of such versions from Lifecycle Services may not be possible.
 
 | Product          | Application version |Public availability| Expiration date |
 |------------------|---------|---------|---------|
@@ -93,12 +93,12 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 | Finance + Operations, Enterprise edition (on-premises) | 7.3 (7.3.11971) | Mar 2018 | Apr 2020* |
 | Finance + Operations, Enterprise edition (on-premises) | July 2017 (7.2.11792) | Jun 2017 | Apr 2019 |
 
-\* All customers must be on the latest version of Finance + Operations. The deadline for this requirement was April 30, 2019. In the transition to [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates), we had given exemptions for customers who had unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that had been submitted to Microsoft. Those customers could stay on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
+\* All customers must be on the latest version of Finance + Operations. The deadline for this requirement was April 30, 2019. In the transition to [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates), we gave exemptions for customers who had unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that were submitted to Microsoft. Those customers could stay on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
 
 #### Older platform releases
 
 > [!NOTE]
-> Older platform releases have passed the expiration date and are no longer supported. Extension requests cannot be logged since January 1, 2019.
+> Older platform releases that are passed the expiration date and are no longer supported. Extension requests can't be logged since January 1, 2019.
 
 | Platform release          |Build Number         | Availability          | Expiration date   |
 |------------------|----------------------|------------------|--------------|
