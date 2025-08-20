@@ -82,7 +82,7 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 ### Older application releases
 
   > [!NOTE]
-  > Older platform releases passed the expiration date and are no longer supported. Extension requests can't be logged since January 1, 2019.
+  > Older platform releases passed the expiration date are no longer supported. Extension requests can't be logged since January 1, 2019.
   >
   > Customers who aren't following the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy) and the [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) may not be entitled to receive support after the expiration date of the deployed application version. Expired versions are removed from Lifecycle Services at some point where after servicing and deployment of such versions from Lifecycle Services may not be possible.
 
@@ -98,7 +98,7 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 #### Older platform releases
 
 > [!NOTE]
-> Older platform releases passed the expiration date and are no longer supported. Extension requests can't be logged since January 1, 2019.
+> Older platform releases passed the expiration date are no longer supported. Extension requests can't be logged since January 1, 2019.
 
 | Platform release          |Build Number         | Availability          | Expiration date   |
 |------------------|----------------------|------------------|--------------|
