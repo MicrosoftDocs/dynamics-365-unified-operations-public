@@ -41,7 +41,12 @@ These are the first steps to setting up your environment to implement custom pri
 
 These are the steps needed to implement custom pricing attributes for products, customers, orders, and order lines.
 
-1. In ApplicationSuite repo <!-- KFM: What is this? Where do I find it? -->, create new custom pricing attributes according to: [How to add a new pricing attribute](https://eng.ms/docs/cloud-ai-platform/business-and-industry-copilot/bic-bis-ai-erp-smb/aierp-finance/d365-finance-application-core-services/dynamics-365-ai-erp/domainknowledge/scm/pricingmanagement/howto/howtoaddanewpricingattribute). <!-- KFM: This link requires a VPN; I think it's internal (not public). Our customers won't be able to open it. Do we have public link for this info? --> You must add a new class for each custom pricing attribute you want to add.
+1. Create a class to represent each new custom pricing attribute. The class should extend `GUPAbstractPricingAttribute` and implement `GUPIPricingAttribute`. Some methods should also be overwritten, such as `getValueOfAttribute()`, `getName()`, and `getDataType()`. Describe this class with three system attributes:
+    - [`GUPPricingMetadataDiscovery`]: Used to describe all pricing attributes.
+    - [`GUPPricingAttributeSourceDiscovery(, )`]: Which attribute source this attribute applies to.
+    - [`GUPPricingAttributeFieldsDiscovery(fieldStr(, ))`]: Which table and field this attribute is related to. 
+
+   You must add a new class for each custom pricing attribute you want to add. 
 
     - Here's an example of code that creates a header-level custom pricing attribute (for `Customer` GUPPricingAttributeSource):
 
@@ -189,38 +194,4 @@ While creating a transaction in POS that is associated with one or more custom p
 
 ### Further troubleshooting
 
-1. It's possible to find more details on errors or exceptions in our AzureDataExplorer dashboards.
-
-    - Useful dashboards (Must access with PME account): <!-- KFM: Can customers access these links? What is a PME account (spell it out)?-->
-        - CSU logs: <https://dataexplorer.azure.com/dashboards/db50f9f4-9a19-4a4c-9993-17e0861444d1>
-        - POS logs: <https://dataexplorer.azure.com/dashboards/8ad7df1a-a343-459b-beeb-5f4cafabe91c>
-        - Drill MPOS - CPOS - CSU - RSSU sessions logs: <https://dataexplorer.azure.com/dashboards/32491967-1eff-4b22-b161-f4bb8db6e550>
-
-1. Given the app session ID, user session ID, or activity ID, it's possible to trace AppInsights. (AppInsights PROD stores all Commerce customer logs.)
-
-    Troubleshooting through telemetry wiki: <https://msazure.visualstudio.com/D365/_wiki/wikis/D365.wiki/9342/Troubleshooting-Through-Telemetry> <!-- KFM: Can customers access this link? -->
-
-    <!-- KFM: Introduce the following image. Explain what it is showing and what the highlights mean.  -->
-
-    :::image type="content" source="media/telemetry-troubleshooting.png" alt-text="Telemetry troubleshooting." lightbox="media/telemetry-troubleshooting.png":::
-
-    - Starting query template for CSU logs:
-
-        ```KQL
-        traces
-        | where customDimensions.UserSessionId == "UserSessionId"
-        ```
-
-        ```KQL
-        traces
-        | where customDimensions.AppSessionId == "AppSessionId"
-        ```
-
-        ```KQL
-        traces
-        | where customDimensions.ActivityId == "ActivityId"
-        ```
-
-    - Example of locating full database error in CSU logs: <!-- KFM: Explain a little more about what we are looking at here and what we should notice about it. Maybe we don't really need this example? -->
-
-        :::image type="content" source="media/retail-server-logs.png" alt-text="Retail server logs." lightbox="media/retail-server-logs.png#lightbox":::
+In order to find more details on errors or exceptions, or review CSU and POS logs, please open a support ticket.
