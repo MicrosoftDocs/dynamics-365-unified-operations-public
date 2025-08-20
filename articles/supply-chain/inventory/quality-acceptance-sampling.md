@@ -17,7 +17,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.46 GA -->
 
-*Acceptance sampling* is a quality control method used to evaluate a batch of products by inspecting a representative sample. Instead of checking every item, a subset of items is examined to determine whether the entire lot meets predefined quality standards. This approach is widely used in manufacturing and supply chain operations to balance inspection effort with quality assurance.
+*Acceptance sampling* is a quality control method that applies statistical analysis to evaluate a batch of products. Instead of checking every item, a subset of items is examined to determine whether the entire lot meets predefined quality standards. This approach is widely used in manufacturing and supply chain operations to balance inspection effort with quality assurance.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -100,15 +100,21 @@ To set up your acceptance sampling charts, follow these steps:
     - **Acceptance sampling chart name** – Enter a name for the sampling chart.
     - **Description** – Enter a short description of the sampling chart.
 
+1. On the Action Pane, select **Save**.
 1. To get started quickly, you can either copy an existing chart or load a predefined template. If you choose to do so, select one of the following options in the Action Pane. Note that all the settings for the current chart (except name and description) will be replaced with the template or copied chart.
     - **Load AQL chart template** – Load all required data from a predefined JSON file. The content of the file is aligned with the ANSI/ASQ Z1.4 or ISO 2859-1 standards.
     - **Copy** – Copy data from another chart. The system asks you to choose an existing chart.
 
 1. On the **Inspection levels to include** FastTab, use the buttons in the toolbar to add and remove inspection levels for the current chart. The inspection levels are used as a criteria to find the applicable code letter in the code letter chart. You can find more information about inspection levels in [Acceptance sampling charts](#acceptance-sampling-charts).
 
-1. On the **AQL indexes to include** FastTab, use the buttons in the toolbar to add and remove AQL indexes. The AQL index defines the maximum acceptable defect rate in a sample that determines whether a production lot passes or fails inspection. You can find more information about the use of AQL indexes in [Acceptance sampling charts](#acceptance-sampling-charts).
+1. On the **AQL indexes to include** FastTab, use the buttons in the toolbar to add and remove AQL indexes. The AQL index defines the maximum acceptable defect rate in a sample that determines whether a lot/batch passes or fails inspection. You can find more information about the use of AQL indexes in [Acceptance sampling charts](#acceptance-sampling-charts).
 
-1. On the **Lot/batch size ranges** FastTab, use the buttons in the toolbar to add and remove lot/batch size ranges for the current chart. Use the **Unlimited** button in the toolbar to set a range to have no upper limit (this sets the **To** field to *Unlimited* for the selected row). The lot/batch size ranges group total units in a production batch and help find the applicable code letter. You can find more information about the use of lot/batch size ranges in  [Acceptance sampling charts](#acceptance-sampling-charts).
+1. On the **Lot/batch size ranges** FastTab, use the buttons in the toolbar to add and remove lot/batch size ranges for the current chart. Use the **Unlimited** button in the toolbar to set a range to have no upper limit (this sets the **To** field to *Unlimited* for the selected row). The lot/batch size ranges group total units in a lot/batch and help find the applicable code letter. You can find more information about the use of lot/batch size ranges in  [Acceptance sampling charts](#acceptance-sampling-charts).
+
+1. When you're done setting up the chart, select **Validate** in the Action Pane to check data integrity. If the chart is valid, it sets the **Validated** field to *Yes*. Only validated charts can be used for acceptance sampling.
+
+    > [!TIP]
+    > Validated charts are locked and can't be edited. If you need to edit a validated chart, select **Invalidate** from the Action Pane, make the required changes, and then validate the cart again.
 
 ## Set up inspection levels and acceptance sampling indexes
 
@@ -124,16 +130,18 @@ Follow these steps to create inspection levels manually:
     - **Inspection level type** – Chose between the two types *General* or *Special*, which are used as a criteria to find the code letter in the code letter chart. You can learn more about how to use these level designations in [Acceptance sampling charts](#acceptance-sampling-charts).
     - **Description** – User defined description of the inspection level.
 
+1. On the Action Pane, select **Save**.
+
 ### Set up acceptance sampling indexes
 
 AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. If you don't want to use the option to generate the AQL indexes by loading the AQL chart template, then you can use the following steps to create them manually:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Acceptance sampling indexes**.
 1. Select **New** to create a new inspection level and set the following fields:
-    - **Acceptable quality limit index** – The identification of the acceptance sampling index. The AQL index defines the maximum acceptable defect rate in a sample that determines whether a production lot passes or fails inspection.
+    - **Acceptable quality limit index** – The identification of the acceptance sampling index. The AQL index defines the maximum acceptable defect rate in a sample that determines whether a lot/batch passes or fails inspection.
     - **Description** – User defined description of the acceptance sampling index.
 
-1. When you're done setting up the chart, select **Validate** in the Action Pane to check data integrity. If the chart is valid, it sets the **Validated** field to *Yes*. Only validated charts can be used for acceptance sampling.
+1. On the Action Pane, select **Save**.
 
 ## View the sampling size code letter chart
 
@@ -228,4 +236,4 @@ Quality orders created for acceptance sampling include an **Acceptance sampling*
 - **Target Re** – Minimum number of defects for the test to fail.
 - **Test result** – Graphical indication if the test has passed or failed.
 
-To record test results for a selected quality order, either enter them directly into the test lines or select **Quick result entry** from the Action Pane to use the quick-entry form.
+To record test results for a selected quality order, either enter them directly into the test lines or select **Quick results entry** from the Action Pane to use the [quick-entry form](quality-quick-results-entry.md).
