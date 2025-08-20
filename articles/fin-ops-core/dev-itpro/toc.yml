@@ -501,6 +501,8 @@ items:
             href: get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
           - name: Authentication in on-premises environments
             href: deployment/authentication-onprem.md
+          - name: Software lifecycle policy - On-premises
+            href: migration-upgrade/on-prem-version-update-policy.md
         - name: Set up and deploy on-premises environments
           items: 
           - name: Set up on-premises projects in LCS
@@ -551,6 +553,8 @@ items:
             href: deployment/onprem-remove-reinstall-AOS-node.md
           - name: Reuse the same AD FS instance for multiple environments
             href: deployment/onprem-reuseadfs.md
+          - name: Update Service Fabric clusters for Microsoft Dynamics 365 Finance + Operations (on-premises) environments
+            href: deployment/onprem-update-sfcluster.md
           - name: Upgrade Windows Server on your on-premises environments
             href: deployment/onprem-upgrade-os.md
           - name: Upgrade or replace the SQL Server instance of on-premises environments
@@ -1211,8 +1215,6 @@ items:
         href: power-platform/environment-lifecycle-core-concepts.md
       - name: Power Platform integration scenarios
         items: 
-        - name: Connect finance and operations apps with a new Microsoft Dataverse instance
-          href: power-platform/environment-lifecycle-connect-finops-new-dv.md
         - name: Connect finance and operations apps with an existing Microsoft Dataverse instance
           href: power-platform/environment-lifecycle-connect-finops-existing-dv.md
         - name: Dual-write setup from Lifecycle Services
