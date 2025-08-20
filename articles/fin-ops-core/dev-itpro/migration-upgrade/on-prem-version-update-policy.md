@@ -4,7 +4,7 @@ description: Learn about the lifecycle and support policies for Microsoft Dynami
 author: faix
 ms.author: osfaixat
 ms.topic: article
-ms.date: 10/02/2023
+ms.date: 08/20/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
