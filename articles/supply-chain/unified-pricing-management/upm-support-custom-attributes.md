@@ -167,7 +167,7 @@ These are the steps needed to implement custom pricing attributes for products, 
 
 ### You receive a POS notification that a custom request handler isn't implemented
 
-While creating a transaction in POS that is associated with one or more custom pricing attributes, you may receive an error message like the following:
+While creating a transaction in POS that is associated with one or more custom pricing attributes, you receive an error message like the following:
 
 "The request GetCustomizedPricingPropertiesRequest is not implemented in customized code. Please contact your system administrator."
 
@@ -177,7 +177,7 @@ While creating a transaction in POS that is associated with one or more custom p
 
 ### You receive a POS notification that custom pricing attributes are detected among out-of-box attributes
 
-While creating a transaction in POS that is associated with one or more custom pricing attributes, you may receive an error message like the following:
+While creating a transaction in POS that is associated with one or more custom pricing attributes, you receive an error message like the following:
 
 "A custom product pricing attribute has been detected. Please contact your system administrator to verify the setup of custom attributes."
 
