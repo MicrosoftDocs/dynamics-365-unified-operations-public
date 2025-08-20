@@ -31,24 +31,22 @@ In many practical applications, sampled items are inspected for different *types
 - **Major defects** – Significantly reduce the usability or performance of a product but don't pose safety risks. A limited number of major defects might be acceptable depending on the sampling plan.
 - **Minor defects** – Don't affect a product's function or safety but might impact appearance or user satisfaction. A higher tolerance is usually allowed for minor defects.
 
-Acceptance criteria are defined in advance, often using standards like ANSI/ASQ Z1.4 or ISO 2859-1, which specify permissible defects count per category before rejecting a lot. This structured approach ensures consistent product quality while optimizing inspection resources.
+Acceptance criteria are defined in advance, often using standards like ANSI/ASQ Z1.4 or ISO 2859-1, which specify permissible defects count per category before rejecting a lot. This structured, statistically supported, approach  ensures consistent product quality while optimizing inspection resources.
 
 ### Single and double sampling plans
 
-Single and double sampling plans represent two different strategies for determining whether a lot meets quality standards. 
+Single and double sampling plans represent two different strategies for determining whether a lot meets quality standards.
 
 - **Single sampling plan** – One sample is inspected from the lot. Based on the number of defects found, the lot is either accepted or rejected. This method is straightforward and commonly used when simplicity and speed are important.
-
 - **Double sampling plan** – If the first sample yields an inconclusive result, a second sample is taken. The final decision is then based on the combined results of both samples. This strategy can reduce inspection effort over time while maintaining decision accuracy.
 
-This solution supports only the single sampling strategy, meaning each lot is evaluated using one sample and a fixed acceptance threshold.
+The current version of Supply Chain Management only supports the single sampling strategy, so each lot is evaluated using one sample and a fixed acceptance threshold.
 
 ### Acceptance sampling charts
 
-Acceptance sampling uses two types of charts to validate whether a lot passes or fails an inspection:
+Acceptance sampling uses a chart with the following two components to validate whether a lot passes or fails an inspection:
 
 - **Sampling code letter chart** – Defines code letters for each combination of lot size and inspection level.
-
 - **Acceptable quality limit (AQL) chart** – Uses the code letter and AQL index to determine sample size and defect thresholds.
 
 An *inspection level* is a code or category defined by a business user. It indicates the extent of inspection based on the importance of the product, the production history, and customer requirements. There are two categories of inspection levels:
@@ -61,7 +59,7 @@ The following image shows an example of a code letter chart. In this example, if
 
 The AQL chart defines the acceptable quality level for each combination of sampling code letter and AQL index. The AQL indexes are determined by business users and are based on how critical the product is, industry standards, customer requirements, and the acceptable level of risk. Lower indexes are used for high-risk or critical items, while higher AQLs are acceptable for less critical products where some defects are tolerable. Businesses can, for example, use index 0.1% for testing for critical defects, 0.65% for major defects, and 2.5% for minor defects. The selected code letter and AQL index resolve to find the sample size and acceptable quality level for the test.
 
-The following image shows an example of an acceptable quality limit chart. In this example, if you use code letter G with an AQL index of 2.5%, then up to two defects will be accepted for the lot to pass, but three or more defects will cause the lot to fail inspection. If the code letter G is used for AQL index 0.65%, then the arrow in the chart indicates that an AQL level for a different code letter should be used. In this case, the code letter with the nearest AQL values is F, which has a different sample size than code letter G, and zero defects will be accepted for the lot to pass.
+The following image shows an example of an acceptable quality limit chart. In this example, if you use code letter G with an AQL index of 2.5%, then the sample size should be 32 units and up to two defects will be accepted for the lot to pass, but three or more defects will cause the lot to fail inspection. If the code letter G is used for AQL index 0.65%, then the arrow in the chart indicates that an AQL level for a different code letter should be used. In this case, the code letter with the nearest AQL values is F, which has a different sample size than code letter G (so 20 units should be tested instead of 32), and zero defects will be accepted for the lot to pass.
 
 :::image type="content" source="media/sampling-plan-chart.jpg" alt-text="Example of an acceptable quality limit chart" lightbox="media/sampling-plan-chart.jpg":::
 
@@ -190,7 +188,7 @@ To set up item sampling for acceptance sampling, follow these steps:
 1. Select **New** to create a new item sampling and set the following fields:
     - **Item sampling** – Enter a name for the item sampling record.
     - **Description** – Enter a short description of the item sampling record.
-    - **Sampling scope** – Select the scope to use when evaluating if quality work should be created. When set to *Shipment* or *Load*, those entities are used if available. If not, the *Order* is used.
+    - **Sampling scope** – Select the scope to use when evaluating if quality work should be created. When set to *Shipment* or *Load*, those entities are used if available. If not, the *Order* is used. When you use acceptance sampling charts, the only supported sampling scope is *Order*.
     - **Use acceptance sampling charts** – Choose one of the following options:
         - *Single* – Use acceptance sampling. This value indicates that you'll use a single sampling plan. Learn more in [Single and double sampling plans](#single-and-double-sampling-plans).
         - *None* – Don't use acceptance sampling for quality inspection.
@@ -215,8 +213,8 @@ When a quality order is triggered by an event defined in a quality association, 
 
 To set up a quality association for acceptance sampling, follow the instructions provided in [Quality associations](quality-associations.md). When you're setting up your quality associations on the **Quality associations** page, pay special attention to the following settings, which are specific to acceptance sampling:
 
-- Use the **Item sampling** field on the **Specifications** FastTab to select an item sampling record. This setting is required to enable acceptance sampling for the quality association.
-- Use the **Test group** field on the **Specifications** FastTab to select a test group that contains the tests you want to use for acceptance sampling. The test group must contain tests that are associated with defect types that you set up in [Set up defect types](#set-up-defect-types).
+- Use the **Item sampling** field on the **Specifications** FastTab to select an item sampling record. Choose an item sampling record that's configured to use acceptance sampling charts. This setting is required to enable acceptance sampling for the quality association.
+- Use the **Test group** field on the **Specifications** FastTab to select a test group that contains the tests you want to use for acceptance sampling. The test group must contain tests that are associated with defect types that you set up in [Set up defect types](#set-up-defect-types). The test group can only include at most one of each defect type.
 
 ## Using acceptance sampling on quality orders
 
