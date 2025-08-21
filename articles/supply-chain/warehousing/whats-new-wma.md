@@ -36,7 +36,6 @@ Version 4 introduces many new features and improvements that will enhance your w
 Version 4.0.7.0 adds the following fixes and improvements:
 
 - Improved accessibility support.
-- Improved the performance of the quantity spinner.
 - Fixed an issue where pop-up step instructions could continue to appear even after the user had opted to hide them.
 
 ## Version 4.0.3.0
