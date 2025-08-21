@@ -2,7 +2,7 @@
 title: Get started with Electronic invoicing for Uruguay
 description: Learn how to set up Microsoft Dynamics 365 Finance to use uruguayan electronic invoices formats.
 author: v-pedrobusto2025
-ms.author: v-pedrobusto2025
+ms.author: v-pedrobusto
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -481,7 +481,7 @@ When you review the submission details, you should notice that the steps run aga
 
 As a result of the completed outbound flow, the signed XML is attached to the invoice journal as **EdicomSourceFile**.
 
-![Screenshot of the attached source file.](ltm-col-e-invoice-attached-source-file.png)
+![Screenshot of the attached source file.](ltm-invoice-attached-source-file.png)
 
 For Uruguay, the **Process response** action completes the pipeline after a few minutes.
 
@@ -492,10 +492,10 @@ For Uruguay, the **Process response** action completes the pipeline after a few 
 - [Get started with Electronic invoicing service administration](../global/gs-e-invoicing-administration-integration-components.md)
 - [Setting up Electronic Invoicing](../global/gs-e-invoicing-set-up-overview.md)
 - [Electronic Invoicing service independent software vendor (ISV) last-mile connector](../global/e-invoicing-isv-connector.md)
-- [Dynamics 365 Country expansion: localizations for LATAM countries | June 27, 2024](https://community.dynamics.com/blogs/post/?postid=7bd2efc7-9344-ef11-840a-6045bdeef618)
-- [Dynamics 365 Country expansion: localizations for LATAM countries | D365 FastTrack Tech Talks (youtube.com)](https://www.youtube.com/watch?v=eK8TJmnhpJo)
+- [Dynamics 365 Country expansion: localizations for LATAM Countries/Regions | June 27, 2024](https://community.dynamics.com/blogs/post/?postid=7bd2efc7-9344-ef11-840a-6045bdeef618)
+- [Dynamics 365 Country expansion: localizations for LATAM Countries/Regions | D365 FastTrack Tech Talks (youtube.com)](https://www.youtube.com/watch?v=eK8TJmnhpJo)
 
-- [Finance Localization for LATAM: Update on Additional Countries | Dynamics 365 Fast Track TechTalk | Jun 23, 2025](https://community.dynamics.com/blogs/post/?postid=f091c202-104b-f011-877a-7c1e52165747)
-- [Finance Localization for LATAM: Update on Additional Countries | Dynamics 365 Fast Track TechTalk (youtube.com)](https://www.youtube.com/watch?v=g3oD3jqsePA)
+- [Finance Localization for LATAM: Update on Additional Countries/Regions | Dynamics 365 Fast Track TechTalk | Jun 23, 2025](https://community.dynamics.com/blogs/post/?postid=f091c202-104b-f011-877a-7c1e52165747)
+- [Finance Localization for LATAM: Update on Additional Countries/Regions | Dynamics 365 Fast Track TechTalk (youtube.com)](https://www.youtube.com/watch?v=g3oD3jqsePA)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
