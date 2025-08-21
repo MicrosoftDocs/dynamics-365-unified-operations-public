@@ -1,8 +1,8 @@
 ---
 title: Group records and aggregate calculations by using GROUPBY data sources
 description: Learn how you can use GROUPBY type data sources in Electronic reporting (ER), including aggregate functions, alternatives, and examples.
-author: kfend
-ms.author: filatovm
+author: egolub
+ms.author: liza-golub
 ms.topic: how-to
 ms.date: 03/18/2022
 ms.custom: 
@@ -33,11 +33,12 @@ At runtime, a configured **GroupBy** data source groups records that have the sa
 
 At runtime, every aggregate calculation is done for each group of records. This calculation is done by using the value of a single field or an expression in the records of a data source that was selected for grouping in the editable data source of the **GroupBy** type. The following aggregate functions are currently supported:
 
-- **AVG** – This function returns the average of the values in a group. It can be used only with numeric fields.
-- **COUNT** – This function returns the number of items that were found in a group.
+- **Avg** – This function returns the average of the values in a group. It can be used only with numeric fields.
+- **Count** – This function returns the number of items that were found in a group.
 - **Min** – This function returns the minimum value among the values in a group.
 - **Max** – This function returns the maximum value among the values in a group.
-- **SUM** – This function returns the sum of all the values in a group. It can be used only with numeric fields.
+- **Sum** – This function returns the sum of all the values in a group. It can be used only with numeric fields.
+- **Any** - This function returns any value in a group. It can be used for any type of fields including Enum. This function is available as of 10.0.46 version of Finance.
 
 ## <a name="ExecutionLocation"></a>Execution location
 
