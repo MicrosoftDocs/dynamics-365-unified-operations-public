@@ -42,6 +42,9 @@ Cash flow forecasting can be integrated with General ledger, Accounts payable, A
 - **Project forecasts** - Project management and accounting forecasts using forecast model.
 - **Cash flow sales tax authority payments** – Predicted sales tax authority payment amounts and timing that result in financial payments. Enable the feature Cash flow sales tax authority payments.
 
+> [!IMPORTANT] 
+> Cashflow forecast includes posted vendor invoice register entries that are not associated to the purchase order. If the invoice register is associated to the purchase order, the transaction will only be included when the invoice approval journal is posted.
+
 ## Configuration
 
 To configure the cash flow forecasting process, use the **Cash flow forecast setup** page. On this page, you specify the liquidity accounts to track and the default forecasting behaviors for each area.
