@@ -1,8 +1,8 @@
 ---
 title: Electronic reporting (ER) overview
 description: Learn about the Electronic reporting tool through an overview. It describes key concepts, supported scenarios, and formats that are part of the solution.
-author: twheeloc
-ms.author: filatovm
+author: liza-golub
+ms.author: egolub
 ms.topic: overview
 ms.date: 11/02/2021
 ms.reviewer: johnmichalak
@@ -100,16 +100,10 @@ To learn how to register a new ER provider, play the task guide, **ER Create a c
 
 An ER repository stores ER configurations. The following types of ER repositories are currently supported: 
 
-- LCS shared library
-- LCS project
 - File system
-- RCS
 - Operations resources
 - Global repository
-
-An **LCS shared library** repository provides access to the list of configurations within the Shared asset library in Lifecycle Services (LCS). This type of ER repository can only be registered for the Microsoft provider. From the LCS Shared asset library you can import the latest versions of ER configurations into the current instance.
-
-An **LCS project** repository provides access to the list of configurations of a specific LCS project (LCS project assets library) that was selected when the repository was registered. ER lets you upload shared configurations from the current instance to a specific **LCS project** repository. You can also import configurations from an **LCS project** repository into the current instance of your finance and operations apps.
+- Dataverse
 
 A **File system** repository provides access to the list of configurations that are located as XML files in the specific folder of the local file system of the machine where the AOS service is hosted. The required folder is selected at the repository registration stage. You can import configurations from a **File system** repository into the current instance. 
 
@@ -120,15 +114,13 @@ Note that this repository type is accessible in the following environments:
 
 For more information, see [Import Electronic reporting (ER) configurations](./electronic-reporting-import-ger-configurations.md).
 
-An **RCS** repository provides access to the list of configurations of a specific instance of Configuration service (RCS) that was selected at the repository registration stage. ER lets you import completed or shared configurations from the selected RCS instance into the current instance so you can use them for electronic reporting.
-
-
 A **Global repository** repository provides access to the list of configurations within the global repository in the Configuration service. This type of ER repository can only be registered for the Microsoft provider. From the global repository, you can import the latest versions of ER configurations into the current instance.
-
 
 An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, initially releases as part of the application solution. These configurations can be imported into the current instance and used for electronic reporting or playing sample task guides. They can also be used for additional localizations and customizations. Note that the latest versions provided by Microsoft ER configurations must be imported from the LCS Shared asset library by using the corresponding ER repository.
 
-Required **LCS project**, **File system**, and **Regulatory Configuration Services (RCS)** repositories can be registered individually for each configuration provider of the current instance. Each repository can be dedicated to a specific configuration provider.
+A **Dataverse** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, initially releases as part of the application solution. These configurations can be imported into the current instance and used for electronic reporting. For details, see [Import Electronic reporting (ER) configurations from Dataverse](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse).
+
+Required repositories can be registered individually for each configuration provider of the current instance. Each repository can be dedicated to a specific configuration provider.
 
 ## Supported scenarios
 
@@ -203,17 +195,9 @@ To become familiar with the details of this scenario, see [Generate electronic d
 
 ## Handling ER components
 
-### Publishing an ER component in LCS to offer it externally (localization)
-
-The owner of a component (model or format) that has been created can use ER to publish the completed version of the component to LCS. A repository of the **LCS project** type for the current ER configuration provider is required. When the status of the completed version of a component is changed from **COMPLETED** to **SHARED**, that version is published in LCS. When a component has been published to LCS, the owner of that component becomes a provider of the service to support the component. For example, if the format component is designed to generate an electronic document that is legally required (for example, in accordance with a localization scenario), it's assumed that the format will be kept compliant with legislative changes, and that the provider will issue new versions of the component whenever new legislative requirements arise. To become familiar with the details of this scenario, see, [Upload a configuration into Lifecycle Services](tasks/er-upload-configuration-into-lifecycle-services.md).
-
-### Importing an ER component from LCS to use it internally
-
-ER lets you import ER components from LCS to the current instance. A repository of the **LCS project** type is required. When an ER component has been imported from LCS to the current instance, the owner of the instance becomes a consumer of the service that is provided by the owner (author) of the imported component. For example, if a format component is designed to generate a specific electronic document from the application in a country/region-specific format (localization scenario), it's assumed that the service consumer will be able to obtain any updates that are made to that format, to keep it compliant with legislative requirements. To become familiar with the details of this scenario, see [Import a configuration from Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md).
-
 ### Building a format selecting another format as a base (customization)
 
-ER lets you create (derive) a new component from the current version of a component (base) that was imported from LCS. For example, a user wants to derive a new format to implement some special requirements for an electronic document (such as an additional field or an extensive description) to support a customization scenario. To become familiar with the details of this scenario, see [ER Upgrade your format by adopting a new, base version of that format](tasks/er-upgrade-format.md).
+ER lets you create (derive) a new component from the current version of a component (base) that was imported from a repository. For example, a user wants to derive a new format to implement some special requirements for an electronic document (such as an additional field or an extensive description) to support a customization scenario. To become familiar with the details of this scenario, see [ER Upgrade your format by adopting a new, base version of that format](tasks/er-upgrade-format.md).
 
 ### Upgrading a format selecting a new version of base format (rebase)
 
