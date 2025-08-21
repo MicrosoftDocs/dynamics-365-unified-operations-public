@@ -4,7 +4,7 @@ description: Learn how to migrate from Warehouse Management mobile application f
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 06/12/2025
+ms.date: 08/21/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -109,9 +109,11 @@ When you migrate from V3 to V4, the following compatibility features are availab
 
 Device code authentication isn't available on iOS platforms. Username/password authentication is the only supported method for iOS devices.
 
+It isn't possible to connect iOS devices to on-premises environments of Supply Chain Management.
+
 ### On-premises limitations
 
-For on-premises installations of Supply Chain Management, device code authentication isn't supported for iOS or Android devices; only username/password authentication is available for these platforms.
+For on-premises installations of Supply Chain Management, device code authentication isn't supported for Android devices; only username/password authentication is available for this platform.
 
 ## <a name="rollout"></a>Rollout schedule and transition period support
 
