@@ -1227,7 +1227,7 @@ items:
           href: power-platform/environment-lifecycle-change-env-type-dv.md
         - name: Database and environment movements when Power Platform Integration is enabled
           href: power-platform/environment-lifecycle-database-movements.md
-        - name: Setup developer cloud-hosted environments with Power Platform Integration
+        - name: Set up developer cloud-hosted environments with Power Platform Integration
           href: power-platform/environment-lifecycle-development-environments.md
       - name: Authentication and authorization
         href: power-platform/authentication-and-authorization.md
