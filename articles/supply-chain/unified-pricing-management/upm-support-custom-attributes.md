@@ -25,7 +25,7 @@ To use the features described in this article, you must be running version 10.0.
 
 ## First steps
 
-These are the first steps to setting up your environment to implement custom pricing attributes.
+Start by setting up your environment to implement custom pricing attributes, as described in the following procedure:
 
 1. Implement a custom request handler to process custom pricing attributes. For an example, see [Example custom request handler code](upm-custom-request-handler-example.md).
 
@@ -39,14 +39,15 @@ These are the first steps to setting up your environment to implement custom pri
 
 ## How to add your custom pricing attributes
 
-These are the steps needed to implement custom pricing attributes for products, customers, orders, and order lines.
+To implement custom pricing attributes for products, customers, orders, and order lines, follow these steps:
 
 1. Create a class to represent each new custom pricing attribute. The class should extend `GUPAbstractPricingAttribute` and implement `GUPIPricingAttribute`. Some methods should also be overwritten, such as `getValueOfAttribute()`, `getName()`, and `getDataType()`. Describe this class with three system attributes:
-    - [`GUPPricingMetadataDiscovery`]: Used to describe all pricing attributes.
-    - [`GUPPricingAttributeSourceDiscovery(, )`]: Which attribute source this attribute applies to.
-    - [`GUPPricingAttributeFieldsDiscovery(fieldStr(, ))`]: Which table and field this attribute is related to. 
 
-   You must add a new class for each custom pricing attribute you want to add. 
+    - [`GUPPricingMetadataDiscovery`]: Describes all pricing attributes.
+    - [`GUPPricingAttributeSourceDiscovery(, )`]: Identifies the attribute source this attribute applies to.
+    - [`GUPPricingAttributeFieldsDiscovery(fieldStr(, ))`]: Identifies the table and field this attribute is related to.
+
+   You must add a new class for each custom pricing attribute you want to add.
 
     - Here's an example of code that creates a header-level custom pricing attribute (for `Customer` `GUPPricingAttributeSource`):
 
@@ -148,7 +149,7 @@ These are the steps needed to implement custom pricing attributes for products, 
 
 1. Within your Microsoft finance and operations app, go to **Pricing management** \> **Setup** \> **Price attribute groups** \> **Price attribute groups**. Select the price attribute group that you want to customize and then use the **Attributes** FastTab to add your custom pricing attributes to it. Update each group as needed.
 
-1. Navigate to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution Schedule** and run the _1210 Pricing management_ job to sync changes to Channel database.
+1. Navigate to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution Schedule** and run the *1210 Pricing management* job to sync changes to Channel database.
 
 1. For *existing* custom pricing attributes, manually set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization` in SQL Server Management Studio (SSMS). Here's an example of how to set the `Customization` identifier:
 
@@ -158,13 +159,13 @@ These are the steps needed to implement custom pricing attributes for products, 
     where ATTRIBUTENAME = 'Custom attribute name'
     ```
 
-    The following image displays how entries in the `GUPPRICINGATTRIBUTELINK` table may appear when they have been marked as custom.
+    The following image shows an example of how entries marked as custom are shown in the `GUPPRICINGATTRIBUTELINK` table.
 
     :::image type="content" source="media/ssms-customization.png" alt-text="SSMS customization." lightbox="media/ssms-customization.png":::
 
 1. For `Customer` or `Product`, create a trade agreement journal that tests the new custom pricing attribute. For `SalesTable` or `SalesLine`, create an auto charge that tests the new custom pricing attribute. In both cases, make sure to set a specific value.
 
-1. Navigate to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution Schedule**  and run the _9999 All jobs_ job to sync changes to Channel database.
+1. Navigate to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution Schedule**  and run the *9999 All jobs* job to sync changes to Channel database.
 
 1. In POS, you should see the value configured in the trade agreement journal or that an auto charge was correctly applied.
 
@@ -172,9 +173,11 @@ These are the steps needed to implement custom pricing attributes for products, 
 
 ### You receive a POS notification that a custom request handler isn't implemented
 
-While creating a transaction in POS that is associated with one or more custom pricing attributes, you receive an error message like the following:
+While creating a transaction in POS that is associated with one or more custom pricing attributes, you might receive an error message like the following:
 
-"The request GetCustomizedPricingPropertiesRequest is not implemented in customized code. Please contact your system administrator."
+> The request GetCustomizedPricingPropertiesRequest is not implemented in customized code. Please contact your system administrator.
+
+To address this issue, follow these steps:
 
 1. Verify that a custom request handler is implemented and included in the build.
 
@@ -182,11 +185,11 @@ While creating a transaction in POS that is associated with one or more custom p
 
 ### You receive a POS notification that custom pricing attributes are detected among out-of-box attributes
 
-While creating a transaction in POS that is associated with one or more custom pricing attributes, you receive an error message like the following:
+While creating a transaction in POS that is associated with one or more custom pricing attributes, you receive an error message like one of the following:
 
-"A custom product pricing attribute has been detected. Please contact your system administrator to verify the setup of custom attributes."
-
-"A custom customer pricing attribute has been detected. Please contact your system administrator to verify the setup of custom attributes."
+> A custom product pricing attribute has been detected. Please contact your system administrator to verify the setup of custom attributes.
+&nbsp;
+> A custom customer pricing attribute has been detected. Please contact your system administrator to verify the setup of custom attributes.
 
 1. Verify that the CSU flight `UPSupportCustomPricingAttributesFlight` is enabled.
 
@@ -194,4 +197,4 @@ While creating a transaction in POS that is associated with one or more custom p
 
 ### Further troubleshooting
 
-In order to find more details on errors or exceptions, or review CSU and POS logs, please open a support ticket.
+To find more details on errors or exceptions, or review CSU and POS logs, please contact Microsoft Support and open a support ticket.
