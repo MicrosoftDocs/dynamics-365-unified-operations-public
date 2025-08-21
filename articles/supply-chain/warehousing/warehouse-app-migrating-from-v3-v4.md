@@ -108,7 +108,8 @@ When you migrate from V3 to V4, the following compatibility features are availab
 ### iOS limitations
 
 Device code authentication isn't available on iOS platforms. Username/password authentication is the only supported method for iOS devices.
-iOS devices do not have the capability to connect to on-premises environments.
+
+It isn't possible to connect iOS devices to on-premises environments of Supply Chain Management.
 
 ### On-premises limitations
 
