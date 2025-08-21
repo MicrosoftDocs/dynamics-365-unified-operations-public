@@ -30,7 +30,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information to help you get started with Electronic invoicing for Uruguay. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md). For the last-mile integration with the Uruguayan Tax Authorities, Microsoft is partnering with Edicom.
+This article provides information to help you get started with Electronic invoicing for Uruguay. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md). For the last-mile integration with the Uruguayan Tax Authorities, Microsoft is partnering with Edicom. 
 
 After you configure Electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the [Edicom](https://edicomgroup.com/electronic-invoicing/uruguay) authorized certification provider (PAC) according to the [regulatory requirements in Uruguay](https://www.gub.uy/direccion-general-impositiva/home).
 
