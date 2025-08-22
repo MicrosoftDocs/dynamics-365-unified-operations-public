@@ -39,7 +39,7 @@ ER is a configurable tool that helps you create and maintain regulatory electron
 - Easy or automatic upgrade:
 
     - Versioning of ER configurations is supported.
-    - The Microsoft Dynamics Lifecycle Services (LCS) Assets library can be used as a repository for ER configurations, for version exchange.
+    - The Dataverse can be used as a repository for ER configurations, for version exchange.
     - Localizations that are based on original ER configurations can be introduced as child versions.
     - An ER configuration tree is provided as a tool that helps control dependencies for versions.
     - Differences in localization, or the delta configuration, are recorded to enable automatic upgrade to a new version of the original ER configuration.
