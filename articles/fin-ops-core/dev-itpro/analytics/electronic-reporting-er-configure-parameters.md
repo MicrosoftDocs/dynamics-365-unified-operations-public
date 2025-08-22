@@ -1,12 +1,13 @@
 ---
 title: Configure the Electronic reporting (ER) framework
 description: Learn about how to configure parameters of the Electronic reporting (ER) framework, including learning about the prerequisites for electronic reporting setup.
-author: kfend
-ms.author: filatovm
+author: liza-golub
+ms.author: egolub
 ms.topic: how-to
-ms.date: 04/23/2020
+ms.custom: 
+  - bap-template
+ms.date: 08/22/2025
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace, ERParameters, ERFormatDestinationTable
@@ -21,7 +22,7 @@ ms.assetid: 3c1291de-230c-4e31-96c4-ba69a310690a
 This article explains how to set up the basic functionality for Electronic reporting (ER). It also describes the steps that you must complete before you can set up ER.
 
 ## Prerequisites for ER setup
-Before you can set up ER, you must set up the required [document types](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) in Document management:
+Before you can set up ER, you must set up the required [document types](../../dev-itpro/organization-administration/configure-document-management.md#configure-document-types) in Document management: 
 
 - A document type for Microsoft Office documents that are used as templates for ER reports.
 - A document type that is used to store the output of ER reports in the jobs archive.
