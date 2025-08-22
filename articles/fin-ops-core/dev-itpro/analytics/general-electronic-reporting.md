@@ -4,10 +4,11 @@ description: Learn about the Electronic reporting tool through an overview. It d
 author: liza-golub
 ms.author: egolub
 ms.topic: overview
-ms.date: 11/02/2021
+ms.custom: 
+  - bap-template
+ms.date: 08/22/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Developer, IT Pro
 ms.search.region: global
 ms.search.validFrom: 2016-02-28
 ms.search.form: ERWorkspace
