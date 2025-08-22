@@ -3,11 +3,12 @@ title: Exclude specific transactions or transaction types from master planning
 description: Learn how to exclude specific transactions or transaction types from master planning calculations, including prerequisites.
 author: Henrikan
 ms.author: henrikan
-ms.topic: how-to
-ms.date: 01/16/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 08/22/2025
+ms.custom:
+  - bap-template
 ---
 
 # Exclude specific transactions or transaction types from master planning
