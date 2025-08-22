@@ -4,7 +4,7 @@ description: Learn how you can use GROUPBY type data sources in Electronic repor
 author: egolub
 ms.author: liza-golub
 ms.topic: how-to
-ms.date: 03/18/2022
+ms.date: 08/22/2025
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
