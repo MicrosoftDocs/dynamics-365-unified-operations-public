@@ -294,5 +294,3 @@ If the seasonal period that you use is too long (that is, longer than the actual
 For example, you use a seasonal period of *24 months* for data that has an annual cycle. The result is overfitting, where small irregularities in the data are treated as seasonal patterns.
 
 To set a *Forecast* or *Handle outliers* step to use a seasonality hint, edit the step's settings, and set **Select seasonality detection setting** to *Detection using hint*. Then, enter the number of time buckets in the **Seasonality hint (in periods of time buckets)** field.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
