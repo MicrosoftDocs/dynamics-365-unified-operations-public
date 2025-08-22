@@ -61,7 +61,7 @@ The ER engine has the following capabilities:
 - It makes a report's format insulated from the current implementation. In other words, the format is applicable for different versions.
 - It supports the creation of a custom format that is based on an original format. It also includes capabilities for automatically upgrading the customized format when the original format is changed because of localization/customization requirements.
 - It becomes the primary standard tool to support localization requirements in electronic reporting, both for Microsoft and for Microsoft partners.
-- It supports the ability to distribute formats to partners and customers through Microsoft Dynamics Lifecycle Services (LCS).
+- It supports the ability to distribute formats to partners and customers through Dataverse.
 
 ## Key concepts
 
@@ -113,7 +113,7 @@ Note that this repository type is accessible in the following environments:
 
 For more information, see [Import Electronic reporting (ER) configurations](./electronic-reporting-import-ger-configurations.md).
 
-An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, initially releases as part of the application solution. These configurations can be imported into the current instance and used for electronic reporting or playing sample task guides. They can also be used for additional localizations and customizations. Note that the latest versions provided by Microsoft ER configurations must be imported from the LCS Shared asset library by using the corresponding ER repository.
+An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, initially releases as part of the application solution. These configurations can be imported into the current instance and used for electronic reporting or playing sample task guides. They can also be used for additional localizations and customizations. Note that the latest versions provided by Microsoft ER configurations must be imported from the Dataverse by using the corresponding ER repository.
 
 A **Dataverse** repository provides access to the list of configurations that Microsoft, as an ER configuration provider. These configurations can be imported into the current instance and used for electronic reporting. Dataverse serves as the central source for configurations. You can import configurations from Dataverse into your Finance, and likewise, export configurations into Dataverse. For details, see [Import Electronic reporting (ER) configurations from Dataverse](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse).
 
@@ -198,7 +198,7 @@ ER lets you create (derive) a new component from the current version of a compon
 
 ### Upgrading a format selecting a new version of base format (rebase)
 
-ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component. This process is known as *rebasing*. For example, a new regulatory change that has been introduced in the latest version of the format that was imported from LCS can be automatically merged into the customized version of this format of the electronic document. Any changes that can't be merged automatically are considered conflicts. These conflicts are presented for manual resolution in the designer tool for the appropriate component. To become familiar with the details of this scenario, see [ER Upgrade your format by adopting a new, base version of that format](tasks/er-upgrade-format.md).
+ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component. This process is known as *rebasing*. For example, a new regulatory change that has been introduced in the latest version of the format that was imported from Dataverse can be automatically merged into the customized version of this format of the electronic document. Any changes that can't be merged automatically are considered conflicts. These conflicts are presented for manual resolution in the designer tool for the appropriate component. To become familiar with the details of this scenario, see [ER Upgrade your format by adopting a new, base version of that format](tasks/er-upgrade-format.md).
 
 ## <a name="list-of-configurations"></a>List of ER configurations that have been released in Finance
 
