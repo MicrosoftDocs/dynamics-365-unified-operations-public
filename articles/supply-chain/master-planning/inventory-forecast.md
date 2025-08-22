@@ -3,10 +3,14 @@ title: Inventory forecasts
 description: Learn about the supply and demand forecast functionality that can be used to create inventory forecasts in Microsoft Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.author: henrikan
-ms.topic: how-to
-ms.date: 06/08/2021
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductDetailsExtended, ForecastSales, ForecastPurch, ForecastInvent
+ms.topic: how-to
+ms.date: 08/22/2025
+ms.update-cycle: 1095-days
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Inventory forecasts
@@ -47,19 +51,19 @@ As the table in step 1 shows, there are different ways to access the pages that 
     | Customers | <ol><li>Go to **Master planning \> Forecasting \> Manual forecast entry \> Customers**.</li><li>Select the customer to create a forecast for.</li><li>On the Action Pane, select **Define demand forecast**.</li></ol> |
     | Customer groups | <ol><li>Go to **Master planning \> Forecasting \> Manual forecast entry \> Customer groups**.</li><li>Select the customer group to create a forecast for.</li><li>On the Action Pane, select **Define demand forecast**.</li></ol> |
     | Vendors | <ol><li>Go to **Master planning \> Forecasting \> Manual forecast entry \> Vendors**.</li><li>Select the vendor to create a forecast for.</li><li>On the Action Pane, select **Entry** to open the **Supply forecast** page.</li></ol> |
-    | Vendor groups | <ol><li>Go to **Master planning \> Forecasting \> Manual forecast entry \> Vendor groups**.</li><li>Select the vendor group to create a forecast for.</li><li>On the Action Pane, select **Entry** to open the **Supply forecast** page.</li></ol> | 
+    | Vendor groups | <ol><li>Go to **Master planning \> Forecasting \> Manual forecast entry \> Vendor groups**.</li><li>Select the vendor group to create a forecast for.</li><li>On the Action Pane, select **Entry** to open the **Supply forecast** page.</li></ol> |
     | All lines | <ul><li>Go to **Master planning \> Forecasting \> Demand forecast lines** or **Master planning \> Forecasting \> Supply forecast lines**, depending on the type of forecast that you want to work with.</li></ul> |
 
     Depending on your selection, the **Supply forecast** or **Demand forecast** page appears. It shows any existing forecast lines for the record that you selected before you opened the page.
 
 1. On the Action Pane, select **New** to add a forecast line to the grid in the upper part of the page.
-1. On the new line, in the **Model** field, select the forecast model to use. Then enter other details as required, such as the item, item group, customer or vendor account or group, item quantity, or total transaction amount. For complete details about the fields that are available on the **Supply forecast** and **Demand forecast** pages, see the later sections in this article.
+1. On the new line, in the **Model** field, select the forecast model to use. Then enter other details as required, such as the item, item group, customer, or vendor account or group, item quantity, or total transaction amount. For complete details about the fields that are available on the **Supply forecast** and **Demand forecast** pages, see the later sections in this article.
 1. To distribute the forecast over the period, on the **Overview** tab, select **Allocate forecast** on the toolbar.
 1. In the **Allocation** grid, review the time horizon and the time intervals that are used to distribute the forecast quantities.
 
 ## Supply forecast lines
 
-The supply forecast lets you create a plan for items that must be purchased. It tells procurement and sourcing clerks what they are expected to order.
+The supply forecast lets you create a plan for items that must be purchased. It tells procurement and sourcing clerks what they're expected to order.
 
 You can enter a supply forecast by item, item group, item allocation key, vendor, and vendor group. For information about all the ways to open the **Supply forecast** page for various entities and records, see the [View and manually enter forecast lines](#manual-entry) section earlier in this article.
 
