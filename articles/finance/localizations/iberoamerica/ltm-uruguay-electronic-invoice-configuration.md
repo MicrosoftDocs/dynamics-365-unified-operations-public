@@ -1,32 +1,16 @@
 ---
 title: Get started with Electronic invoicing for Uruguay
-description: Learn how to set up Microsoft Dynamics 365 Finance to use uruguayan electronic invoices formats.
+description: Learn how to set up Microsoft Dynamics 365 Finance to use Uruguayan electronic invoices formats.
 author: v-pedrobusto2025
 ms.author: v-pedrobusto
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/7/2025 
+ms.date: 08/25/2025 
 ms.reviewer: johnmichalak
 ---
 
 # Get started with Electronic invoicing for Uruguay
-
-## Table of contents
-
-- [Introduction](#get-started-with-electronic-invoicing-for-uruguay)
-- [Prerequisites](#prerequisites)
-- [Configure the electronic invoicing feature](#configure-the-electronic-invoicing-feature)
-- [Edicom interactions for Uruguay](#edicom-interactions-for-uruguay)
-- [Outbound flow pipeline](#outbound-flow-pipeline)
-- [Electronic invoice feature](#electronic-invoice-feature)
-    - [Setups-View](#setups-view)
-    - [Feature version setup](#feature-version-setup)
-    - [Applicability rules and feature setup scope](#applicability-rules-and-feature-setup-scope)
-    - [Variables](#variables)
-- [Configure electronic document parameters](#configure-electronic-document-parameters)
-- [Issue electronic invoices](#issue-electronic-invoices)
-- [More resources](#more-resources)
 
 [!include [banner](../../includes/banner.md)]
 
@@ -147,7 +131,7 @@ These parameters are general-purpose and will be used across the different actio
     | EdicomSubmitInvoiceDestination| Destination name         | String      | <ID_PROVIDED_EDICOM>_EDIWIN                                       |
     | EdicomSubmitInvoiceSchema     | Submit invoice schema name| String     | OUTBOUND_DOCUMENT_MICROSOFT_UY                      |
     | EdicomToken                   | Auth token               | Secret name | EdiwinUruguayToken                                  |
-    | EdicomWebServiceURL           | Web service URL          | String      | https://ipaasgw.edicomgroup.c
+    | EdicomWebServiceURL           | Web service URL          | String      | https://ipaasgw.edicomgroup.com
 
     > [!TIP]
     > When configuring the feature parameters for Edicom integration, follow these steps:
@@ -183,7 +167,7 @@ In the following sections, you will find guidance on the general configuration s
 After importing the feature, in the second screenshot, you will see five tabs: **Versions**, **Configuration**, **Feature parameters**, **Setups**, and **Tags**. Select the **Setups** tab, and then click **View**. This opens the page **Feature version setup**:
 
 ## Feature version setup
-These page allows you to review and configure the details of the feature setup for Uruguay. On the left side of this page, you will see four sections: **Processing pipeline**, **Applicability rules**, **Variables**, and **Parameters**.
+This page allows you to review and configure the details of the feature setup for Uruguay. On the left side of this page, you will see four sections: **Processing pipeline**, **Applicability rules**, **Variables**, and **Parameters**.
 
 ### Processing pipeline
 
@@ -324,7 +308,7 @@ Below are the applicability rules for each electronic invoice format for Uruguay
 | And/or | And/or | Field          | Operator type | Value                   | Data type |
 |--------|--------|----------------|---------------|-------------------------|-----------|
 | And    |        | CountryISOCode | Equals        | UY                      | string    |
-|        |        | LegalEntityId  | Equals        | <Legal Entity ID>                    | string    |
+|        |        | LegalEntityId  | Equals        | \<Legal Entity ID\>                    | string    |
 | Or     |        | DocumentType   | Equals        | Customer invoice        | string    |
 |        |        | DocumentType   | Equals        | Customer credit note    | string    |
 |        |        | DocumentType   | Equals        | Customer debit note     | string    |
@@ -333,7 +317,7 @@ Below are the applicability rules for each electronic invoice format for Uruguay
 | And/or | And/or | Field          | Operator type | Value                        | Data type |
 |--------|--------|----------------|---------------|------------------------------|-----------|
 | And    |        | CountryISOCode | Equals        | UY                           | string    |
-|        |        | LegalEntityId  | Equals        | <Legal Entity ID>                         | string    |
+|        |        | LegalEntityId  | Equals        | \<Legal Entity ID\>                         | string    |
 |        |        | DocumentType   | Equals        | Export Customer invoice      | string    |
 |        |        | DocumentType   | Equals        | Export Customer debit note   | string    |
 |        |        | DocumentType   | Equals        | Export Customer credit note  | string    |
@@ -342,21 +326,21 @@ Below are the applicability rules for each electronic invoice format for Uruguay
 | And/or | And/or | Field          | Operator type | Value                  | Data type |
 |--------|--------|----------------|---------------|------------------------|-----------|
 | And    |        | CountryISOCode | Equals        | UY                     | string    |
-|        |        | LegalEntityId  | Equals        | <Legal Entity ID>                   | string    |
+|        |        | LegalEntityId  | Equals        | \<Legal Entity ID\>                   | string    |
 |        |        | DocumentType   | Equals        | Customer packing slip  | string    |
 
 ### Export e-Packing Slip UY
 | And/or | And/or | Field          | Operator type | Value                | Data type |
 |--------|--------|----------------|---------------|----------------------|-----------|
 | And    |        | CountryISOCode | Equals        | UY                   | string    |
-|        |        | LegalEntityId  | Equals        | <Legal Entity ID>                 | string    |
+|        |        | LegalEntityId  | Equals        | \<Legal Entity ID\>                 | string    |
 |        |        | DocumentType   | Equals        | Export Packing Slip  | string    |
 
 ### Project UY
 | And/or | And/or | Field          | Operator type | Value              | Data type |
 |--------|--------|----------------|---------------|--------------------|-----------|
 | And    |        | CountryISOCode | Equals        | UY                 | string    |
-|        |        | LegalEntityId  | Equals        | <Legal Entity ID>               | string    |
+|        |        | LegalEntityId  | Equals        | \<Legal Entity ID\>               | string    |
 | Or     |        | DocumentType   | Equals        | Project invoice    | string    |
 |        |        | DocumentType   | Equals        | Project credit note| string    |
 |        |        | DocumentType   | Equals        | Project debit note | string    |
@@ -365,7 +349,7 @@ Below are the applicability rules for each electronic invoice format for Uruguay
 | And/or | And/or | Field          | Operator type | Value                     | Data type |
 |--------|--------|----------------|---------------|---------------------------|-----------|
 | And    |        | CountryISOCode | Equals        | UY                        | string    |
-|        |        | LegalEntityId  | Equals        | <Legal Entity ID>                      | string    |
+|        |        | LegalEntityId  | Equals        | \<Legal Entity ID\>                      | string    |
 |        |        | DocumentType   | Equals        | Export Project invoice    | string    |
 |        |        | DocumentType   | Equals        | Export Project credit note| string    |
 |        |        | DocumentType   | Equals        | Export Project debit note | string    |
@@ -492,8 +476,8 @@ For Uruguay, the **Process response** action completes the pipeline after a few 
 - [Get started with Electronic invoicing service administration](../global/gs-e-invoicing-administration-integration-components.md)
 - [Setting up Electronic Invoicing](../global/gs-e-invoicing-set-up-overview.md)
 - [Electronic Invoicing service independent software vendor (ISV) last-mile connector](../global/e-invoicing-isv-connector.md)
-- [Dynamics 365 Country expansion: localizations for LATAM Countries/Regions | June 27, 2024](https://community.dynamics.com/blogs/post/?postid=7bd2efc7-9344-ef11-840a-6045bdeef618)
-- [Dynamics 365 Country expansion: localizations for LATAM Countries/Regions | D365 FastTrack Tech Talks (youtube.com)](https://www.youtube.com/watch?v=eK8TJmnhpJo)
+- [Dynamics 365 Country/Region expansion: localizations for LATAM Countries/Regions | June 27, 2024](https://community.dynamics.com/blogs/post/?postid=7bd2efc7-9344-ef11-840a-6045bdeef618)
+- [Dynamics 365 Country/Region expansion: localizations for LATAM Countries/Regions | D365 FastTrack Tech Talks (youtube.com)](https://www.youtube.com/watch?v=eK8TJmnhpJo)
 
 - [Finance Localization for LATAM: Update on Additional Countries/Regions | Dynamics 365 Fast Track TechTalk | Jun 23, 2025](https://community.dynamics.com/blogs/post/?postid=f091c202-104b-f011-877a-7c1e52165747)
 - [Finance Localization for LATAM: Update on Additional Countries/Regions | Dynamics 365 Fast Track TechTalk (youtube.com)](https://www.youtube.com/watch?v=g3oD3jqsePA)
