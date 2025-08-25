@@ -3,7 +3,7 @@ title: Secure one-box development environments
 description: Learn about how to help secure one-box developer environments, including outlines on default configurations and how to deploy to a custom virtual network.
 author: mnordick
 ms.author: mnordick
-ms.date: 06/10/2025
+ms.date: 08/25/2025
 ms.topic: how-to
 ms.custom: 
   - bap-template
