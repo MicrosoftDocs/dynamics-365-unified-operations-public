@@ -91,6 +91,14 @@ Legend:
 - **Blue** – ETS only.
 - **Green** – Best fit.
 
+### Best fit model - version 2
+
+Best fit model - version 2 introduces two changes to how Best fit model operates:
+* [Naïve forecasting](naive-forecasting.md) is introduced as a way to handle low data scenarios
+* Data used for training and testing models is limited to values from before forecast start date
+
+The model is available from version 1.0.0.3424 and can be selected in Forecast step.
+
 ## Auto-ARIMA: The time traveler's delight
 
 The auto-ARIMA algorithm is like a time machine. It takes you on a journey through past demand patterns so that you can make informed predictions about the future.
