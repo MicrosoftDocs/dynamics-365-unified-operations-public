@@ -142,7 +142,7 @@ If you must use the previously mentioned capabilities in your one-box developmen
         - **Dynamics Lifecycle service** (permission of type **Delegated**)
 
     2. In the cloud-hosted environment, grant **Read** access to the network service for the newly installed certificate.
-9. Clear any cached configurations for LCS access using the SQL query on AX DB:
+9. Clear any cached configurations for Lifecycle Services access using the SQL query on AX DB:
      ```
      DELETE FROM SYSOAUTHCONFIGURATION where SECURERESOURCE = 'https://lcsapi.lcs.dynamics.com'
   
