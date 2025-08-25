@@ -3,7 +3,7 @@ title: Configure electronic invoice parameters for Colombia
 description: Learn how to configure the information required to generate the electronic invoice XML for Colombia.
 author: Fhernandez0088
 ms.topic: how-to
-ms.date: 08/19/2025
+ms.date: 08/25/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.author: v-federicohe
