@@ -52,6 +52,7 @@ The following configurations are required for Columbia electronic invoices.
 - Configure the fiscal information
 - Configure the addresses
 - Configure other tax applications
+- Configure Taxes
 
 Each configuration is explained in the following sections.
 
@@ -63,14 +64,14 @@ To configure the Tax application, go to **Organization administration** \> **Set
 
 To configure the legal entity, follow these steps.
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and follow these steps:
-   1. Select the legal entity that you want to work with.
-   1. Complete the address with country/region, state, and county.
-   1. Complete the contact information with the email address and set it to **Primary**.
-   1. In the LATAM section, complete the **Taxpayer type** with an option that represents organizations.
-   1. Complete the **Based in country/region** with **COL**.
-   1. Complete the **Country/region document type** with the option that represents the identification document type used by the organization.
-   1. In the LATAM section, complete the **Country/region identification number** field, enter the company ID number with the verification code at the end separated with a middle hyphen (for example, 123456789-0).
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1. Select the legal entity that you want to work with.
+1. Complete the address with country/region, state, and county.
+1. Complete the contact information with the email address and set it to **Primary**.
+1. In the LATAM section, complete the **Taxpayer type** with an option that represents organizations.
+1. Complete the **Based in country/region** with **COL**.
+1. Complete the **Country/region document type** with the option that represents the identification document type used by the organization.
+1. In the LATAM section, complete the **Country/region identification number** field, enter the company ID number with the verification code at the end separated with a middle hyphen (for example, 123456789-0).
 
 ### Configure the document classes
 
@@ -78,7 +79,8 @@ This configuration applies to Invoices, Credit notes, and Debit notes.
 
 To configure document classes, follow these steps.
 
-1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class**, and follow these steps for each **Document class** that you want to use in Electronic Invoicing:
+1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class**.
+1. For each **Document class** that you want to use in Electronic Invoicing:
    1. Select the record and then go to **Tax application**.
    1. On the **Tax application** page, in the **Tax application id** field, enter the ID that is used for Colombian electronic invoicing.
    1. In the **Tax application code** field, enter the code according to the Colombian normative.
@@ -132,48 +134,69 @@ Learn more in [Address setup for Latin America](ltm-core-address-setup.md).
 
 ### Other tax application configurations
 
-Go to **Accounts receivable** \> **Payments setup** \> **Methods of payment**, and follow these steps for each record in the list:
+#### Method of payments
 
-1. Select the record, and then go to **Tax application** in the top menu.
-1. Create a new record.
-1. In the **Tax application id** field, enter the code that is used for Colombian electronic invoicing.
-1. In the **Tax application code** field, enter the code for the payment method according to the Colombian normative.
+To configure the method of payments, follow these steps.
 
-Go to **Accounts receivable** \> **Payments setup** \> **Terms of payment**, and follow these steps for each record in the list:
+1. Go to **Accounts receivable** \> **Payments setup** \> **Methods of payment**.
+1. For each record in the list:
+   1. Select the record, and then go to **Tax application** in the top menu.
+   1. Create a new record.
+   1. In the **Tax application id** field, enter the code that is used for Colombian electronic invoicing.
+   1. In the **Tax application code** field, enter the code for the payment method according to the Colombian normative.
 
-1. Select the record, and then go to **Tax application** in the top menu.
-1. Create a new record.
-1. In the **Tax application id** field, enter the code that is used for Colombian electronic invoicing.
-1. In the **Tax application code** field, enter the code for the term of payment according to the Colombian normative (cash or credit).
+#### Terms of payments
 
-Go to **Product information management** \> **Products** \> **Released products**, and follow these steps for each record in the list:
+To configure the terms of payment, follow these steps.
 
-1. Select the record and in the top menu go to **LATAM** \> **Tax application**.
-1. Create a new record.
-1. In the **Tax application Id** field, select the one used for Colombia electronic invoicing.
-1. In the **Tax application code** field, enter the code that identifies the product/service.
-1. In the **User-defined field 1** field, enter the number for the codification standard used for the product/service.
-1. In the **User-defined field 2** enter, the name for the codification standard used for the product/service.
-1. In the **User-defined field 3** enter, code for the **SchemeAgencyID** used for the product/service.
+1. Go to **Accounts receivable** \> **Payments setup** \> **Terms of payment**.
+1. For each record in the list:
+   1. Select the record, and then go to **Tax application** in the top menu.
+   1. Create a new record.
+   1. In the **Tax application id** field, enter the code that is used for Colombian electronic invoicing.
+   1. In the **Tax application code** field, enter the code for the term of payment according to the Colombian normative (cash or credit).
 
-Go to **Organization administration** \> **Setup** \> **Units** \> **Units**, and follow these steps for each record in the list:
+#### Configure released products
 
-1. Select the record, and then select **Tax application**.
-1. Create a new record.
-1. In the **Tax code** field, enter the code according to the Colombian normative for units.
+To configure released products, follow these steps.
 
-Go to **General ledger** \> **Currencies** \> **Currencies**, and follow these steps for each record in the list:
+1. Go to **Product information management** \> **Products** \> **Released products**.
+1. For each record in the list:
+   1. Select the record and in the top menu go to **LATAM** \> **Tax application**.
+   1. Create a new record.
+   1. In the **Tax application Id** field, select the one used for Colombia electronic invoicing.
+   1. In the **Tax application code** field, enter the code that identifies the product/service.
+   1. In the **User-defined field 1** field, enter the number for the codification standard used for the product/service.
+   1. In the **User-defined field 2** enter, the name for the codification standard used for the product/service.
+   1. In the **User-defined field 3** enter, code for the **SchemeAgencyID** used for the product/service.
 
-1. Select the record and then go to **Tax application** in the top menu.
-1. Create a new record.
-1. In the **Tax application id** field, select the code that is used for Colombian electronic invoicing.
-1. In the **Tax application code** field, enter the currency code according to the Colombian normative.
+#### Configure Units
 
-### Configure the taxes
+To configure Units, follow these steps.
+
+1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
+1. For each record in the list:
+   1. Select the record, and then select **Tax application**.
+   1. Create a new record.
+   1. In the **Tax code** field, enter the code according to the Colombian normative for units.
+
+#### Currencies configuration
+
+To configure currencies, follow these steps.
+
+1. Go to **General ledger** \> **Currencies** \> **Currencies**.
+1. For each record in the list:
+   1. Select the record and then go to **Tax application** in the top menu.
+   1. Create a new record.
+   1. In the **Tax application id** field, select the code that is used for Colombian electronic invoicing.
+   1. In the **Tax application code** field, enter the currency code according to the Colombian normative.
+
+### Configure Taxes
 
 To configure the taxes for each tax and percentage used, follow these steps.
 
-1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and follow these steps for each record in the list:
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
+1. For each record in the list:
    1. Select the record and then go to **Tax application** in the top menu.
    1. Create a new record.
    1. In the **Tax application id** field, select the code that is used for Colombian electronic invoicing.
