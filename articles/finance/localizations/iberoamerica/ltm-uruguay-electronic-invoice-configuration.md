@@ -14,7 +14,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information to help you get started with Electronic invoicing for Uruguay. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md). For the last-mile integration with the Uruguayan Tax Authorities, Microsoft is partnering with Edicom. 
+This article provides information to help you get started with Electronic invoicing for Uruguay. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Microsoft Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md). For the last-mile integration with the Uruguayan Tax Authorities, Microsoft is partnering with Edicom. 
 
 After you configure Electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the [Edicom](https://edicomgroup.com/electronic-invoicing/uruguay) authorized certification provider (PAC) according to the [regulatory requirements in Uruguay](https://www.gub.uy/direccion-general-impositiva/home).
 
@@ -27,7 +27,7 @@ After you configure Electronic invoicing, you can generate, digitally sign, and 
 
 Before you begin the procedures in this article, the following prerequisites must be met.
 
-1. Ensure that the settings for the Uruguayan legal entity are in place. For more information, see [Set up a legal entity and tax information for Uruguay](ltm-set-up-legal-entity-tax-uruguay.md).
+1. Ensure that the settings for the Uruguayan legal entity are in place. Learn more in [Set up a legal entity and tax information for Uruguay](ltm-set-up-legal-entity-tax-uruguay.md).
 1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 1. Do the common part of Electronic Invoicing service configuration as described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 1. You must enable the following features in Feature management:
@@ -36,8 +36,8 @@ Before you begin the procedures in this article, the following prerequisites mus
     - Electronic invoicing integration resubmit document from failed action
     - Execute update actions for submitted documents
 
-1. Ensure that the following Electronic reporting (ER) format configurations are imported. For more information, see:
-[Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md),
+1. Ensure that the following Electronic reporting (ER) format configurations are imported. Learn more in 
+[Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md), and
 [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     
@@ -51,6 +51,7 @@ Before you begin the procedures in this article, the following prerequisites mus
     - Export e-Packing Slip (UY)
     - Project e-Invoice (UY)
     - Project Export e-Invoice (UY)
+
     > [!NOTE]
     > These formats are based on the corresponding LATAM format configurations, which use the **Invoice model LATAM** and **Invoice model mapping LATAM** configurations. All other required configurations are imported automatically.
 
@@ -77,9 +78,9 @@ Some parameters of the feature are published with default values. Before you dep
 For Uruguay, there are at least four core interactions with Edicom in the base flow:
 
 1. **Invoice submission**  
-2. **Signed XML retrieval**  
-3. **Status retrieval of the submitted invoice**
-4. **Customer acceptance or rejection**
+1. **Signed XML retrieval**  
+1. **Status retrieval of the submitted invoice**
+1. **Customer acceptance or rejection**
 
 Each of these interactions requires common parameters, such as Edicom connection details and the authentication token provided by Edicom. These parameters are reused across the feature setup for all document types. Edicom supplies these values during the company's onboarding process.
 
@@ -87,14 +88,14 @@ Each of these interactions requires common parameters, such as Edicom connection
 ### Uruguay Electronic Invoice (UY) Edicom integration for Uruguay
 
 > [!IMPORTANT]
-> The **Uruguay Electronic Invoice (UY)** feature is provided by Microsoft. Before it can be used, it requires additional configuration, as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/gs-e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they are processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Uruguay.
+> The **Uruguay Electronic Invoice (UY)** feature is provided by Microsoft. Before it can be used, it requires additional configuration, as described in this article. Learn how to configure invoicing features and apply changes in [Work with feature setups](../global/gs-e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they are processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Uruguay.
 
 1. Import the latest version of the **Uruguay Electronic Invoice (UY)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). The following illustrations show what the feature looks like after you import it from Dataverse.
 
     ![Screenshot of the imported Globalization feature for Uruguay on the Electronic invoicing features page, including the information on the Versions tab.](ltm-ury-e-invoice-glob-feature-imported.png)
 
 
-    If you go to the Configuration tab, as shown in the previous screenshot, you should see a page displaying information similar to the following table:
+    If you go to the Configuration tab, as shown in the previous screenshot, there's a page displaying information similar to the following table:
 
     | Name                          | Version       | Status     | Country/region code |
     |-------------------------------|---------------|------------|---------------------|
@@ -108,14 +109,14 @@ Each of these interactions requires common parameters, such as Edicom connection
     > [!NOTE]
     > The version numbers may change if the formats have been updated. The table is for illustrative purposes only.
 
-1. Create a copy of the imported Globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. Create a copy of the imported Globalization feature, and select your configuration provider. Learn more in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, confirm that the **Draft** version is selected.
 1. On the **Feature parameters** tab, specify values for the following connection and integration parameters that are required for interoperation with Edicom's API.  
-These parameters are general-purpose and will be used across the different actions in the setups, so you only need to configure them once in this section.
+These parameters are general-purpose and are used across the different actions in the setups, so you only need to configure them once in this section.
 
 
     > [!TIP]
-    > The following table provides **example values** for each feature parameter, so you can see the type of data that should be entered for each one. These values are **illustrative only** and were provided by Edicom to Microsoft for testing purposes. When you are onboarded, Edicom will provide you with your own unique values to use in your configuration.
+    > The following table provides **example values** for each feature parameter, so you can understand the type of data that should be entered for each one. These values are **illustrative only** and were provided by Edicom to Microsoft for testing purposes. When you are onboarded, Edicom provides you with your own unique values to use in your configuration.
 
 
 
@@ -145,7 +146,7 @@ These parameters are general-purpose and will be used across the different actio
     > - Select **Submit invoice schema name**, and enter the schema name.
     > - Select **Auth token**, and choose the name of the secret you created for the token.
     > - Select **Web service URL**, and verify the web address is correct.
-5. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, you must complete, publish, and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
+1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, you must complete, publish, and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### Outbound flow pipeline
 
@@ -158,24 +159,24 @@ There are six electronic invoice formats for Uruguay included in the **Uruguay E
 - **Project e-Invoice (UY)**
 - **Project Export e-Invoice (UY)**
 
-In the following sections, you will find guidance on the general configuration steps that apply to all six formats. Additionally, specific considerations and requirements for each individual format will be explained, so you can ensure that each one is configured correctly according to its unique needs.
+The following sections have guidance on the general configuration steps that apply to all six formats. Specific considerations and requirements for each individual format are explained, so you can ensure that each one is configured correctly according to its unique needs.
 
 ## Electronic invoice feature
 
 ### Setups-View
 
-After importing the feature, in the second screenshot, you will see five tabs: **Versions**, **Configuration**, **Feature parameters**, **Setups**, and **Tags**. Select the **Setups** tab, and then click **View**. This opens the page **Feature version setup**:
+After importing the feature, in the second screenshot, five tabs are available: **Versions**, **Configuration**, **Feature parameters**, **Setups**, and **Tags**. Select the **Setups** tab, and then select **View**. This opens the page **Feature version setup**:
 
 ## Feature version setup
-This page allows you to review and configure the details of the feature setup for Uruguay. On the left side of this page, you will see four sections: **Processing pipeline**, **Applicability rules**, **Variables**, and **Parameters**.
+This page allows you to review and configure the details of the feature setup for Uruguay. On the left side of this page, there are four sections: **Processing pipeline**, **Applicability rules**, **Variables**, and **Parameters**.
 
 ### Processing pipeline
 
-The Setup Actions and Parameters section is located on the right-hand side of the screen and is divided into two distinct grids:
+The Setup Actions and Parameters section is divided into two distinct grids:
 
 #### Top Right – Processing Pipeline
 
-The **Processing pipeline** grid should look like the following table:
+The **Processing pipeline** grid should is similar to the following table:
 
 | Action                       | Action name                       | Description                      | Enable retry | Retry action | Export result | Update action |
 |------------------------------|-----------------------------------|----------------------------------|--------------|--------------|---------------|--------------|
@@ -187,7 +188,7 @@ The **Processing pipeline** grid should look like the following table:
 | Terminate pipeline            | Terminate pipeline                    | Terminates the processing pipeline      |              |              |               |              |
 
 > [!NOTE]
-> The **Get status from Edicom for an invoice** action is crucial in the flow, as it is marked with the **Update action** checkbox. This designation means that this specific step—and all steps following it—will repeatedly execute in a loop. The system continues this process until the invoice reaches a final, terminal status, ensuring that the latest status from Edicom is always retrieved and processed.
+> The **Get status from Edicom for an invoice** action is crucial in the flow, as it is marked with the **Update action** checkbox. This designation means that this specific step—and all steps following it repeatedly execute in a loop. The system continues this process until the invoice reaches a final, terminal status, ensuring that the latest status from Edicom is always retrieved and processed.
 
 #### Bottom Right – Parameters
 The lower grid shows the Parameters associated with the selected processing action. These parameters allow for fine-tuning of the selected step’s behavior. Each entry includes a parameter name, description, data type, and value, enabling users to configure processing logic according to their business requirements. 
@@ -367,14 +368,14 @@ The following variables are used in the outbound data flow actions of the Urugua
 | BusinessDocumentDataModel | Contains the electronic document from the client  | From client | file      |                                                 |
 | SignedXML                 | Signed XML document in base64-encoded format      | To client   | file      | Get signed XML from Edicom.Base64ResponseBody   |
 
-After you import the **Electronic invoicing for Uruguay** feature that includes the out-of-box default feature setup, follow the steps in the next section to configure electronic documents.
+After you import the **Electronic invoicing for Uruguay** feature that includes the out of the box default feature setup, follow the steps in the next section to configure electronic documents.
 
 ### Setups-Application Setup
 
-You are currently in the [**Electronic invoice feature**](#electronic-invoice-feature) section. Next, click on **Application Setup** within the **Setups** tab to configure the mapping between Dynamics 365 source tables and electronic document formats.
+You are currently in the [**Electronic invoice feature**](#electronic-invoice-feature) section. Next, select **Application Setup** within the **Setups** tab to configure the mapping between Dynamics 365 source tables and electronic document formats.
 
 > [!NOTE]
-> Although this configuration is not set at the general feature level, it acts globally for the selected feature setup. You do not need to repeat these steps for each individual format or feature—one configuration is sufficient for all supported document types within the feature.
+> Although this configuration is not set at the general feature level, it acts globally for the selected feature setup. You don't need to repeat these steps for each individual format or feature—one configuration is sufficient for all supported document types within the feature.
 
 The following grid defines the link between the source table in Dynamics 365, the document context model, and the mapping configuration used for electronic invoicing:
 
@@ -384,11 +385,13 @@ The following grid defines the link between the source table in Dynamics 365, th
 | Project invoice          | Customer invoice context model / Project invoice context  | Invoice Model mapping LATAM      | Project E-Invoice    | Maps project invoices to the LATAM invoice model for electronic submission.                   |
 
 > [!TIP]
-> Ensure that the Context and Mapping name match the document type. Incorrect mappings will cause errors in XML generation or submission to DGI.
+> Ensure that the Context and Mapping name match the document type. Incorrect mappings cause errors in XML generation or submission to DGI.
 
 ## Configure electronic document parameters
 
-1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Uruguay are imported. For more information, see [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+To configure electronic document parameters, follow these steps.
+
+1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Uruguay are imported. Learn more in [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. In the **Electronic document** section, add records for the **Customer Invoice journal** and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
