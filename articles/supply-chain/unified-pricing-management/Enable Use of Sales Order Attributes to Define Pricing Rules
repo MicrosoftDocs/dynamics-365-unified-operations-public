@@ -1,0 +1,36 @@
+# Order-Level Attribute-Based Pricing in Unified Pricing Management
+
+## Purpose
+To extend the flexibility and precision of Unified Pricing Management by allowing sales order-level attributes (from header and line) to be used as pricing rule criteria.  
+This enables differentiated pricing based on order characteristics such as **order type, mode of delivery, or order line warranty types**. 
+
+## Feature Overview
+With Unified Pricing Management enabled, this feature allows users to define **order-specific price rules** based on Sales Order Header and Line attributes.
+
+## Key Benefits
+- Enables differentiated pricing by order context (e.g., **online vs. bulk order vs. sample order**)  
+- Supports more granular and automated pricing scenarios  
+- Simplifies the setup of order-type-specific pricing strategies  
+
+## Feature Configuration
+
+### Pre-Requisite
+- Unified Pricing Management must be enabled  
+
+### Setup Steps
+
+1. **Navigate to Price Management Parameters**  
+   - Define:  
+     - *Order Header Attribute Group*  
+     - *Order Line Attribute Group*  
+   - These groups will reference order-related attributes (e.g., **Order Type, Delivery Mode, Order Style**, etc.)  
+
+2. **Create Pricing Rules in Trade Agreements**  
+   - When creating Trade Agreement Prices or Discount Rules, users can now select criteria from the assigned attribute groups.  
+   - Order header attributes will belong to the **header attribute group**, while order line attributes will belong to the **line attribute group**.  
+
+3. **Attribute Values as Filters**  
+   - Attribute values act as filters that determine rule applicability.  
+   - When entering the order in **Headquarters or POS**, you can assign the attribute value to the order.  
+   - For **POS user experience**, you may need to configure the UI to enable value assignment at POS.  
+   - The pricing engine will check pricing rules with matching attribute criteria.  
