@@ -61,6 +61,7 @@ Troubleshooting installation failures:
 ## Activate the careers site
 
 **Prerequisites** 
+
 The following must be install in Dataverse:
  - The Recruiting add-on app 
  - The Dynamics 365 Human Resources careers  
