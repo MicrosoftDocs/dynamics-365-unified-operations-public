@@ -60,9 +60,10 @@ The Recruiting add-on includes the following roles.
 
 | Role | Scope |
 |------|-------|
-| System administrator | This role supports all functionality of the hiring process and configuration. |
-| Recruiter | Users who have this role can create job ads, assign interviewers, schedule interviews, set the candidates to hire, and invite prospects. |
-| Hiring manager | Users who have this role can view the hiring process. |
+| System administrator (Dataverse build-in role) | This role supports all functionality of the hiring process and configuration. |
+| Recruiting administator | This role supports all functionality of the hiring process and configuration. Users assigned the Recruiting administrator role need to be present in Dynamics 365 finance and operations and must also have the Recruiting Application role assigned Dynamics 365 finance and operations. 
+| Recruiter | Users who have this role can create job ads, assign interviewers, schedule interviews, set the candidates to hire, and invite prospects. Users assigned the **Recruiting** role need to be present in Dynamics 365 finance and operations and must also have the Recruiting application role assigned Dynamics 365 finance and operations. |
+| Hiring manager | Users who have this role can view the hiring process. Users assigned the Hiring manager role need to be present in Dynamics 365 finance and operations and must also have the Recruiting application role assigned Dynamics 365 finance and operations.  |
 | Panel member | Users who have this role can provide feedback. |
 | Job ad approver | Users who have this role can approve job ads. |
 
