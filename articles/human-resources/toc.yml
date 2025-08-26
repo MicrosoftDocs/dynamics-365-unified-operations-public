@@ -569,6 +569,8 @@ items:
               href: hr-recruit-configuration.md
             - name: Configure the careers site in the HR Recruiting app
               href: hr-recruit-career.md 
+            - name: Known issues and limitations of the HR Recruiting app
+              href: hr-recruit-known.md
           - name: Use the Human Resources recruiting app
             items: 
             - name: Use the dashboard in the HR Recruiting app 
