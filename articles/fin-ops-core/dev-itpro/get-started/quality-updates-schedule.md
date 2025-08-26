@@ -85,7 +85,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.43 PQU-3 | June 4, 2025 | June 9, 2025 to July 13, 2025| Completed |
 | 10.0.43 PQU-4 | July 2, 2025 | July 7, 2025 to August 10, 2025| Completed |
 | 10.0.43 PQU-5 | July 30, 2025 | August 4, 2025 to September 7, 2025| In-Progress |
-| 10.0.43 PQU-6 | August 27, 2025 | September 1, 2025 to October 5, 2025| Not Started |
+| 10.0.43 PQU-6 | August 27, 2025 | September 1, 2025 to October 5, 2025| In-Progress |
 | 10.0.43 PQU-7 | September 24, 2025 | September 29, 2025 to November 2, 2025| Not Started |
 | 10.0.43 PQU-8 | October 22, 2025 | October 27, 2025 to December 7, 2025| Not Started |
 | 10.0.43 PQU-9 | November 26, 2025 | December 1, 2025 to January 18, 2026| Not Started |
@@ -145,7 +145,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | September 22 to September 25, 2025 | October 4 to October 5, 2025 |
 | Station 6 | September 23 to September 26, 2025 | October 4 to October 5, 2025 |
 
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.43 Release-5 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.43 Release-5 train schedule
 
 **App version: 10.0.2177.158**
 
@@ -161,6 +161,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | August 18 to August 21, 2025 | August 30 to August 31, 2025 |
 | Station 5 | August 25 to August 28, 2025 | September 6 to September 7, 2025 |
 | Station 6 | August 26 to August 29, 2025 | September 6 to September 7, 2025 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.43 Release-6 train schedule
+
+**App version: 10.0.2177.175**
+
+**Platform version: 7.0.7521.258**
+
+**Unified Environment Provisioning Application Version: 10.0.43.10**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | September 1 to September 4, 2025 | NA |
+| Station 2 | September 8 to September 11, 2025 | September 20 to September 21, 2025 |
+| Station 3 | September 9 to September 12, 2025 | September 20 to September 21, 2025 |
+| Station 4 | September 15 to September 18, 2025 | September 27 to September 28, 2025 |
+| Station 5 | September 22 to September 25, 2025 | October 4 to October 5, 2025 |
+| Station 6 | September 23 to September 26, 2025 | October 4 to October 5, 2025 |
 
 ### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.44 Release-2 train schedule
 
