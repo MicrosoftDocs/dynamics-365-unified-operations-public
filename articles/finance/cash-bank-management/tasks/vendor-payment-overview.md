@@ -4,7 +4,7 @@ description: Learn about the various methods used to create vendor payments, inc
 author: kweekley
 ms.author: kweekley
 ms.topic: how-to
-ms.date: 08/24/2025
+ms.date: 08/25/2025
 ms.reviewer: twheeloc 
 ms.collection: get-started
 audience: Application User 
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through various methods used to create vendor payments, including how to use a payment proposal or manually entering an one-off payment. This procedure uses the USMF demo company.
+This procedure walks through various methods used to create vendor payments, including how to use a payment proposal or manually entering an one-off payment. This procedure uses the USMF demo company.
 
 1. Go to **Accounts payable > Payments > Vendor payment journal**.
 2. Click **New**.
@@ -29,8 +29,8 @@ This procedure walks you through various methods used to create vendor payments,
 7. Click **Create payment proposal**. The payment proposal is a query used to select invoices for payment. You can edit the list of invoices to pay before creating or generating the vendor payments.
 8. Select invoices for payment by due date, cash discount, or both. 
 9. Enter the date for comparing to the due date or cash discount. 
-10. Optional: Enter a payment date used for all payments. The date entered here will be the payment date for all payments created, regardless of the due date or cash discount date.  
-11. Optional: Enter a minimum payment date which may be used as the payment date. The minimum payment date will be the earliest date used when creating payments. For example, if an invoice has a due date after the minimum payment date, the due date becomes the payment date instead of the minimum payment date in order to pay the invoice on the latest possible date.
+10. Optional: Enter a payment date used for all payments. The date entered here is the payment date for all payments created, regardless of the due date or cash discount date.  
+11. Optional: Enter a minimum payment date which may be used as the payment date. The minimum payment date is the earliest date used when creating payments. For example, if an invoice has a due date after the minimum payment date, the due date becomes the payment date instead of the minimum payment date in order to pay the invoice on the latest possible date.
 12. Enter additional query restrictions under **Records to include** section. The filter is used to restrict the invoices selected for payment by vendor group or method of payment. For example, you may add a filter to only pay invoices by check in this pay run.
 13. Enter additional query restriction or payment defaults. The additional parameters can be used to define the payment currency or to enable centralized payments for this pay run.  
 14. Click **OK**. After clicking **OK**, the results of the query appear. If you don't want to preview the list of invoices selected to pay, go back to the **Parameters** FastTab and change the setting **Create payments without invoice preview** to **Yes**.  
