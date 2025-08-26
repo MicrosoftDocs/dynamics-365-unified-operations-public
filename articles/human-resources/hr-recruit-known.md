@@ -76,18 +76,19 @@ To add permissions to **Recruiting application** role, follow these steps:
 11. Publish all changes.
 
 
+[![Secruity configuration.](./media/secruityconfig.png)](./media/secruityconfig.png)
 
  
 
-12. In Finance and operations, assign the following two roles to the portal anonymous user: 
+13. In Finance and operations, assign the following two roles to the portal anonymous user: 
       1. Go to **Users**.
       2. Select the portal anonymous user.
       3. Assign the **Dataverse virtual entity anonymous** user and **Recruiting application** roles.
       4. Go to **System administration** > **Setup** > **System parameters** > **Power Apps portals**.
-13. Assign the above user to the **Anonymous access user id** field.
-14. Click **Save**.
+14. Assign the above user to the **Anonymous access user id** field.
+15. Click **Save**.
 
-
+[![System parameters.](./media/systempara.png)](./media/systempara.png)
 
 >[!Note]
 > If the user is already assigned on the screen above, assign the specified roles. 
