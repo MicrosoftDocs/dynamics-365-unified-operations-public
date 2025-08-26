@@ -117,7 +117,8 @@ If you must delete the Invoice capture solution, follow these steps.
     3. Dynamics 365 Invoice capture Solution anchor
     4. Dynamics 365 Invoice capture - Controls
     5. Dynamics 365 Invoice capture - Backend
-    6. Dynamics 365 Invoice capture Base
+    6. Dynamics 365 Invoice Capture - Permissions
+    7. Dynamics 365 Invoice capture Base
 
 > [!NOTE]
 > To delete Invoice capture but keep the data, don't delete the Dynamics 365 Invoice capture base solution.
