@@ -52,6 +52,7 @@ The following configurations are required for Columbia electronic invoices.
 - Configure the fiscal information
 - Configure the addresses
 - Configure other tax applications
+- Configure charges and discounts
 - Configure Taxes
 
 Each configuration is explained in the following sections.
@@ -190,6 +191,36 @@ To configure currencies, follow these steps.
    1. Create a new record.
    1. In the **Tax application id** field, select the code that is used for Colombian electronic invoicing.
    1. In the **Tax application code** field, enter the currency code according to the Colombian normative.
+
+### Configure charges and discounts
+
+#### Global and line charges
+
+Go to **Accounts receivable > Charges setup > Charges code** and for every record that is used as a global or line charge follow these steps:
+
+1. Select a record and go to **LATAM > Tax application** in the top menu.
+1. Create a new record.
+1. In the **Tax application Id** field select the one used for Colombia Electronic Invoice.
+1. In the **Tax application code** field enter the code according to the Colombian normative.
+
+#### Global discounts
+
+Go to **Accounts receivable > Charges setup > Charges code** and for every record that is used as a global discount follow these steps:
+
+1. Select a record and go to **LATAM > Tax application** in the top menu.
+1. Create a new record.
+1. In the **Tax application Id** field select the one used for Colombia Electronic Invoice.
+1. In the **Tax application code** field enter the code according to the Colombian normative.
+
+#### Line discounts
+
+To use line discounts in the Colombain Electornic invoice use the F&O line discount feature.
+
+> [!NOTE] 
+> To enter a global discount, use the Maintain charges button in the sales orders, enter the amount in negative, and the tax code for the global discount should be “Excluded”.
+
+> [!NOTE] 
+> The charge code description will be used in the discount/charge reason description of the invoice.
 
 ### Configure Taxes
 
