@@ -4,7 +4,7 @@ description: Learn about the various methods used to create vendor payments, inc
 author: kweekley
 ms.author: kweekley
 ms.topic: how-to
-ms.date: 01/24/2025
+ms.date: 08/24/2025
 ms.reviewer: twheeloc 
 ms.collection: get-started
 audience: Application User 
