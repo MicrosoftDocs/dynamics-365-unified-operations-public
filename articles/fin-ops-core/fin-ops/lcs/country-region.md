@@ -111,7 +111,7 @@ To learn more, see [Help system](../get-started/help-overview.md#task-guides).
         - [Italy](../../../finance/localizations/italy/italy.md)
         - [Japan](../../../finance/localizations/japan/japan.md)
         - [Kuwait](../../../finance/localizations/mea/kuwait.md)
-        - [Latin America (except Brazil and Mexico)](../../../finance/llocalizations/iberoamerica/latam-overview.md)
+        - [Latin America (except Brazil and Mexico)](../../../finance/localizations/iberoamerica/latam-overview.md)
         - [Latvia](../../../finance/localizations/latvia/latvia.md)
         - [Lithuania](../../../finance/localizations/lithuania/lithuania.md)
         - [Malaysia](../../../finance/localizations/malaysia/malaysia.md)
