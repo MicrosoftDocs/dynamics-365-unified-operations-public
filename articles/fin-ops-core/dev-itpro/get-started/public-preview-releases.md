@@ -4,7 +4,7 @@ description: Learn about service update availability and the different release o
 author: hmahl
 ms.author: hmahl
 ms.topic: article
-ms.date: 04/14/2025
+ms.date: 08/25/2025
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: johnmichalak

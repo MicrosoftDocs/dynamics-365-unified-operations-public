@@ -1,10 +1,10 @@
 --- 
 title: Customer payment overview
-description: Learn about the various methods used to enter customer payments, including a detailed step-by-step process for this task, which uses the USMF demo company. 
+description: Learn about the various methods used to enter customer payments, including a detailed step-by-step process. 
 author: kweekley
 ms.author: kweekley
 ms.topic: how-to
-ms.date: 05/23/2023 
+ms.date: 08/25/2025 
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User 
@@ -20,9 +20,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This procedure walks through the various methods used to enter customer payments. This task uses the USMF demo company.
 
-1. Go to **Accounts receivable > Payments > Payment journal**.
+1. Go to **Accounts receivable > Payments > Customer payment journal**.
 2. Click **New**.
-3. Select the payment journal where the customer payments will be saved.
+3. Select the payment journal where the customer payments are saved.
 4. Select or manually enter the journal.
 5. Click **Enter customer payments**. **Enter customer payments** is used to record one customer payment at a time. You enter the payment information at the top. You can mark the invoices that were paid by the payment.  
 6. Enter the customer from whom you received the payment. If you don't know the customer but do know a transaction that was paid, use the **Transaction** field to enter the payment. Enter or select the invoice in the **Transaction** field. The customer will automatically default after you select the transaction.
