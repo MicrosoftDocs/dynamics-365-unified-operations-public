@@ -122,7 +122,12 @@ To learn more, see [Help system](../get-started/help-overview.md#task-guides).
         - [Norway](../../../finance/localizations/norway/norway.md)
     :::column-end:::
     :::column:::
+        - [Oman](../../../finance/localizations/mea/oman.md)
+        - [Panama](../../../finance/localizations/iberoamerica/panama.md)
+        - [Paraguay](../../../finance/localizations/iberoamerica/paraguay.md)
+        - [Peru](../../../finance/localizations/iberoamerica/ltm-peru_overview.md)
         - [Poland](../../../finance/localizations/poland/poland.md)
+        - [Qatar](../../../finance/localizations/mea/qatar.md)
         - [Russia](../../../finance/localizations/russia/russia.md)
         - [Saudi Arabia](../../../finance/localizations/mea/saudi-arabia.md)
         - [Singapore](../../../finance/localizations/singapore/singapore.md)
@@ -130,8 +135,11 @@ To learn more, see [Help system](../get-started/help-overview.md#task-guides).
         - [Sweden](../../../finance/localizations/sweden/sweden.md)
         - [Switzerland](../../../finance/localizations/switzerland/switzerland.md)
         - [Thailand](../../../finance/localizations/thailand/thailand.md)
+        - [Türkiye](../../../finance/localizations/turkiye/turkiye.md)
         - [United Kingdom](../../../finance/localizations/united-kingdom/united-kingdom.md)
         - [United States](../../../finance/localizations/brazil/united-states.md)
+        - [Uruguay](../../../finance/localizations/iberoamerica/uruguay.md)
+        - [Venezuela](../../../finance/localizations/iberoamerica/venezuela.md)
     :::column-end:::
 :::row-end:::
 
