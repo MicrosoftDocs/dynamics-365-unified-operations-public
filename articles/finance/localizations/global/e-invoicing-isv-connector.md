@@ -138,11 +138,15 @@ The name of this variable must be used as the name of the import source for the 
 
 ![Screenshot that shows the ResponseXml import source on the Electronic document parameters page.](../media/isv_connector_import_channel.jpg)
 
-### Electronic invoicing in Chile
+### Country-specific scenarios implemented via Edicom
+
+The following countries electronic invoicing functionality is implemented using **Edicom** as the last-mile connector.
+
+#### **Chile**
 
 For more information about electronic invoicing in Chile, see:
-[Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md),
-[Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md).
+- [Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md)
+- [Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md).
 
 ### Electronic invoicing in Costa Rica
 
