@@ -4,7 +4,7 @@ description: Learn about how to install the Invoice capture solution and integra
 author: sunfzam
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 08/12/2024
+ms.date: 08/25/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
