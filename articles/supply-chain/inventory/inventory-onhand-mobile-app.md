@@ -16,7 +16,7 @@ ms.custom:
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
->  The Inventory On-hand mobile app is now being released as a [sample app](https://github.com/microsoft/scmsamples-InventoryOnHand). The sample app is identical to the existing first-party app, but it is distributed through GitHub rather than through Power Platform Admin Center. You can fork the GitHub repository so you can customize it as needed for your scenarios. The first-party mobile app is deprecated and will be removed. Previously installed instances of the first-party mobile app will continue to work. For more information, see [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/ removed-deprecated-features-scm-updates.md).
+>  The Inventory On-hand mobile app is and being released as a [sample app](https://github.com/microsoft/scmsamples-InventoryOnHand). The sample app is identical to the existing first-party app, but it is distributed through GitHub rather than through Power Platform Admin Center. You can fork the GitHub repository so you can customize it as needed for your scenarios. The first-party mobile app is deprecated and will be removed. Previously installed instances of the first-party mobile app will continue to work. For more information, see [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/ removed-deprecated-features-scm-updates.md).
 
 The Inventory On-hand mobile app lets you query and view product inventory in Microsoft Dynamics 365 Supply Chain Management by using a mobile device. It was built by using Power Apps.
 
@@ -98,4 +98,5 @@ No, the Inventory On-hand mobile app doesn't currently support offline mode.
 ### Is there multi-language support?
 
 Yes, the Inventory On-hand mobile app is available in all the same languages as Supply Chain Management. The language is set according to your mobile device settings.
+
 
