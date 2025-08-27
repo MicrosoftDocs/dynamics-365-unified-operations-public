@@ -4,7 +4,7 @@ description: Access various lists of resources that can help you learn more abou
 author: sericks007
 ms.author: sericks
 ms.topic: article
-ms.date: 02/19/2021
+ms.date: 08/27/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
@@ -82,17 +82,30 @@ To learn more, see [Help system](../get-started/help-overview.md#task-guides).
     :::column:::
         - [Australia](../../../finance/localizations/australia/australia.md)
         - [Austria](../../../finance/localizations/austria/austria.md)
+        - [Bahrain](../../../finance/localizations/mea/bahrain.md)
         - [Belgium](../../../finance/localizations/belgium/belgium.md)
+        - [Bolivia](../../../finance/localizations/iberoamerica/bolivia.md)
         - [Brazil](../../../finance/localizations/brazil/brazil.md)
+        - [Canada](../../../finance/localizations/canada/can-gst-hst-internet-file-transfer.md)
+        - [Chile](../../../finance/localizations/iberoamerica/chile.md)
         - [China](../../../finance/localizations/china/china.md)
+        - [Colombia](../../../finance/localizations/iberoamerica/colombia.md)
+        - [Costa Rica](../../../finance/localizations/iberoamerica/costa-rica.md)
         - [The Czech Republic](../../../finance/localizations/czech-republic/czech-republic.md)
+        - [Denmark](../../../finance/localizations/denmark/denmark.md)
+        - [Dominican Republic](../../../finance/localizations/iberoamerica/ltm-dominican_republic_overview.md)
+        - [Ecuador](../../../finance/localizations/iberoamerica/ecuador.md)
+        - [Egypt](../../../finance/localizations/mea/egypt.md)
         - [Estonia](../../../finance/localizations/estonia/estonia.md)
         - [Europe](../../../finance/localizations/europe/europe.md)
-        - [France](../../../finance/localizations/france/france.md)
-        - [Germany](../../../finance/localizations/germany/germany.md)
+        - [Finland](../../../finance/localizations/finland/finland.md)
     :::column-end:::
     :::column:::
+        - [France](../../../finance/localizations/france/france.md)
+        - [Germany](../../../finance/localizations/germany/germany.md)
+        - [Guatemala](../../../finance/localizations/iberoamerica/guatemala.md)
         - [Hungary](../../../finance/localizations/hungary/hungary.md)
+        - [Iceland](../../../finance/localizations/iceland/iceland.md)
         - [India](../../../finance/localizations/india/india.md)
         - [Italy](../../../finance/localizations/italy/italy.md)
         - [Japan](../../../finance/localizations/japan/japan.md)
