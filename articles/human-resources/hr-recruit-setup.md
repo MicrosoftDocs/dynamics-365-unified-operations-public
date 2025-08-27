@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Set up the HR Recruiting app (preview)
+title: Set up the HR Recruiting app 
 description: This article explains how to set up the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 04/17/2025
+ms.date: 08/15/2025
 ms.topic: how-to
 # optional metadata
 
@@ -23,19 +23,17 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Set up the HR Recruiting app (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Set up the HR Recruiting app 
 
 This article explains how to set up the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
 Before you can install the Recruiting app, the following prerequisites must be met:
 
-- You have a Dynamics 365 finance and operations environment, version 10.0.40 (10.0.1935.72) or later, and the most recent quality update is installed.
+- You have a Dynamics 365 finance and operations environment, version 10.0.45 or later, and the most recent quality update is installed.
+>[!NOTE]
+> If you are on version 10.0.44, see [Known issues and limitations](hr-recruit-known.md). 
 - You have a Dynamics 365 Human Resources license for the finance and operations environment.  
 - You're a user who has system administrator permissions for both Dynamics 365 Human Resources and Power Apps.
 - One of the following Microsoft Power Platform integrations is completed:
@@ -90,7 +88,7 @@ To install the Recruiting add-on app for the first time, follow these steps.
     1. In the Power Platform admin center, select **Environments**, and then select your environment.
     1. Select **Resources** \> **Dynamics 365 apps**.
     1. Look in the **Status** column for **Dynamics 365 Human Resource recruiting add-on**. If installation was successful, the value is **Installed**. If the value is **Failed**, set up the app again by selecting **Retry installation**.
-
+  
 ## Activate connections and flows for the Recruiting app
 
 To activate connections and flows for the Recruiting app, follow these steps.
@@ -104,19 +102,26 @@ To activate connections and flows for the Recruiting app, follow these steps.
 
     - Recruiting approvals connection
     - Recruiting dataverse connection
+    - Recruiting content conversion connection
+    - Recruiting office 365 outlook connection
+    - Recruiting teams connection 
 
 7. Edit each connection reference. Add a new or existing connection, and make sure that it's enabled.
 
     - **Recruiting approvals connection:** Add the **Approvals** connector.
     - **Recruiting dataverse connection:** Add the **Microsoft Dataverse** connector.
+    - **Recruiting content conversion connection:** using the Content Conversion (preview) connector.
+    - **Recruiting office 365 outlook connection:** using the Office 365 outlook connector.
+    - **Recruiting teams connection:** using the Microsoft Teams connector. 
+
 
 8. Go to **Solutions** and select the **Managed** solution.
 9. Select **HCM recruiting flows**.
 10. Select **Cloud flows**, and then select **Turn on** for the cloud flows that are disabled.
 11. Repeat steps 8 through 10 for **HCM Recruiting**.
 
-    > [!NOTE]
-    > Make sure that all the **HCM Recruiting** flows are active. Otherwise, issues can occur. For example, if the **Portal create candidate** flow isn't active, candidates can't create a profile.
+> [!NOTE]
+> Make sure that all the **HCM Recruiting** flows are active. Otherwise, issues can occur. For example, if the **Portal create candidate** flow isn't active, candidates can't create a profile.
 
 ### Recruiting flows
 
