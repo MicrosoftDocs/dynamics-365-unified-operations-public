@@ -119,9 +119,9 @@ To learn more, see [Help system](../get-started/help-overview.md#task-guides).
         - [Netherlands](../../../finance/localizations/netherlands/netherlands.md)
         - [New Zealand](../../../finance/localizations/new-zealand/apac-nzl-gst-declaration.md)
         - [Nicaragua](../../../finance/localizations/iberoamerica/nicaragua.md)
-        - [Norway](../../../finance/localizations/norway/norway.md)
     :::column-end:::
     :::column:::
+        - [Norway](../../../finance/localizations/norway/norway.md)
         - [Oman](../../../finance/localizations/mea/oman.md)
         - [Panama](../../../finance/localizations/iberoamerica/panama.md)
         - [Paraguay](../../../finance/localizations/iberoamerica/paraguay.md)
