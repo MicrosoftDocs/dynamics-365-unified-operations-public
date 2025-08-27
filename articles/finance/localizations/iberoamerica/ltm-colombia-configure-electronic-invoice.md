@@ -194,27 +194,33 @@ To configure currencies, follow these steps.
 
 ### Configure charges and discounts
 
-#### Global and line charges
+This section explains how to congifure global line charges and discounts.
 
-Go to **Accounts receivable > Charges setup > Charges code** and for every record that is used as a global or line charge follow these steps:
+#### Configure global and line charges
 
-1. Select a record and go to **LATAM > Tax application** in the top menu.
-1. Create a new record.
-1. In the **Tax application Id** field select the one used for Colombia Electronic Invoice.
-1. In the **Tax application code** field enter the code according to the Colombian normative.
+To configure global and line charges, follow these steps.
 
-#### Global discounts
+1. Go to **Accounts receivable \> Charges setup \> Charges code**.
+1. For each record that is used as a global or line charge, follow these steps:
+   1. Select a record and go to **LATAM \> Tax application** in the top menu.
+   1. Create a new record.
+   1. In the **Tax application Id** field select the one used for Colombia Electronic Invoice.
+   1. In the **Tax application code** field enter the code according to the Colombian normative.
 
-Go to **Accounts receivable > Charges setup > Charges code** and for every record that is used as a global discount follow these steps:
+#### Configure global discounts
 
-1. Select a record and go to **LATAM > Tax application** in the top menu.
-1. Create a new record.
-1. In the **Tax application Id** field select the one used for Colombia Electronic Invoice.
-1. In the **Tax application code** field enter the code according to the Colombian normative.
+To configure global discounts, follow these steps.
+
+1. Go to **Accounts receivable > Charges setup > Charges code**.
+1. For each record that is used as a global discount, follow these steps:
+   1. Select a record and go to **LATAM \> Tax application** in the top menu.
+   1. Create a new record.
+   1. In the **Tax application Id** field select the one used for Colombia Electronic Invoice.
+   1. In the **Tax application code** field enter the code according to the Colombian normative.
 
 #### Line discounts
 
-To use line discounts in the Colombian Electronic invoice use the F&O line discount feature.
+To use line discounts in the Colombian Electronic invoice use the finance and operations apps line discount feature.
 
 > [!NOTE] 
 > To enter a global discount, use the Maintain charges button in the sales orders, enter the amount in negative, and the tax code for the global discount should be “Excluded”.
