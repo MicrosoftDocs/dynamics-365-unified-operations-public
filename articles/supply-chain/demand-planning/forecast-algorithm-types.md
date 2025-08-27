@@ -41,8 +41,6 @@ The demand forecasting algorithm that you should use depends on the specific cha
 | Quick forecasting is required. | Not recommended | Recommended | Acceptable |
 | Forecasting is focused on a recent period. | Acceptable | Recommended | Acceptable |
 
-<a name="best-fit"></a>
-
 ## Best fit model algorithm
 
 The best fit model algorithm automatically determines which of the other available single-input algorithms (auto-ARIMA, ETS, or Prophet) best fits your data for each product and dimension combination. In this way, different models can be used for different products. In most cases, we recommend that you use the best fit model, because it combines the strengths of all the other standard models. The following example shows how.
