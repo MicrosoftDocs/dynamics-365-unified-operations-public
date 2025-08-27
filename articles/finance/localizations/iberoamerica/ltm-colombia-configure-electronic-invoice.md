@@ -3,7 +3,7 @@ title: Configure electronic invoice parameters for Colombia
 description: Learn how to configure the information required to generate the electronic invoice XML for Colombia.
 author: Fhernandez0088
 ms.topic: how-to
-ms.date: 08/25/2025
+ms.date: 08/27/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.author: v-federicohe
@@ -13,15 +13,15 @@ ms.author: v-federicohe
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to configure the information that is required to generate the electronic invoice XML for Colombia.
+This article explains how to set up the information required to generate the electronic invoice XML for Colombia.
 
 ## Prerequisites
 
-Before you complete the procedures in this article, the following prerequisites must be met:
+Before completing the procedures in this article, ensure the following prerequisites are met:
 
-- Both the country/region specific Latin American (LATAM) feature for Colombia and the general LATAM feature must be enabled.
-- The company's address must be set to Colombia.
-- You must download the specific report configurations from the Dataverse configuration repository for Colombia Electronic Invoices:
+- Enable both the country/region-specific Latin American (LATAM) feature for Colombia and the general LATAM feature.
+- Set the company's address to Colombia.
+- Download the specific report configurations from the Dataverse configuration repository for Colombia Electronic Invoices:
 
 | Element |                    Format name                    |
 |:-------:|:-------------------------------------------------:|
@@ -36,13 +36,13 @@ Before you complete the procedures in this article, the following prerequisites 
 | Format  | :::no-loc text="Project e-DebitNote (CO)":::                          |
 | Format  | :::no-loc text="Project e-Invoice (CO)":::                            |
 
-Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
-- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
-- You must configure all the LATAM extensions before continuing with the configuration in this article.
+For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+- Configure the Electronic reporting (ER) parameters. For more information, see [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+- Configure all the LATAM extensions before continuing with the configuration in this article.
 
 ## Configuration required for Colombia electronic invoices
 
-The following configurations are required for Columbia electronic invoices.
+The following configurations are required for Colombia electronic invoices.
 
 - Configure the tax application
 - Configure the legal entity
@@ -52,13 +52,14 @@ The following configurations are required for Columbia electronic invoices.
 - Configure the fiscal information
 - Configure the addresses
 - Configure other tax applications
+- Configure charges and discounts
 - Configure Taxes
 
-Each configuration is explained in the following sections.
+Each configuration is described in the following sections.
 
 ### Configure the tax application
 
-To configure the Tax application, go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax application** and select **New** to create a tax application record that has the code **COFE** (Colombian electronic invoice). Use this tax application record to assign the fiscal codification to each element in Microsoft Dynamics 365 Finance as required.
+To configure the tax application, go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax application**, and select **New** to create a tax application record with the code **COFE** (Colombian electronic invoice). Use this tax application record to assign the fiscal codification to each element in Microsoft Dynamics 365 Finance as required.
 
 ### Configure the legal entity
 
@@ -66,11 +67,11 @@ To configure the legal entity, follow these steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select the legal entity that you want to work with.
-1. Complete the address with country/region, state, and county.
+1. Complete the address fields with the country/region, state, and county.
 1. Complete the contact information with the email address and set it to **Primary**.
 1. In the LATAM section, complete the **Taxpayer type** with an option that represents organizations.
-1. Complete the **Based in country/region** with **COL**.
-1. Complete the **Country/region document type** with the option that represents the identification document type used by the organization.
+1. Complete the **Based in country/region** field with **COL**.
+1. Complete the **Country/region document type** field with the option that represents the identification document type used by the organization.
 1. In the LATAM section, complete the **Country/region identification number** field, enter the company ID number with the verification code at the end separated with a middle hyphen (for example, 123456789-0).
 
 ### Configure the document classes
@@ -190,6 +191,42 @@ To configure currencies, follow these steps.
    1. Create a new record.
    1. In the **Tax application id** field, select the code that is used for Colombian electronic invoicing.
    1. In the **Tax application code** field, enter the currency code according to the Colombian normative.
+
+### Configure charges and discounts
+
+This section explains how to congifure global line charges and discounts.
+
+#### Configure global and line charges
+
+To configure global and line charges, follow these steps.
+
+1. Go to **Accounts receivable \> Charges setup \> Charges code**.
+1. For each record that is used as a global or line charge, follow these steps:
+   1. Select a record and go to **LATAM \> Tax application** in the top menu.
+   1. Create a new record.
+   1. In the **Tax application Id** field select the one used for Colombia Electronic Invoice.
+   1. In the **Tax application code** field enter the code according to the Colombian normative.
+
+#### Configure global discounts
+
+To configure global discounts, follow these steps.
+
+1. Go to **Accounts receivable > Charges setup > Charges code**.
+1. For each record that is used as a global discount, follow these steps:
+   1. Select a record and go to **LATAM \> Tax application** in the top menu.
+   1. Create a new record.
+   1. In the **Tax application Id** field select the one used for Colombia Electronic Invoice.
+   1. In the **Tax application code** field enter the code according to the Colombian normative.
+
+#### Line discounts
+
+To use line discounts in the Colombian Electronic invoice use the finance and operations apps line discount feature.
+
+> [!NOTE] 
+> To enter a global discount, use the Maintain charges button in the sales orders, enter the amount in negative, and the tax code for the global discount should be “Excluded”.
+
+> [!NOTE] 
+> The charge code description will be used in the discount/charge reason description of the invoice.
 
 ### Configure Taxes
 
