@@ -3,7 +3,7 @@ title: Demand forecasting algorithms
 description: Learn how each of the available forecasting algorithms works in Demand planning. In addition, learn about each algorithm's suitability for different types of historical demand data.
 author: AndersEvenGirke
 ms.author: aevengir
-ms.topic: how-to
+ms.topic: concept-article
 ms.date: 11/29/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
@@ -41,9 +41,13 @@ The demand forecasting algorithm that you should use depends on the specific cha
 | Quick forecasting is required. | Not recommended | Recommended | Acceptable |
 | Forecasting is focused on a recent period. | Acceptable | Recommended | Acceptable |
 
+<a name="best-fit"></a>
+
 ## Best fit model algorithm
 
 The best fit model algorithm automatically determines which of the other available single-input algorithms (auto-ARIMA, ETS, or Prophet) best fits your data for each product and dimension combination. In this way, different models can be used for different products. In most cases, we recommend that you use the best fit model, because it combines the strengths of all the other standard models. The following example shows how.
+
+### Example of how best fit model works
 
 For this example, you have historical demand time series data that includes the following dimension combinations.
 
@@ -91,13 +95,16 @@ Legend:
 - **Blue** – ETS only.
 - **Green** – Best fit.
 
-### Best fit model - version 2
+### Best fit model versions
 
-Best fit model - version 2 introduces two changes to how Best fit model operates:
-* [Naïve forecasting](naive-forecasting.md) is introduced as a way to handle low data scenarios
-* Data used for training and testing models is limited to values from before forecast start date
+The best fit model algorithm is available in several versions, as described in the following table. Usually, you should use the newest version that's available, but to ensure that all of your existing forecast models continue to work, the older versions will continue to be available and supported until further notice. To use one of these algorithms, select the appropriate version in the [configuration settings](design-forecast-models.md) for the *Forecast* step in your forecast model.
 
-The model is available from version 1.0.0.3424 and can be selected in Forecast step.
+| Name | Version requirements | Description |
+|--|--|--|
+| Best fit model - version 1  | Demand planning version 1.0.0.1067 or higher | Works as described in this section |
+| Best fit model - version 2  | Demand planning version 1.0.0.3424 or higher | Same as version one, but with the following exceptions: <ul><li>Adds support for [Naive forecasting](naive-forecasting.md) as a way to handle low-data scenarios.</li></li>Data used for training and testing models is limited to values from before the forecast start date.</li></ul> |
+
+<!-- KFM: Confirm that each name in this table matches UI -->
 
 ## Auto-ARIMA: The time traveler's delight
 
@@ -117,7 +124,7 @@ The auto-ARIMA algorithm automatically identifies the best combination of the th
 1. Find correlation between lagged data points.
 1. Calculate moving average error.
 
-Auto-ARIMA works especially well with time series data that shows a stable pattern over time, such as seasonal fluctuations or trends. If your historical demand follows a reasonably consistent path, you might prefer to use auto-ARIMA as your forecasting method. 
+Auto-ARIMA works especially well with time series data that shows a stable pattern over time, such as seasonal fluctuations or trends. If your historical demand follows a reasonably consistent path, you might prefer to use auto-ARIMA as your forecasting method.
 
 ### Auto-ARIMA algorithm equations
 
