@@ -142,23 +142,36 @@ The name of this variable must be used as the name of the import source for the 
 
 The following countries electronic invoicing functionality is implemented using **Edicom** as the last-mile connector.
 
+#### Belgium
+
+For more information about electronic invoicing in Belgium, see:
+- [Electronic invoicing for Belgium](../belgium/emea-bel-e-invoices.md).
+
 #### **Chile**
 
 For more information about electronic invoicing in Chile, see:
 - [Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md)
 - [Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md).
 
-### Electronic invoicing in Costa Rica
+#### Costa Rica
 
-For more information about electronic invoicing in Costa Rica, see [Get started with Electronic invoicing for Costa Rica](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md).
+For more information about electronic invoicing in Costa Rica, see:
+- [Get started with Electronic invoicing for Costa Rica](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md).
 
-### Electronic invoicing in Denmark
+#### Denmark
 
-For more information about electronic invoicing in Denmark, including the integration with the [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, see [Get started with Electronic invoicing for Denmark](../denmark/gs-e-invoicing-dk-get-started.md).
+For more information about electronic invoicing in Denmark, see:
+- [Use electronic invoicing for Denmark](../denmark/gs-e-invoicing-dk-get-started.md).
 
-### Electronic invoicing in Panama
+#### Panama
 
-For more information about electronic invoicing in Panama, see [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md).
+For more information about electronic invoicing in Panama, see:
+- [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md).
+
+#### Singapore
+
+For more information about electronic invoicing in Singapore, see:
+- [Electronic invoicing for Singapore](../singapore/apac-sgp-e-invoices.md).
 
 ## Additional resources
 
