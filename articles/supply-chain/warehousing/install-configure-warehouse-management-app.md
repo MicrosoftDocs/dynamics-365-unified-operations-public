@@ -5,9 +5,11 @@ author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
 ms.date: 02/27/2025
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
+ms.custom:
+  - bap-template
+  - sfi-ropc-blocked
 ---
 
 # Install the Warehouse Management mobile app
@@ -58,7 +60,7 @@ For the Warehouse Management mobile app to function correctly, your internal net
 
 ### Turn Warehouse Management mobile app features on or off in Supply Chain Management
 
-To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. 
+To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off.
 
 ## Get the Warehouse Management mobile app
 

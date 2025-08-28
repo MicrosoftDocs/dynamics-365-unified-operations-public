@@ -19,16 +19,9 @@ This article explains how warehouse managers can configure Microsoft Dynamics 36
 This feature lets workers who use the Warehouse Management mobile app over-pick raw materials for production orders when they must. Workers are notified if they exceed the over-picking thresholds that the warehouse manager sets.
 
 > [!IMPORTANT]
-> The over-pick feature only applies when picking and processing sales orders, transfer orders, production order raw materials, and batch order raw materials. Replenishment doesn't support over-picking. When replenishment work is run, the system won't allow workers to over-pick.
-
-
-## Prerequisites
-
-Before you can use this feature, your system must meet the following requirements:
-
-- You must be running Supply Chain Management version 10.0.37 or later.
-- The feature that's named *Over-pick materials for production orders and batch orders* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.40, it's turned on by default. As of version 10.0.43, it's mandatory and can't be turned off.
-- All products that you'll use this feature for must be enabled for warehouse management processes (WMS).
+>
+> - The over-pick feature only applies when picking and processing sales orders, transfer orders, production order raw materials, and batch order raw materials. Replenishment doesn't support over-picking. When replenishment work is run, the system won't allow workers to over-pick.
+> - All products that should use this feature must be enabled for warehouse management processes (WMS).
 
 ## Set up over-picking for production and batch orders
 

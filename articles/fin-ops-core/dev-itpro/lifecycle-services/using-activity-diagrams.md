@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.search.validFrom:
 ms.search.form:
 ms.dyn365.ops.version: 2012
+ms.custom: sfi-image-nochange
 ---
 
 # Work with activity diagrams in Business process modeler libraries

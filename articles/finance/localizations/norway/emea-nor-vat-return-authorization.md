@@ -4,12 +4,13 @@ description: Learn how to authorize your Microsoft Dynamics 365 Finance environm
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 06/12/2025
 ms.reviewer: johnmichalak
 ms.search.region: Norway
 ms.search.validFrom: 2022-11-18
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Authorize interoperation with ID-porten and Altinn web services

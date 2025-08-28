@@ -3,12 +3,12 @@ title: Running average cost price
 description: The inventory close process settles issue transactions to receipt transactions, based on the inventory valuation method that is selected.
 author: prasungoel
 ms.author: prasungoel
-ms.topic: how-to
-ms.date: 05/27/2024
-ms.custom:
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+  - bap-template
 ---
 
 # Running average cost price
@@ -28,9 +28,9 @@ The default item cost for a released product can be configured in one of two way
 - Create a standard cost by selecting **Item price** in the **Set up** group on the **Manage costs** tab of the Action Pane. If you use this method, you must use a standard cost costing version, and the cost must be activated.
 - Define a default item cost price for a released product by entering a value in the **Price** field on the **Manage costs** FastTab.
 
-In addition to entering or creating a price, you can select the **Use latest cost price** checkbox on the **Manage costs** FastTab of the **Released product details** page. In this case, the system will automatically update the **Price** field when you post a financial update. For example, if you post a purchase order invoice, the field will be set to the purchase price from that invoice.
+In addition to entering or creating a price, you can select the **Use latest cost price** checkbox on the **Manage costs** FastTab of the **Released product details** page. In this case, the system automatically updates the **Price** field when you post a financial update. For example, if you post a purchase order invoice, the field is set to the purchase price from that invoice.
 
-If you have a cost price in an active costing version, and you enter a price on the **Manage costs** FastTab, the system will use the price from the active costing version before it uses the price that is defined on the **Manage costs** FastTab.
+If you have a cost price in an active costing version, and you enter a price on the **Manage costs** FastTab, the system uses the price from the active costing version before it uses the price that is defined on the **Manage costs** FastTab.
 
 ## Using the running average cost price
 
@@ -52,7 +52,7 @@ The following table shows when the system posts inventory transactions by using 
 
 On rare occasions, the system prices several issues before it has enough receipts to base the price on. This scenario can cause estimates of the running average cost price to be overly inflated. However, there are steps that you can take to avoid pricing amplification, or to reduce its impact when it does occur.
 
-**Scenario:** The following transactions occur for an item that you've selected the **Include physical value** option for:
+**Scenario:** The following transactions occur for an item where the **Include physical value** option is selected:
 
 1. You financially receive a quantity of 100 at USD 100.00.
 2. You financially issue a quantity of 200.
@@ -79,15 +79,15 @@ However, if your business model allows for the following practices, they can hel
 - If you select the **Include physical value** option for an item, clear the **Physical negative inventory** checkbox on the **Item model groups** page.
 - If you do **not** select the **Include physical value** option for an item, clear the **Financial negative inventory** option on the **Item model groups** page.
 
-Additionally, consider that the maximum offset in your physical inventory value is limited by the number of physical transactions, and the difference between physical and financial prices. If all physical transactions are eventually updated financially, the physical value can't rise to extreme levels. Finally, note that the amplification effect decreases significantly when the accumulated offset is spread out over several on-hand pieces instead of just one.
+Additionally, consider that the maximum offset in your physical inventory value is limited by the number of physical transactions, and the difference between physical and financial prices. If all physical transactions are eventually updated financially, the physical value can't rise to extreme levels. The amplification effect decreases significantly when the accumulated offset is spread out over several on-hand pieces instead of just one.
 
 ## Avoid a zero cost price on issues
 
 When the **Include physical value** option isn't selected on the **Item model group** page, an issue from inventory can have a zero cost price if there are no financially updated receipts in inventory. To help avoid this scenario, consider the following options:
 
-- Select the **Include physical value** option on the **Item model group** page. This option will prevent a zero cost price on an issue, provided that the receipt is physically updated. If you don't allow negative physical inventory, issues will calculate the running average from the physically updated transactions.
+- Select the **Include physical value** option on the **Item model group** page. This option prevents a zero cost price on an issue, provided that the receipt is physically updated. If you don't allow negative physical inventory, issues calculate the running average from the physically updated transactions.
 - Create a default item cost price by activating a costing version that has a standard cost, or enter the price on the **Manage costs** FastTab of the **Released product details** page. This option is best when the **Include physical value** option isn't selected on the **Item model group** page, because the system will always have a fallback price to use.
-- Select the **Use latest cost price** option on the **Manage costs** FastTab of the **Released product details** page. This option will keep the **Price** field up to date each time that you financially update a receipt. If you select this option, but you don't enter a default price or activate a cost in a standard costing version, you can still have a zero cost on an issue.
+- Select the **Use latest cost price** option on the **Manage costs** FastTab of the **Released product details** page. This option keeps the **Price** field up to date each time that you financially update a receipt. If you select this option, but you don't enter a default price or activate a cost in a standard costing version, you can still have a zero cost on an issue.
 
 If you have issue transactions that have zero cost, the *Inventory close and adjustment* process will correct the cost price by creating an adjustment after the receipts are financially updated. Keep in mind that the financial period when this update occurs might differ from the financial period when the items were physically received or issued.
 

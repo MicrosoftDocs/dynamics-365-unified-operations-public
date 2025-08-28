@@ -102,7 +102,7 @@ After a user is added or a role is changed, the user should be able to access Fi
 
 Users who generate a report can delete their own reports. Users with the **Maintain financial reporting security** duty can delete other's reports. 
 
-In release 10.0.8, the concept of expiration dates was introduced. A new required feature is enabled in the **All** page within the feature management workspace. The **Financial report retention policies** feature contains the following changes:
+The **Financial report retention policies** feature contains the following changes:
 * Newly generated reports will automatically be marked as having an expiration date of 90 days from when they're generated.
 * Any existing reports from before the feature was installed will be given a 90-day expiration period. The date might show as blank for a short period of time until the Financial reporting service is running, a report is generated, and the service performs the update to existing reports with a blank expiration date. 
 * Users with **Maintain financial reporting security** have access to this functionality. Any user in the **Maintain financial report** duty granted the **Maintain financial report expiration** privilege will also have the ability to modify the expiration period. Currently there are two retention options available: 
@@ -113,6 +113,20 @@ In release 10.0.8, the concept of expiration dates was introduced. A new require
 When an expiration, such as 90 days, is selected, it's applied 90 days from today. This is different behavior than the 90 days from the original generation date set when the report was generated. 
 
 Additional options will be considered in future functionality. The expiration of 90 days will be the default, and users with appropriate permissions can override the default on the **Financial reports** list page.
+ 
+### Historical accuracy after transaction edits
+Beginning with Financial reporting release 10.0.45, fact versioning was removed from the Financial reporting database (MRDB). When you rerun or drill into a previously generated report, the detail is recalculated using the current transaction data. If the underlying transaction was edited after the original report was produced, drill-down lines may differ from the original snapshot. Top-level balances in the saved report don't change.
+
+>[!NOTE]
+> Export the report to Excel or PDF when it is finalized if you require an immutable audit copy.
+
+
+### Historical accuracy after transaction edits
+Beginning with Financial reporting release 10.0.45, fact versioning was removed from the Financial reporting database (MRDB). When you rerun or drill into a previously generated report, the detail is recalculated using the current transaction data. If the underlying transaction was edited after the original report was produced, drill-down lines may differ from the snapshot you first saw. Top-level balances in the saved report don't change.
+
+>[!Tip]
+> Export the report to Excel or PDF when it's finalized if you require an immutable audit copy.
+
 
 ## Default reports
 

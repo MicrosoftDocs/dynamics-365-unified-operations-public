@@ -1,8 +1,8 @@
 ---
 title: Landed cost parameters setup
 description: Learn how to set up configuration settings that are used across the Landed cost module for posting, status updates, number sequences, and behavior.
-author: lisascholz91
-ms.author: lisascholz
+author: prasungoel 
+ms.author: prasungoel 
 ms.topic: how-to
 ms.date: 04/09/2025
 ms.custom: 

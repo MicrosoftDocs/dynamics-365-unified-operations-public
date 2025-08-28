@@ -1,21 +1,22 @@
 ---
 title: Sales tax report for Sweden
-description: Learn how to set up and generate the sales tax report for legal entities in Sweden, including an outline and process on setting up report layouts.
+description: Learn how to set up and generate the sales tax report for legal entities in Sweden in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 07/21/2025
 ms.reviewer: johnmichalak
 ms.search.region: Sweden
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ---
 
 # Sales tax report for Sweden
 
 [!include [banner](../../includes/banner.md)]
+
+This article explains how to set up and generate the sales tax report for legal entities in Sweden in Microsoft Dynamics 365 Finance.
 
 > [!IMPORTANT]
   > This feature is deprecated. For more information, see [Removed and deprecated features](../../get-started/removed-deprecated-features-finance.md#sales-tax-report-for-sweden-design-based-on-reporting-codes).
@@ -27,9 +28,11 @@ For general information about how to set up the value-added tax (VAT) statement,
 
 To generate a sales tax report in the correct format for the appropriate tax authority, you must first set up the report layout for sales tax authorities.
 
-1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities.**
-2. On the **Sales tax authorities** page, select the sales tax authority that will be used in the sales tax codes for the sales tax settlement period.
-3. In the **Report layout** field, select **Swedish report layout**.
+To set up the report layout for sales tax authorities, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities.**
+1. On the **Sales tax authorities** page, select the sales tax authority that will be used in the sales tax codes for the sales tax settlement period.
+1. In the **Report layout** field, select **Swedish report layout**.
 
 ## Set up sales tax reporting codes for VAT reporting
 
@@ -65,18 +68,20 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 | 41                                                    | Sales where the purchaser is liable for VAT in Sweden                                                                                                                                              |
 | 42                                                    | Other sales, and so on                                                                                                                                                                             |
 | 48                                                    | The input VAT to deduct                                                                                                                                                                            |
-| 49                                                    | The VAT to pay or recover On the sales tax report, the value in this box is automatically calculated as the sum of reporting codes 10, 11, 12, 30, 31, 32, 60, 61, and 62, plus reporting code 48. |
+| 49                                                    | The VAT to pay or recover On the sales tax report, the value in this box is automatically calculated as the sum of reporting codes 10, 11, 12, 30, 31, 32, 60, 61, and 62, plus reporting code 41. |
 
 ## Set up sales tax codes
 
 Set up sales tax codes by following the instructions in the topics, [Sales tax codes for VAT reporting](../europe/emea-vat-reporting.md#sales-tax-codes-for-tax-reporting) and [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
 
-## <a name="generate"></a> Generate a sales tax payment and print the Swedish sales tax report
+## <a name="generate"></a>Generate a sales tax payment and print the Swedish sales tax report
 
 At the end of the VAT reporting period, calculate the sales tax amounts for the settlement period.
 
-1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
-2. In the **Report sales tax for settlement period** dialog box, set the following fields.
+To generate a sales tax payment and print the Swedish sales tax report, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
+1. In the **Report sales tax for settlement period** dialog, set the following fields.
 
     | **Field**                 | **Description**                                                                                                                                                                                                                                                                         |
     |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -85,7 +90,7 @@ At the end of the VAT reporting period, calculate the sales tax amounts for the 
     | Transaction date          | Enter the date when the sales tax report is calculated. The default value is the current date. The sales tax payment is calculated for all transactions that were posted during the settlement period.                                                                                  |
     | Sales tax payment version | Select the type of sales tax settlement. If this sales tax settlement is the first sales tax settlement for the period, select **Original**. If a sales tax settlement has already been generated, select **Latest corrections**. For more information, see [Create a sales tax payment](../../general-ledger/tasks/create-sales-tax-payment.md). |
 
-3. Select **OK**. Fill in the following fields on the dialog **Swedish sales tax report**.
+1. Select **OK**. Fill in the following fields on the dialog **Swedish sales tax report**.
 
     | **Field**                       | **Description**                                                                                                                                                                                                                                                 |
     |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -93,34 +98,40 @@ At the end of the VAT reporting period, calculate the sales tax amounts for the 
     | Reporting currency              | Select the foreign currency that the report should be generated in.                                                                                                                                                                                             |
     | Currency rate on reporting date | Set this option to **Yes** to specify that that the currency rate on the reporting date should be used for all transactions on the report.                                                                                                                      |
 
-4. Select **OK** to generate the sales tax payment.
+1. Select **OK** to generate the sales tax payment.
 
 ## Print a sales tax payment report from a sales tax payment
 
-1. Go to **Tax** \> **Inquiries and reports** \> **Sales tax payments**.
-2. On the **Sales tax payment** page, select the record, and then select **Print report**.
-3. In the dialog box, set the fields as described in the previous section, and then select **OK**.
+To print a sales tax payment report from a sales tax payment, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax payments**.
+1. On the **Sales tax payment** page, select the record, and then select **Print report**.
+1. In the dialog, set the fields as described in the previous section, and then select **OK**.
 
 ## Report sales tax for a settlement period
 
 You can also generate a Swedish sales tax report by using the **Report sales tax for settlement period** inquiry.
 
-1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**.
-2. Set the **Settlement period**, **From date**, **Tax currency**, and **Reporting currency** fields as described in the [Generate a sales tax payment and print the Swedish sales tax report](#generate) section earlier in this article.
-3. In **Sales tax payment version** field, select one of the following options:
+To report sales tax for a settlement period, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**.
+1. Set the **Settlement period**, **From date**, **Tax currency**, and **Reporting currency** fields as described in the [Generate a sales tax payment and print the Swedish sales tax report](#generate) section earlier in this article.
+1. In **Sales tax payment version** field, select one of the following options:
 
     - **Original** – Generate a report for sales tax transactions of the first posted settlement calculation for the period.
     - **Corrections** – Generate a report for sales tax transactions of subsequent settlement calculations for the period.
     - **Total list** – Generate a report for all sales transactions for the period. These transactions include original and corrected transactions.
 
-4. Select **OK**.
-5. Set the **Tax currency**, **Reporting currency**, and **Currency rate on reporting date** fields as described in the section, [Generate a sales tax payment and print the Swedish sales tax report](#generate).
+1. Select **OK**.
+1. Set the **Tax currency**, **Reporting currency**, and **Currency rate on reporting date** fields as described in the section, [Generate a sales tax payment and print the Swedish sales tax report](#generate).
 
 ## Example
 
-The following example shows how you can set up sales tax codes and sales tax reporting codes, post transactions, and generate the Swedish sales tax report.
+The following example procedure shows you how to set up sales tax codes and sales tax reporting codes, post transactions, and generate the Swedish sales tax report.
 
-1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and set up the following sales tax codes.
+To run through the example, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and set up the following sales tax codes.
 
     | **Sales tax code** | **Percentage** | **Description**                                                                        |
     |--------------------|----------------|----------------------------------------------------------------------------------------|
@@ -139,7 +150,7 @@ The following example shows how you can set up sales tax codes and sales tax rep
     | SEEUS              | 0              | EU sales where the **Exempt** option is set to **Yes**.                                |
     | SEThird            | 0              | Export sales where the **Exempt** option is set to **Yes**.                            |
 
-2. On the **Sales tax codes** page, on the **Report setup** FastTab, assign reporting codes to sales tax codes.
+1. On the **Sales tax codes** page, on the **Report setup** FastTab, assign reporting codes to sales tax codes.
 
    The following table shows how to assign the sales tax reporting codes to sales tax codes.
 
@@ -163,7 +174,7 @@ The following example shows how you can set up sales tax codes and sales tax rep
    > [!NOTE]
    > The preceding configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the **Report setup** tab.
    
-3. Post the following transactions. For example for Customer invoices go to **Accounts receivable** \> **Invoices** \> **All free text invoices**, for Vendor invoices go to **Accounts payable** \> **Invoices** \> **Invoice journal**.
+1. Post the following transactions. For example for Customer invoices go to **Accounts receivable** \> **Invoices** \> **All free text invoices**, for Vendor invoices go to **Accounts payable** \> **Invoices** \> **Invoice journal**.
 
     | **Date**        | **Transaction type**            | **Amount net** | **VAT amount** | **Sales tax code** | **Expected tax base – reporting code** | **Expected tax amount – reporting code** |
     |-----------------|---------------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|
@@ -174,23 +185,23 @@ The following example shows how you can set up sales tax codes and sales tax rep
     | January 1, 2020 | Customer invoice (export)       | 100            | 0              | SEThird            | 36                                     | Not applicable                           |
     | January 1, 2020 | Vendor invoice (reverse charge) | 100            | 25             | SERC25             | 23                                     | 30 – Tax payable 48 – Tax deduction      |
 
-4. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Original**.
-5. Print the report, and review the data.
+1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog in the **Sales tax payment version** field, select **Original**.
+1. Print the report, and review the data.
 
     ![Sales tax reporting original list.](../media/1_Sales_tax_reporting.png)
 
-6. Post the new transaction. For example, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
+1. Post the new transaction. For example, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 
     | **Date**        | **Transaction type**   | **Amount net** | **VAT amount** | **Sales tax code** | **Expected tax base – reporting code** | **Expected tax amount – reporting code** |
     |-----------------|------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|
     | January 1, 2020 | Customer invoice (dom) | 100            | 6              | SE6                | 5                                      | 12                                       |
 
-7. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Latest corrections**.
-8. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Corrections**. The following illustration shows the result.
+1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog in the **Sales tax payment version** field, select **Latest corrections**.
+1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog in the **Sales tax payment version** field, select **Corrections**. The following illustration shows the result.
 
     ![Sales tax reporting list of corrections.](../media/2_Sales_tax_reporting.png)
 
-9. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Total list**. The following illustration shows the result.
+1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog in the **Sales tax payment version** field, select **Total list**. The following illustration shows the result.
 
     ![Sales tax reporting total list.](../media/3_Sales_tax_reporting.png)
 

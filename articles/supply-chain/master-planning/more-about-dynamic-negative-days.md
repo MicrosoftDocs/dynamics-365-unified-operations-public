@@ -3,10 +3,12 @@ title: Negative days and dynamic negative days
 description: Learn about negative days and dynamic negative days, and how you can use them to help your business, including outlines on various scenarios.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 05/25/2021
 ms.reviewer: kamaybac
-ms.search.form: 
+ms.search.form:
+ms.topic: how-to
+ms.date: 08/22/2025
+ms.custom:
+  - bap-template
 ---
 
 <!-- KFM: Split this up. non-dynamic for deprecated MP, and "dynamic" for new standard PO. -->
@@ -17,7 +19,7 @@ ms.search.form:
 
 This article provides information about negative days and dynamic negative days, and how you can use them to help your business. The *negative days time fence* represents the number of days that you're willing to wait before you order new replenishment when you have negative inventory.
 
-In this article, you will learn the following information:
+In this article, you'll learn the following information:
 
 - How planned orders are created
 - The correlation between the negative days time fence and the item's lead time
@@ -28,12 +30,12 @@ This article uses three hypothetical scenarios to help you understand this infor
 
 ## Scenario 1: You get demand before the item's lead time period
 
-You might get demand either relatively early in your item's lead time or just before the lead time period begins. Here is an example of this scenario:
+You might get demand either relatively early in your item's lead time or just before the lead time period begins. Here's an example of this scenario:
 
 - The DemoProduct item has a six-day purchase lead time.
 - On day zero (January 1), the inventory level for the DemoProduct item is 0 (zero).
 - On day zero (January 1), you get a sales order for a quantity of 10 of the DemoProduct item.
-- On day seven (January 8), there is an existing purchase order for a quantity of 10 of the DemoProduct item.
+- On day seven (January 8), there's an existing purchase order for a quantity of 10 of the DemoProduct item.
 
 The following illustration shows a graphical view of this scenario.
 
@@ -59,11 +61,11 @@ To help improve MRP performance, you can set the negative days to a number that 
 
 ### Case 1C: Automatically correlate the item's lead time to the negative days time fence
 
-To automatically correlate the item's lead time to the negative days time fence, use dynamic negative days. To use dynamic negative days, go to **Master planning \> Setup \> Master planning parameters**, and then, on the **General** tab, in the **Coverage** section, set the **Use dynamic negative days** option to **Yes**. MRP then looks for receipts inside the dynamic negative days time fence. This time fence is calculated by using the following formula:
+To automatically correlate the item's lead time to the negative days time fence, use dynamic negative days. To use dynamic negative days, go to **Master planning** \> **Setup** \> **Master planning parameters**, and then, on the **General** tab, in the **Coverage** section, set the **Use dynamic negative days** option to *Yes*. MRP then looks for receipts inside the dynamic negative days time fence. This time fence is calculated by using the following formula:
 
 Dynamic negative days time fence = Purchase lead time + Negative days time fence + (Current date – Requirement date)
 
-(If the default order type of the DemoProduct item is **Production** or **Transfer**, the lead time is the **inventory** lead time.)
+(If the default order type of the DemoProduct item is *Production* or *Transfer*, the lead time is the *inventory* lead time.)
 
 When dynamic negative days are used, the time fence that MRP looks at for receipts is now 6 + 2 + 0 = 8 days. MRP finds the existing purchase order and pegs the sales order against it. No new planned orders are created. Therefore, the running time for MRP is shorter. The following illustration shows the net requirements for the DemoProduct item.
 
@@ -75,7 +77,7 @@ The following illustration shows a graphical view of what occurs in this case.
 
 ### Case 1D: Use only dynamic negative days
 
-If you set the negative days to **0** (zero) and use only the dynamic negative days time fence, the dynamic negative days time fence is 6 + 0 + 0 = 6 days. In this case, the result is the same as the result in case A for this scenario. MRP must create a new planned order, and must calculate delays and actions. These tasks are time-consuming and can also be frustrating. You also have two more transactions to process. Because the demand can't be fulfilled on time for the item to arrive, this case adds unnecessary complications to your plan.
+If you set the negative days to *0* (zero) and use only the dynamic negative days time fence, the dynamic negative days time fence is 6 + 0 + 0 = 6 days. In this case, the result is the same as the result in case A for this scenario. MRP must create a new planned order, and must calculate delays and actions. These tasks are time-consuming and can also be frustrating. You also have two more transactions to process. Because the demand can't be fulfilled on time for the item to arrive, this case adds unnecessary complications to your plan.
 
 The following illustration shows a screenshot for this case.
 
@@ -91,12 +93,12 @@ If you set the negative days to a number that is more than the item's lead time,
 
 ## Scenario 2: You get demand during the item's lead time period
 
-You might get demand sometime during your item's lead time. Here is an example of this scenario:
+You might get demand sometime during your item's lead time. Here's an example of this scenario:
 
-- The DemoProduct item has a six-day purchase lead time. 
+- The DemoProduct item has a six-day purchase lead time.
 - On day zero (January 1), the inventory level for the DemoProduct item is 0 (zero).
 - On day four (January 5), which is inside the item's lead time, you get a sales order for a quantity of 10 of the DemoProduct item.
-- On day seven (January 8), there is a purchase order for a quantity of 10 of the DemoProduct item.
+- On day seven (January 8), there's a purchase order for a quantity of 10 of the DemoProduct item.
 
 The following illustration shows a graphical view of this scenario.
 
@@ -132,7 +134,7 @@ The following illustration shows a graphical view of what occurs in this case.
 
 ### Case 2D: Use only dynamic negative days
 
-If you set the negative days to **0** (zero) and use only the dynamic negative days time fence, the dynamic negative days time fence is now 6 + 0 – 4 = 2 days. In this case, the result is the same as the result in case A for this scenario. For a graphical view of what occurs, see case A for this scenario.
+If you set the negative days to *0* (zero) and use only the dynamic negative days time fence, the dynamic negative days time fence is now 6 + 0 – 4 = 2 days. In this case, the result is the same as the result in case A for this scenario. For a graphical view of what occurs, see case A for this scenario.
 
 ### Case 2E: Use both negative days that are more than the item's lead time and the dynamic negative days time fence
 
@@ -140,12 +142,12 @@ If you set the negative days to a number that is more than the item's lead time,
 
 ## Scenario 3: You get demand after the item's lead time period
 
-You might get demand after the item's lead time. Here is an example of this scenario:
+You might get demand after the item's lead time. Here's an example of this scenario:
 
 - The DemoProduct item has a six-day purchase lead time.
 - On day zero (January 1), the inventory for the DemoProduct item is 0 (zero).
 - On day seven (January 8), which is outside the item's lead time, you get a sales order for a quantity of 10 of the DemoProduct item.
-- On day ten (January 11), there is a purchase order for a quantity of 10 of the DemoProduct item.
+- On day ten (January 11), there's a purchase order for a quantity of 10 of the DemoProduct item.
 
 The following illustration shows a graphical view of this scenario.
 
@@ -190,7 +192,7 @@ The following illustration shows a graphical view of what occurs in this case.
 
 ### Case 3D: Use only dynamic negative days
 
-If you set the negative days to **0** (zero) and use only the dynamic negative days time fence, the dynamic negative days time fence is now 6 + 0 – 7 = -1 day. In this case, the system still considers the negative days lead time (2). Therefore, the result in this case is the same as the result in case A for this scenario and has all the same drawbacks. For a graphical view of what occurs, see case A for scenario 2.
+If you set the negative days to *0* (zero) and use only the dynamic negative days time fence, the dynamic negative days time fence is now 6 + 0 – 7 = -1 day. In this case, the system still considers the negative days lead time (2). Therefore, the result in this case is the same as the result in case A for this scenario and has all the same drawbacks. For a graphical view of what occurs, see case A for scenario 2.
 
 ### Case 3E: Use both negative days that are more than the item's lead time and the dynamic negative days time fence
 
@@ -200,16 +202,16 @@ This case is the same as case E for scenarios 1 and 2. It has basically the same
 
 As the three scenarios in this article show, it's a good idea to set the negative days to a number that is more than the lead time of the items in the coverage group. It's also a good idea to use only dynamic negative days, and to set the negative days to the number of days that you're willing to wait before you order new replenishment when you have negative inventory (in other words, the number of days that you're willing to further delay demand). Additionally, items in the same coverage group should have similar lead times.
 
-If you set the negative days to **0** (zero) and don't use dynamic negative days, MRP always creates a new planned order to fulfill demand. In this situation, it's important that you work with the action messages to make sure that you don't pile up inventory.
+If you set the negative days to *0* (zero) and don't use dynamic negative days, MRP always creates a new planned order to fulfill demand. In this situation, it's important that you work with the action messages to make sure that you don't pile up inventory.
 
-You might want to set the negative days to a long time fence and then work with the action messages. This approach produces good planning results, but it's also a bit slower. It might also be more difficult to analyze, because you must analyze and apply the action messages. Here is an example:
+You might want to set the negative days to a long time fence and then work with the action messages. This approach produces good planning results, but it's also a bit slower. It might also be more difficult to analyze, because you must analyze and apply the action messages. Here's an example:
 
 - The DemoProduct item has a six-day purchase lead time.
 - On day zero (January 1), the inventory for the DemoProduct item is 0 (zero).
 - On day zero (January 1), you get a sales order for a quantity of 10 of the DemoProduct item.
 - On day nine (January 10), you get a sales order for a quantity of 10 of the DemoProduct item.
-- On day eleven (January 12), there is a purchase order for a quantity of 10 of the DemoProduct item.
-- Negative days are set to **20**, which is much more than the item's lead time.
+- On day eleven (January 12), there's a purchase order for a quantity of 10 of the DemoProduct item.
+- Negative days are set to *20*, which is much more than the item's lead time.
 
 The following illustration shows a graphical view of what occurs.
 
@@ -223,7 +225,7 @@ In the preceding screenshot, the sales order requirement date is January 9 inste
 
 MRP creates a planned purchase order to fulfill the demand that is requested by the first sales order, but then it also recommends that you cancel the planned order, because you can advance the existing purchase order and increase the quantity on it.
 
-The results aren't wrong, but the running time for MRP might be longer, because MRP must create all the delays and suggestions. Additionally, the planner might require more time to understand the MRP results. Most importantly, in this case, it's essential that the planner understand and use the action messages.
+The results aren't wrong, but the running time for MRP might be longer, because MRP must create all the delays and suggestions. Additionally, the planner might require more time to understand the MRP results. Most importantly, in this case, it's essential that the planner understands and uses the action messages.
 
 If you reduce the negative days to a number that's closer to the item's lead time, and you use dynamic negative days, MRP produces the following results.
 
@@ -236,6 +238,5 @@ To help guarantee that the correct values are entered for your business, you mus
 ## Related information
 
 For more discussion, see the original [More about (dynamic) negative days](/archive/blogs/axmfg/more-about-dynamic-negative-days) blog post.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines 
 ms.topic: how-to
-ms.date: 07/30/2024
+ms.date: 08/13/2025
 ms.custom: 
   - bap-template
 ---

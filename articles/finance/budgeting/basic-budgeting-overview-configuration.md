@@ -4,7 +4,7 @@ description: Learn about the minimum configuration that is required in order to 
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 10/16/2023
+ms.date: 08/25/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User

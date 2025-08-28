@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.45 GA -->
 
 Before you can start to create and work with corrective and preventive action (CAPA) cases, you must set up the components that are needed to categorize and process them.
 

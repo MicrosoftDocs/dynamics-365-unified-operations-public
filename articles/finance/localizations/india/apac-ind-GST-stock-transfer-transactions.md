@@ -1,6 +1,6 @@
 ---
 title: Stock transfer orders that have tax on the transfer price
-description: Learn how to create a stock transfer order that has tax on the transfer price, including a step-by-step proces for creating a stock transfer order.
+description: Learn how to create a stock transfer order that has tax on the transfer price, including a step-by-step process for creating a stock transfer order.
 author: epodkolzina
 ms.author: epodkolzina
 ms.topic: how-to

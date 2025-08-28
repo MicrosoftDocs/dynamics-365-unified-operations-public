@@ -12,6 +12,7 @@ ms.search.validFrom: 2016-02-28
 ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 964b5a15-9b9c-434c-a4c2-e14406ebfaeb
+ms.custom: sfi-image-nochange
 ---
 
 # Configure the code upgrade service in Lifecycle Services (LCS)

@@ -3,12 +3,12 @@ title: Vendor collaboration with external vendors
 description: Learn how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: how-to
-ms.date: 05/02/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+  - bap-template
 ---
 
 # Vendor collaboration with external vendors
@@ -43,18 +43,18 @@ An administrator configures the general settings for vendor collaboration, such 
 
 Before user accounts can be created for an external vendor, you must configure the vendor account so that vendor can use vendor collaboration. On the **Vendors** page, on the **General** tab, set the **Collaboration activation** field. The following options are available:
 
-- **Active (PO is auto-confirmed)** – POs are automatically confirmed if the vendor accepts them without changes. If you use this option, be sure to schedule the *Confirm accepted purchase orders from vendor collaboration* batch job, which is responsible for processing the confirmations. For instructions, see the next section.
-- **Active (PO is not auto-confirmed)** – Your organization must manually confirm POs after the vendor has accepted them.
+- *Active (PO is auto-confirmed)* – POs are automatically confirmed if the vendor accepts them without changes. If you use this option, be sure to schedule the *Confirm accepted purchase orders from vendor collaboration* batch job, which is responsible for processing the confirmations. For instructions, see the next section.
+- *Active (PO is not auto-confirmed)* – Your organization must manually confirm POs after the vendor has accepted them.
 
 ### Scheduling the auto-confirmation batch job
 
-If you use the **Active (PO is auto-confirmed)** option for one or more of your vendors (as described in the previous section), you must schedule the *Confirm accepted purchase orders from vendor collaboration* batch job, which is responsible for processing and confirming your POs. Otherwise, auto-confirmations will never occur. Use the following procedure to schedule this job.
+If you use the *Active (PO is auto-confirmed)* option for one or more of your vendors (as described in the previous section), you must schedule the *Confirm accepted purchase orders from vendor collaboration* batch job, which is responsible for processing and confirming your POs. Otherwise, auto-confirmations will never occur. Use the following procedure to schedule this job.
 
 1. Go to **Procurement and sourcing \> Purchase orders \> Purchase order confirmation \> Confirm accepted purchase orders from vendor collaboration**.
 1. In the **Confirm accepted purchase orders from vendor collaboration** dialog box, on the **Run in the background** FastTab, select **Recurrence**.
 1. In the **Define recurrence** dialog box, define the schedule that the job should run on. When you're choosing your schedule, consider the following issues:
 
-    - If your system processes a large volume of data and runs many batch jobs, performance might be an issue. In this case, you probably should not run this job more often than every 10 minutes (depending on your other requirements). If performance isn't an issue for you, you can run it as often as every 1 to 2 minutes if required.
+    - If your system processes a large volume of data and runs many batch jobs, performance might be an issue. In this case, you probably shouldn't run this job more often than every 10 minutes (depending on your other requirements). If performance isn't an issue for you, you can run it as often as every 1 to 2 minutes if necessary.
     - If your vendors tend to deliver goods quickly (within the day that they agreed to), the recurrence should be frequent (every 10 to 30 minutes or so). In this way, warehouse workers will be able to receive the goods against the confirmed PO after confirmation is done.
     - If your vendors tend to have a long lead time (more than 24 hours), you can set this task to run just once a day or so.
 
@@ -65,28 +65,28 @@ For more information about batch jobs, see [Batch processing overview](../../fin
 
 ### Specifying whether the vendor should see price information
 
-To share price information for POs via the vendor collaboration interface, you must set the **Purchase order prices/amount** option on the **Purchase order defaults** tab for the vendor account to **Yes**. This price information includes the unit price, discounts, and charges.
+To share price information for POs via the vendor collaboration interface, you must set the **Purchase order prices/amount** option on the **Purchase order defaults** tab for the vendor account to *Yes*. This price information includes the unit price, discounts, and charges.
 
 ## Working with POs when vendor collaboration is used
 
 ### Sending a PO to a vendor
 
-POs are prepared in Supply Chain Management. When a PO has a status of **Approved**, you send it to the vendor by selecting **Send for confirmation** on the **Purchase order** page. The PO status is then changed to **In External Review**. After the PO has been sent, the vendor can see it on the **Purchase orders for review** page in the vendor collaboration interface. The vendor can then accept the PO, reject it, or suggest changes to it. The vendor can also add comments to communicate information such as changes to the PO. If you want to draw the vendor's attention to a new PO, you can also use the Print management system to send the PO by email.
+POs are prepared in Supply Chain Management. When a PO has a status of *Approved*, you send it to the vendor by selecting **Send for confirmation** on the **Purchase order** page. The PO status is then changed to *In external review*. After the PO has been sent, the vendor can see it on the **Purchase orders for review** page in the vendor collaboration interface. The vendor can then accept the PO, reject it, or suggest changes to it. The vendor can also add comments to communicate information such as changes to the PO. If you want to draw the vendor's attention to a new PO, you can also use the Print management system to send the PO by email.
 
 ### Confirmation and acceptance of a PO by a vendor
 
-After a vendor accepts a PO, the PO can be automatically confirmed, or it might have to be manually confirmed. The behavior depends on whether the **Collaboration activation** field is set to **Active (PO is auto-confirmed)** or **Active (PO is not auto-confirmed)** for the vendor.
+After a vendor accepts a PO, the PO can be automatically confirmed, or it might have to be manually confirmed. The behavior depends on whether the **Collaboration activation** field is set to *Active (PO is auto-confirmed)* or *Active (PO is not auto-confirmed)* for the vendor.
 
 The following table shows the typical exchange of information, depending on the vendor's response when you send a PO for confirmation.
 
 | Vendor response | Result |
 |---|---|
-| The vendor **accepts** the order, and Supply Chain Management is configured to automatically confirm POs that the vendor accepts. | The status of the order is updated to **Confirmed**. If the order can't be updated for some reason, the vendor response is still recorded as **Accepted**, but the status of the PO remains **In External Review**. <p>The PO that was sent to the vendor and that has a status of **In External Review** is updated with confirmed receipt dates on the lines. This update initiates a new version that is automatically set to **Confirmed** status. When the PO is confirmed, it appears in the vendor collaboration interface.</p> |
-| The vendor **accepts** the order, but Supply Chain Management isn't configured to automatically confirm POs that the vendor accepts. | The vendor response is recorded as **Accepted**, but the status of the PO remains **In External Review**.<p>The PO that was sent to the vendor and that has a status of **In External Review** is updated with confirmed receipt dates on the lines. This update initiates a new version that is automatically set to **In External Review** status. You can then manually confirm the PO.</p> |
-| The vendor **rejects** the order. | The vendor response is recorded as **Rejected**, and the status of the PO remains **In External Review**. The rejection is received together with the vendor's note. |
-| The vendor **accepts** the order **with changes**. Changes are suggested at the line level. The vendor can accept or reject individual lines. Here are some other changes that the vendor can suggest:<ul><li>Change dates or quantities.</li><li>Split lines for different receipt dates or quantities.</li><li>Substitute an item.</li></ul><p>The vendor can't change price information and charges. However, the vendor can suggest these changes by using notes.</p> | The vendor response is recorded as **Accepted with changes**, and the status of the PO remains **In External Review**. The statuses show the types of changes that the vendor has suggested. For information about the automatic consumption of changes, see the "Update the PO when a vendor suggests changes" section later in this article. |
+| The vendor accepts the order, and Supply Chain Management is configured to automatically confirm POs that the vendor accepts. | The status of the order is updated to *Confirmed*. If the order can't be updated for some reason, the vendor response is still recorded as *Accepted*, but the status of the PO remains *In External Review*. <p>The PO that was sent to the vendor and that has a status of *In external review* is updated with confirmed receipt dates on the lines. This update initiates a new version that is automatically set to *Confirmed* status. When the PO is confirmed, it appears in the vendor collaboration interface.</p> |
+| The vendor accepts the order, but Supply Chain Management isn't configured to automatically confirm POs that the vendor accepts. | The vendor response is recorded as *Accepted*, but the status of the PO remains *In external review*.<p>The PO that was sent to the vendor and that has a status of *In external review* is updated with confirmed receipt dates on the lines. This update initiates a new version that is automatically set to *In external review* status. You can then manually confirm the PO.</p> |
+| The vendor rejects the order. | The vendor response is recorded as *Rejected*, and the status of the PO remains *In external review*. The rejection is received together with the vendor's note. |
+| The vendor accepts the order with changes. Changes are suggested at the line level. The vendor can accept or reject individual lines. Here are some other changes that the vendor can suggest:<ul><li>Change dates or quantities.</li><li>Split lines for different receipt dates or quantities.</li><li>Substitute an item.</li></ul><p>The vendor can't change price information and charges. However, the vendor can suggest these changes by using notes.</p> | The vendor response is recorded as *Accepted with changes*, and the status of the PO remains *In external review*. The statuses show the types of changes that the vendor has suggested. For information about the automatic consumption of changes, see the "Update the PO when a vendor suggests changes" section later in this article. |
 
-You can use the **Purchase order preparation** workspace to monitor which POs the vendor has responded to. This workspace contains two lists that contain POs that have a status of **In External Review**:
+You can use the **Purchase order preparation** workspace to monitor which POs the vendor has responded to. This workspace contains two lists that contain POs that have a status of *In external review*:
 
 - In external review requires action
 - In external review awaiting vendor response
@@ -97,11 +97,11 @@ To change a PO that a vendor has already responded to, you must send the vendor 
 
 ### Canceling a PO
 
-When you cancel a PO, the status is changed to **Approved**. You must send the PO back to the vendor, so that the vendor can confirm or reject the cancellation. After the cancellation is confirmed, the PO appears in the vendor's list of confirmed POs as **Cancelled**.
+When you cancel a PO, the status is changed to *Approved*. You must send the PO back to the vendor, so that the vendor can confirm or reject the cancellation. After the cancellation is confirmed, the PO appears in the vendor's list of confirmed POs as *Canceled*.
 
 ### Adding attachments to a PO
 
-You can add attachments such as files, images, and notes to the PO by using the document management system. Attachments of the **External** type will be visible to the vendor when you send the PO.
+You can add attachments such as files, images, and notes to the PO by using the document management system. Attachments of the *External* type will be visible to the vendor when you send the PO.
 
 ## Updating a PO when a vendor suggests changes
 
@@ -120,21 +120,21 @@ The vendor can also add a note or attachment.
 
 On the lines, the vendor can change the quantity and the receipt dates, add notes and attachments, reject a line, substitute a line with another product that is entered as text, and split a line into multiple deliveries. The status of a line varies, depending on the changes that the vendor has suggested:
 
-- **Accepted with changes**
-- **Rejected**
-- **Substituted** – In this case, an extra line is added that has a status of **Substitute**.
-- **Confirmed**
-- **Split into schedule** – In this case, extra lines are added that have a status of **Schedule lines**.
+- *Accepted with changes*
+- *Rejected*
+- *Substituted* – In this case, an extra line is added that has a status of *Rejected*.
+- *Confirmed*
+- *Split into schedule* – In this case, extra lines are added that have a status of *Schedule lines*.
 
-If a line has no changes, the line status is **Accepted**.
+If a line has no changes, the line status is *Accepted*.
 
 On the response, the line statuses tell you the types of changes that the vendor made. Additionally, all fields that were changed appear bold to help you identify the changes.
 
 You can update a PO by selecting **Process PO update** on the response or on one line at a time. An **Is PO update processed?** field on the header and the lines indicates whether the system has processed the header or lines to update the PO with changes that originate from the response. You can run the **Process PO update** action only one time per header or line.
 
-Not all suggested changes can be updated on a PO. Only updates on the header, and updates of dates and quantities on lines, can be automatically updated on the PO. For other changes, you must manually update the PO. In this case, the value of the **Is PO update processed?** field is **Manual update**. For example, if a vendor suggests that a line be split into a schedule, this change must be made manually.
+Not all suggested changes can be updated on a PO. Only updates on the header, and updates of dates and quantities on lines, can be automatically updated on the PO. For other changes, you must manually update the PO. In this case, the value of the **Is PO update processed?** field is *Manual update*. For example, if a vendor suggests that a line be split into a schedule, this change must be made manually.
 
-Every line that has a status of **Accepted** will have a confirmed receipt date. When you run the **Process PO update** action, this date is updated on the PO. Notes and attachments aren't automatically transferred to the current PO. Additionally, trade agreements aren't reassessed on the PO lines when you update the current PO via the **Process PO update** action.
+Every line that has a status of *Accepted* will have a confirmed receipt date. When you run the **Process PO update** action, this date is updated on the PO. Notes and attachments aren't automatically transferred to the current PO. Additionally, trade agreements aren't reassessed on the PO lines when you update the current PO via the **Process PO update** action.
 
 ## PO statuses and versions
 
@@ -146,33 +146,33 @@ The following table shows an example of the changes in status and version that a
 
 | Action | Status and version |
 |--------|--------------------|
-| The initial version of the PO is created in Supply Chain Management. | The status is **Approved**. |
-| The PO is sent to the vendor. | A version is registered in the vendor collaboration interface, and the status is changed to **In External Review**. |
-| The vendor sends an **Accepted with changes** response. | The status is still **In External review**. |
-| You make some changes that the vendor requested. | The state is changed to **Approved**. |
-| You send the new version of the PO to the vendor. | A new version is registered in the vendor collaboration interface, and the status is changed to **In External Review**. |
-| The vendor accepts the new version of the PO. | The status is still **In External Review**, unless the vendor account is configured to automatically set POs to **Confirmed** status when the vendor accepts them. |
+| The initial version of the PO is created in Supply Chain Management. | The status is *Approved*. |
+| The PO is sent to the vendor. | A version is registered in the vendor collaboration interface, and the status is changed to *In external review*. |
+| The vendor sends an *Accepted with changes* response. | The status is still *In external review*. |
+| You make some changes that the vendor requested. | The state is changed to *Approved*. |
+| You send the new version of the PO to the vendor. | A new version is registered in the vendor collaboration interface, and the status is changed to *In external review*. |
+| The vendor accepts the new version of the PO. | The status is still *In external review*, unless the vendor account is configured to automatically set POs to *Confirmed* status when the vendor accepts them. |
 
-Vendors don't have to confirm a PO by using the vendor collaboration interface. They can also send an email or communicate their acceptance of a PO via other channels. You can then manually confirm the order. In this case, you receive a warning that states that the order is being confirmed even though there is no response from the vendor. The PO then appears in the confirmation history as an open confirmed order that doesn't have any responses. At this point, the vendor no longer has the option to confirm or reject the PO.
+Vendors don't have to confirm a PO by using the vendor collaboration interface. They can also send an email or communicate their acceptance of a PO via other channels. You can then manually confirm the order. In this case, you receive a warning that states that the order is being confirmed even though there's no response from the vendor. The PO then appears in the confirmation history as an open confirmed order that doesn't have any responses. At this point, the vendor no longer has the option to confirm or reject the PO.
 
 > [!NOTE]
 > The version of the PO that is available to other processes in Supply Chain Management is always the latest version, even if that version hasn't yet been registered in the vendor collaboration interface.
 
 ### Versions and statuses if you use change management
 
-If change management is enabled for POs, POs go through an approval workflow to reach the **Approved** status. This process isn't visible to the vendor.
+If change management is enabled for POs, POs go through an approval workflow to reach the *Approved* status. This process isn't visible to the vendor.
 
 The following table shows an example of the changes in status and version that a PO might go through when change management is turned on. A version is registered when the PO is approved, not when the PO is sent to the vendor or confirmed.
 
 | Action | Status and version |
 |--------|--------------------|
-| The initial version of the PO is created in Supply Chain Management. | The status is **Draft**. |
-| The PO is submitted to the approval process. (The approval process is an internal process that the vendor isn't involved in.) | The status is changed from **Draft** to **In Review** to **Approval** if the PO isn't rejected during the approval process. The approved PO is registered as a version. |
-| The PO is sent to the vendor. | The version is registered in the vendor collaboration interface, and the status is changed to **In External Review**. |
-| You make some changes that the vendor requested, either manually or by using the **Process PO update** action on the response to update the PO. | The status is changed back to **Draft**. |
-| The PO is submitted to the approval process again. | The status is changed from **Draft** to **In Review** to **Approval** if the PO isn't rejected during the approval process. Alternatively, the system can be configured so that specific field changes don't require re-approval. In this case, the status is first changed to **Draft** and is then automatically updated to **Approved**. The approved PO is registered as a new version. |
-| You send the new version of the PO to the vendor. | The new version is registered in the vendor collaboration interface, and the status is changed to **In External Review**. |
-| The vendor approves the new version of the PO. | The status is changed to **Confirmed**, either automatically, or when you receive the response from the vendor and then confirm the PO. |
+| The initial version of the PO is created in Supply Chain Management. | The status is *Draft*. |
+| The PO is submitted to the approval process. (The approval process is an internal process that the vendor isn't involved in.) | The status is changed from *Draft* to *In review* to *Approval* if the PO isn't rejected during the approval process. The approved PO is registered as a version. |
+| The PO is sent to the vendor. | The version is registered in the vendor collaboration interface, and the status is changed to *In external review*. |
+| You make some changes that the vendor requested, either manually or by using the **Process PO update** action on the response to update the PO. | The status is changed back to *Draft*. |
+| The PO is submitted to the approval process again. | The status is changed from *Draft* to *In review* to *Approval* if the PO isn't rejected during the approval process. Alternatively, the system can be configured so that specific field changes don't require re-approval. In this case, the status is first changed to *Draft* and is then automatically updated to *Approved*. The approved PO is registered as a new version. |
+| You send the new version of the PO to the vendor. | The new version is registered in the vendor collaboration interface, and the status is changed to *In external review*. |
+| The vendor approves the new version of the PO. | The status is changed to *Confirmed*, either automatically, or when you receive the response from the vendor and then confirm the PO. |
 
 ## Sharing information about consignment inventory
 
@@ -191,7 +191,7 @@ For a basic overview of support for the RFQ process, see [Requests for quotation
 ### Alternates, attachments, amendments, and returns
 
 - **Alternates** – On the header of an RFQ case, you can specify that alternates are allowed for non-catalog item lines. When alternates are enabled, vendors can add an alternate line for each requested line.
-- **Attachments** – Attachments can be added at both the header level and the line level of an RFQ case. Attachments can be classified as either internal or external. Internal attachments can be viewed only on the customer side, whereas vendors can view external attachments after they are sent.
+- **Attachments** – Attachments can be added at both the header level and the line level of an RFQ case. Attachments can be classified as either internal or external. Internal attachments can be viewed only on the customer side, whereas vendors can view external attachments after they're sent.
 
     Vendors can also add attachments on their bid reply. These attachments can be viewed on the customer side after a vendor submits the bid reply. Attachments that vendors add are always classified as external. To access an attachment that a vendor has submitted together with a bid, select **Bid attachments** or **Bid line attachments**.
 

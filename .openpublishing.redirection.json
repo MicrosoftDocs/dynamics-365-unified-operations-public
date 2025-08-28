@@ -1,61 +1,61 @@
 {
   "redirections": [
-    {   
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-development-environments.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv",
+      "redirect_document_id": "false"  
+    },    
+    {
       "source_path": "articles/fin-ops-core/fin-ops/sysadmin/user-security-report-technical-validation-faq.md",
       "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2319108",
       "redirect_document_id": "false"
-    }, 
-    {   
+    },
+    {
       "source_path": "articles/finance/localizations/india/apac-ind-audit-trail-edit-logs-accounting-software.md",
-      "redirect_url": "/dynamics365/ffinance/localizations/india/india-audit-trail-edit",
+      "redirect_url": "/dynamics365/finance/localizations/india/india-audit-trail-edit",
       "redirect_document_id": "false"
-    }, 
-    {   
+    },
+    {
       "source_path": "articles/human-resources/hr-infrastructure-merge.md",
       "redirect_url": "/dynamics365/finance/human-resources/hr-cust-migration",
-      "redirect_document_id": "false" 
-    },    
-    {   
-      "source_path": "articles/finance/localizations/apac/apac-aus-nzl-e-invoices.md",
-      "redirect_url": "/dynamics365/finance/localizations/gs-apac-aus-nzl-e-invoices",
-      "redirect_document_id": "false" 
+      "redirect_document_id": "false"
     },
-    {   
+    {
       "source_path": "articles/finance/localizations/denmark/e-invoicing-dk-get-started.md",
       "redirect_url": "/dynamics365/finance/localizations/denmark/gs-e-invoicing-dk-get-started",
-      "redirect_document_id": "false" 
+      "redirect_document_id": "false"
     },
-    {   
+    {
       "source_path": "articles/finance/localizations/global/e-invoicing-set-up-azure-resources-automation.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-azure-resources-automation",
-      "redirect_document_id": "false" 
+      "redirect_document_id": "false"
     },
-    {   
+    {
       "source_path": "articles/finance/localizations/indonesia/e-invoicing-id-get-started.md",
       "redirect_url": "/dynamics365/finance/localizations/indonesia/gs-e-invoicing-id-get-started",
-      "redirect_document_id": "false" 
+      "redirect_document_id": "false"
     },
-    {   
+    {
       "source_path": "articles/finance/localizations/italy/e-invoicing-ita-fatturapa-get-started.md",
       "redirect_url": "/dynamics365/finance/localizations/italy/gs-e-invoicing-ita-fatturapa-get-started",
-      "redirect_document_id": "false" 
+      "redirect_document_id": "false"
     },
-    {   
+    {
       "source_path": "articles/finance/localizations/mea/e-invoicing-sa-get-started.md",
       "redirect_url": "/dynamics365/finance/localizations/mea/gs-e-invoicing-sa-get-started",
-      "redirect_document_id": "false" 
+      "redirect_document_id": "false"
     },
-    {   
+    {
       "source_path": "articles/finance/localizations/mea/e-invoicing-sa-onboarding.md",
       "redirect_url": "/dynamics365/finance/localizations/mea/gs-e-invoicing-sa-onboarding",
-      "redirect_document_id": "false" 
+      "redirect_document_id": "false"
     },
-    {   
+    {
       "source_path": "articles/finance/localizations/poland/e-invoicing-pol-get-started.md",
       "redirect_url": "/dynamics365/finance/localizations/gs-poland/e-invoicing-pol-get-started",
-      "redirect_document_id": "false" 
+      "redirect_document_id": "false"
     },
-    {   
+    {
       "source_path": "articles/finance/localizations/global/e-invoicing-working-globalization-features.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-working-globalization-features",
       "redirect_document_id": "false"
@@ -28464,16 +28464,32 @@
       "source_path": "articles/commerce/dev-itpro/store-comm-android-extensibility.md",
       "redirect_url": "/dynamics365/commerce/dev-itpro/store-comm-android-ios-ext",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "articles/finance/localizations/norway/emea-fin-sales-tax-payment-report-finland.md",
       "redirect_url": "/dynamics365/finance/localizations/finland/emea-fin-sales-tax-payment-report-finland",
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/supply-chain/supply-chain-dev/message-processor.md",
+      "redirect_url": "/dynamics365/supply-chain/message-processor/message-processor",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/commerce/b2b/b2b2b-aka-b2b-indirect.md",
       "redirect_url": "/dynamics365/commerce/b2b/b2b-indirect",
       "redirect_document_id": false
-    }    
+    },
+    {
+      "source_path": "articles/supply-chain/master-planning/tasks/create-plan-site.md",
+      "redirect_url": "/dynamics365/supply-chain/master-planning/master-planning-home-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/transportation/tasks/set-up-location-directive-purchase-order-put-away.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/tasks/set-up-location-directive-purchase-order-put-away",
+      "redirect_document_id": false
+    }
   ]
+
 }

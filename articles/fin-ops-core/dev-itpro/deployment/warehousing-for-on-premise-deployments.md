@@ -4,14 +4,15 @@ description: Learn about the prerequisites for the warehousing app for on-premis
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 06/19/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global 
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.3
 ms.service: dynamics-365-op
+ms.custom:
+  - bap-template
+  - sfi-ropc-blocked
 ---
 
 # Configure the Warehousing app for on-premises deployments

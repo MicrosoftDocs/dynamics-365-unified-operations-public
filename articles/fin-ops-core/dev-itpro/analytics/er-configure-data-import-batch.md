@@ -12,6 +12,7 @@ ms.search.validFrom: 2022-01-01
 ms.search.form: ERSolutionTable, ERImportFormatSourceTable, ERWorkspace
 ms.dyn365.ops.version: Release 10.0.25
 ms.assetid: 
+ms.custom: sfi-image-nochange
 ---
 
 # Import data from manually selected files in batch mode

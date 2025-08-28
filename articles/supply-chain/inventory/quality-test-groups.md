@@ -127,5 +127,6 @@ To add a quantitative test to a test group, follow these steps.
 - [Quality management test variables](quality-management-processes.md)
 - [Quality associations](quality-management-processes.md)
 - [Batch attributes](../production-control/batch-attributes.md)
+- [Acceptance sampling](quality-acceptance-sampling.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

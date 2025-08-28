@@ -3,12 +3,12 @@ title: Manage deductions using the deduction workbench
 description: Learn how to use the deduction workbench to process customer payments that include deductions, including prerequisites.
 author: sherry-zheng
 ms.author: chuzheng
-ms.topic: how-to
-ms.date: 05/15/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: TAMDeduction
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+  - bap-template
 ---
 
 # Manage deductions using the deduction workbench
@@ -46,7 +46,7 @@ The system records all deduction events in a claim journal. Therefore, your syst
 
 To set up a new claim journal for deductions, follow these steps.
 
-1. Go to **General ledger \> Journal setup \> Journal names**.
+1. Go to **General ledger** \> **Journal setup** \> **Journal names**.
 1. Select **New**, and set the following fields for the new journal name:
 
     - **Name** – Enter a unique name for the claim journal.
@@ -54,7 +54,7 @@ To set up a new claim journal for deductions, follow these steps.
     - **Journal type** – Select *Daily*.
     - **Voucher series** – Assign an existing number sequence. Alternatively, create a new number sequence that has company scope, and assign it to the new journal name.
 
-1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
+1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Deductions** tab, on the **General** FastTab, set the **Claim journal name** field to the journal name that you just created.
 1. On the **Return order** FastTab, set the following fields:
 
@@ -77,7 +77,7 @@ When the system creates a claim journal for a new deduction, it also creates two
 
 To enable a single voucher to have multiple customer lines, follow these steps.
 
-1. Go to **General ledger \> Ledger setup \> General ledger parameters**.
+1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 1. On the **Ledger** tab, on the **General** FastTab, set the **Allow multiple transactions within one voucher** option to *Yes*.
 1. If you receive a warning message, select **Close** to accept the change.
 
@@ -85,7 +85,7 @@ To enable a single voucher to have multiple customer lines, follow these steps.
 
 The system requires that users specify a reason for each deduction that they enter directly on the deduction workbench, customer settlement, or customer page. The reason determines how the deduction is handled when it's approved.
 
-1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction reasons**.
+1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction reasons**.
 1. Select **New** to add a row to the grid, and then set the following fields for it:
 
     - **Claim reason** – Enter a unique name for the reason.
@@ -96,17 +96,17 @@ The system requires that users specify a reason for each deduction that they ent
         - *Quantity based* – Create a negative sales order or return order upon approval.
 
     - **Return reason code** – Select a return reason code to apply as the **Return reason code** value for the return order.
-    - **Type** – Select a deduction type. The **Deduction offset** value for the selected type will be used to set the **Deduction offset** field when a deduction or claim is created. Deduction types are defined on the **Deduction types** page (**Sales and marketing \> Trade allowances \> Deductions \> Deduction types**).
+    - **Type** – Select a deduction type. The **Deduction offset** value for the selected type will be used to set the **Deduction offset** field when a deduction or claim is created. Deduction types are defined on the **Deduction types** page (**Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction types**).
     - **Claim posting account** – This field is available only when the **Claim basis** field is set to *Price based*. When a price-based claim is approved, the system assigns the ledger account that you select here as the **Main account** value for the draft free text credit note.
 
 ### Set up the settle approved deductions periodic task
 
 For deductions that are created by using the **New deduction** command on the deduction workbench, customer settlement, or customer page, you can set up the *Settle approved deductions* periodic task to automatically match deductions and credits that have matching **Deduction ID** values and amounts.
 
-To schedule this task, go to **Sales marketing \> Periodic tasks \> Settle approved deductions**, and set up options, filters, and a schedule, just as for other types of periodic tasks.
+To schedule this task, go to **Sales marketing** \> **Periodic tasks** \> **Settle approved deductions**, and set up options, filters, and a schedule, just as for other types of periodic tasks.
 
 > [!NOTE]
-> If the **Automatic settlement** option is set to *Yes* on the **Settlement** tab of the **Accounts receivable parameters** page (**Account receivable \> Setup \> Accounts receivable parameters**), the *Settle approved deductions* periodic task won't do anything, because the credit will automatically be settled.
+> If the **Automatic settlement** option is set to *Yes* on the **Settlement** tab of the **Accounts receivable parameters** page (**Account receivable** \> **Setup** \> **Accounts receivable parameters**), the *Settle approved deductions* periodic task won't do anything, because the credit will automatically be settled.
 
 ## Create a deduction
 
@@ -114,7 +114,7 @@ To schedule this task, go to **Sales marketing \> Periodic tasks \> Settle appro
 
 To create a deduction journal entry, follow these steps.
 
-1. Go to **Accounts receivable \> Payments \> Customer payment journal**.
+1. Go to **Accounts receivable** \> **Payments** \> **Customer payment journal**.
 1. Select **New** to add a row to the grid.
 1. In the **Name** field for the new row, select the name of the journal.
 1. On the Action Pane, select **Lines**.
@@ -128,17 +128,17 @@ To create a deduction journal entry, follow these steps.
 1. In the **Type** field, select the deduction type.
 1. In the **Amount** field, enter the amount that is shown in the **Balance** field below the deduction list. This amount represents the amount that the customer deducted from the payment.
 1. Close the **Deduction** page. You're returned to the **Customer payments** page, which now shows a new line for the deduction.
-1. On the Action Pane, select **Validate \> Validate**. You should receive the following message: "Journal is OK."
+1. On the Action Pane, select **Validate** \> **Validate**. You should receive the following message: "Journal is OK."
 1. On the Action Pane, select **Post**.
 
 ### Create a deduction by using the deduction workbench
 
-The create a new deduction on the deduction workbench, follow these steps.
+To create a new deduction on the deduction workbench, follow these steps.
 
-1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
-1. On the Action Pane, select **Maintain \> New deduction**.
+1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
+1. On the Action Pane, select **Maintain** \> **New deduction**.
 
-    In the **New deduction** dialog box, the **Deduction ID** field is set based on the **Deduction ID** number sequence that is defined on the **Trade allowance management parameters** page (**Sales and marketing \> Setup \> Trade allowances \> Trade allowance management parameters**).
+    In the **New deduction** dialog box, the **Deduction ID** field is set based on the **Deduction ID** number sequence that is defined on the **Trade allowance management parameters** page (**Sales and marketing** \> **Setup** \> **Trade allowances** \> **Trade allowance management parameters**).
 
 1. Set the following fields:
 
@@ -163,21 +163,21 @@ The create a new deduction on the deduction workbench, follow these steps.
 
     A new deduction is created. If you set the **Create claim journal** option to *Yes*, the following transactions are posted:
 
-    - **Two new customer transactions** – One transaction offsets the amount of the claim against the original invoice. The other transaction registers a customer's debt to the amount of the claim, because the claim hasn't yet been approved. The original invoice transaction and the offsetting claim transaction will automatically be marked for settlement when you attach the invoice by selecting **Maintain \> Attach invoice** on the Action Pane.
+    - **Two new customer transactions** – One transaction offsets the amount of the claim against the original invoice. The other transaction registers a customer's debt to the amount of the claim, because the claim hasn't yet been approved. The original invoice transaction and the offsetting claim transaction will automatically be marked for settlement when you attach the invoice by selecting **Maintain** \> **Attach invoice** on the Action Pane.
     - **Two offsetting transactions** – These transactions are posted to the **Deduction offset** ledger account.
     - **Claim journal** – To view the claim journal for each deduction that is shown on the deduction workbench, select the **References** tab. The claim journal is shown in the **Journal batch number** field. You can also view the claim journal on the **Deduction events** tab. There, it will have an **Update type** value of *Match*.
 
 ### Create a deduction from a customer settlement
 
-The process of creating a deduction from a customer settlement resembles the process of creating a deduction via the deduction workbench. However, the customer and invoice currency are automatically set, and the invoice is attached. You don't have to select **Maintain \> Attach invoice** on the Action Pane when you create a claim or deduction via the customer settlement page.
+The process of creating a deduction from a customer settlement resembles the process of creating a deduction via the deduction workbench. However, the customer and invoice currency are automatically set, and the invoice is attached. You don't have to select **Maintain** \> **Attach invoice** on the Action Pane when you create a claim or deduction via the customer settlement page.
 
-1. Go to **Accounts receivable \> Customers \> All customers**.
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select the customer to create a deduction for.
 1. On the Action Pane, on the **Collect** tab, in the **Settle** group, select **Settle transactions**.
 1. In the **Setting transactions** dialog box, on the **Overview** tab, select the invoice to create the deduction against.
-1. On the toolbar, select **Deductions \> New deduction**.
+1. On the toolbar, select **Deductions** \> **New deduction**.
 
-    In the **New deduction** dialog box, the **Deduction ID** field is set based on the **Deduction ID** number sequence that is defined on the **Trade allowance management parameters** page (**Sales and marketing \> Setup \> Trade allowances \> Trade allowance management parameters**). The **Customer account** field is set to the customer account that the deduction applies to.
+    In the **New deduction** dialog box, the **Deduction ID** field is set based on the **Deduction ID** number sequence that is defined on the **Trade allowance management parameters** page (**Sales and marketing** \> **Setup** \> **Trade allowances** \> **Trade allowance management parameters**). The **Customer account** field is set to the customer account that the deduction applies to.
 
 1. Set the following fields:
 
@@ -201,7 +201,7 @@ The process of creating a deduction from a customer settlement resembles the pro
 
     A new deduction is created. If you set the **Create claim journal** option to *Yes*, the following transactions are posted:
 
-    - **Two new customer transactions** – One transaction offsets the amount of the claim against the original invoice. The other transaction registers a customer's debt to the amount of the claim, because the claim hasn't yet been approved. The original invoice transaction and the offsetting claim transaction will automatically be marked for settlement when you attach the invoice by selecting **Maintain \> Attach invoice** on the Action Pane.
+    - **Two new customer transactions** – One transaction offsets the amount of the claim against the original invoice. The other transaction registers a customer's debt to the amount of the claim, because the claim hasn't yet been approved. The original invoice transaction and the offsetting claim transaction will automatically be marked for settlement when you attach the invoice by selecting **Maintain** \> **Attach invoice** on the Action Pane.
     - **Two offsetting transactions** – These transactions are posted to the **Deduction offset** ledger account.
     - **Claim journal** – To view the claim journal for each deduction that is shown on the deduction workbench, select the **References** tab. The claim journal is shown in the **Journal batch number** field. You can also view the claim journal on the **Deduction events** tab. There, it will have an **Update type** value of *Match*.
 
@@ -211,11 +211,11 @@ The process of creating a deduction from a customer settlement resembles the pro
 
 The process of creating a deduction from a customer page resembles the process of creating a deduction via the deduction workbench. However, the customer is automatically set.
 
-1. Go to **Accounts receivable \> Customers \> All customers**.
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select the customer to create a deduction for.
 1. On the Action Pane, on the **Collect** tab, in the **Deductions** group, select **Create deductions**.
 
-    In the **New deduction** dialog box, the **Deduction ID** field is set based on the **Deduction ID** number sequence that is defined on the **Trade allowance management parameters** page (**Sales and marketing \> Setup \> Trade allowances \> Trade allowance management parameters**). The **Customer account** field is set to the customer account that the deduction applies to.
+    In the **New deduction** dialog box, the **Deduction ID** field is set based on the **Deduction ID** number sequence that is defined on the **Trade allowance management parameters** page (**Sales and marketing** \> **Setup** \> **Trade allowances** \> **Trade allowance management parameters**). The **Customer account** field is set to the customer account that the deduction applies to.
 
 1. Set the following fields:
 
@@ -239,7 +239,7 @@ The process of creating a deduction from a customer page resembles the process o
 
     A new deduction is created. If you set the **Create claim journal** option to *Yes*, the following transactions are posted:
 
-    - **Two new customer transactions** – One transaction offsets the amount of the claim against the original invoice. The other transaction registers a customer's debt to the amount of the claim, because the claim hasn't yet been approved. The original invoice transaction and the offsetting claim transaction will automatically be marked for settlement when you attach the invoice by selecting **Maintain \> Attach invoice** on the Action Pane.
+    - **Two new customer transactions** – One transaction offsets the amount of the claim against the original invoice. The other transaction registers a customer's debt to the amount of the claim, because the claim hasn't yet been approved. The original invoice transaction and the offsetting claim transaction will automatically be marked for settlement when you attach the invoice by selecting **Maintain** \> **Attach invoice** on the Action Pane.
     - **Two offsetting transactions** – These transactions are posted to the **Deduction offset** ledger account.
     - **Claim journal** – To view the claim journal for each deduction that is shown on the deduction workbench, select the **References** tab. The claim journal is shown in the **Journal batch number** field. You can also view the claim journal on the **Deduction events** tab. There, it will have an **Update type** value of *Match*.
 
@@ -249,13 +249,13 @@ After an approved rebate exists for a customer, you can create a credit note on 
 
 To create a credit note, follow these steps.
 
-1. Go to **Sales and marketing \> Customers \> All customers**.
+1. Go to **Sales and marketing** \> **Customers** \> **All customers**.
 1. Select the customer.
 1. On the Action Pane, on the **Collect** tab, in the **Settle** group, select **Settle transactions**.
 1. In the **Settle transactions** dialog box, select the transaction that the rebate was applied to.
 1. On the toolbar, on the **Functions** menu, select the type of rebate program that applies.
 1. On the **Rebate** page, on the **Overview** tab, select the **Mark** checkbox next to the relevant rebate ID.
-1. On the Action Pane, select **Functions \> Create credit note**.
+1. On the Action Pane, select **Functions** \> **Create credit note**.
 
 ## Process a deduction on the deduction workbench
 
@@ -267,21 +267,21 @@ Depending on how you want to process a deduction, complete one or more of the pr
 
 To match a deduction to a credit, follow these steps.
 
-1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
+1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
 1. In the **Open transactions** section, select the **Mark** checkbox for the credit to match to the deduction. If multiple credits are listed, you can select more than one credit to match to the deduction. If you want the system to automatically select credits that match the amount of the deduction, on the toolbar, select an appropriate option on **Select deduction amount** menu.
-1. On the Action Pane, select **Maintain \> Match**. The system matches the deduction to the credit. If a balance remains in the deduction, it's shown in the **Remaining amount** field on the **Deductions** tab.
+1. On the Action Pane, select **Maintain** \> **Match**. The system matches the deduction to the credit. If a balance remains in the deduction, it's shown in the **Remaining amount** field on the **Deductions** tab.
 
     > [!NOTE]
-    > For deductions that were created by using the **New deduction** command on the deduction workbench, customer settlement, or customer page, the **Maintain \> Match** command is available only if the **Claim status** field is set to *Accepted*. This command can be used to manually match the price-based or quantity-based transaction to the associated credit in the **Open transactions** section. This credit is created either when the deduction is approved (by using the **Maintain \> Approve deduction** command), or when it's attached to an existing credit as described in the [Credits created outside the approve deduction process](#credits-outside-approval) section later in this article. The *Settle approved deductions* periodic task (**Sales marketing \> Periodic tasks \> Settle approved deductions**) can also be used to automatically match deductions and credits that have matching **Deduction ID** values and amounts.
+    > For deductions that were created by using the **New deduction** command on the deduction workbench, customer settlement, or customer page, the **Maintain** \> **Match** command is available only if the **Claim status** field is set to *Accepted*. This command can be used to manually match the price-based or quantity-based transaction to the associated credit in the **Open transactions** section. This credit is created either when the deduction is approved (by using the **Maintain** \> **Approve deduction** command), or when it's attached to an existing credit as described in the [Credits created outside the approve deduction process](#credits-outside-approval) section later in this article. The *Settle approved deductions* periodic task (**Sales marketing** \> **Periodic tasks** \> **Settle approved deductions**) can also be used to automatically match deductions and credits that have matching **Deduction ID** values and amounts.
 
 ### Split a deduction
 
 To split a deduction, follow these steps.
 
-1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
+1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
-1. On the Action Pane, select **Maintain \> Split**.
+1. On the Action Pane, select **Maintain** \> **Split**.
 1. In the **Split** dialog box, in the **Split amount** field, enter the amount to split from the main deduction. Then select **OK**.
 1. On the **Deductions** tab, notice that a new record appears for the split amount. The original deduction record contains the remainder of the deduction balance. You can now manage the two parts of the original rebate separately.
 1. Select the original deduction record, and then select the **References** tab. The **Split amount** field shows the amount that was split off from the original amount.
@@ -292,9 +292,9 @@ You can attach an invoice to a deduction if the deduction was created by using t
 
 To attach an invoice to a deduction, follow these steps.
 
-1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
+1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
-1. On the Action Pane, select **Maintain \> Attach invoice**.
+1. On the Action Pane, select **Maintain** \> **Attach invoice**.
 1. In the **Attach invoice** dialog box, select an invoice, and then select **OK**.
 1. In the **Settle transactions** dialog box, follow one of these steps, depending on whether a claim journal was posted when the deduction was created:
 
@@ -307,9 +307,9 @@ You can detach an invoice from a deduction if the deduction was created by using
 
 To detach an invoice, follow these steps.
 
-1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
+1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
-1. On the Action Pane, select **Maintain \> Detach invoice**.
+1. On the Action Pane, select **Maintain** \> **Detach invoice**.
 
 ### Approve a deduction
 
@@ -317,9 +317,9 @@ You can approve deductions that were created by using the **New deduction** comm
 
 To approve a deduction, follow these steps.
 
-1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
+1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
-1. On the Action Pane, select **Maintain \> Approve deduction**.
+1. On the Action Pane, select **Maintain** \> **Approve deduction**.
 1. In the **Approve deduction** dialog box, edit or add information to the **Note** value as required.
 1. If the deduction is price-based, and an invoice hasn't been attached to it, select an item sales tax group. Typically, the tax item group is set on the invoice. Therefore, the tax item code must be specified when it isn't attached to an invoice.
 1. Select **OK**.
@@ -352,8 +352,8 @@ To approve a deduction, follow these steps.
 
 After the credit is invoiced, it appears in the **Open transactions** section of the deduction workbench against the applicable **Deduction ID** value, and its **Claim type** field is set to *Other credits*. The credit will be available until it's settled with the deduction in one of the following ways:
 
-- You manually settle it by selecting **Maintain \> Match** on the Action Pane.
-- It's automatically settled by the *Settle approved claims* periodic job (**Sales and marketing \> Periodic tasks \> Settle approved claims**).
+- You manually settle it by selecting **Maintain** \> **Match** on the Action Pane.
+- It's automatically settled by the *Settle approved claims* periodic job (**Sales and marketing** \> **Periodic tasks** \> **Settle approved claims**).
 - It's automatically settled because the **Automatic settlement** option on the **Settlement** tab of the **Accounts receivable parameters** page is set to *Yes*.
 
 To view the credit that is created when the deduction is approved, you can also use the **Open credit** button in the **Open transactions** section of the deduction workbench.
@@ -369,9 +369,9 @@ You can create a return order for deductions that were created by using the **Ne
 
 To create a return order, follow these steps.
 
-1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
+1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
-1. On the Action Pane, select **Maintain \> Create return order**.
+1. On the Action Pane, select **Maintain** \> **Create return order**.
 1. In the **Approve deduction** dialog box, edit or add information to the existing **Notes** value as required, and then select **OK**.
 1. In the **Copy orders** dialog box, on the **Invoices** FastTab, the **Headers** section shows sales invoices where the **Invoice account** value matches the deduction's customer account. Select an applicable sales invoice.
 1. The **Lines** section shows lines from the selected sales invoice. Select the **Select** checkbox for each line you want to copy. Alternatively, in the **Headers** section, select the **Select all** checkbox for the sales order to select all its lines.
@@ -391,9 +391,9 @@ To create a return order, follow these steps.
 
 To deny a deduction, follow these steps.
 
-1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
+1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
-1. On the Action Pane, select **Maintain \> Deny**.
+1. On the Action Pane, select **Maintain** \> **Deny**.
 1. In the **Deny** dialog box, select the reason code for the denial, and then select **OK**.
 1. In the **Show** field below the Action Pane, select *Closed*.
 
@@ -421,9 +421,9 @@ To reverse a denial, follow these steps.
 
 To write off a deduction, follow these steps.
 
-1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
+1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
-1. On the Action Pane, select **Maintain \> Write-off**.
+1. On the Action Pane, select **Maintain** \> **Write-off**.
 1. In the **Write-off** dialog box, select the reason code for the write-off, and then select **OK**.
 1. In the **Show** field, select *Closed*.
 
@@ -466,7 +466,7 @@ After a credit is invoiced, and the deduction is approved, the credit appears in
 
 To attach a free text invoice to a deduction, follow these steps.
 
-1. Go to **Accounts receivable \> Invoices \> All free text invoices**.
+1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. Select the applicable invoice.
 1. On the Action Pane, on the **Invoice** tab, select **Attach credit to deduction**. This button is available only if the free text invoice's **Deduction ID** field is blank. A blank field indicates that the free text invoice isn't already attached to a deduction.
 1. On the **Attach credit to deduction** page, you can select *one* deduction. Only open *price-based* deductions are available for selection.
@@ -476,7 +476,7 @@ To attach a free text invoice to a deduction, follow these steps.
 
 To attach a return order to a deduction, follow these steps.
 
-1. Go to **Accounts receivable \> Orders \> All return orders**.
+1. Go to **Accounts receivable** \> **Orders** \> **All return orders**.
 1. Select the applicable received or open return merchandise authorization (RMA) number.
 1. On the Action Pane, on the **Return order** tab, select **Attach credit to deduction**. This button is available only if the return order's **Deduction ID** field is blank. A blank field indicates that the return order isn't already attached to a deduction.
 1. On the **Attach credit to deduction** page, you can select *one* deduction. Only open *quantity-based* deductions are available for selection.
@@ -486,7 +486,7 @@ To attach a return order to a deduction, follow these steps.
 
 To attach a sales order to a deduction, follow these steps.
 
-1. Go to **Accounts receivable \> Orders \> All sales orders**.
+1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Select the applicable open, delivered, or invoiced sales order.
 1. On the Action Pane, on the **Invoice** tab, select **Attach credit to deduction**. This button is available only if the sales order's **Deduction ID** field is blank. A blank field indicates that the sales order isn't already attached to a deduction.
 1. On the **Attach deduction** page, you can select *one* deduction. Only open *quantity-based* deductions are available for selection.
@@ -513,9 +513,9 @@ This section describes how you can attach a deduction to a credit from the deduc
 
 To attach a deduction to a free text, return order, or sales order credit, follow these steps.
 
-1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
+1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the applicable open deduction.
-1. On the Action Pane, select **Maintain \> Attach deduction to credit**. This button is available only if the **Claim status** field is set to *Open*.
+1. On the Action Pane, select **Maintain** \> **Attach deduction to credit**. This button is available only if the **Claim status** field is set to *Open*.
 1. On the **Attach credit** page, you can select *one* credit. The type of credits that is shown depends on the deduction's **Claim basis** value:
 
     - *Price based* – The page shows free text invoices for the customer account where the **Deduction ID** field is blank. Customer requisitions are also shown because the free text invoice might be unposted. Therefore, it might not have a number that can be referenced.
@@ -547,20 +547,20 @@ This feature is useful if you use trade allowances. For more information about t
 
 First, you must set up a template that can be used to create the new trade allowance agreement. To set up a template, follow these steps.
 
-1. Go to **Sales and marketing \> Trade allowances \> Templates**.
+1. Go to **Sales and marketing** \> **Trade allowances** \> **Templates**.
 1. On the Action Pane, select **New**.
 1. In the fields, enter the information that should appear in the agreements that are created from the template.
 1. On the **Customers** FastTab, in the **Hierarchy** field, select a hierarchy level.
 1. In the hierarchy list, select the customer that has an unmatched deduction, and then select the right arrow button (**\>**). The customer is added to the **Trade allowance agreement customers** list.
 1. Set the remaining fields as you require, and then close the page.
-1. Go to **Sales and marketing \> Setup \> Trade allowance \> Trade allowance management parameters**.
+1. Go to **Sales and marketing** \> **Setup** \> **Trade allowance** \> **Trade allowance management parameters**.
 1. On the **Overview** tab, in the **One-time promotion template** field, select the name of the template to use to create one-time promotions.
 
 Next, you can create a one-time promotion on the deduction workbench. To create a one-time promotion, follow these steps.
 
-1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
+1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox next to the deduction to process.
-1. On the Action Pane, select **Maintain \> Settle deduction as one-time promotion**.
+1. On the Action Pane, select **Maintain** \> **Settle deduction as one-time promotion**.
 1. In the **One-time promotion** dialog box, follow these steps to associate the deduction with one or more funds:
 
     1. Select **New**, and then, in the **Fund ID** field, select a fund ID. Repeat this step to add as many funds as you require.
@@ -574,7 +574,7 @@ If you must make the same change to multiple deductions, you can select those de
 
 To do a mass update, follow these steps.
 
-1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
+1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. In the **Show** field below the Action Pane, select the type of deductions to view.
-1. Select the checkbox next to each deduction that you want to update. Then, on the Action Pane, select **Maintain \> Mass update**.
+1. Select the checkbox next to each deduction that you want to update. Then, on the Action Pane, select **Maintain** \> **Mass update**.
 1. The **Mass update** dialog box shows the selected deductions. Update the fields as you require, and then select **OK** to accept the changes.

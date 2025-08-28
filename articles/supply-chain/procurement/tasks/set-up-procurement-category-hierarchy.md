@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 07/31/2024
+ms.date: 08/13/2025
 ms.custom: 
   - bap-template
 ---
@@ -24,7 +24,7 @@ This procedure shows you how to create new nodes in a procurement category hiera
 3. On the Action Pane, select **New category node**. The system selects the top node by default.
 4. In the **Name** field, type a value.
 5. In the **Description** field, type a value.
-6. In the **Friendly name** field, type a value. The friendly name is optional. It is displayed in category lookups together with the category name.  
+6. In the **Friendly name** field, type a value. The friendly name is optional. It's displayed in category lookups together with the category name.  
 7. Select **Save**.
 
 ## Add products to your new procurement category

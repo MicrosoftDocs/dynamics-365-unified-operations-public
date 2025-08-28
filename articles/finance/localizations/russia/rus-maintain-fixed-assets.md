@@ -1,6 +1,6 @@
 ---
 title: Maintain fixed assets
-description: Learn how to inactivate, reactivate, and update a fixed asset in Microsoft Dynamics 365 Finance in Russia, including a process for deactivating fixed assets.
+description: Learn how to deactivate, reactivate, and update a fixed asset in Microsoft Dynamics 365 Finance in Russia, including a process for deactivating fixed assets.
 author: evgenypopov
 ms.author: evgenypopov
 ms.topic: how-to
@@ -17,14 +17,14 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../../includes/banner.md)]
 
 If a fixed asset is closed down or inactive for more than three months, or if refurbishment of the asset is conducted for more than 12 months, calculation of depreciation is suspended. It resumes when the fixed asset is put back into operation.
-For example, a fixed asset may be inactivated in the case of capital improvements.
+For example, a fixed asset may be deactivated in the case of capital improvements.
 "Capital improvements" is a special asset category that includes capital renovations, improvements, technical updates, additional construction, and the acquisition of additional equipment for a fixed asset. When you update capital improvements, calculated depreciation isn't revalued. However, the depreciated cost and service life of the fixed asset are changed.
 
 
-## Temporarily inactivate a fixed asset
+## Temporarily deactivate a fixed asset
 
 1. Select **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
-2. Select the fixed asset to temporarily inactivate. The status of the asset is currently **In operation**.
+2. Select the fixed asset to temporarily deactivate. The status of the asset is currently **In operation**.
 3. On the Action Pane, on the **Fixed asset** tab, in the **History** group, select **Temporary closing-down** to open the **Temporary closing-down** page.
 4. In the **Start date** field, select the inactivation date, and then close the page. The status of the asset is updated to **Temporary closing-down**.
 

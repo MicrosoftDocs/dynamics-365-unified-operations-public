@@ -14,13 +14,14 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: ajitchandran
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
+ms.custom:
+  - sfi-image-nochange
 
 ---
 

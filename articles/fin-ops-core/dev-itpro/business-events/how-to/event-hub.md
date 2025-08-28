@@ -5,13 +5,15 @@ author: Sunil-Garg
 ms.author: sunilg
 ms.topic: article
 ms.date: 08/13/2019
-ms.custom: 
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: Platform update 28
 # ms.search.form: [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 2019-07-31 
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
 # Business events and Azure Event Hubs

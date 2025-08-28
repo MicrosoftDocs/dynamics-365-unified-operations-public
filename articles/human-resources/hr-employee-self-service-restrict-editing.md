@@ -20,6 +20,7 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
+ms.custom: sfi-image-nochange
 ---
 
 # Restrict editing of personal information

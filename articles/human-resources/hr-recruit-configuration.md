@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Configuration in the HR Recruiting app (preview)
+title: Configuration in the HR Recruiting app 
 description: This article explains how to configure the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/01/2024
+ms.date: 08/11/2025
 ms.topic: article
 # optional metadata
 
@@ -23,13 +23,10 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Configuration in the HR Recruiting app (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Configuration in the HR Recruiting app 
 
 This article explains how to configure the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Set up an email account
 

@@ -9,8 +9,9 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.custom: 
-  - bap-template 
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 # Configure a development environment (.env) file
 

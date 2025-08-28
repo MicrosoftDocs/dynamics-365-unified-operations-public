@@ -2,7 +2,7 @@
 title: Set up and manage archive data in finance and operations apps
 description: Learn about how to set up and manage archive data in finance and operations apps, including an overview on preparing environments.
 author: pnghub
-ms.author: gned
+ms.author: priysharma
 ms.topic: how-to
 ms.date: 06/11/2024
 ms.custom:
@@ -110,7 +110,7 @@ You can view the detailed progress log for each archive job by selecting **View 
 | Initiating long term retention | The long-term retention job is activated. |
 | Initial sync for \<*tablename*\> in progress \[x of y records synced\] |Initial synchronization to the Dataverse long term retention is in progress. |
 | Initial sync for \<*tablename*\> completed | Initial synchronization to the Dataverse long term retention is completed. |
-| Marking in progress \[x of y records of \<*tablename*\> marked\] | The process is marking records in the finance and operations live application table for archiving, and the equivalent records in the Dataverse long term retention are being updated as retained. |
+| Retention in progress \[x of y records of \<*tablename*\> marked\] | The process is marking records in the finance and operations live application table for archiving, and the equivalent records in the Dataverse long term retention are being updated as retained. |
 | Reconciliation in progress | <p>Reconciliation is in progress to verify that the records that are marked as retained in Dataverse long term retention match the records that are marked for archiving in the finance and operations live application tables.|
 | Reconciliation completed | Reconciliation for all finance entities is completed. |
 | Pending move to history | The move to history process is waiting to begin. |

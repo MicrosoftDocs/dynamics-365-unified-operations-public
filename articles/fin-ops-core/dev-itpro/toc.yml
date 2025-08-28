@@ -15,14 +15,14 @@ items:
         items:
         - name: What's new or changed in Platform updates home page
           href: ../fin-ops/get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.45 (September 2025)
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-45.md
         - name: Platform updates for version 10.0.44 (April 2025)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-44.md
         - name: Platform updates for version 10.0.43 (January 2025)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-43.md
         - name: Platform updates for version 10.0.42 (December 2024)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-42.md
-        - name: Platform updates for version 10.0.41 (September 2024)
-          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-41.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -501,6 +501,8 @@ items:
             href: get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
           - name: Authentication in on-premises environments
             href: deployment/authentication-onprem.md
+          - name: Software lifecycle policy - On-premises
+            href: migration-upgrade/on-prem-version-update-policy.md
         - name: Set up and deploy on-premises environments
           items: 
           - name: Set up on-premises projects in LCS
@@ -551,6 +553,8 @@ items:
             href: deployment/onprem-remove-reinstall-AOS-node.md
           - name: Reuse the same AD FS instance for multiple environments
             href: deployment/onprem-reuseadfs.md
+          - name: Update Service Fabric clusters for Microsoft Dynamics 365 Finance + Operations (on-premises) environments
+            href: deployment/onprem-update-sfcluster.md
           - name: Upgrade Windows Server on your on-premises environments
             href: deployment/onprem-upgrade-os.md
           - name: Upgrade or replace the SQL Server instance of on-premises environments
@@ -1211,8 +1215,6 @@ items:
         href: power-platform/environment-lifecycle-core-concepts.md
       - name: Power Platform integration scenarios
         items: 
-        - name: Connect finance and operations apps with a new Microsoft Dataverse instance
-          href: power-platform/environment-lifecycle-connect-finops-new-dv.md
         - name: Connect finance and operations apps with an existing Microsoft Dataverse instance
           href: power-platform/environment-lifecycle-connect-finops-existing-dv.md
         - name: Dual-write setup from Lifecycle Services
@@ -1225,7 +1227,7 @@ items:
           href: power-platform/environment-lifecycle-change-env-type-dv.md
         - name: Database and environment movements when Power Platform Integration is enabled
           href: power-platform/environment-lifecycle-database-movements.md
-        - name: Setup developer cloud-hosted environments with Power Platform Integration
+        - name: Set up developer cloud-hosted environments with Power Platform Integration
           href: power-platform/environment-lifecycle-development-environments.md
       - name: Authentication and authorization
         href: power-platform/authentication-and-authorization.md
@@ -1873,6 +1875,8 @@ items:
           items:
             - name: User security governance overview
               href: ../fin-ops/sysadmin/security-gov-overview.md
+            - name: License usage summary report (preview)
+              href: ../fin-ops/sysadmin/security-gov-license-usage-summary.md
             - name: Set up security categories
               href: ../fin-ops/sysadmin/security-category.md
             - name: Import security categories

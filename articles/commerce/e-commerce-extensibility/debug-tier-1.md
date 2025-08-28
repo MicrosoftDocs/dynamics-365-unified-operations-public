@@ -9,8 +9,9 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Configure an e-commerce development environment against a Commerce cloud environment

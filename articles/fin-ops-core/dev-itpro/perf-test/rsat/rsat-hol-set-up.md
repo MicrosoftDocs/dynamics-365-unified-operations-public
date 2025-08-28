@@ -11,6 +11,7 @@ ms.search.region: Global
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ROBOTS: NOINDEX, NOFOLLOW
+ms.custom: sfi-image-nochange
 ---
 
 # Set up and install Regression suite automation tool tutorial

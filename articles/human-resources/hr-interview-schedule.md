@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Set up the Interview schedule feature in the Dynamics 365 Human Resources Recruiting add-on (preview)
+title: Set up the Interview schedule feature in the Dynamics 365 Human Resources Recruiting add-on 
 description: Learn about the Interview schedule feature in the Microsoft Dynamics 365 Human Resources Recruiting add-on.
 author: twheeloc
-ms.date: 04/14/2025
+ms.date: 08/18/2025
 ms.topic: how-to
 # optional metadata
 
@@ -23,13 +23,9 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Set up the Interview schedule feature in the Dynamics 365 Human Resources Recruiting add-on (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Set up the Interview schedule feature in the Dynamics 365 Human Resources Recruiting add-on 
 
 This article describes the **Interview schedule** feature in Microsoft Dynamics 365 Human Resources Recruiting add-on.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Currently, customers must manually coordinate interview times among various parties, including candidates, hiring managers, and interviewers. This process is time consuming and prone to errors. Therefore, it can lead to scheduling conflicts, missed opportunities, and delays in the hiring process. Additionally, a poor candidate experience can negatively affect the employer's brand and discourage top talent from pursuing opportunities with the company.
 

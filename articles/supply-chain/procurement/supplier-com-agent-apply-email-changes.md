@@ -52,9 +52,6 @@ The Supplier Communications Agent must be configured to monitor a specific email
 1. Select the mailbox that the agent should monitor. The dropdown menu should show all mailboxes that the sign-in user has access to. If the mailbox that you're looking for isn't in the list, follow the steps in [Synchronize mailboxes with Dataverse](./supplier-com-agent-setup.md#synchronize-mailboxes-with-dataverse).
 1. Select **Activate**.
 
-    > [!TIP]
-    > The "Enable email access" warning message that you receive is informational and doesn't prevent you from activating the agent.
-
 ## Review and accept changes suggested by the agent
 
 The agent detects changes in the following fields:
