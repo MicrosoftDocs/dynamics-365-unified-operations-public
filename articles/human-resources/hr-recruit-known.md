@@ -45,9 +45,9 @@ The following is a list of known issues and limitations for the HR Recruiting ap
 
 ### Set up the HR recruiting app in version 10.0.44 
 
-In Dynamics 365 finance and operations environment, version 10.0.44, some functionalities may not be available. There are additional steps required only for version 10.0.44. These steps needs to be reverted for version 10.0.45. 
+In Dynamics 365 finance and operations environment version 10.0.44, some functionality may not be available. There are additional steps required for customers using Dynamics 365 finance version 10.0.44. These steps needs to be reverted for version 10.0.45. 
 
-To enable the **Publish candidate to finance and operations - V10.0.44 flow, follow these steps. 
+To enable the **Publish candidate to finance and operations - V10.0.44** flow, follow these steps: 
 1. Sign in to Power Apps.
 2. Select the environment where you installed the Recruiting add-on app.
 3. In the left pane, select **Solutions**.
@@ -60,7 +60,7 @@ To enable the **Publish candidate to finance and operations - V10.0.44 flow, fol
 > The **Publish candidate to finance and operaitons - V10044** should be disabled when using Dynamics 365 finance and operations version 10.0.45. 
 
 ### Permissions 
-The **Recruiting application** role is missing some required permissions. 
+The **Recruiting application** role is missing some permissions needed for the HR recruiting app. 
 
 To add permissions to **Recruiting application** role, follow these steps:   
 1. Go to **System administration** > **Security parameters**.
