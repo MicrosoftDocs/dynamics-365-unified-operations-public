@@ -4,7 +4,7 @@ description: Learn about features that have been removed, deprecated, or that ar
 author: kamaybac
 ms.author: kamaybac
 ms.topic: article
-ms.date: 01/27/2025
+ms.date: 08/28/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -23,6 +23,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
+
+## Features removed or deprecated in the Supply Chain Management 10.0.45 release
+
+### Inventory On-hand mobile app (preview)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Microsoft has decided not to continue development and support for this preview feature. |
+| **Replaced by another feature?** | Yes |
+| **Product areas affected** | Supply Chain Management – Inventory management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Removed. The *Inventory On-hand mobile app* preview (previously available on the Power Platform Admin Center) was never made generally available. It's now provided as a sample app that you can download from the [scmsamples-InventoryOnHand repository on GitHub](https://github.com/microsoft/scmsamples-InventoryOnHand) and customize as needed. Learn more in [Inventory On-hand mobile app](../inventory/inventory-onhand-mobile-app.md). |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.44 release
 
