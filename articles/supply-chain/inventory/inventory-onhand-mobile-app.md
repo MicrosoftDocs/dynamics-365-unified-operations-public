@@ -89,7 +89,7 @@ If you don't see any features in the app, you probably lack the permissions requ
 
 ### Can I customize and extend the app?
 
-Yes. You can customize and extend the app in downloaded repository.
+Yes. You can customize and extend the app by working with the source code [provided on GitHub](https://github.com/microsoft/scmsamples-InventoryOnHand).
 
 ### Does the app support offline mode?
 
