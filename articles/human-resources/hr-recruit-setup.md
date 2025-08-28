@@ -149,34 +149,4 @@ To activate connections and flows for the Recruiting app, follow these steps.
 |Create intermediate table candidate slots	| Monitors the slots that are sent to candidates.|
 |Email lots to candidate and send to plugin|	Send email with options to candidates.|
 
-## Activate the careers site
 
-**Prerequisite:** The Recruiting add-on app must be installed in Dataverse.
-
-To activate the careers site, follow these steps.
-
-1. Sign in to [Power Pages](https://make.powerpages.microsoft.com/) as an admin.
-2. Select your environment.
-3. Select the **Inactive sites** tab.
-> [!Note]
-> If you can't view the inactive site, create a temporary site using any available template. After creating a temporary site, you'll be able to access the inactive site.”
- 
-4. Select **Reactivate** for **Recruiting-careers site** to activate the site.
-5. Provide a name and web address for the website, and then select **Done**.
-
-    > [!NOTE]
-    > To ensure that future updates can be installed, don't modify the input of the **Reactivated website** field.
-6. Click on **Edit**, **Set up** > **Cloud flows**.
-7. An error message is displayed: "One or more cloud flows are not registered for your site. Click the icon for each flow to register them."
-8. Click the icon to register both the flows.
-9. Click **Pages** from left pane.
-10. In other pages, you see duplicate **Screening questions**. Delete one of them.
-11. Click **Sync**. 
-
-
-Site activation might take up to 10 minutes. After the site activated, it's available on the **Active sites** tab.
-
-For more information, see [Reactivate sites](/power-pages/admin/reactivate-website).
-
-> [!IMPORTANT]
-> After your site is activated, confirm that the version number is at least 9.6. If it's earlier than 9.6, contact us. To find the version, execute {siteUrl}/_services/about in the browser.
