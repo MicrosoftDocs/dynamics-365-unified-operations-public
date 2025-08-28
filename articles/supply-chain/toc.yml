@@ -2279,9 +2279,9 @@
           href: unified-pricing-management/upm-price-attribute-groups.md
         - name: Customer and product price attribute groups
           href: unified-pricing-management/upm-customer-product-attribute-groups.md
-        - name: Add custom pricing attributes for POS
+        - name: Add custom pricing attributes for Dynamics 365 Commerce Point of Sale (preview)
           href: unified-pricing-management/upm-support-custom-attributes.md
-        - name: Example custom request handler code
+        - name: Example custom request handler code (preview)
           href: unified-pricing-management/upm-custom-request-handler-example.md
       - name: Price groups
         items:

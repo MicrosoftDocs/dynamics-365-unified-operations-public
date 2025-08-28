@@ -820,9 +820,9 @@
             href: ../supply-chain/unified-pricing-management/upm-price-attribute-groups.md?context=/dynamics365/context/commerce
           - name: Customer and product price attribute groups
             href: ../supply-chain/unified-pricing-management/upm-customer-product-attribute-groups.md?context=/dynamics365/context/commerce
-          - name: Add custom pricing attributes for POS
+          - name: Add custom pricing attributes for Dynamics 365 Commerce Point of Sale (preview)
             href: ../supply-chain/unified-pricing-management/upm-support-custom-attributes.md?context=/dynamics365/context/commerce
-          - name: Example custom request handler code
+          - name: Example custom request handler code (preview)
             href: ../supply-chain/unified-pricing-management/upm-custom-request-handler-example.md?context=/dynamics365/context/commerce
         - name: Price groups
           items:
