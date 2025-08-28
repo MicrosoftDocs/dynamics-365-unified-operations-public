@@ -32,31 +32,32 @@ You can change many aspects of your careers site, such as the background, introd
 >[!NOTE]
 >The Dynamics 365 Human Resources recruiting add-on app must be installed in Dataverse. 
 
-To install the Dynamics 365 Human Resources recruiting add-on app, follow these steps:
+To install the Dynamics 365 Human Resources careers, follow these steps:
 1. Go to Power platform admin center. Sign-in as administrator.
 2. Select your environment.
 3. Go to Dynamics 365 apps
 4. Click **Install app**.
 5. Search and install Dynamics 365 Human Resources careers. 
 
-Troubleshooting installation failures: 
- - **Recruiting add-on not found** error
-1. Go to Power platform admin center. Sign-in as administrator.
-2. Select your environment.
-3. Go to Dynamics 365 apps
-4. Click **Install app**.
-5. Search and install Dynamics 365  Human Resources recruiting add-on. 
- 
- - Installing the new version of Careers requires deleting the previous version 
-1. Go to Power Apps > **Solutions** > **Managed solutions**.
-2. Find the **HCM Recruiting portal** solution and delete it. Remove any dependencies if present.
-3. After the deletion is completed successfully, proceed to reinstall Dynamics 365 Human Resources Careers from Power platform admin center. 
+### Troubleshooting installation failures
 
- - **Languages not selected for careers** error 
-1. Go to igate to the URL mentioned in the error message to open the **Settings** page in the Recruiting add-on application.
-2. Select the preferred languages from the dropdown menu.
-3. Select **Save**.
-4. Retry installing Dynamics 365 Human Resources careers from Power platform admin centre. 
+**Recruiting add-on not found** error:
+  1. Go to Power platform admin center. Sign-in as administrator.
+  2. Select your environment.
+  3. Go to Dynamics 365 apps
+  4. Click **Install app**.
+  5. Search and install Dynamics 365  Human Resources recruiting add-on. 
+ 
+Installing the new version of Careers requires deleting the previous version: 
+  1. Go to Power Apps > **Solutions** > **Managed solutions**.
+  2. Find the **HCM Recruiting portal** solution and delete it. Remove any dependencies if present.
+  3. After the deletion is completed successfully, proceed to reinstall Dynamics 365 Human Resources Careers from Power platform admin center. 
+
+**Languages not selected for careers** error: 
+  1. Go to igate to the URL mentioned in the error message to open the **Settings** page in the Recruiting add-on application.
+  2. Select the preferred languages from the dropdown menu.
+  3. Select **Save**.
+  4. Retry installing Dynamics 365 Human Resources careers from Power platform admin centre. 
 
 ## Activate the careers site
 
@@ -81,16 +82,18 @@ To activate the careers site, follow these steps.
 
 Site activation might take up to 10 minutes. After the site activated, it's available on the **Active sites** tab. 
 
+> [!IMPORTANT]
+> After your site is activated, confirm that the version number is at least 9.6. If it's earlier than 9.6, contact us. To find the version, execute {siteUrl}/_services/about in the browser.
+
 ### Enable local login 
 To enable local login, follow these steps:
 1. Sign in to Power Pages.
 2. Select your active site, select the ellipsis (…), and then select **Power pages management**.
 3. In the left pane, select **Site settings**.
 4. Set the following sites to **True** if currently set to **False**:
- - Authentication/Registration/Enabled
- - Authentication/Registration/LocalLoginEnabled
- - Authentication/Registration/OpenRegistrationEnabled 
-
+  - Authentication/Registration/Enabled
+  - Authentication/Registration/LocalLoginEnabled
+  - Authentication/Registration/OpenRegistrationEnabled 
 5. Save and publish the changes. Local sign-in and registration pages will visible on your Careers site. 
 
 For more information, see [Local authentication, registration, and other settings](/power-pages/security/authentication/set-authentication-identity.md).
