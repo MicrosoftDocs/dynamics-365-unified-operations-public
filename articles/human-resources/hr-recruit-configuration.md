@@ -140,13 +140,13 @@ After you save the hiring template, a section for stages and steps becomes avail
 ### Add a stage
 
 1. In the stage and step section, select **New**.
-1. In the dialog box, enable the **Is stage** option.
 1. Enter a name for the stage.
 1. Select **Save** and then **Close**.
 
 ### Add steps
 
 1. In the stage and step section, select **New**.
+1. In the dialog box, disable the **Is stage** option.
 1. In the dialog box, enter a name for the step.
 1. Select the stage that you want to create the step under.
 1. Select **Save** and then **Close**.
@@ -167,6 +167,7 @@ To create a screening template, follow these steps:
 1. Click **+ New** and a sidebar pops up.
 2. Enter your question.
 3. Select the **Answer type**:
- - For **Yes/No**, **Single-select**, or **Numeric answer** types, select **Qualifying** checkbox to require a preferred answer for the question.
- - If the candidate gives the preferred answer, they pass the screening; if not, they fail.
- - There can be more than one qualifying question.
+        - For **Yes/No**, **Single-select**, or **Numeric answer** types, select **Qualifying** checkbox to require a preferred answer for the question.
+        - **Answer required** is selected by default.   
+        - If the candidate gives the preferred answer, they pass the screening; if not, they fail.
+        - There can be more than one qualifying question.
