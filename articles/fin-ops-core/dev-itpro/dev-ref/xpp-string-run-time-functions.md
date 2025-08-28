@@ -789,6 +789,120 @@ subStr("abcdef",2,-3); //Returns the string "ab".
 ```
 
 
+## strContains
+Checks if text string contains another string.
+
+```xpp
+boolean strContains(str _text, str _potentialContains)
+```
+
+### Parameters
+
+| Parameter  | Description                                                                                                                                                                                                             |
+|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| \_text     | The original string to search in.                                                                                                                                                                                                    |
+| \_potentialContains | The string to find.                                                                                                                                                  |
+
+### Return value
+
+True if original string contains the searched string, otherwise false.
+
+### Remarks
+The comparisons aren't case-sensitive. 
+
+
+```xpp
+strContains("ABCDEFGHIJ","abc"); //Returns true.
+strContains("ABCDEFGHIJ","ABC"); //Returns true.
+strContains("ABCDEFGHIJ","K"); //Returns false.
+```
+
+
+## strStartsWith
+Checks if text string begins with another string.
+
+```xpp
+boolean strStartsWith(str _string, str _potentialStart)
+```
+
+### Parameters
+
+| Parameter  | Description                                                                                                                                                                                                             |
+|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| \_string     | The original string to search in.                                                                                                                                                                                                    |
+| \_potentialStart | The potential string that is at the beginning.                                                                                                                                                  |
+
+### Return value
+
+True if the potential string is the beginning of the origianl string, otherwise false.
+
+### Remarks
+The comparisons aren't case-sensitive. 
+
+
+```xpp
+strStartsWith("ABCDEFGHIJ","abc"); //Returns true.
+strStartsWith("ABCDEFGHIJ","ABC"); //Returns true.
+strStartsWith("ABCDEFGHIJ","B"); //Returns false.
+```
+
+## strEndsWith
+Checks if text string ends with another string.
+
+```xpp
+boolean strEndsWith(str _string, str _potentialEnd)
+```
+
+### Parameters
+
+| Parameter  | Description                                                                                                                                                                                                             |
+|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| \_string     | The original string to search in.                                                                                                                                                                                                    |
+| \_potentialEnd | The potential string that is at the end.                                                                                                                                                  |
+
+### Return value
+
+True if the potential string is ending the origianl string, otherwise false.
+
+### Remarks
+The comparisons aren't case-sensitive. 
+
+
+```xpp
+strEndsWith("ABCDEFGHIJ","ghij"); //Returns true.
+strEndsWith("ABCDEFGHIJ","HIJ"); //Returns true.
+strEndsWith("ABCDEFGHIJ","B"); //Returns false.
+```
+
+
+## strLRTrim
+Removes leading annd tailing blanks from a text string.
+
+```xpp
+str strLRTrim(str text)
+```
+
+### Parameters
+
+| Parameter | Description                                   |
+|-----------|-----------------------------------------------|
+| text      | The string to delete the leading and tailing blanks from. |
+
+### Return value
+
+A copy of the specified string that doesn't include leading and trailing space characters.
+
+### Remarks
+
+The **strLRTrim** function is complementary to the **strRTrim** and **strLTrim** functions.
+
+### Example
+
+```xpp
+// Returns the text string "ABC-DEFG".
+strLRTrim("   ABC-DEFG   ");
+```
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
