@@ -390,23 +390,19 @@ Next, install the certificates on the computer where you run RSAT.
 
 1. Import the root CA (.cer file) and intermediate CA (.cer file) into **Local machine** \> **Trusted Root Certification Authorities**.
 1. Import the .pfx file for the user certificate into **Local user** \> **Personal**.
-1. Enable automatic certificate sign-in for the tenant.
-1. In the following PowerShell script, edit the parts for the tenant ID and the user certificate subject, and then run the script to create the registry entries.
+1. Enable automatic certificate sign-in for the tenant by following these steps:
+   - In the following PowerShell script, edit the parts for the tenant ID (guid) and the user certificate subject:
 
-    ```powershell
-    New-Item -Path
-    \"HKLM:\\SOFTWARE\\Policies\\Microsoft\\Edge\\AutoSelectCertificateForUrls\"
-    -Force
-    
-    New-ItemProperty -Path
-    \"HKLM:\\SOFTWARE\\Policies\\Microsoft\\Edge\\AutoSelectCertificateForUrls\"
-    \`\
-    -Name \"1\" \`\
-    -Value
-    \'{\"pattern\":\"\[\*.\]microsoftonline.com/f30eb649-d49c-41bc-91af-139e4fd1d9f6\",\"filter\":{\"SUBJECT\":{\"CN\":\"testuser.Contoso.
-    User Certificate\"}}}\' \`\
-    -PropertyType String -Force
-    ```
+       ```powershell
+       New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\AutoSelectCertificateForUrls" -Force
+       
+       New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\AutoSelectCertificateForUrls" `
+       -Name "1" `
+       -Value '{"pattern":"[*.]microsoftonline.com/f30eb649-xxxx-41bc-91af-139e4fd1d9f6","filter":{"SUBJECT":{"CN":"testuser.Contoso.User Certificate"}}}' `
+       -PropertyType String -Force
+       ```
+   - In the script above, the value `f30eb649-xxxx-41bc-91af-139e4fd1d9f6` is the tenant ID, and `testuser.Contoso.User Certificate` is the user certificate subject
+   - Once you have made the edits, run the script. This will insert the relevant registry key entries as required. 
 
 ### Configure RSAT
 
