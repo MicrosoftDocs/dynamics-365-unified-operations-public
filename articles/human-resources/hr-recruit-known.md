@@ -45,7 +45,7 @@ The following is a list of known issues and limitations for the HR Recruiting ap
 
 ### Set up the HR recruiting app in version 10.0.44 
 
-In Dynamics 365 finance and operations environment version 10.0.44, some functionality may not be available. There are additional steps required for customers using Dynamics 365 finance version 10.0.44. These steps needs to be reverted for version 10.0.45. 
+In Dynamics 365 finance and operations environment version 10.0.44, some functionality may not be available. There are additional steps required for customers using version 10.0.44. These steps needs to be reverted for version 10.0.45. 
 
 To enable the **Publish candidate to finance and operations - V10.0.44** flow, follow these steps: 
 1. Sign in to Power Apps.
@@ -95,8 +95,8 @@ To add permissions to **Recruiting application** role, follow these steps:
 
  
 
-### Missing features in Dynamics 365 finance version 10.0.44 
-Some functionality isn't available in Dynamics 365 finance version 10.0.44:
+### Missing features in Dynamics 365 Human Resources version 10.0.44 
+Some functionality isn't available in Dynamics 365 Human Resources version 10.0.44:
  - Attachments aren't synced to the Dynamics 365 Finance and Operations environment from the Recruiting add-on.
  - The Careers site doesn't support zip codes. 
 
