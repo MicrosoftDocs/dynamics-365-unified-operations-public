@@ -54,7 +54,7 @@ To walk through the example, follow these steps.
 
 ### Incomes - current period register
 
-Create and set up the tax registers as described in the [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register). Create expense codes, and assign them to the register. Learn more in [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code) and [Create tax registers and the tax register journal](rus-profit-tax-registers.md#set-up-expense-and-income-codes-for-the-tax-register).
+Create and set up the tax registers as described in the [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register). Create expense codes, and assign them to the register. Learn more in [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code) and [Create tax registers and the tax register journal](rus-profit-tax-registers.md#set-up-expense-and-income-codes-for-a-tax-register).
 
 The **Incomes - current period** register summarizes information about income that is obtained for a specific reporting period. The amounts of income, including non-operating income, are used to fill in the income tax declaration.
 
@@ -75,7 +75,7 @@ The **Outlay - realized tax** register is used to summarize information about ta
 The register is formed from two types of taxes:
 
   - Taxes that are automatically processed, such as VAT. You must set up sales tax relations for these taxes.
-  - Taxes that aren't automatically processed, such as taxes on advertising, extraction of mineral resources, and usage of water resources. Create expense codes that are used to post these taxes, and assign them to the register. Learn more in [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code) and [Create tax registers and the tax register journal](rus-profit-tax-registers.md#set-up-expense-and-income-codes-for-the-tax-register).
+  - Taxes that aren't automatically processed, such as taxes on advertising, extraction of mineral resources, and usage of water resources. Create expense codes that are used to post these taxes, and assign them to the register. Learn more in [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code) and [Create tax registers and the tax register journal](rus-profit-tax-registers.md#set-up-expense-and-income-codes-for-a-tax-register).
 
 The tax register contains information about all accrued taxes and duties, and presents lines that are grouped by tax type.
 
@@ -94,7 +94,7 @@ The tax register lines show the following information:
 
 ### Outlay - realized register
 
-Create and set up the tax registers as described in [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register). Create expense codes, and assign them to the register. Learn more in [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code) and [Create tax registers and the tax register journal](rus-profit-tax-registers.md#set-up-expense-and-income-codes-for-the-tax-register).
+Create and set up the tax registers as described in [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register). Create expense codes, and assign them to the register. Learn more in [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code) and [Create tax registers and the tax register journal](rus-profit-tax-registers.md#set-up-expense-and-income-codes-for-a-tax-register).
 
 The **Outlay - realized** register summarizes the amounts of other expenses of the current period or future periods.
 This tax register contains information from the following tax registers:
@@ -113,7 +113,7 @@ The tax register lines show the following information:
 
 ### Outlays - other unrealized register
 
-Create and set up the tax registers as described in the [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register). Create expense codes, and assign them to the register. Learn more in [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code) and [Create tax registers and the tax register journal](rus-profit-tax-registers.md#set-up-expense-and-income-codes-for-the-tax-register).
+Create and set up the tax registers as described in the [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register). Create expense codes, and assign them to the register. Learn more in [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code) and [Create tax registers and the tax register journal](rus-profit-tax-registers.md#set-up-expense-and-income-codes-for-a-tax-register).
 
 The **Outlays - other unrealized** register summarizes the amounts of other unrealized expenses, based on general ledger transactions. This register can also include expenses that are manually entered in the register.
 
@@ -129,7 +129,7 @@ The tax register lines show the following information:
 
 ### Outlays - unrealized register
 
-Create and set up the tax registers as described in the [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register). Create expense codes, and assign them to the register. Learn more in [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code) and [Create tax registers and the tax register journal](rus-profit-tax-registers.md#set-up-expense-and-income-codes-for-the-tax-register).
+Create and set up the tax registers as described in the [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register). Create expense codes, and assign them to the register. Learn more in [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code) and [Create tax registers and the tax register journal](rus-profit-tax-registers.md#set-up-expense-and-income-codes-for-a-tax-register).
 
 The **Outlays - Unrealized** register summarizes information about unrealized expenses that are incurred during a tax reporting period. The register is calculated at the end of the accounting period, based on expenses that are accrued from the beginning of the tax period until the reporting date. This tax register is calculated based on general ledger entries.
 
