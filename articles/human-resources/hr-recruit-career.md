@@ -96,7 +96,7 @@ To enable local login, follow these steps:
   - Authentication/Registration/OpenRegistrationEnabled 
 5. Save and publish the changes. Local sign-in and registration pages will visible on your Careers site. 
 
-For more information, see [Local authentication, registration, and other settings](/power-pages/security/authentication/set-authentication-identity.md).
+For more information, see [Local authentication, registration, and other settings](/power-pages/security/authentication/set-authentication-identity).
 
 ### Set up Compliance link
 To set up a compliance link, follow these steps:
