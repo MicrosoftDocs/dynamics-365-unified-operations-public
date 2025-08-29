@@ -25,6 +25,16 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 
 This article provides information about the Invoice capture solution that automatically creates vendor invoices from digital invoice images. Learn more in [Invoice capture overview](../accounts-payable/invoice-capture-overview.md).
 
+## August 2025
+The August release of the Invoice capture solution version 1.9.8.x contains the following feature enhancements and bug fixes. 
+
+| Feature | Description |
+| --- |--- |
+|Bug Fix |The **Link purchase order line to invoice line** page was only displaying 50 lines. Updated to removed the 50 line restriction. |
+|Bug Fix |Inconsistent derivation results were being encountered during cache lookup errors. Users may have encountered issues where vendor wasn't derived.  |
+|Feature |Copy and paste support from PDF image to Invoice capture page. Users can now select text and numbers from the PDF page, and copy the selection to the invoice fields for easier data updates. Keyboard shortcuts of ctrl+c and ctrl+v are supported.| 
+
+
 ## July 2025 
 
 The July release of the Invoice capture solution version 1.9.7.x contains the following feature enhancements and bug fixes.
