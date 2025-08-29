@@ -75,16 +75,12 @@ To see Recruiting requests and candidates, go to **Human Resources** > **Recruit
 ## Install the Recruiting add-on app in Dataverse
 
 To install the Recruiting add-on app for the first time, follow these steps.
-
-1. Sign in to [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcmrecruiting-preview?flightCodes=4b09efddad8943cb82af3713c574a021) as an admin.
-2. Select **Dynamics 365 Human Resources recruiting add-on**, and then select **Get it now**.
-3. Select **Environments** and then search for and select your environment.
-4. Select the checkboxes to agree to the privacy statement and legal terms.
-5. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-6. Select your environment, and then select the mandatory checkboxes.
-7. Select **Install**.
-8. To check the status of the installation, follow these steps:
-
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Sign-in as administator.
+2. Select your environment, and then select the mandatory checkboxes.
+3. Go to Dynamics 365 apps.
+4. Click **Install app**.
+5. Search and install **Dynamics 365 Human Resource recruiting add-on**.
+6. To check the status of the installation, follow these steps:
     1. In the Power Platform admin center, select **Environments**, and then select your environment.
     1. Select **Resources** \> **Dynamics 365 apps**.
     1. Look in the **Status** column for **Dynamics 365 Human Resource recruiting add-on**. If installation was successful, the value is **Installed**. If the value is **Failed**, set up the app again by selecting **Retry installation**.
