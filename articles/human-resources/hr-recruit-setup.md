@@ -118,6 +118,9 @@ To activate connections and flows for the Recruiting app, follow these steps.
 8. Go to **Solutions** and select the **Managed** solution.
 9. Select **HCM recruiting flows**.
 10. Select **Cloud flows**, and then select **Turn on** for the cloud flows that are disabled.
+>[!Note]
+> Ensure **Portal create attachments in notes table** is switched off if it appears.
+
 11. Repeat steps 8 through 10 for **HCM Recruiting**.
 
 > [!NOTE]
@@ -137,7 +140,6 @@ To activate connections and flows for the Recruiting app, follow these steps.
 |When an applicant is deleted|	Delete candidate information in Dynamics 365 Human Resources when an applicant is removed.|
 |When an application is created	|When an application is created, it triggers the email notification flow to send a confirmation email to the candidate.|
 |When an application is rejected or withdrawn|	When an application is either rejected or withdrawn, the email notification flow is triggered to inform the candidate of their application status.|
-|Portal create attachments in note table|	This process is initiated when a resume is attached to create a record in the note table. It is used in the recruitment add-on.|
 |Portal create candidate flow|	When users sign up, the flow creates a record in the candidate table, and their personal information is populated based on that.|
 |Portal update candidate type|	This process identifies whether a candidate is external or internal at sign-in and updates the candidate type column accordingly.|
 |Portal update contact from candidate	|This flow updates the contact table when the first name, last name, middle name, and email fields in the candidate table are filled.|
