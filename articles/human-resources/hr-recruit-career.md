@@ -57,7 +57,32 @@ Installing the new version of Careers requires deleting the previous version:
   1. Go to igate to the URL mentioned in the error message to open the **Settings** page in the Recruiting add-on application.
   2. Select the preferred languages from the dropdown menu.
   3. Select **Save**.
-  4. Retry installing Dynamics 365 Human Resources careers from Power platform admin centre. 
+  4. Retry installing Dynamics 365 Human Resources careers from Power platform admin center.
+
+
+### Enable careers to access Dynamics 365 Human resources virtual entities 
+
+ 
+
+In Dynamics 365 Human Resources, assign the following two roles to the portal anonymous user by navigating to Users, selecting the user, and assigning roles. If this user does not exist, select another or create a new one. 
+
+Dataverse Virtual entity anonymous user 
+
+Portal authenticated user for Recruitment 
+
+Note: The "Portal authenticated user for Recruitment" role is available from Dynamics 365 Human Resources version 10.0.45. For version 10.0.44, use the "Recruiting application" role. . 
+
+Next, navigate to System administration > Setup > System parameters > Power Apps Portals. Enter the user in the "Anonymous access user id" field and save. 
+
+A screenshot of a computer
+
+AI-generated content may be incorrect.  
+  
+
+Note: If the user is already assigned in the above screen, assign them the specified roles. 
+
+ 
+ 
 
 ## Activate the careers site
 
