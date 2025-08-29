@@ -69,3 +69,20 @@ To edit the candidate profile that the **Bulk resume upload** AI feature generat
 
 1. After a candidate profile is generated, a **Candidate ID** value is generated inside a batch. Select the candidate ID to open the candidate profile and view the details that AI extracted. 
 1. Review the candidate profile that AI generated, and edit the information as required.
+
+## Activate resume upload in careers 
+Enable resume parsing functionality from here Set up the Bulk resume upload AI feature in Dynamics 365 Human Resources Recruiting add-on (preview) - Human Resources | Dynamics 365 | Microsoft Learn 
+Navigate to Power Page. 
+In the left-hand navigation panel, select Setup. 
+Under Integrations, choose Cloud Flows. 
+Click Add existing flows. 
+From the list, select Retrieve feature control setting. 
+Assign the following roles: Authenticated users 
+Click Add. 
+The flow will now appear in the list of added flows. 
+Repeat the same for Resume parse flow. 
+After adding the flows, click on sync. 
+Once completed, the Upload Resume button will appear in the Create Profile page. 
+
+
+ 
