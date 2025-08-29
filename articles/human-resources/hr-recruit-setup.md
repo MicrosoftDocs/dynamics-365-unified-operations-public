@@ -31,7 +31,7 @@ This article explains how to set up the HR Recruiting app in Microsoft Dynamics 
 
 Before you can install the Recruiting app, the following prerequisites must be met:
 
-- You have a Dynamics 365 finance and operations environment, version 10.0.45 or later, and the most recent quality update is installed.
+- You have a Dynamics 365 Human Resources environment, version 10.0.45 or later, and the most recent quality update is installed.
 >[!NOTE]
 > If you are on version 10.0.44, see [Known issues and limitations](hr-recruit-known.md#set-up-the-hr-recruiting-app-in-version-10044). 
 - You have a Dynamics 365 Human Resources license for the finance and operations environment.  
@@ -120,7 +120,7 @@ To activate connections and flows for the Recruiting app, follow these steps.
 11. Repeat steps 8 through 10 for **HCM Recruiting**.
 
 > [!NOTE]
-> Make sure that all the **HCM Recruiting** flows are active. Otherwise, issues can occur. For example, if the **Portal create candidate** flow isn't active, candidates can't create a profile.
+> Confirm that all the **HCM Recruiting** flows are active. Otherwise, issues can occur. For example, if the **Portal create candidate** flow isn't active, candidates can't create a profile.
 
 ### Recruiting flows
 
