@@ -105,8 +105,8 @@ To set up a compliance link, follow these steps:
 3. In the left pane, select **Content snippets**. 
 
  - Add a Privacy link to the login page
-     - Search and select **Account/SignIn/PrivacyLink**.
-     - Provide the link in value section. 
+   - Search and select **Account/SignIn/PrivacyLink**.
+   - Provide the link in value section. 
 
 - Add a Privacy link in footer
    - Search and select **Footer/PrivacyLink**.
