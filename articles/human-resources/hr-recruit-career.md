@@ -33,20 +33,22 @@ You can change many aspects of your careers site, such as the background, introd
 >The Dynamics 365 Human Resources recruiting add-on app must be installed in Dataverse. 
 
 To install the Dynamics 365 Human Resources careers, follow these steps:
-1. Go to Power platform admin center. Sign-in as administrator.
-2. Select your environment.
-3. Go to Dynamics 365 apps
-4. Click **Install app**.
-5. Search and install Dynamics 365 Human Resources careers. 
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+2. Sign-in as administrator.
+3. Select your environment.
+4. Go to Dynamics 365 apps
+5. Click **Install app**.
+6. Search and install Dynamics 365 Human Resources careers. 
 
 ### Troubleshooting installation failures
 
 **Recruiting add-on not found** error:
-  1. Go to Power platform admin center. Sign-in as administrator.
-  2. Select your environment.
-  3. Go to Dynamics 365 apps
-  4. Click **Install app**.
-  5. Search and install Dynamics 365  Human Resources recruiting add-on. 
+  1. Gp to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+  2. Sign-in as administrator.
+  3. Select your environment.
+  4. Go to Dynamics 365 apps
+  5. Click **Install app**.
+  6. Search and install Dynamics 365 Human Resources recruiting add-on. 
  
 Installing the new version of Careers requires deleting the previous version: 
   1. Go to Power Apps > **Solutions** > **Managed solutions**.
