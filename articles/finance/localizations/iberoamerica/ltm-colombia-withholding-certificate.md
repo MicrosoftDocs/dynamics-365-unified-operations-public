@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Configure printing for the Withholding certificate format for Colombia
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article explains how to set up and generate three withholding certificate formats for Colombia in Microsoft Dynamics 365 Finance: VAT withholdings, income withholdings, and ICA withholdings.
 
