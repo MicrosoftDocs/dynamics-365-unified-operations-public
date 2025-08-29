@@ -24,11 +24,13 @@ Before you can print an electronic ledger posting report, you must complete the 
 - The country/region of the legal entity's address must be in Peru.
 - You must enable both the country/region-specific LATAM feature for Peru and the general LATAM feature.
 - You must download the specific report configurations from the Dataverse configuration repository.
-- You must import the following Electronic reporting (ER) configurations. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+- The following Dataverse configurations must be imported:
 
-    - Ledger accounting reports
-    - Ledger Accounting LATAM
-    - Magnetic General Ledger Peru
+| Element |                    Format name                    |
+|:-------:|:-------------------------------------------------:|
+| Model   | :::no-loc text="Ledger accounting reports":::                      |
+| Mapping | :::no-loc text="(General Ledger LATAM) Ledger Accounting LATAM"::: |
+| Format  | :::no-loc text="Magnetic Ledger Posting Peru":::                   |
 
 - You must configure the ER parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - You must create a tax application code to use in this report. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
@@ -42,7 +44,7 @@ Before you can print an electronic ledger posting report, you must complete the 
     1. In the **Report/Service type** field, select an ER configuration.
     1. In the **Model mapping name** field, select **Ledger accounting LTM**.
     1. In the **Data model definition** field, select **MagneticGeneralLedger**.
-    1. In the **Format mapping** field, select **Magnetic General Ledger Peru**.
+    1. In the **Format mapping** field, select **Magnetic Ledger Posting Peru**.
     1. In the list of report/service types, enable **Ledger Posting report**.
     1. In the list of parameters, in the **Name** column, add **TaxApplicationId**. Then, in the **Value** column, add the tax application code that you created.
 
