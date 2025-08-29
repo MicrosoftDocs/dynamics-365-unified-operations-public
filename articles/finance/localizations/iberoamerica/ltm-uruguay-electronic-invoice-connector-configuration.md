@@ -34,7 +34,7 @@ This article provides information to help you get started with Electronic invoic
 
 After you configure Electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the [Edicom](https://edicomgroup.com/electronic-invoicing/uruguay) authorized certification provider (PAC) according to the [regulatory requirements in Uruguay](https://www.gub.uy/direccion-general-impositiva/home).
 
-![Diagram of the electronic invoicing workflow in Uruguay.](ltm-uyu-e-invoice-workflow.png)
+![Diagram of the electronic invoicing workflow in Uruguay.](ltm-uruguay-electronic-invoice-workflow.png)
 
 > [!NOTE]
 > The electronic invoicing approach that this article describes is implemented by using an invoicing service that is applicable only to cloud deployments of Finance or Supply Chain Management.
@@ -107,7 +107,7 @@ Each of these interactions requires common parameters, such as Edicom connection
 
 1. Import the latest version of the **Uruguay Electronic Invoice (UY)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). The following illustrations show what the feature looks like after you import it from Dataverse.
 
-    ![Screenshot of the imported Globalization feature for Uruguay on the Electronic invoicing features page, including the information on the Versions tab.](ltm-ury-e-invoice-glob-feature-imported.png)
+    ![Screenshot of the imported Globalization feature for Uruguay on the Electronic invoicing features page, including the information on the Versions tab.](ltm-uruguay-electronic-invoice-globalization-feature-imported.png)
 
 
     If you go to the Configuration tab, as shown in the previous screenshot, you should see a page displaying information similar to the following table:
@@ -387,12 +387,12 @@ After you import the **Electronic invoicing for Uruguay** feature that includes 
 
 ### Setups-Application Setup
 
-You are currently in the [**Electronic invoice feature**](#electronic-invoice-feature) section. Next, click on **Application Setup** within the **Setups** tab to configure the mapping between Dynamics 365 source tables and electronic document formats.
+To configure the mapping between Dynamics 365 Finance source tables and electronic document formats, go to the **Setups** tab within the [**Electronic invoice feature**](#electronic-invoice-feature) section, and then select **Application Setup**. This step lets you define how data from Finance is linked to the correct electronic invoice formats for Uruguay.
 
 > [!NOTE]
 > Although this configuration is not set at the general feature level, it acts globally for the selected feature setup. You do not need to repeat these steps for each individual format or feature—one configuration is sufficient for all supported document types within the feature.
 
-The following grid defines the link between the source table in Dynamics 365, the document context model, and the mapping configuration used for electronic invoicing:
+The following grid defines the link between the source table in Dynamics 365 Finance, the document context model, and the mapping configuration used for electronic invoicing:
 
 | Table name               | Context model / Context                  | Electronic document mapping      | Mapping name         | Description                                                                                  |
 |--------------------------|------------------------------------------|----------------------------------|----------------------|----------------------------------------------------------------------------------------------|
@@ -409,29 +409,29 @@ The following grid defines the link between the source table in Dynamics 365, th
 1. In the **Electronic document** section, add records for the **Customer Invoice journal** and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 
-the Electronic Document Parameters page in Dynamics 365 Finance and Operations. Shows on the left-hand navigation pane, we can see the following options:
+The Electronic Document Parameters page in Dynamics 365 Finance. Shows on the left-hand navigation pane, we can see the following options:
 
-    Electronic Document
+- Electronic Document
 
-    Features
+- Features
 
-    Electronic Invoicing
+- Electronic Invoicing
 
-    Integration Channels
+- Integration Channels
 
 For the Electronic Document option on the right-hand side, the section labeled Electronic Reporting is displayed.
 
 Within Electronic Reporting, a grid is presented which lists the electronic document configurations. This grid includes important associations between:
 
-    The source table name
+- The source table name
 
-    The document context model and context
+- The document context model and context
 
-    The electronic document model mapping
+- The electronic document model mapping
 
-    The final mapping name used for generating the electronic invoice.
+- The final mapping name used for generating the electronic invoice.
 
-This configuration is essential for determining how Dynamics 365 maps internal data models to external electronic formats for submission to tax authorities or service providers.
+This configuration is essential for determining how Dynamics 365 Finance maps internal data models to external electronic formats for submission to tax authorities or service providers.
 
 Configure the grid as follows:
 
