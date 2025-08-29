@@ -92,13 +92,13 @@ The following must be install in Dataverse:
  - The Recruiting add-on app 
  - The Dynamics 365 Human Resources careers  
 
-To activate the careers site, follow these steps.
+To activate the careers site, follow these steps:
 
 1. Sign in to [Power Pages](https://make.powerpages.microsoft.com/) as an admin.
 2. Select your environment.
 3. Select the **Inactive sites** tab.
 > [!Note]
-> If you can't view the inactive site, create a temporary site using any available template. After creating a temporary site, you'll be able to access the inactive site.”
+> If you can't view the inactive site, create a temporary site using any available template. After creating a temporary site, you'll be able to access the inactive site.
  
 4. Select **Reactivate** for **Recruiting-careers site** to activate the site.
 5. Provide a name and web address for the website, and then select **Done**.
