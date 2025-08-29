@@ -78,9 +78,7 @@ Assign the following roles:
 4. Enter the user in the **Anonymous access user id** field.
 5. Click **Save**. 
 
-A screenshot of a computer
-
-AI-generated content may be incorrect.  
+[![System parameters.](./media/careerpara.png)](media/careerpara.png)
   
 >[!Note]
 > If the user is already assigned in the above screen, assign them the specified roles. 
