@@ -567,7 +567,7 @@ items:
               href: hr-recruit-onboard.md 
             - name: Configuration in the HR Recruiting app   
               href: hr-recruit-configuration.md
-            - name: Configure the careers site in the HR Recruiting app
+            - name: Set up the careers site in the HR Recruiting app
               href: hr-recruit-career.md 
             - name: Known issues and limitations of the HR Recruiting app
               href: hr-recruit-known.md
@@ -591,7 +591,7 @@ items:
               href: hr-interview-schedule.md
           - name: Upload resumes (preview)
             items:
-            - name: Bulk upload resumes
+            - name: Upload resumes
               href: bulk-resume-upload.md
     - name: Time and attendance
       items:

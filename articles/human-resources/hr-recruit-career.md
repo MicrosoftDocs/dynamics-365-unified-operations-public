@@ -33,20 +33,22 @@ You can change many aspects of your careers site, such as the background, introd
 >The Dynamics 365 Human Resources recruiting add-on app must be installed in Dataverse. 
 
 To install the Dynamics 365 Human Resources careers, follow these steps:
-1. Go to Power platform admin center. Sign-in as administrator.
-2. Select your environment.
-3. Go to Dynamics 365 apps
-4. Click **Install app**.
-5. Search and install Dynamics 365 Human Resources careers. 
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+2. Sign-in as administrator.
+3. Select your environment.
+4. Go to Dynamics 365 apps
+5. Click **Install app**.
+6. Search and install Dynamics 365 Human Resources careers. 
 
 ### Troubleshooting installation failures
 
 **Recruiting add-on not found** error:
-  1. Go to Power platform admin center. Sign-in as administrator.
-  2. Select your environment.
-  3. Go to Dynamics 365 apps
-  4. Click **Install app**.
-  5. Search and install Dynamics 365  Human Resources recruiting add-on. 
+  1. Gp to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+  2. Sign-in as administrator.
+  3. Select your environment.
+  4. Go to Dynamics 365 apps
+  5. Click **Install app**.
+  6. Search and install Dynamics 365 Human Resources recruiting add-on. 
  
 Installing the new version of Careers requires deleting the previous version: 
   1. Go to Power Apps > **Solutions** > **Managed solutions**.
@@ -57,7 +59,30 @@ Installing the new version of Careers requires deleting the previous version:
   1. Go to igate to the URL mentioned in the error message to open the **Settings** page in the Recruiting add-on application.
   2. Select the preferred languages from the dropdown menu.
   3. Select **Save**.
-  4. Retry installing Dynamics 365 Human Resources careers from Power platform admin centre. 
+  4. Retry installing Dynamics 365 Human Resources careers from Power platform admin center.
+
+
+### Enable careers to access Dynamics 365 Human resources virtual entities 
+
+To assign roles to the **Portal anonymous** user in Dynamics 365 Human Resources, follow these steps:
+1. In Dynamics 365 Human Resources, go to **Users**.
+2. Select the user, and assigning roles. If this user doesn't exist, select another or create a new one. 
+Assign the following roles:
+ - **Dataverse Virtual entity anonymous user**
+ - **Portal authenticated user for Recruitment** 
+
+>[!NOTE]
+> The **Portal authenticated user for Recruitment** role is available in Dynamics 365 Human Resources version 10.0.45. For version 10.0.44, use the **Recruiting application** role.
+
+3. Go to **System administration** > **Setup** > **System parameters** > **Power Apps Portals**.
+4. Enter the user in the **Anonymous access user id** field.
+5. Click **Save**. 
+
+[![System parameters.](./media/careerpara.png)](media/careerpara.png)
+  
+>[!Note]
+> If the user is already assigned in the above screen, assign them the specified roles. 
+
 
 ## Activate the careers site
 
@@ -67,13 +92,13 @@ The following must be install in Dataverse:
  - The Recruiting add-on app 
  - The Dynamics 365 Human Resources careers  
 
-To activate the careers site, follow these steps.
+To activate the careers site, follow these steps:
 
 1. Sign in to [Power Pages](https://make.powerpages.microsoft.com/) as an admin.
 2. Select your environment.
 3. Select the **Inactive sites** tab.
 > [!Note]
-> If you can't view the inactive site, create a temporary site using any available template. After creating a temporary site, you'll be able to access the inactive site.”
+> If you can't view the inactive site, create a temporary site using any available template. After creating a temporary site, you'll be able to access the inactive site.
  
 4. Select **Reactivate** for **Recruiting-careers site** to activate the site.
 5. Provide a name and web address for the website, and then select **Done**.
@@ -96,7 +121,7 @@ To enable local login, follow these steps:
   - Authentication/Registration/OpenRegistrationEnabled 
 5. Save and publish the changes. Local sign-in and registration pages will visible on your Careers site. 
 
-For more information, see [Local authentication, registration, and other settings](/power-pages/security/authentication/set-authentication-identity.md).
+For more information, see [Local authentication, registration, and other settings](/power-pages/security/authentication/set-authentication-identity).
 
 ### Set up Compliance link
 To set up a compliance link, follow these steps:
@@ -105,16 +130,16 @@ To set up a compliance link, follow these steps:
 3. In the left pane, select **Content snippets**. 
 
  - Add a Privacy link to the login page
-     - Search and select **Account/SignIn/PrivacyLink**.
-     - Provide the link in value section. 
+   -  Search and select **Account/SignIn/PrivacyLink**.
+   -  Provide the link in value section. 
 
-- Add a Privacy link in footer
-   - Search and select **Footer/PrivacyLink**.
-   - Provide the link in the **Value** section.
+ - Add a Privacy link in footer
+   -  Search and select **Footer/PrivacyLink**.
+   -  Provide the link in the **Value** section.
 
- - Add Terms link in footer 
-   - Search and select **Footer/TermsOfUseLink**.
-   - Provide the link in **Value** section.
+ - Add Terms link in footer
+   -  Search and select **Footer/TermsOfUseLink**.
+   -  Provide the link in **Value** section.
 
  - Add copyright in footer
    -  Search and select **Footer/CopyrightLabel**.
