@@ -4,7 +4,7 @@ description: Learn how to set up and use the certificate that is required for th
 author: pvillads
 ms.author: pvillads
 ms.topic: article
-ms.date: 06/06/2025
+ms.date: 08/29/2025
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -390,7 +390,7 @@ Next, install the certificates on the computer where you run RSAT.
 
 1. Import the root CA (.cer file) and intermediate CA (.cer file) into **Local machine** \> **Trusted Root Certification Authorities**.
 1. Import the .pfx file for the user certificate into **Local user** \> **Personal**.
-1. Enable automatic certificate sign-in for the tenant by following these steps:
+1. To enable automatic certificate sign-in for the tenant, follow these steps:
    - In the following PowerShell script, edit the parts for the tenant ID (guid) and the user certificate subject:
 
        ```powershell
