@@ -176,7 +176,8 @@ When you use the STL method to handle outliers, you must also set the **Select s
 - **Created by** – The user who created the step.
 - **Model type** – Select the forecast algorithm to use. Learn about each of the available algorithms in [Demand forecasting algorithms](forecast-algorithm-types.md).
 
-    - *Best fit model* <!--KFM: We should mention and/or list the versions here -->
+    - *Best fit model - version 1*
+    - *Best fit model - version 2*
     - *ARIMA* (auto regressive integrated moving average)
     - *ETS* (error, trend, seasonality)
     - *Prophet*
