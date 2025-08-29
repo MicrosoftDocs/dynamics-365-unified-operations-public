@@ -33,7 +33,7 @@ Before you can install the Recruiting app, the following prerequisites must be m
 
 - You have a Dynamics 365 finance and operations environment, version 10.0.45 or later, and the most recent quality update is installed.
 >[!NOTE]
-> If you are on version 10.0.44, see [Known issues and limitations](hr-recruit-known.md). 
+> If you are on version 10.0.44, see [Known issues and limitations](hr-recruit-known.md#set-up-the-hr-recruiting-app-in-version-10044). 
 - You have a Dynamics 365 Human Resources license for the finance and operations environment.  
 - You're a user who has system administrator permissions for both Dynamics 365 Human Resources and Power Apps.
 - One of the following Microsoft Power Platform integrations is completed:
