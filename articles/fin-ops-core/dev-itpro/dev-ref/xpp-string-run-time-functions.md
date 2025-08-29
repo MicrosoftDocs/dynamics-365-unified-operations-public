@@ -805,7 +805,7 @@ boolean strContains(str _text, str _potentialContains)
 
 ### Return value
 
-True if original string contains the searched string, otherwise false.
+True if original string contains the searched string; otherwise, false.
 
 ### Remarks
 The comparisons aren't case-sensitive. 
@@ -834,7 +834,7 @@ boolean strStartsWith(str _string, str _potentialStart)
 
 ### Return value
 
-True if the potential string is the beginning of the origianl string, otherwise false.
+True if the potential string is the beginning of the origianl string; otherwise, false.
 
 ### Remarks
 The comparisons aren't case-sensitive. 
@@ -862,7 +862,7 @@ boolean strEndsWith(str _string, str _potentialEnd)
 
 ### Return value
 
-True if the potential string is ending the origianl string, otherwise false.
+True if the potential string is ending the origianl string; otherwise, false.
 
 ### Remarks
 The comparisons aren't case-sensitive. 
