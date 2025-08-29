@@ -40,14 +40,14 @@ This article explains how to configure the HR Recruiting app in Microsoft Dynami
 To enable users and email accounts to receive and send messages, follow these steps.
 
 1. Sign in to the Recruiting add-on app.
-2. Go to **Settings** \> **Advanced settings**.
-3. Select **Settings** \> **Email configuration**.
-4. Select **Mailboxes**. You can ignore the pop-up message about approving the email.
-5. Select **All mailboxes**.
-6. Search for the user or email account, and select it.
-7. Select **Approve email**.
-8. Select **Test and enable mailbox**.
-9. Confirm that the incoming and outgoing email status is **Success**.
+1. Go to **Settings** \> **Advanced settings**.
+1. Select **Settings** \> **Email configuration**.
+1. Select **Mailboxes**. You can ignore the pop-up message about approving the email.
+1. Select **All mailboxes**.
+1. Search for the user or email account, and select it.
+1. Select **Approve email**.
+1. Select **Test and enable mailbox**.
+1. Confirm that the incoming and outgoing email status is **Success**.
     If the status isn't **Success** after you refresh the page, go to **Name** \> **Common** \> **Alerts** to find the error message.
 
 1. The user that you assigned must follow these steps to allow other users to send email on their behalf:
@@ -166,7 +166,7 @@ To create a screening template, follow these steps:
 1. Click **+ New** and a sidebar pops up.
 2. Enter your question.
 3. Select the **Answer type**:
-        - For **Yes/No**, **Single-select**, or **Numeric answer** types, select **Qualifying** checkbox to require a preferred answer for the question.
-        - **Answer required** is selected by default.   
-        - If the candidate gives the preferred answer, they pass the screening; if not, they fail.
-        - There can be more than one qualifying question.
+ - For **Yes/No**, **Single-select**, or **Numeric answer** types, select the **Qualifying** checkbox to require a preferred answer for the question.
+ - **Answer required** is selected by default.
+         - If the candidate gives the preferred answer, they pass the screening; if not, they fail.
+         - There can be more than one qualifying question.
