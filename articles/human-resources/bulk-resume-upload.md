@@ -54,10 +54,9 @@ To activate the **Bulk resume upload** AI feature, follow these steps.
 ## Upload resumes in bulk
 
 To upload resumes in bulk, follow these steps.
-
 1. In the left pane, select **Bulk resume upload**.
-1. Select **Upload resume**.
-1. Browse to the location, and select the resumes to upload.
+2. Select **Upload resume**.
+3. Browse to the location, and select the resumes to upload.
 
     The selected resumes are processed. A progress bar shows the number of resumes that have been parsed.
 
