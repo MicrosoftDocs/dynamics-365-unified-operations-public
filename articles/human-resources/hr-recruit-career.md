@@ -64,27 +64,27 @@ Installing the new version of Careers requires deleting the previous version:
 
 ### Enable careers to access Dynamics 365 Human resources virtual entities 
 
- 
+To assign roles to the **Portal anonymous** user in Dynamics 365 Human Resources, follow these steps:
+1. In Dynamics 365 Human Resources, go to **Users**.
+2. Select the user, and assigning roles. If this user doesn't exist, select another or create a new one. 
+Assign the following roles:
+ - **Dataverse Virtual entity anonymous user**
+ - **Portal authenticated user for Recruitment** 
 
-In Dynamics 365 Human Resources, assign the following two roles to the portal anonymous user by navigating to Users, selecting the user, and assigning roles. If this user does not exist, select another or create a new one. 
+>[!NOTE]
+> The **Portal authenticated user for Recruitment** role is available in Dynamics 365 Human Resources version 10.0.45. For version 10.0.44, use the **Recruiting application** role.
 
-Dataverse Virtual entity anonymous user 
-
-Portal authenticated user for Recruitment 
-
-Note: The "Portal authenticated user for Recruitment" role is available from Dynamics 365 Human Resources version 10.0.45. For version 10.0.44, use the "Recruiting application" role. . 
-
-Next, navigate to System administration > Setup > System parameters > Power Apps Portals. Enter the user in the "Anonymous access user id" field and save. 
+3. Go to **System administration** > **Setup** > **System parameters** > **Power Apps Portals**.
+4. Enter the user in the **Anonymous access user id** field.
+5. Click **Save**. 
 
 A screenshot of a computer
 
 AI-generated content may be incorrect.  
   
+>[!Note]
+> If the user is already assigned in the above screen, assign them the specified roles. 
 
-Note: If the user is already assigned in the above screen, assign them the specified roles. 
-
- 
- 
 
 ## Activate the careers site
 
@@ -135,7 +135,7 @@ To set up a compliance link, follow these steps:
    - Search and select **Account/SignIn/PrivacyLink**.
    - Provide the link in value section. 
 
-- Add a Privacy link in footer
+ - Add a Privacy link in footer
    - Search and select **Footer/PrivacyLink**.
    - Provide the link in the **Value** section.
 
