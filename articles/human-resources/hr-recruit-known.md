@@ -43,10 +43,11 @@ The following is a list of known issues and limitations for the HR Recruiting ap
   - Hiring managers can view the **Bulk resume upload** option, but usage is restricted to recruiters.
   - An error may occur when viewing the **Template steps** tab in a **Hiring template - related tab**. 
 
-### Recruiting app in version 10.0.44 
+### Set up HR Recruiting app in version 10.0.44 
 
 In Dynamics 365 Human Resources environment version 10.0.44, some functionality may not be available. There are additional steps required for customers using version 10.0.44. These steps need to be reverted for version 10.0.45. 
 
+#### Enable Candidate sync in 10.0.44
 To enable the **Publish candidate to finance and operations - V10.0.44** flow, follow these steps: 
 1. Sign in to Power Apps.
 2. Select the environment where you installed the Recruiting add-on app.
@@ -59,7 +60,7 @@ To enable the **Publish candidate to finance and operations - V10.0.44** flow, f
 >[!Note]
 > The **Publish candidate to finance and operaitons - V10044** should be disabled when using Dynamics 365 finance and operations version 10.0.45. 
 
-### Permissions 
+#### Enable careers to access Dynamics 365 Human Resources Virtual entities in vesion 10.0.44
 The **Recruiting application** role is missing some permissions needed for the HR recruiting app. 
 
 To add permissions to **Recruiting application** role, follow these steps:   
@@ -78,8 +79,6 @@ To add permissions to **Recruiting application** role, follow these steps:
 
 [![Secruity configuration.](./media/secruityconfig.png)](./media/secruityconfig.png)
 
- 
-
 13. In Finance and operations, assign the following two roles to the portal anonymous user: 
       1. Go to **Users**.
       2. Select the portal anonymous user.
@@ -94,7 +93,7 @@ To add permissions to **Recruiting application** role, follow these steps:
 > If the user is already assigned on the screen above, assign the specified roles. 
 
 
-### Missing features in Dynamics 365 Human Resources version 10.0.44 
+#### Missing features in Dynamics 365 Human Resources version 10.0.44 
 Some functionality isn't available in Dynamics 365 Human Resources version 10.0.44:
  - Attachments aren't synced to the Dynamics 365 Finance and Operations environment from the Recruiting add-on.
  - The Careers site doesn't support zip codes. 
