@@ -64,7 +64,7 @@ To update the settings in the Recruiting add-on, follow these steps.
 1. Sign in to Recruiting add-on app as the recruiting administrator.
 1. Go to **Configurations** \> **Email account configurations**.
 1. Add the user account that the mailbox is enabled for.
-1. Add email accounts for **Category – application**, **Prospect**, and **Rejection**.
+1. Add email accounts for **Category – Application**, **Prospect**, **Rejection**, and **Profile creation**.
 
 ## Customize the email account by creating a new category
 
