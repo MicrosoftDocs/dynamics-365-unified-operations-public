@@ -58,7 +58,7 @@ To enable the **Publish candidate to finance and operations - V10.0.44** flow, f
 7. Select **Turn on** for the **Publish candidate to finance and operations - V10044**.
 
 >[!Note]
-> The **Publish candidate to finance and operaitons - V10044** should be disabled when using Dynamics 365 finance and operations version 10.0.45. 
+> The **Publish candidate to finance and operaitons - V10044** should be disabled when using Dynamics 365 Human Resources version 10.0.45. 
 
 #### Enable careers to access Dynamics 365 Human Resources Virtual entities in vesion 10.0.44
 The **Recruiting application** role is missing some permissions needed for the HR recruiting app. 
