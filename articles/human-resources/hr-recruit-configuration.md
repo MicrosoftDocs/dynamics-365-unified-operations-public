@@ -40,15 +40,14 @@ This article explains how to configure the HR Recruiting app in Microsoft Dynami
 To enable users and email accounts to receive and send messages, follow these steps.
 
 1. Sign in to the Recruiting add-on app.
-1. Go to **Settings** \> **Advanced settings**.
-1. Select **Settings** \> **Email configuration**.
-1. Select **Mailboxes**. You can ignore the pop-up message about approving the email.
-1. Select **All mailboxes**.
-1. Search for the user or email account, and select it.
-1. Select **Approve email**. 
-1. Select **Test and enable mailbox**.
-1. Confirm that the incoming and outgoing email status is **Success**.
-
+2. Go to **Settings** \> **Advanced settings**.
+3. Select **Settings** \> **Email configuration**.
+4. Select **Mailboxes**. You can ignore the pop-up message about approving the email.
+5. Select **All mailboxes**.
+6. Search for the user or email account, and select it.
+7. Select **Approve email**.
+8. Select **Test and enable mailbox**.
+9. Confirm that the incoming and outgoing email status is **Success**.
     If the status isn't **Success** after you refresh the page, go to **Name** \> **Common** \> **Alerts** to find the error message.
 
 1. The user that you assigned must follow these steps to allow other users to send email on their behalf:
@@ -69,14 +68,14 @@ To update the settings in the Recruiting add-on, follow these steps.
 ## Customize the email account by creating a new category
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
-1. Select the environment.
-1. In the left pane, select **Solutions**.
-1. In the list of solutions, select **Default Solution**.
-1. In the left pane, select **Tables**.
-1. Select **Email account configuration**.
-1. Under **Schema**, select **Columns**.
-1. Edit the **Category** column, and add the new category.
-1. To configure the new email account category in the Recruiting add-on app, go to **Configurations** \> **Email accounts configurations**.
+2. Select the environment.
+3. In the left pane, select **Solutions**.
+4. In the list of solutions, select **Default Solution**.
+5. In the left pane, select **Tables**.
+6. Select **Email account configuration**.
+7. Under **Schema**, select **Columns**.
+8. Edit the **Category** column, and add the new category.
+9. To configure the new email account category in the Recruiting add-on app, go to **Configurations** \> **Email accounts configurations**.
 
 ## Use email templates
 
