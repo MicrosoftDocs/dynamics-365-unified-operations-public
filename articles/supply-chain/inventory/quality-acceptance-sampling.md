@@ -1,6 +1,6 @@
 ---
 title:  Acceptance sampling (preview)
-description: Learn how to set up acceptance sampling to control product quality by inspecting representative samples from batches.
+description: Learn how to set up acceptance sampling to control product quality by inspecting representative samples from lots.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
@@ -17,7 +17,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.46 GA -->
 
-*Acceptance sampling* is a quality control method that uses statistical analysis to evaluate a batch of products. Instead of checking every item, you examine a subset of items to determine whether the entire lot meets predefined quality standards. This approach is widely used in manufacturing and supply chain operations to balance inspection effort with quality assurance.
+*Acceptance sampling* is a quality control method that uses statistical analysis to evaluate a batch or lot of products. Instead of checking every item, you examine a subset of items to determine whether the entire lot meets predefined quality standards. This approach is widely used in manufacturing and supply chain operations to balance inspection effort with quality assurance.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -107,9 +107,9 @@ To set up your acceptance sampling charts, follow these steps:
 
 1. On the **Inspection levels to include** FastTab, use the buttons in the toolbar to add and remove inspection levels for the current chart. The inspection levels are used as a criteria to find the applicable code letter in the code letter chart. Learn more about inspection levels in [Acceptance sampling charts](#acceptance-sampling-charts).
 
-1. On the **AQL indexes to include** FastTab, use the buttons in the toolbar to add and remove AQL indexes. The AQL index defines the maximum acceptable defect rate in a sample that determines whether a lot/batch passes or fails inspection. You can learn about AQL indexes in [Acceptance sampling charts](#acceptance-sampling-charts).
+1. On the **AQL indexes to include** FastTab, use the buttons in the toolbar to add and remove AQL indexes. The AQL index defines the maximum acceptable defect rate in a sample that determines whether a lot passes or fails inspection. You can learn about AQL indexes in [Acceptance sampling charts](#acceptance-sampling-charts).
 
-1. On the **Lot/batch size ranges** FastTab, use the buttons in the toolbar to add and remove lot/batch size ranges for the current chart. Use the **Unlimited** button in the toolbar to set a range to have no upper limit (this sets the **To** field to *Unlimited* for the selected row). The lot/batch size ranges group total units in a lot/batch and help find the applicable code letter. Learn more about lot/batch size ranges in [Acceptance sampling charts](#acceptance-sampling-charts).
+1. On the **Lot/batch size ranges** FastTab, use the buttons in the toolbar to add and remove lot size ranges for the current chart. Use the **Unlimited** button in the toolbar to set a range to have no upper limit (this sets the **To** field to *Unlimited* for the selected row). The lot size ranges group total units in a lot and help find the applicable code letter. Learn more about lot size ranges in [Acceptance sampling charts](#acceptance-sampling-charts).
 
 1. When you're done setting up the chart, select **Validate** in the Action Pane to check data integrity. If the chart is valid, it sets the **Validated** field to *Yes*. Only validated charts can be used for acceptance sampling.
 
@@ -138,7 +138,7 @@ Business users determine AQL indexes based on how critical the product is, indus
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Acceptance sampling** \> **Acceptance sampling indexes**.
 1. Select **New** to create a new inspection level and set the following fields:
-    - **Acceptable quality limit index** – The identification of the acceptance sampling index. The AQL index defines the maximum acceptable defect rate in a sample that determines whether a lot or batch passes or fails inspection.
+    - **Acceptable quality limit index** – The identification of the acceptance sampling index. The AQL index defines the maximum acceptable defect rate in a sample that determines whether a lot passes or fails inspection.
     - **Description** – User defined description of the acceptance sampling index.
 
 1. On the Action Pane, select **Save**.
