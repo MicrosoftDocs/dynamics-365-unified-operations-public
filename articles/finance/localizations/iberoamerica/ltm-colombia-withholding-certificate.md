@@ -1,5 +1,5 @@
 ---
-title: Printing configuration for the Withholding certificate format for Colombia
+title: Configure printing for the Withholding certificate format for Colombia
 description: Learn how to set up and generate three withholding certificate formats for Colombia.
 ms.date: 08/28/2025
 ms.topic: how-to
@@ -9,7 +9,7 @@ author: Fhernandez0088
 ms.author: v-federicohe
 ---
 
-# Printing configuration for the Withholding certificate format for Colombia
+# Configure printing for the Withholding certificate format for Colombia
 
 [!INCLUDE[banner](../includes/banner.md)]
 
