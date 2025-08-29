@@ -54,9 +54,9 @@ Before you can install the Recruiting app, the following prerequisites must be m
 
 ## Get started
 
-To configure the Recruiting app in Dynamics 365 Finance, follow these steps.
+To configure the Recruiting app in Dynamics 365 Human Resources, follow these steps.
 
-1. In Dynamics 365 Finance, open the **Feature management** workspace.
+1. In Dynamics 365 Human Resources, open the **Feature management** workspace.
 2. Select **Check for updates**.
 3. On the **New** tab, search for the **(Preview) Enable recruitment add-on** feature.
 4. Select **Enable now**.
