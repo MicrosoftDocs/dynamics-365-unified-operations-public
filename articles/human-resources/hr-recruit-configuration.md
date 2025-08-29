@@ -68,14 +68,14 @@ To update the settings in the Recruiting add-on, follow these steps.
 ## Customize the email account by creating a new category
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
-2. Select the environment.
-3. In the left pane, select **Solutions**.
-4. In the list of solutions, select **Default Solution**.
-5. In the left pane, select **Tables**.
-6. Select **Email account configuration**.
-7. Under **Schema**, select **Columns**.
-8. Edit the **Category** column, and add the new category.
-9. To configure the new email account category in the Recruiting add-on app, go to **Configurations** \> **Email accounts configurations**.
+1. Select the environment.
+1. In the left pane, select **Solutions**.
+1. In the list of solutions, select **Default Solution**.
+1. In the left pane, select **Tables**.
+1. Select **Email account configuration**.
+1. Under **Schema**, select **Columns**.
+1. Edit the **Category** column, and add the new category.
+1. To configure the new email account category in the Recruiting add-on app, go to **Configurations** \> **Email accounts configurations**.
 
 ## Use email templates
 
