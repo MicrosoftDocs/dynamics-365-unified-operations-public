@@ -45,21 +45,20 @@ The root certificate (or CA certificate) is used to sign any number of intermedi
 Use the following PowerShell script to generate a self-signed CA certificate.
 
 ```powershell
-\# Create a Root CA certificate (self-signed)\
-\$rootCert = New-SelfSignedCertificate \`\
-  -Subject \"CN=ContosoRootCA, O=Contoso, OU=IT, C=US\" \`\
-  -KeyExportPolicy Exportable \`\
-  -KeyUsage CertSign, CRLSign, DigitalSignature \`\
-  -Type Custom \`\
-  -KeyAlgorithm RSA \`\
-  -KeyLength 2048 \`\
-  -HashAlgorithm SHA256 \`\
-  -NotAfter (Get-Date).AddYears(10) \`\
-  -CertStoreLocation \"Cert:\\LocalMachine\\My\" \`\
-  -TextExtension @(\"2.5.29.19={critical}{text}ca=true&pathlength=1\")
+# Create a Root CA certificate (self-signed)
+$rootCert = New-SelfSignedCertificate `
+  -Subject "CN=ContosoRootCA, O=Contoso, OU=IT, C=US" `
+  -KeyExportPolicy Exportable `
+  -KeyUsage CertSign, CRLSign, DigitalSignature `
+  -Type Custom `
+  -KeyAlgorithm RSA `
+  -KeyLength 2048 `
+  -HashAlgorithm SHA256 `
+  -NotAfter (Get-Date).AddYears(10) `
+  -CertStoreLocation "Cert:LocalMachineMy" `
+  -TextExtension @("2.5.29.19={critical}{text}ca=true&pathlength=1")
 
-Export-Certificate -Cert \$rootCert -FilePath
-\"C:\\Temp\\ContosoRootCA.cer\"
+Export-Certificate -Cert $rootCert -FilePath "C:\Temp\ContosoRootCA.cer"
 ```
 
 Here's an explanation of the script.
@@ -67,7 +66,7 @@ Here's an explanation of the script.
 1. **Certificate creation**
 
     ```powershell
-    \$rootCert = New-SelfSignedCertificate \`
+    $rootCert = New-SelfSignedCertificate 
     ```
 
     This line calls the new self-signed certificate cmdlet and assigns the generated certificate object to the `\$rootCert` variable.
@@ -75,7 +74,7 @@ Here's an explanation of the script.
 1. **Subject**
 
     ```powershell
-    -Subject \"CN=ContosoRootCA, O=Contoso, OU=IT, C=US\" \`
+    -Subject "CN=ContosoRootCA, O=Contoso, OU=IT, C=US" 
     ```
 
     The `Subject` parameter sets the distinguished name (DN) for the certificate. The DN has the following components:
@@ -88,7 +87,7 @@ Here's an explanation of the script.
 1. **Key export policy**
 
     ```powershell
-    -KeyExportPolicy Exportable \`
+    -KeyExportPolicy Exportable 
     ```
 
     The `KeyExportPolicy` parameter determines whether the private key can be exported. A value of `Exportable` specifies that the private key can be extracted from the certificate store as it's needed.
@@ -96,7 +95,7 @@ Here's an explanation of the script.
 1. **Key usage**
 
     ```powershell
-    -KeyUsage CertSign, CRLSign, DigitalSignature \`
+    -KeyUsage CertSign, CRLSign, DigitalSignature 
     ```
 
     The `KeyUsage` parameter specifies what the certificate's key can be used for. The following uses are typical for a CA certificate:
@@ -108,7 +107,7 @@ Here's an explanation of the script.
 1. **Type**
 
     ```powershell
-    -Type Custom \`
+    -Type Custom 
     ```
 
     The `Type` custom setting indicates that no predefined template was used to create the certificate. Instead, the certificate was created with customized properties.
@@ -116,7 +115,7 @@ Here's an explanation of the script.
 1. **Key algorithm**
 
     ```powershell
-    -KeyAlgorithm RSA \`
+    -KeyAlgorithm RSA 
     ```
 
     The `KeyAlgorithm` parameter defines the algorithm for creating the key pair. RSA is one of the most widely used public-key cryptographic algorithms.
@@ -124,7 +123,7 @@ Here's an explanation of the script.
 1. **Key length**
 
     ```powershell
-    -KeyLength 2048 \`
+    -KeyLength 2048 
     ```
 
     The `KeyLength` parameter sets the size of the cryptographic key in bits. A 2048-bit key is a common standard that offers a strong balance between security and performance.
@@ -132,7 +131,7 @@ Here's an explanation of the script.
 1. **Hash algorithm**
 
     ```powershell
-    -HashAlgorithm SHA256 \`
+    -HashAlgorithm SHA256 
     ```
 
     The `HashAlgorithm` parameter specifies the algorithm that is used during certificate creation (when the certificate is signed). SHA256 is a secure and widely adopted hash algorithm.
@@ -140,7 +139,7 @@ Here's an explanation of the script.
 1. **Validity period**
 
     ```powershell
-    -NotAfter (Get-Date).AddYears(10) \`
+    -NotAfter (Get-Date).AddYears(10) 
     ```
 
     The `NotAfter` parameter sets the expiration date of the certificate. A value of `(Get-Date).AddYears(10)` specifies that the certificate is valid for 10 years from the current date. Root certificates that have a long validity period are common.
@@ -148,7 +147,7 @@ Here's an explanation of the script.
 1. **Certificate store location**
 
     ```powershell
-    -CertStoreLocation \"Cert:\\LocalMachine\\My\" \`
+    -CertStoreLocation "Cert:\LocalMachine\My" 
     ```
 
     The `CertStoreLocation` parameter indicates where the new certificate is put in the certificate store. The value `\"Cert:\\LocalMachine\\My\"` refers to the personal certificate store for the local computer account.
@@ -156,7 +155,7 @@ Here's an explanation of the script.
 1. **Text extension**
 
     ```powershell
-    -TextExtension @(\"2.5.29.19={critical}{text}ca=true&pathlength=1\")
+    -TextExtension @("2.5.29.19={critical}{text}ca=true&pathlength=1")
     ```
 
     The `TextExtension` parameter is used to add custom certificate extensions in a text-based format. In this example, the value consists of the following parts:
@@ -168,8 +167,7 @@ Here's an explanation of the script.
 1. **Certificate export**
 
     ```powershell
-    Export-Certificate -Cert \$rootCert -FilePath
-    \"C:\\Temp\\ContosoRootCA.cer\"
+    Export-Certificate -Cert $rootCert -FilePath "C:\Temp\ContosoRootCA.cer"
     ```
 
     This command exports the certificate that is created to a file. The file contains the public portion of the certificate, without the private key. It's stored in C:\\Temp\\ContosoRootCA.cer, in a standard certificate file format (usually Base-64 encoded).
@@ -185,34 +183,30 @@ When you run this script, it creates a self-signed root CA certificate that has 
 Use the following PowerShell script to generate an intermediate certificate that is signed by using the root certificate.
 
 ```powershell
-\# Create an Intermediate CA certificate (self-signed)\
-\$rootSubject = \"CN=ContosoRootCA, O=Contoso, OU=IT, C=US\"
+# Create an Intermediate CA certificate (self-signed)
+$rootSubject = "CN=ContosoRootCA, O=Contoso, OU=IT, C=US"
 
-\$rootCert = Get-ChildItem -Path Cert:\\LocalMachine\\My \|\
-    Where-Object { \$\_.Subject -eq \$rootSubject -and
-\$\_.HasPrivateKey }
+$rootCert = Get-ChildItem -Path Cert:\LocalMachine\My | Where-Object { $_.Subject -eq $rootSubject -and $_.HasPrivateKey }
 
-if (-not \$rootCert) {\
-    Write-Error \"Root CA certificate with subject \'\$rootSubject\' not
-found in LocalMachine\\My.\"\
-    return\
+if (-not $rootCert) {
+    Write-Error "Root CA certificate with subject '$rootSubject' not found in LocalMachine\My."
+    return
 }
 
-\$intermediateCert = New-SelfSignedCertificate \`\
-  -Subject \"CN=ContosoIntermediateCA, O=Contoso, OU=IT - Americas,
-C=US\" \`\
-  -KeyExportPolicy Exportable \`\
-  -KeyUsage CertSign, CRLSign, DigitalSignature \`\
-  -Type Custom \`\
-  -KeyAlgorithm RSA \`\
-  -KeyLength 2048 \`\
-  -HashAlgorithm SHA256 \`\
-  -NotAfter (Get-Date).AddYears(5) \`\
-  -CertStoreLocation \"Cert:\\LocalMachine\\My\" \`\
-  -Signer \$rootCert \`\
-  -TextExtension @(\"2.5.29.19={critical}{text}ca=true&pathlength=0\")\
+$intermediateCert = New-SelfSignedCertificate `
+  -Subject "CN=ContosoIntermediateCA, O=Contoso, OU=IT - Americas, C=US" `
+  -KeyExportPolicy Exportable `
+  -KeyUsage CertSign, CRLSign, DigitalSignature `
+  -Type Custom `
+  -KeyAlgorithm RSA `
+  -KeyLength 2048 `
+  -HashAlgorithm SHA256 `
+  -NotAfter (Get-Date).AddYears(5) `
+  -CertStoreLocation "Cert:\LocalMachine\My" `
+  -Signer $rootCert `
+  -TextExtension @("2.5.29.19={critical}{text}ca=true&pathlength=0")
 
-Export-Certificate -Cert \$intermediateCert -FilePath \"C:\\Temp\\.cer\"
+Export-Certificate -Cert $intermediateCert -FilePath "C:\Temp\.cer"
 ```
 
 Here's an explanation of the script.
@@ -220,7 +214,7 @@ Here's an explanation of the script.
 1. **Definition of the root subject**
 
     ```powershell
-    \$rootSubject = \"CN=ContosoRootCA, O=Contoso, OU=IT, C=US\"
+    $rootSubject = "CN=ContosoRootCA, O=Contoso, OU=IT, C=US"
     ```
 
     The `\$rootSubject` variable stores the distinguished name (DN) of the root CA certificate that you previously created. The DN has the following components:
@@ -233,8 +227,7 @@ Here's an explanation of the script.
 1. **Retrieval of the root certificate from the certificate store**
 
     ```powershell
-    \$rootCert = Get-ChildItem -Path Cert:\\LocalMachine\\My \|\
-    Where-Object { \$\_.Subject -eq \$rootSubject -and \$\_.HasPrivateKey }
+    $rootCert = Get-ChildItem -Path Cert:\LocalMachine\My | Where-Object { $_.Subject -eq $rootSubject -and $_.HasPrivateKey }
     ```
 
     This command searches the personal certificate store for the local computer account (Cert:\\LocalMachine\\My). It looks for certificates that match the subject that is defined in the `\$rootSubject` variable and that have an associated private key. The private key is critical because you need it to sign the intermediate certificate and therefore establish a chain of trust. The script can continue with signing only if a matching certificate is found.
@@ -244,55 +237,41 @@ Here's an explanation of the script.
 Use the following PowerShell script to create a user certificate that is validated by the previously created intermediate certificate.
 
 ```powershell
-\# Edit the details as needed\
-\$account = \"testuser\"\
-\$tenant = \"Contoso\"\
-\$userUPN = \"<$account@$tenant.onmicrosoft.com>\"\
-\$subjectPrefix = \"\$account.\$tenant.\"\
-\$subject = \"CN=\$subjectPrefix User Certificate, O=\$tenant, OU=Users,
-C=US\"
+# Edit the details as needed
+$account = "testuser"
+$tenant = "Contoso"
+$userUPN = "$account@$tenant.onmicrosoft.com"
+$subjectPrefix = "$account.$tenant."
+$subject = "CN=$subjectPrefix User Certificate, O=$tenant, OU=Users, C=US"
 
-\# Find the Intermediate CA in the cert store\
-\$intermediateSubject = \"CN=ContosoIntermediateCA, O=Contoso, OU=IT -
-Americas, C=US\"\
-\$intermediateCert = Get-ChildItem -Path Cert:\\LocalMachine\\My \|\
-    Where-Object { \$\_.Subject -eq \$intermediateSubject -and
-\$\_.HasPrivateKey }
+# Find the Intermediate CA in the cert store
+$intermediateSubject = "CN=ContosoIntermediateCA, O=Contoso, OU=IT - Americas, C=US"
+$intermediateCert = Get-ChildItem -Path Cert:\LocalMachine\My |  Where-Object { $_.Subject -eq $intermediateSubject -and $_.HasPrivateKey }
 
-if (-not \$intermediateCert) {\
-    Write-Error \"Intermediate CA cert not found in
-Cert:\\LocalMachine\\My.\"\
-    return\
+if (-not $intermediateCert) {
+    Write-Error "Intermediate CA cert not found in Cert:\LocalMachine\My."
+    return
 }
 
-\$userCert = New-SelfSignedCertificate \`\
-  -Subject \$subject \`\
-  -KeyAlgorithm RSA \`\
-  -KeyLength 2048 \`\
-  -HashAlgorithm SHA256 \`\
-  -CertStoreLocation \"Cert:\\LocalMachine\\My\" \`\
-  -Type Custom \`\
-  -KeyExportPolicy Exportable \`\
-  -TextExtension @(\
-      \"2.5.29.19={critical}{text}ca=false\",  \# Basic Constraints (not
-a CA)\
-      \"2.5.29.37={text}1.3.6.1.5.5.7.3.2\",   \# EKU: Client
-Authentication\
-      \"2.5.29.17={text}email=\$userUPN\"       \# SAN: RFC822Name
-(email)\
-  ) \`\
-  -Signer \$intermediateCert \`\
-  -NotAfter (Get-Date).AddYears(1)\
+$userCert = New-SelfSignedCertificate `
+  -Subject $subject `
+  -KeyAlgorithm RSA `
+  -KeyLength 2048 `
+  -HashAlgorithm SHA256 `
+  -CertStoreLocation "Cert:\LocalMachine\My" `
+  -Type Custom `
+  -KeyExportPolicy Exportable `
+  -TextExtension @(
+"2.5.29.19={critical}{text}ca=false",  # Basic Constraints (not a CA)
+"2.5.29.37={text}1.3.6.1.5.5.7.3.2",   # EKU: Client Authentication
+"2.5.29.17={text}email=$userUPN"       # SAN: RFC822Name (email)
+) `
+  -Signer $intermediateCert `
+  -NotAfter (Get-Date).AddYears(1)
  
-
-Export-Certificate -Cert \$userCert -FilePath
-\"C:\\Temp\\\$subjectPrefix-UserCert.cer\"
-
-\$certpwd = ConvertTo-SecureString -String \'yourreqpwdhere\' -force
--AsPlainText
-
-Export-PfxCertificate -Cert \$userCert -FilePath
-\"C:\\Temp\\\$subjectPrefix-UserCert.pfx\" -password \$certpwd
+Export-Certificate -Cert $userCert -FilePath "C:\Temp\$subjectPrefix-UserCert.cer"
+$certpwd = ConvertTo-SecureString -String 'yourreqpwdhere' -force -AsPlainText
+Export-PfxCertificate -Cert $userCert -FilePath "C:\Temp\$subjectPrefix-UserCert.pfx" -password $certpwd
 ```
 
 Here's an explanation of the script.
