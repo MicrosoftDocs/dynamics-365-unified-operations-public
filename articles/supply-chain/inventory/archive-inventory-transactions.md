@@ -15,6 +15,15 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
+> [!IMPORTANT]
+> Inventory transaction consolidation enhances system performance and reduces data volume. However, consolidated transaction updates can sometimes cause data inconsistencies. Therefore, as a precautionary measure, Microsoft has temporarily disabled inventory archiving while we investigate the issues and work on a fix.
+>
+> During this time, inventory archiving is temporarily unavailable, which also prevents consolidated inventory transactions from being created or updated. The inventory transaction consistency checks are also disabled because the consistency check could alter them.
+>
+> The long-term retention (LTR) archive function for inventory transactions requires inventory consolidation because consolidation generates the data needed for the LTR process. However, because the consolidation function is currently disabled, the purge function for LTR of inventory transactions is also disabled until a fix is implemented.
+>
+> If you encounter any error messages related to these issues, you don't need to submit a support request about them. We're actively monitoring these occurrences as part of our investigation.
+
 Over time, the inventory transaction table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This article describes how to consolidate data about inventory transactions to help improve system performance.
 
 > [!NOTE]
