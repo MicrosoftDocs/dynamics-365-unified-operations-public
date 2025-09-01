@@ -67,7 +67,7 @@ Import the latest versions of these configurations. The version description usua
 > - **Tax declaration model mapping** under **Tax declaration model**
 > - **Altinn VAT model mapping** under **Electronic Messages framework model**
 
-For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+For more information about how to import Electronic reporting (ER) configurations from Dataverse, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 > [!NOTE]
 > As of version **136.301** of the **Tax declaration model mapping** under the **Tax declaration model**, we recommend that you enable the **Enable consumption of "Original document is credit note" property from tax transaction in VAT declaration reporting** feature in the **Feature management** workspace. After you enable the feature, run the **Consistency check for TaxTrans_Reporting** consistency check in **Fix errors** mode for every legal entity where tax transactions were posted. To run the consistency check, go to **System administration** \> **Periodic tasks** \> **Database** \> **Consistency check**, and then select **Program** \> **General ledger** \> **Sales tax** \> **Consistency check for TaxTrans_Reporting**.
@@ -75,9 +75,6 @@ For more information about how to download ER configurations from the Microsoft 
 ## <a id="application-specific-parameters"></a>Set up application-specific parameters for the VAT Declaration format
 
 The format that is used to report VAT returns to the Norwegian Tax Administration requires specific values from enumerated lists for some elements (for example, standard tax codes). To ensure that the required values are provided for these elements, you must set up the application-specific parameters for the **VAT Declaration XML (NO)** and **VAT Declaration Excel (NO)** ER formats before you start to use them. Application-specific parameters help associate master data from your Finance environment with the enumerated lists of elements that the Norwegian Tax Administration requires for the report.
-
-> [!NOTE]
-> We recommend that you enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled, parameters that are configured for an earlier version of an ER format automatically become applicable for a later version of the same format. If this feature isn't enabled, you must explicitly configure application-specific parameters for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace as of Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 Application-specific parameters for the **VAT Declaration XML (NO)** and **VAT Declaration Excel (NO)** ER formats include the following lookup fields for setup.
 
@@ -108,15 +105,7 @@ To set up the application-specific parameters for the **VAT Declaration XML (NO)
 
 ### <a id="note-for-tax-code"></a>Note for tax code (NoteForTaxCode_Lookup)
 
-The `<merknad>` tag is an optional tag under the `<mvaSpesifikasjonslinje>` node. However, in some scenarios, the Norwegian Tax Administration might require reporting of this tag. To report this tag from your Finance environment, enable the [Enable extended support of Financial reason code](../europe/emea-financial-reason.md) feature in the **Feature management** workspace. 
-
-1. In Dynamics 365 Finance, go to **Workspaces** \> **Feature management**.
-2. On the **All** tab, find and select the **Enable extended support of Financial reason code** feature in the list.
-3. Select **Enable now**.
-
-![Enabling the Enable extended support of Financial reason code feature in the Feature management workspace.](../media/emea-nor-vat-return-fin-reason.png)
-
-When the feature is enabled in your Finance environment, tax transactions that are posted in the system will include a financial reason code and a comment from the original documents. You can then report the `<merknad>` tag under the `<mvaSpesifikasjonslinje>` node in your VAT return. Use **NoteForTaxCode_Lookup** to associate master data from your Finance environment with the enumerated list of values that the Norwegian Tax Administration requires. For this lookup field, the following master data sources are available for setup:
+The `<merknad>` tag is an optional tag under the `<mvaSpesifikasjonslinje>` node. However, in some scenarios, the Norwegian Tax Administration might require reporting of this tag. To report this tag from your Finance environment, use [Financial reason code](../media/emea-nor-vat-return-fin-reason.png) feature. When the feature is used, tax transactions that are posted in the system will include a financial reason code and a comment from the original documents. You can then report the `<merknad>` tag under the `<mvaSpesifikasjonslinje>` node in your VAT return. Use **NoteForTaxCode_Lookup** to associate master data from your Finance environment with the enumerated list of values that the Norwegian Tax Administration requires. For this lookup field, the following master data sources are available for setup:
 
 - **Tax code** – The sales tax code.
 - **Tax classifier** – An enumerated list of values that represent different combinations of tax transaction directions and credit note criteria in Finance. For more information about how the tax classifier is calculated for a tax transaction, see [Detailed description of tax transaction classifier](#tax-transaction-classifier).
@@ -153,7 +142,7 @@ The following table shows the lookup results for **NoteForTaxCode_Lookup**.
 >
 > If you select a financial reason code for a document that isn't associated with any lookup result from the previous table (so that the **Annet** value will be applied), the system won't be able to report that reason as one of the values from the enumerated list that the Norwegian Tax Administration requires. In this case, the reason code and comment will be reported in the `<merknad/beskrivelse>` tag under the `<mvaSpesifikasjonslinje>` node. The comment will be reported as-is in the related **Reason comment** field of the original document.
 
-Hotfix [699358](https://fix.lcs.dynamics.com/Issue/Details?bugId=699358&dbType=3&qc=b53d15d28a992c61827bf70302fa9b5c176337520030077a14cedb1131994315) introduces a new **utenfor rekkevidde** (out of scope) value for the lookup result of the **NoteForTaxCode_Lookup** lookup field. Use this value to map all the financial reasons that should be omitted in your VAT return. Specifically, you can use this value to map **\*Blank\*** and **\*Not blank\*** values.
+Use the **utenfor rekkevidde** (out of scope) value for the lookup result of the **NoteForTaxCode_Lookup** lookup field to map all the financial reasons that should be omitted in your VAT return. Specifically, you can use this value to map **\*Blank\*** and **\*Not blank\*** values.
 
 The following illustration shows an example of the setup for the **NoteForTaxCode_Lookup** lookup field.
 
