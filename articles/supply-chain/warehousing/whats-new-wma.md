@@ -31,7 +31,7 @@ This app is in preview. By installing this preview app, you are confirming that 
 
 ### What's new in version 4.0.8.0
 
-Version 4 introduces many new features and improvements that will enhance your warehouse management experience. For details, see [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
+Version 4 introduces many new features and improvements that will enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
 Version 4.0.8.0 adds the following fixes and improvements:
 
@@ -53,7 +53,7 @@ This app is in preview. By installing this preview app, you are confirming that 
 
 ### What's new in version 4.0.7.0
 
-Version 4 introduces many new features and improvements that will enhance your warehouse management experience. For details, see [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
+Version 4 introduces many new features and improvements that will enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
 Version 4.0.7.0 adds the following fixes and improvements:
 
@@ -72,7 +72,7 @@ This app is in preview. By installing this preview app, you are confirming that 
 
 ### What's new in version 4.0.3.0
 
-Version 4 introduces many new features and improvements that will enhance your warehouse management experience. For details, see [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
+Version 4 introduces many new features and improvements that will enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
 Version 4.0.3.0 adds the following fixes and improvements:
 
@@ -94,7 +94,7 @@ This app is in preview. By installing this preview app, you are confirming that 
 
 ### What's new in version 4
 
-Version 4 introduces many new features and improvements that will enhance your warehouse management experience. For details, see [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
+Version 4 introduces many new features and improvements that will enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
 ## Version 3.0.9.0
 
