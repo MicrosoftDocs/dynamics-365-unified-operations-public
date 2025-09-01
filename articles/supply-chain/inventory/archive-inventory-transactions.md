@@ -15,7 +15,7 @@ ms.search.form: InventTransArchiveProcessForm
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> To enhance system performance and reduce data volume, inventory archiving consolidates inventory transactions. However, we have discovered that in some cases, updating these consolidated transactions may cause data inconsistencies. As a precautionary measure, inventory archiving has been temporarily disabled while we investigate and work on a fix.
+> To enhance system performance and reduce data volume, inventory transaction consolidation consolidates inventory transactions. However, we have discovered that in some cases, updating these consolidated transactions may cause data inconsistencies. As a precautionary measure, inventory archiving has been temporarily disabled while we investigate and work on a fix.
 > 
 > During this time, inventory archiving will be temporarily unavailable, which also affects the creation of new consolidated inventory transactions and making updates to existing ones. Please note that the inventory transaction consistency check will be disabled for customers who have previously consolidated inventory transactions, as the consistency check may alter them.
 > 
