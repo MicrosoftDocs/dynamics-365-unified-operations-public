@@ -15,13 +15,13 @@ ms.search.form: InventTransArchiveProcessForm
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> To enhance system performance and reduce data volume, inventory transaction consolidation consolidates inventory transactions. However, we have discovered that in some cases, updating these consolidated transactions may cause data inconsistencies. As a precautionary measure, inventory archiving has been temporarily disabled while we investigate and work on a fix.
-> 
-> During this time, inventory archiving will be temporarily unavailable, which also affects the creation of new consolidated inventory transactions and making updates to existing ones. Please note that the inventory transaction consistency check will be disabled for customers who have previously consolidated inventory transactions, as the consistency check may alter them.
-> 
-> To enable the long-term retention (LTR) archive function for inventory transactions, it is required to first consolidate the inventory, as this step generates the necessary data for the LTR process. However, since the consolidation function is currently disabled, the purge function for LTR of inventory transactions will also remain disabled until a fix is implemented.
-> 
-> If you encounter an error message, there is no need to submit a support request. We are actively monitoring these occurrences as part of our investigation. 
+> Inventory transaction consolidation enhances system performance and reduces data volume. However, consolidated transaction updates can sometimes cause data inconsistencies. Therefore, as a precautionary measure, Microsoft has temporarily disabled inventory archiving while we investigate the issues and work on a fix.
+>
+> During this time, inventory archiving is temporarily unavailable, which also prevents consolidated inventory transactions from being created or updated. The inventory transaction consistency checks are also disabled because the consistency check could alter them.
+>
+> The long-term retention (LTR) archive function for inventory transactions requires inventory consolidation because consolidation generates the data needed for the LTR process. However, because the consolidation function is currently disabled, the purge function for LTR of inventory transactions is also disabled until a fix is implemented.
+>
+> If you encounter any error messages related to these issues, you don't need to submit a support request about them. We're actively monitoring these occurrences as part of our investigation.
 
 Over time, the inventory transaction table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This article describes how to consolidate data about inventory transactions to help improve system performance.
 
