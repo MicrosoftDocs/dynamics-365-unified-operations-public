@@ -372,11 +372,7 @@ After you import the **Electronic invoicing for Uruguay** feature that includes 
 
 ### Setups-Application Setup
 
-<<<<<<<< HEAD:articles/finance/localizations/iberoamerica/ltm-uruguay-electronic-invoice-connector-configuration.md
 To configure the mapping between Dynamics 365 Finance source tables and electronic document formats, go to the **Setups** tab within the [**Electronic invoice feature**](#electronic-invoice-feature) section, and then select **Application Setup**. This step lets you define how data from Finance is linked to the correct electronic invoice formats for Uruguay.
-========
-You are currently in the [**Electronic invoice feature**](#electronic-invoice-feature) section. Next, select **Application Setup** within the **Setups** tab to configure the mapping between Dynamics 365 source tables and electronic document formats.
->>>>>>>> c1832114809b55acd12d0d6ac198f0ad7f594264:articles/finance/localizations/iberoamerica/ltm-uruguay-electronic-invoice-configuration.md
 
 > [!NOTE]
 > Although this configuration is not set at the general feature level, it acts globally for the selected feature setup. You don't need to repeat these steps for each individual format or feature—one configuration is sufficient for all supported document types within the feature.
