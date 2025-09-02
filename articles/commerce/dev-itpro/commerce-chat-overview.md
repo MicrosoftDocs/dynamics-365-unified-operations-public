@@ -1,6 +1,6 @@
 ---
 title: Commerce chat features overview
-description: This article provides an overview of the Commerce chat features available for online shoppers when the Microsoft Dynamics 365 Omnichannel for Customer Service and Microsoft Copilot Studio applications are integrated with Dynamics 365 Commerce e-commerce websites.
+description: This article provides an overview of the chat features available when the Microsoft Dynamics 365 Omnichannel for Customer Service and Microsoft Copilot Studio applications are integrated with Dynamics 365 Commerce e-commerce websites.
 author: gvrmohanreddy
 ms.date: 09/02/2025
 ms.topic: overview
@@ -16,9 +16,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of the Commerce chat features available to online shoppers when Omnichannel for Customer Service and Microsoft Copilot Studio are integrated with Dynamics 365 Commerce e-commerce websites.
-
-By integrating the Microsoft Dynamics 365 Omnichannel for Customer Service and Microsoft Copilot Studio applications with Dynamics 365 Commerce e-commerce websites, businesses can empower their online shoppers through chat capabilities. 
+This article provides an overview of the chat features available when Microsoft Dynamics 365 Omnichannel for Customer Service and Microsoft Copilot Studio are integrated with Dynamics 365 Commerce e-commerce websites.
 
 ## Omnichannel for Customer Service
 
