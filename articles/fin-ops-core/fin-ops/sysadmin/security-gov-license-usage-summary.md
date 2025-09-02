@@ -59,7 +59,7 @@ The User security governance license usage summary page provides a layered view 
 - How system permissions are exercised
 - How responsibilities map to different role types
 
-These details enable deeper visibility into user access patterns and ensures that roles align with intended responsibilities.
+These details enable deeper visibility into user access patterns and ensure that roles align with intended responsibilities.
 
 For a consolidated view across all environments within the same tenant, see the reports in the **Power Platform admin center**.
 
