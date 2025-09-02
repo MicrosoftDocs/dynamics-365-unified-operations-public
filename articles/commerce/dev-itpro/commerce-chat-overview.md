@@ -2,9 +2,8 @@
 title: Commerce chat features overview
 description: This article provides an overview of the Commerce chat features that are available for online shoppers when the Microsoft Dynamics 365 Omnichannel for Customer Service and Power Virtual Agents applications are integrated with Dynamics 365 Commerce e-commerce websites.
 author: gvrmohanreddy
-ms.date: 07/26/2024
+ms.date: 09/02/2025
 ms.topic: overview
-audience: IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
