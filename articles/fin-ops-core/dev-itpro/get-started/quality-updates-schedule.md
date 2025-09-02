@@ -91,7 +91,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.43 PQU-9 | November 26, 2025 | December 1, 2025 to January 18, 2026| Not Started |
 | 10.0.44 PQU-1 | July 9, 2025 | July 14, 2025 to August 17, 2025| Completed |
 | 10.0.44 PQU-2 | August 6, 2025 | August 11, 2025 to September 14, 2025| In-Progress |
-| 10.0.44 PQU-3 | September 3, 2025 | September 8, 2025 to October 12, 2025| Not Started |
+| 10.0.44 PQU-3 | September 3, 2025 | September 8, 2025 to October 12, 2025| In-Progress |
 | 10.0.44 PQU-4 | October 1, 2025 | October 6, 2025 to November 9, 2025| Not Started |
 | 10.0.44 PQU-5 | October 29, 2025 | November 3, 2025 to January 11, 2026| Not Started |
 | 10.0.44 PQU-6 | November 26, 2025 | December 1, 2025 to January 18, 2026| Not Started |
@@ -179,7 +179,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | September 22 to September 25, 2025 | October 4 to October 5, 2025 |
 | Station 6 | September 23 to September 26, 2025 | October 4 to October 5, 2025 |
 
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.44 Release-2 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.44 Release-2 train schedule
 
 **App version: 10.0.2263.93**
 
@@ -195,6 +195,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | August 25 to August 28, 2025 | September 6 to September 7, 2025 |
 | Station 5 | September 1 to September 4, 2025 | September 13 to September 14, 2025 |
 | Station 6 | September 2 to September 5, 2025 | September 13 to September 14, 2025 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.44 Release-3 train schedule
+
+**App version: 10.0.2263.117**
+
+**Platform version: 7.0.7606.138**
+
+**Unified Environment Provisioning Application Version: 10.0.44.5**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | September 8 to September 11, 2025 | NA |
+| Station 2 | September 15 to September 18, 2025 | September 27 to September 28, 2025 |
+| Station 3 | September 16 to September 19, 2025 | September 27 to September 28, 2025 |
+| Station 4 | September 22 to September 25, 2025 | October 4 to October 5, 2025 |
+| Station 5 | September 29 to October 2, 2025 | October 11 to October 12, 2025 |
+| Station 6 | September 30 to October 3, 2025 | October 11 to October 12, 2025 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that are notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
