@@ -38,7 +38,7 @@ To set the **Revenue and expense deferral** parameter, follow these steps:
  - **Catch up** – The amount after all recognized lines are recalculated.
  - **Reversal** – Any lines after the recalculation date are reversed by using the specified journal name and posting date. The amount after the recalculation date is then recalculated.
 
-### Background automation
+### Initialize background automation
 This feature introduces background automation to adjust COGS for deferral schedules in subscription billing. 
 
 To ensure the feature operates as intended, initialize the background process automation.
@@ -46,7 +46,7 @@ To ensure the feature operates as intended, initialize the background process au
 1.	Select **Initialize process automations**.
 1.	After initialization, verify that **Subscription billing deferral COGS adjustment (preview)** appears in the **Background processes** list.
 
-When an inventory closing or recalculation process is triggered, the system completes the following tasks.
+When an inventory closing or recalculation process is triggered, the system completes the following tasks:
  - Identifies impacted consumption deferral schedules.
  - Updates the **Inventory cost adjustment** field in the COGS deferral schedule to reflect any change in the original inventory cost.
  - Executes the update asynchronously.
@@ -63,7 +63,7 @@ After inventory closing or physical inventory adjustment is recalculated:
  - The deferral schedule is updated with an **Inventory cost adjustment** amount in a consumption deferral schedule (COGS).
  - No new deferral schedule is created and the existing one is updated with the revised cost value.
 
-### Audit trail
+### Audit trail update
 An additional line in the **Audit trail** is added to capture the inventory adjustment amount. 
 
 #### Project posted transaction updates
