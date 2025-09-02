@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/archive-invent-doc.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/",
+      "redirect_document_id": "false"  
+    },   
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-development-environments.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv",
       "redirect_document_id": "false"  
@@ -28493,3 +28498,4 @@
   ]
 
 }
+
