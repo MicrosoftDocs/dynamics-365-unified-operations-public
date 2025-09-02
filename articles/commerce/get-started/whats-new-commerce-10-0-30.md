@@ -4,8 +4,7 @@ description: This article describes features that are either new or changed in M
 author: josaw1
 ms.date: 04/12/2024
 ms.update-cycle: 1095-days
-ms.topic: article
-audience: Application User
+ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
@@ -13,7 +12,6 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-09-01
-ms.dyn365.ops.version: 10.0.29
 ---
 
 # Preview of Dynamics 365 Commerce 10.0.30 (November 2022)
