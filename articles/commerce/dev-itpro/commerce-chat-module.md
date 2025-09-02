@@ -157,7 +157,7 @@ For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).
 
 [Commerce chat features overview](commerce-chat-overview.md)
 
-[Commerce Chat with Power Virtual Agents module](chat-module-pva.md)
+[Commerce Chat with Microsoft Copilot Studio module](chat-module-pva.md)
 
 [Commerce chat module proactive chat parameters](chat-proactive-chat-parameters.md)
 

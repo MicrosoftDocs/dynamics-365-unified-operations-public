@@ -19,11 +19,11 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the proactive chat parameters of the Commerce Chat with Omnichannel for Customer Service and Commerce Chat with Power Virtual Agents chat modules in Microsoft Dynamics 365 Commerce.
+This article describes the proactive chat parameters of the Commerce Chat with Omnichannel for Customer Service and Commerce Chat with Microsoft Copilot Studio chat modules in Microsoft Dynamics 365 Commerce.
 
 ## Proactive chat properties
 
-The proactive chat properties are located in the properties pane of the Commerce Chat with Omnichannel for Customer Service and Commerce Chat with Power Virtual Agents modules in Commerce site builder.
+The proactive chat properties are located in the properties pane of the Commerce Chat with Omnichannel for Customer Service and Commerce Chat with Microsoft Copilot Studio modules in Commerce site builder.
 
 > [!NOTE]
 > By default, all the proactive chat properties that are listed here are blank. We recommend that you learn more about these properties and set them only as they are required. This approach will help reduce erroneous proactive chats from being triggered.
@@ -107,4 +107,4 @@ The proactive chat properties are located in the properties pane of the Commerce
 
 [Commerce Chat with Omnichannel for Customer Service module](commerce-chat-module.md)
 
-[Commerce Chat with Power Virtual Agents module](chat-module-pva.md)
+[Commerce Chat with Microsoft Copilot Studio module](chat-module-pva.md)
