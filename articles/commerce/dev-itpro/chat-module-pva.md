@@ -4,7 +4,7 @@
 title: Commerce Chat with Power Virtual Agents module
 description: This article describes the Commerce Chat with Power Virtual Agents module that integrates Microsoft Power Virtual Agents with Dynamics 365 Commerce websites.
 author: josaw1
-ms.date: 08/01/2024
+ms.date: 09/02/2025
 ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
@@ -39,9 +39,9 @@ To use the Commerce Chat with Microsoft Copilot Studio feature, you must first c
 
 After you configure the chatbot, follow the procedures below to obtain the bot ID, and tenant ID chatbot parameter values you'll use to configure the Commerce chat experience. 
 
-### Find the bot ID of a Microsoft Copilot Studio
+### Find the bot ID of Microsoft Copilot Studio chatbot
 
-To find the bot ID of a Microsoft Copilot Studio in the Microsoft Copilot Studio web app, follow these steps.
+To find the bot ID of a Microsoft Copilot Studio chatbot in the Microsoft Copilot Studio web app, follow these steps.
 
 1. In the left navigation menu, select **Settings \> Channels**.
 1. Select **Mobile app**.
@@ -49,7 +49,7 @@ To find the bot ID of a Microsoft Copilot Studio in the Microsoft Copilot Studio
 1. Open a new browser tab and navigate to the **Token Endpoint**. A JSON result displays. Copy the value of the **token** property. The value is a JWT.
 1. Decode the JWT. In the decoded result, the **bot ID** is found in the **bot** field.
 
-:::image type="content" source="../media/chat-module-pva-botid.png" alt-text="Find bot ID of a Microsoft Copilot Studio":::
+:::image type="content" source="../media/chat-module-pva-botid.png" alt-text="Find bot ID of Microsoft Copilot Studio bot":::
 
 :::image type="content" source="../media/chat-module-pva-directlinetoken.png" alt-text="Direct line token result":::
 
@@ -60,9 +60,9 @@ To find the bot ID of a Microsoft Copilot Studio in the Microsoft Copilot Studio
 
 For more information on how to copy the bot ID parameter values, see [Retrieve your Microsoft Copilot Studio bot parameters](/power-virtual-agents/publication-connect-bot-to-custom-application#retrieve-your-power-virtual-agents-bot-parameters).
 
-### Find the tenant ID of a Microsoft Copilot Studio
+### Find the tenant ID of a Microsoft Copilot Studio chatbot
 
-To find the tenant ID of a Microsoft Copilot Studio in the Microsoft Copilot Studio web app, follow these steps.
+To find the tenant ID of a Microsoft Copilot Studio chatbot in the Microsoft Copilot Studio web app, follow these steps.
 
 1. In the left navigation menu, select **Settings \> Details**.
 1. Select **Advanced**.
@@ -78,19 +78,19 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 
 1. In Commerce site builder for your site, go to **Fragments**.
 1. Select **New**.
-1. In the **Select a fragment** dialog box, select the **Commerce Chat with Microsoft Copilot Studio** module, enter a name for the fragment, and then select **OK**.
+1. In the **Select a fragment** dialog, select the **Commerce Chat with Microsoft Copilot Studio** module, enter a name for the fragment, and then select **OK**.
 1. In the outline view, select the **Msdyn365 pva chat connector** slot.
 1. In the properties pane on the right, follow these steps:
 
     1. Under **Bot Parameters**, in the **Bot Framework Webchat Chat CDN URL** field, leave the default value (for example, `https://cdn.botframework.com/botframework-webchat/latest/webchat.js`).
     1. In the **Bot Framework Direct Line Authentication URL** field, leave the default value (for example, `https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken`).
-    1. In the **Bot ID** field, enter the Microsoft Copilot Studio **Bot ID** value that you copied in the [Prerequisites for using Microsoft Copilot Studio](#prereq) section.
+    1. In the **Bot ID** field, enter the Microsoft Copilot Studio bot ID value that you copied in the [Prerequisites for using Microsoft Copilot Studio](#prereq) section.
     1. In the **Tenant ID** field, enter the **Tenant ID** value that you copied.
 
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 1. Go to **Fragments**, and open the header fragment for your site.
 1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add fragment**.
-1. In the **Select modules** dialog box, select the chat fragment that you created earlier, and then select **OK**.
+1. In the **Select modules** dialog, select the chat fragment that you created earlier, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
 ## Proactive chat parameters
