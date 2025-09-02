@@ -82,7 +82,6 @@ To create a VAT ID for the legal entity, follow these steps.
 	1. On the **General** tab, in the **Effective** field, enter a date and then select **Save** if it is needed.
 	1. Select **Save** and close the page.
 
-
 ### Set up VAT IDs of customers and vendors
 
 This section explains how to add VAT registration IDs to a customer or vendor account. 
@@ -104,9 +103,58 @@ To create a VAT ID for a customer or a vendor, follow these steps.
 
 1. Select **Save** and close the page.
 
+## Configure tax office for legal entity, customers, and vendors
+
+This section provides information on how to define tax offices in order to assign to legal entities, customers and vendors in Finance for Türkiye.
+
+In Türkiye, every legal entity, customer, and vendor must be linked to a tax office for identification and regulatory reporting. 
+In Finance, this information is managed through the **Issuing agencies** setup. 
+By defining tax office names and codes, you ensure that **RegistrationIDs** are correctly associated with the appropriate tax authority. 
+This setup is essential for generating compliant e-invoice (UBL-TR) documents and other statutory reports.
+
+To define tax offices, follow these steps; 
+
+1. Go to **Organization administration > Global address book > Issuing agencies**.  
+1. On the **Issuing agencies** page, select **New**.
+1. In the **Issuing agency** field, enter the numeric tax office code (for example, *34272*).
+1. In the **Description** field, enter the name of the tax office (for example, *Kadıköy vergi dairesi*).
+1. Repeat these steps for all relevant tax offices.
+
+> [!NOTE]
+> The tax office information entered here is used in e-invoice (UBL-TR) XML files and other legal reports. Incorrect configuration may result in validation errors from GİB (Turkish Revenue Administration).
+
+### Set up tax office of a legal entity
+
+This section provides information about how to set up a tax office for legal entity.
+
+In Türkiye, each legal entity must be associated with a local tax office. This information is required for compliance with e-invoice (UBL-TR) and other regulatory reporting.
+To define tax office of a legal entity, follow these steps;
+
+1. Go to **Organization administration > Organizations > Legal entities**.  
+1. Select the legal entity that you want to assign the tax office.  
+1. Select **Registration IDs** FastTab.  
+1. Select a tax office in **Issuing agency** field in **RegistrationID** FastTab.
+1. Select **Save**.
+
+### Set up tax offices for customers and vendors
+
+This section describes how to set up tax office information on customers and vendors in Finance for Türkiye.
+Tax office details are required to correctly identify the VAT IDs of customers and vendors and to ensure compliance with e-invoice and reporting requirements.
+ 
+When a **RegistrationIDs** is assigned to customers or vendors, the corresponding tax office code must also be linked.
+
+Once tax offices are defined, they can be linked to customers or vendors through the **Registration IDs**. 
+To assign tax offices to customers or vendors, follow these steps; 
+
+1. Go to **Accounts receivable > Customers > All customers** (or **Accounts payable > Vendors > All vendors**).
+2. Select a customer or vendor account.
+3. On the **Customer** FastTab, select the **Registration IDs** in **Registration** group.
+4. Select a tax office in **Issuing agency** field in **RegistrationID** FastTab.
+5. Select **Save**.
+
+This ensures that when electronic invoices are generated, the customer’s tax office is correctly reflected in the UBL-TR XML file.
+
 > [!NOTE] 
 > This procedure describes the main settings that are required for localization. You can set other fields that are required for other Dynamics 365 Finance features that you use.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
