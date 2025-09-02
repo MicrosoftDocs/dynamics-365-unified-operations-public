@@ -3,7 +3,7 @@ title: Extend Commerce Data Exchange - Real-time Service
 description: This article explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class.
 author: josaw1
 ms.date: 08/31/2022
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
@@ -11,6 +11,7 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
+ms.custom: sfi-ropc-nochange
 ---
 
 # Extend Commerce Data Exchange - Real-time Service

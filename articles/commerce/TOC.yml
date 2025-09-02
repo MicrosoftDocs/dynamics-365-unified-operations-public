@@ -14,14 +14,14 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.45 (September 2025)
+          href: get-started/whats-new-commerce-10-0-45.md
+        - name: Commerce 10.0.44 (April 2025)
+          href: get-started/whats-new-commerce-10-0-44.md
         - name: Commerce 10.0.43 (January 2025)
           href: get-started/whats-new-commerce-10-0-43.md
         - name: Commerce 10.0.42 (December 2024)
           href: get-started/whats-new-commerce-10-0-42.md
-        - name: Commerce 10.0.41 (September 2024)
-          href: get-started/whats-new-commerce-10-0-41.md
-        - name: Commerce 10.0.40 (June 2024)
-          href: get-started/whats-new-commerce-10-0-40.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -144,6 +144,12 @@
         items:
         - name: User interface elements
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/commerce
+        - name: Default dashboard
+          href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/commerce
+        - name: Immersive Home (production ready preview)
+          href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/commerce
+        - name: Set the preferred initial page for each user
+          href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/commerce
         - name: Accessibility features
           href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?context=/dynamics365/context/commerce
         - name: Feature management overview
@@ -234,14 +240,16 @@
           href: dev-itpro/retail-in-store-topology.md
         - name: Commerce Data Exchange
           items:
-          - name: Commerce Data Exchange best practices
-            href: dev-itpro/CDX-Best-Practices.md
           - name: Commerce Data Exchange and commerce channel communications
             href: dev-itpro/define-retail-channel-communications-cdx.md
+          - name: Commerce Data Exchange best practices
+            href: dev-itpro/CDX-Best-Practices.md
           - name: Commerce Data Exchange troubleshooting
             href: dev-itpro/CDX-Troubleshooting.md
           - name: Sort Commerce Data Exchange packages by primary index
             href: dev-itpro/CDX-package-sort.md
+          - name: Download sessions overview
+            href: dev-itpro/download-sessions.md
         - name: Modern POS architecture
           href: dev-itpro/retail-modern-pos-architecture.md
         - name: Modernizing the Commerce in-store technology stack (white paper)
@@ -262,6 +270,8 @@
           href: dev-itpro/retail-store-system-begin.md
         - name: Configure and install Commerce Scale Unit (self-hosted)
           href: dev-itpro/retail-store-scale-unit-configuration-installation.md
+        - name: Download and install Commerce Scale Unit
+          href: dev-itpro/retail-store-scale-unit-download-install.md
         - name: Modern POS configuration and installation
           href: dev-itpro/retail-modern-pos-device-activation.md
         - name: Manage accounts and devices from headquarters
@@ -420,10 +430,10 @@
               href: define-maintain-channel-clients-registers-hw-stations.md
             - name: Health check for POS peripherals and services
               href: pos-healthcheck.md
+            - name: Health check view for offline readiness
+              href: health-check-view-offline.md
             - name: Support for network peripherals
               href: dev-itpro/network-peripherals.md
-            - name: Peripheral compatibility
-              href: dev-itpro/Compatible-peripherals.md
           - name: Screen layouts
             items:
             - name: Demo data screen layouts in Store Commerce
@@ -448,11 +458,11 @@
               href: tasks/create-pos-visual-profile-2016-02.md
           - name: Payments
             items:
-            - name: Check out faster with optimized payment flows (preview)
+            - name: Check out faster with optimized payment flows
               href: dev-itpro/faster-checkout-pos.md
             - name: Gift cards
               items:
-              - name: Support for external gift cards
+              - name: Support for external gift cards (preview)
                 href: dev-itpro/gift-card.md
               - name: Cross-company data sharing for gift cards
                 href: dev-itpro/data-sharing-gift-cards.md
@@ -510,10 +520,8 @@
               href: charge-send.md
             - name: Enable consistent delivery mode handling in e-commerce channels
               href: consistent-delivery-mode-handling.md
-          - name: POS modernization
-            items:
-            - name: POS modernization and usability improvements
-              href: POS-UX-modernization.md  
+        - name: Modern workflows in POS
+          href: POS-UX-modernization.md
         - name: Receipts
           items:
           - name: Set up and design receipt formats
@@ -614,6 +622,8 @@
               href: dev-itpro/apple-pay-adyen.md
             - name: Enable Tap to Pay on iPhone
               href: dev-itpro/tap-to-pay-iphone.md
+            - name: Enable Pay by Link in point of sale using Adyen connector
+              href: dev-itpro/pay-by-link-overview.md
             - name: Troubleshoot Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-troubleshoot.md
           - name: Saving online payment instruments with the Adyen connector
@@ -656,6 +666,8 @@
             href: configure-emailed-receipt-formats.md
           - name: Add a QR code or bar code to transactional and receipt emails
             href: add-qr-code-barcode-email.md
+        - name: Manage Azure Maps for your organization
+          href: dev-itpro/manage-azure-maps.md
         - name: Manage Bing Maps for your organization
           href: dev-itpro/manage-bing-maps.md
         - name: Create and update time slots for customer pickup
@@ -794,6 +806,72 @@
           href: pricing-examples.md
         - name: Pricing extensions
           href: pricing-extensions.md          
+      - name: Unified pricing management
+        items:
+        - name: Unified pricing management module overview
+          href: ../supply-chain/unified-pricing-management/upm-pricing-management-overview.md?context=/dynamics365/context/commerce
+        - name: Turn on the Unified pricing management module for your system
+          href: ../supply-chain/unified-pricing-management/upm-pricing-management-enable.md?context=/dynamics365/context/commerce
+        - name: Price attributes
+          items:
+          - name: Price attributes overview
+            href: ../supply-chain/unified-pricing-management/upm-price-attributes-overview.md?context=/dynamics365/context/commerce
+          - name: Price attributes for products, customers, and orders
+            href: ../supply-chain/unified-pricing-management/upm-price-attributes-setup.md?context=/dynamics365/context/commerce
+          - name: Price attribute groups
+            href: ../supply-chain/unified-pricing-management/upm-price-attribute-groups.md?context=/dynamics365/context/commerce
+          - name: Customer and product price attribute groups
+            href: ../supply-chain/unified-pricing-management/upm-customer-product-attribute-groups.md?context=/dynamics365/context/commerce
+        - name: Price groups
+          items:
+          - name: Price groups overview
+            href: ../supply-chain/unified-pricing-management/upm-price-groups-overview.md?context=/dynamics365/context/commerce
+          - name: Set up price groups for Unified pricing management
+            href: ../supply-chain/unified-pricing-management/upm-price-groups-set-up.md?context=/dynamics365/context/commerce
+          - name: Assign price groups
+            href: ../supply-chain/unified-pricing-management/upm-price-groups-assign.md?context=/dynamics365/context/commerce
+          - name: Price group priorities
+            href: ../supply-chain/unified-pricing-management/upm-price-groups-priorities.md?context=/dynamics365/context/commerce
+        - name: Price component codes
+          items:
+          - name: Price component codes
+            href: ../supply-chain/unified-pricing-management/upm-price-component-code.md?context=/dynamics365/context/commerce
+          - name: Price component code posting
+            href: ../supply-chain/unified-pricing-management/upm-price-component-posting.md?context=/dynamics365/context/commerce
+        - name: Price structures
+          items:
+          - name: Price structure overview
+            href: ../supply-chain/unified-pricing-management/upm-price-structure-overview.md?context=/dynamics365/context/commerce
+          - name: Set up company to use a single price structure
+            href: ../supply-chain/unified-pricing-management/upm-price-structure-single.md?context=/dynamics365/context/commerce
+          - name: Set up company to use a multiple price structures
+            href: ../supply-chain/unified-pricing-management/upm-price-structure-multiple.md?context=/dynamics365/context/commerce
+          - name: Arrange price component codes into a price structure
+            href: ../supply-chain/unified-pricing-management/upm-price-structure-details.md?context=/dynamics365/context/commerce
+        - name: Base prices and sales trade agreements
+          items:
+          - name: Vendor list price and price adjustments
+            href: ../supply-chain/unified-pricing-management/upm-vendor-list-price.md?context=/dynamics365/context/commerce
+          - name: Sales order base price determination rules
+            href: ../supply-chain/unified-pricing-management/upm-base-price-determination-rules.md?context=/dynamics365/context/commerce
+          - name: Base price versions
+            href: ../supply-chain/unified-pricing-management/upm-base-price-versions.md?context=/dynamics365/context/commerce
+          - name: Sales trade agreement prices
+            href: ../supply-chain/unified-pricing-management/upm-sales-trade-agreement-prices.md?context=/dynamics365/context/commerce
+        - name: Discounts and margin price adjustments
+          items:
+          - name: Margin price adjustments
+            href: ../supply-chain/unified-pricing-management/upm-margin-price-adjustments.md?context=/dynamics365/context/commerce
+          - name: Discounts
+            href: ../supply-chain/unified-pricing-management/upm-discounts.md?context=/dynamics365/context/commerce
+          - name: Pricing rules for discounts and margin price adjustments
+            href: ../supply-chain/unified-pricing-management/upm-margin-discount-pricing-rules.md?context=/dynamics365/context/commerce
+        - name: Concurrency within and across price component codes
+          items:
+          - name: Resolving concurrency within price component codes
+            href: ../supply-chain/unified-pricing-management/upm-concurrence-within-codes.md?context=/dynamics365/context/commerce
+          - name: Resolving concurrency across price component codes
+            href: ../supply-chain/unified-pricing-management/upm-concurrence-cross-codes.md?context=/dynamics365/context/commerce
       - name: Recommendations
         items:
         - name: Product recommendations overview
@@ -1014,6 +1092,8 @@
           href: tasks/define-loyalty-cards.md
         - name: Process adjustments of loyalty reward points
           href: tasks/process-loyalty-reward-point-adjustments.md
+        - name: Loyalty upsell prompt in POS
+          href: loyalty-upsell-prompt.md
     - name: Manage your financials
       items:
       - name: Statements overview
@@ -1258,6 +1338,8 @@
             href: customize-site-navigation.md
           - name: Create a page URL
             href: create-page-URL.md
+          - name: Redirect category and product pages to canonical URLs (preview)
+            href: e-commerce-extensibility/add-custom-redirect.md
         - name: Adventure Works theme
           items:
           - name: Adventure Works theme overview
@@ -1388,6 +1470,8 @@
           items:
           - name: Map module
             href: map-module.md
+          - name: Azure Maps module (preview)
+            href: azure-maps-module.md
           - name: Store selector module
             href: store-selector.md
         - name: Account management modules
@@ -1504,6 +1588,8 @@
         href: b2b/payment-method.md
       - name: Set product quantity limits for B2B e-commerce sites
         href: b2b/quantity-limits.md
+      - name: B2B indirect workflows 
+        href: b2b/b2b-indirect.md
       - name: Commerce catalogs for B2B sites
         items:
         - name: Create Commerce catalogs for B2B sites
@@ -1620,7 +1706,7 @@
             href: localizations/dev-itpro/emea-pol-fpi-sample-sdk.md
       - name: France
         items:
-        - name: Cash register functionality (preview)
+        - name: Cash register functionality
           href: localizations/france/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/france/emea-fra-fi-deployment.md
@@ -2676,6 +2762,8 @@
           items:
           - name: Introduction to Commerce Scale Unit (CSU) Core
             href: dev-itpro/CSU-core.md
+          - name: Get started with Headless Commerce Integration
+            href: dev-itpro/headless-commerce-integration.md
         - name: APIs and reference
           items:
           - name: Commerce Scale Unit customer and consumer APIs
@@ -2826,8 +2914,8 @@
             href: dev-itpro/pos-extension/cpos-extension-package.md
           - name: Create a Store Commerce extension installer package
             href: dev-itpro/store-comm-extension-installer.md
-          - name: Store Commerce Hardware station extensibility for Android devices
-            href: dev-itpro/store-comm-android-extensibility.md            
+          - name: Store Commerce Hardware station extensibility for Android and iOS devices
+            href: dev-itpro/store-comm-android-ios-ext.md            
       - name: E-commerce
         items:
         - name: Overview

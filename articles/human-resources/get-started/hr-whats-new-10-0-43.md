@@ -4,7 +4,8 @@ description: Learn about features that are either new or changed in the Microsof
 author: twheeloc
 ms.author: twheeloc
 ms.date: 01/17/2025
-ms.topic: conceptual
+ms.update-cycle: 1095-days
+ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen

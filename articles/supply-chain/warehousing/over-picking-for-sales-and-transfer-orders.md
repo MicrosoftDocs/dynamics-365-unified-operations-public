@@ -3,7 +3,7 @@ title: Over-picking for sales orders and transfer orders
 description: Learn how to enable over-picking for sales orders and transfer orders, including an outline and step-by-step process for scenario setup.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/06/2021
 ms.reviewer: kamaybac
 ms.search.form: WHSRFMenuItem
@@ -30,7 +30,7 @@ The over-pick feature can help workers save time and effort when they pick and s
 - Measure the picked quantity after picking (for example, through lorry weighting).
 
 > [!IMPORTANT]
-> The over-pick feature applies only to sales order and transfer order picking and processing. Replenishment doesn't support over-picking. When replenishment work is run, the system won't allow users to over-pick.
+> The over-pick feature only applies when picking and processing sales orders, transfer orders, production order raw materials, and batch order raw materials. Replenishment doesn't support over-picking. When replenishment work is run, the system won't allow workers to over-pick.
 
 This scenario in this article shows how to set up and use the over-pick feature.
 

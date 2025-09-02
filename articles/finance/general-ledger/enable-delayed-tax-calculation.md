@@ -3,7 +3,7 @@ title: Enable delayed tax calculation on journals
 description: Learn how to turn on the Delayed tax calculation feature to help improve the performance of tax calculations when the number of journal lines is very large.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/18/2019
 ms.reviewer: kfend
 audience: Application User

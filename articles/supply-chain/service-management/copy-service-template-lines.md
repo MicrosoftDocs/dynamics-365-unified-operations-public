@@ -3,7 +3,7 @@ title: Copy service templates lines
 description: Template information can be copied to either a service agreement or a service order. Learn about copy service template lines.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/11/2018
 ms.custom:
 ms.reviewer: kamaybac

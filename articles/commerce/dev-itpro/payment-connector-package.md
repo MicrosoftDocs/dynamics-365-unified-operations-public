@@ -3,7 +3,7 @@ title: Create Commerce payment packaging for finance and operations deployment
 description: This article explains how to package a payment connector for finance and operations deployment in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 12/02/2020
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

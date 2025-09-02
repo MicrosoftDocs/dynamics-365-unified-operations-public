@@ -5,7 +5,7 @@ title: Adjust AI-ML-based product recommendation results
 description: This article explains how to tailor product recommendation results based on artificial intelligence-machine learning (AI-ML) to your business. 
 author: bebeale
 ms.date: 04/21/2023
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: 

@@ -3,7 +3,7 @@ title: Troubleshoot dual-write issues in finance and operations apps
 description: Learn about troubleshooting information that can help you fix issues with the Dual-write module in finance and operations apps.
 author: RamaKrishnamoorthy
 ms.author: ramasri
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.date: 04/18/2022
 ms.reviewer: johnmichalak
 audience: IT Pro

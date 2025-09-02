@@ -1,12 +1,13 @@
 ---
 title: Inventory transaction details
 description: Learn about the Transactions details page that shows details of a selected inventory transaction, including a table defining various FastTabs. 
-author: rachel-profitt
-ms.author: raprofit
+author: prasungoel
+ms.author: prasungoel
 ms.reviewer: kamaybac
 ms.search.form: InventTrans, InventTransDetails
 ms.topic: how-to
-ms.date: 06/07/2024
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
   - evergreen

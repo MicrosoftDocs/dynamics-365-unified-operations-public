@@ -3,8 +3,8 @@ title: Reconcile bank statements by using advanced bank reconciliation
 description: The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Dynamics 365 Finance.
 author: music727
 ms.author: mibeinar
-ms.topic: article
-ms.date: 01/07/2025
+ms.topic: how-to
+ms.date: 06/12/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -24,9 +24,13 @@ The Advanced bank reconciliation feature lets you import electronic bank stateme
 > Some of the functionality that this article describes applies only when the **Modern bank reconciliation** feature is turned off. If the feature is turned on, the process flow is different, and the following extra functionality is available:
 >
 > - Bank statement validation and confirmation.
-> - Improvements to bank reconciliation matching rules. For more information, see [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md), [Clear reversal bank statement transactions](clear-reverse-bank-stmt-trx.md), [Clear reversal company transactions](clear-reverse-comp-trans.md), and [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md).
-> - Customer and vendor journal posting directly from the bank reconciliation worksheet.
-> - Generation of general ledger vouchers directly from the bank reconciliation worksheet.
+> - Improvements to bank reconciliation matching rules. 
+For more information, see [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md), [Clear reversal bank statement transactions](clear-reverse-bank-stmt-trx.md), [Clear reversal company transactions](clear-reverse-comp-trans.md), [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md) and [Set up bank reconciliation matching rules](set-up-bank-reconciliation-matching-rules.md).
+> - Customer and vendor journal posting directly from the bank reconciliation worksheet. For more information, see [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md).
+> - Generation of general ledger vouchers directly from the bank reconciliation worksheet. For more information, see [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md).
+
+> [!NOTE]
+> To avoid issues with reconciliation reversal, it's recommended to reconcile all the existing bank statements thas has new lines before enabling the **Modern bank reconciliation** feature.
 
 ## Import an electronic bank statement by using Electronic reporting
 
@@ -114,22 +118,30 @@ If the **Modern bank reconciliation** feature is turned on, the **Validate** and
 - **Validate** – Verify the bank statement data.
 - **Confirm** – Update the bank statement status to **Confirmed**.
 
+
+> [!NOTE]
+> To prevent the import of duplicate bank statements, combination of AccountNo, StatementID, FromDate, and ToDate are checked. If these elements match an existing bank statement, it is considered a duplicate and will not be imported. This ensures that each bank statement file is unique and avoids redundancy.
+
+
 ## Reconcile the bank statement
 After you've imported an electronic bank statement and validated the statement on the **Bank statements** page, you can reconcile the bank statement by using the **Bank reconciliation** and **Bank reconciliation worksheet** pages. 
 
-On the **Bank reconciliation** page, select **New** to create a new reconciliation, and then select the bank account of the statement that was imported. A bank account can have only one open bank reconciliation. The cut-off date determines the bank statement transactions and Operations bank transactions that are included on the reconciliation worksheet. By default, the current system date is used as the cut-off date, but you can change the date for the reconciliation. The remaining header information is automatically taken from the statement. This step is automatically completed if you set the **Reconcile after import** option to **Yes** at the time of import. 
+On the **Bank reconciliation** page, select **New** to create a new reconciliation, and then select the bank account of the statement that was imported. A bank account can have only one open bank reconciliation. The cut-off date determines the bank statement transactions and Operations bank transactions that are included on the reconciliation worksheet. By default, the current system date is used as the cut-off date, but you can change the date for the reconciliation. The remaining header information is automatically taken from the statement. 
+This step is automatically completed if you set the **Reconcile after import** option to **Yes** at the time of import. 
 
-On the **Bank reconciliation** page, select **Worksheet** to open the **Bank reconciliation worksheet** page. If you set the **Reconcile after import** option to **Yes**, the Default matching rule set is automatically run for the reconciliation. To manually run matching rules, select **Run matching rules** to select the matching rule sets or matching rules to run against the bank transactions. If you have many transactions to process, you can complete this step as a batch process. 
+On the **Bank reconciliation** page, select **Worksheet** to open the **Bank reconciliation worksheet** page. 
+If you set the **Reconcile after import** option to **Yes**, the Default matching rule set is automatically run for the reconciliation. To manually run matching rules, select **Run matching rules** to select the matching rule sets or matching rules to run against the bank transactions. 
+It is recommended to complete this step as a batch process if you have a lot of transactions to process. 
 
-The **Bank reconciliation worksheet** page has four grids that contain transactions. The two upper grids show transactions from the bank statement and Operations that haven't yet been matched. The two lower grids show matched transactions. The **Bank statement transaction details** tab shows details for the unmatched bank statement transaction that is selected in the upper grid. 
-
-You can enable additional filtering capabilities and a new grid for new transactions by turning on the **Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions** feature.
+If **Modern bank reconciliation** feature is turned off, the **Bank reconciliation worksheet** page has four grids that contain transactions. The two upper grids show transactions from the bank statement and Operations that haven't yet been matched. The two lower grids show matched transactions. The **Bank statement transaction details** tab shows details for the unmatched bank statement transaction that is selected in the upper grid. 
 
 There are three ways to match or reconcile bank statement transactions:
-
 - Match the statement transactions with bank transactions that are posted in Finance.
 - Match the statement transactions with a reversal bank statement transaction.
 - Mark the transactions as **New**, so that they can be posted later as a bank transaction in Finance.
+
+> [!NOTE]
+> When the **Modern bank reconciliation** feature is turned on, additional matching options noted at the top of this article are available.
 
 To manually match transactions, select the transactions in the **Bank statement transactions** grid, select the corresponding transactions in the **Operations bank transactions** grid, and then select **Match**. The selected transactions are moved from the upper grids for unmatched transactions to the lower grids for matched transactions. Additionally, the matched and unmatched total amounts are updated. You can have one-to-one, many-to-one, and many-to-many transaction matches. Matches must follow the rules for allowed date differences and transaction type mapping. These rules are set on the **Cash and bank management parameters** page.
 
@@ -139,11 +151,11 @@ Bank statement transaction reversals are matched by using the reconciliation wor
 
 Reversed Operations bank transactions must be reconciled by using the **Operations bank transactions** page. You can reconcile two Operations bank transactions together if the documents have the same bank account, document type, and payment reference, and if they have opposite amounts. You can also reconcile a single canceled check to prevent those transactions from appearing on the reconciliation worksheet. 
 
-If there are new bank-initiated transactions, such as interest, fees, and charges, that aren't yet in Finance, you can add them to a journal that's associated with the selected bank statement reconciliation. Select a bank statement transaction in the **Bank statement transactions** grid for unmatched transactions, and then select **Mark as new**. The status of the transaction is set to **New**, and the transaction is moved to the **Bank statement transactions** grid for matched transactions. Later, from the **Bank statement** page, post the transactions that are marked as **New**. If you turn on the **Enable posting of new transactions in bank reconciliation** feature, transactions that are marked as **New** can also be posted directly from the Bank reconciliation worksheet. For more feature enhancements, turn on the **New voucher and date for new transactions in the advanced bank reconciliation bank statement** feature.
+If there are new bank-initiated transactions, such as interest, fees, and charges, that aren't yet in Finance, you can add them to a journal that's associated with the selected bank statement reconciliation. Select a bank statement transaction in the **Bank statement transactions** grid for unmatched transactions, and then select **Mark as new**. The status of the transaction is set to **New**, and the transaction is moved to the **Bank statement transactions** grid for matched transactions. Later, from the **Bank statement** page, post the transactions that are marked as **New**.
 
 You can unmatch transactions that were incorrectly matched. Select the matched bank statement transaction, and then select **Unmatch**. All associated transactions are moved back to the upper grids for unmatched transactions, and the matched and unmatched total amounts are updated. 
 
-After you complete the reconciliation process, mark the Bank reconciliation worksheet as reconciled. This process automatically posts correction amounts using the accounts set on the **Bank transaction type** page. The bank reconciliation for a statement can be marked as reconciled at any time, even if there are bank statement lines that haven't been matched. The unmatched transactions automatically move to the next reconciliation worksheet as unmatched bank statement transactions to be reconciled. After a bank statement reconciliation has been marked as reconciled, it can't be undone. The reconciliation isn't editable, and you don't have the ability to make updates to that reconciliation. You can turn on the **Enable bank reconciliation reversal even new transactions exist in posted bank statement** feature to reverse reconciliation. To improve process performance, turn on the **Enable batch mode for "Mark as reconciled" in advance bank reconciliation** feature.
+After you complete the reconciliation process, mark the Bank reconciliation worksheet as reconciled. This process automatically posts correction amounts using the accounts set on the **Bank transaction type** page. The bank reconciliation for a statement can be marked as reconciled at any time, even if there are bank statement lines that haven't been matched. The unmatched transactions automatically move to the next reconciliation worksheet as unmatched bank statement transactions to be reconciled. After a bank statement reconciliation has been marked as reconciled, it can't be undone. The reconciliation isn't editable, and you don't have the ability to make updates to that reconciliation.
 
 ## Post new transactions that are associated with the reconciliation
 

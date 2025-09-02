@@ -3,11 +3,12 @@ title: Small parcel shipping
 description: Learn about the small parcel shipping (SPS) feature, which enables Microsoft Dynamics 365 Supply Chain Management to submit details about packed containers.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
-ms.date: 08/09/2022
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: TMSRateEngine, TMSCarrier, CustTable, TMSShippingCarrierCustomerAccount, TMSSmallParcelShippingFeature
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Small parcel shipping
@@ -22,7 +23,7 @@ The shipping rate that is returned is added to the associated sales order as a m
 
 ## Prepare your system to support SPS
 
-Before you can start to use SPS functionality, you must turn on the SPS feature in Feature management, add your rate engine, and set up the **Transportation management** and **Warehouse management** modules to support it.
+Before you can start to use SPS functionality, you must add your rate engine and set up the **Transportation management** and **Warehouse management** modules to support it.
 
 ### Deploy and set up rate engines
 
@@ -55,7 +56,7 @@ Follow these steps to download and deploy the demo rate engine.
 1. After the validation completes, go to **Environments \> {Your Environment ID} \> Maintain \> Apply updates**, select the deployable package, and apply.
 
 > [!NOTE]
-> If the system warns you that you don't have permission to deploy packages on Lifecycle Services, please contact your LCS administrator for support.
+> If the system warns you that you don't have permission to deploy packages on Lifecycle Services, contact your LCS administrator for support.
 
 #### Create and deploy functional rate engines
 
@@ -88,7 +89,7 @@ To work through this scenario by using the demo records and values that are spec
 
 ### Set up the scenario
 
-For this example scenario, you must have a demo carrier, carrier group, packing policy, and packing profile. The following subsections explain how to prepare the records that are required for the scenario. In a production scenario, the setup process typically resembles the process that is described here. However, you will set different values.
+For this example scenario, you must have a demo carrier, carrier group, packing policy, and packing profile. The following subsections explain how to prepare the records that are required for the scenario. In a production scenario, the setup process typically resembles the process that is described here. However, you'll set different values.
 
 #### Set up carriers
 
@@ -239,7 +240,7 @@ Follow these steps to create a sales order.
     Work is created to move items from the picking location to the packing station.
 
 1. In the **Sales order lines** section, select **Warehouse \> Shipment details**.
-1. On the **Shipment details** page, make a note of the shipment ID. You will need it when you pack the pack the shipment at the packing station.
+1. On the **Shipment details** page, make a note of the shipment ID. You'll need it when you pack the pack the shipment at the packing station.
 1. Close the **Shipment details** page to return to the sales order.
 1. Make a note of the sales order number, and then go to **Warehouse management \> Work \> All work**.
 1. Use the sales order number to find and select the work that was created for the order.
@@ -279,6 +280,5 @@ Follow these steps to pack the shipment.
     ![Example shipping label.](media/sps-label-example.png "Example shipping label")
 
 1. Notice that the **Container manifest ID** and **Total freight** values have been added as received from the carrier.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

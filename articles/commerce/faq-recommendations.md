@@ -5,7 +5,7 @@ title: Product recommendations FAQ
 description: This article provides information about processes and tools that you can use to troubleshoot issues that are related to product recommendations or their results.
 author: bebeale
 ms.date: 05/26/2020
-ms.topic: article
+ms.topic: faq
 # optional metadata
 
 ms.search.form: 

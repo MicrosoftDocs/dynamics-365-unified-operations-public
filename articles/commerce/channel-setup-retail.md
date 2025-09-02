@@ -9,8 +9,9 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-01-20
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Set up a retail channel
@@ -181,7 +182,7 @@ To prevent duplicate transaction IDs, a new transaction ID format has been intro
 The new transaction ID format is `<store ID>-<terminal ID>-<milliseconds since 1970>`. The new transaction ID format feature can be enabled from the **Feature management** workspace in Commerce headquarters. 
 
 > [!NOTE]
-> - Transaction IDs are meant for internal system use only, so they aren't required to be sequential. However, many countries require receipt IDs to be sequential, so check your organization's requirements before enabling the new transaction ID format feature.
+> - Transaction IDs are meant for internal system use only, so they aren't required to be sequential. However, many countries/regions require receipt IDs to be sequential, so check your organization's requirements before enabling the new transaction ID format feature.
 > - After the new transaction ID format feature is enabled, you won't be able to disable this feature in headquarters.
 > - The new transaction ID format feature is enabled by default starting with Commerce version 10.0.41.
 

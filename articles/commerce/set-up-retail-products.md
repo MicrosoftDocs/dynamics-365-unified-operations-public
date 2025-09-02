@@ -3,7 +3,7 @@ title: Set up retail products
 description: This article describes how to set up products in Dynamics 365 Commerce.
 author: josaw1
 ms.date: 11/08/2023
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

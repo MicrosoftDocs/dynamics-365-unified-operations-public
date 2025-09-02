@@ -1,12 +1,12 @@
 ---
 title: Onboard the Approvals Management mobile app
 description: This article explains how administrators can prepare Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Approvals Management mobile app. It also explains how to install the app on mobile devices.
-author: kamaybac
-ms.author: akshaykmr
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 07/29/2024
+ms.date: 08/13/2025
 ms.custom: 
   - bap-template
 ---

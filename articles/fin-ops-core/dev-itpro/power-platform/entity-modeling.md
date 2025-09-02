@@ -4,13 +4,11 @@ description: Learn about relational modeling concepts using virtual entities for
 author: mkannapiran
 ms.author: kamanick
 ms.topic: article
-ms.date: 05/14/2024
+ms.date: 04/23/2025
 ms.custom: NotInToc
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2024-05-31
-ms.search.form:
 ms.dyn365.ops.version: 10.0.12
 ---
 
@@ -54,7 +52,7 @@ Fields of the *real* and *long* data types in finance and operations apps are mo
 | Dataverse has higher precision.    | This use case should never occur unless the metadata is out of sync. |
 | Finance and operations apps have higher precision. | During a read operation, the value is rounded to the closest precision value in Dataverse. If the value is edited in Dataverse, it's rounded to the closest precision value. During a write operation, the value that is specified in Dataverse is written, because finance and operations apps support higher precision. |
 | Dataverse has higher scale.        | Not applicable |
-| Finance and operations apps have higher scale.     | Dataverse shows the finance and operations value, even if it exceeds 100 billion. However, there is a loss of precision. For example, 987,654,100,000,000,000 is shown in Dataverse as "987,654,099,999,999,900". If the value of this field is edited in Dataverse, Dataverse validation throws an error that the value exceeds the maximum value before that value is sent to the finance and operations app. |
+| Finance and operations apps have higher scale.     | Dataverse shows the finance and operations value, even if it exceeds 100 billion. However, there's a loss of precision. For example, 987,654,100,000,000,000 is shown in Dataverse as "987,654,099,999,999,900". If the value of this field is edited in Dataverse, Dataverse validation throws an error that the value exceeds the maximum value before that value is sent to the finance and operations app. |
 
 The following data types in finance and operations apps aren't supported in Dataverse. Fields of these data types in finance and operations entities won't be made available in the corresponding virtual tables in Dataverse. If fields of these data types are used as parameters in Open Data Protocol (OData) actions, those actions won't be available for use in the corresponding virtual entities. For more information about OData actions, see the [OData actions](#odata-actions) section later in this article.
 
@@ -77,7 +75,7 @@ In finance and operations entities can have one or more fields of various data t
 
 In Dataverse, the primary key is always a globally unique identifier (GUID). The GUID-based primary key enables a record in a Dataverse table to be uniquely identified.
 
-To bridge the implementation gap between finance and operations apps and Dataverse, the primary key of a virtual entity for finance and operations apps is a GUID (to comply with Dataverse). This GUID consists of the data entity ID in the first 4 bytes, and the record ID of the root data source in the entity as the last 8 bytes. This design satisfies Dataverse's requirement that a GUID be used as the entity key. It also enables the table ID and record ID to be used to uniquely identify the finance and operations entity record.
+To bridge the implementation gap between finance and operations apps and Dataverse, the primary key of a virtual entity for finance and operations apps is a GUID (to comply with Dataverse). This GUID consists of the data entity ID in the first 4 bytes, and the record ID of the root data source in the entity as the last 8 bytes. This design satisfies Dataverse's requirement that GUIDs are used as the entity key. It also enables the table ID and record ID to be used to uniquely identify the finance and operations entity record.
 
 When using entities in finance and operations apps, you need to ensure that the root data source always has a unique RecID. If this design is violated, duplicate GUIDs will show up in Dataverse for the corresponding virtual table. Aggregate views aren't supported via virtual tables for the same reason because these views may not have unique RecIDs.
 
@@ -91,15 +89,15 @@ In Dataverse, each table must have a primary field. This field must be a single 
 
 Based on this use of the primary field in Dataverse, the primary field for a finance and operations virtual table is designed to use the entity key of the corresponding entity in the finance and operations app.
 
-Because the primary field in Dataverse is expected to have only one field of the string type, whereas the finance and operations entity key can have multiple fields of various data types, the entity key fields are converted to strings. The strings are concatenated and separated by a pipe (\|), to a maximum length of 255 characters. Any value that exceeds 255 is truncated. This virtual entity field that represents the primary field is named **mserp\_primaryfield**.
+Because the primary field in Dataverse is expected to have only one field of the string type, whereas the finance and operations entity key can have multiple fields of various data types, the entity key fields are converted to strings. The strings are concatenated and separated by a pipe (\|), to a maximum length of 255 characters. Any value that exceeds 255 is truncated. This virtual entity field that represents the primary field is named **mserp\_primaryfield**. If an entity key isn't made up of single string field, then filtering or any operation like aggregation isn't allowed on that field. You can use any other available columns for filtering.
 
 > [!NOTE]
-> After a virtual table for finance and operations apps is generated in the associated Dataverse environment, the primary key and primary field can't be modified. To change a primary field, you must remove the table from the Dataverse environment. For information about how to disable virtual tables and remove the finance and operations entity metadata from the Dataverse environment, see [Disable virtual entities](enable-virtual-entities.md#disable-virtual-entities). After the primary fields are changed in the finance and operations app, you can then re-enable the entity. For information, see [Generate virtual entities](enable-virtual-entities.md#generate-virtual-entities).
+> After a virtual table for finance and operations apps is generated in the associated Dataverse environment, the primary key and primary field can't be modified. To change a primary field, you must remove the table from the Dataverse environment. For information about how to disable virtual tables and remove the finance and operations entity metadata from the Dataverse environment, see [Disable virtual entities](enable-virtual-entities.md#disable-virtual-entities). After the primary fields are changed in the finance and operations app, you can then reenable the entity. For information, see [Generate virtual entities](enable-virtual-entities.md#generate-virtual-entities).
 
 ## Relations
 
 > [!IMPORTANT]
-> A write transaction that spans a virtual table and a native entity is not supported. We do not recommend using this form of transaction, as there isn't a way to ensure consistency.
+> A write transaction that spans a virtual table and a native entity isn't supported. We don't recommend using this form of transaction, as there isn't a way to ensure consistency.
 
 Relations in finance and operations entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual table in Dataverse. Note that many-to-many (n:n) relations aren't supported in finance and operations apps.
 
@@ -134,7 +132,7 @@ Therefore, in effect, the entity name is the only information that is used in a 
 
 As was explained earlier, the GUID is the only information that is used to uniquely identify a record in a native Dataverse table (including in native table–to–native table relationships) or in a finance and operations virtual table (including in virtual table–to–virtual table relationships). However, consider an example where you want to show finance and operations sales orders for Account A in Dataverse. The query that is sent to the finance and operations app for this relationship has a WHERE clause on the GUID of the entity key of the native accounts entity in Dataverse, because the sales orders must be filtered for a specific account in Dataverse. However, because the finance and operations app doesn't have any information about the GUID of the entity in Dataverse, the query won't return any sales orders. The query is successful only if the WHERE clause has conditions that are based on the fields that the finance and operations app understands.
 
-Therefore, how can the GUID of the accounts table in Dataverse be replaced with finance and operations fields in such a way that the query that is sent to the finance and operations app returns the correct list of sales orders?
+Therefore, how can the GUID of the accounts table in Dataverse be replaced with finance and operations fields in such a way that the query is sent to the finance and operations app returns the correct list of sales orders?
 
 To solve this issue and enable a rich set of scenarios that allows for virtual table–to–native table relationships, relationships can be added to this type of entity. The relation appears as a relationship when the virtual table is synced.
 
@@ -160,7 +158,7 @@ The field mapping indicates which field on the virtual table maps to the field o
         return fieldMapping;
     }
 ```
-The next step is to generate or refresh the virtual table to get the new relationship. Note that relationships between a virtual table and a native table can't be updated in Dataverse once it's created. The only way to make an update is to physically remove the relationship, refresh the entity, and then physically re-add the relationship in order to resolve the issue.
+The next step is to generate or refresh the virtual table to get the new relationship. Note that relationships between a virtual table and a native table can't be updated in Dataverse once it's created. To update it, physically remove the relationship, refresh the entity, and then physically readd the relationship in order to resolve the issue.
 
 This relationship looks like a typical GUID-based relationship, but has extra metadata to translate query filters on the relationship into restrictions on the backing fields. The query that is now generated has a WHERE clause that is based on the fields that finance and operations apps recognize. That query then returns the filtered list of sales orders, as expected.
 
@@ -198,7 +196,7 @@ Input and output parameters of the following types are supported. If an input or
 
 Here are some examples of OData actions that are supported in finance and operations entities, but that aren't supported in the corresponding virtual tables in Dataverse:
 
-- RetailStoreTenderTypeTable.queryDistinctTenderTypeIdAndName (a collection of RetailStoreTenderTypeTable entity)
+- RetailStoreTenderTypeTable.queryDistinctTenderTypeIdAndName (a collection of RetailStoreTenderTypeTable entities)
 - DocumentRoutingClientApp.syncPrinters (DocumentRoutingClientApp entity)
 - DocumentRoutingClientApp.updateJobStatus (DocumentRoutingJobStatus enum)
 - DimensionCombination.getCombinationDisplayValue (LedgerJournalACType enum)

@@ -5,7 +5,7 @@ title: Accrue leave and absence plans
 description: You can accrue leave and absence in Dynamics 365 Human Resources for multiple employees or for an individual.
 author: twheeloc
 ms.date: 06/24/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace

@@ -3,7 +3,7 @@ title: VAT return with direct submission to Altinn
 description: Learn about the VAT return with direct submission to Altinn feature that can be used to submit value-added tax (VAT) returns in Norway.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 07/11/2024

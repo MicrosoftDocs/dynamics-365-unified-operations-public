@@ -1,8 +1,8 @@
 ---
 title: Demand forecasting setup
 description: Learn about the setup tasks that you must perform to prepare for demand forecasting, including an outline on item allocation keys.  
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters, ForecastItemAllocation, ReqIntercompanyPlanningGroupSetup
 ms.topic: how-to
@@ -244,7 +244,7 @@ Use the following procedure to create a new machine learning workspace.
 
     - Use default settings unless other points in this list recommend different settings.
     - Be sure to select the geographic region that matches the region where your instance of Supply Chain Management is deployed. Otherwise, some of your data might pass through region boundaries. Learn more in the [privacy notice](#privacy) later in this article.
-    - Use dedicated resources, such as resource groups, storage accounts, container registries, Azure key vaults, and networking resources.
+    - Use dedicated resources, such as resource groups, storage accounts, container registries, Azure Key Vaults, and networking resources.
     - On the **Set up Azure Machine Learning Service connection parameters** page of the wizard, you must provide a storage account name. Use an account that is dedicated to demand forecasting. Demand forecasting input and output data will be stored in this storage account.
 
 Learn more in [Create the workspace](/azure/machine-learning/quickstart-create-resources#create-the-workspace).

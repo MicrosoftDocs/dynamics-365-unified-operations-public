@@ -3,8 +3,8 @@ title: Create customer and vendor records with an address in Panama
 description: Learn how to set up records for customers and vendors in Panama, including prerequisites and an outline on creating a record for a customer.
 author: Cpicon85
 ms.author: v-cpicon
-ms.topic: article
-ms.date: 10/11/2023
+ms.topic: how-to
+ms.date: 04/29/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -46,7 +46,7 @@ Before you create records for customers and vendors who are located in Panama, t
     - In the **Taxpayer type** field, select a taxpayer that represents an organization. For example, select **persona juridica**.
     - In the **Based in country/region** field, select **Panama**.
     - In the **Country document type** field, select a tax ID type. For example, select **RUC** (Unique Taxpayer Registry).
-    - Complete the **Country document number** field with the customer's tax ID number.
+    - Complete the **Country document number** field, including the tax ID number of the customer. Note that you must add the last two characters with the verification digit, with no character separation from the RUC number.
 
 ## Create a record for a vendor in Panama
 
@@ -69,3 +69,4 @@ Before you create records for customers and vendors who are located in Panama, t
     - In the **Based in country/region** field, select **Panama**.
     - In the **Country document type** field, select a tax ID type. For example, select **RUC**.
     - Complete the **Country document number** field with the vendor's tax ID number.
+    - Complete the **Country document number** field, including the tax ID number of the vendor. Note that you must add the last two characters with the verification digit, with no character separation from the RUC number.

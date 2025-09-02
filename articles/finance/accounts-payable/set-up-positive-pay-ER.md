@@ -3,7 +3,7 @@ title: Set up and generate positive pay files by using Electronic reporting
 description: Learn about how to set up positive pay by using Electronic reporting, including outlines on security for positive pay files.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/20/2022
 ms.reviewer: twheeloc
 audience: Application User

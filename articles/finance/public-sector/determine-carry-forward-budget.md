@@ -3,7 +3,7 @@ title: Update the carry-forward budget after reductions in purchase orders and i
 description: Learn how to control what happens to the carry-forward budget when purchase orders are canceled or reduced, and when invoices are reduced.
 author: music727 
 ms.author: mibeinar
-ms.topic: article
+ms.topic: how-to
 ms.date: 7/23/2024
 ms.reviewer: twheeloc
 audience: Application User

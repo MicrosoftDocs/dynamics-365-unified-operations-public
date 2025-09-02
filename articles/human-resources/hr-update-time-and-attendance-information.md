@@ -4,7 +4,7 @@ description: Learn about how to update time and attendance information in Dynami
 author: twheeloc
 ms.author: twheeloc
 ms.date: 01/24/2024
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - indirect activities
 - indirect activities costs

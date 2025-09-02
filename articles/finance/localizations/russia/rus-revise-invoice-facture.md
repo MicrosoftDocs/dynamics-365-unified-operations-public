@@ -3,7 +3,7 @@ title: Revision factures and corrective factures
 description: Learn about issuing a corrective or revision facture with an original facture, including an outline on setting up parameters to create corrective factures.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/21/2024

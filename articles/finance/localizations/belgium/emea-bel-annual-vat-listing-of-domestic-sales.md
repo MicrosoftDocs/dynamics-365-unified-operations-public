@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/10/2024
+ms.date: 04/24/2025
 ms.reviewer: johnmichalak
 ms.search.region: Belgium
 ms.search.validFrom: 2016-02-28
@@ -35,6 +35,8 @@ The following fields are shown on the **Invoice turnover** report:
 - Customer's turnover
 - Customer's VAT amount
 
+In Dynamics 365 Finance version 10.0.44 or later, the **Invoice turnover** report supports reporting for [Multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md).
+
 ## Setup
 
 ### Preliminary steps
@@ -44,7 +46,7 @@ Import the latest version of the following Electronic reporting (ER) configurati
   - Invoice turnover report model
   - Invoice turnover report (BE)
 
-For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
 ### Create registration types for company codes
 
@@ -60,11 +62,15 @@ You must create two registration types for company codes: one for the VAT ID and
 8. In the **Country/region** field, select **BEL**.
 9. Select **Create**.
 
+Learn more in [Registration type](../europe/emea-registration-ids.md#registration-type-creation).
+
 ### Match the registration types with registration categories
 
 1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.  
 2. For the registration type for the VAT ID, select the **VAT ID** registration category.
 3. For the registration type for the enterprise number, select the **Enterprise ID (COID)** registration category.
+
+Learn more in [Registration category](../europe/emea-registration-ids.md#supported-registration-categories).
 
 ### Set up a VAT ID and enterprise number for your company
 
@@ -106,6 +112,7 @@ You must create two registration types for company codes: one for the VAT ID and
     | From date                             | Select the start date of the report.                                                                                  |
     | To date                               | Select the end date of the report.                                                                                    |
     | Amount                                | The minimum amount to include on the report. This amount is the total invoiced amount by the customer, excluding VAT. |
+    | Registration number                   | This parameter is available in Finance version 10.0.44 or later when [Multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) is enabled in your legal entity and there is a valid Registration ID set up for an address in Belgium. Select the Belgium Registration ID for which you want to generate the **Invoice turnover** report.  |
     | Generate file                         | Set this option to **Yes** to generate an .xml file.                                                                  |
     | File name                             | Enter a name for the reporting file.                                                                                  |
     | Generate report                       | Set this option to **Yes** to generate an .xlsx file.                                                                 |
@@ -114,9 +121,11 @@ You must create two registration types for company codes: one for the VAT ID and
     | Replaced Invoice turnover declaration | If you must replace a report, enter the number of the replaced declaration.                                           |
     | Format mapping                        | Select **Invoice turnover report (BE)** to generate the **Invoice turnover** report.                                  |
 
+3. To generate the report, select **OK**.
+
 ## Example
 
-1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), in the Shared asset library, download the latest version of the following ER configurations:
+1. [Import](../../localizations/global/workspace/gsw-import-er-config-dataverse.md) the latest version of the following Electronic reporting (ER) configurations from Dataverse:
 
     - Invoice turnover report model
     - Invoice turnover report (BE)

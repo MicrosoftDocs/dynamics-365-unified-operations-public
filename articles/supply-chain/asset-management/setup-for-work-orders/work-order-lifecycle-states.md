@@ -3,11 +3,12 @@ title: Work order lifecycle states
 description: Learn about work order lifecycle states in Asset Management, including a step-by-step process and table that defines various option names.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
-ms.date: 08/13/2019
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: EntAssetWorkOrderLifecycleState, EntAssetWorkOrderLifecycleModel
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Work order lifecycle states
@@ -38,17 +39,12 @@ The following table describes the options in the **Work order** and **Schedule**
 | End | Set this option to *Yes* if the work order job schedule status for all work order jobs that are created on a work order should automatically be updated to **Ended** when the work order is updated to this lifecycle state. |
 | Delete schedule lines | Set this option to *Yes* if scheduling on all work order jobs that are created on a work order that has already been scheduled should be deleted when the work order is updated to this lifecycle state. In other words, capacity reservations on the asset, the related maintenance worker, and related tools will be deleted. For example, you set this option to *Yes* on a work order lifecycle state that is named **Estimated**. Then, when a work order is rolled back to this lifecycle state because rescheduling is required, scheduling can be deleted on that work order. |
 
-## Prerequisites for the role-based access feature (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
+## Prerequisites for the role-based access feature
 
 To use the role-based access feature (on the **Security roles** FastTab), as described later in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.43 or later.
-- The feature that's named *Role-based access control for work order lifecycle stages* must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+- The feature that's named *Role-based access control for work order lifecycle stages* must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
 
 ## Set up project stages and work order lifecycle states
 
@@ -87,7 +83,7 @@ To use the role-based access feature (on the **Security roles** FastTab), as des
     - The **Maintenance downtime**, **Maintenance checklist**, **Fault symptom**, **Fault cause**, and **Fault remedy** options are related to the options in the **Mandatory** section on the **Work order types** page (**Asset management** \> **Setup** \> **Work orders** \> **Work order types**). To activate these validations, the related options must also be set to *Yes* on the work order type that is used for the work order.
     - If the **Maintenance checklist** option is set to *Yes* for the lifecycle state that a work order is updated to, validation is done to verify that maintenance checklist lines that are marked as **Mandatory** have been registered as either **Checked** or **Not applicable**. If neither of those registrations has been made on the mandatory lines, an informational, error, or warning message is shown when the work order is updated to this lifecycle state.
     - If the **Committed cost** option is set to *Yes* for the lifecycle state that a work order is updated to, total amount of committed costs (that is, the total amount of expenses that the legal entity has committed to pay) are calculated for each work order job. A message is shown if the committed cost amount is more than 0 (zero). You select the types of cost commitment that are included on the **Cost commitments** FastTab on the **Cost control** tab of the **Project management and accounting parameters** page (**Project management and accounting** \> **Setup** \> **Project management and accounting parameters**).
-    - If the **Maintenance downtime** option is set to *Yes* for the lifecycle state that a work order is updated to, maintenance downtime validation is done on the asset that is related to the work order. If a maintenance downtime registration has been made, but there is no **Ended** registration, a message is shown when the work order is updated to this lifecycle state.
+    - If the **Maintenance downtime** option is set to *Yes* for the lifecycle state that a work order is updated to, maintenance downtime validation is done on the asset that is related to the work order. If a maintenance downtime registration has been made, but there's no **Ended** registration, a message is shown when the work order is updated to this lifecycle state.
     - If the standard project setup doesn't include all the stages that you require for your Asset Management setup, you can set up user-defined project stages on the **Project stage** tab of the **Project management and accounting parameters** page. The following illustration shows the **Project stage** tab on the **Project management and accounting parameters** page.
 
     ![Set up project stages for various project types page.](media/10-setup-for-work-orders.png)
@@ -97,7 +93,7 @@ To use the role-based access feature (on the **Security roles** FastTab), as des
 > [!NOTE]
 > If the lifecycle state that you update a work order to is inactive, journals that are related to the work order but that haven't yet been posted are automatically deleted. This behavior helps guarantee automatic cleanup of unused data. (A lifecycle state is inactive if the **Active** option for it is set to *No* on the **General** FastTab of the **Work order lifecycle state** page.)
 >
-> However, if you manually set a work order so that it's inactive, journals that are related to the work order but that haven't yet been posted are *not* automatically deleted. (To manually inactivate a work order, select **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**. Open the work order, and switch to the **Header** view. On the **General** FastTab, select **Edit**, and then set the **Active** option to *No*.)
+> However, if you manually set a work order so that it's inactive, journals that are related to the work order but that haven't yet been posted are *not* automatically deleted. (To manually deactivate a work order, select **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**. Open the work order, and switch to the **Header** view. On the **General** FastTab, select **Edit**, and then set the **Active** option to *No*.)
 
 ## Relations among work order lifecycle models, work order types, and work order lifecycle states
 

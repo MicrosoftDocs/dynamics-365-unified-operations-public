@@ -148,9 +148,9 @@ To try out the process of creating inbound and outbound shipment orders via mess
 Use the **Processing status** field to monitor the progress of each shipment order message. The following **Processing status** values are available:
 
 - *Receiving* – The message is in the process of being imported.
-- *Received* – The message has been received and is in a *Queued* state in the [message processor](../supply-chain-dev/message-processor.md). It's now ready to be picked up for processing.
+- *Received* – The message has been received and is in a *Queued* state in the [message processor](../message-processor/message-processor.md). It's now ready to be picked up for processing.
 - *Accepted* – The message processor state is *Processed*. Therefore, a shipment order has been created.
-- *Failed* – The [message processor](../supply-chain-dev/message-processor.md) processed the message, but one or more errors occurred. You can create a copy of the message when you save it after you edit it.
+- *Failed* – The [message processor](../message-processor/message-processor.md) processed the message, but one or more errors occurred. You can create a copy of the message when you save it after you edit it.
 - *Draft* – The message is a manually copied or created message that can be updated. To reprocess the message, move it into the *Queued* message state by selecting **Queue** on the Action Pane.
 - *Canceled* – The message has been manually canceled.
 

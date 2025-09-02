@@ -4,7 +4,7 @@ title: Update Service Fabric clusters for Microsoft Dynamics 365 Finance + Opera
 description: Learn how to update your Microsoft Azure Service Fabric cluster for Dynamics 365 Finance + Operations (on-premises) environments.
 author: faix
 ms.author: osfaixat
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/03/2025
 ms.custom:
 ms.reviewer: 

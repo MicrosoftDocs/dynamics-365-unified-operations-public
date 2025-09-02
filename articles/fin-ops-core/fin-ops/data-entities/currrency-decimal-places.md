@@ -2,11 +2,12 @@
 title: Currency data-type migration for dual-write
 description: Learn about how to change the number of decimal places that dual-write supports for currency, including an outline on requesting migration from Microsoft.
 author: RamaKrishnamoorthy
-ms.author: ramasri
-ms.topic: article
-ms.date: 12/08/2021
+ms.author: yiabdi
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 02/20/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: global
 ms.search.validFrom: 2020-04-06
 ---
@@ -38,7 +39,7 @@ Migration doesn't change any data. After the currency and exchange rate columns 
 
 ### Request a migration
 
-To make this feature available, email **CDSExpandDecimal@microsoft.com**, and include the following information:
+To make this feature available, email **didev@microsoft.com**, and include the following information:
 
 + **Subject:** Request to enable expanded decimal support for \<organizationID\>
 + **Body:** I would like to enable expanded decimal support for my org \<organizationID\>.

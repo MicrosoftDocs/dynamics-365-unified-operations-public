@@ -3,7 +3,7 @@ title: Security governance FAQ
 description: Get answers to frequently asked questions about security governance.
 author: saurabhgupta
 ms.author: saurabhgupta
-ms.topic: article
+ms.topic: faq
 ms.date: 02/13/2025
 ms.custom: 
 ms.reviewer: twheeloc
@@ -17,7 +17,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Security governance FAQ
 
 [!include [banner](../../../finance/includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article provides answers to the most frequently asked questions about setting up and using the security governance feature.
 

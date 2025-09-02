@@ -3,11 +3,14 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.41 (Se
 description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.41 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
-ms.topic: conceptual
-ms.date: 08/07/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: whats-new
+ms.date: 08/05/2025
+ms.update-cycle: 1095-days
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.41 (September 2024)
@@ -27,7 +30,7 @@ The following table lists the features that are included in this release. We mig
 | Module or feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Cost management | [Add transactions when recalculating weighted average](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/recalculate-weighted-average-cost-including-physical-transaction) | [Options for including physical value in cost calculations](../cost-management/include-physical-value.md) | Feature management:<br>*(Preview) Recalculation for Weighted Average Cost including Physical Transaction* |
-| Inventory and warehouse management | Link transfer order lines with sales order lines | [Link transfer order lines with sales order lines](../inventory/pair-transfer-and-sales-lines.md) | Feature management:<br>*(Preview) Pair transfer order lines with sales order lines* |
+| Inventory and warehouse management | Link transfer order lines with sales order lines | [Link transfer order lines with sales order lines](../inventory/pair-transfer-and-sales-lines.md) | Feature management:<br>*Pair transfer order lines with sales order lines* |
 | Inventory and warehouse management | [Sync external changes through Inventory Visibility](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/sync-external-inventory-changes-through-inventory-visibility) | [Sync external inventory adjustments through Inventory Visibility](../inventory/inventory-visibility-sync-changes.md) | Feature management:<br>*Inventory Visibility transaction integration* |
 | Inventory and warehouse management | [Trace goods through the supply chain](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/trace-goods-through-supply-chain) | [Traceability overview (preview)](../traceability/traceability-overview.md) | Feature management and Power Apps.<br><br>Learn more in [Install, update, or uninstall Traceability (preview)](../traceability/developer/traceability-install.md) |
 | Inventory and warehouse management | [Track time-series inventory in Inventory Visibility](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/track-time-series-inventory-inventory-visibility) | [Track time-series inventory in Inventory Visibility](../inventory/inventory-visibility-track-atp.md) | Feature management:<br>*Inventory Visibility integration with ATP* |
@@ -36,7 +39,7 @@ The following table lists the features that are included in this release. We mig
 | Procurement and sourcing | [Approve POs and requisitions from mobile device](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/approve-purchase-orders-requisitions-mobile-device) | [Approvals Management mobile app overview](../approval-management-mobile-app/approval-management-app-overview.md) | Dataverse and Power Apps.<br><br>Learn more in [Onboard the Approvals Management mobile app](../approval-management-mobile-app/developer/onboard-approval-app.md) |
 | Production control | [Decouple production registration from time and attendance](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/decouple-production-registration-time-attendance) | [Registration for manufacturing execution](../production-control/registration-manufacturing-execution.md) | Feature management:<br>*Skip time adjustments when calculating actual cost per production order* |
 | Production control | [Register time spent working on projects for production](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/register-time-spent-working-projects-production) | [Registration for manufacturing execution](../production-control/registration-manufacturing-execution.md) | Feature management:<br>*Skip time adjustments when calculating actual cost per production order* |
-| Transportation management | [Enable quality control for goods-in-transit orders](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-quality-control-goods-in-transit-orders) | [Quality orders](../inventory/quality-orders.md) | Feature management:<br>*(Preview) Enable Quality Control for Goods In-Transit Order.* |
+| Transportation management | [Enable quality control for goods-in-transit orders](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-quality-control-goods-in-transit-orders) | [Quality orders](../inventory/quality-orders.md) | Feature management:<br>*Enable Quality Control for Goods In-Transit Order.* |
 | Warehouse management | Outbound shipment processing policies | [Outbound shipment processing policies](../warehousing/outbound-load-handling.md#outbound-shipment-policies) | Enabled by default |
 | Warehouse management | Unannounced returns in Warehouse management only mode <!--KFM: Won't be on release plan --> | [Configure unannounced returns in Warehouse management only mode](../warehousing/wms-only-mode-unannounced-returns-setup.md) | Feature management:<br>*Warehouse management only mode* |
 
@@ -48,7 +51,7 @@ Some of these features aren't visible on your system until you turn them on in [
 
 | Feature enhancement | Description |
 |---|---|
-|<p>**Module:** Asset management</p><p>**Feature management name:** *(Preview) Print work order document attachments*</p> | Lets you print work order reports that include PDF documents attached to work order headers and lines. |
+|<p>**Module:** Asset management</p><p>**Feature management name:** *Print work order document attachments*</p> | Lets you print work order reports that include PDF documents attached to work order headers and lines. |
 |<p>**Module:** Inventory and warehouse management</p><p>**Feature management name:** *(Preview) Inventory dimensions with license plate id cleanup*</p> | Adds the ability to clean up inventory dimensions with license plate IDs that are more than one year old, are financial updated, and have no on-hand inventory. |
 |<p>**Module:** Master planning</p><p>**Feature management name:** *Enable the calculation of Batch CTP even when plan run ends with errors.*</p> | Allows for CTP-confirmed dates to be calculated for sales order lines, even when the Planning Optimization run ends with errors. Confirmed dates will be calculated for sales order lines that didn't have any errors. To enable or disable this behavior, use the **Calculate Batch CTP even with errors** setting in the plan settings for the dynamic plan. |
 |<p>**Module:** Production control</p><p>**Feature management name:** *Add filter to hide completed jobs on the Kanban board*</p> | Adds a **Hide completed jobs** checkbox to the Kanban board. The option lets you choose to hide all completed jobs, which provides a cleaner and more focused view. |

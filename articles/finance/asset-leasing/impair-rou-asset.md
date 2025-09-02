@@ -3,8 +3,8 @@ title: Impair right-of-use assets
 description: Learn about the functionality that records an impairment and adjusts the asset depreciation schedule of an Accounting Standards Codification Topic 842 operating lease.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
-ms.date: 12/03/2021
+ms.topic: how-to
+ms.date: 07/03/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -22,29 +22,32 @@ If a right-of-use (ROU) asset's carrying amount isn't recoverable, you might hav
 
 The remaining balance of the ROU asset will be amortized on a straight-line basis for the number of periods that remain, regardless of whether the lease was classified as a finance lease under IFRS 16 or an operating lease under ASC 842.
 
+The impairment number sequence must be defined on the **Asset leasing parameters** page.
+
 ## Impair an ROU asset
 
-1. Go to the impaired lease, and select **Books**.
+1. Go to a lease, and select **Books**.
 2. On the Action Pane, select **Impairment**.
 3. In the dialog box that appears, in the **Impairment amount** field, enter the amount of the asset impairment. To decrease the ROU asset, you should enter a positive value.
 4. In the **Transaction date** field, enter the date when the impairment entry should be posted.
 5. In the **Periods remaining** field, enter the remaining number of months to amortize.
-6. Set the **Preview** option to view the proposed asset balance and financial entry before they are created or posted.
+6. Set the **Preview** option to view the proposed asset balance and financial entry before they're created or posted.
 7. Set the **Close book** option to **Yes** to close the lease book. You can undo this action by using the **Reopen lease** status. Entries can't be posted against closed leases, and closed leases can't be adjusted. 
 8. Select **Post** to create or post the impairment entry.
 
-    > [!NOTE]
-    > After the impairment transaction is posted, a new book version is created.
-
-    > If the lease is classified as an operating lease, the monthly depreciation after impairment will be calculated using straight-line depreciation.
+> [!NOTE]
+> After the impairment transaction is posted, a new book version is created.
+> If the lease is classified as an operating lease, the monthly depreciation after impairment will be calculated using straight-line depreciation.
+>
+> If the impairment workflow is configured, the **Post** button isn't visible and the impairment must be submitted for approval.
 
 9. To view the impaired asset depreciation schedule, open the asset depreciation schedule for the lease book. The asset will now be depreciated on a straight-line basis over the number of months that you entered in the **Periods remaining** field.
-10. To view the impairment expense journal entry, select **Asset leasing journal** on the Action Pane of the impaired lease book. The system creates a journal entry that debits the impairment expense posting account and credits the lease asset posting account. 
-11. To view the new carrying value of the ROU asset, select **Asset transactions** on the Action Pane of the lease book.
+10. To view the impairment expense journal entry, select **Asset leasing journal** on the Action pane of the impaired lease book. The system creates a journal entry that debits the impairment expense posting account and credits the lease asset posting account. 
+11. To view the new carrying value of the ROU asset, select **Asset transactions** on the Action pane of the lease book.
 
 ## Example of ROU asset impairment
 
-For this example, the lease is a non-specialized asset that doesn't transfer ownership or grant the lessee the option to purchase.
+For this example, the lease is a nonspecialized asset that doesn't transfer ownership or grant the lessee the option to purchase.
 
 ### Setup
 
@@ -89,7 +92,6 @@ The following tables show the values that are set on the **General** and **Payme
     | Transaction date       | 1/1/2022 |
     | Periods remaining      | 84       |
     | Post                   | Yes      |
-    | Preview before posting | No       |
     | Close book             | No       |
 
 6. An impairment expense journal entry has been created and posted. To view it, go to the asset's leasing journal in the lease book. Notice that the amount of the impairment was debited to the Impairment expense posting account, and the ROU asset posting account was credited.
@@ -97,6 +99,12 @@ The following tables show the values that are set on the **General** and **Payme
 7. To view the net effect of the impairment, go to the liability and asset transactions tables. Notice that the impairment expense has decreased the ROU asset, but the carrying amount of the lease liability hasn't changed.
 
 The impairment has one other effect that you should consider. Because the ROU asset amount is now much less than the lease liability, the amount must be depreciated differently than it was before. Specifically, the asset is now depreciated in a straight-line manner throughout the remaining 84 months of the lease, beginning on the transaction date.
+
+## Lease impairment workflow 
+
+The Lease **Impairment workflow** is used to ensure a consistent impairment process. The workflow guides each lease impairment through predefined approval steps, assigning tasks to specific users. After a lease impairment is approved, it's finalized on the **Lease impairment** list page. 
+To approve a lease impairment, go to the **Lease book** and open the **Lease impairment** dialog, click **Submit** to workflow. You manage the approval directly from the **Lease impairment** page.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

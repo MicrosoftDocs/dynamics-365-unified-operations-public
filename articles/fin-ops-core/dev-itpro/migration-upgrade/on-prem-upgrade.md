@@ -3,9 +3,8 @@ title: In-place upgrade process for on-premises environments
 description: Learn about the detailed process for upgrading on-premises environments from versions 7.x to 10.0.x, including prerequisites.  
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 01/14/2021
-ms.custom:
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -15,6 +14,8 @@ ms.dyn365.ops.version: 10.0.x
 search.app:
   - financeandoperationsonprem-docs
 ms.service: dynamics-365-op
+ms.custom:
+  - sfi-ropc-nochange
 ---
 
 # In-place upgrade process for on-premises environments

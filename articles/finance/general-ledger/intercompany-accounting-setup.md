@@ -3,7 +3,7 @@ title: Intercompany accounting setup
 description: Learn how to set up intercompany accounting so that you can use intercompany journals for ledger allocations and financial journals, such as daily journals.
 author: kweekley
 ms.author: kweekley
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 06/20/2017
 ms.reviewer: kfend
 audience: Application User

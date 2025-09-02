@@ -3,7 +3,7 @@ title: Configure tax integration for China
 description: Learn about the process for configuring tax integration for China, including a table that defines various prerequisites.
 author: mrolecki
 ms.author: mrolecki
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak
 audience: Application User

@@ -3,7 +3,7 @@ title: Process parameters
 description: Learn about how to implement custom parameters in the process automation framework, including overviews and code examples for various interfaces.
 author: RyanCCarlson2
 ms.author: rcarlson
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/10/2024
 ms.custom: 
 ms.reviewer: johnmichalak

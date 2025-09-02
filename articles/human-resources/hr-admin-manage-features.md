@@ -5,7 +5,7 @@ title: Manage features in Human Resources
 description: This article describes the Feature management feature and how you can use it.
 author: twheeloc
 ms.date: 01/15/2025
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: FeatureManagementWorkspace

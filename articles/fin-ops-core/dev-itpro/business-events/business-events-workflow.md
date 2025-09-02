@@ -3,7 +3,7 @@ title: Workflow business events
 description: Learn about workflow business events, which are generated at various points in the processing of a workflow, including an overview of workflow components.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 01/18/2022
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak
@@ -76,14 +76,6 @@ An approval or task work item can be completed in Power Automate using the follo
 To enable external completion of work items, the work item action manager class needs to implement the IValidateWorkflowWorkItemAction interface. The standard WorkflowWorkItemActionManager class has implemented this interface. In Platform update 32, the TrvWorkflowWorkItemActionManager class was updated to implement the IValidateWorkflowWorkItemAction interface. Use the existing IValidateWorkflowWorkItemAction implementations as examples to notify updates about other WorkflowWorkItemActionManager classes.
 
 For a step-by-step guide to setting up work item completion in Microsoft Power Automate, see [Consume workflow approval business events](how-to/how-to-flow.md).
-
-## Templates for work item completion in Power Automate
-
-The following templates for work item completion in Power Automate are available:
-- [Complete finance and operations workflow work items (PU26)](https://flow.microsoft.com/galleries/public/templates/efb564143834442283c41e19cdc2a6bb/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu26/)
-- [Complete finance and operations workflow work items (PU29)](https://flow.microsoft.com/galleries/public/templates/ebeccaa6f7aa40899828d8d01151d268/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu29/)
-
-The Platform update 29 version gets completion options from the business event payload. These options were added in Platform update 29, and presented to the user via the approval action. 
 
 ## Troubleshooting workflow business events
 

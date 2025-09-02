@@ -3,7 +3,7 @@ title: Maximize API throughput
 description: Learn about strategies that can help you manage throttling responses for service protection application programming interface (API) limits and maximize API throughput.
 author: jaredha
 ms.author: sumadhey
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 06/19/2024

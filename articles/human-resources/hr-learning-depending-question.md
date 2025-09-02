@@ -4,7 +4,7 @@
 title: Make a question dependent on the answer of the previous question
 description: Conditional questions allow you to specify what follow-up question will be presented to a respondent, based on the answer to the preceding question. 
 author: twheeloc
-ms.date: 07/02/2024
+ms.date: 06/04/2025
 ms.topic: how-to 
  
 # optional metadata 

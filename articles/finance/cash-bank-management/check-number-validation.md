@@ -3,7 +3,7 @@ title: Check number validation
 description: Learn about check number validation functionality in the Cash and bank management module, including a step-by-step process for setting up validation parameters.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/06/2023
 ms.custom: 
 ms.reviewer: twheeloc 

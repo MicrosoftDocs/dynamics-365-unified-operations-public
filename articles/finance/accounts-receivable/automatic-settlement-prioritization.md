@@ -1,15 +1,15 @@
 ---
 title: Automatic settlement and prioritization
-description: Learn about how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page.
-author: JodiChristiansen
-ms.author: jchrist
+description: Learn about how transactions are settled if you select Automatic settlement on the Accounts receivable or Accounts payable parameters pages.
+author: Music727
+ms.author: mibeinar
 ms.topic: article
-ms.date: 01/30/2019
+ms.date: 04/18/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
+ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym, VendParameters
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 ---
@@ -18,9 +18,9 @@ ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
+This article describes how transactions are settled if you select Automatic settlement on the **Accounts receivable parameters** or **Accounts payable parameters** pages. It also explains how automatic settlement can be used in combination with the payment priority.
 
-You have two options when you settle payments with invoices and other transactions. You can manually select the transactions to settle, or the system can select the transactions automatically by using the automatic settlement functionality. You can also customize how automatic settlements are processed by using the **Prioritize settlement** option. All these options are part of the settlement parameters that are defined on the **Accounts receivable parameters** page. The way that transactions are automatically settled can differ, depending on the method that you use for automatic settlement. The following methods are available:
+You have two options when you settle payments with invoices and other transactions. You can manually select the transactions to settle, or the system can select the transactions automatically by using the automatic settlement functionality. You can also customize how automatic settlements are processed by using the **Prioritize settlement** option. All these options are part of the settlement parameters that are defined on the **Accounts receivable parameters** or **Accounts payable parameters** pages. The way that transactions are automatically settled can differ, depending on the method that you use for automatic settlement. The following methods are available:
 
 -   User-defined settlement priority
 -   Default automatic settlement
@@ -38,7 +38,7 @@ The examples of settlements later in this article are based on the following tra
 | Interest note | October 15  | 7.00   |                     |                    | This interest note is for invoice 1 and invoice 2. The amount is calculated as 2-percent interest on amounts that are 30 or more days past due. For example, 0.02 × (100.00 + 250.00) = 7.00. |
 
 ## User-defined settlement priority
-If you set **Use priority for automatic settlements** to **Yes** on the **Accounts receivable parameters** page, the settlement priority that you define on the **Settlement priority** page is used when transactions are selected for automatic settlement. For this example, the following settlement priority is defined:
+If you set **Use priority for automatic settlements** to **Yes** on the **Accounts receivable parameters** or **Accounts payable parameters** pages, the settlement priority that you define on the **Settlement priority** page is used when transactions are selected for automatic settlement. For this example, the following settlement priority is defined:
 
 1.  Transaction type
     -   Payment fees

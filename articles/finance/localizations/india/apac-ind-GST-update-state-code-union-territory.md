@@ -3,7 +3,7 @@ title: Update the state code and union territory
 description: Learn how to update the state code and union territory, part of the master data setup required to make the India localization solution for Goods and Services Tax.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/04/2019
 ms.custom:
 ms.reviewer: johnmichalak  

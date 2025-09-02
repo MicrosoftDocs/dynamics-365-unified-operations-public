@@ -11,8 +11,9 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-09-07
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Commerce Chat with Power Virtual Agents module
@@ -45,8 +46,8 @@ To find the bot ID of a Power Virtual Agent in the Power Virtual Agents web app,
 1. In the left navigation menu, select **Settings \> Channels**.
 1. Select **Mobile app**.
 1. In the **Mobile app** flyout menu, under **Token Endpoint**, select **Copy** to copy the token endpoint URL.
-1. Open a new browser tab and navigate to the **Token Endpoint**. A JSON result displays. Copy the value of the **token** property. The value is a JWT token.
-1. Decode the JWT token. In the decoded result, the **bot ID** is found in the **bot** field.
+1. Open a new browser tab and navigate to the **Token Endpoint**. A JSON result displays. Copy the value of the **token** property. The value is a JWT.
+1. Decode the JWT. In the decoded result, the **bot ID** is found in the **bot** field.
 
 :::image type="content" source="../media/chat-module-pva-botid.png" alt-text="Find bot ID of a Power Virtual Agent":::
 

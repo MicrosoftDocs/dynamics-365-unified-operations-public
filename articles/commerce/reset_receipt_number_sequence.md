@@ -4,7 +4,7 @@ title: Configure and manage receipt numbers
 description: This article describes how to configure and manage receipt numbers in Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 ms.date: 09/28/2023
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global

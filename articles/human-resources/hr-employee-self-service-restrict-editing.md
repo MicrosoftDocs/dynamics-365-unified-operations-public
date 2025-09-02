@@ -5,7 +5,7 @@ title: Restrict editing of personal information
 description: Restrict employees from editing contact details in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/26/2021
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: EssWorkspace
@@ -20,6 +20,7 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
+ms.custom: sfi-image-nochange
 ---
 
 # Restrict editing of personal information

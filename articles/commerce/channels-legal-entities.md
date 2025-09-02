@@ -3,6 +3,7 @@ title: Create legal entities
 description: This article describes how to create legal entities in Microsoft Dynamics 365 Commerce, which must be created and configured before creating channels.
 author: samjarawan
 ms.date: 05/28/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin

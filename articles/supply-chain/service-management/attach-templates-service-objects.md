@@ -3,7 +3,7 @@ title: Attach templates to service objects
 description: Learn how a template bill of materials (BOM) can be attached to a service object relation, including a step-by-step process.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac

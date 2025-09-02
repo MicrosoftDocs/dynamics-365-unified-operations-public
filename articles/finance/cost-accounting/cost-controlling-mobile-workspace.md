@@ -3,7 +3,7 @@ title: Cost controlling mobile workspace
 description: Learn about the Cost controlling mobile workspace, which lets cost center managers view information about cost center performance anytime and anywhere.
 author: AndersEvenGirke
 ms.author: aevengir
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/24/2022
 ms.reviewer: twheeloc
 audience: Application User
@@ -104,12 +104,6 @@ If version 1611 with Platform update 3 or later has been deployed for your organ
 </tbody>
 </table>
 
-
-## Download and install the mobile app
-Download and install the finance and operations (Dynamics 365) mobile app:
-
--   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
--   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## Sign in to the mobile app
 

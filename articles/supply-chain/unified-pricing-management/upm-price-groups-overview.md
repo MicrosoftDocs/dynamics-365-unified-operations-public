@@ -1,6 +1,6 @@
 ---
-title: Price groups overview (preview)
-description: Learn about the role of price groups in Unified pricing management and the other types of price groups that are used in Microsoft Dynamics 365 Supply Chain Management.
+title: Price groups overview
+description: Learn about the role of price groups in Unified pricing management and the other types of price groups that are used in Microsoft Dynamics 365 Commerce and Dynamics 365 Supply Chain Management.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
@@ -12,12 +12,9 @@ ms.custom:
 ---
 
 
-# Price groups overview (preview)
+# Price groups overview
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-<!-- KFM: Preview until 10.0.34 GA -->
 
 A *price group* is a flexible tool that enables businesses to manage and adjust their pricing strategies across a wide range of attributes, including sales channels, customer groups, order types, and delivery methods. The power of a price group lies in its ability to logically bundle these attributes together, so that businesses can consistently apply pricing rules and promotions across multiple entities without having to modify individual trade agreements, discount setups, or pricing components. This flexibility is valuable in both Microsoft Dynamics 365 Commerce and Dynamics 365 Supply Chain Management, where pricing must adapt quickly to changing business conditions but also maintain consistency across various settings.
 
@@ -27,7 +24,7 @@ In Supply Chain Management, price groups can be just as valuable. For example, a
 
 Because of the flexibility that price groups provide, companies can make quick, broad changes across a set of trade agreements or discounts without disrupting the underlying setup. This capability is especially beneficial for companies that use Commerce, because they are already accustomed to using price groups to efficiently manage promotions and customer-specific pricing.
 
-## Price groups in finance and operations apps
+## Price groups in Microsoft finance and operations apps
 
 Price groups classify products or services based on their price level. Therefore, they give companies a flexible way to manage and adjust pricing strategies. Retailers, wholesalers, and manufacturers can segment their target markets and define different prices for different customers.
 

@@ -80,7 +80,7 @@ To set up the rules to process responses from the Electronic Invoicing service, 
 1. On the **Key Vault parameters** page, select **New** to create a Key Vault reference.
 1. In the **Name** field, enter the name of the Key Vault reference.
 1. In the **Description** field, enter a description.
-1. In the **Key Vault URI** field, paste the Key Vault URI from the key vault (`https://<your key vault>.vault.azure.net/`). For more information, see [Create an Azure key vault in the Azure portal](gs-e-invoicing-create-azure-key-vault-azure-portal.md).
+1. In the **Key Vault URI** field, paste the Key Vault URI from the key vault (`https://<your key vault>.vault.azure.net/`). For more information, see [Create an Azure Key Vault in the Azure portal](gs-e-invoicing-create-azure-key-vault-azure-portal.md).
 1. In the **Certificates** section, select **Add**.
 1. In the **Name** field, enter the name of the storage account secret or certificate. This name should match the name of the Key Vault secret that holds the shared access signature (SAS) token of the storage account. For more information, see [Create an Azure storage account in the Azure portal](gs-e-invoicing-create-azure-storage-account-azure-portal.md).
 1. In the **Description** field, enter a description.
@@ -123,6 +123,6 @@ To delete a number sequence if it's no longer used, select **Delete**.
 
 ## Inactivate legacy Electronic invoicing functionality
 
-To inactivate old (legacy) ER functionality for some features, and to activate additional functionality in Finance and Supply Chain Management for some country/region-specific scenarios, enable the corresponding feature on the **Features** tab of the **Electronic document parameters** page.
+To deactivate old (legacy) ER functionality for some features, and to activate additional functionality in Finance and Supply Chain Management for some country/region-specific scenarios, enable the corresponding feature on the **Features** tab of the **Electronic document parameters** page.
 
-When you enable a feature in the list, the legacy functionality is inactivated for the corresponding country or region and feature name.
+When you enable a feature in the list, the legacy functionality is deactivated for the corresponding country or region and feature name.

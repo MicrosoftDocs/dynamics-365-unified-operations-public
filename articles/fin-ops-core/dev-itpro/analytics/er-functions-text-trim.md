@@ -3,7 +3,7 @@ title: TRIM ER function
 description: Learn about how the TRIM Electronic reporting (ER) function is used, including syntax strings, arguments, return values, usage notes, and examples.
 author: kfend
 ms.author: filatovm
-ms.topic: conceptual
+ms.topic: article
 ms.date: 02/28/2022
 ms.reviewer: johnmichalak
 audience: IT Pro

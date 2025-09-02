@@ -2,8 +2,8 @@
 title: Archive Dynamics 365 Supply Chain Management inventory-related documents
 description: Learn how to archive Microsoft Dynamics 365 Supply Chain Management inventory-related documents.
 author: pnghub
-ms.author: gned
-ms.topic: conceptual
+ms.author: priysharma
+ms.topic: how-to
 ms.date: 9/06/2024
 ms.custom:
 ms.reviewer: twheeloc

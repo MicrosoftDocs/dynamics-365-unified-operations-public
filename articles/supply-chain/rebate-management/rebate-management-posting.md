@@ -3,12 +3,12 @@ title: Rebate management posting setup
 description: Learn how to set up posting profiles. Posting profiles are used to determine posting entries for Rebate management calculation lines.
 author: sherry-zheng
 ms.author: chuzheng
-ms.topic: how-to
-ms.date: 05/15/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: TAMRebatePosting
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+  - bap-template
 ---
 
 # Rebate management posting setup
@@ -19,23 +19,18 @@ Rebate management posting profiles are used to determine posting entries for Reb
 
 This feature works across companies (legal entities). You can specify the company that provisions will be accrued to and that claims will be paid by. You can also set different provision debit accounts and write-off credit accounts per source posting company.
 
-To set up Rebate management posting profiles for customers and vendors, go to **Rebate management \> Rebate management posting setup \> Rebate management posting profiles**. The **Rebate management posting profiles** page includes a list pane that shows all your existing profiles. You can use the buttons on the Action Pane to add profiles to the list or remove them.
+To set up Rebate management posting profiles for customers and vendors, go to **Rebate management** \> **Rebate management posting setup** \> **Rebate management posting profiles**. The **Rebate management posting profiles** page includes a list pane that shows all your existing profiles. You can use the buttons on the Action Pane to add profiles to the list or remove them.
 
 The remaining sections of this article describe how to use the available fields when you create or edit a profile.
 
-## Create a profile that sends rebates to the original transaction account (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
+## Create a profile that sends rebates to the original transaction account
 
 You can configure rebate management posting profiles to send rebates as output to the original transaction account from the related sales order or purchase order. Before you can use this capability, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
-- The feature that is named *Enable posting of vendor rebate outputs to purchase order vendors* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Enable posting of vendor rebate outputs to purchase order vendors* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
 
 To set up this functionality, select the appropriate value in the **Use account source** field of your posting profile, as described later in this article.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Posting profile header
 

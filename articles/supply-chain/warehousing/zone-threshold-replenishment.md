@@ -3,7 +3,7 @@ title: Zone threshold replenishment
 description: Zone-based replenishment uses a minimum/maximum (min/max) replenishment strategy, but it evaluates whole warehouse zones instead of just individual locations.required in a picking zone.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/01/2020
 ms.custom:
 ms.reviewer: kamaybac

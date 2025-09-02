@@ -2,11 +2,11 @@
 title: Data import and export jobs overview
 description: Learn about how to use the Data management workspace to create and manage data import and export jobs with the outline on the import and export process.
 author: pnghub
-ms.author: gned
+ms.author: priysharma
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 10/21/2024
+ms.date: 07/11/2025
 ms.reviewer: johnmichalak 
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -42,7 +42,7 @@ Here are the steps to import or export data.
 The remaining sections of this article provide more information about each step of the process.
 
 > [!NOTE]
-> In order to refresh the Data import/export form to see the latest progress, use the form refresh icon. Browser level refresh is not recommended because it interrupts any import/export jobs that aren't run in a batch.
+> In order to refresh the Data import/export form to see the latest progress, use the form refresh icon. Browser level refresh isn't recommended because it interrupts any import/export jobs that aren't run in a batch.
 
 ## Create an import or export job
 A data import or export job can be run one time or many times.
@@ -66,7 +66,7 @@ When you select an entity, you must select the format of the data that's exporte
 > It's important to select the correct value for **Row delimiter**, **Column delimiter**, and **Text qualifier**, if the **File format** option is set to **Delimited**. Make sure that your data doesn't contain the character used as delimiter or qualifier, as this may result in errors during import and export.
 
 > [!NOTE]
-> For XML-based file formats, make sure to only use legal characters. For more information about valid characters, see [Valid Characters in XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 does not allow any control characters except for tabs, carriage returns, and line feeds. Examples of illegal characters are square brackets, curly brackets, and backslashes. 
+> For XML-based file formats, make sure to only use legal characters. For more information about valid characters, see [Valid Characters in XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 doesn't allow any control characters except for tabs, carriage returns, and line feeds. Examples of illegal characters are square brackets, curly brackets, and backslashes. 
 
 To import or export data, use Unicode instead of a specific code page. This helps provide the most consistent results and eliminate data management jobs to fail because they include Unicode characters. The system-defined source data formats that use Unicode all have **Unicode** in the source name. The Unicode format is applied by selecting a Unicode encoding ANSI code page as **Code page** in the **Regional settings** tab. Select one of the following code pages for Unicode:
 
@@ -140,7 +140,26 @@ A job can be secured by roles, users, and legal entity at the same time.
 You can run a job one time by selecting the **Import** or **Export** button after you define the job. To set up a recurring job, select **Create recurring data job**.
 
 > [!NOTE]
-> An import or an export job can be run by selecting the **Import** or **Export** button. This action schedules a batch job to run only once. The job may not execute immediately if batch service is throttling due to the load on the batch service. The jobs can also be run synchronously by selecting **Import now** or **Export now**. This starts the job immediately and is useful if the batch does not start due to throttling. The jobs can also be scheduled to execute at a later time. This can be done by choosing the **Run in batch** option. Batch resources are subject to throttling, so the batch job might not start immediately. Using a batch is the recommended option because it also helps with large volumes of data that need to be imported or exported. Batch jobs can be scheduled to run on a specific batch group, which allows more control from a load balancing perspective.
+> An import or an export job can be run by selecting the **Import** or **Export** button. This action schedules a batch job to run only once. The job may not execute immediately if batch service is throttling due to the load on the batch service. The jobs can also be run synchronously by selecting **Import now** or **Export now**. This starts the job immediately and is useful if the batch doesn't start due to throttling. The jobs can also be scheduled to execute at a later time. This can be done by choosing the **Run in batch** option. Batch resources are subject to throttling, so the batch job might not start immediately. Using a batch is the recommended option because it also helps with large volumes of data that need to be imported or exported. Batch jobs can be scheduled to run on a specific batch group, which allows more control from a load balancing perspective.
+
+## Automatic retry support during batch node restarts
+Automatic retry support for import/export in batch job is implemented to enable retries when a batch restarts. This feature is available starting from version 10.0.42.
+
+The following diagrams show an overview of the changes that were made using the export flow as an example. A similar design was applied to import.
+
+Previous Design: There was one regular batch job with one runtime batch task.
+
+:::image type="content" source="media/previous-design.jpg" alt-text="Diagram of the previous design showing two steps: Regular job using DFMBathExporter and Runtime task using DMFExportTaskScheduler."::: 
+
+New Design: There's one regular batch job (Job1) that creates a new runtime child job(Job2) and regular batch task is added to Job2 instead of Job1.
+
+:::image type="content" source="media/new-design.jpg" alt-text="Diagram of the new design with a new Runtime job between the regular job using DFMBathExporter and Runtime task using DMFExportTaskScheduler."::: 
+
+> [!NOTE]
+> If you've customized your code that involves DMFBatchImporter, DMFImportTaskScheduler, DMFBatchExporter, DMFExportTaskScheduler classes, you may encounter issues with the import/export in batch feature under the new design. For example, if you have created your own custom batch task and are adding task to Job1 as per previous design, then you're adding tasks to the wrong job. You should now add your custom tasks to job2 instead of job1 as per new design.
+
+> [!NOTE]
+> If you have any use case that depends on the enddateTime of the DMFBatchImporter or DMFBatchExporter tasks to track completion of DMF Execution, you may notice that these values now differ from the DMF execution end datetime. This change is due to the recent retry design updates: DMFBatchImporter/DMFBatchExporter now creates a new batch job2, marks them complete, and job2 handles adding and waiting for other required tasks to finish. As a result, if your use case depends on the enddatetime of DMFBatchImporter or DMFBatchExporter, you should now monitor the enddatetime of the last DMFImportTaskScheduler or DMFExportTaskScheduler task instead, as this provides accurate information about the completion of DMFExecution.
 
 ## Validate that the job ran as expected
 The job history is available for troubleshooting and investigation on both import and export jobs. Historical job runs are organized by time ranges.
@@ -175,7 +194,7 @@ To speed up the import of data, parallel processing of importing a file can be e
     - In the **Import task count** field, enter the count of import tasks. The count must not exceed the max batch threads allocated for batch processing in **System administration \>Server configuration**.
 
 > [!NOTE]
-> Adding too many parallel tasks causes the underlying infrastructure to use the resource capacity at 100% and impacta the environment performance and other operations. It's suggested you understand the resource capacity of the environment and consumption based on the parallel import tasks configured and limit the number of tasks.
+> Adding too many parallel tasks causes the underlying infrastructure to use the resource capacity at 100% and impacts the environment performance and other operations. It's suggested you understand the resource capacity of the environment and consumption based on the parallel import tasks configured and limit the number of tasks.
 
 ## Job history cleanup 
 By default, job history entries and related staging table data that are older than 90 days are automatically deleted. The job history cleanup functionality in data management can be used to configure periodic cleanup of the execution history with a lower retention period than this default. This functionality replaces the previous staging table cleanup functionality, which is now deprecated. The following tables are cleaned up by the cleanup process.
@@ -211,7 +230,7 @@ When you schedule the cleanup process, the following parameters must be specifie
 -   **Recurring batch** – The cleanup job can be run as a one-time, manual execution, or it can be also scheduled for recurring execution in batch. The batch can be scheduled using the **Run in background** settings, which is the standard batch setup.
 
 > [!NOTE]
-> If the Job history cleanup feature is not used, execution history older than 90 days is still [automatically deleted](../../dev-itpro/sysadmin/cleanuproutines.md#data-management). Job history cleanup can be run in addition to this automatic deletion. Ensure that the cleanup job is scheduled to run in recurrence. As explained above, in any cleanup execution the job only cleans up as many execution IDs as is possible within the provided maximum hours.
+> If the Job history cleanup feature isn't used, execution history older than 90 days is still [automatically deleted](../../dev-itpro/sysadmin/cleanuproutines.md#data-management). Job history cleanup can be run in addition to this automatic deletion. Ensure that the cleanup job is scheduled to run in recurrence. As explained above, in any cleanup execution the job only cleans up as many execution IDs as is possible within the provided maximum hours.
 
 ## Job history cleanup and archival 
 Job history cleanup and archival functionality replace the previous versions of the cleanup functionality. This section explains these new capabilities.

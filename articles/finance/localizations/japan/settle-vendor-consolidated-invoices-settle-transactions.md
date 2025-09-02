@@ -1,61 +1,58 @@
 ---
 title: Settle vendor consolidated invoices by using settle transactions
-description: Learn about settling vendor consolidated invoices by using settle transactions, including a step-by-step process using the JPMF demo data company.
+description: Learn how to settle vendor consolidated invoices for Japan by using settle transactions functionality in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 05/09/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: VendConsInvoice_JP, VendTable, VendOpenTrans
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Settle vendor consolidated invoices by using settle transactions
 
 [!include [banner](../../includes/banner.md)]
 
+This article explains how to settle vendor consolidated invoices for Japan by using settle transactions functionality in Microsoft Dynamics 365 Finance.
+
 In Japan, payments are made and settled against consolidated invoice.
 
+Before running the following procedures, ensure that a consolidated invoice is created and confirmed and a payment is posted. 
 
+The procedures use the demo data company JPMF.
 
-This procedure walks you through settling a consolidated invoice using settle transactions.
+## Confirm the consolidation invoice to be settled
 
+To confirm the consolidation invoice to be settled, follow these steps.
 
+1. In Dynamics 365 Finance, go to **Accounts payable \> Periodic tasks \> Consolidated invoice**.
+1. in the **Consolidation ID** field, copy the value to use later.
+1. Confirm that the consolidated invoice to settle has a status of **Confirmed**.
 
-You need to make sure that a consolidated invoice is created and confirmed, and a payment is posted before running this procedure. 
+## Settle a consolidation invoice
 
+To settle a consolidation invoice, follow these steps.
 
+1. In Dynamics 365 Finance, go to **Accounts payable \> Vendors \> All vendors**.
+1. In the list, find and select the vendor for whom that you want to settle the consolidated invoice. For example, select **JPMF-000002**.  
+1. On the Action Pane, select **Invoice**.
+1. Select **Settle transactions**.
+1. In the list, find and select the record with a consolidation ID of **JPMF-000004**.  
+1. Select or clear the **Mark** checkbox.
+1. In the list, find and select the payment transaction that is valued more than the invoice amount.  
+1. Select or clear the **Mark** checkbox.
+1. Select **Post**.
 
-This procedure was created using the demo data company JPMF.
+## Validate that a consolidation invoice status is settled
 
+To validate that a consolidation invoice status is settled, follow these steps.
 
-## Confirm Consolidation invoice to be settled
-1. Go to Accounts payable > Periodic tasks > Consolidated invoice.
-2. Note the value in the Consolidation ID field to reference later
-    * Confirm that the consolidated invoice to settle has a status of Confirmed.    In this example: Consolidation ID - JPMF-000004  
-
-## Settle Consolidation invoice 
-1. Go to Accounts payable > Vendors > All vendors.
-2. In the list, find and select the desired record.
-    * Select the vendor that you want to settle the consolidated invoice for. In this example, we use JPMF-000002.  
-3. On the Action Pane, click Invoice.
-4. Click Settle transactions.
-5. In the list, find and select the desired record.
-    * Select the record with Consolidation ID = JPMF-000004.  
-6. Select or clear the Mark check box.
-    * Mark the Invoice.  
-7. In the list, find and select the desired record.
-    * Select the payment transaction, valued more than the Invoice amount.  
-8. Select or clear the Mark check box.
-    * Mark the payment transaction.  
-9. Click Post.
-
-## Validate Consolidation invoice status to Settled
-1. Go to Accounts payable > Periodic tasks > Consolidated invoice.
-    * Confirm that the status of the consolidated invoice is now "Settled".  
+1. In Dynamics 365 Finance, go to **Accounts payable \> Periodic tasks \> Consolidated invoice**.
+1. Confirm that the status of the consolidated invoice is **Settled**.  
 
 
 

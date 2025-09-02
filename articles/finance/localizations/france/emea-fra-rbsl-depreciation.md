@@ -3,7 +3,7 @@ title: RB/SL depreciation
 description: Depreciation amounts are calculated by using both the reducing balance depreciation method and the straight-line remaining depreciation method.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/27/2024

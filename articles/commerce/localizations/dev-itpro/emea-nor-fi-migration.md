@@ -5,7 +5,7 @@ title: Migrate from legacy Commerce functionality for Norway
 description: This article explains how to migrate from the legacy digital signing solution in the Microsoft Dynamics 365 Commerce localization for Norway to the solution that is based on the Commerce fiscal integration framework.
 author: EvgenyPopovMBS
 ms.date: 02/03/2023
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Norway

@@ -37,7 +37,7 @@ Configure an email account channel if the Electronic invoicing feature you creat
 3. On the **Data channel** tab in the **Parameters** field group, in the **Data channel** field, enter the name of the channel. The channel name should be no more than ten characters.
 4. In the **Server address** field, enter the email account provider. For example, the server address for **https://outlook.live.com/** is **imap-mail.outlook.com**.
 5. In the **Server port** field, enter the port used by the email account provider. For example, the server port for **https://outlook.live.com/** is **993**.
-6. In the **User name secret** field, enter the name of the Key vault secret that contains the ID of the email user account. This secret must be created in Azure key vault and set up in your service environment. 
+6. In the **User name secret** field, enter the name of the Key vault secret that contains the ID of the email user account. This secret must be created in Azure Key Vault and set up in your service environment. 
 7. In the **User password secret** field, enter the name of the Key vault secret that contains the password of the email user account.
 8. Optional: Enter values in the **From filter**, **Subject filter**, and **Date filter** fields.
 9. Enter the names of the mailbox folders where mails will be:

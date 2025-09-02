@@ -3,6 +3,7 @@ title: Shift and cash drawer management
 description: This article describes how to set up and use shifts in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: josaw1
 ms.date: 11/19/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin

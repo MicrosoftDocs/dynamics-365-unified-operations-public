@@ -4,7 +4,7 @@ description: Learn how to set up users, security roles, and row-level security f
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 02/22/2024
+ms.date: 07/30/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -34,23 +34,20 @@ If you're using custom roles in Supply Chain Management, you must manually assig
 
 ## Assign security roles for accessing Demand planning on Power Platform
 
-When you install Demand planning on Power Platform, it creates several security roles to control access to its various features. To be able to access Demand planning, users must sign in a Power Platform user account that has the security roles for the features they need.
+When you install Demand planning on Power Platform, it creates and updates several security roles to control access to its various features. To be able to access Demand planning, users must sign in a Power Platform user account that has the security roles for the features they need.
 
 The following security roles are used by Demand planning. Some of them are standard for Power Platform, while others are specific to Demand planning.
 
-- **Basic User**
-    - This is a standard security role that's included with Power Platform.
-    - All users of Demand planning must have this role in order to access the app.
-
-- **System Administrator**  
-    - This is a standard security role that's included with Power Platform. It also grants access to admin features within Demand planning.
-    - Install the app, add users, assign roles, manage teams, and so on.
-    - View, create, and manage tables, relations, and data.
-    - Create and manage imports and exports.
-    - View and create transformations based on requests from the demand planning manager.
-    - Monitor jobs (imports, calculations, forecasts, transformations, and exports).
+- **Demand Planning Contributor**
+    - This role is added when you install Demand planning.
+    - Grants access to Demand planing.
+    - View worksheets (see shared worksheets and save their own views).
+    - Controlled by row-level access and can edit data they have access to.
+    - Collaborate using Microsoft Teams and in-app comments.
 
 - **Demand Planning Manager**
+    - This role is added when you install Demand planning.
+    - Grants access to Demand planning and all features that are available to the *Demand Planning Contributor* role.
     - Configure demand planning (role-level security, time fences, worksheets).
     - View and create planning data (forecasts and calculations).
     - View and create tables and import data from excel.
@@ -58,12 +55,25 @@ The following security roles are used by Demand planning. Some of them are stand
     - View and create worksheets.
     - Export plans when they're ready to share with Supply Chain Management.
 
-- **Demand Planning Contributor**
-    - View worksheets (see shared worksheets and save their own views).
-    - Controlled by row-level access and can edit data they have access to.
-    - Collaborate using Microsoft Teams and in-app comments.
+- **Basic User**
+    - This is a standard security role that's included with Power Platform.
+    - This role isn't required to access Demand planning, nor does it grant access to Demand planning.
+    - For users that also have the *Demand Planning Manager* and/or *Demand Planning Contributor* roles, the *Basic User* role adds the following privileges in Demand planning:
+        - Export any data table to Microsoft Excel using buttons in the Demand planning user interface.
+        - Access core business tables such as accounts, contacts, and so on.
+
+- **System Administrator**  
+    - This is a standard security role that's included with Power Platform.
+    - Grants access to Demand planning and all features that are available to the *Demand Planning Manager*, *Demand Planning Contributor*, and *Basic User* roles.
+    - Grants access to admin features within Demand planning.
+    - Install the app, add users, assign roles, manage teams, and so on.
+    - View, create, and manage tables, relations, and data.
+    - Create and manage imports and exports.
+    - View and create transformations based on requests from the demand planning manager.
+    - Monitor jobs (imports, calculations, forecasts, transformations, and exports).
 
 - **Demand Planning Service Role**
+    - This role is added when you install Demand planning.
     - An internal role required by Demand planning, which uses this role for internal operations.
     - You should never assign this role to a human user.
 
@@ -84,6 +94,7 @@ To set up row-level security, follow these steps:
     - **Name** – Enter a name for the rule.
     - **Description** – Enter a description for the rule.
 1. On the **Conditions** tab or wizard page, set up the logic for which data tables and columns the rule grants access to. Use the buttons to add or remove conditions as needed. The following logic applies.
+    - Each condition line is based on a data table and column, which you select in the **Table** and **Column** fields. The values in the column are compared to the values that you enter in the **Value** field. The **Operator** field determines how the comparison is made. For example, you can select *equals*, *greater than*, or *less than*. There is also a *Select all* operator, which matches all values in the column (in which chase the **Value** field is disabled); learn more in [Using the select all operator](time-fences.md#select-all).
     - If you have more than one condition line, then the lines are combined with an AND operator, which means that users will only have access to data rows where all of the condition lines are true.
     - You can select more than one value in the **Value** field for each condition. These values are combined with an OR operator, which means that the condition line evaluates to true for data rows where any of the values are true.
 1. On the **Users** tab or wizard page, add each user for whom the current row level access rule applies. If you assign the same user to multiple rules, then the user will have access to data rows that are granted by any of the rules (an OR operator is applies across rules).

@@ -5,13 +5,14 @@ author: angelmarshall
 ms.author: tsmarsha
 ms.topic: article
 ms.date: 01/25/2022
-ms.custom:
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: 
 ms.dyn365.ops.version: Platform update 12
+ms.custom:
+  - sfi-image-nochange
 ---
 
 # Subscription estimator in Lifecycle Services (LCS)

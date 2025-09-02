@@ -4,7 +4,7 @@ description: Learn about how to create and assign vendor certification types in 
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 02/14/2022
+ms.date: 06/05/2025
 ms.custom:
 ms.reviewer: twheeloc   
 audience: Application User

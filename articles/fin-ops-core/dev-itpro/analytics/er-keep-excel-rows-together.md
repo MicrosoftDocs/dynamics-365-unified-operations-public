@@ -3,7 +3,7 @@ title: Design an ER format to keep rows together on the same Excel page
 description: Learn how to design an Electronic reporting (ER) format that keeps rows together on the same Microsoft Excel page.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/28/2022
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

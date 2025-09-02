@@ -3,7 +3,7 @@ title: Development and build VMs that don't allow admin access FAQ
 description: Access answers to frequently asked questions (FAQs) about virtual machines that don't allow administrator access.
 author: yukonpeegs
 ms.author: epegors
-ms.topic: article
+ms.topic: faq
 ms.date: 10/09/2019
 ms.custom:  
 ms.reviewer: johnmichalak

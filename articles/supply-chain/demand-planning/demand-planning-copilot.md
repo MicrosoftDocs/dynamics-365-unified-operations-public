@@ -4,7 +4,8 @@ description: Demand planning in Microsoft Dynamics 365 Supply Chain Management l
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: overview
-ms.date: 11/15/2024
+ms.date: 07/02/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.collection:
@@ -32,7 +33,7 @@ To use Copilot to analyze demand plans, you must be running the general availabi
 
 The *Analyze demand plans with Copilot* feature is available in all regions.
 
-The *Analyze demand plans with Copilot* feature is available only in English.
+As of January 2025, the *Analyze demand plans with Copilot* feature is available in all languages supported by Demand planning.
 
 ## Ask Copilot to analyze your data
 

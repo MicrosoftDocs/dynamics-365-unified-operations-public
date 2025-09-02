@@ -3,7 +3,7 @@ title: One voucher FAQ
 description: Access answers frequently asked questions about the One voucher functionality, including questions about when vouchers are deprecated.
 author: kweekley
 ms.author: kweekley
-ms.topic: article
+ms.topic: faq
 ms.date: 10/10/2024
 ms.reviewer: twheeloc
 audience: Application User

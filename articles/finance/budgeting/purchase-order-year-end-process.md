@@ -3,8 +3,8 @@ title: Purchase order year-end close
 description: Learn about the required steps for running the purchase order year-end process.
 author: music727
 ms.author: mibeinar
-ms.topic: article
-ms.date: 01/29/2025
+ms.topic: how-to
+ms.date: 04/1/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -46,11 +46,11 @@ Budget control is often enabled when encumbrances are created for purchase order
 
 The **Process and carry forward budget** year-end option can be used only if budget control is enabled. Learn more in [Budget control overview](budget-control-overview-configuration.md).
 
-### Enable the encumbrance process
+### Enable the encumbrance process (public sector)
 
 The encumbrance process must be enabled before encumbrances for purchase orders can be recorded in the general ledger, and before you can successfully run the purchase order year-end process. For more information, see [Encumber purchase orders](/dynamicsax-2012/appuser-itpro/encumber-purchase-orders).
 
-### Set up posting definitions
+### Set up posting definitions (public sector)
 
 On the **Posting definitions** page, set up the following posting definitions in the **Purchasing** module, as required:
 
@@ -59,7 +59,7 @@ On the **Posting definitions** page, set up the following posting definitions in
 
 Learn more in [Posting definitions](../general-ledger/posting-definitions.md).
 
-### Assign posting definitions to transaction posting types
+### Assign posting definitions to transaction posting types (public sector)
 
 Use the **Transaction posting definitions** page to assign posting definitions to the transaction posting definitions that correspond to them. You can also define the criteria that originating transactions must meet before a specific posting definition can be used.
 
@@ -90,7 +90,7 @@ To enable purchase orders to be retrieved during the purchase order year-end pro
 - Purchase orders have a **Confirmed** state, or they have reserved budget values (encumbrance).
 - A purchase order is open or partially invoiced.
 - The purchase order approval workflow is completed.
-- No draft invoices exist for the purchase order. If a draft invoice exists, it must be deleted or posted before you start the year-end process.
+- No draft invoices exist for the purchase order. Purchase orders with draft invoices are visible on the **Retrieved purchase order** page, but the draft invoices must be deleted or posted before you start the year-end process.
 - The purchasing status is **Backorder** or **Received**.
 - The last accounting event for the purchase order is in the fiscal year that is selected during the purchase order year end. For example, if **2023** is selected, the accounting date of the last accounting event must be in 2023. Otherwise, the purchase order is excluded.
 - Both the current fiscal year period and the next fiscal year period are open.

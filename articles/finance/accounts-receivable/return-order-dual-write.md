@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.4
 # Return order invoice synchronization
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 This article provides an overview of the changes that were implemented so that dual-write can support return order invoices. Microsoft created a new mapping to sync return order invoices from Microsoft Dynamics 365 Finance to the customer's Dataverse environment.
 

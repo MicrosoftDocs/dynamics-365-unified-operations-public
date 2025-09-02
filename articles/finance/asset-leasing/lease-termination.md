@@ -3,9 +3,9 @@ title: Lease termination proposal
 description: Learn how to propose a lease for termination, including tables that outline the debit and credit availability for various types of transactions.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
-ms.date: 07/16/2021
-ms.reviewer: kfend
+ms.topic: how-to
+ms.date: 07/02/2025
+ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-1-28
@@ -70,6 +70,8 @@ To process leases that are ready for termination and post the termination journa
 2. In the dialog box that appears, select **OK**.
 
 The system posts the termination journal entry. The **Lease status** field for the lease book is set to **Terminated**, and the **Termination proposal status** field is set to **Completed**.
+
+Starting in Dynamics 365 Finance version 10.0.44, the Lease termination proposal cancellation feature adds a **Cancel** option, allowing you to revoke termination proposals. When triggered, the proposal status updates to **Canceled** and resets the **Termination proposal status** to **None** in the lease book page under the **General** FastTab.  
 
 ## Reverse a lease termination
 
@@ -149,5 +151,6 @@ The following tables show the values that are set on the **General** and **Payme
 
 The lease status should now be **Terminated**. No additional journal entries will be posted against this lease unless the termination is reversed.
 
+In Dynamics 365 Finance version 10.0.44, the lease termination proposal cancelation feature introduces a **Cancel** option for lease termination proposals. Mark them as **Canceled** and clear their termination status from the lease book and set it to **None**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

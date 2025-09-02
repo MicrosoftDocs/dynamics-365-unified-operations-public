@@ -2,7 +2,7 @@
 title: Human resources overview
 description: Learn about human resources, which streamlines routine recordkeeping tasks and provides a framework for human resources staff to manage areas of oversight.
 author: twheeloc
-ms.author: anbichse
+ms.author: twheeloc
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: twheeloc

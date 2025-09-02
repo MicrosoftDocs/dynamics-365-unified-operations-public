@@ -3,7 +3,7 @@ title: Database Movement API - Versioning and support
 description: Learn about an overview of the versioning and breaking change policies for the Database Movement application programming interface (API) about versioning and support.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 02/20/2020 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak

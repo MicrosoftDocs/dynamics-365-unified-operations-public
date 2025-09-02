@@ -6,7 +6,7 @@ ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 11/06/2024
+ms.date: 06/19/2025
 ms.custom: 
   - bap-template
 ---
@@ -32,7 +32,7 @@ Select a feature area to learn more about it.
 - [Sensor Data Intelligence (preview)](sensor-data-intelligence/sdi-home-page.md)
 - [Master planning](master-planning/master-planning-home-page.md)
 - [Demand planning](demand-planning/demand-planning-home-page.md)
-- [Unified pricing management (preview)](unified-pricing-management/upm-pricing-management-overview.md)
+- [Unified pricing management](unified-pricing-management/upm-pricing-management-overview.md)
 - [Procurement and sourcing](procurement/procurement-sourcing-overview.md)
 - [Product information management](pim/product-information.md)
 - [Engineering change management](engineering-change-management/product-engineering-overview.md)

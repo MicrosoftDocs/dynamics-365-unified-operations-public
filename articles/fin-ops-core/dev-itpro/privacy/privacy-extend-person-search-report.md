@@ -3,7 +3,7 @@ title: Extend the Person search report
 description: Learn about the process of extending the Person search report for finance and operations, including an overview on adding another entity to the default template.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/21/2023
 ms.reviewer: johnmichalak
 audience: IT Pro

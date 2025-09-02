@@ -3,7 +3,7 @@ title: Move service order lines
 description: Learn how to move service order lines, including a step-by-step process for moving service order lines and additional resources. 
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac

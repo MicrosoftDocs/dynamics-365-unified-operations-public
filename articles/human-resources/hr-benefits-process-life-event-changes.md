@@ -5,7 +5,7 @@ title: Process life event changes
 description: This article explains how to process life event changes in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/02/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer

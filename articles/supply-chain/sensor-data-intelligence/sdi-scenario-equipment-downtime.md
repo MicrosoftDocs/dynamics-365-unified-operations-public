@@ -3,7 +3,7 @@ title: Machine status scenario (preview)
 description: Learn about the machine status scenario, which lets you use sensor data to monitor the availability of your equipment with an outline on scenario dependencies.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/02/2022
 ms.reviewer: kamaybac
 ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreNotification, IoTIntMfgResourceStatusConfiguration, IoTIntMfgResourceStatus

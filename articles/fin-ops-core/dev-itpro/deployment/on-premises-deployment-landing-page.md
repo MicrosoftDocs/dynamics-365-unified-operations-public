@@ -3,11 +3,12 @@ title: On-premises deployment home page
 description: Access information and links to content about on-premises deployments, including resources for getting started, onboarding, commerce, and upgrades.
 author: johnmichalak
 ms.author: johnmichalak
-ms.topic: landing-page
+ms.topic: concept-article
 ms.custom: 
   - bap-template
   - evergreen
 ms.date: 06/07/2024
+ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global

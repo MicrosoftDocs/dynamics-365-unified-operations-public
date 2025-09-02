@@ -3,7 +3,7 @@ title: Chinese vouchers
 description: Learn about Chinese vouchers and how they are used in Microsoft Dynamics 365 Finance, including an outline on voucher creation methods.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 07/10/2024

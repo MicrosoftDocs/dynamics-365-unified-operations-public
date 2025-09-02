@@ -3,7 +3,7 @@ title: Credit note on cash discount
 description: Learn about what helps legal entities in the Czech Republic create, post, and print credit notes for cash discounts that are given to customers.
 author: mrolecki
 ms.author: mrolecki
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/25/2017
 ms.reviewer: johnmichalak
 audience: Application User

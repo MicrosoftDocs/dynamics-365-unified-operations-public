@@ -4,7 +4,7 @@ description: Learn how to create the list of consumer price index (CPI) schedule
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: article
-ms.date: 11/04/2021
+ms.date: 02/28/2025
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
@@ -65,7 +65,8 @@ For the period January 1, 2021, the first escalation amount is calculated in the
 
 For the period January 1, 2022, the escalation amount is calculated in the following way, based on the first escalation amount:
 
-1,045.91 + (114.25 – 105.65) &divide; 105.65 &times; 1,000 = 1,081.40
+1,045.91 + (114.25 – 110.5) &divide; 105.65 &times; 1,000 = 1,081.40
+
 
 > [!NOTE]
 > The escalation process always uses the latest CPI value, regardless of the index date. For example, if the escalation is in September, but the latest CPI value is for July, the July index is used. No adjustments are made after the September index is entered.

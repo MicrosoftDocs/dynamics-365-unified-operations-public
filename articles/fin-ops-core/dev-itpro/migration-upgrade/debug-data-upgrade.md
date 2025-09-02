@@ -3,7 +3,7 @@ title: Debug data upgrade scripts
 description: Learn how to debug data upgrade scripts for upgrades of Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises) Tier-1 development environments.
 author: ttreen
 ms.author: ttreen
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 11/18/2024
 ms.reviewer: twheeloc
 audience: Developer, IT Pro

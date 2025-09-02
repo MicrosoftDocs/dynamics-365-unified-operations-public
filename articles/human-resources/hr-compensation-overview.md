@@ -4,7 +4,7 @@
 title: Compensation plans
 description: This article describes how to use compensation management to manage and process compensation plans.
 author: twheeloc
-ms.date: 08/25/2021
+ms.date: 08/25/2025
 ms.topic: overview
 # optional metadata
 

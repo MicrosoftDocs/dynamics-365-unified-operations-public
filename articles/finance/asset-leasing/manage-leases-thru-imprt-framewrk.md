@@ -3,7 +3,7 @@ title: Manage leases through the Lease import framework
 description: Learn how to use the Lease import framework to adjust multiple leases at the same time, including a table that defines various process types.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/12/2024
 ms.reviewer: twheeloc
 audience: Application User

@@ -2,16 +2,15 @@
 title: Health check for POS peripherals and services
 description: This article describes the health check operation in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: ritakimani
-ms.date: 01/21/2025
-ms.topic: article
+ms.date: 02/27/2025
+ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2019-03-31
-ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
@@ -21,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This article describes the health check operation in Microsoft Dynamics 365 Commerce point of sale (POS).
 
-Retail stores can be complex environments where many applications and devices are used. As operations grow, it can become difficult to ensure that operations always run smoothly, because of dependencies on, for example, peripherals that can break or accidentally become unplugged over the course of a day. Troubleshooting for issues that are related to devices and services can be costly for larger merchants and equally frustrating for smaller operations.
+Retail stores can be complex environments where many applications and devices are used. As operations grow, it can become difficult to ensure that operations always run smoothly. For example, dependencies on peripherals that can break or accidentally become unplugged can disrupt operations. Troubleshooting issues that are related to devices and services can be costly for larger merchants and equally frustrating for smaller operations.
 
 Dynamics 365 Commerce includes a health check operation that can help prevent some of this cost and frustration. The health check operation can help retailers detect issues before they occur by providing a method for testing devices directly from the POS outside of normal operations, and two tests for network-related issues.
 
@@ -34,9 +33,9 @@ Dynamics 365 Commerce includes a health check operation that can help prevent so
 
 ## Health check operation
 
-The health check operation is operation 717 on the **POS Operations** page in Commerce Headquarters. It can be used while the POS is in non-drawer mode. However, a hardware station must be active.
+The health check operation is operation 717 on the **POS Operations** page in Commerce Headquarters. It can be used while the POS is in nondrawer mode. However, a hardware station must be active.
 
-The health check operation can be accessed by point of sale users in two ways:
+POS users can access the health check operation in two ways:
 
 - By selecting the **Health check** button on the **Settings** page.
 - By adding a tile to your screen layout button grid and associating the health check operation with that tile. 
@@ -65,7 +64,7 @@ When the health check operation is initiated in the POS, a pane on the right lis
 
 The **Last check** column shows when the health check was last done for each device.
 
-If a device passes the health check (that is, if no errors are encountered), the device's status is shown as **OK**. If the health check fails, the status indicates that there was an error. In this case, the pane on the right provides details that are related to the error, or it instructs the user to contact the system admin.
+If a device passes the health check (that is, if no errors are encountered), the device's status is shown as **OK**. If the health check fails, the status indicates that there was an error. In this case, the **Details** pane provides details related to the error, or instructs the user to contact the system administrator.
 
 Some devices, such as the OPOS keylock, don't have out-of-box health check tests. If no health check test is detected for a device that is used, the status is **Not supported**.
 
@@ -78,7 +77,19 @@ The two out-of-box network health checks listed below are always included in the
 | Retail Server connectivity | The Retail Server connectivity health check verifies that the terminal can communicate with Retail Server and the channel database, and verifies that real-time service calls can be made to Commerce headquarters. |
 | Network latency            | The network latency health check tests the network latency between the terminal and Retail Server. The test returns the average latency for 10 calls to Retail Server in a five-second period. |
 
-The following health check charts are added to provide more insights into network connectivity and performance. They also help admins analyze any app issues that might be linked to network connectivity during a specific period.
+#### Network latency health check
+
+Network latency health check results are categorized as shown in the following table.
+
+| Latency range       | Meaning                                                      |
+| ------------------- | ------------------------------------------------------------ |
+| 0–50 ms             | **Good** – Your network latency is low and not likely to be the source of any performance related issues. |
+| 50–100 ms           | **Acceptable** – Your network latency is in the acceptable range, but may be degrading performance for network-intensive operations such as offline sync. |
+| Above 100 ms | <p>**Poor** – Your network latency is likely degrading your point of sale operations. Although latency in the 100–150 ms range might not cause noticeable performance degradation for common operations, latency above 150 ms slows down most operations.</p><p>To further diagnose network latency, run an internet speed test on the register. If the internet speed test result latency is high, notify your system administrator that you're experiencing high latency with your internet connection.</p> |
+
+### Health check charts
+
+The following health check charts are added to provide more insights into network connectivity and performance. They also help admins analyze any app issues that might be linked to network connectivity during a specific period. 
 
 - **History of connectivity** – Provides insights about whether the connectivity was with **internet access**, **local access** with no internet, or **no access** at all. The chart shows an hourly view for a 24-hour period. However, the period can be narrowed to minutes to provide insights into any network fluctuations that occurred during a specific period when app issues were noticed.
 
@@ -92,20 +103,14 @@ The following health check charts are added to provide more insights into networ
 
     :::image type="content" source="media/WIFIsignalstrength.jpg" alt-text="Screenshot that shows an example of a Wi-Fi signal strength chart on the Connectivity health report page.":::
 
-To access these charts, select the **View connection history report** link on the **About** tab.
+To access a health check chart in Store Commerce, follow these steps.
 
+1. Go to the **Available tests** page.
+1. Select the checkbox for the network health check that you want to run.
+1. In the **Details** pane on the right, select the **About** tab.
+1. Select **View connectivity insights**.
 
-#### Network latency health check
-
-Network latency health check results are categorized as shown in the following table.
-
-| Latency range       | Meaning                                                      |
-| ------------------- | ------------------------------------------------------------ |
-| 0–50 ms             | **Good** – Your network latency is low and not likely to be the source of any performance related issues. |
-| 50–100 ms           | **Acceptable** – Your network latency is in the acceptable range, but may be degrading performance for network-intensive operations such as offline sync. |
-| Above 100 ms | <p>**Poor** – Your network latency is likely degrading your point of sale operations. Although latency in the 100–150 ms range might not cause noticeable performance degradation for common operations, latency above 150 ms slows down most operations.</p><p>To further diagnose network latency, run an internet speed test on the register. If the internet speed test result latency is high, notify your system administrator that you're experiencing high latency with your internet connection.</p> |
-
-### Extending health checks
+### Extend health checks
 
 The out-of-box health check tests are configured to provide some user-friendly messages for typical errors. However, not all scenarios are covered. Through extensibility, merchants can map user-friendly messages to errors that might be specific to their environment.
 

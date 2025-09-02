@@ -5,6 +5,7 @@ author: jaredha
 ms.author: jaredha
 ms.topic: how-to
 ms.date: 11/25/2024
+ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.collection:

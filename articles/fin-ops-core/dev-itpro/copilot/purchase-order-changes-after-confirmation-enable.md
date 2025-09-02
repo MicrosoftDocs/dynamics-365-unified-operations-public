@@ -5,6 +5,7 @@ author: cabeln
 ms.author: cabeln
 ms.topic: how-to
 ms.date: 02/13/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.collection:

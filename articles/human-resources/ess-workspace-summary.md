@@ -5,6 +5,7 @@ title: Employee self service leave summary
 description: This article provides an overview of the Employee self service leave summary feature.
 author: jcart
 ms.date: 01/17/2025
+ms.update-cycle: 180-days
 ms.topic: overview
 ms.reviewer: twheeloc
 # optional metadata
@@ -46,7 +47,10 @@ To use this feature, the user must be assigned an employee role in Dynamics 365 
 
 ## Summary by Copilot
 
-The **Summary by Copilot** field appears in the **My information** tab of the **Employee self service** workspace. The summary includes the current time off balances for leave types with a carry forward rule associated. It also includes the time off subject to forfeiture based on current time off balances and upcoming time off requests.  
+The **Summary by Copilot** field appears in the **My information** tab of the **Employee self service** workspace. The summary includes the current time off balances for leave types with a carry forward rule associated. It also includes the time off subject to forfeiture based on current time off balances and upcoming time off requests.
 
-##See also
+[!INCLUDE[rai-feedback-mechanism.md](../includes/rai-feedback-mechanism.md)]
+
+## See also
+
 [Employee self service leave summary FAQ](ess-transp-faq.md)

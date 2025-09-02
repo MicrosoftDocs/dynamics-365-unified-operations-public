@@ -3,7 +3,7 @@ title: Insert data
 description: Learn how to insert data into tables by using X++, including X++ code examples for various methods such as the insert and DoInsert methods.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/16/2020
 ms.reviewer: johnmichalak
 audience: Developer

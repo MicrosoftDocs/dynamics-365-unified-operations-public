@@ -1,63 +1,69 @@
 ---
 title: CN-00016 User operation log by China working rule
-description: Learn how to generate a user operation log, including processes for setting up database logs and creating a new bank account for demonstration purposes.
+description: This article describes how to generate a user operation log for China in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
 ms.search.form: SysDatabaseLogSetup, SysDatabaseLogWizard, BankAccountTable, ComplianceUserOperationLogConfig_CN
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # CN-00016 User operation log by China working rule
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure demonstrates how to generate a user operation log. The database log must be set up before you can generate the user operation log.  
+This article describes how to generate a user operation log for China in Microsoft Dynamics 365 Finance.
 
-Based on the criteria that you specify,  user operations are tracked and recorded in a log, including the type of operation, user name, and time and date. This procedure walks you through setting up criteria for tracking bank account creation, creating a bank account for demonstration purposes, and then generating the user log.
+Based on the criteria that you specify, user operations are tracked and recorded in a log, including the type of operation, username, and time and date.
 
-This procedure uses the CNMF demo data. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
-
+The following procedures demonstrate how to set up criteria for tracking bank account creation, create a bank account for demonstration purposes, and generate the user log. The database log must be set up before you can generate the user operation log. These procedures use the CNMF demo data.
 
 ## Set up the database log
-1. Go to System administration > Setup > Database log setup.
-2. Click New.
-3. Click Next.
-4. In the tree, expand 'Bank'.
-5. In the tree, check 'Bank\Bank accounts'.
-    * For this demonstration, we want to keep track of who creates bank accounts, but you may want to track other user actions.  
-6. Click Next.
-7. Select the Track new transactions check box.
-8. Select the Update check box.
-9. Select the Delete check box.
-10. Click Next.
-11. Click Finish.
+
+To set up the database log, follow these steps.
+
+1. In Dynamics 365 Finance, go to **System administration \> Setup \> Database log setup**.
+1. Select **New**.
+1. Select **Next**.
+1. In the tree, expand **Bank**.
+1. In the tree, select the **Bank\Bank accounts** checkbox. For this demonstration, we want to keep track of who creates bank accounts, but you may want to track other user actions.  
+1. Select **Next**.
+1. Select the **Track new transactions** checkbox.
+1. Select the **Update** checkbox.
+1. Select the **Delete** checkbox.
+1. Select **Next**.
+1. Select **Finish**.
 
 ## Create a new bank account for demonstration purposes
-1. Go to Cash and bank management > Bank statement reconciliation > Bank accounts.
-2. Click New.
-3. In the Bank account field, type a value.
-4. In the Bank account number field, type a value.
-5. In the Main account field, specify the desired values.
-6. Click Save.
+
+To create a new bank account for demonstration purposes, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Cash and bank management \> Bank statement reconciliation \> Bank accounts**.
+1. Select **New**.
+1. In the **Bank account** field, enter a value.
+1. In the **Bank account number** field, enter a value.
+1. In the **Main account** field, enter the desired values.
+1. Select **Save**.
 
 ## Print the user operation log report
-1. Go to System administration > Inquiries > User operation log inquiry.
-2. In the tree, expand 'Bank'.
-3. In the tree, check 'Bank\Bank accounts'.
-4. Expand the By user section.
-5. In the User field, enter or select a value.
-    * For this example, select your user name if you created the bank account in the previous subtask. Otherwise, select another user who created a bank account recently.  
-6. Expand the By date section.
-7. In the From date field, enter a date.
-8. In the To date field, enter a date.
-9. Click OK.
-10. Click OK.
+
+To print the user operation log report, follow these steps.
+
+1. In Dynamics 365 Finance, go to **System administration \> Inquiries \> User operation log inquiry**.
+1. In the tree, expand **Bank**.
+1. In the tree, check **Bank\Bank accounts**.
+1. Expand the **By user** section.
+1. In the **User** field, enter or select a value. For this example, select your username if you created the bank account in the previous procedure. Otherwise, select another user who created a bank account recently.  
+1. Expand the **By date** section.
+1. In the **From date** field, enter a date.
+1. In the **To date** field, enter a date.
+1. Select **OK**.
+1. Select **OK**.
 
 
 

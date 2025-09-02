@@ -50,7 +50,7 @@ To set up application-specific parameters, follow these steps.
 > [!NOTE]
 > **EC sales vat book** is a format that depends on the **LTM Tax Report** model. Therefore, it's important that taxes are recorded for the transactions. The codes that you select here must match the codes that are recorded on the transactions. To ensure that the report shows the transactions that meet the configured conditions, complete the conditions with blank and non-blank conditions.
 
-## Run the Euador sales VAT book
+## Run the Ecuador sales VAT book
 
 To generate the sales VAT book report, follow these steps.
 

@@ -1,34 +1,41 @@
 ---
 title: VAT statement details for Latvia
-description: Learn how to set up the VAT statement for legal entities in Latvia, including outlines on setting up sales tax authories and reporting codes.
+description: Learn how to set up the VAT statement for legal entities in Latvia in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/17/2024
+ms.date: 05/29/2025
 ms.reviewer: johnmichalak
 ms.search.region: Latvia
 ms.search.validFrom: 2016-11-30
 ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
-ms.dyn365.ops.version: Version 1611
 ---
 
 # VAT statement details for Latvia
 
 [!include [banner](../../includes/banner.md)]
 
+This article explains how to set up the VAT statement for legal entities in Latvia in Microsoft Dynamics 365 Finance.
+
 > [!NOTE]
 > This feature has been replaced with the value-added tax (VAT) declaration functionality. For more information, see [VAT declaration (Latvia)](emea-lva-vat-declaration-latvia.md).
 
-This article explains how to set up the VAT statement for legal entities in Latvia.
-
 This article includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Latvia only. For more information about the implementation of VAT statements, see [VAT reporting for Europe](../europe/emea-vat-reporting.md).
 
-## Set up sales tax authorities
-To generate a VAT declaration in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. On the **Sales tax authorities** page, set the **Report layout** field to **Default**. Select the same sales tax authority for the sales tax settlement period that will be used for the sales tax codes.
+## Set up the report layout for sales tax authorities
+
+To generate a VAT declaration in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. 
+
+To set up the report layout for sales tax authorities, follow these steps.
+
+1. In Dynamics 365 Finance, go to the **Sales tax authorities** page.
+1. Set the **Report layout** field value to **Default**.
+1. Select the same sales tax authority for the sales tax settlement period that is used for the sales tax codes.
 
 ## Set up sales tax reporting codes
+
 Here is an example that shows how you might set up sales tax reporting codes on the **Report setup** FastTab of the **Sales tax codes** page to generate a VAT statement.
 
 | Sales tax reporting code | Description (English)                                                                    | Description                                                                              | XML tag name |
@@ -55,11 +62,21 @@ Here is an example that shows how you might set up sales tax reporting codes on 
 | 67                       | Tax amount reduction calculated for previous tax periods                                 | Iepriekšējos taksācijas periodos samaksai valsts budžetā aprēķinātā nodokļa samazinājums | R67          |
 | 57                       | Calculated prepayment tax amount reduction for previous tax periods                      | Iepriekšējos taksācijas periodos atskaitītā priekšnodokļa samazinājums                   | R57          |
 
-## Configure the Electronic reporting model and format for the report
-To review or change the VAT statement configuration, on the **Reporting configurations** page, select **VAT declaration model** in the list of models. Then click **Designer** to review or change the model. To review or change the VAT statement format, on the **Reporting configurations** page, select **VAT declaration (LV)**, and then click **Designer**.
+## Configure the electronic reporting model and format for the report
+
+To configure the electronic reporting model and format for the report, follow these steps.
+
+1. To review or change the VAT statement configuration, In Dynamics 365 Finance, go to the **Reporting configurations** page.
+1. In the list of models, select **VAT declaration model**.
+1. Select **Designer** to review or change the model.
+1. To review or change the VAT statement format, on the **Reporting configurations** page, select **VAT declaration (LV)**, and then select **Designer**.
 
 ## Generate a VAT statement
-To generate a VAT XML file, on the **Sales tax payments** page, select one or more vouchers, and then click **Export VAT XML file**.
+
+To generate a VAT statement, follow these steps.
+
+1. To generate a VAT XML file, in Dynamics 365 Finance, go to the **Sales tax payments** page.
+2. Select one or more vouchers, and then select **Export VAT XML file**.
 
 
 

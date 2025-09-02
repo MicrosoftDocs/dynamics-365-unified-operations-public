@@ -3,8 +3,8 @@ title: Troubleshoot upgrades to Dynamics 365 Finance + Operations self-service e
 description: Access troubleshooting guidance for upgrades of Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises) self-service environments.
 author: ttreen
 ms.author: ttreen
-ms.topic: article
-ms.date: 04/26/2022
+ms.topic: troubleshooting-general
+ms.date: 05/05/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -212,3 +212,54 @@ select serverid, status, caption, Classnumber, datediff(mi, startdatetime, ENDDA
 ```sql
 select * from CLASSIDTABLE where ID in (select distinct classnumber from batch where batchjobid= _jobid_ )
 ```
+
+## Scenario 13: After the snapshot is pushed, replication fails with Length of LOB data to be replicated exceeds configured maximum 65536.
+
+After the publication is created, and the snapshot is pushed, the log reader reports an exception on some specific tables.
+
+**Exception**
+
+The following is an example of the error:
+
+```
+[Microsoft][SQL Server Native Client 11.0][SQL Server]Length of LOB data (101958) to be replicated exceeds configured maximum 65536.
+Use the stored procedure sp_configure to increase the configured maximum value for max text repl size option, which defaults to 65536.
+A configured value of -1 indicates no limit, other that the limit imposed by the data type.
+The SQL statement was: "UPDATE SYSLASTVALUE SET VALUE=?,RECVERSION=? WHERE ((((((((PARTITION=?) AND (USERID=?)) AND (RECORDTYPE=?)) AND (ELEMENTNAME=?)) AND (DESIGNNAME=?)) AND (ISKERNEL=?)) AND (COMPANY=?)) AND (RECVERSION=?))""
+```
+
+**Solution**
+
+As indicated in the error message, run the sp_configure command to change the value
+
+```SQL
+USE master;
+GO
+
+EXECUTE sp_configure 'show advanced options', 1;
+RECONFIGURE;
+GO
+
+EXECUTE sp_configure 'max text repl size', -1;
+GO
+
+RECONFIGURE;
+GO
+
+EXECUTE sp_configure 'show advanced options', 0;
+GO
+
+RECONFIGURE;
+GO
+```
+
+Restart the Log reader agent and Distribution agent (if not using immediate updating):
+ - You can do this via SQL Server Agent or Replication monitor.
+ - Or using T-SQL (example for a push subscription):
+
+```sql
+--Edit job name below as needed
+exec sp_restart_job @job_name = 'AX_PUB_PkTable_x';
+```
+
+For more information, see [Server configuration: max text repl size](/sql/database-engine/configure-windows/configure-the-max-text-repl-size-server-configuration-option)

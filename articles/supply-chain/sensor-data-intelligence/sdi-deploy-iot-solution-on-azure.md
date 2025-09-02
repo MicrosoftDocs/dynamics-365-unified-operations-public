@@ -3,7 +3,7 @@ title: Deploy an IoT solution on Azure (preview)
 description: Sensor Data Intelligence uses data from sensors connected to Microsoft Azure. Learn how to deploy an Internet of Things (IoT) solution on your Azure subscription.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 09/02/2022
 ms.reviewer: kamaybac
 ms.search.form: IoTIntCoreAzureResourceDeploymentWizard

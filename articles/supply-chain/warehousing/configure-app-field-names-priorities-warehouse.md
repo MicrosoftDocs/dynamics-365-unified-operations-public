@@ -17,7 +17,7 @@ ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 This article describes how to define and configure names and priorities of fields shown in the Warehouse Management mobile app.
 
 > [!NOTE]
-> This article applies to features in Warehouse management. It doesn’t apply to features in Inventory management. The Warehouse Management mobile app is an application that you can use to perform warehouse tasks. You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned. This article explains how to define and configure these Warehouse Management mobile app field names and priorities, and how they are used.
+> This article applies to features in Warehouse management. It doesn’t apply to features in Inventory management. The Warehouse Management mobile app is an application that you can use to perform warehouse tasks. You can define and configure the input type for the field names that are used in the app, as well as configure the priority to which the field names should be assigned. Note that it's not possible to rename mobile app fields. This article explains how to define and configure Warehouse Management mobile app field names and priorities, and how they are used.
 
 ## Configure warehouse app field names
 
@@ -126,7 +126,6 @@ The remaining metadata, for example, Location, won't be displayed on the task pa
 
 ## Related information
 
-[Install the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md)
-
+- [Install the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,8 +2,8 @@
 title: Dual-write async in finance and operations apps FAQ (preview)
 description: Get answers to frequently asked questions about dual-write async in Microsoft Dynamics 365 finance and operations apps.
 author: pnghub
-ms.author: gned
-ms.topic: conceptual
+ms.author: priysharma
+ms.topic: faq
 ms.date: 09/26/2024
 ms.custom:
 ms.reviewer: twheeloc

@@ -1,12 +1,12 @@
 ---
 title: Inventory On-hand mobile app
 description: Learn about the function of the Inventory On-hand mobile app and how to onboard it, including prerequisites and system requirements.
-author: Weijiesa
-ms.author: weijiesa
+author: banluo-ms
+ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 02/11/2025
+ms.date: 08/28/2025
 ms.custom: 
   - bap-template
 ---
@@ -14,6 +14,9 @@ ms.custom:
 # Inventory On-hand mobile app
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> The Inventory On-hand mobile app (preview) is no longer available on the Power Platform Admin Center and is instead being provided as a sample app that you can download from the [scmsamples-InventoryOnHand repository on GitHub](https://github.com/microsoft/scmsamples-InventoryOnHand). The sample app is identical to the previously available first-party app, but is now distributed through GitHub rather than through the Power Platform Admin Center. You can fork the GitHub repository so you can customize it as needed for your scenarios. Previously installed instances of the first-party mobile app will continue to work. Learn more in [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md).
 
 The Inventory On-hand mobile app lets you query and view product inventory in Microsoft Dynamics 365 Supply Chain Management by using a mobile device. It was built by using Power Apps.
 
@@ -45,16 +48,7 @@ The [Power Apps component framework feature](/power-apps/developer/component-fra
 
 ## <a name="install-in-dataverse"></a>Install the mobile app in Dataverse
 
-You must install the Inventory On-hand mobile app in your Dataverse environment to enable users to access it when they sign in by using the Power Apps mobile app. The installation process also sets up the required user roles and other dependencies in Dataverse.
-
-Follow these steps to install the Inventory On-hand mobile app in Dataverse.
-
-1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. On the left navigation pane, select **Resources** \> **Dynamics 365 apps**.
-1. Search for and select the app named *Dynamics 365 Inventory On-hand Mobile Application*.
-1. On the top toolbar, select **Install**.
-1. Select the environment where you want to install the app, review the packages that will be installed, and select the **I agree to the terms of service** checkbox.
-1. Select **Install**.
+For complete details about how to download, customize, install, and set up the app, go to the [scmsamples-InventoryOnHand repository on GitHub](https://github.com/microsoft/scmsamples-InventoryOnHand).
 
 ## Share the mobile app and assign security roles
 
@@ -62,11 +56,10 @@ After the mobile app solution is installed in your Dataverse environment, you mu
 
 The security roles that can access and query on-hand inventory through the mobile app are inherited from your Supply Chain Management setup. Therefore, any user (such as a sales manager, warehouse manager, or production manager) that has the security roles required to access the on-hand inventory list in Supply Chain Management can also query and view that data in the Inventory On-hand mobile app. For more information about how to set up roles and security in Supply Chain Management, see [Security roles](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
 
-## Install and open the Inventory On-hand mobile app
+## Open the Inventory On-hand mobile app
 
-Follow these steps to install and use the Inventory On-hand mobile app on a mobile device.
+Follow these steps to use the Inventory On-hand mobile app on a mobile device.
 
-1. Install the Power Apps mobile app by following the instructions in [Install the Power Apps mobile app](/power-apps/mobile/run-powerapps-on-mobile).
 1. Open the Power Apps mobile app, and sign in by using the same corporate account that you use to sign in to Supply Chain Management.
 1. Use the **Search** field to search for *Inventory on-hand mobile app*. Because the app is a canvas app, you can add it to your favorites list in Power Apps by swiping left on it after you find it.
 1. Open the Inventory On-hand mobile app, and start to use it.
@@ -96,7 +89,7 @@ If you don't see any features in the app, you probably lack the permissions requ
 
 ### Can I customize and extend the app?
 
-No, it isn't currently possible to customize or extend the app.
+Yes. You can customize and extend the app by working with the source code [provided on GitHub](https://github.com/microsoft/scmsamples-InventoryOnHand).
 
 ### Does the app support offline mode?
 

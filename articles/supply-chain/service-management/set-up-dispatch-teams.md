@@ -1,13 +1,16 @@
 ---
 title: Set up dispatch teams   
-description: Learn how to create a dispatch team, including a step-by-step process for creating a service orcer and dispatching teams to activities in service orders.
+description: Learn how to create a dispatch team, including a step-by-step process for creating a service order and dispatching teams to activities in service orders.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 05/01/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMADispatchTeamTable
+ms.topic: how-to
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 

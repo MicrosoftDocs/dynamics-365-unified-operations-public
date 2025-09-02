@@ -3,7 +3,7 @@ title: Sign up for preview subscriptions
 description: Learn about how to subscribe to the preview/partner offer and deploy an environment, including key terms and prerequisites.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/19/2024
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -11,6 +11,7 @@ ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
+ms.custom: sfi-image-nochange
 ---
 
 # Sign up for preview subscriptions

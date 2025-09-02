@@ -1,30 +1,27 @@
 ---
 title: Prioritize service orders   
-description: Learn how to prioritize service orders, including a step-by-step process for saving and prioritizing service orders and additional resources.
+description: Learn how to prioritize service orders. Includes a step-by-step process for saving and prioritizing service orders.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 05/01/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMADispatchBoard
+ms.topic: how-to
+ms.date: 09/02/2025
+ms.custom:
+  - bap-template
 ---
 
 # Prioritize service orders
 
 [!include [banner](../includes/banner.md)]
 
-1. Go to **Service management** \> **Periodic** \> **Dispatch board**.
-
-2. Select **Advanced** to display the Gantt chart at the top of the page and the tabs in the lower pane.
-
-3. Expand each dispatch team list.
-
-4. Select the color-coded graphic that represents a service activity.
-
-5. On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, change the selection in the **Priority** field.
-
-6. Select **Save**.
+1. Go to **Service management** \> **Perform periodic tasks** \> **Dispatch board**.
+1. On the Action Pane, select **Adjust view settings**.
+1. Use the **Adjust view settings** dialog to select the date range and other options for the service activities you want to see. Then select **OK**.
+1. Expand each dispatch team list.
+1. Select the color-coded graphic that represents a service activity.
+1. Open the **All**, **Team**, **Undispatched**, or **Related** tab and change the selection in the **Priority** field.
+1. Select **Save**.
 
 ## Related information
 

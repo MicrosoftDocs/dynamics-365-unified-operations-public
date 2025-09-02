@@ -2,7 +2,7 @@
 title: Create email templates for transactional events
 description: This article describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 03/18/2024
+ms.date: 06/25/2025
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -80,6 +80,9 @@ The *order shipped* notification type is triggered when an order that has a non-
 ### Order invoiced
 
 The *order invoiced* notification type is triggered when an order is invoiced in POS or Commerce headquarters.
+
+> [!NOTE]
+> The order invoiced notification type isn't triggered for cash-and-carry transactions processed during statement posting.
 
 ### Issue gift card
 

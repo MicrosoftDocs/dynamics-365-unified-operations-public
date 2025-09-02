@@ -1,8 +1,8 @@
 ---
 title: Inventory on-hand list
 description: Learn how to use the On-hand list page to inspect on-hand inventory details, including an outline on querying your on-hand inventory.
-author: Weijiesa
-ms.author: weijiesa
+author: banluo-ms
+ms.author: banluo
 ms.topic: how-to
 ms.date: 01/27/2025
 ms.custom:

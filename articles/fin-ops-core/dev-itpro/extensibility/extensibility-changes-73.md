@@ -10,6 +10,7 @@ audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform update 4
+ms.custom: sfi-ropc-nochange
 ---
 
 # Extensibility changes in Finance and Operations, Enterprise edition 7.3

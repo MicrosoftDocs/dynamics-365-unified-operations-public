@@ -11,6 +11,7 @@ ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: e289504e-a1d9-44b7-8f84-f99f330321d6
+ms.custom: sfi-image-nochange
 ---
 
 # End-to-end scenario for the Fleet Management sample application

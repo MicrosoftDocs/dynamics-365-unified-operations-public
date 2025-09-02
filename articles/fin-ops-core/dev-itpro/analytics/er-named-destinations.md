@@ -3,7 +3,7 @@ title: Configure print management record-specific ER destinations
 description: Learn how to configure print management record specific-destinations for an Electronic reporting (ER) format that is configured to generate outbound documents.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/03/2021
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

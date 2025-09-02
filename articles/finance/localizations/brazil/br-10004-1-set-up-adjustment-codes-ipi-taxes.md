@@ -1,34 +1,37 @@
 ---
 title: Set up adjustment codes for IPI taxes (Brazil)
-description: Learn how to set up adjustment codes for Imposto sobre Produtos Industrializados (IPI) taxes, including a step-by-step process.
+description: This article describes how to set up adjustment codes for IPI taxes in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/20/2024
+ms.date: 03/20/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Set up adjustment codes for IPI taxes (Brazil)
 
 [!include [banner](../../includes/banner.md)]
 
-Use this procedure to set up adjustment codes for Imposto sobre Produtos Industrializados (IPI) taxes. This procedure uses the BRMF demo company.
+This article describes how to set up adjustment codes for Imposto sobre Produtos Industrializados (IPI) taxes in Brazil with Microsoft Dynamics 365 Finance.
 
-1. Go to **Fiscal books** > **Setup** > **Tax adjustment codes** > **IPI adjustment codes table**.
-2. Select **New**.
-3. In the **Adjustment code** field, type a value.
-4. In the **Description** field, type a value.
-5. Select **Yes** in the **Is reversal adjustment code?** field.
-6. In the **Valid From Date** field, enter a date.
-7. Expand the **Payment** section.
-8. Expand the **Posting** section.
-9. Select **Save**.
-10. Close the page.
+The following procedure uses the BRMF demo company.
+
+To set up adjustment codes for IPI taxes, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fiscal books \> Setup \> Tax adjustment codes \> IPI adjustment codes table**.
+1. Select **New**.
+1. In the **Adjustment code** field, enter a value.
+1. In the **Description** field, enter a value.
+1. In the **Is reversal adjustment code?** field, select **Yes**.
+1. In the **Valid From Date** field, enter a date.
+1. Expand the **Payment** section.
+1. Expand the **Posting** section.
+1. Select **Save**.
+1. Close the page.
 
 
 

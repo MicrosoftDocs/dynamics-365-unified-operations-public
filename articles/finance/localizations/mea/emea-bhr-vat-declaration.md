@@ -1,12 +1,12 @@
 ---
 title: VAT declaration for Bahrain
-description: Learn how to configure and generate the VAT return form for Bahrain, including prerequisites and an outline on downloading electronic reporting configurations.
+description: Learn how to configure and generate the VAT return form for legal entities in Bahrain with Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 06/05/2025
 ms.reviewer: johnmichalak
 ms.search.region: Bahrain
 ms.search.validFrom: 2020-06-03
@@ -17,9 +17,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../../includes/banner.md)]
 
-## Overview
-
-This article explains how to set up and generate the VAT return form for legal entities in Bahrain.
+This article explains how to configure and generate the VAT return form for legal entities in Bahrain with Microsoft Dynamics 365 Finance.
 
 The VAT return form for Bahrain is the official document that summarizes the total output VAT tax amount due, the total input VAT tax amount recoverable, and the related VAT tax amount  liability. The form is used for all types of taxpayers and should be completed manually through the tax authority portal. The VAT return form is commonly referred to as *VAT return filing*.
 
@@ -28,7 +26,6 @@ The VAT return form in Dynamics 365 Finance includes the following reports:
  - VAT return form, which provides a breakdown of amounts, adjustments, and VAT amount per line item in the VAT return form as is described in the legislation.
  - Sales transactions details grouped by box classification from Box1 to Box6.
  - Purchase transaction details grouped by box classification from Box8 to Box12.
- 
  
 ## Prerequisites
 
@@ -59,11 +56,12 @@ To generate the VAT return form and related reports in a Bahrain legal entity, y
   - Tax declaration model mapping.version.64.90.xml 
   - VAT Declaration Excel (BH).version.64.6 or a later version
  
-After you've finished downloading the ER configurations from Lifecycle Services (LCS) or the global repository, complete the following steps.
+After you've finished downloading the ER configurations from Lifecycle Services (LCS) or the global repository, follow these steps.
 
- 1. Go to the **Electronic reporting workspace**. Select the **Reporting configurations** tile. 
- 2. On the **Configurations** page, on the Action Pane, select **Exchange** > **Load from XML file**.
- 3. Upload all the files in the order in which they are listed in the previous bullets. After all the configurations are uploaded, the configuration tree should be present in Finance.
+ 1. In Dynamics 365 Finance, go to the **Electronic reporting workspace**.
+ 1. Select the **Reporting configurations** tile. 
+ 1. On the **Configurations** page, on the Action Pane, select **Exchange** \> **Load from XML file**.
+ 1. Upload all the files in the order in which they are listed in the previous bullets. After all the configurations are uploaded, the configuration tree should be present in Finance.
  
 ### Set up application-specific parameters
 
@@ -83,21 +81,24 @@ In Finance, you can have a specific sales tax code implemented that represents a
 
 The Application-specific parameters option let the users to establish the criteria of how the tax transactions will be collected and calculated in each box (line) of the declaration form when the report is generated depending on the configuration of sales tax code.
 
-1. In the Electronic reporting workspace, select **Configurations** > **Setup** to set up the rules to identify the tax transaction into the related box of the VAT return form.
-2. Select the current version. On the **Lookups** FastTab, select the lookup name **ReportFieldLookup**. This lookup identifies the list of boxes (lines) in the VAT form required by tax authority. 
-3. On the **Conditions** FastTab, select **Add**, and in the new line in the **Lookup result** column, select the related line of VAT return form.
-4. In the **Tax code (Code)** column, select the sales tax code that is used to calculate the related line of VAT return form.
-5. In the **Name** column, select the tax transaction classification where the sales tax code is used.
-6. Repeat steps 3-5 for all VAT return form boxes (lines) and the combination of sales tax code and tax transaction types configured in your legal entity.
-7. Select **Add** again, and then follow these steps to include the final record line:
-   a. In the **Lookup result** column, select **NA**.
-   b. In the **Tax code (Code)** column, select **Not blank**.
-   c. In the **Name column**, select **Not blank**.
+To set up application-specific parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to the **Electronic reporting workspace**.
+1. Select **Configurations** \> **Setup** to set up the rules to identify the tax transaction into the related box of the VAT return form.
+1. Select the current version. On the **Lookups** FastTab, select the lookup name **ReportFieldLookup**. This lookup identifies the list of boxes (lines) in the VAT form required by tax authority. 
+1. On the **Conditions** FastTab, select **Add**, and in the new line in the **Lookup result** column, select the related line of VAT return form.
+1. In the **Tax code (Code)** column, select the sales tax code that is used to calculate the related line of VAT return form.
+1. In the **Name** column, select the tax transaction classification where the sales tax code is used.
+1. Repeat steps 3-5 for all VAT return form boxes (lines) and the combination of sales tax code and tax transaction types configured in your legal entity.
+1. Select **Add** again, and then follow these steps to include the final record line:
+    1. In the **Lookup result** column, select **NA**.
+    1. In the **Tax code (Code)** column, select **Not blank**.
+    1. In the **Name column**, select **Not blank**.
 
 By adding this last record (NA), you define the following rule: When the tax code and name that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in the VAT return form. Although this rule is not used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration. 
 	
-8. In the **State** field, select **Completed**, and then select **Save**. 
-9. Close the **Application specific parameters** page.
+1. In the **State** field, select **Completed**, and then select **Save**. 
+1. Close the **Application specific parameters** page.
 
 
 ![Set up specific parameters.](../media/emea-bhr-vat-Format-Setup.png)
@@ -181,26 +182,29 @@ The following table provides the available values in the **Name** column. This i
 | SalesReverseCharge              | <ul><li>Not credit note</li><li>Tax direction = Sales tax payable</li><li>ReverseCharge_W = Yes</li></ul> |
 
 
-## Set up General ledger parameters
+## Set up general ledger parameters
 
 To generate the VAT return form report in Microsoft Excel format, you must define an ER format on the **General ledger parameters** page.
 
-1. Go to **Tax** > **Setup** > **General ledger parameters**.
-2. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (BH)**. If you leave the field blank, the standard sales tax report will be generated in SSRS format.
-3. Select the **Category hierarchy**. This category enables the C\commodity code in Foreign trade tab transactions to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports.
+To set up general ledger parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **General ledger parameters**.
+1. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (BH)**. If you leave the field blank, the standard sales tax report will be generated in SSRS format.
+1. Select the **Category hierarchy**. This category enables the C\commodity code in Foreign trade tab transactions to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports.
 
 ## Generate a VAT return report
+
 The process of preparing and submitting a VAT return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
 
-Complete the following steps to generate the tax declaration report.
+To generate a VAT return report, follow these steps.
 
-1. Go to **Tax > Declarations** > **Sales tax** > **Report sales tax for settlement period** or **Settle and post sales tax**.
-2. Select the **Settlement period**.
-3. Select the from date.
-4. Select the sales tax payment version.
-5. Select **OK** to confirm the above steps. 
-6. Enter the amount of credit from the previous period, if applicable, or leave the amount as zero.
-7. In the **Generate details** field, select one of the following available options. The VAT return form is always generated in this process.
+1. In Dynamics 365 Finance, go to **Tax > Declarations** \> **Sales tax** \> **Report sales tax for settlement period** or **Settle and post sales tax**.
+1. Select the **Settlement period**.
+1. Select the from date.
+1. Select the sales tax payment version.
+1. Select **OK** to confirm the above steps. 
+1. Enter the amount of credit from the previous period, if applicable, or leave the amount as zero.
+1. In the **Generate details** field, select one of the following available options. The VAT return form is always generated in this process.
    - **All** - Generate sales and purchase tax transactions details reports.
    - **None** - Generate only the VAT declaration return form.
    - **Purchase transactions**

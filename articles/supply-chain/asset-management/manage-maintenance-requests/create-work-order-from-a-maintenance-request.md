@@ -3,7 +3,7 @@ title: Create work orders from maintenance requests
 description: Learn how to create a work order from a maintenance request in Asset Management, including a step-by-step process for navigating to work orders.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/01/2019
 ms.custom: 
 ms.reviewer: kamaybac

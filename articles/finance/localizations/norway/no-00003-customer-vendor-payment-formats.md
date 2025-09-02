@@ -1,89 +1,95 @@
 ---
 title: NO-00003 Customer and vendor payment formats
-description: Learn about setting up and maintaining Norwegian payment IDs, including step-by-step processes for setting up payment IDs and attaching payment IDs.
+description: Learn how to set up and maintain customer and vendor payment formats for Norway in Microsoft Dynamics 365 Finance.
 author: kailiang
 ms.author: kailiang
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/29/2018
+ms.date: 06/12/2025
 ms.reviewer: johnmichalak
 ms.search.region: Norway
 ms.search.validFrom: 2016-06-30
 ms.search.form: 
   - BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup
   - CustInvoiceJournal
-ms.dyn365.ops.version: Version 7.0.0
 ---
 # NO-00003 Customer and vendor payment formats
 
 [!include [banner](../../includes/banner.md)]
 
-This task walks you through setting up and maintaining Norwegian payment IDs. 
-
-
+This article explains how to set up and maintain Norwegian payment IDs in Microsoft Dynamics 365 Finance.
 
 A payment identification (ID) is a unique identifier for customer payments that are settled electronically. It can be divided into different parts, such as the customer account number, invoice number, prefix, suffix, and external reference. When you receive a payment from a customer, the payment ID identifies the payment transaction for a sales invoice that is received from a bank.
 
-
-
-This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.
-
+The following procedures walk you through how to set up and maintaining Norwegian payment IDs, and were created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.
 
 ## Set up payment IDs
-1. Go to Accounts receivable > Payments setup > Payment ID.
-2. Click New.
-3. In the Payment ID type field, type a value.
-4. In the Name field, type a value.
-5. In the Payment ID length field, enter a number.
-6. In the Account from position field, enter a number.
-7. In the Account to position field, enter a number.
-8. In the Invoice from position field, enter a number.
-9. In the Invoice to position field, enter a number.
-10. In the Modulo field, select 'Modulo 10'.
-    * Select the modulo check method to calculate the check number. The last digit of a payment ID is reserved for the check number to verify that the payment ID is valid. The following options are available:     - Modulo 10 – The total length of the payment ID is divided by 10. The remainder is the check number.   - Modulo 11 – The total length of the payment ID is divided by 11. The remainder is the check number.   - (None) – No check number is calculated.  
-11. Click Save.
-    * After saving the record, you can preview the selected payment ID in the Payment ID test field.  
-12. Go to Accounts receivable > Payments setup > Payment ID per country/region.
-13. Click New.
-14. In the Country/region field, enter or select a value.
-15. In the Payment ID type field, enter or select a value.
-16. Click Save.
+
+To set up payment IDs, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments setup \> Payment ID**.
+1. Select **New**.
+1. In the **Payment ID type** field, enter a value.
+1. In the **Name** field, enter a value.
+1. In the **Payment ID length** field, enter a number.
+1. In the **Account from position** field, enter a number.
+1. In the **Account to position** field, enter a number.
+1. In the **Invoice from position** field, enter a number.
+1. In the **Invoice to position** field, enter a number.
+1. In the **Modulo** field, select **Modulo 10**.
+    Select the modulo check method to calculate the check number. The last digit of a payment ID is reserved for the check number to verify that the payment ID is valid. The following options are available:     -     - **Modulo 10** – The total length of the payment ID is divided by 1. The remainder is the check number.
+    - **Modulo 11** – The total length of the payment ID is divided by 1. The remainder is the check number.
+    - (None) – No check number is calculated.  
+1. Select **Save**. After saving the record, you can preview the selected payment ID in the Payment ID test field.  
+1. Go to **Accounts receivable \> Payments setup \> Payment ID per country/region**.
+1. Select **New**.
+1. In the **Country/region** field, enter or select a value.
+1. In the **Payment ID type** field, enter or select a value.
+1. Select **Save**.
 
 ## Attach the payment ID
-1. Go to Accounts receivable > Customers > All customers.
-2. Use the Quick Filter to find records. For example, filter on the Account field with a value of 'DE-010'.
-3. In the list, click the link in the selected row.
-4. Expand the Payment defaults section.
-5. Click Edit.
-6. In the Payment ID type field, enter or select a value.
-7. Click Save.
-8. Go to Accounts receivable > Payments setup > Methods of payment.
-9. Use the Quick Filter to find records. For example, filter on the Method of payment field with a value of 'ELECTRONIC'.
-10. Click Edit.
-11. Expand the Payment control section.
-12. In the Payment ID type field, enter or select a value.
-13. Click Save.
-14. Go to Accounts receivable > Setup > Customer groups.
-15. Click Edit.
-16. In the Payment ID type field, enter or select a value.
-17. Click Save.
+
+To attach the payment ID, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
+1. Use the Quick Filter to find records. For example, filter on the Account field with a value of "DE-010".
+1. In the list, select the link in the selected row.
+1. Expand the **Payment defaults** section.
+1. Select **Edit**.
+1. In the **Payment ID type** field, enter or select a value.
+1. Select **Save**.
+1. Go to **Accounts receivable \> Payments setup \> Methods of payment**.
+1. Use the Quick Filter to find records. For example, filter on the Method of payment field with a value of "ELECTRONIC".
+1. Select **Edit**.
+1. Expand the **Payment control** section.
+1. In the **Payment ID type** field, enter or select a value.
+1. Select **Save**.
+1. Go to **Accounts receivable \> Setup \> Customer groups**.
+1. Select **Edit**.
+1. In the **Payment ID type** field, enter or select a value.
+1. Select **Save**.
 
 ## Update the payment ID
-1. Go to Accounts receivable > Periodic tasks > Update invoice payment ID.
-2. Select the Delete payment ID check box to delete the payment ID information from all documents
-    * This option should be used only when you want to remove or update Payment IDs for documents that got Payment IDs assigned. You will be offered a dialog to delete Payment ID from specific type of documents.  
-3. Select Yes in the Update invoice payment ID field.
-4. Click OK.
-5. Click Yes.
-6. Click Yes.
-7. Click Yes.
-8. Click Yes.
+
+To update the payment ID, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Periodic tasks \> Update invoice payment ID**.
+1. To delete the payment ID information from all documents, select the **Delete payment ID** checkbox. This option should be used only when you want to remove or update payment IDs for documents that have payment IDs assigned. You're offered a dialog to delete payment IDs from specific type of documents.  
+1. In the **Update invoice payment ID** field, select **Yes**.
+1. Select **OK**.
+1. Select **Yes**.
+1. Select **Yes**.
+1. Select **Yes**.
+1. Select **Yes**.
 
 ## View the payment ID
-1. Go to Accounts receivable > Inquiries and reports > Invoices > Invoice journal.
-2. Click Show filters.
-3. Apply the following filters: Enter a filter value of "" on the "Payment ID" field using the "is not" filter operator.
+
+To view the payment ID, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Inquiries and reports \> Invoices \> Invoice journal**.
+1. Select **Show filters**.
+1. In the **Payment ID** field, enter a filter value of **""** using the **is not** filter operator.
 
 
 

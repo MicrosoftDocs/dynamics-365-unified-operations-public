@@ -10,6 +10,7 @@ audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: sfi-image-nochange
 ---
 
 # Regression Suite Automation Tool installation and configuration
@@ -93,7 +94,7 @@ Configure your connection to the test environment.
     + If your test environment is a user acceptance testing (UAT) or higher-tier sandbox environment that has no Remote Desktop access, the SOAP hostname is equal to the hostname.
     + If you don't know the SOAP hostname of your test environment, you can find it in the web.config file for the AOS server in Infrastructure.SoapServicesUrl.
 
-+ **Admin User Name** – The email address of an admin user in the test environment. The admin user name must be the email address of a user who belongs to the System Administrator role on the finance and operations test environment that RSAT is connecting to. The user account (email address) must also belong to the same tenant as the test environment. For example, if your test environment's default tenant is contoso.com, the admin user must end with @constoso.com.
++ **Admin User Name** – The email address of an admin user in the test environment. The admin user name must be the email address of a user who belongs to the System Administrator role on the finance and operations test environment that RSAT is connecting to. The user account (email address) must also belong to the same tenant as the test environment. For example, if your test environment's default tenant is contoso.com, the admin user must end with @contoso.com.
 
 + **Authentication method** – Select the method for authenticating access to the hostname. The options are **Certificate** and **User-Based**. Both options include steps to complete. The Microsoft-recommended method is user-based authentication, and there are plans to remove the option for certificate-based authentication in Dynamics 365 finance and operations apps.
 

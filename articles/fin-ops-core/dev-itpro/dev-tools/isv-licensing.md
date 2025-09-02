@@ -4,13 +4,14 @@ description: Learn about the independent software vendor (ISV) licensing feature
 author: pnghub
 ms.author: kkhajuria
 ms.topic: article
-ms.date: 11/13/2024
+ms.date: 02/20/2025
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
+ms.custom: sfi-image-nochange
 ---
 
 # Independent software vendor (ISV) licensing
@@ -28,7 +29,7 @@ The Microsoft Dynamics ecosystem provides tools and frameworks that let independ
 This feature doesn't enable ISV competitor copycat protection (that is, source-based protection).
 
 > [!IMPORTANT]
->  Starting with Dynamics 365 Finance version 10.0.43, all licenses are issued at the tenant level. This means a single license can potentially be used across multiple environments that share the same tenant ID.
+>  Starting with Dynamics 365 Finance version 10.0.43, all licenses are issued at the tenant level. This means a single license can potentially be used across multiple environments that share the same tenant ID. Licenses generated in Dynamics 365 Finance version 10.0.43 and later aren't compatible with older versions of the application.
 
 ## Capabilities
 This section describes various capabilities of the ISV licensing feature.
@@ -52,8 +53,10 @@ When an ISV license becomes invalid after import, the ISV solution continues to 
 ## Implementing ISV licensing in a solution
 ISVs must have a valid Authenticode certificate (X.509) from a certificate authority (CA). Microsoft doesn't recommend any particular CA. However, many companies offer these certificates. Authenticode certificates come in various key sizes. The ISV licensing feature supports certificates of both 1024-bit and 2048-bit key sizes. 3072-bit and 4096-bit code signing certificates are supported beginning with platform updates for version 10.0.20. We recommend that ISVs use the larger bit key size because it provides stronger encryption. However, if an ISV already has a valid 1024-bit or 2048-bit key size, that key size works with the ISV licensing feature. 
 
+For HSM-based certificates, only those with a RSA private key are supported, as the license generator exclusively works with RSA.
+
 > [!NOTE]
-> Authenticode certificates can have various cryptographic service providers. The ISV licensing feature uses Enhanced Cryptographic Provider (which also covers Base Cryptographic Provider). There are many independent providers that you can purchase an Authenticode certificate from. Microsoft doesn't recommend any particular provider. Some providers that are often used are Symantec VeriSign, and Thawte.
+> Authenticode certificates have various cryptographic service providers. The ISV licensing feature uses Enhanced cryptographic provider, which also covers Base cryptographic provider. There are many independent providers to purchase an Authenticode certificate from. 
 
 ## Certificate import and export
 The certificate is used to sign your customer license files and validate the license files at the time of import. Authenticode certificates support four file formats. For the ISV licensing feature, you must have the certificate files in two formats:
@@ -149,7 +152,7 @@ Follow these steps to enable licensing for your solution.
 
     Example for HSM based key.
      > [!NOTE]
-     > To use the subjectname and thumbprint parameter: first install the certificate to Current User | My store, and then run the following command:
+     > To use the subject name and thumbprint parameters, first install the certificate to the Windows certificate store. Go to **Current user** > **Personal (My)** and run the following command:
     ```Console
     C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /licensecode:ISVLicenseCode /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /subjectName:"ISVCert" /thumbprint:******** /expirationdate:11/30/2023 
      ```

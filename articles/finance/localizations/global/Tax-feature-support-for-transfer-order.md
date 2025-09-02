@@ -2,15 +2,14 @@
 title: Tax feature support for transfer orders
 description: Learn about the new tax feature support for transfer orders by using the tax calculation service with an outline on setting up tax calculations.
 author: Kai-Cloud
-ms.author: kailiang
-ms.topic: article
-ms.date: 02/09/2024
+ms.author: epodkolzina
+ms.topic: how-to
 ms.custom: 
+  - bap-template
+ms.date: 04/23/2025
 ms.reviewer: johnmichalak
-audience: Application user
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
-ms.search.form:
 ms.dyn365.ops.version: 10.0.18
 ---
 

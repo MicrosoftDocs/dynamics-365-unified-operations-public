@@ -8,6 +8,7 @@ ms.custom:
   - bap-template
   - evergreen
 ms.date: 06/19/2024
+ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2021-06-24

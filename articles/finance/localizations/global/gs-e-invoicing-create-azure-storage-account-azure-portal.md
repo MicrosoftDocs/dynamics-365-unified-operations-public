@@ -3,20 +3,21 @@ title: Configure an Azure storage account in the Azure portal
 description: Learn how to create a Microsoft Azure storage account for Electronic invoicing, including a step-by-step process for storing the key vault.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
-ms.custom: 
-  - bap-template
+ms.topic: how-to
 ms.date: 09/13/2024
 ms.reviewer: johnmichalak
 ms.search.validFrom: 2024-01-29
 ms.dyn365.ops.version: 10.0.39
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Configure an Azure storage account in the Azure portal
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-All electronic files that the Electronic Invoicing service generates or that go to the service during processing are stored in containers in your Microsoft Azure storage account. To ensure that Electronic invoicing can access those containers, you must provide the shared access signature (SAS) token of the storage account to the Electronic Invoicing service. Additionally, to ensure that the token is securely stored, don't provide the SAS token directly. Instead, store it in an Azure key vault, and provide a Key Vault secret.
+All electronic files that the Electronic Invoicing service generates or that go to the service during processing are stored in containers in your Microsoft Azure storage account. To ensure that Electronic invoicing can access those containers, you must provide the shared access signature (SAS) token of the storage account to the Electronic Invoicing service. Additionally, to ensure that the token is securely stored, don't provide the SAS token directly. Instead, store it in an Azure Key Vault, and provide a Key Vault secret.
 
 1. Open the storage account that you plan to use with the Electronic Invoicing service.
 1. Go to **Settings** \> **Configuration**, and make sure that the **Allow Blob public access** parameter is set to **Enabled**.

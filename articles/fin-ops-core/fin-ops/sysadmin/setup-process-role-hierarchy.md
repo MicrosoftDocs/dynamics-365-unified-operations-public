@@ -3,8 +3,8 @@ title: Set up a process hierarchy, roles, and privileges
 description: Learn how to set up a process hierarchy, assign various tasks, and define roles, entry points, and privileges.
 author: saurabhgupta
 ms.author: saurabhgupta
-ms.topic: article
-ms.date: 01/13/2025
+ms.topic: how-to
+ms.date: 03/14/2025
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
@@ -17,7 +17,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Set up a process hierarchy, roles, and privileges
 
 [!include [banner](../../../finance/includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 A *process hierarchy* provides a way to organize and manage the business processes in your company. After you define the process hierarchy for your company, you can assign various tasks, and define roles, entry points, and privileges according to the business requirements.
 
@@ -82,3 +81,28 @@ To create a role, follow these steps.
 1. In the **Role name** field, enter a value.
 1. In the **Description** field, enter a value.
 1. Save the role.
+
+## Merge option under security tasks
+The **Merge** operation merges the entry points from the selected tasks into the destination task and is useful when consolidation of tasks is recommended for a given role..
+ 
+To merge tasks, follow these steps:   
+1. Go to **System administration** \> **Security** \> **Security governance** \> **Security process role maintain**.
+2. Go to **Security tasks**, and select more than one tasks to merge together.
+3. Currently, the task selected last is designated as **destination** and all other tasks selected before are merged into the destination.
+
+Two merge options are available: 
+ - merge entry points and delete underlying duties and privileges from the selected tasks.
+ - merge entry points from selected tasks into destination and preserve the underlying duties and privileges.
+
+To use the merge operation, select more than one task.  
+
+
+## Synchronize security governance process hierarchy with core security configuration
+
+**Synchronize** function syncs any changes done directly into security duties and privileges on the **Core security configuration** page.  
+When duties, privileges, and roles are created from Security governance and published to core security configuration, users can edited them in Security configuration by either adding or removing entry points. By doing this, the security object is different between two pages. 
+
+To restore changes from security configuration into security governance, use the **Synchronize** feature by selecting a process hierarchy level. 
+1. Go to **System administration** \> **Security** \> **Security governance** \> **Security process role maintain**.
+2. On the header, select **Synchronize** to use the feature. 
+

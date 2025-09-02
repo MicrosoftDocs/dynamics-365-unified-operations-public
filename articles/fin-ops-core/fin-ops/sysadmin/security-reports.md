@@ -17,12 +17,10 @@ ms.dyn365.ops.version: Version 7.0.0
 # Available reports for security 
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The following reports are available to help with security, licenses, roles, and duties:
 
 - **User activity aging** – This report tracks sign-in information.
-- **License summary** – This report shows the number of entry points for each license level.
 - **Role audit trail** – This report shows the history of a role that is assigned and unassigned to users.
 - **Security analysis** – This report provides information about various roles and their privilege access levels. It shows how many users belong to each role and the change history of duties, roles, and privileges.
 
@@ -37,27 +35,6 @@ To define and customize day ranges for the **User activity aging** report, follo
 1. Go to **System administration** \> **Security governance setup** \> **Parameters**.
 1. On the **User aging periods** tab, configure all five day ranges as you require.
 1. Select **Save**.
-
-## License summary report
-
-The **License summary** report helps users understand how many entry points for each license level are applied to users, roles, duties, and privileges. This information can be used to identify opportunities for optimization in the organization.
-
-- **Recalculate prices** – Recalculate the prices of the licenses that are used for users, roles, duties, and privileges.
-- **Rebuild licenses** – Rebuild the licenses that are used for users, roles, duties, and privileges. All users who have a small number of entry points at the operational license level might have their access redesigned and might be moved to the activity or team member level.
-- **User license** – A list of all users, together with details about things such as licenses, operations, and activities. You can use this list to check each user's access and verify the license level.
-
-    > [!NOTE]
-    > The **User license** report might list an **Admin** user ID with all licenses and no entry points. This behavior is expected unless system administrators have specific business activities and are assigned specific licenses. Ideally, system administrators don't contribute to business activities and don't require licenses. We recommend that you have the **System administrator** role as a non-contributing user. If you want to remove the **System Administrator** role from all licensing reports, go to **System administration** \> **Security governance setup** \> **Parameters**, and then, in **Basic license cost** section, set the **Exclude system administrator** option to **On**.
-
-- **Role license** – A list of all roles, together with details about things such as licenses, operations, and activities. You can use this list to check each role's access and verify the license level.
-- **Duty license** – A list of all duties, together with details about things such as licenses, operations, and activities. You can use this list to check each duty's access and verify the license level.
-- **Privilege license** – A list of all privileges, together with details about things such as licenses, operations, and activities. You can use this list to check each privilege's access and verify the license level.
-- **User license summary** – Analyze user licenses, and verify the details that are needed to assign licenses and optimize them for usability.
-- **Security summary** – Analyze user licenses, roles, duties, and privileges so that you can optimize the environment to ensure that each user or a group of users is granted appropriate access.
-> [!NOTE]
-> Under **Security Summary** report, there are various licenses with editable boxes at the top of the page. These **Page filters** that are available for this report where users can apply the maximum threshold value for specific license type(s) and filter the data underneath to limit entry points count up to that selected threshold value. These filters can be helpful when system administrators are looking for roles with very few entry points per license type. 
-
-For example: **Set max. threshold on operations** = 20, **Activity** = 20. The report displays roles where these two licenses are granted. Administrators can take this data and decide if such roles still required because they have access to very few entry points. 
 
 ## Role audit trail report
 

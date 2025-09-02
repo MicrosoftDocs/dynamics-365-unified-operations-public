@@ -3,7 +3,7 @@ title: Proactive quality updates overview
 description: Learn about proactive quality updates (PQUs). It explains what they are and why they're used, and describes some of their benefits.
 author: rashmansur
 ms.author: rashmim
-ms.topic: article
+ms.topic: concept-article
 ms.date: 06/06/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global

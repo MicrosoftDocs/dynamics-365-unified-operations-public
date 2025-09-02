@@ -3,7 +3,7 @@ title: Revenue recognition bundles
 description: Learn about the bundle functionality that is included in the revenue recognition capability in Accounts receivable.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/04/2023
 ms.custom: 
 ms.reviewer: twheeloc

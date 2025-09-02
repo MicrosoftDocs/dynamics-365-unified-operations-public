@@ -3,7 +3,7 @@ title: Set up security for Dynamics 365 Finance business performance planning
 description: This article describes how to set up security for business performance planning.
 author: ShielaSogge
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/31/2024
 ms.reviewer: twheeloc 
 audience: Application User

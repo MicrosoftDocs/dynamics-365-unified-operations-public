@@ -6,7 +6,8 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 02/12/2025
+ms.date: 03/26/2025
+ms.update-cycle: 180-days
 ms.custom: 
   - bap-template
 ms.collection:
@@ -141,6 +142,18 @@ As appropriate, the **Insights** section provides buttons that let you filter th
 
 - **Overdue or nearly overdue lines** – Show only order lines that are overdue or nearly overdue.
 - **Lines without confirmed ship dates** – Show only order lines that aren't fully shipped (packing slip posted) and don't have a confirmed ship date.
+
+## Traceability summaries
+
+The [Traceability Add-in for Dynamics 365 Supply Chain Management](../traceability/traceability-overview.md) lets you collect business and industry-specific data across the product value chain, which can be used for regulation audits and compliance process. The Traceability app in Power Apps provides two types of Copilot-generated summaries: activity summaries and where-used summaries.
+
+### Traceability activity summaries
+
+Traceability collects activity events across the supply chain and product lifecycle, but it isn't always easy for users to get a quick picture of a tracked object's history. Copilot analyzes the many activity events associated with a selected tracked object and then provides a natural-language summary that helps you quickly understand the object's history. This summary is shown at the top of the full list of activity events.
+
+### Traceability where-used summaries
+
+Traceability provides a comprehensive where-used insight report, which lets you track the usage of items across various processes. Copilot offers detailed where-used summaries at both the item-number and quantity levels, allowing for precise analysis.
 
 ## Related information
 

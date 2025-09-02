@@ -1,68 +1,121 @@
 ---
 title: Acquire and dispose a CIAP fixed asset
-description: Fiscal books can acquire and dispose of fixed assets that are ICMS tax long term return, including a step-by-step process for acquiring CIAP fixed assets.
+description: This article describes how to acquire and dispose of a CIAP fixed asset in Brazil with Microsoft Dynamics 365 Finance.
 author: v-gonode
 ms.author: kfend
-ms.topic: article
-ms.date: 10/31/2017
-ms.custom:
+ms.topic: how-to
+ms.date: 03/27/2025
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2017-06-30
-ms.search.form:
-ms.dyn365.ops.version: July 2017 update 
 ---
 
 # Acquire and dispose a CIAP fixed asset
 
 [!include [banner](../../includes/banner.md)]
 
+This article describes how to acquire and dispose of a CIAP fixed asset in Brazil with Microsoft Dynamics 365 Finance.
+
+Fiscal books can acquire and dispose of fixed assets that are ICMS tax long term return.
+
 ## Acquire a CIAP fixed asset
+
 Use this functionality to register in Fiscal books module the acquisition of a fixed asset controlled by the ICMS tax long term return.
 
-1. On the **All purchase orders** page, in the **Vendor account** field, select a vendor.
-2. Click **Add line**.
-   -  Fill in the **Item number**, **CFOP**, **Quantity**, **Unit price** fields.
-3. Expand the Line details section.
-4. Click the **Fixed assets** tab.
-5. Select **Yes in the New fixed asset?** field.
-6. In the **Fixed asset group** field, select a fixed asset group.
-7. On the **Financial dimensions** tab, fill out the **CostCenter** and **Filial** fields.
-8. Click **Confirm**.
-9. On the **All purchase orders** page, click the link to select a Purchase order.
-10.	On the Action Pane, click **Invoice** > **Default from: Product receipt quantity**. In the **Default quantity for lines** field, select a quantity.
-11.	Click **OK**.
-12.	Fill in the **Document model**, **Access key**, **Invoice date** and **Posting date** fields.
-13.	Click **Post**.
-14.	On the **Booking period** page, click **Create new booking period**.
-15.	Fill in the **Fiscal establishment**, **Month** and **Year** fields.
-16.	Click **OK**.
-17.	Click **Sync** > **OK**.
-18.	Click **ICMS** > **ICMS tax assessment** > **OK**.
-19.	On the **All CIAP fixed assets** page, click the link to select a CIAP asset ID.
-20.	Expand the Line details section.
-21.	On the **CIAP Report** page, in the **Fiscal establishment** field, enter a fiscal establishment.
-22.	Click **OK**.
+To acquire a CIAP fixed asset, follow these steps.
+
+1. In Dynamics 365 Finance, go to **All purchase orders**.
+1. In the **Vendor account** field, select a vendor.
+1. Select **Add line**.
+1. In the **Item number** field, enter a value.
+1. In the **CFOP** field, enter a value.
+1. In the **Quantity** field, enter a value.
+1. In the **Unit price** field, enter a value.
+1. Expand the **Line details** section.
+1. Select the **Fixed assets** tab.
+1. In the **New fixed asset?** field, select **Yes**.
+1. In the **Fixed asset group** field, select a fixed asset group.
+1. Select the **Financial dimensions** tab.
+1. In the **CostCenter** field, enter a value.
+1. In the **Filial** field, enter a value.
+1. Select **Confirm**.
+1. Go to **All purchase orders**
+1. Select a purchase order link.
+1. On the Action Pane, select **Invoice**.
+1. Select **Default from: Product receipt quantity**.
+1. In the **Default quantity for lines** field, select a quantity.
+1.	Select **OK**.
+1.	In the **Document model** field, enter a value.
+1.	In the **Access key** field, enter a value.
+1.	In the **Invoice date** field, enter a date.
+1.	In the **Posting date** field, enter a date.
+1.	Select **Post**.
+1.	Go to **Booking period**.
+1.	Select **Create new booking period**.
+1.	In the **Fiscal establishment** field, enter a value.
+1.	In the **Month** field, enter a month.
+1.	In the **Year** field, enter a year.
+1. Select **OK**.
+1.	Select **Sync**.
+1.	Select **OK**.
+1.	Select **ICMS**.
+1.	Select **ICMS tax assessment**.
+1.	Select **OK**.
+1.	Go to **All CIAP fixed assets**.
+1.	Select a CIAP asset ID link.
+1. Expand the **Line details** section.
+1.	Go to **CIAP Report**.
+1.	In the **Fiscal establishment** field, enter a value.
+1.	Select **OK**.
 
 ## Dispose of a CIAP fixed asset
-Use this functionality to register in Fiscal books module the disposal of a fixed asset controlled by the ICMS tax long term return.
 
-1.	On the **All free text invoices** page, click **New**.
-2.	Fill in the **Fiscal establishment ID**, **Customer account**, **Date**, **Description**, **Main account**, **CFOP**, **Sales tax group**, **Item sales tax group**, **Quantity** and **Unit price** fields.
-3.  Expand the **Line details** section, > in the **Fixed asset number** field, enter a fixed asset.
-4.	Click **Post**.
-5.	Expand the **Bill of lading** section, fill in the **Carrier name**, **Volume type**, **Volume quantity**, **Net weight**, **Gross weight** fields.
-6.	Click **OK**.
-7.	On the **Export/import NF-e process** > **OK**.
-8.	One the **Booking period** page > **Create new booking period**.
-9.	Fill in the **Fiscal establishment**, **Month** and **Year** fields.
-10.	Click **OK**.
-11.	Click **Sync** > **OK**.
-12.	Click **ICMS** > **ICMS tax assessment** > **OK**.
-13.	On the **All CIAP fixed assets** page, click the link to select a CIAP asset ID.
-14.	On the **CIAP Report**, in the **Fiscal establishment** field, select a fiscal establishment.
-15.	Click **OK**.
+Use this functionality to register the disposal of a fixed asset controlled by the ICMS tax long term return in the Fiscal books module.
+
+To acquire a CIAP fixed asset, follow these steps.
+
+1.	In Dynamics 365 Finance, go to **All free text invoices**.
+1.	Select **New**.
+1.	In the **Fiscal establishment ID**, **Customer account**, **Date**, **Description**, **Main account**, **CFOP**, **Sales tax group**, **Item sales tax group**, **Quantity** and **Unit price** field, enter a value.
+1.	In the **Fiscal establishment ID** field, enter a value.
+1.	In the **Customer account** field, enter a value.
+1.	In the **Date** field, enter a value.
+1.	In the **Description** field, enter a value.
+1.	In the **Main account** field, enter a value.
+1.	In the **CFOP** field, enter a value.
+1.	In the **Sales tax group** field, enter a value.
+1.	In the **Item sales tax group** field, enter a value.
+1.	In the **Quantity** field, enter a value.
+1.	In the **Unit price** field, enter a value.
+1. Expand the **Line details** section.
+1. In the **Fixed asset number** field, enter a value.
+1.	Select **Post**.
+1.	Expand the **Bill of lading** section.
+1.	In the **Carrier name** field, enter a value.
+1.	In the **Volume type** field, enter a value.
+1.	In the **Volume quantity** field, enter a value.
+1.	In the **Net weight** field, enter a value.
+1.	In the **Gross weight** field, enter a value.
+1.	Select **OK**.
+1.	Go to **Export/import NF-e process**.
+1.	Select **OK**.
+1.	Go to **Booking period \> Create new booking period**.
+1. In the **Fiscal establishment** field, enter a value.
+1. In the **Month** field, enter a month.
+1. In the **Year** field, enter a year.
+1.	Select **OK**.
+1.	Select **Sync**.
+1.	Select **OK**.
+1.	Select **ICMS**.
+1.	Select **ICMS tax assessment**.
+1.	Select **OK**.
+1.	Go to **All CIAP fixed assets**.
+1.	Select a CIAP asset ID link.
+1.	Go to **CIAP Report**.
+1.	In the **Fiscal establishment** field, enter a value.
+1.	Select **OK**.
 
 
 

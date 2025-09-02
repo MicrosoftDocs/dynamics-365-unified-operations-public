@@ -3,9 +3,10 @@ title: Collections coordinator summary FAQ
 description: Access answers to some frequently asked questions about the Collections coordinator summary feature in Microsoft Dynamics 365 Finance.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
+ms.topic: faq
 ms.custom: faq
 ms.date: 01/21/2025
+ms.update-cycle: 180-days
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
 ---
@@ -21,6 +22,8 @@ Collections coordinator summary is a feature of Dynamics 365 Finance that shows 
 ## What are the system's capabilities?
 
 The feature is powered by Azure Open AI's large language model and uses the customer name and Finance data as input. The summary gives the collections coordinator information about the payment history and revenue. The AI-generated email can be sent to the customer to remind them about an overdue balance.
+
+[!INCLUDE[rai-feedback-mechanism.md](../../includes/rai-feedback-mechanism.md)]
 
 ## What is the system's intended use?
 

@@ -5,7 +5,7 @@ title: Create departments and include them in the department hierarchy
 description: A department is an operating unit that represents a category or functional area of an organization. A department is responsible for a specific area of the organization, such as sales, accounting, or human resources. 
 author: twheeloc
 ms.date: 05/08/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: HierarchyDesigner, OMOperatingUnit, HcmPersonnelManagementWorkspace

@@ -1,10 +1,10 @@
 --- 
 title: Create an interest code with a range
-description: Interest codes can be set up to calculate different interest amounts based on a range of values. Learn about how to create an interest code with a range.
+description: Learn how to create an interest code with a range.
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: how-to
-ms.date: 03/28/2023
+ms.date: 08/04/2025
 ms.custom:  
 ms.reviewer: twheeloc
 audience: Application User
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 7.0.0
 # Create an interest code with a range
 
 [!include [banner](../../includes/banner.md)]
-Interest codes can be set up to calculate different interest amounts based on a range of values. This procedure will show you how to add an interest code and add a range to it.
+Interest codes can be set up to calculate different interest amounts based on a range of values. This procedure shows how to add an interest code and add a range to it.
 
 1. Go to **Credit and collections > Interest > Set up interest codes**.
 2. Click **New**.

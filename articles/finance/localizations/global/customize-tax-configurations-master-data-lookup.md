@@ -3,7 +3,7 @@ title: Customize tax configurations for master data lookup
 description: Learn how to customize tax configurations to extend master data lookup functionality, including a process for importing tax configurations from Microsoft.
 author: kai-cloud
 ms.author: pashao
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/14/2025
 ms.custom: 
   - bap-template

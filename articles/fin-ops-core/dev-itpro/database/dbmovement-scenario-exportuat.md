@@ -3,13 +3,14 @@ title: Export a copy of the standard user acceptance testing (UAT) database
 description: Learn about a database export scenario for finance and operations, including known limitations and prerequisites.
 author: LaneSwenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/13/2024
 ms.reviewer: johnmichalak
 audience: IT Pro, Developer
 ms.search.region: Global
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
+ms.custom: sfi-ropc-nochange
 ---
 
 # Export a copy of the standard user acceptance testing (UAT) database

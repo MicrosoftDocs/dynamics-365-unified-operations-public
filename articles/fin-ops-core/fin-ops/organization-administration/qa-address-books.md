@@ -3,7 +3,7 @@ title: Address books FAQ
 description: Access answers to frequently asked questions related to address books, including questions about duplicate records and bulk adding and deleting party records. 
 author: msftbrking
 ms.author: brking
-ms.topic: article
+ms.topic: faq
 ms.date: 01/07/2025
 ms.reviewer: twheeloc
 audience: Application User
@@ -49,7 +49,7 @@ If an address that you're trying to delete is linked to another record, you rece
 
 Alternatively, you can set up a SysOperation framework batch job to delete multiple historical addresses.
 
-1. Go to **Organization administration \> Periodic \> Delete inactivated addresses**.
+1. Go to **Organization administration \> Periodic \> Delete deactivated addresses**.
 2. Select **OK**.
 
 You're notified whether the batch job succeeded or failed.

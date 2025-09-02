@@ -3,7 +3,7 @@ title: Add relations to tables through extension
 description: Learn how to add a relation to a table to enable secure interactions with data, with a step-by-step example and troubleshooting information.
 author: ivanv-microsoft
 ms.author: ivanv
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/04/2019
 ms.reviewer: johnmichalak
 audience: Developer
