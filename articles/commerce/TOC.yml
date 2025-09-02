@@ -1518,7 +1518,7 @@
             href: dev-itpro/commerce-chat-overview.md
           - name: Commerce Chat with Omnichannel for Customer Service module
             href: dev-itpro/commerce-chat-module.md
-          - name: Commerce Chat with Power Virtual Agents module
+          - name: Commerce Chat with Microsoft Copilot Studio module
             href: dev-itpro/chat-module-pva.md
           - name: Commerce chat module proactive chat parameters
             href: dev-itpro/chat-proactive-chat-parameters.md
