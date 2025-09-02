@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce Chat with Power Virtual Agents module
+title: Commerce Chat with Microsoft Copilot Studio module
 description: This article describes the Commerce Chat with Power Virtual Agents module that integrates Microsoft Power Virtual Agents with Dynamics 365 Commerce websites.
 author: josaw1
 ms.date: 09/02/2025
