@@ -69,7 +69,12 @@ Follow these steps to grant the application permissions in Power Platform admin 
 1. In the **Create a new app user** dialog box, select **Add an app**.
 1. In the **Add an app from Microsoft Entra** dialog box, in the search field, paste the application (client) ID of your new app. (You should have copied this ID when you registered the app in the Azure portal.) Then select your app in the list or results, and select **Add**.
 1. You're returned to the **Create a new app user** dialog box. Select your business unit, and then select **Edit security roles**.
-1. In the **Add security roles** dialog box, in the **Role** list, select *Export Management application*. Then select **Save** to apply the role.
+1. In the **Add security roles** dialog box, in the **Role** list, select each of the following roles:
+    - *Export Management Application*
+    - *Export Management Admin*
+    - *Finance and Operations Basic User*
+
+1. Select **Save** to apply the roles.
 1. Select **Create** to create the new app user.
 
 ## Enable the functionality and configure the application in Supply Chain Management
@@ -83,7 +88,7 @@ Follow these steps to enable the functionality and configure the application in 
     - **Application ID** – Paste the application (client) ID of your new app. (You should have copied this ID when you registered the app in the Azure portal.)
     - **Application secret** – Paste the client secret of your new app. (You should have copied this secret when you registered the app in the Azure portal.)
 
-    As you enter values into these fields, the system checks whether it can use them to connect to Dataverse and whether the required solution is installed there. The three checkboxes under the **Status** heading automatically update to show a checkmark as each test passes. If one or more tests fail, make sure that the advanced export management solution is successfully installed, and that the specified Microsoft Entra application has all of the following security roles assigned to it in Dataverse: *Export management application*, *Export management admin*, and *Finance & operations basic user*. When all three checkboxes under the **Status** heading show a check, continue to the next step.
+    As you enter values into these fields, the system checks whether it can use them to connect to Dataverse and whether the required solution is installed there. The three checkboxes under the **Status** heading automatically update to show a checkmark as each test passes. If one or more tests fail, make sure that the advanced export management solution is successfully installed, and that the specified Microsoft Entra application has all of the following security roles assigned to it in Dataverse: *Export Management Application*, *Export Management Admin*, and *Finance and Operations Basic User*. When all three checkboxes under the **Status** heading show a check, continue to the next step.
 
 1. The following settings appear after all of the tests have passed. Set each option as required.
     - **Advanced export management functionality enabled** – Set this option to *Yes* to turn on advanced export management functionality in your system.
