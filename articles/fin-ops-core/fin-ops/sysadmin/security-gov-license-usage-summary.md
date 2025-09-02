@@ -34,7 +34,7 @@ This page provides a telemetry-driven view of user activities and calculates the
 
 The User security governance feature and its related license usage summary tools are available in Dynamics 365 finance and operations version 10.0.44.
 
-### Enable the User security governance license usage summary report
+### Enable the workspace
 
 Before you access the **User security governance** workspace, you must activate it in **Feature management**:
 
@@ -46,16 +46,16 @@ Before you access the **User security governance** workspace, you must activate 
 
 :::image type="content" source="media/security-governance-license-usage-summary-feature-enable.png" alt-text="Security governance in the system admin user experience." lightbox="media/security-governance-license-usage-summary-feature-enable.png":::
 
-### Access the report
+### Access the workspace
 
 To access the **User License Summary** page, follow these steps:
 
 1. Sign in to Dynamics 365 finance and operations.
 2. Go to **System administration > Security > Security Governance > License usage summary**.
 
-## Report details
+## Workspace details
 
-The User security governance license usage summary report provides a layered view of:
+The User security governance license usage summary page provides a layered view of:
 - How system permissions are exercised
 - How responsibilities map to different role types
 
@@ -63,7 +63,7 @@ These details enable deeper visibility into user access patterns and ensures tha
 
 For a consolidated view across all environments within the same tenant, see the reports in the **Power Platform admin center**.
 
-The report offers summaries across multiple dimensions:
+The workspace offers summaries across multiple dimensions:
 - **User** - Individual usage patterns from telemetry
 - **User Role License** - Role-to-license tier mapping
 - **Role** - Aggregate role-level permissions
