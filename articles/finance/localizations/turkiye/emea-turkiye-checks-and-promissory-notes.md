@@ -4,7 +4,7 @@ description: Learn how to use checks and promissory notes in the Republic of Tü
 author: v-omerorhan 
 ms.author: v-omerorhan 
 ms.topic: how-to 
-ms.date: 08/28/2025
+ms.date: 09/02/2025
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye 
 ms.search.validFrom: 2020-02-03 
