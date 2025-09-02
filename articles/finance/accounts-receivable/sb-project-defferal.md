@@ -1,10 +1,10 @@
 ---
 title: Project subscription billing deferral COGS adjustment (preview)
-description: Learn how to set up the project subscription billing deferral COGS adjustment feature in Microsoft Dynamics 365 Finance. 
+description: Set up the Project subscription billing deferral cost of goods sold (COGS) adjustment feature in preview in Microsoft Dynamics 365 Finance. 
 author: JodiChristiansen
 ms.author: reetuchopra
 ms.topic: how-to
-ms.date: 07/29/2025
+ms.date: 09/02/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -23,32 +23,34 @@ This article explains how to set up and use the project subscription billing def
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
-Before using the project subscription billing deferral COGS adjustment feature, ensure your environment is updated to Microsoft Dynamics 365 Finance version 10.0.45 or later. This feature is currently available in Preview and must be explicitly enabled using **Feature management**. It also depends on the **Subscription billing deferral COGS adjustment** feature. If the base COGS adjustment feature isn't enabled, this project-specific version can't be activated. 
+Before using the project subscription billing deferral COGS adjustment feature, ensure your environment is updated to Microsoft Dynamics 365 Finance version 10.0.45 or later. This feature is currently available in preview and must be manually enabled using **Feature management**. For the feature to be enabled, the **Subscription billing deferral COGS adjustment** feature must also be enabled in Finance. If not, the project-specific version can't be activated. 
 
-To enable the project subscription billing deferral COGS adjustment feature, follow these steps:
-1. Go to **Feature management**, enable **Project subscription billing deferral COGS adjustment (preview)**  feature for project-based contract billing or sales orders. f
+## Enable project subscription billing deferral COGS adjustment
+
+To activate the feature, go to **Feature management** and enable **Project subscription billing deferral COGS adjustment (preview)** for project-based contract billing or sales orders. 
   
 After the feature is enabled, COGS is automatically tracked and adjusted for applicable deferral schedules when related to project-based sales orders.
 
-### Parameters
+### Set parameters
 To set the **Revenue and expense deferral** parameter, follow these steps:
-1. Go to **Revenue and expense deferral parameters** > **Adjustment method**
-2. Select one of the following options: 
+1. Go to **Revenue and expense deferral parameters** > **Adjustment method**.
+1. Select one of the following options: 
  - **Catch up** – The amount after all recognized lines are recalculated.
  - **Reversal** – Any lines after the recalculation date are reversed by using the specified journal name and posting date. The amount after the recalculation date is then recalculated.
 
 ### Background automation
-This feature introduces background automation to adjust COGS for deferral schedules in Subscription billing. 
-To ensure the feature operates as intended, initialize the background process automation:
-1.	Go to **System administration** > **Setup** > **Process automations**.
-2.	Select **Initialize process automations**.
-3.	After initialization, verify that the **Subscription billing deferral COGS adjustment (preview)** appears in the **Background processes** list.
+This feature introduces background automation to adjust COGS for deferral schedules in subscription billing. 
 
-When an inventory closing or recalculation process is triggered, the system:
+To ensure the feature operates as intended, initialize the background process automation.
+1.	Go to **System administration** > **Setup** > **Process automations**.
+1.	Select **Initialize process automations**.
+1.	After initialization, verify that **Subscription billing deferral COGS adjustment (preview)** appears in the **Background processes** list.
+
+When an inventory closing or recalculation process is triggered, the system completes the following tasks.
  - Identifies impacted consumption deferral schedules.
- - Updates the **Inventory cost adjustment** field in the COGS Deferral schedule to reflect any change in the original inventory cost.
+ - Updates the **Inventory cost adjustment** field in the COGS deferral schedule to reflect any change in the original inventory cost.
  - Executes the update asynchronously.
-These adjustments ensure that any cost changes even those made after the original posting are accurately reflected in deferred COGS recognition.
+These adjustments ensure that any cost changes, even those made after the original posting, are accurately reflected in deferred COGS recognition.
 
 
 ### Example
