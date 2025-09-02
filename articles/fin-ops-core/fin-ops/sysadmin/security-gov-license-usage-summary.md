@@ -4,12 +4,12 @@ description: Learn about the user security governance license usage summary repo
 author: ceian  
 ms.author: ceian
 ms.topic: concept-article
-ms.date: 07/29/2025
+ms.date: 09/02/2025
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
-ms.search.validFrom: 2025-07-25
+ms.search.validFrom: 2025-09-02
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 ms.dyn365.ops.version: Version 7.0.0
 ---
