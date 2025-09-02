@@ -4,15 +4,13 @@ description: Learn how to use Microsoft Copilot Studio to create low-code plugin
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 10/01/2024
+ms.date: 09/02/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.collection:
   - bap-ai-copilot
-audience: Application User
 ms.search.region: Global
-ms.search.form:
 ---
 
 # Tutorial: Extend Copilot capabilities with low-code plugins
@@ -87,7 +85,7 @@ In the topic, create an action that uses a flow to get the course description.
     - In the **Input** field, enter **CourseID**.
 
 1. In Power Automate, below the **When Microsoft Copilot Studio calls a flow** node, select the plus sign (**+**), and then select **Add an action**.
-2. In the **Add an action** pane, search for and select the **List rows** action in the **Microsoft Dataverse** connector.
+1. In the **Add an action** pane, search for and select the **List rows** action in the **Microsoft Dataverse** connector.
 1. On the **Parameters** tab for the **List rows** options, set the following values:
 
     - **Table Name:** Courses V2 (mserp)
@@ -114,7 +112,7 @@ In the topic, create an action that uses a flow to get the course description.
     1. In the **Content** parameter of the **Parameters** pane, select the **Outputs** parameter from the **Compose** action.
     1. In the **Schema** parameter, enter the following JSON schema.
 
-        ```json
+    ```json
         {
             "type": "array",
             "items": {
@@ -149,7 +147,7 @@ In the topic, create an action that uses a flow to get the course description.
                 ]
             }
         }
-        ```
+    ```
 
 1. Initialize a variable for the course description that will be the output of the flow.
 
