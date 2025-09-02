@@ -25,7 +25,7 @@ Omnichannel for Customer Service is a robust application that extends the power 
 
 ## Microsoft Copilot Studio
 
-Microsoft Copilot Studio lets you create powerful AI-powered chatbots for a range of requests. For more information about Microsoft Copilot Studio, see [Microsoft Copilot Studio overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents). For information about how to integrate Microsoft Copilot Studio with a Dynamics 365 Commerce e-commerce website, see [Commerce chat with Microsoft Microsoft Copilot Studio](chat-module-pva.md).
+Microsoft Copilot Studio lets you create powerful AI-powered chatbots for a range of requests. For more information about Microsoft Copilot Studio, see [Microsoft Copilot Studio overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents). For information about how to integrate Microsoft Copilot Studio with a Dynamics 365 Commerce e-commerce website, see [Commerce chat with Microsoft Copilot Studio](chat-module-pva.md).
 
 > [!NOTE]
 > Microsoft Copilot Studio is already included in Omnichannel for Customer Service. If you require both virtual agent (chatbot) and live agent capabilities, use Omnichannel for Customer Service.

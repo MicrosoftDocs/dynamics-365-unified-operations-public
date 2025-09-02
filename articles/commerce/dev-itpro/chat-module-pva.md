@@ -20,7 +20,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the Commerce Chat with Microsoft Copilot Studio module that integrates Microsoft Microsoft Copilot Studio with Dynamics 365 Commerce websites.
+This article describes the Commerce Chat with Microsoft Copilot Studio module that integrates Microsoft Copilot Studio with Dynamics 365 Commerce websites.
 
 The Commerce Chat with Microsoft Copilot Studio feature empowers Dynamics 365 e-commerce customers to use Microsoft Copilot Studio chatbot capabilities to handle their queries. As of the Dynamics 365 Commerce 10.0.30 release, this feature can be incorporated into e-commerce websites by using the Commerce Chat with Microsoft Copilot Studio module that is part of the Commerce module library.
 
