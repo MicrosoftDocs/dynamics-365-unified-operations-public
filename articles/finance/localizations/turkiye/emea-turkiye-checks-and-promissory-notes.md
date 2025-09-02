@@ -147,19 +147,15 @@ To create a new portfolio, follow these steps:
 1. In the **Portfolio name** field, enter a name for the portfolio.
 1. Select an account type in the **Account type** field.
 1. Select an account number in the **Account number** field.
-
-        - If **Bank** is selected, select a bank account for accounting. 
-    - If **Ledger** is selected, select a main account for accounting.
-
-7. Select a portfolio type in the **Portfolio type** field.
- 
-        - **Check received**: Use this option for portfolios that track checks received from customers.
+   - If **Bank** is selected, select a bank account for accounting. 
+   - If **Ledger** is selected, select a main account for accounting.
+1. Select a portfolio type in the **Portfolio type** field.
+    - **Check received**: Use this option for portfolios that track checks received from customers.
     - **Check given**: Use this option for portfolios that track checks issued by the company.
     - **Promissory note received**: Use this option for portfolios that manage promissory notes received from customers.
     - **Promissory note given**: Use this option for portfolios that track promissory notes issued by the company.
-
-8. Select a currency code in the **Currency** field.
-9. Select a bank account for the collection in the **Bank account for collection** field. Select the bank account used as the offset account during check collection transactions for the portfolio.
+1. Select a currency code in the **Currency** field.
+1. Select a bank account for the collection in the **Bank account for collection** field. Select the bank account used as the offset account during check collection transactions for the portfolio.
 
 ## Define transaction codes for check and promissory note operations
 
@@ -205,25 +201,23 @@ Here are the details for each field:
 To create a transaction code for the check and promissory note process:
 
 1. Go to **Cash and bank management > Setup > Check and promissory note operations > Check or promissory note transaction codes**.
-2. Select **New**.
+1. Select **New**.
 1. In the **Transaction code** field, enter a unique code.
-4. In the **Transaction code description** field, enter a name for transaction code.
+1. In the **Transaction code description** field, enter a name for transaction code.
 1. Select **Against transaction code**. It specifies the related transaction code that is automatically triggered when the selected transaction code is used in a journal.
 For example, when transferring a check between two portfolios, you can define an against transaction code to automatically generate both the outgoing and incoming movements within the same journal.
-6. Assign a **Journal name** to specify which journal will be used for posting.
-7. Set the appropriate flags to define the behavior of the transaction in the relevant field:
-
-    -  Select **Receipt** if the transaction represents the receipt of a check or promissory note.
-    -  Select **Issue** if the transaction represents issuing a document.
-    -  Select **Collection**, **Return**, or **Bounce check** as needed.
-    -  Enable **New check** if this is the first entry of the document into the system.
-
-8. In the **Account type** field, choose the type of account to post against (e.g., Customer, Vendor, Ledger).
-9. Select or enter the **Account number** if a default is required.
-10. Select **Against transaction code** to link the outgoing and incoming movements if the transaction is part of a transfer (e.g., between two portfolios).
-11. Select **Auto settlement** if you want the system to automatically settle open transactions.
-12. Choose a **Matching type** to define how settlement will be matched (e.g., by due date or transaction date).
-13. Select or enter a **Bank transaction type** to track the check or promissory note in bank transactions.
+1. Assign a **Journal name** to specify which journal will be used for posting.
+1. Set the appropriate flags to define the behavior of the transaction in the relevant field:
+   -  Select **Receipt** if the transaction represents the receipt of a check or promissory note.
+   -  Select **Issue** if the transaction represents issuing a document.
+   -  Select **Collection**, **Return**, or **Bounce check** as needed.
+   -  Enable **New check** if this is the first entry of the document into the system.
+1. In the **Account type** field, choose the type of account to post against (e.g., Customer, Vendor, Ledger).
+1. Select or enter the **Account number** if a default is required.
+1. Select **Against transaction code** to link the outgoing and incoming movements if the transaction is part of a transfer (e.g., between two portfolios).
+1. Select **Auto settlement** if you want the system to automatically settle open transactions.
+1. Choose a **Matching type** to define how settlement will be matched (e.g., by due date or transaction date).
+1. Select or enter a **Bank transaction type** to track the check or promissory note in bank transactions.
 1. Select **Save**.
 
 The transaction code is now available for use in the **Check and promissory note journal** and related processes.
@@ -248,11 +242,11 @@ Here is the explanation of each field:
 To create a bank branch, follow these steps:
 
 1. Go to **Cash and bank management > Setup > Check and promissory note operations > Bank branch name**.
-2. Select **New**.
-3. In the **Bank group** field, select or enter the bank group code.
-4. In the **Branch code** field, enter the branch code.
-5. In the **Bank branches** field, enter the branch name.
-6. Select **Save**.
+1. Select **New**.
+1. In the **Bank group** field, select or enter the bank group code.
+1. In the **Branch code** field, enter the branch code.
+1. In the **Bank branches** field, enter the branch name.
+1. Select **Save**.
 
 ## Create a new check and promissory note journal
 
@@ -578,16 +572,16 @@ Here are the details of the each field in **Create a new document** page;
 You can create company checks and promissory notes by following the steps below; 
 
 1. Go to **Cash and bank management > Inquiries and reports > Check and promissory note operations > Check and promissory note definitions**.
-2. Select **New**.
-3. Select **Create promissory note** or **Create check** options that you need.
-4. In the **Create a new document** page;
-5. Select the portfolio code to which the check or promissory note will be assigned in the **Portfolio code** parameter.
-6. Select the bank group to which the check or promissory note belongs in the **Bank groups** parameter.
-7. Select the bank branch that will be associated with the collection of checks.
-8. Define the **Starting number** as "1" and **Number of digits** as "3", resulting in check numbers like CHC-001, CHC-002, CHC-003 etc.
-9. Type a printing number such as "CHC-", in the **Check printing number** field.
-10. Type the number of unit to be created as "3".
-11. Select **OK** to create.
+1. Select **New**.
+1. Select **Create promissory note** or **Create check** options that you need.
+1. In the **Create a new document** page;
+1. Select the portfolio code to which the check or promissory note will be assigned in the **Portfolio code** parameter.
+1. Select the bank group to which the check or promissory note belongs in the **Bank groups** parameter.
+1. Select the bank branch that will be associated with the collection of checks.
+1. Define the **Starting number** as "1" and **Number of digits** as "3", resulting in check numbers like CHC-001, CHC-002, CHC-003 etc.
+1. Type a printing number such as "CHC-", in the **Check printing number** field.
+1. Type the number of unit to be created as "3".
+1. Select **OK** to create.
 
 These checks or promissory notes will now be listed in the **Check and promissory note definitions** page, ready for transaction use in the **Check and promissory note journal**.
 
@@ -599,11 +593,11 @@ This function is used when a previously registered check or promissory note need
 When you want to update the check or promissory note **Check or promissory note update**; 
 
 1. Select check or promissory note that you want to update in the list.
-2. Select **Check or promissory update**.
-3. Update the portfolio code in Portfolio code parameter if it is needed.
-4. Enter or update the amount of the check or promissory note in **Amount** field.
-5. Enter or update the due date in **Due date** field.
-6. Select **Update**. 
+1. Select **Check or promissory update**.
+1. Update the portfolio code in Portfolio code parameter if it is needed.
+1. Enter or update the amount of the check or promissory note in **Amount** field.
+1. Enter or update the due date in **Due date** field.
+1. Select **Update**. 
 
 > [!NOTE]
 > To use the generated company checks or promissory notes in the **Check and promissory note journal**, you must enter the **Amount** using the **Check and promissory note update** function.
@@ -702,18 +696,18 @@ Here are the details of the parameters in **Check and promissory note rediscount
 
 To create a rediscount calculation, follow the steps below; 
 
-  1. Go to **Cash and bank management > Inquiries and reports > Check and promissory note operations > Check and promissory note rediscount calculation**.
-  2. Define the interest rate for the relevant period in **Interest rates** page and select **Save** and close the page.
-  3. Select **New**.
-  4. Type a **Version ID** manually.
-  5. In the **Current reference date** parameter, enter or select a date.
-  6. In the **Next reference date** parameter, enter or select a date.
-  7. Select or update the exchange rate type in the **Exchange rate type** parameter if it is needed.
-  8. Select an option for calculation in **Detail level** parameter.
-  9. Select a journal name for posting the calculation results in the **Journal name** parameter.
-  10. Select **Save**.
-  11. Select **Calculate** to calculate the rediscount amounts.
-  12. Select **Post**. 
+1. Go to **Cash and bank management > Inquiries and reports > Check and promissory note operations > Check and promissory note rediscount calculation**.
+1. Define the interest rate for the relevant period in **Interest rates** page and select **Save** and close the page.
+1. Select **New**.
+1. Type a **Version ID** manually.
+1. In the **Current reference date** parameter, enter or select a date.
+1. In the **Next reference date** parameter, enter or select a date.
+1. Select or update the exchange rate type in the **Exchange rate type** parameter if it is needed.
+1. Select an option for calculation in **Detail level** parameter.
+1. Select a journal name for posting the calculation results in the **Journal name** parameter.
+1. Select **Save**.
+1. Select **Calculate** to calculate the rediscount amounts.
+1. Select **Post**. 
 
 After posting process, you can see the journals in **Journals** group in **Postings** FastTab.
 If you want to reverse the rediscount journals, select **Reverse** in ActionPane. You can see the reversal journal in **Reversal journals** group in **Postings** FastTab.
