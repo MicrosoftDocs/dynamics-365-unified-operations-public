@@ -2,7 +2,7 @@
 title: Azure Maps module (preview)
 description: Learn how to configure the Azure Maps module in Microsoft Dynamics 365 Commerce.
 author: giripriya-v
-ms.date: 07/29/2025
+ms.date: 09/02/2025
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.search.region: Global
