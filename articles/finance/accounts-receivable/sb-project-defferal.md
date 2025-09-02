@@ -52,7 +52,7 @@ When an inventory closing or recalculation process is triggered, the system comp
  - Updates the **Inventory cost adjustment** field in the COGS deferral schedule to reflect any change in the original inventory cost.
  - Executes the update asynchronously.
 
-These adjustments ensure that any cost changes, even those made after the original posting, are accurately reflected in deferred COGS recognition.
+These adjustments ensure that any cost changes, even those changes that are made after the original posting, are accurately reflected in deferred COGS recognition.
 
 
 ### Example
@@ -67,14 +67,14 @@ After inventory closing or physical inventory adjustment is recalculated:
 
 
 ### Audit trail update
-An additional line in the **Audit trail** is added to capture the inventory adjustment amount. 
+A new line in the **Audit trail** is added to capture the inventory adjustment amount. 
 
 #### Project posted transaction updates
 To review the changes in posted transactions, follow these steps:
 1. Go to **Project** > **Posted transactions**.
-2. Select **View** > **View transaction**.
-3. Go to the **Cost** section, verify that the **Deferral cost schedule number** is linked.
-If inventory adjustments or closings take place, an additional transaction line is added to reflect the updated cost. Importantly, no new deferral schedule is created and the original schedule is updated with the adjusted values.
+1. Select **View** > **View transaction**.
+1. Go to the **Cost** section and verify that the **Deferral cost schedule number** is linked.
+If inventory adjustments or closings take place, a new transaction line is added to reflect the updated cost. Importantly, no new deferral schedule is created and the original schedule is updated with the adjusted values.
 
 
 
