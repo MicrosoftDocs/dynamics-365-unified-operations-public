@@ -3,12 +3,12 @@ title: Inventory Visibility public APIs
 description: Learn about the public APIs that are provided by Inventory Visibility, including an outline and step-by-step process for authentication.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: how-to
-ms.date: 06/03/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
-ms.search.form: 
+ms.search.form:
+ms.topic: how-to
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Inventory Visibility public APIs

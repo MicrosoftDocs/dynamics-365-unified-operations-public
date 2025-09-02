@@ -430,6 +430,8 @@
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
             - name: Create a free text invoice template
               href: accounts-receivable/create-free-text-invoice-template-new.md
+            - name: Track sales order and free text invoice history
+              href: accounts-receivable/cust-inv-log-frame.md
             - name: Add a company logo to a report
               href: accounts-receivable/remove-logo-cust-stmt.md
             - name: Correct a free text invoice
@@ -530,9 +532,11 @@
                       href: accounts-receivable/sb-project-defferal.md
                     - name: Migrate revenue recognition data to revenue and expense deferrals                    
                       href: accounts-receivable/sb-RevRecSubBillMigration.md
+                    - name: Backfill deferral schedule line fields
+                      href: accounts-receivable/sb-data-main-back-fill.md
                     - name: Deferral posting method
                       href: accounts-receivable/Deferral-posting-methods.md
-                    - name: Subscription billing defferal COGS (preview)
+                    - name: Subscription billing deferal COGS (preview)
                       href: accounts-receivable/sb-defferal-cogs.md
                     - name: Create deferral schedules
                       href: accounts-receivable/sb-deferrals-schedules.md
@@ -924,6 +928,8 @@
               href: fixed-assets/tasks/transfer-fixed-asset.md
             - name: Split a fixed asset
               href: fixed-assets/tasks/split-fixed-asset.md
+            - name: Split and transfer a fixed asset (preview)
+              href: fixed-assets/split-transfer-fa.md
             - name: Reduce balance depreciation after a split
               href: fixed-assets/reduce-balance-depreciation-after-split.md
             - name: Set up fixed asset groups
@@ -2378,6 +2384,8 @@
                       href: localizations/iberoamerica/ltm-Colombia-sales-vat-book.md
                     - name: Configure Colombian purchase VAT book printing
                       href: localizations/iberoamerica/ltm-Colombia-purchase-vat-book.md
+                    - name: Configure electronic invoice parameters for Colombia
+                      href: localizations/iberoamerica/ltm-colombia-configure-electronic-invoice.md
                     - name: Format 1001 file for Colombia issue configuration
                       href: localizations/iberoamerica/ltm-Colombia-format-1001.md
                     - name: Format 1003 file for Colombia configuration
@@ -4380,6 +4388,8 @@
                       href: localizations/iberoamerica/ltm-configure-invoices-uruguay.md
                     - name: Create customer and vendor records with an address in Uruguay
                       href: localizations/iberoamerica/ltm-create-customer-vendor-uruguay.md
+                    - name: Get started with Electronic invoicing for Uruguay
+                      href: localizations/iberoamerica/ltm-uruguay-electronic-invoice-configuration.md
                     - name: Set up a legal entity and tax information for Uruguay
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay.md
                 - name: Venezuela
@@ -4567,6 +4577,8 @@
           items:
             - name: Business performance analytics
               href: business-performance-analytics/business-performance-analytics-home-page.md
+            - name: Business performance analytics release notes
+              href:  business-performance-analytics/bpa-release-notes.md
             - name: Setup and administration
               items: 
                 - name: Configure business performance analytics
@@ -4641,6 +4653,10 @@
                   href: business-performance-planning/calculated-columns.md
                 - name: Load data using dataflows
                   href: business-performance-planning/load-data-dataflows.md
+                - name: Audit cubes
+                  items:
+                   - name: Audit cubes
+                     href: business-performance-planning/cube-audit.md
             - name: Power BI Visuals
               items:
                 - name: Overview

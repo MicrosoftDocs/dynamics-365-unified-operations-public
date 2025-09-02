@@ -7,7 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 8/06/2025
+ms.date: 8/20/2025
 ---
 
 # Uninstall Business performance analytics
@@ -16,8 +16,11 @@ Two options are available for uninstalling Business performance analytics: code-
 
 If you must reinstall Business performance analytics after you uninstall it, wait four hours before reinstallation.
 
-> [!NOTE]
-> If you uninstall and then reinstall Business performance analytics, no new reports that were created are saved.
+If you uninstall and then reinstall Business performance analytics, custom reports can be saved in the following ways:
+1. **Custom reports in the default solution** – When Business performance analytics is reinstalled, reports owned by the Business performance analytics app in the default solution are restored.   
+2. **Reports protected by the `msdyn_bpaconfig` solution** – As long as the `msdyn_bpaconfig` solution isn't uninstalled, Business performance analytics can recover custom reports from it. This safeguard was introduced to help protect against reports being deleted by an admin or other processes with elevated access.  
+3. **Manually saving custom reports** – You can export and re-import your custom reports. For more information, see [Preserve and manage custom reports](./custom-reports.md).  
+ 
 
 ## Option 1: Code-based uninstallation
 
@@ -132,3 +135,10 @@ To delete each of the preceding solutions, follow these steps.
 4. Wait for the **Deleting** message box to disappear.
 
 Deletion of all the solution requires approximately 20 minutes. If the operation is successful, you receive the following message: "Successfully deleted solution."
+
+### Data cleanup after uninstall
+
+When Business performance analytics is uninstalled, certain analytical components, such as report backups, transformation job flows, managed lake configurations, and metadata, may remain in the customer’s storage. These residual elements aren't automatically deleted and can persist unless explicitly removed. To help maintain a clean and efficient environment, the **Admin** page provides an option to agree to a post uninstall cleanup. This ensures that no Business performance analytics related data is left on disk, prevents unnecessary storage consumption, and supports compliance with data hygiene standards. Cleanup may include removing folders like msdyn_BpaConfigs, backup directories, and other Business performance analytics managed artifacts that aren't needed.
+
+
+

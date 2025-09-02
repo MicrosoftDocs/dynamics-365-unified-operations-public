@@ -29,7 +29,7 @@ This article explains how to mass deploy the Warehouse Management mobile app wit
 To use an MDM solution to deploy the Warehouse Management mobile app and the related authentication certificates, you must have the following resources available:
 
 - Warehouse Management mobile app version 2.0.41.0 or later (This version number applies to all mobile platforms.)
-- A valid store account for each mobile platform that you'll support ([Microsoft account](https://account.microsoft.com/account/), [Google Account](https://www.google.com/account/about/), and/or [Apple ID](https://appleid.apple.com/sign-in))
+- A valid store account for each mobile platform that you'll support ([Microsoft account](https://account.microsoft.com/account/), [Google Account](https://www.google.com/account/about/), and/or [Apple Account](https://account.apple.com/sign-in))
 - [Microsoft Entra ID](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Overview) (Microsoft Entra ID Premium P2 license)
 - [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home) (the Intune website)
 - [Certificate Connector for Microsoft Intune](/mem/intune/protect/certificate-connector-overview) installed on a dedicated Windows PC

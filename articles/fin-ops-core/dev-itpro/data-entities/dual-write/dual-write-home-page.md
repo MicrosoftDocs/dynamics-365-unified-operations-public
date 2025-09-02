@@ -4,7 +4,7 @@ description: Access various links to information about dual-write, including res
 author: sericks007
 ms.author: ramasri
 ms.topic: article
-ms.date: 02/21/2023
+ms.date: 08/19/2023
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer
@@ -28,6 +28,7 @@ These topics describe dual-write integration.
 
 + [What's new or changed in dual-write](whats-new-dual-write.md)
 
++ [Migrate the dual-write app to strengthen communication from finance and operations to Dataverse ](/power-platform/admin/app-migration-dual-write)
 
 ## Dual-write setup
 
