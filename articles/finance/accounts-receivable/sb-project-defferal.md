@@ -55,8 +55,8 @@ These adjustments ensure that any cost changes, even those made after the origin
 
 ### Example
 If a sales order is created from a project for a stocked item, when the sales order is posted, the following are created: 
- - A revenue deferral schedule with **Recognition type** of **Credit**.
- - A consumption deferral schedule (COGS) with **Recognition type** of **Debit**.
+ - A revenue deferral schedule with **Recognition type** of **Credit**
+ - A consumption deferral schedule (COGS) with **Recognition type** of **Debit**
 
 After inventory closing or physical inventory adjustment is recalculated:
  - The deferred COGS is automatically recalculated.
