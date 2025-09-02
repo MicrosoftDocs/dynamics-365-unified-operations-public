@@ -4,7 +4,7 @@ description: Learn about forecast models, which let you arrange and configure st
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 11/29/2024
+ms.date: 07/30/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -59,8 +59,6 @@ This section describes the purpose of each type of forecast step. It also explai
 
 *Input* steps represent a time series that provides input to the forecast model. All forecast models must start with an *Input* step.
 
-#### Settings for Input steps
-
 *Input* steps have the following settings:
 
 - **Step name** – The specific name of the step. This name automatically matches the name of the time series.
@@ -79,8 +77,6 @@ This section describes the purpose of each type of forecast step. It also explai
 *Signal* steps represent additional time series that can be combined with the primary time series that the *Input* step provides. For example, the primary input that the *Input* step provides might represent historical sales. A *Signal* step might then provide input that represents inflation or weather data.
 
 When you add a *Signal* step, the system automatically creates a parallel branch in your model and puts the step at the top of that branch. The initial branch always has an *Input* step at the top of it. Each branch can include any number of steps, but you must eventually combine the branches by using a *Forecast with signals* step.
-
-#### Settings for Signal steps
 
 *Signal* steps have the following settings:
 
@@ -111,7 +107,7 @@ When you add a *Signal* step, the system automatically creates a parallel branch
 
 - **Interquartile range multiplier** – This field is available only when the **Handle outliers** field is set to *IQR*. It affects the number of data points that are removed as outliers. Learn more about this setting in the [How the handle outliers options work](#handle-outlier-options) section.
 - **Correction methods** – This field is available only when the **Handle outliers** field is set to *IQR*. It affects how outliers are replaced in the data after they are removed. The available options are *Median smoothing* and *Mean smoothing*.
-- **Seasonality hint** – This field is available only when the **Handle outliers** field is set to *STL*. It influences the size of the window that is used for locally estimated scatterplot smoothing (LOESS) when the seasonal component is estimated. Learn more about this setting in the [Seasonality in forecasts](#seasonality) section.
+- **Select seasonality detection setting** – This field is available only when the **Handle outliers** field is set to *STL*. It influences the size of the window that is used for locally estimated scatterplot smoothing (LOESS) when the seasonal component is estimated. Learn more about this setting in the [Seasonality in forecasts](#seasonality) section.
 
 #### How to choose the method for handling outliers
 
@@ -167,13 +163,11 @@ After STL calculates the mean and standard deviation, it uses them to eliminate 
 
 Finally, STL reintroduces the seasonality and trend to the newly smoothed residual.
 
-When you use the STL method to handle outliers, you must also set a **Seasonality hint** value. This value influences the size of the period (in time buckets) that is used when the seasonality component is estimated. It helps divide the data into segments to ensure that the algorithm correctly extracts repeating patterns. For example, if you notice a weekly seasonality pattern where most customers shop on Saturdays, and you're using buckets in days, enter *7* as the **Seasonality hint** value. Learn more about seasonality and seasonality hints in the [Seasonality in forecasts](#seasonality) section.
+When you use the STL method to handle outliers, you must also set the **Select seasonality detection setting** option. This setting influences the size of the period (in time buckets) that is used when the seasonality component is estimated. It helps divide the data into segments to ensure that the algorithm correctly extracts repeating patterns. Learn more in [Seasonality in forecasts](#seasonality).
 
 ### Forecast steps
 
 *Forecast* steps apply a selected forecast algorithm to the input time series to create a forecast time series.
-
-#### Settings for Forecast steps
 
 *Forecast* steps have the following settings:
 
@@ -187,18 +181,19 @@ When you use the STL method to handle outliers, you must also set a **Seasonalit
     - *ETS* (error, trend, seasonality)
     - *Prophet*
 
-- **Seasonality hint (in periods of time buckets)** – Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule. If your data has such a pattern, enter the frequency (in time buckets). For example, if you notice a weekly seasonality pattern where most customers shop on Saturdays, and you're using buckets in days, enter *7* here. Learn more about seasonality and seasonality hints in the [Seasonality in forecasts](#seasonality) section.
+- **Select seasonality detection setting** – Choose how the forecast should identify seasonality patterns. Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule. Learn more about seasonality, seasonality auto detection, and seasonality hints in the [Seasonality in forecasts](#seasonality) section.
+- **Time freeze rules** – Search for and select the time freeze rules (if any) that should apply to the current step. You can add multiple time freeze rules if needed. Learn more in [Limit automatic time series updates with time freezes](time-freeze.md)
 
-### Forecast with signals (preview)
+### Forecast with signals steps (preview)
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
 *Forecast with signals* steps generate a forecast based on two input time series. They always use the XGBoost demand forecasting algorithm. Learn about this algorithm in [Demand forecasting algorithms](forecast-algorithm-types.md).
 
-You can use this type of step only if your forecast model has at least two parallel branches: one that starts with an *Input* step and one that starts with a *Signal* step. The first branch is the one where you create the step. To specify the second branch, open the **Action** menu for the *Forecast with signals* step, select **Connect with**, and then select the step to connect to. The flowchart is then updated so that it shows the two branches combining at the *Forecast with signals* step.
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-#### Settings for Forecast with signals steps
+You can use this type of step only if your forecast model has at least two parallel branches: one that starts with an *Input* step and one that starts with a *Signal* step. The first branch is the one where you create the step. To specify the second branch, open the **Action** menu for the *Forecast with signals* step, select **Connect with**, and then select the step to connect to. The flowchart is then updated so that it shows the two branches combining at the *Forecast with signals* step.
 
 *Forecast with signals* steps have the following settings:
 
@@ -206,21 +201,23 @@ You can use this type of step only if your forecast model has at least two paral
 - **Description** – A short description of the step.
 - **Created by** – The user who created the step.
 - **Model type** – Select the forecast algorithm to use. In the current version, only the *XGBoost* algorithm is available.
-- **Seasonality hint (in periods of time buckets)** – Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule. If your data has such a pattern, enter the frequency (in time buckets). For example, if you notice a weekly seasonality pattern where most customers shop on Saturdays, and you're using buckets in days, enter *7* here. Learn more about seasonality and seasonality hints in the [Seasonality in forecasts](#seasonality) section.
+- **Time freeze rules** – Search for and select the time freeze rules (if any) that should apply to the current step. You can add multiple time freeze rules if needed. Learn more in [Limit automatic time series updates with time freezes](time-freeze.md)
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+### Finance and operations steps
 
-### Finance and operations – Azure Machine Learning steps
+You might already be using custom Azure Machine Learning algorithms that you created for use with the legacy Supply Chain Management forecasting functionality, as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md). To use them with Demand planning, you must set up the connection to Azure and then add the forecast calculation to your forecast model using a *Finance and operations* step instead of a *Forecast* step.
 
-You might already be using your own custom Microsoft Azure Machine Learning algorithms for demand forecasting in Dynamics 365 Supply Chain Management, as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md). In this case, you can continue to use those algorithms while you use Demand planning. Just put a *Finance and operations – Azure Machine Learning* step in your forecast model instead of a *Forecast* step.
+Learn how to set up Demand planning to connect to and use your Azure Machine Learning forecast algorithms in [Use your own custom Azure Machine Learning algorithms in Demand planning](custom-azure-machine-learning-algorithms.md).
 
-Learn how to set up Demand planning to connect to and use your Azure Machine Learning algorithms in [Use your own custom Azure Machine Learning algorithms in Demand planning](custom-azure-machine-learning-algorithms.md).
+### Custom steps
+
+It's possible for you to design your your own custom Microsoft Azure Machine Learning algorithms for demand forecasting, even if you've never used them with Dynamics 365 Supply Chain Management before. To use them with Demand planning, you must set up the connection to Azure and then add the forecast calculation to your forecast model using a *Custom* step instead of a *Forecast* step.
+
+Learn how to set up Demand planning to connect to and use your Azure Machine Learning forecast algorithms in [Use your own custom Azure Machine Learning algorithms in Demand planning](custom-azure-machine-learning-algorithms.md).
 
 ### Phase in/out steps
 
 *Phase in/out* steps modify the values of a data column in a time series to simulate the gradual process of phasing in a new element or phasing out an old element. For example, a *Phase in/out* step might simulate the process of phasing in a new product or warehouse. The phase in/out calculation lasts for a specific period and uses values that are drawn from the same time series. (The values come from either the same data column that is being adjusted or another data column that represents a similar element.)
-
-#### Settings for Phase in/out steps
 
 *Phase in/out* steps have the following settings:
 
@@ -248,7 +245,9 @@ The forecast time series is saved according to the settings that you configure e
 
 Seasonality refers to regular and predictable patterns in a time series that occur at fixed intervals because of recurring events or influences. These patterns are often driven by factors such as weather, holidays, or economic cycles. Examples include increased retail sales every December because of holiday shopping or higher electricity demand during summer months because of air conditioning.
 
-Demand planning identifies and compensates for seasonality patterns both when it handles outliers (in a *Handle outliers* step that is set to use STL) and when it generates a forecast (in any forecast step).
+Demand planning identifies and compensates for seasonality patterns both when it handles outliers (in a *Handle outliers* step that is set to use STL) and when it generates a forecast (in any *Forecast* step).
+
+*Forecast with signals* steps (which use the XGBoost algorithm) detect seasonality patterns by analyzing the time series, but they use a different approach than is used by *Forecast* and *Handle outliers* steps and don't provide any related settings.
 
 ### How seasonality differs from cycles
 
@@ -261,9 +260,20 @@ Although both seasonality and cycles involve repeating patterns, there are key d
 | Cause | Calendar-based events or natural patterns | Economic, social, or structural forces |
 | Examples | Summer travel peaks or holiday shopping trends | Economic recession cycles or stock market booms and busts |
 
-### Seasonality hints
+### Autodetect seasonality patterns (preview)
 
-Some forecast and outlier detection algorithms provide a **Seasonality hint** setting. This setting influences the size of the period (in time buckets) that is used in the identification of seasonality patterns. It helps divide the data into segments to ensure that the algorithm correctly extracts repeating patterns. For example, if you notice a weekly seasonality pattern where most customers shop on Saturdays, and you're using buckets in days, enter *7* as the **Seasonality hint** value.
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
+
+Automatic seasonality detection uses an algorithm that finds seasonality patterns for each combination of a location and a product, and applies the result to forecast calculations. Seasonality patterns typically vary for different products and different locations. Therefore, auto detection often works better than applying the same pattern everywhere.
+
+To set a *Forecast* or *Handle outliers* step to use seasonality auto detection, edit the step's settings, and then set **Select seasonality detection setting** to *Auto detection*.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+### Detect seasonality using a hint
+
+The system can detect seasonality by using a *seasonality hint* that you choose. This option works best when you know the seasonality pattern in advance. The **Seasonality hint** setting influences the size of the period (in time buckets) that is used in the identification of seasonality patterns. It helps divide the data into segments to ensure that the algorithm correctly extracts repeating patterns. For example, if you notice a weekly seasonality pattern where most customers shop on Saturdays, and you're using buckets in days, enter *7* as the **Seasonality hint** value.
 
 A well-defined seasonal period captures the true periodicity of the data. It enables the algorithm to successfully isolate the seasonality. As a result, the trend and residuals are more interpretable. By contrast, an incorrect seasonal period leads to poor seasonal extraction. As a result, trend and residual components are inaccurate.
 
@@ -280,17 +290,7 @@ If the seasonal period that you use is too long (that is, longer than the actual
 - **Overfitting** – Noise or random fluctuations might be falsely interpreted as seasonality.
 - **Distorted decomposition** – Artificially long seasonal cycles might obscure the true trend or residual components.
 - **Increased complexity** – The model might become unnecessarily complex and therefore harder to interpret and validate.
--
+
 For example, you use a seasonal period of *24 months* for data that has an annual cycle. The result is overfitting, where small irregularities in the data are treated as seasonal patterns.
 
-### Autodetect seasonality patterns (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until further notice -->
-
-If you're using the ARIMA forecast algorithm, the **Seasonality hint (in periods of time buckets)** setting is replaced by the **Select seasonality detection setting (preview)** setting. This setting provides the following options:
-
-- *Auto detection* – Select this option to enable an algorithm that automatically detects seasonality patterns for each combination of a location and a product, and applies the result to forecast calculations. Seasonality patterns typically vary for different products and different locations. Therefore, auto detection often works better than application of the same pattern everywhere.
-- *Detection using hint* – Select this option to use the value that you enter in the **Seasonality hint (in periods of time buckets)** field to help identify seasonality patterns. This option works best when you know the seasonality pattern in advance. For example, if you know that you have a strong weekly seasonality pattern where most customers shop on Saturdays, and you're using buckets in days, select this option, and then enter *7* in the **Seasonality hint (in periods of time buckets)** field. Learn more about this setting in the previous section.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+To set a *Forecast* or *Handle outliers* step to use a seasonality hint, edit the step's settings, and set **Select seasonality detection setting** to *Detection using hint*. Then, enter the number of time buckets in the **Seasonality hint (in periods of time buckets)** field.

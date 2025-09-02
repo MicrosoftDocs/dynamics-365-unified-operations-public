@@ -4,7 +4,7 @@ description: Learn about Business performance analytics, including an outline of
 author: lizmota
 ms.author: jiwo
 ms.topic: concept-article
-ms.date: 10/30/2024
+ms.date: 08/25/2025
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User

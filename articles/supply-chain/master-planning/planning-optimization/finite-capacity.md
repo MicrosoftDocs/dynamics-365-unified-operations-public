@@ -8,7 +8,7 @@ ms.search.form: ReqParameters, ReqPlanSched, WrkCtrTable
 ms.topic: how-to
 ms.date: 07/21/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Finite capacity planning and scheduling

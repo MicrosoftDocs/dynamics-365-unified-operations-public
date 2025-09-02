@@ -328,5 +328,4 @@ Here are a few suggestions for ways that you can customize and fine-tune this sc
 - [Pack containers for shipment](packing-containers.md)
 - [Document routing label layouts](document-routing-layout-for-license-plates.md)
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

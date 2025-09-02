@@ -1,10 +1,10 @@
 ---
 title: Cash flow forecasting
 description: Learn about the cash flow forecasting process, including outlines on how cash flow forecasting is integrated with other modules in the system.
-author: twheeloc
+author: music727
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/09/2025
+ms.date: 08/21/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 
@@ -41,6 +41,9 @@ Cash flow forecasting can be integrated with General ledger, Accounts payable, A
 - **External data source** - External data that's entered or imported into the cash flow forecasts using spreadsheet templates.
 - **Project forecasts** - Project management and accounting forecasts using forecast model.
 - **Cash flow sales tax authority payments** – Predicted sales tax authority payment amounts and timing that result in financial payments. Enable the feature Cash flow sales tax authority payments.
+
+> [!IMPORTANT] 
+> Cashflow forecast includes posted vendor invoice register entries that aren't associated to the purchase order. If the invoice register is associated to the purchase order, the transaction is included when the invoice approval journal is posted.
 
 ## Configuration
 

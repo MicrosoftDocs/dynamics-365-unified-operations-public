@@ -1,29 +1,30 @@
 ---
 title: Deferrals counting (Russia)
-description: Learn how to do deferrals counting, including a table that defines various tabs and a step-by-step process creating deferrals and post writing-off transactions.
+description: Learn how to do deferrals counting for Russia in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/20/2024
+ms.date: 08/08/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
-ms.search.form: 
-ms.dyn365.ops.version: 10.0.1
 ---
 
 # Deferrals counting (Russia)
 
 [!include [banner](../../includes/banner.md)]
 
-The deferrals functionality supports the process of deferrals counting and lets you print the **Inventory act (INV-11)** report.
+This article explains how to do deferrals counting for Russia in Microsoft Dynamics 365 Finance.
 
-Before you generate the **Inventory act (INV-11)** report, you must create deferrals and post writing-off transactions in the deferrals journal.
+The deferrals functionality supports the process of deferrals counting and lets you print the *Inventory act (INV-11)* report.
 
-1. Go to **General ledger** \> **Periodic tasks** \> **Deferrals** \> **Deferrals counting journal**.
+Before you generate the Inventory act (INV-11) report, you must create deferrals and post writing-off transactions in the deferrals journal.
+
+To prepare and generate the Inventory act (INV-11) report, follow these steps.
+
+1. In Dynamics 365 Finance, go to **General ledger** \> **Periodic tasks** \> **Deferrals** \> **Deferrals counting journal**.
 
     You can use the **Deferrals counting journal** page to create a Deferrals counting journal and print the **Inventory act (INV-11)** report.
 
@@ -66,13 +67,13 @@ Before you generate the **Inventory act (INV-11)** report, you must create defer
     </tr>
     <tr>
     <td>Close</td>
-    <td>Open the <strong>End deferrals counting</strong> dialog box. In the <strong>Counting end date</strong> field, you can then enter the date when you want to close the journal. The date that you specify is shown in the <strong>Counting end date</strong> field on the <strong>Deferrals counting journal</strong> page.
+    <td>Open the <strong>End deferrals counting</strong> dialog. In the <strong>Counting end date</strong> field, you can then enter the date when you want to close the journal. The date that you specify is shown in the <strong>Counting end date</strong> field on the <strong>Deferrals counting journal</strong> page.
     <p><strong>Note:</strong> You can't close the journal if journal lines aren't created.</p>
     </td>
     </tr>
     <tr>
     <td>Print</td>
-    <td>Open the <strong>Deferrals counting</strong> dialog box, where you can print the <strong>Inventory act (INV-11)</strong> report by using the Microsoft Excel template for the selected model number.</td>
+    <td>Open the <strong>Deferrals counting</strong> dialog, where you can print the <strong>Inventory act (INV-11)</strong> report by using the Microsoft Excel template for the selected model number.</td>
     </tr>
     </tbody>
     </table>
@@ -123,7 +124,7 @@ Before you generate the **Inventory act (INV-11)** report, you must create defer
     </tr>
     <tr>
     <td>Closed</td>
-    <td>This check box is automatically selected when the deferral counting is completed and the journal is closed.</td>
+    <td>This checkbox is automatically selected when the deferral counting is completed and the journal is closed.</td>
     </tr>
     <tr>
     <td>Position</td>
@@ -152,7 +153,7 @@ Before you generate the **Inventory act (INV-11)** report, you must create defer
     4. In the **Resolution date** field, select the resolution date for the counting journal.
     5. In the **Counting start date** field, select the start date of the deferrals counting period. By default, this field is set to the current date.
 
-        The **Counting end date** field is set to the end date that was set for the deferrals counting period in the **End deferrals counting** dialog box.
+        The **Counting end date** field is set to the end date that was set for the deferrals counting period in the **End deferrals counting** dialog.
 
     6. Select the **Officials** tab to set up the names, positions, and titles of the officials.
     7. In the **Position** field, select the position title of the official.
@@ -198,14 +199,14 @@ Before you generate the **Inventory act (INV-11)** report, you must create defer
 
 5. To print the **Inventory act (INV-11)** report, follow these steps:
 
-    1. On the Action Pane, select **Close** to open the **End deferrals counting** dialog box.
+    1. On the Action Pane, select **Close** to open the **End deferrals counting** dialog.
     2. In the **Counting end date** field, enter the date when you want to close the journal.
 
         > [!NOTE]
         > The date that you specify is shown in the **Counting end date** field on the **Deferrals counting journal** page.
 
     3. Select **OK** to close the journal.
-    4. On the Action Pane, select **Print** to open the **Deferrals counting** dialog box.
+    4. On the Action Pane, select **Print** to open the **Deferrals counting** dialog.
     5. In the **Model number** field, select the deferral model number.
     6. Select **OK** to print the **Inventory act (INV-11)** by using the Excel template for the selected model number.
 

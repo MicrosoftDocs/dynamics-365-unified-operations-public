@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 04/25/2025
+ms.date: 06/17/2025
 ms.update-cycle: 180-days
 audience: Application User
 ms.search.region: Global
@@ -66,6 +66,7 @@ The following Copilot features are currently available in finance and operations
     - [Review and accept changes to confirmed purchase orders](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md)
     - [Workload insights with Copilot in the Warehouse Management mobile app](../../../supply-chain/warehousing/warehouse-management-mobile-app-insights.md)
     - [Supplier Communications Agent overview (production ready preview)](../../../supply-chain/procurement/supplier-com-agent-overview.md)
+    - [Generative insights for Demand planning (production ready preview)](../../../supply-chain/demand-planning/generative-insights.md)
 
 ## Responsible AI
 

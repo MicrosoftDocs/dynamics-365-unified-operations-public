@@ -1,8 +1,8 @@
 ---
 title: Goods-in-transit processing and receiving
 description: When an order or voyage is set up to use goods-in-transit processing, goods can be invoiced before they have been received in the warehouse for consumption.
-author: lisascholz91
-ms.author: lisascholz
+author: prasungoel 
+ms.author: prasungoel 
 ms.reviewer: kamaybac
 ms.search.form: DeliveryTerms, InventLocation, InventPosting, ITMGoodsInTransitOrder, ITMTableListPage, ITMTable, ITMContainersListPage, ITMContainers, ITMFolioTableListPage, ITMFolioTable, ITMGoodsInTransitOrderEditLines, SysOperationTemplateForm, WHSRFMenuItem, WHSLocDirTable, WHSWorkTemplateTable
 ms.topic: how-to

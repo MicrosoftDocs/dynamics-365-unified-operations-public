@@ -18,11 +18,12 @@ ms.dyn365.ops.version: 10.0.24
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article explains how to set up and use the project subscription billing deferral cost of goods sold (COGS) adjustment feature in Microsoft Dynamics 365 Finance. 
+This article explains how to set up and use the **Project subscription billing deferral cost of goods sold (COGS) adjustment (preview)** feature in Microsoft Dynamics 365 Finance. 
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
+
 Before using the project subscription billing deferral COGS adjustment feature, ensure your environment is updated to Microsoft Dynamics 365 Finance version 10.0.45 or later. This feature is currently available in preview and must be manually enabled using **Feature management**. For the feature to be enabled, the **Subscription billing deferral COGS adjustment** feature must also be enabled in Finance. If not, the project-specific version can't be activated. 
 
 ## Enable project subscription billing deferral COGS adjustment
@@ -50,6 +51,7 @@ When an inventory closing or recalculation process is triggered, the system comp
  - Identifies impacted consumption deferral schedules.
  - Updates the **Inventory cost adjustment** field in the COGS deferral schedule to reflect any change in the original inventory cost.
  - Executes the update asynchronously.
+
 These adjustments ensure that any cost changes, even those made after the original posting, are accurately reflected in deferred COGS recognition.
 
 
@@ -63,13 +65,15 @@ After inventory closing or physical inventory adjustment is recalculated:
  - The deferral schedule is updated with an **Inventory cost adjustment** amount in a consumption deferral schedule (COGS).
  - No new deferral schedule is created and the existing one is updated with the revised cost value.
 
+
 ### Audit trail update
 An additional line in the **Audit trail** is added to capture the inventory adjustment amount. 
 
 #### Project posted transaction updates
 To review the changes in posted transactions, follow these steps:
-1. Go to **Project** > **Posted transactions**, select **View** > **View transaction**.
-2. Ensure that deferral schedules are enabled. Go to the **Cost** section, verify that the **Deferral cost schedule number** is linked.
+1. Go to **Project** > **Posted transactions**.
+2. Select **View** > **View transaction**.
+3. Go to the **Cost** section, verify that the **Deferral cost schedule number** is linked.
 If inventory adjustments or closings take place, an additional transaction line is added to reflect the updated cost. Importantly, no new deferral schedule is created and the original schedule is updated with the adjusted values.
 
 

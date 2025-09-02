@@ -3,11 +3,14 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.45 (Se
 description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.45 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
-ms.topic: conceptual
-ms.date: 07/28/2025
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: whats-new
+ms.date: 08/05/2025
+ms.update-cycle: 1095-days
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.45 (September  2025)
@@ -27,7 +30,7 @@ The following table lists the features that are included in this release. We mig
 | Module or feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Inventory and warehouse management | [Enable quality control with acceptance sampling](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-quality-control-acceptance-sampling) | [Acceptance sampling (preview)](../inventory/quality-acceptance-sampling.md) | Feature management:<br>*(Preview) Acceptance sampling* |
-| Master planning | [Implement lean manufacturing, catch weight, and step consumption](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/implement-lean-manufacturing-catch-weight-step-consumption-planning-optimization) | [Master planning home page](../master-planning/master-planning-home-page.md) | Feature management:<br>*(Preview) Lean manufacturing for Planning Optimization* |
+| Master planning | [Lean manufacturing for Planning Optimization](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/implement-lean-manufacturing-catch-weight-step-consumption-planning-optimization) | [Lean manufacturing for Planning Optimization](../master-planning/lean-for-planning-optimization.md) | Feature management:<br>*(Preview) Lean manufacturing for Planning Optimization* |
 | Message processor | Clean up processed and canceled message processor messages | [Clean up processed and canceled message processor messages](../message-processor/message-processor-cleanup.md) | Enabled by default. |
 | Production control | Generate license plates and print labels for MES integration | [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md) | Enabled by default you have [set up MES integration](../production-control/mes-integration.md). |
 | Sales and marketing | Use external item identifiers to add products to orders | [Use external item identifiers to add products to orders](../sales-marketing/external-item-product-search-lookup.md) | Feature management:<br>*Enable lookup based search for Sales External Item Identifier field* |

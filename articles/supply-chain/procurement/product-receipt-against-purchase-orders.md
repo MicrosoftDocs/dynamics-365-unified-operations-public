@@ -8,7 +8,7 @@ ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, Vend
 ms.topic: how-to
 ms.date: 07/21/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Product receipt against purchase orders

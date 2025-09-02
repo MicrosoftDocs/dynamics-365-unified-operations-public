@@ -4,7 +4,7 @@ description: Access a list of the help topics and other resources for the financ
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 11/05/2024
+ms.date: 08/25/2025
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -30,15 +30,16 @@ Select a feature area to learn more about it.
         - [Accounts payable](accounts-payable/accounts-payable.md) 
         - [Accounts receivable](accounts-receivable/accounts-receivable.md)
         - [Asset leasing](asset-leasing/asset-leasing-homepage.md)
+        - [Business performance analytics](business-performance-analytics/business-performance-analytics-home-page.md)
+        - [Business performance planning](business-performance-planning/business-performance-planning-overview.md)
         - [Budgeting](budgeting/budgeting-overview.md) 
-        - [Cash and bank management](cash-bank-management/cash-bank-management.md)
-        - [Cost accounting](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
+        - [Cash and bank management](cash-bank-management/cash-bank-management.md)
+        - [Cost accounting](cost-accounting/cost-accounting-home-page.md)
         - [Financial reporting](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Fixed assets](fixed-assets/fixed-assets.md)
         - [Finance insights](finance-insights/finance-insights-home-page.md)
-        - [General ledger and Financial reporting](general-ledger/general-ledger.md) 
         - [Public sector](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::

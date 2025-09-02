@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Configuration in the HR Recruiting app (preview)
+title: Configuration in the HR Recruiting app 
 description: This article explains how to configure the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/01/2024
+ms.date: 08/11/2025
 ms.topic: article
 # optional metadata
 
@@ -23,13 +23,10 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Configuration in the HR Recruiting app (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Configuration in the HR Recruiting app 
 
 This article explains how to configure the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Set up an email account
 
@@ -48,10 +45,9 @@ To enable users and email accounts to receive and send messages, follow these st
 1. Select **Mailboxes**. You can ignore the pop-up message about approving the email.
 1. Select **All mailboxes**.
 1. Search for the user or email account, and select it.
-1. Select **Approve email**. 
+1. Select **Approve email**.
 1. Select **Test and enable mailbox**.
 1. Confirm that the incoming and outgoing email status is **Success**.
-
     If the status isn't **Success** after you refresh the page, go to **Name** \> **Common** \> **Alerts** to find the error message.
 
 1. The user that you assigned must follow these steps to allow other users to send email on their behalf:
@@ -67,7 +63,7 @@ To update the settings in the Recruiting add-on, follow these steps.
 1. Sign in to Recruiting add-on app as the recruiting administrator.
 1. Go to **Configurations** \> **Email account configurations**.
 1. Add the user account that the mailbox is enabled for.
-1. Add email accounts for **Category – application**, **Prospect**, and **Rejection**.
+1. Add email accounts for **Category – Application**, **Prospect**, **Rejection**, and **Profile creation**.
 
 ## Customize the email account by creating a new category
 
@@ -143,13 +139,13 @@ After you save the hiring template, a section for stages and steps becomes avail
 ### Add a stage
 
 1. In the stage and step section, select **New**.
-1. In the dialog box, enable the **Is stage** option.
 1. Enter a name for the stage.
 1. Select **Save** and then **Close**.
 
 ### Add steps
 
 1. In the stage and step section, select **New**.
+1. In the dialog box, disable the **Is stage** option.
 1. In the dialog box, enter a name for the step.
 1. Select the stage that you want to create the step under.
 1. Select **Save** and then **Close**.
@@ -170,6 +166,7 @@ To create a screening template, follow these steps:
 1. Click **+ New** and a sidebar pops up.
 2. Enter your question.
 3. Select the **Answer type**:
- - For **Yes/No**, **Single-select**, or **Numeric answer** types, select **Qualifying** checkbox to require a preferred answer for the question.
- - If the candidate gives the preferred answer, they pass the screening; if not, they fail.
- - There can be more than one qualifying question.
+ - For **Yes/No**, **Single-select**, or **Numeric answer** types, select the **Qualifying** checkbox to require a preferred answer for the question.
+ - **Answer required** is selected by default.
+         - If the candidate gives the preferred answer, they pass the screening; if not, they fail.
+         - There can be more than one qualifying question.

@@ -1837,6 +1837,8 @@
           href: master-planning/not-enough-capacity-error-resolution.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
+        - name: Lean manufacturing for Planning Optimization (preview)
+          href: master-planning/lean-for-planning-optimization.md
         - name: Unified developer experience for planning optimization (preview)
           href: supply-chain-dev/planning-optimization-dev.md
         - name: Planning Optimization extensibility
@@ -2057,6 +2059,8 @@
           href: demand-planning/demand-planning-licensing.md
         - name: Install and enable Demand planning
           href: demand-planning/install-demand-planning.md
+        - name: Clean up staging data
+          href: demand-planning/clean-up-staging-data.md
         - name: Security roles and row-level security
           href: demand-planning/users-access.md
         - name: Convert a Demand planning environment from sandbox to production
@@ -2087,18 +2091,26 @@
           href: demand-planning/forecasts-with-signals.md
         - name: Use your own custom Azure Machine Learning algorithms in Demand planning
           href: demand-planning/custom-azure-machine-learning-algorithms.md
+        - name: Rolling forecasts
+          href: demand-planning/rolling-forecasts.md
       - name: Use phase in/out functionality to simulate planned changes
         href: demand-planning/phase-in-out.md
-      - name: Time series, worksheets, and planning data
-        href: demand-planning/time-series.md
-      - name: Limit time series edits with time fences
-        href: demand-planning/time-fences.md
-      - name: Analyze demand plans with Copilot
-        href: demand-planning/demand-planning-copilot.md
+      - name: Time series
+        items:
+        - name: Time series, worksheets, and planning data
+          href: demand-planning/time-series.md
+        - name: Copilot grid cursor
+          href: demand-planning/copilot-grid-cursor.md
+        - name: Generative insights for Demand planning (production ready preview)
+          href: demand-planning/generative-insights.md
+        - name: Analyze demand plans with Copilot
+          href: demand-planning/demand-planning-copilot.md
+        - name: Limit manual time series edits with time fences
+          href: demand-planning/time-fences.md
+        - name: Limit automatic time series updates with time freezes
+          href: demand-planning/time-freeze.md
       - name: Export and download data
         href: demand-planning/export-data.md
-      - name: Rolling forecasts
-        href: demand-planning/rolling-forecasts.md
     - name: Office integration
       items:
       - name: Office integration overview
@@ -3706,7 +3718,7 @@
         - name: Cross-dock products from receiving warehouse to stores
           href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
         - name: Set up a location directive for purchase order putaway
-          href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+          href: warehousing/tasks/set-up-location-directive-purchase-order-put-away.md
         - name: Set up a work template for purchase orders
           href: warehousing/tasks/set-up-work-template-purchase-orders.md
         - name: Location product dimension mixing
@@ -4213,8 +4225,10 @@
         href: faq-confirmed-po-changes.md
       - name: Responsible AI FAQ for Workload insights with Copilot
         href: faq-wma-copilot.md
-      - name: Responsible AI for the Supplier Communications Agent (production ready preview)
+      - name: Responsible AI FAQ for the Supplier Communications Agent (production ready preview)
         href: faq-supplier-communications-agent.md
+      - name: Responsible AI FAQ for Generative insights for Demand planning (production ready preview)
+        href: faq-demand-planning-generative-insights.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

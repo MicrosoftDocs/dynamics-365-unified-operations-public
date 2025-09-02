@@ -1,8 +1,8 @@
 ---
 title: Restrict to sales unit
 description: Learn about the Restrict to sales unit functionality for products.
-ms.author: atapiabailon
-author: Atapiabailon
+author: Mirzaab
+ms.author: mirzaab
 ms.date: 02/20/2025
 ms.topic: how-to
 ms.reviewer: kamaybac
@@ -45,4 +45,3 @@ When the sales order is released to the warehouse, the outcome depends on the re
 > There is an exception to the expected behavior of the *Restrict to sales unit* functionality. If the *Automatic release of sales orders* functionality is enabled, and the **Quantity to release** option is set to *All*, the *Restrict to sales unit* functionality is ignored.
 >
 > Learn more about the *Automatic release of sales orders* functionality in [Automatic release to the warehouse](release-to-warehouse-process.md#automatic-release-to-the-warehouse).
-
