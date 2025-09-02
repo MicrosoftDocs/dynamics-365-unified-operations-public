@@ -1,12 +1,9 @@
 ---
-# required metadata
-
 title: Commerce chat module proactive chat parameters
 description: This article describes the proactive chat parameters of Commerce chat modules in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 07/26/2024
+ms.date: 09/02/2025
 ms.topic: how-to
-audience: IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
