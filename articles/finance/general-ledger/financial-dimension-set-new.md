@@ -1,8 +1,8 @@
 ---
 title: New financial dimension sets
 description: Learn about the updated functionality for financial dimension sets, including outlines on viewing balance statuses, enable balances, and deleting dimension sets.
-author: rcarlson
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 04/14/2025
 ms.reviewer: twheeloc
@@ -24,7 +24,7 @@ This feature enables the **Trial balance inquiry** page and reports that use fin
 >[!IMPORTANT]
 > We recommend that you review all customizations that might require the previous balance data and test the feature in an UAT environment before enabling the feature in your PROD environment.
 >
-> After the feature is enabled in PROD, the prior balance data is immediately queued for deletion to reduce storage costs. This change can't be undone once started, and must be allowed to fully complete before reverting from the enhancement feature if needed.
+> After the feature is enabled in PROD, the prior balance data is immediately queued for deletion to reduce storage costs. This change can't be undone once started, and must be allowed to fully complete before reverting back from the enhancement feature if needed.
 
 ## View balance status
 
@@ -56,7 +56,7 @@ After the feature is on you notice small changes to the trial balance page and r
 The below table describes the old data model and the new data model used for this feature. The outcome is less data to store resulting in faster performance for some queries such as ones used for the trial balance inquiry page. 
 
 > [!IMPORTANT]
-> Any customizations dependent on the old data model won't work as soon as the performance feature is enabled. Testing in UAT first is highly recommended, as it's not possible to switch between the new and old models efficiently.
+> Any customizations that are dependent on the old data model won't work as soon as the performance feature is enabled. Testing in an UAT environment first is highly recommended. It's not possible to switch between the new and old models efficiently.
 
 
 | New Table | Old Table | Description |
@@ -70,4 +70,5 @@ The below table describes the old data model and the new data model used for thi
 For more information, see [Financial dimensions](financial-dimensions.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
 
