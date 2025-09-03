@@ -43,7 +43,6 @@ Version 4.0.9.0 adds the following fixes and improvements:
 - Better bar code and QR code camera detection.
 - Improved authentication error handling.
 - Enhanced telemetry and detection.
-- More stable network connections across warehouse infrastructures.
 - Lower resource consumption and battery usage.
 
 ## Version 4.0.8.0
