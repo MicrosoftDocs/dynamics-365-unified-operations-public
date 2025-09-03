@@ -16,7 +16,7 @@ ms.collection: get-started
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: twheeloc
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
 ---
