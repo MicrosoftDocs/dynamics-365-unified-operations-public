@@ -4,7 +4,7 @@ description: Learn how to prepare your environment to interoperate with ID-porte
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 06/12/2025
+ms.date: 09/03/2025
 ms.reviewer: johnmichalak
 ms.search.region: Norway
 ms.search.validFrom: 2021-11-18
