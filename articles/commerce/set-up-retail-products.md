@@ -1,12 +1,11 @@
 ---
 title: Set up retail products
-description: Learn how to set up products in Microsoft Dynamics 365 Commerce.
+description: Learn how to set up retail products in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/08/2023
+ms.date: 09/03/2025
 ms.topic: how-to
-audience: Application User
-ms.reviewer: josaw
-ms.search.region: global
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
@@ -17,7 +16,7 @@ ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
 
 [!include [banner](includes/banner.md)]
 
-This article explains how to set up products in Microsoft Dynamics 365 Commerce.
+This article explains how to set up retail products in Microsoft Dynamics 365 Commerce.
 
 Before you can offer products for resale in your commerce channels, you must create and configure the products. Commerce creates organization-wide products in the product master. You can create the products, define the product properties and attributes, and assign the products to commerce category hierarchies. To make the products available to your channels and add them to an active assortment, you must release the products to the legal entities where they're available. To set up the products that you sell by using channels, complete the following tasks.
 
