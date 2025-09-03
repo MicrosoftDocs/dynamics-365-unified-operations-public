@@ -4,7 +4,7 @@
 title: Mass hire projects
 description: This article describes mass hire projects, which allow human resources specialists to create multiple positions and efficiently hire workers into those positions.
 author: twheeloc
-ms.date: 07/02/2024
+ms.date: 09/03/2025
 ms.topic: article
 # optional metadata
 
@@ -48,11 +48,10 @@ After you select students to hire for the internship positions, you will enter e
 
 ## Mass hire project statuses
 
-A mass hire project can have the following statuses.
-
-- Created
-- Open
-- Closed
+A mass hire project can have the following statuses:
+- **Created**
+- **Open**
+- **Closed**
 
 On the **Mass hire project** page, select **Open project** or **Close project** to change the status of a mass hire project. The following table describes what you can do with a project according to its status.
 
