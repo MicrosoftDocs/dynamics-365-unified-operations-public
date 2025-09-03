@@ -32,7 +32,7 @@ The following versions of Microsoft Dynamics 365 Finance are supported:
 
 You've consumed the entitled credits and must subscribe to Electronic Invoicing. Contact the Microsoft account team or your partner cloud solution provider (CSP) to purchase licenses.
 
-### What if invoices that are received are in an unsupported format (for example, they're Word documents)?
+### What if invoices that are received are in an unsupported format (for example, Word documents)?
 
 Word documents aren't yet supported. However, Power Automate can convert a Word document into a PDF file before it calls the invoice capture API.
 
