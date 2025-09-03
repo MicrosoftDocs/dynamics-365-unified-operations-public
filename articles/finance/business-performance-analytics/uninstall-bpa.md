@@ -43,7 +43,6 @@ If you uninstall and then reinstall Business performance analytics, custom repor
         "msdyn_BpaTables",
         "msdyn_BpaControls",
         "msdyn_BpaTablesAnchorSolution",
-        "msdyn_BpaTablesUserRoles",
         "msdyn_BpaAnalyticalTablesWorkspace",
         "msdyn_BpaAnalyticalTables",
         "msdyn_BpaTablesTransformationJobFlows",
@@ -55,6 +54,7 @@ If you uninstall and then reinstall Business performance analytics, custom repor
         "msdyn_BpaTablesVirtualEntities",
         "msdyn_BpaTablesManagedDataLake",
         "msdyn_BpaPipelinePlugins",
+        "msdyn_BpaTablesUserRoles",
         "msdyn_BpaTablesSecurity",
         "msdyn_BpaConfig"
     ];
@@ -112,18 +112,18 @@ You can manually uninstall Business performance analytics through the Power Plat
 6. Business performance analytics tables
 7. Business performance analytics controls
 8. Business performance analytics tables anchor solution
-9. Business performance analytics tables user roles 
-10. Business performance analytics analytical tables workspace
-11. Business performance analytics analytical tables
-12. Business performance analytics tables transformation job flows
-13. Business performance analytics tables data processing configuration 
-14. Business performance analytics tables data lake synchronization workspace
-15. Business performance analytics tables data lake synchronization
-16. Business performance analytics tables standard entities
-17. Business performance analytics tables virtual entities workspace
-18. Business performance analytics tables virtual entities
-19. Business performance analytics tables managed data lake 
-20. Business performance analytics pipeline plugins solution
+9. Business performance analytics analytical tables workspace
+10. Business performance analytics analytical tables
+11. Business performance analytics tables transformation job flows
+12. Business performance analytics tables data processing configuration 
+13. Business performance analytics tables data lake synchronization workspace
+14. Business performance analytics tables data lake synchronization
+15. Business performance analytics tables standard entities
+16. Business performance analytics tables virtual entities workspace
+17. Business performance analytics tables virtual entities
+18. Business performance analytics tables managed data lake 
+19. Business performance analytics pipeline plugins solution
+20. Business performance analytics tables user roles 
 21. Business performance analytics tables security 
 22. Business performance analytics config 
 
