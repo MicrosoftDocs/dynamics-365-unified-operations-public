@@ -13,8 +13,9 @@ ms.custom:
 
 # Negotiated pricing
 
-To support negotiated final prices in trade agreements, you can define sales prices directly with or without price adjustments and explicitly preventing additional discount applications.  
-This ensures accurate discount-exempt pricing aligned with contractual or wholesale pricing needs.
+To support negotiated final prices in trade agreements, you can define sales prices directly with or without price adjustments and explicitly prevent additional discount applications.
+
+This approach ensures accurate discount-exempt pricing aligned with contractual or wholesale pricing needs.
 
 ## Feature Description
 
@@ -24,7 +25,7 @@ This function supports sales trade agreement pricing by allowing pricing adminis
 - Whether price adjustments (such as percentage increases or decreases) are included  
 - Whether promotional or system-applied discounts should be prevented from further affecting the transaction price  
 
-This capability is especially relevant in B2B, channel sales, or regulated pricing models, where the agreed price should not be altered by discount logic.
+This capability is especially relevant in B2B, channel sales, or regulated pricing models, where discount logic shouldn't be allowed to alter the agreed price.
 
 ## Key Capabilities
 
@@ -32,7 +33,7 @@ This capability is especially relevant in B2B, channel sales, or regulated prici
 |--|--|
 | Prevent Discount | Choose to prevent any additional discount. |
 | Allow Price Adjustment | Choose to apply adjustments (such as markup or markdown) to include in the sales price. |
-| Net Price Definition | Define Trade Agreement Sales Price as a net (final, exclusive) price that is not subject to further discounting by setting **Allow Price Adjustment** to *No* and **Prevent Discount** to *Yes*. |
+| Net Price Definition | Define Trade Agreement Sales Price as a net (final, exclusive) price that isn't subject to further discounting by setting **Allow Price Adjustment** to *No* and **Prevent Discount** to *Yes*. |
 
 ## Key Use Cases
 
