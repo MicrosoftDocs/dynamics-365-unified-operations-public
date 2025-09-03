@@ -4,7 +4,7 @@
 title: Restrict access to workers by legal entity
 description: This article explains how to set up worker access by legal entity.
 author: twheeloc
-ms.date: 07/08/2024
+ms.date: 09/03/2025
 ms.topic: how-to
 # optional metadata
 
