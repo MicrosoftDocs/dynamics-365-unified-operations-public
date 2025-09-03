@@ -4,7 +4,7 @@
 title: Configure Human resources parameters
 description: This article explains how to set up company-specific parameters in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 06/23/2024
+ms.date: 09/03/2024
 ms.topic: article
 # optional metadata
 
@@ -73,7 +73,7 @@ For more information about recruiting, see [Recruit job candidates](hr-personnel
 
 ## Compensation
 
-In Dynamics 365 Finance, the settings on the **Compensation** tab define whether users must confirm that they want to save information for a fixed or variable compensation plan. If you select **Enable save validation**, when users close a compensation-related page, they receive a message that asks whether they want to save the record. Some pages in Compensation management don't let users delete information. By prompting users to verify that they want to save information, you might be able to limit the amount of information that is saved but can't be deleted later. If you clear **Enable save validation**, records save immediately, possibly before the user is ready. If you're using Performance management, the **Compensation** tab also lets you select a rating model to use instead of the model assigned to compensation plans when rating performance.
+In Dynamics 365 Human Resources, the settings on the **Compensation** tab define whether users must confirm that they want to save information for a fixed or variable compensation plan. If you select **Enable save validation**, when users close a compensation-related page, they receive a message that asks whether they want to save the record. Some pages in Compensation management don't let users delete information. By prompting users to verify that they want to save information, you might be able to limit the amount of information that is saved but can't be deleted later. If you clear **Enable save validation**, records save immediately, possibly before the user is ready. If you're using Performance management, the **Compensation** tab also lets you select a rating model to use instead of the model assigned to compensation plans when rating performance.
 
 In Human Resources, you can use the **Compensation** tab to choose to restrict access to compensation plans and to set a default currency.
 
