@@ -4,7 +4,7 @@
 title: Create a working time calendar
 description: Define a working time calendar, holidays, and non-work times in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/09/2024
+ms.date: 09/03/2025
 ms.topic: how-to
 # optional metadata
 
