@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about the Invoice capt
 author: sunfzam
 ms.author: zezhangzhao
 ms.topic: faq
-ms.date: 08/21/2023
+ms.date: 09/02/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -77,5 +77,8 @@ Yes. Invoice capture uses the external item number in Dynamics 365 Finance to de
 Yes. Users can upload multiple invoices (a maximum of 20 files) simultaneously.
 
 ### What languages of invoices are supported?
-
 For a complete list of supported languages, see the [Document intelligence page](/azure/ai-services/document-intelligence/concept-invoice).
+
+### If I am using a custom model for invoice capture, do I need to purchase AI builder credits in addition to the electronic invoicing credits?   
+When you are training the custom model, you need to purchase AI Builder credits for that activity. However, after the custom model is trained and is being used in Invoice capture, only the electronic invoice credits are used.
+
