@@ -120,11 +120,7 @@ For customers that use version 8.0 or earlier:
 3. Verify that the error has been resolved.
 
 ### Incompatible application versions between source and target environments
-The database refresh process (self-service or via service request) can't be completed if the Application release of your source and target environments aren't the same. This is because the data upgrade process isn't executed by database movement operations such as refresh, and data loss can occur.
-
-When upgrading your sandbox UAT environment to a newer Application version (for example, 7.3 to 8.1), be sure to perform the database refresh action prior to starting the upgrade. After your sandbox is upgraded to the newer version, you can't restore an older production environment database in to the sandbox UAT environment.
-
-Conversely, if your production environment is newer than your target sandbox, you need to either upgrade the target sandbox prior to the refresh or deallocate, delete, and redeploy prior to performing the refresh.
+If your production environment is newer than your target sandbox, you need to either upgrade the target sandbox prior to the refresh or deallocate, delete, and redeploy prior to performing the refresh.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
