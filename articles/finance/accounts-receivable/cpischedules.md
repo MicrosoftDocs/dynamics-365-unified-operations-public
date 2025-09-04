@@ -4,7 +4,7 @@ description: Learn how to create the list of consumer price index (CPI) schedule
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: article
-ms.date: 02/28/2025
+ms.date: 09/04/2025
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
