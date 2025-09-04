@@ -130,14 +130,15 @@ Select a service life to define how the destination asset’s service life is ha
 
 ### Complete worksheet
 
-Use the worksheet to review and adjust asset level details before reviewing the transfer journal. The following fields can be updated:
--	Source asset
--	Transfer value method
--	Service life configuration
--	Financial dimensions
--	Financial tags
--	Split percentages
+Use the available worksheet to review and adjust asset level details before you review the transfer journal. The following fields can be updated.
+
+-	**Source asset**
+-	**Transfer value method**
+-	**Service life configuration**
+-	**Financial dimensions**
+-	**Financial tags**
+-	**Split percentages**
   
-The **Transfer value** and **Percentage fields** are interdependent. Updating one automatically recalculates the other to maintain consistency. For destination asset IDs, if the field is left blank, an ID is automatically generated and displays Auto-generate. The destination asset is generated when you move to the Review journal details step. Alternatively, you can manually assign a predefined ID. You can also preview asset book values, including acquisition cost, accumulated depreciation, and net book value for both source and destination assets. To streamline updates, bulk editing options are available for financial dimensions and tags. Additionally, the Reapply book mapping function resets and regenerates destination book values based on current mapping settings. This step ensures that all transfer data is validated and tailored before proceeding to journal review and posting.
+The **Transfer value** and **Percentage fields** are interdependent. When you update one of these values, the other is automatically recalculated to maintain consistency. If a destination asset ID field is left blank, an ID is automatically generated, and displays **Auto-generate**. The destination asset is generated when you review the transfer journal. Alternatively, you can manually assign a predefined ID. You can also preview asset book values, including acquisition cost, accumulated depreciation, and net book value for both source and destination assets. To streamline updates, bulk editing options are available for financial dimensions and tags. Also, the **Reapply book mapping** function resets and regenerates destination book values based on the current mapping settings. This step ensures that all transfer data is validated and tailored before you proceed to journal review and posting.
 
 
