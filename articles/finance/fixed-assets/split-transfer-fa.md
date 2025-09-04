@@ -22,21 +22,21 @@ This article describes how to split and transfer fixed assets between legal enti
 
 [!INCLUDE preview-note]
 
-The Fixed asset intercompany split and transfer feature allows organizations to efficiently manage the movement of fixed assets between legal entities—whether through full transfers or partial splits—without switching between companies. It automates the mapping of asset groups, books, and key fields between source and destination entities, streamlining intercompany asset operations.
+The fixed asset intercompany split and transfer feature allows organizations to efficiently manage the movement of fixed assets between legal entities — whether through full transfers or partial splits — without switching between companies. It automates the mapping of asset groups, books, and key fields between source and destination entities, streamlining intercompany asset operations.
 
-This feature supports transfers based on acquisition and accumulated depreciation, as well as net book value. It also provides flexible options for handling service life and exchange rates. Users can choose from the following options how to configure the destination asset.
+This feature supports transfers based on acquisition and accumulated depreciation, as well as net book value. It also provides flexible options for handling service life and exchange rates. You can choose from the following options to configure the destination asset.
 
 -	Inherit the remaining depreciation periods from the source asset.
 -	Use predefined service life settings at the destination.
 -	Copy the service life from the source asset.
   
-The Fixed asset intercompany split and transfer feature provides flexible exchange rate options for accounting and reporting currencies. Users can choose from the following options.
+The fixed asset intercompany split and transfer feature provides flexible exchange rate options for accounting and reporting currencies. You can choose from the following options.
 
 -	The historical acquisition rate of the source asset
 -	The exchange rate on the transfer date
 -	The rate that yields the highest asset value
 
-The wizard also offers granular control over financial dimensions and tags. Before journal creation, users can preview key financial data—including acquisition cost, accumulated depreciation, and net book value per asset book—ensuring transparency and accuracy.
+The wizard that's part of this feature offers granular control over financial dimensions and tags. Before journal creation, you can preview key financial data — including acquisition cost, accumulated depreciation, and net book value per asset book — ensuring transparency and accuracy.
 
 Intercompany journals are automatically generated using clearing accounts, which ensures proper balancing and audit compliance. The system maintains a complete transfer history, enabling full traceability of asset movements across legal entities. Whether transferring a single asset or performing bulk transfers with percentage-based splits, the wizard simplifies cross-company asset management while maintaining consistency, control, and auditability.
 
@@ -49,9 +49,10 @@ Before you begin, enable the following preview features in **Feature management*
 -	Fixed asset history (preview)
 
 ### Set up intercompany transfer mapping
+
 This value defines how assets are transferred between legal entities. It ensures consistency in asset classification and field values across companies.
 
-1.	Go to Fixed assets > Setup > Assets intercompany transfer mapping.
+1.	Go to **Fixed assets > Setup > Assets intercompany transfer mapping**.
 1.	Define the source and destination legal entities.
 1.	Enable bidirectional mapping if needed, or create separate records for each direction.
 
@@ -59,12 +60,13 @@ This value defines how assets are transferred between legal entities. It ensures
 ### Map specific values
 
 Map the following values before you split and transfer fixed assets.
+
 -	**Asset groups**: Map source asset groups to destination groups (for example, COPM → Computers).
 -	**Asset books**: Ensure posting layers match between source and destination books.
 -	**Asset book fields**: Map fields such as acquisition method and depreciation. 
    -	**Copy**: Replicate values from the source asset to the destination asset. When a field value is called from a table, values in the destination legal entity are created.
    - **Constant**: Assign a fixed value. For example, if you set the Acquisition method field in the asset book to Transferred, that value is assigned to the destination asset.
-   - **Map values**: Translate values between entities. For example, if you map the Acquisition method field to Purchased in the source asset, and map that to Transferred in the destination asset. 
+   - **Map values**: Translate values between entities. For example, if you map the Acquisition method field to Purchased in the source asset, and map that to Transferred in the destination asset.
    > [!NOTE]
    > The **Copy** and **Map** options enable **Assign field values** so you can define the constant value or mapping values.
 
@@ -75,6 +77,7 @@ To establish the core numbering rules for intercompany asset transfers, ensuring
 ### Configure fixed assets intercompany accounting
 
 For each legal entity pair, do the following.
+
 -	Configure the fixed asset intercompany accounting by specifying the journal names.
 -	Select intercompany accounts for both the source and destination companies.
 -	Select an asset transfer clearing account.
@@ -84,15 +87,16 @@ For each legal entity pair, do the following.
 ### Complete transfer process
 
 The transfer wizard guides you through the transfer process step by step, simplifying asset selection, destination, review, and generation of journals.
+
 1.	Go to **Fixed assets > Fixed assets intercompany transfer**.
 1.	Create a new transfer record and select the source legal entity.
 1.	Launch the wizard and follow the steps on the screen.
 1.	The **Asset transfer status** reflects the progress of the transfer process. 
-  -	Started: A transfer is created.
-  -	**Assets generated**: On the Review journal details step, the destination assets are created but no journal exists yet.
-  -	**Journal created**: The wizard is completed and the journal is successfully generated.
-  -	**Journal posted**: The journal is posted.
-  - **Assets generated**: All generated journals are deleted before posting.
+      -	**Started**: A transfer is created.
+      -	**Assets generated**: On the Review journal details step, the destination assets are created but no journal exists yet.
+      -	**Journal created**: The wizard is completed and the journal is successfully generated.
+      -	**Journal posted**: The journal is posted.
+      - **Assets generated**: All generated journals are deleted before posting.
 
 ### Select assets
 
@@ -103,6 +107,7 @@ You must choose which assets to transfer and define how to distribute them. This
 Define the receiving company, and how the asset values and service life are handled. Complete this step to ensure accurate financial treatment in the destination entity.
 
 Select from the following options how to distribute the fixed assets:
+
 -	**Send all assets to same destination**: Transfer all selected assets as a group to a single destination company. For example, move 100 office furniture assets together to one company.
 -	**Split assets value between multiple entities by percentage**: Allocate the value of each asset across multiple companies based on percentages you define. You can assign portions of the asset value to different companies, with any remaining value optionally retained by the source company. For example, 20% of an asset’s value goes to one company, 50% to another, and 30% remains with the source.
 -	**Split assets between multiple entities by ID**: Distribute complete assets among multiple companies by assigning them individually in the worksheet. For example, with 100 office furniture assets, you can transfer 70 to one company and 30 to another company.
@@ -120,13 +125,14 @@ The **Transfer details** section defines how the asset’s value and timing are 
 ### Configure destination details
 
 Select a destination company. In the company, select a **Rate type** from the following options.
-- Acquisition date: Use the historical rate from the asset’s original acquisition date.
--	Transfer date rate: Use the exchange rate recorded in the ledger on the transfer date, reflecting the most current rate available and aligning with real time financial reporting.
--	Maximize destination asset value: Select the rate that results in the highest asset value in the destination company’s books.
+
+- **Acquisition date**: Use the historical rate from the asset’s original acquisition date.
+-	**Transfer date rate**: Use the exchange rate recorded in the ledger on the transfer date, reflecting the most current rate available and aligning with real time financial reporting.
+-	**Maximize destination asset value**: Select the rate that results in the highest asset value in the destination company’s books.
 Select a service life to define how the destination asset’s service life is handled during the transfer.
--	Use the default value from destination configuration: Use the default service life defined in the destination company’s asset book.
--	Copy service life from source asset: Copy the full service life from the source asset.
--	Use source assets remaining periods: Continue the depreciation schedule based on the source asset’s remaining depreciation periods.
+-	**Use the default value from destination configuration**: Use the default service life defined in the destination company’s asset book.
+-	**Copy service life from source asset**: Copy the full service life from the source asset.
+-	**Use source assets remaining periods**: Continue the depreciation schedule based on the source asset’s remaining depreciation periods.
 
 ### Complete worksheet
 
