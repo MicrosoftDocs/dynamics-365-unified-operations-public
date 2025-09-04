@@ -123,6 +123,16 @@ Starting with Commerce version 10.0.45, you can turn on the **Enable gift card b
 - No API calls are made to issue or void gift cards if the customer cancels before payment.
 - Gift card balances are only updated post-payment, reducing operational risk and improving reliability.
 
+Here is the user experience when the feature is enabled:
+	1. Initiate Issue gift card or Add money to gift card action
+	2. Swipe or enter gift card
+	3. Choose amount. This adds a gift card line to the transaction. However, the gift card is not yet updated with this amount.
+	4. Add more gift cards or regular items if needed.
+	5. Take payment. As soon as the required payment is captured, the system triggers an automatic checkout and this activates the payment terminal for the customer to provide Pin number or swipe the card as needed.
+	6. If the gift card action is successful, then the transaction is completed.
+	7. If the gift card action fails, then the system shows an error message below the failed gift card line stating "The gift card action cannot be completed. Please void this item.". However, the cashier can try to attempt the checkout again and if the error was transient e.g., network issue then the gift card action might succeed. But if there is a permanent issue e.g., the gift card is invalid, then the cashier must void the gift card line and try with another gift card.
+
+
 To enable this feature functionality, follow these steps
 
 1. In Commerce headquarters, go to **System administration** \> **Workspaces** \> **Feature management**.
