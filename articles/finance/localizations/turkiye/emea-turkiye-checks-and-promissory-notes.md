@@ -16,32 +16,32 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 # Use checks and promissory notes
 [!INCLUDE[banner](../../includes/banner.md)]
 
-In Türkiye, checks and promissory notes are widely used commercial payment instruments that require careful tracking and accounting in accordance with regulations. 
+In Türkiye, checks and promissory notes are widely used commercial payment instruments that require careful tracking and accounting to comply with regulations. 
 The **Cash and bank management** module in Dynamics 365 Finance provides functionality to manage checks and promissory notes, including their receipt, issuance, transfer, collection, endorsement, return, and rediscounting.
 
 The **Check and promissory note operations** feature in Finance helps businesses manage all steps related to checks and promissory notes. 
-You can easily create, record, transfer, and track these documents throughout their lifecycle.
+Create, record, transfer, and track these documents throughout their lifecycle.
 
-This feature lets you use automated processes like transaction codes and rediscount calculations. You quickly see the status of each document and ensure records are accurate.
+This feature lets you use automated processes like transaction codes and rediscount calculations. Quickly see the status of each document and ensure records are accurate.
 
 This module ensures compliance with requirements by offering specialized configuration options, automated journal entries, portfolio tracking, and rediscount calculations.
 
-Key capabilities of the **Check and promissory note operations** feature are as follows:
+Key capabilities of the **Check and promissory note operations** feature include:
 
 - Define and manage check and promissory note transaction codes.
 - Group documents using portfolio codes (received or issued).
-- Record and track the full lifecycle of commercial papers.
+- Record and track the lifecycle of commercial papers.
 - Generate and reverse rediscount entries.
 - Integrate with customer and vendor payments, bank transactions, and posting profiles.
 
 ## Configure checks and promissory note parameters
 
-This section provides general information about the parameters for **Check and promissory note operations** feature for Türkiye.
+This section provides general information about the parameters for the **Check and promissory note operations** feature for Türkiye.
 
 The **Check and promissory note parameters** page allows you to define company-wide settings for managing the lifecycle of checks and promissory notes. 
-These parameters determine how documents behave in journals, which default accounts are used, and how legal requirements are applied.
+These parameters determine how documents behave in journals, which default accounts are used, and how legal requirements apply.
 
-You can access the **Check and promissory note parameters** page by navigating to **Cash and bank management > Setup > Check and promissory note operations > Check and promissory note parameters**.
+Access the **Check and promissory note parameters** page by going to **Cash and bank management > Setup > Check and promissory note operations > Check and promissory note parameters**.
 
 Here are the details for the fields:
 
@@ -49,13 +49,13 @@ Here are the details for the fields:
 
 | Field | Description |
 |------------|-------------|
-| Settlement status | Defines the default settlement behavior for checks and promissory notes. If you set it to _None_, the system doesn't apply automatic settlement when transactions are posted. |
+| Settlement status | Defines the default settlement behavior for checks and promissory notes. If set to _None_, the system doesn't apply automatic settlement when transactions are posted. |
 | Customer method of payment | Specifies the default method of payment to be used for customers when recording check or promissory note transactions. |
 | Vendor method of payment | Specifies the default method of payment to be used for vendors during check or promissory note operations. |
 | Portfolio account type | Indicates the type of account used to represent portfolios in accounting entries. Typically set to _Bank_ but can vary depending on how portfolios are configured. |
-| Use due date | Lets you control due dates on check and promissory note documents. When you turn it on, the system tracks and validates due dates during operations. |
-| The Printed number field is mandatory | If enabled, the check or note number must be entered before a transaction can be posted. Useful for ensuring traceability of printed documents. |
-| Control of out date for check | When enabled, prevents entry of an issue (out) date that is later than the due date of the check. Ensures compliance with date logic. |
+| Use due date | Lets you control due dates on check and promissory note documents. When turned on, the system tracks and validates due dates during operations. |
+| The Printed number field is mandatory | If enabled, the check or note number must be entered before posting a transaction. This ensures traceability of printed documents. |
+| Control of out date for check | When enabled, this prevents entering an issue (out) date later than the check's due date. This ensures compliance with date logic. |
 | Is reverse date | If enabled, the system allows reversal postings to use the original transaction’s date, which is important for maintaining accurate historical records. |
 
 ### Rediscount Tab
@@ -64,7 +64,7 @@ Here are the details for the fields:
 
 | Field name | Description |
 |------------|-------------|
-| Journal name | Specifies the default journal used when posting rediscount transactions. This journal must be previously created and set up under **General ledger > Journal names**. |
+| Journal name | Specifies the default journal used when posting rediscount transactions. This journal must already exist and be set up under **General ledger > Journal names**. |
 | Exchange rate type | Defines which exchange rate type used for rediscount calculations involving foreign currency checks or promissory notes. For example, _Forex Buying_ or _Banknote Buying_. |
 | Detail level | Determines the level of detail shown in the rediscount journal lines. Options typically include _Details_ (per check/note) or _Summary_ (per portfolio or account). |
 | Interest calculation type | Selects the basis on which interest is calculated. The option _Calculated period date_ means the interest is calculated based on the actual number of days between the posting date and maturity date. |
@@ -98,7 +98,7 @@ Here are the details for the fields:
 
 | Field  | Description  |
 | ------- | -------- |
-| System number of check | Automatically generated unique identifier for each check or promissory note entered into the system. |
+| System number of check | Automatically generates a unique identifier for each check or promissory note entered into the system. |
 | Check payroll number   | Number sequences assigned to identify check payroll batches. |
 | Check movement number  | Sequence number used to identify each transaction line for check or promissory note entries (journal transaction number). |
 | Last refreshed on    | System-generated reference indicating the last refresh or update point for check sequences. |
@@ -107,17 +107,17 @@ Here are the details for the fields:
 > [!NOTE]  
 > Rediscount accounting is typically used at the end of the month or year to reflect accrued interest income or expenses related to postdated checks or promissory notes.
 
-## Define portfolio codes for check and promissory notes operations
+## Define portfolio codes for check and promissory note operations
 
 This section provides an overview of the key features and functionalities available on the **Check and promissory notes portfolio codes** page in Finance. 
 
-By following the steps outlined, you effectively manage check and promissory note processes within your organization.
+By following the steps outlined, you can effectively manage check and promissory note processes within your organization.
 
-The portfolio codes enable organizations to define and manage portfolio codes for financial instruments, such as checks and promissory notes, used in Turkish commercial transactions.
+Portfolio codes let organizations define and manage financial instruments, like checks and promissory notes, used in Turkish commercial transactions.
 
-In Türkiye, it's a legal and operational requirement to group such instruments under portfolios for tracking, processing, and reporting purposes. These portfolios help classify received and issued commercial papers and facilitate proper accounting, endorsement, and reconciliation processes.
+In Türkiye, it's a legal and operational requirement to group these instruments under portfolios for tracking, processing, and reporting. These portfolios help classify received and issued commercial papers and facilitate proper accounting, endorsement, and reconciliation processes.
 
-This page provides a centralized location to:
+Use this page to:
 
 - Set up portfolio codes with descriptive names.
 - Optionally assign default ledger accounts for accounting.
@@ -143,18 +143,18 @@ To create a new portfolio, follow these steps:
 
 1. Go to **Cash and bank management > Setup > Check and promissory note operations > Check and promissory note portfolio codes**.
 1. Select **New**.
-1. In the **Portfolio code** field, enter a unique code.
+1. In the **Portfolio code** field, type a unique code.
 1. In the **Portfolio name** field, enter a name for the portfolio.
 1. Select an account type in the **Account type** field.
 1. Select an account number in the **Account number** field.
    - If **Bank** is selected, select a bank account for accounting. 
    - If **Ledger** is selected, select a main account for accounting.
-1. Select a portfolio type in the **Portfolio type** field.
+1. Select a portfolio type from the **Portfolio type** field.
     - **Check received**: Use this option for portfolios that track checks received from customers.
     - **Check given**: Use this option for portfolios that track checks issued by the company.
     - **Promissory note received**: Use this option for portfolios that manage promissory notes received from customers.
     - **Promissory note given**: Use this option for portfolios that track promissory notes issued by the company.
-1. Select a currency code in the **Currency** field.
+1. Select a currency in the **Currency** field.
 1. Select a bank account for the collection in the **Bank account for collection** field. Select the bank account used as the offset account during check collection transactions for the portfolio.
 
 ## Define transaction codes for check and promissory note operations
@@ -165,9 +165,9 @@ The **Check or promissory note transaction codes** page is used to define standa
 These codes represent actions such as endorsement, collection, return, protest, or cancellation, and are essential for tracking the legal and financial status of commercial paper. 
 
 Transaction codes are central to managing check and promissory note operations in Türkiye. 
-Each type of check or promissory note movements such as receipt, issue, transfer, collection, return, or bounces represented by a unique transaction code.
+Each type of check or promissory note movement, such as receipt, issue, transfer, collection, return, or bounce, is represented by a unique transaction code.
 
-This page allows users to configure these codes to support financial and legal processes, including automated posting, matching, and categorization. 
+This page lets users configure these codes to support financial and legal processes, including automated posting, matching, and categorization. 
 These codes are then used in the **Check and promissory note journal** to determine how each document is recorded and processed.
 
 The page is used to:
@@ -203,8 +203,8 @@ To create a transaction code for the check and promissory note process:
 1. Go to **Cash and bank management > Setup > Check and promissory note operations > Check or promissory note transaction codes**.
 1. Select **New**.
 1. In the **Transaction code** field, enter a unique code.
-1. In the **Transaction code description** field, enter a name for transaction code.
-1. Select **Against transaction code**. It specifies the related transaction code that is automatically triggered when the selected transaction code is used in a journal.
+1. In the **Transaction code description** field, enter a name for the transaction code.
+1. Select **Against transaction code**. This field specifies the related transaction code that is automatically triggered when the selected transaction code is used in a journal.
 For example, when transferring a check between two portfolios, you can define an against transaction code to automatically generate both the outgoing and incoming movements within the same journal.
 1. Assign a **Journal name** to specify which journal is used for posting.
 1. Set the appropriate flags to define the behavior of the transaction in the relevant field:
@@ -227,11 +227,11 @@ The transaction code is now available for use in the **Check and promissory note
 
 ## Define bank branch names for check and promissory note operations
 
-This section defines how to select bank and branch information for bank check records.
-The **Bank branch name** is used to define and manage the relationship between banks and their branches in Türkiye. This information is essential for processes that require accurate identification of bank and branch codes, such as bank check transactions.
+This section explains how to select bank and branch information for bank check records.
+The **Bank branch name** defines and manages the relationship between banks and their branches in Türkiye. This information is essential for processes that require accurate identification of bank and branch codes, such as bank check transactions.
 The **Bank branch name** allows users to configure and reference standardized bank and branch information based on the official registry used in the Turkish banking system. Each bank and its associated branches are uniquely identified by a combination of codes.
 
-Each field is explained in the following table.
+The following table explains each field.
 
 | **Field** | **Description** |
 | --- | --- |
@@ -239,13 +239,13 @@ Each field is explained in the following table.
 | Branch code | A unique code representing the specific branch of the bank. |
 | Bank branches | The name of the bank branch. |
 
-To create a bank branch, follow these steps.
+Follow these steps to create a bank branch.
 
 1. Go to **Cash and bank management > Setup > Check and promissory note operations > Bank branch name**.
 1. Select **New**.
-1. In the **Bank group** field, select or enter the bank group code.
-1. In the **Branch code** field, enter the branch code.
-1. In the **Bank branches** field, enter the branch name.
+1. In the **Bank group** field, enter or select the bank group code.
+1. In the **Branch code** field, type the branch code.
+1. In the **Bank branches** field, type the branch name.
 1. Select **Save**.
 
 ## Create a new check and promissory note journal
@@ -339,10 +339,10 @@ Each field is explained in the following table.
 
 ## Create a received check or promissory note in Check and promissory journal
 
-This section provides guidance for creating a new check or promissory note entry using the **New check** page in the **Check and promissory note journal**. 
+This section explains how to create a new check or promissory note entry using the **New check** page in the **Check and promissory note journal**. 
 
-This form is used when a new check or note needs to be registered into the system manually, such as when a check is received from a customer or issued to a vendor.
-Users are required to define the document’s identity, financial values, due dates, associated accounts, and ownership information. 
+Use this form to manually register a new check or note, such as when a check is received from a customer or issued to a vendor.
+Define the document’s identity, financial values, due dates, associated accounts, and ownership information. 
 This structured data ensures accurate posting to the general ledger and full lifecycle tracking of the processes.
 
 Each field on the **Summary** FastTab **Check definition** page is explained in the following table.   
@@ -379,16 +379,16 @@ Each field on the **General** FastTab **Check definition** page is explained in 
 | Exchange rate                | Specify the actual exchange rate value if fixed rate is used.       |
 | Exchange rate type (Reporting Currency) | Specify the exchange rate used when reporting in different currencies. |
 
-After all relevant fields and values have been selected for the check or promissory note, Select **Save** and select **Check transfer journal** in ActionPane. 
-Then you'll see the check or promissory record in **Lines** Tab in the **Check and promissory note journal**. 
+After selecting all relevant fields and values for the check or promissory note, select **Save**, and then select **Check transfer journal** in the ActionPane. 
+You see the check or promissory record in the **Lines** tab in the **Check and promissory note journal**. 
 The **Lines** Tab displays all transactions associated with selected checks and promissory notes. 
 
 This section provides guidance on using the **Transactions** FastTab in the **Lines** Tab of the **Check and promissory note journal**. 
 The **Transactions** FastTab offers you the ability to review the details of the selected line, access open, or settled transactions, and manage matching and cancellation activities directly from within the journal.
 
-You can add new lines from **New check** again if it's needed, you can delete existing lines if needed by **Delete rows**. 
+Add new lines from **New check** if needed, or delete existing lines using **Delete rows**. 
 
-Each function in **Transaction** FastTab is explained in the following table. 
+The following table explains each function in the **Transaction** FastTab. 
 
 | Action   | Description  |
 |------|--------|
@@ -399,13 +399,13 @@ Each function in **Transaction** FastTab is explained in the following table.
 
 ## Settle check and promissory note with open transactions
 
-This section provides a detailed explanation of the **Open Transactions** page accessible from the **Lines** tab of the **Check and promissory note journal**. 
-The page is used to settle checks and promissory notes payments with open transactions in customer or vendor accounts.
+This section explains the **Open Transactions** page, which you access from the **Lines** tab of the **Check and promissory note journal**. 
+Use this page to settle checks and promissory note payments with open transactions in customer or vendor accounts.
 
-When settling a transaction using a received check or promissory note, you can manually enter an amount to perform a partial settlement. 
+To settle a transaction using a received check or promissory note, manually enter an amount to perform a partial settlement. 
 This allows you to apply only a portion of the check or note's value to the open transaction.
 
-Each field in **Open transactions** page is explained in the following table. 
+The following table explains each field in the **Open transactions** page. 
 
 | Field  | Description |
 |--------------------------|----------------|
@@ -415,7 +415,7 @@ Each field in **Open transactions** page is explained in the following table.
 | Name                     | Enter or display the name associated with this account number, typically a customer, or vendor name.  |
 | Currency                 | Indicates the currency used for this transaction, such as TRY or EUR. |
 | Amount                   | Specifies the total amount involved in this transaction in its respective currency value. |
-| Open amount              | Specifies any remaining open amount that aren't settled for this transaction.|
+| Open amount              | Specifies any remaining open amount that isn't settled for this transaction.|
 | Remaining amount         | Indicates any remaining balance after partial settlements have been made on this transaction. |
 | Amount to settle         | Specifies how much of this amount is intended to be settled during current processing. |
 | Amount of manual settlement | Indicates any manually entered settlement amounts applied towards clearing balances. |
@@ -424,16 +424,16 @@ Each field in **Open transactions** page is explained in the following table.
 | Invoice                     | Specifies the invoice number related to the customer or vendor transaction.  |
 | Voucher                | Specifies the voucher number associated with the customer or vendor transaction. |
 
-After marking any open transaction, select **Save** and close the page. 
-When transferring checks or promissory notes between portfolios for collection or payment purposes, you must select the portfolio that contains the relevant check or promissory note. 
+After marking an open transaction, select **Save**, and close the page. 
+To transfer checks or promissory notes between portfolios for collection or payment, select the portfolio that contains the relevant check or promissory note. 
 To do this, select **Select check**. 
 
 ## Send check or promissory note to portfolio account
 
-This section provides an overview of the **Select check** page, which allows users to retrieve and transfer previously registered check or promissory note records into the journal for further processing. 
-The form displays eligible documents based on the selected portfolio and currency, ensuring accurate classification and compliance with Turkish financial processes.
+This section provides an overview of the **Select check** page, which lets users retrieve and transfer previously registered check or promissory note records into the journal for further processing. 
+The form shows eligible documents based on the selected portfolio and currency, ensuring accurate classification and compliance with Turkish financial processes.
 
-This form allows users to select commercial paper documents to be transferred into the journal for processing. 
+This form lets users select commercial paper documents to transfer into the journal for processing. 
 The list of records is filtered depending on the document type and its most recent transaction status:
 
 - **Received checks and promissory notes:** The page displays documents that belong to the selected portfolio and have a last transaction code of type receipt.
@@ -466,10 +466,10 @@ Each field in **Receipt checks** FastTab is explained in the following table.
 | Branch code | Specifies the bank branch code where the check was drawn. |
 | Bank branches | Specifies the name of the bank branch name that issued the check.  |
 
-To send the check or promissory note to the portfolio, select **Check transfer journal** and close the page.
-Then, you can select **Post** to generate voucher.
+To send the check or promissory note to the portfolio, select **Check transfer journal**, and close the page.
+Then, select **Post** to generate a voucher.
 
-After you posted the journal to access the ledger journal and the voucher, select **Journals** in the **Daily** group. 
+After posting the journal to access the ledger journal and the voucher, select **Journals** in the **Daily** group. 
 
 ## Reverse check and promissory note journal
 
@@ -477,24 +477,24 @@ This section explains how to reverse a posted check and promissory note journal.
 When you select the **Reverse journal** button on a posted check and promissory note journal, the system automatically creates a reversal journal that mirrors the original journal. 
 The reversal is posted to the ledger and is linked to the original journal header to ensure full traceability.
 
-To reverse the journal, follow these steps; 
+To reverse the journal, follow these steps:
 
-- Go to **Cash and bank management > Check and promissory note operations > Check and promissory note journal**.
-- Select a posted journal that you want to reverse
-- Select **Check reversal journal** in **Cancel** group.
-- Select **OK** in dialog page.
-- Enter or select a date in **Date** field.
-- Select **OK** to post the reversal journal. 
+1. Go to **Cash and bank management > Check and promissory note operations > Check and promissory note journal**.
+2. Select a posted journal that you want to reverse.
+3. Select **Check reversal journal** in the **Cancel** group.
+4. Select **OK** in the dialog page.
+5. Enter or select a date in the **Date** field.
+6. Select **OK** to post the reversal journal.
 
-The reversal check journal is linked to the original check journal. 
-The related reverse transaction can be accessed through the **Reversal journal ID** field in the **Check and promissory journal** list page.
+The reversal check journal links to the original check journal.
+Access the related reverse transaction through the **Reversal journal ID** field in the **Check and promissory journal** list page.
 
 ## Maintain checks and promissory notes
 
-This section provides guidance on how to view, filter, and manage check and promissory note records and how to create company checks and promissory notes for payments using the **Check and promissory note definitions** page in Finance. 
+This section explains how to view, filter, and manage check and promissory note records, and create company checks and promissory notes for payments using the **Check and promissory note definitions** page in Finance. 
 
 This page offers a centralized view where all received or given checks and promissory notes are listed with key attributes such as type, amount, due date, portfolio, account, and transaction codes. 
-It helps ensure accurate document tracking and supports financial transparency in the check lifecycle. Also, ensures to create company checks or promissory note for payments in Türkiye.
+It ensures accurate document tracking, supports financial transparency in the check lifecycle, and lets you create company checks or promissory notes for payments in Türkiye.
 
 The **Check and promissory note definitions** page is used to:
 
@@ -519,8 +519,7 @@ You can use the following filtering parameters to easily track all check and pro
 | Bank groups      | Filters by associated bank group.                                     |
 | Account number   | Specifies the related customer/vendor/bank account.                   |
 
-Select **Apply filter** to refresh the list based on the selected parameters.
-You can see the details about the checks and promissory notes. 
+Select **Apply filter** to refresh the list based on the selected parameters and view details about the checks and promissory notes. 
 
 Each field of the **Check and promissory note definitions** page is explained in the following table. 
 
@@ -548,7 +547,7 @@ Each field of the **Check and promissory note definitions** page is explained in
 ### Create company checks or promissory notes for operations
 
 This section provides guidance for creating new check or promissory note records using the **Create a new document** pane on the **Check and promissory note definitions** page in Finance. 
-This functionality is part of the Turkish localization and supports the mass generation of blank checks with predefined structure and numbering logic.
+This feature is part of the Turkish localization and supports generating blank checks in bulk with predefined structures and numbering logic.
 
 The form enables users to define portfolio ownership, numbering format, and bank association. 
 Once completed, the new check documents are created and automatically added to the system, ready for operational use in payment or collection processes.
@@ -582,14 +581,14 @@ To create company checks and promissory notes, follow these steps.
 1. Type the number of units to be created as "3."
 1. Select **OK** to create.
 
-These checks or promissory notes will now be listed in the **Check and promissory note definitions** page, ready for transaction use in the **Check and promissory note journal**.
+The system lists these checks or promissory notes in the **Check and promissory note definitions** page, ready for transactions in the **Check and promissory note journal**.
 
 ### Update check or promissory note information
 
 This section provides guidance on updating existing check or promissory note records using the Update check or promissory note function in the Check and promissory note definitions page in Finance. 
 
 This function is used when a previously registered check or promissory note needs to be corrected or updated with new values, such as changing the portfolio, amount, or due date.
-When you want to update the check or promissory note **Check or promissory note update**; 
+To update a check or promissory note, use the **Check or promissory note update** function: 
 
 1. Select check or promissory note that you want to update in the list.
 1. Select **Check or promissory update**.
@@ -602,7 +601,7 @@ When you want to update the check or promissory note **Check or promissory note 
 > To use the generated company checks or promissory notes in the **Check and promissory note journal**, you must enter the **Amount** using the **Check and promissory note update** function.
 
 **Cancel** action allows you to invalidate checks or promissory notes that haven't been used in any financial transactions or that have been returned. 
-This action is only available for documents that meet the cancellation criteria based on their current status.
+You can only use this action for documents that meet the cancellation criteria based on their current status.
 
 You can use the **Check or promissory note transactions** to access the transactions for the relevant check or promissory note. 
 
@@ -610,21 +609,21 @@ You can use the **Check or promissory note transactions** to access the transact
 
 This section provides guidance on performing rediscount calculations for checks and promissory notes using the Rediscount Calculation page in Finance. 
 
-Rediscounting is a financial operation in Türkye, typically performed at the end of the fiscal period to reflect the current value of checks and promissory notes that haven't yet matured.
-The Rediscount calculation feature allows organizations to compute interest income or expenses for postdated commercial papers and reflect them accurately in the general ledger.
+Rediscounting is a financial operation in Türkiye, typically performed at the end of the fiscal period to reflect the current value of checks and promissory notes that haven't matured yet.
+The rediscount calculation feature lets organizations compute interest income or expenses for postdated commercial papers and reflect them accurately in the general ledger.
 
-The rediscount calculation functionality helps to:
+The rediscount calculation functionality helps:
 
-  - Calculate interest income for receivable checks and promissory notes.
-  - Calculate interest expense for payable checks and promissory notes.
-  - Generate rediscount journal entries automatically.
-  - Reverse rediscount journals in the following fiscal period.
+  - Calculate interest income for receivable checks and promissory notes
+  - Calculate interest expense for payable checks and promissory notes
+  - Generate rediscount journal entries automatically
+  - Reverse rediscount journals in the following fiscal period
 
-**Accounts** FastTab is used to define ledger accounts for receivable and payable rediscount transactions. 
+Use the **Accounts** FastTab to define ledger accounts for receivable and payable rediscount transactions. 
 The default accounts are retrieved automatically from the **Check and promissory note parameters**.
 
-The journal numbers for the current period and the next period, including those used for reverse posting, are displayed for reference in **Posting** FastTab.
-You can see the information about the check and promissory notes after rediscount calculation in **Lines** FastTab.
+The journal numbers for the current period and the next period, including those used for reverse posting, show in the **Posting** FastTab.
+View information about the check and promissory notes after rediscount calculation in the **Lines** FastTab.
 
 Each field is explained in the following table. 
 
@@ -649,10 +648,10 @@ Each field is explained in the following table.
 ### Define interest rates for rediscount calculation
 
 This section provides guidance on defining interest rates that will be used during rediscount calculations for checks and promissory notes in Finance. 
-Rediscount interest rates are applied to checks and promissory notes that haven't yet matured at the end of the fiscal period.
+Rediscount interest rates apply to checks and promissory notes that haven't matured yet at the end of the fiscal period.
 
-When you define the interest rates, organizations ensure accurate rediscount value calculations and proper posting to general ledger accounts.
-You can define the interest rates in currency basis for the check or promissory notes.
+Defining interest rates ensures accurate rediscount value calculations and proper posting to general ledger accounts.
+Define the interest rates based on currency for the check or promissory notes.
 
 Each field on the **Interest rates** page is explained in the following table.
 
@@ -663,23 +662,23 @@ Each field on the **Interest rates** page is explained in the following table.
 | Interest rate (%) | Indicates the interest rate for rediscount calculation. | 
 
 > [!NOTE]
-> Ensure that the legal rediscount rate has been published by the Central Bank of the Republic of Türkiye (CBRT).
+> Make sure the legal rediscount rate is published by the Central Bank of the Republic of Türkiye (CBRT).
 
 ## Calculate rediscount amount for checks and promissory notes
 
 This section provides an overview of the rediscount calculation logic for checks and promissory notes in Finance, specifically within the Turkish localization.
 
-Rediscounting is a financial adjustment process applied to post-dated checks and promissory notes that haven't yet matured at the end of the fiscal period. 
-The purpose of this process is to reflect the time value of money by rediscounting the future receivable or payable to its present value.
+Rediscounting is a financial adjustment process for post-dated checks and promissory notes that aren't yet matured at the end of the fiscal period. 
+This process reflects the time value of money by rediscounting the future receivable or payable to its present value.
 
-In Türkiye, rediscount calculations are typically performed at month-end or year-end for both customer (receivable) and vendor (payable) documents. The system calculates the rediscount amount based on three key factors:
+In Türkiye, rediscount calculations are typically done at month-end or year-end for both customer (receivable) and vendor (payable) documents. The system calculates the rediscount amount using three key factors:
   
   - The number of remaining days until maturity
   - The applicable interest rate
   - The nominal value of the document
 
-When you automate rediscount journal postings and reversals, Finance enables organizations to maintain compliant and accurate financial records while reducing manual work. 
-Rediscount entries are reversed in the following fiscal period, restoring the original document value after reporting requirements have been fulfilled.
+Automating rediscount journal postings and reversals lets organizations maintain compliant and accurate financial records while reducing manual work. 
+Rediscount entries reverse in the next fiscal period, restoring the original document value after fulfilling reporting requirements.
 
 The parameters on the **Check and promissory note rediscount calculation** page are explained in the following table.  
 
@@ -693,7 +692,7 @@ The parameters on the **Check and promissory note rediscount calculation** page 
 | Journal name           | Specifies the journal that is used to post the rediscount transaction. |
 | Posted                 | Indicates whether the rediscount journal has been successfully posted. |
 
-To create a rediscount calculation, follow these steps. 
+Follow these steps to create a rediscount calculation. 
 
 1. Go to **Cash and bank management > Inquiries and reports > Check and promissory note operations > Check and promissory note rediscount calculation**.
 1. Define the interest rate for the relevant period in **Interest rates** page and select **Save** and close the page.
@@ -708,15 +707,15 @@ To create a rediscount calculation, follow these steps.
 1. Select **Calculate** to calculate the rediscount amounts.
 1. Select **Post**. 
 
-After posting process, you can see the journals in **Journals** group in **Postings** FastTab.
-If you want to reverse the rediscount journals, select **Reverse** in ActionPane. You can see the reversal journal in **Reversal journals** group in **Postings** FastTab.
+After posting, you see the journals in the **Journals** group in the **Postings** FastTab.
+To reverse the rediscount journals, select **Reverse** in the ActionPane. The reversal journal appears in the **Reversal journals** group in the **Postings** FastTab.
 
 ## Check or promissory note transactions
 
-This page provides a list of all posted transactions related to checks and promissory notes. It also enables tracking and monitoring of these financial documents.
-It allows you to define and manage the types of movements that can be applied to checks and promissory notes in the system.
+This article lists all posted transactions related to checks and promissory notes. It also lets you track and monitor these financial documents.
+It lets you define and manage the types of movements applied to checks and promissory notes in the system.
 
-Each transaction code represents a financial operation such as:
+Each transaction code represents a financial operation, such as:
 
 - Receiving a check/note from a customer
 - Issuing a promissory note to a vendor
@@ -724,9 +723,9 @@ Each transaction code represents a financial operation such as:
 - Endorsing or protesting a note
 - Handling collection, return, or bounce
 
-To access the Check or promissory note transactions, go to **Cash and bank management > Inquiries and reports > Check and promissory note operations > Check and promissory note transactions**. 
+To access the check or promissory note transactions, go to **Cash and bank management > Inquiries and reports > Check and promissory note operations > Check and promissory note transactions**. 
 
-Each field on the Overview FastTab is explained in the following table. 
+Each field on the overview FastTab is explained in the following table. 
 
 | Field | Description |
 |------|-------|
@@ -750,7 +749,7 @@ Each field on the Overview FastTab is explained in the following table.
 | Is in use                       | Indicates whether the check is currently in use. |
 | Check reversal transaction number | Transaction number for the reversal of the check. |
 
-Each field on the General FastTab is explained in the following table.
+Each field on the general FastTab is explained in the following table.
 
 | Field | Description |
 |------|-------|
@@ -774,6 +773,6 @@ The buttons on the **Check or promissory note transactions** page are explained 
 | Journal | Access the posted check and promissory note journal entries related to checks and promissory notes.|
 
 
-Using this feature improves control, ensures compliance, and makes check and promissory note operations easier and more reliable.
+This feature improves control, ensures compliance, and makes check and promissory note operations easier and more reliable.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
