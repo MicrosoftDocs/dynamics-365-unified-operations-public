@@ -51,6 +51,7 @@ The following table shows the Electronic invoicing globalization features that a
 | Saudi Arabia | [Saudi Arabian Zatca submission (SA)](../mea/gs-e-invoicing-sa-get-started.md) | Sales invoices and project invoices |
 | Saudi Arabia | [Saudi Arabian Zatca compliance check (SA)](../mea/gs-e-invoicing-sa-onboarding.md) | Onboarding process |
 | Spain | Spanish electronic invoice (ES) | Sales invoices and project invoices |
+| Uruguay | [Uruguay electronic invoice (UY)](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md) | Electronic fiscal receipts (CFE)  |
 
 > [!IMPORTANT]
 > We were planning to transition NF-e/NFS-e and CFDI to our Electronic Invoicing service. For quite a while, the features and formats for NF-e/NFS-e have been in preview in Brazil, and those for CFDI have been in preview in Mexico. However, because of a lack of interest in adoption and transition to the new approach, we are still evaluating the timing of the switch to the Electronic Invoicing service platform in those countries. The format of these documents won't contain the latest compliance changes that were published since the preview release. In the meantime, we recommend continuing that you use our built-in X++ implementations in Brazil and Mexico. **These implementations are kept up to date with the legislation.** For more information, see [Brazil NF-e process overview](../brazil/latam-bra-nf-e-process.md) and [Electronic invoices (CFDI)](../iberoamerica/latam-mex-CFDI-electronic-invoices.md).
