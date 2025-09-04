@@ -648,7 +648,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     1. Verify that all nodes appear as green.
 
     > [!IMPORTANT]
-    > - If your client machine is a server machine (for example, a machine that's running Windows Server 2019), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
+    > - If your client machine is a server machine (for example, a machine that's running Windows Server 2022), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
     > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
 
 ### <a name="configurelcs"></a>Step 16. Configure Lifecycle Services connectivity for the deployment
@@ -942,7 +942,7 @@ You've now completed the setup of the infrastructure. The following sections des
     ```
 
     > [!NOTE]
-    > Make sure that you select the correct SQL Server version for your installation: either version 2016 or version 2019.
+    > Make sure that you select the correct SQL Server version for your installation: either version 2016, 2019 or 2022.
 
 1. Save the configuration, and then select **Download configurations** to download the **localagent-config.json** configuration file.
 1. Copy the **localagent-config.json** file to the machine where the agent installer package is located.
