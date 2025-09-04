@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: install-set-up-deploy
 ms.custom: 
   - bap-template
-ms.date: 11/08/2024
+ms.date: 09/04/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-01-31 
@@ -708,8 +708,6 @@ You can verify that everything has been configured correctly by running the foll
 
 1. If you used self-signed certificates, export the certificate (.cer file), and install it in the trusted root of each Service Fabric node. You'll have only one certificate for all the nodes in your SQL Server cluster.
 
-> [!NOTE] 
-> For more information, see [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
 
 > [!IMPORTANT]
 > If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Tear down CredSSP, if remoting was used](#teardowncredssp) section later in this article.
@@ -942,7 +940,7 @@ You've now completed the setup of the infrastructure. The following sections des
     ```
 
     > [!NOTE]
-    > Make sure that you select the correct SQL Server version for your installation: either version 2016, 2019 or 2022.
+    > Make sure that you select the correct SQL Server version for your installation: either version 2016, version 2019 or version 2022.
 
 1. Save the configuration, and then select **Download configurations** to download the **localagent-config.json** configuration file.
 1. Copy the **localagent-config.json** file to the machine where the agent installer package is located.
