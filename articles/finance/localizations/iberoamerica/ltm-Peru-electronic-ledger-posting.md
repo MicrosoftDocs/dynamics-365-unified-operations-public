@@ -2,7 +2,7 @@
 title: Set up and generate an electronic ledger posting report for Peru
 description: Learn how to set up and generate an electronic ledger posting report for Peru in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
-ms.date: 04/15/2025
+ms.date: 09/04/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
