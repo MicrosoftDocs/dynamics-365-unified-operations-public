@@ -4,7 +4,7 @@ description: Learn how to set up and use the Customer invoice logging framework 
 author: JodiChristiansen
 ms.author: reetuchopra
 ms.topic: article
-ms.date: 08/13/2025
+ms.date: 08/14/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
