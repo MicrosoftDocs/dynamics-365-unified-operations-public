@@ -26,7 +26,7 @@ To add a CPI schedule, follow these steps.
 3. In the **Description** field, enter a description.
 4. On the **Consumer price index schedule** tab, select **Add**.
 5. In the **Consumer price index date** field, specify the date when the new CPI schedule becomes active.
-6. In the **Consumer price index schedule** field, enter the name that you entered in step 2.
+6. In the **Consumer price index schedule** field, enter the index value for the date that you entered in step 5.
 7. Select **Save**.
 
 To delete a CPI schedule date, follow these steps.
