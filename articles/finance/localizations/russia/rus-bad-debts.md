@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/08/2025
+ms.date: 09/05/2025
 ms.reviewer: johnmichalak
  
 ---
@@ -187,7 +187,7 @@ To set up a limit for the bad debts reserve in tax accounting, follow these step
 
    ![Creating a counter on the Counter setup page.](../media/rus-bad-debts-5.png)
 
-   For more information about how to set up sequences of calculation, see [Sequence of calculations](rus-set-up-deferrals.md#sequence-of-calculation).
+   For more information about how to set up sequences of calculation, see [Create a sequence of calculation](rus-set-up-deferrals.md#create-a-sequence-of-calculation).
 
 1. Go to the debts calculation models that you created earlier, and in the **Reserve limit** section, in the **Reserve limit sequence** field, enter the sequence for each model.
 
