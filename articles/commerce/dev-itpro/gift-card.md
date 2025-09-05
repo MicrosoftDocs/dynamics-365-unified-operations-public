@@ -144,9 +144,9 @@ The following steps show the sequence of actions a user experiences when the fea
     - If the gift card number isn't entered manually at this stage, then the user has to swipe the gift card after payment is completed.
 4. User specifies the amount. This action adds a gift card line to the transaction. However, the gift card isn't yet updated with this amount.
 5. User adds more gift cards or regular items, if needed.
-6. User takes payment. As soon as the required payment is captured, the system triggers an automatic checkout and this action activates the payment terminal for the customer to provide their PIN number or swipe their gift card as needed.
+6. User takes payment. As soon as the required payment is captured, the system triggers an automatic checkout, and this action activates the payment terminal for the customer to provide their PIN number or swipe their gift card as needed.
 7. If the gift card action is successful, then the transaction is completed.
-8. If the gift card action fails, then the system shows an error message below the failed gift card line stating "The gift card action cannot be completed. Please void this item.". After receiving the message, the cashier can attempt the checkout again and if the error was transient (for example, a network issue), the gift card action might succeed. But if there is a permanent issue (for example, the gift card is invalid), then the cashier must void the gift card line and try with another gift card.
+8. If the gift card action fails, then the system shows an error message below the failed gift card line stating "The gift card action cannot be completed. Please void this item.". After receiving the message, the cashier can attempt the checkout again and if the error was transient (for example, a network issue), the gift card action might succeed. But if there's a permanent issue (for example, the gift card is invalid), then the cashier must void the gift card line and try with another gift card.
 
 ### Update the button grid
 
