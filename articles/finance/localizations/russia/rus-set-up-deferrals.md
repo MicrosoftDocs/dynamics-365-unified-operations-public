@@ -21,12 +21,12 @@ This article explains how to set up deferrals for Russia in Microsoft Dynamics 3
 Deferrals are expense types that are stored differently in general accounting principles and tax accounting principles. To use the deferral functionality, you must complete the following setup:
 
 - [Write-off methods](#write-off-methods)
-- [Value models](#value-models)
-- [Posting profiles](#posting-profiles)
-- [Sequence of calculation](#sequence-of-calculation)
-- [Deferrals groups](#deferrals-groups)
-- [General ledger parameters](#general-ledger-parameters)
-- [Deferrals](#deferrals)
+- [Value models](#create-value-models)
+- [Posting profiles](#post-profiles)
+- [Sequence of calculation](#create-a-sequence-of-calculation)
+- [Deferrals groups](#create-deferrals-groups)
+- [General ledger parameters](#set-up-general-ledger-parameters)
+- [Deferrals](#create-and-configure-deferrals)
 
 ## Write-off methods
 
