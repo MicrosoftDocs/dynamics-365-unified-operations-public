@@ -1,7 +1,7 @@
 --- 
 title: Define audit policies for source documents
-description: Learn how to set up and run audit policy rules and define audit policies for source documents, including a step-by-step process using the USMF demo company.
-author: panolte
+description: Learn how to set up and run audit policy rules and define audit policies for source documents.
+author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
 ms.date: 04/05/2024
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up and run audit policy rules. The example uses expense reports with the hotel expense type. This procedure uses the USMF demo company. The auditor role contains the correct permissions in order to perform these tasks.
+This article explains how to set up and run audit policy rules. The example uses expense reports with the hotel expense type. This procedure uses the USMF demo company. The auditor role contains the correct permissions to perform these tasks.
 
 1. Go to **Audit workbench > Setup > Policy rule type**.
 2. Select **New**.
