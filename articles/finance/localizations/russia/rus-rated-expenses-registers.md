@@ -6,7 +6,7 @@ ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/29/2025
+ms.date: 09/05/2025
 ms.reviewer: johnmichalak
 ms.search.validFrom: 2018-10-31
 
@@ -56,7 +56,7 @@ To set up rates, follow these steps.
 
 #### Create and set up the sequence of calculation 
 
-The sequence of calculation contains counters that implement several arithmetic and logical operations on strings of certain types for a specified period. Learn more in [Set up deferrals (Russia)](rus-set-up-deferrals.md#sequence-of-calculation).
+The sequence of calculation contains counters that implement several arithmetic and logical operations on strings of certain types for a specified period. Learn more in [Create a sequence of calculation](rus-set-up-deferrals.md#create-a-sequence-of-calculation).
 
 To create a sequence of calculation for rated expenses, follow these steps.
 
