@@ -97,7 +97,6 @@ To create a VAT ID for the legal entity, follow these steps:
 	1. In the **Registration type** field, enter or select a value that is created for Türkiye.
 	1. In the **Registration number** field, enter a value. For example, specify a VAT ID. The ID must have the same format as the registration type.
 	1. In the **Issuing agency** field, select the appropriate tax office.
-    1. Select a tax office in the **Issuing agency** field in **Registration ID** FastTab. 
 	1. On the **General** tab, in the **Effective** field, enter a date and then select **Save** if it is needed.
 	1. Select **Save** and close the page.
 
@@ -117,7 +116,7 @@ To create a VAT ID for a customer or a vendor, follow these steps:
 	1. Select **Add** on the **Overview** Tab in **Registration ID** FastTab.
 	1. In the **Registration type** field, enter or select a value that is created for Türkiye.
 	1. In the **Registration number** field, enter a value. For example, specify a VAT ID. The ID must have the same format as the registration type.
-    1. Select a tax office in the **Issuing agency** field in **Registration ID** FastTab. 
+    1. In the **Issuing agency** field, select the appropriate tax office. 
 	1. On the **General** tab, in the **Effective** field, enter a date and then select **Save** if it is needed.
 	1. Select **Save** and close the page.
 
