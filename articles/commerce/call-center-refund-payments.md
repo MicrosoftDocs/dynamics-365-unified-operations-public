@@ -77,7 +77,7 @@ When payments on a replacement order are processed, organizations have two optio
 A setting of **Yes** for the **Apply credit** option is applicable only when the return order will be linked to a replacement order. In this case, the customer payment method that will be used to systematically pay for the return and the exchange order is defined by the **Apply credits payment method** field on the **RMA/Return** tab of the **Call center parameters** page. Only a payment of the **Customer** function payment type can be selected in this field.
 
 > [!NOTE]
-> For a return order that has no linked replacement order, a setting of **Yes** for the **Apply credit** option will have no effect on the return order payment logic, because this setting applies only to replacement orders.
+> For a referenced return order i.e., a retun order linked to a sales order, that has no associated replacement order, a setting of **Yes** for the **Apply credit** option will have no effect on the return order payment logic, because this setting applies only to replacement orders. However, for an unreferenced return order, that has no associated replacement order, a setting of **Yes** for the **Apply credit** option will use the payment method that is selected in the **Apply credits payment method** field on the call center parameters.
 
 ![Apply credits payment method field on the RMA/Return tab of the Call center parameters page.](media/callcenterrefundparameters1.png)
 
