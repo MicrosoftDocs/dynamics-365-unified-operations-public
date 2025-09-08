@@ -341,6 +341,16 @@ When you want to create a customer invoice in general journals, use of the seria
     - If the vendor account has a *credit* amount, you can't select the serial prefix. Instead, you must set the **Invoice** field to the invoice number that the vendor provided.
     - If the vendor account has a *debit* amount, you must select the serial prefix in the **Serial prefix** field.
 
+The **Use preprinted serial number in journal** parameter is available on the **Journal names** page.  
+To access this setting, go to **General ledger > Journal setup > Journal names**, and then select the relevant journal name. On the **General** FastTab, you can find the **Use preprinted serial number in journal** parameter.  
+
+When this option is set to **Yes**, a predefined serial prefix at the beginning of the serial number is used to assign to the invoices. This ensures that the posted journal lines follow the required serial numbering rules for Türkiye, where invoices and packing slips must use legally compliant preprinted serial numbers.  
+
+Enabling this parameter means that the journal will use the preprinted serial numbering logic defined in the **Preprinted serial numbers** setup. This helps guarantee compliance with UBL-TR requirements for e-invoice documents, and ensures that each journal posting uses a valid, traceable serial prefix.  
+
+> [!NOTE]  
+> Enable this parameter only for journal types that are required to use preprinted serial numbers. For other journal types where continuous or system-generated numbering is sufficient, leave this option set to **No**.  
+
 After the posting process, you can find the preprinted serial number that is assigned to the invoice by looking in the **Invoice** field on the **Invoice journal** page.
 
 > [!NOTE]
@@ -348,9 +358,5 @@ After the posting process, you can find the preprinted serial number that is ass
 >
 > - If the **Default prefix** option on the **Preprinted serial numbers** page is selected for a serial prefix for *Invoice* document type, the serial prefix is automatically selected in the **Serial prefix** field.
 > - If the **Default prefix** option isn't selected, the serial prefix must be manually selected in the **Serial prefix** field.
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
