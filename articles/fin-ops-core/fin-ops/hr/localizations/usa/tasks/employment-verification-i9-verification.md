@@ -14,7 +14,7 @@ ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document
 ms.dyn365.ops.version: Version 7.0.0
 ---
 
-# Employment verification i9 verification
+# Employment verification I-9 verification
 
 [!include [banner](../../../../includes/banner.md)]
 
