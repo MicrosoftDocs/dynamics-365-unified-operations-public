@@ -37,6 +37,7 @@ This section will contain a table that lists the enhancements that are included 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 | System Administration | Batch Telemetry integrates with Application Insights | As an enhancement to the existing **Monitoring and Telemetry** feature, the platform is expanding its capabilities to include **Batch telemetry integration with Application Insights**. This update introduces a robust telemetry pipeline that enables visibility into critical batch job behaviors directly within the customer's Azure Application Insights instance. Teams can monitor execution timelines, detect throttling, track task distribution, and capture failure diagnostics to eliminate the need for manual incident reporting. This feature isn't limited to future releases. It will also be **backported to version 10.0.44**, ensuring broader availability and immediate impact for customers seeking improved observability and reduced operational overhead. | Feature Management |
+| Copilot | File attachments with Copilot for finance and operations apps | With this release you can add file and screenshot attachments to your Copilot chat session. See [Use file attachments in Copilot for finance and operations apps](../../dev-itpro/copilot/copilot-attachments.md) for more information. | Feature Management |
 
 
 ### Bug fixes
