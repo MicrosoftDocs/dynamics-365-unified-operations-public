@@ -94,3 +94,5 @@ After saving the topic, and publishing the changes to the agent, you can now try
 4. In the Copilot chat, with the screenshot attached, type: "Help me troubleshoot this error."
 
 The topic should then use the prompt action to analyze the provided screenshot, and return guidance to the user for troubleshooting the error in the screenshot.
+
+![Troubleshooting error messages with prompts viewing screenshot attachments in Copilot](media/copilot-attachments.png)
