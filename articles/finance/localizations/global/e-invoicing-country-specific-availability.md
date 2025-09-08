@@ -28,11 +28,11 @@ The following table shows the Electronic invoicing globalization features that a
 |-------------------|----------------------------|--------------------|
 | Australia | [Electronic invoicing for Australia and New Zealand](../apac/GS-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
 | Austria | Austrian electronic invoices (AT) | Sales invoices and project invoices |
-| Belgium | [Belgian electronic invoice (BE)](belgium/emea-bel-e-invoices) | Sales invoices and project invoices |
+| Belgium | [Belgian electronic invoice (BE)](belgium/emea-bel-e-invoices.md) | Sales invoices and project invoices |
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chile-elec-invo-conncection.md) | Sales invoices, project invoices, and packing slips |
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chl-vend-e-invoice.md) | Import vendor invoices |
 | Costa Rica | [Costa Rica electronic invoice (CRI)](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md) | Sales invoices and project invoices |
-| Denmark | [Danish electronic invoice (DK)](denmark/gs-e-invoicing-dk-get-started) | Sales invoices and project invoices |
+| Denmark | [Danish electronic invoice (DK)](denmark/gs-e-invoicing-dk-get-started.md) | Sales invoices and project invoices |
 | Egypt | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
 | Estonia | Estonian electronic invoice (EE) | Sales invoices and project invoices |
 | Europe | PEPPOL electronic invoice | Pan-European Public Procurement Online (PEPPOL) sales invoices and project invoices |
