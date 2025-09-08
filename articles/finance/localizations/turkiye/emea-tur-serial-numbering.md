@@ -14,7 +14,6 @@ ms.custom:
   - bap-template
 ---
 
-
 # Use continuous serial numbering of packing slips and invoices
 
 [!INCLUDE[banner](../../includes/banner.md)]
@@ -331,7 +330,7 @@ After the posting process, you can find the preprinted serial number that is ass
 
 This section explains how to use a serial prefix in general journals.
 
-When you want to create a customer invoice in general journals, use of the serial prefix depends on whether the account type is *Customer* or *Vendor*, and whether the amount of the account is a debit or a credit.
+When you want to create an invoice in general journals, use of the serial prefix depends on whether the account type is *Customer* or *Vendor*, and whether the amount of the account is a debit or a credit.
 
 - If the account type is *Customer*:
     - If the customer account has a *credit* amount, you can't select the serial prefix. Instead, you must set the **Invoice** field to the invoice number from the document that you received from the customer.
@@ -343,8 +342,6 @@ When you want to create a customer invoice in general journals, use of the seria
 
 The **Use preprinted serial number in journal** parameter is available on the **Journal names** page.  
 To access this setting, go to **General ledger > Journal setup > Journal names**, and then select the relevant journal name. On the **General** FastTab, you can find the **Use preprinted serial number in journal** parameter.  
-
-When this option is set to **Yes**, a predefined serial prefix at the beginning of the serial number is used to assign to the invoices. This ensures that the posted journal lines follow the required serial numbering rules for Türkiye, where invoices and packing slips must use legally compliant preprinted serial numbers.  
 
 Enabling this parameter means that the journal will use the preprinted serial numbering logic defined in the **Preprinted serial numbers** setup. This helps guarantee compliance with UBL-TR requirements for e-invoice documents, and ensures that each journal posting uses a valid, traceable serial prefix.  
 
