@@ -2343,6 +2343,8 @@ items:
         href: ../fin-ops/copilot/immersive-home.md
       - name: Chat with finance and operations data
         href: copilot/chat-with-fno-data.md
+      - name: Use attachments with Copilot
+        href: copilot/copilot-attachments.md
       - name: Enable Copilot capabilities and features
         items:
         - name: Enable Copilot capabilities in finance and operations apps
