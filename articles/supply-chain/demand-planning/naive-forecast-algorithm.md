@@ -1,20 +1,23 @@
 ---
-title: Naive forecasting
+title: Naive forecasting (preview)
 description: Learn about naive forecasting, which is a method to produce forecasts based on low data.
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: concept-article
-ms.date: 08/28/2025
+ms.date: 09/10/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Naive forecasting
+# Naive forecasting (preview)
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Forecasting models are useful for creating accurate forecasts when they have access to large amounts of data. However, in many cases, such data isn't available, leading to inaccurate results like overstocking or understocking. Naive forecasting is a method for handling small datasets that ensures forecasts are predictable and tied to historical data.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## The idea behind naive forecasting
 
@@ -34,7 +37,7 @@ When confronted with unpredictable outcomes, demand planning can use naive forec
 
 Naive forecasting applies when both of the following conditions are met:
 
-1. You must use the *Best fit model - version 2* (or newer) forecasting algorithm. Naive forecasting isn't available for other forecast algorithms or as a separate algorithm.
+1. You must use the *Best fit model - version 2 (preview)* (or newer) forecasting algorithm. Naive forecasting isn't available for other forecast algorithms or as a separate algorithm.
 1. Your dataset size is below the defined threshold, with no seasonality automatically detected. The following rules apply:
     - If auto seasonality detection is on but no seasonality pattern is detected, Demand planning uses a threshold of 14 days, 12 weeks, or 12 months (depending on the size of the time buckets in your input time series). If the number of data points is less than double the threshold, it's considered low data, and naive forecasting applies.
     - If auto seasonality detection is on and a seasonality pattern is detected, Demand planning applies a regular forecasting model.
@@ -62,7 +65,7 @@ The following image shows an example of the *copy and linear interpolation* meth
 
 ### Averaged copy
 
-When the input dataset is bigger than the threshold but smaller than double the threshold, naive forecasting uses the *averaged copy* method. This method takes an average of values seen below and above the threshold and then applies them to calculate predictions. This method ensures that calculated values reflect changes in the data and follow the seasonality determined by the threshold.
+When the input dataset is larger than the threshold but smaller than double the threshold, naive forecasting uses the *averaged copy* method. This method takes an average of values seen before and after the threshold and then uses these values to calculate predictions. This method ensures that calculated values reflect changes in the data and follow the seasonality determined by the threshold.
 
 The following image shows an example of the *averaged copy* method. Input data is shown in green and forecasted data is shown in blue. Because there are 16 input data points, and the threshold is 12, the algorithm applies the *averaged copy* method, which results in the input values for July 2025 to February 2026 being copied to July 2026 to February 2027, with values for March to June 2027 being an average of values for March to June 2025 and March to June 2026.
 
