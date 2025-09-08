@@ -2386,6 +2386,8 @@
                       href: localizations/iberoamerica/ltm-Colombia-purchase-vat-book.md
                     - name: Configure electronic invoice parameters for Colombia
                       href: localizations/iberoamerica/ltm-colombia-configure-electronic-invoice.md
+                    - name: Configure printing for the Withholding certificate format for Colombia
+                      href: localizations/iberoamerica/ltm-colombia-withholding-certificate.md
                     - name: Format 1001 file for Colombia issue configuration
                       href: localizations/iberoamerica/ltm-Colombia-format-1001.md
                     - name: Format 1003 file for Colombia configuration
@@ -4388,6 +4390,8 @@
                       href: localizations/iberoamerica/ltm-configure-invoices-uruguay.md
                     - name: Create customer and vendor records with an address in Uruguay
                       href: localizations/iberoamerica/ltm-create-customer-vendor-uruguay.md
+                    - name: Get started with Electronic invoicing for Uruguay
+                      href: localizations/iberoamerica/ltm-uruguay-electronic-invoice-configuration.md
                     - name: Set up a legal entity and tax information for Uruguay
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay.md
                 - name: Venezuela

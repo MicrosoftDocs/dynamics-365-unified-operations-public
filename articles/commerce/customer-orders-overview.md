@@ -184,7 +184,7 @@ Customer orders can be created in POS in either synchronous mode or asynchronous
 
 To enable customer orders to be created in asynchronous mode, follow these steps.
 
-1. In headquarters, go to **Retail and Commerce \> Channel setup \> Online store setup \> Functionality profiles**. 
+1. In headquarters, go to **Retail and Commerce \> Channel setup \> POS profiles \> Functionality profiles**. 
 1. Select the functionality profile that corresponds to the store that you want to enable asynchronous order creation for.
 1. On the **General** FastTab, select from the following configuration options:
 

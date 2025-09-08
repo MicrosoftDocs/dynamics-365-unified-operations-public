@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Applicants in the HR Recruiting app (preview)
+title: Applicants in the HR Recruiting app 
 description: This article describes applicants and activities in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/01/2024
+ms.date: 08/11/2025
 ms.topic: article
 # optional metadata
 
@@ -23,13 +23,9 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Applicants in HR recruiting app (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Applicants in HR recruiting app
 
 This article describes applicants and activities in the HR Recruiting app in Microsoft Dynamics 365 Human Resources. *Applicants* are candidates who submit applications for job vacancies. Recruiters can view applicants by going to **Job ads** \> **Applicants**.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## View the applications for a job
 
