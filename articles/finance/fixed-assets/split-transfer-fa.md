@@ -64,9 +64,10 @@ Map the following values before you split and transfer fixed assets.
 -	**Asset groups**: Map source asset groups to destination groups (for example, COPM → Computers).
 -	**Asset books**: Ensure posting layers match between source and destination books.
 -	**Asset book fields**: Map fields such as acquisition method and depreciation. 
-   -	**Copy**: Replicate values from the source asset to the destination asset. When a field value is called from a table, values in the destination legal entity are created.
-   - **Constant**: Assign a fixed value. For example, if you set the Acquisition method field in the asset book to Transferred, that value is assigned to the destination asset.
-   - **Map values**: Translate values between entities. For example, if you map the Acquisition method field to Purchased in the source asset, and map that to Transferred in the destination asset.
+      -	**Copy**: Replicate values from the source asset to the destination asset. When a field value is called from a table, values in the destination legal entity are created.
+      - **Constant**: Assign a fixed value. For example, if you set the **Acquisition method** field in the asset book to **Transferred**, that value is assigned to the destination asset.
+      - **Map values**: Translate values between entities. For example, if you map the **Acquisition method** field to **Purchased** in the source asset, and map that to **Transferred** in the destination asset.
+
    > [!NOTE]
    > The **Copy** and **Map** options enable **Assign field values** so you can define the constant value or mapping values.
 
