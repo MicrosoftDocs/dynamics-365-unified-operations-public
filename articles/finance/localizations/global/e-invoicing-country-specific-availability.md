@@ -28,11 +28,11 @@ The following table shows the Electronic invoicing globalization features that a
 |-------------------|----------------------------|--------------------|
 | Australia | [Electronic invoicing for Australia and New Zealand](../apac/GS-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
 | Austria | Austrian electronic invoices (AT) | Sales invoices and project invoices |
-| Belgium | Belgian electronic invoice (BE) | Sales invoices and project invoices |
+| Belgium | [Belgian electronic invoice (BE)](belgium/emea-bel-e-invoices) | Sales invoices and project invoices |
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chile-elec-invo-conncection.md) | Sales invoices, project invoices, and packing slips |
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chl-vend-e-invoice.md) | Import vendor invoices |
 | Costa Rica | [Costa Rica electronic invoice (CRI)](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md) | Sales invoices and project invoices |
-| Denmark | Danish electronic invoice (DK) | Sales invoices and project invoices |
+| Denmark | [Danish electronic invoice (DK)](denmark/gs-e-invoicing-dk-get-started) | Sales invoices and project invoices |
 | Egypt | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
 | Estonia | Estonian electronic invoice (EE) | Sales invoices and project invoices |
 | Europe | PEPPOL electronic invoice | Pan-European Public Procurement Online (PEPPOL) sales invoices and project invoices |
@@ -51,6 +51,7 @@ The following table shows the Electronic invoicing globalization features that a
 | Saudi Arabia | [Saudi Arabian Zatca submission (SA)](../mea/gs-e-invoicing-sa-get-started.md) | Sales invoices and project invoices |
 | Saudi Arabia | [Saudi Arabian Zatca compliance check (SA)](../mea/gs-e-invoicing-sa-onboarding.md) | Onboarding process |
 | Spain | Spanish electronic invoice (ES) | Sales invoices and project invoices |
+| Uruguay | [Uruguay Electronic Invoice (UY)](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md) | Sales invoices, project invoices, and packing slips |
 
 > [!IMPORTANT]
 > We were planning to transition NF-e/NFS-e and CFDI to our Electronic Invoicing service. For quite a while, the features and formats for NF-e/NFS-e have been in preview in Brazil, and those for CFDI have been in preview in Mexico. However, because of a lack of interest in adoption and transition to the new approach, we are still evaluating the timing of the switch to the Electronic Invoicing service platform in those countries/regions. The format of these documents won't contain the latest compliance changes that were published since the preview release. In the meantime, we recommend continuing that you use our built-in X++ implementations in Brazil and Mexico. **These implementations are kept up to date with the legislation.** For more information, see [Brazil NF-e process overview](../brazil/latam-bra-nf-e-process.md) and [Electronic invoices (CFDI)](../iberoamerica/latam-mex-CFDI-electronic-invoices.md).
