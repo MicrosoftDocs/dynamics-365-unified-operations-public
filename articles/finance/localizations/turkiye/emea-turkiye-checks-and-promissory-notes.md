@@ -4,7 +4,7 @@ description: Learn how to use checks and promissory notes in the Republic of Tü
 author: v-omerorhan 
 ms.author: v-omerorhan 
 ms.topic: how-to 
-ms.date: 09/02/2025
+ms.date: 09/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye 
 ms.search.validFrom: 2020-02-03 
@@ -38,7 +38,7 @@ Key capabilities of the **Check and promissory note operations** feature include
 
 This section provides general information about the parameters for the **Check and promissory note operations** feature for Türkiye.
 
-The **Check and promissory note parameters** page allows you to define company-wide settings for managing the lifecycle of checks and promissory notes. 
+The **Check and promissory note parameters** page defines company-wide settings for managing the lifecycle of checks and promissory notes. 
 These parameters determine how documents behave in journals, which default accounts are used, and how legal requirements apply.
 
 Access the **Check and promissory note parameters** page by going to **Cash and bank management > Setup > Check and promissory note operations > Check and promissory note parameters**.
@@ -49,35 +49,35 @@ Here are the details for the fields:
 
 | Field | Description |
 |------------|-------------|
-| Settlement status | Defines the default settlement behavior for checks and promissory notes. If set to _None_, the system doesn't apply automatic settlement when transactions are posted. |
-| Customer method of payment | Specifies the default method of payment to be used for customers when recording check or promissory note transactions. |
-| Vendor method of payment | Specifies the default method of payment to be used for vendors during check or promissory note operations. |
-| Portfolio account type | Indicates the type of account used to represent portfolios in accounting entries. Typically set to _Bank_ but can vary depending on how portfolios are configured. |
-| Use due date | Lets you control due dates on check and promissory note documents. When turned on, the system tracks and validates due dates during operations. |
+| Settlement status | Defines the default settlement behavior for checks and promissory notes. If set to **None**, the system doesn't apply automatic settlement when transactions are posted. |
+| Customer method of payment | Specifies the default method of payment to use for customers when recording check or promissory note transactions. |
+| Vendor method of payment | Specifies the default method of payment to use for vendors during check or promissory note operations. |
+| Portfolio account type | Indicates the type of account used to represent portfolios in accounting entries. Typically set to **Bank** but can vary depending on how portfolios are configured. |
+| Use due date | Controls due dates on check and promissory note documents. When turned on, the system tracks and validates due dates during operations. |
 | The Printed number field is mandatory | If enabled, the check or note number must be entered before posting a transaction. This ensures traceability of printed documents. |
-| Control of out date for check | When enabled, this prevents entering an issue (out) date later than the check's due date. This ensures compliance with date logic. |
-| Is reverse date | If enabled, the system allows reversal postings to use the original transaction’s date, which is important for maintaining accurate historical records. |
+| Control of out date for check | When enabled, prevents entering an issue (out) date later than the check's due date. This ensures compliance with date logic. |
+| Is reverse date | If enabled, the system supports reversal postings to use the original transaction’s date, which is important for maintaining accurate historical records. |
 
 ### Rediscount Tab
 
-#### _Overview_ Tab
+#### Overview Tab
 
 | Field name | Description |
 |------------|-------------|
 | Journal name | Specifies the default journal used when posting rediscount transactions. This journal must already exist and be set up under **General ledger > Journal names**. |
-| Exchange rate type | Defines which exchange rate type used for rediscount calculations involving foreign currency checks or promissory notes. For example, _Forex Buying_ or _Banknote Buying_. |
-| Detail level | Determines the level of detail shown in the rediscount journal lines. Options typically include _Details_ (per check/note) or _Summary_ (per portfolio or account). |
-| Interest calculation type | Selects the basis on which interest is calculated. The option _Calculated period date_ means the interest is calculated based on the actual number of days between the posting date and maturity date. |
+| Exchange rate type | Defines which exchange rate type used for rediscount calculations involving foreign currency checks or promissory notes. For example, **Forex Buying** or **Banknote Buying**. |
+| Detail level | Determines the level of detail shown in the rediscount journal lines. Options typically include **Details** (per check/note) or **Summary** (per portfolio or account). |
+| Interest calculation type | Selects the basis on which interest is calculated. The option **Calculated period date** means the interest is calculated based on the actual number of days between the posting date and maturity date. |
 | Automatic posting | If you enable it, the system automatically posts rediscount entries after generation. If disabled, the entries must be reviewed and posted manually. |
 
-#### _Accounts receivable_ Tab
+#### Accounts receivable Tab
 
 | Field  | Description  |
 | ------ | ------- |
 | Rediscount account of notes receivable | Specifies the general ledger account used to post rediscounted notes receivable. |
 | Rediscount interest expense account    | Specifies the general ledger account for posting interest expenses from rediscount operations. |
 	
-#### _Accounts payable_ Tab
+#### Accounts payable Tab
 
 | Field  | Description |
 | ------- | -------- |
@@ -88,7 +88,7 @@ Here are the details for the fields:
 
 | Field | Description |
 |----|----|
-| COA dimension | Used for coding rediscount calculations at the chart of accounts level. |
+| COA dimension | Calculates coding rediscount at the chart of accounts level. |
 | Portfolio dimension | Links system check numbers to portfolio account dimensions (for example, 101, 103, etc.). |
 | Customer dimension | Applies if vendor (320*) or customer (120*) accounts track check numbers. |
 | Vendor dimension | Applies if vendor (320*) or customer (120*) accounts track check numbers. |
@@ -229,7 +229,7 @@ The transaction code is now available for use in the **Check and promissory note
 
 This section explains how to select bank and branch information for bank check records.
 The **Bank branch name** defines and manages the relationship between banks and their branches in Türkiye. This information is essential for processes that require accurate identification of bank and branch codes, such as bank check transactions.
-The **Bank branch name** allows users to configure and reference standardized bank and branch information based on the official registry used in the Turkish banking system. Each bank and its associated branches are uniquely identified by a combination of codes.
+The **Bank branch name** supports users to configure and reference standardized bank and branch information based on the official registry used in the Turkish banking system. Each bank and its associated branches are uniquely identified by a combination of codes.
 
 The following table explains each field.
 
@@ -395,15 +395,14 @@ The following table explains each function in the **Transaction** FastTab.
 | Delete rows            | Deletes the selected lines. |
 | Open transactions      | Displays the open transactions for the account associated with the selected journal line. You can mark the transactions to be settled. Once marked, the matching is completed automatically during posting. |
 | Settle transactions    | Displays the transactions for the accounts         |
-| Transactions           | Allows you to view all posted financial transactions associated with a specific customer or vendor account. It provides a detailed ledger view of each transaction, including invoices, payments, credit notes, settlements, and adjustments. |
+| Transactions           | View all posted financial transactions associated with a specific customer or vendor account. It provides a detailed ledger view of each transaction, including invoices, payments, credit notes, settlements, and adjustments. |
 
 ## Settle check and promissory note with open transactions
 
 This section explains the **Open Transactions** page, which you access from the **Lines** tab of the **Check and promissory note journal**. 
 Use this page to settle checks and promissory note payments with open transactions in customer or vendor accounts.
 
-To settle a transaction using a received check or promissory note, manually enter an amount to perform a partial settlement. 
-This allows you to apply only a portion of the check or note's value to the open transaction.
+To settle a transaction using a received check or promissory note, manually enter an amount to perform a partial settlement to apply only a portion of the check or note's value to the open transaction.
 
 The following table explains each field in the **Open transactions** page. 
 
@@ -600,7 +599,7 @@ To update a check or promissory note, use the **Check or promissory note update*
 > [!NOTE]
 > To use the generated company checks or promissory notes in the **Check and promissory note journal**, you must enter the **Amount** using the **Check and promissory note update** function.
 
-**Cancel** action allows you to invalidate checks or promissory notes that haven't been used in any financial transactions or that have been returned. 
+**Cancel** invalidates checks or promissory notes that haven't been used in any financial transactions or that have been returned. 
 You can only use this action for documents that meet the cancellation criteria based on their current status.
 
 You can use the **Check or promissory note transactions** to access the transactions for the relevant check or promissory note. 
@@ -767,7 +766,7 @@ The buttons on the **Check or promissory note transactions** page are explained 
 
 | Button | Description |
 |------|-------|
-| Reverse transaction  | Allows you to reverse a posted transaction.  |
+| Reverse transaction  | Reverse a posted transaction.  |
 | Check and promissory note definitions | Access the definitions and parameters set for checks and promissory notes. |
 | Check and promissory note journal | Access the check and promissory note journal entries.|
 | Journal | Access the posted check and promissory note journal entries related to checks and promissory notes.|
