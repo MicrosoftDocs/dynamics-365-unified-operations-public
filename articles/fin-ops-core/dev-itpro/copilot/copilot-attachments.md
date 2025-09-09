@@ -19,22 +19,19 @@ ms.search.region: Global
 
 The chat experience for Copilot for finance and operations apps lets you attach files, like a screenshot of the current browser window for your finance and operations apps client session. The file is part of your chat session, and you work with it by adding extended topics or tools to Copilot to create custom experiences for your environment.
 
-[!NOTE] By default, the chat experience for Copilot for finance and operations apps doesn't use the files or screenshots attached to the chat session. To use the attached files, extend Copilot for finance and operations apps with topics or tools needed for user experiences that use the attached files.
+> [!NOTE]
+> By default, the chat experience for Copilot for finance and operations apps doesn't use the files or screenshots attached to the chat session. To use the attached files, extend Copilot for finance and operations apps with topics or tools needed for user experiences that use the attached files.
 
 ## Prerequisites
 
-To use attachments with Copilot for finance and operations apps, make sure you meet these requirements:
+To use attachments with Copilot for finance and operations apps, make sure these requirements are met:
 - Finance and operations apps must be version 10.0.45 or later.
-- Install these solutions in the Power Platform environment. If they're not installed, see [Manage Dynamics 365 apps](/power-platform/admin/manage-apps) to learn how to install Dynamics 365 solution packages in Dataverse.
-
-        - The Copilot for finance and operations package, which includes:
-
-        - Copilot for finance and operations apps
-        - Copilot for finance and operations generation solution
-        - Copilot for finance and operations anchor solution
-
-    - Finance and Operations Virtual Entity
-
+- Install these solutions in the Microsoft Power Platform environment. If they're not installed, you can learn about installing Dynamics 365 solution packages in Dataverse in [Manage Dynamics 365 apps](/power-platform/admin/manage-apps).
+  - The Copilot for finance and operations package includes:
+    - Copilot for finance and operations apps.
+    - Copilot for finance and operations generation solution.
+    - Copilot for finance and operations anchor solution.
+  - Finance and Operations Virtual Entity.
 - Turn on the **Enable user attachments in Copilot sidecar** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Attaching files to a chat session
@@ -52,13 +49,13 @@ To add a screenshot attachment to your chat session with Copilot for finance and
 
 1. Select the **Attach** button in the chat window.
 1. Select **Add screenshot**.
-1. When prompted to let the client see the tab, select **Allow**.
+1. When prompted to give the client access to the tab, select **Allow**.
 
 ## Extending Copilot for finance and operations apps to use attachment files
 
-By default, the chat experience for Copilot for finance and operations apps doesn't use files or screenshots attached to the chat session. Copilot adds the files to a system variable, but you need to create custom topics or tools in Copilot for finance and operations apps to give Copilot the skills you want for users in your environment.
+By default, the chat experience for Copilot for finance and operations apps doesn't use files or screenshots attached to the chat session. Copilot adds the files to a system variable. To give Copilot the skills you want for users in your environment, you need to create custom topics or tools in Copilot for finance and operations apps.
 
-When you attach a file to the chat session, Copilot Studio adds it to the `System.Activity.Attachments` object, which has the table of file attachments. Use the file here, working with it like other files in Copilot Studio. To give Copilot more capabilities, create a topic or tool that uses file attachments and access the attached files in the table.
+When you attach a file to the chat session, Copilot Studio adds it to the **System.Activity.Attachments** object that has a table of file attachments. Use the file here, working with it like other files in Copilot Studio. To give Copilot more capabilities, create a topic or tool that uses file attachments and access the attached files in the table.
 
 ## Example extending Copilot with attachments
 
@@ -71,37 +68,37 @@ This example shows how to extend Copilot for finance and operations apps with a 
 To create a new topic, follow these steps.
 
 1. In Copilot Studio, open the **Copilot for finance and operations apps** agent.
-1. Select the **Topics** tab, and select **Add a topic >> From blank**.
+1. Select the **Topics** tab, and select **Add a topic \> From blank**.
 1. On the **Trigger** node, enter a description like: "This topic troubleshoots errors based on an attached screenshot. It helps with inputs such as 'Help me troubleshoot this error.'"
 
 ### Get the attachment file
 
 To get the attachment file, follow these steps.
 
-1. In the new topic, select **Add node** >> **Variable management** >> **Set a variable value** to add a new **Set variable value** node.
-1. Create a new local variable in the **Set variable** field called `attachment_data`.
-1. In the **To value** field, enter the formula `First(System.Activity.Attachments).Value`.
+1. In the new topic, select **Add node** \> **Variable management** \> **Set a variable value** to add a new **Set variable value** node.
+1. Create a new local variable in the **Set variable** field called **attachment_data**.
+1. In the **To value** field, enter the formula **First(System.Activity.Attachments).Value**.
 
 ### Create a prompt that analyzes the error screenshot
 
 To create a prompt that analyzes the error screenshot, follow these steps.
 
-1. After the **Set variable value** node, select **Add node** >> **Add tool** >> **New prompt**.
+1. After the **Set variable value** node, select **Add node** \> **Add tool** \> **New prompt**.
 1. Change the prompt title to **Troubleshoot FinOps errors**.
 1. In the **Model** selector, select a model that supports documents and images, like GPT-4.1 or GPT-5.0.
-1. In the **Instructions**, select **Add content** >> **Image or document**. Set the **Name** to **FinOpsScreenshot**.
+1. In the **Instructions**, select **Add content** \> **Image or document**. Set the **Name** to **FinOpsScreenshot**.
 1. In the **Instructions**, after the document input, enter a prompt indicating what you want the LLM to do with the screenshot. For example: "Analyze this image to determine what error messages are displayed. Then provide step-by-step instructions for troubleshooting the error."
 1. Save and close the prompt.
-1. In the Copilot Studio topic, in the **Input** field of the prompt action, select the `Topic.attachment_data` variable created in the previous step.
-1. In the **Output** field, create a new local variable called `troubleshooting_output`.
+1. In the Copilot Studio topic, in the **Input** field of the prompt action, select the **Topic.attachment_data** variable created in the previous step.
+1. In the **Output** field, create a new local variable called **troubleshooting_output**.
 
 ### Return the response to the user
 
 To return the response to the user, follow these steps.
 
-1. After the **Prompt** node, select **Add node** >> **Send a message**.
+1. After the **Prompt** node, select **Add node** \> **Send a message**.
 1. On the **Message** node, select the **Insert PowerFx expression** button.
-1. Enter the formula and insert into the message: `Topic.troubleshooting_output.text`.
+1. Enter the formula and insert into the message: **Topic.troubleshooting_output.text**.
 
 ### Test the attachments
 
