@@ -112,5 +112,3 @@ To test the attachments, follow these steps.
 1. In the Copilot chat, with the screenshot attached, type: "Help me troubleshoot this error."
 
 The topic then uses the prompt action to analyze the screenshot and returns guidance to the user for troubleshooting the error.
-
-:::image type="content" source="media/copilot-attachments-demo.png" alt-text="Screenshot of troubleshooting error messages with prompts viewing screenshot attachments in Copilot.":::
