@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: whats-new
-ms.date: 09/10/2025
+ms.date: 09/09/2025
 ms.custom: 
   - bap-template
 ---
@@ -22,7 +22,7 @@ This article lists new features, fixes, improvements, and known issues for each 
 This version of Demand planning enhances basic forecast calculations by adding two new features:
 
 - The new *Best fit model - version 2 (preview)* forecast algorithm now applies naive forecasting when an input time series contains a low number of data points. This approach helps improve statistics forecasting results when input data is limited, such as for newly added products. Learn more at [Naive forecasting](naive-forecast-algorithm.md).
-- Time freeze can now preserve all manual forecast adjustments. This option ensures that all manually adjusted cell values remain at the adjusted value even after you recalculate an existing forecast. No other freeze rules need to be set up. Learn more at [Limit automatic time series updates with time freezes](time-freeze.md).
+- Time freeze can now preserve all manual forecast adjustments. This option ensures that all manually adjusted cell values remain at the adjusted value even after you recalculate an existing forecast. No freeze rules are required. Learn more at [Limit automatic time series updates with time freezes](time-freeze.md).
 
 ### New fixes and improvements in version 1.0.0.3424
 
