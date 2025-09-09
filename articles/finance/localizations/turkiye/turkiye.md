@@ -63,6 +63,14 @@ It covers the necessary configurations and procedures to ensure accurate and com
 
 - [Use currency conversion](../../localizations/turkiye/emea-tur-currency-conversion.md)
 
+## Use checks and promissory notes
+
+This section provides guidance and a reference link on how to manage commercial payment instruments such as checks and promissory notes in Microsoft Dynamics 365 Finance for Türkiye.
+
+Learn how to configure portfolio codes, transaction codes, bank branches, and rediscount accounting, and manage the full lifecycle of checks and promissory notes including issuance, transfer, collection endorsement, and return.
+
+- [Use checks and promissory notes](../../localizations/turkiye/emea-turkiye-checks-and-promissory-notes.md)
+
 ## Generate e-Ledger
 
 This section provides guidance and a reference link on setting up and generating electronic ledger (e-Ledger) files and reports for Türkiye.
