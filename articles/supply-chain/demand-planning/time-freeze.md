@@ -75,7 +75,7 @@ As mentioned, you must explicitly configure each relevant *Forecast* and *Foreca
 1. Select the **Use time freeze** rules radio button.
 1. Use the **Time freeze rules** field to search for and select the time freeze rules that you want to apply to the step.
 
-## Freeze manual adjustments
+## Freeze manual adjustments for a selected forecast profile
 
 To prevent the system from automatically updating any time series cells that have been manually adjusted by a user, use the following procedure. You don't need to create any time freeze rules to use this feature.
 
