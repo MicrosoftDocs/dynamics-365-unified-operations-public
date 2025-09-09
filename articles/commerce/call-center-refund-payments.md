@@ -1,6 +1,6 @@
 ---
 title: Refund payment processing in call centers
-description: Learn how to generate payment refunds via call centers when returns are created or when orders or order lines are canceled in Microsoft Dynamics 365 Commerce.
+description: Learn how to generate payment refunds via call centers in Microsoft Dynamics 365 Commerce when returns are created or when orders or order lines are cancelled.
 author: hhainesms
 ms.date: 09/09/2025
 ms.topic: how-to
@@ -14,7 +14,7 @@ ms.custom:
 
 # Refund payment processing in call centers
 
-This article explains how to generate payment refunds via call centers when returns are created or when orders or order lines are canceled in Microsoft Dynamics 365 Commerce.
+This article explains how to generate payment refunds via call centers in Microsoft Dynamics 365 Commerce when returns are created or when orders or order lines are cancelled.
 
 A user who creates a return order for a customer as a call center user in Microsoft Dynamics 365 Commerce headquarters uses the **Return order** page to create the initial return materials authorization (RMA). The RMA defines the products that the customer wants to return or exchange, and it creates a linked return sales order that has an order type of **Returned order**. This linked returned order is used to track the posting of the returned inventory and any credit notes or payment refunds that are posted.
 
