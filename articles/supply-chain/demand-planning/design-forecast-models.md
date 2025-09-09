@@ -4,7 +4,7 @@ description: Learn about forecast models, which let you arrange and configure st
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 07/30/2025
+ms.date: 09/09/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -26,7 +26,7 @@ Follow these steps to create and customize a forecast model.
 
 1. On the navigation pane, select **Operations** \> **Forecast profiles**.
 1. Select the forecast profile that you want to create or customize a forecast model for.
-1. On the **Forecast model** tab, there is always at least one step of the *Input* type at the top of the flow chart. The model is processed from top to bottom, and the last step must be a step of the *Save* type. Add, remove, and arrange steps as you require, and configure settings for each of them. The illustration after this procedure provides guidelines.
+1. On the **Forecast model** tab, there's always at least one step of the *Input* type at the top of the flow chart. The model is processed from top to bottom, and the last step must be a step of the *Save* type. Add, remove, and arrange steps as you require, and configure settings for each of them. The illustration after this procedure provides guidelines.
 1. After you finish designing your forecast model, select the **Validate** button :::image type="icon" source="media/button-validate-model.png" border="false"::: in the upper-right corner. The system runs a few tests to validate that your model will work, and then provides feedback. Fix any issues that the validation test reports.
 1. Continue to work until your model is ready. Then, on the Action Pane, select **Save**.
 1. If you want to save your forecast model as a preset, so that it's available when you and other users create a new forecast profile, select the **Save as model template** button :::image type="icon" source="media/button-save-model-as-template.png" border="false"::: in the upper-right corner.
@@ -106,7 +106,7 @@ When you add a *Signal* step, the system automatically creates a parallel branch
     - *Seasonal and trend decomposition using Loess (STL)*
 
 - **Interquartile range multiplier** – This field is available only when the **Handle outliers** field is set to *IQR*. It affects the number of data points that are removed as outliers. Learn more about this setting in the [How the handle outliers options work](#handle-outlier-options) section.
-- **Correction methods** – This field is available only when the **Handle outliers** field is set to *IQR*. It affects how outliers are replaced in the data after they are removed. The available options are *Median smoothing* and *Mean smoothing*.
+- **Correction methods** – This field is available only when the **Handle outliers** field is set to *IQR*. It affects how outliers are replaced in the data after they're removed. The available options are *Median smoothing* and *Mean smoothing*.
 - **Select seasonality detection setting** – This field is available only when the **Handle outliers** field is set to *STL*. It influences the size of the window that is used for locally estimated scatterplot smoothing (LOESS) when the seasonal component is estimated. Learn more about this setting in the [Seasonality in forecasts](#seasonality) section.
 
 #### How to choose the method for handling outliers
@@ -141,7 +141,7 @@ A *high* multiplier increases the range within which data points are considered 
 
 A *low* multiplier decreases the range within which data points are considered non-outliers. Low multipliers lead to stricter boundaries and remove more data points. Therefore, the result is more sensitive to variations in the time series.
 
-When you use the IQR method to handle outliers, you must also set a **Correction method** value. This value affects how outliers are replaced in the data after they are removed. The available options are *Median smoothing* and *Mean smoothing*.
+When you use the IQR method to handle outliers, you must also set a **Correction method** value. This value affects how outliers are replaced in the data after they're removed. The available options are *Median smoothing* and *Mean smoothing*.
 
 ##### Seasonal and trend decomposition using LOESS
 
@@ -174,15 +174,18 @@ When you use the STL method to handle outliers, you must also set the **Select s
 - **Step name** – The specific name of the step. This name is also shown in the flowchart.
 - **Description** – A short description of the step.
 - **Created by** – The user who created the step.
-- **Model type** – Select the forecast algorithm to use. Learn about each of the available algorithms in [Demand forecasting algorithms](forecast-algorithm-types.md).
+- **Model type** – Select the forecast algorithm to use. Learn about each of the available algorithms in [Demand forecasting algorithms](forecast-algorithm-types.md). The following algorithms are available:
 
-    - *Best fit model*
+    - *Best fit model - version 1*
+    - *Best fit model - version 2 (preview)*
     - *ARIMA* (auto regressive integrated moving average)
     - *ETS* (error, trend, seasonality)
     - *Prophet*
 
 - **Select seasonality detection setting** – Choose how the forecast should identify seasonality patterns. Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule. Learn more about seasonality, seasonality auto detection, and seasonality hints in the [Seasonality in forecasts](#seasonality) section.
-- **Time freeze rules** – Search for and select the time freeze rules (if any) that should apply to the current step. You can add multiple time freeze rules if needed. Learn more in [Limit automatic time series updates with time freezes](time-freeze.md)
+- **Enable time freeze** – Select this check box if you want to enable [time freeze functionality](time-freeze.md) for the forecasts created by this step. Then select one of the following options:
+    - **Freeze manual adjustments** – Select this option to prevent the system from automatically updating any time series cells that have been manually adjusted by a user.
+    - **Use time freeze rules** – Select this option to apply one or more time freeze rules to the forecasts created by this step. Then use the **Time freeze rules** field to search for and select the relevant time freeze rules. Time freeze rules are defined as logical expressions and prevent the system from automatically updating time series cells that match that expression. For example, you could create a time freeze rule that lasts two months and applies to product ID *K0001* in color *Red*. Learn more about how to work with time freeze rules at [Limit automatic time series updates with time freezes](time-freeze.md).
 
 ### Forecast with signals steps (preview)
 
@@ -201,7 +204,9 @@ You can use this type of step only if your forecast model has at least two paral
 - **Description** – A short description of the step.
 - **Created by** – The user who created the step.
 - **Model type** – Select the forecast algorithm to use. In the current version, only the *XGBoost* algorithm is available.
-- **Time freeze rules** – Search for and select the time freeze rules (if any) that should apply to the current step. You can add multiple time freeze rules if needed. Learn more in [Limit automatic time series updates with time freezes](time-freeze.md)
+- **Enable time freeze** – Select this check box if you want to enable [time freeze functionality](time-freeze.md) for the forecasts created by this step. Then select one of the following options:
+    - **Freeze manual adjustments** – Select this option to prevent the system from automatically updating any time series cells that have been manually adjusted by a user.
+    - **Use time freeze rules** – Select this option to apply one or more time freeze rules to the forecasts created by this step. Then use the **Time freeze rules** field to search for and select the relevant time freeze rules. Time freeze rules are defined as logical expressions and prevent the system from automatically updating time series cells that match that expression. For example, you could create a time freeze rule that lasts two months and applies to product ID *K0001* in color *Red*. Learn more about how to work with time freeze rules at [Limit automatic time series updates with time freezes](time-freeze.md).
 
 ### Finance and operations steps
 
@@ -211,7 +216,7 @@ Learn how to set up Demand planning to connect to and use your Azure Machine Lea
 
 ### Custom steps
 
-It's possible for you to design your your own custom Microsoft Azure Machine Learning algorithms for demand forecasting, even if you've never used them with Dynamics 365 Supply Chain Management before. To use them with Demand planning, you must set up the connection to Azure and then add the forecast calculation to your forecast model using a *Custom* step instead of a *Forecast* step.
+It's possible for you to design your own custom Microsoft Azure Machine Learning algorithms for demand forecasting, even if you've never used them with Dynamics 365 Supply Chain Management before. To use them with Demand planning, you must set up the connection to Azure and then add the forecast calculation to your forecast model using a *Custom* step instead of a *Forecast* step.
 
 Learn how to set up Demand planning to connect to and use your Azure Machine Learning forecast algorithms in [Use your own custom Azure Machine Learning algorithms in Demand planning](custom-azure-machine-learning-algorithms.md).
 
