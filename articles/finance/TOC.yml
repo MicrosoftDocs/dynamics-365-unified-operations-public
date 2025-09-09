@@ -1756,6 +1756,8 @@
                               href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                             - name: Simplified electronic invoices in Commerce for Saudi Arabia
                               href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
+                        - name: Uruguay
+                          href: localizations//iberoamerica/ltm-uruguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance  
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Tax Calculation
@@ -2386,6 +2388,8 @@
                       href: localizations/iberoamerica/ltm-Colombia-purchase-vat-book.md
                     - name: Configure electronic invoice parameters for Colombia
                       href: localizations/iberoamerica/ltm-colombia-configure-electronic-invoice.md
+                    - name: Configure printing for the Withholding certificate format for Colombia
+                      href: localizations/iberoamerica/ltm-colombia-withholding-certificate.md
                     - name: Format 1001 file for Colombia issue configuration
                       href: localizations/iberoamerica/ltm-Colombia-format-1001.md
                     - name: Format 1003 file for Colombia configuration
@@ -4312,6 +4316,8 @@
                       href: localizations/turkiye/emea-tur-exchange-difference-invoicing.md
                     - name: Use currency conversion
                       href: localizations/turkiye/emea-tur-currency-conversion.md
+                    - name: Use checks and promissory notes
+                      href: localizations/turkiye/emea-turkiye-checks-and-promissory-notes.md                      
                     - name: Generate e-Ledger
                       href: localizations/turkiye/emea-tur-e-ledger.md
                 - name: United Arab Emirates (UAE)

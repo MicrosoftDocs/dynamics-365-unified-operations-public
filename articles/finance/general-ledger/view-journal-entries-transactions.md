@@ -4,7 +4,7 @@ description: Learn about the various ways that you can view journal entries and 
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 03/24/2024
+ms.date: 09/03/2025
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
