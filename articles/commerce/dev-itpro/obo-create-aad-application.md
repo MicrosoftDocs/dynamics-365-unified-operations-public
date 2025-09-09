@@ -56,12 +56,18 @@ After you complete the registration, locate the application that you created (fo
 1. In the **Description** field, enter a description of the client secret (for example, "clientsecret1").
 1. Under **Expires**, select the date when the secret expires.
 1. Select **Add**.
-1. Copy and save the secret value to use later. 
-
+1. Copy and save the secret value to use later.
     > [!IMPORTANT]
     > The secret value is never shown again after you leave the **Certificates & secrets** page. Therefore, be sure to copy it.
+![Example of adding a scope](../media/obo-add-scope2.png)
 
-![Example of adding a scope](../media/obo-add-scope2.png) 
+1. Select **Authentication** and check both **Access token** and **Id token**.
+![Example of adding token permission](../media/obo-grant-token-issued.png)
+1. Select **API Permissions** then select **Add a permission** Button
+1. New panel opens up, under **APIS my organization uses** search the name of this current app (like Account Manager ***)
+1. Then it will shows up the **user_impersonation** api that was added before, select it
+1. Now it shows up at the **Configured permissions** view, click **Grant admin consent** button and the api permission should be granted
+![Example of adding token permission](../media/obo-grant-api-permission.png)
 
 ## Configure an identity provider in your Azure B2C tenant for account manager sign-in to a B2B site
 
@@ -82,7 +88,7 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 
 1. In the **Client ID** field, enter the application ID that you copied earlier.
 1. In the **Client secret** field, enter the client secret that you copied earlier.
-1. In the **Scope** field, enter "openid profile `<Azure-B2B-Application-ID-URI>`/user_impersonation", where `<Azure-B2B-Application-ID-URI>` is the ID of the Azure B2B Microsoft Entra application (for example, "openid profile api://88760a037-ea1e-4e04-8e50-0a8dfcb4eb50/user_impersonation"). The **Scope** field format must be "openid profile `<scope-name>`", where `<scope-name>` is the scope name you created in the [Create a Microsoft Entra application for account manager sign-in in the Azure B2B tenant](#create-a-microsoft-entra-application-for-account-manager-sign-in-in-the-azure-b2b-tenant) procedure. 
+1. In the **Scope** field, enter "openid profile `<Azure-B2B-Application-ID-URI>`/user_impersonation", where `<Azure-B2B-Application-ID-URI>` is the ID of the Azure B2B Microsoft Entra application (for example, "openid profile api://88760a037-ea1e-4e04-8e50-0a8dfcb4eb50/user_impersonation"). The **Scope** field format must be "openid profile `<scope-name>`", where `<scope-name>` is the scope name you created in the [Create a Microsoft Entra application for account manager sign-in in the Azure B2B tenant](#create-a-microsoft-entra-application-for-account-manager-sign-in-in-the-azure-b2b-tenant) procedure.
 1. In the **Response type** field, select **code**.
 1. In the **Response mode** field, select **form\_post**.  
 1. Under **Identity provider claims mapping**, select the following claims:
@@ -99,6 +105,9 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 To add the Azure identity provider to a user flow, follow these steps.
 
 1. In your Microsoft Entra B2C tenant, select **User flows**.
+    > [!IMPORTANT]
+    > Sign-in-sign-up user flow is required. The error **AADB2C99002: User does not exist.** may result if you select only the Sign-in user flow.
+    > This error comes from Azure B2C services operating below Commerce. To use Sign-in only, you may need to consult with the Azure B2C support team directly to determine the supported configuration options.
 1. Select the user flow that you want to add the identity provider to.
 1. Under the **Custom identity providers**, select the identity provider that you added in the [Create a Microsoft Entra application for account manager sign-in in the Azure B2B tenant](#create-a-microsoft-entra-application-for-account-manager-sign-in-in-the-azure-b2b-tenant) procedure.
 1. In **Application Claims**, select **Identity Provider Access Token**, **Identity Provider**, **Email address**, **Given Name**, and **Surname**.
