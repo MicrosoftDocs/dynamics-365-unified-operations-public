@@ -4,7 +4,7 @@ description: Learn how to use file attachments with Copilot for finance and oper
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 06/03/2025
+ms.date: 09/10/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -58,7 +58,7 @@ When a file is attached to the chat session it is added to the `System.Activity.
 ## Example extending Copilot with attachments
 The following example shows how you can extend Copilot for finance and operations apps with a custom topic that accesses attachment files from the chat session to provide additional capabilities to the user. In this scenario, we add a topic that reviews an attached screenshot of an error from Copilot for finance and operations apps, and provides guidance to the user on how to resolve the error.
 
-[!NOTE] This example assumes [generative AI orchestration](https://learn.microsoft.com/microsoft-copilot-studio/advanced-generative-actions) is enabled for the agent.
+[!NOTE] This example assumes [generative AI orchestration](/microsoft-copilot-studio/advanced-generative-actions) is enabled for the agent.
 
 ### Create a new topic
 1. In Copilot Studio, open the **Copilot for finance and operations apps** agent.
