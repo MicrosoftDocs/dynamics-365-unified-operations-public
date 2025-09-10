@@ -70,4 +70,39 @@ Errors from the Data Management Framework (DMF) are logged to the Custom Events 
 - Quickly identify and address integration issues.
 - Monitor the health of data pipelines.
 
+## Batch telemetry (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+Telemetry from batch framework are logged to the CustomEvents table in your Azure Monitor Application Insights instance.
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - It is introduced as part of **PU69/10.0.45 (build >= 7.0.7690.21)** and backported to **PU68/10.0.44 (build >= 7.0.7606.126)**
+> - [!INCLUDE [preview-note-d365](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+To enable Batch telemetry, activate the following flights:
+- **BatchTelemetryConfigurationFlight**
+- **BatchThreadInfoTelemetryFlight**
+- **BatchTelemetryCallstackFlight**
+
+Once enabled, new telemetry signals will appear under **Configure** tab:
+
+- **Batch Start Time** - Provides telemetry when batch job starts.
+- **Batch Stop Time** - Provides telemetry when batch job completes, enabling duration tracking.
+- **Batch Throttling** - Captures throttling events and related system metrics (CPU, Memory, SQL DTU).
+- **Batch Failure** - Provides enhanced diagnostic details when a batch job or task fails to schedule correctly. This complements existing infolog error messages by correlating telemetry data with the originating batch job.
+- **Batch Queue** - Provides queue sizes for different queues in the Priority Based Scheduling Framework.
+- **Batch Threads** - Shows active threads, helping diagnose thread availability issues.
+
+With the integration of Batch telemetry, you'll be able to:
+- Diagnose performance and scheduling bottlenecks
+- Enable proactive monitoring through alerts and dashboards
+- Accelerate resolution of operational issues.
+
+### Resources
+
+- Plug-and-play dashboard: [Batch Monitoring Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/tree/main/Dashboards/AzureDataExplorer/Batch)
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
