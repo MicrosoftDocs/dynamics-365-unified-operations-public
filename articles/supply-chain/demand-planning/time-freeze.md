@@ -70,7 +70,7 @@ As mentioned, you must explicitly configure each relevant *Forecast* and *Foreca
 
 1. Create the time freeze records that you want to use, as described in the previous sections of this article.
 1. Create or open a relevant forecast profile as described in [Work with forecast profiles](forecast-profiles.md).
-1. On the **Forecast model** tab, crate or select the step that you want to add a time freeze rule to. The step must be a *Forecast* or *Forecast with signals* step. (Learn more in [Design forecast models](design-forecast-models.md).) If you're editing an existing step, open the **Actions** menu for the step and then select **Settings**.
+1. On the **Forecast model** tab, create or select the step that you want to add a time freeze rule to. The step must be a *Forecast* or *Forecast with signals* step. (Learn more in [Design forecast models](design-forecast-models.md).) If you're editing an existing step, open the **Actions** menu for the step and then select **Settings**.
 1. In the Freeze values section, select the **Enable time freeze** check box.
 1. Select the **Use time freeze** rules radio button.
 1. Use the **Time freeze rules** field to search for and select the time freeze rules that you want to apply to the step.
@@ -80,6 +80,6 @@ As mentioned, you must explicitly configure each relevant *Forecast* and *Foreca
 To prevent the system from automatically updating any time series cells that have been manually adjusted by a user, use the following procedure. You don't need to create any time freeze rules to use this feature.
 
 1. Create or open a relevant forecast profile as described in [Work with forecast profiles](forecast-profiles.md).
-1. On the **Forecast model** tab, crate or select the step that you want to add a time freeze rule to. The step must be a *Forecast* or *Forecast with signals* step. (Learn more in [Design forecast models](design-forecast-models.md).) If you're editing an existing step, open the **Actions** menu for the step and then select **Settings**.
+1. On the **Forecast model** tab, create or select the step that you want to add a time freeze rule to. The step must be a *Forecast* or *Forecast with signals* step. (Learn more in [Design forecast models](design-forecast-models.md).) If you're editing an existing step, open the **Actions** menu for the step and then select **Settings**.
 1. In the Freeze values section, select the **Enable time freeze** check box.
 1. Select the **Freeze manual adjustments** rules radio button.
