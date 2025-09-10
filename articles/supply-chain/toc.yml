@@ -2363,6 +2363,10 @@
           href: procurement/purchase-requisitions-overview.md
         - name: Purchase requisition workflow
           href: procurement/purchase-requisitions-workflow.md
+        - name: Create a requisition for consumption
+          href: procurement/tasks/create-requisition-consumption.md
+        - name: Create a requisition that uses an RFQ
+          href: procurement/tasks/create-requisition-uses-rfq.md
       - name: Request for quotations (RFQs)
         items:
         - name: Request for quotations (RFQs) overview
@@ -2417,8 +2421,6 @@
           href: procurement/tasks/create-project-purchase-order.md
         - name: Create a repeat purchase order
           href: procurement/tasks/create-repeat-purchase-order.md
-        - name: Create a requisition for consumption
-          href: procurement/tasks/create-requisition-consumption.md
       - name: Supplier Communications Agent (production ready preview)
         items:
         - name: Supplier Communications Agent overview
