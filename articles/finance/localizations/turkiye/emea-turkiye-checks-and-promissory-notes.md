@@ -580,7 +580,7 @@ The system lists these checks or promissory notes in the **Check and promissory 
 
 ### Update check or promissory note information
 
-This section provides guidance on updating existing check or promissory note records using the Update check or promissory note function in the Check and promissory note definitions page in Finance. 
+This section provides guidance on updating existing check or promissory note records using the **Update check or promissory note** function in the **Check and promissory note definitions** page in Finance. 
 
 This function is used when a previously registered check or promissory note needs to be corrected or updated with new values, such as changing the portfolio, amount, or due date.
 To update a check or promissory note, use the **Check or promissory note update** function: 
@@ -599,6 +599,65 @@ To update a check or promissory note, use the **Check or promissory note update*
 You can only use this action for documents that meet the cancellation criteria based on their current status.
 
 Use the **Check or promissory note transactions** to access the transactions for the relevant check or promissory note. 
+
+### Configure Electronic reporting for check designs
+
+This section describes how to configure [Electronic reporting (ER)](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) for company check designs in Microsoft Dynamics 365 Finance.
+ER formats allows you to generate printed layouts (such as Excel-based designs) for company checks that are issued as payment instruments.
+
+To use check designs, you must first import the required ER formats into your system. These formats are provided as part of the Turkish localization and can be downloaded from the Global repository.
+
+To generate the checks designs, you must open the **Electronic reporting** workspace (**Workspaces** \> **Electronic reporting**) and import the latest versions of the following ER configurations:
+
+- Payment check model
+
+    - (Preview) Payment check model (TR)
+    
+		- (Preview) Check (TR) (Excel)
+ 
+Learn more about how to import the ER formats in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+
+The following ER configurations must be imported into Dynamics 365 Finance to enable company check designs for Türkiye. These formats define the data model, mapping, and output layout for checks.  
+
+| Name | Description | Format type |  
+|----------|-----------------|-----------------|  
+| Payment check model | Standard ER model for check processing. Provides the data structure for check printing. | Model |  
+| (Preview) Payment check model (TR) | Localization model for Türkiye. Extends the standard check model with fields required by Turkish banking and legal requirements. | Model mapping |  
+| (Preview) Check (TR) (Excel) | Excel-based layout for company checks issued in Türkiye. Used to generate printable check forms during payment runs.| Format (Excel) |  
+
+> [!NOTE]  
+> Make sure to always import the latest version of these configurations from the **Global repository** before using check printing functionality.
+
+#### Assign check designs to bank accounts
+
+After the required ER formats are imported, you must assign the **Check (TR) (Excel)** format to the bank accounts that are linked to company check portfolios. This setup ensures that issued company checks use the correct ER layout during printing.
+
+To assign ER format, follow these steps:
+
+1. Go to **Cash and bank management > Setup > Check and promissory note operations > Check and promissory note portfolio codes**.  
+1. Select the portfolio code created for company checks, where **Portfolio type = Checks given**.  
+1. In the **Account number** field, identify the linked **Bank account** and open it.  
+1. On the bank account page, select **Set up > Layout > Check** in the Action Pane.  
+1. On the **General** FastTab, set the **Generic electronic export format** parameter to **Yes**.  
+1. In the **Export format configuration** field, select **(Preview) Check (TR) (Excel)**.  
+1. Save the changes.  
+
+After this setup, whenever you issue company checks using the defined portfolio, the system will automatically use the imported ER format to generate the printable check design.
+
+#### Export of company check reports
+
+Once the ER format has been assigned to the bank accounts of company check portfolios, you can generate and export the check design during vendor payment operations.
+
+To export the report, follow these steps:
+
+1. Go to **Cash and bank management > Check and promissory note operations > Check and promissory note journal**.  
+1. Select the journal that was created for company checks issued to a vendor.  
+1. On the **General** FastTab, in the **Reports** section, select **Check journal list**.  
+1. The system generates the company check report by using the ER configuration **(Preview) Check (TR) (Excel)**.  
+1. You can then export the report to Excel or print it according to your operational needs.  
+
+> [!NOTE]
+> You can customize the check layout by deriving the ER configuration. For example, you can adjust fields such as the printed check number, amount in words, or bank account details.
 
 ## Configure rediscount calculations for check and promissory note operations
 
