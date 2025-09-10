@@ -2,7 +2,7 @@
 title: Support for external gift cards (preview)
 description: Learn how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 author: BrianShook
-ms.date: 08/05/2025
+ms.date: 09/05/2025
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -135,6 +135,18 @@ To enable this feature functionality, follow these steps
 
 > [!IMPORTANT]
 > Microsoft strongly recommends that you enable this feature to streamline gift card operations and minimize risk.
+
+The following steps show the sequence of actions a user experiences when the feature is enabled.
+
+1. User initiates either the Issue gift card action or the Add money to gift card action.
+2. User manually enters the gift card number (optional). If the manual gift card entry option is enabled, the user has the option to manually enter the gift card number. However, entering the gift card number is optional at this point.
+    - If the gift card number is entered manually, then during the gift card activation the customer just has to enter the PIN on the payment terminal.
+    - If the gift card number isn't entered manually at this stage, then the user has to swipe the gift card after payment is completed.
+4. User specifies the amount. This action adds a gift card line to the transaction. However, the gift card isn't yet updated with this amount.
+5. User adds more gift cards or regular items, if needed.
+6. User takes payment. As soon as the required payment is captured, the system triggers an automatic checkout, and this action activates the payment terminal for the customer to provide their PIN number or swipe their gift card as needed.
+    - If the gift card action is successful, then the transaction is completed.
+    - If the gift card action fails, then the system shows an error message below the failed gift card line stating "The gift card action cannot be completed. Please void this item.". After receiving the message, the cashier can attempt the checkout again. If the error was transient (for example, a network issue), a subsequent gift card action might succeed. But if there's a permanent issue (for example, the gift card is invalid), then the cashier must void the gift card line and try with another gift card.
 
 ### Update the button grid
 

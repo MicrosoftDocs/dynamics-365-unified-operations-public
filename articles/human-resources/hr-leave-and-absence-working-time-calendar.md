@@ -4,7 +4,7 @@
 title: Create a working time calendar
 description: Define a working time calendar, holidays, and non-work times in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/09/2024
+ms.date: 09/03/2025
 ms.topic: how-to
 # optional metadata
 
@@ -34,7 +34,7 @@ To streamline time-off requests, configure these items for your organization:
 
 - Working time calendar
 - Holidays and closures
-- Non-work time
+- Nonwork time
 
 You can add the last two items while you're setting up a working time calendar. You can also configure or update them separately.
 
@@ -45,8 +45,8 @@ Set up at least one working time calendar that shows your days and hours of oper
 1. On the **Organization administration** page, select **Calendars**.
 2. Select **New** and enter a name and description for your calendar.
 3. Under **Generation options**, select the work days for your organization and enter work times. 
-   - To add a holiday or closure, select the **Add** button next to **Holidays and closures**.
-   - To add non-work time, like lunches or breaks, select **Add** under **Non-work time** and enter the name and time range.
+   - To add a holiday or closure, click **Add** next to **Holidays and closures**.
+   - To add nonwork time, like lunches or breaks, click **Add** under **Nonwork time** and enter the name and time range.
 
 4. Under **Days**, select **Generate** to generate the days in your calendar. Enter the date range for your calendar and then select **Generate days**.
 5. To add work schedules, under **Work schedule**, select **Add** and then enter the times for each work schedule.
@@ -58,14 +58,14 @@ You can add or change holidays and closures separately from a working time calen
 1. On the **Organization administration** page, select **Holidays and closures**.
 2. Select **New** and enter a name and date for the holiday or closure.
 
-## Configure non-work time
+## Configure nonwork time
 
 You can add or change non-work times separately from a working time calendar.
 
-1. On the **Organization administration** page, select **Non-work time**.
-2. Select **New** and enter a name and time range for the non-work time.
+1. On the **Organization administration** page, select **Nonwork time**.
+2. Select **New** and enter a name and time range for the nonwork time.
 
-If you've enabled the Leave and absence bank holiday corrections preview feature, Human Resources uses holidays and closure dates to determine the number of days to adjust for employees enrolled in the calendar.
+If you've enabled the **Leave and absence bank holiday corrections** preview feature, Human Resources uses holidays and closure dates to determine the number of days to adjust for employees enrolled in the calendar.
 
 ## See also
 

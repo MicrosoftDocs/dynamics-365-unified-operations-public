@@ -4,7 +4,7 @@ description: Learn how to create a consolidation account group and then add acco
 author: aprilolson
 ms.author: aolson
 ms.topic: how-to
-ms.date: 04/01/2024
+ms.date: 09/05/2025
 ms.custom:
 ms.reviewer: twheeloc   
 audience: Application User   

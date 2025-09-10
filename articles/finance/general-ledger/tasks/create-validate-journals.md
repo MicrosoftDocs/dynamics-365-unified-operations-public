@@ -1,12 +1,12 @@
 --- 
 title: Create and validate journals
-description: Learn about the procedure for creating and validating journals and journal lines, including a step-by-step process using the USMF demo company. 
+description: Learn about the procedure for creating and validating journals and journal lines. 
 author: panolte
-ms.author: kfend
+ms.author: twheeloc
 ms.topic: how-to
-ms.date: 04/01/2024
+ms.date: 09/05/2025
 ms.custom:
-ms.reviewer: kfend    
+ms.reviewer: twheeloc    
 audience: Application User 
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
@@ -25,10 +25,10 @@ This procedure creates and validates journals and journal lines. You can try thi
 3. In the **Name** field, click the drop-down button to open the lookup.
 4. In the list, find and select the desired record.
 5. Click **Lines**.
-6. In the **Account** field enter an appropriate account based on the Account type.
+6. In the **Account** field enter an appropriate account based on the account type.
 7. In the **Description** field, type a value.
 8. Enter an amount for the account as either a **Debit** or **Credit**. 
-9. In the **Offset account** field, enter an appropriate account based on the Offset account type.
+9. In the **Offset account** field, enter an appropriate account based on the **Offset account** type.
 10. Click **Validate**.
 11. Click **Validate**.
 12. Click **Post**.

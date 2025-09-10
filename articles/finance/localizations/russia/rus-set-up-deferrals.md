@@ -1,38 +1,39 @@
 ---
 title: Set up deferrals (Russia)
-description: Learn how to set up deferrals, including outlines and step-by-step processes for write-off methods, value models, and posting profiles.
+description: Learn how to set up deferrals for Russia in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 09/05/2025
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
-ms.dyn365.ops.version: 10.0.1
 ---
 
 # Set up deferrals (Russia)
 
 [!include [banner](../../includes/banner.md)]
 
+This article explains how to set up deferrals for Russia in Microsoft Dynamics 365 Finance.
+
 Deferrals are expense types that are stored differently in general accounting principles and tax accounting principles. To use the deferral functionality, you must complete the following setup:
 
 - [Write-off methods](#write-off-methods)
-- [Value models](#value-models)
-- [Posting profiles](#posting-profiles)
-- [Sequence of calculation](#sequence-of-calculation)
-- [Deferrals groups](#deferrals-groups)
-- [General ledger parameters](#general-ledger-parameters)
-- [Deferrals](#deferrals)
+- [Value models](#create-value-models)
+- [Posting profiles](#post-profiles)
+- [Sequence of calculation](#create-a-sequence-of-calculation)
+- [Deferrals groups](#create-deferrals-groups)
+- [General ledger parameters](#set-up-general-ledger-parameters)
+- [Deferrals](#create-and-configure-deferrals)
 
 ## Write-off methods
 
-Follow these steps to create write-off methods for deferred expenses.
+To create write-off methods for deferred expenses, follow these steps.
 
-1. Go to **General ledger** \> **Deferrals setup** \> **Writing off methods**.
-2. On the Action Pane, select **New** to create a write-off method for deferred expenses.
+1. In Dynamics 365 Finance, go to **General ledger** \> **Deferrals setup** \> **Writing off methods**.
+1. On the Action Pane, select **New** to create a write-off method for deferred expenses.
 
     The following table describes the fields on the **Writing off methods** page.
 
@@ -99,14 +100,16 @@ Follow these steps to create write-off methods for deferred expenses.
     </tbody>
     </table>
 
-3. If you selected **Manual** in the **Type** field and **Amount** in the **Calculation type** field, on the Action Pane, select **Manual schedules** to create write-off schedules.
+1. If you selected **Manual** in the **Type** field and **Amount** in the **Calculation type** field, on the Action Pane, select **Manual schedules** to create write-off schedules.
 
 ![Writing off methods page.](../media/rus-set-up-deferral-01.png)
 
-## Value models
+## Create value models
 
-1. Go to **General ledger** \> **Deferrals setup** \> **Value models**.
-2. On the Action Pane, select **New** to create value models for deferrals accounting.
+To create value models, follow these steps.
+
+1. In Dynamics 365 Finance, go to **General ledger** \> **Deferrals setup** \> **Value models**.
+1. On the Action Pane, select **New** to create value models for deferrals accounting.
 
     The following table describes the fields on the **Value models** page.
 
@@ -116,14 +119,16 @@ Follow these steps to create write-off methods for deferred expenses.
     | Name          | Enter a name for value model.                             |
     | Posting layer | Select a posting layer for the value model.               |
 
-3. On the Action Pane, select **Deferrals groups** to set up deferrals groups that are related to the selected value model.
+1. On the Action Pane, select **Deferrals groups** to set up deferrals groups that are related to the selected value model.
 
 ![Value models page.](../media/rus-set-up-deferral-02.png)
 
-## Posting profiles
+## Post profiles
 
-1. Go to **General ledger** \> **Deferrals setup** \> **Posting profiles**.
-2. On the Action Pane, select **New** to create posting profiles for deferred expenses.
+To post profiles, follow these steps.
+
+1. In Dynamics 365 Finance, go to **General ledger** \> **Deferrals setup** \> **Posting profiles**.
+1. On the Action Pane, select **New** to create posting profiles for deferred expenses.
 
     The following table describes the fields on the **Deferrals posting profiles** page.
 
@@ -194,10 +199,12 @@ Follow these steps to create write-off methods for deferred expenses.
 
 ![Deferrals posting profiles page.](../media/rus-set-up-deferral-03.png)
 
-## Deferrals groups
+## Create deferrals groups
 
-1. Go to **General ledger** \> **Deferrals** \> **Deferrals groups**.
-2. On the Action Pane, select **New** to create groups for deferred expenses.
+To create deferrals groups, follow these steps.
+
+1. In Dynamics 365 Finance, go to **General ledger** \> **Deferrals** \> **Deferrals groups**.
+1. On the Action Pane, select **New** to create groups for deferred expenses.
 
     The following table describes the fields on the **Deferrals groups** page.
 
@@ -261,15 +268,17 @@ The deferrals group that is set up has a one-to-one (1:1) relation to value mode
 
 ![Deferrals groups page.](../media/rus-set-up-deferral-04.png)
 
-## Sequence of calculation
+## Create a sequence of calculation
 
 You use the **Standard expenses sequence** and **Counter setup** pages to create calculation sequences that are used to create deferrals for vendor invoices.
 
 > [!NOTE]
 > Before you can set up the calculation sequence and counters, you must set up expense codes on the **Expense and income codes** page.
 
-1. Go to **General ledger** \> **Deferrals setup** \> **Sequence of calculation**.
-2. On the Action Pane, select **New** to set up revenue or expense calculation sequences.
+To create a sequence of calculation, follow these steps.
+
+1. In Dynamics 365 Finance, go to **General ledger** \> **Deferrals setup** \> **Sequence of calculation**.
+1. On the Action Pane, select **New** to set up revenue or expense calculation sequences.
 
     The following table describes the fields on the **Standard expenses sequence** page.
 
@@ -282,8 +291,8 @@ You use the **Standard expenses sequence** and **Counter setup** pages to create
 
     ![Standard expenses sequence page.](../media/rus-set-up-deferral-05.png)
 
-3. On the Action Pane, select **Counters** to open the **Counter setup** page.
-4. On the Action Pane, select **New** to create counters for the calculation sequence.
+1. On the Action Pane, select **Counters** to open the **Counter setup** page.
+1. On the Action Pane, select **New** to create counters for the calculation sequence.
 
     The following table describes the fields on the **Counter setup** page.
 
@@ -387,9 +396,9 @@ The following table provides detailed instructions about how to fill in the **Fr
 | Credit balance     | Select a range of accounts in the **From** and **To** fields on which the   amount of credit balance will be calculated. The amount will be calculated   for the period defined in the **Period types** and **Index** fields. The   range can consist of a single account.   |
 | Deferral write-off | Select a deferrals group in the **From** field to calculate the planned   write-off of deferrals in the current period.                                                                                                                                                      |
 
-5. To copy the counter settings from one calculation sequence to another, on the Action Pane, select **Copy counter** to open the **Copy aisle** dialog box.
+5. To copy the counter settings from one calculation sequence to another, on the Action Pane, select **Copy counter** to open the **Copy aisle** dialog.
 
-    The following table describes the fields in the **Copy aisle** dialog box.
+    The following table describes the fields in the **Copy aisle** dialog.
 
     | Field                                       | Description                                                |
     |---------------------------------------------|------------------------------------------------------------|
@@ -398,10 +407,12 @@ The following table provides detailed instructions about how to fill in the **Fr
     | Sequence (in the **Copy to** section)       | Select the sequence to copy the counter settings to.       |
     | Expense code (in the **Copy to** section)   | Select the expense code to copy the counter settings to.   |
 
-## General ledger parameters
+## Set up General ledger parameters
 
-1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
-2. On the **Deferrals** tab, set the fields by using the information in the following table.
+To set up General ledger parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
+1. On the **Deferrals** tab, set the fields by using the information in the following table.
 
     | Field                           | Description |
     |---------------------------------|-------------|
@@ -414,25 +425,27 @@ The following table provides detailed instructions about how to fill in the **Fr
 
     ![Deferrals tab on the General ledger parameters page.](../media/rus-set-up-deferral-07.png)
 
-3. On the **Number sequences** tab, in the **Number sequence code** field, select the number sequence code for the **Deferral ID** reference.
+1. On the **Number sequences** tab, in the **Number sequence code** field, select the number sequence code for the **Deferral ID** reference.
 
     ![Number sequences tab on the General ledger parameters page.](../media/rus-set-up-deferral-08.png)
 
-4. Go to **General ledger** \> **Journal setup** \> **Journal names**.
-5. On the Action Pane, select **New** to create a journal of the **Deferrals** type to work with deferrals.
-6. In the **Name** field, enter the name of the journal.
-7. In the **Description** field, enter a short description of the journal.
-8. In the **Journal type** field, select **Deferrals**.
-9. In the **Voucher series** field, select the number sequence that is used for voucher numbering.
+1. Go to **General ledger** \> **Journal setup** \> **Journal names**.
+1. On the Action Pane, select **New** to create a journal of the **Deferrals** type to work with deferrals.
+1. In the **Name** field, enter the name of the journal.
+1. In the **Description** field, enter a short description of the journal.
+1. In the **Journal type** field, select **Deferrals**.
+1. In the **Voucher series** field, select the number sequence that is used for voucher numbering.
 
     ![Journal names page.](../media/rus-set-up-deferral-09.png)
 
-## Deferrals
+## Create and configure deferrals
 
-Deferrals can be created manually, or they can be automatically generated by using a periodic operation. For more information about how to create a deferral, see [Create or generate deferrals (Russia)](rus-create-generate-deferrals.md).
+Deferrals can be created manually, or they can be automatically generated by using a periodic operation. Learn more in [Create or generate deferrals (Russia)](rus-create-generate-deferrals.md).
 
-1. Go to **General ledger** \> **Deferrals** \> **Deferrals**.
-2. You can use the **Deferrals** page to manually create deferrals, or to review and work with deferrals.
+To create and configure deferrals, follow these steps.
+
+1. In Dynamics 365 Finance, go to **General ledger** \> **Deferrals** \> **Deferrals**.
+1. You can use the **Deferrals** page to manually create deferrals, or to review and work with deferrals.
 
     The following table describes the fields on the **Deferrals** page.
 

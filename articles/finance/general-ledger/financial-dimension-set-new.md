@@ -1,8 +1,8 @@
 ---
 title: New financial dimension sets
 description: Learn about the updated functionality for financial dimension sets, including outlines on viewing balance statuses, enable balances, and deleting dimension sets.
-author: rcarlson
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 04/14/2025
 ms.reviewer: twheeloc
@@ -17,9 +17,14 @@ ms.dyn365.ops.version: 10.0.38
 
 [!include [banner](../includes/banner.md)]
 
-In Microsoft Dynamics 365 Finance version 10.0.38, a new feature **Performance enhancement for general ledger dimension set balance calculation** is available. When you turn on this feature, the process of creating new balances is initiated. This process might take several hours if the amount of transactional data is large. Reports and inquiries that use dimension sets won't be available until the processing is completed. You can view the status on the **Dimension set** page.
+In Microsoft Dynamics 365 Finance version 10.0.38, a **Performance enhancement for general ledger dimension set balance calculation** feature is available. When you turn on this feature, the process of creating new balances is initiated. This process might take several hours if the amount of transactional data is large. Reports and inquiries that use dimension sets won't be available until the processing is completed. You can view the status on the **Dimension set** page.
 
-This feature enables the **Trial balance inquiry** page and reports that use financial dimension sets to run more efficiently. The financial dimension sets store data more efficiently and use less space. Therefore, the trial balance can show current balance data more quickly. The feature uses process automation to keep the balance amounts up to date. You can find the background process automation named **General ledger balance process** that runs every 5 minutes by default. The process automation background task creates a new, single occurence batch every 5 minutes. When you view the individual batch task, the occurrence displays 10 minutes because that's the default for any batch. The background task creates a new balance process batch every 5 minutes. This time can be changed on the **Background process** tab in **Process automation**.
+This feature enables the **Trial balance inquiry** page and reports that use financial dimension sets to run more efficiently. The financial dimension sets store data more efficiently and use less space. Therefore, the trial balance can show current balance data more quickly. The feature uses process automation to keep the balance amounts up to date. You can find the background process automation named **General ledger balance process** that runs every 5 minutes by default. The process automation background task creates a new, single occurrence batch every 5 minutes. When you view the individual batch task, the occurrence displays 10 minutes because that's the default for any batch. The background task creates a new balance process batch every 5 minutes. This time can be changed on the **Background process** tab in **Process automation**.
+
+>[!IMPORTANT]
+> We recommend that you review all customizations that might require the previous balance data and test the feature in an UAT environment before enabling the feature in your PROD environment.
+>
+> After the feature is enabled in PROD, the prior balance data is immediately queued for deletion to reduce storage costs. This change can't be undone once started, and must be allowed to fully complete before reverting back from the enhancement feature if needed.
 
 ## View balance status
 
@@ -50,6 +55,10 @@ After the feature is on you notice small changes to the trial balance page and r
 ## Technical information 
 The below table describes the old data model and the new data model used for this feature. The outcome is less data to store resulting in faster performance for some queries such as ones used for the trial balance inquiry page. 
 
+> [!IMPORTANT]
+> Any customizations that are dependent on the old data model won't work as soon as the performance feature is enabled. Testing in an UAT environment first is highly recommended. It's not possible to switch between the new and old models efficiently.
+
+
 | New Table | Old Table | Description |
 |-----------|-----------|-------------|
 | GeneralLedgerBalance, GeneralLedgerMainAccountBalance | DimensionFocusBalance | FocusDimensionHierarchy and FocusLedgerDimension are removed from the balance tables. The data is now aggregated by the original GeneralJournalAccountEntry.LedgerDimension value (no new DimensionAttributeValueCombination records created for balances any longer). <br> The GeneralLedgerMainAccountBalance stores balances at the main account level only as a performance optimization as the primary use case scenario. |
@@ -61,3 +70,7 @@ The below table describes the old data model and the new data model used for thi
 For more information, see [Financial dimensions](financial-dimensions.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
