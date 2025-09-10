@@ -142,36 +142,16 @@ The name of this variable must be used as the name of the import source for the 
 
 The following countries electronic invoicing functionality is implemented using **Edicom** as the last-mile connector.
 
-#### Belgium
+| Country | Documentation article |
+|-----------|-------------|
+| Belgium | [Electronic invoicing for Belgium](../belgium/emea-bel-e-invoices.md) |
+| Chile | <ul><li>[Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md)</li><li>[Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md)</li></ul> |
+| Costa Rica | [Get started with Electronic invoicing for Costa Rica](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md) |
+| Denmark | [Get started with Electronic invoicing for Costa Rica](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md) |
+| Panama | [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md) |
+| Singapore | [Electronic invoicing for Singapore](../singapore/apac-sgp-e-invoices.md) |
+| Uruguay | [Get started with Electronic invoicing for Uruguay](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md) |
 
-For more information about electronic invoicing in Belgium, see:
-- [Electronic invoicing for Belgium](../belgium/emea-bel-e-invoices.md).
-
-#### **Chile**
-
-For more information about electronic invoicing in Chile, see:
-- [Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md)
-- [Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md).
-
-#### Costa Rica
-
-For more information about electronic invoicing in Costa Rica, see:
-- [Get started with Electronic invoicing for Costa Rica](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md).
-
-#### Denmark
-
-For more information about electronic invoicing in Denmark, see:
-- [Use electronic invoicing for Denmark](../denmark/gs-e-invoicing-dk-get-started.md).
-
-#### Panama
-
-For more information about electronic invoicing in Panama, see:
-- [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md).
-
-#### Singapore
-
-For more information about electronic invoicing in Singapore, see:
-- [Electronic invoicing for Singapore](../singapore/apac-sgp-e-invoices.md).
 
 ## Additional resources
 
