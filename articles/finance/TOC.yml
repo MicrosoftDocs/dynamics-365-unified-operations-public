@@ -4659,6 +4659,8 @@
                   href: business-performance-planning/calculated-columns.md
                 - name: Load data using dataflows
                   href: business-performance-planning/load-data-dataflows.md
+                - name: Import and export cubes and dimensions
+                  href: business-performance-planning/bpp-cubes-dim.md
                 - name: Audit cubes
                   items:
                    - name: Audit cubes
