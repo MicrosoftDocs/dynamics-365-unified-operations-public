@@ -8,7 +8,7 @@ ms.search.form: ReqTransPo, ReqTransFirmLog
 ms.topic: how-to
 ms.date: 07/21/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Maintain planned orders

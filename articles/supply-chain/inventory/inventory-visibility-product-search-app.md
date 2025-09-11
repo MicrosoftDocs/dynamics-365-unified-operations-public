@@ -3,11 +3,12 @@ title: Search for products using the Inventory Visibility app
 description: Learn how to search for products by using the Inventory Visibility app in Microsoft Power Apps, including definitions for various benefits.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: how-to
-ms.date: 11/20/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Search for products using the Inventory Visibility app

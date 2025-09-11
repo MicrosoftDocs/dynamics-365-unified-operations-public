@@ -4,7 +4,7 @@ description: Learn how to generate and scan QR codes to quickly configure the Wa
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 06/04/2025
+ms.date: 09/02/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -89,8 +89,9 @@ To generate a QR code by using an online QR code generator, follow these steps.
 You can use PowerShell to generate a QR code from your JSON configuration. The code resembles the following example, but it includes your specific JSON configuration.
 
 ```powershell
-# Install QR code module if not already installed
+# Install and import QR code module if not already installed
 Install-Module -Name QRCodeGenerator
+Import-Module QRCodeGenerator
 
 # Your JSON configuration
 $jsonConfig = @"
@@ -110,7 +111,7 @@ $jsonConfig = @"
 "@
 
 # Generate QR Code
-New-QRCode -Data $jsonConfig -OutPath "warehouse-config.png"
+New-QRCodeText $jsonConfig -OutPath "warehouse-config.png"
 ```
 
 ## Step 3: Distribute the QR code

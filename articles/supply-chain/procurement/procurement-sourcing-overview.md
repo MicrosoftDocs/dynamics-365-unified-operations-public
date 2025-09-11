@@ -8,7 +8,7 @@ ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable,
 ms.topic: overview
 ms.date: 07/21/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Procurement and sourcing overview

@@ -4,7 +4,7 @@ description: Get answers to frequently asked questions about the AI technology t
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: faq
-ms.date: 01/29/2025
+ms.date: 09/10/2025
 ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs

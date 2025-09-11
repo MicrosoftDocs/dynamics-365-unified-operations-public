@@ -1,13 +1,14 @@
 ---
 title: React to last-minute changes in production
 description: Learn about types of changes that are often made to components or routes just before production orders are released to the shop floor.
-author: t-benebo
-ms.author: benebotg
-ms.topic: how-to
-ms.date: 03/21/2024
-ms.custom: bap-template
+author: johanhoffmann
+ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 07/31/2025
+ms.custom:
+  - bap-template
 ---
 
 # React to last-minute changes in production

@@ -1,10 +1,10 @@
 --- 
 title: Create a write-off journal for a customer
-description: Learn about how to create a write-off journal for customers, including how to set up the parameters for write-offs and then write off transactions.
+description: Learn how to create a write-off journal for customers, including how to set up the parameters for write-offs and then write off transactions.
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: how-to
-ms.date: 05/23/2024
+ms.date: 08/04/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 
@@ -18,18 +18,18 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide will show you how to set up the parameters for write-offs and then write off transactions from the **Collections**, **Open customer invoices**, and the **Customer** pages. This task uses the USMF demo company.
+This task guide shows how to set up the parameters for write-offs and then write off transactions. This task uses the USMF demo company.
 
 ## Set up the write off parameters
 
 1. Go to **Credit and collections > Setup > Accounts receivable parameters**.
 2. Click the **Collections** tab.
 3. Expand or collapse the **Write-off** section.
-    - The **Write-off journal** is the general journal that will hold the write-off transactions that you create.  
+    - The **Write-off journal** is the general journal that holds the write-off transactions that you create.  
     - You can attach a reason code to every write-off. You can override this default at the time of the write-off.  
-    - Set the **Separate sales tax** to **Yes** if you want to separate the sales tax from the original transaction in the write-off.  
+    - Set the **Separate sales tax** to **Yes** to separate the sales tax from the original transaction in the write-off.  
 4. Close the page.
-5. Go to **Credit and collections > Setup > Customer posting profiles**. The write-off account will be used as the expense account or reserve adjustment in the general journal.
+5. Go to **Credit and collections > Setup > Customer posting profiles**. The write-off account is used as the expense account or reserve adjustment in the general journal.
 6. Close the page.
 
 ## Write off a customer balance from the aged balances page
@@ -61,7 +61,7 @@ This task guide will show you how to set up the parameters for write-offs and th
 
 ## Write off an invoice from the Open customers invoices page
 
-1. Go to **Navigation pane > Modules > Accounts receivable > Invoices > Open customer invoices**.
+1. Go to **Accounts receivable > Invoices > Open customer invoices**.
 2. Mark the line for an invoice. For example, mark the line for CIV-000667.
 3. On the **Action Pane**, click **Invoice**.
 4. Click **Write off**.

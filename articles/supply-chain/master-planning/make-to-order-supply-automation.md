@@ -3,17 +3,19 @@ title: Make-to-order supply automation
 description: Learn how to set up and use the various enhancements that are added by the Make-to-order supply automation feature, including step-by-step processes.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 07/27/2022
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 08/22/2025
+ms.custom:
+  - bap-template
 ---
 
 # Make-to-order supply automation
 
 [!include [banner](../includes/banner.md)]
 
-The *Make-to-order supply automation* feature adds several enhancements to Microsoft Dynamics 365 Supply Chain Management. These enhancements enable you to perform the following tasks:
+The *Make-to-order supply automation* feature adds several enhancements to Microsoft Dynamics 365 Supply Chain Management. These enhancements let you perform the following tasks:
 
 - View the resource capacity load for a user-defined period, and therefore enable long-term evaluation of the capacity load.
 - Improve flexibility by controlling the delay tolerance (negative days) for each master plan.
@@ -23,10 +25,6 @@ The *Make-to-order supply automation* feature adds several enhancements to Micro
 - Enhance intercompany information flow. Purchase orders are updated so that they include fields for the mode of delivery, delivery terms, and external item number. This change ensures that detailed demand information can flow to the supplying company.
 
 This article describes how to set up and use each enhancement.
-
-## Turn the Make-to-order supply automation feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Make-to-order supply automation* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set the number of days to show on Capacity load page
 
@@ -117,7 +115,7 @@ The following table shows how the **Consume on-hand inventory** and **Use latest
 
 Fulfillment policies control the percentage of the total order price or quantity that must be physically reserved before you can release a sales order to the warehouse. You can set a global default fulfillment policy and then override it for specific customers as you require. The *Make-to-order supply automation* feature adds the ability to view what default policy actually applies to any order and apply an order-specific override as required.
 
-- To set the global fulfillment policy default for sales orders, go to **Accounts receivable \> Setup \> Accounts receivable parameters**. Then, on the **Warehouse management** tab, set the **Sales order fulfillment policy** field to the name of the policy that you want to use. 
+- To set the global fulfillment policy default for sales orders, go to **Accounts receivable \> Setup \> Accounts receivable parameters**. Then, on the **Warehouse management** tab, set the **Sales order fulfillment policy** field to the name of the policy that you want to use.
 - To set a customer-specific fulfillment policy for sales orders, go to **Accounts receivable \> Customers \> All customers**. Then, on the **Warehouse** tab, set the **Fulfillment policy** field to the name of the policy that you want to use.
 
 To view the default policy that applies to any order and apply an order-specific override, follow these steps.

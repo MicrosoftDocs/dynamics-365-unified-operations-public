@@ -8,7 +8,7 @@ ms.search.form: CostConfigurationConvention
 ms.topic: how-to
 ms.date: 07/21/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Conventions
@@ -23,7 +23,6 @@ To set up your conventions, go to **Global inventory accounting \> Setup \> Conv
 - **Description** – Enter a description of the convention.
 - **Cost Object policy** – Select a cost object policy. These policies determine the level of granularity that the system applies to calculate and maintain the inventory value. The following predefined options are available:
 
-    - Product
     - Product – Site
     - Product – Site – Warehouse
 

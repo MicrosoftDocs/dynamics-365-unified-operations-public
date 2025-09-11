@@ -4,7 +4,7 @@ description: Access topics that describe the new and changed features in each re
 author: twheeloc
 ms.author: twheeloc
 ms.topic: whats-new
-ms.date: 07/28/2025
+ms.date: 08/25/2025
 ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template

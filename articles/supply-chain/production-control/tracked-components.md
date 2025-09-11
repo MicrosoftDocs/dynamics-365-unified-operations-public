@@ -3,12 +3,12 @@ title: Register and track batch/serial numbers for finished products and their c
 description: Learn how workers and managers can register batch/serial numbers for materials and components that are used in manufacturing processes.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: how-to
-ms.date: 04/29/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Register and track batch/serial numbers for finished products and their components

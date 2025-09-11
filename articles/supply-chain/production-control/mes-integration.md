@@ -3,12 +3,12 @@ title: Integrate with third-party manufacturing execution systems
 description: Learn how you can integrate Microsoft Dynamics 365 Supply Chain Management with a third-party manufacturing execution system (MES).
 author: johanhoffmann
 ms.author: johanho
-ms.topic: how-to
-ms.date: 04/19/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Integrate with third-party manufacturing execution systems
@@ -28,17 +28,15 @@ The following illustration shows a typical collection of business events, proces
 
 ![Typical integration scenario.](media/3p-mes-scenario.png "Typical integration scenario.")
 
-## Turn on the MES integration feature
+## Prerequisites
 
-Before you can use this feature, an administrator must turn it on in your system as described in the following procedure.
+To integrate with a third-party manufacturing execution system, the **Time and attendance** license key must be enabled in Supply Chain Management. Follow these steps to check whether it's enabled and to enable it if necessary:
 
 1. Go to **System administration \> Setup \> License configuration**.
 1. Make sure that the **Time and attendance** license key is enabled (shows a check mark). This license key is required because it controls the manufacturing execution system's functionality and data. If it isn't enabled, do the following steps:
     1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
     1. On the **License configuration** page, select the **Time and attendance** check box.
     1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)
-1. Go to the **System administration \> Workspaces \> Feature management**.
-1. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the *Manufacturing execution system integration* feature. (As of Supply Chain Management version 10.0.29, this feature is turned on by default. As of Supply Chain Management version 10.0.32, it's mandatory and can't be turned off.)
 
 ## Processes available for MES integration
 
@@ -57,7 +55,7 @@ You can enable any or all of the following processes for integration.
 
 To monitor the incoming MES messages to the system, go to **Production control \> Setup \> Manufacturing execution \> Manufacturing execution systems integration**.
 
-All messages for a specific production order are processed in the sequence they are received. However, messages for different production orders may not be processed in the received sequence because batch jobs are processed in parallel. In case of failure, the batch job will attempt to process each message three times before setting it to *Failed* status.
+All messages for a specific production order are processed in the sequence they're received. However, messages for different production orders might not be processed in the received sequence because batch jobs are processed in parallel. In case of failure, the batch job will attempt to process each message three times before setting it to *Failed* status.
 
 The **Manufacturing execution systems integration** page works in the same way as the **Message processor messages** page and represents very similar functionality. (It even shows MES messages in addition to other types of messages.) For information about how to use either page to review messages, find and fix failed messages, and more, see [Monitor and control message processor messages](../message-processor/message-processor.md).
 
@@ -247,13 +245,13 @@ For the *end production order* message, the `_messageType` value is `ProdProduct
 
 ## Other production information
 
-The messages support actions or events that happen on the shop floor. They are processed using the MES integration framework described in this article. The design assumes that other reference information to be shared with the MES (such as product-related information, or the bill of materials or route (with its specific setup and configuration times) used in a specific production order) will be retrieved from the system using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) via file transfer or OData.
+The messages support actions or events that happen on the shop floor. They're processed using the MES integration framework described in this article. The design assumes that other reference information to be shared with the MES (such as product-related information, or the bill of materials or route (with its specific setup and configuration times) used in a specific production order) will be retrieved from the system using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) via file transfer or OData.
 
 ## Receive feedback about the state of a message
 
 After the MES has sent a message to Supply Chain Management, it might be relevant for Supply Chain Management to return feedback about the state of the message. Here are some examples of cases where this behavior might be relevant:
 
-- There is no person who is responsible for constantly supervising the MES integration.
+- No person is responsible for constantly supervising the MES integration.
 - The person who is responsible for supervising the MES integration wants to be notified by email when a message fails, so that they know that they have to take action.
 - The MES must show an error message to inform the shop floor operator or somebody from the IT department that they have to take action.
 - The MES must recalculate the order schedule after it receives a failure message (for example, because a production order failed to start).

@@ -1,21 +1,21 @@
 ---
 title: Cash flow tax registers
-description: Learn about cash flow tax registers, including outlines on the cash payment receipt and cash payment issue types of tax registers.
+description: Learn how to work with cash flow tax registers for Russia in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 08/08/2025
 ms.reviewer: johnmichalak
- 
+ms.search.validFrom: 2019-04-01
 ---
 
 # Cash flow tax registers
 
 [!include [banner](../../includes/banner.md)]
 
-## Overview
+This article explains how to work with cash flow tax registers for Russia in Microsoft Dynamics 365 Finance.
 
 Cash flow tax registers are generated based on accounting data from general ledger transactions. There are two types of tax registers:
 
@@ -37,7 +37,9 @@ Accounting transactions where ledger account **57** (**Transfers in transit**) i
 
 ### Set up account interval groups for Bank, Cash, and Other account types
 
-1. Go to **Tax** > **Setup** > **Profit tax** > **Account interval groups**.
+To set up account interval groups for Bank, Cash, and Other account types, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Account interval groups**.
 2. On the Action Pane, select **New**.
 3. In the **Interval group** field, enter a name for the new account interval group. For this example, enter **Bank**.
 4. On the **Account intervals** FastTab, select **Add**.
@@ -47,9 +49,9 @@ Accounting transactions where ledger account **57** (**Transfers in transit**) i
 
 ### Assign expense codes to tax registers and set up exceptions
 
-Follow these steps to set up expenses for the **Cash payment issue** and **Cash payment receipt** tax registers.
+To set up expenses for the **Cash payment issue** and **Cash payment receipt** tax registers, follow these steps.
 
-1. Go to **Tax &gt; Setup &gt; Profit tax &gt; Registers**.
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Registers**.
 2. Select the tax register, and then, on the Action Pane, select **Expense codes**.
 3. On the Action Pane, select **New**.
 4. In the **Expense code** field, select the expense code. The tax register will reflect transactions that have the selected expense code.

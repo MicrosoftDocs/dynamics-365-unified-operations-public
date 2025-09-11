@@ -1,10 +1,10 @@
 ---
 title: Set up vendor invoice policies
-description: Learn about how to set up vendor invoice policies, including outlines on preparing to create vendor invoice policies and defining vendor policies. 
+description: Learn how to set up vendor invoice policies, including outlines on preparing to create vendor invoice policies and defining vendor policies. 
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: how-to
-ms.date: 02/11/2022
+ms.date: 08/04/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -20,15 +20,15 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This article explains how to set up vendor invoice policies. Vendor invoice policies are run when you post a vendor invoice by using the **Vendor invoice** page and when you open the vendor invoice **Policy violations** page. You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow. 
 
-- Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal.  
-- Invoice matching validation does not use vendor invoice policies, but is instead set up in the **Accounts payable parameters** page.  
+- Vendor invoice policies don't apply to invoices created in the invoice register or invoice journal.  
+- Invoice matching validation doesn't use vendor invoice policies, but is instead set up in the **Accounts payable parameters** page.  
 - This recording uses the USMF demo company. The accounts payable manager or accounting manager role would perform these steps. Before you begin, make sure that the **Invoice matching** configuration key is selected.
 
 
 ## Prepare to create vendor invoice policies
 1. Go **Accounts payable > Setup > Accounts payable parameters**.
 2. Select the **Invoice validation** tab.
-3. Select or clear the **Automatically update invoice header** status checkbox.
+3. Select or clear the **Automatically update invoice header status** checkbox.
 4. Select **OK**.
 5. In the **Post invoice with discrepancies** field, select an option.
 6. Close the page.

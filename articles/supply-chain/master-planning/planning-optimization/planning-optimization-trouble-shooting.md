@@ -8,7 +8,7 @@ ms.search.form: ReqCreatePlanWorkspace
 ms.topic: troubleshooting-general
 ms.date: 07/21/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Troubleshoot Planning Optimization

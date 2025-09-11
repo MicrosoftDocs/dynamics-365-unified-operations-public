@@ -4,7 +4,7 @@ description: Learn about the lifecycle and support policies for Microsoft Dynami
 author: faix
 ms.author: osfaixat
 ms.topic: article
-ms.date: 10/02/2023
+ms.date: 08/20/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -26,10 +26,10 @@ This article outlines the lifecycle and support policies for Microsoft Dynamics 
 
 Finance + Operations (on-premises) software is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy rules products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy).
 
-Licensed customers must regularly update their deployment of the Finance + Operations (on-premises) software. The servicing policy requires that you maintain the Software Assurance (SA) or the Enhancement Plan and it requires that you deploy the update releases provided through the [continuous service updates](on-prem-version-update-policy.md#continuous-service-updates). To check for the most up to date status on the lifecycle of the product you can check the lifecycle page [Dynamics 365 for Finance + Operations (on-premises)](/lifecycle/products/dynamics-365-for-finance-and-operations-onpremises).
+Licensed customers must regularly update their deployment of the Finance + Operations (on-premises) software. The servicing policy requires that you maintain the Software Assurance (SA) or the Enhancement Plan and it requires that you deploy the update releases provided through the [continuous service updates](on-prem-version-update-policy.md#continuous-service-updates). To check for the most up to date status on the lifecycle of the product, you can check the lifecycle page [Dynamics 365 for Finance + Operations (on-premises)](/lifecycle/products/dynamics-365-for-finance-and-operations-onpremises).
 
 > [!NOTE]
-> If you want to use the Fixed Support Lifecycle Policy (5+5), you must downgrade to Microsoft Dynamics AX 2012 R3. If you instead lapse on your SA or the Enhancement Plan, you will only be eligible for the perpetual license rights to Microsoft Dynamics AX 2012 R3 and must uninstall Microsoft Dynamics 365 for Finance + Operations (on-premises).
+> If you want to use the Fixed Support Lifecycle Policy (5+5), you must downgrade to Microsoft Dynamics AX 2012 R3. If you instead lapse on your SA or the Enhancement Plan, you'll only be eligible for the perpetual license rights to Microsoft Dynamics AX 2012 R3 and must uninstall Microsoft Dynamics 365 for Finance + Operations (on-premises).
 
 ## On-premises software update policies
 
@@ -39,7 +39,7 @@ Microsoft supports your deployment of Finance + Operations (on-premises) softwar
 
 Critical fixes and noncritical updates are handled in the following way:
 
-- **Critical fixes** – Critical fixes include security fixes and any fixes that are required to support reliability and availability. Critical fixes will be made available in the latest platform update version.
+- **Critical fixes** – Critical fixes include security fixes and any fixes that are required to support reliability and availability. Critical fixes are made available in the latest platform update version.
 - **Non-critical updates** – Customers must update to the most current Finance + Operations platform and financial reporter version to deploy noncritical updates.
 
 ## Finance + Operations (on-premises) release dates
@@ -56,36 +56,35 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 
 | Product | Deployment options | Application version | Release or expiration dates|
 |--------|-----------------------|-----------------------|------------------------|
+| Finance + Operations | Base deployment + Service update | 10.0.49 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Base deployment + Service update | 10.0.48 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Base deployment + Service update | 10.0.47 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Base deployment + Service update | 10.0.46 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change)|
 | Finance + Operations | Base deployment + Service update | 10.0.45 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change)|
 | Finance + Operations | Base deployment + Service update | 10.0.44 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change)|
 | Finance + Operations | Base deployment + Service update | 10.0.43 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change)|
 | Finance + Operations | Base deployment + Service update | 10.0.42 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Base deployment + Service update | 10.0.41 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Base deployment + Service update | 10.0.40 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Base deployment + Service update | 10.0.39 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Base deployment + Service update | 10.0.38 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Service update | 10.0.37 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Service update | 10.0.36 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Base deployment + Service update | 10.0.35 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Service update | 10.0.34 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Service update | 10.0.33 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Base deployment + Service update | 10.0.32 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Service update | 10.0.31 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Service update | 10.0.30 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Base deployment + Service update | 10.0.29  | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Service update | 10.0.28 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Service update | 10.0.27* | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Base deployment + Service update | 10.0.26*  | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Service update | 10.0.25* | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Base deployment + Service update | 10.0.41* | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Base deployment + Service update | 10.0.40* | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Base deployment + Service update | 10.0.39* | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Base deployment + Service update | 10.0.38* | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Service update | 10.0.37* | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Service update | 10.0.36* | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Base deployment + Service update | 10.0.35* | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Service update | 10.0.34* | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Service update | 10.0.33* | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Base deployment + Service update | 10.0.32* | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Service update | 10.0.31* | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Service update | 10.0.30* | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
 
 \* Expired version. All customers must be on the latest version of Finance + Operations according to the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy).
 
 ### Older application releases
 
   > [!NOTE]
-  > Older platform releases have passed the expiration date and are no longer supported. Extension requests cannot be logged since January 1, 2019.
+  > Older platform releases passed the expiration date are no longer supported. Extension requests can't be logged since January 1, 2019.
   >
-  > Customer who are not following the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy) and the [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) may not be entitled to receive support after the expiration date of the deployed application version. Expired versions will be removed from LCS at some point where after servicing and deployment of such versions from LCS may not be possible.
+  > Customers who aren't following the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy) and the [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) may not be entitled to receive support after the expiration date of the deployed application version. Expired versions are removed from Lifecycle Services at some point where after servicing and deployment of such versions from Lifecycle Services may not be possible.
 
 | Product          | Application version |Public availability| Expiration date |
 |------------------|---------|---------|---------|
@@ -94,12 +93,12 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 | Finance + Operations, Enterprise edition (on-premises) | 7.3 (7.3.11971) | Mar 2018 | Apr 2020* |
 | Finance + Operations, Enterprise edition (on-premises) | July 2017 (7.2.11792) | Jun 2017 | Apr 2019 |
 
-\* All customers must be on the latest version of Finance + Operations. The deadline for this requirement was April 30, 2019. In the transition to [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates), we had given exemptions for customers who had unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that had been submitted to Microsoft. Those customers could stay on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
+\* All customers must be on the latest version of Finance + Operations. The deadline for this requirement was April 30, 2019. In the transition to [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates), we gave exemptions for customers who had unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that were submitted to Microsoft. Those customers could stay on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
 
 #### Older platform releases
 
 > [!NOTE]
-> Older platform releases have passed the expiration date and are no longer supported. Extension requests cannot be logged since January 1, 2019.
+> Older platform releases passed the expiration date are no longer supported. Extension requests can't be logged since January 1, 2019.
 
 | Platform release          |Build Number         | Availability          | Expiration date   |
 |------------------|----------------------|------------------|--------------|
