@@ -4,7 +4,7 @@ description: Get an overview of the telemetry that is available in the Monitorin
 author: kennysaelen
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 01/29/2025
+ms.date: 09/15/2025
 ms.author: kesaelen
 ms.reviewer: johnmichalak
 ms.custom: bap-template
@@ -51,7 +51,7 @@ The platform captures and logs all X++ layer exceptions to Application Insights.
 
 ## Warehouse telemetry
 
-The warehouse module generates telemetry data. The data shows the following:
+The warehouse module generates telemetry data. The data shows the following telemetry:
 
 - Warehouse operations and workflows
 - Performance metrics to identify and fix bottlenecks
@@ -90,9 +90,9 @@ To enable Batch telemetry, activate the following flights:
 After you enable the flights, new telemetry signals appear under the **Configure** tab:
 
 - **Batch Start Time** - Logs when a batch job starts.
-- **Batch Stop Time** - Logs when a batch job completes to support duration tracking.
+- **Batch Stop Time** - Logs when a batch job completes. Support duration tracking.
 - **Batch Throttling** - Captures throttling events and related system metrics (CPU, memory, SQL DTU).
-- **Batch Failure** - Adds diagnostic details when a batch job or task can't schedule. It complements existing infolog errors by correlating telemetry with the originating batch job.
+- **Batch Failure** - Adds diagnostic details when a batch job or task can't schedule. It complements existing Infolog errors by correlating telemetry with the originating batch job.
 - **Batch Queue** - Shows queue sizes for different queues in the priority-based scheduling framework.
 - **Batch Threads** - Shows active threads to help diagnose thread availability issues.
 
