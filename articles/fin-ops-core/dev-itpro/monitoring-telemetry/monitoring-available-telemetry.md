@@ -73,14 +73,12 @@ The Data Management Framework (DMF) logs errors to the Custom Events table in Ap
 ## Batch telemetry (preview)
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [preview-note-d365](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Telemetry from the batch framework is logged to the CustomEvents table in your Azure Monitor Application Insights instance.
 
 > [!IMPORTANT]
->
-> - This is a preview feature.
 > - This feature is in **PU69/10.0.45 (build >= 7.0.7690.21)** and backported to **PU68/10.0.44 (build >= 7.0.7606.126)**.
-> - [!INCLUDE [preview-note-d365](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 To enable Batch telemetry, activate the following flights:
 - **BatchTelemetryConfigurationFlight**
