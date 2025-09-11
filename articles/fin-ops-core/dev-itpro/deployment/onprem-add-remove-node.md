@@ -85,6 +85,23 @@ To add one or more nodes to your existing environment, follow these steps.
 
 1. Update the Service Fabric cluster with the new configuration file. Learn more in [Update the Service Fabric cluster configuration](./onprem-update-sfcluster.md#update-the-service-fabric-cluster-configuration).
 
+1. The final step is to cycle through the application installation. This is done through Lifecycle Services, by following the steps below.
+   - In Lifecycle Services, open the on-premises implementation project, and in the on-premises implementation project, open the **Environment details** page of the environment to you added the node(s) too.
+   - Next, under **Maintain**, select **Update Settings**.
+   - Make no changed, and then select **Prepare** to prepare your on-premises environment for servicing. 
+
+       > [!NOTE]
+       > While the environment is being prepared for servicing, its state is **Deployed**. However, the **Deployment status** field shows the progress of the preparation. During preparation, actions such formatting the package and downloading the package are performed.
+       >
+       > Because the environment isn't directly touched during preparation, there is no downtime at this point. Users can continue to use the system during preparation.
+
+   - After preparation is completed, **Abort** and **Update Environment** buttons appear. To start to apply the update, select **Update environment**. 
+   - In the confirmation message that appears, select **Yes**. The servicing operation now begins on the environment. This point is the start of the downtime on your environment.
+
+   - The environment state is changed from **Deployed** to **Deploying**.
+   - After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**. For information about what to do if package application fails, see the [Resolve a failed update application](#resolve-a-failed-update-application) section later in this article.
+
+
 ## Remove a node
 
 To remove one or more nodes from your existing environment, follow these steps.
