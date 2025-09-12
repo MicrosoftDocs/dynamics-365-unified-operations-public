@@ -27,7 +27,7 @@ This version of the Warehouse Management mobile app is a general availability (G
 
 ### Preview release for Android devices in other regions and Windows and iOS devices in all regions
 
-This version of the Warehouse Management mobile app for Microsoft Windows and Apple iOS is a preview release in all regions. It's also a preview release for Android devices in most regions. By installing this preview app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
+This version of the Warehouse Management mobile app for Microsoft Windows and Apple iOS is a preview release in all regions. It's also a preview release for Android devices in some regions. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
 
 If you have any feedback about the preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
 
@@ -50,7 +50,7 @@ This version of the Warehouse Management mobile app is a general availability (G
 
 ### Preview release for Android devices in other regions and Windows and iOS devices in all regions
 
-This version of the Warehouse Management mobile app for Microsoft Windows and Apple iOS is a preview release in all regions. It's also a preview release for Android devices in most regions. By installing this preview app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
+This version of the Warehouse Management mobile app for Microsoft Windows and Apple iOS is a preview release in all regions. It's also a preview release for Android devices in some regions. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
 
 If you have any feedback about the preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
 
@@ -71,7 +71,7 @@ This version of the Warehouse Management mobile app is a general availability (G
 
 ### Preview release for Android devices in other regions and Windows and iOS devices in all regions
 
-This version of the Warehouse Management mobile app for Microsoft Windows and Apple iOS is a preview release in all regions. It's also a preview release for Android devices in most regions. By installing this preview app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
+This version of the Warehouse Management mobile app for Microsoft Windows and Apple iOS is a preview release in all regions. It's also a preview release for Android devices in some regions. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
 
 If you have any feedback about the preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
 
@@ -93,7 +93,7 @@ This version of the Warehouse Management mobile app is a general availability (G
 
 ### Preview release for Android devices in other regions and Windows and iOS devices in all regions
 
-This version of the Warehouse Management mobile app for Microsoft Windows and Apple iOS is a preview release in all regions. It's also a preview release for Android devices in most regions. By installing this preview app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
+This version of the Warehouse Management mobile app for Microsoft Windows and Apple iOS is a preview release in all regions. It's also a preview release for Android devices in some regions. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
 
 If you have any feedback about the preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
 
