@@ -160,9 +160,6 @@ The following limitations apply:
 
 - Return orders aren't supported. A return order is a sales order that has a sales order type of **Returned order**.
 - Financial dimensions must be set for the master data, for example, customer and vendor. When a customer is added to a quotation or sales order, the financial dimensions associated with the customer record flow to the order automatically. Currently dual-write does not include financial dimensions data for master data.
-- If auto-numbering for **Quotes** or **Orders** is configured through **Power Platform environment settings** (Administration → Auto-numbering), it will not be applied when creating quotes/orders while the **Dual-write Supply Chain solution** is installed.
-To ensure auto-numbering works as expected, configure it directly on the relevant columns in **Power Apps**: 
-    -   **Quote Number (msdyn_QuoteNumber)** on the **Quote** table\
-    -   **Sales Order Number (msdyn_SalesOrderNumber)** on the **Order**
-        table
-
+- While the Dual-write Supply Chain solution is installed, auto numbering configured in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) (under **Settings** > **Data management** > **Auto numbering**) isn't applied when creating quotes or orders. To ensure auto numbering works as expected, configure it directly on the relevant columns in the [Power Apps Maker portal](https://make.powerapps.com). The relevant columns are:
+    - **Quote Number (msdyn_QuoteNumber)** in the **Quote** table
+    - **Sale Order Number (msdyn_SalesOrderNumber)** in the **Order** table
