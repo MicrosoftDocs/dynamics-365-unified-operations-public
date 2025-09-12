@@ -32,8 +32,6 @@ For more information, see [Import Electronic reporting (ER) configurations from 
 
 - Configure Electronic reporting (ER) parameters. For more information, see [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
-## Additional configuration
-
 ## Configure tax application codes
 
 To execute the Form 1012 report in Dynamics 365 Finance and Operations, you need to set up a **Tax Application Id**.
