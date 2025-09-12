@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/12/2025
+ms.date: 09/15/2025
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
