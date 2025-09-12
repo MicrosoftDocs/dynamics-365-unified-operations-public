@@ -1,5 +1,5 @@
 ---
-title: Nonconformance work groups (preview)
+title: Nonconformance work groups
 description: Learn how to use nonconformance work groups to define group names that you can assign to nonconformance records to make your nonconformances easier to classify.
 author: johanhoffmann
 ms.author: johanho
@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Nonconformance work groups (preview)
+# Nonconformance work groups
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
 
 Use *nonconformance work groups* to define group names that you can assign to nonconformance records to make your nonconformances easier to classify. For example, you might create a group for inspecting receipts and another one for inspecting production output.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 

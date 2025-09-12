@@ -1,8 +1,8 @@
 ---
 title: Unified developer experience for planning optimization (preview)
 description: Access overview of the process for setting up a development environment and testing your extensions for the Planning Optimization Add-in.
-author: bahadirbal 
-ms.author: bahbal
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 01/30/2024
 ms.custom: bap-template
