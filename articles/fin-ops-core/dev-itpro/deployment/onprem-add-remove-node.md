@@ -99,7 +99,7 @@ To add one or more nodes to your existing environment, follow these steps.
    - After preparation is completed, **Abort** and **Update Environment** buttons appear. To start to apply the update, click **Update environment**. 
    - In the confirmation message that appears, select **Yes**. The servicing operation begins on the environment and this starts the downtime on your environment.
    - The environment state is changed from **Deployed** to **Deploying**.
-   - After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**. For information about what to do if package application fails, see [Resolve a failed update application](#resolve-a-failed-update-application) section later in this article.
+   - After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**.
 
 
 ## Remove a node
