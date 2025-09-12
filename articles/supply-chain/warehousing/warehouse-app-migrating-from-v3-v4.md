@@ -95,7 +95,7 @@ When you migrate from V3 to V4, the following compatibility features are availab
 
 ### Authentication
 
-- **One-time reauthentication** – App user must complete once a single authentication process for each device that they migrate to V4. After a device is successfully migrated, it remains authenticated. No further reauthentication is required.
+- **One-time reauthentication** – App users must complete a single authentication process the first time they use the app on each device that is migrated to V4. After a device is successfully migrated, it remains authenticated. No further reauthentication is required.
 - **Windows platform configuration** – For Windows applications, you must follow these steps to add a new redirect URI to your Azure application registration.
 
     1. Open the [Azure portal](https://portal.azure.com).
