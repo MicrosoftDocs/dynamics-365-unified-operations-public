@@ -4,7 +4,7 @@ description: Learn how to set up VAT and perform transactions for tax agents for
 author: epodkolzina
 ms.author: epodkolzina
 ms.topic: how-to
-ms.date: 09/12/2025
+ms.date: 09/15/2025
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
