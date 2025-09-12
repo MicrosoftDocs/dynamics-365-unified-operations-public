@@ -1,5 +1,5 @@
 ﻿---
-title: Production dispensing (preview)
+title: Production dispensing
 description: Learn how to use production dispensing to ensure compliance with regulated and controlled standards for dispensing ingredients and materials in production processes.
 author: johanhoffmann
 ms.author: johanho
@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Production dispensing (preview)
+# Production dispensing
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
 
 When you deal with hazardous materials or sensitive components in production processes, accurate dispensing of materials is crucial. It helps minimize the risk of contamination, preserve the integrity of the materials, and ensure the safety of both the product and personnel.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 The processing of dispensing materials to a production order involves allocating and providing the raw materials or components that are required for the production process. It's essential in some environments, for several reasons:
 

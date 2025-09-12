@@ -1,5 +1,5 @@
 ---
-title: Manage CAPA cases (preview)
+title: Manage CAPA cases
 description: Learn how to use corrective and preventive action (CAPA) cases to record, update, track, follow up on, and close issues that your customers, vendors, or employees raise.
 author: johanhoffmann
 ms.author: johanho
@@ -11,11 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# Manage CAPA cases (preview)
+# Manage CAPA cases
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
 
 Use corrective and preventive action (CAPA) cases to record, update, track, follow up on, and close issues that your customers, vendors, or employees raise.
 

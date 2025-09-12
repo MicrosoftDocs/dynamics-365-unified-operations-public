@@ -1,5 +1,5 @@
 ---
-title: Use external item identifiers to add products to orders (preview)
+title: Use external item identifiers to add products to orders
 description: Learn how to define external item numbers and descriptions for each customer, and how to add products to sales orders based on these identifiers.
 author: AditiPattanaik
 ms.author: adpattanaik
@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Use external item identifiers to add products to orders (preview)
+# Use external item identifiers to add products to orders
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
 
 When you're adding an item to a sales order, you can search for it using its external item identifier or external description/name. You can define external item identifiers and descriptions for each customer, allowing you to use the customer's terminology when adding products to orders.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 

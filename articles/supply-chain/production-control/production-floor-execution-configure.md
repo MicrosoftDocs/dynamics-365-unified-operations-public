@@ -91,14 +91,9 @@ Before you can use this feature, your system must meet the following requirement
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.42 or later.
 - The feature that's named *Set the desired status on selected jobs in report progress list view in the production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
 
-### Enhanced numpad control (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
+### Enhanced numpad control
 
 The enhanced numpad input control replaces the previous one. It is now an element of type *Real* instead of type *String*, which makes the decimal separator consistent with the regional settings.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Before you can use this feature, your system must meet the following requirements:
 

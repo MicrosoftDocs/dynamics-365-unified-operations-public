@@ -1,5 +1,5 @@
 ---
-title: Clean up processed and canceled message processor messages (preview)
+title: Clean up processed and canceled message processor messages
 description: Learn how to set up a cleanup job for the message processor.
 author: johanhoffmann
 ms.author: johanho
@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Clean up processed and canceled message processor messages (preview)
+# Clean up processed and canceled message processor messages
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
 
 The [message processor](../message-processor/message-processor.md) is a framework that processes messages in the system, such as those related to inventory transactions, sales orders, and more. Over time, processed and canceled messages, that are no longer needed, can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
