@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Format 1012 file for Colombia configuration
 
-This article explains how to set up and issue a format 1012 file. The format 1012 file includes information about company investments that must be provided to the tax authority.
+This article explains how to set up and issue a format 1012 file. The format 1012 file includes information about company investments that must be provided to the tax authority. It includes two format outputs, an XML file that meets the official tax requirements and an Excel file for internal control purposes.
 
 ## Prerequisites
 
@@ -19,21 +19,41 @@ Before you print the report, the following prerequisites must be met:
 
 - The address that's set for the legal entity must be in Colombia.
 - Enable the country-specific Latin American (LATAM) globalization feature and the general LATAM feature.
-- Import the following configurations from the Global repository:
+- Import the following configurations from the Dataverse:
 
-    - LTM Tax Report
-    - File format 1012
+| Element |                    Format name                    |
+|:-------:|:-------------------------------------------------:|
+| Model   |:::no-loc text="LTM Tax Report":::                 |
+| Mapping | :::no-loc text="LTM Tax Report mapping":::|
+| Format  | :::no-loc text="File format 1012:::      |
+| Format  | :::no-loc text="File format 1012 Excel":::  |
 
-    For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 - Configure Electronic reporting (ER) parameters. For more information, see [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
-- Create a tax application code to use with this report. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
 
 ## Additional configuration
 
-- Set the document id code in the tax application of the country document type of the 3rd party in transactions for this report. Learn more in [Tax ID types for Latin America](ltm-core-tax-id-type.md).
+## Configure tax application codes
 
-- Set the country id code in the tax application for the country address of the 3rd party in transactions for this report.
+To execute the Form 1012 report in Dynamics 365 Finance and Operations, you need to set up a **Tax Application Id**.
+
+1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax application** and select **New** to create a tax application record that has the code **1012** (For format 1012). 
+1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**, and follow these steps for each record in the list:
+1. Select the record, and then select **Tax application**.
+
+It is also necessary to configure the codes for **Tax ID types**:
+
+1. On the **Tax application** page, in the **Tax application id** field, enter the code that is used for Colombian format 1012.
+1. In the **Tax application code** field, enter the code for tax IDs according to the Colombian regulatory.
+
+It is also necessary to configure the codes for countries:
+
+1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**. For each record (Country/Region) go to **LATAM** \> **Tax application** to assign the tax application codes for according to the Colombian regulatory.
+
+Proper setting up of these Tax Application codes is essential for the report to correctly reflect taxable operations and comply with DIAN requirements.
+
+For more information, see [Tax application for Latin America](../ltm-core-tax-application.md).
 
 ## Configure application-specific parameters
 
@@ -45,37 +65,41 @@ Follow these steps to set up the parameters for the report.
 2. On the left, select **LTM Tax Report deployment** \> **Format 1012**.
 3. On the Action Pane, select **Configurations** \> **Application specific parameters** \> **Setup**.
 4. In the **Lookups** section, select the first lookup that refers to the main account group, **MainAccountGroup**.
-5. In the **Conditions** section, add a line. In the **Lookup result** field, select one of the following options:
-
-    - **1110** – National bank accounts.
-    - **1115** – International bank accounts.
-    - **1200** – Treasury bonds.
-    - **1201** – Deposit certifies.
-    - **1202** – Shares value.
-    - **1203** – Fiduciary rights.
-    - **1204** – Other investments value.
-    - **1205** – Crypto investments value.
-
-    These options represent different concepts for the format 1012 file. You can add as many lines as you require.
-
-6. For each condition that you add, in the **Label** field, enter the concept number.
-7. In the **Main account** field, select the ledger account that represents the concept.
+5. In the **Conditions** section, add a line. In the **Lookup result** field, select a value.
+6. In the **Main account** field, select the ledger account that represents the concept.
 
     > [!NOTE]
-    > The ledger accounts that are selected in this configuration must be used in the company transactions that are included on the report.
+    > The ledger accounts that are selected in this configuration must be used in the company transactions that are included in the report.
 
 8. In the **Lookups** section, select the second lookup, **PaymentMethodId**. This lookup refers to the payment method document class that's used to post transactions for each concept in the **MainAccountGroup** lookup.
 9. In the **Conditions** section, add a line. In the **Lookup result** field, select **PaymentMethodClass**.
 10. In the **Document classification Id** field select the document class used in the transactions that are included in the report.
 
     > [!NOTE]
-    > For each **Lookup**, add two conditions where the **Lookup result** is **N/A** for both. The **Main account ID** for the first condition should be **"Blank"** and the Main account ID** for the second condition should be **"Not blank"**. 
+    > For each **Lookup**, add two conditions where the **Lookup result** is **N/A** for both. The **Main account ID** for the first condition should be **"Blank"** and the Main account ID** for the second condition should be **"Not blank"**. 
 
-## Issue a format 1012 file
+    > [!NOTE]
+    > The lookup settings must be applied to both formats to be used.
+
+## Issue format 1012 file
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
-2. In the **Format mapping** field, select **Format 1012**.
+2. In the **Format mapping** field, select **File format 1012**.
 3. Select **OK**.
-4. Complete the **Tax application Id** field with the code created for this report.
-5. Select the date range. 
+4. Specify the Tax Application ID applicable to this format.
+5. Select a date range.
 6. Select **OK**.
+
+## Issue a format 1012 file in excel format
+1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
+2. In the **Format mapping** field, select **File format 1012 Excel**.
+3. Select **OK**.
+4. Select a date range.
+5. Select **OK**.
+6. Complete the **Tax application Id** field with the code created for this report.
+7. Select the date range. 
+8. Select **OK**.
+
+> [!NOTE]
+> When executing the Format 1012 report in Excel, it is not necessary to populate the Tax Application ID field in the report launcher."
+
