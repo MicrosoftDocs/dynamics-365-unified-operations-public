@@ -4,6 +4,7 @@ description: This article lists the features and enhancements that are included 
 author: johnmichalak
 ms.author: johnmichalak
 ms.date: 07/30/2024
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
   - bap-template

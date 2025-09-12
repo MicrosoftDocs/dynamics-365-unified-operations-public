@@ -4,12 +4,13 @@ description: Learn how to configure and use the Electronic Invoicing service ISV
 author: ikondratenko
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 02/10/2025
+ms.date: 09/08/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global
 ms.search.validFrom: 2023-12-01
 ms.dyn365.ops.version: AX 10.0.37
+ms.custom: sfi-image-nochange
 ---
 
 # Electronic Invoicing service ISV last-mile connector
@@ -138,6 +139,10 @@ The name of this variable must be used as the name of the import source for the 
 
 ![Screenshot that shows the ResponseXml import source on the Electronic document parameters page.](../media/isv_connector_import_channel.jpg)
 
+### Electronic invoicing in Belgium
+
+For more information about electronic invoicing in Belgium, see [Electronic invoicing for Belgium](../belgium/emea-bel-e-invoices.md).
+
 ### Electronic invoicing in Chile
 
 For more information about electronic invoicing in Chile, see:
@@ -155,6 +160,10 @@ For more information about electronic invoicing in Denmark, including the integr
 ### Electronic invoicing in Panama
 
 For more information about electronic invoicing in Panama, see [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md).
+
+### Electronic invoicing in Uruguay
+
+For more information about electronic invoicing in Uruguay, see [Get started with Electronic invoicing for Uruguay](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md).
 
 ## Additional resources
 

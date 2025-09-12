@@ -3,13 +3,14 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.32 (Ap
 description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.32 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
+ms.reviewer: kamaybac
+ms.search.form:
 ms.topic: whats-new
-ms.date: 04/19/2024
+ms.date: 08/05/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen
-ms.reviewer: kamaybac
-ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.32 (April 2023)
@@ -182,7 +183,7 @@ We have recently added or significantly updated the following help articles. The
 |---|---|
 | Master planning | [DDMRP FAQ](../master-planning/planning-optimization/ddmrp-faqs.md) |
 | Master planning | [Set up scrap to calculate raw material requirements](../master-planning/scrap-calculations.md) |
-| Supply Chain Management development | [Create and process message queues and message types](../supply-chain-dev/message-processor.md) |
+| Supply Chain Management development | [Monitor and control message processor messages](../message-processor/message-processor.md) |
 | Support | [Use Customer Lockbox to manage secure access to customer data](../../fin-ops-core/dev-itpro/sysadmin/customer-lockbox.md) |
 | Warehouse management | [Manage inbound putaway based on container types](../warehousing/inbound-putaway-by-container-type.md) |
 | Warehouse management | [Monitor Warehouse Management usage and performance](../warehousing/application-insights-monitor-usage-performance.md) |

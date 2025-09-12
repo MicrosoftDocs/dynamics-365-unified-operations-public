@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.search.validFrom: 2021-10-13
 ms.search.form:
 ms.dyn365.ops.version: 10.0.0
+ms.custom: sfi-image-nochange
 ---
 # Connect finance and operations apps with an existing Microsoft Dataverse instance
 

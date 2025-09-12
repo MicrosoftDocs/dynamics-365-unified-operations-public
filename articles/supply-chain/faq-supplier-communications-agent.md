@@ -1,10 +1,11 @@
 ﻿---
-title: Responsible AI for the Supplier Communications Agent (production ready preview)
+title: Responsible AI FAQ for the Supplier Communications Agent (production ready preview)
 description: Get answers to frequently asked questions about the AI technology that is used in the Supplier Communications Agent with Copilot in Microsoft Dynamics 365 Supply Chain Management. This FAQ includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 author: t-benebo
 ms.author: benebotg
 ms.topic: article
-ms.date: 04/25/2025
+ms.date: 06/17/2025
+ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac
@@ -12,7 +13,7 @@ ms.collection:
   - bap-ai-Copilot
 ---
 
-# Responsible AI for the Supplier Communications Agent (production ready preview)
+# Responsible AI FAQ for the Supplier Communications Agent (production ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -91,7 +92,7 @@ The *Send follow-up emails to vendors on purchase orders* capability uses Copilo
 
 The generated content should never be used without manual review or supervision.
 
-The system doesn't send emails automatically, unless it's explicitly configured to do so. You're responsible for reviewing and sending each email. 
+The system doesn't send emails automatically, unless it's explicitly configured to do so. You're responsible for reviewing and sending each email.
 
 To configure the system to send emails automatically, an admin must turn on the *Supplier Communications Agent – automatically send emails* feature in Feature management. You should use this capability only after you test and review drafted emails over a long period.
 

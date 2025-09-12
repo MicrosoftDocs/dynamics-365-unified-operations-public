@@ -3,12 +3,12 @@ title: Inventory Visibility adjustment offset
 description: Learn how to offset inventory adjustments that were updated through Inventory Visibility and then also updated in Microsoft Dynamics 365 Supply Chain Management.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: how-to
-ms.date: 04/18/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Inventory Visibility adjustment offset
@@ -27,7 +27,7 @@ When you sync or import external sales orders and inventory adjustment journals 
 Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.39 or later.
-- The feature that's named *Inventory Visibility integration with inventory adjustment offset* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Inventory Visibility integration with inventory adjustment offset* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is mandatory and can't be turned off.
 - Inventory Visibility must be installed, and the basic integration between Supply Chain Management and Inventory Visibility must be set up, as described in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 - You must be using the **/api/environment/\{environmentId\}/onhand** and/or **/api/environment/\{environmentId\}/onhand/bulk** API to make inventory adjustments and post on-hand change events to Inventory Visibility. For information about these two APIs, see [Create one on-hand change event](inventory-visibility-api.md#create-one-onhand-change-event) and [Create multiple change events](inventory-visibility-api.md#create-multiple-onhand-change-events).
 

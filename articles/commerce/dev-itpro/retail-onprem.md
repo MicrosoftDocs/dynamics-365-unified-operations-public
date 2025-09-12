@@ -25,7 +25,7 @@ For more information about on-premises deployments, see [On-premises deployment 
 | Cloud Point of Sale  | Available          |
 | Retail Point of Sale | Available          |
 | Modern Point of Sale | Available          |
-| Commerce Scale Unit  | Available          |
+| Commerce Scale Unit ([self-hosted](retail-store-scale-unit-configuration-installation.md))  | Available          |
 | Channel database     | Available          |
 | Hardware station     | Available          |
 | AX 2012 N-1 support  | Not available      |

@@ -4,14 +4,13 @@ description: Learn how to use Microsoft Copilot Studio to create low-code plugin
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 10/01/2024
+ms.date: 09/02/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.collection:
   - bap-ai-copilot
-audience: Application User
 ms.search.region: Global
-ms.search.form:
 ---
 
 # Tutorial: Extend Copilot capabilities with low-code plugins
@@ -80,13 +79,11 @@ In the new topic, you use variables that are set with the user's page and record
 In the topic, create an action that uses a flow to get the course description.
 
 1. Select the plus sign (**+**), and then select **Call an action** \> **Create a flow**. Power Automate is opened.
-1. Select the **When Power Virtual Agents calls a flow** node to open the options, and define the following parameters:
-
-    - Select **Text** as the type of user input.
-    - In the **Input** field, enter **CourseID**.
-
-1. In Power Automate, below the **When Power Virtual Agents calls a flow** node, select the plus sign (**+**), and then select **Add an action**.
-2. In the **Add an action** pane, search for and select the **List rows** action in the **Microsoft Dataverse** connector.
+1. Select the **When Microsoft Copilot Studio calls a flow** node to open the options, and define the following parameters:
+    1. Select **Text** as the type of user input.
+    1. In the **Input** field, enter **CourseID**.
+1. In Power Automate, below the **When Microsoft Copilot Studio calls a flow** node, select the plus sign (**+**), and then select **Add an action**.
+1. In the **Add an action** pane, search for and select the **List rows** action in the **Microsoft Dataverse** connector.
 1. On the **Parameters** tab for the **List rows** options, set the following values:
 
     - **Table Name:** Courses V2 (mserp)
@@ -113,7 +110,7 @@ In the topic, create an action that uses a flow to get the course description.
     1. In the **Content** parameter of the **Parameters** pane, select the **Outputs** parameter from the **Compose** action.
     1. In the **Schema** parameter, enter the following JSON schema.
 
-        ```json
+```json
         {
             "type": "array",
             "items": {
@@ -148,38 +145,38 @@ In the topic, create an action that uses a flow to get the course description.
                 ]
             }
         }
-        ```
+```
 
-1. Initialize a variable for the course description that will be the output of the flow.
+8. Initialize a variable for the course description that will be the output of the flow.
 
     1. Below the **Parse JSON** action, select the plus sign (**+**), and then select **Add an action**.
     1. Search for and select the **Initialize variable** action in the **Variable** group of actions.
     1. In the **Name** parameter, enter **CourseDescription**.
     1. In the **Type** parameter, specify **String**.
 
-1. Set the variable to the course description.
+9. Set the variable to the course description.
 
     1. Below the **Initialize variable** action, select the plus sign (**+**), and then select **Add an action**.
     1. Search for and select the **Set variable** action in the **Variable** group of actions.
     1. In the **Name** parameter, enter **CourseDescription**.
     1. In the **Value** parameter, select the `Body mserp_coursedescription` parameter from the **Parse JSON** action.
 
-1. Select the flow output to send back to Copilot Studio.
+10. Select the flow output to send back to Copilot Studio.
 
-    1. Select the **Return value(s) to Power Virtual Agents** node.
+    1. Select the **Return value(s) to Microsoft Copilot Studio** node.
     1. On the **Parameters** tab, select **Add an output**, and select **Text** as the type of output.
     1. Enter **CourseDescription** as the parameter name.
     1. In the **Enter a value to respond with** parameter, select the **CourseDescription** variable from the **Variables** parameters.
 
-1. Select the flow name, and rename the flow **Get course description demo**.
-1. Save the flow.
+11. Select the flow name, and rename the flow **Get course description demo**.
+12. Save the flow.
 
     <img alt="Screenshot of an action that uses a flow to get the course description." src="../media/Copilot-extensibillity-get-course-description.png" width="70%">
 
-1. Back in Copilot Studio, in the **Save and refresh** dialog box, select **Done**.
-1. Below the **Question** node for the language selection, select the plus sign (**+**), and then select **Call an action**.
-1. In the **Select an action** dialog box, select the **Get course description demo** action that you created in the flow.
-1. On the **Course description demo** action node, select the `Topic.CourseID` variable for the **CourseID (String)** input.
+13. Back in Copilot Studio, in the **Save and refresh** dialog box, select **Done**.
+14. Below the **Question** node for the language selection, select the plus sign (**+**), and then select **Call an action**.
+15. In the **Select an action** dialog box, select the **Get course description demo** action that you created in the flow.
+16. On the **Course description demo** action node, select the `Topic.CourseID` variable for the **CourseID (String)** input.
 
 ## Step 4: Create an action that translates the course description
 

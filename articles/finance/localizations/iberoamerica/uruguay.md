@@ -1,27 +1,37 @@
 ---
 title: Uruguay overview
 description:  Access links to Microsoft Dynamics 365 Finance documentation resources for Uruguay directing to resources about legal entites, invoices, and records. 
-author: kfend
-ms.author: kfend
+author: v-pedrobusto2025
+ms.author: v-pedrobusto
 ms.topic: overview
-ms.date: 12/21/2023
+ms.date: 07/30/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Uruguay
 ms.search.validFrom: 2023-10-20
-ms.search.form: 
 ms.dyn365.ops.version: App 10.0.38
 ---
 
 # Uruguay overview
 
 [!include [banner](../../includes/banner.md)]
+This overview provides a comprehensive guide to setting up legal entities in Uruguay within Microsoft Dynamics 365 Finance. It includes main configurations, general and Uruguay-specific reports, electronic invoicing formats, and additional resources for electronic reporting.
 
-This article includes information and links to resources that can help you set up legal entities with a primary address in Uruguay.
+## Table of contents
+- [Uruguay overview](#uruguay-overview)
+- [Main configurations](#main-configurations)
+- [General Reports](#general-reports)
+- [Additional resources](#additional-resources)
+
+## Main Configurations
 - [Configure sales and purchase invoices for Uruguay](ltm-configure-invoices-uruguay.md)
 - [Create customer and vendor records with an address in Uruguay](ltm-create-customer-vendor-uruguay.md)
 - [Set up a legal entity and tax information for Uruguay](ltm-set-up-legal-entity-tax-uruguay.md)
   
+
+## General Reports
+- [Printing configuration for General Ledger LATAM](ltm-general-ledger.md)
+- [Print a Ledger Posting report for LATAM](ltm-ledger-posting-report.md)
+- [VAT book printing configuration](ltm-vat-book.md)
 
 ## Additional resources
 

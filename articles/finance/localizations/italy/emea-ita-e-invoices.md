@@ -8,6 +8,7 @@ ms.date: 02/28/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Italy
+ms.custom: sfi-image-nochange
 ---
 
 # Customer electronic invoices

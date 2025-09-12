@@ -9,6 +9,7 @@ ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global
 ms.search.validFrom: 2020-03-16
+ms.custom: sfi-image-nochange
 ---
 
 # Troubleshoot issues during initial setup

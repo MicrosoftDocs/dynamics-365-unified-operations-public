@@ -18,8 +18,6 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 # Vendor invoices overview
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 This article provides general information about vendor invoices. Vendor invoices are requests for payment for products and services. Vendor invoices might represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.
 

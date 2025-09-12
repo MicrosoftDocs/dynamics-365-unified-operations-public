@@ -29,14 +29,14 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
+        - name: Human Resources 10.0.45  
+          href: ./get-started/hr-whats-new-10-0-45.md   
         - name: Human Resources 10.0.44  
           href: ./get-started/hr-whats-new-10-0-44.md  
         - name: Human Resources 10.0.43
           href: ./get-started/hr-whats-new-10-0-43.md
         - name: Human Resources 10.0.42
           href: ./get-started/hr-whats-new-10-0-42.md
-        - name: Human Resources 10.0.41
-          href: ./get-started/hr-whats-new-10-0-41.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -557,7 +557,7 @@ items:
           items:
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
-        - name: Human Resources Recruiting app (preview)
+        - name: Human Resources Recruiting app 
           items:
           - name: Configure the Human Resources recruiting app
             items:
@@ -567,8 +567,10 @@ items:
               href: hr-recruit-onboard.md 
             - name: Configuration in the HR Recruiting app   
               href: hr-recruit-configuration.md
-            - name: Configure the careers site in the HR Recruiting app
+            - name: Set up the careers site in the HR Recruiting app
               href: hr-recruit-career.md 
+            - name: Known issues and limitations of the HR Recruiting app
+              href: hr-recruit-known.md
           - name: Use the Human Resources recruiting app
             items: 
             - name: Use the dashboard in the HR Recruiting app 
@@ -587,9 +589,9 @@ items:
             items:
             - name: Set up interview schedules
               href: hr-interview-schedule.md
-          - name: Upload resumes
+          - name: Upload resumes (preview)
             items:
-            - name: Bulk upload resumes
+            - name: Upload resumes
               href: bulk-resume-upload.md
     - name: Time and attendance
       items:
@@ -783,7 +785,7 @@ items:
       items:
       - name: Performance management overview
         href: hr-develop-performance-management-overview.md
-      - name: Set up electronic reporting to print preformance reviews
+      - name: Set up electronic reporting to print performance reviews
         href: perf-mgmt-print.md
       - name: Skills
         items:

@@ -101,7 +101,7 @@ After you've finished adding lines to the lower section, mark each line that you
 
 You can also manually release orders to the warehouse by using the **Outbound load planning workbench** page. This page lets you organize order lines into loads and then release those loads to the warehouse.
 
-To open the **Outbound load planning workbench** page, go to **Warehouse management** \> **Loads**. You can also open it from the **Sales orders**, **Transfer orders**, and **Outbound shipment orders** pages. In the upper section of the page, you can select to view the following information:
+To open the **Outbound load planning workbench** page, go to **Warehouse management** \> **Loads** \> **Outbound load planning workbench**. You can also open it from the **Sales orders**, **Transfer orders**, and **Outbound shipment orders** pages. In the upper section of the page, you can select to view the following information:
 
 - Shipments
 - Sales lines
@@ -109,7 +109,7 @@ To open the **Outbound load planning workbench** page, go to **Warehouse managem
 - Outbound shipment order lines
 - Transportation request lines (To view this information, you must enable [*In transit planning*](/dynamicsax-2012/appuser-itpro/set-up-transportation-parameters#set-up-general-transportation-parameters).)
 
-On each tab, select lines, and then add them to a new or existing load.
+On each tab, select lines, and then add them to a new or existing load. You can filter the available lines by opening the **Filters** tab in the Action Pane and then selecting **Load planning filters**. Learn more in [Load planning filters](tasks/use-load-planning-workbench-plan-loads-shipments.md#load-planning-filters).
 
 The **Supply and demand** tab on the Action Pane includes the following buttons that you can use to add order lines in the upper section to a load:
 

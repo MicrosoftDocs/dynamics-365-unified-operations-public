@@ -1,12 +1,13 @@
 ---
 title: Configure the Electronic reporting (ER) framework
 description: Learn about how to configure parameters of the Electronic reporting (ER) framework, including learning about the prerequisites for electronic reporting setup.
-author: kfend
-ms.author: filatovm
+author: liza-golub
+ms.author: egolub
 ms.topic: how-to
-ms.date: 04/23/2020
+ms.custom: 
+  - bap-template
+ms.date: 08/22/2025
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace, ERParameters, ERFormatDestinationTable
@@ -21,7 +22,7 @@ ms.assetid: 3c1291de-230c-4e31-96c4-ba69a310690a
 This article explains how to set up the basic functionality for Electronic reporting (ER). It also describes the steps that you must complete before you can set up ER.
 
 ## Prerequisites for ER setup
-Before you can set up ER, you must set up the required [document types](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) in Document management:
+Before you can set up ER, you must set up the required [document types](../../dev-itpro/organization-administration/configure-document-management.md#configure-document-types) in Document management: 
 
 - A document type for Microsoft Office documents that are used as templates for ER reports.
 - A document type that is used to store the output of ER reports in the jobs archive.
@@ -57,8 +58,6 @@ On the **General** tab of the **Electronic reporting parameters** page, set the 
     - Set this option to **No** to allow Microsoft Telemetry to collect information about the average time that is required to process a single incoming or outgoing record as an ER configuration. This information is tracked as a specific health metric of the environment, and it will help Microsoft quickly identify and address issues that affect customers who use the ER framework.
     - Set this option to **Yes** to stop collecting telemetry information.
 
-[![General tab of the Electronic reporting parameters page.](./media/er-configure-parameters-main.png)](./media/er-configure-parameters-main.png)
-
 ## <a name="ManageDocumentsParameters">Parameters to manage documents</a>
 
 On the **Attachments** tab of the **Electronic reporting parameters** page, set the following ER parameters:
@@ -75,19 +74,12 @@ On the **Attachments** tab of the **Electronic reporting parameters** page, set 
 
     For more information, see [Backup storage of ER templates](er-backup-storage-templates.md).
 
-[![Attachments tab of the Electronic reporting parameters page.](./media/er-configure-parameters-documents.png)](./media/er-configure-parameters-documents.png)
+## Runtime parameters
 
-## LCS parameters
-
-On the **LCS** tab of the **Electronic reporting parameters** page, define the number of parallel threads that should be used to load an ER configuration from repositories in Microsoft Dynamics Lifecycle Services (LCS), so that the configurations are loaded in the most efficient manner. The value can vary from **1** through **15**, depending on the available resources of the current program. Based on this setting and the number of other tasks and their priorities, the real number of threads will be defined automatically.
-
-[![LCS tab of the Electronic reporting parameters page.](./media/er-configure-parameters-lcs.png)](./media/er-configure-parameters-lcs.png)
-
-## RCS parameters
-
-On the **RCS** tab of the **Electronic reporting parameters** page, sign up for [Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
-
-[![RCS tab of the Electronic reporting parameters page.](./media/er-configure-parameters-rcs.png)](./media/er-configure-parameters-rcs.png)
+On the **Runtime** tab of the **Electronic reporting parameters** page, set the following ER parameters:
+ 
+ - **Autofit row height** - When selected, this setting ensures that the height of a row configured in an Excel template as an _AutoFit Row Height_ and containing at least one merged cell with wrap text alignment, is automatically adjusted at runtime. This adjustment occurs when the merged cell is filled with large text, allowing all wrapped content to be fully visible without manual resizing.
+ - **Query timeout (seconds)** - As of version 10.0.46 of Finance, the ER engine supports manual configuration of query timeouts during runtime. The default value of 0 retains the system’s standard timeout, but users can now define custom duration for queries in ER runtime, improving flexibility and execution control.
 
 ## Active ER configurations provider
 
@@ -100,9 +92,6 @@ In addition to the basic functionality, ER has other functionality that you can 
 - When you add new Application Object Tree (AOT) artifacts or update existing AOT artifacts that are used as data sources (tables, views, or data entities) in ER, use the **Rebuild table references** menu item (**Organization administration** \> **Electronic reporting** \> **Rebuild table references**) to bring your AOT changes into the ER metadata.
 
 ## Frequently asked questions
-**Question:** What is the optimal number of parallel threads to use to load an ER configuration from LCS?
-
-**Answer:** To calculate the optimal number of parallel threads, use the following empirical formula: Cores ÷ 2 + 1(2). For example, if the program runs on a virtual machine (VM) that has two CPUs, and each CPU contains four cores, the optimal number is five or six parallel threads.
 
 **Question:** I have added a custom table to the AOT. I created a new ER model mapping configuration for my ER data model. During the design of the model mapping, I tried to add a new data source type, **Table records**, that refers to my table. I could manually add my table name to the **Table** lookup, and the ER model mapping accepted it without errors or warnings. However, my table's name isn't included in the list of available choices that the **Table** lookup of this data source offers. How do I include the name of my table?
 

@@ -14,7 +14,7 @@ ms.search.form: WHSSourceSystem, WHSEWManagementSystem, WHSShipmentOrderIntegrat
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to use Warehouse management only mode to support external shared warehouse processing. This approach allows warehouse management (WMS) functionality to be consolidated into a separate legal entity that handles requests from multiple sales subsidiaries (legal entities) in Microsoft Dynamics 365 Supply Chain Management.
+This article explains how to use Warehouse management only mode to support external shared warehouse processing. This approach allows warehouse management functionality to be consolidated into a separate legal entity that handles requests from multiple sales subsidiaries (legal entities) in Microsoft Dynamics 365 Supply Chain Management.
 
 You can use [Warehouse management only mode](wms-only-mode-overview.md) to handle logistics operations in a legal entity solely dedicated to warehousing operations. You can then connect warehouses between that legal entity and other legal entities that do all the order and financial processing. In addition, warehouse management processes can use an *owner* inventory dimension to track which legal entity owns the inventory for items that are shared across legal entities.
 
@@ -26,7 +26,7 @@ The following articles provide detailed information about how *Warehouse managem
 
 - [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md)
 - [Exchange data between systems](wms-only-mode-exchange-data.md)
-- [Create and process message queues and message types](../supply-chain-dev/message-processor.md)
+- [Monitor and control message processor messages](../message-processor/message-processor.md)
 
 ## High-level implementation example
 
@@ -46,7 +46,7 @@ Here's a high-level description of the inbound process. Steps that start with *L
 1. *WOM:* The warehousing entity processes the inbound shipment order messages. As a result of this processing, *inbound shipment orders* are created.
 1. *WOM:* Inbound loads are created manually, automatically, or through import (depending on your configuration).
 1. *WOM:* Warehouse workers use the Warehouse Management mobile app to register the inbound shipment order transactions.
-1. *WOM:* The warehousing entity processes [receiving completed](wms-only-mode-shared-and-external-detail-use.md#receiving-completed) operations for the related loads. These operations update the load status to *Received* and generate *external warehouse inbound shipment order updates* for *LE1*. You can turn on automatic [message processing](../supply-chain-dev/message-processor.md) for the *External warehouse shipment order updates* message queue.
+1. *WOM:* The warehousing entity processes [receiving completed](wms-only-mode-shared-and-external-detail-use.md#receiving-completed) operations for the related loads. These operations update the load status to *Received* and generate *external warehouse inbound shipment order updates* for *LE1*. You can turn on automatic [message processing](../message-processor/message-processor.md) for the *External warehouse shipment order updates* message queue.
 1. *LE1:* During the processing of the external warehouse inbound shipment order updates, inbound loads and shipments are created, and the related purchase order line transactions are updated to *Registered*. This status update allows further processing of product receipts and invoices.
 1. *WOM:* The warehousing entity finalizes the inbound shipment order line transactions by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
@@ -67,7 +67,7 @@ Here's a high-level description of the outbound process. Steps that start with *
 1. *WOM:* Depending on the setup of your [wave template](wave-templates.md) definitions, warehouse work might be created and released immediately.
 1. *WOM:* Outbound warehouse work is processed, and the status of the related outbound shipment order line transactions is updated to *Picked*.
 1. *WOM:* The loads are outbound ship confirmed. As a result, external warehouse outbound shipment order updates are generated for *LE1*.
-1. *LE1:* During the processing of the external warehouse outbound shipment order updates, outbound shipment data and the related sales order line transactions are updated. The transactions become *Picked*. This update allows further processing of the packing slip and invoice. You can turn on automatic [message processing](../supply-chain-dev/message-processor.md) for the *External warehouse shipment order updates* message queue.
+1. *LE1:* During the processing of the external warehouse outbound shipment order updates, outbound shipment data and the related sales order line transactions are updated. The transactions become *Picked*. This update allows further processing of the packing slip and invoice. You can turn on automatic [message processing](../message-processor/message-processor.md) for the *External warehouse shipment order updates* message queue.
 1. *WOM:* The warehousing entity finalizes the outbound shipment order line transactions by running the *Post shipment packing slips* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 For a more detailed description of this process and the related processes, go to [Work with warehouse management only mode in Supply Chain Management](wms-only-mode-shared-and-external-detail-use.md).
@@ -131,7 +131,7 @@ The following illustration shows how on-hand inventory adjustments are handled w
 
 :::image type="content" source="media/wms-only-shared-warehouse-inventory-process.svg" alt-text="Screenshot of the inventory process for Warehouse management only mode." lightbox="media/wms-only-shared-warehouse-inventory-process.svg":::
 
-Changes in on-hand inventory that are the result of inbound and outbound shipment orders are handled when *Receive external warehouse inbound shipment order update* and *Receive external warehouse outbound shipment order update* operations are processed through the [message processor](../supply-chain-dev/message-processor.md) in the *LE1* legal entity. However, other warehouse movements, such as warehouse counting operations, must also ensure that on-hand inventory is the same between the *WOM* legal entity and any related order processing legal entities, such as *LE1*. Therefore, Warehouse management only mode can record the changes in warehouse inventory in the warehouse inventory update log (**Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**). This data is used to automatically create external inventory adjustments for the relevant legal entities via the *Publish warehouse inventory update log updates* [process automation background process](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md). (By default, this background process runs every 10 minutes.)
+Changes in on-hand inventory that are the result of inbound and outbound shipment orders are handled when *Receive external warehouse inbound shipment order update* and *Receive external warehouse outbound shipment order update* operations are processed through the [message processor](../message-processor/message-processor.md) in the *LE1* legal entity. However, other warehouse movements, such as warehouse counting operations, must also ensure that on-hand inventory is the same between the *WOM* legal entity and any related order processing legal entities, such as *LE1*. Therefore, Warehouse management only mode can record the changes in warehouse inventory in the warehouse inventory update log (**Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**). This data is used to automatically create external inventory adjustments for the relevant legal entities via the *Publish warehouse inventory update log updates* [process automation background process](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md). (By default, this background process runs every 10 minutes.)
 
 You can use the *Create external inventory adjustment journals* process (**Warehouse management** \> **Periodic tasks** \> **Create external inventory adjustment journals**) to generate the inventory adjustment journals that are used to update the on-hand inventory. In this way, you can keep inventory information synced between the two legal entities.
 
@@ -156,6 +156,12 @@ This section provides an example that shows how to set up and use Warehouse mana
 To use Warehouse management only mode as described in this article, you must have at least two legal entities. For this example, the two legal entities are named as *LE1* and *WOM*.
 
 In the *WOM* legal entity, you must create a [source system](wms-only-mode-setup.md#source-systems) to handle shipment orders and the inventory on-hand update processes. For this example, this source system is named *SS-LE1*.
+
+> [!IMPORTANT]
+> When you use Warehouse management only mode with external shared warehouses, your [source system](wms-only-mode-setup.md#source-systems) must be set up to use an [outbound shipment processing policy](outbound-load-handling.md#outbound-shipment-policies) that has its **Enforce shipment to order matching** option set to *Yes*. The behavior of this setting varies slightly based on the version of Supply Chain Management you're using.
+>
+> - Supply Chain Management version 10.0.46 and later – When you confirm a shipment, the policy instructs the system to update the delivery remainder on the source order line to reflect the quantity that was actually shipped. If you later reverse the shipment the shipment, the delivery remainder is restored to the original ordered quantity.
+> - Supply Chain Management version 10.0.45 and earlier – If the shipped quantity differs from the ordered quantity, you must manually update the delivery remainder to match the shipped quantity before you confirm the shipment. Otherwise, the update fails on the *LE1* legal entity.
 
 In the *LE1* legal entity, you must set up an external warehouse management system of the *Legal entity* type and link it to the *SS-LE1* [source system](wms-only-mode-setup.md#source-systems) in the *WOM* legal entity. You can complete this setup by going to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **External warehouse management systems**.
 

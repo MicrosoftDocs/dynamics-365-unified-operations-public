@@ -4,7 +4,8 @@ description: Learn about features that are either new or changed in Microsoft Dy
 author: kamaybac
 ms.author: kamaybac
 ms.topic: whats-new
-ms.date: 05/28/2024
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen
