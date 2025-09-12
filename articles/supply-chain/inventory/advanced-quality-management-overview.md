@@ -1,5 +1,5 @@
 ---
-title: Advanced quality management overview (preview)
+title: Advanced quality management overview
 description: Learn about the advanced quality management features in Microsoft Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.author: johanho
@@ -11,17 +11,13 @@ ms.custom:
   - bap-template
 ---
 
-# Advanced quality management overview (preview)
+# Advanced quality management overview
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
 
 Advanced quality management is a suite of quality management features that was introduced in Microsoft Dynamics 365 Supply Chain Management version 10.0.44. It enhances the quality management features that were already available by adding many new tools. These tools address core issues that manufacturers face as they try to meet the United States Food and Drug Administration's (FDA's) Quality System Regulation (QSR), part 11 of Title 21 of the Code of Federal Regulations (21 CFR Part 11), current Good Manufacturing Practice (cGMP), and other regulatory and international standards, such as the International Organization for Standardization (ISO) and Six Sigma.
 
 :::image type="content" source="media/advanced-quality-management-overview.png" alt-text="Diagram that provides an overview of advanced quality management features, organized into continuous improvement, optimized testing, digitized manufacturing, regulatory compliance, and user productivity areas." lightbox="media/advanced-quality-management-overview.png":::
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -39,17 +35,17 @@ Before you can use the features that are described in this article, your system 
 
 This section describes some of the key industry-specific capabilities of the solution.
 
-- **Corrective and preventive actions (CAPA)** – Users can automate processes for managing, tracking, and correcting root causes of issues. They can also implement action plans to prevent the same issues and similar issues from occurring in the future. Learn more in [Corrective and preventive action (CAPA) management overview (preview)](capa-overview.md).
-- **Electronic signature requirement for CAPA case closure** – Users can establish CAPA case closure and cancellation as a trigger for electronic signature sign-off. Learn more in [CAPA management administration (preview)](capa-admin.md).
-- **Flexible sampling plans** – Companies can inspect a fraction of a lot, or skip lots completely, to reduce quality and material handling costs, accelerate material throughput, and make testing less redundant and destructive. Learn more in [Flexible sampling plans (preview)](quality-flexible-sampling-plans.md).
-- **Approved customer lists (ACLs)** – This feature provides more control over what products specific customers can buy and when they can buy those products. This capability is especially important for a product line that involves controlled substances and branded products. Learn more in [Approved customer lists (preview)](../sales-marketing/approved-customer-lists.md).
+- **Corrective and preventive actions (CAPA)** – Users can automate processes for managing, tracking, and correcting root causes of issues. They can also implement action plans to prevent the same issues and similar issues from occurring in the future. Learn more in [Corrective and preventive action (CAPA) management overview](capa-overview.md).
+- **Electronic signature requirement for CAPA case closure** – Users can establish CAPA case closure and cancellation as a trigger for electronic signature sign-off. Learn more in [CAPA management administration](capa-admin.md).
+- **Flexible sampling plans** – Companies can inspect a fraction of a lot, or skip lots completely, to reduce quality and material handling costs, accelerate material throughput, and make testing less redundant and destructive. Learn more in [Flexible sampling plans](quality-flexible-sampling-plans.md).
+- **Approved customer lists (ACLs)** – This feature provides more control over what products specific customers can buy and when they can buy those products. This capability is especially important for a product line that involves controlled substances and branded products. Learn more in [Approved customer lists](../sales-marketing/approved-customer-lists.md).
 - **Electronic signature** – This feature enhancement improves the security of digital signatures to meet the latest government requirements and regulations.
 - **Electronic batch records (EBRs)** – Users can view all the versions, methods, and characteristics for consumed bill of materials (BOM) and formula items. This view is referred to as a *master manufacturing record* (MMR). It maintains all the methods that can be used to produce an item. Users can also view and print reports of the actual versions, test values, attribute values, and quality order results of all the items that are produced and the ingredients that are consumed. This view is referred to as a *batch production record* (BPR). It captures the actual version and methods that are used to produce an item. Learn more in [Electronic batch records (EBRs)](../production-control/quality-electronic-batch-record.md).
-- **Instrument calibration** – This new feature adds a capability for tracking individual test instrument tags. It also supports an ongoing calibration process for instrument tags and tracks the use of tags against quality order tests. Learn more in [Test instrument calibration (preview)](quality-instrument-calibration.md).
+- **Instrument calibration** – This new feature adds a capability for tracking individual test instrument tags. It also supports an ongoing calibration process for instrument tags and tracks the use of tags against quality order tests. Learn more in [Test instrument calibration](quality-instrument-calibration.md).
 - **Quality associations for return and transfer orders** – This feature enhances the capability of quality associations by enabling automatic creation of quality orders that are triggered from a sales return or a transfer order. Learn more in [Quality associations](quality-associations.md).
-- **Customer-specific certificates of analysis (COAs)** – This feature supports the setup and application of customer-specific COA requirements. Each customer drives details such as whether a specific test should be included, whether minimum/maximum values should be suppressed, whether customer-specific batch attribute ranges should be used instead of the standard range, and whether pass and fail results should be replaced with standard text. In addition, customer-specific COAs can be automatically generated from the sales order packing slip posting process. Learn more in [Customer specific certificate of analysis (COA) (preview)](quality-customer-specific-coa.md).
-- **Production dispensing** – Users can segregate the dispensing area and activities from the picking activities. Learn more in [Production dispensing (preview)](../production-control/quality-production-dispensing.md).
-- **Quick test results entry** – Users can quickly and easily enter test results on a quality order from a consolidated view that provides visibility into minimum, maximum, and target values for a test. Learn more in [Enter quality test results quickly (preview)](quality-quick-results-entry.md).
+- **Customer-specific certificates of analysis (COAs)** – This feature supports the setup and application of customer-specific COA requirements. Each customer drives details such as whether a specific test should be included, whether minimum/maximum values should be suppressed, whether customer-specific batch attribute ranges should be used instead of the standard range, and whether pass and fail results should be replaced with standard text. In addition, customer-specific COAs can be automatically generated from the sales order packing slip posting process. Learn more in [Customer specific certificate of analysis (COA)](quality-customer-specific-coa.md).
+- **Production dispensing** – Users can segregate the dispensing area and activities from the picking activities. Learn more in [Production dispensing](../production-control/quality-production-dispensing.md).
+- **Quick test results entry** – Users can quickly and easily enter test results on a quality order from a consolidated view that provides visibility into minimum, maximum, and target values for a test. Learn more in [Enter quality test results quickly](quality-quick-results-entry.md).
 
 ## Quality order usability improvements
 
@@ -105,4 +101,4 @@ To set the default validation setting for all new tags, follow these steps.
 1. Go to **Inventory management** \> **Setup** \> **Inventory and Warehouse Management parameters**.
 1. On the **Quality management** tab, in the **Skip check for test instrument on open quality order** field, specify whether the validation should be skipped for all new test instrument tags by default. You can change the setting for individual tags.
 
-Learn more in [Test instrument calibration (preview)](quality-instrument-calibration.md).
+Learn more in [Test instrument calibration](quality-instrument-calibration.md).
