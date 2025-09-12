@@ -17,8 +17,6 @@ ms.custom:
 
 Microsoft Dynamics 365 Supply Chain Management lets you create a basic certificate of analysis (COA) either from the quality order or from the menu directly after you select a quality order. Learn more about how to use the basic COA in [Quality orders](quality-orders.md). This article explains how to customize the content of a COA to meet specific customer requirements and automatically print the COA when a sales order packing slip is generated.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 ## Prerequisites
 
 Before you can use the features that are described in this article, your system must meet the following requirements:
