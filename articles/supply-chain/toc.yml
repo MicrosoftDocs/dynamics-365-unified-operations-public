@@ -1579,7 +1579,7 @@
       items:
       - name: Inventory management overview
         href: inventory/inventory-home-page.md
-      - name: Advanced quality management overview (preview)
+      - name: Advanced quality management overview
         href: inventory/advanced-quality-management-overview.md
       - name: Arrival
         items:
@@ -1617,27 +1617,27 @@
             href: inventory/quality-quarantine-zones.md
           - name: Nonconformance diagnostic types
             href: inventory/quality-diagnostic-types.md
-          - name: Nonconformance root cause codes (preview)
+          - name: Nonconformance root cause codes
             href: inventory/quality-root-cause-codes.md
-          - name: Nonconformance work groups (preview)
+          - name: Nonconformance work groups
             href: inventory/quality-nonconformance-workgroup.md
           - name: Nonconformance operations
             href: inventory/quality-operations.md
           - name: Nonconformance operation charges
             href: inventory/quality-charges.md
-        - name: Test instrument calibration (preview)
+        - name: Test instrument calibration
           href: inventory/quality-instrument-calibration.md
-        - name: Flexible sampling plans (preview)
+        - name: Flexible sampling plans
           href: inventory/quality-flexible-sampling-plans.md
         - name: Acceptance sampling (preview)
           href: inventory/quality-acceptance-sampling.md
         - name: Work with quality orders
           href: inventory/quality-orders.md
-        - name: Customer specific certificate of analysis (COA) (preview)
+        - name: Customer specific certificate of analysis (COA)
           href: inventory/quality-customer-specific-coa.md
         - name: Inspect the quality of goods
           href: inventory/tasks/inspect-quality-goods.md
-        - name: Enter quality test results quickly (preview)
+        - name: Enter quality test results quickly
           href: inventory/quality-quick-results-entry.md
         - name: Create and process a nonconformance
           href: inventory/tasks/create-process-non-conformance.md
@@ -1647,7 +1647,7 @@
           href: inventory/inventory-blocking.md
         - name: Create and maintain inventory blocking
           href: inventory/tasks/create-maintain-inventory-blocking.md
-      - name: Corrective and preventive action (CAPA) management (preview)
+      - name: Corrective and preventive action (CAPA) management
         items:
         - name: CAPA management overview
           href: inventory/capa-overview.md
@@ -1681,7 +1681,7 @@
           href: inventory/inventory-transactions-details.md
         - name: Initialize stock levels in the warehouse
           href: inventory/tasks/initialize-stock-levels-warehouse.md
-        - name: Link transfer order lines with sales order lines (preview)
+        - name: Link transfer order lines with sales order lines
           href: inventory/pair-transfer-and-sales-lines.md
         - name: Transfer physical inventory within the warehouse
           href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
@@ -3025,9 +3025,9 @@
             href: production-control/production-feedback.md
           - name: Time and attendance registration
             href: production-control/time-attendance-registrations.md
-          - name: Electronic batch records (EBR) (preview)
+          - name: Electronic batch records (EBR)
             href: production-control/quality-electronic-batch-record.md
-          - name: Production dispensing (preview)
+          - name: Production dispensing
             href: production-control/quality-production-dispensing.md
         - name: Manage financials in production
           items:
@@ -3137,7 +3137,7 @@
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
-        - name: Use external item identifiers to add products to orders (preview)
+        - name: Use external item identifiers to add products to orders
           href: sales-marketing/external-item-product-search-lookup.md
         - name: Copy lines between sales orders
           href: sales-marketing/copy-lines-between-sales-orders.md
@@ -3293,7 +3293,7 @@
           href: sales-marketing/customer-portal-user-admin.md
         - name: Customize and use the Customer portal
           href: sales-marketing/customer-portal-customize.md
-      - name: Approved customer lists (preview)
+      - name: Approved customer lists
         href: sales-marketing/approved-customer-lists.md
       - name: Credit limits for customers
         href: sales-marketing/credit-limits-customers.md
@@ -4157,7 +4157,7 @@
       items:
       - name: Monitor and control message processor messages
         href: message-processor/message-processor.md
-      - name: Clean up processed and canceled message processor messages (preview)
+      - name: Clean up processed and canceled message processor messages
         href: message-processor/message-processor-cleanup.md
       - name: Business events, custom message queues, and custom message types
         href: message-processor/developer/message-processor-develop.md

@@ -84,7 +84,7 @@ You can create a catalog of measuring devices that are used in the dispensing pr
 
     - **Name**
     - **Description**
-    - **Test instrument tag** – Specify a unique identifier for the measuring device. You can use this ID to track the device's calibration history. Learn more about instrument calibration in [Test instrument calibration (preview)](../inventory/quality-instrument-calibration.md).
+    - **Test instrument tag** – Specify a unique identifier for the measuring device. You can use this ID to track the device's calibration history. Learn more about instrument calibration in [Test instrument calibration](../inventory/quality-instrument-calibration.md).
 
 ## Set up production control parameters
 

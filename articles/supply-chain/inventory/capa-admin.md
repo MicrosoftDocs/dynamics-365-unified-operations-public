@@ -41,7 +41,7 @@ Before users can start to set up and use CAPA features, you must configure a few
 
 ## Load standard worker groups and processes from a template
 
-To get started quickly, you can load a set of standard CAPA processes and worker groups from a template that is provided with Supply Chain Management. You can use the standard records as-is or modify them to meet your specific needs. Learn more about how to work with CAPA processes in [Set up CAPA case components (preview)](capa-set-up-case-components.md).
+To get started quickly, you can load a set of standard CAPA processes and worker groups from a template that is provided with Supply Chain Management. You can use the standard records as-is or modify them to meet your specific needs. Learn more about how to work with CAPA processes in [Set up CAPA case components](capa-set-up-case-components.md).
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **Create standard CAPA process templates**.
 1. In the **Create standard CAPA process templates** dialog, set the following fields:

@@ -29,7 +29,7 @@ Most of the features that are described in this article are available as a stand
 - You must be running Supply Chain Management version 10.0.44 or later.
 - The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Learn more in [Test instrument calibration (preview)](quality-instrument-calibration.md).
+Learn more in [Test instrument calibration](quality-instrument-calibration.md).
 
 ## Create a test instrument
 
@@ -49,6 +49,6 @@ Learn more in [Test instrument calibration (preview)](quality-instrument-calibra
 
 - [Quality management test](quality-tests.md)
 - [Quality management test groups](quality-test-groups.md)
-- [Test instrument calibration (preview)](quality-instrument-calibration.md)
+- [Test instrument calibration](quality-instrument-calibration.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
