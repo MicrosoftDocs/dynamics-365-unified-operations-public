@@ -23,7 +23,7 @@ This article lists new features, fixes, improvements, and known issues for each 
 
 ### General availability for Android devices in some regions
 
-This version of the Warehouse Management mobile app is a general availability (GA) release for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out the GA release to all remaining regions. Its release status for your region is shown in the Google Play Store when you download it.
+This version of the Warehouse Management mobile app is a general availability (GA) release for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out the GA release to all remaining regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store.
 
 ### Preview release for Android devices in other regions and Windows and iOS devices in all regions
 
@@ -46,7 +46,7 @@ Version 4.0.16.0 adds the following fixes and improvements:
 
 ### General availability for Android devices in some regions
 
-This version of the Warehouse Management mobile app is a general availability (GA) release for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out the GA release to all remaining regions. Its release status for your region is shown in the Google Play Store when you download it.
+This version of the Warehouse Management mobile app is a general availability (GA) release for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out the GA release to all remaining regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store.
 
 ### Preview release for Android devices in other regions and Windows and iOS devices in all regions
 
@@ -67,7 +67,7 @@ Version 4.0.15.0 adds the following fixes and improvements:
 
 ### General availability for Android devices in some regions
 
-This version of the Warehouse Management mobile app is a general availability (GA) release for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out the GA release to all remaining regions. Its release status for your region is shown in the Google Play Store when you download it.
+This version of the Warehouse Management mobile app is a general availability (GA) release for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out the GA release to all remaining regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store.
 
 ### Preview release for Android devices in other regions and Windows and iOS devices in all regions
 
@@ -89,7 +89,7 @@ Version 4.0.14.0 adds the following fixes and improvements:
 
 ### General availability for Android devices in some regions
 
-This version of the Warehouse Management mobile app is a general availability (GA) release for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out the GA release to all remaining regions. Its release status for your region is shown in the Google Play Store when you download it.
+This version of the Warehouse Management mobile app is a general availability (GA) release for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out the GA release to all remaining regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store.
 
 ### Preview release for Android devices in other regions and Windows and iOS devices in all regions
 
