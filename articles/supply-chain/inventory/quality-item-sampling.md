@@ -30,6 +30,7 @@ Follow these steps to set up item sampling.
     - **Use acceptance sampling charts** – Choose whether to use acceptance sampling with this record. Learn more in [Acceptance sampling (preview)](quality-acceptance-sampling.md).
 
 1. If you're using acceptance sampling, then fill out the settings provided on the **Acceptance sampling** FastTab. Learn more about how to use these settings in [Acceptance sampling (preview)](quality-acceptance-sampling.md).
+1. If you're using sample management, then fill out the settings provided on the **Sample management** FastTab to set up inline or continuous sampling. Learn more about how to use these settings in [Enable and configure sample management (preview)](quality-sample-management-admin.md).
 1. On the **Sampling quantity** FastTab, in the **Value** field, enter a number. This value is related to the quantity specification value that is selected in the adjacent field.
 1. On the **Process** FastTab, make the following settings:
     - **Full blocking** – Set to *Yes* if the entire lot or order line quantity should be blocked when a test fails. Set this option to *No* if only the items in the quality order should be blocked when a test fails.
