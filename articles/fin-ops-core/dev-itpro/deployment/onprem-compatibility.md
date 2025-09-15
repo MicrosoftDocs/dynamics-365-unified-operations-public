@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 Finance + Operations (on-premises),  Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software
+title: Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software
 description: Learn about which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises),  Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management non-managed environments.
 author: faix
 ms.author: osfaixat
@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 44
 ms.service: dynamics-365-op
 ---
 
-# Microsoft Dynamics 365 Finance + Operations (on-premises),  Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software
+# Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software
 
 [!include [banner](../includes/banner.md)]
 
