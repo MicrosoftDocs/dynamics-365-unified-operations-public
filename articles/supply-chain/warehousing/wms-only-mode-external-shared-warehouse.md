@@ -34,19 +34,18 @@ The following illustration shows an example system where Warehouse management on
 
 :::image type="content" source="media/wms-only-d365-shared-warehouse-integration.svg" alt-text="Screenshot of the Warehouse management only mode with external shared warehouse." lightbox="media/wms-only-d365-shared-warehouse-integration.svg":::
 
-*USMF* and *USSW* legal entities exist in the [demo data](../../../fin-ops-core/dev-itpro/get-started/demo-data.md). *LE2* legal entity is displayed in the illustriation as an example.
-The examples below are described by using the sample records and values that are specified here. To work through the scenarios by using the sample data, you must be on a system where the standard demo data is installed.
-You can also use these scenarios as guidance for using the feature on a production system. However, in that case, you must substitute your own values for each setting that is described here.
+The *USMF* and *USSW* legal entities are included in the [demo data](../../../fin-ops-core/dev-itpro/get-started/demo-data.md). The *LE2* legal entity is displayed in the illustriation as an example.
+The scenarios described below use sample records and values from the demo data. To follow along, ensure your system has the standard demo data installed. Otherwise, substitute the sample values with your own configuration settings.
 
 ### Warehouse management only mode demo data
 The most relavant demo data created to support *Warehouse management only mode with external shared warehouses* scenarios is:
-- New legal entity *USSW* setup with a Site *1* and warehouse *SW-11*.
-- Basic work templates and location directives for *Inbound and Outbound shipment orders*.
-- Source system *Product Information Management (PIM)*
-- Source system *Contoso Entertainment System USA (USMF)*
-- Item *SW0001* released to both *USMF* and *USSW* legal entitites.
+- The new legal entity *USSW* setup with a Site *1* and warehouse *SW-11*.
+- Work templates and location directives for *Inbound and Outbound shipment orders*.
+- The source system *Product Information Management (PIM)*
+- The source system *Contoso Entertainment System USA (USMF)*
+- The item *SW0001* released to both *USMF* and *USSW* legal entitites.
    - In *USSW* legal entity, the item has *Non-valuated* item model group and has *owner* tracking dimension activated.
-- New warehouse *2-EXT* created in the *USMF* legal entity and marked as an external warehouse mapped to the warehouse *SW-11* in the *USSW* legal entity.
+- A new warehouse *2-EXT* created in the *USMF* legal entity and marked as an external warehouse mapped to the warehouse *SW-11* in the *USSW* legal entity.
 
 > [!NOTE]
 > The mentioned demo data examples are available from Supply Chain Management version 10.0.45 and later.
