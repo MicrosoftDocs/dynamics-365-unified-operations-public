@@ -12,8 +12,6 @@ ms.reviewer: johnmichalak
 
 ## Table of contents
 
-## Table of contents
-
 - [Introduction](#get-started-with-electronic-invoicing-for-colombia)
 - [Prerequisites](#prerequisites)
 - [Configure the electronic invoicing feature](#configure-the-electronic-invoicing-feature)
@@ -249,8 +247,13 @@ When configuring the **Transform document** action in the processing pipeline, e
 
 - **Configuration**: Set this to the exact name of the feature format you are configuring.  
     - For example:
-        - `Project e-Invoice (CO)` → Configuration: `Project e-Invoice (CO)`
+        -` Inventory e-Invoice (CO)` -> Configuration: `Inventory e-Invoice (CO)`
+        - `Inventory e-DebitNote (CO)` → Configuration: `Inventory e-DebitNote (CO)`
         - `Inventory e-CreditNote (CO)` → Configuration: `Inventory e-CreditNote (CO)`
+        - `Project e-Invoice (CO)` → Configuration: `Project e-Invoice (CO)`
+        - `Project e-DebitNote (CO)` → Configuration: `Project e-DebitNote (CO)`
+        - `Project e-CreditNote (CO)` → Configuration: `Project e-CreditNote (CO)`
+        
 
 - **Configuration Integration Point**:  
     - Use `InvoiceCustomer` for inventory-related formats (`Inventory e-Invoice (CO)`, `Inventory e-CreditNote (CO)`, `Inventory e-DebitNote (CO)`).
@@ -400,7 +403,7 @@ After you import the **Electronic invoicing for Colombia** feature that includes
 
 ### Setups-Application Setup
 
-You are currently in the [**Electronic invoice feature**](#electronic-invoice-feature) section. Next, click on **Application Setup** within the **Setups** tab to configure the mapping between Dynamics 365 source tables and electronic document formats.
+To configure the mapping between Dynamics 365 Finance source tables and electronic document formats, go to the **Setups** tab within the [**Electronic invoice feature**](#electronic-invoice-feature) section, and then select **Application Setup**. This step lets you define how data from Finance is linked to the correct electronic invoice formats for Colombia.
 
 > [!NOTE]
 > Although this configuration is not set at the general feature level, it acts globally for the selected feature setup. You do not need to repeat these steps for each individual format or feature—one configuration is sufficient for all supported document types within the feature.
@@ -417,6 +420,8 @@ The following grid defines the link between the source table in Dynamics 365, th
 
 ## Configure electronic document parameters
 
+To configure electronic document parameters, follow these steps.
+
 1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Colombia are imported. For more information, see [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. In the **Electronic document** section, add records for the **Customer Invoice journal** and **Project invoice** table names.
@@ -424,25 +429,25 @@ The following grid defines the link between the source table in Dynamics 365, th
 
 the Electronic Document Parameters page in Dynamics 365 Finance and Operations. Shows on the left-hand navigation pane, we can see the following options:
 
-    Electronic Document
+   - Electronic Document
 
-    Features
+   - Features
 
-    Electronic Invoicing
+   - Electronic Invoicing
 
-    Integration Channels
+   - Integration Channels
 
 For the Electronic Document option on the right-hand side, the section labeled Electronic Reporting is displayed.
 
 Within Electronic Reporting, a grid is presented which lists the electronic document configurations. This grid includes important associations between:
 
-    The source table name
+   - The source table name
 
-    The document context model and context
+   - The document context model and context
 
-    The electronic document model mapping
+   - The electronic document model mapping
 
-    The final mapping name used for generating the electronic invoice.
+   - The final mapping name used for generating the electronic invoice.
 
 This configuration is essential for determining how Dynamics 365 maps internal data models to external electronic formats for submission to tax authorities or service providers.
 
