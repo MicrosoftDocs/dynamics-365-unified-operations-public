@@ -90,9 +90,9 @@ Follow these steps to manage your lifecycle states:
 1. Enter the following details for your new or selected lifecycle state:
    - **Sample lifecycle state** – Provide a unique name for the lifecycle state, such as *Created*, *Received in Lab*, or *Tested*.
    - **Sample lifecycle state description** – Add a brief description of the lifecycle state.
-   - **Quality order created** – <!-- KFM: Add description of how to use this and what it does -->
-   - **Quality order validated** – <!-- KFM: Add description of how to use this and what it does -->
-   - **Sample scrapped** – <!-- KFM: Add description of how to use this and what it does -->
+   - **Quality order created** – Specifies the lifecycle state to which the sample should be updated when a quality order is created.
+   - **Quality order validated** – Specifies the lifecycle state to update the sample to when a quality order is validated against it.
+   - **Sample scrapped** – Specifies the lifecycle state that, when manually set, triggers audit trail logging for 'Scrapped By' and 'Scrapped Date/Time'.
 
 1. On the Action Pane, select **Save**.
 
@@ -142,26 +142,32 @@ To manage your sample types, follow these steps:
    - **Label layout** – Select the [label layout](#set-up-sample-labels) to use for this sample type.
    - **Description** – Shows the description configured for your selected [label layout](#set-up-sample-labels) (read only).
 
-1. Use the **Sample lifecycle states** FastTab to select the [lifecycle states](#configure-lifecycle-states) that are relevant to this sample type. Use the buttons between the columns to move the relevant states between the **Available** and **Selected** lists as needed. <!--KFM: Add more information about why we need to make this setting and the affects it will have. -->
+1. Use the **Sample lifecycle states** FastTab to select the [lifecycle states](#configure-lifecycle-states) that are relevant to this sample type. Use the buttons between the columns to move the relevant states between the **Available** and **Selected** lists as needed. 
+
+Selecting lifecycle states ensures that the sample type follows a defined progression through its lifecycle—from creation to completion or disposal. These states are used to trigger specific system behaviors, such as updating the sample when a quality order is created or validated, or logging audit trail details when a sample is scrapped. By configuring the relevant states, you enable consistent handling, tracking, and automation of sample-related processes.
+
 1. On the Action Pane, select **Save**.
 
 ## Set up sample associations
 
-<!-- KFM: Intro needed. Briefly describe purpose and business value of this configuration. -->
+A sample association defines how and when quality samples are taken for a specific item. It supports both inline and continuous sampling methods, using designated sample types with configurable retention periods and automated expiration tracking. By linking sampling procedures to items and test groups, it ensures consistent quality control, supports regulatory compliance, and enables efficient inspection workflows tailored to operational needs.
 
 Follow these steps to define and configure sample associations:
 
 1. Go to **Inventory management** > **Setup** > **Sample management** > **Sample associations**.
 1. On the Action Pane, select **New** to create a new sample association or select **Edit** to modify an existing one.
 1. Enter the following details in the top section to set up your new or selected sample association:
-   - **Item code** – <!-- KFM: Description needed -->
-   - **Item** – <!-- KFM: Description needed -->
-   - **Inline sample type** – <!-- KFM: Description needed -->
-   - **Inline sample scrap in days** – <!-- KFM: Description needed -->
-   - **Default item sampling for inline** – <!-- KFM: Description needed -->
-   - **Default inline test group** – <!-- KFM: Description needed. Link to [Quality management test groups](../inventory/quality-test-groups.md) -->
-   - **Continuous sample type** – <!-- KFM: Description needed -->
-   - **Continuous sample scrap in days** – <!-- KFM: Description needed -->
+   - **Item code** – Select which products should be included in the rule. Choose one of the following values:
+        - *Table* – A specific product.
+        - *Group* – A group of products.
+        - *All* – All products.
+   - **Item** – Depending on what you selected for **Item code**, choose the specific product or product group for which this rule should apply. Leave blank if **Item code** is set to *All*.
+   - **Inline sample type** – Select the sample type that defines how the inline sample should be inspected, including its applicable lifecycle states. This sample type governs the inspection method used for inline sampling and ensures that the correct procedures and validations are applied throughout the sample's lifecycle.
+   - **Inline sample scrap in days** – Specify how many days inline samples should be retained before being automatically scrapped. This setting helps manage sample lifecycle and storage by defining the retention period for inline samples associated with the item.
+   - **Default item sampling for inline** – Specifies the default item sampling method applied to inline samples during production. When initiating inline sampling from the production orders list or details page, this value is pre-filled in the create dialog but can be adjusted as needed.
+   - **Default inline test group** – Specify the default test group used for inline samples from production. When initiating inline sampling from the production orders list or details page, thsi value is pre/filled in the create dialog but can be adjusted as needed.
+   - **Continuous sample type** – Select the sample type that defines how the continuous sample should be inspected, including its applicable lifecycle states. This sample type governs the inspection method used for continuous sampling and ensures that the correct procedures and validations are applied throughout the sample's lifecycle.
+   - **Continuous sample scrap in days** – Select the number of days that continuous samples for this item should be saved before being scrapped.
 
 1. With the relevant row still selected in the top section, add each of the [sample procedures](#configure-sample-procedures) that workers should follow when handling samples for this association. Use the toolbar buttons to add or remove procedures as needed.
 1. On the Action Pane, select **Save**.
@@ -194,6 +200,18 @@ Follow these steps to define item sampling criteria:
 ## Configure related quality management records
 
 <!-- KFM: Describe other important types of settings that are needed to make quality management work. Just list them, mention how they apply to sample management, and give a link. I think the following are relevant here, but there could be more:
+-->
+
+### Quality associations
+
+Quality associations are configured to trigger sample management when production orders are reported as finished for specific items. This setup references test groups and item sampling configurations to ensure consistency and automation in quality control. For inline samples, a quality association is not required, as these samples are collected on demand directly from the production order.
+
+### Test groups
+
+Test groups define the set of tests applied during quality orders. For sample management, you can us the field Update inventory status to indicate that 
+
+No special configuration is required for test groups within sample management, as existing functionality is reused. In this example, a sample test group is configured using license plates. The primary purpose of this setup is to update the inventory status based on the outcome of the quality order. By default, the inventory status is set to QC Hold. If the quality order fails, the system updates both the associated inventory and the related production inventory to QC Failed. Conversely, if the quality order passes, the tested inventory and its related inventory are updated to QC Pass.
+
 
 - [Quality management test groups](../inventory/quality-test-groups.md) 
 - [Quality associations](../inventory/quality-associations.md)
