@@ -44,7 +44,7 @@ To support scenarios involving *Warehouse management only mode with external sha
 - The source system *Product Information Management (PIM)*
 - The source system *Contoso Entertainment System USA (USMF)*
 - The item *SW0001* released to both *USMF* and *USSW* legal entitites.
-   - In *USSW* legal entity, the item has *Non-valuated* item model group and has *owner* tracking dimension activated.
+   - In *USSW* legal entity, the item uses *Non-valuated* item model group and has the *owner* tracking dimension enabled.
 - A new warehouse *2-EXT* created in the *USMF* legal entity and marked as an external warehouse mapped to the warehouse *SW-11* in the *USSW* legal entity.
 
  A broader set of demo data has been configured. However, only the most relevant elements are highlighted here.
