@@ -38,16 +38,20 @@ For more information about how to resolve issues in on-premises environments, se
     # If you have multiple folders in there from older deployments, then please remove those.
     # It is not recommended to use the same agent share for multiple environments.
 
+    #& $agentShare\scripts\TSG_SysClassRunner.ps1 -agentShare $agentShare
+    
     #& $agentShare\scripts\TSG_UpdateFRDeployerConfig.ps1 -agentShare $agentShare
 
     #& $agentShare\scripts\TSG_WindowsAzureStorage.ps1 -agentShare $agentShare
 
-    #& $agentShare\scripts\TSG_SysClassRunner.ps1 -agentShare $agentShare
     
     #& $agentShare\scripts\TSG_RemoveFilesFromZip.ps1 -agentShare $agentShare -filesToRemove 'Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingMapping.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingMapping.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingServiceContracts.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingServiceContracts.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics.ElectronicReporting.Instrumentation.dll','Packages\TaxEngine\bin\Microsoft.Dynamics.ElectronicReporting.Instrumentation.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkForAx.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkForAx.pdb'
 
     #& $agentShare\scripts\TSG_EnableGMSAForAOS.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-AXSF$
+    
     #& $agentShare\scripts\TSG_EnableDixfService.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-Dixf$ -DMFShare "\\servername\dixf-share"
+
+    #& $agentShare\scripts\TSG_DisableMRDeployment.ps1 -agentShare $agentShare
 
     # The following script (when enabled) configures HTTPS for SSRS, and enables reporting services to run under a gMSA account.
     # NOTE!!! If you have used an IP address in LCS for your SSRS server, update the IP address to a Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed on the Environment page. Go to Maintain > Update settings.
