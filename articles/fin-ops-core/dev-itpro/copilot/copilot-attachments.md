@@ -63,7 +63,8 @@ When you attach a file to the chat session, Copilot Studio adds it to the **Syst
 
 This example shows how to extend Copilot for finance and operations apps with a custom topic that uses attachment files from the chat session to give the user more capabilities. In this scenario, you add a topic that reviews an attached screenshot of an error from Copilot for finance and operations apps, and Copilot gives guidance to the user to fix the error.
 
-[!NOTE] This example assumes [generative AI orchestration](/microsoft-copilot-studio/advanced-generative-actions) is enabled for the agent.
+> [!NOTE]
+> This example assumes [generative AI orchestration](/microsoft-copilot-studio/advanced-generative-actions) is enabled for the agent.
 
 ### Create a new topic
 
