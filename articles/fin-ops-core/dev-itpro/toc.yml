@@ -493,7 +493,7 @@ items:
             href: deployment/on-premises-overview.md
           - name: Plan and prepare for on-premises deployments
             href: deployment/plan-onprem-deployment.md
-          - name: On-premises supported software
+          - name: Supported software
             href: deployment/onprem-compatibility.md
           - name: Hardware sizing requirements
             href: get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
