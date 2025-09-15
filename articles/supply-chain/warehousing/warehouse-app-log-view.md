@@ -17,7 +17,7 @@ This article explains how to open and use the **Local log view** page in the War
 
 ## About the app log
 
-The app log stores a record of local app operations, including sign-in attempts, page navigation, and other actions. It also records any errors that occur. These log entries can help the Microsoft support and development teams understand what went wrong and how to fix the issue.
+The app log stores a record of local app operations, including sign-in attempts, page navigation, and other actions. It also records any errors that occur. If you're having trouble with the app, then these log entries can help the Microsoft support and development teams understand what went wrong and how to fix the issue.
 
 ## Open the Local log view page
 
@@ -34,8 +34,8 @@ To view the app log, open the **Local log view** page as described in the follow
 
 The following features of the **Local log view** page can help you find and export information when you're having problems with the app.
 
-- Select the filter button to open a pop-up dialog where you can choose to filter the log list by time or issue type.
-- Use the **Search** field to find specific log entries.
-- Select a log line to view details about that line, such as time, type, and message.
-- Once you've selected the relevant logs, select the **Save** button to save them locally as a text file.
-- Share the saved log file with the Microsoft support or development team.
+- To open a pop-up dialog where you can filter the log list by time or issue type, select the filter button next to the **Search** field.
+- To find specific log entries, enter text into the **Search** field.
+- To view details about a line, such as time, type, and message, select the line in the list.
+- To save all log entries as a local text file, select the **Save** button next to the **Search** field.
+- To get help, share the saved log file with the Microsoft support or development team.
