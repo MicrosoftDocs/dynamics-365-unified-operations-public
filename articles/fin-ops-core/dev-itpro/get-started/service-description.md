@@ -2,7 +2,7 @@
 title: Service description for finance and operations apps
 description: Learn about the service description for finance and operations apps, including an overview on operating models.
 author: tomhig
-ms.author: whigginb
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 11/06/2023
 ms.reviewer: johnmichalak
