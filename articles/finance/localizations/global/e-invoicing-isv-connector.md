@@ -31,7 +31,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 ## Integration with Edicom
 
 > [!NOTE]
-> The integration of the Electronic Invoicing service with the ISV last-mile connector is describe based on **Danish electronic invoicing** example. For other countries please refer to the respective section in the [Country-specific scenarios implemented via Edicom](#Countries) chapter.
+> The integration of the Electronic Invoicing service with the ISV last-mile connector is described based on **Danish electronic invoicing** example. For other countries please refer to the respective section in the [Country-specific scenarios implemented via Edicom](#Countries) chapter.
 
 You can configure and use the Electronic Invoicing service ISV last-mile connector's integration with the Global e-Invoicing Platform that [Edicom](https://edicomgroup.com/electronic-invoicing) provides. For more information refer to: [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/edicom-microsoft?365).
 
