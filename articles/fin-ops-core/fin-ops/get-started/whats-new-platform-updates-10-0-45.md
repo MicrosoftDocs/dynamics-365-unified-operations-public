@@ -3,7 +3,7 @@ title: Platform updates for version 10.0.45 of finance and operations apps (Sept
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.45 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
-ms.date: 09/09/2025
+ms.date: 09/15/2025
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -36,7 +36,7 @@ This section has a table that lists enhancements included in this release when a
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| System Administration | Batch Telemetry integrates with Application Insights | As an enhancement to the existing **Monitoring and Telemetry** feature, the platform is expanding its capabilities to include **Batch telemetry integration with Application Insights**. This update introduces a robust telemetry pipeline that enables visibility into critical batch job behaviors directly within the customer's Azure Application Insights instance. Teams can monitor execution timelines, detect throttling, track task distribution, and capture failure diagnostics to eliminate the need for manual incident reporting. This feature isn't limited to future releases. It will also be **backported to version 10.0.44**, ensuring broader availability and immediate impact for customers seeking improved observability and reduced operational overhead. For details, see [Available telemetry in finance and operations platform](../../dev-itpro/monitoring-telemetry/monitoring-available-telemetry.md) | Feature Management |
+| System Administration | Batch Telemetry integrates with Application Insights | As an enhancement to the existing **Monitoring and Telemetry** feature, the platform is expanding its capabilities to include **Batch telemetry integration with Application Insights**. This update introduces a robust telemetry pipeline that enables visibility into critical batch job behaviors directly within the customer's Azure Application Insights instance. Teams can monitor execution timelines, detect throttling, track task distribution, and capture failure diagnostics to eliminate the need for manual incident reporting. This feature isn't limited to future releases. It will also be **backported to version 10.0.44**, ensuring broader availability and immediate impact for customers seeking improved observability and reduced operational overhead. Learn more in [Available telemetry in finance and operations platform](../../dev-itpro/monitoring-telemetry/monitoring-available-telemetry.md) | Feature Management |
 | Copilot | File attachments with Copilot for finance and operations apps | This release lets you add file and screenshot attachments to your Copilot chat session. For details, see [Use file attachments in Copilot for finance and operations apps](../../dev-itpro/copilot/copilot-attachments.md). | Feature Management |
 
 
