@@ -14,15 +14,15 @@ ms.dyn365.ops.version: 10.0.16
 ---
 
 
-# Development guidelines for Financial tags 
+# Financial tags development guidelines and FAQ 
 
 Financial tags are a critical component of Microsoft Dynamics 365 finance and operations that enable organizations to categorize and track financial transactions with additional metadata. When developing 
 customizations or extensions that interact with Financial tags, it's essential to follow specific guidelines to maintain data integrity and system functionality.
 
-This article answers some FAQ's and outlines guidelines for developers working with Financial tags to prevent data corruption and ensure proper system behavior.
+This article answers some FAQs and outlines guidelines for developers working with Financial tags to prevent data corruption and ensure proper system behavior.
 
 ### Can I delete from the FinTag table? 
-Financial tags aren't meant to be deleted. There may be existing transactions across a variety of tables and legal entities that refer to that Financial tag.
+Financial tags aren't meant to be deleted. There may be existing transactions across various tables and legal entities that refer to that Financial tag.
 ```x++
 // NEVER DO THIS
 delete_from finTag where finTag.RecId == someRecId;
@@ -47,16 +47,15 @@ in use, its historical data must remain intact for compliance and traceability.
 delete_from finTagConfiguration where finTagConfiguration.RecId == someRecId;
 ```
 
-### Why can't I search for Finanical tags using display value?
-DisplayValue isn't an indexed field. Use `FinTag.find()` to find by RecID. Otherwise, use the `FinTagResolver.resolve()` method to resolve a FinTag by display value. This provides better performance 
-and caching.
+### Why can't I search for Financial tags using display value?
+DisplayValue isn't an indexed field. Use `FinTag.find()` to find by RecID. Otherwise, use the `FinTagResolver.resolve()` method to resolve a FinTag by display value. This provides better performance and caching.
 ```x++
 // NEVER DO THIS - Display values can change
 select finTag where finTag.DisplayValue == "SomeDisplayValue";
 ```
 
 ### What method should be used for inserts into the FinTag table?
-The `save()` method ensures that all validation logic, business rules, and triggers are properly executed during the insertion process. It also checks if an existing record exists and create a new record
+The `save()` method ensures that all validation logic, business rules, and triggers are properly executed during the insertion process. It also checks if an existing record exists and creates a new record
 only if necessary.
 
 
