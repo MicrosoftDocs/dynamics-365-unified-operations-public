@@ -1,17 +1,21 @@
 ---
 title: Work with customs clearance
-description: Learn how to work with customs clearance of products that are transported across the border of the Russian Federation, including a step-by-step process.
+description: Learn how to work with customs clearance of products that are transported across the border of the Russian Federation in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/26/2024
+ms.date: 09/15/2025
 ms.reviewer: johnmichalak
 
 ---
 
 # Work with customs clearance
+
+[!include [banner](../../includes/banner.md)]
+
+This article explains how to work with customs clearance of products that are transported across the border of the Russian Federation in Microsoft Dynamics 365 Finance.
 
 The registration of the customs clearance process is done in two new journals: the customs journal and the KTS journal. In these journals, information about the composition of the cargo customs declaration (GTD) or the customs value correction (KTS) is shown, customs payments are calculated based on the transaction amount or indicative price of products, and factures of the **GTD** or **KTS** type are registered.
 
@@ -33,89 +37,93 @@ The page for the customs journal consists of two parts, the header and journal l
 
 ### Create the customs journal header
 
-1. Go to **Inventory management** \> **Journal entries** \> **All customs journals**.
-2. To manage an existing customs journal, select a line, and then, on the Action Pane, select **Customs journal** \> **Edit**.
+To create the customs journal header, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Inventory management** \> **Journal entries** \> **All customs journals**.
+1. To manage an existing customs journal, select a line, and then, on the Action Pane, select **Customs journal** \> **Edit**.
 
     –or–
 
     To create a new customs journal, on the Action pane, select **Customs journal** \> **New**.
 
-3. In the **Create customs journal** dialog box, set the following fields:
+1. In the **Create customs journal** dialog, set the following fields:
 
-    - In the **Partner** section:
+    1. In the **Partner** section:
 
-        - In the **Log type** field, select **Import** or **Export**.
-        - In the **Partner code** field, select a counteragent account for journals of the **Import** type or a customer account for journals of the **Export** type.
+        1. In the **Log type** field, select **Import** or **Export**.
+        1. In the **Partner code** field, select a counteragent account for journals of the **Import** type or a customer account for journals of the **Export** type.
 
             > [!NOTE] 
             > You can select a counteragent where the **Foreign counteragent** option is set to **Yes**.
 
-         - The **Partner name** field is automatically set.
-         - In the **Agreement ID** field, select an agreement number for the partner. The **Document title** field is automatically set.
-         - The **Delivery terms** field is automatically set from either the agreement or the partner's account details.
+         1. The **Partner name** field is automatically set.
+         1. In the **Agreement ID** field, select an agreement number for the partner. The **Document title** field is automatically set.
+         1. The **Delivery terms** field is automatically set from either the agreement or the partner's account details.
 
-    - In the **Customs requisites** section:
+    1. In the **Customs requisites** section:
 
-        - In the **Customs code** field, select a customs code. The **Customs name** and the **Customs office code** fields are automatically set.
-        - In the **Vendor of customs services** field, select **Custom authority** or **Custom broker**, depending on who the debt for customs clearance will be formed to.
+        1. In the **Customs code** field, select a customs code. The **Customs name** and the **Customs office code** fields are automatically set.
+        1. In the **Vendor of customs services** field, select **Custom authority** or **Custom broker**, depending on who the debt for customs clearance will be formed to.
 
-    - In the **Requisites of customs services vendor** section:
+    1. In the **Requisites of customs services vendor** section:
 
-        - In the **Broker code** field, select a broker code. The **Broker name** field is automatically set.
-        - In the **Agreement ID** field, select the registration number of the contract for the customs service provider. Consider the value in the **Vendor of customs services** field. The **Document title** field is automatically set.
+        1. In the **Broker code** field, select a broker code. The **Broker name** field is automatically set.
+        1. In the **Agreement ID** field, select the registration number of the contract for the customs service provider. Consider the value in the **Vendor of customs services** field. The **Document title** field is automatically set.
 
-    - In the **Delivery and pay** section:
+    1. In the **Delivery and pay** section:
 
-        - In the **CMR\\BOL** field, select a road transport document (CMR)/bill of lading (BOL) number.
-        - In the **CMR\\BOL date** field, select the date of the CMR/BOL.
-        - In the **TIR** field, select an International Road Transports (TIR) number.
-        - In the **Declaration date** field, select the date of declaration.
-        - In the **Posting type** field, select the posting type for sales order invoices to reflect a sale that has a deferred transfer of ownership. This field is available only for journals of the **Export** type.
-        - In the **Inventory profile** field, select an accounting profile to change the accounting profile of products after the customs clearance process. The value of this field is taken from the terms of delivery and is available only for journals of the **Import** type.
-        - In the **Customs clearance method** field, select the method of customs clearance: **Import invoice** or **Indicative**. This method determines the prices that the calculation of the customs duty will be based on. If this field is set in the customs journal, it's automatically applied to all lines of the journal.
-        - In the **Country/region** field, select the country or region of origin of the products. If this field is set in the customs journal, it's automatically applied to all lines of the journal.
-        - Set the **Include to the cost price** option to **Yes** if you must include duties and fees for customs clearance in the cost of the product. This option is available only for journals of the **Import** type.
+        1. In the **CMR\\BOL** field, select a road transport document (CMR)/bill of lading (BOL) number.
+        1. In the **CMR\\BOL date** field, select the date of the CMR/BOL.
+        1. In the **TIR** field, select an International Road Transports (TIR) number.
+        1. In the **Declaration date** field, select the date of declaration.
+        1. In the **Posting type** field, select the posting type for sales order invoices to reflect a sale that has a deferred transfer of ownership. This field is available only for journals of the **Export** type.
+        1. In the **Inventory profile** field, select an accounting profile to change the accounting profile of products after the customs clearance process. The value of this field is taken from the terms of delivery and is available only for journals of the **Import** type.
+        1. In the **Customs clearance method** field, select the method of customs clearance: **Import invoice** or **Indicative**. This method determines the prices that the calculation of the customs duty will be based on. If this field is set in the customs journal, it's automatically applied to all lines of the journal.
+        1. In the **Country/region** field, select the country or region of origin of the products. If this field is set in the customs journal, it's automatically applied to all lines of the journal.
+        1. Set the **Include to the cost price** option to **Yes** if you must include duties and fees for customs clearance in the cost of the product. This option is available only for journals of the **Import** type.
 
-4. Select **OK**. The journal ID is automatically created and shown in the **Journal ID** field on the **Customs journal** page.
+1. Select **OK**. The journal ID is automatically created and shown in the **Journal ID** field on the **Customs journal** page.
 
     ![Customs journal page.](../media/245f651f3e4b3448ed828cdea8810fae.png)
 
-5. On the **Header** tab, you can correct the values that you entered in the **Create customs journal** dialog box. The following additional fields are also available:
+1. On the **Header** tab, you can correct the values that you entered in the **Create customs journal** dialog. The following additional fields are also available:
 
-    - On the **General** FastTab, in the **Vendor of customs services** section:
+    1. On the **General** FastTab, in the **Vendor of customs services** section:
 
-        - The **Posting profile** field reflects the posting profile for the formation of debt to the customs service provider. This field is set based on the selected agreement of the customs service provider.
-        - The **Customs terminal** field reflects the warehouse that is associated with the customs office. This field must be set if the **Warehouse change** option is set to **Yes** when the GTD issuance is generated.
+        1. The **Posting profile** field reflects the posting profile for the formation of debt to the customs service provider. This field is set based on the selected agreement of the customs service provider.
+        1. The **Customs terminal** field reflects the warehouse that is associated with the customs office. This field must be set if the **Warehouse change** option is set to **Yes** when the GTD issuance is generated.
 
-    - In the **Various** section:
+    1. In the **Various** section:
 
-        - The **Facture (system identifier)** field reflects the number of the facture that is generated from the KTS journal.
-        - The **Receipt transactions status** field shows the terms of delivery for customs clearance of products. This field is available only for journals of the **Import** type.
-        - The **Transfer journal** field shows the number of the journal that has a status of **Transfer**. This journal can be created when a GTD is issued.
+        1. The **Facture (system identifier)** field reflects the number of the facture that is generated from the KTS journal.
+        1. The **Receipt transactions status** field shows the terms of delivery for customs clearance of products. This field is available only for journals of the **Import** type.
+        1. The **Transfer journal** field shows the number of the journal that has a status of **Transfer**. This journal can be created when a GTD is issued.
 
-    - On the **Settings** FastTab, in the **Fees setup** section, in the **Allocation base of fee** field, select the base for allocation of the fee to the lines of the customs journal. This field is available if the **Include to the cost price** option is set to **Yes**.
-    - In the **GTD** section, the **GTD number** and **GTD issue date** fields are set when the GTD journal is posted.
-    - In the **Pay** section:
+    1. On the **Settings** FastTab, in the **Fees setup** section, in the **Allocation base of fee** field, select the base for allocation of the fee to the lines of the customs journal. This field is available if the **Include to the cost price** option is set to **Yes**.
+    1. In the **GTD** section, the **GTD number** and **GTD issue date** fields are set when the GTD journal is posted.
+    1. In the **Pay** section:
 
-        - In the **Payment due date** field, select the deadline for customs payments.
-        - In the **Method of payment** field, select a method of payment.
+        1. In the **Payment due date** field, select the deadline for customs payments.
+        1. In the **Method of payment** field, select a method of payment.
 
-    - In the **Posting** section, the **Voucher** field shows the number of the journal's voucher. This field is automatically set after a GTD is posted.
-    - In the **Status** section:
+    1. In the **Posting** section, the **Voucher** field shows the number of the journal's voucher. This field is automatically set after a GTD is posted.
+    1. In the **Status** section:
 
-        - The **Status** field reflects the status of the journal. When the journal is created, the initial status is **In Progress**. After a GTD is issued, the status is changed to **Issued**. After the customs journal is posted, the status is changed to **Posted**.
-        - The **Manually correction** option reflects the manual adjustment of the calculated customs payments on the journal lines.
+        1. The **Status** field reflects the status of the journal. When the journal is created, the initial status is **In Progress**. After a GTD is issued, the status is changed to **Issued**. After the customs journal is posted, the status is changed to **Posted**.
+        1. The **Manually correction** option reflects the manual adjustment of the calculated customs payments on the journal lines.
 
-    - On the **Financial dimensions** FastTab, you can view financial analyses of the customs journal. These analyses are determined by the selection of the customs service provider and can be manually changed.
+    1. On the **Financial dimensions** FastTab, you can view financial analyses of the customs journal. These analyses are determined by the selection of the customs service provider and can be manually changed.
 
     ![Header tab of the Customs journal page.](../media/8b181aef7f8b002d2fd7d6503c636bdd.png)
 
 ### Create customs journal lines
 
-1. Go to **Inventory management** \> **Journal entries** \> **All customs journals**.
-2. Select the line for a customs journal, and then, on the Action Pane, select **Customs journal** \> **Edit**.
-3. On the **Customs journal** FastTab, you can view data that was entered about the journal when it was created.
-4. On the **Customs journal lines** FastTab, you can view the following fields:
+To create customs journal lines, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Inventory management** \> **Journal entries** \> **All customs journals**.
+1. Select the line for a customs journal, and then, on the Action Pane, select **Customs journal** \> **Edit**.
+1. On the **Customs journal** FastTab, you can view data that was entered about the journal when it was created.
+1. On the **Customs journal lines** FastTab, you can view the following fields:
 
     - **TN VED code** – A TN VED code that was set on the **Item relation with TN VED** page, based on the date of declaration and customs that is specified on the customs journal header.
     - **Item number** – The product number that the journal line is generated for.
@@ -128,7 +136,7 @@ The page for the customs journal consists of two parts, the header and journal l
     - **Total (indicative)** – The amount of customs payments that are calculated based on the indicative cost.
     - **Variance** – The difference between the values in the **Total (import invoice)** and **Total (indicative)** fields.
 
-5. On the **Customs journal lines** FastTab, you can use the following buttons.
+1. On the **Customs journal lines** FastTab, you can use the following buttons.
 
     | Button | Function |
     |--------|----------|
@@ -140,25 +148,25 @@ The page for the customs journal consists of two parts, the header and journal l
     | **Customs journal line** \> **Invoice** | Go to the invoice for the current line. This button is available only for journals of the **Import** type that are formed according to terms of delivery where the transfer of ownership occurs before the border. |
     | **Customs journal line** \> **Product receipt** | Go to the qualifying invoice for the current line. This button is available only for journals of the **Export** type. |
 
-6. On the **Line details** FastTab, you can view the details of the customs journal line that was created:
+1. On the **Line details** FastTab, you can view the details of the customs journal line that was created:
 
-    - On the **General** tab:
+    1. On the **General** tab:
 
-        - In the **Identification** section, you can view the **Journal ID** and **Line number** fields.
-        - In the **General** section, in the **Section** field, you can change the section number. For example, this field is used when duties are distributed.
-        - The values of the **Customs clearance method** and **Country/region** fields are taken from the customs journal header.
-        - In the **Item** section, you can view the **Item number** and **TN VED code** fields. Their relation was set on the **Item relation with TN VED** page.
-        - In the **References** and **Invoice** section, there are links to the original purchaser or sales order number, invoice, or packing slip.
+        1. In the **Identification** section, you can view the **Journal ID** and **Line number** fields.
+        1. In the **General** section, in the **Section** field, you can change the section number. For example, this field is used when duties are distributed.
+        1. The values of the **Customs clearance method** and **Country/region** fields are taken from the customs journal header.
+        1. In the **Item** section, you can view the **Item number** and **TN VED code** fields. Their relation was set on the **Item relation with TN VED** page.
+        1. In the **References** and **Invoice** section, there are links to the original purchaser or sales order number, invoice, or packing slip.
 
-    - On the **Setup** tab, there is information about the calculation of customs payments based on the invoice and indicative values, and the amount of the calculated storage fee. The indicative cost is determined based on the settings on the **Indicative prices of TN VED** page.
+    1. On the **Setup** tab, there is information about the calculation of customs payments based on the invoice and indicative values, and the amount of the calculated storage fee. The indicative cost is determined based on the settings on the **Indicative prices of TN VED** page.
 
         ![Setup tab.](../media/57fd8a751e0d1b21380580adb7f6b150.png)
 
-    - On the **Financial dimensions** tab, you can view financial information about the line that is defined from the line of the linked purchase order, invoice, sales order, or packing slip line.
+    1. On the **Financial dimensions** tab, you can view financial information about the line that is defined from the line of the linked purchase order, invoice, sales order, or packing slip line.
 
 To create a new line, follow these steps.
 
-1. On the **Customs journal lines** FastTab, select **Create lines**.
+1. In Dynamics 365 Finance, on the **Customs journal lines** FastTab, select **Create lines**.
 
     The following table shows the inventory transactions that are available for creating customs journal lines.
 
@@ -169,7 +177,7 @@ To create a new line, follow these steps.
     | Export | The posting type is **Standard**. | Packing slip for a sales order | **Deducted** or **Sold** |
     | Export | The posting type is **Postponed passing of property**. | Sales order invoice of the **Deferred transfer of ownership** posting type | **Deducted** or **Sold** |
 
-    The **Create customs journal lines** dialog box consists of two main parts:
+    The **Create customs journal lines** dialog consists of two main parts:
 
     - **Upper** – The upper part of the page shows the source of the payment. The view depends on the value of the **Log type** field. For the **Import** journal type, it depends on the terms of the transfer of ownership that are reflected in the terms of delivery. For the **Export** journal type, it depends on the terms of the transfer of ownership that are reflected in the posting type. Filters are applied to this part of the page. The **Invoice account** field is set to the same account as the **Partner code** field on the customs journal header. If the **Agreement ID** field on the customs journal header is set to a value (that is, it isn't blank), orders and invoices that have the same agreement ID are shown. If the **Agreement ID** field is blank, all orders and invoices of the partner are shown.
     - **Lower** – The lower part of the page shows the quantity of products that are available for selection according to the warehouse transaction that is associated with the purchase order line, supplier's invoice, customer's packing slip, or customer's invoice. The following conditions must be met:
@@ -180,17 +188,17 @@ To create a new line, follow these steps.
         - The status of the warehouse transaction matches the type of the customs journal and the terms of the transfer of ownership.
         - For the **Export** journal type, the lines have a sales tax code where the **Type of tax** field is set to **VAT 0%** and the **Tax code for domestic market** field is set to a value (that is, it isn't blank).
 
-2. Mark the required lines. Additionally, in the **Selected quantity** field, you can change the quantity to include in the customs journal.
-3. Select **OK**.
+1. Mark the required lines. Additionally, in the **Selected quantity** field, you can change the quantity to include in the customs journal.
+1. Select **OK**.
 
-    ![Create customs journal lines dialog box.](../media/9e93327dc79cc0f3f442cc7c875dc54b.png)
+    ![Create customs journal lines dialog.](../media/9e93327dc79cc0f3f442cc7c875dc54b.png)
 
-4. Optional: To recalculate the journal lines, on the Action Pane, select **Manage** \> **Recalculate lines**. For example, if you created journal lines and then changed the indicative prices for those products, you should recalculate the lines so that the actual information in the customs journal is used.
+1. Optional: To recalculate the journal lines, on the Action Pane, select **Manage** \> **Recalculate lines**. For example, if you created journal lines and then changed the indicative prices for those products, you should recalculate the lines so that the actual information in the customs journal is used.
 
     > [!NOTE] 
     > For a journal that has a status of **In Progress**, you can create and change lines as many times as you require.
 
-5. If you created lines for a journal of the **Export** type, information about including a warehouse transaction in the customs journal is added to the source. In the **Grouping reference type** field, you should see a value of **Custom journal line** or **Customs journal line (goods in transit)**. In the **Grouping reference** field, you should see the packing slip or invoice number.
+1. If you created lines for a journal of the **Export** type, information about including a warehouse transaction in the customs journal is added to the source. In the **Grouping reference type** field, you should see a value of **Custom journal line** or **Customs journal line (goods in transit)**. In the **Grouping reference** field, you should see the packing slip or invoice number.
 
 When you calculate the import overhead cost, the settings of the charges code for customs payments are also analyzed in addition to the order cost. The amount of the overhead charges that have been registered for the purchase order or invoice, and that have been configured for the value of the **Delivery terms** field on the customs journal header, is added to the invoice cost on the line.
 
@@ -216,59 +224,63 @@ The customs fee for issuance is automatically calculated based on the type of cu
 
 To calculate the customs fee for storage or escort, follow these steps.
 
-1. Open the customs journal.
-2. On the Action Pane, select **Manage** \> **Fees calculation**.
+1. In Dynamics 365 Finance, open the customs journal.
+1. On the Action Pane, select **Manage** \> **Fees calculation**.
 
     > [!NOTE]
     > The status of the customs journal must be **In progress** or **Issued**.
 
-3. To calculate the customs fee for escort, follow these steps in the **Customs fees calculation** dialog box:
+1. To calculate the customs fee for escort, follow these steps in the **Customs fees calculation** dialog:
 
     1. In the **Vehicles quantity** field, enter the number of escort vehicles.
-    2. In the **Distance** field, enter the escort distance.
-    3. In the **Sales tax code** field, select the sales tax code that is associated with the customs fee for escort.
+    1. In the **Distance** field, enter the escort distance.
+    1. In the **Sales tax code** field, select the sales tax code that is associated with the customs fee for escort.
 
         If the **Include to the cost price** option on the customs journal header is set to **Yes**, the calculated customs fee for escort is distributed based on the method that is specified in the **Allocation base of fee** field.
 
-    4. Select **OK**. The fee is calculated based on the settings of the tax codes.
+    1. Select **OK**. The fee is calculated based on the settings of the tax codes.
 
     –or–
 
     To calculate the customs fee for storage, follow these steps:
 
     1. In the **Storage days** field, enter the number of days of storage.
-    2. In the **Sales tax code** field, select the sales tax code that is associated with the customs fee for storage.
-    3. Select the **Choose** checkboxes of the lines, based on the weight that the total storage weight should be calculated for. The calculated amount of the storage fee will be distributed to the selected lines.
-    4. Select **OK**. The fee is calculated based on the settings of the tax codes.
+    1. In the **Sales tax code** field, select the sales tax code that is associated with the customs fee for storage.
+    1. Select the **Choose** checkboxes of the lines, based on the weight that the total storage weight should be calculated for. The calculated amount of the storage fee will be distributed to the selected lines.
+    1. Select **OK**. The fee is calculated based on the settings of the tax codes.
 
-    ![Customs fee calculation dialog box.](../media/dce3e0eac21ffca181f7600f71f12a24.png)
+    ![Customs fee calculation dialog.](../media/dce3e0eac21ffca181f7600f71f12a24.png)
 
-4. To view the calculated fees for storage and escort, on the Action Pane, select **Customs journal** \> **Fees**.
+1. To view the calculated fees for storage and escort, on the Action Pane, select **Customs journal** \> **Fees**.
 
     ![Fees of storage and escort page.](../media/f5c60224ccf3d877e8e230e492186770.png)
 
-5. From the **Fees of storage and escort** page, you can adjust the value of the storage fee for non-posted customs journal. On the Action Pane, select **Delete lines of storage**. All lines of the storage fees for the journal will be deleted. Then create new fees for storage.
+1. From the **Fees of storage and escort** page, you can adjust the value of the storage fee for non-posted customs journal. On the Action Pane, select **Delete lines of storage**. All lines of the storage fees for the journal will be deleted. Then create new fees for storage.
 
 ### Adjust the amount of duty for the section
 
 The amount of duty for the section can be adjusted only for a customs journal that has a status of **In progress** or **Issued**.
 
-1. Open the customs journal.
-2. On the **Customs journal lines** FastTab, select **Update line** \> **Adjust section amounts**.
-3. In the **Adjust section amounts** dialog box, change the required amounts for the section, based the selected customs clearance method.
-4. Select **OK**. The amounts are changed and recalculated for all lines in the section.
+To adjust the amount of duty for the section, follow these steps.
 
-![Adjust section amounts dialog box.](../media/08df71ce9cf5956ef1c7f09decf49123.png)
+1. In Dynamics 365 Finance, open the customs journal.
+1. On the **Customs journal lines** FastTab, select **Update line** \> **Adjust section amounts**.
+1. In the **Adjust section amounts** dialog, change the required amounts for the section, based the selected customs clearance method.
+1. Select **OK**. The amounts are changed and recalculated for all lines in the section.
+
+![Adjust section amounts dialog.](../media/08df71ce9cf5956ef1c7f09decf49123.png)
 
 ### Analyze the totals of the customs journal
 
-1. Open the customs journal or the **All customs journals** page.
-2. On the Action Pane, select **Customs journal** \> **Totals**.
-2. In the **Inquiry** dialog box, set a filter on the lines of the customs journal.
+To analyze the totals of the customs journal, follow these steps.
 
-    ![Inquiry dialog box.](../media/1220cac7d68be6a9eeee2a57f007671f.png)
+1. In Dynamics 365 Finance, open the customs journal or the **All customs journals** page.
+1. On the Action Pane, select **Customs journal** \> **Totals**.
+1. In the **Inquiry** dialog, set a filter on the lines of the customs journal.
 
-3. In the **Totals** dialog box, you can view calculations in the following columns:
+    ![Inquiry dialog.](../media/1220cac7d68be6a9eeee2a57f007671f.png)
+
+1. In the **Totals** dialog, you can view calculations in the following columns:
 
     - **Import invoice** – The value of the basis for calculating customs payments based on the transaction value (invoice value) and the value of customs payments according to the lines of the customs journal in the **Total type** column.
     - **Indicative** – The value of the basis for calculating customs payments at the indicative cost and the value of customs payments on the lines of the customs journal in the **Total type** column.
@@ -277,17 +289,19 @@ The amount of duty for the section can be adjusted only for a customs journal th
     - **KTS** – The value of customs payments by KTS.
     - **Total of payments** – The total result of the calculation of customs payments by GTD and KTS.
 
-    ![Totals dialog box.](../media/50153513197023a84db2449d29ab6fc6.png)
+    ![Totals dialog.](../media/50153513197023a84db2449d29ab6fc6.png)
 
-4. Fees for escort and storage are calculated regardless of the method that determines the customs value (invoice or indicative). Therefore, only the **GTD** and **Total of payments** columns are filled in for those lines.
+1. Fees for escort and storage are calculated regardless of the method that determines the customs value (invoice or indicative). Therefore, only the **GTD** and **Total of payments** columns are filled in for those lines.
 
 ### Analyze the results of the customs journal section
 
-1. Open the customs journal.
-2. On the **Customs journal lines** FastTab, select **Customs journal line** \> **Overview of section data** to open the **Section overview** dialog box for the section that owns the current journal line.
+To analyze the results of the customs journal section, follow these steps.
+
+1. In Dynamics 365 Finance, open the customs journal.
+1. On the **Customs journal lines** FastTab, select **Customs journal line** \> **Overview of section data** to open the **Section overview** dialog for the section that owns the current journal line.
 
     > [!NOTE]
-    > The **Section overview** dialog box doesn't show fees for escort and issuance.
+    > The **Section overview** dialog doesn't show fees for escort and issuance.
 
     The **Declaration** section includes the following information:
 
@@ -332,27 +346,27 @@ The amount of duty for the section can be adjusted only for a customs journal th
     - **Charges value** – The amount of the overhead expense per line.
     - **Currency** – The currency of the overhead expense.
 
-    ![Section overview dialog box.](../media/8ff6e0bf711dee565c486651a34489a8.png)
+    ![Section overview dialog.](../media/8ff6e0bf711dee565c486651a34489a8.png)
 
 ### Issue a GTD 
 
 If you must generate a GTD number without issuing a GTD, open the customs journal or **All customs journals** page, and then, on the Action Pane, select **Manage** \> **GTD number registration**. Then, when you issue a GTD, you can change the **GTD number** and **Issuance date** values.
 
-Otherwise, follow these steps to issue a GTD.
+Otherwise, to issue a GTD, follow these steps.
 
-1. Open a customs journal that has a status of **In progress**.
-2. On the Action Pane, select **Manage** \> **GTD issue**.
-3. In the **GTD issue** dialog box, in the third **GTD number** field, enter a seven-digit code. The first **GTD number** field is set to the customs office code that is specified on the customs journal header. The second **GTD number** field is set to the date of declaration.
-4. In the **Issue date** field, enter the date of the issue.
-5. To automatically post the customs journal, set the **Posting** option to **Yes**. The status of the journal is changed to **Posted**.
+1. In Dynamics 365 Finance, open a customs journal that has a status of **In progress**.
+1. On the Action Pane, select **Manage** \> **GTD issue**.
+1. In the **GTD issue** dialog, in the third **GTD number** field, enter a seven-digit code. The first **GTD number** field is set to the customs office code that is specified on the customs journal header. The second **GTD number** field is set to the date of declaration.
+1. In the **Issue date** field, enter the date of the issue.
+1. To automatically post the customs journal, set the **Posting** option to **Yes**. The status of the journal is changed to **Posted**.
 
     > [!NOTE] 
     > You can't cancel a GTD issue if you post a journal.
 
-6. The **Warehouse change** option is available only for journals of the **Import** type where the transfer of ownership occurs before the products cross the customs border. Set this option to **Yes** to create a journal that has a status of **Transfer** status, where the products will be transferred, according to the invoice, from the posting warehouse to the customs warehouse that is specified in the **Customs terminal** field. To open the transfer journal, select **Manage** \> **Transfer journal** on the Action Pane.
-7. Select **OK**.
+1. The **Warehouse change** option is available only for journals of the **Import** type where the transfer of ownership occurs before the products cross the customs border. Set this option to **Yes** to create a journal that has a status of **Transfer** status, where the products will be transferred, according to the invoice, from the posting warehouse to the customs warehouse that is specified in the **Customs terminal** field. To open the transfer journal, select **Manage** \> **Transfer journal** on the Action Pane.
+1. Select **OK**.
 
-    ![GTD issue dialog box.](../media/1fa10d34dec473406640a6414e9a7177.png)
+    ![GTD issue dialog.](../media/1fa10d34dec473406640a6414e9a7177.png)
 
     The GTD is issued, and the status of the journal is changed to the **Issued**.
 
@@ -367,19 +381,21 @@ Otherwise, follow these steps to issue a GTD.
 
 A GTD issuance can't be canceled if a KTS has been created for the receipt transactions that are related to the customs journal.
 
-Follow these steps to cancel a GTD issuance.
+To cancel a GTD issuance , follow these steps.
 
-1. Open a customs journal that has a status of **Issued**.
-2. On the Action Pane, select **Manage** \> **GTD issue cancelling**.
-3. In the **GTD issue cancelling** dialog box, set the **Delete value of inventory dimension** option to **Yes**. If the inventory dimension is present only in inventory transactions that are associated with the current customs journal, the inventory dimension value is deleted. This option is available only for journals of the **Import** type where the transfer of ownership occurs after the products cross the customs border.
-4. Select **OK**. The GTD issuance is canceled. The status of the customs journal is changed to **In progress**. For journals of the **Import** type where the transfer of ownership occurs before the products cross the customs border, a reversal journal of the **Transfer** type will be generated if this journal was generated when the GTD was issued.
+1. In Dynamics 365 Finance, open a customs journal that has a status of **Issued**.
+1. On the Action Pane, select **Manage** \> **GTD issue cancelling**.
+1. In the **GTD issue cancelling** dialog, set the **Delete value of inventory dimension** option to **Yes**. If the inventory dimension is present only in inventory transactions that are associated with the current customs journal, the inventory dimension value is deleted. This option is available only for journals of the **Import** type where the transfer of ownership occurs after the products cross the customs border.
+1. Select **OK**. The GTD issuance is canceled. The status of the customs journal is changed to **In progress**. For journals of the **Import** type where the transfer of ownership occurs before the products cross the customs border, a reversal journal of the **Transfer** type will be generated if this journal was generated when the GTD was issued.
 
 ### Post a customs journal
 
-1. Open a customs journal that has a status of **Issued**.
-2. On the Action Pane, select **Manage** \> **GTD posting**.
-3. Select **OK**. The status of the journal is changed to **Posted**, and transactions are generated on customs payments and debts to the customs counterparty.
-4. On the Action Pane, select **Manage** \> **Ledger transactions** to view the ledger transactions that were created when the journal was posted.
+To post a customs journal, follow these steps.
+
+1. In Dynamics 365 Finance, open a customs journal that has a status of **Issued**.
+1. On the Action Pane, select **Manage** \> **GTD posting**.
+1. Select **OK**. The status of the journal is changed to **Posted**, and transactions are generated on customs payments and debts to the customs counterparty.
+1. On the Action Pane, select **Manage** \> **Ledger transactions** to view the ledger transactions that were created when the journal was posted.
 
     ![Voucher transactions page.](../media/a8cd1b793608c7db80a26f48c9d73fbc.png)
 
@@ -447,34 +463,36 @@ For the **Export** journal type, transactions for duty and fees are generated in
 
 ### Create a customs value correction for import or export operations
 
-Follow these steps to create a customs value correction (KTS) for import or export transactions that are completed. In accordance with a KTS that is created to update the customs payments, a company must pay or return additional customs payments.
+In accordance with a KTS that is created to update the customs payments, a company must pay or return additional customs payments.
 
 > [!NOTE]
 > The status of the customs journal must be **Posted**.
 
-1. Go to **Inventory management** \> **Common** \> **All customs journals**.
-2. Select a customs journal, and then, on the Action Pane, select **Manage** \> **KTS creation**.
-3. In the **Create KTS** dialog box, in the **Parameters** section, set the following fields:
+To create a customs value correction (KTS) for import or export transactions that are completed, follow these steps.
 
-    - In the **KTS number** field, enter an identification number for the KTS.
-    - In the **KTS date** field, enter the date when the KTS is created.
-    - In the **Description** field, enter a short description of the customs value correction.
-    - In the **Origin** field, select the reason why you're creating the KTS: **Exigency** (an order of the customs authority) or **Error**.
-    - If the **Include to the cost price** option is set to **Yes**, transactions to correct the cost of customs duties will be generated. This option is only available for customs journals of the **Import** type.
-    - If the **Credit correction** option is set to **Yes**, transactions for negative correction will be generated.
+1. In Dynamics 365 Finance, go to **Inventory management** \> **Common** \> **All customs journals**.
+1. Select a customs journal, and then, on the Action Pane, select **Manage** \> **KTS creation**.
+1. In the **Create KTS** dialog, in the **Parameters** section, set the following fields:
 
-4. In the **Adjust** section, set the following fields:
+    1. In the **KTS number** field, enter an identification number for the KTS.
+    1. In the **KTS date** field, enter the date when the KTS is created.
+    1. In the **Description** field, enter a short description of the customs value correction.
+    1. In the **Origin** field, select the reason why you're creating the KTS: **Exigency** (an order of the customs authority) or **Error**.
+    1. If the **Include to the cost price** option is set to **Yes**, transactions to correct the cost of customs duties will be generated. This option is only available for customs journals of the **Import** type.
+    1. If the **Credit correction** option is set to **Yes**, transactions for negative correction will be generated.
 
-    - In the **Correct** field, select the allocation method to use for the KTS: **TN VED**, **Line**, or **Section**. The lines that are shown depend on the value of this field.
-    - In the **Amount of the correction** field, enter the correction amount for the product on the customs journal line.
-    - In the **Allocation base** field, select the payment allocation base to use for the KTS in proportion to the cost, weight, or quantity.
+1. In the **Adjust** section, set the following fields:
 
-5. Select the **Choose** checkbox to mark the customs journal line for correction.
-6. Select **OK**. On the customs journal header, on the **General** FastTab, in the **Various** section, the **Facture (system identifier)** field is automatically set.
-7. Select **Customs journal** to open the **Customs journal** page. The **KTS** checkbox for the customs journal is selected.
-8. To open the KTS journal that was created, on the Action Pane, select **Manage** \> **KTS**. The **Status** field reflects the status of the KTS journal: **Open** for a created journal or **Posted** for a posted journal.
-9. To view KTS journal lines, select the value in the **Journal ID** field.
-10. On the **Customs value correction** FastTab, you can view the following information:
+    1. In the **Correct** field, select the allocation method to use for the KTS: **TN VED**, **Line**, or **Section**. The lines that are shown depend on the value of this field.
+    1. In the **Amount of the correction** field, enter the correction amount for the product on the customs journal line.
+    1. In the **Allocation base** field, select the payment allocation base to use for the KTS in proportion to the cost, weight, or quantity.
+
+1. Select the **Choose** checkbox to mark the customs journal line for correction.
+1. Select **OK**. On the customs journal header, on the **General** FastTab, in the **Various** section, the **Facture (system identifier)** field is automatically set.
+1. Select **Customs journal** to open the **Customs journal** page. The **KTS** checkbox for the customs journal is selected.
+1. To open the KTS journal that was created, on the Action Pane, select **Manage** \> **KTS**. The **Status** field reflects the status of the KTS journal: **Open** for a created journal or **Posted** for a posted journal.
+1. To view KTS journal lines, select the value in the **Journal ID** field.
+1. On the **Customs value correction** FastTab, you can view the following information:
 
     - The journal information that you entered when you created the KTS journal.
     - In the **Status** field, the status of the journal.
@@ -482,12 +500,12 @@ Follow these steps to create a customs value correction (KTS) for import or expo
     - In the **References** section, in the **Customs journal** field, the number of the customs journal that the KTS was created based on.
     - in the **References** section, in the **Facture (system identifier)** field, the facture that was created based on the KTS journal.
 
-11. To adjust the KTS journal lines, on the **KTS lines** FastTab, on the toolbar, select **Create KTS lines**. Then set the fields just as you set them when you created the KTS journal. When you've finished, select **OK**.
+1. To adjust the KTS journal lines, on the **KTS lines** FastTab, on the toolbar, select **Create KTS lines**. Then set the fields just as you set them when you created the KTS journal. When you've finished, select **OK**.
 
-    ![Create KTS dialog box.](../media/87563cbad3d4b8465656cc25ebbf3e22.png)
+    ![Create KTS dialog.](../media/87563cbad3d4b8465656cc25ebbf3e22.png)
 
-12. To remove a selected line from the KTS journal, on the toolbar, select **Remove**.
-13. On the **Line details** FastTab, you can view the values of the **Cost**, **Duty**, **Excise**, **VAT**, and **Total of payments** fields in the following sections:
+1. To remove a selected line from the KTS journal, on the toolbar, select **Remove**.
+1. On the **Line details** FastTab, you can view the values of the **Cost**, **Duty**, **Excise**, **VAT**, and **Total of payments** fields in the following sections:
 
     - **Accrued previously** – For the initial values of customs payments.
     - **Adjust** – For adjustment values.
@@ -495,29 +513,38 @@ Follow these steps to create a customs value correction (KTS) for import or expo
 
     ![Line details FastTab.](../media/48f708f440f0b449ddaefdf67227e20f.png)
 
-14. To view KTS journal totals, on the Action Pane, select **Customs value correction** \> **Totals**.
-15. To go to the customs journal that is corrected by the KTS journal, on the Action Pane, select **Customs value correction** \> **Customs journal**.
+1. To view KTS journal totals, on the Action Pane, select **Customs value correction** \> **Totals**.
+1. To go to the customs journal that is corrected by the KTS journal, on the Action Pane, select **Customs value correction** \> **Customs journal**.
 
-### Post a customs value correction for a customs journal
+### Post a customs value correction (KTS) for a customs journal
 
-Follow these steps to post a customs value correction (KTS) for a customs journal. After you post a KTS, a facture is created. You can view the details of the facture on the **Facture journal** page.
+After you post a customs value correction (KTS), a facture is created. You can view the details of the facture on the **Facture journal** page.
 
-1. Go to **Inventory management** \> **Common** \> **All customs journals**.
-2. Select a customs journal that has a status of **Open**, and then, on the Action Pane, select **Customs value correction** \> **KTS posting**.
-3. Select **OK**.
-4. The status of the KTS journal is changed to **Posted**. Transactions for the amount of the customs payment adjustment are generated in the same way that they are generated when a customs journal is posted.
-5. To view the transactions, on the Action Pane, select **Customs value correction** \> **Facture**.
+To post a customs value correction (KTS) for a customs journal, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Inventory management** \> **Common** \> **All customs journals**.
+1. Select a customs journal that has a status of **Open**, and then, on the Action Pane, select **Customs value correction** \> **KTS posting**.
+1. Select **OK**.
+1. The status of the KTS journal is changed to **Posted**. Transactions for the amount of the customs payment adjustment are generated in the same way that they are generated when a customs journal is posted.
+1. To view the transactions, on the Action Pane, select **Customs value correction** \> **Facture**.
 
 ## Create a facture of the GTD or KTS type
 
 When you post a customs journal or a KTS journal of the **Import** type, a facture is automatically generated for a GTD or a KTS.
 
-1. Go to **Inventory management** \> **Common** \> **All customs journals**.
-2. Select the customs journal.
-3. To view the factures that are created, on the Action Pane, select **Manage** \> **Facture** on the header of the customs journal (for a facture of the **GTD** type) or **Customs value correction** \> **Facture** on the header of the KTS journal (for a facture of the **KTS** type).
+To create a facture of the GTD or KTS type, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Inventory management** \> **Common** \> **All customs journals**.
+1. Select the customs journal.
+1. To view the factures that are created, on the Action Pane, select **Manage** \> **Facture** on the header of the customs journal (for a facture of the **GTD** type) or **Customs value correction** \> **Facture** on the header of the KTS journal (for a facture of the **KTS** type).
 
 ## Input VAT processing and purchase book generation
 
 All factures of the **GTD** or **KTS** type have the standard **Incoming VAT processing** functionality.
 
 The printed form of the purchase book for factures of the **GTD** or **KTS** type includes the country or region of origin of the products (from the lines of the customs journal or the KTS journal), and the number of the GTD that the facture was generated based on.
+
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
