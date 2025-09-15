@@ -35,7 +35,7 @@ The following illustration shows an example system where Warehouse management on
 :::image type="content" source="media/wms-only-d365-shared-warehouse-integration.svg" alt-text="Screenshot of the Warehouse management only mode with external shared warehouse." lightbox="media/wms-only-d365-shared-warehouse-integration.svg":::
 
 *USMF* and *USSW* legal entities exist in the [demo data](../../../fin-ops-core/dev-itpro/get-started/demo-data.md). *LE2* legal entity is displayed in the illustriation as an example.
-The examples below are described by using the sample records and values that are specified here, you must be on a system where the standard demo data is installed.
+The examples below are described by using the sample records and values that are specified here. To work through the scenarios by using the sample data, you must be on a system where the standard demo data is installed.
 You can also use these scenarios as guidance for using the feature on a production system. However, in that case, you must substitute your own values for each setting that is described here.
 
 ### Warehouse management only mode demo data
