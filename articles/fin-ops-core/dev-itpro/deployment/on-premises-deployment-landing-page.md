@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.custom: 
   - bap-template
   - evergreen
-ms.date: 06/07/2024
+ms.date: 09/15/2025
 ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.collection: get-started
