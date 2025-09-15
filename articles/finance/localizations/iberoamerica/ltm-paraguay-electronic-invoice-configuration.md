@@ -6,39 +6,37 @@ ms.author: v-pedrobusto
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/02/2025 
+ms.date: 09/15/2025
 ms.reviewer: johnmichalak
 ---
 
-# Get started with Electronic invoicing for Paraguay
+# Get started with electronic invoicing for Paraguay
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information to help you get started with Electronic invoicing for Paraguay. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Microsoft Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md). For the last-mile integration with the Paraguayan Tax Authorities, Microsoft is partnering with Edicom. 
+This article helps you set up electronic invoicing for Paraguay. It lists configuration steps that depend on the country or region in Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management. These steps supplement [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md). For last mile integration with the Paraguayan tax authority, Microsoft partners with Edicom.
 
-After you configure Electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the [Edicom](https://edicomgroup.com/electronic-invoicing/Paraguay) authorized certification provider (PAC) according to the [regulatory requirements in Paraguay](https://www.gub.uy/direccion-general-impositiva/home).
+After you set up electronic invoicing, generate, digitally sign, and submit XML invoice files to the [Edicom](https://edicomgroup.com/electronic-invoicing/Paraguay) authorized certification provider (PAC) according to the [regulatory requirements in Paraguay](https://www.gub.uy/direccion-general-impositiva/home).
 
-![Diagram of the electronic invoicing workflow in Paraguay.](ltm-paraguay-electronic-invoice-workflow.png)
+:::image type="content" source="ltm-paraguay-electronic-invoice-workflow.png" alt-text="Screenshot of the Paraguay electronic invoicing workflow from Finance or Supply Chain Management through Edicom to the tax authority.":::
 
 > [!NOTE]
-> The electronic invoicing approach that this article describes is implemented by using an invoicing service that is applicable only to cloud deployments of Finance or Supply Chain Management.
+> This electronic invoicing approach uses an invoicing service that's available only in cloud deployments of Finance or Supply Chain Management.
 
 ## Prerequisites
 
-Before you begin the procedures in this article, the following prerequisites must be met.
+Before you start, make sure you meet these prerequisites.
 
-1. Ensure that the settings for the Paraguayan legal entity are in place. Learn more in [Set up a legal entity and tax information for Paraguay](ltm-set-up-legal-entity-tax-paraguay.md).
-1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
-1. Do the common part of Electronic Invoicing service configuration as described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
-1. You must enable the following features in Feature management:
+1. Set up the Paraguayan legal entity. Learn more in [Set up a legal entity and tax information for Paraguay](ltm-set-up-legal-entity-tax-paraguay.md).
+1. Review the [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
+1. Complete the common Electronic invoicing service configuration described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
+1. Enable the following features in Feature management:
 
     - Electronic invoicing integration
-    - Electronic invoicing integration resubmit document from failed action
-    - Execute update actions for submitted documents
-
-1. Ensure that the following Electronic reporting (ER) format configurations are imported. Learn more in 
-[Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md), and
-[Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+    - Electronic invoicing integration resubmits document from failed action
+    - Execute upda1. Import the following Electronic reporting (ER) format configurations. Learn more in 
+[Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md) and
+[Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).reporting-import-ger-configurations.md).
 
     
     - Customer invoice context model
@@ -50,12 +48,12 @@ Before you begin the procedures in this article, the following prerequisites mus
     - Project e-invoice (PY)
 
     > [!NOTE]
-    > These formats are based on the corresponding LATAM format configurations, which use the **Invoice model LATAM** and **Invoice model mapping LATAM** configurations. All other required configurations are imported automatically.
+    > These formats build on the corresponding LATAM format configurations, which use the **Invoice model LATAM** and **Invoice model mapping LATAM** configurations. The system imports all other required configurations automatically.
 
 
 ## Configure the electronic invoicing feature
 
-The **"Paraguay Electronic Invoice (PY) Edicom integration for Paraguay"** feature represents an outbound flow to issue the following sales documents.
+The **"Paraguay Electronic Invoice (PY) Edicom integration for Paraguay"** feature is an outbound flow that issues the following sales documents.
 
 | Name                     | Code | Original name                  |
 |--------------------------|------|-------------------------------|
@@ -63,11 +61,11 @@ The **"Paraguay Electronic Invoice (PY) Edicom integration for Paraguay"** featu
 | Credit Note              | 5    | Nota de Crédito               |
 | Debit Note               | 6    | Nota de Débito                |
 
-Some parameters of the feature are published with default values. Before you deploy the Electronic invoicing feature to the service environment, add a feature that is based on the Microsoft-provided feature, and complete the common parameters on the **Feature parameters** tab. Review the default values, and update them as required, so that they better reflect your business operations.
+The feature publishes some parameters with default values. Before you deploy the electronic invoicing feature to the service environment, add a feature that's based on the Microsoft-provided feature and complete the common parameters on the **Feature parameters** tab. Review the default values and update them as needed so they reflect your business operations.
 
-## Edicom Interactions for Paraguay
+## Edicom interactions for Paraguay
 
-For Paraguay, there are at least three core interactions with Edicom in the base flow:
+Paraguay has three core interactions with Edicom in the base flow:
 
 1. **Invoice submission**  
 1. **Signed XML retrieval**  
@@ -76,14 +74,14 @@ For Paraguay, there are at least three core interactions with Edicom in the base
 Each of these interactions requires common parameters, such as Edicom connection details and the authentication token provided by Edicom. These parameters are reused across the feature setup for all document types. Edicom supplies these values during the company's onboarding process.
 
 ---
-### Paraguay Electronic Invoice (UY) Edicom integration for Paraguay
+### Paraguay electronic invoice (UY) Edicom integration
 
 > [!IMPORTANT]
-> The **Paraguay Electronic Invoice (PY)** feature is provided by Microsoft. Before it can be used, it requires additional configuration, as described in this article. Learn how to configure invoicing features and apply changes in [Work with feature setups](../global/gs-e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they are processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Paraguay.
+> The **Paraguay Electronic Invoice (PY)** feature is provided by Microsoft. Before it can be used, it requires more configuration, as described in this article. Learn how to configure invoicing features and apply changes in [Work with feature setups](../global/gs-e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Paraguay.
 
 1. Import the latest version of the **Paraguay Electronic Invoice (UY)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). The following illustrations show what the feature looks like after you import it from Dataverse.
 
-    ![Screenshot of the imported Globalization feature for Paraguay on the Electronic invoicing features page, including the information on the Versions tab.](ltm-Paraguay-electronic-invoice-globalization-feature-imported.png)
+    :::image type="content" source="ltm-Paraguay-electronic-invoice-globalization-feature-imported.png" alt-text="Screenshot of the imported Globalization feature for Paraguay on the Electronic invoicing features page, including the information on the Versions tab.":::
 
 
     If you go to the Configuration tab, as shown in the previous screenshot, there's a page displaying information similar to the following table:
@@ -97,16 +95,16 @@ Each of these interactions requires common parameters, such as Edicom connection
 | Project e-invoice (PY)           | 296.140.19    | Completed | PY                  |
 
     > [!NOTE]
-    > The version numbers may change if the formats have been updated. The table is for illustrative purposes only.
+    > The version numbers can change if the formats are updated. The table is for illustrative purposes only.
 
 1. Create a copy of the imported Globalization feature, and select your configuration provider. Learn more in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, confirm that the **Draft** version is selected.
 1. On the **Feature parameters** tab, specify values for the following connection and integration parameters that are required for interoperation with Edicom's API.  
-These parameters are general-purpose and are used across the different actions in the setups, so you only need to configure them once in this section.
+These parameters are general purpose and apply to all actions, so configure them once here.
 
 
     > [!TIP]
-    > The following table provides **example values** for each feature parameter, so you can understand the type of data that should be entered for each one. These values are **illustrative only** and were provided by Edicom to Microsoft for testing purposes. When you are onboarded, Edicom provides you with your own unique values to use in your configuration.
+    > The following table provides **example values** for each feature parameter, so you can understand the type of data that should be entered for each one. These values are **illustrative only** and were provided by Edicom to Microsoft for testing purposes. When you're onboarded, Edicom provides you with your own unique values to use in your configuration.
 
 
 
@@ -114,12 +112,12 @@ These parameters are general-purpose and are used across the different actions i
 
     | Parameter                     | Description              | Data type   | Value                                               |
     |-------------------------------|--------------------------|-------------|-----------------------------------------------------|
-    | EdicomApplication             | Application              | String      | <ID_PROVIDED_EDICOM>                                              |
-    | EdicomDomain                  | Domain                   | String      | <ID_PROVIDED_EDICOM>                                              |
+    | EdicomApplication             | Application              | String      | `<ID_PROVIDED_EDICOM>`                                              |
+    | EdicomDomain                  | Domain                   | String      | `<ID_PROVIDED_EDICOM>`                                              |
     | EdicomGetStatusSchema         | Get status schema name   | String      | IN_DOCUMENT_STATUS_MICROSOFT_UY                     |
-    | EdicomGroup                   | Group                    | String      | <GROUP_ID>                                           |
-    | EdicomSignedXMLSchema         | Signed XML schema name   | String      | EDIWIN-SOURCE-FILE_XML_CFE_ADENDA_<ID_PROVIDED_EDICOM>           |
-    | EdicomSubmitInvoiceDestination| Destination name         | String      | <ID_PROVIDED_EDICOM>_EDIWIN                                       |
+    | EdicomGroup                   | Group                    | String      | `<GROUP_ID>`                                           |
+    | EdicomSignedXMLSchema         | Signed XML schema name   | String      | `EDIWIN-SOURCE-FILE_XML_CFE_ADENDA_<ID_PROVIDED_EDICOM>`           |
+    | EdicomSubmitInvoiceDestination| Destination name         | String      | `<ID_PROVIDED_EDICOM>`_EDIWIN                                       |
     | EdicomSubmitInvoiceSchema     | Submit invoice schema name| String     | OUTBOUND_DOCUMENT_MICROSOFT_UY                      |
     | EdicomToken                   | Auth token               | Secret name | EdiwinParaguayToken                                  |
     | EdicomWebServiceURL           | Web service URL          | String      | https://ipaasgw.edicomgroup.com
@@ -136,34 +134,34 @@ These parameters are general-purpose and are used across the different actions i
     > - Select **Submit invoice schema name**, and enter the schema name.
     > - Select **Auth token**, and choose the name of the secret you created for the token.
     > - Select **Web service URL**, and verify the web address is correct.
-1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, you must complete, publish, and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
+1. The copy of the feature always starts in a **Draft** version. Regardless of whether you made changes, you must complete, publish, and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### Outbound flow pipeline
 
-There are six electronic invoice formats for Paraguay included in the **Paraguay Electronic Invoice (UY) feature**. Each format requires its own setup and configuration. The formats are:
+There are three electronic invoice formats for Paraguay included in the **Paraguay Electronic Invoice (UY) feature**. Each format requires its own setup and configuration. The formats are:
 
 - **Inventory (PY)**
 - **PackingSlip (PY)**
 - **Project e-invoice (PY)**
 
-The following sections have guidance on the general configuration steps that apply to all six formats. Specific considerations and requirements for each individual format are explained, so you can ensure that each one is configured correctly according to its unique needs.
+The following sections provide general configuration steps that apply to all formats. They also explain specific considerations for each format.
 
 ## Electronic invoice feature
 
-### Setups-View
+### Setups view
 
-After importing the feature, in the second screenshot, five tabs are available: **Versions**, **Configuration**, **Feature parameters**, **Setups**, and **Tags**. Select the **Setups** tab, and then select **View**. This opens the page **Feature version setup**:
+After you import the feature, you see five tabs: **Versions**, **Configuration**, **Feature parameters**, **Setups**, and **Tags**. Select **Setups**, then select **View** to open the **Feature version setup** page.
 
 ## Feature version setup
-This page allows you to review and configure the details of the feature setup for Paraguay. On the left side of this page, there are four sections: **Processing pipeline**, **Applicability rules**, **Variables**, and **Parameters**.
+Use this page to review and set up the feature for Paraguay. The page has four sections: **Processing pipeline**, **Applicability rules**, **Variables**, and **Parameters**.
 
 ### Processing pipeline
 
-The Setup Actions and Parameters section is divided into two distinct grids:
+The Set up Actions and Parameters section is divided into two distinct grids:
 
-#### Top Right – Processing Pipeline
+#### Top right – processing pipeline
 
-The **Processing pipeline** grid should is similar to the following table:
+The **Processing pipeline** grid is similar to the following table:
 
 | Action                       | Action name                       | Description                      | Enable retry | Retry action | Export result | Update action |
 |------------------------------|-----------------------------------|----------------------------------|--------------|--------------|---------------|--------------|
@@ -175,18 +173,18 @@ The **Processing pipeline** grid should is similar to the following table:
 
 
 > [!NOTE]
-> The **Get status from Edicom for an invoice** action is crucial in the flow, as it is marked with the **Update action** checkbox. This designation means that this specific step—and all steps following it repeatedly execute in a loop. The system continues this process until the invoice reaches a final, terminal status, ensuring that the latest status from Edicom is always retrieved and processed.
+> The **Get status from Edicom for an invoice** action is crucial in the flow, as it's marked with the **Update action** checkbox. This designation means that this specific step—and all steps following it repeatedly execute in a loop. The system continues this process until the invoice reaches a final, terminal status, ensuring that the latest status from Edicom is always retrieved and processed.
 
-#### Bottom Right – Parameters
-The lower grid shows the Parameters associated with the selected processing action. These parameters allow for fine-tuning of the selected step’s behavior. Each entry includes a parameter name, description, data type, and value, enabling users to configure processing logic according to their business requirements. 
+#### Bottom right – parameters
+The lower grid shows the parameters for the selected processing action. These parameters fine-tune the step's behavior. Each entry lists a name, description, data type, and value so you can set processing logic for business needs. 
 
 #### Transform document parameters
 
 | Name                   | Description                                                        | Value                          |
 |------------------------|--------------------------------------------------------------------|--------------------------------|
 | Input file             | Source file provides to the action the data to be executed.        | Variable: BusinessDocumentDataModel |
-| Direction              | Direction describes which format will be used: import or export     | export                         |
-| Configuration          | Configuration describes format which will be executed               | Inventory e-Invoice: Inventory e-Invoice |
+| Direction              | Direction describes which format is used: import or export     | export                         |
+| Configuration          | Configuration describes format that is executed               | Inventory e-Invoice: Inventory e-Invoice |
 | Configuration Integration point | Source file provides data to the reporting runtime          | InvoiceCustomer                |
 | Custom file name       | Custom file name from the client                                   |                                |
 
@@ -194,18 +192,18 @@ The lower grid shows the Parameters associated with the selected processing acti
 
 When configuring the **Transform document** action in the processing pipeline, ensure the following:
  
-- **Configuration**: Set this to the exact name of the feature format you are configuring.  
+- **Configuration**: Set this to the exact name of the feature format you're configuring.  
     - For example:
         - `Project e-Invoice (PY)` → Configuration: `Project e-Invoice (PY)`
-        - `Inventory e-Invoice (PYY)` → Configuration: `Inventory (PY)`
+        - `Inventory e-Invoice (PY)` → Configuration: `Inventory (PY)`
         - `e-Packing Slip (PY)` → Configuration: `PackingSlip (PY)`
  
 - **Configuration Integration Point**:  
-    - Use `InvoiceCustomer` for inventory-related formats (`Inventory (PY)`, `PackingSlip (PY)`.
-    - Use `InvoiceProject` for project-related formats (`Project e-Invoice (PY)`.
+    - Use `InvoiceCustomer` for inventory formats (`Inventory (PY)`, `PackingSlip (PY)`).
+    - Use `InvoiceProject` for project formats (`Project e-Invoice (PY)`).
 
 > [!TIP]
-> If the feature name contains "Project", use `InvoiceProject`. If it contains "Inventory", use `InvoiceCustomer`. Incorrect settings will result in empty XML or missing required data.
+> If the feature name contains "Project," use `InvoiceProject`. If it contains "Inventory," use `InvoiceCustomer`. Incorrect settings result in empty XML or missing required data.
 
 #### Integrate with Edicom parameters
 
@@ -240,7 +238,7 @@ When configuring the **Transform document** action in the processing pipeline, e
 | Application     | Application                                    | FeatureParameter: EdicomApplication      |
 | Schema          | Schema                                         | FeatureParameter: EdicomSignedXMLSchema  |
 | Group           | Group                                          | FeatureParameter: EdicomGroup            |
-| ERP UUID        | Reference Id of the document submitted to Edicom | Submit invoice: ExternalID              |
+| ERP UUID        | Reference ID of the document submitted to Edicom | Submit invoice: ExternalID              |
 
 
 #### Get invoice status from Edicom parameters
@@ -257,7 +255,7 @@ When configuring the **Transform document** action in the processing pipeline, e
 | Application    | Application                                         | FeatureParameter: EdicomApplication   |
 | Schema         | Schema                                              | FeatureParameter: EdicomGetStatusSchema|
 | Group          | Group                                               | FeatureParameter: EdicomGroup         |
-| ERP UUID       | Reference Id of the document submitted to Edicom    | Submit invoice: ExternalID            |
+| ERP UUID       | Reference ID of the document submitted to Edicom    | Submit invoice: ExternalID            |
 
 #### Process response parameters
 
@@ -278,16 +276,16 @@ Name          | Description                                 | Value    |
 
 > [!NOTE]  
 > - If the status response indicates a failure, the pipeline is terminated, and the submission is marked as failed.  
-> - If the response indicates successful submission to the Paraguayan Tax Authorities (DGI), the process will be completed after 8 days, provided no additional responses are received in the meantime.
+> - If the response shows successful submission to the Paraguayan Tax Authorities (DGI), the process completes after eight days if no further responses arrive.
 
 
-### Applicability Rules and Feature Setup Scope
+### Applicability rules and feature setup scope
 
-Applicability rules must be correctly configured to provide context, so that the exact Electronic Invoicing Globalization feature that must run in the Electronic Invoicing service can be found. These applicability rules are provided out of the box by checking the legal entity’s International Organization for Standardization (ISO) country/region code. 
+Configure applicability rules so the service can find the correct Electronic Invoicing Globalization feature. These applicability rules are provided out of the box by checking the legal entity’s International Organization for Standardization (ISO) country/region code. 
 
 #### Applicability rules for Paraguayan electronic invoice formats
 
-Below are the applicability rules for each electronic invoice format for Paraguay. Replace `<Legal Entity ID>` with the actual ID of your legal entity.
+The following applicability rules for each electronic invoice format for Paraguay. Replace `<Legal Entity ID>` with the actual ID of your legal entity.
 
 ### Inventory PY
 | And/or | And/or | Field          | Operator type | Value                | Data type |
@@ -298,14 +296,14 @@ Below are the applicability rules for each electronic invoice format for Paragua
 |        |        | DocumentType   | Equals        | Customer debit note  | string    |
 
 
-### Packing Slip PY
+### Packing slip PY
 | And/or | And/or | Field          | Operator type | Value                 | Data type |
 | ------ | ------ | -------------- | ------------- | --------------------- | --------- |
 | And    |        | CountryISOCode | Equals        | PY                    | string    |
 |        |        | DocumentType   | Equals        | Customer packing slip | string    |
 
 
-### Project  PY
+### Project PY
 | And/or | And/or | Field          | Operator type | Value               | Data type |
 | ------ | ------ | -------------- | ------------- | ------------------- | --------- |
 | And    |        | CountryISOCode | Equals        | PY                  | string    |
@@ -326,14 +324,14 @@ The following variables are used in the outbound data flow actions of the Paragu
 | BusinessDocumentDataModel | Contains the electronic document from the client  | From client | file      |                                                 |
 | SignedXML                 | Signed XML document in base64-encoded format      | To client   | file      | Get signed XML from Edicom.Base64ResponseBody   |
 
-After you import the **Electronic invoicing for Paraguay** feature that includes the out of the box default feature setup, follow the steps in the next section to configure electronic documents.
+After you import the **Electronic invoicing for Paraguay** feature with the default setup, follow the next steps to set up electronic documents.
 
-### Setups-Application Setup
+### Setups > Application setup
 
 To configure the mapping between Dynamics 365 Finance source tables and electronic document formats, go to the **Setups** tab within the [**Electronic invoice feature**](#electronic-invoice-feature) section, and then select **Application Setup**. This step lets you define how data from Finance is linked to the correct electronic invoice formats for Paraguay.
 
 > [!NOTE]
-> Although this configuration is not set at the general feature level, it acts globally for the selected feature setup. You don't need to repeat these steps for each individual format or feature—one configuration is sufficient for all supported document types within the feature.
+> Although this configuration isn't set at the general feature level, it acts globally for the selected feature setup. You don't need to repeat these steps for each individual format or feature—one configuration is sufficient for all supported document types within the feature.
 
 The following grid defines the link between the source table in Dynamics 365 Finance, the document context model, and the mapping configuration used for electronic invoicing:
 
@@ -349,24 +347,24 @@ The following grid defines the link between the source table in Dynamics 365 Fin
 
 To configure electronic document parameters, follow these steps.
 
-1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Paraguay are imported. Learn more in [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. Import the Paraguay-specific ER configurations for the document context and electronic document model mapping. Learn more in [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+1. Go to **Organization administration** > **Setup** > **Electronic document parameters**.
 1. In the **Electronic document** section, add records for the **Customer Invoice journal** and **Project invoice** table names.
-1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
+1. For each table name, set the **Document context** and **Electronic document model mapping** fields as in step 1.
 
-The Electronic Document Parameters page in Dynamics 365 Finance. Shows on the left-hand navigation pane, we can see the following options:
+On the Electronic Document Parameters page in Dynamics 365 Finance, the navigation pane shows the following options:
 
-- Electronic Document
+- **Electronic Document**
 
-- Features
+- **Features**
 
-- Electronic Invoicing
+- **Electronic Invoicing**
 
-- Integration Channels
+- **Integration Channels**
 
-For the Electronic Document option on the right-hand side, the section labeled Electronic Reporting is displayed.
+For the **Electronic Document** option, the **Electronic Reporting** section appears.
 
-Within Electronic Reporting, a grid is presented which lists the electronic document configurations. This grid includes important associations between:
+Within **Electronic Reporting**, the grid lists the electronic document configurations. It includes associations between:
 
 - The source table name
 
@@ -376,7 +374,7 @@ Within Electronic Reporting, a grid is presented which lists the electronic docu
 
 - The final mapping name used for generating the electronic invoice.
 
-This configuration is essential for determining how Dynamics 365 Finance maps internal data models to external electronic formats for submission to tax authorities or service providers.
+This configuration controls how Dynamics 365 Finance maps internal data models to external electronic formats for submission to tax authorities or service providers.
 
 Configure the grid as follows:
 
@@ -389,15 +387,14 @@ Configure the grid as follows:
 1. Save your changes, and close the page.
 1. For each table name, follow these steps:
 
-    1. Select **Response types**, select **New** to create a response type that you will get from the back end, and enter the following values:
+    1. Select **Response types**, then select **New** to create a response type from the back end, and enter these values:
 
-        - In the **Response type** field, enter **SignedXML** (the default value). (See the [Variables](#variables) section of this article.)
-        - In the **Description** field, enter any meaningful name. Alternatively, leave the field blank.
+        - In the **Response type** field, enter **SignedXML** (default). See the [Variables](#variables) section.
+        - In the **Description** field, enter a meaningful name, or leave it blank.
         - In the **Submission status** field, select **Pending**.
         - In the **Model mapping** field, select **Edicom source file response format**.
 
-    1. Repeat the preceding step, but set the **Submission status** field to **Pending update actions execution**. In this way, you can run a subset of the actions in the processing pipeline in a loop to continuously pull updated statuses and other information for the submitted documents from the tax authority.
-    In the standard view, you should see a table similar to the following:
+    1. Repeat the preceding step, but set the **Submission status** field to **Pending update actions execution**. This setting lets you loop a subset of pipeline actions to pull updated statuses and other information for submitted documents from the tax authority.
 
     | Response type | Description                        | Submission status                     | Data entity name | Model mapping                             |
     |---------------|------------------------------------|---------------------------------------|------------------|--------------------------------------------|
@@ -405,42 +402,42 @@ Configure the grid as follows:
     | SignedXML     | Signed XML obtained from EDICOM    | Pending update actions execution      |                  | Edicom source file response import format  |
 
     > [!NOTE]
-    > The response includes the signed XML that is obtained from Edicom. This signed XML is stored in the system as an attachment to the corresponding invoice journal. It will eventually be used to generate printable invoices through QR codes.
+    > The response includes the signed XML obtained from Edicom. The system stores this signed XML as an attachment to the corresponding invoice journal. The system uses it to generate printable invoices with QR codes.
 
 ## Issue electronic invoices
 
-After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information about how to generate electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
+After you complete the required configuration steps, generate and submit electronic invoices for posted invoices. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 
-To inquire about the results of a submission, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**, and select the required document type. For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
+Check submission results. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**, and select the required document type. For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
-For Paraguay, after you submit the invoice, the submission status is set to **Pending update actions execution**. The response body is probably empty for the signed XML and the call to get the invoice status. An empty response body indicates that the XML wasn't available immediately after submission. To address the pending status, a function that is named **Execute update actions** is used. This function resumes the pipeline from the action that is marked as an update action. It then runs all subsequent actions in the pipeline in a loop. The status should change to **Executing** again. Then, after a few seconds, it reverts to **Pending update actions execution**.
+For Paraguay, after you submit the invoice, the submission status changes to **Pending update actions execution**. The response body might be empty for the signed XML and for the call that gets the invoice status. An empty response body indicates the XML isn't available immediately after submission. To address the pending status, use the **Execute update actions** function. This function resumes the pipeline from the action that's marked as an update action. It then runs subsequent actions in a loop. The status changes to **Executing**, and after a few seconds reverts to **Pending update actions execution**.
 
-![Screenshot that shows the Execute update actions function being selected on the Functions dropdown menu.](ltm-chl-e-invoice-execute-update-action.png)
+:::image type="content" source="ltm-chl-e-invoice-execute-update-action.png" alt-text="Screenshot of the Execute update actions function selected on the Functions drop-down menu.":::
 
 > [!NOTE]
-> By setting a recurrence schedule, you can configure the **Execute update actions** function to run in batch mode on a periodic basis.
+> Set a recurrence schedule to run the **Execute update actions** function in batch mode on a periodic basis.
 
-When you review the submission details, you should notice that the steps run again. This time, the signed XML is received.
+When you review the submission details, you see that the steps run again. This time, the signed XML is received.
 
-![Screenshot that shows the signed XML received.](ltm-chl-e-invoice-signed-XML.png)
+:::image type="content" source="ltm-chl-e-invoice-signed-XML.png" alt-text="Screenshot of the signed XML received.":::
 
-As a result of the completed outbound flow, the signed XML is attached to the invoice journal as **EdicomSourceFile**.
+After the outbound flow completes, the signed XML is attached to the invoice journal as **EdicomSourceFile**.
 
-![Screenshot of the attached source file.](ltm-invoice-attached-source-file.png)
+:::image type="content" source="ltm-invoice-attached-source-file.png" alt-text="Screenshot of the attached source file (EdicomSourceFile) on the invoice journal.":::
 
 For Paraguay, the **Process response** action completes the pipeline after a few minutes.
 
 
 ## More resources
 
-- [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md)
-- [Get started with Electronic invoicing service administration](../global/gs-e-invoicing-administration-integration-components.md)
-- [Setting up Electronic Invoicing](../global/gs-e-invoicing-set-up-overview.md)
-- [Electronic Invoicing service independent software vendor (ISV) last-mile connector](../global/e-invoicing-isv-connector.md)
+- [Electronic invoicing service overview](../global/gs-e-invoicing-service-overview.md)
+- [Get started with electronic invoicing service administration](../global/gs-e-invoicing-administration-integration-components.md)
+- [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md)
+- [Electronic invoicing service independent software vendor (ISV) last mile connector](../global/e-invoicing-isv-connector.md)
 - [Dynamics 365 Country/Region expansion: localizations for LATAM Countries/Regions | June 27, 2024](https://community.dynamics.com/blogs/post/?postid=7bd2efc7-9344-ef11-840a-6045bdeef618)
-- [Dynamics 365 Country/Region expansion: localizations for LATAM Countries/Regions | D365 FastTrack Tech Talks (youtube.com)](https://www.youtube.com/watch?v=eK8TJmnhpJo)
+- [Dynamics 365 Country/Region expansion: localizations for LATAM Countries/Regions | Dynamics 365 FastTrack Tech Talks (youtube.com)](https://www.youtube.com/watch?v=eK8TJmnhpJo)
 
-- [Finance Localization for LATAM: Update on Additional Countries/Regions | Dynamics 365 Fast Track TechTalk | Jun 23, 2025](https://community.dynamics.com/blogs/post/?postid=f091c202-104b-f011-877a-7c1e52165747)
-- [Finance Localization for LATAM: Update on Additional Countries/Regions | Dynamics 365 Fast Track TechTalk (youtube.com)](https://www.youtube.com/watch?v=g3oD3jqsePA)
+- [Finance Localization for LATAM: Update on more Countries/Regions | Dynamics 365 Fast Track TechTalk | Jun 23, 2025](https://community.dynamics.com/blogs/post/?postid=f091c202-104b-f011-877a-7c1e52165747)
+- [Finance Localization for LATAM: Update on more Countries/Regions | Dynamics 365 Fast Track TechTalk (youtube.com)](https://www.youtube.com/watch?v=g3oD3jqsePA)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
