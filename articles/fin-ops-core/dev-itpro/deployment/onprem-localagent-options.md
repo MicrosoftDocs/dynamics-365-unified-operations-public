@@ -48,7 +48,7 @@ There is a section in the localagent-config.json file that is labeled deployment
 
 If your environment has Microsoft SQL Server 2019 installed throughout the different components, change **sqlServerVersion** from the default of 2016, to 2019.
 
-For a list of compatible SQL Server versions, see [Microsoft Dynamics 365 Finance + Operations supported software](./onprem-compatibility.md).
+For a list of compatible SQL Server versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](./onprem-compatibility.md).
 
 ## Specify that AD FS is deployed with Microsoft 365 compatibility
 
