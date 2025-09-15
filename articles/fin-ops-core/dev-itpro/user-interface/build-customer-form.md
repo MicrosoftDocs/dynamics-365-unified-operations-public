@@ -3,11 +3,12 @@ title: Build the Customer form
 description: Learn about building the Customer form, including prerequisites, key concepts, setup, and overviews on various projects.
 author: jasongre
 ms.author: jasongre
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
   - evergreen
 ms.date: 01/23/2025
+ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

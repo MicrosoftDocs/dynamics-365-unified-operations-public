@@ -3,7 +3,7 @@ title: Creating intercompany purchase and sales orders in several companies
 description: Learn how to create intercompany purchase orders or sales orders in several companies for both trading companies and production companies.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
+ms.topic: concept-article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable

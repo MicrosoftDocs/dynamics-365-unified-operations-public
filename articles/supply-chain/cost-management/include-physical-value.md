@@ -6,7 +6,7 @@ ms.author: prasungoel
 ms.reviewer: kamaybac
 ms.search.form: InventModelGroup
 ms.topic: how-to
-ms.date: 07/29/2024
+ms.date: 08/13/2025
 ms.custom: 
   - bap-template
 ---
@@ -61,17 +61,12 @@ When a sales order is posted, the posted cost amount is USD 10.00, because the r
 > [!NOTE]
 > For comparison, if you select the **Include physical value** check box for this item, when a sales order is posted, the posted cost amount will be USD 12.00.
 
-## Include physical value in weighted average recalculation (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
+## Include physical value in weighted average recalculation
 
 This feature lets you choose whether to include physically updated transactions that haven't yet been financially updated when recalculating weighted average.
 
 > [!IMPORTANT]
 > This capability is only available during recalculation and isn't used during inventory close. If you would like to check the results including physical value after inventory closing, you should run a new recalculation.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Prerequisites
 

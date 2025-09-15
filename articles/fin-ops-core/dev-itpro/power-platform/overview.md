@@ -4,12 +4,12 @@ description: Learn about Microsoft Power Platform integration via Microsoft Dyna
 author: Sunil-Garg
 ms.author: sunilg
 ms.topic: article
-ms.date: 05/19/2022
+ms.custom: 
+  - bap-template
+ms.date: 05/08/2025
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2020-10-31
-ms.search.form:
 ms.dyn365.ops.version: 10.0.0
 ---
 
@@ -17,7 +17,11 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Power Platform provides a suite of capabilities for Dynamics 365 applications via the Power Platform admin center. Today, finance and operations apps are not managed by the Power Platform admin center. However, over time more and more management capabilities will be migrated from Microsoft Dynamics Lifecycle Services (LCS) over to the admin center. In the interim, customers will be able to unlock features, such as dual-write functionality, virtual entities, add-ins, and more via Microsoft Power Platform integration functionality in LCS.
+> [!IMPORTANT]
+> Beginning **May 1, 2025**, all environments for finance and operations apps are required to have the Power Platform Integration enabled. Before this date, environment administrators should enable the Power Platform Integration by following the steps in this article, selecting the Power Platform environment to which the environment for your finance and operations apps should be linked. Any finance and operations apps environments that aren't linked to a Power Platform environment through the Power Platform Integration after this date have the Power Platform Integration automatically enabled for the environment. During automated enablement, the environment is either be linked to a newly provisioned Power Platform environment, or linked to an existing Power Platform environment if either [dual-write](../data-entities/dual-write/dual-write-home-page.md) or [virtual entities for finance and operations apps](../power-platform/virtual-entities-overview.md) has already been enabled for the environment.
+> Learn more about enabling and configuring the integration in [Enabling the Power Platform integration](./enable-power-platform-integration.md).
+
+Microsoft Power Platform provides a suite of capabilities for Dynamics 365 applications via the Power Platform admin center. Today, finance and operations apps aren't managed by the Power Platform admin center. However, over time more and more management capabilities will be migrated from Microsoft Dynamics Lifecycle Services over to the admin center. In the interim, customers are able to unlock features, such as dual-write functionality, virtual entities, add-ins, and more via Microsoft Power Platform integration functionality in Lifecycle Services.
 
 ## Getting started
 
@@ -36,18 +40,28 @@ To understand the architecture of Microsoft Power Platform, Dataverse, dual-writ
 - [Overview of creating apps in Power Apps](/powerapps/maker/)
 
 ## Tools and services unlocked with Microsoft Power Platform integration
+Below are tools and services that are unlocked with the Power Platform integration, enabling new features in finance and operations apps. As we continue to unify finance and operations applications with the Microsoft Power Platform, an increasing number of capabilities will be powered by services within the Power Platform ecosystem. This integration enables greater flexibility, automation, and intelligence, allowing businesses to streamline operations and enhance decision-making through low-code applications, process automation, and advanced analytics. As this evolution progresses, organizations can expect improved interoperability between Dynamics 365 applications and Power Platform services, driving efficiency and innovation across financial and operational workflows.
 
-Together, virtual entities, dual-write, business events, and data events make up the shared data layer for the convergence of finance and operations apps and the Dataverse platform. They are complementary technologies that are intended to work together. 
+### Integration tools for data and business logic
+Together, virtual entities, dual-write, business events, and data events make up the shared data layer for the convergence of finance and operations apps and the Dataverse platform. They'e complementary technologies that are intended to work together. 
 
 **Virtual entities** enable scenarios where access to finance and operations data from Microsoft Power Platform or native Dataverse apps is required. You can query that data, bind forms to it, and generally use the full power of Microsoft Power Platform against the full breadth of finance and operations apps. Data isn't copied between systems. Instead, it's accessed directly through the standard virtual entity infrastructure that Microsoft Power Platform technologies can already bind to. For more information, see [Virtual entities overview](virtual-entities-overview.md). 
 
-**Business events** let you use Microsoft Power Platform to respond to events that are occurring in finance and operations apps. These events occur when a process is run in the application with business logic. Business events can be raised from any app, including finance and operations apps, and can be handled by Microsoft Power Platform business logic. This handling will often include querying or interacting with additional data through either native entities or virtual entities. 
+**Business events** let you use Microsoft Power Platform to respond to events that are occurring in finance and operations apps. These events occur when a process is run in the application with business logic. Business events can be raised from any app, including finance and operations apps, and can be handled by Microsoft Power Platform business logic. This handling often includes querying or interacting with additional data through either native entities or virtual entities. 
 
-**Data events**, similar to business events, enable external applications to receive notifications from finance and operations apps when events occur. Data events occur when there is a change to a record in the application data. External systems can react to notifications when a create, update, or delete (CUD) operation occurs in the data.
+**Data events**, similar to business events, enable external applications to receive notifications from finance and operations apps when events occur. Data events occur when there's a change to a record in the application data. External systems can react to notifications when a create, update, or delete (CUD) operation occurs in the data.
 
 For a subset of scenarios, data must be physically copied between finance and operations apps and native Dataverse entities. These scenarios are for overlapping entities that already have a large amount of bound logic in both native Dataverse apps and finance and operations apps, so that the data must reside in the local database of each type of app. Although the number of these entities is relatively small, it includes some of the most important entities, such as Account/Customer, Company, Product, and Sales order. For these scenarios, **dual-write** enables near-real-time synchronous copying of data. This capability enables existing apps to continue to operate against local data, as designed, and also ensures that the corresponding overlapping entity is kept in sync. For more information, see the [Dual-write home page](../data-entities/dual-write/dual-write-home-page.md). 
 
-Together, virtual entities, dual-write, business events, and data events let you build apps and business processes that span the boundaries between finance and operations apps and native Dataverse apps. Most apps and business processes will use either a combination of these three parts of the shared data layer or all of them. As always, extension and customization should reduce the amount of data that is copied between databases as much as possible, and should also optimize for the best possible user experience when these tools are used. 
+Together, virtual entities, dual-write, business events, and data events let you build apps and business processes that span the boundaries between finance and operations apps and native Dataverse apps. Most apps and business processes use either a combination of these three parts of the shared data layer or all of them. As always, extension and customization should reduce the amount of data that is copied between databases as much as possible, and should also optimize for the best possible user experience when these tools are used. 
+
+### AI capabilities enabled by the Power Platform
+Finance and operations apps utilize the Power Platform to enable AI features. The features are dependent on AI services like [Microsoft Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio), [AI Builder](/ai-builder/overview), and capabilities in [Microsoft Dataverse]/power-apps/maker/data-platform/data-platform-intro) to light up powerful AI features in finance and operations apps. The Power Platform integration must be enabled in the environment to access the services for the AI features.
+
+Learn more about some of the AI-driven capabilities in finance and operations apps that are enabled by the Power Platform in [Overview of Copilot capabilities in finance and operations apps](../../fin-ops/copilot/copilot-for-finance-operations.md).
+
+### Data archival
+Integration with the Power Platform enables archival of data for finance and operations apps with custom retention policies for securely archiving and retaining unlimited data. With this feature data is moved from the database for finance and operations apps into Dataverse long-term retention, enabling greater scale for finance and operations apps. See [Archive data in Dynamics 365 finance and operations apps with Dataverse](../sysadmin/archive-data.md) for more information.
 
 ### Add-ins functionality
 

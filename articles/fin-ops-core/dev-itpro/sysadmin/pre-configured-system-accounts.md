@@ -3,7 +3,7 @@ title: Preconfigured system accounts
 description: Learn about the system accounts that are preconfigured on your finance and operations environments with a table that outlines the purpose for various accounts.
 author: jaredha
 ms.author: jaredha
-ms.topic: conceptual
+ms.topic: article
 ms.date: 06/27/2024
 ms.custom: 
   - bap-template

@@ -16,13 +16,13 @@ ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildT
 
 Advanced wave load building automatically assigns shipments to existing waves during wave execution. Therefore, you can create meaningful loads that represent trucks without having to use the outbound load planning workbench. This capability is useful for businesses that want to use the concept of loads to track and plan the shipment of goods in a truck/trailer, but that don't want to manually create those loads every day.
 
-During wave processing, the system usually creates a new load for each shipment that no load is assigned to. However, when advanced wave load building is turned on, the system assigns each unassigned shipment to an existing load (if an appropriate load exists), and new loads are created only when they are required. Advanced wave load building automatically creates the new loads, based on criteria that you define.
+During wave processing, the system usually creates a new load for each shipment that no load is assigned to. However, when advanced wave load building is turned on, the system assigns each unassigned shipment to an existing load (if an appropriate load exists), and new loads are created only when they're required. Advanced wave load building automatically creates the new loads, based on criteria that you define.
 
 To use the feature, you must set up the system in the following way:
 
 - Create *wave templates* that include the new **buildLoads** method. This method makes advanced wave load building available for waves that use those templates.
 - Set up *load build templates*, each of which is linked to a specific wave template and method. Load build templates control which load (existing or new) the load lines that are being waved are added to. You can combine or separate shipments, based on criteria such as the load template, equipment, and other field values on the load line.
-- Define *load mix groups* to control which items should and should not be combined on a single load. You also specify whether the restriction should produce a warning or an error, and whether the volumetric restriction of the load template should be evaluated.
+- Define *load mix groups* to control which items should and shouldn't be combined on a single load. You also specify whether the restriction should produce a warning or an error, and whether the volumetric restriction of the load template should be evaluated.
 
 ## Turn on advanced wave load building in your system
 
@@ -39,7 +39,7 @@ You can also use this demo as guidance for using this feature when you work on a
 
 ### Make sure that the scenario setup includes enough available inventory
 
-If you're working with the **USMF** demo data, you must first make sure that your system is set up so that there is enough inventory at each relevant location. For this demo, the expectation is that the following inventory is available in warehouse *62*:
+If you're working with the **USMF** demo data, you must first make sure that your system is set up so that there's enough inventory at each relevant location. For this demo, the expectation is that the following inventory is available in warehouse *62*:
 
 - **Item A0001:** 10 pcs
 - **Item A0002:** 10 pcs
@@ -113,7 +113,7 @@ To take advantage of advanced wave load building, you must include the **buildLo
 1. On the Action Pane, select **Edit** to put the page into edit mode.
 1. On the **Methods** FastTab, in the **Remaining methods** grid, select the **buildLoads** method.
 1. Select the right arrow button to move the **buildLoads** method to the **Selected methods** grid.
-1. To assign a **Wave step code** value for the **buildLoads** method, you must first create a code on the **Wave step codes** page. You can use any value that you want, but be sure to make a note of it, because you will need it later. Follow these steps to create code **WSC2112**:
+1. To assign a **Wave step code** value for the **buildLoads** method, you must first create a code on the **Wave step codes** page. You can use any value that you want, but be sure to make a note of it, because you'll need it later. Follow these steps to create code **WSC2112**:
 
     1. In the row for the **buildLoads** method, right-click the down arrow in the **Wave step code** field, and then select **View details**.
     1. On the **Wave step codes** page, on the Action Pane, select **New**.
@@ -158,7 +158,7 @@ Load mix groups establish rules for the types of items that can be combined on a
     If you're working with the **USMF** demo data, set the following values:
 
     - **Item group:** *CarAudio*
-    - **Load build action:** *Restrict* (This value will prevent items that belong to the **CarAudio** item group from being on the same load as items that belong to the **TV&Video** item group.)
+    - **Load build action:** *Restrict* (This value prevents items that belong to the **CarAudio** item group from being on the same load as items that belong to the **TV&Video** item group.)
 
 1. Continue to work with the rules until you've added all the criteria and constraints that you require for the load mix group.
 
@@ -182,8 +182,11 @@ You can set up as many load build templates as you require. However, to use adva
     | Load mix group ID | Select the load mix group to use if the item is allowed on the load. The mix group establishes rules for the types of items that can be combined on a single load. You should select one of the mix groups that you created earlier in this setup. | *TV* |
     | Use open loads | Select whether existing open loads should be added. The following options are available:<ul><li>**None** – Don't add open loads to any existing loads.</li><li>**Any** – Add open loads to any existing loads that are valid for the line.</li><li>**Assigned** – Add open loads to the load that is assigned to the wave.</li></ul> | *Any* |
     | Create loads | Specify whether new loads should be created if no existing loads match the criteria. | Selected (= *Yes*) |
-    | Allow shipment line split | Specify whether a single load line can be split across multiple loads if the full line exceeds the maximum capacity of the load template. | Cleared (= *No*) |
+    | Allow load line split | Specify whether a single load line can be split across multiple loads if the full line exceeds the maximum capacity (**Quantity**) of the load template. | Cleared (= *No*) |
     | Validate volumetrics | Specify whether load building should check the weight and volume as each load line is added, to ensure that the volumetric limits of the load template are respected. | Cleared (= *No*) |
+
+    > [!NOTE]
+    > The **Allow load line split** field only splits based on a quantity limit, not volume or weight limits. It's different from the **Allow load split during ship confirm** field used by load templates. Learn more at [Confirm and transfer](confirm-and-transfer.md).
 
 1. On the Action Pane, select **Save** to make the **Edit query** option available.
 1. On the Action Pane, select **Edit query** to open a dialog box for editing the query.
@@ -230,6 +233,5 @@ This scenario shows how the settings that were described earlier in this article
 1. In the sales order that you just created, on the **Sales order lines** FastTab, select **Add line** to add another line.
 1. On the new line, set the **Item number** field to *M9200* and the **Quantity** field to *1*.
 1. Repeat lines 6 through 9 to reserve the line and release it to the warehouse. As before, the system creates a **new** shipment for the line that you added. However, because the item is from the **CarAudio** item group, it **fails to pass the constraints that you set up for the load mix group**. Therefore, it's **added to a new load**. If you hadn't specified a load mix group on the load build template, this shipment would have been added to the first load.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

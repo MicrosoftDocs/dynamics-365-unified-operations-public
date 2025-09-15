@@ -5,7 +5,7 @@ title: Create departments and include them in the department hierarchy
 description: A department is an operating unit that represents a category or functional area of an organization. A department is responsible for a specific area of the organization, such as sales, accounting, or human resources. 
 author: twheeloc
 ms.date: 05/08/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: HierarchyDesigner, OMOperatingUnit, HcmPersonnelManagementWorkspace
@@ -53,7 +53,7 @@ To add a department to the department hierarchy, follow these steps.
 6.  When you're ready, click **Publish** in the hierarchy designer. You can enter an effective date that indicates when the hierarchy should be published. For example, to add a new department at the beginning of the next calendar year, set the effective date to January 1 of the new calendar year. The changes to the hierarchy will take effect on that date.
 
 ## Steps for creating a department
-Refer to the [Define new departments](./hr-personnel-define-departments.md) article for the step-by-step procedure for creating a new department. 
+For a step-by-step procedure to create a new department, see [Define new departments](./hr-personnel-define-departments.md). 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

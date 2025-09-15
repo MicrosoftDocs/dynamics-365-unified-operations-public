@@ -1,31 +1,33 @@
 --- 
 title: Create and submit VAT report
-description: Learn about creating and submitting the VAT report to the German authority, including a step-by-step process using the DEMF demo data company. 
+description: This article describes how to create and submit a VAT report to the German authority with Microsoft Dynamics 365 Finance.
 author: mrolecki
 ms.author: mrolecki
 ms.topic: how-to
-ms.date: 08/29/2018
-ms.custom:
-ms.reviewer: johnmichalak 
-audience: Application User  
+ms.date: 03/27/2025
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
-ms.search.form:  
-ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Create and submit VAT report
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through creating and submitting the VAT report to German authority. This procedure was created using the demo data company DEMF. This functionality is available for legal entities whose primary address is in Germany.
+This article describes how to create and submit a value added tax (VAT) report to the German authority with Microsoft Dynamics 365 Finance.
 
-1. Go to Tax > Declarations > Sales tax > Report sales tax for settlement period.
-2. In the Settlement period field, enter or select a value.
-3. In the From date field, enter a date.
-4. Click OK.
-5. Select Yes in the Create electronic tax document field.
-6. Click OK.
+The following procedure walks you through creating and submitting the VAT report to the German authority. This functionality is available for legal entities whose primary address is in Germany. The procedure was created using the demo data company DEMF.
+
+To create and submit a VAT report to the German authority, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement period**.
+1. In the **Settlement period** field, enter or select a value.
+1. In the **From date** field, enter a date.
+1. Select **OK**.
+1. In the **Create electronic tax document** field, select **Yes**.
+1. Select **OK**.
 
 
 

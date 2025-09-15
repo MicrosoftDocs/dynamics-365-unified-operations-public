@@ -3,7 +3,7 @@ title: Help prevent long-running reports from timing out
 description: Learn about tips that can help you prevent reports that run for a long time from timing out, including how to use batch processing.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/06/2019
 ms.reviewer: johnmichalak
 audience: Developer

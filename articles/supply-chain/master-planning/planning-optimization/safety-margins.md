@@ -1,8 +1,8 @@
 ---
 title: Safety margins
 description: Learn how safety margins work during master planning, including definitions for the order, receipt, and issue saftety margin types.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 08/09/2022
 ms.custom: 

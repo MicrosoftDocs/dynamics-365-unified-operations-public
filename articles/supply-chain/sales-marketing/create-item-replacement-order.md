@@ -3,7 +3,7 @@ title: Create an item replacement order
 description: Learn how to create an item replacement order, including a step-by-step process for creating a replacement order after receiving a returned item.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac

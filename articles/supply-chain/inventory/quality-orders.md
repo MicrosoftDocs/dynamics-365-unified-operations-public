@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: InventQualityOrderTable
 ms.topic: how-to
-ms.date: 01/06/2025
+ms.date: 02/28/2025
 ms.custom: 
   - bap-template
 ---
@@ -114,21 +114,18 @@ To work with quality orders that are related to your quarantine orders, go to **
 - Review the values in the **Quality order status** column. In this way, you can learn the overall status of all quality orders that are related to each quarantine order in grid.
 - Select a quarantine order in the grid, and then, on the Action Pane, select **Quality orders** to view, create, or update quality orders that are related to the quarantine order.
 
-### From goods-in-transit orders (preview)
+### From goods-in-transit orders
 
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until further notice -->
+If you use the **Landed cost** module, you can set up the system so that quality orders are automatically created when goods-in-transit orders are received. The quality control process can then be initiated for the goods-in-transit orders. This process ensures that products undergo stringent quality checks throughout transit. Therefore, it ensures that high-quality goods are received at the warehouse. During the quality control process, inventory from goods-in-transit orders can be blocked to prevent the shipment of defective products. This function is aligned with regulatory compliance and helps mitigate legal risks.
 
-You can initiate and run quality checks against goods-in-transit orders. This proactive approach enables discrepancies or defects that might occur during transportation to be detected early, thereby ensuring that only products that meet predefined quality standards can proceed to their final destination.
+To automatically create quality orders based on goods-in-transit orders, enable the *Enable Quality Control for Goods In-Transit Order* feature. For more information, see [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md). In addition, [quality associations](quality-associations.md) must be configured.
 
-To work with quality orders that are related to your goods-in-transit orders, follow any of these steps:
+To create quality orders for the received quantity only, set the **Per updated quantity** option to *Yes* on the **Item sampling** page (**Inventory management \> Setup \> Quality control \> Item sampling**).
+
+Users can view, manually create, or update quality orders directly from the **Goods-in-transit order** page. To work with quality orders that are related to your goods-in-transit orders, follow one of these steps:
 
 - Go to **Landed cost \> Periodic tasks \> Goods in transit orders** and select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page. There, you can view, create, or update quality orders that are related to the goods-in-transit order.
 - Go to **Landed cost \> Voyages \> All voyages** and open or select a voyage or select a voyage. On the Action pane, on the **General** tab, in the **Inquiries** group, select **Goods in transit orders** to open the **Goods in transit orders** page. Select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page, where you can view, create, or update quality orders that are related to the selected goods-in-transit order.
-
-For details about how to enable this feature, see [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md).
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Advanced actions for quality orders
 

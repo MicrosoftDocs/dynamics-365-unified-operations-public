@@ -1,19 +1,20 @@
 ---
-title: EU Sales list for Lithuania
-description: Learn about the European Union (EU) sales list report for Lithuania, including a step-by-step process on setting up information about the company.
+title: EU sales list for Lithuania
+description: Learn how to set up the European Union (EU) sales list report for Lithuania in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/26/2024
+ms.date: 05/29/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ---
 
-# EU Sales list for Lithuania
+# EU sales list for Lithuania
 
-This article provides information about the European Union (EU) sales list report for Lithuania. The Lithuanian EU sales list report contains information about the sale of goods and services for reporting in XML format. The following fields are included on the Lithuanian EU sales list report:
+This article explains how to set up the European Union (EU) sales list report for Lithuania in Microsoft Dynamics 365 Finance. 
+
+The Lithuanian EU sales list report contains information about the sale of goods and services for reporting in XML format. The following fields are included on the Lithuanian EU sales list report:
 
 - **EU sales list header:**
 
@@ -52,18 +53,20 @@ For general setup information, see [EU Sales list reporting](../europe/emea-eu-s
 
 Create a registration type, and assign it to the **VAT ID** registration category for Lithuania and all the countries or regions that your company does business with, as described in [Registration IDs](../europe/emea-registration-ids.md).
 
-1. In Microsoft Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
+To set up information about the company, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
 2. In the grid, select your company.
 3. On the **Bank account information** FastTab, in the **Routing number** field, enter the value that should be shown in the .xml file for the EU sales list report.
 4. On the Action Pane, select **Registration IDs**.
 5. On the **Registration ID** FastTab, select **Add**.
 6. On the **Overview** tab, in the **Registration type** field, select the registration type that you created earlier.
 7. Enter your company's value-added tax (VAT) ID.
-8. Optional: On the **General** tab, in the **General** section, change the period that the VAT ID is used for.
+8. Optionally, on the **General** tab, in the **General** section, change the period that the VAT ID is used for.
 9. Close the page.
-10. On the **Foreign trade and logistics** FastTab, in the **Intrastat** section, in the **VAT exempt number export** field, select the VAT ID that you created in step 7. This value will be shown in the .xlsx file for the EU sales list report.
+10. On the **Foreign trade and logistics** FastTab, in the **Intrastat** section, in the **VAT exempt number export** field, select the VAT ID that you created in step 7. This value is shown in the Excel file for the EU sales list report.
 
-### Import Electronic reporting configurations
+### Import electronic reporting configurations
 
 In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list:
 
@@ -76,7 +79,9 @@ For more information, see [Download Electronic reporting configurations from Lif
 
 ### Set up foreign trade parameters
 
-1. In Finance, go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
+To set up foreign trade parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
 2. On the **EU sales list** tab, set the **Report cash discount** option to **Yes** if a cash discount should be included in the value when a transaction is included in the EU sales list.
 3. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list (LT)**.
 4. In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
@@ -93,12 +98,14 @@ For general information about which types of transactions are included in the EU
 
 ### Generate the EU sales list report
 
-1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
+To generate the EU sales list report, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
 2. Transfer transactions.
 3. Optional: To create correction files, select the **Corrected** checkbox for each corrective line.
 
-> [!NOTE] 
-> To ensure the correct display of information on a report that includes correction lines, don't report both lines that have corrections and lines that don’t have corrections at the same time for one customer.
+    > [!NOTE] 
+    > To ensure the correct display of information on a report that includes correction lines, don't report both lines that have corrections and lines that don’t have corrections at the same time for one customer.
 
 4. On the Action Pane, select **Reporting**.
 5. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields.
@@ -115,13 +122,13 @@ For general information about which types of transactions are included in the EU
     | Contact information | Enter contact information.  |
     | Report type         | Select **Primary** to create files that don’t include corrective lines. <br>Select **Corrected** to create a correction file that includes only corrective lines. <br> Select **Partially corrected** to create a correction file that includes both corrective lines and lines that don’t have corrections. |
 
-6. Select **OK**, and review the generated reports.
+6. Select **OK**, and then review the generated reports.
 
 ## Example
 
 For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for Lithuania, see [Example for generic EU Sales list](../europe/emea-eu-sales-list-example.md). However, for the example in this article, create **LT123456789** as the company’s VAT ID. Enter this VAT ID in the **VAT exempt number export** field in the **Intrastat** section on the **Foreign trade and logistics** FastTab of the **Legal entities** page. Additionally, create **000000009** as the company’s routing number.
 
-**Create an EU sales list report**
+To create an EU sales list report, follow these steps.
 
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
 2. On the Action Pane, select **Reporting**.

@@ -4,7 +4,7 @@ description: Learn about the out-of-box features that are available for each cou
 author: ilikond
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 02/10/2025
+ms.date: 09/08/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -17,7 +17,7 @@ ms.reviewer: johnmichalak
 The availability of Electronic invoicing Service globalization features depends on the country or region where you're located. Although some features are generally available, others are still in preview.
 
 > [!NOTE]
-> This article is related only to the globalization features introduced in the scope of the Electronic Invoicing Service. This article doesn't cover other approaches for supported e-Invoicing capabilities for some countries designed based on built-in X++ code and the Electronic Messaging framework.
+> This article is related only to the globalization features introduced in the scope of the Electronic Invoicing Service. This article doesn't cover other approaches for supported e-Invoicing capabilities for some countries/regions designed based on built-in X++ code and the Electronic Messaging framework.
 > For more information, see [Electronic Invoicing](gs-e-invoicing-service-overview.md) and [Electronic messaging](../../general-ledger/electronic-messaging.md).
 
 ## Generally available features
@@ -52,9 +52,10 @@ The following table shows the Electronic invoicing globalization features that a
 | Saudi Arabia | [Saudi Arabian Zatca compliance check (SA)](../mea/gs-e-invoicing-sa-onboarding.md) | Onboarding process |
 | Spain | Spanish electronic invoice (ES) | Sales invoices and project invoices |
 | Uruguay | [Uruguay electronic invoice (UY)](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md) | Electronic fiscal receipts (CFE)  |
+| Uruguay | [Uruguay Electronic Invoice (UY)](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md) | Sales invoices, project invoices, and packing slips |
 
 > [!IMPORTANT]
-> We were planning to transition NF-e/NFS-e and CFDI to our Electronic Invoicing service. For quite a while, the features and formats for NF-e/NFS-e have been in preview in Brazil, and those for CFDI have been in preview in Mexico. However, because of a lack of interest in adoption and transition to the new approach, we are still evaluating the timing of the switch to the Electronic Invoicing service platform in those countries. The format of these documents won't contain the latest compliance changes that were published since the preview release. In the meantime, we recommend continuing that you use our built-in X++ implementations in Brazil and Mexico. **These implementations are kept up to date with the legislation.** For more information, see [Brazil NF-e process overview](../brazil/latam-bra-nf-e-process.md) and [Electronic invoices (CFDI)](../iberoamerica/latam-mex-CFDI-electronic-invoices.md).
+> We were planning to transition NF-e/NFS-e and CFDI to our Electronic Invoicing service. For quite a while, the features and formats for NF-e/NFS-e have been in preview in Brazil, and those for CFDI have been in preview in Mexico. However, because of a lack of interest in adoption and transition to the new approach, we are still evaluating the timing of the switch to the Electronic Invoicing service platform in those countries/regions. The format of these documents won't contain the latest compliance changes that were published since the preview release. In the meantime, we recommend continuing that you use our built-in X++ implementations in Brazil and Mexico. **These implementations are kept up to date with the legislation.** For more information, see [Brazil NF-e process overview](../brazil/latam-bra-nf-e-process.md) and [Electronic invoices (CFDI)](../iberoamerica/latam-mex-CFDI-electronic-invoices.md).
 
 ## Preview features
 

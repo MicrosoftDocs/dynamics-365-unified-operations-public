@@ -3,7 +3,7 @@ title: Extend the customer CDX package to add custom data
 description: This article explains how to add custom data to the customer Commerce Data Exchange (CDX) package in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 04/21/2022
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

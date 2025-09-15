@@ -3,7 +3,7 @@ title: Configure approval steps in a workflow
 description: Learn about how to configure the properties of an approval step, including outlines on naming steps and assigning the approval step.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/23/2017
 ms.reviewer: twheeloc
 audience: Application User

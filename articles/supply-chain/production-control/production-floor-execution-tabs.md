@@ -3,18 +3,19 @@ title: Design the production floor execution interface
 description: Learn how to design the content of the user interface for each configuration, including an outline and step-by-step process on designing a tab.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
-ms.date: 12/01/2020
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: JmgProductionFloorExecutionConfiguration, JmgProductionFloorExecutionConfigurationTab
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Design the production floor execution interface
 
 [!include [banner](../includes/banner.md)]
 
-You can design the content of the user interface for each configuration used by the production floor execution interface. For example, workers in one work cell might need to be able to open job instructions on the production floor, while in another work cell, instructions are not needed. In that case, two configurations should be created, one with a button for opening document attachments and one without this button.
+You can design the content of the user interface for each configuration used by the production floor execution interface. For example, workers in one work cell might need to be able to open job instructions on the production floor, while in another work cell, instructions aren't needed. In that case, two configurations should be created, one with a button for opening document attachments and one without this button.
 
 ## Design a tab
 
@@ -47,9 +48,9 @@ To create and configure a new tab, follow these steps:
     - **Main view** – Select among the predefined job lists (*Active jobs*, *All jobs*, *My jobs*, and *My machine*).
     - **Details view** – Select between a blank value or **Job details**. If you select the blank value, there will be no detailed view in the tab. If you select **Job details**, the detailed view will contain a detailed description of the job selected in the job list in the main view.
 
-1. In the **Primary toolbar** section, choose which buttons should be available in the primary toolbar. The **Available actions** column shows a list of all the buttons that can be added. The **Selected actions** columns shows a list of all the buttons that are included in the current configuration. Use the buttons between the columns to move selected items between the columns as needed. Use the up and down buttons next to the **Selected actions** column to control the order in which the buttons are presented in the user interface.
+1. In the **Primary toolbar** section, choose which buttons should be available in the primary toolbar. The **Available actions** column shows a list of all the buttons that can be added. The **Selected actions** column shows a list of all the buttons that are included in the current configuration. Use the buttons between the columns to move selected items between the columns as needed. Use the up and down buttons next to the **Selected actions** column to control the order in which the buttons are presented in the user interface.
 
-1. In the **Secondary toolbar** section, choose which buttons should be available in the secondary toolbar. The **Available actions** column shows a list of all the buttons that can be added. The **Selected actions** columns shows a list of all the buttons that are included in the current configuration. Use the buttons between the columns to move selected items between the columns as needed. Use the up and down buttons next to the **Selected actions** column to control the order in which the buttons are presented in the user interface.
+1. In the **Secondary toolbar** section, choose which buttons should be available in the secondary toolbar. The **Available actions** column shows a list of all the buttons that can be added. The **Selected actions** column shows a list of all the buttons that are included in the current configuration. Use the buttons between the columns to move selected items between the columns as needed. Use the up and down buttons next to the **Selected actions** column to control the order in which the buttons are presented in the user interface.
 
 ## Associate a tab with a configuration
 
@@ -65,7 +66,6 @@ After you designed all the tabs you need, you can associate them with a configur
 
 1. Continue to add additional tabs as needed.
 
-1. Use the **Move up** and **Move down** buttons on the toolbar to arrange the tabs as needed. The tabs will be displayed from left to right in the order shown in the above screenshot (the tab at the top is shown on the left).
-
+1. Use the **Move up** and **Move down** buttons on the toolbar to arrange the tabs as needed. The tabs will be displayed from left to right in the order shown (the tab at the top is shown on the left).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

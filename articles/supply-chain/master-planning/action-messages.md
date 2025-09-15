@@ -1,12 +1,14 @@
 ---
 title: Action messages
-description: An action message is a system-generated suggestion to change an existing planned or firmed order. Learn about select action messages.
-author: t-benebo
-ms.author: benebotg
-ms.topic: article
-ms.date: 03/18/2022
+description: An action message is a system-generated suggestion to change an existing planned or firmed order.
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqGroup, MCRSalesOrderMessages, MCRSalesTableDetailedStatus, TAMItemVendRebateGroup, TAMVendRebate, TAMVendRebateAgreementLineInfoPart, TAMVendRebateGroup, TAMVendRebateTable, TAMVendRebateTrans, ReqTransActionListPage
+ms.topic: how-to
+ms.date: 08/22/2025
+ms.custom:
+  - bap-template
 ---
 
 # Action messages
@@ -25,11 +27,11 @@ On the **Coverage groups** page, you can select the action messages that you wan
 
 | Message | Description |
 |---|---|
-| Advance | The system will generate action messages, as they are needed, to move orders to an earlier date. In the **Advance margin** field, you can specify the maximum number of days that can pass between a receipt and an issue without an advance action. |
-| Postpone | The system will generate action messages, as they are needed, to move orders to a later date. In the **Postpone margin** field, you can specify the maximum number of days that can pass between a receipt and an issue without a postpone action. |
-| Decrease | The system will generate action messages when production orders, purchase orders, and other receipt transactions should be decreased to prevent excess inventory levels. |
-| Increase | The system will generate action messages when production orders, purchase orders, and other receipt transactions should be increased to prevent shortages in inventory. |
-| Derived actions | Action messages that are created for receipt transactions will be propagated to any derived requirements, and the necessary action messages will be generated for the receipt transactions that satisfy those requirements. |
+| Advance | The system generates action messages, as they're needed, to move orders to an earlier date. In the **Advance margin** field, you can specify the maximum number of days that can pass between a receipt and an issue without an advance action. |
+| Postpone | The system generates action messages, as they're needed, to move orders to a later date. In the **Postpone margin** field, you can specify the maximum number of days that can pass between a receipt and an issue without a postpone action. |
+| Decrease | The system generates action messages when production orders, purchase orders, and other receipt transactions should be decreased to prevent excess inventory levels. |
+| Increase | The system generates action messages when production orders, purchase orders, and other receipt transactions should be increased to prevent shortages in inventory. |
+| Derived actions | Action messages that are created for receipt transactions will be propagated to any derived requirements, and the necessary action messages are generated for the receipt transactions that satisfy those requirements. |
 
 The following sections provide a few detailed scenarios.
 
@@ -43,11 +45,11 @@ For example, you have an item that has the following settings on its **Default o
 - **Maximum order quantity:** *90*
 - **Multiple:** *20*
 
-If there is demand for a quantity of 60 of this item, master planning will create a planned purchase order for a quantity of 60. If the demand is increased by 30, master planning will suggest an increase of 40, because it will respect the multiple of 20 and never cause undersupply.
+If there's demand for a quantity of 60 of this item, master planning creates a planned purchase order for a quantity of 60. If the demand is increased by 30, master planning suggests an increase of 40, because it respects the multiple of 20 and never cause undersupply.
 
 ## Action messages for orders related to safety stock
 
-Action messages for orders that supply safety stock will never suggest decreasing the quantity below the quantity that is needed for the safety stock. In other words, if there is an order that is supplying safety stock and customer demand, and the demand is decreased or canceled, master planning will suggest decreasing the planned order by the decreased demand. However, it will never suggest a value that is lower than the safety stock that is needed.
+Action messages for orders that supply safety stock never suggest decreasing the quantity below the quantity that is needed for the safety stock. In other words, if there's an order that is supplying safety stock and customer demand, and the demand is decreased or canceled, master planning suggests decreasing the planned order by the decreased demand. However, it never suggests a value that is lower than the safety stock that is needed.
 
 The system won't suggest postponing actions for supplying safety stock, because it's assumed that the safety stock must be supplied at the required time and on the required date.
 

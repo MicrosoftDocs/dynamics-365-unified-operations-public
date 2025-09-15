@@ -3,7 +3,7 @@ title: Get started with Electronic invoicing for Costa Rica
 description: Learn how to set up Microsoft Dynamics 365 Finance to use electronic invoice formats for Costa Rica.
 author: Cpicon85
 ms.author: v-cpicon
-ms.topic: article
+ms.topic: get-started
 ms.date: 02/10/2025 
 ms.custom: bap-template
 ms.reviewer: johnmichalak

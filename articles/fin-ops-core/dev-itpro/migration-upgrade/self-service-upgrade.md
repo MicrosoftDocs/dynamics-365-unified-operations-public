@@ -3,7 +3,7 @@ title: Self-service upgrade to the latest version
 description: Learn about the process for moving to the latest update of finance and operations, including understanding which version to select for upgrade.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 08/09/2024
 ms.custom:
 ms.reviewer: johnmichalak 

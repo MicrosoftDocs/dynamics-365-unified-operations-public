@@ -3,7 +3,7 @@ title: View dispatch teams
 description: Learn how to view dispatch teams, including a step-by-step process for grouping dispatch boards by dispatch teams and additional resources.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac

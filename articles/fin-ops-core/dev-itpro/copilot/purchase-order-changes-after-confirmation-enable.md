@@ -1,10 +1,11 @@
 ---
 title: Enable Copilot support for managing changes to confirmed purchase orders
 description: Learn how to enable Copilot support for the Confirmed purchase orders with changes workspace, where you can review and accept changes to confirmed purchase orders.
-author: cabeln
-ms.author: cabeln
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
-ms.date: 02/13/2025
+ms.date: 09/11/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.collection:

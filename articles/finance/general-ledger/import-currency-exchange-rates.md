@@ -4,7 +4,7 @@ description: Learn about the requirements for importing foreign exchange referen
 author: RyanCCarlson2 
 ms.author: rcarlson
 ms.topic: article
-ms.date: 2/12/2025
+ms.date: 4/10/2025
 ms.reviewer: twheeloc
 audience: Application User 
 ms.search.region: Global
@@ -44,23 +44,29 @@ OANDA provider options require that you fill in the API key values that you rece
 
 Central Bank of the Republic of Türkiye (CBRT) announces indicative exchange rates at 3:30 PM on working days. Those rates are then applicable on the following working day. Therefore, exchange rates should be imported from CBRT daily. No exchange rate information is provided on weekends or official holidays.
 
-The configuration enables exchange rates to be imported for five different exchange rate types that CBRT provides:
+The configuration enables exchange rates to be imported for four different exchange rate types that CBRT provides:
 
 - Banknote buying
 - Banknote selling
-- Cross rate
 - Forex buying
 - Forex selling
+
+Cross rates can be imported with currency exchange rates if the value of the **Cross rate** key of the CBRT provider is **Yes**. 
+The cross rates will have the same exchange rate type selected on the **Import currency exchange rates** dialog page.
+
+>[!NOTE]
+>If cross rates aren't imported, an error message is generated during ledger posting. To ensure that cross rates are correctly imported, the value of the **Cross rate** key is set to **Yes** by default in the configuration of the CBRT provider.
 
 | **Key** | **Value** |
 | ------ | -------------------------------------------------------------------------------|                        
 | **Banknote buying** | Specify the exchange rate type for *Banknote buying*. |
 | **Banknote selling** | Specify the exchange rate type for *Banknote selling*. |
-| **Cross rate** | Specify the exchange rate type for *Cross rate*. |
+| **Cross rate** | If the parameter is set to **Yes**, cross rates are imported in addition to currency exchange rates.|
 | **Decimal places** | Specify the number of digits in the exchange rate. The default value is *4*. |
 | **Forex buying** | Specify the exchange rate type for *Forex buying*. |
 | **Forex selling** | Specify the exchange rate type for *Forex selling*. |
 | **ServiceOnDateUrl** | Specify the URL information to be used to download exchange rates from CBRT. |
+
 
 ## Import currency exchange rates
 You can import exchange rates from the exchange rate providers source and add them to the **Currency exchange rates** page. Use the **Import currency exchange rates** page to import the exchange rates. The following table provides descriptions of the fields that are required to successfully complete the import process.

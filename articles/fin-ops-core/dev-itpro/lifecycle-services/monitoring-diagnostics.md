@@ -3,7 +3,7 @@ title: Monitoring and diagnostics tools in Lifecycle Services
 description: Learn about the tools that Microsoft Dynamics Lifecycle Services provides to help you monitor, diagnose, and analyze the health of the environments.
 author: angelmarshall
 ms.author: tsmarsha
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: 
   - bap-template
 ms.date: 07/24/2024

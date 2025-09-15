@@ -4,7 +4,8 @@ description: Learn about features that are either new or changed in the Microsof
 author: twheeloc
 ms.author: twheeloc
 ms.topic: faq
-ms.date: 02/18/2025
+ms.date: 08/25/2025
+ms.update-cycle: 1095-days
 ms.custom:   
   - bap-template
   - evergreen
@@ -48,10 +49,11 @@ This section contains a table that lists the enhancements that are included in t
 |---|---|---|---|
 | Accounts receivable | (Japan) Default value for the sales tax adjustment transaction posted in the consolidated invoice process | When this feature is enabled, a default value is set for the method of payment, terms of payment, and due date on the sales tax adjustment transaction during posting for the consolidated invoice process in Accounts payable and Account receivable. Learn more in [Tax adjustment on consolidated invoices](../localizations/japan/apac-jpn-consolidate-invoices.md#tax-adjustment-on-consolidated-invoice). | Feature management |
 | Accounts receivable | Removal of duplicate and overlapping indexes | Removal of duplicate and overlapping indexes reduces a spacing issue in the database and therefore increases efficiency. | Default |
-| Accounts receivable | Financial dimension posting error on sales orders | This feature ensures that the financial dimensions for automatic transactions inherit the financial dimensions from the sales order. Therefore, it fixes an issue that is caused by missing financial dimensions during posting to the rounding difference account from a sales order. | Feature management |
+| Accounts receivable | Copy financial dimensions from sales order header to penny difference voucher transaction | This feature ensures that the financial dimensions for automatic transactions inherit the financial dimensions from the sales order. Therefore, it fixes an issue that is caused by missing financial dimensions during posting to the rounding difference account from a sales order. | Feature management |
 | Accounts receivable | Improve the performance of settlement and selection of invoices for matching | A performance improvement addresses the delay in enabling **Post** during the settlement and selection of invoices for matching. | Default |
 | Cash and bank management | Modern bank reconciliation | When the **Modern bank reconciliation** feature is enabled, customers can define offset financial dimensions when generating a general voucher and payment journal during bank reconciliation process. | Feature management |
-| Cash and bank management | Partial netting | The **Allow partial netting** parameter lowers the netting amount when there's only one customer invoice and one vendor invoice marked. | Parameters |
+| Cash and bank management | Partial netting | The **Allow partial netting** parameter lowers the netting amount when there's only one customer invoice and one vendor invoice marked. | Parameter |
+|Credit and collections  |Credit management|  Credit management functionality was moved to a parameter in **Accounts receivables** parameters, **Credit management** tab. The feature was previously in Feature management and was on by default. It can be set to **No** in Accounts receivables parameters if the Credit management functionality isn't used.| Parameter|
 | General Ledger | Enable financial tags for Accounting source explorer | This feature extends the financial tags feature and enables tags in Accounting source explorer. | Feature management |
 | General Ledger | Navigate to the original document from Documents pending accounting | This change allows navigation back to the original document that's found on the **Documents pending accounting** page. | Default |
 | General Ledger | Default dimension sharing enabled for master company sharing  | This change allows default dimension data to be included in the master company sharing functionality. This is enabled for dimensions that are defined as global values. | Default |

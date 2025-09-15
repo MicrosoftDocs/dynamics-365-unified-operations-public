@@ -3,11 +3,12 @@ title: Cost calculation level
 description: Learn about the bill of materials (BOM) level that is named Cost calculation level. This BOM level excludes production and batch orders from its calculations.
 author: prasungoel
 ms.author: prasungoel
-ms.topic: article
-ms.date: 08/05/2022
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 03/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Cost calculation level
@@ -15,10 +16,6 @@ ms.search.form:
 [!include [banner](../includes/banner.md)]
 
 The bill of materials (BOM) level that is named **Cost calculation level** excludes production orders and batch orders from its calculations. The system uses this level when it runs cost calculations in costing versions. In processes such as recalculation and inventory close, the system uses the **Costing level** BOM level instead.
-
-## Turn the Cost calculation level feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Cost calculation level* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Example scenario
 
@@ -53,6 +50,5 @@ A production order for product C is then created, and product A is added to the 
     - **Product C:** 2
 
 This behavior ensures that changes to production order BOMs don't affect subsequent cost calculations.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

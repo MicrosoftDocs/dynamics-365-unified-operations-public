@@ -3,7 +3,7 @@ title: Table map extension
 description: To extend table maps, we have refactored table maps into a model, which allows you to extend a solution with additional fields and methods.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/20/2017
 ms.reviewer: johnmichalak
 audience: Developer

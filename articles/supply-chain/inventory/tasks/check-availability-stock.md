@@ -1,14 +1,14 @@
---- 
+---
 title: Check the availability of stock
 description: Learn how to check on-hand and physical on-hand inventory for a specific item number, including a step-by-step process for checking on-hand inventory items.
-author: Weijiesa
-ms.author: weijiesa
-ms.topic: how-to
-ms.date: 04/19/2024
-ms.custom: 
-  - bap-template
+author: banluo-ms
+ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: InventOnHandItemListPage, SysQueryForm, InventDimParmFixed, InventSupply, DefaultDashboard, WHSInventPhysicalOnhand, WHSOnHand, InventOnhandItem
+ms.topic: how-to
+ms.date: 08/29/2025
+ms.custom:
+  - bap-template
 ---
 
 # Check the availability of stock
@@ -25,21 +25,21 @@ If you're using USMF [demo data](../../../fin-ops-core/dev-itpro/get-started/dem
 1. On the **Filters** pane, enter search criteria to find the products and/or locations that you want to look up. For example, if you're using the USMF demo data company, you could set **Item number** to *M9201*.
 1. On the **Filters** pane, select **Apply**.
 1. On-hand inventory is displayed for your selected criteria.
-    - If you'd like to change the set of columns shown in the list, select **Dimensions** on the Action Pane.
+    - If you want to change the set of columns shown in the list, select **Dimensions** on the Action Pane.
     - To see more information about a listed item, select the item and then choose the type of information you're looking for on the Action Pane.
 
 ## Check physical on-hand inventory
 
 1. Go to **Warehouse management** \> **Inquiries and reports** \> **Physical on-hand inventory**.
 1. In the **Item number** field, specify the item you're looking for. You can also use the **Site** and **Warehouse** fields to filter the list of items.
-1. Select the **Refresh** button at the right side of the Action Pane.
-1. Physical on-hand inventory is displayed. If you'd like to change the set of columns shown in the list, select  **Display Dimensions** on the Action Pane.
+1. Select **Refresh** at the right side of the Action Pane.
+1. Physical on-hand inventory is displayed. If you want to change the set of columns shown in the list, select  **Display Dimensions** on the Action Pane.
 
 ## Check on-hand inventory by location
 
 1. Go to **Warehouse management** \> **Inquiries and reports** \> **On-hand by location**.
-1. Use the fields at the top of the page to define the site, warehouse, and/or location you want to look up. For example, if you're using the USMF demo data company, you could set **Warehouse** to *51*.
-1. Select the **Refresh** button at the right side of the Action Pane.
+1. Use the fields at the top of the page to define the site, warehouse, and location you want to look up. For example, if you're using the USMF demo data company, you could set **Warehouse** to *51*.
+1. Select **Refresh** at the right side of the Action Pane.
 1. Select a row in the **Locations** section to see the on-hand inventory for that location in the **On hand** section. To learn more about an item listed in the **On hand** section, select the item and then choose the type of information you're looking for from the **On hand** section toolbar.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

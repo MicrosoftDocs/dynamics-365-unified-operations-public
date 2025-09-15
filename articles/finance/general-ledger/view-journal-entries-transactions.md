@@ -4,7 +4,8 @@ description: Learn about the various ways that you can view journal entries and 
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 03/24/2024
+ms.date: 09/03/2025
+ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
 audience: Application User
@@ -41,6 +42,9 @@ In addition to the financial reports, you can use the following ledger reports t
 -   **Posted transactions by journal** – This report shows the transactions that have been posted to a journal, grouped by voucher.
 -   **Transaction list by date** – This report shows all the transactions by date, together with the journal number, voucher, and ledger account. It also shows the transactions in the transaction, accounting, and reporting currencies.
 -   **Transaction origin** – This transaction report shows the account by journal, and by transaction, accounting, and reporting currency. It also shows each line of the journal that was used as an offset.
+
+> [!NOTE]
+> To use the hyperlinks to drill back to the vouchers/journals on the above reports, enable the **Enable drill through links on Report PDF viewer control** and **Report Drill through links** features in the Feature management workspace.
 
 
 ## Additional resources

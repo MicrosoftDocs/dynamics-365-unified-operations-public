@@ -1,10 +1,11 @@
 ---
 title: Year-end close validation
 description: Learn how to validate the general ledger year-end close process.
-author: MOAAMER
-ms.author: moaamer 
+author: JodiChristiansen 
+ms.author: jchrist 
 ms.topic: article
-ms.date: 09/25/2024
+ms.date: 07/25/2025
+ms.update-cycle: 1095-days
 ms.custom: evergreen 
 ms.reviewer: twheeloc
 audience: Application User
@@ -23,10 +24,10 @@ This article explains how to validate the general ledger year-end close process.
 
 The **Year-end close validation** feature helps improve accuracy and performance during the year-end close process. Here are some of the issues that it detects:
 
-- Degenerate dimensions that can slow performance if more than one million unique ledger combinations are identified
+- Highly variable dimensions that can slow performance if more than one million unique ledger combinations are identified
 - Out-of-balance entries that are caused by settled ledger transactions
 - Overflow amounts that exceed 16 digits
-- Unrounded amounts that exceed two decimal places
+- Additional checks for partial ledger settlements were added in Microsoft Dynamics 365 Finance version 10.0.45
 
 For each issue, the feature provides guidance that can help optimize performance. It might also recommend that you enable specific features or run a consistency check to fix errors.
 
@@ -34,11 +35,11 @@ To run year-end close validation, go to **General ledger** /> **Period close** /
 
 ## Validate year-end close errors
 
-### Degenerate dimensions
+### Highly variable dimensions
 
-If the year-end close validation logic detects any degenerate dimensions that affect the close process, the following message is shown:
+If the year-end close validation logic detects any highly variable dimensions that affect the close process, the following message is shown:
 
-> Over one million unique ledger dimension combinations have been identified and could affect year-end close performance. Refer to official documentation for guidance. To prevent performance issues, avoid using **Close all** for degenerate dimensions. Select **Close single**.
+> Over one million unique ledger dimension combinations have been identified and could affect year-end close performance. Refer to official documentation for guidance. To prevent performance issues, avoid using **Close all** for highly variable dimensions. Select **Close single**.
 
 ### Out-of-balance entries
 
@@ -52,10 +53,5 @@ If the year-end close validation logic detects any transactions that have overfl
 
 > Transactions have overflow amounts with 16 digits or more including decimal places, which may cause an out-of-balance error during the year-end close process. To address this, enable Optimize year-end close and reverse the original documents causing overflows, or manually adjust the balances.
 
-### Transactions that have unrounded amounts
-
-If the year-end close validation logic detects any transactions that have unrounded amounts, the following error message is shown:
-
-> %1 transactions have unrounded amounts, exceeding two decimal places, which may cause an out-of-balance error during the year-end close process. To resolve this, enable the Optimize year-end close feature, or run a consistency check and use the 'Fix error' option.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: Configure parallel branches in a workflow
 description: Learn about how to configure parallel branches in a workflow, including outlines on naming branches and configuring elements of a branch.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: twheeloc 
 audience: Application User

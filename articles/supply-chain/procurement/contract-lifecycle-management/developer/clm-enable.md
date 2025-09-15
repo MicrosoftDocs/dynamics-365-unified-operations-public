@@ -1,5 +1,5 @@
 ---
-title: Enable and configure CLM integration (preview)
+title: Enable and configure CLM integration
 description: Learn how to configure the integration of Microsoft Dynamics 365 Supply Chain Management and third-party contract lifecycle management (CLM) providers.
 author: ShriramSivasankaran
 ms.author: shriramsiv
@@ -11,11 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# Enable and configure CLM integration (preview)
+# Enable and configure CLM integration
 
 [!include [banner](../../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
 
 This article describes the configuration steps that must be completed to integrate Microsoft Dynamics 365 Supply Chain Management and third-party contract lifecycle management (CLM) providers. The configuration must be done in both Supply Chain Management and your CLM system before you can start to use the integration.
 

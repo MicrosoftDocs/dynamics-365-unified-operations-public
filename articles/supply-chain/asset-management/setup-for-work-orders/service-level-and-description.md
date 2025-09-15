@@ -3,7 +3,7 @@ title: Service level and description
 description: Learn about service level and description in Asset Management, including a step-by-step process for creating a service level.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/13/2019
 ms.custom: 
 ms.reviewer: kamaybac

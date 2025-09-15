@@ -3,7 +3,7 @@ title: Export to Data Lake in finance and operations apps
 description: Learn how to choose data in a finance and operations apps environment so that the data is available in a data lake.
 author: MilindaV2
 ms.author: milindav
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/27/2023
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

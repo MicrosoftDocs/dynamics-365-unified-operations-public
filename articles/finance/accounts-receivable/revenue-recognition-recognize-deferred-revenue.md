@@ -3,7 +3,7 @@ title: Recognize deferred revenue
 description: Learn about how to recognize revenue by using the Revenue recognition feature, including an overview on viewing schedule details. 
 author: twheeloc
 ms.author: twheeloc
-ms.topic: conceptual
+ms.topic: article
 ms.date: 08/16/2023
 ms.custom:
 ms.reviewer: twheeloc 

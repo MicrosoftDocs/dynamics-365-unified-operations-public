@@ -1,5 +1,5 @@
 ---
-title: Price attributes overview (preview)
+title: Price attributes overview
 description: Learn about the concept of price attributes, including an outline on price attribute sources and a table providing information about price attributes.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,11 +10,9 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Price attributes overview (preview)
+# Price attributes overview
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.34 GA -->
 
 One of the key functions of a price manager is to work together with the product manager to accomplish the following tasks:
 
@@ -34,7 +32,7 @@ You define these pricing rules by using combinations of price attributes to defi
 
 ## Price attribute sources
 
-Microsoft Dynamics 365 Supply Chain Management can maintain prices based on price groups, discount groups, product categories, product variants, storage dimensions, and tracking dimensions. These pricing factors are fixed, and can't be extended or changed to accommodate additional pricing criteria. Examples of possible product-based pricing variables include product types, brands, flavors, pack types, and pack sizes.
+Microsoft Dynamics 365 Commerce and Dynamics 365 Supply Chain Management can maintain prices based on price groups, discount groups, product categories, product variants, storage dimensions, and tracking dimensions. These pricing factors are fixed, and can't be extended or changed to accommodate additional pricing criteria. Examples of possible product-based pricing variables include product types, brands, flavors, pack types, and pack sizes.
 
 Customer groups don't always provide enough control over the setup of customer-based pricing. Therefore, customer-based pricing variables can also include customer area, payment method, payment terms, and loyalty program membership.
 

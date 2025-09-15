@@ -3,9 +3,9 @@
 
 title: API-based payroll integration with Ceridian Dayforce
 description: This article describes the API-based payroll integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce.
-author: TulsiJhaveri 
-ms.author: tulsijhaveri
-ms.date: 09/15/2023
+author: twheeloc 
+ms.author: twheeloc
+ms.date: 09/03/2025
 ms.topic: how-to
 ms.custom: 
 
@@ -46,7 +46,7 @@ For more information, see [Configure Human resources parameters](hr-setup-parame
 Before you can use the API, the virtual tables must be generated. For more information, see [Virtual tables for Human Resources in Dataverse](hr-admin-integration-payroll-api-introduction.md#virtual-tables-for-human-resources-in-dataverse).
 
 >[!NOTE]
->For the payroll integration to work for customers using the mshr entities, the row version change tracking must be disabled. To disable row version change tracking, reach out to Microsoft support to enable the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight. Enabling this flight will disable row version change tracking.
+>For the payroll integration to work for customers using the mshr entities, the row version change tracking must be disabled. To disable row version change tracking, reach out to Microsoft support to enable the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight. Enabling this flight disables row version change tracking.
 
 
 ## Enable features
@@ -68,8 +68,7 @@ You must enable features in Feature management to enable Microsoft APIs to be ex
 
 Human Resources is a virtual data source in Dataverse. It provides full create, read, update, and delete (CRUD) operations from Dataverse and Microsoft Power Platform. For more information about Dataverse virtual tables, see [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md).
 
-For more information about how to install virtual tables, see [Install the Dynamics 365 HR Virtual Table app](hr-admin-integration-common-data-service-virtual-entities.md#install-the-dynamics-365-hr-virtual-table-app) and 
-[Generate virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#generate-virtual-tables).
+For more information about how to install virtual tables, see [Install the Dynamics 365 HR Virtual Table app](hr-admin-integration-common-data-service-virtual-entities.md#install-the-dynamics-365-hr-virtual-table-app) and [Generate virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#generate-virtual-tables).
 
 After the virtual tables are installed, generate the virtual tables for the data to pass to Dayforce. The Dayforce people connector pulls data from the following tables at **Dataverse integration** \> **Virtual tables** to ensure that Dayforce can process payroll. For more information, see [Enable Microsoft Dataverse virtual entities](../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 
@@ -149,7 +148,7 @@ Turn on **Track changes** as appropriate, for the following:
 | HcmEmploymentEmployeeEntity | All tables |
 | HcmEmploymentEntity | All tables |
 | HcmEmploymentTypeEntity | All tables |
-| HcmEmploymentV2Entity | Al ltables |
+| HcmEmploymentV2Entity | All ltables |
 | HcmIdentificationTypeEntity | All tables |
 | HcmJobBaseEntity | All tables |
 | HcmJobCompensationEntity | All tables |
@@ -179,7 +178,7 @@ Turn on **Track changes** as appropriate, for the following:
 | HcmWorkerBaseEntity | Custom |
 | HcmWorkerEntity | Custom |
 | HcmWorkerPayrollInfoEntity | All tables |
-| PayrollBankAccountDisbursementEntity | Primar ytable |
+| PayrollBankAccountDisbursementEntity | Primary table |
 | PayrollEmployeeEntity | Primary table |
 | PayrollFixedCompensationPlanEntity | All tables |
 | PayrollPositionDetailsEntity | All tables |
@@ -191,53 +190,55 @@ Turn on Tracking Changes, as appropriate, for the following:
 
 | **Target**** Entity **|** Change ****Tracking** |
 | --- | --- |
-| DirPersonNameHistoricalEntity | Alltables |
-| HcmCompFixedEmplEntity | Alltables |
-| HcmCompFixedPlanTableEntity | Alltables |
-| HcmCompVarPlanTableEntity | Alltables |
-| HcmEmployeeEntity | Alltables |
-| HcmEmployeeV2Entity | Alltables |
-| HcmEmploymentDetailEntity | Alltables |
-| HcmEmploymentEmployeeEntity | Alltables |
-| HcmEmploymentEntity | Alltables |
-| HcmEmploymentTypeEntity | Alltables |
-| HcmEmploymentV2Entity | Alltables |
-| HcmIdentificationTypeEntity | Alltables |
-| HcmJobBaseEntity | Alltables |
-| HcmJobCompensationEntity | Alltables |
-| HcmJobDetailEntity | Alltables |
-| HcmJobEntity | Primarytable |
-| HcmJobFamilyEntity | Alltables |
-| HcmJobFunctionEntity | Alltables |
-| HcmJobTaskEntity | Alltables |
-| HcmJobTypeEntity | Alltables |
-| HcmLaborUnionEntity | Alltables |
-| HcmPersonDetailsEntity | Alltables |
-| HcmPersonIdentificationNumberEntity | Alltables |
-| HcmPositionBaseEntity | Alltables |
-| HcmPositionDefaultDimensionEntity | Alltables |
-| HcmPositionDetailEntity | Alltables |
-| HcmPositionEntity | Primarytable |
-| HcmPositionHierarchyEntity | Alltables |
-| HcmPositionHierarchyTypeEntity | Alltables |
-| HcmPositionTypeEntity | Alltables |
-| hcmPositionUnionAgreementEntity | Alltables |
-| HcmPositionV2Entity | Alltables |
-| HcmPositionWorkerAssignmentEntity | Primarytable |
-| HcmPositionWorkerAssignmentV2Entity | Primarytable |
-| HcmUnionsEntity | Alltables |
-| HcmVariableCompensationTypeEntity | Alltables |
-| HcmWorkerBankAccountEntity | Alltables |
+| DirPersonNameHistoricalEntity | All tables |
+| HcmCompFixedEmplEntity | All tables |
+| HcmCompFixedPlanTableEntity | All tables |
+| HcmCompVarPlanTableEntity | All tables |
+| HcmEmployeeEntity | All tables |
+| HcmEmployeeV2Entity | All tables |
+| HcmEmploymentDetailEntity | All tables |
+| HcmEmploymentEmployeeEntity | All tables |
+| HcmEmploymentEntity | All tables |
+| HcmEmploymentTypeEntity | All tables |
+| HcmEmploymentV2Entity | All tables |
+| HcmIdentificationTypeEntity | All tables |
+| HcmJobBaseEntity | All tables |
+| HcmJobCompensationEntity | All tables |
+| HcmJobDetailEntity | All tables |
+| HcmJobEntity | Primary table |
+| HcmJobFamilyEntity | All tables |
+| HcmJobFunctionEntity | All tables |
+| HcmJobTaskEntity | All tables |
+| HcmJobTypeEntity | All tables |
+| HcmLaborUnionEntity | All tables |
+| HcmPersonDetailsEntity | All tables |
+| HcmPersonIdentificationNumberEntity | All tables |
+| HcmPositionBaseEntity | All tables |
+| HcmPositionDefaultDimensionEntity | All tables |
+| HcmPositionDetailEntity | All tables |
+| HcmPositionEntity | Primary table |
+| HcmPositionHierarchyEntity | All tables |
+| HcmPositionHierarchyTypeEntity | All tables |
+| HcmPositionTypeEntity | All tables |
+| hcmPositionUnionAgreementEntity | All tables |
+| HcmPositionV2Entity | All tables |
+| HcmPositionWorkerAssignmentEntity | Primary table |
+| HcmPositionWorkerAssignmentV2Entity | Primary table |
+| HcmUnionsEntity | All tables |
+| HcmVariableCompensationTypeEntity | All tables |
+| HcmWorkerBankAccountEntity | All tables |
 | HcmWorkerBaseEntity | Custom |
 | HcmWorkerEntity | Custom |
-| HcmWorkerPayrollInfoEntity | Alltables |
-| PayrollBankAccountDisbursementEntity | Primarytable |
-| PayrollEmployeeEntity | Primarytable |
-| PayrollFixedCompensationPlanEntity | Alltables |
-| PayrollPositionDetailsEntity | Alltables |
-| PayrollPositionEntity | Alltables |
-| PayrollPositionJobEntity | Alltables |
-| PayrollWorkerAddressCurrentEntity | Alltables |
+| HcmWorkerPayrollInfoEntity | All tables |
+| PayrollBankAccountDisbursementEntity | Primary table |
+| PayrollEmployeeEntity | Primary table |
+| PayrollFixedCompensationPlanEntity | All tables |
+| PayrollPositionDetailsEntity | All tables |
+| PayrollPositionEntity | All tables |
+| PayrollPositionJobEntity | All tables |
+| PayrollWorkerAddressCurrentEntity | All tables |
+
+
 ## Add a Dayforce Connector user in the Human Resources environment
 
 1. Go to **System administration** \> **Manager user**, and select **New user**.

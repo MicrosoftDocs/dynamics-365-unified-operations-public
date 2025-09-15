@@ -1,9 +1,9 @@
 ---
 title: Planning Optimization fit analysis
 description: Learn how to verify your current setup and data against the capabilities of the Planning Optimization functionality, including a step-by-step process.
-author: t-benebo
-ms.author: benebotg
-ms.topic: conceptual
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 01/30/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
@@ -58,15 +58,15 @@ The following table shows the various results that can be shown after a fit anal
 | Freeze time fence | Item coverage records with freeze time fence set: *\#* | This feature is pending. Currently, the freeze time fence setup is ignored when Planning Optimization is enabled, regardless of this setting. | Supported |
 | Freeze time fence | Master plans with freeze time fence set: *\#* | This feature is now supported. To use it, enable the *Freezing time fence for Planning optimization* feature in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.| Supported |
 | Intercompany | Master plans including planned downstream demand: *\#* | This feature is now supported. Learn more in [Intercompany planning](Intercompany-planning.md) | Supported |
-| Kanban | Item coverage records with planned order type kanban: *\#* | This feature is pending. Currently, item coverage that is set to kanban will be ignored when Planning Optimization is enabled. The kanban planned order type will create a warning during master planning, and planned purchase orders will be created to cover the related demand. | 2024 |
-| Kanban | Items with default order type kanban: *\#* | Currently, a default order type that is set to kanban will be ignored when Planning Optimization is enabled. The kanban default order type will create a warning during master planning, and planned purchase orders will be created to cover the related demand. | 2024 |
+| Kanban | Item coverage records with planned order type kanban: *\#* | This feature is pending. Currently, item coverage that is set to kanban will be ignored when Planning Optimization is enabled. The kanban planned order type will create a warning during master planning, and planned purchase orders will be created to cover the related demand. | 2025 |
+| Kanban | Items with default order type kanban: *\#* | Currently, a default order type that is set to kanban will be ignored when Planning Optimization is enabled. The kanban default order type will create a warning during master planning, and planned purchase orders will be created to cover the related demand. | 2025 |
 | Product lifecycle state | Product lifecycle states not active for planning: *\#* | This feature is now supported. Learn more in [Exclude products that have specific product lifecycle states](product-lifecycle-state.md) | Supported |
 | Production | BOM lines with rounding or multiple setup: *\#* | This feature is supported as of June 1, 2023. No feature management is required. | Supported|
 | Production | BOM/formula lines with formula measurement: *\#* | This feature is supported in version 10.0.33 and higher. To use it, turn on the *Process manufacturing support for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36). | Supported |
 | Production | BOM/formula lines with item substitution (plan groups): *\#* | This feature is now supported. To use it, enable the *Item substitution (Plan group) support for Planning Optimization* and/or *Item substitution for bill of materials in Planning optimization* features in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, *Item substitution (Plan group) support for Planning Optimization* is turned on by default.| Supported |
 | Production | BOM/formula lines with negative quantity: *\#* | This feature is supported as of June 1, 2023. No feature management is required. | Supported |
 | Production | BOM/formula lines with resource consumption: *\#* | This feature is now supported. | Supported|
-| Production | BOM/formula lines with step consumption: *\#* | This feature is pending. Currently, step consumption is ignored on BOM and formula lines when Planning Optimization is enabled. | Future wave |
+| Production | BOM/formula lines with step consumption: *\#* | This feature is pending. Currently, step consumption is ignored on BOM and formula lines when Planning Optimization is enabled. | Supported |
 | Production | BOMs with constant scrap or variable scrap defined: *\#* | This feature is now supported. | Supported |
 | Production | BOMs with subcontracting: *\#* | This feature is now supported. | Supported |
 | Production | BOMs without a site: *\#* | This feature is now supported. Learn more in [Production planning](production-planning.md) | Supported |

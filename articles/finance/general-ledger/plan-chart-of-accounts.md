@@ -4,7 +4,8 @@ description: Learn how to plan the chart of accounts for your organization, whic
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 03/02/2024
+ms.date: 05/20/2025
+ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
 audience: Application User

@@ -3,11 +3,12 @@ title: Purchase order overview
 description: Learn about purchase orders (POs) and links to other articles that are related to the various stages that a PO goes through.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: overview
-ms.date: 05/02/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+  - bap-template
 ---
 
 # Purchase order overview

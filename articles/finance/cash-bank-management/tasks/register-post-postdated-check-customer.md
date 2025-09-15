@@ -4,7 +4,7 @@ description: Learn how you can register details of a postdated check received fr
 author: kweekley
 ms.author: kweekley
 ms.topic: how-to
-ms.date: 11/15/2022
+ms.date: 08/25/2025
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User 
@@ -24,7 +24,7 @@ You can register details of a postdated check received from a customer. You can 
   
  The role for this procedure is Treasurer. This procedure uses the USMF demo company.
 
-1. Go to **Accounts receivable > Payments > Payment journal**.
+1. Go to **Accounts receivable > Payments > Customer payment journal**.
 2. Click **New**.
 3. In the **Name** field, type a value.
 4. Click **Lines**.

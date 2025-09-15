@@ -3,7 +3,7 @@ title: Specify how to dispose of returned items
 description: Learn how to specify how to dispose of returned items, including a table that defines and provides common codes for various disposition types.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/07/2018
 ms.custom: 
 ms.reviewer: kamaybac

@@ -3,7 +3,7 @@ title: Support parameterized calls of ER data models
 description: Learn about how to implement parameterized calls of Electronic reporting (ER) data models, including how to adjust various models.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/14/2022
 ms.custom: 
 ms.reviewer: johnmichalak

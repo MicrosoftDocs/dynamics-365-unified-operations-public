@@ -1,17 +1,16 @@
 --- 
 title: Semansys XBRL integration
-description: Learn about using Dutch functionality to export financial data in the XML format, including a step-by-step process for exporting data for annual reports. 
+description: Learn how to use Dutch functionality to export financial data in the XML format in Microsoft Dynamics 365 Finance.
 author: mrolecki
 ms.author: mrolecki
 ms.topic: how-to
-ms.date: 05/28/2020
-ms.custom:
+ms.date: 06/05/2025
 ms.reviewer: johnmichalak   
-audience: Application User  
 ms.search.region: Netherlands
 ms.search.validFrom: 2016-06-30
 ms.search.form: Dialog 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.custom: 
+  - bap-template
 ---
 
 # Deliver XBRL to the Dutch Regulatory body via Semansys XBRLOne
@@ -30,13 +29,15 @@ The following prerequisites are needed for this process:
 
 For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-The following example shows the steps needed for a user to export the data for reporting a 2019 annual report. 
+The following procedure shows the steps needed for a user to export the data for reporting a 2019 annual report. 
 
-1. Go to **General ledger** > **Periodic tasks** > **Export financial data to XBRL**.
-2. In the **From date** field, enter a date. For example, *2019-01-01*.  
-3. In the **To date** field, enter a date. For example, *2019-12-31*.
-4. In the **Format mapping** field, enter the correct formats.
-5. Select **OK**.
+To export the data for reporting a 2019 annual report, follow these steps.
+
+1. In Dynamics 365 Finance, go to **General ledger** > **Periodic tasks** > **Export financial data to XBRL**.
+1. In the **From date** field, enter a date. For example, *2019-01-01*.  
+1. In the **To date** field, enter a date. For example, *2019-12-31*.
+1. In the **Format mapping** field, enter the correct formats.
+1. Select **OK**.
 
 You can now take the Semansys DataBridge format package to the XBRLOne portal for next steps in the process.
 

@@ -3,11 +3,12 @@ title: Product receipt against purchase orders
 description: Learn about the various options for registering products as received, including an outline on preregistration and registration.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: conceptual
-ms.date: 05/02/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, VendPackingSlipJournal
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+  - bap-template
 ---
 
 # Product receipt against purchase orders
@@ -16,7 +17,7 @@ ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, Vend
 
 This article describes the various options for registering products as received.
 
-Product receipt is the process of recording that products that were ordered have been received, so that the purchase order (PO) lines can then be processed for invoicing. In some cases, products go through preregistration, where additional information from the supplier is recorded before the products are received. When products arrive, they're first marked as **Registered**. The products might then go through other processes, such as quality management, before they're finally marked as **Received**.
+Product receipt is the process of recording that products that were ordered were received so that the purchase order (PO) lines can be processed for invoicing. In some cases, products go through preregistration, where additional information from the supplier is recorded before the products are received. When products arrive, they're first marked as **Registered**. The products might then go through other processes, such as quality management, before they're finally marked as **Received**.
 
 ## Preregistration (ASN)
 
@@ -43,6 +44,38 @@ POs might be created from a sales order where the **Direct delivery** option was
 After the product receipt has been processed on the PO, the PO status is set to *Received* to indicate that the invoice can be processed for the order. You can review details about products that have already been received by using the **Product receipt journals** page.  
 
 You can access this page from the **Receipt** action group on the **Purchase order** page. The information in the journals includes details about the quantities, dates, and dimensions.
+
+## Auto posting product receipts
+
+To automatically post product receipts for multiple purchase orders, follow these steps.
+
+1. Go to **Procurement and sourcing** \> **Purchase orders** \> **Receiving products** \> **Post Product receipt**.
+1. In the **Posting product receipt** dialog, on the **Settings** FastTab toolbar, select **Select**.
+1. In the **Purchase update** dialog, use the **Range** tab to specify selection criteria for finding the purchase orders you want to post.
+1. Select **OK** to return to the **Posting product receipt** dialog. The purchase orders that match the criteria you specified are displayed on the **Overview** FastTab.
+1. On the **Overview** FastTab, enter the product receipt identifier in the **Product receipt** column for each purchase order in the grid. This information enables the system to post the product receipt.
+
+    A product receipt identifier must be specified when each product is received. It's typically a reference to the packing slip from the supplier. This identifier is required for accounting because it enables supplier packing slips to be checked against what was received and against the accounted inventory or expense.
+
+1. Select **Batch** to open the **Batch processing** dialog, where you can set up the [batch job](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) that will do the posting.
+
+1. Select **OK** to return to the **Posting product receipt** dialog.
+1. Select **OK** to close the **Posting product receipt** dialog.
+
+After the system finishes processing product receipts for all lines in the purchase order, it sets the purchase order status to *Received* to indicate that the invoice can now be processed for the order.
+
+To correct or cancel a product receipt, follow these steps.
+
+1. Go to **Procurement and sourcing** \> **Purchase orders** \> **Receiving Products** \> **Product receipt**. The **Product receipt journal** page opens.
+1. On the **Overview** tab, select the product receipt that you want to correct or cancel.
+1. On the **Overview** tab toolbar, select **Correct** to make corrections or **Cancel** to cancel the product receipt.
+
+> [!NOTE]
+> When correcting a product receipt, you can only reduce the received quantity. To raise the quantity, you must post a new product receipt journal.
+
+## Auto post product receipts when using WMS
+
+Auto posting works differently if you're using warehouse management processes (WMS). Learn more in [Warehouse handling of inbound loads for purchase and inbound shipment orders](../warehousing/inbound-load-handling.md).
 
 ## Related information
 

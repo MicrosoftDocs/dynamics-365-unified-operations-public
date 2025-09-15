@@ -1,8 +1,8 @@
 ---
 title: Set up an item arrival overview profile
 description: Learn about the setup of an arrival overview profile, including a step-by-step process using the USMF demo data company.
-author: Weijiesa
-ms.author: weijiesa
+author: banluo-ms
+ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: WMSArrivalOverviewProfile
 ms.topic: how-to

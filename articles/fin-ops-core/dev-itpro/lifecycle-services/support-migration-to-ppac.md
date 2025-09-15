@@ -3,7 +3,7 @@ title: Migration of the Lifecycle Services Support experience to Power Platform 
 description: Learn about the removal of Microsoft Dynamics Lifecycle Services Support and migration to Power Platform admin center.
 author: dgorn
 ms.author: dgorn
-ms.topic: conceptual 
+ms.topic: article
 ms.date: 02/22/2024
 ms.custom: 
   - bap-template

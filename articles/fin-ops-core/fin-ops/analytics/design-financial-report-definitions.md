@@ -3,7 +3,7 @@ title: Report definitions in financial report designer
 description: Learn about report definitions in financial report designer, including overviews on creating a report definition and contents of a report definition.
 author: aprilolson
 ms.author: aolson
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/22/2022
 ms.reviewer: twheeloc
 audience: Application User

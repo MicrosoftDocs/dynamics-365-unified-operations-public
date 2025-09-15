@@ -5,7 +5,7 @@ title: Understand Date and Time fields
 description: This article explains what to expect when you use Date and Time fields in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/08/2024
-ms.topic: article
+ms.topic: concept-article
 # optional metadata
 
 ms.search.form: HcmPersonnelManagementWorkspace
@@ -68,11 +68,11 @@ When using external sources like DMF to view or author data, keep in mind that t
 
 ## Examples of the same record being displayed in different product areas 
 
-**Human Resources with user time zone set to UTC**
+**User time zone set to UTC**
 
 [![Worker page set to UTC.](./media/worker-form3.png)](./media/worker-form3.png)
 
-**Human Resources with user time zone set to GMT +12:00** 
+**User time zone set to GMT +12:00** 
 
 [![Worker page set to GMT.](./media/worker-form4.png)](./media/worker-form4.png)
 

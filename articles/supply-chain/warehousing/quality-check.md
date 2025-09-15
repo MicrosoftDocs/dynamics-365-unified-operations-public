@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form:  WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 ms.topic: how-to
-ms.date: 01/06/2025
+ms.date: 04/08/2025
 ms.custom: 
   - bap-template
 ---
@@ -29,6 +29,9 @@ When you use this feature, the arrival and quality check occur in the following 
     - If the quality check is failed, the license plate is rejected, and existing putaway work for it is redirected to an alternate location for further inspection. A new quality order is created. To view the quality order that is created from the failed quality check, go to **Inventory management \> Periodic tasks \> Quality management \> Quality orders**.
 
 This process can also be set up so that all scanned license plates are immediately diverted to the quality check location.
+
+> [!NOTE]
+> For license plate, serial number, or any other dimension to be automatically populated on the **Inventory dimensions** tab of a quality order, they must be turned on for the relevant record on the **Item sampling** page **Process** FastTab (**Inventory management** \> **Setup** \> **Quality control** \> **Item sampling**). Learn more in [Quality management item sampling](../inventory/quality-item-sampling.md).
 
 ## Turn the Quality check feature on or off
 

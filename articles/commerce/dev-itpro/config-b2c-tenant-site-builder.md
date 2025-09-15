@@ -9,8 +9,9 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-02-13
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Configure your B2C tenant in Commerce site builder
@@ -27,7 +28,7 @@ To collect the required application information, follow these steps.
 
 1. In the Azure portal, go to **Home \> Microsoft Entra ID B2C - App registrations**.
 1. Select your application, and then in the left navigation pane select **Overview** to obtain the application details.
-1. From the **Application (client) ID** reference, collect the application ID of the B2C application created in your B2C tenant. You will enter this ID later as the **Client GUID** in site builder.
+1. From the **Application (client) ID** reference, collect the application ID of the B2C application created in your B2C tenant. You'll enter this ID later as the **Client GUID** in site builder.
 1. Select **Redirect URIs** and collect the reply URL shown for your site (the reply URL entered at setup).
 1. Go to **Home \> Microsoft Entra B2C – User flows**, and then collect the full names of each user flow policy.
 
@@ -52,7 +53,7 @@ To add your Microsoft Entra B2C tenant application information to Commerce, foll
     - **Tenant Name**: The name of your B2C tenant (for example, use "fabrikam" if the domain appears as "fabrikam.onmicrosoft.com" for the B2C tenant). 
     - **Forget Password Policy ID**: The forget password user flow policy ID, for example "B2C_1_PasswordReset".
     - **Signup Signin Policy ID**: The sign-up and sign-in user flow policy ID, for example "B2C_1_signup_signin".
-    - **Client GUID**: The B2C application ID, for example "22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6".
+    - **Client GUID**: The B2C application ID, for example "00001111-aaaa-2222-bbbb-3333cccc4444".
     - **Edit Profile Policy ID**: The profile editing user flow policy ID, for example "B2C_1A_ProfileEdit".
 
 1. Select **OK**. You should now see the name of your B2C application appear in the list.
@@ -63,8 +64,8 @@ The optional **Login custom domain** field should only be used if you're setting
 ### Associate the B2C application to your site and channel
 
 > [!WARNING]
-> - If your site is already associated with a B2C application, changing to a different B2C application will remove the current references established for users already signed up in this environment. If changed, any credentials associated with the currently-assigned B2C application will not be available to users. 
-> - Only update the B2C application if you're setting up the channel's B2C application for the first time or if you intend to have users sign up again with new credentials to this channel with the new B2C application. Take caution when associating channels to B2C applications, and name applications clearly. If a channel is not associated to a B2C application in the steps below, users signing into that channel for your site will be entered into the B2C application showing as **default** in the **Tenant Settings \> B2C Settings** list of B2C applications.
+> - If your site is already associated with a B2C application, changing to a different B2C application removes the current references established for users already signed up in this environment. If changed, any credentials associated with the currently assigned B2C application won't be available to users. 
+> - Only update the B2C application if you're setting up the channel's B2C application for the first time or if you intend to have users sign up again with new credentials to this channel with the new B2C application. Take caution when associating channels to B2C applications, and name applications clearly. If a channel isn't associated to a B2C application in the following steps, users signing into that channel for your site are entered into the B2C application showing as **default** in the **Tenant Settings \> B2C Settings** list of B2C applications.
 
 To associate the B2C application to your site and channel, follow these steps.
 

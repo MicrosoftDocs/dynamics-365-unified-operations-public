@@ -3,10 +3,12 @@ title: Business documents supported by Global Inventory Accounting
 description: Access a list of the business documents that are supported by Global Inventory Accounting, including a detailed example for purchase order documents.
 author: prasungoel
 ms.author: prasungoel
-ms.topic: article
-ms.date: 06/18/2021
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Business documents supported by Global Inventory Accounting
@@ -22,7 +24,7 @@ There are two types of business documents:
 - **Documents that have a journal** – These documents include product receipt, purchase invoice, packing slip, and sales invoice documents.
 - **Documents that don't have a journal** – These documents include counting, movement, and inventory adjustment documents.
 
-Later in this article, purchase orders will be used as an example to illustrate the process.
+Later in this article, purchase orders are used as an example to illustrate the process.
 
 The following table lists the documents that the current release supports.
 
@@ -40,13 +42,13 @@ The following table lists the documents that the current release supports.
 | Transfer Order     | Receive         |
 
 > [!IMPORTANT]
-> Global Inventory Accounting asynchronously processes the documents that are entered in Supply Chain Management. No error messages will be shown for problematic documents.
+> Global Inventory Accounting asynchronously processes the documents that are entered in Supply Chain Management. No error messages are shown for problematic documents.
 
 ## Example: Purchase order
 
 ### Product receipt
 
-Post product receipts in the usual way. On the **All purchase orders** page, select a purchase order, and then, on the Action Pane, on the **Receive** tab, select **Product receipt** to open the **Product receipt journal** page. An operation event and a Global Invntroy Accounting event are generated for each line. Therefore, select the **Lines** tab, and then select **Inventory \> Events and measurements** to open the **Events and measurements** page.
+Post product receipts in the usual way. On the **All purchase orders** page, select a purchase order, and then, on the Action Pane, on the **Receive** tab, select **Product receipt** to open the **Product receipt journal** page. An operation event and a Global Inventory Accounting event are generated for each line. Therefore, select the **Lines** tab, and then select **Inventory \> Events and measurements** to open the **Events and measurements** page.
 
 Global Inventory Accounting is an accounting system that is based on events and measurements. The measurement line grid on the **Events and measurements** page shows a list of measurements. Each measurement has a list of dimensions.
 

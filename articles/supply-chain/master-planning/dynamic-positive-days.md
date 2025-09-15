@@ -1,8 +1,8 @@
 ---
 title: Dynamic positive days for last-minute orders
 description: Learn about dynamic positive days and explains how to set up and use them, including an outline on setting up your system to use dynamic positive days.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 03/21/2024
 ms.custom: bap-template

@@ -1,13 +1,14 @@
 ---
 title: Inventory marking
 description: Learn about the options that are available for marking inventory in firmed orders, including outlines on marking and pegging.
-author: t-benebo
-ms.author: benebotg
-ms.topic: article
-ms.date: 12/02/2020
-ms.custom: 
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+  - bap-template
 ---
 
 # Inventory marking
@@ -36,7 +37,7 @@ When you firm a planned order, the **Firming** dialog box provides an **Update m
 - *Single level standard* – Single-level marking is used. Single-level marking marks only the main item, not its bill of materials (BOM) components. Therefore, you can keep component assignment for production orders flexible after firming. Single-level marking enables the system to optimize for last-minute demand changes. In *standard* single-level marking, requirement orders are marked against their fulfillment orders, but fulfillment orders aren't marked if they have remaining quantity.
 - *Single level extended* – Single-level marking is used. In *extended* single-level marking, requirement orders are marked against their fulfillment orders, and fulfillment orders are always marked, regardless of whether any quantity remains.
 
-To set the default marking option for your system, go to **Master planning \> Setup \> Master planning parameters**. Then, on the **Standard update** tab, set the **Update marking** field to your preferred option.
+To set the default marking option for your system, go to **Master planning** \> **Setup** \> **Master planning parameters**. Then, on the **Standard update** tab, set the **Update marking** field to your preferred option.
 
 > [!NOTE]
 > The *Single level standard* and *Single level extended* options are available only if the *Make-to-order supply automation* feature is enabled on your system. (As of Supply Chain Management version 10.0.32, *Make-to-order supply automation* is turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off.) For more information about this feature and how to enable it, see [Make-to-order supply automation](../make-to-order-supply-automation.md).

@@ -4,7 +4,7 @@ description: Learn how to enable and configure advanced export management in Mic
 author: sgmsft
 ms.author: shwgarg
 ms.topic: how-to
-ms.date: 02/15/2024
+ms.date: 02/27/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: COOExportControlParameters
@@ -20,7 +20,7 @@ ms.search.form: COOExportControlParameters
 Before you can use advanced export management, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.36 or later.
-- The feature that's named *Advanced export management configuration* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.
+- The feature that's named *Advanced export management configuration* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default. As of version 10.0.45, it's mandatory and can't be turned off.
 - Your Supply Chain Management environment must be [linked to a Dataverse environment](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 
 ## Install the export control app
@@ -30,7 +30,7 @@ Follow these steps to install the export control app.
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Go to **Environments**, and select your environment.
 1. On the page for the selected environment, in the **Resources** section, select **Dynamics 365 apps**.
-1. In the list of apps, select **Dynamics 365 Export Control**.
+1. In the list of apps, select **Dynamics 365 Export Management**.
 1. Follow the on-screen instructions to install the app.
 
 ## Authentication and authorization
@@ -69,7 +69,7 @@ Follow these steps to grant the application permissions in Power Platform admin 
 1. In the **Create a new app user** dialog box, select **Add an app**.
 1. In the **Add an app from Microsoft Entra** dialog box, in the search field, paste the application (client) ID of your new app. (You should have copied this ID when you registered the app in the Azure portal.) Then select your app in the list or results, and select **Add**.
 1. You're returned to the **Create a new app user** dialog box. Select your business unit, and then select **Edit security roles**.
-1. In the **Add security roles** dialog box, in the **Role** list, select *Export control application*. Then select **Save** to apply the role.
+1. In the **Add security roles** dialog box, in the **Role** list, select *Export Management application*. Then select **Save** to apply the role.
 1. Select **Create** to create the new app user.
 
 ## Enable the functionality and configure the application in Supply Chain Management
@@ -83,7 +83,7 @@ Follow these steps to enable the functionality and configure the application in 
     - **Application ID** – Paste the application (client) ID of your new app. (You should have copied this ID when you registered the app in the Azure portal.)
     - **Application secret** – Paste the client secret of your new app. (You should have copied this secret when you registered the app in the Azure portal.)
 
-    As you enter values into these fields, the system checks whether it can use them to connect to Dataverse and whether the required solution is installed there. The three checkboxes under the **Status** heading will automatically update to show a checkmark as each test passes. If one or more tests fail, make sure that the advanced export management solution is successfully installed, and that the specified Microsoft Entra application has the *Export control application* security role in Dataverse. When all three boxes show a check, continue to the next step.
+    As you enter values into these fields, the system checks whether it can use them to connect to Dataverse and whether the required solution is installed there. The three checkboxes under the **Status** heading will automatically update to show a checkmark as each test passes. If one or more tests fail, make sure that the advanced export management solution is successfully installed, and that the specified Microsoft Entra application has the *Export Management application* security role in Dataverse. When all three boxes show a check, continue to the next step.
 
 1. The following settings appear after all of the tests have passed. Set each option as required.
     - **Advanced export management functionality enabled** – Set this option to *Yes* to turn on advanced export management functionality in your system.

@@ -3,8 +3,9 @@ title: Assets and work orders
 description: Learn about assets and work orders in Asset Management, including outlines on asset data, job types, and key data in a work order.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: conceptual
-ms.date: 05/22/2024
+ms.topic: article
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen

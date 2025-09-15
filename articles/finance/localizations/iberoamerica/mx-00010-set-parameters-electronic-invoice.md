@@ -1,68 +1,69 @@
 ---
 title: MX-00010 Set parameters for an electronic invoice
-description: Learn about setting up an electronic invoice and the PAC account to get the approval and the digital stamp with a process on setting up PAC accounts.
+description: Learn how to set up an electronic invoice and a PAC account to get approval and a digital stamp in Microsoft Dynamics 365 Finance.
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/27/2024
+ms.date: 04/10/2025
 ms.reviewer: johnmichalak
 ms.search.region: Mexico
 ms.search.validFrom: 2016-06-30
 ms.search.form: EInvoiceCFDIPACTable_MX, EInvoiceParameters_MX, DigitalCertificateLookup
-ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # MX-00010 Set parameters for an electronic invoice
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through setting up an electronic invoice and the PAC account to get the approval and the digital stamp. This procedure can only be completed for a legal entity with a primary address in Mexico. This procedure was created using the demo data company MXMF. The certificates used to encrypt the XML message must be previously installed and the schema XSD file must be copied in the application as well before to start this procedure.
+This article explains how to set up an electronic invoice and a Proveedor autorizado de certificación (PAC) account to get approval and a digital stamp in Microsoft Dynamics 365 Finance.
 
+The following procedures can only be completed for a legal entity with a primary address in Mexico. Before you can start the procedure, the certificates used to encrypt the XML message must be installed and the schema XSD file must be copied in the application.
+
+The procedures was created using the demo data company MXMF.
 
 ## Set up PAC accounts
-1. Go to Accounts receivable > Invoices > E-Invoices > PAC Accounts
-2. Click New.
-3. In the PAC account field, type a value.
-4. In the Name field, type a value.
-5. In the RFC number field, enter the RFC number of your PAC provider.
-6. Click Save.
-7. Click New.
-8. In the environment field, select the type of environment where the web services are run from.
-    * Check with your PAC provider about the availability of Testing and Production environments.  
-9. In the Internet address field, enter the web service address of your PAC provider.
-10. In the Web service field, select 'Request stamp'.
-    * The request stamp web service is used to request the digital signature.  
-11. In the Method name field, enter the name of operation used to request the approval of an electronic invoice.
-    * Contact your PAC provider to get the operation name.  
-12. Click New.
-13. In the environment field, select the type of environment where the web services are ran from
-    * Check with your PAC provider about the availability of testing and production environments.  
-14. In the Internet address field, enter the web services address of your PAC provider.
-15. In the Web service field, select 'Cancel'.
-16. In the Method name field, enter the method used for Cancel operation.
-    * This is the name of operation used in the web services process to cancel an electronic invoice. Contact your PAC provider to get the operation name.  
+
+To set up PAC accounts, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> E-Invoices \> PAC Accounts**.
+1. Select **New**.
+1. In the **PAC account** field, enter a value.
+1. In the **Name** field, enter a value.
+1. In the **RFC number** field, enter the Federal Registration for Taxpayers (RFC) number of your PAC provider.
+1. Select **Save**.
+1. Select **New**.
+1. In the **Environment** field, select the type of environment from which the web services are run. Check with your PAC provider about the availability of testing and production environments.  
+1. In the **Internet address** field, enter the web service address of your PAC provider.
+1. In the **Web service** field, select **Request stamp**. The request stamp web service is used to request the digital signature.  
+1. In the **Method name** field, enter the name of operation used to request the approval of an electronic invoice. You can contact your PAC provider to get the operation name.  
+1. Select **New**.
+1. In the **Environment** field, select the type of environment from which the web services are run. Check with your PAC provider about the availability of testing and production environments.  
+1. In the **Internet address** field, enter the web services address of your PAC provider.
+1. In the **Web service** field, select **Cancel**.
+1. In the **Method name** field, enter the name of the operation used in the web services process to cancel an electronic invoice. Contact your PAC provider to get the operation name.  
 
 ## Set up electronic invoice parameters
-1. Go to Accounts receivable > Invoices > E-Invoices > Electronic invoice parameters
-2. Select or clear the Enable CFDI (electronic invoice) check box.
-    * For this task, change the slider to be 'Yes'.  
-3. In the Certificate field, click the drop-down button to open the lookup.
-4. In the list, click the link in the selected row.
-5. In the CFDI version field, select an option.
-    * You can check the current available version of CFDI schema on the government website.  
-6. In the CFDI XML schema file field, enter the path and name of the CFDI XML Schema file.
-7. In the Environment field, select an option.
-8. In the PAC certificate field, click the drop-down button to open the lookup.
-9. In the list, find and select the desired record.
-10. In the list, click the link in the selected row.
-11. In the PAC account field, click the drop-down button to open the lookup.
-12. In the list, click the link in the selected row.
-13. Select or clear the Send mail check box.
-14. In the E-mail ID field, click the drop-down button to open the lookup.
-15. In the list, click the link in the selected row.
-16. Select or clear the Send report file - PDF check box.
+
+To set up electronic invoice parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> E-Invoices \> Electronic invoice parameters**.
+1. For the **Enable CFDI (electronic invoice)** option, set the slider to **Yes**.  
+1. In the **Certificate** field, select the drop-down button to open the lookup.
+1. In the list, select the link in the selected row.
+1. In the **CFDI version** field, select an option. You can check the current available version of the CFDI schema on the government website.  
+1. In the **CFDI XML** schema file field, enter the path and name of the CFDI XML schema file.
+1. In the **Environment** field, select an option.
+1. In the **PAC certificate** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. In the **PAC account** field, select the drop-down button to open the lookup.
+1. In the list, select the link in the selected row.
+1. Select or clear the **Send mail** checkbox.
+1. In the **E-mail ID** field, select the drop-down button to open the lookup.
+1. In the list, select the link in the selected row.
+1. Select or clear the **Send report file - PDF** checkbox.
 
 
 

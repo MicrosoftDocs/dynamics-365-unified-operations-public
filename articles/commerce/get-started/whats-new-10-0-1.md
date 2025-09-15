@@ -5,7 +5,8 @@ title: What's new or changed in Dynamics 365 for Retail version 10.0.1
 description: This article describes features that are in preview in Dynamics 365 Retail version 10.0.1. 
 author: josaw1
 ms.date: 04/12/2024
-ms.topic: conceptual
+ms.update-cycle: 1095-days
+ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen

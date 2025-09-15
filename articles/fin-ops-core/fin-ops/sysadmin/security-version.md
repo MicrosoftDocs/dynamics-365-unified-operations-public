@@ -4,8 +4,9 @@ description: Learn how to maintain multiple versions of security configurations 
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
-ms.date: 01/15/2025
+ms.date: 06/30/2025
 ms.custom: 
+  - bap-template
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -17,7 +18,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Security version management
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The security version feature lets you maintain multiple versions of security configurations in a company. You can also compare and restore versions.
 
@@ -40,7 +40,15 @@ To restore the security configurations to a version that was created earlier, fo
 1. Select the version to restore.
 1. Select **Restore version**.
 1. In the dialog box that appears, select options as required.
+
+   - **User security governance** - Restore all objects configured on the **Process hierarchy** page, including the **Security category**, **Process role**, and **Security tasks**. This also restores the related security roles, duties, and privileges created on the page. This doesn’t restore the security objects created from **Core Security configuration**.
+   - **Security configuration** - Restore security roles, duties, and privileges created from **Core security configuration**.
+   - **Remove customizations** - Remove the security roles, duties, and privileges before restoring. This option is only available when the **Security configuration** option is enabled. Enabling this option ensures that the security objects are restored exactly to the version being restored.
+
+   
 1. Select **OK**.
+
+This action resets this environment to the selected version state. All security metadata customizations and user security governance data changes since the selected version will be removed. It's highly recommended to first create a new version to save any current changes before performing this action.
 
 ## Compare versions
 

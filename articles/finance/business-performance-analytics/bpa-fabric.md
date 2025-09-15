@@ -5,8 +5,8 @@ description: This article explains how to link your Business performance analyti
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 2/03/2025
-ms.topic: article
+ms.date: 6/17/2025
+ms.topic: how-to
 ms.custom:
 ms.search.form: business-performance-analytics
 audience: Application User
@@ -101,50 +101,39 @@ This section shows how you can create a custom Power BI dataset that extends the
 > [!NOTE]
 > Before you begin this procedure, you must link Business performance analytics data to your Fabric workspace as described earlier in this article.
 
-1. Download the Business performance analytics dataset.
+ 
+ >[!Important]
+> We recommend not using the .pbix file from the Maker Portal, it's not parameterized and requires extra set up to connect to your shortcuts.
 
-    1. Sign in to [Power Apps](https://make.powerapps.com/).
-    2. Go to **All**, and search for the **msdyn\_BpaReports** solution.
 
-2. Select the finance and operations dataset.
-3. On the report details page, select **Actions** \> **Download report**. Make a note of the download location.
-4. Upload the Business performance analytics dataset.
+### Step 1: Request the Business performance analytics dataset (.pbix)
 
-    - In [Power BI](https://app.powerbi.com), open your workspace, and upload the Business performance analytics dataset from the location that you downloaded it to in step 3.
+1. Create a support ticket through your standard Microsoft support channel.
+2. In the ticket, request a secure download link for the BPA `.pbix` file.
+3. Once approved, you receive a secured link to download the file.
 
-5. Connect the dataset to the lakehouse.
+### Step 2: Open the dataset in Power BI Desktop
 
-    1. In the workspace, under the lakehouse, find the SQL Analytics Endpoint, and copy the SQL connection string.
-    2. In the semantic model, go to **Settings** \> **Parameters**, and enter the connection string.
-    3. Reload the page, and re-enter the credentials.
+1. Launch **Power BI Desktop**.
+2. Open the downloaded `.pbix` file.
 
-6. Validate the connection.
+### Step 3: Update dataset parameters
 
-    1. Refresh the settings, and edit the data source credentials to ensure that OAuth is used for authentication.
-    2. Refresh the dataset to view the tables from Business performance analytics.
+1. In Power BI Desktop, go to **Home > Transform data > Edit parameters**.
+2. Update the following parameters:
+   - `CdsOrgUrl` → Paste the SQL Analytics Endpoint connection string from your Fabric Lakehouse.
+   - `AnalyticalDataDatabase` → Enter the name of your Lakehouse (should include `"far_workspace"`).
+3. Click **OK**, then **Close and apply** to confirm the changes.
 
-### Use the Business performance analytics dataset in Power BI Desktop
+### Step 4 (Optional): Publish the dataset to Fabric
 
-1. In Power BI Desktop, open the downloaded .pbix file, and select **Transform data** \> **Edit Parameters**.
-2. In the workspace, under the lakehouse, find the SQL Analytics Endpoint, and copy the SQL connection string.
-3. Enter the SQL connection string as **CDSOrgURL**.
-4. Select **OK**, and do a refresh.
-5. Follow any authentication prompts that appear. Sign in as the same user who published the Business performance analytics dataset to Fabric.
-6. Validate that data is being refreshed from the dataset. You receive an initial notification that the refresh is in progress. You then receive a notification that indicates whether the refresh was successful or unsuccessful.
+1. In Power BI Desktop, select **File > Publish > Publish to Power BI**.
+2. Choose the Fabric-backed workspace where you want the dataset to reside.
+3. After publishing, go to https://app.powerbi.com to verify the dataset appears in the workspace.
+
 
     You now have a dataset that you can extend so that it includes other data sources. You can also create new measures on it.
 
-7. To includes other data sources in your Fabric workspace, find the second lakehouse that you want to include in the custom dataset, and then find the SQL analytics endpoint that is nested under it. Select the ellipsis (**&hellip;**) next to the name of the endpoint, and then select **Copy SQL connection string**.
-8. In Power BI Desktop, select **Get data** \> **SQL server**.
-9. When you're notified that a Direct Query connection is required, select **Add a local model**.
-10. In the prompt that appears, select the entire dataset, and then select **Submit**.
-11. When you're prompted for the server, enter the SQL Server connection string that you copied earlier.
-12. Select **Direct query**, and then select **OK**.
-13. Find the custom lakehouse that you added earlier, expand it, and select the tables to include.
-14. Select **Load**.
-15. When you're warned about the potential security risk, select **OK**.
-16. You should notice that the new data is being loaded.
-17. Select **File** \> **Save** to save the new dataset as a PBIX file.
 
 > [!NOTE]
 > **Authentication issues:** Ensure that you use OAuth 2.0 for authentication when you create connections.

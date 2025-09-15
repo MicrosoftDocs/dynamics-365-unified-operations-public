@@ -4,19 +4,22 @@ description: Learn about new or changed features in the Microsoft Dynamics Trans
 author: joshsantana
 ms.author: joshsantana
 ms.topic: overview
-ms.date: 03/07/2023
+ms.date: 04/14/2025
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
-ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ---
 
 # What's new in Dynamics Translation Service
 
 [!include[banner](../includes/banner.md)]
+[!INCLUDE[dts-deprecation](../../fin-ops/includes/dts-deprecation.md)]
 
 This article provides information about the new or changed features in Microsoft Dynamics Translation Service (DTS).
+
+## DTS Support ends October 15, 2025.
+
+We're announcing the deprecation of the Dynamics 365 Translation Service (DTS). This service will reach end-of-support on October 15, 2025, and will no longer be available after this date. Learn more in [Microsoft Dynamics 365 Translation Service support ends on October 15, 2025](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#dts-deprecation).
 
 ## DTS will not support Dynamics NAV after June 1, 2024  
 

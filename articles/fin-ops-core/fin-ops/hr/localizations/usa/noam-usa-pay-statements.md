@@ -3,7 +3,7 @@ title: Generate and work with pay statements
 description: Learn about the process for generating pay statements, including prerequisites and overviews on how to generate and delete pay statements.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User

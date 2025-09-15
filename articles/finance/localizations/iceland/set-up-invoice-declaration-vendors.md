@@ -1,54 +1,58 @@
 --- 
 title: Set up an invoice declaration for vendors
-description: Learn about setting up the Icelandic invoice declaration, including an outline and step-by-step process for importing invoice declaration GER configurations.
+description: Learn how to set up an Icelandic invoice declaration in Microsoft Dynamics 365 Finance.
 author: mrolecki
 ms.author: mrolecki
 ms.topic: how-to
-ms.date: 08/29/2018
-ms.custom:
+ms.date: 04/04/2025
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak    
-audience: Application User 
 ms.search.region: Iceland
 ms.search.validFrom: 2016-06-30
-ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport,  VendInvoiceDeclaration_IS
-ms.dyn365.ops.version: Version 7.0.0 
 ---
 
 # Set up an invoice declaration for vendors
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through setting up the Icelandic invoice declaration. The demo data company used to create this procedure is DEMF with the country/region of legal entity primary address updated to Iceland.
+This article explains how to set up an Icelandic invoice declaration in Microsoft Dynamics 365 Finance.
 
+The following procedures walk you through how to set up an Icelandic invoice declaration. The demo data company used to create this procedure is DEMF with the country/region of legal entity primary address updated to Iceland.
 
 ## Import invoice declaration GER configurations
-1. Go to Organization administration > Workspaces > Electronic reporting.
-2. Click Set active.
-3. Click Repositories.
-4. Click Open.
-5. Click Show filters.
-    * Please add a criterion to filter by the Configuration name and enter Vendor invoice declaration (IS) or find the configuration in the list, select it and move to the next step.  
-6. Apply the following filters: %3
-7. Click Import.
-8. Click Yes.
-9. Add filter
-    * Add a criterion to filter by the Configuration name and enter Vendor invoice declaration report (IS) or find the configuration in the list, select it and move to the next step.  
-10. Apply the following filters: %3
-11. Click Import.
-12. Click Yes.
+
+To import invoice declaration GER configurations, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration \> Workspaces \> Electronic reporting**.
+1. Select **Set active**.
+3. Select **Repositories**.
+4. Select **Open**.
+5. Select **Show filters**.
+1. Add a criterion to filter by the configuration name and enter "Vendor invoice declaration (IS)", or find the configuration in the list and select it.  
+1. Apply the filter "%3".
+1. Select **Import**.
+1. Select **Yes**.
+9. Add a criterion to filter by the configuration name and enter "Vendor invoice declaration report (IS)", or find the configuration in the list and select it.  
+1. Apply the filter "%3".
+1. Select **Import**.
+1. Select **Yes**.
 
 ## Enable vendor invoice declaration
-1. Go to Accounts payable > Setup > Vendor invoice declaration.
-2. Click New.
-3. In the Invoice declaration field, type 'SubC'.
-4. In the Description field, type 'Sub-contractor'.
-5. In the Reporting code field, type '06'.
-6. Click New.
-7. In the Invoice declaration field, type 'Gift'.
-8. In the Description field, type 'Gifts'.
-9. In the Reporting code field, type '34'.
-10. In the Record type field, select 'LA'.
-11. Click Save.
+
+To enable vendor invoice declaration, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts payable \> Setup \> Vendor invoice declaration**.
+1. Select **New**.
+1. In the **Invoice declaration** field, enter "SubC".
+1. In the **Description** field, enter "Sub-contractor".
+1. In the **Reporting code** field, enter "06".
+1. Select **New**.
+1. In the **Invoice declaration** field, enter "Gift".
+1. In the **Description** field, enter "Gifts".
+1. In the **Reporting code** field, enter "34".
+1. In the **Record type** field, select "LA".
+1. Select **Save**.
 
 
 

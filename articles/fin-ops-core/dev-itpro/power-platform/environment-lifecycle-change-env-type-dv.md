@@ -3,7 +3,7 @@ title: Change the type of connected environments
 description: Learn about how to change the type of a Microsoft Dataverse environment when finance and operations apps are integrated with Microsoft Power Platform.
 author: abunduc-ms
 ms.author: abunduc
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/19/2024
 ms.custom: 
   - bap-template

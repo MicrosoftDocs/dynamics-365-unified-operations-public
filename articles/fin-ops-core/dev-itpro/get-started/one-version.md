@@ -2,8 +2,8 @@
 title: One Version service updates FAQ
 description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: rashmansur
-ms.date: 01/2/2025
-ms.topic: article
+ms.date: 03/2/2025
+ms.topic: faq
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -283,6 +283,10 @@ After the service update is applied by Microsoft, you receive a notification tha
 
 - **Pending Package Sign off** – If a package is pending sign off, Microsoft won't apply the service update to production.
 - **Deployment Failure** – If there was a deployment failure, the environment is rolled back to the original state.
+
+### Can an environment be brought back to its previous state if there are issues after a service update is applied?
+
+As with other code promotions, rollbacks can't be done after a service update is applied. Microsoft uses flighting and features to help mitigate the risk of updates and enable rapid enabling and disabling of new functionality. For more informatoin, see [Feature management and flighting](../../fin-ops/get-started/feature-management/feature-management-overview.md#feature-management-and-flighting).
 
 ### If there's a failure, can I reschedule the update to be automatically applied?
 

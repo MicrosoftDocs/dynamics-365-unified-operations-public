@@ -3,7 +3,7 @@ title: Standard audit file, SAF (Jednolity Plik Kontrolny, JPK) for Poland overv
 description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. Learn about the formats for Poland.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: 
   - bap-template
 ms.date: 07/11/2024

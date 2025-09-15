@@ -3,7 +3,7 @@ title: Business performance planning Excel add-in FAQ
 description: Access answers to frequently asked questions about the Microsoft Excel add-in for business performance planning, including questions about installation.
 author: ShielaSogge
 ms.author: twheeloc
-ms.topic: article
+ms.topic: faq
 ms.date: 05/31/2024
 ms.reviewer: twheeloc
 audience: Application User

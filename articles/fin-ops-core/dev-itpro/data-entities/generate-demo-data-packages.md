@@ -3,7 +3,7 @@ title: Generate demo data by using data packages
 description: Learn how to use demo data packages to generate data for your system, including learning about how packages are organized.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/28/2021
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

@@ -3,7 +3,7 @@ title: Update data
 description: Learn about the update and doUpdate methods in the X++ language, including an outline and examples of the update_recordset statement.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/16/2020
 ms.reviewer: johnmichalak
 audience: Developer

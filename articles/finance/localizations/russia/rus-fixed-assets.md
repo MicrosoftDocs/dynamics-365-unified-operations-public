@@ -1,21 +1,22 @@
 ---
 title: Fixed assets (Russia)
-description: Learn about fixed asset management for Russia, including outlines on registering fixed assets and fixed asset value models.
+description: Learn how to manage fixed assets for Russia in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 07/01/2024
+ms.date: 08/22/2025
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
 ---
 
 # Fixed assets (Russia)
 
 [!include [banner](../../includes/banner.md)]
+
+This article explains how to manage fixed assets for Russia in Microsoft Dynamics 365 Finance.
 
 To help manage your company's fixed assets, you can use the **Fixed assets** page to store all information about assets. This information includes both financial information and non-financial information.
 
@@ -39,15 +40,17 @@ The following examples show the types of non-financial information that are rela
 
 Before you create transactions for any fixed or intangible asset, you must register the asset record and provide basic information about the asset.
 
-1. Go to **Fixed assets (Russia) \> Common \> Fixed assets**.
-2. On the Action Pane, select **New** to create a fixed asset.
+To register fixed assets, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
+1. On the Action Pane, select **New** to create a fixed asset.
 
     > [!NOTE]
     > You can also create a fixed asset by using the Copy function. Select the fixed asset to copy, and then, on the Action Pane, on the **Fixed asset** tab, in the **New** group, select **Copy**. In this case, the system copies the selected fixed asset together with all its parameters, but the new asset has a different inventory number.
 
     ![Fixed assets page.](../media/RUS_FA_1%20General%20tab.JPG)
 
-3. On the **General** FastTab, set the following fields:
+1. On the **General** FastTab, set the following fields:
 
     - **FA group** – Select the fixed asset group that the fixed asset should be related to.
     - **Number** – If automatic numbering is set up in the Fixed asset parameters or for the fixed assets group, this field is automatically set. Otherwise, enter the inventory number.
@@ -75,25 +78,25 @@ Before you create transactions for any fixed or intangible asset, you must regis
 
         ![Product output/mileage page.](../media/RUS_FA_2%20Output_Mileage%20page.JPG)
 
-4. If the fixed asset is included in the composition of another fixed asset, on the **Structure** FastTab, in the **Main fixed asset** field, select the fixed asset code.
+1. If the fixed asset is included in the composition of another fixed asset, on the **Structure** FastTab, in the **Main fixed asset** field, select the fixed asset code.
 
     The **FA structure** field shows all the fixed asset accounts that have a reference to the fixed asset (if the fixed asset is the main fixed asset).
 
-5. Select the **Purchase/Sale** FastTab to view information about the purchase and sale of the fixed asset.
+1. Select the **Purchase/Sale** FastTab to view information about the purchase and sale of the fixed asset.
 
 ## Fixed asset value models
 
-Follow these steps to update or create value models for the fixed asset.
+To update or create value models for the fixed asset, follow these steps.
 
-1. On the **Fixed assets** page, on the Action Pane, select **Value models**.
+1. In Dynamics 365 Finance, on the **Fixed assets** page, on the Action Pane, select **Value models**.
 
     > [!NOTE]
     > If value models are set up for the fixed asset group that the fixed asset is assigned to on the **FA groups** page (**Fixed assets (Russia) \> Setup \> FA groups**), the system automatically creates the value models. However, you can update the field values.
 
     You must create a value model for every asset. The settings are used to register transactions.
 
-2. On the Action Pane, select **New** to create a line.
-3. On the **General** FastTab, set the following fields:
+1. On the Action Pane, select **New** to create a line.
+1. On the **General** FastTab, set the following fields:
 
     - **Value model** – Select the model code for the asset.
     - **Depreciation group** – Select a depreciation group in the value model that the fixed asset is related to.
@@ -108,20 +111,20 @@ Follow these steps to update or create value models for the fixed asset.
 
     ![FA value model.](../media/RUS_FA_3%20value%20models.JPG)
 
-4. On the **Financial dimensions** FastTab, select the default finance dimension codes that register transactions for the asset.
-5. On the **Lease** FastTab, in the **Posting profile** field, select the posting profile to use for fixed asset leasing. If a leasing transaction should be created for a fixed asset, set the **Leased** option to **Yes**.
-6. On the **Dimension of rented FA** FastTab, select the dimension used when posting transactions of the fixed asset.
-7. On the Action Pane, select **Depreciation accounts**. On the **Depreciation accounts** page, you can configure the fixed asset depreciation posting amount for the general ledger accounts in the required proportions. You might have to complete this step if, for example, you must calculate the depreciation on a building that is used for various purposes.
+1. On the **Financial dimensions** FastTab, select the default finance dimension codes that register transactions for the asset.
+1. On the **Lease** FastTab, in the **Posting profile** field, select the posting profile to use for fixed asset leasing. If a leasing transaction should be created for a fixed asset, set the **Leased** option to **Yes**.
+1. On the **Dimension of rented FA** FastTab, select the dimension used when posting transactions of the fixed asset.
+1. On the Action Pane, select **Depreciation accounts**. On the **Depreciation accounts** page, you can configure the fixed asset depreciation posting amount for the general ledger accounts in the required proportions. You might have to complete this step if, for example, you must calculate the depreciation on a building that is used for various purposes.
 
 ## Inquiries on the Fixed assets page
 
 ### View asset transactions
 
-Follow these steps to view the fixed asset transactions.
+To view the fixed asset transactions, follow these steps.
 
-1. Go to **Fixed assets (Russia) \> Common \> Fixed assets**.
-2. On the Action Pane, select **Value models**.
-3. On the Action Pane, select **Transactions**.
+1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
+1. On the Action Pane, select **Value models**.
+1. On the Action Pane, select **Transactions**.
 
     The **FA transactions** page lists all fixed asset transactions that were run for the value model, regardless of the module that they were posted in. Fixed asset transactions can be posted in the following modules:
 
@@ -130,19 +133,21 @@ Follow these steps to view the fixed asset transactions.
     - Accounts payable
     - Accounts receivable
 
-2. On the **Overview** and **General** tabs, view the details of the fixed asset transactions.
+1. On the **Overview** and **General** tabs, view the details of the fixed asset transactions.
 
 ### View the balance of an asset
 
-The value of an asset on a specific date reflects the results of all transactions for that asset. Follow these steps to view the balance of an asset.
+The value of an asset on a specific date reflects the results of all transactions for that asset.
 
-1. Go to **Fixed assets (Russia) \> Common \> Fixed assets**.
-2. On the Action Pane, select **Value models**.
-2. Select the value model to view the balance for.
-3. Select **Balance**.
-4. In the **Transaction date** field, enter the date for the balance sheet. By default, this field is set to the current date.
+To view the balance of an asset, follow these steps.
 
-The amounts on the **Balance by FA** dialog box for the fixed asset are shown in the currency of the fixed asset value model. If the value model currency differs from the company's default currency, the default currency is also shown.
+1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
+1. On the Action Pane, select **Value models**.
+1. Select the value model for which to view the balance.
+1. Select **Balance**.
+1. In the **Transaction date** field, enter the date for the balance sheet. By default, this field is set to the current date.
+
+The amounts on the **Balance by FA** dialog for the fixed asset are shown in the currency of the fixed asset value model. If the value model currency differs from the company's default currency, the default currency is also shown.
 
 ![FA value model balance.](../media/RUS_FA_4%20model%20balance.JPG)
 

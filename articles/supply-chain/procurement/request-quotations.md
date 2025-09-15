@@ -3,12 +3,12 @@ title: Requests for quotation (RFQs) overview
 description: Organizations issue requests for quotation (RFQs) when they want to receive competitive offers from several vendors for the services that they must purchase.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: how-to
-ms.date: 06/07/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ, PurchRFQReplyFollowupItem, PurchRFQCaseVend, PurchRFQReplyFollowup, PurchRFQCaseAmendmentInfo, PurchRFQReplyFollowupCase, PurchRFQReplyStatus, PurchRFQCaseReplyFields, PurchRFQAddQuestionnaire, PurchRFQAmendmentWizard, PurchRFQReplyTableStatus, PurchRFQReplyTableListPage, PurchRFQCancelWizard
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+  - bap-template
 ---
 
 # Requests for quotation (RFQs) overview
@@ -25,22 +25,22 @@ The RFQ process consists of the following tasks:
 
 The following illustration shows an overview of the RFQ process.
 
-[![RFQ process.](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
+:::image type="content" source="media/rfq-process.jpg" alt-text="Diagram or the RFQ process" lightbox="media/rfq-process.jpg":::
 
 You can create an RFQ case from planned orders, from a purchase requisition, or by manual entry. The RFQ case is the base document that you use to issue an RFQ
 to each vendor.
 
-After you prepare the RFQ case and add vendors, select **Send** (**Send and publish** for public sector) on the RFQ case. An RFQ journal is generated for each vendor that you sent the RFQ to. You can configure the Printing options for the Send action so that it either prints a report for each vendor to an archive or sends a report to each vendor's email address. In addition, you can use the RFQ journal for each vendor to generate a report that you can send or resend to the vendor later. You can also configure the Send action so that it generates a reply sheet that the vendor can fill in.
+After you prepare the RFQ case and add vendors, select **Send** (**Send and publish** for public sector) on the RFQ case. An RFQ journal is generated for each vendor that you sent the RFQ to. You can configure the printing options for the **Send** action so that it either prints a report for each vendor to an archive or sends a report to each vendor's email address. In addition, you can use the RFQ journal for each vendor to generate a report that you can send or resend to the vendor later. You can also configure the **Send** action so that it generates a reply sheet that the vendor can fill in.
 
 This article covers the process for handling RFQs when vendor collaboration isn't used. If your system is set up for vendor collaboration, vendors can enter bids directly in Supply Chain Management. Learn more in [Vendor collaboration with customers](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) and [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
 
-If you must amend an RFQ after you send it, you can resend the RFQ to vendors when you've finished by using the two amendment actions: Create and Finalize.  When you receive bids by email, you can handle these bids from the **Request for quotations** page.
+If you must amend an RFQ after you send it, you can resend the RFQ to vendors when you've finished by using the two amendment actions: Create and Finalize. When you receive bids by email, you can handle these bids from the **Request for quotations** page.
 
-If a second iteration of a reply from a vendor is required, select **Return** on the **Request for quotation** page. The Return action generates a new journal and a report that will be printed, archived, and sent according to your printing settings.
+If a second iteration of a reply from a vendor is required, select **Return** on the **Request for quotation** page. The Return action generates a new journal and a report that will be printed, archived, and sent according to your print settings.
 
 If you added scoring criteria to your RFQ case, the RFQ will have a scoring panel where you can enter the scores. The total scores will appear on the RFQ and when you compare the replies on the **Compare replies** page. On the **Compare replies** page, you can also compare other reply data, such as the line price, receipt date, and total price.
 
-After you choose a bid or a number of lines in a bid, you can accept all or some lines and reject the rest. Acceptance journals, rejection journals, and corresponding reports are generated, and will be printed, archived, and sent according to your Printing settings. When you accept a bid or specific lines in a bid, either a purchase agreement or a purchase order is generated, or a purchase requisition is updated, depending on the purchase type of the RFQ. You can create a trade agreement that you can use later for any of the replies, regardless of whether you accepted or rejected them.
+After you choose a bid or bid lines, you can accept all or some lines and reject the rest. Acceptance journals, rejection journals, and corresponding reports are generated, and will be printed, archived, and sent according to your print settings. When you accept a bid or specific lines in a bid, either a purchase agreement or a purchase order is generated, or a purchase requisition is updated, depending on the purchase type of the RFQ. You can create a trade agreement that you can use later for any of the replies, regardless of whether you accepted or rejected them.
 
 An RFQ case has two statuses: lowest and highest, you can view the status on the list page for **All request for quotations**. The lowest status is the least advanced stage of any line in the RFQ case, and the highest status is the most advanced stage of any line in the RFQ case. For example, say that an RFQ case with three lines is sent to two vendors, so there are two RFQs each with three lines. All lines are *Sent*. Now a bid is entered from one of the vendors and the RFQ lines get the status *Received*. This means that out of the three lines on the RFQ case, all of them are *Sent* for one RFQ and *Received* for another RFQ. The lowest status will then be *Sent*, and the highest status is *Received*.
 
@@ -76,7 +76,7 @@ If you want to cancel an RFQ after it’s been sent, you can do that from the RF
 
 - %Reason for cancellation%
 - %RFQ case%
-- %RFQ cancelled by%
+- %RFQ canceled by%
 - %Company%
 - %RFQ case name%
 - %Date%
@@ -98,7 +98,6 @@ A purchasing manager or agent can create and maintain solicitation types to suit
 
 You can specify specific types of information that you want to receive from vendors when they reply to (bid on) a request for quotation (RFQ). Fields that you mark as default are included on the online form provided for vendor collaboration. To make these settings:
 
-1. If you haven't already done so, use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to enable the *Select RFQ fields to include in vendor RFQ reply forms* feature.
 1. Go to **Procurement and sourcing > Setup > Procurement and sourcing parameters**.
 1. Open the **Request for quotation** tab.
 1. Select the **Default requests for quotation** reply fields link under the **Set up default values for requests for quotations** heading.
@@ -125,7 +124,7 @@ If the RFQ is of the **Purchase agreement** type, the following behavior occurs 
 
 If the RFQ case is generated from a purchase requisition, the **Purchase requisition** type is automatically assigned. You can't manually create an RFQ case of the **Purchase requisition** type.
 
-You can create an RFQ case from a purchase requisition only if the status of the purchase requisition is **In review** and you're assigned to do the next workflow task. The lines in the purchase requisition are automatically updated as you accept lines from bids (RFQ replies) that you received from vendors. You can't complete, reject, approve, or perform any other actions on the purchase requisition until the requisition line is updated with an accepted RFQ line or the RFQ case is cancelled.
+You can create an RFQ case from a purchase requisition only if the status of the purchase requisition is **In review** and you're assigned to do the next workflow task. The lines in the purchase requisition are automatically updated as you accept lines from bids (RFQ replies) that you received from vendors. You can't complete, reject, approve, or perform any other actions on the purchase requisition until the requisition line is updated with an accepted RFQ line or the RFQ case is canceled.
 
 When you create an RFQ case, you can select a solicitation type. The solicitation type determines the set of scoring criteria that is used to score RFQ replies to the RFQ case.
 
@@ -161,19 +160,19 @@ When you send an RFQ, a reply sheet is automatically generated. As you receive b
 
 If you need to update the bid, you should go through the same process as above and submit again.
 
-Note that editing the **Request for quotation** form is only allowed for information that relates to processing the bid, not for entering the bid. To enter or modify the bid, select **Edit RFQ reply.**
+You can only edit the **Request for quotation** form with information that relates to processing the bid, not for entering the bid. To enter or modify the bid, select **Edit RFQ reply.**
 
-When you enter the bid information, and if the RFQ case allows for alternate lines, you can add alternate lines for lines that only have a procurement category and no catalog item specified,. Select **Add alternate** to add alternate lines.
+When you enter the bid information, and if the RFQ case allows for alternate lines, you can add alternate lines for lines that only have a procurement category and no catalog item specified. Select **Add alternate** to add alternate lines.
 
 If you've entered a reply but require a new offer from the vendor, you can return the RFQ. A new journal and a report are generated, that can be sent to the vendor.
 
-You can see an overview of all RFQs and their statuses: *Sent*, *Received*, *Accepted*, *Rejected*, *Cancelled*, *Declined* on the **Request for quotation follow-up** page.
+You can see an overview of all RFQs and their statuses: *Sent*, *Received*, *Accepted*, *Rejected*, *Canceled*, *Declined* on the **Request for quotation follow-up** page.
 
 ### Accepting and rejecting bids, and transferring accepted bids to downstream documents
 
-After you've identified the best bid, such as the bid that offers the best total price, you accept the bid. You can accept some lines in a bid and reject others. You can also accept lines from different vendors. Be aware that if you accept some lines, you're prompted to reject all the other lines. Therefore, if you want to accept other lines, you must select **Cancel** when you're prompted. The status of the RFQ reply for each vendor that you accept bids or lines from is updated to **Accepted**.
+After you've identified the best bid, such as the bid that offers the best total price, you accept the bid. You can accept some lines in a bid and reject others. You can also accept lines from different vendors. If you accept some lines, you're prompted to reject all the other lines. Therefore, if you want to accept other lines, you must select **Cancel** when you're prompted. The status of the RFQ reply for each vendor that you accept bids or lines from is updated to **Accepted**.
 
-If you, while you prepare the purchase order or purchase agreement, need to add an additional line to the RFQ, you can do so by selecting **Add line** on the **Request for quotation** page line grid. You can only view and edit this line in **Request for quotation** page. It will be visible on the bid page when it is accepted.
+If you, while you prepare the purchase order or purchase agreement, need to add an additional line to the RFQ, you can do so by selecting **Add line** on the **Request for quotation** page line grid. You can only view and edit this line in **Request for quotation** page. It will be visible on the bid page when it's accepted.
 
 When you accept a bid or one or more lines in a bid, a purchase order or a purchase agreement is automatically generated. You can then reject the bids from all the other vendors.
 
@@ -194,7 +193,7 @@ The following table shows how the RFQ status changes as you accept and reject bi
 
 ## Statuses – highest and lowest
 
-On the Vendor tab of the RFQ case, you can see the lines with the highest and the lowest status for a particular vendor. When the vendor is added, and no lines have yet been sent, both the lowest and the highest status is *Created*. When the RFQ is sent to the vendor with all lines, the status of the two lines will be *Sent*. If some lines in a bid from a vendor are accepted and others are rejected, the rejected lines will get the lowest status which is *Rejected*, and the accepted lines will get the highest status which is *Accepted*.
+On the Vendor tab of the RFQ case, you can see the lines with the highest and the lowest status for a particular vendor. When the vendor is added, and no lines have yet been sent, both the lowest and the highest status is *Created*. When the RFQ is sent to the vendor with all lines, the status of the two lines will be *Sent*. If some lines in a bid from a vendor are accepted and others are rejected, the rejected lines will get the lowest status, which is *Rejected*, and the accepted lines will get the highest status, which is *Accepted*.
 
 On the RFQ case lines, you can see the highest and the lowest status per line across all vendors. If you have sent a line to all the vendors in the RFQ case and no one have responded yet both the lowest and the highest status is *Sent.* When at least one vendor responds, the highest state will change to *Received*. If you add a new vendor to the case, the lowest status will change to *Created*
 
@@ -211,7 +210,7 @@ The following table shows how the RFQ case status changes when you create an RFQ
 | Add another vendor. | Created | Sent | Created | Sent |
 | Send the RFQ to the second vendor. | Sent | Sent | Sent | Sent |
 
-All the lines on the RFQ’s that are related to the RFQ case will be in *Sent*
+All the lines on the RFQs that are related to the RFQ case will be in *Sent*
 state.
 
 The following table shows how the RFQ status changes as you receive bids and
@@ -226,7 +225,7 @@ In the example below you can see the highest and lowest status on the RFQ case w
 
 | Action | Lowest status across all lines of all RFQs | Highest status across all lines of all RFQs | Lowest RFQ case header status | Highest RFQ case header status | Lowest RFQ case line status | Highest RFQ case line status |
 |--|--|--|--|--|--|--|
-| Accept one of the bids. (or at least one line) | Received | Accepted | Received | Accepted | Received | Accepted |
+| Accept one of the bids (or at least one line). | Received | Accepted | Received | Accepted | Received | Accepted |
 | Reject all the other bids. | Rejected | Accepted | Rejected | Accepted | Rejected | Accepted |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

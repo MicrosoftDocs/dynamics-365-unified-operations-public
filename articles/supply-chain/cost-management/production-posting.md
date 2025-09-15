@@ -5,7 +5,7 @@ author: prasungoel
 ms.author: prasungoel
 ms.reviewer: kamaybac
 ms.search.form: InventItemGroup, ProjCategory, WrkCtrResourceGroup, WrkCtrTable
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/24/2025
 ms.custom: 
   - bap-template

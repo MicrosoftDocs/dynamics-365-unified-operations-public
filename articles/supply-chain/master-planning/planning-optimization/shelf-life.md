@@ -1,9 +1,9 @@
 ---
 title: Master planning for products with limited shelf life
 description: Learn how to set up and use planning features that take into account the shelf life of perishable products with an outline on using shelf life in master planning.
-author: t-benebo
-ms.author: benebotg
-ms.topic: article
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 08/10/2022
 ms.reviewer: kamaybac
 ms.search.form: ReqPlanSched, CustTable, EcoResProductDetailsExtended, InventModelGroup

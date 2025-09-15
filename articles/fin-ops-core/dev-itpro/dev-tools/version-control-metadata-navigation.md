@@ -85,7 +85,7 @@ The **Metadata** folder contains your source XML files organized by packages and
 
 Your model store root folder contains source files of all packages and models that are part of your application. During deployment, you'll probably use source files from more than one model across more than one package. We recommend that you map your model store root folder to the Azure DevOps team project metadata folder.
 
-1. In Visual studio **Team Explorer**, connect to the team project as described earlier in this document.
+1. In Visual Studio **Team Explorer**, connect to the team project as described earlier in this document.
 2. Open **Source Control Explorer** from **Team Explorer**.
 3. Map the **Metadata** folder of your team project to the root folder of the model store on your local drive (Typically K:\\AOSService\\PackagesLocalDirectory), an example is shown in the image below.
 

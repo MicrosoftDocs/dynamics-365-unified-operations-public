@@ -1,8 +1,8 @@
 ---
 title: Enable and configure unannounced returns in Warehouse management only mode
 description: Learn how to set up Microsoft Dynamics 365 Supply Chain Management to handle unannounced returns when you use Warehouse management only mode. This article highlights aspects of the unannounced returns process that work differently, depending on whether you use Warehouse management only mode.
-author: mq55qm
-ms.author: ivanma
+author: Mirzaab
+ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSSourceSystemDispositionCode, WHSInboundShipmentOrder, WHSParameters, WHSInboundShipmentOrderMessage, WHSReturnItemReceivingPolicy
 ms.topic: how-to

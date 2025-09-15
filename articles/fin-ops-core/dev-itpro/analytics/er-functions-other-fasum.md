@@ -3,7 +3,7 @@ title: FA_SUM ER function
 description: Learn about how the FA_SUM Electronic reporting (ER) function is used, including syntax strings, arguments, return values, and examples.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: reference
 ms.date: 12/17/2019
 ms.reviewer: johnmichalak
 audience: IT Pro

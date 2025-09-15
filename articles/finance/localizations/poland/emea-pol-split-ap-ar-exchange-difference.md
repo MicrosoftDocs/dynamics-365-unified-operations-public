@@ -1,12 +1,12 @@
 ---
 title: Split the realized exchange difference amount into the difference of the invoice net value and the VAT amount
-description: Learn how to split the realized exchange difference amount into the difference of the invoice net value and the value-added tax (VAT) amount.
+description: Learn how to split the realized exchange difference amount into the difference of the invoice net value and the value-added tax (VAT) amount for Poland in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 06/19/2025
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2020-04-01
@@ -15,6 +15,8 @@ ms.search.validFrom: 2020-04-01
 # Split the realized exchange difference amount into the difference of the invoice net value and the VAT amount
 
 [!include [banner](../../includes/banner.md)]
+
+This article explains how to split the realized exchange difference amount into the difference of the invoice net value and the value-added tax (VAT) amount for Poland in Microsoft Dynamics 365 Finance.
 
 The **Split the AP/AR realized exchange difference amount into the difference of the invoice net value and the VAT amount** feature lets you split the amount of an Accounts payable (AP) and Accounts receivable (AR) foreign currency revaluation into two parts:
 
@@ -33,9 +35,9 @@ In the **Feature management** workspace, turn on the following feature: **(Polan
 
 ### Set up ledger accounts
 
-Follow these steps to set up a ledger account that can be used to post the exchange difference amount that is related to the tax amount of the invoice.
+To set up a ledger account that can be used to post the exchange difference amount that is related to the tax amount of the invoice, follow these steps.
 
-1. Go to **General ledger** \> **Currencies** \> **Currency revaluation accounts**. 
+1. In Dynamics 365 Finance, go to **General ledger** \> **Currencies** \> **Currency revaluation accounts**. 
 2. On the **Currency revaluation accounts** page, select the currency code, and then, in the **Ledger** field, select the code of the legal entity.
 
     ![Currency revaluation accounts page.](../media/Currency-revaluation-accounts.png)

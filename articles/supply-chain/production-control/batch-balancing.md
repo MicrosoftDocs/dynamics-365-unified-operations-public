@@ -3,7 +3,7 @@ title: Batch balancing
 description: Learn about the batch balancing process, including outlines on products that have an active ingredient, ingredient types, and their interactivity.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/04/2021
 ms.reviewer: kamaybac
 ms.search.form: BOMTable, WHSReservationHierarchy, WHSInventTableReservationHierarchy

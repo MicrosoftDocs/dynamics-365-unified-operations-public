@@ -3,7 +3,7 @@ title: Yearly tax communication
 description: Learn about the yearly tax communication report in Italy, including an outline on setting up the Yearly tax communication report.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: article
 ms.date: 03/04/2024
 ms.custom: 
   - bap-template

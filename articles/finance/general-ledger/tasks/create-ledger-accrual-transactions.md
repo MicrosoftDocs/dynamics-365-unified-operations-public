@@ -1,10 +1,10 @@
 --- 
 title: Create ledger accrual transactions
-description: This task guide steps through generating ledger accrual transactions that are based on accrual schemes, including a step-by-step process based on accrual schemes. 
+description: This task guide steps through generating ledger accrual transactions that are based on accrual schemes. 
 author: aprilolson
 ms.author: aolson
 ms.topic: how-to
-ms.date: 04/01/2024
+ms.date: 09/05/2025
 ms.custom:
 ms.reviewer: twheeloc  
 audience: Application User   
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide steps through generating ledger accrual transactions that are based on accrual schemes
+This task guide steps through generating ledger accrual transactions that are based on accrual schemes.
 
 1. Go to **General ledger > Journal entries > General journals**.
 2. In the list, find and select the desired journal or create a new one.

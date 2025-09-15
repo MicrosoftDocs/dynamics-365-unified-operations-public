@@ -10,8 +10,9 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2016-02-28
 ms.assetid: a22c9493-c000-4514-bb0d-b3cc674439d9
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Commerce component events for diagnostics and troubleshooting

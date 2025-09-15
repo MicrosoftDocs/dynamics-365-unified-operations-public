@@ -3,7 +3,7 @@ title: Embed processor credit card receipts in customer receipts
 description: This article describes how to embed a credit card receipt from a payment processor directly into a customer's itemized transaction receipt in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 12/03/2021
-ms.topic: article
+ms.topic: how-to
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
@@ -12,6 +12,7 @@ ms.search.validFrom: 04-31-2020
 ms.dyn365.ops.version: AX 7.0.1
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.industry: Retail
+ms.custom: sfi-image-nochange
 ---
 
 # Embed processor credit card receipts in customer receipts

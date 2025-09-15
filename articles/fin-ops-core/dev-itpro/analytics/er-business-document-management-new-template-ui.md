@@ -5,7 +5,6 @@ author: kfend
 ms.author: kfend
 ms.topic: article
 ms.date: 01/05/2022
-ms.custom:
 ms.reviewer: johnmichalak 
 ms.search.form: ERBDWorkspace, ERBDParameters
 audience: Developer, IT Pro
@@ -13,6 +12,8 @@ ms.assetid:
 ms.search.region: Global
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
+ms.custom:
+  - sfi-image-nochange
 ---
 
 # Microsoft Office-style user interface in Business document management

@@ -5,6 +5,7 @@ author: twheeloc
 ms.author: twheeloc
 ms.topic: faq
 ms.date: 10/25/2024
+ms.update-cycle: 1095-days
 ms.custom:   
   - bap-template
   - evergreen
@@ -51,7 +52,6 @@ This section contains a table that lists the enhancements that are included in t
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 | Cash and bank management | Use Electronic payment number for EndToEndId | The **Use Electronic payment number for EndToEndId** parameter is added to the latest versions of the ISO 20022 Credit transfer payment file formats, payment model, and payment model mapping. If the parameter is enabled, the electronic payment number is transferred to the **EndToEndId** field in the payment file when it's generated. | Parameter |
-| Cash and bank management | Customer and vendor netting | A new filter is added to the **Customer and vendor balance netting** page to show the cleared netting agreement. The netting history for a fully cleared netting agreement can now be shown. | On by default |
 | Cash and bank management | Enhancements to bank foreign currency revaluation | When the feature is enabled, the bank foreign currency revaluation reset and revaluation can occur on the same day. | Feature management |
 | Cash and bank management | Exchange rate type enhancement for accounts payable and accounts receivable foreign currency revaluation | When the function for accounts payable and accounts receivable foreign currency revaluation simulation runs, it uses the same setting of the additional exchange rate type option. | Feature management |
 | General ledger | Accounting source explorer updated advanced filtering | When the feature is enabled, an advanced filtering option is available for Accounting source explorer. This option includes convenient date range selection, where different types of date intervals are available. Additionally, an advanced filter is available that can filter fields such as ledger account, business unit, cost center, and department. | Feature management |

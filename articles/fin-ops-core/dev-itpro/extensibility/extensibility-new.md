@@ -3,7 +3,7 @@ title: What's new or changed for extensibility
 description: Access links to topics about extensibility updates to see what's new and changes for various versions for extensibility.
 author: josaw1
 ms.author: josaw
-ms.topic: conceptual
+ms.topic: whats-new
 ms.date: 05/14/2019
 ms.reviewer: johnmichalak
 audience: Developer

@@ -1,48 +1,43 @@
 ---
 title: Create a fixed asset with additional depreciation
-description: In Japan, a fixed asset is permitted to post an additional depreciation amount. Learn about creating fixed assets and assigning depreciation profiles.
+description: Learn how to create a fixed asset with additional depreciation for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 04/18/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: AssetTable, AssetBook
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Create a fixed asset with additional depreciation
 
 [!include [banner](../../includes/banner.md)]
 
+This article explains how to create a fixed asset with additional depreciation for Japan in Microsoft Dynamics 365 Finance.
+
 In Japan, a fixed asset is permitted to post an additional depreciation amount, under certain conditions. 
 
+The following procedure walks you through how to create a fixed asset with additional depreciation profile. The procedure was created using the demo data company JPMF.
 
+Before you complete the procedures, you must first select the **Fixed Asset** configuration key.
 
-Use this procedure to learn how to create a fixed asset with additional depreciation profile.
+## Create a fixed asset and assign an additional depreciation profile to it
 
+To create a fixed assset and assign an additional depreciation profile to it, follow these steps.
 
-
-In order to complete this procedure, the Fixed Assets configuration key must be selected.
-
-
-
-This was created using the demo data company JPMF.
-
-
-## Create a fixed assset and assign an additional depreciation profile to it
-1. Go to Fixed assets > Fixed assets > Fixed assets.
-2. Click New.
-3. In the Fixed asset group field, select a value.
-4. In the Name field, type a value.
-5. Click Books.
-6. Expand the Depreciation section.
-7. In the Extraordinary depreciation profile field, enter or select a value.
-8. under the Extraordinary depreciation field group, enter a date
-    * The additional depreciation will start from the next day of this date.  
-9. Click Save.
+1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
+1. Select **New**.
+1. In the **Fixed asset group** field, select a value.
+1. In the **Name** field, enter a value.
+1. Select **Books**.
+1. Expand the **Depreciation** section.
+1. In the **Extraordinary depreciation profile** field, enter or select a value.
+1. Under the **Extraordinary depreciation** field group, enter a date. The additional depreciation start from this date.  
+1. Select **Save**.
 
 
 

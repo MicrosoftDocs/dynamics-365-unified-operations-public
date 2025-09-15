@@ -84,7 +84,7 @@ The response is always a "200 OK" response, unless you aren't correctly authenti
     "Data": {
         "CertificateZipEncoded": "<base 64-encoded zip>",
         "CertificateSecretEncoded": "<base 64-encoded password>",
-        "CertificateThumbprint": "5D23AAF6672FD4B957ED3CF91BB8D717A9A2499A",
+        "CertificateThumbprint": "AA11BB22CC33DD44EE55FF66AA77BB88CC99DD00",
         "ExpirationDateTimeUTC": "Sunday, September 4, 2022 4:00:00 AM",
         "ExpirationISODateTimeUTC": "2022-09-04T04:00:00Z",
         "Filename": "RSATCertificate_TestEnv1_20210805-100102.zip"

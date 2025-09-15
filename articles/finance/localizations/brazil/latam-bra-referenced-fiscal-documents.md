@@ -3,7 +3,7 @@ title: Referenced fiscal documents for Brazil
 description: Learn about referenced fiscal documents that are used in Brazil, including examples and outlines on fiscal references and documents.
 author: ankviklis
 ms.author: ankviklis
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/26/2024

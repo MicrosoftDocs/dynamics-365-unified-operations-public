@@ -4,12 +4,13 @@ description: Learn how to configure and use the Electronic Invoicing service ISV
 author: ikondratenko
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 02/10/2025
+ms.date: 09/08/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global
 ms.search.validFrom: 2023-12-01
 ms.dyn365.ops.version: AX 10.0.37
+ms.custom: sfi-image-nochange
 ---
 
 # Electronic Invoicing service ISV last-mile connector
@@ -42,7 +43,7 @@ To enable the integration of the Electronic Invoicing service with the ISV last-
 - **Group** – The group code is used for internal routing within the Edicom infrastructure.
 - **Token** – The token is used to grant authorization to access the Edicom services.
 
-The token that you obtain must be uploaded to the secret that you created in the Azure key vault that your company manages. For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md). The secret is used as a parameter in the related Electronic Invoicing feature pipeline actions.
+The token that you obtain must be uploaded to the secret that you created in the Azure Key Vault that your company manages. For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md). The secret is used as a parameter in the related Electronic Invoicing feature pipeline actions.
 
 > [!NOTE]
 > With this integration, you are able to submit generated e-invoices' files either in the **OIOUBL** format to the Danish electronic invoicing infrastructure, **NemHandel**, or in the **PEPPOL** format to the PEPPOL Delivery Network. The format of a submitted file will be dynamically analyzed by Edicom and routed correspondingly.
@@ -141,7 +142,20 @@ The name of this variable must be used as the name of the import source for the 
 
 ![Screenshot that shows the ResponseXml import source on the Electronic document parameters page.](../media/isv_connector_import_channel.jpg)
 
+
 ### <a id="Countries"></a>Country-specific scenarios implemented via Edicom
+
+### Electronic invoicing in Belgium
+
+For more information about electronic invoicing in Belgium, see [Electronic invoicing for Belgium](../belgium/emea-bel-e-invoices.md).
+
+### Electronic invoicing in Chile
+
+For more information about electronic invoicing in Chile, see:
+[Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md),
+[Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md).
+
+### Electronic invoicing in Costa Rica
 
 The following countries electronic invoicing functionality is implemented using **Edicom** as the last-mile connector.
 
@@ -155,6 +169,10 @@ The following countries electronic invoicing functionality is implemented using 
 | Singapore | [Electronic invoicing for Singapore](../singapore/apac-sgp-e-invoices.md) |
 | Uruguay | [Get started with Electronic invoicing for Uruguay](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md) |
 
+
+### Electronic invoicing in Uruguay
+
+For more information about electronic invoicing in Uruguay, see [Get started with Electronic invoicing for Uruguay](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md).
 
 ## Additional resources
 

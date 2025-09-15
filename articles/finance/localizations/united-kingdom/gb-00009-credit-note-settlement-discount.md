@@ -1,79 +1,73 @@
 ---
 title: GB-00009 Create a credit note on the settlement discount
-description: This walkthrough was created using the demo company DEMF with country context switched for the United Kingdom (Country/region GBR).
+description: Learn how to create a credit note on the settlement discount for the United Kingdom in Microsoft Dynamics 365 Finance.
 author: EricWangChen
 ms.author: wangchen
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 08/04/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: United Kingdom
 ms.search.validFrom: 2016-06-30
 ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, LedgerJournalTable, LedgerJournalTransCustPaym, CustOpenTrans, CustTable, CustInvoiceJournal
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # GB-00009 Create a credit note on the settlement discount
 
 [!include [banner](../../includes/banner.md)]
 
-This walkthrough was created using the demo company DEMF with country context switched for the United Kingdom (Country/region GBR). 
+This article explains how to create a credit note on the settlement discount for the United Kingdom in Microsoft Dynamics 365 Finance.
 
-This task walks you through creating a customer invoice that includes cash discount, with further prompt payment and generating credit note on cash discount to adjust the VAT entries posted on the original invoice. 
+The following procedure walks you through how to create a customer invoice that includes a cash discount. 
 
-Prior to this task, the "Setup parameters for credit note on prompt payment discount" tasks should be completed.
+The procedure using the demo company DEMF with country context switched to the United Kingdom (country/region: GBR). 
 
-1. Go to Accounts receivable > Invoices > All free text invoices.
-2. Click New.
-3. In the Customer account field, click the drop-down button to open the lookup.
-    * For this example, select 'DE-010' customer account  
-4. In the list, find and select the desired record.
-5. In the list, click the link in the selected row.
-6. In the Cash discount field, click the drop-down button to open the lookup.
-    * For this example, select '4%10d' cash discount code.  
-7. In the list, find and select the desired record.
-8. In the list, click the link in the selected row.
-9. In the list, mark the selected row.
-10. In the Description field, type a value.
-    * For this example, type 'service' in the Description field  
-11. In the Main account field, specify the desired values.
-    * For this example, select '170250' in the Main account field.  
-12. In the Unit price field, enter a number.
-    * For this example, enter '10000' in the Unit price field.  
-13. Click Post.
-14. Click OK.
-15. Click the TabPageGrid tab.
-16. Close the page.
-17. Go to Accounts receivable > Payments > Payment journal.
-18. Click New.
-19. In the list, mark the selected row.
-20. In the Name field, click the drop-down button to open the lookup.
-21. In the list, click the link in the selected row.
-22. Click Lines.
-23. In the list, mark the selected row.
-24. In the Account field, specify the desired values.
-    * For this example, select 'DE-010' customer account  
-25. Click Settlement.
-26. In the list, find and select the desired record.
-    * For this example, select the invoice posted in previous task  
-27. Select or clear the Mark check box.
-28. Click OK.
-29. Click Post.
-30. Close the page.
-31. Close the page.
-32. Go to Accounts receivable > Customers > All customers.
-33. In the list, find and select the desired record.
-    * For this example, select 'DE-010' customer account  
-34. On the Action Pane, click Invoice.
-35. Click Invoice journal.
-36. In the list, find and select the desired record.
-    * For this example, select the credit note created on the cash discount posted when invoice and payment were settled.  
-37. On the Action Pane, click Invoice.
-38. Click View.
-39. Click Original preview.
-    * Verify that the reason for cash discount as well as original invoice number and date are printed in the credit note for the discount.  
-40. Close the page.
-    * Verify that the reason for cash discount as well as original invoice number and date are printed in the credit note for the discount.  
+Before you complete the procedure, you must complete the Setup parameters for credit note on prompt payment discount procedure.
+
+To create a credit note on the settlement discount, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
+1. Select **New**.
+1. In the **Customer account** field, select the drop-down, and then select **DE-010**.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. In the **Cash discount** field, select the drop-down, and then select **4%10d**.  
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. In the list, mark the selected row.
+1. In the **Description** field, enter "service".  
+1. In the **Main account** field, select **170250**.  
+1. In the **Unit price** field, enter "10000".  
+1. Select **Post**.
+1. Select **OK**.
+1. Select the **TabPageGrid** tab.
+1. Close the page.
+1. Go to **Accounts receivable** \> **Payments** \> **Payment journal**.
+1. Select **New**.
+1. In the list, mark the selected row.
+1. In the **Name** field, select the drop-down button to open the lookup.
+1. In the list, select the link in the selected row.
+1. Select **Lines**.
+1. In the list, mark the selected row.
+1. In the **Account** field, select **DE-010**.
+1. Select **Settlement**.
+1. In the list, find and select the invoice posted in the previous task.  
+1. Select or clear the **Mark** checkbox.
+1. Select **OK**.
+1. Select **Post**.
+1. Close the page.
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+1. In the list, find and select **DE-010**. 
+1. On the Action Pane, select **Invoice**.
+1. Select **Invoice journal**.
+1. In the list, find and select the credit note created on the cash discount posted when invoice and payment were settled.  
+1. On the Action Pane, select **Invoice**.
+1. Select **View**.
+1. Select **Original preview**.
+1. Verify that the reason for the cash discount and original invoice number and date are printed in the credit note for the discount.  
+1. Close the page.
+
 
 
 

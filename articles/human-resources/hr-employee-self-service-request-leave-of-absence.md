@@ -5,7 +5,7 @@ title: Request a leave of absence
 description: Submit a leave of absence request. 
 author: twheeloc
 ms.date: 06/20/2024
-ms.topic: article
+ms.topic: how-to
 
 
 # optional metadata

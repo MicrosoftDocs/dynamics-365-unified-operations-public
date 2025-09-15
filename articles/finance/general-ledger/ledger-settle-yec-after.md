@@ -3,7 +3,7 @@ title: Awareness between ledger settlement parameter after the year-end close
 description: Learn how to use the Enable advanced awareness options parameter after the General ledger year-end close process is run, including an example setup.
 author: moaamer
 ms.author: kweekley
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/08/2024
 ms.custom:
 ms.reviewer: twheeloc

@@ -4,7 +4,7 @@ description: Learn about the procedure for importing a letter of credit, includi
 author: music727
 ms.author: mibeinar
 ms.topic: how-to
-ms.date: 06/06/2024
+ms.date: 06/05/2025
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User 
@@ -20,7 +20,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 The steps below describes the process of importing a letter of credit. Bank facilities, posting profiles, a bank facility agreement and vendor bank details have to be configured before starting this process. For more details, see [Set up bank facilities and posting profiles for letter of credit](set-up-bank-facilities-posting-profiles-letter-credit.md) and [Create a vendor bank account](../../../supply-chain/procurement/tasks/create-vendor-bank-account.md).
 
-## Create a Purchase order with a Letter of credit
+## Create a purchase order with a letter of credit
 1. To create a Purchase order with a letter of credit, go to **Accounts payable > Purchase orders > All purchase orders**.
 2. Click **New**.
 3. Select a vendor value in the **Vendor account** field.
@@ -57,7 +57,7 @@ The steps below describes the process of importing a letter of credit. Bank faci
 After re-confirmed, verify the facility balance reduced by the purchase order amount in the **Bank facility agreements** page. 
 For example, Purchase amount = 500.00, Facility limit = 10000.00, therefore, Facility balance = 9500.00.
 
-## Amend the price on the Purchase Order line
+## Amend the price on the purchase order line
 1. Open the purchase order and update the **Unit price** field on the purchase order line.
 2. Click **Save**.
 3. Confirm the purchase order by clicking **Purchase > Confirm** on the Action pane.
@@ -70,7 +70,7 @@ Verify the facility balance reduced by the updated purchase order amount in the 
 For example, edited Purchase amount = 600.00, Facility limit = 10000.00, therefore, Facility balance = 9400.00
 9. Close the page.
 
-## Post Packing slip
+## Post packing slip
 1. On the Action Pane, click **Receive**.
 2. Click **Product receipt**.
 3. In the **Product receipt** field, enter a product receipt number.
@@ -78,7 +78,7 @@ For example, edited Purchase amount = 600.00, Facility limit = 10000.00, therefo
 5. Enter a **Product receipt date**.
 6. Click **OK**.
 
-## Verify Import letter of credit status
+## Verify import letter of credit status
 1. Go to **Cash and bank management > Letters of credit > Import letter of credit and import collection**.
 2. Verify the **Import letter of credit status**.     
 
@@ -92,12 +92,12 @@ For example, edited Purchase amount = 600.00, Facility limit = 10000.00, therefo
 7. Click **Update match status**.
 8. Post the invoice by pressing **Post**.
 
-## Verify Import letter of credit status and printing
+## Verify import letter of credit status and printing
 1. Go to **Cash and bank management > Letters of credit > Import letter of credit and import collection**.
 2. In the list, find and select the desired record.
-3. Verify the Import letter of credit details.
+3. Verify the import letter of credit details.
 4. Validate **Shipment status** = **Invoiced**.
-5. To print the **Letter of credit**, Click **View** on the Action pane, and then select **Print application**.
+5. To print the **Letter of credit**, click **View** on the Action pane, and then select **Print application**.
 
 ## Post Vendor payment journal for the created purchase invoice with letter of credit
 1. Go to **Accounts payable > Payments > Payment journal**.
@@ -105,24 +105,24 @@ For example, edited Purchase amount = 600.00, Facility limit = 10000.00, therefo
 3. In the **Name** field, select vendor payment journal name.
 4. Click **Lines**.
 5. In the **Date** field, enter a date.
-6. In the **Account** field, select the vendor account from the Purchase Order. Click **Save**.
+6. In the **Account** field, select the vendor account from the purchase order. Click **Save**.
 7. Click **Settle transactions**.
 8. Select an invoice to pay. Verify that the **Bank document number** and **Shipment number** fields are correct.
 9. Select the **Mark** checkbox for the invoice to pay. Click **OK**.
 10. Select the **Payment** tab and verify that the **Bank document number** and **Shipment number** fields have been updated.
 11. Click **Post**.
 
-## Verify the Import letter of credit status after Invoice paid
+## Verify the import letter of credit status after invoice paid
 1. Go to **Cash and bank management > Letters of credit > Import letter of credit and import collection**.
 2. In the list, find and select the record.
 3. Go to the **Lines** and verify the **Import letter of credit status** is **Confirmed** and **Shipment status** is **Paid**.
    
-## Verify the Bank facility limit and utilization report
+## Verify the bank facility limit and utilization report
 1. Go to **Cash and bank management > Inquiries and reports > Letters of credit or guarantee > Bank facilities and utilization report**.
 2. Expand the **Records to include** section.
 3. Click **Filter** and define the **Criteria** field with the required bank account.
 4. Click **OK** and run the report.
-5. Verify the report lists the transactions with Bank document number, Facility limit, utilized amount and the facility balance amount. 
+5. Verify the report lists the transactions with **Bank document number**, **Facility limit**, **Utilized amount** and the **Facility balance amount**. 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

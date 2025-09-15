@@ -3,11 +3,14 @@ title: Attach inventory items to service objects
 description: Learn how to attach an inventory item to a service object, including a step-by-step process for attaching inventory items to service objects.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 05/01/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMAServiceObjectTable
+ms.topic: how-to
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 

@@ -3,7 +3,7 @@ title: REPLACE ER function
 description: Learn about how the REPLACE Electronic reporting (ER) function is used, including syntax strings, arguments, return values, usage notes, and examples.
 author: kfend
 ms.author: filatovm
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/02/2020
 ms.reviewer: johnmichalak
 audience: IT Pro

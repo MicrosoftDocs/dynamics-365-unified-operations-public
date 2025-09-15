@@ -3,7 +3,7 @@ title: SAF VAT sales and purchase register - JPK_VAT
 description: This article explains how users in legal entities in Poland can generate a SAF VAT sales and purchase register - JPK_VAT.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: reference
 ms.custom: 
   - bap-template
 ms.date: 11/27/2024

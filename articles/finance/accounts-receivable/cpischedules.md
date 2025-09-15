@@ -4,7 +4,7 @@ description: Learn how to create the list of consumer price index (CPI) schedule
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: article
-ms.date: 11/04/2021
+ms.date: 09/04/2025
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
@@ -26,7 +26,7 @@ To add a CPI schedule, follow these steps.
 3. In the **Description** field, enter a description.
 4. On the **Consumer price index schedule** tab, select **Add**.
 5. In the **Consumer price index date** field, specify the date when the new CPI schedule becomes active.
-6. In the **Consumer price index schedule** field, enter the name that you entered in step 2.
+6. In the **Consumer price index schedule** field, enter the index value for the date that you entered in step 5.
 7. Select **Save**.
 
 To delete a CPI schedule date, follow these steps.
@@ -65,7 +65,8 @@ For the period January 1, 2021, the first escalation amount is calculated in the
 
 For the period January 1, 2022, the escalation amount is calculated in the following way, based on the first escalation amount:
 
-1,045.91 + (114.25 – 105.65) &divide; 105.65 &times; 1,000 = 1,081.40
+1,045.91 + (114.25 – 110.5) &divide; 105.65 &times; 1,000 = 1,081.40
+
 
 > [!NOTE]
 > The escalation process always uses the latest CPI value, regardless of the index date. For example, if the escalation is in September, but the latest CPI value is for July, the July index is used. No adjustments are made after the September index is entered.

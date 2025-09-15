@@ -4,7 +4,7 @@ description: Learn about about charge allocation for import orders, including ou
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
-ms.date: 03/21/2022
+ms.date: 03/03/2025
 ms.custom:
 ms.reviewer: johnmichalak 
 audience: Application User 
@@ -28,7 +28,7 @@ Currently, the system applies freight and insurance charges to the full value or
 > The government determines the assessable value when a BOE is submitted. Therefore, we recommend that you to allocate charges on the **Bill of entry** page instead of the **Import order** or **Purchase order** page.
 
 ## Key changes introduced
-The new feature introduces the following key changes:
+The new experience introduces the following key changes:
 
 - Charges that are defined on the import order header are automatically copied to the **Bill of entry** page.
 - Charges can be defined or edited on the **Bill of entry** page.
@@ -48,14 +48,6 @@ The new feature introduces the following key changes:
   - One BOE > Multiple receipts > Multiple invoices
 
 - Charges can be applied to the BOE in the company currency and a foreign currency.
-
-## Enable the feature
-
-1. Go to **Workspaces** > **Feature management**.
-2. In the list, find and select the **Charge allocation on Bill of entry (BOE) form for import orders** feature.
-3. Select **Enable now**.
-
-   ![Feature management page, Enable now button.](../media/feature-management-page.png)  
 
 ## Create a purchase (import) order
 

@@ -3,7 +3,7 @@ title: Consolidate shipments by releasing to warehouse from the outbound load pl
 description: Learn about a scenario where multiple orders are released to the warehouse in the same load and are then automatically consolidated into shipments.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/12/2020
 ms.custom:
 ms.reviewer: kamaybac

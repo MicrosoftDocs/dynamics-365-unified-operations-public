@@ -1,8 +1,8 @@
 ---
 title: Dynamic printer selection
 description: Learn how to set up your system to dynamically select a printer when license plate labels and container labels are printed.
-author: adesypri
-ms.author: adesypri
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 07/23/2024
 ms.custom: bap-template

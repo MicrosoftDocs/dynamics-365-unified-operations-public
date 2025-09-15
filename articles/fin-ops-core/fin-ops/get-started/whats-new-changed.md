@@ -7,7 +7,8 @@ ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
-ms.date: 03/08/2024
+ms.date: 05/08/2025
+ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.collection: get-started
 ms.search.region: Global

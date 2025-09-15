@@ -5,7 +5,8 @@ title: What's new or changed in Dynamics 365 Human Resources December 12, 2022
 description: This article describes features that are either new or changed in the stand-alone Microsoft Dynamics 365 Human Resources for December 2022.
 author: twheeloc
 ms.date: 12/12/2022
-ms.topic: article
+ms.update-cycle: 1095-days
+ms.topic: whats-new
 # optional metadata
 
 ms.search.form:

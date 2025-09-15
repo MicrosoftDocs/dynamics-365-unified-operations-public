@@ -1,8 +1,8 @@
 ---
 title: Trace an item or raw material
 description: Learn how to use item tracing to identify where items or raw materials have been used or are being used, including a step-by-step process.
-author: Weijiesa
-ms.author: weijiesa
+author: banluo-ms
+ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria, InventTrackingItemIdLookup, InventBatchIdLookup, CustTable, SalesLine 
 ms.topic: how-to

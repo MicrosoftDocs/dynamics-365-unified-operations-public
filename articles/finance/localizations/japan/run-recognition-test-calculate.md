@@ -1,49 +1,42 @@
 ---
-title: Run the recognition test and calculate the impairment amount on individual assets
-description: Learn about running the recognition test and calculating the impairment amount on individual assets, including a step-by-step process.
+title: Run the impairment recognition test and calculate the impairment amount on individual assets
+description: Learn how to run the impairment recognition test and calculate the impairment amount on individual assets for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 05/02/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: AssetImpairmentRecognitionTest_JP, SysQueryForm, AssetImpairmentCreateTest_JP, AssetImpairmentRecognitionTestResult_JP
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
-# Run the recognition test and calculate the impairment amount on individual assets
+# Run the impairment recognition test and calculate the impairment amount on individual assets
 
 [!include [banner](../../includes/banner.md)]
 
-This task walks you through running the recognition test and calculating the impairment amount on individual assets.
+This article explains how to run the impairment recognition test and calculate the impairment amount on individual assets for Japan in Microsoft Dynamics 365 Finance.
 
+Before you can complete the following procedure, you must maintain impairment indicators on individual assets.
 
-
-Before you can complete this task, you must maintain impairment indicators on individual assets.
-
-
-
-This task was created using the demo data company JPMF.
-
+The procedure uses the demo data company JPMF.
 
 ## Impairment recognition test
-1. Go to Fixed assets > Periodic tasks > Impairment on individual assets > Impairment recognition test.
-2. Click Query.
-3. In the list, find and select the desired record.
-    * For this example, select the Fixed asset group row.  
-4. In the Criteria field, type a value.
-    * Example: TOOL-M  
-5. Click OK.
-    * Confirm that three fixed assets with impairment indicators configured will be displayed.  
-    * TOOLM-000006 does not have any impairment adjustment, whereas TOOLM-000007 and TOOLM-000008 have -1,750,000.00 and -2,250,000.00 respectively.  
-6. Click Save impairment to open the drop dialog.
-7. In the Description field, type a value.
-8. In the Date field, enter a date.
-9. Click OK.
-    * The Confirmation form of the impaired fixed assets is displayed.  
-    * The Impairment test ID is issued.     Remember the Impairment_test_ID for later use in Propose and post.   
+
+To run the impairment recognition test and calculate the impairment amount on individual assets, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Periodic tasks \> Impairment on individual assets \> Impairment recognition test**.
+1. Select **Query**.
+1. In the list, find and select the **Fixed asset group** row.  
+1. In the **Criteria field**, enter a value. For example, enter "TOOL-M".  
+1. Select **OK**.
+1. Confirm that three fixed assets with impairment indicators configured are displayed. TOOLM-000006 doesn't have any impairment adjustment, whereas TOOLM-000007 and TOOLM-000008 have adjustments of -1,750,000.00 and -2,250,000.00, respectively.  
+1. Select **Save impairment** to open the drop dialog.
+1. In the **Description** field, enter a value.
+1. In the **Date** field, enter a date.
+1. Select **OK**. The confirmation form of the impaired fixed assets is displayed and the impairment test ID is issued.   
 
 
 

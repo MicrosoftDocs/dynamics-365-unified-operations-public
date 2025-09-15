@@ -1,20 +1,18 @@
 ---
-title: Resolve concurrency across price component codes (preview)
+title: Resolve concurrency across price component codes
 description: Concurrency across price component rules let you define what happens if multiple discounts and price adjustments apply to the same order and/or order line.
 author: sherry-zheng
 ms.author: chuzheng
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/25/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: GUPPricingTree, GUPParameters, GUPPriceComponentCodeSetup
 ---
 
-# Resolve concurrency across price component codes (preview)
+# Resolve concurrency across price component codes
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.34 GA -->
 
 Concurrency rules let you define what happens if multiple pricing rules apply to the same order and/or order line. You can set up concurrency rules to control whether the customer receives just one of the matching rules (and if so, which one they receive), or whether the rules are combined (and if so, how they're combined). There are two types of concurrency:
 

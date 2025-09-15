@@ -3,7 +3,8 @@ title: Platform updates for version 10.0.42 of finance and operations apps (Dece
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.42 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
-ms.date: 11/04/2024
+ms.date: 03/11/2025
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
   - bap-template
@@ -31,10 +32,11 @@ This section contains a table that lists the features that are included in this 
 
 ## Feature enhancements included in this release
 
-This section will contain a table that lists the enhancements that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
+This section contains a table that lists the enhancements that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+| Data Management | Automatic retry support for DMF batch jobs | Data management batch jobs failed sometimes without completing the import/export operations due to batch node restarts. To address this issue, retry support was implemented to allow automatic retries if a batch restarts. Learn more in [Data import and export jobs overview](../data-entities/data-import-export-job.md). | Default |
  
 
 ### Bug fixes

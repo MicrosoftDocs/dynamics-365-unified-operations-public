@@ -3,7 +3,7 @@ title: Import fiscal documents for Brazil
 description: Learn about the functionality for direct import fiscal documents that is available for the Brazilian localization, including an outline on import declarations.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/27/2024

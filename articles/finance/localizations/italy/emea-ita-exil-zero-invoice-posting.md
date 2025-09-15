@@ -3,7 +3,7 @@ title: Posting invoices with zero amount
 description: Learn how you can post financial transactions for invoices that have an amount of 0 (zero), including an outline on posting invoices.
 author: mrolecki
 ms.author: mrolecki
-ms.topic: article
+ms.topic: concept-article
 ms.date: 11/21/2019
 ms.reviewer: johnmichalak
 audience: Application User

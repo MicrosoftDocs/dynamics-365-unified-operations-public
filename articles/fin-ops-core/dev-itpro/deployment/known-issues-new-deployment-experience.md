@@ -3,7 +3,7 @@ title: Known issues with self-service deployment
 description: Learn about known issues that you might experience when using self-service deployment for Lifecycle Services (LCS).
 author: rashmansur
 ms.author: rashmim
-ms.topic: article
+ms.topic: troubleshooting-known-issue
 ms.date: 03/31/2021
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak

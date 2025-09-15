@@ -5,13 +5,15 @@ author: jasongre
 ms.author: jasongre
 ms.topic: how-to
 ms.date: 12/31/2024
+ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.assetid: c84d7929-4662-4abb-b345-ccc539d809d0
-ms.custom: 
+ms.custom:
   - bap-template
   - evergreen
+  - sfi-ropc-nochange
 ---
 
 # Tile and list caching for workspaces

@@ -3,7 +3,7 @@ title: Customize table and column mappings
 description: Learn how to customize table and column mappings, add transforms, enable filtering for your data, and add new table maps.
 author: nhelgren
 ms.date: 05/30/2023
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: twheeloc
 ms.author: nhelgren

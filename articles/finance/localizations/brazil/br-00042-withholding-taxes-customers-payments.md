@@ -1,16 +1,15 @@
 ---
 title: Withholding taxes on customer payments (Brazil)
-description: Learn how you use the Journal voucher page to enter and post payments that you receive from customers for the sale of items or services.
+description: This article describes how to use the Journal voucher page to enter and post payments that you receive from customers for the sale of items or services in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 03/13/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
 ms.search.industry: Manufacturing;Distribution;Service industries
 ---
 
@@ -18,61 +17,62 @@ ms.search.industry: Manufacturing;Distribution;Service industries
 
 [!include [banner](../../includes/banner.md)]
 
-You use the Journal voucher page to enter and post payments that you receive from customers for the sale of items or services. When you post a customer payment journal, the withholding tax group that is set up for the customer is used to calculate the withholding tax on the transaction. This task uses the BRMF demo company.
+This article describes how to use the Journal voucher page to enter and post payments that you receive from customers for the sale of items or services in Brazil with Microsoft Dynamics 365 Finance.
 
-1. Go to Accounts receivable > Customers > All customers.
-2. In the list, find and select the desired record.
-3. In the list, click the link in the selected row.
-4. Expand the Invoice and delivery section.
-5. Click Edit.
-6. Select Yes in the Calculate withholding tax field.
-7. In the Withholding tax group field, enter or select a value.
-8. Click Save.
-9. Close the page.
-10. Close the page.
-11. Go to Sales and marketing > Sales orders > All sales orders.
-12. Click New.
-13. In the Customer account field, enter or select a value.
-14. Click OK.
-15. In the list, mark the selected row.
-16. In the Item number field, enter or select a value.
-17. In the Quantity field, enter a number.
-18. In the Site field, enter or select a value.
-19. Expand the Line details section.
-20. Click the Setup tab.
-21. In the Item withholding tax group field, enter or select a value.
-22. In the Withholding tax group field, enter or select a value.
-23. Click the Fiscal information tab.
-24. In the Fiscal document type field, enter or select a value.
-25. In the Service code field, enter or select a value.
-26. Click Save.
-27. Click Invoice.
-28. In the Quantity field, select an option.
-29. Select Yes in the Print invoice field.
-30. Click OK.
-31. Click Yes.
-32. Close the page.
-33. Close the page.
-34. Close the page.
-35. Go to Accounts receivable > Payments > Payment journal.
-36. Click New.
-37. In the list, mark the selected row.
-38. In the Name field, enter or select a value.
-39. Click Lines.
-40. In the list, mark the selected row.
-41. In the Account field, specify the desired values.
-42. Click Settle transactions.
-43. In the list, find and select the desired record.
-44. Select the Mark check box.
-45. Select the Mark check box.
-46. Click the Withholding tax tab.
-47. Click OK.
-48. In the list, mark the selected row.
-49. In the Description field, enter or select a value.
-50. In the Offset account field, specify the desired values.
-51. Click Post.
-52. Close the page.
-53. Close the page.
+You use the Journal voucher page to enter and post payments that you receive from customers for the sale of items or services. When you post a customer payment journal, the withholding tax group that is set up for the customer is used to calculate the withholding tax on the transaction. 
+
+The following procedure uses the BRMF demo company.
+
+To use the Journal voucher page to enter and post payments that you receive from customers, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
+1. In the list, find and select the desired record.
+1. Select the link in the selected row.
+1. Expand the **Invoice and delivery** section.
+1. Select **Edit**.
+1. In the **Calculate withholding tax** field, select **Yes**.
+1. In the **Withholding tax group** field, enter or select a value.
+1. Select **Save**.
+1. Close the page.
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+1. Select **New**.
+1. In the **Customer account** field, enter or select a value.
+1. Select **OK**.
+1. In the list, mark the selected row.
+1. In the **Item number** field, enter or select a value.
+1. In the **Quantity** field, enter a number.
+1. In the **Site** field, enter or select a value.
+1. Expand the **Line details** section.
+1. Select the **Setup** tab.
+1. In the **Item withholding tax group** field, enter or select a value.
+1. In the **Withholding tax group** field, enter or select a value.
+1. Select the **Fiscal information** tab.
+1. In the **Fiscal document type** field, enter or select a value.
+1. In the **Service code** field, enter or select a value.
+1. Select **Save**.
+1. Select **Invoice**.
+1. In the **Quantity** field, select an option.
+1. In the **Print invoice** field, select **Yes**.
+1. Select **OK**.
+1. Select **Yes**.
+1. Close the page.
+1. Go to **Accounts receivable \> Payments \> Payment journal**.
+1. Select **New**.
+1. In the list, mark the selected row.
+1. In the **Name** field, enter or select a value.
+1. Select **Lines**.
+1. In the list, mark the selected row.
+1. In the **Account** field, enter the desired values.
+1. Select **Settle transactions**.
+1. In the list, find and select the desired record.
+1. Select the **Mark** checkbox.
+1. Select the **Withholding tax** tab.
+1. Select **OK**.
+1. In the list, mark the selected row.
+1. In the **Description** field, enter or select a value.
+1. In the **Offset account** field, enter the desired values.
+1. Select **Post**.
+1. Close the page.
 
 
 

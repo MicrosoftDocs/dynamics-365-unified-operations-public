@@ -3,13 +3,14 @@ title: Initialize company data
 description: Learn how to initialize data with company information before you enable a dual-write connection, including prerequisites and a high-level scenario.
 author: RamaKrishnamoorthy
 ms.author: ramasri
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/01/2020
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: sfi-image-nochange
 ---
 
 # Initialize company data

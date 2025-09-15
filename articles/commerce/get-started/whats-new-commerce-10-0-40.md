@@ -3,6 +3,7 @@ title: Preview features in Dynamics 365 Commerce 10.0.40 (June 2024)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.40. 
 author: johnmichalak
 ms.date: 08/27/2024
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 audience: Application User
 ms.reviewer: johnmichalak

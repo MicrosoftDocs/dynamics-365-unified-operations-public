@@ -1,59 +1,56 @@
 ---
 title: Generate Japan consumption tax report
-description: Learn about generating the Japan consumption tax report, including a step-by-step process using the JPMF demo data company.
+description: Learn how to generate the Japan consumption tax report in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 04/25/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: LedgerConsumptionTaxCalcTrans_JP, LedgerConsumptionTaxReportTrans_JP
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Generate Japan consumption tax report
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through generating the Japan consumption tax report. This procedure was created using the demo data company JPMF.
+This article explains how to generate the Japan consumption tax report in Microsoft Dynamics 365 Finance.
 
-1. Go to Tax > Declarations > Sales tax > Japanese sales tax report.
-2. In the From date field, enter a date.
-    * For example: 2012/1/1  
-3. In the To date field, enter a date.
-    * For example: 2012/12/31  
-4. In the Settlement period field, type a value.
-5. In the Declaration type field, select an option.
-6. In the Calculation method field, select an option.
-7. Select Yes in the Amendment field.
-    * If you have already generated the report previously and you are generating it again, you must choose to update the existing record on the amendment.  
-8. Click OK.
-9. Click Edit.
-10. In the Item 6 field, enter a number.
-    * The data is retrieved and summarized from the transactions. You can update the editable fields for adjustment purposes.  
-11. Click Save.
-12. Click Update amount.
-    * This recalculates the amounts.  
-13. Click Finalize.
-14. Click Yes.
-15. Click Consumption tax report.
-16. Click the Tax calculation tab.
-17. Click Edit.
-18. In the Item 10 field, enter a number.
-19. Click Save.
-20. Click Update amount.
-21. Click the Additional information tab.
-    * In the Additional information tab, the information is printed as configured.  
-    * For example: you can change the Installment basis slider to be 'Yes' to print a yes on the final report.  
-22. Click Finalize.
-23. Click Yes.
-24. On the Action Pane, click Consumption tax report.
-    * Click Print reports to generate the final report.  
+The following procedure was created using the demo data company JPMF.
+
+To generate the Japan consumption tax report, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Sales tax \> Japanese sales tax report**.
+1. In the **From date** field, enter a date.
+1. In the **To date** field, enter a date.
+1. In the **Settlement period** field, enter a value.
+1. In the **Declaration type** field, select an option.
+1. In the **Calculation method** field, select an option.
+1. In the **Amendment** field, select **Yes**. If you already generated the report and you're generating it again, you must choose to update the existing record on the amendment.  
+1. Select **OK**.
+1. Select **Edit**.
+1. In the **Item 6** field, enter a number. The data is retrieved and summarized from the transactions. You can update the editable fields for adjustment purposes.  
+1. Select **Save**.
+1. Select **Update amount**. This action recalculates the amounts.  
+1. Select **Finalize**.
+1. Select **Yes**.
+1. Select **Consumption tax report**.
+1. Select the **Tax calculation** tab.
+1. Select **Edit**.
+1. In the **Item 10** field, enter a number.
+1. Select **Save**.
+1. Select **Update amount**.
+1. Select the **Additional information** tab. The information is printed as configured. You can set the **Installment basis** slider to be **Yes** to print a "Yes" on the final report.  
+1. Select **Finalize**.
+1. Select **Yes**.
+1. On the Action Pane, select **Consumption tax report**.
+1. To generate the final report, select **Print reports**.  
 
 > [!NOTE]
-> To calculate the consumption tax report that should be submitted from October 1, 2019, you must turn on the **Japanese sales tax report** feature in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> To calculate the consumption tax report that should be submitted from October 1, 2019, you must turn on the **Japanese sales tax report** feature in the **Feature management** workspace. Learn more at [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

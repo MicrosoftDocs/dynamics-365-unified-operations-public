@@ -3,7 +3,7 @@ title: Credit management setup
 description: Learn about the setup that is required for credit management, including overviews on credit management workflows, blocking rules, and account statuses.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 05/13/2024
 ms.custom:  
 ms.reviewer: twheeloc

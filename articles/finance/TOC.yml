@@ -1759,7 +1759,9 @@
                         - name: Singapore (preview)
                           href: localizations/singapore/apac-sgp-e-invoices.md?context=/dynamics365/context/finance
                         - name: Uruguay
-                          href: localizations/iberoamerica/ltm-uruguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
+                          href: localizations//iberoamerica/ltm-uruguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
+                        - name: Paraguay
+                          href: localizations//iberoamerica/ltm-paraguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Tax Calculation
@@ -4318,6 +4320,8 @@
                       href: localizations/turkiye/emea-tur-exchange-difference-invoicing.md
                     - name: Use currency conversion
                       href: localizations/turkiye/emea-tur-currency-conversion.md
+                    - name: Use checks and promissory notes
+                      href: localizations/turkiye/emea-turkiye-checks-and-promissory-notes.md                      
                     - name: Generate e-Ledger
                       href: localizations/turkiye/emea-tur-e-ledger.md
                 - name: United Arab Emirates (UAE)
@@ -4659,6 +4663,8 @@
                   href: business-performance-planning/calculated-columns.md
                 - name: Load data using dataflows
                   href: business-performance-planning/load-data-dataflows.md
+                - name: Import and export cubes and dimensions
+                  href: business-performance-planning/bpp-cubes-dim.md
                 - name: Audit cubes
                   items:
                    - name: Audit cubes

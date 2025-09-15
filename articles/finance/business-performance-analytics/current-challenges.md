@@ -3,7 +3,7 @@ title: Business performance analytics troubleshooting
 description: Learn about some current known issues in Business performance analytics.
 author: lizmora
 ms.author: jiwo
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.date: 11/14/2024
 ms.custom:
 ms.reviewer: twheeloc 
