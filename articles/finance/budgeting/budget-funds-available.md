@@ -39,7 +39,7 @@ We recommend that you leave the **Unposted actual expenditures** option cleared.
 
 In addition, to prevent incorrect setup on the **Document and journals** tab in the **Budget control configuration** that could lead to the inaccurate budget tracking, the following specific configuration options must be applied:
 
-| If this option is ticked to include in budget control | This option must also be selected in the Budget funds available tab | And this option is optional in the Budget funds available tab |
+| If this option is ticked to include in Documents and journals tab | This option must also be selected in the Budget funds available tab | And this option is optional in the Budget funds available tab |
 | ------------------------- | -------------------------------- |-------------------------------- |
 | Purchase order (check on header or on line entry) | Budget reservations for encumbrances | Budget reservations for unconfirmed encumbrances *and** Reduction to Budget reservations for unconfirmed encumbrances |
 | Purchase requisition (check on header or on line entry) | Budget reservations for pre-encumbrances | Budget reservations for unconfirmed pre-encumbrances |
