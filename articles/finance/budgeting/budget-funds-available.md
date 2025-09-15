@@ -19,8 +19,7 @@ ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 
 [!include [banner](../includes/banner.md)]
 
-
-This article explains the **Only track amounts in the budget funds available calculation** parameter and provides information that helps you configure budget control to optimize management of your organization's financial resources.
+This article provides information that helps you configure budget control to optimize management of your organization's financial resources.
 
 ## Enhanced calculation parameter for budget funds available
 
@@ -37,3 +36,11 @@ Some budget control configuration options must have specific settings for this p
 This parameter affects only new documents as well as new budget control configurations during activation. Amounts for existing documents will continue to be tracked and shown in the budget control statistics inquiry until a budget funds available setting is changed and the new budget control configuration is activated. At that point, budget tracking data will be removed for documents that were removed from the budget funds available calculation. If you try to activate new budget control configuration that doesn't align with the requirements defined in the table above, an error message will appear. 
 
 We recommend that you leave the **Unposted actual expenditures** option cleared. If it's selected, a time-consuming budget control calculation will be done on unposted documents, such as pending vendor invoices.
+
+In addition, to prevent incorrect setup on the **Document and journals** tab in the **Budget control configuration** that could lead to the inaccurate budget tracking, the following specific configuration options must be applied:
+
+| If this option is ticked to include in budget control | This option must also be selected in the Budget funds available tab | And this option is optional in the Budget funds available tab |
+| ------------------------- | -------------------------------- |-------------------------------- |
+| Purchase order (check on header or on line entry) | Budget reservations for encumbrances | Budget reservations for unconfirmed encumbrances *and** Reduction to Budget reservations for unconfirmed encumbrances |
+| Purchase requisition (check on header or on line entry) | Budget reservations for pre-encumbrances | Budget reservations for unconfirmed pre-encumbrances |
+| General budget reservation (check on header or on line entry) | Budget reservations for encumbrances | Budget reservations for unconfirmed encumbrances *and** Reduction to Budget reservations for unconfirmed encumbrances |
