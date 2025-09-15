@@ -29,8 +29,7 @@ delete_from finTag where finTag.RecId == someRecId;
 ```
 
 ### Can I update the FinTag table directly?
-Direct updates bypass validation logic, trigger execution, and can lead to corrupt data. Other records in the system may be using this FinTag record as well. Changing your instance may also 
-unintentionally change others.
+Direct updates bypass validation logic, trigger execution, and can lead to corrupt data. Other records in the system may be using this FinTag record as well. Changing your instance may also unintentionally change others.
 ```x++
 // NEVER DO THIS
 update_recordset finTag setting DisplayValue = "NewValue" where finTag.RecId == someRecId;
@@ -59,5 +58,4 @@ The `save()` method ensures that all validation logic, business rules, and trigg
 only if necessary.
 
 
-Following these guidelines is essential for maintaining system stability and data integrity when working with Financial tags. Not following these practices can lead to data corruption, system instability, and 
-support issues.
+
