@@ -3993,10 +3993,10 @@
             href: warehousing/pick-oldest-batch.md
           - name: Query item data on a mobile device
             href: warehousing/warehouse-app-item-inquiry.md
-        - name: Work with the Warehouse Managment mobile app
-          items:
           - name: Scan bar codes using a camera in the Warehouse Management mobile app
             href: warehousing/scan-bar-codes-using-a-camera.md
+        - name: Work with the Warehouse Managment mobile app
+          items:
           - name: Warehouse Mobile app accessibility features
             href: warehousing/warehouse-app-accessibility.md
           - name: Workload insights with Copilot
