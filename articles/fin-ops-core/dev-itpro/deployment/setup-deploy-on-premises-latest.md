@@ -62,7 +62,7 @@ These components depend on the following system software:
 - Optional but **highly** recommended: Active Directory Certificate Services (AD&nbsp;CS) on Windows Server
 
 > [!IMPORTANT]
-> For information about supported versions, see [Microsoft Dynamics 365 Finance + Operations supported software](./onprem-compatibility.md).
+> For information about supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](./onprem-compatibility.md).
 
 ## Microsoft Dynamics Lifecycle Services
 
@@ -107,7 +107,7 @@ The hardware configuration includes the following components:
 For more information, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> For information about supported versions, see [Microsoft Dynamics 365 Finance + Operations supported software](./onprem-compatibility.md).
+> For information about supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](./onprem-compatibility.md).
 
 ### Hardware layout
 
@@ -892,7 +892,7 @@ Finance + Operations (on-premises) requires more configuration of AD&nbsp;FS, be
     ```
 
     > [!NOTE]
-    > These commands can be run only on an AD&nbsp;FS server that's running Windows Server 2019 or later. AD&nbsp;FS on Windows Server 2016 has been deprecated. For more information, see [Microsoft Dynamics 365 Finance + Operations supported software](onprem-compatibility.md#active-directory-federation-services-ad-fs).
+    > These commands can be run only on an AD&nbsp;FS server that's running Windows Server 2019 or later. AD&nbsp;FS on Windows Server 2016 has been deprecated. For more information, see [Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](onprem-compatibility.md#active-directory-federation-services-ad-fs).
 
 1. Restart the AD&nbsp;FS service so that the settings are applied correctly.
 
