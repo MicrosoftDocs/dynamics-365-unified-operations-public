@@ -32,7 +32,9 @@ To use attachments with Copilot for finance and operations apps, make sure these
     - Copilot for finance and operations generation solution.
     - Copilot for finance and operations anchor solution.
   - Finance and Operations Virtual Entity.
-- Turn on the **Enable user attachments in Copilot sidecar** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
+- Turn on the following features in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) to enable the respective attachment experiences:
+  - **Enable user attachments in Copilot sidecar**
+  - **Enable ability for user to attach a screenshot to Copilot sidecar**
 
 ## Attaching files to a chat session
 
