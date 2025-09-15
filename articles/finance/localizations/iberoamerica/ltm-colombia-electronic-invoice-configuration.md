@@ -35,7 +35,7 @@ This article provides information to help you get started with Electronic invoic
 
 After you configure Electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the [Edicom](https://edicomgroup.com/electronic-invoicing/colombia) authorized certification provider (PAC) according to the [regulatory requirements in Colombia](https://www.dian.gov.co/).
 
-![Diagram of the electronic invoicing workflow in Colombia.](ltm-col-e-invoice-workflow.png)
+![Diagram of the electronic invoicing workflow in Colombia.](ltm-colombia-electronic-invoice-workflow.png)
 
 > [!NOTE]
 > The electronic invoicing approach that this article describes is implemented by using an invoicing service that is applicable only to cloud deployments of Finance or Supply Chain Management.
@@ -134,7 +134,7 @@ Each of these interactions requires common parameters, such as Edicom connection
 
 1. Import the latest version of the **Colombia Electronic Invoice (CO)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). The following illustrations show what the feature looks like after you import it from Dataverse.
 
-    ![Screenshot of the imported Globalization feature for Colombia on the Electronic invoicing features page, including the information on the Versions tab.](ltm-col-e-invoice-glob-feature-imported.png)
+    ![Screenshot of the imported Globalization feature for Colombia on the Electronic invoicing features page, including the information on the Versions tab.](ltm-colombia-electronic-invoice-globalization-feature-imported.png)
 
 
     If you go to the **Configuration** tab, as shown in the previous screenshot, you should see a page displaying information similar to the following table:
