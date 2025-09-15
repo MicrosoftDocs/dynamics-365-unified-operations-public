@@ -34,11 +34,11 @@ The following illustration shows an example system where Warehouse management on
 
 :::image type="content" source="media/wms-only-d365-shared-warehouse-integration.svg" alt-text="Screenshot of the Warehouse management only mode with external shared warehouse." lightbox="media/wms-only-d365-shared-warehouse-integration.svg":::
 
-The *USMF* and *USSW* legal entities are included in the [demo data](../../../fin-ops-core/dev-itpro/get-started/demo-data.md). The *LE2* legal entity is displayed in the illustriation as an example.
+The *USMF* and *USSW* legal entities are included in the [demo data](../../fin-ops-core/dev-itpro/get-started/demo-data.md). The *LE2* legal entity is displayed in the illustriation as an example.
 The scenarios described below use sample records and values from the demo data. To follow along, ensure your system has the standard demo data installed. Otherwise, substitute the sample values with your own configuration settings.
 
 ### Warehouse management only mode demo data
-The most relavant demo data created to support *Warehouse management only mode with external shared warehouses* scenarios is:
+To support scenarios involving *Warehouse management only mode with external shared warehouses*, the following demo data has been configured:
 - The new legal entity *USSW* setup with a Site *1* and warehouse *SW-11*.
 - Work templates and location directives for *Inbound and Outbound shipment orders*.
 - The source system *Product Information Management (PIM)*
@@ -46,6 +46,8 @@ The most relavant demo data created to support *Warehouse management only mode w
 - The item *SW0001* released to both *USMF* and *USSW* legal entitites.
    - In *USSW* legal entity, the item has *Non-valuated* item model group and has *owner* tracking dimension activated.
 - A new warehouse *2-EXT* created in the *USMF* legal entity and marked as an external warehouse mapped to the warehouse *SW-11* in the *USSW* legal entity.
+
+ A broader set of demo data has been configured. However, only the most relevant elements are highlighted here.
 
 > [!NOTE]
 > The mentioned demo data examples are available from Supply Chain Management version 10.0.45 and later.
