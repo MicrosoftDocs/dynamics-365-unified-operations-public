@@ -3957,6 +3957,8 @@
           items:
           - name: Warehouse Mobile app accessibility features
             href: warehousing/warehouse-app-accessibility.md
+          - name: User settings, color themes, and sound themes
+            href: warehousing/warehouse-app-user-settings-themes.md
           - name: Workload insights with Copilot
             href: warehousing/warehouse-management-mobile-app-insights.md
           - name: Warehouse Management mobile app calculator
