@@ -1730,6 +1730,8 @@
                               href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
                             - name: Vendor electronic invoice import in Chile
                               href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
+                        - name: Colombia
+                          href: localizations/iberoamerica/ltm-colombia-electronic-invoice-configuration.md?context=/dynamics365/context/finance
                         - name: Costa Rica
                           href: localizations//iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/finance                        
                         - name: Denmark
