@@ -23,11 +23,23 @@ Johan: This is raw Copilot generated text. You should review carefully for inspi
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.45 GA -->
 
-Sample management is a vital component of quality control in manufacturing, ensuring that products meet regulatory and quality standards. The process described in this article serves as an example of how sample management can be implemented, but the specific details may vary depending on your company's branch, industry, and practices. By tailoring the sample management process to your organization's needs, you can maintain compliance, improve operational efficiency, and ensure product integrity. Use this guide as a framework to understand the key steps involved, and adapt them to align with your unique requirements and workflows. Proper implementation of sample management can significantly enhance traceability, accountability, and overall quality assurance.
+Sample management is a component of quality control in manufacturing, ensuring that products meet regulatory and quality standards. The process described in this article serves as an example of how sample management can be implemented, but the specific details may vary depending on your company's branch, industry, and practices. By tailoring the sample management process to your organization's needs, you can maintain compliance, improve operational efficiency, and ensure product integrity. Use this guide as a framework to understand the key steps involved, and adapt them to align with your unique requirements and workflows. Proper implementation of sample management can significantly enhance traceability, accountability, and overall quality assurance.
 
-## A typical sample management process
+## Understanding the lifecycle of a sample in sample management
 
-<!-- KFM: into needed -->
+In modern manufacturing and quality control environments, the ability to systematically manage product samples is essential for ensuring compliance, traceability, and consistent product quality. Sample management provides a structured framework for handling samples from their creation through to disposal, integrating seamlessly with production workflows and quality assurance protocols.
+The lifecycle of a sample begins with its registration, triggered either manually or automatically based on predefined sampling plans. These plans are tailored to the production context—whether inline sampling, which occurs during active production before inventory is finalized, or continuous sampling, which monitors quality at regular intervals throughout batch production. 
+
+Once registered, each sample is assigned a unique identifier and categorized by sample type, which determines its handling procedure, retention policy, and applicable lifecycle states. These lifecycle states—such as Quality Order Created, Quality Order Validated, and Sample Scrapped—are system-defined and visually tracked to ensure clarity and accountability throughout the sample’s journey.
+
+Samples undergo testing via quality orders, which may be automatically generated or manually initiated. The outcome of these tests directly influences inventory control decisions: passing results may release blocked inventory, while failed tests can trigger automatic blocking of related batches or license plates. This dynamic interaction between sample status and inventory disposition ensures that only quality-approved goods proceed through the supply chain. 
+
+Throughout the lifecycle, samples are managed using tools like the sample management workbench, which offers capabilities such as label printing, audit trail review, lifecycle state changes, and manual overrides. These features empower quality teams to maintain control and visibility over sample data, enabling informed decision-making and regulatory compliance.
+
+In essence, sample management transforms quality control from a reactive process into a proactive, data-driven discipline. By embedding sample lifecycle tracking into production and inventory systems, organizations can uphold high standards of product integrity while streamlining operations across departments.
+
+Here is an overview of the activities connected to typical life cycle states of a sample:
+
 
 1. **Registration** – Register the sample in the system. The system generates a unique sample ID and records relevant details such as sample type and lifecycle state.
 1. **Receipt in lab** – Receive the sample in the laboratory and verify its condition. Update the lifecycle state to reflect its arrival.
@@ -39,10 +51,6 @@ Sample management is a vital component of quality control in manufacturing, ensu
 
 :::image type="content" source="media/sample-management-process-diagram.png" alt-text="Diagram of a typical sample management process" lightbox="media/sample-management-process-diagram.png":::
 
-## Sample registration
-
-Sample registration is the first step in the sample management process. It serves as the foundation for ensuring quality control in manufacturing. This step involves creating a unique identity for each sample, which allows for accurate tracking and management throughout its lifecycle. By registering samples, manufacturing managers can ensure that all quality-related data is systematically recorded and easily accessible.
-
 <!-- KFM: 
 
 - Describe how sample records are created (with links to the topics for inline and continuous sampling). Maybe also describe how to manually create a sample from the workbench.
@@ -53,12 +61,9 @@ Sample registration is the first step in the sample management process. It serve
 -->
 
 
+## Sample registration
 
-
-
-
-
-
+Sample registration is the first step in the sample management process. It serves as the foundation for ensuring quality control in manufacturing. This step involves creating a unique identity for each sample, which allows for accurate tracking and management throughout its lifecycle. By registering samples, manufacturing managers can ensure that all quality-related data is systematically recorded and easily accessible. Samples can be registered in multiple ways, but most often their creation is controlled by the sampling method: continuous or inline. These methods define when and how samples are registered, whether automatically through system logic (continuous) or manually (inline) by production personnel.
 
 ## Receipt in lab
 
