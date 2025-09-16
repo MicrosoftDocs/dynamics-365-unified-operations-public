@@ -2100,6 +2100,10 @@
                       href: localizations/brazil/brazil.md
                     - name: Scope of localization
                       href: localizations/brazil/latam-bra-scope.md
+                    - name: New Tax Reform
+                      items:
+                       - name: Enable feature in the Feature management
+                    
                     - name: Fiscal books
                       items:
                         - name: Brazil fiscal books overview
