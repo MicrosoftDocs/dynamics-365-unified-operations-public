@@ -4,7 +4,7 @@ description: Learn how to configure and use the Electronic Invoicing service ISV
 author: ikondratenko
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 09/08/2025
+ms.date: 09/16/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global
