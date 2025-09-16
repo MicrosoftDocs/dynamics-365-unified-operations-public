@@ -1,10 +1,10 @@
 ---
-title: Troubleshoot the Office integration
-description: Access answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
+title: Office integration FAQ
+description: Get answers to frequently asked questions about the capabilities of the Microsoft Office integration.
 author: jasongre
 ms.author: jasongre
-ms.topic: how-to
-ms.date: 03/03/2025
+ms.topic: faq
+ms.date: 09/16/2025
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -14,13 +14,12 @@ ms.custom:
   - bap-template
 ---
 
-# Troubleshoot the Office integration
+# Office integration FAQ
 
 [!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
-
 [!include [banner](../includes/banner.md)]
 
-This article provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
+This article provides answers to frequently asked questions about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
 
 ## Frequently asked questions
 
