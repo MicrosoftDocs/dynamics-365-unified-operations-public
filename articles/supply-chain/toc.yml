@@ -3925,11 +3925,7 @@
         items:
         - name: What's new or changed in the Warehouse Management mobile app
           href: warehousing/whats-new-wma.md
-        - name: Warehouse Mobile app accessibility features
-          href: warehousing/warehouse-app-accessibility.md
-        - name: Workload insights with Copilot
-          href: warehousing/warehouse-management-mobile-app-insights.md
-        - name: Install, set up, and use mobile devices
+        - name: Install and set up mobile devices
           items:
           - name: Install the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
@@ -3957,8 +3953,6 @@
             href: warehousing/mobile-barcode-support.md
           - name: Advanced barcode scanner configuration
             href: warehousing/warehouse-app-adv-scanner-config.md
-          - name: Scan bar codes using a camera in the Warehouse Management mobile app
-            href: warehousing/scan-bar-codes-using-a-camera.md
         - name: Set up fields and menus for mobile devices
           items:
           - name: Configure fields for the Warehouse Management mobile app
@@ -3999,18 +3993,30 @@
             href: warehousing/pick-oldest-batch.md
           - name: Query item data on a mobile device
             href: warehousing/warehouse-app-item-inquiry.md
-        - name: Global mobile device parameters
-          href: warehousing/mobile-device-parameters.md
-        - name: Warehouse mobile devices workspace
-          href: warehousing/mobile-device-workspace.md
-        - name: Mobile device user settings
-          href: warehousing/mobile-device-user-settings.md
-        - name: Warehouse Management mobile app calculator
-          href: warehousing/warehouse-app-calculator.md
-        - name: Warehouse app event processing
-          href: warehousing/warehouse-app-events.md
-        - name: Inspect details of active Warehouse Management mobile app sessions
-          href: warehousing/work-user-sessions.md
+          - name: Scan bar codes using a camera in the Warehouse Management mobile app
+            href: warehousing/scan-bar-codes-using-a-camera.md
+        - name: Work with the Warehouse Managment mobile app
+          items:
+          - name: Warehouse Mobile app accessibility features
+            href: warehousing/warehouse-app-accessibility.md
+          - name: Workload insights with Copilot
+            href: warehousing/warehouse-management-mobile-app-insights.md
+          - name: Warehouse Management mobile app calculator
+            href: warehousing/warehouse-app-calculator.md
+          - name: View the app log on a mobile device
+            href: warehousing/warehouse-app-log-view.md
+        - name: Manage mobile devices and sessions from Supply Chain Management
+          items:
+          - name: Global mobile device parameters
+            href: warehousing/mobile-device-parameters.md
+          - name: Warehouse mobile devices workspace
+            href: warehousing/mobile-device-workspace.md
+          - name: Mobile device user settings
+            href: warehousing/mobile-device-user-settings.md
+          - name: Warehouse app event processing
+            href: warehousing/warehouse-app-events.md
+          - name: Inspect details of active Warehouse Management mobile app sessions
+            href: warehousing/work-user-sessions.md
         - name: Extend warehouse mobile processes
           items:
           - name: Process guide framework
