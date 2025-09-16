@@ -199,22 +199,25 @@ Follow these steps to define item sampling criteria:
 
 ## Configure related quality management records
 
-<!-- KFM: Describe other important types of settings that are needed to make quality management work. Just list them, mention how they apply to sample management, and give a link. I think the following are relevant here, but there could be more:
--->
+The following describes some other important topics for sample management.
 
 ### Quality associations
 
-Quality associations are configured to trigger sample management when production orders are reported as finished for specific items. This setup references test groups and item sampling configurations to ensure consistency and automation in quality control. For inline samples, a quality association is not required, as these samples are collected on demand directly from the production order.
+Quality associations are configured to trigger sample management when production orders are reported as finished for specific items. This setup references test groups and item sampling configurations to ensure consistency and automation in quality control. For inline samples, a quality association is not required, as these samples are collected on demand directly from the production order. Learn more in [Quality associations](../inventory/quality-associations.md).
 
 ### Test groups
 
-Test groups define the set of tests applied during quality orders. For sample management, you can us the field Update inventory status to indicate that 
+Test groups define the set of tests applied during quality orders. When configuring test groups for quality orders, especially when samples are taken out using license plates, the following fields are important for managing inventory status:
+    - **Update inventory status** - Enables inventory status updates based on test results.
+    - **status for failed tests** - Specifies the inventory status to apply when a quality order fails. Only applicable if Update Inventory Status is enabled. License plates are updated to this status.
+    - **status for passed tests** - Specifies the inventory status to apply when a quality order passes. Only applicable if Update Inventory Status is enabled. License plates are updated to this status.
 
-No special configuration is required for test groups within sample management, as existing functionality is reused. In this example, a sample test group is configured using license plates. The primary purpose of this setup is to update the inventory status based on the outcome of the quality order. By default, the inventory status is set to QC Hold. If the quality order fails, the system updates both the associated inventory and the related production inventory to QC Failed. Conversely, if the quality order passes, the tested inventory and its related inventory are updated to QC Pass.
+Learn more in [Quality management test groups](../inventory/quality-test-groups.md) 
 
+### Batch disposition codes
 
-- [Quality management test groups](../inventory/quality-test-groups.md) 
-- [Quality associations](../inventory/quality-associations.md)
-- [Batch disposition codes](../inventory/batch-disposition-codes.md)
-
- -->
+A batch disposition code is assigned at the batch level and indicates whether a batch is available or unavailable for operational use. These codes help organizations manage inventory restrictions and support quality control compliance.
+Learn more in: [Batch disposition codes](../inventory/batch-disposition-codes.md). When using the continuous sample method with a sample plan based on batches, the results of quality inspections directly determine whether inventory is blocked or released through batch disposition codes. Specifically:
+    - If a quality order fails, the related inventory batch is blocked (made unavailable for use) by updating its batch disposition code.
+    - If a quality order passes, the batch is released (made available for use) by updating its batch disposition code accordingly.
+This process ensures that only batches meeting quality standards are available for operational activities, while those that fail inspection are restricted from use.
