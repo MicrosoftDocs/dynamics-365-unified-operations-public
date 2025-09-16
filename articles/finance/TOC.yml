@@ -2103,7 +2103,7 @@
                     - name: New Tax Reform
                       items:
                        - name: Enable feature in the Feature management
-                    
+                         href: localizations/brazil/br-reform-overview.md
                     - name: Fiscal books
                       items:
                         - name: Brazil fiscal books overview
