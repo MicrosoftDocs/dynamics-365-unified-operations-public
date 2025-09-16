@@ -1,11 +1,10 @@
 ---
 title: Store Commerce app
-description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
+description: Learn how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
 author: anush6121
 ms.author: anvenkat
-ms.date: 01/21/2025
+ms.date: 09/16/2025
 ms.topic: how-to
-audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.search.validFrom: 2022-03-01
@@ -174,7 +173,7 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
      > [!NOTE]
      > Store Commerce for Windows isn't supported on ARM processors.
 - [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
-- SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline mode). For information on which SQL Server edition to use, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
+- SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline mode). For information on which SQL Server edition to use, see [Commerce offline implementation considerations](implementation-considerations-offline.md).
 - Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)
 - To support the embedded Hardware Station components, you must install the correct version of .NET Framework. For Commerce versions 10.0.42 and later, install .NET Framework 4.8. For Commerce versions 10.0.41 and earlier, install .NET Framework 4.7.2. For more information, see [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).  
 - .NET Desktop Runtime 8 for version 10.0.42 and later, and .NET 6.0.16 for previous versions, are used by the Store Commerce app for UI rendering.
@@ -251,7 +250,7 @@ To activate Store Commerce after installation, follow these steps.
 
 ### Troubleshoot setup issues
 
-For troubleshooting information, see [Troubleshoot Store Commerce setup and installation issues](../troubleshoot/store-commerce-setup-installation.md).
+For troubleshooting information, see [Troubleshoot Store Commerce setup and installation issues](/previous-versions/troubleshoot/dynamics-365/commerce/point-of-sale/store-commerce-setup-installation).
 
 ## Customize the app
 
