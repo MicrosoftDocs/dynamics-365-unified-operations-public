@@ -209,8 +209,8 @@ Quality associations are configured to trigger sample management when production
 
 Test groups define the set of tests applied during quality orders. When configuring test groups for quality orders, especially when samples are taken out using license plates, the following fields are important for managing inventory status:
     - **Update inventory status** - Enables inventory status updates based on test results.
-    - **status for failed tests** - Specifies the inventory status to apply when a quality order fails. Only applicable if Update Inventory Status is enabled. License plates are updated to this status.
-    - **status for passed tests** - Specifies the inventory status to apply when a quality order passes. Only applicable if Update Inventory Status is enabled. License plates are updated to this status.
+    - **Failed quality order status** - Specifies the inventory status to apply when a quality order fails. Only applicable if Update Inventory Status is enabled. License plates are updated to this status.
+    - **Passed quality order status** - Specifies the inventory status to apply when a quality order passes. Only applicable if Update Inventory Status is enabled. License plates are updated to this status.
 
 Learn more in [Quality management test groups](../inventory/quality-test-groups.md) 
 
