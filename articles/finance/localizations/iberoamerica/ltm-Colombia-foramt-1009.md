@@ -11,6 +11,8 @@ ms.reviewer: johnmichalak
 
 # Set up format 1009 file for Colombia
 
+[!INCLUDE[banner](../../includes/banner.md)]
+
 Set up and issue the format 1009 file. The format 1009 file shows the company's liabilities for a reporting period.
 
 The output includes two files: an XML file that meets official tax requirements and an Excel file for internal control.
@@ -36,7 +38,7 @@ Before you print the report, make sure these prerequisites are met:
 
 ## Configure tax application codes
 
-Run the Form 1009 report in Dynamics 365 Finance and Operations by setting up a tax application.
+To run the Form 1009 report in Dynamics 365 Finance and Operations by setting up a tax application, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax application** and select **New** to create a tax application record with code **1009** for format 1009.
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**.
@@ -47,7 +49,7 @@ Run the Form 1009 report in Dynamics 365 Finance and Operations by setting up a 
 
 Set up these tax application codes correctly so the report reflects taxable operations and complies with DIAN requirements.
 
-For more information, see [Tax application for Latin America](../ltm-core-tax-application.md).
+Learn more in [Tax application for Latin America](../ltm-core-tax-application.md).
 
 ## Configure application-specific parameters
 
@@ -56,7 +58,7 @@ Use lookups and conditions to select the combination of document classification 
 > [!NOTE]
 > Apply the lookup settings to both formats before you use them.
 
-Set up the report parameters.
+To set up the report parameters, follow these steps.
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configuration**.
 1. In the left pane, select **LTM Tax Report deployment** \> **File format 1009** or **File format 1009 Excel**.
@@ -65,17 +67,17 @@ Set up the report parameters.
 1. In the **Conditions** section, select **Add**, and then do the following:
 
     1. In the **Lookup result** field, select **Yes**.
-    1. In the **Document classification id.** field, select the appropriate document class.
+    1. In the **Document classification ID** field, select the appropriate document class.
 
 1. Select **Add** again, and then do the following:
 
     1. In the **Lookup result** field, select **No**.
-    1. In the **Document classification id.** field, select **Blank**.
+    1. In the **Document classification ID** field, select **Blank**.
 
 1. Select **Add** again, and then follow these steps:
 
     1. In the **Lookup result** field, select **No**.
-    1. In the **Document classification id.** field, select **Not Blank**.
+    1. In the **Document classification ID** field, select **Not Blank**.
 
     > [!NOTE]
     > Use the document classes you select here in the company transactions listed on the report.
@@ -98,6 +100,8 @@ Set up the report parameters.
 
 ## Issue format 1009 file
 
+To issue format 1009 file, follow these steps.
+
 1. Go to **Tax** > **Inquiries and reports** > **LATAM** > **Tax reporting**.
 1. In the **Format mapping** field, select **File format 1009**.
 1. Select **OK**.
@@ -106,6 +110,9 @@ Set up the report parameters.
 1. Select **OK**.
 
 ## Issue format 1009 file in Excel
+
+To issue format 1009 file in Excel, follow these steps.
+
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select **File format 1009 Excel**.
 1. Select **OK**.
@@ -114,3 +121,5 @@ Set up the report parameters.
 
 > [!NOTE]
 > When you run the Format 1009 report in Excel, you don't need to enter a value in the **Tax Application ID** field in the report launcher.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
