@@ -264,8 +264,8 @@ Set up units of measure.
 1. In the **Standard code** column, select the checkbox.
 1. In the **Value** section, in the **Value** field, enter the external code from the [UNECE Recommendation 20 code list](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/).
 
-        > [!NOTE]
-    > If no specific unit of measure applies, the system uses the default value **EA**.
+   > [!NOTE]
+   > If no specific unit of measure applies, the system uses the default value **EA**.
 
 ## Configure sales tax codes
 
