@@ -104,4 +104,4 @@ To generate a Format 1012 Excel file, follow these steps.
 > [!NOTE]
 > When executing the Format 1012 report in Excel, it is not necessary to populate the Tax Application ID field in the report launcher."
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
