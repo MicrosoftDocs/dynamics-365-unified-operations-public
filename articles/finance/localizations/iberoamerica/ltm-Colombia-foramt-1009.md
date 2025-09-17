@@ -32,7 +32,7 @@ Before you print the report, make sure these prerequisites are met:
 | Format | :::no-loc text="File format 1009"::: |
 | Format | :::no-loc text="File format 1009 Excel"::: |
 
-    For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 - Configure Electronic reporting (ER) parameters. For more information, see [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
