@@ -43,7 +43,7 @@ The **Role audit trail** report provides a history of the roles that have been a
 To view the **Role audit trail** report, follow one of these steps.
 
 - Go to **System administration** \> **Users** \> **User's role**.
-- Go to **System administration** \> **Security** \> **Security governance** \> **Temporary role management**.
+- Go to **System administration** \> **Security** \> **Security governance** \> **Role audit trail**.
 
 ## Security analysis report
 
