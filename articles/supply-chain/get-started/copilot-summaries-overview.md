@@ -1,8 +1,8 @@
 ---
 title: AI summaries with Copilot
 description: This article provides an overview of the various types of Microsoft Copilot-generated summaries that are available in Dynamics 365 Supply Chain Management.
-author: joaoalves
-ms.author: joaoalves
+author: prasungoel
+ms.author: prasungoel
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview

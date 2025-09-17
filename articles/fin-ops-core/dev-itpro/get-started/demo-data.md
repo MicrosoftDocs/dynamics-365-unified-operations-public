@@ -56,6 +56,7 @@ The demo data set supports 40 languages across 16 countries or regions. It also 
 | USPI         | Contoso Process Industry             |
 | USRT         | Contoso Retail USA                   |
 | USSI         | Contoso Consulting USA               |
+| USSW         | Contoso Shared Warehouse USA         |
 
 ## Embedded analytics
 

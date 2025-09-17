@@ -33,7 +33,9 @@ If you're having trouble with your network connection, these results can help th
 To run a network diagnostic test, follow these steps:
 
 1. Open the Warehouse Management mobile app on the device where you're having trouble.
-1. On the **Welcome** page, select **Set up connection** (or select **Connect** and then select **Set up connection**).
+1. Do one of the following steps:
+    - On the **Welcome** page, select **Set up connection** (or select **Connect** and then select **Set up connection**).
+    - On the **Main menu** page, select **Connection settings** and then select **Set up connection**.
 1. On the **Connection setup** pop-up menu, select **Diagnostics**.
 1. On the **Diagnostics** page, select **Analyze Wi-Fi**.
 1. The **Wi-Fi diagnostics** page opens. It shows details about your current Wi-Fi connection, such as the Wi-Fi network name, connection type, connection strength, IP address, and download speed.
