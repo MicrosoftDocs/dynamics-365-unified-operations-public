@@ -1757,7 +1757,7 @@
                             - name: Simplified electronic invoices in Commerce for Saudi Arabia
                               href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
                         - name: Singapore (preview)
-                          href: localizations/singapore/apac-sgp-e-invoices.md?context=/dynamics365/context/finance
+                          href: localizations/singapore/apac-singapore-electronic-invoices.md?context=/dynamics365/context/finance
                         - name: Uruguay
                           href: localizations//iberoamerica/ltm-uruguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
                         - name: Paraguay
