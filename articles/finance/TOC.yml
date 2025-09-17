@@ -1749,7 +1749,9 @@
                         - name: Malaysia
                           href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/finance
                         - name: Panama
-                          href: localizations//iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/finance                           
+                          href: localizations//iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/finance 
+                        - name: Paraguay
+                          href: localizations//iberoamerica/ltm-paraguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance                          
                         - name: Poland (preview)
                           href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
                         - name: Saudi Arabia
@@ -1762,8 +1764,6 @@
                               href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
                         - name: Uruguay
                           href: localizations//iberoamerica/ltm-uruguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
-                        - name: Paraguay
-                          href: localizations//iberoamerica/ltm-paraguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Tax Calculation
