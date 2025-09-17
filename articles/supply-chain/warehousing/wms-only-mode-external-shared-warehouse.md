@@ -32,25 +32,28 @@ The following articles provide detailed information about how *Warehouse managem
 
 The following illustration shows an example system where Warehouse management only mode is active with an external shared warehouse in the *USSW* legal entity. The *USSW* legal entity handles logistics warehouse operations for two sales subsidiaries that manage order and financial processing in the *USMF* and *LE2* legal entities.
 
-:::image type="content" source="media/wms-only-d365-shared-warehouse-integration.svg" alt-text="Screenshot of the Warehouse management only mode with external shared warehouse." lightbox="media/wms-only-d365-shared-warehouse-integration.svg":::
+:::image type="content" source="media/wms-only-d365-shared-warehouse-integration.svg" alt-text="Diagram of Warehouse management only mode with external shared warehouse." lightbox="media/wms-only-d365-shared-warehouse-integration.svg":::
 
-The *USMF* and *USSW* legal entities are included in the [demo data](../../fin-ops-core/dev-itpro/get-started/demo-data.md). The *LE2* legal entity is displayed in the illustriation as an example.
-The scenarios described below use sample records and values from the demo data. To follow along, ensure your system has the standard demo data installed. Otherwise, substitute the sample values with your own configuration settings.
+The *USMF* and *USSW* legal entities are included in the standard [demo data](../../fin-ops-core/dev-itpro/get-started/demo-data.md). The *LE2* legal entity shown in the illustration is just an example.
+
+The scenarios described in this article use sample records and values from the demo data. To follow along, ensure your system has the standard demo data installed. Otherwise, substitute the sample values with your own configuration settings.
 
 ### Warehouse management only mode demo data
-To support scenarios involving *Warehouse management only mode with external shared warehouses*, the following demo data has been configured:
-- The new legal entity *USSW* setup with a Site *1* and warehouse *SW-11*.
-- Work templates and location directives for *Inbound and Outbound shipment orders*.
+
+The standard demo data includes the following data to support scenarios involving *Warehouse management only mode with external shared warehouses*:
+
+- The legal entity *USSW*, which is set up with a site *1* and warehouse *SW-11*.
+- Work templates and location directives for inbound and outbound shipment orders.
 - The source system *Product Information Management (PIM)*
 - The source system *Contoso Entertainment System USA (USMF)*
-- The item *SW0001* released to both *USMF* and *USSW* legal entitites.
-   - In *USSW* legal entity, the item uses *Non-valuated* item model group and has the *owner* tracking dimension enabled.
-- A new warehouse *2-EXT* created in the *USMF* legal entity and marked as an external warehouse mapped to the warehouse *SW-11* in the *USSW* legal entity.
+- The item *SW0001*, which is released to both the *USMF* and the *USSW* legal entities.
+    - In the *USSW* legal entity, the *SW0001* item uses the *Non-valuated* item model group and has the *Owner* tracking dimension enabled.
+- Warehouse *2-EXT* in the *USMF* legal entity is marked as an external warehouse that is mapped to warehouse *SW-11* in the *USSW* legal entity.
 
- A broader set of demo data has been configured. However, only the most relevant elements are highlighted here.
+Other demo data is also included to support the scenarios. The previous list just highlights the most important elements.
 
-> [!NOTE]
-> The mentioned demo data examples are available from Supply Chain Management version 10.0.45 and later.
+> [!IMPORTANT]
+> The demo data for these scenarios is only available in Supply Chain Management version 10.0.45 and later.
 
 ## <a name="inbound-example-process"></a>Inbound process example (shared warehouse)
 

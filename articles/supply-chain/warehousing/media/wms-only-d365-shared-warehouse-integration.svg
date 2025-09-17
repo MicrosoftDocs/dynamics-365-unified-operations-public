@@ -22,12 +22,12 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.56041667"
-     inkscape:cx="120.4461"
-     inkscape:cy="148.99628"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="2248"
+     inkscape:zoom="1.5850977"
+     inkscape:cx="403.44516"
+     inkscape:cy="270.96121"
+     inkscape:window-width="2560"
+     inkscape:window-height="1417"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg100" />
@@ -60,14 +60,15 @@
        font-family="Aptos, Aptos_MSFontService, sans-serif"
        font-weight="700"
        font-size="32px"
-       transform="translate(449.38,224)"
-       id="text2">Microsoft Dynamics 365</text>
+       id="text2"
+       x="283.38"
+       y="224">Dynamics 365 Supply Chain Management</text>
     <text
        font-family="Aptos, Aptos_MSFontService, sans-serif"
        font-weight="400"
        font-size="18.6667px"
        transform="translate(856.735,493)"
-       id="text3">Inbound and Outbound shipment orders</text>
+       id="text3">Inbound and outbound shipment orders</text>
     <rect
        x="822"
        y="247"
@@ -367,7 +368,7 @@
        font-weight="400"
        font-size="18.6667px"
        transform="translate(347.64,491)"
-       id="text39">Purchase and Sales orders</text>
+       id="text39">Purchase and sales orders</text>
     <rect
        x="831"
        y="337"
