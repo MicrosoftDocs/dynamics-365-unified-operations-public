@@ -68,4 +68,4 @@ The following table shows the Electronic invoicing Service globalization feature
 | Brazil | Brazilian NF-e import from e-mail (BR) | Fiscal document model 55 |
 | Mexico | Mexican CFDI Interfactura (MX) | Sales invoices, packing slips, inventory transfers, payment complements, and cancellations |
 | Poland | [Polish electronic invoice (PL)](../poland/gs-e-invoicing-pol-get-started.md) | Sales invoices, project invoices, and advance invoices |
-| Singapore | [Singaporean electronic invoice (SG)](../singapore/apac-sgp-e-invoices.md) | Sales invoices and project invoices |
+| Singapore | [Singaporean electronic invoice (SG)](../singapore/apac-singapore-electronic-invoices.md) | Sales invoices and project invoices |
