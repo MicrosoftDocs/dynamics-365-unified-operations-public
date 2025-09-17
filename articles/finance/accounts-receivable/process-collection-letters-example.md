@@ -107,7 +107,7 @@ The following illustration shows the information that's in the table as it would
 
 10. Go to **Credit and collections \> Collection letter \> Review and process collection letters**, and follow these steps:
 
-    1. Notice that the collection letter code on the header is **Collection letter 2**.
+    1. Notice that the collection letter code on the header is **Collection letter 1** and the transactions have **Collection letter 2**.
 
   The codes differ because the **Ignore payments and credit memos when calculating collection letter code** option is to **Yes**.
 
