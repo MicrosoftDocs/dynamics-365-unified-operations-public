@@ -19,7 +19,7 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
-## Versions 4.0.9.0 – 4.0.17.0
+## Versions 4.0.9.0 – 4.0.18.0
 
 Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
@@ -32,6 +32,18 @@ These versions of the Warehouse Management mobile app are general availability (
 These versions of the Warehouse Management mobile app for Microsoft Windows and Apple iOS are preview releases in all regions. They're also preview releases for Android devices in some regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
 
 If you have any feedback about a preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
+
+### What's new in version 4.0.18.0
+
+Version 4.0.18.0 adds the following fixes and improvements:
+
+- When entering a username and password from a keyboard, the first character of each field is no longer capitalized automatically.
+- Quotation marks are now parsed correctly.
+- The Warehouse Management mobile app logo no longer disappears.
+- Fixed an issue that caused the **Work list** page to load incorrectly.
+- Fixed an issue that caused incorrect values to appear in step banners.
+- Added validation checks to make scanning quantities more reliable.
+- The connections list is now sorted alphabetically.
 
 ### What's new in version 4.0.17.0
 
