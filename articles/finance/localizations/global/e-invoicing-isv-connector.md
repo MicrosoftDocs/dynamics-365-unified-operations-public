@@ -166,7 +166,7 @@ The following countries electronic invoicing functionality is implemented using 
 | Costa Rica | [Get started with Electronic invoicing for Costa Rica](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md) |
 | Denmark | [Use electronic invoicing for Denmark](../denmark/gs-e-invoicing-dk-get-started.md)|
 | Panama | [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md) |
-| Singapore | [Electronic invoicing for Singapore](../singapore/apac-sgp-e-invoices.md) |
+| Singapore | [Electronic invoicing for Singapore](../singapore/apac-singapore-electronic-invoices.md) |
 | Uruguay | [Get started with Electronic invoicing for Uruguay](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md) |
 
 
