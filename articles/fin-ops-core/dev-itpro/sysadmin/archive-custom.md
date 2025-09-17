@@ -96,7 +96,7 @@ final class LedgerArchiveAutomationJobRequestCreator_GeneralLedger_Extension
 |---|---|---|---|---|
 | Finance General ledger | GENERALJOURNALACCOUNTENTRY | GENERALJOURNALACCOUNTENTRYHISTORY | GeneraljournalaccountentryBiEntity | mserp\_GeneraljournalaccountentryBiEntity |
 | | GENERALJOURNALACCOUNTENTRY\_W | GENERALJOURNALACCOUNTENTRYHISTORY\_W | GeneraljournalaccountentrywBiEntity | mserp\_GeneraljournalaccountentrywBiEntity |
-| | GENERALJOURNALENTRY | GENERALJOURNALENTRYHISTORY | cus | mserp\_GeneraljournalentryBiEntity |
+| | GENERALJOURNALENTRY | GENERALJOURNALENTRYHISTORY | GeneraljournalentryBiEntity | mserp\_GeneraljournalentryBiEntity |
 | | GENERALJOURNALENTRY\_W | GENERALJOURNALENTRYHISTORY\_W | GeneraljournalentrywBiEntity | mserp\_GeneraljournalentrywBiEntity |
 | | LEDGERCONSOLIDATEHISTREF | LEDGERCONSOLIDATEHISTREFHISTORY | LedgerconsolidatehistrefBiEntity | mserp\_LedgerconsolidatehistrefBiEntity |
 | | LEDGERENTRY | LEDGERENTRYHISTORY | LedgerentryBiEntity | mserp\_LedgerentryBiEntity |
