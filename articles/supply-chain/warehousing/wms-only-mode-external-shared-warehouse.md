@@ -4,7 +4,7 @@ description: Learn how to run Warehouse management only mode with external share
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: overview
-ms.date: 05/14/2025
+ms.date: 09/17/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSEWManagementSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSEWInboundShipmentOrderRequest, WHSEWOutboundShipmentOrderRequest, WHSEWOutboundShipmentOrderUpdate, WHSInventoryOwner, WHSInventoryUpdateLog, WHSExternalInventoryAdjustment, WHSEWInboundShipmentOrderUpdate
