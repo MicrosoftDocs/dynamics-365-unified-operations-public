@@ -43,7 +43,7 @@ Version 4.0.18.0 adds the following fixes and improvements:
 - Fixed an issue that caused the **Work list** page to load incorrectly.
 - Fixed an issue that caused incorrect values to appear in step banners.
 - Added validation checks to make scanning quantities more reliable.
-- The connections list is now sorted alphabetically.
+- The connections list now sorts alphabetically.
 
 ### What's new in version 4.0.17.0
 
