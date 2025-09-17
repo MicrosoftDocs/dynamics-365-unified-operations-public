@@ -97,7 +97,7 @@ To [create a new legal entity](../../fin-ops-core/fin-ops/organization-administr
 You can use inbound and outbound shipment order messages to inform Supply Chain Management about which physical inventory to receive and ship. These messages include both header data and lines data.
 
 > [!NOTE]
-> Inbound and outbound shipment orders can be deleted by submitting a message that includes only header data and omits all line data.
+> You can delete inbound and outbound shipment orders by submitting a message that includes only header data and omits all line data.
 
 Messages between systems are exchanged by using lightweight *inbound shipment order* and *outbound shipment order* documents. These documents eliminate the need to use several other types of documents that Supply Chain Management typically uses (such as sales orders, purchase orders, and transfer orders). Therefore, they have several benefits. For example, they simplify integration with enterprise resource planning (ERP) and order management systems. They also make Supply Chain Management warehouse management functionality available to a wide range of external ERP and order management systems.
 
