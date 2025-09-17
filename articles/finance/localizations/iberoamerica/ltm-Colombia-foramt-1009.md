@@ -122,4 +122,4 @@ To issue format 1009 file in Excel, follow these steps.
 > [!NOTE]
 > When you run the Format 1009 report in Excel, you don't need to enter a value in the **Tax Application ID** field in the report launcher.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
