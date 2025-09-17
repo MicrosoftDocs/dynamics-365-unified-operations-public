@@ -1116,6 +1116,8 @@
                       href: general-ledger/financial-tag-defaulting.md
                     - name: Financial tag rule reference
                       href: general-ledger/financial-tag-rule-reference.md
+                    - name: Development guidelines and FAQ for Financial tags
+                      href: general-ledger/fin-tag-custom.md 
                 - name: Financial dimensions
                   items:
                     - name: Financial dimensions
