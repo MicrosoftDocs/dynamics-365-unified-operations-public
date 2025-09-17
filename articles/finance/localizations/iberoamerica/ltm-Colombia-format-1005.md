@@ -11,6 +11,8 @@ ms.reviewer: johnmichalak
 
 # Configure Format 1005 file for Colombia
 
+[!INCLUDE[banner](../../includes/banner.md)]
+
 This article describes how to configure and generate the Format 1005 file. The report shows deductible VAT for purchases and sales returns. It outputs an XML file that meets official tax requirements and an Excel file for internal control.
 
 ## Prerequisites
@@ -28,7 +30,7 @@ Before you print the report, make sure these prerequisites are met:
 | Format | :::no-loc text="File format 1005"::: |
 | Format | :::no-loc text="File format 1005 (Excel)"::: |
 
-    For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 - Configure Electronic reporting (ER) parameters. For more information, see [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
@@ -43,13 +45,13 @@ Configure the tax application code for each **Tax Id Type**.
 
 Correct setup of these tax application codes lets the report reflect taxable operations and comply with DIAN requirements.
 
-For more information, see [Tax application for Latin America](ltm-core-tax-application.md).
+Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
 
 ## Configure application-specific parameters for format 1005
 
 Lookups and conditions let you select the document classification IDs and tax codes used in transactions shown in the report.
 
-After you meet the prerequisites, follow these steps.
+To configure application-specific parameters for format 1005, after you meet the prerequisites, follow these steps.
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configuration**.
 1. In the tree on the left, select **LTM Tax Report deployment** \> **Format 1005**.
@@ -136,12 +138,16 @@ After you meet the prerequisites, follow these steps.
 
 ## Issue file format 1005
 
+To issue file format 1005, follow these steps.
+
 1. Go to **Tax** > **Inquiries and reports** > **LATAM** > **Tax reporting**.
 1. In the **Format mapping** field, select **File format 1005**, then select **OK**.
 1. Enter the Tax Application ID and date range, then select **OK**.
 
 
 ## Generate Format 1005 report in Excel
+
+To generate Format 1005 report in Excel, follow these steps.
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select **File format 1005 Excel**.
@@ -151,3 +157,5 @@ After you meet the prerequisites, follow these steps.
 
 > [!NOTE]
 > When you run the Format 1005 report in Excel, you don't need to enter a value in the **Tax Application ID** field in the report launcher.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
