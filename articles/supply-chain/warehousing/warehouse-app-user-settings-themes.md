@@ -13,11 +13,11 @@ ms.custom:
 
 # User settings, color themes, and sound themes
 
-This guide explains how to use local user settings to personalize the way your Warehouse Management mobile app works, looks, and sounds.
+This article explains how to use local user settings to personalize the way your Warehouse Management mobile app works, looks, and sounds.
 
 Workers can set their own preferences locally while working on a device by following the instructions in this article.
 
-Administrators can also set default settings, device-specific settings, and user-specific settings remotely from the web client, as described in [Mobile Device User Settings](mobile-device-user-settings.md).
+Administrators and managers can also set default settings, device-specific settings, and user-specific settings remotely from the web client, as described in [Mobile Device User Settings](mobile-device-user-settings.md).
 
 ## Color and sound themes
 
@@ -55,7 +55,7 @@ To make your workflow more fun, choose a sound theme that plays a sound after yo
 
 To set your user preferences on a mobile device, including the color and sound theme, follow these steps:
 
-1. Sign in to the Warehouse Management mobile app and go to the **Main menu**.
+1. Sign in to the Warehouse Management mobile app and go to the **Main menu** page.
 1. Select the **Settings** button, which is the gear icon in the top-right corner of the screen.
 1. Make the following settings on the **Settings** page as needed:
 

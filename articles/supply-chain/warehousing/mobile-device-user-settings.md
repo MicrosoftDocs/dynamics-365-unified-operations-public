@@ -43,7 +43,7 @@ Follow these steps to create and manage user settings for your mobile devices.
     - **Device model ID** – Select the device model that the profile should apply to. If the profile should apply to all models of the selected brand, leave this field blank. The list of values includes all the models that have been defined for the brand that is selected in the **Device brand name** field. For information about how to define the list of models for each brand, see the next section.
     - **User ID** – Select the user ID of the warehouse worker that the setting profile should apply to. If the profile should apply to all workers, leave this field blank.
 
-1. On the **General** FastTab, set the user settings values that you want to apply. These settings are the same as those offered in the app itself, but the app also provides some extra settings that aren't available here in the web client (including **Server request timeout** and **Configuration mode**). For more information about the available settings, go to [User settings, color themes, and sound themes](warehouse-app-user-settings-themes.md).
+1. On the **General** FastTab, set the user settings values that you want to apply. These settings are the same as those offered in the app itself, but the app also provides some extra settings that aren't available here in the web client (including **Server request timeout** and **Configuration mode**). Learn more about the available settings in [User settings, color themes, and sound themes](warehouse-app-user-settings-themes.md).
 
 ## Set local user settings in the Warehouse Management mobile app
 
