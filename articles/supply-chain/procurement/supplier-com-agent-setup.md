@@ -106,9 +106,13 @@ To create the required connections, follow these steps.
 To finish setting up the agent identity, you must activate the triggering Power Automate flows. A Canvas app is provided to help you do this. To use the app, follow these steps.
 
 1. Sign in to [Power Apps](https://make.powerapps.com) as an environment administrator user.
-1. In the left pane, select **Apps**.
+1. In the left pane, select **Solutions**.
+1. Select **Managed** tab, find **Copilot in Supply Chain Management solution** and click on it.
+1. In the left pane click on **Apps**.
 1. Select the app with a **Name** of *(Production ready preview) Setup Supplier Communications Agent*.
-1. On the command bar, select **Play**.
+1. On the command bar, select **Share**.
+1. Add your name and click **Share**.
+1. Select the app again and click on **Play** button on the command bar.
 1. Under **Connections**, select the connections you created in the previous section for both *Microsoft Dataverse* and *Microsoft Copilot Studio*.
 1. Select **Apply** at the bottom-right of the page and wait for all of the flows listed under **Agent trigger flows status** to switch to a state of *Activated*.
 
