@@ -74,14 +74,14 @@ Paraguay has three core interactions with Edicom in the base flow:
 Each of these interactions requires common parameters, such as Edicom connection details and the authentication token provided by Edicom. These parameters are reused across the feature setup for all document types. Edicom supplies these values during the company's onboarding process.
 
 ---
-### Paraguay electronic invoice (UY) Edicom integration
+### Paraguay electronic invoice (PY) Edicom integration
 
 > [!IMPORTANT]
 > The **Paraguay Electronic Invoice (PY)** feature is provided by Microsoft. Before it can be used, it requires more configuration, as described in this article. Learn how to configure invoicing features and apply changes in [Work with feature setups](../global/gs-e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Paraguay.
 
 To integrate Edicom for Paraguay electronic invoices, follow these steps.
 
-1. Import the latest version of the **Paraguay Electronic Invoice (UY)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). The following illustrations show what the feature looks like after you import it from Dataverse.
+1. Import the latest version of the **Paraguay Electronic Invoice (PY)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). The following illustrations show what the feature looks like after you import it from Dataverse.
 
     :::image type="content" source="ltm-Paraguay-electronic-invoice-globalization-feature-imported.png" alt-text="Screenshot of the imported Globalization feature for Paraguay on the Electronic invoicing features page, including the information on the Versions tab.":::
 
@@ -140,7 +140,7 @@ These parameters are general purpose and apply to all actions, so configure them
 
 ### Outbound flow pipeline
 
-There are three electronic invoice formats for Paraguay included in the **Paraguay Electronic Invoice (UY) feature**. Each format requires its own setup and configuration. The formats are:
+There are three electronic invoice formats for Paraguay included in the **Paraguay Electronic Invoice (PY) feature**. Each format requires its own setup and configuration. The formats are:
 
 - **Inventory (PY)**
 - **PackingSlip (PY)**
