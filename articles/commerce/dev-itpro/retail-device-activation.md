@@ -2,9 +2,8 @@
 title: Point of sale (POS) device activation
 description: This article explains how to use guided device activation for Store Commerce for web and the Store Commerce app for Windows, Android, and iOS in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/02/2024
+ms.date: 09/18/2025
 ms.topic: how-to
-audience: IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: anvenkat
@@ -21,7 +20,7 @@ ms.custom:
 
 This article explains how to use guided device activation for Store Commerce for web and the Store Commerce app for Windows, Android, and iOS in Microsoft Dynamics 365 Commerce. This article also explains the client simplifications that help users easily activate devices without having to manually enter register and device ID information. 
 
-For help with diagnosing activation issues, see [Troubleshoot device activation problems](#troubleshoot-device-activation-problems) below. 
+For help with diagnosing activation issues, see [Diagnose and debug device activation problems](#diagnose-and-debug-device-activation-problems) below. 
 
 ## Activate Store Commerce using guided activation
 
@@ -70,7 +69,7 @@ You can configure device activation for Store Commerce for web by providing the 
 
 Store Commerce for web starts in manual entry mode, and the Commerce Scale Unit URL, device ID, and register ID are prepopulated for activation.
 
-## Troubleshoot device activation problems
+## Diagnose and debug device activation problems
 
 If you encounter errors while activating your POS device, follow these steps and suggestions to help diagnose and correct the related issues.
 
