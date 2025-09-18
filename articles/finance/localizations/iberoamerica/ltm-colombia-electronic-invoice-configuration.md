@@ -10,7 +10,7 @@ ms.date: 07/7/2025
 ms.reviewer: johnmichalak
 ---
 
-## Get started with Electronic invoicing for Colombia
+# Get started with Electronic invoicing for Colombia
 
 - [Introduction](#get-started-with-electronic-invoicing-for-colombia)
 - [Prerequisites](#prerequisites)
