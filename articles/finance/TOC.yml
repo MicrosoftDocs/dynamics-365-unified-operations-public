@@ -2100,7 +2100,7 @@
                       href: localizations/brazil/brazil.md
                     - name: Scope of localization
                       href: localizations/brazil/latam-bra-scope.md
-                    - name: New Tax Reform
+                    - name: Reformed tax
                       items:
                        - name: Brazil tax reform overview
                          href: localizations/brazil/br-reform-overview.md
@@ -2310,6 +2310,14 @@
                           href: localizations/brazil/br-00042-withholding-taxes-customers-payments.md
                         - name: Withholding taxes on vendor payments
                           href: localizations/brazil/br-00061-withholding-taxes-vendors-payments.md
+
+                    - name: Reformed tax
+                      items:
+                       - name: Brazil tax reform overview
+                         href: localizations/brazil/br-reform-overview.md
+                       - name: Brazil tax reform setup 
+                         href: localizations/brazil/br-reform-setup.md
+                         
                 - name: Canada
                   items:
                     - name: GST/HST Internet File Transfer
