@@ -1,10 +1,9 @@
 ---
 title: Install the POS layout designer
-description: This article describes how to install and troubleshoot the one-click designer in Microsoft Dynamics 365 Commerce.
+description: Learn how to install and debug the one-click designer in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/02/2024
+ms.date: 09/19/2025
 ms.topic: how-to
-audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: anvenkat
@@ -20,7 +19,7 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to install and troubleshoot the one-click designer in Microsoft Dynamics 365 Commerce.
+This article explains how to install and debug the one-click designer in Microsoft Dynamics 365 Commerce.
 
 You can use the one-click designer to design different Store Commerce app and Store Commerce for web layouts, in either Landscape mode or Portrait mode, for stores, registers, cashiers, and managers.
 
@@ -37,7 +36,7 @@ The graphical design interface for the Store Commerce app and Store Commerce for
 
     [![Layout in the one-click designer.](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
 
-## Troubleshoot the installation of the Layout designer
+## Debug the installation of the Layout designer
 
 - When you select **Designer**, the prompt to download (or run) the installer doesn't appear, or your current security settings don't allow you to download the file. 
 
