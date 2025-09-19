@@ -179,11 +179,11 @@ The page is used to:
 
 Here are the details for each field:
 
-| Field                     | Description                                                                                                   |
-|---------------------------|---------------------------------------------------------------------------------------------------------------|
-| Transaction code          | Specifies a unique identifier (up to 10 characters) for the transaction.                                      |
-| Against transaction code  | Used for transfer operations where two linked transactions are needed (receipt + issue).                      |
-| Transaction code description | Specifies a descriptive name that explains the purpose of the transaction.                              |
+| Field                     | Description                                                                                                  |
+|---------------------------|--------------------------------------------------------------------------------------------------------------|
+| Transaction code          | Specifies a unique identifier (up to 10 characters) for the transaction.                                     |
+| Against transaction code  | Used for transfer operations where two linked transactions are needed (receipt + issue).                     |
+| Transaction code description | Specifies a descriptive name that explains the purpose of the transaction.                                |
 | Journal name              | Specifies the journal name used when the check and promissory note journal is posted.                        |
 | Receipt                   | Specifies that this code is used to receive a check/promissory note into a portfolio.                        |
 | Issue                     | Specifies that this code is used to issue a check/promissory note from a portfolio.                          |
@@ -192,9 +192,9 @@ Here are the details for each field:
 | Bounce check              | Specifies the transaction as a bounced check.                                                                |
 | New check                 | Used when entering a new check or promissory note into the system.                                           |
 | Against transaction code  | Specifies the related transaction code used in transfer transactions between portfolios.                     |
-| Account type              | Specifies the offset account type: Customer, Vendor, Ledger, Bank, Portfolio, or COA.                         |
+| Account type              | Specifies the offset account type: Customer, Vendor, Ledger, Bank, Portfolio, or COA.                        |
 | Account number            | Specifies the default account to use when this transaction code is selected.                                 |
-| Auto settlement           | Enables automatic matching of open customer/vendor balances when posting.                                   |
+| Auto settlement           | Enables automatic matching of open customer/vendor balances when posting.                                    |
 | Matching type             | Determines how matching is done (by due date, transaction date, etc.).                                       |
 | Bank transaction type     | Optional field to classify bank-related check movements.                                                     |
 
@@ -260,22 +260,22 @@ To generate company check layouts, import the most recent versions of the follow
 | Name | Description | Format type |  
 |------|-------------|-------------|  
 | Payment check model | Standard ER model for check processing. Provides the data structure for check printing. | Model |  
-| (Preview) Payment check model (TR) | Extension of the standard model with fields required for checks in Türkiye. | Model mapping |  
-| (Preview) Check (TR) (Excel) | Excel-based layout used to generate printable company checks. | Format (Excel) |  
+| Payment check model (TR) | Extension of the standard model with fields required for checks in Türkiye. | Model mapping |  
+| Check (TR) (Excel) | Excel-based layout used to generate printable company checks. | Format (Excel) |  
 
 > [!NOTE]
 > After importing, you can customize the layout by deriving the ER configuration. For example, you can adjust fields such as the printed check number, amount in words, or bank account details.
 
 #### Assign check designs to bank accounts
 
-After the required ER formats are imported, you must assign the **(Preview) Check (TR) (Excel)** format to the bank accounts that are linked to company check portfolios. This setup ensures that issued company checks use the correct ER layout during printing.
+After the required ER formats are imported, you must assign the **Check (TR) (Excel)** format to the bank accounts that are linked to company check portfolios. This setup ensures that issued company checks use the correct ER layout during printing.
 
 1. Go to **Cash and bank management > Setup > Check and promissory note operations > Check and promissory note portfolio codes**.  
 2. Select the portfolio code created for company checks, where **Portfolio type = Checks given**.  
 3. In the **Account number** field, identify the linked **Bank account** and open it.  
 4. On the bank account page, select **Set up > Layout > Check** in the Action Pane.  
 5. On the **General** FastTab, set the **Generic electronic export format** parameter to **Yes**.  
-6. In the **Export format configuration** field, select **(Preview) Check (TR) (Excel)**.  
+6. In the **Export format configuration** field, select **Check (TR) (Excel)**.  
 7. Save the changes. 
 
 ## Create a new check and promissory note journal
@@ -641,7 +641,7 @@ Once the ER format has been assigned to the bank accounts of company check portf
 1. Go to **Cash and bank management > Check and promissory note operations > Check and promissory note journal**.  
 1. Select the relevant journal that contains company checks to be reported.  
 1. On the **General** FastTab, in the **Reports** section, select **Check journal list**.  
-1. The system generates and exports the check report by using the ER configuration **(Preview) Check (TR) (Excel)**.   
+1. The system generates and exports the check report by using the ER configuration **Check (TR) (Excel)**.   
 
 ## Configure rediscount calculations for check and promissory note operations
 
