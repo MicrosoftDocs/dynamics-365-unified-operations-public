@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/07/2025
+ms.date: 00/19/2025
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
@@ -176,7 +176,7 @@ Application-specific parameters of the **JPK_KR_PD** format in ER facilitate the
 To prepare Finance to generate a SAF Accounting Books Income Tax - JPK_KR_PD in compliance with the required schema, follow these steps.
 
 1. Open the **Electronic reporting** workspace.
-2. In the configuration tree, select **General ledger data model mapping** configuration and set **Default for model mapping** option to **Yes**. Ensure that no other model mapping conguration under the **Standard Audit File (SAF-T)** model is not set as **Default for model mapping**.
+2. In the configuration tree, select **General ledger data model mapping** configuration and set **Default for model mapping** option to **Yes**. Ensure that no other model mapping configuration under the **Standard Audit File (SAF-T)** model is not set as **Default for model mapping**.
 3. In the configuration tree, select **Standard Audit File (SAF-T)** \> **JPK_KR_PD XML (PL)**.
 4. On the Action Pane, on the **Configurations** tab, in the **Applications specific parameters** group, select **Setup**.
 5. On the left side of **Application specific parameters** page, select the latest version of the format.
@@ -185,11 +185,11 @@ To prepare Finance to generate a SAF Accounting Books Income Tax - JPK_KR_PD in 
 8. As the last two lines, add lines that have the conditions **Not blank** and **Blank** where applicable.
 9. Repeat steps 5 through 7 for each additional lookup field.
 10. When all the lookup fields are set up, select **Completed** in the **State** field, and save the configuration.
-11. Click **Export** button on the Action pane to export the application-specific parameters as an XML file and close the **Application specific parameters** page.
+11. On the Action pane, select **Export**, export the application-specific parameters as an XML file, and close the **Application specific parameters** page.
 12. In the configuration tree, select **Standard Audit File (SAF-T)** \> **JPK_KR_PD Excel (PL)**.
 13. On the Action Pane, on the **Configurations** tab, in the **Applications specific parameters** group, select **Setup**.
 14. On the left side of **Application specific parameters** page, select the latest version of the format.
-15. Click **Import** button on the Action pane and select the XML files saved on the step 10.
+15. On the Action pane, select **Import**, and select the XML files saved in step 10.
 16. Select **Completed** in the **State** field, and save the configuration.
 17. Optional: If necessary, in the configuration tree, select **General ledger data model mapping** configuration and set **Default for model mapping** option to **No**. Set the **Default for model mapping** option to **Yes** for the model mapping configuration that was previously selected. For example, if your organization uses the other JPK reports in Poland, set the **Standard Audit File model mapping** configuration as default.
 
