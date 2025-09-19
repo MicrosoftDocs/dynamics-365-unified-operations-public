@@ -1,8 +1,8 @@
 ---
 title: Set up scrap to calculate raw material requirements
 description: Learn how to set up your bills of materials (BOMs), formulas, and route operations to record the quantity of raw material that is scrapped during manufacturing.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 12/08/2022
 ms.custom: bap-template

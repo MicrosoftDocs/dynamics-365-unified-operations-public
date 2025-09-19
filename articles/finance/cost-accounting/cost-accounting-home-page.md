@@ -4,7 +4,8 @@ description: Access a resources that are available for Cost accounting alongside
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 03/25/2024
+ms.date: 08/25/2025
+ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
 ms.collection: get-started

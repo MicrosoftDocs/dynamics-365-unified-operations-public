@@ -3,7 +3,7 @@ title: Set up dual-write security roles and permissions
 description: Learn about the special security roles and permissions that are required for dual-write to work as expected, including a table that outlines security roles for users.
 author: ramasri
 ms.author: ramasri
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/21/2023
 ms.reviewer: johnmichalak
 audience: Developer

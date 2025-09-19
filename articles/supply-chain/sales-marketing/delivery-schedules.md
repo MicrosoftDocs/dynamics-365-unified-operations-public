@@ -5,7 +5,7 @@ author: AditiPattanaik
 ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: PurchDeliverySchedule, SalesDeliverySchedule, SalesQuotationDeliverySchedule, SalesQuotationDeliverySchedule
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/27/2025
 ms.custom: 
   - bap-template

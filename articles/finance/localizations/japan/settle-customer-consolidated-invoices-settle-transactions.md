@@ -1,46 +1,46 @@
 ---
 title: Settle customer consolidated invoices by using settle transactions
-description: Learn about payments that are made and settled against consolidated invoices, including a step-by-step process using the JPMF demo data company.
+description: Learn how to settle customer consolidated invoices for Japan by using settle transactions functionality in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 05/09/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: CustConsInvoice_JP, CustTable, CustOpenTrans
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Settle customer consolidated invoices by using settle transactions
 
 [!include [banner](../../includes/banner.md)]
 
-In Japan, payments are made and settled against consolidated invoice.
+This article explains how to settle customer consolidated invoices for Japan by using settle transactions functionality in Microsoft Dynamics 365 Finance.
 
-This procedure walks you through settling a consolidated invoice using settle transactions.
+In Japan, payments are made and settled against consolidated invoices.
 
-Before you begin this procedure, make sure that a consolidated invoice is created and confirmed, and a payment has been posted. 
+Before you begin the procedure, ensure that a consolidated invoice is created and confirmed, and that a payment has been posted. 
 
-This procedure was created using the demo data company JPMF.
+The procedure usese the demo data company JPMF.
 
-1. Go to Accounts receivable > Periodic tasks > Consolidated invoice.
-    * Confirm the consolidated invoice you want to settle is at status of Confirmed.  
-    * Create and confirm a consolidated invoice.  
-2. Go to Accounts receivable > Customers > All customers.
-3. In the list, mark the selected row.
-    * Select the customer that you want to settle the consolidated invoice for.  
-4. On the Action Pane, click Collect.
-5. Click Settle transactions.
-    * Use Consolidation ID field to confirm the consolidated invoice that you want to settle.  
-6. Find a line to settle and select the check box for that line
-    * If you're running this procedure as a task guide, you might need to unlock the task guide before you can select the record.  
-7. Find another line to settle and click the check box for that line
-    * If you're running this procedure as a task guide, you might need to unlock the task guide before you can select the record.  
-8. Click Post.
-9. Go to Accounts receivable > Periodic tasks > Consolidated invoice.
-    * Confirm that the status of the Consolidated invoice is updated to Settled.  
+To settle customer consolidated invoices by using settle transactions functionality, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Periodic tasks \> Consolidated invoice**.
+1. Confirm that the consolidated invoice you want to settle has a status of **Confirmed**.  
+1. Create and confirm a consolidated invoice.  
+1. Go to **Accounts receivable \> Customers \> All customers**.
+1. In the list, mark the selected row.
+1. Select the customer that you want to settle the consolidated invoice for.  
+1. On the Action Pane, select **Collect**.
+1. Select **Settle transactions**.
+1. In the **Consolidation ID** field, confirm the consolidated invoice that you want to settle.  
+1. Find a line to settle and select the checkbox for that line. If you're running this procedure as a task guide, you might need to unlock the task guide before you can select the record.  
+1. Find another line to settle and select the checkbox for that line. 
+1. Select **Post**.
+1. Go to **Accounts receivable \> Periodic tasks \> Consolidated invoice**.
+1. Confirm that the consolidated invoice you want to settle has a status of **Settled**.  
 
 
 

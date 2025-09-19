@@ -1,8 +1,8 @@
 ---
 title: Track inbound voyages and shipping container journeys
 description: Learn how you can use the Inbound tracking page to track the progress of your voyages and shipping container journeys with an outline on filtering activity lists.
-author: lisascholz91
-ms.author: lisascholz
+author: prasungoel 
+ms.author: prasungoel 
 ms.reviewer: kamaybac
 ms.search.form: ITMContainerActivityTable
 ms.topic: how-to
@@ -32,6 +32,9 @@ To update the schedule for a voyage or journey, enter the start date for the fir
 The order of the activities in the grid is determined by the order of the legs in the relevant journey template. If order of the legs in the attached journey changes, the tracking control also changes.
 
 You can update the dates for all containers by selecting **Update start date** or **Update actual end date** on the Action Pane. Alternatively, you can enter the dates per container on the shipment. This approach allows for greater flexibility, because containers can be split in a multi-journey environment.
+
+> [!NOTE]
+> The Landed cost tracking control center feature doesn't consider vendor lead times on individual purchase lines when calculating expected delivery dates.
 
 ## Buttons on the Action Pane
 

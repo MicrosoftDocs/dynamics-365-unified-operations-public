@@ -3,7 +3,7 @@ title: Put to wall - put to store
 description: Learn about the Put to wall - put to store functionality, which lets you handle scenarios where you must consolidate a product to a prepack staging area.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/16/2020
 ms.custom:
 ms.reviewer: kamaybac

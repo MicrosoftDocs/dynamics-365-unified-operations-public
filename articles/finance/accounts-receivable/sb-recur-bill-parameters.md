@@ -3,8 +3,8 @@ title: Recurring contract billing parameters
 description: Learn how to set up the default values for billing schedules that are created in Recurring contract billing. It also explains how create billing schedule groups.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
-ms.date: 10/25/2024
+ms.topic: how-to
+ms.date: 09/04/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -94,7 +94,7 @@ Use the **Recurring contract billing parameters** page to set up the default val
 22. Set the **Create deferral for credit** option to **Yes** to create a new deferral schedule when you credit a billing schedule by using the terminate option. Leave the option set to **No** to adjust the existing deferral schedule when you credit a billing schedule by using the terminate option. This option isn't used for standalone deferral schedules that aren't linked to a billing schedule.
 23. Specify the options that are used with trade agreements:
 
-    - **Use trade agreements** – When this option is set to **Yes**, the default item price on a billing schedule line comes from the trade agreement setup for the item. The price, discount, and "from" and "to" dates from the trade agreement are honored on the billing schedule line. When the option is set to **No**, the default item price comes from a trade agreement, but no discounts or "from" and "to" dates from the trade agreement are used.
+    - **Use trade agreements** – When this option is set to **Yes**, the default item price on a billing schedule line comes from the trade agreement setup for the item. The price and "from" and "to" dates from the trade agreement are honored on the billing schedule line. When the option is set to **No**, the default item price comes from a trade agreement, but "from" and "to" dates from the trade agreement aren't used.
     - **Use weighted trade agreement price by billing period** – When multiple trade agreement lines cover a single billing schedule period, there can be multiple prices for one billing schedule period. Set this option to **Yes** to prorate the different prices for the billing period. Set it to **No** if you don't want to prorate them.
     - **Update from trade agreement only at renewal** – When this option is set to **Yes**, updates from trade agreements don't update the billing schedule line. Therefore, the billing schedule price is effectively locked. However, when the line is renewed, the new trade agreement price is used. When the option is set to **No**, any updates on the trade agreement always roll down to the billing schedule line, both when trade agreement changes occur and when the trade agreement is renewed.
 

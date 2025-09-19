@@ -3,7 +3,7 @@ title: Set up subscription groups
 description: Learn how to set up subscription groups, including a step-by-step process for setting up subscription groups and additional resources.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac

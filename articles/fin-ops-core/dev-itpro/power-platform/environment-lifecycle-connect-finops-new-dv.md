@@ -3,7 +3,7 @@ title: Connect finance and operations apps with a new Microsoft Dataverse instan
 description: Learn about how to connect finance and operations apps with a new Microsoft Dataverse instance, including prerequisites.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/23/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started

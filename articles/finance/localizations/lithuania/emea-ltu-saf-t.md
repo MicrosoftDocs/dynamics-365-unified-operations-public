@@ -1,26 +1,25 @@
 ---
 title: Standard Audit File for Tax (SAF-T) for Lithuania
-description: Learn how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Lithuania.
+description: Learn how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Lithuania in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 05/29/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Lithuania
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+
 ---
 
 # Standard Audit File for Tax (SAF-T) for Lithuania
 
 [!include [banner](../../includes/banner.md)]
 
-According to Article 16 of the Law on Accounting of the Republic of Lithuania, companies in Lithuania are legally required to provide a report in Standard Audit File for Tax (SAF-T) format. This article describes how Microsoft Dynamics 365 Finance supports the SAF-T requirements and explains how to prepare Finance to work with the SAF-T report for Lithuania.
+This article explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Lithuania in Microsoft Dynamics 365 Finance.
 
-For more information, see [SAF-T - VMI](https://www.vmi.lt/evmi/en/home).
+According to Article 16 of the Law on Accounting of the Republic of Lithuania, companies in Lithuania are legally required to provide a report in Standard Audit File for Tax (SAF-T) format. This article describes how Microsoft Dynamics 365 Finance supports the SAF-T requirements and explains how to prepare Finance to work with the SAF-T report for Lithuania. Learn more at [SAF-T - VMI](https://www.vmi.lt/evmi/).
 
 > [!NOTE]
 > The [One voucher](../../general-ledger/one-voucher.md) functionality introduces a limitation on further SAF-T reporting for some scenarios that are subject to SAF-T. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. 
@@ -93,6 +92,8 @@ We recommend that you enable the **Use application specific parameters from prev
 
 We recommend that you also enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Performance](../../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance).
 
+To set up application-specific parameters for the SAF-T Format (LT) configuration, follow these steps.
+
 1. In Electronic reporting, open the **Configurations** page. 
 2. In the configuration tree, under **Standard Audit File (SAF-T)**, select **SAF-T Format (LT)**.
 3. Make sure that you're working in the company that you want to set up the application-specific parameters for.
@@ -109,14 +110,18 @@ We recommend that you also enable the **Accelerate the ER labels storage** featu
 
 ### <a name="satt"></a>Select the SAT-T format in General ledger parameters
 
-1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
+To select the SAT-T format in General ledger parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **General ledger** \> **Setup** \> **General ledger parameters**.
 2. On the **Standard Audit File for Tax** FastTab, in the **Standard Audit File for Tax (SAF-T)** field, select **SAF-T Format (LT)**.
 
 ### <a name="contact"></a>Create a contact person for your company
 
 The **Company** node of the SAF-T report must include information for a contact. This node is located under the **Header** node. To set up contact information that will be reported to SAF-T, follow these steps.
 
-1. Go to **Sales and marketing** \> **Relationships** \> **Contacts** \> **All contacts**.
+To create a contact person for your company, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Sales and marketing** \> **Relationships** \> **Contacts** \> **All contacts**.
 2. Select **New** to create a new contact for your legal entity. Be sure to select **Legal entity** in the **Contact for** field. 
 3. Check by **Party ID** value to make sure that you select the legal entity that SAF-T will be reported from.
 
@@ -126,7 +131,9 @@ The **Company** node of the SAF-T report must include information for a contact.
 
 To generate a SAF-T, you must configure the registration number.
 
-1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+To configure the registration number of the legal entity, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
 3. Select or create the address in Lithuania, and then, on the **Registration ID** FastTab, select **Add**.
 4. In the **Registration type** field, select the registration type that is dedicated to Lithuania, and that uses the **VAT Id** registration category.

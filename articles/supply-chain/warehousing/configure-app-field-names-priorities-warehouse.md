@@ -126,7 +126,6 @@ The remaining metadata, for example, Location, won't be displayed on the task pa
 
 ## Related information
 
-[Install the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md)
-
+- [Install the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

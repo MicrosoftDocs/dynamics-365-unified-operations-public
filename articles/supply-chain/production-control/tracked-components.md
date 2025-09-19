@@ -3,12 +3,12 @@ title: Register and track batch/serial numbers for finished products and their c
 description: Learn how workers and managers can register batch/serial numbers for materials and components that are used in manufacturing processes.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: how-to
-ms.date: 04/29/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Register and track batch/serial numbers for finished products and their components
@@ -25,7 +25,34 @@ Workers and managers can register batch/serial numbers for materials and compone
 Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
-- The feature that's named *Tracked components* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Tracked components* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
+
+## Enable registration of tracked component information
+
+To enable registration of tracked component information in production processes, follow these steps.
+
+1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
+1. On the **Bills of materials** tab, set the **Enable tracked components** option to *Yes*.
+
+## Enable registration of tracked components on products
+
+Before you can use tracked components functionality for a product or its components, the following conditions must be met:
+
+- The product must be defined as serial controlled or batch controlled.
+- The product must be associated with a tracked components policy.
+
+To create a tracked components policy, follow these steps.
+
+1. Go to **Production** \> **Setup** \> **Production** \> **Tracked components policy**.
+1. Use the buttons on the Action Pane to add a new policy or edit an existing one.
+1. For the new or selected policy, set the following fields:
+
+    - **Name** – Enter a name for the policy.
+    - **Description** – Enter a description of the policy.
+    - **Use tracked components** – Set this option to *Yes* to register tracked information for products that are associated with the policy.
+    - **Check pre-allocation for product** – Set this option to *Yes* to validate serial or batch numbers for finished goods when tracked component information is registered.
+    - **Check for pre-allocation for components** – Set this option to *Yes* to validate serial or batch numbers for components when tracked component information is registered.
+    - **Serial number matching limit** – Set this option to *Yes* to ensure that the number of component serial numbers that are matched to a product serial number doesn't exceed the planned quantity on the production order bill of materials (BOM) line. If the number of matched components exceeds the planned quantity, the system blocks the match to prevent over-allocation.
 
 ## Register tracked components for finished items
 
@@ -39,8 +66,8 @@ To register tracked components for the finished items for any production order, 
     - **Job card** journal line
     - **Report as finished** journal line
     - **Current operations**
-    - Production order **Start** dialog box
-    - Production order **Report as finished** dialog box
+    - Production order **Start** dialog
+    - Production order **Report as finished** dialog
 
 1. Select the production order that you want to register batch or serial numbers for.
 1. On the Action Pane, find the tab that includes the **Track components** button, and select that button.

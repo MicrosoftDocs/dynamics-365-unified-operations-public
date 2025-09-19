@@ -3,7 +3,7 @@ title: Posting definitions
 description: Learn about posting definitions, and how to define and link them. You can use posting definitions instead of posting profiles to classify main accounts.
 author: kweekley
 ms.author: kweekley
-ms.topic: article
+ms.topic: concept-article
 ms.date: 09/03/2019
 ms.reviewer: kfend
 audience: Application User

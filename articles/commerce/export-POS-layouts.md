@@ -3,7 +3,7 @@ title: Export POS screen layouts for import to a new environment
 description: This article describes how to export point of sale (POS) screen layouts for import to a new environment in Microsoft Dynamics 365 Commerce.
 author: anush6121
 ms.author: anvenkat 
-ms.topic: article 
+ms.topic: how-to
 ms.date: 06/04/2024
 ms.custom: 
   - bap-template
@@ -33,10 +33,10 @@ To export screen layout data from an environment, follow these steps.
 1. For each of the following entities, filter for the entity in the **Entities** box, select the entity result in the **Entity** column, and then select **Add selected**.
 
     - **Layout sizes** (Include this entity only when you're exporting new layout sizes that don't exist in the new environment.)
+    - **POS layout images**
     - **RetailTillLayoutConfigurationEntity**
     - **POS button grid**
     - **POS button grid buttons**
-    - **POS layout images**
     - **POS screen layouts**
     - **POS screen layout button grid zones**
     - **POS screen layout image zones**

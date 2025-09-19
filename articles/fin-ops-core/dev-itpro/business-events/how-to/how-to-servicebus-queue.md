@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.search.validFrom: 2021-11-03
 ms.search.form:
 ms.dyn365.ops.version: 10.0.22
+ms.custom: sfi-image-nochange
 ---
 
 # Business events and Azure Service Bus Queue

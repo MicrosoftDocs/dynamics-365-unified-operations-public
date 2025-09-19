@@ -3,7 +3,7 @@ title: Configure electronic document references
 description: Learn about how to configure and use the Electronic document references feature, including an outline on configuring the electronic document references.
 author: Fhernandez0088
 ms.author: v-federicohe
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/10/2023
 ms.custom: bap-template
 ms.reviewer: johnmichalak

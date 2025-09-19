@@ -5,7 +5,7 @@ title: Price change tracking
 description: This article describes the price change tracking feature in Microsoft Dynamics 365 Commerce.
 author: boycez
 ms.date: 10/25/2023
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

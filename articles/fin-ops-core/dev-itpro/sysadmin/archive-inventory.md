@@ -3,7 +3,7 @@ title: Archive Dynamics 365 Supply Chain Management Inventory transactions data
 description: Learn about how to archive Microsoft Dynamics 365 Supply Chain Management Inventory transactions data, including prerequisites.
 author: pnghub
 ms.author: amiyaaloke
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 4/10/2024
 ms.custom:
 ms.reviewer: twheeloc

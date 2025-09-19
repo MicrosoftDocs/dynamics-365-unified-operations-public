@@ -1,6 +1,6 @@
 ---
 title: Prepare for JPK_KR_PD reporting
-description: Learn about how to prepare for JPK_KR_PD reporting in legal entities in Poland.
+description: Learn how to prepare for JPK_KR_PD reporting in legal entities in Poland in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
@@ -11,7 +11,6 @@ ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
-ms.dyn365.ops.version: Version 1611
 ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 ---
 
@@ -19,7 +18,9 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-Before you can generate a SAF Accounting Books Income Tax - JPK_KR_PD, you must complete the following setup.
+This article explains how to prepare for JPK_KR_PD reporting in legal entities in Poland in Microsoft Dynamics 365 Finance.
+
+Before you can generate a SAF Accounting Books Income Tax - JPK_KR_PD, you must complete the following setup steps.
 
 1. [Set up a sales tax authority](#tax-authorities)
 2. [Import Electronic reporting (ER) configurations](#er-import)
@@ -40,7 +41,7 @@ To generate a SAF Accounting Books Income Tax - JPK_KR_PD in the required format
 
 To set up the **Authority identification** for sales tax authorities, follow these steps.
 
-1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**.
+1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**.
 2. In the **Authority identification** field, specify the code of the tax office competent for the taxpayer's registered office. This code will be reported in the **\<KodUrzedu\>** field of the SAF Accounting Books Income Tax - JPK_KR_PD.
 
 ## <a id="er-import"></a>Import ER configurations
@@ -63,26 +64,35 @@ Import the most recent versions of the configurations. The version description u
 
 The process of setting up the Electronic messaging functionality for JPK_KR_PD reporting has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
 
-1. In [LCS](https://lcs.dynamics.com/v2), in the Shared asset library, select the **Data package** asset type. Then find **PL JPK_KR_PD EM setup.zip** in the list of data package files, and download it to your computer.
-2. After the **PL JPK_KR_PD EM setup.zip** file has been downloaded, open Finance, select the company that you will generate the JPK_KR_PD report from, and then go to **Workspaces** \> **Data management**.
+To import a package of data entities that includes a predefined electronic message setup, follow these steps.
+
+1. Go to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2).
+2. In the Shared asset library, select the **Data package** asset type.
+3. Find **PL JPK_KR_PD EM setup.zip** in the list of data package files, and download it to your computer.
+4. In Finance, select the company that you will generate the JPK_KR_PD report from, and then go to **Workspaces** \> **Data management**.
 
     Before you import setup data from the package of data entities, you must make sure that the data entities in your application are refreshed and synced.
 
-3. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh has been completed. For more information about how to refresh the entity list, see [Entity list refresh](../../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
-4. Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../../fin-ops-core/fin-ops/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
-5. Before the data entities are used for the first time to import the data from the package, sync the mapping of source data and target data. In the list for the package, select a data entity, and then, on the Action Pane, select **Modify target mapping**. Then, above the grid for the package, select **Generate mapping** to create a mapping from scratch.
-6. Save the mapping.
-7. Repeat steps 3 through 6 for each data entity in the package.
+5. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh has been completed. For more information about how to refresh the entity list, see [Entity list refresh](../../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
+6. Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../../fin-ops-core/fin-ops/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
+7. Before the data entities are used for the first time to import the data from the package, sync the mapping of source data and target data. In the list for the package, select a data entity, and then, on the Action Pane, select **Modify target mapping**. Then, above the grid for the package, select **Generate mapping** to create a mapping from scratch.
+8. Save the mapping.
+9. Repeat steps 5 through 7 for each data entity in the package.
 
 For more information about Data management, see [Data management](../../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 You must now import data from the **PL JPK_KR_PD EM setup.zip** file into the selected company.
 
-1. In the **Data management** workspace, select **Import**, set the **Source data format** field to **Package**, and create a new importing project by selecting **New** on the Action Pane.
-2. On the **Select entities** FastTab, select **Add file**.
-3. Select **Upload and add**, select the **PL JPK_KR_PD EM setup.zip** file on your computer, and upload it.
-4. When entities from the package are listed in the grid, select **Close**.
-5. On the Action Pane, select **Import** to start to import data from the data entities.
+To import data into the selected company, follow these steps.
+
+1. In Dynamics 365 Finance, go to the **Data management** workspace.
+2. Select **Import**.
+3. Set the **Source data format** field to **Package**.
+4. Create a new importing project by selecting **New** on the Action Pane.
+5. On the **Select entities** FastTab, select **Add file**.
+6. Select **Upload and add**, select the **PL JPK_KR_PD EM setup.zip** file on your computer, and upload it.
+7. When entities from the package are listed in the grid, select **Close**.
+8. On the Action Pane, select **Import** to start to import data from the data entities.
 
 You will receive a notification in **Messages**, or you can manually refresh the page to view the progress of the data import. When the import process is completed, the **Execution summary** page shows the results.
 
@@ -91,9 +101,9 @@ You will receive a notification in **Messages**, or you can manually refresh the
 
 When the data from the **PL JPK_KR_PD EM setup.zip** file is imported to your legal entity, follow these steps to activate the executable classes parameters.
 
-1. Go to **Tax** > **Setup** > **Electronic messages** > **Executable class settings** page.
-2. Select **Wygenerowanie JPK_KR_PD** executable class and click **Parameters** of the Action pane.
-3. On the **Parameters** dialog, click **OK** button to activate the executable class.
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Executable class settings**.
+2. Select **Wygenerowanie JPK_KR_PD** executable class and on the the Action Pane, select **Parameters**.
+3. On the **Parameters** dialog, select **OK** to activate the executable class.
 
 Parameters of the **Obliczanie pól dodatkowych RPD** executable class are initiated on the [Set up Financial dimension set and Financial dimensions for Income Tax Register (RPD)](#rpd) step later in this topic.
 
@@ -114,7 +124,7 @@ There are two options supported in Finance to report account tags in JPK_KR_PD:
 The decision on which option to use depends on your organization’s structure, reporting requirements, and the level of detail needed for financial tracking.
 
 > [!NOTE]
-> The JPK_KR_PD solution uses the **Performance enhancement for general ledger dimension set balance calculation** feature. To learn more about the feature, see [New financial dimension sets](../../general-ledger/financial-dimension-set-new). The **Performance enhancement for general ledger dimension set balance calculation** feature must be enabled to calculate the amounts in ZOiS section of JPK_KR_PD.
+> The JPK_KR_PD solution uses the **Performance enhancement for general ledger dimension set balance calculation** feature. To learn more about the feature, see [New financial dimension sets](../../general-ledger/financial-dimension-set-new.md). The **Performance enhancement for general ledger dimension set balance calculation** feature must be enabled to calculate the amounts in ZOiS section of JPK_KR_PD.
 
 ### <a id="fin-dim"></a>Option 1: Using Financial dimensions and Financial dimension set
 
@@ -152,15 +162,15 @@ To automatically calculate the RPD amounts, you must set up a **Financial dimens
 
 When **Financial dimension set** for the Income Tax Register (RPD) section of  SAF Accounting Books Income Tax - JPK_KR_PD report is set up, you can establish the rules of automatic collection of the RPD amounts. 
 
-Follow these steps to establish the rules of automatic collection of the RPD amounts.
+To establish the rules of automatic collection of the RPD amounts, follow these steps.
 
-1. Go to **Tax** > **Setup** > **Electronic messages** > **Executable class settings** page.
-2. Select **Obliczanie pól dodatkowych RPD** executable class and click **Parameters** of the Action pane.
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Executable class settings**.
+2. Select **Obliczanie pól dodatkowych RPD** executable class and on the Action Pane, select **Parameters**.
 3. In **Financial dimension set** field select the **Financial dimension set** created for Income Tax Register (RPD) section of  SAF Accounting Books Income Tax - JPK_KR_PD report.
 4. In **Posting layer** field select one or many posting layers that must be included in amounts collection for RPD.
 5. Mark **Include closing transactions** check box if you wnat to include closing transactions in RPD figures calculation. 
 6. For every RPD figure that you want to be automatically calulated as the balance based on a specific combination of values of the selected **Financial dimension set**, select the corresponding **Additional field** and specify the **Range** of applicble **Financial dimension** values.
-7. When all the RPD figures setup is completed, click **OK** button to save settings. User will be able to see and adjust if necessary these settings every time they calculate the RPD figures.
+7. When all the RPD figures setup is completed, select **OK** to save settings. User will be able to see and adjust if necessary these settings every time they calculate the RPD figures.
 
 ## <a id="standard-coa"></a>Set up standard chart of accounts (optional, for companies using non-standard chart of accounts in Poland)
 
@@ -175,7 +185,8 @@ Application-specific parameters of the **JPK_KR_PD** format in ER facilitate the
 
 To prepare Finance to generate a SAF Accounting Books Income Tax - JPK_KR_PD in compliance with the required schema, follow these steps.
 
-1. Open the **Electronic reporting** workspace.
+
+1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace.
 2. In the configuration tree, select **General ledger data model mapping** configuration and set **Default for model mapping** option to **Yes**. Ensure that no other model mapping configuration under the **Standard Audit File (SAF-T)** model is not set as **Default for model mapping**.
 3. In the configuration tree, select **Standard Audit File (SAF-T)** \> **JPK_KR_PD XML (PL)**.
 4. On the Action Pane, on the **Configurations** tab, in the **Applications specific parameters** group, select **Setup**.
@@ -192,6 +203,7 @@ To prepare Finance to generate a SAF Accounting Books Income Tax - JPK_KR_PD in 
 15. On the Action pane, select **Import**, and select the XML files saved in step 10.
 16. Select **Completed** in the **State** field, and save the configuration.
 17. Optional: If necessary, in the configuration tree, select **General ledger data model mapping** configuration and set **Default for model mapping** option to **No**. Set the **Default for model mapping** option to **Yes** for the model mapping configuration that was previously selected. For example, if your organization uses the other JPK reports in Poland, set the **Standard Audit File model mapping** configuration as default.
+
 
 ### OpisDziennika - Journal description
 
@@ -267,15 +279,15 @@ As the last two lines, add lines that have the conditions **Not blank** and **Bl
 
 ## <a id="er-format-setup"></a>Set up General ledger parameters for preview the JPK_KR_PD in Excel
 
-Users of a legal entity with primary address in Poland can review their JPK_KR_PD by using the **General ledger** > **Inquires and reports** > **Standard Audit File for Tax (SAF-T)** > **SAF Accounting Books Income Tax** menu item. 
+Users of a legal entity with primary address in Poland can review their JPK_KR_PD by using the **General ledger** \> **Inquires and reports** \> **Standard Audit File for Tax (SAF-T)** \> **SAF Accounting Books Income Tax** menu item. 
 
 > [!NOTE]
-> The RPD section of JPK_KR_PD report is supported only when the report is generated from the **Electronic messages** page (using the **JPK_KR_PD** Electronic message processing).
-> We recommend using the **SAF Accounting Books Income Tax** menu item to generate the JPK_KR_PD for preview only.
+> - The RPD section of JPK_KR_PD report is supported only when the report is generated from the **Electronic messages** page (using the **JPK_KR_PD** Electronic message processing).
+> - Microsoft recommends using the **SAF Accounting Books Income Tax** menu item to generate the JPK_KR_PD for preview only.
 
-To set up the ER format that is run by the **SAF Accounting Books Income Tax** menu item, set up **General ledger parameters** using these steps.
+To set up the ER format that's run by the **SAF Accounting Books Income Tax** menu item, follow these steps.
 
-1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
+1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF Accounting Books Income Tax** field, select the **JPK_KR_PD Excel (PL)** ER format.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -6,7 +6,7 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form: InventInventoryDataService, KeyVaultParameters
 ms.topic: how-to
-ms.date: 06/21/2024
+ms.date: 08/14/2025
 ms.custom: 
   - bap-template
 ---
@@ -49,9 +49,9 @@ Before you can use the features that this article describes, your system must me
 
 - The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-    - *Inventory Visibility integration with inventory adjustment posting*
-    - *Inventory Visibility integration with inventory adjustment offset*
-    - *Enable warehouse items in Inventory Visibility*
+    - *Inventory Visibility integration with inventory adjustment posting* (As of Supply Chain Management version 10.0.45, this feature is mandatory and can't be turned off.)
+    - *Inventory Visibility integration with inventory adjustment offset* (As of Supply Chain Management version 10.0.45, this feature is mandatory and can't be turned off.)
+    - *Enable warehouse items in Inventory Visibility* (As of Supply Chain Management version 10.0.45, this feature is turned on by default.)
 
 - [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md) must be enabled for your environment.
 
@@ -81,10 +81,13 @@ To create a key vault to hold the client secret for Inventory Visibility, follow
     - **Upload options** – Select *Manual*.
     - **Name** – Enter a name for the secret (for example, *commerce-iv-01-secret*). Copy the value, paste it into your temporary text file, and label it.
     - **Secret value** – Enter the client secret value that you used when you installed the Inventory Visibility add-in (as mentioned in the [Prerequisites](#prerequisites) section).
-    - **Content type** – This is an optional field. The suggested value is *application/vnd.bag-3rdPartyHostedSecretNoRotation*.
+    - **Content type** – This field is optional. The suggested value is *application/vnd.ms-StorageConnectionString*.
     - **Set activation date** – Select this checkbox, and then enter the first date when this secret should be valid.
     - **Set expiration date** – Select this checkbox, and then enter the last date when this secret should be valid.
     - **Enabled** – Set this option to *Yes*.
+
+    > [!IMPORTANT]
+    > If the client secret value that you used when you installed the Inventory Visibility add-in expires, then the **Secret value** in this step also becomes invalid. If this happens, then you  must create a new client secret value for the Inventory Visibility application registration and update the **Secret value** mentioned in this step accordingly.
 
 1. Select **Create** to create and save the secret.
 
@@ -110,6 +113,19 @@ To register a Microsoft Entra application to enable Supply Chain Management and 
 
     - **Application (client) ID**
     - **Directory (tenant) ID**
+
+After the application is registered, create an access policy to enable it to access the key vault.
+
+1. Open the key vault you created in [Create a key vault to hold the client secret for Inventory Visibility](#key-vault).
+1. On the navigation pane, select **Access policies**.
+1. On the toolbar, select **Create** to open the **Create an access policy** page.
+1. On the **Permissions** tab, under **Secret permissions** \> **Secret Management Operations**, Select the **Get** checkbox. A template isn't required.
+1. Select **Next**.
+1. On the **Principal** tab, select the application you just registered in this section.
+1. Select **Next**.
+1. The **Application** tab is optional.
+1. Select **Next**.
+1. On the **Review + create** tab, review your settings and then select **Create**.
 
 ## <a name="scm-vault-setup"></a>Set up Supply Chain Management to access the new key vault
 

@@ -3,7 +3,7 @@ title: Adjust sales tax via general journals
 description: Learn how to adjust sales tax by using general journals so that you can balance a tax account, record specific tax transactions, or correct discrepancies.
 author: Kai-Cloud
 ms.author: kailiang
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/08/2022
 ms.custom:
 ms.reviewer: kfend

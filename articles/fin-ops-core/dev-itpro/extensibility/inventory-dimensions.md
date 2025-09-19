@@ -3,7 +3,7 @@ title: Add new inventory dimensions through extension
 description: Learn about how to add new inventory dimensions through extensions, including a solution overview and various code examples.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/01/2018
 ms.reviewer: johnmichalak
 audience: Developer

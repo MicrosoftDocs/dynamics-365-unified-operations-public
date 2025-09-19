@@ -3,7 +3,7 @@ title: Generate invoice lines when you import vendor invoices
 description: Learn about the functionality for automatically generating invoice lines on vendor invoices when invoices are imported.
 author: sunfzam
 ms.author: shpandey
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/17/2024
 ms.reviewer: twheeloc
 ms.collection: get-started

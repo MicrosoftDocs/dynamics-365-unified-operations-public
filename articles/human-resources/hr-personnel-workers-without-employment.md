@@ -32,30 +32,24 @@ Workers who have no future, active, or historical employment with your organizat
 
 By default, the **Workers without employment** page is available to the following roles:
 
-- Human Resources Assistant
-- Human Resources Manager
+- Human Resources assistant
+- Human Resources manager
 - Recruiter
-- Comp and Benefits Manager
-- Payroll Administrator
-- Payroll Manager
-- Training Manager
+- Comp and Benefits manager
+- Payroll administrator
+- Payroll manager
+- Training manager
 
-In the **Workers without employment** list, you can delete the individuals listed. By default, this privilege is given to the Human Resources Assistant role. You can give this privilege to other roles with the following steps:
+In the **Workers without employment** list, you can delete the individuals listed. By default, this privilege is given to the Human Resources assistant role. You can give this privilege to other roles with the following steps:
 
 1. Select **System administration**, and then select **Security configuration**.
-
 2. In the **Privileges** tab, filter the **Privileges** list to **Maintain workers**.
 
    [![Filter Privileges list.](./media/hr-personnel-workers-without-employment-filter.png)](./media/hr-personnel-workers-without-employment-filter.png)
 
 3. In the **References** column, select **Display menu items**.
-
 4. In **Display menu items**, select **HcmWorkersWithoutEmployment**.
-
-   [![Select form.](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
-
 5. Set the **Delete** permission to **Grant**.
-
 6. Select the **Unpublished objects** tab.
 
 7. Select **Publish all**.

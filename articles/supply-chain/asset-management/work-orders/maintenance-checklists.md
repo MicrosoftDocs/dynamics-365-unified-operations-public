@@ -3,28 +3,25 @@ title: Maintenance checklists
 description: Learn about maintenance checklists in Asset Management, which are set up on maintenance job types, including a process for filling in maintenance checklists.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
-ms.date: 10/15/2019
-ms.custom: 
 ms.reviewer: kamaybac
 ms.search.form: EntAssetWorkOrderChecklist, EntAssetMobileWorkOrderLineChecklistDetails 
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
-
 
 # Maintenance checklists
 
 [!include [banner](../../includes/banner.md)]
 
-
-
 Maintenance checklists are set up on maintenance job types. You fill in maintenance checklists as part of the process of completing a work order. For more information about how to set up maintenance checklists on maintenance job types on the **Maintenance job type defaults** page, see [Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
 When you work with maintenance checklists on a work order, you can fill in the predefined maintenance checklists that are related to maintenance job types. You can also add more maintenance checklists.
 
-
 ## Fill in a maintenance checklist
 
-1. Click **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
+1. Go to **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**.
 
 2. Select the work order and then, on the Action Pane, on the **Work order** tab, in the **Lines** group, select **Maintenance checklist**.
 
@@ -39,14 +36,13 @@ When you work with maintenance checklists on a work order, you can fill in the p
 >[!NOTE]
 >You can only update maintenance checklist registrations if the work order is in an [Active](../setup-for-work-orders/work-order-lifecycle-states.md) lifecycle state.  
 
-
 ## Add a maintenance checklist line
 
 Maintenance checklists are created from the definition on the maintenance job type default and are transferred to a work order job. As you require, you can add maintenance checklist lines to a work order job. Maintenance checklist lines that you manually add get the **Manual** reference.
 
 1. On the **Work order maintenance job checklist** page, select the work order job to add a maintenance checklist for.
 
-2. On the **Maintenance checklist lines** FastTab, select a maintenance checklist line. Then, to insert a new line after the selected line, press the **Down arrow** key. The next number in the sequence is automatically entered in the **Line number** field. To insert a new line before the selected line, select **Add line**. 
+2. On the **Maintenance checklist lines** FastTab, select a maintenance checklist line. Then, to insert a new line after the selected line, press the **Down arrow** key. The next number in the sequence is automatically entered in the **Line number** field. To insert a new line before the selected line, select **Add line**.
 
 3. On the **Name** field, enter a name for the maintenance checklist line.
 
@@ -64,8 +60,6 @@ Maintenance checklists are created from the definition on the maintenance job ty
 
 The illustration below shows an example of a maintenance checklist.
 
-![Figure 1.](media/14-work-orders.png)
-
-
+![Example of a maintenance checklist.](media/14-work-orders.png)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

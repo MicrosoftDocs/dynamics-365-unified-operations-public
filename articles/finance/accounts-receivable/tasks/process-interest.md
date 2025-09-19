@@ -1,10 +1,10 @@
 --- 
 title: Process interest
-description: Learn about how to create, print, and post interest notes, including outlines on setting up interest on posting profiles and calculating interest.
+description: Learn how to create, print, and post interest notes, including outlines on setting up interest on posting profiles and calculating interest.
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: how-to
-ms.date: 09/28/2023
+ms.date: 08/04/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -28,14 +28,14 @@ This procedure shows how to create, print, and post interest notes. This task us
 
 ## Calculate interest
 1. Go to **Credit and collections > Interest > Create interest notes**.
-2. You must select the transaction types for which you will calculate interest. All of the open transactions for these types will be included in the calculation.  
-3. If you set **Interest** to **Yes**, you will calculate interest on interest. You may want to check the laws governing the calculation of interest on interest before including these transactions.  
-4. In the **From date** field, enter a date from which the interest will be calculated. If you don't specific a **From date**, then all unposted interest notes will be canceled and interest will be recalculated from the transaction date.
+2. Select the transaction types for which you will calculate interest. All of the open transactions for these types are included in the calculation.  
+3. If you set **Interest** to **Yes**, you calculate interest on interest. You may want to check the laws governing the calculation of interest on interest before including these transactions.  
+4. In the **From date** field, enter a date from which the interest is calculated. If you don't specific a **From date**, then all unposted interest notes are canceled and interest is recalculated from the transaction date.
 5. In the **To date** field, enter a date to which the interest would be calculated.
 6. In the **Use posting profile from** field, select an option. There are three posting profile options:
-    - **Account** – Use the posting profile that is assigned to the customer account for each interest note. 
+    - **Account** – Use the posting profile that's assigned to the customer account for each interest note. 
     - **Select** – Use the posting profile that you select in the **Posting profile** field.
-    - **Transaction** – Use the individual posting profile from transactions on which interest is calculated for each interest note. Transactions that don't have an assigned posting profile will use the posting profile that is specified in the **Ledger and sales tax** area of the **Accounts receivable parameters** page.  
+    - **Transaction** – Use the individual posting profile from transactions on which interest is calculated for each interest note. Transactions that don't have an assigned posting profile use the posting profile that is specified in the **Ledger and sales tax** area of the **Accounts receivable parameters** page.  
 7. Expand the **Records to include** FastTab.
 8. Click **Filter**.
 9. In the **Criteria** field, enter a **Customer ID**. For example, enter 'US-001'.

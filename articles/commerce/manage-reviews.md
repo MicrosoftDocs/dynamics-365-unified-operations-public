@@ -9,8 +9,9 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-01
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Manage ratings and reviews

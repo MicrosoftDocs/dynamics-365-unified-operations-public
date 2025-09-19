@@ -1,8 +1,8 @@
 ---
 title: Make manual adjustments to the baseline forecast
 description: Learn how you can make manual adjustments to a baseline forecast and view details of the forecast with an outline on the adjusted demand forecast page. 
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 01/07/2020
 ms.reviewer: kamaybac

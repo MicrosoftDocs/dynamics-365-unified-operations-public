@@ -3,7 +3,7 @@ title: Reverse posted lease transactions
 description: Learn about how to reverse a posted lease transaction. Any transaction that is created through Asset leasing can be reversed.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/12/2021
 ms.reviewer: kfend
 audience: Application User

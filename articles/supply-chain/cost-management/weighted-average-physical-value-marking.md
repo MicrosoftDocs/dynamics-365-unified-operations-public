@@ -3,12 +3,12 @@ title: Weighted average with physical value and marking
 description: Weighted average is an inventory model based on the weighted average principle, where issues from inventory are valued at the average received item value.
 author: prasungoel
 ms.author: prasungoel
-ms.topic: how-to
-ms.date: 05/27/2024
-ms.custom:
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+  - bap-template
 ---
 
 # Weighted average with physical value and marking
@@ -40,8 +40,8 @@ Settlements are inventory close postings that adjust the issues to the correct w
 
 The direct settlement principle creates settlements directly between receipts and issues without creating additional inventory transactions. The system uses this direct settlement principle in the following situations:
 
-- One receipt and one or more issues have been posted in the period.
-- Only issues have been posted in the period and the inventory contains on-hand items from a previous closing.
+- One receipt and one or more issues were posted in the period.
+- Only issues were posted in the period and the inventory contains on-hand items from a previous closing.
 
 In this example, the **Include physical value** checkbox is cleared on the **Item model group** for the released product. The illustration that follows shows these transactions:
 
@@ -74,7 +74,7 @@ The following diagram illustrates this series of transactions with the effects o
 
 ## Weighted average summarized settlement without the Include physical value option
 
-When there are multiple receipts in a period, weighted average uses the summarized settlement principle where all receipts within in a closing period are summarized into a transaction called *weighted average inventory closing*. All the receipts for the period will be settled against the issue of the newly created inventory transaction. All issues for the period will be settled against the receipt of the new inventory transaction. If there's remaining on-hand inventory value after the inventory close, the on-hand inventory value is included in the receipt transaction of the weighted average inventory closing transactions.
+When there are multiple receipts in a period, weighted average uses the summarized settlement principle where all receipts within in a closing period are summarized into a transaction called *weighted average inventory closing*. All the receipts for the period will be settled against the issue of the newly created inventory transaction. All issues for the period will be settled against the receipt of the new inventory transaction. If there's remaining on-hand inventory after the inventory close, the on-hand inventory value is included in the receipt transaction of the weighted average inventory closing transactions.
 
 The following transactions are illustrated in the graphic that follows:
 
@@ -117,7 +117,7 @@ The following diagram illustrates this series of transactions with the effects o
 
 ## Weighted average direct settlement with the Include physical value option
 
-The parameter **Include physical value** works differently with the weighted average inventory model than in earlier versions of the product. When you select the **Include physical value** option for an item in the **Item model group** form, the system will use physically updated receipts when calculating the estimated issue cost price, or running average. Issues will be posted based on this estimated cost price during the period. During the inventory close, financially updated receipts only will be considered in the weighted average calculation.
+The parameter **Include physical value** works differently with the weighted average inventory model than in earlier versions of the product. When you select the **Include physical value** option for an item in the **Item model group** form, the system uses physically updated receipts when calculating the estimated issue cost price, or running average. Issues are posted based on this estimated cost price during the period. During the inventory close, financially updated receipts are only considered in the weighted average calculation.
 
 The following transactions are illustrated in the graphic that follows:
 
@@ -150,7 +150,7 @@ The following diagram illustrates this series of transactions with the effects o
 
 ## Weighted average summarized settlement with the Include physical value option
 
-The **Include physical value** parameter works differently with weighted average than in earlier versions. Select the **Include physical value** checkbox for an item on the **Item model group** page. Then the system will use physically updated receipts in the calculation of estimated cost price, or running average. Issues will be posted based on this estimated cost price during the period. During the inventory close, financially updated receipts only will be considered in the weighted average calculation. We recommend a monthly inventory close when you use the weighted average inventory model. In this weighted average summarized settlement example, the inventory model is marked to include physical value.
+The **Include physical value** parameter works differently with weighted average than in earlier versions. Select the **Include physical value** checkbox for an item on the **Item model group** page. Then the system uses physically updated receipts in the calculation of estimated cost price, or running average. Issues are posted based on this estimated cost price during the period. During the inventory close, financially updated receipts are only considered in the weighted average calculation. We recommend a monthly inventory close when you use the weighted average inventory model. In this weighted average summarized settlement example, the inventory model is marked to include physical value.
 
 The following transactions are illustrated in the graphic that follows:
 

@@ -3,7 +3,7 @@ title: Update and index subscription sales prices
 description: Learn how to update and index subscription sales prices, including a step-by-step processes for updating subscription sales prices and additional resources.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac

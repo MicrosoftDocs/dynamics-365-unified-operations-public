@@ -4,7 +4,8 @@ description: Accounts payable invoice matching is the process of matching vendor
 author: sunfzam
 ms.author: shpandey
 ms.topic: overview
-ms.date: 03/22/2024
+ms.date: 05/15/2025
+ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
 ms.collection: get-started

@@ -15,13 +15,7 @@ ms.dyn365.ops.version: 10.0.42
 
 [!include [banner](../includes/banner.md)]
 
-# Financial tag rule reference (preview)
-
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+# Financial tag rule reference 
 
 ## Fields supported for all journals
 

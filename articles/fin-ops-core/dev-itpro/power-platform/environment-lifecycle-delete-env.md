@@ -3,7 +3,7 @@ title: Delete environments when Power Platform Integration is enabled
 description: Learn about how to delete environments when finance and operations apps are integrated with Microsoft Power Platform.
 author: abunduc-ms
 ms.author: abunduc
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/19/2024

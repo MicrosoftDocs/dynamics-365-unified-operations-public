@@ -5,7 +5,7 @@ title: Create coverage options
 description: This article describes the coverage options in Microsoft Dynamics 365 Human Resources for a participant's election in a benefit plan or program.
 author: twheeloc
 ms.date: 07/02/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

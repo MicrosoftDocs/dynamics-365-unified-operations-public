@@ -3,7 +3,7 @@ title: Delivering ISV solutions using One Version
 description: Learn about how independent software vendors (ISVs) can use One Version to deliver their solutions, including overviews of servicing customers and compatibility.
 author: FrankDahl
 ms.author: fdahl
-ms.topic: article
+ms.topic: concept-article
 ms.date: 05/03/2022
 ms.reviewer: twheeloc
 audience: Developer, IT Pro

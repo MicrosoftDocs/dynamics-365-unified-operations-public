@@ -3,7 +3,7 @@ title: Enable change tracking for entities
 description: Learn about using change tracking to enable incremental export of data from finance and operations, including a table outling how changes are tracked for various options.
 author: Milindav2
 ms.author: milindav
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/17/2020
 ms.reviewer: twheeloc
 audience: IT Pro, Developer

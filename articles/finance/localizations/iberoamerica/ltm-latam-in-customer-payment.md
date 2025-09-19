@@ -4,7 +4,7 @@ description: Learn how to use payment methods in customer payments, including pr
 author: Cpicon85
 ms.author: v-cpicon
 ms.date: 10/23/2023
-ms.topic: article
+ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---

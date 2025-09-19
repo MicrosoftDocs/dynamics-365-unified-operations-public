@@ -1,13 +1,14 @@
---- 
+---
 title: Create a product master
 description: Learn how to create a product master for the predefined variants, including a step-by-step process using the USMF demo data company. 
 author: sgmsft
 ms.author: shwgarg
-ms.topic: how-to
-ms.date: 08/29/2018
-ms.custom:
-ms.reviewer: kamaybac     
+ms.reviewer: kamaybac
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductInventoryDimensionGroups
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Create a product master
@@ -22,9 +23,9 @@ Create a product master for the predefined variants. The demo data company used 
 2. Select **New**.
 3. In the **Product number** field, type a value. The number must be unique. A number sequence can be set for the **Product number** field. In this case, the user doesn't have to enter a value.
 4. In the **Product name** field, type a value. Enter a descriptive product name. The value defaults to the search name, but this can be changed by the user.
-5. In the **Product dimension group** field, select the drop-down button to open the lookup. The product dimension group determines which of the 4 product dimensions that can be used to create product variants. This example uses a group with color and size.
+5. In the **Product dimension group** field, select the drop-down button to open the lookup. The product dimension group determines which of the four product dimensions that can be used to create product variants. This example uses a group with color and size.
 6. In the list, find and select the desired record.
-7. In the list, select the link in the selected row. The default **Configuration technology** is 'Predefined variant'. This will be used for this example.
+7. In the list, select the link in the selected row. The default **Configuration technology** is *Predefined variant*. This value is used for this example.
 8. Select **OK**.
 
 ## Select product dimension groups

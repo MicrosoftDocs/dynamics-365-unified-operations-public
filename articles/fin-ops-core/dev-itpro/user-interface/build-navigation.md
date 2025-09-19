@@ -3,7 +3,7 @@ title: Build navigation
 description: Learn about build navigation, including key concepts and outlines on setups and overviews on various workspaces.
 author: jasongre
 ms.author: jasongre
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 01/23/2025

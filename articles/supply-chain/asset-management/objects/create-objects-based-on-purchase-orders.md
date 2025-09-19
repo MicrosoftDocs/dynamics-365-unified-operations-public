@@ -3,7 +3,7 @@ title: Create assets based on purchase orders
 description: Learn how you can create a list of asset items that can be used as a basis for creating assets for maintenance jobs in Asset Management.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/26/2019
 ms.reviewer: kamaybac
 ms.search.form: EntAssetObjectItem, EntAssetPendingAssets

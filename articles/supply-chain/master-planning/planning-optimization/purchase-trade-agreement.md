@@ -1,9 +1,9 @@
 ---
 title: Master planning with purchase trade agreements
 description: Learn how master planning can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found in purchase trade agreements.
-author: t-benebo
-ms.author: benebotg
-ms.topic: article
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 08/09/2022
 ms.custom: 
 ms.reviewer: kamaybac

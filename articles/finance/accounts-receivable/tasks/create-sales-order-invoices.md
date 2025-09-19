@@ -1,10 +1,10 @@
 --- 
 title: Create sales order invoices
-description: Learn about how to invoice a sales order, including merging invoices and batch processing. A step-by-step process for creating invoices from sales orders is provided.
+description: Learn how to invoice a sales order, including merging invoices and batch processing. 
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: how-to
-ms.date: 03/25/2023
+ms.date: 05/20/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -30,7 +30,7 @@ This article describes how to invoice a sales order, including merging invoices 
     - This option is used for batch jobs. The query is run when the batch job is run.
 5. In the **Print** field, select **After**.
 6. Select **Yes** for **Print invoice**. Print management can print multiple copies of the invoice and also send the invoice via email as a PDF file.  
-7. In the **Print charges** field, select **Summarize**.
+7. In the **Print charges** field, select **Summarize**. The **Show detail** option doesn't apply to the **Sales order invoice** report.
 8. In the **Check credit limit** field, select **Balance**.
 9. Click **Cancel**.
 

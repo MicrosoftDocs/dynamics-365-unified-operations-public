@@ -3,7 +3,7 @@ title:  Set up interest distribution for cash accounts
 description: Learn how to set up your participating cash accounts on the Interest distribution rules page. You must complete this setup before you distribute the interest.
 author: v-kiarnd
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/03/2021
 ms.custom:
 ms.reviewer: twheeloc

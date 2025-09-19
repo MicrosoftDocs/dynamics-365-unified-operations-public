@@ -10,8 +10,9 @@ ms.search.region: Global
 ms.author: anvenkat
 ms.search.validFrom: 2016-02-28
 ms.search.form: RetailSharedParameters, RetailDevice
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Point of sale (POS) device activation

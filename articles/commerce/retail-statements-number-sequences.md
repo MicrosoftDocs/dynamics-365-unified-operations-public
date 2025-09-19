@@ -5,7 +5,8 @@ title: Set up number sequences for retail statements
 description: This article describes how to configure the number sequences that are required for retail statements in Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 05/28/2024
-ms.topic: article
+ms.update-cycle: 1095-days
+ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global

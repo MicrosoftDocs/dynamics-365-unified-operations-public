@@ -3,9 +3,10 @@ title: Collections coordinator summary FAQ
 description: Access answers to some frequently asked questions about the Collections coordinator summary feature in Microsoft Dynamics 365 Finance.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
+ms.topic: faq
 ms.custom: faq
 ms.date: 01/21/2025
+ms.update-cycle: 180-days
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
 ---

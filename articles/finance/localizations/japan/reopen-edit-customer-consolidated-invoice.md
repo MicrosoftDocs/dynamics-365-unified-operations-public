@@ -1,50 +1,55 @@
 ---
 title: Reopen and edit a customer consolidated invoice
-description: Learn how to reopen and modify a confirmed customer consolidated invoice, including a step-by-step process using the JPMF demo data company.
+description: Learn how to reopen and modify a confirmed customer consolidated invoice for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 05/02/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: CustConsInvoice_JP, SysQueryForm
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Reopen and edit a customer consolidated invoice
 
 [!include [banner](../../includes/banner.md)]
 
-In Japan, when you miss an invoice during the consolidation process, you will need to reopen the consolidated invoice to add the missed invoice. 
+This article explains how to reopen and modify a confirmed customer consolidated invoice for Japan in Microsoft Dynamics 365 Finance.
 
+In Japan, when you miss an invoice during the consolidation process, you must reopen the consolidated invoice to add the missed invoice. 
 
+The following procedures walk you through how to reopen a confirmed consolidated invoice and modify it. Before you can complete procedures, you must have a confirmed consolidated invoice.
 
-This procedure walks you through reopening a confirmed consolidated invoice and modifying it. You must have a confirmed consolidated invoice before you can complete procedure.
-
-
-
-This procedure was created using the demo data company JPMF.
-
+The procedures use the demo data company JPMF.
 
 ## Reopen a consolidated invoice
-1. Go to Accounts receivable > Periodic tasks > Consolidated invoice.
-2. In the list, find and select the desired record.
-    * Select an invoice that is already confirmed.  
-3. Click Reopen.
+
+To reopen a consolidated invoice, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Periodic tasks \> Consolidated invoice**.
+1. In the list, find and select an invoice that is already confirmed.  
+1. Select **Reopen**.
 
 ## Remove a sales order from a consolidated invoice
-1. In the list, click the link in the selected row.
-2. Click Edit.
-3. In the list, mark the selected row.
-4. Click Remove.
+
+To remove a sales order from a consolidated invoice, follow these steps.
+
+1. In the list, select the link in the selected row.
+1. Select **Edit**.
+1. In the list, mark the selected row.
+1. Select **Remove**.
 
 ## Add sales orders and confirm the consolidated invoice
-1. Click Query invoice.
-2. Click OK.
-    * Confirm that the sales orders that were invoiced before the Consolidation date are included.  
-3. Click Confirm.
+
+To add sales orders and confirm the consolidated invoice, follow these steps.
+
+1. Select **Query invoice**.
+1. Select **OK**.
+1. Confirm that sales orders that were invoiced before the consolidation date are included.  
+1. Select **Confirm**.
 
 
 

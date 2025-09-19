@@ -3,8 +3,9 @@ title: What's new or changed in Dynamics 365 Finance 10.0.13 (October 2020)
 description: Learn about features that are either new or changed in the Dynamics 365 Finance version 10.0.13 preview release released in October 2020.
 author: kfend
 ms.author: kfend
-ms.topic: article
+ms.topic: whats-new
 ms.date: 07/15/2024
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen

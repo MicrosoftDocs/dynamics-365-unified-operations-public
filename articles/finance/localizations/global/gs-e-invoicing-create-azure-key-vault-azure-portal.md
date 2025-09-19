@@ -3,7 +3,7 @@ title: Configure an Azure Key Vault in the Azure portal
 description: Learn how to create a Microsoft Azure Key Vault for Electronic invoicing, including a step-by-step process for configuring the key vault.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 09/13/2024

@@ -3,11 +3,12 @@ title: Inventory Visibility diagnostic tool
 description: Learn how to set up the Inventory Visibility diagnostic tool, which helps you identify discrepancies between inventory records and the inventory visibility service.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: how-to
-ms.date: 01/11/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Inventory Visibility diagnostic tool

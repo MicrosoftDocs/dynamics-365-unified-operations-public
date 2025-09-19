@@ -4,7 +4,7 @@ description: This FAQ provides information about the AI technology used in Human
 ms.date: 04/14/2025
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 author: twheeloc
 ms.author: anisagrawal
 ms.reviewer: twheeloc

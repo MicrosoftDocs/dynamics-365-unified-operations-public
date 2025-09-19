@@ -3,7 +3,7 @@ title: Configure the layout of a printed invoice for Latin America
 description: Learn how to configure the LATAM invoice layout format when printing a document, including prerequisites and an outline on setting up invoice layout printing.
 author: Fhernandez0088
 ms.author: v-federicohe
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/09/2023
 ms.custom: bap-template
 ms.reviewer: johnmichalak

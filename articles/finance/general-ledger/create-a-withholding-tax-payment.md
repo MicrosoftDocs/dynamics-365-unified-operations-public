@@ -3,7 +3,7 @@ title: Create a withholding tax payment
 description: The Withholding tax payment job procedure settles withholding tax balances from Accounts payable on withholding tax accounts, and offsets them for a given period.
 author: kailiang
 ms.author: kailiang
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/12/2021
 ms.reviewer: kfend
 audience: Application User

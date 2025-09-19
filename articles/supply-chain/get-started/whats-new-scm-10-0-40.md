@@ -3,11 +3,14 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.40 (Ju
 description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.40 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
-ms.topic: conceptual
-ms.date: 04/27/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: whats-new
+ms.date: 08/05/2025
+ms.update-cycle: 1095-days
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.40 (June 2024)
@@ -30,7 +33,7 @@ The following table lists the features that are included in this release. We mig
 | Copilot and AI innovation | [Generate context-aware insights for warehouse workers](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/generate-context-aware-insights-warehouse-workers) | [Workload insights with Copilot in the Warehouse Management mobile app](../warehousing/warehouse-management-mobile-app-insights.md) | <p>Feature management:<br>*Context-aware worker summary screen in WMA*</p><p>Requires Warehouse Management mobile app version 2.3.2.0 or later.</p><p>Requires Supply Chain Management version 10.0.40 with proactive quality update 1 (PQU-1) or later.</p> |
 | Copilot and AI innovation | AI summaries with Copilot | [AI summaries with Copilot](copilot-summaries-overview.md) | <p>Feature management:</p><ul><li>*Product summary when hovering on item*</li><li>*Product details summary*</li><li>*Purchase order summary*</li><li>*Sales order summary*</li><li>*Vendor summary*</li></ul><p>Requires Supply Chain Management version 10.0.40 with PQU-1 or later.</p> |
 | Planning | Item substitution for bills of materials in Planning Optimization | [Item substitution for formulas and bills of materials](../master-planning/item-substitution.md) | Feature management:<br>*Item substitution for bill of materials in Planning optimization* |
-| Inventory and logistics | [Reproduce business documents that include product bundles](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/reproduce-business-documents-that-include-product-bundles) | [Sell and allocate product bundles](../sales-marketing/product-bundles-use.md#bundles-journals) | Feature management:<br>*(Preview) Product bundles in journals*  |
+| Inventory and logistics | [Reproduce business documents that include product bundles](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/reproduce-business-documents-that-include-product-bundles) | [Sell and allocate product bundles](../sales-marketing/product-bundles-use.md#bundles-journals) | Feature management:<br>*Product bundles in journals*  |
 | Inventory and logistics | [Query and manage inventory without site or warehouse info](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/query-post-reserve-inventory-without-specifying-site-or-warehouse) | [Data partition rule](../inventory/inventory-visibility-power-platform.md#data-partition) | Enabled by default |
 | Manufacturing and asset management | [Track and trace serial and batch numbers for manufacturing](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/track-trace-serial-batch-numbers-manufacturing) | [Register and track batch/serial numbers for finished products and their components (preview)](../production-control/tracked-components.md) | Feature management:<br>*Tracked components* |
 | Planning | Rolling forecasts for demand planning | [Rolling forecasts](../demand-planning/rolling-forecasts.md) | Enabled by default |

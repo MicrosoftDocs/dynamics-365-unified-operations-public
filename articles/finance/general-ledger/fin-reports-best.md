@@ -3,7 +3,7 @@ title: Financial reporting best practices
 description: Access tips and best practices for optimizing financial reports in Microsoft Dynamics 365 Finance, including an outline on optimizing report design.
 author: aprilolson
 ms.author: aolson
-ms.topic: article
+ms.topic: best-practice
 ms.date: 04/04/2023
 ms.reviewer: twheeloc
 ms.collection: get-started

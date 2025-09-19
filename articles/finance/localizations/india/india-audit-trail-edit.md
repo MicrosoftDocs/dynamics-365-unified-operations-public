@@ -3,7 +3,7 @@ title: Audit trail and edit logs for accounting software in India
 description: Learn about the new Indian tax requirements of Rule 3 of the Companies (Accounts) Rules.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/08/2025
 ms.custom: 
   - bap-template

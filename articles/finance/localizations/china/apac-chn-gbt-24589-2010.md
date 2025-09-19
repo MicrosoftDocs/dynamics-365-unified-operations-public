@@ -3,7 +3,7 @@ title: GB/T 24589-2010 export
 description: Learn how to export accounting data to several XML files for a specific period, including a table that provides more details about each file's contents.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/27/2024

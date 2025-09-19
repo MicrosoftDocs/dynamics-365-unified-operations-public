@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Onboard users to use the HR Recruiting app (preview)
+title: Onboard users to use the HR Recruiting app 
 description: This article explains how to onboard users so that they can use the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/01/2024
+ms.date: 08/11/2025
 ms.topic: article
 # optional metadata
 
@@ -23,9 +23,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Onboard users to use the HR Recruiting app (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Onboard users to use the HR Recruiting app 
 
 This article explains how to onboard users so that they can use the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
@@ -33,8 +31,6 @@ Users who have licenses are seamlessly onboarded to your Dataverse instance in t
 
 - If there's no security group in your Microsoft Power Platform setup, all licensed users in your tenant are automatically synchronized.
 - If there's a security group (recommended), only licensed users in that group are automatically synchronized to Microsoft Power Platform.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Synchronize users
 
@@ -64,9 +60,10 @@ The Recruiting add-on includes the following roles.
 
 | Role | Scope |
 |------|-------|
-| System administrator | This role supports all functionality of the hiring process and configuration. |
-| Recruiter | Users who have this role can create job ads, assign interviewers, schedule interviews, set the candidates to hire, and invite prospects. |
-| Hiring manager | Users who have this role can view the hiring process. |
+| System administrator (Dataverse build-in role) | This role supports all functionality of the hiring process and configuration. |
+| Recruiting administator | This role supports all functionality of the hiring process and configuration. Users assigned the Recruiting administrator role need to be present in Dynamics 365 finance and operations and must also have the Recruiting Application role assigned Dynamics 365 finance and operations. 
+| Recruiter | Users who have this role can create job ads, assign interviewers, schedule interviews, set the candidates to hire, and invite prospects. Users assigned the **Recruiting** role need to be present in Dynamics 365 finance and operations and must also have the Recruiting application role assigned Dynamics 365 finance and operations. |
+| Hiring manager | Users who have this role can view the hiring process. Users assigned the Hiring manager role need to be present in Dynamics 365 finance and operations and must also have the Recruiting application role assigned Dynamics 365 finance and operations.  |
 | Panel member | Users who have this role can provide feedback. |
 | Job ad approver | Users who have this role can approve job ads. |
 

@@ -1,20 +1,21 @@
 ---
 title: Vendor settings added for Landed cost
 description: Learn about the new fields that are added to the existing Vendors page when you enable the Landed cost module, including a table that defines various fields.
-author: lisascholz91
-ms.author: lisascholz
-ms.topic: article
-ms.date: 12/07/2020
-ms.custom:
+author: prasungoel 
+ms.author: prasungoel 
 ms.reviewer: kamaybac
 ms.search.form: VendTable
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Vendor settings added for Landed cost
 
 [!include [banner](../../includes/banner.md)]
 
-When you enable the **Landed cost** module, several new fields are added to the existing **Vendors** page. You use these fields to set up the vendors that you will use together with Landed cost features.
+When you enable the **Landed cost** module, several new fields are added to the existing **Vendors** page. You use these fields to set up the vendors that you'll use together with Landed cost features.
 
 To set the relevant fields, go to **Procurement and sourcing \> Vendors \> All vendors**. Open an existing vendor, or create a new vendor, and then select the **Miscellaneous details** FastTab. All the new fields that the **Landed cost** module adds appear under the **Voyages** heading. The following table describes these fields.
 

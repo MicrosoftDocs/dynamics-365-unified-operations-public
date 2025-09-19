@@ -17,7 +17,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Security entry points under the process hierarchy
 
 [!include[banner](../../../finance/includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The security entry points under the process hierarchy are critical for defining and designing the access level and privileges for any given role. Here are some of the key entry point–related functions that are supported in user security governance:
 

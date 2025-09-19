@@ -3,7 +3,7 @@ title: Cross-company data sharing overview
 description: Learn about cross-company data sharing. This is a mechanism for sharing reference and group data among companies in a deployment.
 author: RamaKrishnamoorthy
 ms.author: ramasri
-ms.topic: article
+ms.topic: concept-article
 ms.date: 02/18/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global

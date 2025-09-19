@@ -3,11 +3,12 @@ title: Asset Management mobile app FAQs and known issues
 description: Access answers to several frequently asked questions (FAQs) about the Asset Management mobile app, including questions about supported platforms and devices.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: overview
-ms.date: 09/19/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: faq
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Asset Management mobile app FAQs and known issues
@@ -46,7 +47,7 @@ The [Asset Management Viva Engage (Yammer) group](https://www.yammer.com/dynamic
 
 ## How can I diagnose "Error when trying to retrieve data from the network" issues?
 
-If you see the error message "Error when trying to retrieve data from the network", follow these steps to diagnose and solve the issue:
+If you see the error message "Error when trying to retrieve data from the network," follow these steps to diagnose and solve the issue:
 
 1. Run the Asset Management app in a browser as described in [Run an app in a web browser](/power-apps/user/run-app-browser).
 1. If you see the same error while running in a browser, set up your browser to [capture a HAR file](/microsoft-edge/devtools-guide-chromium/network/reference#save-all-network-requests-to-a-har-file) and then reload the tab where the app is running.

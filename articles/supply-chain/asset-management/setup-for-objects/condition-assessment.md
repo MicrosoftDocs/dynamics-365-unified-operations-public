@@ -4,7 +4,7 @@ description: Learn how to create a condition assessment template and registratio
 author: jodahlMSFT
 ms.author: jodahl
 ms.date: 06/26/2019
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: kamaybac
 ms.search.form: EntAssetObjectCondition, EntAssetConditionTemplate 
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658

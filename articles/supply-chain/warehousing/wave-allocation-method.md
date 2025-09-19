@@ -3,7 +3,7 @@ title: Wave allocation
 description: Learn how to set up the wave allocation step, including how to enable parallel processing for it, including an outline on performance enhancements.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/08/2021
 ms.custom:
 ms.reviewer: kamaybac

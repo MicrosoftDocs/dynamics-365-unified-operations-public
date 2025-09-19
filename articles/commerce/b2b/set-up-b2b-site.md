@@ -3,7 +3,7 @@ title: Set up a B2B e-commerce site
 description: This article describes how to set up a business-to-business (B2B) e-commerce site in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 05/28/2024
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global

@@ -22,12 +22,16 @@ For example, the *Run packing slip for container* message type is used to create
 
 ## View the message log, message content, and details
 
-To view the messages that are processed by the message processor, go to **System administration \> Message processor \> Message processor messages**. For information about how to use the **Message processor messages** page to review messages, find and fix failed messages, and more, see [Message processor messages page](../supply-chain-dev/message-processor.md#message-processor-page).
+To view the messages that are processed by the message processor, go to **System administration \> Message processor \> Message processor messages**. For information about how to use the **Message processor messages** page to review messages, find and fix failed messages, and more, see [Message processor messages page](../message-processor/message-processor.md#message-processor-page).
 
 ## Message processor batch job
 
-You should schedule a periodic batch job to process the messages, by going to **System administration \> Message processor \> Message processor**. In the dialog box that appears, you must select a value in the **Message queue** field (for example, *Warehouse*), and you must specify a processing interval. Learn more in [Schedule message processing by using the message processor batch job](../supply-chain-dev/message-processor.md#processor-batch-job).
+You should schedule a periodic batch job to process the messages, by going to **System administration \> Message processor \> Message processor**. In the dialog box that appears, you must select a value in the **Message queue** field (for example, *Warehouse*), and you must specify a processing interval. Learn more in [Schedule message processing by using the message processor batch job](../message-processor/message-processor.md#processor-batch-job).
 
 ## Set up business events to deliver alerts for failed processing results
 
-On the **Message processor messages** page, you can filter on the  *Failed* value of the **Message state** field to inquire about failed messages. In addition, you can set up [business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) to alert you about failed processing results. Learn more in [Set up business events to deliver alerts for failed processing results](../supply-chain-dev/message-processor.md#business-events).
+On the **Message processor messages** page, you can filter on the  *Failed* value of the **Message state** field to inquire about failed messages. In addition, you can set up [business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) to alert you about failed processing results. Learn more in [Set up business events to deliver alerts for failed processing results](../message-processor/developer/message-processor-develop.md#business-events).
+
+## Clean up processed and canceled message processor messages
+
+Over time, processed and canceled messages, which are no longer needed, can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency. Learn more in [Clean up processed and canceled message processor messages](../message-processor/message-processor-cleanup.md).

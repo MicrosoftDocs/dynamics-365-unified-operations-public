@@ -3,7 +3,7 @@ title: Create task lists and add tasks
 description: This article describes how to create task lists and add tasks to them in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 05/28/2024
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global

@@ -3,7 +3,7 @@ title: Tax invoice for goods delivered for free
 description: Learn about tax invoices for goods that were delivered for free, including a step-by-step process for setting up the summary update parameters.
 author: mrolecki
 ms.author: mrolecki
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/15/2021
 ms.reviewer: johnmichalak
 audience: Application User

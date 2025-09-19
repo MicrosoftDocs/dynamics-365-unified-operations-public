@@ -5,7 +5,7 @@ author: JodiChristiansen
 ms.author: jchrist
 ms.topic: faq
 ms.custom: 
-ms.date: 03/20/2025
+ms.date: 08/11/2025
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.search.region: Global
@@ -37,7 +37,7 @@ The following illustration shows an example of a warning message and an error me
 
 The type of message (error or warning) depends on the value of the **Message when exceeding credit limit** field on the **Credit limits** FastTab on the **Credit** tab of the **Credit and collections parameters** page. The message is shown because the **Check credit limit on sales order** option is set to **Yes** to specify that the credit limit should be checked on sales orders. 
 
-These warning/error messages can't be suppressed, because they're the same messages that are used with free text invoices. They appear regardless of whether Credit management is enabled or disabled in Feature management. However, when Credit management is enabled, they can be ignored.
+These warning/error messages can't be suppressed, because they're the same messages that are used with free text invoices. They appear regardless of whether Credit management is enabled or disabled. However, when Credit management is enabled, they can be ignored.
 
 ### If the warning/error message isn't used, how can I tell whether a sales order was put on credit hold?
 
@@ -45,13 +45,15 @@ When a sales order is sent to the Credit management hold list, the following pos
 
 > Order has been sent to credit management
 
-[![Screenshot that shows an example of a Credit managment error message.](./media/CreditManagementError.png)](./media/CreditManagementError.png)
+[![Screenshot that shows an example of a Credit management error message.](./media/CreditManagementError.png)](./media/CreditManagementError.png)
 
 The order appears in the Credit management hold list at **Credit and collections** \> **Credit management hold list** \> **All credit holds** or **Open credit holds**.
 
 ### If I set a credit limit of 0.00 USD for a customer, does that customer have unlimited credit?
 
-When Credit management is enabled in Feature management, a credit limit of 0.00 indicates that the customer has *no* credit. If the customer should have unlimited credit, set the **Unlimited credit limit** option to **Yes** on the **Credit and collections** FastTab of the customer record.
+When Credit management is enabled, a credit limit of 0.00 indicates that the customer has *no* credit. To use the blocking rules to put a sales order on hold with 0.00 credit limit, set the **Mandatory credit limit** option to **Yes** on the **Credit and collections** FastTab of the customer record. 
+
+If the customer should have unlimited credit, on the **Credit and collections** FastTab of the customer record, set the **Unlimited credit limit** option to **Yes**.
 
 A credit limit of 0.00 indicates unlimited credit only when Credit management is disabled. This behavior is part of the "old" credit functionality.
 

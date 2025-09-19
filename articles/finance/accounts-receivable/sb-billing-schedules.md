@@ -3,7 +3,7 @@ title: Create billing schedules
 description: Learn about how to create, delete, and edit billing schedules, including step-by-step processes for creating billing schedules and removing line items.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/29/2024
 ms.reviewer: twheeloc
 audience: Application User

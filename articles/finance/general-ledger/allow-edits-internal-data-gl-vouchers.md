@@ -3,10 +3,10 @@ title: Allow edits to internal data on general ledger vouchers
 description: Learn about how to edit internal data on general ledger vouchers, including an outline on auditing trails of voucher edits.
 author: kweekley
 ms.author: kweekley
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/01/2022
 ms.custom:
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2022-08-01
@@ -23,13 +23,9 @@ When you post accounting entries to the general ledger, the **Description** fiel
 
 Changes to posted vouchers in the general ledger are limited to data that is internal in nature. This feature will never allow you to edit data such as amounts, posting dates, ledger accounts, and the transaction currency. Changes to that data will affect the external reporting of financial statements and must be done only through new general ledger vouchers.
 
-> [!NOTE]
-> For Dynamics 365 Finance version 10.0.29, this feature is limited to edits to the **Description** field.
-
 ## Edit internal data on general ledger vouchers
 
-Before internal data on general ledger vouchers can be edited, you must enable the **Allow edits to internal data on general ledger vouchers** feature in the **Feature management** workspace.
-After the feature is enabled, the user who will edit posted vouchers must be assigned to the Accounting manager or Accounting supervisor role. You can add permissions to other roles too, by customizing the security roles.
+Before internal data on general ledger vouchers can be edited, the user who edits posted vouchers must be assigned to the Accounting manager or Accounting supervisor role. You can add permissions to other roles too, by customizing the security roles.
 
 The editing process is allowed only from the Voucher transactions page.
 

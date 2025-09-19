@@ -3,8 +3,8 @@ title: Preview of Dynamics 365 Commerce 10.0.30 (November 2022)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.30. 
 author: josaw1
 ms.date: 04/12/2024
-ms.topic: article
-audience: Application User
+ms.update-cycle: 1095-days
+ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
@@ -12,7 +12,6 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-09-01
-ms.dyn365.ops.version: 10.0.29
 ---
 
 # Preview of Dynamics 365 Commerce 10.0.30 (November 2022)
@@ -32,7 +31,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---------|------------------|----------------|--------------| 
-| Customer support   | Chat on an e-commerce site using a Power Virtual Agents bot. | This feature will give e-commerce site users a choice to use a Power Virtual Agents chat bot for support requests. | Enabled by admin/makers for end users |
+| Customer support   | Chat on an e-commerce site using a Microsoft Copilot Studio bot. | This feature will give e-commerce site users a choice to use a Microsoft Copilot Studio chat bot for support requests. | Enabled by admin/makers for end users |
 | Insights  |  Stream point of sale (POS) operational insights events to your Application Insights account. | [Access logs in Application Insights](../dev-itpro/operational-insights.md#enable-diagnostic-events-in-application-insights)   |  IT Pro/developer opt-in   |
 |  Payments  | PayPal order support beyond 29-day authorization period. | The maximum authorization period for PayPal is 29-days, after which a new authorization and order ID must be generated. As an alternative, PayPal offers an option where an order a PayPal order can be referenced as a general order, allowing for multiple authorizations and captures against the same order ID, instead of generating a new authorization and order ID at 29 days). | When configuring the PayPal payment connector in Commerce headquarters, the field **OrderIntent** has been added and can have two values:<p><p>- **Authorize** - This configuration is the default (if the field is left blank, **Authorize** will act as default). Configuring **OrderIntent** to **Authorize** correlates to the PayPal **processing_instruction** value of **NO_INSTRUCTION**. The order will be authorized with PayPal and the authorization cannot be modified when this value is used.<p>- **Save** - When the **OrderIntent** value is set to **Save**, this correlates to the PayPal **processing_instruction** value of **ORDER_SAVED_EXPLICITLY**. Order references will be saved in the PayPal Service when this value is used.  |
 | POS sign-in  | [Enable self-serve diagnosis capabilities for POS sign-in](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-self-serve-diagnosis-capabilities-pos-sign-in)  |  This feature provides self-serve diagnosis capabilities in point of sale (POS) and Commerce headquarters to help store employees and managers quickly identify and fix the root causes of POS sign-in issues.<p><p>- The failure messages shown on the POS sign-in screen were improved to provide concrete root cause information that can help store employees who use POS understand what went wrong so they can perform necessary actions to solve the issue.<p>- A **Test logon** function is available on the **Workers** page in Commerce headquarters so that store managers who set up POS devices can simulate POS sign-in. In the case of a sign-in failure, this function provides actionable troubleshooting guides so managers can check relevant configurations, correct issues, and validate the fixes.  | On by default |

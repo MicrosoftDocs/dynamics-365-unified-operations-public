@@ -3,7 +3,7 @@ title: Submit electronic documents
 description: Learn how to submit electronic documents to the Electronic invoicing service, including overviews on communication flows during submission events.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/12/2024
 ms.custom: 
 ms.reviewer: johnmichalak

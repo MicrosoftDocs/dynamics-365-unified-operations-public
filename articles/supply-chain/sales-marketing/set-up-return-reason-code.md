@@ -3,7 +3,7 @@ title: Set up return reason codes
 description: Learn how to set up return reason codes, including step-by-step processes for setting up return reason code grups and setting up return reason codes.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/01/2018
 ms.custom: 
 ms.reviewer: kamaybac

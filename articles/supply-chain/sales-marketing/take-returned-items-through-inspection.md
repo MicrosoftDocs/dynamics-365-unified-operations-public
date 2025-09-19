@@ -3,7 +3,7 @@ title: Take returned items through inspection
 description: Learn how to take returned items through inspection, including a step-by-step process for returning items through inspection.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/07/2018
 ms.custom: 
 ms.reviewer: kamaybac

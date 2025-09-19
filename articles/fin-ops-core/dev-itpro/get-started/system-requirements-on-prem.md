@@ -3,10 +3,10 @@ title: System requirements for on-premises deployments
 description: Learn about the system requirements for on-premises deployments, including network requirements and domain requirements.
 author: PeterRFriis
 ms.author: peterfriis
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 01/29/2025
+ms.date: 09/15/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-08-30
@@ -111,7 +111,7 @@ The actual hardware requirements vary, based on the system configuration, the da
 
 - The number of transactions per hour
 - The number of concurrent users
-- Intergration loads
+- Integration loads
 
 ## Minimum infrastructure requirements
 
@@ -240,7 +240,7 @@ When you set up the virtual hosts for an environment, see the guidelines in [Pla
 > [!IMPORTANT]
 > Do not use Dynamic Memory for your virtual hosts.
 
-Finance + Operations falls under Microsoft's standard support policy regarding operation on non-Microsoft virtualization platforms – specifically VMWare. For more information, read [Support policy for Microsoft software](https://support.microsoft.com/help/897615/support-policy-for-microsoft-software-that-runs-on-non-microsoft-hardw). In short, we support our products in this environment, but if we are asked to investigate an issue, we may ask the customer to first reproduce the problem without the virtualization platform or on the Microsoft virtualization platform.
+Finance + Operations falls under Microsoft's standard support policy regarding operation on non-Microsoft virtualization platforms – specifically VMware. For more information, read [Support policy for Microsoft software](https://support.microsoft.com/help/897615/support-policy-for-microsoft-software-that-runs-on-non-microsoft-hardw). In short, we support our products in this environment, but if we are asked to investigate an issue, we may ask the customer to first reproduce the problem without the virtualization platform or on the Microsoft virtualization platform.
 
 ## Software requirements for all server computers
 
@@ -252,7 +252,7 @@ The following software must be present on a computer before any Finance + Operat
 For more information about Service Fabric, see [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 > [!NOTE]
-> For supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](../deployment/onprem-compatibility.md).
+> For supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](../deployment/onprem-compatibility.md).
 
 ### Software requirements for database servers
 

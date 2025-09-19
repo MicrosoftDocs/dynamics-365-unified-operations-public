@@ -1,33 +1,29 @@
 ---
 title: Goods movement tax registers
-description: Learn about goods movement tax registers, including outlines and step-by-step processes on setting up tax registers and warehoused items tax register.
+description: Learn how to work with goods movement tax registers in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/20/2024
+ms.date: 08/22/2025
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2021-08-01
-ms.dyn365.ops.version: 
 ---
 
 # Goods movement tax registers
 
 [!include [banner](../../includes/banner.md)]
 
-
-## Overview
-
-This article provides information about the following tax registers:
+This article explains how to work with goods movement tax registers in Microsoft Dynamics 365 Finance, and provides information about the following tax registers:
 
 - Warehoused items
 - Warehoused items (totals)
 - Non warehoused items
 - Goods issued
 
-In this article, the term "goods" refers to raw materials and supplies, items that are acquired and produced, and services. Tax registers for fixed assets are described in [Fixed assets and intangible assets registers](rus-assets-tax-registers.md).
+The term "goods" refers to raw materials and supplies, items that are acquired and produced, and services. Tax registers for fixed assets are described in [Fixed assets and intangible assets registers](rus-assets-tax-registers.md).
 
 Operating costs are related to the acquisition of property and to the calculation of the cost when the property is written off for various purposes.
 
@@ -52,15 +48,17 @@ The following tax registers must be created:
 - Non warehoused items
 - Goods issued
 
-To set up the **Warehoused items (totals)**, **Non warehoused items**, and **Goods issued** registers, follow the steps in the article, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
+To set up the **Warehoused items (totals)**, **Non warehoused items**, and **Goods issued** registers, follow the steps in [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
 
 To set up the **Warehoused items** register, follow the steps in the next section.
 
 ### Set up the Warehoused items register
 
-1.  Go to **Tax** > **Setup** > **Profit tax** > **Registers**.
-2.  On the **Tax registers** page, set up a register.
-3.  On the **Parameters** FastTab, set up the following parameters.
+To set up the Warehoused items register, follow these steps.
+
+1.  In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Registers**.
+1.  On the **Tax registers** page, set up a register.
+1.  On the **Parameters** FastTab, set up the following parameters.
 
     | **Parameter name** | **Value** |
     |-------------------------|-------------------------|
@@ -72,7 +70,7 @@ To set up the **Warehoused items** register, follow the steps in the next sectio
 
 ## Warehoused items tax register
 
-The **Warehoused items** tax register contains the following information:
+The *Warehoused items* tax register contains the following information:
 
 - Movement of raw materials and other materials into production
 - Invoices for the sale of raw materials and other materials
@@ -117,10 +115,9 @@ The tax register lines show the following information:
 >[!NOTE]
 >The amounts of these expenses in the tax declaration must be manually reduced by the cost in work in progress and finished goods warehouse.
 
-## Non warehoused items tax register
+## Nonwarehoused items tax register
 
-The **Non warehoused items** tax register shows information about the movement of goods, works, services, and rights that are written off at their actual cost, and that don't move through the warehouse. The assumption is that this property isn't connected with the main activity of the company. Instead, its acquisition is a general economic expense
-and is accepted for tax accounting in the period when the expense was made.
+The *Nonwarehoused items* tax register shows information about the movement of goods, works, services, and rights that are written off at their actual cost, and that don't move through the warehouse. The assumption is that this property isn't connected with the main activity of the company. Instead, its acquisition is a general economic expense and is accepted for tax accounting in the period when the expense was made.
 
 ![Example of the Non warehoused items tax register](../media/rus-goods-move-3.png)
 
@@ -139,7 +136,7 @@ The tax register lines show the following information:
 
 ## Goods issued tax register
 
-The **Goods issued** tax register summarizes information about the income from the disposal of the taxpayer's property, the sale of works, services, and rights, and the formation of the amounts of corresponding income from sales that are included in the tax base.
+The *Goods issued* tax register summarizes information about the income from the disposal of the taxpayer's property, the sale of works, services, and rights, and the formation of the amounts of corresponding income from sales that are included in the tax base.
 
 ![Example of the Goods issued tax register](../media/rus-goods-move-4.png)
 
@@ -152,5 +149,8 @@ The tax register lines show the following information:
 - **Accounting object name**: The name of the goods.
 - **Quantity**: The quantity of the goods.
 - **Amount**: The total amount of the goods.
+
+
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]v

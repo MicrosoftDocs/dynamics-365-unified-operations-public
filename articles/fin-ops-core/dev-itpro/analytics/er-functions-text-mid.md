@@ -3,7 +3,7 @@ title: MID ER function
 description: Learn about how the MID Electronic reporting (ER) function is used, including syntax strings,a rguments, return values, usage notes, and examples.
 author: kfend
 ms.author: filatovm
-ms.topic: conceptual
+ms.topic: article
 ms.date: 12/10/2019
 ms.reviewer: johnmichalak
 audience: IT Pro

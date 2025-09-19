@@ -14,14 +14,14 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.45 (September 2025)
+          href: get-started/whats-new-commerce-10-0-45.md
+        - name: Commerce 10.0.44 (April 2025)
+          href: get-started/whats-new-commerce-10-0-44.md
         - name: Commerce 10.0.43 (January 2025)
           href: get-started/whats-new-commerce-10-0-43.md
         - name: Commerce 10.0.42 (December 2024)
           href: get-started/whats-new-commerce-10-0-42.md
-        - name: Commerce 10.0.41 (September 2024)
-          href: get-started/whats-new-commerce-10-0-41.md
-        - name: Commerce 10.0.40 (June 2024)
-          href: get-started/whats-new-commerce-10-0-40.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -144,6 +144,12 @@
         items:
         - name: User interface elements
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/commerce
+        - name: Default dashboard
+          href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/commerce
+        - name: Immersive Home (production ready preview)
+          href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/commerce
+        - name: Set the preferred initial page for each user
+          href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/commerce
         - name: Accessibility features
           href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?context=/dynamics365/context/commerce
         - name: Feature management overview
@@ -264,6 +270,8 @@
           href: dev-itpro/retail-store-system-begin.md
         - name: Configure and install Commerce Scale Unit (self-hosted)
           href: dev-itpro/retail-store-scale-unit-configuration-installation.md
+        - name: Download and install Commerce Scale Unit
+          href: dev-itpro/retail-store-scale-unit-download-install.md
         - name: Modern POS configuration and installation
           href: dev-itpro/retail-modern-pos-device-activation.md
         - name: Manage accounts and devices from headquarters
@@ -422,6 +430,8 @@
               href: define-maintain-channel-clients-registers-hw-stations.md
             - name: Health check for POS peripherals and services
               href: pos-healthcheck.md
+            - name: Health check view for offline readiness
+              href: health-check-view-offline.md
             - name: Support for network peripherals
               href: dev-itpro/network-peripherals.md
           - name: Screen layouts
@@ -510,10 +520,8 @@
               href: charge-send.md
             - name: Enable consistent delivery mode handling in e-commerce channels
               href: consistent-delivery-mode-handling.md
-          - name: POS modernization
-            items:
-            - name: POS modernization and usability improvements
-              href: POS-UX-modernization.md  
+        - name: Modern workflows in POS
+          href: POS-UX-modernization.md
         - name: Receipts
           items:
           - name: Set up and design receipt formats
@@ -614,6 +622,8 @@
               href: dev-itpro/apple-pay-adyen.md
             - name: Enable Tap to Pay on iPhone
               href: dev-itpro/tap-to-pay-iphone.md
+            - name: Enable Pay by Link in point of sale using Adyen connector
+              href: dev-itpro/pay-by-link-overview.md
             - name: Troubleshoot Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-troubleshoot.md
           - name: Saving online payment instruments with the Adyen connector
@@ -1082,6 +1092,8 @@
           href: tasks/define-loyalty-cards.md
         - name: Process adjustments of loyalty reward points
           href: tasks/process-loyalty-reward-point-adjustments.md
+        - name: Loyalty upsell prompt in POS
+          href: loyalty-upsell-prompt.md
     - name: Manage your financials
       items:
       - name: Statements overview
@@ -1326,6 +1338,8 @@
             href: customize-site-navigation.md
           - name: Create a page URL
             href: create-page-URL.md
+          - name: Redirect category and product pages to canonical URLs
+            href: e-commerce-extensibility/add-custom-redirect.md
         - name: Adventure Works theme
           items:
           - name: Adventure Works theme overview
@@ -1456,6 +1470,8 @@
           items:
           - name: Map module
             href: map-module.md
+          - name: Azure Maps module
+            href: azure-maps-module.md
           - name: Store selector module
             href: store-selector.md
         - name: Account management modules
@@ -1502,7 +1518,7 @@
             href: dev-itpro/commerce-chat-overview.md
           - name: Commerce Chat with Omnichannel for Customer Service module
             href: dev-itpro/commerce-chat-module.md
-          - name: Commerce Chat with Power Virtual Agents module
+          - name: Commerce Chat with Microsoft Copilot Studio module
             href: dev-itpro/chat-module-pva.md
           - name: Commerce chat module proactive chat parameters
             href: dev-itpro/chat-proactive-chat-parameters.md
@@ -1572,6 +1588,8 @@
         href: b2b/payment-method.md
       - name: Set product quantity limits for B2B e-commerce sites
         href: b2b/quantity-limits.md
+      - name: B2B indirect workflows 
+        href: b2b/b2b-indirect.md
       - name: Commerce catalogs for B2B sites
         items:
         - name: Create Commerce catalogs for B2B sites
@@ -1688,7 +1706,7 @@
             href: localizations/dev-itpro/emea-pol-fpi-sample-sdk.md
       - name: France
         items:
-        - name: Cash register functionality (preview)
+        - name: Cash register functionality
           href: localizations/france/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/france/emea-fra-fi-deployment.md
@@ -2744,6 +2762,8 @@
           items:
           - name: Introduction to Commerce Scale Unit (CSU) Core
             href: dev-itpro/CSU-core.md
+          - name: Get started with Headless Commerce Integration
+            href: dev-itpro/headless-commerce-integration.md
         - name: APIs and reference
           items:
           - name: Commerce Scale Unit customer and consumer APIs
@@ -2894,8 +2914,8 @@
             href: dev-itpro/pos-extension/cpos-extension-package.md
           - name: Create a Store Commerce extension installer package
             href: dev-itpro/store-comm-extension-installer.md
-          - name: Store Commerce Hardware station extensibility for Android devices
-            href: dev-itpro/store-comm-android-extensibility.md            
+          - name: Store Commerce Hardware station extensibility for Android and iOS devices
+            href: dev-itpro/store-comm-android-ios-ext.md            
       - name: E-commerce
         items:
         - name: Overview

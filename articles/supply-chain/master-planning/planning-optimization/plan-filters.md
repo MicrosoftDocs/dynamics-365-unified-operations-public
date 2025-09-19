@@ -1,8 +1,8 @@
 ---
 title: Run planning for a subset of items
 description: Learn how to run planning for a subset of items by using plan filters and runtime filters, including an outline and process on applying a filter plan. 
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 01/03/2023
 ms.custom: bap-template

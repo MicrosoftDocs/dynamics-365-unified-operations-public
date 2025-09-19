@@ -3,7 +3,7 @@ title: Revalue lease payments that are linked to an index rate
 description: Learn about the adjustment that is made to lease the liability for a right-of-use (ROU) asset when variable lease payments change because of a change in the index rate.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/11/2022
 ms.reviewer: twheeloc
 audience: Application User

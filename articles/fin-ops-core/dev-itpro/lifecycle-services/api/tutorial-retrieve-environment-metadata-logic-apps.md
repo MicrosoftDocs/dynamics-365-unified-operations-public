@@ -11,6 +11,7 @@ search.audienceType:
   - admin
 ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Retrieve environment metadata via Logic Apps tutorial

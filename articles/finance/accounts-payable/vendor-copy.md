@@ -3,7 +3,7 @@ title: Copy vendors by using shared number sequences
 description: Learn about how to use shared number sequences to copy a vendor to another legal entity but keep the same vendor ID.
 author: sunfzam
 ms.author: twheeloc
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/13/2023
 ms.custom:
 ms.reviewer: twheeloc 

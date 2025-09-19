@@ -3,19 +3,19 @@ title: FIFO with physical value and marking
 description: Financially updated issues from inventory are settled against the first financially updated receipts into inventory, based on the date of the transactions.
 author: prasungoel
 ms.author: prasungoel
-ms.topic: how-to
-ms.date: 05/27/2024
-ms.custom:
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+  - bap-template
 ---
 
 # FIFO with physical value and marking
 
 [!include [banner](../includes/banner.md)]
 
-First in, first out (FIFO) is an inventory management and valuation method where inventory that is produced or acquired first is sold, used, or disposed of first. During the inventory close process in Microsoft Dynamics 365 Supply Chain Management, the system will create settlements where the first receipt is matched against the first issue, and so on.
+First in, first out (FIFO) is an inventory management and valuation method where inventory that is produced or acquired first is sold, used, or disposed of first. During the inventory close process in Microsoft Dynamics 365 Supply Chain Management, the system creates settlements where the first receipt is matched against the first issue, and so on.
 
 The settlements and matching principle are based on the financial date of the inventory transactions. A preliminary assessment of the settlements and adjustments can be performed by running the inventory recalculation process.
 
@@ -39,7 +39,7 @@ In this example, the **Include physical value** checkbox is cleared on the item 
 - 5a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
 - 5b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
 - 6a. Inventory physical issue for a quantity of 1 at a cost price of USD 23.00 (running average of financially posted transactions)
-- 7\. Inventory close is performed. Based on the FIFO method, the first financially updated issue will be settled against the first financially updated receipt, and so on. In this example, one settlement is created between 1b and 3b. An adjustment of USD –6.00 will be made to 3b, and the resulting final cost will be USD 10.00.
+- 7\. Inventory close is performed. Based on the FIFO method, the first financially updated issue is settled against the first financially updated receipt, and so on. In this example, one settlement is created between 1b and 3b. An adjustment of USD –6.00 will be made to 3b, and the resulting final cost will be USD 10.00.
 
 The new running average cost price reflects the average of the financially updated transactions. The following illustration shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option isn't used.
 
@@ -72,7 +72,7 @@ If the **Include physical value** checkbox is selected for an item on the **Item
 - 5a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
 - 5b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
 - 6a. Inventory physical issue for a quantity of 1 at a cost price of USD 23.67 (running average of physically and financially posted transactions).
-- 7\. Inventory close is performed. Based on the FIFO method, the first financially updated issue will be settled against the first financially updated receipt, and so on. In this example, one settlement is created between 1b and 3b. An adjustment of USD –6.00 will be made to 3b, and the resulting final cost will be USD 10.00. Additionally, transaction 6a will be adjusted to the receipt transaction cost of 2b. The system won't settle these transactions, because the receipt is updated physically but not financially. Instead, only an adjustment of USD -1.67 will be posted to the physical issue transaction, and the resulting adjusted cost will be USD 22.00.
+- 7\. Inventory close is performed. Based on the FIFO method, the first financially updated issue is settled against the first financially updated receipt, and so on. In this example, one settlement is created between 1b and 3b. An adjustment of USD –6.00 will be made to 3b, and the resulting final cost will be USD 10.00. Additionally, transaction 6a will be adjusted to the receipt transaction cost of 2b. The system won't settle these transactions because the receipt is updated physically but not financially. Instead, only an adjustment of USD -1.67 will be posted to the physical issue transaction, and the resulting adjusted cost will be USD 22.00.
 
 ![FIFO with the Include physical value option.](./media/fifo-with-include-physical-value.png)
 
@@ -95,7 +95,7 @@ Notice that the result of running the inventory close process is the same, regar
 
 Marking is a process that lets you link, or mark, an issue transaction to a receipt transaction. Marking can occur either before or after a transaction is posted. You can use marking when you want to be sure of the exact cost of inventory when the transaction is posted or the inventory close is performed.
 
-For example, the Customer Service department accepted a rush order from an important customer. Because this order is a rush order, you must pay more for this item to fulfill your customer's request. You must make sure that the cost of the inventory item is reflected in the margin, or cost of goods sold (COGS), for the sales order invoice. When the purchase order is posted, the inventory is received at a cost of USD 120.00. If the sales order document is marked to the purchase order before the packing slip or invoice is posted, the COGS will be USD 120.00, not the current running average cost for the item. If the sales order packing slip or invoice is posted before the marking occurs, the COGS will be posted at the running average cost price. Before inventory close is performed, these two transactions can still be marked to each other.
+For example, the Customer Service department accepted a rush order from an important customer. Because this order is a rush order, you must pay more for this item to fulfill your customer's request. You must make sure that the cost of the inventory item is reflected in the margin, or cost of goods sold (COGS), for the sales order invoice. When the purchase order is posted, the inventory is received at a cost of USD 120.00. If the sales order document is marked to the purchase order before the packing slip or invoice is posted, the COGS will be USD 120.00, not the current running average cost for the item. If the sales order packing slip or invoice is posted before the marking occurs, the COGS is posted at the running average cost price. Before inventory close is performed, these two transactions can still be marked to each other.
 
 When a receipt transaction is marked to an issue transaction, the valuation method that is defined in the item model group is disregarded, and the system settles these transactions to each other. You can manually mark a transaction against a sales order line on the **Sales order details** page by selecting **Inventory \> Marking** on the **Sales order lines** FastTab. You can view the open receipt transactions on the **Marking** page. You can match or mark an issue transaction to an open receipt transaction for an inventoried item from a posted inventory adjustment journal. The illustration that follows shows these transactions:
 

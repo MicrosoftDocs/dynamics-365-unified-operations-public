@@ -3,7 +3,7 @@ title: Best practices for the Acceptance test library
 description: Learn about best practices for the Acceptance test library, including code examples of what to do and what not to do, with justifications.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
-ms.topic: article
+ms.topic: best-practice
 ms.date: 03/27/2019
 ms.custom:
 ms.reviewer: johnmichalak

@@ -3,7 +3,7 @@ title: Set up global withholding tax
 description: Learn about the steps for setting up global withholding tax for sales and purchases, including multiple steps for settting up withholding tax within ledger groups.
 author: kailiang
 ms.author: kailiang
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/12/2021
 ms.reviewer: kfend 
 audience: Application User

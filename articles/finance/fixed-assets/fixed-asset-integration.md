@@ -4,7 +4,7 @@ description: Fixed assets can be integrated with General ledger, Inventory manag
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 02/05/2025
+ms.date: 06/05/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -18,7 +18,7 @@ ms.assetid: f0639053-d99c-432a-8ead-5c26e0d4eaec
 
 [!include [banner](../includes/banner.md)]
 
-Fixed assets can be integrated with General ledger, Inventory management, Accounts receivable, and Accounts payable. You can also set up Fixed assets so that it is integrated with purchase orders.
+Fixed assets can be integrated with General ledger, Inventory management, Accounts receivable, and Accounts payable. You can also set up Fixed assets so that it's integrated with purchase orders.
 
 ## General ledger
 
@@ -30,10 +30,10 @@ On the **Fixed asset posting profiles** page, you define the main accounts that 
 In the inventory journal for fixed assets, you can enter the acquisition of fixed assets that the legal entity has produced or constructed for itself. You can then transfer inventory items to fixed assets either as an acquisition or as part of an acquisition.
 
 When acquiring a fixed asset through the **Inventory to Fixed Asset** journal using an inventory item with a tracking dimension such as a 'Serial number' or 'Batch number', there are two options:
- - If you are capitalizing a single quantity, enter the inventory item along with its tracking dimension directly in the journal line.
- - If you are acquiring multiple serial or batch numbers for the same asset, assign the serial numbers using the **Reservation** function on the **Inventory** tab.
+ - If you're capitalizing a single quantity, enter the inventory item along with its tracking dimension directly in the journal line.
+ - If you're acquiring multiple serial or batch numbers for the same asset, assign the serial numbers using the **Reservation** function on the **Inventory** tab.
 
-You can also acquire assets by using purchase orders. When purchase orders contain inventory items that are designated as fixed assets, the setting of the **Allow asset acquisition from Purchasing** option on the **Fixed assets parameters** page determines whether an acquisition is posted for the fixed asset when the invoice is posted. One purchasing line will create one fixed asset, regardless of the quantity. The effect that the acquisition of fixed assets has on inventory depends on the setup of the legal entity. 
+You can also acquire assets by using purchase orders. When purchase orders contain inventory items that are designated as fixed assets, the setting of the **Allow asset acquisition from Purchasing** option on the **Fixed assets parameters** page determines whether an acquisition is posted for the fixed asset when the invoice is posted. One purchasing line creates one fixed asset, regardless of the quantity. The effect that the acquisition of fixed assets has on inventory depends on the setup of the legal entity. 
 
 When an inventory item becomes a fixed asset acquisition through the inventory journal, a purchase order, or an acquisition proposal, a fixed asset book acquisition transaction is created. If a book acquisition includes a derived book, the derived book acquisition transaction is also created. 
 
@@ -57,6 +57,12 @@ Ultimately, the main accounts that are used for posting are determined by the op
 The accounts that fixed asset transactions are posted to depend on two factors: whether the assets are purchased or constructed by the legal entity, and the transaction type of the asset. 
 
 The transaction type connects the inventory transaction to the posting profile in Fixed assets. Because the posting profile in Fixed assets defines which accounts are updated, the selection of a transaction type for a fixed asset is also, indirectly, the selection of the main accounts that the transaction is posted to. For both constructed and purchased fixed assets, the transaction type is typically **Acquisition** or **Acquisition adjustment**.
+
+Starting in Dynamics 365 Finance version 10.0.44, the inventory‑closing recalculation automatically updates the fixed‑assets subledger for assets acquired via inventory items, generating an **Acquisition adjustment** transaction type and posting it to the acquisition‑adjustment account defined in the **Fixed assets posting profile** page. 
+- When you adjust a purchase order invoice that includes an inventory item that was capitalized as a fixed asset, the inventory closing recalculation creates and posts the corresponding acquisition adjustment entry to the fixed‑assets subledger. If an inventory to fixed‑assets journal records a different costs for the same item to capitalize, the inventory closing recalculation adjustment applies and posts the adjustment to the fixed assets subledger.
+- If the purchase order invoice records a different acquisition cost for a fixed asset, the cost variance is automatically captured and posted to the fixed assets subledger through the inventory closing recalculation adjustment.
+- If the inventory to fixed‑assets journal entry reflects a different acquisition cost for a fixed asset, the adjustment is automatically posted to the fixed assets subledger using the inventory closing recalculation adjustment.
+
 
 ## Accounts receivable
 The integration of Fixed assets with Accounts receivable uses posting profiles that are set up in Fixed assets. These posting profiles are activated when a fixed asset, book, and fixed asset transaction type are selected for a customer invoice before the customer invoice is posted. Because fixed assets aren’t part of Inventory management, you must use the **Free text invoice** page when you sell a fixed asset. 

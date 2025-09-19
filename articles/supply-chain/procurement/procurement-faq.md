@@ -3,10 +3,12 @@ title: Procurement FAQ
 description: Access answers to frequently asked questions (FAQs) about the procurement functionality of Supply Chain Management, including questions about describing issues.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: article
-ms.date: 05/31/2021
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
+ms.topic: faq
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Procurement FAQ
@@ -35,7 +37,7 @@ The following procedure shows one way to reproduce the issue.
 
 ### Issue resolution
 
-This behavior is by design. The expectation is that the registered items have physically arrived in the warehouse or inventory, and that they are therefore available for reservation.
+This behavior is by design. The expectation is that the registered items have physically arrived in the warehouse or inventory, and that they're therefore available for reservation.
 
 ## Can I find the user who canceled a purchase order?
 

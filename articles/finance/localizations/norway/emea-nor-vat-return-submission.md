@@ -1,21 +1,22 @@
 ---
 title: Submit a VAT return to the Altinn web service
-description: Learn how to submit a VAT return to the Altinn web service of Norway, including an outline and step-by-step process on creating a message.
+description: Learn how to submit a VAT return to the Altinn web service of Norway in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/26/2024
+ms.date: 06/12/2025
 ms.reviewer: johnmichalak
 ms.search.region: Norway
 ms.search.validFrom: 2021-11-18
-ms.dyn365.ops.version: AX 10.0.22
 ---
 
 # Submit a VAT return to the Altinn web service
 
 [!include [banner](../../includes/banner.md)]
+
+This article explains how to submit a VAT return to the Altinn web service of Norway in Microsoft Dynamics 365 Finance.
 
 When you successfully obtained an access token for Altinn, your Microsoft Dynamics 365 Finance environment is ready to interoperate with the Altinn web service to submit VAT returns.
 
@@ -40,9 +41,9 @@ To simplify the process of submitting VAT returns, most of actions are aggregate
 
 ## <a id="create-message"></a>Create a message
 
-Follow these steps to perform the **NO VAT Create message** action.
+To perform the **NO VAT Create message** action, follow these steps.
 
-1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the **NO VAT return** EM processing in the list on the left.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the **NO VAT return** EM processing in the list on the left.
 2. On the **Messages** FastTab, select **New**.
 
     The **NO VAT Create message** action is predefined in the **Run processing** dialog box.
@@ -55,9 +56,9 @@ Follow these steps to perform the **NO VAT Create message** action.
 
 ## <a id="collect-sales-tax-payments"></a>Collect sales tax payments
 
-Follow these steps to perform the **NO VAT Collect sales tax payments** action.
+To perform the **NO VAT Collect sales tax payments** action, follow these steps.
 
-1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages** page, and select the message that was created in the **NO VAT return** EM processing.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages** page, and select the message that was created in the **NO VAT return** EM processing.
 2. On the **Messages** FastTab, select **Collect data**.
 
     The **NO VAT Collect sales tax payments** action is predefined in the **Run processing** dialog box.
@@ -69,13 +70,13 @@ Follow these steps to perform the **NO VAT Collect sales tax payments** action.
 
 According to the XML Schema Definition (XSD) schema for VAT returns, a VAT return can include either a note that uses a value from an enumerated list of values or a free-text note that is limited to 4,000 characters. 
 
-Follow these steps to add a note that uses a value from an enumerated list.
+To add a note that uses a value from an enumerated list, follow these steps.
 
 1. On the **Messages** FastTab, select the electronic message to specify a note for.
 2. On the **Message additional fields** FastTab, select the **NO VAT Note for VAT return** additional field.
 3. In the **Field value** column, select a value in the lookup field.
 
-Follow these steps to add a free-text note that is limited to 4,000 characters.
+To add a free-text note that is limited to 4,000 characters, follow these steps.
 
 1. On the **Messages** FastTab, select the electronic message to specify a note for.
 2. On the **Message additional fields** FastTab, select the **NO VAT Note for VAT return** additional field.
@@ -91,9 +92,9 @@ Follow these steps to include a payment ID, or KID number, in your digital VAT r
 
 ## <a id="ready-to-generate"></a>Mark the message as ready to generate the VAT return
 
-Follow these steps to perform the **NO VAT Ready to generate VAT return** action.
+To perform the **NO VAT Ready to generate VAT return** action, follow these steps.
 
-1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
 2. On the **Messages** FastTab, select **Update status**.
 
     The **NO VAT Ready to generate VAT return** action and the **NO VAT Ready to generate VAT return** status are predefined in the **Run processing** dialog box.
@@ -106,9 +107,9 @@ To continue to collect data for the report, select **Update status**, and change
 
 ## <a id="preview-vat-return"></a>Preview the VAT return in Microsoft Excel
 
-Follow these steps to perform the **NO VAT Preview VAT return in Excel** action.
+To perform the **NO VAT Preview VAT return in Excel** action, follow these steps.
 
-1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
 2. On the **Message** tab, select **Generate report**.
 3. In the **Run processing** dialog box, select **NO VAT Preview VAT return in Excel**.
 4. For reporting periods that contain a large volume of tax transactions, we recommend that you run the report in batch mode. On the **Run in the background** FastTab, select the **Batch processing** checkbox. Then set the **Task description** field and other parameters for the batch.
@@ -118,9 +119,9 @@ Follow these steps to perform the **NO VAT Preview VAT return in Excel** action.
 
 ## <a id="generate-vat-return"></a>Generate the VAT return
 
-Follow these steps to perform the **NO VAT Generate VAT return** action.
+To perform the **NO VAT Generate VAT return** action, follow these steps.
 
-1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
 2. On the **Messages** FastTab, select **Generate report**.
 3. In the **Run processing** dialog box, select **NO VAT Generate VAT return**.
 4. For reporting periods that contain a large volume of tax transactions, we recommend that you run the report in batch mode. On the **Run in the background** FastTab, select the **Batch processing** checkbox. Then set the **Task description** field and other parameters for the batch.
@@ -141,9 +142,9 @@ This step consists of the **NO VAT Validation** sequence, which includes the fol
 - **NO VAT Import validation response** – This action parses information from the `valideringsresultat.xml` file and updates the status of the electronic message. If the business validation that the Tax Administration performs is passed, this action updates the status to **NO VAT Return validation passed successfully**. If errors are identified during the business validation, this action updates the status to **NO VAT Error VAT return validation**, applies an Extensible Stylesheet Language Transformations (XSLT) transformation to the `valideringsresultat.xml` file, and attaches the transformed file to the action log for the record. You can then review it further as the `valideringsresultat_transformed.html` file attached to the action log for the **NO VAT Import validation response** action.
 - **NO VAT Generate request for instance** – This action prepares a request for the next step in the process, [Submit the VAT return](#submit-vat-return).
 
-Follow these steps to validate the VAT return in the Tax Administration web service.
+To validate the VAT return in the Tax Administration web service, follow these steps.
 
-1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
 2. On the **Messages** FastTab, select **Send report**.
 
     The **NO VAT Send validation request** action is predefined in the **Run processing** dialog box.
@@ -176,9 +177,9 @@ The process of submitting a VAT return includes the following actions:
 - **NO VAT Download validation result** – This action downloads the validation details for the VAT return.
 - **NO VAT Import final validation result** – This action imports information about the validation details for the VAT return into the system and updates the status of the electronic message. If no errors were identified in the submitted VAT return, the status is updated to **NO VAT SUCCESSFUL VAT return submission to the Tax Administr**. If errors were identified in the submitted VAT return, the status is updated to **NO VAT Error validation of uploaded VAT return**.
 
-Follow these steps to submit the VAT return.
+To submit the VAT return, follow these steps.
 
-1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
 2. On the **Messages** FastTab, select **Send report**.
 
     The **NO VAT Send request to create instance** action is predefined in the **Run processing** dialog box.
@@ -195,7 +196,9 @@ Follow these steps to submit the VAT return.
 
 After a VAT return is successfully submitted, you can download the payment information in XML format and the receipt in PDF format.
 
-1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
+To download attachments, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
 2. On the **Messages** FastTab, select **Send report**.
 3. In the **Run processing** dialog box, select **NO VAT Download receipt** or **NO VAT Download payment information**.
 4. Select **OK**. The `betalingsinformasjon.xml` ("NO VAT Download payment information") or `kvittering.pdf` ("NO VAT Download receipt") file is attached to the electronic message.

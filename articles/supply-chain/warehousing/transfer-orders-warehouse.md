@@ -3,7 +3,7 @@ title: Set up warehouses for transfer orders
 description: Learn how you can set up warehouses for transfer orders, including a step-by-step process for setting up warehouses for transfer orders.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/18/2019
 ms.custom:
 ms.reviewer: kamaybac 

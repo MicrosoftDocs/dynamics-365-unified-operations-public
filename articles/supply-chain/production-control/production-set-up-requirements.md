@@ -6,8 +6,8 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, WorkTimeTable, WrkCtrTable
 ms.topic: how-to
-ms.date: 06/28/2024
-ms.custom: 
+ms.date: 08/13/2025
+ms.custom:
   - bap-template
 ---
 
@@ -41,33 +41,36 @@ Before you use Production control, open Organization administration, and create 
 
 ## Required production parameters setup
 
-**Production control parameters** – Set up basic production parameters to define how the system handles and processes production orders. Define how production orders are created, estimated, scheduled, and consumed. You can also select what kind of feedback you want and how cost accounting is done.
+- **Production control parameters** – Set up basic production parameters to define how the system handles and processes production orders. Define how production orders are created, estimated, scheduled, and consumed. You can also select what kind of feedback you want and how cost accounting is done.
 
 ## Required journal name identification
 
-**Production journal names** – Specify the production journal names that are used to record and post transactions.
+- **Production journal names** – Specify the production journal names that are used to record and post transactions.
 
 ## Setup if you use operations
 
-Operations represent the specific activities that are completed to produce the finished product. **Note:** You must know the types of activities that are required in order to produce your item, and the order and priorities of those activities. You must also know which resources are involved, and how many.
+Operations represent the specific activities that are completed to produce the finished product.
 
-1. **Operations** – Set up operations to represent the tasks that must be completed to produce the finished item.
-1. **Relations** – Set up operation relations to establish detailed properties. To define operation relations, select **Relations** on the **Operations** page.
+- **Operations** – Set up operations to represent the tasks that must be completed to produce the finished item.
+- **Relations** – Set up operation relations to establish detailed properties. To define operation relations, select **Relations** on the **Operations** page.
+
+> [!NOTE]
+> You must know the types of activities that are required in order to produce your item, and the order and priorities of those activities. You must also know which resources are involved, and how many.
 
 ## Setup if you use routes
 
 If you're working with routes, operations must be defined for every production route that you set up. The route represents the path that the item takes from operation to operation, from the start of the production process to the end.
 
-1. **Cost categories** – Set up cost categories to define the cost per hour of specified processes and setup times.
-1. **Cost groups** – Set up cost groups to create and maintain different types of costing.
-1. **Route groups** – Set up route groups to define parameters that are related to groups of routes. You must set up route groups before you can create production routes.
-1. **Routes** – Set up production routes, and define default settings to control scheduling, costing, and pricing of route operations, and to control progress reporting.
-1. **Route version** – Set up route versions to enable item variations in production.
+- **Cost categories** – Set up cost categories to define the cost per hour of specified processes and setup times.
+- **Cost groups** – Set up cost groups to create and maintain different types of costing.
+- **Route groups** – Set up route groups to define parameters that are related to groups of routes. You must set up route groups before you can create production routes.
+- **Routes** – Set up production routes, and define default settings to control scheduling, costing, and pricing of route operations, and to control progress reporting.
+- **Route version** – Set up route versions to enable item variations in production.
 
 ## Optional advanced settings
 
-1. **Production groups** – Set up production groups to establish relationships between the production order and ledger accounts. The ledger accounts are used to post or group orders for reporting.
-1. **Production pools** – Create production pools to group production orders so that you can process urgent production orders, or delete and post groups of orders.
-1. **Properties** – Define properties to create special attributes that you can assign to your resources to control the order of productions. These attributes are connected to the working time template.
+- **Production groups** – Set up production groups to establish relationships between the production order and ledger accounts. The ledger accounts are used to post or group orders for reporting.
+- **Production pools** – Create production pools to group production orders so that you can process urgent production orders, or delete and post groups of orders.
+- **Properties** – Define properties to create special attributes that you can assign to your resources to control the order of productions. These attributes are connected to the working time template.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

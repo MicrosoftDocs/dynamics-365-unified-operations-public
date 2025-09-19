@@ -4,7 +4,7 @@
 title: Set up compensation grids
 description: Compensation grids are used to define and maintain the pay structures for fixed compensation plans. 
 author: twheeloc
-ms.date: 01/03/2022
+ms.date: 06/03/2025
 ms.topic: how-to 
  
 # optional metadata 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Compensation grids are used to define and maintain the pay structures for fixed compensation plans. Compensation grids can be shared between multiple plans or copied when creating a new compensation plan.  Before creating a compensation grid, Levels and Reference points must be set up. This example will create a new Grade type of compensation grid using demo data for the Levels and Reference points. The demo data company used to create this procedure is USMF.
+Compensation grids are used to define and maintain the pay structures for fixed compensation plans. Compensation grids can be shared between multiple plans or copied when creating a new compensation plan.  Before creating a compensation grid, Levels and Reference points must be set up. This example creates a new **Grade type** of compensation grid using demo data for the **Levels** and **Reference** points. The demo data company used to create this procedure is USMF.
 
 
 ## Set up information about the compensation grid
@@ -38,9 +38,10 @@ Compensation grids are used to define and maintain the pay structures for fixed 
 3. In the **Grid** field, type a value.
 4. In the **Description** field, type a value.
 5. In the **Type** field, select an option.
-6. In the **Reference** setup field, enter or select a value.
+6. In the **Reference setup** field, enter or select a value.
 7. In the **Currency** field, enter or select a value.
 8. In the **Effective date** field, enter a date.
+9. In the **Expiration date** field, enter a date.
 
 ## Add levels to the compensation structure
 1. Click **Compensation structure**.
@@ -61,9 +62,9 @@ Compensation grids are used to define and maintain the pay structures for fixed 
 
 ## Fill in the compensation structure with values
 1. In the list, mark the selected row.
-    * At this point, compensation values can manually be entered into each field in the table, or the Mass change functionality can be used to easily fill in multiple fields and perform basic calculations.  
+    * At this point, compensation values can manually be entered into each field in the table, or the **Mass change** functionality can be used to easily fill in multiple fields and perform basic calculations.  
 2. Click **Mass change**.
-    * For this grid, we'll first apply the value for the midpoint of the first level's to all the fields in the table. This will be the basis for the compensation matrix.  
+    * For this grid, we'll first apply the value for the midpoint of the first level's to all the fields in the table. This is the basis for the compensation matrix.  
 3. In the **Adjustment type** field, select an option.
 4. In the **Adjustment amount** field, enter a number.
 5. In the list, mark or unmark all rows.
@@ -73,7 +74,7 @@ Compensation grids are used to define and maintain the pay structures for fixed 
 8. In the **Adjustment amount** field, enter a number.
 9. In the list, find and select the desired record.
 10. Click **Apply to grid**.
-    * Now we'll use the mass change function to adjust the Minimum and Maximum reference points for each level. This example will use a 50% spread so the Minimum reference point will be adjusted -20% and the Maximum will be adjusted +20%.  
+    * Now we'll use the mass change function to adjust the **Minimum** and **Maximum** reference points for each level. This example uses a 50% spread so the **Minimum reference** point is adjusted -20% and the **Maximum** is adjusted +20%.  
 11. In the **Adjustment amount** field, enter a number.
 12. In the **Reference point** field, enter or select a value.
 13. In the list, mark or unmark all rows.

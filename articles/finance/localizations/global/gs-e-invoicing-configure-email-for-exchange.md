@@ -3,7 +3,7 @@ title: Configure an email channel for Office 365 Exchange Online
 description: Learn how to configure an email channel for Microsoft Office 365 Exchange Online to receive electronic invoices, including a step-by-step process.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/29/2024
 ms.custom: 
 ms.reviewer: johnmichalak
