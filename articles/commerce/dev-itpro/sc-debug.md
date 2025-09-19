@@ -1,8 +1,8 @@
 ---
 title: Debug Store Commerce extensions using Visual Studio Code
-description: This article describes how to debug Microsoft Dynamics 365 Commerce Store Commerce extensions by using Visual Studio Code.
+description: Learn how to debug Microsoft Dynamics 365 Commerce Store Commerce extensions by using Visual Studio Code.
 author: josaw1
-ms.date: 07/25/2024
+ms.date: 09/19/2025
 ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chrgriffin
@@ -17,7 +17,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to debug Microsoft Dynamics 365 Commerce Store Commerce extensions by using Visual Studio Code.
+This article explains how to debug Microsoft Dynamics 365 Commerce Store Commerce extensions by using Visual Studio Code.
 
 > [!NOTE]
 > You can use Visual Studio Code to debug only 64-bit .NET Framework apps. To debug offline Commerce runtime (CRT)/Hardware station (HWS) code in Store Commerce, you must use Visual Studio 2019 or later.
@@ -120,7 +120,7 @@ To debug Store Commerce extensions by Using Visual Studio Code, follow these ste
 
 1. In Visual Studio Code, select **Debug**, select the appropriate option for your scenario, and then start to debug by putting a breakpoint in your extension code.
 
-## Troubleshoot debug issues
+## Diagnose debug issues
 
 ### msbuild error
 
