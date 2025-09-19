@@ -3,14 +3,13 @@ title: Store Commerce app for mobile platforms
 description: Learn how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
 author: anush6121
 ms.author: anvenkat
-ms.date: 08/07/2025
+ms.date: 09/19/2025
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: global
 ms.search.validFrom: 2018-10-29
 ms.custom: 
   - bap-template
-
 ---
 
 # Store Commerce app for mobile platforms
@@ -180,4 +179,4 @@ This [Github example](https://github.com/microsoft/Dynamics365Commerce.InStore/b
 
 [Choose between Store Commerce app and Store Commerce for web](../mpos-or-cpos.md)
 
-[Troubleshoot Store Commerce setup and installation issues](../troubleshoot/store-commerce-setup-installation.md)
+[Debug Store Commerce setup and installation issues](/previous-versions/troubleshoot/dynamics-365/commerce/point-of-sale/store-commerce-setup-installation)
