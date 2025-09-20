@@ -122,14 +122,71 @@ The steps for importing e-invoicing configuration files are as follows.
 ## Create Tax Calculation Feature 
 
 The steps for generally creating tax calculation feature are as follows.
-
+### Create
 1. Go to **Workspace -> Globalization Studio**
 2. Select **Tax calculation**
 3. On the **Tax calculation feature** form, click **Add** button
 4. Select **New feature** , input **Name** and **Description**, then select **Default** under **Type**
 5. Click **Create feature**
-6. After the creation, then go to the right-hand of the page, under **Versions** tab, click **Edit** option to configure the selected feature.
+
+### Configure
+6. After the creation, then go to the right-hand of the page, under **Versions** tab
+7. Highlight the version record with status **Draft**, then click **Edit** option to configure the selected feature.
    **Note** If you can't find **Edit**, then try to click **the three dots** depending on screen resolution.
-7. Select the **Tax Calculation Configuration (Brazil)** with the version corresponding to your F&O version. Please find the mapping in the article Overview.
-8. To enable lookups for the fields, turn on the **Enable lookups in applicability rules** option, and then select the **Source Legal Entity** (for example, BRMF)
+9. Select the **Tax Calculation Configuration (Brazil)** with the version corresponding to your F&O version. Please find the mapping in the article Overview.
+
+## Enable lookups in applicability rules
+10. Turn on the **Enable lookups in applicability rules** option
+11. Then select the **Source Legal Entity** (for example, BRMF)
+12. Click **Select** button.
+
+### Setup Tax codes for new tax types (CBS/IBS)
+13. Go to **Tax codes and groups** FastTab, under **Tax codes** tab click **Add** button 
+14. Input values in **Tax code** (For example, CBS, IBS-City12 etc)
+15. Select **By Net Amount Brazil** in **Calculation origin** field
+16. Click **Save** button.
+17. Go to the right page **General** fasttab, fill in the values for all related fields ( for example, **Calculaiton Method**, **cClassTrib code** and **Tax type**  etc )
+18. Go to **Rate** fasttab, fill in the values for all related fields (for example, **Tax Rate** etc)
+
+### Setup Tax group and assign tax codes
+19. Go to **Tax codes and groups** FastTab, on the **Tax group** tab click **Manage columns**
+20. Select the relevant columns to define the elements of the tax groups defination .(For example,Transactiondate from header and line etc)
+21. Move them using the right arrow and confirm with **OK** 
+22. Click **Add** button, then input values in **Lines.Tax group** and other selected fields through **Manage columns**.
+23. Highlight the tax group record, and select the values in **Tax codes** to define the relationship between the tax group and the tax codes.
+
+> [!Note]
+> Since the new tax reform takes effect in 2026, customers who configure the **Tax group** in advance (for example, in 2025) should add **Header.FromTransitionDate** and **Line.FromTransitionDat**, and set both to **January 1, 2026**, to prevent unexpected errors.
+
+### Setup Item Tax group and assign tax codes
+24.  Go to **Tax codes and groups** FastTab, on the **Item Tax group** tab click **Manage columns**
+25.  Select the relevant columns to define the elements of the item tax groups defination.(For example,TransactionDate on header and line etc)
+26.  Move them using the right arrow and confirm with **OK**. 
+27.  Click **Add** button and input values in **Lines.Item Tax group**and other selected fields through **Manage columns**.
+28.  Highlight the tax group record, and select the values in **Tax codes** to define the relationship between the item tax group and the tax codes.
+
+> [!Note]
+> Since the new tax reform takes effect in 2026, customers who configure the **Item Tax group** in advance (for example, in 2025) should add **Header.FromTransitionDate** and **Line.FromTransitionDat**, and set both to **January 1, 2026**, to prevent unexpected errors.
+  
+
+### Define applicability rules for Tax group
+
+29. Go to **Applicability rules** FastTab, under **Tax group applicability** tab, click **Manage columns**
+30. Select relevant columns to define the elements of the applicability rules used to determine the **tax group** （for example Business process,CFOP code, Ship to City, Fiscal establishment, Fiscal classification code, etc)
+31. Move them using the right arrow and confirm with **OK**
+32. Input the values in the selected fields.
+
+> [!Note]
+> Since the new tax reform takes effect in 2026, customers who configure the **Tax group applicability** in advance (for example, in 2025) should add **Header.FromTransitionDate** and **Line.FromTransitionDat**, and set both to **January 1, 2026**, to prevent unexpected errors.
+
+
+### Define applicability rules for Item tax group
+
+33. Go to **Applicability rules** FastTab, under **Item tax group applicability** tab, click **Manage columns**
+34. Select relevant columns to define the elements of the applicability rules used to determine the **item tax group** （for example Business process,CFOP code, Ship to City, Fiscal establishment, Fiscal classification code, etc)
+35. Move them using the right arrow and confirm with **OK**
+36. Input the values in the selected fields.
+
+> [!Note]
+> Since the new tax reform takes effect in 2026, customers who configure the **Item tax group applicability** in advance (for example, in 2025) should add **Header.FromTransitionDate** and **Line.FromTransitionDat**, and set both to **January 1, 2026**, to prevent unexpected errors.
 
