@@ -148,6 +148,11 @@ The steps for generally creating tax calculation feature are as follows.
 17. Go to the right page **General** fasttab, fill in the values for all related fields ( for example, **Calculaiton Method**, **cClassTrib code** and **Tax type**  etc )
 18. Go to **Rate** fasttab, fill in the values for all related fields (for example, **Tax Rate** etc)
 
+> [!Note]
+> Tax codes created here in advanced tax engine could be synchronized in Tax->Indirect tax-> Sales tax -> Sales tax codes form.
+
+> **Settlement period** and **Leger posting group** in tax codes haven't been specified. You will be prompted to define them when enabling the feature in Advanced tax calculation engine in the tax parameter.   
+
 ### Setup Tax group and assign tax codes
 19. Go to **Tax codes and groups** FastTab, on the **Tax group** tab click **Manage columns**
 20. Select the relevant columns to define the elements of the tax groups defination .(For example,Transactiondate from header and line etc)
@@ -189,4 +194,33 @@ The steps for generally creating tax calculation feature are as follows.
 
 > [!Note]
 > Since the new tax reform takes effect in 2026, customers who configure the **Item tax group applicability** in advance (for example, in 2025) should add **Header.FromTransitionDate** and **Line.FromTransitionDat**, and set both to **January 1, 2026**, to prevent unexpected errors.
+
+### Complete and change status
+After completing all onfiguration steps, such as tax codes, tax groups, item tax groups and rules, change the status of current version from **Draft** to **Completed**.
+37. Go to **Workspace -> Globalization Studio ->Tax calculation**
+38. On the **Tax calculation feature** form highlight the current version
+39. Click **Change status** button, then select **Complete** option
+
+## Enable Advanced Tax Calculation
+With all the configuration and setup completing, enable the created feature in Advanced tax calculation engine. 
+
+The steps for enablement are as follows.
+
+1. Go to Module **Tax -> Setup -> Tax configuration -> Tax calculation parameters**
+2. Select **General** Page,then click **Advanced tax clauclation** fasttab
+3. Set **Enable advanced tax calculation** option to be **YES**
+4. In the **Feature** group click **Name**, and then select the previously created feature with the completed version.
+5. You will be prompted to maintain the attributes for the new tax code created:
+   - **Settlement period**
+   - **Ledger posting group**
+   - **Currency**
+6. The **Business process** field will be inactive.
+
+## Hint
+
+- Reformed tax codes must be created and maintained exclusively within the tax feature of the Advanced Tax Calculation engine. (For example CBS, IBS)
+
+- Do not attempt to add legacy tax codes from the legacy engine into the Advanced Tax Calculation tax feature in Globalization Studio. Legacy tax codes must continue to be maintained using the established procedures in the legacy engine, while reformed tax codes are managed only in the Advanced Tax Calculation engine.
+
+- Any changes that affect reformed tax calculation—such as adjustments to tax rates, modifications of tax types, or the inclusion of sales tax codes in sales tax groups or item sales tax groups—made in the legacy engine forms (Sales tax codes, Sales tax groups, Item sales tax groups) will not be applied during tax calculation.
 
