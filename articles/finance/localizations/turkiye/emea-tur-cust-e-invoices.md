@@ -25,7 +25,7 @@ Before you begin, ensure that the following prerequisites are met:
 
 - Your legal entity’s primary address must be in Türkiye.
 - To generate electronic invoice XML files in the UBL format, you must use Electronic Reporting (ER) configurations. These configurations define the necessary data models, mappings, and output formats required to structure and produce e-invoice documents in compliance with electronic invoicing standards.
-- To enable the generation of electronic invoices in **UBL-TR** format version 1.2 and later, import the specified or later versions of the following Electronic reporting (ER) format configurations. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
+- To enable the generation of electronic invoices in UBL-TR format version 1.2 and later, import the most recent versions of the following Electronic reporting (ER) format configurations. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
 | Number | ER configuration name | Type | Description |
 |---|---|---|---|
@@ -72,7 +72,7 @@ To configure customer account, follow these steps;
 
 1. Go to **Accounts receivable > Customers > All customers**, and select a customer.
 2. On the **Addresses** FastTab, add a valid address for the customer.
-3. Specify the VAT ID of the customer. For more information, see [Set up a legal entity for Türkiye](../../localizations/turkiye/emea-turkiye-set-up-legal-entity.md#set-up-vat-ids-of-customers-and-vendors).
+3. Specify the VAT ID of the customer. For more information, see [Set up VAT IDs of customers and vendors](../../localizations/turkiye/emea-turkiye-set-up-legal-entity.md#set-up-vat-ids-of-customers-and-vendors).
 4. In the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
 5. Set the **eInvoice attachment** option to **Yes** to attach a XML file to the electronic invoice, if an attachment is necessary.
 6. On the **Sales demographics** FastTab, in the **Primary contact** field, select the person who is considered the customer's contact. All available contact persons must already be defined for the selected customer.
@@ -99,36 +99,37 @@ To configure **InvoicedQuantity** mapping for units, follow these steps;
 > [!NOTE]
 > For scenarios where no specific units of measure are assumed, the default value **EA** (each) is used.
 
-### Configure _TaxExemptionReasonCode_ mapping for sales tax codes
+### Define sales tax exempt codes
 
-This section describes how to configure a **Sales tax group** in Dynamics 365 Finance for exemption scenarios in Türkiye to ensure that e-invoices generated in UBL-TR format contain the correct **TaxExemptionReasonCode** value. 
+This section describes how to define **Sales tax exempt codes** in Dynamics 365 Finance.  
+The **Sales tax exempt codes** page provides a central place to create standardized exemption identifiers that represent the legal reasons for tax exemption in Türkiye.  
 
-**TaxExemptionReasonCode** explains why a transaction is exempt from tax (for example, exports or special exemptions). 
-Before you can assign a **TaxExemptionReasonCode** to sales tax groups, you must first define **Sales tax exempt codes**.  
-The **Sales tax exempt codes** page in Finance provides a central place to define standardized exemption identifiers that represent the legal reasons for tax exemption. 
-
-In the context of Türkiye’s e-invoice processes, these codes are critical because they are directly mapped to the **TaxExemptionReasonCode** element in the UBL-TR XML file. 
-This ensures that e-invoices contain the correct legal basis for the exemption, as required by regulations.  
-
-To define sales tax exempt codes:
+To define sales tax exempt codes:  
 
 1. Go to **Tax > Indirect taxes > Sales tax > Sales tax exempt codes**.  
 2. Select **New** to create a new record.  
 3. In the **Exempt code** field, enter a unique identifier (for example, *301* or *351*).  
-4. In the **Description** field, enter a meaningful description (for example, *11/1-a Mal İhracatı* or *KDV - İstisna Olmayan Diğer*).  
-5. Select **Save**. 
+4. In the **Description** field, enter a meaningful description (for example, *11/1-a Mal İhracatı* or *KDV – İstisna Olmayan Diğer*).  
+5. Select **Save**.  
 
-The **TaxExemptionReasonCode** is used in the UBL-TR format of e-invoice to provide standardized tax information. 
+For the official UBL-TR exemption code list, see [e-invoice Legislation and Technical Architecture](https://ebelge.gib.gov.tr/efaturamevzuat.html).
 
-To assign a **TaxExemptionReasonCode** to a sales tax code through the Sales tax group, follow these steps:
+> [!NOTE]  
+> These codes are later used in the UBL-TR e-invoice XML file to populate the **TaxExemptionReasonCode** element.  
 
-1. Go to **Tax > Setup > Sales tax > Sales tax groups**.
-2. Select an existing sales tax group which includes sales tax code for the exemption scenario.
-3. On the **Setup** FastTab, set the **Exempt** option to **Yes**. This setting ensures that all transactions linked to this sales tax group will not calculate tax amounts.
-4. In the **Exempt code** field, select an exemption code for the exemption. To access the exemption code list in UBL-TR, see [e-invoice Legislation and Technical Architecture](https://ebelge.gib.gov.tr/efaturamevzuat.html).
+### Assign _TaxExemptionReasonCodes_ to sales tax groups
 
-> [!NOTE]
-> In Türkiye, the **Exempt** option should only be enabled for transactions that are legally tax exempt, such as export sales, sales to diplomatic missions, or sales under special VAT exemption clauses.
+After defining sales tax exempt codes, you can assign them to sales tax groups. This ensures that e-invoices generated in UBL-TR format contain the correct **TaxExemptionReasonCode** value.  
+
+To assign a **TaxExemptionReasonCode** to a sales tax code through the Sales tax group, follow these steps:  
+
+1. Go to **Tax > Setup > Sales tax > Sales tax groups**.  
+2. Select an existing sales tax group that includes a sales tax code for the exemption scenario.  
+3. On the **Setup** FastTab, for each sales tax code line, set the **Exempt** check box to **Yes** if the tax code should be treated as exempt. This ensures that transactions linked to this tax code won’t calculate tax amounts.  
+4. In the **Exempt code** field, select an exemption code from the dictionary.  
+
+> [!NOTE]  
+> In Türkiye, the **Exempt** option should only be enabled for legally exempt transactions, such as export sales, diplomatic missions, or sales under special VAT exemption clauses.  
 
 ### Configure _TaxTypeCode_ mapping in Application specific parameters
 
