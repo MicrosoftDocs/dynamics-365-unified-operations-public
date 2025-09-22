@@ -2,7 +2,7 @@
 title: Get started with Electronic invoicing for Colombia
 description: Learn how to set up Microsoft Dynamics 365 Finance to use Colombian electronic invoices formats.
 author: v-pedrobusto2025
-ms.author: v-pedrobusto2025
+ms.author: v-pedrobusto
 ms.topic: how-to
 ms.custom: 
   - bap-template
