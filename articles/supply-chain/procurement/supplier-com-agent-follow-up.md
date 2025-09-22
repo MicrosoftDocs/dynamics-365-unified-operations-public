@@ -101,13 +101,13 @@ Here are some examples of other queries that you might set up:
     - The **Orderer** field on the header is set to your user account (the current user).
     - The **Vendor (group)** field is set to *A*.
 
-## Configure the address that emails are sent from
-
-Learn how to view and set the address that the emails are sent from in [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
+## Configure the addresses that emails are sent from
 
 Emails that are sent automatically, without user review, are sent from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address.
 
 Emails that are drafted and then reviewed by a user are sent from the email address of the user that presses **Send**.
+
+To learn how to view and edit the email address of the agent identity user or any other user, go to [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
 
 ## Review and send drafted emails
 
