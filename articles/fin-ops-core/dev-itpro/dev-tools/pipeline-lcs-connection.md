@@ -29,7 +29,7 @@ You must have the credentials for a user who has access to one or more Dynamics 
 > Dynamics Lifecycle Services doesn't support service-to-service authentication. Therefore, only regular user credentials (that is, a user name and password) can be used. Because the pipelines don't run interactively, multifactor authentication must not be set up for the account that you use. We recommend that you set up a separate user account that has limited access and strong credentials that can regularly be rotated for security purposes.
 
 > [!NOTE]
-> In case users are facing issues due to MFA settings, please refer [Conditonal Access MFA](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/recommendation-turn-off-per-user-mfa).
+> Dynamics Lifecycle Services does not have requirement for MFA. In case users are facing issues due to MFA settings, please refer [Conditonal Access MFA](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/recommendation-turn-off-per-user-mfa) for individual accounts.
 
 To enable direct connections from Azure DevOps to Dynamics Lifecycle Services on a user's behalf, you must register an application in your Microsoft Entra.
 
