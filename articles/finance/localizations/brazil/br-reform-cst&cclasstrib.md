@@ -1,6 +1,6 @@
 ---
 title: CST and cClasstrib in Brazil Reformed Tax 
-description: The article desribes the CST and cClasstrib in Brazilian tax reform within scope of 2026
+description: The article describes the CST and cClasstrib in Brazilian tax reform within scope of 2026
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
@@ -12,40 +12,41 @@ ms.custom:
   - bap-template
 ---
 
-# CST and cClasstrib in Brazil Reformed Tax  
+# CST and cClasstrib in Brazil tax reform
 
 [!include [banner](../../includes/banner.md)]
 
-The article desribes the **CST** and **cClasstrib** in Brazilian tax reform in scope for 2026.
+This article describes the **CST** and **cClasstrib** in the Brazilian tax reform for 2026.
+
 
 ## Overview
-In the Brazil Tax Reform, two new tax attributes are introduced to support the new tax types, CBS, IBS, and the Selective Tax.
+Brazil's tax reform introduces two new tax attributes to support the new tax types: CBS, IBS, and the Selective Tax.
 
 - **CST** (Código de Situação Tributária) identifies the specific tax situation of a transaction.
 
-   For example,applicable rate, exemption, or tax type
+For example, it can indicate the applicable rate, an exemption, or a tax type.
 
 - **cClassTrib** (Código de Classificação Tributária) classifies the transaction for tax purposes.
 
-These two attributes must be maintained to support tax calculation and electronic invoicing compliance as mandated by the new reform.
+Maintain both attributes to support tax calculation and electronic invoicing compliance required by the reform.
 
 ## Form
-A specified form has been created to support CST and cClasstrib located in legacy tax system.
+This form supports CST and cClassTrib in the legacy tax system.
 
-Go to **Tax -> Setup > Sales tax > cClassTrib** which contains the codes published by the Government.
+Go to **Tax -> Setup > Sales tax > cClassTrib** to view the codes published by the government.
 
->[!note]
->The initial version is provided by Microsoft. Any later updates must be managed by the customer.
+> [!NOTE]
+> Microsoft provides the initial version. You manage later updates.
 
-Here is the list for the fields and description.
+The following table lists the fields and descriptions.
 
 | Field                                                                   | Description                                                                                                                                                                                                       |
 |-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CST code                                                                | CST code under the new Brazilian tax reform, used to classify CBS/IBS application for the transaction                                                                          |
-| Descriprion                                                             | Tax situation description                                                                                                                                  |
+| CST code                                                                | CST code under the Brazilian tax reform that classifies CBS/IBS for the transaction                                                                          |
+| Description                                                             | Description of the tax situation.                                                                                                                                  |
 | Explanation code                                                        | CST code under the new Brazilian tax reform, used to classify CBS/IBS application for the transaction                                                                                                            |
-| cClassTrib                                                              | The worker identification number.                                                                                                                                                                                 |
+| cClassTrib                                                              | Worker identification number.                                                                                                                                                                                 |
 | Description CST-IBS/CBS                                                 | Tax situation description 
-| Description cClassTrib                                                  | Tax classification description 
-| LC Writing                                                              | Provision from a Brazilian Complementary Law (LC)
+| Description cClassTrib                                                  | Description of the tax classification. 
+| LC Writing                                                              | Provision from Brazilian Complementary Law (LC).
 

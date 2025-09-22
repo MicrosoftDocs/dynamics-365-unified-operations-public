@@ -12,38 +12,37 @@ ms.custom:
   - bap-template
 ---
 
-# Tax Reform Overview 
+# Tax reform overview
 
 [!include [banner](../../includes/banner.md)]
 
-The article provides a high-level introduction to the Brazil Tax Reform solution starting from 2026. 
+This article introduces the Brazil tax reform solution effective in 2026.
 
-It outlines the context of the reform and explains how the Advanced Tax Calculation engine supports new tax types and functionality, while legacy components remain unchanged during the transition period.
+It explains how the Advanced Tax Calculation engine supports new tax types and functionality while legacy components stay unchanged during the transition period.
 
-Our solution ensures compliance with the timeline and requirements defined by the Brazilian government , in line with Microsoft current scope.
+This solution aligns with the timeline and requirements defined by the Brazilian government, in line with Microsoft's current scope.
 
-From 2026 onward, the new tax types and functionality are supported by the Advanced Tax Calculation engine, while legacy tax components remain unchanged during the transition period. 
+Starting in 2026, the Advanced Tax Calculation engine supports the new tax types and functionality, and legacy tax components stay unchanged during the transition period.
 
-For more details for advanced tax calculation, see  [Tax Calculation overview - Finance | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/global-tax-calcuation-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance)
-For more details for legacy tax, see [Brazil tax overview - Finance | Dynamics 365 | Microsoft Learn](https:Tax overview//learn.microsoft.com/en-us/dynamics365/finance/localizations/brazil/latam-bra-calculate-taxes)
+Learn more about advanced tax calculation in [Tax Calculation overview - Finance | Dynamics 365 | Microsoft Learn](/dynamics365/finance/localizations/global/global-tax-calcuation-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance).
 
-## Brazilian new tax types
-CBS--Contribution on Goods and Services
-Federal , Replace PIS and CONFIS (Federal contributions)
-IBS--Good and Services Tax
-States & Municipalities, Replace ICMS and ISS
-IS--Selective Tax (sometimes referred to as Excise tax /Sin tax)
-Federal-Applies to goods or services deemed harmful to health or the enviornment (e.g. alcoholic beverages, sugary drinks, etc)
+Learn more about legacy tax in [Brazil tax overview - Finance | Dynamics 365 | Microsoft Learn](/dynamics365/finance/localizations/brazil/latam-bra-calculate-taxes).
 
-## Implementation Timeline & Transition
 
-The law enabling CBS, IBS, and Selective Tax (IS) is Complementary Law No. 214/2025. 
+## New Brazilian tax types
+- CBS—Contribution on goods and services. Federal: replaces PIS and COFINS (federal contributions).
+- IBS—Goods and services tax. States and municipalities: replaces ICMS and ISS.
+- IS—Selective tax (sometimes called excise tax or sin tax). Federal: applies to goods or services considered harmful to health or the environment (like alcoholic beverages and sugary drinks).
 
-Transition period is from 2026 to 2033. During that time, legacy taxes (ICMS, ISS, PIS, Cofins, IPI) will be gradually phased out. 
+## Implementation timeline and transition
 
-In 2026, pilot/initial rates will begin (very low) for CBS and IBS, plus preparatory obligations. 
+Complementary Law No. 214/2025 enables CBS, IBS, and Selective Tax (IS). 
 
-By 2033, full implementation is expected: legacy taxes abolished; CBS/IBS fully in place.
+The transition period runs from 2026 through 2033. During that time, legacy taxes (ICMS, ISS, PIS, Cofins, IPI) phase out gradually. 
+
+In 2026, low pilot rates for CBS and IBS start along with preparatory obligations. 
+
+By 2033, full implementation ends the legacy taxes and puts CBS and IBS fully in place.
 
 ## Versions
 We recommend that you import and set up your Tax Calculation configuration with the version that matches your Microsoft Dynamics 365 Finance or Microsoft Dynamics 365 Supply Chain Management version.
@@ -56,17 +55,49 @@ Finance or Supply Chain Management version	Tax configuration version
 ## Supported transactions
 The following lists the transactions supported in the Brazil tax reform in Advanced tax calculation engine.
 
- <p><ul><li>Invoice register<br><li>Invoice approval<br><li>Invoice pool 
-
- <li>Periodic journals
-
- <li>Vendor payment journal<br><li>Customer payment journal 
-  
- <li>General journals<br><li>Vendor invoice journal
- <li>Free text invoice
-  
- <p>Project<ul><li>Project invoice proposal<br> <li>Journals (Hour/Expense/Item/Fee)<br><li> Project quotations<br><li> Intercompany customer invoice<br> <li>Microsoft Dynamics 365 Project Operations integration journal 
- 
- Sales</p><li>Sales quotation</li><li>Sales order</li><li>Confirmation</li><li>Picking list</li><li>Packing slip</li><li>Sales invoice</li><li>Credit note</li><li>Return order</li><li>Header miscellaneous charge</li><li>Line miscellaneous charge</li></ul><p>Purchase</p><ul><li>Purchase order</li><li>Confirmation</li><li>Receipts list</li><li>Product receipt</li><li>Purchase invoice</li><li>Header miscellaneous charge</li><li>Line miscellaneous charge</li><li>Credit note</li><li>Return order</li><li>Purchase requisition</li><li>Purchase requisition line miscellaneous charge</li><li>Request for quotation</li><li>Request for quotation header miscellaneous charge</li><li>Request for quotation line miscellaneous charge</li></ul><p>Inventory</p><ul><li>Transfer order – ship</li><li>Transfer order – receive</li></ul>|
+* Invoice register
+* Invoice approval
+* Invoice pool
+* Periodic journals
+* Vendor payment journal
+* Customer payment journal
+* General journals
+* Vendor invoice journal
+* Free text invoice
+* Project
+  * Project invoice proposal
+  * Journals (Hour/Expense/Item/Fee)
+  * Project quotations
+  * Intercompany customer invoice
+  * Microsoft Dynamics 365 Project Operations integration journal
+* Sales
+  * Sales quotation
+  * Sales order
+  * Confirmation
+  * Picking list
+  * Packing slip
+  * Sales invoice
+  * Credit note
+  * Return order
+  * Header miscellaneous charge
+  * Line miscellaneous charge
+* Purchase
+  * Purchase order
+  * Confirmation
+  * Receipts list
+  * Product receipt
+  * Purchase invoice
+  * Header miscellaneous charge
+  * Line miscellaneous charge
+  * Credit note
+  * Return order
+  * Purchase requisition
+  * Purchase requisition line miscellaneous charge
+  * Request for quotation
+  * Request for quotation header miscellaneous charge
+  * Request for quotation line miscellaneous charge
+* Inventory
+  * Transfer order – ship
+  * Transfer order – receive
 
 
