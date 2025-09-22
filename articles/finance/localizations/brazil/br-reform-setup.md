@@ -25,8 +25,6 @@ The following diagrams presents the feature setup and enablment process.
 
 
 
-
-
 ## Enable feature in Feature Management
 During both the public preview and general availability phases, the feature will be visible but disabled by default. Therefore, to utilize the Brazil reform feature offered by Microsoft, it must be enabled through the **Feature management** workspace. 
 
@@ -45,11 +43,17 @@ Please follow the instructions: [Create configuration providers and mark them as
 
 ## Download the configuration-related files
 The configuration-related files for tax calculation and e-invocing have been updated in two different locations. Based on your environment, select the appropriate option below to download.
+
 - Dataverse
+  
+  Please find the details in [Import Electronic reporting (ER) Configurations from Dataverse](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse)
 
-- LCS/Appsource
+- LCS
 
-The configuration-related files for Tax Calculation
+  Please find the details in [Import Electronic reporting (ER) Configurations](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations?context=%2Fdynamics365%2Fcontext%2Fcommerce)
+
+### Download list
+The configuration-related files for Tax Calculation)
 - Tax Data Model 
 - Tax Calculation Data Model 
 - FNO Model Mapping 
@@ -74,8 +78,8 @@ The steps for importing tax calculation configuration files are as follows.
 4. Select **Load from XML file** option
 5. Select a file by Clicking **Browse** button
 6. Upload all the files in sequence, then go to step7.
-7. Go bcak to **Configurations** page, select **FNO Model Mapping** under **Tax Calculation Data Model**, switch **Default for model mapping** to **YES**.
-8. Go bcak to **Configurations** page, select **FNO Model Mapping(Brazil)** under **FNO Model Mapping**, switch **Default for model mapping** to **YES**.
+7. Go bcak to **Configurations** page, select **FNO Model Mapping** under **Tax Calculation Data Model**, then switch **Default for model mapping** to **YES**.
+8. Go bcak to **Configurations** page, select **FNO Model Mapping(Brazil)** under **FNO Model Mapping**, then switch **Default for model mapping** to **YES**.
  
 > [!Note]
 > The configuration-related files for tax calculation are required to be uploaded in the following sequence.
@@ -110,8 +114,8 @@ The steps for importing e-invoicing configuration files are as follows.
 7. Go to **Organization administration -> Setup -> Brazilian parameters**
 8. Click **Electronic reporting** tab
 9. Select **NF-e** in **Type** filed and **Fiscal documents mapping** in the **Model Mapping** filed
-10.Go to **Organization administration -> Organizations -> Fiscal establishments -> Fiscal document types**
-11.Select **NF-e submit export format** in the **Export format mapping** field 
+10. Go to **Organization administration -> Organizations -> Fiscal establishments -> Fiscal document types**
+11. Select **NF-e submit export format** in the **Export format mapping** field 
 
 > [!Note]
 > The configuration-related files for e-invoicing are required to be uploaded in the following sequence.
@@ -132,8 +136,14 @@ The steps for generally creating tax calculation feature are as follows.
 ### Configure
 6. After the creation, then go to the right-hand of the page, under **Versions** tab
 7. Highlight the version record with status **Draft**, then click **Edit** option to configure the selected feature.
-   **Note** If you can't find **Edit**, then try to click **the three dots** depending on screen resolution.
-9. Select the **Tax Calculation Configuration (Brazil)** with the version corresponding to your F&O version. Please find the mapping in the article Overview.
+
+> [!note]
+> If you can't find **Edit**, then try to click **the three dots** depending on screen resolution.
+  
+8. Go to **General** fasttab
+9. Select the **Tax Calculation Configuration (Brazil)** with the version corresponding to your F&O version. 
+
+   **Note** Please find the version mapping in **Brazil tax reform overview**.
 
 ## Enable lookups in applicability rules
 10. Turn on the **Enable lookups in applicability rules** option
@@ -149,9 +159,13 @@ The steps for generally creating tax calculation feature are as follows.
 18. Go to **Rate** fasttab, fill in the values for all related fields (for example, **Tax Rate** etc)
 
 > [!Note]
-> Tax codes created here in advanced tax engine could be synchronized in Tax->Indirect tax-> Sales tax -> Sales tax codes form.
+> Tax codes created here in advanced tax engine could be synchronized in **Tax->Indirect tax-> Sales tax -> Sales tax codes** form once the feature has been enalbed in the parameter.
+> 
+> **Settlement period** and **Leger posting group** in tax codes haven't been specified. You will be prompted to define them when enabling the feature in Advanced tax calculation engine in the tax parameter.
+> 
+> For the synchronization between advanced tax engine and legacy system, please find the below link for reference. [Sync the tax setup from the Tax Calculation feature to Dynamics 365 Finance | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/global-master-data-sync-tax-calculation-service-finance)
 
-> **Settlement period** and **Leger posting group** in tax codes haven't been specified. You will be prompted to define them when enabling the feature in Advanced tax calculation engine in the tax parameter.   
+ 
 
 ### Setup Tax group and assign tax codes
 19. Go to **Tax codes and groups** FastTab, on the **Tax group** tab click **Manage columns**
@@ -172,7 +186,9 @@ The steps for generally creating tax calculation feature are as follows.
 
 > [!Note]
 > Since the new tax reform takes effect in 2026, customers who configure the **Item Tax group** in advance (for example, in 2025) should add **Header.FromTransitionDate** and **Line.FromTransitionDat**, and set both to **January 1, 2026**, to prevent unexpected errors.
-  
+
+> [!Note]
+> To prevent unexpected errors, specify the FromDate for either the tax group or the item tax group. Optionally, you can configure both.
 
 ### Define applicability rules for Tax group
 
@@ -181,8 +197,6 @@ The steps for generally creating tax calculation feature are as follows.
 31. Move them using the right arrow and confirm with **OK**
 32. Input the values in the selected fields.
 
-> [!Note]
-> Since the new tax reform takes effect in 2026, customers who configure the **Tax group applicability** in advance (for example, in 2025) should add **Header.FromTransitionDate** and **Line.FromTransitionDat**, and set both to **January 1, 2026**, to prevent unexpected errors.
 
 
 ### Define applicability rules for Item tax group
@@ -223,4 +237,6 @@ The steps for enablement are as follows.
 - Do not attempt to add legacy tax codes from the legacy engine into the Advanced Tax Calculation tax feature in Globalization Studio. Legacy tax codes must continue to be maintained using the established procedures in the legacy engine, while reformed tax codes are managed only in the Advanced Tax Calculation engine.
 
 - Any changes that affect reformed tax calculation—such as adjustments to tax rates, modifications of tax types, or the inclusion of sales tax codes in sales tax groups or item sales tax groups—made in the legacy engine forms (Sales tax codes, Sales tax groups, Item sales tax groups) will not be applied during tax calculation.
+
+- **Settlement period** and **Leger posting group** needs to be modified in legacy tax module **Tax->Indirect tax-> Sales tax -> Sales tax codes**.
 
