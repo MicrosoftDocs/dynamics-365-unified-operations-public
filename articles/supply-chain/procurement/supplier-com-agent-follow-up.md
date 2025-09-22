@@ -105,7 +105,9 @@ Here are some examples of other queries that you might set up:
 
 Learn how to view and set the address that the emails are sent from in [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
 
-You can change the sending email address for individual email messages before you send them.
+The email address that will be used to automatically send emails is the agent identity email address. 
+
+For the configurations drafting emails, the email address of the user that presses **Send** will be the one that will be the one used to send the email. 
 
 ## Review and send drafted emails
 
