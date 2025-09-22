@@ -1,5 +1,5 @@
 ---
-title: Brazil Reformed Tax setup
+title: CST and cClasstrib in Brazil Reformed Tax 
 description: The article desribes the CST and cClasstrib in Brazilian tax reform within scope of 2026
 author: yanansong
 ms.author: yanansong
@@ -12,7 +12,7 @@ ms.custom:
   - bap-template
 ---
 
-# Brazil Reformed tax setup 
+# CST and cClasstrib in Brazil Reformed Tax  
 
 [!include [banner](../../includes/banner.md)]
 
