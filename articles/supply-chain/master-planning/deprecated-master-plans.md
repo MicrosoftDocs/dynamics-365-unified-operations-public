@@ -1,8 +1,8 @@
 ---
 title: Set up master plans for the deprecated planning engine
 description: Learn about various important strategies and parameters that are used to set up master plans when you are using the deprecated planning engine.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 01/05/2023
 ms.custom: bap-template

@@ -1,6 +1,6 @@
 --- 
 title: Close the fiscal year
-description: Learn about how to close the fiscal year with a procedure that steps through year-end close, including an outline on validating year-end close parameters.
+description: Learn about how to close the fiscal year with a procedure that steps through year-end close.
 author: moaamer
 ms.author: moaamer
 ms.topic: how-to
@@ -26,7 +26,7 @@ This procedure steps through the year end close process that transfers balances 
 2. Expand the **Fiscal year close** section.
 3. Select **Yes** or **No** for the **Delete close-of-year transactions during transfer** option.
     
-If the fiscal year has already been closed and the year-end close is being run again, this setting is important. If set to **Yes**, the voucher for the previous year-end close will be deleted, and a new voucher will be created for all accounts beginning balances. If set to **No**, the previous voucher will remain and a new voucher will only be created for adjusting entries that were posted after the last year-end close.
+If the fiscal year has already been closed and the year-end close is being run again, this setting is important. If set to **Yes**, the voucher for the previous year-end close is deleted, and a new voucher is created for all accounts beginning balances. If set to **No**, the previous voucher remains and a new voucher is created for adjusting entries that were posted after the last year-end close.
 
 4. Select **Yes** or **No** for the **Create closing transactions during transfer** option.
 

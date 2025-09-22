@@ -260,14 +260,9 @@ Typically, you'll use an inventory value report to view the inventory value and 
 
 For example, you have an item that has the item number *A0001*. In the storage dimensions group, only the site is enabled for financial inventory. The site and warehouse are both enabled for physical inventory. In the tracking dimension group, the batch number is enabled for physical inventory but not for financial inventory. You then use a report configuration where site, warehouse, and batch number are all selected. When you view the report, you see a value only for the site. The columns for the warehouse and batch number are blank. As this example shows, inventory value reports can show only inventory dimensions that are enabled for financial inventory.
 
-## <a name="large-volume"></a>Generate an inventory value report storage report for a large number of items (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.44 GA -->
+## <a name="large-volume"></a>Generate an inventory value report storage report for a large number of items
 
 This feature lets you handle extensive datasets while maintaining control over the process of generating **Inventory value report storage** reports, ensuring smooth and uninterrupted operation. It improves performance by dividing large datasets into manageable bundles. The system processes each bundle sequentially, which prevents timeout errors. You can also pause and resume the process to support incremental report generation.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Prerequisites
 

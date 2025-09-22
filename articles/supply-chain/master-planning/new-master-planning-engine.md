@@ -1,13 +1,14 @@
 ---
 title: Migration to Planning Optimization for master planning
 description: Learn about the new master planning engine, Planning Optimization, and about migration from the existing engine with an outline on new deployments. 
-author: t-benebo
-ms.author: benebotg
-ms.topic: article
-ms.date: 06/04/2023
-ms.custom: bap-template
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: 
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Migration to Planning Optimization for master planning
@@ -38,11 +39,11 @@ There's currently no timeline for full removal of the deprecated planning engine
 
 Planning Optimization is now the standard master planning engine and must be used for all new cloud deployments. Starting with Supply Chain Management version 10.0.32, the first time you enable planning processes for any legal entity, the system will require you to install and enable Planning Optimization if you haven't already done so.
 
-Starting in Supply Chain Management version 10.0.41, the deprecated master planning engine is blocked for all new deployments. There is no manual way to enable the deprecated master planning engine for these environments. However, Microsoft customers who require planning support for the following feature will be permitted to use the deprecated master planning engine as a temporary solution until Planning Optimization supports it:
+Starting in Supply Chain Management version 10.0.41, the deprecated master planning engine is blocked for all new deployments. There's no manual way to enable the deprecated master planning engine for these environments. However, Microsoft customers who require planning support for the following feature will be permitted to use the deprecated master planning engine as a temporary solution until Planning Optimization supports it:
 
 - Lean manufacturing
 
-If you require support for lean manufacturing (only), please submit a support ticket to Microsoft Support.
+If you require support for lean manufacturing (only), submit a support ticket to Microsoft Support.
 
 > [!NOTE]
 > This is only a temporary solution until Planning Optimization supports lean manufacturing. No reason other than requiring lean manufacturing support will be considered for enabling deprecated planning on a new environment.
@@ -54,7 +55,7 @@ When you add a new legal entity (company) to an existing environment, that compa
 You can continue to use the deprecated master planning engine for one or more previously created companies (until you're ready to migrate them) even while using Planning Optimization for the others. For instructions on how to set a company to use the deprecated master planning engine, see [Continue to use deprecated master planning with existing companies](continue-using-deprecated-planning.md).
 
 > [!NOTE]
-> Remember that you must still move each legal entity to Planning Optimization once they are supported.
+> Remember that you must still move each legal entity to Planning Optimization once they're supported.
 
 ## If you use kanban or are going live very soon and need time to test Planning Optimization
 
@@ -66,7 +67,7 @@ Planning Optimization doesn't yet support kanban, so if you need to use kanban, 
 
 Owners of existing cloud-based deployments that depend on master planning must plan to migrate to Planning Optimization. If your implementation depends on functionality that Planning Optimization doesn't currently support, you must request an exception to continue to use the deprecated master planning engine.
 
-Starting in Supply Chain Management version 10.0.32, it's possible to allow some companies (legal entities) to run Planning Optimization while others continue to use the deprecated master planning engine until they are ready to be migrated. Therefore, Microsoft will now grant exceptions on a per-company basis. The exception only applies to existing companies&mdash;starting with version 10.0.32, all new companies that you add to your existing environment must use Planning Optimization. For instructions on how to set a company to use the deprecated master planning engine, see [Continue to use deprecated master planning with existing companies](continue-using-deprecated-planning.md).
+Starting in Supply Chain Management version 10.0.32, it's possible to allow some companies (legal entities) to run Planning Optimization while others continue to use the deprecated master planning engine until they're ready to be migrated. Therefore, Microsoft will now grant exceptions on a per-company basis. The exception only applies to existing companies&mdash;starting with version 10.0.32, all new companies that you add to your existing environment must use Planning Optimization. For instructions on how to set a company to use the deprecated master planning engine, see [Continue to use deprecated master planning with existing companies](continue-using-deprecated-planning.md).
 
 We recommend that you migrate companies to Planning Optimization one at a time, as soon as they're supported.
 
@@ -181,7 +182,7 @@ The system will automatically give you an opportunity to request an exception. J
 
 ### Why do I get an error message when running the deprecated master planning engine?
 
-You may sometimes get an error message when running the deprecated master planning engine. It indicates that you that you must move to Planning Optimization and provides the following information:
+You might sometimes get an error message when running the deprecated master planning engine. It indicates that you must move to Planning Optimization and provides the following information:
 
 > The built-in master planning engine is deprecated. This means that it is not supported (unless a blocking issue) and it will no longer be invested in. It's being replaced by the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management.
 
@@ -189,7 +190,7 @@ For information about how to migrate to Planning Optimization, see the earlier s
 
 You can continue using the deprecated master planning engine for one or more of your companies if necessary. For instructions, see [Continue to use deprecated master planning with existing companies](continue-using-deprecated-planning.md).
 
-If you see this error while running on a sandbox and you'd like to remove it, see [Can I use the deprecated master planning engine on my sandbox environment?](#faq-sandbox) for instructions.
+If you see this error while running on a sandbox and you'd like to remove it, follow the instructions provided in [Can I use the deprecated master planning engine on my sandbox environment?](#faq-sandbox)
 
 ### <a name="faq-sandbox"></a>Can I use the deprecated master planning engine on my sandbox environment?
 
@@ -215,7 +216,7 @@ You shouldn't be concerned. You can continue to use the deprecated master planni
 
 ### I'm getting an error message when running master planning. Is master planning blocked?
 
-If you're running version 10.0.16 or later, you may receive the following error message when you run master planning:
+If you're running version 10.0.16 or later, you might receive the following error message when you run master planning:
 
 > You receive this error message because the deprecated master planning engine was used for scenarios supported by Planning Optimization. You should migrate to Planning Optimization now, as the built-in master planning engine has been deprecated. Note that this master planning run did complete successfully.
 >

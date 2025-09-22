@@ -1,5 +1,5 @@
 ﻿---
-title: Production dispensing (preview)
+title: Production dispensing
 description: Learn how to use production dispensing to ensure compliance with regulated and controlled standards for dispensing ingredients and materials in production processes.
 author: johanhoffmann
 ms.author: johanho
@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Production dispensing (preview)
+# Production dispensing
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 When you deal with hazardous materials or sensitive components in production processes, accurate dispensing of materials is crucial. It helps minimize the risk of contamination, preserve the integrity of the materials, and ensure the safety of both the product and personnel.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 The processing of dispensing materials to a production order involves allocating and providing the raw materials or components that are required for the production process. It's essential in some environments, for several reasons:
 
@@ -43,8 +39,8 @@ Before you can use the features that are described in this article, your system 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
 - The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-    - *(Preview) Advanced quality management*
-    - *(Preview) Dispense management*
+    - *Advanced quality management*
+    - *Dispense management*
 
 ## Set up a dispensing pick journal
 
@@ -88,7 +84,7 @@ You can create a catalog of measuring devices that are used in the dispensing pr
 
     - **Name**
     - **Description**
-    - **Test instrument tag** – Specify a unique identifier for the measuring device. You can use this ID to track the device's calibration history. Learn more about instrument calibration in [Test instrument calibration (preview)](../inventory/quality-instrument-calibration.md).
+    - **Test instrument tag** – Specify a unique identifier for the measuring device. You can use this ID to track the device's calibration history. Learn more about instrument calibration in [Test instrument calibration](../inventory/quality-instrument-calibration.md).
 
 ## Set up production control parameters
 

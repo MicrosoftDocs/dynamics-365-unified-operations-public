@@ -2,6 +2,7 @@
 title: Responsible AI FAQ for Agent management in finance and operations apps (preview)
 description: Get answers to frequently asked questions about the AI technology used in connection with Agent management. This article includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 04/25/2025
+ms.update-cycle: 180-days
 ms.collection:
   - bap-ai-copilot
 ms.custom:

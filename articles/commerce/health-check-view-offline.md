@@ -1,5 +1,5 @@
 ---
-title: Health check view for offline readiness (preview)
+title: Health check view for offline readiness
 description: Learn about the health check view for offline readiness feature in Microsoft Dynamics 365 Commerce.
 author: anush6121
 ms.author: anvenkat 
@@ -10,10 +10,9 @@ ms.custom:
   - bap-template
 ---
 
-# Health check view for offline readiness (preview)
+# Health check view for offline readiness
 
 [!INCLUDE [banner](includes/banner.md)]
-[!INCLUDE [banner](includes/preview-banner.md)]
 
 This article provides an overview of the health check view for offline readiness feature in Microsoft Dynamics 365 Commerce. This feature performs various checks to verify the status and readiness of the offline database. In this way, it helps prevent issues and ensure smooth offline switching.
 

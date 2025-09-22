@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/10/2024
+ms.date: 09/15/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-01-31
@@ -62,7 +62,7 @@ These components depend on the following system software:
 - Optional but **highly** recommended: Active Directory Certificate Services (AD CS) on Windows Server
 
 > [!IMPORTANT]
-> For supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md).
+> For supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](./onprem-compatibility.md).
 
 ## Lifecycle Services
 
@@ -106,7 +106,7 @@ The hardware configuration includes the following components:
 For more information, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> For supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md).
+> For supported versions, see Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](./onprem-compatibility.md).
 
 ### Hardware layout
 
@@ -747,8 +747,6 @@ You can verify that everything has been configured correctly by running the foll
 
 1. If you used self-signed certificates, export the certificate (.cer file), and install it in the trusted root of each Service Fabric node. You will have only one certificate for all the nodes in your SQL cluster.
 
-> [!NOTE] 
-> For more information, see [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
 
 > [!IMPORTANT]
 > If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Tear down CredSSP, if remoting was used](#teardowncredssp) section.
@@ -933,7 +931,7 @@ Finance + Operations requires additional configuration of AD FS, beyond the defa
     ```
 
     > [!NOTE]
-    > These commands can only be run on an AD FS server running Windows Server 2019 or later. AD FS on Windows Server 2016 has been deprecated. For more information see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](onprem-compatibility.md#active-directory-federation-services-ad-fs).
+    > These commands can only be run on an AD FS server running Windows Server 2019 or later. AD FS on Windows Server 2016 has been deprecated. For more information see [Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](onprem-compatibility.md#active-directory-federation-services-ad-fs).
 
 5. Restart the AD FS service so that the settings are applied correctly.
 

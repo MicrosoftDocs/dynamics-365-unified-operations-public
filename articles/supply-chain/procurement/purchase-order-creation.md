@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart
 ms.topic: how-to
-ms.date: 07/31/2024
+ms.date: 08/13/2025
 ms.custom: 
   - bap-template
 ---
@@ -59,7 +59,7 @@ Charges can be automatically added to PO lines, if automatic charges have been s
 
 After you've added the header and lines to the PO, you must often complete additional steps before the order is ready to be sent to the vendor. Because so many options are available, you might find it helpful to use [Action search](../../fin-ops-core/fin-ops/get-started/action-search.md) to find the relevant menu item.  
 
-You can configure products on the order so that they have supplementary items. Supplementary items are products that must or can be bought together with other products. Supplementary products might be added free of charge as accompanying products, or you may be able to decide whether to add them to the order or not. You can review the supplementary items after each order line that is added. However, you'll probably find it more convenient to review and add relevant supplementary items for all the order lines by using the **Supplementary items** page, which you can open from the Action Pane.  
+You can configure products on the order so that they have supplementary items. Supplementary items are products that must or can be bought together with other products. Supplementary products might be added free of charge as accompanying products, or you might be able to decide whether to add them to the order or not. You can review the supplementary items after each order line that is added. However, you'll probably find it more convenient to review and add relevant supplementary items for all the order lines by using the **Supplementary items** page, which you can open from the Action Pane.  
 
 Discounts are usually added to lines as they're created. However, a few discounts apply to the whole order:
 

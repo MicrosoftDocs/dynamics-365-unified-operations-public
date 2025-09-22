@@ -3,12 +3,12 @@ title: Transportation management engines
 description: Transportation management engines define the logic that is used to generate and process transportation rates in Transportation management. 
 author: lisascholz91
 ms.author: lisascholz
-ms.topic: how-to
-ms.date: 06/07/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine, TMSFreightBillTypeAssignment, TMSZoneMaster, TMSEngineParameters
+ms.topic: how-to
+ms.date: 07/31/2025
+ms.custom:
+  - bap-template
 ---
 
 # Transportation management engines
@@ -52,13 +52,13 @@ In most cases, you can select the **Parameters** button in the transportation ma
 | `MileageEngineCode` | Mileage engine code that identifies the mileage engine record in the database. |
 | `ApportionmentEngine` | Generic engine code that identifies the apportionment engine in the database. |
 
-## How is metadata used in transportation management engines?
+## <a name="use-metadata"></a>How is metadata used in transportation management engines?
 
 Transportation management engines that rely on data that is defined in Supply Chain Management can use different data schemas. The transportation management system enables different transportation management engines to use the same generic physical database tables. To make sure that run-time interpretation of engine data is correct, you can define metadata for the database tables. This reduces the cost of building new transportation management engines because additional table and form structures aren't required in Operations.
 
 ## What can be used as search data in rate calculations?
 
-The data that you use when you calculate rates is controlled by the metadata configuration. For example, if you want to search for rates based on postal codes you must set up metadata based on the lookup type of a postal code.
+The metadata configuration controls the data you use when calculating rates. For example, if you want to search for rates based on postal codes you must set up metadata based on the lookup type of a postal code.
 
 ## Do all engine configurations require metadata?
 
@@ -67,13 +67,13 @@ No, transportation management engines that are used to retrieve the data that is
 > [!NOTE]
 > The transportation management engines that are delivered with Supply Chain Management rely on data that is retrieved from the application. Engines that connect to external systems aren't included. However, the engine-based extensibility model lets you build extensions using Visual Studio Tools.
 
-## How do I configure metadata for a transportation management engine?
+## <a name="config-metadata"></a>How do I configure metadata for a transportation management engine?
 
 Metadata for transportation management engines is configured differently for the different types of engines.
 
 | Transportation management engine | Metadata configuration |
 |--|--|
-| **Rate engine** | Requires a **Rate base type**. The rate base type contains metadata for the rate base data and the rate base assignment data. The structure of rate base metadata is determined by the type of rate engine. The structure of the rate base assignment metadata is determined by the type of rate base assigner that is associated with that rate engine. You set up the rate base type of a rate engine on the **Rate engine** page and on the **Rate master** page. |
+| **Rate engine** | Requires a **Rate base type**. The rate base type contains metadata for the rate base data and the rate base assignment data. The type of rate engine determines the structure of rate base metadata. The type of rate base assigner associated with rate engine determines the structure of its rate base assignment metadata. You set up the rate base type of a rate engine on the **Rate engine** page and on the **Rate master** page. |
 | **Zone engine** | Requires metadata to be set up directly on the zone master. |
 | **Transit time engine** and **Mileage engine** | Retrieves the metadata directly from the mileage engine's configuration setup form. |
 

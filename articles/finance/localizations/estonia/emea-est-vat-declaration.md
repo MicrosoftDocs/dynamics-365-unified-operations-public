@@ -4,7 +4,7 @@ description: Learn how to set up a value-added tax (VAT) declaration for legal e
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 01/15/2024
+ms.date: 07/01/2025
 ms.custom: 266904
 ms.reviewer: johnmichalak
 audience: Application User
@@ -20,13 +20,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This article describes how to set up and generate a value-added tax (VAT) declaration for Estonia in the official XML format. It also describes how to preview the VAT declaration in Microsoft Excel.
 
-As of 10.0.36 version of Dynamics 365 Finance, the VAT declaration feature for Estonia supports filing a VAT return for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and for companies that report as a VAT group in the same system database. For each version of Finance that's listed in the following table, these capabilities are supported as of the specified build number.
-
-| Version | Build | 
-|---------|-------|
-| 10.0.38 | 10.0.1777.94 |
-| 10.0.37 | 10.0.1725.138 |
-| 10.0.36 | 10.0.1695.149 |
+As of 10.0.36 version of Dynamics 365 Finance, the VAT declaration feature for Estonia supports filing a VAT return for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and for companies that report as a VAT group in the same system database.
 
 ## VAT declaration overview
 
@@ -34,32 +28,45 @@ To automatically generate the report, first create enough sales tax codes to kee
 
 | Lookup result | Label (EN) | Label (EE) | \<declarationBody\> | \<salesAnnex\> - Part A of VAT INF return, TAX\_RATE\_SALES | \<purchasesAnnex\> - Part B of VAT INF return | Description (EN) | Description (EE) |
 |---|---|---|---|---|---|---|---|
-| 22-sales | KMD1-22% | KMD1-22% | 1 | 22 | Not included | Acts and transactions subject to tax at a rate of 22% (line 1 of VAT return (KMD)) | 22% määraga maksustatavad toimingud ja tehingud (KMD rida 1) |
-| 22erikord-sales | KMD1-22%special | KMD1-22%erikord | 1 | 22erikord | Not included | **Special procedure** for VAT taxation at a rate of 22% (line 1 of VAT return (KMD)) | Käibemaksu maksustamise erikord 22% määraga (käibemaksudeklaratsiooni (KMD) rida 1) |
-| EUAcquisitionsServicesUseTax-22 | KMD1UseTaxEU\_S-22% | KMD1UseTaxEU\_S-22% | 1 and 6 | Not included | Not included | UseTax Intra-Community acquisitions of **services** received from a taxable person of another Member State, total, incl. (line 1, 6 without 6.1 of VAT return) at a rate of 22% | UseTax auba ühendusesisene teise liikmesriigi maksukohustuslaselt saadud teenused kokku (KMD rida 1, 6 ilma 6.1) - 22% |
-| EUAcquisitionsGoodsUseTax-22 | KMD1UseTaxEU\_G-22% | KMD1UseTaxEU\_G-22% | 1, 6.1, and 6 | Not included | Not included | UseTax Intra-Community acquisitions of **goods** (line 1, 6.1 of VAT return) at a rate of 22% | UseTax Kauba ühendusesisene soetamine (KMD rida 1, 6.1) - 22% |
-| OtherAcquisitionAct411UseTax-22 | KMD1UseTaxAcq411-22% | KMD1UseTaxAcq411-22% | 1, 7.1, and 7 | 22 | Included | UseTax Acquisition of immovables, scrap metal, precious metal, and metal products subject to value-added tax under the special arrangements (VAT Act §41¹) (line 1, 7.1 of VAT return) at a rate of 22% | UseTax Erikorra alusel maksustatava kinnisasja, metallijäätmete, väärismetalli ja metalltoodete soetamine (KMS § 411) (KMD rida 7.1) - 22% |
-| OtherAcquisitionUseTax-22 | KMD1UseTaxAcqOther-22% | KMD1UseTaxAcqOther-22% | 1 and 7 | 22 | Included | UseTax Acquisition of other goods and services subject to VAT incl. (line 1, 7 of VAT return) at a rate of 22% | UseTax Muu kauba soetamine ja teenuse saamine, mida maksustatakse käibemaksuga (KMD rida 1, 7) - 22% |
+| 24-sales | KMD1-24% | KMD1-22% | 1 | 22 | Not included | Acts and transactions subject to tax at a rate of 24% (line 1 of VAT return (KMD)) | 24% määraga maksustatavad toimingud ja tehingud (KMD rida 1) |
+| 24erikord-sales | KMD1-24%special | KMD1-24%erikord | 1 | 24erikord | Not included | **Special procedure** for VAT taxation at a rate of 24% (line 1 of VAT return (KMD)) | Käibemaksu maksustamise erikord 24% määraga (käibemaksudeklaratsiooni (KMD) rida 1) |
+| EUAcquisitionsServicesUseTax-24 | KMD1UseTaxEU\_S-24% | KMD1UseTaxEU\_S-24% | 1 and 6 | Not included | Not included | UseTax Intra-Community acquisitions of **services** received from a taxable person of another Member State, total, incl. (line 1, 6 without 6.1 of VAT return) at a rate of 24% | UseTax auba ühendusesisene teise liikmesriigi maksukohustuslaselt saadud teenused kokku (KMD rida 1, 6 ilma 6.1) - 24% |
+| EUAcquisitionsGoodsUseTax-24 | KMD1UseTaxEU\_G-24% | KMD1UseTaxEU\_G-24% | 1, 6.1, and 6 | Not included | Not included | UseTax Intra-Community acquisitions of **goods** (line 1, 6.1 of VAT return) at a rate of 24% | UseTax Kauba ühendusesisene soetamine (KMD rida 1, 6.1) - 24% |
+| OtherAcquisitionAct411UseTax-24 | KMD1UseTaxAcq411-24% | KMD1UseTaxAcq411-24% | 1, 7.1, and 7 | 24 | Included | UseTax Acquisition of immovables, scrap metal, precious metal, and metal products subject to value-added tax under the special arrangements (VAT Act §41¹) (line 1, 7.1 of VAT return) at a rate of 24% | UseTax Erikorra alusel maksustatava kinnisasja, metallijäätmete, väärismetalli ja metalltoodete soetamine (KMS § 411) (KMD rida 7.1) - 24% |
+| OtherAcquisitionUseTax-24 | KMD1UseTaxAcqOther-24% | KMD1UseTaxAcqOther-22% | 1 and 7 | 24 | Included | UseTax Acquisition of other goods and services subject to VAT incl. (line 1, 7 of VAT return) at a rate of 24% | UseTax Muu kauba soetamine ja teenuse saamine, mida maksustatakse käibemaksuga (KMD rida 1, 7) - 24% |
+| 22-sales | KMD12-22% | KMD12-22% | 12 | 22 | Not included | Acts and transactions subject to tax at a rate of 22% (line 12 of VAT return (KMD)) | 22% määraga maksustatavad toimingud ja tehingud (KMD rida 12) |
+| 22erikord-sales | KMD12-22%special | KMD12-22%erikord | 12 | 22erikord | Not included | **Special procedure** for VAT taxation at a rate of 22% (line 12 of VAT return (KMD)) | Käibemaksu maksustamise erikord 22% määraga (käibemaksudeklaratsiooni (KMD) rida 12) |
+| EUAcquisitionsServicesUseTax-22 | KMD12UseTaxEU\_S-22% | KMD12UseTaxEU\_S-22% | 12 and 6 | Not included | Not included | UseTax Intra-Community acquisitions of **services** received from a taxable person of another Member State, total, incl. (line 12, 6 without 6.1 of VAT return) at a rate of 22% | UseTax auba ühendusesisene teise liikmesriigi maksukohustuslaselt saadud teenused kokku (KMD rida 12, 6 ilma 6.1) - 22% |
+| EUAcquisitionsGoodsUseTax-22 | KMD12UseTaxEU\_G-22% | KMD12UseTaxEU\_G-22% | 12, 6.1, and 6 | Not included | Not included | UseTax Intra-Community acquisitions of **goods** (line 12, 6.1 of VAT return) at a rate of 22% | UseTax Kauba ühendusesisene soetamine (KMD rida 12, 6.1) - 22% |
+| OtherAcquisitionAct411UseTax-22 | KMD12UseTaxAcq411-22% | KMD12UseTaxAcq411-22% | 12, 7.1, and 7 | 22 | Included | UseTax Acquisition of immovables, scrap metal, precious metal, and metal products subject to value-added tax under the special arrangements (VAT Act §41¹) (line 12, 7.1 of VAT return) at a rate of 22% | UseTax Erikorra alusel maksustatava kinnisasja, metallijäätmete, väärismetalli ja metalltoodete soetamine (KMS § 411) (KMD rida 7.1) - 22% |
+| OtherAcquisitionUseTax-22 | KMD12UseTaxAcqOther-22% | KMD12UseTaxAcqOther-22% | 12 and 7 | 22 | Included | UseTax Acquisition of other goods and services subject to VAT incl. (line 12, 7 of VAT return) at a rate of 22% | UseTax Muu kauba soetamine ja teenuse saamine, mida maksustatakse käibemaksuga (KMD rida 12, 7) - 22% |
 | 20-sales | KMD11-20% | KMD11-20% | 11 | 20 | Not included | Acts and transactions subject to tax at a rate of 20% (line 11 of VAT return (KMD)), excluding self-supply of goods or services taxable at 20% | 20% määraga maksustatavad toimingud ja tehingud (KMD rida 11), välja arvatud 20% määraga maksustatav kauba või teenuse omatarve |
 | 20erikord-sales | KMD11-20%special | KMD11-20%erikord | 11 | 20erikord | Not included | **Special procedure** for VAT taxation at a rate of 20% (line 11 of VAT return (KMD)) | Käibemaksu maksustamise erikord 20% määraga (käibemaksudeklaratsiooni (KMD) rida 11) |
-| 20-selfsupply | KMD1.1-20%selfsupply | KMD1.1-20%selfsupply | 11 | 20 | Not included | Self-supply of goods or services taxable at 20% (line 11 of VAT return) | 20% määraga maksustatav kauba või teenuse omatarve (KMD rida 11) |
+| 20-selfsupply | KMD11-20%selfsupply | KMD11-20%selfsupply | 11 | 20 | Not included | Self-supply of goods or services taxable at 20% (line 11 of VAT return) | 20% määraga maksustatav kauba või teenuse omatarve (KMD rida 11) |
 | EUAcquisitionsServicesUseTax-20 | KMD11UseTaxEU\_S-20% | KMD11UseTaxEU\_S-20% | 11 and 6 | Not included | Not included | UseTax Intra-Community acquisitions of services received from a taxable person of another Member State, total, incl. (line 11, 6 without 6.1 of VAT return) at a rate of 20% | UseTax auba ühendusesisene teise liikmesriigi maksukohustuslaselt saadud teenused kokku (KMD rida 11, 6 ilma 6.1) - 20% |
 | EUAcquisitionsGoodsUseTax-20 | KMD11UseTaxEU\_G-20% | KMD11UseTaxEU\_G-20% | 11, 6.1, and 6 | Not included | Not included | UseTax Intra-Community acquisitions of goods (line 11, 6.1 of VAT return) at a rate of 20% | UseTax Kauba ühendusesisene soetamine (KMD rida 11, 6.1) - 20% |
-| OtherAcquisitionAct411UseTax-20 | KMD1UseTaxAcq411-20% | KMD1UseTaxAcq411-20% | 11, 7.1, and 7 | 20 | Included | UseTax Acquisition of immovables, scrap metal, precious metal, and metal products subject to value-added tax under the special arrangements (VAT Act §41¹) (line 11, 7.1 of VAT return) at a rate of 20% | UseTax Erikorra alusel maksustatava kinnisasja, metallijäätmete, väärismetalli ja metalltoodete soetamine (KMS § 411) (KMD rida 11, 7.1) - 20% |
-| OtherAcquisitionUseTax-20 | KMD1UseTaxAcqOther-20% | KMD1UseTaxAcqOther-20% | 11 and 7 | 20 | Included | UseTax Acquisition of other goods and services subject to VAT incl. (line 11, 7 of VAT return) at a rate of 20% | UseTax Muu kauba soetamine ja teenuse saamine, mida maksustatakse käibemaksuga (KMD rida 11, 7) - 20% |
+| OtherAcquisitionAct411UseTax-20 | KMD11UseTaxAcq411-20% | KMD11UseTaxAcq411-20% | 11, 7.1, and 7 | 20 | Included | UseTax Acquisition of immovables, scrap metal, precious metal, and metal products subject to value-added tax under the special arrangements (VAT Act §41¹) (line 11, 7.1 of VAT return) at a rate of 20% | UseTax Erikorra alusel maksustatava kinnisasja, metallijäätmete, väärismetalli ja metalltoodete soetamine (KMS § 411) (KMD rida 11, 7.1) - 20% |
+| OtherAcquisitionUseTax-20 | KMD11UseTaxAcqOther-20% | KMD11UseTaxAcqOther-20% | 11 and 7 | 20 | Included | UseTax Acquisition of other goods and services subject to VAT incl. (line 11, 7 of VAT return) at a rate of 20% | UseTax Muu kauba soetamine ja teenuse saamine, mida maksustatakse käibemaksuga (KMD rida 11, 7) - 20% |
 | 9-sales | KMD2-9% | KMD2-9% | 2 | 9 | Not included | Acts and transactions subject to tax at a rate of 9% (line 2 of VAT return), excluding self-supply of goods or services taxable at 9% | 9% määraga maksustatavad toimingud ja tehingud (KMD rida 2), välja arvatud 9% määraga maksustatav kauba või teenuse omatarve |
 | 9erikord-sales | KMD2-9%special | KMD2-9%erikord | 2 | 9erikord | Not included | **Special procedure** for VAT taxation at a rate of 9% (line 2 of VAT return (KMD)) | Käibemaksu maksustamise erikord 9% määraga (käibemaksudeklaratsiooni (KMD) rida 2) |
-| 9-selfsupply | KMD2.1-9%selfsupply | KMD2.1-9%selfsupply | 2 | 9 | Not included | Self-supply of goods or services taxable at 9% (line 2 of VAT return) | 9% määraga maksustatav kauba või teenuse omatarve (KMD rida 2) |
+| 9-selfsupply | KMD2-9%selfsupply | KMD2-9%selfsupply | 2 | 9 | Not included | Self-supply of goods or services taxable at 9% (line 2 of VAT return) | 9% määraga maksustatav kauba või teenuse omatarve (KMD rida 2) |
 | EUAcquisitionsServicesUseTax-9 | KMD2UseTaxEU\_S-9% | KMD2UseTaxEU\_S-9% | 2 and 6 | Not included | Not included | UseTax Intra-Community acquisitions of services received from a taxable person of another Member State, total, incl. (line 2, 6 without 6.1 of VAT return) at a rate of 9% | UseTax auba ühendusesisene teise liikmesriigi maksukohustuslaselt saadud teenused kokku (KMD rida 2, 6 ilma 6.1) - 9% |
 | EUAcquisitionsGoodsUseTax-9 | KMD2UseTaxEU\_G-9% | KMD2UseTaxEU\_G-9% | 2, 6.1, and 6 | Not included | Not included | UseTax Intra-Community acquisitions of goods (line 2, 6.1 of VAT return) at a rate of 9% | UseTax Kauba ühendusesisene soetamine (KMD rida 2, 6.1) - 9% |
-| OtherAcquisitionAct411UseTax-9 | KMD1UseTaxAcq411-9% | KMD1UseTaxAcq411-9% | 2, 7.1, and 7 | 9 | Included | UseTax Acquisition of immovables, scrap metal, precious metal, and metal products subject to value-added tax under the special arrangements (VAT Act §41¹) (line 2, 7.1 of VAT return) at a rate of 9% | UseTax Erikorra alusel maksustatava kinnisasja, metallijäätmete, väärismetalli ja metalltoodete soetamine (KMS § 411) (KMD rida 2, 7.1) - 9% |
-| OtherAcquisitionUseTax-9 | KMD1UseTaxAcqOther-9% | KMD1UseTaxAcqOther-9% | 2 and 7 | 9, PurchAnnex | Not included | UseTax Acquisition of other goods and services subject to VAT incl. (line 2, 7 of VAT return) at a rate of 9% | UseTax Muu kauba soetamine ja teenuse saamine, mida maksustatakse käibemaksuga (KMD rida 2, 7) - 9% |
+| OtherAcquisitionAct411UseTax-9 | KMD2UseTaxAcq411-9% | KMD2UseTaxAcq411-9% | 2, 7.1, and 7 | 9 | Included | UseTax Acquisition of immovables, scrap metal, precious metal, and metal products subject to value-added tax under the special arrangements (VAT Act §41¹) (line 2, 7.1 of VAT return) at a rate of 9% | UseTax Erikorra alusel maksustatava kinnisasja, metallijäätmete, väärismetalli ja metalltoodete soetamine (KMS § 411) (KMD rida 2, 7.1) - 9% |
+| OtherAcquisitionUseTax-9 | KMD2UseTaxAcqOther-9% | KMD2UseTaxAcqOther-9% | 2 and 7 | 9, PurchAnnex | Not included | UseTax Acquisition of other goods and services subject to VAT incl. (line 2, 7 of VAT return) at a rate of 9% | UseTax Muu kauba soetamine ja teenuse saamine, mida maksustatakse käibemaksuga (KMD rida 2, 7) - 9% |
 | 5-sales | KMD21-5% | KMD21-5% | 21 | 5 | Not included | Acts and transactions subject to tax at a rate of 5% (line 21 of VAT return) | 5% määraga maksustatavad toimingud ja tehingud (KMD rida 21) |
-| 5erikord-sales | KMD21-5%special | KMD2-5%erikord | 21 | 5erikord | Not included | **Special procedure** for VAT taxation at a rate of 5% (line 21 of VAT return (KMD)) | Käibemaksu maksustamise erikord 5% määraga (käibemaksudeklaratsiooni (KMD) rida 21) |
+| 5erikord-sales | KMD21-5%special | KMD21-5%erikord | 21 | 5erikord | Not included | **Special procedure** for VAT taxation at a rate of 5% (line 21 of VAT return (KMD)) | Käibemaksu maksustamise erikord 5% määraga (käibemaksudeklaratsiooni (KMD) rida 21) |
 | EUAcquisitionsServicesUseTax-5 | KMD21UseTaxEU\_S-5% | KMD21UseTaxEU\_S-5% | 21 and 6 | Not included | Not included | UseTax Intra-Community acquisitions of services received from a taxable person of another Member State, total, incl. (line 21 and 6 without 6.1 of VAT return) at a rate of 5% | UseTax auba ühendusesisene teise liikmesriigi maksukohustuslaselt saadud teenused kokku (KMD rida 21, 6 ilma 6.1) - 5% |
 | EUAcquisitionsGoodsUseTax-5 | KMD21UseTaxEU\_G-5% | KMD21UseTaxEU\_G-5% | 21, 6, and 6.1 | Not included | Not included | UseTax Intra-Community acquisitions of goods (line 21 and 6.1 of VAT return) at a rate of 5% | UseTax Kauba ühendusesisene soetamine (KMD rida 21, 6.1) - 5% |
-| OtherAcquisitionAct411UseTax-5 | KMD1UseTaxAcq411-5% | KMD1UseTaxAcq411-5% | 21, 7.1, and 7 | 5 | Included | UseTax Acquisition of immovables, scrap metal, precious metal, and metal products subject to value-added tax under the special arrangements (VAT Act §41¹) (line 21, 7.1 of VAT return) at a rate of 5% | UseTax Erikorra alusel maksustatava kinnisasja, metallijäätmete, väärismetalli ja metalltoodete soetamine (KMS § 411) (KMD rida 21, 7.1) - 5% |
-| OtherAcquisitionUseTax-5 | KMD1UseTaxAcqOther-5% | KMD1UseTaxAcqOther-5% | 21 and 7 | 5 | Included | UseTax Acquisition of other goods and services subject to VAT incl. (line 21, 7 of VAT return) at a rate of 5% | UseTax Muu kauba soetamine ja teenuse saamine, mida maksustatakse käibemaksuga (KMD rida 21, 7) - 5% |
+| OtherAcquisitionAct411UseTax-5 | KMD21UseTaxAcq411-5% | KMD21UseTaxAcq411-5% | 21, 7.1, and 7 | 5 | Included | UseTax Acquisition of immovables, scrap metal, precious metal, and metal products subject to value-added tax under the special arrangements (VAT Act §41¹) (line 21, 7.1 of VAT return) at a rate of 5% | UseTax Erikorra alusel maksustatava kinnisasja, metallijäätmete, väärismetalli ja metalltoodete soetamine (KMS § 411) (KMD rida 21, 7.1) - 5% |
+| OtherAcquisitionUseTax-5 | KMD21UseTaxAcqOther-5% | KMD21UseTaxAcqOther-5% | 21 and 7 | 5 | Included | UseTax Acquisition of other goods and services subject to VAT incl. (line 21, 7 of VAT return) at a rate of 5% | UseTax Muu kauba soetamine ja teenuse saamine, mida maksustatakse käibemaksuga (KMD rida 21, 7) - 5% |
+| 13-sales | KMD22-13% | KMD22-13% | 22 | 13 | Not included | Acts and transactions subject to tax at a rate of 13% (line 22 of VAT return), excluding self-supply of goods or services taxable at 13% | 13% määraga maksustatavad toimingud ja tehingud (KMD rida 22), välja arvatud 13% määraga maksustatav kauba või teenuse omatarve |
+| 13erikord-sales | KMD22-13%special | KMD22-13%erikord | 22 | 13erikord | Not included | **Special procedure** for VAT taxation at a rate of 13% (line 22 of VAT return (KMD)) | Käibemaksu maksustamise erikord 13% määraga (käibemaksudeklaratsiooni (KMD) rida 22) |
+| 13-selfsupply | KMD22-13%selfsupply | KMD22-13%selfsupply | 22 | 13 | Not included | Self-supply of goods or services taxable at 13% (line 22 of VAT return) | 13% määraga maksustatav kauba või teenuse omatarve (KMD rida 22) |
+| EUAcquisitionsServicesUseTax-13 | KMD22UseTaxEU\_S-13% | KMD22UseTaxEU\_S-13% | 22 and 6 | Not included | Not included | UseTax Intra-Community acquisitions of services received from a taxable person of another Member State, total, incl. (line 22, 6 without 6.1 of VAT return) at a rate of 13% | UseTax auba ühendusesisene teise liikmesriigi maksukohustuslaselt saadud teenused kokku (KMD rida 22, 6 ilma 6.1) - 13% |
+| EUAcquisitionsGoodsUseTax-13 | KMD22UseTaxEU\_G-13% | KMD22UseTaxEU\_G-13% | 22, 6.1, and 6 | Not included | Not included | UseTax Intra-Community acquisitions of goods (line 22, 6.1 of VAT return) at a rate of 13% | UseTax Kauba ühendusesisene soetamine (KMD rida 22, 6.1) - 13% |
+| OtherAcquisitionAct411UseTax-13 | KMD22UseTaxAcq411-13% | KMD22UseTaxAcq411-13% | 22, 7.1, and 7 | 13 | Included | UseTax Acquisition of immovables, scrap metal, precious metal, and metal products subject to value-added tax under the special arrangements (VAT Act §41¹) (line 22, 7.1 of VAT return) at a rate of 13% | UseTax Erikorra alusel maksustatava kinnisasja, metallijäätmete, väärismetalli ja metalltoodete soetamine (KMS § 411) (KMD rida 22, 7.1) - 13% |
+| OtherAcquisitionUseTax-13 | KMD22UseTaxAcqOther-13% | KMD22UseTaxAcqOther-13% | 22 and 7 | 13, PurchAnnex | Not included | UseTax Acquisition of other goods and services subject to VAT incl. (line 22, 7 of VAT return) at a rate of 13% | UseTax Muu kauba soetamine ja teenuse saamine, mida maksustatakse käibemaksuga (KMD rida 22, 7) - 13% |
 | 0-sales | KMD3-0% | KMD3-0% | 3 | Not included | Not included | Acts and transactions subject to tax at a rate of 0%, incl. (line 3 without 3.1 and 3.2 of VAT return), excluding EU supplies and exportation of goods | 0% määraga maksustatavad toimingud ja tehingud (KMD rida 3 ilma 3.1 ja 3.2), välja arvatud ELi tarned ja kaupade eksport |
 | 0-EU | KMD3.1-0% | KMD3.1-0% | 3.1 and 3 | Not included | Not included | Intra-Community supply of goods and services provided to a taxable person of another Member State/taxable person with limited liability, total, incl. (line 3.1 without 3.1.1 of VAT return), excluding Intra-Community supply of goods | Kauba ühendusesisene käive ja teise liikmesriigi maksukohustuslasele/piiratud maksukohustuslasele osutatud teenuste käive kokku (KMD rida 3.1 ilma 3.1.1), välja Kauba ühendusesisene käive |
 | 0-Goods-EU | KMD3.1.1-0% | KMD3.1.1-0% | 3.1.1, 3.1, and 3 | Not included | Not included | Intra-Community supply of goods (line 3.1.1 pf VAT return) | Kauba ühendusesisene käive (KMD rida 3.1.1) |
@@ -93,7 +100,7 @@ These tasks will prepare your Finance environment to generate the electronic fil
 - [Set up application-specific parameters for VAT declaration fields](#set-up).
 - [Set up the VAT reporting format to preview amounts in Excel](#setup-preview).
 - [Set up electronic messages](#setup-em).
-- [Set up the VAT registration number of the company that's reporting VAT](#vat-id).
+- [Set up the taxpayer registration number of the reporting company](#vat-id).
 
 ### <a name="import-er"></a>Import ER configurations
 
@@ -180,14 +187,14 @@ For more information about how you can use the data management framework, see [D
 3. Use the filter to specify the settlement periods to include on the report.
 4. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
 
-### <a id="vat-id"></a>Set up the VAT registration number of the company that's reporting VAT
+### <a id="vat-id"></a>Set up the taxpayer registration number of the reporting company
 
-To generate the VAT declaration, you must configure the tax registration number of your organization.
+To generate the VAT declaration, you must configure the taxpayer registration number of your organization. This value is populated in \<TaxPayerRegCode\> field of the report.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
 3. Select or create the address in Estonia, and then, on the **Registration ID** FastTab, select **Add**.
-4. In the **Registration type** field, select the registration type that's dedicated to Estonia and that uses the **VAT ID** registration category.
+4. In the **Registration type** field, select the registration type that's dedicated to Estonia and that uses the **Enterprise ID** registration category.
 5. In the **Registration number** field, enter the tax number.
 6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
@@ -199,7 +206,7 @@ Follow these steps to define the VAT registration number that EM uses during gen
 2. On the **Message additional fields** FastTab, in the **Tax registration number** field, define the VAT registration number that should be used in the VAT declaration for Estonia.
 3. Save your changes.
 
-If the VAT registration number isn't specified in the **Tax registration number** additional field of the **EE VAT declaration** processing, the system retrieves it from the registration ID that's defined in the properties of the legal entity that's associated with the **VAT ID** registration category.
+If the VAT registration number isn't specified in the **Tax registration number** additional field of the **EE VAT declaration** processing, the system retrieves it from the registration ID that's defined in the properties of the legal entity that's associated with the **Enterprise ID** registration category.
 
 ## Preview the VAT declaration in Excel
 

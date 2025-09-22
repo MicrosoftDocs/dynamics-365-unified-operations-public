@@ -3,12 +3,12 @@ title: Reconcile freight in transportation management
 description: Learn about the freight reconciliation process, including outlines on manual reconciliation and automatic reconciliation.
 author: lisascholz91
 ms.author: lisascholz
-ms.topic: how-to
-ms.date: 03/18/2025
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSFBDetailReconcile, TMSInvoiceTable,TMSInvoiceLineReconcile,TMSReconcileInvoice, TMSFreightBillDetail, TMSFreightBillTypeAssignment, TMSRejectInvoiceLine, TMSMiscellaneousCharge, TMSCarrierCodeLookup, DefaultDashboard, WHSLoadPlanningWorkbench, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily, WHSInboundLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Reconcile freight in transportation management
@@ -38,7 +38,7 @@ To use Transportation management (TMS) to reconcile freight, follow these steps.
 
 ## Set up reconciliation reasons
 
-Reconciliation reasons (or reason codes) specify accounts that are debited and credited with any variances that occur between the freight bills and invoices as a result of manual or automatic reconciliation. They are set up on the **Reconciliation reasons** page (**Transportation management** \> **Setup** \> **Reconciliation reasons**).
+Reconciliation reasons (or reason codes) specify accounts that are debited and credited with any variances that occur between the freight bills and invoices as a result of manual or automatic reconciliation. They're set up on the **Reconciliation reasons** page (**Transportation management** \> **Setup** \> **Reconciliation reasons**).
 
 For some reason codes, you might not want to credit a specific account. Instead, you want any credit to be paid to the vendor. In this case, select the **Pay freight vendor** checkbox. Be sure that you also specify a vendor account for the carrier on the **Shipping carriers** page (**Transportation management** \> **Carriers** \> **Shipping carriers**).
 
@@ -175,7 +175,7 @@ When multiple freight invoices are matched to the same freight bill, the process
 
 ## Example
 
-You have an original freight bill (FB) for the amount of 1,500. You create three freight invoices for FB (Inv1, Inv2, and Inv3). There is one invoice line for each invoice. The following settings are used:
+You have an original freight bill (FB) for the amount of 1,500. You create three freight invoices for FB (Inv1, Inv2, and Inv3). There's one invoice line for each invoice. The following settings are used:
 
 - **Original freight bill FB:** Amount = 1,500
 - **Freight invoice Inv1:** Amount = 1,000

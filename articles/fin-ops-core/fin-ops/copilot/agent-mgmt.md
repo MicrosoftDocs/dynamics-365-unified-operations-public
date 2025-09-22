@@ -1,10 +1,11 @@
 ---
-title: Set up Agent management (preview)
+title: Set up Agent management (production ready preview)
 description: This article describes the Agent management feature in Microsoft Dynamics 365 finance and operations apps.
 author: twheeloc
 ms.author: jkhaira
 ms.topic: conceptual
-ms.date: 05/19/2025
+ms.date: 07/21/2025
+ms.update-cycle: 180-days
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -12,21 +13,30 @@ ms.collection:
  - bap-ai-copilot
 ---
 
-# Set up Agent management (preview)
+# Set up agent management (production ready preview)
 
 [!include [preview-banner](../includes/preview-banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article describes the **Agent management** feature in Microsoft Dynamics 365 finance and operations apps.
+This article describes the agent management feature in Microsoft Dynamics 365 finance and operations apps.
 
-The **Agent management** feature in finance and operations apps enables autonomous, AI-powered agents to perform predefined tasks in your business ecosystem. Users can discover, configure, and manage agents that automate routine operational tasks.
+The agent management feature in finance and operations apps enables autonomous, AI-powered agents to perform predefined tasks in your business ecosystem. Users can discover, configure, and manage agents that automate routine operational tasks.
+
+[!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 ## Prerequisites
 
-Before you can use the **Agent management** feature, a Power Platform admin center administrator must ensure that the following prerequisites are met:
+Before a finance and operations apps administrator can activate the *(Production ready preview) Agent management* feature in the **Feature management** workspace, the following prerequisites must be met:
 
-- A Dataverse instance must be linked to the environment.
-- The **Copilot for Finance and Operations apps** solution (logical name: msdyn\_fnocopilot) must be installed in the environment. The minimum accepted version is 1.0.03006.1.
+- The [*Immersive Home*](../copilot/immersive-home.md) feature must be enabled in the **Feature management** workspace in your finance and operations environment.
+
+A Power Platform admin center administrator must ensure that the following prerequisites are met:
+
+- Your finance and operations apps must be runnings version 10.0.44 (10.0.2263.30) or later. Install pending updates in Lifecycle Services (LCS).
+
+- A Dataverse environment must be linked to your finance and operations apps environment. To verify, open [LCS](https://lcs.dynamics.com/v2), select your project, and open the **Full details** for your finance and operations apps environment. In the section **Power Platform Integration**, look for your Power Platform Environment information. If no environment information is shown, follow the instructions provided to deploy an associated Dataverse environment.
+
+- The **Copilot for Finance and Operations apps** solution (logical name: msdyn\_fnocopilot) must be installed in the environment. The minimum accepted version is 1.0.03021.3.
 - The **Copilot** feature flag must be turned on in the Power Platform admin center.
 
     1. In the Power Platform admin center, go to **Environments**.
@@ -36,15 +46,12 @@ Before you can use the **Agent management** feature, a Power Platform admin cent
 
 - Billing must be enabled.
 
-    1. In the Power Platform admin center, go to **Billing** \> **Licenses**. 
+    1. In the Power Platform admin center, go to **Billing** \> **Licenses**.
     1. Select **Copilot Studio**.
     1. Create a new billing plan as necessary.
     1. Assign credits to the relevant environment. Learn more in [AI Builder licensing and credit management](/ai-builder/credit-management).
 
-A Dynamics 365 finance and operations apps administrator must ensure that the following additional prerequisites are met:
-
-- The **Immersive Home** feature must be enabled in the **Feature management** workspace in your finance and operations environment.
-- The **Agent Management** feature must be activated in the **Feature management** workspace.
+After all of the other prerequisites are in place, a finance and operations apps administrator must enable the *(Production ready preview) Agent management* feature in the **Feature management** workspace.
 
 ## Navigation options
 
@@ -124,4 +131,4 @@ If you're an administrator, follow these steps to cancel agent actions.
 
 ## Support and feedback
 
-Because this release is a preview release, we welcome your feedback. We will use it to improve the **Agent management** feature. Report any issues or suggestions through the standard Dynamics 365 support channels. You might also be prompted to provide in-product feedback.
+Because this release is a preview release, we welcome your feedback. We'll use it to improve the agent management feature. Report any issues or suggestions through the standard Dynamics 365 support channels. You might also be prompted to provide in-product feedback.

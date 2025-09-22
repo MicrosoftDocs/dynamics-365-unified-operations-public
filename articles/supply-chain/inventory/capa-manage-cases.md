@@ -1,5 +1,5 @@
 ---
-title: Manage CAPA cases (preview)
+title: Manage CAPA cases
 description: Learn how to use corrective and preventive action (CAPA) cases to record, update, track, follow up on, and close issues that your customers, vendors, or employees raise.
 author: johanhoffmann
 ms.author: johanho
@@ -11,11 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# Manage CAPA cases (preview)
+# Manage CAPA cases
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 Use corrective and preventive action (CAPA) cases to record, update, track, follow up on, and close issues that your customers, vendors, or employees raise.
 
@@ -105,7 +103,7 @@ A CAPA process guides workers who are assigned to a case through the steps that 
 
 Based on the configuration of the CAPA process, a worker or worker group is automatically assigned to each stage and activity. The system uses email to notify each responsible worker or worker group when a case, stage, or activity is assigned to them. The email includes links so that the case, stage, or activity can be opened directly from the message. Workers can always track which cases and activities are assigned to them by opening the **CAPA management** dashboard.
 
-CAPA processes are defined by an administrator or manager. The **CAPA process** field of the CAPA record is used to assign CAPA processes to cases as they are created. Your company can define as many CAPA processes as it needs. Learn more in [Set up CAPA case components (preview)](capa-set-up-case-components.md).
+CAPA processes are defined by an administrator or manager. The **CAPA process** field of the CAPA record is used to assign CAPA processes to cases as they are created. Your company can define as many CAPA processes as it needs. Learn more in [Set up CAPA case components](capa-set-up-case-components.md).
 
 The workflow for CAPA processes consists of the following steps.
 

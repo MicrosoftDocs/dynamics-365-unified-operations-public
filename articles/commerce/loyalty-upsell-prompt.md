@@ -1,5 +1,5 @@
 ---
-title: Loyalty upsell prompt feature in POS (preview)
+title: Loyalty upsell prompt feature in POS
 description: Learn how the loyalty upsell prompt feature helps inform customers about their loyalty program status and tier qualifying points in Microsoft Dynamics 365 Commerce POS.
 author: ashishmsft
 ms.date: 04/25/2025
@@ -12,10 +12,9 @@ ms.custom:
   - bap-template
 ---
 
-# Loyalty upsell prompt feature in POS (preview)
+# Loyalty upsell prompt feature in POS
 
 [!INCLUDE [banner](includes/banner.md)]
-[!INCLUDE [banner](includes/preview-banner.md)]
 
 This article explains how the loyalty upsell prompt feature helps inform customers about their loyalty program status and tier qualifying points in Microsoft Dynamics 365 Commerce POS.
 

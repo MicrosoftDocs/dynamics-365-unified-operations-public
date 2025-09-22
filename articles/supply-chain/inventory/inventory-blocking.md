@@ -3,12 +3,12 @@ title: Inventory blocking
 description: Learn how to work with inventory blocking, which is part of the quality inspection process in Supply Chain Management, with an outline on manually blocking items.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: how-to
-ms.date: 05/27/2024
-ms.custom:
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: InventBlocking, InventQualityOrderTable
+ms.topic: how-to
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Inventory blocking
@@ -33,7 +33,7 @@ You can block a quantity of an item by creating a transaction on the **Inventory
 You can specify items that must be inspected by creating a quality order on the **Quality orders** page. When you create a quality order, the quantity that you specify for an item is blocked. The sampling plan that is associated with a quality order controls only the quantity of items that must be inspected, not the quantity that is blocked. The quantity that is entered on the quality order is the quantity that is blocked, regardless of the quantity that the sampling plan specifies should be sent for inspection.
 
 > [!NOTE]
-> Using both the batch expiry date and blocking inventory status features is not supported by master planning. This could result in double exclusion of on-hand inventory, which can occur during master planning. We recommend that you rely on batch disposition codes, instead of inventory status, for blocking expired batches.
+> Master planning doesn't support using both the batch expiry date and blocking inventory status features. This could result in double exclusion of on-hand inventory, which can occur during master planning. We recommend that you rely on batch disposition codes, instead of inventory status, for blocking expired batches.
 
 ## Blocking items by using a process that generates a quality order
 
@@ -53,14 +53,14 @@ You can specify which inventory statuses are blocking statuses by using the **In
 
 ## Take care when blocking items that use both inventory status blocking and quality order blocking
 
-You can create a quality order associated with inventory having an inventory status that has its **Inventory blocking** parameter enabled. In this case, the quality order generates an extra inventory blocking record in addition to the one created by the inventory status. Because the quality order inventory blocking will have the parameter **Expected receipts** enabled, this generates an extra *Ordered inventory* transaction that is also blocked by its inventory status. This combination can lead to difficulties in understanding the meaning of generated inventory transactions, because it will appear as though the total blocked quantity is in excess of the total quantity on hand. Let us examine the transactions on an example of a receipt of 10 pieces of item A0001 with a quality order generated to sample 1 piece. The behavior will also depend on whether the option **Reserve ordered items** is enabled on the **Inventory and warehouse management parameters** page.
+You can create a quality order associated with inventory having an inventory status that has its **Inventory blocking** parameter enabled. In this case, the quality order generates an extra inventory blocking record in addition to the one created by the inventory status. Because the quality order inventory blocking will have the parameter **Expected receipts** enabled, this generates an extra *Ordered inventory* transaction that is also blocked by its inventory status. This combination can lead to difficulties in understanding the meaning of generated inventory transactions, because it will appear as though the total blocked quantity is in excess of the total quantity on hand. Let us examine the transactions on an example of a receipt of 10 pieces of item A0001 with a quality order generated to sample 1 piece. The behavior also depends on whether the option **Reserve ordered items** is enabled on the **Inventory and warehouse management parameters** page.
 
->[!NOTE]
->If you are using inventory status blocking and quality orders together, we strongly recommend having the **Reserve ordered items** option enabled.
+> [!NOTE]
+> If you're using inventory status blocking and quality orders together, we strongly recommend having the **Reserve ordered items** option enabled.
 
 ### Example with "Reserve ordered items" enabled
 
-When **Reserve ordered items** is enabled, all inventory blocking transactions will have a status of either *Reserved physical* or *Reserved ordered*.
+When **Reserve ordered items** is enabled, all inventory blocking transactions has a status of either *Reserved physical* or *Reserved ordered*.
 
 | Inventory transaction reference | Receipt | Issue | Quantity | Site | Warehouse | Inventory status | Location | License plate | Comment |
 |---|---|---|---|---|---|---|---|---|---|
@@ -72,7 +72,7 @@ When **Reserve ordered items** is enabled, all inventory blocking transactions w
 
 ### Example with "Reserve ordered items" disabled
 
-When **Reserve ordered items** is disabled, the expected receipts can't be reserved because they are in status *Ordered*, so some blocking will be left in status *On order*.
+When **Reserve ordered items** is disabled, the expected receipts can't be reserved because they are in status *Ordered*, so some blocking are left in status *On order*.
 
 | Inventory transaction reference | Receipt | Issue | Quantity | Site | Warehouse | Inventory Status | Location | License Plate | Comment |
 |---|---|---|---|---|---|---|---|---|---|
@@ -84,11 +84,9 @@ When **Reserve ordered items** is disabled, the expected receipts can't be reser
 
 Note the difference in transaction status and dimensions between the two cases. For this reason, we recommend enabling the **Reserve ordered items** option.
 
-## Disable expected receipts from quality orders that sample blocked inventory
+## Expected receipts from quality orders that sample blocked inventory are disabled
 
-To simplify the inventory transactions when quality orders that sample inventory are blocked as a consequence of inventory status, the system provides a feature that disables expected receipts from such quality orders. Because the expected receipt is immediately blocked by inventory status blocking, there's no reduction of on-hand inventory because of this change.
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, it's turned on by default. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Disable expected receipts from quality orders that sample blocked inventory* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To simplify the inventory transactions when quality orders that sample inventory are blocked as a consequence of inventory status, the system disables expected receipts from such quality orders. Because inventory status blocking immediately blocks the expected receipt, there's no reduction of on-hand inventory because of this.
 
 ## Related information
 

@@ -1,8 +1,8 @@
 ---
 title: Safety stock pegging options
 description: Learn how to specify how strictly the system should peg safety stock as demand against the planned order that's created for it.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 01/10/2024
 ms.custom: bap-template

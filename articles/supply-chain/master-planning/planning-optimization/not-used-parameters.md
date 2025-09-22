@@ -1,8 +1,8 @@
 ---
 title: Parameters not used by Planning Optimization
 description: Learn about the parameters that Planning Optimization doesn't currently consider during its operation with an outline on the master planning parameters page.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 03/08/2023
 ms.reviewer: kamaybac

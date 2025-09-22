@@ -4,6 +4,7 @@
 title: FAQ for Copilot in site builder
 description: This FAQ provides information about the AI technology that's used in Copilot in site builder for product enrichment, along with key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 01/22/2025
+ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
 ms.collection:

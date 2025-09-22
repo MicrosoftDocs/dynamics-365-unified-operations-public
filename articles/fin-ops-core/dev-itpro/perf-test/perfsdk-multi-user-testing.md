@@ -4,12 +4,12 @@ description: Learn about how to run multi-user testing by using Microsoft Visual
 author: kennysaelen
 ms.author: kesaelen
 ms.topic: how-to
-ms.date: 06/04/2020
+ms.date: 05/27/2025
 ms.reviewer: twheeloc
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
+ms.custom: sfi-image-nochange
 ---
 
 # Run multi-user testing by using the Performance SDK
@@ -19,8 +19,11 @@ ms.dyn365.ops.version: AX 10.0.0
 This article explains how to run multi-user testing by using Microsoft Visual Studio, the Performance software development kit (SDK), and the Task recorder test scripts.
 
 > [!IMPORTANT]
-> Visual Studio 2019 is the last version of Visual Studio that includes web performance and load testing features and will be deprecated in the future. We suggest using Apache JMeter for performance testing. For more information, see [JMeter](https://jmeter.apache.org/).
->
+> As of September 2024, the Perf SDK is no longer supported. This deprecation follows the end of support for Visual Studio 2019, which was the last version to include web performance and load testing features. 
+> + For more information, see [Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md#microsoft-will-no-longer-ship-or-support-the-visual-studio-extensions-for-finance-and-operations-apps-power-platform-tools-and-visual-studio-versions-prior-to-2022).
+> 
+> We suggest using Apache JMeter for performance testing. For more information, see [JMeter](https://jmeter.apache.org/).
+> 
 > JMeter is owned by Apache, and therefore isn't supported by Microsoft. However, the following series of blog posts provides some helpful tips for using JMeter with Dynamics 365 finance and operations apps.
 >
 > - [Part 1 - Dynamics 365 finance and operations apps performance testing with JMeter - Introduction](https://community.dynamics.com/blogs/post/?postid=587b9524-30c9-422c-a5f8-4e3726f749b8)

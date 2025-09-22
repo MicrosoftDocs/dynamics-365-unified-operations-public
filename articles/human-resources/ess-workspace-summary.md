@@ -3,8 +3,9 @@
 
 title: Employee self service leave summary
 description: This article provides an overview of the Employee self service leave summary feature.
-author: jcart
-ms.date: 01/17/2025
+author: twheeloc
+ms.date: 09/03/2025
+ms.update-cycle: 180-days
 ms.topic: overview
 ms.reviewer: twheeloc
 # optional metadata
@@ -18,16 +19,15 @@ ms.collection: bap-ai-copilot
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Employee self service leave summary
-The **Employee self service leave summary** feature is enabled by default in Dynamics 365 Human Resources version 10.0.39. 
 
-Use the **Employee self service leave summary** feature to get an AI-generated summary of employee time off. This feature is powered by Microsoft Azure OpenAI Service's large language model and is designed to reduce the time that you spend reviewing the different screens containing time off information and calculating time off that may be subject to forfeiture.
+The **Employee self service leave summary** feature provides an AI-generated summary of employee time off. This feature is powered by Microsoft Azure OpenAI Service's large language model and is designed to reduce the time that you spend reviewing the different screens containing time off information and calculating time off that may be subject to forfeiture.
 This feature has two purposes:
 
 - Increase employees' awareness of their time-off situation, and help them make informed decisions about their time-off plans.
@@ -38,11 +38,11 @@ For information about the languages that this Copilot feature was validated for,
 
 ### Version requirements
 
-Employee self service leave summary requires the latest PQU on Dynamics 365 Finance and Operations versions 10.0.39 and 10.0.40. 
+Employee self service leave summary requires the latest PQU on Dynamics 365 finance and operations versions 10.0.39 and 10.0.40. 
 
 ### Role requirements
 
-To use this feature, the user must be assigned an employee role in Dynamics 365 Human Resources or Dynamics 365 Finance.
+To use this feature, the user must be assigned an employee role in Dynamics 365 Human Resources.
 
 ## Summary by Copilot
 

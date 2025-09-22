@@ -3,10 +3,12 @@ title: Create a purchase order governed by budget
 description: Learn how to create a purchase order that is checked for available budget, including a process for reviewing the budget control configuration. 
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: how-to
-ms.date: 06/15/2020
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: 
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Create a purchase order governed by budget
@@ -17,7 +19,7 @@ Use this procedure to create a purchase order that is checked for available budg
 
 ## Review the budget control configuration
 
-1. Go to **Budgeting > Setup > Budget control > Budget control configuration**.
+1. Go to **Budgeting** \> **Setup** \> **Budget control** \> **Budget control configuration**.
 1. Select the **Budget funds available** tab.
 1. Select the **Documents and journals** tab.
 1. Select the **Define budget control rules** tab.
@@ -26,7 +28,7 @@ Use this procedure to create a purchase order that is checked for available budg
 
 ## Create a purchase order
 
-1. Go to **Procurement and sourcing > Purchase orders > All purchase orders**.
+1. Go to **Procurement and sourcing** \> **Purchase orders** \> **All purchase orders**.
 1. Select **New**.
 1. In the **Vendor account** field, enter or select a value.
 1. Expand the **General** FastTab.

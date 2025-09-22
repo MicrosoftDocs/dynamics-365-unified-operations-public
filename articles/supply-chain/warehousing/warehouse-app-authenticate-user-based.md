@@ -5,9 +5,11 @@ author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
 ms.date: 11/19/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 
 # User-based authentication for the Warehouse Management mobile app
@@ -64,17 +66,25 @@ The following procedure shows one way to register an application in Microsoft En
 1. In the **Manage** list, select **Authentication**.
 1. On the **Authentication** page for the new app, set the **Enable the following mobile and desktop flows** option to *Yes* to enable the device code flow for your application. Then select **Save**.
 1. Select **Add a platform**.
-1. In the **Configure platform** dialog box, select **Mobile and desktop applications**.
-1. In the **Configure Desktop \+ devices** dialog box, set the **Custom redirect URIs** field to the following value:
+1. In the **Configure platform** dialog, select **Mobile and desktop applications**.
+1. In the **Configure Desktop \+ devices** dialog, set the **Custom redirect URIs** field to one of the following values:
 
-    ``` text
-    ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333
-    ```
+    - If you're using version 3.0 or earlier of the Warehouse Management mobile app, set the field to the following value:
 
-1. Select **Configure** to save your settings and close the dialog boxes.
+        ``` text
+        ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333
+        ```
+
+    - If you're using version 4.0 or later of the Warehouse Management mobile app, set the field to the following value, where *{clientId}* is your Microsoft Entra client ID:
+
+        ``` text
+        ms-appx-web://microsoft.aad.brokerplugin/{clientId}
+        ```
+
+1. Select **Configure** to save your settings and close the dialogs.
 1. You return to the **Authentication** page, which now shows your new platform configuration. Select **Add a platform** again.
-1. In the **Configure platform** dialog box, select **Android**.
-1. In the **Configure your Android app** dialog box, set the following fields:
+1. In the **Configure platform** dialog, select **Android**.
+1. In the **Configure your Android app** dialog, set the following fields:
 
     - **Package name** – Enter the following value:
 
@@ -88,19 +98,19 @@ The following procedure shows one way to register an application in Microsoft En
         hpavxC1xAIAr5u39m1waWrUbsO8=
         ```
 
-1. Select **Configure** to save your settings and close the dialog box. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
+1. Select **Configure** to save your settings and close the dialog. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
 1. Select **Add a platform** again.
-1. In the **Configure platform** dialog box, select **iOS / macOS**.
-1. In the **Configure your iOS or macOS app** dialog box, set the **Bundle ID** field to the following value:
+1. In the **Configure platform** dialog, select **iOS / macOS**.
+1. In the **Configure your iOS or macOS app** dialog, set the **Bundle ID** field to the following value:
 
     ``` text
     com.microsoft.WarehouseManagement
     ```
 
-1. Select **Configure** to save your settings and close the dialog box. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
+1. Select **Configure** to save your settings and close the dialog. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
 1. In the **Manage** list, select **API permissions**.
 1. Select **Add a permission**.
-1. In the **Request API permissions** dialog box, on the **Microsoft APIs** tab, select the **Dynamics ERP** tile and then the **Delegated permissions** tile. Under **CustomService**, select the **CustomService.FullAccess** checkbox. Finally, select **Add permissions** to save your changes.
+1. In the **Request API permissions** dialog, on the **Microsoft APIs** tab, select the **Dynamics ERP** tile and then the **Delegated permissions** tile. Under **CustomService**, select the **CustomService.FullAccess** checkbox. Finally, select **Add permissions** to save your changes.
 1. On the left navigation pane, select **Microsoft Entra ID**.
 1. In the **Manage** list, select **Enterprise applications**. Then, in the new **Manage** list, select **All applications**.
 1. In the search form, enter the name that you entered for the app earlier in this procedure. Confirm that the **Application ID** value for the app that's found matches the client ID that you copied earlier. Then select the link in the **Name** column to open the properties for the app.
@@ -109,8 +119,8 @@ The following procedure shows one way to register an application in Microsoft En
 1. In the **Manage** list, select **Users and groups**.
 1. On the toolbar, select **Add user/group**.
 1. On the **Add Assignment** page, select the link under the **Users** heading.
-1. In the **Users** dialog box, select each user that you'll use to authenticate devices with Supply Chain Management.
-1. Select **Select** to apply your settings and close the dialog box. Then select **Assign** to apply your settings and close the **Add Assignment** page.
+1. In the **Users** dialog, select each user that you'll use to authenticate devices with Supply Chain Management.
+1. Select **Select** to apply your settings and close the dialog. Then select **Assign** to apply your settings and close the **Add Assignment** page.
 1. In the **Security** list, select **Permissions**.
 1. Select **Grant admin consent for \<*your tenant*\>**, and grant admin consent on behalf of your users. If you lack the necessary permissions, return to the **Manage** list, open **Properties**, and set the **Assignment required?** option to *False*. Each user can then provide consent individually.
 

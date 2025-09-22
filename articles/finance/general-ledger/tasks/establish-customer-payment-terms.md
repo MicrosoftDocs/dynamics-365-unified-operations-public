@@ -4,7 +4,7 @@ description: Learn how to establish customer payment terms and how they're conne
 author: aprilolson
 ms.author: aolson
 ms.topic: how-to
-ms.date: 02/06/2024
+ms.date: 09/05/2025
 ms.custom:
 ms.reviewer: twheeloc   
 audience: Application User  
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 Payment terms determine how you manage due dates and payment discounts. Dynamics 365 Finance includes payment methods that businesses often use. You can add any payment methods that your organization prefers.
 
-When you assign payment terms to customers, those terms will always be used on the sales and purchase documents you create for them. The document dates on sales and purchase documents are used to calculate due dates for payments.
+When you assign payment terms to customers, those terms are always used on the sales and purchase documents. The document dates on sales and purchase documents are used to calculate due dates for payments.
 
 > [!NOTE] 
 > If needed, you can change the terms on the sales or purchase document, such as if you want a particular customer to pay you within 7 days rather than the default 14 days.
@@ -31,9 +31,9 @@ Establishing payment terms includes three primary steps:
 2. Define your **Payment terms** calculates due dates for your customer's payments.
 3. Set up **Discount dates** to indicate the final date in which a customer can receive a discount for your products.
 
-When you post an invoice, Dynamics 365 Finance calculates the payment discounts and payment discount dates based on the payment terms.
+When you post an invoice, payment discounts and payment discount dates are calculated based on the payment terms.
 
-Similarly, when you post a credit memo, Dynamics 365 Finance calculates payment discounts based on the payment terms. It calculates the discount on credit memos in the same way as discounts on invoices. When you apply a credit memo to an invoice, Dynamics 365 Finance reduces the discount amount for the invoice by the credit memo's discount amount.
+Similarly, when you post a credit memo, payment discounts are calculated based on the payment terms. It calculates the discount on credit memos in the same way as discounts on invoices. When you apply a credit memo to an invoice, the discount amount for the invoice is reduced by the credit memo's discount amount.
 
 ## Payment day setup procedure
 

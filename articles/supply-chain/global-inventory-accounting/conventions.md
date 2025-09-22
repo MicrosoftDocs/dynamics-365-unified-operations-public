@@ -3,10 +3,12 @@ title: Conventions
 description: Learn how to set up conventions to establish how costs should be accounted in Global Inventory Accounting, including an outline on various fields.
 author: prasungoel
 ms.author: prasungoel
-ms.topic: article
-ms.date: 06/18/2021
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: CostConfigurationConvention
+ms.topic: how-to
+ms.date: 07/21/2025
+ms.custom:
+  - bap-template
 ---
 
 # Conventions
@@ -21,7 +23,6 @@ To set up your conventions, go to **Global inventory accounting \> Setup \> Conv
 - **Description** – Enter a description of the convention.
 - **Cost Object policy** – Select a cost object policy. These policies determine the level of granularity that the system applies to calculate and maintain the inventory value. The following predefined options are available:
 
-    - Product
     - Product – Site
     - Product – Site – Warehouse
 
@@ -31,7 +32,7 @@ To set up your conventions, go to **Global inventory accounting \> Setup \> Conv
 
     - **Normal historical** – All the cost components flow into the inventory account.
     - **Standard** – Standard cost flows into the inventory accounts, and the difference between the applied cost and the actual costs is charged to variance accounts. If you want to create a *Standard* input measurement basis policy, you must first create a price list where the policy can look up the item's standard cost.
-    - **Price lists** – Global Inventory Accounting supports fetching item prices from multiple legal entities. You can define a price list that the input measurement basis policy will use. In this way, the system will know where to look up the item price. Follow these steps to set up price lists:
+    - **Price lists** – Global Inventory Accounting supports fetching item prices from multiple legal entities. You can define a price list that the input measurement basis policy uses. In this way, the system knows where to look up the item price. Follow these steps to set up price lists:
 
         1. In the **Name** field, enter a name.
         1. In the **Description** field, enter a description.
@@ -48,7 +49,7 @@ To set up your conventions, go to **Global inventory accounting \> Setup \> Conv
     > [!NOTE]
     > Global Inventory Accounting is a perpetual inventory system. Therefore, the system tracks the inventory value on a transaction-by-transaction basis.
 
-- **Cost element policy** – You can define cost element policies and link them to this field. A *cost element* is the cost of a resource that is consumed by an event. You can use cost elements to track and categorize costs. To create cost element policies, enter information in the following places:
+- **Cost element policy** – You can define cost element policies and link them to this field. A *cost element* is the cost of a resource consumed by an event. You can use cost elements to track and categorize costs. To create cost element policies, enter information in the following places:
 
     - **Name** field
     - **Description** field

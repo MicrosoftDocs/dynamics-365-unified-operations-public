@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: BOMDesignerEditBOM, BOMTable, ProdBOM
 ms.topic: how-to
-ms.date: 06/28/2024
+ms.date: 08/13/2025
 ms.custom: 
   - bap-template
 ---

@@ -3,10 +3,12 @@ title: Customize the production floor execution interface
 description: Learn how to extend current forms or create new forms and buttons for the production floor execution interface with a process for adding new buttons.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: how-to
-ms.date: 05/04/2022
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Customize the production floor execution interface
@@ -41,7 +43,7 @@ When you've finished, the new button (action) will automatically be listed on th
 
 ## Add a new main view
 
-1. Create a new form that has the desired elements and functionality. Note that this form is a new form, not an extension. Name the form `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>`, where:
+1. Create a new form that has the desired elements and functionality. This is a new form, not an extension. Name the form `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>`, where:
 
     - `<ExtensionPrefix>` uniquely identifies your solution, typically by using your company name.
     - `<FormName>` is a unique name for the form.
@@ -64,7 +66,7 @@ When you've finished, the new main view will automatically be listed in the **Ma
 
 ## Add a details view
 
-1. Create a new form that has the desired elements and functionality. Note that this form is new, not an extension. Name the form `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>Detail`, where: 
+1. Create a new form that has the desired elements and functionality. This is a new form, not an extension. Name the form `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>Detail`, where:
 
     - `<ExtensionPrefix>` uniquely identifies your solution, typically by using your company name.
     - `<FormName>` is a unique name for the form.

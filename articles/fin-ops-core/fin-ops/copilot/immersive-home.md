@@ -1,11 +1,12 @@
 ---
-title: Immersive Home overview (preview)
-description: Learn about Immersive Home, how it helps you work hand-in-hand with AI agents, and how it helps you stay focused on the most important work items assigned to you.
+title: Immersive Home overview (production ready preview)
+description: Learn about Immersive Home, how it helps you work hand-in-hand with AI agents and stay focused on your most important work items.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
 ms.topic: overview
-ms.date: 04/25/2025
+ms.date: 05/28/2025
+ms.update-cycle: 180-days
 audience: Application User
 ms.search.region: Global
 ms.search.form: ImmersiveHome, DefaultDashboard, SysUserSetup, AppCopilotAgentActivity, AppCopilotAgentLifecycle
@@ -14,13 +15,13 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Immersive Home overview (preview)
+# Immersive Home overview (production ready preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article describes Immersive Home, how it helps you work hand in hand with AI agents and focus on the most important work items assigned to you.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+[!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 Immersive Home is a modern, AI-first landing page that adapts to your most important work, aids decision making, and reduces the need to navigate elsewhere to complete common tasks. It's a modern option for the [initial page](../get-started/set-users-initial-page.md) in finance and operations apps and links to tools for enabling, monitoring, teaching, and interacting with AI agents.
 
@@ -30,8 +31,8 @@ Immersive Home is a modern, AI-first landing page that adapts to your most impor
 
 To use Immersive Home, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Immersive Home* must be turned on in [feature management](../get-started/feature-management/feature-management-overview.md).
+- You must be running version 10.0.44 or later of your Microsoft finance and operations apps.
+- The feature that is named *(production ready preview) Immersive Home* must be turned on in [feature management](../get-started/feature-management/feature-management-overview.md).
 
 ## The components of Immersive Home
 
@@ -53,13 +54,13 @@ Each suggestion typically provides an action that guides you to follow the sugge
 
 The **Work items** area hosts a list of priority-ranked activity cards. Each card reflects a step that is part of an action plan to complete a task. Multiple similar work items can be collapsed into one activity card, allowing you to move the action plan forward for multiple tasks of the same kind. Examples include expense approvals, catalog requests that need approval, cash forward requests awaiting approval, and other workflow-generated work items.
 
-Other examples include activities from agent-generated action plans, such as when an agent has prepared a reminder email for a vendor (asking them to confirm purchase orders) that you need to review it before sending. The **Work items** area might also announce that an agent identified a vendor email that references a purchase order, and has prepared a resulting confirmation or change request ready for your review.
+Other examples include activities from agent-generated action plans, such as when an agent prepares a reminder email for a vendor (asking them to confirm purchase orders) that you need to review it before sending. The **Work items** area might also announce that an agent identified a vendor email that references a purchase order, and prepares a resulting confirmation or change request ready for your review.
 
 In most cases, the activity card allows you to complete an action without navigating away from Immersive Home. To achieve this, action cards show relevant information that allows you to take action, which you can expand as needed. Alternatively, you can navigate to the activity-specific experience for more complex tasks.  
 
 If you have activities that you need to work on for some time and track until completion, you can add them to the **Pinned items** list.
 
-Once you've completed an activity, it disappears from Immersive Home.
+Once you complete an activity, it disappears from Immersive Home.
 
 Activity cards show:
 
@@ -69,7 +70,7 @@ Activity cards show:
 - A navigation link to the activity-related task or workspace
 
 > [!NOTE]
-> Activity cards include a feedback mechanism. You can use it to share feedback about your experience using Immersive Home directly with Microsoft (provided an administrator has enabled user feedback for Copilot and related experiences). 
+> Activity cards include a feedback mechanism. You can use it to share feedback about your experience using Immersive Home directly with Microsoft (provided an administrator enables user feedback for Copilot and related experiences). 
 >
 > Learn more about how the Microsoft in-product feedback system works in [Learn about Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control).
 >
@@ -87,8 +88,8 @@ At the bottom of the **Agent activity** area, you can navigate to agent lifecycl
 
 The **Workspaces** area shows a list of ranked tiles for each workspace. The ranking considers how recently you last used a workspace. Favorite workspaces rank at the top.  
 
-Workspace tiles highlight information that you have pinned to the dashboard. To pin information to the dashboard, open the relevant workspace, right-click on a tile in the workspace, select **Personalize: &lt;tile name&gt;** and then select the **Pin to dashboard** checkbox (clear this checkbox to remove the information from your Immersive Home).
+Workspace tiles highlight information that you pin to the dashboard. To pin information to the dashboard, open the relevant workspace, right-click on a tile in the workspace, select **Personalize: &lt;tile name&gt;** and then select the **Pin to dashboard** checkbox (clear this checkbox to remove the information from your Immersive Home).
 
 ## Related information
 
-[Responsible AI FAQ for Immersive Home in finance and operations apps (preview)](faq-immersive-home.md)
+[Responsible AI FAQ for Immersive Home in finance and operations apps (production ready preview)](faq-immersive-home.md)

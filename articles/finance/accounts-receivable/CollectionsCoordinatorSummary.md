@@ -5,6 +5,7 @@ author: JodiChristiansen
 ms.author: jchrist
 ms.topic: article
 ms.date: 01/21/2025
+ms.update-cycle: 180-days
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
 audience: Application User

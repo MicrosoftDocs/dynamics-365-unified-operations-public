@@ -1,8 +1,8 @@
 ---
 title: Visual and collaborative execution
 description: Learn how to monitor your Demand Driven Material Requirements Planning (DDMRP) decoupling points, buffer zones, planned orders, and history.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 06/30/2022
 ms.reviewer: kamaybac

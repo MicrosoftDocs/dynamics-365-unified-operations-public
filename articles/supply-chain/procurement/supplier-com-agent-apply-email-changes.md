@@ -1,6 +1,6 @@
 ---
 title: Review and apply purchase order changes received in vendor emails (production ready preview)
-description: Discover how Copilot automates vendor email analysis, identifies purchase order changes, and helps you apply updates.
+description: Learn how Copilot automates vendor email analysis, identifies purchase order changes, and helps you apply updates.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -20,65 +20,82 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-The supplier communications agent helps speed up communications with vendors about purchase orders by allowing Copilot to read emails from some or all vendors.
+The Supplier Communications Agent helps speed up communications with vendors about purchase orders by enabling Copilot to read emails from some or all vendors.
 
-When Copilot analyzes a vendor email, it's able to understand what the message is about (confirmation, change request, or other) and which purchase order it refers to. Copilot then matches the information extracted from the email to the fields in the system and indicates any changes. Then, you just need to review the information provided by Copilot, review the proposed changes, and decide whether to accept them. Copilot saves you the time otherwise needed to manually find, open, and edit the purchase order in the system.
+When Copilot analyzes a vendor email, it can determine what the message is about (for example, whether it's a purchase order confirmation or a purchase order change request) and which purchase order it applies to. Copilot then matches the information that it extracts from the email to fields in the system and indicates whether there are any changes. Therefore, you just have to review the information that Copilot provides, review the proposed changes, and decide whether to accept those changes. In this way, Copilot saves you time, because you don't have to manually find, open, and edit the purchase order in the system.
 
-When Copilot reads a vendor email, it classifies the intent of the message into one of the following categories:
+Copilot classifies each vendor email that it reads into one of the following categories, based on the intent that it detects in the message:
 
-- *Purchase order confirmation* – Copilot detected that the purpose of the messages was to confirm one or more purchase orders (including all the purchase orders mentioned in the email).
-- *Purchase order change request* – Copilot detected that the message contains at least one requested change to a purchase order. For example, the vendor is writing to tell you that they can't deliver the full quantity requested for one or more lines, can't deliver on time, or to reject the entire order.
+- *Purchase order confirmation* – Copilot detected that the intent of the message is to confirm one or more purchase orders (all the purchase orders that are mentioned in the email).
+- *Purchase order change request* – Copilot detected that the message contains at least one requested change to a purchase order. For example, the vendor wrote to tell you that they can't deliver the full quantity that was requested for one or more lines, to tell you that they can't deliver on time, or to reject the entire order.
 - *Rejected* – Copilot detected that the vendor can't supply the requested purchase order.
-- *Other* – Copilot couldn't identify each of the previous intents.
+- *Other* – Copilot couldn't identify any of the previous intents.
 
-For the first two cases of intent, Copilot identifies which purchase orders the email relates to and matches the information in the email to information in the system.
-
-When you're reviewing incoming changes based on email, the system shows the original email, the current information in the system, plus the specific changes being proposed, which makes it easy to understand each change. After you've reviewed the proposal and made any corrections, the system lets you apply the changes directly to the relevant purchase order.
-
-## Configure Supplier communications agent to track your email
+For the first two categories, Copilot identifies which purchase orders the email is related to and matches the information in the email to information in the system.
 
 > [!IMPORTANT]
-> Complete the steps listed in [Set up and configure the Supplier Communications Agent](./supplier-com-agent-setup.md) first.
+> The agent is able to read incoming PDF attachments but not Microsoft Word or Excel documents.
 
-The agent needs to be configured to monitor a specific email address for incoming messages from vendors. Follow these steps to set it up:
+When you review incoming changes that are based on an email, the system shows the original email, the current information in the system, and the specific changes that are being proposed. Therefore, you can more easily understand each change. After you finish reviewing the proposal and making any corrections that are required, you can apply the changes directly to the relevant purchase order.
 
-1. Sign in to the Dynamics 365 Supply Chain Management environment as a user with [permissions to manage agent configuration](./supplier-com-agent-setup.md#permissions-for-users-managing-agent-configuration).
-1. Go to **Agents** module, and **Agents (Preview)** page.
-1. Select the **Library** tab.
-1. Click **Select** on the **Speed up updates in purchase orders with Supplier communications agent**. The **Agent configuration** window opens.
-1. Click **Any vendor** drop-down to select the vendors whose emails the agent should ananlyze. Select **Any vendor** to track all vendors, or **Ppecific vendors** to provide a list of vendors to track.
-1. Select the mailbox that the agent should monitor. You should see all mailboxes that the user has access to in the drop down. For more information, see [Synchronize mailboxes with Dataverse](./supplier-com-agent-setup.md#synchronize-mailboxes-with-dataverse) if the mailbox you are looking for isn't in the list.
-1. Click **Activate**.
+## Configure the agent to track your email
 
-    > [!TIP]
-    > The **Enable email access** warning message is informational and doesn't prevent you from activating the agent.
+The Supplier Communications Agent must be configured to monitor a specific email address for incoming messages from vendors. Follow these steps to complete the configuration.
+
+> [!IMPORTANT]
+> Before you begin, complete the steps in [Set up and configure the Supplier Communications Agent](./supplier-com-agent-setup.md). If you want to send/forward email communications from your own email address for testing, then you must also [set up your email address as a vendor contact](supplier-com-agent-setup.md#own-email).
+
+1. Sign in to the Microsoft Dynamics 365 Supply Chain Management environment as a user who has [permissions to manage the agent configuration](./supplier-com-agent-setup.md#permissions-for-users-who-manage-the-agent-configuration).
+1. Go to **Agents** \> **Agents (Preview)**.
+1. On the **Library** tab, for **Speed up updates in purchase orders with Supplier communications agent**, select **Select**.
+1. On the **Agent configuration** page, use the dropdown menu to specify which vendors the agent should analyze emails for. Select **Any vendor** to track all vendors or **Specific vendors** to track a list of specific vendors that you provide.
+1. Select the mailbox that the agent should monitor. The dropdown menu should show all mailboxes that the sign-in user has access to. If the mailbox that you're looking for isn't in the list, follow the steps in [Synchronize mailboxes with Dataverse](./supplier-com-agent-setup.md#synchronize-mailboxes-with-dataverse).
+1. Select **Activate**.
 
 ## Review and accept changes suggested by the agent
 
-> [!IMPORTANT]
-> Confirm the user has access to the mailboxes. For more information, see [Synchronize mailboxes with Dataverse](./supplier-com-agent-setup.md#synchronize-mailboxes-with-dataverse).
+The agent detects changes in the following fields:
 
-1. Go to the **Purchase order receipt and follow-up** workspace. A **(Preview) Purchase order updates** tile indicates the number of emails that require review. Select the tile to open the **(Preview) Purchase order updates** page.
-1. The left side of the page lists all of the emails read by the agent. The right side shows summaries generated by Copilot.
-1. Do one of the following steps.
-    - To apply all the changes the vendor suggested, select **Apply all suggestions**. This includes all purchase orders mentioned in the message.
-    - To apply all suggestions to a single selected purchase header and all of its lines, select **Apply suggestions** in the **Purchase order header** section.
-    - To apply suggestions to specific purchase order lines, selecting the relevant lines and then select **Apply suggestions** in the **Purchaser order lines** section.
+- Quantity
+- Unit of measure
+- Price
+- Confirmation
+- Delivery date
+- Cancellation
+
+To review and accept changes that the agent suggests based on the emails that it has read, follow these steps.
+
+> [!IMPORTANT]
+> Before you begin, confirm that the signed-in user has access to the mailboxes. Learn more in [Synchronize mailboxes with Dataverse](./supplier-com-agent-setup.md#synchronize-mailboxes-with-dataverse).
+
+1. Open the **Purchase order receipt and follow-up** workspace.
+1. A **(Preview) Purchase order updates** tile indicates the number of emails that require review. Select the tile.
+
+    The left side of the **(Preview) Purchase order updates** page lists all the emails that the agent read. The right side shows summaries that Copilot generated.
+
+1. Follow one of these steps:
+
+    - To apply all the changes that the agent suggested, select **Apply all suggestions**. This action affects all purchase orders that are mentioned in the message.
+    - To apply all suggestions to a single selected purchase header and all its lines, select **Apply suggestions** in the **Purchase order header** section.
+    - To apply suggestions to specific purchase order lines, select the relevant lines, and then select **Apply suggestions** in the **Purchaser order lines** section.
 
 ## Teach the agent to better interpret incoming email content
 
-Sometimes, a vendor might use acronyms or other language that isn't saved in the system, so the agent might not know how to interpret it. You can teach the agent how to better interpret incoming email content, which will improve its accuracy for next time.
+If a vendor uses acronyms or other language that isn't saved in the system, the Supplier Communications Agent can't interpret it. However, you can teach the agent to better interpret incoming email content. In this way, you help improve its accuracy.
 
 ### Teach the agent about column mappings
 
-You might see, at the top of the Copilot summary, that the agent shows **Review column mappings**. This could be because the vendor attached a PDF document that contains several columns that could map to a single field in the system or it could be that the message or attachment uses an acronym that the agent doesn't know how to interpret.
+A **Review column mappings** button might appear at the top of the Copilot summary for several reasons:
 
-To resolve the ambiguous information, select **Review column mappings** and clarify the mapping. You can then choose to save the mapping for all vendors, for this vendor, or not at all.
+- The vendor attached a PDF document to the message, and several columns in that PDF can be mapped to a single field in the system.
+- The message or attachment uses an acronym that the agent can't interpret.
 
-If you decide to save a mapping for all vendors or for this vendor, you can always go to **Taught items** to see everything that has been taught, and where you can delete entries if needed.
+To fix the issue, select **Review column mappings**, and clarify the mapping. You can then save the mapping for all vendors, for the current vendor, or not at all.
+
+If you save a mapping for all vendors or the current vendor, you can always go to **Taught items** to view everything that the agent has been taught. You can also learn where to go to delete entries as required.
 
 ### Teach the agent about value equivalences
 
-A vendor might use synonyms or industry equivalences that aren't saved on your system. You can train the agent to recognize these equivalences.
+A vendor might use synonyms or industry equivalences that aren't saved in your system. You can train the agent to recognize these equivalences.
 
-For example, you might use a unit of measure called *cartons*, while a given vendor always calls these *cassettes*. When the agent detects this as a change, you can clarify it for the given line, which causes the teaching panel to pop up, where you can choose if you want to save it for all vendors, this vendor, or not at all.
+For example, you use a unit of measure that is named *cartons*, but one of your vendors always uses the name *cassettes* for the same unit. When the agent detects the different name as a change, you can clarify the equivalence for the appropriate line. In this case, the teaching pane appears. You can then save the equivalence for all vendors, for the current vendor, or not at all.

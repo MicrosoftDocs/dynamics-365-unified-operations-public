@@ -3,11 +3,12 @@ title: Warehouse handling of inbound loads for purchase and inbound shipment ord
 description: Learn about the warehouse handling process for inbound loads for purchase and inbound shipment orders, including a step-by-step process.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: how-to
-ms.date: 08/30/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem, WHSParameters, WHSInboundLoadPlanningWorkbench, WHSInboundShipmentOrder, WHSInboundLoadPlanningWorkbench
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Warehouse handling of inbound loads for purchase and inbound shipment orders
@@ -89,17 +90,14 @@ The following table explains the options that are available for the **Load over 
 | Value | Description |
 |---|---|
 | Allow | Workers can register the receipt of quantities that exceed the remaining unregistered quantity for a selected load, but only if the total registered quantity doesn't exceed the quantity of the order line that is associated with the load (after adjustment for the overdelivery percentage). |
-| Block | <p>Workers can't register the receipt of quantities that exceed the remaining unregistered quantity for a selected load (after adjustment for the overdelivery percentage). A worker who tries to do register the receipts will receive an error and won't be able to continue until they register a quantity that is equal to or less than the remaining unregistered load quantity.</p><p>By default, the value of the overdelivery percentage on a load line is copied from the associated purchase order line. When the <b>Load over receipt</b> field is set to <i>Block</i>, the system uses the overdelivery percentage value to calculate the total quantity that can be registered for a load line. However, that value can be overwritten for individual loads as required. This behavior becomes relevant during receiving flows where some or all of the excess quantity that represents the order line overdelivery percentage is distributed disproportionally across multiple loads. Here is an example scenario:</p><ul><li>There are multiple loads for one purchase order line.</li><li>The purchase order line has an overdelivery percentage that is more than 0 (zero).</li><li>Quantities have already been registered against one or more loads without taking the overdelivery percentage into account.</li><li>The overdelivery quantity arrives on the last load.</li></ul><p>In this scenario, a mobile device can be used to register the excess quantity for the last load only if the warehouse supervisor increases the overdelivery percentage for the relevant load line from the default value to a value that is large enough so that the full overdelivery can be registered with the final load.</p> |
+| Block | <p>Workers can't register the receipt of quantities that exceed the remaining unregistered quantity for a selected load (after adjustment for the overdelivery percentage). A worker who tries to do register the receipts will receive an error and won't be able to continue until they register a quantity that is equal to or less than the remaining unregistered load quantity.</p><p>By default, the value of the overdelivery percentage on a load line is copied from the associated purchase order line. When the <b>Load over receipt</b> field is set to <i>Block</i>, the system uses the overdelivery percentage value to calculate the total quantity that can be registered for a load line. However, that value can be overwritten for individual loads as required. This behavior becomes relevant during receiving flows where some or all of the excess quantity that represents the order line overdelivery percentage is distributed disproportionately across multiple loads. Here's an example scenario:</p><ul><li>There are multiple loads for one purchase order line.</li><li>The purchase order line has an overdelivery percentage that is more than 0 (zero).</li><li>Quantities have already been registered against one or more loads without taking the overdelivery percentage into account.</li><li>The overdelivery quantity arrives on the last load.</li></ul><p>In this scenario, a mobile device can be used to register the excess quantity for the last load only if the warehouse supervisor increases the overdelivery percentage for the relevant load line from the default value to a value that is large enough so that the full overdelivery can be registered with the final load.</p> |
 | Block for closed loads only | Workers can over-receive load line quantities for open loads, but not for loads that have a status of *Received*. |
-
-> [!NOTE]
-> The default value of the **Load over receipt** field is *Allow*. When this value is used, the behavior matches the standard behavior that was available before the *Over receipt of load quantities* feature was introduced in version 10.0.11.
 
 ### Put away the registered quantities
 
 When registration is completed on the mobile device, the *Quantity receipt registration* action updates the inventory and warehouse records to indicate that the quantities are now in the receiving dock location and available for reservation. However, a company's warehouse operations typically require that the quantities be moved from the receiving dock to the regular warehouse storage, so that the subsequent picking processes can occur. Instructions for the putaway are captured in the putaway work that is automatically generated when the inbound load is registered as received.
 
-When the warehouse worker has completed the putaway work, the system records and tracks the result by updating updates several entities, as summarized in the following table.
+When the warehouse worker has completed the putaway work, the system records and tracks the result by updating several entities, as summarized in the following table.
 
 | Entity | Updates | Note |
 |--------|---------|------|
@@ -124,7 +122,7 @@ To open a page where they can post a product receipt, members of the operations 
 
 The **Product receipt** action that is available on the **Load** page (and on the equivalent page for the update job, the **Update product receipts** page) can update product receipt quantities only on purchase order quantities that have a status of *Registered*. However, the **Product receipt** action that is available on the **Purchase order** page can include quantities in both processing statuses (*Ordered* and *Registered*). It can also control the scope of product receipt posting through additional parameters, such as *Receive now quantity* and *Registered quantity and services*.
 
-Only orders that have a status of *Confirmed* can be product receipt–posted. For non-confirmed purchase orders, the **Product receipt** action will appear as unavailable.
+Only orders that have a status of *Confirmed* can be product receipt–posted. For unconfirmed purchase orders, the **Product receipt** action will appear as unavailable.
 
 ### Post registered quantities from the Load page
 
@@ -160,7 +158,7 @@ When the user selects **OK** to confirm product receipt posting, the system does
 
 The **Allow multiple product receipt per load** field lets companies choose an inbound load receiving policy. Depending on their operational flows, companies might choose to allow or disallow multiple product receipt postings for the same load. We recommend that the logistics manager set the **Allow multiple product receipt per load** field to one of the following values:
 
-- **No** – Select this value if warehouse receiving clerks always register all order quantities that arrive with each load within a designated time frame. If any load quantities aren't registered, the system assumes that they didn't arrive or were not on the load, and therefore should not be considered part of the load. The product receipt posting that is run from a load uses the same assumption. In addition to product receipt–updating all the registered quantities (its main function), it declares the load complete and closed for additional processing. In this case, all load line quantities are automatically updated to the registered quantities, load lines that have no registered quantities are deleted, and the load status is changed to *Received*.
+- **No** – Select this value if warehouse receiving clerks always register all order quantities that arrive with each load within a designated time frame. If any load quantities aren't registered, the system assumes that they didn't arrive or weren't on the load, and therefore shouldn't be considered part of the load. The product receipt posting that is run from a load uses the same assumption. In addition to product receipt–updating all the registered quantities (its main function), it declares the load complete and closed for additional processing. In this case, all load line quantities are automatically updated to the registered quantities, load lines that have no registered quantities are deleted, and the load status is changed to *Received*.
 - **Yes** – Select this value if warehouse receiving clerks require more time to register all the quantities on the load that arrived, but, in the meantime, you must product receipt–post the quantities that have already been registered. In this case, the logistics manager will want to keep a load open even after the product receipt posting job is run, so that remaining load quantities can be registered and product receipt–updated to the ledger on an ongoing basis.
 - **Prompt** – Select this value if your load receiving practices are mixed, and a decision is required each time that product receipt posting is run.
 
@@ -173,10 +171,7 @@ The following table summarizes the effects of the **Allow multiple product recei
 | Yes | No updates | *Received*, if the total registered load quantity is equal to or more than the load quantity | |
 | Yes | No updates | *Shipped* or *In process*, if the total registered load quantity is less than the load quantity | |
 
-After the **Load status** field is set to *Received*, no more product receipt postings can be done for that load. However, the worker can register the remaining order quantity against the received load under the following conditions. (Learn more in the [Load over-receiving](#load-over-receiving) section earlier in this article.)
-
-- The version of Supply Chain Management is older than version 10.0.11.
-- The *Over receipt of load quantities* feature is turned on, and the **Load line quantity over receipt** field on the mobile device menu item for the load item receiving action is set to *Allow*. (As of Supply Chain Management version 10.0.32, the *Over receipt of load quantities* feature is turned on by default. As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.)
+After the **Load status** field is set to *Received*, no more product receipt postings can be done for that load. However, the worker can register the remaining order quantity against the received load provided the **Load line quantity over receipt** field on the mobile device menu item for the load item receiving action is set to *Allow*. (Learn more in the [Load over-receiving](#load-over-receiving) section earlier in this article.)
 
 To product receipt–post additional registered load quantities against a load that has a status of *Received*, the user must run the posting action from the associated purchase order.
 
@@ -202,7 +197,7 @@ The following table summarizes the effects of the **Allow multiple product recei
 | Allow multiple product receipts per load | Load quantity | Load status | Note |
 |---|---|---|---|
 | When this field is either disabled or unavailable (in versions before 10.0.10) | No updates | No updates are done. (The status remains *Open*, *Shipped*, or *In process*.) | Because the product receipt posting is initiated from a purchase order, the updating logic doesn't have information about the association between the registered quantities within its scope and the loads that the registration was recorded against. Therefore, it can't select the load for the status update. |
-| Enabled | No updates | <p>One of the following actions occurs:</p><ul><li>The status is changed to <i>Received</i> if the total received and purchased quantities of the purchase order inventory transactions are more than or equal to the quantity of the load that they are associated with.</li><li>The status remains <i>Open</i>, <i>Shipped</i>, or <i>In process</i> if the previous condition isn't met for all the lines in the load.</li></ul> | |
+| Enabled | No updates | <p>One of the following actions occurs:</p><ul><li>The status is changed to <i>Received</i> if the total received and purchased quantities of the purchase order inventory transactions are more than or equal to the quantity of the load that they're associated with.</li><li>The status remains <i>Open</i>, <i>Shipped</i>, or <i>In process</i> if the previous condition isn't met for all the lines in the load.</li></ul> | |
 
 ### Select the appropriate product receipt posting option for your logistics operations
 
@@ -241,7 +236,7 @@ To work through these scenarios by using the specified sample records and values
 
 Before warehouse receiving clerks can use a mobile device to register inbound inventory that is linked to a load, you must create a mobile device menu item for that purpose.
 
-In this section, you will create a mobile device menu item and add it to an existing menu. A warehouse worker can then select the menu item in the Warehouse Management mobile app.
+In this section, you'll create a mobile device menu item and add it to an existing menu. A warehouse worker can then select the menu item in the Warehouse Management mobile app.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**, and make sure that your mobile device menu includes a menu item that has the following settings:
 
@@ -263,7 +258,7 @@ This scenario shows how to register quantities for an inbound load where not all
 
 #### Create a load to plan receipt of a purchase order
 
-In this procedure, you will manually create a purchase order and an associated load. You will then update the load to simulate that it has been shipped from the vendor (which updates the load status). Warehouse planners can then filter loads by **Load status** to find expected incoming loads.
+In this procedure, you'll manually create a purchase order and an associated load. You'll then update the load to simulate that it has been shipped from the vendor (which updates the load status). Warehouse planners can then filter loads by **Load status** to find expected incoming loads.
 
 1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
 1. Select **New**.
@@ -284,7 +279,7 @@ In this procedure, you will manually create a purchase order and an associated l
 1. Review the load header and line details, and notice the following points:
 
     - On the **Load** FastTab, the **Load status** field is set to *Open*.
-    - In the **Load lines** section, there is a single line where the **Quantity** field is set to *10* and the **Work created quantity** field is set to *0* (zero).
+    - In the **Load lines** section, there's a single line where the **Quantity** field is set to *10* and the **Work created quantity** field is set to *0* (zero).
 
     ![Load details.](media/inbound-load-details.png "Load details")
 
@@ -305,7 +300,7 @@ When the load arrives at the warehouse receiving dock, a receiving clerk registe
 
 1. Continue to go through the workflow, leaving all other fields blank or set to their default values, until your device informs you that the work is completed.
 
-The load receiving task is now completed, and the receiving clerk can move on to their next task. However, warehouse receiving personnel will eventually review the load record and will be able to see that the received quantity was less than the expected quantity. They will then complete the following procedure by using the web client.
+The load receiving task is now completed, and the receiving clerk can move on to their next task. However, warehouse receiving personnel will eventually review the load record and will be able to see that the received quantity was less than the expected quantity. They'll then complete the following procedure by using the web client.
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. In the list, find the load that you just received. (You might have to select the **Show closed** check box to include the inbound loads that have a load status of *Shipped*.) Then select the link in the **Load ID** column to open the load.
@@ -321,7 +316,7 @@ The load receiving task is now completed, and the receiving clerk can move on to
 
 #### Product receipt–post the registered load quantities against purchase orders
 
-In this procedure, you will product receipt–post the inventory that you registered for a load. As a result, the received inventory and its related costs will be added to the company's general ledger.
+In this procedure, you'll product receipt–post the inventory that you registered for a load. As a result, the received inventory and its related costs will be added to the company's general ledger.
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. In the list, find the load that you received. (You might have to select the **Show closed** check box to include the inbound loads that have a load status of *Shipped*.) Then select the link in the **Load ID** column to open the load.
@@ -336,15 +331,11 @@ In this procedure, you will product receipt–post the inventory that you regist
 1. You're returned to the load details. Notice the following points:
 
     - The **Load status** field is now set to *Received*.
-    - On the load line, the **Quantity** value for the load has changed from *10* to *9* pcs to match the registered quantity, but the **Work created quantity** value remains *9*.
+    - On the load line, the **Quantity** value for the load has changed from *10* pcs to *9* pcs to match the registered quantity, but the **Work created quantity** value remains *9*.
 
 If the purchasing team doesn't expect the vendor to deliver the remaining order quantity of 1, it can close the order by updating the line's delivery remainder to *0*. However, if it's soon found that the missing piece arrived on the original load, warehouse personnel can perform one of the following actions:
 
-- Register the quantity against the same load. In this case, the **Load status** field will be reset to *Shipped*, and the **Work created quantity** value will be updated to *10*. This choice is available only in the following situations:
-
-    - The *Over receipt of load quantities* feature isn't available or isn't enabled. (As of Supply Chain Management version 10.0.32, the *Over receipt of load quantities* feature is turned on by default. As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.)
-    - The *Over receipt of load quantities* feature is available and enabled, and the **Load line quantity over receipt** field is set to *Allow*. (As of Supply Chain Management version 10.0.32, the *Over receipt of load quantities* feature is turned on by default. As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.)
-
+- Register the quantity against the same load. In this case, the **Load status** field will be reset to *Shipped*, and the **Work created quantity** value will be updated to *10*. This choice is only available when the **Load line quantity over receipt** field is set to *Allow*.
 - Add the quantity to a new or existing load, and process it in the usual way.
 - Register and/or receive the quantity in a way that doesn't involve load handling.
 
@@ -352,18 +343,18 @@ If the purchasing team doesn't expect the vendor to deliver the remaining order 
 
 In this scenario, an inbound shipment that is related to a single purchase order line will be split into two loads. For example, a purchase order line might be split into multiple loads because of physical load constraints on weight and/or volume.
 
-This scenario also shows how to process multiple product receipt postings for the same load. You will register quantities that arrive on multiple inbound loads, but the quantities won't match the expected quantities. The cost updates that occur via the product receipt posting will be done multiple times for the same load.
+This scenario also shows how to process multiple product receipt postings for the same load. You'll register quantities that arrive on multiple inbound loads, but the quantities won't match the expected quantities. The cost updates that occur via the product receipt posting will be done multiple times for the same load.
 
 #### Set up load receiving policies
 
-In this procedure, you will enable multiple product receipt postings from the same load.
+In this procedure, you'll enable multiple product receipt postings from the same load.
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
 1. On the **Loads** tab, set the **Allow multiple product receipt per load** field to *Yes*.
 
 #### Create two loads to plan receipt of a purchase order
 
-In this procedure, you will create a purchase order and two loads. You will then manually update each load to simulate that it has been shipped by the vendor (which updates the load status). Warehouse planners can then filter loads by **Load status** to find expected incoming loads.
+In this procedure, you'll create a purchase order and two loads. You'll then manually update each load to simulate that it has been shipped by the vendor (which updates the load status). Warehouse planners can then filter loads by **Load status** to find expected incoming loads.
 
 You will also learn how to set the purchase order line so that you can receive a quantity that is 20 percent more than the quantity that is specified for the line.
 
@@ -404,7 +395,7 @@ This procedure shows how a receiving clerk will register load quantities on a mo
 
     - **Load** – Enter the first load ID that you created in the previous procedure.
     - **Item** – Enter *A0001*, which is the item that is expected for this load.
-    - **Qty** – Enter *3*. Note that this quantity is less than the expected quantity. For this scenario, imagine that you, as the receiving clerk, don't have time to register all quantities for this load. Later in this procedure, you will register the remaining pieces by repeating this step and setting the **Qty** field to *2*.
+    - **Qty** – Enter *3*. Note that this quantity is less than the expected quantity. For this scenario, imagine that you, as the receiving clerk, don't have time to register all quantities for this load. Later in this procedure, you'll register the remaining pieces by repeating this step and setting the **Qty** field to *2*.
 
 1. Continue to go through the workflow, leaving all other fields blank or set to their default values, until your device informs you that the work is completed.
 1. In the web client, go to **Warehouse management \> Loads \> All loads**.
@@ -433,6 +424,5 @@ For this scenario, the receiving clerk will inbound-register a quantity that exc
     - **Qty** – Enter *7*, which is the remaining quantity that the vendor is authorized to deliver as part of total purchase order quantity of 12 (where 10 is the original order quantity, and 2 is the allowed overdelivery quantity of 20 percent). Remember that 5 pcs have already been registered against the first load.
 
 The second load has now been updated with the quantity of 7 and can be product receipt–updated based on this quantity.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

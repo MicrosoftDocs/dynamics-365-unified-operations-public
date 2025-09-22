@@ -1,10 +1,10 @@
 ---
 title: Public sector accounting in France
 description: Learn about public sector accounting in France, including prerequisites and outlines on French public sector topics and vendor invoice payment holds.
-author: brpotter
-ms.author: brpotter
+author: music727
+ms.author: mibeinar
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 06/03/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: France
@@ -40,6 +40,8 @@ Additional setup steps for specific features are covered in the article for each
     -   To meet public sector regulatory requirements in France, set spending thresholds for purchases in the procurement categories that are defined by the Clé de Contrôle Marché. A **Spending thresholds by category** policy rule that is used with purchasing policies lets you use effective date attributes, predicted expenditure amounts, and threshold amounts to support required procurement practices. The policy rule also ensures the efficient and effective use of public funds.
 
 
+>[!NOTE]
+> The **Commitment** functionality doesn't support transactions related to Projects. For more information, see [General budget reservations](../../public-sector/general-budget-reservation-tasks.md).
 
 
 

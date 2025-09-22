@@ -1,5 +1,5 @@
 ---
-title: CAPA management administration (preview)
+title: CAPA management administration
 description: Learn how to set up corrective and preventive action (CAPA) management features in Microsoft Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.author: johanho
@@ -11,11 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# CAPA management administration (preview)
+# CAPA management administration
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 This topic explains how to enable and set up corrective and preventive action (CAPA) management features in Microsoft Dynamics 365 Supply Chain Management.
 
@@ -24,8 +22,8 @@ This topic explains how to enable and set up corrective and preventive action (C
 Before you can use CAPA management features in Supply Chain Management, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-- If you want to require electronic signatures when CAPA cases are closed, the feature that is named *(Preview) Electronic signature improvements* must also be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- If you want to require electronic signatures when CAPA cases are closed, the feature that is named *Electronic signature improvements* must also be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up CAPA parameters
 
@@ -43,7 +41,7 @@ Before users can start to set up and use CAPA features, you must configure a few
 
 ## Load standard worker groups and processes from a template
 
-To get started quickly, you can load a set of standard CAPA processes and worker groups from a template that is provided with Supply Chain Management. You can use the standard records as-is or modify them to meet your specific needs. Learn more about how to work with CAPA processes in [Set up CAPA case components (preview)](capa-set-up-case-components.md).
+To get started quickly, you can load a set of standard CAPA processes and worker groups from a template that is provided with Supply Chain Management. You can use the standard records as-is or modify them to meet your specific needs. Learn more about how to work with CAPA processes in [Set up CAPA case components](capa-set-up-case-components.md).
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **Create standard CAPA process templates**.
 1. In the **Create standard CAPA process templates** dialog, set the following fields:

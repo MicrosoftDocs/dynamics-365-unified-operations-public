@@ -1,32 +1,33 @@
 ---
 title: Set up number sequences by warehouse
-description: Learn about setting up number sequences for purchase product receipts and sales packing slips by warehouse for Poland, including a step-by-step process.
+description: Learn how to set up number sequences for purchase product receipts and sales packing slips by warehouse for Poland in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 06/19/2025
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Set up number sequences by warehouse
 
 [!include[banner](../../includes/banner.md)]
 
-This article walks you through setting up number sequences for purchase product receipts and sales packing slips by warehouse for Poland.
+This article explains how to set up number sequences for purchase product receipts and sales packing slips by warehouse for Poland in Microsoft Dynamics 365 Finance.
 
 ## Set up a number sequence for purchase product receipts by warehouse
 
 You can set up a number sequence for purchase product receipts by warehouse on the **Accounts payable parameters** page. You can number delivery documents separately for each warehouse. 
 
-1. Click **Accounts payable > Setup > Accounts payable parameters**. 
-2. On the **Accounts payable parameters** page, in the left pane, click **Number sequences**. 
+To set up a number sequence for purchase product receipts by warehouse, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**. 
+2. In the left pane, select **Number sequences**. 
 3. In the **Number sequence code** field, select a number sequence for the Internal product receipt reference type. 
-4. Click **Warehouses**. 
+4. Select **Warehouses**. 
 5. On the **Purchase – delivery note numbering** page, in the **Warehouse** field, select a warehouse. 
 6. In the **Number sequence code** field, enter a product receipt number sequence code for the selected warehouse. 
 7. Repeat step 6 for each warehouse. 
@@ -38,10 +39,12 @@ You can set up a number sequence for purchase product receipts by warehouse on t
 
 You can set up a number sequence for sales packing slips by warehouse on the **Accounts receivable parameters** page. You can number delivery documents separately for each warehouse. 
 
-1. Click **Accounts receivable > Setup > Accounts receivable parameters**. 
-2. In the left pane, click **Updates**. Select the **Independent delivery note numbering** check box. 
-3. In the left pane, click **Number sequences**. Select a number sequence for the Packing slip reference type. 
-4. Click **Warehouses**. 
+To set up a number sequence for sales packing slips by warehouse, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**. 
+2. In the left pane, select **Updates**. Select the **Independent delivery note numbering** checkbox. 
+3. In the left pane, select **Number sequences**. Select a number sequence for the **Packing slip** reference type. 
+4. Select **Warehouses**. 
 5. On the **Sales - delivery note numbering** page, in the **Warehouse** field, select a warehouse. 
 6. In the **Number sequence code** field, enter a packing slip number sequence code for the selected warehouse. 
 7. Repeat step 6 for each warehouse. 

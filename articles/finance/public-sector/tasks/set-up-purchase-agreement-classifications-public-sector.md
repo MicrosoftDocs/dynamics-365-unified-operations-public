@@ -4,7 +4,7 @@ description: The purchase agreement classification allows you to control the adm
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 02/14/2022
+ms.date: 06/05/2025
 ms.custom:
 ms.reviewer: twheeloc   
 audience: Application User  
@@ -23,7 +23,7 @@ The purchase agreement classification allows you to control the administrative i
 
 This procedure was created for the French public sector using the PSUS demo company data in the public sector partition.
 
-1. Go to **Procurement and sourcing > Setup > .. > Purchase agreement classification**.
+1. Go to **Procurement and sourcing > Setup > Purchase agreement classification**.
 2. Click **New**.
 3. In the **Name** field, type a value.
 4. In the **Description** field, type a value.

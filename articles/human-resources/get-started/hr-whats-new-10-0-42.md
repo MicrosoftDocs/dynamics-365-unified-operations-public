@@ -4,6 +4,7 @@ description: This article describes features that are either new or changed in t
 author: twheeloc
 ms.author: twheeloc
 ms.date: 10/26/2024
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
   - bap-template

@@ -4,12 +4,13 @@ description: Learn how to set up and generate the Taxable Payments Annual Report
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 07/10/2024
 ms.reviewer: johnmichalak
 ms.search.region: APAC
 ms.search.validFrom: 2023-08-10
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Taxable Payments Annual Report

@@ -3,11 +3,14 @@ title: Create service object relations
 description: Learn how to create service object relations for a service agreement and a service order, including a step-by-step process.
 author: Henrikan
 ms.author: henrikan
-ms.topic: how-to
-ms.date: 05/01/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
+ms.topic: how-to
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Create service object relations

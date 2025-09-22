@@ -1,8 +1,8 @@
 ---
 title: Master planning with supply forecasts
 description: Learn how supply forecasts are considered during master planning, including an outline and process for setting up a master plan to consider supply forecasts.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 09/21/2022
 ms.reviewer: kamaybac

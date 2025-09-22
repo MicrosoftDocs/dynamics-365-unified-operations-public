@@ -12,6 +12,7 @@ ms.search.validFrom: 2016-11-30
 ms.search.form:
 ms.dyn365.ops.version: Platform update 3
 ms.assetid: 43ea0eae-34c8-4f97-8c98-c711844534d9
+ms.custom: sfi-image-nochange
 ---
 
 # Submit service requests to the Dynamics Service Engineering team

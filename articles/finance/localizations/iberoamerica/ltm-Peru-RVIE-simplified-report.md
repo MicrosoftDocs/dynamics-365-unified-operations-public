@@ -2,7 +2,7 @@
 title: Configure printing for the simplified Electronic Sales and Income Registry (RVIE) report for Peru
 description: Learn how to configure printing for the simplified version of the Electronic Sales and Income Registry (RVIE) report for Peru in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
-ms.date: 05/07/2025
+ms.date: 06/03/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -12,9 +12,9 @@ ms.author: v-federicohe
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to configure printing for the simplified version of the Electronic Sales and Income Registry (RVIE) report for Peru in Microsoft Dynamics 365 Finance.
+This article explains how to configure printing for the simplified version of the Electronic Sales and Income Registry (RVIE) report for Peru in Microsoft Dynamics 365 Finance including the Excel output.
 
-The simplified RVIE report in Peru is a record of sales and income. It's used to modify proposed reports by the National Superintendency of Customs and Tax Administration (SUNAT). The simplified RVIE report includes annex 5.2 and its Excel output version.
+The simplified RVIE report in Peru is a record of sales and income. It's used to modify proposed reports by the National Superintendency of Customs and Tax Administration (SUNAT). The simplified RVIE report includes annex 5.2.
 
 ## Prerequisites
 
@@ -26,12 +26,12 @@ Before you can generate and print simplified RVIE reports, the following prerequ
 - You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - The simplified RVIE report consists of the following formats that you must import:
 
-    - Last twelve months (LTM) Tax Report mapping
+    - LTM Tax Report mapping
     - LTM Tax Report
-    - REG Vtas E Ing Simplicado (txt)
-    - PE Simplified Sales Register (Excel)
+    - REG Vtas E Ing Simplicado
+    - PE Simplified Sales Register (Excel output)
 
-## Additional configuration required for RVIE
+## Additional configuration required for simplified RVIE annex reports including the Excel output
 
 - You must create a SUNAT tax application code to use on the report. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
 - When you configure document classes for purchase invoices, debit notes, and credit notes, the tax application code must be set according to SUNAT table 3, "Types of Payment Receipts or Documents."
@@ -46,7 +46,7 @@ Before you can generate and print simplified RVIE reports, the following prerequ
 - When you create a person of the **Person** type, you can use the **Phonetic last name** field to add a second last name as required.
 - Go to **General ledger** \> **Currencies** \> **Currencies**, and complete the currency tax application code with the appropriate three-letter code from SUNAT table 2, "Currency Type."
 
-## Configure application-specific parameters for a simplified RVIE report
+## Configure application-specific parameters for the simplified RVIE annex reports including the Excel output
 
 To configure application-specific parameters for a simplified RVIE report, follow these steps.
 
@@ -77,7 +77,7 @@ To configure application-specific parameters for a simplified RVIE report, follo
 To generate any RVIE annex report, follow these steps.
 
 1. In Finance, go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
-1. In the **Format mapping** field, enter or select a value.
+1. In the **Format mapping** field, select a format listed in the [Prerequisites](#prerequisites) section.
 1. Select **OK**.
 1. In the **Tax application ID** field, enter the tax application code that was created for this report.
 1. In the **From date** and **To date** fields, set the date range for the report.

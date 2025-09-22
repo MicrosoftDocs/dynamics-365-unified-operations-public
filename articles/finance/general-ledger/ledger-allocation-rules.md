@@ -1,11 +1,11 @@
 ---
 title: Ledger allocation rules
-description: Learn about ledger allocation rules. It describes the various components of these allocation rules and the allocation methods that can be used for them.
+description: Learn about the various components of allocation rules and the allocation methods.
 author: kweekley
 ms.author: kweekley
 ms.topic: article
-ms.date: 06/20/2017
-ms.reviewer: kfend
+ms.date: 09/03/2025
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -29,12 +29,12 @@ Ledger allocation rules are used to automatically calculate and generate allocat
 If Basis is used as the allocation method for an allocation rule, you must also define separate ledger allocation basis rules. The "Process allocation request" process lets users process the ledger allocation rule and preview the resulting allocation journal entries before they either post or delete the calculated allocations.
 
 ## Components of ledger allocation rules
-Each allocation rule has four components: general, source, destination, and offset. An additional component, ledger allocation bases rules, is required if Basis is used as the allocation method. Each component provides a critical piece of the information that is required in order to process allocations.
+Each allocation rule has four components: general, source, destination, and offset. An additional component, ledger allocation bases rules, is required if **Basis** is used as the allocation method. Each component provides a critical piece of the information that is required in order to process allocations.
 
--   **General** – This component is where the user specifies options such as the allocation method, intercompany rule settings, and whether the rule is active.
--   **Source** – This component is where the user specifies the source data for the allocation. Allocation can be based on ledger balances (**Data source** = **Ledger**) or fixed amounts (**Data source** = **Fixed value**). When **Data source** is set to **Ledger**, source filter criteria must be defined for the ledger allocation rule (for example, for the advertising expenses).
--   **Destination** – This component defines how the result of the allocation calculation should be distributed and accounted for. For example, there can be one destination line for each department.
--   **Offset** – This component defines how main accounts and dimensions should be determined for the offset entries that balance the destination entries. User-defined options are typically used instead of accounts and dimensions that are based on the source. When **Data source** is set to **Fixed value**, **Source** can't be used as an option.
+-   **General** – The user specifies options such as the allocation method, intercompany rule settings, and whether the rule is active.
+-   **Source** – The user specifies the source data for the allocation. Allocation can be based on ledger balances (**Data source** = **Ledger**) or fixed amounts (**Data source** = **Fixed value**). When **Data source** is set to **Ledger**, source filter criteria must be defined for the ledger allocation rule (for example, for the advertising expenses).
+-   **Destination** – Defines how the result of the allocation calculation should be distributed and accounted for. For example, there can be one destination line for each department.
+-   **Offset** – Defines how main accounts and dimensions should be determined for the offset entries that balance the destination entries. User-defined options are typically used instead of accounts and dimensions that are based on the source. When **Data source** is set to **Fixed value**, **Source** can't be used as an option.
 -   **Ledger allocation basis rules** – These rules use their own source filter criteria to determine which ledger balances should be used for allocation (for example, the revenue per department). Each allocation basis rule can be used with multiple allocation rules.
 
 

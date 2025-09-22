@@ -1,13 +1,14 @@
 ---
 title: Use the Inventory Visibility app UI version 2
-description: Learn how to use the Inventory Visibility app UI version 2, including an process for authenticating with the Inventory Visibility service.
+description: Learn how to use the Inventory Visibility app UI version 2, including a process for authenticating with the Inventory Visibility service.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: how-to
-ms.date: 12/04/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Use the Inventory Visibility app UI version 2
@@ -113,7 +114,7 @@ The default on-hand index configuration includes a standard set of indexes.
 > [!TIP]
 > These tips can help when you set up your on-hand index configuration:
 >
-> - Base dimensions that are reserved in the partition configuration (set number *0*) should not be included in other on-hand index configurations.
+> - Base dimensions that are reserved in the partition configuration (set number *0*) shouldn't be included in other on-hand index configurations.
 > - If you aren't interested in querying specific dimension combinations, set up an index that has only one base dimension, *Empty*.
 
 ### Set up the on-hand index configuration
@@ -213,7 +214,7 @@ If necessary, you can delete all Inventory Visibility data, except configuration
 
 ## Inventory queries and updates
 
-On the navigation pane, the **Operational visibility** group provides access to pages where you can perform real-time on-hand inventory queries and updates. When the [soft reservation](inventory-visibility-reservations.md) feature is [enabled](#feature-management), you can also post reservation requests to the API. For more details about API requests, see [Inventory Visibility public APIs](inventory-visibility-api.md).
+On the navigation pane, the **Operational visibility** group provides access to pages where you can perform real-time on-hand inventory queries and updates. When the [soft reservation](inventory-visibility-reservations.md) feature is [enabled](#feature-management), you can also post reservation requests to the API. For more information about API requests, see [Inventory Visibility public APIs](inventory-visibility-api.md).
 
 The following elements are common to all the pages:
 
@@ -235,7 +236,7 @@ Use the **On hand query** page in the **Operational visibility** group to query 
 1. Select **Edit Dimensions** to choose which dimensions to include in the query body. Then enter values for the selected dimensions in the **Product** section.
 
     > [!NOTE]
-    > If you plan to make an ATP query, ensure that every dimension that is included in the ATP index is also listed in the **Product** section. For example, if your ATP index includes `ColorId` and `SizeId`, both those dimensions must be listed in the **Product** section. If any dimensions are missing, select **Edit Dimensions** to add them. In the search form, you can leave some of the dimension values blank. However, the dimensions must be included in the query body if they are included in the ATP index.
+    > If you plan to make an ATP query, ensure that every dimension that is included in the ATP index is also listed in the **Product** section. For example, if your ATP index includes `ColorId` and `SizeId`, both those dimensions must be listed in the **Product** section. If any dimensions are missing, select **Edit Dimensions** to add them. In the search form, you can leave some of the dimension values blank. However, the dimensions must be included in the query body if they're included in the ATP index.
 
 1. For each field that you want to include in the query, but without filtering on any specific value, select **Use all values**.
 1. In the **Query Settings** section, set the following options:

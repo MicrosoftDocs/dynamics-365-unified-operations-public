@@ -37,16 +37,11 @@ The global mobile device settings are found on the **Mobile device** FastTab on 
 | Allow purchase order line registration when in external review | Set this option to *Yes* if workers should be able to use a mobile device to register order lines for purchase orders that have an **Approval status** value of *In external review*. Set this option to *No* to prevent workers from registering lines for purchase orders that are in external review. |
 | Enable RSAT support | The field enables the Warehouse Management mobile app task validator, which logs and validates each step that the app performs. Because this process can significantly slow down system performance, you should enable the validator only during testing. You should never enable it in a production environment. |
 
-## Inventory dimension display options (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.44 GA -->
+## Inventory dimension display options
 
 On the **Mobile device menu item display inventory dimensions** FastTab, you can use the **Display tracking dimension control for last on-hand** field to specify how the mobile app shows the *tracking dimension below location* control, including *batch below number* and *serial below number*. The setting has no impact on the display of *tracking dimension above location*, such as *batch above number* or *serial above number*.
 
 This feature requires Supply Chain Management version 10.0.44 or later.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 The setting of the **Display tracking dimension control for last on-hand** field applies to the entire work order type. Therefore, it affects all mobile device menu items that are used to process the work order type. Currently, this feature is supported only for sales orders. No other work order types (such as transfer orders and purchase orders) are supported.
 

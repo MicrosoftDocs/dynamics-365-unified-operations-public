@@ -1,8 +1,8 @@
 ---
 title: Calculate sales order delivery dates using CTP
 description: Capable-to-promise (CTP) functionality lets you give customers realistic dates for when you can promise specific goods.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 10/25/2024
 ms.reviewer: kamaybac

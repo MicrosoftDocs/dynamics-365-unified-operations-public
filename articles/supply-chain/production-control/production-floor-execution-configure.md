@@ -38,14 +38,10 @@ There are two versions of this feature. One supports items that *are not* enable
 
 - The *Register material consumption as complete and edit dimensions on the production floor execution interface* feature enables workers to use the production floor execution interface to adjust material consumption, batch and serial numbers, and license plates for both non-WMS and WMS-enabled items. It also enables workers to mark the consumption of a specific material as completed by marking an **End** flag on the line item for a material.
 
-To use this functionality, turn on one or both of the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order), depending on whether you have items that are enabled for WMS:
+*Register material consumption on the production floor execution interface (non-WMS)* functionality is always available as part of Supply Chain Management. To use additional related functionality, turn on one or both of the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- *Register material consumption on the production floor execution interface (non-WMS)* (As of Supply Chain Management version 10.0.32, this feature is turned on by default. As of Supply Chain Management version 10.0.43, it's mandatory and can't be turned off.)
-- *Register material consumption as complete and edit dimensions on the production floor execution interface* (This feature adds support for WMS-enabled items. It requires Supply Chain Management version 10.0.42 or later.)
+- *Register material consumption as complete and edit dimensions on the production floor execution interface* (This feature adds support for WMS-enabled items. It requires Supply Chain Management version 10.0.42 or later. As of Supply Chain Management version 10.0.45, this feature is turned on by default.)
 - *Add lines to the adjust materials dialog* (Allows workers to add and delete material lines in the **Adjust Materials** dialog on the production floor execution interface. It requires Supply Chain Management version 10.0.44 or later.)
-
-> [!IMPORTANT]
-> You can use the non-WMS feature alone. However, if you use WMS, you must enable both features.
 
 ### <a name="tracked-components"></a>Tracked components
 
@@ -54,38 +50,55 @@ This feature lets workers and managers register batch/serial numbers for materia
 Before you can use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
-- The feature that's named *Tracked components* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Tracked components* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
 - You must make the feature available to workers by adding a **Tracked components** button to the appropriate tab and toolbar, as described in [Design the production floor execution interface](production-floor-execution-tabs.md).
 
 For more information about this feature, see [Register batch/serial numbers for finished products and their components (preview)](production-floor-execution-use.md#tracked-components).
 
-### Select color themes on production floor execution interface (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.44 GA -->
+### Select color themes on production floor execution interface
 
 When configuring the production floor execution interface, supervisors can select one of several default color themes, ranging from dark to light. Each worker can also select their own preferred theme, which overrides the default each time that worker signs in.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Before you can use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
 - The feature that's named *Select color themes on production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### List view for reporting job scrap from the production floor execution interface (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.44 GA -->
+### List view for reporting job scrap from the production floor execution interface
 
 Workers reporting job scrap from the production floor execution interface can choose to work from a list view that shows several jobs at once, or from a detail view that shows more information about one job at a time. Previously, only the detail view was available.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Before you can use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
 - The feature that's named *List view for reporting job scrap from the production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+### Streamline the process for registering indirect activities
+
+This feature streamlines the process for workers to register for indirect activities. Without this feature, when a worker registered for an indirect activity, a dialog box would open, asking them whether they wanted to stop the activity or log it at the end of their shift. This feature removes the dialog. Instead, the system automatically adds the indirect activity to the worker's active job list. The system stops the indirect activity when the worker begins a new task (such as a production job), another indirect activity, or a project job
+
+Before you can use this feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.42 or later.
+- The feature that's named *Streamlined registration process for indirect activities on the Production floor execution* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
+
+### Report progress on multiple jobs in the report-progress list view
+
+This feature lets workers reporting job progress to select the desired status on multiple jobs in the report-progress list view.
+
+Before you can use this feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.42 or later.
+- The feature that's named *Set the desired status on selected jobs in report progress list view in the production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
+
+### Enhanced numpad control
+
+The enhanced numpad input control replaces the previous one. It is now an element of type *Real* instead of type *String*, which makes the decimal separator consistent with the regional settings.
+
+Before you can use this feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.45 or later.
+- The feature that's named *Enhanced numpad control for production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Work with production floor execution configurations
 

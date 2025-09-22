@@ -4,7 +4,7 @@ description: Learn about the Cash position inquiry, which lets you determine the
 author: velofog
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 10/07/2019
+ms.date: 06/05/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -27,7 +27,7 @@ This article provides information about the **Cash position** inquiry. This inqu
 - The subtraction of interfund transfers to arrive at an ending balance
 - The subtraction of general budget reservations, encumbrances, or pre-encumbrances from the ending balance to arrive at an unencumbered balance
 
-This inquiry differs from other inquiries because you can customize the terminology for column names and for the main accounts that are used to derive the amounts that appear in the columns. On the **Cash position parameters** page, the columns that appear in the inquiry are numbered sequentially from left to right. The left-most column is **Column one**.
+This inquiry differs from other inquiries because you can customize the terminology for column names and for the main accounts that are used to derive the amounts that appear in the columns. On the **Cash position parameters** page, the columns that appear in the inquiry are numbered sequentially from left to right. The left most column is **Column one**.
 
 ## Set up the Cash position inquiry
 
@@ -44,8 +44,8 @@ This inquiry differs from other inquiries because you can customize the terminol
     
         The inquiry will add the net amount of the debit and credit accounts, plus the debit and credit amounts from the main accounts that are specified in the other fields in the group.
 
-    - To use only the sum of all debit transaction amounts for the inquiry's data, select the main accounts in the **Debit-only main accounts** list.
-    - To use only the sum of all credit transaction amounts for the inquiry's data, select the main accounts in the **Credit-only main accounts** list.
+    - To use only the sum of all debit transaction amounts for the inquiry's data, select the main accounts in the **Debit only main accounts** list.
+    - To use only the sum of all credit transaction amounts for the inquiry's data, select the main accounts in the **Credit only main accounts** list.
 
 4. In the **Column three** and **Column four** groups, follow these steps:
 
