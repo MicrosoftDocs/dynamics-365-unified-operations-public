@@ -164,7 +164,7 @@ Follow these steps to create the tax calculation feature.
 > 
 > **Settlement period** and **Leger posting group** in tax codes haven't been specified. You'll be prompted to define them when enabling the feature in Advanced tax calculation engine in the tax parameter.
 > 
-> For the synchronization between advanced tax engine and legacy system, follow this link for reference. [Sync the tax setup from the Tax Calculation feature to Dynamics 365 Finance | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/global-master-data-sync-tax-calculation-service-finance)
+> For the synchronization between advanced tax engine and legacy system, follow this link for reference. [Sync the tax setup from the Tax Calculation feature to Dynamics 365 Finance | Dynamics 365 | Microsoft Learn](/dynamics365/finance/localizations/global/global-master-data-sync-tax-calculation-service-finance)
 
  
 
