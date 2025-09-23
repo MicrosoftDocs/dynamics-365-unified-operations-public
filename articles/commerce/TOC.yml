@@ -2576,7 +2576,7 @@
         href: email-templates-transactions.md
       - name: Develop email experiences
         href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?context=/dynamics365/context/commerce
-      - name: Troubleshoot the Office integration
+      - name: Office integration FAQ
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?context=/dynamics365/context/commerce
     - name: Organization administration
       items:

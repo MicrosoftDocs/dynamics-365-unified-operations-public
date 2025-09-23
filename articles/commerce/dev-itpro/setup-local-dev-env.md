@@ -2,7 +2,7 @@
 title: Set up a local development environment
 description: Learn how to set up a local development environment for the Commerce Scale Unit (CSU) and point of Sale (POS) development in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 07/25/2025
+ms.date: 09/23/2025
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -199,9 +199,9 @@ If the build is completed without errors, you can use the outputs to deploy your
 
 You should set up a build pipeline to generate the package and then deploy it. For more information, see [Set up a build pipeline for the independent-packaging SDK](build-pipeline.md) and [Deploy the package to CSU](retail-sdk/retail-sdk-packaging.md#deploy-the-package-to-csu).
 
-### Troubleshooting
+### Debugging
 
-To troubleshoot deployment issues, review the verbose set of logs and associated messages on the **Terminal** tab of Visual Studio Code. If you can't determine what is wrong on your own, contact Microsoft for help. When you contact Microsoft, provide the following data:
+To debug deployment issues, review the verbose set of logs and associated messages on the **Terminal** tab of Visual Studio Code. If you can't determine what is wrong on your own, contact Microsoft for help. When you contact Microsoft, provide the following data:
 
 - A verbose description of the actions that were performed
 - The log file that is referenced at the very beginning and the very end of the output for the Base Scale Units's deployment process
