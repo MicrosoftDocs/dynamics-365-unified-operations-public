@@ -1,12 +1,12 @@
 ---
 title: Troubleshoot cash flow forecasting setup
 description: Access answers to questions that you might have when you configure cash flow forecasting, including questions about setup and cash flow Power BI.
-author: kfend
-ms.author: kfend
+author: twheeloc
+ms.author: twheeloc
 ms.topic: troubleshooting-general
 ms.date: 03/23/2021
 ms.custom:
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-12-30
