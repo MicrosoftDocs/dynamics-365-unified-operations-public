@@ -3,7 +3,7 @@
 
 title: Payroll position details entity
 description: This article provides details and an example query for the Payroll position details entity in Microsoft Dynamics 365 Human Resources.
-author: jcart
+author: twheeloc
 ms.date: 05/10/2024
 ms.topic: article
 ms.reviewer: twheeloc
