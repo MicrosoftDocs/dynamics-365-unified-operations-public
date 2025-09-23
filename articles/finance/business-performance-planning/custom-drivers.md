@@ -1,8 +1,8 @@
 ---
 title: Custom drivers in Dynamics 365 Finance business performance planning
 description: Learn how to define and use custom drivers in business performance planning.
-author: ShielaSogge
-ms.author: romainpham
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 06/11/2025
 ms.reviewer: twheeloc 
