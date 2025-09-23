@@ -97,7 +97,7 @@ This section lists the supported operating systems for each Commerce self-servic
     > [!NOTE]
     > Windows 10 Pro and Windows 11 Pro aren't recommended, except as part of a domain so that Windows updates can be appropriately scheduled.
 
-- Store Commerce for Android requires Android version 7.10 or later.
+- Store Commerce for Android requires Android version 7.10 or later. Devices with x86-based architectures are not supported due to size limitation imposed by Google Play Store.
 - Store Commerce for iOS requires iOS version 16 or later.
 - Microsoft doesn't recommend that you use the Store Commerce app on the same computer as another self-service component (for example, a shared hardware station or self-hosted Commerce Scale Unit).
 
