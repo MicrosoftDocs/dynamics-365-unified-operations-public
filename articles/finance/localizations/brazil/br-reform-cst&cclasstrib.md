@@ -49,4 +49,7 @@ The following table lists the fields and descriptions.
 | Description CST-IBS/CBS                                                 | Tax situation description 
 | Description cClassTrib                                                  | Description of the tax classification. 
 | LC Writing                                                              | Provision from Brazilian Complementary Law (LC).
+| Suspended                                                              | This checkbox indicates the status of the current record. When selected, the value is marked as inactive. Inactive (suspended) records remain in the system for historical reference but do not appear in dropdown lists. Use this status for records that are no longer valid, temporarily paused, or created in error.
 
+> [!NOTE]
+> This form does not support record deletion for the moment.
