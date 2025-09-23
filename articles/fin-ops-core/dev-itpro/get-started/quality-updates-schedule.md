@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
-ms.date: 08/26/2025
+ms.date: 09/23/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
