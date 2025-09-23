@@ -1,8 +1,8 @@
 ---
 title: Financial dimension sets
 description: Learn about financial dimension sets and provides some tips for optimizing their use, including an outline on dimension set balances.
-author: rcarlson
-ms.author: rcarlson
+author: twheeloc  
+ms.author: twheeloc
 ms.topic: article
 ms.date: 04/29/2024
 ms.update-cycle: 1095-days
