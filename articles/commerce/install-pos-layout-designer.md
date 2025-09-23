@@ -2,7 +2,7 @@
 title: Install the POS layout designer
 description: Learn how to install and debug the one-click designer in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 09/19/2025
+ms.date: 09/23/2025
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
