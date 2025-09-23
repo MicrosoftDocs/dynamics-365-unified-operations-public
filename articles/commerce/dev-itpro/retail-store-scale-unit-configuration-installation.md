@@ -2,7 +2,7 @@
 title: Configure and install Commerce Scale Unit (self-hosted)
 description: Learn how to use self-service to configure and install Microsoft Dynamics 365 Commerce Scale Unit (self-hosted) on computers in a brick-and-mortar store.
 author: jashanno
-ms.date: 09/19/2025
+ms.date: 09/25/2025
 ms.topic: install-set-up-deploy
 ms.reviewer: johnmichalak
 ms.search.region: Global
