@@ -33,7 +33,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Sales tax report for Belgium, Purchase sales tax transactions, Sales tax transactions re sales, Additional sales tax report boxes (design based on reporting codes), and Belgium report layout.
 
-[Reconciliation reports for Belgium](../localizations/belgium/emea-bel-reconciliation-reports.md)
+[INTERVAT tax declaration](../localizations/belgium/emea-bel-intervat-tax-declaration.md)
 
 | &nbsp;  | &nbsp;  |
 |---|---|
