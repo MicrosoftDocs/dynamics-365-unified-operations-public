@@ -82,6 +82,10 @@ Each time Business performance analytics refreshes, your source data are transfo
 > [!IMPORTANT]
 > Customers affected by storage capacity growth after updating to Business performance analytics version 2.0.29241185 or later should contact support and request to enable the temporary files cleanup routine for their environment.
 
+## BI entity customization
+
+BI entities cannot be customized. If a BI entity has been modified with a custom view or custom data sources, BPA installation will fail. 
+
 ## Uninstall
 ### How do I uninstall Business performance analytics?
 

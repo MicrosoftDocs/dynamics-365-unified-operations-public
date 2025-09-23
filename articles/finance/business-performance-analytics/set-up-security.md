@@ -14,7 +14,7 @@ audience: Application User
 
 [!include [banner](../includes/banner.md)]
 
-The setup of security in the Business performance analytics app is a critical step in ensuring the security of your organization's data. This article provides an overview of the setup process for role-based, dimension, and report security, and explains how to add users to the app.
+The setup of security in the Business performance analytics app is a critical step in ensuring the security of your organization's data. This article provides an overview of the setup process for role-based, dimension, and report security, and explains how to add users to the app. In BPA, data access is disabled by default. Please refer to the steps outlined in this document to grant access to end users.
 
 ## Admin role
 
@@ -33,7 +33,7 @@ A role defines which reports a user can access. Use roles to organize how Busine
 
 Dimension security lets admins control which data is visible on a report. The process of setting up dimension security has two steps:
 
-1. **Set up dimensions.** Select the dimensions that you want to secure. During public preview, you can select up to five dimensions from the ledger and reporting dimensions. Any change to the selection of dimensions might affect the dimension groups that are created and the users who are assigned them.
+1. **Set up dimensions.** Select the dimensions that you want to secure. During public preview, you can select up to nine dimensions from the ledger and reporting dimensions. Any change to the selection of dimensions might affect the dimension groups that are created and the users who are assigned them.
 2. **Set up dimension groups.** You can create dimension groups only after step 1 is completed. A dimension group filters report data so that only the filtered values in a given dimension attribute are visible to users who are assigned that dimension group. You can assign one or more dimension groups to a user to control what data is visible on a report. At least one dimension group must be assigned to each user.
 
 >[!Important]
@@ -139,3 +139,7 @@ To set up users, follow these steps.
 3. Select **Next**.
 4. Assign at least one role and one dimension group to the user. To make this user a Business performance analytics admin, select **App administrator**.
 5. Select **Save**.
+
+## Blank reports  
+
+If users can't access data in Business performance analytics, verify that they have permissions for at least one legal entity. If they don't have access, assign the necessary permissions to one or more legal entities by following the procedures in [Set up dimensions](#set-up-dimensions).
