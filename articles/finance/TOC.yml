@@ -2056,28 +2056,26 @@
                       href: localizations/belgium/belgium.md
                     - name: CODA bank statement
                       href: localizations/belgium/emea-bel-coda-bank-statement-import.md
-                    - name: Create and transfer transactions to the BLWI
-                      href: localizations/belgium/be-00011-create-transfer-blwi.md
                     - name: Export ledger transactions
                       href: localizations/belgium/emea-bel-export-ledger-transactions.md
-                    - name: EU sales list
-                      href: localizations/belgium/emea-bel-eu-sales-list.md
-                    - name: INTERVAT tax declaration
-                      href: localizations/belgium/emea-bel-intervat-tax-declaration.md
-                    - name: Reconciliation reports
-                      href: localizations/belgium/emea-bel-reconciliation-reports.md
                     - name: Journal reports
                       href: localizations/thailand/emea-bel-journal-reports.md
-                    - name: Set up payment balance reporting
-                      href: localizations/belgium/be-00011-set-up-payment-balance-reporting.md
-                    - name: Set up and maintain PRODCOM
-                      href: localizations/belgium/emea-bel-prodcom-report.md
+                    - name: VAT declaration
+                      href: localizations/belgium/emea-bel-vat-declaration-belgium.md
+                    - name: Reconciliation reports
+                      href: localizations/belgium/emea-bel-reconciliation-reports.md
+                    - name: EU sales list
+                      href: localizations/belgium/emea-bel-eu-sales-list.md
                     - name: Annual VAT listing of domestic sales
                       href: localizations/belgium/emea-bel-annual-vat-listing-of-domestic-sales.md
                     - name: Belgium Intrastat
                       href: localizations/belgium/emea-bel-intrastat.md
-                    - name: VAT declaration
-                      href: localizations/belgium/emea-bel-vat-declaration-belgium.md
+                    - name: Set up payment balance reporting (BLWI)
+                      href: localizations/belgium/be-00011-set-up-payment-balance-reporting.md
+                    - name: Create and transfer transactions (BLWI)
+                      href: localizations/belgium/be-00011-create-transfer-blwi.md
+                    - name: Set up and maintain PRODCOM
+                      href: localizations/belgium/emea-bel-prodcom-report.md
                 - name: Bolivia
                   items:
                   - name: Bolivia overview
