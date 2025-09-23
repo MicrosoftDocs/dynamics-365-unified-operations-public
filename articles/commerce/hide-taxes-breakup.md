@@ -2,7 +2,7 @@
 title: Hide tax breakup information in order summaries
 description: Learn how to hide tax breakup information in order summaries on cart, checkout, order confirmation, and order details pages in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 09/16/2025
+ms.date: 09/23/2025
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -52,4 +52,5 @@ The following illustration shows the **Show taxes breakup in order summary** che
 [Configure sales tax for online orders](sales-tax-config.md)
 
 [Troubleshoot: Taxes on online orders are incorrectly calculated](/troubleshoot/dynamics-365/commerce/order-management/tax-miscalculated-online-order)
+
 
