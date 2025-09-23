@@ -11,12 +11,6 @@ ms.custom:
   - bap-template
 ---
 
-<!-- KFM: 
-
-Johan: This is raw Copilot generated text. You should review carefully for inspiration, but probably start over on most it. 
-
--->
-
 # Sample management overview (preview)
 
 [!include [banner](../../includes/banner.md)]
