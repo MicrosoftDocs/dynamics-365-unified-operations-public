@@ -2,7 +2,7 @@
 title: Debugging best practices for Dynamics 365 Commerce development
 description: This article describes some best practices to follow when debugging Microsoft Dynamics 365 Commerce customizations.
 author: samjarawan
-ms.date: 09/19/2025
+ms.date: 09/23/2025
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
