@@ -18,15 +18,12 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This article explains the configuration steps that enable your system to use the capabilities that are available in Finance insights. To successfully complete the procedures in this article, you must have System administrator and System customizer access in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), System administrator access in Dynamics 365 Finance, and access to create environments in Microsoft Dynamics 365 Lifecycle Services.
 
-> [!NOTE]
-> The following procedures for setting up Finance insights are valid for versions of Dynamics 365 Finance version 10.0.21, and later.
-
 ## Deploy Dynamics 365 Finance
 
 To deploy the environments, follow these steps.
 
-1. In Lifecycle Services, create or update a Dynamics 365 Finance environment. The environment requires app version 10.0.21 or later.
-
+1. In Lifecycle Services, create or update a Dynamics 365 Finance environment.
+   
     > [!NOTE]
     > The environment must be a high-availability (HA) environment. (This type of environment is also known as a Tier-2 environment.) Learn more in [Environment planning](../../fin-ops-core/dev-itpro/organization-administration/environment-planning.md).
 
