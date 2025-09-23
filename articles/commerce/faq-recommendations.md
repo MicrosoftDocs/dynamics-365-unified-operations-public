@@ -2,7 +2,7 @@
 title: Product recommendations FAQ
 description: Learn about processes and tools you can use to debug issues related to product recommendations or their results in Microsoft Dynamics 365 Commerce.
 author: bebeale
-ms.date: 09/16/2025
+ms.date: 09/23/2025
 ms.topic: faq
 ms.reviewer: josaw
 ms.search.region: global
