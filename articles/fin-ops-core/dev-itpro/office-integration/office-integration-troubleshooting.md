@@ -4,7 +4,7 @@ description: Get answers to frequently asked questions about the capabilities of
 author: jasongre
 ms.author: jasongre
 ms.topic: faq
-ms.date: 09/16/2025
+ms.date: 09/23/2025
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
