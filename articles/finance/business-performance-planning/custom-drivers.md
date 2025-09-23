@@ -76,4 +76,4 @@ If you want to calculate revenue as *Price* &times; *Quantity*, follow these ste
 1. Add the **Price** and **Quantity** drivers.
 1. Create the following computed column: **Revenue = Price \* Quantity**.
 
-Learn more in [Create calculated columns](calculated-columns).
+Learn more in [Create calculated columns](calculated-columns.md).
