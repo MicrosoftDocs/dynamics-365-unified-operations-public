@@ -29,8 +29,7 @@ The only standard dimension set is the dimension set that contains only the main
 
 You use the **Financial dimension sets** page to create and manage financial dimension sets.
 
-> [!NOTE]
-> As of application version 10.0.38, a new feature that's named **Performance enhancement for general ledger dimension set balance calculation** is available. For more information, see [New financial dimension sets](financial-dimension-set-new.md).
+A **Performance enhancement for general ledger dimension set balance calculation** feature is available to address performance. For more information, see [New financial dimension sets](financial-dimension-set-new.md).
 
 ## Dimension set balances
 
