@@ -299,7 +299,7 @@ To configure an OPOS device, follow these steps.
 
 #### Configure a network device
 
-To configure a network device, follow these steps.
+
 
 The POS simulator can be used to test network devices. The following network devices are supported out of the box:
 
@@ -307,8 +307,10 @@ The POS simulator can be used to test network devices. The following network dev
 - **Receipt printer:** Star TSP650II
 - **Payment terminal:** Although a payment terminal can be configured as network devices, any testing of a payment terminal requires a custom payment connector.
 
-    > [!NOTE]
-    > No payment terminals are supported out of the box.
+> [!NOTE]
+> No payment terminals are supported out of the box.
+
+To configure a network device, follow these steps.
 
 1. Select **Network** as the device type.
 2. Enter data for the rest of the fields.
