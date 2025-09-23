@@ -29,7 +29,7 @@ Typically, if an item is missing from a product recommendation list, there might
 If an item is missing from a recommendation list that is based on artificial intelligence-machine learning (AI-ML), the item might not fit the criteria of the recommendation list, or it might not have enough purchase transactions for the recommendation list to show it.
 
 Microsoft recommends that you check these steps:
-1. **Make sure that product recommendations have been enabled in HQ.** For more information about how to enable this service, see [Enable product recommendations](enable-product-recommendations.md).
+1. **Make sure that product recommendations have been enabled in Commerce headquarters.** For more information about how to enable this service, see [Enable product recommendations](enable-product-recommendations.md).
 1. **Make sure that key product properties are set.** For example, product assortments must be set to **Include**.
 1. **For newly assorted products, it might take up to 3 hours before the product will start appearing in the new list.**
 1. **If a product is still not appearing in Trending, Best selling, People also like, or Frequently bought together, then that product might not have enough transactions.** In this case, you can either wait for more transactions to occur, update the default recommendation list parameters, or use manual intervention to modify the recommendation product list results. For more information about recommendation parameters, see [Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md).
