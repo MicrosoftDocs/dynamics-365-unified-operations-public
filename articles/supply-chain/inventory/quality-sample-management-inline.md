@@ -42,14 +42,14 @@ Make sure to set up the following elements as described in [Enable and configure
   - **Default item sampling for inline** – Specifies the default item sampling method applied to inline samples during production. When initiating inline sampling from the production orders list or details page, this value is pre-filled in the create dialog but can be adjusted as needed.
   - **Default inline test group** – Specify the default test group used for inline samples from production. When initiating inline sampling from the production orders list or details page, thsi value is pre/filled in the create dialog but can be adjusted as needed
 
-- to specify for which product or products the inline samples should be applicable for. Note that the inline sample process is only applicable for batch-controlled products. Learn more in [admin topic](quality-sample-management-admin.md).
-
+1. With the relevant row still selected in the top section, add each of the [sample procedures](#configure-sample-procedures) that workers should follow when handling samples for this association. Use the toolbar buttons to add or remove procedures as needed.
+1. On the Action Pane, select **Save**.
 
 ## Initiate the sample
 
 To initiate an inline sample follow these steps:
 
-1. Create a production or batch order for a product that is configured for inline item sampling. 
+1. Create a production or batch order for a batch-controlled product that is configured for continuous sampling. 
 1. Bring the production or batch order into status *Started*
 1. On the action pane, under the **View** tab, select **Initiate inline sample management** to open the dialog for creating the inline sample. Select values for **Item sampling** and **Test group** if they are not defaulted, based on configuration in the **Sample associations**.
 1. Confirm the dialog with **OK**
