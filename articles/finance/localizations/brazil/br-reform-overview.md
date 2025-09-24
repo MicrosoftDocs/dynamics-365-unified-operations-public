@@ -55,21 +55,12 @@ Finance or Supply Chain Management version	Tax configuration version
 ## Supported transactions
 The following lists the transactions supported in the Brazil tax reform in Advanced tax calculation engine.
 
-* Invoice register
-* Invoice approval
-* Invoice pool
-* Periodic journals
-* Vendor payment journal
-* Customer payment journal
 * General journals
 * Vendor invoice journal
 * Free text invoice
 * Project
   * Project invoice proposal
-  * Journals (Hour/Expense/Item/Fee)
-  * Project quotations
-  * Intercompany customer invoice
-  * Microsoft Dynamics 365 Project Operations integration journal
+   
 * Sales
   * Sales quotation
   * Sales order
