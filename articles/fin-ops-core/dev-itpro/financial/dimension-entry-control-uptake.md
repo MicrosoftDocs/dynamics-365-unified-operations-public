@@ -43,10 +43,10 @@ The custom properties for the Dimension Entry control are found under the **Cont
 
 #### Details on the properties
 
-| Property     | Valid Values            | Usage |
+| Property     | Valid values            | Usage |
 |----------|------------|----------------------------------|
 | Caption Text     | Any label                                              | Caption for the control.                                               |
-| Controller Class | One of the 8 Controller classes. For example, LedgerDefaultDimensionEntryController | Determines the behavior of the Dimension Entry control. More information about this property is provided below.                                                    |
+| Controller Class | One of the eight Controller classes. For example, LedgerDefaultDimensionEntryController | Determines the behavior of the Dimension Entry control. More information about this property is provided below.                                                    |
 | Data Source      | Any data source in the form data source list       | The data source specified here should be pointed to the table that holds the field specified in the Value Data Field property and/or the Enum Data Field property. |
 | Enum Data field  | A field in the table referenced by the data source provided in the Data Source property. | This is the field that the enumeration values will be stored in. This property shouldn’t be specified if the control is not using an enumeration.                  |
 | Enumeration      | Any enumeration. For example, NoYes    | The enumeration used by the control. The enumeration will be used by the control instead of Dimension values.               |
