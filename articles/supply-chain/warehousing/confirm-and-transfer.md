@@ -42,7 +42,7 @@ You can split only loads that meet all the following criteria:
 - One or more load lines have picked quantities.
 - The load status is less than loaded.
 - There's no load line data. (This data is created through license plate consolidation on the staging location, and the *Confirm and transfer* feature doesn't support license plate consolidation.)
-- No inventory is currently awaiting packing at a packing location. (To be able to split loads with the *Confirm and transfer* feature for inventory that you picked to the pack station but didn't yet pack and move to staging locations, follow the configuration steps detailed in [Packing work for packing outbound containers and processing shipments](dynamics365/supply-chain/warehousing/packing-work)).
+- No inventory is currently awaiting packing at a packing location. (To be able to split loads with the *Confirm and transfer* feature for inventory that you picked to the pack station but didn't yet pack and move to staging locations, follow the configuration steps detailed in [Packing work for packing outbound containers and processing shipments](packing-work.md)).
 
 ## Cancelling the load
 
