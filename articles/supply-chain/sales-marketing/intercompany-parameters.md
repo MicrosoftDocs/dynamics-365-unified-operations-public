@@ -3,10 +3,12 @@ title: Intercompany parameters
 description: Learn about intercompany parameters, including examples involving two-level intercompany chains and three-level intercompany chains.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
-ms.date: 09/01/2021
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, InterCompanyTradingRelationSetupCustomer
+ms.topic: how-to
+ms.date: 01/07/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Intercompany parameters
@@ -28,7 +30,7 @@ Both legal entities can sell to and buy from each other.
 
 In this example, the pricing on the original sales order, which is directed to the external customer, is always based on the sales price. The pricing on the intercompany sales order and the intercompany purchase order is controlled by the internal sales or transfer pricing on the intercompany sales order in Legal entity B.
 
-The order header information is controlled from the original sales order to the external customer. Any change on the intercompany sales order is not synchronized to the original sales order.
+The order header information is controlled from the original sales order to the external customer. Any change on the intercompany sales order isn't synchronized to the original sales order.
 
 In Legal entity A, on the **Intercompany** page for vendors, select **Purchase order policies**. Select the following fields in the **Original sales order (direct delivery)** field group:
 
@@ -73,14 +75,14 @@ In the **Intercompany sales order \> Intercompany purchase order** field group, 
 The intercompany organization includes the following legal entities:
 
 - Legal entity A – A sales legal entity that sells to external customers and buys from Legal entity B.
-- Legal entity B – A production or distribution legal entity that cannot deliver products, and buys from Legal entity C.
+- Legal entity B – A production or distribution legal entity that can't deliver products, and buys from Legal entity C.
 - Legal entity C – A production or distribution legal entity that delivers products to Legal entity B.
 
-Internal transfer pricing between Legal entities B and C is at cost from the selling legal entity at the start of the chain. It is also at cost to Legal entity A, which sells to external customers. However, pricing on the original sales order to the external customer is always based on the sales price.
+Internal transfer pricing between Legal entities B and C is at cost from the selling legal entity at the start of the chain. It's also at cost to Legal entity A, which sells to external customers. However, pricing on the original sales order to the external customer is always based on the sales price.
 
-Pricing on all intercompany sales orders and intercompany purchase orders is controlled on the intercompany sales order. It is controlled at the start of the chain. Therefore, Legal entity C, which sells to Legal entity B, controls the price. Intercompany sales order pricing is based on the internal sales or transfer pricing that is set up in Legal entity C.
+Pricing on all intercompany sales orders and intercompany purchase orders is controlled on the intercompany sales order. It's controlled at the start of the chain. Therefore, Legal entity C, which sells to Legal entity B, controls the price. Intercompany sales order pricing is based on the internal sales or transfer pricing that is set up in Legal entity C.
 
-The order header information is controlled from the original sales order to the external customer. Any change on the intercompany orders is not synchronized to the original sales order.
+The order header information is controlled from the original sales order to the external customer. Any change on the intercompany orders isn't synchronized to the original sales order.
 
 The following parameters should be selected:
 

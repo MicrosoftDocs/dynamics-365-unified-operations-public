@@ -3,7 +3,7 @@ title: Billing schedules with projects
 description: Learn about the Billing schedules with projects feature, which lets you set up a billing schedule that has a project ID and invoice it through a project invoice proposal.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/27/2023
 ms.reviewer: twheeloc
 audience: Application User

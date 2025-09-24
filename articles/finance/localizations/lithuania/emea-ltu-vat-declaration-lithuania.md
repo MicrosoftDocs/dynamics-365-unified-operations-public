@@ -1,16 +1,15 @@
 ---
 title: VAT declaration for Lithuania (FR0600)
-description: This article explains how to set up a value-added tax (VAT) declaration for legal entities in Lithuania.
+description: Learn how to set up a value-added tax (VAT) declaration for legal entities in Lithuania in Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 09/16/2024
-ms.topic: article
+ms.date: 05/29/2025
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Lithuania
 ms.author: egolub
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
 ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 ---
 
@@ -18,7 +17,7 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to set up and generate a value-added tax (VAT) declaration for Lithuania in the XML format (FR0600), and how to preview it in Microsoft Excel.
+This article explains how to set up and generate a value-added tax (VAT) declaration for Lithuania in the XML format (FR0600), and how to preview it in Microsoft Excel.
 
 The VAT declaration feature for Lithuania supports filing a VAT return for companies that have [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and for companies that report as a VAT group in the same system database.
 
@@ -82,12 +81,14 @@ These tasks will prepare your Dynamics 365 Finance environment to generate the e
 
 ### <a name="import-er"></a>Import ER configurations
 
-Open the **Electronic reporting** workspace, and import the latest versions of these ER formats under **Tax declaration model**:
+To import ER configurations, follow these steps.
 
-- VAT Declaration XML (LT)
-- VAT Declaration Excel (LT)
+1. Open the **Electronic reporting** workspace, and import the latest versions of these ER formats under **Tax declaration model**:
 
-Import **Tax declaration model mapping** under **Tax declaration model**, and mark it **Default for model mapping**.
+    - VAT Declaration XML (LT)
+    - VAT Declaration Excel (LT)
+
+1. Under **Tax declaration model**, import **Tax declaration model mapping**, and then mark it **Default for model mapping**.
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -98,9 +99,9 @@ To automatically generate the VAT declaration, associate available sales tax tra
 > [!NOTE]
 > We recommend that you enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled, parameters that are configured for an earlier version of an ER format automatically become applicable for a later version of the same format. If this feature isn't enabled, you must explicitly configure application-specific parameters for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace as of Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
-Follow these steps to define which of the available sales tax transaction attributes (sales tax code, tax classifier) in Finance generates which field of the VAT declaration for Lithuania.
+To define which of the available sales tax transaction attributes (sales tax code, tax classifier) in Finance generates which field of the VAT declaration for Lithuania, follow these steps.
 
-1. Go to **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
+1. In Dynamics 365 Finance, go to **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
 2. Select the **VAT declaration XML (LT)** configuration, and then, on the Action Pane, select **Configurations** \> **Application specific parameters setup**.
 3. On the **Application specific parameters** page, on the **Lookups** FastTab, select **Report field lookup**.
 4. On the **Conditions** FastTab, set the following fields to associate the sales tax codes and report fields.
@@ -121,15 +122,17 @@ Follow these steps to define which of the available sales tax transaction attrib
 
 ### <a name="setup-preview"></a>Set up the VAT reporting format to preview amounts in Excel
 
-1. In the **Feature management** workspace, find and select the **VAT statement format reports** feature in the list, and then select **Enable now**.
+To set up the VAT reporting format to preview amounts in Excel, follow these steps.
+
+1. In Dynamics 365 Finance, go to the **Feature management** workspace, find and select the **VAT statement format reports** feature in the list, and then select **Enable now**.
 2. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**, and select the tax authority.
 3. In the **Report layout** field, select **Default**.
 4. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
 5. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (LT)** ER format. This format is printed when you run the **Report sales tax for settlement period** report. It's also printed when you select **Print** on the **Sales tax payments** page.
 
-If you're configuring the VAT declaration for Lithuania in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), follow these steps.
+To configure the VAT declaration for Lithuania in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), follow these steps.
 
-1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
+1. In Dynamics 365 Finance, go to **General ledger** \> **Setup** \> **General ledger parameters**.
 2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, on the line for **LTU**, select the **VAT Declaration Excel (LT)** ER format.
 
 ### <a name="setup-em"></a>Set up electronic messages
@@ -142,6 +145,8 @@ The process of setting up the **Electronic messages** functionality to generate 
 
 > [!NOTE]
 > Some records in the data entities in the package include a link to ER configurations. Before you start to import the data entities package, [import ER configurations into Finance](#import-er).
+
+To download and import the data package that has example settings for electronic messages, follow these steps.
 
 1. In [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **LT VAT declaration - FR0600 - EM setup v.\#**. The downloaded file is named **LT VAT declaration - FR0600 - EM setup v.\#.zip**. Always download the latest version of the package that's available in Lifecycle Services.
 2. In Finance, in the **Data management** workspace, select **Import**.
@@ -156,7 +161,9 @@ For more information about how you can use the data management framework, see [D
 
 #### Configure electronic messages
 
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**.
+To configure electronic messages, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**.
 2. Select the line for **LT Populate VAT return records**, and then select **Edit query**.
 3. Use the filter to specify the settlement periods to include on the report.
 4. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
@@ -175,9 +182,9 @@ The FR0600 form of the VAT declaration in Lithuania includes the following field
 - **Mokesčių mokėtojo identifikacinis numeris (kodas)** = **Taxpayer's identification number (code)** – The identification number (code) of the taxpayer must be entered.
 - **PVM mokėtojo kodas** = **VAT payer's number** – The VAT identification number is entered without the "LT" prefix.
 
-Follow these steps to configure the registration numbers of your organization.
+To configure the registration numbers of your organization, follow these steps.
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
 3. Select or create the address in Lithuania, and then, on the **Registration ID** FastTab, select **Add**.
 4. In the **Registration type** field, select the registration type that's dedicated to Lithuania and that uses the **VAT ID** registration category.
@@ -189,9 +196,9 @@ Follow these steps to configure the registration numbers of your organization.
 
 For more information about how to set up registration categories and registration types, see [Registration IDs](../europe/emea-registration-ids.md).
 
-Follow these steps to define the VAT registration number that EM uses during generation of the VAT declaration for Lithuania.
+To define the VAT registration number that EM uses during generation of the VAT declaration for Lithuania, follow these steps.
 
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**, and select the **LT VAT declaration** processing.
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**, and select the **LT VAT declaration** processing.
 2. On the **Message additional fields** FastTab, in the **Tax registration number** field, define the VAT registration number that should be used in the VAT declaration for Lithuania.
 3. Save your changes.
 
@@ -201,7 +208,9 @@ If the VAT registration number isn't specified in the **Tax registration number*
 
 ### <a name="report-sales-tax-for-settlement-period"></a>Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task
 
-1. Go to **Tax** \> **Periodic tasks** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**.
+To preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Periodic tasks** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**.
 2. Set the following fields.
 
     | Field | Description |
@@ -227,7 +236,9 @@ If the VAT registration number isn't specified in the **Tax registration number*
 
 Sales tax payment transactions are produced by the [Settle and post sales tax](../../general-ledger/tasks/create-sales-tax-payment.md) job procedure that settles sales tax balances in the sales tax accounts and offsets them to the sales tax settlement account for a given period. After the **Settle and post sales tax** job procedure is completed for an interval of the sales tax settlement period, you can generate the VAT declaration in Excel from the **Sales tax payments** page.
 
-1. Go to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**, and select a sales tax payment line.
+To preview the VAT declaration in Excel from a sales tax payment, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**, and select a sales tax payment line.
 2. Select **Print report**, specify report parameters as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#report-sales-tax-for-settlement-period) section earlier in this article, and then select **OK**.
 3. Review the Excel file that's generated for the selected sales tax payment line.
 
@@ -240,7 +251,9 @@ When you use electronic messages to generate the report, you can collect tax dat
 
 The following procedure applies to the electronic message processing example that you [imported earlier from the Lifecycle Services Shared asset library](#import-em).
 
-1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
+To generate the electronic file for the VAT declaration from electronic messages, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
 2. In the left pane, select **LT VAT declaration**.
 3. On the **Messages** FastTab, select **New**.
 4. In the **Run processing** dialog box, the **LT VAT Create message** action is predefined. Select **OK**.
@@ -266,9 +279,9 @@ To use the formats to report the VAT declaration for a group of legal entities, 
 
 ### Set up electronic messages to collect tax data from several legal entities
 
-Follow these steps to set up electronic messages to collect data from multiple legal entities.
+To set up electronic messages to collect data from multiple legal entities, follow these steps.
 
-1. Go to **Workspaces** \> **Feature management**.
+1. In Dynamics 365 Finance, go to **Workspaces** \> **Feature management**.
 2. Find and select the **Cross-company queries for the populate records actions** feature in the list, and then select **Enable now**.
 3. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**.
 4. On the **Populate records action** page, select the line for **LT Populate VAT return records**.

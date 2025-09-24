@@ -3,7 +3,7 @@ title: Update the hosted Azure Pipeline for new NuGet packages
 description: Learn about how to update an Azure pipeline to use new NuGet packages, including outlines on how to add pipeline variables and updating build solutionss steps.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/04/2021
 ms.reviewer: johnmichalak
 audience: Developer

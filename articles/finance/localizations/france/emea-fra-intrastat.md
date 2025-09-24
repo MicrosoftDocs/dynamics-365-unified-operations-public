@@ -149,7 +149,7 @@ For more information, see [Registration IDs](../europe/emea-registration-ids.md)
     - In the **Telephone** field, enter the telephone number of the contact person.
     - In the **Fax** field, enter the fax number of the contact person.
 
-9. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country/region that is part of the EU, select **EU** in the **Country/region type** field, so that the country appears on your Intrastat report. For France, select **Domestic** in the **Country/region type** field.
+9. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country/region that is part of the EU, select **EU** in the **Country/region type** field, so that the country/region appears on your Intrastat report. For France, select **Domestic** in the **Country/region type** field.
 
 ### Set up compression of Intrastat
 
@@ -222,7 +222,7 @@ The **NGP** column is specific to France and shows the NGP code for the product.
 
 #### Intrastat transfer
 
-On the **Intrastat** page, on the Action Pane, you can select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country or region of destination (for dispatches) or consignment (for arrivals) will be transferred.
+On the **Intrastat** page, on the Action Pane, you can select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country/region as the country or region of destination (for dispatches) or consignment (for arrivals) will be transferred.
 
 Because the DEB report is a combination of the EU Sales List and the Intrastat report, it also includes *triangular* transactions, where a direct delivery is made from one EU country/region (party A) to another EU country/region (party C), and a French legal entity (party B) is in the middle of the triangular deal.
 

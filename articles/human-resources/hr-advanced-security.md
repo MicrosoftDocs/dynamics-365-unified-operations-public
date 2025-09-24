@@ -4,8 +4,8 @@
 title: Restrict access to workers by legal entity
 description: This article explains how to set up worker access by legal entity.
 author: twheeloc
-ms.date: 07/08/2024
-ms.topic: article
+ms.date: 09/03/2025
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: HcmSharedParameters, HcmPersonnelManagementWorkspace
@@ -42,20 +42,18 @@ For example, a user has access to the **Worker** page and has access only to the
 - If the feature for restricting access to worker information isn't enabled, the user can view information for Aaron, Ahmed, and Alicia.
 - If the feature is enabled, the user can view information only for Alicia and Ahmed, because they're also employed in the USMF legal entity.
 
-The information that's shown varies, depending on the application that you're using.
 
+## View worker information
 
-## Dynamics 365 Human Resources 
+If the feature for restricting access to worker information is enabled, the restricted user sees the worker's name in some lists.
 
-If the feature for restricting access to worker information is enabled, the restricted user will see the worker's name in some lists.
-
-For example, a user who has access only to the USMF legal entity will experience the following behavior:
+For example, a user who has access only to the USMF legal entity experiences the following behavior:
 
 - In the **Active positions** list, the **Worker** column will show Aaron's name. If the user hovers over the worker's name, only the name and title will be shown.
 - If the user drills down on the worker's name, a blank **Worker** page will appear.
 
 > [!TIP]
-> If you're using Dynamics 365 Human resources and want restricted users to see blank values for worker names, you can add the **Restrict access to workers** security privilege to the user roles on the **Security configuration** page.
+> If you want restricted users to see blank values for worker names, add the **Restrict access to workers** security privilege to the user roles on the **Security configuration** page.
 
 After you enable the feature, you must complete some extra steps to set permissions for each user whose view must be restricted.
 

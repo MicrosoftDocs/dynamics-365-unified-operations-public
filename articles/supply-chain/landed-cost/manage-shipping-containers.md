@@ -1,10 +1,10 @@
 ---
 title: Manage shipping containers
 description: Learn how to work with shipping containers. Shipping containers are used to group together goods that are physically grouped together.
-author: lisascholz91
-ms.author: lisascholz
+author: prasungoel 
+ms.author: prasungoel 
 ms.topic: how-to
-ms.date: 06/07/2024
+ms.date: 02/14/2025
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -25,6 +25,8 @@ You create a shipping container by opening or creating the voyage where you'll u
 
     - Go to **Landed cost \> Voyages \> All voyages**. To create a new voyage, select **New** on the Action Pane, fill in the **Create voyage** dialog box as needed, and then select **OK**. To edit an existing voyage, select it, and then select **Voyage editor** on the Action Pane. In both cases, the **Voyage editor** page is opened and shows the new or selected voyage.
     - Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**. Select the purchase order to create a voyage and container for, and then, on the Action Pane, on the **Purchase** tab, in the **Landed cost** group, select **Create new voyage**. Fill in the **Create voyage** dialog box as needed, and then select **OK** to open the **Voyage editor** page.
+    > [!NOTE]
+    > To improve performance of the **Voyage Editor** page, we recommend that you select a narrow date range and filter either by purchase or transfer order ID.
 
 1. Use the filters at the top of the **Voyage editor** page to find the inbound order that you want to create the shipping container for. If you created the voyage from the **All purchase orders** page, the purchase order that you selected there will already be selected in the filter here. However, you can adjust the filters as you want.
 1. On the Action Pane, select **Generate data** to update the list of orders on the **Inbound orders** FastTab, based on your current filter settings. (Each time that you change the filter settings, you must select **Generate data** to update the inbound order list.)
@@ -39,7 +41,7 @@ You create a shipping container by opening or creating the voyage where you'll u
 
     [<img src="media/create-shipping-container.png" alt="Create shipping container dialog box." title="Create shipping container dialog box" width="720" />](media/create-shipping-container.png)
 
-1. If you want to create the shipping container in batch mode, on the **Run in the background** tab, set the **Batch processing** option to *Yes*. If your container includes a large number of lines, batch mode can help improve performance.
+1. If you want to create the shipping container in batch mode, on the **Run in the background** tab, set the **Batch processing** option to *Yes*. If your container includes a large number of lines, batch mode can help improve performance compared to using the **Voyage Editor** page.
 
     > [!NOTE]
     > The **Run in the background** tab is available only if the *Enable shipping container creation and update in batch mode* feature is turned on for your system. For information about how to turn this feature on or off, see [Turn on the Landed cost module and related features for your system](landed-cost-enable.md).)

@@ -22,7 +22,7 @@ The purpose of location stocking limits is to evaluate the maximum quantity that
 - Product variants
 - Container types
 
-For each level, you can define different field values. The system will then evaluate the capacity of a specific location, based on the **Quantity** and **Unit** values for each row. It will select the most detailed matching record first. For example, a row that has a value in the **Location profile ID** field will be evaluated before a row that has a value only in the **Warehouse** field. The remaining capacity will also be evaluated, based on the **Quantity** value for the location stocking limit record that is used.
+For each level, you can define different field values. The system evaluates the capacity of a specific location, based on the **Quantity** and **Unit** values for each row. It selects the most detailed matching record first. For example, a row that has a value in the **Location profile ID** field is evaluated before a row that has a value only in the **Warehouse** field. The remaining capacity is also evaluated based on the **Quantity** value for the location stocking limit record that is used.
 
 In the **Products** section of the page, you can define the following field values for the search for location stocking limits:
 
@@ -34,9 +34,12 @@ In the **Products** section of the page, you can define the following field valu
 - Unit
 
 > [!NOTE]
-> You don't have to define a **Unit** value for each location stocking limit record. The location capacity calculations will be based on the inventory unit quantities. If no unit conversion is defined for a value that is used, the location stocking limit record will be skipped, as if another **Item number** value is defined for it.
+> You don't have to define a **Unit** value for each location stocking limit record. The location capacity calculations are based on the inventory unit quantities. If no unit conversion is defined for a value that is used, the location stocking limit record is skipped as though another **Item number** value were defined for it.
 
 For more information about how to set up stocking limits based on container types, see [Manage inbound putaway based on container types](inbound-putaway-by-container-type.md).
+
+> [!NOTE]
+> It's possible to allow stocking limits for specific locations to be exceeded for replenishment work. Learn more in [Replenishment over location capacity](replenishment-over-location-capacity.md).
 
 ## Example – Purchase order receiving
 
@@ -58,7 +61,7 @@ Therefore, each location where the **Location profile ID** value is set to *FLOO
 
 ### Prepare for the example
 
-In this example, you will run a purchase order receiving flow for two lines. However, you must first update the demo data in the following way to ensure that the locations allow mixed items to be carried, only the empty locations *FL-002* through *FL-004* are used, and there is no open inbound work.
+In this example, you'll run a purchase order receiving flow for two lines. However, you must first update the demo data in the following way to ensure that the locations allow mixed items to be carried, only the empty locations *FL-002* through *FL-004* are used, and there's no open inbound work.
 
 1. For location *FL-001*, change the value of the **Location profile** field from *FLOOR* to *FLOOR-05*.
 1. For the *FLOOR* location profile, set the **Allow mixed items** option to *Yes*.
@@ -71,7 +74,7 @@ In this example, you will run a purchase order receiving flow for two lines. How
 
 ### Process the example
 
-You will first receive a quantity of *4* of unit *PL* in size *S*, and review the put line locations for the work that is created. You will then receive a quantity of *4* of unit *PL* in size *L*, and review the put line locations for the work that is created.
+You'll first receive a quantity of *4* of unit *PL* in size *S*, and review the put line locations for the work that is created. You'll then receive a quantity of *4* of unit *PL* in size *L*, and review the put line locations for the work that is created.
 
 1. In the Warehouse Management mobile app, sign in by using *24* as the user ID and *1* as the password.
 1. Select **Inbound** \> **Purchase Receive**.
@@ -87,7 +90,7 @@ You will first receive a quantity of *4* of unit *PL* in size *S*, and review th
     - 1 PL -\> FL-003
     - 3 PL -\> FL-004
 
-Based on the results, you might conclude that the system failed to allocate the correct putaway locations. Otherwise, why did the system add only *1* *PL* of size *L* to location *FL-003* in the last step, not *2* *PL*? That is, why isn't there is a total of *3* *PL* for putaway to that location?
+Based on the results, you might conclude that the system failed to allocate the correct putaway locations. Otherwise, why did the system add only *1* *PL* of size *L* to location *FL-003* in the last step, not *2* *PL*? That is, why isn't there a total of *3* *PL* for putaway to that location?
 
 To explain this apparent failure, you must understand the selection criteria for the location stocking limits. The system selects the most detailed matching record. In this example, the most detailed matching record is the line where the **Size** value is *L*, the **Quantity** value is *240*, and the **Unit** value is *Ea*. Because you already have open work from the previous receipt of a quantity of *120* *Ea* of size *S*, the remaining capacity is calculated as *240* – *120* = *120* *Ea*. Therefore, the remaining capacity can carry only *1* *PL* of *80* *Ea*.
 

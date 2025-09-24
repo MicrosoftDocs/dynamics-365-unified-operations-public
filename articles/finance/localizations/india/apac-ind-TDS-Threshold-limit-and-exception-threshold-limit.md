@@ -3,7 +3,7 @@ title: Threshold limit and exception threshold limit
 description: Learn about the threshold and exception limits for Tax Deducted at Source (TDS), including an example about threshold limits.
 author: epodkolzina
 ms.author: epodkolzina
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 07/01/2024

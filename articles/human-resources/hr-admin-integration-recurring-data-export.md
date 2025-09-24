@@ -5,7 +5,7 @@ title: Create a recurring data export app
 description: This article describes how to create a Microsoft Azure logic app that exports data from Microsoft Dynamics 365 Human Resources on a recurring schedule.
 author: twheeloc    
 ms.date: 08/19/2021
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: 
@@ -20,6 +20,7 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
+ms.custom: sfi-image-nochange
 
 ---
 
@@ -40,7 +41,7 @@ In one typical business scenario for Microsoft Dynamics 365 integrations, data m
 
 This tutorial uses the following technologies:
 
-- **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)** – The master data source for workers that will be exported.
+- **[Dynamics 365 Human Resources](https://www.microsoft.com/dynamics-365/products/human-resources)** – The master data source for workers that will be exported.
 - **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – The technology that provides orchestration and scheduling of the recurring export.
 
     - **[Connectors](/azure/connectors/apis-list)** – The technology that is used to connect the logic app to the required endpoints.
@@ -114,8 +115,6 @@ The bulk of the exercise involves creating the logic app.
                 "legalEntityId":"USMF"
             }
             ```
-
-        ![Invoke an HTTP request action.](media/integration-logic-app-export-to-package-step.png)
 
     > [!TIP]
     > You might want to rename each step so that it's more meaningful than the default name, **Invoke an HTTP request**. For example, you can rename this step **ExportToPackage**.

@@ -1,23 +1,22 @@
 ---
 title: Set up and report value-added tax (VAT)
-description: Learn how to set up and report value-added tax (VAT), including outlines on configuring legal entities for VAT and configuring the tax authority.
+description: Learn how to set up and report value-added tax (VAT) for United Arab Emirates (UAE) in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: kfend
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 06/05/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: UAE
-ms.dyn365.ops.version: Version 1611
-ms.search.form: 
 ms.search.validFrom: 2019-05-29
 ---
 
 # Set up and report value-added tax (VAT)
 
 [!include [banner](../../includes/banner.md)]
+
+This article explains how to set up and report value-added tax (VAT) for United Arab Emirates (UAE) in Microsoft Dynamics 365 Finance.
 
 Value-added tax (VAT) was introduced in the United Arab Emirates (UAE) on January 1, 2018. Businesses in the UAE are responsible for carefully documenting their business income, costs, and associated VAT charges.
 
@@ -27,7 +26,9 @@ Registered businesses and traders charge VAT to all their customers at the curre
 
 According to the *Requirements Document for Tax Accounting Software* that the Federal Tax Authority (FTA) issued, additional information must be set up when you configure a legal entity. 
 
-1. In Microsoft Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
+To configure a legal entity for VAT, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. On the **Value added tax** FastTab, set the following fields:
 
     - **Taxable person name** – Electronic VAT reports require the name of the taxable person. Names in English and Arabic will be filled in on reports. If the user interface (UI) language of the legal entity is set to English, the **Known as** field on the **Global address book** page can be used to store names in another language, such as Arabic.

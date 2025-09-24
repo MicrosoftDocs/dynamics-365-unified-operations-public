@@ -203,6 +203,9 @@ Next, set up the unit sequence group for the wave label type.
 1. Select the **Ea Box PL** group.
 1. For the **Box** line, set the **Wave level type** field to *Carton*.
 
+> [!NOTE]
+> If a **Wave level type** is set on a unit of measure and a wave label template references the same type, wave label records are created for the total quantity on the work line, one for each unit. For example, setting the type on unit *Box* and given a work line for five boxes, then five wave label records are created. Another example is if the work line is for a single box, and one box equals ten Ea, and the wave label type is set on the unit *Ea*, then ten wave label records are created.
+
 ### Create a wave label template for scenario 1
 
 Next, create the wave label template for the wave label type.

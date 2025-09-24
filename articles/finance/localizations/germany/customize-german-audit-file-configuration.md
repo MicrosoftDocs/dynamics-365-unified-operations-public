@@ -1,82 +1,82 @@
 --- 
 title: Customize German audit file configuration
-description: Learn how to customize the German audit file configuration by adding a new table group and selecting a table with fields for data export definition.
+description: Learn how to customize the German audit file configuration by adding a new table group and selecting a table with fields for data export definition in Microsoft Dynamics 365 Finance.
 author: mrolecki
 ms.author: mrolecki
 ms.topic: how-to
-ms.date: 08/29/2018
-ms.custom:
+ms.date: 04/04/2025
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak    
-audience: Application User 
 ms.search.region: Germany
 ms.search.validFrom: 2016-06-30
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERTableNameLookup, ERModelGDPdUFunctionEditor,  ERExpressionDesignerFormula
-ms.dyn365.ops.version: Version 7.0.0 
 ---
 
 # Customize German audit file configuration
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to customize the German audit file configuration by adding a new table group and selecting a table with fields for data export definition. 
+This article explains how to customize the German audit file configuration by adding a new table group and selecting a table with fields for data export definition in Microsoft Dynamics 365 Finance.
 
-This procedure was created using the demo data company DEMF with Germany as the country/region of legal entity primary address.
+The following procedure was created using the demo data company DEMF with Germany as the country/region of legal entity primary address.
 
-1. Go to Organization administration > Workspaces > Electronic reporting.
-2. Click Configurations.
-3. Click Show filters.
-4. Add filter
-5. Click Apply.
-6. Click Model designer.
-7. In the tree, select 'enumTableGroup'.
-8. Click New.
-9. In the Name field, type a value.
-10. In the Description field, type a value.
-11. Click Map model to datasource.
-12. Click Designer.
-13. In the tree, select 'Dynamics Ax\Table records'.
-14. Click Add root.
-15. In the Name field, type a value.
-16. In the Table field, enter or select a value.
-17. Click OK.
-18. In the tree, select 'Functions\Table metadata'.
-19. Click Add root.
-20. In the Name field, type a value.
-21. In the Label field, type a value.
-22. Click Editor.
-23. In the tree, select 'AssetTable'.
-24. Click Add.
-25. In the Name field, type a value.
-26. In the tree, expand 'AssetTable'.
-27. In the tree, select 'AssetTable\Fixed asset number(AssetId)'.
-28. Click Add.
-29. In the list, mark the selected row.
-30. In the Name field, type a value.
-31. Close the page.
-32. Click Yes.
-33. Click OK.
-34. In the tree, select 'TblGroup'.
-35. Click Edit.
-36. Click Edit formula.
-37. In the expressionAsStringText field, type a value.
-38. In the tree, expand 'enumTableGroup'.
-39. In the tree, select 'enumTableGroup\Anlagen'.
-40. Click Add data source.
-41. In the expressionAsStringText field, type a value.
-42. In the tree, select '_05Anlagen(TblGroup5)'.
-43. Click Add data source.
-44. In the expressionAsStringText field, type a value.
-45. Click Save.
-46. Close the page.
-47. Click OK.
-48. Close the page.
-49. Click Yes.
-50. Close the page.
-51. Close the page.
-52. Click Change status.
-53. Click Complete.
-54. In the Description field, type a value.
-55. Click OK.
+To add a new table group and select a table with fields for data export definition, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration > Workspaces > Electronic reporting**.
+1. Select **Configurations**.
+3. Select **Show filters**.
+1. Add filter.
+1. Select **Apply**.
+1. Select **Model designer**.
+1. In the tree, select **enumTableGroup**.
+1. Select **New**.
+1. In the **Name** field, enter a value.
+1. In the **Description** field, enter a value.
+1. Select **Map model to datasource**.
+1. Select **Designer**.
+1. In the tree, select **Dynamics Ax\Table records**.
+1. Select **Add root**.
+1. In the **Name** field, enter a value.
+1. In the **Table** field, enter or select a value.
+1. Select **OK**.
+1. In the tree, select **Functions\Table metadata**.
+1. Select **Add root**.
+1. In the **Name** field, enter a value.
+1. In the **Label** field, enter a value.
+1. Select **Editor**.
+1. In the tree, select **AssetTable**.
+1. Select **Add**.
+1. In the **Name** field, enter a value.
+1. In the tree, expand **AssetTable**.
+1. In the tree, select **AssetTable\Fixed asset number(AssetId)**.
+1. Select **Add**.
+1. In the list, mark the selected row.
+1. In the **Name** field, enter a value.
+1. Close the page.
+1. Select **Yes**.
+1. Select **OK**.
+1. In the tree, select **TblGroup**.
+1. Select **Edit**.
+1. Select **Edit formula**.
+1. In the **expressionAsStringText** field, enter a value.
+1. In the tree, expand **enumTableGroup**.
+1. In the tree, select **enumTableGroup\Anlagen**.
+1. Select **Add data source**.
+1. In the **expressionAsStringText** field, enter a value.
+1. In the tree, select **_05Anlagen(TblGroup5)**.
+1. Select **Add data source**.
+1. In the **expressionAsStringText** field, enter a value.
+1. Select **Save**.
+1. Close the page.
+1. Select **OK**.
+1. Close the page.
+1. Select **Yes**.
+1. Close the page.
+1. Select **Change status**.
+1. Select **Complete**.
+1. In the **Description** field, enter a value.
+1. Select **OK**.
 
 
 

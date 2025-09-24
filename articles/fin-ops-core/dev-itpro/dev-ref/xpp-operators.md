@@ -3,8 +3,10 @@ title: X++ operators
 description: Learn about the operators supported in X++, including an overview of assignment operators with code examples and descriptions.
 author: josaw1
 ms.author: josaw
-ms.topic: article
-ms.date: 12/02/2019
+ms.topic: language-reference
+ms.date: 05/02/2025
+ms.update-cycle: 1095-days
+ms.custom: evergreen
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -88,7 +90,7 @@ You use arithmetic operators to perform numeric calculations. Most of the operat
 |------------|------------------|
 | `<<`       | The **left shift** operator performs *expression2* left shift (multiplication by 2) on *expression1*.              |
 | `>>`       | The **right shift** operator performs *expression2* right shift (division by 2) on *expression1*.                  |
-| `\*`       | The **multiply** operator multiplies *expression1* by *expression2*.                                               |
+| `*`       | The **multiply** operator multiplies *expression1* by *expression2*.                                               |
 | `/`        | The **divide** operator divides *expression1* by *expression2*.                                                    |
 | `DIV`      | The **integer division** operator performs an integer division of *expression1* by *expression2*.                  |
 | `MOD`      | The **integer remainder** operator returns the remainder of an integer division of *expression1* by *expression2*. |

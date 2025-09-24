@@ -3,8 +3,8 @@ title: Uptake features and functions
 description: Learn about the features and functions that must be implemented to integrate a new transaction, including an overview overriding sales tax.
 author: Qiuchen-Ren
 ms.author: qire
-ms.topic: conceptual
-ms.date: 04/12/2022
+ms.topic: article
+ms.date: 02/14/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -24,7 +24,7 @@ The following features and functionalities are supported in tax integration:
 
 ## Override sales tax
 
-In tax integration, you can't edit the tax group and item tax group on a line, because taxes are determined by the Tax Calculation service. The **Override sales tax group** functionality lets you change the tax group or item tax group that's specified on a line to calculate sales tax. This calculation overrides the tax groups that are determined by the Tax Calculation service.
+In tax integration, you can't edit the tax group and item tax group on a line, because taxes are determined by the Tax Calculation engine. The **Override sales tax group** functionality lets you change the tax group or item tax group that's specified on a line to calculate sales tax. This calculation overrides the tax groups that are determined by the Tax Calculation engine.
 
 When the **Override sales tax** option is set to **Yes**, you can select a specific tax group and item tax group for tax calculation.
 
@@ -74,7 +74,7 @@ Follow these steps to enable the functionality.
 
 ## Multiple VAT ID
 
-The **Multiple VAT ID** feature enables the value-added tax (VAT) ID to be determined from the Tax Calculation service. This feature is controlled by the **Support multiple VAT registration numbers** feature. For more information, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
+The **Multiple VAT ID** feature enables the value-added tax (VAT) ID to be determined from the Tax Calculation engine. This feature is controlled by the **Support multiple VAT registration numbers** feature. For more information, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
 
 ![Support multiple VAT registration numbers feature in Feature management.](../media/vat-id-feature.jpg)
 
@@ -105,11 +105,11 @@ There's also validation logic for the legal entity registration number, in case 
 
 ### Counterparty registration number
 
-The counterparty registration number is determined by the Tax Calculation service. After the response is received, the number is validated and saved to the database together with the legal entity registration number. However, if the number that's determined by the Tax Calculation service isn't in the user's master data, the default value on the transaction header will be written to the database instead of the returned value. The counterparty registration number isn't applied to all transactions. However, there's extra logic to handle this approach.
+The counterparty registration number is determined by the Tax Calculation engine. After the response is received, the number is validated and saved to the database together with the legal entity registration number. However, if the number that's determined by the Tax Calculation engine isn't in the user's master data, the default value on the transaction header will be written to the database instead of the returned value. The counterparty registration number isn't applied to all transactions. However, there's extra logic to handle this approach.
 
 #### Default logic
 
-There's default logic from customer and vendor master data to the transaction header. You can set the **Tax-exempt number** value at the customer and vendor master data levels. When a new transaction is created, the default tax-exempt number is entered on it. However, you can select a new number to override the default number. If the number that's returned by the tax service isn't valid, the number on the header before tax calculation will be used as the default number.
+There's default logic from customer and vendor master data to the transaction header. You can set the **Tax-exempt number** value at the customer and vendor master data levels. When a new transaction is created, the default tax-exempt number is entered on it. However, you can select a new number to override the default number. If the number that's returned by the tax engine isn't valid, the number on the header before tax calculation will be used as the default number.
 
 The tax-exempt number is a string field (**VATNum**) instead of a record ID, and it has two data sources. One data source is from the tax registration number, and the other is from the tax-exempt number. Tax integration supports only the tax registration number as its source. Two new fields, **VATNumRecId** and **VATNumTableType**, should be added to the appropriate tables to distinguish the record.
 
@@ -140,8 +140,8 @@ private void initRegistrationNumbers(CustTable _custTable)
         // Sales quotation for a prospect customer doesn't apply to the counterparty VAT ID
         if (_document.getHeadingTableId() == tableNum(SalesQuotationTable) && _document.getCustVendAccount() == '')
             return false;
-        // Currently for purchase order and sales order, the party tax ID is set only if returned by the tax service.
-        // For Transfer Order, its party tax ID isn't determined by the tax service and must be set for the first calculation round.
+        // Currently for purchase order and sales order, the party tax ID is set only if returned by the tax engine.
+        // For Transfer Order, its party tax ID isn't determined by the tax engine and must be set for the first calculation round.
         return _document.isPartyTaxIdReturned()
             || ((_document.getBusinessProcess() == TaxIntegrationBusinessProcess::Inventory)
                 && !(TaxInventTransferCalcTaxContext::current() && TaxInventTransferCalcTaxContext::current().parmShouldSkipSetPartyTaxId()))
@@ -172,7 +172,7 @@ The determination is done in the tax ID activity for all transactions. Add and c
 
 ## List code
 
-The list code resembles the counterparty VAT ID in that both are determined by the service and persist in the database. The list code feature is always enabled if the list code applicability matrix is configured in Regulatory Configuration Service (RCS).
+The list code resembles the counterparty VAT ID in that both are determined by the tax engine and persist in the database. The list code feature is always enabled if the list code applicability matrix is configured in Tax calculation feature.
 
 ### Data retrieval
 
@@ -230,10 +230,10 @@ This functionality is enabled by default. Set the transaction currency, the fixe
 
 ## Cash discount
 
-If the cash discount function is already supported for the new transaction in your finance and operations apps, tax integration also enable the cash discount parameters to be determined by the Tax Calculation service. Here's a brief overview of the process for enabling this functionality.
+If the cash discount function is already supported for the new transaction in your finance and operations apps, tax integration also enable the cash discount parameters to be determined by the Tax Calculation engine. Here's a brief overview of the process for enabling this functionality.
 
 1. In the code base, find all references of cash discount parameters.
-2. Replace the references of cash discount parameters with parameters from the Tax Calculation service. The parameters can be retrieved by one of two methods:
+2. Replace the references of cash discount parameters with parameters from the Tax Calculation engine. The parameters can be retrieved by one of two methods:
 
     - `TaxIntegrationFacade:: getTaxJurisdictionParameters(RefTableId _sourceHeadingTableId, RefRecId _sourceHeadingRecId)`
     - `TaxIntegrationFacade::getTaxJurisdictionParametersByTable(Common _sourceHeadingTable)`

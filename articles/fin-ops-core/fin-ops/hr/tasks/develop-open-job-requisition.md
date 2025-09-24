@@ -2,7 +2,7 @@
 title: Develop and open job requisition
 description: Learn about how recruitment projects help manage the recruiting process, including a step-by-step job requisition process. 
 author: twheeloc
-ms.author: anbichse
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 01/10/2022
 ms.custom: 

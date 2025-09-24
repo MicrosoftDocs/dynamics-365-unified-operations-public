@@ -21,7 +21,7 @@ The *asset maintenance* scenario lets you use sensor data to create counter reco
 
 The following video shows how to set up and try out the asset maintenance scenario using standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md). The remaining sections in this article provide the same instructions in a text-based format.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58aRW]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=24d48e9f-b79f-4b78-832a-3ee9a6958cad]
 
 ## Prepare demo data for the asset maintenance scenario
 

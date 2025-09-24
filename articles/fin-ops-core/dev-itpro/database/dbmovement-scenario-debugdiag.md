@@ -92,6 +92,6 @@ Here are some common best practices that will help guarantee that your debugging
 - Make sure that the version of the code and binaries in the DevTest environment exactly match the version in the UAT environment. Connect the DevTest environment to the same branch that you build packages for deployment from. Alternatively, connect it to a "HotfixSupport" branch that is kept up to date with the latest customizations that are released.
 - Don't run a database synchronization from Visual Studio. Otherwise, you will affect the availability of the schema in the UAT database and might affect users in the UAT environment.
 - For the best experience, use a developer environment that was deployed in the same datacenter as the UAT environment.
-- Make sure that during editing or copying of the web.conifg file, you are not adding duplicate tags for SqlUser and SqlPwd. 
+- Make sure that during editing or copying of the web.config file, you are not adding duplicate tags for SqlUser and SqlPwd. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

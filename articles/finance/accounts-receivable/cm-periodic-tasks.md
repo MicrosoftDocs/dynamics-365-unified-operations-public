@@ -4,7 +4,7 @@ description: Learn about the periodic tasks that are part of the process of mana
 author: JodiChristiansen
 ms.author: twheeloc
 ms.topic: article
-ms.date: 04/24/2024
+ms.date: 01/27/2025
 ms.custom:  
 ms.reviewer: twheeloc
 audience: Application User 
@@ -53,5 +53,11 @@ As businesses evolve and circumstances change, the credit risks for a given cust
 When the **Customer balance statistics deletion job** feature is enabled in Feature management, you can use the **Delete outdated balance statistics records** periodic task to remove records from the Customer balance statistics table. If performance is affected when you run the **Calculate balance statistics** process, the table has many old records that slow down the calculation. This periodic task lets you remove older records that aren't used in the calculation but are still stored in the table.
 
 By default, the **Delete records until** field is set to one year before the current date. All records from before that date in the Customer balance statistics table are removed. You can enter a different date, depending on the number of months that's specified in the **Balance statistics** field on the **Credit and collections parameters** page. For example, if you're using 12 months of history to calculate balance statistics, the **Balance statistics** field is set to **12**. In this case, to ensure that you have 12 months of history for the calculation of balance statistics, you can't set the **Delete records until** to a date that's earlier than one year ago. If you try, you receive the following message: "The date can't be after MM/DD/YYYY because of the number of months specified under 'Balance statistics' in Credit and collections parameters." You must enter a later date. After you enter a valid date, select **OK** to remove all records from before that date in the table.
+
+
+Starting in Dynamics 365 Finance version 10.0.43, there's an option to schedule a recurring job to periodically delete outdated balance statistics based on the following time frames, starting from the run date: 
+ - 12 months to date
+ - 6 months to date
+ - 3 months to date 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

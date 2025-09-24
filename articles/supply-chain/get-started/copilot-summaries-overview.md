@@ -1,12 +1,13 @@
 ---
 title: AI summaries with Copilot
 description: This article provides an overview of the various types of Microsoft Copilot-generated summaries that are available in Dynamics 365 Supply Chain Management.
-author: t-benebo
-ms.author: benebotg
+author: prasungoel
+ms.author: prasungoel
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 08/30/2024
+ms.date: 09/11/2025
+ms.update-cycle: 180-days
 ms.custom: 
   - bap-template
 ms.collection:
@@ -18,6 +19,9 @@ ms.collection:
 AI summaries with Microsoft Copilot are available on many of the most-used pages in Dynamics 365 Supply Chain Management. These summaries provide a quick overview of the most important information that's related to the page, personalized for the current user. Summaries can include information such as the number of lines on a purchase order, the number of items in a warehouse, or the number of overdue invoices for a vendor.
 
 The information that Copilot provides depends on the current page and user context. For example, the information can vary based on the other pages that the user works with the most, and it's limited based on the user's security roles and permissions.
+
+> [!TIP]
+> Users can provide feedback to Copilot by selecting the thumbs-up or thumbs-down buttons shown under the summaries. You can add support for written feedback by turning on [enhanced user feedback for Copilot](../../fin-ops-core/dev-itpro/copilot/enable-copilot-feedback.md). This feedback helps improve the quality of the summaries that Copilot generates.
 
 ## TechTalk video
 
@@ -138,6 +142,18 @@ As appropriate, the **Insights** section provides buttons that let you filter th
 
 - **Overdue or nearly overdue lines** – Show only order lines that are overdue or nearly overdue.
 - **Lines without confirmed ship dates** – Show only order lines that aren't fully shipped (packing slip posted) and don't have a confirmed ship date.
+
+## Traceability summaries
+
+The [Traceability Add-in for Dynamics 365 Supply Chain Management](../traceability/traceability-overview.md) lets you collect business and industry-specific data across the product value chain, which can be used for regulation audits and compliance process. The Traceability app in Power Apps provides two types of Copilot-generated summaries: activity summaries and where-used summaries.
+
+### Traceability activity summaries
+
+Traceability collects activity events across the supply chain and product lifecycle, but it isn't always easy for users to get a quick picture of a tracked object's history. Copilot analyzes the many activity events associated with a selected tracked object and then provides a natural-language summary that helps you quickly understand the object's history. This summary is shown at the top of the full list of activity events.
+
+### Traceability where-used summaries
+
+Traceability provides a comprehensive where-used insight report, which lets you track the usage of items across various processes. Copilot offers detailed where-used summaries at both the item-number and quantity levels, allowing for precise analysis.
 
 ## Related information
 

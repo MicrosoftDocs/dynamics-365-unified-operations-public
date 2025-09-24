@@ -3,11 +3,12 @@ title: Create and process nonconformances
 description: Learn how to perform nonconformance management based on an existing quality order, including a step-by-step process for creating a nonconformance.
 author: johanhoffmann
 ms.author: johanho
+ms.reviewer: kamaybac
+ms.search.form: InventNonConformanceTable, InventQualityOrderTable
 ms.topic: how-to
-ms.date: 03/23/2021
-ms.custom:
-ms.reviewer: kamaybac 
-ms.search.form:
+ms.date: 01/06/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Create and process nonconformances
@@ -23,8 +24,8 @@ Before a user can process the approval of a nonconformance, a worker must be ass
 To create a nonconformance, follow these steps.
 
 1. Go to **Inventory management \> Periodic tasks \> Quality management \> Non conformances**.
-1. On the Action pane, select **New**.
-1. In the **Create non conformance** dialog box, in **Problem type** field, select the type of problem that was found during the inspection process.
+1. On the Action Pane, select **New**.
+1. In the **Create non conformance** dialog, in **Problem type** field, select the type of problem that was found during the inspection process.
 1. Select **OK**.
 
 ## Approve or reject a nonconformance
@@ -42,7 +43,7 @@ To approve or reject a nonconformance, follow these steps.
 
 ## Add operations and other details to nonconformances
 
-After you've created a nonconformance, you can start to add related operations and specify additional information about those operations. You can add related operations only to nonconformances that are approved.
+After you approve a nonconformance, you can start to add related operations and specify additional information about them. You can add related operations only to nonconformances that are approved.
 
 Besides the basic information, you can add the following details to an operation:
 
@@ -63,7 +64,12 @@ To create an operation for a nonconformance, follow these steps.
     > You can add or update operations only for nonconformances that are approved.
 
 1. On the Action Pane, select **Related operations**.
-1. On the **Related operations** page, on the Action pane, select **New** to add a row to the grid. Then set the following fields for the new row:
+1. On the **Related operations** page, add rows to the grid in one or both of the following ways:
+
+    - To add a single row to the grid, select **New** on the Action Pane.
+    - To add all the operations from a [predefined operations group](../quality-operations.md), select **Add operations from a group** on the Action Pane.
+
+1. For each new row, set the following fields:
 
     - **Operation** – Select the code of the operation that will be performed for the nonconformance.
     - **Reason** – Enter a detailed description that explains why the operation is required.
@@ -85,7 +91,7 @@ To add items to an operation, follow these steps.
 1. On the Action Pane, select **Related operations**.
 1. On the **Related operations** page, select the operation that you want to add items to.
 1. On the Action Pane, select **Items**.
-1. On the **Related operations** page, on the Action pane, select **New** to add a row to the grid. Then set the following fields for new row:
+1. On the **Related operations** page, on the Action Pane, select **New** to add a row to the grid. Then set the following fields for the new row:
 
     - **Item number** – Select the product that will be consumed as part of the selected operation.
     - **Quantity** – Enter the number of items that will be consumed.
@@ -109,7 +115,7 @@ To add quality charges to an operation, follow these steps.
 1. On the Action Pane, select **Related operations**.
 1. On the **Related operations** page, select the operation that you want to add quality charges to.
 1. On the Action Pane, select **Quality charges**.
-1. On the **Related operation charges** page, on the Action pane, select **New** to add a row to the grid. Then set the following fields for the new row:
+1. On the **Related operation charges** page, on the Action Pane, select **New** to add a row to the grid. Then set the following fields for the new row:
 
     - **Charges code** – Select the quality charge that you want to add.
     - **Description** – Enter a detailed description of the charge.
@@ -134,12 +140,12 @@ To add a timesheet to an operation, follow these steps.
 1. On the Action Pane, select **Related operations**.
 1. On the **Related operations** page, select the operation that you want to add a timesheet to.
 1. On the Action Pane, select **Timesheet**.
-1. On the **Related operation time sheets** page, on the Action pane, select **New** to add a row to the grid. Then set the following fields for the new row:
+1. On the **Related operation time sheets** page, on the Action Pane, select **New** to add a row to the grid. Then set the following fields for the new row:
 
     - **Date** – Specify the date when work was done. By default, this field is set to the current date.
     - **Worker** – Select the worker who did the work. By default, this field is set to the worker that is assigned to the current user.
     - **Operation hours** – Enter the number of hours that were worked on the selected operation.
-    - **Invoiced** – Select this check box if the time has been charged to a customer or vendor on an invoice.
+    - **Invoiced** – Select this checkbox if the time has been charged to a customer or vendor on an invoice.
 
     > [!NOTE]
     > You can view the cost in the **Cost** field on the **General** tab. The cost is calculated by using the rate that you define on the **Inventory management parameters** page.
@@ -161,14 +167,20 @@ To add a correction to a nonconformance, follow these steps.
     > You can add a correction only to nonconformances that are approved.
 
 1. On the Action Pane, select **Corrections**.
-1. On the **Corrections** page, on the Action Pane, select **New** to add a row to the grid. Then set the following fields for the new row:
+1. On the **Corrections** page, add rows to the grid in one or both of the following ways:
+
+    - To add a single row to the grid, select **New** on the Action Pane.
+    - To add a correction for each diagnostic from a [predefined diagnostic group](../quality-diagnostic-types.md), select **Apply diagnostic group** on the Action Pane.
+
+1. For each new row, set the following fields:
 
     - **Diagnostic** – Select the diagnostic type that identifies the type of correction that you're creating.
     - **Worker** – Select the person who is responsible for the correction.
     - **Correction priority** – Select an option to indicate how the correction should be prioritized (*Low*, *Normal*, or *High*).
     - **Requested date** – Enter the date when the corrective action was requested.
     - **Planned date** – Enter the date when the correction is expected to be completed.
-    - **Short term solution** – Select this check box if the corrective action corrects the nonconformance only for a short time.
+    - **Short term solution** – Select this checkbox if the corrective action corrects the nonconformance only for a short time.
+    - **Root cause code** – Select the [root cause code](../quality-root-cause-codes.md) that identifies the root cause of the issue that required the correction.
 
 1. Close the pages.
 
@@ -185,7 +197,7 @@ To mark a nonconformance correction as completed, follow these steps.
 1. On the Action Pane, select **Corrections**.
 1. On the **Corrections** page, in the grid, select the correction that you want to mark as completed.
 1. On the Action Pane, select **Mark complete**.
-1. You're prompted to confirm your selection. Select **OK** to continue. The **Completion date and time** field is set to the current date and time, and the **Completed** check box is selected.
+1. You're prompted to confirm your selection. Select **OK** to continue. The **Completion date and time** field is set to the current date and time, and the **Completed** checkbox is selected.
 1. Close the page.
 
 ## Reopen a completed correction
@@ -194,10 +206,10 @@ To reopen a completed correction, follow these steps.
 
 1. Go to **Inventory management \> Periodic tasks \> Quality management \> Non conformances**.
 1. In the list, select the nonconformance that you want to update.
-1. On the Action pane, select **Corrections**.
+1. On the Action Pane, select **Corrections**.
 1. On the **Corrections** page, in the grid, select the correction that you want to reopen.
 1. On the Action Pane, select **Reopen**.
-1. You're prompted to confirm your selection. Select **OK** to continue. The value is cleared from the **Completion date and time** field, and the **Completed** check box is cleared.
+1. You're prompted to confirm your selection. Select **OK** to continue. The value is cleared from the **Completion date and time** field, and the **Completed** checkbox is cleared.
 1. Close the page.
 
 You can now make additional edits or updates to the correction. When you've finished, you can mark the correction as completed again.

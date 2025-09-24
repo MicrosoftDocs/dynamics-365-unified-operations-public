@@ -2,15 +2,16 @@
 title: Independent software vendor (ISV) licensing
 description: Learn about the independent software vendor (ISV) licensing feature, including on outline of the feature's capabilities.
 author: pnghub
-ms.author: gned
+ms.author: kkhajuria
 ms.topic: article
-ms.date: 10/17/2023
+ms.date: 02/20/2025
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
+ms.custom: sfi-image-nochange
 ---
 
 # Independent software vendor (ISV) licensing
@@ -26,6 +27,9 @@ The Microsoft Dynamics ecosystem provides tools and frameworks that let independ
 -   ISVs can independently generate, manage, and distribute ISV licenses by using industry standard frameworks.
 
 This feature doesn't enable ISV competitor copycat protection (that is, source-based protection).
+
+> [!IMPORTANT]
+>  Starting with Dynamics 365 Finance version 10.0.43, all licenses are issued at the tenant level. This means a single license can potentially be used across multiple environments that share the same tenant ID. Licenses generated in Dynamics 365 Finance version 10.0.43 and later aren't compatible with older versions of the application.
 
 ## Capabilities
 This section describes various capabilities of the ISV licensing feature.
@@ -49,8 +53,10 @@ When an ISV license becomes invalid after import, the ISV solution continues to 
 ## Implementing ISV licensing in a solution
 ISVs must have a valid Authenticode certificate (X.509) from a certificate authority (CA). Microsoft doesn't recommend any particular CA. However, many companies offer these certificates. Authenticode certificates come in various key sizes. The ISV licensing feature supports certificates of both 1024-bit and 2048-bit key sizes. 3072-bit and 4096-bit code signing certificates are supported beginning with platform updates for version 10.0.20. We recommend that ISVs use the larger bit key size because it provides stronger encryption. However, if an ISV already has a valid 1024-bit or 2048-bit key size, that key size works with the ISV licensing feature. 
 
+For HSM-based certificates, only those with a RSA private key are supported, as the license generator exclusively works with RSA.
+
 > [!NOTE]
-> Authenticode certificates can have various cryptographic service providers. The ISV licensing feature uses Enhanced Cryptographic Provider (which also covers Base Cryptographic Provider). There are many independent providers that you can purchase an Authenticode certificate from. Microsoft doesn't recommend any particular provider. Some providers that are often used are Symantec VeriSign, and Thawte.
+> Authenticode certificates have various cryptographic service providers. The ISV licensing feature uses Enhanced cryptographic provider, which also covers Base cryptographic provider. There are many independent providers to purchase an Authenticode certificate from. 
 
 ## Certificate import and export
 The certificate is used to sign your customer license files and validate the license files at the time of import. Authenticode certificates support four file formats. For the ISV licensing feature, you must have the certificate files in two formats:
@@ -59,6 +65,9 @@ The certificate is used to sign your customer license files and validate the lic
 -   **Base64-encoded X.509** – The Base64 format supports storage of a single certificate. This format doesn't support storage of the private key or certification path.
 
 There's a restriction on the format. The PFX (PKCS \#12) format should be used only to export the certificate together with its private key for signing/generating purposes. It should never be shared outside the ISV organization. The DER-encoded binary X.509 format, which uses the .cer file name extension, should be used to export the public key of the certificate that must be embedded in the Application Object Tree (AOT) License. This public key is distributed to customers via the model. It's used when a license is imported, to make sure that the license is signed by the ISV license that owns the private key.
+
+> [!NOTE]
+> Instead of using .pfx files, ISVs can now also opt for HSM (Hardware Security Module)–based keys for private key storage, with the tool able to load the certificate directly from the store. However, the public key is still required in the Base64-encoded X.509 format.
 
 ## Enable licensing for your ISV solution
 Follow these steps to enable licensing for your solution.
@@ -126,6 +135,35 @@ Follow these steps to enable licensing for your solution.
 
 2.  Generate a license for the customer (tenant ID and name), and sign the license by using the certificate's private key. You must pass the following parameters to the **axutil genlicense** command to create the license file.
 
+    **For environments on version >= 10.0.43**
+
+    | Parameter name  | Description                                                                  |
+    |-----------------|------------------------------------------------------------------------------|
+    | file            | The name of your license file.                                               |
+    | licensecode     | The name of your license code (from Microsoft Visual Studio).                |
+    | serialnumber    | The customer's tenant ID (labeled "Serial number" in the screenshot).        |
+    | subjectname| Specifies the subject name of the certificate that is installed in the certificate store (Current User/My). To load the certificate, you can use either the subjectname or certificatepath/password, but not both. This parameter is available in Dynamics 365 Finance version 10.0.37 and higher. |
+    | thumbprint| Optional: It's a unique identifier for selecting a particular certificate with the given subject name. While this parameter is optional, it can only be used along with subjectname. If thumbprint isn't specified and the store contains multiple certificates with same subject name, the tool picks up the certificate with the furthest(maximum) expiry. This parameter is available in Dynamics 365 Finance version 10.0.37 and higher. |
+    | certificatepath | The path of your certificate's private key. This is to be used if you do not have the HSM based certificate. |
+    | password        | The password for your certificate's private key.                             |
+    | expirationdate  | Optional: The expiration date for the license.                               |
+    | usercount       | Optional: The number that custom validation logic can use as required. This number could be users, but isn't limited to users. |
+        
+
+    Example for HSM based key.
+     > [!NOTE]
+     > To use the subject name and thumbprint parameters, first install the certificate to the Windows certificate store. Go to **Current user** > **Personal (My)** and run the following command:
+    ```Console
+    C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /licensecode:ISVLicenseCode /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /subjectName:"ISVCert" /thumbprint:******** /expirationdate:11/30/2023 
+     ```
+     
+    Example for file based key.
+    ```Console
+    C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /licensecode:ISVLicenseCode /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /certificatepath:c:\tempisvcert.pfx /password:********
+    ```
+
+    **For environments on version < 10.0.43**
+
     | Parameter name  | Description                                                                  |
     |-----------------|------------------------------------------------------------------------------|
     | file            | The name of your license file.                                               |
@@ -142,21 +180,19 @@ Follow these steps to enable licensing for your solution.
     | subjectname| Specifies the subject name of the certificate that is installed in the cert store (Current User/My). To load the certificate, you can use either the subjectname or certificatepath/password, but not both. This parameter is available in Dynamics 365 Finance version 10.0.37 and higher. |
     | thumbprint| Optional: It's a unique identifier for selecting a particular certificate with the given subject name. While this parameter is optional, it can only be used along with subjectname. If thumbprint isn't specified and the store contains multiple certificates with same subject name, the tool picks up the certificate with the furthest(maximum) expiry. This parameter is available in Dynamics 365 Finance version 10.0.37 and higher. |
         
-
-    For example.
- 
-    ```Console
-    C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
-    ``` 
-   
+    Example for HSM based key.
     > [!NOTE]
     > To use the subjectname and thumbprint parameter: first install the certificate to Current User | My store, and then run the following command:
-    
     ```Console
     C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /licensecode:ISVLicenseCode  /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /subjectName:"ISVCert" /thumbprint:******** /expirationdate:11/30/2023 
      ```
+    
+    Example for file based key.
+    ```Console
+    C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
+    ``` 
 
-3.  Import the license into the target environment.
+4.  Import the license into the target environment.
 
     > [!NOTE]
     > In production systems, you complete this step from Microsoft Dynamics Lifecycle Services (LCS), by using a deployable package. For more information, see the "Production environments" section later in this article.
@@ -178,11 +214,11 @@ Follow these steps to enable licensing for your solution.
     C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ******** --licensefilename c:\templicense.txt
     ```
 
-4.  The corresponding configuration key is available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, see the **ISVConfigurationKey1** configuration key in the following screenshot. 
+5.  The corresponding configuration key is available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, see the **ISVConfigurationKey1** configuration key in the following screenshot. 
 
     ![ISVConfigurationKey1 configuration key enabled on the License configuration page.](media/isv_license_configuration_page.png)
 
-5.  In nonproduction installations, you must start the database synchronization process from Visual Studio.
+6.  In nonproduction installations, you must start the database synchronization process from Visual Studio.
 
 After the configuration key is enabled, the button becomes visible, as shown in the following screenshot. 
 

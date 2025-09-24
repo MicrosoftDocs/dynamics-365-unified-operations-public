@@ -3,7 +3,7 @@ title: Consolidate shipments when the shipment consolidation policy is overridde
 description: Learn about a scenario where one or more sales lines must be manually released to the warehouse from the Release to warehouse page.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/12/2020
 ms.custom:
 ms.reviewer: kamaybac
@@ -71,6 +71,5 @@ Follow these steps to review the shipments that were created.
 
 - [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,64 +1,71 @@
 ---
 title: Original invoice reference (Eastern Europe)
-description: Learn about creating corrective lines in a credit note for a sales order, including a step-by-step process on creating sales orders.
+description: This article describes how to create sales orders and corrective lines in a credit note for a sales order in Estonia with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.date: 04/05/2024
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Estonia
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Original invoice reference (Eastern Europe)
 
 [!include [banner](../../includes/banner.md)]
 
-This task walks you through creating corrective lines in a credit note for a sales order. This task was created using the demo data company DEMF with a primary address in Poland.
+This article describes how to create sales orders and corrective lines in a credit note for a sales order in Estonia with Microsoft Dynamics 365 Finance.
 
+The following procedures use the demo data company DEMF with a primary address in Poland.
 
 ## Create a sales order
-1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
-2. Click **New**.
-3. In the **Customer account** field, enter or select a value.
-4. Click **OK**.
-5. In the list, mark the selected row.
-6. In the **Item number** field, enter or select a value.
-7. In the **Quantity** field, enter a number.
-8. Click **Save**.
-9. On the Action Pane, click **Invoice**.
-10. Click **Invoice**.
-11. Expand the **Parameters** section.
-12. In the **Quantity** field, select an option.
-13. Expand the **Setup** section.
-14. In the **Sales date** field, enter a date.
-15. In the list, mark the selected row.
-16. Click **OK**.
-17. Click **OK**.
 
-## Create a credit note
-1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
-2. Click **New**.
-3. In the **Customer account** field, enter or select a value.
-4. Click **OK**.
-5. On the Action Pane, click **Sell**.
-6. Click **Credit note**.
-7. Select the **Select all** checkbox.
-8. Expand the **Parameters** section.
-9. In the **Reason code** field, enter or select a value.
-10. Click **OK**.
-11. In the list, mark the selected row.
-12. In the list, find and select the desired record.
-13. In the **Quantity** field, enter a number.
-14. Click **OK**.
-15. Click **Save**.
-16. On the Action Pane, click **Invoice**.
-17. Click **Invoice**.
-18. In the list, find and select the desired record.
-19. Click **OK**.
-20. Click **OK**.
+To create a sales order, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
+1. Select **New**.
+1. In the **Customer account** field, enter or select a value.
+1. Select **OK**.
+1. In the list, mark the selected row.
+1. In the **Item number** field, enter or select a value.
+1. In the **Quantity** field, enter a number.
+1. Select **Save**.
+1. On the Action Pane, select **Invoice**.
+1. Select **Invoice**.
+1. Expand the **Parameters** section.
+1. In the **Quantity** field, select an option.
+1. Expand the **Setup** section.
+1. In the **Sales date** field, enter a date.
+1. In the list, mark the selected row.
+1. Select **OK**.
+1. Select **OK**.
+
+## Create a credit note for a sales order
+
+To create a sales order for a sales order, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
+1. Select **New**.
+1. In the **Customer account** field, enter or select a value.
+1. Select **OK**.
+1. On the Action Pane, select **Sell**.
+1. Select **Credit note**.
+1. Select the **Select all** checkbox.
+1. Expand the **Parameters** section.
+1. In the **Reason code** field, enter or select a value.
+1. Select **OK**.
+1. In the list, mark the selected row.
+1. In the list, find and select the desired record.
+1. In the **Quantity** field, enter a number.
+1. Select **OK**.
+1. Select **Save**.
+1. On the Action Pane, select **Invoice**.
+1. Select **Invoice**.
+1. In the list, find and select the desired record.
+1. Select **OK**.
+1. Select **OK**.
 
 
 

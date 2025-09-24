@@ -5,7 +5,7 @@ title: Process life event eligibility
 description: This article explains how to process life event eligibility.
 author: twheeloc  
 ms.date: 08/23/2021
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer

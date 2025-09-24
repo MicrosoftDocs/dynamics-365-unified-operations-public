@@ -1,5 +1,5 @@
 ---
-title: Enable and configure CLM integration (preview)
+title: Enable and configure CLM integration
 description: Learn how to configure the integration of Microsoft Dynamics 365 Supply Chain Management and third-party contract lifecycle management (CLM) providers.
 author: ShriramSivasankaran
 ms.author: shriramsiv
@@ -11,11 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# Enable and configure CLM integration (preview)
+# Enable and configure CLM integration
 
 [!include [banner](../../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
 
 This article describes the configuration steps that must be completed to integrate Microsoft Dynamics 365 Supply Chain Management and third-party contract lifecycle management (CLM) providers. The configuration must be done in both Supply Chain Management and your CLM system before you can start to use the integration.
 
@@ -23,11 +21,10 @@ You can always manually configure the settings in Supply Chain Management as des
 
 ## Prerequisites
 
-To use the features that are described in this article, you must be running Supply Chain Management version 10.0.42 or later.
+To use the features described in this article, your system must meet the following requirements:
 
-## Enable the feature
-
-If your system doesn't already include the features that are described in this article, go to [Feature management](../../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *(Preview) Integrate with external contract lifecycle management systems* feature.
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.42 or later.
+- The feature that is named *Integrate with external contract lifecycle management systems* must be turned on in [feature management](../../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up CLM connection parameters
 

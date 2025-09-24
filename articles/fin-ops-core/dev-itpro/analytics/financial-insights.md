@@ -4,14 +4,15 @@ description: Financial analysis uses Microsoft Power BI to bring together financ
 author: kweekley
 ms.author: kweekley
 ms.topic: article
-ms.custom: 
-  - bap-template
 ms.date: 09/24/2023
 ms.reviewer: twheeloc
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Financial analysis

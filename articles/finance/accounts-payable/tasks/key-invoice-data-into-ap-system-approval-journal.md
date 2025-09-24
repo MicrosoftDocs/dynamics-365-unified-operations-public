@@ -4,7 +4,7 @@ description: Learn about how to use the invoice register to create invoices and 
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 07/31/2023
+ms.date: 08/04/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 
@@ -46,7 +46,7 @@ This article explains how to use the invoice register to create invoices and the
 5. Select **Find Vouchers** to display all of the invoices that are ready for approval.
 6. Mark the invoice that you created, then click **Select**. The vouchers that you selected above are moved to this list after you select them.  
 7. Select **OK**.
-8. Select the **account number** field to add an expense account to the invoice.
+8. Select the **Account number** field to add an expense account to the invoice.
 9. Enter an account number and tab off of the field. For example, enter `600120`.
 10. Select **Post**.
 11. Select **Voucher** to view the entries that were posted. The **Invoice pending approval** account is reversed and replaced with the actual expense account.  

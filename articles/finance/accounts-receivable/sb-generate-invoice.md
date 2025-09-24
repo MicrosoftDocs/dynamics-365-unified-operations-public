@@ -3,8 +3,8 @@ title: Generate invoices from billing schedules
 description: Learn about how to create invoices from billing schedules in Subscription billing, including overviews on consolidation and top billing items.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
-ms.date: 01/27/2023
+ms.topic: how-to
+ms.date: 02/27/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.scope: Core, Operations
@@ -54,7 +54,7 @@ Use the **Batch** button to add the lines to a batch job that will be processed 
 Use the options on the **Consolidation** FastTab to combine multiple billing schedule lines when you create the sales order.
 
 - **Consolidate all periods** – Set this option to **Yes** to combine multiple billing periods for the same line item into one line on the sales order. For example, a billing schedule line item has a monthly billing frequency from January through December. The quantity is 1, and the billing amount is 100.00. If the first three periods (January through March) are selected, the sales order that's created will have one line that has a quantity of 3 and a net amount of 300.00. If this option is set to **No**, the sales order will have three lines, one for each billing period, and each line will have a quantity of 1 and a net amount of 100.00. 
-- **Consolidate by customer** – Set this option to **Yes** to combine billing schedules lines if the customer ID, document ID, customer reference, project (if it's used), and currency ID are the same. Terms of payment, payment method, and payment schedule must also be the same to consolidate by customer. 
+- **Consolidate by customer** – Set this option to Yes to combine billing schedules if the customer ID, document ID (a unique Document ID is assigned) to each sales document, customer reference, project (if it's used), and currency ID are the same. Terms of payment, payment method, and payment schedule must also be the same to consolidate by customer.
 - **Consolidate by item** – Set this option to **Yes** to combine billing schedule lines if the items and project are the same. If any items belong to item groups where the value of the **Number of top lines** field on the **Item group setup** page is more than 0 (zero), this option is automatically set to **No**. 
 - **Split by item group** – Set this option to **Yes** to use the top billing feature. For more information, see the [Top billing items](#top-billing-items) section later in this article. 
 

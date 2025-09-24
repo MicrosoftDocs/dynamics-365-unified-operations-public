@@ -3,8 +3,8 @@ title: Credit management parameters setup
 description: Learn about the options that you can use to configure Credit management to meet your business's requirements, including an outline on credit parameters.
 author: JodiChristiansen
 ms.author: twheeloc
-ms.topic: article
-ms.date: 05/07/2024
+ms.topic: install-set-up-deploy
+ms.date: 07/23/2025
 ms.custom:  
 ms.reviewer: twheeloc 
 audience: Application User
@@ -20,13 +20,15 @@ ms.dyn365.ops.version:
 
 This article describes the options that you can use to configure Credit management to meet your business's requirements. To use Credit management features, set up the parameters on the **Credit and collections parameters** page (**Credit and collections \> Setup \> Credit and collections parameters**).
 
+As of Microsoft Dynamics 365 Finance 10.0.43 the Credit management feature has been moved to a parameter in **Accounts receivable parameters**, **Credit management** tab. By default the **Credit management** parameter is set to **Yes**. If the Credit management feature in Feature management is disabled, you see a messgage that it can't be enabled through Feature management and is controlled by the Accounts receivable parameter. You can set it to **No** in the Accounts receivable parameters if you don't want to use Credit management. 
+
 ## Credit parameters
 
 There are four FastTabs in the **Credit** section where you can change the parameters that control Credit management: **Credit holds**, **Credit management checkpoint**, **Credit management statistics**, and **Credit limits**. The following sections describe the settings that are available on each FastTab.
 
 ### Credit holds
 
-- Set the **Allow edit of sales orders value after order hold is released** option to **No** to require that the posting rules be checked again if the sales order value (extended price) has been increased since the sales order was released from the on-hold list.
+- Set the **Skip credit management blocking rules after order hold is released** option to **No** to require that the posting rules be checked again when sales orders are released from the credit management hold list. 
 - In the **Reasons for canceled orders** field, select the release reason that will be used by default when a sales order that was on credit management hold is canceled.
 - Set the **Check customer credit groups credit limit** option to **Yes** to check the credit limit of a customer credit group when the customer on a sales order belongs to a customer credit group. The credit limit for the group will be checked, and then, if it's sufficient, the credit limit for the customer will be checked.
 - Set the **Check credit limit when payment terms are increased** option to **Yes** to check the payment terms rankings to determine whether the payment terms on the sales order differ from the default payment terms for the customer. If the new payment terms have a higher rank than the original payment terms, the order is put on credit management hold.

@@ -4,13 +4,14 @@ description: Learn how to set up electronic messages for SPED-Reinf events for B
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 06/26/2024
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8.1
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Set up electronic messages for SPED-Reinf events
@@ -139,4 +140,3 @@ Before a message is delivered, set up XML schema validation to help prevent reje
 
 7. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web service settings**, and set up a web services connection and certificates to issue and inquire about events.
 
-    ![Web services connection and certificates set up on the Web services settings page.](../media/bra-web-service-settings21.png)

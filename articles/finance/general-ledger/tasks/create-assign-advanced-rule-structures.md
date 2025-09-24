@@ -4,7 +4,7 @@ description: Learn how to create and assign an advanced rule structure to an acc
 author: aprilolson
 ms.author: aolson
 ms.topic: how-to
-ms.date: 05/19/2023
+ms.date: 09/05/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User  
@@ -21,7 +21,7 @@ This article explains how to create and assign an advanced rule structure to an 
 
 ## Create an advanced rule structure
 1. Go to **General ledger > Chart of accounts > Structures > Advanced rule structures**.
-2. Select **New** to open the drop dialog.
+2. Click **New** to open the drop dialog.
 3. In the **Advanced rule structure** field, type a name to describe the rule structure.
 4. Select **OK**.
 5. Select **Add segment**.

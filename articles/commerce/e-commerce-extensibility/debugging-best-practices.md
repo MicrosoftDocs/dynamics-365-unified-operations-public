@@ -2,15 +2,15 @@
 title: Debugging best practices for Dynamics 365 Commerce development
 description: This article describes some best practices to follow when debugging Microsoft Dynamics 365 Commerce customizations.
 author: samjarawan
-ms.date: 05/28/2024
+ms.date: 09/23/2025
 ms.topic: how-to
-audience: Developer
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Debugging best practices for Dynamics 365 Commerce development 
@@ -88,7 +88,7 @@ Adding the query string ```?item=nodeserviceproxy:true``` returns the raw page c
 
 Adding the query string ```setswitch=node_lazyload_{module | all}``` forces a module (or all modules) to be loaded on the client side. When hitting a production URL, server-side actions are abstracted away from the browser, resulting in requests not appearing in the browser's networking tab. When the lazy load query string is applied, actions and modules are forced to load on the client side. You can then use a networking tool such as Fiddler or the Chrome network tab to track the data action requests a module is making. 
 
-## Troubleshoot common issues
+## Diagnose and debug common issues
 
 ### My module isn't loading
 If your module is loading, try the following steps to resolve this issue: 

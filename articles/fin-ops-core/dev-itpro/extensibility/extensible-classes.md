@@ -3,7 +3,7 @@ title: Write extensible classes
 description: Learn about how to write extensible classes, including examples of non-extensible code and extensible code with overviews of class hierarchies and deprecation.
 author: smithanataraj
 ms.author: smnatara
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/09/2018
 ms.reviewer: johnmichalak
 audience: Developer

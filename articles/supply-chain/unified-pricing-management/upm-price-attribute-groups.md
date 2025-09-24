@@ -1,5 +1,5 @@
 ---
-title: Price attribute groups (preview)
+title: Price attribute groups
 description: Learn how to configure price attribute groups for the Unified pricing management module, including an outline on price attribute scopes.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,11 +10,9 @@ ms.reviewer: kamaybac
 ms.search.form: GUPPricingAttributeGroup
 ---
 
-# Price attribute groups (preview)
+# Price attribute groups
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 Each *price attribute group* establishes a collection of price attributes. When you define a pricing rule, you can select a price attribute group and then specify values for each of the associated attributes. In this way, you define the match criteria that are used to select the sales orders and order lines that the rule applies to. This article explains how to configure price attribute groups for the Unified pricing management module.
 
@@ -94,7 +92,7 @@ To add, edit, or delete a price attribute group, follow these steps.
 
     - **Friendly name** – Enter a descriptive or common name for the group. For new groups, the value initially matches the value that you entered in the **Price attribute group** field, but you can change it.
     - **Description** – Enter a short description of the group.
-    - **Help text** – Enter help text that will be shown to describe the group on other pages of Microsoft Dynamics 365 Supply Chain Management.
+    - **Help text** – Enter help text that will be shown to describe the group.
     - **Sales order matching scope** – If you're creating a new group, select the [scope](#scopes) (*Header* or *Line*) where this group will apply. This field becomes read-only after you save the group.
 
 1. On the Action Pane, select **Save**.

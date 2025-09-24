@@ -3,7 +3,7 @@ title: Export business-to-business (B2B) users to Microsoft Entra ID
 description: Learn about implementing the business-to-business transaction functionality, including an overview on setting up invitation service applications.
 author: paulliew
 ms.author: paulliew
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/09/2019
 ms.custom:
 ms.reviewer: johnmichalak

@@ -1,9 +1,9 @@
 ---
 title: Calculate sales order delivery dates using CTP
 description: Capable-to-promise (CTP) functionality lets you give customers realistic dates for when you can promise specific goods.
-author: t-benebo
-ms.author: benebotg
-ms.topic: article
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 10/25/2024
 ms.reviewer: kamaybac
 ms.search.form: SalesAvailableDlvDates, SalesTable, CustParameters, InventItemOrderSetup
@@ -27,17 +27,12 @@ Item A is an item that is composed of items B and C, and the on-hand quantity of
 
 A CTP calculation that considers both materials and resources might show a larger quantity than a calculation that checks only materials, particularly when the item that is being checked is an assemble-to-order item. In other words, CTP functionality is based on the explosion function and can be run for a selected sales order line to calculate the expected delivery date.
 
-## <a name="real-time-ctp"></a>Near real-time CTP (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM:  Preview until further notice -->
+## <a name="real-time-ctp"></a>Near real-time CTP
 
 *Near real-time CTP* enables the system to calculate CTP confirmed dates in the background, without blocking user interface (UI) interactions and without requiring that you run planning to update the dates. *Near real-time CTP* also lets you use standard CTP delivery date control with Planning Optimization. This approach removes some of the limitations that apply when you use CTP with either planning engine. Without *Near real-time CTP*, you must use *Batch CTP* instead of *CTP* delivery date control if you're using Planning Optimization.
 
 > [!NOTE]
 > Because both Planning Optimization and the deprecated master planning engine can now use standard *CTP* delivery date control, CTP for Planning Optimization delivery date control is renamed in Supply Chain Management version 10.0.41. It's now named *Batch CTP* instead of *CTP for Planning Optimization* to better describe the difference.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Enable Near real-time CTP
 
@@ -46,8 +41,8 @@ Before you can use *Near real-time CTP*, your system must meet the following req
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.41 or later.
 - The following features must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order):
 
-    1. *(Preview) Improve Planning Optimization performance by merging and queueing plan regeneration jobs*
-    2. *(Preview) Near real-time CTP*
+    1. *Improve Planning Optimization performance by merging and queueing plan regeneration jobs*
+    2. *Near real-time CTP*
 
 ### Queueing and merging plan regeneration jobs
 
@@ -163,8 +158,10 @@ The **Batch CTP status** field indicates whether confirmed dates have been calcu
 - To view the status for an entire order, open the sales order, and select the **Header** view. Then, on the **Delivery** FastTab, review the **Batch CTP status** value. The **Delivery** FastTab also shows the **Confirmed ship date** and **Confirmed receipt date** values for the order after they are calculated.
 
 > [!NOTE]
+>
 > - If you update a sales order line after Batch CTP has calculated confirmed dates for it, the system clears those dates until the next time that the appropriate dynamic plan is run.
 > - If you edit a related setting that might affect existing confirmed dates (for example, by changing lead times, reservations, or markings), you should clear the confirmed dates for the relevant existing orders. This action will cause the status of each relevant line to be changed to *Not ready*. This change, in turn, will cause the system to recalculate the confirmed dates the next time that it runs the dynamic plan.
+> - Batch CTP only calculates confirmed dates for sales lines with status *Not Ready*, so subsequent Planning Optimization runs that affect planned supply for sales lines with status *Ready* might cause the confirmed dates to become out of sync with the latest plan result. To prevent this, consider firming planned orders early to make sure that generated supply remains unaffected by future Planning Optimization runs.
 
 ## <a name="change-orders"></a>Change existing sales orders so that they use CTP
 

@@ -3,7 +3,7 @@ title: Store Commerce app triggers and printing
 description: This article describes how to use triggers to capture events that occur before and after any Microsoft Dynamics 365 Commerce Store Commerce app operations.
 author: josaw1
 ms.date: 11/02/2023
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

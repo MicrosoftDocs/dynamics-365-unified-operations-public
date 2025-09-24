@@ -148,6 +148,6 @@ To associate a credit or debit note with an original invoice, select **Credit in
 
 ## Additional resources
 
-- [Get started with Electronic invoicing for Indonesia](e-invoicing-id-get-started.md)
+- [Get started with Electronic invoicing for Indonesia](gs-e-invoicing-id-get-started.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

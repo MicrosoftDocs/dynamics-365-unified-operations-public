@@ -3,7 +3,7 @@ title: Complete tasks in Business process modeler (BPM)
 description: Learn about additional tasks that you can complete in Business process modeler (BPM), including the process of uploading a task recording.
 author: AngelMarshall
 ms.author: tsmarsha
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/15/2020
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -11,6 +11,7 @@ ms.search.region: Global
 ms.search.validFrom:
 ms.search.form:
 ms.dyn365.ops.version: 2012
+ms.custom: sfi-image-nochange
 ---
 
 # Complete tasks in Business process modeler (BPM)
@@ -25,11 +26,9 @@ ms.dyn365.ops.version: 2012
 
 2. Select the process to upload the task recording to. 
 
-    ![Selecting a process.](./media/select-upload.PNG "Selecting a process")
+    ![Selecting a process.](./media/select-upload.png "Selecting a process")
 
 3. On the **Overview** pane, select **Upload**. Select **Browse** to find and select the file to upload, and then select **Upload**.
-
-    ![Upload AXTR dialog box.](./media/upload.PNG "Upload AXTR dialog box")
     
 ## Download a task recording
 

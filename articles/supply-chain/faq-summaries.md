@@ -1,10 +1,11 @@
 ---
 title: Responsible AI FAQ for AI summaries with Copilot
 description: Access answers to frequently asked questions about the AI technology that's used in AI summaries with Microsoft Copilot in Dynamics 365 Supply Chain Management.
-author: t-benebo
-ms.author: benebotg
-ms.topic: article
-ms.date: 11/07/2024
+author: prasungoel
+ms.author: prasungoel
+ms.topic: faq
+ms.date: 09/11/2025
+ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac
@@ -28,6 +29,8 @@ The information that Copilot provides depends on the current page and user conte
 
 AI summaries with Copilot use Copilot to generate natural-language summaries of information that's available on the pages where they appear and other related pages. Copilot uses the *gpt-3.5-turbo* generative AI model to generate the natural-language content. Summaries and content are generated from data records that are stored in the system, including products, purchase orders, and vendors.
 
+[!INCLUDE[rai-feedback-mechanism.md](../includes/rai-feedback-mechanism.md)]
+
 ## What is the intended use of AI summaries with Copilot?
 
 This section describes the intended use for each of the available summaries.
@@ -47,6 +50,14 @@ Sales order summaries are similar to purchase order summaries, but for sales ord
 ### Vendor summaries
 
 Intelligent vendor summaries include information about vendor on-hold status, active contracts, rebates, open purchase orders, outliers, and risks. Each summary indicates the vendor's account number, vendor currency, and accounting currency. Purchase orders, posted vendor invoices, and payment status information are provided. Overdue vendor invoices, purchasing agreements, and active rebates are also shown. Risks arise from overdue purchase lines, delivery trends, vendor history, and potential foreign exchange losses from outstanding invoices.
+
+### Traceability activity summaries
+
+The Traceability Add-in for Dynamics 365 Supply Chain Management collects activity events across the supply chain and product lifecycle, but it isn't always easy for users to get a quick picture of a tracked object's history. Copilot analyzes the many activity events associated with a selected tracked object and then provides a natural-language summary that helps you quickly understand the object's history. This summary is shown at the top of the full list of activity events.
+
+### Traceability where-used summaries
+
+Traceability provides a comprehensive where-used insight report, which lets you track the usage of items across various processes. Copilot offers detailed where-used summaries at both the item-number and quantity levels, allowing for precise analysis.
 
 ## How were AI summaries with Copilot evaluated? What metrics are used to measure performance?
 

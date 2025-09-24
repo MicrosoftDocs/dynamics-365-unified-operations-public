@@ -29,17 +29,17 @@ Here are two of the many benefits of this approach:
 
 The following is an overview of the procedures that you must complete:
 
-1. Create a new Event Grid article.
-2. Create a new key vault to store the key for the Event Grid article.
+1. Create a new Event Grid topic.
+2. Create a new key vault to store the key for the Event Grid topic.
 3. Register an Azure app that has permission to access the key vault.
 4. Configure the parameters of the endpoint.
 5. Consume the business event.
 
-## Procedure 1: Create a new Event Grid article
+## Procedure 1: Create a new Event Grid topic
 
 1. Sign in to the Azure portal.
 2. Select **All services \> Integration \> Event Grid Topics**.
-3. Select **Add** to create a new Event Grid article. Set the parameters, and then select **Create**. You can create a new resource group as a container for your lab, or you can use an existing resource group.
+3. Select **Add** to create a new Event Grid topic. Set the parameters, and then select **Create**. You can create a new resource group as a container for your lab, or you can use an existing resource group.
 4. After deployment is completed, select the new Event Grid. On the property blade, select **Overview**, and make a note of the **Topic Endpoint** value. You need this value later.
 5. Back on the property blade, select **Access keys**, and copy the **Key 1** value. You need this value when you configure the key vault in the next procedure.
 
@@ -95,9 +95,9 @@ The business scenario involves sending an email message whenever a free text inv
 
 1. Select the business event catalog and look for **free text invoice posted** business event.
 2. Then activate the business event for USMF company. Once activated, a test message is sent to validate the configuration and cache the connection.
-3. To verify that the test message has been received, in the Azure portal, select your Event Grid article, and then select **Metrics**. Verify that both the **Published Events** metric and the **Unmatched Events** metric show a value of at least **1**. If they don't, wait for the batch job to pick up your message.
+3. To verify that the test message has been received, in the Azure portal, select your Event Grid topic, and then select **Metrics**. Verify that both the **Published Events** metric and the **Unmatched Events** metric show a value of at least **1**. If they don't, wait for the batch job to pick up your message.
 
-    When both metrics have a value of at least **1**, you create a new logic app to subscribe to your Event Grid article.
+    When both metrics have a value of at least **1**, you create a new logic app to subscribe to your Event Grid topic.
 
 4. Select **All services \> Integration \> Logic Apps**.
 5. Create a new logic app in your resource group.
@@ -109,7 +109,7 @@ The business scenario involves sending an email message whenever a free text inv
 
     <img alt="Event grid trigger" src="../../media/BEF-Howto-EventGrid-11.png" width="50%">
 
-8. Select your subscription, select **Microsoft.EventGrid.Topics** as the resource type, and select the name of the Event Grid article that you created in procedure 1.
+8. Select your subscription, select **Microsoft.EventGrid.Topics** as the resource type, and select the name of the Event Grid topic that you created in procedure 1.
 
     <img alt="Event grid trigger parameters" src="../../media/BEF-Howto-EventGrid-12.png" width="50%">
 

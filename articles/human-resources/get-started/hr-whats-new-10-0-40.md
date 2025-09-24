@@ -4,7 +4,8 @@ description: This article describes features that are either new or changed in t
 author: twheeloc
 ms.author: twheeloc
 ms.date: 05/10/2024
-ms.topic: conceptual
+ms.update-cycle: 1095-days
+ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
@@ -48,7 +49,7 @@ originally published.
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance version 10.0.40 includes platform updates. To learn more, see [Platform updates for version 10.0.40 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-40.md).
+Dynamics 365 Human Resources version 10.0.40 includes platform updates. To learn more, see [Platform updates for version 10.0.40 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-40.md).
 
 ### Bug fixes
 

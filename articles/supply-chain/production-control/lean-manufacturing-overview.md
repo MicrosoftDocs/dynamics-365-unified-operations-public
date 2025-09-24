@@ -3,12 +3,12 @@ title: Lean manufacturing overview
 description: Access an overview and description of the lean manufacturing features in Dynamics 365 Supply Chain Management, including an outline on modeling manufacturing.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: overview
-ms.date: 06/20/2017
 ms.reviewer: kamaybac
-ms.collection: get-started
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow, Kanban, KanbanQuantityOverview, KanbanAssignCard, KanbanCirculatingCards, KanbanRules, WHSKanbanWaveTableManagePickingListPool
-ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
+ms.topic: overview
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Lean manufacturing overview
@@ -42,7 +42,7 @@ A pull system produces goods only when goods are needed. This practice reduces d
 
 - **Fixed quantity** kanban rules are related to a fixed number of handling units, which means that the numbers of active kanbans are constant. Whenever all the products from a Kanban are consumed and the handling units are manually emptied, a new kanban of the same type is created. When you create fixed quantity kanban rules, you can calculate the optimal kanban quantities and the product quantities that are used. The calculation takes into account forecast, actual demand from open orders, lead time to replenish items, and historical demands.
 - **Scheduled** kanban rules replenish requirements that are calculated by master planning. Master planning generates planned kanbans that can be firmed to kanbans.
-- **Event** kanban rules replenish requirements that originate from sales order lines, production BOM lines, kanban lines, or minimum inventory settings. When event kanbans are generated, they are pegged to the source requirements.
+- **Event** kanban rules replenish requirements that originate from sales order lines, production bill of materials (BOM) lines, kanban lines, or minimum inventory settings. When event kanbans are generated, they're pegged to the source requirements.
 
 When kanbans are created, one or more kanban jobs are generated based on the kanban flow activities that are defined in the kanban rules.
 

@@ -3,7 +3,7 @@ title: Assign lease user roles
 description: Learn about the security roles that are used in Asset leasing, including a table that defines various roles and a step-by-step process for assigning roles to users.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/12/2021
 ms.reviewer: kfend
 audience: Application User

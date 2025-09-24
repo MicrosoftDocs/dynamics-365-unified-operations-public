@@ -3,7 +3,7 @@ title: Create a customer invoice
 description: A customer invoice for a sales order is a bill that is related to a sale, and that an organization gives to a customer.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/04/2022
 ms.reviewer: twheeloc
 audience: Application User

@@ -9,8 +9,9 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-08-2019
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Log extension events to Application Insights

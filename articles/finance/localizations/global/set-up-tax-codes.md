@@ -1,6 +1,6 @@
 ---
 title: Set up tax codes
-description: Learn how to set up tax codes in the Tax Calculation Service, including overviews on simple setup and calculation origin. 
+description: Learn how to set up tax codes in the Tax Calculation, including overviews on simple setup and calculation origin. 
 author: liza-golub
 ms.date: 07/30/2024
 ms.topic: how-to 
@@ -18,25 +18,16 @@ ms.dyn365.ops.version: Version 10.0.21
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up tax codes in the Tax Calculation service. It includes the setup for a simple scenario to make the tax code work and information about some advanced tax code functionality for complex scenarios.
+This article explains how to set up tax codes in the Tax Calculation feature of Globalization studio workspace. It includes the setup for a simple scenario to make the tax code work and information about some advanced tax code functionality for complex scenarios.
 
 > [!IMPORTANT]
-> The setup of tax codes in the Tax Calculation Service is legal entity–agnostic. You can complete this setup in Regulatory Configuration Service (RCS) only one time. Tax codes are automatically synced to Microsoft Dynamics 365 Finance when you enable the Tax Calculation service for a selected legal entity in Finance.
-
-> [!NOTE]
-> The functionality of RCS is merged to the **Globalization Studio** workspace in Finance in version 10.0.39. For more information, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
->
-> If you're using version 10.0.39 or later, use the **Globalization Studio** workspace in Finance instead of RCS.
+> The setup of tax codes in the Tax Calculation of Globalization studio workspace is legal entity–agnostic. Tax codes are automatically synced to Sales tax codes when you enable the Enable advanced tax calculation in the Tax calculation parameters for a selected legal entity in Finance.
 
 ## Simple setup
 
 Follow these steps to use a tax code in a simple scenario, such as a scenario where there is only one tax rate.
 
-1. Follow one of these steps, depending on where you're completing the procedure:
-
-    - In [RCS](https://marketing.configure.global.dynamics.com/), open the **Globalization features** workspace, select **Features**, and then select the **Tax Calculation** tile.
-    - In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
-
+1. Open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
 2. On the **Tax calculation features** page, select the feature and version that you want to set up, and then select **Edit**.
 3. On the **General** tab, select **Configuration version**.
 4. On the **Tax codes** tab, select **Add**, and enter the tax code and a description.

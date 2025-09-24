@@ -3,7 +3,7 @@ title: Configure sales and purchase invoices for Nicaragua
 description: Learn how to configure sales and purchase invoices for a company in Nicaragua, including an outline and process for sales invoice configuration.
 author: Cpicon85
 ms.author: v-cpicon
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/13/2023
 ms.custom: bap-template
 ms.reviewer: johnmichalak

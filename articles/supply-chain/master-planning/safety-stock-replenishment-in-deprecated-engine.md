@@ -1,8 +1,8 @@
 ---
 title: Safety stock fulfillment with the deprecated master planning engine
 description: Learn how safety stock functionality differs when you use the deprecated master planning engine compared to when you use Planning Optimization.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 04/19/2023
 ms.custom: bap-template

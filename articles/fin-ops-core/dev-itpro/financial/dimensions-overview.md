@@ -4,7 +4,7 @@ description: Learn about dimensions, dimensions that have entities, and the dime
 author: RyanCCarlson2
 ms.author: rcarlson
 ms.topic: overview
-ms.date: 06/10/2024
+ms.date: 04/29/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer
@@ -21,7 +21,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
 
-The only value that is present on Microsoft Excel templates after installation is the MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates you need to complete the following steps:
+The only value that is present on Microsoft Excel templates after installation is the MainAccount. This is the only dimension that all customers have. To add the dimensions to Microsoft Excel templates, you need to complete the following steps:
 
 1.  Add dimensions to the DimensionCombinationEntity or the DimensionSet entity.
 2.  Add the dimensions to each template where you want dimensions in separate columns. For more information, see [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md).
@@ -35,7 +35,7 @@ This article shows how to modify DimensionCombinationEntity to enable the dimens
 
 ## Add dimensions to Dynamics 365 Finance
 
-Modifying the **DimensionCombinationEntity** has been greatly simplified with the release of the Add financial dimensions for OData Addin in Visual Studio.
+Modifying the **DimensionCombinationEntity** has been greatly simplified with the release of the Add financial dimensions for OData add-in in Visual Studio.
 
 1. In Microsoft Visual Studio, click **Dynamics 365 > Addins > Add financial dimensions for Odata.**
 2. Type the name of the Financial dimension in the **Dimension name** column. This should be the exact name of the financial dimension. Select the **Model** that has your extensions. It should be above the AppSuite layer. Click **Apply**. 
@@ -54,7 +54,12 @@ Modifying the **DimensionCombinationEntity** has been greatly simplified with th
     ```sql
     select * from DIMENSIONCOMBINATIONENTITY 
     ```
-
+5. To view the new dimension fields in the excel templates, update the design as follows:
+    1. Open the desired Excel template and click **Design**.
+    2. Click the **pencil** next to the journal lines table to view the newly added fields.
+    3. Select the newly added dimension field from the list of available fields and click **Add**.
+    4. Once all fields have been selected, click **Update**.
+    5. Click **Refresh** to view the new dimension fields and related data. 
 
 ## Additional resources
 

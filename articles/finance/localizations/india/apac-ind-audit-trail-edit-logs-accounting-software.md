@@ -146,7 +146,7 @@ In March 2021, the Ministry of Corporate Affairs (MCA) in India introduced amend
 
 **I. Accessibility requirement**: Amended *Rule 3 (1)* emphasizes that books of accounts and other relevant documents that are maintained in electronic mode must remain accessible in India at all times for later reference.
 
-**II. Daily backup requirement**: Under amended *Rule 3 (5)*, companies are required to maintain a daily backup of their electronic books of accounts and other relevant documents on servers that are physically located in India, even if backups are also maintained outside the country.
+**II. Daily backup requirement**: Under amended *Rule 3 (5)*, companies are required to maintain a daily backup of their electronic books of accounts and other relevant documents on servers that are physically located in India, even if backups are also maintained outside the country/region.
 
 **III. Annual intimation requirement**: *Rule 3 (6)* requires that companies inform the Registrar about details such as the service provider's name, IP address, and location annually, when they file financial statements. If books of accounts are maintained in the cloud, the address that the service provider provided must also be disclosed.
 
@@ -182,7 +182,7 @@ Under some conditions, to fulfill India's daily backup requirement, a company th
 
 **Option (2). Multi-instance installation**
 
-Under some conditions, a company that operates in India and has its finance and operations apps environment deployed outside of India can consider a multi-instance installation, where the Indian legal entities are installed in a finance and operations apps environment that is located in a datacenter in India. Other legal entities can be installed in environments in different geolocations, depending on other countries' legal requirements and the company's needs. For more information, see [Plan your environment strategy for Dynamics 365](/dynamics365/guidance/implementation-guide/environment-strategy-overview). When finance and operations apps legal entities that have an address in India are installed in a finance and operations apps environment that is located in a datacenter in India, the approach that is described in the [Finance and operations apps environments that are deployed in India](#finance-and-operations-apps-environments-that-are-deployed-in-india) section is applicable.
+Under some conditions, a company that operates in India and has its finance and operations apps environment deployed outside of India can consider a multi-instance installation, where the Indian legal entities are installed in a finance and operations apps environment that is located in a datacenter in India. Other legal entities can be installed in environments in different geolocations, depending on other countries'/regions' legal requirements and the company's needs. For more information, see [Plan your environment strategy for Dynamics 365](/dynamics365/guidance/implementation-guide/environment-strategy-overview). When finance and operations apps legal entities that have an address in India are installed in a finance and operations apps environment that is located in a datacenter in India, the approach that is described in the [Finance and operations apps environments that are deployed in India](#finance-and-operations-apps-environments-that-are-deployed-in-india) section is applicable.
 
 **Option (3). Azure Synapse Link for Dataverse with Azure Data Lake Storage**
 

@@ -3,7 +3,7 @@ title: Set up and install Regression suite automation tool tutorial
 description: Access a tutorial that shows how to set up and install Regression suite automation tool (RSAT), including an overview of key concepts.
 author: frankdahl
 ms.author: fdahl
-ms.topic: article
+ms.topic: tutorial
 ms.date: 09/20/2019
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -11,6 +11,7 @@ ms.search.region: Global
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ROBOTS: NOINDEX, NOFOLLOW
+ms.custom: sfi-image-nochange
 ---
 
 # Set up and install Regression suite automation tool tutorial
@@ -50,7 +51,7 @@ Make sure that the user is created in Azure DevOps and has a subscription level 
 
 ### Create a new Azure DevOps project
 
-RSAT uses Azure Devops for test case and test suite management, reporting, and investigating test run results.
+RSAT uses Azure DevOps for test case and test suite management, reporting, and investigating test run results.
 
 > [!NOTE]
 > You can use an existing Azure DevOps project. However, if your existing Azure DevOps project is set up so that it has a custom template, you will receive a "VSTS Sync Failure" error when you sync test cases from Business process modeler (BPM) to Azure DevOps (see the [Test the synchronization from BPM to Azure DevOps](#test-the-synchronization-from-bpm-to-azure-devops) section). If the following best practices have been followed for the custom template, you will be able to sync the test cases to Azure DevOps. (These best practices are listed in the error message.)

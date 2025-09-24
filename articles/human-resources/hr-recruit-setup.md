@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up the HR Recruiting app (preview)
+title: Set up the HR Recruiting app 
 description: This article explains how to set up the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/23/2024
-ms.topic: article
+ms.date: 08/15/2025
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: 
@@ -17,25 +17,23 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Set up the HR Recruiting app (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Set up the HR Recruiting app 
 
 This article explains how to set up the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
 Before you can install the Recruiting app, the following prerequisites must be met:
 
-- You have a Dynamics 365 finance and operations environment, version 10.0.40 (10.0.1935.72) or later, and the most recent quality update is installed.
+- You have a Dynamics 365 Human Resources environment, version 10.0.45 or later, and the most recent quality update is installed.
+>[!NOTE]
+> If you are on version 10.0.44, see [Known issues and limitations](hr-recruit-known.md?set-up-the-hr-recruiting-app-in-version-10044). 
 - You have a Dynamics 365 Human Resources license for the finance and operations environment.  
 - You're a user who has system administrator permissions for both Dynamics 365 Human Resources and Power Apps.
 - One of the following Microsoft Power Platform integrations is completed:
@@ -56,9 +54,9 @@ Before you can install the Recruiting app, the following prerequisites must be m
 
 ## Get started
 
-To configure the Recruiting app in Dynamics 365 Finance, follow these steps.
+To configure the Recruiting app in Dynamics 365 Human Resources, follow these steps.
 
-1. In Dynamics 365 Finance, open the **Feature management** workspace.
+1. In Dynamics 365 Human Resources, open the **Feature management** workspace.
 2. Select **Check for updates**.
 3. On the **New** tab, search for the **(Preview) Enable recruitment add-on** feature.
 4. Select **Enable now**.
@@ -77,20 +75,16 @@ To see Recruiting requests and candidates, go to **Human Resources** > **Recruit
 ## Install the Recruiting add-on app in Dataverse
 
 To install the Recruiting add-on app for the first time, follow these steps.
-
-1. Sign in to [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcmrecruiting-preview?flightCodes=4b09efddad8943cb82af3713c574a021) as an admin.
-2. Select **Dynamics 365 Human Resources recruiting add-on**, and then select **Get it now**.
-3. Select **Environments**, and then search for and select your environment.
-4. Select the checkboxes to agree to the privacy statement and legal terms.
-5. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-6. Select your environment, and then select the mandatory checkboxes.
-7. Select **Install**.
-8. To check the status of the installation, follow these steps:
-
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Sign-in as administator.
+2. Select your environment, and then select the mandatory checkboxes.
+3. Go to Dynamics 365 apps.
+4. Click **Install app**.
+5. Search and install **Dynamics 365 Human Resource recruiting add-on**.
+6. To check the status of the installation, follow these steps:
     1. In the Power Platform admin center, select **Environments**, and then select your environment.
     1. Select **Resources** \> **Dynamics 365 apps**.
     1. Look in the **Status** column for **Dynamics 365 Human Resource recruiting add-on**. If installation was successful, the value is **Installed**. If the value is **Failed**, set up the app again by selecting **Retry installation**.
-
+  
 ## Activate connections and flows for the Recruiting app
 
 To activate connections and flows for the Recruiting app, follow these steps.
@@ -104,41 +98,53 @@ To activate connections and flows for the Recruiting app, follow these steps.
 
     - Recruiting approvals connection
     - Recruiting dataverse connection
+    - Recruiting content conversion connection
+    - Recruiting office 365 outlook connection
+    - Recruiting teams connection 
 
 7. Edit each connection reference. Add a new or existing connection, and make sure that it's enabled.
 
     - **Recruiting approvals connection:** Add the **Approvals** connector.
     - **Recruiting dataverse connection:** Add the **Microsoft Dataverse** connector.
+    - **Recruiting content conversion connection:** using the Content Conversion (preview) connector.
+    - **Recruiting office 365 outlook connection:** using the Office 365 outlook connector.
+    - **Recruiting teams connection:** using the Microsoft Teams connector. 
 
-8. Go to **Solutions**, and select the **Managed** solution.
+
+8. Go to **Solutions** and select the **Managed** solution.
 9. Select **HCM recruiting flows**.
 10. Select **Cloud flows**, and then select **Turn on** for the cloud flows that are disabled.
+>[!Note]
+> Ensure **Portal create attachments in notes table** is switched off if it appears.
+
 11. Repeat steps 8 through 10 for **HCM Recruiting**.
 
-    > [!NOTE]
-    > Make sure that all the **HCM Recruiting** flows are active. Otherwise, issues can occur. For example, if the **Portal create candidate** flow isn't active, candidates can't create a profile.
+> [!NOTE]
+> Confirm that all the **HCM Recruiting** flows are active. Otherwise, issues can occur. For example, if the **Portal create candidate** flow isn't active, candidates can't create a profile.
 
-## Activate the careers site
+### Recruiting flows
 
-**Prerequisite:** The Recruiting add-on app must be installed in Dataverse.
+|Name|	Description |
+|-----|--------|
+|Email notification flow 	|The primary process for dispatching email notifications utilizes predefined email templates. Used in different workflows based on the scenario.|
+|Job ad approval flow	|Notify approvers via Teams/Outlook for job ad approval.|
+|Job ad in app approval flow	|Manages in-app approvals and automatically completes the Teams or Outlook workflows if they have already been initiated.|
+|Publish candidate to Dynamics 365 finance and operations	|When **Ready to hire** is clicked, the candidate's details are forwarded to the Dynamics 365 Human Resources.|
+|When a candidate status changes in Dynamics 365 finance and operations	|Syncs candidate status from Dynamics 365 Human Resources back to the recruiting add-on app.|
+|Prospect invite to apply	|When a candidate is added as a prospect and invited to apply, an email notification is sent asking them to apply for the job.|
+|On delete of applicant |	Deletes applicant and clears related Hire table records.|
+|When an applicant is deleted|	Delete candidate information in Dynamics 365 Human Resources when an applicant is removed.|
+|When an application is created	|When an application is created, it triggers the email notification flow to send a confirmation email to the candidate.|
+|When an application is rejected or withdrawn|	When an application is either rejected or withdrawn, the email notification flow is triggered to inform the candidate of their application status.|
+|Portal create candidate flow|	When users sign up, the flow creates a record in the candidate table, and their personal information is populated based on that.|
+|Portal update candidate type|	This process identifies whether a candidate is external or internal at sign-in and updates the candidate type column accordingly.|
+|Portal update contact from candidate	|This flow updates the contact table when the first name, last name, middle name, and email fields in the candidate table are filled.|
+|Post adaptive card flow	|This flow allows panel members to select and submit their preferred slots for interview scheduling.|
+|Retrieve feature control setting	|This flow retrieves the feature control value using the namespace and feature control name.|
+|Resume parse flow	|Upon uploading a resume, the flow triggers a plugin that parses the resume and returns parsed data to populate candidate details automatically.|
+|Pass panel time slots|	Tracks the slots chosen for different panel members for a job.|
+|Send meeting invite|	Sends meeting invitations to candidates and interviewers.|
+|Create intermediate table candidate slots	| Monitors the slots that are sent to candidates.|
+|Email lots to candidate and send to plugin|	Send email with options to candidates.|
 
-To activate the careers site, follow these steps.
 
-1. Sign in to [Power Pages](https://make.powerpages.microsoft.com/) as an admin.
-2. Select your environment.
-3. Select the **Inactive sites** tab.
-> [!Note]
-> If you can't view the inactive site, create a temporary site using any available template. After creating a temporary site, you'll be able to access the inactive site.”
- 
-4. Select **Reactivate** for **Recruiting-careers site** to activate the site.
-5. Provide a name and web address for the website, and then select **Done**.
-
-    > [!NOTE]
-    > To ensure that future updates can be installed, don't modify the input of the **Reactivated website** field.
-
-Site activation might take up to 10 minutes. After the site activated, it's available on the **Active sites** tab.
-
-For more information, see [Reactivate sites](/power-pages/admin/reactivate-website).
-
-> [!IMPORTANT]
-> After your site is activated, confirm that the version number is at least 9.6. If it's earlier than 9.6, contact us. To find the version, execute {siteUrl}/_services/about in the browser.

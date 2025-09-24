@@ -1,12 +1,13 @@
 ---
 title: Service agreements overview
 description: Access an overview of how service agreements work, including an example with a detailed list for grouping service agreements.
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SMAAgreementGroup
 ms.topic: overview
-ms.date: 08/26/2024
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
   - evergreen

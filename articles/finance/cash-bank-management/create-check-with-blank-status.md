@@ -3,7 +3,7 @@ title: Create checks that have Blank status
 description: Learn about how to create blank checks for a bank account, including a step-by-step process that details creating a blank check, which can't be deleted or reused.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/24/2023
 ms.reviewer: twheeloc
 audience: Application User
@@ -27,7 +27,7 @@ On the **Checks** page, you perform maintenance tasks for checks. For example, y
 
 1. Go to **Cash and bank management \> Bank accounts \> Bank accounts**. 
 2. On the Action Pane, on the **Manage payments** tab, in the **Related information** group, select **Checks**. Alternatively, go to **Cash and bank management \> Inquiries and reports \> Checks**.
-3. To create checks that have **Blank** status, on the Action pane, select **Create blank checks**. While the blank checks are created, the associated bank account is temporarily inactivated. This behavior reduces the risk that payments will be generated at the same time that blank checks are created. When the processing is completed, the associated bank account is reactivated.
+3. To create checks that have **Blank** status, on the Action pane, select **Create blank checks**. While the blank checks are created, the associated bank account is temporarily deactivated. This behavior reduces the risk that payments will be generated at the same time that blank checks are created. When the processing is completed, the associated bank account is reactivated.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

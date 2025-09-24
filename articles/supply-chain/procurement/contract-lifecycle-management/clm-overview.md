@@ -1,5 +1,5 @@
 ---
-title: Contract lifecycle management integration overview (preview)
+title: Contract lifecycle management integration overview
 description: Get an overview of contract lifecycle management (CLM) integration.
 author: ShriramSivasankaran
 ms.author: shriramsiv
@@ -11,19 +11,15 @@ ms.custom:
   - bap-template
 ---
 
-# Contract lifecycle management integration overview (preview)
+# Contract lifecycle management integration overview
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
 
 *Contract lifecycle management* (CLM) helps organizations manage their contracts with suppliers. It's an important aspect of the source-to-pay process.
 
 CLM helps streamline contract creation, negotiation, execution, and renewal processes. In this way, it reduces the time and resources that are required to manage contracts. In addition, CLM helps ensure that contracts comply with organizational policies and regulations. In this way, it reduces the risk of penalties and other negative consequences. CLM also helps improve visibility into contract performance. Therefore, organizations can make more informed decisions about their supplier relationships.
 
 By integrating CLM into the source-to-pay process, organizations can improve their overall supply chain performance and deliver greater value to their customers.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Microsoft Dynamics 365 Supply Chain Management provides built-in capabilities that help you operationalize contracts through purchase agreements, rebate agreements, brokerage agreements, and regular purchase orders. However, to meet the needs of organizations that want more comprehensive CLM, Supply Chain Management also provides a common integration framework that lets you integrate with an external CLM system. By integrating with an external CLM system, you can add support for more advanced CLM processes, such as contract creation, authoring, redlining, negotiation, signing, amendment, and termination.
 

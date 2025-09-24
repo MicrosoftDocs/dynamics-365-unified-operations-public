@@ -4,7 +4,9 @@ description: Learn about the budgeting functionality components, budgeting tools
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 03/28/2024
+ms.date: 05/15/2025
+ms.update-cycle: 1095-days
+ms.custom: evergreen
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User

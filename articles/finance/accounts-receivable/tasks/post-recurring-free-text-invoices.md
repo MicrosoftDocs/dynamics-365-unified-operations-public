@@ -1,10 +1,10 @@
 --- 
 title: Generate and post recurring free text invoices
-description: Recurring invoices are used to invoice customers regularly for the same amount. Learn how to generate and post recurring free text invoices.
+description: Learn how to generate and post recurring free text invoices.
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: how-to
-ms.date: 03/28/2023
+ms.date: 08/04/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -18,12 +18,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Recurring invoices are used to invoice customers regularly for the same amount. This recording uses the USMF demo company. The recording is intended for the person responsible for managing and processing Accounts receivable invoices.
-
+Recurring invoices are used to invoice customers regularly for the same amount. This recording uses the USMF demo company. T
 
 ## Generate recurring invoices
 
-## Post recurring invoices
 1. Go to **Accounts receivable > Invoices > Recurring invoices > Post recurring invoices**.
     * Use this page to view and print recurring invoices that have already been generated.  
 2. In the list, click the link in the selected row.

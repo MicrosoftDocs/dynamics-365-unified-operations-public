@@ -1,5 +1,5 @@
 ---
-title: Price group priorities (preview)
+title: Price group priorities
 description: Learn how price group priorities work and how to use them.
 author: sherry-zheng
 ms.author: chuzheng
@@ -11,12 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# Price group priorities (preview)
+# Price group priorities
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 In situations where more than one price calculation can apply, the system evaluates the priority of each group to determine which one should apply. This article explains how the priority is evaluated.
 

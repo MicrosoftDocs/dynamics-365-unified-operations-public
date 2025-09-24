@@ -36,7 +36,7 @@ There are three types of organizational roles in Lifecycle Services:
 - Delegated admin
 
 ### Organization admin
-At the organization or tenant level, anyone who has the Global Administrator role in Microsoft Entra ID automatically becomes an organization admin when they sign in to Lifecycle Services. These admins can then promote other users who are currently contributors to admins. Admins have unique capabilities. For example, they can add themselves as a project owner to any project that is owned by their tenant, even if they weren't previously part of that project.
+At the organization or tenant level, anyone who has the tenant administrator role in Microsoft Entra ID automatically becomes an organization admin when they sign in to Lifecycle Services. These admins can then promote other users who are currently contributors to admins. Admins have unique capabilities. For example, they can add themselves as a project owner to any project that is owned by their tenant, even if they weren't previously part of that project.
 
 ![Message in Lifecycle Services that states that organization admins can add themselves to any project.](media/OrgAdminProjectInject.png)
 
@@ -54,7 +54,7 @@ Only an administrator can manage users. Follow these steps.
 1.  In PartnerSource Business Center (PSBC) or Microsoft Entra ID, associate all the users in your organization who require access to Lifecycle Services with your organization. Users might have to wait up to two business days before they can sign in to Lifecycle Services.
 2.  Add your users to the appropriate projects in Lifecycle Services.
 
-### Invite a user to an Lifecycle Services project
+### Invite a user to a Lifecycle Services project
 
 1.  Sign in to [Lifecycle Services](https://lcs.dynamics.com/).
 2.  Select the project to add the user to.
@@ -73,7 +73,7 @@ You can invite users from inside or outside your organization to join your proje
 | Project owner                  | Members of this role have access to all tools in Lifecycle Services, can add other users in any role, and can delete the project. |
 | Environment manager            | Members of this role have access to all tools in Lifecycle Services and can manage cloud-hosted environments. |
 | Project team member            | Members of this role have access to all tools in Lifecycle Services but can't manage cloud-hosted environments. |
-| Project team member (prospect) | Members of this role have limited access to all tools in an Lifecycle Services project. Prospects are users who have been added to a project, but who don't have an account in VOICE or a Microsoft Entra account. You can identify that a user is a prospect, because **prospect** is listed as the organization. |
+| Project team member (prospect) | Members of this role have limited access to all tools in a Lifecycle Services project. Prospects are users who have been added to a project, but who don't have an account in VOICE or a Microsoft Entra account. You can identify that a user is a prospect, because **prospect** is listed as the organization. |
 | Operations user                | Members of this role have access to the following tools in Lifecycle Services: <ul><li>Asset library</li><li>System diagnostics</li><li>Issue search</li><li>Cloud-powered support</li><li>Updates</li><li>Cloud-hosted environments</li></ul> |
 
 

@@ -3,14 +3,15 @@ title: Removed or deprecated platform features
 description: Learn about features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: conceptual
-ms.custom: 
-  - bap-template
-ms.date: 10/25/2024
+ms.topic: article
+ms.date: 07/10/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 
 # Removed or deprecated platform features
@@ -26,6 +27,64 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that are changed or removed in each version of finance and operations apps.
 
+## Feature deprecation effective April 2025
+
+### <a id="dts-deprecation"></a>Microsoft Dynamics 365 Translation Service support ends on October 15, 2025
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** |  Microsoft Dynamics 365 Translation Service (DTS) is deprecated. This service will reach end-of-support on October 15, 2025, and will no longer be available after this date. If you're an existing user of the Dynamics 365 Translation Service, you are no longer able to access it after October 15, 2025. This includes retrieval of translation request outputs stored in the Dynamics 365 Translation Service. The service will be removed from Dynamics Lifecycle Services and the extensions will be unpublished.  |
+| **Replaced by another feature?**   | Consider using alternative tools and translation services, such as [Microsoft Custom Translator](/azure/ai-services/translator/custom-translator/overview), for future translation needs.   |
+| **What do you need to do?**        |   It's recommended you download any applicable translation request output files for future recycling before October 15, 2025. Users of the Azure DevOps extension should remove the tasks from any build pipelines prior to October 15, 2025, otherwise these tasks will fail since our service will be unreachable after October 15, 2025. Consider using alternative tools and translation services, such as the [Microsoft Custom Translator](/azure/ai-services/translator/custom-translator/overview), for future translation needs. For more information about this deprecation, contact your Microsoft representative or send an email to [dtssup@microsoft.com](mailto:dtssup@microsoft.com).  |
+| **Product areas affected**         | Business Central, finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | Dynamics 365 Translation Service deprecated, and will reach end-of-support on October 15, 2025. |
+
+### Anonymous access is disabled for Finance and Operations managed storage accounts.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | As part of our ongoing commitment to strengthening security, a recent review has identified that some storage accounts are currently configured to allow anonymous access. To enhance the protection of data, anonymous access is disabled for the storage accounts. Anonymous access presents a potential security risk. |
+| Replaced by another feature?     | None | 
+| What do you need to do?          | <p>This change allows for greater control and security where you can manage access policies. For more details, visit [Create & Secure Your Own Storage Account](/azure/storage/common/storage-account-create?tabs=azure-portal). </p><p>Use secure access methods instead of public url's: Replace public URLs with User Delegation SAS urls. For more details, visit [Grant Limited Access with SAS](/azure/storage/common/storage-sas-overview).</p> |
+| Product areas affected             | Any integration/interaction with a finance and operations managed storage account is affected. |
+| Deployment option                  | All |
+| **Status**                         | The anonymous access will be disabled for sandbox environment starting April 15, 2025, through April 30, 2025. Followed by disabling anonymous access on production environments, starting May 5, 2025, and onwards. Any workflows relying on public blob containers may be affected. |
+
+### Disable storage account key access to Finance and Operations managed storage accounts
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Improve platform security, and disable storage account key access to finance and operations managed storage accounts. |
+| **Replaced by another feature?**   | Microsoft Entra ID–based authentication |
+| **What do you need to do?**        | <p>When the **Allow storage account key access** option is disabled, any requests to the account that are authorized with Shared Key, including shared access signatures, will be denied. (Any shared access signature URL is generated by using **GetSharedAccessSignature**.)</p><ul><li>For customers who haven't done any type of customization, and who interact with the storage account based on the existing exposed platform APIs, the existing functionality remains unaffected.</li><li><p>For customers where the storage connection string is acquired by third-party code that doesn't use any public API that is present in the platform, some of the functionality might be affected.</p><p><b>Recommendations:</b></p><ul><li>If Azure.Storage.Blobs is used for storage account interaction, use user-delegated shared access signature URLs.</li><li>If WindowsAzure.Storage v9.3.3 is still used for storage account interaction, you can use a platform API to get a user-delegated shared access signature URL.</li></ul></li></ul><p><strong>Note:</strong> LBD and CHE environments remains unaffected.</p>|
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | <p>Starting July 1, 2025, the changes will be automatically applied to all newly created environments. Rollout for the change has started in the existing Sandbox environments from April 15, 2025 to July 31, 2025. Following this, in the Production environments from May 1, 2025 to August 31, 2025 in a phased manner based on the PQU schedules. Changes are backported to 10.0.42 (PU66) and all later releases. No exceptions will be provided for any environments. </p><p>For more information, and for updates about this change, see [Finance and operations storage account security updates](../../dev-itpro/sysadmin/storage-acct-security.md).</p> |
+
+### Platform is changing the authentication protocol from password based auth to Microsoft Entra ID based authentication for 10.0.39 and greater releases.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Improve platform security and remove dependency on password-based authentication. |
+| **Replaced by another feature?**   | Microsoft Entra ID based authentication. |
+| **What do you need to do?**        | This change has an impact on the following set of functionalities. <br><br> 1. The SQL Connection string acquired by third-party code that isn't using any platforms public API present in platform. <br> <br>**Recommendation**: Use the public API instead of reading directly from the configuration. The [OdbcConnection](/dotnet/api/dynamics.ax.application.odbcconnection) is no longer supported, Please migrate to the supported connection types: [Connection](/dotnet/api/dynamics.ax.application.connection) or [UserConnection](/dotnet/api/dynamics.ax.application.userconnection).<br><br> 2. Long-running transactions that run for several hours.<br><br> **Recommendation**: Reduce the time the connection is opened and keep the transactions as short-lived as possible. <br><br>  NOTE: LBD and CHE environments still use password-based authentication. |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | End of support in production environments is April 30, 2025 (Phased rollout from May 1, 2025 to June 15, 2025) starting with 10.0.39 (PU63) and greater releases. |
+
+## Feature deprecation effective January 2025
+
+### Azure Active Directory Authentication Library (ADAL)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The Active Directory Authentication Library (ADAL) doesn't meet the needs for safe authentication and is no longer maintained. |
+| Replaced by another feature?     | Microsoft Authentication Library (MSAL) | 
+| What do you need to do?          | The reference to the assembly implementing ADAL was removed. This removal causes compilation errors if the ADAL APIs are referenced from your code. You must port your code and replace ADAL references with Microsoft Authentication Library (MSAL) as described in [Migrate applications to the Microsoft Authentication Library](/entra/identity-platform/msal-migration).
+| Product areas affected             | All code that references ADAL APIs |
+| Deployment option                  | All |
+| **Status**                         | Effective as of version 10.0.43 |
 
 ## Feature deprecation effective October 2024
 
@@ -40,17 +99,6 @@ Detailed information about objects in finance and operations apps can be found i
 | Deployment option                  | All |
 | Status                             | Support for the existing user authentication method is being deprecated, with the transition to Object ID and Tenant ID. Rollout has started, with full deprecation expected by October 30, 2024. |
 
-### Disable storage account key access to finance and operations managed storage accounts
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Improve platform security, and disable storage account key access to finance and operations managed storage accounts. |
-| **Replaced by another feature?**   | Microsoft Entra ID–based authentication |
-| **What do you need to do?**        | <p>When the **Allow storage account key access** option is disabled, any requests to the account that are authorized with Shared Key, including shared access signatures, will be denied. (Any shared access signature URL is generated by using **GetSharedAccessSignature**.)</p><ul><li>For customers who haven't done any type of customization, and who interact with the storage account based on the existing exposed platform APIs, the existing functionality remains unaffected.</li><li><p>For customers where the storage connection string is acquired by third-party code that doesn't use any public API that is present in the platform, some of the functionality might be affected.</p><p><b>Recommendations:</b></p><ul><li>If Azure.Storage.Blobs is used for storage account interaction, use user-delegated shared access signature URLs.</li><li>If WindowsAzure.Storage v9.3.3 is still used for storage account interaction, you can use a platform API to get a user-delegated shared access signature URL.</li></ul></li></ul><p><strong>Note:</strong> LBD and CHE environments remains unaffected.</p>|
-| **Product areas affected**         | Finance and operations apps |
-| **Deployment option**              | All |
-| **Status**                         | <p>Rollout for the change begins in October 2024 in a phased manner. Changes will be backported to 10.0.41 (PU65) and all later releases.</p><p>For more information, and for updates about this change, see [Finance and operations storage account security updates](../../dev-itpro/sysadmin/storage-acct-security.md).</p> |
-
 ### Migration from deprecated libraries – WindowsAzure.Storage and Microsoft.Azure.Storage to Azure.Storage.Blobs
 
 | &nbsp;  | &nbsp; |
@@ -60,18 +108,7 @@ Detailed information about objects in finance and operations apps can be found i
 | **What do you need to do?**        | <p>**Customers and independent software vendors (ISVs) should review their dependencies/customizations and make any necessary changes to move to the new libraries before release 10.0.43 (PU67) service updates.** |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | <p>**Phase 1: Release and feedback (October 2024–November 2024)**</p><p>The new code will be released to a selected group of users for beta testing. Feedback will be collected, and any necessary adjustments will be made. The code will be fully rolled out after all fixes are made. During this period, we'll continue to support the old package.</p><p>**Phase 2: Deprecation timeline for customers – release 10.0.43 – PU67 (March 2025)**</p><p>This phase is the timeline when customers must move to new libraries before release 10.0.43 (PU67) service updates (general availability approximately March 2025).</p><p>**Phase 3: Stop shipping old libraries in version 10.0.44 – PU68 (June 2025)**</p><p>In version 10.0.44 (PU68) service updates (June 2025), support for the old package will end. Therefore, we'll stop shipping the old libraries, and the old code will be removed after telemetry data is validated to ensure that customer scenarios aren't affected. For more information, see the [service updates schedule](../../dev-itpro/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).</p><p>For updates, see [Finance and operations storage account security updates](../../dev-itpro/sysadmin/storage-acct-security.md).</p> |
-
-### Platform is changing the authentication protocol from password based auth to Microsoft Entra ID based authentication for 10.0.39 and greater releases.
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Improve platform security and remove dependency on password-based authentication. |
-| **Replaced by another feature?**   | Microsoft Entra ID based authentication. |
-| **What do you need to do?**        | This change impacts the following set of functionalities. <br><br> 1. The SQL Connection string acquired by third-party code that isn't using any platforms public API present in platform. <br> <br>**Recommendation**: Switch to public API rather than reading it directly from config. <br><br> 2. Long-running transactions that run for several hours.<br><br> **Recommendation**: Reduce the time the connection is opened and keep the transactions as short-lived as possible. <br><br>  NOTE: LBD and CHE environments still use password-based authentication. |
-| **Product areas affected**         | Finance and operations apps |
-| **Deployment option**              | All |
-| **Status**                         | End of support date is Oct 2024 starting with 10.0.39 (PU63) and greater releases. |
+| **Status**                         | <p>**Phase 1: Release and feedback (October 2024–November 2024)**</p><p>The new code will be released to a selected group of users for beta testing. Feedback will be collected, and any necessary adjustments will be made. The code will be fully rolled out after all fixes are made. During this period, we'll continue to support the old package.</p><p>**Phase 2: Deprecation timeline for customers – release 10.0.45 – PU69 (September 2025)**</p><p>This phase is the timeline when customers must move to new libraries before release 10.0.45 (PU69) service updates (general availability approximately September 2025).</p><p>**Phase 3: Stop shipping old libraries in version 10.0.46 – PU70 (December 2025)**</p><p>In version 10.0.46 (PU70) service updates (December 2025), support for the old package will end. Therefore, we'll stop shipping the old libraries, and the old code will be removed after telemetry data is validated to ensure that customer scenarios aren't affected. For more information, see the [service updates schedule](../../dev-itpro/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).</p><p>For updates, see [Finance and operations storage account security updates](../../dev-itpro/sysadmin/storage-acct-security.md).</p> |
 
 ## Feature deprecation effective September 2024
 
@@ -112,7 +149,7 @@ Public method **Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetC
 | **What do you need to do?**         | If a user who isn't part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | This change reaches your environment beginning last week of September 2024. |
+| **Status**                         | Latest Update - Public Cloud: Deprecation has been completed. For Sovereign Cloud: This change reaches your environment beginning last week of February 2025. |
 
 ## Feature deprecation effective July 2024
 
@@ -157,7 +194,7 @@ To troubleshoot unauthorized 401 errors, see [Check token compliance](../../dev-
 |------------|--------------------|
 | **Reason for deprecation/removal** | [Multitenant apps](/entra/identity-platform/single-and-multi-tenant-apps) that don't have a client service principal have been recognized as vulnerable, because they pose a significant risk of acquiring cross-tenant Open Authorization (OAuth) app-only tokens for multitenant services across arbitrary tenants. To address this security vulnerability, apps without a service principal in the tenant is no longer authenticated. Finance and operations APIs will start to fail from these apps in deprecated environments. |
 | **Replaced by another feature?**   | No. To ensure the security and integrity of your system and data, we strongly encourage all our customers to provision the multitenant apps in their Microsoft Entra ID tenant. For more information, see [Create an enterprise application from a multitenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=ms-graph). If application onboarding isn't expected, remove that app or replace with a compliant app that has a client service principal in tenant. |
-|   What do you need to do?          | Step 1. Review your onboarded applications: <br><br> <li>Go to **System administration** > **Setup** > **Microsoft Entra ID application**, or **Azure Active Directory applications** to review onboarded applications</li><li> For information about how to review your onboarded applications, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application).<br><br>Step 2. Provision Application Service Principal: <br><br> <li> Create a Service Principal in your Microsoft Entra ID tenant for above listed applications. [Follow these steps](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=admin-consent-url). Skip provisioning for Microsoft applications and those already provisioned with a service principal ID.</li><li> Remove or replace any unexpected application onboarding with a compliant app.<br><br>Step 3. Review the configured Endpoint: <br><br> <li> Make sure the access token being acquired should be from your Tenanted endpoint not organization endpoint _https://login.microsoftonline.com/{yourtenant}_ and not your organization endpont _https://login.microsoftonline.com/organizations_.  |
+|   What do you need to do?          | Step 1. Review your onboarded applications: <br><br> <li>Go to **System administration** > **Setup** > **Microsoft Entra ID application**, or **Azure Active Directory applications** to review onboarded applications</li><li> For information about how to review your onboarded applications, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application).<br><br>Step 2. Provision Application Service Principal: <br><br> <li> Create a Service Principal in your Microsoft Entra ID tenant for above listed applications. [Follow these steps](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=admin-consent-url). Skip provisioning for Microsoft applications and those already provisioned with a service principal ID.</li><li> Remove or replace any unexpected application onboarding with a compliant app.<br><br>Step 3. Review the configured Endpoint: <br><br> <li> Make sure the access token being acquired should be from your tenant endpoint `https://login.microsoftonline.com/{yourtenant}` and not  your organization endpoint `https://login.microsoftonline.com/organizations`. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | Support for app-only tokens by multitenant apps that don't have a service principal ID will be removed by February 2024 for nonproduction environments and by April 2024 for production environments. Platform update 63 and Dynamics 365 finance version 10.0.39 and later |

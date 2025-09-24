@@ -1,13 +1,14 @@
 ---
 title: Inventory journal approval workflows
 description: Learn how to set up and use inventory journal approval workflows for various types of physical inventory transactions, including a step-by-step process.
-author: Weijiesa
-ms.author: weijiesa
-ms.topic: article
-ms.date: 08/05/2022
-ms.custom:
+author: banluo-ms
+ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: InventJournalTableWorkflowDropDialog
+ms.topic: how-to
+ms.date: 11/19/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Inventory journal approval workflows
@@ -19,10 +20,6 @@ This article describes how to set up and use inventory journal approval workflow
 > [!NOTE]
 > Inventory journal approval workflows apply only to transactions recorded using the Inventory Management module. They don't work with inventory journals triggered from the Warehouse Management module.
 
-## Turn the Inventory journal approval workflows feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.21, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Inventory journal approve workflow* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
 ## Create your inventory journal approval workflows
 
 To set up this feature, you must create a workflow for each of the inventory journal types you want to control. Because different inventory journal types can have different approval hierarchies and workflow steps, you can configure individual workflows for each inventory journal type.
@@ -31,21 +28,21 @@ Workflows support version control, and each has a workflow ID and an active vers
 
 To create your inventory journal approval workflows:
 
-1. Go to **Inventory Management \> Setup\> Inventory management workflows**.
+1. Go to **Inventory Management** \> **Setup** \> **Inventory management workflows**.
 1. Select **New** on the Action Pane.
 1. Choose the inventory journal type for which you want to set up a workflow:
-    - **Inventory tag counting journal**
-    - **Inventory ownership change journal**
-    - **Inventory movement journal**
-    - **Inventory transfer journal**
-    - **Inventory counting journal**
-    - **Inventory BOM journal**
-    - **Inventory adjustment journal**
+    - *Inventory tag counting journal*
+    - *Inventory ownership change journal*
+    - *Inventory movement journal*
+    - *Inventory transfer journal*
+    - *Inventory counting journal*
+    - *Inventory BOM journal*
+    - *Inventory adjustment journal*
 
     ![The Create workflow dialog box.](media/journal-workflow-create-workflow.png "The Create workflow dialog box")
 
 1. The workflow editor app launches on your machine. (You may be asked to approve this action.) Use it to design your workflow as needed. For details about how to use the workflow editor, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
-1. After saving and closing the workflow editor app, you must choose whether to activate this workflow version or keep it as inactivate.
+1. After saving and closing the workflow editor app, you must choose whether to activate this workflow version or keep it as deactivate.
 
 > [!NOTE]
 > Workflows provide version control, which means that you can view a list of versions you have created and choose which one is active. To view the list of available versions and choose which to activate, select a workflow listed on the **Inventory management workflows** page. On the Action Pane, open the **Workflow** tab, and select **Versions**. Only one version can be active at a time for each workflow ID.
@@ -103,6 +100,5 @@ To review the workflow history for a journal:
 1. On the navigation pane, expand **Inventory management \> Journal entries \> Items** and then select an inventory journal type.
 1. Open the relevant journal.
 1. Select the **Workflow** button on the Action Pane to open a drop-down dialog box. Select **Workflow history**. Learn more in [View workflow history](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

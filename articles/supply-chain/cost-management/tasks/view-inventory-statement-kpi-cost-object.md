@@ -1,30 +1,28 @@
---- 
+---
 title: View inventory statement and KPI by cost object
-description: Learn how to view inventory statement and KPI by cost object, including a step-by-step process using the USMF demo data company. 
+description: Learn how to view inventory statement and KPI by cost object, including a step-by-step process. 
 author: prasungoel
 ms.author: prasungoel
-ms.topic: how-to
-ms.date: 08/29/2018
-ms.custom:
-ms.reviewer: kamaybac   
+ms.reviewer: kamaybac
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, EcoResProductDetailsExtended, InventCostOnhandItem, CostStatement, CostInventoryFlowChart, CostInventoryTurnCard, CostInventoryAccuracyCard
+ms.topic: how-to
+ms.date: 08/22/2025
+ms.custom:
+  - bap-template
 ---
 
 # View inventory statement and KPI by cost object
 
 [!include [banner](../../includes/banner.md)]
 
-The demo data company used to create this procedure is USMF. This procedure is intended for the cost controller.
+Follow these steps to view inventory statement and key performance indicators (KPIs) by cost object. This procedure is intended for the cost controller.
 
-1. Select **Cost administration**.
-2. Select **Released products**.
-3. Use the Quick Filter to find records. For example, filter on the **Item number** field with a value of *d0005*.
-4. On the Action Pane, select **Manage costs**.
-5. Select **Cost objects**.
-6. Select **Inventory statement and KPIs**.
-7. In the **From date** field, enter a date.
-8. In the **To date** field, enter a date.
-
-
+1. Go to **Cost management** \> **Workspaces** \> **Cost administration**.
+1. On the Action Pane, select **Released products**.
+1. Find and select the product you're looking for. If necessary, you can use the **Filter** field to help find it.
+1. On the Action Pane, open the **Manage costs** tab and select **Cost objects**.
+1. Find and select the cost object you're looking for.
+1. On the Action Pane, select **Inventory statement and KPIs**.
+1. Use the **From date** and **To date** fields to specify the date range you're looking for.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

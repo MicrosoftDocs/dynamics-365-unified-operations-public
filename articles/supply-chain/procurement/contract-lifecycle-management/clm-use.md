@@ -1,5 +1,5 @@
 ---
-title: Work with integrated CLM features (preview)
+title: Work with integrated CLM features
 description: Learn how to work with the features of integrated contract lifecycle management (CLM).
 author: ShriramSivasankaran
 ms.author: shriramsiv
@@ -11,11 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# Work with integrated CLM features (preview)
+# Work with integrated CLM features
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
 
 This article explains how the addition of contract lifecycle management (CLM) integration affects the way that Microsoft Dynamics 365 Supply Chain Management works. It also explains where you can find CLM elements in the Supply Chain Management user interface (UI).
 

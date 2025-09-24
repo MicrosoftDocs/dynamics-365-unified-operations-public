@@ -3,7 +3,7 @@ title: Connect a custom Help website to the Help pane
 description: Learn about how you can extend the in-product Help pane with custom Help content, including an outline on how to customize language fallback.
 author: brentholtorf
 ms.author: bholtorf
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/17/2024
 ms.reviewer: johnmichalak
 audience: IT Pro

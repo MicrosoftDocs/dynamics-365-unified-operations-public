@@ -3,7 +3,7 @@ title: Workflow FAQ
 description: Access frequently asked questions about the workflow system, including questions about notifications and workflow approval.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article 
+ms.topic: faq
 ms.date: 09/19/2024
 ms.reviewer: twheeloc 
 audience: Application User

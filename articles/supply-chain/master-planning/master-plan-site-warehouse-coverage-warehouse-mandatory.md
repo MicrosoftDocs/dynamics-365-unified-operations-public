@@ -1,8 +1,8 @@
 ---
 title: Master planning for site and warehouse coverage, warehouse mandatory
 description: Learnhow an item that has site and warehouse as coverage dimensions is planned, including outlines on parameters and locations.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac

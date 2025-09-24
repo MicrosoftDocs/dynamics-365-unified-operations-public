@@ -46,7 +46,7 @@ When you select an ER format on the **Import from Global repository** FastTab, t
 
 [![Foreign trade parameters page, Processing operation note.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
-Then, if the import completes successfully, the reference to the imported ER format is stored in this lookup field. When you access the GR for the first time, you need to follow the link provided to sign up for the [Regulatory Configuration Service](https://aka.ms/rcs) (RCS) that is used to manage access to the GR storage.
+Then, if the import completes successfully, the reference to the imported ER format is stored in this lookup field. When you access the GR for the first time, you need to follow the link provided to sign up for the Globalization studio workspace that is used to manage access to the GR storage.
 
 [![Foreign trade parameters page, Link to sign up for RCS.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 

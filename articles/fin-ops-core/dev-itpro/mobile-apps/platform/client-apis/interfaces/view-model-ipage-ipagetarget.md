@@ -3,11 +3,12 @@ title: PageTarget type
 description: Learn about the PageTarget, which is part of the NavigationArgs hierarchy and includes the params and to properties, which are both optional.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/26/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # PageTarget type

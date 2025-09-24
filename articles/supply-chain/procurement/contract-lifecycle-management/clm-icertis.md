@@ -1,5 +1,5 @@
 ---
-title: Integrate with Icertis for Microsoft Dynamics 365 Supply Chain Management (preview)
+title: Integrate with Icertis for Microsoft Dynamics 365 Supply Chain Management
 description: Learn how to integrate with the Icertis contract lifecycle management (CLM) system.
 author: ShriramSivasankaran
 ms.author: shriramsiv
@@ -11,11 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# Integrate with Icertis for Microsoft Dynamics 365 Supply Chain Management (preview)
+# Integrate with Icertis for Microsoft Dynamics 365 Supply Chain Management
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
 
 Icertis for Microsoft Dynamics 365 Supply Chain Management is a full-featured third-party contract lifecycle management (CLM) solution that uses the [CLM integration capabilities](clm-overview.md) of Microsoft Dynamics 365 Supply Chain Management. This article provides an overview of Icertis for Microsoft Dynamics 365 Supply Chain Management. It summarizes the following aspects of the integrated solution:
 

@@ -1,17 +1,16 @@
 ---
 title: Generate the Singapore GST-05 report
-description: Learn about the functionality for generating Singapore GST-05 reports in Microsoft Dynamics 365 Finance, which is used to file a goods and services tax return.
+description: Learn how to generate Singapore GST-05 reports in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 07/11/2025
 ms.reviewer: johnmichalak
 ms.search.region: Singapore
 ms.search.validFrom: 2016-02-28
 ms.search.form: TaxAuthority
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 90ea6084-920a-4174-8b3e-9b7b96aed0b4
 ---
 
@@ -19,7 +18,7 @@ ms.assetid: 90ea6084-920a-4174-8b3e-9b7b96aed0b4
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains the functionality for generating Singapore GST-05 reports. The GST-05 report is used to file a goods and services tax (GST) return.
+This article explains how to generate Singapore GST-05 reports in Microsoft Dynamics 365 Finance. The GST-05 report is used to file a goods and services tax (GST) return.
 
 Singaporean companies must file a GST return (GST-05 report) on a regular basis. The GST-05 report includes a breakdown of details such as standard-rated, zero-rated, and exempt purchases and sales in a regulated format. To accommodate the requirements, you must follow these two steps while you complete the tax settlement process:
 
@@ -52,11 +51,11 @@ Before you generate the report for the first time, download the following models
 
 After you've finished downloading the ER configurations from LCS, follow these steps.
 
-1. In Microsoft Dynamics 365 Finance, select the related 'Singaporean company.
-2. Go to **Workspaces** \> **Electronic reporting**, and set the Microsoft provider to **Active**.
+1. In Dynamics 365 Finance, select the related Singaporean company.
+2. Go to **Workspaces** \> **Electronic reporting**, and then set the Microsoft provider to **Active**.
 3. Select **Configurations** \> **Exchange**, and load the configuration from the XML file to import the tax declaration model and GST report format file.
 4. In the **Electronic reporting** workspace, select **Configurations** \> **Setup**.
-5. On the **Conditions** tab, select **version 32.1**, and create the configuration that will let you set up the mapping between the sales tax codes that are configured in your company and the related boxes of the GST-05 report:
+5. On the **Conditions** tab, select **version 32.1**, and create the configuration allows you to set up mapping between the sales tax codes that are configured in your company and the related boxes of the GST-05 report:
 
     1. In the **Lookup result** field, select the related box.
     2. In the **Tax code (Code)** field, select the sales tax code that is used to calculate the related box.
@@ -77,15 +76,15 @@ If the sales code that you created supports the standard rate of the **GST\_7%**
 
 ### Generate a GST report
 
-Follow these steps to generate the tax declaration report.
+To generate the tax declaration report, follow these steps.
 
-1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **GST tax report**.
+1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **GST tax report**.
 2. Select the **GST report** format mapping.
-3. Select "from" and "to" dates.
+3. Select the "From" and "To" dates.
 4. Select the settlement period and the tax declaration version.
 
 > [!NOTE]
-> Remember to run the sales tax settlement process to generate the related tax payment.
+> You must run the sales tax settlement process to generate the related tax payment.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

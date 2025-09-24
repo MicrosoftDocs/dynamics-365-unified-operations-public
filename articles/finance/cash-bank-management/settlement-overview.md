@@ -1,10 +1,10 @@
 ---
 title: Settlement overview
 description: Learn about the settlement process, including outliens about transaction types that can be settled and the timing and process for settling them.
-author: twheeloc
-ms.author: twheeloc
+author: music727
+ms.author: mibeinar
 ms.topic: overview
-ms.date: 05/06/2024
+ms.date: 04/18/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -45,11 +45,11 @@ Transactions can be settled manually, automatically, or by using a combination o
 
 You can create vendor payments and customer direct debit payments by using a payment proposal. A payment proposal is used to select invoices to pay. The payment proposal is started manually, and then the system automatically marks the selected invoices for settlement when the payments are created.
 
-If payments are created manually, you can use the **Settle transactions** page to select invoices for settlement. You can manually select the invoices, or you can use the **Mark by priority** option to have invoices automatically marked for settlement. The **Mark by priority** option is available only for Accounts receivable. You can turn on this option on the **Settlement priority** tab of the **Accounts receivable parameters** page.
+If payments are created manually, you can use the **Settle transactions** page to select invoices for settlement. You can manually select the invoices, or you can use the **Mark by priority** option to have invoices automatically marked for settlement. The **Mark by priority** option is available for Accounts receivable and Accounts payable. You can turn on this option on the **Settlement priority** tab of the **Accounts receivable parameters** and **Accounts payable parameters** pages.
 
 If a payment clerk enters a payment but doesn't settle that payment before it's posted, the payment can be automatically settled. You can turn on automatic settlement on the **Accounts receivable parameters** and **Accounts payable parameters** pages. Automatic settlement settles transactions only in the same legal entity. It doesn't settle transactions across multiple legal entities.
 
-When you use automatic settlement, you can use the predefined settlement priority, or you can define your own settlement priority on the **Accounts receivable parameters** page. This functionality is available only for Accounts receivable.
+When you use automatic settlement, you can use the predefined settlement priority, or you can define your own settlement priority on the **Accounts receivable parameters** and **Accounts payable parameters** pages.
 
 ## Results of settlement
 

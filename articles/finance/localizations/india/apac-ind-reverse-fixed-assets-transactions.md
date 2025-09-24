@@ -3,7 +3,7 @@ title: Reversing fixed asset transactions for India
 description: Learn about reversing a fixed asset transaction for India in Microsoft Dynamics 365 Finance, including examples and a step-by-step process.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/03/2024
 ms.custom:
 ms.reviewer: johnmichalak

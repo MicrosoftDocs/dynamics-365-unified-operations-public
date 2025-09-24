@@ -4,7 +4,8 @@ description: Learn how administrators can enable basic Copilot capabilities in f
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
-ms.date: 07/05/2024
+ms.date: 06/17/2025
+ms.update-cycle: 180-days
 ms.custom:
  - bap-template
 ms.reviewer: johnmichalak
@@ -44,13 +45,16 @@ The following illustration shows the components that are needed to use Copilot s
 
 ## Regional requirements
 
-Some Copilot features are limited to specific data regions and languages. Region and language support is continuously growing toward global availability. For the latest availability information for each Copilot feature, see the [Copilot international availability guide](https://dynamics.microsoft.com/availability-reports/copilotreport/).
+Some Copilot features are limited to specific data regions and languages. Region and language support is continuously growing toward global availability. For the latest availability information for each Copilot feature, see [Explore Copilot products by geography and languages](https://releaseplans.microsoft.com/availability-reports/?report=copilotproductreport).
 
 ## Microsoft Power Platform requirements
 
 To use Copilot features in finance and operations apps, [Power Platform Integration](../power-platform/enable-power-platform-integration.md) must be enabled in Microsoft Dynamics Lifecycle Services. (You don't have to enable dual-write if you don't use it.)
 
 Usually, if Power Platform Integration is enabled, all the required Copilot features are automatically deployed to your environment. If the features don't work as expected, the information in the following subsections might help you troubleshoot any issues.
+
+> [!NOTE]
+> [Copilot and AI agents](../copilot/enable-copilot.md) aren't supported in [developer environments that were deployed through Lifecycle Services](../dev-tools/access-instances.md#cloud-environment-that-is-provisioned-through-lifecycle-services).
 
 ### Confirm that the required Dynamics 365 apps are installed
 
@@ -62,7 +66,14 @@ The following table lists the Dynamics 365 apps that must be present in your Pow
 | Copilot summaries in Supply Chain Management and Copilot summaries in Commerce | Copilot in Dynamics 365 Supply Chain Management |
 | Copilot summaries in Finance | Copilot in Dynamics 365 Finance |
 
-Usually, all the required apps are already installed in your environment. However, if you only recently enabled Power Platform Integration for your environment, the apps might not yet be installed. To check for and install the required apps, follow these steps.
+Usually, all the required apps are already installed in your environment. However, if you only recently enabled Power Platform Integration for your environment, or if you're running a government cloud version of your finance and operations apps, the apps might not yet be installed.
+
+> [!NOTE]
+> In [US Government Community Cloud (GCC) and GCC-High environments](../../fin-ops/deployment/us-gcc-deployment.md), the required Copilot apps aren't installed in Dataverse by default. Copilot features controlled through [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) in finance and operations apps (such as [AI summaries with Copilot](../../../supply-chain/get-started/copilot-summaries-overview.md)) remain enabled by default, but they won't work as expected until the required apps are installed in Dataverse.
+>
+> Copilot capabilities are only available in GCC and GCC-High environments after an admin installs the required Copilot apps in Dataverse.
+
+To check for and install the required apps, follow these steps.
 
 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select your environment to open its detailed view.
@@ -73,12 +84,15 @@ Usually, all the required apps are already installed in your environment. Howeve
 
 The Copilot sidecar uses conversational bots and the generative answers capability from Copilot Studio.
 
-Generative answers require Bing Search. In addition, depending on the availability of back-office services in your region, your Dataverse environment might have to be set up to support cross-region calls. For more information, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
+Generative answers require Bing Search. In addition, depending on the availability of back-office services in your region, your Dataverse environment might have to be set up to support cross-region calls. Learn more at [Move data across regions for Copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
 
 > [!NOTE]
 > If the required AI services are already available in your Dataverse region, you don't have to set up support for cross-region calls.
 
 If Bing Search is disabled, or if cross-region data movement is required but is disabled, users won't be able to open the Copilot sidecar, or the Copilot sidecar won't provide answers, depending on the situation.
+
+> [!NOTE]
+> In [US Government Community Cloud (GCC) and GCC-High environments](/dynamics365/fin-ops-core/fin-ops/deployment/us-gcc-deployment), Bing Search is off by default and must be explicitly enabled by an administrator. Learn more at [Turn on data movement, Bing search, and Microsoft 365 services for Copilots and generative AI features](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features).
 
 ### Confirm that your Power Platform environment can publish copilots that have AI features
 
@@ -101,14 +115,17 @@ As was previously mentioned, most Copilot features in finance and operations app
 | All finance and operations apps | Basic Copilot support | There are no additional requirements. |
 | All finance and operations apps | Generative help and guidance with Copilot | [Enable generative help and guidance with Copilot](enable-copilot-generative-help.md). |
 | All finance and operations apps | Workflow history summary | [Turn on Copilot support for the Workflow history page](../../fin-ops/organization-administration/workflow-history-summary.md) |
+| All finance and operations apps | Enhanced user feedback for Copilot and related experiences | [Enable enhanced user feedback for Copilot and related experiences](enable-copilot-feedback.md) |
+| All finance and operations apps | Immersive Home | [Turn on the feature in feature management](../../fin-ops/copilot/immersive-home.md). |
 | Dynamics 365 Commerce | Use Copilot in site builder to enrich product detail pages | [Enable Copilot in site builder](../../../commerce/copilot-site-builder.md). |
 | Dynamics 365 Finance | Collections coordinator summary | [Enable collections coordinator summary](../../../finance/accounts-receivable/CollectionsCoordinatorSummary.md). |
 | Dynamics 365 Finance | Customer page summary | [Enable customer page summary](../../../finance/accounts-receivable/CustomerPageSummary.md). |
 | Dynamics 365 Supply Chain Management | AI summaries with Copilot | [Enable AI summaries with Copilot](../../../supply-chain/get-started/copilot-summaries-overview.md). |
 | Dynamics 365 Supply Chain Management | [Analyze demand plans with Copilot](../../../supply-chain/demand-planning/demand-planning-copilot.md) | This feature is installed and enabled by default in Demand planning version 1.0.0.1067 and later. |
-| Dynamics 365 Supply Chain Management | [Inquire into inventory with Copilot](../../../supply-chain/inventory/inventory-visibility-copilot-api.md) | This feature is installed and enabled by default in Inventory Visibility version 1.2.2.127 and later. |
 | Dynamics 365 Supply Chain Management | Review and accept changes to confirmed purchase orders | [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md). |
-| Dynamics 365 Supply Chain Management | Workload insights with Copilot in the Warehouse Management mobile app | [Enable Workload insights with Copilot](../../../supply-chain/warehousing/warehouse-management-mobile-app-insights.md) |
+| Dynamics 365 Supply Chain Management | Workload insights with Copilot in the Warehouse Management mobile app | [Enable Workload insights with Copilot](../../../supply-chain/warehousing/warehouse-management-mobile-app-insights.md). |
+| Dynamics 365 Supply Chain Management | Supplier Communications Agent | [Turn on Supplier Communications Agent features and synchronize mailboxes with Dataverse](../../../supply-chain/procurement/supplier-com-agent-setup.md). |
+| Dynamics 365 Supply Chain Management | Generative insights for Demand planning | Automatically installed and enabled when you [install Demand planning](../../../supply-chain/demand-planning/install-demand-planning.md). |
 
 ## Responsible AI FAQs
 

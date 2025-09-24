@@ -3,7 +3,7 @@ title: Set up transaction posting for Latin America
 description: Learn how to set up transaction posting for Latin America (LATAM), including outlines on activating features and setting a company address to the LATAM region.
 author: Fhernandez0088
 ms.author: v-federicohe 
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/29/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak

@@ -5,7 +5,7 @@ author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench, WHSOutboundShipmentOrder, WHSPackingSlipPostingParameters, WHSShipPlanningListPage, WHSShipmentDetails, WHSWaveTemplateTable, WHSPostMethod, WHSWorkTemplateTable, WHSLocDirTable, WHSEWManagementSystem, InventLocations 
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/29/2024
 ms.custom: bap-template
 ---
@@ -28,8 +28,18 @@ To manage the process of shipping your orders, you must apply an *outbound shipm
 
 The following settings are configured on the **Outbound shipment processing policies** page (**Warehouse management** \> **Setup** \> **Shipping** \> **Outbound shipment processing policies**):
 
-- **Enforce shipment to order matching** – Set this option to *Yes* to allow just one shipment to be associated with each demand order. If you use [Warehouse management only mode with externally managed warehouse processing](wms-only-mode-external-shared-warehouse.md), you must set this option to *Yes*, because that functionality is set up on the source system that is related to the externally managed warehouse.
-- **Fill entire shipment** – Use this field to control whether warehouse wave processing proceeds with shipments only when warehouse work can be created for the full quantities of the shipment lines. The default value is *Respect customer settings*. When that value is used, the **Fill entire shipment** setting that is defined for each customer is respected.
+- **Fill entire shipment** – Choose what to do if work creation fails for one or more lines in a shipment (for example, due to location directive failures). This feature only checks for work creation failures and doesn't check whether the full ordered quantity can be fulfilled. Choose one of the following options:
+    - *Enabled*: If work creation fails for any line in a shipment, then always exclude that entire shipment from the wave (create no work for that shipment), regardless of the setting for each customer.
+    - *Disabled*: If work creation fails for one or more lines in a shipment, then always skip those lines but still create work for all of the other lines, regardless of the setting for each customer.
+    - *Respect customer settings*: Respect the **Fill entire shipment** setting defined for each customer.
+
+- **Enforce shipment to order matching** – Choose whether the policy should permit just one shipment to be related to each outbound order, or whether multiple shipments per order should be allowed. Select one of the following values:
+    - *No* – Allow multiple shipments per outbound order.
+    - *Yes* (Supply Chain Management version 10.0.46 and later) – Allow just one shipment per outbound order. In version 10.0.46 and later, when you confirm a shipment, the policy instructs the system to update the delivery remainder on the source order line to reflect the quantity that was actually shipped. If you later reverse the shipment, the delivery remainder is restored to the original ordered quantity.
+    - *Yes* (Supply Chain Management version 10.0.45 and earlier) – Allow just one shipment per outbound order. In version 10.0.45 and earlier, if the shipped quantity differs from the ordered quantity, you must manually update the delivery remainder to match the shipped quantity before you confirm the shipment.
+
+    > [!NOTE]
+    > If you use [Warehouse management only mode with external shared warehouses](wms-only-mode-external-shared-warehouse.md), your [source system](wms-only-mode-setup.md#source-systems) must be configured to use an outbound shipment processing policy where **Enforce shipment to order matching** is set to *Yes* because that functionality is set up on the source system that is related to the externally managed warehouse.
 
 ## Define default outbound shipment processing policies
 

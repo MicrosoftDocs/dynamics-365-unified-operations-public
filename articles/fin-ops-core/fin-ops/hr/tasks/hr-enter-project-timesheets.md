@@ -2,7 +2,7 @@
 title: Enter project timesheets
 description: Learn about how to enter project timesheets, including a step-by-step process that details how to create timesheets.
 author: twheeloc
-ms.author: anbichse
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 04/10/2024
 ms.custom:

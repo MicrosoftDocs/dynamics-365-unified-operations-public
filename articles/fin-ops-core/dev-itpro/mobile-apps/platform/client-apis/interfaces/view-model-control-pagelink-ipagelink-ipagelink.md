@@ -3,11 +3,12 @@ title: PageLink type
 description: Learn about the pagelink control type. A pagelink is a control that navigates to another page and includes various properties and methods.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/24/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # PageLink type

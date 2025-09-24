@@ -4,7 +4,7 @@ description: Learn about how sales tax is calculated by providing a sales tax gr
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 09/05/2025
 ms.custom:
 ms.reviewer: twheeloc    
 audience: Application User 
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Sales tax on documents is calculated by providing a Sales tax group and an Item sales tax group on document lines. These default from master data but can be changed manually if necessary. The calculated sales tax can be checked on a line and document level. This task uses the USMF demo company.
+Sales tax on documents is calculated by providing a **Sales tax group** and an **Item sales tax group** on document lines. These default from master data but can be changed manually if necessary. The calculated sales tax can be checked on a line and document level. This task uses the USMF demo company.
 
 1. Go to **Accounts receivable > Orders > All sales orders**.
 2. Click **New**.

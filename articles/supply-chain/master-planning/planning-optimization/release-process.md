@@ -1,9 +1,9 @@
 ---
 title: Planning Optimization release process and release history
 description: Learn about the release process and release history for Planning Optimization, including a table outling various changes.
-author: t-benebo
-ms.author: benebotg
-ms.topic: article
+author: Henrikan
+ms.author: henrikan
+ms.topic: concept-article
 ms.date: 02/20/2023
 ms.reviewer: kamaybac
 ---
@@ -24,6 +24,8 @@ Because notifications aren't shown when Planning Optimization is updated in your
 
 | Changes | Feature management details | Release dates |
 |---|---|---|
+| <p>General performance, quality, and stability improvements.</p> <p>Support for dimension-based configuration.</p> <p>Support for using the *Transactions - reduction key* method to reduce demand and supply forecasts in the current period based on invoiced and delivered sales orders.</p> | No feature management required. Features required | November  8-16, 2024 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | October  1–8, 2024 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | May  20–28, 2024 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | March  15–20, 2024 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | February  10–15, 2024 |

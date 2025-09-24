@@ -6,7 +6,7 @@ ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 11/06/2024
+ms.date: 09/04/2025
 ms.custom: 
   - bap-template
 ---
@@ -32,7 +32,7 @@ Select a feature area to learn more about it.
 - [Sensor Data Intelligence (preview)](sensor-data-intelligence/sdi-home-page.md)
 - [Master planning](master-planning/master-planning-home-page.md)
 - [Demand planning](demand-planning/demand-planning-home-page.md)
-- [Unified pricing management (preview)](unified-pricing-management/upm-pricing-management-overview.md)
+- [Unified pricing management](unified-pricing-management/upm-pricing-management-overview.md)
 - [Procurement and sourcing](procurement/procurement-sourcing-overview.md)
 - [Product information management](pim/product-information.md)
 - [Engineering change management](engineering-change-management/product-engineering-overview.md)
@@ -55,8 +55,7 @@ Check out the following collections of videos to learn more about Supply Chain M
 
 The following blogs provide information about Supply Chain Management and related technologies:
 
-- [Supply Chain Management blog articles for business decision makers](https://www.microsoft.com/dynamics-365/blog/business-leader/product/dynamics-365-supply-chain-management/)
-- [Supply Chain Management blog articles for IT professionals](https://www.microsoft.com/dynamics-365/blog/it-professional/product/dynamics-365-supply-chain-management/)
+- [Supply Chain Management blog articles](https://www.microsoft.com/dynamics-365/blog/product/dynamics-365-supply-chain-management/)
 - [Dynamics AX Manufacturing R&D Team Blog (archive)](/archive/blogs/axmfg/)
 
 ## E-learning courses and training

@@ -28,6 +28,7 @@ This article provides links to documentation resources for Norway.
 - [Cash register functionality](../../../commerce/localizations/norway/emea-nor-cash-registers.md)
 - [Deployment guidelines for cash registers](../../../commerce/localizations/dev-itpro/emea-nor-loc-deployment-guidelines.md)
 - [Customer electronic invoices export](emea-nor-e-invoices.md)
+- [Payments to self-employed persons - RF-1321](emea-nor-payments-to-self-employed-persons.md)
 
 
 

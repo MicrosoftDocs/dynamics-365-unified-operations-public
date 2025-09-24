@@ -3,7 +3,7 @@ title: Add payment amount types
 description: Learn about how to set up payment amount types in Asset leasing, including a step-by-step process for adding payment amount types.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/11/2022
 ms.reviewer: twheeloc
 audience: Application User

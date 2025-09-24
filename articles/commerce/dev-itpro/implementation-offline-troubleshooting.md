@@ -5,7 +5,7 @@ title: Commerce offline implementation troubleshooting
 description: This article provides an overview of troubleshooting for offline implementations of Microsoft Dynamics 365 Commerce.
 author: jashanno
 ms.date: 06/27/2023
-ms.topic: article
+ms.topic: troubleshooting-general
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: global

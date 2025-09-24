@@ -5,7 +5,7 @@ title: Generate and review payroll entities
 description: This article describes how to generate and review payroll entities. 
 author: twheeloc
 ms.date: 04/07/2021
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 # ms.search.form: 
@@ -16,7 +16,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: twheeloc
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---

@@ -3,7 +3,7 @@ title: Apply updates and extensions to Commerce Scale Unit (cloud)
 description: Learn how to apply updates and extensions to cloud-hosted Commerce channel components, including prerequisites.
 author: josaw
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/13/2021
 ms.reviewer: johnmichalak
 audience: IT Pro

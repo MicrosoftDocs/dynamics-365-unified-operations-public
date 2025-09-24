@@ -56,6 +56,7 @@ The demo data set supports 40 languages across 16 countries or regions. It also 
 | USPI         | Contoso Process Industry             |
 | USRT         | Contoso Retail USA                   |
 | USSI         | Contoso Consulting USA               |
+| USSW         | Contoso Shared Warehouse USA         |
 
 ## Embedded analytics
 
@@ -105,7 +106,7 @@ In the USMF demo company, there are two purchase orders for INGA to approve. You
 
 The batch transfer rules for subledger journal account entries have been changed to **Scheduled batch** to reflect a best practice. The batches are configured to run every 10 minutes. It is important to understand that accounting entries for all source documents will not be reflected in General ledger until the batch process has run. If you have requirements to see the immediate effect in General ledger, set the **Transfer mode** to **Synchronous** on the **Batch transfer rules** page within **General ledger** parameters. While Synchronous works well for product demos and environments with low transaction volumes, it can cause performance issues in larger transaction volume environments.
 
-[![General ledger paramters.](../../fin-ops/get-started/media/GL-parameters.PNG)]
+[![General ledger parameters.](../../fin-ops/get-started/media/GL-parameters.PNG)]
 
 ## Cost accounting
 
@@ -113,7 +114,7 @@ Three Cost accounting ledgers are created in demo data. The Cost accounting ledg
 
 Access level security is configured but not enabled. This is enabled in the **Cost accounting parameters** page.
 
-[![Cost accounting paramters.](../../fin-ops/get-started/media/Cost-accounting-parameters.PNG)]
+[![Cost accounting parameters.](../../fin-ops/get-started/media/Cost-accounting-parameters.PNG)]
 
 After Access level security has been enabled, you can assign an employee to the role Cost object controller. You can log in as the employee and access the **Cost control** workspace. The employee can now see their Cost center performance and drill into details of how these were calculated.
 

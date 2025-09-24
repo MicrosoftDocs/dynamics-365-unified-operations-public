@@ -3,7 +3,7 @@ title: Comments, using, and print statements
 description: Learn about comments, using, and print statements in X++, including examples and descriptions for each statement type.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: language-reference
 ms.date: 08/27/2021
 ms.reviewer: johnmichalak
 audience: Developer
@@ -97,9 +97,9 @@ public boolean isLate()
 }
 ```
 
-## Unsupported statements: changeSite, pause, and window
+## Unsupported statements: pause and window
 
-The **changeSite**, **pause**, and **window** keywords are no longer a part of the X++ language. These keywords will cause compilation errors if you use them.
+The **pause** and **window** keywords are no longer a part of the X++ language. These keywords will cause compilation errors if you use them.
 
 ## Ignored statements: server and client
 

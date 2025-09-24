@@ -1,8 +1,8 @@
 ---
 title: Subscription workflow overview 
 description: Access an overview of subscription workflow, including outlines on setting up subscriptions and creating subscription transactions. 
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.topic: overview
 ms.date: 05/07/2018
 ms.reviewer: kamaybac
@@ -10,10 +10,9 @@ ms.search.form: SMASubscriptionGroup, SMASubscriptionCreateDialog
 ---
 
 
-# Subscription workflow overview 
+# Subscription workflow overview
 
 [!include [banner](../includes/banner.md)]
-
 
 You are the subscriptions administrator for a light company that offers subscriptions for lighting rig maintenance. A customer contacts your company to purchase a yearly subscription for lighting rig maintenance.
 
@@ -25,7 +24,7 @@ After the subscription group is created, you can create the subscription. For mo
 
 ## Create and modify subscription transactions
 
-After you set up the subscription, you create the subscription fee transaction for the first invoicing period, which is one year. The transactions are of the **Regular** type. Therefore, you can only create subscription transactions where the from date and the to date correspond to periods that were previously created in the **Period types** form. For more information about fee transactions, see [Create subscription fee transactions](create-subscription-fee-transactions.md).
+After you set up the subscription, you create the subscription fee transaction for the first invoicing period, which is one year. The transactions are of the **Regular** type. Therefore, you can only create subscription transactions where the from date and the to date correspond to periods that were previously created on the **Period types** page. For more information about fee transactions, see [Create subscription fee transactions](create-subscription-fee-transactions.md).
 
 After you set up the subscription for your customer, you remember that they have negotiated a 10 percent discount on all list prices for service offerings. Therefore, you must reduce the price of the transaction fee that you created.
 
@@ -38,10 +37,5 @@ You have now finished setting up the subscription, and you are ready to invoice 
 Two days later, your customer calls to say that the subscription should be invoiced in U.S. dollars, not Euros. Therefore, you create a credit note, and you also create a new subscription transaction in the correct currency. For more information about how to credit subscription transactions, see [Credit subscription transactions](credit-subscription-transactions.md).
 
 At the end of each month, one month's revenue can be accrued from the customer's subscription to the profit and loss account and the WIP accounts. For more information about how to accrue revenue for subscriptions, see [Accrue subscription revenue](accrue-subscription-revenue.md).
-
-  
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

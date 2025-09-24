@@ -1,12 +1,11 @@
 ---
 title: User-based authentication for the Warehouse Management mobile app in on-premises deployments
-description: Learn how to configure the user-based Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Finance + Operations (on-premises) environment.
+description: Learn how to configure the Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Finance + Operations (on-premises) environment.
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.date: 10/18/2023
+ms.date: 07/29/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.service: dynamics-365-op
 ---
@@ -59,11 +58,20 @@ For more information about `SSOLifetime`, see [AD&nbsp;FS single sign-on setting
 To enable the Warehouse Management mobile app to interact with a specific Dynamics 365 Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in AD FS. The following procedure shows one way to complete this task.
 
 1. Decide which device types your native application supports. For example, you might want to support Windows, Android, and iOS devices.
-1. Make a note of the redirect URIs for each device type. You'll need these URIs when you create the native application in AD&nbsp;FS.
+1. Make a note of the redirect URIs for each device type. You need these URIs when you create the native application in AD&nbsp;FS.
 
-    - **Windows:** *ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333*
-    - **Android:** *msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
-    - **iOS:** *msauth.com.microsoft.WarehouseManagement://auth*
+    For V4 of the Warehouse Management mobile app, the redirect URIs are as follows:
+        - **Windows:** *ms-appx-web://microsoft.aad.brokerplugin/{clientId}*
+        - **Android:** *msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
+        - **iOS:** *msauth.com.microsoft.WarehouseManagement://auth*
+
+    > [!NOTE]
+    > For Windows, the `{clientId}` placeholder is replaced with the client ID of the application that you create in AD&nbsp;FS. The client ID is a unique identifier for the application.
+
+    For V3 of the Warehouse Management mobile app, the redirect URIs are as follows:
+        - **Windows:** *ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333*
+        - **Android:** *msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
+        - **iOS:** *msauth.com.microsoft.WarehouseManagement://auth*
 
     > [!NOTE]
     > The redirect URIs aren't required for the device code flow. However, you must provide them if you want to use the user name and password authentication method.
@@ -74,7 +82,7 @@ To enable the Warehouse Management mobile app to interact with a specific Dynami
 
     ```powershell
     $applicationGuid = New-Guid
-    # Example: Add-AdfsNativeClientApplication -ApplicationGroupIdentifier "Microsoft Dynamics 365 for Operations On-premises" -Name "Microsoft Dynamics 365 for Operations On-Premises - WMA DeviceCode - WH1 - D1" -Identifier $applicationGuid -RedirectUri @("msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=","msauth.com.microsoft.WarehouseManagement://auth","ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333")
+    # Example: Add-AdfsNativeClientApplication -ApplicationGroupIdentifier "Microsoft Dynamics 365 for Operations On-premises" -Name "Microsoft Dynamics 365 for Operations On-Premises - WMA DeviceCode - WH1 - D1" -Identifier $applicationGuid -RedirectUri @("msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=","msauth.com.microsoft.WarehouseManagement://auth","ms-appx-web://microsoft.aad.brokerplugin/$applicationGuid")
     Add-AdfsNativeClientApplication -ApplicationGroupIdentifier <Application group Identifier> -Name <Native client application name> -Identifier $applicationGuid -RedirectUri <Redirect URIs>
     ```
 
@@ -97,7 +105,7 @@ To create a user that corresponds to the user credentials for the Warehouse Mana
 
 ## <a name="revoke"></a>Remove access for a device that uses user-based authentication
 
-If a device is lost or compromised, you must remove its ability to access Finance + Operations (on-premises). If the lost or compromised device is authenticated by using the device code flow, it's essential that you disable the associated user in Active Directory. In this way, you effectively revoke access for any device that uses the device code that's associated with that user. For this reason, we recommend that you have one Active Directory user per device.
+If a device is lost or compromised, you must remove its ability to access Finance + Operations (on-premises). If the lost or compromised device is authenticated by using the device code flow, it's essential that you disable the associated user in Active Directory. In this way, you effectively revoke access for any device that uses the device code associated with that user. For this reason, we recommend that you have one Active Directory user per device.
 
 To disable a user in Active Directory, follow these steps.
 

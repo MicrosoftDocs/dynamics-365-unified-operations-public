@@ -3,7 +3,8 @@ title: WHat's new and changed in Dynamics 365 Commerce 10.0.29 (October 2022)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.29. 
 author: josaw1
 ms.date: 04/12/2024
-ms.topic: article
+ms.update-cycle: 1095-days
+ms.topic: whats-new
 audience: Application User
 ms.custom: 
   - bap-template

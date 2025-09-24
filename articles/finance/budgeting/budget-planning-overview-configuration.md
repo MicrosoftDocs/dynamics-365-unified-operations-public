@@ -4,7 +4,8 @@ description: Learn about budget planning, how to configure budget planning, and 
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 03/11/2024
+ms.date: 05/15/2025
+ms.update-cycle: 1095-days
 ms.custom: evergreen 
 ms.reviewer: twheeloc
 ms.collection: get-started

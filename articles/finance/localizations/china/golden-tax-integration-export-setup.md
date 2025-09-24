@@ -1,35 +1,39 @@
 ---
 title: Golden tax integration export setup
-description: Learn how to configure the export format for golden tax integration, including a step-by-step procedure using the CNMF demo data company.
+description: This article describes how to configure the export format for golden tax integration for China in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Golden tax integration export setup
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to configure the export format for golden tax integration. 
-Before you complete this procedure, you should have already completed the setup of the golden tax integration.
-After you complete this procedure, your next steps are to update the Format mapping field on the Tax integration profile page. 
+This article describes how to configure the export format for golden tax integration for China in Microsoft Dynamics 365 Finance.
 
-This procedure was created using the demo data company CNMF. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
+The following procedure shows you how to configure the export format for golden tax integration. This procedure was created using the demo data company CNMF.
 
-1. Go to All workspaces > Electronic reporting.
-2. In the list, select 'Microsoft'.
-3. Click Repositories.
-4. Click Open.
-5. In the tree, select 'GoldenTax(CN)\GoldenTax(CN) format'.
-6. Click Import.
-7. Click Yes.
+Before you complete this procedure, you must first complete the setup of the golden tax integration.
+
+After you complete this procedure, your next steps are to update the **Format mapping** field on the **Tax integration profile** page. 
+
+To configure the export format for golden tax integration, follow these steps.
+
+1. In Dynamics 365 Finance, go to **All workspaces \> Electronic reporting**.
+1. In the list, select **Microsoft**.
+1. Select **Repositories**.
+1. Select **Open**.
+1. In the tree, select **GoldenTax(CN)\GoldenTax(CN) format**.
+1. Select **Import**.
+1. Select **Yes**.
 
 
 

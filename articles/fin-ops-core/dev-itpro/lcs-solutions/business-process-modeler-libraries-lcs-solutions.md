@@ -3,7 +3,7 @@ title: Set up Business process modeler libraries
 description: Learn about how to create and work with Business process modeler (BPM) libraries, including an outline on how to update, publish, or delete a business process library.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

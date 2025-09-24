@@ -6,9 +6,8 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 03/04/2025
 ms.reviewer: johnmichalak
-
 ---
 
 # VAT declaration (Hungary)
@@ -117,6 +116,20 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </td>
 <td width="228">
 <p>04-TaxFreeDomesticSales</p>
+</td>
+</tr>
+<tr>
+<td width="349">
+<p>Sales subject to 0% rate</p>
+</td>
+<td width="47">
+<p>110</p>
+</td>
+<td width="94">
+<p>Report field lookup</p>
+</td>
+<td width="228">
+<p>110-DomesticSalesZeroRate</p>
 </td>
 </tr>
 <tr>
@@ -234,6 +247,21 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </td>
 <td width="332">
 <p><strong>Lookup result</strong></p>
+</td>
+</tr>
+<tr>
+<td width="255">
+<p>Intra-Community acquisition of products subject to a 0% rate</p>
+</td>
+<td width="47">
+<p>112</p>
+</td>
+<td width="85">
+<p>Report field lookup</p>
+</td>
+<td width="332">
+<p>112-EUPurchasesZeroRateTaxPayable</p>
+<p>112-EUPurchasesZeroRateUseTax</p>
 </td>
 </tr>
 <tr>
@@ -357,6 +385,21 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="255">
+<p>In the case of a transaction within the Community pursuant to Section 91(2) of the VAT Act, the tax base payable on the purchaser's supply of goods is subject to a 0% rate</p>
+</td>
+<td width="47">
+<p>113</p>
+</td>
+<td width="85">
+<p>Report field lookup</p>
+</td>
+<td width="332">
+<p>113-EUPurchasesTriangularZeroRateTaxPayable</p>
+<p>113-EUPurchasesTriangularZeroRateUseTax</p>
+</td>
+</tr>
+<tr>
+<td width="255">
 <p>5% tax payable by the purchaser on the supply of goods in the case of a transaction within the community under VAT Act. Section 91 (2)</p>
 </td>
 <td width="47">
@@ -431,6 +474,21 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </td>
 <td width="275">
 <p>23-ImportGoodsTaxFree</p>
+</td>
+</tr>
+<tr>
+<td width="302">
+<p>0% product import</p>
+</td>
+<td width="47">
+<p>114</p>
+</td>
+<td width="95">
+<p>Report field lookup</p>
+</td>
+<td width="275">
+<p>114-ImportGoodsZeroRateTaxPayable</p>
+<p>114-ImportGoodsZeroRateUseTax</p>
 </td>
 </tr>
 <tr>
@@ -520,7 +578,10 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </td>
 <td width="275">
 <p>29-PurchaseReverseChargeTaxPayable</p>
+<p>2964-PurchaseLowerReducedRateReverseChargeUseTax</p>
+<p>2965-PurchaseHigherReducedRateReverseChargeUseTax</p>
 <p>2966-PurchaseReverseChargeUseTax</p>
+<p>2968-PurchasesProrataTaxDeductibleReverseChargeUseTax</p>
 </td>
 </tr>
 <tr>
@@ -549,6 +610,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </td>
 <td width="275">
 <p>31-TaxIncrease</p>
+<p>31-TaxIncreaseCorrection</p>
 </td>
 </tr>
 <tr>
@@ -1007,6 +1069,19 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="293">
+<p>Domestic purchases of products and services subject to a 0% rate</p>
+</td>
+<td width="38">
+<p>111</p>
+</td>
+<td width="85">
+<p>Report field lookup</p>
+</td>
+<td width="304">
+<p>111-PurchasesZeroRate</p>
+</td>
+</tr><tr>
+<td width="293">
 <p>Purchase of goods and services under the 5% rate</p>
 </td>
 <td width="38">
@@ -1017,6 +1092,8 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </td>
 <td width="304">
 <p>64-PurchasesLowerReducedRate</p>
+<p>64-PurchasesLowerReducedRateReverseCharge</p>
+<p>2964-PurchaseLowerReducedRateReverseChargeUseTax</p>
 </td>
 </tr>
 <tr>
@@ -1031,6 +1108,8 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </td>
 <td width="304">
 <p>65-PurchasesHigherReducedRate</p>
+<p>65-PurchasesHigherReducedRateReverseCharge</p>
+<p>2965-PurchaseHigherReducedRateReverseChargeUseTax</p>
 </td>
 </tr>
 <tr>
@@ -1045,6 +1124,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </td>
 <td width="304">
 <p>66-PurchasesStandardRate</p>
+<p>66-PurchasesStandardRateReverseCharge</p>
 <p>2966-PurchaseReverseChargeUseTax</p>
 </td>
 </tr>
@@ -1078,6 +1158,8 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </td>
 <td width="304">
 <p>68-PurchasesProrataTaxDeductible</p>
+<p>68-PurchasesProrataTaxDeductibleReverseCharge</p>
+<p>2968-PurchasesProrataTaxDeductibleReverseChargeUseTax</p>
 </td>
 </tr>
 <tr>
@@ -1591,6 +1673,34 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </td>
 <td width="266">
 <p>101D-PurchaseReverseChargeIronSteelTaxDue</p>
+</td>
+</tr>
+<tr>
+<td width="321">
+<p>The tax base of gas under reverse charge pursuant to Section 142(1)(k) of the VAT Act from the amount of line 04</p>
+</td>
+<td width="47">
+<p>102</p>
+</td>
+<td width="85">
+<p>AnnexI</p>
+</td>
+<td width="266">
+<p>102-DomesticSalesGasReverseCharge</p>
+</td>
+</tr>
+<tr>
+<td width="321">
+<p>Tax base and tax for gas acquired under reverse charge from the amount of line 29</p>
+</td>
+<td width="47">
+<p>103</p>
+</td>
+<td width="85">
+<p>AnnexI</p>
+</td>
+<td width="266">
+<p>103-PurchaseGasReverseChargeTaxPayable</p>
 </td>
 </tr>
 </tbody>
@@ -2126,10 +2236,6 @@ For more information, see [Download ER configurations from the Global repository
 
 ### <a name="parameters"></a>Set up application-specific parameters for VAT declaration fields
 
-> [!NOTE]
-> 
-> We recommend that you enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled, parameters that are configured for earlier versions of an ER format automatically become applicable for later versions of the same format. If this feature isn't enabled, you must explicitly configure application-specific parameters for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace as of Dynamics 365 Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
-
 To automatically generate a VAT declaration, associate sales tax codes in the application and lookup results in the ER configuration.
 
 #### Set up application-specific parameters for Report field lookup
@@ -2296,13 +2402,12 @@ Follow these steps to define which sales tax codes generate which lines on the V
 
 ### Set up the VAT reporting format for preview amounts in Excel
 
-1. In the **Feature management** workspace, find and select the **VAT statement format reports** feature in the list, and then select **Enable now**.
-2. Go to **General ledger** > **Setup** > **General ledger parameters**.
-3. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (HU)** ER format.
+1. Go to **General ledger** > **Setup** > **General ledger parameters**.
+2. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (HU)** ER format.
 
 This format is printed when you run the **Report sales tax for settlement period** report. It's also printed when you select **Print** on the **Sales tax payments** page.
 
-4. On the **Tax authorities** page, select the tax authority, and then, in the **Report layout** field, select **Default**.
+3. On the **Tax authorities** page, select the tax authority, and then, in the **Report layout** field, select **Default**.
 
 If you're configuring the VAT declaration in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), follow these steps.
 

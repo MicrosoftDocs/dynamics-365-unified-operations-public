@@ -1,21 +1,21 @@
 ---
 title: Inventory management overview
 description: Learn how you can use inventory management to perform inbound operations, quality assurance, inventory activities, outbound operations, and inventory control.
-author: Weijiesa
-ms.author: weijiesa
-ms.topic: overview
-ms.date: 05/27/2024
-ms.custom:
-  - bap-template
+author: banluo-ms
+ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: InventParameters
+ms.topic: overview
+ms.date: 08/29/2025
+ms.custom:
+  - bap-template
 ---
 
 # Inventory management overview
 
 [!include [banner](../includes/banner.md)]
 
-You can use Inventory management to perform the following tasks:
+With Inventory management, you can perform the following tasks:
 
 - [Inbound operations](arrival-overview.md)
 - [Quality assurance](quality-management-processes.md)
@@ -33,7 +33,7 @@ The following learning map shows the major concepts and tasks that make up the f
 
 ### What's new and in development
 
-Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features have been released and what new features are in development.
+Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features are released and what new features are in development.
 
 ### Inventory accounting
 
@@ -41,7 +41,6 @@ Learn more in [Inventory close](../cost-management/inventory-close.md).
 
 ### Manufacturing and Supply Chain Management blogs
 
-You can find opinions, news, and other information about Inventory management and other solutions on the
-[Dynamics AX Manufacturing R&D Team Blog](/archive/blogs/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+You can find opinions, news, and other information about Inventory management and other solutions on the [Dynamics AX Manufacturing R&D Team Blog](/archive/blogs/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -97,13 +97,6 @@ If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or 
 </tbody>
 </table>
 
-## Download and install the mobile app
-
-Download and install the finance and operations (Dynamics 365) mobile app:
-
--   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
--   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
-
 ## Sign in to the mobile app
 1.  Start the app on your mobile device.
 2.  Enter your Microsoft Dynamics 365 URL.
@@ -123,7 +116,7 @@ The **Vendor collaboration** workspace includes the following pages.
 The **Contacts** page lets you see all the contacts that have been set up for the vendor account. It shows the contact person's name, primary email address, and user alias, if the contact person has an alias. This page also shows whether the contact person's user account is active. When you select a contact, you see contact details, such as the legal entities that the person is a contact for. You also see contact information, such as a telephone number or an alternative email address.
 
 ### User requests
-The **User requests** page lets you see all the user requests that you've submitted via the vendor collaboration web interface. You can also follow the status of those requests. When you select a user request, you can see what was requested, add or inactivate a user, change security, and see which security roles were requested for the user.
+The **User requests** page lets you see all the user requests that you've submitted via the vendor collaboration web interface. You can also follow the status of those requests. When you select a user request, you can see what was requested, add or deactivate a user, change security, and see which security roles were requested for the user.
 
 ### Purchase orders ready for review
 The **Purchase orders ready for review** page lets you see all the purchase orders that the customer has sent, but that haven't yet been responded to. You can view selected information about the order, such as which products were requested and when those products should be delivered. Price information is also available, depending on the configuration of the vendor.

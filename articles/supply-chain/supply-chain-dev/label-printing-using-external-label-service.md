@@ -15,7 +15,7 @@ ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource
 
 [!include [banner](../../finance/includes/banner.md)]
 
-This article describes how to set up and print labels by using an external service. This feature enables direct interaction between Microsoft Dynamics 365 Supply Chain Management and third-party solutions by providing a framework for communicating via HTTP APIs, without requiring the [Document Routing Agent (DRA)](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md). You can design and print different types of labels by using third-party labeling products, such as [Seagull Scientific BarTender®](label-printing-using-bartender.md) and [Loftware NiceLabel](label-printing-using-nicelabel.md).
+This article describes how to set up and print labels by using an external service. This feature enables direct interaction between Microsoft Dynamics 365 Supply Chain Management and third-party solutions by providing a framework for communicating via HTTP APIs, without requiring the [Document Routing Agent (DRA)](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md). You can design and print different types of labels by using third-party labeling products, such as [Seagull Scientific BarTender®](label-printing-using-bartender.md) and the [Loftware label service solution](label-printing-using-nicelabel.md).
 
 The following illustrations show how printing through the DRA compares to printing through an external service. They highlight the benefits and drawbacks of each method, and can help you decide which printing solution best fits your business needs.
 
@@ -29,7 +29,7 @@ The following illustrations show how printing through the DRA compares to printi
 
 For more information about the document routing framework, see [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md).
 
-For an example that shows how to set up this feature for the Loftware NiceLabel third-party label printing service, see [Print labels using the Loftware NiceLabel label service solution](label-printing-using-nicelabel.md).
+For an example that shows how to set up this feature for the Loftware third-party label printing service, see [Print labels using the Loftware label service solution](label-printing-using-nicelabel.md).
 
 For an example that shows how to set up this feature for the Seagull Scientific BarTender third-party label printing service, see [Print labels using the Seagull Scientific BarTender label service solution](label-printing-using-bartender.md).
 
@@ -240,5 +240,5 @@ Follow these steps to review the request log that's generated while labels are p
 
 - [Label Layouts](../warehousing/print-license-plate-labels-using-label-layouts.md)
 - [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md)
-- [Print labels using the Loftware NiceLabel label service solution](label-printing-using-nicelabel.md)
+- [Print labels using the Loftware label service solution](label-printing-using-nicelabel.md)
 - [Print labels using the Seagull Scientific BarTender label service solution](label-printing-using-bartender.md)

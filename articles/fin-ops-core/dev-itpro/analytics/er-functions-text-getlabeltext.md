@@ -3,7 +3,7 @@ title: GETLABELTEXT ER function
 description: Learn about how the GETLABELTEXT Electronic reporting (ER) function is used, including syntax strings, arguments, return values, and examples.
 author: kfend
 ms.author: filatovm
-ms.topic: conceptual
+ms.topic: article
 ms.date: 03/18/2022
 ms.reviewer: johnmichalak
 audience: IT Pro

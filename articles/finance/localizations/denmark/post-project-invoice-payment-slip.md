@@ -1,92 +1,87 @@
 --- 
 title: Post a project invoice with a payment slip
-description: Learn how to post a project invoice with a payment slip in a specified format, including a step-by-step process that uses the DEMF demo data company. 
+description: This article describes how to post a project invoice with a payment slip in a specified format in Denmark with Microsoft Dynamics 365 Finance. 
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 08/29/2018
-ms.custom:  
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak 
-audience: Application User
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
 ms.search.form: CustTable, ProjProjectContractsListPage, ProjInvoiceTableCreate, ProjInvoiceTable, ProjProjectsListPage, ProjTableCreate, ProjGroupLookUp, ProjTable,  ProjTransOnAcc, ProjInvoiceProposalListPage, ProjInvoiceProposalCreateLines, ProjInvoiceProposalDetail, ProjInvoiceEditLines  
-ms.dyn365.ops.version: Version 7.0.0 
+ms.custom: 
+  - bap-template
 ---
 
 # Post a project invoice with a payment slip
 
 [!include [banner](../../includes/banner.md)]
 
-You can post a project invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment.
+This article describes how to post a project invoice with a payment slip in a specified format in Denmark with Microsoft Dynamics 365 Finance. 
 
-Before you can complete this procedure, you must first set up a payment slip format and set up payment slips for customer invoices. 
+You can post a project invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment. This functionality is available for legal entities whose primary address is in Denmark.
 
+Before you can complete this procedure, you must first set up a payment slip format and set up payment slips for customer invoices. This procedure was created using the demo data company DEMF.
 
+To post a project invoice with a payment slip, follow these steps. 
 
-This functionality is available for legal entities whose primary address is in Denmark. 
-
-This procedure was created using the demo data company DEMF.
-
-1. Go to Accounts receivable > Customers > All customers.
-2. In the list, find and select the desired record.
-3. In the list, click the link in the selected row.
-4. Expand or collapse the Invoice and delivery section.
-5. Click Edit.
-6. In the On a project invoice field, select an option.
-    * o    None – Do not print a payment slip. Choose this option if the payment amount is in a currency other than Danish kroner (DKK).   o    FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.   o    FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.     
-7. Click Save.
-8. Click the TabPageGrid tab.
-9. Close the page.
-10. Go to Project management and accounting > Projects > Project contracts.
-11. Click New.
-12. In the Name field, type a value.
-13. In the Funding source field, click the drop-down button to open the lookup.
-14. In the list, click the link in the selected row.
-15. In the Sales currency field, click the drop-down button to open the lookup.
-16. In the list, find and select the desired record.
-17. In the list, click the link in the selected row.
-18. In the Sales currency field, click the drop-down button to open the lookup.
-19. In the list, find and select the desired record.
-    * The payment slip can be printed only for a project invoice with the currency Danish kroner (DKK).  
-20. In the list, click the link in the selected row.
-21. Click OK.
-22. Click Save.
-23. Go to Project management and accounting > Projects > All projects.
-24. Click New.
-25. In the Project type field, select an option.
-26. In the Project name field, type a value.
-27. In the Project group field, click the drop-down button to open the lookup.
-28. In the list, click the link in the selected row.
-29. In the Project contract ID field, click the drop-down button to open the lookup.
-30. In the list, find and select the desired record.
-31. In the list, click the link in the selected row.
-32. Click Create project.
-33. On the Action Pane, click Project.
-34. Click Project stage.
-35. Click In process.
-36. Click OK.
-37. Click Save.
-38. On the Action Pane, click Manage.
-39. Click On-account transactions.
-40. Click New.
-41. In the list, mark the selected row.
-42. In the Sales price field, enter a number.
-43. Click Save.
-44. Close the page.
-45. On the Action Pane, click Manage.
-46. Click Project invoice proposals.
-47. Click New.
-48. Click Invoice proposal.
-49. In the Project field, click the drop-down button to open the lookup.
-50. Close the page.
-51. In the Project contract field, click the drop-down button to open the lookup.
-52. In the list, find and select the desired record.
-53. In the list, click the link in the selected row.
-54. Click OK.
-55. Click Post.
-56. Click OK.
-57. Click OK.
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. Expand or collapse the **Invoice and delivery** section.
+1. Select **Edit**.
+1. In the On a project invoice field, select an option. Select the **None – Do not print a payment slip** option if the payment amount is in a currency other than Danish kroner (DKK). Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually. Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.     
+1. Select **Save**.
+1. Select the **TabPageGrid** tab.
+1. Close the page.
+1. Go to **Project management and accounting \> Projects \> Project contracts**.
+1. Select **New**.
+1. In the **Name** field, enter a value.
+1. In the **Funding source** field, select the drop-down button to open the lookup.
+1. In the list, select the link in the selected row.
+1. In the **Sales currency** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. In the **Sales currency** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record. The payment slip can be printed only for a project invoice with the currency Danish kroner (DKK).  
+1. In the list, select the link in the selected row.
+1. Select **OK**.
+1. Select **Save**.
+1. Go to **Project management and accounting \> Projects \> All projects**.
+1. Select **New**.
+1. In the **Project type** field, select an option.
+1. In the **Project name** field, enter a value.
+1. In the **Project group** field, select the drop-down button to open the lookup.
+1. In the list, select the link in the selected row.
+1. In the **Project contract ID** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. Select **Create project**.
+1. On the Action Pane, select **Project**.
+1. Select **Project stage**.
+1. Select **In process**.
+1. Select **OK**.
+1. Select **Save**.
+1. On the Action Pane, select **Manage**.
+1. Select **On-account transactions**.
+1. Select **New**.
+1. In the list, mark the selected row.
+1. In the **Sales price** field, enter a number.
+1. Select **Save**.
+1. Close the page.
+1. On the Action Pane, select **Manage**.
+1. Select **Project invoice** proposals.
+1. Select **New**.
+1. Select **Invoice proposal**.
+1. In the **Project** field, select the drop-down button to open the lookup.
+1. Close the page.
+1. In the **Project contract** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. Select **OK**.
+1. Select **Post**.
+1. Select **OK**.
+1. Select **OK**.
 
 
 

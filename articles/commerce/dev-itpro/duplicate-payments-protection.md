@@ -3,7 +3,7 @@ title: Enable duplicate payment protection for payment connector
 description: This article describes how to enable duplicate payment protection for a given payment connector.
 author: Reza-Assadi
 ms.date: 03/16/2020
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

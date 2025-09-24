@@ -6,7 +6,7 @@ title: Configure and manage database logging
 description: You can track changes to tables and fields in Dynamics 365 Human Resources with database logging.
 author: twheeloc
 ms.date: 12/15/2021
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: 

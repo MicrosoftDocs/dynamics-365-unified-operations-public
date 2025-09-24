@@ -3,12 +3,12 @@ title: Inventory Visibility public APIs
 description: Learn about the public APIs that are provided by Inventory Visibility, including an outline and step-by-step process for authentication.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: how-to
-ms.date: 06/03/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
-ms.search.form: 
+ms.search.form:
+ms.topic: how-to
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Inventory Visibility public APIs
@@ -53,7 +53,7 @@ The following table lists the APIs that are currently available:
 | `/api/environment/{environmentId}/transaction/adjustment/bulk` | Post | [Sync external inventory changes through Inventory Visibility](inventory-visibility-sync-changes.md) |
 
 > [!NOTE]
-> The {environmentId} part of the path is the environment ID of Microsoft Dynamics 365 Supply Chain Management.
+> The {environmentId} part of the path is the environment ID of Microsoft Dynamics 365 Supply Chain Management. This ID is the one stated for Supply Chain Management in Lifecycle Services, not the ID of the Power Platform environment that is linked to the Supply Chain Management environment.
 >
 > The bulk API can return a maximum of 512 records for each request.
 

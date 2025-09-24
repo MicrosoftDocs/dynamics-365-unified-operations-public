@@ -3,7 +3,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: jasongre
 ms.author: jasongre
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/24/2024
 ms.reviewer: twheeloc
 audience: IT Pro
@@ -47,7 +47,7 @@ For customers who use Office 365, Microsoft Graph is the recommended email provi
 You must have the following permissions to set up the Microsoft Graph integration:
 
 - You must be a system administrator in the application to link the Dynamics 365 finance and operations environment to Microsoft Graph.
-- You must be an administrator for your Azure Active Directory (Azure AD) account. If you aren't the administrator, an administrative user must perform the first part of the configuration for you.
+- You must be an administrator for your Microsoft Entra ID account. If you aren't the administrator, an administrative user must perform the first part of the configuration for you.
 
 #### One-time registration process
 
@@ -58,7 +58,7 @@ To create an app, follow these steps.
     > [!NOTE]
     > The user who completes this procedure must have Admin rights for the tenant to register applications.
 
-2. Go to **Azure Active Directory** \> **App registrations** \> **New application**.
+2. Go to **Microsoft Entra ID** \> **App registrations** \> **New application**.
 3. Enter the following values:
 
     - **Name** – Enter the name of your app.

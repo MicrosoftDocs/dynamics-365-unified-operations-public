@@ -2,8 +2,8 @@
 title: One Version service updates FAQ
 description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: rashmansur
-ms.date: 04/30/2024
-ms.topic: article
+ms.date: 03/2/2025
+ms.topic: faq
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -128,6 +128,11 @@ A regulatory update is a new feature, or a change to an existing feature, that's
 ### How can I determine what's changed in a service update?
 
 The "What's new or changed" documentation is the primary source for the details of each service update. The release plans are the primary source of information for new features and changes for a future release. Features are also documented on Microsoft Learn as needed.
+
+> [!NOTE]
+> To view the specific fixes included in a major release version, such as Dynamics 365 Finance 10.0.XX:
+> Go to LCS, search for **version 10.0.XX**.
+> This displays **Version 10.0.XX of Finance and Operations apps**. The fixes included in that release are listed.
 
 ### What's the upcoming schedule of updates?
 
@@ -278,6 +283,10 @@ After the service update is applied by Microsoft, you receive a notification tha
 
 - **Pending Package Sign off** – If a package is pending sign off, Microsoft won't apply the service update to production.
 - **Deployment Failure** – If there was a deployment failure, the environment is rolled back to the original state.
+
+### Can an environment be brought back to its previous state if there are issues after a service update is applied?
+
+As with other code promotions, rollbacks can't be done after a service update is applied. Microsoft uses flighting and features to help mitigate the risk of updates and enable rapid enabling and disabling of new functionality. For more informatoin, see [Feature management and flighting](../../fin-ops/get-started/feature-management/feature-management-overview.md#feature-management-and-flighting).
 
 ### If there's a failure, can I reschedule the update to be automatically applied?
 

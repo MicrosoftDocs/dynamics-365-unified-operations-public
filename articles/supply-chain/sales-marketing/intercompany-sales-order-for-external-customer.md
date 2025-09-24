@@ -3,7 +3,7 @@ title: Create and invoice an intercompany sales order for an external customer
 description: Learn how to create and invoice an intercompany sales order for an external customer with an outline on creating original sales orders for external customers.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/01/2021
 ms.reviewer: kamaybac
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable

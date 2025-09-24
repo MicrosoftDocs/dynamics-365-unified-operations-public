@@ -23,7 +23,7 @@ You can create a purchase order from a sales order. Learn more in [Create a purc
 
 ## Can I cancel or delete a sales order or return order?
 
-You can cancel only sales orders and return orders that are in a *Created* state. Learn more in [Cancel a return order](/dynamics365/supply-chain/service-management/cancel-return-order).
+You can cancel only sales orders and return orders that are in a *Created* state. Learn more in [Cancel a return order](cancel-return-order.md).
 
 ## Can I restore an invoiced sales order that was deleted?
 

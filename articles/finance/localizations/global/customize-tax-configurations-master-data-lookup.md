@@ -3,14 +3,13 @@ title: Customize tax configurations for master data lookup
 description: Learn how to customize tax configurations to extend master data lookup functionality, including a process for importing tax configurations from Microsoft.
 author: kai-cloud
 ms.author: pashao
-ms.topic: article
-ms.date: 10/28/2021
+ms.topic: how-to
+ms.date: 02/14/2025
 ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
-audience: Application user
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
-ms.search.form:
 ms.dyn365.ops.version: 10.0.18
 ---
 
@@ -22,11 +21,7 @@ Follow the steps in this article to customize tax configurations to extend maste
 
 ## Import a tax configuration provided by Microsoft
 
-1. In Regulatory Configuration Service (RCS), in the **Electronic reporting** workspace, select the **Microsoft** configuration provider.
-2. Select **Repositories**.
-3. Select **Global**, and then select **Open**.
-4. Select a tax configuration, such as **Tax Calculation Configuration**, and then, on the **Versions** tab, select a version.
-5. Select **Import**.
+Follow the steps in [Import Electronic reporting (ER) configurations from Dataverse](./workspace/gsw-import-er-config-dataverse.md) and import the correct [tax configuration version](global-tax-calcuation-service-overview.md#versions), based on your Finance version.
 
 > [!NOTE]
 > By default, the Dataverse model mapping is imported. If you receive warning messages during the configuration import process, enable the virtual entities in Dataverse. For more information, see [Enable Dataverse virtual entities](../../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).

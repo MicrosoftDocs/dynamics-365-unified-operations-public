@@ -3,14 +3,15 @@ title: Troubleshoot on-premises deployments
 description: Access troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises), including an overview of monitoring deployment.
 author: faix
 ms.author: osfaixat
-ms.topic: conceptual
-ms.custom: 
-  - bap-template
-ms.date: 06/19/2024
+ms.topic: troubleshooting-general
+ms.date: 02/03/2025
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.service: dynamics-365-op
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 # Troubleshoot on-premises deployments
 
@@ -27,7 +28,7 @@ To verify the address, note the value that was used in the "Create DNS zones and
 - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#createdns)
 - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#createdns)
 
-You can access the site only if the client certificate is in cert:\\CurrentUser\\My on the machine that you're accessing the site on. (In Certificate Manger, go to **Certificates - Current User** \> **Personal** \> **Certificates**.) When you access the site, select the client certificate when you're prompted.
+You can access the site only if the client certificate is in cert:\\CurrentUser\\My on the machine that you're accessing the site on. (In Certificate Manager, go to **Certificates - Current User** \> **Personal** \> **Certificates**.) When you access the site, select the client certificate when you're prompted.
 
 ## Monitor the deployment
 
@@ -901,7 +902,7 @@ You can also use Psping to try to reach the remote server. For information about
 If you're having issues during authentication with the Workflow editor or the Excel add-ins, use the following script to verify your configuration.
 
 ```powershell
-.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
+.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json" -D365FOVersion <version>
 ```
 
 ### Redirect sign-in questions and issues
@@ -956,9 +957,9 @@ After you have the network log, you can analyze the claims that are returned to 
     >
     > ![Payload example.](media/NetworkLogPayloadOnpremADFS.png)
 
-1. Go to [ADFS JWT Decoder](https://adfshelp.microsoft.com/JwtDecoder/GetToken)
-1. Paste the value of the **id_token** parameter in the **Encoded JWT Token** field. It's automatically decoded.
-1. Check the results in the Payload: Data and Claims section, and follow these steps:
+1. Go to [JWT Decoder](https://jwt.ms).
+1. Paste the value of the **id_token** parameter into the **JWT** field. The value is automatically decoded.
+1. Review the results in the **Decoded Token and Claims** section, and follow these steps:
 
     - Make sure that the **upn** value matches the user name.
     - Make sure that the **unique_name** value is the Active Directory user that is being tested.
@@ -1189,13 +1190,13 @@ Follow these steps to configure the local agent with the updated tenant.
 
     ```powershell
     .\LocalAgentCLI.exe Install <path of localagent-config.json>
-    ```
+    ``` 
 
 ## Additional deployments (for example, two sandbox deployments, or a sandbox and production deployment)
 
 You receive the following error when you deploy another environment:
 
-> .\\Publish-ADFSApplicationGroup.ps1 -HostUrl `https://ax.d365ffo.onprem.contoso.com` New-AdfsApplicationGroup : MSIS9908: The application group identifier must be unique in AD FS configuration.
+> .\\Publish-ADFSApplicationGroup.ps1 -HostUrl `https://ax.d365ffo.onprem.contoso.com` -D365FOVersion \<version\> New-AdfsApplicationGroup : MSIS9908: The application group identifier must be unique in AD FS configuration.
 
 You can skip or modify the following sections in the deployment instructions.
 
@@ -1262,7 +1263,7 @@ EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
 
 You might receive the following error:
 
-> Updates to existing credential with KeyId '\<key\>' is not allowed
+> Updates to existing credential with KeyId '\<key\>' isn't allowed.
 
 The steps to resolve this issue depend on whether you have only an on-premises project, or whether you have both an online project and an on-premises project.
 

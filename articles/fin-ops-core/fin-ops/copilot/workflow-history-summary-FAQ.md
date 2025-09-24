@@ -6,7 +6,8 @@ ms.author: jchrist
 ms.topic: faq
 ms.custom: 
   - bap-template
-ms.date: 6/15/2023
+ms.date: 1/23/2025
+ms.update-cycle: 180-days
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
 ---
@@ -22,6 +23,8 @@ Workflow history summary is a feature in Dynamics 365 Finance that is powered by
 ## What can Workflow history summary do?
 
 The summary uses existing workflow history information in a customer's Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
+
+[!INCLUDE[rai-feedback-mechanism.md](../../../includes/rai-feedback-mechanism.md)]
 
 ## What is Workflow history summary's intended use?
 

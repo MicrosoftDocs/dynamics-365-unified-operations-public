@@ -9,11 +9,13 @@ ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-12-13
+ms.custom: sfi-image-nochange
 ---
 
 # Dynamics 365 Translation Service Visual Studio extension
 
 [!include[banner](../includes/banner.md)]
+[!INCLUDE[dts-deprecation](../../fin-ops/includes/dts-deprecation.md)]
 
 The Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio lets finance and operations developers perform actions in DTS directly from their Visual Studio integrated development environment (IDE). For example, you can translate user interface (UI) files and regenerate the translations. For more information about the supported functionality, see [Dynamics 365 Translation Service overview](translation-service-overview.md).
 
@@ -29,7 +31,7 @@ Download and install the extension to your Visual Studio development environment
 
 ### Sign in to DTS
 
-Before you can start to use the DTS Visual Studio extension, you must authenticate with LCS. You will automatically be prompted to sign in after running any command while you're in a signed-out state.
+Before you can start to use the DTS Visual Studio extension, you must authenticate with LCS. You'll automatically be prompted to sign in after running any command while you're in a signed-out state.
 
 ### Access the DTS commands
 
@@ -71,15 +73,15 @@ The following table describes the fields in the **Translate with Dynamics 365 Tr
 
 ![Translate with DTS dialog box.](media/dts-vs-translate.png)
 
-When you've finished configuring the translation request, select **Submit** to send it to DTS. You will receive a confirmation window stating the next steps.
+When you've finished configuring the translation request, select **Submit** to send it to DTS. You'll receive a confirmation window stating the next steps.
 
 ![Confirmation window for the DTS extension.](media/dts-vs-confirmation.png)
 
-After a short time, the Output window will show the status of the request (unless the **Create custom MT?** option is selected). 
+After a short time, the Output window shows the status of the request (unless the **Create custom MT?** option is selected). 
 
 ![Output window for the DTS extension.](media/dts-vs-outputwindow.png)
 
-When the request is completed, you will see a Download Translation window stating that the output files (translation memory files and translated resource files) have been downloaded. These output files are put in the appropriate language subfolder for the module.
+When the request is completed, you'll see a Download Translation window stating that the output files (translation memory files and translated resource files) have been downloaded. These output files are put in the appropriate language subfolder for the module.
 
 ![Download Translations window for the DTS extension.](media/dts-vs-downloadtranslations.png)
 
@@ -87,7 +89,7 @@ If Visual Studio is closed before the output files are downloaded, you can manua
 
 ### Regeneration workflow
 
-We recommend that you review and edit the translations that DTS provides. The XML Localization Interchange File Format (XLIFF) files will be in the same directory as their corresponding translated resource files. For more information about how to edit XLIFF files, see [Translation memory files](use-translation-service-tm.md).
+We recommend that you review and edit the translations that DTS provides. The XML Localization Interchange File Format (XLIFF) files are in the same directory as their corresponding translated resource files. For more information about how to edit XLIFF files, see [Translation memory files](use-translation-service-tm.md).
 
 When you've finished reviewing and editing the XLIFF translation files, you can regenerate the translated native format files. On the **Tools** menu, select **Dynamics 365 Translation Services**, and then select **Regenerate**. A dialog box appears, where you can configure the regeneration request.
 
@@ -96,11 +98,11 @@ The following table describes the fields in the **Regenerate** dialog box.
 | Input             | Required | Description |
 |-------------------|----------|-------------|
 | Project           | Yes | Select the project that is associated with the revised translation memories. |
-| Translation files | Yes | <p>Select one or more revised translation memory files. The files in the list are automatically identified and are the result of previous DTS translation requests.</p><p>Each revised translation memory file (.xlf file) that you select is used to regenerate the corresponding target native file. For example, **ExampleLabel.es.label.txt.xlf** will regenerate **ExampleLabel.es.label.txt**.</p> |
+| Translation files | Yes | <p>Select one or more revised translation memory files. The files in the list are automatically identified and are the result of previous DTS translation requests.</p><p>Each revised translation memory file (.xlf file) that you select is used to regenerate the corresponding target native file. For example, **ExampleLabel.es.label.txt.xlf** regenerates **ExampleLabel.es.label.txt**.</p> |
 
 ![Regenerate with DTS dialog box.](media/dts-vs-regenerate.png)
 
-When you've finished configuring the regeneration request, select **Submit** to send it to DTS. The **Output** window will show the status of the request. When the request is completed, you will see a Download Translation window stating that output files (translation memory files and target translated files) have been downloaded by overwriting the previous outputs.
+When you've finished configuring the regeneration request, select **Submit** to send it to DTS. The **Output** window shows the status of the request. When the request is completed, you see a Download Translation window stating that output files (translation memory files and target translated files) have been downloaded by overwriting the previous outputs.
 
 ![Download Translations window for the DTS extension.](media/dts-vs-downloadtranslations.png)
 
@@ -119,10 +121,10 @@ On the **Tools** menu, select **Dynamics 365 Translation Services**, and then se
 
 ![Dialog box where you can configure the alignment request.](media/dts-vs-alignment.png)
 
-When you have finished configuring the alignment request, select **Submit** to send it to DTS. You will be notified that the process has started.
+When you have finished configuring the alignment request, select **Submit** to send it to DTS. You are notified that the process has started.
 
-![You will be notified that the process has started.](media/dts-vs-alignmentinprocess.png)
+![You are notified that the process has started.](media/dts-vs-alignmentinprocess.png)
 
-The **Output** window will show the status of the request. When the request is completed, you will see a window stating that output files are available.
+The **Output** window shows the status of the request. When the request is completed, you see a window stating that output files are available.
 
 ![Output files are available.](media/dts-vs-alignedfiles.png)

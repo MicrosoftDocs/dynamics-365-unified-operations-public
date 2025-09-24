@@ -3,7 +3,7 @@ title: Block transactions by using triggers
 description: This article shows how you can use a trigger to block an invoice or credit transaction.
 author: josaw1
 ms.date: 02/03/2023
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

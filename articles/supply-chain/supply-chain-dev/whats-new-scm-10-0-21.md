@@ -3,8 +3,9 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.21 (Oc
 description: Learn about features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.21 with an outline on included features. 
 author: kamaybac
 ms.author: kamaybac
-ms.topic: conceptual
-ms.date: 05/28/2024
+ms.topic: whats-new
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen
@@ -37,7 +38,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 | Inventory&nbsp;and&nbsp;logistics | [Soft reservation for the Inventory Visibility Add-in](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Inventory Visibility reservations](../inventory/inventory-visibility-reservations.md) |
 | Inventory&nbsp;and&nbsp;logistics | [Deduction and catch-weight enhancements for Rebate management](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Manage deductions using the deduction workbench](../rebate-management/deduction-workbench.md )<br><br>[Process, review, and post rebates](../rebate-management/process-review-post.md)<br><br>[Rebate management deals](../rebate-management/rebate-management-deals.md) |
 | Inventory&nbsp;and&nbsp;logistics | [Warehouse app step instructions](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Customize step titles and instructions for the Warehouse Management mobile app](../warehousing/mobile-app-titles-instructions.md) |
-| Inventory&nbsp;and&nbsp;logistics | [Work breaks and tracking updates for Landed cost](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/work-breaks-tracking-updates-landed-cost) | [Update tracking for put away](../landed-cost/update-tracking-putaway.md )<br><br>[Goods-in-transit processing](../landed-cost/in-transit-processing.md) |
+| Inventory&nbsp;and&nbsp;logistics | [Work breaks and tracking updates for Landed cost](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/work-breaks-tracking-updates-landed-cost) | [Update tracking for put away](../landed-cost/update-tracking-putaway.md )<br><br>[Goods-in-transit processing and receiving](../landed-cost/in-transit-processing.md) |
 | Master planning | [Negative days for Planning Optimization](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/negative-days-support-planning-optimization) | [Delay tolerance (negative days)](../master-planning/planning-optimization/delay-tolerance.md) |
 
 ## Feature enhancements included in this release

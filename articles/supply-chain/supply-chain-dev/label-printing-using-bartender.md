@@ -35,7 +35,7 @@ To use the features that are described in this article, you must be running Supp
 Before you can access BarTender Cloud through its REST API, you must get a copy of your personal access token from BarTender Cloud. Supply Chain Management will use this token to authenticate with BarTender Cloud. For more information about how to get this token, see [BarTender Cloud REST API](https://support.seagullscientific.com/hc/en-us/articles/9756611024535) in the BarTender help center. Be sure to make a note of the token, because you'll have to enter it later.
 
 > [!NOTE]
-> Personal access tokens expire after 30 days. You'll have to enter a new token before the old one expires. You can manually refresh the token to obtain a new one.
+> Personal access tokens expire after a fixed number of days. You'll have to enter a new token before the old one expires. You can manually refresh the token to obtain a new one.
 
 ## Configure Supply Chain Management to print to printers managed by BarTender Cloud
 

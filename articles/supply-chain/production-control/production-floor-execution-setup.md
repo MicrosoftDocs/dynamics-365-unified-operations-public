@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 ms.topic: how-to
-ms.date: 10/05/2020
+ms.date: 04/25/2025
 ms.custom: 
   - bap-template
 ---
@@ -36,6 +36,8 @@ To set the configuration and job filters for a device, sign in to the **Producti
     - **Resource group** – This filter is a mid-level filter. It typically refers to a collection of related resources in a limited area of the workspace. If you select a **Production unit** filter first, the list of resource groups shows only groups from that unit. Otherwise, it shows all available resource groups.
     - **Resource** – This filter is the most specific filter. It typically refers to a specific machine or other single resource. If you select a **Resource group** and/or **Production unit** filter first, the list of resources shows only resources from that group and/or unit. Otherwise, it shows all available resources.
 
+1. Select **Next**.
+1. Select the display color theme to apply to the current device.
 1. Select **OK**.
 1. The sign-in page appears, and your device is ready for use.
 
@@ -56,7 +58,7 @@ For more information about how to set up worker accounts to access the productio
 
 ## Run the interface in full-screen mode
 
-Often, you will run the production floor execution interface on a device that is used exclusively for that purpose. Therefore, it might make sense to run the interface in full-screen mode, without showing any navigation and/or browser chrome.
+Often, you'll run the production floor execution interface on a device that is used exclusively for that purpose. Therefore, it might make sense to run the interface in full-screen mode, without showing any navigation and/or browser chrome.
 
 - To hide the navigation pane that is shown in Supply Chain Management, add the following text to the end of the URL in the browser's address bar: `\&limitednav=true`.
 - To also hide the browser's address bar, use the browser's native full-screen mode. (For instructions, see your browser's documentation.)
@@ -70,6 +72,5 @@ The upper part of the following illustration shows how the interface looks by de
 By default, the production floor execution interface automatically signs out if nobody uses it for 12 hours. A Supply Chain Management user must then sign in again. However, you can extend the time-out limit to up to 90 days.
 
 To extend the time-out limit, sign in to Supply Chain Management, and go to **System administration \> Users \> Session extensions**. Specify the Supply Chain Management user account that is used to sign in to the device, and the number of hours that the session should stay active for.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

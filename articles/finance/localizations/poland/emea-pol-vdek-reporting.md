@@ -1,14 +1,13 @@
 ---
 title: JPK-V7 reporting
-description: Learn how to run a VAT declaration with registers (also known as a JPK-V7, VDEK) in Poland, including an outline on initial assumptions for the JPK-V7 report.
+description: Learn how to run a VAT declaration with registers (also known as a JPK-V7, VDEK) for Poland in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 06/19/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Poland
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ---
@@ -16,6 +15,8 @@ ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 # JPK-V7 reporting
 
 [!include [banner](../../includes/banner.md)]
+
+This article explains how to run a VAT declaration with registers (also known as a JPK-V7, VDEK) for Poland in Microsoft Dynamics 365 Finance.
 
 The JPK-V7 reporting process is predefined by the data entities that are delivered in the PL JPK_V7 EM setup.zip package. The following illustration shows an overview of the process.
 
@@ -31,7 +32,7 @@ The PL JPK_V7 EM setup.zip package provides a setup for the **JPK-V7M** (if your
 ## Initial assumptions for the JPK-V7 report
 
 The implementation of the JPK-V7 report is based on the same example in the article, [Prepare for JPK-V7 reporting](emea-pol-vdek-setup.md) for the JPK_VAT report. 
-For more information, see [Generate a SAF VAT sales and purchase register](emea-pol-standard-audit-file-saf.md#generate-a-saf-vat-sales-and-purchase-register).
+For more information, see [Generate a SAF VAT sales and purchase register](emea-pol-standard-audit-file-saf-vat.md).
 
 The following table shows an example of sales tax reporting codes and their mapping with **K_\*** elements of the JPK-V7 report.
 
@@ -75,11 +76,13 @@ The following table shows an example of sales tax reporting codes and their mapp
 
 ## Create an electronic message for JPK-V7 reporting
 
-1. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**.
-2. Select **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly), and then, on the **Messages** FastTab, select **New**.
-3. In the **Run processing** dialog box, select **OK**.
+To create an electronic message for JPK-V7 reporting, follow these steps.
 
-    ![Run processing dialog box](../media/create-em.jpg)
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
+2. Select **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly), and then, on the **Messages** FastTab, select **New**.
+3. In the **Run processing** dialog, select **OK**.
+
+    ![Run processing dialog](../media/create-em.jpg)
 
 4. A new electronic message is created. Enter a description, and specify the start and end dates of the period that you want to generate the JPK-V7 report for.
 
@@ -143,10 +146,12 @@ The following table shows an example of sales tax reporting codes and their mapp
 
 ## Generate the JPK-V7 report in Excel format for preview
 
-When all the data is ready in the system, follow these steps to generate the JPK-V7 report in Excel format.
+When all the data is ready in the system, you can generate the JPK-V7 report in Excel format.
+
+To generate the JPK-V7 report in Excel format, follow these steps.
 
 1. On the **Electronic messages** page, on the **Messages** FastTab, select **Generate report**.
-2. In the **Run processing** dialog box, in the **Action** field, select **Podgląd w programie Excel**.
+2. In the **Run processing** dialog, in the **Action** field, select **Podgląd w programie Excel**.
 3. To run report generation in a batch, specify parameters on the **Run in the background** FastTab. When the report is generated, it's attached to the electronic message as a file.
 4. Select **OK**.
 
@@ -159,13 +164,15 @@ When all the data is ready in the system, follow these steps to generate the JPK
 
 When all the data is ready in the system, follow these steps to generate an XML file in JPK-V7 format.
 
+To generate an XML file in JPK-V7 format, follow these steps.
+
 1. On the **Electronic messages** page, on the **Messages** FastTab, select **Generate report**.
-2. To run report generation in a batch, in the **Run processing** dialog box, specify parameters on the **Run in the background** FastTab.
+2. To run report generation in a batch, in the **Run processing** dialog, specify parameters on the **Run in the background** FastTab.
 3. Select **OK**.
 
-    ![Using the Run processing dialog box to generate  an XML file in JPK-V7 format](../media/generate-xml-vdek.jpg)
+    ![Using the Run processing dialog to generate  an XML file in JPK-V7 format](../media/generate-xml-vdek.jpg)
 
-After you select **OK** in the dialog box, you should see the following declaration text:
+After you select **OK** in the dialog, you should see the following declaration text:
 
 - **English:** "When you generate the VAT declaration you confirm information in the report is true and complete. Your consent will be recorded in the report. Incomplete payment or non-payment of VAT due to the Tax Authority, this declaration is the basis for the issuance of a writ of execution in accordance with the provisions of the enforcement proceedings in the administration. A false or incomplete declaration may result in prosecution in accordance with regulations of fiscal penal code."
 - **Polish:** "Wygenerowanie deklaracji VAT oznacza potwierdzenie, że informacje w raporcie są prawdziwe i kompletne. Twoja zgoda zostanie odnotowana w raporcie. W przypadku niewpłacenia w obowiązującym terminie podatku podlegającego wpłacie do urzędu skarbowego lub wpłacenia go w niepełnej wysokości niniejsza deklaracja stanowi podstawę do wystawienia tytułu wykonawczego zgodnie z przepisami o postępowaniu egzekucyjnym w administracji. Za podanie nieprawdy lub zatajenie prawdy i przez to narażenie podatku na uszczuplenie grozi odpowiedzialność przewidziana w przepisach Kodeksu karnego skarbowego."
@@ -190,3 +197,7 @@ If you generate the JPK-V7 report in XML format for a period that is shorter tha
 
 - The **\<Miesiac\>** tag will contain information about the date interval that report is generated for.
 - The **\<P_\*\>** tag of the **Deklaracja** part of the report contains calculated values that represent the aggregation of amounts from the **SprzedazWiersz** and **ZakupWiersz** parts of the report. The values in this tag will be rounded to a two-digit decimal value, not an integer value.
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

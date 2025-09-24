@@ -6,7 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac
-ms.search.form: InventTestOperations, InventTestRelatedOperations
+ms.search.form: InventTestOperations, InventTestRelatedOperations, QMSInventTestOperationGroup
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ---
 
@@ -16,7 +16,7 @@ ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 
 This article describes how to create and use operations for nonconformances.
 
-You can use the **Operations** page to define classifications of the work that can be performed for an approved nonconformance. When you assign a related operation to a nonconformance, you can provide details such as the associated material, labor hours, and charges that are required to do the operation. The system uses this information to calculate an estimated cost for the operation. The detailed information and estimated costs are for reference. The related operations for quality differ from the operations that can be defined for a production route.
+*Operations* are classifications of work that can be performed for an approved nonconformance. When you [assign operations to a nonconformance](tasks/create-process-non-conformance.md), you can provide details such as the associated material, labor hours, and charges that are required to do the operation. The system uses this information to calculate an estimated cost for the operation. The detailed information and estimated costs are for reference. The related operations for quality differ from the operations that can be defined for a production route.
 
 > [!NOTE]
 > Although you can track costs, time, and the items that are used in an operation that is related to a nonconformance, the data that you enter is only informational. It isn't automatically integrated with the general ledger, inventory subledger, or the **Time and attendance** module.
@@ -46,6 +46,24 @@ For this example, the following operations can be created to represent the work 
     - **Type** – If the operation can be used only with nonconformances that are related to a specific type of order, select the order type (*Purchase order* or *Sales order*).
 
 1. Close the page.
+
+## Nonconformance operation groups
+
+Use *nonconformance operation groups* to collect related operations that you can [apply quickly to a nonconformance](tasks/create-process-non-conformance.md) all at once. For example, you might create a group of operations that together describe the steps that your company takes to fix issues with purchased raw materials (research, repair, and retest).
+
+### Prerequisites
+
+Before you can use nonconformance operation groups, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
+- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+### Manage nonconformance operation groups
+
+1. Go to **Inventory management** \> **Setup** \> **Quality management* \> *Non conformance operation groups**.
+1. Use the buttons on the Action Pane to create new nonconformance operation groups in the list pane or edit existing ones. (You can also delete existing groups.)
+1. On the heading of a new or selected group, enter a name and description for the group.
+1. On the **Operations** FastTab, use the buttons on the toolbar to add and remove operations that belong to the current group.
 
 ## Related information
 

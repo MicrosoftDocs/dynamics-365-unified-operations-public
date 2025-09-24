@@ -3,7 +3,7 @@ title: Upload ER configurations and Globalization features as a Dataverse soluti
 description: Learn how to upload Electronic reporting (ER) configurations and Globalization features as a Microsoft Dataverse solution.
 author: filatovm
 ms.author: filatovm
-ms.topic: conceptual 
+ms.topic: how-to
 ms.date: 01/29/2023
 ms.custom: 
   - bap-template
@@ -24,7 +24,7 @@ You can also export and import specific versions as a file by using export and i
 
 - Install PowerShell 7. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
 - Install Microsoft Power Platform CLI. For more information, see [What is Microsoft Power Platform CLI?](/power-platform/developer/cli/introduction)
-- Get the **Generate-GlobalizationDataverseSolution.ps1** script from the Shared asset library in Microsoft Dynamics Lifecycle Services (\<\<Asset type:, Asset name:\>\>).
+- Get the **Generate-GlobalizationDataverseSolution.ps1** script from the Shared asset library/Data package files in Microsoft Dynamics Lifecycle Services (\<\<Asset type:, Asset name:\>\>).
 
 ## Step 1: Export your artifacts
 

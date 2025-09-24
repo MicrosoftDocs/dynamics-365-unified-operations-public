@@ -3,7 +3,7 @@ title: Create a lease group
 description: Learn about how to set up lease groups, which are required to create new leases, including outlines on creating lease books and associating a book with a lease group.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/12/2021
 ms.reviewer: kfend
 audience: Application User

@@ -3,12 +3,13 @@ title: Troubleshoot issues during initial setup
 description: Learn about how you fix issues that occur during the initial setup of dual-write integration, including issues relating to links, limits, and connections.
 author: RamaKrishnamoorthy
 ms.author: ramasri
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.date: 08/10/2021
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global
 ms.search.validFrom: 2020-03-16
+ms.custom: sfi-image-nochange
 ---
 
 # Troubleshoot issues during initial setup

@@ -5,14 +5,15 @@ author: Kai-Cloud
 ms.author: hailxu
 ms.topic: overview
 ms.date: 01/20/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: johnmichalak
 audience: Application user
 ms.search.region: Global
 ms.search.validFrom: 2024-02-01
 ms.search.form:
 ms.dyn365.ops.version: 10.0.39 
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Set up a client ID and a client secret
@@ -26,11 +27,11 @@ This article explains how to set up a client ID and a client secret for the Univ
 
 ## Prerequisites
 
-Before you can access a tax provider's service, you must set up your client ID and client secret for the Universal Tax Rate API. Your tax provider provides these values. When you receive them, store them in a Microsoft Azure key vault, and configure Key Vault parameters for Dynamics 365 finance and operations apps. After you set up the client ID and client secret in the key vault, you can select the corresponding Key Vault secret name in the tax feature setup.
+Before you can access a tax provider's service, you must set up your client ID and client secret for the Universal Tax Rate API. Your tax provider provides these values. When you receive them, store them in a Microsoft Azure Key Vault, and configure Key Vault parameters for Dynamics 365 finance and operations apps. After you set up the client ID and client secret in the key vault, you can select the corresponding Key Vault secret name in the tax feature setup.
 
 ## Create a key vault in the Azure portal
 
-All the secrets and certificates that are used in the Tax Calculation service must be stored in an Azure key vault. This approach helps ensure that you don't work directly with the secrets, and that the secrets are securely stored. When you must use digital signing or secure a connection to external web services, set the reference to the Key Vault secrets instead of using the secrets and certificates directly. For more information, see [About Azure Key Vault](/azure/key-vault/general/overview).
+All the secrets and certificates that are used in the Tax Calculation service must be stored in an Azure Key Vault. This approach helps ensure that you don't work directly with the secrets, and that the secrets are securely stored. When you must use digital signing or secure a connection to external web services, set the reference to the Key Vault secrets instead of using the secrets and certificates directly. For more information, see [About Azure Key Vault](/azure/key-vault/general/overview).
 
 ### Create a key vault
 

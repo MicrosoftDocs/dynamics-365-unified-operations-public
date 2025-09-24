@@ -3,10 +3,10 @@ title: Set up and deploy on-premises environments (Application 10.0.32 and later
 description: Learn how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Application version 10.0.32 and later.
 author: faix
 ms.author: osfaixat
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.custom: 
   - bap-template
-ms.date: 11/08/2024
+ms.date: 09/15/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-01-31 
@@ -62,7 +62,7 @@ These components depend on the following system software:
 - Optional but **highly** recommended: Active Directory Certificate Services (AD&nbsp;CS) on Windows Server
 
 > [!IMPORTANT]
-> For information about supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md).
+> For information about supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](./onprem-compatibility.md).
 
 ## Microsoft Dynamics Lifecycle Services
 
@@ -99,7 +99,7 @@ If you're using VMware, you must implement the fixes that are documented on the 
 The hardware configuration includes the following components:
 
 - A standalone Service Fabric cluster that's based on Windows Server VMs
-- SQL Server (Both Clustered SQL and Always-On are supported.)
+- SQL Server (Both Clustered SQL and Always-On are supported, in an active\passive failover capacity)
 - AD&nbsp;FS for authentication
 - Server Message Block (SMB) version 3 file share for storage
 - Optional: Microsoft Office Server
@@ -107,7 +107,7 @@ The hardware configuration includes the following components:
 For more information, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> For information about supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md).
+> For information about supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](./onprem-compatibility.md).
 
 ### Hardware layout
 
@@ -198,7 +198,7 @@ Before you start the setup process, the following prerequisites must be in place
 
 - Active Directory Domain Services (AD&nbsp;DS) must be installed and configured in your network.
 - AD&nbsp;FS must be deployed.
-- SQL Server must be installed on the SSRS machines.
+- SQL Server must be installed on the SSRS machines for the reporting services databases.
 - SSRS must be installed (but not configured) in **Native** mode on the SSRS machines.
 - Optional: AD&nbsp;CS is installed and configured in your network.
 
@@ -225,7 +225,7 @@ For example, if your company's domain is contoso.com, your zone for Finance + Op
 
 ### <a name="plancert"></a>Step 2. Plan and acquire your certificates
 
-Secure Sockets Layer (SSL) certificates are required to secure a Service Fabric cluster and all the applications that are deployed. For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as [DigiCert](https://www.digicert.com/ssl-certificate/), [Comodo](https://ssl.comodo.com/), [Symantec](https://www.websecurity.symantec.com/ssl-certificate), [GoDaddy](https://www.godaddy.com/web-security/ssl-certificate), or [GlobalSign](https://www.globalsign.com/en/ssl/). If your domain is set up with [AD&nbsp;CS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772393(v=ws.10)), you can use the Microsoft setup scripts to create the templates and certificates. Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.
+Secure Sockets Layer (SSL) certificates are required to secure a Service Fabric cluster and all the applications that are deployed. For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as [DigiCert](https://www.digicert.com/what-is-an-ssl-certificate), [Comodo](https://ssl.comodo.com/), [Symantec](https://www.websecurity.symantec.com/ssl-certificate), [GoDaddy](https://www.godaddy.com/web-security/ssl-certificate), or [GlobalSign](https://www.globalsign.com/en/ssl/). If your domain is set up with [AD&nbsp;CS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772393(v=ws.10)), you can use the Microsoft setup scripts to create the templates and certificates. Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.
 
 Self-signed certificates can be used only for testing purposes. For the sake of convenience, the setup scripts that are provided in Lifecycle Services include scripts that generate and export self-signed certificates. If you're using self-signed scripts, you'll be instructed to run the creation scripts during later steps in this article. As has been mentioned, these certificates can be used only for testing purposes.
 
@@ -648,7 +648,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     1. Verify that all nodes appear as green.
 
     > [!IMPORTANT]
-    > - If your client machine is a server machine (for example, a machine that's running Windows Server 2019), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
+    > - If your client machine is a server machine (for example, a machine that's running Windows Server 2022), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
     > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
 
 ### <a name="configurelcs"></a>Step 16. Configure Lifecycle Services connectivity for the deployment
@@ -708,8 +708,6 @@ You can verify that everything has been configured correctly by running the foll
 
 1. If you used self-signed certificates, export the certificate (.cer file), and install it in the trusted root of each Service Fabric node. You'll have only one certificate for all the nodes in your SQL Server cluster.
 
-> [!NOTE] 
-> For more information, see [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
 
 > [!IMPORTANT]
 > If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Tear down CredSSP, if remoting was used](#teardowncredssp) section later in this article.
@@ -894,7 +892,7 @@ Finance + Operations (on-premises) requires more configuration of AD&nbsp;FS, be
     ```
 
     > [!NOTE]
-    > These commands can be run only on an AD&nbsp;FS server that's running Windows Server 2019 or later. AD&nbsp;FS on Windows Server 2016 has been deprecated. For more information, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](onprem-compatibility.md#active-directory-federation-services-ad-fs).
+    > These commands can be run only on an AD&nbsp;FS server that's running Windows Server 2019 or later. AD&nbsp;FS on Windows Server 2016 has been deprecated. For more information, see [Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](onprem-compatibility.md#active-directory-federation-services-ad-fs).
 
 1. Restart the AD&nbsp;FS service so that the settings are applied correctly.
 
@@ -909,7 +907,7 @@ Connect to a server that's hosting your AD&nbsp;FS instance or farm, open Window
 
 ```powershell
 # Host URL is your DNS record\host name for accessing the AOS
-.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
+.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -D365FOVersion <version>
 ```
 
 ![Application group properties.](./media/OPSetup_05_ApplicatioGroupProperties.png)
@@ -942,7 +940,7 @@ You've now completed the setup of the infrastructure. The following sections des
     ```
 
     > [!NOTE]
-    > Make sure that you select the correct SQL Server version for your installation: either version 2016 or version 2019.
+    > Make sure that you select the correct SQL Server version for your installation: either version 2016, version 2019 or version 2022.
 
 1. Save the configuration, and then select **Download configurations** to download the **localagent-config.json** configuration file.
 1. Copy the **localagent-config.json** file to the machine where the agent installer package is located.
@@ -1025,7 +1023,7 @@ Follow the instructions in the error message to enable the **Allow delegation fr
 If AD&nbsp;FS is installed with a non-English version of Windows Server 2016, the **Permit everyone** access control policy is created in the local language. Invoke the cmdlet in the following way to specify the **AccessControlPolicyName** parameter.
 
 ```powershell
-.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>'
+.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>' -D365FOVersion <version>
 ```
 
 ## Additional resources

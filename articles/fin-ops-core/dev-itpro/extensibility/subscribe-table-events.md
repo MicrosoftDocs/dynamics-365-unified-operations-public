@@ -3,7 +3,7 @@ title: Perform business actions throughout the lifecycle of table records
 description: Learn about business actions that you can perform throughout the lifecycle of a table record, including an example.
 author: ivanv-microsoft
 ms.author: ivanv
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/11/2017
 ms.reviewer: johnmichalak
 audience: Developer

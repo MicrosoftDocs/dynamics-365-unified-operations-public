@@ -29,7 +29,7 @@ This procedure demonstrates how to confirm sales orders. You'll be shown how to 
 1. Select **OK**.
 1. Select **Yes**.
 1. Close the page.
-1. On the **Action Pane**, select **Options**.
+1. On the Action Pane, select **Options**.
 1. Select **Change view**.
 1. Select **Header view**. When an order is confirmed, the **Document status** is set to *Confirmation*.
 1. On the Action Pane, select **Sell**.

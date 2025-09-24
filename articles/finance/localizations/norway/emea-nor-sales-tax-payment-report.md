@@ -1,16 +1,15 @@
 ---
 title: VAT statement for Norway
-description: Learn how to set up and generate the VAT statement for legal entities that have a primary address in Norway, including a process for setting sales tax authorities.
+description: Learn how to set up and generate the VAT statement for legal entities that have a primary address in Norway in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/21/2022
+ms.date: 06/12/2025
 ms.reviewer: johnmichalak
 ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: July 2017 update
 ---
 
 # VAT statement for Norway
@@ -20,15 +19,20 @@ ms.dyn365.ops.version: July 2017 update
 This article includes country/region-specific information about how to set up the value-added tax (VAT) statement for legal entities that have a primary address in Norway. For more information about general VAT reporting, see [VAT reporting for Europe](../europe/emea-vat-reporting.md).
 
 > [!NOTE]
-> As part of the modernization of VAT systems, the Norwegian Tax Administration introduced a new format for VAT return reporting for periods that start on or after January 1, 2022. VAT returns for periods before that date, and corrections to those VAT returns, must be reported in the format that is described in this article. For more information about the new VAT return format, see [VAT return with direct submission to Altinn](emea-nor-vat-return.md).
+> As part of the modernization of VAT systems, the Norwegian Tax Administration introduced a new format for VAT return reporting for periods that start on or after January 1, 2021. VAT returns for periods before that date, and corrections to those VAT returns, must be reported in the format that is described in this article. For more information about the new VAT return format, see [VAT return with direct submission to Altinn](emea-nor-vat-return.md).
 
 ## Set up sales tax authorities
+
 To generate a VAT declaration in the required format for a specific tax authority, you must set up the report layout for the sales tax authorities.
 
-1. On the **Sales tax authorities** page, in the **Report layout** field, select **Norwegian report format**.
-2. Select the same sales tax authority for the sales tax settlement period that you will use for the sales tax codes.
+To set up the report layout for the sales tax authorities, follow these steps.
+
+1. In Dynamics 365 Finance, go to the **Sales tax authorities** page.
+1. In the **Report layout** field, select **Norwegian report format**.
+1. Select the same sales tax authority for the sales tax settlement period that you will use for the sales tax codes.
 
 ## Set up sales tax reporting codes
+
 The following example shows how you can set up sales tax reporting codes to generate the VAT statement.
 
 For users in legal entities in Norway, the following sales tax reporting codes can be created and assigned to sales tax codes.
@@ -62,10 +66,11 @@ For users in legal entities in Norway, the following sales tax reporting codes c
 | 142            | Deductible domestic input VAT, 25 %, calc. tax                                     | **Sales tax receivable** |
 | 152            | Deductible domestic input VAT, 15 %, calc. tax                                     | **Sales tax receivable** |
 | 162            | Deductible domestic input VAT, 10 %, calc. tax                                     | **Sales tax receivable** |
-| 172            | Deductible import VAT, 25 %, calc. tax                                             | **Offset use tax** if you aren't using reporting codes 93, 123, or 133. |
-| 182            | Deductible import VAT, 15 %, calc. tax                                             | **Offset use tax** if you aren't using reporting code 103. |
+| 172            | Deductible import VAT, 25 %, calc. tax                                             | **Offset use tax** if you aren't using reporting codes 93, 123, or 131. |
+| 182            | Deductible import VAT, 15 %, calc. tax                                             | **Offset use tax** if you aren't using reporting code 101. |
 
 ## Set up the sales tax period code
+
 On the **Sales tax settlement periods** page, create a list of periods. In the **Sales tax period code** field, set the period codes according to the submission periods. These period codes should be aligned with the values that the tax authorities provided. The values in this field will be used when an XML file is generated.
 
 Here is an example for bi-monthly reporting.
@@ -80,6 +85,7 @@ Here is an example for bi-monthly reporting.
 | Sixth period – November/December | 064                   |
 
 ## Configure the ER model and format for the report
+
 To review or change the reporting formats, you must use Electronic reporting (ER) functionality. You can find the VAT statement format for legal entities that have a primary address in Norway on the **Configurations** page (**Organization administration** > **Electronic reporting** > **Configurations**). In the tree of ER models, expand the **Vat declaration model** node, and then select **VAT declaration (NO)**.
 
 You can use the designer to review or change the configuration that you selected in the model tree. For more information, see [Electronic reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
@@ -88,14 +94,18 @@ You can use the designer to review or change the configuration that you selected
 > The same VAT declaration model is used for Austria, Czech Republic, Estonia, Finland, Latvia, Lithuania, and Norway. This model aggregates tax data that is required for VAT declaration.
 
 ## Generate the VAT statement
-1. On the **Report sales tax for settlement period** page, enter values in the **Settlement period**, **From date**, and **Sales tax payment version** fields.
-2. Click **OK**.
-3. In the **Format mapping** field, select one of the following options:
+
+To generate the VAT statement, follow these steps.
+
+1. In Dynamics 365 Finance, go to the **Report sales tax for settlement period** page.
+1. Enter values in the **Settlement period**, **From date**, and **Sales tax payment version** fields.
+1. Select **OK**.
+1. In the **Format mapping** field, select one of the following options:
 
     - **VAT declaration (NO)** – Generate an XML file.
     - **Sales tax report (NO)** – Print the report in Microsoft Excel.
 
-4. Before the XML file can be created, you must enter values in the following fields:
+1. Before the XML file can be created, you must enter values in the following fields:
 
     - **Message type** – Select **Main**, **Additional**, or **Correction**.
     - **KID number**
@@ -103,8 +113,12 @@ You can use the designer to review or change the configuration that you selected
     - **Explanation**
   
 ### Create a report after a sales tax payment update
-1. On the **Sales tax payments** page, select the applicable vouchers, and then click **Export VAT file**.
-2. In the **Format mapping** field, select one of the following options to specify the type of output file:
+
+To create a report after a sales tax payment update, follow these steps.
+
+1. In Dynamics 365 Finance, go to the **Sales tax payments** page.
+1. Select the applicable vouchers, and then select **Export VAT file**.
+1. In the **Format mapping** field, select one of the following options to specify the type of output file:
 
     - **VAT declaration (NO)** – Generate an XML file.
     - **Sales tax report (NO)** – Print the report in Microsoft Excel.

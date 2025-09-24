@@ -3,11 +3,14 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.27 (Ju
 description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.27 with a table that outlines feature areas. 
 author: kamaybac
 ms.author: kamaybac
-ms.topic: article
-ms.date: 04/19/2024
-ms.custom: evergreen
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: whats-new
+ms.date: 08/05/2025
+ms.update-cycle: 1095-days
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.27 (July 2022)
@@ -85,4 +88,3 @@ Before any feature is removed from the product, the deprecation notice will be a
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

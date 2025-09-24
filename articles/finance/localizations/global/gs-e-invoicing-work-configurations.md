@@ -3,7 +3,7 @@ title: Work with Electronic reporting (ER) configurations
 description: Access an overview of the main scenario for working with Electronic reporting (ER) configurations from the Globalization features workspace.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/29/2024
 ms.custom: 
 ms.reviewer: johnmichalak

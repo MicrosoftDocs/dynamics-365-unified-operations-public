@@ -3,7 +3,7 @@ title: Set up garnishments and tax levies
 description: Learn about how to set up garnishments and tax levies, including an overview on setting up disposable income definitions.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User

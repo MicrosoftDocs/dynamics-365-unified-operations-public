@@ -125,7 +125,7 @@ When enabled, a background process continuously validates the following for each
 
 + The local working directory exists.
 + The Excel parameter file exists.
-+ Test automation files (binary and Xml files) needed for execution exist.
++ Test automation files (binary and XML files) needed for execution exist.
 + Test automation files are compatible with current version of RSAT. You must regenerate test automation files
 when you install a new version of RSAT.
 + Test case ID specified in the Excel parameter file matches the test cases ID in Azure DevOps.

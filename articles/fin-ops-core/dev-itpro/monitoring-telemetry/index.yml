@@ -1,0 +1,74 @@
+### YamlMime:Landing
+
+title: Monitoring and Telemetry using Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management
+summary: Learn how to implement a monitoring solution to capture and analyze telemetry for Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management.
+
+metadata:
+  title: Monitoring and Telemetry with Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management
+  description: "Learn how to implement a monitoring solution to capture and analyze telemetry for Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management."
+  
+  ms.topic: landing-page
+  author: kennysaelen
+  ms.author: kesaelen
+  ms.date: 01/20/2025
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Monitoring and Telemetry
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Monitoring and Telemetry Feature overview
+            url: monitoring-overview.md
+          - text: Getting started
+            url: monitoring-getting-started.md
+          - text: Available telemetry
+            url: monitoring-available-telemetry.md
+      - linkListType: concept
+        links:
+          - text: Gathering requirements for monitoring
+            url: monitoring-gathering-requirements.md
+          - text: Understanding and controlling cost
+            url: monitoring-understanding-and-controlling-cost.md          
+  
+  # Card
+  - title: For developers
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Adding your custom telemetry signals
+            url: monitoring-developer-add-custom-signals.md
+      - linkListType: reference
+        links:
+          - text: Telemetry data model
+            url: https://learn.microsoft.com/azure/azure-monitor/app/data-model-complete
+          - text: Application Insights API for custom events and metrics
+            url: https://learn.microsoft.com/azure/azure-monitor/app/api-custom-events-metrics
+  
+  # Card
+  - title: Analyzing telemetry
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Analyze telemetry with KQL queries
+            url: monitoring-analyze-telemetry-KQL.md
+          - text: Create telemetry driven alerts
+            url: monitoring-analyze-telemetry-driven-alerts.md
+  
+  # Card
+  - title: Related docs
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Application Insights Overview
+            url: https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview
+          - text: Cost optimization and Application Insights
+            url: https://learn.microsoft.com/azure/well-architected/service-guides/application-insights/cost-optimization
+          - text: Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management - Enable warehousing telemetry with Application Insights
+            url: https://learn.microsoft.com/dynamics365/supply-chain/warehousing/application-insights-warehousing          
+          - text: Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management - Monitor warehouse management usage and performance
+            url: https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/application-insights-monitor-usage-performance          
