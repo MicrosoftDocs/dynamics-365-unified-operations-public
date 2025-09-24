@@ -51,9 +51,9 @@ Before you consolidate inventory transactions, you should consider the following
 
 Inventory transactions can be consolidated only during periods where the following conditions are met:
 
-- The ledger period must be closed.
+- The ledger period must be on hold or permanently closed.
 - Inventory closing must be run on or after the to-period date of the consolidation.
-- The period must be at least one year before the from-period date of the consolidation.
+- The period must be at least one year before the current system date.
 - There must not be any existing inventory recalculations.
 
 ## Consolidate your inventory transactions
