@@ -25,7 +25,6 @@ The following diagram shows the feature setup and enablement process.
 :::image type="content" source="https://github.com/user-attachments/assets/df125501-4368-4907-b9ee-b564bd68ddc6" alt-text="Screenshot of diagram that shows the Brazil reformed tax setup enablement process.":::
 
 
-
 ## Enable the feature in Feature management
 During public preview and general availability, the feature is visible but disabled by default. Enable the Brazil tax reform feature in the **Feature management** workspace.
 
@@ -245,3 +244,15 @@ The steps for enablement are as follows.
 
 * **Settlement period** and **Leger posting group** needs to be modified in legacy tax module **Tax->Indirect tax-> Sales tax -> Sales tax codes**.
 
+## Related setup
+> **Sales tax authorities**, please find the details in the below link.
+>
+>  [Set up sales tax authorities - Finance | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-authorities)
+>
+> **Leger posting groups**, please find the details in the below link.
+> 
+> [Set up Ledger posting groups for sales tax - Finance | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax)
+> 
+> **Settlement periods**,please find the details in the below link.
+> 
+> [Set up sales tax settlement periods - Finance | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-settlement-periods)
