@@ -3,7 +3,7 @@ title: Sales tax applicability and sales tax group determination logic
 description: Learn about the logic for determining sales tax applicability and sales tax groups in the tax feature setup, including an overview on matching logic.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 02/09/2024
 ms.custom: 
   - bap-template
@@ -41,10 +41,7 @@ When sales tax is calculated for a purchase order that has the EUR currency and 
 
 ## Adjust execution sequence
 
-In the 10.0.28 update, you can adjust the execution sequence of the applicability rules which are equally weighted.
-
-> [!NOTE]
-> In RCS, the **Tax calculation service feature setup new UI** feature must be enabled in Feature management to make the **Adjust execution sequence** button visible in the **Applicability rules** tables.
+You can adjust the execution sequence of the applicability rules which are equally weighted.
 
 ### Example
 

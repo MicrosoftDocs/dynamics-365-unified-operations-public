@@ -3,7 +3,7 @@ title: Stock transfer orders for India
 description: Learn about the stock transfer functionality that is available for India in Microsoft Dynamics 365 Finance, including an outline on setting up stock transfers.
 author: chuzheng
 ms.author: chuzheng
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/29/2022
 ms.custom:
 ms.reviewer: johnmichalak
@@ -33,12 +33,8 @@ The **Stock transfer** functionality that is available for India supports this p
 
 Enable the following features in the **Feature management** workspace:
 
-- (India) Improvements in unit price and cost price handling in Stock transfer orders
-- (Stock transfer for India) Set up the default transfer type and price type for transfer orders created from Master planning
-- Enable uniform tax amount and GST transaction ID for both shipment and receipt transaction of a stock transfer order
-
-> [!NOTE]
-> In future releases, the preceding features will be turned on by default.
+- *(India) Improvements in unit price and cost price handling in Stock transfer orders* (As of Supply Chain Management version 10.0.43, this feature is turned on by default. As of version 10.0.45, it's mandatory and can't be turned off.)
+- *Enable uniform tax amount and GST transaction ID for both shipment and receipt transaction of a stock transfer order* (As of version 10.0.43, this feature is mandatory and can't be turned off.)
 
 For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -57,9 +53,6 @@ You can define a default transfer order type and a default price type for transf
 ### Configure Master planning parameters
 
 You can define a default transfer order type and a default price type for transfer orders that are created when confirming planned orders in the **Master planning** module. On the **Master planning parameters** page, on the **Standard update** tab, select **Transfer type** and **Price type** in the **Firm - Transfer** group.
-
-> [!NOTE]
-> These parameters are only available if the "(Stock transfer for India) Set up the default transfer type and price type for transfer orders created from Master planning" feature is enabled in the **Feature management** workspace. Otherwise, default transfer type and price type are defined by corresponding parameters on the **Inventory and warehouse management parameters** page.
 
 ### Set up item master parameters
 

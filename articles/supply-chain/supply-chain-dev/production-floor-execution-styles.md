@@ -3,10 +3,12 @@ title: Style the production floor execution interface
 description: Learn how to configure form controls so that the default production floor execution styles are applied to them with an outline on forms and dialogs.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
-ms.date: 11/08/2021
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Style the production floor execution interface
@@ -41,11 +43,11 @@ Styles can be applied to the **Cancel** button in a dialog box only if the follo
 
 The following illustration shows a typical form or dialog header.
 
-![Typical form or dialog header.](../production-control/media/pfe-styles-header.png "Typical form or dialog header")
+:::image type="content" source="../production-control/media/pfe-styles-header.png" alt-text="Typical form or dialog header." lightbox="../production-control/media/pfe-styles-header.png":::
 
 In Visual Studio, headers are created by using a structure such as the one that is shown in the following illustration.
 
-![Typical code structure for creating a header.](../production-control/media/pfe-styles-header-code-structure.png "Typical code structure for creating a header")
+:::image type="content" source="../production-control/media/pfe-styles-header-code-structure.png" alt-text="Typical code structure for creating a header." lightbox="../production-control/media/pfe-styles-header-code-structure.png":::
 
 To add text to your header, use code such as the following example.
 
@@ -72,7 +74,7 @@ When you write your header code, apply the following rules:
 
 You can include a progress indicator, which is shown to the right of the header. The following illustration shows a progress indicator.
 
-![Typical progress indicator.](../production-control/media/pfe-styles-header-progress.png "Typical progress indicator")
+:::image type="content" source="../production-control/media/pfe-styles-header-progress.png" alt-text="Typical progress indicator." lightbox="../production-control/media/pfe-styles-header-progress.png":::
 
 To show the progress indicator, the text field must be named `ShowProgress`.
 
@@ -102,13 +104,13 @@ Styles can be applied to card view controls only if the following requirements a
 
 The following illustration shows a card view that has no controls inside it.
 
-![Card view without elements.](../production-control/media/pfe-styles-empty-card.png)
+:::image type="content" source="../production-control/media/pfe-styles-empty-card.png" alt-text="Card view without elements." lightbox="../production-control/media/pfe-styles-empty-card.png":::
 
 The following illustrations show card views that have controls inside them.
 
-![Card with elements that show Hz.](../production-control/media/pfe-styles-elements.png)
+:::image type="content" source="../production-control/media/pfe-styles-elements.png" alt-text="Card with elements that show Hz." lightbox="../production-control/media/pfe-styles-elements.png":::
 
-![Card with elements for a maintenance request.](../production-control/media/pfe-styles-elements-maintenance.png)
+:::image type="content" source="../production-control/media/pfe-styles-elements-maintenance.png" alt-text="Card with elements for a maintenance request." lightbox="../production-control/media/pfe-styles-elements-maintenance.png":::
 
 ## Business card
 
@@ -124,7 +126,7 @@ Set the following properties on the business card:
 - **Multi Select:** *No*
 - **Show Col Labels:** *No*
 
-![Business card.](../production-control/media/pfe-styles-business-card.png)
+:::image type="content" source="../production-control/media/pfe-styles-business-card.png" alt-text="Business card." lightbox="../production-control/media/pfe-styles-business-card.png":::
 
 ## Radio button
 
@@ -140,17 +142,17 @@ Set the following properties on the radio button:
 
 The following illustration shows an example where the text appears below the radio buttons.
 
-![Radio buttons with text below.](../production-control/media/pfe-styles-radio-text-below.png)
+:::image type="content" source="../production-control/media/pfe-styles-radio-text-below.png" alt-text="Radio buttons with text below." lightbox="../production-control/media/pfe-styles-radio-text-below.png":::
 
 The following illustration shows an example where the text appears to the right of the radio buttons.
 
-![Radio buttons with text to the right.](../production-control/media/pfe-styles-radio-text-right.png)
+:::image type="content" source="../production-control/media/pfe-styles-radio-text-right.png" alt-text="Radio buttons with text to the right." lightbox="../production-control/media/pfe-styles-radio-text-right.png":::
 
 ### Radio buttons in Internet Explorer
 
 Radio button styles aren't supported in Internet Explorer. The following illustration shows what radio buttons look like in Internet Explorer.
 
-![Radio buttons in Internet Explorer.](../production-control/media/pfe-styles-browser.png)
+:::image type="content" source="../production-control/media/pfe-styles-browser.png" alt-text="Radio buttons in Internet Explorer." lightbox="../production-control/media/pfe-styles-browser.png":::
 
 ## Buttons
 
@@ -174,7 +176,7 @@ Styles can be applied to a primary button only if the following requirements are
 - The button is contained in a form group.
 - The group name starts with `DefaultButtonGroup` or `PrimaryButtonGroup` (for example, `DefaultButtonGroup10`).
 
-![Primary button.](../production-control/media/pfe-styles-first.png)
+:::image type="content" source="../production-control/media/pfe-styles-first.png" alt-text="Primary button." lightbox="../production-control/media/pfe-styles-first.png":::
 
 ### Secondary button
 
@@ -183,7 +185,7 @@ Styles can be applied to a secondary button only if the following requirements a
 - The button is contained in a form group.
 - The group is named **Right panel**, or the group name starts with `SecondaryButtonGroup`.
 
-![Secondary button.](../production-control/media/pfe-styles-second.png)
+:::image type="content" source="../production-control/media/pfe-styles-second.png" alt-text="Secondary button." lightbox="../production-control/media/pfe-styles-second.png":::
 
 ### Third-group button
 
@@ -192,7 +194,7 @@ Styles can be applied to a third-group button only if the following requirements
 - The button is contained in a form group.
 - The group is named **Left panel**, or the group name starts with `ThirdButtonGroup`.
 
-![Third-group button.](../production-control/media/pfe-styles-third.png)
+:::image type="content" source="../production-control/media/pfe-styles-third.png" alt-text="Third-group button." lightbox="../production-control/media/pfe-styles-third.png":::
 
 ### Fourth-group button
 
@@ -209,7 +211,7 @@ Set the following properties on the button:
 - **Width:** *Auto*
 - **Height:** *Auto*
 
-![Fourth-group button.](../production-control/media/pfe-styles-fourth.png)
+:::image type="content" source="../production-control/media/pfe-styles-fourth.png" alt-text="Fourth-group button." lightbox="../production-control/media/pfe-styles-fourth.png":::
 
 ### Flat button
 
@@ -226,7 +228,7 @@ Set the following properties on the button:
 - **Width:** *Auto* or *SizeToContent*
 - **Height:** *Auto* or *SizeToContent*
 
-![Flat button.](../production-control/media/pfe-styles-flat-button.png)
+:::image type="content" source="../production-control/media/pfe-styles-flat-button.png" alt-text="Flat button." lightbox="../production-control/media/pfe-styles-flat-button.png":::
 
 ### Continue button
 
@@ -243,7 +245,7 @@ Set the following properties on the button:
 - **Width:** *Auto* or *SizeToContent*
 - **Height:** *Auto* or *SizeToContent*
 
-![Continue button.](../production-control/media/pfe-styles-continue-button.png)
+:::image type="content" source="../production-control/media/pfe-styles-continue-button.png" alt-text="Continue button." lightbox="../production-control/media/pfe-styles-continue-button.png":::
 
 ## Combo box
 
@@ -295,7 +297,7 @@ Styles can be applied to a combo box only if the following requirements are met:
 
 The following illustration shows two combo box controls. The combo box on the left has an empty text box, and the **Clear** button is disabled. The combo box on the right has text in the text box, and the **Clear** button is enabled.
 
-![Combo boxes with and without a Clear button.](../production-control/media/pfe-styles-combo.png)
+:::image type="content" source="../production-control/media/pfe-styles-combo.png" alt-text="Combo boxes with and without a Clear button." lightbox="../production-control/media/pfe-styles-combo.png":::
 
 ## Quick filter
 
@@ -309,7 +311,7 @@ The quick filter control adds a search field to the page. You can apply styles t
 
 The following illustration shows two quick filter controls. The quick filter on the left has an empty quick filter, and the number of results isn't visible. The quick filter on the right contains a search string and shows the number of results.
 
-![Examples of a quick filter control with and without a search string.](../production-control/media/pfe-styles-quick-filter.png "Examples of a quick filter control with and without a search string")
+:::image type="content" source="../production-control/media/pfe-styles-quick-filter.png" alt-text="Examples of a quick filter control with and without a search string." lightbox="../production-control/media/pfe-styles-quick-filter.png":::
 
 ## Center-align elements on a tab
 
@@ -327,11 +329,11 @@ To arrange a customized grid, detail part, and quick filter so that they resembl
 
 The following illustration shows a typical grid that includes a quick filter and a detail part on the right.
 
-![Typical grid that includes a quick filter and detail part.](../production-control/media/pfe-styles-align-grid.png "Typical grid that includes a quick filter and detail part")
+:::image type="content" source="../production-control/media/pfe-styles-align-grid.png" alt-text="Typical grid that includes a quick filter and detail part." lightbox="../production-control/media/pfe-styles-align-grid.png":::
 
 In Visual Studio, a grid, detail part, and quick filter can be created by using a structure such as the one that is shown in the following illustration.
 
-![Typical code structure that aligns a grid, detail part, and quick filter.](../production-control/media/pfe-styles-header-code-structure2.png "Typical code structure that aligns a grid, detail part, and quick filter")
+:::image type="content" source="../production-control/media/pfe-styles-header-code-structure2.png" alt-text="Typical code structure that aligns a grid, detail part, and quick filter." lightbox="../production-control/media/pfe-styles-header-code-structure2.png":::
 
 ## Related information
 

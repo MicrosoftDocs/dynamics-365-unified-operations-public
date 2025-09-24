@@ -3,7 +3,7 @@ title: Credit and collections management Power BI content
 description: Learn what is included in the Credit and collections management Power BI content, including an outline on how to access the Power BI reports.
 author: ShivamPandeyMSFT
 ms.author: shpandey
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/06/2023
 ms.custom:
 ms.reviewer: twheeloc

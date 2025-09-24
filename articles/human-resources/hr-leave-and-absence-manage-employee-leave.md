@@ -6,7 +6,7 @@ title: Manage employee leave
 description: Manage employee leave in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 06/24/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
@@ -18,7 +18,7 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: twheeloc
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
 

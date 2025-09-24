@@ -4,9 +4,12 @@ description: Learn about creating icons for workspace tiles, including overviews
 author: jasongre
 ms.author: jasongre
 ms.topic: article
-ms.date: 01/22/2021
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 01/23/2025
+ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1

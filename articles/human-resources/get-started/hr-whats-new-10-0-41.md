@@ -4,7 +4,8 @@ description: This article describes features that are either new or changed in t
 author: twheeloc
 ms.author: twheeloc
 ms.date: 07/26/2024
-ms.topic: conceptual
+ms.update-cycle: 1095-days
+ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
@@ -75,7 +76,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 ### Regulatory updates
 
-For information about regulatory updates for finance and operations apps, see [Regulatory updates](../../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
+For information about regulatory updates for finance and operations apps, see [Regulatory updates](../../finance/localizations/global/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
 
 ### Dynamics 365 and industry clouds: 2024 release wave 1 plan
 

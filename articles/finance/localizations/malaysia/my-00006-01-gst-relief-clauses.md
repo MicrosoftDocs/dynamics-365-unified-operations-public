@@ -1,46 +1,55 @@
 --- 
 title: MY-00006 01 Set up GST relief clauses
-description: Learn about setting up GST relief causes, including step-by-step processes for creating relief categories using the MYMF demo data company.
+description: Learn how to set up GST relief causes for Malaysia in Microsoft Dynamics 365 Finance.
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 08/29/2018
-ms.custom:
+ms.date: 05/29/2025
 ms.reviewer: johnmichalak    
-audience: Application User  
 ms.search.region: Malaysia
 ms.search.validFrom: 2016-06-30
 ms.search.form: TaxGSTReliefCategory_MY, TaxGSTReliefGroup_MY
-ms.dyn365.ops.version: Version 7.0.0 
+ms.custom: 
+  - bap-template
 ---
 
 # MY-00006 01 Set up GST relief clauses
 
 [!include [banner](../../includes/banner.md)]
-After you complete these procedures, when you generate a tax invoice for a customer who has bought a GST relieved item or service, the relief clause is automatically included in the final printed invoice. You must be in the Accounting supervisor role to complete these procedures. This procedure was created using the demo data company MYMF.
 
+This article explains how to set up GST relief causes for Malaysia in Microsoft Dynamics 365 Finance.
+
+After you complete the following procedures, when you generate a tax invoice for a customer who has bought a GST relieved item or service, the relief clause is automatically included in the final printed invoice. 
+
+You must be in the accounting supervisor role to complete these procedures, which use the demo data company MYMF.
 
 ## Create GST relief categories
-1. Go to Tax > Setup > Sales tax > GST relief category.
-2. Click New.
-3. In the Relief item number field, type a value.
-4. In the Relief schedule field, type a value.
-    * Repeat the last two steps for each additional GST relief category that you want to create.  
-5. Click Save.
+
+To create GST relief categories, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax \> Setup \> Sales tax \> GST relief category**.
+1. Select **New**.
+1. In the **Relief item number** field, enter a value.
+1. In the Relief schedule field, enter a value.
+1. Repeat steps 3 and 4 for each additional GST relief category that you want to create.  
+1. Select **Save**.
 
 ## Create GST relief groups
-1. Go to Tax > Setup > Sales tax > GST relief group.
-2. Click New.
-3. In the Name field, type a value.
-4. In the Description field, type a value.
-5. Expand or collapse the GST relief category section.
-6. Click Add.
-7. In the list, mark the selected row.
-8. In the GST relief category field, click the drop-down button to open the lookup.
-9. In the list, find and select the desired record.
-10. In the list, click the link in the selected row.
-    * Repeat this procedure to create additional GST relief groups if necessary.  
-11. Click Save.
+
+To create GST relief groups, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax \> Setup \> Sales tax \> GST relief group**.
+1. Select **New**.
+1. In the **Name** field, enter a value.
+1. In the **Description** field, enter a value.
+1. Expand or collapse the **GST relief category** section.
+1. Select **Add**.
+1. In the list, mark the selected row.
+1. In the **GST relief category** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. Repeat steps 1 through 11 to create additional GST relief groups if necessary.  
+1. Select **Save**.
 
 
 

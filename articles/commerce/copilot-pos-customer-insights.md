@@ -2,15 +2,16 @@
 title: Customer insights by Copilot
 description: This article describes how store associates can use Microsoft Copilot to enhance customer interactions and create personalized shopping experiences in Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 08/01/2024
+ms.date: 01/22/2025
+ms.update-cycle: 180-days
 ms.topic: how-to
-audience: Application user
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.collection:
   - bap-ai-copilot
+ms.custom: sfi-image-nochange
 ---
 
 # Customer insights by Copilot

@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/19/2021
+ms.date: 01/29/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2017-12-20
@@ -18,15 +18,15 @@ ms.service: dynamics-365-op
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers. With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center.
+Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers. With this deployment option, application servers and the Microsoft SQL Server database run in the customer’s data center.
 
-This article will help you plan and prepare for your on-premises deployment.
+This article helps you plan and prepare for your on-premises deployment.
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) and [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
+> Dynamics 365 Finance + Operations (on-premises) isn't supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it's supported to run on [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) and [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
 
 ## Differences between cloud deployments and on-premises deployments
-The features in cloud deployments and on-premises deployments differ. These differences will affect your planning. The differences are described in the following topics:
+The features in cloud deployments and on-premises deployments differ. These differences affect your planning. The differences are described in the following topics:
 - [Deployment options](choose-deployment-type.md)
 - [Comparison of cloud and on-premises features](../../fin-ops/get-started/cloud-prem-comparison.md)
 - [Removed or deprecated features for finance and operations](../migration-upgrade/deprecated-features.md)
@@ -56,6 +56,7 @@ Business users and functional team members validate application functionality by
 At a minimum, an on-premises sandbox environment requires:
 - 3 machines running Environment Orchestrator
 - 2 machines running Application Object Servers (AOS)
+- 1 machine running SQL Server Integration Services (SSIS) 
 - 1 machine running Management Reporter (MR)
 - 1 machine running SQL Server Reporting Services (SSRS) with a local SQL Server (Database Engine)
 - 1 machine running Active Directory
@@ -65,15 +66,16 @@ At a minimum, an on-premises sandbox environment requires:
 The production environment is the live deployment that your users and customers have access to. To deploy a production environment, see [Set up and deploy on-premises environments home page](setup-deploy-on-premises-environments.md).
 
 At a minimum, an on-premises production environment requires:
-- 3 machines running Environment Orchestrator
-- 3 machines running Application Object Servers (AOS)
-- 1 machine running Management Reporter (MR)
-- 1 machine running SQL Server Reporting Services (SSRS) with a local SQL Server (Database Engine)
-- 2 or more machines running SQL Server (Database Engine)
-- 2 or more machines running Active Directory
+- Three machines running Environment Orchestrator
+- Three machines running Application Object Servers (AOS)
+- One machine running SQL Server Integration Services (SSIS) 
+- One machine running Management Reporter (MR)
+- One machine running SQL Server Reporting Services (SSRS) with a local SQL Server (Database Engine)
+- Two or more machines running SQL Server (Database Engine), failover is only supported in an active\passive configuration. 
+- Two or more machines running Active Directory
 
 ## Service Fabric
-An on-premises deployment uses Azure Service Fabric standalone clusters. Service Fabric is the next-generation Microsoft middleware platform for building and managing enterprise-class, high-scale applications. Service Fabric standalone clusters can be deployed on any computer that is running Windows Server.
+An on-premises deployment uses Azure Service Fabric standalone clusters. Service Fabric is the next generation Microsoft middleware platform for building and managing enterprise-class, high-scale applications. Service Fabric standalone clusters can be deployed on any computer that is running Windows Server.
 
 An on-premises deployment has a standalone cluster for each sandbox environment and a standalone cluster for each production environment. The following roles or node types are deployed into both types of clusters:
 - Application Object Servers (AOS) – Provides the ability to run the application functionality in client, batch, and import/export scenarios.
@@ -87,7 +89,7 @@ The following diagram shows the node types deployed in a Service Fabric standalo
 
 ### Service Fabric resources
 To learn more about Service Fabric, see the following topics:
-- [Azure Service Fabric documentation](/azure/service-fabric) - To learn more about Service Fabric.
+- [Azure Service Fabric](/azure/service-fabric). 
 - [Service Fabric application upgrade](/azure/service-fabric/service-fabric-application-upgrade) - An Azure Service Fabric application is a collection of services that requires periodic upgrades.
 - [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) - Additional information about Service Fabric clusters and antivirus exclusions.
 
@@ -114,35 +116,35 @@ From left to right, the first and most important factor needed to accurately est
 
 As you understand the load that impacts your infrastructure, you also need to understand more detail about these factors:
 - **Transactions** – Transactions typically have certain peaks throughout the day or week. The peaks might depend on the transaction type. For example, time and expense entries usually show peaks once per week, while sales orders might arrive in bulk via integration or trickle in during the day.
-- **Number of concurrent users** – The number of concurrent users is the second most important sizing factor. You cannot get reliable sizing estimates based only on the number of concurrent users. If concurrent users is the only data that you have available, then estimate an approximate number for transactions, and revisit this when you have more data. An accurate concurrent user definition means that:
-    - Named users are not concurrent users.
+- **Number of concurrent users** – The number of concurrent users is the second most important sizing factor. You can't get reliable sizing estimates based only on the number of concurrent users. If concurrent users are the only data that you have available, then estimate an approximate number for transactions, and revisit this when you have more data. An accurate concurrent user definition means that:
+    - Named users aren't concurrent users.
     - Concurrent users are always a subset of named users.
     - Peak workload defines the maximum concurrency for sizing.
     For concurrent users, the user must meet all the following criteria:
         - The user is logged on.
         - There are working transactions or inquiries at the time of counting.
-        - The session is not idle.
-- **Data composition** – Data composition is how your system will be set up and configured. For example, this can include the number of legal entities, the number items, the number of BOM levels, and how complex the security setup will be. Each of these factors might have an impact on performance, however the impact can be offset by using smart choices when it comes to infrastructure.
-- **Extensions** – Customizations can be simple or complex. The number of customizations and the nature of complexity and usage has a varied impact on the size of the infrastructure needed. For complex customizations, you should conduct performance evaluations to ensure that they are not only tested for efficiency but also help understand the infrastructure needs. This is even more critical when the extensions are not coded according to best practices for performance and scalability.
-- **Reporting and analytics** – Reporting and analytics typically include running heavy queries against the database systems. Reducing the frequency of when data intensive reports run will help reduce their impact. It’s also important to understand how the design of your queries impacts their performance.
+        - The session isn't idle.
+- **Data composition** – Data composition is how your system is set up and configured. For example, this can include the number of legal entities, the number items, the number of BOM levels, and how complex the security setup will be. Each of these factors might have an impact on performance, however the impact can be offset by using smart choices when it comes to infrastructure.
+- **Extensions** – Customizations can be simple or complex. The number of customizations and the nature of complexity and usage has a varied impact on the size of the infrastructure needed. For complex customizations, you should conduct performance evaluations to ensure that they aren't only tested for efficiency but also help understand the infrastructure needs. This is even more critical when the extensions aren't coded according to best practices for performance and scalability.
+- **Reporting and analytics** – Reporting and analytics typically include running heavy queries against the database systems. Reducing the frequency of when data intensive reports run helps reduce their impact. It’s also important to understand how the design of your queries impacts their performance.
 - **Third-party solutions** – These solutions, like ISVs, have the same implications and recommendations as extensions.
 
 ## Sizing your environment
 To determine your sizing requirements, you must know the peak volume of transactions that you need to process. Most auxiliary systems, like Management Reporter or SSRS, are less mission critical. As a result, this article focuses primarily on AOS and SQL Server.
 
-In general, the compute tiers scale out and should be set up in an N+1 fashion, meaning if you estimate three AOS, add a fourth AOS. The database tier should be set up in an Always On highly-available setup.
+In general, the compute tiers scale out and should be set up in an N+1 fashion, meaning if you estimate three AOS, add a fourth AOS. The database tier should be set up in an Always On highly available setup.
 
 ### SQL Server (OLTP)
 
 #### Sizing
 
-- 3K to 15K transaction lines per hour per core on DB server.
+- 3 K to 15 K transaction lines per hour per core on DB server.
 - Typical AOS-to-SQL core ratio 3:1 for the primary SQL Server. Additional cores are required based on the high-availability configuration.
     - Processing database-heavy operations may regress this to 2:1.
 - The following factors influence variations:
     - Parameter settings in use.
     - Levels of extensions.
-    - Additional functionality usage, such as database logs and alerts. Extreme database logging will further reduce throughput per hour per core below 3K lines.
+    - Additional functionality usage, such as database logs and alerts. Extreme database logging will further reduce throughput per hour per core below 3 K lines.
     - Complexity of data composition. For example, a simple chart of accounts versus a detailed fine-grained chart of accounts has implications on throughput.
     - Transaction characterization.
     - 2 GB to 4 GB memory for each core.
@@ -152,7 +154,7 @@ In general, the compute tiers scale out and should be set up in an N+1 fashion, 
 
 #### High availability
 
-You should always utilize SQL Server in either a cluster or mirroring setup. The second SQL node should have the same number of cores as the primary node.
+You should always utilize SQL Server in either a cluster or mirroring setup. The second SQL node should have the same number of cores as the primary node. Failover is only supported in an active\passive configuration. 
 
 #### Active Directory Federation Services (AD FS)
 For AD FS sizing, see the [AD FS Server Capacity documentation](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity). A [sizing spreadsheet](https://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx) is available for planning the number of instances in your deployment.
@@ -162,7 +164,7 @@ For AD FS sizing, see the [AD FS Server Capacity documentation](/windows-server/
 #### Sizing
 
 - Sizing by transaction volume/usage
-    - 2K to 6K lines per core
+    - 2 K to 6 K lines per core
     - 16 GB per instance
     - Standard box – 4 to 24 cores
     - 10 to 15 Enterprise users per core
@@ -171,21 +173,24 @@ For AD FS sizing, see the [AD FS Server Capacity documentation](/windows-server/
 - Batch
     - 1 to 4 batch threads per core
     - Size based on batch window characterization
-- Note that AOS, Data Management, and Batch are the same role in the Service Fabric. You need to size for these three workloads combined, and not separately as you did with Microsoft Dynamics AX 2012.
+- AOS, Data Management, and Batch are the same role in the Service Fabric. You need to size for these three workloads combined, and not separately as you did with Microsoft Dynamics AX 2012.
 - The same variability factors for SQL Server apply here.
 
 #### High availability
 - Ensure that you have at least 1 to 2 more AOS available than you estimate.
 - Ensure that you have at least 3 to 4 virtual hosts available.
 
+### SQL integration services (SSIS)
+The recommended minimum requirements of two nodes should suffice for most integration uses. In scenarios involving high levels of integrations, more than two nodes may be required. When this happens, you can scale up accordingly.
+
 ### Management reporter
-In most cases, unless used extensively, the recommended minimum requirements using two nodes should work well. Only in cases where there is heavy use will you need more than two nodes, after which you can scale as needed.
+In most cases, unless used extensively, the recommended minimum requirements using two nodes should work well. Only in cases where there's heavy use will you need more than two nodes, after which you can scale as needed.
 
 ### SQL Server Reporting Services
-For the current release of Finance + Operations, only one SSRS node can be deployed. Monitor your SSRS node while testing and increase the number of cores available for SSRS as needed. Make sure that you have a preconfigured secondary node available on a virtual host that is different than the SSRS VM. This is important if there is an issue with the virtual machine that hosts SSRS or the virtual host. If this the case, the node would need to be replaced.
+For the current release of Finance + Operations, only one SSRS node can be deployed. Monitor your SSRS node while testing and increase the number of cores available for SSRS as needed. Make sure that you have a preconfigured secondary node available on a virtual host that is different than the SSRS VM. This is important if there's an issue with the virtual machine that hosts SSRS or the virtual host. If this is the case, the node would need to be replaced.
 
 ### Environment Orchestrator
-The Orchestrator service is the service that manages your deployment and the related communication with LCS. This service is deployed as the primary Service Fabric service and requires at least three VMs. This service is co-located with the Service Fabric orchestration services. This should be sized to the peak load of the cluster. For more information, see [Plan and prepare your Service Fabric Standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+The Orchestrator service is the service that manages your deployment and the related communication with LCS. This service is deployed as the primary Service Fabric service and requires at least three VMs. This service is colocated with the Service Fabric orchestration services. This should be sized to the peak load of the cluster. For more information, see [Plan and prepare your Service Fabric Standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ### Virtualization and oversubscription
 Mission critical services like the AOS should be hosted on Virtual hosts that have dedicated resources – core, memory, and disk.
@@ -196,10 +201,10 @@ The following authentication methods are used with on-premises deployments:
 
 - **Microsoft Entra ID** - Microsoft Entra ID is the authentication method used to log in to LCS. Microsoft Entra is used configure the LCS Local Agent. For more information, see [What is Microsoft Entra ID?](/azure/active-directory/active-directory-whatis)
 - **Active Directory Domain Services (AD DS)** - The machines that host Finance + Operations components must belong to an Active Directory domain. You must configure Active Directory Domain Services (AD DS) in native mode. For more information, see [Active Directory Domain Services](/windows-server/identity/ad-ds/active-directory-domain-services).
-- **Active Directory Federation Services (AD FS)** - AD FS is the authentication method used in an on-premises deployment. AD FS provides access control and single sign on across a wide variety of applications including Microsoft 365, cloud-based SaaS applications, and applications on the corporate network.
-  - For the IT organization, it enables you to provide sign on and access control to both modern and legacy applications, on-premises and in the cloud, based on the same set of credentials and policies.
-  - For the user, it provides seamless sign on using the same, familiar account credentials.
-  - For the developer, it provides an easy way to authenticate users whose identities live in the organizational directory. This means you can focus your efforts on your application, not authentication or identity.
+- **Active Directory Federation Services (AD FS)** - AD FS is the authentication method used in an on-premises deployment. AD FS provides access control and single sign-on across a wide variety of applications including Microsoft 365, cloud-based SaaS applications, and applications on the corporate network.
+  - For the IT organization, it enables you to provide sign-on and access control to both modern and legacy applications, on-premises and in the cloud, based on the same set of credentials and policies.
+  - For the user, it provides seamless sign-on using the same, familiar account credentials.
+  - For the developer, it provides an easy way to authenticate users whose identities live in the organizational directory. This means you can focus your efforts on your application, not authentication, or identity.
 
     For more information, see [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
 
@@ -207,7 +212,7 @@ The following authentication methods are used with on-premises deployments:
 
 The on-premises deployment option for Finance + Operations stores core customer data on-premises. Core customer data is a subset of the customer data definition provided in the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/privacy/how-microsoft-defines-customer-data).
 
-The following table outlines the services that are used to store customer data in Azure data centers located in the United States. Services include Lifecycle Services (LCS), Microsoft Office signup portal, and Microsoft Entra ID. These services enable initial onboarding, initiation, tracking of support incidents, and service updates and upgrades. All other customer data, referred to as core customer data, is stored on-premises.
+The following table outlines the services that are used to store customer data in Azure data centers located in the United States. Services includes Lifecycle Services (LCS), Microsoft Office sign up portal, and Microsoft Entra ID. These services enable initial onboarding, initiation, tracking of support incidents, and service updates and upgrades. All other customer data, referred to as core customer data, is stored on-premises.
 
 | Supporting services               | Customer data definition                      |
 |---------------------------------------|----------------------------------------------------|

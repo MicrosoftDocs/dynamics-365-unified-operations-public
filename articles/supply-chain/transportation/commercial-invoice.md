@@ -4,7 +4,8 @@ description: Learn how to create and print a commercial invoice when you use tra
 author: lisascholz91
 ms.author: lisascholz
 ms.topic: how-to
-ms.date: 05/22/2024
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen

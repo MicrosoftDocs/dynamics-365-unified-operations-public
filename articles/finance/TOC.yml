@@ -14,14 +14,14 @@
               items:
                 - name: What's new or changed in Finance home page
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.45 (September)
+                  href: get-started/whats-new-changed-10-0-45.md   
+                - name: Finance 10.0.44 (June)
+                  href: get-started/whats-new-changed-10-0-44.md
+                - name: Finance 10.0.43 (March)
+                  href: get-started/whats-new-changed-10-0-43.md
                 - name: Finance 10.0.42 (December)
                   href: get-started/whats-new-changed-10-0-42.md
-                - name: Finance 10.0.41 (September)  
-                  href: get-started/whats-new-changed-10-0-41.md
-                - name: Finance 10.0.40 (June)
-                  href: get-started/whats-new-changed-10-0-40.md
-                - name: Finance 10.0.39 (April)
-                  href: get-started/whats-new-changed-10-0-39.md
             - name: Removed or deprecated features
               items:
                 - name: Removed or deprecated features home page
@@ -122,6 +122,12 @@
               items:
                 - name: User interface elements
                   href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/finance
+                - name: Default dashboard
+                  href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/finance
+                - name: Immersive Home (production ready preview)
+                  href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/finance
+                - name: Set the preferred initial page for each user
+                  href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/finance
                 - name: Accessibility features
                   href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?context=/dynamics365/context/finance
                 - name: Feature management overview
@@ -228,6 +234,8 @@
               items:
                 - name: Invoice capture overview
                   href: accounts-payable/invoice-capture-overview.md
+                - name: What's new or changed in Invoice capture
+                  href: get-started/whats-new-invoice-capture.md
                 - name: Invoice capture install
                   href: accounts-payable/install-invoice-capture.md
                 - name: Configure Invoice capture
@@ -238,6 +246,8 @@
                   href: accounts-payable/invoice-capture-config-group.md
                 - name: Invoice capture mapping rules
                   href: accounts-payable/invoice-capture-mapping-rules.md
+                - name: Invoice capture financial dimensions
+                  href: accounts-payable/invoice-capture-dim.md
                 - name: Invoice capture workspace
                   href: accounts-payable/invoice-capture-workspace.md
                 - name: Invoice capture dashboard
@@ -420,6 +430,8 @@
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
             - name: Create a free text invoice template
               href: accounts-receivable/create-free-text-invoice-template-new.md
+            - name: Track sales order and free text invoice history
+              href: accounts-receivable/cust-inv-log-frame.md
             - name: Add a company logo to a report
               href: accounts-receivable/remove-logo-cust-stmt.md
             - name: Correct a free text invoice
@@ -474,6 +486,8 @@
               items:
                 - name: Subscription billing overview
                   href: accounts-receivable/subscription-billing-summary.md
+                - name: Performance improvements for subscription billing
+                  href: accounts-receivable/sub-bill-perf-improve.md
                 - name: Recurring contract billing
                   items:
                     - name: Set up recurring contract billing
@@ -514,14 +528,22 @@
                       href: accounts-receivable/sb-deferrals.md
                     - name: Revenue and expense deferrals with project
                       href: accounts-receivable/sb-project-deferrals.md
-                    - name: Migrate revenue recognition data to revenue and expense deferrals
+                    - name: Project subscription billing deferral COGS adjustment (preview)
+                      href: accounts-receivable/sb-project-defferal.md
+                    - name: Migrate revenue recognition data to revenue and expense deferrals                    
                       href: accounts-receivable/sb-RevRecSubBillMigration.md
+                    - name: Backfill deferral schedule line fields
+                      href: accounts-receivable/sb-data-main-back-fill.md
                     - name: Deferral posting method
                       href: accounts-receivable/Deferral-posting-methods.md
+                    - name: Subscription billing deferal COGS (preview)
+                      href: accounts-receivable/sb-defferal-cogs.md
                     - name: Create deferral schedules
                       href: accounts-receivable/sb-deferrals-schedules.md
                     - name: Deferral default transactions
                       href: accounts-receivable/sb-deferral-transactions.md
+                    - name: Calculate deferral schedule and unbilled revenue
+                      href: accounts-receivable/correct-def-schedule.md
                 - name: Multi-element revenue allocation
                   items:
                     - name: Set up multiple element revenue allocation
@@ -638,6 +660,8 @@
               href: accounts-receivable/chrono-numbers.md
             - name: Archive printed customer invoices with hash numbers
               href: accounts-receivable/archive-printed-invoices.md
+            - name: Clean temporary data
+              href: accounts-receivable/data-main-job.md
         - name: Budgeting
           items:
             - name: Budgeting home page
@@ -676,14 +700,16 @@
                   href: budgeting/budget-funds-available.md
                 - name: Budget analysis report
                   href: public-sector/budget-analysis-report.md
+                - name: Budget control statistics vs. Budget analysis report
+                  href: budgeting/budget-control-statistics-and-budget-analysis-report.md
                 - name: Purchase order year-end process
                   href: budgeting/purchase-order-year-end-process.md
         - name: Cash and bank management
           items:
-            - name: Petty cash
-              href: cash-bank-management/Petty-cash.md
             - name: Cash and bank management home page
               href: cash-bank-management/cash-bank-management.md
+            - name: Petty cash
+              href: cash-bank-management/Petty-cash.md
             - name: Cash flow forecasting
               href: cash-bank-management/cash-flow-forecasting.md
             - name: Troubleshoot Cash flow forecasting setup
@@ -706,6 +732,14 @@
               href: cash-bank-management/settlement-overview.md
             - name: Settlement overview for centralized payments
               href: cash-bank-management/settlement-overview-centralized-payments.md
+            - name: Prepayment invoices vs. prepayments
+              href: accounts-payable/prepayments-invoices-vs-prepayments.md
+            - name: Handling cash discounts for overpayments
+              href: cash-bank-management/cash-discount-handling-overpayments.md
+            - name: Set up centralized payments
+              href: cash-bank-management/set-up-centralized-payments.md
+            - name: Automatic settlement and prioritization
+              href: accounts-receivable/automatic-settlement-prioritization.md
             - name: Letters of credit
               items:
                 - name: Letters of credit and import collections
@@ -719,63 +753,61 @@
                 - name: Import letter of credit
                   href: cash-bank-management/tasks/import-letter-credit.md
             - name: Letters of guarantee
-              href: cash-bank-management/letters-of-guarantee.md
-            - name: Letter of guarantee transaction
-              href: cash-bank-management/tasks/letter-guarantee-transaction.md
-            - name: Create a bank facility agreement for the letter of guarantee
-              href: cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
-            - name: Set up bank facilities and posting profiles for letters of guarantee
-              href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
-            - name: Postdated checks
-              href: cash-bank-management/postdated-checks.md
-            - name: Set up postdated checks
-              href: cash-bank-management/tasks/set-up-postdated-checks.md
-            - name: Register and post a postdated check for a customer
-              href: cash-bank-management/tasks/register-post-postdated-check-customer.md
-            - name: Register and post a postdated check for a vendor
-              href: cash-bank-management/tasks/register-post-postdated-check-vendor.md
-            - name: Settle a postdated check from a customer
-              href: cash-bank-management/tasks/settle-postdated-check-customer.md
-            - name: Settle a postdated check for a vendor
-              href: cash-bank-management/tasks/settle-postdated-check-vendor.md
-            - name: Check number validation
-              href: cash-bank-management/check-number-validation.md
-            - name: Create checks that have Blank status
-              href: cash-bank-management/create-check-with-blank-status.md
-            - name: Prepayment invoices vs. prepayments
-              href: accounts-payable/prepayments-invoices-vs-prepayments.md
-            - name: Handling cash discounts for overpayments
-              href: cash-bank-management/cash-discount-handling-overpayments.md
-            - name: Set up centralized payments
-              href: cash-bank-management/set-up-centralized-payments.md
-            - name: Automatic settlement and prioritization
-              href: accounts-receivable/automatic-settlement-prioritization.md
-            - name: Reconcile a bank account
-              href: cash-bank-management/reconcile-bank-account.md
-            - name: Advanced bank reconciliation
+              items: 
+                - name: Letters of guarantee
+                  href: cash-bank-management/letters-of-guarantee.md
+                - name: Letter of guarantee transaction
+                  href: cash-bank-management/tasks/letter-guarantee-transaction.md
+                - name: Create a bank facility agreement for the letter of guarantee
+                  href: cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
+                - name: Set up bank facilities and posting profiles for letters of guarantee
+                  href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
+            - name: Checks
               items:
-                - name: Advanced bank reconciliation overview
-                  href: cash-bank-management/advanced-bank-reconciliation-overview.md
-                - name: Advanced bank reconciliation setup process
-                  href: cash-bank-management/configure-advanced-bank-reconciliation.md
-                - name: Set up bank reconciliation matching rules
-                  href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
-                - name: Set up advanced bank reconciliation import process using Electronic reporting
-                  href: accounts-payable/import-bai2-er.md
-                - name: Reconcile bank statements by using advanced bank reconciliation
-                  href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-                - name: Clear reversal bank statements
-                  href: cash-bank-management/clear-reverse-bank-stmt-trx.md
-                - name: Clear reversal company transactions
-                  href: cash-bank-management/clear-reverse-comp-trans.md
-                - name: Generate vouchers in the reconcilation worksheet
-                  href: cash-bank-management/vouchers-adv-bank-rec.md
-                - name: Apply cash in the reconcilation worksheet
-                  href: cash-bank-management/apply-cash-adv-bank-rec.md
-                - name: Clear bridging payments using advanced bank reconciliation
-                  href: cash-bank-management/clear-bridging-pyts-adv-bank-rec.md
-                - name: Update the bank journal composite entity
-                  href: dev-itpro/upgrade-bank-journal-composite-entity.md
+                - name: Check number validation
+                  href: cash-bank-management/check-number-validation.md
+                - name: Create checks that have Blank status
+                  href: cash-bank-management/create-check-with-blank-status.md
+                - name: Postdated checks
+                  href: cash-bank-management/postdated-checks.md
+                - name: Set up postdated checks
+                  href: cash-bank-management/tasks/set-up-postdated-checks.md
+                - name: Register and post a postdated check for a customer
+                  href: cash-bank-management/tasks/register-post-postdated-check-customer.md
+                - name: Register and post a postdated check for a vendor
+                  href: cash-bank-management/tasks/register-post-postdated-check-vendor.md
+                - name: Settle a postdated check from a customer
+                  href: cash-bank-management/tasks/settle-postdated-check-customer.md
+                - name: Settle a postdated check for a vendor
+                  href: cash-bank-management/tasks/settle-postdated-check-vendor.md
+            - name: Bank account reconciliation
+              items:
+                - name: Reconcile a bank account - Simple bank account reconciliation
+                  href: cash-bank-management/reconcile-bank-account.md
+                - name: Advanced bank reconciliation
+                  items:
+                    - name: Advanced bank reconciliation overview
+                      href: cash-bank-management/advanced-bank-reconciliation-overview.md
+                    - name: Advanced bank reconciliation setup process
+                      href: cash-bank-management/configure-advanced-bank-reconciliation.md
+                    - name: Set up bank reconciliation matching rules
+                      href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
+                    - name: Set up advanced bank reconciliation import process using Electronic reporting
+                      href: accounts-payable/import-bai2-er.md
+                    - name: Reconcile bank statements by using advanced bank reconciliation
+                      href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
+                    - name: Clear reversal bank statements
+                      href: cash-bank-management/clear-reverse-bank-stmt-trx.md
+                    - name: Clear reversal company transactions
+                      href: cash-bank-management/clear-reverse-comp-trans.md
+                    - name: Generate vouchers in the reconciliation worksheet
+                      href: cash-bank-management/vouchers-adv-bank-rec.md
+                    - name: Apply cash in the reconciliation worksheet
+                      href: cash-bank-management/apply-cash-adv-bank-rec.md
+                    - name: Clear bridging payments using advanced bank reconciliation
+                      href: cash-bank-management/clear-bridging-pyts-adv-bank-rec.md
+                    - name: Update the bank journal composite entity
+                      href: dev-itpro/upgrade-bank-journal-composite-entity.md
         - name: Cost accounting
           items:
             - name: Cost accounting home page
@@ -784,6 +816,8 @@
               href: cost-accounting/terms-cost-accounting.md
             - name: Fiscal calendars, fiscal years, and periods
               href: budgeting/fiscal-calendars-fiscal-years-periods.md
+            - name: Ledger and subledger accounting overview
+              href: general-ledger/ledger-subledger.md
             - name: Financial dimensions
               href: general-ledger/financial-dimensions.md
             - name: Financial dimensions and posting
@@ -894,6 +928,8 @@
               href: fixed-assets/tasks/transfer-fixed-asset.md
             - name: Split a fixed asset
               href: fixed-assets/tasks/split-fixed-asset.md
+            - name: Split and transfer a fixed asset (preview)
+              href: fixed-assets/split-transfer-fa.md
             - name: Reduce balance depreciation after a split
               href: fixed-assets/reduce-balance-depreciation-after-split.md
             - name: Set up fixed asset groups
@@ -1080,12 +1116,18 @@
                       href: general-ledger/financial-tag-defaulting.md
                     - name: Financial tag rule reference
                       href: general-ledger/financial-tag-rule-reference.md
+                    - name: Development guidelines and FAQ for Financial tags
+                      href: general-ledger/fin-tag-custom.md 
                 - name: Financial dimensions
                   items:
                     - name: Financial dimensions
                       href: general-ledger/financial-dimensions.md
                     - name: Define financial dimensions
                       href: general-ledger/tasks/define-financial-dimensions.md
+                    - name: Highly variable dimensions
+                      href: cost-accounting/high-var-dimensions.md  
+                    - name: Check for highly variable dimensions
+                      href: cost-accounting/high-var-dimension-tool.md
                     - name: Account and dimension combinations
                       href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
                     - name: Financial dimension sets
@@ -1118,6 +1160,8 @@
                       href: budgeting/fiscal-calendars-fiscal-years-periods.md
                     - name: Configure ledgers
                       href: general-ledger/configure-ledger.md
+                    - name: Ledger and subledger overview
+                      href: general-ledger/ledger-subledger.md
                     - name: Change the accounting or reporting currency
                       href: /troubleshoot/dynamics-365/finance/general-ledger/add-change-accounting-reporting-currency
                     - name: Change or reassign a ledger calendar
@@ -1162,7 +1206,7 @@
                       href: general-ledger/pstg-prfles-ovrvw.md
                     - name: Recommended practices for posting profiles
                       href: general-ledger/recommended-practices-pstg-prfles.md
-                    - name: Accounts for automatic transations
+                    - name: Accounts for automatic transactions
                       href: general-ledger/accounts-for-auto-transactions.md
                     - name: Accounts payable posting
                       href: general-ledger/accts-payble-posting.md
@@ -1212,7 +1256,7 @@
                       href: general-ledger/tasks/post-periodic-journals.md
                     - name: Create and validate journals
                       href: general-ledger/tasks/create-validate-journals.md
-                    - name: Default financial dimensions on finanical journals
+                    - name: Default financial dimensions on financial journals
                       href: general-ledger/dimensions-default-values.md
                     - name: Journal posting failure due to imbalance
                       href: general-ledger/posting-fail-imbalance.md
@@ -1290,6 +1334,8 @@
                   href: general-ledger/ledger-settlements.md
                 - name: Partial ledger settlements
                   href: general-ledger/ledger-settlements-partial.md
+                - name: Out of balance ledger settlements
+                  href: general-ledger/ledger-settlement-out-balance.md
                 - name: Awareness between ledger settlement and year-end close
                   items:
                     - name: Awareness between ledger settlement and year-end close
@@ -1316,6 +1362,14 @@
                   href: general-ledger/ledger-allocation-rules.md
                 - name: Journalize posted journal entries
                   href: general-ledger/tasks/journalize-posted-journal-entries.md
+                - name: Account reconcilication agent (Preview)
+                  items:
+                    - name: Account reconciliation agent overview
+                      href: general-ledger/acct-rec-agent.md
+                    - name: Set up and configure the Account reconciliation agent 
+                      href: general-ledger/configure-acct-recon-agent.md
+                    - name: Account reconciliation workspace
+                      href: general-ledger/account-reconciliation.md
             - name: Consolidations and eliminations
               items:
                 - name: Consolidation and elimination overview
@@ -1428,6 +1482,8 @@
                   href: finance-insights/enable-budget-proposal.md
                 - name: Create data integrator project
                   href: finance-insights/create-data-integrate-project.md
+                - name: Tables used by Customer payment predictions and cash flow forecast
+                  href: finance-insights/tables-detail.md
                 - name: Refine and improve your predictions
                   items:
                     - name: Results of machine learning models
@@ -1596,38 +1652,6 @@
                       href: localizations/global/workspace/gsw-upload-er-config.md
                     - name: Create a Dataverse solution using upload into repository
                       href: localizations/global/workspace/gsw-upload-into-repository.md
-                - name: Regulatory configuration service (RCS)
-                  items:
-                    - name: Regulatory configuration service (RCS) overview
-                      href: localizations/global/rcs-overview.md?context=/dynamics365/context/finance
-                    - name: Regulatory configuration service (RCS) - Globalization features
-                      href: localizations/global/rcs-globalization-feature.md?context=/dynamics365/context/finance
-                    - name: Create ER configurations in Regulatory configuration service (RCS) and upload to the Global repository
-                      href: localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/finance
-                    - name: Regulatory Configuration Service (RCS) - Delete an RCS environment
-                      href: localizations/dev-itpro/rcs-delete-environment.md
-                    - name: Regulatory Configuration Service (RCS) – Lifecycle Services storage deprecation
-                      href: localizations/global/rcs-lcs-repo-dep-faq.md?context=/dynamics365/context/finance
-                    - name: Download ER configurations to Finance
-                      items:
-                        - name: Download configurations from RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?context=/dynamics365/context/finance
-                        - name: Import configurations from RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/finance
-                    - name: Global repository (GR)
-                      items:
-                        - name: Import configurations from GR
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=/dynamics365/context/finance
-                        - name: Import updated versions of ER configurations
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/finance
-                        - name: Enhanced filtering to find configurations in GR
-                          href: localizations/global/enhanced-filtering-global-repo.md?context=/dynamics365/context/finance
-                        - name: Upload configurations to GR
-                          href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/finance
-                        - name: Share configurations in GR
-                          href: localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/finance
-                        - name: Discontinue configurations in the RCS Global repository
-                          href: localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/finance
                 - name: Electronic Invoicing
                   items:
                     - name: Electronic Invoicing overview
@@ -1653,7 +1677,7 @@
                             - name: Configure a SharePoint connection
                               href: localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
                             - name: Create Azure resources using Azure PowerShell or ARM templates
-                              href: localizations/global/e-invoicing-set-up-azure-resources-automation.md
+                              href: localizations/global/gs-e-invoicing-set-up-azure-resources.md
                     - name: Work with Globalization features
                       items:
                         - name: Work with Globalization features overview
@@ -1700,12 +1724,18 @@
                           href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
                         - name: Australia and New Zealand
                           href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/finance
+                        - name: Belgium
+                          href: localizations/belgium/emea-bel-e-invoices.md?context=/dynamics365/context/finance
                         - name: Chile
                           items:
                             - name: Get started with Electronic invoicing for Chile
                               href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
                             - name: Vendor electronic invoice import in Chile
                               href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
+                        - name: Colombia
+                          href: localizations/iberoamerica/ltm-colombia-electronic-invoice-configuration.md?context=/dynamics365/context/finance
+                        - name: Costa Rica
+                          href: localizations//iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/finance                        
                         - name: Denmark
                           href: localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/finance
                         - name: Egypt
@@ -1719,7 +1749,9 @@
                         - name: Malaysia
                           href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/finance
                         - name: Panama
-                          href: localizations//iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/finance                           
+                          href: localizations//iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/finance 
+                        - name: Paraguay
+                          href: localizations//iberoamerica/ltm-paraguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance                          
                         - name: Poland (preview)
                           href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
                         - name: Saudi Arabia
@@ -1730,76 +1762,10 @@
                               href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                             - name: Simplified electronic invoices in Commerce for Saudi Arabia
                               href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
+                        - name: Uruguay
+                          href: localizations//iberoamerica/ltm-uruguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
-                    - name: Work with Globalization features
-                      items:
-                        - name: Work with Globalization features overview
-                          href: localizations/global/e-invoicing-working-globalization-features.md?context=/dynamics365/context/finance
-                        - name: Import a feature from the Global repository
-                          href: localizations/global/e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/finance
-                        - name: Create a new Globalization feature
-                          href: localizations/global/e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/finance
-                        - name: Work with configurations
-                          href: localizations/global/e-invoicing-work-configurations.md
-                        - name: Work with feature setup
-                          href: localizations/global/e-invoicing-feature-setup.md?context=/dynamics365/context/finance
-                        - name: Complete, publish, and deploy a Globalization feature
-                          href: localizations/global/e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/finance
-                        - name: Share with other organizations
-                          href: localizations/global/e-invoicing-share-other-organizations.md?context=/dynamics365/context/finance
-                        - name: Usage management dashboard
-                          href: localizations/global/e-invoicing-usage-management-dashboard.md?context=/dynamics365/context/finance
-                        - name: Process incoming electronic documents
-                          items:
-                            - name: Processing incoming electronic documents
-                              href: localizations/global/e-invoicing-process-incoming-electronic-documents.md
-                            - name: Configure an email channel
-                              href: localizations/global/e-invoicing-configure-email.md?context=/dynamics365/context/finance
-                            - name: Configure an email channel for Office 365 Exchange Online
-                              href: localizations/global/e-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/finance
-                            - name: Configure a SharePoint channel
-                              href: localizations/global/e-invoicing-configure-sharepoint-channel.md
-                        - name: Electronic Invoicing service ISV last-mile connector
-                          href: localizations/global/e-invoicing-isv-connector.md
-                    - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
-                      items:
-                        - name: Activate and set up integration with Electronic Invoicing
-                          href: localizations/global/e-invoicing-activate-setup-integration.md?context=/dynamics365/context/finance
-                        - name: Set up Electronic Invoicing parameters
-                          href: localizations/global/e-invoicing-set-up-parameters.md?context=/dynamics365/context/finance
-                        - name: Work with Electronic Invoicing
-                          items:
-                            - name: Submit electronic documents to Electronic Invoicing
-                              href: localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
-                            - name: Work with the Electronic documents submission log
-                              href: localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/finance
-                            - name: Work with the Electronic documents receiving log
-                              href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
-                    - name: Country/region-specific scenarios
-                      items:
-                        - name: Availability of Electronic Invoicing features
-                          href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
-                        - name: Get started with Electronic Invoicing for Australia and New Zealand
-                          href: localizations/apac/apac-aus-nzl-electronic-invoices.md
-                        - name: Get started with Electronic invoicing for Denmark
-                          href: localizations/denmark/e-invoicing-dk-get-started.md
-                        - name: Get started with Electronic Invoicing for Egypt
-                          href: localizations/mea/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
-                        - name: Get started with Electronic Invoicing for Indonesia
-                          href: localizations/indonesia/e-invoicing-id-get-started.md?context=/dynamics365/context/finance
-                        - name: Get started with Electronic invoicing for Poland
-                          href: localizations/poland/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
-                        - name: Get started with Electronic invoicing for Saudi Arabia - Phase one
-                          href: localizations/mea/e-invoicing-sa-get-started-phase-one.md
-                        - name: Get started with Electronic invoicing for Saudi Arabia - Phase two
-                          href: localizations/mea/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
-                        - name: Electronic invoicing onboarding in Saudi Arabia
-                          href: localizations/mea/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
-                        - name: Setup direct integration of Italian FatturaPA with SDI
-                          href: localizations/italy/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/finance
-                    - name: Electronic Invoicing FAQ
-                      href: localizations/global/e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Tax Calculation
                   items:
                     - name: Tax Calculation overview
@@ -1818,7 +1784,7 @@
                           href: localizations/global/tax-calculation-import-export-feature.md
                         - name: Set up an environment for master data lookup
                           href: localizations/global/tax-service-set-up-environment-master-data-lookup.md?context=/dynamics365/context/finance
-                        - name: Sync the tax setup from the Tax Calculation Service to Finance
+                        - name: Sync the tax setup from the Tax Calculation feature to Finance
                           href: localizations/global/global-master-data-sync-tax-calculation-service-finance.md
                     - name: Determination
                       items:
@@ -1918,11 +1884,11 @@
                           href: localizations/tcs-troubleshooting-failed-access-tax-service.md
                         - name: Empty tax feature list in Tax calculation parameters
                           href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md
-                        - name: Tax code cannot be determined
+                        - name: Tax code can't be determined
                           href: localizations/tcs-troubleshooting-tax-code-cannot-be-determined.md
                         - name: No matching result could be found
                           href: localizations/tcs-troubleshooting-no-matching-result.md
-                        - name: Enable debug mode in the Tax Calculation service
+                        - name: Enable debug mode in the Tax Calculation
                           href: localizations/tcs-troubleshooting-enable-debug-mode.md
                     - name: Tax Calculation FAQ
                       href: localizations/global/global-tax-calcuation-service-faq.md?context=/dynamics365/context/finance
@@ -1992,6 +1958,8 @@
                       href: general-ledger/tasks/view-posted-sales-tax-transactions.md
                     - name: Print the Sales tax payment by code report
                       href: general-ledger/print-sales-tax-payment-by-code-report.md
+                    - name: Financial reason
+                      href: localizations/europe/emea-financial-reason.md
                     - name: Sales tax troubleshooting
                       items:
                         - name: Tax isn't calculated or the tax amount is zero
@@ -2062,14 +2030,16 @@
                       href: localizations/austria/emea-aut-packing-material-fee-calculation.md
                     - name: Cross-border services report
                       href: localizations/austria/emea-aut-cross-border-services-report.md
-                    - name: Austrian Intrastat
-                      href: localizations/austria/emea-aut-intrastat.md
                     - name: Purchase duties
                       href: localizations/austria/emea-aut-purchase-duties.md
-                    - name: VAT declaration
-                      href: localizations/austria/emea-aut-vat-declaration-austria.md
+                    - name: Austrian Intrastat
+                      href: localizations/austria/emea-aut-intrastat.md
                     - name: EU sales list
                       href: localizations/austria/emea-aut-eu-sales-list.md
+                    - name: VAT declaration U30
+                      href: localizations/austria/emea-aut-vat-declaration-austria.md
+                    - name: Generate an Annual sales tax report U1
+                      href: localizations/austria/emea-aut-annual-sales-tax-report.md
                 - name: Bahrain
                   items:
                     - name: Bahrain overview
@@ -2108,6 +2078,24 @@
                       href: localizations/belgium/emea-bel-intrastat.md
                     - name: VAT declaration
                       href: localizations/belgium/emea-bel-vat-declaration-belgium.md
+                - name: Bolivia
+                  items:
+                  - name: Bolivia overview
+                    href: localizations/iberoamerica/bolivia.md
+                  - name: Configure printing for Purchase Vat Books for Bolivia
+                    href: localizations/iberoamerica/ltm-Bolivia-purchase-vat-book.md
+                  - name: Configure sales and purchase invoices for Bolivia
+                    href: localizations/iberoamerica/ltm-configure-invoices-bolivia.md
+                  - name: Configure for Sales Vat Books for Bolivia
+                    href: localizations/iberoamerica/ltm-bolivia-sales-vat-book.md
+                  - name: Configure printing for sales bank books for Bolivia
+                    href: localizations/iberoamerica/ltm-sales-bank-book-report-Bolivia.md
+                  - name: Configure printing for Purchase Bank Books for Bolivia
+                    href: localizations/iberoamerica/ltm-purchase-bank-book-report-bolivia.md
+                  - name: Create customer and vendor records with an address in Bolivia
+                    href: localizations/iberoamerica/ltm-create-customer-and-vendor-bolivia.md
+                  - name: Set up a legal entity and tax information for Bolivia
+                    href: localizations/iberoamerica/ltm-set-up-legal-entity-and-tax-bolivia.md
                 - name: Brazil
                   items:
                     - name: Brazil overview
@@ -2400,6 +2388,14 @@
                       href: localizations/iberoamerica/ltm-configure-invoices-colombia.md
                     - name: Create customer and vendor records with an address in Colombia
                       href: localizations/iberoamerica/ltm-create-customer-vendor-colombia.md
+                    - name: Configure Colombian sales VAT book printing
+                      href: localizations/iberoamerica/ltm-Colombia-sales-vat-book.md
+                    - name: Configure Colombian purchase VAT book printing
+                      href: localizations/iberoamerica/ltm-Colombia-purchase-vat-book.md
+                    - name: Configure electronic invoice parameters for Colombia
+                      href: localizations/iberoamerica/ltm-colombia-configure-electronic-invoice.md
+                    - name: Configure printing for the Withholding certificate format for Colombia
+                      href: localizations/iberoamerica/ltm-colombia-withholding-certificate.md
                     - name: Format 1001 file for Colombia issue configuration
                       href: localizations/iberoamerica/ltm-Colombia-format-1001.md
                     - name: Format 1003 file for Colombia configuration
@@ -2422,7 +2418,7 @@
                   items:
                     - name: Costa Rica overview
                       href: localizations/iberoamerica/costa-rica.md
-                    - name: Set up electronic invoicing in Costa Rica
+                    - name: Get started with Electronic Invoicing for Costa Rica
                       href: localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md
                     - name: Configure electronic invoice parameters for Costa Rica
                       href: localizations/iberoamerica/ltm-costa-rica-electronic-invoice-conf.md
@@ -2514,6 +2510,50 @@
                       href: localizations/denmark/emea-dnk-saf-t.md
                     - name: Accounting basis (Regnskab Basis) electronic report for Denmark
                       href: localizations/denmark/emea-dnk-accounting-basis.md
+                - name: Dominican Republic
+                  items: 
+                  - name: Dominican Republic overview
+                    href: localizations/iberoamerica/ltm-Dominican_Republic_Overview.md
+                  - name: Configure sales and purchase invoices for Dominican Republic
+                    href: localizations/iberoamerica/ltm-configure-invoices-dominican-republic.md
+                  - name: Configure printing for Goods and Services Purchases Submission Form 606
+                    href: localizations/iberoamerica/ltm-Configure-Dom-PurchaseForm606.md
+                  - name: Configure printing for Goods and Services sales Submission Form 607
+                    href: localizations/iberoamerica/ltm-Configure-Dom-SalesForm607.md
+                  - name: Configure printing for Canceled Tax Receipts Submission Form 608
+                    href: localizations/iberoamerica/ltm-Configure-Dom-CancelledTaxReceiptsForm606.md
+                  - name: Create customer and vendor records with an address in Dominican Republic
+                    href: localizations/iberoamerica/ltm-create-customer-and-vendor-dominican-republic.md
+                  - name: Set up a legal entity and tax information for Dominican Republic
+                    href: localizations/iberoamerica/ltm-set-up-legal-entity-and-tax-dominican-republic.md
+                - name: Ecuador
+                  items:
+                  - name: Ecuador overview
+                    href: localizations/iberoamerica/ecuador.md
+                  - name: Configure Ecuadorian sales VAT book printing
+                    href: localizations/iberoamerica/ltm-Ecaudor-sales-vat-book.md
+                  - name: Configure Ecuadorian purchase payment methods printing
+                    href: localizations/iberoamerica/ltm-Ecuador-purchase-payment-methods.md
+                  - name: Configure Ecuadorian purchase refunds report printing
+                    href: localizations/iberoamerica/ltm-Ecuador-purchase-refunds-report.md
+                  - name: Configure Ecuadorian purchase VAT book details printing
+                    href: localizations/iberoamerica/ltm-Ecuador-purchase-vat-book-report.md
+                  - name: Configure Ecuadorian purchase withholding book printing
+                    href: localizations/iberoamerica/ltm-Ecuador-purchase-withholdings.md
+                  - name: Configure electronic invoice parameters for Ecuador
+                    href: localizations/iberoamerica/ltm-ecuador-conf-electronic-invoice.md
+                  - name: Configure printing for the Ecuador Sales book by establishment report
+                    href: localizations/iberoamerica/ltm-Ecuador-sales-book-establishment.md
+                  - name: Configure sales and purchase invoices for Ecuador
+                    href: localizations/iberoamerica/ltm-Configure-invoices-Ecuador.md
+                  - name: Configure Simplified transactional appendix (ATS) printing
+                    href: localizations/iberoamerica/ltm-Ecuador-ATS-report.md
+                  - name: Create customer and vendor records with an address in Ecuador
+                    href: localizations/iberoamerica/ltm-create-customer-and-vendor-Ecuador.md
+                  - name: Post Ecuadorian refund invoice transactions
+                    href: localizations/iberoamerica/ltm-Ecuadorian-refund-invoice.md
+                  - name: Set up a legal entity and tax information for Ecuador
+                    href: localizations/iberoamerica/ltm-Set-up-legal-entity-and-tax-Ecuador.md
                 - name: Egypt
                   items:
                     - name: Egypt overview
@@ -2694,14 +2734,12 @@
                           href: localizations/emea-date-vendor-vat-register.md
                     - name: View transactions on settlement
                       href: localizations/europe/emea-transactions-settlement-form.md
-                    - name: Financial reason
-                      href: localizations/europe/emea-financial-reason.md
                 - name: Finland
                   items:
                     - name: Finland overview
                       href: localizations/finland/finland.md
                     - name: Sales tax payment report for Finland
-                      href: localizations/norway/emea-fin-sales-tax-payment-report-finland.md
+                      href: localizations/finland/emea-fin-sales-tax-payment-report-finland.md
                     - name: Finnish Intrastat
                       href: localizations/finland/emea-fin-intrastat.md
                     - name: VAT declaration
@@ -2726,7 +2764,7 @@
                           href: localizations/france/emea-fra-titres-de-recette-public-sector.md
                         - name: Vendor invoice payment holds
                           href: localizations/france/emea-fra-vendor-invoice-payment-holds-public-sector.md
-                    - name: Approve and post draw bill of exchange
+                    - name: Draw up, approve, and post a bill of exchange
                       href: localizations/france/fr-00004-approve-post-draw-bill-exchange.md
                     - name: Chronological invoices vouchers
                       href: localizations/france/emea-fra-chronological-invoices-vouchers.md
@@ -2760,22 +2798,24 @@
                       href: localizations/france/fr-00003-naf-codes-siret-numbers.md
                     - name: Penalties for past due customer payments
                       href: localizations/france/emea-fra-apply-penalty-customer-payment-past-due.md
-                    - name: Post protest draw bill of exchange journal
+                    - name: Protest and post a bill of exchange journal
                       href: localizations/france/fr-00004-post-protest-draw-bill-exchange-journal.md
-                    - name: Post re-draw bill of exchange journal
+                    - name: Post a redraw bill of exchange journal
                       href: localizations/france/fr-00004-post-re-draw-bill-exchange-journal.md
                     - name: Print lump sum recovery text on a customer invoice
                       href: localizations/france/emea-fra-print-lump-sum-recovery-text.md
                     - name: RB/SL depreciation
                       href: localizations/france/emea-fra-rbsl-depreciation.md
-                    - name: Set up method of payment
+                    - name: Set up methods of payment
                       href: localizations/france/fr-00004-setup-method-payment.md
-                    - name: Update method of payment on customer
+                    - name: Update method of payment for a customer
                       href: localizations/france/fr-00004-update-method-payment-customer.md
                     - name: VAT declaration
                       href: localizations/france/emea-fra-VAT-declaration-preview-France.md
                     - name: DAS-2 report
                       href: localizations/france/emea-fra-das2-report.md
+                    - name: Reporting on payment deadlines for customer and vendor invoices
+                      href: localizations/france/emea-fra-reporting-on-payment-deadlines.md
                 - name: Germany
                   items:
                     - name: Germany overview
@@ -2871,7 +2911,7 @@
                     - name: Scope of the Indian localizations
                       href: localizations/india/apac-ind-scope.md
                     - name: Audit trail and edit logs for accounting software
-                      href: localizations/india/apac-ind-audit-trail-edit-logs-accounting-software.md
+                      href: localizations/india/india-audit-trail-edit.md
                     - name: Electronic invoices in India
                       href: localizations/india/apac-ind-e-invoices.md
                     - name: Indirect taxes
@@ -2984,7 +3024,7 @@
                                       href: localizations/india/apac-ind-GST-sell-registered-customer.md
                                     - name: Free text invoices
                                       href: localizations/india/apac-ind-GST-free-text-invoices.md
-                                    - name: Sales of taxable goods where there is a reverse charge
+                                    - name: Sales of taxable goods where there's a reverse charge
                                       href: localizations/india/apac-ind-GST-sell-taxable-goods-reverse-charge.md
                                     - name: Sales of exempted items
                                       href: localizations/india/apac-ind-GST-sales-exempted-item.md
@@ -3496,72 +3536,84 @@
                   items:
                     - name: Latin America overview
                       href: localizations/iberoamerica/latam-overview.md
-                    - name: Latin America parameters
-                      href: localizations/iberoamerica/ltm-core-latam-parameters.md
-                    - name: Field list configuration for Latin America
-                      href: localizations/iberoamerica/ltm-core-field-master-lists.md
-                    - name: Taxpayer types for Latin America
-                      href: localizations/iberoamerica/ltm-core-taxpayer-type.md
-                    - name: Tax ID types for Latin America
-                      href: localizations/iberoamerica/ltm-core-tax-id-type.md
-                    - name: Tax application for Latin America
-                      href: localizations/iberoamerica/ltm-core-tax-application.md
-                    - name: Tax and legal attributes for Latin America
-                      href: localizations/iberoamerica/ltm-tax-legal-attributes.md
-                    - name: Document classes for Latin America
-                      href: localizations/iberoamerica/ltm-core-document-class.md
-                    - name: Document class types for Latin America
-                      href: localizations/iberoamerica/ltm-core-document-class-type.md
-                    - name: Document class letter for Latin America
-                      href: localizations/iberoamerica/ltm-core-document-class-letter.md
-                    - name: Document class sales point for Latin America
-                      href: localizations/iberoamerica/ltm-core-document-class-sales-point.md
-                    - name: Customer sets for Latin America
-                      href: localizations/iberoamerica/ltm-core-customers-set.md
-                    - name: Vendor set configuration
-                      href: localizations/iberoamerica/ltm-core-vendors-set.md
-                    - name: Address setup for Latin America
-                      href: localizations/iberoamerica/ltm-core-address-setup.md
-                    - name: Sales point prefixes for Latin America
-                      href: localizations/iberoamerica/ltm-core-sales-point-prefixes.md
-                    - name: Sales point relation for sales documents and remission
-                      href: localizations/iberoamerica/ltm-core-point-relation.md
-                    - name: Sales invoice posting for Latin America
-                      href: localizations/iberoamerica/ltm-core-sales-invoice-posting-latam.md
-                    - name: Purchase invoice posting for Latin America
-                      href: localizations/iberoamerica/ltm-core-purchase-invoice-posting.md
-                    - name: Inventory transfer order for posting for Latin America
-                      href: localizations/iberoamerica/ltm-core-transfer-order-posting.md
-                    - name: Post bank expenses for Latin America
-                      href: localizations/iberoamerica/ltm-core-bank-expenses.md
-                    - name: Post packing slips for Latin America
-                      href: localizations/iberoamerica/ltm-core-packing-slip-posting.md
-                    - name: Configure journal names for Latin America
-                      href: localizations/iberoamerica/ltm-core-journal-name-configuration.md
-                    - name: Value query for Latin America
-                      href: localizations/iberoamerica/ltm-core-value-query.md
-                    - name: Configure electronic document references
-                      href: localizations/iberoamerica/ltm-electronic-doc-references.md
-                    - name: VAT book printing configuration
-                      href: localizations/iberoamerica/ltm-vat-book.md
-                    - name: Print payment checks
-                      href: localizations/iberoamerica/ltm-check-printing.md
-                    - name: Configure the layout of a printed invoice for Latin America
-                      href: localizations/iberoamerica/ltm-invoice-layout-print.md
-                    - name: Print a Ledger Posting report for LATAM
-                      href: localizations/iberoamerica/ltm-ledger-posting-report.md
-                    - name: SSRS Reports/Services references configuration for Latin America
-                      href: localizations/iberoamerica/ltm-ssrsreport-services.md
-                    - name: Printing configurations for General Ledger LATAM
-                      href: localizations/iberoamerica/ltm-general-ledger.md
-                    - name: Set up transaction posting for Latin America
-                      href: localizations/iberoamerica/ltm-post-transactions.md
-                    - name: Use LATAM functionality for checks
-                      href: localizations/iberoamerica/ltm-checks-in-latam.md
-                    - name: Use the LATAM extension in customer payments journals
-                      href: localizations/iberoamerica/ltm-latam-in-customer-payment.md
-                    - name: Use the LATAM extension in vendor payments journals
-                      href: localizations/iberoamerica/ltm-latam-in-vendor-payment.md
+                    - name: Latin America get started
+                      items:
+                      - name: Latin America parameters
+                        href: localizations/iberoamerica/ltm-core-latam-parameters.md
+                      - name: Set up transaction posting for Latin America
+                        href: localizations/iberoamerica/ltm-post-transactions.md
+                    - name: Tax and legal attributes
+                      items:
+                      - name: Tax and legal attributes for Latin America
+                        href: localizations/iberoamerica/ltm-tax-legal-attributes.md
+                      - name: Taxpayer types for Latin America
+                        href: localizations/iberoamerica/ltm-core-taxpayer-type.md
+                      - name: Tax ID types for Latin America
+                        href: localizations/iberoamerica/ltm-core-tax-id-type.md
+                      - name: Address setup for Latin America
+                        href: localizations/iberoamerica/ltm-core-address-setup.md
+                      - name: Customer set for Latin America
+                        href: localizations/iberoamerica/ltm-core-customers-set.md
+                      - name: Vendor set configuration
+                        href: localizations/iberoamerica/ltm-core-vendors-set.md              
+                    - name: Document classification configurations
+                      items:
+                      - name: Document class letter for Latin America
+                        href: localizations/iberoamerica/ltm-core-document-class-letter.md
+                      - name: Document class types for Latin America
+                        href: localizations/iberoamerica/ltm-core-document-class-type.md
+                      - name: Document classes for Latin America
+                        href: localizations/iberoamerica/ltm-core-document-class.md
+                      - name: Document class sales point for Latin America
+                        href: localizations/iberoamerica/ltm-core-document-class-sales-point.md
+                      - name: Sales Authorization Code for Latin America
+                        href: localizations/iberoamerica/ltm-core-sales-ca.md
+                      - name: Sales point prefixes for Latin America
+                        href: localizations/iberoamerica/ltm-core-sales-point-prefixes.md
+                      - name: Sales point relation for sales documents and remission
+                        href: localizations/iberoamerica/ltm-core-point-relation.md
+                      - name: Field list configuration for Latin America
+                        href: localizations/iberoamerica/ltm-core-field-master-lists.md
+                      - name: Configure journal names for Latin America
+                        href: localizations/iberoamerica/ltm-core-journal-name-configuration.md
+                      - name: Configure electronic document references
+                        href: localizations/iberoamerica/ltm-electronic-doc-references.md
+                    - name: Latam extension in transactions
+                      items:
+                      - name: Sales invoice posting for Latin America
+                        href: localizations/iberoamerica/ltm-core-sales-invoice-posting-latam.md
+                      - name: Purchase invoice posting for Latin America
+                        href: localizations/iberoamerica/ltm-core-purchase-invoice-posting.md
+                      - name: Inventory transfer order for posting for Latin America
+                        href: localizations/iberoamerica/ltm-core-transfer-order-posting.md
+                      - name: Post bank expenses for Latin America
+                        href: localizations/iberoamerica/ltm-core-bank-expenses.md
+                      - name: Post packing slips for Latin America
+                        href: localizations/iberoamerica/ltm-core-packing-slip-posting.md
+                      - name: Use LATAM functionality for checks
+                        href: localizations/iberoamerica/ltm-checks-in-latam.md
+                      - name: Use the LATAM extension in customer payments journals
+                        href: localizations/iberoamerica/ltm-latam-in-customer-payment.md
+                      - name: Use the LATAM extension in vendor payments journals
+                        href: localizations/iberoamerica/ltm-latam-in-vendor-payment.md
+                    - name: Inquiries and Reports
+                      items:
+                      - name: Value query for Latin America
+                        href: localizations/iberoamerica/ltm-core-value-query.md
+                      - name: Print payment checks
+                        href: localizations/iberoamerica/ltm-check-printing.md
+                      - name: Configure the layout of a printed invoice for Latin America
+                        href: localizations/iberoamerica/ltm-invoice-layout-print.md
+                      - name: SSRS Reports/Services references configuration for Latin America
+                        href: localizations/iberoamerica/ltm-ssrsreport-services.md                  
+                      - name: Printing configurations for General Ledger LATAM
+                        href: localizations/iberoamerica/ltm-general-ledger.md                    
+                      - name: Print a Ledger Posting report for LATAM
+                        href: localizations/iberoamerica/ltm-ledger-posting-report.md
+                      - name: VAT book printing configuration
+                        href: localizations/iberoamerica/ltm-vat-book.md
+                      - name: Tax application for Latin America
+                        href: localizations/iberoamerica/ltm-core-tax-application.md                                    
                 - name: Latvia
                   items:
                     - name: Latvia overview
@@ -3732,6 +3784,8 @@
                       href: localizations/norway/emea-nor-satndard-audit-file-for-tax.md
                     - name: Customer electronic invoices in Norway
                       href: localizations/norway/emea-nor-e-invoices.md
+                    - name: Payments to self-employed persons - RF-1321
+                      href: localizations/norway/emea-nor-payments-to-self-employed-persons.md
                 - name: Oman
                   items:
                     - name: Oman overview
@@ -3758,10 +3812,50 @@
                       href: localizations/iberoamerica/paraguay.md
                     - name: Configure sales and purchase invoices for Paraguay
                       href: localizations/iberoamerica/ltm-configure-invoices-paraguay.md
+                    - name: Configure electronic invoice parameters for Paraguay
+                      href: localizations/iberoamerica/ltm-paraguay-conf-electronic-invoice.md
                     - name: Create customer and vendor records with an address in Paraguay
                       href: localizations/iberoamerica/ltm-create-customer-vendor-paraguay.md
                     - name: Set up a legal entity and tax information for Paraguay
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-paraguay.md
+                - name: Peru
+                  items:
+                    - name: Perú overview
+                      href: localizations/iberoamerica/ltm-Peru_Overview.md
+                    - name: Configure printing for Cash and Banks Ledger reports for Peru
+                      href: localizations/iberoamerica/ltm-Peru-cash-bank-report.md
+                    - name: Configure printing for the Electronic Purchase Register (RCE) for purchases domiciled in Peru
+                      href: localizations/iberoamerica/ltm-Peru-RCE-domiciled-report.md
+                    - name: Configure printing for the Electronic Purchase Register (RCE) for purchases not domiciled in Peru
+                      href: localizations/iberoamerica/ltm-Peru-RCE-not-domiciled-report.md
+                    - name: Configure printing for the IGV withholding tax report for Peru
+                      href: localizations/iberoamerica/ltm-Peru-withholding-file.md
+                    - name: Configure printing for the simplified annex of the Electronic Purchase Register (RCE) for Peru
+                      href: localizations/iberoamerica/ltm-Peru-RCE-simplified-report.md
+                    - name: Configure printing for the Electronic Sales and Income Registry (RVIE) report for Peru
+                      href: localizations/iberoamerica/ltm-Peru-RVIE-report.md
+                    - name: Configure printing for the simplified Electronic Sales and Income Registry (RVIE) report for Peru
+                      href: localizations/iberoamerica/ltm-Peru-RVIE-simplified-report.md
+                    - name: Configure sales and purchase invoices for Peru
+                      href: localizations/iberoamerica/ltm-Configure-invoices-Peru.md
+                    - name: Create customer and vendor records with an address in Peru
+                      href: localizations/iberoamerica/ltm-create-customer-and-vendor-Peru.md
+                    - name: Set up a legal entity and tax information for Peru
+                      href: localizations/iberoamerica/ltm-Set-up-legal-entity-and-tax-Peru.md
+                    - name: Set up and generate an electronic accounting plan for Peru
+                      href: localizations/iberoamerica/ltm-Peru-accounting-plan.md
+                    - name: Set up and generate an electronic general ledger report for Peru
+                      href: localizations/iberoamerica/ltm-Peru-electronic-general-ledger.md
+                    - name: Set up and generate an electronic ledger posting report for Peru
+                      href: localizations/iberoamerica/ltm-Peru-electronic-ledger-posting.md
+                    - name: Set up and generate a printed ledger posting report for Peru
+                      href: localizations/iberoamerica/ltm-Peru-printed-ledger-posting-report.md
+                    - name: Set up and generate a printed general ledger report for Peru
+                      href: localizations/iberoamerica/ltm-Peru-printed-general-ledger.md
+                    - name: Set up and generate the Annual DAOT purchases report for Peru
+                      href: localizations/iberoamerica/ltm-Peru-daot-purchase-report.md
+                    - name: Set up and generate the Annual DAOT with Third Parties sales report for Peru
+                      href: localizations/iberoamerica/ltm-Peru-daot-sales-report.md
                 - name: Poland
                   items:
                     - name: Poland overview
@@ -3790,16 +3884,6 @@
                       href: localizations/poland/emea-pol-intrastat.md
                     - name: Set up number sequences by warehouse
                       href: localizations/poland/emea-pol-number-sequence-warehouses.md
-                    - name: Standard audit file
-                      href: localizations/poland/emea-pol-standard-audit-file-saf.md
-                    - name: Tax interest and free-hand interest
-                      href: localizations/poland/emea-pol-interest-calculation.md
-                    - name: Turnover balances statement
-                      href: localizations/poland/emea-pol-turnover-balances-statement.md
-                    - name: Split AP/AR exchange difference
-                      href: localizations/poland/emea-pol-split-ap-ar-exchange-difference.md
-                    - name: Set up and use PKWiU codes for Poland
-                      href: localizations/poland/emea-pol-pkwiu-code.md
                     - name: VAT declaration with registers (JPK_V7, VDEK)
                       items:
                         - name: VAT declaration with registers (JPK_V7, VDEK) overview
@@ -3810,6 +3894,38 @@
                           href: localizations/poland/emea-pol-vdek-reporting.md
                         - name: Details of specific business scenarios in the JPK-V7 report
                           href: localizations/poland/emea-pol-vdek-scenarios.md
+                    - name: SAF Accounting Books Income Tax - JPK_KR_PD
+                      items:
+                        - name: SAF Accounting Books Income Tax - JPK_KR_PD overview
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-pd.md
+                        - name: Prepare for JPK_KR_PD reporting
+                          href: localizations/poland/emea-pol-saf-pd-setup.md
+                        - name: JPK_KR_PD reporting
+                          href: localizations/poland/emea-pol-saf-pd-reporting.md
+                        - name: Implementation details of JPK_KR_PD reporting
+                          href: localizations/poland/emea-pol-saf-pd-implementation-details.md
+                    - name: Standard audit file (JPK)
+                      items:
+                        - name: Standard audit file (JPK) overview
+                          href: localizations/poland/emea-pol-standard-audit-file-saf.md
+                        - name: SAF Bank statement file - JPK_KR
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-kr.md
+                        - name: SAF Bank statement file - JPK_WB
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-wb.md
+                        - name: SAF Inventory file - JPK_MAG
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-mag.md
+                        - name: SAF VAT sales and purchase register - JPK_VAT
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-vat.md
+                        - name: SAF VAT invoices file - JPK_FA
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-fa.md
+                    - name: Tax interest and free-hand interest
+                      href: localizations/poland/emea-pol-interest-calculation.md
+                    - name: Turnover balances statement
+                      href: localizations/poland/emea-pol-turnover-balances-statement.md
+                    - name: Split AP/AR exchange difference
+                      href: localizations/poland/emea-pol-split-ap-ar-exchange-difference.md
+                    - name: Set up and use PKWiU codes for Poland
+                      href: localizations/poland/emea-pol-pkwiu-code.md
                     - name: Payment terms in commercial transactions report
                       href: localizations/poland/emea-pol-payment-terms-report.md
                 - name: Qatar
@@ -4192,6 +4308,24 @@
                       href: localizations/thailand/apac-tha-sales-vat-report.md
                     - name: Withholding tax
                       href: localizations/thailand/apac-tha-withholding-tax.md
+                - name: Türkiye
+                  items:
+                    - name: Türkiye overview
+                      href: localizations/turkiye/turkiye.md
+                    - name: Set up a legal entity for Türkiye
+                      href: localizations/turkiye/emea-turkiye-set-up-legal-entity.md
+                    - name: Import currency exchange rates from Central Bank of the Republic of Türkiye (CBRT)
+                      href: general-ledger/import-currency-exchange-rates.md
+                    - name: Use continuous serial numbering of packing slips and invoices
+                      href: localizations/turkiye/emea-tur-serial-numbering.md
+                    - name: Use Exchange difference invoicing
+                      href: localizations/turkiye/emea-tur-exchange-difference-invoicing.md
+                    - name: Use currency conversion
+                      href: localizations/turkiye/emea-tur-currency-conversion.md
+                    - name: Use checks and promissory notes
+                      href: localizations/turkiye/emea-turkiye-checks-and-promissory-notes.md                      
+                    - name: Generate e-Ledger
+                      href: localizations/turkiye/emea-tur-e-ledger.md
                 - name: United Arab Emirates (UAE)
                   items:
                     - name: United Arab Emirates (UAE) overview
@@ -4242,6 +4376,8 @@
                           href: localizations/united-kingdom/emea-gbr-mtd-vat-integration-declaration.md
                         - name: Generate a VAT declaration in paper format (VAT 100 report)
                           href: localizations/united-kingdom/emea-gbr-mtd-vat-integration-vat100.md
+                        - name: Security enhancements in UK MTD VAT integration
+                          href: localizations/united-kingdom/emea-gbr-mtd-vat-security-enhancements.md
                     - name: Statistics on payment practices report
                       href: localizations/united-kingdom/emea-gbr-statistics-on-payment-practices-report.md
                     - name: EU sales list
@@ -4264,8 +4400,40 @@
                       href: localizations/iberoamerica/ltm-configure-invoices-uruguay.md
                     - name: Create customer and vendor records with an address in Uruguay
                       href: localizations/iberoamerica/ltm-create-customer-vendor-uruguay.md
+                    - name: Get started with Electronic invoicing for Uruguay
+                      href: localizations/iberoamerica/ltm-uruguay-electronic-invoice-configuration.md
                     - name: Set up a legal entity and tax information for Uruguay
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay.md
+                - name: Venezuela
+                  items:
+                  - name: Venezuela overview
+                    href: localizations/iberoamerica/venezuela.md
+                  - name: Configure printing for the annual ISLR withholding certificate for Venezuela
+                    href: localizations/iberoamerica/ltm-venezuela-ISLR-Annual-withholding-certificate.md
+                  - name: Configure printing for the Declaration Reports Relationship Sales Book for Venezuela
+                    href: localizations/iberoamerica/Declaration-Report-Relationship-Sales-Book.md
+                  - name: Configure printing for the Declaration Reports Sales VAT Book for Venezuela
+                    href: localizations/iberoamerica/Declaration-Report-Sales-VAT-Book.md
+                  - name: Configure printing for the ISRL Withholding report for Venezuela
+                    href: localizations/iberoamerica/ltm-Venezuela-file-export-ISRL-withholdings.md
+                  - name: Printing configuration for the ISLR withholding certificate for Venezuela
+                    href: localizations/iberoamerica/ltm-venezuela-ISLR-withholding-certificate.md
+                  - name: Configure printing for the Printed General Ledger for Venezuela
+                    href: localizations/iberoamerica/ltm-venezuela-printed-general-ledger.md
+                  - name: Configure printing for Relationship purchases Book reports for Venezuela
+                    href: localizations/iberoamerica/ltm-Declaration-Report-Relationship-Purchase-Book.md
+                  - name: Configure printing for the VAT withholding certificate for Venezuela
+                    href: localizations/iberoamerica/ltm-venezuela-VAT-withholding-certificate.md
+                  - name: Configure printing for the VAT Withholding report for Venezuela
+                    href: localizations/iberoamerica/ltm-Venezuela-file-export-VAT-withholdings.md
+                  - name: Configure printing for Venezuelan Purchase VAT book details
+                    href: localizations/iberoamerica/Declaration-Report-Purchase-VAT-Book.md
+                  - name: Configure sales and purchase invoices for Venezuela
+                    href: localizations/iberoamerica/ltm-configure-invoices-venezuela.md
+                  - name: Create customer and vendor records with an address in Venezuela
+                    href: localizations/iberoamerica/ltm-create-customer-and-vendor-venezuela.md
+                  - name: Set up a legal entity and tax information for Venezuela
+                    href: localizations/iberoamerica/ltm-ven-set-up-legal-entity.md
         - name: Reporting and Power BI integrations
           items:
             - name: Reporting and analytics with Power BI
@@ -4421,6 +4589,8 @@
           items:
             - name: Business performance analytics
               href: business-performance-analytics/business-performance-analytics-home-page.md
+            - name: Business performance analytics release notes
+              href:  business-performance-analytics/bpa-release-notes.md
             - name: Setup and administration
               items: 
                 - name: Configure business performance analytics
@@ -4429,6 +4599,8 @@
                   href: business-performance-analytics/install-bpa.md
                 - name: Configure security in business performance analytics
                   href: business-performance-analytics/set-up-security.md
+                - name: Custom report import, export, and migration
+                  href: business-performance-analytics/custom-reports.md
             - name: Key concepts in business performance analytics
               items:
                 - name: Business performance analytics data model
@@ -4471,18 +4643,34 @@
               href: business-performance-planning/install-excel-add.md
             - name: Security
               href: business-performance-planning/bpp-security.md
+            - name: Generative help and guidance in Business performance planning
+              href: business-performance-planning/bpp-help-rai.md            
             - name: Dimensions
               items:
                 - name: Creating and maintaining dimensions
-                  href: business-performance-planning/Dimensions.md
+                  href: business-performance-planning/Dimensions.md                 
                 - name: Load data using dataflows
                   href: business-performance-planning/load-data-dataflows.md
+                - name: Audit dimensions
+                  items:
+                    - name: Audit dimensions
+                      href: business-performance-planning/dimensions-audit.md
             - name: Cubes
               items:
                 - name: Creating cubes
                   href: business-performance-planning/create-cubes.md
+                - name: Custom drivers
+                  href: business-performance-planning/custom-drivers.md
+                - name: Create calculated columns
+                  href: business-performance-planning/calculated-columns.md
                 - name: Load data using dataflows
                   href: business-performance-planning/load-data-dataflows.md
+                - name: Import and export cubes and dimensions
+                  href: business-performance-planning/bpp-cubes-dim.md
+                - name: Audit cubes
+                  items:
+                   - name: Audit cubes
+                     href: business-performance-planning/cube-audit.md
             - name: Power BI Visuals
               items:
                 - name: Overview
@@ -4549,7 +4737,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?context=/dynamics365/context/finance
                     - name: Upgrade your format by adopting a new base version of that format
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?context=/dynamics365/context/finance
-            - name: Supported data souce types for ER components
+            - name: Supported data source types for ER components
               href: ../fin-ops-core/dev-itpro/analytics/er-data-sources.md
             - name: Formula designers in ER
               items:
@@ -4935,30 +5123,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?context=/dynamics365/context/finance
                     - name: Import configurations (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?context=/dynamics365/context/finance
-                - name: Regulatory configuration service (RCS)
-                  items:
-                    - name: Regulatory configuration service (RCS) overview
-                      href: localizations/global/rcs-overview.md?context=/dynamics365/context/finance
-                    - name: Download ER configurations to Finance
-                      items:
-                        - name: Download configurations from RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?context=/dynamics365/context/finance
-                        - name: Import configurations from RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/finance
-                    - name: Global repository (GR)
-                      items:
-                        - name: Import configurations from GR
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=/dynamics365/context/finance
-                        - name: Import updated versions of ER configurations
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/finance
-                        - name: Enhanced filtering to find configurations in GR
-                          href: localizations/global/enhanced-filtering-global-repo.md?context=/dynamics365/context/finance
-                        - name: Upload configurations to GR
-                          href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/finance
-                        - name: Share configurations in GR
-                          href: localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/finance
-                        - name: Discontinue configurations in the RCS Global repository
-                          href: localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/finance
             - name: Quick start guides
               items:
                 - name: Adjust an ER format to generate a custom electronic document
@@ -5187,8 +5351,6 @@
                   href: ../fin-ops-core/fin-ops/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Cost controlling
                   href: cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/finance
-                - name: Expense management
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/finance/toc.json
                 - name: Inventory on-hand
                   href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Invoice approvals
@@ -5495,6 +5657,8 @@
       items:
         - name: Overview
           href: ../finance/transparency-note.md
+        - name: Set up Agent management (production ready preview)
+          href: ../fin-ops-core/fin-ops/copilot/agent-mgmt.md
         - name: Collections coordinator summary FAQ
           href: accounts-receivable/collections-coordinator-summary-faq.md
         - name: Customer page summary FAQ
@@ -5503,6 +5667,8 @@
           href: ../fin-ops-core/fin-ops/copilot/workflow-history-summary-faq.md
         - name: Generative help and guidance in Business performance analytics FAQ
           href: business-performance-analytics/responsible-ai-faq.md  
+        - name: Generative help and guidance in Business performance planning FAQ
+          href: business-performance-planning/resp-ai-faq-bpp.md
     - name: Development and administration for finance and operations apps
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management

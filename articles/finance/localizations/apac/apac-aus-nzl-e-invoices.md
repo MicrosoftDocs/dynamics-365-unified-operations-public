@@ -35,7 +35,6 @@ Before you complete the tasks in this article, the following prerequisites must 
 
 > [!NOTE]
 > The ER formats are based on the corresponding **Peppol** format configurations. Those format configurations, in turn, are based on the **UBL** format configurations that use the **Invoice model** configuration and the **Invoice model mapping** configuration. All required additional configurations are automatically imported.
-
 ## Configure parameters
 
 ### Reference the imported ER format configurations
@@ -67,7 +66,6 @@ Before you complete the tasks in this article, the following prerequisites must 
 
     > [!NOTE]
     > All available contact persons must already be defined for the selected customer.
-
 ### Configure units of measure
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
@@ -77,7 +75,6 @@ Before you complete the tasks in this article, the following prerequisites must 
 
     > [!NOTE]
     > For scenarios where no specific units of measure are assumed, the default value **EA** (each) is used.
-
 ### Configure sales tax codes
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.

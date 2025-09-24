@@ -1,12 +1,14 @@
 ---
 title: Cost transaction entities
 description: Learn about cost transaction entities, which enable the value of a cost split among the contents of a cost area through the selection of an apportionment method.
-author: lisascholz91
-ms.author: lisascholz
-ms.topic: article
-ms.date: 05/27/2022
+author: prasungoel 
+ms.author: prasungoel 
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 02/12/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Cost transaction entities
@@ -21,11 +23,11 @@ Landed cost enables the value of a cost to be split among the contents of a cost
 
 When a cost is created from an external source such as a freight forwarder, that external source can't specify the preferred method for apportioning the cost value. The apportionment mapping defines the default apportionment method for each cost type code. The apportionment mapping table is accessed from the **Apportionment mapping** page in Microsoft Dynamics 365 Supply Chain Management (**Landed Cost \> Costing setup \> Apportionment mapping**).
 
-If a mapping combination has been defined, and a cost that matches the cost type code is created by using a cost transaction entity, the mapped apportionment method will be used instead of any value that has been provided to the entity.
+If a mapping combination has been defined, and a cost that matches the cost type code is created by using a cost transaction entity, the mapped apportionment method is used instead of any value was provided to the entity.
 
-If no value is present in the mapping table, but a value has been provided to the entity, the provided value will be used.
+If no value is present in the mapping table, but a value has been provided to the entity, the provided value is used.
 
-If no value exists in either the mapping table or the record that has been submitted to the entity, creation will fail.
+If no value exists in either the mapping table or the record that was submitted to the entity, creation fails.
 
 ### Apportionment mapping (ITMApportionmentMapping)
 

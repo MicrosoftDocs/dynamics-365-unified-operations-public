@@ -5,7 +5,7 @@ title: Configure Dataverse virtual tables
 description: This article shows how to configure, generate, update existing virtual tables, and analyze generated and available tables for Dynamics 365 Human Resources. 
 author: twheeloc
 ms.date: 02/21/2023
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: CDSIntegrationAdministration
@@ -20,6 +20,7 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
+ms.custom: sfi-image-nochange
 ---
 
 # Configure Dataverse virtual tables
@@ -150,8 +151,6 @@ The next step is to configure the virtual table data source in the Power Apps en
    - **Microsoft Entra Application ID**: The application (client) ID created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
    - **Microsoft Entra Application Secret**: The client secret created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
-
-   ![Microsoft HR Data Source.](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
 
 9. Select **Save & Close**.
 

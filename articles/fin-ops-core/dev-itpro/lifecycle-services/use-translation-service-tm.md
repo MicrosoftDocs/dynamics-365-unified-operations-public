@@ -12,11 +12,13 @@ ms.search.validFrom: 2018-03-27
 ms.search.form: 
 ms.dyn365.ops.version: AX 7.3.0
 ms.assetid: 
+ms.custom: sfi-image-nochange
 ---
 
 # Translation memory files
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE[dts-deprecation](../../fin-ops/includes/dts-deprecation.md)]
 
 Microsoft Dynamics 365 Translation Service (DTS) uses a bilingual XML Localization Interchange File Format (XLIFF) file to store pairs of source languages and target languages. Because XLIFF is based on XML, you can open XLIFF files in any text editor. However, we recommend that you use XLIFF editors that are specifically designed to work with this format. For example, you can use the free Microsoft Multilingual Editor that is available in the [Multilingual App Toolkit (MAT)](https://developer.microsoft.com/windows/develop/multilingual-app-toolkit).
 

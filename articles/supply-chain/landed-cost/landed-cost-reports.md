@@ -1,13 +1,14 @@
 ---
 title: Landed cost reports
 description: Learn how to find and use the various types of reports that are available for the Landed cost module, including a step-by-step process.
-author: lisascholz91
-ms.author: lisascholz
-ms.topic: article
-ms.date: 02/01/2021
-ms.custom:
+author: prasungoel 
+ms.author: prasungoel 
 ms.reviewer: kamaybac
 ms.search.form: SysOperationTemplateForm
+ms.topic: how-to
+ms.date: 02/12/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Landed cost reports

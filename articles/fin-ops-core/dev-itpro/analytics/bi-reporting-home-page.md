@@ -3,7 +3,7 @@ title: Reporting and analytics with Power BI home page
 description: Learn about resources that you can use to learn more about the business intelligence and reporting tools that are available.
 author: sericks007
 ms.author: sericks
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/02/2019
 ms.reviewer: johnmichalak
 ms.collection: get-started

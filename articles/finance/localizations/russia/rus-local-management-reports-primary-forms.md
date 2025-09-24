@@ -1,16 +1,15 @@
 ---
 title: Advance holders reports
-description: Learn about the Advance holder reports that are available for Russia, including an outline on Advance holder blaance reports and a table that defines fields.
+description: Learn about advance holder reports that are available for Russia in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: conceptual
+ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 08/29/2025
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
 ---
 
 # Advance holders reports
@@ -25,7 +24,7 @@ The following reports are available for advance holders in Russia.
 - Advance report 
 - Advance holder turnover register
 
-These reports can be accessed by going to **Accounts payable** \> **Inquiries and reports** \> **Advance holders inquiries and reports**.
+To access these reports, in Dynamics 365 Finance, go to **Accounts payable** \> **Inquiries and reports** \> **Advance holders inquiries and reports**.
 
 ## Advance holder balance report 
 

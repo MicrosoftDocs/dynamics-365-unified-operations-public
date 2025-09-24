@@ -5,7 +5,7 @@ title: Recruiting request position
 description: This article describes the Recruiting request position entity for Dynamics 365 Human Resources.
 author: jaredha
 ms.date: 07/09/2024
-ms.topic: article
+ms.topic: concept-article
 # optional metadata
 
 # ms.search.form: 

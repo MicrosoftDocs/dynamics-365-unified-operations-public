@@ -3,7 +3,7 @@ title: Create a free text invoice
 description: Learn how to create free text invoices, including a step-by-step process that outlines creating a free text invoice, including an overview of copy lines. 
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/15/2022
 ms.custom:
 ms.reviewer: twheeloc    

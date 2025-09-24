@@ -1,8 +1,8 @@
 ---
 title: Configure Supply risk assessment
 description: Learn how to enable and set up Supply risk assessment, including prerequisites and an outline and process on configuring thresholds.
-author: cabeln
-ms.author: cabeln
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to 
 ms.date: 05/22/2024 
 ms.custom: bap-template
@@ -15,13 +15,6 @@ ms.search.form:
 [!include [banner](../includes/banner.md)]
 
 This article describes how to enable and set up Supply risk assessment.
-
-## Prerequisites
-
-To use supply risk assessment, the following prerequisites must be in place for your system:
-
-- **Supply Chain Management version** – You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.31 or later.
-- **Feature management** – The feature that is named *Assess supply risks to prevent supply chain disruptions* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.36, this feature is turned on by default.
 
 ## Configure thresholds
 

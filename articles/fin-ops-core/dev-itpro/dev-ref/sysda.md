@@ -3,7 +3,7 @@ title: Access data by using the SysDa classes
 description: Learn how to create extensible queries and data access statements by using the SysDa application programming interface (API).
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/20/2021
 ms.reviewer: johnmichalak
 audience: Developer
@@ -132,18 +132,15 @@ It supports all 16 hints:
 The following examples show two ways to build a SysDaQueryObject.
 
 ```xpp
-<code>
 SysDaQueryObjectBuilder::from(exampleTable)
     .firstOnly()
     .innerJoin(exampleJoinedTable)
     .where(exampleTable, fieldStr(ExampleTable, ExampleJoinedTableExampleId)).isEqualTo(exampleJoinedTable, fieldStr(ExampleJoinedTable, ExampleId))
     .where(exampleTable, fieldStr(ExampleTable, ExampleNumber)).isEqualToLiteral(0)
     .toSysDaQueryObject();
-</code>
 ```
 
 ```xpp
-<code>
 var exampleTableQueryObject = new SysDaQueryObject(exampleTable);
 var exampleJoinedTableQueryObject = new SysDaQueryObject(exampleJoinedTable);
 exampleTableQueryObject.firstOnlyHint = SysDaFirstOnlyHint::FirstOnly1;
@@ -155,7 +152,6 @@ exampleJoinedTableQueryObject.whereClause(new SysDaAndExpression(
     new SysDaEqualsExpression(
         new SysDaFieldExpression(exampleTable, fieldStr(ExampleTable, ExampleNumber)),
         new SysDaValueExpression(0))));
-</code>
 ```
 
 Use SysDaQueryExpression to enable OR and the other expressions.
@@ -163,7 +159,6 @@ Use SysDaQueryExpression to enable OR and the other expressions.
 The following example builds a SysDaQueryObject using **OR**.
 
 ```xpp
-<code>
 SysDaQueryObjectBuilder::from(exampleTable)
     .wherever(new SysDaOrExpression(
         new SysDaEqualsExpression(
@@ -173,7 +168,6 @@ SysDaQueryObjectBuilder::from(exampleTable)
             new SysDaFieldExpression(exampleTable, fieldStr(ExampleTable, ExampleNumber)),
             new SysDaValueExpression(0))))
     .toSysDaQueryObject();
-</code>
 ```
 
 ## Update statement
@@ -207,7 +201,7 @@ uo.whereClause(new SysDaEqualsExpression(
 
 // Update the rows.
 ttsbegin;
-    new SysDaUpdateStatement().execute(uo);
+    new SysDaUpdateStatement().update(uo);
 ttscommit;
 
 // Verify the results of the update query.
@@ -266,7 +260,7 @@ insertObject.query(qe);
 
 var insertStmt = new SysDaInsertStatement();
 ttsbegin;
-    insertStmt.executeQuery(insertObject);
+    insertStmt.insert(insertObject);
 ttscommit;
 
 // Verify the results of the insert query.
@@ -315,10 +309,10 @@ var delobj = new SysDaDeleteObject(qe);
 // DELETE_FROM intField FROM TestTable WHERE ((TestTable.intField MOD 2) == 0)
 
 ttsbegin;
-    ds.executeQuery(delobj);
+    ds.delete(delobj);
 ttscommit;
 
-info("Number of rows after deletion: " + any2Str(t.RowCount()));
+info("Number of rows deleted: " + any2Str(t.RowCount()));
 ```
 
 ## Clauses

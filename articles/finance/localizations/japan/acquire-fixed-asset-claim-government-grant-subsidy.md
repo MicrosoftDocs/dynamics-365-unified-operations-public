@@ -1,64 +1,61 @@
 ---
 title: Acquire a fixed asset and claim for the government grant subsidy
-description: Learn about acquiring a fixed asset and then claiming it for a government grant, including an outline on claiming the fixed asset for a government grant.
+description: Learn how to acquire a fixed asset and claim it for a government grant in Japan with Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 04/10/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Acquire a fixed asset and claim for the government grant subsidy
 
 [!include [banner](../../includes/banner.md)]
 
-Use this task to walk through acquiring a fixed asset and then claiming it for a government grant.
+This article explains how to acquire a fixed asset and claim it for a government grant in Japan with Microsoft Dynamics 365 Finance.
 
+The following procedures walk you through how to acquire a fixed asset and claim it for a government grant. The procedures use the JPMF demo data.
 
-
-In order to complete this task, the Fixed Asset configuration key must be selected.
-
-
-
-This task uses the JPMF demo data.
-
+Before you complete the procedures, you must first select the **Fixed Asset** configuration key.
 
 ## Acquire the fixed asset
-1. Go to Fixed assets > Journal entries > Fixed assets journal.
-2. Click New.
-3. In the Name field, type a value.
-4. Click Lines.
-5. In the Date field, enter a date.
-6. In the Account field, specify the desired values.
-    * Select the fixed asset to acquire.  
-7. In the Book field, type a value.
-8. In the Debit field, enter a number.
-9. Click Save.
-10. Click Post.
+
+To acquire the fixed asset, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
+1. Select **New**.
+1. In the **Name** field, enter a name.
+1. Select **Lines**.
+1. In the **Date** field, enter a date.
+1. In the **Account** field, select the fixed asset to acquire.  
+1. In the **Book** field, enter a value.
+1. In the **Debit** field, enter a number.
+1. Select **Save**.
+1. Select **Post**.
 
 ## Claim the fixed asset for a government grant
-1. Go to Fixed assets > Journal entries > Fixed assets journal.
-2. Click New.
-3. In the Name field, type a value.
-4. Click Save.
-5. Click Lines.
-6. Click Proposals.
-7. Click Reduction entry proposal.
-8. Click Filter.
-    * You can filter to help find the fixed asset faster.  
-9. In the Criteria field, type a value.
-10. Click OK.
-11. Click OK.
-12. In the Date field, enter a date.
-    * Enter the accounting date on which to journalize the subsidy.  
-13. In the Credit field, enter a number.
-    * Enter the amount of the government grant.  
-14. Click Post.
+
+To claim the fixed asset for a government grant, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
+1. Select **New**.
+1. In the **Name** field, enter a value.
+1. Select **Save**.
+1. Select **Lines**.
+1. Select **Proposals**.
+1. Select **Reduction entry proposal**.
+1. Select **Filter**. You can filter to help find the fixed asset faster.  
+1. In the **Criteria** field, enter a value.
+1. Select **OK**.
+1. Select **OK**.
+1. In the **Date** field, enter the accounting date on which to journalize the subsidy.  
+1. In the **Credit** field, enter the amount of the government grant.  
+1. Select **Post**.
 
 
 

@@ -1,15 +1,13 @@
 ---
 title: Set up a local development environment
-description: This article explains how to set up a local development environment for the Commerce Scale Unit (CSU) and point of Sale (POS) development in Microsoft Dynamics 365 Commerce.
+description: Learn how to set up a local development environment for the Commerce Scale Unit (CSU) and point of Sale (POS) development in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 06/25/2024
+ms.date: 09/23/2025
 ms.topic: how-to
-audience: Developer
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-09-16
-ms.dyn365.ops.version: AX 10.0.22
 ms.custom: 
   - bap-template
 ---
@@ -24,7 +22,7 @@ This article explains how to set up a local development environment for the Comm
 > The environment setup that is described in this article can be used only for extension development. It can't be used for production.
 
 > [!NOTE]
-> Starting with Commerce version 10.0.38, predeployed channel-side Commerce components aren't updated due to the retirement of the Retail software development kit (SDK). The last version of the predeployed components is version 10.0.37, regardless of the version of the rest components on the virtual machine (VM). If you need to develop channel-side Commerce components on a VM, employ the Commerce SDK with a reliance on sealed installers as described in [Migrate the Retail SDK extensions to Commerce SDK](retail-sdk/migrate-commerce-sdk.md). Predeployed channel-side Commerce components are set to be completely removed in a future release.
+> Starting with Commerce version 10.0.38, predeployed channel-side Commerce components aren't updated due to the retirement of the Retail software development kit (SDK). The last version of the predeployed components is version 10.0.37, regardless of the version of the rest components on the virtual machine (VM). If you need to develop channel-side Commerce components on a VM, employ the Commerce SDK with reliance on sealed installers as described in [Migrate the Retail SDK extensions to Commerce SDK](retail-sdk/migrate-commerce-sdk.md). Predeployed channel-side Commerce components will be removed in a future release.
 
 ## Supported development environment types
 
@@ -34,7 +32,7 @@ Commerce supports both cloud-based environments and local environments.
 + **Local:** You have two options for setting up a development environment on your own machine:
 
     - **Self-hosted CSU** – This environment type deploys the CSU locally (self-hosted as an executable file). There's no Internet Information Services (IIS), Commerce data synchronization, or Commerce headquarters connectivity for real-time calls. If you use this option, no data synchronization occurs between Commerce headquarters and CSU channel databases. Channel databases are filled with the default demo data for development purposes. All requests and calls to Commerce headquarters, such as a call to issue a gift card, are mocked by the local CSU.
-    - **IIS-hosted CSU** – This environment type deploys the CSU in IIS and sets up an Async Client to sync the data between Commerce headquarters and CSU channel databases. It also sets up support for real-time connections with Commerce headquarters. This setup requires some additional configuration. For example, Microsoft Entr apps must be set up, and certificates must be deployed. For detailed information about how to install the IIS-hosted CSU, see [Configure and install IIS-Hosted Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md#configure-a-new-commerce-scale-unit).
+    - **IIS-hosted CSU** – This environment type deploys the CSU in IIS and sets up an Async Client to sync the data between Commerce headquarters and CSU channel databases. It also sets up support for real-time connections with Commerce headquarters. This setup requires some additional configuration. For example, Microsoft Entra apps must be set up, and certificates must be deployed. For detailed information about how to install the IIS-hosted CSU, see [Configure and install IIS-Hosted Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md#configure-and-install-commerce-scale-unit-self-hosted).
 
 ## Hardware requirements
 
@@ -77,12 +75,12 @@ IIS mode is a complete on-premises scale unit, where all the components match re
 
 Before you set up the self-hosted or IIS-hosted environment, complete the following prerequisites in this order:
 
-1. Install .NET Core SDK 6.0 for Windows x64 from [Download .NET Core 6.0](https://dotnet.microsoft.com/download/dotnet/6.0).
-2. Install ASP.NET Core Runtime 6.0.x Hosting Bundle for Windows from [Download ASP.NET Core Runtime 6.0](https://dotnet.microsoft.com/download/dotnet/6.0)(select **Hosting Bundle**, not **x64** or **x86**).
-3. Install any edition of [SQL server](/sql/database-engine/install-windows/install-sql-server), and enable full text search. For more information, see [Add Features to an Instance of SQL Server (Setup)](/sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup). The minimum supported version is 13.0.5026.0 SqlServer 2016 SP2.
+1. Install .NET Core SDK 8.0 for Windows x64 from [Download .NET Core 8.0](https://dotnet.microsoft.com/download/dotnet/8.0). The .NET Core SDK is only needed for extension development.
+1. Install ASP.NET Core Runtime 8.0.x Hosting Bundle for Windows from [Download ASP.NET Core Runtime 8.0](https://dotnet.microsoft.com/download/dotnet/8.0). Select **Hosting Bundle**, not **x64** or **x86**.
+1. Install any edition of [SQL server](/sql/database-engine/install-windows/install-sql-server), and enable full text search. For more information, see [Add Features to an Instance of SQL Server (Setup)](/sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup). The minimum supported version is 13.0.5026.0 SqlServer 2016 SP2.
 
     + Enable Mixed (SQL + Windows/Integrated) authentication.
-    + If no default instance of SQL Server is installed, the deployment of CSU fails. An error message indicates that an instance couldn't be found. If you want to use a named instance instead, edit the **Install.ps1** file by inserting the following line after line 78. (You can find this script in **Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Scripts** folder.)
+    + If no default instance of SQL Server is installed, the deployment of CSU fails. An error message indicates that an instance couldn't be found. If you want to use a named instance instead, edit the **Install.ps1** file by inserting the following line after line 71. (You can find this script in **Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Scripts** folder.)
 
         ```powershell
         $installerArgs += $("--sqlservername", "PutYourSqlServerSeenInSSMSHere")
@@ -90,19 +88,19 @@ Before you set up the self-hosted or IIS-hosted environment, complete the follow
 
         (When you insert this line, substitute **PutYourSqlServerSeenInSSMSHere** with your SQL Server name.)
 
-4. Install NuGet.exe from [Available NuGet Distribution Versions](https://www.nuget.org/downloads). Copy it to some location, and then add update the **PATH** environment variable so that it points to that location.
-5. If MSBuild isn't installed, install the Visual Studio tools from [Download Visual Studio Tools](https://visualstudio.microsoft.com/downloads/). Expand the **Tools for Visual Studio** section, and download and run **Build Tools for Visual Studio**. Don't specify any components. Select **Install** for the default installation.
+1. Install NuGet.exe from [Available NuGet Distribution Versions](https://www.nuget.org/downloads). Copy it to some location, and then add update the **PATH** environment variable so that it points to that location.
+1. If MSBuild isn't installed, install the Visual Studio tools from [Download Visual Studio Tools](https://visualstudio.microsoft.com/downloads/). Expand the **Tools for Visual Studio** section, and download and run **Build Tools for Visual Studio**. Don't specify any components. Select **Install** for the default installation.
 
     + After Visual Studio tools are installed, open a Command Prompt window, and run the command `where msbuild`. If msbuild.exe isn't found, run the command from Visual Studio Developer Command Prompt.
     + After you find msbuild.exe, make sure that the **PATH** environment variable points to the folder that contains "msbuild" at the beginning of the path. The path should contain a version of msbuild.exe that is at least version 15. To determine the version number, run the command `msbuild /version`.
     + To verify that the **PATH** variable is set correctly, run the command `msbuild/version` from a regular command prompt. Don't use Developer Command Prompt. The command should print a version number of at least 15. After you finish setting up MSBuild, restart Visual Studio Code.
 
-6. Install Microsoft.NET.Sdk by using the previously downloaded Visual Studio tools. Go to **Individual components**, enter **.NET SDK**, select the checkbox for the .NET SDK, and then select **Install**.
-7. Install the 64-bit version of Node.js from [Download and Install Node](https://nodejs.org/en/download/). Make sure that the **PATH** environment variable point to the location. If you're prompted, select the **Automatically install the necessary tools** checkbox.
-8. Install the 64-bit version of Visual Studio Code for Windows from [Download Visual Studio Code](https://code.visualstudio.com/download).
-9. Install the C# for Visual Studio Code (powered by OmniSharp) extension for Visual Studio Code by following the instructions in [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace).
-10. Clone or download the [Scale Unit GitHub repository (repo)](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit).
-11. In LCS, go to the [Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary), select **Retail Self-service package** as the asset type, and find the file that ends with **Commerce Scale Unit (SEALED)**. Be sure to select the version for the release that you require (for example, version 10.0.22 or 10.0.23). Download the file, and put it in the **Download** folder in the Scale Unit GitHub repo that you cloned or downloaded in the previous step (**Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Download/**).
+1. Install Microsoft.NET.Sdk by using the previously downloaded Visual Studio tools. Go to **Individual components**, enter **.NET SDK**, select the checkbox for the .NET SDK, and then select **Install**.
+1. Install the 64-bit version of Node.js from [Download and Install Node](https://nodejs.org/en/download/). Make sure that the **PATH** environment variable point to the location. If you're prompted, select the **Automatically install the necessary tools** checkbox.
+1. Install the 64-bit version of Visual Studio Code for Windows from [Download Visual Studio Code](https://code.visualstudio.com/download).
+1. Install the C# for Visual Studio Code (powered by OmniSharp) extension for Visual Studio Code by following the instructions in [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace).
+1. Clone or download the [Scale Unit GitHub repository (repo)](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit).
+1. In LCS, go to the [Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary), select **Retail Self-service package** as the asset type, and find the file that ends with **Commerce Scale Unit (SEALED)**. Be sure to select the version for the release that you require (for example, version 10.0.22 or 10.0.23). Download the file, and put it in the **Download** folder in the Scale Unit GitHub repo that you cloned or downloaded in the previous step (**Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Download/**).
 
 ## Additional prerequisites for IIS-hosted CSU
 
@@ -114,14 +112,14 @@ Before you set up the self-hosted or IIS-hosted environment, complete the follow
     - **baseProduct\_SslCertFullPath** – This path should point to the Secure Sockets Layer (SSL) certificate that the CSU website uses for HTTPS communication. For this nonproduction setup, the certificate can be self-signed. It must be stored in the **LocalMachine/Personal** certificate store. To generate the certificate, follow these steps:
 
         1. Open IIS, and double-tap (or double-click) the icon for your machine name.
-        2. Double-tap (or double-click) **Server Certificates**.
-        3. On the right, select **Create Self-Signed Certificate**.
-        4. When you're prompted to provide a friendly name for the certificate, specify the fully qualified domain name (FQDN) of your machine. The FQDN includes the machine name itself and a domain, if the machine is joined to a domain. You can find the FQDN by running the Windows PowerShell command `[System.Net.Dns]::GetHostEntry("")`. You can also get the FQDN from **Full computer name** field in the **System** control panel item in Windows.
-        5. Keep the default value for the certificate store (**Personal**).
-        6. Select **OK**.
-        7. Find the new certificate in the list, and double-tap (or double-click) it.
-        8. On the **Details** tab, find the **Thumbprint** value.
-        9. Copy and paste the thumbprint into a text editor, and convert all the letters to uppercase. Then add the converted value to the end of the predefined template for the **baseProduct\_SslCertFullPath** option, so that the template resembles `store:///My/LocalMachine?FindByThumbprint=YourThumbprintGoesHere`.
+        1. Double-tap (or double-click) **Server Certificates**.
+        1. On the right, select **Create Self-Signed Certificate**.
+        1. When you're prompted to provide a friendly name for the certificate, specify the fully qualified domain name (FQDN) of your machine. The FQDN includes the machine name itself and a domain, if the machine is joined to a domain. You can find the FQDN by running the Windows PowerShell command `[System.Net.Dns]::GetHostEntry("")`. You can also get the FQDN from **Full computer name** field in the **System** control panel item in Windows.
+        1. Keep the default value for the certificate store (**Personal**).
+        1. Select **OK**.
+        1. Find the new certificate in the list, and double-tap (or double-click) it.
+        1. On the **Details** tab, find the **Thumbprint** value.
+        1. Copy and paste the thumbprint into a text editor, and convert all the letters to uppercase. Then add the converted value to the end of the predefined template for the **baseProduct\_SslCertFullPath** option, so that the template resembles `store:///My/LocalMachine?FindByThumbprint=YourThumbprintGoesHere`.
 
         > [!NOTE]
         > - The base installer requires two more certificates, for a total of three. For all production deployments, three different certificates should be created for security reasons. However, for this development setup, you can save time by using the same certificate for all three configuration options, unless this approach violates your policies. In this case, you can provide the same thumbprint for the next two parameters.
@@ -133,19 +131,19 @@ Before you set up the self-hosted or IIS-hosted environment, complete the follow
     - **baseProduct\_RetailServerAadResourceId** – The value is the resource ID of the registered Microsoft Entra application. Use the value that is described as the "application ID URI" in step 3c in [How to configure CPOS to use your own Microsoft Entra application](https://community.dynamics.com/blogs/post/?postid=1b41fd96-951d-4f6f-a657-ca59229598df).
     - **baseProduct\_CposAadClientId** – The value is the Microsoft Entra application client ID that represents CPOS. To create the application and retrieve its application (client) ID, follow step 4 in [How to configure CPOS to use your own Microsoft Entra application](https://community.dynamics.com/blogs/post/?postid=1b41fd96-951d-4f6f-a657-ca59229598df). This step completes the CSU/CPOS setup in Microsoft Entra ID. To complete the required setup in Commerce headquarters, follow step 6 in [How to configure CPOS to use your own Microsoft Entra application](https://community.dynamics.com/blogs/post/?postid=1b41fd96-951d-4f6f-a657-ca59229598df).
     - **baseProduct\_AsyncClientAadClientId** – The value is the Microsoft Entra application client ID that Async Client uses when it must authenticate with Commerce headquarters. To create this application, register one more Microsoft Entra application by following steps 3a through 3b in [How to configure CPOS to use your own Microsoft Entra application](https://community.dynamics.com/blogs/post/?postid=1b41fd96-951d-4f6f-a657-ca59229598df). To register only the created application with Commerce headquarters, follow step 2 in [Service to Service authentication in AX7](https://community.dynamics.com/blogs/post/?postid=35a253ca-e72e-4247-8b11-c5a76575a3b3).
-    - **baseProduct\_Config** – Specify only the file name (not the full path) that corresponds to the channel database configuration that can be downloaded from Commerce headquarters as described in step 4 in [Download the CSU installer](retail-store-scale-unit-configuration-installation.md#download-the-commerce-scale-unit-installer). After you download the file from Commerce headquarters, put it in the [Download](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-ScaleUnit?path=/src/ScaleUnitSample/Download&version=GC0acfab2d3d7cbd734ea5b19f2b2ac6713d7391ef) folder.
+    - **baseProduct\_Config** – Specify only the file name (not the full path) that corresponds to the channel database configuration that can be downloaded from Commerce headquarters as described in [Download the Commerce Scale Unit channel configuration file](retail-store-scale-unit-download-install.md#download-the-commerce-scale-unit-channel-configuration-file). After you download the file from Commerce headquarters, put it in the [Download](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-ScaleUnit?path=/src/ScaleUnitSample/Download&version=GC0acfab2d3d7cbd734ea5b19f2b2ac6713d7391ef) folder.
     - **baseProduct\_UseSelfHost** – Set this value to **false**.
 
 ## Debug an extension by using the self-hosted CSU
 
 1. Open Visual Studio Code as an administrator.
-2. In the Scale Unit GitHub repo that you cloned or downloaded earlier, open the **src\\ScaleUnitSample** folder.
-2. Open the **.vscode/tasks.json** file, and set **baseProduct\_UseSelfHost** to **true**.
-3. On the **Terminal** menu, select **Run Task**, and enter **build-extension**.
+1. In the Scale Unit GitHub repo that you cloned or downloaded earlier, open the **src\\ScaleUnitSample** folder.
+1. Open the **.vscode/tasks.json** file, and set **baseProduct\_UseSelfHost** to **true**.
+1. On the **Terminal** menu, select **Run Task**, and enter **build-extension**.
 
     If you receive an error message that states that the running script is disabled on this system, open a Command Prompt window as an administrator, and run `powershell Set-ExecutionPolicy RemoteSigned`. Then close and reopen Visual Studio Code. Don't change the execution policy on production machines unless you understand the implications of changing security policies.
 
-4. Put a break point in your extension method, and select the **F5** key to debug the extension.
+1. Put a break point in your extension method, and select the **F5** key to debug the extension.
 
 After you select **F5**, the following actions are automatically performed. (These actions are supported in Visual Studio Code only.)
 
@@ -161,18 +159,18 @@ While the local scale unit is serving the requests, use the Debug Console to wat
 ## Debug an extension by using the IIS-hosted CSU
 
 1. In Visual Studio Code, select **Run and Debug** (or select **Ctrl+Shift+D**). A drop-down menu that has a green arrow appears under the top navigation bar. Select **Debug with IIS**.
-2. Select the **F5** key. As when you debug in self-hosted CSU mode, the base installer is deployed first. Then the extension installer is deployed.
-3. The base installer performs prerequisite checks and reports any actions that are required. The prerequisites include SQL Server, IIS, TLS, and .Net Core Hosting Bundle.
-4. After the base and extension packages are deployed, Visual Studio Code opens a web browser window that shows the results of a call to health check. Visual Studio Code also opens a dialog box that prompts you to attach a debugger. This step is optional. If you want to attach a debugger, enter **w3wp** in the list of processes, and select the row that contains **RssuCore**. RssuCore is the name of the IIS application pool that is used to run the CSU website.
+1. Select the **F5** key. As when you debug in self-hosted CSU mode, the base installer is deployed first. Then the extension installer is deployed.
+1. The base installer performs prerequisite checks and reports any actions that are required. The prerequisites include SQL Server, IIS, TLS, and .NET Core Hosting Bundle.
+1. After the base and extension packages are deployed, Visual Studio Code opens a web browser window that shows the results of a call to health check. Visual Studio Code also opens a dialog box that prompts you to attach a debugger. This step is optional. If you want to attach a debugger, enter **w3wp** in the list of processes, and select the row that contains **RssuCore**. RssuCore is the name of the IIS application pool that is used to run the CSU website.
 
 You now have a fully functional on-premises deployed scale unit that includes the following elements:
 
 - Channel database
 - Async Client
-- ASP.NET Core 3.1–based Retail Server that can interact with Commerce headquarters via RTS
+- ASP.NET Core 8–based Retail Server that can interact with Commerce headquarters via RTS
 - CPOS
 
-To find URLs that correspond to the CPOS and CSU that you deployed, review the base installer's log. The URLs appear near the end of the log, where CSU and CPOS are health-checked. To fill in the channel database with data from Commerce headquarters, follow step 28 in [Configure a new Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md#configure-a-new-commerce-scale-unit) after completing the previous steps in that article.
+To find URLs that correspond to the CPOS and CSU that you deployed, review the console output of the installer. The URLs appear near the end of the process, where CSU and CPOS are health-checked. To fill in the channel database with data from Commerce headquarters, follow the steps in [Create a new channel profile](retail-store-scale-unit-configuration-installation.md#create-a-new-channel-profile) after completing the previous steps in that article.
 
 ## Switching from IIS mode to self-hosted mode
 
@@ -201,9 +199,9 @@ If the build is completed without errors, you can use the outputs to deploy your
 
 You should set up a build pipeline to generate the package and then deploy it. For more information, see [Set up a build pipeline for the independent-packaging SDK](build-pipeline.md) and [Deploy the package to CSU](retail-sdk/retail-sdk-packaging.md#deploy-the-package-to-csu).
 
-### Troubleshooting
+### Debugging
 
-To troubleshoot deployment issues, review the verbose set of logs and associated messages on the **Terminal** tab of Visual Studio Code. If you can't determine what is wrong on your own, contact Microsoft for help. When you contact Microsoft, provide the following data:
+To debug deployment issues, review the verbose set of logs and associated messages on the **Terminal** tab of Visual Studio Code. If you can't determine what is wrong on your own, contact Microsoft for help. When you contact Microsoft, provide the following data:
 
 - A verbose description of the actions that were performed
 - The log file that is referenced at the very beginning and the very end of the output for the Base Scale Units's deployment process
@@ -233,8 +231,8 @@ The following set of tasks is available when you select the **Run Task** command
 
 If the setup doesn't work as expected, or if you need help, use the following links to get support:
 
-+ [microsoft/Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/issues)
-+ [Dynamics 365 Commerce Forum](https://community.dynamics.com/forums/thread/?discussionforumid=c3698582-d578-4d1a-acff-b4b8180a422d)
-+ [Retail Interest Group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=1585934)
++ [Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/issues)
++ [Dynamics 365 Supply Chain Management and Commerce forum](https://community.dynamics.com/forums/thread/?groupid=7592059c-9686-ef11-ac21-7c1e520a09df)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

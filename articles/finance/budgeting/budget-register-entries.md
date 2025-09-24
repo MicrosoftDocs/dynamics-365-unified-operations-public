@@ -4,7 +4,7 @@ description: This article describes how to create budget register entries.
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 05/30/2024
+ms.date: 03/06/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -47,6 +47,9 @@ To create a budget register entry, follow these steps.
 1. Select a currency.
 1. On the Action Pane, select **Update budget balances**.
 1. Select **OK**, or enter batch criteria.
+
+>[!Note]
+> When a budget register entry line is created, the **Amount type** value defaults based on the selected **Main account type** specified in the **Dimension values** field.
  
 ## Create a budget transfer
 

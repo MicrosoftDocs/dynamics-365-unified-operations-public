@@ -3,7 +3,7 @@ title: Configure the Workflow Message Processing batch job as critical
 description: Learn about how to configure the workflow Message Processing batch job as critical, including a step-by-step process.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/11/2017
 ms.custom: 
 ms.reviewer: twheeloc

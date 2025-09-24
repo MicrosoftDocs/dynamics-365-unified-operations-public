@@ -27,7 +27,7 @@ In many cases, you'll want to use specific additional content for your products.
 
 The following video provides an overview of PDP and category page customization using site builder.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1863o]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f03020b9-894b-49bc-887a-a689dc99252b]
 
 ## Customize a PDP
 

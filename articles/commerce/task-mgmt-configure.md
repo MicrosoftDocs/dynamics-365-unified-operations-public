@@ -3,12 +3,13 @@ title: Configure task management
 description: This article describes how to configure task management features in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 05/28/2024
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2020-02-03
+ms.custom: sfi-image-nochange
 ---
 
 # Configure task management

@@ -5,6 +5,7 @@ author: sericks007
 ms.author: sericks
 ms.topic: whats-new
 ms.date: 07/12/2024
+ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
   - evergreen 

@@ -3,7 +3,7 @@ title: Compounding interval functionality
 description: Access information that will help you choose among monthly, quarterly, semiannual, and annual compounding intervals, including various examples.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: concept-article
 ms.date: 04/12/2021
 ms.reviewer: twheeloc
 audience: Application User

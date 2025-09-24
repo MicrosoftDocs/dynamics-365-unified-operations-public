@@ -4,14 +4,13 @@ description: Learn how to configure and use the Electronic Invoicing service ISV
 author: ikondratenko
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 07/29/2024
+ms.date: 09/22/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2023-12-01
-ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.37
+ms.custom: sfi-image-nochange
 ---
 
 # Electronic Invoicing service ISV last-mile connector
@@ -27,7 +26,7 @@ This article explains how to configure and use the Electronic Invoicing service 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
 - Your company must have a separate signed service agreement with an ISV that will provide electronic document delivery service. Additionally, you must obtain the required credentials to enable integration of the Electronic Invoicing service with the ISV last-mile connector.
-- Become familiar with Electronic invoicing functionality. For more information, see [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
+- Become familiar with Electronic invoicing functionality. For more information, see [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Consult the list of available country/region-specific [Electronic invoicing features](e-invoicing-country-specific-availability.md). The capability to use the ISV last-mile connector for submission complements this list.
 
 ## Integration with Edicom
@@ -41,7 +40,7 @@ To enable the integration of the Electronic Invoicing service with the ISV last-
 - **Group** – The group code is used for internal routing within the Edicom infrastructure.
 - **Token** – The token is used to grant authorization to access the Edicom services.
 
-The token that you obtain must be uploaded to the secret that you created in the Azure key vault that your company manages. For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md). The secret is used as a parameter in the related Electronic Invoicing feature pipeline actions.
+The token that you obtain must be uploaded to the secret that you created in the Azure Key Vault that your company manages. For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md). The secret is used as a parameter in the related Electronic Invoicing feature pipeline actions.
 
 > [!NOTE]
 > With this integration, you are able to submit generated e-invoices' files either in the **OIOUBL** format to the Danish electronic invoicing infrastructure, **NemHandel**, or in the **PEPPOL** format to the PEPPOL Delivery Network. The format of a submitted file will be dynamically analyzed by Edicom and routed correspondingly.
@@ -140,18 +139,44 @@ The name of this variable must be used as the name of the import source for the 
 
 ![Screenshot that shows the ResponseXml import source on the Electronic document parameters page.](../media/isv_connector_import_channel.jpg)
 
+### Electronic invoicing in Belgium
+
+For more information about electronic invoicing in Belgium, see [Electronic invoicing for Belgium](../belgium/emea-bel-e-invoices.md).
+
 ### Electronic invoicing in Chile
 
-For more information about electronic invoicing in Chile, see [Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md).
+For more information about electronic invoicing in Chile, see:
+[Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md),
+[Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md).
+
+### Electronic invoicing in Colombia
+
+Learn more bout electronic invoicing in Colombia in [Get started with Electronic invoicing for Colombia](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md).
+
+### Electronic invoicing in Costa Rica
+
+For more information about electronic invoicing in Costa Rica, see [Get started with Electronic invoicing for Costa Rica](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md).
 
 ### Electronic invoicing in Denmark
 
-For more information about electronic invoicing in Denmark, including the integration with the [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, see [Get started with Electronic invoicing for Denmark](../denmark/e-invoicing-dk-get-started.md).
+For more information about electronic invoicing in Denmark, including the integration with the [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, see [Get started with Electronic invoicing for Denmark](../denmark/gs-e-invoicing-dk-get-started.md).
+
+### Electronic invoicing in Panama
+
+For more information about electronic invoicing in Panama, see [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md).
+
+### Electronic invoicing in Paraguay
+
+Learn more about electronic invoicing in Paraguay in [Get started with electronic invoicing for Paraguay](../iberoamerica/ltm-paraguay-electronic-invoice-configuration.md).
+
+### Electronic invoicing in Uruguay
+
+For more information about electronic invoicing in Uruguay, see [Get started with Electronic invoicing for Uruguay](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md).
 
 ## Additional resources
 
-- [Electronic invoicing administration and integration components](../global/e-invoicing-administration-integration-components.md)
-- [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md)
-- [Work with Globalization features](../global/e-invoicing-working-globalization-features.md)
+- [Electronic invoicing administration and integration components](../global/gs-e-invoicing-administration-integration-components.md)
+- [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md)
+- [Work with Globalization features](../global/gs-e-invoicing-working-globalization-features.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

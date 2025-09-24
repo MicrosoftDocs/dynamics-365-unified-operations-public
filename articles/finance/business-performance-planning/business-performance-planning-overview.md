@@ -4,7 +4,7 @@ description: Learn about business performance planning in Microsoft Dynamics 365
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: article
-ms.date: 11/28/2023
+ms.date: 08/25/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -122,3 +122,4 @@ The process of configuring and using business performance planning involves the 
 1. Configure visuals
 1. Secure by dimension or cube (available in a later release)
 1. Share plans
+

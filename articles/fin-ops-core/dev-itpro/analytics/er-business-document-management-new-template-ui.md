@@ -5,7 +5,6 @@ author: kfend
 ms.author: kfend
 ms.topic: article
 ms.date: 01/05/2022
-ms.custom:
 ms.reviewer: johnmichalak 
 ms.search.form: ERBDWorkspace, ERBDParameters
 audience: Developer, IT Pro
@@ -13,6 +12,8 @@ ms.assetid:
 ms.search.region: Global
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
+ms.custom:
+  - sfi-image-nochange
 ---
 
 # Microsoft Office-style user interface in Business document management
@@ -32,7 +33,7 @@ In the examples in this article, the active provider is Contoso, and you use it 
 >
 > Starting in Finance version 10.0.32, both features have been removed. Therefore, if you're using Finance version 10.0.32 and later, disregard the information about feature enablement later in this article.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1c11ad8d-0615-4d8e-b3b4-996050800938]
 
 The [Create a new business document using Business document management](https://youtu.be/gAIYl-mM_pw) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
@@ -143,4 +144,3 @@ This example shows how to use the **New document** button in the **Business docu
 7. Select **OK** to confirm the start of the editing process.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

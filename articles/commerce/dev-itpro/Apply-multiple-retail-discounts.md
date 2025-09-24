@@ -3,7 +3,7 @@ title: Apply multiple Retail discounts to a product
 description: This article reviews all the factors considered when multiple discounts can be applied to a product.
 author: ShalabhjainMSFT
 ms.date: 12/31/2018
-ms.topic: article
+ms.topic: how-to
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: global

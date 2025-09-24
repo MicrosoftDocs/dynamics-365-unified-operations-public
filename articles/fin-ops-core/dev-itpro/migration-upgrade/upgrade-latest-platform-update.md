@@ -3,7 +3,7 @@ title: Apply the latest platform update to environments
 description: Learn about how to apply the latest platform update to your finance and operations environment and update packages.
 author: LaneSwenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/16/2019
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

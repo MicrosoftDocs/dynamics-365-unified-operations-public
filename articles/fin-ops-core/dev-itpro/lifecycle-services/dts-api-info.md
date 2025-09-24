@@ -14,6 +14,7 @@ ms.search.validFrom: 2023-03-22
 # Dynamics 365 Translation Service API
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE[dts-deprecation](../../fin-ops/includes/dts-deprecation.md)]
 
 The Microsoft Dynamics 365 Translation Service (DTS) API is designed to help developers interact with our service and create custom API clients. For example, you can translate user interface (UI) files and regenerate the translations.  
 

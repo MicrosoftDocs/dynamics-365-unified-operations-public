@@ -3,7 +3,7 @@ title: Reconcile a bank account
 description: Learn about how to reconcile a bank account, including a step-by-step process and an outline on canceling bank statement reconciliation.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/10/2024
 ms.custom:
 ms.reviewer: twheeloc

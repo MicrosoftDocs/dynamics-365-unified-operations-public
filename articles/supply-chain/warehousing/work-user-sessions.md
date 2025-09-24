@@ -14,7 +14,7 @@ ms.search.form: WHSWorkUserSession, WHSGS1PolicyTable
 
 [!include [banner](../includes/banner.md)]
 
-The whole time that a [warehouse worker user](manage-warehouse-workers.md) is using the [Warehouse Management mobile app](install-configure-warehouse-management-app.md), the system maintains a *work user session* for that user. You can view the details of each active work user session by going to **Warehouse management \> Periodic tasks \> Work user sessions**. For each session, the **Work user sessions** page shows associated **User name**, **User ID**, **Login date and time**, and **Last user action date and time** values, together with a detailed history of XML communication messages and logged errors.
+The whole time that a [warehouse worker user](manage-warehouse-workers.md) is using the [Warehouse Management mobile app](install-configure-warehouse-management-app.md), the system maintains a *work user session* for that user. You can view the details of each active work user session by going to **Warehouse management** \> **Inquiries and reports** \> **Mobile device logs** \> **Work user sessions**. For each session, the **Work user sessions** page shows associated **User name**, **User ID**, **Login date and time**, and **Last user action date and time** values, together with a detailed history of XML communication messages and logged errors.
 
 > [!NOTE]
 > If no historical data appears on the **Work user sessions** page, a cleanup job, such as [Work user session log cleanup](../../fin-ops-core/dev-itpro/sysadmin/cleanuproutines.md#warehouse-management), might be running.
@@ -38,7 +38,7 @@ The following example shows XML content that was copied from a *Mixed license pl
         <Control controlType="detourButton" name="Look up load" label="Look up load" newLine="1" data="" Icon="USMF|MenuIcon|GenericDataInquiry" type="16806" length="0" error="0" defaultButton="0" enabled="1" selected="" color="0" Status="0" NumDecimals="-1" DisplayArea="" PreferredInputMode="" PreferredInputType="" DisplayPriority="0" DisplaySubPriority="0" DataSequence="8" AttachedTo="" InstructionControl="" Footer1="" Footer2="" InputType="0" />
     </Controls>
     <Step Id="LoadId" Icon="USMF|StepIcon|LoadID" Title="Scan load" />
-    <Auth userId="51" userGUID="{701F34BD-4E6B-475E-9722-95101E890046}" sessionId="{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}" />
+    <Auth userId="51" userGUID="{00aa00aa-bb11-cc22-dd33-44ee44ee44ee}" sessionId="{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}" />
     <UserCulture>en-us</UserCulture>
     <UserDateCulture>en-us</UserDateCulture>
     <OperationalInsightsInstrumentationKey />

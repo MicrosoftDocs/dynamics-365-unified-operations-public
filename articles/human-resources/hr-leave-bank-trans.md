@@ -3,9 +3,9 @@
 
 title: Leave bank transaction entity
 description: This article provides details and an example query for the Leave bank transaction entity in Microsoft Dynamics 365 Human Resources.
-author: jcart
+author: twheeloc
 ms.date: 05/10/2024
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: twheeloc
 
 # optional metadata
@@ -18,7 +18,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: twheeloc
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---

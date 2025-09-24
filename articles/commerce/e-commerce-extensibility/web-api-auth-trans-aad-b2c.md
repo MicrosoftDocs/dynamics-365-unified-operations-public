@@ -2,7 +2,7 @@
 title: Set up web API authentication transfer using Microsoft Entra ID B2C
 description: This article describes how to set up the transfer of web API authentication to a Microsoft Dynamics 365 Commerce e-commerce site by using Microsoft Entra business-to-consumer (B2C).
 author: BrianShook
-ms.date: 07/30/2024
+ms.date: 12/04/2024
 ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -30,6 +30,9 @@ As a prerequisite, set up your e-commerce site with the Microsoft Entra B2C tena
 You must set up your Microsoft Entra B2C tenant in accordance with the guidance in [Enable authentication in your own web API by using Microsoft Entra B2C](/azure/active-directory-b2c/enable-authentication-web-api). According to that guidance, you must create an app registration for the Microsoft Entra B2C tenant application that will handle web, mobile, or single page apps. This process is also documented in [Create a native application](mock-sign-in.md#create-a-native-application). The native application uses the mobile or standalone application to acquire the authentication token for the Microsoft Entra B2C tenant.
 
 Various methods are available for creating the authentication token by using the Microsoft Entra B2C tenant application. Configurations will vary further depending on the developmental approach. Microsoft Entra B2C supports the direct API authentication, resource owner password credentials (ROPC), and the Open ID Connect (OIDC) methods.
+
+> [!NOTE]
+> Microsoft recommends that you use the most secure authentication flow available. The ROPC flow requires a very high degree of trust in the application, and carries risks that aren't present in other flows. You should only use this flow when other more secure flows, such as managed identities, aren't viable.
 
 ## E-commerce site authentication with transferred tokens
 

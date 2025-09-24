@@ -3,13 +3,14 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.32 (Ap
 description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.32 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
-ms.topic: conceptual
-ms.date: 04/19/2024
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: whats-new
+ms.date: 08/05/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen
-ms.reviewer: kamaybac
-ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.32 (April 2023)
@@ -29,7 +30,7 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Planning | New exception process for migrating to Planning Optimization | [Migration to Planning Optimization for master planning](../master-planning/new-master-planning-engine.md) | Enabled by default |
-| Planning | [Transition to Planning Optimization one company at a time](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/transition-planning-optimization-one-company-at-time) | [Continue to use deprecated master planning for some companies](../master-planning/continue-using-deprecated-planning.md) | Enabled by default |
+| Planning | [Transition to Planning Optimization one company at a time](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/transition-planning-optimization-one-company-at-time) | [Continue to use deprecated master planning with existing companies](../master-planning/continue-using-deprecated-planning.md) | Enabled by default |
 | Procurement | [Improve security for vendor bank account information updates](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/improve-security-vendor-bank-account-information-updates) |  [Vendor bank account workflow](../../finance/accounts-payable/vendor-bank-account-workflow.md) | Feature management:<br>*Vendor bank account change proposal workflow* |
 | Product information management | [Share product information across legal entity boundaries](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/share-product-information-across-legal-entity-boundaries) | [Cross-company product sharing](../pim/share-products-across-companies.md) | Feature management:<br>*(Preview) Cross-company data sharing for products* |
 | Warehouse management | License plate layouts | [License plate label layouts and printing](../warehousing/print-license-plate-labels-using-label-layouts.md) | Enabled by default |
@@ -182,7 +183,7 @@ We have recently added or significantly updated the following help articles. The
 |---|---|
 | Master planning | [DDMRP FAQ](../master-planning/planning-optimization/ddmrp-faqs.md) |
 | Master planning | [Set up scrap to calculate raw material requirements](../master-planning/scrap-calculations.md) |
-| Supply Chain Management development | [Create and process message queues and message types](../supply-chain-dev/message-processor.md) |
+| Supply Chain Management development | [Monitor and control message processor messages](../message-processor/message-processor.md) |
 | Support | [Use Customer Lockbox to manage secure access to customer data](../../fin-ops-core/dev-itpro/sysadmin/customer-lockbox.md) |
 | Warehouse management | [Manage inbound putaway based on container types](../warehousing/inbound-putaway-by-container-type.md) |
 | Warehouse management | [Monitor Warehouse Management usage and performance](../warehousing/application-insights-monitor-usage-performance.md) |

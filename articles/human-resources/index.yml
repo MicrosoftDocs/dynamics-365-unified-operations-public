@@ -11,7 +11,8 @@ metadata:
   ms.topic: hub-page # Required
   author: twheeloc #Required; your GitHub user alias, with correct capitalization.
   ms.author: twheeloc #Required; microsoft alias of author; optional team alias.
-  ms.date: 11/12/2024 #Required; mm/dd/yyyy format.
+  ms.date: 08/25/2025 #Required; mm/dd/yyyy format.
+  ms.update-cycle: 1095-days
   ms.custom: evergreen
   hide_bc: true
   
@@ -43,12 +44,12 @@ additionalContent:
     items:
     - title: Guidance
       links: 
-      - url: /dynamics365/guidance/implementation-guide/overview 
-        text: Dynamics 365 implementation guidance
-      - url: /dynamics365/human-resources/hr-admin-database-logging
-        text: Adoption framework
-      - url: /dynamics365/guidance/implementation-guide/security
-        text: Security
+      - text: Security, compliance, and privacy
+        url: /dynamics365/get-started/security
+      - text: Implementation guide
+        url: /dynamics365/guidance/implementation-guide/overview
+      - text: Implementation tools and samples
+        url: /dynamics365/guidance/resources/
     - title: Try/Buy/Deploy
       links: 
       - url: /dynamics365/human-resources/hr-admin-setup-provision-fo

@@ -1,16 +1,17 @@
 ---
-title: GS1 bar codes
+title: GS1 bar codes and QR codes
 description: Learn how to set up GS1 bar codes and QR codes so that labels can be scanned in a warehouse with an outline on the GS1 bar code format.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: how-to
-ms.date: 05/26/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSGS1ParsingSetup, WHSGS1GenericSetup, WHSGS1PolicyTable, WHSWorkUserSession
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
-# GS1 bar codes
+# GS1 bar codes and QR codes
 
 [!include [banner](../includes/banner.md)]
 
@@ -253,15 +254,18 @@ To set up and customize your bar code data policies, follow these steps.
 
     - **Auto submit** – This option is available only when the **Field value capturing method** field is set to *Save as default*. Set it to *Yes* to automatically submit the mobile device step if all the fields are set.
 
-1. On the FastTab below the header, map field names to application identifiers as required for the current policy. Use the buttons on the toolbar to add or remove rows as you require. For each row, set the following fields:
+1. On the **Policy lines** FastTab, map field names to application identifiers as required for the current policy. Use the buttons on the toolbar to add or remove rows as you require. For each row, set the following fields:
 
     - **Field** – Select or enter the mobile app input field that the incoming value should be assigned to. The value isn't the display name that workers see. Instead, it's the key name that is assigned to the field in the underlying code. The default setup provides a collection of fields that are likely to be useful, and includes intuitive key names for each field and matching programmed functionality. However, you might have to talk to your development partners to find the correct selections for your implementation. For more information about how to look up field names, see [Inspect details of active Warehouse Management mobile app sessions](work-user-sessions.md).
     - **Application identifier** – Select the applicable application identifier, as defined on the **Barcode data application identifiers** page. The identifier establishes how the bar code will be interpreted and stored as a value for the named field. After you select an application identifier, the **Description** field shows the description of it.
     - **Sorting** – This column is available only when the **Field value capturing method** field is set to *Process immediately*. Every multi-value bar code includes a series of application identifiers, each of which is followed by a value. The applicable bar code data policy identifies which application identifier is mapped to each database field. However, if a bar code uses the same application identifier more than once, the system uses the order in which application identifiers appear in the code to map them to fields. For rows that share an application identifier with one or more other rows, use this field to establish the order that the matching rows should be processed in. The row that has the lowest sorting value will be processed first.
-    - **Allow overwriting** – This column is available only when the **Field value capturing method** field is set to *Save as default*. Select the checkbox to save the application identifier value that comes from the bar code, even though a value already exists as part of the mobile device step. Only field values that are enabled for editing will be overwritten.
+    - **Allow overwriting** – This column is only available on the **Policy lines** grid when **Field value capturing method** in the policy details header is set to *Save as default*. Select the checkbox in the **Policy lines** grid for rows where scanned data should replace the default data related to the specified **Application identifier** in the system. Only field values that are enabled for editing in the mobile application step will be overwritten when this option is selected.
 
 > [!NOTE]
-> For bar codes that include more than one identical application identifier, you *must* use the **Sorting** field to establish the order of the fields.
+>
+> - For bar codes that include more than one identical application identifier, you *must* use the **Sorting** field to establish the order of the fields.
+> - When **Auto Submit** is set to *Yes*, the mobile device immediately sends scanned information to the system. After the information is received, the mobile device displays a new screen, ready for the next input. This feature allows for a quick and efficient scanning process. The device only displays data after scanning when user interaction is required.
+> - Select the **Allow overwriting** checkbox for rows where scanned information should replace the default data in the system. For example, if there's a purchase order for 10 pieces, but you only need to scan 5 pieces, this option will allow the scanned data to override the default quantity.
 
 ## Assign bar code data policies to mobile device menu items
 

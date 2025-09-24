@@ -1,10 +1,10 @@
 ---
 title: X++ container runtime functions
 description: Learn about the container run-time functions, including a syntax string, a table outlining descriptions for various parameters, and additional values.
-author: josaw1
-ms.author: josaw
-ms.topic: article
-ms.date: 06/20/2017
+author: pvillads
+ms.author: pvillads
+ms.topic: language-reference
+ms.date: 05/19/2025
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -30,7 +30,6 @@ container conDel(container container, int start, int number)
 ```
 
 ### Parameters
-
 | Parameter | Description                                                 |
 |-----------|-------------------------------------------------------------|
 | container | The container to remove elements from.                      |
@@ -47,30 +46,26 @@ A new container that doesn't include the removed elements.
 static void conDelExample(Args _args)
 {
     container c = ["Hello world", 1, 3.14];
-        // Deletes the first two items from the container.
-        c = conDel(c, 1, 2);
+    
+    // Deletes the first two items from the container.
+    c = conDel(c, 1, 2);
 }
 ```
 
 ## conFind
-Locates the first occurrence of an element or a sequence of elements in a container.
+Locates the first occurrence of an element in a container.
 
 ### Syntax
 
 ```xpp
-int conFind (container container, anytype element,... )
+int conFind(container container, anytype element)
 ```
 
 ### Parameters
-
 | Parameter | Description                                              |
 |-----------|----------------------------------------------------------|
 | container | The container to search.                                 |
-| element   | One or more elements to search for, separated by commas. |
-
-### Remarks
-
-If several elements are specified in the sequence, they must be separated by commas and specified in the correct sequence. The elements can be of any data type.
+| element   | The element to search for. |
 
 ### Return value
 
@@ -82,10 +77,9 @@ If several elements are specified in the sequence, they must be separated by com
 static void conFindExample(Args _args)
 {
     container c = ["item1", "item2", "item3"];
-    int i;
-    int j;
-    i = conFind(c, "item2");
-    j = conFind(c, "item4");
+    int i = conFind(c, "item2");
+    int j = conFind(c, "item4");
+
     print "Position of 'item2' in container is " + int2Str(i);
     print "Position of 'item4' in container is " + int2Str(j);
 }
@@ -97,7 +91,7 @@ Inserts one or more elements into a container.
 ### Syntax
 
 ```xpp
-container conIns (container container, int start, anytype element, ... )
+container conIns(container container, int start, anytype element, ... )
 ```
 
 ### Parameters
@@ -122,6 +116,7 @@ container c;
 
 for (i = 1; i < = 10; i++)
 {
+    // Append the square of the index to the container
     c += i*i;
 }
 ```
@@ -136,6 +131,7 @@ static void conInsExample(Args _arg)
 
     c = conIns(c,1,"item1");
     c = conIns(c,2,"item2");
+
     for (i = 1 ; i <= conLen(c) ; i++)
     {
         // Prints the content of a container.
@@ -161,20 +157,18 @@ int conLen(container container)
 
 ### Return value
 
-The number of elements in the container.
+The number of elements in the container. The conNull container has no elements.
 
 ### Example
 
 ```xpp
 static void conLenExample(Args _arg)
 {
-    container c;
-    int i;
+    container c = conins(["item1", "item2"], 1);
 
-    c = conins(["item1", "item2"], 1);
-    for (i = 1 ; i <= conLen(c) ; i++)
+    for (int i = 1 ; i <= conLen(c) ; i++)
     {
-            print conPeek(c, i);
+        print conPeek(c, i);
     }
 }
 ```
@@ -185,10 +179,6 @@ Retrieves an empty container.
 ```xpp
 container conNull()
 ```
-
-### Remarks
-
-Use this function to explicitly dispose of the contents of a container.
 
 ### Return value
 
@@ -201,7 +191,8 @@ static void conNullExample(Args _arg)
 {
     container c = ["item1", "item2", "item3"];
 
-    print "Size of container is " + int2str(conLen(c));
+    print "The size of container is " + int2str(conLen(c));
+
     // Set the container to null.
     c = conNull();
     print "Size of container after conNull() is " + int2Str(conLen(c));
@@ -219,9 +210,9 @@ anytype conPeek(container container, int number)
 
 ### Parameters
 
-| Parameter | Description                                                                                                                                                                                                                      |
-|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| container | The container to return an element from.                                                                                                                                                                                         |
+| Parameter | Description     |
+|-----------|-----------------|
+| container | The container to return an element from.                         |
 | number    | The position of the element to return. Specify **1** to get the first element. An invalid position number, such as **-3**, **0**, or a number that is higher than the length of the container, might cause unpredictable errors. |
 
 ### Return value
@@ -236,8 +227,10 @@ static void main(Args _args)
     container cnI, cnJ;
     int i, j;
     anytype aty;
+    
     info("container cnI ...");
     cnI = ["itemBlue", "itemYellow"];
+
     for (i=1; i <= conLen(cnI); i++)
     {
         aty = conPeek(cnI, i);
@@ -246,6 +239,7 @@ static void main(Args _args)
 
     info("container cnJ ...");
     cnJ = conIns(cnI, 2, "ItemInserted");
+
     for (j=1; j <= conLen(cnJ); j++)
     {
         aty = conPeek(cnJ, j);
@@ -297,6 +291,7 @@ static void conPokeExample(Args _arg)
     container c1 = ["item1", "item2", "item3"];
     container c2;
     int i;
+
     void conPrint(container c)
     {
         for (i = 1 ; i <= conLen(c) ; i++)
@@ -311,8 +306,5 @@ static void conPokeExample(Args _arg)
     conPrint(c2);
 }
 ```
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

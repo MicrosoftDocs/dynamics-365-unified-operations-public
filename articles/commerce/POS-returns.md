@@ -124,7 +124,7 @@ A return location can be a warehouse, a location in a warehouse, or even a speci
 Before you can set up return locations, you must set up the following elements:
 
 - **Retail info codes** – Prompts at the POS register that are set up in the **Retail** module. For more information, see [Setting up info codes](/dynamicsax-2012/appuser-itpro/setting-up-info-codes).
-- **Sales and marketing reason codes** – Prompts at the POS register that are set up in the **Sales and marketing** module. For more information, see [Setting up reason codes](/dynamicsax-2012/appuser-itpro/set-up-return-reason-codes).
+- **Sales and marketing reason codes** – Prompts at the POS register that are set up in the **Sales and marketing** module. For more information, see [Set up return reason codes](../supply-chain/sales-marketing/set-up-return-reason-code.md).
 - **Inventory locations** – The places where inventory is kept. For more information, see [Setting up inventory locations](/dynamicsax-2012/appuser-itpro/about-locations).
 	
 ### Set up return locations

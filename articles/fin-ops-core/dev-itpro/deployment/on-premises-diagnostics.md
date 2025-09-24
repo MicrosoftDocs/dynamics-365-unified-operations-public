@@ -4,14 +4,15 @@ description: Learn about how to expose the diagnostic data for Dynamics 365 Fina
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 06/19/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
 ms.service: dynamics-365-op
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # On-premises diagnostics
@@ -31,7 +32,7 @@ When you consider a diagnostic solution, consider the following fundamentals of 
 - Avoid storing sensitive or personal data in events.
 
 > [!NOTE]
-> By default, communication in an Elastic Stack cluster is not sent over HTTPS. Don't set up the Elastic Stack unless you've considered the risks, and prepared or implemented mitigations for those risks. The paid version of X-Pack can be used to encrypt communication in the Elastic Stack. For setup information, see Setting up TLS on a cluster. There is also an open source Elasticsearch plug-in. Although Microsoft hasn't tested this plug-in, according to the documentation, it can enable HTTPS. Microsoft recommends that you always utilize encrypted communication using HTTPs, VPN, or another secure, encrypted protocol. Many industry certifications and laws require the use of encrypted transmission if your content includes end user, customer, personal, or sensitive data.
+> By default, communication in an Elastic Stack cluster is not sent over HTTPS. Don't set up the Elastic Stack unless you've considered the risks, and prepared or implemented mitigations for those risks. The paid version of X-Pack can be used to encrypt communication in the Elastic Stack. For setup information, see Setting up TLS on a cluster. There is also an open source Elasticsearch plug-in. Although Microsoft hasn't tested this plug-in, according to the documentation, it can enable HTTPS. Microsoft recommends that you always utilize encrypted communication using HTTPS, VPN, or another secure, encrypted protocol. Many industry certifications and laws require the use of encrypted transmission if your content includes end user, customer, personal, or sensitive data.
 
 ## Diagnostic data guidelines
 To diagnose the deployment and execution of Finance + Operations (on-premises), you must have access to diagnostic data. For a cloud deployment, Microsoft stores and monitors the diagnostic data from services to help keep the environment healthy. For an on-premises deployment, the customer is responsible for this task.

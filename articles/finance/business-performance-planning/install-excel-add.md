@@ -3,7 +3,7 @@ title: Install the Excel add-in for business performance planning
 description: Learn how to install the Microsoft Excel add-in for the business performance planning app, including prerequisites and a step-by-step installation process.
 author: ShielaSogge
 ms.author: twheeloc
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 03/15/2024
 ms.reviewer: twheeloc
 audience: Application User

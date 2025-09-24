@@ -1,14 +1,14 @@
 ---
 title: Procurement and sourcing overview
-description: Access an overview of the functionality that's available in the Procurement and sourcing module, including an outline on needs for products and services.
+description: Get an overview of the functionality that's available in the Procurement and sourcing module, including an outline on needs for products and services.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: how-to
-ms.date: 06/07/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart
+ms.topic: overview
+ms.date: 07/21/2025
+ms.custom:
+  - bap-template
 ---
 
 # Procurement and sourcing overview
@@ -27,7 +27,7 @@ The need for products or services can arise from *requisitions*, for example, wh
 
 The procurement department identifies suppliers for required products and services, and this can involve a *request for quotation* being sent out to multiple potential suppliers. It's possible to share the specifications of the product that's being requested and potential vendors can view these to see if they can deliver a product that conforms with them. Vendors return their bids, which the procurement department then reviews before they select the supplier that they want to procure from.  
 
-Purchase orders include an option to send out a *purchase inquiry* to the vendor as an alternative to a more comprehensive request for quotation process. The purchase inquiry can be used to help establish terms like prices, discounts, and receipt date for the order. If vendors are set up to use the **Vendor** portal, purchase inquiry functionality is disabled. Instead the order is shared on the **Vendor** portal, and when a *confirmation request* is sent the vendor can directly confirm the order.  
+Purchase orders include an option to send out a *purchase inquiry* to the vendor as an alternative to a more comprehensive request for quotation process. The purchase inquiry can be used to help establish terms like prices, discounts, and receipt date for the order. If vendors are set up to use the **Vendor** portal, purchase inquiry functionality is disabled. Instead the order is shared on the **Vendor** portal, and when a *confirmation request* is sent, the vendor can directly confirm the order.  
 
 *Vendor catalogs* can be used to collect information on the product assortment that vendors can supply. Vendors can publish their own catalog, so it's easier to keep the catalog up to date. It's possible to attach an *approved vendor list* to a product, and this can help guide vendor selection when new purchase orders are opened, and prevent the use of unintended vendors.
 
@@ -35,7 +35,7 @@ Purchase orders include an option to send out a *purchase inquiry* to the vendor
 
 *Purchase orders* can be created in several different ways including:
 
-- As an outcome of master planning, which has identified a demand that requires a purchase. This process generates planned purchase orders, and when these are released, purchase orders are generated.
+- As an outcome of a master planning fun that identified a demand that requires a purchase. This process generates planned purchase orders, and when these are released, purchase orders are generated.
 - Through the processing of purchase requisitions that result in procurement.
 - Through the processing of purchase agreements, where purchase orders are created as released orders from the agreements. This is commonly used when purchase agreements are used to represent blanket orders.
 - Manually, when the purchase order that's created isn't based on another document.
@@ -84,19 +84,19 @@ Performance and review of purchasing is supported through *procurement and accou
 
 ### Documentation resources
 
-- [Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821) (white paper)
-- [Importing vendor catalogs](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (blog post)
-- [Inbound consignment inventory demo script](https://www.microsoft.com/download/details.aspx?id=101945) (white paper)
 - [Monitor consignment inventory using vendor collaboration](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 - [Create a purchase order from a sales order](../sales-marketing/tasks/create-purchase-order-sales-order.md)
 - [Create a consignment replenishment order](../inventory/tasks/create-consignment-replenishment-order.md)
 - [Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
 - [Vendor posting profiles](../../finance/accounts-payable/vendor-posting-profiles.md)
+- [Importing vendor catalogs](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (blog post)
 
 ### White papers
 
 The following white papers explore various aspects of procurement in Dynamics 365 Supply Chain Management:
 
+- [Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821)
+- [Inbound consignment inventory demo script](https://www.microsoft.com/download/details.aspx?id=101945)
 - [Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Trade agreements](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
 

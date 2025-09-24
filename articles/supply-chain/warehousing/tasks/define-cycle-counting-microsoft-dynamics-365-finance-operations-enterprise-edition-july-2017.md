@@ -32,12 +32,12 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 5. In the **Mode** field, select 'Work'.
 6. Set the **Use existing work** option to Yes. When you set this option to Yes, the system will look for existing work when the mobile device menu item is used.  
 7. In the **Directed by** field, select 'System directed'. When "System directed" is selected, the warehouse worker will be directed to open work that is in defined work classes. (We will create these work classes next.)  
-8. Expand the **Work classes** fastTab. Next, we will create two work classes that will be used with this mobile device menu item. When the menu item is used, these work classes will be queried, and the work that has the highest priority will be shown to the user.  
+8. Expand the **Work classes** FastTab. Next, we will create two work classes that will be used with this mobile device menu item. When the menu item is used, these work classes will be queried, and the work that has the highest priority will be shown to the user.  
 9. Click **New**.
 10. In the**Work class ID** field, select a value.
 11. Click **New**.
 12. In the **Work class ID** field, select a value.
-13. In the **Action Pane**, click **Save**.
+13. In the Action Pane, click **Save**.
 14. Close the page.
 15. Go to **Warehouse management > Setup > Mobile device > Mobile device menu**.
 16. In the list, find and select the desired record.

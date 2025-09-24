@@ -3,7 +3,7 @@ title: Set up a legal entity and tax information for Nicaragua
 description: Learn how to set up a legal entity and tax information for a company in Nicaragua, including a step-by-step process on creating a legal entity.
 author: Cpicon85
 ms.author: v-cpicon
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/13/2023
 ms.custom: bap-template
 ms.reviewer: johnmichalak

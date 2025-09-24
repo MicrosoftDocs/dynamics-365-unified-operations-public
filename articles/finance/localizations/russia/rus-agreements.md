@@ -3,7 +3,7 @@ title: Agreements
 description: Learn about sales and purchase agreements for Russian localization, including a list that outlines the extensions to include in the Russian localization.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 07/01/2024

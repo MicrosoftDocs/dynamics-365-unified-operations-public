@@ -1,24 +1,27 @@
 ---
 title: Create service orders automatically   
 description: Learn how you can create service orders for one service agreement or for several service agreements, including a step-by-step process.
-author: ChristianRytt
-ms.author: crytt
-ms.topic: article
-ms.date: 01/19/2023
-ms.custom:
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SMAServiceOrderTable
+ms.topic: how-to
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Create service orders automatically
 
 [!include [banner](../includes/banner.md)]
 
-You can create service orders for one service agreement or for several service agreements. When they are created, you can view your service orders in the **Service orders** form.
+You can create service orders for one service agreement or for several service agreements. When they're created, you can view your service orders on the **Service orders** page.
 
-Service orders are created only for the valid period of the service agreement. If the interval that you specify in the **Create service orders** form is before the starting date or after the ending date of the service agreement, service orders are created only for the part of the interval that is within the service agreement dates.
+Service orders are created only for the valid period of the service agreement. If the interval that you specify on the **Create service orders** page is before the starting date or after the ending date of the service agreement, service orders are created only for the part of the interval that is within the service agreement dates.
 
-When you create service orders manually or automatically from the service agreement line, the service order must be in the time interval that is defined by the starting and ending dates for the line, unless you do not specify an ending date on the line.
+When you create service orders manually or automatically from the service agreement line, the service order must be in the time interval that is defined by the starting and ending dates for the line, unless you don't specify an ending date on the line.
 
 ## Create service orders automatically for a service agreement
 

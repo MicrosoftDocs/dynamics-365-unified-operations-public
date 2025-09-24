@@ -3,7 +3,7 @@ title: Upgrade from AX 2012 - Plan by using the Upgrade analysis report
 description: Learn about how to use the Upgrade analysis report to plan your upgrade from Microsoft Dynamics AX 2012, including a step-by-step process on running the report script.
 author: ttreen
 ms.author: ttreen
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 07/18/2023
 ms.reviewer: twheeloc
 audience: Developer

@@ -5,6 +5,7 @@ author: kweekley
 ms.author: kweekley
 ms.topic: article
 ms.date: 03/15/2024
+ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
 audience: Application User
@@ -24,7 +25,7 @@ This article provides an overview of the following for the general ledger foreig
 As part of a period-end, accounting conventions require general ledger account balances in foreign currencies to be revalued using different exchange rate types (current, historical, average, etc.). For example, one accounting convention requires assets and liabilities to be revalued at the current exchange rate, fixed assets at the historical exchange rate, and profit and loss accounts at the monthly average. The General ledger foreign currency revaluation can be used to revalue the balance sheet and profit and loss accounts. 
 
 > [!NOTE]
-> Foreign currency revaluation is also available in Accounts receivable (AR) and Accounts payable (AP). If you are using those modules, the outstanding transactions should be revalued using the foreign currency revaluation in those modules. The AR and AP foreign currency revaluation will create an accounting entry in General ledger to reflect the unrealized gain or loss, ensuring that the subledgers and general ledger can be reconciled. Because the AR and AP foreign currency revaluation create accounting entries in General ledger, the accounts receivable and accounts payable main accounts should be excluded from the General ledger foreign currency revaluation. 
+> Foreign currency revaluation is also available in Bank, Accounts receivable (AR) and Accounts payable (AP). If you are using those modules, the outstanding transactions should be revalued using the foreign currency revaluation in those modules. The Bank, AR and AP foreign currency revaluation will create an accounting entry in General ledger to reflect the unrealized gain or loss, ensuring that the subledgers and general ledger can be reconciled. Because the Bank, AR and AP foreign currency revaluation create accounting entries in General ledger, the bank, accounts receivable and accounts payable main accounts should be excluded from the General ledger foreign currency revaluation. 
 
 When you run the revaluation process, the balance in each main account posted in a foreign currency is revalued. The unrealized gain or loss transactions that are created during the revaluation process are system-generated. Two transactions might be created, one for the accounting currency and a second for the reporting currency, if relevant. Each accounting entry will post to the unrealized gain or loss and the main account being revalued.
 

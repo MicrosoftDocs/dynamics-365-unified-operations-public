@@ -1,56 +1,56 @@
 ---
-title: Use assemble list of a fixed asset
-description: In Japan, you can transfer an inventory item to a fixed asset. Learn about assigning components in an assemply list, including a step-by-step process.
+title: Use the assembly list of a fixed asset
+description: Learn how to use the assembly list of a fixed asset for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 05/09/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: AssetTable, AssetComponentList_JP, LedgerJournalTable, LedgerJournalTransAsset
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
-# Use assemble list of a fixed asset
+# Use assembly the list of a fixed asset
 
 [!include [banner](../../includes/banner.md)]
 
+This article explains how to use the assembly list of a fixed asset for Japan in Microsoft Dynamics 365 Finance.
+
 In Japan, you can transfer an inventory item to a fixed asset. 
 
+The following procedures walk you through how to use the assembly list to consume inventory items and create the fixed asset concurrently.
 
-
-This task walks you through using the assembly list to consume inventory items and create the fixed asset at the same time.
-
-
-
-This task was created using the demo data company JPMF.
-
+The procedures use the demo data company JPMF.
 
 ## Assign component in an assembly list
-1. Go to Fixed assets > Fixed assets > Fixed assets.
-2. In the list, mark the selected row.
-    * Select the fixed asset that you want to assign the assembly list to.  
-3. On the Action Pane, click Fixed asset.
-4. Click Components.
-5. Click Add.
-6. In the Item number field, type a value.
-    * For example: enter 'D0001'  
-7. Click Save.
+
+To assign component in an assembly list, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
+1. In the list, mark the selected row.
+1. Select the fixed asset to which you want to assign the assembly list.  
+1. On the Action Pane, select **Fixed asset**.
+1. Select **Components**.
+1. Select **Add**.
+1. In the **Item number** field, enter a value. 
+1. Select **Save**.
 
 ## Use the assembly list to post a fixed asset write-up transaction
-1. Go to Fixed assets > .. > Fixed assets journal.
-2. Click New.
-3. In the Name field, type a value.
-4. Click Lines.
-5. In the Date field, enter a date.
-6. In the Transaction type field, select 'Write up adjustment'.
-7. In the Account field, specify the desired values.
-    * Select the fixed asset number that you have assigned to the assembly list.  
-8. In the Debit field, enter a number.
-    * Enter the cost of the inventory item.  
-9. Click Post.
+
+To use the assembly list to post a fixed asset write-up transaction, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets journal**.
+1. Select **New**.
+1. In the **Name** field, enter a value.
+1. Select **Lines**.
+1. In the **Date** field, enter a date.
+1. In the **Transaction type** field, select **Write up adjustment**.
+1. In the **Account** field, select the fixed asset number that you assigned to the assembly list.  
+1. In the **Debit** field, enter the cost of the inventory item.  
+1. Select **Post**.
 
 
 

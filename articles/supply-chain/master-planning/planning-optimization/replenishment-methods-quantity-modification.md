@@ -1,8 +1,8 @@
 ---
 title: Replenishment methods and quantity modification
 description: Learn about replenishment methods. It also explains how the multiple order quantity for a product affects the result, including an outline on coverage codes.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 6/1/2021
 ms.reviewer: kamaybac

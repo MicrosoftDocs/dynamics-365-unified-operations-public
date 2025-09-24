@@ -1,6 +1,6 @@
 --- 
 title: Create process activities for lean manufacturing
-description: Learn how to create a process activity for lean manufacturing, including step-by-step processes for finding production flow versions and creating new activites. 
+description: Learn how to create a process activity for lean manufacturing, including step-by-step processes for finding production flow versions and creating new activities. 
 author: johanhoffmann
 ms.author: johanho
 ms.topic: how-to

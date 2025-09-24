@@ -1,8 +1,8 @@
 ---
 title: Intercompany planning
 description: Learn about intercompany planning and explains how to configure intercompany planning in Microsoft Dynamics 365 Supply Chain Management.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 12/02/2020
 ms.custom: 

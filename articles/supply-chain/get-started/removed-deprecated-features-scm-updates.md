@@ -3,8 +3,8 @@ title: Removed or deprecated features in Dynamics 365 Supply Chain Management
 description: Learn about features that have been removed, deprecated, or that are planned for removal in Dynamics 365 Supply Chain Management.
 author: kamaybac
 ms.author: kamaybac
-ms.topic: conceptual
-ms.date: 11/11/2024
+ms.topic: article
+ms.date: 08/28/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -24,6 +24,82 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Supply Chain Management 10.0.45 release
+
+### Inventory On-hand mobile app (preview)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Microsoft has decided not to continue development and support for this preview feature. |
+| **Replaced by another feature?** | Yes |
+| **Product areas affected** | Supply Chain Management – Inventory management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Removed. The *Inventory On-hand mobile app* preview (previously available on the Power Platform Admin Center) was never made generally available. It's now provided as a sample app that you can download from the [scmsamples-InventoryOnHand repository on GitHub](https://github.com/microsoft/scmsamples-InventoryOnHand) and customize as needed. Learn more in [Inventory On-hand mobile app](../inventory/inventory-onhand-mobile-app.md). |
+
+## Features removed or deprecated in the Supply Chain Management 10.0.44 release
+
+### Inquire into inventory with Copilot (preview)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Microsoft has decided not to continue development on this preview feature. |
+| **Replaced by another feature?** | No |
+| **Product areas affected** | Supply Chain Management – Inventory management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Removed. This preview feature was never made generally available and is now completely removed from the [Inventory Visibility service](../inventory/inventory-visibility.md). |
+
+### SHA1 hashing in the InventDim table
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | To ensure that data in the `InventDim` table is unique and easy to search for, the system hashes some of its data. The system previously used SHA1 hashing, which is now outdated, so we're replacing it with SpookyHash. |
+| **Replaced by another feature?** | Yes. SHA1 hashing is being replaced by SpookyHash. |
+| **Product areas affected** | Supply Chain Management – Inventory |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | As of Supply Chain Management version 10.0.44, the system uses SpookyHash instead of SHA1 to hash data in the `InventDim` table. When you upgrade to version 10.0.44, the system automatically schedules a batch job that converts all `InventDim` data hashed using SHA1 to instead use SpookyHash. Version 10.0.44 can work with both SHA1 and SpookyHash data, but support for SHA1 will be removed in a future release. Extensibility was never supported for this part of the application, but if you have external code that uses SHA1 when creating, updating, or searching data in the `InventDim` table, you must stop using that code before upgrading to Supply Chain Management 10.0.44 because it will corrupt your data. |
+
+### Rename item number (preview)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The item number field is a primary key that is used across multiple systems. The *(Preview) Rename item number* feature allowed users to edit the item number field, but we found that the feature could cause data inconsistencies in multi-system and apps-integration scenarios, leading to data integrity and data corruption issues. The feature was previously in preview and was never made generally available for use in production environments. |
+| **Replaced by another feature?** | No |
+| **Product areas affected** | Supply Chain Management – Product information management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | The *(Preview) Rename item number* feature was removed from the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace in Dynamics 365 Supply Chain Management version 10.0.44 and is no longer available. The capability is completely removed for all customers. If you need to rename an item number, we recommend that you use alternate methods, such as deleting and creating a new item, renaming attributes, or renaming search names, product names, and other item-related fields. |
+
+## Features removed or deprecated in the Supply Chain Management 10.0.43 release
+
+### The "Work creation number" number sequence has been removed
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The *Work creation number* number sequence could sometimes create problems when the same prefixes were used for other number sequences. |
+| **Replaced by another feature?** | Yes, the *Work creation number* number sequence and been replaced by the *Work creation ID* number sequence. The *Work creation ID* number sequence is designed to avoid conflicts with other number sequences. |
+| **Product areas affected** | Supply Chain Management – Warehouse management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Previously, there were two number sequences that were used to generate values for the **Work creation number** field for work records (*Work creation ID* and *Work creation number*). The newer *Work creation ID* number sequence has been available as a replacement for *Work creation number* for some time. For all currently available versions of Supply Chain Management (not just version 10.0.43 and later), you should always use the *Work creation ID* number sequence to generate work creation identification numbers. Although the *Work creation number* sequence is still present in the demo data, it's no longer used by the system and production data doesn't include the *Work creation number* number sequence. You can set up the *Work creation ID* number sequence on the **Warehouse management parameters** page. |
+
+### "Adjustment out" mobile device menu items must now use process guide
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework.md) offers enhanced extensibility support and allows for easier changes in the feature behavior. The framework will now be required for all mobile device menu items that use the *Adjustment out* work creation process. |
+| **Replaced by another feature?**  | No. The process guide framework will be required for all mobile device menu items that use the *Adjustment out* work creation process. The ability to turn off this option is being removed from the product. |
+| **Product areas affected** | Supply Chain Management – Warehouse management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | The **Use process guide** setting for mobile device menu items that use the *Adjustment out* work creation process will be made mandatory in Supply Chain Management version 10.0.45. Approximately one year after the release of version 10.0.45, the non-process guide implementation will no longer be supported and may eventually be removed from the product. Learn more in [Set up mobile device menu items for adjustment in and adjustment out](../warehousing/reason-codes-for-counting-journals.md#setup-adjustment-in-out). |
+
+### "Spot cycle counting" mobile device menu items must now use process guide
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework.md) offers enhanced extensibility support and allows for easier changes in the feature behavior. The framework will now be required for all mobile device menu items that use the *Spot cycle counting* work creation process. |
+| **Replaced by another feature?**  | No. The process guide framework will be required for all mobile device menu items that use the *Spot cycle counting* work creation process. The ability to turn off this option is being removed from the product. |
+| **Product areas affected** | Supply Chain Management – Warehouse management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | The **Use process guide** setting for mobile device menu items that use the *Spot cycle counting* work creation process will be enabled by default in Supply Chain Management version 10.0.45, and it will be made mandatory in version 10.0.47. Approximately one year after the release of version 10.0.47, the non-process guide implementation will no longer be supported and may eventually be removed from the product. Learn more in [Set up mobile devices for warehouse work](../warehousing/configure-mobile-devices-warehouse.md). |
+
 ## Features removed or deprecated in the Supply Chain Management 10.0.42 release
 
 ### Register material consumption on the production floor execution interface (WMS-enabled) (preview)
@@ -34,7 +110,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**  | Yes. The *Register material consumption on the production floor execution interface (WMS-enabled)* feature (previously in preview) has been replaced by the *[Register material consumption as complete and edit dimensions on the production floor execution interface](../production-control/production-floor-execution-configure.md#material-consumption)* feature, which also adds the ability to use the production floor execution interface to register material consumption for WMS-enabled items. |
 | **Product areas affected** | Supply Chain Management – Production control |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | Removed. If you haven't enabled the old *Register material consumption on the production floor execution interface (WMS-enabled)* feature, then you'll only see the newer feature in feature management. If you have enabled the old feature, you'll still be able to use it, but you'll soon be contacted by Microsoft Support with instructions on how to replace it with the newer *Register material consumption as complete and edit dimensions on the production floor execution interface* feature. |
+| **Status** | Removed. As of Supply Chain Management version 10.0.41, if you never enabled the old *Register material consumption on the production floor execution interface (WMS-enabled)* feature, then you'll only see the newer *Register material consumption as complete and edit dimensions on the production floor execution interface* feature in feature management. If you previously enabled the old feature, you'll still be able to use it, but you'll soon be contacted by Microsoft Support with instructions on how to replace it with the newer feature. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.41 release
 
@@ -46,7 +122,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**  | Yes, the Pricing management module is being replaced by the new [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md). |
 | **Product areas affected** | Supply Chain Management – Pricing management |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | Deprecated. Approximately one year after the release of version 10.0.41, the Pricing management module will no longer be supported and may eventually be removed from the product. |
+| **Status** | Deprecated and will be removed in a future release. It is replaced by the [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md), which offers nearly all of the same functionality as the deprecated Pricing management module, plus several important enhancements. Both the deprecated pricing management module and the Unified pricing management module use similar or identical navigation paths in the Supply Chain Management user interface, so only one of these modules can be active at a time. As of Supply Chain Management version 10.0.41, if you never enabled the deprecated pricing management module in your environment, only the Unified pricing management module will be available to you. If you have enabled the deprecated pricing management module, you can continue to use it until it is removed, but we recommend that you transition to the Unified pricing management module as soon as possible to take advantage of the new features and enhancements that it offers. For help transitioning from the deprecated pricing management module to the Unified pricing management module, please contact Microsoft Support. |
 
 ### Job card terminal
 

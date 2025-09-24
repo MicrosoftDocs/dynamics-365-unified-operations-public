@@ -5,7 +5,7 @@ title: Set up rounding rules
 description: This article describes how to set up rounding rules in Dynamics 365 Human Resources to meet the needs of your organization.
 author: twheeloc
 ms.date: 07/02/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

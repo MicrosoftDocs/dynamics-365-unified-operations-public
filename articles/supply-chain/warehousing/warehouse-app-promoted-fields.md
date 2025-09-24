@@ -3,8 +3,8 @@ title: Configure promoted fields for steps in the Warehouse Management mobile ap
 description: Learn how to promote and highlight specific information for any step in the task flows for the Warehouse Management mobile app.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
-ms.date: 08/09/2022
+ms.topic: how-to
+ms.date: 06/25/2025
 ms.reviewer: kamaybac
 ms.search.form: WHSMobileAppFlowStepSelectPromotedFields, WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields
 ---
@@ -13,19 +13,7 @@ ms.search.form: WHSMobileAppFlowStepSelectPromotedFields, WHSMobileAppFlowStepLi
 
 [!include [banner](../includes/banner.md)]
 
-> [!IMPORTANT]
-> The features that are described in this article apply only to the new Warehouse Management mobile app. They don't affect the old warehouse app, which is now deprecated.
-
 This article describes how to promote and highlight specific information for any step in the task flows for the Warehouse Management mobile app. This capability can help focus workers' attention on the most important fields as they work through a flow. For each step in every process, admins can select which fields to promote and which fields to highlight.
-
-## Enable promoted fields in your system
-
-If you're running Supply Chain Management version 10.0.28 or earlier, then before you can set up promoted fields, you must complete the following procedure to enable the required features and generate the required field names in the Warehouse Management mobile app. If you're running Supply Chain Management version 10.0.29 or later, the features are mandatory and can't be turned off, so you can skip this procedure.
-
-1. Go to **System administration \> Workspaces \> Feature management**. (See [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for more information about this page.)
-1. Make sure that the *Warehouse app step instructions* feature is turned on for your system. This feature is a prerequisite for the *Warehouse app promoted fields* feature. As of Supply Chain Management version 10.0.29, it's mandatory and can't be turned off. For more information about the *Warehouse app step instructions* feature, see [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md).
-1. Make sure that the *Warehouse app promoted fields* feature is turned on for your system. This is the feature described in this article. As of Supply Chain Management version 10.0.29, it's mandatory and can't be turned off.
-1. Update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app. Learn more in [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 
 ## Configure promoted fields from a menu-specific override
 
@@ -37,10 +25,12 @@ Use the following procedure to set up promoted fields.
 1. In the **Promoted fields** dialog box, select the fields that you want to promote. You can also highlight up to two of the selected fields. Highlighted fields will be shown in bold in the Warehouse Management mobile app. As you select fields, consider the fact that some screens might be large enough to show only the top one or two promoted fields. For an example that shows how to use these settings, see the scenario later in this article.
 
     > [!NOTE]
-    > - The **Available fields** list includes all the fields that *could* appear for the menu item. However, other factors (such as item composition) determine which fields *actually do* appear in the Warehouse Management mobile app. 
+    > - The **Available fields** list includes all the fields that *could* appear for the menu item. However, other factors (such as item composition) determine which fields *actually do* appear in the Warehouse Management mobile app.
     > - You can only promote the fields that are shown in the **Available fields** list. You can't add new fields from here.
     > - For a given step, you should only promote fields that are displayed by default in the mobile app for that step. If you promote a field that isn't shown in the app, that setting has no effect.
     > - If you've promoted one or more fields, then only those fields will be shown on the main page of the app. However, workers can still view the remaining fields by opening the details page.
+    > - If the promoted field has a null value, it won't be displayed.
+    > - Non-promoted fields aren't removed from the mobile app page, just from the main card. Workers can still access them from the main card by selecting the card. This mechanism provides a way to hide less relevant fields. Non-promoted fields that are required for a workflow are always shown when relevant.
 
 1. Select **OK** to apply your settings. Your selected fields are now listed on the **Select promoted fields** FastTab.
 
@@ -52,7 +42,7 @@ To use the specified sample records and values to work through this scenario, yo
 
 ### Configure sales picking with promoted steps on the license plate step
 
-In this procedure, you will set up promoted and highlighted fields for the **Sales picking** menu item in the license plate step.
+In this procedure, you'll set up promoted and highlighted fields for the **Sales picking** menu item in the license plate step.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device steps**.
 1. Find the step ID that is named *LicensePlateId*, and select it.
@@ -73,7 +63,7 @@ In this procedure, you will set up promoted and highlighted fields for the **Sal
 
 ### View the promoted fields in the Warehouse Management mobile app
 
-In this procedure, you will open the Warehouse Management mobile app and go through the steps to view the fields that you promoted and highlighted in the previous procedure.
+In this procedure, you'll open the Warehouse Management mobile app and go through the steps to view the fields that you promoted and highlighted in the previous procedure.
 
 1. In Microsoft Dynamics 365 Supply Chain Management, create a sales order that will require a pick step to pick from a location that is license plate tracked. Then release the sales order to the warehouse. Make a note of the work ID that is generated.
 1. Open the Warehouse Management mobile app, and sign in to warehouse 24. (In the standard demo data, sign in by using *24* as the user ID and *1* as the password.)

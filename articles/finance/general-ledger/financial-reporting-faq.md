@@ -3,7 +3,7 @@ title: Financial reporting FAQ
 description: Access answers to some frequently asked questions about Financial reporting, including questions about restricting access and error messages.
 author: jinniew
 ms.author: jiwo
-ms.topic: conceptual
+ms.topic: faq
 ms.date: 05/20/2024
 ms.custom: 
 ms.reviewer: twheeloc

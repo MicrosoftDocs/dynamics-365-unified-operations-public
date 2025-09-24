@@ -3,7 +3,7 @@ title: Consolidate shipments by using the shipment consolidation workbench
 description: Learn about a scenario where multiple orders are released to the warehouse and then consolidated into shipments later by using the shipment consolidation workbench.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/09/2022
 ms.custom:
 ms.reviewer: kamaybac
@@ -251,6 +251,5 @@ Four shipments should have been created:
 
 - [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,25 +1,24 @@
 ---
 title: Customer electronic invoices in Norway
-description: Learn how to set up and process customers electronic invoices in Norway, including prerequisites and an outline on importing electronic reporting configurations.
+description: Learn how to set up and process customers electronic invoices in Norway in Microsoft Dynamics 365 Finance.
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 06/12/2024
 ms.reviewer: johnmichalak
 ms.search.region: Norway
 ms.search.validFrom: 2019-11-01
-ms.dyn365.ops.version: 10.0.08
 ---
 
 # Customer electronic invoices in Norway
 
 [!include [banner](../../includes/banner.md)]
 
-For compliance with European Union Directive 2014/55/EU, the Norway-specific **EHF Billing 3.0** format for electronic invoices has been implemented based on the [PEPPOL Billing 3.0](https://docs.peppol.eu/poacc/billing/3.0/) specification.
+This article explains how to set up and process customers electronic invoices in Norway in Microsoft Dynamics 365 Finance.
 
-This article provides information about how to configure and issue customer electronic invoices in Norway.
+For compliance with European Union Directive 2014/55/EU, the Norway-specific **EHF Billing 3.0** format for electronic invoices has been implemented based on the [PEPPOL Billing 3.0](https://docs.peppol.eu/poacc/billing/3.0/) specification.
 
 ## Prerequisites
 
@@ -41,7 +40,9 @@ For more information about how to import ER configurations, see [Download Electr
 
 ### Reference the imported ER format configurations
 
-1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+To reference the imported ER format configurations, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, select the imported formats for electronic documents:
 
     - **Sales and Free text invoice:** OIOUBL Sales invoice
@@ -55,7 +56,9 @@ For more information about how to import ER configurations, see [Download Electr
 
 ### Configure legal entity parameters
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+To configure legal entity parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's value-added tax (VAT) number.
 3. On the **Registration numbers** FastTab, set the **Print Foretaksregisteret on sales documents** option for Norway to **Yes**.
 4. On the **Bank account information** FastTab, in the **Routing number** field, enter the company's organization number.
@@ -66,16 +69,20 @@ For more information about how to import ER configurations, see [Download Electr
 
 ### Configure customer parameters
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
+To configure customer parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
 2. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
 3. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice.
 4. In the **Tax exempt number** field, enter the customer's VAT exempt number.
 
 ![Customer parameters.](../media/emea-nor-ger-customer.jpg)
 
-### Units of measure configuration
+### Configure units of measure configuration
 
-1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
+To configure units of measure configuration, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID in the list, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
 4. In **Value** section, in **Value** field, enter the external code that should be used as the units of measure code for international trade. This code is recommended by the [United Nations Economic Commission for Europe (UN/ECE)](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/).
@@ -95,19 +102,25 @@ When you register free text invoices, invoices that are based on sales orders, o
 
 #### Free text invoices
 
-1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
+To enter a customer requisition for a free text invoice, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 2. Create a new invoice, or select an existing invoice.
 3. In the **Header** view, on the **Customer** FastTab, in the **References** section, enter values in the **Customer requisition** and **Customer reference** fields.
 
 #### Sales orders
 
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+To enter a customer requisition for a sales order, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 2. Create a new sales order, or select an existing sales order. 
 3. In the **Header** view, on the **General** FastTab, in the **References** section, enter values in the **Customer requisition** and **Customer reference** fields.
 
 #### Project invoices
 
-1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
+To enter a customer requisition for a project invoice, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Project management and accounting** \> **Projects** \> **Project contracts**.
 2. Create a new project contract, or select an existing project contract.
 3. On **Funding sources** FastTab, select or create a funding source of the **Customer** type, and then select **Details**.
 
@@ -131,7 +144,9 @@ You can enter customer accounting codes when you work with free text invoices, i
 
 #### Free text invoices
 
-1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
+To enter customer accounting codes for free text invoices, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 2. Create a new invoice, or select an existing invoice. 
 3. In the **Header** view, on the **General** FastTab, in the **e-Invoice** section, in the **Dimension account** field, enter the accounting code for the invoice. 
 4. To have a separate accounting code for each invoice line, follow these steps:
@@ -144,7 +159,9 @@ You can enter customer accounting codes when you work with free text invoices, i
 
 #### Sales orders
 
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+To enter customer accounting codes for sales orders, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 2. Create a new sales order, or select an existing sales order.
 3. In the **Header** view, on the **General** FastTab, in the **e-Invoice** section, in the **Dimension account** field, enter the accounting code for the order.
 4. To have a separate accounting code for each order line, follow these steps:
@@ -155,7 +172,9 @@ You can enter customer accounting codes when you work with free text invoices, i
 
 #### Project invoices
 
-1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
+To enter customer accounting codes for project invoices, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Project management and accounting** \> **Projects** \> **Project contracts**.
 2. Create a new project contract, or select an existing project contract.
 3. On **Funding sources** FastTab, create or select a funding source of the **Customer** type, and then select **Details**.
 4. On **Funding source details** page, on the **E-invoice** FastTab, in the **Dimension account** field, enter the project-specific default accounting code.
@@ -185,9 +204,9 @@ When an invoice is posted, you can generate an electronic invoice by selecting *
 
 ### View e-invoices
 
-To inquire about the XML files of electronic invoices that have been generated, follow these steps.
+To view e-invoices, follow these steps.
 
-1. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
 2. Select a job, and then select **Show files**.
 
     ![Show files button.](../media/emea-nor-ger-einvoice-open.jpg)

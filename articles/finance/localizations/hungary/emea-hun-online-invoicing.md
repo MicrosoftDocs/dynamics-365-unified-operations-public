@@ -4,14 +4,15 @@ description: Learn how to set up Electronic reporting (ER) configurations, and h
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 07/11/2024
 ms.reviewer: johnmichalak
 ms.search.region: Hungary
 ms.search.validFrom: 2016-11-30
 ms.search.form: AssetParameters
 ms.dyn365.ops.version: 10.0.0
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Online invoicing system
@@ -61,9 +62,6 @@ For more information about how to download ER configurations from the Microsoft 
 The format that is used to report invoice data to the Hungarian Online Invoicing System requires specific values from enumerated lists for some elements (for example, units of measure or line expression indicators). For these elements, before you start to use RTIR, you must set up application-specific parameters that the **RTIR Invoice Data (HU)** format will use.
 
 When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
-
-> [!NOTE]
-> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 ### Line expression indicator
 

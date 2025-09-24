@@ -4,9 +4,12 @@ description: Learn about the Lookup form pattern, including overviews on usage, 
 author: jasongre
 ms.author: jasongre
 ms.topic: article
-ms.date: 11/09/2017
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 01/23/2025
+ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -124,8 +127,6 @@ Form: **CaseCategoryLookup** (Click **Common** &gt; **Common** &gt; **Cases** &g
 ### Lookup with preview
 
 Form: **HcmWorkerLookup** (Click **Human resources** &gt; **Common** &gt; **Organization** &gt; **Positions** &gt; **Positions**, and then click a record to go to the details. Expand the **Worker assignment** FastTab, click **New**, and then click the drop-down arrow in the **Worker** field.) 
-
-[![Example of lookup form with preview for HcmWorkerLookup.](./media/lookupform6.png)](./media/lookupform6.png)
 
 ## Appendix
 ### Frequently asked questions

@@ -3,7 +3,7 @@ title: Database movement API - Throttling
 description: Learn about an overview of throttling for the Database Movement application programming interface (API) about throttling.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 02/23/2024
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak

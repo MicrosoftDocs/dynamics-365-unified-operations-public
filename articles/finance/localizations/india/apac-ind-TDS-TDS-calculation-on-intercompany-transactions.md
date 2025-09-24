@@ -3,7 +3,7 @@ title: TDS calculation on intercompany transactions
 description: Learn about the process that is used to calculate Tax Deducted at Source (TDS) on intercompany transactions in phases and where it is posted.
 author: epodkolzina
 ms.author: epodkolzina
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 07/01/2024

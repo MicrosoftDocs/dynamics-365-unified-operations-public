@@ -3,13 +3,13 @@ title: Make fields on mobile app pages clickable
 description: Learn about how to customize the fields on a mobile app page so that they are shown as email addresses, phone numbers, or URLs.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/26/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2017-07-20
-ms.dyn365.ops.version: Platform update 3
+ms.custom: 
+  - bap-template
 ---
 
 # Make fields on mobile app pages clickable

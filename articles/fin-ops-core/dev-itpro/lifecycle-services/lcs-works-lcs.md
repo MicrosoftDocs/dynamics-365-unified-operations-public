@@ -12,6 +12,7 @@ ms.search.validFrom: 2016-02-28
 ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 785baef9-aa46-44c3-95fa-e34749c2b44e
+ms.custom: sfi-image-nochange
 ---
 
 # Lifecycle Services for finance and operations apps customers

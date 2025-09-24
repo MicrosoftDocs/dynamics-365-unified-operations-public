@@ -3,9 +3,9 @@ title: Call center sales functionality
 description: This article describes call center sales functionality in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 05/28/2024
+ms.update-cycle: 1095-days
 ms.topic: article
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
-audience: Application User
 ms.reviewer: v-chrgriffin
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
 ms.search.region: Global

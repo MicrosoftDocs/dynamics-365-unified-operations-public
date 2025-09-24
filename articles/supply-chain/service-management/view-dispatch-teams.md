@@ -1,9 +1,9 @@
 ---
 title: View dispatch teams  
 description: Learn how to view dispatch teams, including a step-by-step process for grouping dispatch boards by dispatch teams and additional resources.
-author: ChristianRytt
-ms.author: crytt
-ms.topic: article
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac
@@ -14,7 +14,7 @@ ms.search.form: SMADispatchBoard
 
 [!include [banner](../includes/banner.md)]
 
-Service orders in the **Dispatch board** form are grouped by dispatch team.
+Service orders on the **Dispatch board** page are grouped by dispatch team.
 
 1. Go to **Service management** \> **Periodic** \> **Dispatch board**.
 

@@ -2,7 +2,7 @@
 title: Enter applicant and application data manually
 description: Learn about how to manually maintain information about applicants and their application, including outlines on creating new applicant records. 
 author: twheeloc
-ms.author: anbichse
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 01/10/2022
 ms.custom:  

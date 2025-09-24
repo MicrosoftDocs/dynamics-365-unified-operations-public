@@ -3,7 +3,7 @@ title: Bank symbols for bank accounts
 description: Learn about bank symbols for bank accounts, including an outline on setting up a list of constant symbols for bank accounts.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 07/22/2024

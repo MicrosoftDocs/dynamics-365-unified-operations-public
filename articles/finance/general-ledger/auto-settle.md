@@ -17,7 +17,6 @@ ms.assetid:
 # Automate ledger settlements
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In Microsoft Dynamics 365 Finance version 10.0.31, the **Automate ledger settlements process** feature is available in the **Feature management** workspace. Beginning in version 10.0.40, this functionality is enabled on the **General Ledger parameters** page, under the **Ledger settlements** page. These features are managed through the **Enable process automation for ledger settlement** parameter. You can enable the **Enable process automation for ledger settlement** parameter only if the **Enable advanced awareness options** parameter has been enabled.
 

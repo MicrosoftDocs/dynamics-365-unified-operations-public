@@ -5,7 +5,7 @@ title: Create employment categories
 description: Employment categories can be set up in Dynamics 365 Human Resources to match your workers.
 author: twheeloc
 ms.date: 07/02/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

@@ -3,7 +3,7 @@ title: Plan your local chart of accounts
 description: Learn about what will help you plan the chart of accounts when you have requirements for statutory/local requirements for your organization.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/13/2024
 ms.reviewer: twheeloc
 audience: Application User

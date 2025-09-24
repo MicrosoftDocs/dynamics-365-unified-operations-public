@@ -3,21 +3,21 @@ title: Use external catalogs for PunchOut e-procurement
 description: Learn how you can use external catalogs to create and submit requisitions, including an outline on creating a requisition to use external catalogs.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: article
-ms.date: 06/20/2017
 ms.reviewer: kamaybac
 ms.search.form: PurchVendorPortalRequests, CatExternalCatalogBasketWizard, CatExternalCatalogPunchoutDialog
-ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Use external catalogs for PunchOut e-procurement
 
 [!include [banner](../includes/banner.md)]
 
-By using external catalogs for PunchOut e-procurement, you don't have to maintain information about your vendors' products in your own master data. 
-Instead, the shopping cart on a vendor's website is converted to requisition lines that have the correct product information. 
+By using external catalogs for PunchOut e-procurement, you don't have to maintain information about your vendors' products in your own master data. Instead, the shopping cart on a vendor's website is converted to requisition lines that have the correct product information.
 
-You should avoid maintaining the descriptions and prices of your vendors’ products in your own product master data. Instead, use external catalogs for PunchOut e-procurement. Then, when employees create requisitions, they can “punch out” to a vendor’s external catalog site (in other words, they leave your system and go to the vendor’s site). The products that are added to the shopping cart on the vendor’s website can then be converted to requisition lines. Therefore, you get the correct product information: product ID, name, price, and so on.
+You should avoid maintaining the descriptions and prices of your vendors’ products in your own product master data. Instead, use external catalogs for PunchOut e-procurement. Then, when employees create requisitions, they can *punch out* to a vendor’s external catalog site (in other words, they leave your system and go to the vendor’s site). The products that are added to the shopping cart on the vendor’s website can then be converted to requisition lines. Therefore, you get the correct product information: product ID, name, price, and so on.
 
 To use external catalogs, an employee must create a requisition on the **My purchase requisitions** page.
 
@@ -30,14 +30,14 @@ Depending on your permissions, change the requester, buying legal entity, and re
 For more information about policies, see [Purchasing policies overview](../procurement/purchase-policies.md).
 
 - To find external catalogs for specific procurement categories, enter text in the catalog search field.
-- To add products from a vendor’s external catalog on the vendor’s website, click the external catalog. Then add products to the shopping cart, and check out. The shopping cart lines will be transferred to Microsoft Dynamics 365.
+- To add products from a vendor’s external catalog on the vendor’s website, select the external catalog. Then add products to the shopping cart, and check out. The shopping cart lines will be transferred to Microsoft Dynamics 365.
 
 If there are multiple options for procurement categories, select the correct procurement category before you add the lines to the requisition.
 After lines have been added to a requisition, you can add more lines without using external catalogs. Alternatively, you can continue to use external catalogs to add lines.
 
-When the requisition is ready, use the **Workflow** > **Submit** action to submit it for approval.
+When the requisition is ready, use the **Workflow** \> **Submit** action to submit it for approval.
 
-### Related information
+## Related information
 
 - [Set up an external catalog for PunchOut e-procurement](set-up-external-catalog-for-punchout.md)
 - [Purchasing cXML enhancements](purchasing-cxml-enhancements.md)

@@ -3,7 +3,7 @@ title: Configure conditional decisions in a workflow
 description: Learn about how to configure conditional decisions in a workflow, including outlines on naming decisions and setting conditions.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User

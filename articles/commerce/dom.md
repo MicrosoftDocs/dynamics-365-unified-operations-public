@@ -31,7 +31,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
 The following video provides an overview of DOM capabilities in Dynamics 365 Commerce.
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRYl]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=83cec34a-642e-4a0e-a96d-3357f73f41bd]
 
 ## Additional resources
 

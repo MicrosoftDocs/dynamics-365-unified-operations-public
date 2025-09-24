@@ -7,6 +7,7 @@ ms.reviewer: johnmichalak
 ms.search.form:
 ms.topic: how-to
 ms.date: 10/29/2024
+ms.update-cycle: 180-days
 audience: Application User
 ms.custom: 
   - bap-template
@@ -25,6 +26,9 @@ This Copilot capability is a conversational experience powered by a Microsoft Co
 This article describes availability and explains how to enable generative help and guidance with Copilot.
 
 After you complete the steps in this article, the Copilot icon appears at the top of all finance and operations apps. Users can then select the Copilot icon to access generative help and guidance.
+
+> [!TIP]
+> Users can provide feedback to Copilot by selecting the thumbs-up or thumbs-down buttons in the sidecar. You can add support for written feedback by turning on [enhanced user feedback for Copilot](../../dev-itpro/copilot/enable-copilot-feedback.md). This feedback helps improve the quality of the help and guidance that Copilot generates.
 
 ## Enable the feature
 

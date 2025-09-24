@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 02/03/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-11-29
@@ -45,7 +45,7 @@ This article explains how to upgrade Windows Server in your Microsoft Dynamics 3
 1. Do an in-place upgrade by following the instructions in [Upgrade Windows Server 2016 to Windows Server 2019](/windows-server/upgrade/upgrade-2016-to-2019).
 
     > [!NOTE]
-    > You will receive a warning that states that you must reconfigure your AD FS role after the upgrade is completed. Because you've collected the information that is required to re-create the application group, this warning isn't an issue. However, if you have additional applications, be sure to back up the client IDs so that you can reuse them when you re-create the applications later.
+    > You'll receive a warning that states that you must reconfigure your AD FS role after the upgrade is completed. Because you've collected the information that's required to re-create the application group, this warning isn't an issue. If you have additional applications, be sure to back up the client IDs so that you can reuse them when you re-create the applications later.
 
 1. After the machine has been upgraded, open Server Manager, and complete the configuration of AD FS.
 1. Configure AD FS by following the instructions in [Configure AD FS](./setup-deploy-on-premises-pu41.md#configureadfs). However, don't run the **Publish-ADFSApplicationGroup.ps1** script.
@@ -53,7 +53,7 @@ This article explains how to upgrade Windows Server in your Microsoft Dynamics 3
 
     ```powershell
     # Host URL is your DNS record\host name for accessing the AOS
-    .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -ClientId <"Value of Active Directory->Client ID for AOS application group"> -FinancialReportingClientId <"Client ID for Financial Reporting application group">
+    .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -ClientId <"Value of Active Directory->Client ID for AOS application group"> -FinancialReportingClientId <"Client ID for Financial Reporting application group"> -D365FOVersion <version>
     ```
 
 #### Upgrade an AD FS farm
@@ -77,7 +77,7 @@ If you're using a SQL Server database, follow the instructions in [Upgrading to 
 
     ```powershell
     # Host URL is your DNS record\host name for accessing the AOS
-    .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -ClientId <"Value of Active Directory->Client ID for AOS application group"> -FinancialReportingClientId <"Client ID for Financial Reporting application group">
+    .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -ClientId <"Value of Active Directory->Client ID for AOS application group"> -FinancialReportingClientId <"Client ID for Financial Reporting application group"> -D365FOVersion <version>
     ```
 
     Your new farm/instance is now ready to be used by Finance + Operations (on-premises).
@@ -96,14 +96,14 @@ If you're using a SQL Server database, follow the instructions in [Upgrading to 
 To correctly support authentication with the Office add-ins, AD FS on Windows Server 2019 or later requires that you set up Cross Origin Resource Sharing (CORS) headers. This information is available in [Configure AD FS](./setup-deploy-on-premises-pu41.md#configureadfs). If you aren't sure whether you're missing the configuration, run the following script.
 
 ```powershell
-.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
+.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json" -D365FOVersion <version>
 ```
 
 ## Upgrade a node in your Service Fabric cluster
 
-In Service Fabric standalone clusters, upgrade of a node's operating system is a machine-specific operations. (A node can be either a virtual machine \[VM\] or a physical machine.) There are two methods for doing an in-place upgrade for a node. In the first method, the upgrade operation preserves data and the operating system configuration. In the second method, the upgrade operation doesn't preserve data and the operating system configuration. You can also create new nodes and then add them to the cluster.
+In Service Fabric standalone clusters, upgrade of a node's operating system is a machine-specific operation. (A node can be either a virtual machine \[VM\] or a physical machine.) There are two methods for doing an in-place upgrade for a node. In the first method, the upgrade operation preserves data and the operating system configuration. In the second method, the upgrade operation doesn't preserve data and the operating system configuration. You can also create new nodes and then add them to the cluster.
 
-All the methods that are described in this section will keep your cluster up and running, and won't affect the availability of the service, provided that you don't upgrade all the nodes at the same time.
+All the methods that are described in this section keep your cluster up and running, and won't affect the availability of the service, provided that you don't upgrade all the nodes at the same time.
 
 Regardless of the method that you use to upgrade the nodes, consider upgrading all the nodes in a node type before you proceed to another node type.
 
@@ -114,7 +114,7 @@ Regardless of the method that you use to upgrade the nodes, consider upgrading a
 
 ### Do an in-place upgrade that preserves operating system data
 
-This method is the simplest option, because you will deactivate the node, upgrade the operating system, and preserve all data. After the upgrade, node activation is required to bring the node back online.
+This method is the simplest option, because you deactivate the node, upgrade the operating system, and preserve all data. After the upgrade, node activation is required to bring the node back online.
 
 1. In Service Fabric Explorer, deactivate (restart) the node that you want to upgrade.
 1. Do an in-place upgrade by following the instructions in [Upgrade Windows Server 2016 to Windows Server 2019](/windows-server/upgrade/upgrade-2016-to-2019).
@@ -124,7 +124,7 @@ This method is the simplest option, because you will deactivate the node, upgrad
 
 ### Do an in-place upgrade that doesn't preserve operating system data
 
-During the operating system upgrade, you will remove all data. Therefore, the node will have a fresh operating system installation. You will then have to complete all the configuration steps for each node before you add it back to the cluster.
+During the operating system upgrade, you remove all data. Therefore, the node has a fresh operating system installation. You must complete all the configuration steps for each node before you add it back to the cluster.
 
 1. In Service Fabric Explorer, deactivate (remove data for) the node that you want to upgrade.
 1. Remove the node from the cluster by following the instructions in [Remove a node](./onprem-remove-reinstall-aos-node.md#remove-a-node).
@@ -135,7 +135,7 @@ During the operating system upgrade, you will remove all data. Therefore, the no
 
 ### Add new nodes to the cluster
 
-This method resembles the previous method, but you will spin up new nodes before you remove the existing nodes from the cluster. This approach helps maintain the performance of the service if you can't take nodes down.
+This method resembles the previous method, but you spin up new nodes before you remove the existing nodes from the cluster. This approach helps maintain the performance of the service if you can't take nodes down.
 
 1. Provision a new VM.
 1. Add a node by following the instructions in [Add a node](./onprem-remove-reinstall-aos-node.md#add-a-node).

@@ -3,8 +3,9 @@ title: Collections coordinator summary
 description: Learn how the Collections coordinator summary feature shows AI-generated text in the Summary by Copilot field in the Collections coordinator workspace.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: conceptual
-ms.date: 05/29/2024
+ms.topic: article
+ms.date: 01/21/2025
+ms.update-cycle: 180-days
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
 audience: Application User

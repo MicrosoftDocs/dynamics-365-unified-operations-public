@@ -3,7 +3,7 @@ title: Invoice approvals mobile workspace
 description: Learn about the Invoice approvals mobile workspace, including prerequisites and outlines and how to download and sign into the mobile app.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/24/2022
 ms.custom:
 ms.reviewer: johnmichalak
@@ -54,12 +54,6 @@ Before you can use this mobile workspace, the following prerequisites must be me
 </tbody>
 </table>
 
-## Download and install the mobile app
-
-Download and install the finance and operations mobile app:
-
--   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
--   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## Sign in to the mobile app
 

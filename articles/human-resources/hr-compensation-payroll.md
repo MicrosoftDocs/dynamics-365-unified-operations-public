@@ -5,7 +5,7 @@ title: Ready to pay
 description: This article shows how to mark an employee as ready to pay in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/09/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: 
@@ -14,13 +14,14 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: ajitchandran
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
+ms.custom:
+  - sfi-image-nochange
 
 ---
 

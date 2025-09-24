@@ -1,13 +1,14 @@
 ---
 title: Calculate requested ship dates for purchase orders
-description: Learn how the system calculates requested ship dates for purchase orders, including prerquisites and an outline on receipt dates on purchase orders.
-author: t-benebo
-ms.author: benebotg
-ms.topic: how-to
-ms.date: 11/16/2023
-ms.custom: bap-template
+description: Learn how the system calculates requested ship dates for purchase orders, including prerequisites and an outline on receipt dates on purchase orders.
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: VendCustTransportPoint2Point, SrmParameters, VendTable
+ms.topic: how-to
+ms.date: 01/30/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Calculate requested ship dates for purchase orders
@@ -27,11 +28,11 @@ To calculate requested shipment dates for purchase orders, your system must meet
 - You must be running Dynamics 365 Supply Chain Management version 10.0.38 or later.
 - You must be using Planning Optimization, not the [deprecated master planning engine](deprecated-master-planning-overview.md).
 
-Additional requirements apply based on which version of Supply Chain Management you are running, as described in the following subsections.
+Additional requirements apply based on which version of Supply Chain Management you're running, as described in the following subsections.
 
 ### Supply Chain Management versions 10.0.38 or 10.0.39
 
-If you are running Supply Chain Management version 10.0.38 or 10.0.39, the feature that's named *Supplier requested and confirmed shipment dates* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+If you're running Supply Chain Management version 10.0.38 or 10.0.39, the feature named *Supplier requested and confirmed shipment dates* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Supply Chain Management version 10.0.40 or later
 
@@ -104,6 +105,7 @@ To set up addresses for a vendor, follow these steps.
 1. On the **Addresses** FastTab, add and remove addresses as you require. If more than one address is specified on the **Addresses** FastTab, when the system uses the purchase transport days setup to calculate the shipping date, it uses the address where the **Primary** option is set to *Yes* as the shipping point.
 
 > [!TIP]
+>
 > - The vendor address is applied to the purchase order and used as the shipping point for purchase transport days.
 > - The receiving point for purchase transport days is the second factor that's used to calculate the shipping date. The delivery address depends on the setup, and a default value can be taken from the company, site, or warehouse. Any update to the site or warehouse for a purchase order header or line triggers a recalculation of the shipping date, because the new site or warehouse might have a different delivery address.
 
@@ -116,6 +118,9 @@ The following calendars are relevant for ship and receipt date calculations:
 - **Warehouse calendar** – This calendar defines when purchase orders can be received at the site or warehouse.
 
 The purchase and vendor ship calendars are considered when the ship date is calculated. The warehouse (item coverage group) calendar is used when the receipt date is calculated.
+
+> [!NOTE]
+> If no coverage group is assigned to an item on the **Released product details**, **Item coverage**, or **Master planning parameters** page, then master planning uses the *general coverage group* (which is set in the **General coverage group** field on the **Master planning parameters** page) and calculates the working days based on the calendar assigned to that group.
 
 Learn more in [Calendars and master planning](supply-chain-calendars-master-planning.md).
 
@@ -201,7 +206,7 @@ When a master planning run indicates that a planned order is needed, the order d
 
 The requested ship date is also calculated for manually created planned purchase orders.
 
-### Recalculations for updated orders
+### <a name="recalculations"></a>Recalculations for updated orders
 
 When you edit a purchase order where the requested and/or confirmed ship date has already been calculated, the system does the following recalculations:
 
@@ -217,6 +222,45 @@ When you edit a purchase order where the requested and/or confirmed ship date ha
 
 If you change the **Requested ship date** or **Confirmed ship date** value on the header of a purchase order, the system asks you whether the relevant ship and receipt dates should also be updated for each line.
 
+> [!NOTE]
+> If any subsequent changes are made at the line level (such as modifying the unit, warehouse quantity, or site), the line **Requested ship date** and **Requested receipt date** are recalculated based on the current date rather than the header date. To ensure accurate date calculations, we recommend that you complete all necessary updates at the line level before updating the header **Requested ship date** or **Confirmed ship date**.
+
+## Purchase order ship and receipt date calculation logic
+
+This section explains how the **Requested ship date** and **Requested receipt date** are calculated for purchase orders. These dates are influenced by lead times, transport days, vendor calendars, and other settings.
+
+### Key terms and concepts
+
+The following table describes key terms and concepts related to purchase order ship and receipt date calculations.
+
+| Term | Description |
+|--|--|
+| Requested ship date | The date on which you want the vendor to ship the goods. |
+| Requested receipt date | The date on which you want to receive the goods. |
+| Confirmed ship date | The date on which the vendor will ship the goods, as confirmed by the vendor. |
+| Confirmed receipt date | The date on which you'll receive the goods, as confirmed by the vendor. |
+| Lead time | The number of days the vendor requires to prepare an item. |
+| Transport days | The number of days needed to ship goods from vendor to warehouse. |
+| Purchase calendar | The calendar that defines when a vendor is open for business. |
+| Vendor ship calendar | The calendar that defines when purchase orders can be shipped from the vendor. |
+| Warehouse calendar | The calendar that defines when purchase orders can be received at the site or warehouse |
+| Item coverage calendar | An optional calendar used to adjust receipt dates. |
+
+### Calculation logic
+
+The following table summarizes the logic used to calculate purchase order ship and receipt dates.
+
+| Calculation | Description |
+|--|--|
+| **Requested ship date** | Calculated as today's date plus lead time. Adjusted to the next working day if the assigned calendar is *Active*. |
+| **Requested receipt date** | Calculated as the requested ship date plus transport days. Adjusted to the next working day if the assigned calendar is *Active*. |
+| **Lead time** (on the **Line details** tab) | Populated only if **Calculate PO delivery date** is set to *Yes* and the purchase order originates from a purchase requisition, purchase agreement, or request for quotation. |
+| **Transport days** | Applied based either on the selected mode of delivery at the purchase order line level or the default mode of delivery configured for the warehouse master. |
+| **Confirmed dates** | Manually entered by the vendor and not adjusted by any calendar. |
+| **Trade agreement working days** | When enabled, lead time is calculated using only open working days. |
+
+For details about how to update the **Requested ship date** and **Requested receipt date** in the header, see [Recalculations for updated orders](#recalculations).
+
 ## Example date calculation scenarios
 
 This section provides examples that show how requested ship and receipt dates for purchase orders are calculated in various scenarios.
@@ -225,7 +269,7 @@ This section provides examples that show how requested ship and receipt dates fo
 
 These scenarios have the following prerequisites:
 
-- You system must meet all the feature prerequisites that are listed in the [Prerequisites](#prerequisites) section of this article.
+- Your system must meet all the feature prerequisites that are listed in the [Prerequisites](#prerequisites) section of this article.
 - The **Purchase transport days** page must be configured with at least one receiving address, shipping address, and number of transport days. The addresses must match the vendors and receiving warehouses that you use for these scenarios.
 - Unless otherwise specified, all calendars must have all days open.
 - On the **Procurement and sourcing parameters** page, on the **Delivery** tab, the **Requested ship date in the past** field must be set to *None*.

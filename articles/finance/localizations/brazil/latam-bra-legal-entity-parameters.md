@@ -3,7 +3,7 @@ title: Parameters for legal entities in Brazil
 description: To submit tax statements reporting performance, a Brazilian legal entity requires fiscal information. Learn how to set the parameters to specify this information.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 07/10/2024

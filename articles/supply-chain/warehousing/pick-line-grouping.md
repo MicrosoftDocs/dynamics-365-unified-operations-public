@@ -3,7 +3,7 @@ title: Pick line grouping
 description: Access an overview of pick line grouping, including outlines on toggling the pick line grouping feature and setting up pick line grouping.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/15/2019
 ms.custom:
 ms.reviewer: kamaybac

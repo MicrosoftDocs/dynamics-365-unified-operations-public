@@ -3,7 +3,7 @@ title: System tables
 description: Learn about various System classes with tables that outline descriptions for methods to be implemented in X++ code.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: language-reference
 ms.date: 11/06/2017
 ms.reviewer: johnmichalak
 audience: Developer

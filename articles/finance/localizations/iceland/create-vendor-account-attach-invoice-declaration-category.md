@@ -1,41 +1,47 @@
 --- 
 title: Create a vendor account and attach the invoice declaration category
-description: Learn about creating a vendor with configuration for an invoice declaration, including outlines for creating vendors and setting invoice declarations. 
+description: Learn how to create a vendor with configuration for an invoice declaration in Microsoft Dynamics 365 Finance. 
 author: mrolecki
 ms.author: mrolecki
 ms.topic: how-to
-ms.date: 08/29/2018
-ms.custom:
+ms.date: 04/04/2025
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak 
-audience: Application User  
 ms.search.region: Iceland
 ms.search.validFrom: 2016-06-30
 ms.search.form: VendTable, DirPartyLookup
-ms.dyn365.ops.version: Version 7.0.0 
 ---
 
 # Create a vendor account and attach the invoice declaration category
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through creating a vendor with configuration for an invoice declaration. The demo data company used to create this procedure is DEMF with the country/region of legal entity primary address updated to Iceland.
+This article explains how to create a vendor with configuration for an invoice declaration in Microsoft Dynamics 365 Finance.
 
+The following procedures show you how to create a vendor with configuration for an invoice declaration. The demo data company used to create these procedures is DEMF with the country/region of legal entity primary address updated to Iceland.
 
 ## Create a vendor
-1. Go to Accounts payable > Vendors > All vendors.
-2. Click New.
-3. In the Vendor account field, type 'IS-001'.
-4. In the Name field, click the drop-down button to open the lookup.
-5. In the list, click the link in the selected row.
-6. Click Select.
-7. In the Group field, click the drop-down button to open the lookup.
-8. In the list, click the link in the selected row.
 
-## Set invoice declaration category for the vendor
-1. Expand or collapse the Invoice and delivery section.
-2. In the Invoice declaration field, click the drop-down button to open the lookup.
-3. In the list, click the link in the selected row.
-4. Click Save.
+To create a vendor, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts payable \> Vendors \> All vendors**.
+1. Select **New**.
+1. In the **Vendor accoun** field, enter "IS-001".
+1. In the **Name** field, select the drop-down button to open the lookup.
+1. In the list, select the link in the selected row.
+1. Select **Select**.
+1. In the **Group** field, select the drop-down button to open the lookup.
+1. In the list, select the link in the selected row.
+
+## Set the invoice declaration category for the vendor
+
+To set the invoice declaration category for the vendor, follow these steps.
+
+1. Expand or collapse the **Invoice and delivery** section.
+1. In the **Invoice declaration** field, select the drop-down button to open the lookup.
+1. In the list, select the link in the selected row.
+1. Select **Save**.
 
 
 

@@ -3,11 +3,12 @@ title: Services module
 description: Learn about the Services moduel, which includes the AsyncService, CacheService, DataService, MetadataService, and PageData types.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/26/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # Services module

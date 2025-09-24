@@ -3,7 +3,7 @@ title: Account structure activation performance enhancement
 description: Learn about the new performance enhancement for the account structure activation process, including an outline on account structure activation tips.
 author: RyanCCarlson2
 ms.author: rcarlson
-ms.topic: conceptual
+ms.topic: article
 ms.date: 10/31/2022
 ms.custom:
 ms.reviewer: kfend

@@ -3,7 +3,7 @@ title: Terminate billing schedules
 description: Learn how to terminate billing schedules and billing schedule lines in Subscription billing, including an overview on how to apply refunds.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/04/2021
 ms.reviewer: twheeloc
 audience: Application User

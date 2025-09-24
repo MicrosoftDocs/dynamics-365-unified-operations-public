@@ -5,12 +5,10 @@ items:
     items:
     - name: Dynamics 365 Human Resources documentation
       href: index.yml 
-    - name: Welcome to Dynamics 365 Human Resources 
+    - name: Welcome to Dynamics 365 Human Resources  
       href: welcome.md  
     - name: Human Resources infrastructure merge
       items:
-      - name: Human Resources infrastructure merge overview
-        href: hr-infrastructure-merge.md
       - name: Human Resources infrastructure customer migration
         href: hr-cust-migration.md  
       - name: Human Resources customer migration FAQ
@@ -31,14 +29,14 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
+        - name: Human Resources 10.0.45  
+          href: ./get-started/hr-whats-new-10-0-45.md   
+        - name: Human Resources 10.0.44  
+          href: ./get-started/hr-whats-new-10-0-44.md  
+        - name: Human Resources 10.0.43
+          href: ./get-started/hr-whats-new-10-0-43.md
         - name: Human Resources 10.0.42
           href: ./get-started/hr-whats-new-10-0-42.md
-        - name: Human Resources 10.0.41
-          href: ./get-started/hr-whats-new-10-0-41.md
-        - name: Human Resources 10.0.40
-          href: ./get-started/hr-whats-new-10-0-40.md
-        - name: Human Resources 10.0.39 
-          href: ./get-started/hr-whats-new-10-0-39.md  
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -103,8 +101,6 @@ items:
           href: data-entity.md
         - name: Throttling FAQ
           href: dev-itpro/hr-admin-integration-throttling-faq.md
-        - name: Configure Dataverse integration
-          href: hr-admin-integration-common-data-service.md
         - name: Dataverse tables
           href: hr-developer-entities.md
         - name: Configure Dataverse virtual tables
@@ -211,6 +207,12 @@ items:
         items:
         - name: User interface elements
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json
+        - name: Default dashboard
+          href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?toc=/dynamics365/human-resources/toc.json
+        - name: Immersive Home (production ready preview)
+          href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?toc=/dynamics365/human-resources/toc.json
+        - name: Set the preferred initial page for each user
+          href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?toc=/dynamics365/human-resources/toc.json
         - name: Accessibility features
           href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json
         - name: Feature management overview
@@ -555,7 +557,7 @@ items:
           items:
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
-        - name: Human Resources Recruiting app (preview)
+        - name: Human Resources Recruiting app 
           items:
           - name: Configure the Human Resources recruiting app
             items:
@@ -565,8 +567,10 @@ items:
               href: hr-recruit-onboard.md 
             - name: Configuration in the HR Recruiting app   
               href: hr-recruit-configuration.md
-            - name: Configure the careers site in the HR Recruiting app
+            - name: Set up the careers site in the HR Recruiting app
               href: hr-recruit-career.md 
+            - name: Known issues and limitations of the HR Recruiting app
+              href: hr-recruit-known.md
           - name: Use the Human Resources recruiting app
             items: 
             - name: Use the dashboard in the HR Recruiting app 
@@ -579,8 +583,16 @@ items:
               href: hr-recruit-prospect.md 
             - name: Applicants in HR recruiting app 
               href: hr-recruit-applicant.md 
-            - name: Set up panel members in the HR Recruiting app
+            - name: Set up panel members in the HR Recruiting app            
               href: hr-recruit-panel.md
+          - name: Schedule interviews
+            items:
+            - name: Set up interview schedules
+              href: hr-interview-schedule.md
+          - name: Upload resumes (preview)
+            items:
+            - name: Upload resumes
+              href: bulk-resume-upload.md
     - name: Time and attendance
       items:
       - name: Time and attendance information
@@ -773,7 +785,7 @@ items:
       items:
       - name: Performance management overview
         href: hr-develop-performance-management-overview.md
-      - name: Set up electronic reporting to print preformance reviews
+      - name: Set up electronic reporting to print performance reviews
         href: perf-mgmt-print.md
       - name: Skills
         items:
@@ -1179,8 +1191,14 @@ items:
     items:
     - name: Overview 
       href: transpar-note-hr.md
+    - name: Employee self service leave summary FAQ
+      href: ess-transp-faq.md
+    - name: Human Resources recruiting with Bulk resume upload FAQ
+      href: hr-recruit-bulk-resume-faq.md
     - name: Employee self service workspace summary
       href: ess-workspace-summary.md
+    - name: Human Resources recruiting with bulk resume upload FAQ
+      href: hr-recruit-bulk-resume-faq.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

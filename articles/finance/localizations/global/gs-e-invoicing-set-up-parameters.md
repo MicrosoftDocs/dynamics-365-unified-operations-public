@@ -4,7 +4,7 @@ description: Learn how to set up the Electronic invoicing parameters in Globaliz
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 10/22/2024
+ms.date: 02/10/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -58,14 +58,14 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
    | ProjInvoiceJour | <p><b>Mapping name:</b> Project invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Project Invoice</p><p><b>Configuration:</b> Invoice model mapping</p> | <ul><li>Austrian electronic invoices (AT)</li><li>Belgian electronic invoice (BE)</li><li>Danish electronic invoice (DK)</li><li>Egyptian electronic invoice (EG)</li><li>Estonian electronic invoice (EE)</li><li>Finish electronic invoice (FI)</li><li>French electronic invoice (FR)</li><li>German electronic invoice (DE)</li><li>FatturaPA (IT)</li><li>Dutch electronic invoice (NL)</li><li>Norwegian electronic invoice (NO)</li><li>Polish electronic invoice (PL)</li><li>Spanish electronic invoice (ES)</li><li>PEPPOL electronic invoice</li><li>Saudi Arabian electronic invoice (SA)</li><li>Australian electronic invoice (AU)</li><li>New Zealand electronic invoice (NZ)</li><li>Malaysian electronic invoicing (MY)</li></ul> |
    | CzCustAdvanceInvoiceTable | <p><b>Mapping name:</b> Advance invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Advance invoice model mapping</p><p><b>Configuration:</b> Advance invoice model mapping</p> | Polish electronic invoice (PL) |
    | RetailTransactionFiscalTransDocumentView | <p><b>Mapping name:</b> Retail fiscal document context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Retail fiscal document</p><p><b>Configuration:</b> Retail fiscal document mapping</p> | Saudi Arabian electronic invoice (SA) |
-   | FiscalDocument\_BR | <p><b>Mapping name:</b> Fiscal document context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Fiscal documents mapping</p><p><b>Configuration:</b> Fiscal documents mapping</p> | Brazilian NF-e (BR) |
-   | Correction letter | <p><b>Mapping name:</b> FD correction letter context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Correction letter mapping</p><p><b>Configuration:</b> Fiscal documents mapping</p> | Brazilian NF-e (BR) |
-   | Service Fiscal document | <p><b>Mapping name:</b> Fiscal document context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Fiscal documents mapping</p><p><b>Configuration:</b> Fiscal documents mapping</p> | Brazilian NFS-e ABRASF Curitiba (BR) |
-   | VendInvoiceInfoTable | <p>**Mapping name:** Pending vendor invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Pending vendor invoice model mapping</p><p>**Configuration:** Pending vendor invoice model mapping</p> | Danish electronic invoice (DK) |
+   | VendInvoiceInfoTable | <p>**Mapping name:** Pending vendor invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Pending vendor invoice model mapping</p><p>**Configuration:** Pending vendor invoice model mapping</p> | <ul><li>Danish electronic invoice (DK)</li><li> Chilean electronic invoice (CL)</li></ul> |
    | LedgerJournalTrans | <p>**Mapping name:** Prepayment invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Customer prepayments</p><p>**Configuration:** Invoice model mapping</p> | Saudi Arabian Zatca submission (SA) |
    | VendInvoiceJour | <p><b>Mapping name:</b> Self invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Self invoice</p><p><b>Configuration:</b> Self invoice model mapping</p> | Malaysian electronic invoicing (MY) |
    | <p>CustInvoiceJour</p><p>ProjInvoiceJour</p><p>(*In case of batch submission*)</p> | <p><b>Mapping name:</b> Batch submission</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Invoices communication model mapping (ID)</p><p><b>Configuration:</b> Invoices communication model mapping (ID)</p> | Indonesian electronic invoice (ID) |
    | <p>CustInvoiceJour</p><p>(*In case of batch submission*)</p> | <p><b>Mapping name:</b> Batch submission</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Consolidated Invoice Model Mapping (MY)</p><p><b>Configuration:</b> Consolidated Invoice Model Mapping (MY)</p> | Malaysian electronic invoicing (MY) |
+   | LTMCustInvoiceJour | <p><b>Mapping name:</b> Customer invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Customer E-Invoice</p><p><b>Configuration:</b> Invoice model mapping LATAM</p> | <ul><li>Chilean electronic invoice (CL)</li><li>Costa Rican electronic invoice (CR)</li><li>Panama electronic invoice (PA)</li></ul> |
+   | LTMProjInvoiceJour | <p><b>Mapping name:</b> Project invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Project E-Invoice</p><p><b>Configuration:</b> Invoice model mapping LATAM</p> | <ul><li>Chilean electronic invoice (CL)</li><li>Costa Rican electronic invoice (CR)</li><li>Panama electronic invoice (PA)</li></ul> |	  
+   | LTMCustPackingSlipJour | <p><b>Mapping name:</b> Customer Packing Slip context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Customer E-Invoice</p><p><b>Configuration:</b> Invoice model mapping LATAM</p> | Chilean electronic invoice (CL) |
 
 If you derive a configuration from the configuration that's mentioned in the preceding table, define the new configuration.
 
@@ -80,7 +80,7 @@ To set up the rules to process responses from the Electronic Invoicing service, 
 1. On the **Key Vault parameters** page, select **New** to create a Key Vault reference.
 1. In the **Name** field, enter the name of the Key Vault reference.
 1. In the **Description** field, enter a description.
-1. In the **Key Vault URI** field, paste the Key Vault URI from the key vault (`https://<your key vault>.vault.azure.net/`). For more information, see [Create an Azure key vault in the Azure portal](gs-e-invoicing-create-azure-key-vault-azure-portal.md).
+1. In the **Key Vault URI** field, paste the Key Vault URI from the key vault (`https://<your key vault>.vault.azure.net/`). For more information, see [Create an Azure Key Vault in the Azure portal](gs-e-invoicing-create-azure-key-vault-azure-portal.md).
 1. In the **Certificates** section, select **Add**.
 1. In the **Name** field, enter the name of the storage account secret or certificate. This name should match the name of the Key Vault secret that holds the shared access signature (SAS) token of the storage account. For more information, see [Create an Azure storage account in the Azure portal](gs-e-invoicing-create-azure-storage-account-azure-portal.md).
 1. In the **Description** field, enter a description.
@@ -123,6 +123,6 @@ To delete a number sequence if it's no longer used, select **Delete**.
 
 ## Inactivate legacy Electronic invoicing functionality
 
-To inactivate old (legacy) ER functionality for some features, and to activate additional functionality in Finance and Supply Chain Management for some country/region-specific scenarios, enable the corresponding feature on the **Features** tab of the **Electronic document parameters** page.
+To deactivate old (legacy) ER functionality for some features, and to activate additional functionality in Finance and Supply Chain Management for some country/region-specific scenarios, enable the corresponding feature on the **Features** tab of the **Electronic document parameters** page.
 
-When you enable a feature in the list, the legacy functionality is inactivated for the corresponding country or region and feature name.
+When you enable a feature in the list, the legacy functionality is deactivated for the corresponding country or region and feature name.

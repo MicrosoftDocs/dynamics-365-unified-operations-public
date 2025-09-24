@@ -3,7 +3,7 @@ title: Manage International Bank Account Number (IBAN) account validation
 description: Learn how to manage International Bank Account Number (IBAN) account validation, including a step-by-step process for setting up IBAN structures.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/29/2024
 ms.custom:  
 ms.reviewer: twheeloc 

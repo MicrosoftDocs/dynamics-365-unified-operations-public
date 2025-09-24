@@ -28,6 +28,8 @@ To create a number sequence for a pro number, do the following:
 1. On the **Sequence** FastTab, provide information about the sequence.
 1. Close the page.
 
+Learn more about how to work with number sequences in [Number sequences overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
+
 ## Link a number sequence to a shipping carrier
 
 To link a number sequence to a carrier, do the following:
@@ -37,6 +39,5 @@ To link a number sequence to a carrier, do the following:
 1. Select **Edit**.
 1. On the **Overview** FastTab, select an option in the **Pro number sequence** field.
 1. Close the page.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: Configure manual tasks in a workflow
 description: Learn about how to configure the properties for a manual task, including outlines on naming tasks and entering subject lines and instructions.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/23/2017
 ms.reviewer: twheeloc
 audience: Application User

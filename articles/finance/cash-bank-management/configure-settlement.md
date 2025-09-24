@@ -1,10 +1,11 @@
 ---
 title: Configure settlement
 description: Learn about the parameters that are used for settlement for both Accounts payable and Accounts receivable, including an outline on fixed dimensions on accounts.
-author: twheeloc
-ms.author: twheeloc
+author: music727
+ms.author: mibeinar
 ms.topic: article
-ms.date: 05/24/2024
+ms.date: 04/24/2025
+ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.custom: evergreen
 audience: Application User
@@ -44,12 +45,14 @@ The following parameters affect how settlements are processed in Microsoft Dynam
   -   **Use Main account for vendor discounts** – The cash discount is posted to the main account that is defined on the **Cash discount setup** page.
   -   **Accounts on the invoice lines** – The cash discount is posted to the ledger accounts on the original invoice.
 - **Mark lines on free text invoices and interest notes (AR only)** – Set this option to **Yes** to enable the **Mark invoice lines** button on the **Enter customer payments**, **Payment journal voucher**, and **Settle transactions** pages. This button lets users mark individual lines for settlement.
-- **Prioritize settlement (AR only)** – Set this option to **Yes** to enable the **Mark by priority** button on the **Enter customer payments** and **Settle transactions** pages. This button lets users assign the predetermined settlement order to transactions. After the settlement order has been applied to a transaction, the order and the payment allocation can be modified before posting.
+- **Prioritize settlement** – Set this option to **Yes** to enable the **Mark by priority** button on the **Enter customer payments** and **Settle transactions** pages. This button lets users assign the predetermined settlement order to transactions. After the settlement order has been applied to a transaction, the order and the payment allocation can be modified before posting.
 - **Use priority for automatic settlements** – Set this option to **Yes** to use the defined priority order when transactions are automatically settled. This field is available only if the **Prioritize settlement** and **Automatic settlement** options are set to **Yes**.
 
 ## Fixed dimensions on accounts receivable/accounts payable main accounts
 
-When fixed dimensions are used on the accounts receivable/accounts payable main account, additional accounting entries and two additional vendor transactions will be posted by the settlement process. Settlement compares the accounts receivable/accounts payable ledger account from the invoice and payment. When the payment and settlement are completed together, which is the typical scenario, the payment’s accounting entry isn’t posted to General ledger until after the settlement process is also complete. Due to the order of processing events, settlement is unable to determine the actual accounts receivable/accounts payable ledger account from the payment’s accounting entry. Settlement reconstructs what the ledger account will be for the payment. This becomes an issue when a fixed dimension is used for the accounts receivable/accounts payable main account.
+## Dimensions on accounts receivable/accounts payable main accounts
+
+When dimensions are used on the accounts receivable/accounts payable main account, additional accounting entries and two additional vendor transactions will be posted by the settlement process. Settlement compares the accounts receivable/accounts payable ledger account from the invoice and payment. When the payment and settlement are completed together, which is the typical scenario, the payment’s accounting entry isn’t posted to General ledger until after the settlement process is also complete. Due to the order of processing events, settlement is unable to determine the actual accounts receivable/accounts payable ledger account from the payment’s accounting entry. Settlement reconstructs what the ledger account will be for the payment. This becomes an issue when a dimension is used for the accounts receivable/accounts payable main account.
 
 To reconstruct the ledger account, the accounts receivable/accounts payable main account is retrieved from the posting profile and the financial dimensions are retrieved from the vendor transaction record for the payment, as defined on the payment journal. Fixed dimensions are not defaulted onto payment journals, but instead are applied to the main account as the last step of the posting process. As a result, the fixed dimension value is likely not contained on the vendor transaction, unless it defaulted from another source, such as the vendor. The reconstructed account won't include the fixed dimension. Settlement processing will determine that an adjusting entry must be created, because the invoice posted with the fixed dimension value and the reconstructed payment account didn't. As settlement continues with posting the adjusting entry, the last step in posting is for the fixed dimension to be applied. By adding the fixed dimension to the adjusting entry, it's posted with a debit and credit to the same ledger account. Settlement can't roll back the accounting entry.
 

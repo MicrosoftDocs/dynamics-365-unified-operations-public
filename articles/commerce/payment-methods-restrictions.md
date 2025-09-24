@@ -3,7 +3,7 @@ title: Restrict payment methods for returns without a receipt
 description: This article describes how certain payment types can be restricted for refund if the returns are made without a receipt.
 author: josaw1
 ms.date: 03/05/2019
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

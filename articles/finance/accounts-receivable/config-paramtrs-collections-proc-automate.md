@@ -2,9 +2,9 @@
 title: Configure parameters for collection process automation
 description: Learn about the parameters that affect automated collection processes and provides guidance for setting them to reflect your intentions and expectations.
 author: JodiChristiansen
-ms.author: shpandey
+ms.author: sunitacharya
 ms.topic: article
-ms.date: 08/05/2021
+ms.date: 01/25/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -25,8 +25,14 @@ Enter a number in the **Percentage of customers per batch task** to determine th
 
 Starting in version 10.0.39, a new **Track step in collections process automation** parameter is available. Use it to ensure that invoices go through all steps of the automation. Set this parameter to **Yes** if you want invoices to start at the first step in the process. For example, if the **Collections status** field was set to **Disputed**, but it was later set to **Resolved**, collections process automation starts at the first step on the **Process details** tab of the collections process setup. If this parameter is set to **No**, invoices start with the activity that most closely matches the date. 
 
+
+Starting in version 10.0.43, there's change to the **Track step** functionality in collections process automation. This parameter is moved to the individual process hierarchy level to provide the flexibility to enable track step for the process hierarchies that are required to follow the steps in order. While setting up the collection process, select the **Use track step** checkbox at the process hierarchy level before proceeding to the process details. 
+
+For implementations where this feature was already enabled on the **Account receivable parameters**, the **Use track step** is selected for all existing process hierarchies to match the existing configuration along with their respective step counts.  
+
+
 ## Payment predictions
-Starting in version 10.0.21, Customer payment predictions, found in Finance insights, projects whether an invoice will be paid on time, late, or very late. You can configure each of those categories in Finance insights. If invoices are predicted to be paid late, it's important to start the collections process before the invoice is due. Those predictions can be used to create collections activities when Collections process automations runs. Set **Enable payment predictions** to **Yes** to use customer payment predictions to create collections activities based on the probability that the invoice will be paid late. 
+Customer payment predictions, found in Finance insights, projects whether an invoice will be paid on time, late, or very late. You can configure each of those categories in Finance insights. If invoices are predicted to be paid late, it's important to start the collections process before the invoice is due. Those predictions can be used to create collections activities when Collections process automations runs. Set **Enable payment predictions** to **Yes** to use customer payment predictions to create collections activities based on the probability that the invoice will be paid late. 
 
 For more information about Customer payment predictions and Finance insights, see [Customer payment predictions](payment-insights-overview.md).
 

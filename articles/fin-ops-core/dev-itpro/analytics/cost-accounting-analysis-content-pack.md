@@ -1,16 +1,15 @@
 ---
 title: Cost accounting analysis Power BI content
-description: Learna bout what is included in the Cost accounting analysis Power BI content, including learning about metrics that are included in the Power BI content.
-author: AndersGirke
+description: Learn about what is included in the Cost accounting analysis Power BI content, including learning about metrics that are included in the Power BI content.
+author: AndersEvenGirke
 ms.author: aevengir
-ms.topic: article
-ms.date: 10/02/2019
 ms.reviewer: kamaybac
-audience: IT Pro
+ms.search.form: 
+ms.topic: how-to
+ms.date: 01/30/2025
 ms.search.region: Global
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.assetid: b74549df-35d5-4f2f-b3c7-405b0d38ea78
+ms.custom: 
+  - bap-template
 ---
 
 # Cost accounting analysis Power BI content
@@ -32,6 +31,7 @@ To learn more about Cost accounting, see [Cost accounting home page](../../../fi
 By defining access-level security in Cost accounting and combining it with row-level security in Power BI, you can grant all cost object owners access to the **Cost accounting analysis** Power BI content. All data in the visualizations will then be filtered based on the access level that is controlled in Cost accounting. To learn more about access-level security and row-level security, see [Set up security for the Cost accounting analysis Power BI content](setup-security-cost-accounting-content-pack.md).
 
 ## Accessing the Power BI content
+
 You can find the **Cost accounting analysis** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 
 Be sure to download the **Cost accounting analysis** content that applies to the version of Microsoft Dynamics 365 that you're using.
@@ -40,6 +40,7 @@ Be sure to download the **Cost accounting analysis** content that applies to the
 > KB 4011327 is a prerequisite for this Power BI content. After you sign in to LCS, you can access the KB here at <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
 ## Metrics that are included in the Power BI content
+
 The content includes a set of report pages. Each page consists of a set of metrics that are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the **Cost accounting analysis** Power BI content.
 
 | Report page                      | Chart                                                                                                                         | Tile                                          |
@@ -51,16 +52,17 @@ The content includes a set of report pages. Each page consists of a set of metri
 |                                  | Budget variance by Calendar Year Period                                                                                       | Actual cost rate vs Budget cost rate          |
 |                                  | Top 10 Budget variance in percentage by Cost element                                                                          | Actual magnitude vs Budget magnitude          |
 | Cost rate by fiscal year         | Actual cost rate by Cost behavior                                                                                             | Actual cost rate vs Budget cost rate          |
-|                                  | Actual cost rate, Budget cost rate variance, Budget cost rate percentage and Budget cost rate by Cost element hierarchy level | Actual magnitude vs Budget magnitude          |
+|                                  | Actual cost rate, Budget cost rate variance, Budget cost rate percentage, and Budget cost rate by Cost element hierarchy level| Actual magnitude vs Budget magnitude          |
 |                                  | Budget variance by Cost element hierarchy level                                                                               |                                               |
 |                                  | Top 10 Budget variance in percentage by Cost element                                                                          |                                               |
-| Flexible budget by fiscal period | Actual cost, Budget cost and Flexible budget cost by Cost element hierarchy level                                             | Actual magnitude vs Budget magnitude          |
+| Flexible budget by fiscal period | Actual cost, Budget cost, and Flexible budget cost by Cost element hierarchy level                                            | Actual magnitude vs Budget magnitude          |
 |                                  | Budget variance and Flexible budget variance by Cost element hierarchy level                                                  | Actual cost vs Flexible budget cost           |
-|                                  | Actual cost, Budget cost and Flexible cost by Cost behavior and Cost element hierarchy level                                  | Actual cost rate vs Flexible budget cost rate |
+|                                  | Actual cost, Budget cost, and Flexible cost by Cost behavior and Cost element hierarchy level                                 | Actual cost rate vs Flexible budget cost rate |
 | Cost statement by fiscal period  | Actual cost by Cost element hierarchy level and Cost object dimension member name                                             |                                               |
 |                                  | Actual cost by Cost object dimension member name and Cost element dimension member name                                       |                                               |
 
 ## Understanding the data model and entities
+
 The following data is used to fill the report pages in the **Cost accounting analysis** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
 The following key aggregate measurements are used as the basis of the content.
@@ -113,6 +115,5 @@ The following key dimensions are used as filters to slice the aggregate measurem
 | Fiscal calendars                   | Calendar, Calendar description                                                                                       |
 | Fiscal years                       | Calendar year                                                                                                        |
 | Fiscal periods                     | Calendar year period                                                                                                 |
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

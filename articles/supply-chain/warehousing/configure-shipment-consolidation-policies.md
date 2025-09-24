@@ -3,7 +3,7 @@ title: Configure shipment consolidation policies
 description: Learn how to set up default and custom shipment consolidation policies with an outline on turning on the Shipment consolidation policies feature.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/07/2022
 ms.custom:
 ms.reviewer: kamaybac

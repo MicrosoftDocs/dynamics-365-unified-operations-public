@@ -3,7 +3,7 @@ title: Initiate data source values of the USER INPUT PARAMETER type from source 
 description: Learn how the data source values of the USER INPUT PARAMETER type can be initiated from source code, including various format components.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/26/2022
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

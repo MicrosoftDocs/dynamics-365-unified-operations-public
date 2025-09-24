@@ -3,7 +3,7 @@ title: Modify row definition cells
 description: Learn about what is required for each cell in a row definition on a financial report and understand how to enter that information.
 author: aprilolson
 ms.author: aolson
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/30/2024
 ms.reviewer: twheeloc
 audience: Application User 

@@ -3,7 +3,7 @@ title: Create rules for Optimization advisor
 description: Learn about how to add new rules to Optimization advisor, including outlines on various types of rules with code examples.
 author: kamaybac
 ms.author: kamaybac
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/04/2018
 ms.custom:
 ms.reviewer: kamaybac

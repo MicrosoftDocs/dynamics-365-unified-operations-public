@@ -3,6 +3,7 @@ title: Preview features in Dynamics 365 Commerce 10.0.42 (December 2024)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.42. 
 author: johnmichalak
 ms.date: 10/25/2024
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
   - bap-template
@@ -31,8 +32,9 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
+| Point of sale | Framework support | For version 10.0.42 and later, install .NET Framework version 4.8 and .NET Desktop 8 for UI rendering. | Admins |
 | Point of sale  | Boost efficiency with modern Store Commerce workflows  | You can now set the new flag **modern transaction grid** to **Yes** on POS visual profiles configuration in addition to turning on the feature **Enable modern transaction grid in POS transaction view** to benefit from the refreshed transaction grid, numpad, and the button grids. These updates also enable retailers to show product image in cart view  | Admins  |
-| Payments  | Check out faster with optimized payment flows  | Adding to the payment methods released with 10.0.40 that support the new user interface, additional payment methods now support the new optimized and unified payment experience. These payment methods include, Gift cards (internal and external), Payment voucher, Customer account, and Currency. | Admins  |
+| Payments  | Check out faster with optimized payment flows  | In version 10.0.40, payment methods were added to support the new user interface (UI). More payment methods are now added to support the new optimized and unified payment experience. These payment methods include Gift cards (internal and external), Payment voucher, Customer account, and Currency. | Admins  |
 | Payments  | Support for new wallet payment methods  | Wallet payments usage is growing across the brick and mortar stores as customers find them as convenient and secure. Businesses can now offer Alipay, WeChat Pay, and Affirm payment methods with the out of the box Adyen payment connector using the QR code displayed on the PIN Pad terminals. | Admins  |
 | Payments | Support for routing debit cards through local US debit networks  | The debit cards in USA support local debit networks such as PULSE, STAR, NYCE, etc., along with global networks such as Visa, Mastercard, etc. Merchants can now enable the intelligent routing of debit transactions through these local debit networks using the out of box Adyen connector for In Person Payments and save on transaction fees. | Admins  |
 | Orders | Purge Commerce transactions | Some businesses don't have the need to save the Commerce transactions for a long time and thus they want the capability to purge the older transactions to save storage and associated costs. The users with appropriate privileges can now purge old Commerce transactions. | Admins  |

@@ -3,7 +3,7 @@ title: Get started with Electronic invoicing for Australia and New Zealand
 description: Learn about how to get started with Electronic invoicing for Australia and New Zealand in Microsoft Dynamics 365 Finance.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: get-started
 ms.date: 01/29/2024
 ms.custom:
 ms.reviewer: johnmichalak

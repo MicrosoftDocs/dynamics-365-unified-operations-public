@@ -6,7 +6,8 @@ ms.author: cabeln
 ms.topic: how-to
 ms.reviewer: kamaybac
 ms.search.form:
-ms.date: 10/29/2024
+ms.date: 02/13/2025
+ms.update-cycle: 180-days
 ms.custom: 
   - bap-template
 ms.collection:
@@ -17,7 +18,7 @@ ms.collection:
 
 Microsoft Copilot uses *knowledge sources* as the basis for the information that it provides to users. Copilot capabilities in finance and operations apps include the out-of-box *conversational boosting* topic. This topic uses [generative answers in Copilot Studio](/microsoft-copilot-studio/nlu-boost-conversations) to answer user questions based on information from the knowledge sources that were added to it.
 
-You can extend Copilot's knowledge by adding new knowledge to it in Copilot Studio. For example, you can add individual document files (in file formats such as PDF, RTF, or Word) or link to other information sources (such as SharePoint).
+You can add knowledge to the Copilot help and guidance feature by uploading files to Copilot Studio (in file formats such as PDF, RTF, or Word). If you want to add other types of knowledge (such as from Sharepoint or other data sources), then you must add your own topic in the Copilot for Finance and Operations apps agent in Copilot Studio.
 
 > [!NOTE]
 > By default, Copilot knowledge is limited to the published product documentation for finance and operations apps. It also considers the language preferences that each user selected.
@@ -34,11 +35,11 @@ You can add specific knowledge by using [AI general knowledge](/microsoft-copilo
 To add specific knowledge to Copilot, follow these steps.
 
 1. Open [Copilot Studio](https://copilotstudio.microsoft.com/), and select the Dataverse environment that is associated with your finance and operations apps environment.
-1. On the navigation pane on the left, select **Copilots**.
-1. Open the copilot that is named *Copilot for finance and operations apps*.
-1. On the **Knowledge** tab, select **Add knowledge**, and then select the type of knowledge source that you want to add. For example, select **Files** to [upload files](/microsoft-copilot-studio/nlu-documents) from your local computer as additional knowledge.
+1. On the navigation pane on the left, select **Agents**.
+1. Open the agent that is named *Copilot for finance and operations apps*.
+1. On the **Knowledge** tab, select **Add knowledge**, and then select the type of knowledge source that you want to add. Use the **Upload files** section to  [upload files](/microsoft-copilot-studio/nlu-documents) from your local computer as additional knowledge.
 1. The new knowledge source is added to the grid. The new knowledge might take a few minutes to become available for answering questions. You can follow the progress in the **Status** column.
-1. When the system finishes processing the new knowledge source, you can test it. On the toolbar, select **Test**. Then enter some test questions to determine whether the new knowledge source works as you expect.
+1. When the system finishes processing the new knowledge source, the **Status** will update to *Ready* and you can test it. On the toolbar, select **Test**. Then enter some test questions to determine whether the new knowledge source works as you expect.
 1. On the toolbar, select **Publish** to roll out the changes and make the new knowledge available to users in finance and operations apps.
 
 > [!NOTE]

@@ -3,7 +3,7 @@ title: Configure feature setups
 description: Learn how to set up Electronic invoicing features, including outlines and step-by-step processes for adding feature setups and editing feature setups.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/29/2024
 ms.custom:
 ms.reviewer: johnmichalak

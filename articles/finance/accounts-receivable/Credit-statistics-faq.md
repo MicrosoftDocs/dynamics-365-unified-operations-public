@@ -3,7 +3,7 @@ title: Credit statistics FAQ
 description: Access answers to some frequently asked questions about credit statistics, including questions about calculating and using days sales outstanding.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
+ms.topic: faq
 ms.date: 10/15/2023
 ms.reviewer: twheeloc 
 audience: Application User

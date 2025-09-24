@@ -3,15 +3,16 @@ title: Upgrade data in development or demo environments
 description: Access instructions for upgrading your finance and operations application release, including an overview on selecting the correct data upgrade deployable package.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 11/01/2021
-ms.custom: 
 ms.reviewer: johnmichalak 
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.search.form:
 ms.dyn365.ops.version: Platform update 1
+ms.custom:
+  - sfi-ropc-nochange
 ---
 
 # Upgrade data in development or demo environments

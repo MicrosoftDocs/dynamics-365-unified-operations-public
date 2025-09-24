@@ -3,9 +3,9 @@ title: Access Business performance analytics
 description: Learn about how to access Business performance analytics, including an outline on how to share performance analytics with users.
 author: jkhaira7
 ms.author: jkhaira
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom:
-ms.date: 10/30/2024
+ms.date: 08/11/2025
 ms.reviewer: twheeloc 
 audience: Application User
 ---
@@ -55,7 +55,11 @@ To open Business performance analytics directly from Dynamics 365 finance and op
 2. Select **Environments** on the left menu.
 2. Select the environment where business performance analytics is installed.
 3. Go to **Settings** > **Users**.
-4. For Business performance analytics users, confirm that the **Basic user** security role is assigned.
+4. For Business performance analytics users, confirm that the following security roles are assigned:
+- **Basic user**
+- **BPA user**
+- **Microsoft Report Viewer**
+- **Finance & Operations basic user** or **BPA Datalake reader**
 
 If these prerequisites aren't met, a user who selects the Business performance analytics icon in the **Apps** section is redirected to a public document that explains the functionality. After the prerequisites are met, a user who selects the Business performance analytics icon is redirected to the Business performance analytics app. Administrators can control who the Business performance analytics icon is visible to by granting or removing the associated privileges from users' duties, or by using Feature management to hide the **Apps** section. Administrators can also use security roles and privileges to grant additional users and roles in finance and operations apps access to the Business performance analytics icon.
 

@@ -2,16 +2,17 @@
 title: Recurring integrations
 description: Learn about recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
 author: pnghub
-ms.author: gned
+ms.author: priysharma
 ms.topic: how-to
-ms.custom: 
-  - bap-template
-ms.date: 10/23/2024
+ms.date: 03/13/2025
 ms.reviewer: johnmichalak
 ms.assetid: 70a4f748-b0bd-44b1-a118-56aacb91481c
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Recurring integrations
@@ -34,7 +35,7 @@ Recurring integration does the following things:
 The integration REST API uses the same OAuth 2.0 authentication model as the other service endpoints. Before the integrating client application can consume this endpoint, you must create an application ID in Microsoft Entra ID (Azure AD) and give it appropriate permission to the application. When you create and enable a recurring job, enter the Azure AD application ID that interacts with that recurring job. Therefore, be sure to make a note of the application ID.
 
 > [!NOTE]
-> This feature is not supported with Dynamics 365 Finance + Operations (on-premises).
+> This feature isn't supported with Dynamics 365 Finance + Operations (on-premises).
 
 ## Set up a data project and recurring data jobs
 ### Create a data project
@@ -68,17 +69,23 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
 6. Optional: Select **Set monitoring recurrence**, and set up a monitoring recurrence.
 
     > [!NOTE]
-    > Currently, monitoring recurrence enables load monitoring only on the queue for your recurring data job. No additional policies are supported via this service. You can use this feature to fine-tune the processing recurrence as the load demand requires.
+    > Currently, monitoring recurrence enables load monitoring only on the queue for your recurring data job. No other policies are supported via this service. You can use this feature to fine-tune the processing recurrence as the load demand requires.
 
 7. Select **OK**, and then select **Yes** in the confirmation message box.
 
 For more information, see [Process and consume data packages in the finance and operations solutions](../lcs-solutions/process-data-packages-lcs-solutions.md).
+
+> [!NOTE]
+> Parallel package imports using Recurring integration or Package REST APIs are only supported if the **Enhanced parallel package import** option is enabled. To enable **Enhanced parallel package import**, go to **Data Management \> Framework Parameters \> Compatibility Options \> Enhanced Parallel Package Import**.
 
 ## Manage recurring data jobs
 1. In the **System administration** workspace (not the **System administration** module), select the **Data Management IT** workspace.
 2. In the workspace, on the **Recurring data job** tab, select the recurring job to view the details. The **Manage scheduled data jobs** page contains a grid that lists any messages that are waiting in the queue. Therefore, you can monitor messages and the processing status.
 
     ![Manage scheduled data jobs.](./media/image013.jpg)
+
+> [!NOTE]
+> The recurring job for **Copy into legal entity** related to the project isn't supported.
 
 ## Clean up recurring data job messages
 
@@ -120,7 +127,7 @@ To get the activity ID, on the **Manage scheduled data jobs** page, in the **ID*
 ![GUID on the Manage scheduled data jobs page.](./media/image015.jpg)
 
 ### API for export (dequeue)
-To return a data package that contains all the data entities that were defined in the data project, and that the client application can unzip and consume, use the following structure.
+To return a data package that contains all the data entities that are defined in the data project, and that the client application can unzip and consume, use the following structure.
 
 ```Console
 https://<base URL>/api/connector/dequeue/<activity ID>
@@ -152,7 +159,7 @@ https://<base URL>/api/connector/ack/<activity ID>
 POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
 ```
 > [!NOTE] 
-> Until a message is successfully acknowledged, the same message becomes available to dequeue every 30 minutes. In cases when a message is being dequeued more than one time, the dequeue response sends the last dequeued date time. This date is blank for the first dequeue of a message. It is important to ensure that a message is successfully acknowledged to prevent a repeated download of the same message. When an acknowledgement fails, having re-try logic to acknowledge the failure is recommended.
+> Until a message is successfully acknowledged, the same message becomes available to dequeue every 30 minutes. In cases when a message is being dequeued more than one time, the dequeue response sends the last dequeued date time. This date is blank for the first dequeue of a message. It's important to ensure that a message is successfully acknowledged to prevent a repeated download of the same message. When an acknowledgment fails, having retry logic to acknowledge the failure is recommended.
 
 ### API for getting message status
 The API to get the status of a message is available as of hotfix KB 4058074 for Platform update 12. This API is useful in import scenarios to determine if a message is successfully processed. A message is created when the [enqueue process](#api-for-import-enqueue) is completed. If the message returns a failed status, you can set your integration app to retry or take another action.
@@ -192,9 +199,18 @@ POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExe
 BODY
 {"executionId":"<executionId>"}
 ```
+
+GetExecutionIdByMessageId can be used to get the Execution ID. The API takes the enqueued message ID and returns the Execution ID.
+
+```Console
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionIdByMessageId
+BODY
+{"_messageId":"<messageId>"}
+```
+
 ## Automatic retry support during batch node restarts
 
-Automatic retry support for recurring data jobs has been implemented to enable retries when a batch restarts. This feature is available starting from PU64.
+Automatic retry support for recurring data jobs is implemented to enable retries when a batch restarts. This feature is available starting from PU64.
 
 Previous Design: 
 There was one regular batch job with one runtime batch task.
@@ -207,9 +223,9 @@ There's one regular batch job (Job1) that creates a new runtime child job(Job2) 
 :::image type="content" source="media/batch-child-job.png" alt-text="Diagram of the design with one regular batch job (Job1) that creates a new runtime child job(Job2) and regular batch task is added to Job2 instead of Job1."::: 
 
 > [!NOTE]
-> If you've customized your code that involves SysIntegrationActivityBatch and SysIntegrationActivityBatchTask classes, you may encounter issues with the recurring Integrations feature under the new design. For example, if you have created your own custom batch task and are adding task to Job1 as per previous design, then you are adding tasks to the wrong job. You should now add your custom tasks to job2 instead of job1 as per new design.
+> If you customize your code that involves SysIntegrationActivityBatch and SysIntegrationActivityBatchTask classes, you may encounter issues with the recurring Integrations feature under the new design. For example, if you created your own custom batch task and are adding task to Job1 as per previous design, then you're adding tasks to the wrong job. You should now add your custom tasks to job2 instead of job1 as per new design.
  
- 
+
 ## Tips and tricks
 ### Viewing the batch job status for recurring integrations from the Data management workspace
 Recurring integration data jobs run in batch mode. If a recurring job fails, you must investigate the instance of the batch job as part of the troubleshooting process. To make this investigation easier, click **Manage messages** to get to the **Process status for recurring data job** page, which now shows the status of the batch job.
@@ -226,7 +242,7 @@ When you use recurring exports, you can choose not to upload a generated file or
 
 You can set **Prevent upload when zero records** when you configure a recurring export job or after a job is created. This option is available only when you use files or packages as data sources.
 
-Your implementation might include runs of recurring jobs where files or packages were uploaded. Your implementation might also include runs where no files or packages were uploaded, because there was nothing to upload. If you suspect that a file that should have been uploaded wasn't uploaded, or that a file was uploaded that shouldn't be, you can use the **Manage messages** page for the recurring export job to help with the debugging process.
+Your implementation might include runs of recurring jobs where files or packages were uploaded. Your implementation might also include runs where no files or packages were uploaded, because there was nothing to upload. If you suspect that a file that should be uploaded but wasn't, or that a file was uploaded that shouldn't be, you can use the **Manage messages** page for the recurring export job to help with the debugging process.
 
 > [!NOTE]
 > These features were added in Microsoft Dynamics 365 for finance and operations, Enterprise edition platform update 12. Jobs that were run before you upgraded to Platform update 12 won't have values in the following columns.
@@ -236,7 +252,7 @@ The **Total records exported** column shows the total count of records that were
 The **File uploaded successfully** column contains a check mark if the file or the package was uploaded successfully. If the file wasn't uploaded because of an error, or because there were no records, the column is blank.
 
 ### Http vs Https
-The dequeue API returns HTTP instead of HTTPS. This behavior can be seen in application environments that use a load balancer, such as production environments. (You can't see the behavior in one box environments). We recommend that you change the URI scheme to HTTPS in the middleware application that is trying to dequeue from the application.
+The dequeue API returns HTTP instead of HTTPS. This behavior can be seen in application environments that use a load balancer, such as production environments. (You can't see the behavior in a one box environment). We recommend that you change the URI scheme to HTTPS in the middleware application that is trying to dequeue from the application.
 
 ![Batch job status.](./media/show-batch-status.png)
 

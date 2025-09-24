@@ -3,7 +3,7 @@ title: Create maintenance requests
 description: Learn how to create a maintenance request in Asset Management, including an outline on subsequent processing of maintenance requests.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/01/2019
 ms.custom: 
 ms.reviewer: kamaybac

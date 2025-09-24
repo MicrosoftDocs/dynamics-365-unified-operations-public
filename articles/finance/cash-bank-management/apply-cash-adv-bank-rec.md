@@ -1,10 +1,10 @@
 ---
 title: Cash application in advanced bank reconciliation
-description: Learn how to complete cash application in advanced bank reconciliation, including prerequisites and a step-by-step processes.
+description: Learn how to complete cash application in advanced bank reconciliation, including prerequisites and step-by-step processes.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
-ms.date: 11/01/2024
+ms.topic: how-to
+ms.date: 5/15/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -29,6 +29,10 @@ There might be customer or vendor payments on bank statements in the app. This f
 - Import a bank statement.
 - As of version 10.0.42, if the **Enable prepayment and posting profile when generating payment journal in advanced bank reconciliation** feature is enabled, a prepayment option and a posting profile option are available when users generate a customer payment journal and a vendor payment journal from the bank reconciliation worksheet. Users can also configure those two options in the setup of reconciliation matching rules.
 - As of version 10.0.42, if the **Enable default descriptions for advanced bank reconciliation** feature is enabled, default descriptions for automatic payment journal posting and voucher posting are enabled in advanced bank reconciliation.
+
+> [!NOTE]
+> When applying cash in advanced bank reconciliation, only journal names without approval workflow enabled are supported.
+
 
 ## Complete cash application on the reconciliation worksheet
 
@@ -55,7 +59,7 @@ To manually complete cash application on the reconciliation worksheet, follow th
 
 ### Settle customer invoices
 
-To use matching rules to automatically settle open customer invoices, follow these steps.
+To use matching rules to automatically settle open customer invoices, including project invoices, follow these steps.
 
 1. Go to **Cash and bank management** \> **Setup** \> **Advanced bank reconciliation setup** \> **Reconciliation matching rules**.
 2. Select **New** to create a matching rule.
@@ -109,6 +113,9 @@ To use matching rules to automatically generate customer payments without settli
 13. Select either a matching rule or a matching rule set that contains the matching rule.
 14. Select **OK** to run the automatic matching.
 
+> [!NOTE]
+> If the **Payment journal cancellation from bank reconciliation worksheet** feature is enabled, the **Cancel payment** button is available to reverse incorrectly posted customer payment journals from the reconciliation worksheet. If the invoice has been settled during the journal posting (manually or using reconciliation rules), the invoice is also unsettled at the time of payment cancellation. 
+
 ### Generate vendor payments
 
 To use matching rules to automatically generate vendor payments without settling vendor invoices, follow these steps.
@@ -139,8 +146,13 @@ To use matching rules to automatically generate vendor payments without settling
 If the **Enable default descriptions for advanced bank reconciliation** feature is enabled, default descriptions for automatic payment journal posting and voucher posting are available in advanced bank reconciliation. 
 
 To enter default descriptions for bank reconciliation postings, follow these steps:
-1. Go to **General Ledger** \> **Journal setup**  \> **Default descrptions** or **Organization administration** \> **Default descrptions**.
+1. Go to **General Ledger** \> **Journal setup**  \> **Default descriptions** or **Organization administration** \> **Default descriptions**.
 2. There is a description type **Bank - reconciliation worksheet** in the list.
 3. To configure default descriptions for automatic postings during bank reconciliation process, see [Set up default descriptions for automatic posting](../general-ledger/set-up-default-descriptions-for-automatic-posting.md). References to **Reconciliation matching rules** and **Bank statement report entry** can be added on the **Default descriptions** parameters tab and included in the description text.
 
-![image](https://github.com/user-attachments/assets/a703067e-8ce5-4fba-a032-336cce84c496)
+> [!NOTE]
+> The current system assigns descriptions differently between automatic and manual flows:
+> - For automatic bank reconciliation that uses defined matching rules, when the **Enable default descriptions for advanced bank reconciliation** feature is enabled, the default descriptions are used.
+> - For manual voucher generation, the bank statement line's **Entry Reference** field is used for the description.
+
+![Default descriptions](./media/defaultdescriptions.PNG)

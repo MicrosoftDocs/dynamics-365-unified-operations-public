@@ -3,7 +3,7 @@ title: Journals generated during the electronic payment return process for Brazi
 description: Learn how payment journals are generated when you  post the return file for electronic payments. Approved payment lines in return files are posted to journals.
 author: kailiang
 ms.author: kailiang
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/20/2017

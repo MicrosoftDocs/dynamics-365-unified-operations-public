@@ -1,20 +1,30 @@
 ---
 title: Consolidate inventory transactions
 description: Learn how to consolidate inventory transaction data to help improve system performance with an outline on toggling the feature in your system.
-author: Weijiesa
-ms.author: weijiesa
-ms.topic: article
-ms.date: 04/11/2024
-ms.custom:
+author: banluo-ms
+ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: InventTransArchiveProcessForm
+ms.topic: how-to
+ms.date: 08/29/2025
+ms.custom:
+  - bap-template
 ---
 
 # Consolidate inventory transactions
 
 [!include [banner](../../includes/banner.md)]
 
-Over time, the inventory transaction table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This article describes how you can use the *Inventory transaction consolidation* feature to consolidate data about inventory transactions to help improve system performance.
+> [!IMPORTANT]
+> Inventory transaction consolidation enhances system performance and reduces data volume. However, consolidated transaction updates can sometimes cause data inconsistencies. Therefore, as a precautionary measure, Microsoft has temporarily disabled inventory archiving while we investigate the issues and work on a fix.
+>
+> During this time, inventory archiving is temporarily unavailable, which also prevents consolidated inventory transactions from being created or updated. The inventory transaction consistency checks are also disabled because the consistency check could alter them.
+>
+> The long-term retention (LTR) archive function for inventory transactions requires inventory consolidation because consolidation generates the data needed for the LTR process. However, because the consolidation function is currently disabled, the purge function for LTR of inventory transactions is also disabled until a fix is implemented.
+>
+> If you encounter any error messages related to these issues, you don't need to submit a support request about them. We're actively monitoring these occurrences as part of our investigation.
+
+Over time, the inventory transaction table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This article describes how to consolidate data about inventory transactions to help improve system performance.
 
 > [!NOTE]
 > Only financially updated inventory transactions can be consolidated in a selected closed ledger period. To be consolidated, financially updated outbound inventory transactions must have an issue status of *Sold*, and inbound inventory transactions must have a receipt status of *Purchased*.
@@ -26,10 +36,6 @@ If an `itemId` and `inventDimId` combination contains only one receipt or issue 
 > [!NOTE]
 > After consolidating your inventory transactions, you can further optimize storage and system performance by using the *Archive with Dataverse long term retention* feature to move `InventTransArchive` records to a Microsoft Azure data lake. Learn more in [Archive inventory transaction data in Dynamics 365 Supply Chain Management](../../fin-ops-core/dev-itpro/sysadmin/archive-inventory.md).
 
-## Turn on the feature in your system
-
-If your system doesn't already include the feature that is described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transaction consolidation* feature. This feature can't be disabled after being enabled.
-
 ## Things to consider before you consolidate inventory transactions
 
 Before you consolidate inventory transactions, you should consider the following business scenarios, because they'll be affected by the operation:
@@ -39,6 +45,7 @@ Before you consolidate inventory transactions, you should consider the following
 - Standard cost conversion can't be done for consolidated periods.
 - Inventory reports that are sourced from inventory transactions are affected when you consolidate inventory transactions. These reports include the inventory aging report and inventory value reports.
 - Inventory forecasts might be affected if they're run during the time horizon of consolidated periods.
+- All necessary actions (such as potential returns) on sales orders and their related inventory transactions should be completed before consolidating a period.
 
 ## Prerequisites
 
@@ -62,6 +69,7 @@ To consolidate inventory transactions, follow these steps.
 
     - **From date in closed ledger period** – Select the earliest transaction date to include in the consolidation.
     - **To date in closed ledger period** – Select the newest transaction date to include in the consolidation.
+    - **Bundle size** – Specify the number of unique combinations of item ID and inventory dimension ID values the system can group into a single SQL transaction when consolidating inventory transactions. The bundle size you should choose depends on the number of inventory transactions you have per combination. For combinations with a high transaction count, we recommend a smaller bundle size to avoid performance issues. Conversely, if the number of transactions per combination is low, a larger bundle size might be more efficient. Aim to keep the number of transactions per bundle at or below 100,000. If your environment includes a small number of combinations but a high overall transaction volume, consider narrowing the consolidation timeframe to maintain performance.
 
     > [!NOTE]
     > Only periods that meet the [prerequisites](#prerequisites) will be available for selection.

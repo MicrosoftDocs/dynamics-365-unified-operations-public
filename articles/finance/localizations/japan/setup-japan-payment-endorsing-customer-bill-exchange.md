@@ -1,49 +1,50 @@
 ---
-title: Setup Japan payment by endorsing a customer bill of exchange
-description: Learn about setting up payments by endorsing a customer bills of exchange for Japan, including step-by-step processes using the JPMF demo data company.
+title: Set up Japan payment by endorsing a customer bill of exchange
+description: Learn how to set up payments by endorsing a customer bills of exchange for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 05/09/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: 
   - CustPosting
   - CustParameters
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
-# Setup Japan payment by endorsing a customer bill of exchange
+# Set up Japan payment by endorsing a customer bill of exchange
 
 [!include [banner](../../includes/banner.md)]
 
-This task walks you through setting up payments by endorsing a customer bills of exchange for Japan.
+This article explains how to set up payments by endorsing a customer bills of exchange for Japan in Microsoft Dynamics 365 Finance.
 
-
-
-This task was recorded using the demo data company JPMF.
-
+The following procedures use the demo data company JPMF.
 
 ## Set up a posting profile for endorsing bills of exchange
-1. Go to Accounts receivable > Setup > Customer posting profiles.
-2. Click New.
-3. In the Posting profile field, type a value.
-    * For example:  enter 'New BoE'.  
-4. Click Add.
-5. In the Account code field, select an option.
-    * For example, select "All".  
-6. In the Endorse account field, specify the desired values.
-7. Click Save.
+
+To set up a posting profile for endorsing bills of exchange, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Setup \> Customer posting profiles**.
+1. Select **New**.
+1. In the **Posting profile** field, enter a value. For example, enter "New BoE".  
+1. Select **Add**.
+1. In the **Account code** field, select an option. For example, select **All**.  
+1. In the **Endorse account** field, enter a value.
+1. Select **Save**.
 
 ## Set up bills of exchange information in accounts receivable parameters
-1. Go to Accounts receivable > Setup > Accounts receivable parameters.
-2. Click the Ledger and sales tax tab.
-3. Expand the Bill of exchange section.
-4. In the Endorse Bill of Exchange field, click the drop-down button to open the lookup.
-5. In the list, click the link in the selected row.
-6. Click Save.
+
+To set up bills of exchange information in accounts receivable parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
+1. Select the **Ledger and sales tax** FastTab.
+1. Expand the **Bill of exchange** section.
+1. In the **Endorse bill of exchange** field, select the drop-down button to open the lookup.
+1. In the list, select the link in the selected row.
+1. Select **Save**.
 
 
 

@@ -3,13 +3,14 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (Ap
 description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.39 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
-ms.topic: conceptual
-ms.date: 04/19/2024
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: whats-new
+ms.date: 08/05/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen
-ms.reviewer: kamaybac
-ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (April 2024)
@@ -46,7 +47,7 @@ Some of these features aren't visible on your system until you turn them on in [
 |---|---|
 |<p>**Module:** Warehouse management</p><p>**Enhancement:** *Consolidate including incoming work* location directive action strategy</p><p>**Feature management name:** *(None)*</p> | <p>Adds a new [location directive action](../warehousing/create-location-directive.md#location-directive-actions-fasttab) strategy called *Consolidate including incoming work*. It works like the existing *Consolidate* strategy, except it also considers locations where items on incoming put-work lines aren't already available. This is beneficial when receiving multiple license plates with the same item and the items should be moved to the same location. This can be useful, for example, when receiving based on advance shipping notices (ASNs).</p><p>Learn more in [Work with location directives](../warehousing/create-location-directive.md). |
 |<p>**Module:** Warehouse management</p><p>**Enhancement:** Full license plate movement policy</p><p>**Feature management name:** *(None)*</p> | <p>Lets workers move license plates more quickly in the warehouse by reducing the number of scans needed when using a *Movement* or *Movement by template* mobile device menu item.</p><p>Learn more in [Set up a mobile device menu item for moving items in the warehouse](../warehousing/mobile-device-movement-menu.md) and [Set up a mobile device menu item for moving items by template](../warehousing/mobile-device-move-by-template-menu.md). |
-|<p>**Module:** Warehouse management</p><p>**Enhancement:** Split transfer order registration and receiving when using the Warehouse Management mobile app</p><p>**Feature management name:** *(None)*</p> | <p>Makes it possible to split the registration and cost-update processes for transfer orders, which lets receiving clerks use the Warehouse Management mobile app to update a transfer order receipt without waiting for any financial background processing, regardless of the receiving flow.  Previously, it was only possible to split registrations and cost updates during license plate receiving.</p><p>To enable this capability, go to the **Warehouse management parameters** page, open the **General** tab, expand the **Receiving** FastTab and set **Transfer order receiving process** to *Split the registration and receiving for all flows*.</p> |
+|<p>**Module:** Warehouse management</p><p>**Enhancement:** Split transfer order registration and receiving when using the Warehouse Management mobile app</p><p>**Feature management name:** *(None)*</p> | <p>Makes it possible to split the registration and cost-update processes for transfer orders, which lets receiving clerks use the Warehouse Management mobile app to update a transfer order receipt without waiting for any financial background processing, regardless of the receiving flow.  Previously, it was only possible to split registrations and cost updates during license plate receiving.</p><p>To enable this capability, go to the **Warehouse management parameters** page, open the **General** tab, expand the **Receiving** FastTab and set **Transfer order receiving process** to *Split the registration and receiving for all flows*.</p><p>Learn more in [Configure the transfer order receiving process](../warehousing/configure-transfer-order-receiving-process.md).</p> |
 |<p>**Module:** Warehouse management</p><p>**Feature management name:** *Inventory transaction details page's performance improvement.*</p> | <p>Improves the performance of the **Inventory transactions details** page. Users can now set default filters, so that the page shows only frequently checked inventory transactions. In addition, the page shows only inventory-related fields.</p><p>To access the **Inventory transaction details** page, go to **Inventory management** \> **Inquiries and reports** \> **Transactions**.</p> |
 |<p>**Module:** Master planning</p><p>**Feature management name:** *Actions based on requested date for Planning Optimization*</p>| Introduces a parameter that lets you specify what date action messages are based on. When action messages are based on the required date, changes are suggested only if they're feasible. This behavior matches the previous behavior. When action messages are based on the requested date, they can give a better idea of how late orders are. However, the suggestions might not be possible. For example, there might be a suggestion to advance a number of days that's impossible according to lead times, or there might be a suggestion to create an order in the past. |
 |<p>**Module:** Master planning</p><p>**Feature management name:** *Allows to create Planned order setting Purchase quantity instead of Requirement quantity*</p>| Makes it possible to create planned orders that set the purchase quantity instead of the requirement quantity. |

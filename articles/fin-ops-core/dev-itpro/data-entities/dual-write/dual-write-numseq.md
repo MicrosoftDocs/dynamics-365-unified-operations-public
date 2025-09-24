@@ -3,7 +3,7 @@ title: Configure number sequences and autonumber columns when using dual-write
 description: Learn how to configure number sequences in finance and operations apps and autonumber columns in Microsoft Dataverse for business identifiers involved in dual-write. 
 author: ramasri
 ms.author: ramasri
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/21/2023
 ms.reviewer: johnmichalak
 audience: Developer

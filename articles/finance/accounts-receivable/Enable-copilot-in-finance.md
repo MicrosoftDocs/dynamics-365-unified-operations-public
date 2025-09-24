@@ -4,8 +4,9 @@
 title: Enable Copilot in Dynamics 365 Finance
 description: This article explains how to enable the functionality that's related to Microsoft Copilot in Dynamics 365 Finance. 
 author: JodiChristiansen
-ms.date: 06/07/2024
-ms.topic: article
+ms.date: 01/21/2025
+ms.update-cycle: 180-days
+ms.topic: how-to
 ms.collection: bap-ai-copilot
 
 # optional metadata
@@ -64,7 +65,7 @@ Depending on the availability of Copilot and generative AI back-office services 
 
 If the **Move data across regions** checkbox is available, but it isn't selected, review the terms of use, and then select the checkbox.
 
-For information about the capabilities and limitations of AI-powered Copilot features in Microsoft Dynamics 365 Finance, see [Transparency FAQs for Dynamics 365 Finance](../transparency-note.md).
+For information about the capabilities and limitations of AI-powered Copilot features in Microsoft Dynamics 365 Finance, see [Responsible AI FAQs for Dynamics 365 Finance](../transparency-note.md).
 
 ## Enable the required security role
 

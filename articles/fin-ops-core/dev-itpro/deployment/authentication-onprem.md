@@ -4,14 +4,15 @@ description: Learn about how the authentication process works for Dynamics 365 f
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 06/19/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.15
 ms.service: dynamics-365-op
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Authentication in Dynamics 365 Finance + Operations (on-premises) environments
@@ -55,10 +56,10 @@ You will also find the following sections.
 ```xml
 <Section Name="OfficeApps">
     <Parameter Name="AppInsightsKey" Value="" />
-    <Parameter Name="AuthClientId" Value="d8230a86-015d-4c14-bcd6-c7fb65176b16" />
+    <Parameter Name="AuthClientId" Value="00001111-aaaa-2222-bbbb-3333cccc4444" />
 </Section>
 <Section Name="OpenIDConnect">
-    <Parameter Name="ClientID" Value="d8230a86-015d-4c14-bcd6-c7fb65176b16" />
+    <Parameter Name="ClientID" Value="00001111-aaaa-2222-bbbb-3333cccc4444" />
     <Parameter Name="Metadata" Value="https://ADFS.contoso.com/adfs/.well-known/openid-configuration" />
 </Section>
 <Section Name="Provisioning">

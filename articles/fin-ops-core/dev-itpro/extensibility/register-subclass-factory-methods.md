@@ -3,7 +3,7 @@ title: Register subclasses for factory methods
 description: Learn about how to register your own variations for the factories, including an overview on introducing new variants.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/10/2017
 ms.reviewer: johnmichalak
 audience: Developer

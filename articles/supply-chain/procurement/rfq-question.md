@@ -3,7 +3,7 @@ title: Responding to vendor questions on Request for quotations
 description: Vendors that have questions related to an RFP can submit their questions and read the answers on Vendor collaboration page.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/22/2020
 ms.custom:
 ms.reviewer: kamaybac 

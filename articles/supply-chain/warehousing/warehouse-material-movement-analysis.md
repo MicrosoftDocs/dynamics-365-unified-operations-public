@@ -1,5 +1,5 @@
 ---
-title: Analyze warehouse material movement through process mining (preview)
+title: Analyze warehouse material movement through process mining
 description: Learnabout the Warehouse material movement analysis template for the Microsoft Power Automate Process Mining, including prerequisites.
 author: Mirzaab
 ms.author: mirzaab
@@ -10,15 +10,11 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Analyze warehouse material movement through process mining (preview)
+# Analyze warehouse material movement through process mining
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 The Microsoft Power Automate Process Mining feature offers *task mining* and *process mining* capabilities to help you better understand your business processes, so that you can optimize them. Dynamics 365 Supply Chain Management offers a *Warehouse material movement analysis* template for the Power Automate Process Mining. This template can be used to create processes that help warehouse and operations managers gain insights into the material flow in the warehouse. It helps find inefficiencies that can be removed to improve the performance of the warehouse.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 The *Warehouse material movement analysis* template uses warehousing, product, and transactional data that's stored in your system, and lets you visualize and analyze material movements on the warehouse floor, based on closed warehouse work records. In process mining terminology, each warehouse work record corresponds to a *case*, and each pick or put work line corresponds to an *event*. Depending on your configuration, an *activity* can be any one of the following items:
 

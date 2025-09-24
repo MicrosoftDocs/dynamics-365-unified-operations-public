@@ -1,12 +1,14 @@
 ---
 title: Priority-based planning
 description: Learn about the priority-based planning feature of Microsoft Dynamics 365 Supply Chain Management with an outline on toggling priority-based planning.
-author: t-benebo
-ms.author: benebotg
-ms.topic: article
-ms.date: 10/15/2021
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: 
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Priority-based planning
@@ -18,10 +20,6 @@ This article describes the priority-based planning feature of Microsoft Dynamics
 Priority-based planning lets you prioritize replenishment orders to ensure that urgent demand is prioritized over less important demand. For example, a stockout replenishment order will be prioritized over a standard refill replenishment order. The system can automatically split larger orders into separate smaller orders where order lines are grouped by priority. It can then process all high-priority orders first.
 
 To get a quick overview of this feature, see the following video: [Planning optimization support for priority-based planning in Dynamics 365 Supply Chain Management](https://youtu.be/GmMHzFETTQc).
-
-## Turn priority-based planning on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Priority driven MRP support for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Where and how planning priorities are assigned
 
@@ -68,15 +66,15 @@ The following additional rules become effective when the **Priority calculation 
 
 - If the **Consider demand priority** option for the planned priority model is set to *Yes*, priority that is set on each demand line will limit the priority range bucket. The priority of any new planned order for supply will be no lower than the demand's priority. The range's upper value is considered a threshold that the demand's priority value is compared against. If the demand's priority is exactly in the middle between the upper threshold values of two ranges, the range that has the highest priority (that is, the lowest priority value) will be selected.
 - If the **Planned order creation** field for the planned priority model is set to *Single supply with most important priority*, only one supply will be created to fulfill all the way up to the maximum. The priority will be set to the priority of the first range that will trigger a supply.
-- If there is no on-hand inventory, no supply, and no demand, the line in the **Planning priority ranges** grid where the **From quantity** field is set to *Zero* will be used.
-- If there is demand, but there is no on-hand inventory or expected supply, the line in the **Planning priority ranges** grid where the **From quantity** field is set to *Zero or less* will be used.
+- If there's no on-hand inventory, no supply, and no demand, the line in the **Planning priority ranges** grid where the **From quantity** field is set to *Zero* will be used.
+- If there is demand, but no on-hand inventory or expected supply, the line in the **Planning priority ranges** grid where the **From quantity** field is set to *Zero or less* will be used.
 - When the range that the demand is part of is evaluated, the setting of the **Consider demand priority** option will still have an effect.
 
 ## Differences between traditional timeline calculations and priority-based planning
 
 Priority-based planning differs from traditional timeline calculations in the following ways:
 
-- All the regular preplanning processors are still in effect. These pre-processors include pegging of approved planned orders against sales demand, purchase requisition mapping, and reservation logic. Only demand that isn't fulfilled by these pre-processors is processed.
+- All the regular preplanning processors are still in effect. These preprocessors include pegging of approved planned orders against sales demand, purchase requisition mapping, and reservation logic. Only demand that isn't fulfilled by these preprocessors is processed.
 - During pegging, all supply is considered, regardless of its priority. This supply includes on-hand inventory, released supply, and the non-pegged portion of approved planned orders.
 - No "negative days" demand can be pegged against supply during the whole coverage time.
 - When supply is pegged against demand, the supply that has the highest priority (that is, the lowest priority value) is used up first. On-hand supply is considered to have a priority value of 0 (zero). Therefore, it will be consumed as the very first source.

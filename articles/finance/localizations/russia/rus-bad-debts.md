@@ -1,12 +1,12 @@
 ---
 title: Bad debt reserves in Accounts receivable
-description: Learn about the tax registers for receivables, hopeless debts, and their write-off, including an outline on creating and setting up two debts calculation models.
+description: Learn how to work with tax registers for receivables, hopeless debts, and their write-offs for Russia in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 09/05/2025
 ms.reviewer: johnmichalak
  
 ---
@@ -15,7 +15,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about the tax registers for receivables, hopeless debts, and their write-off.
+This article explains how to work with tax registers for receivables, hopeless debts, and their write-offs for Russia in Microsoft Dynamics 365 Finance.
 
 Accounts receivable are formed based on outstanding invoices and advances that have been issued. Accounts receivable are considered *bad* if they aren't repaid within the period that was agreed on in the contract. *Hopeless debts* are debts that can be written off. An example is a debt that lasts more than three years.
 
@@ -68,15 +68,15 @@ If you manually calculate tax registers one by one, consider using the following
 When you create the tax register journal for the current period, you should assume that the tax registers for the previous period were calculated in the following way:
 
 1. At the end of the previous period, a tax register for the inventory of accounts receivable should have been calculated.
-2. At the end of the previous period, a tax register for the calculation of the bad debts reserve in accounts receivable should have been calculated, based on the tax register for the inventory of accounts receivable. This register is the bad debts reserve for both the current period and future periods.
+1. At the end of the previous period, a tax register for the calculation of the bad debts reserve in accounts receivable should have been calculated, based on the tax register for the inventory of accounts receivable. This register is the bad debts reserve for both the current period and future periods.
 
 When you calculate tax registers for the current period, consider the following sequence of steps:
 
 1. During the current period, run the write -off procedure for some debts that were recognized as hopeless before the end of the previous period, or that became hopeless during the current period.
-2. Based on the information at the end of the previous period, and all operations during the current period, calculate the tax register by collecting information about the movement of accounts receivable.
-3. Calculate the tax register by collecting information about the movement of the bad debts reserve in accounts receivable. This register contains all the information about the movement and use of the reserve that was calculated at the end of the previous period.
-4. At the end of the current period, calculate the tax register for the inventory of accounts receivable. This register represents the status of all accounts receivable.
-5. At the end of the current period, calculate the tax register for the calculation of the bad debts reserve in accounts receivable. This register is the bad debts reserve for future periods.
+1. Based on the information at the end of the previous period, and all operations during the current period, calculate the tax register by collecting information about the movement of accounts receivable.
+1. Calculate the tax register by collecting information about the movement of the bad debts reserve in accounts receivable. This register contains all the information about the movement and use of the reserve that was calculated at the end of the previous period.
+1. At the end of the current period, calculate the tax register for the inventory of accounts receivable. This register represents the status of all accounts receivable.
+1. At the end of the current period, calculate the tax register for the calculation of the bad debts reserve in accounts receivable. This register is the bad debts reserve for future periods.
 
 ## Setup
 
@@ -84,28 +84,30 @@ When you calculate tax registers for the current period, consider the following 
 
 Debts can be calculated for profit tax accounting purposes and business accounting reports. Create two models, one for business accounting and one for tax accounting.
 
-1. Go to **Tax** > **Setup** > **Profit tax** > **Debts calculation models**.
-2. On the Action Pane, select **New** to create the first of the two models.
-3. In the **Model number** field, enter the short name of the model. For example, name the model for business accounting **RAP** and the model for tax accounting **TAX**.
-4. In the **Description** field, enter a detailed description of the model. For example, enter **Business accounting** for the **RAP** model and **Tax accounting** for the **TAX** model.
-5. On the **General** FastTab, set the following fields:
+To create and set up two debts calculation models, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Debts calculation models**.
+1. On the Action Pane, select **New** to create the first of the two models.
+1. In the **Model number** field, enter the short name of the model. For example, name the model for business accounting **RAP** and the model for tax accounting **TAX**.
+1. In the **Description** field, enter a detailed description of the model. For example, enter **Business accounting** for the **RAP** model and **Tax accounting** for the **TAX** model.
+1. On the **General** FastTab, set the following fields:
 
     - In the **Period types** field, select the calculation period. For example, select **Months** for the **RAP** model and **Quarters** for the **TAX** model.
     - In the **Accounting policy** field, select **Accounting object** or **Total**.
     - Leave the **Reserve limit sequence** field set to **0** (zero). You will configure the sequence later.
     - Set the **Reserve limit on the period adjustment** option to **Yes** to apply the reserve limit only to the revenue adjustment for the current reporting period.
 
-6. If you chose **Accounting object** in the **Accounting policy** section (for example, for **RAP**), on the **Customer posting** and **Vendor posting** FastTab, set up the ledger accounts and expense/income codes for the bad debts reserves posting:
+1. If you chose **Accounting object** in the **Accounting policy** section (for example, for **RAP**), on the **Customer posting** and **Vendor posting** FastTab, set up the ledger accounts and expense/income codes for the bad debts reserves posting:
 
     1. Select **Add**.
-    2. In the **Account code** field, select **Table**, **Group**, or **All**.
-    3. In the **Account/Group number** field, select the customer or vendor account number if you selected **Table** in the **Account code** field. If you selected **Group** in the **Account code** field, select the customer or vendor group number.
-    4. In the **Unrealized losses account** field, select the ledger account to use to post losses in transactions on bad debts. For example, select account **91 non-operating income and expenses** for the **RAP** model and account **Н91 non-operating income and expenses in TAX** for the **TAX** model.
-    5. In the **Unrealized income account** field, select the ledger account to use to post income in transactions on bad debts. For example, select account **91 non-operating income and expenses** for the **RAP** model and account **Н91 off-balance sheet account for income** for the **TAX** model.
-    6. In the **Bad debts reservation account** field, select the ledger account to use to form the bad debts reserve. For example, select account **63 reserves for bad debts** for the **RAP** model and account **Н63 reserves for bad debts for TAX** for the **TAX** model.
-    7. In the **Expense code** field, select the expense code to link to the transaction for creating the bad debts reserve and writing off hopeless debts.
-    8. In the **Income code** field, select the income code to link to the transaction for including the bad debts reserve in non-operation income.
-    9. For the **TAX** model only: In the **Summary account** field, select the ledger account to use to offset the account that you selected in the **Bad debts reservation account** field to write off bad debt transactions. For example, select account **Н62 off-balance sheet account for account receivable**.
+    1. In the **Account code** field, select **Table**, **Group**, or **All**.
+    1. In the **Account/Group number** field, select the customer or vendor account number if you selected **Table** in the **Account code** field. If you selected **Group** in the **Account code** field, select the customer or vendor group number.
+    1. In the **Unrealized losses account** field, select the ledger account to use to post losses in transactions on bad debts. For example, select account **91 non-operating income and expenses** for the **RAP** model and account **Н91 non-operating income and expenses in TAX** for the **TAX** model.
+    1. In the **Unrealized income account** field, select the ledger account to use to post income in transactions on bad debts. For example, select account **91 non-operating income and expenses** for the **RAP** model and account **Н91 off-balance sheet account for income** for the **TAX** model.
+    1. In the **Bad debts reservation account** field, select the ledger account to use to form the bad debts reserve. For example, select account **63 reserves for bad debts** for the **RAP** model and account **Н63 reserves for bad debts for TAX** for the **TAX** model.
+    1. In the **Expense code** field, select the expense code to link to the transaction for creating the bad debts reserve and writing off hopeless debts.
+    1. In the **Income code** field, select the income code to link to the transaction for including the bad debts reserve in non-operation income.
+    1. For the **TAX** model only: In the **Summary account** field, select the ledger account to use to offset the account that you selected in the **Bad debts reservation account** field to write off bad debt transactions. For example, select account **Н62 off-balance sheet account for account receivable**.
 
     > [!NOTE]
     > For the **RAP** model, the ledger account from the customer posting profile is used for this purpose.
@@ -115,7 +117,7 @@ Debts can be calculated for profit tax accounting purposes and business accounti
     Alternatively, if you selected **Total** in the **Accounting policy** field, you complete the setup on the **General** FastTab instead of the **Customer posting** and **Vendor posting** FastTabs. Set the **Unrealized losses account**, **Unrealized income account**, **Bad debts reservation account**, **Expense code**, **Income code**, and
 **Summary account** fields as described in the preceding substeps.
 
-7. On the **Debt interval** FastTab, set up the percentage that is used to calculate the bad debts reserve, depending on the number of overdue days:
+1. On the **Debt interval** FastTab, set up the percentage that is used to calculate the bad debts reserve, depending on the number of overdue days:
 
     - In the **Period debt type** field, specify **Hopeless**, and then select **Add** to create a bad debts interval.
     - In the **From** field, enter the lower limit of the debt interval, in days, for the current line. The **Days** and **Register** fields are automatically filled in.
@@ -126,13 +128,15 @@ Debts can be calculated for profit tax accounting purposes and business accounti
 
    ![Debt interval setup for a model on the Debts calculation models page.](../media/rus-bad-debts-2.png)
 
-8. Repeat steps 2 through 7 to create the second model.
+1. Repeat steps 2 through 7 to create the second model.
 
 ### Set up the models for tax and business accounting
 
-1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
-2. On the **Ledger and sales tax** tab, in the **Debtor debts** section, in the **Model number for business accounting** field, select **RAP**.
-3. In the **Model number for tax accounting** field, select **TAX**.
+To set up the models for tax and business accounting, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+1. On the **Ledger and sales tax** tab, in the **Debtor debts** section, in the **Model number for business accounting** field, select **RAP**.
+1. In the **Model number for tax accounting** field, select **TAX**.
 
     ![Setting up the models on the Accounts receivable parameters page.](../media/rus-bad-debts-3.png)
 
@@ -159,48 +163,53 @@ Depending on the settings of your debts calculation models, create and calculate
 | Accounts receivable movement | For the **TAX** model |
 | Accounts receivable movement (business accounting) | For the **RAP** model |
 
-
 ### Set up a limit for the bad debts reserve in tax accounting
 
-1. Go to **Tax** > **Setup** > **Profit tax** > **Rates**.
-2. On the Action Pane, select **New** to create a rate.
-3. In the **Rate code** field, enter the unique code of the rate.
-4. In the **Calculation method** field, enter **Whole amount**.
-5. On the **Values** FastTab, in the **Start date** field, enter the first date when the value of the rate will be used in the sequence of calculation.
-6. To set the reserve amount, in the **Value** field, enter the percentage of revenue. For example, enter **0.10**.
+To set up a limit for the bad debts reserve in tax accounting, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Rates**.
+1. On the Action Pane, select **New** to create a rate.
+1. In the **Rate code** field, enter the unique code of the rate.
+1. In the **Calculation method** field, enter **Whole amount**.
+1. On the **Values** FastTab, in the **Start date** field, enter the first date when the value of the rate will be used in the sequence of calculation.
+1. To set the reserve amount, in the **Value** field, enter the percentage of revenue. For example, enter **0.10**.
 
     ![Creating a rate on the Rates page.](../media/rus-bad-debts-4.png)
 
-7. Go to **Tax** > **Setup** > **Profit tax** > **Debts calculation models**.
-8. On the Action Pane, select **Sequence of calculation** to create a reserve limit sequence for revenue.
-9. In the **Channel reference** field, specify the register code for the tax model.
-10. On the Action Pane, select **Counters**.
-11. Select **New** to create a counter.
-12. In the **Description** field, enter a description of the counter.
-13. In the **Expense code** field, select the expense code of the revenue.
-14. On the **Lines** FastTab, create settings for calculating the revenue and reserve limit.
+1. Go to **Tax** \> **Setup** \> **Profit tax** \> **Debts calculation models**.
+1. On the Action Pane, select **Sequence of calculation** to create a reserve limit sequence for revenue.
+1. In the **Channel reference** field, specify the register code for the tax model.
+1. On the Action Pane, select **Counters**.
+1. Select **New** to create a counter.
+1. In the **Description** field, enter a description of the counter.
+1. In the **Expense code** field, select the expense code of the revenue.
+1. On the **Lines** FastTab, create settings for calculating the revenue and reserve limit.
 
    ![Creating a counter on the Counter setup page.](../media/rus-bad-debts-5.png)
 
-   For more information about how to set up sequences of calculation, see [Sequence of calculations](rus-set-up-deferrals.md#sequence-of-calculation).
+   For more information about how to set up sequences of calculation, see [Create a sequence of calculation](rus-set-up-deferrals.md#create-a-sequence-of-calculation).
 
-15. Go to the debts calculation models that you created earlier, and in the **Reserve limit** section, in the **Reserve limit sequence** field, enter the sequence for each model.
+1. Go to the debts calculation models that you created earlier, and in the **Reserve limit** section, in the **Reserve limit sequence** field, enter the sequence for each model.
 
 ### Set up a number sequence for the write-off of hopeless debts
 
-1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
-2. On the **Number sequences** tab, in the **Number sequence code** field, select the number sequence code for the **Ledger voucher for debts amortization** reference.
+To set up a number sequence for the write-off of hopeless debts, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+1. On the **Number sequences** tab, in the **Number sequence code** field, select the number sequence code for the **Ledger voucher for debts amortization** reference.
 
 ### Exclude agreements from reserve calculation
 
 For more information about how to create and set up agreements, see [Set up and create agreements](rus-set-up-and-create-agreements.md).
 
-By default, sales agreements are included in the calculation of the bad debts reserve. To exclude an agreement from the calculation, follow these steps.
+By default, sales agreements are included in the calculation of the bad debts reserve.
 
-1. Go to **Accounts receivable** > **Orders** > **Sales agreements**, and select the sales agreement to exclude from the calculation.
-2. Switch to the **Header** view, and then select **Edit**.
-3. On the **Financial** FastTab, in the **Debtor debts** field, specify **Exclude from reserve in business accounting**, **Exclude from reserve in tax accounting**, or both.
-4. Select **Save**.
+To exclude an agreement from the calculation, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **Sales agreements**, and select the sales agreement to exclude from the calculation.
+1. Switch to the **Header** view, and then select **Edit**.
+1. On the **Financial** FastTab, in the **Debtor debts** field, specify **Exclude from reserve in business accounting**, **Exclude from reserve in tax accounting**, or both.
+1. Select **Save**.
 
 ## Tax registers
 
@@ -268,30 +277,34 @@ On each register line, you can review the information in the following columns:
 
 #### Create a ledger journal for accounts receivable bad debts reserves
 
-1. Go to **Tax** > **Journal entries** > **Tax register journal**.
-2. Select the line where the **Accounts receivable - bad debts reserve** register for total accounting or the **Accounts receivable - reserve details** register for object accounting is calculated and approved.
-3. On the Action Pane, select **Ledger journal** > **Accounts receivable - bad debts reserve**.
-4. On the Action Pane, select **Create** >**Create journal**.
+To create a ledger journal for accounts receivable bad debts reserves, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Journal entries** \> **Tax register journal**.
+1. Select the line where the **Accounts receivable - bad debts reserve** register for total accounting or the **Accounts receivable - reserve details** register for object accounting is calculated and approved.
+1. On the Action Pane, select **Ledger journal** \> **Accounts receivable - bad debts reserve**.
+1. On the Action Pane, select **Create** >**Create journal**.
 
     The journal is created. Its lines show the vouchers for calculating amounts of the reserves for the current period. The amounts of the reserves are calculated in the group of **Accounts receivable - reserves** registers.
 
-5. On the Action Pane, select **Lines** to view the vouchers and other details.
+1. On the Action Pane, select **Lines** to view the vouchers and other details.
 
     ![Journal voucher page.](../media/rus-bad-debts-8.png)
 
-6.  On the Action Pane, select **Post** > **Post** to post the journal.
+1.  On the Action Pane, select **Post** \> **Post** to post the journal.
 
 #### Create a reversing entry ledger journal for accounts receivable bad debts reserves
 
-1. Go to **Tax** > **Journal entries** > **Tax register journal**.
-2. Select the period where the **Accounts receivable - bad debts reserve** register for total accounting or the **Accounts receivable - reserve details** register for object accounting is calculated and approved.
-3. On the Action Pane, select **Ledger journal** > **Accounts receivable - bad debts reserve**.
-4. On the Action Pane, select **Create** > **Reverse journal**.
+To create a reversing entry ledger journal for accounts receivable bad debts reserves, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax** \> **Journal entries** \> **Tax register journal**.
+1. Select the period where the **Accounts receivable - bad debts reserve** register for total accounting or the **Accounts receivable - reserve details** register for object accounting is calculated and approved.
+1. On the Action Pane, select **Ledger journal** \> **Accounts receivable - bad debts reserve**.
+1. On the Action Pane, select **Create** \> **Reverse journal**.
 
     The journal is created. Its lines show the vouchers for calculating amounts of the reserves for the current period. The amounts of the reserves are calculated in the group of **Accounts receivable - reserves** registers.
 
-5. On the Action Pane, select **Lines** to view the vouchers and other details.
-6. On the Action Pane, select **Post** > **Post** to post the journal.
+1. On the Action Pane, select **Lines** to view the vouchers and other details.
+1. On the Action Pane, select **Post** \> **Post** to post the journal.
 
     ![Creating a reverse journal on the Accounts receivable   bad debts reserve page.](../media/rus-bad-debts-9.png)
 
@@ -370,10 +383,12 @@ On each register line, you can review the information in the following columns:
 
 ### Recognize and write off hopeless debt
 
+To recognize and write off hopeless debt, follow these steps.
+
 1. Calculate and approve the tax register journal for the previous period.
-2. Go to **Accounts receivable** > **Periodic tasks** > **Amortization** > **Accounts receivable amortization**.
-3. In the **Calculation date** field, select the date. That date will be used to select the calculation period.
-4. In the **Model** field, select the debts calculation model.
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Amortization** \> **Accounts receivable amortization**.
+1. In the **Calculation date** field, select the date. That date will be used to select the calculation period.
+1. In the **Model** field, select the debts calculation model.
 
     The page shows hopeless debts as of the selected reporting date:
 
@@ -381,13 +396,13 @@ On each register line, you can review the information in the following columns:
     - The **Vendors** tab shows the list of prepayments to suppliers.
     - The **Reserve** field shows the amount of the formed bad debts reserve at the beginning of the current period that can be used to write off hopeless debt.
 
-5. To review the original transactions for customers or vendors, select **Transactions**.
-6. To add other customer or vendor transactions to the list, on the Action Pane, select **Select customer debts** or **Select vendor debts**.
-7. Mark the debts that must be written off. The **Total** field in the **Marked** section at the bottom of the page shows the total amount of the marked lines.
+1. To review the original transactions for customers or vendors, select **Transactions**.
+1. To add other customer or vendor transactions to the list, on the Action Pane, select **Select customer debts** or **Select vendor debts**.
+1. Mark the debts that must be written off. The **Total** field in the **Marked** section at the bottom of the page shows the total amount of the marked lines.
 
     ![Marking transactions for write off.](../media/rus-bad-debts-12.png)
 
-8. On the Action Pane, select **Update**. The marked transactions disappear. Additionally, in the **Written off** section at the bottom of the page, the amounts increase to the value that the **Total** field in the **Marked** section had before you selected **Update**. Transactions for customers and vendors, and transactions in the general ledger to write off each debt, are created. The date of the write-off operations corresponds to the date that you selected in the **Calculation date** field.
+1. On the Action Pane, select **Update**. The marked transactions disappear. Additionally, in the **Written off** section at the bottom of the page, the amounts increase to the value that the **Total** field in the **Marked** section had before you selected **Update**. Transactions for customers and vendors, and transactions in the general ledger to write off each debt, are created. The date of the write-off operations corresponds to the date that you selected in the **Calculation date** field.
 
     ![Result of the update after transactions are marked for write off.](../media/rus-bad-debts-13.png)
     > [!NOTE]
@@ -397,11 +412,11 @@ On each register line, you can review the information in the following columns:
 
 ### Cancel the write-off of hopeless debt
 
-Follow these steps to cancel the write-off of hopeless debts.
+To cancel the write-off of hopeless debts, follow these steps.
 
-1. Go to **Accounts receivable** > **Periodic tasks** > **Amortization** > **Accounts receivable amortization cancellation**.
-2. In the **Calculation date** field, select the date. That date will be used to select the calculation period.
-3. In the **Model** field, select the debts calculation model.
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Amortization** \> **Accounts receivable amortization cancellation**.
+1. In the **Calculation date** field, select the date. That date will be used to select the calculation period.
+1. In the **Model** field, select the debts calculation model.
 
     The page shows written-off debts as of the selected reporting date:
 
@@ -410,9 +425,15 @@ Follow these steps to cancel the write-off of hopeless debts.
     - The **Reserve** field shows the amount of the formed bad debts reserve at the beginning of the current period that can be used to write off hopeless debt.
     - The **Written off** field shows the amount of the written-off bad debts from the reserve for accounts receivable or to the revenues/expenses account.
 
-4. To review the original transactions for customers or vendors, select **Transactions**.
-5. Mark the written-off debts that must be canceled. The **Total** field in the **Marked** section at the bottom of the page shows the total amount of the marked lines.
+1. To review the original transactions for customers or vendors, select **Transactions**.
+1. Mark the written-off debts that must be canceled. The **Total** field in the **Marked** section at the bottom of the page shows the total amount of the marked lines.
 
     ![Canceling the write off of debts.](../media/rus-bad-debts-14.png)
 
-6. On the Action Pane, select **Update**. The marked transactions disappear. In the **Written off** section at the bottom of the page, the amounts decrease to the value that the **Total** field in the **Marked** section had before you selected **Update**. Transactions that cancel the write-off of accounts receivable are then generated.
+1. On the Action Pane, select **Update**. The marked transactions disappear. In the **Written off** section at the bottom of the page, the amounts decrease to the value that the **Total** field in the **Marked** section had before you selected **Update**. Transactions that cancel the write-off of accounts receivable are then generated.
+
+
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

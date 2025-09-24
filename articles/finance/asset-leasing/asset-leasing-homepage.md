@@ -4,9 +4,10 @@ description: Learn about the various help topics that are available for asset le
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 04/12/2021
-ms.custom: ["4464"]
-ms.reviewer: kfend
+ms.date: 04/12/2025
+ms.update-cycle: 1095-days
+ms.custom: evergreen
+ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
 ms.search.region: Global

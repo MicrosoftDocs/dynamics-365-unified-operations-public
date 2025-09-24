@@ -1,62 +1,63 @@
 ---
 title: Set up master data for inclusion of deductible expenses for multiple posting layers
-description: Learn about creating fixed asset rules with required master data for inclusion of deductible expenses for multiple posting layers.
+description: Learn how to create fixed asset rules with required master data for inclusion of deductible expenses for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 05/09/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: 
   - AssetAdvancedRule_JP, AssetAdvancedRuleCreateEdit_JP
   - AssetBookTable
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Set up master data for inclusion of deductible expenses for multiple posting layers
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through creating fixed asset rules with required master data for inclusion of deductible expenses for multiple posting layers. Before you can complete this procedure, the Fixed Assets configuration key must be selected. This procedure was created using the demo data company JPMF.
+This article explains how to create fixed asset rules with required master data for inclusion of deductible expenses  for multiple posting layers for Japan in Microsoft Dynamics 365 Finance.
 
+Before you complete the following procedures, you must first select the **Fixed Asset** configuration key.
 
-## Depreciation settlement rules
-1. Go to Fixed assets > Setup > Depreciation settlement rules.
-    * Optional: If the settlement rule table is empty, you will be asked if you want to import the default set of rules. Click OK to import the default set of rules.  
-2. Click New.
-3. In the Over depreciation field, select an option.
-    * Select Over depreciation = Ordinary depreciation.  
-4. In the Under depreciation field, select an option.
-    * Select Under depreciation = Additional depreciation (reserve).  
-5. Click OK.
-6. In the Filter by rule type field, select an option.
-    * Select Filter by rule type = Carry forward of over depreciation or under depreciation amount.  
-7. Click Edit rule.
-8. In the Periods to carry forward(years) field, enter a number.
-    * For this example, enter 5.  
-9. Click OK.
+The procedures use the demo data company JPMF.
 
-## Book
-1. Go to Fixed assets > Setup > Books.
-2. Click New.
-3. In the Book field, type a value.
-    * For this example, Book = RB.  
-4. In the Description field, type a value.
-5. Expand the General section.
-    * Configure the parameters according to the core fixed asset features.  
-6. Expand the Derived books section.
-7. Select the book on the tax layer that will be referencing this one.
-    * If you add a derived book for the Acquisition type, it will simplify the operation by automatically acquiring the tax layer book.  Example: NSL_TAX  
-8. Click Save.
-9. Use the Quick Filter to find records. For example, filter on the Book field with a value of 'NSL_TAX'.
-    * Search for the Tax layer book that you want to run settlement with the Current layer book.  
-10. Expand the General section.
-11. In the Referenced book field, type a value.
-    * Type the book that you have just created.  
-12. Click Save.
-13. Close the page.
+## Set up depreciation settlement rules
+
+To set up depreciation settlement rules, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Depreciation settlement rules**.
+1. Optionally, if the settlement rule table is empty, you're asked if you want to import the default set of rules. Select **OK** to import the default set of rules.  
+1. Select **New**.
+1. In the **Over depreciation** field, select **Over depreciation = Ordinary depreciation**.  
+1. In the **Under depreciation** field, select **Under depreciation = Additional depreciation (reserve)**.  
+1. Select **OK**.
+1. In the **Filter by rule type** field, select **Filter by rule type = Carry forward of over depreciation or under depreciation amount**.  
+1. Select **Edit rule**.
+1. In the **Periods to carry forward (years)** field, enter a number.
+1. Select **OK**.
+
+## Set up a book
+
+To set up a book, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Books**.
+1. Select **New**.
+1. In the **Book** field, enter a value.
+1. In the **Description** field, enter a value.
+1. Expand the **General** section.
+1. Configure the parameters according to the core fixed asset features.  
+1. Expand the **Derived books** section.
+1. Select the book on the tax layer that will reference this book. If you add a derived book for the acquisition type, the system simplifies the operation by automatically acquiring the tax layer book.
+1. Select **Save**.
+1. Use the Quick Filter to search for the tax layer book that you want to run settlement with the current layer book.  
+1. Expand the **General** section.
+1. In the **Referenced book** field, enter the book that you created.  
+1. Select **Save**.
+1. Close the page.
 
 
 

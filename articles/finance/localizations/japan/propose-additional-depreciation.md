@@ -1,45 +1,46 @@
 ---
 title: Propose additional depreciation
-description: In Japan, an additional depreciation is permitted under certain conditions, including a step-by-step process using the JPMF demo data company.
+description: Learn how to propose additional depreciation for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 05/02/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Propose additional depreciation
 
 [!include [banner](../../includes/banner.md)]
 
+This article explains how to propose additional depreciation for Japan in Microsoft Dynamics 365 Finance.
+
 In Japan, an additional depreciation is permitted under certain conditions. 
 
+Use the following procedure to propose additional depreciation. Before you begin, ensure that the fixed asset has been acquired and the ordinary depreciation has been posted. 
 
+Before you complete the procedure, you must first select the **Fixed Asset** configuration key.
 
-Use this procedure to learn how to propose additional depreciation. Before you begin, be sure that the fixed asset has been acquired and the ordinary depreciation has been posted.  Also, be sure that the Fixed Assets configuration key is selected.
+The procedure uses the JPMF demo company data.
 
+To propose additional depreciation, follow these steps.
 
-
-This procedure uses the JPMF demo company data.
-
-1. Go to Fixed assets > Journal entries > Fixed assets journal.
-2. Click New.
-3. In the Name field, type a value.
-4. Click Lines.
-5. Click Proposals.
-6. Click Extraordinary depreciation proposal.
-7. In the To date field, enter a date.
-8. Click Filter.
-    * By using the filter, it helps to speed up the process by focusing on only the fixed assets with the specified criteria.  
-9. In the Criteria field, type a value.
-10. Click OK.
-11. Click OK.
-12. Click Post.
+1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
+1. Select **New**.
+1. In the **Name** field, enter a value.
+1. Select **Lines**.
+1. Select **Proposals**.
+1. Select **Extraordinary depreciation proposal**.
+1. In the **To date** field, enter a date.
+1. Select **Filter**. Using the filter helps speed up the process by focusing only on the fixed assets with the specified criteria.  
+1. In the **Criteria** field, enter a value.
+1. Select **OK**.
+1. Select **OK**.
+1. Select **Post**.
 
 
 

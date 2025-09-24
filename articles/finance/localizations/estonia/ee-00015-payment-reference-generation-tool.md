@@ -1,38 +1,44 @@
 ---
 title: EE-00015 Payment reference generation tool
-description: Learn about generating the payment references, including outlines on specifying number sequences for payment references and creating payment reference numbers.
+description: This article describes how to specify number sequences for payment references and create payment reference numbers in Estonia with Microsoft Dynamics 365 Finance.
 author: kailiang
 ms.author: kailiang
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/29/2018
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
 ms.search.region: Estonia
 ms.search.validFrom: 2016-06-30
 ms.search.form: MainAccount, LedgerJournalTable, LedgerJournalTransDaily
-ms.dyn365.ops.version: Version 7.0.0
 ---
 # EE-00015 Payment reference generation tool
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through generating the payment references. This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Estonia. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
+This article describes how to specify number sequences for payment references and create payment reference numbers in Estonia with Microsoft Dynamics 365 Finance.
 
+The following procedures walk you through generating the payment references. The procedures were created using the demo data company DEMF with the country/region of legal entity primary address updated to be Estonia.
 
 ## Specify a number sequence for payment references
-1. Go to Accounts receivable > Setup > Accounts receivable parameters.
-2. Click the Number sequences tab.
-3. In the Reference column. find and select 'Payment reference' record.
-4. In the Number sequence code field, enter or select a value.
-    * You may want to select a dedicated, newly created numeric and continuous number sequence. For demo purposes, you can use  'Acco_18'.  
-5. Click Save.
+
+To specify a number sequence for payment references, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
+1. Select the **Number sequences** tab.
+1. In the **Reference** column, find and select the **Payment reference** record.
+1. In the **Number sequence code** field, enter or select a value. You may want to select a dedicated, newly created numeric and continuous number sequence. For demo purposes, you can use  "Acco_18".  
+1. Select **Save**.
 
 ## Create payment reference numbers
-1. Go to Accounts receivable > Periodic tasks > Create payment reference numbers.
-2. Select Yes in the Create payment reference numbers field.
-    * Select 'Delete payment reference numbers' to remove reference numbers already assigned to customers. You may limit the customers for which you want to remove or create reference numbers by using 'Record to include' section and applying criteria for customers or customer groups.  
-3. Click OK.
+
+To create payment reference numbers, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Periodic tasks \> Create payment reference numbers**.
+2. in the **Create payment reference numbers** field, select **Yes**.
+    > [!NOTE]
+    > To remove reference numbers already assigned to customers, select **Delete payment reference numbers**. To limit the number of customers for which you want to remove or create reference numbers, go to the **Record to include** section and apply criteria for customers or customer groups.  
+3. Select **OK**.
 
 
 

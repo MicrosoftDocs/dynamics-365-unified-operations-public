@@ -1,10 +1,10 @@
 ---
 title: X++ string runtime functions
 description: Learn about the string run-time functions, including syntax strings, parameters, return values, and remarks for various functions.
-author: josaw1
-ms.author: josaw
-ms.topic: article
-ms.date: 08/15/2019
+author: pvillads
+ms.author: pvillads
+ms.topic: language-reference
+ms.date: 09/02/2025
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -41,7 +41,7 @@ int match(str pattern, str text)
 
 The search is case-insensitive. The following special characters can be used to create the pattern for the *pattern* parameter.
 
-+ **\\**: A backslash (**\\**) nullifies, or escapes, the special treatment of special characters, so that a special character can be matched like a normal letter. A pair of backslashes is translated into one non-special backslash. Examples:
++ **\\**: A backslash (**\\**) nullifies, or escapes, the special treatment of special characters, so that a special character can be matched like a normal letter. A pair of backslashes is translated into one nonspecial backslash. Examples:
 
     + **match("ab$cd","ab$cd");** returns **0**. 
     + **match("ab\\$cd","ab$cd");** returns **0**. The backslash isn't escaped.
@@ -275,7 +275,7 @@ The value of the position of the first occurrence of one of the specified charac
 
 ### Remarks
 
-To search from the beginning of the string to the end, use **1** as the value of the *\_position* parameter. If the value of the *\_number* parameter is negative, the system searches the number of characters backward from the specified position. The search isn't case-sensitive. Here is an example.
+To search from the beginning of the string to the end, use **1** as the value of the *\_position* parameter. If the value of the *\_number* parameter is negative, the system searches the number of characters backward from the specified position. The search isn't case-sensitive. Here's an example.
 
 ```xpp
 strFind("ABCDEFGHIJ","KHD",1,10); //Returns the value 4 (the position where "D" was found).
@@ -303,7 +303,7 @@ The formatted string.
 
 ### Remarks
 
-If an argument isn't provided for a parameter, the parameter will be returned as "%n" in the string. The string conversion of values of the **real** type is limited to two decimal places. Values are rounded, not truncated. The **System.String::Format** method from the Microsoft .NET Framework can be used to gain additional functionality, as shown in the example.
+If an argument isn't provided for a parameter, the parameter returns as "%n" in the string. The string conversion of values of the **real** type is limited to two decimal places. Values are rounded, not truncated. The **System.String::Format** method from the Microsoft .NET Framework can be used to gain more functionality, as shown in the example.
 
 ### Example
 
@@ -526,7 +526,7 @@ The position of the first occurrence of a character that isn't specified by the 
 
 ### Remarks
 
-The search isn't case-sensitive. To search from the beginning of the string to the end, use a value of **1** for the *\_position* parameter. If a minus sign precedes the value of the *\_number* parameter, the characters will be searched in reverse order, starting from the position that is specified by the *\_position* parameter.
+The search isn't case-sensitive. To search from the beginning of the string to the end, use a value of **1** for the *\_position* parameter. If a minus sign precedes the value of the *\_number* parameter, the characters are searched in reverse order, starting from the position that is specified by the *\_position* parameter.
 
 ```xpp
 strNFind("ABCDEFGHIJ","ABCDHIJ",1,10); //Returns the value 5 (the position of "E");
@@ -652,7 +652,7 @@ str strRep(str _text, str _number)
 
 ### Return value
 
-A new string that contains the contents of the original string that are repeated the specified number of times.
+A new string that contains the contents of the original string that's repeated the specified number of times.
 
 ### Example
 
@@ -680,7 +680,7 @@ str strRTrim(str _text)
 
 | Parameter | Description                                               |
 |-----------|-----------------------------------------------------------|
-| \_text    | The string to remove the trailing space characters from . |
+| \_text    | The string to remove the trailing space characters from.  |
 
 ### Return value
 
@@ -717,7 +717,7 @@ The position at which the specified string was found in the string; otherwise, *
 
 ### Remarks
 
-The comparisons aren't case-sensitive. Values for the *\_position* parameter that are less than **1** are treated as **1**. The direction of the scan is controlled by the sign that is specified in the *\_number* parameter. A positive sign indicates that each successive comparison will start one position closer to the end of the string. A negative sign indicates that each comparison will start one position closer to the start of the string.
+The comparisons aren't case-sensitive. Values for the *\_position* parameter that are less than **1** are treated as **1**. The direction of the scan is controlled by the sign that is specified in the *\_number* parameter. A positive sign indicates that each successive comparison starts one position closer to the end of the string. A negative sign indicates that each comparison starts one position closer to the start of the string.
 
 ```xpp
 strScan("ABCDEFGHIJ","DEF",1,10); //Returns the value 4.
@@ -747,7 +747,7 @@ The **strUpr** function is complementary to the **strLwr** function. The **strUp
 
 ### Example
 
-The following example will print **ABCDD55EFGHIJ**.
+The following example prints **ABCDD55EFGHIJ**.
 
 ```xpp
 static void strUprExample(Args _args)
@@ -778,7 +778,7 @@ A substring of the original string.
 
 ### Remarks
 
-If a minus sign precedes the value of the *\_number* parameter, the substring will be selected backward from the specified position.
+If a minus sign precedes the value of the *\_number* parameter, the substring is selected backward from the specified position.
 
 ```xpp
 subStr("ABCDEFGHIJ",3,5); //Returns the string "CDEFG".
@@ -788,6 +788,120 @@ subStr("abcdef",2,3) //Returns the string "bcd".
 subStr("abcdef",2,-3); //Returns the string "ab".
 ```
 
+
+## strContains
+Checks if text string contains another string.
+
+```xpp
+boolean strContains(str _text, str _potentialContains)
+```
+
+### Parameters
+
+| Parameter  | Description                                                                                                                                                                                                             |
+|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| \_text     | The original string to search in.                                                                                                                                                                                                    |
+| \_potentialContains | The string to find.                                                                                                                                                  |
+
+### Return value
+
+True if original string contains the searched string; otherwise, false.
+
+### Remarks
+The comparisons aren't case-sensitive. 
+
+
+```xpp
+strContains("ABCDEFGHIJ","abc"); //Returns true.
+strContains("ABCDEFGHIJ","ABC"); //Returns true.
+strContains("ABCDEFGHIJ","K"); //Returns false.
+```
+
+
+## strStartsWith
+Checks if text string begins with another string.
+
+```xpp
+boolean strStartsWith(str _string, str _potentialStart)
+```
+
+### Parameters
+
+| Parameter  | Description                                                                                                                                                                                                             |
+|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| \_string     | The original string to search in.                                                                                                                                                                                                    |
+| \_potentialStart | The potential string that is at the beginning.                                                                                                                                                  |
+
+### Return value
+
+True if the potential string is the beginning of the original string; otherwise, false.
+
+### Remarks
+The comparisons aren't case-sensitive. 
+
+
+```xpp
+strStartsWith("ABCDEFGHIJ","abc"); //Returns true.
+strStartsWith("ABCDEFGHIJ","ABC"); //Returns true.
+strStartsWith("ABCDEFGHIJ","B"); //Returns false.
+```
+
+## strEndsWith
+Checks if text string ends with another string.
+
+```xpp
+boolean strEndsWith(str _string, str _potentialEnd)
+```
+
+### Parameters
+
+| Parameter  | Description                                                                                                                                                                                                             |
+|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| \_string     | The original string to search in.                                                                                                                                                                                                    |
+| \_potentialEnd | The potential string that is at the end.                                                                                                                                                  |
+
+### Return value
+
+True if the potential string is ending the original string; otherwise, false.
+
+### Remarks
+The comparisons aren't case-sensitive. 
+
+
+```xpp
+strEndsWith("ABCDEFGHIJ","ghij"); //Returns true.
+strEndsWith("ABCDEFGHIJ","HIJ"); //Returns true.
+strEndsWith("ABCDEFGHIJ","B"); //Returns false.
+```
+
+
+## strLRTrim
+Removes leading and tailing blanks from a text string.
+
+```xpp
+str strLRTrim(str text)
+```
+
+### Parameters
+
+| Parameter | Description                                   |
+|-----------|-----------------------------------------------|
+| text      | The string to delete the leading and tailing blanks from. |
+
+### Return value
+
+A copy of the specified string that doesn't include leading and trailing space characters.
+
+### Remarks
+
+The **strLRTrim** function is complementary to the **strRTrim** and **strLTrim** functions.
+
+### Example
+
+```xpp
+// Returns the text string "ABC-DEFG".
+strLRTrim("   ABC-DEFG   ");
+```
 
 
 

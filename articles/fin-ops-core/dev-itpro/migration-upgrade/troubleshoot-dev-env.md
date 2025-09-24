@@ -3,9 +3,9 @@ title: Troubleshoot development environments during upgrade
 description: Access troubleshooting guidance for upgrades of Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises) Tier-1 development environments.
 author: ttreen
 ms.author: ttreen
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.date: 08/08/2024
-ms.reviewer: johnmichalakffin
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 

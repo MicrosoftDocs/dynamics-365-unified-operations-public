@@ -9,8 +9,9 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-09021
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Pickup information module
@@ -48,7 +49,7 @@ For instructions about how to add a pickup information module to a checkout page
 
 The following illustration shows an example of an e-Commerce checkout page that includes time slots for pickup line items.
 
-![Example of an e-Commerce checkout page that includes time slots for pickup line items.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Example of an e-Commerce checkout page that includes time slots for pickup line items.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.png)
 
 ## Additional resources
 

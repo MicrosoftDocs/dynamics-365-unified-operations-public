@@ -726,7 +726,7 @@ To open the Intrastat journal, go to **Tax** &gt; **Declarations** &gt; **Foreig
 
 ### Intrastat transfer
 
-On the Action Pane, you can select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country or region of destination (for dispatches) or consignment (for arrivals) will be transferred.
+On the Action Pane, you can select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country/region as the country or region of destination (for dispatches) or consignment (for arrivals) will be transferred.
 
 Alternatively, you can manually enter transactions by selecting **New** on the Action Pane.
 

@@ -10,6 +10,7 @@ audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: sfi-image-nochange
 ---
 
 # Person search report
