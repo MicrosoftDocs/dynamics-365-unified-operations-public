@@ -39,7 +39,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By December 31, 2027, the **Customers invoices (IT)** Electronic Reporting (ER) format and its child formats, **Vendor invoices (IT)** ER format and its child formats won't be supported. |
+| **Status**                         | Deprecated: By December 31, 2027, the **Customers invoices (IT)** Electronic Reporting (ER) format and its child formats, **Vendor invoices (IT)** ER format and its child formats, **Invoices cancellation (IT)** ER format and **Invoices communication mapping** ER model mapping under the **Invoices Communication Model** won't be supported. |
 
 ### Invoice list 2016 (Hungary)
 
