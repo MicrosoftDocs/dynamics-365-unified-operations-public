@@ -4,7 +4,7 @@ description: Learn about enhancements which impact ledger settlements and the Ge
 author: moaamer
 ms.author: kweekley
 ms.topic: article
-ms.date: 04/16/2024
+ms.date: 09/23/2025
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc 
@@ -19,8 +19,7 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-
-In Microsoft Dynamics 365 Finance version 10.0.25, the **Awareness between ledger settlement and year-end close** feature is available in the **Feature management** workspace. Beginning in version 10.0.40, this functionality, along with its associated features **Automate ledger settlement process** and **Post foreign currency realized gains/losses for ledger settlements**, can be found on the **General Ledger** parameters, specifically under the **Ledger settlement** page. These features are managed through parameters titled **Enable advanced awareness options**, **Enable process automation for ledger settlement**, and **Enable post currency realized gains/losses for ledger settlements** respectively.
+Beginning in Microsoft Dynamics 365 Finance version 10.0.40, the **Awareness between ledger settlement and year-end close** functionality, along with its associated features **Automate ledger settlement process** and **Post foreign currency realized gains/losses for ledger settlements**, are found on the **General Ledger** parameters, specifically under the **Ledger settlement** page. These features are managed through the **Enable advanced awareness options**, **Enable process automation for ledger settlement**, and **Enable post currency realized gains/losses for ledger settlements** parameters.
 
 The default setting for **Enable advanced awareness options** is **No**, and its activation depends on the **Enable ledger settlements** parameter, which must be set to **Yes** for it to become active. The other two parameters, **Enable process automation for ledger settlement**, and **Enable post currency realized gains/losses for ledger settlements**, are dependent on the status of **Enable advanced awareness options**. If the latter is set to **Yes**, these parameters can be enabled.
 
@@ -29,7 +28,7 @@ The default setting for **Enable advanced awareness options** is **No**, and its
 
 During general ledger year-end close, ledger transactions that have been settled will no longer be included in the opening balance of the next fiscal year. This enhancement ensures that only unsettled ledger transactions are included in the opening balance. It's important when general ledger foreign currency revaluation is run. Foreign currency revaluation is run only for ledger transactions that have a status of **Not settled**. However, before enabling the **Enable ledger settlements** parameter, the opening balance summarized both transaction that have a status of **Settled** and those that have a status of **Not settled**, and the status of the summarized amount was set to **Not settled**.
 
-The second enhancement lets you post detailed opening balance transactions during general ledger year-end close. If the **Keep detail during year-end close** option is set to **Yes**, a separate opening balance will be created for each ledger transaction that isn't settled. This setting is defined for each main account in the ledger settlement setup. By keeping detailed transactions for the opening balance, you greatly improve the ability to settle the unsettled ledger transactions in the next fiscal year.
+The second enhancement lets you post detailed opening balance transactions during general ledger year-end close. If the **Keep detail during year-end close** option is set to **Yes**, a separate opening balance is created for each ledger transaction that isn't settled. This setting is defined for each main account in the ledger settlement setup. By keeping detailed transactions for the opening balance, you greatly improve the ability to settle the unsettled ledger transactions in the next fiscal year.
 
 To support the new enhancements, changes were made to ledger settlement and year-end close.
 
@@ -51,9 +50,9 @@ Because of the changes in functionality and the data model, it's important that 
 - Because only settled transactions are brought forward into the opening balance, you must unsettle transactions from the current fiscal year that are settled with transactions in the previous fiscal year. The transactions must be resettled against transactions within the current fiscal year. This can be done through an adjusting entry in the current fiscal year. The adjustment reverses the summarized opening balances and offsets with the detailed transaction necessary to settle the ledger entries in the current year. 
 
   > [!IMPORTANT]
-  > If this isn't done, you will receive an **out-of-balance** error when you run the year-end close for the current fiscal year. If it's not possible to unsettle and resettle the ledger transactions with the same fiscal year, don't enable this **Enable advanced awareness options** parameter until after the year-end close is complete. Enable the **Enable advanced awareness options** parameter immediately after year-end close is complete and before any new ledger transactions are settled in the next fiscal year. 
+  > If this isn't done, you receive an **out-of-balance** error when you run the year-end close for the current fiscal year. If it's not possible to unsettle and resettle the ledger transactions with the same fiscal year, don't enable this **Enable advanced awareness options** parameter until after the year-end close is complete. Enable the **Enable advanced awareness options** parameter immediately after year-end close is complete and before any new ledger transactions are settled in the next fiscal year. 
   
-- All transactions that have been marked for settlement but haven't been settled will automatically be unmarked when the **Enable advanced awareness options** parameter is enabled. To prevent any loss of work, settle all marked transactions before you enable the **Enable advanced awareness options** parameter.
+- All transactions that have been marked for settlement but haven't been settled are automatically unmarked when the **Enable advanced awareness options** parameter is enabled. To prevent any loss of work, settle all marked transactions before you enable the **Enable advanced awareness options** parameter.
 - Some organizations run the year-end close multiple times for the same fiscal year. Don't enable the **Enable advanced awareness options** parameter if the year-end close has already been run once and will be run again for the same fiscal year. The **Enable advanced awareness options** parameter must be enabled before you process the first year-end close or after you process the last year-end close for the fiscal year.
 
   If you want to enable the **Enable advanced awareness options** parameter, but the year-end close has already been run once, you must reverse the year-end close before you can enable the **Enable advanced awareness options** parameter.
@@ -63,7 +62,7 @@ Because of the changes in functionality and the data model, it's important that 
 
 ## Set up ledger settlement
 
-After you enable the **Enable advanced awareness options** parameter, and before you run the next year-end close, each organization must determine whether it will keep the transaction details during the year-end close. The choice has no impact on opening balance postings from previous year-end close processes.
+After you enable the **Enable advanced awareness options** parameter, and before you run the next year-end close, each organization must determine if it will keep the transaction details during the year-end close. The choice has no impact on opening balance postings from previous year-end close processes.
 
 The **Keep detail during year-end close** option is set for each main account on the **Ledger settlement setup** page.
 
@@ -120,7 +119,7 @@ The year-end close creates three opening balance transactions for main account 1
 
 Even though the payment's transaction for EUR -127.11 was ledger settled, the transaction still comes forward as a beginning balance.
 
-### **Enable advanced awareness options** parameter is enabled and Keep detail during year-end close = No
+### **Enable advanced awareness options** parameter is enabled and **Keep detail during year-end close** = **No**
 
 The year-end close creates two opening balance transactions for main account 130100 in 2022. The sum of the transactions in the accounting currency is still USD 525, but the ledger-settled transactions are excluded from the opening balance. The total amount for account 130100-002- is USD 125 instead of USD 299.12, and the transaction for EUR 127.11/USD 174.12 is totally excluded.
 
@@ -129,7 +128,7 @@ The year-end close creates two opening balance transactions for main account 130
 | 20910          | YEC_2021 | 1/1/2022 | Opening | 130100-002-    | Accounts receivable |             | USD      | 125                            | 125    | 125                          |
 | 20910          | YEC_2021 | 1/1/2022 | Opening | 130100-001-    | Accounts receivable |             | USD      | 400                            | 400    | 400                          |
 
-### **Enable advanced awareness options** parameter is enabled and Keep detail during year-end close = Yes
+### **Enable advanced awareness options** parameter is enabled and **Keep detail during year-end close** = **Yes**
 
 The year-end close creates five opening balance transactions for main account 130100 in 2022. A separate opening balance transaction is created for each of the five transactions that weren't settled. The sum of the transactions in the accounting currency is still USD 525.
 
