@@ -29,7 +29,7 @@ The design goal is to encapsulate the control implementation and not require the
 
 -   The upgrade script only handles Dimension Entry controls constructed with the constructInGroupWithValues() and constructInTabWithValues() methods. Other controls need to be upgraded manually.
 -   The upgrade script will not handle any Dimension Entry controls sent as parameters to helper methods. This code needs to be manually upgraded.
--   In Dynamics AX 2012, the container for the default dimension control may have been defined as a securable control by setting ‘Needed Permission’ = Manual. Access to the control was granted in the security model so view and maintain access worked correctly. The default dimension control is now a design-time experience. Therefore forms no longer need to define the container of the control as a securable control. In most cases, forms that control metadata should be updated to remove the Manual setting and the references to the control in the security model need to be removed. The setting can be left as **Manual** if it is used to maintain fine-grained security control over the Dimension Entry control.
+-   In Dynamics AX 2012, the container for the default dimension control may have been defined as a securable control by setting **Needed permission** = **Manual**. Access to the control was granted in the security model so view and maintain access worked correctly. The default dimension control is now a design-time experience. Therefore, forms no longer need to define the container of the control as a securable control. In most cases, forms that control metadata should be updated to remove the Manual setting and the references to the control in the security model need to be removed. The setting can be left as **Manual** if it is used to maintain fine-grained security control over the Dimension Entry control.
 -   In Dynamics AX 2012, parmAttributeSetDataSource and parmAttributeValueSetDataSource were used to set the datasource and datasource field associated with the Default Dimensions control. Typically, these were set in the init method of the form, immediately after constructing the DimensionDefaultingController instance.  All calls to parmAttributeSetDataSource and parmAttributeValueSetDataSource will be removed after upgrade. The values from these calls are used to populate metadata on the upgraded control.  After upgrade the form should be checked to verify that it is working as expected after the removal of all these calls.
 -   Dimension Entry controls are now modelled on form design. To find a Dimension Entry control, expand the design elements or search for “DimensionEntry” on the form design.
   The new control looks like this:
@@ -46,9 +46,9 @@ The custom properties for the Dimension Entry control are found under the **Cont
 | Property     | Valid Values            | Usage |
 |----------|------------|----------------------------------|
 | Caption Text     | Any label                                              | Caption for the control.                                               |
-| Controller Class | One of the 8 Controller classes. For example, LedgerDefaultDimensionEntryController      | Determines the behavior of the Dimension Entry control. More information about this property is provided below.                                                    |
+| Controller Class | One of the 8 Controller classes. For example, LedgerDefaultDimensionEntryController | Determines the behavior of the Dimension Entry control. More information about this property is provided below.                                                    |
 | Data Source      | Any data source in the form data source list       | The data source specified here should be pointed to the table that holds the field specified in the Value Data Field property and/or the Enum Data Field property. |
-| Enum Data Field  | A field in the table referenced by the data source provided in the Data Source property. | This is the field that the enumeration values will be stored in. This property shouldn’t be specified if the control is not using an enumeration.                  |
+| Enum Data field  | A field in the table referenced by the data source provided in the Data Source property. | This is the field that the enumeration values will be stored in. This property shouldn’t be specified if the control is not using an enumeration.                  |
 | Enumeration      | Any enumeration. For example, NoYes    | The enumeration used by the control. The enumeration will be used by the control instead of Dimension values.               |
 | Value Data Field | A field in the table referenced by the data source provided in the Data Source property. | This is the field that the Dimension Entry control is bound to.             |
 
@@ -66,7 +66,7 @@ The table provided below gives details about each controller.
 | InventSiteSMAItemDimensionValueSet             | This controller provides support for data entry in the Dimension Entry control for the behavior mandated by the Inventory Dimension Link setup.     |
 | InventSiteTmpLedgerBaseLinkedDimensionValueSet | This controller provides support for data entry in the Dimension Entry control for the behavior mandated by the Inventory Dimension Link setup. This controller specifically works with the DefaultDimension field on the TmpLedgerBase table.                                                                            |
 
-Some Dimension Entry controls might not have the controller property set. The controller is inferred from the EDT of the control’s Value Data Field in these cases. A set of Dimension Entry control specific properties is provided below. These properties are for the Dimension Entry control selected in the General Approach section above (DimensionEntryControlHeader) on the PurchTable form. This Dimension Entry control is using the DefaultDimension field on the PurchTable table. The Extended Data Type property of the DefaultDimension field on PurchTable is set to LedgerDefaultDimensionValueSet (shown below). At runtime, this EDT will be mapped to the LedgerDefaultDimensionEntryController. The DimensionEntryControlHeader control uses the LedgerDefaultDimensionEntryController in this case. The following example shows the EDTs and the controllers they are mapped to.
+Some Dimension Entry controls might not have the controller property set. The controller is inferred from the EDT of the control’s Value Data Field in these cases. A set of Dimension Entry control specific properties is provided below. These properties are for the Dimension Entry control selected in the General Approach section above (DimensionEntryControlHeader) on the PurchTable form. This Dimension Entry control is using the DefaultDimension field on the PurchTable table. The Extended Data Type property of the DefaultDimension field on PurchTable is set to LedgerDefaultDimensionValueSet (shown below). At runtime, this EDT is mapped to the LedgerDefaultDimensionEntryController. The DimensionEntryControlHeader control uses the LedgerDefaultDimensionEntryController in this case. The following example shows the EDTs and the controllers they're mapped to.
 
 ![Add new item.](./media/3.png)
 
@@ -95,7 +95,7 @@ DimensionEntryControl.reactivate();
 ```
 
 ### Finance and operations
-The reactivate method refreshes the Dimension Entry control with current settings. The method only refreshes the control if the company or displayed dimension list changes. This call can be removed if neither of these are changed before it. Otherwise leave the call as is. If parmCompany() is called immediately before reactivate(), and it is the only DEC API called before reactivate(), and the method it resides in is called during the active() of the datasource, then an optimization can be manually made to improve performance and reduce code uptake:
+The reactivate method refreshes the Dimension Entry control with current settings. The method only refreshes the control if the company or displayed dimension list changes. This call can be removed if neither of these are changed before it. Otherwise, leave the call as is. If parmCompany() is called immediately before reactivate(), and it's the only DEC API called before reactivate(), and the method it resides in is called during the active() of the datasource, then an optimization can be manually made to improve performance and reduce code uptake:
 
 1. Remove the parmCompany() and reactivate() calls during the datasource active process.
 2. In the form init(), run(), datasource init(), or similar methods called before initial user interaction with the form, add the following line of code:
@@ -105,10 +105,10 @@ The reactivate method refreshes the Dimension Entry control with current setting
         fieldStr([myTable], [myCompanyContextField]);
     ```
 
-    This change will allow the DEC to automatically find the company field reference that is updated when the active record changes and refresh the list of dimensions accordingly.
+    This change allows the DEC to automatically find the company field reference that's updated when the active record changes and refresh the list of dimensions accordingly.
 
 > [!NOTE]
-> This shouldn't be combined with the use of parmDisplayedDimensionSet() otherwise the list of dimensions may not be the ones expected. In all other locations, such as the modified method of a company selection field, parmCompany() must be called to immediately reflect the change in company as the datasource is not in the process of being read at that time.
+> This shouldn't be combined with the use of parmDisplayedDimensionSet() otherwise the list of dimensions may not be the ones expected. In all other locations, such as the modified method of a company selection field, parmCompany() must be called to immediately reflect the change in company as the datasource isn't in the process of being read at that time.
 
 ### Dynamics AX 2012
 
@@ -151,7 +151,7 @@ DimensionEntryControl.deleted();
 ```
 
 ### Finance and operations
-A TODO will be left for a call to delete() that isn't inside a data source delete method. These calls are only expected to be in data source delete methods, and there's no replacement. Try to remove the call and test the control.
+A TODO is left for a call to delete() that isn't inside a data source delete method. These calls are only expected to be in data source delete methods, and there's no replacement. Try to remove the call and test the control.
 
 ### Dynamics AX 2012
 
@@ -162,7 +162,7 @@ Replace this based on the migration guidance. */
 ```
 
 ### Finance and operations
-The Dimension Entry control framework will save values. Remove the call and test the control.
+The Dimension Entry control framework saves values. Remove the call and test the control.
 
 ### Dynamics AX 2012
 
@@ -220,10 +220,10 @@ DimensionEntryControlHeader.loadAttributeValueSet(0);
 ```
 
 > [!NOTE]
-> If the first parameter in the updateValues method call was NoYesUnchanged::Unchanged, then the new call to allowEdit isn't needed. Similarly, if the second parameter in the updateValues method call was false, then the call to loadAttributeValueSet is not needed.
+> If the first parameter in the updateValues method call was NoYesUnchanged::Unchanged, then the new call to allowEdit isn't needed. Similarly, if the second parameter in the updateValues method call was false, then the call to loadAttributeValueSet isn't needed.
 
 ## Methods to potentially remove
-Any leftover methods on the datasource or tabpage/group that holds the Dimension Entry control can be removed if there is no custom logic. The following table shows examples of methods without customizations which should be deleted.
+Any leftover methods on the datasource or tabpage/group that holds the Dimension Entry control can be removed if there's no custom logic. The following table shows examples of methods without customizations that should be deleted.
 
 ### Dynamics AX 2012
 
@@ -232,7 +232,7 @@ public int active(){int ret;ret = super();return ret;}
 ```
 
 ### Finance and operations
-This method will be on the data source. It can be removed if there's no custom logic.
+This method is on the data source. It can be removed if there's no custom logic.
 
 ### Dynamics AX 2012
 
@@ -241,7 +241,7 @@ public void delete(){super();}
 ```
 
 ### Finance and operations
-This method will be on the data source. It can be removed if there's no custom logic.
+This method is on the data source. It can be removed if there's no custom logic.
 
 ### Dynamics AX 2012
 
@@ -250,7 +250,7 @@ public void deleted(){super();}
 ```
 
 ### Finance and operations
-This method will be on the data source. It can be removed if there's no custom logic.
+This method is on the data source. It can be removed if there's no custom logic.
 
 ### Dynamics AX 2012
 
@@ -259,7 +259,7 @@ public void deleting(){super();}
 ```
 
 ### Finance and operations
-This method will be on the data source. It can be removed if there's no custom logic.
+This method is on the data source. It can be removed if there's no custom logic.
 
 ### Dynamics AX 2012
 
@@ -268,7 +268,7 @@ public boolean validateDelete(){boolean ret;ret = super();return ret;}
 ```
 
 ### Finance and operations
-This method will be on the data source. It can be removed if there's no custom logic.
+This method is on the data source. It can be removed if there's no custom logic.
 
 ### Dynamics AX 2012
 
@@ -277,7 +277,7 @@ public void write(){super();}
 ```
 
 ### Finance and operations
-This method will be on the data source. It can be removed if there's no custom logic.
+This method is on the data source. It can be removed if there's no custom logic.
 
 ### Dynamics AX 2012
 
@@ -286,7 +286,7 @@ public void writing(){super();}
 ```
 
 ### Finance and operations
-This method will be on the data source. It can be removed if there's no custom logic.
+This method is on the data source. It can be removed if there's no custom logic.
 
 ### Dynamics AX 2012
 
@@ -295,7 +295,7 @@ public void written(){super();}
 ```
 
 ### Finance and operations
-This method will be on the data source. It can be removed if there's no custom logic.
+This method is on the data source. It can be removed if there's no custom logic.
 
 ### Dynamics AX 2012
 
@@ -304,7 +304,7 @@ public boolean validateWrite(){boolean ret;ret = super();return ret;}
 ```
 
 ### Finance and operations
-This method will be on the data source. It can be removed if there's no custom logic.
+This method is on the data source. It can be removed if there's no custom logic.
 
 ### Dynamics AX 2012
 
@@ -319,7 +319,7 @@ public void pageActivated()
 ```
 
 ### Finance and operations
-This method will be on the tabpage or group that holds the Dimension Entry control. If there's no custom logic, the method can be deleted.
+This method is on the tabpage or group that holds the Dimension Entry control. If there's no custom logic, the method can be deleted.
 
 ## Compile errors
 This section goes through how to address common compile errors that may be left behind.
