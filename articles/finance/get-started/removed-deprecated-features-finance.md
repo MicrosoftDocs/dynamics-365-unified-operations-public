@@ -31,11 +31,21 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Finance 10.0.46 release
 
+### Esterometro formats in Italy: Customers invoices (IT), Vendor invoices (IT)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Regulatory report abolished. | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By December 31, 2027, the **Customers invoices (IT)** Electronic Reporting (ER) format and its child formats, **Vendor invoices (IT)** ER format and its child formats won't be supported. |
+
 ### Invoice list 2016 (Hungary)
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Regulatory report not required. | 
+| **Reason for deprecation/removal** | Regulatory report abolished. | 
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
