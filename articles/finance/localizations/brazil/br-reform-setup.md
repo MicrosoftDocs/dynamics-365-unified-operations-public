@@ -164,7 +164,9 @@ Follow these steps to create the tax calculation feature.
 > 
 > **Settlement period** and **Leger posting group** in tax codes haven't been specified. You'll be prompted to define them when enabling the feature in Advanced tax calculation engine in the tax parameter.
 > 
-> For the synchronization between advanced tax engine and legacy system, follow this link for reference. [Sync the tax setup from the Tax Calculation feature to Dynamics 365 Finance | Dynamics 365 | Microsoft Learn](/dynamics365/finance/localizations/global/global-master-data-sync-tax-calculation-service-finance)
+> For the synchronization between advanced tax engine and legacy system, follow this link for reference.
+>
+> [Sync the tax setup from the Tax Calculation feature to Dynamics 365 Finance | Dynamics 365 | Microsoft Learn](/dynamics365/finance/localizations/global/global-master-data-sync-tax-calculation-service-finance)
 
  
 
@@ -209,6 +211,8 @@ Follow these steps to create the tax calculation feature.
 
 > [!NOTE]
 > Since the new tax reform takes effect in 2026, customers who configure the **Item tax group applicability** in advance (for example, in 2025) should add **Header.FromTransitionDate** and **Line.FromTransitionDat**, and set both to **January 1, 2026**, to prevent unexpected errors.
+> 
+> For determination logic, please refer to [Sales tax applicability and sales tax group determination logic - Finance](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/global-sales-tax-group-determination?context=%2Fdynamics365%2Fcontext%2Ffinance).
 
 ### Complete and change status
 After completing all configuration steps, such as tax codes, tax groups, item tax groups, and rules, change the status of current version from **Draft** to **Completed**.
