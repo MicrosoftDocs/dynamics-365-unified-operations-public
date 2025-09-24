@@ -29,6 +29,18 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Finance 10.0.46 release
+
+### Invoice list 2016 (Hungary)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Regulatory report not required. | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By November 1, 2026, the **Invoice list 2016 (Hungary)** menu item and report dialog, **Invoice list (HU)** ER format and **Invoice list model** ER model won't be supported. |
+
 ## Features removed or deprecated in the Finance 10.0.43 release
 
 ### Sales tax report for Belgium, Purchase sales tax transactions, Sales tax transactions re sales, Additional sales tax report boxes (design based on reporting codes), and Belgium report layout.
