@@ -51,6 +51,6 @@ After you've created the required asset lifecycle states, you can set up lifecyc
 7. You use the **Asset state** FastTab if you handle assets that you receive for repair. In the **Inbound/outbound** section, you can select asset lifecycle states to indicate the workflow of an asset that you receive for repair. If you offer loan assets to customers or departments, in the **Loan** section, you can select lifecycle states for loan assets.
 
 > [!NOTE]
-> - Work order lifecycle states can be linked to asset and maintenance request lifecycle states. If this is configured, the asset and/or maintenance request that is linked to the work order is changed to a new lifecycle state when the work order is changed to a new lifecycle state. 
+> You can link work order lifecycle states to asset and maintenance request lifecycle states. If you configure this link, changing the work order's lifecycle state also changes the linked asset and maintenance request to a new lifecycle state.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
