@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:  WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench
 ms.topic: how-to
-ms.date: 09/16/2024
+ms.date: 09/24/2025
 ms.custom: 
   - bap-template
 ---
@@ -17,13 +17,14 @@ ms.custom:
 
 The *Confirm and transfer* feature lets workers ship loads out of the warehouse before they complete all the work that is associated with those loads. This functionality supports scenarios where the full load doesn't fit onto a single truck, or where some of the load should leave the warehouse before the rest of the load is ready for shipment. In these scenarios, the remaining products can be transferred to a new load and therefore to a new truck. Because this feature can be used with loads that are otherwise intended to require full-load shipment, it provides extra flexibility so that transport managers can solve nonstandard or unforeseen scenarios.
 
-You can choose what the system should do when confirming a load where not all load lines were fully picked. 
+You can choose what the system should do when confirming a load where not all load lines were fully picked.
 
 You can set the system either ask the worker what to do, or automatically via batch jobs to:
+
 - Split the load (add the unfulfilled quantity to a new load)
 - Cancel the unfulfilled quantity
 
-*Splitting the load*
+## Splitting the load
 
 It's possible to select the default split method to be used on the loads from the load template details and from the single load details. Systems that are set up to allow load splitting support scenarios where planned and partially loaded loads must be adapted because of new or changing circumstances.
 
@@ -43,7 +44,8 @@ You can split only loads that meet all the following criteria:
 - There's no load line data. (This data is created through license plate consolidation on the staging location, and the Confirm and transfer feature doesn't support license plate consolidation.)
 - No inventory is currently awaiting packing at a packing location. (To be able to split loads with the *Confirm and transfer* feature for inventory that has been picked to the pack station but hasn't yet been packed and moved to staging locations, follow the configuration steps detailed in [Packing work for packing outbound containers and processing shipments](dynamics365/supply-chain/warehousing/packing-work)).
 
-*Cancelling the load*
+## Cancelling the load
+
 When remaining quantities are canceled, any load line quantities that haven't been picked and that don't have noncanceled work associated with them are removed from the load. If any work is in process, the user can only split the load. Remaining quantities can't be canceled.
 
 > [!NOTE]
@@ -236,7 +238,7 @@ You can confirm that transaction relations have been updated in the following wa
 
 ## Confirm and transfer and Partial shipment of transport load features
 
-The *Confirm and Transfer* and ([Partial Shipment of a Transport Load]dynamics365/supply-chain/warehousing/partial-shipping-of-transport-loads?branch=main)) features both focus on flexibility in different aspects of the warehousing process. The *Partial shipment of transport load* feature enables flexibility in planning and loading, whereas the *Confirm and Transfer* feature enables flexibility in ship confirming a load. These features can be used alone or together. 
+The *Confirm and Transfer* and ([Partial Shipment of a Transport Load]dynamics365/supply-chain/warehousing/partial-shipping-of-transport-loads?branch=main)) features both focus on flexibility in different aspects of the warehousing process. The *Partial shipment of transport load* feature enables flexibility in planning and loading, whereas the *Confirm and Transfer* feature enables flexibility in ship confirming a load. These features can be used alone or together.
 
 Both features allow for more adaptable handling of transport loads, accommodating partial shipments and incomplete work scenarios. For example, loads can be planned without considering specific containers or trucks, and after releasing these loads to the warehouse, workers can use mobile devices to assign loads in real-time as it makes sense, loading inventory from the same or different loads onto the same truck. This flexibility allows for partial shipments based on real-time loading decisions. Once a truck is full, they can then use the *Confirm and Transfer* feature to close and complete an incomplete load and optionally splitting or cancelling remaining quantities. This way, warehouse workers can make real-time decisions on load assignments and shipment confirmations, optimizing the use of transport capacity, and warehouse operations can proceed without delays.
 
