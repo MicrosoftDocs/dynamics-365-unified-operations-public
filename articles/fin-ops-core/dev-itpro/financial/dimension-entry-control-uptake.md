@@ -1,8 +1,8 @@
 ---
 title: Uptake of Dimension Entry controls
 description: Learn about the Dimension Entry control and associated Controller classes, including outlines on the general approach and properties.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 06/19/2024
 ms.reviewer: johnmichalak
