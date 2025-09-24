@@ -57,7 +57,7 @@ You must enable *Confirm and transfer* functionality for every load template whe
 
 ### Prepare your load templates
 
-1. Go to **Warehouse management \> Setup \> Load \> Load templates**.
+1. Go to **Warehouse management** \> **Setup** \> **Load** \> **Load templates**.
 1. Do one of the following steps:
     - To edit an existing template, select **Edit** on the Action Pane.
     - To create a new template, select **New** on the Action Pane.
@@ -76,7 +76,7 @@ You must enable *Confirm and transfer* functionality for every load template whe
 
 This setup isn't required in all situations. The example that is shown here ensures that work can be broken by shipment to support the example scenario that is provided later in this article. You can also use other methods to achieve this result.
 
-1. Go to **Warehouse management \> Setup \> Work \> Work templates**.
+1. Go to **Warehouse management** \> **Setup** \> **Work** \> **Work templates**.
 1. In the grid in the upper part of the page, select an existing work template where you want to set up the *Confirm and transfer* feature. (If you plan to work through the scenario provided later in this article, and you're working with the *USMF* demo data, select the *51 Pick to stage* work template.) Alternatively, create a new work template.
 1. On the Action Pane, select **Edit query** to open the **Sales** dialog box.
 1. In the **Sales** dialog box, on the **Sorting** tab, select **Add** to add a row to the grid.
@@ -109,11 +109,11 @@ This scenario shows an example where the picking process isn't yet completed, bu
 
 ### Step 1: Create a load that has multiple load lines
 
-Before you can use this functionality, you must have a load that contains multiple load lines. You must also make sure that the pick locations have enough inventory for all the items on the sales orders that you create. Review the setup of the location directive (**Warehouse management \> Setup \> Location directives**), and make a note of the picking locations that are used for sales order picking. If you must adjust the inventory, create manual movements, use replenishment, or use any other flow, as required.
+Before you can use this functionality, you must have a load that contains multiple load lines. You must also make sure that the pick locations have enough inventory for all the items on the sales orders that you create. Review the setup of the location directive (**Warehouse management** \> **Setup** \> **Location directives**), and make a note of the picking locations that are used for sales order picking. If you must adjust the inventory, create manual movements, use replenishment, or use any other flow, as required.
 
 To create a qualifying load, first create three sales orders by following these steps.
 
-1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. On the Action Pane, select **New** to open the **Create sales order** dialog box.
 1. In the **Create sales order** dialog box, set the following values (at a minimum):
 
@@ -146,7 +146,7 @@ To create a qualifying load, first create three sales orders by following these 
 
 The outbound load planning workbench uses the load template ID to build the shipments and release the sales order lines to the warehouse.
 
-1. Go to **Warehouse management \> Loads \> Outbound load planning workbench**.
+1. Go to **Warehouse management** \> **Loads** \> **Outbound load planning workbench**.
 1. In the **Warehouse** field, select *51*.
 
     You'll now build the load for the sales orders that you created.
@@ -208,7 +208,7 @@ In this step, you confirm the two sales orders and the work that you completed f
 > [!NOTE]
 > If you're running Supply Chain Management version 10.0.41 or older, you can only split loads from the **Load details** page.
 
-1. Go to **Warehouse management \> Loads \> Outbound load planning workbench**.
+1. Go to **Warehouse management** \> **Loads** \> **Outbound load planning workbench**.
 1. In the **Loads** section, in the grid, select the row for the load ID that you created.
 1. Select the load ID link to open the **Load details** page.
 1. On the Action Pane, on the **Ship and receive** tab, in the **Confirm** group, select **Outbound shipment** to initiate the confirmation.
