@@ -11,7 +11,7 @@ ms.author: v-sandraya
 
 # Configure electronic invoice parameters for Uruguay
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article explains how to set up the information required to generate the electronic invoice XML for Uruguay.
 
@@ -40,7 +40,7 @@ Before completing the procedures in this article, ensure the following prerequis
 > [!NOTE] 
 > The format of the e-packing slip and export e-packing slip is the same for inventory and project, and both are generated from inventory.
 
-Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../../../global/workspace/gsw-import-er-config-dataverse.md).
+Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 - Configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - Configure all LATAM extensions before continuing with the configuration in this article.
 
