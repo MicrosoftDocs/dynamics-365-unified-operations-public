@@ -88,10 +88,7 @@ Select **OK** to set the change for the button property that you're updating. Wh
 
 ## Pay with gift card
 
-The **Pay with gift card** payment flow automatically checks the gift card balance and displays it to the cashier before processing the payment. This feature eliminates the need for additional steps to determine the balance. However, once the gift card number is entered or swiped for a balance check, the system uses this number for redemption. As this is considered a manual entry, the customer must enter the PIN on the terminal, regardless of whether the number was manually entered or swiped for the balance check. If requiring customers to enter pin number for swiped cards is unacceptable, then you can disable the automatic gift card balance check. To do so, navigate to the Hardware profile associated with the register and open the payment connector settings. In the "Custom settings" section of the connector, add a key value pair **"UnifiedPaymentsWorkflow_GiftCardSkipBalanceCheck": true** and run 1090 and 1070 distribution schedule jobs. 
-	
-> [NOTE]
-> If there are any existing settings in the "Custom settings" property, then add "," after the existing settings and then paste the above key value pair. 
+The **Pay with gift card** payment flow automatically checks the gift card balance and displays it to the cashier before processing the payment. This feature eliminates the need for additional steps to determine the balance. However, once the gift card number is entered or swiped for a balance check, the system uses this number for redemption. As this is considered a manual entry, the customer must enter the PIN on the terminal, regardless of whether the number was manually entered or swiped for the balance check.  
 
 :::image type="content" source="../media/payUXGiftcard.png" alt-text="Display gift card balance before using the gift card.":::
 
@@ -104,4 +101,5 @@ The **Pay with loyalty** payment flow allows cashiers to initiate the customer s
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
 
