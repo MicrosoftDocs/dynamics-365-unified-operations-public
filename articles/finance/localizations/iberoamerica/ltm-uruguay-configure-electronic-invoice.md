@@ -11,6 +11,8 @@ ms.author: v-sandraya
 
 # Configure electronic invoice parameters for Uruguay
 
+[!INCLUDE[banner](../includes/banner.md)]
+
 This article explains how to set up the information required to generate the electronic invoice XML for Uruguay.
 
 ## Prerequisites
