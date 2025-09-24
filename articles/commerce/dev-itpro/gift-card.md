@@ -93,7 +93,7 @@ To set up a store, follow these steps.
 12. You can choose to allow cashiers to add external gift card numbers either via the personal identification number (PIN) pad or directly on POS. You can specify the entry method using the **Allow manual card numbers** configuration located on the **Electronic payment setup** menu of the external gift card payment method associated with the store.
     - If the configuration value is set to **Yes**, the cashier can either manually enter or scan a gift card on POS. If the gift card requires a PIN, then the PIN pad gets activated for the customer to add the PIN number.
     - If the configuration value is set to **No**, the cashier must use the PIN pad to enter the gift card number. While the cashier is using the PIN pad, the default method to add a gift card is by swiping the gift card. However, you can configure the Adyen connector to provide the option of manually keying in the gift card number using the PIN pad. To enable the manual entry on the PIN pad, go to the hardware profile associated with the register and under the **EFT service** FastTab, set the **Terminal gift card entry** property value to **True** for the Adyen payment connector. The following example image shows the gift card PIN pad entry experience.
-![Swipe or manually key in gift card on PIN pad](./media/TerminalEntry.png)
+![Swipe or manually key in gift card on PIN pad](./media/terminalentry.png)
 
 ## POS setup
 
