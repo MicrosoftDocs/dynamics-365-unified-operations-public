@@ -1,8 +1,8 @@
 ---
 title: Subledger transfer to the general ledger
 description: Learn about capabilities that are related to the subledger transfer process in General ledger, including outlines on the asynchronous and scheduled batch options.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 04/29/2024
 ms.update-cycle: 1095-days
@@ -45,4 +45,5 @@ The efficiency change at the batch level uses a single recurring batch job for a
 For more information about process automation setup, see [Process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
 
