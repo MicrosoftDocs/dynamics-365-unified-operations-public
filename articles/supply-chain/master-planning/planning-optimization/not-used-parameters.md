@@ -64,7 +64,7 @@ Planning Optimization doesn't use the following parameters or options on the **I
 
 - **General** tab:
 
-  - **Planned order type** – Planning Optimization doesn't support the *Kanban* option.
+  - **Planned order type** – All order types including kanban are supported. To use kanban, enable the (Preview) Lean manufacturing for Planning Optimization feature in Feature management. As of Supply Chain Management version 10.0.46, this feature will be generally available.
   - **Freeze time fence (days)** – Freeze time fence is supported in Supply Chain Management version 10.0.40 and later. To use it, the feature that is named *Freeze time fence support for Planning Optimization* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
   - **Fulfill minimum** – Planning Optimization doesn't support the *Today's date*, *First issue*, and *Coverage time fence* options. It always uses the *Today's date + procurement time* option.
   - **Minimum periods** – Not supported by Planning Optimization.
@@ -88,12 +88,11 @@ Planning Optimization doesn't use the following parameters or options on the **M
   - **Forecast plan** – Not supported by Planning Optimization.
   - **Continuity plan** – Not supported by Planning Optimization.
   - **Calculated delays** – This parameter isn't considered. Calculated delays are created for the **coverage time fence (days)**.
-  - **Capacity** – Not supported by Planning Optimization.
 
 - **Calculated delays** FastTab:
 
   - **Ensure that the planned orders are not created prior to the master planning run date** – Not supported by Planning Optimization. Planning Optimization never creates planned orders in the past.
-  - **Add the calculated delay to the requirement date** (in the **Planned kanban** section) – Kanban isn't supported by Planning Optimization.
+  - **Add the calculated delay to the requirement date** (in the **Planned kanban** section) – To use kanban, enable the (Preview) Lean manufacturing for Planning Optimization feature in Feature management. As of Supply Chain Management version 10.0.46, this feature will be generally available.
 
 - **Action message** FastTab:
 
