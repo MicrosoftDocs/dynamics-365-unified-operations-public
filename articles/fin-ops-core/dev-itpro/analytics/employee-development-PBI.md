@@ -1,8 +1,8 @@
 ---
 title: Employee development Power BI content
 description: Learn about the Employee development Power BI content, including learning about reports that are included in the Power BI content.
-author: jcart1106
-ms.author: jcart
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 12/19/2017
 ms.reviewer: twheeloc
