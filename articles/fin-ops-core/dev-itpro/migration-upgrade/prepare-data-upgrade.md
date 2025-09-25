@@ -1,11 +1,11 @@
 ---
-title: Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade
+title: Upgrade from AX 2012 - Preupgrade checklist for data upgrade
 description: Learn about each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to finance and operations apps.
-author: sericks007
-ms.author: sericks
+author: twheeloc
+ms.author: twheeloc
 ms.topic: checklist
-ms.date: 06/01/2023
-ms.reviewer: johnmichalak
+ms.date: 09/25/2025
+ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2017-05-31
@@ -14,7 +14,7 @@ ms.assetid:
 ms.custom: sfi-image-nochange
 ---
 
-# Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade
+# Upgrade from AX 2012 - Preupgrade checklist for data upgrade
 
 [!include [banner](../includes/banner.md)]
 
@@ -24,7 +24,7 @@ This article describes each task in the Microsoft Dynamics AX 2012 checklist tha
 
 ## Installation
 
-The pre-upgrade checklist for the Dynamics 365 upgrade is included in AX 2012 R3 cumulative update 13 (CU13). If you're on an older version, you must install one of the following updates: 
+The preupgrade checklist for the Dynamics 365 upgrade is included in AX 2012 R3 cumulative update 13 (CU13). If you're on an older version, you must install one of the following updates: 
 
 - If you're upgrading from AX 2012 R3, install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255).
 - If you're upgrading from AX 2012 R2, install [KB 4048614](https://go.microsoft.com/fwlink/?linkid=869025).
@@ -32,9 +32,9 @@ The pre-upgrade checklist for the Dynamics 365 upgrade is included in AX 2012 R3
 > [!NOTE] 
 > If you're upgrading from AX 2012 R3, CU13 must be installed in your environment. If you're on an older version and have issues or concerns updating to CU13, contact Microsoft Support.
 
-## Run the pre-upgrade checklist
+## Run the preupgrade checklist
 
-To run the pre-upgrade checklist, follow these steps.
+To run the preupgrade checklist, follow these steps.
 
 - Go to **System Administration \> Setup \> Checklists \> Dynamics 365 for Unified Operations data upgrade checklist**.	
 
@@ -46,11 +46,11 @@ If the checklist isn't shown, follow these steps.
 You must run each of the following checklist tasks. 
 
 > [!NOTE] 
-> If you have already run the checklist once, and have made any changes to the environment (objects, security, etc.), you will need to run all the steps again, even is they are marked as completed.
+> If you have already run the checklist once, and have made any changes to the environment (objects, security, etc.), you need to run all the steps again, even if they're marked as completed.
 > 
 > This ensures that the latest metadata is copied to the business data database for the upgrade.
 >
-> If you are unsure, just run the checklist steps again, it will not do any harm. 
+> If you're unsure, run the checklist steps again, it doesn't harm anything. 
 
 ## Validate baseline version
 
@@ -64,7 +64,7 @@ If the baseline version is one of the supported baseline versions, the task is m
 
 During data upgrade, one goal is to maintain element IDs between the existing AX 2012 environment and the upgraded finance and operations environment. To accomplish this goal, you must bring a copy of the element IDs from the AX 2012 environment into the finance and operations environment. AX 2012 stores element IDs in a table that is named ModelElement. This table is in the model database, which is a separate database from the AX 2012 business data database. During an upgrade to finance and operations, you must copy the AX 2012 database to Microsoft Azure. This process can be time consuming. 
 
-To avoid copying the whole model database to Azure SQL Database, use the following procedure to replicate the ModelElement table in the business data database. Later, during data upgrade runs, the database synchronization process will retrieve the required information from this replicated table and make sure that element IDs are maintained in the upgraded finance and operations environment.
+To avoid copying the whole model database to Azure SQL Database, use the following procedure to replicate the ModelElement table in the business data database. Later, during data upgrade runs, the database synchronization process retrieves the required information from this replicated table and make sure that element IDs are maintained in the upgraded finance and operations environment.
 
 1. In the finance and operations data upgrade checklist, select **Prepare model metadata**.
 2. When you're prompted, select **Yes**.
@@ -74,7 +74,7 @@ If the process is successful, the task is marked as completed.
 
 ## Prepare security role metadata
 
-Another goal during data upgrade is to preserve security role assignments. This task resembles the previous "Prepare model metadata" task. Security role information that is stored in the AX 2012 model database must be copied to the AX 2012 business data database, so that the information is preserved in the finance and operations environment after upgrade. During data upgrade runs, the same security role will be restored in the upgraded finance and operations environment.
+Another goal during data upgrade is to preserve security role assignments. This task resembles the previous "Prepare model metadata" task. Security role information that is stored in the AX 2012 model database must be copied to the AX 2012 business data database, so that the information is preserved in the finance and operations environment after upgrade. During data upgrade runs, the same security role is restored in the upgraded finance and operations environment.
 
 1. In the finance and operations data upgrade checklist, select **Prepare security role metadata**.
 1. When you're prompted, select **Yes**.
