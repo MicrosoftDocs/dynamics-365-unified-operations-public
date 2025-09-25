@@ -2,7 +2,7 @@
 title: Invoice capture FAQ
 description: Access answers to frequently asked questions about the Invoice capture solution, including questions about error messages.
 author: sunfzam
-ms.author: zezhangzhao
+ms.author: shielas
 ms.topic: faq
 ms.date: 09/02/2025
 ms.reviewer: twheeloc
