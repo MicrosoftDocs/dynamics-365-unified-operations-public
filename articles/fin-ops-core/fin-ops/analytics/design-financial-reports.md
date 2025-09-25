@@ -1,8 +1,8 @@
 ---
 title: View and design financial reports
 description: Learn about various exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 Finance.
-author: jcart1106
-ms.author: jcart
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 11/21/2022
 ms.reviewer: twheeloc
