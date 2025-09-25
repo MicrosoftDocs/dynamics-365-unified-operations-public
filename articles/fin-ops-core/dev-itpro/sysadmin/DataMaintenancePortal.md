@@ -1,12 +1,12 @@
 ---
 title: Data maintenance
 description: Learn about how to use simple scheduling processes to find and correct data inconsistencies in your environment.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 06/10/2024
 ms.custom:
-ms.reviewer: johnmichalak 
+ms.reviewer: twheeloc 
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-03-31
@@ -37,3 +37,4 @@ To access the Data Maintenance Portal, administrators can go to **System adminis
 
 > [!NOTE]
 > The recurrence of data maintenance processes are handled by the process automation framework as background processes. There are two main types of background processes: one for scanning for opportunities and one for running tasks. For more information, see [Process automation framework development](../process-automation/process-automation-framework.md).
+
