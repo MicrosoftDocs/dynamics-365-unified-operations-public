@@ -2,7 +2,7 @@
 title: Support for external gift cards
 description: Learn how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 author: BrianShook
-ms.date: 09/05/2025
+ms.date: 09/25/2025
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -145,7 +145,7 @@ The following steps show the sequence of actions a user experiences when the fea
 5. User adds more gift cards or regular items, if needed.
 6. User takes payment. As soon as the required payment is captured, the system triggers an automatic checkout, and this action activates the payment terminal for the customer to provide their PIN number or swipe their gift card as needed.
     - If the gift card action is successful, then the transaction is completed.
-    - If the gift card action fails, then the system shows an error message below the failed gift card line stating "The gift card action cannot be completed. Please void this item.". After receiving the message, the cashier can attempt the checkout again. If the error was transient (for example, a network issue), a subsequent gift card action might succeed. But if there's a permanent issue (for example, the gift card is invalid), then the cashier must void the gift card line and try with another gift card.
+    - If the gift card action fails, then the system shows an error message below the failed gift card line stating "The gift card action cannot be completed. Please void this item.". After the cashier receives the message, they can attempt the checkout again. If the error was transient (for example, a network issue), a subsequent gift card action might succeed. But if there's a permanent issue (for example, the gift card is invalid), then the cashier must void the gift card line and try with another gift card.
 
 ### Update the button grid
 
