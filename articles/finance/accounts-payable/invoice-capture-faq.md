@@ -66,7 +66,7 @@ If an invoice isn't associated with any PO, it's treated as a non-PO invoice. A 
 
 ### Does Invoice capture learn from changes that are made to an invoice if the invoice wasn't correctly processed or it was changed by the AP clerk?
 
-Yes, continuous learning capabilities are available. Invoice capture learns from corrections that were made by the Accounts payable (AP) clerk of a previous invoice. The next time that a similar invoice is captured, Invoice capture applies what it has learned to derive the entities. After the invoice is reviewed and transferred, the mapping between entities and invoice context is recorded. The entities, such as legal entities, vendor accounts, invoice type, items, procurement category, and currency code, are automatically derived for the next time a similar invoice is captured. These capabilities can increase the touchless rate of invoice processing.
+Yes, continuous learning capabilities are available. Invoice capture learns from corrections that were made by the Accounts payable (AP) clerk of a previous invoice. The next time that a similar invoice is captured, Invoice capture applies what it has learned to derive the entities. After the invoice is reviewed and transferred, the mapping between entities and invoice context is recorded. The entities, such as legal entities, vendor accounts, items, and procurement category are automatically derived for the next time a similar invoice is captured. These capabilities can increase the touchless rate of invoice processing.
 
 ### Can I extend the item mapping rule to map between an external item number and an internal item number?
 
