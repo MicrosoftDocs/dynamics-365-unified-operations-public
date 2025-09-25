@@ -31,7 +31,7 @@ Make sure to set up the following elements as described in [Enable and configure
 
 - Add number sequence for generating sample-ID's.
 - Define the sample life cycle states.
-- Define the sample type used for continuous sampling and add the applicable life cycle states. 
+- Define the sample type used for continuous sampling and add the applicable life cycle states.
 - Define the sample procedures and sample procedure types as needed.
 - Define an [item sampling](quality-item-sampling.md) for continuous sampling. In the sample management FastTab, make the following selections:
   - **Sample inspections method** – Select *Continuous process*.
@@ -53,9 +53,11 @@ Make sure to set up the following elements as described in [Enable and configure
 1. On the Action Pane, select **Save**.
 
 
-## Initiate the sample
+## Continuous sampling example scenario
 
-To initiate continuous samples follow these steps:
+### Setup and generate continuous samples
+
+The following procedure provides an example of how to setup and use continuous sampling.
 
 1. Create a production or batch order for a batch-controlled product using following basic configuration for continuous sampling:
     - On item sampling make the following settings:
@@ -71,20 +73,22 @@ To initiate continuous samples follow these steps:
         - Make sure that the test group has one test defined.
     - On the **Quality association**, make sure that the **Item sampling** and **Test group** is associated.
 1. Bring the production or batch order into status *Started*
-1. From the production or batch order, report as finish four license plates. 
-1. On the action pane, under the **View** tab, select **Sample management workbench** 
-1. Verify that two samples have been created for separate license plates, and that these license plates are in inventory status **On-hold*.
+1. From the production or batch order, report as finish four license plates to generate the continuous samples. 
+
+### Work with the samples in the sample management workbench
+
+
+
+1. On the action pane in the production order page, under the **View** tab, select **Sample management workbench** 
+1. Verify that two samples have been created for separate license plates, and that these license plates are blocked by their default inventory status. Learn more about configuring the default item status here: [Enable and configure sample management (preview)](quality-sample-management-admin.md).
 1. Select the last sample and verify that a quality order has been created for that sample.
 1. On the action pane, select **Quality order**
 1. On the action pane of the quality order, select **Quick results entry**
 1. Register a test result for the test that is within a range that makes the test pass.
 1. Close the **Quick results entry** dialog.
 1. On the action pane of the quality order, select **Validate**.
-
-## Work with samples in the sample management workbench
-
-To manage the inline samples follow these steps:
-
-1. On the production order details page, create a production or batch order and initiate an inline sample as described in previous section.
-1. On the action pane, under **View** tab, select **Sample management workbench**
-1. On the action pane, under the **Sample** tab, use the different options to update the sample and view related information. Learn more in: [Manage and process samples (preview)](quality-sample-management-use.md) 
+1. In the grid on the **Sample management** FastTab, verify that four records exists for the four license plates that have been produced.
+1. Verify that the field **Update inventory status to** is set to *Available* because the quality order for the last sample passed.
+1. Set the field **Update inventory status** to *Yes*.
+1. Select **OK** to confirm the dialog.
+1. In the **Sample management workbench** verify that the inventory status of the two samples are now available by their inventory status. If the inventory status is not visible in the grid, it can be enabled from the **Display dimensions** menu, that can be accessed from the action pane under the **Inventory menu**.

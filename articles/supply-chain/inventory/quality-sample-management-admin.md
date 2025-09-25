@@ -205,6 +205,24 @@ The following describes some other important topics for sample management.
 
 Quality associations are configured to trigger sample management when production orders are reported as finished for specific items. This setup references test groups and item sampling configurations to ensure consistency and automation in quality control. For inline samples, a quality association is not required, as these samples are collected on demand directly from the production order. Learn more in [Quality associations](../inventory/quality-associations.md).
 
+### Configure default item status
+
+Default item status is a configuration that determines the initial inventory status assigned to items during various supply chain transactions—such as receiving, production, or returns. It helps control how items are treated in terms of availability, blocking, and reservation. For sample management, the default inventory status is used when samples are configured on the license plate level. Typically, the default inventory status should be defined as *On-hold* using a status that is configured as *blocking*. Use the following steps to configure the default item status:
+
+For sample management, the default status can be set on following two levels:
+
+- **Item level** 
+    1. Go to **Warehouse management** > **Setup** > **Inventory** > **Default item status**.
+    1. On the Action Pane, select **New** to create a new record.
+    1. Enter the following details for your the new record:
+       - **Item number** – Select the product for sample management
+       - **Description** – Add a brief description of the procedure type.
+
+- **Warehouse level**
+    1. Go to **Warehouse management** > **Setup** > **Inventory breakdown** > **Warehouses**.
+    1. Select or search for an applicable warehouse where the policy should apply.
+    1. On the **Warehouse** FastTab, set the default inventory status in the **Default inventory status ID** field.
+
 ### Test groups
 
 Test groups define the set of tests applied during quality orders. When configuring test groups for quality orders, especially when samples are taken out using license plates, the following fields are important for managing inventory status:
