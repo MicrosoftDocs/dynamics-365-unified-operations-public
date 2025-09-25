@@ -45,6 +45,13 @@ If the checklist isn't shown, follow these steps.
 
 You must run each of the following checklist tasks. 
 
+> [!NOTE] 
+> If you have already run the checklist once, and have made any changes to the environment (objects, security, etc.), you will need to run all the steps again, even is they are marked as completed.
+> 
+> This ensures that the latest metadata is copied to the business data database for the upgrade.
+>
+> If you are unsure, just run the checklist steps again, it will not do any harm. 
+
 ## Validate baseline version
 
 Run this task to validate that the current version can be upgraded.
