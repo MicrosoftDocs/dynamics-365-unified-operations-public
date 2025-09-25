@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 09/16/2025
+ms.date: 09/25/2025
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -19,7 +19,7 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
-## Versions 4.0.9.0 – 4.0.18.0
+## Versions 4.0.9.0 – 4.0.19.0
 
 Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
@@ -32,6 +32,22 @@ These versions of the Warehouse Management mobile app are general availability (
 These versions of the Warehouse Management mobile app for Microsoft Windows and Apple iOS are preview releases in all regions. They're also preview releases for Android devices in some regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
 
 If you have any feedback about a preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
+
+### What's new in version 4.0.19.0
+
+Version 4.0.19.0 adds the following fixes and improvements:
+
+- Auto-submit now works in override-location flows.
+- Fixed an issue that caused a critical error message.
+- Fixed an issue that could cause incorrect values to be submitted from a text field.
+- Fixed an issue that could cause incorrect quantities to be displayed based on the selected unit of measure.
+- Fixed an issue that could cause incorrect values to appear in the calculator.
+- Fixed a decimal display issue in the calculator.
+- Added support for mobile mass deployment (MDM) systems that don't support the remote `ConnectionsJSON` parameter. <!-- KFM: Not sure about this one. Original was "Fixing an issue that caused MDM by the lack of support of remote ConnectionsJSON parameter." -->
+- Users can now submit the sign-in form by pressing the enter key.
+- User settings for buttons and sliders now work as expected.
+- Table footers now render correctly.
+- Fixed issues related to telemetry and internal server errors.
 
 ### What's new in version 4.0.18.0
 
