@@ -79,6 +79,6 @@ Yes. Users can upload multiple invoices (a maximum of 20 files) simultaneously.
 ### What languages of invoices are supported?
 For a complete list of supported languages, see the [Document intelligence page](/azure/ai-services/document-intelligence/concept-invoice).
 
-### If I am using a custom model for invoice capture, do I need to purchase AI builder credits in addition to the electronic invoicing credits?   
-When you are training the custom model, you need to purchase AI Builder credits for that activity. However, after the custom model is trained and is being used in Invoice capture, only the electronic invoice credits are used.
+### If I'm using a custom model for invoice capture, do I need to purchase AI builder credits in addition to the electronic invoicing credits?   
+When you're training the custom model, you need to purchase AI Builder credits for that activity. However, after the custom model is trained and is being used in Invoice capture, only the electronic invoice credits are used.
 
