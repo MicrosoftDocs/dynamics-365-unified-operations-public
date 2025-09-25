@@ -2,11 +2,11 @@
 title: Check out faster with optimized payment flows
 description: This article provides an overview of modernizing updates to point of sale (POS) payment flows in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/16/2025
+ms.date: 09/25/2025
 ms.topic: overview
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: v-chrgriffin
+ms.author: shajain
 ms.search.validFrom: 2024-06-07
 ms.custom: 
   - bap-template
@@ -33,16 +33,16 @@ Before you can transition to the upgraded payment flow experience, the following
 The modernized UI experience for the **Credit Card**, **Cash**, and **Check** payment methods is available starting with Commerce version 10.0.40, while the new experience for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods are available starting with Commerce version 10.0.42. The **Pay by Loyalty** experience is available starting with Commerce version 10.0.44. The payment method options dialog shows updated payment method symbols for all payment methods on the menu. 
 
 > [!NOTE]
-> If you've customized the payment experiences for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods and want to continue using those user experiences, you don't need to disable the feature flag. You should instead contact Microsoft support to disable the new user experiences for these individual payment methods while still benefiting from the additional functionality provided by the other payment methods.
+> If you customize the payment experiences for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods and want to continue using those user experiences, you don't need to disable the feature flag. You should instead contact Microsoft support to disable the new user experiences for these individual payment methods while still benefiting from the additional functionality provided by the other payment methods.
 
 > [!WARNING]
-> The ability to customize the new React components will be delivered in a future Commerce feature. Currently, the availability date hasn't been set. For any customization that you do on the payment user flow screens, Commerce must release React extensibility capabilities. Otherwise, you can't continue to customize actions on those screens.
+> The ability to customize the new React components will be delivered in a future Commerce feature. Currently, the availability date is unknown. For any customization that you do on the payment user flow screens, Commerce must release React extensibility capabilities. Otherwise, you can't continue to customize actions on those screens.
 
-Apart from unifying the various payment experiences, the following sections describe some of the additional capabilities that the new payment experiences enable.
+The following sections describe some of the additional capabilities that the payment experiences enable.
 
 ## Pay card
 
-The new **Pay Card** payment flow shows the transaction amount that is due and the **Swipe card** and **Enter manually** input methods, as shown in the following example image.
+The new **Pay Card** payment flow shows the transaction amount that's due and the **Swipe card** and **Enter manually** input methods, as shown in the following example image.
 
 - **Swipe card** directs the payment action to the payment terminal, so that input can be received directly from the terminal.
 - **Enter manually** directs the payment action to the payment terminal, so that the customer or sales associate can manually enter the card number at the terminal. This method is useful if the chip or magnetic stripe on a customer's card is unreadable.
@@ -55,7 +55,7 @@ New symbols appear in the payment pane to show the sales associate what is occur
 
 :::image type="content" source="../media/newPayUX1.png" alt-text="Pay flyout showing new symbols for payment methods.":::
 
-If the transaction is successful, the resulting screen shows the change that is due. Alternatively, if a subamount was paid, the user is returned to the transaction screen for next steps. Any payment errors that are encountered during processing are shown directly in the new payments pane.
+If the transaction is successful, the resulting screen shows the change that's due. Alternatively, if a subamount was paid, the user is returned to the transaction screen for next steps. Any payment errors that are encountered during processing are shown directly in the new payments pane.
 
 ## Pay cash
 
@@ -80,7 +80,7 @@ Commerce is also introducing *pay exact* functionality, which can save time at c
 Pay exact functionality is configured in the button grid menus for the corresponding payment action POS buttons. To configure a button for pay exact functionality, in headquarters, go to **Retail and Commerce** \> **Channel setup** \> **POS setup** \> **POS** \> **Button grids**. To open the button grid designer, select the ID of the targeted payment action button grid, and then select **Designer**. After the button grid designer is authenticated and opened, create a new button. Alternatively, select and hold (or right-click) an existing button that you want to reconfigure for pay exact functionality. 
 
 - For cash, you can either set the button's action to a **Pay cash quick** action, or set it to **Pay cash** and select the corresponding **Is pay exact** checkbox. In both cases, you must use the **Cash** payment type. 
-- For card, select the **Is pay exact** checkbox for a button where the **Pay card** action and the **Cards** payment type are set. The button now works with the pay exact functionality when it's selected.
+- For card, select the **Is pay exact** checkbox for a button where the **Pay card** action and the **Cards** payment type are set. The button works with the pay exact functionality when selected.
 
 We recommend that you update the button's **Button text** field in the **Appearance** section of the button grid properties to clearly indicate to the sales associate that the button is a pay exact button for the payment method.
 
@@ -88,7 +88,7 @@ Select **OK** to set the change for the button property that you're updating. Wh
 
 ## Pay with gift card
 
-The **Pay with gift card** payment flow automatically triggers the balance check to show cashiers the gift card balance information on POS before using the gift card for payment. This action prevents the additional clicks that cashiers usually need to do to help customers determine their gift card balance. 
+The **Pay with gift card** payment flow automatically checks the gift card balance and displays it to the cashier before processing the payment. This feature eliminates the need for additional steps to determine the balance. However, once the gift card number is entered or swiped for a balance check, the system uses this number for redemption. Because this operation is considered a manual entry, the customer must enter the PIN on the terminal, regardless of whether the number was manually entered or swiped for the balance check.  
 
 :::image type="content" source="../media/payUXGiftcard.png" alt-text="Display gift card balance before using the gift card.":::
 
@@ -101,3 +101,6 @@ The **Pay with loyalty** payment flow allows cashiers to initiate the customer s
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
