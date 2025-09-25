@@ -1,8 +1,8 @@
 ---
 title: Posting profiles overview
 description: Learn how posting profiles are used throughout Microsoft Dynamics 365 apps, including overviews on posting types and detail settings for a posting profile.
-author: rcarlson
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: concept-article
 ms.date: 04/29/2024
 ms.update-cycle: 1095-days
