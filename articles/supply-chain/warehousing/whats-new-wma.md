@@ -31,7 +31,7 @@ These versions of the Warehouse Management mobile app are general availability (
 
 These versions of the Warehouse Management mobile app for Microsoft Windows and Apple iOS are preview releases in all regions. They're also preview releases for Android devices in some regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
 
-If you have any feedback about a preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
+If you have feedback about a preview version of this app, please submit a post on the [Warehouse Management App group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=44117131264) on Viva Engage (formerly Yammer).
 
 ### What's new in version 4.0.19.0
 
@@ -43,7 +43,7 @@ Version 4.0.19.0 adds the following fixes and improvements:
 - Fixed an issue that could cause incorrect quantities to be displayed based on the selected unit of measure.
 - Fixed an issue that could cause incorrect values to appear in the calculator.
 - Fixed a decimal display issue in the calculator.
-- Added support for mobile mass deployment (MDM) systems that don't support the remote `ConnectionsJSON` parameter. <!-- KFM: Not sure about this one. Original was "Fixing an issue that caused MDM by the lack of support of remote ConnectionsJSON parameter." -->
+- Added support for the remote `ConnectionsJSON` parameter, which allows mobile mass deployment (MDM) systems to push individual parameter values to devices.
 - Users can now submit the sign-in form by pressing the enter key.
 - User settings for buttons and sliders now work as expected.
 - Table footers now render correctly.
@@ -117,7 +117,7 @@ Version 4 introduces many new features and improvements that enhance your wareho
 
 These versions of the Warehouse Management mobile app are preview releases. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
 
-If you have any feedback about a preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
+If you have feedback about a preview version of this app, please submit a post on the [Warehouse Management App group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=44117131264) on Viva Engage (formerly Yammer).
 
 ### What's new in version 4.0.8.0
 
