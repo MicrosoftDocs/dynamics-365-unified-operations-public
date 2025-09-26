@@ -1,8 +1,8 @@
 ---
 title: SEPA direct debit overview
 description: Learn about the Single Euro Payments Area (SEPA), which is set up by the European Commission, including answers to various questions.   
-author: mrolecki
-ms.author: mrolecki
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
 ms.date: 08/22/2017
 ms.reviewer: twheeloc
