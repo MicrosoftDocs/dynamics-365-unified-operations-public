@@ -106,7 +106,6 @@ The following table lists the features that are turned on by default in version 
 |Japan localization - Break up split transactions by year	|Mandatory	|Fixed assets|
 |Adjust sales tax amount per vendor charged sales tax	|On by default	|Tax|
 |Enable adding and synchronizing of tax hierarchy version in batch mode	|On by default	|Tax|
-|Copy tax registration number as default tax exempt number |On by default	|Tax|
 |Enable external tax solution providers for Tax Calculation |Mandatory |Tax|
 
 
