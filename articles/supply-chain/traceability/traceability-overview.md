@@ -32,9 +32,9 @@ Traceability follows products and goods as they move through the supply chain. I
 - **Public API** – Integrate with external systems by using the robust Traceability API. While this integration requires some initial setup and configuration, it offers a high degree of flexibility and customization to cater to specific business needs.
 - **Integration with the [production floor execution interface](../production-control/production-floor-execution-use.md)** – Production floor workers can register the serial numbers and batch numbers of each component and each finished good.
 
-## Join the Traceability group on Yammer
+## Join the Traceability group on Microsoft Viva Engage
 
-For more help and support, join the [Traceability group on Yammer](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=129953431552&view=all). In this group, you can find the following resources:
+For more help and support, join the [Traceability group on Microsoft Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=129953431552&view=all). In this group, you can find the following resources:
 
 - On the **Conversations** tab, you can read conversation threads, ask questions, share experiences, and connect with other users. The group includes consultants, Microsoft partners, Microsoft product team members, and other experts and users who can share tips, help answer questions, and provide guidance.
 - On the **Files** tab, you can find presentations, videos, tutorials, and hands-on labs that help you learn more about Traceability.
