@@ -136,4 +136,4 @@ The `WHSInventoryTransactionTable` table includes the following four types of tr
 
 ## Related information
 
-- For more information about this feature, consider joining the [Warehouse Inventory Transactions](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=120106196992&view=all) Yammer group, where you can find useful guides, get our latest updates, and post any questions you may have about using warehouse transactions.
+- For more information about this feature, consider joining the [Warehouse Inventory Transactions](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=120106196992&view=all) group on Microsoft Viva Engage, where you can find useful guides, get our latest updates, and post any questions you may have about using warehouse transactions.
