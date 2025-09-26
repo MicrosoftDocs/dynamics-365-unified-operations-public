@@ -48,9 +48,14 @@ By 2033, full implementation ends the legacy taxes and puts CBS and IBS fully in
 We recommend that you import and set up your Tax Calculation configuration with the version that matches your Microsoft Dynamics 365 Finance or Microsoft Dynamics 365 Supply Chain Management version.
 
 Finance or Supply Chain Management version	Tax configuration version
-10.0.46	Tax Calculation Configuration 47.73.265.46
-10.0.45	Tax Calculation Configuration 47.73.265.46
-10.0.44	Tax Calculation Configuration 47.73.265.46
+
+
+| Finance or Supply Chain Management version | Tax configuration version |
+| --------------- | ------------------------------------------ |
+| 10.0.46 <br> Build 10.0.2411.0 | <ul><li>Tax Data Model: 47 </li><li>Tax Calculation Data Model: 47.73 <br><li>FNO Model Mapping: 47.73.44 <br><li>Tax Calculation Configuration: 47.73.265<br><li>Tax Calculation Data Model (Brazil): 47.73.18<br><li>FNO Model Mapping (Brazil): 47.73.44.18<br><li>Tax Calculation Configuration (Brazil): 47.73.265.48|
+| 10.0.45 <br> Build 10.0.2345.67| <ul><li>Tax Data Model: 47 </li><li>Tax Calculation Data Model: 47.73 <br><li>FNO Model Mapping: 47.73.44 <br><li>Tax Calculation Configuration: 47.73.265<br><li>Tax Calculation Data Model (Brazil): 47.73.18<br><li>FNO Model Mapping (Brazil): 47.73.44.18<br><li>Tax Calculation Configuration (Brazil): 47.73.265.48|
+| 10.0.44 <br> Build 10.0.2263.141|<ul><li>Tax Data Model: 47 </li><li>Tax Calculation Data Model: 47.73 <br><li>FNO Model Mapping: 47.73.44 <br><li>Tax Calculation Configuration: 47.73.265<br><li>Tax Calculation Data Model (Brazil): 47.73.18<br><li>FNO Model Mapping (Brazil): 47.73.44.18<br><li>Tax Calculation Configuration (Brazil): 47.73.265.48|
+
 
 ## Supported transactions
 The following lists the transactions supported in the Brazil tax reform in Advanced tax calculation engine.
@@ -90,5 +95,11 @@ The following lists the transactions supported in the Brazil tax reform in Advan
 * Inventory
   * Transfer order – ship
   * Transfer order – receive
+
+## Synchronization
+
+Since the new tax reform is built into the advanced tax calculation engine, synchronization between the advanced calculation and the legacy tax system will remain consistent with the current behavior.
+
+Please find the details in the link [global-master-data-sync-tax-calculation](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/JennySong-SH-patch-3/articles/finance/localizations/global/global-master-data-sync-tax-calculation-service-finance.md)
 
 
