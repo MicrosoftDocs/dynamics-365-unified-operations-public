@@ -1,11 +1,11 @@
 ---
 title: Budgeting in the public sector overview
 description: Learn about the budgeting functionality available for public sector, including budget analysis, preliminary budgets and apportionments, and posting definitions.
-author: panolte
-ms.author: kfend
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
 ms.date: 07/25/2019
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
 ms.search.region: Global
