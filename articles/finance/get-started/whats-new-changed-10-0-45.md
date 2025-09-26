@@ -106,7 +106,6 @@ The following table lists the features that are turned on by default in version 
 |Japan localization - Break up split transactions by year	|Mandatory	|Fixed assets|
 |Adjust sales tax amount per vendor charged sales tax	|On by default	|Tax|
 |Enable adding and synchronizing of tax hierarchy version in batch mode	|On by default	|Tax|
-|Copy tax registration number as default tax exempt number |On by default	|Tax|
 |Enable external tax solution providers for Tax Calculation |Mandatory |Tax|
 
 
@@ -117,6 +116,7 @@ The following table lists the features that were removed from Feature management
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
 | Extended look up of Electronic reporting format configurations allowing to inquire the Global repository | The related functionality is enabled out of the box | Electronic reporting (ER) |
+| Account structure activation performance enhancement | The related functionality is enabled out of the box | General ledger |
 | Globalization Studio | The related functionality is enabled out of the box | Globalization Studio |
 | E-invoicing service workspace designer | The related functionality is enabled out of the box | Globalization Studio |
 | Utilize application resources to perform CBD documents conversion from Word to PDF format | Disabled in Feature management due to replacement by In-App PDF conversion for Configurable Business Documents (CBD) | Electronic reporting (ER) |

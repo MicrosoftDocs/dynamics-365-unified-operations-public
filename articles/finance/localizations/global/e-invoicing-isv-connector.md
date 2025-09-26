@@ -4,7 +4,7 @@ description: Learn how to configure and use the Electronic Invoicing service ISV
 author: ikondratenko
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 09/16/2025
+ms.date: 09/22/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global
@@ -155,6 +155,10 @@ For more information about electronic invoicing in Chile, see:
 [Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md),
 [Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md).
 
+### Electronic invoicing in Colombia
+
+Learn more bout electronic invoicing in Colombia in [Get started with Electronic invoicing for Colombia](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md).
+
 ### Electronic invoicing in Costa Rica
 
 The following countries electronic invoicing functionality is implemented using **Edicom** as the last-mile connector.
@@ -169,6 +173,10 @@ The following countries electronic invoicing functionality is implemented using 
 | Singapore | [Electronic invoicing for Singapore](../singapore/apac-singapore-electronic-invoices.md) |
 | Uruguay | [Get started with Electronic invoicing for Uruguay](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md) |
 
+
+### Electronic invoicing in Paraguay
+
+Learn more about electronic invoicing in Paraguay in [Get started with electronic invoicing for Paraguay](../iberoamerica/ltm-paraguay-electronic-invoice-configuration.md).
 
 ### Electronic invoicing in Uruguay
 

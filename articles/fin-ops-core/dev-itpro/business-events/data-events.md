@@ -76,5 +76,6 @@ For more information on virtual fields, see [Computed columns and virtual fields
     - Views aren't directly tied to a single table's data change.
     - The system can't determine which underlying table change should trigger the event.
     - As a result, the event framework can't reliably emit notifications for entities based on views.
+1. Any Business Eventid saved in enviorment variables for ALM process  of the power automate should store the Business Event ID and not the Business Event Label. This can cause creation or orphan records and will not trigger the power automate.
 
 [!include[banner](../includes/banner.md)]

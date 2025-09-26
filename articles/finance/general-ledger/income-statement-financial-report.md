@@ -1,8 +1,8 @@
 ---
 title: Income statement financial report
 description: Learn about the default report for income statements. It also describes the building blocks that are associated with this report.
-author: jcart1106
-ms.author: jcart
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: twheeloc

@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 09/03/2025
+ms.date: 09/25/2025
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -19,17 +19,53 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
-## Version 4.0.16.0
+## Versions 4.0.9.0 – 4.0.19.0
+
+Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
 ### General availability for Android devices in some regions
 
-This version of the Warehouse Management mobile app is a general availability (GA) release for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out the GA release to all remaining regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store.
+These versions of the Warehouse Management mobile app are general availability (GA) releases for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out GA releases to all remaining regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store.
 
 ### Preview release for Android devices in other regions and Windows and iOS devices in all regions
 
-This version of the Warehouse Management mobile app for Microsoft Windows and Apple iOS is a preview release in all regions. It's also a preview release for Android devices in some regions. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
+These versions of the Warehouse Management mobile app for Microsoft Windows and Apple iOS are preview releases in all regions. They're also preview releases for Android devices in some regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
 
-If you have any feedback about the preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
+If you have feedback about a preview version of this app, please submit a post on the [Warehouse Management App group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=44117131264) on Viva Engage (formerly Yammer).
+
+### What's new in version 4.0.19.0
+
+Version 4.0.19.0 adds the following fixes and improvements:
+
+- Auto-submit now works in override-location flows.
+- Fixed an issue that caused a critical error message.
+- Fixed an issue that could cause incorrect values to be submitted from a text field.
+- Fixed an issue that could cause incorrect quantities to be displayed based on the selected unit of measure.
+- Fixed an issue that could cause incorrect values to appear in the calculator.
+- Fixed a decimal display issue in the calculator.
+- Added support for the remote `ConnectionsJSON` parameter, which allows mobile mass deployment (MDM) systems to push individual parameter values to devices.
+- Users can now submit the sign-in form by pressing the enter key.
+- User settings for buttons and sliders now work as expected.
+- Table footers now render correctly.
+- Fixed issues related to telemetry and internal server errors.
+
+### What's new in version 4.0.18.0
+
+Version 4.0.18.0 adds the following fixes and improvements:
+
+- When entering a username and password from a keyboard, the first character of each field is no longer capitalized automatically.
+- Quotation marks are now parsed correctly.
+- The Warehouse Management mobile app logo no longer disappears.
+- Fixed an issue that caused the **Work list** page to load incorrectly.
+- Fixed an issue that caused incorrect values to appear in step banners.
+- Added validation checks to make scanning quantities more reliable.
+- The connections list now sorts alphabetically.
+
+### What's new in version 4.0.17.0
+
+Version 4.0.17.0 adds the following fixes and improvements:
+
+- Fixed a character encoding problem that affected Dutch language localizations.
 
 ### What's new in version 4.0.16.0
 
@@ -42,18 +78,6 @@ Version 4.0.16.0 adds the following fixes and improvements:
 - Fixed the back button on the work list page.
 - Fixed the keyboard enter button on the quantity spinner.
 
-## Version 4.0.15.0
-
-### General availability for Android devices in some regions
-
-This version of the Warehouse Management mobile app is a general availability (GA) release for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out the GA release to all remaining regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store.
-
-### Preview release for Android devices in other regions and Windows and iOS devices in all regions
-
-This version of the Warehouse Management mobile app for Microsoft Windows and Apple iOS is a preview release in all regions. It's also a preview release for Android devices in some regions. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
-
-If you have any feedback about the preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
-
 ### What's new in version 4.0.15.0
 
 Version 4.0.15.0 adds the following fixes and improvements:
@@ -62,18 +86,6 @@ Version 4.0.15.0 adds the following fixes and improvements:
 - Corrected an issue where step instructions didn't close properly.
 - Eliminated internal server errors that could occur when scanning barcodes.
 - Fixed a few calculator-related issues.
-
-## Version 4.0.14.0
-
-### General availability for Android devices in some regions
-
-This version of the Warehouse Management mobile app is a general availability (GA) release for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out the GA release to all remaining regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store.
-
-### Preview release for Android devices in other regions and Windows and iOS devices in all regions
-
-This version of the Warehouse Management mobile app for Microsoft Windows and Apple iOS is a preview release in all regions. It's also a preview release for Android devices in some regions. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
-
-If you have any feedback about the preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
 
 ### What's new in version 4.0.14.0
 
@@ -85,21 +97,7 @@ Version 4.0.14.0 adds the following fixes and improvements:
 - The built-in calculator now correctly handles decimal numbers.
 - Corrected an issue where pop-up windows occasionally appeared in the wrong place on the screen.
 
-## Version 4.0.9.0
-
-### General availability for Android devices in some regions
-
-This version of the Warehouse Management mobile app is a general availability (GA) release for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out the GA release to all remaining regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store.
-
-### Preview release for Android devices in other regions and Windows and iOS devices in all regions
-
-This version of the Warehouse Management mobile app for Microsoft Windows and Apple iOS is a preview release in all regions. It's also a preview release for Android devices in some regions. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
-
-If you have any feedback about the preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
-
 ### What's new in version 4.0.9.0
-
-Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
 Version 4.0.9.0 adds the following fixes and improvements:
 
@@ -111,19 +109,17 @@ Version 4.0.9.0 adds the following fixes and improvements:
 - Enhanced telemetry and detection.
 - Lower resource consumption and battery usage.
 
-## Version 4.0.8.0
+## Versions 4.0.2.0 – 4.0.8.0
 
-This version is the fourth preview release of Warehouse Management mobile app version 4.
-
-If you have any feedback about the preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
+Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
 ### Preview release
 
-This app is in preview. By installing this preview app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
+These versions of the Warehouse Management mobile app are preview releases. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
+
+If you have feedback about a preview version of this app, please submit a post on the [Warehouse Management App group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=44117131264) on Viva Engage (formerly Yammer).
 
 ### What's new in version 4.0.8.0
-
-Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
 Version 4.0.8.0 adds the following fixes and improvements:
 
@@ -133,38 +129,14 @@ Version 4.0.8.0 adds the following fixes and improvements:
 - Improved support for user settings.
 - Improved help text on the Wi-Fi diagnostic screen.
 
-## Version 4.0.7.0
-
-This version is the third preview release of Warehouse Management mobile app version 4.
-
-If you have any feedback about the preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
-
-### Preview release
-
-This app is in preview. By installing this preview app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
-
 ### What's new in version 4.0.7.0
-
-Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
 Version 4.0.7.0 adds the following fixes and improvements:
 
 - Improved accessibility support.
 - Fixed an issue where pop-up step instructions continue to appear even after the user opts to hide them.
 
-## Version 4.0.3.0
-
-This version is the second preview release of Warehouse Management mobile app version 4.
-
-If you have any feedback about the preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
-
-### Preview release
-
-This app is in preview. By installing this preview app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
-
 ### What's new in version 4.0.3.0
-
-Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
 Version 4.0.3.0 adds the following fixes and improvements:
 
@@ -174,19 +146,9 @@ Version 4.0.3.0 adds the following fixes and improvements:
 - Improved the performance of the quantity spinner.
 - Fixed an issue that could sometimes occur when changing between different users.
 
-## Version 4.0.2.0
+### Version 4.0.2.0
 
-This version is the first preview release of Warehouse Management mobile app version 4.
-
-If you have any feedback about the preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
-
-### Preview release
-
-This app is in preview. By installing this preview app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
-
-### What's new in version 4
-
-Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
+Version 4.0.2.0 is the first preview release of Warehouse Management mobile app version 4. Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
 ## Version 3.0.9.0
 

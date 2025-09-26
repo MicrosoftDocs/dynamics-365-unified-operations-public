@@ -4,7 +4,7 @@ description: Learn about the out-of-box features that are available for each cou
 author: ilikond
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 09/016/2025
+ms.date: 09/22/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -31,6 +31,7 @@ The following table shows the Electronic invoicing globalization features that a
 | Belgium | [Belgian electronic invoice (BE)](../belgium/emea-bel-e-invoices.md) | Sales invoices and project invoices |
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chile-elec-invo-conncection.md) | Sales invoices, project invoices, and packing slips |
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chl-vend-e-invoice.md) | Import vendor invoices |
+| Colombia | [Colombia Electronic Invoice (CO)](../iberoamerica/ltm-colombia-electronic-invoice-configuration.md) | Sales invoices and project invoices |
 | Costa Rica | [Costa Rica electronic invoice (CRI)](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md) | Sales invoices and project invoices |
 | Denmark | Danish electronic invoice (DK) | Sales invoices and project invoices |
 | Egypt | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
@@ -48,6 +49,7 @@ The following table shows the Electronic invoicing globalization features that a
 | New Zealand | [Electronic invoicing for Australia and New Zealand](../apac/GS-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
 | Norway | Norwegian electronic invoice (NO) | Sales invoices and project invoices |
 | Panama | [Panama Electronic Invoice (PA)](../iberoamerica/ltm-panama-ei-connec-configuration.md) | Sales invoices and project invoices |
+| Paraguay | [Paraguay Electronic Invoice (PY)](../iberoamerica/ltm-paraguay-electronic-invoice-configuration.md) | Sales invoices, project invoices, and packing slips |
 | Saudi Arabia | [Saudi Arabian Zatca submission (SA)](../mea/gs-e-invoicing-sa-get-started.md) | Sales invoices and project invoices |
 | Saudi Arabia | [Saudi Arabian Zatca compliance check (SA)](../mea/gs-e-invoicing-sa-onboarding.md) | Onboarding process |
 | Spain | Spanish electronic invoice (ES) | Sales invoices and project invoices |

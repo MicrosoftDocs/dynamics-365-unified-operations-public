@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.38
 
 [!include [banner](../includes/banner.md)]
 
-In Microsoft Dynamics 365 Finance version 10.0.38, a **Performance enhancement for general ledger dimension set balance calculation** feature is available. When you turn on this feature, the process of creating new balances is initiated. This process might take several hours if the amount of transactional data is large. Reports and inquiries that use dimension sets won't be available until the processing is completed. You can view the status on the **Dimension set** page.
+The **Performance enhancement for general ledger dimension set balance calculation** feature initiates the process of creating new balances. This process might take several hours if the amount of transactional data is large. Reports and inquiries that use dimension sets won't be available until the processing is completed. You can view the status on the **Dimension set** page.
 
 This feature enables the **Trial balance inquiry** page and reports that use financial dimension sets to run more efficiently. The financial dimension sets store data more efficiently and use less space. Therefore, the trial balance can show current balance data more quickly. The feature uses process automation to keep the balance amounts up to date. You can find the background process automation named **General ledger balance process** that runs every 5 minutes by default. The process automation background task creates a new, single occurrence batch every 5 minutes. When you view the individual batch task, the occurrence displays 10 minutes because that's the default for any batch. The background task creates a new balance process batch every 5 minutes. This time can be changed on the **Background process** tab in **Process automation**.
 
@@ -70,6 +70,7 @@ The below table describes the old data model and the new data model used for thi
 For more information, see [Financial dimensions](financial-dimensions.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
 
 
 
