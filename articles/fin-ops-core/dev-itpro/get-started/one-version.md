@@ -53,10 +53,12 @@ The following table shows the allowed pauses through the transition based on you
 | Must take 10.0.39 release autoupdate windows for pausing not applicable. | | |  |  |
 
 ### What can I expect with the new (autoupdate) cadence?
+
 Beginning version 10.0.39, the service update autoupdate window is divided into two windows that are separated by approximately a four-week gap. This change provides customers with greater flexibility in scheduling their autoupdates. Autoupdate Window one closely resembles the historical approach of OneVersion service updates. Autoupdate Window two allows you to schedule your update for four weeks later. Autoupdates continue to function as before, with UAT sandbox updates occurring seven days prior to production. Note that if your LCS project has environments on older, noncompliant versions like 10.0.35, 10.0.36, or 10.0.37, pausing the upcoming autoupdate (for example, 10.0.39 May autoupdate) isn't supported. To comply, update all environments to the current version (10.0.39) in the next autoupdate window. You can also self-update to a compliant version (for example, 10.0.38 as of April 22, 2024) to pause an upcoming autoupdate. Microsoft can't make exceptions for projects with environments on noncompliant versions. Upgrade to a supported version to use the pause functionality.
 
 ### Does the new release schedule affect when I can schedule autoupdates?
-Yes, with version 10.0.39, there are two autoupdate windows to choose from for every service update. Customers can then select a weekend for the second autoupdate, which commences one month after the first autoupdate instance. There isn't a change in how autoupdates are scheduled in Microsoft Dynamics Lifecycle Services and when those autoupdates occur. The only change is which service updates are released each year. 
+
+Yes, with version 10.0.39, there are two autoupdate windows to choose from for every service update. Customers can then select a weekend for the second autoupdate, which commences one month after the first autoupdate instance. There isn't a change in how autoupdates are scheduled in Microsoft Dynamics Lifecycle Services and when those autoupdates occur. The only change is which service updates are released each year.
 
 As an example, let's say you have opted for the 10.0.39 ("April") release through autoupdate. Microsoft makes this release generally available for self-update by all customers on March 15, 2024. If you've enabled autoupdates through Lifecycle Services, you'll start receiving production updates two weeks after the public availability date, which is March 15. This occurs during the first autoupdate window, starting either on April 5, April 12, depending on your chosen configuration. Alternatively, if you've selected the second autoupdate window, your updates begins on May 3, May 10. Opting for the second window gives you four more weeks between general availability and the final broadcast weekend, extending beyond the standard six-week timeframe.
 
@@ -64,8 +66,6 @@ In the example above, if a customer opts out of both autoupdate windows for the 
 
 > [!IMPORTANT]
 > Customers are explicitly required to pause both autoupdate windows to pause a release if they are eligible to do so, based on the pause policy. Pausing the first autoupdate window will not auto pause the second window.
-
-
 
 ### When does the new service update release cadence take effect?
 
@@ -83,11 +83,12 @@ Yes. To enable version 10.0.38 to act as a transition release, some release mile
 - The servicing window is extended from April 12 to August 9, 2024.
 
 ### How does this change affect pausing updates for noncompliant versions like 10.0.35, 10.0.36, and 10.0.37?
+
 If your Lifecycle Services project has any environment (default or sandbox or production) on noncompliant versions like 10.0.35, 10.0.36, or 10.0.37, pausing 10.0.39 isn't supported. To comply, update all environments to the current version (10.0.39) in the next autoupdate window. You can also self-update all environments to 10.0.38 to pause 10.0.39. See the autoupdate policy change for details.
 
 ### Is it possible to stop the 10.0.39 autoupdate from happening even though I'm on a version that isn't compliant (see related question above)?
-At this time Microsoft can't make exceptions for projects that have environments on versions that are out of compliance. Upgrade to a supported version to use the pause functionality.
 
+At this time Microsoft can't make exceptions for projects that have environments on versions that are out of compliance. Upgrade to a supported version to use the pause functionality.
 
 ### Can the updates be delayed? What's the policy?
 
@@ -253,7 +254,7 @@ Automatic updates for the production environment and all additional sandbox envi
 
 Updates for the default sandbox environment are canceled.
 
-### What if the default sandbox environment is manually updated to an older version than the automatic update version? 
+### What if the default sandbox environment is manually updated to an older version than the automatic update version?
 
 The default sandbox environment, the production environment, and all additional sandbox environments are updated to the current version that's being used for autoupdates.
 
@@ -298,7 +299,7 @@ The service update that's generally available to all customers for self-update a
 
 ### How do my ISVs stay current?
 
-Service updates to customer environments are backward compatible, and no action by the independent software vendors (ISVs) is required. ISVs develop on the minimum required platform release that their code depends on. Breaking changes have a 12-month lead time, so that ISVs can include them and do validation. Microsoft recommends that ISVs take advantage of the preview release for each service update. In this way, they can get early access to the platform code and validate their solutions against the update before it's made generally available. Microsoft encourages both ISVs and customers to join the [Preview Early Access](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=12792233) Yammer group. This Yammer group provides a forum where participants can receive preview and release-related announcements, and collaborate with others in the finance and operations apps community.
+Service updates to customer environments are backward compatible, and no action by the independent software vendors (ISVs) is required. ISVs develop on the minimum required platform release that their code depends on. Breaking changes have a 12-month lead time, so that ISVs can include them and do validation. Microsoft recommends that ISVs take advantage of the preview release for each service update. In this way, they can get early access to the platform code and validate their solutions against the update before it's made generally available. Microsoft encourages both ISVs and customers to join the [Preview Early Access](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=12792233) group on Microsoft Viva Engage. This Viva Engage group provides a forum where participants can receive preview and release-related announcements, and collaborate with others in the finance and operations apps community.
 
 ### What about new features?
 
