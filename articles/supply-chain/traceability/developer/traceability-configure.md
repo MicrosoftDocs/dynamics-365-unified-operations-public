@@ -72,5 +72,64 @@ The following table lists the source activity codes and types that supported out
 
 | Source activity code | Source activity type | Integration scenario |
 |--|--|--|
-| ProductionReportFinished | Production | Components consumed during manufacturing assembly. |
+| PurchaseGoodsReceipt | Purchase | Goods receipt of purchase order. |
+| ProductionReportFinished | Production | Component consumption during manufacturing assembly.|
 | ProductionPickingList | Production | Finished goods produced during production.|
+| ProductionPickingListPartialReverse | Production | Partial reverse pickinglist of component consumption.|
+| ProductionReportFinishedPartialReverse | Production | Partial reverse Report as finished.|
+| ProductionPickingListFullReverse | Production | Full reverse pickinglist of component consumption.|
+| ProductionReportFinishedFullReverse | Production | Full reverse Report as finished.|
+
+## Configure data collection fields that are traced in Traceability
+
+**Data Collection** is designed to capture various types of information at the activity code level, such as Document Reference, Order Number, Site, Warehouse, and Location. This data enhances track-and-trace capabilities and supports insights in reports like **Find Items**.
+
+Within this menu, you can:
+
+- Create Data Collection fields.
+- Assign them to specific companies and activity codes.
+- Enable or disable Data Collection tracking as needed.
+
+> [!NOTE]
+> Certain Data Collection fields, such as Document Reference, Site, and Location, are preassigned to All Companies for out-of-the-box (OOB) integration with D365 SCM. To avoid disrupting this integration, please do not modify these predefined fields:
+> Document reference/Journal number/Reference type/Order number/Vendor account/Vendor name/Site/Warehouse/Location/Operator
+
+To configure data collection fields that are traced in Traceability, follow these steps:
+
+1. [Open the Traceability app](../traceability-app-run.md) in Power Apps.
+1. On the left navigation pane, select **Settings** \> **Data Collection**.
+1. Click the Add button in the menu bar to open the initial screen for creating a data collection field.
+1. Make the following settings:
+    - **Name** – Enter the name of the data collection field. This value is used in integrations to identify the specific field.
+    - **Description** – Provide a brief description of the data collection field.
+    - **Data Collection ID** – The internal ID of the Data Collection Configuration record. This value uniquely represents the data collection field in storage. You can specify it manually, or the system will generate it automatically.
+    - **Data Type** – Defines the type of data the field can store. The following options are available:
+      - **Text** – Accepts alphanumeric values.
+      - **Number** – Accepts integer and decimal values, both positive and negative.
+      - **Boolean** – Maps business values to system values True or False.
+      - **Enum** – Allows you to define a list of predefined values.
+    - **UoM (Unit of Measure)** – Specifies the unit of measure for the data collection field.
+    - **Assignment** – Allows assigning the data collection field to multiple entities:
+      - **Activity** – Select a combination of activity type and activity code defined in Activity Configuration for the assignment.
+      - **Company Code** – Specify the company code where the data collection field is assigned.
+    - **Status (Track or Not)** – When set to On, the data collection field will be tracked. When set to Off, tracking will be disabled.
+
+## Monitor failed integration transaction from Dynamics 365 Finance and Operations to Traceability
+
+The **Troubleshooting** report can be used to monitor failed transactions in the out-of-the-box (OOB) integration between Traceability and D365 SCM.
+
+To monitor the failed transaction from Dynamics 365 Finance and Operations in Traceability, follow these steps:
+
+1. [Open the Traceability app](../traceability-app-run.md) in Power Apps.
+1. On the left navigation pane, select **Settings** \> **Trouble Shooting**.
+1. Retrive the failed transaction list. For each row, you can get following information:
+
+    - **Data** – The content of the failed message.
+    - **Error Message** – A description of the reason for the failure.
+    - **Created On** – The UTC timestamp when the record was created.
+    - **Modified On** – The UTC timestamp when the record was last modified.
+      
+1. Select the error message and click Edit in the menu bar. The system will display a screen with detailed information.
+1. Based on the error description, you can either correct the configuration or update the data in the Data field.
+1. After applying the correction, select the message and click Post in the menu bar to resubmit the failed transaction for processing.
+   
