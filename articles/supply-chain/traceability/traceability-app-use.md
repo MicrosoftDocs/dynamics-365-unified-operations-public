@@ -78,3 +78,24 @@ To make a forward search, follow these steps:
    :::image type="content" source="media/item-directly-consumption.png" alt-text="Directly consuming items on the 'Table view – where used' tab." lightbox="media/item-directly-consumption.png":::
 
    :::image type="content" source="media/item-indirectly-consumption.png" alt-text="All consuming items on the 'Table view – where used' tab" lightbox="media/item-indirectly-consumption.png":::
+
+## Find Items
+
+*Find Items* report enables you to locate serial and batch numbers based on activity codes and data collection values. For example, you can search for finished goods received during a specific period or find all finished goods with a specific data collection value within a defined time range.
+
+To make a Find Items search, follow these steps:
+
+1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
+1. On the left navigation pane, select **Trace** \> **Find Items**.
+1. Enter following filters:
+
+    - **Company** – The company associated with the activity being searched.
+    - **Item** – The item number of the item being searched.
+    - **Time period** – The time range during which the activity and data collection occurred.
+    - **Filters** – Detailed search filters.
+      - **Activity** – The activity code to filter the search.
+      - **Data Collection** – The data collection field and value to filter the search.
+
+1. Click the Search button to perform a search based on the filter criteria.
+1. The system will return the serial and batch numbers along with detailed information.
+1. You can verify the results in the **Backward search**.
