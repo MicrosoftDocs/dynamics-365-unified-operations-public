@@ -97,7 +97,7 @@ Within this menu, you can:
 To configure data collection fields that are traced in Traceability, follow these steps:
 
 1. [Open the Traceability app](../traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Settings** \> **Data Collection**.
+1. On the left navigation pane, select **Settings** \> **Data collections**.
 1. Click the Add button in the menu bar to open the initial screen for creating a data collection field.
 1. Make the following settings:
     - **Name** – Enter the name of the data collection field. This value is used in integrations to identify the specific field.
@@ -114,22 +114,5 @@ To configure data collection fields that are traced in Traceability, follow thes
       - **Company Code** – Specify the company code where the data collection field is assigned.
     - **Status (Track or Not)** – When set to On, the data collection field will be tracked. When set to Off, tracking will be disabled.
 
-## Monitor failed integration transaction from Dynamics 365 Finance and Operations to Traceability
 
-The **Troubleshooting** report can be used to monitor failed transactions in the out-of-the-box (OOB) integration between Traceability and D365 SCM.
-
-To monitor the failed transaction from Dynamics 365 Finance and Operations in Traceability, follow these steps:
-
-1. [Open the Traceability app](../traceability-app-run.md) in Power Apps.
-1. On the left navigation pane, select **Settings** \> **Trouble Shooting**.
-1. Retrive the failed transaction list. For each row, you can get following information:
-
-    - **Data** – The content of the failed message.
-    - **Error Message** – A description of the reason for the failure.
-    - **Created On** – The UTC timestamp when the record was created.
-    - **Modified On** – The UTC timestamp when the record was last modified.
-      
-1. Select the error message and click Edit in the menu bar. The system will display a screen with detailed information.
-1. Based on the error description, you can either correct the configuration or update the data in the Data field.
-1. After applying the correction, select the message and click Post in the menu bar to resubmit the failed transaction for processing.
    
