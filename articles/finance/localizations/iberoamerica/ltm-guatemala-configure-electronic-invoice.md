@@ -3,7 +3,7 @@ title: Configure electronic invoice parameters for Guatemala
 description: Learn how to configure the information required to generate the electronic invoice XML for Guatemala.
 author: Nahuel306
 ms.topic: how-to
-ms.date: 09/24/2025
+ms.date: 09/29/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.author: v-ssolveira
@@ -87,7 +87,7 @@ To configure the sales point prefix, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Sales point prefix** and for the sales point used for electronic invoicing follow these steps: 
 1. Complete the **Prefix** field with the authorized prefix code for electronic invoicing.
-1. In the field **Report/Service Id** select the **SSRS Reports / Services references** configured for electronic invoicing see [Configure SSRS Reports / Services references](#configure-ssrs-reports-/-services-references) section.
+1. In the field **Report/Service Id** select the **SSRS Reports / Services references** configured for electronic invoicing see [Configure SSRS Reports / Services references](#configure-ssrs-reports-and-services-references) section.
 
 ### Field master lists configurations
 
