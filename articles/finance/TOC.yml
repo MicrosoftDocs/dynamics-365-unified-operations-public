@@ -2114,6 +2114,8 @@
                          href: br-reform-calculation-salesorder.md
                        - name: Calculation in Purchase order in Brazil Reformed Tax
                          href: br-reform-calculation-purchasesorder.md
+                       - name: Calculation in Project in Brazil Reformed Tax
+                         href: localizations/brazil/br-reform-calculation-project.md
                          
                     - name: Fiscal books
                       items:
