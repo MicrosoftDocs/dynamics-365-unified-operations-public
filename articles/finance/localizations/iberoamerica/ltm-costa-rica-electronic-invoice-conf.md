@@ -17,9 +17,9 @@ This article explains how to set up the information required to generate the ele
 
 ## Prerequisites
 
-Before completing the procedures in this article, ensure the following prerequisites are met:
+Before you complete the procedures in this article, make sure the following prerequisites are met:
 
-- Enable both the country/region-specific Latin American (LATAM) feature for Costa Rica and the general LATAM feature.
+- Enable the country/region-specific Latin American (LATAM) feature for Costa Rica, and the general LATAM feature.
 - Set the company's address to Costa Rica.
 - Download the specific report configurations from the Dataverse configuration repository for Costa Rican Electronic Invoices:
 
@@ -39,27 +39,27 @@ Before completing the procedures in this article, ensure the following prerequis
 | Format  | :::no-loc text="Project e-invoice (CR)":::                            |
 | Format  | :::no-loc text="Project Export e-Invoice (CRI)":::                            |
 
-For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
-- Configure the Electronic reporting (ER) parameters. For more information, see [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
-- Configure all the LATAM extensions before continuing with the configuration in this article.
+For more information, see [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+- Configure the electronic reporting (ER) parameters. For more information, see [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+- Configure all the LATAM extensions before you continue with the configuration in this article.
 
 ## Configuration required for Costa Rica electronic invoices
 
-The following configurations are required for Costa Rican electronic invoices.
+These configurations are required for Costa Rican electronic invoices.
 
-- Configure the tax application
-- Configure the legal entity
-- Configure customers
-- Configure the document classes
-- Configure the sales point prefix
-- Configure the field master lists
-- Configure the fiscal information
-- Configure the addresses
-- Configure other tax applications
-- Configure charges and discounts
-- Configure taxes
+- Set up the tax application
+- Set up the legal entity
+- Set up customers
+- Set up the document classes
+- Set up the sales point prefix
+- Set up the field master lists
+- Set up the fiscal information
+- Set up the addresses
+- Set up other tax applications
+- Set up charges and discounts
+- Set up taxes
 
-Each configuration is described in the following sections.
+Each configuration is described in the sections below.
 
 ### Configure the tax application
 
@@ -71,8 +71,8 @@ To configure the legal entity, follow these steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select the legal entity that you want to work with.
-1. Complete the address fields with the country/region, state, county and city.
-1. Complete the contact information with the email address and set it to **Primary**.
+1. Complete the address fields with the country/region, state, county, and city.
+1. Enter the email address in the contact information and set it to **Primary**.
 1. In the LATAM section, complete the **Taxpayer type** with an option that represents the organization.
 1. Complete the **Based in country/region** field with **CRI**.
 1. Complete the **Country/region document type** field with the option that represents the identification document type used by the organization.
@@ -128,7 +128,7 @@ To configure field master lists, follow these steps.
 1. In the **LIST 9**, configure a document type code for reference according to the Costa Rican normative.
 1. In the **LIST 10**, configure the codes for reference reasons for credit notes, debit notes and purchase invoices according to the Costa Rican normative.
 
-Learn more in [Field list configuration for Latin America](ltm-core-field-master-lists.md).
+For more information, see [Field list configuration for Latin America](ltm-core-field-master-lists.md).
 
 ### Configure the fiscal information
 
@@ -147,7 +147,7 @@ To configure addresses, follow these steps.
 1. For each record (State, County and City) used in electronic invoicing go to **LATAM** \> **Tax application** to assign the tax application codes according to the Costa Rican normative.
 1. For each record (State, County and City) used in electronic invoicing complete the description field according to the Costa Rican normative.
 
-Learn more in [Address setup for Latin America](ltm-core-address-setup.md).
+For more information, see [Address setup for Latin America](ltm-core-address-setup.md).
 
 ### Other configurations
 
@@ -271,60 +271,59 @@ When you issue an electronic document that has an associated document, you must 
 
 To reference a document, follow these steps.
 
-1. In the **Reference code** field, enter the number code for reference reason according to the Costa Rican normative.
-1. Complete the **Reference date** field.
-1. Complete the **Reference document number** field with the complete document number referenced.
-1. Complete the **Reference document type** field with the document type code of the transaction referenced.
-1. Complete the **Reference reason** with a motive.
+1. In the **Reference code** field, enter the number code for the reference reason according to the Costa Rican normative.
+1. Enter the date in the **Reference date** field.
+1. Enter the complete document number in the **Reference document number** field.
+1. Enter the document type code of the referenced transaction in the **Reference document type** field.
+1. Enter a reason in the **Reference reason** field.
 
 ## Configure lookups
 
-You must configure the required lookups to be able to issue an electronic document.
+Configure the required lookups to issue an electronic document.
 
-To configure lookups, follow these steps.
+Follow these steps to configure lookups.
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
-1. Select the report to configure on the left menu.
-1. Go to **Application specific parameters** set up in the top menu.
+1. Select the report to configure in the left menu.
+1. Go to **Application specific parameters** in the top menu.
 1. Select the report version to configure.
 1. In the Lookups section, select the **TaxType** lookup.
-1. In the **Conditions section**, add the required **Lookup results** and select the corresponding tax codes for each one.
+1. In the **Conditions section**, add the required **Lookup results**, and select the corresponding tax codes for each one.
 
 > [!NOTE] 
-> To ensure that the report shows the transactions that meet the configured conditions, complete the Lookup result field as N/A with Blank and Not blank conditions.
+> To ensure the report shows transactions that meet the configured conditions, complete the Lookup result field as N/A with Blank and Not blank conditions.
 
-## Configure SSRS Reports / Services references
+## Configure SSRS reports and services references
 
 For electronic invoicing, you must configure the **SSRS Reports / Services references**.
 
-To configure SSRS Reports / Services references, follow these steps.
+To configure SSRS reports and services references, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **SSRS Reports / Services references**.
-1. Create a new record.
-1. Complete the **Report/Service Id** and **Report/Service name** with a code and description.
-1. In **Settings** tab, select **Service** for the **Report/Service type** field.
-1. In the **Sales point type**, select **Pre-printed** (it must match the sales point type used for electronic invoicing).
+1. Create a new record1. In the **Parameter** section, add the following line:
+ **Name:** TaxApplicationId - **Value:** CRFE. This code must match the tax application used for electronic invoicing.* field.
+1. In the **Sales point type** field, select **Pre-printed**. This selection must match the sales point type used for electronic invoicing.
 1. In **Parameter** section, add the following line:
  **Name:** TaxApplicationId - **Value:** CRFE (this code must match the tax application used for electronic invoicing).
 
 > [!NOTE] 
-> This configuration is applied to all sales points used for every Invoice, Credit note, Debit note, Purchase Invoice and Payment Receipt.
+> This configuration applies to all sales points used for every invoice, credit note, debit note, purchase invoice, and payment receipt.
 
 ## Configure bundled item
 
-Bundle items, which are composed of sub-items with specific details captured in the transaction, are represented using a Bill of Materials (BOM) structure.
-For more information, see [Bills of materials and formulas](bill-of-material-bom.md).
+Bundle items, composed of sub-items with specific details captured in the transaction, are represented using a bill of materials (BOM) structure.
+For more information, see [bills of materials and formulas](bill-of-material-bom.md).
 
 > [!NOTE] 
-> The transactional quantity is defined based on the value in the **From qty.** field within the BOM record's **Header** section. Note that each transaction can reference only one BOM.
+> The transactional quantity is defined based on the value in the **From qty.** field within the BOM record's **Header** section. Each transaction references only one BOM.
 
 ## Electronic payment receipt
 
 The electronic payment receipt is represented by the LATAM extension in customer payment journals.
 
-For more information, see [Use the LATAM extension in customer payments journals](ltm-latam-in-customer-payment.md).
+For more information, see [Use the LATAM extension in customer payment journals](ltm-latam-in-customer-payment.md).
 
 > [!NOTE] 
-> This functionality currently supports only full customer payments.
+> This functionality supports only full customer payments.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
