@@ -111,5 +111,4 @@ To understand the capacity reduced savings, compare the table data for the live,
 
 > [!NOTE]
 > After archiving, the automatic tuning process can take up to seven days before the reduced capacity is reflected in the history table. It can take up to a day before the archived data capacity for \<*tablename*\>-Retained tables is reflected in the Dataverse database capacity.
->   
->
+
