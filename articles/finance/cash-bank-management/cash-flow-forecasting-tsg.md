@@ -1,12 +1,12 @@
 ---
 title: Troubleshoot cash flow forecasting setup
-description: Access answers to questions that you might have when you configure cash flow forecasting, including questions about setup and cash flow Power BI.
-author: kfend
-ms.author: kfend
+description: Access answers to questions that you might have when you configure cash flow forecasting.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: troubleshooting-general
 ms.date: 03/23/2021
 ms.custom:
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-12-30
@@ -24,14 +24,14 @@ This article provides answers to questions that you might have when you configur
 
 Cash flow forecasting is configured and calculated per legal entity. Power BI reports and the cash flow forecasts capability in Finance insights show the results.
 
-Cash flow forecasting must be set up for each legal entity that you want to see a forecast for. Review the configuration of cash flow forecasting in all your legal entities. Alternatively, review the configuration of all the legal entities for cash flow forecasting, and make sure that they are set as you intended.
+Cash flow forecasting must be set up for each legal entity that you want to see a forecast for. Review the configuration of cash flow forecasting in all your legal entities. Alternatively, review the configuration of all the legal entities for cash flow forecasting, and make sure that they're set as you intended.
 
 ## Why doesn't Power BI show all the cash flow data?
 
 Several steps must be completed before cash flow forecasts can appear in Power BI views. Review the following checklist, and make sure that every step has been completed:
 
 - Set up cash flow for each legal entity.
-- In General ledger parameters, set the system currency and the system exchange rate type.
+- In **General ledger parameters**, set the system currency and the system exchange rate type.
 - Set the ledger accounting currency and the exchange rate type.
 - Enter exchange rates between the transaction currency and the accounting currency.
 - Enter exchange rates between the accounting currency and the system currency.
@@ -47,7 +47,7 @@ You must periodically refresh your entities to ensure that the data is current a
 
 ## Which calculation method should be used when calculating cash flow forecasts?
 
-The Cash flow forecast calculation method has two important selection options. The **New** option will calculate cash flow forecasts for new documents and documents that have changed since the last batch job ran. This option tends to run faster because it processes a smaller subset of documents. The **Total** option will recalculate cash flow forecasts for every document in the system. This option takes more time because it has more work to complete.
+The Cash flow forecast calculation method has two important selection options. The **New** option calculates cash flow forecasts for new documents and documents that have changed since the last batch job ran. This option tends to run faster because it processes a smaller subset of documents. The **Total** option recalculates cash flow forecasts for every document in the system. This option takes more time because it has more work to complete.
 
 ### How do I improve the performance of the cash flow forecasting recurring batch job?
 

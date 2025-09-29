@@ -86,7 +86,7 @@ Follow these steps to create a new collection of menu items for reprinting label
     - **Print mode:** *Product*
 
 1. On the Action Pane, select **Field list** to open a page where you can select the fields that will be shown to help workers identify the correct label roll.
-1. You can show up to seven fields. Use the drop-down lists to select the field that is shown in each available position. Leave any fields that you don't require blank. 
+1. You can show up to seven fields. Use the drop-down lists to select the field that is shown in each available position. Leave any fields that you don't require blank.
 
     Here is an example:
 
@@ -141,7 +141,7 @@ Before you work through these use cases, the following prerequisites must be in 
 - Demo data must be installed, and you must select the **USMF** legal entity.
 - Wave label printing must be configured, and some labels must be generated, as described in [Configure wave label printing](../warehousing/configure-wave-label-printing.md).
 
-#### Use case 2.1: A single wave label is scratched and must be reprinted.
+#### Use case 2.1: A single wave label is scratched and must be reprinted
 
 1. Sign in to the warehousing app as a user who access to warehouse *62*. (In the standard demo data, you can sign in by using the user ID *62* and the password *1*.)
 1. Go to **Outbound \> Reprint single wave label**.
@@ -149,7 +149,7 @@ Before you work through these use cases, the following prerequisites must be in 
 1. Select the printer to reprint on.
 1. Select **OK** to confirm the action.
 
-#### Use case 2.2: Several labels for boxes of the same item were damaged and must be reprinted. Each label has a product bar code, but no enumeration or SSCC number.
+#### Use case 2.2: Several labels for boxes of the same item were damaged and must be reprinted. Each label has a product bar code, but no enumeration or SSCC number
 
 1. Sign in to the warehousing app as a user who has access to warehouse *62*. (In the standard demo data, you can sign in by using the user ID *62* and the password *1*.)
 1. Go to **Outbound \> Reprint labels (Item)**.
@@ -160,7 +160,7 @@ Before you work through these use cases, the following prerequisites must be in 
 1. Select the printer to reprint on.
 1. Select **OK** to confirm the action.
 
-#### Use case 2.3: Several labels for boxes weren't printed because of a printer jam. Because the labels have enumeration, you can define the carton range to reprint.
+#### Use case 2.3: Several labels for boxes weren't printed because of a printer jam. Because the labels have enumeration, you can define the carton range to reprint
 
 1. Sign in to the warehousing app as a user who has access to warehouse *62*. (In the standard demo data, you can sign in by using the user ID *62* and the password *1*.)
 1. Go to **Outbound \> Reprint labels (Enum)**.
@@ -171,7 +171,7 @@ Before you work through these use cases, the following prerequisites must be in 
 1. Select the printer to reprint on.
 1. Select **OK** to confirm the action.
 
-#### Use case 2.4: Several labels for boxes weren't printed because of a printer jam. The last good label has a wave label ID that is printed as a bar code.
+#### Use case 2.4: Several labels for boxes weren't printed because of a printer jam. The last good label has a wave label ID that is printed as a bar code
 
 1. Sign in to the warehousing app as a user who has access to warehouse *62*. (In the standard demo data, you can sign in by using the user ID *62* and the password *1*.)
 1. Go to **Outbound \> Reprint labels (by last)**.

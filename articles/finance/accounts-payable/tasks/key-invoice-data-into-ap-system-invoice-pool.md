@@ -1,10 +1,10 @@
 --- 
-title: Key invoice data into the AP system using invoice pool
+title: Key invoice data into Accounts payable using the invoice pool
 description: Learn about how to use the invoice register to create invoices, including step-by-step process on creating purchase orders and invoices.
 author:  leizi2015
 ms.author: raynezou
 ms.topic: how-to
-ms.date: 01/02/2024
+ms.date: 08/04/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User  
@@ -14,11 +14,11 @@ ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 
-# Key invoice data into the AP system using invoice pool
+# Key invoice data into Accounts payable using invoice pool
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to use the invoice register to create invoices. Then use the invoice pool to match the invoice to a purchase order and finalize the expense in the vendor invoice page.
+This article describes how to use the invoice register to create invoices. Then use the invoice pool to match the invoice to a purchase order and finalize the expense in the **Vendor invoice** page.
 
 
 ## Create a purchase order
@@ -26,14 +26,14 @@ This article describes how to use the invoice register to create invoices. Then 
 2. Select **New** to create a purchase order.
 3. In the **Vendor account** field, select a vendor for the drop-down list. For example, select vendor **1001**.
 4. Select **OK**.
-5. In the **Item number** field, select the services item number in the drop-down list. For example, select **S0001**. The net amount is 75.00. That is the amount that we will expect on the invoice.  
+5. In the **Item number** field, select the services item number in the drop-down list. For example, select **S0001**. The net amount is 75.00. That's the amount expected on the invoice.  
 6. On the action pane, select **Purchase**.
 7. Select **Confirm**.
 
 ## Create and post and invoice
 1. Go to **Accounts payable > Invoices > Invoice register**.
 2. Select **New**.
-3. Open the lookup to select the name of the invoice register that you want to use.
+3. Open the lookup to select the name of the invoice register to use.
 4. Select the name of the invoice register that you want to use.
 5. Select **Lines** to open the register and enter expense lines.
 6. In the lookup, select a vendor. For example, select vendor **1001**.
@@ -47,7 +47,7 @@ This article describes how to use the invoice register to create invoices. Then 
 ## Open an invoice from the pool and match it to a purchase order to complete the invoice process
 1. Go to **Accounts payable > Invoices > Invoice pool**.
 2. Select **Purchase order** to create a vendor invoice from the invoice in the pool.
-3. Select the invoice that you want to review.
+3. Select the invoice to review.
 4. Select **Update match status** to complete the matching.
 5. On the action pane, select **Options**.
 6. Select **Change view**.
@@ -68,7 +68,7 @@ The **Vendor invoice automation with tax registration** feature automates the in
 
 The streamlined process involves the following steps:
 1. Create a purchase order.
-2. Importing the invoice using the entities **Vendor invoice header** and **Vendor invoice line**.
-After the invoice is imported successfully, the invoice register journal is automatically posted, and the pending vendor invoice is created within invoice pool. This integrated approach ensures efficiency and compliance with tax registration requirements.
+2. Import the invoice using the entities **Vendor invoice header** and **Vendor invoice line**.
+After the invoice is imported successfully, the invoice register journal is automatically posted, and the pending vendor invoice is created in the invoice pool. This integrated approach ensures efficiency and compliance with tax registration requirements.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

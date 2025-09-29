@@ -132,18 +132,15 @@ It supports all 16 hints:
 The following examples show two ways to build a SysDaQueryObject.
 
 ```xpp
-<code>
 SysDaQueryObjectBuilder::from(exampleTable)
     .firstOnly()
     .innerJoin(exampleJoinedTable)
     .where(exampleTable, fieldStr(ExampleTable, ExampleJoinedTableExampleId)).isEqualTo(exampleJoinedTable, fieldStr(ExampleJoinedTable, ExampleId))
     .where(exampleTable, fieldStr(ExampleTable, ExampleNumber)).isEqualToLiteral(0)
     .toSysDaQueryObject();
-</code>
 ```
 
 ```xpp
-<code>
 var exampleTableQueryObject = new SysDaQueryObject(exampleTable);
 var exampleJoinedTableQueryObject = new SysDaQueryObject(exampleJoinedTable);
 exampleTableQueryObject.firstOnlyHint = SysDaFirstOnlyHint::FirstOnly1;
@@ -155,7 +152,6 @@ exampleJoinedTableQueryObject.whereClause(new SysDaAndExpression(
     new SysDaEqualsExpression(
         new SysDaFieldExpression(exampleTable, fieldStr(ExampleTable, ExampleNumber)),
         new SysDaValueExpression(0))));
-</code>
 ```
 
 Use SysDaQueryExpression to enable OR and the other expressions.
@@ -163,7 +159,6 @@ Use SysDaQueryExpression to enable OR and the other expressions.
 The following example builds a SysDaQueryObject using **OR**.
 
 ```xpp
-<code>
 SysDaQueryObjectBuilder::from(exampleTable)
     .wherever(new SysDaOrExpression(
         new SysDaEqualsExpression(
@@ -173,7 +168,6 @@ SysDaQueryObjectBuilder::from(exampleTable)
             new SysDaFieldExpression(exampleTable, fieldStr(ExampleTable, ExampleNumber)),
             new SysDaValueExpression(0))))
     .toSysDaQueryObject();
-</code>
 ```
 
 ## Update statement

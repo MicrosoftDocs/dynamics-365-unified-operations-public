@@ -8,7 +8,7 @@ ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 ms.topic: how-to
 ms.date: 07/21/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Get started with master planning

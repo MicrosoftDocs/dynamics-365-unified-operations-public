@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 ms.topic: how-to
-ms.date: 07/30/2024
+ms.date: 08/13/2025
 ms.custom: 
   - bap-template
 ---
@@ -14,7 +14,6 @@ ms.custom:
 # Onboard vendors
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 New vendors can be onboarded and registered as vendors in Microsoft Dynamics 365 Supply Chain Management, based on information that is collected from a person who represents the vendor.
 
@@ -26,6 +25,9 @@ The process consists of the following steps, where various roles perform actions
 4. **Vendor registration wizard** – The vendor's contact person signs in by using the new user account. They complete a vendor registration wizard to provide information such as addresses, business information, procurement categories, and questionnaire responses.
 5. **Approval workflow** – A vendor request that includes the registration information is created. This vendor request is submitted to a workflow, and is routed for review and approval.
 6. **Creation of a vendor master and user role modification** – When the vendor request is approved, a vendor record is created. The user account of the vendor's contact person is either granted permission to vendor collaboration or deactivated.
+
+> [!TIP]  
+> If you have a vendor user that's having trouble accessing the vendor collaboration interface after being removed and then reonboarded, you can get troubleshooting advice in [Vendors can't access the Vendor Collaboration Portal (VCP) after reonboarding](/troubleshoot/dynamics-365/supply-chain/procurement/vendor-unable-to-access-vendor-collaboration-portal).
 
 The following table shows the steps and roles that are involved in the process.
 
@@ -117,8 +119,8 @@ The following table shows the statuses that vendor requests can have.
 |----------------------------|-------------|
 | Draft                      | The vendor request hasn't yet been submitted. |
 | Request submitted          | The vendor request has been submitted, and the first step in the workflow is being processed. |
-| Pending review             | If there are multiple reviewers in a workflow task, a reviewer can accept the task of reviewing the vendor request and then complete the review. If there is only one reviewer, that participant can complete the review by selecting *Completed* in the workflow action. They don't have to accept the work item first. |
-| Request pending approval   | The vendor request has been routed to the participants for approval, and there is an option to request additional information. A request for additional information cause the work item to be routed back to the submitter. The vendor request can also be approved or rejected while it's in this status. |
+| Pending review             | If there are multiple reviewers in a workflow task, a reviewer can accept the task of reviewing the vendor request and then complete the review. If there's only one reviewer, that participant can complete the review by selecting *Completed* in the workflow action. They don't have to accept the work item first. |
+| Request pending approval   | The vendor request has been routed to the participants for approval, and there's an option to request additional information. A request for additional information causes the work item to be routed back to the submitter. The vendor request can also be approved or rejected while it's in this status. |
 | Application change request | Additional information has been requested by the approver, and the vendor request has been routed to the person who submitted the vendor request. The submitter can add required information and then resubmit the vendor request. If a vendor request is resubmitted, the status is changed back to *Request pending approval* status. |
 | Request approved           | This status is a final state. |
 | Request rejected           | This status is a final state. |

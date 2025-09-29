@@ -1338,6 +1338,8 @@
             href: customize-site-navigation.md
           - name: Create a page URL
             href: create-page-URL.md
+          - name: Redirect category and product pages to canonical URLs
+            href: e-commerce-extensibility/add-custom-redirect.md
         - name: Adventure Works theme
           items:
           - name: Adventure Works theme overview
@@ -1468,7 +1470,7 @@
           items:
           - name: Map module
             href: map-module.md
-          - name: Azure Maps module (preview)
+          - name: Azure Maps module
             href: azure-maps-module.md
           - name: Store selector module
             href: store-selector.md
@@ -1516,7 +1518,7 @@
             href: dev-itpro/commerce-chat-overview.md
           - name: Commerce Chat with Omnichannel for Customer Service module
             href: dev-itpro/commerce-chat-module.md
-          - name: Commerce Chat with Power Virtual Agents module
+          - name: Commerce Chat with Microsoft Copilot Studio module
             href: dev-itpro/chat-module-pva.md
           - name: Commerce chat module proactive chat parameters
             href: dev-itpro/chat-proactive-chat-parameters.md
@@ -2574,7 +2576,7 @@
         href: email-templates-transactions.md
       - name: Develop email experiences
         href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?context=/dynamics365/context/commerce
-      - name: Troubleshoot the Office integration
+      - name: Office integration FAQ
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?context=/dynamics365/context/commerce
     - name: Organization administration
       items:

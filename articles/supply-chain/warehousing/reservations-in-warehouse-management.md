@@ -1,8 +1,8 @@
 ---
 title: Reservations in Warehouse management
 description: Learn about the functionality for reservations in Warehouse management
-author: Atapiabailon
-ms.author: atapiabailon
+author: Mirzaab
+ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSReservationHierarchy
 ms.topic: how-to

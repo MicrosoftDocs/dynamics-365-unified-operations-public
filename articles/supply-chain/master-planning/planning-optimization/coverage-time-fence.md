@@ -8,7 +8,7 @@ ms.search.form: ReqGroup, ReqItemTable, ReqPlanSched
 ms.topic: how-to
 ms.date: 07/21/2025
 ms.custom:
-- bap-template
+  - bap-template
 ---
 
 # Coverage time fences

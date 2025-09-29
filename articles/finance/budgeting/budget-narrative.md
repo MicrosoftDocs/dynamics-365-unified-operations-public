@@ -1,12 +1,12 @@
 ---
 title: Budget plan narrative
 description: Learn how to include a description and a revenue summary in a budget plan, including an outline and step-by-step process of setting up a budget plan narrative.
-author: kfend
-ms.author: kfend
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 06/29/2021
 ms.custom:
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.industry: public sector

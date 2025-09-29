@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 07/23/2025
+ms.date: 09/25/2025
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -15,23 +15,127 @@ ms.custom:
 # What's new or changed in the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
-## Version 4.0.3.0
+## Versions 4.0.9.0 – 4.0.19.0
 
-This is the second preview release of Warehouse Management mobile app version 4.
+Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
-If you have any feedback about the preview version of this app, please send us email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
+### General availability for Android devices in some regions
+
+These versions of the Warehouse Management mobile app are general availability (GA) releases for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out GA releases to all remaining regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store.
+
+### Preview release for Android devices in other regions and Windows and iOS devices in all regions
+
+These versions of the Warehouse Management mobile app for Microsoft Windows and Apple iOS are preview releases in all regions. They're also preview releases for Android devices in some regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
+
+If you have feedback about a preview version of this app, please submit a post on the [Warehouse Management App group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=44117131264) on Microsoft Viva Engage.
+
+### What's new in version 4.0.19.0
+
+Version 4.0.19.0 adds the following fixes and improvements:
+
+- Auto-submit now works in override-location flows.
+- Fixed an issue that caused a critical error message.
+- Fixed an issue that could cause incorrect values to be submitted from a text field.
+- Fixed an issue that could cause incorrect quantities to be displayed based on the selected unit of measure.
+- Fixed an issue that could cause incorrect values to appear in the calculator.
+- Fixed a decimal display issue in the calculator.
+- Added support for the remote `ConnectionsJSON` parameter, which allows mobile mass deployment (MDM) systems to push individual parameter values to devices.
+- Users can now submit the sign-in form by pressing the enter key.
+- User settings for buttons and sliders now work as expected.
+- Table footers now render correctly.
+- Fixed issues related to telemetry and internal server errors.
+
+### What's new in version 4.0.18.0
+
+Version 4.0.18.0 adds the following fixes and improvements:
+
+- When entering a username and password from a keyboard, the first character of each field is no longer capitalized automatically.
+- Quotation marks are now parsed correctly.
+- The Warehouse Management mobile app logo no longer disappears.
+- Fixed an issue that caused the **Work list** page to load incorrectly.
+- Fixed an issue that caused incorrect values to appear in step banners.
+- Added validation checks to make scanning quantities more reliable.
+- The connections list now sorts alphabetically.
+
+### What's new in version 4.0.17.0
+
+Version 4.0.17.0 adds the following fixes and improvements:
+
+- Fixed a character encoding problem that affected Dutch language localizations.
+
+### What's new in version 4.0.16.0
+
+Version 4.0.16.0 adds the following fixes and improvements:
+
+- Fixed an issue that prevented the app from scanning username and password field values from a bar code.
+- Improved bar code scanning.
+- Fixed a field-sorting issue that could affect the detail card.
+- Fixed an issue with the pick list button in tile button group.
+- Fixed the back button on the work list page.
+- Fixed the keyboard enter button on the quantity spinner.
+
+### What's new in version 4.0.15.0
+
+Version 4.0.15.0 adds the following fixes and improvements:
+
+- Resolved device code connection failures that could occur during initial setup.
+- Corrected an issue where step instructions didn't close properly.
+- Eliminated internal server errors that could occur when scanning barcodes.
+- Fixed a few calculator-related issues.
+
+### What's new in version 4.0.14.0
+
+Version 4.0.14.0 adds the following fixes and improvements:
+
+- Fixed an issue that caused problems when loading saved connection settings, especially older ones. Also resolved a bug that was preventing connections from saving correctly on Windows and Android. This issue also impacted loading settings from Microsoft Intune and other mobile mass deployment (MDM) systems.
+- Fixed a process that caused the Android app to run slowly. The app is now more responsive.
+- Fixed an issue where the scanner sometimes sent chunks of data multiple times, which resulted in errors that required the session to be reset. This issue usually, but not exclusively, occurred when scanning GS1 barcodes.
+- The built-in calculator now correctly handles decimal numbers.
+- Corrected an issue where pop-up windows occasionally appeared in the wrong place on the screen.
+
+### What's new in version 4.0.9.0
+
+Version 4.0.9.0 adds the following fixes and improvements:
+
+- New color themes.
+- Enhanced quantity spinner performance.
+- Clearer Wi-Fi diagnostic help text.
+- Better bar code and QR code camera detection.
+- Improved authentication error handling.
+- Enhanced telemetry and detection.
+- Lower resource consumption and battery usage.
+
+## Versions 4.0.2.0 – 4.0.8.0
+
+Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
 ### Preview release
 
-This app is in preview. By installing this preview app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
+These versions of the Warehouse Management mobile app are preview releases. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
+
+If you have feedback about a preview version of this app, please submit a post on the [Warehouse Management App group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=44117131264) on Microsoft Viva Engage.
+
+### What's new in version 4.0.8.0
+
+Version 4.0.8.0 adds the following fixes and improvements:
+
+- Fixed an issue where detour buttons could cause the app to crash.
+- Fixed an issue that caused long information text on the Details card to display in the wrong format.
+- Fixed an issue that prevented pop-ups from showing during sales picking.
+- Improved support for user settings.
+- Improved help text on the Wi-Fi diagnostic screen.
+
+### What's new in version 4.0.7.0
+
+Version 4.0.7.0 adds the following fixes and improvements:
+
+- Improved accessibility support.
+- Fixed an issue where pop-up step instructions continue to appear even after the user opts to hide them.
 
 ### What's new in version 4.0.3.0
-
-Version 4 introduces many new features and improvements that will enhance your warehouse management experience. For details, see [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
 Version 4.0.3.0 adds the following fixes and improvements:
 
@@ -41,25 +145,21 @@ Version 4.0.3.0 adds the following fixes and improvements:
 - Improved the performance of the quantity spinner.
 - Fixed an issue that could sometimes occur when changing between different users.
 
-## Version 4.0.2.0
+### Version 4.0.2.0
 
-This is the first preview release of Warehouse Management mobile app version 4.
+Version 4.0.2.0 is the first preview release of Warehouse Management mobile app version 4. Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
-If you have any feedback about the preview version of this app, please send us email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
+## Version 3.0.9.0
 
-### Preview release
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
-This app is in preview. By installing this preview app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
-
-### What's new in version 4
-
-Version 4 introduces many new features and improvements that will enhance your warehouse management experience. For details, see [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
+- Added a feature that notifies workers about version 4 availability and provides migration instructions.
 
 ## Version 3.0.8.0
 
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
-- Enabled seamless data migration between versions to ensure a smooth transition from version 3.x to version 4. For example, devices now preserve their connection settings so admins won't need to reenter them after migrating.
+- Enabled seamless data migration between versions to ensure a smooth transition from version 3.x to version 4. For example, devices now preserve their connection settings so admins don't need to reenter them after migrating.
 - Added a feature that lets workers know that version 4 is or will soon be available and how to migrate easily.
 
 ## Version 3.0.7.0
@@ -104,9 +204,9 @@ This version of the Warehouse Management mobile app introduces the following fix
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
 - Increased stability.
-- User-based authentication (device code or username/password) is now required. Support for service-based authentication methods (certificate and client secret) has been removed. You must update the connection settings on all devices that are still using service-based authentication.
-- The Copilot button is now shown at the top of most pages (instead of as an entry on the **Main Menu** page) and has been relabeled to **Workload** because it opens the Copilot-generated workload summary.
-- The **Settings** button is now shown as a gear icon at the right side of the title bar on most pages (instead of as an entry on the **Main Menu** page).
+- User-based authentication (device code or username/password) is now required. Support for service-based authentication methods (certificate and client secret) is removed. You must update the connection settings on all devices that still use service-based authentication.
+- The Copilot button now appears at the top of most pages (instead of as an entry on the **Main Menu** page) and is relabeled to **Workload** because it opens the Copilot-generated workload summary.
+- The **Settings** button now appears as a gear icon at the right side of the title bar on most pages (instead of as an entry on the **Main Menu** page).
 - Fixed an issue that could cause the app to freeze.
 
 ## Version 2.3.7.0
@@ -146,16 +246,16 @@ This version of the Warehouse Management mobile app introduces the following new
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
 - Increased stability.
-- Fixed an issue that striped non-GS1 symbology values when scanning.
+- Fixed an issue that stripped non-GS1 symbology values when scanning.
 
 ## Version 2.3.2.0
 
 ### New features introduced in version 2.3.2.0
 
-This version of the Warehouse Management mobile app introduces the following new features: 
+This version of the Warehouse Management mobile app introduces the following new features:
 
 - Added a welcome screen copilot, which provides essential information and helpful tips.
-- Added a sound and vibration alert to tell workers when they are scanning too quickly for the system to keep up and therefore need to redo their last scan.
+- Added a sound and vibration alert to tell workers when they're scanning too quickly for the system to keep up and need to redo their last scan.
 - Reduced whitespace on details cards by 35%.
 
 ### New fixes and improvements in version 2.3.2.0
@@ -170,7 +270,7 @@ This version of the Warehouse Management mobile app introduces the following fix
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
 - For Android devices, Android version 5.0 or higher is now strictly required.
-- Improved support for the SOTI MobiControl Mobile Device Management (MDM) system. The managed configuration for the uploaded Warehouse Management APK file is now visible in MobiControl, and it's possible to include a connections JSON string.
+- Improved support for the SOTI MobiControl Mobile Device Management (MDM) system. The managed configuration for the uploaded Warehouse Management APK file is now visible in MobiControl, and you can include a connections JSON string.
 - Improved performance for large action lists.
 - Enhanced validation of authentication secrets on the **Edit connection** page.
 - Fixed an issue on certain Honeywell devices, which was related to using the enter key.
@@ -188,11 +288,11 @@ This version of the Warehouse Management mobile app introduces the following fix
 
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
 
-- Improved username and password authentication. Now, if the domain name is present in the connection configuration, then you can sign in using only the alias part of the Microsoft Entra ID account username (rather than a complete email address). The app will retrieve the domain name from the connection configuration. You can still sign in using the full email address as the username if you prefer.
+- Improved username and password authentication. Now, if the domain name is present in the connection configuration, then you can sign in using only the alias part of the Microsoft Entra ID account username (rather than a complete email address). The app retrieves the domain name from the connection configuration. You can still sign in using the full email address as the username if you prefer.
 - Fixed an issue where a selected value wasn't respected when moving back and forth within detours.
-- Fixed an issue where the page would sometimes be rendered incorrectly when the device was in landscape mode and the user had selected to never show the *quantity spinner*.
+- Fixed an issue where the page would sometimes be rendered incorrectly when the device was in landscape mode and the user selected to never show the *quantity spinner*.
 - The app now moves back to the **Select connection** page if the device code expires (after 15 minutes of inactivity) instead of showing an ambiguous error message.
-- Fixed an issue that would prevent the app from being installed on Windows when the package was downloaded from Microsoft App Center.
+- Fixed an issue that prevented the app from being installed on Windows when the package was downloaded from Microsoft App Center.
 - Added several accessibility improvements.
 
 ## Version 2.1.23.0
@@ -229,14 +329,14 @@ This version of the Warehouse Management mobile app introduces the following fix
 - The wireless network connection screen is now correctly hidden in all contexts.
 - Fields on the details card are now sorted by priority.
 - The empty confirmation label on the details card is now hidden.
-- Translations have been updated.
+- Translations are updated.
 - Telemetry is now available in China.
 - The app can now scan the pipe character (|) correctly as a separator.
-- New icons are now provided for action buttons.
+- New icons are provided for action buttons.
 - The worklist and inquiry cards now have full text accessibility pop-ups.
 - Pressing the escape key while entering vendor batches no longer causes the app to crash.
 - The about screen now shows the latest version correctly.  
-- The app no longer crashes on Android devices that lack of a preinstalled browser.
+- The app no longer crashes on Android devices that lack a preinstalled browser.
 
 ## Version 2.1.17.0
 
@@ -244,7 +344,7 @@ This version of the Warehouse Management mobile app introduces the following fix
 
 This version of the Warehouse Management mobile app introduces the following new features:  
 
-- Support for multi-level detour.
+- Support for multilevel detour.
 - Support for password fields on the custom page.
 - A warning message about the deprecation of the certificate and the client's secret.
 - Updated and improved the **About** page.
@@ -266,7 +366,7 @@ This version of the Warehouse Management mobile app introduces the following fix
 
 This version of the Warehouse Management mobile app introduces the following new features:  
 
-- Wireless network connection strength indicator: Indicates the strength of the wireless network connection and adds a new throttling algorithm to ensure connectivity in unstable networks. It's also possible to log wireless network connection strength measurements among the telemetry data collected in Application Insights.
+- Wireless network connection strength indicator: Indicates the strength of the wireless network connection and adds a new throttling algorithm to ensure connectivity in unstable networks. You can also log wireless network connection strength measurements among the telemetry data collected in Application Insights.
 - Configuration mode: Intended for developers and advanced users, configuration mode provides a deeper understanding of how the app works. It can display and edit the XML code used to build and customize the user interface. For more information about this XML code, see [Inspect details of active Warehouse Management mobile app sessions](work-user-sessions.md).
 
 ### New fixes and improvements in version 2.1.15.0
@@ -274,7 +374,7 @@ This version of the Warehouse Management mobile app introduces the following new
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
 - Increased stability.
-- Fixed an issue that prevented iOS users from signing in using the Device Code authentication method.
+- Fixed an issue that prevented iOS users from signing in by using the Device Code authentication method.
 - Updated the terms and conditions to address legal compliance issues.
 - Updated translations to provide an improved experience for international users.
 - Updated labels in all languages to reflect the change from Azure Active Directory to Microsoft Entra ID.
@@ -307,11 +407,11 @@ The Warehouse Management mobile app can now use *device code flow* authenticatio
 
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
 
-- Fixed an issue that prevented quantity values from being displayed when the quantity spinner was hidden. Now, when the spinner is hidden, the quantity is displayed as read-only, and users can scan or use the numpad to change it.
-- The decimal separator shown by the mobile app now matches the culture (language) specified for the user account that the app is using to sign in to Supply Chain Management rather than the culture set for the local device.
-- Fixed an issue where the read-only quantity spinner would display an incorrect value after the page was resized.
-- Fixed an issue where the compact (small) quantity spinner would initially show an incorrect value.
-- Added the ability to collect telemetry data about the wireless network connection strength seen at locations where the app is used (for use with [Application Insights](application-insights-warehousing.md)).
+- Fixed an issue that prevented quantity values from displaying when the quantity spinner was hidden. Now, when the spinner is hidden, the quantity is displayed as read-only, and users can scan or use the numpad to change it.
+- The decimal separator shown by the mobile app now matches the culture (language) specified for the user account that the app uses to sign in to Supply Chain Management rather than the culture set for the local device.
+- Fixed an issue where the read-only quantity spinner displayed an incorrect value after resizing the page.
+- Fixed an issue where the compact (small) quantity spinner initially shows an incorrect value.
+- Added the ability to collect telemetry data about the wireless network connection strength at locations where the app is used (for use with [Application Insights](application-insights-warehousing.md)).
 - Added several accessibility improvements.
 
 ## Version 2.1.9.0
@@ -335,7 +435,7 @@ This version of the Warehouse Management mobile app introduces the following new
 - On custom pages, the app now focuses on the first non-filled text box instead of the first text box.
 - Added a close button on all dialog pop-up pages.
 - Added a back button on the **Settings**, **Alphanumeric** input, and **Numpad** pages.
-- Fixed an issue where the camera scanner would read an extra unprintable character at the end of specific Code 128 barcodes.
+- Fixed an issue where the camera scanner read an extra unprintable character at the end of specific Code 128 barcodes.
 - Improved narration and keyboard navigation for better accessibility.
 
 ## Version 2.1.1.0  
@@ -353,7 +453,7 @@ This version of the Warehouse Management mobile app introduces the following fix
 
 - Increased stability for installations deployed using Microsoft Intune.
 - Fixed an issue where the app couldn't connect to the server when running on Android 4.4.
-- Fixed an issue where the default sorting option of the **Work list** page would overwrite the sorting query specified on the server.
+- Fixed an issue where the default sorting option of the **Work list** page overwrote the sorting query specified on the server.
 
 ## Version 2.0.42.0
 
@@ -361,7 +461,7 @@ This version introduces the following new features, fixes, and improvements:
 
 - The user settings and input-helper dialogs now include a back button in the toolbar.
 - You can now use a pull-down gesture to close the user settings and photo dialogs.
-- Fixed an issue that could occur when confirming a quantity using a unit of measure that is named similarly to the next unit of measure in its sequence group. Previously, this could result in the app assuming the wrong unit of measure, but now it correctly identifies each unit in the sequence.
+- Fixed an issue that could occur when confirming a quantity by using a unit of measure that is named similarly to the next unit of measure in its sequence group. Previously, this issue could result in the app assuming the wrong unit of measure, but now it correctly identifies each unit in the sequence.
 
 ## Version 2.0.41.0  
 
@@ -396,12 +496,12 @@ This version introduces the following new features, fixes, and improvements:
 This version introduces the following new features, fixes, and improvements:
 
 - Increased stability.
-- The fields of the **Custom** page are no longer sorted automatically based on their priority and subpriority settings.  
-- The app now uses the priority and subpriority settings for each field to identify the primary field for a page. The primary field is shown in the step header.
-- Fixed an issue where the soft keyboard wouldn't hide on Android.
+- The fields of the **Custom** page no longer sort automatically based on their priority and subpriority settings.  
+- The app now uses the priority and subpriority settings for each field to identify the primary field for a page. The primary field appears in the step header.
+- Fixed an issue where the soft keyboard didn't hide on Android.
 - Fixed an issue where the quantity spinner showed an incorrect correct value on opening in the *movement* flow.
 - Fixed an issue where the read-only quantity spinner value wasn't centered correctly.
-- Fixed an issue where web pages wouldn't open from the **About** page.
+- Fixed an issue where web pages didn't open from the **About** page.
 - The *Auto* color theme now takes its default appearance (light or dark) based on the global theme set in the mobile device's operating system.
 
 ## Version 2.0.37.0
@@ -421,7 +521,7 @@ This version introduces the following new features, fixes, and improvements:
 
 This version introduces the following new features, fixes, and improvements:
 
-- Fixed an issue on Android where the application would crash if the **Work List** page was opened when no cards were to be shown.
+- Fixed an issue on Android where the app would crash if the **Work List** page was opened when no cards were to be shown.
 
 ## Version 2.0.34.0
 
@@ -432,7 +532,7 @@ This version introduces the following new features, fixes, and improvements:
 - Improved the screen layout to allow more space for the details card.
 - Added a search function to the **Work List** page. Workers can now scan or type to search in all the fields and titles on the page.
 - The list of available connections is now sorted alphabetically.
-- Fixed an issue where duplicate cards were shown for items that have multiple inventory statuses at the same location.
+- Fixed an issue where duplicate cards appeared for items that have multiple inventory statuses at the same location.
 - Fixed an issue where the **Large Selection List** page didn't scroll to show the preselected item.
 - Fixed the search bar colors on the **Large Selection List** page.
 - Fixed an issue where the default button defined in the XML wasn't used as the submit button.
@@ -464,10 +564,10 @@ This version introduces the following new features, fixes, and improvements:
 This version introduces the following new features, fixes, and improvements:
 
 - Improved stability.
-- Introduced the ability to continue scanning even while an error dialog is shown on the screen.
+- Added the ability to continue scanning even while an error dialog is shown on the screen.
 - Added support for ASCII 10 in bar codes.
 - Improved the usability of step instruction dialogs.
-- Fixed an issue where a blank screen could sometimes be shown.
+- Fixed an issue where a blank screen could sometimes appear.
 - Fixed an issue where work lists didn't scroll correctly when running on Microsoft Windows.
 
 ## Version 2.0.25.0
@@ -477,9 +577,9 @@ This version introduces the following new features, fixes, and improvements:
 - Increased performance.
 - Increased stability.
 - Improved the **Inquiry** page to support longer texts in subheaders.
-- Introduced the ability to immediately cancel a flow with a single tap or click (when **Cancel** is the only action available under **More actions**).
+- Added the ability to immediately cancel a flow with a single tap or click when **Cancel** is the only action available under **More actions**.
 - Fixed an issue where focus could sometimes be lost between entry controls on the **Edit connection** page and custom pages.
-- Fixed an issue where buttons could sometimes become irresponsive and remain shown as selected when included in a scrolling view.
+- Fixed an issue where buttons could sometimes become unresponsive and remain shown as selected when included in a scrolling view.
 - Fixed an issue where the wrong layout could sometimes be used on the main page.
 
 ## Version 2.0.24.0
@@ -487,7 +587,7 @@ This version introduces the following new features, fixes, and improvements:
 This version introduces the following new features, fixes, and improvements:
 
 - Improved scanner pages to enable the scan option on **Details** pages.
-- Improved gestures, such as touch/tap screen.
+- Improved gestures, such as touch and tap screen.
 - Improved performance issues for Android.
 - Fixed placement of multiple headers to allow more cards to display on the **Inquiry** page.
 - Improved scrolling so less distance for scrolling pagination is enabled.
@@ -502,10 +602,10 @@ This version introduces the following new features, fixes, and improvements:
 This version introduces the following new features, fixes, and improvements:
 
 - Fixed several crashing issues.
-- Fixed an issue where some characters wouldn't be recognized when scanning or typing on the default page.
-- Fixed an issue where typing a backspace on the default page would delete two characters at a time.
-- Fixed an issue where the **Sort by** field on the **Work list** page would display an incorrect value that didn't correspond to the actual sorting order of the cards.
-- Fixed an issue where an incorrect layout would be shown after resizing the app window while running on Microsoft Windows.
+- Fixed an issue where some characters weren't recognized when scanning or typing on the default page.
+- Fixed an issue where typing a backspace on the default page deletes two characters at a time.
+- Fixed an issue where the **Sort by** field on the **Work list** page displayed an incorrect value that didn't correspond to the actual sorting order of the cards.
+- Fixed an issue where an incorrect layout was shown after resizing the app window while running on Microsoft Windows.
 - Fixed an issue where scrolling in a pop-up list could result in some list items remaining hidden or becoming distorted.
 - Redesigned the sign-in page to let it display the username and password fields on the same page when running on larger displays.
 - Improved the way controls react to fast tapping.
@@ -517,7 +617,7 @@ This version introduces the following new features, fixes, and improvements:
 This version introduces the following new features, fixes, and improvements:
 
 - Fixed several crashing issues.
-- Fixed an issue where incorrect values would be shown on cards on the **Work list** page.
+- Fixed an issue where incorrect values appeared on cards on the **Work list** page.
 - Improved the scrolling experience and eliminated scrolling jitter on the **Work list** and **Item inquiry** pages in Android.
 - Added an exit button to the sign-in page, which quits the application.
 
@@ -530,7 +630,7 @@ This version introduces the following new features, fixes, and improvements:
 - Reduced battery consumption.
 - Removed the limit on the number of fields for work cards.
 - Adjusted the height of work cards so that all of them have the same size, regardless of the number of fields in each.
-- Fixed an issue where space characters in bar codes would be trimmed out.
+- Fixed an issue where space characters in bar codes were trimmed out.
 - Added the **Button style** setting, which lets you swap between slider view and button view on all types of devices.
 - Fixed various issues that could cause the app to crash.
 - Set focus automatically on the first textbox on custom pages.
@@ -540,21 +640,21 @@ This version introduces the following new features, fixes, and improvements:
 
 This version introduces the following new features, fixes, and improvements:
 
-- Fixed an issue where bar codes would be scanned incorrectly.
+- Fixed an issue where barcodes were scanned incorrectly.
 - Fixed the GS1 scanning issue for the camera scanner.
 - Fixed the GS1 scanning issue for the bar code scanner on Zebra devices.
 - Improved the detour inquiry flow, so selecting a card in a detour now returns to the main flow.
 - Added support for a generic data inquiry flow.
-- Added a message to tell users about changes to the network connectivity status.
+- Added a message to inform users about changes to the network connectivity status.
 - Aligned storage permissions with the storage privacy policy in Android 10.
 - For flows that need it, the quantity spinner now includes a position that lets users submit an empty numeric value.
 - Fixed issues with the quantity spinner orientation.
-- Fixed an issue where the quantity spinner would jump to the wrong value.
-- Fixed an issue where input to the primary page would get lost when being populated from the details page.
-- Fixed an issue where placeholder text would be treated as the initially selected value in selection lists.
-- The "Submit" button on confirmation steps is now automatically enabled if there are preselected values.
+- Fixed an issue where the quantity spinner jumped to the wrong value.
+- Fixed an issue where input to the primary page was lost when being populated from the details page.
+- Fixed an issue where placeholder text was treated as the initially selected value in selection lists.
+- The **Submit** button on confirmation steps is now automatically enabled if there are preselected values.
 - Fixed the details card to show as many lines as possible for text fields that have multiple lines.
-- Fixed the height of the "Submit" and "More actions" buttons, so now they take up less space on the screen.
+- Fixed the height of the **Submit** and **More actions** buttons, so they take up less space on the screen.
 - Added missing selection list titles.
 - Fixed an issue where the back button didn't work.
 - Added several keyboard navigation fixes and improvements, including on the following pages:
@@ -587,22 +687,22 @@ This version introduces the following new features, fixes, and improvements:
 This version introduces the following new features, fixes, and improvements:
 
 - Improved scrolling between pages with smoother animation.
-- Fixed counter-intuitive responses to swipe motions and occasional screen freezes.
+- Fixed counterintuitive responses to swipe motions and occasional screen freezes.
 - Improved dark mode text and background color combinations for better readability.
-- Fixed an issue where some text could become very small when resizing the app window.
-- Fixed an issue that could sometimes crash the app when scanning bar codes.
+- Fixed an issue where some text became very small when resizing the app window.
+- Fixed an issue that sometimes crashed the app when scanning bar codes.
 - Added the possibility to replace a slider with a button.
-- Fixed an issue that could cause the app to show the error message, "AADSTS7000215: Invalid client secret is provided."
-- Fixed the hint animation showing how to close a page using a swipe-down gesture.
+- Fixed an issue that caused the app to show the error message, "AADSTS7000215: Invalid client secret is provided."
+- Fixed the hint animation that shows how to close a page using a swipe-down gesture.
 - Added the possibility to close a page using a flick-down gesture.
 - Fixed an issue where drop-down list titles weren't shown on the **User settings** page.
-- Fixed a localization issue where the app wouldn't recognize a comma (,) as a decimal separator.
+- Fixed a localization issue where the app didn't recognize a comma (,) as a decimal separator.
 - Improved accessibility.
 - Fixed the navigation on the **New connection** page to provide improved accessibility.
-- Fixed an issue where the soft (onscreen) keyboard wouldn't appear when selecting an input field.
-- Fixed an issue that could crash the app if users quickly resized its window.
+- Fixed an issue where the soft (onscreen) keyboard didn't appear when selecting an input field.
+- Fixed an issue that crashed the app if users quickly resized its window.
 - Fixed an issue where a fast keypress was sometimes interpreted as a long press.
-- Fixed an issue where the app layout could become corrupted because of field customizations made in Supply Chain Management.
+- Fixed an issue where the app layout became corrupted because of field customizations made in Supply Chain Management.
 - Fixed an issue where item locations weren't displayed properly.
 - Fixed an issue related to short picking for the product variant workflow.
 - Removed the unnecessary validation of fields containing preset default values.
@@ -630,13 +730,13 @@ This version introduces the following new features, fixes, and improvements:
 - Text now wraps correctly on the connection error page.
 - Combo boxes without default values now display correctly.
 - Information in the subheader area is now shown only on the full details page.
-- Empty input fields are no longer shown on the details card.
-- Confirmation values are no longer duplicated on the details card.
+- Empty input fields no longer show on the details card.
+- Confirmation values no longer duplicate on the details card.
 - Fixed various issues that caused the system to stop responding.
 
 ## Version 2.0.9.0
 
-This version fixes an issue where the app could stop responding if users page up from the top of a list.
+This version fixes an issue where the app stopped responding if users page up from the top of a list.
 
 ## Version 2.0.8.0
 
@@ -645,7 +745,7 @@ This version introduces the following new features, fixes, and improvements:
 - Added support for the [step instructions feature](mobile-app-titles-instructions.md) that was introduced in Supply Chain Management version 10.0.21.
 - Added hint animation to show users that they can close overlays by swiping down.
 - Added support for function keys on action lists and menus. Users can hold down any function key for three seconds to get a list of available commands.
-- Fixed an issue that caused the following error message to be shown on some devices: "Cannot find a suitable view for the specified size."
+- Fixed an issue that caused the following error message to appear on some devices: "Cannot find a suitable view for the specified size."
 - Fixed an issue where full-screen mode didn't always work when the on-screen keyboard is used.
 - Fixed an issue where page swiping didn't work on Windows devices.
 - Fixed various issues that caused the system to stop responding.
@@ -654,13 +754,13 @@ This version introduces the following new features, fixes, and improvements:
 
 ### New features, fixes, and improvements in version 2.0.7.0
 
-- Added a section to the **About** page that checks latest released version of the app.
+- Added a section to the **About** page that checks the latest released version of the app.
 - Made it easier to flick and swipe between pages.
 - Changed the icon for the ascending/descending button on the work list.
 - Reduced the margins on the **Details** card to allow it to fit more information.
 - Applied various performance improvements to reduce the issue of the app becoming slower over time.
 - If there are more controls than fit on the screen, resulting in paging, the spinner control no longer scrolls the same way as the page.
-- Prioritize showing the last scanned value over showing the task title, so if they overlap the task title will be truncated.
+- Prioritize showing the last scanned value over showing the task title, so if they overlap the task title is truncated.
 - Fixed various issues that caused the system to stop responding.
 - Text in various places is no longer cut off in some languages.
 - The app now runs in full-screen mode by default.
@@ -668,7 +768,7 @@ This version introduces the following new features, fixes, and improvements:
 
 ### Known issues in version 2.0.7.0
 
-- On some devices, you'll get the following error message when you start the app or begin a task: "Cannot find a suitable view for the specified size." If you see this error message on any of your devices, you must downgrade the Warehouse Management mobile app to version 2.0.6.0 on that device and wait to upgrade until the next version of the app is released.
+- On some devices, you get the following error message when you start the app or begin a task: "Cannot find a suitable view for the specified size." If you see this error message on any of your devices, you must downgrade the Warehouse Management mobile app to version 2.0.6.0 on that device and wait to upgrade until the next version of the app is released.
 
 ## Version 2.0.6.0
 
@@ -678,14 +778,14 @@ This version introduces the following new features, fixes, and improvements:
 
 - Demo mode now shows all labels in the device language.
 - You're less likely to receive the following error message: "Cannot find a suitable view for the specified size."
-- The minimum height for work cards has been increased (for cases where three or fewer fields are configured to appear in the work list).
-- Margins (fade out) at the bottom of details cards have been improved.
-- Invalid symbols in XML files that are exchanged with the server are now handled gracefully. (For example, non-printable characters are now handled gracefully and no longer cause the app to stop responding.)
+- The minimum height for work cards is increased (for cases where three or fewer fields are configured to appear in the work list).
+- Margins (fade out) at the bottom of details cards are improved.
+- Invalid symbols in XML files that are exchanged with the server are now handled gracefully. For example, non-printable characters are now handled gracefully and no longer cause the app to stop responding.
 - HTTP errors (such as "error 503") when a server request is submitted are now handled gracefully.
-- While an error is being shown, the options list is no longer automatically shown for combo box controls.
+- While an error is being shown, the options list no longer automatically shows for combo box controls.
 - The app no longer stops responding because of the display orientation that is selected in user settings.
-- Product images are now shown in self-service environments. (This change applies to low-resolution versions only. The file management service doesn't support full-sized images in self-service environments.)
-- An issue that involved zero-quantity short picks has been fixed.
+- Product images are now shown in self-service environments. This change applies to low-resolution versions only. The file management service doesn't support full-sized images in self-service environments.
+- An issue that involved zero-quantity short picks is fixed.
 - The app no longer stops responding when a details card shows multiple identical fields.
 
 ### Known issues in version 2.0.6.0
@@ -699,44 +799,44 @@ The following known issues exist in this version:
 
 This version introduces the following new features, fixes, and improvements:
 
-- The client secret is no longer hidden in the connection settings setup.
+- The connection settings setup no longer hides the client secret.
 - You can now long-press on any text to see it fully.
 - The error message when storage permissions are missing has been improved.
-- New control sequences have been added for some flows.
+- New control sequences are added for some flows.
 - The submit button no longer incorrectly becomes available because of the window size.
 - Sliders can now proceed on smaller screens when larger button sizes are used.
 - The four-button overlay is no longer cut off.
 - The keyboard now supports the delete button.
-- A brightness issue that could occur when the keyboard is pressed has been fixed.
-- Various demo data issues have been fixed.
-- An issue that affected numeric fields on the details page has been fixed.
+- A brightness issue that could occur when the keyboard is pressed is fixed.
+- Various demo data issues are fixed.
+- An issue that affected numeric fields on the details page is fixed.
 - The screen keyboard no longer occasionally disappears on some devices.
-- Various user interface (UI) bugs have been fixed, such as bugs that affected the background color and positioning.
-- The Russian-language UI has been improved.
-- Various issues that caused the system to stop responding have been fixed.
-- An issue that was related to reopening the calculator has been fixed.
-- **Android version:** An issue that caused Android 4.4 to stop responding on startup has been fixed.
-- **Android version:** Minimum scaling has been reduced to 50 percent.
+- Various user interface (UI) bugs are fixed, such as bugs that affected the background color and positioning.
+- The Russian-language UI is improved.
+- Various issues that caused the system to stop responding are fixed.
+- An issue that was related to reopening the calculator is fixed.
+- **Android version:** An issue that caused Android 4.4 to stop responding on startup is fixed.
+- **Android version:** Minimum scaling is reduced to 50 percent.
 
 ## Version 2.0.4.0
 
-Version 2.0.4.0 was the first generally available release of the Warehouse Management mobile app.
+Version 2.0.4.0 is the first generally available release of the Warehouse Management mobile app.
 
 ### New features, fixes, and improvements in version 2.0.4.0
 
 This version introduces the following new features, fixes, and improvements that weren't available in the preview version:
 
 - If a details card includes two labels that have identical data, one of the labels is hidden.
-- Special characters are now shown by default, and the option to hide them has been removed from user settings.
-- Disabled submit buttons are now shown as unavailable in compact arm-held view.
-- A change to the sequencing logic for controls ensures smoother scaling across devices. Therefore, there's less need to adjust the scaling of fonts or buttons.
-- The default color theme has been changed to *Dark*.
+- Special characters now show by default, and the option to hide them has been removed from user settings.
+- Disabled submit buttons now show as unavailable in compact arm-held view.
+- A change to the sequencing logic for controls ensures smoother scaling across devices. Therefore, you need to make fewer adjustments to the scaling of fonts or buttons.
+- The default color theme changed to *Dark*.
 - The missing icon for the disabled submit button has been added in ribbon view.
 - Time-out exceptions now take you to the connection page instead of showing an in-line error.
-- If no submit action is available (such as **OK**, **Yes**, **Accept**, **Done**, or **Finished**), the submit button will be disabled.
-- App stability has been improved.
+- If no submit action is available (such as **OK**, **Yes**, **Accept**, **Done**, or **Finished**), the submit button is disabled.
+- App stability is improved.
 - There's a fix for security vulnerability [CVE-2021-26701](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-26701).
-- **Windows version:** An issue on Windows, where menus were unresponsive after the window was resized, has been fixed.
+- **Windows version:** An issue on Windows, where menus were unresponsive after the window was resized, is fixed.
 
 ### Known issue in version 2.0.4.0
 

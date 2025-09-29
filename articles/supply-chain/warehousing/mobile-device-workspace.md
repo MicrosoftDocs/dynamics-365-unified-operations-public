@@ -4,7 +4,7 @@ description: Learn about the Warehouse mobile devices workspace, which lets you 
 author: MichaelFruergaardPontoppidan
 ms.author: mfp 
 ms.topic: how-to
-ms.date: 07/23/2024
+ms.date: 09/09/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSMobileDeviceWorkspace, WHSMobileDevice

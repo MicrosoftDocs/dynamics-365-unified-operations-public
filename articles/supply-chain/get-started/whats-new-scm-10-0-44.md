@@ -3,11 +3,14 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.44 (Ju
 description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.44 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
-ms.topic: conceptual
-ms.date: 04/25/2025
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: whats-new
+ms.date: 08/05/2025
+ms.update-cycle: 1095-days
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.44 (June 2025)
@@ -27,7 +30,7 @@ The following table lists the features that are included in this release. We mig
 | Module or feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Procurement and sourcing | [Automate procure-to-pay tasks with supplier communications agent](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/automate-procure-to-pay-tasks-copilot) | [Supplier Communications Agent overview (production ready preview)](../procurement/supplier-com-agent-overview.md) | Feature management:<ul><li>*(Preview) Immersive Home*</li><li>*(Production ready preview) Agent management*</li><li>*(Production ready preview) Supplier Communications Agent*</li><li>*(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails*</li></ul> |
-| Production control and Accounts receivable | [Achieve regulatory compliance and quality excellence](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/achieve-regulatory-compliance-quality-excellence) | [Advanced quality management overview (preview)](../inventory/advanced-quality-management-overview.md) | Feature management:<ul><li>*Approved customer list*</li><li>*Dispense management*</li><li>*Electronic signature improvements*</li><li>*Advanced quality management*</li></ul> |
+| Production control and Accounts receivable | [Achieve regulatory compliance and quality excellence](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/achieve-regulatory-compliance-quality-excellence) | [Advanced quality management overview](../inventory/advanced-quality-management-overview.md) | Feature management:<ul><li>*Approved customer list*</li><li>*Dispense management*</li><li>*Electronic signature improvements*</li><li>*Advanced quality management*</li></ul> |
 | Production control | Select color themes on production floor execution interface | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md)<br><br>[Configure the production floor execution interface](../production-control/production-floor-execution-configure.md) | Feature management:<br>*Select color themes on production floor execution interface* |
 
 ## <a name="enhancements"></a>Feature enhancements added in this release
@@ -45,7 +48,7 @@ Some of these features aren't visible on your system until you turn them on in [
 | **Module:** Master planning<br><br>**Feature management name:** *Cosider batch disposition code in available to promise (ATP) calculation.* | Enables the system to calculate available to promise (ATP) for items tracked using inventory batches. The feature adds a new parameter to the sales settings that lets you choose whether the batch disposition code is considered when calculating ATP. |
 | **Module:** Master planning<br><br>**Feature management name:** *Plan for a single site or warehouse in Planning Optimization* | Lets you plan for a single site or warehouse in Planning Optimization. Enterprises and companies operating in different sites can operate independently by running different master plans for their respective ownership. The feature adds a new filter on the master plan level, which lets you specify the scope for the given master plan by choosing the required inventory dimensions. |
 | **Module:** Procurement and sourcing<br><br>**Feature management name:** *Copy Prices include sales tax setting from vendor* | Adds the option to copy the vendor's **Prices include sales tax** setting when you create a purchase order from a purchase requisition. If you turn this option off, the **Prices include sales tax** setting isn't copied and is disabled by default. To set this option, go to the **Accounts payable parameters** page, open the **General** tab, expand the **Vendor** FastTab, and adjust the **Copy Prices include sales tax setting from vendor** slider. This feature is already mandatory and can't be turned off. |
-| **Module:** Product information management<br><br>**Feature management name:** *Enable foreign trade parameters for all countries* | Adds foreign trade parameters for all previously unsupported countries, including Hong Kong, China, Thailand, Japan, Korea, Malaysia, Russia, and Turkey. The new settings are available on **Foreign trade** FastTab for released products. |
+| **Module:** Product information management<br><br>**Feature management name:** *Enable foreign trade parameters for all countries* | Adds foreign trade parameters for all previously unsupported countries/regions, including Hong Kong SAR, China, Thailand, Japan, Korea, Malaysia, Russia, and Türkiye. The new settings are available on **Foreign trade** FastTab for released products. |
 | **Module:** Production control<br><br>**Feature management name:** *Add lines to the adjust materials dialog* | Lets you add and delete material lines in the **Adjust materials** dialog on the production floor execution interface. |
 | **Module:** Production control<br><br>**Feature management name:** *Enhanced user experienced for tracked components management* | Enhances the production floor execution interface to provide a more efficient and user-friendly experience for registering tracked component information. Workers can now use the scan option instead of toggle buttons to register serial or batch numbers for finished goods. You can now choose between multiple scan modes (*product* or *component*), which allows for greater flexibility and accuracy. The interface for editing product and component associations has been improved, making it easier to manage and update these associations. |
 | **Module:** Production control<br><br>**Feature management name:** *List view for reporting job scrap from the production floor execution interface* | Workers reporting job scrap from the production floor execution interface can now choose to work from a list view that shows several jobs at once, or from a detail view that shows more information about one job at a time. Previously, only the detail view was available. |

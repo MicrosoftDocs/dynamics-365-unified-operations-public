@@ -8,6 +8,7 @@ ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
 ms.date: 09/30/2025
+
 ---
 
 # Business performance analytics FAQ
@@ -38,6 +39,20 @@ The setup of the Business performance analytics app takes up to 60 minutes. Howe
 ## Accessing the App
 ### I'm having trouble opening Business performance analytics. What can I do? 
 If you're accessing Business performance analytics from the maker portal, click **Play** in the top right corner to avoid viewing the app in editor mode.
+
+### Why am I unable to log into Business performance analytics even though I have the correct roles? 
+Some users may encounter login issues when accessing Business performance analytics due to conflicting cached credentials, especially if they’ve previously signed into multiple environments or tenants. This can prevent the correct authentication token from being used, resulting in access errors.
+The recommended workaround is to use **InPrivate** or **Incognito** modes.
+
+If users can't isolate their session using private browsing, follow these steps to ensure correct permissions are applied:
+1. Go to the Power Platform Admin Portal and log in as an admin.
+2. Locate the user account used to log into Microsoft services.
+3. Assign the BPA Admin or BPA User role to this account. For more information, see [Access Business performance analytics](access-bpa.md).
+4. Wait a few minutes for the role assignment to propagate.
+5. Refresh the page or log out and log back in with the correct account.
+
+This process ensures the correct permissions are set, even if private browsing isn't available.
+
 
 ## Data visibility and history
 ### Why isn't my data showing up in Business performance analytics?

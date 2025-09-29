@@ -36,14 +36,9 @@ When you configure the diagnostic types, you can create multiple records, each o
 
 1. Close the page.
 
-## Diagnostic groups (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
+## Diagnostic groups
 
 Use *diagnostic groups* to collect related diagnostic types so that you can quickly apply them all at once as corrections to a nonconformance. For example, you might create a group of diagnostic types that together describe how to diagnose an issue with raw material quality (such as repair and retest).
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Prerequisites
 

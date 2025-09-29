@@ -3,11 +3,11 @@ title: On-premises deployment home page
 description: Access information and links to content about on-premises deployments, including resources for getting started, onboarding, commerce, and upgrades.
 author: johnmichalak
 ms.author: johnmichalak
-ms.topic: landing-page
+ms.topic: concept-article
 ms.custom: 
   - bap-template
   - evergreen
-ms.date: 06/07/2024
+ms.date: 09/15/2025
 ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.collection: get-started
@@ -26,7 +26,7 @@ You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose 
 - [On-premises deployment overview](on-premises-overview.md)
 - [Plan and prepare for on-premises deployments](plan-onprem-deployment.md)
 - [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md)
-- [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](onprem-compatibility.md)
+- [Microsoft Dynamics 365 Finance + Operations (on-premises),  Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](onprem-compatibility.md)
 - [Hardware sizing requirements for on-premises environments](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Buy Finance + Operations (on-premises)](../../fin-ops/get-started/purchase-on-premises.md)
 - [Comparison of cloud and on-premises features](../../fin-ops/get-started/cloud-prem-comparison.md)

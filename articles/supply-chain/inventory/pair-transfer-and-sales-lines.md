@@ -1,26 +1,23 @@
 ---
-title: Link transfer order lines with sales order lines (preview)
+title: Link transfer order lines with sales order lines
 description: Learn how to link transfer order lines to the sales order lines that they were created from. You can also add new transfer order lines to open transfer orders if they are for the same warehouses.
 author: banluo-ms
 ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: SalesTable, InventTransferOrderSalesLineSupplyForm, InventTransferOrders, InventTrans
 ms.topic: how-to
-ms.date: 07/31/2024
+ms.date: 08/29/2025
 ms.custom: 
   - bap-template
 ---
 
-# Link transfer order lines with sales order lines (preview)
+# Link transfer order lines with sales order lines
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-<!--KFM: Preview until 10.0.45 GA. -->
 
 Microsoft Dynamics 365 Supply Chain Management lets you create transfer order lines directly from sales order lines. This functionality is useful when the goods that you must supply are located in a different warehouse than the warehouse that you're shipping from.
 
-The feature that is described in this article expands on that functionality by linking and marking the related transfer and sales order lines together. This link makes it easier to track the relationship between the sales and transfer orders, and helps you manage your inventory more effectively. The feature adds the following capabilities and benefits:
+The feature described in this article expands on that functionality by linking and marking the related transfer and sales order lines together. This link makes it easier to track the relationship between the sales and transfer orders, and helps you manage your inventory more effectively. The feature adds the following capabilities and benefits:
 
 - View all transfer orders that were generated for a specific sales order line.
 - View all sales orders that are related to a specific transfer order line.
@@ -29,14 +26,12 @@ The feature that is described in this article expands on that functionality by l
 - Automatically mark new transfer order lines with their related sales order line. Marking matches specific inventory receipts (transfer order line inventory transactions) with inventory issues (sales order line inventory transactions) for the purpose of inventory costing.
 - Automatically reserve transfer order quantities for the sales order that they were created from. In this way, you prevent them from being used to fulfill another sales order by mistake.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 ## Prerequisites
 
-Before you can use the feature that is described in this article, your system must meet the following requirements:
+Before you can use the feature described in this article, your system must meet the following requirements:
 
 - You must be running Dynamics 365 Supply Chain Management version 10.0.41 or later.
-- The feature that is named *Pair transfer order lines with sales order lines* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature named *Pair transfer order lines with sales order lines* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Add and link lines to a new or existing transfer order from a sales order
 
@@ -56,7 +51,7 @@ To create transfer order lines directly from sales order lines, link the lines t
 
 1. Select **OK**.
 
-The new or selected transfer order is opened. You can now view the transfer order lines and other details.
+The new or selected transfer order opens. You can now view the transfer order lines and other details.
 
 ## View transfer order lines related to a sales order
 
@@ -87,7 +82,7 @@ When you review sales orders, you can confirm whether the required transfer orde
 
 ## View sales orders related to a transfer order line
 
-When you review transfer orders, you can check whether they contain lines that are related to a specific sales order. This process can help you understand the context of the transfer order and why it was created.
+When you review transfer orders, you can check whether they contain lines that are related to a specific sales order. This process helps you understand the context of the transfer order and why it was created.
 
 1. Follow one of these steps:
 
@@ -101,10 +96,10 @@ When you review transfer orders, you can check whether they contain lines that a
 
 ## Automatic marking between sales and transfer order lines
 
-Marking matches specific inventory receipts (transfer order line inventory transactions) with inventory issues (sales order line inventory transactions) for the purpose of inventory costing. When you create a transfer order line from a sales order line, the system automatically marks the two lines together, but only if they are for *nonsettled items*.
+Marking matches specific inventory receipts (transfer order line inventory transactions) with inventory issues (sales order line inventory transactions) for the purpose of inventory costing. When you create a transfer order line from a sales order line, the system automatically marks the two lines together, but only if they're for *nonsettled items*.
 
 > [!IMPORTANT]
-> Nonsettled items are items from transactions that haven't been matched or processed according to the inventory model that you're using. (Examples of inventory models include standard cost, moving average, and non-valuated.) Automatic marking isn't supported for settled items. It also isn't supported for catch-weight items. For settled and catch-weight items, you must do the marking manually.
+> Nonsettled items are items from transactions that haven't been matched or processed according to the inventory model that you're using. Examples of inventory models include standard cost, moving average, and non-valuated. Automatic marking isn't supported for settled items. It also isn't supported for catch-weight items. For settled and catch-weight items, you must do the marking manually.
 
 To view and edit markings from a sale order line, follow these steps.
 
@@ -140,7 +135,7 @@ To view and edit markings from a transfer order line, follow these steps.
 
 ## Automatically reserve transferred items for their matching sales orders
 
-Transfer order quantities can be automatically reserved for the sales order that they were created from. In this way, they can't be used to fulfill another sales order by mistake. For this functionality to work, the following conditions must be met:
+You can automatically reserve transfer order quantities for the sales order that they were created from. This reservation prevents these quantities from being used to fulfill another sales order by mistake. For this functionality to work, the following conditions must be met:
 
 - The **Reserve items automatically** option must be set to *Yes* when the transfer order line is created from the sales order line.
 - The inventory transactions for the related sales order line and transfer order line must be marked together automatically. (Automatic marking is supported only for nonsettled items.)

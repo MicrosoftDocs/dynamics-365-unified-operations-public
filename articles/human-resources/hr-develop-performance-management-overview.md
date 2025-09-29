@@ -4,7 +4,7 @@
 title: Performance management
 description: The performance management process lets employees document and discuss their performance with their manager.
 author: twheeloc
-ms.date: 05/08/2024
+ms.date: 08/25/2025
 ms.topic: overview
 
 

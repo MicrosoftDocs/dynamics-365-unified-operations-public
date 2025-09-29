@@ -3,11 +3,12 @@ title: Log and view successful API posts
 description: Learn how to set up and use the inventory log history feature for Inventory Visibility. This feature creates a log of successfully updated inventory API posts.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: how-to
-ms.date: 11/20/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Log and view successful API posts
@@ -33,7 +34,7 @@ After the feature is enabled, you can view the log entries either by using the I
 Follow these steps to view the log by using the Inventory Visibility app in Power Apps.
 
 1. Sign in to Power Apps, and go to **Inventory Visibility** \> **Operational visibility** \> **Inventory log history**.
-1. Enter a product ID, organization ID, site ID, warehouse ID, and date range to retrieve and view the log details.
+1. To retrieve and view the log details, enter a product ID, organization ID, site ID, warehouse ID, and date range.
 
 ### Retrieve log entries by calling the API
 
