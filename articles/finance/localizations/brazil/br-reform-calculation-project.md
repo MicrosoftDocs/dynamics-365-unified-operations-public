@@ -1,10 +1,10 @@
 ---
-title: Tax Reform Overview
+title: Tax calculation in projects in Brazil tax reform
 description: The article describes tax calculation in projects in Brazil tax reform solution
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 09/14/2025
+ms.date: 09/29/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
