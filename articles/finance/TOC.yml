@@ -2107,7 +2107,7 @@
                        - name: Brazil tax reform setup 
                          href: localizations/brazil/br-reform-setup.md
                        - name: CST and cClasstrib in Brazil Reformed Tax
-                         href: br-reform-cst&cclasstrib.md
+                         href: br-reform-cst-and-cclasstrib.md
                        - name: Calculation in Sales quotation in Brazil Reformed Tax
                          href: br-reform-calculation-salesquotation.md
                        - name: Calculation in Sales order in Brazil Reformed Tax
