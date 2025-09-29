@@ -109,9 +109,10 @@ For more information about supported countries/regions, contact your tax solutio
 
 - [Vertex](https://go.microsoft.com/fwlink/?linkid=2258342) (available)
 - [Avalara](https://go.microsoft.com/fwlink/?linkid=2258284) (planned)
-- [Wolters Kluwer](https://go.microsoft.com/fwlink/?linkid=2265094) (planned)
+- [Wolters Kluwer](https://go.microsoft.com/fwlink/?linkid=2265094) (available)
 - [Thomson Reuters](https://go.microsoft.com/fwlink/?linkid=2271303) (available)
 
 For additional details on release information, available solutions, and supported countries/regions, we recommend reaching out to your tax solution providers.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
