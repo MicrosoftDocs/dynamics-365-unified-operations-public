@@ -1,13 +1,13 @@
 ---
 title: Business performance analytics FAQ
 description: This article answers some frequently asked questions about Business performance analytics, including questions about signing up for public previews of analytics.
-author: jinniew
-ms.author: jiwo
+author: yashkv1
+ms.author: yvishwa
 ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 06/09/2025
+ms.date: 09/30/2025
 ---
 
 # Business performance analytics FAQ
@@ -84,7 +84,7 @@ Each time Business performance analytics refreshes, your source data are transfo
 
 ## BI entity customization
 
-BI entities cannot be customized. If a BI entity has been modified with a custom view or custom data sources, BPA installation will fail. 
+BI entities can't be customized. If a BI entity has been modified with a custom view or custom data sources, the Business performance analytics installation fails. 
 
 ## Uninstall
 ### How do I uninstall Business performance analytics?
