@@ -2115,8 +2115,7 @@
                        - name: Calculation in Purchase order in Brazil Reformed Tax
                          href: br-reform-calculation-purchasesorder.md
                        - name: Calculation in Project in Brazil Reformed Tax
-                         href: localizations/brazil/br-reform-calculation-project.md
-                         
+                         href: localizations/brazil/br-reform-calculation-project.md                  
                     - name: Fiscal books
                       items:
                         - name: Brazil fiscal books overview
@@ -2320,10 +2319,7 @@
                         - name: Withholding taxes on customer payments
                           href: localizations/brazil/br-00042-withholding-taxes-customers-payments.md
                         - name: Withholding taxes on vendor payments
-                          href: localizations/brazil/br-00061-withholding-taxes-vendors-payments.md
-
-                  
-                         
+                          href: localizations/brazil/br-00061-withholding-taxes-vendors-payments.md          
                 - name: Canada
                   items:
                     - name: GST/HST Internet File Transfer
