@@ -2,10 +2,10 @@
 
 title: Connect Business performance analytics data to Microsoft Fabric
 description: This article explains how to link your Business performance analytics data to Microsoft Fabric.
-author: jinniew
-ms.author: jiwo
+author: yashkv1
+ms.author: yvishwa
 ms.reviewer: twheeloc 
-ms.date: 8/27/2025
+ms.date: 9/30/2025
 ms.topic: how-to
 ms.custom:
 ms.search.form: business-performance-analytics
@@ -103,8 +103,8 @@ This section shows how you can create a custom Power BI dataset that extends the
 
 ### Step 1: Download the Business performance analytics semantic (.pbix)
 
-1. Navigate to the Administration home page within the Business performance analytics app
-2. Click the 'Download' button located in the 'Download semantic model' card
+1. Go to the **Administration** home page within the Business performance analytics app.
+2. On the **Download semantic model** card, click **Download**.
 
 ### Step 2: Open the dataset in Power BI Desktop
 
