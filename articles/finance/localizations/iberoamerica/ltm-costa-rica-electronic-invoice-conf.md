@@ -312,7 +312,7 @@ To configure SSRS reports and services references, follow these steps.
 ## Configure bundled item
 
 Bundle items, composed of sub-items with specific details captured in the transaction, are represented using a bill of materials (BOM) structure.
-Learn more in [bills of materials and formulas](/dynamics365/supply-chain/production-control/bill-of-material-bom.md).
+Learn more in [bills of materials and formulas](/dynamics365/supply-chain/production-control/bill-of-material-bom).
 
 > [!NOTE] 
 > The transactional quantity is defined based on the value in the **From qty.** field within the BOM record's **Header** section. Each transaction references only one BOM.
