@@ -58,12 +58,12 @@ To configure the legal entity, follow these steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**
 1. Select the legal entity that you want to work with.
-1. Complete the address with country, state, and county.            
+1. Complete the address with country/region, state, and county.            
 1. Complete the contact information with the email address and set it to **Primary**.
 1. In the LATAM section complete the **Taxpayer type** with an option that represents organizations.
 1. Complete the **Based in country/region** with **GT**.
-1. Complete the **Country document type** with the option that represents the identification document type used by the organization.
-1. In the LATAM section complete the **Country identification number** field, enter the company ID number with the verification code at the end separated with a middle hyphen (1234567-8).
+1. Complete the **Country/region document type** with the option that represents the identification document type used by the organization.
+1. In the LATAM section complete the **Country/region identification number** field, enter the company ID number with the verification code at the end separated with a middle hyphen (1234567-8).
 
 ### Document classes configuration
 
@@ -87,7 +87,7 @@ To configure the sales point prefix, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Sales point prefix** and for the sales point used for electronic invoicing follow these steps: 
 1. Complete the **Prefix** field with the authorized prefix code for electronic invoicing.
-1. In the field **Report/Service Id** select the **SSRS Reports / Services references** configured for electronic invoicing see [Configure SSRS Reports / Services references](#configure-ssrs-reports-and-services-references) section.
+1. In the field **Report/Service Id** select the **SSRS Reports / Services references** configured for electronic invoicing see [Configure SSRS Reports and Services references](#configure-ssrs-reports-and-services-references) section.
 
 ### Field master lists configurations
 
@@ -186,7 +186,7 @@ In references page, in general tab, click on **source vouchers** go to from the 
 
 Learn more in [Configure electronic document references](ltm-electronic-doc-references.md).
 
-## Configure SSRS Reports / Services references
+## Configure SSRS Reports and Services references
 
 For electronic invoicing you must configure the **SSRS Reports / Services references** following these steps:
 
