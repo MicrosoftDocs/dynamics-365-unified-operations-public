@@ -11,7 +11,10 @@ ms.author: v-ssolveira
 
 # Configure electronic invoice parameters for Guatemala
 
+[!INCLUDE[banner](../../includes/banner.md)]
+
 This article explains how to configure the information that you need to generate the electronic invoice XML for Guatemala.
+
 ## Prerequisites
 
 Before you complete the procedures in this article, make sure that you meet the following prerequisites:
@@ -21,19 +24,19 @@ Before you complete the procedures in this article, make sure that you meet the 
 - Download the specific report configurations from the Dataverse configuration repository for Guatemala Electronic Invoices:
 
 | Element |                    Format name                                           |
-|:-------:|:-------------------------------------------------:                       |   
+| ------- | -------------------------------------------------                        |   
 | Model   | :::no-loc text="Invoice Model LATAM":::                                  |
 | Mapping | :::no-loc text="(Invoice Model LATAM) Invoice Model mapping LATAM":::    |
 | Format  | :::no-loc text="Inventory e-invoice(GT)":::                              |
 | Format  | :::no-loc text="Project e-invoice(GT)":::                                |
 
-For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 - Configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - Configure all the LATAM extensions before continuing with the configuration in this article.
 
 ## Configuration required for Guatemala electronic invoices
 
-The following configurations are required for Guatemala electronic invoices.
+The following configurations are required for Guatemala electronic invoices:
 
 - Configure the tax application
 - Configure the legal entity
@@ -50,7 +53,7 @@ Each configuration is described in the following sections.
 
 ### Tax application configuration
 
-1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax application** and select **New** to create a tax application record that has the code **GTFE** (Guatemala electronic invoice). Use this tax application record to assign the fiscal codification to each element in Microsoft Dynamics 365 Finance as required.
+Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax application** and select **New** to create a tax application record that has the code **GTFE** (Guatemala electronic invoice). Use this tax application record to assign the fiscal codification to each element in Microsoft Dynamics 365 Finance as required.
 
 ### Legal entity configuration
 
@@ -164,7 +167,7 @@ To configure the taxes for each tax and percentage used, follow these steps.
 
 When you issue an electronic document that has an associated document, you must select **References** on the posting page and add the associated document.
 
-To configure electronic document references, follow these steps:
+To configure electronic document references, follow these steps.
 
 1. Go to **organization administration**\>**Setup**\>**LATAM**\>**Electronic document references**
 1. In the Tax application id field, enter the ID that is used for Guatemala electronic invoices.
@@ -188,7 +191,7 @@ Learn more in [Configure electronic document references](ltm-electronic-doc-refe
 
 ## Configure SSRS Reports and Services references
 
-For electronic invoicing, you must configure the **SSRS Reports / Services references** following these steps:
+For electronic invoicing, you must configure the **SSRS Reports / Services references** following these steps.
 
 1. Go to **Organization administration > Setup > LATAM > SSRS Reports / Services references**.
 1. Create a new record.
@@ -200,3 +203,5 @@ For electronic invoicing, you must configure the **SSRS Reports / Services refer
    
 > [!NOTE]
 > This configuration applies to all sales points used for every Invoice, Credit note, and Debit note.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
