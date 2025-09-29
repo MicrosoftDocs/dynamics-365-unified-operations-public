@@ -1,5 +1,5 @@
 ---
-title: Tax Reform Overview
+title: Tax calculation in sales order in Brazil tax reform
 description: The article describes tax calculation in sales order in Brazil tax reform solution
 author: yanansong
 ms.author: yanansong
