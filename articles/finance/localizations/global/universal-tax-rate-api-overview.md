@@ -4,7 +4,7 @@ description: Learn about the overall scope of the Universal Tax Rate API feature
 author: Kai-Cloud
 ms.author: kailiang
 ms.topic: how-to
-ms.date: 03/27/2024
+ms.date: 09/29/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -109,9 +109,11 @@ For more information about supported countries/regions, contact your tax solutio
 
 - [Vertex](https://go.microsoft.com/fwlink/?linkid=2258342) (available)
 - [Avalara](https://go.microsoft.com/fwlink/?linkid=2258284) (planned)
-- [Wolters Kluwer](https://go.microsoft.com/fwlink/?linkid=2265094) (planned)
+- [Wolters Kluwer](https://go.microsoft.com/fwlink/?linkid=2265094) (available)
 - [Thomson Reuters](https://go.microsoft.com/fwlink/?linkid=2271303) (available)
 
 For additional details on release information, available solutions, and supported countries/regions, we recommend reaching out to your tax solution providers.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
+
