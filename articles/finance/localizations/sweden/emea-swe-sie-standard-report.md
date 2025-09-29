@@ -83,7 +83,18 @@ To export financial data using the formats specified by the SIE, follow these st
 | Budget model                            | Select the Budget model from the dropdown list to include budget information in SIE export file. |
 | Type of chart of accounts               | Select one of the options from the list of available options. This value will be reported in `#KPTYP` field of the export file. |
 
-1. Select **OK**. 
-1. Select **OK**. The export is downloaded to your **Downloads** folder.
+3. Select **OK** to generate the report. 
+
+An SIE report for a long time period, such as a quarter or a year, can include a large amount of data and take a long time to be generated. 
+Therefore, we recommend that you use batch jobs. 
+The dialog for the SIE report includes a **Run in the background** tab where you can set up report generation in batch mode. Set the **Batch processing** option to **Yes**. Learn more about batch processing in [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
+
+To review batch jobs or find a generated file, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
+2. Find a line that is related to your job, and then select **Show log**. If nothing is shown, no messages were produced when the file was generated.
+3. To view a file, select **Show files**, find the file that you need, and then select **Open**.
+
+Learn more about how to configure a destination for each ER format configuration and its output component in [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
