@@ -4,7 +4,7 @@ description: The article describes the CST and cClasstrib in Brazilian tax refor
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 09/13/2025
+ms.date: 09/29/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -16,31 +16,31 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes the **CST** and **cClasstrib** in the Brazilian tax reform for 2026.
+This article describes **CST** and **cClasstrib** in the Brazilian tax reform for 2026.
 
 
 ## Overview
-Brazil's tax reform introduces two new tax attributes to support the new tax types: CBS, IBS, and the Selective Tax.
+Brazil's tax reform introduces two new tax attributes to support the new tax types: CBS, IBS, and the selective tax.
 
-- **CST** (Código de Situação Tributária) identifies the specific tax situation of a transaction.
+- **CST** (Código de Situação Tributária) identifies the specific tax situation for a transaction.
 
-For example, it can indicate the applicable rate, an exemption, or a tax type.
+For example, it indicates the applicable rate, an exemption, or a tax type.
 
-- **cClassTrib** (Código de Classificação Tributária) classifies the transaction for tax purposes.
+- **cClassTrib** (Código de Classificação Tributária) categorizes the transaction for tax purposes.
 
-Maintain both attributes to support tax calculation and electronic invoicing compliance required by the reform.
+Maintain both attributes to support tax calculation and ensure compliance with electronic invoicing required by the reform.
 
 ## Form
 This form supports CST and cClassTrib in the legacy tax system.
 
-Go to **Tax -> Setup > Sales tax > cClassTrib** to view the codes published by the government.
+Go to **Tax > Setup > Sales tax > cClassTrib** to view the codes published by the government.
 
 > [!NOTE]
-> Microsoft provides the initial version. You manage later updates.
+> Microsoft provides the initial version, and you manage later updates.
 
 The following table lists the fields and descriptions.
 
-| Field                                                                   | Description                                                                                                                                                                                                       |
+| Field                                                                   | Description                                                                                                                                                                                                      |
 |-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | CST code                                                                | CST code under the Brazilian tax reform that classifies CBS/IBS for the transaction                                                                          |
 | Description                                                             | Description of the tax situation.                                                                                                                                  |
@@ -49,7 +49,7 @@ The following table lists the fields and descriptions.
 | Description CST-IBS/CBS                                                 | Tax situation description 
 | Description cClassTrib                                                  | Description of the tax classification. 
 | LC Writing                                                              | Provision from Brazilian Complementary Law (LC).
-| Suspended                                                              | This checkbox indicates the status of the current record. When selected, the value is marked as inactive. Inactive (suspended) records remain in the system for historical reference but do not appear in dropdown lists. Use this status for records that are no longer valid, temporarily paused, or created in error.
+| Suspended                                                              | This checkbox indicates the status of the current record. When selected, the value is marked as inactive. Inactive (suspended) records remain in the system for historical reference but don't appear in dropdown lists. Use this status for records that are no longer valid, temporarily paused, or created in error.
 
 > [!NOTE]
-> This form does not support record deletion for the moment.
+> This form doesn't support record deletion at the moment.

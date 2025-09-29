@@ -4,7 +4,7 @@ description: The article describes tax calculation in sales quotation in Brazil 
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 09/14/2025
+ms.date: 09/29/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -16,21 +16,21 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes tax calculation in sales quotation in Brazil tax reform solution
+This article describes tax calculation in sales quotations in Brazil tax reform solution.
 
 ## Procedure: Create a sales quotation with Brazilian taxes
 
-You can create a quotation by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a quotation line, you can select a CFOP code in the **CFOP** field. The CFOP codes that are available in this field depend on the fiscal establishment of the site that you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules maintianed in Global studio. 
+Create a quotation by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a quotation line, select a CFOP code in the **CFOP** field. The CFOP codes available in this field depend on the fiscal establishment of the site you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules maintained in Global studio. 
 
-To create a sales quotation that uses Brazilian taxes, follow these steps.
+To create a sales quotation that uses Brazilian taxes, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Sales and marketing -> Sales quotations -> All quotations**.
+1. In Dynamics 365 Finance, go to **Sales and marketing** > **Sales quotations** > **All quotations**.
 1. Select **New**.
 1. In the **Account type** field, select an option.
 1. In the **Customer account** field, enter or select a value.
 1. Select **OK**.
 1. Select **Yes**.
-1. In the Lines or header field, select an option.
+1. In the **Lines or header** field, select an option.
 1. In the **Final user** field, select **Yes** if all lines from the quotation are for a final user. If you select **Yes**, the Imposto Sobre Circulação de Mercadorias e Serviços (ICMS) tax includes the Imposto Sobre Produtos Industrializados (IPI) tax and any freight charges.  
 1. In the **Item** field, enter or select a value.
 1. In the **Quantity** field, enter a number.
@@ -53,17 +53,11 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
 1. In the **Reason** field, enter or select a value.
 1. Select the **Print confirmation** checkbox.
 1. Select **OK**.
-1. Close the page.
-
-## Check the tax calculation results
-
-1. Select **sales tax** in **Quotation** tab
-   - The targetd tax codes are displayed. During the transition period
-   - **No posting** is marked for **CBS** and **IBS** to eunsure compliance with the current policy from Brazilian government.
-2. Expand **Line details** section, then select **Setup** tab
-   - Based on the applicability rule settings, the default values for the new tax types (**CBS**,**IBS**) appear in the **Tax group** and **Item tax group** under the **Tax reform** group.
-   - You can change these defaults by setting the **Use override** checkbox to be **YES**, then specifying the desired values in the **Tax group** and **Item tax group** .
-   - During the transition period, you may see targeted groups for both legacy tax types and reformed tax types coexisting under the **Sales tax** group and the **Tax reform** group.
-   
-3. Select **Total** in **Sales quotation** tab
+1. 1. Select **sales tax** in **Quotation** tab.
+   - The targeted tax codes are displayed during the transition period.
+   - **No posting** is marked for **CBS** and **IBS** to ensure compliance with the current policy from Brazilian government.c1. Expand **Line details** section, then select **Setup** tab.
+   - Based on the applicability rule settings, the default values for the new tax types (**CBS**, **IBS**) appear in the **Tax group** and **Item tax group** under the **Tax reform** group.
+   - You can change these defaults by setting the **Use override** checkbox to be **YES**, then specifying the desired values in the **Tax group** and **Item tax group**.
+   - During the transition period, you might see targeted groups for both legacy tax types and reformed tax types coexisting under the **Sales tax** group and the **Tax reform** group.sting1. Select **Total** in **Sales quotation** tab.
+   - You can view the summary by tax type for Brazilian tax.** tab
    - You can view the summary by tax type for Brazilian tax.

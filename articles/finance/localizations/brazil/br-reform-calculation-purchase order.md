@@ -4,7 +4,7 @@ description: The article describes tax calculation in purchase order in Brazil t
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 09/14/2025
+ms.date: 09/29/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -12,21 +12,21 @@ ms.custom:
   - bap-template
 ---
 
-# Tax calculation in purchase order in Brazil tax reform
+# Tax calculation in purchase orders in Brazil tax reform
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes tax calculation in purchase order in Brazil tax reform solution
+This article describes tax calculation in purchase orders in the Brazil tax reform solution.
 
 ## Procedure: Create a sales order with Brazilian taxes
 
-You can create a quotation by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a sales order line, you can select a CFOP code in the **CFOP** field. The CFOP codes that are available in this field depend on the fiscal establishment of the site that you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules in Golobalization studio. 
+You can create a quotation by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a sales order line, you can select a CFOP code in the **CFOP** field. The CFOP codes that are available in this field depend on the fiscal establishment of the site that you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules in Globalization studio. 
 
-The procedure uses the BRMF demo company.
+This procedure uses the BRMF demo company.
 
 To create a sales quotation that uses Brazilian taxes, follow these steps.
 
-1. In Dynamics 365 Finance, go to **Procurement and sourcing -> Purchase orders -> All purchase orders**.
+1. In Dynamics 365 Finance, go to **Procurement and sourcing** > **Purchase orders** > **All purchase orders**.
 1. Select **New**.
 1. In the **Vendor account** field, enter or select a value.
 1. Select **OK**.
@@ -50,25 +50,25 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
 
 ## Check the tax calculation results
 
-1. Select **sales tax** in **Purchase** tab
-   - The targetd tax codes are displayed. 
-   - During the transition period,**No posting** is marked for **CBS** and **IBS** to eunsure compliance with the current policy from Brazilian government.
-2. Select **Financials** button in **Purchase  order lines** section
-   - Select **Sales tax** option
-   - The targetd tax codes are displayed. 
-   - During the transition period,**No posting** is marked for **CBS** and **IBS** to eunsure compliance with the current policy from Brazilian government.
+1. In the **Purchase** tab, select **sales tax**.
+   - The targeted tax codes appear. 
+   - During the transition period, the system marks **No posting** for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
+1. In the **Purchase order lines** section, select **Financials**.
+   - Select the **Sales tax** option.
+   - The targeted tax codes appear. 
+   - During the transition period, the system marks **No posting** for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
    
-2. Expand **Line details** section, then select **Setup** tab
+1. Expand the **Line details** section, then select the **Setup** tab.
    - Based on the applicability rule settings, the default values for the new tax types (**CBS**,**IBS**) appear in the **Tax group** and **Item tax group** under the **Tax reform** group.
-   - You can change these defaults by setting the **Use override** checkbox to be **YES**, then specifying the desired values in the **Tax group** and **Item tax group** .
-   - During the transition period, you may see targeted groups for both legacy tax types and reformed tax types coexisting under the **Sales tax** group and the **Tax reform** group.
+   - You can change these defaults by setting the **Use override** checkbox to **YES**, then specifying the desired values in **Tax group** and **Item tax group**.
+   - During the transition period, you might see targeted groups for both legacy tax types and reformed tax types coexisting under **Sales tax** and **Tax reform**.
    
-3. Select **Purchase order confirmations** journal in **Purchase** tab
-   - Select **Sales tax** button
+1. In the **Purchase** tab, select the **Purchase order confirmations** journal.
+   - Select the **Sales tax** button.
    - You can view the targeted tax codes.  
    
-3. Select **Invoice ** journal in **Invoice** tab after generation.
-   - Select **Posted sales tax** button
+1. After generation, in the **Invoice** tab, select the **Invoice** journal.
+   - Select the **Posted sales tax** button.
    - You can view the targeted tax codes.     
-   - During the transition period,**Prevent posting of ledger accounting entities for sales tax transactions** is marked for **CBS** and **IBS** to eunsure compliance with the current policy from Brazilian government.
-   
+   - During the transition period, the system marks **Prevent posting of ledger accounting entities for sales tax transactions** for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
+
