@@ -13,33 +13,27 @@ ms.search.validFrom: 2021-12-02
 ms.dyn365.ops.version: 10.0.20
 ---
 
-# Withholding tax report for Indonesia (ID-00005)
+# Withholding tax report for Indonesia
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up and generate the PPH withholding tax file that legal entities in Indonesia use to report withholding transactions in the e-Bupot application.
+This article explains how to set up and generate the PPH withholding tax declaration in Excel format that legal entities in Indonesia use to report withholding transactions in the e-Bupot application.
 
-The Indonesia tax authority (DGT) determines that taxable entrepreneurs (PKP) that are registered at KPP Pratama as tax withholders/collectors of income tax (PPh) Article 23 and/or Article 26 must electronically report Income Tax Return Article 23 and 26 by using the e-Bupot application. 
+The Indonesia tax authority (Direktorat Jenderal Pajak, DJP) determines that taxable entrepreneurs (PKP) that are registered at KPP Pratama as tax withholders/collectors of income tax (PPh) Article 23 and/or Article 26 must electronically report Income Tax Return Article 23 and 26 by using the e-Bupot application. 
 
-- **Article 23** – The report includes all withholding transactions from vendors where the country/region code of the primary address is the code for Indonesia.
-- **Article 26** – The report includes all withholding transactions from vendors where the country/region code of the primary address isn't the code for Indonesia.
+- **BPPU** – The report includes all withholding transactions from vendors where the country/region code of the primary address is the code for Indonesia, Article 23/26(4) WHT.
+- **BPNR** – The report includes all withholding transactions from vendors where the country/region code of the primary address isn't the code for Indonesia, Article 26 WHT.
 
 ## Prerequisites
 
 - The primary address of the legal entity must be in Indonesia.
-- In the **Feature management** workspace, the **Global withholding tax** feature must be enabled. For more information about how to enable features, see [Feature management overview.](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)
+- In the **General ledger parameters** > **Withholding tax**, select the **Enable global withholding tax** checlbox.
 
 ### Download Electronic reporting configurations
 
-Generation of an import file is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
+Implementation of the WHT declaration for Indonesia is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
-For production and user acceptance testing (UAT) environments, follow the instructions in [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
-
-To generate the import file, upload the following configurations from the repository:
-
-- **Tax declaration model.version.93.xml** or a later version
-- **Tax declaration model mapping.version.93.153.xml** or a later version
-- **WHT PPh schema import (ID).version.93.14**  or a later version
+In the **Electronic reporting** workspace, import the latest version **WHT PPh schema import (ID)** ER format from the repository. This format is based on the **Tax declaration model** configuration and uses the **Tax declaration model mapping** configuration. Model and model mapping configurations will be automatically imported. Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse).
 
 ## Set up General ledger parameters
 
