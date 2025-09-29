@@ -2108,7 +2108,14 @@
                          href: localizations/brazil/br-reform-setup.md
                        - name: CST and cClasstrib in Brazil Reformed Tax
                          href: br-reform-cst&cclasstrib.md
-                    - name: Fiscal books
+                       - name: Calculation in Sales quotation in Brazil Reformed Tax
+                         href: br-reform-calculation-salesquotation.md
+                       - name: Calculation in Sales order in Brazil Reformed Tax
+                         href: br-reform-calculation-salesorder.md
+                       - name: Calculation in Purchase order in Brazil Reformed Tax
+                         href: br-reform-calculation-purchasesorder.md
+                         
+                      - name: Fiscal books
                       items:
                         - name: Brazil fiscal books overview
                           href: localizations/brazil/latam-bra-fiscal-books.md
