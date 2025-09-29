@@ -6,7 +6,7 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 07/29/2024
+ms.date: 09/29/2025
 ms.custom: 
   - bap-template
 ---
@@ -61,7 +61,7 @@ To make a backward search, follow these steps:
 
 In recall scenarios, manufacturers can find the batch or serial number of specific impacted finished goods and then run a specific, accurate recall that minimizes the loss.
 
-For example, in the electric vehicles industry, manufacturers can use the serial number of a battery that is going out of service to locate the cars that use it. They can then offer recycling and warranty services to the affected customers.
+For example, in the electric vehicles industry, manufacturers can use the serial number of a battery that's going out of service to locate the cars that use it. They can then offer recycling and warranty services to the affected customers.
 
 To make a forward search, follow these steps:
 
@@ -79,42 +79,42 @@ To make a forward search, follow these steps:
 
    :::image type="content" source="media/item-indirectly-consumption.png" alt-text="All consuming items on the 'Table view – where used' tab" lightbox="media/item-indirectly-consumption.png":::
 
-## Find Items
+## Find items
 
-*Find Items* report enables you to locate serial and batch numbers based on activity codes and data collection values. For example, you can search for finished goods received during a specific period or find all finished goods with a specific data collection value within a defined time range.
+The *Find items* report helps you locate serial and batch numbers based on activity codes and data collection values. For example, you can search for finished goods received during a specific period or find all finished goods with a specific data collection value within a defined time range.
 
-To make a Find Items search, follow these steps:
+To make a find-items search, follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Trace** \> **Find items**.
-1. Enter following filters:
+1. Enter values for the following search fields as needed:
 
-    - **Company** – The company associated with the activity being searched.
-    - **Item** – The item number of the item being searched.
+    - **Company** – The company associated with the activity you're looking for.
+    - **Item** – The item number of the item you're looking for.
     - **Time period** – The time range during which the activity and data collection occurred.
-    - **Filters** – Detailed search filters.
-      - **Activity** – The activity code to filter the search.
-      - **Data Collection** – The data collection field and value to filter the search.
+    - **Filters** – Detailed search filters. You can set one or both of the following filters here:
+        - **Activity** – The activity code you're looking for.
+        - **Data collection** – The data collection field and value you're looking for.
 
-1. Click the Search button to perform a search based on the filter criteria.
-1. The system will return the serial and batch numbers along with detailed information.
+1. Select the **Search** button to search for items that match your search criteria.
+1. The system returns the serial and batch numbers along with detailed information.
 1. You can verify the results in the **Backward search**.
 
-## Monitor failed integration transaction from Dynamics 365 Finance and Operations to Traceability
+## Monitor and fix failed transactions
 
-The **Troubleshooting** report can be used to monitor failed transactions in the out-of-the-box (OOB) integration between Traceability and D365 SCM.
+Use the *Troubleshooting* report to monitor failed transactions related to the out-of-the-box integration between Traceability and Supply Chain Management.
 
-To monitor the failed transaction from Dynamics 365 Finance and Operations in Traceability, follow these steps:
+To monitor failed transactions, follow these steps:
 
 1. [Open the Traceability app](../traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Trace** \> **Failed transaction queue**.
-1. Retrive the failed transaction list. For each row, you can get following information:
+1. A list of failed transactions opens. Each listed transaction shows the following information:
 
     - **Data** – The content of the failed message.
-    - **Error Message** – A description of the reason for the failure.
-    - **Created On** – The UTC timestamp when the record was created.
-    - **Modified On** – The UTC timestamp when the record was last modified.
-      
-1. Select the error message and click Edit in the menu bar. The system will display a screen with detailed information.
-1. Based on the error description, you can either correct the configuration or update the data in the Data field.
-1. After applying the correction, select the message and click Post in the menu bar to resubmit the failed transaction for processing.
+    - **Error message** – A description of the reason for the failure.
+    - **Created on** – The UTC timestamp when the record was created.
+    - **Modified on** – The UTC timestamp when the record was last modified.
+
+1. To learn more about a listed transaction, select it and then select **Edit** on the menu bar. The system displays detailed information.
+1. Based on the error description, you can either correct the configuration or update the data in the **Data** field.
+1. After applying a correction, select the message and then select **Post** on the menu bar to resubmit the failed transaction for processing.
