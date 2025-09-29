@@ -118,7 +118,7 @@ To configure the sales point prefix, follow these steps.
 1. Complete the **Prefix** field with the sales point code.
 1. On the **Tax application** page, in the **Tax application id** field, enter the ID that is used for Costa Rican electronic invoicing.
 1. In the **Tax application code** field, enter the branch or head office code.
-1. In the field **Report/Service Id**, select the **SSRS Reports / Services references** configured for electronic invoicing [Configure SSRS Reports / Services references](#configure-ssrs-reports-/-services-references).
+1. In the field **Report/Service Id**, select the **SSRS Reports / Services references** configured for electronic invoicing [Configure SSRS Reports / Services references](#configure-ssrs-reports--services-references).
 
 ### Configure the field master lists
 
@@ -312,7 +312,7 @@ To configure SSRS reports and services references, follow these steps.
 ## Configure bundled item
 
 Bundle items, composed of sub-items with specific details captured in the transaction, are represented using a bill of materials (BOM) structure.
-Learn more in [bills of materials and formulas](bill-of-material-bom.md).
+Learn more in [bills of materials and formulas](dynamics365/supply-chain/production-control/bill-of-material-bom.md).
 
 > [!NOTE] 
 > The transactional quantity is defined based on the value in the **From qty.** field within the BOM record's **Header** section. Each transaction references only one BOM.
