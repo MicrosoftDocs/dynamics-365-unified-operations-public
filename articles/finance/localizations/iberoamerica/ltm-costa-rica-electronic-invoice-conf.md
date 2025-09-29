@@ -4,7 +4,7 @@ description: Learn how to configure the information required to generate the ele
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: how-to
-ms.date: 10/18/2023
+ms.date: 09/29/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -39,8 +39,8 @@ Before you complete the procedures in this article, make sure the following prer
 | Format  | :::no-loc text="Project e-invoice (CR)":::                            |
 | Format  | :::no-loc text="Project Export e-Invoice (CRI)":::                            |
 
-For more information, see [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
-- Configure the electronic reporting (ER) parameters. For more information, see [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+Learn more in [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+- Configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - Configure all the LATAM extensions before you continue with the configuration in this article.
 
 ## Configuration required for Costa Rica electronic invoices
@@ -59,7 +59,7 @@ These configurations are required for Costa Rican electronic invoices.
 - Set up charges and discounts
 - Set up taxes
 
-Each configuration is described in the sections below.
+Each configuration is described in the sections that follow.
 
 ### Configure the tax application
 
@@ -128,13 +128,13 @@ To configure field master lists, follow these steps.
 1. In the **LIST 9**, configure a document type code for reference according to the Costa Rican normative.
 1. In the **LIST 10**, configure the codes for reference reasons for credit notes, debit notes and purchase invoices according to the Costa Rican normative.
 
-For more information, see [Field list configuration for Latin America](ltm-core-field-master-lists.md).
+Learn more in [Field list configuration for Latin America](ltm-core-field-master-lists.md).
 
 ### Configure the fiscal information
 
 To configure fiscal information, follow these steps.
 
-Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**, and follow these steps for each record in the list:
+1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**, and follow these steps for each record in the list:
 1. Select the record, and then select **Tax application**.
 1. On the **Tax application** page, in the **Tax application id** field, enter the code that is used for Costa Rican electronic invoicing.
 1. In the **Tax application code** field, enter the code for tax IDs according to the Costa Rican normative.
@@ -147,7 +147,7 @@ To configure addresses, follow these steps.
 1. For each record (State, County and City) used in electronic invoicing go to **LATAM** \> **Tax application** to assign the tax application codes according to the Costa Rican normative.
 1. For each record (State, County and City) used in electronic invoicing complete the description field according to the Costa Rican normative.
 
-For more information, see [Address setup for Latin America](ltm-core-address-setup.md).
+Learn more in [Address setup for Latin America](ltm-core-address-setup.md).
 
 ### Other configurations
 
@@ -312,7 +312,7 @@ To configure SSRS reports and services references, follow these steps.
 ## Configure bundled item
 
 Bundle items, composed of sub-items with specific details captured in the transaction, are represented using a bill of materials (BOM) structure.
-For more information, see [bills of materials and formulas](bill-of-material-bom.md).
+Learn more in [bills of materials and formulas](bill-of-material-bom.md).
 
 > [!NOTE] 
 > The transactional quantity is defined based on the value in the **From qty.** field within the BOM record's **Header** section. Each transaction references only one BOM.
@@ -321,7 +321,7 @@ For more information, see [bills of materials and formulas](bill-of-material-bom
 
 The electronic payment receipt is represented by the LATAM extension in customer payment journals.
 
-For more information, see [Use the LATAM extension in customer payment journals](ltm-latam-in-customer-payment.md).
+Learn more in [Use the LATAM extension in customer payment journals](ltm-latam-in-customer-payment.md).
 
 > [!NOTE] 
 > This functionality supports only full customer payments.
