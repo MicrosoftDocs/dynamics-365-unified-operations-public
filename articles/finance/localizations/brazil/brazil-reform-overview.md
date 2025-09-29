@@ -100,6 +100,6 @@ The following list shows the transactions that Advanced tax calculation engine s
 
 Because the new tax reform is part of the advanced tax calculation engine, synchronization between the advanced calculation and the legacy tax system stays consistent with the current behavior.
 
-Learn more in [global-master-data-sync-tax-calculation](../global/global-master-data-sync-tax-calculation-service-finance).
+Learn more in [global-master-data-sync-tax-calculation](../global/global-master-data-sync-tax-calculation-service-finance.md).
 
 
