@@ -20,9 +20,7 @@ This article describes tax calculation in sales quotation in Brazil tax reform s
 
 ## Procedure: Create a sales quotation with Brazilian taxes
 
-You can create a quotation by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a quotation line, you can select a CFOP code in the **CFOP** field. The CFOP codes that are available in this field depend on the fiscal establishment of the site that you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix. 
-
-The procedure uses the BRMF demo company.
+You can create a quotation by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a quotation line, you can select a CFOP code in the **CFOP** field. The CFOP codes that are available in this field depend on the fiscal establishment of the site that you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules maintianed in Global studio. 
 
 To create a sales quotation that uses Brazilian taxes, follow these steps.
 
@@ -33,10 +31,7 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
 1. Select **OK**.
 1. Select **Yes**.
 1. In the Lines or header field, select an option.
-1. Expand the **Fiscal information** section.
 1. In the **Final user** field, select **Yes** if all lines from the quotation are for a final user. If you select **Yes**, the Imposto Sobre Circulação de Mercadorias e Serviços (ICMS) tax includes the Imposto Sobre Produtos Industrializados (IPI) tax and any freight charges.  
-1. In the **Lines or header** field, select an option.
-1. In the list, mark the selected row.
 1. In the **Item** field, enter or select a value.
 1. In the **Quantity** field, enter a number.
 1. In the **Site** field, enter or select a value.
@@ -46,7 +41,6 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
 1. Select the **Setup** tab.
 1. In the **Sales tax group** field, enter or select a value.
 1. In the **Item sales tax group** field, enter or select a value.
-1. Select the **Fiscal information** tab.
 1. Select **Save**.
 1. On the Action Pane, select **Quotation**.
 1. Select **Send quotation**.
