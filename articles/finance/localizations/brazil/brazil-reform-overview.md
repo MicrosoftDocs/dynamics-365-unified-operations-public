@@ -1,6 +1,6 @@
 ---
 title: Tax Reform Overview
-description: The article provides the high-level introduction to the Brazil tax reform since 2026
+description: Learn how the Advanced Tax Calculation engine supports new tax types in the Brazil tax reform effective in 2026
 author: yanansong
 ms.author: yanansong
 ms.topic: overview
@@ -16,9 +16,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article introduces the Brazil tax reform solution effective in 2026.
-
-It explains how the Advanced Tax Calculation engine supports new tax types and functionality while legacy components remain unchanged during the transition period.
+This article provides and overview of the Brazil tax reform solution effective in 2026. It explains how the Advanced Tax Calculation engine supports new tax types and functionality while legacy components remain unchanged during the transition period.
 
 This solution aligns with the timeline and requirements defined by the Brazilian government and aligns with Microsoft's current scope.
 
@@ -29,6 +27,9 @@ Learn more about advanced tax calculation in [Tax Calculation overview - Finance
 Learn more about legacy tax in [Brazil tax overview - Finance | Dynamics 365](/dynamics365/finance/localizations/brazil/latam-bra-calculate-taxes).
 
 ## New Brazilian tax types
+
+Brazil now has the following new tax types:
+
 - CBS—contribution on goods and services. Federal: replaces PIS and COFINS (federal contributions).
 - IBS—goods and services tax. States and municipalities: replaces ICMS and ISS.
 - IS—selective tax (sometimes called excise tax or sin tax). Federal: applies to goods or services considered harmful to health or the environment, like alcoholic beverages, sugary drinks, and tobacco products.
@@ -44,6 +45,7 @@ In 2026, low pilot rates for CBS and IBS begin, along with preparatory obligatio
 By 2033, full implementation ends the legacy taxes and puts CBS and IBS fully in place.
 
 ## Versions
+
 Import and set up your Tax Calculation configuration with the version that matches your Microsoft Dynamics 365 Finance or Microsoft Dynamics 365 Supply Chain Management version.
 
 | Finance or Supply Chain Management version | Tax configuration version |
@@ -53,6 +55,7 @@ Import and set up your Tax Calculation configuration with the version that match
 | 10.0.44 <br> Build 10.0.2263.141           | - Tax Data Model: 47                    <br>- Tax Calculation Data Model: 47.73  <br>- FNO Model Mapping: 47.73.44         <br>- Tax Calculation Configuration: 47.73.265 <br>- Tax Calculation Data Model (Brazil): 47.73.18 <br>- FNO Model Mapping (Brazil): 47.73.44.18 <br>- Tax Calculation Configuration (Brazil): 47.73.265.48 |
 
 ## Supported transactions
+
 The following list shows the transactions that the advanced tax calculation engine supports for the Brazil tax reform.
 
 1. General journals
