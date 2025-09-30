@@ -32,7 +32,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 ## Integration with Edicom
 
 > [!NOTE]
-> The integration of the Electronic Invoicing service with the ISV last-mile connector is described based on **Danish electronic invoicing** example. For other countries/regions please refer to the respective section in the [Country/region-specific scenarios implemented via Edicom](#Countries) chapter.
+> The integration of the Electronic Invoicing service with the ISV last-mile connector is described based on **Danish electronic invoicing** example. For other countries/regions please refer to the respective section in the [Country/region-specific scenarios implemented via Edicom](#Countries/regions) chapter.
 
 You can configure and use the Electronic Invoicing service ISV last-mile connector's integration with the Global e-Invoicing Platform that [Edicom](https://edicomgroup.com/electronic-invoicing) provides. For more information refer to: [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/edicom-microsoft?365).
 
@@ -143,7 +143,7 @@ The name of this variable must be used as the name of the import source for the 
 ![Screenshot that shows the ResponseXml import source on the Electronic document parameters page.](../media/isv_connector_import_channel.jpg)
 
 
-### <a id="Countries"></a>Country/region-specific scenarios implemented via Edicom
+### <a id="Countries/regions"></a>Country/region-specific scenarios implemented via Edicom
 
 ### Electronic invoicing in Belgium
 
