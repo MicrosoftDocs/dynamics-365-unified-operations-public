@@ -1,14 +1,10 @@
 ---
 title: Tax calculation in projects in Brazil tax reform
-description: The article describes tax calculation in projects in Brazil tax reform solution
+description: The article describes tax calculation in projects using the Brazil tax reform solution
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-<<<<<<< HEAD:articles/finance/localizations/brazil/br-reform-calculation-project.md
 ms.date: 09/30/2025
-=======
-ms.date: 09/29/2025
->>>>>>> 431829cd3f4ae856ae08491e3f5e83baf06aec4e:articles/finance/localizations/brazil/brazil-reform-calculation-project.md
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -49,31 +45,29 @@ To create a project that uses Brazilian taxes, follow these steps.
 
 ## Check the tax calculation results
 
-1. Select **Project invoice proposals** in the **Manage** tab.
-   - Select the **Sales tax** button.
-   - The targeted tax codes are displayed. 
-   - During the transition period, **No posting** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
+To check the tax calculation results, follow these steps.
 
-1. Select **Project invoice proposals** in **Manage** tab
-   - Select the record, and then select the **Invoice proposal** field.
-   - Expand **Invoice proposal transactions**.
+1. Select **Project invoice proposals** in the **Manage** tab, and then select **Sales tax**.
+   - The targeted tax codes display. 
+   - During the transition period, **No posting** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
+1. Select **Project invoice proposals** in **Manage** tab.
+1. Select the record, and then select the **Invoice proposal** field.
+1. Expand **Invoice proposal transactions**.
    - Scroll to the right to view **Use override for tax reform**, **Item tax group for tax reform**, and **Tax group for tax reform**.
    - Based on the applicability rule settings, the default values for the new tax types (**CBS**, **IBS**) appear in the **Tax group** and **Item tax group** under the **Tax reform** group.
    - Change these defaults by setting the **Use override** checkbox to **YES**, and then specify the desired values in the **Tax group** and **Item tax group**.
-    
-1. Select **Project invoice proposals** in **Manage** tab
-   - Select the record, and then select the **Invoice proposal** field.
-   - Select the **Sales tax** button
+1. Select **Project invoice proposals** in **Manage** tab.
+1. Select the record, and then select the **Invoice proposal** field.
+1. Select **Sales tax**.
    - The targeted tax codes are displayed. 
    - During the transition period,**No posting** is marked for **CBS** and **IBS** to ensure compliance with the current policy from Brazilian government.
- 
 1. Select **Invoice journals** in the **Manage** tab.
-   - Select the **Sales tax** button.
-   - View the targeted tax codes.
-   
+1. Select **Sales tax**.
+   - View the targeted tax codes. 
 1. Select **Invoice** journal in the **Invoice** tab after generation.
-   - Select the **Posted sales tax** button.
+1. Select **Posted sales tax**.
    - View the targeted tax codes.
    - During the transition period, **Prevent posting of ledger accounting entities for sales tax transactions** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
    - During the transition period, **Prevent posting of ledger accounting entities for sales tax transactions** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
    
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
