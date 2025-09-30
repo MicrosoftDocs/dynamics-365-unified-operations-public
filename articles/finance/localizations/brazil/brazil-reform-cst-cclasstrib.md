@@ -1,6 +1,6 @@
 ---
 title: CST and cClasstrib in Brazil Reformed Tax 
-description: The article describes the CST and cClasstrib in Brazilian tax reform within scope of 2026
+description: Learn about **CST** and **cClasstrib** in the Brazilian tax reform for 2026
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
