@@ -1,5 +1,5 @@
 ---
-title: Tax calculation in projects in Brazil tax reform
+title: Use tax calculation in projects in Brazil tax reform
 description: The article describes tax calculation in projects using the Brazil tax reform solution
 author: yanansong
 ms.author: yanansong
@@ -12,13 +12,13 @@ ms.custom:
   - bap-template
 ---
 
-# Tax calculation in projects in Brazil tax reform
+# Use tax calculation in projects in Brazil tax reform
 
 [!include [banner](../../includes/banner.md)]
 
 This article describes how to calculate taxes in projects using the Brazil tax reform solution.
 
-## Procedure: create a project with Brazilian taxes
+## Create a project with Brazilian taxes
 
 You can create a project by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a sales order line, you can select a CFOP code in the **CFOP** field. The CFOP codes that are available in this field depend on the fiscal establishment of the site that you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules in Globalization studio. 
 
