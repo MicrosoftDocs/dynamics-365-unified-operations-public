@@ -27,11 +27,12 @@ BPM is compatible with the following products:
 - **Microsoft Visio** – You can export business process maps to Visio files.
 
 > [!NOTE]
-> The information in this article is specific only to finance and operations apps. For information about Business process modeler and Microsoft Dynamics AX 2012, see [Business process modeler (BPM) in Lifecycle Services (LCS)](/dynamicsax-2012/appuser-itpro/business-process-modeler-lcs). 
+> The information in this article is specific only to finance and operations apps. For information about Business process modeler and Microsoft Dynamics AX 2012, see [Business process modeler (BPM) in Lifecycle Services (LCS)](/dynamicsax-2012/appuser-itpro/business-process-modeler-lcs).
 
 ## Prerequisites
 
-To effectively use BPM, you must have Microsoft Office 2010 and a Microsoft Azure DevOps project.
+* To effectively use BPM, you must have Microsoft Office 2010 and a Microsoft Azure DevOps project.
+* Starting in January 2026, Task Recordings can only be created, edited, or used in Sandbox and Production environments.  Cloud-hosted environments will no longer have this capability.
 
 ## Getting started
 
