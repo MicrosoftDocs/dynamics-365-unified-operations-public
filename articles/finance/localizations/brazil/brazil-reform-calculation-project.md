@@ -1,6 +1,6 @@
 ---
 title: Use tax calculation in projects in Brazil tax reform
-description: The article describes tax calculation in projects using the Brazil tax reform solution
+description: Learn how to calculate taxes in projects using the Brazil tax reform solution
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
