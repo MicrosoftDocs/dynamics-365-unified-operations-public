@@ -51,3 +51,5 @@ The following table lists the fields and descriptions.
 > [!NOTE]
 > This form doesn't support deleting records at the moment.
 > This form doesn't support deleting records at the moment.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
