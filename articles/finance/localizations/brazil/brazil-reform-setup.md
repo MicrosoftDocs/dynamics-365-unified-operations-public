@@ -70,8 +70,8 @@ Configuration files for e-invoicing:
 - NF-e submit export format
 
 ## Import the configuration files for tax calculation and e-invoicing
-
-### For tax calculation
+Once you’ve downloaded the files, upload the configuration files into the system.
+### Import the configuration files for tax calculation
 
 To import tax calculation configuration files, follow these steps.
 
@@ -103,7 +103,7 @@ To import tax calculation configuration files, follow these steps.
 > 1. Select **Synchronize**.
 > 1. Return to the previous steps to continue.
     
-### For e-invoicing
+### Import the configuration files For e-invoicing
 
 To import e-invoicing configuration files, follow these steps.
 
@@ -129,19 +129,15 @@ To import e-invoicing configuration files, follow these steps.
 
 To create the tax calculation feature, follow these steps.
 
-### Create the feature
-
-To create the feature, follow these steps.
-
 1. Go to **Workspace** \> **Globalization Studio**.
 1. Select **Tax calculation**.
 1. On the **Tax calculation feature** form, select **Add**.
 1. Select **New feature**, enter a **Name** and **Description**, and then select **Default** under **Type**.
 1. Select **Create feature**.
 
-### Configure ????
+### Configure the created feature
 
-To configure ????, follow these steps.
+To configure the created feature, follow these steps.
 
 1. After you create the feature, on the right side of the page, select the **Versions** tab.
 1. Select the version with status **Draft**, and then select **Edit** to configure the feature.
@@ -153,7 +149,7 @@ To configure ????, follow these steps.
 1. Select **Tax Calculation Configuration (Brazil)** with the version that matches your Finance and Operations version.
 
 > [!NOTE]
-> For version mapping information, see **Brazil tax reform overview**.
+> For version mapping information, see **Brazil tax reform overview**. [Brazil reform overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/JennySong-SH-patch-3/articles/finance/localizations/brazil/brazil-reform-overview.md)
 
 ## Enable lookups in applicability rules
 
