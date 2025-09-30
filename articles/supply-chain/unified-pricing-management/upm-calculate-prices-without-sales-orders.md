@@ -169,24 +169,25 @@ CrtPriceAndDiscountCalculationParameters calculationParameters = new CrtPriceAnd
 CurrencyCode transactionCurrency = 'USD';
 // Calculate price
 PricingEngine::CalculatePricesForTransaction(
-crtSalesTransaction,
-gupPricingManager,
-currencyAndRoundingHelper,
-custTable.PriceGroup,
-transactionCurrency,
-dateTimeOffset);
+    crtSalesTransaction,
+    gupPricingManager,
+    currencyAndRoundingHelper,
+    custTable.PriceGroup,
+    transactionCurrency,
+    dateTimeOffset);
+
 // Calculate discount
 PricingEngine::CalculateDiscountsForLines(
-gupPricingManager,
-crtSalesTransaction,
-currencyAndRoundingHelper,
-transactionCurrency,
-custTable.LineDisc,
-custTable.MultiLineDisc,
-custTable.EndDisc,
-false, // calculateSimpleDiscountOnly
-dateTimeOffset,
-calculationParameters);
+    gupPricingManager,
+    crtSalesTransaction,
+    currencyAndRoundingHelper,
+    transactionCurrency,
+    custTable.LineDisc,
+    custTable.MultiLineDisc,
+    custTable.EndDisc,
+    false, // calculateSimpleDiscountOnly
+    dateTimeOffset,
+    calculationParameters);
 ```
 
 ## Step 6: Retrieve and display results
