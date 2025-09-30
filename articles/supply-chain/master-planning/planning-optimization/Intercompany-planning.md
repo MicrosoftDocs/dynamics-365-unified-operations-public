@@ -3,11 +3,12 @@ title: Intercompany planning
 description: Learn about intercompany planning and explains how to configure intercompany planning in Microsoft Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 12/02/2020
-ms.custom: 
-ms.reviewer: kamaybac 
+ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
+ms.topic: how-to
+ms.date: 09/30/2025
+ms.custom:
+  - bap-template
 ---
 
 # Intercompany planning
@@ -49,7 +50,7 @@ Follow these steps to configure your master plan so that it includes planned dow
 
 ## Peg across companies by using multilevel pegging
 
-In multilevel pegging, you can view pegging across companies to see the initial source of demand that is being covered by a supply.
+In multilevel pegging, you can view pegging across companies to see the initial source of demand that's being covered by a supply.
 
 To view multilevel pegging information, follow these steps.
 
