@@ -242,3 +242,5 @@ Follow these steps to enable the feature:
 > **Ledger posting groups**: For more information, see [Set up Ledger posting groups for sales tax - Finance | Dynamics 365 | Microsoft Learn](/dynamics365/finance/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax).
 > 
 > **Settlement periods**: For more information, see [Set up sales tax settlement periods - Finance | Dynamics 365 | Microsoft Learn](/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-settlement-periods).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
