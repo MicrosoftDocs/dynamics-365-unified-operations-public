@@ -2,7 +2,7 @@
 title: Prepare for go-live
 description: Learn about how to prepare for the go-live for finance and operations apps, including a table that lists the key steps in the go-live process.
 author: alejandra-cabrales
-ms.date: 10/28/2024
+ms.date: 09/30/2025
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -22,7 +22,7 @@ This article provides guidance about how to prepare for the go-live for finance 
 
 To ensure that the production environment is used for live operations, Microsoft provisions the production instance when the solution is ready and after project readiness is validated as part of the Go-live Readiness Review with Microsoft. For more information about the environments in your subscription, see the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
-> [!Note]
+> [!NOTE]
 > Most projects are **required** to use the **FastTrack for Dynamics 365 implementation portal** for their Go-live Readiness Review with Microsoft.
 > If you have a Microsoft FastTrack Solution Architect assigned to your implementation project, reach them before creating a new project to avoid duplicate projects/reviews being created. The Microsoft FastTrack Solution Architect can work with you on the Go-Live review and guides you on the process to follow.
 
@@ -79,7 +79,7 @@ The review might require up to three business days for the initial report, plus 
 
 For most projects, the Go-live Readiness Review is done in the FastTrack for Dynamics 365 implementation portal.
 
-> [!Note]
+> [!NOTE]
 > There are **four exceptions** that don't use the FastTrack for Dynamics 365 implementation portal:
 >1. **GCC, GCC High, and Department of Defense projects** - Projects that are in the **[United States (US) Government Community Cloud (GCC)](../../fin-ops/deployment/us-gcc-deployment.md)** or **US Government Community Cloud High (GCC High)** or **US Department of Defense (DoD)**. - [Download the Go-live checklist](https://aka.ms/d365fogolivechecklist), fill in all necessary details, and send it via email to <d365fogccglr@microsoft.com> to start the Go-Live process. Always include a key stakeholder from the customer and the implementation partner on the email. Microsoft FastTrack reviews the project and follows up.
 >1. **Tenant moves** - For projects that are already live, but planning to move the live solution to a new tenant if the solution is not changing, completing a new Go-live Readiness review is not necessary. Follow the steps described in [Move your production environment to the new tenant](../get-started/move-lcs-implementation-project-tenant.md#move-your-production-environment-to-the-new-tenant) to get the production slot enabled on the new tenant.
@@ -104,7 +104,7 @@ Submitting the Go-live readiness review can be performed by partners and custome
 1. Ensure that the project admin on the project is from the **customer** organization. This user from the customer organization can then add more users and serve as the key participant in the Go-live readiness review. For more information about adding users, see [Admin](/dynamics365/guidance/implementation-portal/manage-projects#admin) section.
 1. Once the project is created, the project team can create and perform the Go-live readiness review in the portal using the guidance in the [Portal Help article](https://experience.dynamics.com/FTimplementationportal/help/help-details-page/?id=a275750e-2ffb-eb11-94ef-0022482594cd&searchtxt=). All users who have registered on portal can access this article. 
 
-  > [!Note]
+  > [!NOTE]
   > If you follow this method, you **don't** need to follow the steps in Option 2. To continue, see the [submit the review](prepare-go-live.md?context=%2Fdynamics365%2Fcontext%2Fcommerce#submit-the-review) section later in this article.
 
 #### Option 2 - Share details with Microsoft to create the Project 
