@@ -102,7 +102,7 @@ Submitting the Go-live readiness review can be performed by partners and custome
 
 1. Create the project in Implementation portal. For more information about creating and joining the project, see [Create or join a project in the Implementation Portal](/dynamics365/guidance/implementation-portal/onboard-project).
 1. Ensure that the project admin on the project is from the **customer** organization. This user from the customer organization can then add more users and serve as the key participant in the Go-live readiness review. For more information about adding users, see [Admin](/dynamics365/guidance/implementation-portal/manage-projects#admin) section.
-1. Once the project is created, the project team can create and perform the Go-live readiness review in the portal using the guidance in the [Portal Help article](https://experience.dynamics.com/FTimplementationportal/help/help-details-page/?id=a275750e-2ffb-eb11-94ef-0022482594cd&searchtxt=). All users who have registered on portal can access this article. 
+1. Once the project is created, the project team can create and perform the Go-live readiness review in the portal using the guidance in the [Portal Help article](https://implementationportal.dynamics.com/). All users who have registered on portal can access this article. 
 
   > [!NOTE]
   > If you follow this method, you **don't** need to follow the steps in Option 2. To continue, see the [submit the review](prepare-go-live.md?context=%2Fdynamics365%2Fcontext%2Fcommerce#submit-the-review) section later in this article.
@@ -124,7 +124,7 @@ Follow the below steps if you have any issues creating the project via the Dynam
 
 1. Microsoft grants the key review participant from the customer organization admin access to the project and confirms that this task is completed by responding to the email.
 1. The admin adds more project team members.
-1. Project team creates the review in the portal by following the guidance in the [Portal Help article](https://experience.dynamics.com/FTimplementationportal/help/help-details-page/?id=a275750e-2ffb-eb11-94ef-0022482594cd&searchtxt=). All users who have registered on portal can access this article. 
+1. Project team creates the review in the portal by following the guidance in the [Portal Help article](https://implementationportal.dynamics.com/). All users who have registered on portal can access this article. 
 
 > [!NOTE]
 > If you encounter any issue with the portal, contact the portal Support team by selecting **Contact us** in the upper-right corner of the portal or sending an email to the [Support team](mailto:ftd365ip-support@microsoft.com). In the email, specify the ID of your project in Lifecycle Services, and provide details that describe the issue.
