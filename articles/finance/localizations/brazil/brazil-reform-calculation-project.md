@@ -26,7 +26,7 @@ This procedure uses the BRMF demo company.
 
 To create a project that uses Brazilian taxes, follow these steps.
 
-1. In Dynamics 365 Finance, go to **Project management and accounting > Projects > All projects**.
+1. In Dynamics 365 Finance, go to **Project management and accounting** \> **Projects** \> **All projects**.
 1. Select **New**.
 1. In the **Project type** field, select an option.
 1. In the **Project name** field, enter values.
