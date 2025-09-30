@@ -2,7 +2,7 @@
 title: Business process modeler (BPM) in Lifecycle Services
 description: Learn about the Business process modeler tool in Lifecycle Services, including prerequisites and a step-by-step process of getting started.
 author: AngelMarshall
-ms.author: tsmarsha
+ms.author: laswenka
 ms.topic: overview
 ms.date: 09/30/2025
 ms.reviewer: johnmichalak
