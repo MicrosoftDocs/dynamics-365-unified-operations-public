@@ -24,9 +24,9 @@ This solution aligns with the timeline and requirements defined by the Brazilian
 
 In 2026, the Advanced Tax Calculation engine supports new tax types and functionality, and legacy tax components remain unchanged during the transition period.
 
-For more information about advanced tax calculation, see [Tax Calculation overview - Finance | Dynamics 365](/dynamics365/finance/localizations/global/global-tax-calcuation-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance).
+Learn more about advanced tax calculation in [Tax Calculation overview - Finance | Dynamics 365](/dynamics365/finance/localizations/global/global-tax-calcuation-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance).
 
-For more information about legacy tax, see [Brazil tax overview - Finance | Dynamics 365](/dynamics365/finance/localizations/brazil/latam-bra-calculate-taxes).
+Learn more about legacy tax in [Brazil tax overview - Finance | Dynamics 365](/dynamics365/finance/localizations/brazil/latam-bra-calculate-taxes).
 
 ## New Brazilian tax types
 - CBS—contribution on goods and services. Federal: replaces PIS and COFINS (federal contributions).
@@ -96,4 +96,4 @@ Because the new tax reform is part of the advanced tax calculation engine, synch
 
 Learn more in [global-master-data-sync-tax-calculation](../global/global-master-data-sync-tax-calculation-service-finance.md).
 
-
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
