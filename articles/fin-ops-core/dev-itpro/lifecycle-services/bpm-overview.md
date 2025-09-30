@@ -1,10 +1,10 @@
 ---
-title: Business process modeler (BPM) in Lifecycle Services (LCS)
-description: Learn about the Business process modeler tool in Lifecycle Services (LCS), including prerequisites and a step-by-step process of getting started.
+title: Business process modeler (BPM) in Lifecycle Services
+description: Learn about the Business process modeler tool in Lifecycle Services, including prerequisites and a step-by-step process of getting started.
 author: AngelMarshall
 ms.author: tsmarsha
 ms.topic: overview
-ms.date: 06/15/2020
+ms.date: 09/30/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer, IT Pro
@@ -14,12 +14,12 @@ ms.search.form:
 ms.dyn365.ops.version: 2012
 ---
 
-# Business process modeler (BPM) in Lifecycle Services (LCS)
+# Business process modeler (BPM) in Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS deprecation](../includes/lcs-deprecation.md)]
+[!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
 
-Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS) is a tool that you can use to create, view, and modify repeatable implementations that are based on business process libraries. BPM helps you align your business processes with industry-standard processes that are described by the [American Productivity &amp; Quality Center (APQC)](https://www.apqc.org/). You can perform fit-gap analysis between your business requirements and the default processes in finance and operations apps. Additionally, you can add new business processes that aren't already defined.
+Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services is a tool that you can use to create, view, and modify repeatable implementations that are based on business process libraries. BPM helps you align your business processes with industry-standard processes that are described by the [American Productivity &amp; Quality Center (APQC)](https://www.apqc.org/). You can perform fit-gap analysis between your business requirements and the default processes in finance and operations apps. Additionally, you can add new business processes that aren't already defined.
 
 BPM is compatible with the following products:
 
@@ -27,7 +27,7 @@ BPM is compatible with the following products:
 - **Microsoft Visio** – You can export business process maps to Visio files.
 
 > [!NOTE]
-> The information in this article is specific only to finance and operations apps. For information about Business process modeler and Microsoft Dynamics AX 2012, see [Business process modeler (BPM) in Lifecycle Services (LCS)](/dynamicsax-2012/appuser-itpro/business-process-modeler-lcs).
+> The information in this article is specific only to finance and operations apps. For information about Business process modeler and Microsoft Dynamics AX 2012, see [Business process modeler (BPM) in Lifecycle Services](/dynamicsax-2012/appuser-itpro/business-process-modeler-lcs).
 
 ## Prerequisites
 
@@ -38,7 +38,7 @@ BPM is compatible with the following products:
 
 Follow these steps to access BPM.
 
-1. Go to [LCS](https://lcs.dynamics.com/).
+1. Go to [Lifecycle Services](https://lcs.dynamics.com/).
 2. Sign in, open a project, and then select the **Business process modeler** from the drop-down menu. The **Business process libraries** page has three sections:
 
     - **Project libraries** – This section contains business processes that a user has created or added.
