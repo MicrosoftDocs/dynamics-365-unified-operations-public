@@ -4,7 +4,7 @@ description: Access links to documentation resources for Sweden, including links
 author: kfend
 ms.author: kfend
 ms.topic: overview
-ms.date: 03/04/2022
+ms.date: 09/30/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Sweden
@@ -27,6 +27,5 @@ This article provides links to documentation resources for Sweden.
 - [Swedish Intrastat](emea-swe-intrastat.md)
 - [EU sales list for Sweden](emea-swe-eu-sales-list.md)
 - [Statistics of vendors payments periods](emea-swe-payment-periods-statistics.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

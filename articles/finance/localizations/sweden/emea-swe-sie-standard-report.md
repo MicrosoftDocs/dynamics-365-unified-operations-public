@@ -4,7 +4,7 @@ description: Learn how to export financial information for auditors in Sweden in
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 07/21/2025
+ms.date: 09/30/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -42,34 +42,34 @@ Import the most recent versions of the configurations. The version description u
 
 ## Prerequisites
 
-Before you export data, you must set up a Standardiserad Räkenskaps Utdrag (SRU) code for each general ledger account. 
+Before you export data, set up a Standardiserad Räkenskaps Utdrag (SRU) code for each general ledger account. 
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Chart of accounts** \> **Accounts** \> **Main accounts**.
-2. For each Main account specify the SRU code in the In **SRU code** field.
+1. For each main account, specify the SRU code in the **SRU code** field.
 
 Enable features in Feature management, following these steps.
 
 1. In Dynamics 365 Finance, go to **Feature management** \> **All**.
-2. In the feature list, find and select the following features:
+1. In the feature list, find and select the following features:
 
     - **\[Sweden\] Standard Import and Export (SIE) modernization in Electronic Reporting** – This feature is available in Finance version **10.0.46**. This feature replaces the legacy 'SIE export format (SE)' format with the new 'Standard Import and Export SIE TXT (SE)' format under the 'Ledger accounting reports' model in Electronic Reporting. This new format enables the export of key financial data, including balances and transactions, in accordance with SIE Types 1 through 4. It supports larger datasets and introduces a redesigned export process that ensures faster generation, reduced system load, and a simplified workflow. By adopting this feature, Swedish entities can efficiently meet statutory reporting obligations while benefiting from a more scalable, performant, and maintainable export solution.
-    - **Performance enhancement for general ledger dimension set balance calculation** – This feature must be enabled if you enable the **\[Sweden\] Standard Import and Export (SIE) modernization in Electronic Reporting** feature. Learn more about the **Performance enhancement for general ledger dimension set balance calculation** feature in [New financial dimension sets](../../general-ledger/financial-dimension-set-new.md)
+    - **Performance enhancement for general ledger dimension set balance calculation** – This feature must be enabled if you enable the **\[Sweden\] Standard Import and Export (SIE) modernization in Electronic Reporting** feature. Learn more about the **Performance enhancement for general ledger dimension set balance calculation** feature in [New financial dimension sets](../../general-ledger/financial-dimension-set-new.md).
 
-3. Select **Enable now**.
+1. Select **Enable now**.
 
 ## Set up ER format in General ledger parameters
 
 To set up the ER format, follow these steps.
 
 1. In Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
-2. On the **General ledger parameters** page, on the **Ledger** tab, in the **Ledger transactions export format** field, select **Standard Import and Export SIE TXT (SE)**.
+1. On the **General ledger parameters** page, on the **Ledger** tab, in the **Ledger transactions export format** field, select **Standard Import and Export SIE TXT (SE)**.
 
 ## Export financial data in SIE format
 
 To export financial data using the formats specified by the SIE, follow these steps.
    
 1. In Dynamics 365 Finance, go to **General ledger** \> **Periodic tasks** \> **SIE export**.
-2. On the **Electronic report parameters** dialog page, specify the report parameters.
+1. On the **Electronic report parameters** dialog page, specify the report parameters.
 
 | Parameter                      | Description |
 |--------------------------------|--------------------|
@@ -79,11 +79,11 @@ To export financial data using the formats specified by the SIE, follow these st
 | Currency                                | Select one of the options provided: Accounting or Reporting currency. |
 | Posting layer                           | Select one or many Posting layers to include data in the SIE export file. |
 | Financial dimension set                 | For Type 3 (Export of object balances), select the Financial dimension set that defines the objects you want to export financial data for.  |
-| Include balances of the previouse year  | Select this checkbox to include optional balances of the previouse year. |
+| Include balances of the previous year  | Select this checkbox to include optional balances of the previous year. |
 | Budget model                            | Select the Budget model from the dropdown list to include budget information in SIE export file. |
-| Type of chart of accounts               | Select one of the options from the list of available options. This value will be reported in `#KPTYP` field of the export file. |
+| Type of chart of accounts               | Select one of the options from the list of available options. This value is reported in `#KPTYP` field of the export file. |
 
-3. Select **OK** to generate the report. 
+1. Select **OK** to generate the report. 
 
 An SIE report for a long time period, such as a quarter or a year, can include a large amount of data and take a long time to be generated. 
 Therefore, we recommend that you use batch jobs. 
@@ -92,8 +92,8 @@ The dialog for the SIE report includes a **Run in the background** tab where you
 To review batch jobs or find a generated file, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
-2. Find a line that is related to your job, and then select **Show log**. If nothing is shown, no messages were produced when the file was generated.
-3. To view a file, select **Show files**, find the file that you need, and then select **Open**.
+1. Find a line that relates to your job, then select **Show log**. If nothing is shown, no messages were produced when the file was generated.
+1. To view a file, select **Show files**, find the file that you need, then select **Open**.
 
 Learn more about how to configure a destination for each ER format configuration and its output component in [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
