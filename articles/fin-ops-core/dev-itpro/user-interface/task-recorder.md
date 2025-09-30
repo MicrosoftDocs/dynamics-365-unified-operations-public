@@ -4,7 +4,7 @@ description: Learn about how to use Task recorder to record business processes, 
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 12/31/2024
+ms.date: 09/30/2025
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 audience: Developer
@@ -25,8 +25,8 @@ ms.custom:
 
 This article describes how to use Task recorder to record business processes.
 
->[!Important]
-> * Starting in January 2026, Task Recordings can only be created, edited, or used in Sandbox and Production environments.  Cloud-hosted environments will no longer have this capability.
+> [!Important]
+> Starting in January 2026, Task Recordings can only be created, edited, or used in Sandbox and Production environments.  Cloud-hosted environments will no longer have this capability.
 
 ## Overview
 
