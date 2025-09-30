@@ -167,6 +167,7 @@ RetailCurrencyOperations currencyAndRoundingHelper = new RetailCurrencyOperation
 System.DateTimeOffset dateTimeOffset = RetailPricingEngineHelper::getSessionDateTimeInChannelTimeZone(0, today());
 CrtPriceAndDiscountCalculationParameters calculationParameters = new CrtPriceAndDiscountCalculationParameters();
 CurrencyCode transactionCurrency = 'USD';
+
 // Calculate price
 PricingEngine::CalculatePricesForTransaction(
     crtSalesTransaction,
