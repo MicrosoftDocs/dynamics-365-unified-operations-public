@@ -62,3 +62,5 @@ To create a sales quotation that uses Brazilian taxes, follow these steps:
    - During the transition period, you might see targeted groups for both legacy tax types and reformed tax types coexisting under the **Sales tax** group and the **Tax reform** group.
 1. Select **Total** in the **Sales quotation** tab.
    - You can view the summary by tax type for Brazilian tax.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
