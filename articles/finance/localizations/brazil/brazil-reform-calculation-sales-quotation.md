@@ -22,7 +22,7 @@ This article describes how to calculate taxes in sales quotations using the Braz
 
 Create a quotation by specifying fiscal information like the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a quotation line, select a CFOP code in the **CFOP** field. The CFOP codes available in this field depend on the fiscal establishment of the site selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules maintained in Global studio. 
 
-To create a sales quotation that uses Brazilian taxes, follow these steps:
+To create a sales quotation that uses Brazilian taxes, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Sales and marketing** > **Sales quotations** > **All quotations**.
 1. Select **New**.
