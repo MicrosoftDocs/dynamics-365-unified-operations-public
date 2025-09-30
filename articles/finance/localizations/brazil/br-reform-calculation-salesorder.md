@@ -4,7 +4,7 @@ description: The article describes tax calculation in sales order in Brazil tax 
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 09/29/2025
+ms.date: 09/30/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -20,9 +20,9 @@ This article describes tax calculation in sales order in Brazil tax reform solut
 
 ## Procedure: Create a sales order with Brazilian taxes
 
-You can create a quotation by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a sales order line, you can select a CFOP code in the **CFOP** field. The CFOP codes that are available in this field depend on the fiscal establishment of the site that you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules in Golobalization studio. 
+You can create a quotation by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a sales order line, you can select a CFOP code in the **CFOP** field. The CFOP codes that are available in this field depend on the fiscal establishment of the site that you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules in Globalization studio. 
 
-The procedure uses the BRMF demo company.
+This procedure uses the BRMF demo company.
 
 To create a sales quotation that uses Brazilian taxes, follow these steps.
 
@@ -54,7 +54,7 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
 1. Select **sales tax** in **Sell** tab
    - The targeted tax codes are displayed. 
    - During the transition period, **No posting** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
-1. Select **Financials** button in **Sales order lines** section
+1. Select **Financials** in **Sales order lines** section
    - Select **Sales tax** option
    - The targeted tax codes are displayed. During the transition period,
    - **No posting** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
@@ -69,7 +69,7 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
    - You can view the targeted tax codes.  
    
 1. Select **Invoice** journal in **Invoice** tab after generation.
-   - Select **Posted sales tax** button
+   - Select **Posted sales tax**.
    - You can view the targeted tax codes.     
    - During the transition period, **Prevent posting of ledger accounting entities for sales tax transactions** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
 

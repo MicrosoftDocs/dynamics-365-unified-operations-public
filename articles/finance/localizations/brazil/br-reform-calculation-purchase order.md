@@ -4,7 +4,7 @@ description: The article describes tax calculation in purchase order in Brazil t
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 09/29/2025
+ms.date: 09/30/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -52,23 +52,20 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
 
 1. In the **Purchase** tab, select **sales tax**.
    - The targeted tax codes appear. 
-   - During the transition period, the system marks **No posting** for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
+   - During the transition period, the system marks **No posting** for **CBS** and **IBS** to comply with the current policy from the Brazilian government.
 1. In the **Purchase order lines** section, select **Financials**.
-   - Select the **Sales tax** option.
+   - Select **Sales tax**.
    - The targeted tax codes appear. 
    - During the transition period, the system marks **No posting** for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
-   
-1. Expand the **Line details** section, then select the **Setup** tab.
-   - Based on the applicability rule settings, the default values for the new tax types (**CBS**,**IBS**) appear in the **Tax group** and **Item tax group** under the **Tax reform** group.
+1. Expand the **Line details** section, and then select the **Setup** tab.
+   - Based on the applicability rule settings, the default values for the new tax types (**CBS**, **IBS**) appear in the **Tax group** and **Item tax group** under the **Tax reform** group.
    - You can change these defaults by setting the **Use override** checkbox to **YES**, then specifying the desired values in **Tax group** and **Item tax group**.
-   - During the transition period, you might see targeted groups for both legacy tax types and reformed tax types coexisting under **Sales tax** and **Tax reform**.
-   
+   - During the transition period, targeted groups for both legacy tax types and reformed tax types might coexist under **Sales tax** and **Tax reform**.   
 1. In the **Purchase** tab, select the **Purchase order confirmations** journal.
-   - Select the **Sales tax** button.
-   - You can view the targeted tax codes.  
-   
+   - Select **Sales tax**.
+   - View the targeted tax codes.  
 1. After generation, in the **Invoice** tab, select the **Invoice** journal.
-   - Select the **Posted sales tax** button.
-   - You can view the targeted tax codes.     
-   - During the transition period, the system marks **Prevent posting of ledger accounting entities for sales tax transactions** for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
+   - Select **Posted sales tax**.
+   - View the targeted tax codes.
+   - During the transition period, the system marks **Prevent posting of ledger accounting entities for sales tax transactions** for **CBS** and **IBS** to comply with the current policy from the Brazilian government.
 
