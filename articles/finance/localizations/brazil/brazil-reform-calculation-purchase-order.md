@@ -26,7 +26,7 @@ This procedure uses the BRMF demo company.
 
 To create a sales quotation that uses Brazilian taxes, follow these steps.
 
-1. In Dynamics 365 Finance, go to **Procurement and sourcing** > **Purchase orders** > **All purchase orders**.
+1. In Dynamics 365 Finance, go to **Procurement and sourcing** \> **Purchase orders** \> **All purchase orders**.
 1. Select **New**.
 1. In the **Vendor account** field, enter or select a value.
 1. Select **OK**.
