@@ -3,7 +3,7 @@ title: Tax Reform Overview
 description: The article provides the high-level introduction to the Brazil tax reform since 2026
 author: yanansong
 ms.author: yanansong
-ms.topic: how-to
+ms.topic: overview
 ms.date: 09/30/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
