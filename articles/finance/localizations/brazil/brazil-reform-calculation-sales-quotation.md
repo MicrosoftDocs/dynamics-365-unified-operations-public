@@ -24,7 +24,7 @@ Create a quotation by specifying fiscal information like the operation type and 
 
 To create a sales quotation that uses Brazilian taxes, follow these steps.
 
-1. In Dynamics 365 Finance, go to **Sales and marketing** > **Sales quotations** > **All quotations**.
+1. In Dynamics 365 Finance, go to **Sales and marketing** \> **Sales quotations** \> **All quotations**.
 1. Select **New**.
 1. In the **Account type** field, select an option.
 1. In the **Customer account** field, enter or select a value.
