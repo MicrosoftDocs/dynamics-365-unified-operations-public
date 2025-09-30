@@ -1,6 +1,6 @@
 ---
-title: Tax calculation in sales quotation in Brazil tax reform
-description: The article describes tax calculation in sales quotation in Brazil tax reform solution
+title: Use tax calculation in sales quotation in Brazil tax reform
+description: Learn how to calculate taxes in sales quotations using the Brazil tax reform solution
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
@@ -12,13 +12,13 @@ ms.custom:
   - bap-template
 ---
 
-# Tax calculation in sales quotation in Brazil tax reform
+# Use tax calculation in sales quotation in Brazil tax reform
 
 [!include [banner](../../includes/banner.md)]
 
 This article describes how to calculate taxes in sales quotations using the Brazil tax reform solution.
 
-## Procedure: Create a sales quotation with Brazilian taxes
+## Create a sales quotation with Brazilian taxes
 
 Create a quotation by specifying fiscal information like the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a quotation line, select a CFOP code in the **CFOP** field. The CFOP codes available in this field depend on the fiscal establishment of the site selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules maintained in Global studio. 
 
