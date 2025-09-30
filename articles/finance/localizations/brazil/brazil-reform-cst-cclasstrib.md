@@ -29,7 +29,7 @@ Maintain both attributes to support tax calculation and ensure compliance with e
 
 This form supports CST and cClassTrib in the legacy tax system.
 
-To open the form, go to **Tax \> Setup \> Sales tax \> cClassTrib** to view the codes published by the government.
+To open the form, go to **Tax** \> **Setup** \> **Sales tax** \> **cClassTrib** to view the codes published by the government.
 
 > [!NOTE]
 > Microsoft provides the initial version, and you manage later updates.
