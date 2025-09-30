@@ -270,7 +270,7 @@ The following criteria are required to define the **AdditionalInformationLookup*
 | 08-TD.01106 | 6 - for Delivery of Certain Port Services for Foreign Sea Transportation Activities | VAT exempted for port services supporting international shipping. |
 | 08-TD.01107 | 7 - for Delivery of Clean Water | VAT exempted for clean water supply, as it's an essential service. |
 | 08-TD.01108 | 8 - Delivery of Certain BKP of a Strategic Nature based on PP 48 of 2020 | VAT exempted on goods declared strategic under GR No. 48/2020. |
-| 08-TD.01109 | 9 - Delivery to Representatives of Foreign Countries and International Agencies and Their Officials | VAT exempted for diplomatic and international agency transactions. |
+| 08-TD.01109 | 9 - Delivery to Representatives of Foreign Countries/Regions and International Agencies and Their Officials | VAT exempted for diplomatic and international agency transactions. |
 | 08-TD.01110 | 10 - Certain BKP and JKP | Specific goods and services are exempt from VAT under applicable rules. |
 
 The following criteria are required to define the **FacilityStampLookup**:
