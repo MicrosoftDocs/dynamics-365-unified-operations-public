@@ -1,5 +1,5 @@
 ---
-title: Tax calculation in sales order in Brazil tax reform
+title: Use tax calculation in sales order in Brazil tax reform
 description: The article describes tax calculation in sales order in Brazil tax reform solution
 author: yanansong
 ms.author: yanansong
@@ -12,13 +12,13 @@ ms.custom:
   - bap-template
 ---
 
-# Tax calculation in sales order in Brazil tax reform
+# Use tax calculation in sales order in Brazil tax reform
 
 [!include [banner](../../includes/banner.md)]
 
 This article describes tax calculation in sales order in Brazil tax reform solution.
 
-## Procedure: Create a sales order with Brazilian taxes
+## Create a sales order with Brazilian taxes
 
 You can create a quotation by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a sales order line, you can select a CFOP code in the **CFOP** field. The CFOP codes that are available in this field depend on the fiscal establishment of the site that you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules in Globalization studio. 
 
@@ -26,7 +26,7 @@ This procedure uses the BRMF demo company.
 
 To create a sales quotation that uses Brazilian taxes, follow these steps.
 
-1. In Dynamics 365 Finance, go to **Sales and marketing -> Sales orders -> All sales orders**.
+1. In Dynamics 365 Finance, go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. Select **New**.
 1. In the **Account type** field, select an option.
 1. In the **Customer account** field, enter or select a value.
@@ -51,25 +51,25 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
 
 ## Check the tax calculation results
 
-1. Select **sales tax** in **Sell** tab
+To check the tax calculation results, follow these steps.
+
+1. Select **sales tax** in **Sell** tab.
    - The targeted tax codes are displayed. 
    - During the transition period, **No posting** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
-1. Select **Financials** in **Sales order lines** section
-   - Select **Sales tax** option
+1. Select **Financials** in **Sales order lines** section.
+1. Select **Sales tax** option.
    - The targeted tax codes are displayed. During the transition period,
    - **No posting** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
-   
-1. Expand **Line details** section, then select **Setup** tab
+1. Expand **Line details** section, then select **Setup** tab.
    - Based on the applicability rule settings, the default values for the new tax types (**CBS**,**IBS**) appear in the **Tax group** and **Item tax group** under the **Tax reform** group.
-   - You can change these defaults by setting the **Use override** checkbox to be **YES**, then specifying the desired values in the **Tax group** and **Item tax group** .
+   - You can change these defaults by setting the **Use override** checkbox to be **YES**, then specifying the desired values in the **Tax group** and **Item tax group**.
    - During the transition period, you might see targeted groups for both legacy tax types and reformed tax types coexisting under the **Sales tax** group and the **Tax reform** group.
-   
-1. Select **Sales order confirmation** journal in **Sell** tab
-   - Select **Sales tax** button
+1. Select **Sales order confirmation** journal in **Sell** tab.
+1. Select **Sales tax** button.
    - You can view the targeted tax codes.  
-   
 1. Select **Invoice** journal in **Invoice** tab after generation.
-   - Select **Posted sales tax**.
+1. Select **Posted sales tax**.
    - You can view the targeted tax codes.     
    - During the transition period, **Prevent posting of ledger accounting entities for sales tax transactions** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
