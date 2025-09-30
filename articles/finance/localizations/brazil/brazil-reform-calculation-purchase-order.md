@@ -1,6 +1,6 @@
 ---
 title: Use tax calculation in purchase orders in Brazil tax reform
-description: The article describes tax calculation in purchase order in Brazil tax reform solution
+description: Learn about tax calculation in purchase orders in the Brazil tax reform solution
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
