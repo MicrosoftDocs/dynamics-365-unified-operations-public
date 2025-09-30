@@ -40,6 +40,10 @@ After you have created a BPM library, you'll need to use Task recorder to create
 If you're using a BPM library that already has all of the necessary task recordings (test cases) attached, you can skip this step. Otherwise, follow the instructions below to create new task recordings.
 
 #### Create and save a new task recording
+
+>[!NOTE]
+> * Starting in January 2026, Task Recordings can only be created, edited, or used in Sandbox and Production environments.  Cloud-hosted environments will no longer have this capability.
+
 1. Open the client and sign in. 
 2. Select the company that you want to use while recording.
 3. Go to **Settings** > **Task recorder**.
@@ -73,6 +77,10 @@ If you have saved your recordings (AXTR files) to disk, follow these steps to up
     ![Upload AXTR 2.](./media/upload_axtr_2.PNG "Upload AXTR 2")
 
 #### Save an existing task recording to BPM
+
+>[!NOTE]
+> * Starting in January 2026, Task Recordings can only be created, edited, or used in Sandbox and Production environments.  Cloud-hosted environments will no longer have this capability.
+
 1. To attach an existing task recording, sign in to the client.
 2. Go to **Settings** > **Task recorder**.
 3. Select **Edit Task Recording** and attach the file by either saving directly to LCS or downloading the AXTR and then uploading to BPM.
