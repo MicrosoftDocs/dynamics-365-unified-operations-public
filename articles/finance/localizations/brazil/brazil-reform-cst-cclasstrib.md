@@ -25,9 +25,9 @@ Brazil's tax reform introduces two new tax attributes to support the new tax typ
 
 Maintain both attributes to support tax calculation and ensure compliance with electronic invoicing required by the reform.
 
-## Form
+## Use the **cClasstrib** Form
 
-This form supports CST and cClassTrib in the legacy tax system.
+This form supports CST and cClassTrib in the core tax system.
 
 To open the form, go to **Tax** \> **Setup** \> **Sales tax** \> **cClassTrib** to view the codes published by the government.
 
