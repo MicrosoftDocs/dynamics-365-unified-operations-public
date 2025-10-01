@@ -4,7 +4,7 @@ description: Learn how to export financial information for auditors in Sweden in
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 10/01/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -18,7 +18,18 @@ ms.search.validFrom: 2016-05-31
 
 This article explains how to export financial information in Microsoft Dynamics 365 Finance in the mandatory standard for exchanging accounting data electronically between different financial systems, SIE (Standard Import/Export) requirement in Sweden.
 
-In Dynamics 365 Finance, you can export financial data using the formats specified by the Standard Import Export Group (SIE), which is an organization in Sweden that develops standard formats.
+> [!NOTE]
+> This topic describes the functionality available in Microsoft Dynamics 365 Finance as of version **10.0.46**, which introduces the **\[Sweden\] Standard Import and Export (SIE) modernization in Electronic Reporting** feature. This feature enables the system to use the **Standard Import and Export SIE TXT (SE)** Electronic Reporting (ER) format, along with the **Standard Import and Export SIE** model and model mapping under the **Ledger accounting reports** model.
+> 
+> When the **\[Sweden\] Standard Import and Export (SIE) modernization in Electronic Reporting** feature is disabled, the system continues to use the legacy  **SIE export format (SE)** ER format and the corresponding **SIE export model** model and model mapping under the **Ledger accounting reports** model are used.
+>
+> The scope of support and the algorithms implemented in the legacy ER configurations differ from those in the new configurations enabled by the **\[Sweden\] Standard Import and Export (SIE) modernization in Electronic Reporting** feature.
+>
+> The legacy ER configurations have been [announced for deprecation](../../get-started/removed-deprecated-features-finance.md#sie-export-format-se-er-format-sie-export-model-for-sweden) and will be removed in a future release:
+> - **SIE export format (SE)** ER format
+> - **SIE export model** model and model mapping under the **Ledger accounting reports** model
+
+As of **version 10.0.46** of Dynamics 365 Finance, you can export financial data using the formats specified by the Standard Import Export Group (SIE), which is an organization in Sweden that develops standard formats.
 
 - **Type 1** - Export of closing balances.
 - **Type 2** - Export of period end balances.
