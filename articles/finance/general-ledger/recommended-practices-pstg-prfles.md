@@ -21,13 +21,13 @@ There are several recommended practices that you should follow when you configur
 
 ## Setting the Do not allow manual entry flag
 
-On the **Main accounts** page, the **Do not allow manual entry** checkbox should be selected for any main account that is used for a posting profile. This setting prevents users from manually posting a journal entry to the main account. Therefore, it helps ensure that the subledger remains in balance with the general ledger and helps make the reconciliation process easier.
+On the **Main accounts** page, select the **Do not allow manual entry** checkbox for any main account that is used for a posting profile. This setting prevents users from manually posting a journal entry to the main account. Therefore, it helps ensure that the subledger remains in balance with the general ledger and helps make the reconciliation process easier.
 
-Use the **Do not all manual entry** parameter to prevent direct posting to this main account through manual entry of the main account, importing of the main account or defaulting of the main account through a process such as **Load ledger transactions**. Instead, the main account must be posted to using accounting rules for master data. For example, the accounts receivable main account must be posted to through a customer, which is defined in the posting profiles, and not directly to the main account itself. 
+Use the **Do not all manual entry** parameter to prevent direct posting through manual entry of the main account, importing of the main account or defaulting of the main account through a process such as **Load ledger transactions**. Instead, the main account must be posted to using accounting rules for master data. For example, the accounts receivable main account must be posted to through a customer, which is defined in the posting profiles, and not directly to the main account itself. 
 
 If adjustments are required to an account that is controlled by the system and automatically posted, you can use one of these approaches:
 
-- Create a secondary main account where the adjustments can be posted. Then use a Total account or a special row on your financial reports to group and sum the accounts together.
+- Create a secondary main account where the adjustments can be posted. Then use a **Total account** or a special row on your financial reports to group and sum the accounts together.
 - Reverse the original transactions in the appropriate subledger, make any required corrections, and then repost the transaction through the same subledger.
 
 ## Changing posting profiles after transactions exist
@@ -40,12 +40,12 @@ If changes are required, use the following guidelines to help ensure the integri
 - Make the changes when no other transactions are occurring in the system.
 - Validate the ledger and reconcile it to subledger before and after you make the changes.
 - Posted transactions aren't updated if you change the posting profile. Carefully consider whether any adjusting entries are required for your change.
-- If you're changing inventory posting profiles, consider how the changes will affect your on-hand inventory and ledger balances. Some changes might require that you bring the inventory to 0 (zero), close the inventory, and then bring the inventory back in after the changes are made.
-- Always test your changes in a non-production environment before you make them in production.
+- If you're changing inventory posting profiles, consider how the changes affect your on-hand inventory and ledger balances. Some changes might require that you bring the inventory to 0 (zero), close the inventory, and then bring the inventory back in after the changes are made.
+- Always test your changes in a nonproduction environment before you make them in production.
 
 ## Using database logging to audit changes to posting profiles
 
-Consider setting up database logging for each posting profile and parameters tables that control posting. Then, if a parameter or profile is changed, you will have a full audit record of what value was changed, who changed it, when it was changed, and what the previous value was. This information can be critical during your reconciliation process, and your auditor might require the supporting documentation.
+Consider setting up database logging for each posting profile and parameters tables that control posting. Then, if a parameter or profile is changed, you'll have a full audit record of what value was changed, who changed it, when it was changed, and what the previous value was. This information can be critical during your reconciliation process, and your auditor might require the supporting documentation.
 
 For more information, see [Configure database logging](../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
 
@@ -89,7 +89,7 @@ Use the following table as a reference for common table names that are related t
 
 ## Changing groups after transactions exist
 
-Use caution when you change groups in master data. If you're using groups to define your posting profiles, any change to a group on a master record can have a negative impact on the ability to reconcile the ledger to the subledger. For example, you can configure the inventory posting profile for sales order revenue so that a different revenue account is used for each item group. If you change the item group that is assigned to an item after transactions exist, the revenue on new transactions will be posted to the updated account. However, any revenue that was posted before the change will remain in the original account.
+Use caution when you change groups in master data. If you're using groups to define your posting profiles, any change to a group on a master record can have a negative impact on the ability to reconcile the ledger to the subledger. For example, you can configure the inventory posting profile for sales order revenue so that a different revenue account is used for each item group. If you change the item group that is assigned to an item after transactions exist, the revenue on new transactions will be posted to the updated account. However, any revenue that was posted before the change remains in the original account.
 
 ## Testing posting profiles
 
@@ -100,7 +100,7 @@ For example, you have two customer posting profiles, each of which has three rec
 **Posting profiles:**
 
 - **GEN** – The general posting profile that has one group for employees, one for customers, and one for intercompany. Each group points to a different Accounts receivable Trade account.
-- **PRE** – The prepayment posting profile that has one record for all prepayments that points to the Customer prepaids accounts.
+- **PRE** – The prepayment posting profile that has one record for all prepayments that points to the Customer prepaid account.
 
 ### Testing scenarios
 
