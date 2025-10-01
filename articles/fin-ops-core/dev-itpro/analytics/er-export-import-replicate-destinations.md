@@ -42,7 +42,7 @@ For more information about data entities in Finance, see [Data entities overview
 2. In the list on the left-hand side, select one or more ER formats.  
 3. On the action pane, select **Replicate** button.  
 4. Choose one or more legal entities to copy destinations into.
-5. (Optional) To also replicate **named destinations** that are used in **Print management** for configurable business documents, select the **Include named destinations** checkbox. For more information about named destinations used in **Print management**, see [Configure print management record-specific ER destinations](../er-named-destinations.md).
+5. (Optional) To also replicate **named destinations** that are used in **Print management** for configurable business documents, select the **Include named destinations** checkbox. For more information about named destinations used in **Print management**, see [Configure print management record-specific ER destinations](er-named-destinations.md).
 6. Confirm to replicate.  
 
 All destinations for the selected formats are copied into the chosen companies, including those using container fields.  
