@@ -4,7 +4,7 @@ description: Learn about recommended practices for configuring posting profiles,
 author: rachel-profitt
 ms.author: kweekley
 ms.topic: article
-ms.date: 12/03/2021
+ms.date: 10/01/2025
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
@@ -22,6 +22,8 @@ There are several recommended practices that you should follow when you configur
 ## Setting the Do not allow manual entry flag
 
 On the **Main accounts** page, the **Do not allow manual entry** checkbox should be selected for any main account that is used for a posting profile. This setting prevents users from manually posting a journal entry to the main account. Therefore, it helps ensure that the subledger remains in balance with the general ledger and helps make the reconciliation process easier.
+
+Use the **Do not all manual entry** parameter to prevent direct posting to this main account through manual entry of the main account, importing of the main account or defaulting of the main account through a process such as **Load ledger transactions**. Instead, the main account must be posted to using accounting rules for master data. For example, the accounts receivable main account must be posted to through a customer, which is defined in the posting profiles, and not directly to the main account itself. 
 
 If adjustments are required to an account that is controlled by the system and automatically posted, you can use one of these approaches:
 
