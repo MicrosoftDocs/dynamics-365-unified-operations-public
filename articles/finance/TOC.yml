@@ -4270,7 +4270,7 @@
                   items:
                     - name: Sweden overview
                       href: localizations/sweden/sweden.md
-                    - name: Export financial information for auditors in Sweden
+                    - name: Export financial information (SIE) in Sweden
                       href: localizations/sweden/emea-swe-sie-standard-report.md
                     - name: Import payment formats
                       href: localizations/sweden/emea-swe-payment-formats-import.md
