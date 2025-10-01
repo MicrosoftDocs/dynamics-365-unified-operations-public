@@ -1729,13 +1729,13 @@
                         - name: Chile
                           items:
                             - name: Get started with Electronic invoicing for Chile
-                              href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
+                              href: localizations/iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
                             - name: Vendor electronic invoice import in Chile
-                              href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
+                              href: localizations/iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
                         - name: Colombia
                           href: localizations/iberoamerica/ltm-colombia-electronic-invoice-configuration.md?context=/dynamics365/context/finance
                         - name: Costa Rica
-                          href: localizations//iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/finance                        
+                          href: localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/finance                        
                         - name: Denmark
                           href: localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/finance
                         - name: Egypt
@@ -1762,6 +1762,8 @@
                               href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                             - name: Simplified electronic invoices in Commerce for Saudi Arabia
                               href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
+                        - name: Singapore (preview)
+                          href: localizations/singapore/apac-singapore-electronic-invoices.md?context=/dynamics365/context/finance
                         - name: Uruguay
                           href: localizations//iberoamerica/ltm-uruguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
                     - name: Electronic Invoicing FAQ
@@ -2384,6 +2386,8 @@
                   items:
                     - name: Colombia overview
                       href: localizations/iberoamerica/colombia.md
+                    - name: Get started with Electronic invoicing for Colombia
+                      href: localizations/iberoamerica/ltm-colombia-electronic-invoice-configuration.md?context=/dynamics365/context/finance
                     - name: Configure sales and purchase invoices for Colombia
                       href: localizations/iberoamerica/ltm-configure-invoices-colombia.md
                     - name: Create customer and vendor records with an address in Colombia
@@ -3816,6 +3820,8 @@
                       href: localizations/iberoamerica/ltm-paraguay-conf-electronic-invoice.md
                     - name: Create customer and vendor records with an address in Paraguay
                       href: localizations/iberoamerica/ltm-create-customer-vendor-paraguay.md
+                    - name: Get started with Electronic invoicing for Paraguay
+                      href: localizations/iberoamerica/ltm-paraguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
                     - name: Set up a legal entity and tax information for Paraguay
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-paraguay.md
                 - name: Peru
@@ -4264,7 +4270,7 @@
                   items:
                     - name: Sweden overview
                       href: localizations/sweden/sweden.md
-                    - name: Export financial information for auditors in Sweden
+                    - name: Export financial information (SIE) in Sweden
                       href: localizations/sweden/emea-swe-sie-standard-report.md
                     - name: Import payment formats
                       href: localizations/sweden/emea-swe-payment-formats-import.md

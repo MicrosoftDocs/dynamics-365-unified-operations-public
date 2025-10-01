@@ -3,29 +3,31 @@ title: Master planning for products with limited shelf life
 description: Learn how to set up and use planning features that take into account the shelf life of perishable products with an outline on using shelf life in master planning.
 author: Henrikan
 ms.author: henrikan
-ms.topic: how-to
-ms.date: 08/10/2022
 ms.reviewer: kamaybac
 ms.search.form: ReqPlanSched, CustTable, EcoResProductDetailsExtended, InventModelGroup
+ms.topic: how-to
+ms.date: 09/30/2025
+ms.custom:
+  - bap-template
 ---
 
 # Master planning for products with limited shelf life
 
 [!include [banner](../../includes/banner.md)]
 
-Shelf life is the amount of time that a product can be stored until it can no longer be used or sold. For products that have a limited shelf life, you will probably use a first-expire, first-out (FEFO) warehouse strategy, which prioritizes the consumption and sale of items based on their remaining shelf life. This warehouse strategy is relevant for food, medicines, and other goods that are characterized by a short storage time. According to FEFO, items in the warehouse are stored like goods on a supermarket shelf: products that have a long shelf life are placed deep into the shelves, so that products that have a shorter remaining shelf life are shipped first.
+Shelf life is the amount of time that a product can be stored until it can no longer be used or sold. For products that have a limited shelf life, you'll probably use a first-expire, first-out (FEFO) warehouse strategy, which prioritizes the consumption and sale of items based on their remaining shelf life. This warehouse strategy is relevant for food, medicines, and other goods that are characterized by a short storage time. According to FEFO, items in the warehouse are stored like goods on a supermarket shelf: products that have a long shelf life are placed deep into the shelves, so that products that have a shorter remaining shelf life are shipped first.
 
 ## Using shelf life in master planning
 
 This section explains how master planning suggests supply for shelf-life items.
 
-When you run a master plan, it generates suggested planned orders (supply) that will fulfill your demand and also minimize delays. If your plan includes items that have limited shelf life, planning calculations become more complex, because the plan must not only minimize delays but also use existing supply before it expires. The plan must try to use supply that is closest to its expiration date before supply that expires later. Therefore, master planning seeks to achieve the following goals, in this order:
+When you run a master plan, it generates suggested planned orders (supply) that will fulfill your demand and also minimize delays. If your plan includes items that have limited shelf life, planning calculations become more complex, because the plan must not only minimize delays but also use existing supply before it expires. The plan must try to use supply that's closest to its expiration date before supply that expires later. Therefore, master planning seeks to achieve the following goals, in this order:
 
 1. Minimize the sum of delays.
 1. Maximize the sum of FEFO supply.
 1. Minimize the replenishment of inventory.
 
-In some cases, there might be a conflict between the first two goals, and a choice must be made: do you want to delay a shipment, or do you want to use supply that expires later instead of supply that expires sooner? To resolve this conflict during master planning, the system prioritizes minimizing delays over using up soon-to-expire supply. In general, this type of conflict occurs when there might be delays and coverage by period. Therefore, we recommend that you use a coverage period that is shorter than the shelf life of an item. Other types of coverage (such as requirement) are unlikely to encounter this type of conflict.
+In some cases, there might be a conflict between the first two goals, and a choice must be made: do you want to delay a shipment, or do you want to use supply that expires later instead of supply that expires sooner? To resolve this conflict during master planning, the system prioritizes minimizing delays over using up soon-to-expire supply. In general, this type of conflict occurs when there might be delays and coverage by period. Therefore, we recommend that you use a coverage period that's shorter than the shelf life of an item. Other types of coverage (such as requirement) are unlikely to encounter this type of conflict.
 
 ## Set up shelf life
 
@@ -62,13 +64,13 @@ Use the following procedure to set up shelf life for a product.
 
     - **Shelf advice period in days** – Specify the period (in days) by which to check a batch of this product to ensure that it's suitable for consumption or resale. The value of this field is added to a batch's *manufacturing date* to determine its *shelf advice date*. You can configure the system to generate quality orders when a batch approaches its shelf advice date.
     - **Shelf life period in days** – Specify the number of days before a batch of this product expires. This value is added to the *date of manufacture* to determine the *expiration date*. The batch is considered unusable after this date.
-    - **Best before period in days** – Specify the period (in days) after which a batch of this product is deemed still sellable but can no longer retain some of its original properties. This value is added to the *date of manufacture* to determine the *best-before date*. You can run reports to identify inventory that is past its best-before date. 
+    - **Best before period in days** – Specify the period (in days) after which a batch of this product is deemed still sellable but can no longer retain some of its original properties. This value is added to the *date of manufacture* to determine the *best-before date*. You can run reports to identify inventory that's past its best-before date.
 
 ### Set a sellable days rule for each customer
 
 *Sellable days* functionality ensures that products from a batch that will soon expire aren't sent to customers. Moreover, it ensures that when products are sent to a customer, an adequate number of sellable days will still remain after delivery.
 
-To use the sellable days functionality, you must define the number of sellable days that applies for each product (or group of products) for each customer. You must manually complete this process, because there is no data entity for it.
+To use the sellable days functionality, you must define the number of sellable days that applies for each product (or group of products) for each customer. You must manually complete this process, because there's no data entity for it.
 
 Use the following procedure to set up sellable days for each product for each customer.
 
@@ -88,7 +90,7 @@ Use the following procedure to set up sellable days for each product for each cu
     - **Sellable days** – Enter the minimum number of days that the customer must have to sell matching products before the batch expires. The sellable days value is based on the requested receipt date (or the confirmed receipt date, if it's defined) for the matching products on the sales order.
     - *(Other product dimensions)* – To further limit the scope of a row, specify other dimension values (such as **Size** and **Color**) as required. To control which dimensions are shown in the grid, select **Display dimensions** on the Action Pane.
 
-### Set up all relevant products so that they are FEFO date controlled
+### Set up all relevant products so that they're FEFO date controlled
 
 For sellable days to work, each relevant item must belong to an item model group where the **FEFO date-controlled** checkbox is selected.
 
@@ -115,7 +117,7 @@ This example shows a basic example of shelf life, where pegging between the supp
 
 The system has the following item and master plan settings:
 
-- **Coverage code (replenishment strategy):** Period 
+- **Coverage code (replenishment strategy):** Period
 - **Coverage period:** 10 days (equal to the shelf life)
 - **Shelf life:** 10 days
 - **Sellable days:** 0 days

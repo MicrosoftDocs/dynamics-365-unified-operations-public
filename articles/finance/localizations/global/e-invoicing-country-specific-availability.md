@@ -28,7 +28,7 @@ The following table shows the Electronic invoicing globalization features that a
 |-------------------|----------------------------|--------------------|
 | Australia | [Electronic invoicing for Australia and New Zealand](../apac/GS-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
 | Austria | Austrian electronic invoices (AT) | Sales invoices and project invoices |
-| Belgium | Belgian electronic invoice (BE) | Sales invoices and project invoices |
+| Belgium | [Belgian electronic invoice (BE)](../belgium/emea-bel-e-invoices.md) | Sales invoices and project invoices |
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chile-elec-invo-conncection.md) | Sales invoices, project invoices, and packing slips |
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chl-vend-e-invoice.md) | Import vendor invoices |
 | Colombia | [Colombia Electronic Invoice (CO)](../iberoamerica/ltm-colombia-electronic-invoice-configuration.md) | Sales invoices and project invoices |
@@ -53,6 +53,7 @@ The following table shows the Electronic invoicing globalization features that a
 | Saudi Arabia | [Saudi Arabian Zatca submission (SA)](../mea/gs-e-invoicing-sa-get-started.md) | Sales invoices and project invoices |
 | Saudi Arabia | [Saudi Arabian Zatca compliance check (SA)](../mea/gs-e-invoicing-sa-onboarding.md) | Onboarding process |
 | Spain | Spanish electronic invoice (ES) | Sales invoices and project invoices |
+| Uruguay | [Uruguay electronic invoice (UY)](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md) | Electronic fiscal receipts (CFE)  |
 | Uruguay | [Uruguay Electronic Invoice (UY)](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md) | Sales invoices, project invoices, and packing slips |
 
 > [!IMPORTANT]
@@ -69,3 +70,4 @@ The following table shows the Electronic invoicing Service globalization feature
 | Brazil | Brazilian NF-e import from e-mail (BR) | Fiscal document model 55 |
 | Mexico | Mexican CFDI Interfactura (MX) | Sales invoices, packing slips, inventory transfers, payment complements, and cancellations |
 | Poland | [Polish electronic invoice (PL)](../poland/gs-e-invoicing-pol-get-started.md) | Sales invoices, project invoices, and advance invoices |
+| Singapore | [Singaporean electronic invoice (SG)](../singapore/apac-singapore-electronic-invoices.md) | Sales invoices and project invoices |

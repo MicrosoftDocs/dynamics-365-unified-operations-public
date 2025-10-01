@@ -1,8 +1,8 @@
 ---
 title: Accounts receivable posting
 description: Learn how postings are configured in Accounts receivable with examples of posting configurations and an outline on posting accounts for methods of payment.
-author: rcarlson
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 04/29/2024
 ms.custom:

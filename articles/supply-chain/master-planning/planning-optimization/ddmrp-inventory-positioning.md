@@ -3,10 +3,12 @@ title: Inventory positioning
 description: Learn about strategic inventory positioning, which involves identifying decoupling points in your supply chain, where you can build up on-hand inventory.
 author: Henrikan
 ms.author: henrikan
-ms.topic: how-to
-ms.date: 06/30/2022
 ms.reviewer: kamaybac
 ms.search.form: ReqGroup, EcoResProductDetailsExtended
+ms.topic: how-to
+ms.date: 09/30/2025
+ms.custom:
+  - bap-template
 ---
 
 # Inventory positioning
@@ -39,7 +41,7 @@ In the pillow example, you might put your first decoupling point at the *foam bi
 - It's difficult to source the materials that are used to make the foam billets, and availability is volatile. Therefore, the *external variability* criterion is met.
 - The foam billets can be cut into many different shapes and sizes to create foam inserts for other products that you manufacture, in addition to the pillow. Therefore, the *inventory leverage and flexibility* criterion is met.
 
-You might then put your next decoupling point at the *fabric kit*, which is pre-cut pillow fabric. You might choose this point because you have only one fabric cutting machine. Therefore, the *critical operation protection* criterion is met.
+You might then put your next decoupling point at the *fabric kit*, which is precut pillow fabric. You might choose this point because you have only one fabric cutting machine. Therefore, the *critical operation protection* criterion is met.
 
 Finally, you might put your last decoupling point at the finished good pillow item. You might choose this point because you have a very low *customer tolerance time* on sales, and because your *sales order visibility horizon* is fairly short. Therefore, you want to ensure that you have the on-hand inventory to meet incoming orders. You can also set a higher price by keeping the lead time this short, which is what the *market potential lead time* criterion refers to.
 
@@ -55,7 +57,7 @@ In the following illustration for the pillow example that was started in the pre
 
 ![Example BOM with lead times.](media/ddmrp-bom-lead-times-example.png "Example BOM with lead times")
 
-However, if you apply the decoupling points that you previously chose, the decoupled items will always be in stock. Therefore, they will have a lead time of 0 (zero). The new lead time for the pillow is now just five days: two days to purchase the thread and three days to produce the pillow. This lead time is known as the *decoupled lead time*.
+However, if you apply the decoupling points that you previously chose, the decoupled items will always be in stock. Therefore, they'll have a lead time of 0 (zero). The new lead time for the pillow is now just five days: two days to purchase the thread and three days to produce the pillow. This lead time is known as the *decoupled lead time*.
 
 ![Example of decoupled lead time.](media/ddmrp-bom-decoupled-lead-time-example.png "Example of decoupled lead time")
 
@@ -67,7 +69,7 @@ The following illustration shows an example of a company that has a distribution
 
 ![Decoupling points based on location in a retail model.](media/ddmrp-retail-decoupl-points-example.png "Decoupling points based on location in a retail model")
 
-You might decide that the transfer time to move a blanket product between the distribution center and the stores violates your *customer tolerance time*, because your customers expect the blanket to be in stock when they visit. In this case, you will set up a decoupling point for the blanket item at each of the three stores. Each store will have different buffer levels, based on its lead times, demand patterns, and so on.
+You might decide that the transfer time to move a blanket product between the distribution center and the stores violates your *customer tolerance time*, because your customers expect the blanket to be in stock when they visit. In this case, you'll set up a decoupling point for the blanket item at each of the three stores. Each store will have different buffer levels, based on its lead times, demand patterns, and so on.
 
 ## Implement inventory positioning in Dynamics 365 Supply Chain Management
 
@@ -92,8 +94,8 @@ Items become decoupling points when they belong to a coverage group that is conf
     - **Average daily usage based on** – Select which time periods the calculation of the average daily usage (ADU) should be based on. Select one of the following values:
 
         - *Past* – Look only at past usage for the number of days that are specified in the **Past period (days)** field. The ADU is calculated as the total demand for an item during the calculation period (in inventory units) divided by the number of days in the calculation period.
-        - *Forward* – Look only at projected future usage (including forecasts) for the number of days that are specified in the **Forward period (days)** field. The ADU is calculated as the total demand for an item during the calculation period (in inventory units) divided by the number of days in the calculation period. 
-        - *Blended* – Look at both the past and future usage. Settings for the **Past period (days)** field, the **Forward period (days)** field, and blending options all apply. 
+        - *Forward* – Look only at projected future usage (including forecasts) for the number of days that are specified in the **Forward period (days)** field. The ADU is calculated as the total demand for an item during the calculation period (in inventory units) divided by the number of days in the calculation period.
+        - *Blended* – Look at both the past and future usage. Settings for the **Past period (days)** field, the **Forward period (days)** field, and blending options all apply.
 
             *Blended ADU* = (\[*Past weighting* × *Past ADU*\] + \[*Forward weighting* × *Forward ADU*\]) ÷ (*Past weighting* + *Forward weighting*)
 
@@ -116,7 +118,7 @@ To set an item as a decoupling point, follow these steps.
 1. While the appropriate record is still selected, select the **General** tab.
 1. Select the **Use specific settings** checkbox.
 1. Set the **Coverage group** field to a coverage group that is set up to create decoupling points (as described in the previous section).
-1. The item is now configured as a decoupling point. Usually, when you use DDMRP, you will also configure settings here that affect buffer sizes and the reorder quantity. However, you can complete that configuration later. For more information about the settings, see [Set up buffers for a decoupling point item](ddmrp-buffer-profile-and-levels.md#set-up-buffers).
+1. The item is now configured as a decoupling point. Usually, when you use DDMRP, you'll also configure settings here that affect buffer sizes and the reorder quantity. However, you can complete that configuration later. For more information about the settings, see [Set up buffers for a decoupling point item](ddmrp-buffer-profile-and-levels.md#set-up-buffers).
 
 > [!NOTE]
 > To plan items that aren't decoupling points, follow the same steps that you follow when standard material requirements planning (MRP) is used.
