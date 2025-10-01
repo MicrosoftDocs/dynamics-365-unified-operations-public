@@ -53,7 +53,6 @@ The following table shows the Electronic invoicing globalization features that a
 | Saudi Arabia | [Saudi Arabian Zatca submission (SA)](../mea/gs-e-invoicing-sa-get-started.md) | Sales invoices and project invoices |
 | Saudi Arabia | [Saudi Arabian Zatca compliance check (SA)](../mea/gs-e-invoicing-sa-onboarding.md) | Onboarding process |
 | Spain | Spanish electronic invoice (ES) | Sales invoices and project invoices |
-| Uruguay | [Uruguay electronic invoice (UY)](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md) | Electronic fiscal receipts (CFE)  |
 | Uruguay | [Uruguay Electronic Invoice (UY)](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md) | Sales invoices, project invoices, and packing slips |
 
 > [!IMPORTANT]

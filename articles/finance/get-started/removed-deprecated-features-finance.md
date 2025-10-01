@@ -7,7 +7,7 @@ ms.topic: article
 ms.custom: 
   - bap-template
   - evergreen
-ms.date: 08/25/2025
+ms.date: 10/01/2025
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.search.region: Global
@@ -29,11 +29,55 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Finance 10.0.46 release
+
+### Esterometro formats in Italy: Customers invoices (IT), Vendor invoices (IT)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Regulatory report abolished. | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By December 31, 2027, the **Customers invoices (IT)** Electronic Reporting (ER) format and its child formats, **Vendor invoices (IT)** ER format and its child formats, **Invoices cancellation (IT)** ER format and **Invoices communication mapping** ER model mapping under the **Invoices Communication Model** won't be supported. |
+
+### Invoice list 2016 (Hungary)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Regulatory report abolished. | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By November 1, 2026, the **Invoice list 2016 (Hungary)** menu item and report dialog, **Invoice list (HU)** ER format and **Invoice list model** ER model won't be supported. |
+
+### SIE export format (SE) ER format, SIE export model for Sweden
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced with **Standard Import and Export SIE TXT (SE)** ER format and **Standard Import and Export SIE** model under the **Ledger accounting reports** model. For more information, see [Export financial information \(SIE\)](../localizations/sweden/emea-swe-sie-standard-report.md). | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By November 1, 2026, the **SIE export format (SE)** ER format and **SIE export model** under the **Ledger accounting reports** model won't be supported. New **Standard Import and Export SIE TXT (SE)** ER format and **Standard Import and Export SIE** model are introduced under the **Ledger accounting reports** model. |
+
+### Italian Fiscal journal in SSRS format
+
+[Italian Fiscal journal in SSRS format](../localizations/italy/emea-ita-fiscal-journal.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced with Fiscal Journal in Electronic Reporting ER format. For more information, see [Fiscal Journal for Italy](../localizations/italy/emea-ita-fiscal-journal-er.md) | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By November 1, 2026, the **Italian Fiscal journal in SSRS format** won't be supported. New **\[Italy\] Fiscal Journal modernization in Electronic Reporting** feature and **Fiscal journal PDF (IT)** ER format is introduced under the **Ledger accounting reports** model. |
+
 ## Features removed or deprecated in the Finance 10.0.43 release
 
 ### Sales tax report for Belgium, Purchase sales tax transactions, Sales tax transactions re sales, Additional sales tax report boxes (design based on reporting codes), and Belgium report layout.
 
-[Reconciliation reports for Belgium](../localizations/belgium/emea-bel-reconciliation-reports.md)
+[INTERVAT tax declaration](../localizations/belgium/emea-bel-intervat-tax-declaration.md)
 
 | &nbsp;  | &nbsp;  |
 |---|---|
