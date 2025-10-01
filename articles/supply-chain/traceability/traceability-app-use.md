@@ -106,7 +106,7 @@ Use the *Troubleshooting* report to monitor failed transactions related to the o
 
 To monitor failed transactions, follow these steps:
 
-1. [Open the Traceability app](../traceability-app-run.md) in Power Apps.
+1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Trace** \> **Failed transaction queue**.
 1. A list of failed transactions opens. Each listed transaction shows the following information:
 
