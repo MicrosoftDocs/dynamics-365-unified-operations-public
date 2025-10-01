@@ -59,6 +59,9 @@ The following are advantages of in-app PDF conversion when the **In-App PDF conv
 > [!NOTE]
 > Only the common system fonts of the Window operating system are used to convert output that contains no embedded fonts.
 
+> [!TIP]
+> When using the **In-App PDF conversion for Configurable Business Documents (CBD)**, you may notice the font in the generated PDFs has a lighter weight compared to the one in Excel templates. This may result in small visual discrepancies between your original template and the final PDF output. Recommendation: Configuration engineers are advised to preview the generated PDF before completing and sharing their configurations.
+
 ## <a name="ConvertToPDF"></a>Use the PDF conversion option
 
 To turn on PDF conversion for a file destination, select the **Convert to PDF** checkbox.
