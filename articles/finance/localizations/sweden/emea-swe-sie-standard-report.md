@@ -25,7 +25,7 @@ This article explains how to export financial information in Microsoft Dynamics 
 >
 > The scope of support and the algorithms implemented in the legacy ER configurations differ from those in the new configurations enabled by the **\[Sweden\] Standard Import and Export (SIE) modernization in Electronic Reporting** feature.
 >
-> The legacy ER configurations have been [announced for deprecation](../../get-started/removed-deprecated-features-finance#sie-export-format-se-er-format-sie-export-model-for-sweden.md) and will be removed in a future release:
+> The legacy ER configurations have been [announced for deprecation](../../get-started/removed-deprecated-features-finance.md#sie-export-format-se-er-format-sie-export-model-for-sweden) and will be removed in a future release:
 > - **SIE export format (SE)** ER format
 > - **SIE export model** model and model mapping under the **Ledger accounting reports** model
 
