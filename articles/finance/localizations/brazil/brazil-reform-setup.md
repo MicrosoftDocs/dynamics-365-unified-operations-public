@@ -70,7 +70,9 @@ Configuration files for e-invoicing:
 - NF-e submit export format
 
 ## Import the configuration files for tax calculation and e-invoicing
-Once you’ve downloaded the files, upload the configuration files into the system.
+
+Once you’ve downloaded the files, import the configuration files into the system.
+
 ### Import the configuration files for tax calculation
 
 To import tax calculation configuration files, follow these steps.
