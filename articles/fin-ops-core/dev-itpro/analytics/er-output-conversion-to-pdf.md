@@ -1,6 +1,6 @@
 ---
-title: Electronic reporting (ER) destinations
-description: Learn about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
+title: Output conversion to PDF using ER destinations
+description: Learn about the Output conversion to PDF using ER destinations.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
