@@ -22,7 +22,7 @@ The reformed tax solution uses the Advanced Tax Calculation engine. To set up an
 
 The following diagram shows the feature setup and enablement process.
 
-:::image type="content" source="../media/brazil_tax_reform_setup.png" alt-text="Screenshot of a diagram showing the Brazil reformed tax setup enablement process.":::
+:::image type="content" source="../media/brazil-tax-reform-setup.png" alt-text="Screenshot of a diagram showing the Brazil reformed tax setup enablement process.":::
 
 ## Enable Brazil reformed tax in feature management
 
