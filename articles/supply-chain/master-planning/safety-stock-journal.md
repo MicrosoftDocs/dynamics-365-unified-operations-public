@@ -3,44 +3,46 @@ title: Use the safety stock journal to update minimum coverage for items
 description: Learn how to use safety stock journal to update safety stock quantity for items by calculating minimum coverage proposals based on historical transactions.
 author: Henrikan
 ms.author: henrikan
-ms.topic: how-to
-ms.date: 10/28/2021
 ms.reviewer: kamaybac
 ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, ReqItemTableSetup, ReqItemTable, EcoResProductDetailsExtended
+ms.topic: how-to
+ms.date: 08/22/2025
+ms.custom:
+  - bap-template
 ---
 
 # Use the safety stock journal to update minimum coverage for items
 
 [!include [banner](../../includes/banner.md)]
 
-Safety stock indicates an additional quantity of an item that is held in inventory to help reduce the risk that the item will go out of stock. Safety stock is used as a buffer in case sales orders come in, but the supplier can't meet the customer's requested ship date.
+Safety stock is an additional quantity of an item held in inventory to reduce the risk of it going out of stock. It acts as a buffer if sales orders arrive and the supplier can't meet the customer's requested ship date.
 
-This article describes how to use the safety stock journal to calculate minimum coverage proposals based on historical transactions and then update the item coverage with the proposals.
+This article explains how to use the safety stock journal to calculate minimum coverage proposals from historical transactions and update item coverage with those proposals.
 
 ## Overview of minimum coverage usage
 
-Safety stock is set up on the **Item coverage** page for each item. Different types of replenishment are represented by different coverage codes. (Learn more in [Safety stock fulfillment for items](safety-stock-replenishment.md).) However, all coverage codes use the value that is set in the **Minimum** field on the **Item coverage** page for each item. There are two major approaches for using the **Minimum** field:
+Safety stock is set up on the **Item coverage** page for each item. Different types of replenishment are represented by different coverage codes. Learn more in [Safety stock fulfillment for items](safety-stock-replenishment.md). All coverage codes use the value set in the **Minimum** field on the **Item coverage** page for each item. There are two major approaches for using the **Minimum** field:
 
 - **Minimum quantity for min/max purposes** – This approach uses the minimum quantity together with min/max logic. It applies when the **Coverage code** field is set to *Min/Max* for the relevant item or coverage group. The **Minimum** quantity represents the average daily usage multiplied by the item's lead time.
 - **Minimum quantity for inventory plan purposes** – This approach uses the minimum quantity to represent an inventory plan in combination with demand forecasts. It applies when the **Coverage code** field is set to *Period* or *Requirement* for the relevant item or coverage group. The **Minimum** quantity represents an inventory plan that reflects the desired customer service level to help reduce stock-outs, partial shipments, and delivery lead times. The minimum quantity reflects a percentage of forecast accuracy for a given item. It doesn't represent a desired inventory position.
 
-The **Minimum** value can be set in three ways:
+You can set the **Minimum** value in three ways:
 
-- Manually on the **Item coverage** page
-- By the Data Management framework (*Item coverage* data entities)
-- By the safety stock calculation that is done by safety stock journals
+- Manually on the **Item coverage** page.
+- By the Data Management framework (*Item coverage* data entities).
+- By the safety stock calculation done by safety stock journals.
 
 ## Calculate minimum coverage based on historical usage
 
-Safety stock journals are used to calculate a proposed minimum quantity based on an item's historical usage, either for min/max purposes or for inventory plan purposes. Historical usage represents all issue transactions during a specified period. These issue transactions include sales order transactions and inventory adjustments. The calculations also identify the impact of the proposed minimum quantity on inventory value and the change in inventory value compared to the current minimum quantities.
+Safety stock journals calculate a proposed minimum quantity based on an item's historical usage, either for min/max or inventory planning purposes. Historical usage represents all issue transactions during a specified period. These issue transactions include sales order transactions and inventory adjustments. The calculations show the impact of the proposed minimum quantity on inventory value and its change compared to current minimum quantities.
 
 Each safety stock journal line represents an item and its coverage dimensions. These journal lines are created and shown on the **Safety stock journal lines** page (**Master planning \> Master planning \> Run \> Safety stock calculation**). The business process for using the safety stock journals to calculate the proposed minimum quantities is described later in this article.
 
-The planner uses a safety stock journal to calculate proposed minimum quantities for selected items, based on historical usage during selected periods. The proposed minimums can be manually overridden as required, and you can review the potential impact of the proposed minimums on inventory value. When the journal is posted, the associated minimum quantities in the item coverage are automatically updated.
+The planner uses a safety stock journal to calculate proposed minimum quantities for selected items based on historical usage during specific periods. The proposed minimums can be manually overridden as required, and you can review the potential impact of the proposed minimums on inventory value. When the journal is posted, the associated minimum quantities in the item coverage are automatically updated.
 
 ### Create a new safety stock journal name
 
-You must create at least one safety stock journal name before you can generate this type of journal. You might typically use several journal names to help separate your safety stock calculations.
+Create at least one safety stock journal name before generating this type of journal. You might typically use several journal names to help separate your safety stock calculations.
 
 1. Go to **Master planning \> Setup \> Safety stock journal names**.
 1. On the Action Pane, select **New**.
@@ -61,12 +63,12 @@ This step creates a journal and automatically adds lines to it. Each line identi
 
 #### Automatically generate journal lines
 
-Journal lines can be automatically generated only if no lines exist for the journal that is currently shown.
+You can automatically generate journal lines only if no lines exist for the current journal.
 
-Follow these steps to automatically generate journal lines.
+Use these steps to automatically generate journal lines.
 
 1. Go to **Master planning \> Master planning \> Run \> Safety stock calculation**.
-1. On the Action Pane, select **New**. A new safety stock journal is created.
+1. On the Action Pane, select **New** to create a new safety stock journal.
 1. On the **Journal header details** FastTab, set the following fields:
 
     - **Name** – Select the safety stock journal name to add the line to.
@@ -75,7 +77,7 @@ Follow these steps to automatically generate journal lines.
 
     The **Journal** field is read-only and shows the ID number of the journal that you're creating and adding lines to.
 
-1. On the **Journal lines** FastTab, select **Create lines** on the toolbar.
+1. On the **Journal lines** FastTab toolbar, select **Create lines**.
 1. In the **Create journal lines for proposed minimum inventory levels** dialog box, set the following fields:
 
     - **From date** – Select the start date of the period that issues should be included in the calculation for.
@@ -98,7 +100,7 @@ You can manually add and/or remove journal lines at any time (either after or in
 
 This step calculates a proposed minimum for each journal line and the line's potential impact on inventory value. (The proposed minimum is shown as the **Calculated minimum quantity** value.) You can do the calculation multiple times, as you require. The calculation updates the **Calculated minimum quantity** value that is shown for all journal lines.
 
-The calculations that are shown won't affect the actual minimum quantity values for each product until you select **Post** on the Action Pane. At that time, the **New minimum quantity** values will be applied to each product.
+The calculations shown don't affect the actual minimum quantity values for each product until you select **Post** on the Action Pane. At that time, the **New minimum quantity** values will be applied to each product.
 
 1. Go to **Master planning \> Master planning \> Run \> Safety stock calculation**.
 1. Open the journal to calculate a proposal for. Alternatively, create a new journal as described earlier in this article.
@@ -108,14 +110,14 @@ The calculations that are shown won't affect the actual minimum quantity values 
     - **Use average issue during lead time** – Select this option to generate **Calculated minimum quantity** values based on the average issue during the specified period. Then, in the **Multiplication factor** field, enter a value to adjust the result by as required. For example, enter *1.0* to use the exact calculated average or *1.1* to add an extra buffer of 10 percent.
     - **Use service level** – Select this option to calculate a proposed minimum based on the desired service level. Then, in the **Service level** field, select your preferred service level.
     - **Lead time margin** – Enter a value to extend the normal lead time by (for example, to allow for administration).
-    - **Use the calculated minimum quantity as the new minimum quantity** – Set this option to *Yes* to automatically copy values from the **Calculated minimum quantity** column to the **New minimum quantity** column for all lines after the calculation is completed. If you set this option to *No*, the **Current minimum quantity** value will be copied to the **New minimum quantity** column for all lines. You will then have to manually edit the **New minimum quantity** values as required.
+    - **Use the calculated minimum quantity as the new minimum quantity** – Set this option to *Yes* to automatically copy values from the **Calculated minimum quantity** column to the **New minimum quantity** column for all lines after the calculation is completed. If you set this option to *No*, the **Current minimum quantity** value will be copied to the **New minimum quantity** column for all lines. You'll then have to manually edit the **New minimum quantity** values as required.
 
 1. On the **Run in the background** FastTab, select whether to run the job in batch mode, and/or set up a recurrent schedule. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
 1. Select **OK**. The results of the calculation are shown in the **Calculated minimum quantity** column on the **Journal lines** FastTab. For now, the values are only proposed values that haven't yet been applied to your products.
 
 ### Update minimum quantity
 
-You can select any line in a safety stock journal and manually override the value of its **New minimum quantity** field.
+Select any line in a safety stock journal to manually override the value of its **New minimum quantity** field.
 
 1. Go to **Master planning \> Master planning \> Run \> Safety stock calculation**.
 1. Open the journal to edit. Alternatively, create a new journal as described earlier.

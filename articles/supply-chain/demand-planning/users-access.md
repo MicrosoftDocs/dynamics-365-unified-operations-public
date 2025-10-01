@@ -4,7 +4,7 @@ description: Learn how to set up users, security roles, and row-level security f
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 02/22/2024
+ms.date: 07/30/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -94,6 +94,7 @@ To set up row-level security, follow these steps:
     - **Name** – Enter a name for the rule.
     - **Description** – Enter a description for the rule.
 1. On the **Conditions** tab or wizard page, set up the logic for which data tables and columns the rule grants access to. Use the buttons to add or remove conditions as needed. The following logic applies.
+    - Each condition line is based on a data table and column, which you select in the **Table** and **Column** fields. The values in the column are compared to the values that you enter in the **Value** field. The **Operator** field determines how the comparison is made. For example, you can select *equals*, *greater than*, or *less than*. There is also a *Select all* operator, which matches all values in the column (in which chase the **Value** field is disabled); learn more in [Using the select all operator](time-fences.md#select-all).
     - If you have more than one condition line, then the lines are combined with an AND operator, which means that users will only have access to data rows where all of the condition lines are true.
     - You can select more than one value in the **Value** field for each condition. These values are combined with an OR operator, which means that the condition line evaluates to true for data rows where any of the values are true.
 1. On the **Users** tab or wizard page, add each user for whom the current row level access rule applies. If you assign the same user to multiple rules, then the user will have access to data rows that are granted by any of the rules (an OR operator is applies across rules).

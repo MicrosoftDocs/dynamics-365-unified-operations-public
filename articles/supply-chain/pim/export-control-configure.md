@@ -13,14 +13,13 @@ ms.search.form: COOExportControlParameters
 # Enable and configure advanced export management
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 ## Prerequisites
 
 Before you can use advanced export management, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.36 or later.
-- The feature that's named *Advanced export management configuration* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.
+- The feature that's named *Advanced export management configuration* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default. As of version 10.0.45, it's mandatory and can't be turned off.
 - Your Supply Chain Management environment must be [linked to a Dataverse environment](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 
 ## Install the export control app

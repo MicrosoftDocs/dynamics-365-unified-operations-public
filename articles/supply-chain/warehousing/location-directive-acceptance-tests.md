@@ -4,7 +4,7 @@ description: Learn how to set up and run automated tests that validate whether y
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
 ms.topic: how-to
-ms.date: 04/24/2024
+ms.date: 09/09/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSLocDirTable, WHSLocationDirectiveAcceptanceTest

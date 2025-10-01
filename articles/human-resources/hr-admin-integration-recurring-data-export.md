@@ -41,7 +41,7 @@ In one typical business scenario for Microsoft Dynamics 365 integrations, data m
 
 This tutorial uses the following technologies:
 
-- **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)** – The master data source for workers that will be exported.
+- **[Dynamics 365 Human Resources](https://www.microsoft.com/dynamics-365/products/human-resources)** – The master data source for workers that will be exported.
 - **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – The technology that provides orchestration and scheduling of the recurring export.
 
     - **[Connectors](/azure/connectors/apis-list)** – The technology that is used to connect the logic app to the required endpoints.

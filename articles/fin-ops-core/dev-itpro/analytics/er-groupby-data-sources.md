@@ -1,31 +1,30 @@
 ---
 title: Group records and aggregate calculations by using GROUPBY data sources
 description: Learn how you can use GROUPBY type data sources in Electronic reporting (ER), including aggregate functions, alternatives, and examples.
-author: kfend
-ms.author: filatovm
+author: egolub
+ms.author: liza-golub
 ms.topic: how-to
-ms.date: 03/18/2022
+ms.date: 08/22/2025
 ms.custom: 
+  - bap-template 
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: ERModelMappingDesigner, EROperationDesigner
 ms.dyn365.ops.version: AX 7.0.0
-ms.assetid: 
 ---
 
 # Group records and aggregate calculations by using GROUPBY data sources
 
 [!include[banner](../includes/banner.md)]
 
-When you configuring [Electronic reporting (ER)](general-electronic-reporting.md) model mappings or formats, you can [add](#AddMmDataSource2) required data sources of the **GroupBy** type.
+When configuring [Electronic reporting (ER)](general-electronic-reporting.md) model mappings or formats, you can [add](#AddMmDataSource2) required data sources of the **GroupBy** type.
 
 At design time, a **GroupBy** data source is configured to identify the following elements:
 
-- A [base data source](#BaseDataSource) that contains records that will be grouped at runtime
-- [Grouping fields](#GroupingFields) of the base data source, which will be used for record grouping at runtime
-- [Aggregate functions](#AggregateFunctions) that specify the aggregate calculations that will be done for each discovered group at runtime
+- A [base data source](#BaseDataSource) that contains records grouped at runtime.
+- [Grouping fields](#GroupingFields) of the base data source that are used for record grouping at runtime.
+- [Aggregate functions](#AggregateFunctions) that specify the aggregate calculations that are done for each discovered group at runtime
 
 At runtime, a configured **GroupBy** data source groups records that have the same values in the grouping fields, and then returns a list of records. Each record represents a single group. For each group, the data source exposes the field values that the initial records were grouped by, the values of the calculated aggregate functions, and the list of records of the base data source that belongs to the group.
 
@@ -33,11 +32,12 @@ At runtime, a configured **GroupBy** data source groups records that have the sa
 
 At runtime, every aggregate calculation is done for each group of records. This calculation is done by using the value of a single field or an expression in the records of a data source that was selected for grouping in the editable data source of the **GroupBy** type. The following aggregate functions are currently supported:
 
-- **AVG** – This function returns the average of the values in a group. It can be used only with numeric fields.
-- **COUNT** – This function returns the number of items that were found in a group.
+- **Avg** – This function returns the average of the values in a group. It can be used only with numeric fields.
+- **Count** – This function returns the number of items that were found in a group.
 - **Min** – This function returns the minimum value among the values in a group.
 - **Max** – This function returns the maximum value among the values in a group.
-- **SUM** – This function returns the sum of all the values in a group. It can be used only with numeric fields.
+- **Sum** – This function returns the sum of all the values in a group. It can be used only with numeric fields.
+- **Any** - This function returns any value in a group. It can be used for any type of fields including Enum. This function is available as of 10.0.46 version of Finance.
 
 ## <a name="ExecutionLocation"></a>Execution location
 
@@ -67,7 +67,7 @@ The procedures in this example can be completed in the **DEMF** company in Micro
 
 ### Prepare sample data
 
-Make sure that you have Intrastat transactions for reporting on the **Intrastat** page. You must have transactions for different transport codes, because you will group transactions by the **Transport** field in this example.
+Make sure that you have Intrastat transactions for reporting on the **Intrastat** page. You must have transactions for different transport codes, because you group transactions by the **Transport** field in this example.
 
 ![Preparing Intrastat transactions on the Intrastat page.](./media/er-groupby-data-sources-prepare-transactions.png)
 
@@ -153,7 +153,7 @@ Follow the steps in [Create a new model mapping configuration](er-quick-start1-n
 Configure a data source to access the application tables that contain the details of Intrastat transactions.
 
 1. On the **Model mapping designer** page, in the **Data source types** pane, select **Dynamics 365 for Operations\\Table records**.
-2. In the **Data sources** pane, select **Add root** to add a new data source that will be used to access the **Intrastat** table. Each record in the **Intrastat** table represents a single Intrastat transaction.
+2. In the **Data sources** pane, select **Add root** to add a new data source that is used to access the **Intrastat** table. Each record in the **Intrastat** table represents a single Intrastat transaction.
 3. In the **Data source properties** dialog box, in the **Name** field, enter **Transaction**.
 4. In the **Table** field, enter **Intrastat**.
 5. Select **OK** to add the new data source.
@@ -163,37 +163,37 @@ Configure a data source to access the application tables that contain the detail
 Configure a **GroupBy** data source to group Intrastat transactions and compute aggregate functions.
 
 1. On the **Model mapping designer** page, in the **Data source types** pane, select **Functions\\Group by**.
-2. In the **Data sources** pane, select **Add root** to add a new data source that will be used to group Intrastat transactions and compute aggregate functions.
+2. In the **Data sources** pane, select **Add root** to add a new data source that is used to group Intrastat transactions and compute aggregate functions.
 3. In the **Data source properties** dialog box, in the **Name** field, enter **TransportRecord**.
 4. Select **Edit group by** to configure grouping conditions.
 5. On the **Edit 'Group By' parameters** page, in the data sources list in the right pane, select the **Transaction** data source, and expand it.
-6. Select **Add field to \> What to group** to indicate that the **Transaction** data source is selected as the <a name="BaseDataSource">base data source</a> for the configured **GroupBy** data source. The records of the **Transaction** data source will be grouped, and the field values of this data source will be used for calculations in aggregate functions.
-7. Select the **Transaction\Transport** field, and then select **Add field to \> Grouped field** to indicate that the **Transport** field of the base data source is selected as the <a name="GroupingFields">grouping criterion</a> for the configured **GroupBy** data source. In other words, the records of the **Transaction** data source will be grouped based on the value of the **Transport** field. Every record of the configured **GroupBy** data source will represent a single transport code that has been found in records of the base data source.
+6. Select **Add field to \> What to group** to indicate that the **Transaction** data source is selected as the <a name="BaseDataSource">base data source</a> for the configured **GroupBy** data source. The records of the **Transaction** data source are grouped, and the field values of this data source is used for calculations in aggregate functions.
+7. Select the **Transaction\Transport** field, and then select **Add field to \> Grouped field** to indicate that the **Transport** field of the base data source is selected as the <a name="GroupingFields">grouping criterion</a> for the configured **GroupBy** data source. In other words, the records of the **Transaction** data source are grouped based on the value of the **Transport** field. Every record of the configured **GroupBy** data source represents a single transport code found in records of the base data source.
 8. Select the **Transaction\AmountMST** field, and then follow these steps:
 
-    1. Select **Add field to \> Aggregate fields** to indicate that an <a name="AggregateFunctions">aggregate function</a> will be calculated for this field.
-    2. In the **Aggregations** pane, in the record that has been added for the selected **Transaction\AmountMST** field, in the **Method** field, select the **Sum** function.
+    1. Select **Add field to \> Aggregate fields** to indicate that an <a name="AggregateFunctions">aggregate function</a> is calculated for this field.
+    2. In the **Aggregations** pane, in the record that was added for the selected **Transaction\AmountMST** field, in the **Method** field, select the **Sum** function.
     3. In the **Name** optional field, enter **TotalInvoicedAmount**.
 
-    These settings specify that, for every transport group, the total amount of the **Transaction\AmountMST** field will be calculated.
+    These settings specify that, for every transport group, the total amount of the **Transaction\AmountMST** field is calculated.
 
 9. Select the **Transaction\RecId** field, and then follow these steps:
 
-    1. Select **Add field to \> Aggregate fields** to indicate that an aggregate function will be calculated for this field.
-    2. In the **Aggregations** pane, in the record that has been added for the selected **Transaction\RecId** field, in the **Method** field, select the **Count** function.
+    1. Select **Add field to \> Aggregate fields** to indicate that an aggregate function is calculated for this field.
+    2. In the **Aggregations** pane, in the record that was added for the selected **Transaction\RecId** field, in the **Method** field, select the **Count** function.
     3. In the **Name** optional field, enter **NumberOfTransactions**.
 
-    These settings specify that, for every transport group, the number of transactions in the group will be calculated.
+    These settings specify that, for every transport group, the number of transactions in the group are calculated.
 
 10. Select **Save**.
-11. Review the <a name="ExecutionLocation">execution</a> parameters of the editable data source. Notice that **Autodetect** has been automatically selected in the **Execution location** field, and the **Execution at** field contains the value **SQL**. These settings specify that the selected **Transaction** base data source is currently queryable, and you can run the editable **GroupBy** data source at database level.
+11. Review the <a name="ExecutionLocation">execution</a> parameters of the editable data source. Notice that **Autodetect** was automatically selected in the **Execution location** field, and the **Execution at** field contains the value **SQL**. These settings specify that the selected **Transaction** base data source is currently queryable, and you can run the editable **GroupBy** data source at database level.
 12. Open the lookup for the **Execution location** field to review the list of available values. Notice that you can select **Query** or **In memory** to force this **GroupBy** data source to be run on the database level or in the application server memory.
 13. Select **Save**, and close the **Edit 'Group By' parameters** page.
 14. Select **OK** to complete the settings of the **GroupBy** data source.
 
 #### <a name="AddMmBindings"></a>Bind the GroupBy data source to data model fields
 
-Bind the configured data source to the fields of the data model to specify how the data model will be filled in with application data at runtime.
+Bind the configured data source to the fields of the data model to specify how the data model is filled in with application data at runtime.
 
 1. On the **Model mapping designer** page, in the **Data model** pane, expand the **Transport** node.
 2. In the **Data sources** pane, expand the **TransportRecord** data source.
@@ -248,7 +248,7 @@ Use the [ER data source debugger](er-debug-data-sources.md) to test the configur
 The **TransportRecord** data source exposes two records and presents two transport codes. For each transport code, the number of transactions and the total invoiced amount are calculated.
 
 > [!NOTE]
-> The "lazy reading" approach is used when a **GroupBy** data source is called to optimize database calls. Therefore, some of the field values in a **GroupBy** data source are calculated in the ER data source debugger only when they are bound to data model fields.
+> The "lazy reading" approach is used when a **GroupBy** data source is called to optimize database calls. Therefore, some of the field values in a **GroupBy** data source are calculated in the ER data source debugger only when they're bound to data model fields.
 
 ![Results of the data source debugging on the Debug datasources page.](./media/er-groupby-data-sources-debug-datasource.png)
 

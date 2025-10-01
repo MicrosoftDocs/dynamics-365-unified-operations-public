@@ -4,7 +4,7 @@ description: Data events are based on changes to data in finance and operations 
 author: jaredha
 ms.author: kamanick
 ms.topic: article
-ms.date: 11/26/2024
+ms.date: 08/13/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -14,6 +14,7 @@ ms.dyn365.ops.version: 10.0.22
 ---
 
 # Data events
+
 [!include[banner](../includes/banner.md)]
 
 Data events are events that are based on changes to data in finance and operations apps. Create, update, and delete (CUD) events can be enabled for each entity. For example, if the **Create** event is enabled for the **Purchase order headers V2** entity, an event notification is emitted every time that a new purchase order is created in the database.
@@ -56,13 +57,13 @@ When data events are no longer required to meet business requirements, you can d
 On the **Data event catalog** tab of the **Business events** page, you're able to see the entity properties that are included in the event schema. These fields are the properties that make up the virtual table on which the data event is based. The information that is shown includes the field name and label.
 
 > [!NOTE]
-> Any datetime properties in the payload of a data event that have a NULL value will be removed from the schema of the event sent to subscribed service endpoints. 
+> Any datetime properties in the payload of a data event that have a NULL value will be removed from the schema of the event sent to subscribed service endpoints.
 
 The **Data event catalog** doesn't provide the same capability for downloading the event schema that is available for business events on the **Business event catalog** tab of the page. If you need the JavaScript Object Notation (JSON) schema for an event, for example when external integration systems require the schema of the payload for a business event during development, you can construct the schema using the field information provided. The [RemoteExecutionContext Class](/dotnet/api/microsoft.xrm.sdk.remoteexecutioncontext) defines the contextual information sent to the configured service endpoint at run-time. The entity fields are included in the schema in the **Target** and **PreImage** properties of the [InputParameters](/dotnet/api/microsoft.xrm.sdk.remoteexecutioncontext.inputparameters).
 
 ## Performance benchmarks
 
-The data events functionality currently supports a burst rate of 5,000 events per five-minute period, up to 50,000 events per hour, across all entities for the environment. Event loads above these thresholds might encounter performance degradation in environment processing. There are no limits in place to explicitly throttle events, and any events above the supported thresholds would still be sent, but it might slow the performance of the environment. 
+The data events functionality currently supports a burst rate of 5,000 events per five-minute period, up to 50,000 events per hour, across all entities for the environment. Event loads above these thresholds might encounter performance degradation in environment processing. There are no limits in place to explicitly throttle events, and any events above the supported thresholds would still be sent, but it might slow the performance of the environment.
 
 Data events for update operations are inherently more expensive to process than data events for create and delete operations in finance and operations. If your active data events are for update operations, you might see environment performance degrade more quickly when exceeding the supported thresholds.
 
@@ -71,8 +72,10 @@ Data events for update operations are inherently more expensive to process than 
 1. Data events aren't supported for updates to virtual fields. Modify data events are triggered by update operations on the underlying tables of an entity. Because virtual fields are values calculated in X++ code, any change in the value doesn't result in any data operations against the physical tables and doesn't trigger a data event.
 For more information on virtual fields, see [Computed columns and virtual fields in data entities](../data-entities/data-entity-computed-columns-virtual-fields.md).
 1. The Data events that occur in finance and operations apps are processed asynchronously across multiple systems to deliver them to the target endpoint. Therefore, the order in which they're emitted in finance and operations apps isn't guaranteed to preserve the order in which they're delivered to the endpoints.
+1. Data events in Microsoft finance and operations apps are designed to trigger on create, update, and delete (CUD) operations for entities that are backed by tables. When a data entity uses a view as its primary data source, data events don't trigger. This is due to the following reasons:
+    - Views aren't directly tied to a single table's data change.
+    - The system can't determine which underlying table change should trigger the event.
+    - As a result, the event framework can't reliably emit notifications for entities based on views.
+1. Any Business Eventid saved in enviorment variables for ALM process  of the power automate should store the Business Event ID and not the Business Event Label. This can cause creation or orphan records and will not trigger the power automate.
 
 [!include[banner](../includes/banner.md)]
-
-
-

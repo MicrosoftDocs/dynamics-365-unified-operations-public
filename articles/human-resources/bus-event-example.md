@@ -4,7 +4,7 @@
 title: Business event example
 description: This article provides an example of a business event.
 author: twheeloc
-ms.date: 03/03/2023
+ms.date: 09/03/2025
 ms.topic: overview
 # optional metadata
 
@@ -53,7 +53,7 @@ This article provides an example of a business event.
 
     ![Configuring Parse JSON.](./media/Select-option2.png)
 
-11. Go to your Finance instance, follow these steps:
+11. Go to your Human Resources instance, follow these steps:
 
     1. Go to **System Administration \> Business events \> Business events catalog**.
     2. Select a business event.
@@ -89,11 +89,11 @@ This article provides an example of a business event.
 
     ![Filling in information for email.](./media/Send-notification6.png)
 
-    Alternatively, if you want to receive responses from the notification that's sent, you can use the **Send email with options** connector. In this case, the flow will be paused until it receives a response. That response can be accessed via the **SelectedOption** field that's available in the dynamic content dialog box to add additional logic to your flow. The **Send email with options** connector lets you format emails by using HTML tags.
+    Alternatively, if you want to receive responses from the notification that's sent, you can use the **Send email with options** connector. In this case, the flow is paused until it receives a response. That response can be accessed via the **SelectedOption** field that's available in the dynamic content dialog box to add additional logic to your flow. The **Send email with options** connector lets you format emails by using HTML tags.
 
 15. When the flow is ready, select **Save**.
 16. Go to **System Administration \> Setup \> Business events**.
 17. Select **Endpoints**, and verify that a new endpoint has been created that has a GUID.
 18. On the **Active business events** tab of the same page, verify that the event is activated.
 
-When an event occurs, it will trigger the flow. A notification should then be sent based on the preceding configuration. For example, in the **Assigned task** example that's mentioned earlier, if any new task is assigned to a worker, the flow will be triggered and will send the notifications to the assigned worker.
+When an event occurs, it triggers the flow. A notification should then be sent based on the preceding configuration. For example, in the **Assigned task** example that's mentioned earlier, if any new task is assigned to a worker, the flow is triggered and sends the notifications to the assigned worker.

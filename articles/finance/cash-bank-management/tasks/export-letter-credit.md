@@ -4,7 +4,7 @@ description: Learn about creating an export letter of credit, which is an agreem
 author: music727
 ms.author: mibeinar
 ms.topic: how-to
-ms.date: 06/16/2024
+ms.date: 08/25/2025
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User  
@@ -42,7 +42,7 @@ This article describes exporting a letter of credit. For more information, see [
 18. On the **Lines**, click **Fetch sales order shipments**.
 19. Click **Issue bank document**.
 
-## Post Packing slip
+## Post packing slip
 1. On the **Sales order** page, click **Pick and pack**.
 2. Click **Post packing slip**.
 3. Expand the **Parameters** section and in the **Quantity** field, select **All**.

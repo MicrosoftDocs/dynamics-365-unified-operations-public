@@ -4,7 +4,7 @@ description: This article explains how to get started with electronic invoicing 
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 05/29/2025
+ms.date: 07/30/2025
 ms.reviewer: johnmichalak
 ms.search.region: Malaysia
 ms.search.validFrom: 2024-05-09
@@ -139,6 +139,10 @@ To configure electronic document parameters, follow these steps.
 
 1. On the **Features** tab, select and enable the **Malaysian electronic invoice** feature.
 1. Save your changes on the **Electronic document parameters** page, and then close the page.
+
+> [!NOTE]
+> Watch the following video about the configuration of Malaysian electronic **Self invoices**.
+> [!VIDEO 012f47ed-0472-4e12-a5be-5f7a594c1cb5]
 
 ## <a id="NRIC"></a>Configure registration numbers
 

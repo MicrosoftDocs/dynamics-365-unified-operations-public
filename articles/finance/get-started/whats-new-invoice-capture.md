@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in Invoice capt
 author: shielas  
 ms.author: shielas
 ms.topic: whats-new
-ms.date: 06/18/2025
+ms.date: 07/18/2025
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.custom: 
@@ -24,6 +24,29 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 [!include [banner](../includes/banner.md)]
 
 This article provides information about the Invoice capture solution that automatically creates vendor invoices from digital invoice images. Learn more in [Invoice capture overview](../accounts-payable/invoice-capture-overview.md).
+
+## August 2025
+The August release of the Invoice capture solution version 1.9.8.x contains the following feature enhancements and bug fixes. 
+
+| Feature | Description |
+| --- |--- |
+|Bug Fix |The **Link purchase order line to invoice line** page was only displaying 50 lines. Updated to remove the 50 line restriction. |
+|Bug Fix |Inconsistent derivation results were being encountered during cache lookup errors. Users may have encountered issues where vendor wasn't derived.  |
+|Feature |Copy and paste support from PDF image to Invoice capture page. Users can now select text and numbers from the PDF page, and copy the selection to the invoice fields for easier data updates. Keyboard shortcuts of ctrl+c and ctrl+v are supported.| 
+
+
+## July 2025 
+
+The July release of the Invoice capture solution version 1.9.7.x contains the following feature enhancements and bug fixes.
+
+### Bug fixes
+The following bugs were fixed in the July release:
+ - Credit memo amounts might incorrectly appear as positive during the derivation phase when continuous learning is enabled.
+ - Derivation process behaves inconsistently when a custom header field of type Date is added and then removed.
+ - Invoices stuck in a **Processing** or **Time out** states when the AI model couldn't be identified.
+ - Vendors with the same tax registration number across multiple legal entities aren't derived correctly. The derivation logic has been updated to include the legal entity when resolving vendor accounts.
+ - The item number isn't derived when the invoice line contained a product with variants.
+
 
 ## June 2025
 

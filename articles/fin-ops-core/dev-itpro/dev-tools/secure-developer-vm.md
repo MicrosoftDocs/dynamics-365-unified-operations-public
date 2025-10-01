@@ -3,7 +3,7 @@ title: Secure one-box development environments
 description: Learn about how to help secure one-box developer environments, including outlines on default configurations and how to deploy to a custom virtual network.
 author: mnordick
 ms.author: mnordick
-ms.date: 06/10/2025
+ms.date: 09/16/2025
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -63,14 +63,16 @@ The following table shows the regional instances of Lifecycle Services.
 
 | Geography | Lifecycle Services URL | Lifecycle Services IP addresses |
 |---|---|---|
-| United States/Public | lcs.dynamics.com | 191.239.20.104<br>40.76.5.241<br>40.112.209.123<br>40.121.208.21<br>40.118.145.241 |
+| United States/Public | lcs.dynamics.com | 191.239.20.104<br>40.76.5.241<br>40.112.209.123<br>40.121.208.21<br>40.118.145.241<br>20.253.188.249 |
 | Azure Government/GCC | gov.lcs.microsoftdynamics.us | 20.141.106.7<br>20.141.192.69 |
 | Azure Government/GCC High | high.lcs.microsoftdynamics.us | 52.245.167.30<br>20.141.241.11 |
+| Azure Government/DoD | dod.lcs.microsoftdynamics.us | 52.181.207.10<br>52.180.251.93 |
 | China | lcs.dynamics.cn | 40.73.5.94<br>40.73.64.218<br>40.112.209.123<br>40.121.208.21 |
-| Europe | eu.lcs.dynamics.com | 40.114.140.114<br>40.115.104.173 |
+| Europe | eu.lcs.dynamics.com | 40.114.140.114<br>40.115.104.173<br>4.180.195.182 |
 | France | fr.lcs.dynamics.com | 40.89.132.81<br>40.89.155.166<br>40.89.130.72<br>52.136.130.60<br>52.136.130.76 |
-| South Africa | sa.lcs.dynamics.com | 102.133.165.35<br>102.133.67.149<br>40.127.1.92<br>102.133.67.146<br>40.127.4.34 |
-| Switzerland | ch.lcs.dynamics.com | 51.103.133.142<br>51.103.146.43<br>51.103.138.255<br>51.107.226.123<br>51.107.224.152<br>51.107.224.175 |
+| South Africa | sa.lcs.dynamics.com | 102.133.165.35<br>102.133.67.149<br>40.127.1.92<br>102.133.67.146<br>40.127.4.34<br>4.221.165.175 |
+| Switzerland | ch.lcs.dynamics.com | 51.103.133.142<br>51.103.146.43<br>51.103.138.255<br>51.107.226.123<br>51.107.224.152<br>51.107.224.175<br>51.103.251.214 |
+| Norway | no.lcs.dyanamics.com | 40.114.140.114<br>40.115.104.173<br>4.180.195.182 |
 | United Arab Emirates | uae.lcs.dynamics.com | 20.45.79.158<br>40.123.207.67<br>20.45.64.174<br>40.123.217.56<br>20.45.79.195 |
 
 - If you're using a higher-level firewall outside the virtual network's network security group, you must allow a broader range of inbound ports from the Lifecycle Services source IP addresses. This requirement exists because the load balancer is configured to map a randomized port in the range 50000–65535 to well-known ports, such as the ports for WinRM and RDP. Deployment from Lifecycle Services requires that ports in this range be accessible.
@@ -141,7 +143,7 @@ If you must use the previously mentioned capabilities in your one-box developmen
         - **Dynamics Lifecycle service** (permission of type **Delegated**)
 
     2. In the cloud-hosted environment, grant **Read** access to the network service for the newly installed certificate.
-9. Clear any cached configurations for LCS access using the SQL query on AX DB:
+9. Clear any cached configurations for Lifecycle Services access using the SQL query on AX DB:
      ```
      DELETE FROM SYSOAUTHCONFIGURATION where SECURERESOURCE = 'https://lcsapi.lcs.dynamics.com'
   

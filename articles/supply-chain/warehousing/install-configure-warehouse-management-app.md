@@ -15,7 +15,6 @@ ms.custom:
 # Install the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article explains how to download and install the Warehouse Management mobile app on each of your mobile devices, and how to configure the app to connect to your Microsoft Dynamics 365 Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
 
@@ -60,7 +59,7 @@ For the Warehouse Management mobile app to function correctly, your internal net
 
 ### Turn Warehouse Management mobile app features on or off in Supply Chain Management
 
-To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. 
+To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off.
 
 ## Get the Warehouse Management mobile app
 

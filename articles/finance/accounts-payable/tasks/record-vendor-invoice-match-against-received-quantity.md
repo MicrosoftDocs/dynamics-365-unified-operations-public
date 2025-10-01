@@ -1,10 +1,10 @@
 --- 
 title: Record vendor invoice and match against received quantity
-description: Learn about recording vendor invoices and matching received quantities, including step-by-step outlines for creating purchase orders. 
+description: Learn how to record vendor invoices and matching received quantities, including step-by-step outlines for creating purchase orders. 
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: how-to
-ms.date: 02/11/2022
+ms.date: 08/04/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -22,7 +22,7 @@ When you receive an invoice from a vendor for goods or services on a purchase or
 
 In the **Accounts payable parameters** page, ensure that the **Enable invoice matching validation** option is selected, the **Post invoice with discrepancies** field is set to **Require approval**, and the **Line matching policy** field is set to **Three-way matching**.
 
-This procedure uses the USMF demo company. The accounts payable manager or accounting manager role would perform these steps.
+This procedure uses the USMF demo company. The accounts payable manager or accounting manager role perform these steps.
 
 
 ## Create a purchase order

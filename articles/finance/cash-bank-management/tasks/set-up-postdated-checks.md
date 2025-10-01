@@ -4,7 +4,7 @@ description: Learn how to specify whether to post journal entries for postdated 
 author: kweekley
 ms.author: kweekley
 ms.topic: how-to
-ms.date: 11/15/2022
+ms.date: 08/25/2025
 ms.custom:
 ms.reviewer: twheeloc   
 audience: Application User  
@@ -20,9 +20,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This article explains how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments. You can also specify clearing accounts for issued checks, received checks, and withholding tax. Postdated checks that are issued to make and receive payments on a future date. You can specify whether the check must be reflected in the accounting books before its maturity date.
 
-
-
-The role of this procedure is Treasurer. This procedure uses the USMF demo company.
+The role of this procedure is treasurer and uses the USMF demo company.
 
 
 ## Set up postdated checks

@@ -1,8 +1,8 @@
 ---
 title: Financial tag rule reference (preview)
 description: Learn about financial tags rules with Microsoft Power Fx formulas.
-author: rcarlson
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 02/12/2025
 ms.reviewer: twheeloc

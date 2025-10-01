@@ -1,5 +1,5 @@
 --- 
-title: Employment verification i9 verification
+title: Employment verification I-9 verification
 description: Learn about the Immigration Reform and Control Act, which requires US employers to verify the employment eligibility status of newly hired employees. 
 author: ShielaSogge
 ms.author: shielas
@@ -14,7 +14,7 @@ ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document
 ms.dyn365.ops.version: Version 7.0.0
 ---
 
-# Employment verification i9 verification
+# Employment verification I-9 verification
 
 [!include [banner](../../../../includes/banner.md)]
 

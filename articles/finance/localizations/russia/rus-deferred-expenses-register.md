@@ -1,28 +1,29 @@
 ---
 title: Deferred expenses register
-description: Learn about how to generate and set up deferrals, including outlines on deferral setups and setting up deferral creation when you sell fixed assets.
+description: Learn how to generate and set up deferrals for Russia in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/26/2024
+ms.date: 08/18/2025
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2020-09-11
-ms.dyn365.ops.version: 10.0.0
 ---
 
 # Deferrals register
 
 [!include [banner](../../includes/banner.md)]
 
-Separate Deferrals functionality is used to account for deferred expenses in the system. This functionality enables an unlimited number of models to be used to account for deferrals. You can keep parallel tax accounting and bookkeeping accounting of deferrals.
+This article explains how to generate and set up deferrals for Russia in Microsoft Dynamics 365 Finance.
+
+Separate deferrals functionality is used to account for deferred expenses in the system. This functionality enables an unlimited number of models to be used to account for deferrals. You can keep parallel tax accounting and bookkeeping accounting of deferrals.
 
 Deferrals are generated in the following places:
 
 - Manually on the **Deferrals** page.
-- Automatically from other modules in Microsoft Dynamics 365 Finance. For example, deferrals are automatically generated when you sell depreciable assets at a loss or account for standard expenses amounts above the norm.
+- Automatically from other modules in Dynamics 365 Finance. For example, deferrals are automatically generated when you sell depreciable assets at a loss or account for standard expenses amounts above the norm.
 
 Deferrals are automatically written off in each period. The write-off amount is determined based on the write-off period and the deferral amount.
 
@@ -40,16 +41,20 @@ For more information about how to set up deferrals, see [Set up deferrals (Russi
 
 When you sell fixed assets at a loss in bookkeeping accounting and tax accounting, a deferral must be created for the amount that is lost from the sale. To create a deferral automatically, follow these steps before you sell a fixed asset.
 
-1. Go to **Fixed assets (Russia) \> Common \> Fixed assets.** In the master record for the fixed asset, on the Action Pane, select **Value models**.
+To set up deferral creation when you sell fixed assets, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets.** In the master record for the fixed asset, on the Action Pane, select **Value models**.
 2. Select a **TAX** value model.
 3. On the **Deferrals** FastTab, select **Add** to add a line, and set the following fields:
 
-    - In the **Model number** field, select a **TAX** model for deferrals accounting.
-    - In the **Deferrals group** field, select a deferrals group.
-    - In the **Expense code** field, select an expense code.
+    1. In the **Model number** field, select a **TAX** model for deferrals accounting.
+    1. In the **Deferrals group** field, select a deferrals group.
+    1. In the **Expense code** field, select an expense code.
 
 
 You can also set up automatic creation of deferrals for the depreciation group of fixed assets.
+
+To set up automatic creation of deferrals for the depreciation group of fixed assets, follow these steps.
 
 1. On the **Depreciation groups** page, select a **TAX** value model and a depreciation group.
 2. On the **Deferrals** FastTab, add a line, and set the fields that are described in the previous procedure. When you create value models in the fixed asset master record, the **Deferrals** FastTab is automatically filled in.
@@ -91,23 +96,24 @@ The following two examples use the **RUMF** company:
    - Deferrals are automatically created when fixed assets are sold at a loss
    - Deferrals are automatically created by using a periodic task
    
-
 #### Example: Deferrals are automatically created when fixed assets are sold at a loss
 
-1. On the **Deferrals groups** page (**General ledger \> Deferrals**), create the following deferrals group.
+To walk through the example of how deferrals are automatically created when fixed assets are sold at a loss, follow these steps.
+
+1. In Dynamics 365 Finance, on the **Deferrals groups** page (**General ledger** \> **Deferrals**), create the following deferrals group.
 
 | **Deferrals group** | **Model number** | **Write-off method** | **Write-off time** | **Beginning date of write-off** | **Disposal date** |
 |---------------------|------------------|----------------------|--------------------|---------------------------------|-------------------|
 | Yearly              | TAX              | Linear               | 12                 | Creation date start             | Year end          |
 
-2. On the **Expense and income codes** page (**Tax \> Setup \> Profit tax \> Expense codes**), verify that the following expense codes are created.
+2. On the **Expense and income codes** page (**Tax** \> **Setup** \> **Profit tax** \> **Expense codes**), verify that the following expense codes are created.
 
 | **Expense code** | **Code type** | **Parent code** | **Sales tax code** |
 |------------------|---------------|-----------------|--------------------|
 | 902000000        | Issue         |                 | НП                 |
 | 902030000        | Issue         | 902000000       | НП                 |
 
-3. On the **Depreciation groups** page (**Fixed assets (Russia) \> Setup \> Depreciation groups**), create the following depreciation group that uses the **TAX** value model.
+3. On the **Depreciation groups** page (**Fixed assets (Russia)** \> **Setup** \> **Depreciation groups**), create the following depreciation group that uses the **TAX** value model.
 
 | **Depreciation group** | **Depreciation method** | **Value model** | **Depreciation start date** |
 |------------------------|-------------------------|-----------------|-----------------------------|
@@ -119,19 +125,19 @@ The following two examples use the **RUMF** company:
 |------------------|---------------------|------------------|
 | TAX              | Yearly              | 902030000        |
 
-5. On the **FA groups** page (**Fixed assets (Russia) \> Setup \> FA groups),** create the following fixed asset (FA) group.
+5. On the **FA groups** page (**Fixed assets (Russia)** \> **Setup** \> **FA groups),** create the following fixed asset (FA) group.
 
 | **FA group** | **Name**  |
 |--------------|-----------|
 | Inventory    | Inventory |
 
-6. On the **Released products** page (**Product information management \> Products \> Released products**), create the product. In the **Fixed assets (Russia)** section, in the **FA group** field, select the fixed asset group that you just created.
+6. On the **Released products** page (**Product information management** \> **Products** \> **Released products**), create the product. In the **Fixed assets (Russia)** section, in the **FA group** field, select the fixed asset group that you just created.
 
 | **Product number** | **Product name** | **FA group** |
 |--------------------|------------------|--------------|
 | Inventory01        | Inventory01      | Inventory    |
 
-7. On the **Tax registers** page (**Tax \> Setup \> Profit tax \> Registers**), create the following registers:
+7. On the **Tax registers** page (**Tax** \> **Setup** \> **Profit tax** \> **Registers**), create the following registers:
 
     - FA – information about object
     - FA depreciation
@@ -139,7 +145,7 @@ The following two examples use the **RUMF** company:
 
       For each register, on the **Hide** FastTab, select the fields that should be hidden from the register.
 
-8. On **Fixed assets** page (Fixed assets (Russia) \> Common \> Fixed assets), create the following fixed asset.
+8. On **Fixed assets** page (Fixed assets (Russia)** \> **Common** \> **Fixed assets), create the following fixed asset.
 
 | **FA group** | **Number** | **Acquisition date** | **Acquisition cost** |
 |--------------|------------|----------------------|----------------------|
@@ -168,7 +174,7 @@ The following two examples use the **RUMF** company:
 | TAX            | 3/1/2019 | Fixed asset      | 4051        | Depr. by 3/31/2019 | 25,000.00  |
 
 13. Post the journal.
-14. On **All sales orders** page (**Accounts receivable \> Orders \> All sales orders**) create a sales order that has the following line:
+14. On **All sales orders** page (**Accounts receivable** \> **Orders** \> **All sales orders**) create a sales order that has the following line:
 
 | **Item number** | **Quantity** | **Unit price** | **FA inventory number** |
 |-----------------|--------------|----------------|-------------------------|
@@ -176,7 +182,7 @@ The following two examples use the **RUMF** company:
 
 15. Switch to the **Header** view, and then, on the **Financial dimensions** FastTab, in the **ExpenseAndIncomeCode** field, select **902030000**. In the **Invoice date** field, select **3/31/2019**.
 16. Post the invoice.
-17. On the **Deferrals** page (**General ledger \> Deferrals**), verify that the deferral master record was created.
+17. On the **Deferrals** page (**General ledger** \> **Deferrals**), verify that the deferral master record was created.
 18. Make sure that the **Deferrals models** page has the following line.
 
 | **Model number** | **Deferrals group** | **Beginning date of writing off** | **Deferrals sum** |
@@ -205,7 +211,9 @@ The following two examples use the **RUMF** company:
 
 #### Example: Deferrals are automatically created by using a periodic task
 
-1. Go to **General ledger \> Deferrals setup \> Value models**, and verify that the following value models and deferral groups are created.
+To walk through the example of how deferrals are automatically created by using a periodic task, follow these steps.
+
+1. In Dynamics 365 Finance, go to **General ledger** \> **Deferrals setup** \> **Value models**, and verify that the following value models and deferral groups are created.
 
 | **Model number** | **Deferrals group** | **Write-off time** | **Beginning date of write-off** |
 |------------------|---------------------|--------------------|---------------------------------|
@@ -226,7 +234,7 @@ The following two examples use the **RUMF** company:
 | 1               |              | Quantity      | No               |             |
 | 2               | \*           | Price         | No               | Data output |
 
-5. Go to **Accounts payable \> Invoices \> Invoice journal**, and create a journal.
+5. Go to **Accounts payable** \> **Invoices** \> **Invoice journal**, and create a journal.
 6. On the Action Pane, select **Lines**, set the following fields, and then post the journal.
 
 | **Column**          | **Value**                                         |
@@ -258,7 +266,7 @@ The following two examples use the **RUMF** company:
 | TAX              | Yearly              | 1/1/2019                        | 10,000.00         |
 
 12. On the **Deferrals journal** page, create a new journal, and then, on the Action Pane, select **Lines**.
-13. On the **Journal voucher** page, on the Action Pane, select **Group operations \> Writing off**.
+13. On the **Journal voucher** page, on the Action Pane, select **Group operations** \> **Writing off**.
 14. On the **Deferrals writing off** page, in the **Transaction date** field, select **3/1/2019**, and then select **OK**.
 15. Verify that two lines were created for the **TAX** value model. For both lines, the operation type should be **Writing off**, and the amount should equal 10,000.00 ÷ 12 = **833.33**. When you've finished, post the journal.
 16. Create the tax register journal for one month of the 2019 calendar year, and then calculate all the registers. In the **Deferrals** register, you should see the following information.

@@ -1,5 +1,5 @@
 ﻿---
-title: Electronic batch records (EBRs) (preview)
+title: Electronic batch records (EBRs)
 description: Learn how to use electronic batch records (EBRs) to consolidate production-related data to meet 21 CFR Part 11 requirements.
 author: johanhoffmann
 ms.author: johanho
@@ -11,18 +11,14 @@ ms.custom:
   - bap-template
 ---
 
-# Electronic batch records (EBRs) (preview)
+# Electronic batch records (EBRs)
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 Electronic batch records (EBRs) are required by part 11 of Title 21 of the Code of Federal Regulations (21 CFR Part 11), which applies to life science and pharmaceutical industries. EBRs consist of two major components:
 
 - **Master manufacturing record (MMR)** – This component documents all the methods that might be used to produce an item and the various ways that the item's characteristics might be measured.
 - **Batch production record (BPR)** – This component documents the actual method that was used to produce the item and the actual value of the measurement for each of the item's characteristics. It also details the characteristics and quantities of the ingredients that were used to produce the item.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -31,8 +27,8 @@ Before you can use the features that are described in this article, your system 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
 - The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-    - *(Preview) Advanced quality management*
-    - *(Preview) Electronic signature improvements*
+    - *Advanced quality management*
+    - *Electronic signature improvements*
 
 ## Turn electronic signature requirements for EBRs on or off
 

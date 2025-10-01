@@ -1,8 +1,8 @@
 ---
 title: Default financial dimensions
 description: Learn about where the financial dimensions originate, the APIs that are used to merge them, and how they're used to create ledger dimensions.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 02/18/2024
 ms.reviewer: johnmichalak
@@ -115,9 +115,7 @@ To define whether a main account has a **Not fixed** or **Fixed** value for each
 
 ### Specify the default dimensions for an account
 
-If a financial dimension is Fixed, the specified value (including a blank value) overrides transaction values at the time of posting.
-
-![image](https://github.com/user-attachments/assets/2cf39f56-e5a8-4192-a02e-1319f1a3bfb6)
+If a financial dimension is **Fixed**, the specified value (including a blank value) overrides transaction values at the time of posting.
 
 If a financial dimension is **Not fixed**, it uses a default value that can be overwritten. This applies to all default values in the system, including those from master records.
 

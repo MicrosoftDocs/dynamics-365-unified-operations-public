@@ -3,11 +3,12 @@ title: Power BI reports for risks analysis and performance ranking
 description: Learn about the Microsoft Power BI reports that help you discover risks in your planned supply and analyze past performance of vendors and products.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: how-to 
-ms.date: 05/22/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.form: 
+ms.search.form:
+ms.topic: how-to
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Power BI reports for risks analysis and performance ranking
@@ -43,13 +44,13 @@ Use the two similar reports for product and vendor ranking to study the historic
 
 You can zoom in on the timeline and select individual data points to see the related vendors or products. Alternatively, you can select one or more vendors, based on their ranking, and see the appropriate performance timeline.
 
-[<img src="media/sra-perf-supplier-rating.png" alt="Performance ranking report for products." title="Performance ranking report for products" width="720" />](media/sra-perf-supplier-rating.png)
+:::image type="content" source="media/sra-perf-supplier-rating.png" alt-text="Performance ranking report for products." lightbox="media/sra-perf-supplier-rating.png":::
 
 ### Multi perspective OTIF ranking
 
 On this report, the worst OTIF rankings are calculated from various perspectives and shown side-by-side for products, vendors, delivery methods, and sites. You can use individual or combined dimensions to identify bottlenecks that might cause a drop in supply performance.
 
-[<img src="media/sra-otif-analysis.png" alt="Multi perspective OTIF ranking report." title="Multi perspective OTIF ranking report" width="720" />](media/sra-otif-analysis.png)
+:::image type="content" source="media/sra-otif-analysis.png" alt-text="Multi perspective OTIF ranking report." lightbox="media/sra-otif-analysis.png":::
 
 ## Embedded supply risk assessment analysis
 
@@ -70,7 +71,7 @@ This report helps you analyze the calculated risks for your planned purchases. A
 
 After you zoom in on a group of planned product supplies, you can study additional performance statistics for the products and vendors that are assigned to the planned orders.
 
-[<img src="media/sra-risk-planned-purchase.png" alt="Risk assessment report for planned purchase." title="Risk assessment report for planned purchase" width="720" />](media/sra-risk-planned-purchase.png)
+:::image type="content" source="media/sra-risk-planned-purchase.png" alt-text="Risk assessment report for planned purchase." lightbox="media/sra-risk-planned-purchase.png":::
 
 ### Detailed sourcing risk breakdown
 
@@ -78,16 +79,16 @@ The detailed planned purchase risk breakdown lists show all at-risk products wit
 
 This view can help you study vendors that were used for past orders that led to bad performance. Consider using other or additional vendors to help reduce the risk for future planned purchases.
 
-[<img src="media/sra-risk-sourcing.png" alt="Sourcing risk report." title="Sourcing risk report" width="720" />](media/sra-risk-sourcing.png)
+:::image type="content" source="media/sra-risk-sourcing.png" alt-text="Sourcing risk report." lightbox="media/sra-risk-sourcing.png":::
 
 ### Compare vendor locations between past order and planned orders
 
 To better compare the overall supply-originating location (vendor location), you can study the side-by-side geographic maps. These maps are heat maps that highlight where supply was coming from for purchase orders versus planned supply orders.
 
-[<img src="media/sra-risk-past-vs-planned-purchase.png" alt="Risk assessment by comparing past orders and planned sourcing." title="Risk assessment by comparing past orders and planned sourcing" width="720" />](media/sra-risk-past-vs-planned-purchase.png)
+:::image type="content" source="media/sra-risk-past-vs-planned-purchase.png" alt-text="Risk assessment by comparing past orders and planned sourcing." lightbox="media/sra-risk-past-vs-planned-purchase.png":::
 
 ### Supply flow comparison from the past against planned supply
 
 You can dive deeper into the supply from source to delivery location in comparison to past purchase and planned supply. You can filter by items that have been identified as at risk and by delivery methods. In this way, you can identify potential risks that are imposed by the route and method of delivery.
 
-[<img src="media/sra-risk-supply-flow.png" alt="Risk assessment comparing supply flow." title="Risk assessment comparing supply flow" width="720" />](media/sra-risk-supply-flow.png)
+:::image type="content" source="media/sra-risk-supply-flow.png" alt-text="Risk assessment comparing supply flow." lightbox="media/sra-risk-supply-flow.png":::

@@ -1,11 +1,11 @@
 ---
 title: Cash discounts for overpayments
 description: Learn about various scenarios that show how a payment is handled when the customer takes a cash discount but also overpays.
-author: kfend
-ms.author: kfend
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 10/24/2022
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

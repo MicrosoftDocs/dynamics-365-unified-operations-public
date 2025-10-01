@@ -4,7 +4,7 @@ description: Learn how to get started with Electronic invoicing for Denmark in M
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 07/17/2025
+ms.date: 07/30/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -41,7 +41,9 @@ Some parameters for the **Danish electronic invoice (DK)** electronic invoicing 
 
 To review and update the parameters for the **Danish electronic invoice (DK)** electronic invoicing feature, follow these steps.
 
-1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature, **version 4** or later. Learn more in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature. Learn more in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+> [!NOTE]
+> **Version 3** of the OIOUBL format is implemented starting from the **version 6** of the of the **Danish electronic invoice (DK)** Globalization feature.
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it. Learn more in [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that **Draft** is selected.
 1. On the **Setups** tab, in the grid, select the **Sales invoice OIOUBL** feature setup, and then select **Edit**.

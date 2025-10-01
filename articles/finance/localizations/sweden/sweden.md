@@ -4,7 +4,7 @@ description: Access links to documentation resources for Sweden, including links
 author: kfend
 ms.author: kfend
 ms.topic: overview
-ms.date: 03/04/2022
+ms.date: 09/30/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Sweden
@@ -19,7 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides links to documentation resources for Sweden. 
 
-- [Export financial information for auditors in Sweden](emea-swe-sie-standard-report.md)
+- [Export financial information \(SIE\) in Sweden](emea-swe-sie-standard-report.md)
 - [Import payment formats](emea-swe-payment-formats-import.md)
 - [Cash register functionality](../../../commerce/localizations/sweden/emea-swe-cash-registers.md)
 - [Sales tax payment report for Sweden](emea-swe-sales-tax-payment-report-sweden.md)
@@ -27,6 +27,5 @@ This article provides links to documentation resources for Sweden.
 - [Swedish Intrastat](emea-swe-intrastat.md)
 - [EU sales list for Sweden](emea-swe-eu-sales-list.md)
 - [Statistics of vendors payments periods](emea-swe-payment-periods-statistics.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

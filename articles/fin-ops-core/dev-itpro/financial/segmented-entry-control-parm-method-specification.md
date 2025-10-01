@@ -1,8 +1,8 @@
 ---
 title: Parm methods for Segmented Entry controls
 description: Learn about the parm methods that can be set in code on an instance of a Segmented Entry control, including a table that defines various methods.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.custom: 
   - bap-template

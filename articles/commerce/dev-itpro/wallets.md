@@ -2,7 +2,7 @@
 title: Wallet payment support
 description: This article provides an overview of wallet payment support for Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/10/2024
+ms.date: 07/22/2025
 ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
@@ -134,7 +134,6 @@ The following section describes the current limitations with wallet payment meth
 The following limitations will be fixed in future releases.
 
 - If the **Enable use of non-recurring tokens in Commerce** feature is enabled and the wallet is used for authorization of the remaining balance for a customer order in POS, then during order pickup in POS, the authorization isn't found and the customer needs to present the payment again.
-- If the wallet is used for customer order deposit, the customer order can't be returned via the call center, but can be returned in POS.
 - The standard customer receipt doesn't show the card type information (for example, Alipay or WeChat Pay) on the receipt.
    
 #### Limitations without a planned fix date
@@ -164,7 +163,7 @@ These three fields aren't discrete fields in the database, and are only shown in
 
 ### Support for unidentified card types
 
-In some scenarios, a payment connector may return a card that doesn't have a BIN range or processor payment method mapping. If this issue occurs, the payment terminal authorizes the payment but the payment authorization is reversed when the point of sale (POS) can't map the authorization response to a specific card type. To address this issue, a capability is provided to map unknown authorization responses to a default card type. 
+In some scenarios, a payment connector may return a card that doesn't have a BIN range or processor payment method mapping. If this issue occurs, the payment terminal authorizes the payment, but the payment authorization is reversed when the point of sale (POS) can't map the authorization response to a specific card type. To address this issue, a capability is provided to map unknown authorization responses to a default card type. 
 
 ![Default for unmapped cards.](../media/Payments/DefaultUnmapped.png)
 

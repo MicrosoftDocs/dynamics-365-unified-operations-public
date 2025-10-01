@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form: EntAssetJobTypeDefaultForecast, EntAssetJobTrade, EntAssetJobTypeDefaultCopy, EntAssetChecklistVariableValueLookup, EntAssetChecklistTemplateCreate, EntAssetJobVariant, EntAssetJobTypeDefaultReference, EntAssetJobTypeDefaultChecklist, EntAssetJobTypeDefault, EntAssetJobType, EntAssetJobTypeDefaultChecklistCopy, EntAssetChecklistTemplate, EntAssetJobTypeDefaultDescription, EntAssetJobTypeLookup, EntAssetJobTypeDefaultToolCopy, EntAssetJobTypePreviewPart, EntAssetJobTypeDefaultTool, EntAssetJobTypeDefaultForecastCopy, EntAssetChecklistTemplateLookup, EntAssetJobGroup, EntAssetChecklistVariable
 ms.topic: how-to
-ms.date: 06/28/2024
+ms.date: 08/13/2025
 ms.custom: 
   - bap-template
 ---
@@ -23,9 +23,9 @@ Maintenance job type variants can be set up on a maintenance job type. Maintenan
 
 Maintenance job trades provide information about professional trades, such as mechanical, electrical, and hydraulic trades. Competency requirements can be set up on a maintenance job trade. All maintenance job trades can be used in relation to all maintenance job types. Selection of a maintenance job type variant and/or maintenance job trade on a work order is optional.
 
-For each maintenance job type, variations of the maintenance job type setup can be created. For example, if you have a maintenance job type that is named **Service**, you can create the following variations for that maintenance job type: **Trucks 30,000 km**, **Cars 30,000 km**, and **Vans 30,000 km**.
+For each maintenance job type, variations of the maintenance job type setup can be created. For example, if you have a maintenance job type that is named *Service*, you can create the following variations for that maintenance job type: *Trucks 30,000 km*, *Cars 30,000 km*, and *Vans 30,000 km*.
 
-Maintenance job type categories are used to collect a group of maintenance job types for overview purposes. Examples of maintenance job type categories might include **Calibration**, **Inspection**, **Overhaul**, and **Instrumentation**.
+Maintenance job type categories are used to collect a group of maintenance job types for overview purposes. Examples of maintenance job type categories might include *Calibration*, *Inspection*, *Overhaul*, and *Instrumentation*.
 
 Maintenance checklist templates and maintenance checklist variables are used to set up maintenance checklists. Maintenance checklists are set up on maintenance job types and used on work orders.
 
@@ -82,9 +82,9 @@ You first set up the required maintenance job type categories, maintenance job t
 
 ## Create a maintenance checklist variable
 
-When you create maintenance checklist lines in the maintenance job type default, you must select a maintenance checklist type. **Variable** is one maintenance checklist type. It's used to define a possible result in a range on a maintenance checklist line that is related to a work order line. A variable lets you create a set of predefined outcomes without having to make an exact measurement.
+When you create maintenance checklist lines in the maintenance job type default, you must select a maintenance checklist type. *Variable* is one maintenance checklist type. It's used to define a possible result in a range on a maintenance checklist line that is related to a work order line. A variable lets you create a set of predefined outcomes without having to make an exact measurement.
 
-**Example 1:** You can measure oil level by defining three values: **Level too high**, **Level too low**, and **Level within range**. For each value, you define whether the value result is **Pass**, **Fail**, or **None**.
+**Example 1:** You can measure oil level by defining three values: *Level too high*, *Level too low*, and *Level within range*. For each value, you define whether the value result is *Pass*, *Fail*, or *None*.
 
 **Example 2:** You make a visual inspection of a piece of equipment to assess wear and tear.
 
@@ -117,14 +117,14 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 
 1. In the **Type** field, select a type for the maintenance checklist line. For each maintenance checklist type, the **Line details** FastTab shows related fields. The following values are available:
 
-    - **Text** – The line has text that describes what to do. Use this maintenance checklist type if you want a worker to check or inspect something, but you don't expect a specific (measurable) result. After you select this type, enter a name or heading in the **Name** field. In the **Instructions** field, enter a description of what must be done. If the step is mandatory for the maintenance checklist, set the **Mandatory** option to **Yes**.
+    - **Text** – The line has text that describes what to do. Use this maintenance checklist type if you want a worker to check or inspect something, but you don't expect a specific (measurable) result. After you select this type, enter a name or heading in the **Name** field. In the **Instructions** field, enter a description of what must be done. If the step is mandatory for the maintenance checklist, set the **Mandatory** option to *Yes*.
     - **Header** – The line is used as a heading to group the maintenance checklist lines that appear below it. This type is useful if you have several maintenance checklist lines that can be divided into specific areas. Headers provide an overview for the worker who will complete a maintenance checklist that has many maintenance checklist lines. After you select this type, enter a descriptive name in the **Name** field.
     - **Template** – The line is used to make a reference to an existing template. After you select this type, enter a name for the template in the **Name** field. In the **Template** field, select the template.
-    - **Variable** – The line is used to define a possible result in a range. For information about how to set up maintenance checklist variables, see the [Create a maintenance checklist variable](#create-a-maintenance-checklist-variable) section. After you select this type, enter a descriptive name for the variable in the **Name** field. In the **Variable** field, select the variable. In the **Instructions** field, enter a description of what must be done. If the step is mandatory for the maintenance checklist, set the **Mandatory** option to **Yes**.
-    - **Measurement** – The line is used to record a specific measurement. You can set up the measurement that should be related to a predefined counter. After you select this type, enter a name for the template in the **Name** field. If this step is mandatory for the maintenance checklist, set the **Mandatory** option to **Yes**. If you want to use the measurement line as a counter registration, select the counter in the **Counter** field. The related **Unit** field is then automatically updated. If you've selected a counter, select the update method in the **Value** field. In the **Min. value** and **Max. value** fields, enter the allowed value range. In the **Instructions** field, enter a description of what must be done.
+    - **Variable** – The line is used to define a possible result in a range. For information about how to set up maintenance checklist variables, see the [Create a maintenance checklist variable](#create-a-maintenance-checklist-variable) section. After you select this type, enter a descriptive name for the variable in the **Name** field. In the **Variable** field, select the variable. In the **Instructions** field, enter a description of what must be done. If the step is mandatory for the maintenance checklist, set the **Mandatory** option to *Yes*.
+    - **Measurement** – The line is used to record a specific measurement. You can set up the measurement that should be related to a predefined counter. After you select this type, enter a name for the template in the **Name** field. If this step is mandatory for the maintenance checklist, set the **Mandatory** option to *Yes*. If you want to use the measurement line as a counter registration, select the counter in the **Counter** field. The related **Unit** field is then automatically updated. If you've selected a counter, select the update method in the **Value** field. In the **Min. value** and **Max. value** fields, enter the allowed value range. In the **Instructions** field, enter a description of what must be done.
 
         > [!NOTE]
-        > Any line of the **Measurement** type that doesn't have a counter setup is treated as an independent measurement registration that there is no automatic follow-up for in Asset Management. Likewise, if the selected counter type isn't present on the asset that is related to the work order, the maintenance checklist task is treated as an independent measurement. The counter value can be changed multiple times. It isn't posted until the [work order lifecycle state](work-order-lifecycle-states.md) is changed to a state where the **Process maintenance checklist** option is set to **Yes**.
+        > Any line of the **Measurement** type that doesn't have a counter setup is treated as an independent measurement registration that there's no automatic follow-up for in Asset Management. Likewise, if the selected counter type isn't present on the asset that is related to the work order, the maintenance checklist task is treated as an independent measurement. The counter value can be changed multiple times. It isn't posted until the [work order lifecycle state](work-order-lifecycle-states.md) is changed to a state where the **Process maintenance checklist** option is set to *Yes*.
 
     On the **Details** FastTab, the **Checks** field shows the total number of checklist lines in your template. This number includes the nested lines in any existing template that you've referenced in your template.
 
@@ -140,11 +140,11 @@ Maintenance checklist templates can be used as a common set of tasks that a work
     The **Details** FastTab shows an overview of the number of maintenance job type variants, skills, certificates, succeeding jobs, and asset types that have been created on this maintenance job type. The **Setup lines** field shows the number of maintenance job type default lines that have been set up on this maintenance job type. The **Assets** field shows the number of active assets that currently use this maintenance job type.
 
 1. On the **General** FastTab, in the **Maintenance job type category** field, select a maintenance job type category.
-1. Set the **Maintenance downtime activities** option to **Yes** if the maintenance job type requires a maintenance stop of the equipment before the job can be performed.
+1. Set the **Maintenance downtime activities** option to *Yes* if the maintenance job type requires a maintenance stop of the equipment before the job can be performed.
 1. On the **Description** FastTab, enter a description of the maintenance job type.
 1. On the **Maintenance job type variants** FastTab, you can add variants to the maintenance job type.
 1. On the **Required skills** and **Required certificates** FastTabs, you can add skills and certificate requirements to the maintenance job type.
-1. If a specific maintenance job type must be performed next, add it on the **Succeeding jobs** FastTab. You can also set up a maintenance job type variant and trade that are related to the maintenance job type. If the succeeding job should start a specific number of days before or after the job that uses this maintenance job type has started, enter the number of days in the **Delay by days** field. Positive numbers represent days after the start of the related job, and negative numbers represent days before the scheduled start of the related job. For example, if you enter **5**, the succeeding job will start five days after the start of the job that is related to the maintenance job type. If you enter **-3**, the succeeding job will start three days before the scheduled start of the job that is related to the maintenance job type.
+1. If a specific maintenance job type must be performed next, add it on the **Succeeding jobs** FastTab. You can also set up a maintenance job type variant and trade that are related to the maintenance job type. If the succeeding job should start a specific number of days before or after the job that uses this maintenance job type has started, enter the number of days in the **Delay by days** field. Positive numbers represent days after the start of the related job, and negative numbers represent days before the scheduled start of the related job. For example, if you enter *5*, the succeeding job will start five days after the start of the job that is related to the maintenance job type. If you enter *-3*, the succeeding job will start three days before the scheduled start of the job that is related to the maintenance job type.
 
     > [!NOTE]
     > If you add more than one maintenance job type line, the sequence of the lines indicates the order that they should be performed in. The sequence starts at the top of the list.
@@ -167,7 +167,7 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 1. In the **Maintenance job type variant** and **Trade** fields, select a maintenance job type variant and a maintenance job trade as you require.
 1. Select **Forecast**.
 1. On the **Maintenance job type default forecast** page, you can make forecasts on hours, items, and expenses. On the relevant tabs, select **Add**, and make selections to create the required forecasts for the maintenance job type.
-1. On the **Item forecast** tab, you can select inventory dimensions that should be shown on the item line. Select **Inventory** \> **Dimensions**, select the dimensions to show, set the **Save setup** option to **Yes**, and then select **OK**.
+1. On the **Item forecast** tab, you can select inventory dimensions that should be shown on the item line. Select **Inventory** \> **Dimensions**, select the dimensions to show, set the **Save setup** option to *Yes*, and then select **OK**.
 1. On the **Item forecast** tab, select **Item where used** to see an overview of where the item on the selected line is used in Asset Management in relation to assets, maintenance job type default, spare parts, and work orders.
 
     The **Maintenance forecast totals** FastTab shows an overview of forecast totals. This overview includes the total number of hours and forecast lines that have been created.
@@ -187,7 +187,7 @@ Maintenance checklist templates can be used as a common set of tasks that a work
     > [!NOTE]
     > To copy the maintenance checklist setup from another maintenance job type, select **Copy maintenance checklist**, and then select the maintenance job type to copy the setup from.
     >
-    > You can easily create a template from an existing maintenance checklist. You can then reuse the template across multiple maintenance checklists. The new template will be an exact copy of the active maintenance checklist. Select **Create template**, and then enter a name for the template. To replace the existing maintenance checklist with a single line that references the new template, set the **Replace** option to **Yes**. You can view the contents of the template in the **Maintenance checklist templates** details page.
+    > You can easily create a template from an existing maintenance checklist. You can then reuse the template across multiple maintenance checklists. The new template will be an exact copy of the active maintenance checklist. Select **Create template**, and then enter a name for the template. To replace the existing maintenance checklist with a single line that references the new template, set the **Replace** option to *Yes*. You can view the contents of the template in the **Maintenance checklist templates** details page.
 
 1. Select **Save** to save your changes.
 1. Return to the **Maintenance job type defaults** page.

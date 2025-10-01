@@ -1,10 +1,10 @@
 --- 
 title: Create a direct debit mandate for a customer
-description: Learn about how to create a direct debit mandate and use it on an invoice, including step-by-step processes for creating bank accounts and defining payment methods. 
+description: Learn how to create a direct debit mandate and use it on an invoice. 
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: how-to
-ms.date: 04/05/2024
+ms.date: 08/05/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 
