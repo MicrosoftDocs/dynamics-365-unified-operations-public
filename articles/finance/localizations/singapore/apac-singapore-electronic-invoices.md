@@ -32,7 +32,7 @@ Before you start, make sure these prerequisites are in place:
 - The company has a signed agreement with the electronic document delivery service provider that supports document interchange in the PEPPOL (PINT) format.
 - Register the following profile ID for Microsoft Dynamics 365 Finance electronic document interchange:
 
-    - **urn:fdc:peppol.eu:2017:poacc:billing:01:1.0** – Use this profile to interchange documents in PEPPOL (PINT) format.
+    - **urn:peppol:bis:billing** – Use this profile to interchange documents in PEPPOL (PINT) format.
 
 - Get the credentials from the service provider to integrate the Electronic Invoicing service with the [Electronic Invoicing service independent software vendor (ISV) last-mile connector](../global/e-invoicing-isv-connector.md).
 
