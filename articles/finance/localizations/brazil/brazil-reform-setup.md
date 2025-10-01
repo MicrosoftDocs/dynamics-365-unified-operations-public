@@ -266,8 +266,8 @@ To enable advanced tax calculation, follow these steps.
 
 ## Related set up information
 
-- **Sales tax authorities**: Learn more avout Sales tax authorities in [Set up sales tax authorities - Finance | Dynamics 365 | Microsoft Learn](/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-authorities).
--**Ledger posting groups**: Learn more about Ledger posting groups in [Set up Ledger posting groups for sales tax - Finance | Dynamics 365 | Microsoft Learn](/dynamics365/finance/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax).
--**Settlement periods**: Learn more about Settlement periods in [Set up sales tax settlement periods - Finance | Dynamics 365 | Microsoft Learn](/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-settlement-periods).
+- **Sales tax authorities**: Learn more avout Sales tax authorities in [Set up sales tax authorities](/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-authorities).
+-**Ledger posting groups**: Learn more about Ledger posting groups in [Set up Ledger posting groups for sales tax](/dynamics365/finance/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax).
+-**Settlement periods**: Learn more about Settlement periods in [Set up sales tax settlement periods](/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-settlement-periods).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
