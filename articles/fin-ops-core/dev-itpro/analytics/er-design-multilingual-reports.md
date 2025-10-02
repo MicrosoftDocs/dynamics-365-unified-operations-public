@@ -4,7 +4,7 @@ description: Learn about how you can use Electronic reporting (ER) labels to des
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 05/31/2022
+ms.date: 10/02/2025
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
