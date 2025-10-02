@@ -13,7 +13,11 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up the information required to generate the electronic invoice XML for Costa Rica.
+This article describes the main configuration settings required to issue electronic invoices in Costa Rica using Microsoft Dynamics 365 Finance.
+
+> [!NOTE]
+> In addition to these settings, you may need to configure other fields that are related to additional system features. To ensure a complete and accurate implementation of the Costa Rican localization, it's recommended that you review the rest of the available documentation for country-specific configurations.
+> Learn more in [Costa Rica overview](costa-rica.md).
 
 ## Prerequisites
 
@@ -38,6 +42,7 @@ Before you complete the procedures in this article, make sure the following prer
 | Format  | :::no-loc text="Project Debit Note (CRI)":::                            |
 | Format  | :::no-loc text="Project e-invoice (CR)":::                            |
 | Format  | :::no-loc text="Project Export e-Invoice (CRI)":::                            |
+| Format  | :::no-loc text="Purchase e-invoice (CRI)":::                            |
 
 Learn more in [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 - Configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
@@ -50,12 +55,13 @@ These configurations are required for Costa Rican electronic invoices.
 - Set up the tax application
 - Set up the legal entity
 - Set up customers
+- Set up vendors
 - Set up the document classes
 - Set up the sales point prefix
 - Set up the field master lists
 - Set up the fiscal information
 - Set up the addresses
-- Set up other tax applications
+- Set up other configurations
 - Set up charges and discounts
 - Set up taxes
 
@@ -94,6 +100,19 @@ To configure customers, follow these steps.
    1. In the top menu go to **General** \> **Business classification**.
    1. Create a new record.
    1. Complete the **Business classifications** field with the customer activity code number.
+  
+### Configure vendors
+
+To configure vendors, follow these steps.
+
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+1. For each vendor used in transactions:
+   1. Complete the address fields with the country/region, state, county and city.
+   1. Complete the contact information with the email address and set it to **Primary**.
+   1. In the LATAM section, complete the **Taxpayer type** with an option that represents the vendor.
+   1. Complete the **Based in country/region** with an option that represents the vendor.
+   1. Complete the **Country/region document type** field with the option that represents the vendor.
+   1. In the LATAM section, complete the **Country/region identification number** field, enter the vendor ID number (for example, 1-123-45678901).
 
 ### Configure the document classes
 
@@ -165,8 +184,8 @@ To configure the method of payments, follow these steps.
 1. For vendors, go to **Accounts payable** \> **Payments setup** \> **Methods of payment**.
 1. For each record in the list:
    1. Select the record, and then go to **Local instrument**.
-   1. Create a new record
-   1. Enter the **Code** field used for Costa Rican electronic invoicing
+   1. Create a new record.
+   1. Enter the **Code** field used for Costa Rican electronic invoicing.
 
 #### Terms of payments
 
@@ -316,6 +335,14 @@ Learn more in [bills of materials and formulas](/dynamics365/supply-chain/produc
 
 > [!NOTE] 
 > The transactional quantity is defined based on the value in the **From qty.** field within the BOM record's **Header** section. Each transaction references only one BOM.
+
+ltm-core-purchase-invoice-posting
+
+## Purchase invoice
+
+To explore more about purchase invoice posting in Latin America, please visit the link below.
+
+[Purchase invoice posting for Latin America](ltm-core-purchase-invoice-posting.md).
 
 ## Electronic payment receipt
 
