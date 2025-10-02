@@ -163,8 +163,8 @@ To configure fiscal information, follow these steps.
 To configure addresses, follow these steps.
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
+1. For each record (State, County and City) used in electronic invoicing complete the **Description** field according to the Costa Rican normative.
 1. For each record (State, County and City) used in electronic invoicing go to **LATAM** \> **Tax application** to assign the tax application codes according to the Costa Rican normative.
-1. For each record (State, County and City) used in electronic invoicing complete the description field according to the Costa Rican normative.
 
 Learn more in [Address setup for Latin America](ltm-core-address-setup.md).
 
@@ -233,7 +233,7 @@ To configure Units, follow these steps.
    1. In the **Tax application code** field, enter the unit code according to the Costa Rican normative.
 
 > [!NOTE]
-> When posting transactions using Free Text Invoice or Project on Account Invoice for sales, or Invoice Journal for purchases, the unit used will default to "Unid" 
+> When posting transactions using Free Text Invoice or Project on Account Invoice for sales, or Invoice Journal for purchases, the unit used will default to "Unid".
 
 #### Currencies configuration
 
@@ -284,17 +284,28 @@ To configure the taxes for each tax and percentage used, follow these steps.
 
 ## Configure electronic document references
 
+To configure electronic document references, follow these steps.
+
+1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Electronic documents references**.
+1. In the **Tax application Id** field, enter the ID that is used for Costa Rican electronic invoices.
+
+### Steps to reference a document
+
 When you issue an electronic document that has an associated document, you must select **References** on the posting page and add the associated document.
 
-### Reference a document
+To reference a document for sales invoices, follow these steps.
 
-To reference a document, follow these steps.
+1. Go to the General tab, click on **Source Vouchers** and from the list of documents, select the document to be associated.
+1. In the **Reference code** field enter a number code for reference reason.
+1. Complete the **Reference reason** with a motive.
+
+To reference a document for purchase invoices, follow these steps.
 
 1. In the **Reference code** field, enter the number code for the reference reason according to the Costa Rican normative.
 1. Enter the date in the **Reference date** field.
 1. Enter the complete document number in the **Reference document number** field.
 1. Enter the document type code of the referenced transaction in the **Reference document type** field.
-1. Enter a reason in the **Reference reason** field.
+1. Complete the **Reference reason** with a motive.
 
 ## Configure lookups
 
