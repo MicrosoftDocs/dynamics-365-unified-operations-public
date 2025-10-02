@@ -2,12 +2,11 @@
 # required metadata
 
 title: Configure, install, and activate Modern POS (MPOS)
-description: This article describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
+description: Learn how to configure, download, and install, and activate Microsoft Dynamics 365 Commerce Modern POS (MPOS) on various platforms.
 author: jashanno
-ms.date: 07/25/2024
+ms.date: 10/02/2025
 ms.topic: how-to
-audience: Developer, IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: johnmichalak
 ms.assetid: 1a8dba89-f81b-40d5-9e1e-dba7b335600d
 ms.search.region: Global
 ms.author: asharchw
@@ -19,6 +18,8 @@ ms.custom:
 # Configure, install, and activate Modern POS (MPOS)
 
 [!include [banner](../includes/banner.md)]
+
+This article explains how to configure, download, and install, and activate Microsoft Dynamics 365 Commerce Modern POS (MPOS) on various platforms.
 
 > [!WARNING]
 > After Commerce Scale Unit (CSU) is updated to version 10.0.29 or later, the point of sale (Modern POS or Store Commerce) version must be 10.0.27 or later (shown in point of sale as version 9.27). The migration to .NET Core is the reason for this requirement.
@@ -223,6 +224,7 @@ The device should now be activated and ready to use.
 > [!WARNING]
 > An update of a Modern POS offline database isn't required for the installer to succeed. An offline database might maintain an older version and might not be updated if any error occurs. When customizations are updated or the update failure isn't detected, an offline database might not work correctly. In these scenarios, it's important that you fix the blocking issue and update the Modern POS again, so that the offline database is correctly updated.
 
+<!--
 ## Troubleshooting
 
 ### Troubleshoot installation
@@ -359,6 +361,8 @@ The device should now be activated and ready to use.
 On a single-computer system, such as a developer topology or a demo environment, or when Commerce Scale Unit and Modern POS are installed on the same computer, Modern POS can't complete device activation.
 
 **Solution:** This issue occurs because Modern POS can't make network calls to the same computer (that is, calls to itself). While this should never be a scenario in a production setting, the issue can be mitigated by enabling an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enable this loopback for Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)). It is important to understand that a loopback can be a security risk, so it is not recommended that you use a loopback unless absolutely necessary.
+
+-->
 
 ## Additional resources
 
