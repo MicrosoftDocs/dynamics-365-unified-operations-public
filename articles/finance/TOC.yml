@@ -2874,6 +2874,8 @@
                   items:
                     - name: Guatemala overview
                       href: localizations/iberoamerica/guatemala.md
+                    - name: Configure electronic invoice parameters for Guatemala
+                      href: localizations/iberoamerica/ltm-guatemala-configure-electronic-invoice.md
                     - name: Configure sales and purchase invoices for Guatemala
                       href: localizations/iberoamerica/ltm-configure-invoices-guatemala.md
                     - name: Create customer and vendor records with an address in Guatemala
