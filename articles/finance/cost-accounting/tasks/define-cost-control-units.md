@@ -2,7 +2,7 @@
 title: Define cost control units
 description: This procedure shows how to define cost control units in the cost accounting ledger, including a step-by-step process for defining control units.
 author: twheeloc
-ms.author: kfend
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 03/27/2023
 ms.reviewer: twheeloc
