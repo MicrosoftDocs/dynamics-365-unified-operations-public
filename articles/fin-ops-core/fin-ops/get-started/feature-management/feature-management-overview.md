@@ -4,7 +4,7 @@ description: Learn about Feature management and how you can use it, including an
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 06/09/2025
+ms.date: 10/24/2025
 ms.reviewer: twheeloc
 audience: Application user
 ms.search.region: Global 
@@ -31,7 +31,7 @@ The feature list includes the following information:
 - **Added** – The date when the feature was added to your environment. This date is automatically entered when you update your environment during the monthly release cycles.
 - **Feature state** – The current lifecycle state of the feature: **Preview**, **Released** (shown as blank), **On by default**, and **Mandatory**. The states are covered in more details later in this article. 
 - **Module** – The module that is affected by the new feature.
-- **Type** – The type of the feature. Can be Feature or Hotfix. A hotfix is a subtype of a feature, and has a shorter life-cycle.
+- **Type** – The type of the feature and can be **Feature** or **Hotfix**. A **Hotfix** is a subtype of a feature, and has a shorter life-cycle.
 
 When you select a feature, more information appears in the details pane to the right of the feature list. At the top of the pane, you see the feature name, the date when the feature was added, the module that's affected by the feature, and a **Learn more** link. Select this link to view the documentation for the feature. If documentation isn't available, you're taken to a temporary page. The details pane also includes a **Comments** field where you can add your own comments about the feature.
 
@@ -79,19 +79,19 @@ Features that can be disabled, and that were added as released and optional befo
 Features that can't be disabled, and that were added as released and optional before or as part of the April release, are expected to transition to **Mandatory** in April of the following year.
 
 ## Hotfix states
-Hotfixes have a shorter transition through states than features. Hotfixes are introduced by Product quality updates, and will eventually becoming fully integrated in the product and no longer appear in Feature manangement. For each hotfix, you can use the **Learn more** link to get detailed information about availability. This section describes the valid hotfix states.
+Hotfixes have a shorter transition through the states than features. Hotfixes are introduced by Product quality updates, and eventually become fully integrated in the product and no longer appear in Feature manangement. For each hotfix, use the **Learn more** link to get detailed information about availability. This section describes the valid hotfix states.
 
 ### Released (optional)
 
-The **Feature state** column is blank. Hotfixes are initially added as released, and not turned on by default, and enabling them is optional. 
+The **Feature state** column is blank. Hotfixes are initially added as released, and arn't turned on by default, and enabling them is optional. 
 
 ### Fully integrated
 
-The hotfix no longer appears in Feature management. It indicates that the hotfix is turned on, and you can't disable them without contacting Microsoft.
+The hotfix doesn't appear in Feature management, the hotfix is turned on, and can't be disabled without contacting Microsoft.
 
 ### Example of expected hotfix lifecycle
 
-Hotfixes that were added in a Product quality update for the April release, are expected to be **Fully integrated** in the next upcoming release. For versions already released, the hotfix will also be provided in Product quality updates, and remain as **Released**. For example, a Hotfix released in August, will be available in Product Quality Updates for the April and July releases, and **Fully integrated** in the October release.
+Hotfixes are added in a Product quality update for the April release, are expected to be **Fully integrated** in the next upcoming release. For versions already released, the hotfix is provided in Product quality updates, and remain as **Released**. For example, a hotfix released in August, is available in Product quality updates for the April and July releases, and **Fully integrated** in the October release.
 
 ## Enable a feature
 
