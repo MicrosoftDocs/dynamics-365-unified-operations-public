@@ -319,11 +319,13 @@ For electronic invoicing, you must configure the **SSRS Reports / Services refer
 To configure SSRS reports and services references, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **SSRS Reports / Services references**.
-1. Create a new record1. In the **Parameter** section, add the following line:
- **Name:** TaxApplicationId - **Value:** CRFE. This code must match the tax application used for electronic invoicing.* field.
-1. In the **Sales point type** field, select **Pre-printed**. This selection must match the sales point type used for electronic invoicing.
+1. Create a new record.
+1. Complete the Report/Service Id and Report/Service name with a code and description.
+1. In Settings tab, select Service for the Report/Service type field.
+1. In the **Sales point type** field, select **Pre-printed** (This selection must match the sales point type used for electronic invoicing).
 1. In **Parameter** section, add the following line:
- **Name:** TaxApplicationId - **Value:** CRFE (this code must match the tax application used for electronic invoicing).
+   1. **Name:** TaxApplicationId.
+   1. **Value:** CRFE (this code must match the tax application used for electronic invoicing).
 
 > [!NOTE] 
 > This configuration applies to all sales points used for every invoice, credit note, debit note, purchase invoice, and payment receipt.
