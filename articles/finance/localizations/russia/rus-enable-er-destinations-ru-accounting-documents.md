@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 08/18/2025
+ms.date: 10/02/2025
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2022-01-27
