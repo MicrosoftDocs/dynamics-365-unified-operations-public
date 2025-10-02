@@ -25,7 +25,7 @@ ER format configurations usually contain at least one output component: a file. 
 
 ## Overview
 
-You can set up destinations only for ER configurations that you [import](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) into the current Finance instance and for the formats that are available on the **Electronic reporting configurations** page. You can access ER destination management at **Organization administration** \> **Electronic reporting** \> **Electronic reporting destination**.
+You can set up destinations only for ER configurations that you import into the current Finance instance and for the formats that are available on the **Electronic reporting configurations** page. You can access ER destination management at **Organization administration** \> **Electronic reporting** \> **Electronic reporting destination**.
 
 ### Default behavior
 
