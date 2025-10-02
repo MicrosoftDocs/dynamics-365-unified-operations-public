@@ -4,7 +4,7 @@ description: Learn about how to configure a printer destination for each FOLDER 
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 02/14/2022
+ms.date: 10/02/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
