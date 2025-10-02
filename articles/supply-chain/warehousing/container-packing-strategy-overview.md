@@ -66,12 +66,6 @@ This scenario shows how you can decrease the number of containers that are evalu
 
 ### Prerequisites
 
-#### Turn on the Consolidate shipments feature in your system
-
-This scenario uses the *Consolidate shipments* feature. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Consolidate shipments* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
-#### Make demo data available
-
 This scenario references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management. If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.
 
 ### Inspect or create container types

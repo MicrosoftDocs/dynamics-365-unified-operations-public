@@ -17,13 +17,6 @@ Manual handling of sales and transfer line picking exceptions enables administra
 
 The functionality that is described here should be used only in cases where the system can't finish processing the warehouse processes stack in the usual way. By default, only users who have a system admin role are allowed to use it. However, you can grant access to it by assigning the *Pick sales lines manually* privilege to other roles as you require.
 
-## Turn on this feature for your system
-
-Before you can use the features described in this article, they must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on. In the **Feature management** workspace, the features are listed by using the following names:
-
-- *Manual sales line picking service for admin or similar trusted users*<br>(As of Supply Chain Management version 10.0.25, this feature is mandatory and can't be turned off.)
-- *Manual transfer line picking service for admin or similar trusted users*
-
 ## Correct transactions related to sales or transfer order lines
 
 Use the following procedure to correct transactions that are related to sales or transfer order lines.

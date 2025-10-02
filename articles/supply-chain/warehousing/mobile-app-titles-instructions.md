@@ -19,10 +19,6 @@ This article describes how to create and show custom instructions for every step
 - **Ramp up workers faster by letting them follow simple instructions for every task step.** Every step of a flow provides instructions that enable front-line workers to understand the task.
 - **Provide instructions that match your own processes.** Write your own instructions to match your business and warehouse processes. For example, you can make the terminology fit your physical space and local abbreviations.
 
-## Turn the Warehouse app step instructions feature on or off
-
-Before you can use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Warehouse app step instructions* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
 ## Step titles and step instructions in the app
 
 Every step in a task flow on the Warehouse Management mobile app is identified by a step ID. Additionally, every step has a title, icon, and instruction. (Learn more in [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md).)
@@ -46,7 +42,7 @@ The step instruction is automatically shown when a step is opened. Workers can d
 
 ## Load the default setup
 
-When you first turn on the *Warehouse app step instructions* feature, your system won't contain any customizable step titles or instructions. Therefore, the first thing that you should do is load the default setup. The default setup provides texts for all the available step IDs in every supported language. To load the default setup, follow these steps.
+If your system doesn't already contain default customizable step titles or instructions, then you can load a default setup. The default setup provides texts for all the available step IDs in every supported language. To load the default setup, follow these steps.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device steps**.
 1. On the Action Pane, select **Create default setup**. The page is filled in with the standard steps.
