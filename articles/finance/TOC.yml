@@ -4420,6 +4420,8 @@
                       href: localizations/iberoamerica/ltm-create-customer-vendor-uruguay.md
                     - name: Get started with Electronic invoicing for Uruguay
                       href: localizations/iberoamerica/ltm-uruguay-electronic-invoice-configuration.md
+                    - name: Configure electronic invoice parameters for Uruguay
+                      href: localizations/iberoamerica/ltm-uruguay-configure-electronic-invoice.md
                     - name: Set up a legal entity and tax information for Uruguay
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay.md
                 - name: Venezuela
