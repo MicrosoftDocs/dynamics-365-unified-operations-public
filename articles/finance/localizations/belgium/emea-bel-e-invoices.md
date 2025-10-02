@@ -194,7 +194,7 @@ To enter the contact person, follow these steps.
     > All available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid email address and phone number.
 
 ### Verify the buyer's identification
-
+==TO DO==
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
 1. On the **Invoice and delivery** FastTab, in the **SALES TAX** section, in the **Tax exempt number** field, make sure that a valid VAT number is entered for the customer.
 
