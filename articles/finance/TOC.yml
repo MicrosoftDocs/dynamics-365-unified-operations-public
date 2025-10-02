@@ -2874,6 +2874,8 @@
                   items:
                     - name: Guatemala overview
                       href: localizations/iberoamerica/guatemala.md
+                    - name: Configure electronic invoice parameters for Guatemala
+                      href: localizations/iberoamerica/ltm-guatemala-configure-electronic-invoice.md
                     - name: Configure sales and purchase invoices for Guatemala
                       href: localizations/iberoamerica/ltm-configure-invoices-guatemala.md
                     - name: Create customer and vendor records with an address in Guatemala
@@ -4420,6 +4422,8 @@
                       href: localizations/iberoamerica/ltm-create-customer-vendor-uruguay.md
                     - name: Get started with Electronic invoicing for Uruguay
                       href: localizations/iberoamerica/ltm-uruguay-electronic-invoice-configuration.md
+                    - name: Configure electronic invoice parameters for Uruguay
+                      href: localizations/iberoamerica/ltm-uruguay-configure-electronic-invoice.md
                     - name: Set up a legal entity and tax information for Uruguay
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay.md
                 - name: Venezuela
@@ -5283,6 +5287,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?context=/dynamics365/context/finance
                     - name: Configure print management record-specific destinations
                       href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?context=/dynamics365/context/finance
+                    - name: Output unfolding for Folder component of ER format
+                      href: ../fin-ops-core/dev-itpro/analytics/er-output-unfolding.md?context=/dynamics365/context/finance
+                    - name: Change page layout properties of a template in ER destinations
+                      href: ../fin-ops-core/dev-itpro/analytics/er-change-page-layout-properties-of-template.md?context=/dynamics365/context/finance
+                    - name: Output conversion to PDF
+                      href: ../fin-ops-core/dev-itpro/analytics/er-output-conversion-to-pdf.md?context=/dynamics365/context/finance
+                    - name: Export-import and replicate ER destinations
+                      href: ../fin-ops-core/dev-itpro/analytics/er-export-import-replicate-destinations.md?context=/dynamics365/context/finance
+                    - name: Destination failure handling
+                      href: ../fin-ops-core/dev-itpro/analytics/er-destination-failure-handling.md?context=/dynamics365/context/finance
                     - name: Design a new ER solution to print ZPL labels
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-zpl-labels.md?context=/dynamics365/context/finance
                 - name: Set up a reference to an ER format
