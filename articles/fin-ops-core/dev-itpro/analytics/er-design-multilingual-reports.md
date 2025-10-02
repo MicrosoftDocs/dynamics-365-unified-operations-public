@@ -178,7 +178,7 @@ ER supports different ways to specify the culture for a generated report. Theref
 > - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
 > - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
 >
-> In version 10.0.20 and later, the locale of format components of the **Common\\File** and **Excel\\File** types is used to format values during [PDF conversion](electronic-reporting-destinations.md#OutputConversionToPDF) of a generated document.
+> In version 10.0.20 and later, the locale of format components of the **Common\\File** and **Excel\\File** types is used to format values during [PDF conversion](er-output-conversion-to-pdf.md) of a generated document.
 
 ## Translation
 
