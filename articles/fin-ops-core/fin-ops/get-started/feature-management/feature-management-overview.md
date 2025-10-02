@@ -25,12 +25,13 @@ You can open the **Feature management** workspace by selecting the appropriate t
 
 The feature list includes the following information:
 
-- **Feature name** – A description of the feature that was added.
+- **Name** – A description of the feature that was added.
 - **Status** – A symbol indicates whether a feature is turned on (check mark), is turned off (blank), scheduled to be turned on (clock), is mandatory (lock), requires attention before you turn it on (warning symbol), or can't be turned on (X). The setting that's shown is used for all legal entities. When a feature has been turned on, it's still controlled by security. Therefore, the feature is only available to users who have access to it based on their security role. It's also only available in legal entities that the user has access to.
 - **Enable date** – The date when the feature was turned on or scheduled to be turned on.
-- **Feature added** – The date when the feature was added to your environment. This date is automatically entered when you update your environment during the monthly release cycles.
+- **Added** – The date when the feature was added to your environment. This date is automatically entered when you update your environment during the monthly release cycles.
 - **Feature state** – The current lifecycle state of the feature: **Preview**, **Released** (shown as blank), **On by default**, and **Mandatory**. The states are covered in more details later in this article. 
 - **Module** – The module that is affected by the new feature.
+- **Type** – The type of the feature. Can be Feature or Hotfix. A hotfix is a subtype of a feature, and has a shorter life-cycle.
 
 When you select a feature, more information appears in the details pane to the right of the feature list. At the top of the pane, you see the feature name, the date when the feature was added, the module that's affected by the feature, and a **Learn more** link. Select this link to view the documentation for the feature. If documentation isn't available, you're taken to a temporary page. The details pane also includes a **Comments** field where you can add your own comments about the feature.
 
@@ -71,11 +72,26 @@ Features that are updated to **On by default** are turned on by default, but the
 
 **Mandatory** is the expected final state for features. It indicates that the features are turned on, and you can't disable them without contacting Microsoft. Optional features are expected to become mandatory after two major releases. Critical features can, by exception, be introduced as mandatory.
 
-## Example of expected feature lifecycle
+### Example of expected feature lifecycle
 
 Features that can be disabled, and that were added as released and optional before or as part of the April release, are expected to transition to **On by default** in the following October release. They're then expected to become **Mandatory** in April of the following year.
 
 Features that can't be disabled, and that were added as released and optional before or as part of the April release, are expected to transition to **Mandatory** in April of the following year.
+
+## Hotfix states
+Hotfixes have a shorter transition through states than features. Hotfixes are introduced by Product quality updates, and will eventually becoming fully integrated in the product and no longer appear in Feature manangement. For each hotfix, you can use the **Learn more** link to get detailed information about availability. This section describes the valid hotfix states.
+
+### Released (optional)
+
+The **Feature state** column is blank. Hotfixes are initially added as released, and not turned on by default, and enabling them is optional. 
+
+### Fully integrated
+
+The hotfix no longer appears in Feature management. It indicates that the hotfix is turned on, and you can't disable them without contacting Microsoft.
+
+### Example of expected hotfix lifecycle
+
+Hotfixes that were added in a Product quality update for the April release, are expected to be **Fully integrated** in the next upcoming release. For versions already released, the hotfix will also be provided in Product quality updates, and remain as **Released**. For example, a Hotfix released in August, will be available in Product Quality Updates for the April and July releases, and **Fully integrated** in the October release.
 
 ## Enable a feature
 
