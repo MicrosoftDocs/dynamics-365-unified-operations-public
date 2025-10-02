@@ -3,7 +3,7 @@ title: Store Commerce app
 description: Learn how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
 author: anush6121
 ms.author: anvenkat
-ms.date: 09/23/2025
+ms.date: 10/02/2025
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -248,9 +248,11 @@ To activate Store Commerce after installation, follow these steps.
 1. Activate Store Commerce by following the steps in [Activate Store Commerce using guided activation](retail-device-activation.md#activate-store-commerce-using-guided-activation).
 1. After activation is completed, sign in to the application by using an employee account.
 
+<!--
 ### Debug setup issues
 
 For debug information, see [Debug Store Commerce setup and installation issues](/previous-versions/troubleshoot/dynamics-365/commerce/point-of-sale/store-commerce-setup-installation).
+-->
 
 ## Customize the app
 
