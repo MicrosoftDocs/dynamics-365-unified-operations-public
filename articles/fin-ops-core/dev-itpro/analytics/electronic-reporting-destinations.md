@@ -46,7 +46,7 @@ You can find information about this job in several places:
 - Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs** to check the status of the scheduled job and the execution results of the completed job. When job execution completes successfully, select **Show files** on the **Electronic reporting jobs** page to get a generated outbound document.
 
     > [!NOTE]
-    > This document is stored as an attachment of the current job record and is controlled by the [Document management](/fin-ops/organization-administration/configure-document-management) framework. The [document type](/fin-ops/organization-administration/configure-document-management#configure-document-types) that is used to store ER artifacts of this type is configured in the [ER parameters](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+    > This document is stored as an attachment of the current job record and is controlled by the [Document management](../../fin-ops/organization-administration/configure-document-management.md) framework. The [document type](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) that is used to store ER artifacts of this type is configured in the [ER parameters](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 - On the **Electronic reporting jobs** page, select **Show files** to view the list of any errors and warnings that were generated during job execution.
 
@@ -64,7 +64,7 @@ After you create a reference, you can create a file destination for each **Folde
 
 Next, in the **Destination settings** dialog box, you can enable and disable individual destinations for the file destination. Use the **Settings** button to control all the destinations for a selected file destination. In the **Destination settings** dialog box, you can control each destination separately by setting the **Enabled** option for it. 
 
-You can create **multiple file destinations** for each output component of the same format. For example, you can use this capability to configure file destinations for a file component that's used to generate an outbound document in Excel format. One destination can be configured to store the original Excel file in the ER jobs archive, and another destination can be configured to simultaneously convert the Excel file to PDF format and send the PDF file by email. Learn more in [Archive](er-destination-type-archive.md), [Email](er-destination-type-email.md), and [Convert](#OutputConversionToPDF).
+You can create **multiple file destinations** for each output component of the same format. For example, you can use this capability to configure file destinations for a file component that's used to generate an outbound document in Excel format. One destination can be configured to store the original Excel file in the ER jobs archive, and another destination can be configured to simultaneously convert the Excel file to PDF format and send the PDF file by email. Learn more in [Archive](er-destination-type-archive.md), [Email](er-destination-type-email.md), and [Convert](er-output-conversion-to-pdf.md).
 
 :::image type="content" source="./media/ER_Destinations-SampleDestinations.png" alt-text="Screenshot of configuring multiple destinations for a single format element.":::
 
@@ -96,7 +96,7 @@ At the same time, you might have multiple versions of the format that you import
 
 :::image type="content" source="./media/ER_Destinations-ConfigurationVersions.png" alt-text="Screenshot of configuration versions list.":::
 
-By default, configured destinations are applied only when you run an ER format version that has a status of either **Completed** or **Shared**. However, you sometimes must use configured destinations when you run the draft version of an ER format. For example, you modify a draft version of your format, and you want to use configured destinations to test how the system delivers generated output. Follow these steps to apply destinations for an ER format when the draft version is run.
+By default, configured destinations are applied only when you run an ER format version that has a status of either **Completed** or **Shared**. However, you sometimes must use configured destinations when you run the draft version of an ER format. For example, you modify a draft version of your format, and you want to use configured destinations to test how the system delivers generated . Follow these steps to apply destinations for an ER format when the draft version is run.
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 1. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
@@ -142,7 +142,7 @@ No. The default Microsoft Azure Blob storage that is defined and used for the do
 
 ### What is the purpose of the File destination in the destination settings? What does that setting do?
 
-The **File** destination controls a dialog box of your web browser when you run an ER format in interactive mode. If you enable this destination, or if you don't define a destination for a configuration, an open or save dialog box appears in your web browser after an output file is created.
+The **File** destination controls a dialog box of your web browser when you run an ER format in interactive mode. If you enable this destination, or if you don't define a destination for a configuration, an open or save dialog box appears in your web browser after an  file is created.
 
 ### Can you give me an example of the formula that refers to a vendor account that I can send email to?
 
@@ -150,7 +150,7 @@ The formula is specific to the ER configuration. For example, if you use the ISO
 
 ### One of my format configurations contains multiple files that are grouped into one folder (for example, Folder1 contains File1, File2, and File3). How do I set up destinations so that Folder1.zip isn't created at all, File1 is sent by email, File2 is sent to SharePoint, and I can open File3 immediately after the configuration runs?
 
-Your format must first be available in the ER configurations. If this prerequisite is met, open the **Electronic reporting destination** page and create a new reference to the configuration. You must then have four file destinations, one for each output component. Create the first file destination, give it a name such as **Folder**, and select a file name that represents a folder in your configuration. Then select **Settings**, and make sure that all the destinations are disabled. For this file destination, the folder isn't created. By default, because of hierarchical dependencies between files and parent folders, the files behave in the same way. In other words, they aren't sent anywhere. To override that default behavior, you must create three more file destinations, one for each file. In the destination settings for each, you must enable the destination that the file should be sent to.
+Your format must first be available in the ER configurations. If this prerequisite is met, open the **Electronic reporting destination** page and create a new reference to the configuration. You must then have four file destinations, one for each  component. Create the first file destination, give it a name such as **Folder**, and select a file name that represents a folder in your configuration. Then select **Settings**, and make sure that all the destinations are disabled. For this file destination, the folder isn't created. By default, because of hierarchical dependencies between files and parent folders, the files behave in the same way. In other words, they aren't sent anywhere. To override that default behavior, you must create three more file destinations, one for each file. In the destination settings for each, you must enable the destination that the file should be sent to.
 
 ## More information
 
