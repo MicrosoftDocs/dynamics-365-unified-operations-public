@@ -112,7 +112,7 @@ To configure vendors, follow these steps.
    1. In the LATAM section, complete the **Taxpayer type** with an option that represents the vendor.
    1. Complete the **Based in country/region** with an option that represents the vendor.
    1. Complete the **Country/region document type** field with the option that represents the vendor.
-   1. In the LATAM section, complete the **Country/region identification number** field, enter the vendor ID number (for example, 1-123-45678901).
+   1. In the LATAM section, complete the **Country/region identification number** field, enter the vendor ID number.
 
 ### Configure the document classes
 
@@ -335,8 +335,6 @@ Learn more in [bills of materials and formulas](/dynamics365/supply-chain/produc
 
 > [!NOTE] 
 > The transactional quantity is defined based on the value in the **From qty.** field within the BOM record's **Header** section. Each transaction references only one BOM.
-
-ltm-core-purchase-invoice-posting
 
 ## Purchase invoice
 
