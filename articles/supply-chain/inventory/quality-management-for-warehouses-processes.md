@@ -19,16 +19,12 @@ The *Quality management for warehouse processes* feature lets you integrate item
 
 The *Quality management for warehouse processes* feature extends the capabilities of the basic quality management feature. It provides the option to create quality orders for the inventory that is sent to the quality control location, although quality orders aren't always required. Therefore, it allows for a lightweight quality control process that is based on warehouse work.
 
-## Turn on the Quality management for warehouse processes feature
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Quality Management For Warehouse Processes* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
 ## Key benefits
 
 The *Quality management for warehouse processes* feature automatically generates work as part of the receiving process, to move the inventory quantity that is required for quality control to a quality control location. If the quantity that is received exceeds the quantity that is required for quality control (according to the item sampling setup), the excess quantity is moved to an inbound location that is defined in the location directive setup. After the quality order is validated, work is automatically generated to move the quantity for the quality order to a new inbound or return location, based on the validation result and the location directive setup. The automatic generation of work that has only the quantity that must be moved to and from quality control provides an integrated process experience.
 
 > [!NOTE]
-> When the *Quality management for warehouse processes* feature is turned on, you can still take advantage of the manual process. In the manual process, inventory movement and movement by template are used to have a warehouse worker trigger the creation of warehouse work to move inventory from a quality control location to a new location. You can also still set up an inbound location directive that moves inventory in its entirety from a receiving location to a quality control location without considering the item sampling setup.
+> You can still take advantage of the manual process. In the manual process, inventory movement and movement by template are used to have a warehouse worker trigger the creation of warehouse work to move inventory from a quality control location to a new location. You can also still set up an inbound location directive that moves inventory in its entirety from a receiving location to a quality control location without considering the item sampling setup.
 
 ## Quality management and the Quality management for warehouse processes feature
 
@@ -136,9 +132,9 @@ Item sampling controls how often items are sent for quality control. The *Qualit
 
 To set up item sampling, go to **Inventory management \> Setup \> Quality control \> Item sampling**, and set the **Sampling scope** field to one of the following values:
 
-- **Order** – The source document line will be the basis for evaluating whether and how quality orders and/or quality item sampling work and quality order work are created. This value is the default value, and when it's selected, the system works the same way that it works when the *Quality management for warehouse processes* feature isn't turned on.
-- **Load** – Loads will be used as the basis for evaluating whether and how a quality order and/or work is created. This value is available only when the *Quality management for warehouse processes* feature is turned on.
-- **Shipment** – Shipments will be used as the basis for evaluating whether and how a quality order and/or work is created. This value is available only when the *Quality management for warehouse processes* feature is turned on.
+- **Order** – The source document line will be the basis for evaluating whether and how quality orders and/or quality item sampling work and quality order work are created.
+- **Load** – Loads will be used as the basis for evaluating whether and how a quality order and/or work is created.
+- **Shipment** – Shipments will be used as the basis for evaluating whether and how a quality order and/or work is created.
 
 > [!NOTE]
 > When the **Sampling scope** field is set to *Load* or *Shipment*, the load entity and shipment entities will be used, if they're available. If they aren't available, the order entity will be used.
@@ -282,8 +278,7 @@ You can define a test group that performs destructive testing. In the case of a 
 
 To work through this scenario, you must prepare your system in the following way:
 
-- Make sure that demo data is installed on the system, and select the **USMF** legal entity.
-- Turn on the *Quality management for warehouse processes* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (as of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off).
+- Make sure that demo data is installed on the system, and select the *USMF* legal entity.
 - Configure warehouse 51 to use the *Quality management for warehouse processes* feature by following these steps:
 
     1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.

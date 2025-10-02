@@ -23,10 +23,6 @@ Report results are stored in the **Compare item prices** data entity, which lets
 
 The **Compare item prices storage** report is helpful in cases where the output contains many lines. For example, the output will contain many lines if you have more than 40,000 items holding a pending item price in the costing version.
 
-## Turn the Compare item prices storage feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Compare item price storage* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
 ## Generate a Compare item prices storage report
 
 Follow these steps to generate and store a **Compare item prices storage** report:
