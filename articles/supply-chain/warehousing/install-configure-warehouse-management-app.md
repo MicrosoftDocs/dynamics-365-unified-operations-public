@@ -57,10 +57,6 @@ For the Warehouse Management mobile app to function correctly, your internal net
 - \*.applicationinsights.azure.us
 - \*.applicationinsights.azure.cn
 
-### Turn Warehouse Management mobile app features on or off in Supply Chain Management
-
-To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off.
-
 ## Get the Warehouse Management mobile app
 
 For smaller deployments, you might typically install the app on each device from the relevant store and then manually configure the connection to the environments that you're using.

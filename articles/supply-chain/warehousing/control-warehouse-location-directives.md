@@ -36,9 +36,6 @@ The work lines represent the physical tasks that are required to process the wor
 
 You can set up a query to control when a particular work template is used. For example, you can set a limitation so that a particular template can be used for work only in a specific warehouse. Alternatively, you might have several templates that create work for outbound sales order processing, depending on the sales origin. The system uses the **Sequence number** field to determine the order that the available work templates are assessed in. Therefore, if you have a very specific query for a particular work template, you should give it a low sequence number. That query will then be evaluated before the other, more general queries.
 
-> [!NOTE]
-> To prevent the system from automatically overwriting work template *sequence numbers* after a template has been deleted, turn on the *Preserve work template sequence numbers on delete* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
 To stop or pause a work process, you can use the **Stop work** setting on the work line. In that case, the worker who is performing the work won't be asked to perform the next work line step. To move on to the next step, that worker or another worker must select the work again. You can also separate the tasks within a piece of work by using a different *work class ID* on the work template lines.
 
 ## Location directives

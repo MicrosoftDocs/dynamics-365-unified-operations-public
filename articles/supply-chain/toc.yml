@@ -15,13 +15,11 @@
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
         - name: Supply Chain Management 10.0.45 (September 2025)
-          href: get-started/whats-new-scm-10-0-45.md         
+          href: get-started/whats-new-scm-10-0-45.md
         - name: Supply Chain Management 10.0.44 (June 2025)
-          href: get-started/whats-new-scm-10-0-44.md         
+          href: get-started/whats-new-scm-10-0-44.md
         - name: Supply Chain Management 10.0.43 (March 2025)
-          href: get-started/whats-new-scm-10-0-43.md         
-        - name: Supply Chain Management 10.0.42 (December 2024)
-          href: get-started/whats-new-scm-10-0-42.md
+          href: get-started/whats-new-scm-10-0-43.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -4061,8 +4059,6 @@
             href: warehousing/wave-template-grouping.md
           - name: Wave allocation
             href: warehousing/wave-allocation-method.md
-          - name: Schedule work creation during wave
-            href: warehousing/configure-wave-schedule-work-creation.md
           - name: Automatic rewaving of nonallocated shipment lines
             href: warehousing/auto-rewave-shipments.md
           - name: Wave execution notifications
