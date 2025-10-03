@@ -4,7 +4,7 @@ description: Learn how to set up security for Business performance analytics, in
 author: yashkv1
 ms.author: yvishwa
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 10/03/2025
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -112,7 +112,7 @@ If a user is assigned two or more dimension groups, a record must satisfy the fi
 - **Cost center:** All
 - **Department:** All
 
-The user will be able to view records for legal entities USMF and CNMF. For legal entity USMF, the user sees all cost centers and all department combinations. For legal entity CNMF, the user sees only records where the cost center is between 000001 and 000003 and the department is Marketing 01.
+The user is able to view records for legal entities USMF and CNMF. For legal entity USMF, the user sees all cost centers and all department combinations. For legal entity CNMF, the user sees only records where the cost center is between 000001 and 000003 and the department is Marketing 01.
 
 #### Dimension group example 4
 
