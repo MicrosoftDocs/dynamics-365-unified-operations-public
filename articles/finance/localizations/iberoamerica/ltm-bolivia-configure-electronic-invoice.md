@@ -40,7 +40,7 @@ Learn more in [Import electronic reporting (ER) configurations from Dataverse](g
 
 ## Configuration required for Bolivia electronic invoices
 
-Complete these configurations for Bolivia electronic invoices.
+The following configurations are required for Bolivia electronic invoices:
 
 - Set up the tax application
 - Set up the legal entity
