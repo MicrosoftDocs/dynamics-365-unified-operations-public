@@ -33,7 +33,7 @@ Automatic vendor selection that's based on predefined splits helps improve suppl
 
 ## Prerequisites
 
-To use this feature, it must be enabled for your system. As of version 10.0.36, this feature is turned on by default. As of Supply Chain Management version 10.0.43, it's mandatory and can't be turned off. If you're running a version older than 10.0.43, then admins can turn this functionality on or off by searching for the *Source products and materials from multiple vendors using Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be enabled for your system. As of version 10.0.36, this feature is turned on by default. As of Supply Chain Management version 10.0.43, it's mandatory and can't be turned off. If you're running a version older than 10.0.43, then admins can turn this functionality on or off by searching for the *Source products and materials from multiple vendors using Planning Optimization* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Define multisource policies
 
