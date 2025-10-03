@@ -30,7 +30,7 @@ Before completing the procedures in this article, ensure the following prerequis
 | Format  | :::no-loc text="Inventory e-invoice (DO)":::                   |
 | Format  | :::no-loc text="Project e-invoice (DO)":::                       |
 
-Learn more in [Import Electronic reporting (ER) configurations from Dataverse](global/workspace/gsw-import-er-config-dataverse.md).
+Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 - Configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - Configure all the LATAM extensions before continuing with the configuration in this article.
 
