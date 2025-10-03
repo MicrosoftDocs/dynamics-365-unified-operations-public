@@ -30,7 +30,8 @@ To use the features described in this article, your system must meet the followi
     - *Master company data sharing*
     - *(Preview) Cross-company data sharing for products*
 
-If you are running Supply Chain Management version 10.0.42 or older and would like to use this feature, then send an email with your environment ID in Microsoft Dynamics Lifecycle Services to the [Cross-company product sharing team](mailto:productsharing@service.microsoft.com). The Microsoft team that's responsible for the feature will then enable it for your environment. You must also follow the instructions provided in the [Set up your system for product sharing in version 10.0.42 and older](#old-version-setup) section later in this article.
+> [!NOTE]
+> If you are running Supply Chain Management version 10.0.42 or older and would like to use this feature, then send an email with your environment ID in Microsoft Dynamics Lifecycle Services to the [Cross-company product sharing team](mailto:productsharing@service.microsoft.com). The Microsoft team that's responsible for the feature will then enable it for your environment. You must also follow the instructions provided in the [Set up your system for product sharing in version 10.0.42 and older](#old-version-setup) section later in this article.
 
 ## Get started with cross-company data sharing
 
