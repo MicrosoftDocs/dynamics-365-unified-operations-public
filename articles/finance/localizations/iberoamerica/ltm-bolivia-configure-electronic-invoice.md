@@ -133,7 +133,7 @@ To configure fiscal information, follow these steps.
 To configure addresses, follow these steps.
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
-1. For each **Country** record used in electronic invoicing, go to **LATAM** \> **Tax application** to assign the tax application codes according to the Bolivian normative.
+1. For each **Country/Region** record used in electronic invoicing, go to **LATAM** \> **Tax application** to assign the tax application codes according to the Bolivian normative.
 1. For each **City** record used in electronic invoicing, enter the description according to the Bolivian normative.
 
 Learn more in [Address setup for Latin America](ltm-core-address-setup.md).
