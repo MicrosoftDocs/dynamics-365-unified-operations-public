@@ -34,8 +34,8 @@ Before you complete the procedures in this article, make sure the following prer
 | Format  | :::no-loc text=" (Preview) Service export e-Invoice (BO) ":::                          |
 | Format  | :::no-loc text=" (Preview) Zero Rate e-Invoice (BO) ":::                          |
 
-Learn more in [Import electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md).
-- Configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md).
+Learn more in [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+- Configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - Configure all the LATAM extensions before you continue with the configuration in this article.
 
 ## Configuration required for Bolivia electronic invoices
