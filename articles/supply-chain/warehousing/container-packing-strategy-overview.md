@@ -16,13 +16,13 @@ ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, 
 
 A *container packing strategy* is a strategy that you can use to define item allocations across containers. This article explains the differences between the *Pack into all open containers* and *Pack into current container only* strategies.
 
-- **Pack into all open containers** – The system must check all open containers that have already been created during the containerization cycle, to make sure that the item will fit into one of them. During packing, the system checks each item to determine whether it will fit into any of the previously created containers. If the item won't fit into an existing container, the system creates a new container and continues until it has finished packing the whole order.
+- **Pack into all open containers** – During packing, the system checks each item to determine whether it fits into any of the previously created containers. If an item doesn't fit into an existing container, the system creates a new container and continues until it finishes packing the whole order.
 
-    For example, *n* ordered items require containerization. In the worst case, every time that the system processes an item that doesn't fit into any existing container, it will do a total of (\[(*n* – 1) × (*n* + 1)\] ÷ 2) checks to evaluate whether the item fits into the existing containers.
+    For example, *n* ordered items require containerization. In the worst case, every time that the system processes an item that doesn't fit into any existing container, it does a total of (\[(*n* – 1) × (*n* + 1)\] ÷ 2) checks to evaluate whether the item fits into an existing container.
 
-- **Pack into current container only** – The system must check only the most recently created container to make sure that the item will fit into it. During packing, the system checks each item to determine whether it will fit into the most recently created container. If the item won't fit into that container, the system creates a new container and continues until it has finished packing the whole order.
+- **Pack into current container only** – During packing, the system checks each item to determine whether it fits into the most recently created container. If the item doesn't fit into that container, the system creates a new container and continues until it finishes packing the whole order.
 
-    For example, *n* ordered items require containerization. In the worst case, the system will do a total of (*n* – 1) checks to evaluate whether the item fits into the containers.
+    For example, *n* ordered items require containerization. In the worst case, the system does a total of (*n* – 1) checks to evaluate whether the item fits into an existing container.
 
 ## Example of the flow for container packing strategies
 
@@ -34,7 +34,7 @@ You set up the following items for containerization.
 | HDMI Cable 12' | 2 × 1 × 1 | 1 |
 | HDMI Cable 18' | 3 × 1 × 1 | 2 |
 
-You also set up the following box that will be used for packaging.
+You also set up the following box to be used for packaging.
 
 | Container | Physical dimensions (length × width × height) | Weight | Volume |
 |---|---|---|---|
@@ -58,11 +58,11 @@ The following table summarizes how containerization works when you use the *Pack
 
 ## Example scenario: Pack single orders per container
 
-This section presents a scenario where the system is set up to consolidate multiple orders into one shipment. Therefore, containerization will be done from the sales order to ensure that every order that contains multiple products is packed into its own container.
+This section presents a scenario where the system consolidates multiple orders into one shipment. Therefore, the system performs containerization from the sales order to ensure that every order that contains multiple products is packed into its own container.
 
 This functionality lets you handle scenarios where you must pack only one sales order into each container, so that the distribution center can cross-dock full containers between retail stores. In addition to the retail scenarios (order per retail store and shipping to a distribution center for cross-docking) this technique is also commonly used in lean supply chains (sales order per just-in-time production line).
 
-This scenario shows how you can decrease the number of containers that are evaluated during packing by using the *Pack into current container only* strategy for containerization.
+This scenario shows how you can decrease the number of containers that the system evaluates during packing by using the *Pack into current container only* strategy for containerization.
 
 ### Prerequisites
 
@@ -70,7 +70,7 @@ This scenario references values and records that are included in the standard de
 
 ### Inspect or create container types
 
-To inspect your container types, or to create new container types if they are required, follow these steps.
+To inspect your container types, or to create new container types if they're required, follow these steps.
 
 1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container types**.
 1. Make sure that each of the following container types is available in your demo data. Edit or create container types as required.
@@ -107,7 +107,7 @@ To inspect your container types, or to create new container types if they are re
 
 ### Inspect or create container groups
 
-To inspect your container groups, or to create new container groups if they are required, follow these steps.
+To inspect your container groups, or to create new container groups if they're required, follow these steps.
 
 1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container groups**.
 1. Make sure that the following container group is available in your demo data. If it isn't available, select **New** to create it.
@@ -160,17 +160,17 @@ To create a new container build template, follow these steps.
     - **Search direction:** *Ascending*
 
     > [!IMPORTANT]
-    > To avoid cycling over all the other open containers, and to speed up the process by checking one container at a time, use the *Pack into current container only* strategy in addition to sorting by order number. This combination will work like a work break on a work template.
+    > To avoid cycling over all the other open containers, and to speed up the process by checking one container at a time, use the *Pack into current container only* strategy in addition to sorting by order number. This combination works like a work break on a work template.
 
 1. Select **OK** to close the query editor dialog box.
 1. While the row for the new template is still selected, select **Container mixing constraints** on the Action Pane.
 
-    You will now add a constraint that puts items from a single order into a single container. Items from any other order will be put into a separate container.
+    You now add a constraint that puts items from a single order into a single container. Items from any other order go into a separate container.
 
 1. Select **New** to create a mixing constraint that has the following settings:
 
     - **Table:** *Sales orders*
-    - **Field select:** *SalesId* (The field will appear as *Sales order* in the grid.)
+    - **Field select:** *SalesId* (The field appears as *Sales order* in the grid.)
 
 1. Select **OK** to add the constraint.
 1. Close the page.
@@ -196,7 +196,7 @@ To set up a work template, follow these steps.
 
 1. Go to **Warehouse management \> Setup \> Work \> Work templates**.
 1. Set the **Work order type** field to *Sales orders*.
-1. In the **Overview** grid, find and select the work template that should be used for packing single orders per container. For this scenario, select the **63 Pick to container** template.
+1. In the **Overview** grid, find and select the work template that you want to use for packing single orders per container. For this scenario, select the **63 Pick to container** template.
 1. On the Action Pane, select **Edit query**.
 1. A standard query editor dialog box appears. On the **Sorting** tab, add the following lines:
 
@@ -225,7 +225,7 @@ To set up a work template, follow these steps.
 1. You receive the following message: "Grouping will be reset, continue?" Select **Yes** to continue.
 1. While the **63 Pick to container** template is still selected, select **Work header breaks** on the Action Pane.
 
-    You will now apply settings to break the work so that each container in the order is linked to one work order.
+    You now apply settings to break the work so that each container in the order is linked to one work order.
 
 1. Select the **Group by this field** checkbox for each row on the **Work header breaks** page (**Shipment ID**, **Order number**, and **Container ID**).
 1. Close the page.
@@ -244,7 +244,7 @@ To set up a shipment consolidation policy, follow these steps.
 
 ### Set up physical dimensions for the product
 
-To set up physical dimensions for the products that will be used in this scenario, follow these steps.
+To set up physical dimensions for the products in this scenario, follow these steps.
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select the product where the **Item number** field is set to *A0001*.
@@ -282,7 +282,7 @@ To create a sales order, follow these steps.
     - **Warehouse:** *63*
 
 1. Select **OK** to create the sales order and close the dialog box.
-1. The new sales order is opened. On the **Sales order lines** FastTab, add the following sales lines:
+1. The new sales order opens. On the **Sales order lines** FastTab, add the following sales lines:
 
     - Line 1:
 
@@ -294,7 +294,7 @@ To create a sales order, follow these steps.
         - **Item number:** *A0002*
         - **Quantity:** *2*
 
-1. Select the first line, and then select **Inventory \> Reservation**.
+1. Select the first line, then select **Inventory \> Reservation**.
 1. On the **Reservation** page, select **Reserve lot**. Then close the page.
 1. Repeat the previous two steps for the second line.
 1. Close the page.
@@ -311,7 +311,7 @@ To create a second sales order, follow these steps.
     - **Warehouse:** *63*
 
 1. Select **OK** to create the sales order and close the dialog box.
-1. The new sales order is opened. On the **Sales order lines** FastTab, add the following sales lines:
+1. The new sales order opens. On the **Sales order lines** FastTab, add the following sales lines:
 
     - Line 1:
 
@@ -323,7 +323,7 @@ To create a second sales order, follow these steps.
         - **Item number:** *A0002*
         - **Quantity:** *4*
 
-1. Select the first line, and then select **Inventory \> Reservation**.
+1. Select the first line, then select **Inventory \> Reservation**.
 1. On the **Reservation** page, select **Reserve lot**. Then close the page.
 1. Repeat the previous two steps for the second line.
 1. Close the page.
@@ -343,7 +343,7 @@ To create a load for each order that you created for this scenario and then rele
 
 ### Verify the shipments and containers
 
-The following procedure lets you verify the shipments that have been created. Use it to review the order that you created for this scenario, to make sure that you've obtained the expected results.
+The following procedure lets you verify the shipments that you created. Use it to review the order that you created for this scenario, to make sure that you got the expected results.
 
 1. Go to **Warehouse management \> Shipments \> All shipments**.
 1. Find and select the shipment that was created for the load that you just released.
