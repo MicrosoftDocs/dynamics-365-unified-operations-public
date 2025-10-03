@@ -2082,6 +2082,8 @@
                   items:
                   - name: Bolivia overview
                     href: localizations/iberoamerica/bolivia.md
+                  - name: Configure electronic invoice parameters for Bolivia
+                    href: localizations/iberoamerica/ltm-bolivia-configure-electronic-invoice.md
                   - name: Configure printing for Purchase Vat Books for Bolivia
                     href: localizations/iberoamerica/ltm-Bolivia-purchase-vat-book.md
                   - name: Configure sales and purchase invoices for Bolivia
