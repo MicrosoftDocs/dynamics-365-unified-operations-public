@@ -35,6 +35,7 @@ Learn more in [Import Electronic reporting (ER) configurations from Dataverse](g
 - Configure all the LATAM extensions before continuing with the configuration in this article.
 
 ## Configuration required for Dominican Republic electronic invoices
+
 The following configurations are required for the Dominican Republic electronic invoices:
 
 - Configure the tax application
@@ -44,9 +45,11 @@ The following configurations are required for the Dominican Republic electronic 
 - Configure the field master lists
 - Configure other tax applications
 
+Each configuration is described in the sections that follow.
+
 ### Configure the Tax application
 
-1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax application** and select **New** to create a tax application record that has the code **DOM** (Dominican Republic electronic invoice). Use this tax application record to assign the fiscal codification to each element in Microsoft Dynamics 365 Finance as required.
+To configure the tax application, go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax application** and select **New** to create a tax application record that has the code **DOM** (Dominican Republic electronic invoice). Use this tax application record to assign the fiscal codification to each element in Microsoft Dynamics 365 Finance as required.
 
 ### Configure the Document classes
 
@@ -68,7 +71,7 @@ To configure document classes, follow these steps:
 
 ### Configure the Sales point prefix
 
-To configure sales point prefix, follow these steps:
+To configure sales point prefix, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Sales point prefix**.
 1. For each **Sales point prefix** that you want to use in Electronic Invoices:
@@ -79,7 +82,7 @@ To configure sales point prefix, follow these steps:
 
 ### Configure document class sales point
 
-To configure the document class sales point, follow these steps:
+To configure the document class sales point, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class sales point**.
    1. Select the **Sales point prefix** that you created in the previous step and add a number sequence code.
@@ -102,7 +105,7 @@ For more information, see [Field list configuration for Latin America](ltm-core-
 
 #### Configure Method of payments
 
-To configure Method of payments, follow these steps:
+To configure Method of payments, follow these steps.
 
 1. Go to **Accounts receivable** \> **Payments setup** \> **Methods of payment**.
 1. For each **Method of payment** that you want to use in Electronic Invoices:
@@ -113,7 +116,7 @@ To configure Method of payments, follow these steps:
 
 #### Configure Currencies
 
-To configure currencies, follow these steps:
+To configure currencies, follow these steps.
 
 1. Go to **General ledger** \> **Currencies** \> **Currencies**.
 1. For each **Currency** that you want to use in Electronic Invoices:
@@ -140,7 +143,7 @@ Learn more in [Configure electronic document references](ltm-electronic-doc-refe
 
 ## Configure SSRS Reports and Services references
 
-For electronic invoices, configure the **SSRS Reports / Services references** by following these steps:
+For electronic invoices, configure the **SSRS Reports / Services references** by following these steps.
 
 1. Go to Organization administration **Setup > LATAM > SSRS Reports / Services references**.
 1. Create a new record.
