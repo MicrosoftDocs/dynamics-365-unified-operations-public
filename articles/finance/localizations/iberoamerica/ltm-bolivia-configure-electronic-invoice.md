@@ -4,12 +4,14 @@ description: Learn how to configure the information required to generate the ele
 author: MatiasPizmeny01
 ms.author: v-mpizmeny
 ms.topic: how-to
-ms.date: 10/02/2025
+ms.date: 10/03/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
 
 # Configure electronic invoice parameters for Bolivia
+
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article explains how to set up the information required to generate the electronic invoice XML for Bolivia.
 
@@ -38,7 +40,7 @@ Learn more in [Import electronic reporting (ER) configurations from Dataverse](g
 
 ## Configuration required for Bolivia electronic invoices
 
-These configurations are required for Bolivia electronic invoices.
+Complete these configurations for Bolivia electronic invoices.
 
 - Set up the tax application
 - Set up the legal entity
@@ -64,7 +66,7 @@ To configure the legal entity, follow these steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select the legal entity that you want to work with.
-1. Complete the address fields with the country/region, city, street and street number.
+1. Complete the address fields with the country/region, city, street, and street number.
 1. Enter the phone number in the contact information and set it to **Primary**.
 1. In the LATAM section, complete the **Taxpayer type** with an option that represents the organization.
 1. Complete the **Based in country/region** field with **BOL**.
@@ -79,20 +81,20 @@ To configure customers, follow these steps.
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. For each customer used in transactions:
    1. Complete the **organization number** field with the unique customer identification code.
-   1. Complete the address fields with the country/region, city, street and street number.
+   1. Complete the address fields with the country/region, city, street, and street number.
    1. In the LATAM section, complete the **Taxpayer type** with an option that represents the customer.
    1. Complete the **Based in country/region** with an option that represents the customer.
    1. Complete the **Country/region document type** field with the option that represents the customer.
-   1. In the LATAM section, complete the **Country/region identification number** field, enter the customer ID number.
+   1. In the LATAM section, complete the **Country/region identification number** field. Enter the customer ID number.
 
 ### Configure the document classes
 
-This configuration applies to Invoices, Credit notes and Debit notes.
+This configuration applies to invoices, credit notes, and debit notes.
 
 To configure document classes, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class**.
-1. For each **Document class** that you want to use in Electronic Invoicing:
+1. For each **Document class** that you want to use in electronic invoicing:
    1. Select the record and set the **Use reference document** slider to **Yes** for debit notes and credit notes to enable the **Invoice posting references** section when posting a transaction.
    1. Go to **Tax application**.
    1. On the **Tax application** page, in the **Tax application id** field, enter the ID that is used for Bolivian electronic invoicing.
@@ -112,27 +114,27 @@ To configure the sales point prefix, follow these steps.
 
 To configure the document class sales point, follow these steps.
 
-1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class sales point** and for the document class id and sales point used for electronic invoicing follow these steps:
-1. Complete the **Account type** field with **Customer**.
-1. Complete the **Number sequence code** field with a number sequence that represents the document class.
-1. Complete the **Printing concept 1** field on the **Printing section** with the registered branch address.
+1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class sales point** and for the document class ID and sales point used for electronic invoicing follow these steps:
+1. Enter **Customer** in the **Account type** field.
+1. Enter a number sequence that represents the document class in the **Number sequence code** field.
+1. Enter the registered branch address in the **Printing concept 1** field on the **Printing section**.
 
 ### Configure the fiscal information
 
 To configure fiscal information, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**, and follow these steps for each record in the list:
-1. Select the record, and then select **Tax application**.
-1. On the **Tax application** page, in the **Tax application id** field, enter the code that is used for Bolivian electronic invoicing.
-1. In the **Tax application code** field, enter the code for tax IDs according to the Bolivian normative.
+1. Select the record, then select **Tax application**.
+1. On the **Tax application** page, enter the code that is used for Bolivian electronic invoicing in the **Tax application id** field.
+1. Enter the code for tax IDs according to the Bolivian normative in the **Tax application code** field.
 
 ### Configure the addresses
 
 To configure addresses, follow these steps.
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
-1. For each **Country** record used in electronic invoicing go to **LATAM** \> **Tax application** to assign the tax application codes according to the Bolivian normative.
-1. For each **City** record used in electronic invoicing complete the **Description** field according to the Bolivian normative.
+1. For each **Country** record used in electronic invoicing, go to **LATAM** \> **Tax application** to assign the tax application codes according to the Bolivian normative.
+1. For each **City** record used in electronic invoicing, enter the description according to the Bolivian normative.
 
 Learn more in [Address setup for Latin America](ltm-core-address-setup.md).
 
@@ -179,13 +181,13 @@ To configure Units, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 1. For each record in the list:
-   1. Select the record, and then select **Tax application**.
+   1. Select the record, then select **Tax application**.
    1. Create a new record.
    1. In the **Tax application id** field, enter the code that is used for Bolivian electronic invoicing.
    1. In the **Tax application code** field, enter the unit code according to the Bolivian normative.
 
 > [!NOTE]
-> When posting transactions using a product of type 'Service', code 58 will be automatically displayed by default.
+> When posting transactions by using a product of type 'Service', code 58 automatically displays by default.
 
 #### Currencies configuration
 
@@ -196,41 +198,41 @@ To configure currencies, follow these steps.
    1. Select the record and then go to **Tax application** in the top menu.
    1. Create a new record.
    1. In the **Tax application id** field, select the code that is used for Bolivian electronic invoicing.
-   1. In the **Tax application code** field, enter the currency code according to the Bolivian normative.
+   1. In the **Tax application code** field, enter the currency code according to the Bolivian standard.
 
 ### Configure domestic and international costs and expenses for export invoices
 
 This section explains how to configure domestic and international costs and expenses for export invoices.
 
 1. Go to **Accounts receivable** \> **Charges setup** \> **Charges code**.
-1. For each record that is used as a domestic cost and expense for export invoices, follow these steps:
+1. For each record that you use as a domestic cost and expense for export invoices, follow these steps:
    1. Select a record and go to **LATAM** \> **Tax application** in the top menu.
    1. Create a new record.
-   1. In the **Tax application Id** field select the one used for Bolivian Electronic Invoice.
-   1. In the **Tax application code** field enter **N** for national.
+   1. In the **Tax application Id** field, select the one used for Bolivian Electronic Invoice.
+   1. In the **Tax application code** field, enter **N** for national.
    1. In the **Description** field, enter the charge motive.
 
-1. For each record that is used as a international cost and expense for export invoices, follow these steps:
+1. For each record that you use as an international cost and expense for export invoices, follow these steps:
    1. Select a record and go to **LATAM** \> **Tax application** in the top menu.
    1. Create a new record.
-   1. In the **Tax application Id** field select the one used for Bolivian Electronic Invoice.
-   1. In the **Tax application code** field enter **I** for international.
+   1. In the **Tax application Id** field, select the one used for Bolivian Electronic Invoice.
+   1. In the **Tax application code** field, enter **I** for international.
    1. In the **Description** field, enter the charge motive.
    
 ### Configure Taxes
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
-1. For each **VAT** tax used:
+1. For each **VAT** tax you use:
    1. In the **Calculation parameters** section, in the **Origin** field, select **Calculated percentage of net amount**.
    1. Go to **Sales tax code** \> **Values** in the top menu.
-   1. In the **Values** field, complete with the tax rate according to the Bolivian normative.
+   1. In the **Values** field, enter the tax rate according to the Bolivian normative.
 
 ## Configure electronic document references
 
 To configure electronic document references, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Electronic documents references**.
-1. In the **Tax application Id** field, enter the ID that is used for Bolivian electronic invoices.
+1. In the **Tax application Id** field, enter the ID that you use for Bolivian electronic invoices.
 
 ### Steps to reference a document
 
@@ -238,8 +240,8 @@ When you issue an electronic document that has an associated document, you must 
 
 To reference a document, follow these steps.
 
-1. Go to the General tab, click on **Source Vouchers** and from the list of documents, select the document to be associated.
-1. Complete the **Reference reason** with a motive (Not mandatory).
+1. Go to the General tab, select **Source Vouchers**, and from the list of documents, select the document to associate.
+1. Complete the **Reference reason** with a motive (not mandatory).
 
 ## Configure lookups
 
@@ -265,12 +267,14 @@ To configure SSRS reports and services references, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **SSRS Reports / Services references**.
 1. Create a new record.
-1. Complete the Report/Service Id and Report/Service name with a code and description.
-1. In Settings tab, select Service for the Report/Service type field.
-1. In the **Sales point type** field, select **Pre-printed** (This selection must match the sales point type used for electronic invoicing).
-1. In **Parameter** section, add the following line:
+1. Enter a code and description in the Report/Service ID and Report/Service name fields.
+1. In the Settings tab, select Service for the Report/Service type field.
+1. In the **Sales point type** field, select **Pre-printed** (this selection must match the sales point type used for electronic invoicing).
+1. In the **Parameter** section, add the following line:
    1. **Name:** TaxApplicationId.
    1. **Value:** BOFE (this code must match the tax application used for electronic invoicing).
 
 > [!NOTE] 
-> This configuration applies to all sales points used for every invoice, credit note and debit note.
+> This configuration applies to all sales points used for every invoice, credit note, and debit note.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
