@@ -52,7 +52,7 @@ Planning Optimization doesn't use the following parameters or options on the **C
 
 - **Other** FastTab:
 
-    - **Freeze time fence (days)** – Freeze time fence is supported in Supply Chain Management version 10.0.40 and later. To use it, turn on the feature named *Freeze time fence support for Planning Optimization* in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+    - **Freeze time fence (days)** – Freeze time fence is supported in Supply Chain Management version 10.0.40 and later. To use it, turn on the feature named *Freezing time fence for Planning optimization* in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
     - **Forecast plan time fence** – Planning Optimization doesn't support forecast plans. Instead, create a master plan that specifies a forecast model.
 
 - **Delays** FastTab:
@@ -66,11 +66,11 @@ Planning Optimization doesn't use the following parameters or options on the **I
 
 - **General** tab:
 
-    - **Planned order type** – Planning Optimization supports all order types, including kanban. To use kanban, enable the *(Preview) Lean manufacturing for Planning Optimization* feature in Feature management. This is a preview feature in Supply Chain Management version 10.0.45 and is generally available as of version 10.0.46.
-    - **Freeze time fence (days)** – Freeze time fence is supported in Supply Chain Management version 10.0.40 and later. To use it, turn on the feature named *Freeze time fence support for Planning Optimization* in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+    - **Planned order type** – Planning Optimization supports all order types, including kanban. To use kanban, enable the *(Preview) Lean manufacturing for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). This is a preview feature in Supply Chain Management version 10.0.45 and is generally available as of version 10.0.46.
+    - **Freeze time fence (days)** – Freeze time fence is supported in Supply Chain Management version 10.0.40 and later. To use it, turn on the feature named *Freezing time fence for Planning optimization* in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
     - **Fulfill minimum** – Planning Optimization doesn't support the *Today's date*, *First issue*, and *Coverage time fence* options. It always uses the *Today's date + procurement time* option.
     - **Minimum periods** – Planning Optimization doesn't support this parameter.
-    - **Planning formula** – Pending. To use this formula, enable *Planning items support for Planning Optimization* in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+    - **Planning formula** – Pending.
 
 ## Master plans page
 
@@ -86,7 +86,7 @@ Planning Optimization doesn't use the following parameters or options on the **M
 
 - **Time fences in days** FastTab:
 
-    - **Freeze** – Freeze time fence is supported in Supply Chain Management version 10.0.40 and later. To use it, turn on the *Freeze time fence support for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+    - **Freeze** – Freeze time fence is supported in Supply Chain Management version 10.0.40 and later. To use it, turn on the *Freezing time fence for Planning optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
     - **Forecast plan** – Planning Optimization doesn't support this parameter.
     - **Continuity plan** – Planning Optimization doesn't support this parameter.
     - **Calculated delays** – Planning Optimization doesn't consider this parameter. Calculated delays are created for the **coverage time fence (days)**.
@@ -94,7 +94,7 @@ Planning Optimization doesn't use the following parameters or options on the **M
 - **Calculated delays** FastTab:
 
     - **Ensure that the planned orders are not created prior to the master planning run date** – Planning Optimization doesn't support this parameter. Planning Optimization never creates planned orders in the past.
-    - **Add the calculated delay to the requirement date** (in the **Planned kanban** section) – To use kanban, enable the *(Preview) Lean manufacturing for Planning Optimization* feature in Feature management. This is a preview feature in Supply Chain Management version 10.0.45 and is generally available as of version 10.0.46.
+    - **Add the calculated delay to the requirement date** (in the **Planned kanban** section) – To use kanban, enable the *(Preview) Lean manufacturing for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). This is a preview feature in Supply Chain Management version 10.0.45 and is generally available as of version 10.0.46.
 
 - **Action message** FastTab:
 

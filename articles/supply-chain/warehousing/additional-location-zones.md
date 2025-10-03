@@ -18,25 +18,21 @@ Three new zone fields are available in Microsoft Dynamics 365 Supply Chain Manag
 
 No additional setup is required to use the zone fields.
 
-## Turn the Additional location zone feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Additional location zone* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
 ## Use location zones
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Location setup wizard**.
 2. Set the following values:
 
-    - In the **Warehouse** field, select _62_.
-    - In the **Zone ID** field, select _FLOOR_.
-    - In the **Additional Zone 1** field, select _PICKZONE1_.
-    - In the **Additional Zone 2** field, select _WEBSHOP1_.
-    - In the **Location profile ID** field, select _FLOOR_.
+    - In the **Warehouse** field, select *62*.
+    - In the **Zone ID** field, select *FLOOR*.
+    - In the **Additional Zone 1** field, select *PICKZONE1*.
+    - In the **Additional Zone 2** field, select *WEBSHOP1*.
+    - In the **Location profile ID** field, select *FLOOR*.
 
 3. Select the **Floor** line.
-4. In the **From number** field, enter _1_. In the **To number** field, enter _3_.
+4. In the **From number** field, enter *1*. In the **To number** field, enter *3*.
 5. Select the **Aisle** line.
-6. In the **From number** field, enter _1_. In the **To number** field, enter _5_.
+6. In the **From number** field, enter *1*. In the **To number** field, enter *5*.
 7. Select **Create**.
 8. You receive messages that state that new locations have been added. Select the **Show messages** button to view the messages.
 9. Go to **Warehouse management \> Setup \> Warehouse \> Locations**. The new locations appear in the list, and all zone fields are available (that is, the existing zone field and the new additional zone fields).

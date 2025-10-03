@@ -28494,6 +28494,11 @@
       "source_path": "articles/supply-chain/transportation/tasks/set-up-location-directive-purchase-order-put-away.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/tasks/set-up-location-directive-purchase-order-put-away",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/configure-wave-schedule-work-creation.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/wave-processing",
+      "redirect_document_id": false
     }
   ]
 

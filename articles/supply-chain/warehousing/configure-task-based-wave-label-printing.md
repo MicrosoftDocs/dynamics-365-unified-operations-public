@@ -19,13 +19,6 @@ The process of configuring wave label printing is complex and relies on accurate
 
 When you use the *Task based wave label printing* feature, the system first creates work and work lines. It then creates and prints wave labels. Finally, if the wave labels are correctly created, it releases the work and wave for picking.
 
-## Turn on the Task based wave label printing feature in feature management
-
-To use the features that are described in this article, they must be turned on for your system. Use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the features in the following order:
-
-1. *Organization-wide work blocking* – This feature is required for both manual and automatic configuration of scheduled work creation. (As of Supply Chain Management version 10.0.21, this feature is mandatory, so it's turned on by default and can't be turned off again.)
-1. *Task based wave label printing* – This feature is required to split off wave label printing to a separate transaction scope.
-
 ## Manually enable the new wave step method
 
 You must first create the new wave step method and enable it for parallel, asynchronous task processing.
@@ -69,6 +62,5 @@ If wave label generation fails (for example, if conversion of the work quantity 
 ## Related information
 
 - [Wave label printing](configure-wave-label-printing.md)
-- [Schedule work creation during wave](configure-wave-schedule-work-creation.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

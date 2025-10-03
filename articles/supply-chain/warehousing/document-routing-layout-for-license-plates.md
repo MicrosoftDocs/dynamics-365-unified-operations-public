@@ -41,10 +41,6 @@ As part of the label printing process, the text `$LicensePlateId$` in this examp
 
 To see the values that will be printed, go to **Warehouse management \> Enquiries and reports \> License plate labels**.
 
-## Turn this feature on or off
-
-If your system doesn't already include the features described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Enhanced license plate label layouts* feature. As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off.
-
 ## Custom number formats
 
 You can customize the formatting of numerical field values that are printed by using codes that have the following format.
