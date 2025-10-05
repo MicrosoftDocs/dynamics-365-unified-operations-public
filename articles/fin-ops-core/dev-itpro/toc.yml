@@ -2373,12 +2373,14 @@ items:
           href: copilot/copilot-ai-plugins.md
         - name: Tutorials
           items:
-          - name: Extending Copilot capabilities with low-code plugins
+          - name: Extend Copilot capabilities with low-code plugins
             href: copilot/tutorial-create-low-code-plugins.md
           - name: Create client plugins for Copilot in finance and operations apps
             href: copilot/tutorial-create-client-plugins.md
           - name: Create AI tools with finance and operations business logic
             href: copilot/tutorial-create-ai-plugins.md
+          - name: Trigger autonomous agents with business events
+            href: copilot/tutorial-agent-triggers.md            
     - name: Responsible AI
       items:
       - name: Overview
