@@ -30,7 +30,7 @@ This approach enables seamless orchestration between F&O and Copilot Studio agen
 ## Prequisites
 For this tutorial, you must first enable Copilot for finance and operations apps in your environment. For instructions, see [Copilot capabilities in finance and operations apps](./enable-copilot.md).
 
-## Scenario 1: Notify a manager when a purchase order is confirmed
+## Scenario: Notify a manager when a purchase order is confirmed
 In this scenario, you add a trigger capability to an agent. Once the business event conditions are reached (a purchase order is confirmed), the agent will be triggered and an email/teams message will be sent to the manager of that company referring the purchase order has been created, sending all relevant data via email. 
 
 This can be achieved in two different ways:
