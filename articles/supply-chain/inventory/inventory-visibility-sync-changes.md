@@ -45,7 +45,7 @@ Before you can use the features that are described in this article, your system 
 - The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
     - *Inventory Visibility integration with inventory adjustment offset* (This feature is a prerequisite. As of Supply Chain Management version 10.0.45, this feature is mandatory and can't be turned off.)
-    - *Inventory Visibility integration* (Prerequisite; as of Supply Chain Management version 10.0.45, this feature is turned on by default.)
+    - *Inventory Visibility integration* (This feature is a prerequisite. As of Supply Chain Management version 10.0.45, this feature is turned on by default.)
     - *Inventory Visibility transaction integration* (This feature adds the features that are described in this article. As of Supply Chain Management version 10.0.45, this feature is turned on by default.)
 
 ## Configure inventory transaction synchronization

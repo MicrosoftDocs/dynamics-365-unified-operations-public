@@ -16,11 +16,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-The *Purchasing cXML Enhancements* feature builds on the [existing external catalog functionality](set-up-external-catalog-for-punchout.md) that is used for purchase requisitions. This existing functionality is known as *PunchOut*. Although a purchase order doesn't have to originate from a purchase requisition, there must be a connection between the vendor on a purchase order and the parameters that are used to send the purchase order document.
-
-## Turn on the Purchasing cXML Enhancements feature
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.21, it's turned on by default. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Purchasing cXML Enhancements* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The *Purchasing cXML Enhancements* feature builds on the [external catalog functionality](set-up-external-catalog-for-punchout.md) that is used for purchase requisitions. The external catalog functionality is known as *PunchOut*. Although a purchase order doesn't have to originate from a purchase requisition, there must be a connection between the vendor on a purchase order and the parameters that are used to send the purchase order document.
 
 ## Prepare to use the Purchasing cXML Enhancements feature
 
@@ -80,7 +76,7 @@ If you're also using the catalog for PunchOut, you must also [set up the message
 
 ### <a name="set-order-properties"></a>Set the order properties
 
-The *Purchasing cXML Enhancements* feature adds a new **Order properties** FastTab for external catalogs. This FastTab provides a grid where you can define the order properties. It also provides a toolbar. This toolbar contains the following three buttons that you can use to manage the order properties:
+The **Order properties** FastTab for external catalogs provides a grid where you can define the order properties. It also provides a toolbar. This toolbar contains the following three buttons that you can use to manage the order properties:
 
 - **Default properties** – When you're setting up a new catalog, select this button to add a predefined collection of commonly used properties to the grid.
 - **New** – Add a new property to the grid.

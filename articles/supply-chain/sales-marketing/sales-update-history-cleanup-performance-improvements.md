@@ -17,11 +17,7 @@ As part of its standard operation, Microsoft Dynamics 365 Supply Chain Managemen
 
 If you use the *Sales update history cleanup* periodic task, we recommend that you enable the *Sales history cleanup performance improvements* feature, which makes the task run more effectively. (Nevertheless, you can also run the task without enabling this feature.)
 
-## Turn on the sales history cleanup features
-
-To set up and use the *Sales update history cleanup* periodic task together with all the features that are described in this article, you must enable the *Sales history cleanup performance improvements* and *Clean up sales update history based on age* features in Feature management, as described in the following subsections.
-
-### Sales history cleanup performance improvements
+## Sales history cleanup performance improvements
 
 The **Sales update history cleanup** periodic batch job can take a long time if it is run infrequently on environments with a high volume of sales updates. In these situations, the *Sales history cleanup performance improvements* feature can help reduce the run duration and improve reliability.
 
@@ -34,12 +30,6 @@ The feature improves the existing cleanup job in the following ways:
 After enabling the feature, the **Sales update history cleanup** batch job (**Sales and marketing \> Period tasks \> Cleanup \> Sales update history cleanup**) will run as it did before, but with better performance and for a maximum of 2 hours. This means it might need to run several times to clean up all the data for a specific retention time frame.
 
 To use this feature, it must be enabled for your system. As of version 10.0.41, this feature is turned on by default. As of Supply Chain Management version 10.0.43, it's mandatory and can't be turned off. If you're running a version older than 10.0.43, then admins can turn this functionality on or off by searching for the *Sales history cleanup performance improvements* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
-### Clean up sales update history based on age
-
-The *Clean up sales update history based on age* feature lets you specify the maximum age of records to keep when the *Sales update history cleanup* periodic task is run. Older records will be deleted. This feature is useful when you set up the task to run periodically, because the age is always calculated relative to the date when the task is run. If you don't use this feature, you can only set a specific date for the oldest records to keep.
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Clean up sales update history based on age* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up and schedule the Sales history cleanup periodic task
 

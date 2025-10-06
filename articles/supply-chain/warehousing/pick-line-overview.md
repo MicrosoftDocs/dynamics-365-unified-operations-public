@@ -18,13 +18,6 @@ This article explains how to configure options that are related to the pick line
 
 Admins can configure each menu item individually to control how, when, and where the Warehouse Management mobile app presents the pick line overview.
 
-## Turn on the Work pick line overview feature
-
-Before you can use this feature, it must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** _Warehouse management_
-- **Feature name:** _Work pick line overview_
-
 ## Configure menu items to show a list of all work lines
 
 To set up a mobile device menu item to provide a pick line overview, follow these steps.

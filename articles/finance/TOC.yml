@@ -2082,6 +2082,8 @@
                   items:
                   - name: Bolivia overview
                     href: localizations/iberoamerica/bolivia.md
+                  - name: Configure electronic invoice parameters for Bolivia
+                    href: localizations/iberoamerica/ltm-bolivia-configure-electronic-invoice.md
                   - name: Configure printing for Purchase Vat Books for Bolivia
                     href: localizations/iberoamerica/ltm-Bolivia-purchase-vat-book.md
                   - name: Configure sales and purchase invoices for Bolivia
@@ -2532,6 +2534,8 @@
                   items: 
                   - name: Dominican Republic overview
                     href: localizations/iberoamerica/ltm-Dominican_Republic_Overview.md
+                  - name: Configure electronic invoice parameters for Dominican Republic
+                    href: localizations/iberoamerica/ltm-dominican-republic-configure-electronic-invoice.md
                   - name: Configure sales and purchase invoices for Dominican Republic
                     href: localizations/iberoamerica/ltm-configure-invoices-dominican-republic.md
                   - name: Configure printing for Goods and Services Purchases Submission Form 606

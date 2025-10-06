@@ -23,25 +23,9 @@ Wave step codes for a specific wave step type are set up on a separate page. For
 > [!NOTE]
 > Use of the wave step codes feature is optional. It is enabled organization-wide for all legal entities.
 
-## Setup demo 
+## Setup demo
 
-For this demo, demo data must be installed, and you must use the **USMF** demo data company.
-
-### Enable wave step codes
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Organization wide wave step code* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-When you first enable this feature, all existing wave step free texts in all legal entities are upgraded to the new structure. After this upgrade is completed for all legal entities, then the feature is enabled. If the feature cannot be enabled for one or more legal entities, then the feature is not enabled for any legal entities.
-
-During the enablement, validations are done during the data upgrade. If the upgrade fails, you receive an error message. An upgrade might fail because of the following conflicts:
-
-- Duplicate wave step free texts exist.
-- Customizations exist.
-- A wave step free text that is associated with a wave step method instance doesn't match the expected template type.
-
-After you've resolved any conflicts that are identified during the validations, you can retry to enable the feature.
-
-When the feature has been enabled, the **Wave step codes** page (**Warehouse management \> Setup \> Waves \> Wave step codes**) becomes available. This page lists the wave step codes that were upgraded when the *Organization wide wave step code* feature was enabled.
+For this demo, demo data must be installed, and you must use the *USMF* demo data company.
 
 ### Create new wave step codes
 
