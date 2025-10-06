@@ -70,11 +70,16 @@ Business performance analytics has data for the most recent eight quarters. This
 
 Data is refreshed twice per day, at 12:00:00 AM and 12:00:00 PM (Coordinated Universal Time). To view exactly when a report's data was last refreshed, open the report. Near the top of the page, the rightmost item shows when the data for the report was last refreshed.
 
+## Demo database swap after BPA install
+
+If you swap a demo database in sandbox or production after installing BPA, profile rehydration is required to reset the metadata that the transform jobs rely on. Please create a support ticket to have the metadata reset after the swap.    
+
 ## Reports
 
 ### What should I do if reports in Business performance analytics suddenly stop working and keep showing errors?
 
 If you encounter a full-page error with the message "An unknown error has occurred. Try again or contact your app administrator" while opening reports, the following steps may help resolve it. These steps don't address issues like no data displayed, refresh errors, or blank pages.
+
 
 >[!Note]
 > These steps are safe to execute and prevents data loss
