@@ -4668,9 +4668,7 @@
             - name: Install the Excel add-in
               href: business-performance-planning/install-excel-add.md
             - name: Security
-              href: business-performance-planning/bpp-security.md
-            - name: Generative help and guidance in Business performance planning
-              href: business-performance-planning/bpp-help-rai.md            
+              href: business-performance-planning/bpp-security.md         
             - name: Dimensions
               items:
                 - name: Creating and maintaining dimensions
