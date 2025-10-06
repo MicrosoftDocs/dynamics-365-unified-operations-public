@@ -36,7 +36,7 @@ If you have feedback about a preview version of this app, please submit a post o
 
 Version 4.0.20.0 adds the following fixes and improvements:
 
-- Added an option to control auto-submit after scanning for a more consistent user experience.
+- Added an [option to control auto-submit](warehouse-app-autosubmit-behavior.md) after scanning for a more consistent user experience.
 - Fixed focus issues in step view.
 - Resolved *Invalid Work Execution Mode* errors during detours.
 - Addressed telemetry server request issues with millisecond durations.
