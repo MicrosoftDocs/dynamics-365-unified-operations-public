@@ -3959,6 +3959,8 @@
             href: warehousing/warehouse-app-accessibility.md
           - name: User settings, color themes, and sound themes
             href: warehousing/warehouse-app-user-settings-themes.md
+          - name: Data submission behavior in the Warehouse Management mobile app
+            href: warehousing/warehouse-app-autosubmit-behavior.md
           - name: Workload insights with Copilot
             href: warehousing/warehouse-management-mobile-app-insights.md
           - name: Warehouse Management mobile app calculator
