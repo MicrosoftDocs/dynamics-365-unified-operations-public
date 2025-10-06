@@ -2383,6 +2383,8 @@ items:
             href: copilot/tutorial-agent-triggers.md
           - name: Add knowledge to agents
             href: copilot/tutorial-agent-knowledge.md
+          - name: Enable agent data operations with connectors
+            href: copilot/tutorial-agent-connector.md
     - name: Responsible AI
       items:
       - name: Overview
