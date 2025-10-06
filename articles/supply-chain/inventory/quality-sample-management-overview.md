@@ -46,7 +46,7 @@ Dynamics 365 supports two primary sampling methods:
 
 1. Inline sampling
 
-Samples are collected during production, before the item is reported as finished. This allows for early detection of quality issues.
+Samples are collected during production, before the item is reported as finished. This allows for early detection of quality issues and ensures a stable quality before the finished product is being reported. Here are the main characteristics for inline sampling:
 
     - **When used** – During production, before inventory is reported as finished.
     - **Purpose** – To detect and correct quality issues early (e.g., pH imbalance, viscosity).
@@ -55,7 +55,7 @@ Samples are collected during production, before the item is reported as finished
 
 2. Continuous sampling
 
-Samples are taken at regular intervals throughout batch production to monitor quality trends and maintain consistency.
+Samples are taken at regular intervals throughout batch production to monitor quality trends and maintain consistency in product quality during a production run. Here are the main characteristics for continuous sampling:
 
     - **When used** – During batch production, triggered automatically at Report as finished.
     - **Purpose** – To monitor quality trends and control inventory release.
@@ -67,7 +67,6 @@ Each sample type is configured with its own lifecycle states, label layouts, and
 ## Related quality management tools
 
 Sample management both leverages and enhances existing quality management entities and capabilities within Supply Chain Management, while also introducing new tools and features to support advanced quality processes.
-
 
 ### Existing entities and capabilities
 
@@ -88,4 +87,3 @@ Sample management both leverages and enhances existing quality management entiti
 - **Sample procedures and sample procedure types** - Sample procedure define the specific steps or actions required for handling samples. Sample procedure types define the categories and groups for organizing procedures.
 - **Sample Management Workbench** – A new centralized interface for managing samples, viewing audit trails, and performing lifecycle actions.
 - **Audit Trail** – Tracks all sample-related events including registration, testing, and inventory updates.
-

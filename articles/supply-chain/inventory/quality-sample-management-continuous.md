@@ -70,14 +70,12 @@ The following procedure provides an example of how to setup and use continuous s
         - **Inventory status** - Set to *Yes*.
         - **Failed quality order status** - Set to an inventory status where **Inventory blocking** is set to *Yes*. 
         - **Passed quality order status** select an inventory status where **Inventory blocking** is set to *No*.
-        - Make sure that the test group has one test defined.
+        - Make sure that the test group has at least one test defined.
     - On the **Quality association**, make sure that the **Item sampling** and **Test group** is associated.
 1. Bring the production or batch order into status *Started*
 1. From the production or batch order, report as finish four license plates to generate the continuous samples. 
 
 ### Work with the samples in the sample management workbench
-
-
 
 1. On the action pane in the production order page, under the **View** tab, select **Sample management workbench** 
 1. Verify that two samples have been created for separate license plates, and that these license plates are blocked by their default inventory status. Learn more about configuring the default item status here: [Enable and configure sample management (preview)](quality-sample-management-admin.md).
