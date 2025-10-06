@@ -2380,7 +2380,9 @@ items:
           - name: Create AI tools with finance and operations business logic
             href: copilot/tutorial-create-ai-plugins.md
           - name: Trigger autonomous agents with business events
-            href: copilot/tutorial-agent-triggers.md            
+            href: copilot/tutorial-agent-triggers.md
+          - name: Add knowledge to agents
+            href: copilot/tutorial-agent-knowledge.md
     - name: Responsible AI
       items:
       - name: Overview
