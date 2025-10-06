@@ -4,7 +4,7 @@ description: Learn about tax calculation in purchase orders in the Brazil tax re
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 10/06/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
