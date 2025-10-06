@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-The Warehouse Management mobile app supports two options for how it submits scanned data: *auto submit* and *manual submit*. This article explains the differences between these options and how to configure them.
+The Warehouse Management mobile app supports two options for how it submits scanned data: *auto-submit* and *manual submit*. This article explains the differences between these options and how to configure them.
 
 ## How the app submits scanned data
 
@@ -33,7 +33,7 @@ To set the auto-submit behavior for the Warehouse Management mobile app, follow 
 1. Sign in to the Warehouse Management mobile app and go to the **Main menu** page.
 1. Select the **Settings** button, which is the gear icon in the top-right corner of the screen.
 1. Find and select the **Auto submit** menu item and set it to one of the following values:
-    - *Yes* – The Warehouse Management mobile app controls how it submits scanned data. For some devices (such as Zebra), the app automatically submits scanned data without requiring manual confirmation. For other devices (such as Honeywell), the app requires workers to confirm the submission (for example, by pressing Enter). This how the app behaved in releases before version 4.0.20.0. This option is primarily provided for backwards compatibility. You shouldn't select this option for new installations.
+    - *Yes* – The Warehouse Management mobile app controls how it submits scanned data. For some devices (such as Zebra), the app automatically submits scanned data without requiring manual confirmation. For other devices (such as Honeywell), the app requires workers to confirm the submission (for example, by pressing Enter). This is how the app behaved in releases before version 4.0.20.0. This option is primarily provided for backwards compatibility. You shouldn't select this option for new installations.
     - *No* – The app doesn't attempt to auto-submit scanned data. This option allows the device, instead of the app, to control how it submits scanned data. Microsoft recommends this setting for all new installations.
 
 ## Configure auto-submit behavior for your device

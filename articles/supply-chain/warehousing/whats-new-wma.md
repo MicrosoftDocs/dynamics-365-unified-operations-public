@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 09/25/2025
+ms.date: 10/06/2025
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -36,7 +36,7 @@ If you have feedback about a preview version of this app, please submit a post o
 
 Version 4.0.20.0 adds the following fixes and improvements:
 
-- Added an [option to control auto-submit](warehouse-app-autosubmit-behavior.md) after scanning for a more consistent user experience.
+- Added an [option to control auto-submit behavior](warehouse-app-autosubmit-behavior.md) after scanning for a more consistent user experience.
 - Fixed focus issues in step view.
 - Resolved *Invalid Work Execution Mode* errors during detours.
 - Addressed telemetry server request issues with millisecond durations.
@@ -45,6 +45,7 @@ Version 4.0.20.0 adds the following fixes and improvements:
 - Fixed errors during intense scanning with multiple inputs.
 - Restored visibility of action items for multi-scan patterns.
 - Enhanced telemetry with exception tracking.
+- Fixed an issue that prevented guest users from signing in.
 
 ### What's new in version 4.0.19.0
 
