@@ -201,6 +201,8 @@ The following hierarchy of built-in [Registration numbers](../europe/emea-regist
 
 - If the described above EAN registration number is not defined then the customer's active Registration Number of the **Enterprise ID** Registration category will be used as the customer's EndpointID and **0208** value will be used as the EndpointID **schemeID** attribute.
 
+- If the both described above registration numbers, EAN and Enterprise ID, are not defined then the customer's active Registration Number of the **VAT ID** Registration category will be used as the customer's EndpointID and **9925** value will be used as the EndpointID **schemeID** attribute.
+
     The VAT number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
 
 > [!NOTE]
