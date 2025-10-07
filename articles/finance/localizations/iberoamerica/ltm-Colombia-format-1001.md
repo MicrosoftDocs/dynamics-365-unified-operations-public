@@ -11,11 +11,13 @@ ms.reviewer: johnmichalak
 
 # Format 1001 file for Colombia issue configuration
 
+[!INCLUDE[banner](../../includes/banner.md)]
+
 This article explains how to set up and configure information so that you issue a format 1001 file. The **Format 1001 file** report provides a list of expenses that you paid to third parties, and the taxes and withholding taxes that those transactions generated.
 This article provides the configuration requirements for issuing the XML format and Excel format versions of the File format 1001.
 
-    > [!NOTE]
-    > The XML output format covers the fiscal requirements. The Excel output format is for management purposes.
+> [!NOTE]
+> The XML output format covers the fiscal requirements. The Excel output format is for management purposes.
 
 ## Prerequisites
 
@@ -123,3 +125,5 @@ After you meet the prerequisites and configure the tax application codes, follow
 1. Select **OK**.
 1. For the XML output format, enter the tax application ID used for the format in the **Tax application Id** field.
 1. Select a date range, then select **OK**.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
