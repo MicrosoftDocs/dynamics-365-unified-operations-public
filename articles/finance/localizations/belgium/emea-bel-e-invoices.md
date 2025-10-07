@@ -197,13 +197,13 @@ To enter the contact person, follow these steps.
 
 The following hierarchy of built-in [Registration numbers](../europe/emea-registration-ids.md) is implemented for the buyer's EndpointID determination.
 
-- If the Global Location Number (GLN), also known as a European article numbering (EAN), is defined for the customer as an active Registration Number with the **EAN** Registration category, then it will be used as the customer's EndpointID and **0088** value will be used as the EndpointID **schemeID** attribute.
+- If the Global Location Number (GLN), also known as a European article numbering (EAN), is defined for the customer as an active Registration Number with the **EAN** Registration category, then it will be used as the customer's EndpointID and **0088** constant will be used as the EndpointID **schemeID** attribute's value.
 
-- If the described above EAN registration number is not defined then the customer's active Registration Number of the **Enterprise ID** Registration category will be used as the customer's EndpointID and **0208** value will be used as the EndpointID **schemeID** attribute.
+- If the described above EAN registration number is not defined then the customer's active Registration Number of the **Enterprise ID** Registration category will be used as the customer's EndpointID and **0208** constant will be used as the EndpointID **schemeID** attribute's value.
 
-- If the both described above registration numbers, EAN and Enterprise ID, are not defined then the customer's active Registration Number of the **VAT ID** Registration category will be used as the customer's EndpointID and **9925** value will be used as the EndpointID **schemeID** attribute.
+- If the both described above registration numbers, EAN and Enterprise ID, are not defined then the customer's active Registration Number of the **VAT ID** Registration category will be used as the customer's EndpointID and **9925** constant will be used as the EndpointID **schemeID** attribute's value.
 
-- If the VAT ID registration number is not defined then the **Tax exempt number** defined in customer's master data, will be used as the customer's EndpointID and **9925** value will be used as the EndpointID **schemeID** attribute.
+- If the VAT ID registration number is not defined then the **Tax exempt number** defined in customer's master data, will be used as the customer's EndpointID and **9925** constant will be used as the EndpointID **schemeID** attribute's value.
   
     The resulting Endpoint ID value populates the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and is used as the buyer's identification during the submission process.
 
