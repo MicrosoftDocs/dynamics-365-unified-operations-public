@@ -94,7 +94,7 @@ No, you don't need to map users on the **Microsoft Entra ID applications** page 
 
 ## How often does the Warehouse Management mobile app need to be signed in?
 
-The session time-out period depends on your Microsoft Entra ID policies. By default, the session lasts for 90 days after each sign in. Therefore, at least 91 days pass between sign-ins.
+The session timeout period depends on your Microsoft Entra ID policies. By default, the session lasts for 90 days after each sign in. Therefore, at least 91 days pass between sign-ins.
 
 ## Can I set the session timeout period to more than 90 days?
 
