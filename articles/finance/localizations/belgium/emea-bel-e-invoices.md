@@ -197,18 +197,18 @@ To enter the contact person, follow these steps.
 
 The following hierarchy of built-in [Registration numbers](../europe/emea-registration-ids.md) is implemented for the buyer's EndpointID determination.
 
-- If the Global Location Number (GLN), also known as a European article numbering (EAN), is defined for the customer as an active Registration Number with the **EAN** Registration category, then it will be used as the customer's EndpointID and **0088** constant will be used as the EndpointID **schemeID** attribute's value.
+- If the Global Location Number (GLN), also known as a European article numbering (EAN), is defined for the customer as an active Registration Number with the **EAN** Registration category, then it will be used as the customer's EndpointID and **0088** constant (EAN Location Code) will be used as the EndpointID **schemeID** attribute's value.
 
-- If the described above EAN registration number is not defined then the customer's active Registration Number of the **Enterprise ID** Registration category will be used as the customer's EndpointID and **0208** constant will be used as the EndpointID **schemeID** attribute's value.
+- If the described above EAN registration number is not defined then the customer's active Registration Number of the **Enterprise ID** Registration category will be used as the customer's EndpointID and **0208** constant (Numero d'entreprise / ondernemingsnummer / Unternehmensnummer) will be used as the EndpointID **schemeID** attribute's value.
 
-- If the both described above registration numbers, EAN and Enterprise ID, are not defined then the customer's active Registration Number of the **VAT ID** Registration category will be used as the customer's EndpointID and **9925** constant will be used as the EndpointID **schemeID** attribute's value.
+- If the both described above registration numbers, EAN and Enterprise ID, are not defined then the customer's active Registration Number of the **VAT ID** Registration category will be used as the customer's EndpointID and **9925** constant (Belgium VAT number) will be used as the EndpointID **schemeID** attribute's value.
 
 - If the VAT ID registration number is not defined then the **Tax exempt number** defined in customer's master data, will be used as the customer's EndpointID and **9925** constant will be used as the EndpointID **schemeID** attribute's value.
   
     The resulting Endpoint ID value populates the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and is used as the buyer's identification during the submission process.
 
 > [!NOTE]
-> For both the seller's identification and the buyer's identification, schema **9925** (Belgium VAT number) is used by default, according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). If you must redefine the default schema, follow the configuration steps in the next section. Otherwise, skip ahead to the [Configure units of measure](#configure-units-of-measure) section.
+> If the described above built-in registration numbers are not sufficient then you can redefine the default schema following the configuration steps for the **Buyer** identification in the next section and define any schema from the list of allowed values [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). Otherwise, skip ahead to the [Configure units of measure](#configure-units-of-measure) section.
 
 ## Configure identification schemas
 
@@ -240,6 +240,9 @@ To enter the Seller schema code, follow these steps.
 1. Select a legal entity, and then, on the Action Pane, select **Electronic document properties**.
 1. In the **Value** column, enter the required Seller schema code.
 
+> [!NOTE]
+> For the seller's identification, schema **9925** (Belgium VAT number) is used by default if nothing else is defined. Schema codes that are defined via electronic document property types have a higher priority than the default **9925** schema code.
+
 ### Enter the Buyer schema codes
 
 To enter the Buyer schema codes, follow these steps.
@@ -249,7 +252,9 @@ To enter the Buyer schema codes, follow these steps.
 1. In the **Value** column, enter the required Buyer schema code.
 
 > [!NOTE]
-> Schema codes that are defined via electronic document property types have a higher priority than the default **9925** schema code.
+> For the buyer's identification, schema **9925** (Belgium VAT number) is used by default if nothing else is defined. Schema codes that are defined via electronic document property types have a higher priority than the other built-in **0088**, **0208**, **9925** schema code.
+
+![Screenshot that shows the customer Endpoint.](emea-bel-einoices-endpoint.jpg)
 
 ## Configure units of measure
 
