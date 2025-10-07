@@ -199,6 +199,8 @@ The following hierarchy of built-in [Registration numbers](../europe/emea-regist
 
 - If the Global Location Number (GLN), also known as a European article numbering (EAN), is defined for the customer as an active Registration Number with the **EAN** Registration category, then it will be used as the customer's EndpointID and **0088** value will be used as the EndpointID **schemeID** attribute.
 
+- If the described above EAN registration number is not defined then the customer's active Registration Number of the **Enterprise ID** Registration category will be used as the customer's EndpointID and **0208** value will be used as the EndpointID **schemeID** attribute.
+
     The VAT number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
 
 > [!NOTE]
