@@ -133,3 +133,9 @@ The Warehouse Management mobile app will continue to work with Dynamics 365 Fina
 ## Can I authenticate using Microsoft Entra Conditional Access?
 
 No. The Warehouse Management mobile app doesn't support Microsoft Entra Conditional Access.
+
+## Can I authenticate using Microsoft Entra Guest User Access?
+
+Yes. You can add an external user as a guest in the Microsoft Entra admin center. You can find instructions on how to add a guest user here:[Quickstart: Add a guest user and send an invitation](https://learn.microsoft.com/en-us/entra/external-id/b2b-quickstart-add-guest-users-portal). 
+
+After sending the invitation, you should create a warehouse worker account in Supply Chain Management and link it to the Microsoft Entra ID guest user account. If the guest user will use WMA, you must assign appropriate roles and permissions to the warehouse worker account to enable access to WMA.
