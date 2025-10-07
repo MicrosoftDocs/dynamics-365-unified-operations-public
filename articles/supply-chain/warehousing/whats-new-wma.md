@@ -37,7 +37,7 @@ If you have feedback about a preview version of this app, please submit a post o
 Version 4.0.21.0 adds the following fixes and improvements:
 
 - Resolved an issue with device code authentication on Android.
-- Fixed a sign-in issue where pressing Enter on a physical device triggered the **Change connection** button instead of submitting credentials.
+- Fixed an issue where pressing Enter on the sign-in page switched focus to the **Change connection** button instead of submitting credentials.
 
 ### What's new in version 4.0.20.0
 
