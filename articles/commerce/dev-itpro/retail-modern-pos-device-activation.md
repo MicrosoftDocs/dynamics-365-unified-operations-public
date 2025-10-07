@@ -1,10 +1,8 @@
 ---
-# required metadata
-
 title: Configure, install, and activate Modern POS (MPOS)
 description: Learn how to configure, download, and install, and activate Microsoft Dynamics 365 Commerce Modern POS (MPOS) on various platforms.
 author: jashanno
-ms.date: 10/02/2025
+ms.date: 10/07/2025
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.assetid: 1a8dba89-f81b-40d5-9e1e-dba7b335600d
@@ -123,7 +121,7 @@ The Modern POS installer first extracts the associated files and then starts the
     - If a system restart is required, the installer informs you about this requirement, but the installation can typically continue.
     - A sideloaded installation of Modern POS requires a Group Policy change. The installer informs you if this change is required and then makes the change automatically.
 
-2. If you selected offline support, but a valid version of SQL Server isn't found, the installer will fail during the prerequisites check. If a prerequisite fails during this step, first retry the installer. If the installer continues to fail, see the [Troubleshooting](#troubleshooting) section of this article.
+2. If you selected offline support, but a valid version of SQL Server isn't found, the installer will fail during the prerequisites check. If a prerequisite fails during this step, retry the installer.<!-- If the installer continues to fail, see the [Troubleshooting](#troubleshooting) section of this article.-->
 3. The installer installs Modern POS.
 4. On the page that states that installation was successful, select **Close** to exit the installer.
 
