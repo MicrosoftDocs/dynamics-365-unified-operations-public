@@ -203,7 +203,9 @@ The following hierarchy of built-in [Registration numbers](../europe/emea-regist
 
 - If the both described above registration numbers, EAN and Enterprise ID, are not defined then the customer's active Registration Number of the **VAT ID** Registration category will be used as the customer's EndpointID and **9925** value will be used as the EndpointID **schemeID** attribute.
 
-    The VAT number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
+- If the VAT ID registration number is not defined then the **Tax exempt number** defined in customer's master data, will be used as the customer's EndpointID and **9925** value will be used as the EndpointID **schemeID** attribute.
+  
+    The resulting Endpoint ID value populates the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and is used as the buyer's identification during the submission process.
 
 > [!NOTE]
 > For both the seller's identification and the buyer's identification, schema **9925** (Belgium VAT number) is used by default, according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). If you must redefine the default schema, follow the configuration steps in the next section. Otherwise, skip ahead to the [Configure units of measure](#configure-units-of-measure) section.
