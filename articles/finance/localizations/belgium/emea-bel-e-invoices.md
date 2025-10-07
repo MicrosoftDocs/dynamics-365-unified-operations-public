@@ -165,7 +165,7 @@ To enter the address, follow these steps.
 To identify a company by its value-added tax (VAT) number, follow these steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-1. On the **Foreign trade and statistics** FastTab, in the **INTRASTAT** section, in the **VAT exempt number export** field, make sure that a valid VAT number is entered for the legal entity.
+1. <a id="SellVAT"></a>On the **Foreign trade and statistics** FastTab, in the **INTRASTAT** section, in the **VAT exempt number export** field, make sure that a valid VAT number is entered for the legal entity.
 
     The VAT number is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the seller's identification during the submission process.
 
@@ -241,7 +241,7 @@ To enter the Seller schema code, follow these steps.
 1. In the **Value** column, enter the required Seller schema code.
 
 > [!NOTE]
-> For the seller's identification, schema **9925** (Belgium VAT number) is used by default if nothing else is defined. Schema codes that are defined via electronic document property types have a higher priority than the default **9925** schema code. The value of the **EndpointID** will be always retrieved from the seller's **VAT exempt number export** field regardless the schema value redefined in the seller's **CompanyEndpointType** parameter.
+> For the seller's identification, schema **9925** (Belgium VAT number) is used by default if nothing else is defined. Schema codes that are defined via electronic document property types have a higher priority than the default **9925** schema code. The value of the **EndpointID** will be always retrieved from the seller's [**VAT exempt number export**](#SellVAT) field regardless the schema value redefined in the seller's **CompanyEndpointType** parameter.
 
 ### Enter the Buyer schema codes
 
@@ -252,7 +252,7 @@ To enter the Buyer schema codes, follow these steps.
 1. In the **Value** column, enter the required Buyer schema code.
 
 > [!NOTE]
-> For the buyer's identification, schema **9925** (Belgium VAT number) is used by default if nothing else is defined. Schema codes that are defined via electronic document property types have a higher priority than the other built-in **0088**, **0208**, or **9925** schema codes. The value of the **EndpointID** will be retrieved from the buyer's active registration number with the type which exactly matches the value of the buyer's **CustomerEndpointType** parameter.
+> For the buyer's identification, schema **9925** (Belgium VAT number) is used by default if nothing else is defined. Schema codes that are defined via electronic document property types have a higher priority than the other built-in **0088**, **0208**, or **9925** schema codes. The value of the **EndpointID** will be retrieved from the buyer's active registration number which must be preliminary created with the type which exactly matches the value of the buyer's **CustomerEndpointType** parameter.
 
 ![Screenshot that shows the customer Endpoint.](emea-bel-einoices-endpoint.jpg)
 
