@@ -194,9 +194,10 @@ To enter the contact person, follow these steps.
     > All available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid email address and phone number.
 
 ### Verify the buyer's identification
-==TO DO==
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
-1. On the **Invoice and delivery** FastTab, in the **SALES TAX** section, in the **Tax exempt number** field, make sure that a valid VAT number is entered for the customer.
+
+The following hierarchy of built-in [Registration numbers](../europe/emea-registration-ids.md) is implemented for the buyer's EndpointID determination.
+
+- If the Global Location Number (GLN), also known as a European article numbering (EAN), is defined for the customer as an active Registration Number with the **EAN** Registration category, then it will be used as the customer's EndpointID and **0088** value will be used as the EndpointID **schemeID** attribute.
 
     The VAT number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
 
