@@ -11,6 +11,8 @@ ms.author: v-federicohe
 
 # Configure withholding taxes at invoice posting
 
+[!INCLUDE[banner](../../includes/banner.md)]
+
 This article describes how to configure withholding taxes that apply when you post a vendor invoice, using negative tax codes.
 Several LATAM Expansion reports use these types of withholding taxes for many countries/regions, such as Colombia, Chile, and Venezuela.
 
@@ -40,3 +42,5 @@ Learn more in [Set up sales tax codes](set-up-sales-tax-codes.md).
 
 > [!NOTE]
 > In Chile, a professional fees receipt might require a 10% income tax withholding at invoice registration.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
