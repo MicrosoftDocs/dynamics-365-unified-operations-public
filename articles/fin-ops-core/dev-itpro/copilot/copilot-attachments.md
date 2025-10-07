@@ -13,7 +13,7 @@ ms.collection:
 ms.search.region: Global
 ---
 
-# Use file attachments in Copilot for finance and operations apps
+# File attachments in Copilot for finance and operations apps
 
 [!include [banner](../includes/banner.md)]
 
