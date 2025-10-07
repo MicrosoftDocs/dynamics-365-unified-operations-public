@@ -2343,8 +2343,6 @@ items:
         href: ../fin-ops/copilot/immersive-home.md
       - name: Chat with finance and operations data
         href: copilot/chat-with-fno-data.md
-      - name: Use attachments with Copilot
-        href: copilot/copilot-attachments.md
       - name: Enable Copilot capabilities and features
         items:
         - name: Enable Copilot capabilities in finance and operations apps
@@ -2371,6 +2369,8 @@ items:
           href: copilot/copilot-client-plugins.md
         - name: Create AI tools with finance and operations business logic (preview)
           href: copilot/copilot-ai-plugins.md
+        - name: Extend attachments with Copilot
+          href: copilot/copilot-attachments.md
         - name: Tutorials
           items:
           - name: Extending Copilot capabilities with low-code plugins
