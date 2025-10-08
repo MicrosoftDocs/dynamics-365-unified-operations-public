@@ -15,9 +15,11 @@ ms.author: v-federicohe
 
 This process consists of two parts: first the vendor invoice posting, and then the vendor payment journal posting.
 
-## How to post a vendor invoice with a withholding tax group
+## Post a vendor invoice with a withholding tax group
 
-1. Go to **Accounts payable > Invoices > Invoice journal**.
+To post a vendor invoice with a withholding tax group, follow these steps.
+
+1. Go to **Accounts payable** > **Invoices** > **Invoice journal**.
 1. Select **New**.
 1. In the **Name** field, enter or select a value (choose a vendor invoice journal).
 1. Select **Lines**.
@@ -36,9 +38,11 @@ This process consists of two parts: first the vendor invoice posting, and then t
 > [!NOTE]
 > You can post the vendor invoice from any journal configured for that purpose and from purchase orders. Just be sure that in the LATAM section the **Withholding tax group** field contains a value.
 
-## How to register a vendor payment journal with withholding tax
+## Register a vendor payment journal with withholding tax
 
-1. Go to **Accounts payable > Payments > Vendor payment journal**.
+To register a vendor payment journal with withholding tax, follow these steps.
+
+1. Go to **Accounts payable** > **Payments** > **Vendor payment journal**.
 1. Select **New**.
 1. In the list, select the row.
 1. In the **Name** field, enter or select a value (choose a vendor payment journal).
