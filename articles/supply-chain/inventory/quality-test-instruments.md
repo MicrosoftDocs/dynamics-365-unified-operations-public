@@ -42,6 +42,14 @@ Learn more in [Test instrument calibration](quality-instrument-calibration.md).
     - **Tag number required** – Select this checkbox if a test instrument tag number (in addition to an instrument type) must be specified for the test instrument on quantity orders. The test instrument tag identifies the specific physical instrument that is used in the test. Selection of this checkbox triggers other functionality that is related to tracking and calibration of test instruments. To view, create, and edit the available test instrument tags, select **Test instrument tags** on the Action Pane.
     - **Used for calibration** – Select this checkbox for test instrument types that are used to calibrate other instruments and equipment.
     - **Calibration label layout** – For test instrument types where the **Tag number required** checkbox is selected, select the layout that is used to print calibration labels.
+    - **Asset type** - Link a test instrument type to an asset type to manage its tags via asset management. Calibration can be scheduled with time-based maintenance plans or, optionally, usage-based plans by linking a counter. To enable usage-based calibration, select a counter and link maintenance plan lines to it. All tags must be linked to assets.
+    - **Test quantity counter type** - Select to increment the counter by the test quantity when a quality order is validated.
+    - **Fixed increment counter type** - Select to apply a fixed usage increment each time a quality order is validated.
+    - **Usage increment** - For the fixed increment counter type, this value increments the asset counter when a quality order is validated.
+    - **Calibration state** - When the linked asset changes to this state, the test instrument tag usage status is set to calibration.
+    - **Out of service state** - When the linked asset changes to this state, the tag usage status is set to out of service. It is also set when the asset becomes inactive.
+    - **Auto-create test instrument tag from asset** - If enabled, a test instrument tag is automatically created only when a new asset of the linked asset type is created; existing assets are not affected.
+
 
 1. Close the page.
 
