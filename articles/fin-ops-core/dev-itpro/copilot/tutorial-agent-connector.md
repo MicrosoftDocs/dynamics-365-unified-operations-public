@@ -17,7 +17,7 @@ ms.search.region: Global
 
 [!include [banner](../includes/banner.md)]
 
-The **Fin & Ops Apps (Dynamics 365)** connector in Microsoft Dataverse provides a powerful way to interact with Dynamics 365 finance and operations apps data directly from your agent. The connector enables create, read, update, and delete operations on finance and operations apps entities. When you use the connector in Microsoft Copilot Studio, your agent can answer questions and perform actions in response to user prompts. For example, the agent can:
+The **Fin & Ops Apps (Dynamics 365)** connector in Microsoft Dataverse provides a powerful way to interact with finance and operations apps data directly from your agent. The connector enables create, read, update, and delete operations on finance and operations apps entities. When you use the connector in Microsoft Copilot Studio, your agent can answer questions and perform actions in response to user prompts. For example, the agent can:
 
 - Create new records such as customers, vendors, or purchase orders.
 - Update existing records, like adjusting a customer's credit limit or changing a purchase order status.
@@ -82,14 +82,14 @@ In this step, you add instructions so the agent knows how to respond to prompts 
 
 1. Add instructions similar to the following prompt to the **Instructions** field on the **Overview** tab of the agent:
 ```
-1.	Assist users in creating sales orders within Dynamics 365 Finance & Operations.
+1.	Assist users in creating sales orders within finance and operations apps.
 2.	Provide step-by-step guidance on the sales order creation process.
 3.	Ensure accuracy and completeness of the sales order details.
 4.	Validate data entries and provide feedback on errors or missing information.
 5.	Offer tips and best practices for efficient sales order management.
-6.	Respond to user queries related to sales orders and Dynamics 365 Finance & Operations.
+6.	Respond to user queries related to sales orders and finance and operations apps.
 7.	Maintain a friendly and professional tone in all interactions.
-8.	Avoid discussing topics unrelated to sales orders or Dynamics 365 Finance & Operations.
+8.	Avoid discussing topics unrelated to sales orders or finance and operations apps.
 9.	Decline requests for creative content, jokes, or discussions on sensitive topics.
 10.	Respectfully decline any harmful or malicious requests.
 ```
