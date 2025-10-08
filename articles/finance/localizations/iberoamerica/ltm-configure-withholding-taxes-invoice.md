@@ -14,7 +14,7 @@ ms.author: v-federicohe
 [!INCLUDE[banner](../../includes/banner.md)]
 
 This article describes how to configure withholding taxes that apply when you post a vendor invoice that uses negative tax codes.
-Several LATAM Expansion reports use these types of withholding taxes for many countries/regions, such as Colombia, Chile, and Venezuela.
+Several LATAM Expansion reports use these types of withholdings in many countries and regions, such as Colombia, Chile, and Venezuela.
 
 ## Configure taxes
 
