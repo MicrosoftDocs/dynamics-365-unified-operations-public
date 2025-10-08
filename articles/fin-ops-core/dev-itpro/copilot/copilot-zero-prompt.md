@@ -1,5 +1,5 @@
 ---
-title: Customize the Copilot zero prompt experience
+title: Customize the Copilot zero prompt experience (preview)
 description: Learn how to customize the zero prompt experience for Copilot for finance and operations apps.
 author: jaredha
 ms.author: jaredha
@@ -15,7 +15,8 @@ ms.search.region: Global
 
 # Customize the zero prompt experience (preview)
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The zero prompt experience helps makers enhance user engagement and streamline interactions by presenting the user with customized prompt options to select at the start of the Copilot chat session. By presenting a zero prompt experience adaptive card at the beginning of the chat session, the user receives relevant information and options without the need for more prompts and iterations. The zero prompt experience can be context aware, shown selectively for targeted pages.
 
@@ -48,10 +49,10 @@ When you open the **Copilot for finance and operations apps** chat experience in
 1. Set the **Priority** value. If you have multiple topics that the zero prompt event triggers, the priority you set for the trigger node determines the order in which they execute.
 
 > [!NOTE]
-> You can create multiple topics for zero prompt experiences for the various conditions you want to support. For more information on available application context variables, see [Use application context with Copilot](./copilot-application-context.md).
+> You can create multiple topics for zero prompt experiences for the various conditions you want to support. Learn more about available application context variables in [Use application context with Copilot](./copilot-application-context.md).
 
 ### Configure the zero prompt experience adaptive card
-Below the trigger node, add a **Message** node with an adaptive card that contains your zero prompt experience. This adaptive card contains actions that, on `Action.Submit`, send the zero prompt for that action. For more information on building adaptive cards, see [https://adaptivecards.microsoft.com](https://adaptivecards.microsoft.com).
+Below the trigger node, add a **Message** node with an adaptive card that contains your zero prompt experience. This adaptive card contains actions that, on `Action.Submit`, send the zero prompt for that action. Learn more about building adaptive cards in [https://adaptivecards.microsoft.com](https://adaptivecards.microsoft.com).
 
 On the adaptive card, add an object that contains an `Action.Submit` action with the following properties:
 
@@ -308,3 +309,5 @@ beginDialog:
 inputType: {}
 outputType: {}
 ```
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
