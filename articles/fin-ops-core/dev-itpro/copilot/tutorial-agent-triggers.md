@@ -19,7 +19,7 @@ ms.search.region: Global
 
 Business events in Dynamics 365 finance and operations apps provide a powerful mechanism for integrating external systems and automating workflows. These events are emitted when specific business actions occur, such as confirming a purchase order or approving a requisition. Use these events to notify external systems or trigger downstream processes. For more information about the business events framework in finance and operations apps, see [Business events overview](../business-events/home-page.md).
 
-By connecting these business events to agents, you can unlock intelligent, event-driven automation. When a business event is raised, it can serve as a trigger for an agent to perform tasks such as:
+When you connect these business events to agents, you can unlock intelligent, event-driven automation. When a business event is raised, it can serve as a trigger for an agent to perform tasks such as:
 - Initiating reconciliation processes
 - Sending notifications or approvals
 - Updating external systems or databases
@@ -28,9 +28,11 @@ By connecting these business events to agents, you can unlock intelligent, event
 This approach enables seamless orchestration between finance and opeations apps and Copilot Studio agents, allowing you to extend business logic beyond the boundaries of the Dynamics 365 application. Whether the event is workflow-based (for example, approvals) or nonworkflow (for example, confirmations), you can harness it to drive real-time, contextual automation. By using low-code plugins, developers and solution architects can configure these triggers with minimal effort, ensuring scalability and maintainability across business scenarios. 
 
 ## Prerequisites
+
 For this tutorial, you must first enable Copilot for finance and operations apps in your environment. For instructions, see [Copilot capabilities in finance and operations apps](./enable-copilot.md).
 
 ## Scenario: Notify a manager when a purchase order is confirmed
+
 In this scenario, you add a trigger capability to an agent. Once the business event conditions are reached (a purchase order is confirmed), the agent is triggered and sends an email or Teams message to the manager of that company referring the purchase order has been created, sending all relevant data via email. 
 
 You can achieve this scenario in two different ways:
@@ -38,11 +40,13 @@ You can achieve this scenario in two different ways:
 - Integrate the trigger on an existing agent (it can be the Copilot for Dynamics 365 finance and operations or any agent already created in Copilot Studio)
 
 Here's an overview of the steps in this tutorial:
+
 - A trigger action for the business event. This action calls the agent once a purchase order is confirmed in Dynamics 365 finance and operations.
 - Add two tools (Send an Email and Send a Teams Message), so that a specific user is notified regarding this action on Dynamics 365 finance and operations.
 - Clear instructions so that the right tools are called based on the triggered event.
 
 ### Step 1: Create a new trigger that monitors purchase orders confirmed
+
 1.	In Copilot Studio, go to **Overview** -> **Triggers** -> **Add trigger**.
 1.	Select **All** and, on the search bar, search for **When a Business Event occurs Fin & Ops Apps (Dynamics 365)**. 
 1.	Select **Next**. A connection from Microsoft Copilot Studio to Dynamics 365 Finance and Operations is created. For this example, rename the trigger to “Notify a Manager When a Purchase Order Is Confirmed”.
@@ -58,6 +62,7 @@ Here's an overview of the steps in this tutorial:
 The agent is now called when a purchase order is confirmed on Dynamics 365 finance and operations.
 
 ### Step 2: Add tools for email and Teams communication
+
 In this step, you add tools so that the agent can communicate via email and Teams with a specific, predefined person.
 
 1. In Copilot Studio, go to **Overview** -> **Tools** -> **Add tool**.
@@ -78,6 +83,7 @@ In this step, you add tools so that the agent can communicate via email and Team
 1. Leave the default values for the remaining options, and **Save**.
 
 ### Step 3: Define the instructions for the agent
+
 In this step, you define clear instructions for the agent to understand what to do when the purchase order is marked as confirmed in the application.
 
 1. In Copilot Studio, go to **Overview** -> **Instructions** -> **Edit**.
@@ -88,6 +94,7 @@ In this step, you define clear instructions for the agent to understand what to 
 1. **Save** and **Publish** the agent.
 
 ### Step 4: Test the agent
+
 You can now test the agent, starting in your Dynamics 365 finance and operations apps client, with your Microsoft Teams and email inbox open.
 
 1. In Dynamics 365 finance and operations apps, in company USMF, open **Accounts Receivable** -> **Payments** -> **Customer payment journal**.
@@ -103,3 +110,5 @@ You can now test the agent, starting in your Dynamics 365 finance and operations
 1. **Validate** the journal entry. If successful, **Post** the journal by selecting **Post** -> **Post**.
 
 Once you post the journal, open Microsoft Teams and your email account to verify that the agent automatically sent the messages on the triggered event.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
