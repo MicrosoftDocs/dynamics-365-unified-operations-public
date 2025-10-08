@@ -19,13 +19,13 @@ ms.search.region: Global
 
 Virtual entities for Dynamics 365 finance and operations apps expose live operational data in Microsoft Dataverse. They appear as Dataverse tables that point back to data in finance and operations apps, enabling create, read, update, and delete (CRUD) operations where supported. This feature lets your apps, flows, and agents use current data directly accessed in the finance and operations database.
 
-When you connect the virtual entities as knowledge sources in Copilot Studio, your agent can interact in natural language with the data available in finance and operations apps, returning explanations, aggregations, and citations for records. Copilot Studio includes a Dataverse knowledge experience that lets you use this functionality.
+When you connect the virtual entities as knowledge sources in Microsoft Copilot Studio, your agent can interact in natural language with the data available in finance and operations apps, returning explanations, aggregations, and citations for records. Copilot Studio includes a Dataverse knowledge experience that lets you use this functionality.
 
 ## Prerequisites
 
-For this tutorial, enable **Copilot for finance and operations apps** in your environment. For instructions, see [Enable Copilot capabilities in finance and operations apps](./enable-copilot.md).
+For this tutorial, enable **Copilot for finance and operations apps** in your environment. Learn more in [Enable Copilot capabilities in finance and operations apps](./enable-copilot.md).
 
-Also, enable Microsoft Dataverse virtual entities and make them visible for the data you want to access. See [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities.md) for more information.
+Also, enable Microsoft Dataverse virtual entities and make them visible for the data you want to access. Learn more in [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities.md).
 
 ## Scenario 1: On-hand inventory
 
