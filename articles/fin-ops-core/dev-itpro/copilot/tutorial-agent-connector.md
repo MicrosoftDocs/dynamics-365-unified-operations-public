@@ -17,7 +17,7 @@ ms.search.region: Global
 
 [!include [banner](../includes/banner.md)]
 
-The **Fin & Ops Apps (Dynamics 365)** connector in Microsoft Dataverse provides a powerful way to interact with Dynamics 365 finance and operations apps data directly from your agent. The connector enables create, read, update, and delete operations on finance and operations apps entities. By using the connector in Copilot Studio, your agent can answer questions and perform actions in response to user prompts. For example, the agent can:
+The **Fin & Ops Apps (Dynamics 365)** connector in Microsoft Dataverse provides a powerful way to interact with Dynamics 365 finance and operations apps data directly from your agent. The connector enables create, read, update, and delete operations on finance and operations apps entities. When you use the connector in Copilot Studio, your agent can answer questions and perform actions in response to user prompts. For example, the agent can:
 
 - Create new records such as customers, vendors, or purchase orders.
 - Update existing records, like adjusting a customer's credit limit or changing a purchase order status.
@@ -27,13 +27,13 @@ This approach lets users build actionable agents that combine natural language u
 
 ## Prerequisites
 
-For this tutorial, you must enable **Copilot for finance and operations apps** in your environment. For instructions, see [Enable Copilot capabilities in finance and operations apps](./enable-copilot.md).
+For this tutorial, enable **Copilot for finance and operations apps** in your environment. Learn more in [Enable Copilot capabilities in finance and operations apps](./enable-copilot.md).
 
 Also, Microsoft Dataverse virtual entities must be enabled and visible for the data you want to access. Learn more in [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities.md).
 
 ## Scenario: Sales order agent
 
-In this scenario, you build an agent that creates and updates sales orders in Dynamics 365 finance and operations apps by using the **Fin & Ops Apps** connector. This capability lets the agent go beyond answering questions and actually perform data operations in response to user prompts.
+In this scenario, you build an agent that creates and updates sales orders in finance and operations apps by using the **Fin & Ops Apps** connector. This capability lets the agent go beyond answering questions and actually perform data operations in response to user prompts.
 
 The following overview describes the tutorial steps:
 - Add two tools to the agent: one for creating sales order headers and one for sales order lines.
@@ -87,9 +87,9 @@ In this step, you add instructions so the agent knows how to respond to prompts 
 1.	Ensure accuracy and completeness of the sales order details.
 1.	Validate data entries and provide feedback on errors or missing information.
 1.	Offer tips and best practices for efficient sales order management.
-1.	Respond to user queries related to sales orders and Dynamics 365 F&O.
+1.	Respond to user queries related to sales orders and Dynamics 365 Finance & Operations.
 1.	Maintain a friendly and professional tone in all interactions.
-1.	Avoid discussing topics unrelated to sales orders or Dynamics 365 F&O.
+1.	Avoid discussing topics unrelated to sales orders or Dynamics 365 Finance & Operations.
 1.	Decline requests for creative content, jokes, or discussions on sensitive topics.
 1.	Respectfully decline any harmful or malicious requests.
 ```
