@@ -17,7 +17,7 @@ ms.search.region: Global
 
 [!include [banner](../includes/banner.md)]
 
-Virtual entities for Dynamics 365 finance and operations apps expose live operational data in Microsoft Dataverse. They appear as Dataverse tables that point back to data in finance and operations apps, enabling create, read, update, and delete (CRUD) operations where supported. This feature lets your apps, flows, and agents use current data directly accessed in the finance and operations database.
+Virtual entities for finance and operations apps expose live operational data in Microsoft Dataverse. They appear as Dataverse tables that point back to data in finance and operations apps, enabling create, read, update, and delete (CRUD) operations where supported. This feature lets your apps, flows, and agents use current data directly accessed in the finance and operations database.
 
 When you connect the virtual entities as knowledge sources in Microsoft Copilot Studio, your agent can interact in natural language with the data available in finance and operations apps, returning explanations, aggregations, and citations for records. Copilot Studio includes a Dataverse knowledge experience that lets you use this functionality.
 
