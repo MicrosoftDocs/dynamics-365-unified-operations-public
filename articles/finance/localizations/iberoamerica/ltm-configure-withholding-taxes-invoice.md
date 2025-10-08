@@ -18,6 +18,8 @@ Several LATAM Expansion reports use these types of withholdings in many countrie
 
 ## Configure taxes
 
+To configure taxes, follow these steps.
+
 1. To create a negative tax code, go to **Tax** > **Indirect taxes** > **Sales Tax** > **Sales tax codes**.
 1. Create a new tax code and set the **Allow negative sales tax percentage** slider to **Yes**.
 1. Set a negative percentage (for example, -10%) in the **Values** field.
@@ -27,6 +29,8 @@ Learn more in [Set up sales tax codes](set-up-sales-tax-codes.md).
 
 ## Set up sales tax groups
 
+To set up sales tax groups, follow these steps.
+
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**.
 1. Create a Sales tax group.
 1. Add the negative taxes you want.
@@ -35,6 +39,8 @@ Learn more in [Set up sales tax codes](set-up-sales-tax-codes.md).
 1. Add the negative taxes you want.
 
 ## Assign the tax groups to a vendor
+
+To assign the tax groups to a vendor, follow these steps.
 
 1. Go to **Accounts payable** > **Vendors** > **All vendors**.
 1. Select a vendor account to open the configuration form.
