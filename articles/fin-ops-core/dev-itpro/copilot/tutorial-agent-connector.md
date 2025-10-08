@@ -1,6 +1,6 @@
 ---
 title: Enable data operations for agents with the Fin & Ops Apps connector
-description: Learn how to use finance and operations virtual entities as knowledge sources for your ERP agents through a tutorial.
+description: Learn how to enable data operations for agents with the Fin & Ops Apps connector.
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
