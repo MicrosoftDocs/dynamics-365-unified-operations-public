@@ -21,5 +21,5 @@ Describe how managers and auditors can see what happened and generate reports
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
+<!-- KFM: Preview until further notice -->
 
