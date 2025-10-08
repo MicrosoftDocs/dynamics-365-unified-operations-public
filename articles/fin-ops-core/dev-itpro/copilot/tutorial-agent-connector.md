@@ -17,7 +17,7 @@ ms.search.region: Global
 
 [!include [banner](../includes/banner.md)]
 
-The **Fin & Ops Apps (Dynamics 365)** connector in Microsoft Dataverse provides a powerful way to interact with Dynamics 365 finance and operations apps data directly from your agent. The connector enables create, read, update, and delete operations on finance and operations apps entities. When you use the connector in Copilot Studio, your agent can answer questions and perform actions in response to user prompts. For example, the agent can:
+The **Fin & Ops Apps (Dynamics 365)** connector in Microsoft Dataverse provides a powerful way to interact with Dynamics 365 finance and operations apps data directly from your agent. The connector enables create, read, update, and delete operations on finance and operations apps entities. When you use the connector in Microsoft Copilot Studio, your agent can answer questions and perform actions in response to user prompts. For example, the agent can:
 
 - Create new records such as customers, vendors, or purchase orders.
 - Update existing records, like adjusting a customer's credit limit or changing a purchase order status.
