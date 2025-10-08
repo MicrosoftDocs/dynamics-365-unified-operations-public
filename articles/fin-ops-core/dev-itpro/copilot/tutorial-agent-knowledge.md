@@ -1,6 +1,6 @@
 ---
 title: Add knowledge to agents for finance and operations apps
-description: Learn how to use finance and operations virtual entities as knowledge sources for your ERP agents through a tutorial.
+description: Learn how to add knowledge to agents for finance and operations apps.
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
