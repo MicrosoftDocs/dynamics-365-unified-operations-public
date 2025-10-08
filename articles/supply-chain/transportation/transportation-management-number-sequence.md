@@ -41,3 +41,15 @@ To link a number sequence to a carrier, do the following:
 1. Close the page.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+## Pro number generation mode
+
+Go to **Transportation management \> Setup \> Performance setttings \> Pro number generation mode**.
+
+It controls how the system allocates the next Pro number in Transportation Management
+
+- **Default** (transaction scoped): The number is generated inside the current business transaction. A number is only kept if the process finishes successfully. If the user cancels or an error stops the process, the number is put back and reused. This enforces continuous sequencing but can increase locking under high parallel load.
+
+- **Performance optimized** (isolated): The number is generated on a separate connection and taken immediately. This reduces locking and improves throughput under high load, but numbers are not recycled if the business process later fails.
+
+If high‑volume processes (e.g. release to warehouse) run slowly and TMS pro number is used, selecting performance optimized can improve throughput.
