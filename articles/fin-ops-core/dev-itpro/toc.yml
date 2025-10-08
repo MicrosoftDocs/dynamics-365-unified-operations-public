@@ -2371,7 +2371,7 @@ items:
           href: copilot/copilot-ai-plugins.md
         - name: Extend attachments with Copilot
           href: copilot/copilot-attachments.md
-        - name: Customize the zero prompt experience
+        - name: Customize the zero prompt experience (preview)
           href: copilot/copilot-zero-prompt.md
         - name: Tutorials
           items:
