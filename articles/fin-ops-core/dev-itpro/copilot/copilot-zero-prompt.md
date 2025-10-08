@@ -15,7 +15,7 @@ ms.search.region: Global
 
 # Customize the zero prompt experience (preview)
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The zero prompt experience helps makers enhance user engagement and streamline interactions by presenting the user with customized prompt options to select at the start of the Copilot chat session. By presenting a zero prompt experience adaptive card at the beginning of the chat session, the user receives relevant information and options without the need for more prompts and iterations. The zero prompt experience can be context aware, shown selectively for targeted pages.
