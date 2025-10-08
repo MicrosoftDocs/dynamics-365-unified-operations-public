@@ -177,7 +177,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 3 | October 21 to October 24, 2025 | November 1 to November 2, 2025 |
 | Station 4 | October 27 to October 30, 2025 | November 8 to November 9, 2025 |
 | Station 5 | November 3 to November 6, 2025 | November 15 to November 16, 2025 |
-| Station 6 | November 5 to November 8, 2025 | November 15 to November 16, 2025 |
+| Station 6 | November 4 to November 7, 2025 | November 15 to November 16, 2025 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that are notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
