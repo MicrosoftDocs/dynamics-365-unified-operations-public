@@ -26,18 +26,24 @@ The zero prompts are a set of prompts that, when selected, either submit automat
 > This is a preview feature. Preview features aren't meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2216214), and are available before an official release so customers can get early access and provide feedback.
 
 ## Configuring the zero prompt experience
-You can configure your custom zero prompt experience in three steps:
+
+To configure your custom zero prompt experience, follow these steps.
+
 1. Create a new topic in the **Copilot for finance and operations apps** agent.
 1. Update the trigger node to trigger the topic when the Copilot chat panel opens in the finance and operations apps client.
 1. Create an adaptive card with your zero prompts that you send to the user on the triggering event.
 
 ### Add a new topic
+
+To add a new topic, follow these steps.
+
 1. In Copilot Studio, open the **Copilot for finance and operations apps** agent.
 1. Select the **Topics** tab.
 1. Select **Add a topic** > **From blank**.
 1. Change the **Name** of the topic from "Untitled" to something that describes the topic, like "Zero prompt experience".
 
 ### Update the trigger
+
 When you open the **Copilot for finance and operations apps** chat experience in the client and start a new session, the control sends the `Microsoft.PowerApps.Copilot.RequestZeroPrompt` event to the agent. This event triggers the zero prompt experience topic.
 
 1. On the **Trigger** node, select **Change trigger** > **A custom client event occurs**.
@@ -52,6 +58,7 @@ When you open the **Copilot for finance and operations apps** chat experience in
 > You can create multiple topics for zero prompt experiences for the various conditions you want to support. Learn more about available application context variables in [Use application context with Copilot](./copilot-application-context.md).
 
 ### Configure the zero prompt experience adaptive card
+
 Below the trigger node, add a **Message** node with an adaptive card that contains your zero prompt experience. This adaptive card contains actions that, on `Action.Submit`, send the zero prompt for that action. Learn more about building adaptive cards in [https://adaptivecards.microsoft.com](https://adaptivecards.microsoft.com).
 
 On the adaptive card, add an object that contains an `Action.Submit` action with the following properties:
@@ -78,7 +85,9 @@ For example, the following action, when selected, populates the chat input in th
 ```
 
 ## Zero prompt experience topic example
-The following example shows the full topic code for a zero prompt experience. You can try this example in your environment with the following steps:
+
+The following example shows the full topic code for a zero prompt experience. To try this example in your environment, follow these steps.
+
 1. In Copilot Studio, open the **Copilot for finance and operations apps** agent.
 1. Select the **Topics** tab, and select **Add a topic**.
 1. On the **More** menu, select **Open code editor**.
