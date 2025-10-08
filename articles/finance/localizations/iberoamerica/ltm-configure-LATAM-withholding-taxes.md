@@ -53,7 +53,7 @@ To configure the document class, follow these steps.
 1. In the **Additional data** section of the **Document class**, you can enable the **Taxable amount**, **Effective tax rate**, and other fields to be shown in the withholding tax transaction.
 1. In the **Document mask** section of the **Document class**, you can configure the structure of withholding certificate number (manual or automatic).
 
-### Payment order document configuration
+### Configure the payment order document
 
 #### Configure the document class type
 
