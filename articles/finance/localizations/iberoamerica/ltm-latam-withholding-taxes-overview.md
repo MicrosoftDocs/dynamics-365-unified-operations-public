@@ -21,7 +21,7 @@ The localization supports two main scenarios:
 
 ### Withholdings at the time of invoice registration (accrual)
 
-To accrue tax withholdings when you receive a vendor invoice, use the tax calculation functionality in Dynamics 365 Finance by applying the negative tax option.
+To accrue tax withholdings when you receive a vendor invoice, use the tax calculation functionality in Finance by applying the negative tax option.
 
 #### Example:
 
@@ -32,14 +32,15 @@ VAT withholding rate: 75%
 Calculated VAT withholding: 18,000
 
 Ledger accounting registration example:
+
 |   | Debit | Credit |
 | ------------- |--------|--------|
 | Expense concept | 150000| |
 | VAT credit      | 24000| |
 | VAT withholding 75% accrual |     |18000 |
-| Vendor account ||156000|
+| Vendor account | 156000 |
 
-Learn more about how to configure in [Configure withholding taxes at invoice posting](ltm-configure-withholdings-inovice.md) and how to register transactions in [Post vendor invoices with withholding taxes](ltm-post-withholdings-invoice.md).
+Learn how to configure withholding taxes in [Configure withholding taxes at invoice posting](ltm-configure-withholdings-inovice.md) and how to register transactions in [Post vendor invoices with withholding taxes](ltm-post-withholdings-invoice.md).
 
 ### Withholdings at the time of payment
 
@@ -69,4 +70,4 @@ Payment ledger accounting registration example:
 | VAT withholding 75% | 18000| |
 | Bank transfer ||156000|
 
-For more information about how to configure LATAM withholding taxes for payments, see [Configure LATAM Withholding taxes for payments](ltm-configure-LATAM-withholdings.md). For more information about how to register transactions, see [Post vendor payment transactions with LATAM Withholding taxes](ltm-post-payment-LATAM-withholdings.md).
+Learn how to configure LATAM withholding taxes for payments in [Configure LATAM Withholding taxes for payments](ltm-configure-LATAM-withholdings.md). For more information about how to register transactions, see [Post vendor payment transactions with LATAM Withholding taxes](ltm-post-payment-LATAM-withholdings.md).
