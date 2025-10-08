@@ -4,7 +4,7 @@ description: Learn how to use file attachments with Copilot for finance and oper
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 09/09/2025
+ms.date: 10/08/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -32,7 +32,7 @@ To use attachments with Copilot for finance and operations apps, make sure these
     - Copilot for finance and operations generation solution.
     - Copilot for finance and operations anchor solution.
   - Finance and Operations Virtual Entity.
-- Turn on the following features in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) to enable the respective attachment experiences:
+- To enable the respective attachment experiences, turn on the following features in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md):
   - **Enable user attachments in Copilot sidecar**
   - **Enable ability for user to attach a screenshot to Copilot sidecar**
 
