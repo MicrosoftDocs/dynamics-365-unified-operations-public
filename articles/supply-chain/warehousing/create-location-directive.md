@@ -38,14 +38,6 @@ Before you can create a location directive, you must follow these steps to make 
 1. Create locations, location types, location profiles, and location formats. Learn more in [Configure locations in a WMS-enabled warehouse](./tasks/configure-locations-wms-enabled-warehouse.md).
 1. Create sites, zones, and zone groups. Learn more in [Warehouse set up](../../commerce/channels-setup-warehouse.md) and [Configure locations in a WMS-enabled warehouse](./tasks/configure-locations-wms-enabled-warehouse.md).
 
-## <a name="scopes-feature"></a>Turn the Location directive scopes feature on or off
-
-The *Location directive scopes* feature gives you more freedom when you design location directives and helps reduce redundant configurations. It adds a **Scopes** option, which replaces the previous **Multiple SKU** option. Whereas the **Multiple SKU** option can be set only to *Yes* or *No*, the **Scopes** option provides not only those two settings (through the *Single item* and *Multiple items* values) but also two more (through the *Single item or order* and *All* values). For more information about these settings, see [Location directives FastTab](#location-directives-tab).
-
-When it's enabled, the **Scope** option supersedes the **Multiple SKU** option and is 100-percent compatible with existing configurations.
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Location directive scopes* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
 ## Work order types for location directives
 
 Many of the fields that can be set for location directives are common to all work order types. However, other fields are specific to particular work order types.
@@ -65,7 +57,7 @@ The following table lists the fields that are common to all work order types.
 | Location directives | Site |
 | Location directives | Warehouse |
 | Location directives | Directive code |
-| Location directives | Scope *or* Multiple SKU |
+| Location directives | Scope |
 | Lines | Sequence number |
 | Lines | From quantity |
 | Lines | To quantity |
@@ -143,7 +135,7 @@ The fields on the **Location directives** FastTab are specific to the work order
     > [!TIP]
     > If a directive code is set, the system won't search location directives by sequence number when work must be generated. Instead, it will search by directive code. In this way, you can be more specific about the location directive that is used for a particular step in a work template, such as the step for staging the materials.
 
-- **Scope** – Use this option to specify the scenarios that the location directive will be applied to. This option replaces the **Multiple SKU** option and is available only if the *Location directive scopes* feature is turned on in your system. (Learn more in [Turn the Location directive scopes feature on or off](#scopes-feature).)
+- **Scope** – Use this option to specify the scenarios that the location directive will be applied to.
 
     | Scope setting | Single order with one item | Multiple orders with the same item | Single order with multiple items | Multiple orders with multiple items |
     |---|---|---|---|---|
@@ -167,26 +159,12 @@ The fields on the **Location directives** FastTab are specific to the work order
     > - Although *Single item* and *Multiple items* scopes can be used for puts, this approach typically leads to redundant configurations. Consider using *Single item or order* and *All* scopes instead, because this approach will produce a cleaner setup.
     > - When using the *Single item or order* scope, receiving flows (like purchase orders) will add the order number to the location directive query during work creation. To prevent unexpected behavior, don't add query ranges for the lines in such cases.
 
-- **Multiple SKU** – Use this option to specify the scenario that the location directive will be applied to. This setting is replaced by the **Scope** setting if the *Location directive scopes* feature is turned on in your system. (Learn more in [Turn the Location directive scopes feature on or off](#scopes-feature).) Set this option to *Yes* to enable multiple stock-keeping units (SKUs) to be used on a location. For example, multiple SKUs must be enabled for the bay door location. If you enable multiple SKUs, your put location will be specified in work, as expected. However, the put location will be able to handle only a multi-item put (if work includes different SKUs that must be picked and put). It won't be able to handle a single-SKU put. If you set this option to *No*, your put location will be specified only if your put has just one kind of SKU.
-
-    > [!IMPORTANT]
-    > To be able to do both multi-item puts and single-SKU puts, you must specify two lines that have same structure and setup, but you must set the **Multiple SKU** option to *Yes* for one line and *No* for the other. Therefore, for put operations, you must have two identical location directives, even if you don't have to distinguish single SKUs and multiple SKUs on a work ID. Often, if you don't set up both these location directives, unexpected business process locations will come from the applied Location directive. You must use a similar setup for location directives that have a **Work type** of *pick* if you need to process orders that include multiple SKUs.
-
-    Use the **Multiple SKU** option for work lines that handle more than one item number. (The item number will be blank in the work details, and it will be shown as **Multiple** on the processing pages in the Warehouse Management mobile app.)
-
-    In a typical example scenario, a work template is set up so that it has more than one pick/put pair. In this case, you might want to search for a specific staging location to use for lines with a **Work type** of *Put*.
-
-    > [!NOTE]
-    > If the **Multiple SKU** option is set to *Yes*, you can't select **Edit query** on the Action Pane, because the query can't evaluate at the item level when there are multiple items. To ensure that the desired location directive is selected, use the **Directive code** field to guide the selection of the location directive that is related to the put lines where that directive code is assigned in the work template.
-
-    Unless you always work with either single-item or mixed-item operations, it's important that you define two location directives for the *Put* work type: one where the **Multiple SKU** option is set to *Yes* and one where it's set to *No*.
-
 - **Applicable disposition code** – Specify whether the disposition code of the location directive must match the disposition code that is applied when the item is received, or whether the location directive can be selected based on any disposition code. If you select *Exact match*, and the **Disposition code** field is blank, only blank disposition codes will be considered for this location directive.
 
     > [!NOTE]
     > This field is available only for selected work order types. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section earlier in this article.
 
-- <a name="locate-by"></a>**Locate by** – Specify whether the putaway quantity should be the whole quantity on the license plate, or whether it should be item by item. Use this field to help ensure that all the contents on a license plate is put into one location, and that the system doesn't suggest that you split the contents into several locations for *ASN* (license plate receiving), *Mixed license plate* receiving, and *Cluster* receiving processes. (The *Cluster* receiving process requires that the [Cluster putaway feature](putaway-clusters.md) feature be turned on.) The behavior of the location directive query, the lines, and the location directive actions will vary, depending on the value that you select. The **Lines** FastTab is only used when the **Locate by** is set to *Item*.
+- <a name="locate-by"></a>**Locate by** – Specify whether the putaway quantity should be the whole quantity on the license plate, or whether it should be item by item. Use this field to help ensure that all the contents on a license plate is put into one location, and that the system doesn't suggest that you split the contents into several locations for *ASN* (license plate receiving), *Mixed license plate* receiving, and *Cluster* receiving processes. The behavior of the location directive query, the lines, and the location directive actions will vary, depending on the value that you select. The **Lines** FastTab is only used when the **Locate by** is set to *Item*.
 
     > [!NOTE]
     > Depending on the order type, this field has different options and is only accessible for some work order types.

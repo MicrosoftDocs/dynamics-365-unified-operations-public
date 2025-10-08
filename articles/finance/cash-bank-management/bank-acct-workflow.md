@@ -1,8 +1,8 @@
 ---
 title: Bank account lifecycle management
 description: Learn how to enable an approval workflow for bank accounts in the Cash and bank management module, including prerequisites and a step-by-step process.
-author: EricWangChen
-ms.author: wangchen
+author: music727
+ms.author: mibeinar
 ms.topic: how-to
 ms.date: 12/11/2024
 ms.custom:
@@ -51,3 +51,4 @@ To view the bank account change history, follow these steps.
 1. Go to **Cash and bank management** \> **Bank accounts** \> **Bank accounts**.
 1. Select **Changes**.
 1. Select **Change history**.
+

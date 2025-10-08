@@ -1,5 +1,5 @@
 ﻿---
-title: Flexible sampling plans (preview)
+title: Flexible sampling plans
 description: Learn how to use flexible sampling plans to inspect randomly selected units of items from a lot. The results from the inspected sample determine whether the whole lot passes or fails testing.
 author: johanhoffmann
 ms.author: johanho
@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Flexible sampling plans (preview)
+# Flexible sampling plans
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
 
 A *flexible sampling plan* defines the criteria for inspecting randomly selected units of items from a lot. The results from the inspected sample determine whether the whole lot passes or fails testing. Typically, the number of units that are selected for inspection is proportional to the total size of the lot. The quality association that is defined for a plan identifies the activity for the inspection. For example, the activity might be a quality order to inspect a product before it's released to a customer on a sales order. Alternatively, it might be a quality order to inspect a manufactured product after production is completed.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Flexible sampling plans offer other features that you can use to modify your criteria over time, based on previous testing results.
 

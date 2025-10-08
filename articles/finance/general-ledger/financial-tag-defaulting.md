@@ -1,8 +1,8 @@
 ---
 title: Financial tag rules
 description: Learn how to set up, create, and enter default financial tags on transactions.
-author: rcarlson
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 10/31/2024
 ms.reviewer: twheeloc

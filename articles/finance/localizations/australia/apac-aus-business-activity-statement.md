@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 07/17/2025
 ms.reviewer: johnmichalak
 ms.search.region: Australia
 
@@ -590,7 +590,7 @@ You can also set up the following reporting codes. However, we recommend that yo
 1. Go to **Tax > Setup > Sales tax > BAS PAYG reason codes**.
 2. Select **New**, and set the **Reason code** and **Description** fields.
 
-For a list of PAYG reason codes, see [PAYG reason codes](https://www.ato.gov.au/Rates/PAYG-installment-variations---reason-codes/).
+For a list of PAYG reason codes, see [PAYG reason codes](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments).
 
 ### <a name= "_Set_up_fringe"></a>Set up fringe benefit reason codes
 

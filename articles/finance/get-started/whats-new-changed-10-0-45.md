@@ -74,8 +74,8 @@ This section contains a table that lists the enhancements that are included in t
 |Accounts receivable|	Accounts receivable|	Invoice and invoice line details information in the **Associations** FastTab in **My cases** page. |	Feature management|
 | Cash and bank management | Modern bank reconciliation | Unintended matches between bank statement and bank transactions are prevented, unless explicitly defined and configured on the reconciliation rule. | Feature management |
 | Cash and bank management | Modern bank reconciliation | When the feature is enabled, customer and vendor bank accounts are automatically found when the manual payment journal is created during the bank reconciliation process. The suggestion of customer or vendor account is based on bank account number, IBAN, or trading party name available on the bank statement line. | Feature management |
-|Credit and collections	|Accounts receivable	|The user should be able to view and select the option for the due date and the terms of payment while posting a customer interest note.|	Feature management|
-|Credit and collections|	Accounts receivable|	Email template on the collection process automation uses the variables on the Subject line.	|Feature management |
+|Credit and collections	|Interest note due date based on customer payment terms	|Enable this parameter in **Credit and collections parameters** to calculate the due date of an interest note based on the payment terms setup on the customer. When set to **No**, the due date on the interest note continues to be the same as the posting date. |	Parameter|
+|Credit and collections|	Email template on Collections process automation allows variables in Subject line |	In the email template for Collections process automation, variables can now be used in the subject line similar to how they are used in the body of the email template.  	|Default |
 |Fixed assets |  Asset split logic independent of labels |  The feature involves researching and refactoring code paths that rely on localized labels for the split fixed asset process. It transitions from using labels to using a split subtype, ensuring that the logic is based on stable and consistent criteria. This change addresses issues where user-modifiable labels could cause unexpected behavior in the system.|  |
 |General ledger| Validate year-end close enhanced |  When running the **Validate year-end close** process, additional checks are done with partial ledger settlements. |  Default|
 |General ledger | Ledger settlements audit trail includes description and reason | On the **Ledger settlements** page, the **Description** column displays the description from the original transaction. The **Reason** column displays the comment entered for the ledger settlement. The **Ledger settlements inquiry** page also displays both the **Description** and **Reason** columns.|  Default|
@@ -106,7 +106,6 @@ The following table lists the features that are turned on by default in version 
 |Japan localization - Break up split transactions by year	|Mandatory	|Fixed assets|
 |Adjust sales tax amount per vendor charged sales tax	|On by default	|Tax|
 |Enable adding and synchronizing of tax hierarchy version in batch mode	|On by default	|Tax|
-|Copy tax registration number as default tax exempt number |On by default	|Tax|
 |Enable external tax solution providers for Tax Calculation |Mandatory |Tax|
 
 
@@ -117,6 +116,7 @@ The following table lists the features that were removed from Feature management
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
 | Extended look up of Electronic reporting format configurations allowing to inquire the Global repository | The related functionality is enabled out of the box | Electronic reporting (ER) |
+| Account structure activation performance enhancement | The related functionality is enabled out of the box | General ledger |
 | Globalization Studio | The related functionality is enabled out of the box | Globalization Studio |
 | E-invoicing service workspace designer | The related functionality is enabled out of the box | Globalization Studio |
 | Utilize application resources to perform CBD documents conversion from Word to PDF format | Disabled in Feature management due to replacement by In-App PDF conversion for Configurable Business Documents (CBD) | Electronic reporting (ER) |

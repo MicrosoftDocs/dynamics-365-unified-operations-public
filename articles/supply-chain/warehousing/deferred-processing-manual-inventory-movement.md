@@ -19,15 +19,6 @@ Deferred processing lets warehouse workers continue to do other work while a put
 
 Background processing is achieved by using the [Process warehouse app events feature](warehouse-app-events.md).
 
-## Turn on this feature for your system
-
-To make this feature available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). You must turn them on in this order:
-
-1. *Organization-wide work blocking*<br>(As of Supply Chain Management version 10.0.21, this feature is mandatory and can't be turned off.)
-1. *Process warehouse app events*<br>(As of Supply Chain Management version 10.0.25, this feature is turned on by default. As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off.)
-1. *Deferred put operations*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off.)
-1. *Deferred processing of manual inventory movement operation*<br>(As of Supply Chain Management version 10.0.25, this feature is mandatory and can't be turned off.)
-
 ## Configure the work processing policies
 
 To use deferred processing, you must set up and use a work processing policy. For deferred put processing, the [Deferred processing of warehouse work feature](deferred-put.md) supports the following work types: *Sales order*, *Transfer order issue*, and *Replenishment*. The *Deferred processing of manual inventory movement operation* features adds a new work type: *Inventory movement*.

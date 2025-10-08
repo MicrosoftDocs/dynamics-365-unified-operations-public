@@ -25,13 +25,6 @@ A work policy controls whether warehouse work is created when a manufactured ite
 > - You can't specify the same location for multiple work policies.
 > - The **Print label** option for mobile device menu items won't print a license plate label unless work was created.
 
-## Prerequisites
-
-If you are running Supply Chain Management version 10.0.35 or older, then you must turn on the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In newer versions, these features are fully integrated into the product, so they're either mandatory or no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-- *License plate receiving enhancements*
-- *Work policy enhancements for inbound work*
-
 ## The Work policies page
 
 To set up work policies, go to **Warehouse management \> Setup \> Work \> Work policies**. Then, on each FastTab, set the fields as described in the following subsections.
@@ -73,10 +66,7 @@ On the **Products** tab, set the **Product selection** field to control which pr
 
 ## Default and custom "to" locations
 
-> [!NOTE]
-> To make the functionality that is described in this section available in your system, you must turn on the *License plate receiving enhancements* and *Work policy enhancements for inbound work* features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.32, both of these features are on by default. As of Supply Chain Management version 10.0.36, both of these features are mandatory and can't be turned off.
-
-Previously, the system supported receiving only at the default location that is defined for each warehouse. However, mobile device menu items that use the following work creation processes now provide the **Use default data** option. This option lets you assign a custom "to" location to one or more menu items. (This option was already available for some other types of menu items.)
+Mobile device menu items that use the following work creation processes provide the **Use default data** option. This option lets you assign a custom "to" location to one or more menu items. (This option was already available for some other types of menu items.)
 
 - License plate receiving (and putaway)
 - Load item receiving (and putaway)
@@ -113,8 +103,6 @@ This scenario requires the following elements:
 - A mobile device menu item that has default data, and that sets the **To location** field to *FL-001*
 
 ### Prerequisites
-
-To make the functionality that is described in this scenario available in your system, you must turn on the *License plate receiving enhancements* and *Work policy enhancements for inbound work* features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.32, both of these features are on by default. As of Supply Chain Management version 10.0.36, both of these features are mandatory and can't be turned off.
 
 This scenario uses the standard demo data. Therefore, if you want to work through it by using the values that are provided here, you must work on a system where demo data is installed. Additionally, you must select the **USMF** legal entity.
 

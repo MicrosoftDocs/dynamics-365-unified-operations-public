@@ -1,36 +1,39 @@
 ---
 title: Use an inventory profile in documents and queries
-description: Learn about using inventory profile, including a step-by-step process for defining a posting profile in purchase orders.
+description: Learn how to work with inventory profiles for Russia in Microsoft Dynamics 365 Finance.
 author: evgenypopov
 ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 09/15/2025
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
 ---
 
 # Use an inventory profile in documents and queries
+
 [!include [banner](../../includes/banner.md)]
 
+This article explains how to work with inventory profiles for Russia in Microsoft Dynamics 365 Finance.
 
 ## Purchase orders
 
 ### Define a posting profile in purchase orders
 
-1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
-2. Select a purchase order, and switch to the **Header** view.
-3. On the **Setup** FastTab, in the **Inventory profile** section, in the **Kind of activity** field, select a kind of activity.
-4. In the **Inventory profile** field, select an inventory profile.
+To define a posting profile in purchase orders, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+1. Select a purchase order, and switch to the **Header** view.
+1. On the **Setup** FastTab, in the **Inventory profile** section, in the **Kind of activity** field, select a kind of activity.
+1. In the **Inventory profile** field, select an inventory profile.
 
     If you set the **Kind of activity** and **Inventory profile** fields in the vendor master record, in the purchase agreement master record, or on the **Accounts payable parameters** page, the values are entered by default in the purchase order.
 
-5. Switch to the **Lines** view.
-6. On the **Line details** FastTab, on the **Product** tab, in the **Tracking dimensions** section, in the **Inventory profile** field, you can select only an inventory profile value that corresponds to the kind of activity that you selected in the document header. If you selected and inventory profile in the **Header** view, you can select only the same inventory profile on the line.
-7. On the **Setup** tab, in the **Posting** section, note the following details:
+1. Switch to the **Lines** view.
+1. On the **Line details** FastTab, on the **Product** tab, in the **Tracking dimensions** section, in the **Inventory profile** field, you can select only an inventory profile value that corresponds to the kind of activity that you selected in the document header. If you selected and inventory profile in the **Header** view, you can select only the same inventory profile on the line.
+1. On the **Setup** tab, in the **Posting** section, note the following details:
     
     - The **Ledger account** field isn't available if the inventory profile is active for the item on the purchase order line. The ledger account is determined by the inventory profile that is specified on a purchase order line.
     - The **Posting profile** field is automatically set, based on the inventory profile on the purchase order line and the relation between the inventory profiles and the vendor posting profiles. If the posting profile can't be defined by the inventory profile, or if an inventory profile isn't selected on the purchase order line, the **Posting profile** field on the purchase order line remains blank. In this case, when you post an invoice, the posting profile that is specified in the purchase order header will be used.
@@ -41,9 +44,11 @@ When you post a purchase order invoice or product receipt, the system splits the
 
 #### Example in the RUMF legal entity
 
+To walk through an example procedure in the RUMF legal entity, follow these steps.
+
 1. On the **Procurement and sourcing parameters** page, on the **Summary update** tab, on the **Summary update** FastTab, in the **Split based on** section, on the **Product receipt** line, set the **Posting profile** and **Kind of activity** options to **Yes**.
-2. On the **Accounts payable parameters** page, on the **Ledger and sales tax** tab, on the **Posting** FastTab, in the **Posting profile** field, select **Общий**.
-3.  Create two vendor posting profiles: **GEN** and **COM**. Then create inventory profiles for **GEN**, **COM**, and **MAT**. Finally, set up a relation between the inventory profiles and the vendor posting profiles.
+1. On the **Accounts payable parameters** page, on the **Ledger and sales tax** tab, on the **Posting** FastTab, in the **Posting profile** field, select **Общий**.
+1.  Create two vendor posting profiles: **GEN** and **COM**. Then create inventory profiles for **GEN**, **COM**, and **MAT**. Finally, set up a relation between the inventory profiles and the vendor posting profiles.
 
     | **Inventory profile relation** | **Kind of activity** | **Inventory profile** | **Vendor posting profile** |
     |--------------------------------|----------------------|-----------------------|----------------------------|
@@ -51,14 +56,14 @@ When you post a purchase order invoice or product receipt, the system splits the
     | Profile                        | Commissioner         | COM                   | COM                        |
     | Profile                        | Basic                | MAT                   | GEN                        |
 
-4. Create the following items:
+1. Create the following items:
 
     - Item1
     - Item2
     - Item3
     - Item4
 
-5. Create a purchase order that has the following lines.
+1. Create a purchase order that has the following lines.
 
     | **Item** | **Inventory profile** | **Quantity** | **Vendor posting profile** |
     |----------|-----------------------|--------------|----------------------------|
@@ -67,7 +72,7 @@ When you post a purchase order invoice or product receipt, the system splits the
     | Item3    | COM                   | 10           | COM                        |
     | Item4    |                       | 10           |                            |
 
-6. Create a product receipt. You should see the following lines on the **Overview** and **Lines** FastTabs of the **Posting product receipt** page.
+1. Create a product receipt. You should see the following lines on the **Overview** and **Lines** FastTabs of the **Posting product receipt** page.
 
       - **Overview** FastTab
 
@@ -88,7 +93,7 @@ When you post a purchase order invoice or product receipt, the system splits the
     
     
 
-7. Select **Post**. Three product receipts are generated. A similar split will be done for purchase order invoices.
+1. Select **Post**. Three product receipts are generated. A similar split will be done for purchase order invoices.
 
 > [!NOTE]
 > If miscellaneous charges are attached to the purchase order header, when you post purchase order invoices that split by kinds of activity and posting profiles, those miscellaneous charges will be attached to each invoice.
@@ -97,11 +102,13 @@ When you post a purchase order invoice or product receipt, the system splits the
 
 If you process the invoice-factures at the same time that purchase order invoices are posted, the invoice-facture split is the same as the invoice split by the kind of activity and the posting profile.
 
-If you process invoice-factures later (for example, from a vendor invoice journal), you can combine the lines of different invoices that have the same kind of activity into one invoice-facture. To use this approach, follow these steps.
+If you process invoice-factures later (for example, from a vendor invoice journal), you can combine the lines of different invoices that have the same kind of activity into one invoice-facture. 
 
-1. Go to **Accounts payable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
-2. Select a vendor invoice that doesn't have a processed invoice-facture, and then select **Create facture \> Update facture**.
-3. On the **Update facture** page, in the upper pane, in the **Kind of activity** field, select the kind of activity that you want to process factures for. The lower pane shows the invoices that have the selected kind of activity.
+To configure an invoice-facture, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
+1. Select a vendor invoice that doesn't have a processed invoice-facture, and then select **Create facture \> Update facture**.
+1. On the **Update facture** page, in the upper pane, in the **Kind of activity** field, select the kind of activity for which you want to process factures. The lower pane shows the invoices that have the selected kind of activity.
 
    ![Update facture page.](../media/14_Update_facture.png)
 
@@ -114,17 +121,19 @@ The system saves the kind of activity that is used for posting in the product re
 
 ### Define a posting profile in sales orders
 
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
-2. Select a sales order, and switch to the **Header** view.
-3. On the **Setup** FastTab, in the **Inventory profile** section, in the **Kind of activity** field, select a kind of activity.
-4. In the **Inventory profile** field, select an inventory profile.
-5. Set the **Use compatible inventory profiles** option to **Yes** if inventory profiles that are compatible with the inventory profile that is selected in the sales order header should be used on the sales order lines.
+To define a posting profile in sales orders, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+1. Select a sales order, and switch to the **Header** view.
+1. On the **Setup** FastTab, in the **Inventory profile** section, in the **Kind of activity** field, select a kind of activity.
+1. In the **Inventory profile** field, select an inventory profile.
+1. Set the **Use compatible inventory profiles** option to **Yes** if inventory profiles that are compatible with the inventory profile that is selected in the sales order header should be used on the sales order lines.
 
     If you set the **Kind of activity** and **Inventory profile** fields in the customer master record, in the sales agreement master record, or on the **Accounts receivable parameters** page, the values are entered by default in the sales order.
 
-6. Switch to the **Lines** view.
-7. On the **Line details** FastTab, on the **Product** tab, in the **Tracking dimensions** section, in the **Inventory profile** field, you can select only an inventory profile that is compatible with the kind of activity that you selected in the header.
-8. On the **Setup** tab, in the **Posting** section, note the following details:
+1. Switch to the **Lines** view.
+1. On the **Line details** FastTab, on the **Product** tab, in the **Tracking dimensions** section, in the **Inventory profile** field, you can select only an inventory profile that is compatible with the kind of activity that you selected in the header.
+1. On the **Setup** tab, in the **Posting** section, note the following details:
 
     - The **Main account** field isn't editable if the inventory profile is active for the item on the sales order line. The ledger account is determined by the inventory profile that is specified on a sales order line.
     - The **Posting profile** field is automatically set, based on the inventory profile on the sales order line and the relation between the inventory profiles and the posting profiles. If the posting profile can't be defined by the inventory profile, or if an inventory profile isn't selected on the sales order line, the **Posting profile** field on the sales order line remains blank. In this case, when you post an invoice, the posting profile that is specified in the sales order header will be used.
@@ -137,6 +146,8 @@ When you create sales order lines by selecting **Add lines**, if you don't selec
 
 ### Example
 
+To walk through an example procedure, follow these steps.
+
 1. Set up the following inventory profiles.
 
 | Inventory profile | Kind of activity | Matching priority | Compatible inventory profiles | Physically available balance of item Item1 |
@@ -145,15 +156,15 @@ When you create sales order lines by selecting **Add lines**, if you don't selec
 | MAT               | Basic            | 2                 | GEN                           | 7                                          |
 | COM               | Commissioner     | 3                 |                               | 10                                         |
 
-2. On the **Accounts receivable parameters** page, set the **Split order lines by inventory profiles** option to **Yes**.
-3. Create a new sales order.
-4. On the **Sales order lines** FastTab, select **Add lines**.
-5. In the **Create lines** dialog box, set the following fields on the line that has the **Item1** reference in the **Item number** field:
+1. On the **Accounts receivable parameters** page, set the **Split order lines by inventory profiles** option to **Yes**.
+1. Create a new sales order.
+1. On the **Sales order lines** FastTab, select **Add lines**.
+1. In the **Create lines** dialog, set the following fields on the line that has the **Item1** reference in the **Item number** field:
 
     - In the **Sales quantity** field, enter **20**.
     - Leave the **Inventory profile** field blank.
 
-6. Select **Create**. Depending on the sales order settings, the system creates the following sales order lines:
+1. Select **Create**. Depending on the sales order settings, the system creates the following sales order lines:
 
     - **Option 1:** The sales order has the following settings.
 
@@ -219,11 +230,13 @@ When you create sales order lines by selecting **Add lines**, if you don't selec
 
 ## Transfer orders
 
-1. Go to **Inventory management** \> **Inbound orders** \> **Transfer order** or **Inventory management** \> **Outbound orders** \> **Transfer order**.
-2. Select a transfer order, and switch to the **Header** view.
-3. On the **Setup** FastTab, in the **Inventory profile** section, in the **Kind of activity** field, select a kind of activity.
-4. In the **Inventory profile** field, select an inventory profile.
-5. Set the **Use compatible inventory profiles** option to **Yes** if inventory profiles that are compatible with the inventory profile that is selected in the transfer order header should be used on the transfer order lines.
+To confgure a transfer order, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Inventory management** \> **Inbound orders** \> **Transfer order** or **Inventory management** \> **Outbound orders** \> **Transfer order**.
+1. Select a transfer order, and switch to the **Header** view.
+1. On the **Setup** FastTab, in the **Inventory profile** section, in the **Kind of activity** field, select a kind of activity.
+1. In the **Inventory profile** field, select an inventory profile.
+1. Set the **Use compatible inventory profiles** option to **Yes** if inventory profiles that are compatible with the inventory profile that is selected in the transfer order header should be used on the transfer order lines.
 
 If you set the **Kind of activity** and **Inventory profile** fields in the warehouse master record or on the **Inventory and warehouse management parameters** page, the values are entered by default in the transfer order. By default, the **Use compatible inventory profiles** option is set to the same value that it's set to on the **Inventory and warehouse management parameters** page.
 
@@ -249,8 +262,10 @@ If the value of the **Inventory profile** dimension for the production order BOM
 
 On the **On-hand list** page, you can filter by the kind of activity.
 
-1. Go to **Inventory management** \> **Inquiries and reports** \> **On-hand list**.
-2. In the upper pane, in the **Kind of activity** field, select the kind of activity that you want to see item balances for.
+To filter the **On-hand list** page by the kind of activity, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Inventory management** \> **Inquiries and reports** \> **On-hand list**.
+1. In the upper pane, in the **Kind of activity** field, select the kind of activity that you want to see item balances for.
 
 The query shows only the item balances for the inventory profiles that are related to the selected kind of activity. Only items where the **Inventory profile** inventory dimension is active are shown. To show all balances, regardless of the kind of activity, select **Unspecified** in the **Kind of activity** field.
 
@@ -260,6 +275,8 @@ You can generate cash flow forecasts for purchase orders and sale orders, based 
 
 ### Example
 
+To walk through an example procedure, follow these steps.
+
 1. Create the following inventory profiles.
 
       | **Inventory profile** | **Kind of activity** |
@@ -268,7 +285,7 @@ You can generate cash flow forecasts for purchase orders and sale orders, based 
       | MAT                   | Basic                |
       | COM                   | Commissioner         |
 
-2. Create a purchase order that has the following lines.
+1. Create a purchase order that has the following lines.
 
       | **Item number** | **Inventory profile** | **Quantity** | **Unit price** | **Posting profile** |
       |-----------------|-----------------------|--------------|----------------|---------------------|
@@ -277,8 +294,8 @@ You can generate cash flow forecasts for purchase orders and sale orders, based 
       | Item1           | MAT                   | 2            | 12             | GEN                 |
       | Item2           |                       | 5            | 20             | Общий               |
 
-3. Set the current date to January 7, 2019, and specify that the purchase order has payment terms that use a delay of five days.
-4. Add miscellaneous charges in the amount of 50 rubles (RUB) to the purchase order header. For the miscellaneous charge code, debit posting is set up for the item, and credit posting is set up for the vendor.
+1. Set the current date to January 7, 2019, and specify that the purchase order has payment terms that use a delay of five days.
+1. Add miscellaneous charges in the amount of 50 rubles (RUB) to the purchase order header. For the miscellaneous charge code, debit posting is set up for the item, and credit posting is set up for the vendor.
 
 The cash flow forecast for the purchase order will contain the following lines.
 

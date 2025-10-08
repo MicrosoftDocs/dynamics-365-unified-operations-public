@@ -1116,6 +1116,8 @@
                       href: general-ledger/financial-tag-defaulting.md
                     - name: Financial tag rule reference
                       href: general-ledger/financial-tag-rule-reference.md
+                    - name: Development guidelines and FAQ for Financial tags
+                      href: general-ledger/fin-tag-custom.md 
                 - name: Financial dimensions
                   items:
                     - name: Financial dimensions
@@ -1727,11 +1729,13 @@
                         - name: Chile
                           items:
                             - name: Get started with Electronic invoicing for Chile
-                              href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
+                              href: localizations/iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
                             - name: Vendor electronic invoice import in Chile
-                              href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
+                              href: localizations/iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
+                        - name: Colombia
+                          href: localizations/iberoamerica/ltm-colombia-electronic-invoice-configuration.md?context=/dynamics365/context/finance
                         - name: Costa Rica
-                          href: localizations//iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/finance                        
+                          href: localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/finance                        
                         - name: Denmark
                           href: localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/finance
                         - name: Egypt
@@ -1745,7 +1749,9 @@
                         - name: Malaysia
                           href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/finance
                         - name: Panama
-                          href: localizations//iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/finance                           
+                          href: localizations//iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/finance 
+                        - name: Paraguay
+                          href: localizations//iberoamerica/ltm-paraguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance                          
                         - name: Poland (preview)
                           href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
                         - name: Saudi Arabia
@@ -1756,8 +1762,10 @@
                               href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                             - name: Simplified electronic invoices in Commerce for Saudi Arabia
                               href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
+                        - name: Singapore (preview)
+                          href: localizations/singapore/apac-singapore-electronic-invoices.md?context=/dynamics365/context/finance
                         - name: Uruguay
-                          href: localizations//iberoamerica/ltm-uruguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance  
+                          href: localizations//iberoamerica/ltm-uruguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Tax Calculation
@@ -2050,32 +2058,32 @@
                       href: localizations/belgium/belgium.md
                     - name: CODA bank statement
                       href: localizations/belgium/emea-bel-coda-bank-statement-import.md
-                    - name: Create and transfer transactions to the BLWI
-                      href: localizations/belgium/be-00011-create-transfer-blwi.md
                     - name: Export ledger transactions
                       href: localizations/belgium/emea-bel-export-ledger-transactions.md
-                    - name: EU sales list
-                      href: localizations/belgium/emea-bel-eu-sales-list.md
-                    - name: INTERVAT tax declaration
-                      href: localizations/belgium/emea-bel-intervat-tax-declaration.md
-                    - name: Reconciliation reports
-                      href: localizations/belgium/emea-bel-reconciliation-reports.md
                     - name: Journal reports
                       href: localizations/thailand/emea-bel-journal-reports.md
-                    - name: Set up payment balance reporting
-                      href: localizations/belgium/be-00011-set-up-payment-balance-reporting.md
-                    - name: Set up and maintain PRODCOM
-                      href: localizations/belgium/emea-bel-prodcom-report.md
+                    - name: VAT declaration
+                      href: localizations/belgium/emea-bel-vat-declaration-belgium.md
+                    - name: VAT reconciliation reports
+                      href: localizations/belgium/emea-bel-reconciliation-reports.md
+                    - name: EU sales list
+                      href: localizations/belgium/emea-bel-eu-sales-list.md
                     - name: Annual VAT listing of domestic sales
                       href: localizations/belgium/emea-bel-annual-vat-listing-of-domestic-sales.md
                     - name: Belgium Intrastat
                       href: localizations/belgium/emea-bel-intrastat.md
-                    - name: VAT declaration
-                      href: localizations/belgium/emea-bel-vat-declaration-belgium.md
+                    - name: Set up payment balance reporting (BLWI)
+                      href: localizations/belgium/be-00011-set-up-payment-balance-reporting.md
+                    - name: Create and transfer transactions (BLWI)
+                      href: localizations/belgium/be-00011-create-transfer-blwi.md
+                    - name: Set up and maintain PRODCOM
+                      href: localizations/belgium/emea-bel-prodcom-report.md
                 - name: Bolivia
                   items:
                   - name: Bolivia overview
                     href: localizations/iberoamerica/bolivia.md
+                  - name: Configure electronic invoice parameters for Bolivia
+                    href: localizations/iberoamerica/ltm-bolivia-configure-electronic-invoice.md
                   - name: Configure printing for Purchase Vat Books for Bolivia
                     href: localizations/iberoamerica/ltm-Bolivia-purchase-vat-book.md
                   - name: Configure sales and purchase invoices for Bolivia
@@ -2096,6 +2104,22 @@
                       href: localizations/brazil/brazil.md
                     - name: Scope of localization
                       href: localizations/brazil/latam-bra-scope.md
+                    - name: Reformed tax
+                      items:
+                       - name: Brazil tax reform overview
+                         href: localizations/brazil/brazil-reform-overview.md
+                       - name: Brazil tax reform setup 
+                         href: localizations/brazil/brazil-reform-setup.md
+                       - name: CST and cClasstrib in Brazil Reformed Tax
+                         href: localizations/brazil/brazil-reform-cst-cclasstrib.md
+                       - name: Calculation in Sales quotation in Brazil Reformed Tax
+                         href: localizations/brazil/brazil-reform-calculation-sales-quotation.md
+                       - name: Calculation in Sales order in Brazil Reformed Tax
+                         href: localizations/brazil/brazil-reform-calculation-sales-order.md
+                       - name: Calculation in Purchase order in Brazil Reformed Tax
+                         href: localizations/brazil/brazil-reform-calculation-purchase-order.md
+                       - name: Calculation in Project in Brazil Reformed Tax
+                         href: localizations/brazil/brazil-reform-calculation-project.md                  
                     - name: Fiscal books
                       items:
                         - name: Brazil fiscal books overview
@@ -2299,7 +2323,7 @@
                         - name: Withholding taxes on customer payments
                           href: localizations/brazil/br-00042-withholding-taxes-customers-payments.md
                         - name: Withholding taxes on vendor payments
-                          href: localizations/brazil/br-00061-withholding-taxes-vendors-payments.md
+                          href: localizations/brazil/br-00061-withholding-taxes-vendors-payments.md          
                 - name: Canada
                   items:
                     - name: GST/HST Internet File Transfer
@@ -2378,6 +2402,8 @@
                   items:
                     - name: Colombia overview
                       href: localizations/iberoamerica/colombia.md
+                    - name: Get started with Electronic invoicing for Colombia
+                      href: localizations/iberoamerica/ltm-colombia-electronic-invoice-configuration.md?context=/dynamics365/context/finance
                     - name: Configure sales and purchase invoices for Colombia
                       href: localizations/iberoamerica/ltm-configure-invoices-colombia.md
                     - name: Create customer and vendor records with an address in Colombia
@@ -2508,6 +2534,8 @@
                   items: 
                   - name: Dominican Republic overview
                     href: localizations/iberoamerica/ltm-Dominican_Republic_Overview.md
+                  - name: Configure electronic invoice parameters for Dominican Republic
+                    href: localizations/iberoamerica/ltm-dominican-republic-configure-electronic-invoice.md
                   - name: Configure sales and purchase invoices for Dominican Republic
                     href: localizations/iberoamerica/ltm-configure-invoices-dominican-republic.md
                   - name: Configure printing for Goods and Services Purchases Submission Form 606
@@ -2850,6 +2878,8 @@
                   items:
                     - name: Guatemala overview
                       href: localizations/iberoamerica/guatemala.md
+                    - name: Configure electronic invoice parameters for Guatemala
+                      href: localizations/iberoamerica/ltm-guatemala-configure-electronic-invoice.md
                     - name: Configure sales and purchase invoices for Guatemala
                       href: localizations/iberoamerica/ltm-configure-invoices-guatemala.md
                     - name: Create customer and vendor records with an address in Guatemala
@@ -3756,8 +3786,6 @@
                       href: localizations/norway/no-00002-customer-payment-based-payment-id.md
                     - name: Nets import format
                       href: localizations/norway/emea-nor-nets-import-format.md
-                    - name: VAT statement
-                      href: localizations/norway/emea-nor-sales-tax-payment-report.md
                     - name: Tax reconciliation report
                       href: localizations/europe/emea-tax-reconciliation-report.md
                     - name: VAT return with direct submission to Altinn
@@ -3810,6 +3838,8 @@
                       href: localizations/iberoamerica/ltm-paraguay-conf-electronic-invoice.md
                     - name: Create customer and vendor records with an address in Paraguay
                       href: localizations/iberoamerica/ltm-create-customer-vendor-paraguay.md
+                    - name: Get started with Electronic invoicing for Paraguay
+                      href: localizations/iberoamerica/ltm-paraguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
                     - name: Set up a legal entity and tax information for Paraguay
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-paraguay.md
                 - name: Peru
@@ -4258,7 +4288,7 @@
                   items:
                     - name: Sweden overview
                       href: localizations/sweden/sweden.md
-                    - name: Export financial information for auditors in Sweden
+                    - name: Export financial information (SIE) in Sweden
                       href: localizations/sweden/emea-swe-sie-standard-report.md
                     - name: Import payment formats
                       href: localizations/sweden/emea-swe-payment-formats-import.md
@@ -4396,6 +4426,8 @@
                       href: localizations/iberoamerica/ltm-create-customer-vendor-uruguay.md
                     - name: Get started with Electronic invoicing for Uruguay
                       href: localizations/iberoamerica/ltm-uruguay-electronic-invoice-configuration.md
+                    - name: Configure electronic invoice parameters for Uruguay
+                      href: localizations/iberoamerica/ltm-uruguay-configure-electronic-invoice.md
                     - name: Set up a legal entity and tax information for Uruguay
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay.md
                 - name: Venezuela
@@ -4636,9 +4668,7 @@
             - name: Install the Excel add-in
               href: business-performance-planning/install-excel-add.md
             - name: Security
-              href: business-performance-planning/bpp-security.md
-            - name: Generative help and guidance in Business performance planning
-              href: business-performance-planning/bpp-help-rai.md            
+              href: business-performance-planning/bpp-security.md         
             - name: Dimensions
               items:
                 - name: Creating and maintaining dimensions
@@ -5259,6 +5289,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?context=/dynamics365/context/finance
                     - name: Configure print management record-specific destinations
                       href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?context=/dynamics365/context/finance
+                    - name: Output unfolding for Folder component of ER format
+                      href: ../fin-ops-core/dev-itpro/analytics/er-output-unfolding.md?context=/dynamics365/context/finance
+                    - name: Change page layout properties of a template in ER destinations
+                      href: ../fin-ops-core/dev-itpro/analytics/er-change-page-layout-properties-of-template.md?context=/dynamics365/context/finance
+                    - name: Output conversion to PDF
+                      href: ../fin-ops-core/dev-itpro/analytics/er-output-conversion-to-pdf.md?context=/dynamics365/context/finance
+                    - name: Export-import and replicate ER destinations
+                      href: ../fin-ops-core/dev-itpro/analytics/er-export-import-replicate-destinations.md?context=/dynamics365/context/finance
+                    - name: Destination failure handling
+                      href: ../fin-ops-core/dev-itpro/analytics/er-destination-failure-handling.md?context=/dynamics365/context/finance
                     - name: Design a new ER solution to print ZPL labels
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-zpl-labels.md?context=/dynamics365/context/finance
                 - name: Set up a reference to an ER format

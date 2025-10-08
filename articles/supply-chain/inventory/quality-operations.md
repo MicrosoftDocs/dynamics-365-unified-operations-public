@@ -47,14 +47,9 @@ For this example, the following operations can be created to represent the work 
 
 1. Close the page.
 
-## Nonconformance operation groups (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
+## Nonconformance operation groups
 
 Use *nonconformance operation groups* to collect related operations that you can [apply quickly to a nonconformance](tasks/create-process-non-conformance.md) all at once. For example, you might create a group of operations that together describe the steps that your company takes to fix issues with purchased raw materials (research, repair, and retest).
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Prerequisites
 

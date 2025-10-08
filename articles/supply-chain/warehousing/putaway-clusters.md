@@ -14,11 +14,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-Putaway clusters offer a way to pick multiple license plates at the same time and then take them for putaway in different locations. This process is often referred to as a *milk run*. Putaway clusters can be very useful for retail businesses, where license plates typically aren't full pallets of inventory. 
-
-## Turn the cluster putaway feature on or off
-
-To use the functionality described in this article, the *Cluster putaway feature* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Cluster putaway feature* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+Putaway clusters offer a way to pick multiple license plates at the same time and then take them for putaway in different locations. This process is often referred to as a *milk run*. Putaway clusters can be very useful for retail businesses, where license plates typically aren't full pallets of inventory.
 
 ## Setup for the example scenario
 
@@ -281,6 +277,5 @@ Before the items in the cluster can be put away, the cluster must be closed.
 ## Notes and tips
 
 For cases where the cluster ID becomes the parent license plate for a nested pallet, the put position is automatically given when the cluster ID is scanned. No further license plate must be scanned, even if license plate generation is set to manual.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

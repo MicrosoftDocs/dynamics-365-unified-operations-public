@@ -1,12 +1,12 @@
 ---
 title: Process automation
 description: Learn about how process automation allows simple scheduling of processes that will be run by the batch server.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 06/10/2024
 ms.custom: 
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-06-30
