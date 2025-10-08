@@ -103,4 +103,4 @@ Now it's time to test the agent.
 1. Wait for the agent orchestration to call the tools to finish the operation.
 1. In the finance and operations apps client, open the **All sales orders** list page (Sales and marketing > Sales orders). Check that the sales order record was created as expected.
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
