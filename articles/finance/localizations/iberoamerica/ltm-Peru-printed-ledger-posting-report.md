@@ -31,6 +31,7 @@ Before generating and printing the report, you must first complete the following
 Learn more in [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md).
 - You must configure the **Electronic Reporting (ER)** parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 * You must create a new **SSRS Reports/Services reference** record and follow this steps:
+  
   * In the **Report/Service Id** field, enter **PrintLPost**.
   * In the **Report/Service name** field, enter **PrintLPost**.
   * In the **Report/Service type** field, select an **ER configuration**.
