@@ -1635,6 +1635,8 @@
             href: inventory/quality-sample-management-continuous.md
           - name: Initiate an inline sample
             href: inventory/quality-sample-management-inline.md
+          - name: Manage and process samples
+            href: inventory/quality-sample-management-use.md
           - name: Sample management reports and auditing
             href: inventory/quality-sample-management-audit-reports.md
         - name: Test instrument calibration (preview)
