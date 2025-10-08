@@ -17,7 +17,7 @@ ms.search.region: Global
 
 [!include [banner](../includes/banner.md)]
 
-Business events in Dynamics 365 finance and operations apps provide a powerful mechanism for integrating external systems and automating workflows. These events are emitted when specific business actions occur, such as confirming a purchase order or approving a requisition. Use these events to notify external systems or trigger downstream processes. For more information about the business events framework in finance and operations apps, see [Business events overview](../business-events/home-page.md).
+Business events in finance and operations apps provide a powerful mechanism for integrating external systems and automating workflows. These events are emitted when specific business actions occur, such as confirming a purchase order or approving a requisition. Use these events to notify external systems or trigger downstream processes. Learn more about the business events framework in finance and operations apps in [Business events overview](../business-events/home-page.md).
 
 When you connect these business events to agents, you can unlock intelligent, event-driven automation. When a business event is raised, it can serve as a trigger for an agent to perform tasks such as:
 - Initiating reconciliation processes
@@ -29,7 +29,7 @@ This approach enables seamless orchestration between finance and opeations apps 
 
 ## Prerequisites
 
-For this tutorial, you must first enable Copilot for finance and operations apps in your environment. For instructions, see [Copilot capabilities in finance and operations apps](./enable-copilot.md).
+For this tutorial, you must first enable Copilot for finance and operations apps in your environment. Learn more in [Copilot capabilities in finance and operations apps](./enable-copilot.md).
 
 ## Scenario: Notify a manager when a purchase order is confirmed
 
@@ -37,19 +37,19 @@ In this scenario, you add a trigger capability to an agent. Once the business ev
 
 You can achieve this scenario in two different ways:
 - Create a specific agent for purchase orders
-- Integrate the trigger on an existing agent (it can be the Copilot for Dynamics 365 finance and operations or any agent already created in Copilot Studio)
+- Integrate the trigger on an existing agent (it can be the Copilot for finance and operations apps or any agent already created in Copilot Studio)
 
 Here's an overview of the steps in this tutorial:
 
-- A trigger action for the business event. This action calls the agent once a purchase order is confirmed in Dynamics 365 finance and operations.
-- Add two tools (Send an Email and Send a Teams Message), so that a specific user is notified regarding this action on Dynamics 365 finance and operations.
+- A trigger action for the business event. This action calls the agent once a purchase order is confirmed in finance and operations apps.
+- Add two tools (Send an Email and Send a Teams Message), so that a specific user is notified regarding this action on finance and operations apps.
 - Clear instructions so that the right tools are called based on the triggered event.
 
 ### Step 1: Create a new trigger that monitors purchase orders confirmed
 
 1.	In Copilot Studio, go to **Overview** -> **Triggers** -> **Add trigger**.
 1.	Select **All** and, on the search bar, search for **When a Business Event occurs Fin & Ops Apps (Dynamics 365)**. 
-1.	Select **Next**. A connection from Microsoft Copilot Studio to Dynamics 365 Finance and Operations is created. For this example, rename the trigger to “Notify a Manager When a Purchase Order Is Confirmed”.
+1.	Select **Next**. A connection from Microsoft Copilot Studio to finance and operations apps is created. For this example, rename the trigger to “Notify a Manager When a Purchase Order Is Confirmed”.
 1.	After selecting **Next**, define:
    - The instance (environment) where the agent looks for the business event trigger.
    - Category - select **Purchase orders**.
@@ -59,7 +59,7 @@ Here's an overview of the steps in this tutorial:
 1. Select **Create Trigger** once all the options above are defined. The trigger is created for this specific purpose.
 1. The trigger appears in the **Triggers** section of the **Overview** page for the agent.
 
-The agent is now called when a purchase order is confirmed on Dynamics 365 finance and operations.
+The agent is now called when a purchase order is confirmed on finance and operations apps.
 
 ### Step 2: Add tools for email and Teams communication
 
@@ -74,7 +74,7 @@ In this step, you add tools so that the agent can communicate via email and Team
 1. After defining the email tool, go to **Tools** -> **Add tool**.
 1. Select **All**, and search for **Post a message in a chat or channel**.
 1. When you select **Next**, select **Add and configure**. It creates the connection for Teams and you're redirected to the settings option.
-1. On **Inputs**, change the parameters to directly define how the tool interacts with the incoming message from Dynamics 365 finance and operations apps and delivers it to Teams.
+1. On **Inputs**, change the parameters to directly define how the tool interacts with the incoming message from finance and operations apps and delivers it to Teams.
     - Post as - **Custom Value - Flow bot**
     - Post in - **Custom value - Chat with Flow bot**
     - Recipient - **Dynamically fill with AI**
@@ -95,9 +95,9 @@ In this step, you define clear instructions for the agent to understand what to 
 
 ### Step 4: Test the agent
 
-You can now test the agent, starting in your Dynamics 365 finance and operations apps client, with your Microsoft Teams and email inbox open.
+You can now test the agent, starting in your finance and operations apps client, with your Microsoft Teams and email inbox open.
 
-1. In Dynamics 365 finance and operations apps, in company USMF, open **Accounts Receivable** -> **Payments** -> **Customer payment journal**.
+1. In finance and operations apps, in company USMF, open **Accounts Receivable** -> **Payments** -> **Customer payment journal**.
 1. Select **New**.
 1. Define the **Name** parameter with any entry already prepopulated, such as **CustPay**.
 1. Once added, select **Lines** from the action ribbon.
