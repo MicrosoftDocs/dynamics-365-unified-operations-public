@@ -26,11 +26,13 @@ The **Fin & Ops Apps (Dynamics 365)** connector in Microsoft Dataverse provides 
 This approach lets users build actionable agents that combine natural language understanding with real-time data operations, all without requiring users to leave the conversational experience.
 
 ## Prerequisites
+
 For this tutorial, you must enable **Copilot for finance and operations apps** in your environment. For instructions, see [Enable Copilot capabilities in finance and operations apps](./enable-copilot.md).
 
 Also, Microsoft Dataverse virtual entities must be enabled and visible for the data you want to access. Learn more in [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities.md).
 
 ## Scenario: Sales order agent
+
 In this scenario, you build an agent that creates and updates sales orders in Dynamics 365 finance and operations apps by using the **Fin & Ops Apps** connector. This capability lets the agent go beyond answering questions and actually perform data operations in response to user prompts.
 
 The following overview describes the tutorial steps:
@@ -40,6 +42,7 @@ The following overview describes the tutorial steps:
 For this example, you can use any agent in Copilot Studio, including **Copilot for finance and operations apps**, which adds the capability to the Copilot chat experience in the finance and operations apps client.
 
 ### Step 1: Add the Create Sales Order Header tool to your agent
+
 1. In Copilot Studio, go to **Tools** > **Add tool**.
 1. In the search bar, search for **Fin & Ops Apps**.
 1. Select **Create record**, then select **Add and configure**.
@@ -57,6 +60,7 @@ For this example, you can use any agent in Copilot Studio, including **Copilot f
 1. **Save** the new tool.
 
 ### Step 2: Add the Create Sales Order Lines tool to your agent
+
 1. On the **Tools** page of the agent, select **Add tool**.
 1. Search for **Fin & Ops apps** and select **Create record**.
 1. Select **Add and configure**.
@@ -73,6 +77,7 @@ For this example, you can use any agent in Copilot Studio, including **Copilot f
 1. **Save** the new tool.
 
 ### Step 3: Add instructions to your agent
+
 In this step, you add instructions so the agent knows how to respond to prompts for data operations.
 
 1. Add instructions similar to the following prompt to the **Instructions** field on the **Overview** tab of the agent:
@@ -91,6 +96,7 @@ In this step, you add instructions so the agent knows how to respond to prompts 
 1. **Save** the instructions and **Publish** the agent.
 
 ### Step 4: Test the new capability in Copilot
+
 Now it's time to test the agent. 
 1. In Copilot Studio, open the **Test your agent** panel.
 1. Enter a prompt to create a sales order document. For example: "Create new sales order header for customer US-001. Add sales order line for item 1000, site 1, and quantity 6."
