@@ -26,23 +26,27 @@ Before you start the LATAM Withholding tax engine configuration, meet the follow
 - Configure sales tax codes. 
 - Configure the LATAM section of vendors.
 
-## LATAM withholding tax engine configurations
+## Configure the LATAM withholding tax engine
 
 ### Enable withholding tax LATAM features and configurations
 
-Go to **Tax > Setup > Parameters > General ledger parameters**.
+Go to **Tax** > **Setup** > **Parameters** > **General ledger parameters**.
 In the **Withholding tax** tab, enable the **LATAM Withholdings** slider.
 
-### Withholding document configuration
+### Configure withholding documents
 
-#### Document class type
+#### Configure the document class type
 
-1. Go to **Organization administration > Setup > LATAM > Document class type** and create a document class type **Withholding**.
+To configure the document class type, follow these steps.
+
+1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class type** and create a document class type **Withholding**.
 1. In the **Payment media** section, select **Yes** in the payment media field.
 
-#### Document class
+#### Configure the document class
 
-1. Go to **Organization administration > Setup > LATAM > Document class** and create a document class as a payment method **Withholding**, for example **Retencion IVA**.
+To configure the document class, follow these steps.
+
+1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class** and create a document class as a payment method **Withholding**, for example **Retencion IVA**.
 1. In the **Payment media type** section of the **Document class**, select **Calculated withholdings**.
 1. In the **Bank account** section of the **Document class**, select a bank account. Create a bank account to help you with withholdings reconciliation.
 1. In the **journal name** section of the **Document class**, select a journal, for example **vendor payment journal**.
@@ -51,34 +55,42 @@ In the **Withholding tax** tab, enable the **LATAM Withholdings** slider.
 
 ### Payment order document configuration
 
-#### Document class type
+#### Configure the document class type
 
-1. Go to **Organization administration > Setup > LATAM > Document class type** and create a document class type **payment order**.
+To configure the document class type, follow these steps.
+
+1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class type** and create a document class type **payment order**.
 1. In the **journal** section, select the appropriate option for this document.
 
-#### Document class
+#### Configure the document class
 
-1. Go to **Organization administration > Setup > LATAM > Document class** and create a document class to be used as a payment order in the vendor type line of the payment journal.
+To configure the document class, follow these steps.
+
+1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class** and create a document class to be used as a payment order in the vendor type line of the payment journal.
 1. In the payment order **Document class**, enable the **Apply withholding calculation** slider. This configuration is important for withholding tax calculation at the moment of the vendor payment.
 1. In the **journal name** section of the **Document class**, select a journal, for example **vendor payment journal**. 
 1. In the **Document mask** section of the **Document class**, you can configure payment order number (manual or automatic).  
 
-### Vendor payment journal configuration
+### Configure a vendor payment journal
 
-Go to **General ledger > Journal setup > Journal names** and in the **LATAM** section, enable the **Calculated withholdings** and **Bank** types.
+To configure a vendor payment journal, go to **General ledger** > **Journal setup** > **Journal names** and in the **LATAM** section, enable the **Calculated withholdings** and **Bank** types.
 
-### Set of taxes configuration
+### Configure a set of taxes
 
-1. Go to **Tax > Indirect taxes > LATAM > Set of taxes**, create a new record, and enter an ID and a name.
+To configure a set of taxes, follow these steps.
+
+1. Go to **Tax** > **Indirect taxes** > **LATAM** > **Set of taxes**, create a new record, and enter an ID and a name.
 1. In the **Tax detail** section, add the tax codes that you use for defining and calculating the withholding tax base amount.
 
-### Withholding tax codes configuration
+### Configure withholding tax codes
 
-1.  Go to **Tax > Indirect taxes > Withholding tax > Withholding tax codes** and create a new record. Enter a new code and a new name for the record.
-1. Add a **Document class id** configured as a **Calculated withholding**.
+To configure withholding tax codes, follow these steps.
+
+1.  Go to **Tax** > **Indirect taxes** > **Withholding tax** > **Withholding tax codes** and create a new record. Enter a new code and a new name for the record.
+1. Add a **Document class ID** configured as a **Calculated withholding**.
 
    > [!NOTE]
-   > The Id you enter for the Withholding tax code must match the Document class Id you select.
+   > The ID you enter for the Withholding tax code must match the Document class ID you select.
 
 1. In the **Calculation basis** section, configure the following fields:
 
@@ -86,7 +98,7 @@ Go to **General ledger > Journal setup > Journal names** and in the **LATAM** se
    |:------------------:|:------------------------------------------------------------------------------:|
    |         +/-        | Select if this set of taxes increases or decreases the taxable base amount. |
    | Type of the amount | Select what part of the invoice total is the taxable base amount.  |
-   | Set of taxes id    | Select a set of taxes that are considered for the taxable base amount.     |
+   | Set of taxes ID    | Select a set of taxes that are considered for the taxable base amount.     |
 
 1. In the **Calculation accumulated base** section, configure the following fields when the accumulated calculation is enabled:
 
@@ -94,7 +106,7 @@ Go to **General ledger > Journal setup > Journal names** and in the **LATAM** se
    |:------------------:|:------------------------------------------------------------------------------:|
    |         +/-        | Select if this set of taxes increases or decreases the taxable base amount. |
    | Type of the amount | Select what part of the invoice total is the taxable base amount.  |
-   | Set of taxes id    | Select a set of taxes that are considered for the taxable base amount.     |
+   | Set of taxes ID    | Select a set of taxes that are considered for the taxable base amount.     |
 
 1. In the **Calculation method** section, configure the following fields:
 
@@ -123,13 +135,15 @@ Go to **General ledger > Journal setup > Journal names** and in the **LATAM** se
 
 1. In the **Document class** section, determine the document classes on which withholding taxes are calculated. Add the document classes that calculate withholding taxes. If you don't list a document class here, it isn't included in the calculation.
 
-### Withholding tax group configuration
+### Configure a withholding tax group
 
 The **Withholding tax group** defines the withholding tax codes that the system calculates in a vendor transaction.
 
-1. Go to **Tax > Indirect taxes > Withholding tax > Withholding tax groups** and create a new record. Enter a group ID and a description. 
+To configure a withholding tax group, follow these steps.
+
+1. Go to **Tax** > **Indirect taxes** > **Withholding tax** > **Withholding tax groups** and create a new record. Enter a group ID and a description. 
 1. In the **Configuring** section, add the withholding tax codes for the group.
 1. In the LATAM section, enter the role, country/region, state, and taxpayer type that the group applies to.
-1. Go to **Accounts payable > Vendors > All vendors** and assign a group in the **Withholding tax group** field from the **Invoice and delivery** section. This step sets the withholding tax group for each vendor transaction.
+1. Go to **Accounts payable** > **Vendors** > **All vendors** and assign a group in the **Withholding tax group** field from the **Invoice and delivery** section. This step sets the withholding tax group for each vendor transaction.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
