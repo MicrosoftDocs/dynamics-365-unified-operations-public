@@ -25,7 +25,7 @@ When you connect these business events to agents, you can unlock intelligent, ev
 - Updating external systems or databases
 - Launching low-code workflows via Power Platform
 
-This approach enables seamless orchestration between finance and opeations apps and Copilot Studio agents, allowing you to extend business logic beyond the boundaries of the Dynamics 365 application. Whether the event is workflow-based (for example, approvals) or nonworkflow (for example, confirmations), you can harness it to drive real-time, contextual automation. By using low-code plugins, developers and solution architects can configure these triggers with minimal effort, ensuring scalability and maintainability across business scenarios. 
+This approach enables seamless orchestration between finance and opeations apps and Microsoft Copilot Studio agents, allowing you to extend business logic beyond the boundaries of the Dynamics 365 application. Whether the event is workflow-based (for example, approvals) or nonworkflow (for example, confirmations), you can harness it to drive real-time, contextual automation. By using low-code plugins, developers and solution architects can configure these triggers with minimal effort, ensuring scalability and maintainability across business scenarios. 
 
 ## Prerequisites
 
