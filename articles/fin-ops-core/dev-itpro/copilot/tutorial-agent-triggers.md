@@ -1,6 +1,6 @@
 ---
 title: Trigger autonomous agents with business events
-description: Learn how to use finance and operations business events to trigger autonomous agents through a tutorial.
+description: Learn how to trigger autonomous agents with business events.
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
