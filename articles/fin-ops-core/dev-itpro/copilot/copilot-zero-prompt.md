@@ -47,7 +47,8 @@ When the **Copilot for finance and operations apps** chat experience is opened i
    - Enter or select a value: **VendTable**.
 4. Set the **Priority** value. If you have multiple topics that are triggered by the zero prompt event the Priority set for the trigger node determines the order in which they are executed.
 
-> [!NOTE] You can create multiple topics for zero prompt experiences for the various conditions you want to support. See [Use application context with Copilot](./copilot-application-context.md) for more information on available application context variables.
+> [!NOTE]
+> You can create multiple topics for zero prompt experiences for the various conditions you want to support. See [Use application context with Copilot](./copilot-application-context.md) for more information on available application context variables.
 
 ### Configure the zero prompt experience adaptive card
 Below the trigger node, add a **Message** node with an adaptive card that contains your zero prompt experience. This adaptive card will contain actions that, on `Action.Submit`, will send the zero prompt for that action. For more information on building adaptive cards, see [https://adaptivecards.microsoft.com](https://adaptivecards.microsoft.com).
