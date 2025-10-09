@@ -40,18 +40,18 @@ Sample management helps organizations:
 - Integrate quality control with production workflows.
 - Comply with standards like GMP, GLP, ISO, FDA, and EMA.
 
-## Types of sampling supported
+## Sample inspection methods
 
-Sample management supports two primary sampling methods:
+Sample management supports two primary sample inspection methods:
 
-- **Inline sampling** – Manually collect samples during production, before the item is reported as finished. This method detects quality issues early and ensures stable quality before the finished product. Here are the main characteristics for inline sampling:
+- **Inline process** – Manually collect samples during production, before the item is reported as finished. This method detects quality issues early and ensures stable quality before the finished product. Here are the main characteristics for inline sampling:
 
     - *When used* – During production, before inventory is reported as finished.
     - *Purpose* – Detect and correct quality issues early (such as pH imbalance or viscosity).
     - *How it works* – Manually register samples on a production or batch order. Each sample generates a quality order. Track quality test results over time to monitor trends.
     - *Inventory impact* – No inventory transactions are associated with inline samples.
 
-- **Continuous sampling** – Automatically take samples at regular intervals throughout batch production to monitor quality trends and maintain consistency in product quality during a production run. Here are the main characteristics for continuous sampling:
+- **Continuous process** – Automatically take samples at regular intervals throughout batch production to monitor quality trends and maintain consistency in product quality during a production run. Here are the main characteristics for continuous sampling:
 
     - *When used* – During batch production, triggered automatically when items are reported as finished.
     - *Purpose* – Monitor quality trends and control inventory release.

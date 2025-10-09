@@ -19,39 +19,36 @@ ms.custom:
 
 ## Prerequisites
 
-To initiate the inline sampling process follow these steps.
+To prepare your environment for inline sampling, be sure to set up the following elements as described in [Enable and configure sample management (preview)](quality-sample-management-admin.md)
 
-Make sure to set up the following elements as described in [Enable and configure sample management (preview)](quality-sample-management-admin.md)
-
-1. Add number sequence for generating sample-ID's.
-1. Define the sample life cycle states.
-1. Define the sample type used for inline sampling and add the applicable life cycle states.
-1. Define the sample procedures and sample procedure types as needed.
-1. Define an [item sampling](quality-item-sampling.md) for inline sampling. In the sample management FastTab, make the following selections:
-    **Sample inspection method** - Select *Inline process*.
+- A number sequence for generating sample IDs.
+- Sample life cycle states.
+- Sample type used for inline sampling.
+- Sample procedures and sample procedure types.
+- An [item sampling](quality-item-sampling.md) set up for inline sampling. It must have the following settings on the **Sample management** FastTab:
+    **Sample inspection method** – Select *Inline process*.
     **Sample size** - Set to the amount of material you want to sample.
     **Unit** - Set the unit that applies to the selected sample size.
-1. Define a sample association and make the following selections:
-    - **Item code** – Select which products should be included in the rule. Choose one of the following values:
-        - *Table* – A specific product.
-        - *Group* – A group of products.
-        - *All* – All products.
-        - **Item** – Depending on what you selected for **Item code**, choose the specific product or product group for which this rule should apply. Leave blank if **Item code** is set to *All*.
-    - **Inline sample type** – Select the sample type that defines how the inline sample should be inspected, including its applicable lifecycle states. This sample type governs the inspection method used for inline sampling and ensures that the correct procedures and validations are applied throughout the sample's lifecycle.
-    - **Inline sample scrap in days** – Specify how many days inline samples should be retained before being automatically scrapped. This setting helps manage sample lifecycle and storage by defining the retention period for inline samples associated with the item.
-    - **Default item sampling for inline** – Specifies the default item sampling method applied to inline samples during production. When initiating inline sampling from the production orders list or details page, this value is pre-filled in the create dialog but can be adjusted as needed.
-    - **Default inline test group** – Specify the default test group used for inline samples from production. When initiating inline sampling from the production orders list or details page, this value is pre-filled in the create dialog but can be adjusted as needed.
-
-1. With the relevant row still selected in the top section, add each of the [sample procedures](quality-sample-management-admin.md#configure-sample-procedures) that workers should follow when handling samples for this association. Use the toolbar buttons to add or remove procedures as needed.
-1. On the Action Pane, select **Save**.
+- Sample associations configured to link the inline sample type, inline item sampling, and inline sample procedures to the relevant products. To create a sample association for inline sampling, follow these steps:
 
 ## Initiate the sample
 
 To initiate an inline sample follow these steps:
 
-1. Create a production or batch order for a batch-controlled product that is configured for continuous sampling.
+1. Open or create a production or batch order for a batch-controlled product that is configured for inline sampling.
 1. Bring the production or batch order into status *Started*
-1. On the action pane, under the **View** tab, select **Initiate inline sample management** to open the dialog for creating the inline sample. Select values for **Item sampling** and **Test group** if they are not defaulted, based on configuration in the **Sample associations**.
+1. On the Action Pane, open the **View** tab and, from the **Manage quality** group, select **Initiate inline sample management**.
+1. The **Initiate inline sample management** dialog opens. Review and adjust the following settings:
+    - **Item number** – The product for which you want to take a sample. This field is defaulted based on the production or batch order that you had open.
+    - **Product name** – The name of the product for which you want to take a sample. This field is read-only and comes from the selected **Item number**.
+    - **Sample type** – <!-- KFM: Continue here -->
+    - **Item sampling**
+    - **Test group**
+    - **Sample size**
+    - **Unit**
+
+
+
 1. Confirm the dialog with **OK**
 
 ## Work with samples in the sample management workbench
