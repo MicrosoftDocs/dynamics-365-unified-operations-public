@@ -4,7 +4,7 @@ description: Learn how to use checks and promissory notes in the Republic of Tü
 author: v-omerorhan 
 ms.author: v-omerorhan 
 ms.topic: how-to 
-ms.date: 09/19/2025
+ms.date: 10/09/2025
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye 
 ms.search.validFrom: 2020-02-03 
@@ -43,7 +43,7 @@ This section provides general information about the parameters for the **Check a
 The **Check and promissory note parameters** page defines company-wide settings for managing the lifecycle of checks and promissory notes. 
 These parameters determine how documents behave in journals, which default accounts are used, and how legal requirements apply.
 
-Access the **Check and promissory note parameters** page by selecting **Cash and bank management > Setup > Check and promissory note operations > Check and promissory note parameters**.
+Access the **Check and promissory note parameters** page by selecting **Cash and bank management** > **Setup** > **Check and promissory note operations** > **Check and promissory note parameters**.
 
 Here are the details for the fields in each Tab:
 
@@ -143,7 +143,7 @@ Here are the details for each field:
 
 To create a new portfolio, follow these steps:
 
-1. Go to **Cash and bank management > Setup > Check and promissory note operations > Check and promissory note portfolio codes**.
+1. Go to **Cash and bank management** > **Setup** > **Check and promissory note operations** > **Check and promissory note portfolio codes**.
 1. Select **New**.
 1. In the **Portfolio code** field, enter a unique code.
 1. In the **Portfolio name** field, enter a name for the portfolio.
@@ -200,7 +200,7 @@ Here are the details for each field:
 
 To create a transaction code for the check and promissory note process:
 
-1. Go to **Cash and bank management > Setup > Check and promissory note operations > Check or promissory note transaction codes**.
+1. Go to **Cash and bank management** > **Setup** > **Check and promissory note operations** > **Check or promissory note transaction codes**.
 1. Select **New**.
 1. In the **Transaction code** field, type a unique code.
 1. In the **Transaction code description** field, enter a name for the transaction code.
@@ -244,7 +244,7 @@ The following table explains each field;
 
 Follow these steps to create a bank branch:
 
-1. Go to **Cash and bank management > Setup > Check and promissory note operations > Bank branch name**.
+1. Go to **Cash and bank management** > **Setup** > **Check and promissory note operations** > **Bank branch name**.
 1. Select **New**.
 1. In the **Bank group** field, enter the bank group code or select it from the list.
 1. In the **Branch code** field, enter the branch code.
@@ -253,9 +253,9 @@ Follow these steps to create a bank branch:
 
 ### Configure check designs
 
-This section describes how to configure ER formats for company check designs in Finance. ER formats allow you to generate printed layouts (such as Excel-based designs) for company checks that are issued as payment instruments. 
+This section describes how to configure ER formats for company check designs in Finance. ER formats let you generate printed layouts (such as Excel-based designs) for company checks issued as payment instruments. 
 
-To generate company check layouts, import the most recent versions of the following ER configurations from [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md);  
+To generate company check layouts, import the most recent versions of the following ER configurations from [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).  
 
 | Name | Description | Format type |  
 |------|-------------|-------------|  
@@ -270,13 +270,13 @@ To generate company check layouts, import the most recent versions of the follow
 
 After the required ER formats are imported, you must assign the **Check (TR) (Excel)** format to the bank accounts that are linked to company check portfolios. This setup ensures that issued company checks use the correct ER layout during printing.
 
-1. Go to **Cash and bank management > Setup > Check and promissory note operations > Check and promissory note portfolio codes**.  
-2. Select the portfolio code created for company checks, where **Portfolio type = Checks given**.  
-3. In the **Account number** field, identify the linked **Bank account** and open it.  
-4. On the bank account page, select **Set up > Layout > Check** in the Action Pane.  
-5. On the **General** FastTab, set the **Generic electronic export format** parameter to **Yes**.  
-6. In the **Export format configuration** field, select **Check (TR) (Excel)**.  
-7. Save the changes. 
+1. Go to **Cash and bank management** > **Setup** > **Check and promissory note operations** > **Check and promissory note portfolio codes**.  
+1. Select the portfolio code created for company checks, where **Portfolio type = Checks given**.  
+1. In the **Account number** field, identify the linked **Bank account** and open it.  
+1. On the bank account page, select **Set up** > **Layout** > **Check** in the Action Pane.  
+1. On the **General** FastTab, set the **Generic electronic export format** parameter to **Yes**.  
+1. In the **Export format configuration** field, select **Check (TR) (Excel)**.  
+1. Save the changes. 
 
 ## Create a new check and promissory note journal
 
@@ -507,7 +507,7 @@ The reversal is posted to the ledger and is linked to the original journal heade
 
 To reverse the journal, follow these steps:
 
-1. Go to **Cash and bank management > Check and promissory note operations > Check and promissory note journal**.
+1. Go to **Cash and bank management** > **Check and promissory note operations** > **Check and promissory note journal**.
 1. Select the posted journal you want to reverse.
 1. Select **Check reversal journal** in the **Cancel** group.
 1. Select **OK** on the dialog page.
@@ -599,7 +599,7 @@ Each field on the **Create a new document** page is explained in the following t
 
 Follow these steps to create company checks and promissory notes. 
 
-1. Go to **Cash and bank management > Inquiries and reports > Check and promissory note operations > Check and promissory note definitions**.
+1. Go to **Cash and bank management** > **Inquiries and reports** > **Check and promissory note operations** > **Check and promissory note definitions**.
 1. Select **New**.
 1. Select **Create promissory note** or **Create check** options that you need.
 1. In the **Create a new document** page, select the portfolio code to which the check or promissory note will be assigned in the **Portfolio code** parameter.
@@ -634,11 +634,11 @@ You can only use this action for documents that meet the cancellation criteria b
 
 Use the **Check or promissory note transactions** to access the transactions for the relevant check or promissory note. 
 
-### Export of company check reports
+### Export company check reports
 
 Once the ER format has been assigned to the bank accounts of company check portfolios, you can generate and export company checks from the journal.
 
-1. Go to **Cash and bank management > Check and promissory note operations > Check and promissory note journal**.  
+1. Go to **Cash and bank management** > **Check and promissory note operations** > **Check and promissory note journal**.  
 1. Select the relevant journal that contains company checks to be reported.  
 1. On the **General** FastTab, in the **Reports** section, select **Check journal list**.  
 1. The system generates and exports the check report by using the ER configuration **Check (TR) (Excel)**.   
@@ -732,7 +732,7 @@ The parameters on the **Check and promissory note rediscount calculation** page 
 
 Follow these steps to create a rediscount calculation:
 
-1. Go to **Cash and bank management > Inquiries and reports > Check and promissory note operations > Check and promissory note rediscount calculation**.
+1. Go to **Cash and bank management**** > ****Inquiries and reports**** > ****Check and promissory note operations**** > ****Check and promissory note rediscount calculation**.
 1. Define the interest rate for the relevant period on the **Interest rates** page, then select **Save** and close the page.
 1. Select **New**.
 1. Type a **Version ID** manually.
