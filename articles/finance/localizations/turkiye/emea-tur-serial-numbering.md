@@ -4,7 +4,7 @@ description: Learn how to use continuous serial numbering for packing slips and 
 author: v-omerorhan 
 ms.author: v-omerorhan 
 ms.topic: how-to
-ms.date: 07/30/2025 
+ms.date: 10/06/2025 
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye 
 ms.search.validFrom: 2020-02-03 
@@ -341,7 +341,7 @@ When you want to create an invoice in general journals, use of the serial prefix
     - If the vendor account has a *debit* amount, you must select the serial prefix in the **Serial prefix** field.
 
 The **Use preprinted serial number in journal** parameter is available on the **Journal names** page.  
-To access this setting, go to **General ledger > Journal setup > Journal names**, and then select the relevant journal name. On the **General** FastTab, you can find the **Use preprinted serial number in journal** parameter.  
+To access this setting, go to **General ledger** \> **Journal setup** \> **Journal names**, and then select the relevant journal name. On the **General** FastTab, you can find the **Use preprinted serial number in journal** parameter.  
 
 Enabling this parameter means that the journal will use the preprinted serial numbering logic defined in the **Preprinted serial numbers** setup. This helps guarantee compliance with UBL-TR requirements for e-invoice documents, and ensures that each journal posting uses a valid, traceable serial prefix.  
 
