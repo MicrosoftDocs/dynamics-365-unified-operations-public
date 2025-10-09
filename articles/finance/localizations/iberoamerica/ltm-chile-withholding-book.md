@@ -45,7 +45,7 @@ To configure parameters, follow these steps.
 
     - For the **TaxType** lookup, follow these steps:
 
-        1. On the **Conditions** FastTab, select **Add**, and then, in the **Lookup result** field, select **VAT**.
+        1. On the **Conditions** FastTab, select **Add**, and then, in the **Lookup result** field, select **Withholding**.
         2. In the **Tax code** field, select the appropriate tax code. for example, select **Ret-Hon**.
         3. Select **Add**, and then, in the **Lookup result** field, select **NotApplicable**.
         4. In the **Tax code** field, select **Blank**.
