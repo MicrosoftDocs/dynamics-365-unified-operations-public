@@ -138,4 +138,6 @@ No. The Warehouse Management mobile app doesn't support Microsoft Entra Conditio
 
 Yes. You can add an external user as a guest in the Microsoft Entra admin center. Learn how in [Quickstart: Add a guest user and send an invitation](https://learn.microsoft.com/en-us/entra/external-id/b2b-quickstart-add-guest-users-portal).
 
+If you will login as guest user in WMA, you should select "Cloud" field as Manual in connection setting and fill "Microsoft Entra ID tennant" and "Microoft Entra ID client ID" fields. 
+
 After sending the invitation, create a [warehouse worker account](warehouse-app-authenticate-user-based.md) in Supply Chain Management and link it to the Microsoft Entra ID guest user account. If the guest user will use the Warehouse Management mobile app, you must assign appropriate roles and permissions to the warehouse worker account.
