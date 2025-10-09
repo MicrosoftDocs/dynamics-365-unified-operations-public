@@ -24,7 +24,7 @@ Version 4 introduces many new features and improvements that enhance your wareho
 
 ### General availability for Android devices in some regions
 
-These versions of the Warehouse Management mobile app are general availability (GA) releases for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out GA releases to all remaining regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store.
+These versions of the Warehouse Management mobile app are general availability (GA) releases for Google Android devices in some regions. We are gradually rolling out GA releases to all remaining regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store.
 
 ### Preview release for Android devices in other regions and Windows and iOS devices in all regions
 
