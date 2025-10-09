@@ -105,7 +105,8 @@ To create the required connections, follow these steps.
 
 To finish setting up the agent identity, you must activate the triggering Power Automate flows. A Canvas app is provided to help you do this. To use the app, follow these steps.
 
-1. Sign in to [Power Apps](https://make.powerapps.com) as an environment administrator user.
+1. Sign in to the [Power Apps Maker portal](https://make.powerapps.com) as an environment administrator user.
+1. Select your environment from the **Environment** drop-down list in the page header.
 1. In the left pane, select **Solutions**.
 1. Open the **Managed** tab.
 1. Find and open the solution with a **Display name** of *Copilot in Supply Chain Management solution*.
