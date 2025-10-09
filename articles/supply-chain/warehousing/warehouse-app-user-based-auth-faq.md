@@ -132,7 +132,7 @@ The Warehouse Management mobile app continues to work with Dynamics 365 Finance 
 
 ## Can I authenticate using Microsoft Entra Conditional Access?
 
-Partially. You can connect to the Warehouse Management mobile app using Microsoft Entra Conditional Access, however, your control over the configurable fields is limited. You can find more details from [Microsoft Entra Conditional Access documentation](https://learn.microsoft.com/en-us/entra/identity/conditional-access/).
+Partially. You can use Microsoft Entra Conditional Access to connect the app, but Conditional Access provides less detailed access control and oversight than Microsoft Entra ID does. Learn more in the [Microsoft Entra Conditional Access documentation]( /entra/identity/conditional-access/).
 
 ## Can I authenticate using Microsoft Entra Guest User Access?
 
