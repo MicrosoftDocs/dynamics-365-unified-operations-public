@@ -36,6 +36,17 @@ Key capabilities of the **Check and promissory note operations** feature include
 
 ## Configure checks and promissory notes
 
+This section describes how to configure all required setups for the **Check and promissory note operations** feature.  
+The configuration process includes several steps that define how checks and promissory notes behave in the system.
+
+You will complete the following setup steps:
+
+1. Configure check and promissory note parameters  
+1. Define portfolio codes for check and promissory note operations  
+1. Define transaction codes for check and promissory note operations  
+1. Define bank branch names for check and promissory note operations  
+1. Configure check designs
+
 ### Configure check and promissory note parameters
 
 This section provides general information about the parameters for the **Check and promissory note operations** feature for Türkiye.
