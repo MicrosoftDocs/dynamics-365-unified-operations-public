@@ -31,7 +31,7 @@ Before generating and printing the report, complete the following prerequisites:
 | Format  | :::no-loc text="Trial Balance (PE)":::                   |
 
 Learn more in [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md).
-- Configure the **Electronic Reporting (ER)** parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+- Configure the **Electronic Reporting (ER)** parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - Create a new **SSRS Reports/Services reference** record, then follow these steps.
   
   1. In the **Report/Service Id** field, enter **PrintLPost**.
