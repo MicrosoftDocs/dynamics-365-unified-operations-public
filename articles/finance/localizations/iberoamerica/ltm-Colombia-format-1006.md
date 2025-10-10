@@ -4,7 +4,7 @@ description: Learn about the configuration that's required to issue the format 1
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: how-to
-ms.date: 11/21/2023 
+ms.date: 10/10/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -13,16 +13,16 @@ ms.reviewer: johnmichalak
 
 This article explains how to set up and issue a format 1006 file in both XML and Excel output formats.
 
-This report includes value added tax (VAT) generated on sales transactions, VAT recovered on purchase returns and national consumption tax (NCT).
+This report includes value added tax (VAT) generated on sales transactions, VAT recovered on purchase returns, and national consumption tax (NCT).
 
 > [!NOTE]
 > The XML output format covers the fiscal requirements. The Excel output format is for management purposes.
 
 ## Prerequisites
 
-Before generating and printing the report, you must first complete the following prerequisites:
+Before generating and printing the report, complete the following prerequisites:
 
-- The country/region of the legal entity's address must be in Colombia. 
+- Set the country/region of the legal entity's address to Colombia. 
 - Enable the country/region-specific Latin American (LATAM) feature for Colombia and the general LATAM feature.
 - Download the specific report configurations from the Dataverse configuration repository:
 
@@ -34,17 +34,17 @@ Before generating and printing the report, you must first complete the following
 | Format  | :::no-loc text="File format 1006 Excel":::|
 
 - Learn more in [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md).
-- You must configure the **Electronic Reporting (ER)** parameters. Learn more in [Configure the Electronic reporting (ER) framework](fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+- Configure the **Electronic Reporting (ER)** parameters. Learn more in [Configure the Electronic reporting (ER) framework](fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
 ## Configure tax applications
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax application** and create a new record.
-1. On the **Tax application Id** field complete with **1006**.
+1. In the **Tax application Id** field, enter **1006**.
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup** \> **Country/region**.
 1. Select **Colombia** and go to **LATAM** \> **Tax application**.
 1. Create a new record.
 1. In the **Tax application Id** field, select **1006**.
-1. In the **Tax application code** field, enter the country code according to the Colombian normative.
+1. In the **Tax application code** field, enter the country/region code according to the Colombian normative.
 1. Go to **Organization Administration**\> **Setup** \> **LATAM** \> **Tax ID type**.
 1. On the top menu, go to **Tax application** and create a new record.
 1. In the **Tax application Id** field, select **1006**.
@@ -80,12 +80,12 @@ After you meet the prerequisites and configure the tax application codes, follow
 > To ensure the report shows transactions that meet the configured conditions, complete the **Lookup result** field as **N/A** with **Blank** and **Not blank** conditions for all **Lookup** records.
 
 > [!NOTE]
->The tax codes and document classes you select in this configuration must be used in the company transactions. Otherwise, they will not appear in the report.
+>The tax codes and document classes you select in this configuration must be used in the company transactions. Otherwise, they don't appear in the report.
 
 ## Issue a format 1006 file for XML and Excel output
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
-1. In the **Format mapping** field, select **File format 1006** for the XML output or **File format 1006 Excel** excel output.
+1. In the **Format mapping** field, select **File format 1006** for the XML output or **File format 1006 Excel** for the Excel output.
 1. For the XML output only, enter **1006** in the **Tax application ID** field.
 1. Select a date range.
 1. Select **OK**.
