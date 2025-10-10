@@ -4,23 +4,23 @@ description: Learn how to set up and issue a format 1007 file for Colombia, incl
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: how-to
-ms.date: 11/21/2023 
+ms.date: 10/10/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
 
 # Format 1007 file for Colombia configuration
 
-This article explains how to configure and issue a file in 1007 format. This format records for each third party the income received by a natural or legal person during the taxable year including both operating and non-operating income.
+This article explains how to configure and issue a file in 1007 format. This format records for each third party the income received by a natural or legal person during the taxable year including both operating and nonoperating income.
 
 > [!NOTE]
 > The XML output format covers the fiscal requirements. The Excel output format is for management purposes.
 
 ## Prerequisites
 
-Before generating and printing the report, you must first complete the following prerequisites:
+Before generating and printing the report, complete the following prerequisites:
 
-- The country/region of the legal entity's address must be in Colombia. 
+- The country/region of the legal entity's address is Colombia. 
 - Enable the country/region-specific Latin American (LATAM) feature for Colombia and the general LATAM feature.
 - Download the specific report configurations from the Dataverse configuration repository:
 
@@ -32,12 +32,12 @@ Before generating and printing the report, you must first complete the following
 | Format  | :::no-loc text="File format 1007 (Excel)":::  |
 
 - Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
-- You must configure the **Electronic Reporting (ER)** parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+- Configure the **Electronic Reporting (ER)** parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
 ## Configure tax applications
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax application** and create a new record.
-1. On the **Tax application Id** field complete with **1007**.
+1. In the **Tax application Id** field, enter **1007**.
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup** \> **Country/region**.
 1. Select **Colombia** and go to **LATAM** \> **Tax application**.
 1. Create a new record.
@@ -58,11 +58,11 @@ After you meet the prerequisites and configure the tax application codes, follow
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting** and select **Reporting configuration**.
 1. On the left, select **LTM Tax Report** \> **File format 1007**.
 1. On the Action Pane, select **Configurations** \> **Application specific parameters** \> **Setup**.
-1. In the **Lookups** section, select **InvoiceAndCreditNoteIsApplicable** and follow this steps:
+1. In the **Lookups** section, select **InvoiceAndCreditNoteIsApplicable** and follow these steps.
    1. In the **Conditions** section, select **Add**.
    1. In the **Lookup result** field, select **Yes**.
    1. In the **Document classification id.** field, select a document class used for purchase invoices that contain VAT.
-1. In the **Lookups** section, select **MainAccountGroups** and follow this steps: 
+1. In the **Lookups** section, select **MainAccountGroups** and follow these steps. 
    1. In the **Conditions** section, select **Add**.
    1. In the **Lookup result** field, select **Yes**.
    1. In the **Document classification id.** field, select a document class used in company transactions.
@@ -82,12 +82,14 @@ After you meet the prerequisites and configure the tax application codes, follow
 > To ensure the report shows transactions that meet the configured conditions, complete the **Lookup result** field as **N/A** with **Blank** and **Not blank** conditions for all **Lookup** records.
 
 > [!NOTE]
->The tax codes and document classes you select in this configuration must be used in the company transactions. Otherwise, they will not appear in the report.
+>The tax codes and document classes you select in this configuration must be used in the company transactions. Otherwise, they don't appear in the report.
 
 ## Issue a format 1007 file for XML and Excel output
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
-1. In the **Format mapping** field, select **File format 1007** for the XML output or **File format 1007 (Excel)** for the excel output.
+1. In the **Format mapping** field, select **File format 1007** for the XML output or **File format 1007 (Excel)** for the Excel output.
 1. For the XML output only, enter **1007** in the **Tax application ID** field.
 1. Select a date range.
 1. Select **OK**.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
