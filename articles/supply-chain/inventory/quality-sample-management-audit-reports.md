@@ -13,7 +13,7 @@ ms.custom:
 
 <!-- KFM: 
 
-Describe how managers and auditors can see what happened and generate reports
+Describe how managers and auditors can see what happened and generate reports.
 
 -->
 
@@ -22,4 +22,3 @@ Describe how managers and auditors can see what happened and generate reports
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
-

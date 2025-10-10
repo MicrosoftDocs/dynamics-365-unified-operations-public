@@ -11,12 +11,6 @@ ms.custom:
   - bap-template
 ---
 
-<!-- KFM: 
-
-Summarize all of the settings required to make continuous sampling work. Refer to the [admin topic](quality-sample-management-admin.md) for most settings. Add any extra configurations that are required. (We might not need this topic, but I think it would be nice)
-
--->
-
 # Set up continuous sampling (preview)
 
 [!include [banner](../../includes/banner.md)]
@@ -25,67 +19,65 @@ Summarize all of the settings required to make continuous sampling work. Refer t
 
 ## Prerequisites
 
-To initiate the continuous sampling process follow these steps.
+To prepare your environment for inline sampling, be sure to set up the following elements as described in [Enable and configure sample management (preview)](quality-sample-management-admin.md)
 
-Make sure to set up the following elements as described in [Enable and configure sample management (preview)](quality-sample-management-admin.md)
-
-1. Add number sequence for generating sample-ID's.
-1. Define the sample life cycle states.
-1. Define the sample type used for continuous sampling and add the applicable life cycle states.
-1. Define the sample procedures and sample procedure types as needed.
-1. Define an [item sampling](quality-item-sampling.md) for continuous sampling. In the sample management FastTab, make the following selections:
-    - **Sample inspections method** – Select *Continuous process*.
-    - **Sample size** – Enter the desired sample size.
-    - **Unit** – Select the unit of measurement for the sample size.
-    - **One sample every** – Specify how often samples should be taken and then choose whether to count batches or license plates (for example, enter *10* and select *Batch* to take a sample from every tenth batch that's reported as finished).
-    - **Number of samples per quality order generated** – Specify how often samples should be tested (for example, enter *4* to test every fourth sample).
-
-1. Define a sample association and make the following selections:
-    - **Item code** – Select which products should be included in the rule. Choose one of the following values:
-        - *Table* – A specific product.
-        - *Group* – A group of products.
-        - *All* – All products.
-    - **Item** – Depending on what you selected for **Item code**, choose the specific product or product group for which this rule should apply. Leave blank if **Item code** is set to *All*.
-    - **Continuous sample type** – Select the sample type that defines how the continuous sample should be inspected, including its applicable lifecycle states. This sample type governs the inspection method used for continuous sampling and ensures that the correct procedures and validations are applied throughout the sample's lifecycle.
-    - **Continuous sample scrap in days** – Select the number of days that continuous samples for this item should be saved before being scrapped.
-
-1. With the relevant row still selected in the top section, add each of the [sample procedures](quality-sample-management-admin.md#configure-sample-procedures) that workers should follow when handling samples for this association. Use the toolbar buttons to add or remove procedures as needed.
-1. On the Action Pane, select **Save**.
+- A number sequence for generating sample IDs.
+- Sample life cycle states.
+- Sample type used for continuous sampling.
+- Sample procedures and sample procedure types.
+- An [item sampling](quality-item-sampling.md) policy set up for continuous sampling. It must have the following settings on the **Sample management** FastTab:
+    - **Sample inspection method** – Select *Continuous process*.
+    - **Sample size** – Set to the amount of material you want to sample.
+    - **Unit** – Set the unit that applies to the selected sample size.
+    - **One sample every** – Specify how often samples should be taken and then choose whether to count batches or license plates.
+    - **Number of samples per quality order generated** – Specify how often samples should be tested.
+- Sample associations configured to link the continuous sample type, continuous item sampling, and continuous sample procedures to the relevant products. Each sample association also defines how long samples can be kept before being scrapped.
 
 ## Continuous sampling example scenario
 
+This section provides an example of how to set up and use continuous sampling.
+
 ### Setup and generate continuous samples
 
-The following procedure provides an example of how to setup and use continuous sampling.
+The following procedure provides an example of how to set up continuous sampling. <!-- KFM: Should we have a step to set up the sample association? -->
 
-1. Create a production or batch order for a batch-controlled product using following basic configuration for continuous sampling:
-    - On item sampling make the following settings:
-        - **Sample inspection method** - Set to *Continuous process*.
-        - **Sample size** - Set to *1*.
-        - **Unit** - Set to *Sp* (spoonful)-
-        - **One sample per every** - Set to *2* and *License plate*.
-        - **Number fo samples per quality order generated** - Set to *2*.
-    - On the test group, make the following settings:
-        - **Inventory status** - Set to *Yes*.
-        - **Failed quality order status** - Set to an inventory status where **Inventory blocking** is set to *Yes*.
-        - **Passed quality order status** select an inventory status where **Inventory blocking** is set to *No*.
-        - Make sure that the test group has at least one test defined.
-    - On the **Quality association**, make sure that the **Item sampling** and **Test group** is associated.
-1. Bring the production or batch order into status *Started*
-1. From the production or batch order, report as finish four license plates to generate the continuous samples.
+1. Create a production or batch order for a batch-controlled product.
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Item sampling**. Set up an item sampling policy as described in [Quality management item sampling](../inventory/quality-item-sampling.md). On the **Sample management** FastTab, be sure to make the following settings to set up continuous sampling:
+    - **Sample inspection method** - Set to *Continuous process*.
+    - **Sample size** - Set to *1*.
+    - **Unit** - Set to *Sp* (spoonful).
+    - **One sample per every** - Set to *2* and *License plate*.
+    - **Number of samples per quality order generated** - Set to *2*.
+
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**. Set up a test group as described in [Quality management test groups](../inventory/quality-test-groups.md). Make sure at least one test is assigned in the bottom section. On the **General** tab in the top section, be sure to make the following settings to set up the test group for continuous sampling:
+    - **Update inventory status** - Set to *Yes* to enable inventory status updates based on test results.
+    - **Failed quality order status** - Specify the inventory status to apply to the license plate when a quality order fails.
+    - **Passed quality order status** - Specify the inventory status to apply to the license plate when a quality order passes.
+
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Quality associations**. Set up a quality association as described in [Quality associations](../inventory/quality-associations.md). Be sure to make the following settings: <!-- KFM: Maybe we should recommend more settings here (e.g., reference type, event type and execution) -->
+    - **Item** – Select the item from the production or batch order you created in the first step.
+    - **Item sampling** – Select the item sampling policy that you created for this exercise.
+    - **Test group** – Select the test group that you created for this exercise.
+
+1. Return to the production or batch order that you created in the first step. Bring the order into status *Started*. Then report four license plates as finished to generate the continuous samples according to your item sampling policy. <!-- KFM: I didn't get any samples. Maybe I reported as finished wrong? -->
 
 ### Work with the samples in the sample management workbench
 
-1. On the action pane in the production order page, under the **View** tab, select **Sample management workbench**
-1. Verify that two samples have been created for separate license plates, and that these license plates are blocked by their default inventory status. Learn more about configuring the default item status here: [Enable and configure sample management (preview)](quality-sample-management-admin.md).
-1. Select the last sample and verify that a quality order has been created for that sample.
-1. On the action pane, select **Quality order**
-1. On the action pane of the quality order, select **Quick results entry**
-1. Register a test result for the test that is within a range that makes the test pass.
-1. Close the **Quick results entry** dialog.
-1. On the action pane of the quality order, select **Validate**.
-1. In the grid on the **Sample management** FastTab, verify that four records exists for the four license plates that have been produced.
-1. Verify that the field **Update inventory status to** is set to *Available* because the quality order for the last sample passed.
-1. Set the field **Update inventory status** to *Yes*.
-1. Select **OK** to confirm the dialog.
-1. In the **Sample management workbench** verify that the inventory status of the two samples are now available by their inventory status. If the inventory status is not visible in the grid, it can be enabled from the **Display dimensions** menu, that can be accessed from the action pane under the **Inventory menu**.
+<!-- KFM: This information should probably be in [Manage and process samples (preview)](quality-sample-management-use.md), either repeated or instead of here. -->
+
+The following procedure provides an example of how to use the sample management workbench to work with the continuous samples you created in the previous procedure.
+
+1. Open the production or batch order that you created in the previous procedure.
+1. On the Action Pane, open the **View** tab and, from the **Manage quality** group, select **Sample management workbench**.
+1. Verify that two samples have been created for separate license plates, and that these license plates are blocked by their default inventory status. Learn more about configuring the default item status in [Enable and configure sample management (preview)](quality-sample-management-admin.md).
+1. Select the last sample and verify that a quality order has been created for that sample. <!-- KFM: How can I verify this? -->
+1. On the Action Pane, open the **Sample** tab and select **Quality orders**.
+1. On the Action Pane of the quality order, select **Quick results entry**
+1. Register a test result for the test that is within a range that makes the test pass. <!-- KFM: Do I need to select **Validate** here? -->
+1. Close the **Quick results entry** dialog. <!-- KFM: Select the **Back** button? -->
+1. On the Action Pane of the quality order, select **Validate**.
+1. In the grid on the **Sample management** FastTab, verify that four records exists for the four license plates that have been produced. <!-- KFM: Where are we now? How did we get here? -->
+1. Verify that the field **Update inventory status to** is set to *Available* because the quality order for the last sample passed. <!-- KFM: Where are we now? How did we get here? -->
+1. Set the field **Update inventory status** to *Yes*. <!-- KFM: Where are we now? How did we get here? -->
+1. Select **OK** to confirm the dialog. <!-- KFM: Where are we now? How did we get here? -->
+1. In the **Sample management workbench** verify that the inventory status of the two samples are now available by the values shown in their **Current inventory status** column<!-- KFM: Why *Current* inventory status? -->. If the inventory status isn't visible in the grid, select **Display dimensions** from the Action Pane and select **Inventory status** in the **Dimension display** dialog.

@@ -11,12 +11,6 @@ ms.custom:
   - bap-template
 ---
 
-<!-- KFM: 
-
-Johan: This is raw Copilot generated text. You should review carefully for inspiration, but probably start over on most it. 
-
--->
-
 # Manage and process samples (preview)
 
 [!include [banner](../../includes/banner.md)]
@@ -30,7 +24,7 @@ Sample management is a component of quality control in manufacturing, ensuring t
 In modern manufacturing and quality control environments, the ability to systematically manage product samples is essential for ensuring compliance, traceability, and consistent product quality. Sample management provides a structured framework for handling samples from their creation through to disposal, integrating seamlessly with production workflows and quality assurance protocols.
 The lifecycle of a sample begins with its registration, triggered either manually or automatically based on predefined sampling plans. These plans are tailored to the production context—whether inline sampling, which occurs during active production before inventory is finalized, or continuous sampling, which monitors quality at regular intervals throughout batch production.
 
-Once registered, each sample is assigned a unique identifier and categorized by sample type, which determines its handling procedure, retention policy, and applicable lifecycle states. These lifecycle states—such as Quality Order Created, Quality Order Validated, and Sample Scrapped—are system-defined and visually tracked to ensure clarity and accountability throughout the sample’s journey.
+Once registered, each sample is assigned a unique identifier and categorized by sample type, which determines its handling procedure, retention policy, and applicable lifecycle states. These lifecycle states—such as Quality Order Created, Quality Order Validated, and Sample Scrapped—are system-defined and visually tracked to ensure clarity and accountability throughout the sample's journey.
 
 Samples undergo testing via quality orders, which may be automatically generated or manually initiated. The outcome of these tests directly influences inventory control decisions: passing results may release blocked inventory, while failed tests can trigger automatic blocking of related batches or license plates. This dynamic interaction between sample status and inventory disposition ensures that only quality-approved goods proceed through the supply chain.
 
@@ -38,126 +32,65 @@ Throughout the lifecycle, samples are managed using tools like the sample manage
 
 In essence, sample management transforms quality control from a reactive process into a proactive, data-driven discipline. By embedding sample lifecycle tracking into production and inventory systems, organizations can uphold high standards of product integrity while streamlining operations across departments.
 
-Here is an overview of the activities connected to what could be typical life cycle states of a sample:
+The remaining sections of this article provide an overview of the activities connected to what could be typical life cycle states of a sample.
 
-### Sample registration
+## Sample registration
 
-Sample registration is the first step in the sample management process. It serves as the foundation for ensuring quality control in manufacturing. This step involves creating a unique identity for each sample, which allows for accurate tracking and management throughout its lifecycle. By registering samples, manufacturing managers can ensure that all quality-related data is systematically recorded and easily accessible. Samples can be registered in multiple ways, but most often their creation is controlled by the sampling method: continuous or inline. These methods define when and how samples are registered, whether automatically through system logic (continuous) or manually (inline) by production personnel.
+Sample registration is the first step in the sample management process. It serves as the foundation for ensuring quality control in manufacturing. This step involves creating a unique identity for each sample, which allows for accurate tracking and management throughout its lifecycle. By registering samples, manufacturing managers can ensure that all quality-related data is systematically recorded and easily accessible. Samples can be registered in multiple ways, but usually they are registered manually by production personnel as [inline samples](quality-sample-management-inline.md), or periodically based on a [continuous sampling setup](quality-sample-management-continuous.md).
 
-### Receipt in lab
+<!-- KFM: We have a **Create manual sample** item in the Action Pane of the workbench, but it's always disabled for me for some reason. We should maybe describe how to enable and use this. -->
 
-When a sample arrives in the lab, a worker verifies its condition. This step ensures that only valid samples proceed to testing, maintaining the integrity of the quality management process. This step offers several key benefits:
+## Collect and label the sample
 
-- **Quality assurance**: Ensures only valid samples are tested.
-- **Traceability**: Provides a clear audit trail for sample receipt.
-- **Efficiency**: Reduces delays by streamlining the receipt process.
+<!-- KFM: I think we should have a section for this. Mention the related commands in the Action Pane of the workbench for choosing layout and printing labels. -->
 
-When you receive a sample in the lab, follow these steps:
+## Receive and store samples
 
-1. Go to the **Sample Management Workbench**.
-1. Find the sample by using its unique ID.
-1. Verify the sample’s condition:
-   - Check for proper labeling and identification.
-   - Inspect for any signs of damage or contamination.
-1. Update the lifecycle state to **Received in Lab**.
-1. Record observations about the sample’s condition.
-1. Save the updates.
-
-### Storage
-
-Proper storage is essential to maintain the integrity of samples until testing. This step prevents degradation or contamination, ensuring reliable test results. This step offers several key benefits:
-
-- **Integrity preservation**: Maintains sample quality for accurate testing.
-- **Compliance**: Adheres to storage regulations and standards.
-- **Operational efficiency**: Facilitates easy retrieval and reduces mismanagement.
+Proper storage is essential to maintain the integrity of samples until testing. This step prevents degradation or contamination, ensuring reliable test results.
 
 To store a sample:
 
-1. Go to the **Sample Management Workbench**.
-1. Find the sample by using its unique ID.
-1. Check storage conditions:
+1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample Management Workbench**.
+1. Find the sample by using its unique **Sample ID**.
+1. Check storage conditions, for example: <!-- KFM: How do we know these? Are the linked or listed as part of the sample record somewhere? -->
    - Make sure the temperature and humidity levels are correct.
    - Make sure the containment and labeling are proper.
-1. Update the lifecycle state to **Stored**.
-1. Document the storage location and relevant observations.
-1. Save the updates.
+1. Update the lifecycle state to *Stored*. <!-- KFM: Tell how to do this. -->
+1. Document the storage location and relevant observations. <!-- KFM: Tell how to do this. -->
+1. Save the updates. <!-- KFM: Tell how to do this. -->
 
-### Test
+## Test samples
 
-Testing is a critical step in the sample management process. In this step, you analyze samples to determine if they meet quality standards. This step provides essential data that drive decision-making regarding product release, rework, or disposal. This step offers several key benefits:
+Testing is a critical step in the sample management process. In this step, you analyze samples to determine if they meet quality standards.
 
-- **Quality control**: Ensures that samples meet the required quality standards before proceeding in the production process.
-- **Data-driven decisions**: Accurate test results provide the information needed to make informed decisions regarding product disposition.
-- **Compliance assurance**: Systematic testing and documentation support compliance with regulatory and quality requirements.
-- **Continuous improvement**: Analyzing test results helps identify trends or issues that may require corrective actions or process improvements.
+<!-- KFM: This should probably be rather longer. Include more details from [Set up continuous sampling (preview)](quality-sample-management-continuous.md), and maybe include them more here than there.  -->
 
 To conduct testing:
 
-1. Go to the **Sample Management Workbench**.
-1. Find the sample by using its unique ID.
-1. Verify the sample’s readiness for testing.
-1. Conduct tests as per the predefined plan:
+1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample Management Workbench**.
+1. Find the sample by using its unique **Sample ID**.
+1. Verify the sample's readiness for testing.
+1. Conduct tests as per the predefined plan, for example: <!-- KFM: Tell how to lookup the required tests. -->
    - Physical inspections
    - Chemical analyses
    - Microbiological testing
-1. Record test results and flag deviations.
-1. Save the updates.
+1. Record test results and flag deviations. <!-- KFM: Tell how to do this. -->
+1. Save the updates. <!-- KFM: Tell how to do this. -->
 
-### Review
+## Handle sample failures
 
-The review step involves analyzing test results and other relevant data to make informed decisions about the quality and disposition of samples. This step ensures that you release only products that meet the highest quality standards. The review step offers several key benefits:
+<!-- KFM: We should describe what to do when a sample fails, including the fallback to previous sample and releasing products in between. Maybe in a new section. -->
 
-- **Quality assurance**: The review process ensures that all samples meet the required quality standards before product release.
-- **Informed decision-making**: Access to comprehensive data and test results enables objective and accurate decision-making.
-- **Regulatory compliance**: Proper review and documentation support adherence to regulatory and quality standards.
-- **Process optimization**: Identifying trends or recurring issues during the review can highlight areas for process improvement.
+## Sample disposal
 
-To review a sample:
-
-1. Go to the **Sample Management Workbench**.
-1. Find the sample by using its unique ID.
-1. Review test results and flagged deviations.
-1. Decide on a disposition:
-   - **Release**: The sample meets quality standards and is approved for use or sale.
-   - **Rework**: The sample requires additional processing to meet quality standards.
-   - **Reject**: The sample doesn't meet quality standards and should be discarded or returned.
-1. Document the decision and any relevant justifications or instructions in the system.
-1. Save the updates.
-
-### Retention
-
-Retention involves keeping compliant samples for a specified period to meet regulatory, quality, or business requirements. This step ensures traceability and accountability, and provides evidence of compliance in case of audits or investigations. This step offers several key benefits:
-
-- **Regulatory compliance**: Proper retention of samples ensures adherence to legal and regulatory requirements.
-- **Traceability**: Retained samples provide a reliable reference for future audits, investigations, or quality assessments.
-- **Risk management**: Effective retention practices help mitigate risks associated with product recalls, liability claims, or regulatory penalties.
-- **Operational efficiency**: Systematic retention and disposal processes optimize storage use and reduce clutter.
-
-To retain a sample:
-
-1. Go to the **Sample Management Workbench**.
-1. Find the sample by using its unique ID.
-1. Verify the sample is in a compliant state and ready for retention.
-1. Update the sample’s lifecycle state to **Retained**.
-1. Document the retention start date, duration, and any relevant conditions in the system.
-1. Monitor the retention period and receive alerts for samples approaching the end of their retention time.
-1. Save the updates.
-
-### Disposal
-
-Disposal involves safely and compliantly disposing of samples that reached the end of their retention period or are no longer needed for testing or quality assurance. Proper disposal minimizes environmental impact, prevents contamination, and ensures compliance with regulatory requirements. This step offers several key benefits:
-
-- **Regulatory compliance**: Proper disposal of samples ensures adherence to environmental and safety regulations.
-- **Risk mitigation**: Effective disposal practices reduce the risk of contamination, environmental harm, or regulatory penalties.
-- **Operational efficiency**: Systematic disposal processes free up storage space and reduce clutter in the laboratory or storage areas.
-- **Data integrity**: Accurate documentation of disposal activities supports reliable tracking and management of samples.
+Disposal involves safely and compliantly disposing of samples that reached the end of their retention period or are no longer needed for testing or quality assurance. Proper disposal minimizes environmental impact, prevents contamination, and ensures compliance with regulatory requirements.
 
 To dispose of a sample:
 
-1. Go to the **Sample Management Workbench**.
-1. Find the sample by using its unique ID.
+1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample Management Workbench**.
+1. Find the sample by using its unique **Sample ID**. <!-- KFM: Maybe I should also (or instead) looks for samples in a particular status? -->
 1. Verify the sample is in a disposed state and no longer needed for testing or quality assurance.
-1. Update the sample’s lifecycle state to **Disposed**.
-1. Document the disposal date, method, and any relevant observations in the system.
+1. Update the sample's lifecycle state to *Disposed*. <!-- KFM: Tell how to do this. -->
+1. Document the disposal date, method, and any relevant observations in the system. <!-- KFM: Tell how to do this. -->
 1. Ensure that all disposal activities follow safety and environmental regulations.
-1. Save the updates.
+1. Save the updates. <!-- KFM: Tell how to do this. -->

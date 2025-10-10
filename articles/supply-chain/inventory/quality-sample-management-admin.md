@@ -154,7 +154,7 @@ Follow these steps to define and configure sample associations:
    - **Item** – Depending on what you selected for **Item code**, choose the specific product or product group for which this rule should apply. Leave blank if **Item code** is set to *All*.
    - **Inline sample type** – Select the sample type that defines how inline samples for this item should be inspected, including their applicable lifecycle states. This sample type governs the inspection method used for inline sampling and ensures that the correct procedures and validations are applied throughout the sample's lifecycle.
    - **Inline sample scrap in days** – Specify how many days inline samples should be retained before being automatically scrapped. This setting helps manage sample lifecycle and storage by defining the retention period for inline samples associated with the item.
-   - **Default item sampling for inline** – Specifies the default [item sampling](#configure-item-samplings) applied to inline samples during production. Item samplings define the criteria for selecting samples. When initiating inline sampling from the production orders list or details page, this value is prefilled in the create dialog but can be adjusted as needed.
+   - **Default item sampling for inline** – Specifies the default [item sampling](#configure-item-samplings) policy applied to inline samples during production. Item sampling policies define the criteria for selecting samples. When initiating inline sampling from the production orders list or details page, this value is prefilled in the create dialog but can be adjusted as needed.
    - **Default inline test group** – Specify the default [test group](#test-groups) used for inline samples from production. When initiating inline sampling from the production orders list or details page, this value is prefilled in the create dialog but can be adjusted as needed.
    - **Continuous sample type** – Select the sample type that defines how continuous samples for this item should be inspected, including their applicable lifecycle states. This sample type governs the inspection method used for continuous sampling and ensures that the correct procedures and validations are applied throughout the sample's lifecycle.
    - **Continuous sample scrap in days** – Select the number of days that continuous samples for this item should be saved before being scrapped.
@@ -162,14 +162,16 @@ Follow these steps to define and configure sample associations:
 1. In the bottom section, with the relevant row still selected in the top section, add each of the [sample procedures](#configure-sample-procedures) that workers should follow when handling samples for this association. Use the toolbar buttons to add or remove procedures as needed.
 1. On the Action Pane, select **Save**.
 
-## Configure item samplings
+<a name="configure-item-samplings"></a>
 
-Item samplings define the criteria for selecting samples. Configuring these settings ensures that you select samples consistently and in compliance with quality standards.
+## Configure item sampling policies
 
-Follow these steps to define item sampling criteria:
+Item sampling policies define the criteria for selecting samples. Configuring these settings ensures that you select samples consistently and in compliance with quality standards.
+
+Follow these steps to define an item sampling policy:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Item sampling**.
-1. Use the buttons on the Action Pane to create a new item sampling record or edit an existing one as required. You can also delete existing records.
+1. Use the buttons on the Action Pane to create a new item sampling policy or edit an existing one as required. You can also delete existing policies.
 1. Set up the item sampling policy as described in [Quality management item sampling](../inventory/quality-item-sampling.md).
 1. On the **Sample management** FastTab, set up the settings that are specific for sample management. Make the following settings here.
 
@@ -193,7 +195,7 @@ The following subsections describe other important settings for sample managemen
 
 ### Quality associations
 
-Configure quality associations to trigger sample management when production orders are reported as finished for specific items. This setup references test groups and item sampling configurations to ensure consistency and automation in quality control. For inline samples, you don't need a quality association because you collect these samples on demand directly from the production order. Learn more in [Quality associations](../inventory/quality-associations.md). <!-- KFM: I think we need to provide a little more information about how the quality associations work in conjunction with sample management. We might summarize that here and/or add a few details to the Quality associations article that mention sample management. I think maybe it's just about the **Item sampling** and/or **Test group** setting.-->
+Configure quality associations to trigger sample management when production orders are reported as finished for specific items. This setup references test groups and item sampling policies to ensure consistency and automation in quality control. For inline samples, you don't need a quality association because you collect these samples on demand directly from the production order. Learn more in [Quality associations](../inventory/quality-associations.md). <!-- KFM: I think we need to provide a little more information about how the quality associations work in conjunction with sample management. We might summarize that here and/or add a few details to the Quality associations article that mention sample management. I think maybe it's just about the **Item sampling** and/or **Test group** setting.-->
 
 ### Configure default item status
 
