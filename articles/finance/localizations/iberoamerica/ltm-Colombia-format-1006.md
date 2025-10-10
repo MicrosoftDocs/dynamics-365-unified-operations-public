@@ -33,8 +33,8 @@ Before generating and printing the report, complete the following prerequisites:
 | Format  | :::no-loc text="File format 1006":::|
 | Format  | :::no-loc text="File format 1006 Excel":::|
 
-- Learn more in [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md).
-- Configure the **Electronic Reporting (ER)** parameters. Learn more in [Configure the Electronic reporting (ER) framework](fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+- Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+- Configure the **Electronic Reporting (ER)** parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
 ## Configure tax applications
 
