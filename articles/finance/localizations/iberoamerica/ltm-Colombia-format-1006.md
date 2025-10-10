@@ -84,6 +84,7 @@ After you meet the prerequisites and configure the tax application codes, follow
 
 ## Issue a format 1006 file for XML and Excel output
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select **File format 1006** for the XML output or **File format 1006 Excel** for the Excel output.
 1. For the XML output only, enter **1006** in the **Tax application ID** field.
