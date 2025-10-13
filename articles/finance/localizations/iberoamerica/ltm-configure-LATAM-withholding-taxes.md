@@ -28,12 +28,24 @@ Before you start the LATAM Withholding tax engine configuration, meet the follow
 
 ## Configure the LATAM withholding tax engine
 
+To configure the LATAM withholding taxes for vendor payments follow these steps.
+
+1. Enable withholding tax LATAM features and configurations.
+1. Configure withholding documents.
+1. Configure the payment order document.
+1. Configure a vendor payment journal.
+1. Configure a set of taxes.
+1. Configure withholding tax codes.
+1. Configure a withholding tax group.
+
 ### Enable withholding tax LATAM features and configurations
 
 Go to **Tax** > **Setup** > **Parameters** > **General ledger parameters**.
 In the **Withholding tax** tab, enable the **LATAM Withholdings** slider.
 
 ### Configure withholding documents
+
+This section explains all the configurations needed to set up document classes used as withholdings taxes.
 
 #### Configure the document class type
 
@@ -54,6 +66,8 @@ To configure the document class, follow these steps.
 1. In the **Document mask** section of the **Document class**, you can configure the structure of withholding certificate number (manual or automatic).
 
 ### Configure the payment order document
+
+This section explains how to set up document classes as payment orders used in vendor payment journals.
 
 #### Configure the document class type
 
