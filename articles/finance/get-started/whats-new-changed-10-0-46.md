@@ -38,7 +38,7 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-
+| General ledger | Account reconciliation agent (Production ready preview) | The Account reconciliation agent functionality has been improved to provide suggested actions for **In ledger not in subledger** and **In subledger not in ledger** exception types.| Feature management |
 
 ## Features turned on by default in this release
 
