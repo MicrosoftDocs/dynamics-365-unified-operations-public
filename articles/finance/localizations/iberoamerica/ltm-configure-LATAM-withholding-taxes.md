@@ -2,7 +2,7 @@
 title: Configure LATAM Withholding taxes for payments
 description: Learn how to configure the LATAM Withholding taxes to apply to vendor payments.
 author: Fhernandez0088
-ms.date: 10/07/2025
+ms.date: 10/13/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -137,7 +137,7 @@ To configure withholding tax codes, follow these steps.
    | Interval of period                                  | Select the measurement of time where the accumulated amount is calculated.                                                          |
 
 1. In the **Values** section, configure scales that affect how the withholding taxes are calculated:
-     |     Field    |                                                                         Description                                                                         |
+   |     Field    |                                                                         Description                                                                         |
    |:------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------:|
    | From date    | Set the starting date of the withholding tax validity.                                                                                                      |
    | To date      | Set the ending date of the withholding tax validity.                                                                                                        |
