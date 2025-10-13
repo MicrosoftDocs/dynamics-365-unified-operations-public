@@ -70,9 +70,9 @@ Business performance analytics has data for the most recent eight quarters. This
 
 Data is refreshed twice per day, at 12:00:00 AM and 12:00:00 PM (Coordinated Universal Time). To view exactly when a report's data was last refreshed, open the report. Near the top of the page, the rightmost item shows when the data for the report was last refreshed.
 
-## Demo database swap after BPA install
+## Demo database swap after installing Business performance analytics
 
-If you swap a demo database in sandbox or production after installing BPA, profile rehydration is required to reset the metadata that the transform jobs rely on. Please create a support ticket to have the metadata reset after the swap.    
+If you swap a demo database in sandbox or production after installing Business performance analytics, profile rehydration is required to reset the metadata that the transform jobs rely on. Contact support to reset the metadata after the swap.    
 
 ## Reports
 
