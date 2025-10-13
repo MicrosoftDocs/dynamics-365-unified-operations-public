@@ -93,8 +93,12 @@ This section illustrates how to configure and use continuous sampling. The examp
         - Make sure that the **End job** field is left un-checked.
         - Select **OK** to confirm report as finished of the first license plate.
         - Repeat this procedure for the remaining three license plates.
-    - Verify that 
-        - 
+    1. Verify that two samples and one quality order have been created by following these steps:
+        - On the Action Pane, open the **View** tab and, from the **Manage quality** group, select **Sample management workbench**.
+        - Verify that two samples have been created for separate license plates, and that these license plates are blocked by their default inventory status. Learn more about configuring the default item status in [Enable and configure sample management (preview)](quality-sample-management-admin.md).
+        - Select the last sample and open the **References** tab to confirm that the sample has an associated quality order.
+
+<!-- JOHANHO: If it is OK with you, we can skip below section. -->
 
 ### Work with the samples in the sample management workbench
 
