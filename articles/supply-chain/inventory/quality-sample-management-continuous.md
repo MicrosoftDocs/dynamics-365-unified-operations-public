@@ -35,13 +35,20 @@ To prepare your environment for inline sampling, be sure to set up the following
 
 ## Continuous sampling example scenario
 
-This section provides an example of how to set up and use continuous sampling.
+This section illustrates how to configure and use continuous sampling. The example assumes the following setup for generating samples and quality orders:
+    - A sample is created for every second license plate that is reported as finished.
+    - A quality order is created for every second sample that is generated.
 
 ### Setup and generate continuous samples
 
-The following procedure provides an example of how to set up continuous sampling. <!-- KFM: Should we have a step to set up the sample association? -->
-
-1. Create a production or batch order for a batch-controlled product.
+1. Create a product with the following characteristics:
+    - It must be enabled for the advanced warehouse processes. This is enabled by associating a **Storage dimension group*** to the product that has the property **Use warehouse management processes** set to *Yes*.
+    - It must be defined as a batch-enabled product. This is enabled by association a **Tracking dimension group** to the product that has the **Batch number** dimension enabled. 
+    - The product must be associated a **Batch number group** that is set up to generate a batch number automatically from a number sequence when quantities are reported as finished from a production or batch order.
+1. Set up a sample association for a batch-controlled product as describe in [Enable and configure sample management (preview)](quality-sample-management-admin.md)
+1. Create a production or batch order for the batch-controlled product with the following information:
+    - Choose a warehouse that is enabled for the advanced warehouse processes. To confirm this, check the property **Use warehouse management processes** is set to *Yes*.
+    - Set the quantity for the order to: 2000 pieces.
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Item sampling**. Set up an item sampling policy as described in [Quality management item sampling](../inventory/quality-item-sampling.md). On the **Sample management** FastTab, be sure to make the following settings to set up continuous sampling:
     - **Sample inspection method** - Set to *Continuous process*.
     - **Sample size** - Set to *1*.
@@ -54,12 +61,40 @@ The following procedure provides an example of how to set up continuous sampling
     - **Failed quality order status** - Specify the inventory status to apply to the license plate when a quality order fails.
     - **Passed quality order status** - Specify the inventory status to apply to the license plate when a quality order passes.
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Quality associations**. Set up a quality association as described in [Quality associations](../inventory/quality-associations.md). Be sure to make the following settings: <!-- KFM: Maybe we should recommend more settings here (e.g., reference type, event type and execution) -->
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Quality associations**. Set up a quality association as described in [Quality associations](../inventory/quality-associations.md). Be sure to make the following settings: 
+    - **Reference type** - Select **Production*.
+    - **Item code** - Select *Table*.
     - **Item** – Select the item from the production or batch order you created in the first step.
+    - **Event type** - Select *Report as finished*
+    - **Execution** - Select *After*.
     - **Item sampling** – Select the item sampling policy that you created for this exercise.
     - **Test group** – Select the test group that you created for this exercise.
 
-1. Return to the production or batch order that you created in the first step. Bring the order into status *Started*. Then report four license plates as finished to generate the continuous samples according to your item sampling policy. <!-- KFM: I didn't get any samples. Maybe I reported as finished wrong? -->
+1. Return to the production or batch order that you created in the first step. 
+1. Bring the order into status *Started*. 
+1. Report as finish four license plates by using the following procedure:
+    1. In the Action pane, select the **Report as finished** menu item to open the **Report as finished** dialog.
+    1. In the dialog, check that the **License plate** dimension is visible in the grid.
+    1. If it’s not visible, you can enable it:
+        - Go to the Action pane.
+        - Select Display dimensions.
+        - In the Display dimensions dialog, find License plate and mark it as enabled.
+    1. Open the license plate page, to create four new license plates:
+        - Place the cursor in the **License plate** field
+        - Right-click and select **View details** from the context menu to open the **License plate** page.
+    1. Create four new license plates in the license plate page
+        - In the Action pane, select **New** to create a new license plate.
+        - In the **License plate** field, provide an ID for the license plate.
+        - Repeat this procedure until four license plates are created.
+        - Return to the report as finished dialog by closing the license plate page.
+    1. Process report as finish by providing the following information in the **Report as finished** dialog:
+        - In the **Good quantity** field, set the value: *20*.
+        - In the **License plate** field, select the first license plate you created in the previous step.
+        - Make sure that the **End job** field is left un-checked.
+        - Select **OK** to confirm report as finished of the first license plate.
+        - Repeat this procedure for the remaining three license plates.
+    - Verify that 
+        - 
 
 ### Work with the samples in the sample management workbench
 
