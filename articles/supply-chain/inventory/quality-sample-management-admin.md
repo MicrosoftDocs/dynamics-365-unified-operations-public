@@ -35,7 +35,8 @@ The sample ID number sequence ensures that each sample has a unique identifier f
 Follow these steps to create and assign a number sequence for sample IDs:
 
 1. Go to **Organization administration** \> **Number sequences** \> **Number sequences**.
-1. Create and configure a number sequence for generating sample IDs, as described in [Set up number sequences on an individual basis](../../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md). Note the **Number sequence code** that you assign to this number sequence. <!-- KFM: It seems like we are required to use a non-shared scope for the number seq. Should we document that? Do other requirements apply? -->
+1. Create and configure a number sequence for generating sample IDs, as described in [Set up number sequences on an individual basis](../../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md).The number sequence must be defined to use a non-shared scope. 
+1. Note the **Number sequence code** that you assign to this number sequence. 
 1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
 1. Open the **Number sequences** tab.
 1. Find the row with a **Reference** of *Sample ID* and set the **Number sequence code** field for that row to the number sequence that you created previously in this procedure.
@@ -195,23 +196,25 @@ The following subsections describe other important settings for sample managemen
 
 ### Quality associations
 
-Configure quality associations to trigger sample management when production orders are reported as finished for specific items. This setup references test groups and item sampling policies to ensure consistency and automation in quality control. For inline samples, you don't need a quality association because you collect these samples on demand directly from the production order. Learn more in [Quality associations](../inventory/quality-associations.md). <!-- KFM: I think we need to provide a little more information about how the quality associations work in conjunction with sample management. We might summarize that here and/or add a few details to the Quality associations article that mention sample management. I think maybe it's just about the **Item sampling** and/or **Test group** setting.-->
+Configure quality associations to trigger sample management when production orders are reported as finished for specific items. This setup references test groups and item sampling policies to ensure consistency and automation in quality control. For inline samples, you don't need a quality association because you collect these samples on demand directly from the production order. Learn more in [Quality associations](../inventory/quality-associations.md). 
+    - **Reference type** - Select *Production* which is the only supported type for sample management.
+    - **Event type** - Select *Report as finished*.
+    - **Execution** - Select *After*.
+    - **Test group** - Select the test group that should be used for quality orders generated for samples.
+    - **Item sampling** - Select the item sampling configuration used for sample management. This configuration determines whether the **Inline** or **Continuous** sampling method is applied, along with related details for how each method is used.
 
 ### Configure default item status
 
-Set the default item status to establish the initial inventory status assigned to items during various supply chain transactions, such as receiving, production, or returns <!-- KFM: Can we make this more specific for sample management? -->. This status helps control how items are treated in terms of availability, blocking, and reservation. For sample management, use the default inventory status when configuring samples at the license plate level <!-- KFM: What do we mean by "configuring samples at the license plate level"? -->. Typically, you should define the default inventory status as *On-hold* using a status that is configured as *Blocking*. <!-- KFM: I tried to assign a default status set as *Blocking* and got an error: "Status specified for default inventory status must be a good status." What's wrong? -->
-
-To configure the default item status at the item level, follow these steps: <!-- KFM: Explain a little more about what it means to configure at the "item level". When does this come into play and how does it affect sample management? -->
+Set the default item status to establish the initial inventory status. This is relevant when samples are configured to be generated per license plate produced. When a quality order is generated for a sample associated a license plate, then the sample will be create with the defined default item status. Typically, you should define the default inventory status as *On-hold* indicating that the license plate is awaiting inspection. You can configure the default item status to apply for an individual item or for transactions on a specific warehouse. To configure the default item status for a specific item follow these steps: 
 
 1. Go to **Warehouse management** \> **Setup** \> **Inventory** \> **Default item status**.
 1. On the Action Pane, select **New** to create a new record.
 1. Enter the following details for your new record:
     - **Item number** – Select the product you want to configure for sample management.
-    - **Module** – <!-- KFM: Description needed -->
-    - **Account number** – <!-- KFM: Description needed -->
-    - **Default inventory status ID** – <!-- KFM: Description needed.  -->
+    - **Module** – Select *Inventory* which is the only applicable value for sample management.
+    - **Default inventory status ID** – From the list, select the inventory status that should be used as default when a sample with an associated license plate is created in sample management.
 
-To configure the default item status at the warehouse level, follow these steps: <!-- KFM: Explain a little more about what it means to configure at the "warehouse level". When does this come into play and how does it affect sample management? -->
+To configure the default item status that is applicable for all items transactions on a specific warehouse, follow these steps: 
 
 1. Go to **Warehouse management** \> **Setup** \> **Inventory breakdown** \> **Warehouses**.
 1. Find and select the warehouse where you want to configure the default item status.
@@ -219,21 +222,24 @@ To configure the default item status at the warehouse level, follow these steps:
 
 ### Test groups
 
-[Test groups](../inventory/quality-test-groups.md) define the set of tests applied while processing quality orders. When configuring test groups for quality orders related to sample management, especially when you take samples from license plates, the following fields are important for managing inventory status:
+[Test groups](../inventory/quality-test-groups.md) define the set of tests applied while processing quality orders. On the test groups you also define the statuses the system should apply to license plates or product batches based on the outcome of the quality orders test results.
 
-- **Update inventory status** - Set to *Yes* to enable inventory status updates based on test results.
-- **Failed quality order status** - Specify the inventory status to apply to the license plate when a quality order fails. This setting only applies when **Update inventory status** is set to *Yes*.
-- **Passed quality order status** - Specify the inventory status to apply to the license plate when a quality order passes. This setting only applies when **Update inventory status** is set to *Yes*.
+If you have configured sample management to generate samples per license plate, then the **Inventory status** is used to control the status of the license plate. Set the following fields on the **Test group** to control the initial status on the license plates generated during production report as finished:
 
-Learn more in [Quality management test groups](../inventory/quality-test-groups.md).
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**
+1. Select and existing test group or create a new one.
+1. Select the **General** Tab and make the following settings:
+    - **Update inventory status** - Set to *Yes* to enable inventory status updates based on test results.
+    - **Failed quality order status** - Specify the inventory status to apply to the license plate when a quality order fails. This setting only applies when **Update inventory status** is set to *Yes*.
+    - **Passed quality order status** - Specify the inventory status to apply to the license plate when a quality order passes. This setting only applies when **Update inventory status** is set to *Yes*.
 
-### Batch disposition codes
+If you have configured sample management to generate samples per product batch number, then the **Batch disposition master** is used to control the status of the individual batch number. Set the following fields on the **Test group** to control the initial status on the batch number generated during report as finished.
 
-A batch disposition code is assigned at the batch level and indicates whether a batch is available or unavailable for operational use. These codes help organizations manage inventory restrictions and support quality control compliance. Learn more in [Batch disposition codes](../inventory/batch-disposition-codes.md). <!-- KFM: What do we need to do here to support sample management? Where to we use the codes in SM? -->
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**
+1. Select and existing test group or create a new one.
+1. Select the **General** Tab and make the following settings:
+    - **Update batch disposition** - Set to *Yes* to enable update of the tested batch number based on whether the quality order is failing or passing. 
+    - **Failed quality order batch disposition** - Specify the batch disposition master to apply to the tested batch number when a quality order fails. This setting only applies when **Update batch disposition** is set to *Yes*.
+    - **Passed quality order batch disposition** - Specify the batch disposition master to apply to the tested batch number when a quality order passes. This setting only applies when **Update batch disposition** is set to *Yes*.
 
-When you use the continuous sample method with a sample plan based on batches, the results of quality inspections directly determine whether inventory is blocked or released through batch disposition codes. Specifically:
-
-- If a quality order fails, the related inventory batch is blocked (made unavailable for use) by updating its batch disposition code.
-- If a quality order passes, the batch is released (made available for use) by updating its batch disposition code accordingly.
-
-This process ensures that only batches meeting quality standards are available for operational activities, while those that fail inspection are restricted from use.
+Learn more in: [Batch disposition codes](../inventory/batch-disposition-codes.md)
