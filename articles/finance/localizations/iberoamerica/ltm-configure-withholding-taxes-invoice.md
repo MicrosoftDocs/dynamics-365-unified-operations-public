@@ -25,7 +25,7 @@ To configure taxes, follow these steps.
 1. Set a negative percentage (for example, -10%) in the **Values** field.
 1. Assign appropriate ledger accounts in the **Ledger posting group** field.
 
-Learn more in [Set up sales tax codes](set-up-sales-tax-codes.md).
+Learn more in [Set up sales tax codes](../../general-ledger/tasks/set-up-sales-tax-codes.md).
 
 ## Set up sales tax groups
 
