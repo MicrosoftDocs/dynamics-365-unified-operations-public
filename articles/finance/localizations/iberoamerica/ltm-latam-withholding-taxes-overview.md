@@ -72,6 +72,6 @@ Payment ledger accounting registration example:
 | VAT withholding 75% | 18000| |
 | Bank transfer ||156000|
 
-Learn how to configure LATAM withholding taxes for payments in [Configure LATAM Withholding taxes for payments](ltm-configure-latam-withholdings.md). For more information about how to register transactions, see [Post vendor payment transactions with LATAM Withholding taxes](ltm-post-payment-latam-withholdings.md).
+Learn how to configure LATAM withholding taxes for payments in [Configure LATAM Withholding taxes for payments](ltm-configure-latam-withholding-taxes.md). For more information about how to register transactions, see [Post vendor payment transactions with LATAM Withholding taxes](ltm-post-payment-latam-withholding-taxes.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
