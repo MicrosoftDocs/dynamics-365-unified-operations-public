@@ -1,5 +1,5 @@
 ---
-title: Latam withholding taxes overview
+title: LATAM withholding taxes overview
 description: Provides information about LATAM Withholding taxes functionality.
 author: Fhernandez0088
 ms.date: 10/07/2025
