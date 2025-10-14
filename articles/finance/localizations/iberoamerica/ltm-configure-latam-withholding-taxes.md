@@ -137,6 +137,7 @@ To configure withholding tax codes, follow these steps.
    | Interval of period                                  | Select the measurement of time where the accumulated amount is calculated.                                                          |
 
 1. In the **Values** section, configure scales that affect how the withholding taxes are calculated:
+
    |     Field    |                                                                         Description                                                                         |
    |:------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------:|
    | From date    | Set the starting date of the withholding tax validity.                                                                                                      |
