@@ -42,7 +42,7 @@ Ledger accounting registration example:
 | VAT withholding 75% accrual |     |18000 |
 | Vendor account | 156000 |
 
-Learn how to configure withholding taxes in [Configure withholding taxes at invoice posting](ltm-configure-withholdings-inovice.md) and how to register transactions in [Post vendor invoices with withholding taxes](ltm-post-invoice-withholdings.md).
+Learn how to configure withholding taxes in [Configure withholding taxes at invoice posting](ltm-configure-withholding-taxes-invoice.md) and how to register transactions in [Post vendor invoices with withholding taxes](ltm-post-invoice-withholdings.md).
 
 ### Withholdings at the time of payment
 
