@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 7/15/2025
+ms.date: 10/14/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
