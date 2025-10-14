@@ -35,7 +35,7 @@ Calculated VAT withholding: 18,000
 
 Ledger accounting registration example:
 
-|   | Debit | Credit |
+| &nbsp;  | Debit | Credit |
 | ------------- |--------|--------|
 | Expense concept | 150000| |
 | VAT credit      | 24000| |
@@ -58,7 +58,7 @@ Calculated VAT withholding: 18,000
 
 Invoice ledger accounting registration example:
 
-|   | Debit | Credit |
+| &nbsp;  | Debit | Credit |
 | ------------- |--------|--------|
 | Expense concept | 150000| |
 | VAT credit      | 24000| |
@@ -66,12 +66,12 @@ Invoice ledger accounting registration example:
 
 Payment ledger accounting registration example:
 
-|   | Debit | Credit |
+| &nbsp;  | Debit | Credit |
 | ------------- |--------|--------|
 | Vendor account | 174000| |
 | VAT withholding 75% | 18000| |
 | Bank transfer ||156000|
 
-Learn how to configure LATAM withholding taxes for payments in [Configure LATAM Withholding taxes for payments](ltm-configure-LATAM-withholdings.md). For more information about how to register transactions, see [Post vendor payment transactions with LATAM Withholding taxes](ltm-post-payment-LATAM-withholdings.md).
+Learn how to configure LATAM withholding taxes for payments in [Configure LATAM Withholding taxes for payments](ltm-configure-LATAM-withholdings.md). For more information about how to register transactions, see [Post vendor payment transactions with LATAM Withholding taxes](ltm-post-payment-latam-withholdings.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
