@@ -3620,6 +3620,18 @@
                         href: localizations/iberoamerica/ltm-latam-in-customer-payment.md
                       - name: Use the LATAM extension in vendor payments journals
                         href: localizations/iberoamerica/ltm-latam-in-vendor-payment.md
+                    - Latam withholding tax
+                      items:
+                      - name: Latam withholding taxes overview
+                        href: localizations/iberoamerica/ltm-LATAM-withholding-taxes-overview.md
+                      - name: Configure withholding taxes at invoice posting
+                        href: localizations/iberoamerica/ltm-configure-withholding-taxes-invoice.md   
+                      - name: Post vendor invoices with withholding taxes
+                        href: localizations/iberoamerica/ltm-post-invoice-withholdings.md
+                      - name: Configure LATAM Withholding taxes for payments
+                        href: localizations/iberoamerica/ltm-configure-latam-withholding-taxes.md
+                      - name: Post vendor payment transactions with LATAM Withholding taxes
+                        href: localizations/iberoamerica/ltm-post-payment-latam-withholding-taxes.md
                     - name: Inquiries and Reports
                       items:
                       - name: Value query for Latin America
