@@ -2,12 +2,12 @@
 title: Channel database extensions
 description: This article explains how to extend the channel database for different scenarios in Microsoft Dynamics 365 Finance and Dynamics 365 Commerce.
 author: josaw1
-ms.date: 05/13/2025
+ms.date: 10/15/2025
 ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: asharchw
+ms.author: asharchw, aneesa
 ms.search.validFrom: 2017-09-15
 ms.custom: 
   - bap-template
@@ -45,6 +45,13 @@ In Finance and Commerce, there's an external schema called the *EXT schema* that
 - If available, Microsoft recommends getting data through Commerce Runtime data services, as opposed to accessing channel database artifacts directly from CRT, AX, or DBO objects.
 - Avoid accessing tables directly in the EXT schema. You can instead use *views* to read records, and *stored procedures* to insert, update, or delete records.
 - Editing the values of any fields of tables in AX or CRT schemas from an extension is unsupported by Microsoft and may eventually break the schemas when stricter enforcement improvements are introduced. Microsoft doesn't support any issues that arise from editing schema values via extensions.
+
+### Generated extension SQL scripts
+The "Generated extension SQL script" feature (Commerce version 10.0.46 or later) simplifies and accelerates the process of adding extensions to the channel database. 
+
+The "Generated extension SQL script" section on the Scheduler Subjobs page (Retail and Commerce > Headquarters setup > Commerce scheduler > Scheduler subjobs) displays the SQL script that can be used as a starting point to add or modify tables in the Channel Database for the selected subjob.
+
+The generated script follows current guidelines and best practices and automatically includes indexes that optimize performance. It also helps avoid common customization errors such as incorrect column or table names and missing required fields that impact data synchronization.
 
 ### Example SQL script of what to avoid
 
