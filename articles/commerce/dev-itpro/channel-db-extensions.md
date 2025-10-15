@@ -49,7 +49,7 @@ In Finance and Commerce, there's an external schema called the *EXT schema* that
 ### Generated extension SQL scripts
 The "Generated extension SQL script" feature (Commerce version 10.0.46 or later) simplifies and accelerates the process of adding extensions to the channel database. 
 
-The "Generated extension SQL script" section on the Scheduler Subjobs page (Retail and Commerce > Headquarters setup > Commerce scheduler > Scheduler subjobs) displays the SQL script that can be used as a starting point to add or modify tables in the Channel Database for the selected subjob.
+The "Generated extension SQL script" section on the Scheduler Subjobs page (Retail and Commerce > Headquarters setup > Commerce scheduler > Scheduler subjobs) displays SQL script that can be used as a starting point to add or modify tables in the Channel Database for the selected subjob.
 
 The generated script follows current guidelines and best practices and automatically includes indexes that optimize performance. It also helps avoid common customization errors such as incorrect column or table names and missing required fields that impact data synchronization.
 
