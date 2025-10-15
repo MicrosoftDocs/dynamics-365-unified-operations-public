@@ -43,6 +43,7 @@ Learn more in [Import Electronic reporting (ER) configurations from Dataverse](.
 - Configure all the LATAM extensions before continuing with the configuration in this article.
 
 ## Configuration required for Peruvian electronic invoices
+
 The following configurations are required for Peruvian electronic invoices:
 
 - Configure the tax application
@@ -57,7 +58,7 @@ The following configurations are required for Peruvian electronic invoices:
 
 ### Configure the tax application
 
-1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax application** and select **New** to create a tax application record that has the code **PEFE** (Peruvian electronic invoice). Use this tax application record to assign the fiscal codification to each element in Microsoft Dynamics 365 Finance.
+To configure the tax application, go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax application** and select **New** to create a tax application record that has the code **PEFE** (Peruvian electronic invoice). Use this tax application record to assign the fiscal codification to each element in Microsoft Dynamics 365 Finance.
 
 ### Configure the document classes
 
@@ -90,7 +91,9 @@ To configure sales point prefix, follow these steps.
 
 ### Configure field master lists
 
-1. Go to **Organization administration > Setup > LATAM > Fields master List**.
+To configure field master lists, follow these steps.
+
+1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Fields master List**.
 1. In **List 8**, configure the codes for credit notes and debit notes.
 1. In **LIST 9**, configure the codes for transaction type.
 1. For each **Reference code** configured in the **Fields master list** section,
@@ -167,9 +170,9 @@ To configure global or line discounts, follow these steps.
 > [!NOTE]
 > To enter a global or line discount, use the Maintain charges button in the sales orders, enter the amount in negative.
 
-To configure Units, follow these steps:
+To configure Units, follow these steps.
 
-Go to **Organization administration** \> **Setup** \> **Units** \> **Units**. For each record in the list, follow these steps:
+1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**. For each record in the list, follow these steps:
    1. Select the record, then go to **Tax application** under the **LATAM** tab in the top menu.
    1. Create a new record.
    1. In the **Tax application id** field, enter the code that is used for Peruvian electronic invoices.
@@ -181,9 +184,9 @@ For each tax and percentage you use, follow these steps.
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. For each **Sales tax code** that you want to use in electronic invoices:
-    1. Select the record, then go to **Tax application** in the top menu.
-    1. Create a new record.
-    1. In the **Tax application id** field, select the code that's used for Peruvian electronic invoices.
+   1. Select the record, then go to **Tax application** in the top menu.
+   1. Create a new record.
+   1. In the **Tax application id** field, select the code that's used for Peruvian electronic invoices.
    1. In the **Income tax code** field, enter the code that identifies the tax type according to the Peruvian regulations.
    1. In the **Code Regime** field, enter the name code. 
    1. In the **User-defined field 2** field, enter the code that represents its tax condition according to the UN/ECE 5153 regulation.
@@ -191,13 +194,17 @@ For each tax and percentage you use, follow these steps.
 
 ## Configure electronic document references
 
+To configure electronic document references, follow these steps.
+
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Electronic documents references** and follow these steps:
 1. In the **Tax application id** field, enter the ID that you use for Peruvian electronic invoices.
 1. Complete the **Max amount of packing slips** field.
 
 For debit and credit notes, select **References** on the posting page, and complete all required fields. 
 
-#### Steps to reference a document
+#### Reference a document
+
+To reference a document, follow these steps.
 
 1. In the references page, go to the **General** tab, select **Source Vouchers**, and from the list of documents, select the document to associate.
 1. Complete the **Reference reason** with a motive (optional).
@@ -214,7 +221,8 @@ For electronic invoices, To configure the **SSRS Reports / Services references**
 1. In the **Settings** tab, select **Service** for the **Report/Service type** field.
 1. In the **Sales point type** field, select **Pre-printed** (it must match the sales point type used for electronic invoices).
 1. In the **Parameter** section, add the following lines:
-    1. **Name:** TaxApplicationId - **Value:** PEFE (this code must match the tax application used for electronic invoices).
+    1. **Name:** TaxApplicationId
+    1. **Value:** PEFE (this code must match the tax application used for electronic invoices).
 
 > [!NOTE]
 > This configuration applies to all sales points used for every invoice, credit note, and debit note.
