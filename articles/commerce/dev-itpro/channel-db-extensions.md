@@ -7,7 +7,7 @@ ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: asharchw, aneesa
+ms.author: asharchw; aneesa
 ms.search.validFrom: 2017-09-15
 ms.custom: 
   - bap-template
