@@ -131,6 +131,8 @@ Learn more in [Address setup for Latin America](ltm-core-address-setup.md).
 
 ### Other tax application configurations
 
+Additionally, you need to configure the following tax applications.
+
 #### Configure currencies 
 
 To configure currencies, follow these steps.
@@ -141,8 +143,21 @@ To configure currencies, follow these steps.
    1. Create a record.
    1. In the **Tax application id** field, enter the code that is used for Peruvian electronic invoices.
    1. In the **Tax application code** field, enter the code for each currency according to the Peruvian regulations.
+  
+#### Configure units
+
+To configure Units, follow these steps.
+
+1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**. For each record in the list, follow these steps:
+   1. Select the record, then go to **Tax application** under the **LATAM** tab in the top menu.
+   1. Create a new record.
+   1. In the **Tax application id** field, enter the code that is used for Peruvian electronic invoices.
+   1. In the **Tax code** field, enter the code according to the Peruvian regulations.
+
 
 ### Configure charges and discounts
+
+This section explains how to configure globalor line charges and discounts.
 
 #### Configure global or line charges
 
@@ -169,14 +184,6 @@ To configure global or line discounts, follow these steps.
 
 > [!NOTE]
 > To enter a global or line discount, use the Maintain charges button in the sales orders, enter the amount in negative.
-
-To configure Units, follow these steps.
-
-1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**. For each record in the list, follow these steps:
-   1. Select the record, then go to **Tax application** under the **LATAM** tab in the top menu.
-   1. Create a new record.
-   1. In the **Tax application id** field, enter the code that is used for Peruvian electronic invoices.
-   1. In the **Tax code** field, enter the code according to the Peruvian regulations.
 
 ### Configure taxes
 
