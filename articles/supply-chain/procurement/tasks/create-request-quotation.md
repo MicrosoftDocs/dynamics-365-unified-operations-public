@@ -64,6 +64,22 @@ After you've specified the basic information about your RFQ, you specify the goo
 5. Close the page.
 6. Close the page.
 
+## Send all RFQ's to vendors
+
+1. On the Action Pane, select  **Send All**. To configure Go to **Procurement and sourcing Parameter > Request For Quotation Send All Line**
+
+    + Default Status will be applied based on below configuration
+    + All - Display All Vendors irrespective of Lowest or Highest Status of Vendor
+    + Created - Display Vendors with Either Lowest or Highest Status as Created
+    + Sent - Display Vendors with Either Lowest or Highest Status as Sent
+
+    <img width="1703" height="599" alt="image" src="https://github.com/user-attachments/assets/aa931f3c-df6e-4c77-b4d9-c8019759b823" />
+
+2. Select **Cancel**.
+3. Select **OK**.
+4. Close the page.
+5. Close the page.
+
 ## View the RFQ journal
 
 1. Go to **Procurement and sourcing > Requests for quotations > Request for quotations follow-up > Request for quotation journals**.
