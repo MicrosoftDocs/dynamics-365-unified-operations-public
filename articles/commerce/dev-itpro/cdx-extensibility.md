@@ -7,7 +7,7 @@ ms.topic: how-to
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: josaw; aneesa
+ms.author: aneesa
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ---
