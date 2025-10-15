@@ -38,9 +38,35 @@ The remaining sections of this article provide an overview of the activities con
 
 Sample registration is the first step in the sample management process. It serves as the foundation for ensuring quality control in manufacturing. This step involves creating a unique identity for each sample, which allows for accurate tracking and management throughout its lifecycle. By registering samples, manufacturing managers can ensure that all quality-related data is systematically recorded and easily accessible. Samples can be registered in multiple ways, but usually they are registered manually by production personnel as [inline samples](quality-sample-management-inline.md), or periodically based on a [continuous sampling setup](quality-sample-management-continuous.md).
 
-<!-- KFM: We have a **Create manual sample** item in the Action Pane of the workbench, but it's always disabled for me for some reason. We should maybe describe how to enable and use this. -->
+In sample management, samples can be created either manually or automatically, depending on the process requirements. 
+
+- **Manual creation**
+
+    1. **Inline sampling method** – This approach allows users to create samples directly during the production or inspection process. Learn more in: [Initiate an inline sample (preview)](quality-sample-management-inline.md)
+    2. **Sample management workbench** – Users can manually create samples from the workbench interface, providing flexibility for ad-hoc or planned sampling activities. Follow these steps to create the sample from the sample management workbench:
+        1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample Management Workbench**.
+        1. Find the sample by using its unique **Sample ID**.
+
+
+- **Automatic creation**
+    Samples are generated automatically when using the **Continuous** sampling method. Learn more in: [Set up continuous sampling (preview)](quality-sample-management-continuous.md)
 
 ## Collect and label the sample
+
+Collecting and labeling a sample is a critical step to ensure traceability and accuracy throughout the testing process. Proper collection guarantees that the sample represents the intended material, while clear labeling helps maintain identification and prevents mix-ups during analysis and storage.
+
+Use the following procedure to collect and print the labels for a set of samples associated a batch order.
+
+1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample Management Workbench**.
+1. Find the samples by using its unique **Sample ID**.
+1. Check storage conditions, for example: <!-- KFM: How do we know these? Are the linked or listed as part of the sample record somewhere? -->
+   - Make sure the temperature and humidity levels are correct.
+   - Make sure the containment and labeling are proper.
+1. Update the lifecycle state to *Stored*. <!-- KFM: Tell how to do this. -->
+1. Document the storage location and relevant observations. <!-- KFM: Tell how to do this. -->
+1. Save the updates. <!-- KFM: Tell how to do this. -->
+
+
 
 <!-- KFM: I think we should have a section for this. Mention the related commands in the Action Pane of the workbench for choosing layout and printing labels. -->
 
