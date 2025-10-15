@@ -24,7 +24,7 @@ CDX is a system that transfers data between Commerce Headquarters (HQ) and chann
 
 The advantage of using the Commerce initialization class is that you don't have to configure the custom jobs in different environments (dev, test, and production). Instead, you can run the CDX initialization by using the **Initialize commerce scheduler** dialog box from **Retail and Commerce > Headquarters setup > Commerce scheduler > Initialize commerce scheduler**. Information about the custom job for the data synchronization is then automatically created in CDX.
 
-> [!NOTE]
+> [!IMPORTANT]
 > The [Generated extension SQL scripts](channel-db-extensions.md#generated-extension-sql-scripts) feature (Commerce version 10.0.46 or later) simplifies and accelerates the process of adding extensions to the channel database. It also helps optimize performance and avoid common customization errors that impact data synchronization.
 
 There are various scenarios for data transfer between HQ and the channel database:
