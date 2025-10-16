@@ -43,69 +43,83 @@ In sample management, samples can be created either manually or automatically, d
 - **Manual creation**
 
     1. **Inline sampling method** – This approach allows users to create samples directly during the production or inspection process. Learn more in: [Initiate an inline sample (preview)](quality-sample-management-inline.md)
-    2. **Sample management workbench** – Users can manually create samples from the workbench interface, providing flexibility for ad-hoc or planned sampling activities. Follow these steps to create the sample from the sample management workbench:
-        1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample Management Workbench**.
-        1. Find the sample by using its unique **Sample ID**.
-
-
+    2. **Sample management workbench** – Users can manually create samples from the workbench interface, providing flexibility for ad-hoc or planned sampling activities. Only samples using the **Continuous sampling method** can be created manually from workbench. Follow these steps to manually create a sample for a license plate of batch number for a product that has been set up for the continuous sampling process:
+        1. Create batch order for continuous sampling and report as finished four license plates to generate two samples. See description of scenario in [Initiate an inline sample (preview)](quality-sample-management-inline.md)
+        1. Select the record for the production order in the the production order list page
+        1. From the Action pane, select **Sample Management Workbench** and verify that two samples for the production order are listed.
+        1. From the Action pane, select **Create manual sample**.
+        1. Select one of the two license plates listed to which you want to associate a new sample.
+        1. From the Action pane, select **Create sample**.
+        1. Verify that a new record for the sample has been created in the sample management workbench. 
+        1. From the Action pane, select **Create manual quality order** if you with to associate a quality order to the newly created sample.
+        
 - **Automatic creation**
     Samples are generated automatically when using the **Continuous** sampling method. Learn more in: [Set up continuous sampling (preview)](quality-sample-management-continuous.md)
 
-## Collect and label the sample
+## Collect, print label, and test the sample
 
-Collecting and labeling a sample is a critical step to ensure traceability and accuracy throughout the testing process. Proper collection guarantees that the sample represents the intended material, while clear labeling helps maintain identification and prevents mix-ups during analysis and storage.
+Accurate sample collection and labeling are foundational to reliable testing and traceability. Proper collection ensures that the sample truly represents the intended material, while clear and consistent labeling safeguards identification throughout analysis and storage, preventing costly mix-ups. Learn more in: [Enable and configure sample management (preview)](quality-sample-management-admin.md)
 
-Use the following procedure to collect and print the labels for a set of samples associated a batch order.
+### Collect labels
 
-1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample Management Workbench**.
-1. Find the samples by using its unique **Sample ID**.
-1. Check storage conditions, for example: <!-- KFM: How do we know these? Are the linked or listed as part of the sample record somewhere? -->
-   - Make sure the temperature and humidity levels are correct.
-   - Make sure the containment and labeling are proper.
-1. Update the lifecycle state to *Stored*. <!-- KFM: Tell how to do this. -->
-1. Document the storage location and relevant observations. <!-- KFM: Tell how to do this. -->
-1. Save the updates. <!-- KFM: Tell how to do this. -->
+Collecting samples is the process of extracting a small fraction of the produced material to represent the entire batch or license plate. This step is essential for quality control and traceability, ensuring that subsequent testing reflects the actual production output. Workers typically perform this task using the sample management workbench, which provides visibility and filtering options for samples generated through either inline or continuous sampling methods.. 
 
+### Print labels
 
-
-<!-- KFM: I think we should have a section for this. Mention the related commands in the Action Pane of the workbench for choosing layout and printing labels. -->
-
-## Receive and store samples
-
-Proper storage is essential to maintain the integrity of samples until testing. This step prevents degradation or contamination, ensuring reliable test results.
-
-To store a sample:
+ Printing the sample label is a crucial step to ensure proper identification and traceability throughout the testing process. A clear, accurate label links the sample to its batch or license plate, preventing mix-ups and supporting compliance. Once the sample is collected and recorded in the system, the label can be generated and printed directly from the sample management workbench, ready to be attached before storage or analysis. Use the following procedure to collect and print the labels for a set of samples associated a batch order.
 
 1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample Management Workbench**.
-1. Find the sample by using its unique **Sample ID**.
-1. Check storage conditions, for example: <!-- KFM: How do we know these? Are the linked or listed as part of the sample record somewhere? -->
-   - Make sure the temperature and humidity levels are correct.
-   - Make sure the containment and labeling are proper.
-1. Update the lifecycle state to *Stored*. <!-- KFM: Tell how to do this. -->
-1. Document the storage location and relevant observations. <!-- KFM: Tell how to do this. -->
-1. Save the updates. <!-- KFM: Tell how to do this. -->
+1. Find the samples by filtering on the production or batch order number.
+1. Select a specific sample or multi-select a range of samples you wish to print labels for.
+1. In the Action pane, select **Print sample label** and confirm the printout.
 
-## Test samples
+## Test samples and test failures
 
-Testing is a critical step in the sample management process. In this step, you analyze samples to determine if they meet quality standards.
+Testing samples is a critical step in verifying product quality and compliance. Samples collected through both inline and continuous sampling methods can be tested to ensure they meet defined specifications. Within Sample Management, test results are configured to influence production control by updating the status of associated license plates or batch numbers based on the outcome. This integration helps maintain traceability and enforces quality standards throughout the manufacturing process.
 
-<!-- KFM: This should probably be rather longer. Include more details from [Set up continuous sampling (preview)](quality-sample-management-continuous.md), and maybe include them more here than there.  -->
+### Testing inline samples
 
-To conduct testing:
+When an inline sample is created from the production order list page, it is automatically linked to a quality order, ensuring that every inline sample has a defined testing process from the start. Learn more about inline samples in: [Initiate an inline sample (preview)](quality-sample-management-inline.md).
 
-1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample Management Workbench**.
-1. Find the sample by using its unique **Sample ID**.
-1. Verify the sample's readiness for testing.
-1. Conduct tests as per the predefined plan, for example: <!-- KFM: Tell how to lookup the required tests. -->
-   - Physical inspections
-   - Chemical analyses
-   - Microbiological testing
-1. Record test results and flag deviations. <!-- KFM: Tell how to do this. -->
-1. Save the updates. <!-- KFM: Tell how to do this. -->
+Workers can identify inline samples ready for testing by using the sample management workbench and applying filters such as **Sample inspection method** = *Inline process* combined with the Life cycle state. For example, you might create a state named *Quality order generated* to indicate that the sample has an untested quality order. Once this state is part of the life cycle state model and the Quality order created property is enabled, any inline sample will automatically move to *Quality order generated* when its quality order is created. Learn more about configuring life cycle states in: [Configure lifecycle states](quality-sample-management-admin.md#configure-lifecycle-states).
+
+### Testing continuous samples
+
+Workers can identify continuous samples ready for testing by using the sample management workbench and applying filters such as **Sample inspection method** = *Continuous process* combined with the Life cycle state. For example, you might create a state named *Quality order generated* to indicate that the sample has an untested quality order. Once this state is part of the life cycle state model and the Quality order created property is enabled, any inline sample will automatically move to *Quality order generated* when its quality order is created. Learn more about configuring life cycle states in: [Configure lifecycle states](quality-sample-management-admin.md#configure-lifecycle-states).
+
+When using continuous sampling, samples are generated automatically according to a predefined sampling plan set up on the item sampling configuration. Learn more about item sampling in: [Configure item sampling policies](quality-sample-management-admin.md#configure-item-sampling-policies). For example, if the item sampling plan specifies that a sample should be created for every second license plate produced, then as four license plates are manufactured, two samples will be created. However, only one quality order is generated to cover all four license plates. This means that the validation of that single quality order determines the inventory status for all four plates. If the quality order fails, the system updates the status of all four plates to blocked, ensuring that none of them can be used or shipped. If a worker wants to perform more detailed testing, they can manually create a quality order from the sample management workbench for a sample that does not yet have one associated. When this manual test passes, the system automatically updates the inventory status of the related plates, such as the first two, to indicate availability. This method reduces the number of quality orders required for routine checks while still allowing targeted testing when necessary, and it ensures that inventory status always reflects the outcome of quality validations across the linked items.
+
+To conduct testing of continuous samples:
+
+1. Create batch order for continuous sampling and report as finished four license plates to generate two samples. See description of scenario in [Initiate an inline sample (preview)](quality-sample-management-inline.md)
+1. Select the record for the production order in the the production order list page
+1. From the Action pane, select **Sample Management Workbench** and verify that two samples for the production order are listed.
+1. From the Action pane, select **Sample relationships**
+1. In the sample relationships page, verify that:
+    - A record exist for each of the four license plates you reported
+    - A sample has been created for every second license plate.
+    - A quality order has been created for every second sample. Note the sample ID for the sample with the assoicated quality order.
+1. Navigate back to the sample management workbench and select the record for the sample with the associated quality order.
+1. From the action pane, select **Quality order**.
+1. From the action pane, select **Quick result entry**.
+1. In the **Result value** field, set a value that is within the accepted range for the test to pass.
+1. Close the **Quick result entry** dialog, and select **Validate** from the Action pane.
+1. In the **Sample management** section of the dialog, verify that:
+    - The field **Update inventory status to** is set to *Available*. This status is defaulted from the definition of the status to use for passed tests on the test group. Learn more in: [Test groups](quality-sample-management-admin.md#test-groups).
+    - All the for license plates related to the test are listed. 
+1. Select **OK** to confirm the dialog.
+1. 
+
+
+
+
 
 ## Handle sample failures
 
 <!-- KFM: We should describe what to do when a sample fails, including the fallback to previous sample and releasing products in between. Maybe in a new section. -->
+
+## Sample archiving
+
 
 ## Sample disposal
 

@@ -83,7 +83,7 @@ Follow these steps to manage your lifecycle states:
    - **Sample lifecycle state description** – Add a brief description of the lifecycle state.
    - **Quality order created** – Select this check box for the lifecycle state that a sample should be updated to when you create a quality order for it.
    - **Quality order validated** – Select this check box for the lifecycle state that a sample should be updated to when you validate a quality order against it.
-   - **Sample scrapped** – Select this check box for the lifecycle state which, when you assign it manually, triggers audit trail logging for *Scrapped by* and *Scrapped date/time*. <!-- KFM: confirm these two logging values are literally correct (if they matter) -->
+   - **Sample scrapped** – Select this check box for the lifecycle state which, when you assign it manually, triggers audit trail logging for *Scrapped by* and *Scrapped date/time*. Only samples with this property checked can be deleted from the **Sample management workbench**. <!-- KFM: confirm these two logging values are literally correct (if they matter) -->
 
 1. On the Action Pane, select **Save**.
 
