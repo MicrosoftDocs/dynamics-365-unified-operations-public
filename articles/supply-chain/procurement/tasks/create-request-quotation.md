@@ -66,14 +66,14 @@ After you've specified the basic information about your RFQ, you specify the goo
 
 ## Send all RFQ's to vendors
 
-1. On the Action Pane, select  **Send All**. To configure Go to **Procurement and sourcing Parameter > Request For Quotation Send All Line**
+1. On the Action Pane, select Send All Lines. In the Sending request for quotation page, check that the vendors in the list are the ones that you want to receive the RFQ. 
+User can configure the send all lines default status filter, to display the RFQ case and related vendor account details. To configure RFQ send all lines default status, go to **Procurement and sourcing Parameter > Request for Quotation > Request For Quotation Send All Line**
++ Select the values in Send all lines default status dropdown based on the following 
++ All - Display All Vendors irrespective of Lowest or Highest Status of Vendor
++ Created - Display Vendors with Either Lowest or Highest Status as Created
++ Sent - Display Vendors with Either Lowest or Highest Status as Sent
 
-    + Default Status will be applied based on below configuration
-    + All - Display All Vendors irrespective of Lowest or Highest Status of Vendor
-    + Created - Display Vendors with Either Lowest or Highest Status as Created
-    + Sent - Display Vendors with Either Lowest or Highest Status as Sent
-
-    <img width="1703" height="599" alt="image" src="https://github.com/user-attachments/assets/aa931f3c-df6e-4c77-b4d9-c8019759b823" />
+     <img src=../media/RFQ.png>
 
 2. Select **Cancel**.
 3. Select **OK**.
