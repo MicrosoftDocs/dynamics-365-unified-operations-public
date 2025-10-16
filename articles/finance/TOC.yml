@@ -2098,6 +2098,8 @@
                     href: localizations/iberoamerica/ltm-create-customer-and-vendor-bolivia.md
                   - name: Set up a legal entity and tax information for Bolivia
                     href: localizations/iberoamerica/ltm-set-up-legal-entity-and-tax-bolivia.md
+                  - name: Control code feature for Bolivia
+                    href: localizations/iberoamerica/ltm-bolivia-control-code.md
                 - name: Brazil
                   items:
                     - name: Brazil overview
