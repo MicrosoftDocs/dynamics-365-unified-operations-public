@@ -52,7 +52,6 @@ In sample management, samples can be created either manually or automatically, d
         1. From the Action pane, select **Create sample**.
         1. Verify that a new record for the sample has been created in the sample management workbench. 
         1. From the Action pane, select **Create manual quality order** if you with to associate a quality order to the newly created sample.
-        
 - **Automatic creation**
     Samples are generated automatically when using the **Continuous** sampling method. Learn more in: [Set up continuous sampling (preview)](quality-sample-management-continuous.md)
 
@@ -89,37 +88,36 @@ Workers can identify continuous samples ready for testing by using the sample ma
 
 When using continuous sampling, samples are generated automatically according to a predefined sampling plan set up on the item sampling configuration. Learn more about item sampling in: [Configure item sampling policies](quality-sample-management-admin.md#configure-item-sampling-policies). For example, if the item sampling plan specifies that a sample should be created for every second license plate produced, then as four license plates are manufactured, two samples will be created. However, only one quality order is generated to cover all four license plates. This means that the validation of that single quality order determines the inventory status for all four plates. If the quality order fails, the system updates the status of all four plates to blocked, ensuring that none of them can be used or shipped. If a worker wants to perform more detailed testing, they can manually create a quality order from the sample management workbench for a sample that does not yet have one associated. When this manual test passes, the system automatically updates the inventory status of the related plates, such as the first two, to indicate availability. This method reduces the number of quality orders required for routine checks while still allowing targeted testing when necessary, and it ensures that inventory status always reflects the outcome of quality validations across the linked items.
 
-To conduct testing of continuous samples:
+To conduct testing of continuous samples (example):
 
-1. Create batch order for continuous sampling and report as finished four license plates to generate two samples. See description of scenario in [Initiate an inline sample (preview)](quality-sample-management-inline.md)
+1. Create a batch order for a product set for continuous sampling and report as finished four license plates to generate two samples. See description of the scenario in [Initiate an inline sample (preview)](quality-sample-management-inline.md)
 1. Select the record for the production order in the the production order list page
 1. From the Action pane, select **Sample Management Workbench** and verify that two samples for the production order are listed.
 1. From the Action pane, select **Sample relationships**
 1. In the sample relationships page, verify that:
     - A record exist for each of the four license plates you reported
     - A sample has been created for every second license plate.
-    - A quality order has been created for every second sample. Note the sample ID for the sample with the assoicated quality order.
+    - A quality order has been created for every second sample. Note the sample ID for the sample with the associated quality order.
 1. Navigate back to the sample management workbench and select the record for the sample with the associated quality order.
 1. From the action pane, select **Quality order**.
 1. From the action pane, select **Quick result entry**.
 1. In the **Result value** field, set a value that is within the accepted range for the test to pass.
 1. Close the **Quick result entry** dialog, and select **Validate** from the Action pane.
 1. In the **Sample management** section of the dialog, verify that:
-    - The field **Update inventory status to** is set to *Available*. This status is defaulted from the definition of the status to use for passed tests on the test group. Learn more in: [Test groups](quality-sample-management-admin.md#test-groups).
-    - All the for license plates related to the test are listed. 
-1. Select **OK** to confirm the dialog.
-1. 
-
-
-
-
-
-## Handle sample failures
-
-<!-- KFM: We should describe what to do when a sample fails, including the fallback to previous sample and releasing products in between. Maybe in a new section. -->
+    - The field **Update inventory status to** is set to *Available*. This status is defaulted from the definition of the status to use for passed tests on the test group. Learn more in: [Test groups](quality-sample-management-admin.md#test-groups). In case the quality order result falls outside the permitted range and the order is marked as failed, the system will propose to update the four license plate to a status of  *Failed*. A failed status typically prevents the license plate from being used in any warehouse or inventory transactions.
+    - All the for license plates related to the test are listed in the grid section.
+1. Select **OK** to confirm the dialog and verify that the quality order is in status *Passed*.
+1. Navigate back to the sample management workbench and validate that:
+    - The license plates for each sample has an inventory status that is *Available*. If you do not see the inventory status in the grid, you can enable it from the **Dimensions display** opened from the Action pane.
+    - The sample with the associated quality order has automatically changed state to a state that indicates that the quality order is validated. This updates requires that the sample is configured with a sample life cycle state  with the property **Quality order validated** set to *Yes*. Learn more about the sample life cycle state in: [Configure lifecycle states](quality-sample-management-admin).
 
 ## Sample archiving
 
+Once a sample has been collected, labeled, and successfully tested, it is typically archived for a defined period until it reaches its expiration date. The expiration date is determined when the sample is created and calculated based on the rules specified in the sample association. To indicate that a sample has been archived, the system uses the sample life cycle state, which reflects its transition from active testing to storage. For more details about how sample associations define expiration periods, see: [Set up sample associations](quality-sample-management-admin.md#set-up-sample-associations). 
+
+Use the following procedure to change the life cycle state from the sample management workbench:
+
+1. Make sure you have defined a 
 
 ## Sample disposal
 
