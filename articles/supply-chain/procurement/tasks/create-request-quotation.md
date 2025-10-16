@@ -75,9 +75,8 @@ User can configure the send all lines default status filter, to display the RFQ 
 
      <img src=../media/RFQ.png>
 
-2. Select **Cancel**.
-3. Select **OK**.
-4. Close the page.
+Update the Page 
+2. click **Save**.
 5. Close the page.
 
 ## View the RFQ journal
