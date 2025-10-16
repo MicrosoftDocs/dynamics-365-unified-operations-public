@@ -100,3 +100,17 @@ After service endpoints are created, Dataverse doesn't allow them to be deleted 
 
 For more information about how to subscribe to finance and operations apps business events in Dataverse, see [Subscribe to events in Dataverse](how-to/how-to-dataverse-events.md).
 
+### Application Secret Expiry Notification and Managment
+
+The Business Event endpoint confiquration requires developers to create an application ID secret in Azure Microsoft Entra ID. Often seen the developers once after confiquration , don't go and update the secret in endpoint which results in failure in sending the business events using the affected endpoint when the secret expires. This requires developers to go and update the endpoint using the new secret, this contributes to event loss. We have added a new column in the Business Event Endpoint confiquration form called SecretExpiryDate. Developers now can fill in the secret expiry date mentioned in Azure while confiquring the endpoint. 
+<img width="1347" height="575" alt="image" src="https://github.com/user-attachments/assets/bc8b078c-6401-4569-97b6-2032f1b63c86" />
+
+Using this new data available , FinOps will now proactively alert the developer handling the business events confiquration for any expiry secret as a notification banner.
+<img width="1829" height="808" alt="image" src="https://github.com/user-attachments/assets/ec9d796b-4240-4794-b01c-0c68f9effbad" />
+
+#### Banner classification
+
+
+1. Info : if secret expiry is happening within 30 days from today 
+2. Warning : if secret expiry is happening witin 15 days from today
+3. Error : if secret expiry is happening within 1 day or it has already expired
