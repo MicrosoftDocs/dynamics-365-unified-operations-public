@@ -484,7 +484,7 @@
             items:
             - name: Cash management overview
               href: cash-mgmt.md
-            - name: Shift and cash drawer management
+            - name: Shift and cash drawer management (preview)
               href: shift-drawer-management.md
           - name: Offline
             items:
