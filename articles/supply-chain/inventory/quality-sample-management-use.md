@@ -93,10 +93,6 @@ To conduct testing of an inline sample (example):
 1. Close the **Quick result entry** dialog, and select **Validate** from the Action pane.
 1. Select **OK** to confirm the dialog and verify that the quality order is in status *Passed*.
 
-#### Analyze inline sample results
-
-
-
 ### Testing continuous samples
 
 Workers can identify continuous samples ready for testing by using the sample management workbench and applying filters such as **Sample inspection method** = *Continuous process* combined with the Life cycle state. For example, you might create a state named *Quality order generated* to indicate that the sample has an untested quality order. Once this state is part of the life cycle state model and the Quality order created property is enabled, any inline sample will automatically move to *Quality order generated* when its quality order is created. Learn more about configuring life cycle states in: [Configure lifecycle states](quality-sample-management-admin.md#configure-lifecycle-states).
@@ -125,10 +121,6 @@ To conduct testing of continuous samples (example):
 1. Navigate back to the sample management workbench and validate that:
     - The license plates for each sample has an inventory status that is *Available*. If you do not see the inventory status in the grid, you can enable it from the **Dimensions display** opened from the Action pane.
     - The sample with the associated quality order has automatically changed state to a state that indicates that the quality order is validated. This updates requires that the sample is configured with a sample life cycle state  with the property **Quality order validated** set to *Yes*. Learn more about the sample life cycle state in: [Configure lifecycle states](quality-sample-management-admin).
-
-#### Analyze inline sample results
-
-TBD
 
 ### Sample procedures
 
