@@ -126,6 +126,10 @@ To conduct testing of continuous samples (example):
     - The license plates for each sample has an inventory status that is *Available*. If you do not see the inventory status in the grid, you can enable it from the **Dimensions display** opened from the Action pane.
     - The sample with the associated quality order has automatically changed state to a state that indicates that the quality order is validated. This updates requires that the sample is configured with a sample life cycle state  with the property **Quality order validated** set to *Yes*. Learn more about the sample life cycle state in: [Configure lifecycle states](quality-sample-management-admin).
 
+#### Analyze inline sample results
+
+TBD
+
 ### Sample procedures
 
 During processing of samples, workers can look up the associated sample procedures directly from the Sample Management workbench. They can open the sample record and access the procedure defined on the sample association or test group, which outlines the steps for activities such as sample collection and testing. Learn more about sample procedures in: [Define sample procedures](quality-sample-management-admin.md#define-sample-procedures).
