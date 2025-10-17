@@ -70,6 +70,9 @@ To check the tax calculation results, follow these steps.
    - You can view the targeted tax codes.     
    - During the transition period, **Prevent posting of ledger accounting entities for sales tax transactions** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
 
+> [!IMPORTANT] 
+> The **tax group** and **item tax group** are not populated when the line is saved in Brazil tax reform 2026. They will be populated once tax calculation is triggered — for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
+
 > [!TIP]
 > For using tax calculation in sales orders, refer to the video [Brazil tax reform: Calcaulation in sales orders](https://learn-video.azurefd.net/vod/player?id=c5c1b7bb-1ba0-4281-addc-2d1835ff3632)
 
