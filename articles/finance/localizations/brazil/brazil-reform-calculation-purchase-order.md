@@ -74,9 +74,6 @@ To check the tax calculation results, follow these steps.
 
 > [!TIP]
 > For using tax calculation in purchase orders, refer to the Brazil tax reform: Calculation in purchase orders video.
-
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=dd430006-9300-485a-8c9c-766e06d48a06] 
-
-[Brazil tax reform: Calculation in purchase orders](https://learn-video.azurefd.net/vod/player?id=dd430006-9300-485a-8c9c-766e06d48a06)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
