@@ -17,11 +17,11 @@ Unified pricing management in Dynamics 365 Supply Chain Management can calculate
 
 This feature exposes key calculation methods and provides sample code that you can use to implement your own custom pricing logic. If you don't have a Commerce Scale Unit (CSU) API license but still want to integrate pricing with third-party systems, you can use this capability to build custom services to expose pricing via APIs. You can leverage this extensibility to connect pricing seamlessly with external applications.
 
-Learn more about custom service development in [Custom service development](../../fin-ops-core/dev-itpro/data-entities/custom-services.md).
-
-This article demonstrates a practical method for integrating with the Unified pricing management pricing engine by using custom logic without requiring a Commerce Scale Unit. This approach enables flexible, attribute-driven pricing logic that you can embed into your applications.
-
 By carefully preparing transaction data, managing attributes consistently, and leveraging the pricing engine's capabilities, you can achieve accurate, dynamic pricing tailored to your business needs.
+
+This article demonstrates a practical method for integrating external systems with the Unified pricing management pricing engine by using custom logic without requiring a Commerce Scale Unit. This approach enables flexible, attribute-driven pricing logic that you can embed into your applications.
+
+Learn more about custom service development in [Custom service development](../../fin-ops-core/dev-itpro/data-entities/custom-services.md).
 
 ## Step 1: Gather input data
 
