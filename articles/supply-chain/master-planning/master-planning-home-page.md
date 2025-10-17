@@ -30,9 +30,13 @@ The three main planning processes are:
 
 - **Intercompany master planning** - The intercompany master plan calculates net requirements across legal entities. It connects demand and supply between companies not only for short term, but also for long-term, planned (not yet firmed) demand and supply. Learn more in [Intercompany planning](planning-optimization/Intercompany-planning.md).
 
-Companies can change the output of the plan. They can run regenerative, net change, or both. Regenerative plans update all requirements, whereas, net change plans only update the plan on items with new requirements that have come in since the last scheduling run.
+Companies can change the output of the plan. 
 
 Master scheduling plans typically involve the short term, which can be anywhere from one week to six months. The Master planning module determines the supply (materials) and capacity (resources) needs that will meet current demand (the net requirements). In most companies, this is extended to include the longest cumulative lead time among the products to be received.
+
+> [!NOTE]
+> With Plannning Optimization all plans are regenerative, whereas the deprecated Master Planning had a concept of net change and regenerative planning run. Regenerative plans would update all requirements, whereas, net change plans only update the plan on items with new requirements that have come in since the last scheduling run.
+
 
 ## Learning map
 
