@@ -263,7 +263,9 @@ To enable advanced tax calculation, follow these steps.
 1. The **Business process** field is inactive.
 
 > [!TIP]
-> For creating , configuring and enabling the tax calculation feature, refer to the video [Brazil tax reform: Configuring](https://learn-video.azurefd.net/vod/player?id=cc8feb98-d26a-4c07-bc14-015648a1a360)
+> For creating , configuring and enabling the tax calculation feature, refer to the Brazil tax reform: Configuring video.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cc8feb98-d26a-4c07-bc14-015648a1a360)
 
 ## Hints
 
