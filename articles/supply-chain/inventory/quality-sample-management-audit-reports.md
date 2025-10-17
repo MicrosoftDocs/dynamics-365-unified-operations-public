@@ -27,9 +27,18 @@ Reports provide visibility into how the results of a specific test evolve over t
 
 To analyze sample test results for inline samples, follow these steps:
 
-### Analyze continuous sample results
-
-To analyze sample test results for continuous samples, follow these steps:
+1. Create an inline sample as described in: [Initiate the sample](quality-sample-management-inline.md#initiate-the-sample).
+1. Repeat the steps to create a second inline sample for the production or batch order.
+1. From the Action pane in the sample management workbench, select **Quality orders**. You should see two quality orders, one for each inline sample created.
+1. For each quality order enter a test result that is within the allowed threshold as described in: [Testing inline samples](quality-sample-management-use.md#testing-inline-samples).
+1. Validate each quality order, so the are in *Passed* state.
+1. From the Action pane in the production order list page, select **Analyze inline sample results**
+1. In the dialog, set the following fields
+    - **Test** - Select the test you want to analyze.
+    - **Item** - Select the item that is being tested.
+1. Select **OK** to see the chart.
+  
+Follow the same procedure for continuous samples in the sample management workbench.
 
 ## Sample procedures 
 
@@ -41,3 +50,7 @@ To open a sample procedure follow these steps:
 1. Make sure you have defined sample procedures and these are associated a sample association used for the production or batch order. Learn more about how to define sample procedures and sample associations in: [Enable and configure sample management (preview)](quality-sample-management-admin.md).
 1. From the Action pane in the production order list page, select **Sample management workbench**.
 1. From the Action pane, select **Sample procedures**.
+
+## Audit trail
+
+From the Sample management workbench, workers can open the audit trail for any sample. This view displays a detailed log of all actions performed on the sample, including the date and time of each change. For updates, the audit trail shows both the previous value and the new value, allowing users to track the full history of modifications. Each record in the audit trail corresponds to an insert or update event, providing a complete picture of the sample’s lifecycle changes.

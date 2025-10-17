@@ -150,4 +150,4 @@ To dispose of a sample follow these steps:
 
 The *Disposed* state is typically the final stage in a sample’s life cycle. Samples can only be deleted from the Sample management workbench after they have reached a state that is configured with the property **Sample scrapped**. Learn more about how to define the life cycle state in: [Configure lifecycle states](quality-sample-management-admin.md#configure-lifecycle-states).
 
-For each activity performed in the sample management workers can get instructions and information from sample procedures. Learn more about sample procedures in: 
+For each activity performed in the sample management workers can get instructions and information from sample procedures. Learn more about sample procedures in: [Sample procedures](quality-sample-management-audit-reports.md#sample-procedures).
