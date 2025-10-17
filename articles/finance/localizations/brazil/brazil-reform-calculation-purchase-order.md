@@ -70,7 +70,7 @@ To check the tax calculation results, follow these steps.
    - During the transition period, the system marks **Prevent posting of ledger accounting entities for sales tax transactions** for **CBS** and **IBS** to comply with the current policy from the Brazilian government.
 
 > [!IMPORTANT] 
-> The tax group and item tax group are not populated when the line is saved in Brazil tax reform 2026. They will be populated once tax calculation is triggered — for example, by clicking the Sales tax or Totals button, or during document confirmation or posting.
+> The **tax group** and **item tax group** are not populated when the line is saved in Brazil tax reform 2026. They will be populated once tax calculation is triggered — for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
 
 > [!TIP]
 > For using tax calculation in purchase orders, refer to the video [Brazil tax reform: Calculation in purchase orders](https://github.com/MicrosoftDocs/Dynamics-365-Operations/pull/20753)
