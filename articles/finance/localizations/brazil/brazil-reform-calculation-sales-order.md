@@ -74,6 +74,8 @@ To check the tax calculation results, follow these steps.
 > The **tax group** and **item tax group** are not populated when the line is saved in Brazil tax reform 2026. They will be populated once tax calculation is triggered — for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
 
 > [!TIP]
-> For using tax calculation in sales orders, refer to the video [Brazil tax reform: Calcaulation in sales orders](https://learn-video.azurefd.net/vod/player?id=c5c1b7bb-1ba0-4281-addc-2d1835ff3632)
+> For using tax calculation in sales orders, refer to the Brazil tax reform: Calcaulation in sales orders video.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c5c1b7bb-1ba0-4281-addc-2d1835ff3632]
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
