@@ -69,4 +69,8 @@ To check the tax calculation results, follow these steps.
    - View the targeted tax codes.
    - During the transition period, the system marks **Prevent posting of ledger accounting entities for sales tax transactions** for **CBS** and **IBS** to comply with the current policy from the Brazilian government.
 
+> [!TIP]
+> For using tax calculation in purchase orders, refer to the video [Brazil tax reform: Calculation in purchase orders](https://github.com/MicrosoftDocs/Dynamics-365-Operations/pull/20753)
+>
+> 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
