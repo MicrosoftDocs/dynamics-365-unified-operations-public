@@ -59,9 +59,9 @@ In sample management, samples can be created either manually or automatically, d
 
 Accurate sample collection and labeling are foundational to reliable testing and traceability. Proper collection ensures that the sample truly represents the intended material, while clear and consistent labeling safeguards identification throughout analysis and storage, preventing costly mix-ups. Learn more in: [Enable and configure sample management (preview)](quality-sample-management-admin.md)
 
-### Collect labels
+### Collect samples
 
-Collecting samples is the process of extracting a small fraction of the produced material to represent the entire batch or license plate. This step is essential for quality control and traceability, ensuring that subsequent testing reflects the actual production output. Workers typically perform this task using the sample management workbench, which provides visibility and filtering options for samples generated through either inline or continuous sampling methods.. 
+Collecting samples is the process of extracting a small fraction of the produced material to represent the entire batch or license plate. This step is essential for quality control and traceability, ensuring that subsequent testing reflects the actual production output. Workers typically perform this task using the sample management workbench, which provides visibility and filtering options for samples generated through either inline or continuous sampling methods.
 
 ### Print labels
 
@@ -122,16 +122,6 @@ To conduct testing of continuous samples (example):
     - The license plates for each sample has an inventory status that is *Available*. If you do not see the inventory status in the grid, you can enable it from the **Dimensions display** opened from the Action pane.
     - The sample with the associated quality order has automatically changed state to a state that indicates that the quality order is validated. This updates requires that the sample is configured with a sample life cycle state  with the property **Quality order validated** set to *Yes*. Learn more about the sample life cycle state in: [Configure lifecycle states](quality-sample-management-admin).
 
-### Sample procedures
-
-During processing of samples, workers can look up the associated sample procedures directly from the Sample Management workbench. They can open the sample record and access the procedure defined on the sample association or test group, which outlines the steps for activities such as sample collection and testing. Learn more about sample procedures in: [Define sample procedures](quality-sample-management-admin.md#define-sample-procedures).
-
-To open a sample procedure from the sample management work bench follow these steps:
-
-1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample Management Workbench**.
-1. Select a sample record.
-1. In the Action pane, select **Sample procedures**.
-
 ## Sample archiving
 
 Once a sample has been collected, labeled, and successfully tested, it is typically archived for a defined period until it reaches its expiration date. The expiration date is determined when the sample is created and calculated based on the rules specified in the sample association. The system uses the sample life cycle state to indicate when a sample has been archived, marking its transition from active testing to storage. For details on how expiration periods are determined through sample associations, see: [Set up sample associations](quality-sample-management-admin.md#set-up-sample-associations). 
@@ -150,10 +140,14 @@ Disposal involves safely and compliantly disposing of samples that reached the e
 
 The system uses the sample life cycle state to indicate when a sample has been disposed, marking its transition from active testing to disposal. To identify samples that have expired in the sample management workbench, you can filter for those whose expiration date has passed.
 
-To dispose of a sample:
+To dispose of a sample follow these steps:
 
 1. Make sure you have defined a life cycle state that represents the disposed state and that this state is selected on the sample type configured for the product. Learn more in [Configure lifecycle states](quality-sample-management-admin) and [Define sample types](quality-sample-management-admin.md#define-sample-types).
 1. Create a batch order with continuous samples as described in: [Testing continuous samples](#testing-continuous-samples).
 1. In the sample management workbench, select a sample for the production or batch order.
 1. From the Action pane, select **Change expiration date** and select a date in the past in the dialog, to make this sample past it's expiration date.
 1. On the Action pane, select **Change life cycle state** and select the *Disposed* state.
+
+The *Disposed* state is typically the final stage in a sample’s life cycle. Samples can only be deleted from the Sample management workbench after they have reached a state that is configured with the property **Sample scrapped**. Learn more about how to define the life cycle state in: [Configure lifecycle states](quality-sample-management-admin.md#configure-lifecycle-states).
+
+For each activity performed in the sample management workers can get instructions and information from sample procedures. Learn more about sample procedures in: 
