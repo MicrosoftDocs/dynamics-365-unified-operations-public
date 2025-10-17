@@ -348,7 +348,7 @@ The **AxTableName** attribute isn't specified, because the framework can already
     }
     ```
 
-    Before you add your custom resource to the list, you must verify that the originalCDXSeedDataResource resource that's being processed is **RetailCDXSeedDataAX7**. Otherwise, you might cause unintended results.
+    Before you add your custom resource to the list, you must verify that the **originalCDXSeedDataResource** resource that's being processed is **RetailCDXSeedDataAX7**. Otherwise, you might cause unintended results.
 
 9. To initialize or reinitialize the CDX module with the customized configuration, follow these steps:
 
@@ -356,13 +356,13 @@ The **AxTableName** attribute isn't specified, because the framework can already
    2. In the dialog box that appears, select **Delete existing configuration**.
    3. Select **OK** to start the initialization.
 
-      When the initialization finishes, the CDX scheduler jobs, subjob definitions, and distribution schedules are updated by using the original **RetailCDXSeedDataAX7** resource and the customized **RetailCDXSeedDataAX7_ContosoRetailExtension** resource.
+      When the initialization completes, the CDX scheduler jobs, subjob definitions, and distribution schedules are updated by using the original **RetailCDXSeedDataAX7** resource and the customized **RetailCDXSeedDataAX7_ContosoRetailExtension** resource.
 
 #### Validate the customization
 
 1. Verify that your customization works correctly:
 
-    1. After the initialization finishes, go to **Retail and Commerce** \> **Headquarters setup** \> **Commerce scheduler**, and then select the **Scheduler subjobs** link.
+    1. After the initialization completes, go to **Retail and Commerce** \> **Headquarters setup** \> **Commerce scheduler**, and then select the **Scheduler subjobs** link.
     2. On the subjobs table, search for the **RetailTransactionTable** subjob ID.
     3. In the details area, under the **Channel field mapping** section, verify that the new custom (extension) columns are listed in the mapping.
 
