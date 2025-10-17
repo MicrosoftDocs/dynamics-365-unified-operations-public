@@ -1,10 +1,9 @@
 ---
 title: Channel database extensions
-description: This article explains how to extend the channel database for different scenarios in Microsoft Dynamics 365 Finance and Dynamics 365 Commerce.
-author: josaw1
-ms.date: 10/15/2025
+description: Learn how to extend the channel database for different scenarios in Microsoft Dynamics 365 Finance and Dynamics 365 Commerce.
+author: aneesa
+ms.date: 10/16/2025
 ms.topic: how-to
-audience: Developer
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: aneesa
@@ -30,7 +29,7 @@ Microsoft made some improvements to how extensions are handled during an upgrade
 - Microsoft Dynamics 365 Retail 7.3, which includes application update 5.
 - Microsoft Dynamics 365 Finance 7.3, which includes application update 5.
 
-For more information, see [Pre-extended columns in the channel database](extended-columns.md).
+Learn more in [Pre-extended columns in the channel database](extended-columns.md).
 
 ## EXT schema
 
@@ -47,9 +46,10 @@ In Finance and Commerce, there's an external schema called the *EXT schema* that
 - Editing the values of any fields of tables in AX or CRT schemas from an extension is unsupported by Microsoft and may eventually break the schemas when stricter enforcement improvements are introduced. Microsoft doesn't support any issues that arise from editing schema values via extensions.
 
 ### Generated extension SQL scripts
-The "Generated extension SQL script" feature (Commerce version 10.0.46 or later) simplifies and accelerates the process of adding extensions to the channel database. 
 
-The "Generated extension SQL script" section on the Scheduler Subjobs page (Retail and Commerce > Headquarters setup > Commerce scheduler > Scheduler subjobs) displays SQL script that can be used as a starting point to add or modify tables in the Channel Database for the selected subjob.
+The Generated extension SQL script feature (available in Commerce versions 10.0.46 and later) simplifies and accelerates the process of adding extensions to the channel database. 
+
+The **Generated extension SQL script** section on the **Scheduler Subjobs** page (**Retail and Commerce** \> **Headquarters setup** \> **Commerce scheduler** \> **Scheduler subjobs**) displays SQL script that you can use as a starting point to add or modify tables in the channel database for the selected subjob.
 
 The generated script follows current guidelines and best practices and automatically includes indexes that optimize performance. It also helps avoid common customization errors such as incorrect column or table names and missing required fields that impact data synchronization.
 
@@ -97,7 +97,7 @@ END;
 - Don't create any new extension tables, views, or stored procedures in CRT, AX, or DBO schemas. All extension artifacts must be done in the EXT schema.
 - Don't use any of the CRT, AX, or DBO schema data types in the EXT schema. You must create custom data types in the EXT schema and use those data types instead.
 - Don't modify any views, procedures, functions, or database artifacts.
-- If possible, avoid accessing or calling database artifacts from your extensions. Instead, use the CRT data service to get data. The benefit of using the data service is that it's supported until the end of the Service Level Agreement (SLA), even if breaking changes are later made to the database schema. However, there are instances in which the CRT data service doesn't expose the data that you need. In these cases, it's still possible to access this data by creating a view which joins on a channel DB artifact. Creating views can be a powerful tool to structure the data in a format you need at a database level, as opposed to doing it in memory through CRT extensions.
+- If possible, avoid accessing or calling database artifacts from your extensions. Instead, use the CRT data service to get data. The benefit of using the data service is that it's supported until the end of the Service Level Agreement (SLA), even if breaking changes are later made to the database schema. However, there are instances in which the CRT data service doesn't expose the data that you need. In these cases, it's still possible to access this data by creating a view that joins on a channel DB artifact. Creating views can be a powerful tool to structure the data in a format you need at a database level, as opposed to doing it in memory through CRT extensions.
 - Don't access any dbo.objects from extension scripts because DBO schema objects aren't available in Commerce Scale Unit deployments.
 
 ```sql
@@ -121,7 +121,7 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 - If you need to pull the data from the extension table to headquarters, then the **REPLICATIONCOUNTERFROMORIGIN** identity column (`[REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,`) is required in the extension table.
 - The **REPLICATIONCOUNTERFROMORIGIN** field can't be the only unique field.
 - For better performance, create an index on the **REPLICATIONCOUNTERFROMORIGIN** field.
-- All extension table columns must have the NOT NULL constraint enforced. During upgrade, if a column value is blank it's updated with NULL values which may cause a runtime exception in CRT if the null value isn't handled properly.
+- All extension table columns must have the NOT NULL constraint enforced. During upgrade, blank column values are updated with NULL values that may cause a runtime exception in CRT if the null value isn't handled properly.
 - All the extension tables should have grant permission on **UserRole** and **DeployExtensibilityRole**.
 
     ```sql
@@ -266,7 +266,7 @@ If one script depends on another script executing successfully, you must name th
 
 If you release a deployable package or installer extension that contains channel database extension scripts, don't alter those scripts. Extension scripts are run only once per channel database instance.
 
-If you alter a published script that has already been run against a channel database, the modifications to the already executed script aren't applied to the database.
+If you alter a published script that was already run against a channel database, the modifications to the already executed script aren't applied to the database.
 
 Instead, provide the modifications in a new script file. Consider using a naming convention that determines the correct script execution order to ensure that the script runs after its dependencies.
 
@@ -283,8 +283,7 @@ If the extension script fails due to any error, it may be rerun. Rerunning the s
 
 ### Don't assume that the channel database data is perennial
 
-The channel database is a transactional database that provides storage support for operations performed by Commerce Scale Unit. All data that is stored in the channel database that must be kept for long periods of time must be uploaded to the headquarters
-through the [Commerce Data Exchange](./cdx-extensibility.md). Data uploaded to the headquarters can be accessed by the [Commerce Data Exchange Real-time Service](./extend-commerce-data-exchange.md).
+The channel database is a transactional database that provides storage support for operations performed by Commerce Scale Unit. All data stored in the channel database that must be kept for long periods of time must be uploaded to headquarters through the [Commerce Data Exchange](./cdx-extensibility.md). Data uploaded to headquarters can be accessed by the [Commerce Data Exchange Real-time Service](./extend-commerce-data-exchange.md).
 
 ### Do write backward compatible channel database extensions
 
