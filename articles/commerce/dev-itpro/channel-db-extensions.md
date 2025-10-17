@@ -4,7 +4,7 @@ description: Learn how to extend the channel database for different scenarios in
 author: aneesa
 ms.date: 10/16/2025
 ms.topic: how-to
-ms.reviewer: v-chrgriffin
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2017-09-15
