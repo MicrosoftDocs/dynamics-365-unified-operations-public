@@ -1,5 +1,5 @@
 ---
-title: Channel database extensions
+title: Channel database extensions (preview)
 description: Learn how to extend the channel database for different scenarios in Microsoft Dynamics 365 Finance and Dynamics 365 Commerce.
 author: aneesa
 ms.date: 10/16/2025
@@ -12,9 +12,10 @@ ms.custom:
   - bap-template
 ---
 
-# Channel database extensions
+# Channel database extensions (preview)
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 This article explains how to extend the channel database for different scenarios in Microsoft Dynamics 365 Finance and Dynamics 365 Commerce. The guidance in this article only applies to Dynamics 365 Finance and Dynamics 365 Commerce.
 
