@@ -128,7 +128,9 @@ To import e-invoicing configuration files, follow these steps.
 > 1. NF-e submit export format
 
 > [!TIP]
-> For importing the configuration files, refer to the video [Brazil tax reform : Import configuration](https://learn-video.azurefd.net/vod/player?id=379f59fe-54cf-40f4-af7e-3fe7c09cc082)
+> For importing the configuration files, refer to the Brazil tax reform video: Import configuration.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=379f59fe-54cf-40f4-af7e-3fe7c09cc082] 
 
 ## Create tax calculation feature 
 
