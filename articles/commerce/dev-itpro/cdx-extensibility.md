@@ -222,11 +222,11 @@ To move an existing subjob to another job, you can change the **ScheduledByJob**
 
 In Microsoft Dynamics 365 Retail App update 5, a new sample is added in **RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables** that has all the sample SQL scripts and project files for different CDX extension scenarios. Use this sample as a reference for different CDX extension scenarios.
 
-In the next sections, we discuss the steps and best practices for customizing transactional tables by using extension tables. Another section shows how to customize CDX to upload the customized (extension) tables on the channel side back to Commerce. We have also included a section that describes how to test the customization.
+In the next sections, the steps and best practices for customizing transactional tables by using extension tables are explained. Another section shows how to customize CDX to upload the customized (extension) tables on the channel side back to Commerce. There's also a section that describes how to test the customization.
 
 ### Setup steps
 
-We recommend that you implement these changes on an untouched Retail software development kit (SDK). Alternatively, you can put the SDK under source control, such as Microsoft Azure DevOps, so that you can easily revert your changes at any step. To begin, you import the \*.axpp package that's located in the SDK. You then run the SQL update script on your channel database.
+Microsoft recommends that you implement setup changes on an untouched Retail software development kit (SDK). Alternatively, you can put the SDK under source control, such as Microsoft Azure DevOps, so that you can easily revert your changes at any step. To begin, you import the \*.axpp package that's located in the SDK. You then run the SQL update script on your channel database.
 
 1. Import the package on the Commerce side that contains the customization code:
 
@@ -274,7 +274,7 @@ The table extension on the Commerce side is already created in the sample. To cr
 
 From the Retail SDK folder, open and run the SQL Server **ContosoRetailExtensionTablesUpdate.sql** script. Several items are created and configured:
 
-+ The **[ext].ContosoRetailTransactionTable** table that has the foreign key and custom (extension) fields is created. In addition to the extension columns that we added in the tables, the extension table on the channel side must have the same primary key columns as the original table on the channel side. Therefore, [ext].RetailTransactionTable_ContosoRetailExtension has the four primary key columns that are used in [ax].RetailTransactionTable. As a best practice, when you add the primary key columns to the extension table on the channel side, ensure that the column names match the names of the primary key column on the original table.
++ The **[ext].ContosoRetailTransactionTable** table that has the foreign key and custom (extension) fields is created. In addition to the extension columns added to the tables, the extension table on the channel side must have the same primary key columns as the original table on the channel side. Therefore, [ext].RetailTransactionTable_ContosoRetailExtension has the four primary key columns that are used in [ax].RetailTransactionTable. As a best practice, when you add the primary key columns to the extension table on the channel side, ensure that the column names match the names of the primary key column on the original table.
 
 + CDX is configured to upload and pull the custom columns from the channel extension table back to Commerce. The **RetailCDXSeedDataAX7** resource contains the information for the table mapping from Commerce to the channel database. CDX uses this information to create the required data transfer scheduler jobs and subjobs. To include your new extension tables or columns in the data transfer, you must provide a resource file that specifies the customization for the CDX data transfer. As a best practice, use the following naming convention to prevent conflicts: **RetailCDXSeedDataAX7_ContosoRetailExtension**. (Here, **ContosoRetail** is your unique extension.)
 
