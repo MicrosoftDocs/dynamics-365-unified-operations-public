@@ -46,7 +46,7 @@ The buttons on the Action Pane are organized on tabs. The following table briefl
 | Asset measures | Create or view asset measures on the asset. |
 | Maintenance schedule | Open the **Open maintenance schedule** list page, where you can view maintenance plans, maintenance requests, and maintenance rounds that are associated with the asset, and that have a status of **Created**. |
 | Update asset state | Update the asset lifecycle state. You can select multiple assets on the **All assets** list page and then update the asset lifecycle state for all of them at the same time. |
-| Lifecycle state log | Open a log that shows the lifecycle states of the selected asset. |
+| Lifecycle state log | Open a log that shows the lifecycle states of the selected asset. The log includes any comments that were added by users during manual lifecycle changes.|
 | Asset documents | View a list of the documents that are attached to an asset. These documents are set up at **Asset management** \> **Setup** \> **Asset documents**. |
 | Attributes | Create or view asset attributes. |
 | Image | Select an image for the asset. |
