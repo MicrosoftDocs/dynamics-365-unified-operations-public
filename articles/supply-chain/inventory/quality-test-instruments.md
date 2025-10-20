@@ -4,7 +4,7 @@ description: Learn how to create test instruments that can be used for tests on 
 author: johanhoffmann
 ms.author: johanho
 ms.topic: article
-ms.date: 03/23/2021
+ms.date: 10/24/2025
 ms.reviewer: kamaybac
 ms.search.form: InventTestInstrument
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
@@ -42,14 +42,16 @@ Learn more in [Test instrument calibration](quality-instrument-calibration.md).
     - **Tag number required** – Select this checkbox if a test instrument tag number (in addition to an instrument type) must be specified for the test instrument on quantity orders. The test instrument tag identifies the specific physical instrument that is used in the test. Selection of this checkbox triggers other functionality that is related to tracking and calibration of test instruments. To view, create, and edit the available test instrument tags, select **Test instrument tags** on the Action Pane.
     - **Used for calibration** – Select this checkbox for test instrument types that are used to calibrate other instruments and equipment.
     - **Calibration label layout** – For test instrument types where the **Tag number required** checkbox is selected, select the layout that is used to print calibration labels.
-    - **Asset type** - Link a test instrument type to an asset type to manage its tags via asset management. Calibration can be scheduled with time-based maintenance plans or, optionally, usage-based plans by linking a counter. To enable usage-based calibration, select a counter and link maintenance plan lines to it. All tags must be linked to assets.
-    - **Test quantity counter type** - Select to increment the counter by the test quantity when a quality order is validated.
-    - **Fixed increment counter type** - Select to apply a fixed usage increment each time a quality order is validated.
-    - **Usage increment** - For the fixed increment counter type, this value increments the asset counter when a quality order is validated.
-    - **Calibration state** - When the linked asset changes to this state, the test instrument tag usage status is set to calibration.
-    - **Out of service state** - When the linked asset changes to this state, the tag usage status is set to out of service. It is also set when the asset becomes inactive.
-    - **Auto-create test instrument tag from asset** - If enabled, a test instrument tag is automatically created only when a new asset of the linked asset type is created; existing assets are not affected.
 
+    <!-- KFM: Do all of the following new settings apply only when using Asset Management for managing test instruments? Do all of these settings require that **Tag number required** is enabled? does the **Used for calibration** setting affect anything here? -->
+
+    - **Asset type** - Link a test instrument type to an asset type to manage its tags using Asset Management. Calibration can be scheduled with time-based maintenance plans or, optionally, usage-based plans by linking a counter. To enable usage-based calibration, select a counter and link maintenance plan lines to it. All tags must be linked to assets.
+    - **Test quantity counter type** - Select to increment the counter by the test quantity when a quality order is validated. <!-- KFM: Briefly describe what a counter is and how/where to set it up. Do we have a link for this ([Counters](../asset-management/setup-for-objects/counters.md))? What does this setting actually mean, and how is it different from the next one (it seems like we can only pick one of these, which we should also mention)? -->
+    - **Fixed increment counter type** - Select to apply a fixed usage increment each time a quality order is validated. <!-- KFM: Same notes as above -->
+    - **Usage increment** - If you chose a fixed increment counter type, then enter the value by which to increment the asset counter when a quality order is validated.
+    - **Calibration state** - When the linked asset changes to this state, the **Instrument usage status** for the test instrument tag is set to *Calibration*. <!-- KFM: I don't understand. The linked asset is a type, so how does it have a single state? Please clarify this. How/where are these states defined? Do we have a link (maybe [Asset lifecycle states](../asset-management/setup-for-objects/object-stages.md))? -->
+    - **Out of service state** - When the linked asset changes to this state, the **Instrument usage status** for the test instrument tag is set to *Out of service*. It is also set when the asset becomes inactive.<!-- KFM: I don't understand. The linked asset is a type, so how does it have a single state? Please clarify this. How/where are these states defined? Do we have a link? -->
+    - **Auto-create test instrument tag from asset** - Select this check box to automatically create a test instrument tag when you create a new asset of the linked **Asset type** (existing assets are not affected).
 
 1. Close the page.
 
@@ -58,5 +60,6 @@ Learn more in [Test instrument calibration](quality-instrument-calibration.md).
 - [Quality management test](quality-tests.md)
 - [Quality management test groups](quality-test-groups.md)
 - [Test instrument calibration](quality-instrument-calibration.md)
+- [Calibrate test instruments with Asset Management (preview)](../asset-management/preventive-and-reactive-maintenance/asset-management-test-instrument-calibration.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
