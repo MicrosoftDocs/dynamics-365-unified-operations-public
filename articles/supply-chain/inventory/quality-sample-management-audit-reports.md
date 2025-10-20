@@ -42,7 +42,7 @@ Follow the same procedure for continuous samples in the sample management workbe
 
 ## Sample procedures 
 
-Workers can access predefined procedures when working with samples. These procedures provide step-by-step guidance for different stages of sample handling, such as collecting samples and performing tests. By following these instructions, workers ensure that sampling and testing activities are carried out consistently and in compliance with defined quality standards.
+Workers can access predefined procedures when working with samples. These procedures provide step-by-step guidance for different stages of sample handling, such as collecting samples and performing tests. By following these instructions, workers ensure that sampling and testing activities are carried out consistently and in compliance with defined quality standards. Learn more about how to define procedures in: [Define sample procedures](quality-sample-management-admin.md#define-sample-procedures).
 
 To open a sample procedure follow these steps:
 
