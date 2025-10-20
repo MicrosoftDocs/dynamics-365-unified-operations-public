@@ -18,7 +18,7 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
-## Versions 4.0.24.0
+## Version 4.0.24.0
 
 Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
