@@ -44,3 +44,12 @@ To prevent incorrect setup on the **Document and journals** tab in the **Budget 
 | **Purchase order** (header or line entry) | **Budget reservations for encumbrances** | **Budget reservations for unconfirmed encumbrances** and **Reduction to Budget reservations for unconfirmed encumbrances** |
 | **Purchase requisition** (header or line entry) | **Budget reservations for preencumbrances** | **Budget reservations for unconfirmed preencumbrances** |
 | **General budget reservation** (header or line entry) | **Budget reservations for encumbrances** | **Budget reservations for unconfirmed encumbrances** and **Reduction to Budget reservations for unconfirmed encumbrances** |
+
+In addition, to ensure that spending is properly tracked and controlled throughout the procurement and financial process, some **Budget control** transaction types cannot be turned off when related processes or features are active. If user attempts to change these settings, the system displays a warning.
+
+| When warning appears | Reason for warning |
+| ------------------------- | -------------------------------- |
+| When user tries to turn off budget checks for **Vendor invoices** while **Purchase orders** are enabled or **Budget reservations** are enabled | **Vendor invoice** budget tracking must remain active to properly reduce commitments created by purchase orders or reservations |
+| When user tries to turn off budget checks for **Purchase orders** while **Purchase requisitions** are enabled or **Commitments** are enabled or **Budget reservations for purchase orders** are enabled | **Purchase order** budget tracking must remain active to relieve pre-commitments created by requisitions or commitments |
+| When **French regulatory features** are enabled | French compliance rules require purchase requisitions to remain active for proper budget control |
+| When the **Budget reservation** functionality is not enabled | If the feature is turned off, this setting cannot be changed because its functionality is unavailable. |
