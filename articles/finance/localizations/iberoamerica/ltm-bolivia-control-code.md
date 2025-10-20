@@ -11,6 +11,8 @@ ms.reviewer: johnmichalak
 
 # Control code feature for Bolivia
 
+[!INCLUDE[banner](../../includes/banner.md)]
+
 This feature adds a field named **Control code** to the **Additional data** section in the **LATAM** information when you post a document.
 You can set this entry manually or automatically by using the additional authorization code.
 The automatic entry of this field responds to the Bolivian requirement of **Control code** in computerized documents.
@@ -19,12 +21,12 @@ Learn more in [Sales authorization code for Latin America](ltm-core-sales-ca.md)
 
 ## Prerequisites
 
-Before you can use the control code feature manually, meet these prerequisites:
+Before you can use the control code feature manually, you must meet these prerequisites:
 
 - The company/region of the legal entity is in Bolivia.
 - Both the general LATAM feature and the country/region-specific Bolivia LATAM feature are enabled.
 
-To use the control code feature for Bolivia with an automatic entry, meet these prerequisites:
+To use the control code feature for Bolivia with an automatic entry, you must meet these prerequisites:
 
 - The company/region of the legal entity is in Bolivia.
 - Both the general LATAM feature and the country/region-specific Bolivia LATAM feature are enabled.
@@ -41,7 +43,7 @@ To enable the Control code field, follow these steps:
 
 To use the automatic control code entry for Bolivia, follow these steps:
 
-1. Go to **Organization administration > Setup > LATAM > Document class sales point** (you can access from the **Document class configuration**).
+1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class sales point** (you can access from the **Document class configuration**).
 1. Select the **Sales CA** button on the top menu.
 1. Complete the **Additional CA** field with the digital key for Bolivia.
 
@@ -58,3 +60,5 @@ To use the Control code feature with automatic entry for Bolivia, follow these s
 1. When posting a transaction, go to the **LATAM** section.
 1. If the setup is done correctly, a field named **Control code** with a value appears in the **Additional data** section.
 1. Post the transaction.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
