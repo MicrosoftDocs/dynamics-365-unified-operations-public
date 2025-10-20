@@ -23,7 +23,7 @@ Learn more in [Document class sales point for Latin America](ltm-core-document-c
 
 Before you can use the additional sales authorization code feature, you must meet these prerequisites:
 
-- The company/region of the legal entity is in a LATAM-supported country.
+- The company/region of the legal entity is in a LATAM-supported country/region.
 - Both the general LATAM feature and the country/region-specific LATAM feature are enabled.
 - Go to **Organization administration > Setup > LATAM > LATAM parameters**, and in the **Functionalities** section, set the **Enable additional authorization code** to **Yes**.
 - In the **Document class** configuration, set the **Require CA number** option to **Yes**.
