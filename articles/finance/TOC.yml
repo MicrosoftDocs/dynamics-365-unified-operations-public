@@ -2098,6 +2098,8 @@
                     href: localizations/iberoamerica/ltm-create-customer-and-vendor-bolivia.md
                   - name: Set up a legal entity and tax information for Bolivia
                     href: localizations/iberoamerica/ltm-set-up-legal-entity-and-tax-bolivia.md
+                  - name: Control code feature for Bolivia
+                    href: localizations/iberoamerica/ltm-bolivia-control-code.md
                 - name: Brazil
                   items:
                     - name: Brazil overview
@@ -3592,6 +3594,8 @@
                         href: localizations/iberoamerica/ltm-core-document-class-sales-point.md
                       - name: Sales Authorization Code for Latin America
                         href: localizations/iberoamerica/ltm-core-sales-ca.md
+                      - name: Additional authorization code for Latin America
+                        href: localizations/iberoamerica/ltm-core-additional-ca.md
                       - name: Sales point prefixes for Latin America
                         href: localizations/iberoamerica/ltm-core-sales-point-prefixes.md
                       - name: Sales point relation for sales documents and remission
