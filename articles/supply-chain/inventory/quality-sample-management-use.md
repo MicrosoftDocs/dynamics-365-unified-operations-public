@@ -122,6 +122,8 @@ To conduct testing of continuous samples (example):
     - The license plates for each sample has an inventory status that is *Available*. If you do not see the inventory status in the grid, you can enable it from the **Dimensions display** opened from the Action pane.
     - The sample with the associated quality order has automatically changed state to a state that indicates that the quality order is validated. This updates requires that the sample is configured with a sample life cycle state  with the property **Quality order validated** set to *Yes*. Learn more about the sample life cycle state in: [Configure lifecycle states](quality-sample-management-admin).
 
+<!-- JOHANHO: I get an error when validating the quality order. I have reported this issue in a bug which is awaiting resolution. -->
+
 ## Sample archiving
 
 Once a sample has been collected, labeled, and successfully tested, it is typically archived for a defined period until it reaches its expiration date. The expiration date is determined when the sample is created and calculated based on the rules specified in the sample association. The system uses the sample life cycle state to indicate when a sample has been archived, marking its transition from active testing to storage. For details on how expiration periods are determined through sample associations, see: [Set up sample associations](quality-sample-management-admin.md#set-up-sample-associations). 
