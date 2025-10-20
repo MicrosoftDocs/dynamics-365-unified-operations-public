@@ -82,7 +82,7 @@ The buttons on the Action Pane are organized on tabs. The following table briefl
 | Forecast | View or create forecasts on a work order. |
 | Journals | View or create work order journals. Journal lines can be copied from forecasts. |
 | Project transactions | View all posted transactions that are related to work orders created for the asset. |
-| Update Work order state | Update the work order lifecycle state. |
+| Update Work order state | Update the work order lifecycle state. Remarks can be added that will be visible in the lifecycle state log. |
 | Lifecycle state log | View a log that shows the lifecycle states of the selected work order. The log includes any comments that were added by users during manual lifecycle changes. |
 | Asset documents | View the list of documents attached to assets that are related to a work order. These documents are set up in **Asset management** > **Setup** > **Asset documents**. |
 | Schedule | Schedule the selected work orders. |
