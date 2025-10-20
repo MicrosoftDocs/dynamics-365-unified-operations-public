@@ -18,6 +18,29 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Versions 4.0.24.0
+
+Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
+
+### General availability for Windows in all regions and Android devices in most regions
+
+This version of the Warehouse Management mobile app is a general availability (GA) release for Microsoft Windows in all regions and for Google Android devices in most regions. We are gradually rolling out GA releases for Android to all remaining regions. If you're in a region where the Android app is still in preview, the download is listed as a beta version in the Google Play store.
+
+### Preview release for Android devices in other regions and Windows and iOS devices in all regions
+
+This version of the Warehouse Management mobile app for Apple iOS is a preview release in all regions. It's also a preview release for Android devices in some regions. If you're in a region where the Android app is still in preview, the download is listed as a beta version in the Google Play store. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
+
+If you have feedback about a preview version of this app, please submit a post on the [Warehouse Management App group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=44117131264) on Microsoft Viva Engage.
+
+### What's new in version 4.0.24.0
+
+
+
+
+
+
+
+
 ## Versions 4.0.9.0 – 4.0.23.0
 
 Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
