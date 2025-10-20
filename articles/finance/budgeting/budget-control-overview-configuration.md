@@ -134,9 +134,15 @@ If you want a budget to be checked for specific rule/scenario you can adjust:
 
 ### Activate budget control
 
-After budget control is configured, you can turn it on and activate it on the **Activate budget control** tab. The draft version then becomes effective.
+After budget control is configured, you can turn it on and activate it on the **Activate budget control** tab. The draft version then becomes effective. 
 
 > [!Important]
+> Having an **Active** configuration does not enforce budget checks. It only ensures the system is prepared to apply these rules once budget control is turned on. Setting **Turn On/Off** budget control determines whether budget control checks are actually enforced during transaction processing. When budget control is **Turned On**, budget checks occur on purchase orders, journals, and other configured documents and transactions exceeding available funds trigger warnings or errors based on your setup. When budget control is **Turned Off**, no budget checks are performed, even if the configuration is marked as **Active**, and the **Perform budget check** button will not validate budgets when control is off.
+> After budget control is turned on and active, and after transactions are posted, it should not be turned off mid-year. When budget control is turned off, activities aren't recorded for budget control purposes, and budget checks are no longer performed. Therefore, documents that have already been posted might not correctly reflect any relieving amounts or balances in inquiries and reports that are related to budget control. These include budget control statistics for any downstream or adjusting documents and journals. 
+
+Additionally, note that transactions, including budget register entries, that were posted before budget control is turned on aren't considered for budget control. Therefore, it's a good idea to turn on budget control only at the beginning of a new budget cycle. Make sure that budget register entries that contain beginning budget balances for budget control have their budget balances updated only after budget control is turned on. Any open document (for example, a purchase order) will be checked for available budget funds and will get a budget reservation for budget control when a user manually triggers a budget control check in the document.
+
+> [!NOTE]
 > When the **Only track amounts in the budget funds available calculation** feature is on, budget control must have specific rule configurations to work correctly. Otherwise, you can't activate the defined budget control configuration. For more information, see [Budget funds available](budget-funds-available.md).
 
 The following table shows the guidelines to follow.
@@ -146,11 +152,6 @@ The following table shows the guidelines to follow.
 | **Budget reservations for pre-encumbrances** | **Budget reservations for encumbrances** *and* **Actual expenditures** |
 | **Budget reservations for encumbrances** | **Actual expenditures** |
 | **Budget reservations for encumbrances with Purchase requisition type documents** | **Budget reservations for pre-encumbrances** |
-
-> [!Important]
-> After budget control is turned on and active, and after transactions are posted, it should not be turned off mid-year. When budget control is turned off, activities aren't recorded for budget control purposes, and budget checks are no longer performed. Therefore, documents that have already been posted might not correctly reflect any relieving amounts or balances in inquiries and reports that are related to budget control. These include budget control statistics for any downstream or adjusting documents and journals. 
-
-Additionally, note that transactions, including budget register entries, that were posted before budget control is turned on aren't considered for budget control. Therefore, it's a good idea to turn on budget control only at the beginning of a new budget cycle. Make sure that budget register entries that contain beginning budget balances for budget control have their budget balances updated only after budget control is turned on. Any open document (for example, a purchase order) will be checked for available budget funds and will get a budget reservation for budget control when a user manually triggers a budget control check in the document.
 
 ## Using budget control
 
