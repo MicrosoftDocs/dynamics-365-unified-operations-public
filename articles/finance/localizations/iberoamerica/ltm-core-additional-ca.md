@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Additional authorization code for Latin America
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article explains how to configure and use the additional authorization code feature in the LATAM extension. 
 
