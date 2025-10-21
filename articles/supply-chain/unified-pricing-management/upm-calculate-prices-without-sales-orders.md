@@ -15,7 +15,7 @@ ms.custom:
 
 Unified pricing management in Dynamics 365 Supply Chain Management can calculate customer and volume-specific prices and discounts without requiring you to create a sales order. This capability is useful both when creating quotes and when integrating with external selling systems where you need to calculate prices without creating a sales order. To trigger pricing and discount calculations programmatically, you just need to provide product, quantity, and customer details.
 
-This feature exposes key calculation methods and provides sample code that you can use to implement your own custom pricing logic. If you don't have a Commerce Scale Unit (CSU) API license but still want to integrate pricing with third-party systems, you can use this capability to build custom services to expose pricing via APIs. You can leverage this extensibility to connect pricing seamlessly with external applications.
+This feature exposes key calculation methods and provides sample code that you can use to implement your own custom pricing logic. If you don't have a Commerce Scale Unit (CSU) API license but still want to integrate pricing with third-party systems, use this capability to build custom services to expose pricing via APIs. You can leverage this extensibility to connect pricing seamlessly with external applications.
 
 By carefully preparing transaction data, managing attributes consistently, and leveraging the pricing engine's capabilities, you can achieve accurate, dynamic pricing tailored to your business needs.
 
@@ -29,7 +29,7 @@ The first step in the pricing workflow is to collect all relevant input data req
 
 The following list outlines the most common data elements used in pricing scenarios. Use these inputs to populate transaction objects and influence pricing calculations.
 
-- **Item numbers** –  Unique identifiers for the products that customers purchase. These identifiers are mandatory。
+- **Item numbers** –  Unique identifiers for the products that customers purchase. These identifiers are mandatory.
 - **Customer account numbers** *(optional)* – Identify the buyer and apply customer-specific pricing, discounts, or loyalty-based rules.
 - **Quantities** *(optional)* – Specifies the number of units per item. Quantity can affect volume-based pricing or tiered discount structures.
 - **Attributes** *(optional)* – Custom fields that provide additional context, such as:
@@ -153,7 +153,7 @@ Set hashKeySet = GUPHashHelper::getPropertyHashKeySetForPricingObject(salesLine,
 
 If your pricing logic depends on a specific pricing structure with different price components, you must define the price tree name. This configuration determines which pricing tree the engine uses to evaluate and apply pricing rules. It allows for differentiated pricing structures across scenarios. The price tree acts as a logical framework that organizes pricing rules. By specifying the correct tree, you ensure that the pricing engine applies the appropriate pricing component structure.
 
-- **Set the Price Tree Name from input parameters** – Use a predefined value passed into your service or class to assign the price tree name directly. This approach is suitable when the pricing structure is known and consistent across transactions.
+- **Set the Price Tree Name from input parameters** – Use a predefined value passed into your service or class to assign the price tree name directly. Use this approach when the pricing structure is known and consistent across transactions.
 - **Derive the Price Tree Name dynamically based on input attributes** – In more flexible scenarios, you can compute the tree name at runtime by using product or customer attributes. For example, you might derive the tree name from an input attribute value by using code such as `unifiedPricingParameter.PriceTreeName = GUPPricingTree::getPriceTreeByEcoResValue(<EcoResValue>).Name;`.
 
 This sample code demonstrates how to set a static tree name directly.

@@ -872,6 +872,8 @@
             href: ../supply-chain/unified-pricing-management/upm-concurrence-within-codes.md?context=/dynamics365/context/commerce
           - name: Resolving concurrency across price component codes
             href: ../supply-chain/unified-pricing-management/upm-concurrence-cross-codes.md?context=/dynamics365/context/commerce
+        - name: Calculate prices and discounts without creating sales orders
+          href: ../supply-chain/unified-pricing-management/upm-calculate-prices-without-sales-orders.md?context=/dynamics365/context/commerce
       - name: Recommendations
         items:
         - name: Product recommendations overview
