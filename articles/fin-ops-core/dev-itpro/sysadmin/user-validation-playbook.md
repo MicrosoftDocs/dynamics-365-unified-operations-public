@@ -14,11 +14,9 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-# User Validation Playbook
+# User License Validation Playbook for Dynamics 365 Finance and Operations
 
 [!include [banner](../includes/banner.md)]
-
-# User License Validation Playbook for Dynamics 365 Finance and Operations
 
 This playbook helps administrators prepare for **per-user license validation** for Dynamics 365 Finance and Operations (F&O) apps. Follow these steps to ensure compliance, align licensing with security roles, and prevent user access disruptions when license validation goes into affect.
 
@@ -39,7 +37,7 @@ For additional context, review the [Dynamics 365 Licensing Guide](https://www.mi
 
 ---
 
-## Step 0: Upgrade to the Latest Proactive Quality Update
+## Pre-requisite: Upgrade to the Latest Proactive Quality Update
 
 Upgrade your environments to ensure all licensing reports and validation logic are available.
 
