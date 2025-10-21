@@ -42,7 +42,7 @@ You can configure budget control according to several factors:
 - **Funds available calculation** – Should documents such as purchase requisitions (preencumbrances) and purchase orders (encumbrances) be considered in the calculation of available funds? Should documents that are in a draft state be considered in the calculation?
 - **Override permission** – Who has permission to exceed the available budget?
 
-Budget control is fully integrated with the application. Therefore, you can evaluate the available budget for both planned purchases and actual purchases. Budget inquiries and reports are available. Therefore, users can evaluate the budget throughout the budget cycle, and can make any adjustments that are required, in the form of budget revisions or transfers. A budget manager can also export the budget and actuals into Microsoft Excel to better analyze and forecast as required.
+Budget control is fully integrated with the application. Therefore, you can evaluate the available budget for both planned purchases and actual purchases. Budget inquiries and reports are available. Users can evaluate the budget throughout the budget cycle, and can make any adjustments that are required, in the form of budget revisions or transfers. A budget manager can also export the budget and actuals into Microsoft Excel to better analyze and forecast as required.
 
 ## Configuring budget control
 
@@ -93,7 +93,7 @@ Next, on the **Assign budget models** tab, you assign budget models to the budge
 Next, on the **Define budget control rules** tab, you must create specific rules, based on the financial dimensions that are enabled for budget control. For example, if there's a focus on the expenditure or range of expenditures for a department, you can use the settings on this tab to define and evaluate those expenditures, like Department = Sales, and Cost Center = *, where the asterisk (`*`) is a wildcard character that includes any cost center. You can define different thresholds for each budget control rule. 
 
 > [!NOTE]
-> If your financial dimensions include any wildcard characters, such as underscore (`_`), when defining budget control rules, users should use asterisk (`*`) for the criteria definition to ensure the accurate expression is found. For example, if you have Department as Department_1, when defining budget control rule, you should use expression Deparment is like Deparment*1. The asterisk (`*`) matches any number of characters, for example, *Department_1* as well as *Deparment_A1* or *DeparmentA_1*.
+> If your financial dimensions include any wildcard characters, such as underscore (`_`), when defining budget control rules, users should use asterisk (`*`) for the criteria definition to ensure the accurate expression is found. For example, if you have Department as Department_1, when defining budget control rule, you should use expression Department is like Department*1. The asterisk (`*`) matches any number of characters, for example, *Department_1* as well as *Department_A1* or *DeparmentA_1*.
 
 
 > [!Important]
@@ -104,7 +104,7 @@ Next, on the **Define budget control rules** tab, you must create specific rules
 If **Main account** isn't selected as a budget control dimension on the **Define parameters** page, but specific expenditures are being managed, you can select those expenditures on the **Select main accounts** tab. The **Select main accounts** option ensures budget control checks are only performed for selected main accounts (or not performed on unselected main accounts) even when **Main account** isn't part of **Defined parameters** in budget control. 
 
 Example: 
-On the **Define parameters** page, **Budget control dimensions** is selected, the budget is controlled only at *Business Unit* and *Department* level.
+On the **Define parameters** page, **Budget control dimensions** is selected. The budget is controlled only at the *Business Unit* and *Department* levels.
 
 ![Define parameters](./media/budgetcontrolconfiguration.png) 
 
@@ -140,7 +140,7 @@ After budget control is configured, you can turn it on and activate it on the **
 > An **Active** configuration doesn't enforce budget checks, it ensures that the rules are applied after budget control is activated. The **Turn On/Off** budget control setting determines whether budget control checks are actually enforced during transaction processing. When budget control is **Turned on**, budget checks occur on purchase orders, journals, and other configured documents and transactions exceeding available funds trigger warnings or errors based on your setup. When budget control is **Turned off**, no budget checks are performed, even if the configuration is marked as **Active**. The **Perform budget check** button won't validate budgets when the control is off.
 > After budget control is on and active, and after transactions are posted, it shouldn't be turned off mid-year. When budget control is turned off, activities aren't recorded for budget control purposes, and budget checks are no longer performed. Therefore, documents that have already been posted might not correctly reflect any relieving amounts or balances in inquiries and reports that are related to budget control. These include budget control statistics for any downstream or adjusting documents and journals. 
 
-Additionally, note that transactions, including budget register entries, that were posted before budget control is turned on aren't considered for budget control. Therefore, it's a good idea to turn on budget control only at the beginning of a new budget cycle. Make sure that budget register entries that contain beginning budget balances for budget control have their budget balances updated only after budget control is turned on. Any open document (for example, a purchase order) will be checked for available budget funds and will get a budget reservation for budget control when a user manually triggers a budget control check in the document.
+Transactions, including budget register entries, that were posted before budget control is turned on aren't considered for budget control. Therefore, it's a good idea to turn on budget control only at the beginning of a new budget cycle. Make sure that budget register entries that contain beginning budget balances for budget control have their budget balances updated only after budget control is turned on. Any open document (for example, a purchase order) will be checked for available budget funds and will get a budget reservation for budget control when a user manually triggers a budget control check in the document.
 
 > [!NOTE]
 > When the **Only track amounts in the budget funds available calculation** feature is on, budget control must have specific rule configurations to work correctly. Otherwise, the defined budget control configuration can't be activated. For more information, see [Budget funds available](budget-funds-available.md).
