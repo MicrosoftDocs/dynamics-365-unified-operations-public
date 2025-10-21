@@ -42,8 +42,8 @@ To initiate an inline sample follow these steps:
     - **Item number** – The product for which you want to take a sample. This field is defaulted based on the production or batch order that you had open.
     - **Product name** – The name of the product for which you want to take a sample. This field is read-only and comes from the selected **Item number**.
     - **Sample type** – Set to *Inline*.
-    - **Item sampling** – [Item samplings]((../inventory/quality-item-sampling.md)) define the criteria for selecting samples. This field is defaulted based on the product that you selected, but you choose a new one if necessary.
-    - **Test group** – [Test groups](../inventory/quality-test-groups.md) define the set of tests applied while processing quality orders. Select the test group that defines the tests that need to be performed on this sample. This field is defaulted based on the selected item sampling.
+    - **Item sampling** – [Item samplings](quality-item-sampling.md) define the criteria for selecting samples. This field is defaulted based on the product that you selected, but you choose a new one if necessary.
+    - **Test group** – [Test groups](quality-test-groups.md) define the set of tests applied while processing quality orders. Select the test group that defines the tests that need to be performed on this sample. This field is defaulted based on the selected item sampling.
     - **Sample size** – The amount of material that you want to sample. This field is read-only and comes from the selected item sampling.
     - **Unit** – The unit that applies to the selected sample size. This field is read-only and comes from the selected item sampling.
 

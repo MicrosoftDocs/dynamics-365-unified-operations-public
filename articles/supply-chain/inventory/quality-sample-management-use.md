@@ -21,7 +21,7 @@ Sample management is a component of quality control in manufacturing, ensuring t
 
 The following video provides a high-level overview of sample management capabilities and a demo of how to work with them.
 
-[!VIDEO 36124ac5-86c0-44f6-a57e-3beb10c753ca]
+[!VIDEO https://learn-video.azurefd.net/vod/player?id=36124ac5-86c0-44f6-a57e-3beb10c753ca]
 
 ## Understanding the lifecycle of a sample in sample management
 
@@ -124,7 +124,7 @@ To conduct testing of continuous samples (example):
 1. Select **OK** to confirm the dialog and verify that the quality order is in status *Passed*.
 1. Navigate back to the sample management workbench and validate that:
     - The license plates for each sample has an inventory status that is *Available*. If you do not see the inventory status in the grid, you can enable it from the **Dimensions display** opened from the Action pane.
-    - The sample with the associated quality order has automatically changed state to a state that indicates that the quality order is validated. This updates requires that the sample is configured with a sample life cycle state  with the property **Quality order validated** set to *Yes*. Learn more about the sample life cycle state in: [Configure lifecycle states](quality-sample-management-admin).
+    - The sample with the associated quality order has automatically changed state to a state that indicates that the quality order is validated. This updates requires that the sample is configured with a sample life cycle state  with the property **Quality order validated** set to *Yes*. Learn more about the sample life cycle state in: [Configure lifecycle states](quality-sample-management-admin.md).
 
 <!-- JOHANHO: I get an error when validating the quality order. I have reported this issue in a bug which is awaiting resolution. -->
 
@@ -134,7 +134,7 @@ Once a sample has been collected, labeled, and successfully tested, it is typica
 
 Use the following procedure to change the life cycle state from the sample management workbench:
 
-1. Make sure you have defined a life cycle state that represents the archived state and that this state is selected on the sample type configured for the product. Learn more in [Configure lifecycle states](quality-sample-management-admin) and [Define sample types](quality-sample-management-admin.md#define-sample-types).
+1. Make sure you have defined a life cycle state that represents the archived state and that this state is selected on the sample type configured for the product. Learn more in [Configure lifecycle states](quality-sample-management-admin.md) and [Define sample types](quality-sample-management-admin.md#define-sample-types).
 1. Create a batch order with continuous samples as described in: [Testing continuous samples](#testing-continuous-samples).
 1. In the sample management workbench, select a sample for the production or batch order.
 1. Select one sample or multi-select multiple samples.
@@ -148,7 +148,7 @@ The system uses the sample life cycle state to indicate when a sample has been d
 
 To dispose of a sample follow these steps:
 
-1. Make sure you have defined a life cycle state that represents the disposed state and that this state is selected on the sample type configured for the product. Learn more in [Configure lifecycle states](quality-sample-management-admin) and [Define sample types](quality-sample-management-admin.md#define-sample-types).
+1. Make sure you have defined a life cycle state that represents the disposed state and that this state is selected on the sample type configured for the product. Learn more in [Configure lifecycle states](quality-sample-management-admin.md) and [Define sample types](quality-sample-management-admin.md#define-sample-types).
 1. Create a batch order with continuous samples as described in: [Testing continuous samples](#testing-continuous-samples).
 1. In the sample management workbench, select a sample for the production or batch order.
 1. From the Action pane, select **Change expiration date** and select a date in the past in the dialog, to make this sample past it's expiration date.
