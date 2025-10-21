@@ -19,8 +19,6 @@ ms.dyn365.ops.version: AX 10.0.37
 This article describes how to configure and use electronic invoices in Microsoft Dynamics 365 Finance for Türkiye. 
 Microsoft Dynamics 365 Finance supports the generation of e-invoice documents in the required **UBL-TR** format.
 
-## Prerequisites
-
 Before you begin, ensure that the following prerequisites are met:
 
 - Your legal entity’s primary address must be in Türkiye.
@@ -82,29 +80,41 @@ To configure customer account, follow these steps;
 > After **Registration IDs** are defined for customer and vendor accounts, the **Tax exempt number** field is automatically populated.  
 > If needed, you can also select the value manually.
 
-### Configure _InvoicedQuantity_ mapping for units
+### Set up unit of measure mappings for e-invoices
 
-This section provides information about how to configure **InvoicedQuantity** mapping for units in Finance.
+This section explains how to set up unit of measure mappings in Dynamics 365 Finance so that internal unit codes (such as *EA*, *KG*, or *M*) are correctly converted to **UN/ECE international codes** (such as *C62*, *KGM*, or *MTR*).  
 
-To configure **InvoicedQuantity** mapping for units, follow these steps; 
+To configure the mappings, follow these steps:
 
 1. Go to **Organization administration > Setup > Units > Units**.
 2. Select a unit, and then select **External codes**.
-3. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code that corresponds to the selected unit ID.
+3. On the **External codes** page, in the **Overview** section, in the **Code** column, enter the **internal unit ID** (for example, *EA* for “each”) that represents the unit used in Dynamics 365 Finance.
 4. In the **Standard code** column, select the checkbox.
-5. In the **Value** section, in the **Value** field, enter the external code to use as the [Units](https://unece.org/sites/default/files/2021-06/rec20_Rev17e-2021.xlsx) of measure code for international trade.
+5. In the **Value** section, in the **Value** field, enter the **UN/ECE international code** (for example, *C62* for “each”).  
+   This value will be used as the **unitCode** attribute in the `<InvoicedQuantity>` element of the generated e-invoice XML.
 
-![InvoiceTypeCode mapping](../media/emea-tur-invoice-quantity-mapping.png)
+![Invoice quantity mapping](../media/emea-tur-invoice-quantity-mapping.png)
 
 > [!NOTE]
-> For scenarios where no specific units of measure are assumed, the default value **EA** (each) is used.
+> The configured unit mapping determines the `unitCode` value that appears in the `<cbc:InvoicedQuantity>` element of the generated UBL-TR e-invoice XML.  
+> For example:
+> ```xml
+> <cbc:InvoicedQuantity unitCode="C62">1.00</cbc:InvoicedQuantity>
+> ```
+> In this example, the internal unit **EA** (each) defined in Dynamics 365 Finance is mapped to the international unit code **C62**, which is then written into the XML as the `unitCode` attribute.
 
-### Define sales tax exempt codes
+> [!TIP]
+> If no specific units of measure are defined, the default unit **EA** (each) is used in the UBL-TR e-invoice XML.
 
-This section describes how to define **Sales tax exempt codes** in Dynamics 365 Finance.  
-The **Sales tax exempt codes** page provides a central place to create standardized exemption identifiers that represent the legal reasons for tax exemption in Türkiye.  
+### Set up tax exempt code mappings for e-invoices
 
-To define sales tax exempt codes:  
+This section explains how to define and assign **Sales tax exempt codes** in Dynamics 365 Finance so that e-invoices generated in the **UBL-TR** format include the correct **TaxExemptionReasonCode** values.
+
+#### Define sales tax exempt codes
+
+The **Sales tax exempt codes** page provides a centralized location to create standardized exemption identifiers that represent legal reasons for tax exemption in Türkiye.
+
+To define sales tax exempt codes:
 
 1. Go to **Tax > Indirect taxes > Sales tax > Sales tax exempt codes**.  
 2. Select **New** to create a new record.  
@@ -112,41 +122,52 @@ To define sales tax exempt codes:
 4. In the **Description** field, enter a meaningful description (for example, *11/1-a Mal İhracatı* or *KDV – İstisna Olmayan Diğer*).  
 5. Select **Save**.  
 
-For the official UBL-TR exemption code list, see [e-invoice Legislation and Technical Architecture](https://ebelge.gib.gov.tr/efaturamevzuat.html).
+For the official UBL-TR exemption code list, see [e-Invoice Legislation and Technical Architecture](https://ebelge.gib.gov.tr/efaturamevzuat.html).
 
 > [!NOTE]  
-> These codes are later used in the UBL-TR e-invoice XML file to populate the **TaxExemptionReasonCode** element.  
+> These exemption codes are later used in the UBL-TR e-invoice XML file to populate the **TaxExemptionReasonCode** element.  
 
-### Assign _TaxExemptionReasonCodes_ to sales tax groups
+#### Assign tax exempt codes to sales tax codes
 
-After defining sales tax exempt codes, you can assign them to sales tax groups. This ensures that e-invoices generated in UBL-TR format contain the correct **TaxExemptionReasonCode** value.  
+After defining the exemption codes, you must assign them to the relevant **sales tax codes** within **sales tax groups**.  
+This ensures that the correct **TaxExemptionReasonCode** values are included in the generated UBL-TR e-invoice XML.
 
-To assign a **TaxExemptionReasonCode** to a sales tax code through the Sales tax group, follow these steps:  
+To assign exemption codes to sales tax codes:
 
 1. Go to **Tax > Setup > Sales tax > Sales tax groups**.  
-2. Select an existing sales tax group that includes a sales tax code for the exemption scenario.  
-3. On the **Setup** FastTab, for each sales tax code line, set the **Exempt** check box to **Yes** if the tax code should be treated as exempt. This ensures that transactions linked to this tax code won’t calculate tax amounts.  
-4. In the **Exempt code** field, select an exemption code from the dictionary.  
+2. Select an existing **Sales tax group** that includes one or more sales tax codes for exemption scenarios.  
+3. On the **Setup** FastTab, for **each sales tax code line**, set the **Exempt** check box to **Yes**.  
+   This setting ensures that transactions using this tax code do not calculate tax amounts.  
+4. In the **Exempt code** field on the same line, select the relevant exemption code from the dictionary.  
+   This mapping determines which **TaxExemptionReasonCode** value appears in the generated e-invoice XML.
 
-> [!NOTE]  
-> In Türkiye, the **Exempt** option should only be enabled for legally exempt transactions, such as export sales, diplomatic missions, or sales under special VAT exemption clauses.  
+> [!TIP]  
+> The **Exempt** check box must be set per tax code line in the Sales tax group, not at the group level.  
+> Only legally exempt transactions, such as export sales or diplomatic missions, should have the **Exempt** option enabled.
 
-### Configure _TaxTypeCode_ mapping in Application specific parameters
+### Set up TaxTypeCode mappings for e-invoices
 
-This section describes how to set up the **TaxTypeCode** lookup in the **Application specific parameters** page for the **E-Invoice (TR)** ER format to ensure compliance with the Turkish Revenue Administration (GİB) requirements in UBL-TR **XML** file.
+This section describes how to set up the **TaxTypeCode** lookup in the **Application specific parameters** page for the **E-Invoice (TR)** ER format to ensure compliance with the requirements in UBL-TR **XML** file.
 
-To create a **TaxTypeCode**, follow these steps; 
+To set up a **TaxTypeCode**, follow these steps; 
 
 1. Go to **Organization administration > Electronic reporting > Configurations**.
 2. In the list of ER formats, select **E-Invoice (TR)** format.
-3. In the **Versions** FastTab, select **Completed** version and select **Application specific parameters** on the ActionPane.
+3. In the **Versions** FastTab, select the most recent **Completed** version and select **Setup** in **Application specific parameters** on the ActionPane.
 4. In the **Lookups** section, select **TaxCodeLookUp**.
 5. Add a new mapping line and set the **Lookup result** to the required **TaxTypeCode** from the official code list from GIB such as _0015 – Gerçek Usulde Katma Değer Vergisi_.
-6. In the **Code** field, select the appropriate sales tax code to map it to the corresponding **TaxTypeCode**, ensuring compliance with XML requirements.
+6. In the **Code** field, select the appropriate sales tax code to map it to the corresponding **TaxTypeCode**.
 7. Repeat for all required tax types.
 8. Save your changes and set the **State** to **Completed**.
 
 ![Mapping TaxTypeCode](../media/emea-tur-cust-e-invoices-tax-type-code.png)
+
+> [!NOTE]
+> The configured **TaxTypeCode** value is written into the `<TaxTypeCode>` element in the generated UBL-TR XML.  
+> For example:  
+> ```xml
+> <cbc:TaxTypeCode>0015</cbc:TaxTypeCode>
+> ```
 
 You can review the list of **TaxTypeCode** values currently available in the system. 
 
@@ -163,6 +184,9 @@ To review the list;
 This can help ensure that the values you configure in the **Application specific parameters** are aligned with the enumeration definitions in the ER format.
 
 ## Export of electronic invoices for customers
+
+This section describes how to generate, view, and access electronic invoices for customers in Finance.  
+It provides guidance on how to create UBL-TR compliant XML files from posted invoices, access and verify the generated documents, and automatically distribute them through Electronic Reporting (ER) destinations.
 
 ### Generate e-invoices
 
