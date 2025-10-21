@@ -21,7 +21,7 @@ Sample management is a component of quality control in manufacturing, ensuring t
 
 The following video provides a high-level overview of sample management capabilities and a demo of how to work with them.
 
-[!VIDEO https://learn-video.azurefd.net/vod/player?id=36124ac5-86c0-44f6-a57e-3beb10c753ca]
+> [!VIDEO 36124ac5-86c0-44f6-a57e-3beb10c753ca]
 
 ## Understanding the lifecycle of a sample in sample management
 
