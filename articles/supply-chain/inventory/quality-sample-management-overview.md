@@ -29,6 +29,10 @@ Sample management provides tools to:
 - Analyze test results.
 - Control inventory disposition based on quality outcomes.
 
+The following video provides a high-level overview of sample management capabilities and a demo of how to work with them.
+
+[!VIDEO 36124ac5-86c0-44f6-a57e-3beb10c753ca]
+
 ## Why sample management matters
 
 In regulated and quality-sensitive industries, manufacturers must ensure that products meet strict specifications before release. Sampling is a key part of this process. It allows organizations to test small quantities of product at various stages of production to detect issues early and ensure consistency.

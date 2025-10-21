@@ -19,6 +19,10 @@ ms.custom:
 
 Sample management is a component of quality control in manufacturing, ensuring that products meet regulatory and quality standards. The process described in this article serves as an example of how sample management can be implemented, but the specific details may vary depending on your company's branch, industry, and practices. By tailoring the sample management process to your organization's needs, you can maintain compliance, improve operational efficiency, and ensure product integrity. Use this guide as a framework to understand the key steps involved, and adapt them to align with your unique requirements and workflows. Proper implementation of sample management can significantly enhance traceability, accountability, and overall quality assurance.
 
+The following video provides a high-level overview of sample management capabilities and a demo of how to work with them.
+
+[!VIDEO 36124ac5-86c0-44f6-a57e-3beb10c753ca]
+
 ## Understanding the lifecycle of a sample in sample management
 
 In modern manufacturing and quality control environments, the ability to systematically manage product samples is essential for ensuring compliance, traceability, and consistent product quality. Sample management provides a structured framework for handling samples from their creation through to disposal, integrating seamlessly with production workflows and quality assurance protocols.
