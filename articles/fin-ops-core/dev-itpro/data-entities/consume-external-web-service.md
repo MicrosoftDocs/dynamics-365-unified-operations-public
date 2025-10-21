@@ -1,8 +1,8 @@
 ---
 title: Consume external web services
 description: Learn how to consume external web services in finance and operations apps, including various X++ examples for creating classes and web services.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.date: 11/10/2017
 ms.topic: how-to
 ms.reviewer: johnmichalak

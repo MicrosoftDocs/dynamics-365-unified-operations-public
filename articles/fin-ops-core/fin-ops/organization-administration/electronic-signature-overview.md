@@ -1,8 +1,8 @@
 ---
 title: Electronic signatures overview
 description: Learn about electronic signatures and understand how they can be used, including an outline on users who require access to electronic signatures.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: johnmichalak

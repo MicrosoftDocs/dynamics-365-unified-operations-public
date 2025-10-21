@@ -1,8 +1,8 @@
 ---
 title: What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition platform update 10 (August 2017)
 description: Learn about new or changed features in Dynamics 365 Finance and Operations, Enterprise edition platform update 10. This version was released in August 2017.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.date: 07/12/2024
 ms.update-cycle: 1095-days

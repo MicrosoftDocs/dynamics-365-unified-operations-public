@@ -1,8 +1,8 @@
 ---
 title: Configuration in Lifecycle Services overview
 description: The Configuration manager (beta) functionality lets you copy a configuration from one instance of Microsoft Dynamics AX 2012 R3 to another.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 07/23/2019
 ms.reviewer: johnmichalak

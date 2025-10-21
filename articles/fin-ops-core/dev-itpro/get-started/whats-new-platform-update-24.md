@@ -1,8 +1,8 @@
 ---
 title: What's new or changed in Finance and Operations platform update 24 (March 2019)
 description: Learn about features that are in preview in Dynamics 365 for Finance and Operation platform update 24 added in March 2019.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.date: 07/12/2024
 ms.update-cycle: 1095-days

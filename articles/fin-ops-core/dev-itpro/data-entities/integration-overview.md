@@ -1,8 +1,8 @@
 ---
 title: Integration between finance and operations apps and third-party services 
 description: Learn about integration between finance and operations apps and third-party services, including documentation access for various patterns.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 11/23/2020 
 ms.reviewer: johnmichalak

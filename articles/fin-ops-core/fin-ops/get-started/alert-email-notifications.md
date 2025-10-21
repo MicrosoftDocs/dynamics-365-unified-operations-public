@@ -1,8 +1,8 @@
 ---
 title: Client alert notifications by email
 description: Learn about how to set up rules that send email notifications as predefined events occur, including an outline on notification templates.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 09/20/2019
 ms.reviewer: johnmichalak

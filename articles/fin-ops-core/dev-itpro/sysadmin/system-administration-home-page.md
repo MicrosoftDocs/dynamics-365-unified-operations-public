@@ -1,8 +1,8 @@
 ---
 title: System administration home page
 description: Acess resources that are available for system administrators, including resources to One Version and implementation management with Lifecycle Services.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 12/05/2024
 ms.reviewer: johnmichalak

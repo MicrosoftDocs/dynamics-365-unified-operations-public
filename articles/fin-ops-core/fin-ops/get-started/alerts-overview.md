@@ -1,8 +1,8 @@
 ---
 title: Alerts overview
 description: Learn about about alerts, which you can use to stay informed about events that you want to track during the workday, including various scenarios.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 09/04/2019
 ms.reviewer: johnmichalak

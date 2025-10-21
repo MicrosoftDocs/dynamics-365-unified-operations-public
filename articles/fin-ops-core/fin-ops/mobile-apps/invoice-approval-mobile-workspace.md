@@ -1,8 +1,8 @@
 ---
 title: Invoice approvals mobile workspace
 description: Learn about the Invoice approvals mobile workspace, including prerequisites and outlines and how to download and sign into the mobile app.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/24/2022
 ms.custom:

@@ -1,8 +1,8 @@
 ---
 title: Document printing overview
 description: Learn about how you can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: johnmichalak

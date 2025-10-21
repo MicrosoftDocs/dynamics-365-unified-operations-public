@@ -2,7 +2,7 @@
 title: Configuration data templates
 description: Learn about configuration data templates and how to create them, including a table that outlines the unit and level for various modules.
 author: rcarlson
-ms.author: sericks
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 08/09/2019
 ms.reviewer: johnmichalak

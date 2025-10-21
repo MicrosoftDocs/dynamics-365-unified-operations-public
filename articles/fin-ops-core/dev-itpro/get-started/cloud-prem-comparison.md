@@ -1,8 +1,8 @@
 ---
 title: Comparison of cloud and on-premises features
 description: Learn about which features are supported in Cloud and on-premises, including a table that outlines features and cloud availability for various areas.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/05/2025
 ms.reviewer: johnmichalak

@@ -1,8 +1,8 @@
 ---
 title: Set up Configuration manager
 description: Learn about how to set up the Configuration manager, including outlines on installing and configuring local components.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 10/16/2019
 ms.reviewer: johnmichalak

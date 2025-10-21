@@ -1,8 +1,8 @@
 ---
 title: What's new or changed in Dynamics 365 for Operations platform update 4 (February 2017)
 description: Learn about new or changed in Dynamics 365 for Operations platform update 4. This version was released in February 2017.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.date: 07/12/2024
 ms.update-cycle: 1095-days

@@ -1,8 +1,8 @@
 ---
 title: Create, edit, and browse Business process modeler (BPM) libraries
 description: Learn about how to create or edit a BPM library and how to browse an existing library and import a sections of another library.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/03/2018
 ms.reviewer: johnmichalak

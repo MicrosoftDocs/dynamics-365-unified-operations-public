@@ -1,8 +1,8 @@
 ---
 title: Set up technical support for finance and operations apps
 description: Learn about the support experience for cloud and on-premises deployments, including prerequisites and an outline on creating an Azure DevOps project.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 09/01/2022
 ms.reviewer: johnmichalak

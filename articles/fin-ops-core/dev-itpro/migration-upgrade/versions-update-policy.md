@@ -2,7 +2,7 @@
 title: Software lifecycle policy and cloud releases
 description: Learn about the lifecycle and support policies for the finance and operations online service, including dates and versions for application and platform releases.
 author: hmahl
-ms.author: sericks
+ms.author: twheeloc
 ms.topic: article
 ms.date: 09/29/2023
 ms.reviewer: twheeloc

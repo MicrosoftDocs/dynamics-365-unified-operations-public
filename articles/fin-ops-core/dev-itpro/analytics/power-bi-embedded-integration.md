@@ -1,8 +1,8 @@
 ---
 title: Power BI Embedded integration
 description: Learn about some of the ways that you can use the Power BI Embedded integration, including the advantages of Power BI and frequently asked questions.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 02/09/2018
 ms.reviewer: johnmichalak

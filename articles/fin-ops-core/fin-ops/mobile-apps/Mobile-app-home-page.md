@@ -1,8 +1,8 @@
 ---
 title: Mobile app home page
 description: Learn about the finance and operations (Dynamics 365) mobile app and provides links to resources that can help you implement it in your organization.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 05/24/2022
 ms.reviewer: johnmichalak

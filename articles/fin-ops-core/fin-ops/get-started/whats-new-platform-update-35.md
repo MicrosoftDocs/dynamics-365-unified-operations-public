@@ -1,8 +1,8 @@
 ---
 title: Platform updates for version 10.0.11 of finance and operations apps (July 2020)
 description: Learn the features are included in the platform updates for version 10.0.11 of finance and operations apps released in July 2020.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom: 
   - bap-template

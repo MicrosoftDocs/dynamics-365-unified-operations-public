@@ -1,8 +1,8 @@
 --- 
 title: Assign users to security roles
 description: Learn about how to manage users and security roles, including outlines on autoatically assigning users to roles and manually assigning users to roles.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 02/09/2022
 ms.custom:

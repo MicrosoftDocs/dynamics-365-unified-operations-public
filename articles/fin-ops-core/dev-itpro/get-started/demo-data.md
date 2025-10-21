@@ -1,8 +1,8 @@
 ---
 title: Demo data overview
 description: Learn about demo data via an overview, including a table that defines various legal entities and an overview of embedded analytics.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 09/20/2019
 ms.reviewer: johnmichalak

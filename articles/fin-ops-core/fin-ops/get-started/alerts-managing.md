@@ -1,8 +1,8 @@
 ---
 title: Batch processing of alerts
 description: Learn about batch processing of alerts, including overviews on setting up and processing for change-based events and due-date events.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 08/24/2021
 ms.custom:

@@ -1,8 +1,8 @@
 ---
 title: Create alert rules
 description: Learn about alerts and ow to create an alert rule, including overviews on ensuring alert batch jobs are running, events, event types, and conditions.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 10/08/2020
 ms.custom:

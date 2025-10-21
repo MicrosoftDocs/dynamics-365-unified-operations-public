@@ -1,8 +1,8 @@
 ---
 title: Auto-update for Commerce Scale Unit (cloud)
 description: Learn about auto-updates for Commerce Scale Unit (cloud), including limitations and an overview of downtime duration and impact.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 03/13/2025
 ms.reviewer: johnmichalak

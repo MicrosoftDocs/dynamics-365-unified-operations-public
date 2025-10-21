@@ -1,8 +1,8 @@
 ---
 title: Power BI content home page
 description: Learn about PowerBI.com solutions that are available and points you to resources where you can learn more about the solutions.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 10/02/2019
 ms.reviewer: johnmichalak

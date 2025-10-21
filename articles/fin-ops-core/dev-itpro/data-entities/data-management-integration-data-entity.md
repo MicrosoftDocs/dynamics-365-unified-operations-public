@@ -1,8 +1,8 @@
 ---
 title: Data management and integration by using data entities overview
 description: Learn about data management and integration via a brief overview of the mechanics of synchronous and asynchronous integration.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: johnmichalak

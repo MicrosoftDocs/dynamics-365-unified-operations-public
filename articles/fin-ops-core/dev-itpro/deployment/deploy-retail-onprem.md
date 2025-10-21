@@ -1,8 +1,8 @@
 ---
 title: Installation steps for Retail channel components in an on-premises environment
 description: Learn about the installation steps for Commerce channel components in an on-premises environment, including prerequisites and installation steps. 
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: upgrade-and-migration-article
 ms.date: 08/31/2022
 # ms.custom: [used by loc for topics migrated from the wiki]

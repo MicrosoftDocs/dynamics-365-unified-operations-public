@@ -2,14 +2,14 @@
 title: Platform updates for version 10.0.32 of finance and operations apps (March 2023)
 description: Learn about the features that are included in the platform updates for version 10.0.32 of finance and operations apps released in March 2023.
 author: twheeloc
-ms.author: sericks
+ms.author: twheeloc
 ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
 ms.date: 04/12/2024
 ms.update-cycle: 1095-days
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2022-10-14
 ---

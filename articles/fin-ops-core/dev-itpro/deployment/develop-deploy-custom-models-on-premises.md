@@ -1,8 +1,8 @@
 ---
 title: Develop and deploy custom models to on-premises environments
 description: Learn about the process of developing customizations and extensions, and deploying them to an on-premises environment.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: install-set-up-deploy
 ms.date: 05/26/2020
 ms.reviewer: johnmichalak

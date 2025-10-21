@@ -1,8 +1,8 @@
 ---
 title: Dynamics 365 Translation Service overview
 description: Learn about the Microsoft Dynamics 365 Translation Service (DTS), including a table that outlines various supported projects.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 02/12/2025
 ms.custom: 

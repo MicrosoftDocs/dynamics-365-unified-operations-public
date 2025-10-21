@@ -1,8 +1,8 @@
 ---
 title: Platform updates for version 10.0.20 of finance and operations apps (August 2021)
 description: Learn about the features that are included in the platform updates for version 10.0.20 of finance and operations apps.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.date: 05/22/2024
 ms.update-cycle: 1095-days

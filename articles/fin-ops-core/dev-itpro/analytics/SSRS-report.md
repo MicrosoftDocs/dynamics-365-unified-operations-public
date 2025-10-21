@@ -1,8 +1,8 @@
 ---
 title: SQL Server Reporting Services (SSRS) reports that are available
 description: Learn about SQL Server Reporting Services (SSRS) report availability, including an outline of how to view reports.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 02/16/2021
 ms.reviewer: johnmichalak

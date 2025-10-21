@@ -1,8 +1,8 @@
 ---
 title: Requirements for publishing apps on AppSource
 description: Access resources that will help you understand the requirements for creating solutions for finance and operations apps.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 07/31/2018
 ms.reviewer: johnmichalak

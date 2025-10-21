@@ -1,8 +1,8 @@
 ---
 title: Platform updates for version 10.0.12 of finance and operations apps (August 2020)
 description: Learn about the features are included in the platform updates for version 10.0.12 of finance and operations apps.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.date: 07/12/2024
 ms.update-cycle: 1095-days

@@ -1,8 +1,8 @@
 ---
 title: Custom service development
 description: Learn about how to create a custom service including an oultine and key changes of SOAP-based custom services.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 02/07/2020
 ms.reviewer: johnmichalak

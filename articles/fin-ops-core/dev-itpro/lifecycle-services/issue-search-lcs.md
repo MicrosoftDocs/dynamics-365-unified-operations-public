@@ -1,8 +1,8 @@
 ---
 title: Issue search in Lifecycle Services (LCS)
 description: Learn about the Issue search tool on Microsoft Dynamics Lifecycle Services (LCS), including a table that outlines the description results and colors for various statuses.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak

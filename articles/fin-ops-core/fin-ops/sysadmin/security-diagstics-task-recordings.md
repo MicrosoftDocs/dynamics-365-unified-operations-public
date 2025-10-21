@@ -1,8 +1,8 @@
 ---
 title: Security diagnostics for task recordings
 description: Learn about how to analyze and manage security permission requirements based on a task recording, including an outline on managing security for task recordings.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/05/2020
 ms.reviewer: johnmichalak

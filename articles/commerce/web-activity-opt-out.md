@@ -5,7 +5,7 @@ author: bebeale
 ms.date: 05/15/2020
 ms.topic: how-to
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31

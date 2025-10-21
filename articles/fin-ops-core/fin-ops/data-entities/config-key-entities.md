@@ -1,8 +1,8 @@
 ---
 title: Configuration keys and data entities
 description: Learn about the relationship between configuration keys and data entities, including overviews on key configurations and assignments.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 05/10/2019
 ms.reviewer: johnmichalak

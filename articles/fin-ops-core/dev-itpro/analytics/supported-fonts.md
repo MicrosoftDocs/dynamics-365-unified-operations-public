@@ -1,8 +1,8 @@
 ---
 title: Supported fonts
 description: Finance and operations apps include access to over 270 standard business-ready fonts available for documents rendered by the cloud-hosted service.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/13/2021
 ms.reviewer: johnmichalak

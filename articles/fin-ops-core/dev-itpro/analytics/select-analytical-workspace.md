@@ -1,8 +1,8 @@
 ---
 title: Select analytical workspaces from Power BI
 description: Learn how to select a report that is hosted in Power BI and use it for an application workspace and how to revert to the standard solution.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 07/09/2020
 ms.reviewer: johnmichalak

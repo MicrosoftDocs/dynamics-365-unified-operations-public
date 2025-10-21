@@ -1,8 +1,8 @@
 ---
 title: What's new or changed in Platform update 30 for finance and operations apps (November 2019)
 description: Learn about features that are new or changed in Platform update 30 for finance and operations apps in the update available as of November 2019.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom: 
   - bap-template

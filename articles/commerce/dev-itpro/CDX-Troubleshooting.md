@@ -8,7 +8,7 @@ ms.date: 04/02/2024
 ms.topic: troubleshooting-general
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheelocS
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: aneesa

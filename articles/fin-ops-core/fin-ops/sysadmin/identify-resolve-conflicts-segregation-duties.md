@@ -1,8 +1,8 @@
 --- 
 title: Identify and resolve conflicts in segregation of duties
 description: Learn about how to identify and resolve conflicts in segregation of duties, including an outline on verifying compliance with new rules.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 01/04/2021
 ms.custom:

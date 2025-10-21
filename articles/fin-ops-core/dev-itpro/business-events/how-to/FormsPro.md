@@ -1,8 +1,8 @@
 ---
 title: Business events and Microsoft Forms Pro
 description: Learn about business events and Microsoft Forms Pro through a scenario where a survey is sent to users when a product has been shipped.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: upgrade-and-migration-article
 ms.date: 08/12/2019
 # ms.custom: [used by loc for topics migrated from the wiki]

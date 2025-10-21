@@ -1,8 +1,8 @@
 ---
 title: Use record template to create a new record
 description: Learn about how to use a previously defined record template to create a new record, including a step-by-step process.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 08/12/2019
 ms.reviewer: johnmichalak

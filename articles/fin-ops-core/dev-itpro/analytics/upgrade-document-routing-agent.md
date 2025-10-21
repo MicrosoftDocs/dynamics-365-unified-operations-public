@@ -1,8 +1,8 @@
 ---
 title: Update the Document Routing Agent
 description: Learn how to update, uninstall, and re-install the Document Routing Agent, including an outline of best practices.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 05/14/2020
 ms.reviewer: johnmichalak

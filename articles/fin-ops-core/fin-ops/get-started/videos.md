@@ -1,8 +1,8 @@
 ---
 title: Videos
 description: Access a list of Microsoft-created "how-to" and Tech talk videos relating to finance and operations apps that are available on YouTube and other sites.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 06/13/2022
 ms.custom:

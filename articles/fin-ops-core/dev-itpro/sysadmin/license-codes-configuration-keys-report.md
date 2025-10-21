@@ -1,8 +1,8 @@
 ---
 title: License codes and configuration keys report
 description: Access a report that lists the license codes and configuration keys associated with finance and operations apps.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 02/16/2021
 ms.reviewer: johnmichalak

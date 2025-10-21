@@ -2,7 +2,7 @@
 title: Configure PowerBI.com integration
 description: Learn how to configure a new finance and operations environment to support integration with PowerBI.com, including a list of thing to know before starting.
 author: RichdiMSFT
-ms.author: sericks
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 01/21/2022
 ms.reviewer: johnmichalak

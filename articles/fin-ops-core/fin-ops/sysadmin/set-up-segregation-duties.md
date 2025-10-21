@@ -1,8 +1,8 @@
 --- 
 title: Set up segregation of duties
 description: Learn about how you can set up rules to separate tasks that must be performed by different users, including a step-by-step process. 
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 01/04/2021
 ms.custom:

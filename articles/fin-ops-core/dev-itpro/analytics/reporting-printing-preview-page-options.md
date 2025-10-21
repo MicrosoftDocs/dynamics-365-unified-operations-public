@@ -1,8 +1,8 @@
 ---
 title: Document reporting preview options
 description: Learn about the options available in the embedded document reporting previewer, including information about exporting files and accessing preview options.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 09/11/2020
 ms.reviewer: johnmichalak

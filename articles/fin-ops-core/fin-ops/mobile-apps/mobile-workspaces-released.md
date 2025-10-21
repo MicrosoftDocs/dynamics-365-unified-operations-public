@@ -1,8 +1,8 @@
 ---
 title: Available mobile workspaces
 description: Learn about the mobile workspaces that are available for use, including a table that defines and provides deprecation plans for various mobile workspaces.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 05/24/2022
 ms.custom:

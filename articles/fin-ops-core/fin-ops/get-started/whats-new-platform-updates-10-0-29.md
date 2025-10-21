@@ -1,8 +1,8 @@
 ---
 title: Platform updates for version 10.0.29 of finance and operations apps (October 2022)
 description: Learn about the features that are included in the platform updates for version 10.0.29 of finance and operations apps released in October 2022.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom: 
   - bap-template
