@@ -63,4 +63,7 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
 1. Select **Total** in the **Sales quotation** tab.
    - You can view the summary by tax type for Brazilian tax.
 
+> [!IMPORTANT] 
+> The **tax group** and **item tax group** are not populated when the line is saved in Brazil tax reform 2026. They will be populated once tax calculation is triggered — for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
+> 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
