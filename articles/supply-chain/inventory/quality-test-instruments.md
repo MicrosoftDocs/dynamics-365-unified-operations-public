@@ -60,6 +60,6 @@ Learn more in [Test instrument calibration](quality-instrument-calibration.md).
 - [Quality management test](quality-tests.md)
 - [Quality management test groups](quality-test-groups.md)
 - [Test instrument calibration](quality-instrument-calibration.md)
-- [Calibrate test instruments with Asset Management (preview)](../asset-management/preventive-and-reactive-maintenance/asset-management-test-instrument-calibration.md)
+- [Manage test instrument calibration with Asset Management (preview)](../asset-management/preventive-and-reactive-maintenance/asset-management-test-instrument-calibration.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
