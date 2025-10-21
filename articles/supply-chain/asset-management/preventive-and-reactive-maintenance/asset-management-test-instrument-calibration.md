@@ -1,5 +1,5 @@
 ---
-title: Calibrate test instruments with Asset Management (preview)
+title: Manage test instrument calibration with Asset Management (preview)
 description: Learn about how to use Asset Management to schedule maintenance plans for test instruments used in quality management.
 author: johanhoMSFT
 ms.author: johanho
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Calibrate test instruments with Asset Management (preview)
+# Manage test instrument calibration with Asset Management (preview)
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
