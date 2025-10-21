@@ -42,7 +42,7 @@ The remaining sections of this article provide an overview of the activities con
 
 Sample registration is the first step in the sample management process. It serves as the foundation for ensuring quality control in manufacturing. This step involves creating a unique identity for each sample, which allows for accurate tracking and management throughout its lifecycle. By registering samples, manufacturing managers can ensure that all quality-related data is systematically recorded and easily accessible. Samples can be registered in multiple ways, but usually they are registered manually by production personnel as [inline samples](quality-sample-management-inline.md), or periodically based on a [continuous sampling setup](quality-sample-management-continuous.md).
 
-In sample management, samples can be created either manually or automatically, depending on the process requirements. 
+In sample management, samples can be created either manually or automatically, depending on the process requirements.
 
 - **Manual creation**
 
@@ -54,7 +54,7 @@ In sample management, samples can be created either manually or automatically, d
         1. From the Action pane, select **Create manual sample**.
         1. Select one of the two license plates listed to which you want to associate a new sample.
         1. From the Action pane, select **Create sample**.
-        1. Verify that a new record for the sample has been created in the sample management workbench. 
+        1. Verify that a new record for the sample has been created in the sample management workbench.
         1. From the Action pane, select **Create manual quality order** if you with to associate a quality order to the newly created sample.
 - **Automatic creation**
     Samples are generated automatically when using the **Continuous** sampling method. Learn more in: [Set up continuous sampling (preview)](quality-sample-management-continuous.md)
@@ -76,7 +76,7 @@ Collecting samples is the process of extracting a small fraction of the produced
 1. Select a specific sample or multi-select a range of samples you wish to print labels for.
 1. In the Action pane, select **Print sample label** and confirm the printout.
 
-## Testing samples 
+## Testing samples
 
 Testing samples is a critical step in verifying product quality and compliance. Samples collected through both inline and continuous sampling methods can be tested to ensure they meet defined specifications. Within Sample Management, test results are configured to influence production control by updating the status of associated license plates or batch numbers based on the outcome. This integration helps maintain traceability and enforces quality standards throughout the manufacturing process.
 
@@ -130,7 +130,7 @@ To conduct testing of continuous samples (example):
 
 ## Sample archiving
 
-Once a sample has been collected, labeled, and successfully tested, it is typically archived for a defined period until it reaches its expiration date. The expiration date is determined when the sample is created and calculated based on the rules specified in the sample association. The system uses the sample life cycle state to indicate when a sample has been archived, marking its transition from active testing to storage. For details on how expiration periods are determined through sample associations, see: [Set up sample associations](quality-sample-management-admin.md#set-up-sample-associations). 
+Once a sample has been collected, labeled, and successfully tested, it is typically archived for a defined period until it reaches its expiration date. The expiration date is determined when the sample is created and calculated based on the rules specified in the sample association. The system uses the sample life cycle state to indicate when a sample has been archived, marking its transition from active testing to storage. For details on how expiration periods are determined through sample associations, see: [Set up sample associations](quality-sample-management-admin.md#set-up-sample-associations).
 
 Use the following procedure to change the life cycle state from the sample management workbench:
 

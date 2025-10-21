@@ -34,13 +34,13 @@ To analyze sample test results for inline samples, follow these steps:
 1. Validate each quality order, so the are in *Passed* state.
 1. From the Action pane in the production order list page, select **Analyze inline sample results**
 1. In the dialog, set the following fields
-    - **Test** - Select the test you want to analyze.
-    - **Item** - Select the item that is being tested.
+    - **Test** – Select the test you want to analyze.
+    - **Item** – Select the item that is being tested.
 1. Select **OK** to see the chart.
   
 Follow the same procedure for continuous samples in the sample management workbench.
 
-## Sample procedures 
+## Sample procedures
 
 Workers can access predefined procedures when working with samples. These procedures provide step-by-step guidance for different stages of sample handling, such as collecting samples and performing tests. By following these instructions, workers ensure that sampling and testing activities are carried out consistently and in compliance with defined quality standards. Learn more about how to define procedures in: [Define sample procedures](quality-sample-management-admin.md#define-sample-procedures).
 

@@ -43,35 +43,35 @@ This section illustrates how to configure and use continuous sampling. The examp
 
 1. Create a product with the following characteristics:
     - It must be enabled for the advanced warehouse processes. This is enabled by associating a **Storage dimension group*** to the product that has the property **Use warehouse management processes** set to *Yes*.
-    - It must be defined as a batch-enabled product. This is enabled by association a **Tracking dimension group** to the product that has the **Batch number** dimension enabled. 
+    - It must be defined as a batch-enabled product. This is enabled by association a **Tracking dimension group** to the product that has the **Batch number** dimension enabled.
     - The product must be associated a **Batch number group** that is set up to generate a batch number automatically from a number sequence when quantities are reported as finished from a production or batch order.
 1. Set up a sample association for a batch-controlled product as describe in [Enable and configure sample management (preview)](quality-sample-management-admin.md)
 1. Create a production or batch order for the batch-controlled product with the following information:
     - Choose a warehouse that is enabled for the advanced warehouse processes. To confirm this, check the property **Use warehouse management processes** is set to *Yes*.
     - Set the quantity for the order to: 2000 pieces.
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Item sampling**. Set up an item sampling policy as described in [Quality management item sampling](../inventory/quality-item-sampling.md). On the **Sample management** FastTab, be sure to make the following settings to set up continuous sampling:
-    - **Sample inspection method** - Set to *Continuous process*.
-    - **Sample size** - Set to *1*.
-    - **Unit** - Set to *Sp* (spoonful).
-    - **One sample per every** - Set to *2* and *License plate*.
-    - **Number of samples per quality order generated** - Set to *2*.
+    - **Sample inspection method** – Set to *Continuous process*.
+    - **Sample size** – Set to *1*.
+    - **Unit** – Set to *Sp* (spoonful).
+    - **One sample per every** – Set to *2* and *License plate*.
+    - **Number of samples per quality order generated** – Set to *2*.
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**. Set up a test group as described in [Quality management test groups](../inventory/quality-test-groups.md). Make sure at least one test is assigned in the bottom section. On the **General** tab in the top section, be sure to make the following settings to set up the test group for continuous sampling:
-    - **Update inventory status** - Set to *Yes* to enable inventory status updates based on test results.
-    - **Failed quality order status** - Specify the inventory status to apply to the license plate when a quality order fails.
-    - **Passed quality order status** - Specify the inventory status to apply to the license plate when a quality order passes.
+    - **Update inventory status** – Set to *Yes* to enable inventory status updates based on test results.
+    - **Failed quality order status** – Specify the inventory status to apply to the license plate when a quality order fails.
+    - **Passed quality order status** – Specify the inventory status to apply to the license plate when a quality order passes.
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Quality associations**. Set up a quality association as described in [Quality associations](../inventory/quality-associations.md). Be sure to make the following settings: 
-    - **Reference type** - Select **Production*.
-    - **Item code** - Select *Table*.
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Quality associations**. Set up a quality association as described in [Quality associations](../inventory/quality-associations.md). Be sure to make the following settings:
+    - **Reference type** – Select **Production*.
+    - **Item code** – Select *Table*.
     - **Item** – Select the item from the production or batch order you created in the first step.
-    - **Event type** - Select *Report as finished*
-    - **Execution** - Select *After*.
+    - **Event type** – Select *Report as finished*
+    - **Execution** – Select *After*.
     - **Item sampling** – Select the item sampling policy that you created for this exercise.
     - **Test group** – Select the test group that you created for this exercise.
 
-1. Return to the production or batch order that you created in the first step. 
-1. Bring the order into status *Started*. 
+1. Return to the production or batch order that you created in the first step.
+1. Bring the order into status *Started*.
 1. Report as finish four license plates by using the following procedure:
     1. In the Action pane, select the **Report as finished** menu item to open the **Report as finished** dialog.
     1. In the dialog, check that the **License plate** dimension is visible in the grid.
