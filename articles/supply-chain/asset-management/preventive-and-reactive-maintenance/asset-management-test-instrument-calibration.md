@@ -59,7 +59,7 @@ Each test instrument tag represents a physical test instrument and also links to
 1. On the Action Pane, select **New** to add a new tag. Then make the following settings in the header for the new tag:
     - **Tag number** – Enter a unique name, number, or code for the instrument.
     - **Test instrument type** – Specify the test instrument type that this tag belongs to. This field is prefilled to show test instrument type that you had selected when you opened the **Test instrument tags** page.
-    - **Instrument usage status** – The current usage status of the test instrument. Although the field is read-only, you can manually change the status to *Out of service* or *Available* by using the buttons on the **Update usage status** tab of the Action Pane <!-- KFM: This Action Pane button is always disabled for me for Asset Management enable tags. Are manual changes not support for AM assets? -->. The following status values are used:
+    - **Instrument usage status** – The current usage status of the test instrument. Although the field is read-only, you can manually change the status to *Out of service* or *Available* by using the buttons on the **Update usage status** tab of the Action Pane. The following status values are used:
 
         - *Available* – The test instrument is ready to be assigned to a new quality order.
         - *Calibration* – The test instrument is currently being calibrated. This status is automatically set when an open (in-progress) calibration record exists for this test instrument tag.
