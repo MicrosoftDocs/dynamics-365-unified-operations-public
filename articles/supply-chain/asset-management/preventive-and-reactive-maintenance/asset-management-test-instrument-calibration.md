@@ -16,13 +16,13 @@ ms.custom:
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Calibration ensures that test instruments provide accurate and reliable measurements, which is critical for maintaining product quality, meeting regulatory requirements, and avoiding costly errors. Asset Management in Dynamics 365 Supply Chain Management provides tools to schedule, track, and document calibration activities for all your test instruments.
+Calibration ensures that test instruments provide accurate and reliable measurements. This accuracy is critical for maintaining product quality, meeting regulatory requirements, and avoiding costly errors. Asset Management in Dynamics 365 Supply Chain Management provides tools to schedule, track, and document calibration activities for all your test instruments.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Maintaining accurate and reliable test instruments is essential for ensuring product quality, meeting regulatory requirements, and reducing operational risks. Supply Chain Management provides a connected framework that brings together quality control and asset management to achieve these goals.
 
-- **Standardized instrument management** - Define test instrument types to guide quality teams in selecting the right tools for inspections and calibration. This ensures consistency, reduces errors, and supports compliance across all quality processes.
+- **Standardized instrument management** - Define test instrument types to guide quality teams in selecting the right tools for inspections and calibration. This approach ensures consistency, reduces errors, and supports compliance across all quality processes.
 - **Full traceability and digital records** - Use test instrument tags as digital twins of physical instruments. These tags store calibration history, specifications, and usage data, enabling complete traceability and simplifying audits.
 - **Automated quality tracking** - Quality orders not only capture inspection results but can also track instrument usage automatically. This usage data drives usage-based calibration schedules, ensuring instruments remain accurate without manual intervention.
 - **Lifecycle control through asset management** - Model each test instrument as an asset, giving you full visibility into its lifecycle, from acquisition to calibration and retirement, while aligning with maintenance best practices.
@@ -31,18 +31,16 @@ Maintaining accurate and reliable test instruments is essential for ensuring pro
 
 ## Prerequisites
 
-<!-- KFM: I added this section. Is it correct? Anything more to say here? -->
-
 To use Asset Management to maintain calibration of test instruments, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.47 or later.
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.46 or later.
 - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
     - *Advanced quality management*
     - *(Preview) Optional linking of test instruments to maintainable assets*
 
 ## Set up calibration in Asset Management
 
-To set up test instrument calibration using Asset Management, complete the following steps. Follow the links to learn more about each step.
+To set up your system to manage test instrument calibration with Asset Management, complete the following steps. Follow the links to learn more about each step.
 
 1. **Create assets for your test instruments** – Create assets for the test instruments that require scheduled calibration in Asset Management. When defining an asset, you must assign an **Asset type**, which categorizes the asset and helps standardize its management and maintenance processes. Learn more about defining assets in [Create an asset](../objects/create-an-object.md).
 1. **Set up test instrument types** – Test instrument types serve as categories for grouping similar test instruments. Each test instrument type must be linked to an **Asset type** to ensure consistency between quality management and asset management processes. Learn more about test instrument types in [Quality management test instruments](../../inventory/quality-test-instruments.md).
@@ -58,7 +56,7 @@ Each test instrument tag represents a physical test instrument and also links to
 1. On the Action Pane, select **Test instrument tags**.
 1. On the Action Pane, select **New** to add a new tag. Then make the following settings in the header for the new tag:
     - **Tag number** – Enter a unique name, number, or code for the instrument.
-    - **Test instrument type** – Specify the test instrument type that this tag belongs to. This field is prefilled to show test instrument type that you had selected when you opened the **Test instrument tags** page.
+    - **Test instrument type** – Specify the test instrument type that this tag belongs to. This field is prefilled to show test instrument type that was selected when you opened the **Test instrument tags** page.
     - **Instrument usage status** – The current usage status of the test instrument. Although the field is read-only, you can manually change the status to *Out of service* or *Available* by using the buttons on the **Update usage status** tab of the Action Pane. The following status values are used:
 
         - *Available* – The test instrument is ready to be assigned to a new quality order.
