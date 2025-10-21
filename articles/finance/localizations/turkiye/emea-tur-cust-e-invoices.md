@@ -4,7 +4,7 @@ description: Learn how to get started with Electronic invoicing for Türkiye in 
 author: v-omerorhan
 ms.author: v-omerorhan
 ms.topic: article
-ms.date: 08/18/2023
+ms.date: 10/21/2023
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Türkiye
@@ -82,7 +82,7 @@ To configure customer account, follow these steps;
 
 ### Set up unit of measure mappings for e-invoices
 
-This section explains how to set up unit of measure mappings in Dynamics 365 Finance so that internal unit codes (such as *EA*, *KG*, or *M*) are correctly converted to **UN/ECE international codes** (such as *C62*, *KGM*, or *MTR*).  
+This section explains how to set up unit of measure mappings in Finance so that internal unit codes (such as *EA*, *KG*, or *M*) are correctly converted to UN/ECE unit codes (such as *C62*, *KGM*, or *MTR*).  
 
 To configure the mappings, follow these steps:
 
@@ -90,10 +90,11 @@ To configure the mappings, follow these steps:
 2. Select a unit, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** column, enter the **internal unit ID** (for example, *EA* for “each”) that represents the unit used in Dynamics 365 Finance.
 4. In the **Standard code** column, select the checkbox.
-5. In the **Value** section, in the **Value** field, enter the **UN/ECE international code** (for example, *C62* for “each”).  
+5. In the **Value** section, in the **Value** field, enter the **UN/ECE unit code** (for example, *C62* for “each”).  
    This value will be used as the **unitCode** attribute in the `<InvoicedQuantity>` element of the generated e-invoice XML.
 
-![Invoice quantity mapping](../media/emea-tur-invoice-quantity-mapping.png)
+![Unit code mapping](../media/emea-tur-unit-code-mapping.png)
+
 
 > [!NOTE]
 > The configured unit mapping determines the `unitCode` value that appears in the `<cbc:InvoicedQuantity>` element of the generated UBL-TR e-invoice XML.  
@@ -160,7 +161,7 @@ To set up a **TaxTypeCode**, follow these steps;
 7. Repeat for all required tax types.
 8. Save your changes and set the **State** to **Completed**.
 
-![Mapping TaxTypeCode](../media/emea-tur-cust-e-invoices-tax-type-code.png)
+![TaxTypeCode mapping](../media/emea-tur-cust-e-invoices-tax-type-code.png)
 
 > [!NOTE]
 > The configured **TaxTypeCode** value is written into the `<TaxTypeCode>` element in the generated UBL-TR XML.  
