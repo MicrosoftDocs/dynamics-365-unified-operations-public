@@ -65,6 +65,8 @@ Go to **System administration → Security → Security governance → User acti
 
 ## Step 3: Familiarize Yourself with the Licensing Model
 
+ :::image type="content" source="media/playbook-step-3-familiarize-yourself-with-the-licensing-model alt-text="Familiarize Yourself with the Licensing Model" lightbox="media/playbook-step-3-familiarize-yourself-with-the-licensing-model.png":::
+
 **Why**  
 F&O uses a **named user** model that ties **roles, duties, and privileges** to license requirements, so misunderstanding the model can result in **under-license risk** or **over-purchasing**. Users who span functionality across **Finance**, **Supply Chain Management**, **Commerce**, **Human Resources**, and **Project Operations** may need multiple licenses (Base + Attach) to remain compliant. The **Team Members** and **Operations – Activity** licenses are designed for light or read‑only usage, but a single "write" privilege can escalate a user into a higher license tier. Knowing these nuances ensures that your security design aligns with the lowest correct license level for each persona. It also helps you explain decisions to stakeholders and withstand audits with confidence.
 
@@ -72,7 +74,7 @@ F&O uses a **named user** model that ties **roles, duties, and privileges** to l
 You will review the current [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) to understand **entitlements, Base vs. Attach requirements, and product‑specific requirements**. Specifically, identify what each license type covers at a functional level (for example, which processes in Finance vs. Supply Chain Management) and where overlaps occur. Capture a simple mapping between your **key business personas** and their **intended license types** based on responsibilities. Pay special attention to custom roles that may aggregate privileges across product boundaries, as these commonly lead to attach license needs. Align your understanding with your partner/seller to ensure shared definitions.
 
 **How**  
-Read the latest [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). Create an internal reference mapping **standard roles** (and your top 15–30 custom personas) to intended license tiers. Mark any areas where your current roles appear to exceed intended scope (for example, unexpected write privileges) and flag them for remediation in Step 4. Socialize this with security owners and functional leads to build consensus before you assign or purchase licenses. Keep the reference current as your roles evolve.
+Read the latest [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233). Create an internal reference mapping **standard roles** (and your top 15–30 custom personas) to intended license tiers. Mark any areas where your current roles appear to exceed intended scope (for example, unexpected write privileges) and flag them for remediation in Step 4. Socialize this with security owners and functional leads to build consensus before you assign or purchase licenses. Keep the reference current as your roles evolve.
 
 ---
 
@@ -190,4 +192,8 @@ For Enterprise Agreement customers, in **Microsoft 365 Admin Center** go to **Bi
 ## Additional Resources
 
 - [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)  
- Admin Center)](https://learn.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)e tenant: licensing requirements](../../fin-ops/get-started/implement-multiple-projects-a
+- [Dynamics 365 Finance and Operations Apps Security Role FAQ](https://go.microsoft.com/fwlink/?linkid=2319108)
+- [Security governance FAQ](https://go.microsoft.com/fwlink/?linkid=2319108)
+- [User security governance overview](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview)
+- [Security governance FAQ](https://go.microsoft.com/fwlink/?linkid=2319108)  
+- [Assign Microsoft 365 licenses to user accounts with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell)
