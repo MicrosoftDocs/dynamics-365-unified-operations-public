@@ -13,14 +13,14 @@ ms.custom:
   - evergreen
 ---
 
-# What's new or changed in Dynamics 365 Supply Chain Management 10.0.45 (September  2025)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.45 (September 2025)
 
 [!include [banner](../includes/banner.md)]
 
 This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.45. This version has a build number of 10.0.2345 and is available on the following schedule:
 
 - **Preview of release:** July 2025
-- **General availability of release (self-update):** September  2025
+- **General availability of release (self-update):** September 2025
 - **General availability of release (auto-update):** October 2025
 
 ## Features included in this release

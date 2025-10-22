@@ -25,4 +25,4 @@ To use lean manufacturing processes with Planning Optimization, your system must
 
 - To use the preview release of this feature, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.45.
 - To use the general availability release of this feature, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.46 or later.
-- The feature that is named *(Preview) Lean manufacturing for Planning Optimization* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Lean manufacturing for Planning Optimization* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
