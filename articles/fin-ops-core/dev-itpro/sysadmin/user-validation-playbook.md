@@ -152,13 +152,13 @@ For EA customers, in **Microsoft 365 Admin Center** go to **Billing → Your pro
 
 | Step | Action | Tool / Report |
 |------|--------|----------------|
-| **0** | Upgrade to latest Quality Update | Lifecycle Services (Lifecycle services) |
-| **1** | Remove inactive users | User Security Governance → User Activity Aging Report |
-| **2** | Review licensing model | Dynamics 365 Licensing Guide |
-| **3** | Review user‑role mapping | Power Platform admin center / Lifecycle services (User License Consumption) |
-| **4** | Validate license triggers | F&O User Security Governance (License Usage Summary, Security Analysis) |
-| **5** | Assign licenses | Microsoft 365 Admin Center |
-| **6** | Plan additional licenses | Volume Licensing Reservations / CSP Purchase |
+| **1** | Upgrade to latest Quality Update | Lifecycle Services (Lifecycle services) |
+| **2** | Remove inactive users | User Security Governance → User Activity Aging Report |
+| **3** | Review licensing model | Dynamics 365 Licensing Guide |
+| **4** | Review user‑role mapping | Power Platform admin center / Lifecycle services (User License Consumption) |
+| **5** | Validate license triggers | F&O User Security Governance (License Usage Summary, Security Analysis) |
+| **6** | Assign licenses | Microsoft 365 Admin Center |
+| **7** | Plan additional licenses | Volume Licensing Reservations / CSP Purchase |
 
 ---
 
