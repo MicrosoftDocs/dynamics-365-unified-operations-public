@@ -30,8 +30,7 @@ Confirm these prerequisites:
 - ✅ **Upgrade to latest Quality Update**
 - ✅ **Understand product SKUs (base vs. attach)**
 - ✅ **Enable User Security Governance reports** in Feature management
-
-Review [Dynamics 365 Licensing Guide](https://www.microsoft.com/en-us/licensing/product-licensing/dynamics365?culture=en-us&country=us)
+- ✅ Review [Dynamics 365 Licensing Guide](https://www.microsoft.com/en-us/licensing/product-licensing/dynamics365?culture=en-us&country=us)
 
 ## Step 1: Upgrade to the Latest Quality Update (10.0.45)
 
