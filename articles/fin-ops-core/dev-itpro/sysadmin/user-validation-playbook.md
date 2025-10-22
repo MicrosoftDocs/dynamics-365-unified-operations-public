@@ -123,14 +123,18 @@ Keep the reference current as your roles evolve.
 **Why**  
 A high‑level license view across environments highlights **where available seat does not meet required seats** — for example, too few Finance seats for the number of users needing Finance. This step is the fastest way to quantify **how many** of each license type you need to assign or acquire, and to identify users who lack any assigned license. 
 
-It provides a **cross‑tenant picture** that complements the granular privilege analysis inside system administration for Finance and Operations. By spotting shortfalls early, you can avoid last‑minute purchases, approval bottlenecks, and potential user impact when per-user license validation begins. You can also discover mis-allocations (for example, licenses assigned to users who no longer need them) that can be reallocated to close gaps.
+It provides a **cross‑tenant picture** that complements the granular privilege analysis inside system administration for Finance and Operations. By spotting shortfalls early, you can avoid last‑minute purchases, approval bottlenecks, and potential user impact when per-user license validation begins. 
+
+You can also discover mis-allocations (for example, licenses assigned to users who no longer need them) that can be reallocated to close gaps.
 
 **What**  
 You will use the [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) "User License Consumption" reports for Finance and Operations to compare **Required vs. Purchased vs. Assigned** seats by product. 
 
 The report shows **Total users requiring a license**, **base licenses** assigned/available, and **attach licenses** assigned/available per product (Finance, Supply Chain Management, Commerce, HR, Project Ops, Team Members, Operations – Activity). 
 
-You can drill down into **"Users with unassigned licenses"** to see exactly who is missing seats and which license the user requires. You may also use [**Lifecycle services**](https://lcs.dynamics.com/v2) to cross‑check production counts and export the same CSV data if [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) access is not available. Exporting to CSV can support deeper analysis, filtering, and sharing with stakeholders.
+You can drill down into **"Users with unassigned licenses"** to see exactly who is missing seats and which license the user requires. You may also use [**Lifecycle services**](https://lcs.dynamics.com/v2) to cross‑check production counts and export the same CSV data if [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) access is not available. 
+
+Exporting to CSV can support deeper analysis, filtering, and sharing with stakeholders.
 
 **How**  
 Open **Power Platform admin center → Licensing → Finance and Operations** and review the **product‑level license summaries**.
@@ -145,7 +149,9 @@ Export the CSV and annotate gaps, for example:
 
 Then route the findings to procurement or your Microsoft partner.
 
-If you do not have Power Platform admin center access, open **Lifecycle services → Project → Environment → User License Consumption report** and download the CSV to achieve a similar view. Keep this license gap analysis handy—you will resolve it via role cleanup (**Step 4**) and license assignment/ordering (**Steps 5–6**).
+If you do not have Power Platform admin center access, open **[Lifecycle services](https://lcs.dynamics.com/v2) → Project → Environment → User License Consumption report** and download the CSV to achieve a similar view. 
+
+Keep this license gap analysis handy—you will resolve it via role cleanup (**Step 4**) and license assignment/ordering (**Steps 5–6**).
 
 > **Product cards show:**  
 > - Total users requiring a license  
