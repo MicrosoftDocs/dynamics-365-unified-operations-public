@@ -46,7 +46,7 @@ In Finance and Commerce, there's an external schema called the *EXT schema* that
 - Avoid accessing tables directly in the EXT schema. You can instead use *views* to read records, and *stored procedures* to insert, update, or delete records.
 - Editing the values of any fields of tables in AX or CRT schemas from an extension is unsupported by Microsoft and may eventually break the schemas when stricter enforcement improvements are introduced. Microsoft doesn't support any issues that arise from editing schema values via extensions.
 
-### Generated extension SQL scripts
+### Generated extension SQL script
 
 The Generated extension SQL script feature (available in Commerce versions 10.0.46 and later) simplifies and accelerates the process of adding extensions to the channel database. 
 
