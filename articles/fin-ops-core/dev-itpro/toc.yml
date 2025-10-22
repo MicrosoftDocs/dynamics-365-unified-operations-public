@@ -1916,7 +1916,7 @@ items:
         - name: Stay compliant with user licensing requirements
           href: sysadmin/stay-compliant-user-license-requirement.md
         - name: User validation playbook
-          href: sysadmin/suser-validation-playbook.md
+          href: sysadmin/user-validation-playbook.md
       - name: View independent software vendor license status
         href: sysadmin/view-isv-license-status.md
       - name: Process automation
