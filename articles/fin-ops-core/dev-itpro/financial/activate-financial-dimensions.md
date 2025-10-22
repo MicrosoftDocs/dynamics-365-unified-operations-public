@@ -19,7 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 >[!Warning]
-> The Dimension attribute activation entity can't be used in production environments. Activating dimensions requires maintenance mode, which ensures the required schema changes are fully replicated across all AOS caches, and no open database transactions are impacted. Sandbox environments continue to support the use of the Dimension attribute activation entity. However, in production environments, this functionality is blocked to maintain system stability and data integrity. A service restart on the environment may be required when activating outside of maintenance mode in order to synchronize AOS caches.
+> The Dimension attribute activation entity can't be used in production environments. Activating dimensions requires maintenance mode, which ensures the required schema changes are fully replicated across all AOS caches, and no open database transactions are impacted. Sandbox environments continue to support the use of the Dimension attribute activation entity. In production environments, this functionality is blocked to maintain system stability and data integrity. A service restart on the environment may be required when activating outside of maintenance mode in order to synchronize AOS caches.
 
 This article contains information about the activating financial dimension process.
 
