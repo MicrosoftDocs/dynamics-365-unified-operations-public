@@ -43,7 +43,7 @@ Confirm these prerequisites:
  :::image type="content" source="media/playbook-step-1-upgrade-latest-quality-update.png" alt-text="Upgrade to the latest Product Quality Update" lightbox="media/playbook-step-1-upgrade-latest-quality-update.png":::
 
 **Why**  
-Upgrading ensures your environment has the **current license validation logic, telemetry, and reporting** needed to make accurate decisions. New governance capabilities, including **User Security Governance (USG)**, were introduced and improved in recent versions and may not be available in older builds. 
+Upgrading ensures your environment has the **current license validation logic, telemetry, and reporting** needed to make accurate decisions. New governance capabilities, including **User Security Governance (USG)**, were introduced and improved in recent versions and may not be available in older releases. 
 
 Running the latest **Proactive Quality Update** reduces the risk of encountering known issues or missing features that affect license calculations or report completeness. This step also standardizes the behavior across all environments, so your analysis in test/sandbox mirrors what You can see in production. 
 
