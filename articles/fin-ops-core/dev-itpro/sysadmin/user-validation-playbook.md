@@ -26,11 +26,11 @@ Confirm these prerequisites:
 
 - ✅ **System Administrator access** in Dynamics 365 F&O  
 - ✅ **Power Platform Admin or Global Admin permissions**  
-- ✅ **Access to Microsoft 365 Admin Center**  
+- ✅ **Access to [Microsoft 365 Admin Center](https://admin.microsoft.com)**  
 - ✅ **Upgrade to latest Quality Update**
-- ✅ **Understand product SKUs (base vs. attach)**
+- ✅ **Understand Dynamics 365 Product model (base vs. attach)**
 - ✅ **Enable User Security Governance reports** in Feature management
-- ✅ Review [Dynamics 365 Licensing Guide](https://www.microsoft.com/en-us/licensing/product-licensing/dynamics365?culture=en-us&country=us)
+- ✅ **Review [Dynamics 365 Licensing Guide](https://www.microsoft.com/en-us/licensing/product-licensing/dynamics365?culture=en-us&country=us)**
 
 ## Step 1: Upgrade to the Latest Quality Update (10.0.45)
 
