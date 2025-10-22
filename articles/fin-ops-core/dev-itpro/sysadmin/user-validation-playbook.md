@@ -86,7 +86,13 @@ Go to **System administration → Security → Security governance → User acti
  :::image type="content" source="media/playbook-step-3-familiarize-yourself-with-the-licensing-model.png" alt-text="Familiarize Yourself with the Licensing Model" lightbox="media/playbook-step-3-familiarize-yourself-with-the-licensing-model.png":::
 
 **Why**  
-Dynamics 365 finance and operations apps use a **named user** model that ties **roles, duties, and privileges** to license requirements, so misunderstanding the model can result in **under-license risk** or **over-purchasing**. Users who span functionality across **Finance**, **Supply Chain Management**, **Commerce**, **Human Resources**, and **Project Operations** may need multiple licenses (Base + Attach) to remain compliant. The **Team Members** and **Operations – Activity** licenses are designed for light or read‑only usage, but a single "write" privilege can escalate a user into a higher license tier. Knowing these nuances ensures that your security design aligns with the lowest correct license level for each persona. It also helps you explain decisions to stakeholders and withstand audits with confidence.
+Dynamics 365 finance and operations apps use a **named user** model that ties **roles, duties, and privileges** to license requirements, so misunderstanding the model can result in **under-license risk** or **over-purchasing**. 
+
+Users who span functionality across **Finance**, **Supply Chain Management**, **Commerce**, **Human Resources**, and **Project Operations** may need multiple licenses (Base + Attach) to remain compliant. 
+
+The **Team Members** and **Operations – Activity** licenses are designed for light or read‑only usage, but a single "write" privilege can escalate a user into a higher license tier.
+
+Knowing these nuances ensures that your security design aligns with the lowest correct license level for each persona. It also helps you explain decisions to stakeholders and withstand audits with confidence.
 
 **What**  
 You will review the current [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) to understand **entitlements, Base vs. Attach requirements, and product‑specific requirements**. Specifically, identify what each license type covers at a functional level (for example, which processes in Finance vs. Supply Chain Management) and where overlaps occur. Capture a simple mapping between your **key business personas** and their **intended license types** based on responsibilities. Pay special attention to custom roles that may aggregate privileges across product boundaries, as these commonly lead to attach license needs. Align your understanding with your partner/seller to ensure shared definitions.
