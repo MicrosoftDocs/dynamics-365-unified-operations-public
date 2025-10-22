@@ -3846,43 +3846,45 @@
                       href: localizations/iberoamerica/ltm-paraguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
                     - name: Set up a legal entity and tax information for Paraguay
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-paraguay.md
-                - name: Peru
+                - name: Perú
                   items:
                     - name: Perú overview
                       href: localizations/iberoamerica/ltm-Peru_Overview.md
-                    - name: Configure printing for Cash and Banks Ledger reports for Peru
+                    - name: Configure electronic invoice parameters for Perú
+                      href: localizations/iberoamerica/ltm-peru-configure-electronic-invoice.md
+                    - name: Configure printing for Cash and Banks Ledger reports for Perú
                       href: localizations/iberoamerica/ltm-Peru-cash-bank-report.md
-                    - name: Configure printing for the Electronic Purchase Register (RCE) for purchases domiciled in Peru
+                    - name: Configure printing for the Electronic Purchase Register (RCE) for purchases domiciled in Perú
                       href: localizations/iberoamerica/ltm-Peru-RCE-domiciled-report.md
-                    - name: Configure printing for the Electronic Purchase Register (RCE) for purchases not domiciled in Peru
+                    - name: Configure printing for the Electronic Purchase Register (RCE) for purchases not domiciled in Perú
                       href: localizations/iberoamerica/ltm-Peru-RCE-not-domiciled-report.md
-                    - name: Configure printing for the IGV withholding tax report for Peru
+                    - name: Configure printing for the IGV withholding tax report for Perú
                       href: localizations/iberoamerica/ltm-Peru-withholding-file.md
-                    - name: Configure printing for the simplified annex of the Electronic Purchase Register (RCE) for Peru
+                    - name: Configure printing for the simplified annex of the Electronic Purchase Register (RCE) for Perú
                       href: localizations/iberoamerica/ltm-Peru-RCE-simplified-report.md
-                    - name: Configure printing for the Electronic Sales and Income Registry (RVIE) report for Peru
+                    - name: Configure printing for the Electronic Sales and Income Registry (RVIE) report for Perú
                       href: localizations/iberoamerica/ltm-Peru-RVIE-report.md
-                    - name: Configure printing for the simplified Electronic Sales and Income Registry (RVIE) report for Peru
+                    - name: Configure printing for the simplified Electronic Sales and Income Registry (RVIE) report for Perú
                       href: localizations/iberoamerica/ltm-Peru-RVIE-simplified-report.md
-                    - name: Configure sales and purchase invoices for Peru
+                    - name: Configure sales and purchase invoices for Perú
                       href: localizations/iberoamerica/ltm-Configure-invoices-Peru.md
-                    - name: Create customer and vendor records with an address in Peru
+                    - name: Create customer and vendor records with an address in Perú
                       href: localizations/iberoamerica/ltm-create-customer-and-vendor-Peru.md
-                    - name: Set up a legal entity and tax information for Peru
+                    - name: Set up a legal entity and tax information for Perú
                       href: localizations/iberoamerica/ltm-Set-up-legal-entity-and-tax-Peru.md
-                    - name: Set up and generate an electronic accounting plan for Peru
+                    - name: Set up and generate an electronic accounting plan for Perú
                       href: localizations/iberoamerica/ltm-Peru-accounting-plan.md
-                    - name: Set up and generate an electronic general ledger report for Peru
+                    - name: Set up and generate an electronic general ledger report for Perú
                       href: localizations/iberoamerica/ltm-Peru-electronic-general-ledger.md
-                    - name: Set up and generate an electronic ledger posting report for Peru
+                    - name: Set up and generate an electronic ledger posting report for Perú
                       href: localizations/iberoamerica/ltm-Peru-electronic-ledger-posting.md
-                    - name: Set up and generate a printed ledger posting report for Peru
+                    - name: Set up and generate a printed ledger posting report for Perú
                       href: localizations/iberoamerica/ltm-Peru-printed-ledger-posting-report.md
-                    - name: Set up and generate a printed general ledger report for Peru
+                    - name: Set up and generate a printed general ledger report for Perú
                       href: localizations/iberoamerica/ltm-Peru-printed-general-ledger.md
                     - name: Set up and generate the Annual DAOT purchases report for Peru
                       href: localizations/iberoamerica/ltm-Peru-daot-purchase-report.md
-                    - name: Set up and generate the Annual DAOT with Third Parties sales report for Peru
+                    - name: Set up and generate the Annual DAOT with Third Parties sales report for Perú
                       href: localizations/iberoamerica/ltm-Peru-daot-sales-report.md
                 - name: Poland
                   items:
