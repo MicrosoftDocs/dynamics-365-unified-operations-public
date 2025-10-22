@@ -20,7 +20,7 @@ This playbook helps administrators prepare for **per-user license validation** f
 
 Each step includes **Why**, **What**, and **How** explanations that are clear, actionable, and aligned security governance best practices. 
 
-Where appropriate, You can find tables that organize information such as license types, report paths, and validation outcomes. 
+Where appropriate, you can find tables that organize information such as license types, report paths, and validation outcomes. 
 
 Use this playbook sequentially for best results, and **repeat** Steps **3–6** periodically as your security model and user base evolve.
 
