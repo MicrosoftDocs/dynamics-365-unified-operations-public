@@ -113,6 +113,7 @@ You will use **License usage summary** in User Security Governance to analyze us
 In Finance and Operations, navigate to **System administration → Security → Security governance → License usage summary** and filter to users or roles of interest. For users with unexpected license needs, drill down to **privileges** marked **Not Entitled** to understand which entry points cause the escalation. Use **Security analysis** to locate all roles that include the problematic entry point, then open **Security configuration** to adjust/remediate the role (for example, remove write or high‑impact privileges for read‑only personas). Recalculate/refresh the report and verify that the user now aligns to the intended license tier; if not feasible, plan to assign the appropriate attach license in Step 5. Document changes and rationale for audit traceability.
 
 **License Tags User Security Governance (User Security Governance)**
+
 | License Tag     | Meaning                                                                                   |
 |-----------------|-------------------------------------------------------------------------------------------|
 | **Entitled**    | Action/privilege is covered by the current license and doesn’t trigger a higher license. |
@@ -120,6 +121,7 @@ In Finance and Operations, navigate to **System administration → Security → 
 | **Not Required**| Action/privilege has no license requirement.                      |
 
 **Related Reports & Tools**
+
 | Report / Tool         | Path                                                                              | Purpose                                                                                                  |
 |-----------------------|-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | **Security Analysis** | System Administration → Security → Security governance → **Security analysis**    | Identify privileges/entry points and all roles that include them; locate root causes of license needs.  |
