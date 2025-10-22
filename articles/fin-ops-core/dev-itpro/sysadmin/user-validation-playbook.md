@@ -78,10 +78,10 @@ You will identify and deactivate (or remove) users who have not logged in within
 
 The **User Activity Aging** report in the **User Security Governance** workspace provides a configurable view of users grouped by inactivity ranges (for example **30**, **60**, **90**, **120+** days). 
 
-You can use those groupings to determine which accounts should be disabled or deleted, based on HR and IT policies. After offboarding those inactive accounts, the high‑level license reports will reflect the active user set. 
+You can use those groupings to determine which inactive accounts should be disabled, based on HR and IT policies. After offboarding those inactive accounts, the high‑level license reports will reflect the active user set. 
 
 **How**  
-Go to **System administration → Security → Security governance → User activity aging** to review current activity levels. Configure your day ranges under **System administration → Security → Security governance setup → Parameters → User aging periods** to align with your company's policy (for example 30/60/90/120 days). For each inactive user, go to **System administration → Users → Users** and set **Enabled** to **No**. Wait 24 hours and check the license reports ([Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)/[Lifecycle Services](https://lcs.dynamics.com/v2) and User Security Governance) to confirm inactive users are no longer included in "total users".
+Go to **System administration → Security → Security governance → User activity aging** to review current activity levels. Configure your day ranges under **System administration → Security → Security governance setup → Parameters → User aging periods** to align with your company's policy (for example **30**/**60**/**90**/**120+** days). For each inactive user, go to **System administration → Users → Users** and set **Enabled** to **No**. Wait 24 hours and check the license reports ([Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)/[Lifecycle Services](https://lcs.dynamics.com/v2) and User Security Governance) to confirm inactive users are no longer included in "total users".
 
 ---
 
