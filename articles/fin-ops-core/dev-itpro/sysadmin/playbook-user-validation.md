@@ -105,7 +105,7 @@ Knowing these nuances ensures that your security design aligns with the lowest c
 **What**  
 You will review the current [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) to understand **entitlements, Base vs. Attach requirements, and product‑specific requirements**. Specifically, identify what each license type covers at a functional level (for example, which processes in Finance vs. Supply Chain Management) and where overlaps occur. 
 
-Capture a simple mapping between your **key business personas** and their **intended license types** based on responsibilities. Pay special attention to custom roles that may aggregate privileges across product boundaries, as these commonly lead to attach license needs. Align your understanding with your partner/seller to ensure shared definitions.
+Capture a simple mapping between your **key business personas** and their **intended license types** based on responsibilities. Pay special attention to custom roles that may aggregate privileges across product boundaries, as these commonly lead to attach license needs. Align your understanding with your stakeholders/partner to ensure aligned definitions.
 
 **How**  
 Read the latest [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [**Dynamics 365 Licensing Deck**](https://go.microsoft.com/fwlink/?linkid=2279233). Create an internal reference mapping **standard roles** (and your top 30–50 custom personas) to intended licenses. 
