@@ -128,7 +128,9 @@ In Finance and Operations, navigate to **System administration → Security → 
 
 ---
 
-## Step 6: Align License Assignments in Microsoft 365 Admin Center
+## Step 6: Align License Assignments in Microsoft 365 admin center
+
+ :::image type="content" source="media/playbook-step-6-align-license-assignments-in-microsoft-365-admin-center.png" alt-text="align license assignment in Microsoft 365 admin center" lightbox="media/playbook-step-6-align-license-assignments-in-microsoft-365-admin-center.png":::
 
 **Why**  
 When license validation begins, **users without the assigned required licenses will be unable to sign in to Dynamics 365 finance and operations production environments**. Assigning the right **Base and Attach** licenses in advance prevents business disruption, especially in period‑end finance, warehousing, and order processing. Relying on "available seats" without explicit assignment is insufficient—licenses must be **assigned to each user** to be recognized. Timely assignments also reduce support load from end‑user warnings and avoid emergency escalations to procurement or IT. Completing assignments after Step 4 ensures you aren’t paying for licenses that better role hygiene could have avoided.
@@ -137,7 +139,7 @@ When license validation begins, **users without the assigned required licenses w
 You will assign the appropriate **Dynamics 365 Finance**, **Supply Chain Management**, **Commerce**, **Human Resources**, **Project Operations**, **Team Members**, or **Operations – Activity** licenses to each user per the Power Platform admin center and User Security Governance findings. For users spanning multiple apps, assign a **Base** license (highest‑value app) and then the necessary **Attach** licenses. If you find misassigned licenses (for example, a full license on a read‑only user), reallocate them to users who actually need them. Create a **worklist** from Power Platform admin center’s "Users with unassigned licenses" and work through it systematically. Ensure alignment with HR and business owners for any role changes.
 
 **How**  
-In the **Microsoft 365 Admin Center**, go to **Users → Active users → [Select user] → Licenses and apps**, then assign the required license(s). Follow Base‑then‑Attach sequencing: for example, give **Finance (Base)** first, then **Supply Chain Management (Attach)** if the user needs both. Where supported, you can deep‑link from Power Platform admin center user records to the admin center to speed assignments. After assignment, re‑run Power Platform admin center/User Security Governance reports to confirm the user no longer appears in the "unassigned" or "Not Entitled" categories. Keep a change log (user, license, date) to support audits and renewal planning.
+In the **Microsoft 365 admin center**, go to **Users → Active users → [Select user] → Licenses and apps**, then assign the required license(s). Follow Base‑then‑Attach sequencing: for example, give **Dynamics 365 Finance** first, then **Dynamics 365 Supply Chain Management Attach to Qualifying Dynamics 365 Base Offer (Attach)** if the user needs both. Where supported, you can deep‑link from Power Platform admin center user records to the admin center to speed assignments. After assignment, wait 24 hours, and check Power Platform admin center/User Security Governance reports to confirm the user no longer appears in the "Total users requiring license" category. Keep a change log (user, license, date) to support audits and renewal planning.
 
 ---
 
