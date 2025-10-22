@@ -15,6 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Calibration ensures that test instruments provide accurate and reliable measurements. This accuracy is critical for maintaining product quality, meeting regulatory requirements, and avoiding costly errors. Asset Management in Dynamics 365 Supply Chain Management provides tools to schedule, track, and document calibration activities for all your test instruments.
 
