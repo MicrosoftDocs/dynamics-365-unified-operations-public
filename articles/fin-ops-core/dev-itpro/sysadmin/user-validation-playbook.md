@@ -16,7 +16,7 @@ ms.custom:
 
 # Playbook for Dynamics 365 Finance and Operations apps User License Validation
 
-This playbook helps administrators prepare for **per-user license validation** for Dynamics 365 Finance and Operations (F&O) apps. It provides step-by-step guidance to align licensing with security roles, and prevent user access disruptions when per-user license validation goes into effect. Each step includes **Why**, **What**, and **How** explanations that are clear, actionable, and aligned to Microsoft licensing and security governance practices. Where appropriate, You can find tables that organize information such as license types, report paths, and validation outcomes. Use this playbook sequentially for best results, and repeat Steps 3–6 periodically as your security model and user base evolve.
+This playbook helps administrators prepare for **per-user license validation** for Dynamics 365 finance and operations apps. It provides step-by-step guidance to align licensing with security roles, and prevent user access disruptions when per-user license validation goes into effect. Each step includes **Why**, **What**, and **How** explanations that are clear, actionable, and aligned to Microsoft licensing and security governance practices. Where appropriate, You can find tables that organize information such as license types, report paths, and validation outcomes. Use this playbook sequentially for best results, and repeat Steps 3–6 periodically as your security model and user base evolve.
 
 ---
 
@@ -24,7 +24,7 @@ This playbook helps administrators prepare for **per-user license validation** f
 
 Confirm these prerequisites:
 
-- ✅ **System Administrator access** in Dynamics 365 F&O  
+- ✅ **System Administrator access** in Dynamics 365 finance and operations  
 - ✅ **Power Platform Admin or Global Admin permissions**  
 - ✅ **Access to [Microsoft 365 Admin Center](https://admin.microsoft.com)**  
 - ✅ **Upgrade to [latest Quality Update](https://go.microsoft.com/fwlink/?linkid=2095900)**
