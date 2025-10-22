@@ -35,7 +35,7 @@ The sample ID number sequence ensures that each sample has a unique identifier f
 Follow these steps to create and assign a number sequence for sample IDs:
 
 1. Go to **Organization administration** \> **Number sequences** \> **Number sequences**.
-1. Create and configure a number sequence for generating sample IDs, as described in [Set up number sequences on an individual basis](../../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md).The number sequence must be defined to use a non-shared scope.
+1. Create and configure a number sequence for generating sample IDs, as described in [Set up number sequences on an individual basis](../../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md). The number sequence must be defined to use a non-shared scope.
 1. Note the **Number sequence code** that you assign to this number sequence.
 1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
 1. Open the **Number sequences** tab.
@@ -83,7 +83,7 @@ Follow these steps to manage your lifecycle states:
    - **Sample lifecycle state description** – Add a brief description of the lifecycle state.
    - **Quality order created** – Select this check box for the lifecycle state that a sample should be updated to when you create a quality order for it.
    - **Quality order validated** – Select this check box for the lifecycle state that a sample should be updated to when you validate a quality order against it.
-   - **Sample scrapped** – Select this check box for the lifecycle state which, when you assign it manually, triggers audit trail logging for *Scrapped by* and *Scrapped date/time*. Only samples with this property checked can be deleted from the **Sample management workbench**. <!-- KFM: confirm these two logging values are literally correct (if they matter) -->
+   - **Sample scrapped** – Select this check box for the lifecycle state which, when you assign it manually, triggers an audit trail logging for *Scrapped by* and *Scrapped date/time*. Only samples with this property selected can be deleted from the **Sample management workbench**.
 
 1. On the Action Pane, select **Save**.
 
@@ -196,16 +196,18 @@ The following subsections describe other important settings for sample managemen
 
 ### Quality associations
 
-Configure quality associations to trigger sample management when production orders are reported as finished for specific items. This setup references test groups and item sampling policies to ensure consistency and automation in quality control. For inline samples, you don't need a quality association because you collect these samples on demand directly from the production order. Learn more in [Quality associations](../inventory/quality-associations.md).
+Configure quality associations to trigger sample management when production orders are reported as finished for specific items. This setup references test groups and item sampling policies to ensure consistency and automation in quality control. For inline samples, you don't need a quality association because you collect these samples on demand directly from the production order. Learn more in [Quality associations](../inventory/quality-associations.md). The following settings for quality associations are particularly relevant for sample management:
     - **Reference type** – Select *Production* which is the only supported type for sample management.
     - **Event type** – Select *Report as finished*.
     - **Execution** – Select *After*.
     - **Test group** – Select the test group that should be used for quality orders generated for samples.
-    - **Item sampling** – Select the item sampling configuration used for sample management. This configuration determines whether the **Inline** or **Continuous** sampling method is applied, along with related details for how each method is used.
+    - **Item sampling** – Select the item sampling configuration used for sample management. This configuration determines whether the *Inline* or *Continuous* sampling method is applied, along with related details for how each method is used.
 
 ### Configure default item status
+<!-- KFM: It isn't clear whether we are setting the status of the sample, or the license plate, or both. -->
+The default item status establishes the initial inventory status assigned to new samples. This is relevant when samples are configured to be generated for each license plate produced. When a quality order is generated for a sample associated a license plate, then the sample will be created with the defined default item status. Typically, you should define the default inventory status as *On-hold*, which indicates that the license plate is awaiting inspection. You can configure the default item status to apply for an individual item or for all transactions at a specific warehouse.
 
-Set the default item status to establish the initial inventory status. This is relevant when samples are configured to be generated per license plate produced. When a quality order is generated for a sample associated a license plate, then the sample will be create with the defined default item status. Typically, you should define the default inventory status as *On-hold* indicating that the license plate is awaiting inspection. You can configure the default item status to apply for an individual item or for transactions on a specific warehouse. To configure the default item status for a specific item follow these steps:
+To configure the default item status for a specific item follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Inventory** \> **Default item status**.
 1. On the Action Pane, select **New** to create a new record.
@@ -214,7 +216,7 @@ Set the default item status to establish the initial inventory status. This is r
     - **Module** – Select *Inventory* which is the only applicable value for sample management.
     - **Default inventory status ID** – From the list, select the inventory status that should be used as default when a sample with an associated license plate is created in sample management.
 
-To configure the default item status that is applicable for all items transactions on a specific warehouse, follow these steps:
+To configure the default item status that is applicable for all item transactions at a specific warehouse, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Inventory breakdown** \> **Warehouses**.
 1. Find and select the warehouse where you want to configure the default item status.
@@ -222,9 +224,9 @@ To configure the default item status that is applicable for all items transactio
 
 ### Test groups
 
-[Test groups](../inventory/quality-test-groups.md) define the set of tests applied while processing quality orders. On the test groups you also define the statuses the system should apply to license plates or product batches based on the outcome of the quality orders test results.
+[Test groups](../inventory/quality-test-groups.md) define the set of tests applied while processing quality orders. On each test group, you also define the status the system should apply to license plates or product batches based on the outcome of the quality order test results.
 
-If you have configured sample management to generate samples per license plate, then the **Inventory status** is used to control the status of the license plate. Set the following fields on the **Test group** to control the initial status on the license plates generated during production report as finished:
+If you configured sample management to generate samples per license plate, then the **Inventory status** is used to control the status of the license plate. To control the initial status of the license plates generated during production report as finished, set the following fields on the relevant test group:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**
 1. Select and existing test group or create a new one.
@@ -233,7 +235,7 @@ If you have configured sample management to generate samples per license plate, 
     - **Failed quality order status** – Specify the inventory status to apply to the license plate when a quality order fails. This setting only applies when **Update inventory status** is set to *Yes*.
     - **Passed quality order status** – Specify the inventory status to apply to the license plate when a quality order passes. This setting only applies when **Update inventory status** is set to *Yes*.
 
-If you have configured sample management to generate samples per product batch number, then the **Batch disposition master** is used to control the status of the individual batch number. Set the following fields on the **Test group** to control the initial status on the batch number generated during report as finished.
+If you configured sample management to generate samples per product batch number, then the batch disposition master is used to control the status of the individual batch number. To control the initial status on batch numbers generated during report as finished, set the following fields on each test group:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**
 1. Select and existing test group or create a new one.
@@ -242,4 +244,4 @@ If you have configured sample management to generate samples per product batch n
     - **Failed quality order batch disposition** – Specify the batch disposition master to apply to the tested batch number when a quality order fails. This setting only applies when **Update batch disposition** is set to *Yes*.
     - **Passed quality order batch disposition** – Specify the batch disposition master to apply to the tested batch number when a quality order passes. This setting only applies when **Update batch disposition** is set to *Yes*.
 
-Learn more in: [Batch disposition codes](../inventory/batch-disposition-codes.md)
+Learn more in [Batch disposition codes](../inventory/batch-disposition-codes.md).
