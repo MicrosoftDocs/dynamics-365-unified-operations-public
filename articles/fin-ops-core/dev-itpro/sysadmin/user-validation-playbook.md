@@ -78,7 +78,7 @@ Read the latest [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwli
 
 ## Step 4: Review User Role and License Mapping (Power Platform admin center/Lifecycle services)
 
- :::image type="content" source="media/playbook-step-4-review-user-role-and-license-mapping.png" alt-text="Remove Inactive User Accounts" lightbox="media/playbook-step-4-review-user-role-and-license-mapping.png":::
+ :::image type="content" source="media/playbook-step-4-review-user-role-and-license-mapping.png" alt-text="Review User Role Requirements" lightbox="media/playbook-step-4-review-user-role-and-license-mapping.png":::
 
 **Why**  
 A high‑level license view across environments highlights **where available seat does not meet required seats** — for example, too few Finance seats for the number of users needing Finance. This step is the fastest way to quantify **how many** of each license type you need to assign or acquire, and to identify users who lack any assigned license. It provides a **cross‑tenant picture** that complements the granular privilege analysis inside system administration for Finance and Operations. By spotting shortfalls early, you can avoid last‑minute purchases, approval bottlenecks, and potential user impact when per-user license validation begins. You can also discover mis-allocations (for example, licenses assigned to users who no longer need them) that can be reallocated to close gaps.
@@ -95,9 +95,13 @@ Open **Power Platform admin center → Licensing → Finance and Operations** an
 > - Attach licenses: assigned vs. available to assign  
 > - Supported products include Finance, Supply Chain Management, Commerce, HR, Project Ops, Team Members, Operations – Activity
 
+ :::image type="content" source="media/playbook-step-4-b-review-user-role-and-license-mapping.png" alt-text="Review assigned license requirement" lightbox="media/playbook-step-4-b-review-user-role-and-license-mapping.png":::
+
 ---
 
-## Step 5: Validate with User Security Governance (User Security Governance)
+## Step 5: Validate with User Security Governance
+
+ :::image type="content" source="media/playbook-step-5-validate-with-user-security-governance.png" alt-text="Validate with User Security Governance" lightbox="media/playbook-step-5-validate-with-user-security-governance.png":::
 
 **Why**  
 User Security Governance gives a **telemetry‑driven, privilege‑level** view of why a user needs a license, so you can surgically remove **unnecessary entitlements** and minimize costs. It exposes which **roles/duties/privileges** cause a user to escalate from Team Member to a full app license (or to need multiple apps), enabling targeted remediation. This inside‑the‑app validation complements Power Platform admin center's top‑down counts by confirming the **root causes** of license requirements. Without this step, you risk assigning or purchasing licenses you could have avoided by right‑sizing roles. It is invaluable for audit and documentation—showing exactly how your security design maps to licensing requirements.
@@ -109,7 +113,6 @@ You will use **License usage summary** in User Security Governance to analyze us
 In Finance and Operations, navigate to **System administration → Security → Security governance → License usage summary** and filter to users or roles of interest. For users with unexpected license needs, drill down to **privileges** marked **Not Entitled** to understand which entry points cause the escalation. Use **Security analysis** to locate all roles that include the problematic entry point, then open **Security configuration** to adjust/remediate the role (for example, remove write or high‑impact privileges for read‑only personas). Recalculate/refresh the report and verify that the user now aligns to the intended license tier; if not feasible, plan to assign the appropriate attach license in Step 5. Document changes and rationale for audit traceability.
 
 **License Tags User Security Governance (User Security Governance)**
-
 | License Tag     | Meaning                                                                                   |
 |-----------------|-------------------------------------------------------------------------------------------|
 | **Entitled**    | Action/privilege is covered by the current license and doesn’t trigger a higher license. |
@@ -117,7 +120,6 @@ In Finance and Operations, navigate to **System administration → Security → 
 | **Not Required**| Action/privilege has no license requirement.                      |
 
 **Related Reports & Tools**
-
 | Report / Tool         | Path                                                                              | Purpose                                                                                                  |
 |-----------------------|-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | **Security Analysis** | System Administration → Security → Security governance → **Security analysis**    | Identify privileges/entry points and all roles that include them; locate root causes of license needs.  |
@@ -129,10 +131,10 @@ In Finance and Operations, navigate to **System administration → Security → 
 ## Step 6: Align License Assignments in Microsoft 365 Admin Center
 
 **Why**  
-When license validation begins, **users without required licenses will be blocked** from signing in Dynamics 365 finance and operations production environments. Assigning the right **Base and Attach** licenses in advance prevents business disruption, especially in period‑end finance, warehousing, and order processing. Relying on "available seats" without explicit assignment is insufficient—licenses must be **assigned to each user** to be recognized. Timely assignments also reduce support load from end‑user warnings and avoid emergency escalations to procurement or IT. Completing assignments after Step 4 ensures you aren’t paying for licenses that better role hygiene could have avoided.
+When license validation begins, **users without the assigned required licenses will be unable to sign in to Dynamics 365 finance and operations production environments**. Assigning the right **Base and Attach** licenses in advance prevents business disruption, especially in period‑end finance, warehousing, and order processing. Relying on "available seats" without explicit assignment is insufficient—licenses must be **assigned to each user** to be recognized. Timely assignments also reduce support load from end‑user warnings and avoid emergency escalations to procurement or IT. Completing assignments after Step 4 ensures you aren’t paying for licenses that better role hygiene could have avoided.
 
 **What**  
-You will assign the appropriate **Dynamics 365 Finance**, **Supply Chain Management**, **Commerce**, **Human Resources**, **Project Operations**, **Team Members**, or **Operations – Activity** licenses to each user per the Power Platform admin center and User Security Governance findings. For users spanning multiple apps, assign a **Base** license (highest‑value app) and then the necessary **Attach** licenses. If you find misassigned licenses (for example, a full license on a read‑only user), reallocate them to users who actually need them. Create a **worklist** from Power Platform admin center’s "Users with unassigned licenses" and work through it systematically. Ensure alignment with HR and business owners for new joiners, leavers, and role changes.
+You will assign the appropriate **Dynamics 365 Finance**, **Supply Chain Management**, **Commerce**, **Human Resources**, **Project Operations**, **Team Members**, or **Operations – Activity** licenses to each user per the Power Platform admin center and User Security Governance findings. For users spanning multiple apps, assign a **Base** license (highest‑value app) and then the necessary **Attach** licenses. If you find misassigned licenses (for example, a full license on a read‑only user), reallocate them to users who actually need them. Create a **worklist** from Power Platform admin center’s "Users with unassigned licenses" and work through it systematically. Ensure alignment with HR and business owners for any role changes.
 
 **How**  
 In the **Microsoft 365 Admin Center**, go to **Users → Active users → [Select user] → Licenses and apps**, then assign the required license(s). Follow Base‑then‑Attach sequencing: for example, give **Finance (Base)** first, then **Supply Chain Management (Attach)** if the user needs both. Where supported, you can deep‑link from Power Platform admin center user records to the admin center to speed assignments. After assignment, re‑run Power Platform admin center/User Security Governance reports to confirm the user no longer appears in the "unassigned" or "Not Entitled" categories. Keep a change log (user, license, date) to support audits and renewal planning.
