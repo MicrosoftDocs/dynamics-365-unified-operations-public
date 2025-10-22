@@ -4310,6 +4310,8 @@
                       href: localizations/turkiye/emea-tur-exchange-difference-invoicing.md
                     - name: Use currency conversion
                       href: localizations/turkiye/emea-tur-currency-conversion.md
+                    - name: Export of customer electronic invoices
+                      href: localizations/turkiye/emea-tur-cust-e-invoices.md
                     - name: Generate e-Ledger
                       href: localizations/turkiye/emea-tur-e-ledger.md
                 - name: United Arab Emirates (UAE)
