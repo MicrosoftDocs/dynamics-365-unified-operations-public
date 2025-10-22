@@ -106,9 +106,13 @@ You will review the current [**Dynamics 365 Licensing Guide**](https://go.micros
 Capture a simple mapping between your **key business personas** and their **intended license types** based on responsibilities. Pay special attention to custom roles that may aggregate privileges across product boundaries, as these commonly lead to attach license needs. Align your understanding with your partner/seller to ensure shared definitions.
 
 **How**  
-Read the latest [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [**Dynamics 365 Licensing Deck**](https://go.microsoft.com/fwlink/?linkid=2279233). Create an internal reference mapping **standard roles** (and your top 30–50 custom personas) to intended licenses. Mark any areas where your current roles appear to exceed intended scope (for example, unexpected write privileges) and flag them for remediation in **Step 4**. 
+Read the latest [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [**Dynamics 365 Licensing Deck**](https://go.microsoft.com/fwlink/?linkid=2279233). Create an internal reference mapping **standard roles** (and your top 30–50 custom personas) to intended licenses. 
 
-Share this with security owners and functional leads to build consensus before you assign or purchase licenses. Keep the reference current as your roles evolve.
+Mark any areas where your current roles appear to exceed intended scope (for example, unexpected write privileges) and flag them for remediation in **Step 4**. 
+
+Share this with security owners and functional leads to build consensus before you assign or purchase licenses.
+
+Keep the reference current as your roles evolve.
 
 ---
 
