@@ -267,7 +267,7 @@ For Enterprise Agreement customers, in **Microsoft 365 Admin Center** go to **Bi
 **A3.** Yes. **Enterprise Agreement License Reservations** let you commit seats ahead of your true‑up so they’re available to assign now. Cloud Solution Provider and other channels also allow on‑demand purchases.
 
 **Q4. Will sandbox environments be included?**  
-**A4.**  **Per user license validation only applies to production** access. 
+**A4.**  Per user license validation only applies to production access. 
 
 ---
 
