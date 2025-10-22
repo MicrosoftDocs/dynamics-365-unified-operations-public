@@ -54,7 +54,7 @@ You will verify and, if necessary, upgrade the **Application** and **Platform** 
 
 
 **How**  
-Use **[Lifecycle Services (LCS)](https://lcs.dynamics.com/v2)** to apply the latest Quality Update across all environments, prioritizing any sandboxes you use for validation and your production environment. After the latest Quality Update is applied, sign in to Dynamics 365 finance and operations and go to **System administration → Feature management**, search for "User security governance" and "User security governance license usage summary report," and enable them. Then open **System administration → Security → Security governance** to confirm the **License usage summary**, **Security analysis**, and **License usage overview** reports are available.
+Use **[Lifecycle Services (LCS)](https://lcs.dynamics.com/v2)** to apply the latest **Quality Update** across all environments, prioritizing any sandboxes you use for validation and then apply in your production environment. After the latest **Quality Update** is applied, sign in to Dynamics 365 finance and operations and go to **System administration → Feature management**, search for "**User security governance**" and "**User security governance license usage summary report**", and enable them. Then open **System administration → Security → Security governance** to confirm the **License usage summary**, **Security analysis**, and **License usage overview** reports are available.
 
 ---
 
