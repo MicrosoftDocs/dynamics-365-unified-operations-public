@@ -1,5 +1,5 @@
 ---
-title: User License Validation Playbook for Dynamics 365 Finance and Operations
+title: Playbook for Dynamics 365 Finance and Operations apps User License Validation
 description: Playbook for user license validation in Dynamics 365 Finance and Operations  
 author: ianceicys-msft
 ms.author: ceian
