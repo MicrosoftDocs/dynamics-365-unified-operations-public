@@ -30,8 +30,8 @@ Use this playbook sequentially for best results, and **repeat** Steps **3–6** 
 
 Confirm these prerequisites:
 
-- ✅ **System Administrator access** in Dynamics 365 finance and operations  
-- ✅ **Power Platform Admin or Global Admin permissions**  
+- ✅ **[System Administrator](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/assign-users-security-roles) access** in Dynamics 365 finance and operations  
+- ✅ **[Power Platform Admin](https://learn.microsoft.com/en-us/power-platform/admin/use-service-admin-role-manage-tenant#assign-a-service-admin-role-to-a-user) or [Organizational admin](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configure-lcs-security#organization-admin) permissions**  
 - ✅ **Access to [Microsoft 365 Admin Center](https://admin.microsoft.com)**  
 - ✅ **Upgrade to [latest Quality Update](https://go.microsoft.com/fwlink/?linkid=2095900)**
 - ✅ **Understand [Dynamics 365 Product model (base vs. attach)](https://go.microsoft.com/fwlink/?linkid=2279233)**
@@ -83,7 +83,7 @@ You can use those groupings to determine which inactive accounts should be disab
 **How**  
 Go to **System administration → Security → Security governance → User activity aging** to review current activity levels. Configure your day ranges under **System administration → Security → Security governance setup → Parameters → User aging periods** to align with your company's policy (for example **30**/**60**/**90**/**120+** days). 
 
-For each inactive user, go to **System administration → Users → Users** and set **Enabled** to **No**. Wait 24 hours and check the license reports ([Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)/[Lifecycle Services](https://lcs.dynamics.com/v2) and User Security Governance) to confirm inactive users are no longer included in "**total users**".
+For each inactive user, go to **System administration → Users → User** and set **Enabled** to **No**. Wait 24 hours and check the license reports ([Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)/[Lifecycle Services](https://lcs.dynamics.com/v2) and User Security Governance) to confirm inactive users are no longer included in "**total users**".
 
 ---
 
