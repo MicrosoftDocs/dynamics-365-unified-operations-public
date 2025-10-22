@@ -170,19 +170,23 @@ Keep this license gap analysis handy—you will resolve it via role cleanup (**S
 **Why**  
 User Security Governance gives a **telemetry‑driven, privilege‑level** view of why a user needs a license, so you can surgically remove **unnecessary entitlements** and minimize costs. It exposes which **roles/duties/privileges** cause a user to escalate from Team Member to a full app license (or to need multiple apps), enabling targeted remediation. 
 
-This inside‑the‑app validation complements Power Platform admin center's top‑down counts by confirming the **root causes** of license requirements. Without this step, you risk assigning or purchasing licenses you could have avoided by right‑sizing roles. It is invaluable for audit and documentation—showing exactly how your security design maps to licensing requirements.
+This inside‑the‑app validation complements [**Power Platform admin center's**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) top‑down counts by confirming the **root causes** of license requirements. Without this step, you risk assigning or purchasing licenses you could have avoided by right‑sizing roles. It is invaluable for audit and documentation-showing **exactly** how your security design maps to licensing requirements.
 
 **What**  
-You will use **License usage summary** in User Security Governance to analyze users by **license status** and drill into the **Role → Duty → Privilege** chain. You can focus on items labeled **Entitled** (covered), **Not Entitled** (requires higher/different license), and **Not Required** (no license impact). 
+You will use **License usage summary** in **User Security Governance** to analyze users by **role license** and drill into the **Role → Duty → Privilege** chain. You can focus on items labeled **Entitled** (covered), **Not Entitled** (requires higher/different license), and **Not Required** (no license impact). 
 
-You can also leverage **Security analysis** to find where specific privileged entry points are introduced into roles, and **Security configuration** to adjust or remove them. If a privilege is truly required, you can confirm the correct required **license** and plan assignments accordingly. 
+You can also leverage **Security analysis** to find where specific privileged entry points are introduced into roles, and **Security configuration** to adjust or remove them. 
+
+If a privilege is truly required, you can confirm the correct required **license** and plan license assignments in **[Microsoft 365 admin center](https://admin.microsoft.com)** accordingly. 
 
 The goal is to align each persona with the **lowest correct** license level without removing required duties and privileges for the business function performed by the user.
 
 **How**  
 In Dynamics 365 Finance and Operations, navigate to **System administration → Security → Security governance → License usage summary** and filter to users or roles of interest. For users with unexpected license needs, drill down to **privileges** marked **Not Entitled** to understand which entry points cause the escalation.
 
-Use **Security analysis** to locate all roles that include the problematic entry point, then open **Security configuration** to adjust/remediate the role (for example, remove write or high‑impact privileges for read‑only personas). Recalculate/refresh the report and verify that the user now aligns to the intended license tier; if not feasible, plan to assign the appropriate attach license in **Step 5**. Document changes and rationale for audit traceability.
+Use **Security analysis** to locate all roles that include the problematic entry point, then open **Security configuration** to adjust/remediate the role (for example, remove write or high‑impact privileges for read‑only personas). 
+
+Recalculate/refresh the report and verify that the user now aligns to the intended license tier; if not feasible, plan to assign the appropriate attach license in **Step 6**. Document changes and rationale for audit traceability.
 
 **License Tags User Security Governance (User Security Governance)**
 
