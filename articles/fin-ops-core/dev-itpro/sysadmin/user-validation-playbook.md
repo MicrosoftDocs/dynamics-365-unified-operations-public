@@ -65,7 +65,7 @@ Go to **System administration → Security → Security governance → User acti
 
 ## Step 3: Familiarize Yourself with the Licensing Model
 
- :::image type="content" source="media/playbook-step-3-familiarize-yourself-with-the-licensing-model alt-text="Familiarize Yourself with the Licensing Model" lightbox="media/playbook-step-3-familiarize-yourself-with-the-licensing-model.png":::
+ :::image type="content" source="media/playbook-step-3-familiarize-yourself-with-the-licensing-model.png" alt-text="Familiarize Yourself with the Licensing Model" lightbox="media/playbook-step-3-familiarize-yourself-with-the-licensing-model.png":::
 
 **Why**  
 Dynamics 365 finance and operations apps use a **named user** model that ties **roles, duties, and privileges** to license requirements, so misunderstanding the model can result in **under-license risk** or **over-purchasing**. Users who span functionality across **Finance**, **Supply Chain Management**, **Commerce**, **Human Resources**, and **Project Operations** may need multiple licenses (Base + Attach) to remain compliant. The **Team Members** and **Operations – Activity** licenses are designed for light or read‑only usage, but a single "write" privilege can escalate a user into a higher license tier. Knowing these nuances ensures that your security design aligns with the lowest correct license level for each persona. It also helps you explain decisions to stakeholders and withstand audits with confidence.
