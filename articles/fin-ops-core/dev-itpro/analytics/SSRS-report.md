@@ -4,7 +4,7 @@ description: Learn about SQL Server Reporting Services (SSRS) report availabilit
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 02/16/2021
+ms.date: 10/22/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global

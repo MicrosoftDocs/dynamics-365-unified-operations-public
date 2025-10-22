@@ -4,7 +4,7 @@ description: Learn how to embed a Power BI report on the Analytics tab of a work
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 06/21/2017
+ms.date: 10/22/2025
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -30,9 +30,9 @@ This article shows how to embed a Microsoft Power BI report on the **Analytics**
 Whether you extend an existing application workspace or introduce a new workspace of your own, you can use embedded analytical views to deliver insightful and interactive views of your business data. The process for adding an analytical workspace tab has four steps.
 
 1. Add a .pbix file as a Dynamics 365 resource.
-2. Define an analytical workspace tab.
-3. Embed the .pbix resource on the workspace tab.
-4. Optional: Add extensions to customize the view.
+1. Define an analytical workspace tab.
+1. Embed the .pbix resource on the workspace tab.
+1. Optional: Add extensions to customize the view.
 
 > [!NOTE]
 > For more information about how to create analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/). This page is a great source for insights that can help you create compelling analytical reporting solutions.
@@ -43,15 +43,15 @@ Before you begin, you must create or obtain the Power BI report that you will em
 Follow these steps to add a .pbix file as a Visual Studio project artifact.
 
 1. Create a new project in the appropriate model.
-2. In Solution Explorer, select the project, right-click, and then select **Add** \> **New Item**.
-3. In the **Add New Item** dialog box, under **Operations Artifacts**, select the **Resource** template.
-4. Enter a name that will be used to reference the report in X++ metadata, and then click **Add**.
+1. In Solution Explorer, select the project, right-click, and then select **Add** \> **New Item**.
+1. In the **Add New Item** dialog box, under **Operations Artifacts**, select the **Resource** template.
+1. Enter a name that will be used to reference the report in X++ metadata, and then click **Add**.
 
-    ![Add New Item dialog box.](media/analytical-workspace-add.png)
+    :::image type="content" source="media/analytical-workspace-add.png" alt-text="Screenshot of Add New Item dialog box.":::
 
-5. Find the .pbix file that contains the definition of the analytical report, and then click **Open**.
+1. Find the .pbix file that contains the definition of the analytical report, and then click **Open**.
 
-    ![Select a Resource file dialog box.](media/analytical-workspace-select-resource.png)
+    :::image type="content" source="media/analytical-workspace-select-resource.png" alt-text="Screenshot of Select a Resource file dialog box.":::
 
 Now that you've added the .pbix file as a Dynamics 365 resource, you can embed the reports in workspaces and add direct links by using menu items.
 
@@ -60,32 +60,32 @@ In this example, we will extend the **Reservation management** workspace in the 
 
 The following illustration shows what the **FMClerkWorkspace** form looks like in the designer in Microsoft Visual Studio.
 
-![FMClerkWorkspace form before changes.](media/analytical-workspace-definition-before.png)
+:::image type="content" source="media/analytical-workspace-definition-before.png" alt-text="Screenshot of FMClerkWorkspace form before changes.":::
 
 Follow these steps to extend the form definition for the **Reservation management** workspace.
 
 1. Open the form designer to extend the design definition.
-2. In the design definition, select the top element that is labeled **Design | Pattern: Workspace Operational**.
-3. Right-click, and then select **New** \> **Tab** to add a new control that is named **FormTabControl1**.
-4. In the form designer, select **FormTabControl1**.
-5. Right-click, and then select **New Tab Page** to add a new tab page.
-6. Rename the tab page to something meaningful, such as **Workspace**.
-7. In the form designer, select **FormTabControl1**.
-8. Right-click, and then select **New Tab Page**.
-9. Rename the tab page to something meaningful, such as **Analytics**.
-10. In the form designer, select **Analytics (Tab Page)**.
-11. Set the **Caption** property to **Analytics**, and set the **Auto Declaration** property to **Yes**.
-12. Right-click the control, and then select **New** \> **Group** to add a new form group control.
-13. Rename the form group to something meaningful, such as **powerBIReportGroup**.
-14. In the form designer, select **PanoramaBody (Tab)**, and then drag the control onto the **Workspace** tab.
-15. In the design definition, select the top element that is labeled **Design | Pattern: Workspace Operational**.
-16. Right-click, and then select **Remove pattern**.
-17. Right-click again, and then select **Add pattern** \> **Workspace Tabbed**.
-18. Perform a build to verify your changes.
+1. In the design definition, select the top element that is labeled **Design | Pattern: Workspace Operational**.
+1. Right-click, and then select **New** \> **Tab** to add a new control that is named **FormTabControl1**.
+1. In the form designer, select **FormTabControl1**.
+1. Right-click, and then select **New Tab Page** to add a new tab page.
+1. Rename the tab page to something meaningful, such as **Workspace**.
+1. In the form designer, select **FormTabControl1**.
+1. Right-click, and then select **New Tab Page**.
+1. Rename the tab page to something meaningful, such as **Analytics**.
+1. In the form designer, select **Analytics (Tab Page)**.
+1. Set the **Caption** property to **Analytics**, and set the **Auto Declaration** property to **Yes**.
+1. Right-click the control, and then select **New** \> **Group** to add a new form group control.
+1. Rename the form group to something meaningful, such as **powerBIReportGroup**.
+1. In the form designer, select **PanoramaBody (Tab)**, and then drag the control onto the **Workspace** tab.
+1. In the design definition, select the top element that is labeled **Design | Pattern: Workspace Operational**.
+1. Right-click, and then select **Remove pattern**.
+1. Right-click again, and then select **Add pattern** \> **Workspace Tabbed**.
+1. Perform a build to verify your changes.
 
 The following illustration shows what the design looks like after these changes are applied.
 
-![FMClerkWorkspace after changes.](media/analytical-workspace-definition-after.png)
+:::image type="content" source="media/analytical-workspace-definition-after.png" alt-text="Screenshot of FMClerkWorkspace after changes.":::
 
 Now that you've added the form controls that will be used to embed the workspace report, you must define the size of the parent control so that it accommodates the layout. By default, both the **Filters Pane** page and the **Tab** page will be visible on the report. However, you can change the visibility of these controls as appropriate for the target consumer of the report.
 
@@ -98,8 +98,8 @@ You've now completed the task of extending the application form definition. For 
 Follow these steps to add business logic that initializes the report viewer control that is embedded in the **Reservation management** workspace.
 
 1. Open the **FMClerkWorkspace** form designer to extend the design definition.
-2. Press F7 to access the code behind the code definition.
-3. Add the following X++ code.
+1. Press F7 to access the code behind the code definition.
+1. Add the following X++ code.
 
     ```xpp
     [Form] 
@@ -131,11 +131,11 @@ Follow these steps to add business logic that initializes the report viewer cont
     }
     ```
 
-4. Perform a build to verify your changes.
+1. Perform a build to verify your changes.
 
 You've now completed the task of adding business logic to initialize the embedded report viewer control. The following illustration shows what the workspace looks like after these changes are applied.
 
-![Report embedded in the workspace.](media/analytical-workspace-final.png)
+:::image type="content" source="media/analytical-workspace-final.png" alt-text="Screenshot of report embedded in the workspace.":::
 
 > [!NOTE]
 > You can access the existing operational view by using the workspace tabs below the page title.
