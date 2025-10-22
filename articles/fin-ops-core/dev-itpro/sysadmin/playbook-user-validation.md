@@ -18,7 +18,7 @@ ms.custom:
 
 This playbook helps administrators prepare for **per-user license validation** for Dynamics 365 finance and operations apps. It provides **step-by-step** guidance to align licensing with security roles, and prevent user access disruptions when per-user license validation goes into effect. 
 
-Each step includes **Why**, **What**, and **How** explanations that are clear, actionable, and aligned to Microsoft licensing and security governance practices. 
+Each step includes **Why**, **What**, and **How** explanations that are clear, actionable, and aligned security governance best practices. 
 
 Where appropriate, You can find tables that organize information such as license types, report paths, and validation outcomes. 
 
