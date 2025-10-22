@@ -22,7 +22,7 @@ Each step includes **Why**, **What**, and **How** explanations that are clear, a
 
 Where appropriate, You can find tables that organize information such as license types, report paths, and validation outcomes. 
 
-Use this playbook sequentially for best results, and repeat Steps 3–6 periodically as your security model and user base evolve.
+Use this playbook sequentially for best results, and **repeat** Steps **3–6** periodically as your security model and user base evolve.
 
 ---
 
@@ -54,7 +54,9 @@ You will verify and, if necessary, upgrade the **Application** and **Platform** 
 
 
 **How**  
-Use **[Lifecycle Services (LCS)](https://lcs.dynamics.com/v2)** to apply the latest **Quality Update** across all environments, prioritizing any sandboxes you use for validation and then apply in your production environment. After the latest **Quality Update** is applied, sign in to Dynamics 365 finance and operations and go to **System administration → Feature management**, search for "**User security governance**" and "**User security governance license usage summary report**", and enable them. Then open **System administration → Security → Security governance** to confirm the **License usage summary**, **Security analysis**, and **License usage overview** reports are available.
+Use **[Lifecycle Services (LCS)](https://lcs.dynamics.com/v2)** to apply the latest **Proactive Quality Update** across all environments, prioritizing any sandboxes you use for validation and then apply in your production environment. 
+
+After the latest **Proactive Quality Update** is applied, sign in to Dynamics 365 finance and operations and go to **System administration → Feature management**, search for "**User security governance**" and "**User security governance license usage summary report**", and enable them. Then open **System administration → Security → Security governance** to confirm the **License usage summary**, **Security analysis**, and **License usage overview** reports are available.
 
 ---
 
@@ -63,10 +65,16 @@ Use **[Lifecycle Services (LCS)](https://lcs.dynamics.com/v2)** to apply the lat
  :::image type="content" source="media/playbook-step-2-remove-inactive-user-accounts.png" alt-text="Remove Inactive User Accounts" lightbox="media/playbook-step-2-remove-inactive-user-accounts.png":::
 
 **Why**  
-Inactive users distort license requirements by appearing in reports as if they still need access, which can lead to **inaccurate required license counts** or **over-purchasing**. Cleaning up unused accounts ensures your **license requirement baseline** reflects reality, improving both cost control and audit readiness. It also reduces your administrative burden when assigning licenses and mitigates the risk of stale accounts being inadvertently reactivated. By removing or disabling inactive users now, you avoid unnecessary noise in later steps and keep your focus on truly active, business-critical users. This cleanup step is a fast win that immediately improves data quality and compliance posture.
+Inactive users distort license requirements by appearing in reports as if they still need access, which can lead to **inaccurate required license counts** or **over-purchasing**. Cleaning up unused accounts ensures your **license requirement baseline** reflects reality, improving both cost control and audit readiness. 
+
+It also reduces your administrative burden when assigning licenses and mitigates the risk of stale accounts being inadvertently reactivated. By removing or disabling inactive users now, you avoid unnecessary noise in later steps and keep your focus on truly active, business-critical users. This cleanup step is a fast win that immediately improves data quality and compliance.
 
 **What**  
-You will identify and deactivate (or remove) users who have not logged in within your organization's defined inactivity windows. The **User Activity Aging** report in the **User Security Governance** workspace provides a configurable view of users grouped by inactivity ranges (for example 30, 60, 90, 120+ days). You can use those groupings to determine which accounts should be disabled or deleted, based on HR and IT policies. After offboarding those innactive accounts, the high‑level license reports will reflect the active user set. 
+You will identify and deactivate (or remove) users who have not logged in within your organization's defined inactivity windows. 
+
+The **User Activity Aging** report in the **User Security Governance** workspace provides a configurable view of users grouped by inactivity ranges (for example **30**, **60**, **90**, **120+** days). 
+
+You can use those groupings to determine which accounts should be disabled or deleted, based on HR and IT policies. After offboarding those inactive accounts, the high‑level license reports will reflect the active user set. 
 
 **How**  
 Go to **System administration → Security → Security governance → User activity aging** to review current activity levels. Configure your day ranges under **System administration → Security → Security governance setup → Parameters → User aging periods** to align with your company's policy (for example 30/60/90/120 days). For each inactive user, go to **System administration → Users → Users** and set **Enabled** to **No**. Wait 24 hours and check the license reports ([Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)/[Lifecycle Services](https://lcs.dynamics.com/v2) and User Security Governance) to confirm inactive users are no longer included in "total users".
