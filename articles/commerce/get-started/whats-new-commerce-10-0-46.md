@@ -2,7 +2,7 @@
 title: Preview features in Dynamics 365 Commerce 10.0.46 (October 2025)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.46. 
 author: johnmichalak
-ms.date: 07/28/2025
+ms.date: 10/24/2025
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -32,7 +32,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Extensibility | Generated extension SQL script | The Generated extension SQL scripts feature simplifies and accelerates the process of adding extensions to the channel database. It also helps optimize performance and avoid common customization errors that impact data synchronization.<br><br>A new Generated extension SQL script section on the Scheduler Subjobs page (Retail and Commerce > Headquarters setup > Commerce scheduler > Scheduler subjobs) will display SQL script that can be used as a starting point to add or modify tables in the Channel Database for the selected subjob. Learn more: [Generated extension SQL script](../dev-itpro/channel-db-extensions.md#generated-extension-sql-scripts)| |
+| Extensibility | Generated extension SQL script | The Generated extension SQL script feature simplifies and accelerates the process of adding extensions to the channel database. It also helps optimize performance and avoid common customization errors that impact data synchronization.<br><br>In Dynamics 365 headquarters, a new Generated extension SQL script section on the **Scheduler Subjobs** page (**Retail and Commerce** \> **Headquarters setup** \> **Commerce scheduler** \> **Scheduler subjobs**) displays SQL script that you can use as a starting point to add or modify tables in the channel database for the selected subjob. Learn more in [Generated extension SQL script](../dev-itpro/channel-db-extensions.md#generated-extension-sql-scripts).| |
 
 ## Features turned on by default in this release
 
@@ -46,7 +46,7 @@ The following table lists the features that became turned on by default in versi
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Commerce version 10.0.46 includes platform updates. To learn more, see [Platform updates for version 10.0.46 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-46.md). 
+Microsoft Dynamics 365 Commerce version 10.0.46 includes platform updates. Learn more in [Platform updates for version 10.0.46 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-46.md). 
   
 ### Bug fixes
 
