@@ -37,7 +37,11 @@ Confirm these prerequisites:
  :::image type="content" source="media/playbook-step-1-upgrade-latest-quality-update.png" alt-text="Upgrade to the latest Product Quality Update" lightbox="media/playbook-step-1-upgrade-latest-quality-update.png":::
 
 **Why**  
-Upgrading ensures your environment has the **current license validation logic, telemetry, and reporting** needed to make accurate decisions. New governance capabilities, including **User Security Governance (USG)**, were introduced and improved in recent versions and may not be available in older builds. Running the latest **Proactive Quality Update** reduces the risk of encountering known issues or missing features that affect license calculations or report completeness. This step also standardizes the behavior across all environments, so your analysis in test/sandbox mirrors what You can see in production. Most importantly, it ensures your admins can rely on up-to-date **License Usage Summary** and related reports to plan assignments confidently.
+Upgrading ensures your environment has the **current license validation logic, telemetry, and reporting** needed to make accurate decisions. New governance capabilities, including **User Security Governance (USG)**, were introduced and improved in recent versions and may not be available in older builds. 
+
+Running the latest **Proactive Quality Update** reduces the risk of encountering known issues or missing features that affect license calculations or report completeness. This step also standardizes the behavior across all environments, so your analysis in test/sandbox mirrors what You can see in production. 
+
+Most importantly, it ensures your admins can rely on up-to-date **License Usage Summary** and related reports to plan assignments confidently.
 
 **What**  
 You will verify and, if necessary, upgrade the **Application** and **Platform** versions for all relevant Dynamics 365 finance and operations environments. The minimum recommended is **Application 10.0.45 (10.0.2345.86+)** with **ProductUpdate69** and **Platform build 7.0.7690.75**. You can also ensure that the **User Security Governance** features (including the license usage reports) are enabled in **Feature management**. Once upgraded, You can validate access to the **Security Governance** workspace and its reports. This creates the foundation for the data You can use in subsequent steps.
