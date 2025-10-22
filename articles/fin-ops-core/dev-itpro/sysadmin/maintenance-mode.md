@@ -93,6 +93,19 @@ Ensure you have at least version 2.18.2 of the infrastructure scripts. For more 
 .\Set-MaintenanceMode.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Disable
 ```
 
+## Turn maintenance mode on and off in Unified developer experience for finance and operations apps environments through the Power Platform admin center (PPAC)
+
+> [!IMPORTANT]  
+> If your environment is connected to Lifecycle Services, follow the steps in [Turn maintenance mode on and off on sandbox and production environments through Lifecycle Services](#turn-maintenance-mode-on-and-off-on-sandbox-and-production-environments-through-lifecycle-services).
+
+1. Go to your environment in the Power Platform admin center.  
+2. Edit the environment details.  
+3. Enable **Administration mode**.  
+4. After the service is restarted and the environment is ready, the system is in maintenance mode. At this point, only system administrators can access the environment.  
+5. When you complete your maintenance mode activities, repeat steps 1 and 2, but disable **Administration mode** in step 3.  
+
+> [!NOTE]  
+> Enabling Administration mode in the Power Platform admin center has the same effect as turning on maintenance mode in Lifecycle Services.
 
 ## Enable (or disable) configuration keys
 
