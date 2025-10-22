@@ -50,6 +50,8 @@ Use **Lifecycle Services (Lifecycle services)** to apply the latest Quality Upda
 
 ## Step 2: Remove Inactive User Accounts
 
+ :::image type="content" source="media/playbook-step-2-remove-inactive-user-accounts.png" alt-text="Remove Inactive User Accounts" lightbox="media/pplaybook-step-2-remove-inactive-user-accounts.png":::
+
 **Why**  
 Inactive users distort license requirements by appearing in reports as if they still need access, which can lead to **inaccurate required license counts** or **over-purchasing**. Cleaning up unused accounts ensures your **license requirement baseline** reflects reality, improving both cost control and audit readiness. It also reduces your administrative burden when assigning licenses and mitigates the risk of stale accounts being inadvertently reactivated. By removing or disabling inactive users now, you avoid unnecessary noise in later steps and keep your focus on truly active, business-critical users. This cleanup step is a fast win that immediately improves data quality and compliance posture.
 
