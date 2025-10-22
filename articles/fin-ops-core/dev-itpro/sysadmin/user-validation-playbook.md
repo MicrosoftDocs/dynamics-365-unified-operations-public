@@ -28,7 +28,7 @@ Confirm these prerequisites:
 - ✅ **Power Platform Admin or Global Admin permissions**  
 - ✅ **Access to [Microsoft 365 Admin Center](https://admin.microsoft.com)**  
 - ✅ **Upgrade to [latest Quality Update](https://go.microsoft.com/fwlink/?linkid=2095900)**
-- ✅ **Understand Dynamics 365 Product model (base vs. attach)**
+- ✅ **Understand [Dynamics 365 Product model (base vs. attach)](https://go.microsoft.com/fwlink/?linkid=2279233)**
 - ✅ **Enable User Security Governance reports** in Feature management
 - ✅ **Review [Dynamics 365 Licensing Guide](https://www.microsoft.com/en-us/licensing/product-licensing/dynamics365?culture=en-us&country=us)**
 
