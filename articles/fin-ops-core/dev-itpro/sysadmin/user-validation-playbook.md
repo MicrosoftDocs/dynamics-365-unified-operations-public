@@ -29,7 +29,7 @@ Confirm these prerequisites:
 - ✅ **Access to [Microsoft 365 Admin Center](https://admin.microsoft.com)**  
 - ✅ **Upgrade to [latest Quality Update](https://go.microsoft.com/fwlink/?linkid=2095900)**
 - ✅ **Understand [Dynamics 365 Product model (base vs. attach)](https://go.microsoft.com/fwlink/?linkid=2279233)**
-- ✅ **Enable User Security Governance reports** in Feature management
+- ✅ **Enable [User Security Governance reports](https://go.microsoft.com/fwlink/?linkid=2319108)** in Feature management
 - ✅ **Review [Dynamics 365 Licensing Guide](https://www.microsoft.com/en-us/licensing/product-licensing/dynamics365?culture=en-us&country=us)**
 
 ## Step 1: Upgrade to the Latest Quality Update (10.0.45)
