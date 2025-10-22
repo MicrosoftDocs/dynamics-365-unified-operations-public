@@ -32,7 +32,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Extensibility | Generated extension SQL script | The Generated extension SQL script feature simplifies and accelerates the process of adding extensions to the channel database. It also helps optimize performance and avoid common customization errors that impact data synchronization.<br><br>In Dynamics 365 headquarters, a new Generated extension SQL script section on the **Scheduler Subjobs** page (**Retail and Commerce** \> **Headquarters setup** \> **Commerce scheduler** \> **Scheduler subjobs**) displays SQL script that you can use as a starting point to add or modify tables in the channel database for the selected subjob. Learn more in [Generated extension SQL script](../dev-itpro/channel-db-extensions.md#generated-extension-sql-scripts).| |
+| Extensibility | Generated extension SQL script | The Generated extension SQL script feature simplifies and accelerates the process of adding extensions to the channel database. It also helps optimize performance and avoid common customization errors that impact data synchronization.<br><br>In Dynamics 365 headquarters, a new Generated extension SQL script section on the **Scheduler Subjobs** page (**Retail and Commerce** \> **Headquarters setup** \> **Commerce scheduler** \> **Scheduler subjobs**) displays SQL script that you can use as a starting point to add or modify tables in the channel database for the selected subjob. Learn more in [Generated extension SQL script](../dev-itpro/channel-db-extensions.md#generated-extension-sql-script).| |
 
 ## Features turned on by default in this release
 
