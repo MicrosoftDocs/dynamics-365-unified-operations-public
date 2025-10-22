@@ -45,14 +45,14 @@ Confirm these prerequisites:
 **Why**  
 Upgrading ensures your environment has the **current license validation logic, telemetry, and reporting** needed to make accurate decisions. New governance capabilities, including **User Security Governance (USG)**, were introduced and improved in recent versions and may not be available in older releases. 
 
-Running the latest **Proactive Quality Update** reduces the risk of encountering known issues or missing features that affect license calculations or report completeness. This step also standardizes the behavior across all environments, so your analysis in test/sandbox mirrors what You can see in production. 
+Running the latest **Proactive Quality Update** reduces the risk of encountering known issues or missing features that affect license calculations or report completeness. This step also standardizes the behavior across all environments, so your analysis in test/sandbox mirrors what you can see in production. 
 
 Most importantly, it ensures your admins can rely on up-to-date **License Usage Summary** and related reports to plan assignments confidently.
 
 **What**  
 You will verify and, if necessary, upgrade the **Application** and **Platform** versions for all relevant Dynamics 365 finance and operations environments. The minimum recommended is **Application 10.0.45 (10.0.2345.86+)** with **ProductUpdate69** and **Platform build 7.0.7690.75**. 
 
-You can also ensure that the **User Security Governance** features (including the license usage reports) are enabled in **Feature management**. Once upgraded, You can validate access to the **Security Governance** workspace and its reports. This creates the foundation for the data You can use in subsequent steps.
+You can also ensure that the **User Security Governance** features (including the license usage reports) are enabled in **Feature management**. Once upgraded, you can validate access to the **Security Governance** workspace and its reports. This creates the foundation for the data you can use in subsequent steps.
 
 
 **How**  
@@ -237,7 +237,7 @@ After assignment, wait 24 hours, and check Power Platform admin center/User Secu
 If Power Platform admin center shows required seats exceeding purchased seats, you need to **acquire or reserve** additional licenses to prevent user's being unable to access Dynamics 365 finance and operations apps. **License Reservations** (for Enterprise Agreement customers) allow you to **commit now** so seats are available immediately while billing flows through your next **True‑Up**. Planning ahead avoids last‑minute approvals, procurement delays, and operational risk as validation approaches. It also enables better budgeting by smoothing costs and documenting the business rationale for additional spend. Proactive planning is particularly important for large role changes, mergers, or new rollouts.
 
 **What**  
-You will determine the **delta** between required, assigned, and available seats for each product (for example, +9 Finance Base, +3 Supply Chain Management Attach). Based on your agreement type, You can either place **License Reservations** or **purchase additional licenses** via Cloud Solution Provider/Enterprise Agreement channels. You can document the **usage date** for reservations, acknowledging financial commitment at your next order cycle. You can also coordinate with your Microsoft seller/partner on any special pricing or prerequisites. Finally, You can include a small buffer (3-10%) for user growth and onboarding to reduce repeated transactions.
+You will determine the **delta** between required, assigned, and available seats for each product (for example, +9 Finance Base, +3 Supply Chain Management Attach). Based on your agreement type, you can either place **License Reservations** or **purchase additional licenses** via Cloud Solution Provider/Enterprise Agreement channels. You can document the **usage date** for reservations, acknowledging financial commitment at your next order cycle. You can also coordinate with your Microsoft seller/partner on any special pricing or prerequisites. Finally, you can include a small buffer (3-10%) for user growth and onboarding to reduce repeated transactions.
 
 **How**  
 For Enterprise Agreement customers, in **Microsoft 365 Admin Center** go to **Billing → Your products → Volume licensing → Make reservations**, select the appropriate **Enterprise Agreement contract**, set a **Usage date** (up to 6 months ahead), and add the required services/quantities. Confirm and place the reservation (note the 72‑hour cancellation window). For Cloud Solution Provider or non‑Enterprise Agreement, work with your partner or purchase licenses directly so they appear in the Admin Center for assignment. After new seats are visible, complete the user assignments (**Step 5**) and validate in Power Platform admin center that shortages are resolved. Update your internal licensing tracker with reservations/purchases, quantities, and renewal/true‑up notes.
