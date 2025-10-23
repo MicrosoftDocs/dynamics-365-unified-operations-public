@@ -16,10 +16,6 @@ ms.search.form: WHSRFMenuItem,WHSWorkTemplateTable
 
 Pick line grouping enables multiple work lines that have the same item and location to be combined into a single pick that is presented to the user on the mobile device. Therefore, warehouse workers can receive the most efficient instructions, but required work line separation (for different containers, orders, and so on) can still be maintained in the system.
 
-## Turn the pick line grouping feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Pick line grouping* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
 ## Set up pick line grouping
 
 ### Create a mobile device menu item

@@ -19,13 +19,6 @@ Wave template grouping enables the system to use [wave template](tasks/configure
 > [!IMPORTANT]
 > Wave template grouping isn't supported for the work types *production raw material picking* or *Kanban picking*. This is because wave grouping is based on shipments and these work types don't use shipments.
 
-## Turn on the Wave template grouping feature
-
-Before you can use the *Wave template grouping* feature, it must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Wave template grouping*
-
 ## <a name="set-up-template"></a>Set a wave template to use wave template grouping
 
 To make wave template grouping available, follow these steps to set up your [wave template](tasks/configure-wave-processing.md).

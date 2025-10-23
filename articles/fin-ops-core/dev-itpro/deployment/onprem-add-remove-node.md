@@ -5,7 +5,7 @@ description: Learn how to add or remove a node in your existing Microsoft Dynami
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.date: 02/03/2025
+ms.date: 09/12/2025
 ms.custom:
 ms.reviewer: 
 audience: IT Pro
@@ -84,6 +84,23 @@ To add one or more nodes to your existing environment, follow these steps.
     ```
 
 1. Update the Service Fabric cluster with the new configuration file. Learn more in [Update the Service Fabric cluster configuration](./onprem-update-sfcluster.md#update-the-service-fabric-cluster-configuration).
+
+1. Cycle through the application installation. To cycle the application installation, follow these steps:
+   - In Lifecycle Services, open the on-premises implementation project.
+   - In the on-premises implementation project, open **Environment details** of the environment to you added the node(s) too.
+   - **Maintain**, select **Update Settings**.
+   - Select **Prepare** to prepare your on-premises environment for servicing. 
+
+       > [!NOTE]
+       > While the environment is being prepared for servicing, its state is **Deployed**. The **Deployment status** field shows the progress of the preparation. During preparation, actions such formatting the package and downloading the package are performed.
+       >
+       > Because the environment isn't directly touched during preparation, there is no downtime at this point. Users can continue to use the system during preparation.
+
+   - After preparation is completed, **Abort** and **Update Environment** buttons appear. To start to apply the update, click **Update environment**. 
+   - In the confirmation message that appears, select **Yes**. The servicing operation begins on the environment and this starts the downtime on your environment.
+   - The environment state is changed from **Deployed** to **Deploying**.
+   - After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**.
+
 
 ## Remove a node
 

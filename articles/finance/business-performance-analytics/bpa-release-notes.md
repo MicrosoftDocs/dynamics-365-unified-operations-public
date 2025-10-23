@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in business per
 author: jinniew
 ms.author: jiwo
 ms.topic: article
-ms.date: 08/11/2025
+ms.date: 08/19/2025
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -25,7 +25,6 @@ The June release of Business performance analytics version 2.3.30982 and contain
 | Category | Feature | Description |
 | --- |--- |--- |
 |Data model additions and changes | Detect data changes in the PBI dataset | Enhanced Power BI dataset refresh performance by detecting data changes using commit_timestamp in the facts. |
-|Data model additions and changes| Clean up PurchaseDistributionFact | Resolved calendar filter issue in PurchaseDistributionFact to ensure accurate data representation. |
 |Data model additions and changes| Add SalesInvoiceTaxAmount Lines in Sales invoice fact |Included SalesInvoiceTaxAmount and SalesInvoiceAllocatedTaxAmount in SalesInvoiceFact for completeness. |
 |Data model additions and changes| Wrong field used for calendar filter with regard to SalesOrderFact| Corrected calendar filtering logic in SalesOrderFact to improve data accuracy. |
 |Data model additions and changes| Add SellingPartyGroup in the Selling party dimension| Added BuyingPartyGroup to the BuyingPartyDimension to enhance dimensional analysis. |
@@ -46,3 +45,5 @@ The June release of Business performance analytics version 2.3.30982 and contain
 |Report changes| Balance sheet report missing editable filter| Enabled editable filter for account type in Balance sheet to support custom category names. |
 |Report changes| Fact - General Ledger.Company Group format issue| Corrected data type of Company group in Fact - General Ledger from currency to whole number. |
 |Report changes| Promote Category filter for profit loss report| Promoted account type filter to page/report level in profit and loss report for customization. |
+| Platform optimization  | Automated cleanup of Dataverse temp files | Implemented automated cleanup of temporary files left by Athena ingestion. Only analytical outputs from transforms are retained, reducing Dataverse storage usage and improving refresh performance. |
+

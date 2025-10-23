@@ -1,6 +1,6 @@
 ﻿---
-title: Enter quality test results quickly (preview)
-description: Learn how to use the Quick result entry page, which consolidates data from all tests into a single view to streamline the entry process.
+title: Enter quality test results quickly
+description: Learn how to use the Quick results entry page, which consolidates data from all tests into a single view to streamline the entry process.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
@@ -11,14 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Enter quality test results quickly (preview)
+# Enter quality test results quickly
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
+[!include [banner](../../includes/banner.md)]
 
-The **Quick result entry** page makes the process of entering quality order test results faster and more flexible than the **Quality order line results** page. The **Quick result entry** page consolidates data from all tests into a single view to streamline the result entry process. Quantities are automatically populated based on the quality order quantities. Other details are also populated, such as minimum, maximum, and target values.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+The **Quick results entry** page makes the process of entering quality order test results faster and more flexible than the **Quality order line results** page. The **Quick results entry** page consolidates data from all tests into a single view to streamline the result entry process. Quantities are automatically populated based on the quality order quantities. Other details are also populated, such as minimum, maximum, and target values.
 
 ## Prerequisites
 
@@ -29,11 +26,11 @@ Before you can use the features that are described in this article, your system 
 
 ## Enter quality test results
 
-To enter quality test results by using the **Quick result entry** page, follow these steps.
+To enter quality test results by using the **Quick results entry** page, follow these steps.
 
 1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Quality orders**.
-1. Select a quality order, and then, on the Action Pane, select **Quick result entry**.
-1. The **Quick result entry** page shows the tests that are associated with the selected quality order. Use the following buttons on the Action Pane to prepare the page for result entry:
+1. Select a quality order, and then, on the Action Pane, select **Quick results entry**.
+1. The **Quick results entry** page shows the tests that are associated with the selected quality order. Use the following buttons on the Action Pane to prepare the page for result entry:
 
     - **New** and **Delete** – Use these buttons to separate the test results that were entered for different quantities. For example, if the quality order quantity is *5*, you can use the **New** button to enter a total of five lines for the test. In this way, a different test result can be entered for each quantity. The sum of the quantities for each test must equal the total quantity of the quality order.
     - **Split** – Split an existing line into multiple lines. This button opens a dialog where you can set the following fields:

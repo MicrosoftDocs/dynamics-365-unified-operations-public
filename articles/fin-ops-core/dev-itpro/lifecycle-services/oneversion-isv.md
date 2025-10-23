@@ -26,31 +26,31 @@ Extensibility allows for deployment of side-by-side solutions that give customer
 
 In the One Version model, customer user acceptance testing (UAT) environments and production environments are updated several times a year. It's critical that updates not cause issues. However, Microsoft acknowledges that both technical issues and functional issues may arise when environments are updated.
 
-+ Technical issues include breaking changes in application programming interfaces (APIs) that customizations in your solutions use.
-+ Functional issues that customers experience can be caused by the untimely introduction of new features. Microsoft will put any new functionality that might affect existing processes under feature management. In this way, customers can control when new functionality is adopted. Therefore, they have time to validate, document, and train their users about the new features.
-+ Functional issues might also be unintended changes that cause functional regressions.
+- Technical issues include breaking changes in application programming interfaces (APIs) that customizations in your solutions use.
+- Functional issues that customers experience can be caused by the untimely introduction of new features. Microsoft will put any new functionality that might affect existing processes under feature management. In this way, customers can control when new functionality is adopted. Therefore, they have time to validate, document, and train their users about the new features.
+- Functional issues might also be unintended changes that cause functional regressions.
 
 Prevention of technical and functional issues is difficult and requires close coordination between Microsoft and you as an ISV partner. The Microsoft goal is that you will adopt practices that resemble Microsoft practices. This article explains how you and Microsoft can achieve this goal together. Over the next several months, Microsoft will release new practices and tools to help you. This article will be updated as the tools and practices evolve.
 
 This article includes the following sections:
 
-+ [Servicing customers](#servicing-customers)
-+ [Compatibility](#compatibility)
+- [Servicing customers](#servicing-customers)
+- [Compatibility](#compatibility)
 
     - [Runtime compatibility](#runtime-compatibility)
     - [Design-time compatibility](#design-time-compatibility)
 
-+ [Developing new releases](#developing-new-releases)
+- [Developing new releases](#developing-new-releases)
 
     - [Designing for extensibility](#designing-for-extensibility)
     - [Data upgrade](#data-upgrade)
     - [Feature exposure](#feature-exposure)
 
-+ [Branches and builds](#branches-and-builds)
-+ [Testing](#testing)
-+ [Deploying updates](#deploying-updates)
-+ [ISV solutions as part of One Version automated deployment](#isv-solutions-as-part-of-one-version-automated-deployment)
-+ [Should I release binaries or source code?](#should-i-release-binaries-or-source-code)
+- [Branches and builds](#branches-and-builds)
+- [Testing](#testing)
+- [Deploying updates](#deploying-updates)
+- [ISV solutions as part of One Version automated deployment](#isv-solutions-as-part-of-one-version-automated-deployment)
+- [Should I release binaries or source code?](#should-i-release-binaries-or-source-code)
 
 ## Servicing customers
 
@@ -180,7 +180,7 @@ The currently released product that is maintained in the servicing branch should
 
 If the testing is successful, this step will validate that a customer installation of the current version of your ISV solution won't have to be updated when Microsoft broadcasts the new release to the customer.
 
-If the testing isn't successful, you, as the ISV, must immediately notify Microsoft through the [Preview communication process](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, in turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
+If the testing isn't successful, you, as the ISV, must immediately notify Microsoft through the [Preview communication process](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Microsoft Viva Engage and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, in turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
 
 ### Currently released products – Testing design-time compatibility
 
@@ -190,7 +190,7 @@ You should run your suite of automated developer tests, automated functional tes
 
 If the testing is successful, this step will validate that your ISV solution won't have to be updated even if source code is supplied to the customer and the customer recompiles the ISV solution.
 
-If the testing isn't successful, and the issue isn't one of the categories that are described in [Breaking changes](../extensibility/breaking-changes.md), you, as the ISV, must immediately notify Microsoft through the [Preview communication process](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, in turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
+If the testing isn't successful, and the issue isn't one of the categories that are described in [Breaking changes](../extensibility/breaking-changes.md), you, as the ISV, must immediately notify Microsoft through the [Preview communication process](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Microsoft Viva Engage and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, in turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
 
 ### Currently released products – Updating the base build
 
@@ -200,7 +200,7 @@ As Microsoft updates your customers to new releases, you should periodically upd
 
 You validate your new solution development on either the latest released version or the released version that you plan for to use for servicing when your new release goes out. However, in both cases, consider doing validation on the most current version. This validation will help with early discovery of issues or uptake work that you must do.
 
-If an unexpected break occurs, then you, as the ISV, must immediately notify Microsoft through the [Preview communication process](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process.
+If an unexpected break occurs, then you, as the ISV, must immediately notify Microsoft through the [Preview communication process](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Microsoft Viva Engage and an issue notification process.
 
 ## Deploying updates
 
@@ -216,16 +216,16 @@ Although Microsoft doesn't currently plan to release ISV solutions as part of th
 
 Here are some areas where alignment will be required:
 
-+ **Feature management** – The user must be able to control when a new feature is turned on.
-+ **Backward compatibility and compliance** – Compliance with API customization usage is required.
-+ **Feature deprecation** – Advanced notice about deprecation of features or APIs must be provided.
-+ **Test automation suite** 
-+ **Testing during the preview phase**
-+ **ISV solution sign-off and upload** 
-+ **Automated deployment scripts**
-+ **Zero downtime** – Deployment of updates must be instantaneous.
-+ **Data migration without downtime**
-+ **Support for on-call duty, for servicing of critical production issues**
+- **Feature management** – The user must be able to control when a new feature is turned on.
+- **Backward compatibility and compliance** – Compliance with API customization usage is required.
+- **Feature deprecation** – Advanced notice about deprecation of features or APIs must be provided.
+- **Test automation suite**
+- **Testing during the preview phase**
+- **ISV solution sign-off and upload**
+- **Automated deployment scripts**
+- **Zero downtime** – Deployment of updates must be instantaneous.
+- **Data migration without downtime**
+- **Support for on-call duty, for servicing of critical production issues**
 
 ## Should I release binaries or source code?
 
@@ -233,6 +233,4 @@ Binary compatibility is supported, provided that you don't recompile. We recomme
 
 If an implementation partner or customer compiles your solution in an updated environment, new warnings and errors might occur, as was mentioned in the [Design-time compatibility](#design-time-compatibility) section of this article. Therefore, we recommend that implementation partners not compile your solution. However, this recommendation doesn't mean that you shouldn't share your source code to help support debugging, for example. You should just consider taking steps to avoid compilation of your code, so that implementation partners aren't exposed to design-time issues.
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

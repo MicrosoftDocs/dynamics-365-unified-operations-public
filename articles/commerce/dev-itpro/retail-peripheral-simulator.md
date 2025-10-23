@@ -1,10 +1,9 @@
 ---
 title: Peripheral simulator for Commerce
-description: This article describes the peripheral simulator tool that is provided with Microsoft Dynamics 365 Commerce.
+description: Learn how to work with the peripheral simulator tool provided with Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/26/2024
+ms.date: 09/23/2025
 ms.topic: how-to
-audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: global
 ms.author: ritakimani
@@ -18,6 +17,8 @@ ms.custom:
 # Peripheral simulator for Commerce
 
 [!include [banner](../includes/banner.md)]
+
+This article explains how to work with the peripheral simulator tool provided with Microsoft Dynamics 365 Commerce.
 
 The peripheral simulator is a utility that Microsoft provides as part of Microsoft Dynamics 365 Commerce and as a standalone utility. The utility has two primary components, a *virtual peripheral simulator* and a *point of sale (POS) simulator*.
 
@@ -45,7 +46,7 @@ Besides the peripheral simulator, you must install the common control objects fr
 
 ## Virtual peripheral simulator
 
-The virtual peripheral simulator helps you set up, test, and troubleshoot peripheral devices. It can be used to streamline the testing of peripherals, and to isolate issues that are caused by incorrect setup or malfunctioning device drivers. The peripheral simulator includes a desktop program that features virtual versions of devices that Commerce supports. A section for each virtual device shows the interaction between the device and the POS. You can also use it to provide input that is valid for various POS scenarios. The peripheral simulator supports interaction between the POS and the following virtual devices:
+The virtual peripheral simulator helps you set up, test, and debug peripheral devices. It can be used to streamline the testing of peripherals, and to isolate issues that are caused by incorrect setup or malfunctioning device drivers. The peripheral simulator includes a desktop program that features virtual versions of devices that Commerce supports. A section for each virtual device shows the interaction between the device and the POS. You can also use it to provide input that is valid for various POS scenarios. The peripheral simulator supports interaction between the POS and the following virtual devices:
 
 - **Printer** – The virtual peripheral simulator can show receipts that are configured for a POS printer.
 - **Line display** – You can configure a virtual line display to show activity on a physical line display.
@@ -66,15 +67,15 @@ You can also use the virtual peripheral simulator to simulate keyboard wedge eve
 
 ### Key scenarios – Virtual peripheral simulator
 
-#### Troubleshooting
+#### Diagnose and debug
 
-You can use the peripheral simulator to troubleshoot device setup. If you don't have the peripheral simulator or a second device of the same class, it can be difficult to determine where issues originate. However, when you have the peripheral simulator, you can set up virtual devices, and run the same code paths and business logic that are used for physical devices. From the perspective of the peripheral simulator, the main difference between virtual devices and physical devices is the service object, or device driver. For physical devices, the service object is provided by the device manufacturer. By contrast, for virtual devices, the service objects are provided as part of the peripheral simulator. When the peripheral simulator is working correctly, if a device doesn't work correctly after the device name in the hardware profile is changed to the name of a real device, you can assume that there's an issue with the service object that the manufacturer provided.
+You can use the peripheral simulator to diagnose and debug device setup. If you don't have the peripheral simulator or a second device of the same class, it can be difficult to determine where issues originate. However, when you have the peripheral simulator, you can set up virtual devices, and run the same code paths and business logic that are used for physical devices. From the perspective of the peripheral simulator, the main difference between virtual devices and physical devices is the service object, or device driver. For physical devices, the service object is provided by the device manufacturer. By contrast, for virtual devices, the service objects are provided as part of the peripheral simulator. When the peripheral simulator is working correctly, if a device doesn't work correctly after the device name in the hardware profile is changed to the name of a real device, you can assume that there's an issue with the service object that the manufacturer provided.
 
-#### Training
+#### Train
 
 You can use the peripheral simulator to add a realistic layer to cashier training when a physical hardware setup isn't available. When you include the peripheral simulator in training scenarios, the cashier can more effectively interact with the POS by providing input such as product barcode scans and gift card swipes, and by observing which receipts are printed for a specific transaction.
 
-#### Testing
+#### Test
 
 You can use the peripheral simulator to test product barcodes, receipt formats, and so on, without having to deploy physical hardware in a virtual environment. Because physical hardware isn't required, and you don't have to deploy a POS client on a hardware station or a physical computer, you can more quickly test changes that are made in the back office.
 
@@ -82,7 +83,9 @@ You can use the peripheral simulator to test product barcodes, receipt formats, 
 
 #### Set up a hardware profile
 
-1. To set up the peripheral simulator, go to **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
+To set up a hardware profile, follow these steps.
+
+1. In Dynamics 365 Commerce headquarters, go to **Retail and Commerce** \> **Channel setup** \> **POS setup** \> **POS profiles** \> **Hardware profiles**.
 2. Select **New** to create a profile.
 3. Enter values in the **Profile number** and **Description** fields.
 4. Use the following table to set up the virtual devices that must be tested. Here's an explanation of the columns in the table:
@@ -110,7 +113,9 @@ You can use the peripheral simulator to test product barcodes, receipt formats, 
 
 #### Assign the hardware profile to a register
 
-1. After the hardware profile is created, go to **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
+To assign the hardware profile to a register, follow these steps.
+
+1. After the hardware profile is created, in headquarters go to **Retail and Commerce** \> **Channel setup** \> **POS setup** \> **Registers**.
 2. In the **POS registers** list, select the link in the **Register number** field for the register that should use the peripheral simulator.
 3. Select **Edit**.
 4. In the **Profiles** section, in the **Hardware profile** field, select the hardware profile that you created for virtual peripherals.
@@ -118,7 +123,9 @@ You can use the peripheral simulator to test product barcodes, receipt formats, 
 
 #### Synchronize changes to the channel database
 
-1. Go to **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
+To synchronize changes to the channel database, follow these steps.
+
+1. In headquarters, go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.
 2. Select the **1090** distribution schedule.
 3. Select **Run now** to synchronize changes to the POS.
 
@@ -159,7 +166,9 @@ The virtual peripheral printer just shows receipts as they're printed from the P
 
 #### Configure receipt printing
 
-1. Go to **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
+To configure receipt printing, follow these steps.
+
+1. In headquarters, go to **Retail and Commerce** \> **Channel setup** \> **POS setup** \> **POS profiles** \> **Hardware profiles**.
 2. Select the hardware profile that you created for virtual peripherals.
 3. On the **Printer** FastTab, select **Edit**.
 4. In the **Receipt profile ID** field, select a receipt profile.
@@ -171,14 +180,18 @@ When a scale product is added to the POS transaction, and a scale is configured,
 
 ##### Configure a scale product
 
-1. Go to **Retail and Commerce** &gt; **Products and categories** &gt; **Released products by category**.
+To configure a scale product, follow these steps.
+
+1. In headquarters, go to **Retail and Commerce** \> **Products and categories** \> **Released products by category**.
 2. Open the product record.
 3. Select the product to weigh.
 4. On the **Retail and Commerce** FastTab, set the **Scale product** option from **No** to **Yes**.
 
 ##### Synchronize changes to the channel database
 
-1. Go to **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
+To synchronize changes to the channel database, follow these steps.
+
+1. In headquarters, go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.
 2. Select the **1040** distribution schedule.
 3. Select **Run now** to synchronize changes to the POS.
 
@@ -190,7 +203,9 @@ The virtual signature capture device prompts the user to provide a signature on 
 
 ##### Set up a tender to require a signature
 
-1. Go to **Retail and Commerce** &gt; **Channels** &gt; **Stores** &gt; **All stores**.
+To set up a tender to require a signature, follow these steps.
+
+1. In headquarters, go to **Retail and Commerce** \> **Channels** \> **Stores** \> **All stores**.
 2. Select the store.
 3. Select **Edit**.
 4. Select **Set up**, and then in the **Set up** section, select **Payment methods**.
@@ -201,7 +216,9 @@ The virtual signature capture device prompts the user to provide a signature on 
 
 ##### Synchronize changes to the channel database
 
-1. Go to **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
+To synchronize changes to the channel database, follow these steps.
+
+1. In headquarters, go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.
 2. Select the **1070** distribution schedule.
 3. Select **Run now** to synchronize changes to the POS.
 
@@ -211,9 +228,9 @@ After the data is synchronized, when a tender used requires a signature, and the
 
 You can edit the peripheral simulator's configuration file to more appropriately address the scenarios that you're testing. You can find the configuration file at C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\VirtualPeripherals\\Microsoft.Dynamics.Commerce.VirtualPeripherals.Client.exe.config. The configuration file defines the units that are available for testing on the scale, the card types that are available for testing, and barcode types. For example, by modifying the text values in the configuration file, you can add a new card type or a new unit of measure that can be selected at runtime. The new values will appear after the app is restarted.
 
-#### Troubleshooting
+#### Debugging
 
-Activities for the peripheral simulator are logged in the peripheral simulator. You can find the log at C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\VirtualPeripherals\\Microsoft.Dynamics.Commerce.VirtualPeripherals.Client.exe.config. The peripheral simulator also reports issues to the Windows event log, which you can access at **Application and Services Logs** &gt; **Microsoft** &gt; **DynamicsAX**.
+Activities for the peripheral simulator are logged in the peripheral simulator. You can find the log at C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\VirtualPeripherals\\Microsoft.Dynamics.Commerce.VirtualPeripherals.Client.exe.config. The peripheral simulator also reports issues to the Windows event log, which you can access at **Application and Services Logs** \> **Microsoft** \> **DynamicsAX**.
 
 If changes that you made to the hardware profile or other areas aren't evident when you use the Store Commerce app or the peripheral simulator, check the distribution scheduler jobs that you used to synchronize the data to the channel database. If the changes were synchronized but still aren't evident at the POS, restart the POS client.
 
@@ -229,7 +246,9 @@ The POS simulator lets device manufacturers, independent software vendors (ISVs)
 
 The POS simulator is also provided as a standalone utility that is independent of Commerce. As a standalone utility, the POS simulator is primarily used to test peripheral device compatibility. Testing should be driven by the device manufacturers themselves.
 
-### Using the POS simulator
+### Use the POS simulator
+
+To use the POS simulator, follow these steps.
 
 1. Select **Start** on your computer, type **Peripheral simulator**, and then select the app when it appears in the search results.
 2. Select **Use virtual peripherals**. The supported devices are listed as tabs on the left side of the window. To view a specific device, select the tab for that device.
@@ -253,7 +272,7 @@ There's a **Settings** tab below the list of supported devices. You can use the 
 
 On the **Settings** tab, you can also provide details about the user who is performing the tests. These details are important for manufacturers that perform compatibility testing.
 
-### Configuring the POS simulator
+### Configure the POS simulator
 
 For each supported device class, the POS simulator lets you set up multiple devices. For example, several printers can be configured in the POS simulator. Then, on the **Printer** tab, the user can cycle through the configured devices and test them as required.
 
@@ -262,6 +281,8 @@ The setup parameters that are available for a device depend on the type of devic
 To edit a device that is already created, use the left arrow (**&lt;**) and right arrow (**&gt;**) buttons to find the appropriate device, and then select **Edit**.
 
 #### Configure an OPOS device
+
+To configure an OPOS device, follow these steps.
 
 1. Select **OPOS** as the device type.
 2. Select the name of the device driver. This value is required. This list includes all the OPOS service objects that are installed on the local machine where devices are being tested. You can also manually enter the device driver name.
@@ -278,14 +299,18 @@ To edit a device that is already created, use the left arrow (**&lt;**) and righ
 
 #### Configure a network device
 
+
+
 The POS simulator can be used to test network devices. The following network devices are supported out of the box:
 
 - **Cash drawer:** APG Atwood
 - **Receipt printer:** Star TSP650II
 - **Payment terminal:** Although a payment terminal can be configured as network devices, any testing of a payment terminal requires a custom payment connector.
 
-    > [!NOTE]
-    > No payment terminals are supported out of the box.
+> [!NOTE]
+> No payment terminals are supported out of the box.
+
+To configure a network device, follow these steps.
 
 1. Select **Network** as the device type.
 2. Enter data for the rest of the fields.

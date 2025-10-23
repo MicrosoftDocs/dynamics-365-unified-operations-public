@@ -147,7 +147,7 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Manual transfer line picking service for admin or similar trusted users](whats-new-scm-10-0-28.md) | Mandatory |
 | Warehouse management | [Maximum execution time for the warehouse management on-hand entries cleanup job](../warehousing/onhand-cleanup.md)  | Mandatory |
 | Warehouse management | [New load planning workbench pages](whats-new-scm-10-0-24.md) | Mandatory |
-| Warehouse management | [Organization-wide "Schedule work creation" wave method](../warehousing/configure-wave-schedule-work-creation.md) | Mandatory |
+| Warehouse management | Organization-wide "Schedule work creation" wave method | Mandatory |
 | Warehouse management | [Organization-wide system directed work sequencing](../warehousing/system-directed-work-sequencing.md) | Mandatory |
 | Warehouse management | [Organization wide wave step code](../warehousing/advanced-load-building-during-wave.md) | Mandatory |
 | Warehouse management | [Outbound sorting](../warehousing/outbound-sorting.md) | Mandatory |
@@ -162,7 +162,7 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | Sales order packing slip corrections/cancellation transaction status change | On by default |
 | Warehouse management | Scale unit support for warehouse app work lists | Mandatory |
 | Warehouse management | [Scan GS1 barcodes](../warehousing/gs1-barcodes.md) | Mandatory |
-| Warehouse management | [Schedule work creation](../warehousing/configure-wave-schedule-work-creation.md) | Mandatory |
+| Warehouse management | Schedule work creation | Mandatory |
 | Warehouse management | [System directed cluster picking](../warehousing/system-directed-cluster-pick.md) | Mandatory |
 | Warehouse management | System directed work sequencing | Mandatory |
 | Warehouse management | [Use faster API for containers closing/reopening on packing station](../supply-chain-dev/whats-new-scm-10-0-21.md) | Mandatory |

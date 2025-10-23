@@ -4,7 +4,7 @@ description: Learn about using Task guides and BPM to create and execute accepta
 author: sericks007
 ms.author: sericks
 ms.topic: how-to
-ms.date: 10/02/2018
+ms.date: 09/30/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -17,14 +17,14 @@ ms.assetid:
 
 [!include [banner](../includes/banner.md)]
 
-You can use Task recorder and Business process modeler (BPM) to create user acceptance test libraries. Task recorder is a powerful tool to record test cases and organize them by business process using BPM. As a Microsoft partner you can use BPM to distribute test libraries to your customers via LCS and LCS solutions. If you are a customer, use BPM to author and distribute test libraries across different projects and team.
+You can use Task recorder and Business process modeler (BPM) to create user acceptance test libraries. Task recorder is a powerful tool to record test cases and organize them by business process using BPM. As a Microsoft partner you can use BPM to distribute test libraries to your customers via Lifecycle Services and Lifecycle Services solutions. If you are a customer, use BPM to author and distribute test libraries across different projects and team.
 
 Because BPM can be synchronized with Azure DevOps (formerly known as Visual Studio Team Services), you can automatically create test cases (including test steps) in your Azure DevOps project. Azure DevOps can then serve as your test configuration and test management tool where you can create targeted test plans and test suites, manage the execution of tests and investigate results. For more information about testing with Azure DevOps, see [What are test plans, test suites, and test cases?](/azure/devops/test/create-a-test-plan#what-are-test-plans-test-suites-and-test-cases)
 
 This article walks through the process of creating and executing acceptance test suites to be used for manual or automated testing.
 
 ## Create a Scenario Acceptance Testing BPM library
-BPM is a great LCS tool to describe a hierarchy of business processes and user tasks. LCS also allows Microsoft partners and customers to author and distribute BPM libraries across LCS projects via the Asset library. This section describes how to take advantage of BPM to define your acceptance test library.
+BPM is a great Lifecycle Services tool to describe a hierarchy of business processes and user tasks. Lifecycle Services also allows Microsoft partners and customers to author and distribute BPM libraries across Lifecycle Services projects via the Asset library. This section describes how to take advantage of BPM to define your acceptance test library.
 
 ### Create a BPM library
 There are several ways to create a Business process modeler (BPM) library. For more information about how to create libraries in BPM, see [Create, edit, and browse Business process modeler (BPM) libraries](creating-editing-browsing.md).
@@ -40,20 +40,24 @@ After you have created a BPM library, you'll need to use Task recorder to create
 If you're using a BPM library that already has all of the necessary task recordings (test cases) attached, you can skip this step. Otherwise, follow the instructions below to create new task recordings.
 
 #### Create and save a new task recording
+
+> [!NOTE]
+> Starting in January 2026, Task Recordings can only be created, edited, or used in Sandbox and Production environments.  Cloud-hosted environments will no longer have this capability.
+
 1. Open the client and sign in. 
 2. Select the company that you want to use while recording.
 3. Go to **Settings** > **Task recorder**.
 
     ![Select Task recorder.](./media/select_task_recorder.PNG "Select Task recorder")
 
-4. Click **Create a new recording**.
-5. Enter a name for the recording, and then click **Start**. Recording begins the moment that you click **Start**.
-6. When the recording is complete, in the Task recorder pane, click **Stop**.
-7. To save the task recording to an attached BPM, click **Save to Lifecycle Services**.
+4. Select **Create a new recording**.
+5. Enter a name for the recording, and then select **Start**. Recording begins the moment that you select **Start**.
+6. When the recording is complete, in the Task recorder pane, select **Stop**.
+7. To save the task recording to an attached BPM, select **Save to Lifecycle Services**.
 
     ![Task recorder options.](./media/task_recorder_options.PNG "Task recorder options")
 
-8. Select the library that you want to save the recording to, and then click **Save**. Otherwise, select **Save to Disk** and follow the steps in the next section, "Upload an AXTR file to BPM."
+8. Select the library that you want to save the recording to, and then select **Save**. Otherwise, select **Save to Disk** and follow the steps in the next section, "Upload an AXTR file to BPM."
 
  >[!NOTE]
  > To enable the effective execution of your tests using automation tools, make sure all of your task recordings start on the main dashboard of your application.
@@ -62,20 +66,24 @@ If you're using a BPM library that already has all of the necessary task recordi
 #### Upload an AXTR file to BPM
 If you have saved your recordings (AXTR files) to disk, follow these steps to upload them to BPM.
 
-1. In Lifecycle Services (LCS), in your project, on the **Business process libraries** page, select the library to upload the task recording to.
-2. Click **Author and edit** and in the lines, locate and select the process to upload the task recording to.
-3. In the right pane, click **Upload**. 
+1. In Lifecycle Services, in your project, on the **Business process libraries** page, select the library to upload the task recording to.
+2. Select **Author and edit** and in the lines, locate and select the process to upload the task recording to.
+3. In the right pane, select **Upload**. 
 
     ![Upload AXTR 1.](./media/upload_axtr_1.PNG "Upload AXTR 1")
 
-4. Click **Browse** to find and select the file to upload, and then click **Upload**.
+4. Select **Browse** to find and select the file to upload, and then select **Upload**.
 
     ![Upload AXTR 2.](./media/upload_axtr_2.PNG "Upload AXTR 2")
 
 #### Save an existing task recording to BPM
+
+> [!NOTE]
+> Starting in January 2026, Task Recordings can only be created, edited, or used in Sandbox and Production environments.  Cloud-hosted environments will no longer have this capability.
+
 1. To attach an existing task recording, sign in to the client.
 2. Go to **Settings** > **Task recorder**.
-3. Select **Edit Task Recording** and attach the file by either saving directly to LCS or downloading the AXTR and then uploading to BPM.
+3. Select **Edit Task Recording** and attach the file by either saving directly to Lifecycle Services or downloading the AXTR and then uploading to BPM.
 
 ### Guidelines for recording test cases
 
@@ -125,8 +133,8 @@ Next, you will need to create a test plan and test suite in Azure DevOps. This w
 2. On the toolbar, select **Test** > **Test Plans**.
 3. In the left pane, select **+**, and then select **Static suite**. 
 4. Enter a name for the suite.
-5. Click **Add existing** and query the tag **LCS:Test Cases**.
-6. Click **Run** > **Add test cases**.
+5. Select **Add existing** and query the tag **Lifecycle Services:Test Cases**.
+6. Select **Run** > **Add test cases**.
 
     ![Add test cases.](./media/add_test_cases.PNG "Add test cases")
  

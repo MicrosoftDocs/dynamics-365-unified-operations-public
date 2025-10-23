@@ -42,10 +42,11 @@ The following table provides information about country/region-specific regulator
 
 | Country/region   | Feature name |
 |-----------|--------------|
-| The United Arab Emirates | [FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates](../localizations/uae-faf.md) |
-| Denmark                  | [Standard Audit File for Tax (SAF-T) for Denmark](../localizations/emea-dnk-saf-t.md) |
-| Lithuania                | [Standard Audit File for Tax (SAF-T) for Lithuania](../localizations/emea-ltu-saf-t.md) |
-| Norway                   | [Standard Audit File for Tax (SAF-T) for Norway](../localizations/emea-nor-satndard-audit-file-for-tax.md) |
-| Singapore                | [IRAS Audit File (IAF) for Singapore](../localizations/apac-sgp-iras-audit-file.md) |
+| The United Arab Emirates | [FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates](../localizations/mea/uae-faf.md) |
+| Denmark                  | [Standard Audit File for Tax (SAF-T) for Denmark](../localizations/denmark/emea-dnk-saf-t.md) |
+| Lithuania                | [Standard Audit File for Tax (SAF-T) for Lithuania](../localizations/lithuania/emea-ltu-saf-t.md) |
+| Norway                   | [Standard Audit File for Tax (SAF-T) for Norway](../localizations/norway/emea-nor-satndard-audit-file-for-tax.md) |
+| Singapore                | [IRAS Audit File (IAF) for Singapore](../localizations/singapore/apac-sgp-iras-audit-file.md)|
+| Poland                   | [Standard audit file, SAF (Jednolity Plik Kontrolny, JPK) for Poland overview](../localizations/poland/emea-pol-standard-audit-file-saf.md) |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -557,39 +557,43 @@ items:
           items:
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
-        - name: Human Resources Recruiting app (preview)
+        - name: Human Resources recruiting app 
           items:
           - name: Configure the Human Resources recruiting app
             items:
-            - name: Set up the HR Recruiting app 
+            - name: Set up the HR recruiting app 
               href: hr-recruit-setup.md 
-            - name: Onboard users to use the HR Recruiting app 
+            - name: Onboard users to use the HR recruiting app 
               href: hr-recruit-onboard.md 
-            - name: Configuration in the HR Recruiting app   
+            - name: Configuration in the HR recruiting app   
               href: hr-recruit-configuration.md
-            - name: Configure the careers site in the HR Recruiting app
+            - name: License requirements in the HR recruiting app
+              href: recruit-license.md
+            - name: Set up the careers site in the HR recruiting app
               href: hr-recruit-career.md 
+            - name: Known issues and limitations of the HR recruiting app
+              href: hr-recruit-known.md
           - name: Use the Human Resources recruiting app
             items: 
-            - name: Use the dashboard in the HR Recruiting app 
+            - name: Use the dashboard in the HR recruiting app 
               href: hr-recruit-dashboard.md 
-            - name: Set up job ads in the HR Recruiting app
+            - name: Set up job ads in the HR recruiting app
               href: hr-recruit-job-ad.md
-            - name: Use the careers site in the HR Recruiting app
+            - name: Use the careers site in the HR recruiting app
               href: hr-recruit-career-site.md 
-            - name: Set up prospects in the HR Recruiting app
+            - name: Set up prospects in the HR recruiting app
               href: hr-recruit-prospect.md 
             - name: Applicants in HR recruiting app 
               href: hr-recruit-applicant.md 
-            - name: Set up panel members in the HR Recruiting app            
+            - name: Set up panel members in the HR recruiting app            
               href: hr-recruit-panel.md
           - name: Schedule interviews
             items:
             - name: Set up interview schedules
               href: hr-interview-schedule.md
-          - name: Upload resumes
+          - name: Upload resumes (preview)
             items:
-            - name: Bulk upload resumes
+            - name: Upload resumes
               href: bulk-resume-upload.md
     - name: Time and attendance
       items:

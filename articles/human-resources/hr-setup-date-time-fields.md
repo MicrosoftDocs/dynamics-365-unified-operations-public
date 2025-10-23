@@ -68,11 +68,11 @@ When using external sources like DMF to view or author data, keep in mind that t
 
 ## Examples of the same record being displayed in different product areas 
 
-**Human Resources with user time zone set to UTC**
+**User time zone set to UTC**
 
 [![Worker page set to UTC.](./media/worker-form3.png)](./media/worker-form3.png)
 
-**Human Resources with user time zone set to GMT +12:00** 
+**User time zone set to GMT +12:00** 
 
 [![Worker page set to GMT.](./media/worker-form4.png)](./media/worker-form4.png)
 

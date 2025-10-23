@@ -4,7 +4,7 @@
 title: Employee self service overview
 description: This article provides an overview of the Employee self service workspace.
 author: twheeloc
-ms.date: 07/09/2024
+ms.date: 08/25/2025
 ms.topic: overview
 # optional metadata
 
@@ -29,18 +29,18 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This article provides an overview of the Employee self service workspace.
+This article provides an overview of the **Employee self service** workspace.
 
-Employee self service is the perfect gateway for employees to view essential company information. The Employee self service workspace bridges the gap between employees and HR, allowing employees the freedom to access and manage their data, time-off, benefits, payroll, learning, and much more. Having a one-stop shop for employees saves time for both employees and HR. 
+Employee self service is the perfect gateway for employees to view essential company information. The **Employee self service** workspace bridges the gap between employees and HR, allowing employees the freedom to access and manage their data, time-off, benefits, payroll, learning, and much more. Having a one-stop shop for employees saves time for both employees and HR. 
 
 My information is separated into three sections: Summary, My career information, Additional information.  
 
 ### Summary 
-The Summary section is comprised of tiles to show the employee priority items such as work items assigned to me, Questionnaires assigned to me, Company directory, Team absence calendar.  
+The **Summary** section is comprised of tiles to show the employee priority items such as work items assigned to me, Questionnaires assigned to me, Company directory, Team absence calendar.  
 
 **Work items assigned to me** displays all approvals and workflow items that are assigned to the employee. You can configure workflow items to send emails to the user.
 
-**Questionnaires assigned to me** display all scheduled questionnaires assigned directly to the employee or group.
+**Questionnaires assigned to me** displays all scheduled questionnaires assigned directly to the employee or group.
 
 **Company directory** lets employees look up information related to individuals in the organization. Public contact information is available to all employees. The company directory is restricted to the company that the employee has signed into.
 
@@ -48,9 +48,9 @@ The Summary section is comprised of tiles to show the employee priority items su
 
 ### My career information
 
-The **My career information** section of **Employee self service** displays tiles related to Leave and Absence, Performance Management, Competencies, Benefits, Tasks, and Attachments.
+The **My career information** section of **Employee self service** displays tiles related to Leave and absence, Performance management, Competencies, Benefits, Tasks, and Attachments.
 
-The **Time Off Balances** tile displays the balances for any enrolled plans. This tile forecasts your balance based on your accrual method. You can enter and submit time off requests, which will then go through an approval workflow process. For more information about Leave and absence, see [Leave and absence overview](hr-leave-and-absence-overview.md).
+The **Time Off Balances** tile displays the balances for any enrolled plans. This tile forecasts your balance based on your accrual method. You can enter and submit time off requests, which then goes through an approval workflow process. For more information about Leave and absence, see [Leave and absence overview](hr-leave-and-absence-overview.md).
 
 The **Tasks** tile displays tasks that are assigned to you and lets you view and manage them.
 
@@ -63,11 +63,11 @@ Depending on your organization's settings, your course registration might go thr
 
 The **Certificates** tile displays the certificate and expiration date of the certificate expiring closest to the current date. You can update, add, or remove certificates. Depending on your organization's settings, certificate updates might go through an approval process.
 
-The **Next Scheduled Review** displays your next performance review. You can start a new review from this tile. Your manager or HR representative can also initiate reviews. Depending on your organization's settings, you might also be able to view, update, and submit exit reviews.
+The **Next scheduled review** displays your next performance review. You can start a new review from this tile. Your manager or HR representative can also initiate reviews. Depending on your organization's settings, you might also be able to view, update, and submit exit reviews.
 
-You can manage your goals with **Performance Goals**. This tile displays the number of goals you have in each status (**Not started**, **On track**, and **Needs improvement**). You can create, update, and remove goals, depending on your assigned role-based security. If you want, you can add new goals from groups or templates. Managers and HR can also create goals on behalf of employees and determine how detailed each goal will be. Managers and employees can collaborate on goals and update activities, measurements, and status. You can also include attachments.
+You can manage your goals with **Performance goals**. This tile displays the number of goals you have in each status (**Not started**, **On track**, and **Needs improvement**). You can create, update, and remove goals, depending on your assigned role-based security. If you want, you can add new goals from groups or templates. Managers and HR can also create goals on behalf of employees and determine how detailed each goal will be. Managers and employees can collaborate on goals and update activities, measurements, and status. You can also include attachments.
 
-You can view your existing skills on the **Total Skills** tile. You can update skills, add new ones, or remove any that are no longer relevant. Depending on your organization's settings, changes to your skills might go through an approval process.
+You can view your existing skills on the **Total skills** tile. You can update skills, add new ones, or remove any that are no longer relevant. Depending on your organization's settings, changes to your skills might go through an approval process.
 
 You can view your current compensation on **Compensation**. Select **Show** to view your annual pay and last increase amount. If you're employed in more than one company, each annual amount is displayed. To view your detailed compensation history, select the **Annual salary** amount to open the **Fixed and variable compensation history** page. Future compensation doesn't display in this page. If you have more than one employment, you can switch between companies within this page to view your compensation history without logging into each company.
 
@@ -75,7 +75,7 @@ View and manage documents with the **Attachments** tile. You can manage all **Ex
 
 ### Related information
 
-This section provides links to other **Employee self service** areas, similar to the **My Career Information** section.
+This section provides links to other **Employee self service** areas, similar to the **My career information** section.
 
 Sign up for benefits through the **Benefits** link. For more information about Benefits management, see [Benefits overview](hr-benefits-management-overview.md).
 

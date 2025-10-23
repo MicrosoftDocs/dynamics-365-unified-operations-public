@@ -38,7 +38,7 @@ Quality management is flexible and can be implemented in various ways to meet th
 - Specify the resources that an inspection operation requires, such as a test area and test instruments.
 
 > [!NOTE]
-> The _Quality management for warehouse processes_ feature extends the capabilities of quality management. If you're using this feature, see [Quality management for warehouse processes](quality-management-for-warehouses-processes.md) for examples that show how quality management works when it's enabled.
+> The *Quality management for warehouse processes* feature extends the capabilities of quality management. If you're using this feature, see [Quality management for warehouse processes](quality-management-for-warehouses-processes.md) for examples that show how quality management works.
 
 ## Controlling the quality management process
 

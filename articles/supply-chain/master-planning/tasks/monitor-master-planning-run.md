@@ -17,20 +17,17 @@ ms.author: henrikan
 
 From the **View master planning progress** page, you can view details of historical master planning runs as a Gantt chart. This functionality can help you understand the time that is spent on the various phases of master planning. For a current active planning job, the **View master planning progress** page can be used to track progress and view the estimated remaining time.
 
-### Turn the Master plan progress visualization feature on or off
-
-As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Master planning progress visualization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
 ### Use the Master plan progress visualization feature
 
-The **View master planning progress** page can display both historical planning jobs and active planning jobs. 
+The **View master planning progress** page can display both historical planning jobs and active planning jobs.
 
-To view historical planning jobs, there are two options. 
+To view historical planning jobs, there are two options.
 
 1. Go to **Master planning \> Setup \> Plans \> Master plans**, and then, on the Action Pane, select **History**. With the desired job selected, select **Inquiries**,  and then select **View progress**
 1. Go to **Master planning \> Workspaces \> Master planning**, on the Master planning tile click **History**. With the desired job selected, select **Inquiries**,  and then select **View progress**
 
-To view active planning jobs, there are two options. 
+To view active planning jobs, there are two options.
+
 1. Go to **Master planning \> Workspaces \> Master planning**, on the Action Pane, select **Unfinished planning process**. With the desired job selected, select **Inquiries**,  and then select **View progress**.
 1. Go to **Master planning \> Workspaces \> Master planning**, on the Master planning tile click **View progress**. With the desired job selected, select **Inquiries**,  and then select **View progress**
 
@@ -112,6 +109,5 @@ The color is shown only on the lowest level in the Gantt chart. Select **Expand 
 1. In the grid, select the row where the **Field** field is set to **Item number**.
 1. In the **Criteria** field, enter a value.
 1. Select **OK**.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

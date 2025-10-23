@@ -18,7 +18,7 @@ ms.search.validFrom: 2021-11-30
 > [!NOTE]
 > Over the past 12 months, we've been working to fill in gaps and add new features that members of the user community have highlighted. [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), the successor to the **Export to Data Lake** feature in finance and operations apps, is generally available and ready for you. Synapse Link provides one experience for working with data from all Microsoft Dynamics 365 apps.
 >
-> We want you to benefit from the enhanced performance, flexibility, and improved user experience that Synapse Link offers as soon as possible. Therefore, we've announced the deprecation of the **Export to Data Lake** feature, effective October 15, 2023. If you're already using the **Export to Data Lake** feature, you can continue to use it until November 1, 2024. If you're new to the **Export to Data Lake** feature or are planning to adopt this feature in the coming months, we recommend that you use Synapse Link instead. 
+> We want you to benefit from the enhanced performance, flexibility, and improved user experience that Synapse Link offers as soon as possible. Therefore, we've announced the deprecation of the **Export to Data Lake** feature, effective October 15, 2023. If you're already using the **Export to Data Lake** feature, you can continue to use it until November 1, 2024. If you're new to the **Export to Data Lake** feature or are planning to adopt this feature in the coming months, we recommend that you use Synapse Link instead.
 >
 > We understand that that transition might seem daunting, but we want to provide a smoother experience and offer guidance. To get started, see the [Synapse Link transition guide](https://aka.ms/TransitionToSynapseLink). We're listening closely to the community and are working on multiple features to help make the transition smoother. We'll announce these other improvements to the transition process as we bring new features online. If you want to stay in touch, join the community at [https://aka.ms/SynapseLinkforDynamics](https://aka.ms/SynapseLinkforDynamics).
 
@@ -39,7 +39,6 @@ Metadata describes the name, data type, size, and nature of data. In addition to
 Both Microsoft and third parties provide tools that understand the CDM metadata format. These tools make it easy to work with data in the data lake. Azure Synapse Analytics serverless SQL pools let you use the Transact-SQL (T-SQL) language to consume data in the data lake. T-SQL is widely supported by many tools. You can define a Synapse workspace over the data in the data lake, and then use T-SQL, Spark, or Synapse Pipelines as though you're consuming data from a database. To create a Synapse workspace over your data in the data lake, you can use [FastTrack Solutions for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution). This solution creates external table definitions in Azure Synapse Analytics serverless SQL pools by using metadata in the data lake.
 
 If you select the **Enhanced metadata** option when you install Export to Data Lake, the system adds even more metadata.
-
 
 ## Enhanced metadata
 
@@ -122,5 +121,4 @@ If the change to the data structure is destructive, the system might repopulate 
 
 ## Any questions, feedback?
 
-We're actively working on this and other features. Do you want to stay in touch and ask questions of the product team or your fellow customers or partners? Do you want to provide feedback directly to the product team? If you do, you can join the [Preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can then attend weekly online "office hours" meetings and use the Yammer online forums to stay in touch and ask questions.
-
+We're actively working on this and other features. Do you want to stay in touch and ask questions of the product team or your fellow customers or partners? Do you want to provide feedback directly to the product team? If you do, you can join the [Preview group on Microsoft Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can then attend weekly online "office hours" meetings and use the Viva Engage online forums to stay in touch and ask questions.

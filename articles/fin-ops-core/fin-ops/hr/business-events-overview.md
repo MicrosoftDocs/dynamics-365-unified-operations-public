@@ -4,7 +4,7 @@ description: Learn about human resources business events, including prerequisite
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 05/06/2023
+ms.date: 09/03/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -37,9 +37,7 @@ The category of a business event identifies its source. Business events that ori
 
 The business event catalog is built during database synchronization at the time of deployment. Users should see the complete list of business events in the catalog. If an explicit update of the catalog is required, go to **Manage \> Rebuild business events catalog**.
 
-![Filter to Human Resources](../../../human-resources/Media/overview-filter.png)
-
-For each business event, the business event catalog shows a description. This description can help you better understand the business event and its context in the business process. The catalog also shows the list of data fields that will be sent out in the event. 
+For each business event, the business event catalog shows a description. This description helps you better understand the business event and its context in the business process. The catalog also shows the list of data fields that are sent out in the event. 
 
 In scenarios where external integration systems require the schema of the payload for a business event during development, select **Download schema** to download the JavaScript Object Notation (JSON) schema.
 
@@ -47,7 +45,7 @@ In summary, the business event catalog helps identify the business events that a
 
 For more information about business events such as activation, performance, and errors, see [Business events overview](../../dev-itpro/business-events/home-page.md#activating-business-events) and [Business event consumption models](../../dev-itpro/business-events/home-page.md#business-event-consumption-models).
 
-### Human resources business events 
+### Business events 
 
 - Personnel actions (position change)
 - Hire actions

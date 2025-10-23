@@ -1,11 +1,11 @@
 ---
 
-title: Connect Business performance analytics data to Microsoft Fabric (preview)
+title: Connect Business performance analytics data to Microsoft Fabric
 description: This article explains how to link your Business performance analytics data to Microsoft Fabric.
-author: jinniew
-ms.author: jiwo
+author: yashkv1
+ms.author: yvishwa
 ms.reviewer: twheeloc 
-ms.date: 6/17/2025
+ms.date: 9/30/2025
 ms.topic: how-to
 ms.custom:
 ms.search.form: business-performance-analytics
@@ -13,7 +13,7 @@ audience: Application User
 ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
 
-# Connect Business performance analytics data to Microsoft Fabric (preview)
+# Connect Business performance analytics data to Microsoft Fabric
 
 Business performance analytics enables organizations to extend their existing data warehouse by using Microsoft Fabric shortcuts to connect the Business performance analytics dimensional data model to it.
 
@@ -101,16 +101,10 @@ This section shows how you can create a custom Power BI dataset that extends the
 > [!NOTE]
 > Before you begin this procedure, you must link Business performance analytics data to your Fabric workspace as described earlier in this article.
 
- 
- >[!Important]
-> We recommend not using the .pbix file from the Maker Portal, it's not parameterized and requires extra set up to connect to your shortcuts.
+### Step 1: Download the Business performance analytics semantic (.pbix)
 
-
-### Step 1: Request the Business performance analytics dataset (.pbix)
-
-1. Create a support ticket through your standard Microsoft support channel.
-2. In the ticket, request a secure download link for the BPA `.pbix` file.
-3. Once approved, you receive a secured link to download the file.
+1. Go to the **Administration** home page within the Business performance analytics app.
+2. On the **Download semantic model** card, click **Download**.
 
 ### Step 2: Open the dataset in Power BI Desktop
 

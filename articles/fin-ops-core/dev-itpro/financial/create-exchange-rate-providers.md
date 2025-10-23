@@ -1,8 +1,8 @@
 ---
 title: Create exchange rate providers
 description: Learn how to create and set up an exchange rate provider, including terminology, conceptual and class models, and an overview on writing rate providers.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 06/10/2024
 ms.reviewer: johnmichalak

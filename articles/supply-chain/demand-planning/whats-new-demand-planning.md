@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: whats-new
-ms.date: 07/30/2025
+ms.date: 09/09/2025
 ms.custom: 
   - bap-template
 ---
@@ -15,15 +15,28 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of Demand planning in Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 1.0.0.3424
+
+### New feature introduced in version 1.0.0.3424
+
+This version of Demand planning enhances basic forecast calculations by adding two new features:
+
+- The new *Best fit model - version 2 (preview)* forecast algorithm now applies naive forecasting when an input time series contains a low number of data points. This approach helps improve statistics forecasting results when input data is limited, such as for newly added products. Learn more at [Naive forecasting](naive-forecast-algorithm.md).
+- Time freeze can now preserve all manual forecast adjustments. This option ensures that all manually adjusted cell values remain at the adjusted value even after you recalculate an existing forecast. No freeze rules are required. Learn more at [Limit automatic time series updates with time freezes](time-freeze.md).
+
+### New fixes and improvements in version 1.0.0.3424
+
+This version of Demand planning introduces the following fixes and improvements:
+
+- Increased stability.
+- Improvements to Generative insights.
+- Improved forecast calculation performance.
+
 ## Version 1.0.0.3336
 
 ### New feature introduced in version 1.0.0.3336
 
-This version of Demand planning enhances the *Copilot grid cursor* feature so that it now shows the impact of the signal input separately from the baseline for a selected forecasted cell.
-
-The following screenshot shows an example, indicating (from left to right) the baseline value (primary input), the signal impact, manual adjustments, and the current final value of a selected cell.
-
-:::image type="content" source="media/copilot-grid-cursor-with-signal.png" alt-text="Screenshot of Copilot grid cursor with signal impact" lightbox="media/copilot-grid-cursor-with-signal.png":::
+This version of Demand planning enhances the *Copilot grid cursor* feature so that it now shows the impact of the signal input separately from the baseline for a selected forecasted cell. Learn more in [Copilot grid cursor](copilot-grid-cursor.md).
 
 ### New fixes and improvements in version 1.0.0.3336
 

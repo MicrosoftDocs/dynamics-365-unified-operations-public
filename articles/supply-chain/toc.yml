@@ -15,13 +15,11 @@
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
         - name: Supply Chain Management 10.0.45 (September 2025)
-          href: get-started/whats-new-scm-10-0-45.md         
+          href: get-started/whats-new-scm-10-0-45.md
         - name: Supply Chain Management 10.0.44 (June 2025)
-          href: get-started/whats-new-scm-10-0-44.md         
+          href: get-started/whats-new-scm-10-0-44.md
         - name: Supply Chain Management 10.0.43 (March 2025)
-          href: get-started/whats-new-scm-10-0-43.md         
-        - name: Supply Chain Management 10.0.42 (December 2024)
-          href: get-started/whats-new-scm-10-0-42.md
+          href: get-started/whats-new-scm-10-0-43.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1579,7 +1577,7 @@
       items:
       - name: Inventory management overview
         href: inventory/inventory-home-page.md
-      - name: Advanced quality management overview (preview)
+      - name: Advanced quality management overview
         href: inventory/advanced-quality-management-overview.md
       - name: Arrival
         items:
@@ -1617,27 +1615,27 @@
             href: inventory/quality-quarantine-zones.md
           - name: Nonconformance diagnostic types
             href: inventory/quality-diagnostic-types.md
-          - name: Nonconformance root cause codes (preview)
+          - name: Nonconformance root cause codes
             href: inventory/quality-root-cause-codes.md
-          - name: Nonconformance work groups (preview)
+          - name: Nonconformance work groups
             href: inventory/quality-nonconformance-workgroup.md
           - name: Nonconformance operations
             href: inventory/quality-operations.md
           - name: Nonconformance operation charges
             href: inventory/quality-charges.md
-        - name: Test instrument calibration (preview)
+        - name: Test instrument calibration
           href: inventory/quality-instrument-calibration.md
-        - name: Flexible sampling plans (preview)
+        - name: Flexible sampling plans
           href: inventory/quality-flexible-sampling-plans.md
         - name: Acceptance sampling (preview)
           href: inventory/quality-acceptance-sampling.md
         - name: Work with quality orders
           href: inventory/quality-orders.md
-        - name: Customer specific certificate of analysis (COA) (preview)
+        - name: Customer specific certificate of analysis (COA)
           href: inventory/quality-customer-specific-coa.md
         - name: Inspect the quality of goods
           href: inventory/tasks/inspect-quality-goods.md
-        - name: Enter quality test results quickly (preview)
+        - name: Enter quality test results quickly
           href: inventory/quality-quick-results-entry.md
         - name: Create and process a nonconformance
           href: inventory/tasks/create-process-non-conformance.md
@@ -1647,7 +1645,7 @@
           href: inventory/inventory-blocking.md
         - name: Create and maintain inventory blocking
           href: inventory/tasks/create-maintain-inventory-blocking.md
-      - name: Corrective and preventive action (CAPA) management (preview)
+      - name: Corrective and preventive action (CAPA) management
         items:
         - name: CAPA management overview
           href: inventory/capa-overview.md
@@ -1681,7 +1679,7 @@
           href: inventory/inventory-transactions-details.md
         - name: Initialize stock levels in the warehouse
           href: inventory/tasks/initialize-stock-levels-warehouse.md
-        - name: Link transfer order lines with sales order lines (preview)
+        - name: Link transfer order lines with sales order lines
           href: inventory/pair-transfer-and-sales-lines.md
         - name: Transfer physical inventory within the warehouse
           href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
@@ -2083,12 +2081,14 @@
         items:
         - name: Work with forecast profiles
           href: demand-planning/forecast-profiles.md
-        - name: Demand forecasting algorithms
-          href: demand-planning/forecast-algorithm-types.md
         - name: Design forecast models
           href: demand-planning/design-forecast-models.md
         - name: Forecast with signals (preview)
           href: demand-planning/forecasts-with-signals.md
+        - name: Demand forecasting algorithms
+          href: demand-planning/forecast-algorithm-types.md
+        - name: Naive forecasting (preview)
+          href: demand-planning/naive-forecast-algorithm.md
         - name: Use your own custom Azure Machine Learning algorithms in Demand planning
           href: demand-planning/custom-azure-machine-learning-algorithms.md
         - name: Rolling forecasts
@@ -2361,6 +2361,10 @@
           href: procurement/purchase-requisitions-overview.md
         - name: Purchase requisition workflow
           href: procurement/purchase-requisitions-workflow.md
+        - name: Create a requisition for consumption
+          href: procurement/tasks/create-requisition-consumption.md
+        - name: Create a requisition that uses an RFQ
+          href: procurement/tasks/create-requisition-uses-rfq.md
       - name: Request for quotations (RFQs)
         items:
         - name: Request for quotations (RFQs) overview
@@ -2415,8 +2419,6 @@
           href: procurement/tasks/create-project-purchase-order.md
         - name: Create a repeat purchase order
           href: procurement/tasks/create-repeat-purchase-order.md
-        - name: Create a requisition for consumption
-          href: procurement/tasks/create-requisition-consumption.md
       - name: Supplier Communications Agent (production ready preview)
         items:
         - name: Supplier Communications Agent overview
@@ -3021,9 +3023,9 @@
             href: production-control/production-feedback.md
           - name: Time and attendance registration
             href: production-control/time-attendance-registrations.md
-          - name: Electronic batch records (EBR) (preview)
+          - name: Electronic batch records (EBR)
             href: production-control/quality-electronic-batch-record.md
-          - name: Production dispensing (preview)
+          - name: Production dispensing
             href: production-control/quality-production-dispensing.md
         - name: Manage financials in production
           items:
@@ -3133,7 +3135,7 @@
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
-        - name: Use external item identifiers to add products to orders (preview)
+        - name: Use external item identifiers to add products to orders
           href: sales-marketing/external-item-product-search-lookup.md
         - name: Copy lines between sales orders
           href: sales-marketing/copy-lines-between-sales-orders.md
@@ -3289,7 +3291,7 @@
           href: sales-marketing/customer-portal-user-admin.md
         - name: Customize and use the Customer portal
           href: sales-marketing/customer-portal-customize.md
-      - name: Approved customer lists (preview)
+      - name: Approved customer lists
         href: sales-marketing/approved-customer-lists.md
       - name: Credit limits for customers
         href: sales-marketing/credit-limits-customers.md
@@ -3921,11 +3923,7 @@
         items:
         - name: What's new or changed in the Warehouse Management mobile app
           href: warehousing/whats-new-wma.md
-        - name: Warehouse Mobile app accessibility features
-          href: warehousing/warehouse-app-accessibility.md
-        - name: Workload insights with Copilot
-          href: warehousing/warehouse-management-mobile-app-insights.md
-        - name: Install, set up, and use mobile devices
+        - name: Install, set up, and connect mobile devices
           items:
           - name: Install the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
@@ -3953,8 +3951,22 @@
             href: warehousing/mobile-barcode-support.md
           - name: Advanced barcode scanner configuration
             href: warehousing/warehouse-app-adv-scanner-config.md
-          - name: Scan bar codes using a camera in the Warehouse Management mobile app
-            href: warehousing/scan-bar-codes-using-a-camera.md
+        - name: Work with the Warehouse Management mobile app
+          items:
+          - name: Warehouse Mobile app accessibility features
+            href: warehousing/warehouse-app-accessibility.md
+          - name: User settings, color themes, and sound themes
+            href: warehousing/warehouse-app-user-settings-themes.md
+          - name: Data submission behavior in the Warehouse Management mobile app
+            href: warehousing/warehouse-app-autosubmit-behavior.md
+          - name: Workload insights with Copilot
+            href: warehousing/warehouse-management-mobile-app-insights.md
+          - name: Warehouse Management mobile app calculator
+            href: warehousing/warehouse-app-calculator.md
+          - name: View the app log on a mobile device
+            href: warehousing/warehouse-app-log-view.md
+          - name: Check Wi-Fi connectivity and performance
+            href: warehousing/warehouse-app-network-diagnostics.md
         - name: Set up fields and menus for mobile devices
           items:
           - name: Configure fields for the Warehouse Management mobile app
@@ -3995,18 +4007,20 @@
             href: warehousing/pick-oldest-batch.md
           - name: Query item data on a mobile device
             href: warehousing/warehouse-app-item-inquiry.md
-        - name: Global mobile device parameters
-          href: warehousing/mobile-device-parameters.md
-        - name: Warehouse mobile devices workspace
-          href: warehousing/mobile-device-workspace.md
-        - name: Mobile device user settings
-          href: warehousing/mobile-device-user-settings.md
-        - name: Warehouse Management mobile app calculator
-          href: warehousing/warehouse-app-calculator.md
-        - name: Warehouse app event processing
-          href: warehousing/warehouse-app-events.md
-        - name: Inspect details of active Warehouse Management mobile app sessions
-          href: warehousing/work-user-sessions.md
+          - name: Scan bar codes using a camera in the Warehouse Management mobile app
+            href: warehousing/scan-bar-codes-using-a-camera.md
+        - name: Manage mobile devices and sessions from Supply Chain Management
+          items:
+          - name: Global mobile device parameters
+            href: warehousing/mobile-device-parameters.md
+          - name: Warehouse mobile devices workspace
+            href: warehousing/mobile-device-workspace.md
+          - name: Mobile device user settings
+            href: warehousing/mobile-device-user-settings.md
+          - name: Warehouse app event processing
+            href: warehousing/warehouse-app-events.md
+          - name: Inspect details of active Warehouse Management mobile app sessions
+            href: warehousing/work-user-sessions.md
         - name: Extend warehouse mobile processes
           items:
           - name: Process guide framework
@@ -4047,8 +4061,6 @@
             href: warehousing/wave-template-grouping.md
           - name: Wave allocation
             href: warehousing/wave-allocation-method.md
-          - name: Schedule work creation during wave
-            href: warehousing/configure-wave-schedule-work-creation.md
           - name: Automatic rewaving of nonallocated shipment lines
             href: warehousing/auto-rewave-shipments.md
           - name: Wave execution notifications
@@ -4153,7 +4165,7 @@
       items:
       - name: Monitor and control message processor messages
         href: message-processor/message-processor.md
-      - name: Clean up processed and canceled message processor messages (preview)
+      - name: Clean up processed and canceled message processor messages
         href: message-processor/message-processor-cleanup.md
       - name: Business events, custom message queues, and custom message types
         href: message-processor/developer/message-processor-develop.md

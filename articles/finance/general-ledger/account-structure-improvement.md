@@ -1,12 +1,12 @@
 ---
 title: Account structure activation performance enhancement
 description: Learn about the new performance enhancement for the account structure activation process, including an outline on account structure activation tips.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 10/31/2022
 ms.custom:
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User 
 ms.search.region: Global 
 ms.search.validFrom: 2022-10-08
@@ -39,3 +39,4 @@ Here are some of the factors that can affect the performance of the activation p
 - Import of journal data while activation tasks are still running
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

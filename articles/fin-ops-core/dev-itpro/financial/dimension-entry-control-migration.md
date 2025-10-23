@@ -1,8 +1,8 @@
 ---
 title: Migrate default dimensions controls to Dimension Entry controls
 description: Learn about the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.custom: 
   - bap-template

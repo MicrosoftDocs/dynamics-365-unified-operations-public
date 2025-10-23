@@ -1,13 +1,23 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/archive-invent-doc.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/",
+      "redirect_document_id": "false"  
+    },   
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-development-environments.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv",
+      "redirect_document_id": "false"  
+    },    
+    {
       "source_path": "articles/fin-ops-core/fin-ops/sysadmin/user-security-report-technical-validation-faq.md",
       "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2319108",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/india/apac-ind-audit-trail-edit-logs-accounting-software.md",
-      "redirect_url": "/dynamics365/ffinance/localizations/india/india-audit-trail-edit",
+      "redirect_url": "/dynamics365/finance/localizations/india/india-audit-trail-edit",
       "redirect_document_id": "false"
     },
     {
@@ -28484,6 +28494,13 @@
       "source_path": "articles/supply-chain/transportation/tasks/set-up-location-directive-purchase-order-put-away.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/tasks/set-up-location-directive-purchase-order-put-away",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/configure-wave-schedule-work-creation.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/wave-processing",
+      "redirect_document_id": false
     }
   ]
+
 }
+

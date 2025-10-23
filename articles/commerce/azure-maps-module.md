@@ -1,8 +1,8 @@
 ---
-title: Azure Maps module (preview)
+title: Azure Maps module
 description: Learn how to configure the Azure Maps module in Microsoft Dynamics 365 Commerce.
 author: giripriya-v
-ms.date: 07/29/2025
+ms.date: 09/02/2025
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -12,10 +12,9 @@ ms.custom:
   - bap-template
 ---
 
-# Azure Maps module (preview)
+# Azure Maps Module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article explains how to configure the Azure Maps module in Microsoft Dynamics 365 Commerce.
 
@@ -24,7 +23,7 @@ The Azure Maps module shows the locations of stores on an interactive map that's
 The Azure Maps module works with the store selector module to determine the geographic locations of stores that must be rendered on a map. The store selector and Azure Maps modules interact when a user selects a store in one of those modules on a site page. The Azure Maps module can be customized and extended for scenarios other than interaction with store selector modules.
 
 > [!NOTE]
-> The Azure Maps module is available as of the Dynamics 365 Commerce version 10.0.44 release.
+> The Azure Maps module is available as of the Dynamics 365 Commerce version 10.0.45 release.
 
 The following image shows an example of an Azure Maps module used on a store locations page.
 
