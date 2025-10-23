@@ -148,7 +148,7 @@ Click **View details/View all** to see user‑level requirements and the **"Tota
 
 Export the CSV and annotate gaps, for example:
 
-> License gap analysis
+**License gap analysis**
 > - Need +9 Finance base
 > - Need +3 Supply Chain Management attach
 
