@@ -15,12 +15,26 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmF
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows you how to create a sales order. You can use the procedure in demo data company USMF. Sales orders are typically created by a sales order processor.
+This document shows you how to create a sales order. You can use the step by step process in demo data company USMF. Sales orders are typically created by a sales order processor.
+
+You can now create a new sales order either from the All Sales Orders form or directly via the Sales and Marketing module on the Home page. The latter offers a quicker way to create sales orders without relying on the All Sales Orders page. Both methods are outlined below. 
 
 ## Enter sales order header details
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
-2. Select **New**.
+1. Create new sales order.
+
+    Option 1: Create new Sales Order in All Sales Orders form
+    
+     a. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+    
+     b. Select **New**.
+
+   OR
+   
+    Option 2: Create new Sales Order from Sales & Marketing module in Home page
+
+   a. Go to **Sales and marketing** \> **Sales orders** \> **Create sales order**.
+            
 3. In the **Customer account** field, select the drop-down button to open the lookup.
 4. In the list, find and select the customer record.
 
