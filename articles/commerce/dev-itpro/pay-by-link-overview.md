@@ -26,7 +26,7 @@ Pay by link functionality is a controlled release. To check participation availa
 
 ### Enable OAuth authentication from Adyen
 
-Payment notifications for the pay by link payment method use Open Authorization (OAuth)–based authentication. To enable OAuth setup in the Commerce HQ in 10.0.44, you must contact Microsoft Support and ask to have a flight enabled in your Commerce environments.  In addition, you must ask Adyen to set  This value is one second less than an hour, the default TTL value for the OAuth token in Azure.
+Payment notifications for the pay by link payment method use Open Authorization (OAuth)–based authentication. To enable OAuth setup in the Commerce HQ in 10.0.44, you must contact Microsoft Support and ask to have a flight enabled in your Commerce environments.
 
 > [!NOTE]
 > The time to live (TTL) value for the OAuth token must be 3,599 seconds. This should be the default value from the Adyen side when you choose OAuth based authentication and should not require any additional configuration from your side on Adyen portal. 
