@@ -27,20 +27,20 @@ This article describes how to configure, download, and install Modern point of s
 > [!NOTE]
 > There are two Modern POS installers: Modern POS and Modern POS with offline (this installer also installs the offline database).
 > - Starting in Commerce version 10.0.11, altering customized files that are stored in the ClientBroker folder could cause issues when installing a newer release. These issues might include the inability to go offline or a newer installer failing to complete successfully. A workaround is to remove the files in the ClientBroker folder in the Modern POS directory before performing the installation using the newer installer.
-> - Starting in Commerce version 10.0.15, customizations to files in the Client broker folder for Modern POS can cause an error when updating from a previous version. The known workaround is to delete all files from the Client broker folder prior to running the newer Modern POS installer. For automation, this can easily be scripted as a pre-step for the installer. All files in this folder must be deleted. When this error occurs, the newer installer will update the current installation correctly.
+> - Starting in Commerce version 10.0.15, customizations to files in the Client broker folder for Modern POS can cause an error when updating from a previous version. The known workaround is to delete all files from the Client broker folder before you run the newer Modern POS installer. For automation, this action can easily be scripted as a pre  step for the installer. All files in this folder must be deleted. When this error occurs, the newer installer correctly updates the current installation.
 
 ## Technology
 
 The self-service process lets you download the appropriate version of the Modern POS installer and install it on the physical device that you want to use as the point of sale (POS) register. Device activation is the main onboarding step that ties the physical device to a register in Headquarters. Here are the main technical functions of this feature:
 
 - Tie a physical device to a business entity (register).
-- Provide enhanced security through Microsoft Microsoft Entra and a device token/ID.
+- Provide enhanced security through Microsoft Entra and a device token/ID.
 - Stop unauthorized remote use of Modern POS. (In other words, deactivate a device remotely.)
 - Initialize settings for easy Modern POS functioning (number sequence, hardware profile, merchant information) as the first touchpoint of the POS.
 - Comply with payment card industry (PCI) standards, and report on device information from Headquarters.
 
 > [!NOTE]
-> If you are installing Modern POS for use with an on-premises environment, Modern POS does not use Microsoft Entra credentials for device activation.
+> If you're installing Modern POS for use with an on-premises environment, Modern POS doesn't use Microsoft Entra credentials for device activation.
 
 ## Setup
 
@@ -49,7 +49,7 @@ Before you start the steps that are outlined in this article, follow these steps
 - Verify that you have credentials to sign in to Headquarters.
 - Verify that you have administrative or root access to install Modern POS on a device.
 - Verify that you can access the Commerce Scale Unit from the device.
-- Verify that the environment contains the Commerce permission groups and jobs in the **Human resources** module. These permission groups and jobs should have been installed as part of the demo data.
+- Verify that the environment contains the Commerce permission groups and jobs in the **Human resources** module. These permission groups and jobs should be installed as part of the demo data.
 
 ## Download and install Modern POS
 
@@ -62,7 +62,7 @@ Before you start the steps that are outlined in this article, follow these steps
 5. On the page for the register, under **General**, verify that the **Support offline** option is set to **No**. To use offline support, on the Action Pane, select **Edit**, and then set **Support offline** option to **Yes**.
 
     > [!NOTE]
-    > When using Microsoft Entra authentication, POS offline will not function, as online connectivity is always required.
+    > When you use Microsoft Entra authentication, POS offline doesn't function because online connectivity is always required.
 
 ### Download the Modern POS installer
 
@@ -74,72 +74,72 @@ Before you start the steps that are outlined in this article, follow these steps
     > - The Houston devices are well defined. Houston-3 is useful as an example for a Microsoft Windows desktop or tablet. Houston-21 is useful as an example for a Windows Phone.
     > - When you select a device, the **Download** button on the Action Pane becomes available.
 
-4. Select **Download**, and then select **Configuration file**. Note the following:
+4. Select **Download**, and then select **Configuration file**.
 
     - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
-    - The configuration file must be saved to the same location as the Modern POS installer. For security reasons, delete this file after installation is completed. If the configuration file is not the same file name as the installer executable, either the executable must be run using the command line to specify the configuration file or you need to rename the XML configuration file to have the same base name as the executable file name.
+    - The configuration file must be saved to the same location as the Modern POS installer. For security reasons, delete this file after installation is completed. If the configuration file isn't the same file name as the installer executable, you must either run the executable using the command line to specify the configuration file, or you must rename the XML configuration file to have the same base name as the executable file name.
 
 5. On the notification bar that appears at the bottom of the Microsoft Edge window, select **Save**. (The notification bar might appear in a different place in other browsers.)
-6. Select **Download**, and then select **Retail Modern POS**. Note the following:
+6. Select **Download**, and then select **Retail Modern POS**.
 
-    - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
-    - The installation package that you must use varies, depending on whether you require offline support, and whether the device that Modern POS will be installed on is a Windows tablet or a phone device (such as a Windows Phone, an Android device, or an iOS device). The correct package is automatically selected for download, based on the register settings and the application type that is set for the device. If the offline package is selected for a Windows tablet, but Microsoft SQL Server isn't already installed (or if it doesn't meet the requirements for the offline package), SQL Server is no longer downloaded. Install SQL Server (and associated prerequisite features, such as Full-text search) and attempt the installer again.
+    - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** \> **Always allow**. Then, while the device is still selected, select **Download** again.
+    - The installation package that you must use depends on whether you require offline support, and whether the device that Modern POS is installed on is a Windows tablet or an Android or iOS phone. The correct package is automatically selected for download, based on the register settings and the application type that is set for the device. If the offline package is selected for a Windows tablet, but Microsoft SQL Server isn't already installed, or if it doesn't meet the requirements for the offline package, SQL Server isn't downloaded. Install SQL Server (and the associated prerequisite features, such as Full-text search) and attempt the installer again.
 
 7. On the notification bar that appears at the bottom of the Microsoft Edge window, select **Save**. (The notification bar might appear in a different place in other browsers.)
-8. After the setup installer has been saved, on the notification bar, select **Run**. (This step might differ, depending on your browser.)
+8. After the setup installer is saved, on the notification bar, select **Run**. (This step might differ, depending on your browser.)
 
 ### Before running the Modern POS installer
 
-- Make sure that all [system requirements](../../fin-ops-core/dev-itpro/get-started/system-requirements.md) are met. If planning to use an offline database, it is recommended to first review the [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md#commerce-data-exchange-implementation-guidance) section and the related best practices content it will reference.
-- It is recommended to temporarily turn off antivirus applications. It has been noted that on aggressive antivirus solutions, the installation may stall due to the antivirus solution checking active files while in use.
-- The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
+- Make sure that all [system requirements](../../fin-ops-core/dev-itpro/get-started/system-requirements.md) are met. If you plan to use an offline database, Microsoft recommends that you first first review the [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md#commerce-data-exchange-implementation-guidance) section and the related best practices content it references.
+- Microsoft recommends that you temporarily turn off antivirus applications. For aggressive antivirus solutions, the installation may stall due to the antivirus solution checking active files while in use.
+- The installer sideloads a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer changes the associated registry key as follows to allow for this installation:
 
     - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
     - **Property:** AllowAllTrustedApps
     - **Value:** 1
 
-- If offline is used (an offline database created), then a default SQL Server instance must exist. If SQL Server instances exist, but none are set as the default, then the installer will fail to install the offline database.
+- If offline is used (an offline database created), then a default SQL Server instance must exist. If SQL Server instances exist but none are set as the default, then the installer fails to install the offline database.
 
 > [!NOTE]
-> When using Microsoft Entra authentication, POS offline will not function as online connectivity is always required.
+> When you use Microsoft Entra authentication, POS offline doesn't function because online connectivity is always required.
 
-If you are installing Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
+If you're installing Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
 
 ```Console
 ModernPosSetupOffline.exe -UseAdfsAuthentication
 ```
 
 > [!NOTE]
-> The **UseAdfsAuthentication** parameter is only available for non-sealed MPOS. Customers that need to use Active Directory Federation Services (ADFS) authentication for an on-premises deployment using the sealed extensibility model should instead use the [Store Commerce app](store-commerce.md).
+> The **UseAdfsAuthentication** parameter is only available for nonsealed MPOS. Customers that need to use Active Directory Federation Services (ADFS) authentication for an on-premises deployment using the sealed extensibility model should instead use the [Store Commerce app](store-commerce.md).
 
 ### Run the Modern POS installer on a Windows computer
 
 The Modern POS installer first extracts the associated files and then starts the installation.
 
-1. The installer validates that all prerequisites are met. Note the following:
+1. The installer validates that all prerequisites are met.
 
     - If a system restart is required, the installer informs you about this requirement, but the installation can typically continue.
     - A sideloaded installation of Modern POS requires a Group Policy change. The installer informs you if this change is required and then makes the change automatically.
 
-2. If you selected offline support, but a valid version of SQL Server isn't found, the installer will fail during the prerequisites check. If a prerequisite fails during this step, retry the installer.<!-- If the installer continues to fail, see the [Troubleshooting](#troubleshooting) section of this article.-->
+2. If you selected offline support, but a valid version of SQL Server isn't found, the installer fails during the prerequisites check. If a prerequisite fails during this step, retry the installer.<!-- If the installer continues to fail, see the [Troubleshooting](#troubleshooting) section of this article.-->
 3. The installer installs Modern POS.
 4. On the page that states that installation was successful, select **Close** to exit the installer.
 
 You can now start the program.
 
 > [!NOTE]
-> This installation occurs only for the administrator user who ran the installer. For all other users, a desktop icon to install Modern POS is created. Every time that a user signs in, the user must double-click this icon. The program will then be installed or updated, as required. If a user doesn't use the desktop icon after an update, the POS client will request that the user run from the desktop icon instead to update correctly prior to running.
+> This installation occurs only for the administrator user who ran the installer. For all other users, a desktop icon to install Modern POS is created. Every time that a user signs in, the user must double-click this icon. The program is then installed or updated as required. If a user doesn't use the desktop icon after an update, the POS client requests that the user run from the desktop icon instead to update correctly before installation.
 
 ### Run the installer on any other device (Windows Phone, Google Android device, or Apple iOS device)
 
-1. If the application wasn't downloaded directly to the device, transfer the downloaded app file and the associated configuration file to the same folder on the device. Depending on the type of device, the app file will be an APPX, APK, or IPA file.
+1. If the application wasn't downloaded directly to the device, transfer the downloaded app file and the associated configuration file to the same folder on the device. Depending on the type of device, the app file is an APPX, APK, or IPA file.
 
-    Note that this step can be done in various ways. For example, the files can be accessed through a shared folder, transferred via USB cable, or securely mailed to the user's device.
+    - This step can be done in various ways. For example, the files can be accessed through a shared folder, transferred via USB cable, or securely mailed to the user's device.
 
-2. Use a file explorer on the device to browse to the app directory.
-3. Tap the app to begin application installation. (If the configuration file was saved to the same location, the Commerce Scale Unit URL will be automatically entered when you start the application and begin device activation.)
+2. To browse to the app directory, use a file explorer on the device.
+3. To begin the application installation, tap the app. (If the configuration file was saved to the same location, the Commerce Scale Unit URL is automatically entered when you start the application and begin device activation.)
 
-    Note that some devices require that you double-tap the file to begin application installation. Some devices might not notify you that an application has been installed. On those devices, we recommend that you look at the application list to verify that the application was correctly installed.
+    - Some devices require that you double-tap the file to begin application installation. Some devices might not notify you that an application is installed. On those devices, Microsoft recommends that you look at the application list to verify that the application was correctly installed.
 
 4. When the installation is completed, you should be able to start the application from the application list on the device. For example, after you install the application on a Windows Phone, you can start it from the home screen tiles list.
 
@@ -147,13 +147,15 @@ You can now start the program.
 
 ## Create a worker
 
-For this article, we have already created workers and assigned them to the Houston address book in the demo data that is provided. Therefore, this article will use pre-generated data.
+Workers have already been created and assigned to the Houston address book in the provided demo data, so the following procedures use pregenerated data.
 
 ### Create a worker
 
-1. Go to **Retail and Commerce** &gt; **Employees** &gt; **Workers**.
+To create a worker, follow these steps.
+
+1. In Commerce headquarters, go to **Retail and Commerce** \> **Employees** \> **Workers**.
 2. On the Action Pane, select **New** to create a new employee.
-3. Enter the first and last name. For example, enter **John** as the first name and **Smith** as the last name.
+3. Enter the first and family name. For example, enter **John** as the first name and **Smith** as the family name.
 4. Verify that the **Legal entity** field is set to **USRT**, the **Worker type** field is set to **Employee**, and the **Employment start date** field is set to the current date at 12 AM, so that the worker's employment starts immediately.
 5. Select the **Assign a position** check box. Select position number **000544**, which is the Store manager position.
 6. Set the **Personnel action type** field to **Hire Action** to hire a new employee immediately.
@@ -166,9 +168,9 @@ For this article, we have already created workers and assigned them to the Houst
 13. On the **Commerce** tab, you can reset the POS password. For this tutorial, reset the password to **123**.
 14. On the **Commerce** tab, under **Screen layout**, assign a screen layout. For example, select **F2MP16:9M** (**Fabrikam MPOS Manager (16:9)**).
 15. On the Action Pane, select **Save**.
-16. Go to **Retail and Commerce** &gt; **Periodic** &gt; **Distribution schedule**.
+16. Go to **Retail and Commerce** \> **Periodic** \> **Distribution schedule**.
 17. Select the **1060 – Staff** job, and then, on the Action Pane, select **Run now** to sync the worker data to the channel database.
-18. After the new worker has been created and synced to stores, the worker can sign in to any POS device that is used in the HOUSTON store that the worker is assigned to, and the worker can perform transactions on that device. However, the device must be activated first. The following section explains how to activate a device for a new worker.
+18. After the new worker is created and synchronized to stores, the worker can sign in to any POS device that the worker is assigned to in the HOUSTON store, and can perform transactions on that device. However, the device must be activated first. The following section explains how to activate a device for a new worker.
 
 ### Map an Azure AD account to a worker who has POS permissions for device activation
 
@@ -177,22 +179,22 @@ You must complete this procedure before you activate Modern POS for a new worker
 1. In Commerce, from the **Worker** page, open the **Worker details** page for the worker that you created in the previous procedure.
 2. On the Action Pane, select **Edit**.
 3. On the **Commerce** tab, select the **POS permissions** link. Under **POS permission group**, verify that the value is **Manager**.
-4. When you've finished, return to the **Worker details** page for the new worker.
+4. When verification is completed, return to the **Worker details** page for the new worker.
 
-    To return to the **Worker details** page, select the **Close** button (**X**) on the right side of the Action Pane.
+    - To return to the **Worker details** page, select the **Close** button (**X**) on the right side of the Action Pane.
 
 5. On the Action Pane, select **Commerce**, and then select **Associate existing identity**.
-6. In the dialog box that appears, select the Azure AD account that is named **admin AX Admin**. (If an alternative administrator Microsoft Entra account has been created, select that account instead.)
+6. In the dialog box that appears, select the Azure AD account that is named **admin AX Admin**. (If an alternative administrator Microsoft Entra account is created, select that account instead.)
 7. Select **OK**. In the demo data, the Azure AD account that is associated with the administrator account in Headquarters is your administrator Microsoft Entra account.
 8. On the Action Pane, select **Save**, and then refresh the page. The **External identity** section should now be updated with the new information.
 
-    Note that the **External identifier** field will remain empty. This behavior is expected. Therefore, you can ignore it.
+    - The **External identifier** field remains empty. This behavior is expected, so you can ignore it.
 
 This procedure should be completed before you activate Retail Cloud POS or Modern POS. For more information, see [Manage activation accounts and validate devices](set-up-activation-accounts-validate-devices-hq.md).
 
 ### Run the Validate Devices for Activation check
 
-1. In Headquarters, open the **Device** page (**Retail and Commerce** &gt; **Setup POS** &gt; **Devices**).
+1. In Headquarters, open the **Device** page (**Retail and Commerce** \> **Setup POS** \> **Devices**).
 2. Select the device to validate for device activation, and then select **Validate Devices for Activation**. For example, select device **HOUSTON-3**.
 3. In the dialog box that appears, select the worker to validate the device for (that is, the worker that you mapped to the Azure AD account in the previous procedure). For example, select worker **000160**.
 4. Select **OK**, and make sure that you receive the following message: "Pre-Activation validation completed for Device HOUSTON-3 and Staff 000160. Validation: Passed"
@@ -200,9 +202,9 @@ This procedure should be completed before you activate Retail Cloud POS or Moder
 ## Activate a device
 
 > [!NOTE]
-> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to a Microsoft Entra token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](/azure/active-directory/develop/apple-sso-plugin).
+> It's possible for the Safari browser to show an error during device activation of a Cloud POS device due to a Microsoft Entra token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise Single Sign-On (SSO) plug-in for Apple devices](/azure/active-directory/develop/apple-sso-plugin).
 
-1. Start Modern POS on your computer. Read the instructions on the **Before you start** page, and make sure that they are completed. Then select **Next**.
+1. Start Modern POS on your computer. Read the instructions on the **Before you start** page, and make sure that you complete the steps. Then select **Next**.
 2. Select **Activate**. You're redirected to the Azure AD sign-in page.
 3. Enter the Azure AD account that you mapped earlier, such as `admin@<MyCompany>.onmicrosoft.com`, and the password.
 4. When activation is completed, select **Get Started**.
@@ -217,7 +219,7 @@ The device should now be activated and ready to use.
 
 1. After a Modern POS application is uploaded into the environment, the version of the package can be selected on the device. The package listings should include the new uploaded application.
 2. To update the Modern POS application, follow the steps in the [Download and install Modern POS](#download-and-install-modern-pos) section. To do an in-place update, just run the newer version of the self-service installer. Uninstallation isn't required or recommended. Device activation status will be maintained after the update.
-3. The installer will use the currently installed configuration settings. If the configuration file has changed, because of various configuration changes in Commerce, an update won't change the Modern POS application settings.
+3. The installer uses the currently installed configuration settings. If the configuration file is changed, an update doesn't change the Modern POS application settings.
 
 > [!WARNING]
 > An update of a Modern POS offline database isn't required for the installer to succeed. An offline database might maintain an older version and might not be updated if any error occurs. When customizations are updated or the update failure isn't detected, an offline database might not work correctly. In these scenarios, it's important that you fix the blocking issue and update the Modern POS again, so that the offline database is correctly updated.
@@ -229,7 +231,7 @@ The device should now be activated and ready to use.
 
 - When Modern POS is in use and the POS switches offline during a transaction, the following error displays, "Cart version has changed".
 
-    **Solution:** Select to close and continue working. This is a known issue that is currently being investigated. This error does not produce any issues.
+    **Solution:** Select to close and continue working. This is a known issue that is currently being investigated. This error doesn't produce any issues.
 
 - Your browser blocks the download pop-up that is generated.
 
@@ -282,7 +284,7 @@ The device should now be activated and ready to use.
         8. In the **Permissions for SelfServiceDeployment** dialog box, select the new **IIS\_ISURS** user. Under **Permissions for IIS\_IUSRS**, select **Allow** for the **Full control** permission. Select **OK**.
         9. In the **Open permission** dialog box, select **OK**.
 
-- The latest iOS version does not support your self-signed certificate.
+- The latest iOS version doesn't support your self-signed certificate.
 
     - **Solution 1:** Utilize a domain and generate a proper domain-based certificate.
     - **Solution 2:** Download the open source OpenSSL library and perform the following after completing installation:
@@ -331,7 +333,7 @@ The device should now be activated and ready to use.
 
     **Solution:** Verify that the Azure AD user is mapped to a worker who has POS permission to activate devices. The **Manage device** permission for the worker should be set to **Yes**.
 
-- When using Modern POS on an Android device, the device activation and Microsoft Entra ID-based POS sign-in open the Microsoft Entra sign-in page in a standalone browser instance, but the sign-in process doesn't proceed.
+- When you use Modern POS on an Android device, the device activation and Microsoft Entra ID-based POS sign-in open the Microsoft Entra sign-in page in a standalone browser instance, but the sign-in process doesn't proceed.
   
     **Solution:** Check whether your Commerce Scale Unit is version 10.0.22 or later, and that Modern POS is version 10.0.21 or earlier. If so, you must rebuild Modern POS from the latest Commerce sample repository (version 10.0.22 or later) and then update the Modern POS application on the Android device.
 
@@ -358,7 +360,7 @@ The device should now be activated and ready to use.
 
 On a single-computer system, such as a developer topology or a demo environment, or when Commerce Scale Unit and Modern POS are installed on the same computer, Modern POS can't complete device activation.
 
-**Solution:** This issue occurs because Modern POS can't make network calls to the same computer (that is, calls to itself). While this should never be a scenario in a production setting, the issue can be mitigated by enabling an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enable this loopback for Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)). It is important to understand that a loopback can be a security risk, so it is not recommended that you use a loopback unless absolutely necessary.
+**Solution:** This issue occurs because Modern POS can't make network calls to the same computer (that is, calls to itself). While this should never be a scenario in a production setting, the issue can be mitigated by enabling an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enable this loopback for Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)). It's important to understand that a loopback can be a security risk, so it isn't recommended that you use a loopback unless absolutely necessary.
 
 -->
 
