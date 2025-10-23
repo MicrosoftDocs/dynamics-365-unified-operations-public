@@ -19,7 +19,7 @@ ms.search.validFrom: 2024-09-30
 
 This article describes how to use the Purge Commerce sales transactions capability to delete old transactional data that is no longer needed in Microsoft Dynamics 365 Commerce.
 
-Because the retention of large amounts of data in Commerce back end systems can increase data costs and affect system performance, organizations often want to remove outdated data. The Commerce version 10.0.42 release gives organizations the capability to delete old transactional data themselves. The **Purge commerce sales transactions** dialog is available in Commerce headquarters at **Retail and Commerce IT** \> **Clean up** \> **Purge commerce sales transactions**. However, it's hidden behind a flighting flag and organizations must contact the Microsoft Support team to enable the capability in their environments. In future Commerce releases, this capability will be enabled by default in all environments.
+Because the retention of large amounts of data in Commerce back end systems can increase data costs and affect system performance, organizations often want to remove outdated data. The Commerce version 10.0.42 release gives organizations the capability to delete old transactional data themselves. The **Purge commerce sales transactions** dialog is available in Commerce headquarters at **Retail and Commerce IT** \> **Clean up** \> **Purge commerce sales transactions**. However, it's hidden behind a **flighting flag and organizations must contact the Microsoft Support** team to enable the capability in their environments. In future Commerce releases, this capability will be enabled by default in all environments.
 
 Users who have the appropriate role can select a date range for the deletion of transactions regardless of their posting status. Currently, the date range is limited to a maximum of six months at a time, and both the start and end dates must be before the previous calendar year. For example, if the current year is 2024, both the start and end dates of the date range must be in 2022 or earlier.
 
@@ -32,9 +32,15 @@ The following image shows an example of the **Purge commerce sales transactions*
 
 ![Screenshot that shows the Purge commerce transactions dialog box, the navigation to it, and the details of the purge batch job.](media/Purge_commerce_transactions_1.png)
 
-## Tables purged by the Purge commerce sales transactions job
+## Purge only log and error files
+With 10.0.46, we have enabled an additional configuration named "**Only delete logs and error files**" on the Purge commerce sales transaction dialog. If this configuration is enabled, then the system only deletes the log and error files which includes the below files. 
 
-The **Purge Commerce sales transactions** job deletes the content from the following tables:
+- RetailEodStatementControllerLog
+- RetailEodStatementEventLog
+- RetailEodTransactionError
+
+## Tables purged by the Purge commerce sales transactions job
+If the configuration "Only delete logs and error files" is not selected then the **Purge Commerce sales transactions** job deletes the content from the following tables:
 
 - RetailTransactionTable
 - RetailTransactionCashManagementTrans
@@ -91,3 +97,4 @@ The **Purge Commerce sales transactions** job deletes the content from the follo
 
 > [!NOTE]
 > Two more tables (**RetailTransactionPriceTrans** and **RetailReceiptsContent**) will be added to the list in upcoming releases.
+
