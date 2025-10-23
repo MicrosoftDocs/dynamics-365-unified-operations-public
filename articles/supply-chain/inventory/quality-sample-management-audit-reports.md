@@ -19,11 +19,9 @@ ms.custom:
 
 This article describes tools that support quality management through reporting, auditing, and procedural guidance. Reports provide insights into trends in test results for specific tests, helping you monitor quality performance over time. Audit trails track changes and actions for compliance and traceability. Sample procedures are step-by-step instructions that workers can access while processing samples through different life cycle states, ensuring consistency in activities such as collection and testing.
 
-## Analyze sample test results
+## Analyze sample test results for a production order
 
 Sample reports provide visibility into how the results of a specific test evolve over time across multiple quality orders and samples for a given production or batch order. By analyzing these trends, you can identify patterns, monitor process stability, and detect potential quality issues early. You can perform this type of analysis for both inline sampling and continuous sampling, giving you flexibility to evaluate quality performance across different sampling strategies. These reports typically aggregate historical data for the selected test, allowing you to compare performance across different periods and make informed decisions for continuous improvement.
-
-### Analyze sample test results for a production order
 
 To analyze sample test results for a production order, follow these steps:
 

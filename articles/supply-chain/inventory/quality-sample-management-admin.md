@@ -214,13 +214,15 @@ To configure the default item status for a specific item follow these steps:
 1. Enter the following details for your new record:
     - **Item number** – Select the product you want to configure for sample management.
     - **Module** – Select *Inventory* which is the only applicable value for sample management.
-    - **Default inventory status ID** – From the list, select the inventory status that should be used as default when a sample with an associated license plate is created in sample management.
+    - **Default inventory status ID** – From the list, select the inventory status that should be used as default when a sample with an associated license plate is created in sample management. <!-- KFM: The system won't let me choose a status set to blocking, but that is what we are asking for. What should we do? -->
 
 To configure the default item status that is applicable for all item transactions at a specific warehouse, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Inventory breakdown** \> **Warehouses**.
 1. Find and select the warehouse where you want to configure the default item status.
 1. On the **Warehouse** FastTab, set the default inventory status in the **Default inventory status ID** field.
+
+<!-- KFM: There is also a default settings stats in Warehouse management parameters--is that relevant here. What is the hierarchy among these three? -->
 
 ### Test groups
 
