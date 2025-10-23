@@ -65,9 +65,9 @@ Yes, but you must connect them using customization.
 
 ### What is the Service level agreement (SLA) for out-of-box payment connectors like Adyen?
 
-If the issue is related to Adyen connector setup, refer to [Dynamics 365 Payment Connector for Adyen overview](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector). 
+If the issue is related to Adyen connector setup, refer to the [Dynamics 365 Payment Connector for Adyen overview](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector). 
 
-For other setup or functional issues with the connector itself, create a support request with Microsoft.
+For other setup or functional issues associated with the Dynamics 365 Payment Connector, create a Microsoft Support request.
 
 If the issue originates from the device itself or Adyen's processing service, use the following email template to start the support process with the Adyen team. To expedite troubleshooting, ensure that the email contains all the required details.
 
