@@ -75,7 +75,7 @@ Inactive users distort license requirements by appearing in reports as if they s
 It also reduces your administrative burden when assigning licenses and mitigates the risk of stale accounts being inadvertently reactivated. By removing or disabling inactive users now, you avoid unnecessary noise in later steps and keep your focus on truly active, business-critical users. This cleanup step is a fast win that immediately improves data quality and compliance.
 
 **What**  
-You will identify and deactivate (or remove) users who have not logged in within your organization's defined inactivity windows. 
+You will identify and disable (or remove) users who have not logged in within your organization's defined inactivity window. 
 
 The **User Activity Aging** report in the **User Security Governance** workspace provides a configurable view of users grouped by inactivity ranges (for example **30**, **60**, **90**, **120+** days). 
 
