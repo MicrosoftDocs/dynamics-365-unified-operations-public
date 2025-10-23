@@ -3,7 +3,7 @@ title: Store Commerce app
 description: Learn how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
 author: anush6121
 ms.author: anvenkat
-ms.date: 10/02/2025
+ms.date: 10/24/2025
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
