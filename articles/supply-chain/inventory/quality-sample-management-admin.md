@@ -204,8 +204,8 @@ Configure quality associations to trigger sample management when production orde
     - **Item sampling** – Select the item sampling configuration used for sample management. This configuration determines whether the *Inline* or *Continuous* sampling method is applied, along with related details for how each method is used.
 
 ### Configure default item status
-<!-- KFM: It isn't clear whether we are setting the status of the sample, or the license plate, or both. -->
-The default item status establishes the initial inventory status assigned to new samples. This is relevant when samples are configured to be generated for each license plate produced. When a quality order is generated for a sample associated a license plate, then the sample will be created with the defined default item status. Typically, you should define the default inventory status as *On-hold*, which indicates that the license plate is awaiting inspection. You can configure the default item status to apply for an individual item or for all transactions at a specific warehouse.
+
+The default item status establishes the initial inventory status assigned to new items in inventory. This is relevant when samples are configured to be generated for each license plate produced. Typically, you should define the default inventory status as *On-hold*, which indicates that the license plate is awaiting inspection. You can configure the default item status to apply for an individual item or for all transactions at a specific warehouse.
 
 To configure the default item status for a specific item follow these steps:
 
