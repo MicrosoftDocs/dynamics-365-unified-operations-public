@@ -45,7 +45,7 @@ Confirm these prerequisites:
 **Why**  
 Upgrading ensures your environment has the **current license validation logic, telemetry, and reporting** needed to make accurate decisions. New governance capabilities, including **User Security Governance (USG)**, were introduced and improved in recent versions and may not be available in older releases. 
 
-Running the latest **Proactive Quality Update** reduces the risk of encountering known issues or missing features that affect license calculations or report completeness. This step also standardizes the behavior across all environments, so your analysis in test/sandbox mirrors what you can see in production. 
+Running the latest **[Proactive Quality Update](https://go.microsoft.com/fwlink/?linkid=2095900)** reduces the risk of encountering known issues or missing features that affect license calculations or report completeness. This step also standardizes the behavior across all environments, so your analysis in test/sandbox mirrors what you can see in production. 
 
 Most importantly, it ensures your admins can rely on up-to-date **License Usage Summary** and related reports to plan assignments confidently.
 
@@ -58,7 +58,7 @@ You can also ensure that the **User Security Governance** features (including th
 **How**  
 Use **[Lifecycle Services (LCS)](https://lcs.dynamics.com/v2)** to apply the latest **Proactive Quality Update** across all environments, prioritizing any sandboxes you use for validation and then apply in your production environment. 
 
-After the latest **Proactive Quality Update** is applied, sign in to Dynamics 365 finance and operations and go to **System administration → Feature management**, search for "**User security governance**" and "**User security governance license usage summary report**", and enable them.
+After the latest **[Proactive Quality Update](https://go.microsoft.com/fwlink/?linkid=2095900)** is applied, sign in to Dynamics 365 finance and operations and go to **System administration → Feature management**, search for "**User security governance**" and "**User security governance license usage summary report**", and enable them.
 
 Then open **System administration → Security → Security governance** to confirm the **License usage summary**, **Security analysis**, and **License usage overview** reports are available.
 
