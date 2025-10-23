@@ -31,12 +31,12 @@ Use this playbook sequentially for best results, and **repeat** Steps **3–6** 
 Confirm these prerequisites:
 
 - ✅ **[System Administrator](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/assign-users-security-roles) access** in Dynamics 365 finance and operations  
-- ✅ **[Power Platform Admin](https://learn.microsoft.com/en-us/power-platform/admin/use-service-admin-role-manage-tenant#assign-a-service-admin-role-to-a-user) or [Organizational admin](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configure-lcs-security#organization-admin) permissions**  
+- ✅ **[Power Platform Admin](https://learn.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant#assign-a-service-admin-role-to-a-user) or [Organizational admin](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configure-lcs-security#organization-admin) permissions**  
 - ✅ **Access to [Microsoft 365 Admin Center](https://admin.microsoft.com)**  
 - ✅ **Upgrade to [latest Quality Update](https://go.microsoft.com/fwlink/?linkid=2095900)**
 - ✅ **Understand [Dynamics 365 Product model (base vs. attach)](https://go.microsoft.com/fwlink/?linkid=2279233)**
 - ✅ **Enable [User Security Governance reports](https://go.microsoft.com/fwlink/?linkid=2319108)** in Feature management
-- ✅ **Review [Dynamics 365 Licensing Guide](https://www.microsoft.com/en-us/licensing/product-licensing/dynamics365?culture=en-us&country=us)**
+- ✅ **Review [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)**
 
 ## Step 1: Upgrade to the Latest Quality Update (10.0.45)
 
