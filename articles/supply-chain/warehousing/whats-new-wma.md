@@ -20,14 +20,23 @@ This article lists new features, fixes, improvements, and known issues for each 
 
 ## Version 4.0.24.0
 
+### General availability for all platforms in all regions
+
 Version 4.0.24.0 of the Warehouse Management mobile app is the first general availability (GA) release of version 4 for all supported platforms (Microsoft Windows, Google Android, and Apple iOS) in all supported regions. Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
+
+### What's new in version 4.0.24.0
 
 Version 4.0.24.0 adds the following fixes and improvements:
 
-- 
-- 
-- 
-- 
+- Addressed a compatibility issue with French keyboards.
+- Fixed a bug where quantity spinner components reset incorrectly when navigating between pages.
+- Corrected an issue where the title bar was displayed incorrectly when a step title was missing.
+- Enabled search functionality in comboboxes when the number of items exceeds 16.
+- Fixed an issue that prevented the search bar in the work list from automatically receiving focus.
+- Ensured that inquiry descriptions wrap correctly.
+- Updated the combobox modal behavior to display only when the selected property is empty.
+- Resolved an issue where the product photo on the banner would disappear when the app size changed.
+- Addressed an issue where an empty page title failed to display the correct step banner.
 
 ## Versions 4.0.9.0 – 4.0.23.0
 
