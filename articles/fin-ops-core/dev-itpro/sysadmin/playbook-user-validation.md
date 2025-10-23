@@ -54,6 +54,8 @@ You will verify and, if necessary, upgrade the **Application** and **Platform** 
 
 You can also ensure that the **User Security Governance** features (including the license usage reports) are enabled in **Feature management**. Once upgraded, you can validate access to the **Security Governance** workspace and its reports. This creates the foundation for the data you can use in subsequent steps.
 
+ :::image type="content" source="media/playbook-step-1-enable-feature-user-security-governance.png" alt-text="Enable Feature User Security Governance" lightbox="media/laybook-step-1-enable-feature-user-security-governance.png":::
+
 
 **How**  
 Use **[Lifecycle Services (LCS)](https://lcs.dynamics.com/v2)** to apply the latest **Proactive Quality Update** across all environments, prioritizing any sandboxes you use for validation and then apply in your production environment. 
