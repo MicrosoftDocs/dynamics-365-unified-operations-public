@@ -79,7 +79,9 @@ You will identify and disable (or remove) users who have not logged in within yo
 
 The **User Activity Aging** report in the **User Security Governance** workspace provides a configurable view of users grouped by inactivity ranges (for example **30**, **60**, **90**, **120+** days). 
 
-You can use those groupings to determine which inactive accounts should be disabled, based on HR and IT policies. After offboarding those inactive accounts, the high‑level license reports will reflect the active user set. 
+Based on your company's HR and IT policies, you can use those groupings to determine which inactive accounts should be disabled.
+
+After disabling those inactive accounts, the high‑level license reports will reflect the active user set. 
 
 **How**  
 Go to **System administration → Security → Security governance → User activity aging** to review current activity levels. Configure your day ranges under **System administration → Security → Security governance setup → Parameters → User aging periods** to align with your company's policy (for example **30**/**60**/**90**/**120+** days). 
