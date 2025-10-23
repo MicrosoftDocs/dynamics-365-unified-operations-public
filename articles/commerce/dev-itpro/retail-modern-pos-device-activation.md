@@ -27,17 +27,17 @@ This article describes how to configure, download, and install Modern point of s
 > [!NOTE]
 > There are two Modern POS installers: Modern POS and Modern POS with offline (this installer also installs the offline database).
 > - Starting in Commerce version 10.0.11, altering customized files that are stored in the ClientBroker folder could cause issues when installing a newer release. These issues might include the inability to go offline or a newer installer failing to complete successfully. A workaround is to remove the files in the ClientBroker folder in the Modern POS directory before performing the installation using the newer installer.
-> - Starting in Commerce version 10.0.15, customizations to files in the Client broker folder for Modern POS can cause an error when updating from a previous version. The known workaround is to delete all files from the Client broker folder before you run the newer Modern POS installer. For automation, this action can easily be scripted as a pre  step for the installer. All files in this folder must be deleted. When this error occurs, the newer installer correctly updates the current installation.
+> - Starting in Commerce version 10.0.15, customizations to files in the Client broker folder for Modern POS can cause an error when updating from a previous version. The known workaround is to delete all files from the Client broker folder before you run the newer Modern POS installer. For automation, this action can easily be scripted as a prestep for the installer. All files in this folder must be deleted. When this error occurs, the newer installer correctly updates the current installation.
 
 ## Technology
 
-The self-service process lets you download the appropriate version of the Modern POS installer and install it on the physical device that you want to use as the point of sale (POS) register. Device activation is the main onboarding step that ties the physical device to a register in Headquarters. Here are the main technical functions of this feature:
+The self-service process lets you download the appropriate version of the Modern POS installer and install it on the physical device that you want to use as the point of sale (POS) register. Device activation is the main onboarding step that ties the physical device to a register in Dynamics 365 Commerce headquarters. Here are the main technical functions of this feature:
 
 - Tie a physical device to a business entity (register).
 - Provide enhanced security through Microsoft Entra and a device token/ID.
 - Stop unauthorized remote use of Modern POS. (In other words, deactivate a device remotely.)
 - Initialize settings for easy Modern POS functioning (number sequence, hardware profile, merchant information) as the first touchpoint of the POS.
-- Comply with payment card industry (PCI) standards, and report on device information from Headquarters.
+- Comply with payment card industry (PCI) standards, and report on device information from headquarters.
 
 > [!NOTE]
 > If you're installing Modern POS for use with an on-premises environment, Modern POS doesn't use Microsoft Entra credentials for device activation.
@@ -46,7 +46,7 @@ The self-service process lets you download the appropriate version of the Modern
 
 Before you start the steps that are outlined in this article, follow these steps.
 
-- Verify that you have credentials to sign in to Headquarters.
+- Verify that you have credentials to sign in to headquarters.
 - Verify that you have administrative or root access to install Modern POS on a device.
 - Verify that you can access the Commerce Scale Unit from the device.
 - Verify that the environment contains the Commerce permission groups and jobs in the **Human resources** module. These permission groups and jobs should be installed as part of the demo data.
@@ -55,7 +55,7 @@ Before you start the steps that are outlined in this article, follow these steps
 
 ### Verify that the device is correctly configured
 
-1. In Headquarters, go to **Retail and Commerce** &gt; **Channels** &gt; **Channel deployment**.
+1. In headquarters, go to **Retail and Commerce** \> **Channels** \> **Channel deployment**.
 2. On the **Channel deployment** page, select the **Registers** tile.
 3. On the **Registers** page, select a store register. The demo data thoroughly defines the Houston store and registers for self-service. To find the Houston registers, enter **Houston** in the filter at the top of the list of devices.
 4. Select a register by selecting the register number in the **Register number** column. In the Houston store, register Houston-3 is well defined and is therefore useful as an example.
@@ -66,7 +66,7 @@ Before you start the steps that are outlined in this article, follow these steps
 
 ### Download the Modern POS installer
 
-1. On the **Welcome** page, use the menu in the upper left to go to **Retail and Commerce** &gt; **Channels** &gt; **Channel deployment**.
+1. On the **Welcome** page, use the menu in the upper left to go to **Retail and Commerce** \> **Channels** \> **Channel deployment**.
 2. On the **Channel deployment** page, select the **Devices** tile.
 3. Select a device.
 
@@ -76,7 +76,7 @@ Before you start the steps that are outlined in this article, follow these steps
 
 4. Select **Download**, and then select **Configuration file**.
 
-    - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
+    - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** \> **Always allow**. Then, while the device is still selected, select **Download** again.
     - The configuration file must be saved to the same location as the Modern POS installer. For security reasons, delete this file after installation is completed. If the configuration file isn't the same file name as the installer executable, you must either run the executable using the command line to specify the configuration file, or you must rename the XML configuration file to have the same base name as the executable file name.
 
 5. On the notification bar that appears at the bottom of the Microsoft Edge window, select **Save**. (The notification bar might appear in a different place in other browsers.)
@@ -132,7 +132,7 @@ You can now start the program.
 
 ### Run the installer on any other device (Windows Phone, Google Android device, or Apple iOS device)
 
-1. If the application wasn't downloaded directly to the device, transfer the downloaded app file and the associated configuration file to the same folder on the device. Depending on the type of device, the app file is an APPX, APK, or IPA file.
+1. If the application wasn't downloaded directly to the device, transfer the downloaded app file and the associated configuration file to the same folder on the device. Depending on the type of device, the app file can be an APPX, APK, or IPA file.
 
     - This step can be done in various ways. For example, the files can be accessed through a shared folder, transferred via USB cable, or securely mailed to the user's device.
 
@@ -153,7 +153,7 @@ Workers have already been created and assigned to the Houston address book in th
 
 To create a worker, follow these steps.
 
-1. In Commerce headquarters, go to **Retail and Commerce** \> **Employees** \> **Workers**.
+1. In headquarters, go to **Retail and Commerce** \> **Employees** \> **Workers**.
 2. On the Action Pane, select **New** to create a new employee.
 3. Enter the first and family name. For example, enter **John** as the first name and **Smith** as the family name.
 4. Verify that the **Legal entity** field is set to **USRT**, the **Worker type** field is set to **Employee**, and the **Employment start date** field is set to the current date at 12 AM, so that the worker's employment starts immediately.
@@ -185,7 +185,7 @@ You must complete this procedure before you activate Modern POS for a new worker
 
 5. On the Action Pane, select **Commerce**, and then select **Associate existing identity**.
 6. In the dialog box that appears, select the Azure AD account that is named **admin AX Admin**. (If an alternative administrator Microsoft Entra account is created, select that account instead.)
-7. Select **OK**. In the demo data, the Azure AD account that is associated with the administrator account in Headquarters is your administrator Microsoft Entra account.
+7. Select **OK**. In the demo data, the Azure AD account that is associated with the administrator account in headquarters is your administrator Microsoft Entra account.
 8. On the Action Pane, select **Save**, and then refresh the page. The **External identity** section should now be updated with the new information.
 
     - The **External identifier** field remains empty. This behavior is expected, so you can ignore it.
@@ -194,7 +194,7 @@ This procedure should be completed before you activate Retail Cloud POS or Moder
 
 ### Run the Validate Devices for Activation check
 
-1. In Headquarters, open the **Device** page (**Retail and Commerce** \> **Setup POS** \> **Devices**).
+1. In headquarters, open the **Device** page (**Retail and Commerce** \> **Setup POS** \> **Devices**).
 2. Select the device to validate for device activation, and then select **Validate Devices for Activation**. For example, select device **HOUSTON-3**.
 3. In the dialog box that appears, select the worker to validate the device for (that is, the worker that you mapped to the Azure AD account in the previous procedure). For example, select worker **000160**.
 4. Select **OK**, and make sure that you receive the following message: "Pre-Activation validation completed for Device HOUSTON-3 and Staff 000160. Validation: Passed"
@@ -235,7 +235,7 @@ The device should now be activated and ready to use.
 
 - Your browser blocks the download pop-up that is generated.
 
-    **Solution:** Select either **Allow once** or **Options for this site** &gt; **Always allow** (or the equivalent commands in the browser that you're using). Then, while the correct register is still selected, select **Download** again.
+    **Solution:** Select either **Allow once** or **Options for this site** \> **Always allow** (or the equivalent commands in the browser that you're using). Then, while the correct register is still selected, select **Download** again.
 
 - The installation package that you must use depends on whether you require offline support. The correct package is automatically selected for download. For the offline package, SQL Server must be installed and must meet the requirements for the offline package.
 
@@ -302,7 +302,7 @@ The device should now be activated and ready to use.
             - extendedKeyUsage = 1.3.6.1.5.5.7.3.1
             - subjectAltName = @alt_names
             - [alt_names]
-            - DNS.1 = &lt;FULLY QUALIFIED DOMAIN NAME OF HOST COMPUTER&gt;
+            - DNS.1 = &lt;FULLY QUALIFIED DOMAIN NAME OF HOST COMPUTER\>
 
         5. Generate the signing request and private key using a command such as **openssl req -new -nodes -out server.csr -newkey rsa:2048 -keyout server.key**.
         6. Issue the certificate using the previously generated root certificate using a command such as **$ openssl x509 -req -in server.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out server.crt -days 500 -sha256 -extfile info.ext**. There will be another prompt for the root key password and you will need to specify the number of days that the certificate is valid (500 days in this example).
@@ -317,9 +317,9 @@ The device should now be activated and ready to use.
             - Copy the **rootCA.pem** file and rename the copy to **rootCA.crt**.
             - Using OneDrive or another file hosting location, upload the **rootCA.crt** and **server.crt** so that they can be downloaded onto the iOS device.
 
-        14. On the iOS device, go to **Settings &gt; General &gt; Profiles** and select the downloaded profile for the **rootCA.crt**. Select **Install**.
+        14. On the iOS device, go to **Settings \> General \> Profiles** and select the downloaded profile for the **rootCA.crt**. Select **Install**.
         15. Validate that the profile status updates to **Verified**. Repeat the same process for the **server.crt** file.
-        16. Go to **Settings &gt; General &gt; About &gt; Certificate Trust Settings** and enable the installed root certificate.
+        16. Go to **Settings \> General \> About \> Certificate Trust Settings** and enable the installed root certificate.
         17. On the iOS device, use the hardware station ping URL specified previously to verify that the certificate is trusted.
         18. Open the POS application in **Non-drawer mode** and pair to the hardware station as typically performed.
 
@@ -341,14 +341,14 @@ The device should now be activated and ready to use.
 
     **Solution:** Follow this checklist to verify that all data is correct:
 
-    - Complete the Validate Devices for Activation check in Headquarters, and make sure that the device passes validation.
+    - Complete the Validate Devices for Activation check in headquarters, and make sure that the device passes validation.
     - On the client computer where you're activating the device, access the Commerce Scale Unit URL health check, and make sure that the health check is passed. Use the following format for the URL: `https://MyCompanyNameret.axcloud.dynamics.com/commerce/healthcheck?testname=ping`
     - The worker must be mapped to an Azure AD account (under **External identity**).
     - The Azure AD account that is mapped must belong to the same tenant.
-    - To map the worker to the Azure AD account, sign in to Headquarters by using the Admin account for Microsoft Dynamics Lifecycle Services.
+    - To map the worker to the Azure AD account, sign in to headquarters by using the Admin account for Microsoft Dynamics Lifecycle Services.
     - Make sure that the worker is set up as a Commerce user in the Manager role. (This item is checked by validation.)
     - Make sure that the channel is published. (This item is checked by validation.)
-    - Make sure that the channel database has the synced data from Headquarters, and that download jobs are running.
+    - Make sure that the channel database has the synced data from headquarters, and that download jobs are running.
     - Set up the hardware profile under **Registers**. (This item is checked by validation.)
     - Make sure that the register and store have a screen layout. (This item is checked by validation.)
     - Make sure that a primary address is set up for the legal entity.
