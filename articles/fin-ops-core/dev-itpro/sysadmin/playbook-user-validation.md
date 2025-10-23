@@ -30,8 +30,8 @@ Use this playbook sequentially for best results, and **repeat** Steps **3–6** 
 
 Confirm these prerequisites:
 
-- ✅ **[System Administrator](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/assign-users-security-roles) access** in Dynamics 365 finance and operations  
-- ✅ **[Power Platform Admin](https://learn.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant#assign-a-service-admin-role-to-a-user) or [Organizational admin](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configure-lcs-security#organization-admin) permissions**  
+- ✅ **[System Administrator](https://learn.microsoft.com/dynamics365/fin-ops-core/fin-ops/sysadmin/assign-users-security-roles) access** in Dynamics 365 finance and operations  
+- ✅ **[Power Platform Admin](https://learn.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant#assign-a-service-admin-role-to-a-user) or [Organizational admin](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configure-lcs-security) permissions**  
 - ✅ **Access to [Microsoft 365 Admin Center](https://admin.microsoft.com)**  
 - ✅ **Upgrade to [latest Quality Update](https://go.microsoft.com/fwlink/?linkid=2095900)**
 - ✅ **Understand [Dynamics 365 Product model (base vs. attach)](https://go.microsoft.com/fwlink/?linkid=2279233)**
