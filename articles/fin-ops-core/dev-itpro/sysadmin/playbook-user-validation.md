@@ -199,7 +199,7 @@ Recalculate/refresh the report and verify that the user now aligns to the intend
 |-----------------|-------------------------------------------------------------------------------------------|
 | **Entitled**    | Action/privilege is covered by the current license and doesn’t trigger a higher license. |
 | **Not Entitled**| Action/privilege isn’t covered and requires a higher or different license to be compliant. |
-| **Not Required**| Action/privilege has no license requirement.                      |
+| **Not Required**| Action/privilege included in System User, not included in license computation.                      |
 
 **Related Reports & Tools**
 
