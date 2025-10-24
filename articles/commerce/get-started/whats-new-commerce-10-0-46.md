@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.46
 
 [!include [banner](../includes/banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.46. This version has a build number of 10.0.2345 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.46. This version has a build number of 10.0.2428.15 and is available on the following schedule:
 
 - **Preview of release:** October 2025
 - **General availability of release (self-update):** November 2025
@@ -44,11 +44,11 @@ The following table lists the features that are included in this release. We mig
 
 ## Features turned on by default in this release
 
-The following table lists the features that became turned on by default in version 10.0.43. You can still disable these features in **Feature management**, if necessary.
+The following table lists the features that became turned on by default in version 10.0.46. You can still disable these features in **Feature management**, if necessary.
 
 | Module | Feature name | More information |
 |--|--|--|
-
+| Nothing reported at this time. | | |
 
 ## Resources
 
@@ -58,7 +58,7 @@ Microsoft Dynamics 365 Commerce version 10.0.46 includes platform updates. Learn
   
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.46, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=NNNNN).
+For information about the bug fixes included in each of the updates that are part of version 10.0.46, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1070810).
 
 ### Dynamics 365 and industry clouds: 2025 release wave 2 plan
 
