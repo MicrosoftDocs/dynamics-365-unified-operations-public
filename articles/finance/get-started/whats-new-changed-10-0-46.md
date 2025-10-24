@@ -22,7 +22,7 @@ This article lists the features that are new or changed for Microsoft Dynamics 3
 
 - **Preview of release:** October 2025
 - **General availability of release (self-update):** December 2025
-- **General availability of release (auto-update):** March 2026
+- **General availability of release (auto-update):** February 2026
 
 ## Features included in this release
 This section contains a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was 
@@ -94,6 +94,6 @@ Services and view the planned regulatory updates using the issue search tool. Is
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out [Dynamics 365 and industry clouds: 2025 release wave 2 plan](/dynamics365/release-plan/2025wave2/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
+Check out [Dynamics 365 and industry clouds: 2025 release wave 2 plan](/dynamics365/release-plan/2025wave2/). We've captured all the details, end to end, top to bottom, that you can use for planning.
 
 
