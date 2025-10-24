@@ -35,6 +35,7 @@ To prepare your environment for inline sampling, be sure to set up the following
 
 To initiate an inline sample follow these steps:
 
+1. Go to **Production control** \> **Production orders** \> **All production orders**.
 1. Open or create a production or batch order for a batch-controlled product that is configured for inline sampling.
 1. Bring the production or batch order into status *Started*.
 1. On the Action Pane, open the **View** tab and, from the **Manage quality** group, select **Initiate inline sample management**.
@@ -53,7 +54,8 @@ To initiate an inline sample follow these steps:
 
 To manage the inline samples related to a production or batch order, follow these steps:
 
+1. Go to **Production control** \> **Production orders** \> **All production orders**.
 1. Open or create a production or batch order for a batch-controlled product that is configured for inline sampling.
 1. Initiate an inline sample as described in previous section.
-1. On the Action Pane, open the **View** tab and, from the **Manage quality** group, select **Sample management workbench**.
-1. On the Action Pane, open the **Sample** tab. Select the various actions here to update the sample and view related information. Learn more in [Manage and process samples (preview)](quality-sample-management-use.md).
+1. On the production order details page, go to the Action Pane, open the **View** tab and, from the **Manage quality** group, select **Sample management workbench**.
+1. On the sample management workbench, go to the Action Pane and open the **Sample** tab. Select the various actions here to update the sample and view related information. Learn more in [Manage and process samples](quality-sample-management-use.md).
