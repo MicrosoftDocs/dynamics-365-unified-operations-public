@@ -1,10 +1,10 @@
 ---
 title: What's new or changed in Business performance analytics
 description: Learn about features that are either new or changed in business performance analytics.
-author: jinniew
+author: Weijiesa 
 ms.author: jiwo
 ms.topic: article
-ms.date: 08/19/2025
+ms.date: 10/24/2025
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -24,28 +24,25 @@ The Augest release of Business performance analytics version 2.4 and contains th
 
 | Category                    | Title                                                        | Description                                                                                                        |
 |-----------------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Data model additions and changes | Add SalesInvoiceTaxAmount Lines in Sales Invoice Fact    | Added SalesInvoiceTaxAmount and SalesInvoiceAllocatedTaxAmount to the SalesInvoiceFact                              |
-| Data model additions and changes | Generate PurchaseInvoiceFact purchaseinvoicesourcekey from VendInvoiceJour and VendInvoiceTrans | PurchaseInvoiceFact bug fix                                                                                         |
-| Data model additions and changes | Remove duplicate Primary Key in Purchase Invoice Fact | Address issue where charges that do not have the same currency as the invoice line can lead to duplicate data        |
-| Data model additions and changes | Change GeneralLedgerFact partition to use createdon instead of accountingdate | Adjust PBI Partition Key  which was allowing to duplicates in General Ledger Fact                                   |
-| Data model additions and changes | Fix deleted or canceled Purchase Order Lines Still Appearing in Reports| Customers will now be able to see if the purchase order line has been deleted or not and will be able to adjust the filter to show or hide them |
-| Transform changes | Order to Cash -  SalesInvoiceFact                          |  Transform Performance Improvements                                                                   |
-| Transform changes | Order to Cash -  SalesSubledgerFact                        | Transform Performance Improvements                                                                   |
-| Transform changes | Order to Cash - BankRegisterFact                           |  Transform Performance Improvements                                                                   |
-| Transform changes | Order to Cash - PackingSlipFact                            |  Transform Performance Improvements                                                                   |
-| Transform changes | Order to Cash - PickingListFact                            |  Transform Performance Improvements                                                                   |
-| Transform changes | Order to Cash - SalesOrderFact                             |  Transform Performance Improvements                                                                   |
-| Transform changes | Order to Cash - ServiceOrderFact                           |  Transform Performance Improvements                                                                   |
-| Transform changes | Incremental Uptake for ReturnAuthorizationFactTransform | Enable incremental sync for returnauthorizationfacttransform |
-| Transform changes | Implement the gatekeeper flow - check and trigger a new transform | This will impact frequency of data refreshes |
-| Other changes               | Excel Add-In user permission enhancement | Added  permission for non-admin users of BPA Excel Add-In                                                  |
-| Other changes               | Enable cleanup temp BPA data         | When uninstalling BPA there is an option to remove data                                                            |
-| Other changes               | Fix issue where report metadata may not be updated during an solution upgrade | Add override customizations call to the package template file to ensure that reprots are updated during import                                   |
-| Other changes      | Copy and adapt the existing BPA flow                           | Customers can have more frequent data refreshes                                                                     |
-| Other changes       | Remove unused columns from the input entities.                 | Improve reliability to better handle issues where there are schema mismatches between Dataverse and Finance apps    |
-
-
-
+| Data model additions and changes | Add SalesInvoiceTaxAmount Lines in Sales invoice fact    | Added SalesInvoiceTaxAmount and SalesInvoiceAllocatedTaxAmount to the SalesInvoiceFact.               |
+| Data model additions and changes | Generate PurchaseInvoiceFact purchaseinvoicesource key from VendInvoiceJour and VendInvoiceTrans | PurchaseInvoiceFact bug fix      .                     |
+| Data model additions and changes | Remove duplicate primary key in Purchase invoice fact | Address issue where charges that don't have the same currency as the invoice line can lead to duplicate data.        |
+| Data model additions and changes | Change GeneralLedgerFact partition to use createdon instead of accounting date | Adjust PBI partition key which was allowing to duplicates in General ledger fact.   |
+| Data model additions and changes | Fix deleted or canceled Purchase order lines appear in reports| Customers can adjust the report filter to see if the purchase order line has been deleted or not. |
+| Transform changes | Order to cash -  SalesInvoiceFact                          |  Transform performance improvements.                                                                   |
+| Transform changes | Order to cash -  SalesSubledgerFact                        | Transform performance improvements.                                                                   |
+| Transform changes | Order to cash - BankRegisterFact                           | Transform performance improvements.                                                                   |
+| Transform changes | Order to cash - PackingSlipFact                            |  Transform performance improvements.                                                                  |
+| Transform changes | Order to cash - PickingListFact                            |  Transform performance improvements.                                                                |
+| Transform changes | Order to cash - SalesOrderFact                             |  Transform performance improvements.                                                                   |
+| Transform changes | Order to cash - ServiceOrderFact                           |  Transform performance improvements.                                                                |
+| Transform changes | Incremental uptake for ReturnAuthorizationFactTransform | Enable incremental sync for returnauthorizationfacttransform. |
+| Transform changes | Implement the gatekeeper flow - check and trigger a new transform | This impacts frequency of data refreshes. |
+| Other changes               | Excel add-in user permission enhancement | Added permission for non-admin users of Business performance analytics Excel add-in.                                                  |
+| Other changes               | Enable cleanup temp Business performance analytics data         | When uninstalling Business performance analytics there's an option to remove data.               |
+| Other changes| Fix issue where report metadata might update during an solution upgrade | Add override customizations call to the package template file to ensure that reports are updated during import. |
+| Other changes      | Copy and adapt the existing Business performance analytics flow  | Customers can have more frequent data refreshes.                                                 |
+| Other changes       | Remove unused columns from the input entities      | Improve reliability to handle issues where there are schema mismatches between the Dataverse and Finance apps.    |
 
 ## June 2025
 
