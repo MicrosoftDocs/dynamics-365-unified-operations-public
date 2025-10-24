@@ -16,9 +16,40 @@ audience: Application User
 
 This article provides information about what's new or changed in Business performance analytics.  
 
+## Augest 2025
+
+The Augest release of Business performance analytics version 2.4 and contains the following features.
+
+## Feature enhancements
+
+| Category                    | Title                                                        | Description                                                                                                        |
+|-----------------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| Data model additions and changes | Add SalesInvoiceTaxAmount Lines in Sales Invoice Fact    | Added SalesInvoiceTaxAmount and SalesInvoiceAllocatedTaxAmount to the SalesInvoiceFact                              |
+| Data model additions and changes | Generate PurchaseInvoiceFact purchaseinvoicesourcekey from VendInvoiceJour and VendInvoiceTrans | PurchaseInvoiceFact bug fix                                                                                         |
+| Data model additions and changes | Remove duplicate Primary Key in Purchase Invoice Fact | Address issue where charges that do not have the same currency as the invoice line can lead to duplicate data        |
+| Data model additions and changes | Change GeneralLedgerFact partition to use createdon instead of accountingdate | Adjust PBI Partition Key  which was allowing to duplicates in General Ledger Fact                                   |
+| Data model additions and changes | Fix deleted or canceled Purchase Order Lines Still Appearing in Reports| Customers will now be able to see if the purchase order line has been deleted or not and will be able to adjust the filter to show or hide them |
+| Transform changes | Order to Cash -  SalesInvoiceFact                          |  Transform Performance Improvements                                                                   |
+| Transform changes | Order to Cash -  SalesSubledgerFact                        | Transform Performance Improvements                                                                   |
+| Transform changes | Order to Cash - BankRegisterFact                           |  Transform Performance Improvements                                                                   |
+| Transform changes | Order to Cash - PackingSlipFact                            |  Transform Performance Improvements                                                                   |
+| Transform changes | Order to Cash - PickingListFact                            |  Transform Performance Improvements                                                                   |
+| Transform changes | Order to Cash - SalesOrderFact                             |  Transform Performance Improvements                                                                   |
+| Transform changes | Order to Cash - ServiceOrderFact                           |  Transform Performance Improvements                                                                   |
+| Transform changes | Incremental Uptake for ReturnAuthorizationFactTransform | Enable incremental sync for returnauthorizationfacttransform |
+| Transform changes | Implement the gatekeeper flow - check and trigger a new transform | This will impact frequency of data refreshes |
+| Other changes               | Excel Add-In user permission enhancement | Added  permission for non-admin users of BPA Excel Add-In                                                  |
+| Other changes               | Enable cleanup temp BPA data         | When uninstalling BPA there is an option to remove data                                                            |
+| Other changes               | Fix issue where report metadata may not be updated during an solution upgrade | Add override customizations call to the package template file to ensure that reprots are updated during import                                   |
+| Other changes      | Copy and adapt the existing BPA flow                           | Customers can have more frequent data refreshes                                                                     |
+| Other changes       | Remove unused columns from the input entities.                 | Improve reliability to better handle issues where there are schema mismatches between Dataverse and Finance apps    |
+
+
+
+
 ## June 2025
 
-The June release of Business performance analytics version 2.3.30982 and contains the following features.
+The June release of Business performance analytics version 2.3 and contains the following features.
 
 ### Feature enhancements
 
