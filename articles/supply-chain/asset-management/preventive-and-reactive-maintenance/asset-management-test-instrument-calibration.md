@@ -1,7 +1,7 @@
 ---
 title: Manage test instrument calibration with Asset Management (preview)
 description: Learn about how to use Asset Management to schedule maintenance plans for test instruments used in quality management.
-author: johanhoMSFT
+author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form:
@@ -35,7 +35,7 @@ Maintaining accurate and reliable test instruments is essential for ensuring pro
 To use Asset Management to maintain calibration of test instruments, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.46 or later.
-- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+- The following features must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
     - *Advanced quality management*
     - *(Preview) Optional linking of test instruments to maintainable assets*
 
