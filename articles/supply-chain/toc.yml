@@ -2343,6 +2343,8 @@
           href: unified-pricing-management/upm-concurrence-within-codes.md
         - name: Resolving concurrency across price component codes
           href: unified-pricing-management/upm-concurrence-cross-codes.md
+      - name: Calculate prices and discounts without creating sales orders
+        href: unified-pricing-management/upm-calculate-prices-without-sales-orders.md
     - name: Procurement and sourcing
       items:
       - name: Procurement and sourcing overview
