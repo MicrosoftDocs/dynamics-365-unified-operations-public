@@ -1625,6 +1625,20 @@
             href: inventory/quality-operations.md
           - name: Nonconformance operation charges
             href: inventory/quality-charges.md
+        - name: Sample management (preview)
+          items: 
+          - name: Sample management overview
+            href: inventory/quality-sample-management-overview.md
+          - name: Enable and configure sample management
+            href: inventory/quality-sample-management-admin.md
+          - name: Set up continuous sampling
+            href: inventory/quality-sample-management-continuous.md
+          - name: Initiate an inline sample
+            href: inventory/quality-sample-management-inline.md
+          - name: Manage and process samples
+            href: inventory/quality-sample-management-use.md
+          - name: Sample management reports and auditing
+            href: inventory/quality-sample-management-audit-reports.md
         - name: Test instrument calibration
           href: inventory/quality-instrument-calibration.md
         - name: Flexible sampling plans
