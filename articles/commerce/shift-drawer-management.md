@@ -1,11 +1,10 @@
 ---
-title: Shift and cash drawer management
-description: This article describes how to set up and use shifts in Microsoft Dynamics 365 Commerce point of sale (POS).
-author: josaw1
-ms.date: 11/19/2024
+title: Shift and cash drawer management (preview)
+description: Learn how to set up and use shifts in Microsoft Dynamics 365 Commerce point of sale (POS).
+author: shajain
+ms.date: 10/24/2025
 ms.update-cycle: 1095-days
 ms.topic: how-to
-audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: shajain
@@ -17,11 +16,12 @@ ms.custom:
   - evergreen
 ---
 
-# Shift and cash drawer management
+# Shift and cash drawer management (preview)
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-This article describes how to set up and use shifts in Microsoft Dynamics 365 Commerce point of sale (POS).
+This article explains how to set up and use shifts in Microsoft Dynamics 365 Commerce point of sale (POS).
 
 In Dynamics 365 Commerce, the term *shift* describes the collection of POS transactional data and activities between two points in time. For each shift, the amount of money that is expected is compared against the amount that was counted and declared.
 
@@ -64,9 +64,9 @@ Various operations can be performed to change the state of a shift, or to increa
 
 ### Open shift
 
-The POS requires that users have an active, open shift to perform any operations that produce a financial transaction, such as a sale, return, or customer order.
+The POS requires that users have an active and open shift to perform any operations that produce a financial transaction, such as a sale, return, or customer order.
 
-When a user signs in to the POS, the system first verifies whether an active shift is available for that user on the current register. If an active shift isn't available, the user can open a new shift, resume an existing shift, or sign in using "non-drawer" mode, depending on the system configuration and the user's permissions.
+When a user signs in to the POS, the system first verifies whether an active shift is available for that user on the current register. If an active shift isn't available, the user can open a new shift, resume an existing shift, or sign in using "nondrawer" mode, depending on the system configuration and the user's permissions.
 
 ### Declare start amount
 
@@ -84,7 +84,7 @@ This operation is often the first operation that is performed for a newly opened
 
 Users can suspend their active shift to free up the current register for another user, or to move their shift to a different register. In such cases, the shift is often called a floating till shift.
 
-Suspension of a shift prevents any new transactions or changes to the shift until it's resumed.
+Suspension of a shift prevents any new transactions or changes to the shift until it resumes.
 
 ### Resume shift
 
@@ -110,25 +110,35 @@ Blind-closed shifts are often used to free up a register for a new user or shift
 
 ### Close shift
 
-The *close shift* operation calculates shift totals and overage/shortage amounts, and then finalizes an active or blind-closed shift. Depending on the user's permissions, a Z report is also printed for the shift. Closed shifts can't be resumed or modified.
+The *Close shift* operation calculates shift totals and overage/shortage amounts, and then finalizes an active or blind-closed shift. Closed shifts can't be resumed or modified.
 
 Enabling the **Require starting amounts and tender declaration** POS functionality profile setting enforces the starting amount and tender declaration actions before the shift can be closed. 
 
 > [!NOTE]
 > - Starting with Commerce version 10.0.40, only devices with a cash drawer configured are subject to the **Require starting amounts and tender declaration** setting validation.
-> - If all cash drawers under **POS hardware profile** are configured as "None" you must define at least one cash drawer as "Manual" to trigger the **Require starting amounts and tender declaration** setting validation.
+> - If all cash drawers under **POS hardware profile** are configured as **None**, you must define at least one cash drawer as **Manual** to trigger the **Require starting amounts and tender declaration** setting validation.
+> - If the **Print X/Z report on POS** option is enabled in the functionality profile and the user has **Allow Z-report printing** POS permissions, a Z report is also printed for the shift. The Z report can be previewed before printing if the **Preview X/Z report on POS** option is enabled in the functionality profile, and the user has **Allow Z-report printing** POS permissions.
 
 ### Print X
 
-This operation generates and prints an X report for the current active shift.
+Th *Print X* operation generates and prints an X report for the current active shift.
+
+> [!NOTE]
+> To print the X report, the **Print X/Z report on POS** option must be enabled in the functionality profile, and the user must have **Allow X-report printing** POS permissions. The X report can be previewed before printing if the **Preview X/Z report on POS** option is enabled in the functionality profile, and the user has **Allow X-report printing** POS permissions.
 
 ### Reprint Z
 
-This operation reprints the last Z report that the system generated when a shift was closed.
+The *Reprint Z* operation reprints the last Z report that the system generated when a shift was closed.
+
+> [!NOTE]
+> To reprint the last Z report, the **Print X/Z report on POS** option must be enabled in the functionality profile, and the user must have **Allow Z-report printing** POS permissions. The Z report can be previewed before printing, if the **Preview X/Z report on POS** option is enabled in the functionality profile, and the user has **Allow Z-report printing** POS permissions.
 
 ### Manage shifts
 
-This operation lets users view all active, suspended, and blind-closed shifts for the store. Depending on their permissions, users can perform their final closing procedures, such as Tender declaration and Close shift operations for blind-closed shifts. This operation also lets users view and delete invalid shifts, in the rare event that shifts are in a bad state after a switch between offline and online modes. These invalid shifts don't contain any financial information or transactional data that is required for reconciliation.
+The *Manage shifts* operation lets users view all active, suspended, and blind-closed shifts for the store. Depending on their permissions, users can perform their final closing procedures, such as Tender declaration and Close shift operations for blind-closed shifts. In the infrequent case where shifts are in a bad state after a switch between offline and online modes, this operation also lets users view and delete invalid shifts. These invalid shifts don't contain any financial information or transactional data that is required for reconciliation.
+
+> [!NOTE]
+> To print X reports of (multiple) open shifts and blind-closed shifts, the **Print X/Z report on POS** option must be enabled in the functionality profile, and the user must have **Allow X-report printing** POS permissions. The X reports can be previewed before printing if the **Preview X/Z report on POS** option is enabled in the functionality profile, and the user has **Allow X-report printing** POS permissions.
 
 ## Shift and drawer permissions
 

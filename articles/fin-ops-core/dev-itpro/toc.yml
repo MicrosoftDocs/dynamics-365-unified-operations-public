@@ -15,14 +15,14 @@ items:
         items:
         - name: What's new or changed in Platform updates home page
           href: ../fin-ops/get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.46 (October 2025)
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-46.md
         - name: Platform updates for version 10.0.45 (September 2025)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-45.md
         - name: Platform updates for version 10.0.44 (April 2025)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-44.md
         - name: Platform updates for version 10.0.43 (January 2025)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-43.md
-        - name: Platform updates for version 10.0.42 (December 2024)
-          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-42.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page

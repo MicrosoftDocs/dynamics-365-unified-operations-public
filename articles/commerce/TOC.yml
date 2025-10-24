@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.46 (October 2025)
+          href: get-started/whats-new-commerce-10-0-46.md
         - name: Commerce 10.0.45 (September 2025)
           href: get-started/whats-new-commerce-10-0-45.md
         - name: Commerce 10.0.44 (April 2025)
@@ -484,7 +486,7 @@
             items:
             - name: Cash management overview
               href: cash-mgmt.md
-            - name: Shift and cash drawer management
+            - name: Shift and cash drawer management (preview)
               href: shift-drawer-management.md
           - name: Offline
             items:
@@ -822,6 +824,10 @@
             href: ../supply-chain/unified-pricing-management/upm-price-attribute-groups.md?context=/dynamics365/context/commerce
           - name: Customer and product price attribute groups
             href: ../supply-chain/unified-pricing-management/upm-customer-product-attribute-groups.md?context=/dynamics365/context/commerce
+          - name: Add custom pricing attributes for Dynamics 365 Commerce Point of Sale (preview)
+            href: ../supply-chain/unified-pricing-management/upm-support-custom-attributes.md?context=/dynamics365/context/commerce
+          - name: Example custom request handler code (preview)
+            href: ../supply-chain/unified-pricing-management/upm-custom-request-handler-example.md?context=/dynamics365/context/commerce
         - name: Price groups
           items:
           - name: Price groups overview
@@ -872,6 +878,8 @@
             href: ../supply-chain/unified-pricing-management/upm-concurrence-within-codes.md?context=/dynamics365/context/commerce
           - name: Resolving concurrency across price component codes
             href: ../supply-chain/unified-pricing-management/upm-concurrence-cross-codes.md?context=/dynamics365/context/commerce
+        - name: Calculate prices and discounts without creating sales orders
+          href: ../supply-chain/unified-pricing-management/upm-calculate-prices-without-sales-orders.md?context=/dynamics365/context/commerce
       - name: Recommendations
         items:
         - name: Product recommendations overview
@@ -2786,7 +2794,7 @@
             href: dev-itpro/commerce-application-insights.md
           - name: Create asynchronous Commerce (CRT) APIs
             href: dev-itpro/async-commerce-extension.md
-          - name: Channel database extensions
+          - name: Channel database extensions (preview)
             href: dev-itpro/channel-db-extensions.md
           - name: Extend Commerce Data Exchange - Real-time Service
             href: dev-itpro/extend-commerce-data-exchange.md
@@ -2796,7 +2804,7 @@
             href: dev-itpro/commerce-runtime-extensibility-trigger.md
           - name: Pre-extended columns in the channel database
             href: dev-itpro/extended-columns.md
-          - name: Enable custom Commerce Data Exchange synchronization via extension
+          - name: Enable custom Commerce Data Exchange synchronization via extension (preview)
             href: dev-itpro/cdx-extensibility.md
           - name: Extend Commerce Store receipts
             href: dev-itpro/retail-sdk/retail-sdk-samples.md
