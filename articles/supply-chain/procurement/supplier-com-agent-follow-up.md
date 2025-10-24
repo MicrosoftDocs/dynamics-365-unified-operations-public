@@ -122,3 +122,17 @@ If emails should be sent automatically, without user review, an administrator mu
 When the feature is turned on, the email address of the administrator who set up the agent is used as the sender for each email that the system automatically sends.
 
 Learn more in [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
+
+## Batch jobs
+
+To schedule automatic runs of the Supplier Communications Agent, a related batch job already exists, located in **System Administration** \> **Inquiries** \> **Batch jobs**. 
+
+The name of the batch job is the same as the name of the task: *Send follow-up emails to vendors with Supplier Communications Agent*. To locate it, apply a filter on the **Job description** column in the batch jobs list view, as in the image below. 
+
+<img width="725" height="280" alt="image" src="https://github.com/user-attachments/assets/897cde3d-b623-423c-b36e-7f5c7b5a7f25" />
+
+Once the batch job selected, click on **Recurrence**, which will open a side panel containing the parameters for running the job.
+
+<img width="412" height="494" alt="image" src="https://github.com/user-attachments/assets/f7712a4e-373a-4330-a676-ae0a9f8983d5" />
+
+Back on the batch jobs list view, clicking on the **Job ID** of the batch job opens a page with further information on the parameters and the related job tasks.
