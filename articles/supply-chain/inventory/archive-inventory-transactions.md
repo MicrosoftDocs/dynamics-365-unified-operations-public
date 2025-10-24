@@ -48,12 +48,14 @@ Inventory transactions can be consolidated only during periods where the followi
 
 ### Allow inventory transactions consolidation without inventory closing
 
-- Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** \> **General** \> **Inventory transactions consolidation**.
-- When this option is enabled, it allows for the consolidation of inventory transactions on unclosed inventory for items with Standard cost or Moving average inventory models. 
-This setting relaxes the aforementioned prerequisite, making it possible to consolidate inventory transactions without first doing inventory closing.
+To allow inventory transactions consolidation without inventory closing, follow these steps:
+
+1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
+1. Open the **General** tab.
+1. Set **Allow inventory transactions consolidation without inventory closing** *Yes* or *No*. When this is set to *Yes*, the system is able to consolidate inventory transactions on unclosed inventory for items that use the *Standard cost* or *Moving average* inventory model. This option lets you consolidate inventory transactions without first doing inventory closing.
 
 > [!NOTE]
-> After the consolidation, inventory closing will no longer be supported for the consolidated transactions. To enable this feature, contact Microsoft Support.
+> Inventory closing isn't supported for consolidated transactions. To enable this feature, contact Microsoft Support.
 
 ## Consolidate your inventory transactions
 
