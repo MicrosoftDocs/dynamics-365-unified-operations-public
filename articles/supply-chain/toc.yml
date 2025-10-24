@@ -535,6 +535,8 @@
           href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
         - name: Maintenance downtime activities
           href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+        - name: Manage test instrument calibration with Asset Management (preview)
+          href: asset-management/preventive-and-reactive-maintenance/asset-management-test-instrument-calibration.md
       - name: Capacity planning
         items:
         - name: Calculate capacity load
