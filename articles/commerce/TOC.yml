@@ -2792,7 +2792,7 @@
             href: dev-itpro/commerce-application-insights.md
           - name: Create asynchronous Commerce (CRT) APIs
             href: dev-itpro/async-commerce-extension.md
-          - name: Channel database extensions
+          - name: Channel database extensions (preview)
             href: dev-itpro/channel-db-extensions.md
           - name: Extend Commerce Data Exchange - Real-time Service
             href: dev-itpro/extend-commerce-data-exchange.md
@@ -2802,7 +2802,7 @@
             href: dev-itpro/commerce-runtime-extensibility-trigger.md
           - name: Pre-extended columns in the channel database
             href: dev-itpro/extended-columns.md
-          - name: Enable custom Commerce Data Exchange synchronization via extension
+          - name: Enable custom Commerce Data Exchange synchronization via extension (preview)
             href: dev-itpro/cdx-extensibility.md
           - name: Extend Commerce Store receipts
             href: dev-itpro/retail-sdk/retail-sdk-samples.md
