@@ -2,7 +2,7 @@
 title: Enable pay by link in POS by using the Adyen connector 
 description: Learn how to set up and enable the pay by link payment method to capture payments in stores in Microsoft Dynamics 365 Commerce.
 author: shajain
-ms.date: 07/24/2025
+ms.date: 10/24/2025
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -26,10 +26,10 @@ Pay by link functionality is a controlled release. To check participation availa
 
 ### Enable OAuth authentication from Adyen
 
-Payment notifications for the pay by link payment method use Open Authorization (OAuth)–based authentication. To enable OAuth setup in the Commerce HQ in 10.0.44, you must contact Microsoft Support and ask to have a flight enabled in your Commerce environments.
+Payment notifications for the pay by link payment method use Open Authorization (OAuth)–based authentication. To enable OAuth setup in Commerce headquarters in Commerce version 10.0.44, you must contact Microsoft Support and ask to have a flight enabled in your Commerce environments.
 
 > [!NOTE]
-> The time to live (TTL) value for the OAuth token must be 3,599 seconds. This should be the default value from the Adyen side when you choose OAuth based authentication and should not require any additional configuration from your side on Adyen portal. 
+> The time to live (TTL) value for the OAuth token must be 3,599 seconds. This value should be the default value from the Adyen side when you choose OAuth-based authentication and shouldn't require any additional configuration from your side on the Adyen portal. 
 
 ### Link your Commerce environment to a Dataverse environment
 
@@ -106,7 +106,7 @@ To create a new webhook, follow these steps.
 
     ![Screenshot that shows the previously described settings for OAuth for a standard webhook in Adyen.](media/adyen-oauth.png)
 
-1. Generate a new Hash-based Message Authentication Code (HMAC) key, and copy it. You won't be able to view this key again. Therefore, keep it somewhere safe.
+1. Generate a new Hash-based Message Authentication Code (HMAC) key, and copy it. You aren't able to view this key again, so keep it somewhere safe.
 1. In the **Events** section, select **Authorization**.
 1. Under **Additional settings**, in the **Card** section, select the **Include card bin** and **Include Subvariant** options.
 1. Leave the remaining fields set to their default values, and save the configuration.
@@ -144,21 +144,21 @@ To test the connection, follow these steps.
 
 ### Set up the pay by link payment method for the store
 
-You can create the pay by link payment method either as a dedicated button or as a new payment method that is shown in the list of payment methods. You can also add it to the existing payment method that was created for credit/debit cards. In this way, when a cashier selects the existing payment method, the POS shows pay by link as one of the input types for payment capture.
+You can create the pay by link payment method either as a dedicated button, or as a new payment method that appears in the list of payment methods. You can also add it to the existing payment method that was created for credit/debit cards. In this way, when a cashier selects the existing payment method, the POS shows pay by link as one of the input types for payment capture.
 
 In both cases, the pay by link option is shown only if the administrator selects **Pay By Link** as a payment input type for a payment method. In headquarters, open the **Payment methods** page, and select a payment method. Then, on the Action Pane, select **Payment Input Type**. To create a dedicated payment method for pay by link, select only **Pay By Link** on the **Payment Input Type** page. To add pay by link as one of the input type options for capturing payments, select **Pay By Link** together with **Payment on terminal** and **Manual entry** (optional).
 
 > [!NOTE]
 > The **Payment Input Type** button is available only for payment methods where the **Function** field is set to **Card** or **Wallet**, and the **Operation name** field is set to **Pay card**.
 
-![Screenshot that shows the payment input type options on the Payment Input Type page that is opened a selected payment method in Commerce headquarters. The screenshot highlights the fact that the Function field for the payment method is set to Card, and the Operation name field is set to Pay card.](media/payment-input-type.png)
+![Screenshot that shows the payment input type options on the Payment Input Type page that's opened a selected payment method in Commerce headquarters. The screenshot highlights the fact that the Function field for the payment method is set to Card, and the Operation name field is set to Pay card.](media/payment-input-type.png)
 
 If **Manual entry** is added as a payment input type, when a cashier selects the payment method in POS, the customer is prompted to manually enter their credit card number on the payment terminal. In addition, when the manual entry option is enabled, the **Allow manual card numbers** property (**Electronic payment setup** \> **Allow manual card numbers**) is set to **True** and disabled. If the manual entry option is removed, the **Allow manual card numbers** property remains disabled, but it can be edited by the user.
 
 To support payment options such as Quick Response (QR) code–based wallets, setup of bin ranges isn't sufficient. New card types must be created and mapped to corresponding payment variants. These card types must be added to the payment method where pay by link is enabled. Learn more in [Wallet payment support](/dynamics365/commerce/dev-itpro/wallets).
 
 > [!NOTE]
-> If you create a new payment method for pay by link, you don't have to add electronic payment types that were previously added to other payment methods that are available for the store. For example, if the **Visa**, **Mastercard**, **American Express** payment types were previously added to the **Cards** payment method, you don't have to add them to the pay by link payment method. The system looks through all the payment methods that are associated with the store to find a matching electronic payment type that is used for payments.
+> If you create a new payment method for pay by link, you don't have to add electronic payment types that were previously added to other payment methods that are available for the store. For example, if the **Visa**, **Mastercard**, **American Express** payment types were previously added to the **Cards** payment method, you don't have to add them to the pay by link payment method. The system looks through all the payment methods that are associated with the store to find a matching electronic payment type that's used for payments.
 
 Pay by link doesn't require that Hardware station is enabled for Cloud POS or the Store Commerce app. If you want to use pay by link with a register that isn't paired with a hardware station, you must configure the register to use Commerce Scale Unit for "card not present" processing. (Commerce Scale Unit is also known as Retail Server.) In headquarters, open the register page, and then, in the **General** section, set the **Card not present processing** field to **Use retail server**.
 
@@ -171,15 +171,15 @@ Pay by link doesn't require that Hardware station is enabled for Cloud POS or th
 
 You can control some payment link experiences by configuring key-value pairs in the **Custom Settings** property in the **Adyen connector** section of the hardware profile that the register uses. You can control the following experiences:
 
-- **Payment expiration duration** — To control this experience, add a value for the **PaymentLinkDuration** key.
-- **Inclusion of the Adyen store information in the payment link** – To control this experience, add a value for the **Store** key.
-- **Requirement for shoppers to enter their information before payment** – To control this experience, add a value for the **RequiredShopperFields** key.
+- **Payment expiration duration** - To control this experience, add a value for the **PaymentLinkDuration** key.
+- **Inclusion of the Adyen store information in the payment link** - To control this experience, add a value for the **Store** key.
+- **Requirement for shoppers to enter their information before payment** - To control this experience, add a value for the **RequiredShopperFields** key.
 
 You can skip any of the preceding key-value pairs in **Custom Settings**. If you don't add a value for the **PaymentLinkDuration** key, Adyen's default duration of 24 hours is used. If you don't add a value for the **Store** key, only payment methods that don't depend on the Adyen store are shown. If you don't add a value for the **RequiredShopperFields** key, the related fields aren't shown to customers before they use the payment link.
 
 For example, you add the value `{"PaymentLinkDuration":"02:00", "Store":"Test_Store", "RequiredShopperFields":"email,name,phone,billingAddress,deliveryAddress"}` for the **Custom Settings** property. In this case, the Adyen payment connector sets the payment link expiration to two hours, the payment link is associated with the **Test_Store** store, and customers must enter their name, email address, phone number, delivery address, and billing address before they make the payment.
 
-For test environments, you must set the **Gateway environment** property of the Adyen connector in the hardware profile to **Test**. For production environments, set the value of the **Gateway environment** property to **Live**, and set the **Optional Domain** property to the prefix value that is found in the Adyen customer portal.
+For test environments, you must set the **Gateway environment** property of the Adyen connector in the hardware profile to **Test**. For production environments, set the value of the **Gateway environment** property to **Live**, and set the **Optional Domain** property to the prefix value that's found in the Adyen customer portal.
 
 To set up the Adyen connector in the hardware profile, follow these steps.
 
@@ -193,13 +193,13 @@ To set up the Adyen connector in the hardware profile, follow these steps.
 
 When the pay by link payment method is selected, the POS displays a dialog. This dialog shows basic customer information, such as the name, email address, and primary delivery address. The values are automatically taken from the customer who is added to the transaction. However, the cashier can change the values before they create the payment link. If no customer is added to the transaction, the name and email fields are blank, and the store's address is used as the default delivery address.
 
-Although none of this information is required to generate the payment link, it's recorded against the customer details for the payment link. Some payment methods might require some of this payment information. Therefore, those payment methods don't work if the information is missing.
+Although none of this information is required to generate the payment link, it's recorded against the customer details for the payment link. Some payment methods might require some of this payment information, so those payment methods don't work if the information is missing.
 
-After the payment link is created, the system shows the payment link and a corresponding QR code. The cashier can copy the payment link and send it to the customer via any communication method that is available on their device. Alternatively, the customer can scan the QR code from their phone.
+After the payment link is created, the system shows the payment link and a corresponding QR code. The cashier can copy the payment link and send it to the customer via any communication method that's available on their device. Alternatively, the customer can scan the QR code from their phone.
 
 The payment link is an Adyen-hosted webpage that can be branded to meet your needs. To learn more about the branding options, contact Adyen.
 
-Some payment methods, such as "buy now, pay later," require that a billing address is provided for the customer. By default, the payment link that is created excludes billing address information. If the **RequiredShopperFields:billingAddress** key-value pair is added in the **Custom Settings** property of the hardware profile, when the payment link is opened, the customer must enter their billing address to view the payment options.
+Some payment methods, such as "buy now, pay later," require that a billing address is provided for the customer. By default, the payment link that's created excludes billing address information. If the **RequiredShopperFields:billingAddress** key-value pair is added in the **Custom Settings** property of the hardware profile, when the payment link is opened, the customer must enter their billing address to view the payment options.
 
 While the customer is making the payment, the system automatically checks the payment status every five seconds. The cashier can also manually check the payment status by selecting **Check status**.
 
@@ -243,4 +243,4 @@ If a transaction that has a payment link is voided, the system tries to expire t
 
 Although the payment process is fast, some payment methods might take a few extra seconds. If the POS doesn't receive the payment after a minute, the cashier can try to cancel the payment link. If cancellation of the payment link fails, the customer made the payment. If the payment link is canceled, the customer payment wasn't successful, and the customer's balance isn't affected.
 
-If payment cancellation fails because the customer made the payment, the cashier can suspend the transaction and make a note of the transaction details for reference. A headquarters user must then refund the payment from the Adyen portal. The cashier can create a new transaction for the customer and assure them that their previous payment will be refunded.
+If payment cancellation fails because the customer made the payment, the cashier can suspend the transaction and make a note of the transaction details for reference. A headquarters user must then refund the payment from the Adyen portal. The cashier can create a new transaction for the customer and assure them that their previous payment is refunded.
