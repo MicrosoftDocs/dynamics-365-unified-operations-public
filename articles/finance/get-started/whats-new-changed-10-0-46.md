@@ -18,7 +18,7 @@ ms.search.region: Global
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.46. This version has a build number of 10.0.XXXX and is available on the following schedule:
+This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.46. This version has a build number of 10.0.2428 and is available on the following schedule:
 
 - **Preview of release:** October 2025
 - **General availability of release (self-update):** December 2025
@@ -73,10 +73,6 @@ The following table lists the features that are turned on by default in version 
 |Add support for financial tags to the free text invoice entity within data management	|Released	|Accounts receivable|
 |Separate accounts for credit notes|	Mandatory|	Credits and collection|
 
-## Features removed from feature management
-
-The following table lists features that were removed from Feature management in version 10.0.46. These features are no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and are now a permanent part of Finance.
-
 
 ## More information
 
@@ -87,18 +83,17 @@ Dynamics 365 Finance version 10.0.46 includes platform updates. To learn more, s
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics 365 Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xxxxx).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics 365 Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1070810).
 
 ### Regulatory updates
 
 For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle
 Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
 
-### Dynamics 365 and industry clouds: 2025 release wave 1 plan
+### Dynamics 365 and industry clouds: 2025 release wave 2 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out [Dynamics 365 and industry clouds: 2025 release wave 1 plan](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, that
-you can use for planning.
+Check out [Dynamics 365 and industry clouds: 2025 release wave 2 plan](/dynamics365/release-plan/2025wave2/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
 
 
