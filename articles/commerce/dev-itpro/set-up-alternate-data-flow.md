@@ -1,18 +1,16 @@
 ---
-# required metadata
-
 title: Set up an alternate dataflow for recommendations
-description: This article describes how to configure an environment by using an alternate dataflow to provide data to the recommendations service. 
+description: Learn how to configure an environment by using an alternate dataflow to provide data to the recommendations service. 
 author: bebeale
-ms.date: 04/21/2023
+ms.date: 09/23/2025
 ms.topic: how-to
-audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
-ms.custom: sfi-ropc-nochange
-
+ms.custom: 
+  - bap-template
+  - sfi-ropc-nochange
 ---
 
 # Set up an alternate dataflow for recommendations
@@ -73,7 +71,7 @@ To configure tables to export in Dynamics 365, follow these steps.
 1. Select all the rows in the grid, and then select **Activate**.
 
 > [!NOTE]
-> Before you move on to the next step, all rows must be updated to a status of **Running**. Troubleshoot and resolve any errors as required.
+> Before you move on to the next step, all rows must be updated to a status of **Running**. Debug and resolve any errors as required.
 
 ### Create a Synapse workspace
 
@@ -126,7 +124,7 @@ To create a database in Synapse, follow these steps.
 
 ### Back up your current RetailSales cube data from Data Lake Storage
 
-The easiest way to back up your current RetailSales cube data is to rename the **RetailSales** directory in Data Lake Storage **RetailSales-backup** or something similar. This method preserves the existing data in case troubleshooting is required later.
+The easiest way to back up your current RetailSales cube data is to rename the **RetailSales** directory in Data Lake Storage **RetailSales-backup** or something similar. This method preserves the existing data in case debugging is required later.
 
 The **/RetailSales** cube folder can be found in the following location:
 
@@ -292,7 +290,7 @@ To update the hard-coded integer, follow these steps.
 
 1. Copy the value from the first column (**INSTANCERELATIONTYPE**), and paste it into the view definition.
 
-## Troubleshooting
+## Debugging
 
 ### Pipeline task fails
 

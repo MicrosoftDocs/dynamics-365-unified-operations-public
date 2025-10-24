@@ -3,7 +3,7 @@
 
 title: Human Resources data entities and templates added in version 10.0.32 and later 
 description: This article provides information about the data entities and templates that were added in the 10.0.32 release and later of Microsoft Dynamics 365 Human Resources.
-author: jcart
+author: twheeloc
 ms.date: 01/26/2023
 ms.topic: article
 # optional metadata
@@ -16,7 +16,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: twheeloc
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---

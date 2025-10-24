@@ -1,16 +1,16 @@
 ---
 title: Set up a legal entity for Türkiye
-description: Learn how to set up a legal entity and configure VAT ID registration prerequisites in Microsoft Dynamics 365 Finance, including creating registration types and assigning them to registration categories for legal entities, customers, and vendors.
+description: Learn how to set up a legal entity and configure VAT ID registration prerequisites in Microsoft Dynamics 365 Finance, including creating registration types, assigning them to registration categories, and selecting tax offices for legal entities, customers, and vendors.
 author: v-omerorhan
 ms.author: v-omerorhan
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/23/2025
+ms.date: 10/09/2025
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye
 ms.search.validFrom: 2016-06-30
-ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationLegislationTypes
+ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationLegislationTypes, RegNumIssuerTable
 ---
 
 # Set up a legal entity for Türkiye
@@ -63,9 +63,26 @@ In the **Format** field;
 
 Complete setting up the registration type and registration category for VAT ID by following the steps described in [Set up VAT ID](../../localizations/europe/eur-00015-vat-id.md).
 
+### Configure tax offices (Issuing agencies)
+
+In Türkiye, every legal entity, customer, and vendor must be linked to a **tax office** for identification and regulatory reporting.  
+In Finance, this information is managed through the **Issuing agencies** set up. When you define tax office names and codes, you ensure that **Registration IDs** are correctly associated with the appropriate tax authority. This setup is essential for generating compliant e-invoice (UBL-TR) documents and other statutory reports.
+
+To define tax offices, follow these steps.  
+
+1. Go to **Organization administration > Global address book > Issuing agencies**.  
+1. On the **Issuing agencies** page, select **New**.  
+1. In the **Issuing agency** field, enter the numeric tax office code (for example, *34272*).  
+1. In the **Description** field, enter the name of the tax office (for example, *Kadıköy vergi dairesi*).  
+1. Repeat these steps for all relevant tax offices.
+1. Select **Save**.
+
+> [!NOTE]  
+> The tax office information entered here is used in e-invoice (UBL-TR) XML files and other legal reports. Incorrect configuration may result in validation errors from GİB (Turkish Revenue Administration).
+
 ### Set up VAT ID of legal entity
 
-This section provides information about on how to set up a VAT ID of a legal entity in Türkiye.
+This section provides information about how to set up a VAT ID of a legal entity in Türkiye.
 
 To create a VAT ID for the legal entity, follow these steps. 
 
@@ -79,9 +96,9 @@ To create a VAT ID for the legal entity, follow these steps.
 	1. Select **Add** on the **Overview** Tab in **Registration ID** FastTab.
 	1. In the **Registration type** field, enter or select a value that is created for Türkiye.
 	1. In the **Registration number** field, enter a value. For example, specify a VAT ID. The ID must have the same format as the registration type.
+	1. In the **Issuing agency** field, select the appropriate tax office.
 	1. On the **General** tab, in the **Effective** field, enter a date and then select **Save** if it is needed.
 	1. Select **Save** and close the page.
-
 
 ### Set up VAT IDs of customers and vendors
 
@@ -99,14 +116,12 @@ To create a VAT ID for a customer or a vendor, follow these steps.
 	1. Select **Add** on the **Overview** Tab in **Registration ID** FastTab.
 	1. In the **Registration type** field, enter or select a value that is created for Türkiye.
 	1. In the **Registration number** field, enter a value. For example, specify a VAT ID. The ID must have the same format as the registration type.
+    1. In the **Issuing agency** field, select the appropriate tax office. 
 	1. On the **General** tab, in the **Effective** field, enter a date and then select **Save** if it is needed.
 	1. Select **Save** and close the page.
 
-1. Select **Save** and close the page.
-
 > [!NOTE] 
 > This procedure describes the main settings that are required for localization. You can set other fields that are required for other Dynamics 365 Finance features that you use.
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

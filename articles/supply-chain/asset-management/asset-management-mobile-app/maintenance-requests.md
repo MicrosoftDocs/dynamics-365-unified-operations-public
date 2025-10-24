@@ -13,7 +13,6 @@ ms.search.form:
 # File maintenance requests using the Asset Management mobile app
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 You can use the Asset Management mobile app to file maintenance requests.
 

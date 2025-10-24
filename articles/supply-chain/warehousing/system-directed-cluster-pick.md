@@ -29,13 +29,6 @@ A new mobile device menu item is used for system-directed cluster picking. The *
 
 When system-directed cluster picking is enabled, warehouse workers are presented with a cluster where picking orders have been preassigned to cluster positions. Therefore, workers can start to pick an item for multiple work orders by visiting the pick location only one time. The picking process for system-directed cluster picking is the same as the process for user-directed cluster picking.
 
-## Enable the System-directed cluster picking feature
-
-Before you can use system-directed cluster picking, two features must be turned on for your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature statuses and enable them if necessary. Enable the following features, in the following order:
-
-1. *Organization-wide system directed work sequencing* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
-1. *System directed cluster picking* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
-
 ## Set up system-directed cluster picking
 
 ### Create cluster profiles

@@ -1,13 +1,14 @@
 ---
 title: Business performance analytics FAQ
 description: This article answers some frequently asked questions about Business performance analytics, including questions about signing up for public previews of analytics.
-author: jinniew
-ms.author: jiwo
+author: yashkv1
+ms.author: yvishwa
 ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 08/11/2025
+ms.date: 09/30/2025
+
 ---
 
 # Business performance analytics FAQ
@@ -95,6 +96,10 @@ Each time Business performance analytics refreshes, your source data are transfo
 
 > [!IMPORTANT]
 > Customers affected by storage capacity growth after updating to Business performance analytics version 2.0.29241185 or later should contact support and request to enable the temporary files cleanup routine for their environment.
+
+## BI entity customization
+
+BI entities can't be customized. If a BI entity has been modified with a custom view or custom data sources, the Business performance analytics installation fails. 
 
 ## Uninstall
 ### How do I uninstall Business performance analytics?

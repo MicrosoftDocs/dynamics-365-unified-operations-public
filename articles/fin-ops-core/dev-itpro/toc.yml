@@ -2343,8 +2343,6 @@ items:
         href: ../fin-ops/copilot/immersive-home.md
       - name: Chat with finance and operations data
         href: copilot/chat-with-fno-data.md
-      - name: Use attachments with Copilot
-        href: copilot/copilot-attachments.md
       - name: Enable Copilot capabilities and features
         items:
         - name: Enable Copilot capabilities in finance and operations apps
@@ -2371,14 +2369,24 @@ items:
           href: copilot/copilot-client-plugins.md
         - name: Create AI tools with finance and operations business logic (preview)
           href: copilot/copilot-ai-plugins.md
+        - name: Extend attachments with Copilot
+          href: copilot/copilot-attachments.md
+        - name: Customize the zero prompt experience (preview)
+          href: copilot/copilot-zero-prompt.md
         - name: Tutorials
           items:
-          - name: Extending Copilot capabilities with low-code plugins
+          - name: Extend Copilot capabilities with low-code plugins
             href: copilot/tutorial-create-low-code-plugins.md
           - name: Create client plugins for Copilot in finance and operations apps
             href: copilot/tutorial-create-client-plugins.md
           - name: Create AI tools with finance and operations business logic
             href: copilot/tutorial-create-ai-plugins.md
+          - name: Trigger autonomous agents with business events
+            href: copilot/tutorial-agent-triggers.md
+          - name: Add knowledge to agents
+            href: copilot/tutorial-agent-knowledge.md
+          - name: Enable agent data operations with connectors
+            href: copilot/tutorial-agent-connector.md
     - name: Responsible AI
       items:
       - name: Overview

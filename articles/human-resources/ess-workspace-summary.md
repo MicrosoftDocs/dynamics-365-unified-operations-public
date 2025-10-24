@@ -38,7 +38,7 @@ For information about the languages that this Copilot feature was validated for,
 
 ### Version requirements
 
-Employee self service leave summary requires the latest PQU on Dynamics 365 finance and operations versions 10.0.39 and 10.0.40. 
+Employee self service leave summary requires the latest PQU on Dynamics 365 finance and operations version 10.0.40 or later. 
 
 ### Role requirements
 

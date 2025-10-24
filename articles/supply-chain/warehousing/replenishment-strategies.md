@@ -25,13 +25,6 @@ Peak season is one example of a situation where the *Maximum location capacity* 
 > [!IMPORTANT]
 > To take full advantage of the *Maximum location capacity* strategy, you must redefine the stocking limits for the relevant locations. Otherwise, this strategy works just like the *Wave demand quantity* strategy.
 
-## Turn on the Replenish to max based on stocking limits feature
-
-Before you can use this feature, it must be turned on for your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of this feature and turn it on if it's required. There, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Replenish to max based on stocking limits*
-
 ## Set up replenishment strategies
 
 To access the templates, go to **Warehouse management \> Setup \> Replenishment \> Replenishment templates**. In the **Overview** section, select or create a wave demand replenishment template where the **Replenishment type** field is set to *Wave demand*. Then set up the replenishment template lines in the **Replenishment template details** section. For each line, in the **Replenishment strategy** field, select the replenishment strategy that you want to use.

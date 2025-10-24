@@ -1,11 +1,11 @@
 ---
 title: Create cost elements
 description: There are several ways to create cost elements in Cost accounting. Learn about how to create new cost elements and configure data connectors.
-author: kfend
-ms.author: kfend
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 08/29/2022
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30

@@ -13,7 +13,6 @@ ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace,
 # Example of using inbound and outbound shipment orders
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article provides an example scenario that shows how to create inbound and outbound shipment orders via message processing. It uses the standard sample data that's associated with the *USMF* example legal entity (company).
 

@@ -1,8 +1,8 @@
 ---
 title: Migration guidance for Segmented Entry controls
 description: Learn about the process of migrating a Segmented Entry control through code examples, an outline on properties, and a table that shows valid values for properties.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.custom: 
   - bap-template

@@ -144,8 +144,6 @@ Automated containerization creates containers and the picking work for shipments
 
 ## Work with the scheduled work creation
 
-When the *Schedule work creation* feature is enabled, wave processing will create planned work, which will eventually be used by the new work creation process. During work creation, the work will be blocked using the *Organization-wide work blocking* feature. Learn more in [Schedule work creation during wave](configure-wave-schedule-work-creation.md).
-
 The following flowchart shows how planned work is created during wave processing.
 
 ![Schedule work creation.](media/schedule-work-creation-process.png)
@@ -179,10 +177,6 @@ If needed, you can cancel a wave that has been processed. To cancel a wave, and 
 ## Review wave batch job details
 
 Use the **Wave batch job details** page to inspect the batch jobs and related tasks associated with any wave. This is especially useful for troubleshooting a wave that has failed. Without this feature, only administrators will typically have access to batch job details. The **Wave batch job details** page can be made available to non-admin users and provides a read-only view of batch jobs and related tasks.
-
-### Turn the Wave batch job details page on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Wave batch job details* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Use the Wave batch job details page
 
