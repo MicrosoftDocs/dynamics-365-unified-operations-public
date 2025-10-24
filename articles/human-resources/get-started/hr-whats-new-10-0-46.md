@@ -17,7 +17,7 @@ ms.search.region: Global
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This article lists the features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.46. This version has a build number of 10.0.xxxx and is available on the following schedule:
+This article lists the features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.46. This version has a build number of 10.0.2428 and is available on the following schedule:
 - **Preview of release:** October 2025
 - **General availability of release (self-update):** December 2025
 - **General availability of release (auto-update):** March 2026
@@ -49,18 +49,18 @@ Dynamics 365 Human Resources version 10.0.45 includes platform updates. To learn
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xxxx).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1070810).
 
 ### Regulatory updates
 
 For information about regulatory updates for finance and operations apps, see [Regulatory updates](../../finance/localizations/global/regulatory-updates.md). Another way to learn about regulatory updates is to
 sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
 
-### Dynamics 365 and industry clouds: 2025 release wave 1 plan
+### Dynamics 365 and industry clouds: 2025 release wave 2 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out [Dynamics 365 and industry clouds: 2025 release wave 1 plan](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, 
+Check out [Dynamics 365 and industry clouds: 2025 release wave 2 plan](/dynamics365/release-plan/2025wave2/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, 
 that you can use for planning.
 
 
