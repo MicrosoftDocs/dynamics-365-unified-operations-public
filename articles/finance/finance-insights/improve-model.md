@@ -1,11 +1,11 @@
 ---
 title: Improve the prediction model
 description: Learn about features that you can use to improve the performance of prediction models, including outlines on selecting historical outcomes and filters.
-author: ShivamPandeyMSFT
+author: wei-msft 
 ms.author: shpandey
 ms.topic: article
-ms.date: 07/16/2021
-ms.reviewer: kfend
+ms.date: 10/24/2025
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-05-28
@@ -71,9 +71,9 @@ Choose a training start date to ignore any records where the invoice date is ear
 
 [![Training data start date.](./media/training-data-start-date.png)](./media/training-data-start-date.png)
 
-In some versions of Finance Insights, there's already a default filter that shows only the last 8 quarters.
+In some versions of Finance insights, there's a default filter that displays the last 8 quarters.
 
-If this filter is already active and you want to narrow things down further, use the training start date as an extra filter.
+If this filter is already active and to narrow things down further, use the **Training start date** as a filter.
 
 For more information on filtering your data, see [Create a prediction model](/ai-builder/prediction-create-model#filter-your-data).
 
