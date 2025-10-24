@@ -95,7 +95,7 @@ To configure the mappings, follow these steps:
 1. In the **Value** section, in the **Value** field, enter the **UN/ECE unit code** (for example, *C62* for "each").  
    This value is used as the **unitCode** attribute in the `<InvoicedQuantity>` element of the generated e-invoice XML.
 
-:::image type="content" source="../media/emea-turkey-unit-code-mapping.png" alt-text="Screenshot of unit code mapping configuration page showing internal unit codes mapped to UN/ECE unit codes.":::
+:::image type="content" source="../media/emea-turkiye-unit-code-mapping.png" alt-text="Screenshot of unit code mapping configuration page showing internal unit codes mapped to UN/ECE unit codes.":::
 
 > [!NOTE]
 > The configured unit mapping determines the `unitCode` value that appears in the `<cbc:InvoicedQuantity>` element of the generated UBL-TR e-invoice XML.  
@@ -164,7 +164,7 @@ To set up a **TaxTypeCode**, follow these steps.
 1. Repeat for all required tax types.
 1. Save your changes and set the **State** to **Completed**.
 
-:::image type="content" source="../media/emea-turkey-customer-electronic-invoices-tax-type-code.png" alt-text="Screenshot of TaxTypeCode mapping configuration showing sales tax codes mapped to TaxTypeCode values.":::
+:::image type="content" source="../media/emea-turkiye-customer-electronic-invoices-tax-type-code.png" alt-text="Screenshot of TaxTypeCode mapping configuration showing sales tax codes mapped to TaxTypeCode values.":::
 
 > [!NOTE]
 > The configured **TaxTypeCode** value is written into the `<TaxTypeCode>` element in the generated UBL-TR XML.  
@@ -184,7 +184,7 @@ To review the list, follow these steps.
 1. Select **Designer** in ActionPane.
 1. Select **Format enumerations**.
 
-:::image type="content" source="../media/emea-turkey-tax-type-code-list.png" alt-text="Screenshot of TaxTypeCode list showing available tax type code values in the system.":::
+:::image type="content" source="../media/emea-turkiye-tax-type-code-list.png" alt-text="Screenshot of TaxTypeCode list showing available tax type code values in the system.":::
 
 This can help ensure that the values you configure in the **Application specific parameters** are aligned with the enumeration definitions in the ER format.
 
