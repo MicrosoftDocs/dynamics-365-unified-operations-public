@@ -17,54 +17,52 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-If you determine that Supplier Communications can help your company, based on the experience of previous customers and our own internal testing at Microsoft, use the following recommendations to smooth your testing journey and make the best of it.
+This article provides advice for how to test the Supplier Communications Agent.
 
-[!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
+*Follow-up with vendors* (writing reminders) and *Updates from vendors* (reading vendor emails) are independent features. Therefore, it makes sense that you test what you need first.
 
-## Test the "Follow-up with vendors" (writing emails) feature first
+If you would benefit from both features or want to know how they work, start by testing the *follow-up with vendors* feature because it's easier to set up, configure, and test.
 
-Follow-up with vendors (writing reminders) and Updates from vendors (reading vendor emails) are independent features. Therefore, it makes sense that you test what you need first.
+## Test the "Follow-up with vendors" (writing reminders) feature first
 
-If you would benefit from both features or want to know how they work, start by testing the *follow-up with vendors* feature. It's easier to set up, easier to configure, and easier to test.
-
-Simply set up the agent from the UI to fit what you want to follow up on and test that the emails are like you expect.
+To test this feature, use the user interface to [set up the feature](supplier-com-agent-follow-up.md) to fit your needs and then test to make sure that the emails work as expected.
 
 ## Test the "Updates from vendors" (reading emails) feature second
 
-This feature requires more setup in terms of permissions, test email addresses, and multiple scenarios. We suggest the following steps starting from the smallest scope to then expand.
+This feature requires more setup in terms of permissions, test email addresses, and multiple scenarios. Start from the smallest scope and then expand, as described in the following subsections.
 
-### Phase 1: Forward some emails to a testing email address in sandbox
+### Phase 1: Forward some emails to a testing email address in a sandbox environment
 
-The smallest possible scope: no matter if you use the purchaser's email when you go to production or use a common mailbox for the purchasing department where the vendors write to, start with a testing email address. This approach lets you test without any risk.
+This phase lets you test the smallest possible scope. Regardless of whether you use the purchaser's email when you go to production or use a common mailbox for the purchasing department where the vendors write to, start by using a test email address so you can test without any risk.
 
-Ask your Exchange admin to create a test email address. Then connect that email address to the sandbox environment where you will be testing.
+Ask your Microsoft Exchange admin to create the test email address. Then connect that email address to the sandbox environment where you will do the testing.
 
-To make sure that the emails are matched to the system, you need to refresh your data (copy the production data into sandbox). Or alternatively, forward older emails so they are matched. Note that in sandbox, a flight makes it possible to also match with invoiced purchase orders for testing, but this feature doesn't apply in production.
+To make sure that the system matches the emails, refresh your data (copy your production data to the sandbox). Alternatively, you could forward older emails so the system matches them.
 
-Forward some emails so you see the connection is correctly set up and evaluate the results from the agent. You can forward emails in batches; for example, forward five emails, see the results, note if there's anything unexpected, and continue until you get a hold of how it performs.
+Forward a few emails so you can see that the connection is set up correctly and can evaluate the results from the agent. You can forward emails in batches—for example, forward five emails, see the results, note if there's anything unexpected, and continue until you have a good idea of how it performs.
 
-### Phase 2: Forward certain vendors' emails to a testing email address in sandbox
+### Phase 2: Forward certain vendors' emails to a testing email address in your sandbox environment
 
-Now that you have a few emails, get started with the set of vendors that you communicate with the most or that have more confirmations that you want the agent to handle.
+Now that you have a few emails available on your system, start working with messages from those vendors that you communicate with the most or that have the most confirmations that you want the agent to handle.
 
-Use the same setup as before, but this time auto-forward a set of emails from the real procurement email address to the testing email address.
+Use the same setup as before, but this time auto-forward a set of emails from a real vendor email address to the testing email address that you set up.
 
-Remember to do a data refresh or import purchase orders and products before you do the test, especially if your testing spans over a few weeks. The agent can't match an email to a purchase order in the system if the purchase order isn't in the system.
+Remember to do a data refresh or import purchase orders and products before you do the test, especially if your testing should last for a few weeks. The agent can't match an email to a purchase order if the purchase order isn't in the system.
 
-For this step, you might want to involve one or more of the purchasers.
+For this phase, you might want to involve one or more of your purchasers.
 
 ### Phase 3: Forward all vendor emails to sandbox
 
-Now forward all vendor emails to the testing email address. Create an auto-forwarding rule for all emails to the testing email.
+Now forward all of your vendor emails to the testing email address. Create an auto-forwarding rule for all emails to the testing email.
 
-For this part, involve one or more of your purchasers if you haven't done so already.
+For this phase, involve one or more of your purchasers if you didn't already.
 
-### Phase 5: Use real email address in production
+### Phase 4: Use real email address in production
 
-Now you're ready for the final test: testing in production. Set up the agent in production by using the real email address. You can stop the agent from working in sandbox.
+Now you're ready for the final test: testing in production. Set up the agent in production using real email addresses. You can stop the agent from working in your sandbox.
 
 Although it might sound counterintuitive to test in production, this feature doesn't interfere with standard business processes, so it's completely safe to test in production. In the best case, the agent does the work the purchaser would do manually. In the worst case, the agent doesn't understand something correctly, so the purchaser still needs to do it manually.
 
-This is a production-ready preview feature, which means it has the quality of a generally available (GA) feature and you can go live with it. The reason it's not fully GA is that the agent is a fast moving area that we want to improve further in a short timeframe, so we keep it designated as a production-ready preview so we can make those changes.
+This is a production-ready preview feature, which means it has the quality of a generally available (GA) feature and you can go live with it. The reason it's not fully GA is that the agent is under continuous development. We keep it designated as a production-ready preview so we can continue to implement improvements in the short term.
 
-For this test, we recommend that purchasers work with it to do their daily work. You might want to start with one or a few purchasers. You might even filter to some vendors if you want to start small.
+For this test, we recommend that purchasers work with the agent to do their daily work. You might want to start with just one or a few purchasers. You might even filter to include messages from just a few vendors if you want to start small.
