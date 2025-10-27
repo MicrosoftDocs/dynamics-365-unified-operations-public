@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Migrate the Warehouse Management mobile app from V3 to V4 (preview)
+# Migrate the Warehouse Management mobile app from V3 to V4
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -117,24 +117,17 @@ For on-premises installations of Supply Chain Management, device code authentica
 
 ## <a name="rollout"></a>Rollout schedule and transition period support
 
-### V4 public preview
-
-- **Date of availability** – End of June 2025
-- **Distribution channels**
-    – **Windows** – [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
-    - **Android** – Google Beta Testers and [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
-
 - **Concurrent operation** – During the transition period, V3 and V4 can operate simultaneously in the same warehouse environment without conflicts provided they're installed on separate devices. This allows for a phased rollout of V4 without disrupting ongoing operations. However, V3 and V4 can't be installed on the same device at the same time. We recommend that you roll out the new version gradually rather than installing it on all devices at once.
 
 - **Authentication benefits for early adopters** – Each device that you update from V3 to V4 must be reauthenticated after the initial update. However, you won't need to reauthenticate the device again when updating to future versions of V4.
 
 ### V4 general availability for Android and Windows
 
-- **Date of availability** – End of August 2025 (estimated)
+- **Date of availability** – WMA is currently GA for all supported platforms (Microsoft Windows, Google Android) in all supported regions.
 
 - **Distribution channels**
-    - **Windows** – Microsoft Store and [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
-    - **Android** – Google Play and [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
+    - **Windows** – [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
+    - **Android** – Google Play (or based on your location, Google Beta Testers) and [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
 
 - **Concurrent operation** – V3 and V4 can operate simultaneously in the same warehouse environment without conflicts, but we recommend moving to V4 when it becomes generally available.
 
