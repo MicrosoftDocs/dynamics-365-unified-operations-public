@@ -64,7 +64,7 @@ To migrate to UPM, follow these steps.
 1. Use the **Effective after date** field to select pricing rules that are still active and should be migrated.
 1. Choose whether or not to include disabled discounts and skip trade agreements.
 1. If you want to continue applying existing trade agreements without attributes, configure the corresponding parameters accordingly.
-1. Select X to start the migration.
+1. Select **X** to start the migration.
 
 When the migration completes, your data and configurations are successfully migrated to UPM, providing a foundation for future enhancements to flexible pricing strategy.
 
