@@ -52,7 +52,7 @@ To migrate to UPM, follow these steps.
 
 1. Go to **Retail and Commerce \> Migration \> Set up Price group mapping for migration**. You'll see the following:
 
-    - The system automatically converted all existing Commerce price groups to UPM price groups.  
+    - The system automatically converts all existing Commerce price groups to UPM price groups.  
     - Each new group keeps the same price group conditions as its legacy configuration. 
 
 1. If duplicate mappings exist, the system prompts you to resolve them manually. After resolving any duplicates, select **Validate** before proceeding.
