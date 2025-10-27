@@ -1,19 +1,18 @@
 ---
-title: Export of customer electronic invoices
+title: Export customer electronic invoices
 description: Learn how to get started with Electronic invoicing for Türkiye in Microsoft Dynamics 365 Finance, including prerequisites and an outline on configure parameters.
 author: v-omerorhan
 ms.author: v-omerorhan
 ms.topic: article
-ms.date: 10/24/2025
+ms.date: 10/27/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Türkiye
 ms.search.validFrom: 2022-11-03
 ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.37
 ---
 
-# Export of customer electronic invoices
+# Export customer electronic invoices
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
@@ -21,11 +20,11 @@ This article describes how to configure and use electronic invoices in Microsoft
 
 Microsoft Dynamics 365 Finance supports the generation of e-invoice documents in the required **UBL-TR** format.
 
-Before you begin, ensure that the following prerequisites are met:
+Before you begin, you must meet the following prerequisites:
 
 - Your legal entity's primary address must be in Türkiye.
 - To generate electronic invoice XML files in the UBL format, you must use Electronic Reporting (ER) configurations. These configurations define the necessary data models, mappings, and output formats required to structure and produce e-invoice documents in compliance with electronic invoicing standards.
-- To enable the generation of electronic invoices in UBL-TR format version 1.2 and later, import the most recent versions of the following Electronic reporting (ER) format configurations. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
+- To enable the generation of electronic invoices in UBL-TR format version 1.2 and later, import the most recent versions of the Electronic reporting (ER) format configurations listed in the following table. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
 | Number | ER configuration name | Type | Description |
 |---|---|---|---|
@@ -46,81 +45,81 @@ The code lists can be found in [e-invoice Legislation and Technical Architecture
 
 ### Reference the imported ER format configurations
 
-1. Go to **Accounts receivable > Setup > Accounts receivable parameters**.
-1. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, select the imported formats for electronic documents in the parameter below:
+To reference the imported ER format configurations, follow these steps.
 
-    - **Sales and Free text invoice**: E-Invoice (TR)
+1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
+1. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, select the imported formats for electronic documents in the **Sales and Free text invoice: E-Invoice (TR)** parameter.
 
 ### Configure legal entity data
 
 This section provides information about how to configure legal entity for customer e-invoices.
 
-To configure legal entity, follow these steps;
+To configure legal entity, follow these steps.
 
-1. Go to **Organization administration > Organizations > Legal entities**, and select a legal entity.
+1. Go to **Organization administration** > **Organizations** > **Legal entities**, and select a legal entity.
 1. On the **Addresses** FastTab, add a valid primary address for the legal entity.
 1. In the **Bank account** field, enter the reference to the legal entity bank account.
 
-> [!NOTE]
-> Make sure that a valid International Bank Account Number (IBAN) is defined for the selected bank account.
+   > [!NOTE]
+   > Make sure that a valid International Bank Account Number (IBAN) is defined for the selected bank account.
 
-### Configure customer data
+### Configure customer account data
 
 This section provides information about how to configure customer accounts for customer e-invoices.
 
-To configure customer account, follow these steps;  
+To configure customer account data, follow these steps.  
 
-1. Go to **Accounts receivable > Customers > All customers**, and select a customer.
+1. Go to **Accounts receivable** > **Customers** > **All customers**, and select a customer.
 1. On the **Addresses** FastTab, add a valid address for the customer.
-1. Specify the VAT ID of the customer. For more information, see [Set up VAT IDs of customers and vendors](../../localizations/turkiye/emea-turkiye-set-up-legal-entity.md#set-up-vat-ids-of-customers-and-vendors).
+1. Specify the VAT ID of the customer. Learn more in [Set up VAT IDs of customers and vendors](../../localizations/turkiye/emea-turkiye-set-up-legal-entity.md#set-up-vat-ids-of-customers-and-vendors).
 1. In the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
 1. Set the **eInvoice attachment** option to **Yes** to attach an XML file to the electronic invoice, if an attachment is necessary.
 1. On the **Sales demographics** FastTab, in the **Primary contact** field, select the person who is considered as the customer's contact. All available contact persons must already be defined for the selected customer.
 1. On the **Sales demographics** FastTab, in the **Employee responsible** field, select the person who is considered as the vendor's contact.
 
-> [!NOTE]  
-> After **Registration IDs** are defined for customer and vendor accounts, the **Tax exempt number** field is automatically populated.  
-> If needed, you can also select the value manually.
+   > [!NOTE]  
+   > After **Registration IDs** are defined for customer and vendor accounts, the **Tax exempt number** field is automatically populated.  
+   > If needed, you can also select the value manually.
 
 ### Set up unit of measure mappings for e-invoices
 
 This section explains how to set up unit of measure mappings in Finance so that internal unit codes (such as *EA*, *KG*, or *M*), are correctly converted to UN/ECE unit codes (such as *C62*, *KGM*, or *MTR*).  
 
-To configure the mappings, follow these steps:
+To configure the mappings, follow these steps.
 
-1. Go to **Organization administration > Setup > Units > Units**.
+1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
 1. Select a unit, and then select **External codes**.
-1. On the **External codes** page, in the **Overview** section, in the **Code** column, enter the **internal unit ID** (for example, *EA* for "each") that represents the unit used in Dynamics 365 Finance.
+1. On the **External codes** page, in the **Overview** section, in the **Code** column, enter the **internal unit ID** (for example, *EA* for "each") that represents the unit used in Finance.
 1. In the **Standard code** column, select the checkbox.
 1. In the **Value** section, in the **Value** field, enter the **UN/ECE unit code** (for example, *C62* for "each").  
    This value is used as the **unitCode** attribute in the `<InvoicedQuantity>` element of the generated e-invoice XML.
 
-:::image type="content" source="../media/emea-turkiye-unit-code-mapping.png" alt-text="Screenshot of unit code mapping configuration page showing internal unit codes mapped to UN/ECE unit codes.":::
+   :::image type="content" source="../media/emea-turkiye-unit-code-mapping.png" alt-text="Screenshot of the unit code mapping configuration page that shows internal unit codes mapped to UN/ECE unit codes.":::
 
-> [!NOTE]
-> The configured unit mapping determines the `unitCode` value that appears in the `<cbc:InvoicedQuantity>` element of the generated UBL-TR e-invoice XML.  
-> For example:
->
-> ```xml
-> <cbc:InvoicedQuantity unitCode="C62">1.00</cbc:InvoicedQuantity>
-> ```
->
-> In this example, the internal unit **EA** (each) defined in Dynamics 365 Finance is mapped to the international unit code **C62**, which is then written into the XML as the `unitCode` attribute.
+   > [!NOTE]
+   > The configured unit mapping determines the `unitCode` value that appears in the `<cbc:InvoicedQuantity>` element of the generated UBL-TR e-invoice XML.  
+   > For example:
+   >
+   > ```xml
+   > <cbc:InvoicedQuantity unitCode="C62">1.00</cbc:InvoicedQuantity>
+   > ```
+   >
+   > In this example, the internal unit **EA** (each) defined in Finance is mapped to the international unit code **C62**, which is then written into the XML as the `unitCode` attribute.
 
-> [!TIP]
-> If no specific units of measure are defined, the default unit **EA** (each) is used in the UBL-TR e-invoice XML.
+   > [!TIP]
+   > If no specific units of measure are defined, the default unit **EA** (each) is used in the UBL-TR e-invoice XML.
 
 ### Set up tax exempt code mappings for e-invoices
 
-This section explains how to define and assign **Sales tax exempt codes** in Dynamics 365 Finance so that e-invoices generated in the **UBL-TR** format include the correct **TaxExemptionReasonCode** values.
+This section explains how to define and assign **Sales tax exempt codes** in Finance so e-invoices generated in the **UBL-TR** format include the correct **TaxExemptionReasonCode** values.
 
 #### Define sales tax exempt codes
 
 The **Sales tax exempt codes** page provides a centralized location to create standardized exemption identifiers that represent legal reasons for tax exemption in Türkiye.
 
-To define sales tax exempt codes:
+To define sales tax exempt codes, follow these steps.
 
-1. Go to **Tax > Indirect taxes > Sales tax > Sales tax exempt codes**.  
+1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax exempt codes**.  
 1. Select **New** to create a new record.  
 1. In the **Exempt code** field, enter a unique identifier (for example, *301* or *351*).  
 1. In the **Description** field, enter a meaningful description (for example, *11/1-a Mal İhracatı* or *KDV – İstisna Olmayan Diğer*).  
@@ -136,18 +135,16 @@ For the official UBL-TR exemption code list, see [e-Invoice Legislation and Tech
 After defining the exemption codes, you must assign them to the relevant **sales tax codes** within **sales tax groups**.  
 This assignment ensures that the correct **TaxExemptionReasonCode** values are included in the generated UBL-TR e-invoice XML.
 
-To assign exemption codes to sales tax codes:
+To assign exemption codes to sales tax codes, follow these steps.
 
-1. Go to **Tax > Setup > Sales tax > Sales tax groups**.  
+1. Go to **Tax** > **Setup** > **Sales tax** > **Sales tax groups**.  
 1. Select an existing **Sales tax group** that includes one or more sales tax codes for exemption scenarios.  
-1. On the **Setup** FastTab, for **each sales tax code line**, set the **Exempt** check box to **Yes**.  
-   This setting ensures that transactions using this tax code don't calculate tax amounts.  
-1. In the **Exempt code** field on the same line, select the relevant exemption code from the dictionary.  
-   This mapping determines which **TaxExemptionReasonCode** value appears in the generated e-invoice XML.
+1. On the **Setup** FastTab, for **each sales tax code line**, set the **Exempt** check box to **Yes**. This setting ensures that transactions using this tax code don't calculate tax amounts.  
+1. In the **Exempt code** field on the same line, select the relevant exemption code from the dictionary. This mapping determines which **TaxExemptionReasonCode** value appears in the generated e-invoice XML.
 
-> [!TIP]  
-> The **Exempt** check box must be set per tax code line in the Sales tax group, not at the group level.  
-> Only legally exempt transactions, such as export sales or diplomatic missions, should have the **Exempt** option enabled.
+   > [!TIP]  
+   > The **Exempt** check box must be set per tax code line in the Sales tax group, not at the group level.  
+   > Only legally exempt transactions, such as export sales or diplomatic missions, should have the **Exempt** option enabled.
 
 ### Set up TaxTypeCode mappings for e-invoices
 
@@ -155,7 +152,7 @@ This section describes how to set up the **TaxTypeCode** lookup in the **Applica
 
 To set up a **TaxTypeCode**, follow these steps.
 
-1. Go to **Organization administration > Electronic reporting > Configurations**.
+1. Go to **Organization administration** > **Electronic reporting** > **Configurations**.
 1. In the list of ER formats, select **E-Invoice (TR)** format.
 1. In the **Versions** FastTab, select the most recent **Completed** version and select **Setup** in **Application specific parameters** on the ActionPane.
 1. In the **Lookups** section, select **TaxCodeLookUp**.
@@ -164,58 +161,63 @@ To set up a **TaxTypeCode**, follow these steps.
 1. Repeat for all required tax types.
 1. Save your changes and set the **State** to **Completed**.
 
-:::image type="content" source="../media/emea-turkiye-customer-electronic-invoices-tax-type-code.png" alt-text="Screenshot of TaxTypeCode mapping configuration showing sales tax codes mapped to TaxTypeCode values.":::
+   :::image type="content" source="../media/emea-turkiye-customer-electronic-invoices-tax-type-code.png" alt-text="Screenshot of the TaxTypeCode mapping configuration showing sales tax codes mapped to TaxTypeCode values.":::
 
-> [!NOTE]
-> The configured **TaxTypeCode** value is written into the `<TaxTypeCode>` element in the generated UBL-TR XML.  
-> For example:
->
-> ```xml
-> <cbc:TaxTypeCode>0015</cbc:TaxTypeCode>
-> ```
+   > [!NOTE]
+   > The configured **TaxTypeCode** value is written into the `<TaxTypeCode>` element in the generated UBL-TR XML.  
+   > For example:
+   >
+   > ```xml
+   > <cbc:TaxTypeCode>0015</cbc:TaxTypeCode>
+   > ```
 
 You can review the list of **TaxTypeCode** values currently available in the system.
 
 To review the list, follow these steps.
 
-1. Go to **Organization administration > Electronic reporting > Configurations**.
+1. Go to **Organization administration ** > **Electronic reporting** > **Configurations**.
 1. In the list of ER formats, select **E-Invoice (TR)** format.
 1. In the **Versions** FastTab, select **Completed** version and select **Application specific parameters** on the ActionPane.
 1. Select **Designer** in ActionPane.
 1. Select **Format enumerations**.
 
-:::image type="content" source="../media/emea-turkiye-tax-type-code-list.png" alt-text="Screenshot of TaxTypeCode list showing available tax type code values in the system.":::
+   :::image type="content" source="../media/emea-turkiye-tax-type-code-list.png" alt-text="Screenshot of the TaxTypeCode list showing available tax type code values in the system.":::
 
 This can help ensure that the values you configure in the **Application specific parameters** are aligned with the enumeration definitions in the ER format.
 
 ## Export of electronic invoices for customers
 
-This section describes how to generate, view, and access electronic invoices for customers in Finance.  
-It provides guidance on how to create UBL-TR compliant XML files from posted invoices, access and verify the generated documents to automatically distribute them through Electronic Reporting (ER) destinations.
+This section describes how to generate, view, and access electronic invoices for customers in Finance. This section also provides guidance on how to create UBL-TR compliant XML files from posted invoices, and how to access and verify the generated documents to automatically distribute them through Electronic Reporting (ER) destinations.
 
 ### Generate e-invoices
 
-When an invoice is posted, you can generate an electronic invoice from any invoice journal. Select the invoice, and then, on the Action Pane, on the **Invoice** tab, in the **Document** group, select **Send** \> **Original**.
+When an invoice is posted, you can generate an electronic invoice from any invoice journal. 
 
-:::image type="content" source="../media/emea-nor-ger-einvoice.jpg" alt-text="Screenshot of sending an e-invoice showing the Invoice tab with Document group and Send Original option.":::
+To generate an electronic invoice from any invoice journal, follow these steps.
+
+1. Select the invoice
+1. On the Action Pane, select the **Invoice** tab.
+1. In the **Document** group, select **Send** \> **Original**.
+
+   :::image type="content" source="../media/emea-nor-ger-einvoice.jpg" alt-text="Screenshot of sending an e-invoice showing the Invoice tab with Document group and Send Original option.":::
 
 ### View e-invoices
 
-If ER destinations are defined for electronic invoice formats, the output files that are generated are sent to a related file destination that's configured for the ER destination.
-For more information about how to configure destinations for generated electronic documents, see [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+If ER destinations are defined for electronic invoice formats, the output files that are generated are sent to a related file destination configured for the ER destination.
+Learn about how to configure destinations for generated electronic documents in [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 If no Electronic reporting (ER) destinations are defined for electronic invoice formats, output files for electronic invoices are generated on the Electronic reporting jobs page.
 
-To view these files;
+To view these e-invoice files, follow these steps.
 
-1. Go to **Organization administration > Electronic reporting > Electronic reporting jobs**.
+1. Go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**.
 1. Select a job, and then select **Show files**.
 
     :::image type="content" source="../media/emea-nor-ger-einvoice-open.jpg" alt-text="Screenshot of Show files button in Electronic reporting jobs page.":::
 
 1. Select **Open** to download the file that contains the electronic invoice.
 
-If generation of the electronic invoices fails because of errors, select **Show log** \> **Message details** to view more details about the error message.
+If generation of the electronic invoices fails because of errors, to view more details about the error message select **Show log** \> **Message details**.
 
 :::image type="content" source="../media/emea-nor-ger-einvoice-log.jpg" alt-text="Screenshot of Message details showing error information for electronic invoice generation.":::
 
@@ -223,8 +225,8 @@ If generation of the electronic invoices fails because of errors, select **Show 
 
 You can set up ER destinations for electronic invoice formats. In this case, output XML files that contain electronic invoices are automatically sent to the defined destinations immediately after the invoices are posted.
 
-When you post the invoices, you must turn on the Print invoice parameter.
+When you post the invoices, you must turn on the **Print invoice** parameter.
 
-For more information about ER destinations, see [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+Learn more about ER destinations in [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
