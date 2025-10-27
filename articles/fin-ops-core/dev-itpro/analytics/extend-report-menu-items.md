@@ -17,27 +17,29 @@ ms.assetid: 7bf76862-e320-4a81-81a4-5bda7288e573
 
 [!include [banner](../includes/banner.md)]
 
-This article shows how to extend existing application menu items so that, after only minimal code changes, navigation are redirected to a custom reporting solution.
+This article shows how to extend existing application menu items so that, with only minimal code changes, you can redirect navigation to a custom reporting solution.
 
-This article focuses on the process of extending existing application menu items so that, after only minimal code changes, navigations are redirected to a custom reporting solution. By using this technique, you'll avoid the inconvenience of tracking down and replacing all references to an existing application report. Just extend an existing application menu item to redirect application navigations to reports that are defined in an extension model. The following illustration shows a typical application customization.
+This article focuses on the process of extending existing application menu items so that, with only minimal code changes, you can redirect navigation to a custom reporting solution. By using this technique, you avoid the inconvenience of tracking down and replacing all references to an existing application report. Just extend an existing application menu item to redirect application navigations to reports that you define in an extension model. The following illustration shows a typical application customization.
 
 :::image type="content" source="./media/extendingmenuitem.png" alt-text="Screenshot of typical application customization workflow for extending menu items." lightbox="./media/extendingmenuitem.png":::
 
 ## What's important to know?
-There are a few basic assumptions that you should be aware of before you apply this solution.
+
+Before you apply this solution, be aware of the following basic assumptions.
 
 - Extended menu items let you override both the display string and the target.
-- This technique can be used for all types of reports, from simple query-based reports to complex report data provider (RDP)–based reports.
+- You can use this technique for all types of reports, from simple query-based reports to complex report data provider (RDP)–based reports.
 - Extended menu items are available for direct references to reports and solutions that orchestrate the reporting session by using a controller class.
 
 ## Extend report menu items
+
 The following walkthrough shows how to use menu item extensions to redirect user navigations in the application to a custom solution. The solution includes a custom **Customer list** report for the Fleet Management application and defines all the application customizations in a pure extension model. The following illustration shows the menu item that you use to access the custom **Customer list** report.
 
 :::image type="content" source="./media/fleet-workspace-customer-list.png" alt-text="Screenshot of Fleet workspace customer list menu item.":::
 
 1. **Create a new model for your application customizations.** For more information about extension models, see [Customize through extension and overlayering](../extensibility/customization-overlayering-extensions.md).
 1. **Create a new project in Microsoft Visual Studio,** **and add your custom report.** Additionally, add all the solution artifacts. These artifacts include the RDP class or source query, the controller class, and UI builders, if they're present.
-1. **Create an extension of the menu item that is used to access the report.** In this example, the output menu item is named **FMCustomerListReport**. Use the menu item structure to find the menu item name that is exposed in the application. The following illustration shows the action in Application Explorer.
+1. **Create an extension of the menu item that is used to access the report.** In this example, the output menu item is named **FMCustomerListReport**. Use the menu item structure to find the menu item name that the application exposes. The following illustration shows the action in Application Explorer.
 
     :::image type="content" source="./media/fleet-extension-create-menu-extension.png" alt-text="Screenshot of creating an extension of the menu item that is used to access the report." lightbox="./media/fleet-extension-create-menu-extension.png":::
 
@@ -48,7 +50,6 @@ The following walkthrough shows how to use menu item extensions to redirect user
 
 1. **Rebuild the solution, and deploy the custom report.**
 
-You've now finished extending the report menu item. Navigations to the standard menu item will now be redirected to your custom reporting solution.
-
+You finished extending the report menu item. Navigations to the standard menu item now redirect to your custom reporting solution.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

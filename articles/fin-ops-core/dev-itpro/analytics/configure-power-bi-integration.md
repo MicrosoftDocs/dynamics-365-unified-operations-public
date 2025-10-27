@@ -24,9 +24,9 @@ ms.custom: sfi-image-nochange
 
 Users can pin tiles, dashboards, and reports from their own PowerBI.com account to application workspace.
 
-This functionality requires a one-time configuration of your environment. An administrator must do this step to enable Microsoft Power BI to communicate and authenticate correctly.
+This functionality requires a one-time configuration of your environment. An administrator must complete this step to enable Microsoft Power BI to communicate and authenticate correctly.
 
-For a workspace to show a Power BI tile, the server must contact the Power BI service on behalf of a user and access the visualization. It must then redraw the visualization in the application workspace. The fact that the server contacts the Power BI service "on behalf of a user" is important. When a user, such as `D365User@contoso.com`, contacts the PowerBI.com service, Power BI should show only tiles and reports from the user's PowerBI.com subscription.
+For a workspace to show a Power BI tile, the server must contact the Power BI service on behalf of a user and access the visualization. It must then redraw the visualization in the application workspace. The fact that the server contacts the Power BI service "on behalf of a user" is important. When a user, such as `D365User@contoso.com`, contacts the PowerBI.com service, Power BI shows only tiles and reports from the user's PowerBI.com subscription.
 
 By completing this configuration step, you enable them to contact the PowerBI.com service.
 
@@ -41,10 +41,10 @@ By completing this configuration step, you enable them to contact the PowerBI.co
 
 ## Registration process 
 
-1. Sign in to https://portal.azure.com/ using an Azure tenant admin account.
+1. Sign in to https://portal.azure.com/ with an Azure tenant admin account.
 
     > [!NOTE]
-    > The user who completes this procedure must have Admin rights for the tenant to register applications.
+    > The user who completes this procedure must have admin rights for the tenant to register applications.
 
 1. Go to **Microsoft Entra** \> **App registrations** \> **New application registration**. 
 1. Enter the following values:
@@ -93,7 +93,7 @@ By completing this configuration step, you enable them to contact the PowerBI.co
 1. Select **Manage** \> **Certificates & secrets**.
 1. In the **Client secrets** field, select **New client secret**.
 1. Enter a value in the **Description** and **Expires** fields, and then select **Add**.
-1. Make a note of the **Application ID** and **Secret Value** values. You'll use these values in the next procedure.
+1. Make a note of the **Application ID** and **Secret Value** values. You use these values in the next procedure.
 
     > [!IMPORTANT]
     > Be sure to capture the **Application (client) ID** and **Secret Value** values before you continue.
@@ -109,7 +109,7 @@ By completing this configuration step, you enable them to contact the PowerBI.co
 1. In the **Application ID** field, enter the **Application ID** value that you got from Power BI in the previous procedure.
 1. In the **Application key** field, enter the **Secret Value** value that you captured in Microsoft Entra ID in the previous procedure.
 
-    You can apply the company filter only if your Power BI content has a table that is named **Company** and a column that is named **ID**. Ready-made Power BI content that is released uses this convention.
+    You can apply the company filter only if your Power BI content has a table named **Company** and a column named **ID**. Ready-made Power BI content that is released uses this convention.
 
 1. Select **Save**.
 
@@ -124,28 +124,28 @@ To verify the changes and enable PowerBI.com integrations, complete the steps in
     >
     > :::image type="content" source="./media/D365-PBI-GetStarted.png" alt-text="Screenshot of Authorize Power BI.":::
 
-    If you're starting Power BI from the application for the first time, you're prompted to authorize sign-in to Power BI from the client. Select **Click here to provide authorization to Power BI**.
+    If you start Power BI from the application for the first time, you're prompted to authorize sign-in to Power BI from the client. Select **Click here to provide authorization to Power BI**.
 
     Users must complete this step the first time they pin Power BI content.
 
 1. The Microsoft Entra consent page asks for your consent. User consent is required for the application to access PowerBI.com on behalf of the user. Select **Accept**.
-1. Because you're already signed in to Microsoft Entra ID, you don't have to enter your credentials again. A new tab appears, where you're prompted to authorize the connection between the application and Power BI. Authorize the connection, and then return to the original tab.
+1. Because you're already signed in to Microsoft Entra ID, you don't have to enter your credentials again. A new tab appears, where you're prompted to authorize the connection between the application and Power BI. Authorize the connection, then return to the original tab.
 1. A list of tiles from your PowerBI.com account appears. Select one or more tiles to pin to the selected workspace.
 
     :::image type="content" source="./media/D365-PBI-Validation.png" alt-text="Screenshot of Validate Power BI integration.":::
 
 ## Troubleshooting common errors
 
-In the previous procedure, after you select **Accept**, you might receive the following error message if the process is unsuccessful. The details of the error appear at the bottom of the message. More technical information provides clues that can help you determine what went wrong.
+In the previous procedure, after you select **Accept**, you might receive the following error message if the process isn't successful. The details of the error appear at the bottom of the message. More technical information provides clues that can help you determine what went wrong.
 
-### Some common issues and the resolution steps
+### Common issues and resolution steps
 
 | Error                                                       | Resolution |
 |-------------------------------------------------------------|------------|
-| The Power BI service is unavailable.                        | This issue doesn't occur often, but the Power BI service might sometimes be unreachable. You don't have to re-register. Try to pin a tile to a workspace later. |
+| The Power BI service is unavailable.                        | This issue doesn't occur often, but the Power BI service might sometimes be unreachable. You don't need to re-register. Try to pin a tile to a workspace later. |
 | You can't access the application.                           | You probably didn't select all the check boxes under **Step 8 in the Registration process** during the registration process. Start Power BI, and rerun the registration process. |
 | The Power BI tiles page is empty (no content is shown).     | Your PowerBI.com account might not have a dashboard or any tiles. Add a dashboard, such as a sample dashboard, and try to pin a tile again. |
 | Error when authorizing Power BI                             | On the Azure Admin dashboard, under **Users and Groups \> User settings**, make sure that the **Users can consent to apps accessing company data on their behalf** option is set to **Yes**. |
-| Sorry, something went wrong. The authentication process wasn't successful. Contact your system administrator.  | This error might occur when service keys are expired. We recommend performing the registration process previously described, starting with step 3. When complete, be sure to update the PowerBI.com settings at **AX client \> System administration \> Set up \> PowerBI.com integration**. |
+| Sorry, something went wrong. The authentication process wasn't successful. Contact your system administrator.  | This error might occur when service keys are expired. Perform the registration process previously described, starting with step 3. When complete, be sure to update the PowerBI.com settings at **AX client \> System administration \> Set up \> PowerBI.com integration**. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

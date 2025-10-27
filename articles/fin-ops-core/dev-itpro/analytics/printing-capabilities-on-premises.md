@@ -4,7 +4,7 @@ description: Learn about the capabilities for generating, publishing services, a
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 06/16/2017
+ms.date: 10/27/2025
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -20,7 +20,7 @@ search.app:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the capabilities for generating, publishing, and printing documents in on-premises deployments of Microsoft Dynamics 365 Finance + Operations (on-premises). The application provides a fully integrated experience for enterprise document generation that is powered by Microsoft SQL Server Reporting Services (SSRS). From any supported device, users can produce standard industry documents that are linked to business processes. These documents include sales invoices, checks, and packing slips. Built-in tools let administrators configure the service so that users can securely connect to network printers.
+This article describes the capabilities for generating, publishing, and printing documents in on-premises deployments of Microsoft Dynamics 365 Finance + Operations (on-premises). The application provides a fully integrated experience for enterprise document generation that's powered by Microsoft SQL Server Reporting Services (SSRS). From any supported device, users can produce standard industry documents that are linked to business processes. These documents include sales invoices, checks, and packing slips. Built-in tools let administrators configure the service so that users can securely connect to network printers.
 
 You can upgrade solutions that are built on the Microsoft Dynamics AX 2012 SQL Reporting Services framework, or you can take advantage of the modern solutions that are available in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com).
 
@@ -37,30 +37,33 @@ The following options are available for document publishing:
 - **File** – Produce a PDF file that is downloaded directly to the browser for local printing.
 - **Print** – Send documents directly to network printers from all supported platforms. These platforms include mobile devices.
 
-![Document publishing services.](media/document-publishing-services.png)
+:::image type="content" source="media/document-publishing-services.png" alt-text="Screenshot of document publishing services options showing email, archive, file, and print capabilities.":::
 
 For a high-level summary of the options for information access that are available in the cloud-hosted solution, see [Document printing overview](print-documents.md).
 
 ## Comparing the cloud-hosted and on-premises services
-Unlike the cloud-hosted service, the on-premises publishing service produces documents as PDF files that are automatically downloaded to the browser. Therefore, users can save documents or print hard copies by using local connected devices. Administrators can manage access to network printers directly from the application, by using built-in administrative pages. Users can interact with reports on demand, or they can schedule automatic jobs to securely generate and distribute documents on a recurring basis.
+
+Unlike the cloud-hosted service, the on-premises publishing service produces documents as PDF files that the browser automatically downloads. Therefore, users can save documents or print hard copies by using locally connected devices. Administrators can manage access to network printers directly from the application by using built-in administrative pages. Users can interact with reports on demand, or they can schedule automatic jobs to securely generate and distribute documents on a recurring basis.
 
 The following illustration shows the components that are involved in document printing.
 
-![Document printing.](media/Cloud-vs-on-premises.png)
+:::image type="content" source="media/Cloud-vs-on-premises.png" alt-text="Screenshot of cloud versus on-premises document printing components comparison.":::
 
 For information about how to use extensions to manage availability of the embedded drill-through links in application reports, see the Appendix.
 
 ## Managing access to network printers
+
 Administrators can use built-in administrative pages to manage access to network printers. Network printers are secured per company and shared by users of the application. Documents are then printed by using a privileged domain account, based on settings that the user provides. In on-premises deployments, you don't have to install an adapter to connect to domain resources such as printers and fax machines.
 
 The following illustration shows the page that is used to manage network printers.
 
-![Manage network printers page.](media/manage-network-printers.png)
+:::image type="content" source="media/manage-network-printers.png" alt-text="Screenshot of manage network printers page showing printer configuration options.":::
 
 ## Appendix
 
 ### Turning on embedded links in business documents
-Here is the code that you can use to make embedded drill-through links available in PDF documents. 
+
+Here's the code that you can use to make embedded drill-through links available in PDF documents.
 
 ```xpp
 class Controller extends SrsReportRunController
@@ -76,6 +79,5 @@ class Controller extends SrsReportRunController
     }
 }
 ```
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -21,30 +21,30 @@ This article explains the various reporting options available as part of the pla
 
 ## Why information access is important
 
-Information access is an essential part of an ERP solution and represents a significant portion of the user engagement with the system. Consider the numerous methods of capturing information related to daily activities and the level of investments required to manage the data. Employees depend on logical interpretations of massive amounts of data to stay on top of their daily tasks. Out of the box the platform provides a collection of reporting solutions to address the various information access needs of an ERP solution. In an increasingly competitive environment, mergers and acquisitions seem to occur as often as the change in seasons. More than ever before, businesses today are finding ways to expand their global reach to attract more customers. To be successful, they must adapt legacy solutions used to communicate with customers and prepare for the enforcement of regional regulatory requirements associated with new markets. Beyond the primitive functions provided by Microsoft Azure – compute, networking, storage, and authentication – the platform provides tools to manage resources for organizations that span in size from small businesses to global enterprise conglomerates. These tools are designed with flexibility in mind, to accommodate a dynamic world of business.
+Information access is an essential part of an ERP solution. It represents a significant portion of the user engagement with the system. Consider the numerous methods of capturing information related to daily activities and the level of investments required to manage the data. Employees depend on logical interpretations of massive amounts of data to stay on top of their daily tasks. Out of the box, the platform provides a collection of reporting solutions to address the various information access needs of an ERP solution. In an increasingly competitive environment, mergers and acquisitions seem to occur as often as the change in seasons. More than ever before, businesses today are finding ways to expand their global reach to attract more customers. To be successful, they must adapt legacy solutions used to communicate with customers and prepare for the enforcement of regional regulatory requirements associated with new markets. Beyond the primitive functions provided by Microsoft Azure – compute, networking, storage, and authentication – the platform provides tools to manage resources for organizations that span in size from small businesses to global enterprise conglomerates. These tools are designed with flexibility in mind, to accommodate a dynamic world of business.
 
 ## What is a "report" in the application?
 
-A *report* can be defined simply as a structured presentation of data. Under ideal circumstances, reports materialize data in such a way that it allows the user to make informed decisions. The application supports a broad spectrum of information access scenarios: cross company all-up financial reporting; analytical dashboards and tiles; electronically transferable funds; customer sales invoices; checks and tax documents; and many more. Examples of integrated report scenarios that involve the consumption of business data include:
+A *report* is a structured presentation of data. Under ideal circumstances, reports present data in such a way that it allows the user to make informed decisions. The application supports a broad spectrum of information access scenarios: cross company all-up financial reporting; analytical dashboards and tiles; electronically transferable funds; customer sales invoices; checks and tax documents; and many more. Examples of integrated report scenarios that involve the consumption of business data include:
 
 - **Native controls** including list pages, grid controls, and chart visualizations.
 - **Dashboards and workspaces** containing predefined and personalized views.
 - **Financial reporting** providing all-up views across legal entities.
 - **Structured documents** distributed internally to employees or externally to customers and vendors.
 
-Although each of these scenarios at its core involves the presentation of structured business data, the process of accessing these reports and how the results are then consumed varies greatly. Flexibility in the user tooling is essential for scenarios that involve data exploration. By contrast, layout precision is required for compliance with most regulatory documents. Given the diversity of information access scenarios it's understandable that not all reports are created equal. This article is intended to help familiarize you with the various reporting options available as part of the platform.
+Although each of these scenarios at its core involves the presentation of structured business data, the process of accessing these reports and how the results are then consumed varies greatly. Flexibility in the user tooling is essential for scenarios that involve data exploration. By contrast, layout precision is required for compliance with most regulatory documents. Given the diversity of information access scenarios, it's understandable that not all reports are created equal. This article is intended to help familiarize you with the various reporting options available as part of the platform.
 
 ## Common myths of reporting
 
 To become a proficient *report* *maker*, it's often useful to let go of past inhibitions. The following section seeks to rebuke three common myths about reporting.
 
-- **Myth \#1: Operational reports require "real-time" data** To the contrary, there are relatively few reporting scenarios that require *real-time* results. And, in the grand scheme of things, taking a critical stance on a request for *real-time* views is recommended given the high development costs and potential heavy burden these solutions may incur on production environments.
-- **Myth \#2: The best tool is the one the developer is most comfortable using** Consider a customer request for a report that allows them to monitor company's assets. In the past, a developer would build a static report displaying a list of inventory items with complex calculations relying entirely on the user to provide filters to sufficiently reduce the result set. This solution may function perfectly in developer environments with a reduced data set. However, this approach is prone to unnecessarily consume significant amounts of compute resources when utilized in production.
+- **Myth \#1: Operational reports require "real-time" data** To the contrary, relatively few reporting scenarios require *real-time* results. And, in the grand scheme of things, taking a critical stance on a request for *real-time* views is recommended given the high development costs and potential heavy burden these solutions may incur on production environments.
+- **Myth \#2: The best tool is the one the developer is most comfortable using** Consider a customer request for a report that allows them to monitor company's assets. In the past, a developer would build a static report displaying a list of inventory items with complex calculations relying entirely on the user to provide filters to sufficiently reduce the result set. This solution might function perfectly in developer environments with a reduced data set. However, this approach can unnecessarily consume significant amounts of compute resources when utilized in production.
 - **Myth \#3: Developers are good at creating visually compelling designs** In reality, developers are often the worst offenders when it comes to producing elegant design layouts that appeal to the customer's aesthetic preferences. When it comes to analytical reports, you're better off empowering users to both explore the data directly and share personalized views.
 
 ## Understanding report requirements
 
-The best reporting solutions are designed with the expertise, daily functions, and information access needs of the target user in mind. The platform offers several tools designed to meet the functional requirements that are common across various reporting experiences. Without question, selecting the right tool that most effectively addresses the *need* requires a clear understanding of the customer experience. You can drastically increase your chances of delivering a complete and robust solution that fully satisfies customer requirements by simply asking the right questions. Here are some leading questions to ask when evaluating customer requirements for reporting solutions:
+The best reporting solutions are designed with the expertise, daily functions, and information access needs of the target user in mind. The platform offers several tools designed to meet the functional requirements that are common across various reporting experiences. Selecting the right tool that most effectively addresses the *need* requires a clear understanding of the customer experience. You can drastically increase your chances of delivering a complete and robust solution that fully satisfies customer requirements by simply asking the right questions. Here are some leading questions to ask when evaluating customer requirements for reporting solutions:
 
 - **Get to know the user**
 
@@ -54,21 +54,21 @@ The best reporting solutions are designed with the expertise, daily functions, a
 
 - **Familiarize yourself with the data**
 
-  - Are they looking for transactional, analytical, and/or predictive information?
+  - Are they looking for transactional, analytical, and predictive information?
   - Does the shape of the data change and if so, how often?
   - Does the report include data from external sources?
 
-- **Determine how the results will be used**
+- **Determine how the results are used**
 
   - Are you going to explore the data to gain insights?
-  - How are the results be shared with others?
+  - How are the results shared with others?
   - Is there a fixed document structure for the target output?
 
-It's understandable that customers *want* a solution that aligns with the existing processes they're comfortable using. However, there's a lot you can learn through these leading questions used to discover what the customer actually *needs* to be successful in their task. Delight your customers by providing them with solutions that empower them to be more productive.
+It's understandable that customers *want* a solution that aligns with the existing processes they're comfortable using. However, you can learn a lot through these leading questions used to discover what the customer actually *needs* to be successful in their task. Delight your customers by providing them with solutions that empower them to be more productive.
 
 ## Reporting experiences
 
-Information access scenarios supported in applications can be broken down into five distinct reporting experiences. Specialized tools are provided to meet the complex and diverse reporting needs of various functions throughout the organization.
+Applications support information access scenarios that break down into five distinct reporting experiences. Specialized tools meet the complex and diverse reporting needs of various functions throughout the organization.
 
 - **Operational views** – Designed to address the specific needs of a given business persona.
 - **Business documents** – Static documents used to capture and exchange processed business data.
@@ -78,7 +78,7 @@ Information access scenarios supported in applications can be broken down into f
 
 ### Scorecard
 
-The following table can be used as a guide when choosing the right tool for the reporting solution.
+Use the following table as a guide when choosing the right tool for your reporting solution.
 
 |MAKER|Operational views|Business documents|Analytical tools & visualizations|Electronic reporting|Financial reporting|
 |-----|-----------|------------------|---------------------------------|--------------------|-------------------|
@@ -88,7 +88,7 @@ The following table can be used as a guide when choosing the right tool for the 
 |Data sources|Entity DB<br>OLTP|OLTP|Entity DB<br>Azure Catalog|OLTP|OLTP|
 |Effort|Days|Days|Minutes|Hours|Hours|
 
-|VIEWER|Operational views|Business documents|Analytical tools & visualizations|Electronic reporting|Financial reporting|
+|VIEWER|Operational views|Business views|Analytical tools & visualizations|Electronic reporting|Financial reporting|
 |-----|-----------|------------------|---------------------------------|--------------------|-------------------|
 |Target|Organization|Back Office|Power user|Power user|Finance officers|
 |Data accuracy|Near real-time|Real-time|Near real-time|Real-time|Cached views|
@@ -99,28 +99,28 @@ The following table can be used as a guide when choosing the right tool for the 
 |Scenarios|Monitoring|Transactions|Exploratory|Transactions|Accounting|
 
 > [!NOTE]
-> "Near real-time" denotes processed data that is slightly slower than real-time.
+> "Near real-time" denotes processed data that's slightly slower than real-time.
 
 ## Operational views
 
-Operational views represent an essential part of the average employee's daily life. As important as a brush is to a painter, operational views are used to empower people to be productive. These views contain logical presentations of data to help the user discover patterns, highlight anomalies, and act on the most important tasks. Targeted experiences are used to satisfy the unique information access requirements for a given persona. These views provide actionable controls that help to maximize efficiency for common user actions. Learn more about constructing custom operational workspaces in [Build operational workspaces](../user-interface/build-workspaces.md). Example applications of operational views include controller operations, production floor management, and customer collections monitoring.
+Operational views play an essential role in the daily work of most employees. As important as a brush is to a painter, operational views empower people to be productive. These views contain logical presentations of data to help users discover patterns, highlight anomalies, and act on the most important tasks. Targeted experiences satisfy the unique information access requirements for a given persona. These views provide actionable controls that help maximize efficiency for common user actions. For more information about constructing custom operational workspaces, see [Build operational workspaces](../user-interface/build-workspaces.md). Example applications of operational views include controller operations, production floor management, and customer collections monitoring.
 
 :::image type="content" source="./media/operational-views.png" alt-text="Screenshot of operational views interface showing dashboard and controls." lightbox="./media/operational-views.png":::
 
 **What are the characteristics and capabilities?**
 
-- A fully integrated experience with responsive visualizations fully aware of user context and selections.
-- Views can be personalized to a large extent, to meet the unique desires of the user that are prone to change.
-- Actionable controls allow the user to efficiently transact and monitor activities.
-- Combination of analytical data to help answer general questions and transactional views to access record details.
+- A fully integrated experience with responsive visualizations that understand user context and selections.
+- Views that users can personalize to meet their unique and changing needs.
+- Actionable controls that let users efficiently transact and monitor activities.
+- A combination of analytical data that answers general questions and transactional views that provide access to record details.
 
 **What distinguishes "operational views" from other types of visualizations?**
 
-- General purpose tools designed to be utilized at all levels of the organization.
-- Predefined views are provided based on common information access requirements associated with a specific role within the organization.
+- General purpose tools designed for use at all levels of the organization.
+- Predefined views based on common information access requirements associated with specific roles within the organization.
 - Highly responsive to user interactions and changes made to the transactional database.
 
-**What's important to consider when selecting this tool for the job?**
+**What should you consider when selecting this tool?**
 
 - The platform allows users to embed Power BI tiles and links to reports directly in workspaces.
 - Users can introduce personalized workspaces to create their own custom operational views.
@@ -128,7 +128,7 @@ Operational views represent an essential part of the average employee's daily li
 
 ## Analytical tools and visualizations
 
-Embedded visuals based on analytical data allow users to navigate between aggregate views down to the transactional details that affect them. Power BI service integration delivers world-class analytical tools with built-in support for accessing data. These tools empower "citizen developers" to author the reports they need and share the reports with others within the organization. Use the Power BI content packs available in Lifecycle Services to get started. Learn more about Power BI integration in [Features and services available through Power BI integration](power-bi-integration.md). Example applications of analytical tools and visualizations include customer sales per quarter, total revenue by region, and inventory turn-over.
+Embedded visuals based on analytical data let users navigate between aggregate views and transactional details. Power BI service integration delivers world-class analytical tools with built-in support for accessing data. These tools empower "citizen developers" to author the reports they need and share the reports with others within the organization. Use the Power BI content packs available in Lifecycle Services to get started. For more information, see [Features and services available through Power BI integration](power-bi-integration.md). Example applications of analytical tools and visualizations include customer sales per quarter, total revenue by region, and inventory turn-over.
 
 :::image type="content" source="./media/supplier-quality-analysis-report.png" alt-text="Screenshot of supplier quality analysis report with charts and data visualizations.":::
 
@@ -140,47 +140,47 @@ Embedded visuals based on analytical data allow users to navigate between aggreg
 
 **What distinguishes "analytical tools and visualizations" from other types of reports?**
 
-- Highly graphical in nature, these presentations are used to find the hidden meaning behind the data.
+- Highly graphical nature, these presentations help you find the hidden meaning behind the data.
 - Free form web designer that supports rich visualizations with built-in user interactions.
 - Utilized by power users to explore data and gain insight through analysis.
-- Personal in nature by allowing the user to choose which information to include.
+- Personal nature by allowing the user to choose which information to include.
 - Built-in sharing capabilities and user controlled access management.
 
-**What's important to consider when selecting this tool for the job?**
+**What should you consider when selecting this tool?**
 
-- Developers are responsible for publishing data entities that can be consumed by Power BI.
+- Developers are responsible for publishing data entities that Power BI can consume.
 - Power users can produce mash-up views based on application data combined with external data sources.
-- Visuals are highly-responsive to user interactions and provide near real-time results when using Direct Query access to the data source.
+- Visuals are highly responsive to user interactions and provide near real-time results when using Direct Query access to the data source.
 
 ## Business documents
 
-These reporting solutions are often used to capture and communicate the details of business transactions. As such, this requires a reporting solution capable of producing physical manifestations of business data using existing devices like network printers. Learn more about the enhancements to the Document reporting service in [Document Reporting Services](document-reporting-services.md). Example applications of business documents include sales invoice, customer statements, and checks.
+Use these reporting solutions to capture and communicate the details of business transactions. As such, you need a reporting solution that can produce physical manifestations of business data by using existing devices like network printers. For more information about the enhancements to the Document reporting service, see [Document Reporting Services](document-reporting-services.md). Example applications of business documents include sales invoices, customer statements, and checks.
 
 :::image type="content" source="./media/image-of-business-documents.png" alt-text="Screenshot of business documents including invoices and statements." lightbox="./media/image-of-business-documents.png":::
 
 **What are the characteristics and capabilities?**
 
-- Paginated documents that are ultimately destined to be printed on paper or distributed via email.
-- Heavily dependent on parameters to filter and produce the desired result set.
-- Business documents capture a snap-shot of customer and vendor activity that can be archived for future reference.
-- The complex solutions are developed in Visual Studio and deployed as part of the application.
+- Paginated documents that you print on paper or distribute through email.
+- Heavy dependence on parameters to filter and produce the desired result set.
+- Business documents capture a snapshot of customer and vendor activity that you can archive for future reference.
+- Complex solutions that you develop in Visual Studio and deploy as part of the application.
 
 **What distinguishes "business documents" from other types of visualizations?**
 
 - Asynchronous data access and rendering solution designed to handle relatively large data sets.
-- Dedicated reporting services offer distributed resource utilization.
+- Dedicated reporting services that offer distributed resource utilization.
 - Ideal solution for automated processes that involve bulk generation of business documents.
-- Includes built-in support for document archive and data extraction via file export to PDF in addition to Word, Excel, and CSV.
+- Built-in support for document archive and data extraction via file export to PDF in addition to Word, Excel, and CSV.
 
-**What's important to consider when selecting this tool for the job?**
+**What should you consider when selecting this tool?**
 
-- Application suite reports are intended to be used as a starting point for custom solutions.
-- Solutions are heavily dependent on metadata changes and do not offer personalization.
-- Modifications to out-of-box solutions must be managed as a metadata change.
+- Use application suite reports as a starting point for custom solutions.
+- Solutions that heavily depend on metadata changes and don't offer personalization.
+- You must manage modifications to out-of-box solutions as a metadata change.
 
 ## Electronic reporting
 
-Electronic reporting (ER) is the tool to use to configure electronic document formats in accordance with the legal requirements of various countries/regions. For more information about the Electronic reporting tool, see [Electronic reporting (ER) overview](general-electronic-reporting.md). Example applications of electronic reporting include financial auditing, tax reporting, and electronic invoicing.
+Electronic reporting (ER) is the tool to use to configure electronic document formats in accordance with the legal requirements of various countries and regions. For more information about the Electronic reporting tool, see [Electronic reporting (ER) overview](general-electronic-reporting.md). Example applications of electronic reporting include financial auditing, tax reporting, and electronic invoicing.
 
 :::image type="content" source="./media/electronic-reporting-example.png" alt-text="Screenshot of electronic reporting configuration interface.":::
 
@@ -198,20 +198,20 @@ Electronic reporting (ER) is the tool to use to configure electronic document fo
 
 ## Financial reporting
 
-Standard financial reports are provided using the default main account categories. Use the report designer to create or modify traditional financial statements, such as Income statement and Balance sheet and share the results with other members of your organization. For detailed information about the Financial reporting tooling, see [General ledger and Financial reporting overview](../../../finance/general-ledger/general-ledger.md). Example applications of financial reporting include balance sheets, cash flow, and summary trial balance year over year.
+Standard financial reports use the default main account categories. Use the report designer to create or modify traditional financial statements, such as Income statement and Balance sheet, and share the results with other members of your organization. For detailed information about the Financial reporting tooling, see [General ledger and Financial reporting overview](../../../finance/general-ledger/general-ledger.md). Example applications of financial reporting include balance sheets, cash flow, and summary trial balance year over year.
 
 :::image type="content" source="./media/financial-reporting-example.png" alt-text="Screenshot of financial reporting example showing balance sheet data.":::
 
 **What are the characteristics and capabilities?**
 
 - Built-in flexible financial reporting solution designed to handle complex organizational structures.
-- Fully-integrated with General ledger.
+- Fully integrated with General ledger.
 - Create custom financial reports using the default solutions as a starting point.
 - Interactive reports with drill-down capabilities to navigate down to transaction details.
 
 **What distinguishes "financial reports" from other types of visualizations?**
 
-- User controls are tailored for the specialized needs of financial reporting.
+- User controls tailored for the specialized needs of financial reporting.
 - Create roll-up reports containing data across companies or business units.
 - Utilizes a financial data mart for optimized performance.
 

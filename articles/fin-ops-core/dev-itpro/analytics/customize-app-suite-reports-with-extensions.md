@@ -28,6 +28,7 @@ Finance and operations offer an expanded set of tools to support custom solution
 Report extensions don't break or prevent access to standard application reports. Instead, the platform supports run-time selection of the target report allowing you to choose the appropriate report design based on the context of the user session. For more information about customizations using extensions, see [Customize through extension and overlayering](../extensibility/customization-overlayering-extensions.md)
 
 ## Scenarios
+
 There are four key scenarios that demonstrate the flexibility available. The first two scenarios involve extending existing RDP classes for custom reporting solutions.
 
 - [Expand Application Suite report data sets](expand-app-suite-report-data-sets.md) – Use table extensions and integrate custom business logic to add custom columns to an existing dataset.
@@ -37,6 +38,5 @@ The other two scenarios offer insights on how to use extensions to redirect appl
 
 - [Extend report menu items to redirect user navigation](extend-report-menu-items.md) – Customize application menu items to redirect references to a custom report design.
 - [Create custom designs for business documents](custom-designs-business-docs.md) – Delegate handlers allow you to add custom report designs to an existing Print Management document instance.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

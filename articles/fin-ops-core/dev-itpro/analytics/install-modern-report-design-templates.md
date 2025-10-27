@@ -37,11 +37,11 @@ We're maintaining the legacy solutions for two primary reasons:
 - **Modern designs aren't available for all business documents.** There's a gap between the supported business documents and the availability of modern report designs. Although the legacy designs aren't as aesthetically pleasing, they provide a sense of consistency.
 
 > [!IMPORTANT]
-> The simple modern designs are **not** recommended for all types of deployments. They're intended for cases where the customer doesn't require runtime control over the layout of the document through existing application configuration settings.
+> The simple modern designs aren't recommended for all types of deployments. They're intended for cases where the customer doesn't require runtime control over the layout of the document through existing application configuration settings.
 
 ## Apply the modern designs
 
-The modern report designs have been bundled into a model file and posted to Microsoft Dynamics Lifecycle Services (LCS). Therefore, you can easily access them from your existing subscription. Use the following procedure to obtain the modern report design solutions and install them in your local development environment. You must then apply some customizations to incorporate the modern report designs into the appropriate scenarios.
+The modern report designs are bundled into a model file and posted to Microsoft Dynamics Lifecycle Services (LCS). You can easily access them from your existing subscription. Use the following procedure to obtain the modern report design solutions and install them in your local development environment. You must then apply some customizations to incorporate the modern report designs into the appropriate scenarios.
 
 Follow these steps to install the modern report designs for the application suite.
 
@@ -63,13 +63,13 @@ Follow these steps to install the modern report designs for the application suit
     ModelUtil.exe -import -metadatastorepath=J:\AOSService\PackagesLocalDirectory -file="E:\Test\AppSuiteModernDesigns.axmodel"
     ```
 
-    For more information about how to import model files, see [Export and import models](../dev-tools/models-export-import.md). After you've imported the model file, start Microsoft Visual Studio. In Application Explorer, verify that the **Application Suite - Modern Designs** collection appears under the **AOT** node. For more information about how to use the Application Explorer, see [Development tools tutorial](../dev-tools/introduction-visual-studio.md)
+    For more information about how to import model files, see [Export and import models](../dev-tools/models-export-import.md). After you import the model file, start Microsoft Visual Studio. In Application Explorer, verify that the **Application Suite - Modern Designs** collection appears under the **AOT** node. For more information about how to use the Application Explorer, see [Development tools tutorial](../dev-tools/introduction-visual-studio.md).
 
-Now that you've successfully imported the Application Suite Modern Designs model, you must rebuild the application suite to update the metadata elements.
+Now that you successfully imported the Application Suite Modern Designs model, you must rebuild the application suite to update the metadata elements.
 
 ## Build the application suite
 
-The Application Suite Modern Designs model is an extension of the Application Suite model. To help guarantee that all application references are updated so that they target the model extensions, you must build the Application Suite model by using Microsoft Visual Studio.
+The Application Suite Modern Designs model extends the Application Suite model. To update all application references so they target the model extensions, build the Application Suite model by using Microsoft Visual Studio.
 
 1. Start Visual Studio, or use the existing instance.
 1. On the **Dynamics 365** menu, select **Build models**.
@@ -78,15 +78,15 @@ The Application Suite Modern Designs model is an extension of the Application Su
     :::image type="content" source="./media/BuildAppSuite.png" alt-text="Screenshot of full build dialog box in Visual Studio.":::
 
     > [!NOTE]
-    > You'll see that the Application Suite Modern Designs model is included in the package definition.
+    > The Application Suite Modern Designs model is included in the package definition.
 
 1. Select **Build** to do a full build of the application suite.
 
-This process may take up to 20 minutes, depending on the size of your machine.
+This process might take up to 20 minutes, depending on the size of your machine.
 
 ## Deploy the modern designs (one-box environments)
 
-After you've compiled the application suite that includes the modern report design templates, you should verify the changes locally. To verify the changes, you must deploy the new modern report design solutions to the instance of Microsoft SQL Server Reporting Services (SSRS) that's running locally.
+After you compile the application suite that includes the modern report design templates, verify the changes locally. To verify the changes, deploy the new modern report design solutions to the instance of Microsoft SQL Server Reporting Services (SSRS) that's running locally.
 
 Follow these steps to incorporate the modern report design into an existing application suite report.
 
@@ -98,7 +98,7 @@ When you add the modern report design to an existing report, you can reuse both 
 
 ## Update Print management settings
 
-At this point, you should be able to access the modern report designs from the application. Make sure that you do thorough test validations on the modern report design templates before you deploy them to production environments. To do test validations, you must activate the modern report designs for the application business process.
+At this point, you should be able to access the modern report designs from the application. Make sure that you thoroughly test the modern report design templates before you deploy them to production environments. To test the templates, you must activate the modern report designs for the application business process.
 
 Follow these steps to update the Print management settings for customer sales orders by selecting the modern report design solution as the default report design.
 
