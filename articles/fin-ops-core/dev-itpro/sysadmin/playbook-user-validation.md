@@ -86,7 +86,9 @@ Based on your company's HR and IT policies, you can use those groupings to deter
 After disabling those inactive accounts, the high‑level license reports will reflect the active user set. 
 
 **How**  
-Go to **System administration → Security → Security governance → User activity aging** to review current activity levels. Configure your day ranges under **System administration → Security → Security governance setup → Parameters → User aging periods** to align with your company's policy (for example **30**/**60**/**90**/**120+** days). 
+Go to **System administration → Security → Security governance → User activity aging** to review current activity levels. 
+
+Configure your day ranges under **System administration → Security → Security governance setup → Parameters → User aging periods** to align with your company's policy (for example **30**/**60**/**90**/**120+** days). 
 
 For each inactive user, go to **System administration → Users → User** and set **Enabled** to **No**. 
 
