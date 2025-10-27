@@ -69,7 +69,7 @@ The easiest way to install the app on a single device is to install it from an a
 
 - **Windows (UWP):** [Warehouse Management on Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 - **Android:** [Warehouse Management on Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
-- **iOS:** [Warehouse Management on Apple App Store](https://apps.apple.com/app/microsoft-warehouse-management/id6444014310)
+- **iOS:** Version 3 is available at the [Apple App Store](https://apps.apple.com/app/microsoft-warehouse-management/id6444014310). Version 4 is currently available through [Apple Test Flight](https://testflight.apple.com/) and is expected to be available on the Apple App Store in January 2026.
 
 ### Download the app from Microsoft App Center
 
