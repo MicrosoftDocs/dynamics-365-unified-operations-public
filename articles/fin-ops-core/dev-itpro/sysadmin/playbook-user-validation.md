@@ -103,7 +103,7 @@ Wait 24 hours and check the license reports ([Power Platform admin center](https
 **Why**  
 Dynamics 365 finance and operations apps use a **named user** model that ties **roles, duties, and privileges** to license requirements, so misunderstanding the model can result in **under-license risk** or **over-purchasing**. 
 
-Users who span functionality across **Finance**, **Supply Chain Management**, **Commerce**, **Human Resources**, and **Project Operations** may need multiple licenses (Base + Attach) to remain compliant. 
+Users who span functionality across **Finance**, **Supply Chain Management**, **Commerce**, **Human Resources**, and **Project Operations** may need multiple licenses (Base + Attach) to remain compliant with applicable [Product Terms](https://www.microsoft.com/licensing/terms). 
 
 The **Team Members** and **Operations – Activity** licenses are designed for light or read‑only usage, but a single "write" privilege can escalate a user into a higher license tier.
 
