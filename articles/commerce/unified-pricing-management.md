@@ -35,7 +35,7 @@ The following table describes whether or not various rules are supported for pri
 | Tender discount | Not supported yet | Not supported | Not supported yet |
 | Charges | Supported | No migration (In the plan to migrate existing charges rules) | Supported |
 | Rebate management | Not supported yet | Not supported yet | Supported |
-| Trade agreement discount | Supported | No migration | Not support | Not supported yet |
+| Trade agreement discount | Supported | No migration | Not supported | Not supported yet |
 | Price group | Migrate to attributes | Not supported | Supported |
 | Price adjustments | Migration isn't supported until Commerce version 10.0.47. | Not supported | Supported |
 
