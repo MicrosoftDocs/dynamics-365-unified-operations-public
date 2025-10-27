@@ -2455,6 +2455,8 @@
           href: procurement/supplier-com-agent-follow-up.md
         - name: Review and apply purchase order changes received in vendor emails
           href: procurement/supplier-com-agent-apply-email-changes.md
+        - name: Test the Supplier Communications Agent
+          href: procurement/supplier-com-agent-testing.md
       - name: Prices, discounts, and rebates
         items:
         - name: Purchase agreements
