@@ -27,13 +27,13 @@ The migration is structured into three incremental phases from Commerce versions
 
 The following table describes whether or not various rules are supported for pricing features.
 
-| Feature | Current nonattribute rule | New nonattribute rules | New attribute-based rules |
+|Feature |Current nonattribute rule |New nonattribute rules |New attribute-based rules |
 |----------|-----------------------------|--------------------------|----------------------------|
 | Trade agreement price | Supported | Can also migrate | Supported |
 | Discount | Migrate | Not supported | Supported |
 | Shipping discount | Not supported yet | Not supported | Supported |
 | Tender discount | Not supported yet | Not supported | Not supported yet |
-| Charges | Support | No migration (In the plan to migrate existing charges rules) | Supported |
+| Charges | Supported | No migration (In the plan to migrate existing charges rules) | Supported |
 | Rebate management | Not supported yet | Not supported yet | Supported |
 | Trade agreement discount | Supported | No migration | Not support | Not supported yet |
 | Price group | Migrate to attributes | Not supported | Supported |
