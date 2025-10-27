@@ -16,18 +16,18 @@ audience: Application User
 
 This article provides information about what's new or changed in Business performance analytics.  
 
-## Augest 2025
+## August 2025
 
-The Augest release of Business performance analytics version 2.4 and contains the following features.
+The August release of Business performance analytics version 2.4 and contains the following features.
 
 ## Feature enhancements
 
 | Category                    | Title                                                        | Description                                                                                                        |
 |-----------------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
 | Data model additions and changes | Add SalesInvoiceTaxAmount Lines in Sales invoice fact    | Added SalesInvoiceTaxAmount and SalesInvoiceAllocatedTaxAmount to the SalesInvoiceFact.               |
-| Data model additions and changes | Generate PurchaseInvoiceFact purchaseinvoicesource key from VendInvoiceJour and VendInvoiceTrans | PurchaseInvoiceFact bug fix      .                     |
+| Data model additions and changes | Generate PurchaseInvoiceFact purchaseinvoicesource key from VendInvoiceJour and VendInvoiceTrans | PurchaseInvoiceFact bug fix.                     |
 | Data model additions and changes | Remove duplicate primary key in Purchase invoice fact | Address issue where charges that don't have the same currency as the invoice line can lead to duplicate data.        |
-| Data model additions and changes | Change GeneralLedgerFact partition to use createdon instead of accounting date | Adjust PBI partition key which was allowing to duplicates in General ledger fact.   |
+| Data model additions and changes | Change GeneralLedgerFact partition to use created on instead of accounting date | Adjust PBI partition key, which was allowing to duplicates in General ledger fact.   |
 | Data model additions and changes | Fix deleted or canceled Purchase order lines appear in reports| Customers can adjust the report filter to see if the purchase order line has been deleted or not. |
 | Transform changes | Order to cash -  SalesInvoiceFact                          |  Transform performance improvements.                                                                   |
 | Transform changes | Order to cash -  SalesSubledgerFact                        | Transform performance improvements.                                                                   |
@@ -38,9 +38,9 @@ The Augest release of Business performance analytics version 2.4 and contains th
 | Transform changes | Order to cash - ServiceOrderFact                           |  Transform performance improvements.                                                                |
 | Transform changes | Incremental uptake for ReturnAuthorizationFactTransform | Enable incremental sync for returnauthorizationfacttransform. |
 | Transform changes | Implement the gatekeeper flow - check and trigger a new transform | This impacts frequency of data refreshes. |
-| Other changes               | Excel add-in user permission enhancement | Added permission for non-admin users of Business performance analytics Excel add-in.                                                  |
-| Other changes               | Enable cleanup temp Business performance analytics data         | When uninstalling Business performance analytics there's an option to remove data.               |
-| Other changes| Fix issue where report metadata might update during an solution upgrade | Add override customizations call to the package template file to ensure that reports are updated during import. |
+| Other changes               | Excel add-in user permission enhancement | Added permission for nonadmin users of Business performance analytics Excel add-in.                                                  |
+| Other changes               | Enable cleanup temp Business performance analytics data         | When uninstalling Business performance analytics, there's an option to remove data.               |
+| Other changes| Fix issue where report metadata might update during a solution upgrade | Add override customizations call to the package template file to ensure that reports are updated during import. |
 | Other changes      | Copy and adapt the existing Business performance analytics flow  | Customers can have more frequent data refreshes.                                                 |
 | Other changes       | Remove unused columns from the input entities      | Improve reliability to handle issues where there are schema mismatches between the Dataverse and Finance apps.    |
 
@@ -54,7 +54,7 @@ The June release of Business performance analytics version 2.3 and contains the 
 | --- |--- |--- |
 |Data model additions and changes | Detect data changes in the PBI dataset | Enhanced Power BI dataset refresh performance by detecting data changes using commit_timestamp in the facts. |
 |Data model additions and changes| Add SalesInvoiceTaxAmount Lines in Sales invoice fact |Included SalesInvoiceTaxAmount and SalesInvoiceAllocatedTaxAmount in SalesInvoiceFact for completeness. |
-|Data model additions and changes| Wrong field used for calendar filter with regard to SalesOrderFact| Corrected calendar filtering logic in SalesOrderFact to improve data accuracy. |
+|Data model additions and changes| Wrong field used for calendar filter regarding to SalesOrderFact| Corrected calendar filtering logic in SalesOrderFact to improve data accuracy. |
 |Data model additions and changes| Add SellingPartyGroup in the Selling party dimension| Added BuyingPartyGroup to the BuyingPartyDimension to enhance dimensional analysis. |
 |Data model additions and changes| Change BudgetFact partitionId field| Updated BudgetFact to include future dated budget data in incremental refresh. |
 |Data model additions and changes| Update Existing O2C Fact - Sales payment matching|Enhanced O2C fact with updated Sales payment matching logic. |
@@ -71,7 +71,7 @@ The June release of Business performance analytics version 2.3 and contains the 
 |Report changes| Inconsistent or missing metrics folders |Added missing metrics folders to key Facts in Power BI semantic layer. |
 |Report changes| Replace deprecated measures in Business performance analytics reports| Replaced deprecated measures with updated metrics in Microsoft Business performance analytics reports.| 
 |Report changes| Balance sheet report missing editable filter| Enabled editable filter for account type in Balance sheet to support custom category names. |
-|Report changes| Fact - General Ledger.Company Group format issue| Corrected data type of Company group in Fact - General Ledger from currency to whole number. |
+|Report changes| Fact - General ledger - Company group format issue| Corrected data type of Company group in Fact - General Ledger from currency to whole number. |
 |Report changes| Promote Category filter for profit loss report| Promoted account type filter to page/report level in profit and loss report for customization. |
 | Platform optimization  | Automated cleanup of Dataverse temp files | Implemented automated cleanup of temporary files left by Athena ingestion. Only analytical outputs from transforms are retained, reducing Dataverse storage usage and improving refresh performance. |
 
