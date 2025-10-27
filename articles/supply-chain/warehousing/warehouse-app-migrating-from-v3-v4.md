@@ -1,10 +1,10 @@
 ---
-title: Migrate the Warehouse Management mobile app from V3 to V4 (preview)
+title: Migrate the Warehouse Management mobile app from V3 to V4
 description: Learn how to migrate from Warehouse Management mobile application from version 3 (V3) to version 4 (V4). The article includes information about compatibility, requirements, and the timeline.
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 08/21/2025
+ms.date: 10/27/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -13,8 +13,6 @@ ms.search.form:
 # Migrate the Warehouse Management mobile app from V3 to V4
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 In June 2025, Microsoft will begin to [roll out](#rollout) version 4 (V4) of the Warehouse Management mobile app. This version introduces significant improvements and new features to enhance the user experience and the app's performance.
 
@@ -23,10 +21,6 @@ For V4, we rewrote the code of the Warehouse Management mobile app by using more
 - **Enhanced performance** – Improved application responsiveness and stability.
 - **Better customer support capabilities** – Faster issue resolution and customer assistance.
 - **Future-ready architecture** – Streamlined development of new features and integrations.
-
-If you have feedback about a preview version of this app, please submit a post on the [Warehouse Management App group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=44117131264) on Microsoft Viva Engage.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## New features in V4
 
@@ -121,20 +115,16 @@ For on-premises installations of Supply Chain Management, device code authentica
 
 - **Authentication benefits for early adopters** – Each device that you update from V3 to V4 must be reauthenticated after the initial update. However, you won't need to reauthenticate the device again when updating to future versions of V4.
 
-### V4 general availability for Android and Windows
+### V4 general availability
 
-- **Date of availability** – WMA is currently GA for all supported platforms (Microsoft Windows, Google Android) in all supported regions.
+- **Date of availability** – WMA is currently GA for all supported platforms (Microsoft Windows, Google Android, and Apple iOS) in all supported regions.
 
 - **Distribution channels**
-    - **Windows** – [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
-    - **Android** – Google Play (or based on your location, Google Beta Testers) and [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
+    - **Windows** – [Microsoft App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
+    - **Android** – Google Play (or based on your location, Google Beta Testers) and [Microsoft App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
+    - **iOS** – Currently available through [Apple Test Flight](https://testflight.apple.com/). The app is expected to be available on the Apple App Store in January 2026.
 
 - **Concurrent operation** – V3 and V4 can operate simultaneously in the same warehouse environment without conflicts, but we recommend moving to V4 when it becomes generally available.
-
-### V4 general availability for iOS
-
-- **Date of availability**: End of November 2025 (estimated)
- **Distribution channel** – Apple App Store
 
 ### V3 support timeline
 
@@ -144,4 +134,4 @@ For on-premises installations of Supply Chain Management, device code authentica
 
 ### Install Warehouse Management mobile app V4 on Windows
 
-Before you can install the app on Windows, you must install the certificate that is used to sign the app. For instructions, go to [Install Warehouse Management mobile app V4 on Windows (preview)](warehouse-app-install-certificate.md).
+Before you can install the app on Windows, you must install the certificate that is used to sign the app. For instructions, go to [Install Warehouse Management mobile app V4 on Windows](warehouse-app-install-certificate.md).

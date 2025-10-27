@@ -1,23 +1,18 @@
 ---
-title: Install Warehouse Management mobile app V4 on Windows (preview)
+title: Install Warehouse Management mobile app V4 on Windows
 description: Learn how to install Warehouse Management mobile app V4 and its required certificate on Windows.
 author: nsayginer
 ms.author: nsayginer
 ms.topic: how-to
-ms.date: 07/11/2025
+ms.date: 10/27/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Install Warehouse Management mobile app V4 on Windows (preview)
+# Install Warehouse Management mobile app V4 on Windows
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
-
-Warehouse Management mobile app V4 (now in preview) is available for Microsoft Windows, Apple iOS, and Google Android. This article explains how to install the app and its required certificate on Windows.  
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+Warehouse Management mobile app V4 is available for Microsoft Windows, Apple iOS, and Google Android. This article explains how to install the app and its required certificate on Windows.  
 
 ## Download the App
 

@@ -3951,9 +3951,9 @@
           items:
           - name: Install the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
-          - name: Migrate the Warehouse Management mobile app from V3 to V4 (preview)
+          - name: Migrate the Warehouse Management mobile app from V3 to V4
             href: warehousing/warehouse-app-migrating-from-v3-v4.md
-          - name: Install Warehouse Management mobile app V4 on Windows (preview)
+          - name: Install Warehouse Management mobile app V4 on Windows 
             href: warehousing/warehouse-app-install-certificate.md
           - name: Use a QR code to connect the mobile app to Supply Chain Management
             href: warehousing/warehouse-app-qr-code.md
