@@ -92,7 +92,7 @@ Configure your day ranges under **System administration → Security → Securit
 
 For each inactive user, go to **System administration → Users → User** and set **Enabled** to **No**. 
 
-Wait 24 hours and check the license reports ([Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)/[Lifecycle Services](https://lcs.dynamics.com/v2) and User Security Governance) to confirm inactive users are no longer included in "**total users**".
+Wait 24 hours and check the license reports ([Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) / [Lifecycle Services](https://lcs.dynamics.com/v2) and User Security Governance) to confirm inactive users are no longer included in the license reports.
 
 ---
 
