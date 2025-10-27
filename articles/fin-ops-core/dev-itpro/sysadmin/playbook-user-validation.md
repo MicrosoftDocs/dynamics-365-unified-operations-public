@@ -55,7 +55,7 @@ You will verify and, if necessary, upgrade the **Application** and **Platform** 
 You can also ensure that the **User Security Governance** features (including the license usage reports) are enabled in **Feature management**. Once upgraded, you can validate access to the **Security Governance** workspace and its reports. This creates the foundation for the data you can use in subsequent steps.
 
 **How**  
-Use **[Lifecycle Services (LCS)](https://lcs.dynamics.com/v2)** to apply the latest **Proactive Quality Update** across all environments, prioritizing any sandboxes you use for validation and then apply in your production environment. 
+Use **[Lifecycle Services (LCS)](https://lcs.dynamics.com/v2)** to apply the latest **[Proactive Quality Update](https://go.microsoft.com/fwlink/?linkid=2095900)** across all environments, prioritizing any sandboxes you use for validation and then apply in your production environment. 
 
 After the latest **[Proactive Quality Update](https://go.microsoft.com/fwlink/?linkid=2095900)** is applied, sign in to Dynamics 365 finance and operations and go to **System administration → Feature management**, search for "**User security governance**" and "**User security governance license usage summary report**", and enable them.
 
