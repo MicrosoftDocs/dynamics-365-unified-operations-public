@@ -89,7 +89,7 @@ When you migrate from V3 to V4, the following compatibility features are availab
 
 ### Authentication
 
-- **One-time reauthentication** – App users must complete a single authentication process the first time they use the app on each device that is migrated to V4. After a device is successfully migrated, it remains authenticated. No further reauthentication is required.
+- **One-time reauthentication** – App users must complete a single authentication process the first time they use the app on each device that is migrated to V4. After a device is successfully migrated, it remains authenticated. You won't need to reauthenticate the device again when updating to future versions of V4.
 - **Windows platform configuration** – For Windows applications, you must follow these steps to add a new redirect URI to your Azure application registration.
 
     1. Open the [Azure portal](https://portal.azure.com).
@@ -109,11 +109,9 @@ It isn't possible to connect iOS devices to on-premises environments of Supply C
 
 For on-premises installations of Supply Chain Management, device code authentication isn't supported for Android devices; only username/password authentication is available for this platform.
 
-## <a name="rollout"></a>Rollout schedule and transition period support
+## <a name="rollout"></a>Rollout and transition period support
 
-- **Concurrent operation** – During the transition period, V3 and V4 can operate simultaneously in the same warehouse environment without conflicts provided they're installed on separate devices. This allows for a phased rollout of V4 without disrupting ongoing operations. However, V3 and V4 can't be installed on the same device at the same time. We recommend that you roll out the new version gradually rather than installing it on all devices at once.
-
-- **Authentication benefits for early adopters** – Each device that you update from V3 to V4 must be reauthenticated after the initial update. However, you won't need to reauthenticate the device again when updating to future versions of V4.
+During the transition period, V3 and V4 can operate simultaneously in the same warehouse environment without conflicts provided they're installed on separate devices. This allows for a phased rollout of V4 without disrupting ongoing operations. However, V3 and V4 can't be installed on the same device at the same time. We recommend that you roll out the new version gradually rather than installing it on all devices at once.
 
 ### V4 general availability
 
