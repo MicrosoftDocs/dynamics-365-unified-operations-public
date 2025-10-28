@@ -19,10 +19,10 @@ The article explains how to configure form controls so that the default producti
 
 ## Forms and dialogs
 
-All styles are automatically applied to any forms and dialogs launched from production floor execution. Standard elements—such as backgrounds, font colors, grids, tabs, labels, checkboxes, and similar components—will follow production floor execution styling. For custom styles, controls within the dialog must be configured as outlined in the referenced article.
+All styles are automatically applied to any forms and dialogs launched from the production floor execution interface. Standard elements (such as backgrounds, font colors, grids, tabs, labels, checkboxes, and similar components) follow production floor execution styling. For custom styles, controls within the dialog must be configured as outlined in the referenced article. <!-- Which article are you referring to? Can we link to it here? -->
 
 > [!IMPORTANT]
-> The features mentioned in the first two bullet points of this list require Supply Chain Management version 10.0.46 or later.
+> The features mentioned in the first two bullet points of this list require Supply Chain Management version 10.0.46 or later. <!-- Which bullets do we mean? Can we move this note closer to them? -->
 
 ### Dialog buttons
 

@@ -147,8 +147,7 @@ This section shows how to add date and time controls to a form or dialog. The to
 
 The following procedure shows an example of how to add date and time controls to a form.
 
-1. To add date and time controls, use a standard Form Part. Add a Form Part to the form. In the initialize method of the Form Part, set the target name to either: JmgProductionFloorExecutionDateControl (for the date control), or
-JmgProductionFloorExecutionTimeControl (for the time control).
+1. To add date and time controls, use a standard form part. Add a form part to the form. In the initialize method of the form part, set the target name to `JmgProductionFloorExecutionDateControl` (for the date control) or `JmgProductionFloorExecutionTimeControl` (for the time control).
 
     ```xpp
     public void initialize()
