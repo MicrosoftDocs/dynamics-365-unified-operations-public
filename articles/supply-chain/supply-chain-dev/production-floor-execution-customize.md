@@ -251,8 +251,7 @@ If you need to run a query to refresh or update the data on the main form after 
  parentForm.parmChangeEvent().raiseEvent();
  ```
 
- Where parentForm is JmgProductionFloorExecution form.
-
+ Where `parentForm` is `JmgProductionFloorExecution` form.
 
 ## Related information
 
