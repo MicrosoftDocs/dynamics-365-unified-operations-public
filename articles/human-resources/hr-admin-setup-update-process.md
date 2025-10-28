@@ -67,7 +67,7 @@ You can find out what's in the works for Human Resources and what we've released
 
 - [Human Resources blog](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
-- [Human Resources community on Microsoft Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=10542230)
+- [Dynamics 365 Human Resources](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxMjIxMjIxNiJ9) community on Microsoft Viva Engage
 
 ## Preview features in a sandbox environment
 
