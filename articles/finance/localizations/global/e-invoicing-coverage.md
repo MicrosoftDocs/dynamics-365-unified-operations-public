@@ -36,7 +36,7 @@ The next section contains detailed information about out-of-box e-invoicing func
 > [!NOTE]
 > Delivery timelines for planned implementations that are mentioned in the following table might change. In addition, projected functionality might not be released at all, for various reasons. For more information, see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332).
 
-| Country or region | Description | Availability |
+| Country/region | Description | Availability |
 |---|---|---|
 | Argentina | Generation of electronic documents in the predefined XML formats and direct submission through WebServices to the Argentinian Tax Authority (ARCA). | Planned for 2026 release wave 1 or later |
 | Australia | <p>Generation of electronic invoices for sales and project invoices and credit notes in the Australian extension of the **PEPPOL** format.</p><p>Learn more: [Electronic invoicing for Australia](../apac/gs-apac-aus-nzl-electronic-invoices.md)</p> | Available |
