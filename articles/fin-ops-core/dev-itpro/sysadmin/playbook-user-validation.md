@@ -111,7 +111,7 @@ Knowing these nuances ensures that your security design aligns with the lowest c
 #### What 
 You review the current [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) to understand **entitlements, Base vs. Attach requirements, and product‑specific requirements**. Specifically, you identify what each license type covers at a functional level (for example, which processes in Finance vs. Supply Chain Management) and where overlaps occur.
 
-You capture a simple mapping between your **key business personas** and their **intended license types** based on responsibilities. Pay special attention to custom roles that might aggregate privileges across product boundaries, as these commonly lead to attach license needs. Align your understanding with your stakeholders/partner to ensure aligned definitions when needing to explain the requirements for other license purchases.
+You capture a simple mapping between your **key business personas** and their **intended license types** based on responsibilities. Pay special attention to custom roles that might aggregate privileges across product boundaries, as these roles commonly lead to attach license needs. Align your understanding with your stakeholders/partner to ensure aligned definitions when needing to explain the requirements for other license purchases.
 
 #### How  
 Read the latest [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [**Dynamics 365 Licensing Deck**](https://go.microsoft.com/fwlink/?linkid=2279233). Create an internal reference mapping **standard roles** (and your top 30–50 custom personas) to intended licenses.
@@ -127,18 +127,18 @@ Keep the reference current as your roles evolve.
  :::image type="content" source="media/playbook-step-4-review-user-role-and-license-mapping.png" alt-text="Review User Role Requirements" lightbox="media/playbook-step-4-review-user-role-and-license-mapping.png":::
 
 #### Why 
-A high‑level license view across environments highlights **where available seats don't meet required seats**. For example, too few Finance seats for the number of users needing Finance. This step is the fastest way to quantify **how many** of each license type you need to assign or acquire, and to identify users who lack any assigned license.
+A high‑level license view across environments highlights **where available licenses don't meet required licenses**. For example, too few Finance licenses for the number of users needing Finance. This step is the fastest way to quantify **how many** of each license type you need to assign or acquire, and to identify users who lack any assigned license.
 
-It provides a **cross‑tenant picture** that complements the granular privilege analysis inside system administration for finance and operations apps. By spotting shortfalls early, you can avoid last‑minute purchases, approval bottlenecks, and potential user impact when per-user license validation begins.
+It provides a **cross‑tenant picture** that complements the granular privilege analysis inside system administration for finance and operations apps. By spotting shortfalls early, you can avoid last‑minute purchases, approval bottlenecks, and potential issues for your user when per-user license validation begins.
 
 You can also discover misallocations (for example, licenses assigned to users who no longer need them) that you can reallocate to close gaps.
 
 #### What  
-Use the [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) "User License Consumption" reports for finance and operations apps to compare **Required vs. Purchased vs. Assigned** seats by product.
+Use the [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) "User License Consumption" reports for finance and operations apps to compare **Required vs. Purchased vs. Assigned** licenses by product.
 
 The report shows **Total users requiring a license**, **base licenses** assigned/available, and **attach licenses** assigned/available per product (Finance, Supply Chain Management, Commerce, HR, Project Ops, Team Members, Operations – Activity).
 
-You can drill down into **"Users with unassigned licenses"** to see exactly who is missing seats and which license the user requires. You can also use [**Lifecycle services**](https://lcs.dynamics.com/v2) to cross‑check production counts and export the same CSV data if [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) access isn't available.
+You can drill down into **"Users with unassigned licenses"** to see exactly who is missing licenses and which license the user requires. You can also use [**Lifecycle services**](https://lcs.dynamics.com/v2) to cross‑check production counts and export the same CSV data if [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) access isn't available.
 
 Exporting to CSV can support deeper analysis, filtering, and sharing with stakeholders.
 
@@ -176,7 +176,7 @@ Keep this license gap analysis handy—you resolve it via role cleanup (**Step 4
 #### Why 
 User Security Governance provides a **telemetry‑driven, privilege‑level** view of why a user needs a license. With this view, you can remove **unnecessary entitlements** and minimize costs. It shows which **roles/duties/privileges** cause a user to escalate from Team Member to a full app license (or to need multiple apps), so you can focus on targeted remediation.
 
-This inside‑the‑app validation complements [**Power Platform admin center's**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) top‑down counts by confirming the **root causes** of license requirements. Without this step, you risk assigning or purchasing licenses you could have avoided by right‑sizing roles. It's invaluable for audit and documentation, showing **exactly** how your security design maps to licensing requirements.
+This inside‑the‑app validation complements [**Power Platform admin center's**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) top‑down counts by confirming the **root causes** of license requirements. Without this step, you risk assigning or purchasing licenses you might avoid by right‑sizing roles. It's invaluable for audit and documentation, showing **exactly** how your security design maps to licensing requirements.
 
 **What**  
 Use **License usage summary** in **User Security Governance** to analyze users by **role license** and drill into the **Role → Duty → Privilege** chain. You can focus on items labeled **Entitled** (covered), **Not Entitled** (requires higher/different license), and **Not Required** (action or privilege inherited in system user, not included in license computation).
@@ -217,7 +217,7 @@ Recalculate or refresh the report and verify that the user now aligns to the int
 #### Why 
 When license validation begins, **users without the assigned required licenses can't sign in to Dynamics 365 finance and operations production environments**. Assigning the right **Base and Attach** licenses in advance prevents business disruption, especially in period‑end finance, warehousing, and order processing.
 
-Relying on "available seats" without explicit assignment is insufficient—you must **assign licenses to each user** for recognition. Timely assignments also reduce support load from end‑user warnings and avoid emergency escalations to procurement or IT. Completing assignments after **Step 4** ensures you don't purchase licenses that better role hygiene could have avoided.
+Relying on "available licenses" without explicit assignment is insufficient—you must **assign licenses to each user** for recognition. Timely assignments also reduce support load from end‑user warnings and avoid emergency escalations to procurement or IT. Completing assignments after **Step 4** ensures you don't purchase licenses that better role hygiene might avoid.
 
 #### What
 Assign the appropriate **Dynamics 365 Finance**, **Supply Chain Management**, **Commerce**, **Human Resources**, **Project Operations**, **Team Members**, or **Operations – Activity** licenses to each user per the Power Platform admin center and User Security Governance findings. For users spanning multiple apps, assign a **Base** license (highest‑value app) and then the necessary **Attach** licenses.
@@ -234,13 +234,13 @@ After assignment, wait 24 hours, and check Power Platform admin center/User Secu
 ## Step 7: Plan for more licensing (reservations / purchases)
 
 #### Why
-If the [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) shows that the required seats exceed the purchased seats, you need to **acquire or reserve** extra licenses to prevent users from being unable to access Dynamics 365 finance and operations apps. **License Reservations** (for Enterprise Agreement customers) let you **commit now** so seats are available immediately while billing flows through your next **True‑Up**. Planning ahead avoids last‑minute approvals, procurement delays, and operational risk as validation approaches. It also enables better budgeting by smoothing costs and documenting the business rationale for more spend. Proactive planning is important for large role changes, mergers, or new rollouts.
+If the [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) shows that the required licenses exceed the purchased licenses, you need to **acquire or reserve** extra licenses to prevent users from being unable to access Dynamics 365 finance and operations apps. **License Reservations** (for Enterprise Agreement customers) let you **commit now** so licenses are available immediately while billing flows through your next **True‑Up**. Planning ahead avoids last‑minute approvals, procurement delays, and operational risk as validation approaches. It also enables better budgeting by smoothing costs and documenting the business rationale for more spend. Proactive planning is important for large role changes, mergers, or new rollouts.
 
 #### What
-You determine the **delta** between required, assigned, and available seats for each product (for example, +9 Finance Base, +3 Supply Chain Management Attach). Based on your agreement type, you can either place **License Reservations** or **purchase additional licenses** through Cloud Solution Provider or Enterprise Agreement channels. You can document the **usage date** for reservations, acknowledging financial commitment at your next order cycle. You can also coordinate with your Microsoft seller or partner on any special pricing or prerequisites. Finally, you can include a small buffer (3-10%) for user growth and onboarding to reduce repeated transactions.
+You determine the **delta** between required, assigned, and available licenses for each product (for example, +9 Finance Base, +3 Supply Chain Management Attach). Based on your agreement type, you can either place **License Reservations** or **purchase additional licenses** through Cloud Solution Provider or Enterprise Agreement channels. You can document the **usage date** for reservations, acknowledging financial commitment at your next order cycle. You can also coordinate with your Microsoft seller or partner on any special pricing or prerequisites. Finally, you can include a small buffer (3-10%) for user growth and onboarding to reduce repeated transactions.
 
 #### How 
-For Enterprise Agreement customers, in **Microsoft 365 Admin Center** go to **Billing → Your products → Volume licensing → Make reservations**, select the appropriate **Enterprise Agreement contract**, set a **Usage date** (up to six months ahead), and add the required services and quantities. Confirm and place the reservation (note the 72‑hour cancellation window). For Cloud Solution Provider or non‑Enterprise Agreement, work with your partner or purchase licenses directly so they appear in the Admin Center for assignment. After new seats are visible, complete the user assignments (**Step 5**) and validate in Power Platform admin center that shortages are resolved. Update your internal licensing tracker with reservations, purchases, quantities, and renewal or true‑up notes.
+For Enterprise Agreement customers, in **Microsoft 365 Admin Center** go to **Billing → Your products → Volume licensing → Make reservations**, select the appropriate **Enterprise Agreement contract**, set a **Usage date** (up to six months ahead), and add the required services and quantities. Confirm and place the reservation (note the 72‑hour cancellation window). For Cloud Solution Provider or non‑Enterprise Agreement, work with your partner or purchase licenses directly so they appear in the Admin Center for assignment. After new licenses are visible, complete the user assignments (**Step 5**) and validate in Power Platform admin center that shortages are resolved. Update your internal licensing tracker with reservations, purchases, quantities, and renewal or true‑up notes.
 
 ## Summary checklist
 
@@ -266,9 +266,9 @@ Use the **User Security Governance License Usage Summary** to see roles, duties,
 
 #### Can I renew or purchase licenses in advance?
 
-Yes. **Enterprise Agreement License Reservations** let you commit seats ahead of your true‑up so you can assign them now. Cloud Solution Provider and other channels also allow on‑demand purchases.
+Yes. **Enterprise Agreement License Reservations** let you commit licenses ahead of your true‑up so you can assign them now. Cloud Solution Provider and other channels also allow on‑demand purchases.
 
-#### Will sandbox environments be included?
+#### Are sandbox environments be included?
 
 Per user license validation only applies to production access.
 
