@@ -80,17 +80,9 @@ The integration follows the complete sequence of changes. In the example, the cu
 Each pair of linked environments (finance and operations environment and Dataverse environment) should be treated as a single unit and refreshed accordingly. For example, if you're refreshing a sandbox from production, both the finance and operations sandbox environment and the Dataverse sandbox environment should be refreshed from their production counterparts. If dual-write is already used in target environments, those environments must be unlinked. After the data refresh in target environments, the following tables should be cleaned up:
 
 + Finance and operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectFieldConfiguration**, and **BusinessEventsDefinition**. 
-+ Dataverse tables: **DualwriteRuntimeConfiguration**. 
++ Dataverse tables: **DualwriteRuntimeConfiguration**.
 
 The environments must be relinked and the maps reactivated manually.
-
-### I need real-time integration, and I want to move some tables or scenarios from Data integrator to dual-write. How do I migrate, and what are the implications of changing my integration pattern?
-
-For information about how to migrate Prospect to cash to dual-write, see [Migrating data from Data Integrator to Dual Write](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/433337729024). In general, three things might change during migration:
-
-+ Manual migration of the maps from Data integrator to dual-write
-+ Table changes, because of the absence of advanced query capabilities
-+ Data migration, because of adaptation to new concepts such as company striping
 
 ### On finance and operations data tables, can I develop unbounded columns that flow to Dataverse by using dual-write?
 

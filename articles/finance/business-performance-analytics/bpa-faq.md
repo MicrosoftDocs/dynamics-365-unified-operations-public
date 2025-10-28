@@ -148,5 +148,4 @@ This approach ensures Business performance analytics remains adaptable to your b
 ## Support and news
 ### How do I receive the latest news about Business performance analytics?
 
-To receive the latest updates about Business performance analytics, join the Business performance analytics Viva Engage group.
-Join the [Business performance analytics Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=73748324352&view=unviewed).
+To receive the latest updates about Business performance analytics, join the [Business performance analytics](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc3NDU0NTUxMDQifQ) community on Microsoft Viva Engage.
