@@ -57,7 +57,7 @@ This tutorial uses the following technologies:
 Before you begin the exercise in this tutorial, you must have the following items:
 
 - A Human Resources environment that has admin-level permissions in the environment
-- An [Azure subscription](https://azure.microsoft.com/free/) to host the logic app
+- An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) to host the logic app
 
 ## The exercise
 
