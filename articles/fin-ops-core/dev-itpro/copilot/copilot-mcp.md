@@ -17,14 +17,13 @@ ms.search.region: Global
 
 [!include [banner](../includes/banner.md)]
 
-The [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol) is an open standard that facilitates the connection of AI agents to various data systems to enhance the relevance of agent responses. MCP standardizes how applications provide context to large language models (LLMs). Because it enables seamless integration between LLM applications and external data sources, the protocol is useful for building AI-powered tools and workflows.
-
-The **Microsoft Dynamics 365 ERP MCP** server is now available. This server exposes tools for Dynamics 365 finance and operations apps to agent platforms that support MCP. Standardization on the common protocol enables the following capabilities:
+The [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol) is an open standard that facilitates the connection of AI agents to various data systems to enhance the relevance of agent responses. MCP standardizes how applications provide context to large language models (LLMs). Because it enables seamless integration between LLM applications and external data sources, the protocol is useful for building AI-powered tools and workflows. MCP defines a common language for how agents and applications interact with enterprise data and business logic. Instead of relying on custom APIs or pont-to-point integrations, MCP provides a unified framework that standardizes access to ERP operations, ensuring consistency, context, and control. Standardization on the common protocol enables:
 
 - Agent access to data and business logic in multiple apps
 - Reuse of agents across enterprise resource planning (ERP) systems
 - Access to tools in finance and operations apps from any compatible agent platform
 - A simplified agent development experience
+- Consistent data access, permissions, and auditability across all agent integrations
 
 ## Prerequisites
 
