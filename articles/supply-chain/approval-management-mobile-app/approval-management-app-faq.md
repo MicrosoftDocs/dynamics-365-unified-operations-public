@@ -47,7 +47,7 @@ Yes, the Approvals Management mobile app is available in all the same languages 
 
 ## Where can I go to discuss the mobile app with the community and submit suggestions to Microsoft?
 
-The [Dynamics 365 Procurement and Sourcing group on Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=69010219008&view=all) is a great place to go if you want to exchange tips, ask questions, or submit suggestions for improvement. Viva Engage group participants include Microsoft partners, customers, experts, and employees.
+The [D365 Procurement and Sourcing](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc3NDcyOTAxMTIifQ) community on Microsoft Viva Engage is a great place to go if you want to exchange tips, ask questions, or submit suggestions for improvement. Viva Engage community participants include Microsoft partners, customers, experts, and employees.
 
 ## I receive the following error: "Error when trying to retrieve data from the network." How can I diagnose the issue?
 

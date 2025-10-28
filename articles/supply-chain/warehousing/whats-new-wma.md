@@ -50,7 +50,7 @@ These versions of the Warehouse Management mobile app are general availability (
 
 These versions of the Warehouse Management mobile app for Microsoft Windows and Apple iOS are preview releases in all regions. They're also preview releases for Android devices in some regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
 
-If you have feedback about a preview version of this app, please submit a post on the [Warehouse Management App group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=44117131264) on Microsoft Viva Engage.
+If you have feedback about a preview version of this app, please submit a post on the [Warehouse Management App](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc4MjczMDEzNzYifQ) community on Microsoft Viva Engage.
 
 ### What's new in version 4.0.23.0
 
@@ -175,7 +175,7 @@ Version 4 introduces many new features and improvements that enhance your wareho
 
 These versions of the Warehouse Management mobile app are preview releases. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
 
-If you have feedback about a preview version of this app, please submit a post on the [Warehouse Management App group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=44117131264) on Microsoft Viva Engage.
+If you have feedback about a preview version of this app, please submit a post on the [Warehouse Management App](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc4MjczMDEzNzYifQ) community on Microsoft Viva Engage.
 
 ### What's new in version 4.0.8.0
 
