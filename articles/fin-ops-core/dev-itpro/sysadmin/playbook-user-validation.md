@@ -239,7 +239,7 @@ If you find misassigned licenses (for example, a full license on a read‑only u
 **How**  
 In the **[Microsoft 365 admin center](https://admin.microsoft.com)**, go to **Users → Active users → [Select user] → Licenses and apps**, then assign the required licenses. Follow Base‑then‑Attach sequencing: for example, give **Dynamics 365 Finance** first, then **Dynamics 365 Supply Chain Management Attach to Qualifying Dynamics 365 Base Offer (Attach)** if the user needs both.
 
-Where supported, you can deep‑link from Power Platform admin center user records to the admin center to speed assignments.
+Where supported, you can deep‑link from [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) user records to the **[Microsoft 365 admin center](https://admin.microsoft.com)** to speed assignments.
 
 After assignment, wait 24 hours, and check Power Platform admin center/User Security Governance reports to confirm the user no longer appears in the "Total users requiring license" category. Keep a change log (user, license, date) to support audits and renewal planning.
 
@@ -248,7 +248,7 @@ After assignment, wait 24 hours, and check Power Platform admin center/User Secu
 ## Step 7: Plan for more licensing (reservations / purchases)
 
 **Why**  
-If the Power Platform admin center shows that the required seats exceed the purchased seats, you need to **acquire or reserve** extra licenses to prevent users from being unable to access Dynamics 365 finance and operations apps. **License Reservations** (for Enterprise Agreement customers) let you **commit now** so seats are available immediately while billing flows through your next **True‑Up**. Planning ahead avoids last‑minute approvals, procurement delays, and operational risk as validation approaches. It also enables better budgeting by smoothing costs and documenting the business rationale for more spend. Proactive planning is important for large role changes, mergers, or new rollouts.
+If the [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) shows that the required seats exceed the purchased seats, you need to **acquire or reserve** extra licenses to prevent users from being unable to access Dynamics 365 finance and operations apps. **License Reservations** (for Enterprise Agreement customers) let you **commit now** so seats are available immediately while billing flows through your next **True‑Up**. Planning ahead avoids last‑minute approvals, procurement delays, and operational risk as validation approaches. It also enables better budgeting by smoothing costs and documenting the business rationale for more spend. Proactive planning is important for large role changes, mergers, or new rollouts.
 
 **What**  
 You determine the **delta** between required, assigned, and available seats for each product (for example, +9 Finance Base, +3 Supply Chain Management Attach). Based on your agreement type, you can either place **License Reservations** or **purchase additional licenses** through Cloud Solution Provider or Enterprise Agreement channels. You can document the **usage date** for reservations, acknowledging financial commitment at your next order cycle. You can also coordinate with your Microsoft seller or partner on any special pricing or prerequisites. Finally, you can include a small buffer (3-10%) for user growth and onboarding to reduce repeated transactions.
