@@ -47,20 +47,28 @@ You can view available and assigned licenses under **Licenses** in the Microsoft
 
 The **Assign roles to user** dialog box that's opened from the **System Administration** \> **Security** \> **Users** page can help you understand the impact on user licensing when roles are assigned. You can also use it to get an overview of the licensing requirements for each role. You can use the dialog box itself or export data to Excel for further analysis. Custom roles can require licenses for more than one application.
 
-If a role has unexpected licensing requirements, you can use the **View permissions** page to understand what security resources and grants are driving the requirements.
+If a role has unexpected licensing requirements, you can use the **User Security Governance** workspace to understand what security roles and respective permissions are driving the requirements.
 
-## Licensing requirements on the View permissions page
+## Licensing requirements using User Security Governance
 
-During security configuration on the **Configure security** page, you can select the following items:
+Use the **User license summary** page in the **User security governance** to understand how security roles and respective permissions define the license requirements across their Dynamics 365 finance and operations environment.
 
-- Any security object
-- A role
-- A duty
-- Permissions
+:::image type="content" source="media/security-governance-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="media/security-governance-license-usage-summary-overview.png":::
+
+To access the **User License Summary** page, follow these steps:
+
+1. Sign in to Dynamics 365 finance and operations.
+2. Go to **System administration > Security > Security Governance > License usage summary**.
+
+The User security governance license usage summary page provides a layered view of:
+- How system permissions are exercised
+- How responsibilities map to different role types
+
+These details enable deeper visibility into user access patterns and ensure that roles align with intended responsibilities.
 
 ## Users per role
 
-You can use the **Role to user assignment** report or the **Assign users to role** page to view all users who are assigned a specific role.
+You can use the **System Administration** \> **Security** \> **Assign users to role** page to view all users who are assigned a specific role.
 
 ![Assign users to role page.](media/Assign-users-to-roles.png)
 
