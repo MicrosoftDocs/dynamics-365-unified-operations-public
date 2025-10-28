@@ -36,7 +36,7 @@ Confirm these prerequisites:
 - ✅ **Enable [User Security Governance reports](https://go.microsoft.com/fwlink/?linkid=2319108)** in Feature management
 - ✅ **Review [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)**
 
-## Step 1: Upgrade to the Latest Quality Update (10.0.45)
+## Step 1: Upgrade to the Latest Quality Update (CY25Q4: 10.0.45)
 
  :::image type="content" source="media/playbook-step-1-upgrade-latest-quality-update.png" alt-text="Upgrade to the latest Product Quality Update" lightbox="media/playbook-step-1-upgrade-latest-quality-update.png":::
 
