@@ -13,7 +13,7 @@ ms.collection:
 ms.search.region: Global
 ---
 
-# Use Model Context Protocol for finance and operations apps
+# Use Model Context Protocol for finance and operations apps (preview)
 
 [!include [banner](../includes/banner.md)]
 
@@ -27,11 +27,12 @@ The [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-
 
 ## Prerequisites
 
-Before you can use the Dynamics 365 ERP MCP server, the following prerequisites must be met:
+Before you can use the Dynamics 365 ERP MCP (Preview) server, the following prerequisites must be met:
 
-- The product version of finance and operations apps must be at least **10.0.2263.17**.
-- The version of the **Copilot in Microsoft Dynamics 365 Finance** solution must be at least **1.0.3049.1**.
-- The version of the **Copilot in Microsoft Dynamics 365 Supply Chain Management** solution must be at least **1.1.03046.2**.
+- The product version of finance and operations apps must be at least **10.0.2428.15**.
+- The **(Preview) Dynamics 365 ERP Model Context Protocol server** feature must be enabled in [Feature Management](../../fin-ops/get-started/feature-management/feature-management-overview.md)
+
+> [!NOTE] An earlier version of the MCP server, known as the "static Dynamics 365 ERP MCP" server, is also available in public preview. This server, built on the Dataverse connector framework, has 13 tools enabling specific business functions for Dynamics 365 Finance and Supply Chain Management. This static server will be **retired in the 2026 calendar year**. The server is still available in finance and operations apps environments with version 10.0.2263.17 and greater. However, it is recommended that you use the new dynamic Dynamics 365 ERP MCP server that is the subject of this documentation to avoid disruption when the static server is retired.
 
 ## Use the Dynamics 365 ERP MCP server in Copilot Studio
 
