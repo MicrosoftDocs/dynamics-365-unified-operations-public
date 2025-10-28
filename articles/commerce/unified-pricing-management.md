@@ -31,19 +31,23 @@ The following table describes whether or not various rules are supported for pri
 |----------|-----------------------------|--------------------------|----------------------------|
 | Trade agreement price | Supported | Can also migrate | Supported |
 | Discount | Migrate | Not supported | Supported |
-| Shipping discount | Not supported yet | Not supported | Supported |
-| Tender discount | Not supported yet | Not supported | Not supported yet |
+| Shipping discount | Not supported  | Not supported | Supported |
+| Tender discount | Not supported | Not supported | Not supported |
 | Charges | Supported | No migration (migrating existing charges rules is planned) | Supported |
-| Rebate management | Not supported yet | Not supported yet | Supported |
-| Trade agreement discount | Supported | No migration | Not supported | Not supported yet |
+| Rebate management | Not supported | Not supported yet | Supported |
+| Trade agreement discount | Supported | No migration | Not supported |
 | Price group | Migrate to attributes | Not supported | Supported |
-| Price adjustments | Migration isn't supported until Commerce version 10.0.47. | Not supported | Supported |
+| Price adjustments | Migration isn't supported. | Not supported | Supported |
+
+## Prerequisites
+
+Before you can use unified pricing management, you must  be using version 10.0.46.
 
 ## Migration process
 
 To migrate to UPM, follow these steps.
 
-1. In Dynamics 365 Commerce headquarters, go to the **Feature Management** workspace at **System administration** \> **Workspaces** \> **Feature management**.
+1. In Dynamics 365 Commerce headquarters, go to the **Feature Management** workspace at **System administration \> Workspaces \> Feature management**.
 1. Search for the **Unified pricing management pricing rule performance and enhancement** feature.
 1. Select the feature, and then select **Enable**.
 
@@ -67,7 +71,5 @@ To migrate to UPM, follow these steps.
 1. Select **X** to start the migration.
 
 When the migration completes, your data and configurations are successfully migrated to UPM, providing a foundation for future enhancements to flexible pricing strategy.
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
