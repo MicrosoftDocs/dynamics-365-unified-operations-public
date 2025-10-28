@@ -2,7 +2,7 @@
 title: Supported electronic invoicing countries and regions
 description: This article describes for which countries and regions electronic invoicing is supported or planned in Microsoft Dynamics 365 Finance.
 author: ilikond
-ms.date: 09/22/2025
+ms.date: 10/28/2025
 ms.topic: article
 ms.custom: 
   - bap-template
@@ -75,7 +75,7 @@ The next section contains detailed information about out-of-box e-invoicing func
 | Spain | Generation of electronic invoices for sales and project invoices and credit notes in the **FacturaE** format. | <ul><li>Available</li><li>B2B mandate is expected in 2027</li></ul> |
 | Spain | <p>Generation and submission to the governmental SII system of required data in the country-specific format.</p><p>Learn more: [Immediate Supply of Information on VAT (SII)](../spain/emea-esp-sii.md)</p> | Available |
 | Türkiye | Generation of e-invoices for customer invoices in the format mandated by Turkish Revenue Administration to meet e-invoicing obligations. | Available in Public preview. General availability is planned for 2025 release wave 2 |
-| United Arab Emirates | Generation of electronic invoices in the Peppol International (PINT) format and submission to the PEPPOL Delivery Network via the "last mile" 3rd party connection to Edicom. | To be enforced by 01 July 2026. Planned for 2025 release wave 2. |
+| United Arab Emirates | Generation of electronic invoices in the Peppol International (PINT) format and submission to the PEPPOL Delivery Network via the "last mile" 3rd party connection to Edicom. | To be enforced by 01 July 2026. Planned for 2026 release wave 1. |
 | Uruguay | <p>Generation of electronic fiscal receipts (CFE) based on the XML standard, with a syntax defined and maintained by the DGI. Submission to the Uruguayan Tax Authority (DGI) via a third-party "last mile" connection to Edicom.</p><p>Learn more: [Electronic invoicing for Uruguay](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md)</p> | Available |
 | PEPPOL| <p>Generation of electronic invoices for sales and project invoices and credit notes in the **PEPPOL** format. This country/region-independent functionality can be used "as is" if no country/region-specific amendments are supposed, or it can be used as the basis for further modifications.</p><p>Learn more:</p><ul><li>[Export of customers electronic invoices in PEPPOL BIS 3 format](https://support.microsoft.com/topic/an-update-for-european-union-to-support-export-of-customers-electronic-invoices-in-peppol-bis-3-format-for-microsoft-dynamics-365-814d09db-dae7-6c5e-034c-797687078bac)</li><li>[Import vendor electronic invoices in PEPPOL format](../europe/emea-peppol-import.md)</li></ul> | Available |
 
