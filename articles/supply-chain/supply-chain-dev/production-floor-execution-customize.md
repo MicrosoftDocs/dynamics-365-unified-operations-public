@@ -244,6 +244,17 @@ JmgProductionFloorExecutionTimeControl (for the time control).
     }
     ```
 
+## Execute a query on the main form
+
+If you need to run a query to refresh or update the data on the main form after a specific action, use the following approach:
+
+ ```xpp
+ parentForm.parmChangeEvent().raiseEvent();
+ ```
+
+ Where parentForm is JmgProductionFloorExecution form.
+
+
 ## Related information
 
 - [Style the production floor execution interface](../production-control/production-floor-execution-styles.md)
