@@ -70,7 +70,7 @@ These details enable deeper visibility into user access patterns and ensure that
 
 You can use the **System Administration** \> **Security** \> **Assign users to role** page to view all users who are assigned a specific role.
 
-![Assign users to role page.](media/Assign-users-to-roles.png)
+![Assign users to role page.](../../fin-ops/sysadmin/media/Assign-users-to-roles.png)
 
 ## Enabled users
 
