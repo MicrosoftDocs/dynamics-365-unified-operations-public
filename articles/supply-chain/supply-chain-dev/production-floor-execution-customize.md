@@ -147,6 +147,27 @@ This section shows how to add date and time controls to a form or dialog. The to
 
 The following procedure shows an example of how to add date and time controls to a form.
 
+1. To add date and time controls, use a standard Form Part. Add a Form Part to the form. In the initialize method of the Form Part, set the target name to either: JmgProductionFloorExecutionDateControl (for the date control), or
+JmgProductionFloorExecutionTimeControl (for the time control).
+
+    ```xpp
+    public void initialize()
+    {
+        super();
+
+        this.targetName(menuItemDisplayStr(JmgProductionFloorExecutionDateControl));
+    }
+    ```
+
+    ```xpp
+    public void initialize()
+    {
+        super();
+
+        this.targetName(menuItemDisplayStr(JmgProductionFloorExecutionTimeControl));
+    }
+    ```
+
 1. Add a controller to the form for each date and time control that the form should contain. (The number of controllers must equal the number of date and time controls in the form.)
 
     ```xpp
@@ -205,6 +226,21 @@ The following procedure shows an example of how to add date and time controls to
         dateFromController.parmDateTimeValue(fromDateTime);
     
         DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, null);
+    }
+    ```
+
+1. Remember to unsubscribe from events when the form is closed.
+
+     ```xpp
+    public void close()
+    {
+        DateFromFormPart.getPartFormRun().close();
+        TimeFromFormPart.getPartFormRun().close();
+
+        dateFromController.setDateControlValueToCallerFormDelegate -= eventhandler(this.setFromDateTime);
+        timeFromController.setDateControlValueToCallerFormDelegate -= eventhandler(this.setFromDateTime);
+
+        super();
     }
     ```
 

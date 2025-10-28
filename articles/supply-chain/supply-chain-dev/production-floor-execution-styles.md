@@ -19,15 +19,12 @@ The article explains how to configure form controls so that the default producti
 
 ## Forms and dialogs
 
-Styles can be applied to a form or dialog only if the following requirements are met:
-
-- If the form should resemble the existing report progress form, the name of your form or dialog must start with `JmgProductionFloorExecutionCustomInputDialog`.
-- The form or dialog can contain a detail form part. To apply styles to it, the name of the detail form part must start with `JmgProductionFloorExecutionCustomDetailsDialog`.
-- If the form or dialog should have a simple view, then the name of the simple view must start with `JmgProductionFloorExecutionCustomDialog`. Examples of forms that have a simple view include the start form and the indirect activity form.
-- All the controls in the dialog must be configured as described in this article.
+All styles are automatically applied to any forms and dialogs launched from production floor execution. Standard elements—such as backgrounds, font colors, grids, tabs, labels, checkboxes, and similar components—will follow production floor execution styling. For custom styles, controls within the dialog must be configured as outlined in the referenced article.
 
 > [!IMPORTANT]
-> The features mentioned in the first two bullet points of this list require Supply Chain Management version 10.0.19 or later.
+> The features mentioned in the first two bullet points of this list require Supply Chain Management version 10.0.46 or later.
+
+### Dialog buttons
 
 Styles can be applied to the **OK** button in a dialog only if the following requirements are met:
 
@@ -324,7 +321,7 @@ To align elements in the center of a tab, the group name must start with `TabCon
 
 To arrange a customized grid, detail part, and quick filter so that they resemble the standard design, keep the following points in mind when you put them all together:
 
-- If the grid has a quick filter, both the grid and the quick filter should be inside the group that has a name that starts with `GridGroup`.
+- If the grid has a quick filter, both the grid and the quick filter should be inside the group that has a name that starts with `GridGroup` or `GridGroupWithPadding`.
 - To apply styles to a detail part, the group name must start with `DetailInformationGroup`,
 
 The following illustration shows a typical grid that includes a quick filter and a detail part on the right.
