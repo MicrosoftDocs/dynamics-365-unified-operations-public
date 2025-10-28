@@ -55,7 +55,7 @@ You verify and, if necessary, upgrade the **Application** and **Platform** versi
 You can also ensure that the **User Security Governance** features (including the license usage reports) are enabled in **Feature management**. Once upgraded, you can validate access to the **Security Governance** workspace and its reports. This step creates the foundation for the data you can use in subsequent steps.
 
 **How**  
-Use **[Lifecycle Services (LCS)](https://lcs.dynamics.com/v2)** to apply the latest **[Proactive Quality Update](https://go.microsoft.com/fwlink/?linkid=2095900)** across all environments, prioritizing any sandboxes you use for validation and then apply in your production environment.
+Use **[Lifecycle Services](https://lcs.dynamics.com/v2)** to apply the latest **[Proactive Quality Update](https://go.microsoft.com/fwlink/?linkid=2095900)** across all environments, prioritizing any sandboxes you use for validation and then apply in your production environment.
 
 After you apply the latest **[Proactive Quality Update](https://go.microsoft.com/fwlink/?linkid=2095900)**, sign in to Dynamics 365 finance and operations and go to **System administration → Feature management**. Search for and enable the following features:
 
@@ -270,8 +270,8 @@ For Enterprise Agreement customers, in **Microsoft 365 Admin Center** go to **Bi
 
 ## FAQ
 
-**Q1. Does per‑user license validation apply to ISV or third‑party solution licenses?**  
-**A1.** No. This playbook's validation applies only to **Dynamics 365 finance and operations app licenses**. ISV or third‑party licenses are governed separately by those providers.
+**Q1. Does per‑user license validation apply to software development company or third‑party solution licenses?**  
+**A1.** No. This playbook's validation applies only to **Dynamics 365 finance and operations app licenses**. Software development company or third‑party licenses are governed separately by those providers.
 
 **Q2. How can I tell which roles trigger which licenses?**  
 **A2.** Use the **User Security Governance License Usage Summary** to see roles, duties, and privileges with **Entitled/Not Entitled** status, and the **Role license matrix** in Power Platform admin center for a high‑level view. Drill down to privileges to identify exactly what escalates license needs.
