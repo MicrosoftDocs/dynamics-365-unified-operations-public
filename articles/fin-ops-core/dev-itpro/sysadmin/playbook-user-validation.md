@@ -50,7 +50,11 @@ Running the latest **[Proactive Quality Update](https://go.microsoft.com/fwlink/
 Most importantly, it ensures your admins can rely on up-to-date **License Usage Summary** and related reports to plan assignments confidently.
 
 **What**  
-You verify and, if necessary, upgrade the **Application** and **Platform** versions for all relevant Dynamics 365 finance and operations environments. The minimum recommended version is **Application 10.0.45 (10.0.2345.86+)** with **ProductUpdate69** and **Platform build 7.0.7690.75**.
+You verify and, if necessary, upgrade the **Application** and **Platform** versions for all relevant Dynamics 365 finance and operations environments. The minimum recommended version is:
+
+- **Application 10.0.45 (10.0.2345.86+)** 
+- **ProductUpdate69** 
+- **Platform build 7.0.7690.75**
 
 You can also ensure that the **User Security Governance** features (including the license usage reports) are enabled in **Feature management**. Once upgraded, you can validate access to the **Security Governance** workspace and its reports. This step creates the foundation for the data you can use in subsequent steps.
 
@@ -185,7 +189,7 @@ User Security Governance provides a **telemetry‑driven, privilege‑level** vi
 This inside‑the‑app validation complements [**Power Platform admin center's**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) top‑down counts by confirming the **root causes** of license requirements. Without this step, you risk assigning or purchasing licenses you could have avoided by right‑sizing roles. It's invaluable for audit and documentation, showing **exactly** how your security design maps to licensing requirements.
 
 **What**  
-Use **License usage summary** in **User Security Governance** to analyze users by **role license** and drill into the **Role → Duty → Privilege** chain. You can focus on items labeled **Entitled** (covered), **Not Entitled** (requires higher/different license), and **Not Required** (no license impact).
+Use **License usage summary** in **User Security Governance** to analyze users by **role license** and drill into the **Role → Duty → Privilege** chain. You can focus on items labeled **Entitled** (covered), **Not Entitled** (requires higher/different license), and **Not Required** (action or privilege inherited in system user, not included in license computation).
 
 You can also use **Security analysis** to find where specific privileged entry points are introduced into roles, and **Security configuration** to adjust or remove them.
 
