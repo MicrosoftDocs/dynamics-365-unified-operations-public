@@ -53,7 +53,7 @@ If a role has unexpected licensing requirements, you can use the **User Security
 
 Use the **User license summary** page in the **User security governance** to understand how security roles and respective permissions define the license requirements across their Dynamics 365 finance and operations environment.
 
-:::image type="content" source="../../../fin-ops/sysadmin/media/security-governance-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="../../../fin-ops/sysadmin/media/security-governance-license-usage-summary-overview.png":::
+:::image type="content" source="../sysadmin/media/security-governance-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="../sysadmin/media/security-governance-license-usage-summary-overview.png":::
 
 To access the **User License Summary** page, follow these steps:
 
@@ -70,7 +70,7 @@ These details enable deeper visibility into user access patterns and ensure that
 
 You can use the **System Administration** \> **Security** \> **Assign users to role** page to view all users who are assigned a specific role.
 
-![Assign users to role page.](../../fin-ops/sysadmin/media/Assign-users-to-roles.png)
+![Assign users to role page.](../sysadmin/media/Assign-users-to-roles.png)
 
 ## Enabled users
 
