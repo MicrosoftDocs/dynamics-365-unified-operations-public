@@ -4,7 +4,7 @@ description: Learn how to set up records for customers and vendors that are loca
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: how-to
-ms.date: 09/21/2023
+ms.date: 10/28/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -21,8 +21,8 @@ Before you can configure records for customers and vendors who have an address i
 
 - Create regions, provinces, and communes in Chile by using states, counties, and cities in the address setup.
 
-> [!NOTE]
-> For Chile addresses, LATAM reports and e-invoice formats will take the county as a “Comuna” and the city as “Ciudad”.
+  > [!NOTE]
+  > For Chile addresses, LATAM reports and e-invoice formats use the county as a "Comuna" and the city as "Ciudad."
 
 - Create the tax codes that will be used for value-added tax (VAT), including IVA 19, IVA exento, IVA no afecto, and Retenciones.
 - Create sales tax groups that contain the tax codes that you created.
