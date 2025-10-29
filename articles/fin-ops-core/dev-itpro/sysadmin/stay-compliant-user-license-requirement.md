@@ -4,7 +4,7 @@ description: Learn about how you can stay compliant with the user licensing requ
 author: ianceicys-msft
 ms.author: ceian
 ms.topic: how-to
-ms.date: 05/16/2025
+ms.date: 10/28/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2018-05-30
@@ -55,10 +55,10 @@ Use the **User license summary** page in the **User security governance** worksp
 
 :::image type="content" source="../sysadmin/media/security-governance-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="../sysadmin/media/security-governance-license-usage-summary-overview.png":::
 
-To access the **User License Summary** page, follow these steps:
+To access the **User License Summary** page, follow these steps.
 
-1. Sign in to Dynamics 365 finance and operations.
-2. Go to **System administration > Security > Security Governance > License usage summary**.
+1. Sign in to finance and operations apps.
+1. Go to **System administration > Security > Security Governance > License usage summary**.
 
 The User security governance license usage summary page provides a layered view of:
 - How system permissions are exercised
