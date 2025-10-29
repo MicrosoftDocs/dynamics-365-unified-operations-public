@@ -1,5 +1,5 @@
 ---
-title: Example custom request handler code (preview)
+title: Example custom request handler code
 description: Learn how to implement a custom request handler for custom pricing attributes
 author: sherry-zheng
 ms.author: chuzheng
@@ -11,16 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Example custom request handler code (preview)
+# Example custom request handler code
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-<!-- KFM: Preview until 10.0.46 GA -->
 
 This article provides sample code for the `GetCustomizedPricingPropertiesRequestHandler` class, which is used to implement custom pricing attributes. This handler enables you to retrieve and process custom pricing properties for products, customers, orders, and order lines.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 The code demonstrates how to extend the pricing framework by defining custom attributes and linking them to specific fields in the database. It also shows how to process requests programmatically to fetch and merge these attributes into the pricing logic. For more details about adding custom pricing attributes, see [Add custom pricing attributes for Dynamics 365 Commerce Point of Sale](upm-support-custom-attributes.md).
 

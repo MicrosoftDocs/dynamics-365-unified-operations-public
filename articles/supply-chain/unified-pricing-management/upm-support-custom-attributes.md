@@ -1,5 +1,5 @@
 ---
-title: Add custom pricing attributes for Dynamics 365 Commerce Point of Sale (preview)
+title: Add custom pricing attributes for Dynamics 365 Commerce Point of Sale
 description: Learn how to support custom pricing attributes in Dynamics 365 Commerce Point of Sale (POS) by implementing a custom request handler
 author: sherry-zheng
 ms.author: chuzheng
@@ -11,16 +11,11 @@ ms.custom:
 - bap-template
 ---
 
-# Add custom pricing attributes for Dynamics 365 Commerce Point of Sale (preview)
+# Add custom pricing attributes for Dynamics 365 Commerce Point of Sale
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-<!-- KFM: Preview until 10.0.46 GA -->
 
 Unified pricing management lets you configure pricing rules that can also consider values of custom pricing attributes for products, customers, orders, and order lines. It provides the following two components that you can use to implement your own custom request handler and develop your logic: `GetCustomizedPricingPropertiesRequest` and `GetCustomizedPricingPropertiesResponse`.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Custom attributes are marked in the `GUPPRICINGATTRIBUTELINK` table using a specific identifier, which indicates that they require special logic in Commerce Scale Unit (CSU) to be supported in Dynamics 365 Commerce Point of Sale (POS). To mark a pricing attribute as custom, the `GUPPRICINGATTRIBUTELINK.TypeName` column must be set to `Customization`.
 
