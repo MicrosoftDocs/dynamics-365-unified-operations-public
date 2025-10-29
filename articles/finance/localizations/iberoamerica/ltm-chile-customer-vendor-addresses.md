@@ -20,6 +20,10 @@ The Latin American (LATAM) customer and vendor configuration contains the fiscal
 Before you can configure records for customers and vendors who have an address in Chile, the following prerequisites must be met:
 
 - Create regions, provinces, and communes in Chile by using states, counties, and cities in the address setup.
+
+> [!NOTE]
+> For Chile addresses, LATAM reports and e-invoice formats will take the county as a “Comuna” and the city as “Ciudad”.
+
 - Create the tax codes that will be used for value-added tax (VAT), including IVA 19, IVA exento, IVA no afecto, and Retenciones.
 - Create sales tax groups that contain the tax codes that you created.
 - Create item sales tax groups that contain the tax codes that you created.
