@@ -20,17 +20,17 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-The Supplier Communications Agent helps you identify and follow up on purchase orders that vendors haven't yet confirmed, or that delivery is late for. For each order that it finds, the agent automatically generates a draft email that is addressed to the relevant vendor.
+The Supplier Communications Agent helps you identify and follow up on purchase orders that vendors did not yet confirm, or that delivery is late for. For each order that it finds, the agent automatically generates a draft email that is addressed to the relevant vendor.
 
 The Supplier Communications Agent helps you perform the following actions:
 
-- Create queries to find purchase orders that require follow-up. Queries are unique for each user. Therefore, you can create and adjust them to meet your specific business needs. Two default queries are provided. One is used to follow up on unconfirmed purchase orders, and the other is used to follow up on late deliveries. You can modify or delete these default queries as required to meet your business needs.
+- Create queries to find purchase orders that require follow-up. Queries are unique for each user. Therefore, you can create and adjust them to meet your specific business needs. Two default queries are provided. One is used to follow up on unconfirmed purchase orders, and the other is used to follow up on late deliveries. You can modify or delete the default queries as required to meet your business needs.
 - Configure how emails are generated for each query.
 - Review the draft emails that the agent generates. After you review each message, you can modify it, copy it to your email client, and/or send it. To generate the emails, the agent uses data from the purchase order lines and/or related tables.
 
 By default, the system provides two premade queries that you can use to find purchase orders that require action:
 
-- *Unconfirmed purchase orders* – This query finds purchase orders that are assigned to you, that have a delivery date within the next 60 days, but that haven't yet been confirmed by the vendor (that is, the confirmed delivery date is blank). The query uses the following specific criteria:
+- *Unconfirmed purchase orders* – This query finds purchase orders that are assigned to you, that have a delivery date within the next 60 days, but that the vendor did not yet confirm (that is, the confirmed delivery date is blank). The query uses the following specific criteria:
 
     - The **Confirmed delivery date** field is blank.
     - The **Owner** field is set to your user account (the current user).
@@ -59,7 +59,7 @@ The following procedure explains how to set up queries to find purchase orders t
 
 1. Edit the name of the query as required. (The default name is *Draft follow-up emails for purchase orders*.)
 1. Select whether you want the query to find unconfirmed purchase order or delayed purchase orders.
-1. Modify the criteria to define which purchase orders require follow-up. For example, you might want the query to find orders for the next two months that haven't been confirmed, orders that were created more than three days ago, or orders that were sent but not confirmed.
+1. Modify the criteria to define which purchase orders require follow-up. For example, you might want the query to find orders for the next two months that are not yet confirmed, orders that were created more than three days ago, or orders that were sent but not confirmed.
 
     - If you selected to have the query find delayed purchase orders, the following default criteria are used:
 
