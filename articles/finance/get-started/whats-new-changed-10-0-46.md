@@ -47,6 +47,11 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+ |Accounts receivable |	Accounts receivable |	When a free text invoice is created and posted, the posted invoice journal total is incorrect where the calculation doesn't consider all total lines amount. The Ledger entries are correct but the Custtrans and CustInvoiceJour amounts are incorrect. |	Feature management |
+ |Accounts receivable |	Accounts receivable |	Invoice and Invoice line details information on the **Associations** FastTab on **My cases** page.  |Feature management |
+ |Credit and collections |	Accounts receivable |	The user should be able to view and select the option for the **Due date** and the **Terms of payment** when posting a customer interest note. |	Feature management |
+ |Credit and collections |	Accounts receivable |	Email template on the collection process automation uses the variables on the **Subject** line. |	Feature management |
+ |Credit and collections |Customer interest note creation – top picking optimization |This feature uses top picking to improve the performance when creating customer interest notes. This helps avoid long-running transactions and ensures faster and more efficient processing when handling large transaction volumes. | Feature management |
 | General ledger | Account reconciliation agent (Production ready preview) | The Account reconciliation agent functionality has been improved to provide suggested actions for **In ledger not in subledger** and **In subledger not in ledger** exception types.| Feature management |
 | General ledger |User ID added to the **Ledger settlement inquiry** page for full visibility. The **User ID** is now in the **Ledger settlement inquiry** page. |The user ID that did the ledger settlement is now displayed in the **Ledger settlement inquiry** page. | Default |
 | General ledger |Performance improvements in Ledger settlements when the **Enable advanced awareness option** feature isn't enabled. | The **Ledger settlements** page has been updated to improve the performance when doing ledger settlements. Customizations may need to be updated to work with the new page. | Default |
@@ -54,11 +59,7 @@ This section contains a table that lists the enhancements that are included in t
  |Subscription Billing	 |(Preview) Subscription billing deferral COGS adjustment-Enhancement | A dedicated dashboard monitors and provides visibility into errors that had occurred during the adjustment process. This dashboard offers actionable insights and a user-friendly interface, allowing users to conveniently reprocess failed adjustments through a rerun batch job—reducing manual effort and enhancing the overall reliability of the deferral.  |	Feature Management |
  |Subscription billing |	 (Preview) Subscription billing deferral COGS adjustment-Enhancement |	A notification message is displayed when the asynchronous process finishes so that the user is notified. |	Feature management |
  |Subscription billing |	Subscription billing |	At the termination of billing schedule, a credit note is created against the invoices (sales orders) with the same exchange rate used at the time of invoicing. |	Feature management |
- |Accounts receivable |	Accounts receivable |	When a free text invoice is created and posted, the posted invoice journal total is incorrect where the calculation doesn't consider all total lines amount. The Ledger entries are correct but the Custtrans and CustInvoiceJour amounts are incorrect. |	Feature management |
- |Accounts receivable |	Accounts receivable |	Invoice and Invoice line details information on the **Associations** FastTab on **My cases** page.  |Feature management |
- |Credit and collections |	Accounts receivable |	The user should be able to view and select the option for the **Due date** and the **Terms of payment** when posting a customer interest note. |	Feature management |
- |Credit and collections |	Accounts receivable |	Email template on the collection process automation uses the variables on the **Subject** line. |	Feature management |
- |Credit and collections |Customer interest note creation – top picking optimization |This feature uses top picking to improve the performance when creating customer interest notes. This helps avoid long-running transactions and ensures faster and more efficient processing when handling large transaction volumes. | Feature management |
+
 
 
 ## Features turned on by default in this release
