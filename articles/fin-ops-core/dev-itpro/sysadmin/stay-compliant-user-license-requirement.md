@@ -51,9 +51,9 @@ If a role has unexpected licensing requirements, you can use the **User Security
 
 ## Licensing requirements using User Security Governance
 
-Use the **User license summary** page in the **User security governance** to understand how security roles and respective permissions define the license requirements across their Dynamics 365 finance and operations environment.
+Use the **User license summary** page in the **User security governance** workspace to understand how security roles and respective permissions define the license requirements across their Dynamics 365 finance and operations environment.
 
-:::image type="content" source="media/security-governance-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="media/security-governance-license-usage-summary-overview.png":::
+:::image type="content" source="../sysadmin/media/security-governance-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="../sysadmin/media/security-governance-license-usage-summary-overview.png":::
 
 To access the **User License Summary** page, follow these steps:
 
