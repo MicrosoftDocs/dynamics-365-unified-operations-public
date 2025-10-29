@@ -19,10 +19,13 @@ The article explains how to configure form controls so that the default producti
 
 ## Forms and dialogs
 
-All styles are automatically applied to any forms and dialogs launched from the production floor execution interface. Standard elements (such as backgrounds, font colors, grids, tabs, labels, checkboxes, and similar components) follow production floor execution styling. For custom styles, controls within the dialog must be configured as outlined in the referenced article. <!-- KFM: Which article are you referring to? Can we link to it here? -->
+All styles are automatically applied to any forms and dialogs launched from the production floor execution interface. Standard elements (such as backgrounds, font colors, grids, tabs, labels, checkboxes, and similar components) follow production floor execution styling. For custom styles, controls within the dialog must be configured as outlined in this article.
 
-> [!IMPORTANT]
-> The features mentioned in the first two bullet points of this list require Supply Chain Management version 10.0.46 or later. <!-- KFM: Which bullets do we mean? Can we move this note closer to them? -->
+> [!NOTE]
+> If you are using Supply Chain Management version 10.0.45 or earlier, then the following requirements apply:
+>
+> - If the form should resemble the existing report progress form, the name of your form or dialog must start with `JmgProductionFloorExecutionCustomInputDialog`.
+> - The form or dialog can contain a detail form part. To apply styles to it, the name of the detail form part must start with `JmgProductionFloorExecutionCustomDetailsDialog`.
 
 ### Dialog buttons
 
