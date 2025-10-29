@@ -41,7 +41,7 @@ Confirm these prerequisites:
  :::image type="content" source="media/playbook-step-1-upgrade-latest-quality-update.png" alt-text="Upgrade to the latest Product Quality Update" lightbox="media/playbook-step-1-upgrade-latest-quality-update.png":::
 
 #### Why  
-Upgrading ensures your environment has the **current license validation logic, telemetry, and reporting** needed to make accurate decisions. New governance capabilities, including **User Security Governance (USG)**, were introduced and improved in recent versions and might not be available in older releases.
+Upgrading ensures your environment has the **current license validation logic, telemetry, and reporting** needed to make accurate decisions. New governance capabilities, including **[User Security Governance (USG)](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview)**, were introduced and improved in recent versions and might not be available in older releases.
 
 Running the latest **[Proactive Quality Update](https://go.microsoft.com/fwlink/?linkid=2095900)** reduces the risk of encountering known issues or missing features that affect license calculations or report completeness. This step also standardizes the behavior across all environments, so your analysis in test or sandbox environments mirrors what you see in production.
 
@@ -54,7 +54,7 @@ You verify and, if necessary, upgrade the **Application** and **Platform** versi
 - **ProductUpdate69** 
 - **Platform build 7.0.7690.75**
 
-You can also ensure that the **User Security Governance** features (including the license usage reports) are enabled in **Feature management**. Once upgraded, you can validate access to the **Security Governance** workspace and its reports. This step creates the foundation for the data you can use in subsequent steps.
+You can also ensure that the **[User Security Governance](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview)** features (including the license usage reports) are enabled in **Feature management**. Once upgraded, you can validate access to the **Security Governance** workspace and its reports. This step creates the foundation for the data you can use in subsequent steps.
 
 #### How 
 Use **[Lifecycle Services](https://lcs.dynamics.com/v2)** to apply the latest **[Proactive Quality Update](https://go.microsoft.com/fwlink/?linkid=2095900)** across all environments, prioritizing any sandboxes you use for validation and then apply in your production environment.
@@ -80,7 +80,7 @@ Removing inactive users also reduces your administrative burden when assigning l
 #### What  
 You identify and disable (or remove) users who didn't sign in within your organization's defined inactivity window.
 
-The **User Activity Aging** report in the **User Security Governance** workspace provides a configurable view of users grouped by inactivity ranges (for example **30**, **60**, **90**, **120+** days).
+The **User Activity Aging** report in the **[User Security Governance](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview)** workspace provides a configurable view of users grouped by inactivity ranges (for example **30**, **60**, **90**, **120+** days).
 
 Based on your company's HR and IT policies, use those groupings to determine which inactive accounts to disable.
 
@@ -174,12 +174,12 @@ Keep this license gap analysis handy—you resolve it via role cleanup (**Step 4
  :::image type="content" source="media/playbook-step-5-validate-with-user-security-governance.png" alt-text="Validate with User Security Governance" lightbox="media/playbook-step-5-validate-with-user-security-governance.png":::
 
 #### Why 
-User Security Governance provides a **telemetry‑driven, privilege‑level** view of why a user needs a license. With this view, you can remove **unnecessary entitlements** and minimize costs. It shows which **roles/duties/privileges** cause a user to escalate from Team Member to a full app license (or to need multiple apps), so you can focus on targeted remediation.
+[**User Security Governance**](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) provides a **telemetry‑driven, privilege‑level** view of why a user needs a license. With this view, you can remove **unnecessary entitlements** and minimize costs. It shows which **roles/duties/privileges** cause a user to escalate from Team Member to a full app license (or to need multiple apps), so you can focus on targeted remediation.
 
 This inside‑the‑app validation complements [**Power Platform admin center's**](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) top‑down counts by confirming the **root causes** of license requirements. Without this step, you risk assigning or purchasing licenses you might avoid by right‑sizing roles. It's invaluable for audit and documentation, showing **exactly** how your security design maps to licensing requirements.
 
 **What**  
-Use **License usage summary** in **User Security Governance** to analyze users by **role license** and drill into the **Role → Duty → Privilege** chain. You can focus on items labeled **Entitled** (covered), **Not Entitled** (requires higher/different license), and **Not Required** (action or privilege inherited in system user, not included in license computation).
+Use **License usage summary** in **[User Security Governance](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview)** to analyze users by **role license** and drill into the **Role → Duty → Privilege** chain. You can focus on items labeled **Entitled** (covered), **Not Entitled** (requires higher/different license), and **Not Required** (action or privilege inherited in system user, not included in license computation).
 
 You can also use **Security analysis** to find where specific privileged entry points are introduced into roles, and **Security configuration** to adjust or remove them.
 
@@ -240,7 +240,7 @@ If the [**Power Platform admin center**](https://admin.powerplatform.microsoft.c
 You determine the **delta** between required, assigned, and available licenses for each product (for example, +9 Finance Base, +3 Supply Chain Management Attach). Based on your agreement type, you can either place **License Reservations** or **purchase additional licenses** through Cloud Solution Provider or Enterprise Agreement channels. You can document the **usage date** for reservations, acknowledging financial commitment at your next order cycle. You can also coordinate with your Microsoft seller or partner on any special pricing or prerequisites. Finally, you can include a small buffer (3-10%) for user growth and onboarding to reduce repeated transactions.
 
 #### How 
-For Enterprise Agreement customers, in **Microsoft 365 Admin Center** go to **Billing → Your products → Volume licensing → Make reservations**, select the appropriate **Enterprise Agreement contract**, set a **Usage date** (up to six months ahead), and add the required services and quantities. Confirm and place the reservation (note the 72‑hour cancellation window). For Cloud Solution Provider or non‑Enterprise Agreement, work with your partner or purchase licenses directly so they appear in the Admin Center for assignment. After new licenses are visible, complete the user assignments (**Step 5**) and validate in Power Platform admin center that shortages are resolved. Update your internal licensing tracker with reservations, purchases, quantities, and renewal or true‑up notes.
+For Enterprise Agreement customers, in [**Microsoft 365 admin center**](https://admin.microsoft.com) go to **Billing → Your products → Volume licensing → Make reservations**, select the appropriate **Enterprise Agreement contract**, set a **Usage date** (up to six months ahead), and add the required services and quantities. Confirm and place the reservation (note the 72‑hour cancellation window). For Cloud Solution Provider or non‑Enterprise Agreement, work with your partner or purchase licenses directly so they appear in the Admin Center for assignment. After new licenses are visible, complete the user assignments (**Step 5**) and validate in Power Platform admin center that shortages are resolved. Update your internal licensing tracker with reservations, purchases, quantities, and renewal or true‑up notes.
 
 ## Summary checklist
 
