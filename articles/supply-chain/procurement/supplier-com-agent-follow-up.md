@@ -129,10 +129,10 @@ To schedule automatic runs of the Supplier Communications Agent, a related batch
 
 The name of the batch job is the same as the name of the task: *Send follow-up emails to vendors with Supplier Communications Agent*. To locate it, apply a filter on the **Job description** column in the batch jobs list view. 
 
-<img width="725" height="280" alt="image" src="https://github.com/user-attachments/assets/897cde3d-b623-423c-b36e-7f5c7b5a7f25" />
+<img width="725" height="280" alt="Batch Job Name Image Caption" src="https://github.com/user-attachments/assets/897cde3d-b623-423c-b36e-7f5c7b5a7f25" />
 
 Once the batch job selected, click on **Recurrence**, which opens a side panel containing the parameters for running the job.
 
-<img width="412" height="494" alt="image" src="https://github.com/user-attachments/assets/f7712a4e-373a-4330-a676-ae0a9f8983d5" />
+<img width="412" height="494" alt="Recurrence found on upper menu" src="https://github.com/user-attachments/assets/f7712a4e-373a-4330-a676-ae0a9f8983d5" />
 
 Back on the batch jobs list view, clicking on the **Job ID** of the batch job opens a page with further information on the parameters and the related job tasks.
