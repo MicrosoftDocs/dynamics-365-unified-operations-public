@@ -121,7 +121,7 @@ Because there is only one supply forecast line, there is only one forecast perio
 
 When you run a master plan that is set up to use *Transactions – dynamic period* as the reduction method, one of the following results can occur:
 
-- If a purchase order exists for vendor *US-101* and a quantity of *10 ea*, and the **Supply forecast** field is set to *Yes*, master planning creates a new planned purchase order for the remaining quantity of *10 ea*. The forecast line is reduced, because the vendor matches the existing purchase order.
+- If a purchase order exists for vendor *US-101* and a quantity of *10 ea*, and the **Supply forecast** field is set to *Yes*, master planning creates a new planned purchase order for the remaining quantity of *15 ea*. The forecast line is reduced, because the vendor matches the existing purchase order.
 - If a purchase order exists for vendor *US-102*, site *1*, warehouse *11*, and a quantity of *10 ea*, and the **Supply forecast** field is set to *Yes*, master planning creates a new planned purchase order for the full quantity of *25 ea*. The forecast line can't be reduced, because it has a different vendor than the existing purchase order.
 
 > [!NOTE]
