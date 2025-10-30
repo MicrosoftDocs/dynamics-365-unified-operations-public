@@ -123,7 +123,7 @@ When the feature is turned on, the email address of the administrator who set up
 
 Learn more in [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
 
-## Use batch jobs to schedule automatic runs of the agent
+## Use a batch job to schedule automatic runs of the agent
 
 Supply Chain Management includes a batch job that you can use to schedule automatic runs of the Supplier Communications Agent. To set up and schedule the job, follow these steps:
 
