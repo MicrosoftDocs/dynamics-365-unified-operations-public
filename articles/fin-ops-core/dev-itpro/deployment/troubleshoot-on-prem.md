@@ -134,9 +134,9 @@ Be sure to complete these steps:
 - Verify that the Service Fabric Server certificate has the access control list (ACL) for Network Service on all Service Fabric nodes.
 - Review the antivirus exclusions that are noted in [Environment setup](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
 
-## A time-out error occurs while you're waiting for Installer Service to be completed for machine x.x.x.x
+## A time-out error occurs while you're waiting for Installer service to be completed for machine x.x.x.x
 
-Only one node type is supported for each Internet Protocol (IP) address (that is, for each machine). Check whether the nodes are being reused on the same machine. For example, AOS and ORCH must not be on the same machine, and ConfigTemplate.xml must be correctly defined.
+Only one node type is supported for each Internet Protocol (IP) address (that is, for each machine). Check whether the nodes are being reused on the same machine. For example, AOS and ORCH mustn't be on the same machine, and ConfigTemplate.xml must be correctly defined.
 
 ## Remove a specific application
 
@@ -296,7 +296,7 @@ Follow these steps to troubleshoot general issues with local agent validation.
 2. Verify that the Test-D365FOConfiguration.ps1 script passes on all the orchestrator machines.
 3. Verify that the installation of LocalAgentCLI.exe is successfully completed.
 4. In Service Fabric Explorer, verify that all the applications are healthy.
-5. If the applications aren't healthy, find the primary node for the service that is failing. In Event Viewer, look for events in the following locations:
+5. If the applications aren't healthy, find the primary node for the service that's failing. In Event Viewer, look for events in the following locations:
 
     - Custom Views \> Administrative Events
     - Applications and Services Log \> Microsoft \> Dynamics \> AX-LocalAgent
@@ -371,7 +371,7 @@ You can also manually add the following values in the **components** section of 
 
 ### Error
 
-**Error:** During servicing, you receive an "Unable to download asset" error, and the details state, "The credentials supplied to the package were not recognized."
+**Error:** During servicing, you receive an "Unable to download asset" error, and the details state, "The credentials supplied to the package weren't recognized."
 
 **Reason:** The ACL wasn't correctly defined on certificates.
 
@@ -486,7 +486,7 @@ The local agent user can't connect to the SQL Server instance or the database.
 
 > RunAsync failed due to an unhandled exception causing the host process to crash: System.Net.Http.HttpRequestException: An error occurred while sending the request. ---\> System.Net.WebException: The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'
 
-**Reason:** The local agent machines can't connect to lcsapi.lcs.dynamics.com. Review the AX-BridgeService event log for "The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'."
+**Reason:** The local agent machines can't connect to lcsapi.lcs.dynamics.com. Review the AX-BridgeService event log for "The remote name couldn't be resolved: 'lcsapi.lcs.dynamics.com'."
 
 **Steps:** Follow these steps to resolve the error.
 
@@ -703,7 +703,7 @@ Category does not exist.
 
 **Reason:** The pointers to the performance counter that the gateway needs may be corrupt.
 
-**Resolution:** Run **lodctr /R** in a Command Prompt window that you open as administrator in all AOS nodes where the gateway is unhealthy. If you receive an error message that states that the performance counters can't be rebuilt, try to run the command again. 
+**Resolution:** Run **lodctr /R** in a command prompt window that you open as administrator in all AOS nodes where the gateway is unhealthy. If you receive an error message that states that the performance counters can't be rebuilt, try to run the command again. 
 
 ## Management Reporter
 
@@ -734,7 +734,7 @@ After providers are registered, more details about the new deployment are logged
 
 To see the new folders, you must close and reopen Event Viewer. To see more details, you must deploy an environment again.
 
-###  <a name="FREntityFramework"></a> Could not load file or assembly EntityFramework
+###  <a name="FREntityFramework"></a> Couldn't load file or assembly EntityFramework
 
 **Issue**: You're running Local Agent version 2.3.1 or later and you received the following stacktrace in the event logs while deploying a package that contains Platform update 29 or earlier:
 
@@ -763,9 +763,9 @@ Microsoft.Dynamics.Performance.Logger.IfxLoggerProvider.CreateLogger(System.Stri
 Microsoft.Extensions.Logging.Logger..ctor(Microsoft.Extensions.Logging.LoggerFactory,  System.String) at  
 ```
 
-**Reason:** The Microsoft Visual C++ Redistributable Package for Visual Studio 2013 wasn't correctly installed or is corrupt in some or all of the MR nodes.
+**Reason:** The Microsoft Visual C++ redistributable package for Visual Studio 2013 wasn't correctly installed or is corrupt in some or all of the MR nodes.
 
-**Steps:** Rerun the installation of the Microsoft Visual C++ Redistributable Package for Visual Studio 2013.
+**Steps:** Rerun the installation of the Microsoft Visual C++ redistributable package for Visual Studio 2013.
 
 ### An error occurs while AddAXDatabaseChangeTracking is running
 
@@ -866,13 +866,13 @@ Verify the AD&nbsp;FS Manager by going to **ADFS** \> **Application groups**. Do
 
 Note the **Redirect URI** value. It should match the DNS forward lookup zone for Finance + Operations.
 
-### Error: "Could not establish trust relationship for the SSL/TLS secure channel"
+### Error: "Couldn't establish trust relationship for the SSL/TLS secure channel"
 
-If you receive an error that states, "Could not establish trust relationship for the SSL/TLS secure channel," follow these steps.
+If you receive an error that states, "Couldn't establish trust relationship for the SSL/TLS secure channel," follow these steps.
 
 1. In Service Fabric, go to **Cluster** \> **Applications** \> **AXSFType** \> **fabric:/AXSF**, and then, on the **Details** tab, scroll down and note the URLs for **Aad\_Microsoft Entra IDMetadataLocationFormat** and **Aad\_FederationMetadataLocation**.
 2. Browse to those URLs from AOS.
-3. On the AOS machine, in Event Viewer, go to **Applications and Services Logs** \> **Microsoft** \> **Dynamics** \> **AX-SystemRuntime** for details.
+3. On the AOS machine, in Event viewer, go to **Applications and Services Logs** \> **Microsoft** \> **Dynamics** \> **AX-SystemRuntime** for details.
 4. Verify that the AD&nbsp;FS certificate is trusted:
 
     1. Verify the AD&nbsp;FS certificate. On the AD&nbsp;FS machine, in Server Manager, go to **Tools** \> **AD&nbsp;FS Management**.
@@ -935,16 +935,16 @@ The following sections provide focused debugging steps for claims that are retur
 1. Open Microsoft Edge, and then open an **InPrivate** window (the shortcut key is Ctrl + Shift + N).
 1. Open the **Microsoft Edge developer tools** (the shortcut key is Ctrl + Shift + I)
 1. Navigate to the **Network** tab. You can verify that traffic is being captured by looking at the lower part of the tool.
-1. In the **Network** tab make sure you have **Preserve Log** and **Disable Cache** checked.
+1. On the **Network** tab, select the **Preserve Log** and **Disable Cache** options.
 1. Open finance and operations apps (for example, `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).
 1. Sign in by using the USERINFO.NETWORKALIAS account and password.
 1. After you're signed in, stop recording the network log (the shortcut key is Ctrl + E).
 
 #### Analyze
 
-After you have the network log, you can analyze the claims that are returned to Microsoft Dynamics. For each request that is sent, you can view the full request and also the full response.
+After you have the network log, you can analyze the claims that are returned to Microsoft Dynamics 365. For each request that is sent, you can view the full request and also the full response.
 
-1. In the network log look for the POST request that gets sent to Finance + Operations after having successfully authenticated through AD&nbsp;FS.
+1. In the network log, look for the POST request that gets sent to Finance + Operations after having successfully authenticated through AD&nbsp;FS.
 
     ![Network log.](media/NetworkLogOnpremADFS.png)
 
