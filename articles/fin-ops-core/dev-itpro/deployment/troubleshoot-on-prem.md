@@ -1037,7 +1037,7 @@ In this case, in the ClusterConfig.json file, change **diagnosticsStore** from a
 
 Only one AOS machine can run DB Sync at a time. You can safely ignore this error, it means that one of the AOS VMs is running DB Sync. Therefore, the other VMs produce a warning that they can't run it. To verify that DB Sync is running, on the AOS VM that isn't producing warnings, in Event Viewer, go to **Applications and Services Log** \> **Microsoft** \> **Dynamics** \> **AX-DatabaseSynchronize/Operational**.
 
-It could also timeout due to long running SysSetup scripts that run at the end of the synchronize to update specific data tables. For more information, see [Synchronize Takes Too Long Due to SysSetup Scripts](#DBSync-takes-too-long-due-to-syssetup-scripts)
+It could also timeout due to long running SysSetup scripts that run at the end of the synchronize to update specific data tables. For more information, see [Synchronize Takes Too Long Due to SysSetup Scripts](#dbsync-takes-too-long-due-to-syssetup-scripts)
 
 ## Error: "RequireNonce is 'true' (default) but validationContext.Nonce is null"
 
