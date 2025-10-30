@@ -1,10 +1,10 @@
 ---
 title: Troubleshoot on-premises deployments
 description: Access troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises), including an overview of monitoring deployment.
-author: faix
+author: ttreen
 ms.author: osfaixat
 ms.topic: troubleshooting-general
-ms.date: 02/03/2025
+ms.date: 10/31/2025
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
@@ -1035,9 +1035,9 @@ In this case, in the ClusterConfig.json file, change **diagnosticsStore** from a
 > The timeout period elapsed prior to completion of the operation or the server is not responding.  
 > The statement has been terminated.
 
-Only one AOS machine can run DB Sync at a time. You can safely ignore this error, because it means that one of the AOS VMs is running DB Sync. Therefore, the other VMs produce a warning that they can't run it. To verify that DB Sync is running, on the AOS VM that isn't producing warnings, in Event Viewer, go to **Applications and Services Log** \> **Microsoft** \> **Dynamics** \> **AX-DatabaseSynchronize/Operational**.
+Only one AOS machine can run DB Sync at a time. You can safely ignore this error, it means that one of the AOS VMs is running DB Sync. Therefore, the other VMs produce a warning that they can't run it. To verify that DB Sync is running, on the AOS VM that isn't producing warnings, in Event Viewer, go to **Applications and Services Log** \> **Microsoft** \> **Dynamics** \> **AX-DatabaseSynchronize/Operational**.
 
-It could also timeout due to long running SysSetup Scripts that run at the end of the synchronize to update specific data tables - see here for details on how to check and resolve: [Synchronize Takes Too Long Due to SysSetup Scripts](#DBSync-takes-too-long-due-to-syssetup-scripts)
+It could also timeout due to long running SysSetup scripts that run at the end of the synchronize to update specific data tables. For more information, see [Synchronize Takes Too Long Due to SysSetup Scripts](#DBSync-takes-too-long-due-to-syssetup-scripts)
 
 ## Error: "RequireNonce is 'true' (default) but validationContext.Nonce is null"
 
@@ -1507,18 +1507,18 @@ truncate table databaselog
 
 ## DBSync takes too long due to syssetup scripts
 
-**Issue:** During the DBSync process in LBD environments, SysSetup scripts are used to prepare data so it aligns with the requirements of a specific D365 version. In some cases—particularly in large customer environments—certain scripts, such as CustInvoiceTaxFieldsSysSetup, may fail or time out due to the volume of data involved.
+**Issue** - During the DBSync process in LBD environments, SysSetup scripts prepares data so it aligns with the requirements of a specific Dynamics 365 version. In some cases—particularly in large customer environments—certain scripts, such as CustInvoiceTaxFieldsSysSetup, may fail or time out due to the volume of data involved.
 
-Unlike in the cloud, LBD does not automatically execute these SysSetup scripts asynchronously in batch jobs. Instead, the standard approach is that the scripts run synchronously as part of the sync process. This difference in the standard execution model can lead to delays or hangs if a script takes longer than expected to complete.
+Unlike in the cloud, LBD doesn't automatically execute these SysSetup scripts asynchronously in batch jobs. Instead, the standard approach is the scripts run synchronously as part of the sync process. This difference in the standard execution model can lead to delays or hangs if a script takes longer than expected to complete.
 
-**Troubleshooting:** 
+**Troubleshooting** 
 
-You'll need to determine if the DBSYnc  is getting delays due to these SysSetup jobs running synchronously, see the following steps on determining this.
+You'll need to determine if the DBSYnc is delayed due to these SysSetup jobs running synchronously. The following steps can determine this:
 
-Locate the database sync log "dbsync_20yymmddhhmmdd.log", you can do this by following these steps
- - Open Task Manager an the AOS node running the sync (you can check the SF.SYNC log table in the AXDB database to determine the AOS node running the sync).
- - On the Details tab, right click on AXService.exe and select Open File Location
- - When File Explorer opens, go up one folder then into the log folder, here you will find the sync log.
+To locate the database sync log "dbsync_20yymmddhhmmdd.log", follow these steps:
+ - Open Task Manager and the AOS node running the sync (you can check the SF.SYNC log table in the AXDB database to determine the AOS node running the sync).
+ - On the **Details** tab, right click AXService.exe and select **Open file location**.
+ - In File explorer, go up one folder, and then into the log folder. This is where the sync log is.
 
 Open the log and look for the following: `Starting Execution of SysSetupInstaller`
 
@@ -1538,11 +1538,11 @@ See example below:
 
 Check above and review the line `RunAsAsync and Version flight values are:` and check what the `RunAsAsync` value is set to (true\false).
 
-If the RunAsAsync is False then continue with the resolution steps below.
+If the RunAsAsync is False, then continue with the resolution steps below.
 
-**Resolution:** 
+**Resolution** 
 
-Enable the `DbSyncEnableSysSetupInstallerAsRunAsAsync` flight. This will schedule jobs that can be run asynchronously in batch. To do this run the following SQL:
+Enable the `DbSyncEnableSysSetupInstallerAsRunAsAsync` flight. This schedules jobs to be run asynchronously in batch. To do this, run the following SQL:
 
 ```SQL
 INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED, FLIGHTSERVICEID) 
