@@ -4,7 +4,7 @@ description: Learn about demo data via an overview, including a table that defin
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 09/20/2019
+ms.date: 10/30/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: IT Pro
@@ -18,9 +18,9 @@ ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-This article provides an overview of the demo data that is available.
+This article provides an overview of the available demo data.
 
-Demo data is the base data set that is released for implementation support and demonstration purposes. The current demo data set supports the following verticals:
+Use demo data as the base data set for implementation support and demonstration purposes. The current demo data set supports the following verticals:
 
 - Commerce
 - Distribution
@@ -60,7 +60,7 @@ The demo data set supports 40 languages across 16 countries or regions. It also 
 
 ## Embedded analytics
 
-Demo data has been updated in five companies to provide better reports on the new embedded analytics within workspace. Filter the embedded analytics to the following legal entities for the improved report data:
+The demo data updates five companies to provide better reports on the new embedded analytics within workspace. Filter the embedded analytics to the following legal entities for the improved report data:
 
 | Legal entity | Description                          |
 |--------------|--------------------------------------|
@@ -70,53 +70,53 @@ Demo data has been updated in five companies to provide better reports on the ne
 | USRT         | Contoso Retail USA                   |
 | USSI         | Contoso Consulting USA               |
 
-Reports from the Cash overview Power BI content are displayed in the **Cash overview** and **Bank management** workspaces.
+Reports from the Cash overview Power BI content display in the **Cash overview** and **Bank management** workspaces.
 
-To view the Cash flow forecasting reports with data, you must first run the forecast calculation process using the **Calculate cash flow forecasts** function from the **Cash and bank management area**. This needs to be completed for each company included in the forecast. You then need to refresh the LedgerCovLiquidityMeasurement aggregate measure on the **Entity Store** page.
+To view the Cash flow forecasting reports with data, you must first run the forecast calculation process by using the **Calculate cash flow forecasts** function from the **Cash and bank management area**. You need to complete this process for each company included in the forecast. You then need to refresh the LedgerCovLiquidityMeasurement aggregate measure on the **Entity Store** page.
 
-For demonstration purposes, you can add cash flow forecasting demo data using the **Generate data** page from the **Demo data** module. This script will insert data into the cash flow forecasting tables to quickly populate information necessary for reports.
+For demonstration purposes, you can add cash flow forecasting demo data by using the **Generate data** page from the **Demo data** module. This script inserts data into the cash flow forecasting tables to quickly populate information necessary for reports.
 
-The credit and collections analytics can be viewed on the **Manage customer credit and collections** workspace. To view the analytics you need to refresh the CustCollectionsBIMeasurements aggregate measure on the **Entity Store** page.
+You can view the credit and collections analytics on the **Manage customer credit and collections** workspace. To view the analytics, you need to refresh the CustCollectionsBIMeasurements aggregate measure on the **Entity Store** page.
 
-The vendor payments analytics can be viewed on the **Vendor payments** workspace. To view the analytics, you need to refresh the VendPaymentBIMeasure aggregate measure on the **Entity Store** page.
+You can view the vendor payments analytics on the **Vendor payments** workspace. To view the analytics, you need to refresh the VendPaymentBIMeasure aggregate measure on the **Entity Store** page.
 
-The Purchase performance analytics can be viewed on the **Purchase spend analysis** page from the Procurement and sourcing module. To view the analytics, you need to refresh the Purchase cube aggregate measure on the **Entity Store** page.
+You can view the Purchase performance analytics on the **Purchase spend analysis** page from the Procurement and sourcing module. To view the analytics, you need to refresh the Purchase cube aggregate measure on the **Entity Store** page.
 
-The Sales and profitability analytics can be viewed on the **Sales and profitability performance** page from the Sales and marketing module. To view the analytics, you need to refresh the sales cube aggregate measure on the **Entity Store** page.
+You can view the Sales and profitability analytics on the **Sales and profitability performance** page from the Sales and marketing module. To view the analytics, you need to refresh the sales cube aggregate measure on the **Entity Store** page.
 
-The production performance analytics can be viewed on the **Production performance** page from the Production control module. To view the analytics, you need to refresh the Production cube aggregate measure on the **Entity Store** page.
+You can view the production performance analytics on the **Production performance** page from the Production control module. To view the analytics, you need to refresh the Production cube aggregate measure on the **Entity Store** page.
 
-For demonstration purposes, you can add production performance demo data using the **Generate data** page from the Demo data module. This script will generate production orders and with associated feedback journals to populate the production performance reports with data.
+For demonstration purposes, you can add production performance demo data by using the **Generate data** page from the Demo data module. This script generates production orders and associated feedback journals to populate the production performance reports with data.
 
-The warehouse performance analytics can be viewed on the **Warehouse performance** page from the Warehouse management module. To view the analytics, you need to refresh the Warehouse aggregate measure on the **Entity Store** page.
+You can view the warehouse performance analytics on the **Warehouse performance** page from the Warehouse management module. To view the analytics, you need to refresh the Warehouse aggregate measure on the **Entity Store** page.
 
-For demonstration purposes, you can add warehouse performance demo data using the **Generate data** page from the Demo data module. This script will generate sales orders and warehouse work to populate the warehouse performance reports with data.
+For demonstration purposes, you can add warehouse performance demo data by using the **Generate data** page from the Demo data module. This script generates sales orders and warehouse work to populate the warehouse performance reports with data.
 
-The demo data module is only available if you have the Demo data suite model deployed on the environment.
+The demo data module is only available if you deploy the Demo data suite model on the environment.
 
 ## Vendor collaboration
 
-In the USMF demo company, there are three purchase orders for vendor US-104 to use for demonstration purposes. You can log in as user ErinH, who is a contact person who has access to vendor collaboration for US-104.
+In the USMF demo company, use three purchase orders for vendor US-104 for demonstration purposes. Sign in as user ErinH, a contact person who has access to vendor collaboration for US-104.
 
 ## Purchase order approval
 
-In the USMF demo company, there are two purchase orders for INGA to approve. You can log in as user INGA to see the purchase orders awaiting approval.
+In the USMF demo company, use two purchase orders for INGA to approve. Sign in as user INGA to see the purchase orders awaiting approval.
 
 ## Batch transfer rules for subledger journals
 
-The batch transfer rules for subledger journal account entries have been changed to **Scheduled batch** to reflect a best practice. The batches are configured to run every 10 minutes. It is important to understand that accounting entries for all source documents will not be reflected in General ledger until the batch process has run. If you have requirements to see the immediate effect in General ledger, set the **Transfer mode** to **Synchronous** on the **Batch transfer rules** page within **General ledger** parameters. While Synchronous works well for product demos and environments with low transaction volumes, it can cause performance issues in larger transaction volume environments.
+Change the batch transfer rules for subledger journal account entries to **Scheduled batch** to reflect a best practice. Configure the batches to run every 10 minutes. Accounting entries for all source documents don't appear in General ledger until the batch process runs. If you need to see the immediate effect in General ledger, set the **Transfer mode** to **Synchronous** on the **Batch transfer rules** page within **General ledger** parameters. While Synchronous works well for product demos and environments with low transaction volumes, it can cause performance issues in larger transaction volume environments.
 
-[![General ledger parameters.](../../fin-ops/get-started/media/GL-parameters.PNG)]
+:::image type="content" source="../../fin-ops/get-started/media/GL-parameters.PNG" alt-text="Screenshot of General ledger parameters.":::
 
 ## Cost accounting
 
-Three Cost accounting ledgers are created in demo data. The Cost accounting ledger USP2 provides an E2E demo experience based on data from legal entity USP2. The Cost control unit consists of 2 Cost object dimensions (Cost centers and Product groups). Actual cost, Budget cost and Statistical measures are transferred for all 12 fiscal periods of year 2017. Overhead calculation has also been performed for all fiscal periods of year 2017.
+Create three Cost accounting ledgers in demo data. The Cost accounting ledger USP2 provides an E2E demo experience based on data from legal entity USP2. The Cost control unit consists of two Cost object dimensions (Cost centers and Product groups). Actual cost, Budget cost, and Statistical measures are transferred for all 12 fiscal periods of year 2017. Overhead calculation is also performed for all fiscal periods of year 2017.
 
-Access level security is configured but not enabled. This is enabled in the **Cost accounting parameters** page.
+Configure but don't enable access level security. Enable this security in the **Cost accounting parameters** page.
 
-[![Cost accounting parameters.](../../fin-ops/get-started/media/Cost-accounting-parameters.PNG)]
+:::image type="content" source="../../fin-ops/get-started/media/Cost-accounting-parameters.PNG" alt-text="Screenshot of Cost accounting parameters.":::
 
-After Access level security has been enabled, you can assign an employee to the role Cost object controller. You can log in as the employee and access the **Cost control** workspace. The employee can now see their Cost center performance and drill into details of how these were calculated.
+After you enable access level security, assign an employee to the role Cost object controller. Sign in as the employee and access the **Cost control** workspace. The employee can now see their Cost center performance and drill into details of how these values were calculated.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
