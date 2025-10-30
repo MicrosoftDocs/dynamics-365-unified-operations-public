@@ -1,5 +1,5 @@
 ---
-title: Prepare for finance and operations apps User License Validation
+title: Playbook for finance and operations apps User License Validation
 description: Learn how to validate user licenses in finance and operations apps with this step-by-step playbook. Ensure compliance and prevent access disruptions.
 author: ianceicys-msft
 ms.author: ceian
@@ -14,15 +14,15 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-# Prepare for finance and operations apps user license validation
+# Playbook for finance and operations apps user license validation
 
-This article helps administrators prepare for **per-user license validation** for Dynamics 365 finance and operations apps. It provides **step-by-step** guidance to align licensing with security roles and prevent user access disruptions when per-user license validation goes into effect.
+This playbook helps administrators prepare for **per-user license validation** for Dynamics 365 finance and operations apps. It provides **step-by-step** guidance to align licensing with security roles and prevent user access disruptions when per-user license validation goes into effect.
 
 Each step includes **Why**, **What**, and **How** explanations that are clear, actionable, and aligned with security governance best practices.
 
 Where appropriate, you can find tables that organize information such as license types, report paths, and validation outcomes.
 
-Use this article sequentially for best results, and **repeat** Steps **3–6** periodically as your security model and user base evolve.
+Use this playbook sequentially for best results, and **repeat** Steps **3–6** periodically as your security model and user base evolve.
 
 ## Before you start
 
@@ -96,6 +96,8 @@ For each inactive user, go to **System administration → Users → User** and s
 Wait 24 hours to confirm inactive users are no longer included in the license reports ([Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations) / [Lifecycle Services](https://lcs.dynamics.com/v2) and User Security Governance).
 
 ## Step 3: Familiarize Yourself with the Licensing Model
+
+ :::image type="content" source="media/playbook-step-3-familiarize-yourself-with-the-licensing-model.png" alt-text="Familiarize Yourself with the Licensing Model" lightbox="media/playbook-step-3-familiarize-yourself-with-the-licensing-model.png":::
 
 #### Why
 Dynamics 365 finance and operations apps use a **named user** model that ties **roles, duties, and privileges** to license requirements. If you don't understand the model, you might face **under-license risk** or **over-purchasing**.
