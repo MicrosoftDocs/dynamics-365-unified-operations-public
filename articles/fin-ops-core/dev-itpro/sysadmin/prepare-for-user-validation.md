@@ -1,6 +1,6 @@
 ---
-title: Playbook for finance and operations apps User License Validation
-description: Learn how to validate user licenses in finance and operations apps with this step-by-step playbook. Ensure compliance and prevent access disruptions.
+title: Prepare for finance and operations apps User License Validation
+description: Learn how to validate user licenses in finance and operations apps with this step-by-step guide. Ensure compliance and prevent access disruptions.
 author: ianceicys-msft
 ms.author: ceian
 ms.topic: how-to
@@ -14,15 +14,15 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-# Playbook for finance and operations apps user license validation
+# Prepare for finance and operations apps user license validation
 
-This playbook helps administrators prepare for **per-user license validation** for Dynamics 365 finance and operations apps. It provides **step-by-step** guidance to align licensing with security roles and prevent user access disruptions when per-user license validation goes into effect.
+This article helps administrators prepare for **per-user license validation** for Dynamics 365 finance and operations apps. It provides **step-by-step** guidance to align licensing with security roles and prevent user access disruptions when per-user license validation goes into effect.
 
 Each step includes **Why**, **What**, and **How** explanations that are clear, actionable, and aligned with security governance best practices.
 
 Where appropriate, you can find tables that organize information such as license types, report paths, and validation outcomes.
 
-Use this playbook sequentially for best results, and **repeat** Steps **3–6** periodically as your security model and user base evolve.
+Use this article sequentially for best results, and **repeat** Steps **3–6** periodically as your security model and user base evolve.
 
 ## Before you start
 
