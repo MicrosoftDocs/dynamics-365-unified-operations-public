@@ -97,8 +97,6 @@ Wait 24 hours to confirm inactive users are no longer included in the license re
 
 ## Step 3: Familiarize Yourself with the Licensing Model
 
- :::image type="content" source="media/playbook-step-3-familiarize-yourself-with-the-licensing-model.png" alt-text="Familiarize Yourself with the Licensing Model" lightbox="media/playbook-step-3-familiarize-yourself-with-the-licensing-model.png":::
-
 #### Why
 Dynamics 365 finance and operations apps use a **named user** model that ties **roles, duties, and privileges** to license requirements. If you don't understand the model, you might face **under-license risk** or **over-purchasing**.
 
