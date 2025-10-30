@@ -30,7 +30,7 @@ The Supplier Communications Agent helps you perform the following actions:
 
 By default, the system provides two premade queries that you can use to find purchase orders that require action:
 
-- *Unconfirmed purchase orders* – This query finds purchase orders that are assigned to you, that have a delivery date within the next 60 days, but that the vendor didn't yet confirm (that is, the confirmed delivery date is blank). The query uses the following specific criteria:
+- *Unconfirmed purchase orders* – This query finds purchase orders that are assigned to you, have a delivery date within the next 60 days, and aren't yet confirmed by the vendor (that is, the confirmed delivery date is blank). The query uses the following specific criteria:
 
     - The **Confirmed delivery date** field is blank.
     - The **Owner** field is set to your user account (the current user).
@@ -59,7 +59,7 @@ The following procedure explains how to set up queries to find purchase orders t
 
 1. Edit the name of the query as required. (The default name is *Draft follow-up emails for purchase orders*.)
 1. Select whether you want the query to find unconfirmed purchase order or delayed purchase orders.
-1. Modify the criteria to define which purchase orders require follow-up. For example, you might want the query to find orders for the next two months that aren't yet confirmed, orders that were created more than three days ago, or orders that were sent but not confirmed.
+1. Modify the criteria to define which purchase orders require follow-up. For example, you might want the query to find unconfirmed orders for the next two months, orders that were created more than three days ago, or orders that were sent but not confirmed.
 
     - If you selected to have the query find delayed purchase orders, the following default criteria are used:
 
@@ -75,7 +75,7 @@ The following procedure explains how to set up queries to find purchase orders t
         - The **Document status** field on the header is set to a value other than *None*.
 
 1. Select the fields that should be included in the email, such as the delivery dates or the address.
-1. To add a signature, select **Signature**, and enter the desired text. You can also add an email footer that has the text, "This email was written with the help of AI." 
+1. To add a signature, select **Signature**, and enter the desired text. You can also add an email footer that has the text, "This email was written with the help of AI."
 
     > [!IMPORTANT]
     > If your system is set up to send emails automatically, the email footer is mandatory.
@@ -123,16 +123,18 @@ When the feature is turned on, the email address of the administrator who set up
 
 Learn more in [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
 
-## Batch jobs
+## Use batch jobs to schedule automatic runs of the agent
 
-To schedule automatic runs of the Supplier Communications Agent, a related batch job already exists, located in **System Administration** \> **Inquiries** \> **Batch jobs**. 
+Supply Chain Management includes a batch job that you can use to schedule automatic runs of the Supplier Communications Agent. To set up and schedule the job, follow these steps:
 
-The name of the batch job is the same as the name of the task: *Send follow-up emails to vendors with Supplier Communications Agent*. To locate it, apply a filter on the **Job description** column in the batch jobs list view. 
+1. Go to **System Administration** \> **Inquiries** \> **Batch jobs**.
+1. Find and select the batch job that has a **Job description** of *Send follow-up emails to vendors with Supplier Communications Agent*. To locate it quickly, use the filter on the **Job description** column header.
 
-<img width="725" height="280" alt="Batch Job Name Image Caption" src="https://github.com/user-attachments/assets/897cde3d-b623-423c-b36e-7f5c7b5a7f25" />
+    :::image type="content" source="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png" alt-text="Screenshot showing the column filter for finding a batch job by its description." lightbox="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png":::
 
-Once the batch job selected, click on **Recurrence**, which opens a side panel containing the parameters for running the job.
+1. With the job selected, select **Recurrence** from the Action Pane.
+1. In the **Define recurrence** dialog, set up the run schedule as required, and then select **OK**.
 
-<img width="412" height="494" alt="Recurrence found on upper menu" src="https://github.com/user-attachments/assets/f7712a4e-373a-4330-a676-ae0a9f8983d5" />
+    :::image type="content" source="media/supplier-com-agent-follow-up/supplier-agent-batch-job-schedule.png" alt-text="Screenshot showing the settings provided for scheduling a batch job." lightbox="media/supplier-com-agent-follow-up/supplier-agent-batch-job-schedule.png":::
 
-Back on the batch jobs list view, clicking on the **Job ID** of the batch job opens a page with further information on the parameters and the related job tasks.
+1. To get more information and to adjust other settings for the batch job, select the link in the **Job ID** column.
