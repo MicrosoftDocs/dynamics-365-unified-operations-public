@@ -1911,8 +1911,12 @@ items:
           href: sysadmin/extensible-data-security-policies.md
         - name: Create a security policy
           href: sysadmin/create-simple-security-policy.md
-      - name: Stay compliant with user licensing requirements
-        href: sysadmin/stay-compliant-user-license-requirement.md
+      - name: Compliance
+        items:
+        - name: Stay compliant with user licensing requirements
+          href: sysadmin/stay-compliant-user-license-requirement.md
+        - name: Prepare for User validation
+          href: sysadmin/prepare-for-user-validation.md
       - name: View independent software vendor license status
         href: sysadmin/view-isv-license-status.md
       - name: Process automation
