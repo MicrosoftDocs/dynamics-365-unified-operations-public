@@ -29,6 +29,17 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Finance release
+### Budget proposal (Finance insights)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+|Reason for deprecation/removal|Low adoption and dependency on deprecated components (Data Lake Writer, Data Integrator). Strategic shift toward Business performance planning.|
+|Replaced by another feature? |Yes – Business performance planning, which offers driver-based planning, workflow approvals, Excel/Power BI integration, and Dataverse compatibility.|
+|Product areas affected |Application|
+|Deployment option |All|
+|Status | Deprecated: By October 31, 2025, the Budget proposal feature will be removed from Dynamics 365 Finance Insights. End-of-service is scheduled for January 31, 2026. Customers should transition to Business performance planning for budgeting capabilities. |
+
 ## Features removed or deprecated in the Finance 10.0.46 release
 
 ### Esterometro formats in Italy: Customers invoices (IT), Vendor invoices (IT)
