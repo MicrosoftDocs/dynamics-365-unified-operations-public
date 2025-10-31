@@ -205,6 +205,25 @@ The Adyen payment connector can be configured to communicate with devices via th
 1. On the **PIN pad** FastTab, in the **PIN pad** field, select **Network**.
 1. In the **Device name** field, enter **MicrosoftAdyenDeviceV001**.
 
+##### Route to the region specific Adyen endpoint for payment terminals
+Starting 10.0.44, region specific end points can be used for Adyen end points. Here are list of supported values that can be entered in the **Gateway environment** property of the payment connector in the hardware profile used by the POS register.
+ 
+- test
+- live
+- live-us
+- live-au
+- live-apse
+ 
+> [!NOTE]
+> The **Optional Domain** property of the payment connector should be empty for Point of Sale use; if specified, it will be ignored. 
+ 
+This change is behind a flight named **UseNewGatewayMappingForTerminal** and its status for various versions is described below:  
+
+Version **10.0.46** - enabled by default  
+Version **10.0.45** and **10.0.44** - disabled by default
+ 
+For versions **10.0.44** and **10.0.45**, the customers can enable this functionality themselves by adding **"UseNewGatewayMappingForTerminal": true** in the **Custom settings** property of the connector.
+
 #### Set up a Dynamics 365 register
 
 > [!NOTE]
@@ -297,6 +316,26 @@ To configure the Adyen connector for online stores, follow these steps.
 >      1. Run the **1070** and **1110** distribution schedule jobs. Once these jobs are completed, you must contact Adyen customer support to set the **checkoutThreeDS1AuthorisationBehavior** parameter to **Manual** for your merchant account.
 > -  Starting with Commerce version 10.0.43, you don't need to update the **Custom settings** property in Commerce headquarters because it's enabled by default. However, you must still contact Adyen customer support to set the **checkoutThreeDS1AuthorisationBehavior** parameter to **Manual** for your merchant account. 
 
+### Route to the region specific Adyen endpoint for call center and online stores
+Starting 10.0.44, region specific end points can be used for Adyen end points. Here are list of supported values that can be entered in the **Gateway environment** property of the payment connector in the Payment services form (for call center) or Online store form (for E-commerce).
+ 
+- test
+- live
+- live-us
+- live-au
+- live-apse
+ 
+A **prefix is required** for all live gateways (includes live-xx) to ensure all requests are correctly routed to the correct server. To find the Prefix value, navigate to Adyen portal, under **Developers -> API URLs** section, select the appropriate data center based on your region and copy the Prefix value. Paste this prefix in the **Optional Domain** property of the Payment connector under Payment services form or Online store form, depending on the channel you are making this change. Adyen's guidance is to use endpoints geographically closest to the region in which your infrastructure is deployed. To use location-based live endpoints, contact the Adyen Support team. 
+
+> [!IMPORTANT]
+> If the Optional Domain (aka Prefix) is not specified, then payment processing issues will occur, because the checkout gateway will use incorrect endpoint.
+
+This change is behind a flight named **UseNewGatewayMapping** and its status for various versions is described below:  
+Version **10.0.46** - enabled by default  
+Version **10.0.45** and **10.0.44** - disabled by default 
+ 
+For versions **10.0.44** and **10.0.45**, the customers can enable this functionality themselves by adding **"UseNewGatewayMapping": true** in the **Custom settings** property of the connector.  
+
 ## Next steps
 
 For answers to frequently asked questions regarding the Dynamics 365 Payment Connector for Adyen, see [Dynamics 365 Payment Connector for Adyen FAQ](adyen-connector-faq.md).
@@ -312,3 +351,4 @@ For answers to frequently asked questions regarding the Dynamics 365 Payment Con
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
+
