@@ -131,7 +131,7 @@ To enable this feature functionality, follow these steps
 1. To apply the changes, run the **1110 - Global configuration** job.
 
 > [!NOTE]
-> If you're using Adyen Castles devices with printing capability and you want to allow multiple gift card activations in a single transaction, in the **Custom settings** property of the Adyen connector setup,  add **"BypassPrintBehaviorOnFundingGiftCards":true**. Without this property configuration, the Castles device tries to print a receipt after each gift card operation, which blocks the activation/balance addition process after the first gift card is processed.
+> If you're using payment terminals with integrated printing capability and you want to allow multiple gift card activations in a single transaction, in the **Custom settings** property of the Adyen connector setup,  add **"BypassPrintBehaviorOnFundingGiftCards":true**. Without this property configuration, the payment terminal tries to print a receipt after each gift card operation, which blocks the activation/balance addition process after the first gift card is processed.
 
 > [!IMPORTANT]
 > Microsoft strongly recommends that you enable this feature to streamline gift card operations and minimize risk.
