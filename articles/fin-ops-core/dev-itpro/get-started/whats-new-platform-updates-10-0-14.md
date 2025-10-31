@@ -1,10 +1,10 @@
 ---
 title: Platform updates for version 10.0.14 of finance and operations apps (November 2020)
-description: Learn aboutthe features are included in the platform updates for version 10.0.14 of finance and operations apps.
+description: Learn about the features are included in the platform updates for version 10.0.14 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: whats-new
-ms.date: 07/12/2024
+ms.date: 10/31/2025
 ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
@@ -27,17 +27,15 @@ This article lists the features that are included in the platform updates for ve
 
 ## Features included in this release
 
--  [**Enable a drop-down list on multi-line controls**](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/enable-dropdown-list-multi-line-controls)<br>- This feature adds drop-down lists/lookup capabilities for multi-line string controls. Previously, only single-line input controls permitted drop-down lists.<br>- For more information about enabling lookup behavior on any control, see 
-[Lookup controls](../user-interface/lookups-controls.md).
+- [**Enable a drop-down list on multi-line controls**](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/enable-dropdown-list-multi-line-controls)<br>- This feature adds drop-down lists and lookup capabilities for multi-line string controls. Previously, only single-line input controls permitted drop-down lists.<br>- For more information about enabling lookup behavior on any control, see [Lookup controls](../user-interface/lookups-controls.md).
 
--  [**Updates to the (Preview) Grouping in grids feature**](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/grouping-subtotals-grids-general-availability)<br>- With this update, you can now expand/collapse groups and select or unselect all rows in a group.<br>- For more information, see 
-[Grid capabilities](../../fin-ops/get-started/grid-capabilities.md).
+- [**Updates to the (Preview) Grouping in grids feature**](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/grouping-subtotals-grids-general-availability)<br>- With this update, you can now expand or collapse groups and select or unselect all rows in a group.<br>- For more information, see [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md).
 
 ## Additional resources
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=488609&dbType=3&qc=8251e8e1d5e2386de850599926c1adc3fec8e2ba25308036d22cdfe0a1c28fc7).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=488609&dbType=3&qc=8251e8e1d5e2386de850599926c1adc3fec8e2ba25308036d22cdfe0a1c28fc7).
 
 ### Dynamics 365: 2020 release wave 2 plan
 
@@ -52,9 +50,8 @@ The [Removed or deprecated platform features](../../fin-ops/get-started/removed-
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.
 
-A deprecation notice will be added in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
+A deprecation notice is added in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
 
-For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
-
+For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

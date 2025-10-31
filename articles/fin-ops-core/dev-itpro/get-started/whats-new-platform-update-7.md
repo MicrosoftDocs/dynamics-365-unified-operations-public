@@ -20,29 +20,29 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-This article describes features that are either new or changed in Dynamics 365 for Operations platform update 7. This version was released in May 2017 and has a build number of 7.0.4542.16189.
+This article describes features that are new or changed in Dynamics 365 for Operations platform update 7. This version was released in May 2017 and has a build number of 7.0.4542.16189.
 
 ## Configuration data projects
 
-Using a configuration data project, you can easily export configuration data and move it from one instance to another instance. This feature provides an updated user interface, and the ability to easily manage templates and projects. For more details, refer to [Configuration data projects](../data-entities/configuration-data-projects.md).
+By using a configuration data project, you can easily export configuration data and move it from one instance to another instance. This feature provides an updated user interface, and the ability to easily manage templates and projects. For more information, see [Configuration data projects](../data-entities/configuration-data-projects.md).
 
 ## Static export to Excel limit increase from 2k to 10k
 
-The static Export to Excel limit has been increased from 2k to 10k to allow more rows to be exported from a grid. If there is an entity representing the data in the grid we recommended that you use Open in Excel and the Excel Add-in instead, since there is no hard row limit. In addition, if there is an entity and the user has admin privileges then DIXF (data management) is also an option. For more information, see [Open entity data in Excel and update it by using the Excel add-in](../../fin-ops/mobile-apps/use-excel-add-in.md).
+The static Export to Excel limit is increased from 2,000 to 10,000 to allow more rows to be exported from a grid. If there's an entity representing the data in the grid, use Open in Excel and the Excel Add-in instead, since there's no hard row limit. In addition, if there's an entity and the user has admin privileges, then DIXF (data management) is also an option. For more information, see [Open entity data in Excel and update it by using the Excel add-in](../../fin-ops/mobile-apps/use-excel-add-in.md).
 
 ## Development tooling – New tabbed workspace pattern
 
-A new tabbed workspace form pattern is now available. You can now include tab pages that house embedded Power BI reports. This feature is our first step toward moving away from horizontally-scrolling workspaces. For more information, see [Workspace form pattern](../user-interface/workspace-form-pattern.md).
+A new tabbed workspace form pattern is now available. You can now include tab pages that house embedded Power BI reports. This feature is the first step toward moving away from horizontally scrolling workspaces. For more information, see [Workspace form pattern](../user-interface/workspace-form-pattern.md).
 
 ## Development and customization – Extending a group control
 
-The Dynamics 365 for Operations development tools and runtime platform now support extending an extended form, for example, extending a form that is already extended in a referenced model. This fixes an issue that originally prevented extending a field/button group control if the group control belongs to a form extension.
+The Dynamics 365 for Operations development tools and runtime platform now supports extending an extended form, for example, extending a form that is already extended in a referenced model. This fix addresses an issue that originally prevented extending a field or button group control if the group control belongs to a form extension.
 
-## Development and customization – Extending the Country Region Codes property
+## Development and customization – Extending the Country or Region Codes property
 
-The **Country Region Codes** property enables developers to restrict functionality to certain regions or countries/regions based on the current legal entity's primary address. The **Country Region Codes** property is editable on the following extension element types: Menu extension, Menu Item extension, Table extension (and fields), Form extensions (form controls), EDT extensions, Enum extensions, and View extensions.
+The **Country Region Codes** property enables developers to restrict functionality to certain regions or countries/regions based on the current legal entity's primary address. You can edit the **Country Region Codes** property on the following extension element types: Menu extension, Menu Item extension, Table extension (and fields), Form extensions (form controls), EDT extensions, Enum extensions, and View extensions.
 
-A developer can specify additional country/region codes in their extension. The effective country/regions associated with an element will be the union of all codes from the baseline element and all its extensions.
+A developer can specify additional country or region codes in their extension. The effective countries or regions associated with an element are the union of all codes from the baseline element and all its extensions.
 
 ## Development and customization – Validating events on form data sources and form data source fields
 

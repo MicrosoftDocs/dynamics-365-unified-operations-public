@@ -4,7 +4,7 @@ description: Learn about the features that are included in the platform updates 
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: whats-new
-ms.date: 07/12/2024
+ms.date: 10/31/2025
 ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
@@ -27,11 +27,11 @@ This article lists the features that are included in the platform updates for ve
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
+This release includes the following features. Some of the listed features are still in preview, while others are generally available. See the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
--  [Pass legal entity context to embedded canvas apps](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/pass-legal-entity-context-embedded-canvas-apps)<br>For more information, see [Embed canvas apps from Power Apps](../../fin-ops/get-started/embed-power-apps.md).
+- [Pass legal entity context to embedded canvas apps](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/pass-legal-entity-context-embedded-canvas-apps)<br>For more information, see [Embed canvas apps from Power Apps](../../fin-ops/get-started/embed-power-apps.md).
 
--  [Visual update for wizards](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/visual-update-wizards)
+- [Visual update for wizards](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/visual-update-wizards)
 
 Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
@@ -39,7 +39,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops/
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=575415).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=575415).
 
 ### Dynamics 365: 2021 release wave 1 plan
 
@@ -54,7 +54,7 @@ The [Removed or deprecated platform features](../../fin-ops/get-started/removed-
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.
 
-A deprecation notice will be added in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
+A deprecation notice is added in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
 
-For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
+For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
 
