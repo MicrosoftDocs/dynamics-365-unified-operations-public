@@ -143,7 +143,7 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Optional Domain | The optional domain is required for live environments and should be obtained by contacting Adyen. This domain is the unique identifier for your live environment in the format **[random]-[company name]**, and is present as the prefix inside the API URLs under **Account \> API URLs** in your company's live account on the Adyen Customer Area portal. For more information, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints).| Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
-    | Terminal architecture | This field must be set to **Local** for local communications. For more information about the different Terminal API architectures, see the [Introducing the Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) page on the Adyen website. | Yes | Yes | Local |
+    | Terminal architecture | This field must be set to **Local** for local communications. | Yes | Yes | Local |
     | Local Password phrase | Enter the Adyen key passphrase for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | keypassphrase123 |
     | Local Key Identifier | Enter the Adyen key identifier for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | mykey |
     | Local Key Version | Enter the Adyen key version for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | 0 |
@@ -180,7 +180,7 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Optional Domain | The optional domain is required for live environments and should be obtained by contacting Adyen. This domain is the unique identifier for your live environment in the format **[random]-[company name]**, and is present as the prefix inside the API URLs under **Account \> API URLs** in your company's live account on the Adyen Customer Area portal. For more information, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints).| Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
-    | Terminal architecture | This field must be set to **Cloud** for cloud communication with the payment terminal. For more information about the different terminal API architectures, see the [Introducing the Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) page on the Adyen website. | Yes | Yes | Cloud |
+    | Terminal architecture | This field must be set to **Cloud** for cloud communication with the payment terminal. | Yes | Yes | Cloud |
     | Local Password phrase | This setting is used for local payment terminal communication only. | No | No | *leave blank* |
     | Local Key Identifier | This setting is used for local payment terminal communication only. | No | No | *leave blank* |
     | Local Key Version | This setting is used for local payment terminal communication only. | No | No | *leave blank* |
@@ -351,4 +351,5 @@ For answers to frequently asked questions regarding the Dynamics 365 Payment Con
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
+
 
