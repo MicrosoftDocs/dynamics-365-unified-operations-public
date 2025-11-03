@@ -16,11 +16,15 @@ ms.date: 10/08/2025
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Finance and operations apps let you create AI tools to extend the capabilities of copilot experiences in Microsoft Copilot Studio. These tools can be added to the in-app Copilot for finance and operations apps, other Microsoft copilots or agents, or custom agents.
+Finance and operations apps let you create AI tools to extend the capabilities of agents and copilots that invoke business logic in finance and operations apps. These tools can be added to the in-app Copilot for finance and operations apps, other Microsoft copilots or agents, or custom agents.
 
-The tools that you create can use the finance and operations business logic that you want to use in your agents across Microsoft products. These tools are headless operations. They don't require specific context in the finance and operations client. They're enabled by creating an X++ class deployed in the environment, decorated with attributes identifying the class as one that can be invoked from Microsoft Copilot Studio. The class has request and response parameters defining the inputs received from the agent, and the outputs returned after the business logic has been executed. 
+The tools that you create can use the finance and operations business logic that you want to use in your agents across Microsoft products. These tools are headless operations. They don't require specific context in the finance and operations client. They're enabled by creating an X++ class deployed in the environment, decorated with attributes identifying the class as one that can be invoked by an AI agent. The class has request and response parameters defining the inputs received from the agent, and the outputs returned after the business logic has been executed. 
 
-You can then create Dataverse and Copilot Studio objects that make the operation available as a tool in your agent. Users in copilot chat can invoke the business logic in natural language and receive copilot responses that are based on the business logic of the finance and operations code base, and agents can use the business logic as a tool in the orchestration.
+These classes with business logic can be invoked by agents in two ways:
+1. The classes are made available to find and invoke using the `find_actions` and `invoke_action` tools in the **Dynamics 365 ERP MCP** server. When the classes are created and deployed in the environment, and appropriate security is defined for the associated menu action item, the actions are automatically accessible through the MCP server. See [Use Model Context Protocol for finance and operations apps](copilot-mcp.md#using-actions-that-invoke-application-code) for more information on using the actions through Model Context Protocol.
+2. You can also build a separate API and related tool in Dataverse to call the class. If not using the MCP server, you would need to create Dataverse and Copilot Studio objects that make the operation available as a tool in your agent.
+
+Users in copilot chat or autonomous agents can then invoke the business logic in natural language and receive copilot responses that are based on the business logic of the finance and operations code base.
 
 Finance and operations apps offer many scenarios and opportunities for AI tools. The following table provides some examples.
 
