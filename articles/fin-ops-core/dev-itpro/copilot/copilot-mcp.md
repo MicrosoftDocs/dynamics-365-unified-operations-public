@@ -27,7 +27,8 @@ The [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-
 
 The **Dynamics 365 ERP MCP (Preview)** server provides a dynamic framework for agents to perform data operations and access the business logic of finance and operations apps. Developers can build agents that work with data and perform nearly any function that is available to a user through the application interface, without the need of custom code, connectors, or APIs. 
 
-> [!IMPORTANT] This feature is a preview feature. It's subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274). Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that customers can get eary access and provide feedback. Learn more about preview releases in [One version service updates FAQ](../../dev-itpro/get-started/one-version.md).
+> [!IMPORTANT]
+> This feature is a preview feature. It's subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274). Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that customers can get eary access and provide feedback. Learn more about preview releases in [One version service updates FAQ](../../dev-itpro/get-started/one-version.md).
 
 ## Prerequisites
 
@@ -38,7 +39,8 @@ Before you can use the Dynamics 365 ERP MCP (Preview) server, the following prer
 - The agent platform on which you are building your agent must be allowed in the **Allowed MCP Clients** form. See [Allowed MCP clients](copilot-mcp.md#allowed-mcp-clients) for more information.
 - Your environment is Tier 2 or above, or a Unified Developer Environment. The MCP server is not supported on Cloud Hosted Environments (CHE).
 
-> [!NOTE] An earlier version of the MCP server, known as the "static Dynamics 365 ERP MCP" server, is also available in public preview. This server, built on the Dataverse connector framework, has 13 tools enabling specific business functions for Dynamics 365 Finance and Supply Chain Management. This static server will be **retired in the 2026 calendar year**. The server is still available in finance and operations apps environments with version 10.0.2263.17 and greater. However, it is recommended that you use the new dynamic Dynamics 365 ERP MCP server that is the subject of this documentation to avoid disruption when the static server is retired.
+> [!NOTE]
+> An earlier version of the MCP server, known as the "static Dynamics 365 ERP MCP" server, is also available in public preview. This server, built on the Dataverse connector framework, has 13 tools enabling specific business functions for Dynamics 365 Finance and Supply Chain Management. This static server will be **retired in the 2026 calendar year**. The server is still available in finance and operations apps environments with version 10.0.2263.17 and greater. However, it is recommended that you use the new dynamic Dynamics 365 ERP MCP server that is the subject of this documentation to avoid disruption when the static server is retired.
 
 ## Dynamic MCP tools
 The tools in the MCP server work by enabling the agent to navigate server forms to complete tasks. The agent works with the application data and business logic through server APIs the same way a human would perform the task in the application client. Rather than having static tools for specific actions, like Find Approved Vendors or Release Purchase Requisition Lines, the agent uses the tools to open forms, set field values, and click actions available on the form. This interaction pattern unlocks millions of ERP functions across the Dynamics 365 ERP applications, which become instantly accessible through MCP. The agent works with the application like a human with the same security access would perform the actions.
