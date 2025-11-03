@@ -36,6 +36,7 @@ Before you can use the Dynamics 365 ERP MCP (Preview) server, the following prer
 - The product version of finance and operations apps must be at least **10.0.2428.15**.
 - The **(Preview) Dynamics 365 ERP Model Context Protocol server** feature must be enabled in [Feature Management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 - The agent platform on which you are building your agent must be allowed in the **Allowed MCP Clients** form. See [Allowed MCP clients](copilot-mcp.md#allowed-mcp-clients) for more information.
+- Your environment is Tier 2 or above, or a Unified Developer Environment. The MCP server is not supported on Cloud Hosted Environments (CHE).
 
 > [!NOTE] An earlier version of the MCP server, known as the "static Dynamics 365 ERP MCP" server, is also available in public preview. This server, built on the Dataverse connector framework, has 13 tools enabling specific business functions for Dynamics 365 Finance and Supply Chain Management. This static server will be **retired in the 2026 calendar year**. The server is still available in finance and operations apps environments with version 10.0.2263.17 and greater. However, it is recommended that you use the new dynamic Dynamics 365 ERP MCP server that is the subject of this documentation to avoid disruption when the static server is retired.
 
@@ -43,7 +44,13 @@ Before you can use the Dynamics 365 ERP MCP (Preview) server, the following prer
 The tools in the MCP server work by enabling the agent to navigate server forms to complete tasks. The agent works with the application data and business logic through server APIs the same way a human would perform the task in the application client. Rather than having static tools for specific actions, like Find Approved Vendors or Release Purchase Requisition Lines, the agent uses the tools to open forms, set field values, and click actions available on the form. This interaction pattern unlocks millions of ERP functions across the Dynamics 365 ERP applications, which become instantly accessible through MCP. The agent works with the application like a human with the same security access would perform the actions.
 
 ### Dynamic context
-The context provided to the agent through the MCP server is dynamically updated with each tool call based on the agent's security permissions and application configuration, extensions, and personalization. This ensures the agent is working with an accurate view of available actions and data for the given context, and ensures that any extensions or personalization in the environment is automatically available for agents to access through the MCP framework.
+The context provided to the agent through the MCP server is dynamically updated with each tool call based on the agent's security permissions and application configuration, extensions, and personalization. This ensures the agent is working with an accurate view of available actions and data for the given context, and ensures that any extensions or personalization in the environment are automatically available for agents to access through the MCP framework.
+
+When the tools respond to the agent, they return the application view model to the agent orchestration. This is the same view model that is presented to the application to be rendered for a user in the client. The security role of the authenticated user for the agent determines which objects are returned in the view model. For example, if the agent is assigned a Purchasing Agent security role in finance and operations apps, then it will only have access to the objects assigned to the duties and privileges for that security role. 
+
+When the agent calls the `find_menu_item` tool, only menu items to which that security role has access will be returned to the agent. When the view model for a form is returned to the agent, only data, fields, and actions to which the user role has access will be included in the view model. Any explicit calls to actions or objects to which the user role does not have access will be rejected.
+
+Limiting the menu items with roles is important for limiting the scope of the agent. It's also a way to improve agent orchestration by limiting the context the agent needs to orchestrate over to find the right form, data, or actions.
 
 ### Dynamics 365 ERP MCP tools
 The following are the tools available in the Dynamics 365 ERP MCP (Preview) server. The agent orchestration uses these tools to translate natural language prompts into actions in the finance and operations apps environment.
