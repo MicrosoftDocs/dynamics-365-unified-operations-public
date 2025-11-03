@@ -34,7 +34,8 @@ The **Dynamics 365 ERP MCP (Preview)** server provides a dynamic framework for a
 Before you can use the Dynamics 365 ERP MCP (Preview) server, the following prerequisites must be met:
 
 - The product version of finance and operations apps must be at least **10.0.2428.15**.
-- The **(Preview) Dynamics 365 ERP Model Context Protocol server** feature must be enabled in [Feature Management](../../fin-ops/get-started/feature-management/feature-management-overview.md)
+- The **(Preview) Dynamics 365 ERP Model Context Protocol server** feature must be enabled in [Feature Management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
+- The agent platform on which you are building your agent must be allowed in the **Allowed MCP Clients** form. See [Allowed MCP clients](copilot-mcp.md#allowed-mcp-clients) for more information.
 
 > [!NOTE] An earlier version of the MCP server, known as the "static Dynamics 365 ERP MCP" server, is also available in public preview. This server, built on the Dataverse connector framework, has 13 tools enabling specific business functions for Dynamics 365 Finance and Supply Chain Management. This static server will be **retired in the 2026 calendar year**. The server is still available in finance and operations apps environments with version 10.0.2263.17 and greater. However, it is recommended that you use the new dynamic Dynamics 365 ERP MCP server that is the subject of this documentation to avoid disruption when the static server is retired.
 
@@ -71,10 +72,22 @@ In these situations a developer can write a class in finance and operations apps
 
 See [Create AI tools with finance and operations business logic](copilot-ai-plugins.md) for more information on creating AI tools that expose business logic and actions in the Dynamics 365 ERP MCP server.
 
+## Allowed MCP clients
+When the Dynamics 365 ERP MCP (Preview) server is enabled in the environment, the system administrator must determine which agent platforms are allowed to access the server. By default, only the following two platforms are allowed to access the MCP server:
+
+| Platform | Client ID |
+| -------- | --------- |
+| Microsoft Copilot Studio | 7ab7862c-4c57-491e-8a45-d52a7e023983 |
+| GitHub Copilot | aebc6443-996d-45c2-90f0-388ff96faa56 |
+
+The system administrator must explicitly grant access to any other agent platforms that will access the MCP server. To add new agent platforms you will need to:
+1. Register the application in Microsoft Entra ID. See [Register an application in Microsoft Entra ID](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app) for more information.
+2. Add the registered client ID value in the **Allowed MCP clients** form, setting the **Allowed** property to `true`.
+
 ## Known limitations
 The following are known limitations with the current implementation of the Dynamics 365 ERP MCP (Preview) server:
 1. **Language:** Menu labels, form labels, and enum labels are in US English (en-us).
 2. **Control limitations:** Agents cannot interact with some controls such as calendar controls, organization chart controls, or custom controls.
-3. **Available menu items:**The `find_menu_item` tool returns display and action menu items filtered by items in the left-side navigation pane and items that are accessible to a user role.
+3. **Available menu items:** The `find_menu_item` tool returns display and action menu items filtered by items in the left-side navigation pane and items that are accessible to a user role.
 4. **Form tabs:** Form tabs are closed by default. Agents must open form tabs to interact wwith the data and controls under the form tab.
 5. **Output menu items:** Output menu items, which generate and display reports or print results, are not supported in the MCP server.
