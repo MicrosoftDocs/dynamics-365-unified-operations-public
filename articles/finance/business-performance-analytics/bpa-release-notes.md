@@ -18,6 +18,9 @@ This article provides information about what's new or changed in Business perfor
 
 ## August 2025
 
+>[!Important]
+> To ensure quality, the August release of Business performance analytics is paused and will be available with the 2.5 release.  
+
 The August release of Business performance analytics version 2.4 and contains the following features.
 
 ## Feature enhancements
