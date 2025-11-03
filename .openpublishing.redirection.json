@@ -28499,6 +28499,11 @@
       "source_path": "articles/supply-chain/warehousing/configure-wave-schedule-work-creation.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/wave-processing",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/warehouse-app-install-certificate.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-migrating-from-v3-v4",
+      "redirect_document_id": false
     }
   ]
 
