@@ -189,7 +189,7 @@ The following table shows the high-level train schedule. It includes a descripti
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
-| Station 1 | October 27 to October 30, 2025 | NA |
+| Station 1 | November 10 to November 13, 2025 | NA |
 | Station 2 | Cancelled | Cancelled |
 | Station 3 | Cancelled | Cancelled |
 | Station 4 | Cancelled | Cancelled |
