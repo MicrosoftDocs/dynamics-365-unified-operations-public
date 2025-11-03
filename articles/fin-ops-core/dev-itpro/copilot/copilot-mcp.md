@@ -71,3 +71,10 @@ In these situations a developer can write a class in finance and operations apps
 
 See [Create AI tools with finance and operations business logic](copilot-ai-plugins.md) for more information on creating AI tools that expose business logic and actions in the Dynamics 365 ERP MCP server.
 
+## Known limitations
+The following are known limitations with the current implementation of the Dynamics 365 ERP MCP (Preview) server:
+1. **Language:** Menu labels, form labels, and enum labels are in US English (en-us).
+2. **Control limitations:** Agents cannot interact with some controls such as calendar controls, organization chart controls, or custom controls.
+3. **Available menu items:**The `find_menu_item` tool returns display and action menu items filtered by items in the left-side navigation pane and items that are accessible to a user role.
+4. **Form tabs:** Form tabs are closed by default. Agents must open form tabs to interact wwith the data and controls under the form tab.
+5. **Output menu items:** Output menu items, which generate and display reports or print results, are not supported in the MCP server.
