@@ -129,7 +129,3 @@ During the transition period, V3 and V4 can operate simultaneously in the same w
 - **End of support** – May 2026 (estimated).
 - **Feature development** – No new features will be developed for V3.
 - **Maintenance** – Critical bug fixes and security updates continue until the end of support.
-
-### Install Warehouse Management mobile app V4 on Windows
-
-Before you can install the app on Windows, you must install the certificate that is used to sign the app. For instructions, go to [Install Warehouse Management mobile app V4 on Windows](warehouse-app-install-certificate.md).
