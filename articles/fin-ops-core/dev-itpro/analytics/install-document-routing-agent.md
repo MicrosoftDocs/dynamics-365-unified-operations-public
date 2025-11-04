@@ -53,6 +53,21 @@ Applications use the Document Routing Agent to manage the spooling of documents 
 
 After the application is installed, you can begin to register local printers as network printers for the applications.
 
+> [!NOTE]
+> It's recommended to update the Document Routing Agent to the most current version whenever the application release on the environment has been updated, othgerwise you might experience issues such as:
+>
+> Observable performance degradation in applications, Document loss that is associated with orphaned print jobs, Inconsistent handling of printed documents that have custom margins
+>
+> For more information, see [Update the Document Routing Agent](upgrade-document-routing-agen.md).
+
+
+If you don't update existing installations of the DRA the most current version, you might experience issues such as:
+
+Observable performance degradation in applications
+Document loss that is associated with orphaned print jobs
+Inconsistent handling of printed documents that have custom margins
+
+
 ## Configure the Document Routing Agent
 Use the following procedure to configure the client application so that it can communicate with the Azure services that host the documents that are in-flight.
 
