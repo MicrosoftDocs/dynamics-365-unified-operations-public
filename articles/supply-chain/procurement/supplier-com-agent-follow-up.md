@@ -57,7 +57,7 @@ The following procedure explains how to set up queries to find purchase orders t
     - To delete an existing query, select it in the list, and then select **Delete**.
     - To create a new query, select **Configure agents**. Then, under **Library**, select **Send follow-up emails with Supplier Communications Agent**.
 
-1. Edit the name of the query as required. (The default name is *Draft follow-up emails for purchase orders*.)
+1. Edit the name of the query as required. (The default name is *Send follow-up emails for purchase orders*.)
 1. Select whether you want the query to find unconfirmed purchase order or delayed purchase orders.
 1. Modify the criteria to define which purchase orders require follow-up. For example, you might want the query to find unconfirmed orders for the next two months, orders that were created more than three days ago, or orders that were sent but not confirmed.
 
