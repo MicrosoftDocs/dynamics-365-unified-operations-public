@@ -2,7 +2,7 @@
 title: Support for external gift cards
 description: Learn how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 author: BrianShook
-ms.date: 09/25/2025
+ms.date: 11/04/2025
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -131,7 +131,7 @@ To enable this feature functionality, follow these steps
 1. To apply the changes, run the **1110 - Global configuration** job.
 
 > [!NOTE]
-> If you're using Adyen Castles devices with printing capability and you want to allow multiple gift card activations in a single transaction, in the **Custom settings** property of the Adyen connector setup,  add **"BypassPrintBehaviorOnFundingGiftCards":true**. Without this property configuration, the Castles device tries to print a receipt after each gift card operation, which blocks the activation/balance addition process after the first gift card is processed.
+> If you're using payment terminals with integrated printing capabilities and you want to allow multiple gift card activations in a single transaction, in the **Custom settings** property of the Adyen connector setup, add "BypassPrintBehaviorOnFundingGiftCards:true". Without this property configuration, the payment terminal tries to print a receipt after each gift card operation, which blocks the activation/balance addition process after the first gift card is processed.
 
 > [!IMPORTANT]
 > Microsoft strongly recommends that you enable this feature to streamline gift card operations and minimize risk.
