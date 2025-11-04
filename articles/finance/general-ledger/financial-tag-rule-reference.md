@@ -13,9 +13,9 @@ ms.search.form: DimensionFocus, LedgerTrialBalanceListPage, FinTagRule, Financia
 ms.dyn365.ops.version: 10.0.42
 ---
 
-[!include [banner](../includes/banner.md)]
-
 # Financial tag rule reference 
+
+[!include [banner](../includes/banner.md)]
 
 ## Fields supported for all journals
 
