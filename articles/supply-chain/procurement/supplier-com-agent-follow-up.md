@@ -137,4 +137,4 @@ The Supplier Communications Agent comes with a batch job which runs it automatic
 
     :::image type="content" source="media/supplier-com-agent-follow-up/supplier-agent-batch-job-schedule.png" alt-text="Screenshot showing the settings provided for scheduling a batch job." lightbox="media/supplier-com-agent-follow-up/supplier-agent-batch-job-schedule.png":::
 
-1. To get more information and to adjust other settings for the batch job, select the link in the **Job ID** column.
+1. To get more information and to adjust other settings for the batch job, return to **System Administration** \> **Inquiries** \> **Batch jobs** and select the link in the **Job ID** column.
