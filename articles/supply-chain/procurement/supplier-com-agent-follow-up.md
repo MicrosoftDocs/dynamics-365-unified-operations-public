@@ -123,12 +123,12 @@ When the feature is turned on, the email address of the administrator who set up
 
 Learn more in [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
 
-## Use a batch job to schedule automatic runs of the agent
+## Automatic runs of the agent
 
-Supply Chain Management includes a batch job that you can use to schedule automatic runs of the Supplier Communications Agent. To set up and schedule the job, follow these steps:
+Supply Chain Management includes a batch job runs of the Supplier Communications Agent automatically. To change the default configuration of the job, follow these steps:
 
 1. Go to **System Administration** \> **Inquiries** \> **Batch jobs**.
-1. Find and select the batch job that has a **Job description** of *Send follow-up emails to vendors with Supplier Communications Agent*. To locate it quickly, use the filter on the **Job description** column header.
+1. Find and select the batch job that has in **Job description** the same text as the name of the agent configuration as described in [Configure query criteria and email settings](supplier-com-agent-follow-up#configure-query-criteria-and-email-settings). For example, if the agent name is *Send follow-up emails to vendors with Supplier Communications Agent*, you can locate the batch job quickly, by using the same text as filter on the **Job description** column header.
 
     :::image type="content" source="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png" alt-text="Screenshot showing the column filter for finding a batch job by its description." lightbox="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png":::
 
