@@ -125,15 +125,15 @@ Learn more in [Configure and send email](../../fin-ops-core/dev-itpro/organizati
 
 ## Automatic runs of the agent
 
-Supply Chain Management includes a batch job runs of the Supplier Communications Agent automatically. To change the default configuration of the job, follow these steps:
+The Supplier Communications Agent comes with a batch job which runs it automatically. To change the default configuration of the job, follow these steps:
 
 1. Go to **System Administration** \> **Inquiries** \> **Batch jobs**.
-1. Find and select the batch job that has in **Job description** the same text as the name of the agent configuration as described in [Configure query criteria and email settings](supplier-com-agent-follow-up.md#configure-query-criteria-and-email-settings). For example, if the agent name is *Send follow-up emails to vendors with Supplier Communications Agent*, you can locate the batch job quickly, by using the same text as filter on the **Job description** column header. The agent name might differ in your own version, so it is a good practice to check the correct name, before proceeding.
+1. Find and select the job that has in **Job description** the same text as the name of the agent configuration as described in [Configure query criteria and email settings](supplier-com-agent-follow-up#configure-query-criteria-and-email-settings). For example, if the agent name is *Send follow-up emails to vendors with Supplier Communications Agent*, you can locate its batch job quickly, by using the same text as filter on the **Job description** column header.
 
     :::image type="content" source="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png" alt-text="Screenshot showing the column filter for finding a batch job by its description." lightbox="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png":::
 
-1. With the job selected, select **Recurrence** from the Action Pane.
-1. In the **Define recurrence** dialog, set up the run schedule as required, and then select **OK**.
+1. With the job selected, choose **Recurrence** from the Action Pane.
+1. In the **Define recurrence** dialog, set up the run schedule as desired, and then select **OK**.
 
     :::image type="content" source="media/supplier-com-agent-follow-up/supplier-agent-batch-job-schedule.png" alt-text="Screenshot showing the settings provided for scheduling a batch job." lightbox="media/supplier-com-agent-follow-up/supplier-agent-batch-job-schedule.png":::
 
