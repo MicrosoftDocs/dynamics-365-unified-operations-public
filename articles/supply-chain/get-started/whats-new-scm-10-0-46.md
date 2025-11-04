@@ -21,7 +21,7 @@ This article lists features that are either new or changed in Microsoft Dynamics
 
 - **Preview of release:** October 2025
 - **General availability of release (self-update):** December 2025
-- **General availability of release (auto-update):** February 2025
+- **General availability of release (auto-update):** February 2026
 
 ## Features included in this release
 
