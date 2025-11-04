@@ -37,6 +37,8 @@ Adding the MCP server to your agent provides the agent with all the tools availa
 
 After the **Dynamics 365 ERP MCP (Preview)** server is added, the agent has access to the tools on it and can use them to perform action for the related finance and operations apps. To view the list of tools on the server, open the tool in the agent, or see [Use Model Context Protocol for finance and operations apps](copilot-mcp.md) for more information.
 
+For additional information on configuration options for the MCP tools, see [Add tools and resources from a Model Context Protocol (MCP) server to your agent](https://learn.microsoft.com/microsoft-copilot-studio/mcp-add-components-to-agent).
+
 > [!NOTE]
 > The **Dynamics 365 ERP MCP** server is also available to select in Microsoft Copilot Studio. This server contains 13 static tools for specific actions in Dynamics 365 Finance and Supply Chain Management. Due to limitations in the server's scale and extensibility, this version of the server will be retired. We will continue to enhance the **Dynamics 365 ERP MCP (Preview)** server.
 
