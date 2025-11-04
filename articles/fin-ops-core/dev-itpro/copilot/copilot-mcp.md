@@ -95,8 +95,9 @@ The system administrator must explicitly grant access to any other agent platfor
 
 ## Known limitations
 The following are known limitations with the current implementation of the Dynamics 365 ERP MCP (Preview) server:
-1. **Language:** Menu labels, form labels, and enum labels are in US English (en-us).
-2. **Control limitations:** Agents cannot interact with some controls such as calendar controls, organization chart controls, or custom controls.
+1. **Language:** The MCP server is currently supported only in US English (en-us). If the authenticated user of the agent has a different locale specified, the form lebels and values returned in the tool context will be translated to the locale. However, any metadata or guidance provided in the MCP responses would be in English. 
+2. **Control limitations:** Agents cannot interact with some controls such as calendar controls, organization chart controls, list view, availability view, HTML editor, image, radio button, and time edit. Custom controls are also not supported.
 3. **Available menu items:** The `find_menu_item` tool returns display and action menu items filtered by items in the left-side navigation pane and items that are accessible to a user role.
 4. **Form tabs:** Form tabs are closed by default. Agents must open form tabs to interact wwith the data and controls under the form tab.
 5. **Output menu items:** Output menu items, which generate and display reports or print results, are not supported in the MCP server.
+6. **Attachments**: Attachments are not supported, including the document viewer DocuUpload, and FileUpload controls.
