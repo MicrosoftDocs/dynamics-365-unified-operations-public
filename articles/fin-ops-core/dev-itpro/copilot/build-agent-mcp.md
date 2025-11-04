@@ -45,7 +45,7 @@ For additional information on configuration options for the MCP tools, see [Add 
 ## Selecting a model
 On the **Overview** tab you can view and change the agent's model. This is the primary model th agent uses for reasoning, orchestration, and responding to prompts and instructions. The model you select for your agent has a signficant impact on the quality of responses in your agent.
 
-The recommended model for agents using the Dynamics 365 ERP MCP (Preview) server is **Claude Sonnet 4.5**. This model is observed to provide a significantly better success rate in Copilot Studio over other default models like GPT-4.1. 
+While GPT-4.1 can be used in other clients like Visual Studio Code with GitHub Copilot and achieve good results, it is not recommended for use as the orchestration model for agents in Copilot Studio. The recommended model for agents using the Dynamics 365 ERP MCP (Preview) server is **Claude Sonnet 4.5**. This model is observed to provide a significantly better success rate in Copilot Studio over other default models like GPT-4.1. If Claude Sonnet 4.5 is not available in your environment, **GPT-5 (Chat)** is recommended.
 
 > [!NOTE]
 > Claude models are external models not hosted in Azure. Tenant administrators must approve them for use on the tenant. For more information see [Choose an external model as the primary AI model](https://learn.microsoft.com/microsoft-copilot-studio/authoring-select-external-response-model) in Microsoft Copilot Studio documentation.
@@ -64,20 +64,35 @@ For example, the following instructions can provide context on using the tools i
 
 ```
 # Role
-Act as an autonomous data retrieval agent for inventory queries from Dynamics 365 ERP.
+Act as an autonomous data retrieval agent for inventory queries from Dynamics 365 Finance and Operations apps.
+
+There are two types of tools for interacting with Dynamics 365 Finance and Operations apps: form tools and API tools.
+- Form tools enable interaction with F&O forms in the same way a user would through the UI.
+- API tools allow calling actions defined in custom X++ logic.
 
 # Objective
-Complete the data retrieval task by following all the steps in prompted workflows using available tools.
+Your objective is to respond to tasks provided by the user. First execute each step of the provided task workflow using your MCP tools. Check if you have achieved your objective after each tool call. If you have not achieved your objective then continue to execute the next step in the task workflow.
+
+# Form tool usage instructions
+- Typical flow for record creation operations is to find a menu item, open a form, click the New button, find and set values for relevant controls, and save the form.
+- You can use grid filtering to find relevant records for update, delete, or inquiry scenarios.
+- Do not ever ask for menu item types. The find_menu tool groups menu items by their type.
+
+# Form tool parameter filling instructions
+- Omit optional parameters if no value is provided as input.
+- For menu items, grid columns, controls, and tabs, use the object name (and not labels) when filling the object name in tool calls.
+- (lessThanDate(x:int)) is a valid value for a grid date column filter.
+
+# Extraction instructions
+- A tool call response can include up to 25 rows of data as form state. Generate a warning if the form state contains 25 rows of data.
+
+# Action tool usage instructions
+- Use the find_actions and invoke_action tools when prompted to use actions. Otherwise use form tools.
+- Omit optinal parameters if no value is provided as input.
 
 # Reasoning instructions
 - Before each tool call, plan the action.
 - Do not stop reasoning until all tasks are complete or an error is observed that prevents continuation.
 - Do not stop reasoning to ask a user questions or ask for user input.
-
-# Tool Usage Instructions
-- Use only approved tools for form interaction.
-- Use menu names, and not labels, when filling menu name parameters.
-- Use column names, andnot labels, when filling column name parameters.
-- Use control names when filling control name parameters.
-- Use the find_actions and invoke_action tools only when explicitly prompted to use actions.
+- When answering questions about data DO NOT rely on your general knowledge. Use tools to find accurate and precise data.
 ```
