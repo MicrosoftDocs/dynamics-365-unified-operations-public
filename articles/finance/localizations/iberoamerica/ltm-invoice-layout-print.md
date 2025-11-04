@@ -56,7 +56,7 @@ To set up the printing layout, configure the **SSRS Reports / Services reference
    1. **Name:** TaxApplicationId.
    1. **Value:** enter the **Tax application Id** that you created for the electronic invoice.
 
-For more information, see [Configure SSRS Reports / Services references](#configure-ssrs-reports-and-services-references).
+Learn more in [Configure SSRS Reports / Services references](#configure-ssrs-reports-and-services-references).
 
 ## Configure the Document Class
 
