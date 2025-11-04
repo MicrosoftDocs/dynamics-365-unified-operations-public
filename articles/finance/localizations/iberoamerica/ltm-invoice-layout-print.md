@@ -31,8 +31,8 @@ Before you begin, ensure that the following prerequisites are met:
 | Mapping | :::no-loc text="Invoice model mapping LATAM"::: |
 | Format  | Country or region-specific ER configurations, such as :::no-loc text="**Fiscal Documents - Sales invoice (CL)**"::: |
 
-- Learn more in [Import electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md).
-- Configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md).
+- Learn more in [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+- Configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
 - Run the following two commands as an administrator from a PowerShell console.
 
@@ -89,7 +89,7 @@ To configure a printing layout, follow these steps:
 1. On the **Action Pane**, go to **Settings**, select **File**, and set **Enabled** to **Yes**.
 1. Back on the **Print management setup** page, complete the **Destination** field.
 
-   Learn more in [Configure print management record-specific ER destinations](#er-named-destinations).
+   Learn more in [Configure print management record-specific ER destinations](../../../fin-ops-core/dev-itpro/analytics/er-named-destinations.md).
 
 1. To configure project invoice formats, go to **Project management and accounting** \> **Setup** \> **Forms** \> **Forms setup**, and repeat steps 7 through 16.
 1. Go to the invoice journals or project invoice journal inquiry, and select a journal in the **Invoice** section. Then, on the Action Pane, select **Document** \> **View** \> **Use print management** to download the invoice layout report.
