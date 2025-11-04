@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 10/08/2025
+ms.date: 11/04/2025
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -17,6 +17,18 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 4.0.25.0
+
+Version 4.0.25.0 adds the following fixes and improvements:
+
+- Resolved a rendering issue on the **Item Inquiry** page.
+- Fixed a server request timeout that occurred after the quantity spinner component reset incorrectly when navigating between pages.
+- Stopped the quantity spinner from flickering when it landed between two values.
+- Enhanced diagnostic tools for improved troubleshooting.
+- Improved translation quality across the app.
+- Refined device code error messages for greater clarity.
+- Fixed a synchronization issue between the calculator and quantity spinner when using a comma as the decimal separator.
 
 ## Version 4.0.24.0
 
