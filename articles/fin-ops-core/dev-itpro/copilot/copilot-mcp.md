@@ -103,6 +103,7 @@ The following are known limitations with the current implementation of the Dynam
 6. **Output menu items:** Output menu items, which generate and display reports or print results, are not supported in the MCP server.
 7. **Attachments**: Attachments are not supported, including the document viewer DocuUpload, and FileUpload controls.
 8. **System admin forms:** Some forms related to system admin tasks, like feature management, user management, and managing security, are explicitly excluded from access to the MCP server. The following forms are excluded:
+   
    | Category | Form label | Form name |
    | -------- | --------- | ---------- |
    | Security | Security configuration | SysSecConfiguration |
@@ -114,5 +115,6 @@ The following are known limitations with the current implementation of the Dynam
    | User setup | User groups | SysUserGroupInfo |
    | Integrations | Microsoft Entra ID applications | SysAADClientTable |
    | Features | Feature Management | FeatureManagementWorkspace |
+
 9. **Advanced filters:** Advanced filters on grids are not supported. For example, "before", "after", and "between" operators for date columns are not supported. Only the "matches" operator is supported for filtering.
    
