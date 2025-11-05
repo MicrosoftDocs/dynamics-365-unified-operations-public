@@ -93,14 +93,14 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.44 PQU-2 | August 6, 2025 | August 11, 2025 to September 14, 2025| Completed |
 | 10.0.44 PQU-3 | September 3, 2025 | September 8, 2025 to October 12, 2025| Completed |
 | 10.0.44 PQU-4 | October 1, 2025 | October 6, 2025 to November 9, 2025| In-Progress |
-| 10.0.44 PQU-5 | October 29, 2025 | November 3, 2025 to January 11, 2026| Partially Cancelled |
-| 10.0.44 PQU-6 | November 26, 2025 | December 1, 2025 to January 18, 2026| Partially Cancelled |
+| 10.0.44 PQU-5 | October 29, 2025 | November 3, 2025 to January 11, 2026| Cancelled |
+| 10.0.44 PQU-6 | November 26, 2025 | December 1, 2025 to January 18, 2026| Cancelled |
 | 10.0.44 PQU-7 | December 31, 2025 | January 5, 2026 to February 8, 2026| Not Started |
 | 10.0.44 PQU-8 | January 21, 2026 | January 26, 2026 to February 28, 2026| Not Started |
 | 10.0.44 PQU-9 | February 22, 2026 | February 27, 2026 to April 1, 2026| Not Started |
 | 10.0.45 PQU-1 | October 8, 2025 | October 13, 2025 to November 16, 2025| In-Progress |
-| 10.0.45 PQU-2 | November 5, 2025 | November 10, 2025 to December 14, 2025| Partially Cancelled |
-| 10.0.45 PQU-3 | December 3, 2025 | December 8, 2025 to January 25, 2026| Partially Cancelled |
+| 10.0.45 PQU-2 | November 5, 2025 | November 10, 2025 to December 14, 2025| Cancelled |
+| 10.0.45 PQU-3 | December 3, 2025 | December 8, 2025 to January 25, 2026| Cancelled |
 | 10.0.45 PQU-4 | December 31, 2025 | January 5, 2026 to February 8, 2026| Not Started |
 | 10.0.45 PQU-5 | January 28, 2026 | February 2, 2026 to March 8, 2026| Not Started |
 | 10.0.45 PQU-6 | February 25, 2026 | March 2, 2026 to April 5, 2026| Not Started |
@@ -145,7 +145,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | October 27 to October 30, 2025 | November 8 to November 9, 2025 |
 | Station 6 | October 28 to October 31, 2025 | November 8 to November 9, 2025 |
 
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.44 Release-5 train schedule
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.44 Release-5 train schedule [Cancelled due to holiday deployment freeze]
 
 **App version: 10.0.2263.157**
 
@@ -179,7 +179,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | November 3 to November 6, 2025 | November 15 to November 16, 2025 |
 | Station 6 | November 4 to November 7, 2025 | November 15 to November 16, 2025 |
 
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.45 Release-2 train schedule
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.45 Release-2 train schedule [Cancelled due to holiday deployment freeze]
 
 **App version: 10.0.2345.96**
 
