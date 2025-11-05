@@ -1,2 +1,2 @@
-The community interest groups have now moved from Yammer to Viva Engage. If you don't have access to the new Viva Engage community, click (https://forms.office.com/r/qe94aGXWgp), and select the required group to be added and stay engaged in the latest discussions.
- 
+> [!NOTE]
+> Community interest groups have now moved from Yammer to Microsoft Viva Engage. To join a Viva Engage community and take part in the latest discussions, fill out the [Request access to Finance and Operations Viva Engage Community](https://forms.office.com/r/qe94aGXWgp) form and choose the community you want to join.
