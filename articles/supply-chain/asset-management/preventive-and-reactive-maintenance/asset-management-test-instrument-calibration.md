@@ -1,6 +1,6 @@
 ---
 title: Manage test instrument calibration with Asset Management (preview)
-description: Learn about how to use Asset Management to schedule maintenance plans for test instruments used in quality management.
+description: Learn how to use Asset Management to schedule maintenance plans for test instruments used in quality management.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
@@ -23,12 +23,12 @@ Calibration ensures that test instruments provide accurate and reliable measurem
 
 Maintaining accurate and reliable test instruments is essential for ensuring product quality, meeting regulatory requirements, and reducing operational risks. Supply Chain Management provides a connected framework that brings together quality control and asset management to achieve these goals.
 
-- **Standardized instrument management** - Define test instrument types to guide quality teams in selecting the right tools for inspections and calibration. This approach ensures consistency, reduces errors, and supports compliance across all quality processes.
-- **Full traceability and digital records** - Use test instrument tags as digital twins of physical instruments. These tags store calibration history, specifications, and usage data, enabling complete traceability and simplifying audits.
-- **Automated quality tracking** - Quality orders not only capture inspection results but can also track instrument usage automatically. This usage data drives usage-based calibration schedules, ensuring instruments remain accurate without manual intervention.
-- **Lifecycle control through asset management** - Model each test instrument as an asset, giving you full visibility into its lifecycle, from acquisition to calibration and retirement, while aligning with maintenance best practices.
-- **Proactive calibration scheduling** - Implement maintenance plans to automate calibration scheduling. Plans can be time-based or usage-based, reducing the risk of missed calibrations and ensuring compliance with industry standards.
-- **Efficient execution and documentation** - Generate maintenance work orders to perform and document calibration events. These work orders include all necessary details—tasks, resources, and compliance notes. These features help streamline execution and record keeping.
+- **Standardized instrument management** – Define test instrument types to guide quality teams in selecting the right tools for inspections and calibration. This approach ensures consistency, reduces errors, and supports compliance across all quality processes.
+- **Full traceability and digital records** – Use test instrument tags as digital twins of physical instruments. These tags store calibration history, specifications, and usage data, enabling complete traceability and simplifying audits.
+- **Automated quality tracking** – Quality orders not only capture inspection results but can also track instrument usage automatically. This usage data drives usage-based calibration schedules, ensuring instruments remain accurate without manual intervention.
+- **Lifecycle control through asset management** – Model each test instrument as an asset, giving you full visibility into its lifecycle, from acquisition to calibration and retirement, while aligning with maintenance best practices.
+- **Proactive calibration scheduling** – Implement maintenance plans to automate calibration scheduling. Plans can be time-based or usage-based, reducing the risk of missed calibrations and ensuring compliance with industry standards.
+- **Efficient execution and documentation** – Generate maintenance work orders to perform and document calibration events. These work orders include all necessary details—tasks, resources, and compliance notes. These features help streamline execution and record keeping.
 
 ## Prerequisites
 
@@ -57,7 +57,7 @@ Each test instrument tag represents a physical test instrument and also links to
 1. On the Action Pane, select **Test instrument tags**.
 1. On the Action Pane, select **New** to add a new tag. Then make the following settings in the header for the new tag:
     - **Tag number** – Enter a unique name, number, or code for the instrument.
-    - **Test instrument type** – Specify the test instrument type that this tag belongs to. This field is prefilled to show test instrument type that was selected when you opened the **Test instrument tags** page.
+    - **Test instrument type** – Specify the test instrument type that this tag belongs to. This field is prefilled to show the test instrument type that was selected when you opened the **Test instrument tags** page.
     - **Instrument usage status** – The current usage status of the test instrument. Although the field is read-only, you can manually change the status to *Out of service* or *Available* by using the buttons on the **Update usage status** tab of the Action Pane. The following status values are used:
 
         - *Available* – The test instrument is ready to be assigned to a new quality order.
