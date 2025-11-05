@@ -61,13 +61,13 @@ The following procedure explains how to set up queries to find purchase orders t
 1. Select whether you want the query to find unconfirmed purchase orders or delayed purchase orders.
 1. Modify the criteria to define which purchase orders require follow-up. For example, you might want the query to find unconfirmed orders for the next two months, orders that were created more than three days ago, or orders that were sent but not confirmed.
 
-        - If you set the query to find delayed purchase orders, the following default criteria are used:
+    - If you set the query to find delayed purchase orders, the following default criteria are used:
 
         - The **Deliver remainder** field on the line is set to a value other than *0* (zero).
         - The **Confirmed receipt date** field on the line is set to a date that is between 60 days and 1 day before the current date.
         - The **Orderer** field on the header is set to your user account (the current user).
 
-        - If you set the query to find unconfirmed purchase orders, the following default criteria are used:
+    - If you set the query to find unconfirmed purchase orders, the following default criteria are used:
 
         - The **Deliver remainder** field on the line is set to a value other than *0* (zero).
         - The **Confirmed receipt date** field on the line is blank.
