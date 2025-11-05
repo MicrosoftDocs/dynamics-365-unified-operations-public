@@ -79,13 +79,14 @@ Telemetry from the batch framework is logged to the CustomEvents table in your A
 
 > [!NOTE]
 > - This feature is in **PU69/10.0.45 (build >= 7.0.7690.21)** and backported to **PU68/10.0.44 (build >= 7.0.7606.126)**.
+> - The three flights below are enabled for all Sandbox environments. To activate them in Production, please contact Microsoft Support.
 
 To enable Batch telemetry, activate the following flights:
 - **BatchTelemetryConfigurationFlight**
 - **BatchThreadInfoTelemetryFlight**
 - **BatchTelemetryCallstackFlight**
 
-After you enable the flights, new telemetry signals appear under the **Configure** tab:
+After the flights are enabled, new telemetry signals appear under the **Configure** tab:
 
 - **Batch Start Time** - Logs when a batch job starts.
 - **Batch Stop Time** - Logs when a batch job completes. Support duration tracking.
