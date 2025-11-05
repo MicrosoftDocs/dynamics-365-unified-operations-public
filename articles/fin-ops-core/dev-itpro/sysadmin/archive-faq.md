@@ -105,10 +105,11 @@ Wait a few minutes, and then try the installation again. Repeat this process unt
 1. In the maker portal, go to **Solutions**.
 1. Delete the following solutions:
 
-    - ArchiveServicePermissions_PROD
-    - ArchiveService Anchor Solution
+    - msdyn_ArchiveServicePermissions_PROD
+    - msdyn_ArchiveServiceAnchor
+    - msdyn_ArchiveService
 
-1. Refresh, and then repeat the installation.
+1. Refresh, and then repeat install **Dynamics 365 Archive with Dataverse long term retention** from the Power Platform admin center.
 
 #### Case 2: Missing license configuration key
 
