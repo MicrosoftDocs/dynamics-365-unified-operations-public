@@ -6,7 +6,7 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: InventTransArchiveProcessForm
 ms.topic: how-to
-ms.date: 08/29/2025
+ms.date: 11/05/2025
 ms.custom:
   - bap-template
 ---
@@ -55,6 +55,21 @@ Inventory transactions can be consolidated only during periods where the followi
 - Inventory closing must be run on or after the to-period date of the consolidation.
 - The period must be at least one year before the current system date.
 - There must not be any existing inventory recalculations.
+
+## Allow inventory transactions consolidation without inventory closing
+
+To allow inventory transactions consolidation without inventory closing, follow these steps:
+
+1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
+1. Open the **General** tab.
+1. Set **Allow inventory transactions consolidation without inventory closing** to one of the following values:
+    - *No* – The system can only consolidate inventory transactions for closed inventory.
+    - *Yes* – The system can also consolidate inventory transactions on unclosed inventory for items that use the *Standard cost* or *Moving average* inventory model.
+
+    By default, this setting is permanently set to *No*. If you want to change it to *Yes*, contact Microsoft Technical Support for assistance.
+
+> [!IMPORTANT]
+> After you consolidate an inventory transaction, you can no longer close that inventory.
 
 ## Consolidate your inventory transactions
 
