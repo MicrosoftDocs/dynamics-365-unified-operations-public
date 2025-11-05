@@ -6,7 +6,7 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: InventTransArchiveProcessForm
 ms.topic: how-to
-ms.date: 08/29/2025
+ms.date: 11/05/2025
 ms.custom:
   - bap-template
 ---
