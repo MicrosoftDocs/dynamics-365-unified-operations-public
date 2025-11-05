@@ -62,6 +62,20 @@ You can also view the archived data from within the finance and operations Histo
 
 Dataverse long-term retention isn't supported on Bring Your Own Database (BYOD), and data preservation in BYOD isn't guaranteed.
 
+## I needs to perform periodic data refreshes from the Finance and Operations Production database to their sandbox environment. What guidance should we provide to customers using the Data Archive feature?
+
+There are two scenarios in this situation as follows:
+
+**Scenario 1: You have executed the Data Archive scenario in the production environment.**
+- You need to restore the AXDB from LCS and copy the Dataverse environment from the Power Platform admin center to ensure both environments are identical at the time of the data refresh.
+
+> Note: 
+> Please ensure no archival jobs are running, as this could interfere with the execution of LTR jobs on the Sandbox.
+
+**Scenario 2: You are testing the Data Archive scenario on the Sandbox environment (Data Archive is not enabled on Production environment).**
+- You need to restore the AXDB from LCS and copy the Dataverse environment from the Power Platform admin center to ensure both environments are identical at the time of the data refresh.
+- After restoring the AXDB and Dataverse environment, you need to repeat all the steps related to the Data Archive setup on the Sandbox. Once this is done, they will be ready to restart their data archive testing from scratch.
+
 ## What should I do if the installation or upgrade of the Dynamics 365 Archive with Dataverse long term retention app from Power Platform fails?
 
 ### Prerequisites before installation
