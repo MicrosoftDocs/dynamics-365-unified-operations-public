@@ -60,7 +60,7 @@ Providing instructions to an agent with the Dynamics 365 ERP MCP (Preview) serve
 2. **Include skills and actions:** List what the agent can do (e.g., "Use Dynamics 365 MCP tools for finance and supply chain tasks").
 3. **Add workflow details:** Provide step-by-step guidance for common tasks.
 
-For example, the following instructions can provide context on using the tools in the Dynamics 365 ERP MCP (Preview) server.
+For example, the following instructions can provide context on using the tools in the Dynamics 365 ERP MCP (Preview) server. These can be copied and pasted into the instructions of your agent as a starting point for guiding the agent in how to use the available tools to perform the agentic tasks.
 
 ```
 # Role
