@@ -111,13 +111,13 @@ The following table shows the high-level train schedule. It includes a descripti
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.43 Release-8 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.43 Release-8 train schedule  [Cancelled due to holiday deployment freeze]
 
 **App version: 10.0.2177.203**
 
 **Platform version: 7.0.7521.282**
 
-**Unified Environment Provisioning Application Version: 10.0.43.12**
+**Unified Environment Provisioning Application Version: 10.0.43.12** 
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
