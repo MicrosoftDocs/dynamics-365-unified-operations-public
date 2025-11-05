@@ -56,7 +56,7 @@ Inventory transactions can be consolidated only during periods where the followi
 - The period must be at least one year before the current system date.
 - There must not be any existing inventory recalculations.
 
-### Allow inventory transactions consolidation without inventory closing
+## Allow inventory transactions consolidation without inventory closing
 
 To allow inventory transactions consolidation without inventory closing, follow these steps:
 
