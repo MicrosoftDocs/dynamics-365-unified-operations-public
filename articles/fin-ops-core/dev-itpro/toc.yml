@@ -2355,7 +2355,7 @@ items:
           href: copilot/extend-copilot-generative-help.md
         - name: Enable enhanced user feedback for Copilot and related experiences
           href: copilot/enable-copilot-feedback.md
-      - name: Extending Copilot capabilities in finance and operations apps
+      - name: Building Copilot and agent capabilities
         items:
         - name: Overview
           href: copilot/extend-copilot.md
