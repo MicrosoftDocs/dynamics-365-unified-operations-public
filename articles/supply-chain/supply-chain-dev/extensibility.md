@@ -1,13 +1,14 @@
 ---
 title: Planning Optimization extensibility
 description: Learn about the extensibility scenarios that are supported in Planning Optimization with an outline on custom processing.
-author: t-benebo
-ms.author: benebotg
-ms.topic: concept-article
-ms.date: 08/05/2020
-ms.custom:
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
+ms.topic: how-to
+ms.date: 07/31/2025
+ms.custom:
+  - bap-template
 ---
 
 # Planning Optimization extensibility
@@ -73,7 +74,7 @@ When you add custom logic, consider the following constraints and best practices
 
 ## The job failed method
 
-When a Planning Optimization job fails, it may be necessary to start another process (such as a retry operation). For this, you can use the `jobFailed` method, which is supported in Supply Chain Management version 10.0.31 and higher.
+When a Planning Optimization job fails, it might be necessary to start another process (such as a retry operation). For this, you can use the `jobFailed` method, which is supported in Supply Chain Management version 10.0.31 and higher.
 
 When adding custom logic, keep in mind that the query included for the `jobFailed` method won't include items added as a result of enabling the **Include all BOM levels** and/or **BOM levels to include** options in the **Planning Optimization** run dialog.
 

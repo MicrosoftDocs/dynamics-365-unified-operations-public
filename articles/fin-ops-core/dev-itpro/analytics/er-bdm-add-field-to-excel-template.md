@@ -11,8 +11,9 @@ ms.search.region: Global
 ms.search.validFrom: 2019-10-01
 ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 ms.dyn365.ops.version: 10.0.7
-ms.custom: 
 ms.assetid: 
+ms.custom:
+  - sfi-image-nochange
 ---
 
 # Add new fields to a business document template in Microsoft Excel

@@ -4,7 +4,8 @@ description: Production planners can control and optimize productions plans by u
 author: johanhoffmann
 ms.author: johanho
 ms.topic: how-to
-ms.date: 05/22/2024
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen

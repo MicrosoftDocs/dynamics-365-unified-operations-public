@@ -3,12 +3,12 @@ title: Manage subcontracting work in production
 description: Learn how subcontracted operations are managed in Dynamics 365 Supply Chain Management, including an outline on allocated production operations.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: overview
-ms.date: 04/19/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup, ProdBOMVendorListPagePreviewPane, ProdBOMVendor
+ms.topic: overview
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Manage subcontracting work in production
@@ -25,7 +25,7 @@ When subcontracting operations or activities are used, they affect all stages of
 
 For internal resources, a fixed cost rate is typically allocated for a period. By contrast, the cost of subcontracted resources is based on the purchase price of the related service. The service is defined as another product, and is used to drive the procurement and purchase processes for a given subcontracted operation.  
 
-Currently, there is no explicit concept of semi-finished products in Supply Chain Management. For a production order that requires more than one operation in order to transform raw materials into a finished good, the finished good is posted back into inventory only in the last operation. The semi-finished products that the earlier operations produce are accounted in work in progress (WIP), but they aren't posted or tracked in inventory. Although you can split the routes and bills of materials (BOMs) into multiple smaller units, this approach increases the number of products, BOMs, and routes that must be managed.  
+Currently, there's no explicit concept of semi-finished products in Supply Chain Management. For a production order that requires more than one operation in order to transform raw materials into a finished good, the finished good is posted back into inventory only in the last operation. The semi-finished products that the earlier operations produce are accounted in work in progress (WIP), but they aren't posted or tracked in inventory. Although you can split the routes and bills of materials (BOMs) into multiple smaller units, this approach increases the number of products, BOMs, and routes that must be managed.  
 
 There are two methods for modeling subcontracting work for production operations. These methods differ in the way that the subcontracting process can be modeled, the way that semi-finished products are represented in the process, and the way that cost control is managed.
 
@@ -55,7 +55,7 @@ A production order can have many operations, and each operation can be allocated
 
 The [lean manufacturing](lean-manufacturing-overview.md) solution models the subcontracting work as a service that is related to an activity of a [production flow](tasks/create-production-flow-version.md) (Task guide article). Therefore, this type of subcontracting is also referred to as [activity-based subcontracting.](activity-based-subcontracting.md) A special cost group type, *Direct outsourcing*, has been introduced, and the subcontracting services aren't part of the BOM of the finished goods. When you use lean manufacturing, all activities are defined by kanbans that can be related to one or multiple production flow activities. So far, that explanation sounds just like an explanation of production orders. However, whereas production orders must always end with a finished product, you can create kanbans to supply a semi-finished product. You don't have to introduce a new product and BOM level.  
 
-Because kanban rules can be very dynamic, you can model different variants of supply for the same product on a production flow. When you use lean subcontracting, the material flow and the financial flow are strictly separated. All material flow is represented by kanban activities. The purchase orders for the service products and the receipt postings of those services can be automated, based on the status of kanban jobs in the production flow. Kanban jobs can be started and completed even before the purchase orders are created. The subcontracting documents (purchase order and purchase receipt of the service) can be aggregated by period and service. Therefore, the number of purchase documents and lines can be kept small, even in highly repetitive operations where vendors provide subcontracted services in a single-piece flow.
+Because kanban rules can be dynamic, you can model different variants of supply for the same product on a production flow. When you use lean subcontracting, the material flow and the financial flow are strictly separated. All material flow is represented by kanban activities. The purchase orders for the service products and the receipt postings of those services can be automated, based on the status of kanban jobs in the production flow. Kanban jobs can be started and completed even before the purchase orders are created. The subcontracting documents (purchase order and purchase receipt of the service) can be aggregated by period and service. Therefore, the number of purchase documents and lines can be kept small, even in highly repetitive operations where vendors provide subcontracted services in a single-piece flow.
 
 ### Modeling subcontracting in a production flow
 
@@ -65,7 +65,7 @@ Transfer activities can also be defined as subcontracted. This definition occurs
 
 ### Backflush costing
 
-The cost accounting of subcontracted work is completely integrated into the costing for the lean manufacturing solution (backflush costing). When the purchase order receipt of the service is posted, or when invoicing occurs, the cost of the service is allocated to the production flow. For backflush costing, the variance of subcontracted services is calculated by offsetting the subcontracting block of the standard cost of the received products against the actual received and invoiced service quantities.
+The cost accounting of subcontracted work is integrated into the costing for the lean manufacturing solution (backflush costing). When the purchase order receipt of the service is posted, or when invoicing occurs, the cost of the service is allocated to the production flow. For backflush costing, the variance of subcontracted services is calculated by offsetting the subcontracting block of the standard cost of the received products against the actual received and invoiced service quantities.
 
 ## Material supply for subcontracted operations
 

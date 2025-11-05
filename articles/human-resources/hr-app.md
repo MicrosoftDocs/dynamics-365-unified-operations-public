@@ -172,11 +172,11 @@ If the Human Resources app must be uninstalled, follow these steps.
 2. Select the Dataverse environment.
 3. Go to **Solutions**, and select **Managed solutions**.
 4. Delete the Human Resources solution.
-5. Delete the following solutions: 
+5. Delete the following solutions:
 
-    - Custom components for Human Resource App 
-    - Human Resources App Entities 
-    - Human Resources App Flows 
+    - Custom components for Human Resource App
+    - Human Resources App Entities
+    - Human Resources App Flows
     - HCM Application Anchor Solution
 
 ### Supported languages
@@ -185,5 +185,5 @@ The Human Resources app supports all languages that Power Apps supports.
 
 ### Submitting questions or feedback about the Human Resources app
 
-- The Human Resources App Viva Engage (Yammer) group is a great place to exchange tips, check on issues, and submit feedback to Microsoft. The group includes Microsoft partners, customers, experts, and employees.
+- The Human Resources App group on Microsoft Viva Engage is a great place to exchange tips, check on issues, and submit feedback to Microsoft. The group includes Microsoft partners, customers, experts, and employees.
 - In addition, support requests can be submitted.

@@ -3,13 +3,14 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.32 (Ap
 description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.32 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
+ms.reviewer: kamaybac
+ms.search.form:
 ms.topic: whats-new
-ms.date: 04/19/2024
+ms.date: 08/05/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen
-ms.reviewer: kamaybac
-ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.32 (April 2023)
@@ -146,7 +147,7 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Manual transfer line picking service for admin or similar trusted users](whats-new-scm-10-0-28.md) | Mandatory |
 | Warehouse management | [Maximum execution time for the warehouse management on-hand entries cleanup job](../warehousing/onhand-cleanup.md)  | Mandatory |
 | Warehouse management | [New load planning workbench pages](whats-new-scm-10-0-24.md) | Mandatory |
-| Warehouse management | [Organization-wide "Schedule work creation" wave method](../warehousing/configure-wave-schedule-work-creation.md) | Mandatory |
+| Warehouse management | Organization-wide "Schedule work creation" wave method | Mandatory |
 | Warehouse management | [Organization-wide system directed work sequencing](../warehousing/system-directed-work-sequencing.md) | Mandatory |
 | Warehouse management | [Organization wide wave step code](../warehousing/advanced-load-building-during-wave.md) | Mandatory |
 | Warehouse management | [Outbound sorting](../warehousing/outbound-sorting.md) | Mandatory |
@@ -161,7 +162,7 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | Sales order packing slip corrections/cancellation transaction status change | On by default |
 | Warehouse management | Scale unit support for warehouse app work lists | Mandatory |
 | Warehouse management | [Scan GS1 barcodes](../warehousing/gs1-barcodes.md) | Mandatory |
-| Warehouse management | [Schedule work creation](../warehousing/configure-wave-schedule-work-creation.md) | Mandatory |
+| Warehouse management | Schedule work creation | Mandatory |
 | Warehouse management | [System directed cluster picking](../warehousing/system-directed-cluster-pick.md) | Mandatory |
 | Warehouse management | System directed work sequencing | Mandatory |
 | Warehouse management | [Use faster API for containers closing/reopening on packing station](../supply-chain-dev/whats-new-scm-10-0-21.md) | Mandatory |
@@ -182,7 +183,7 @@ We have recently added or significantly updated the following help articles. The
 |---|---|
 | Master planning | [DDMRP FAQ](../master-planning/planning-optimization/ddmrp-faqs.md) |
 | Master planning | [Set up scrap to calculate raw material requirements](../master-planning/scrap-calculations.md) |
-| Supply Chain Management development | [Create and process message queues and message types](../supply-chain-dev/message-processor.md) |
+| Supply Chain Management development | [Monitor and control message processor messages](../message-processor/message-processor.md) |
 | Support | [Use Customer Lockbox to manage secure access to customer data](../../fin-ops-core/dev-itpro/sysadmin/customer-lockbox.md) |
 | Warehouse management | [Manage inbound putaway based on container types](../warehousing/inbound-putaway-by-container-type.md) |
 | Warehouse management | [Monitor Warehouse Management usage and performance](../warehousing/application-insights-monitor-usage-performance.md) |

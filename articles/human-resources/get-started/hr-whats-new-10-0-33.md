@@ -5,6 +5,7 @@ title: What's new or changed in Dynamics 365 Human Resources 10.0.33 (April 2023
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.33 preview release.
 author: twheeloc
 ms.date: 03/05/2023
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: evergreen
 
@@ -50,7 +51,7 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature name | More information |
 |--------------|------------------|
-| Entity templates | The following entity templates have been added: Personnel actions, Personnel management setup, and Worker data migration. For more information, see [Data entities and templates](/human-resources/data-entity.md#data-entity-templates). |
+| Entity templates | The following entity templates have been added: Personnel actions, Personnel management setup, and Worker data migration. For more information, see [Data entities and templates](../../human-resources/data-entity.md#data-entity-templates). |
 | Course enhancements | This feature simplifies the process for creating, managing, and tracking courses in the **Learning** module. The course layout has been redesigned and reorganized to enable easy course creation and mass assignment of participants. Support for virtual courses has been added. Other functionality has been added to support additional scenarios for courses. In **Employee self service**, employees get an improved view of their courses. In **Manager self service**, managers get an overview of courses that are assigned to their employees. |
 
 ## Entities and entity templates added in this release

@@ -5,6 +5,7 @@ author: MOAAMER
 ms.author: moaamer 
 ms.topic: article
 ms.date: 09/25/2024
+ms.update-cycle: 1095-days
 ms.custom: evergreen 
 ms.reviewer: twheeloc
 audience: Application User
@@ -32,7 +33,7 @@ Before you run the year-end close process, validate the settings for the followi
 On the **Main account** page:
 
 - Verify that the **Main account type** field is correctly set for each main account. The main account type determines whether the balance of the main account will be brought forward as an opening balance or closed into retained earnings in the opening transaction.
-- The balance of the main account can be transferred to a new main account during the year-end close. Enter the new main account in the **Opening account** field. Typically, this field is used for balance sheet main accounts when the main account is inactivated and a new main account is used for the new fiscal year.
+- The balance of the main account can be transferred to a new main account during the year-end close. Enter the new main account in the **Opening account** field. Typically, this field is used for balance sheet main accounts when the main account is deactivated and a new main account is used for the new fiscal year.
 - In Microsoft Dynamics 365 Finance version 10.0.41, the **Validate year-end close** feature performs validation checks before the year-end close to detect issues and suggest a resolution. It ensures accurate ledger balances in both accounting and reporting currencies, advises you about best practices for managing large dimension sets, and improves the year-end close experience. You must select the target legal entity and the target year. 
 
 On the **General ledger parameters** page under **Fiscal year close**:
@@ -46,6 +47,9 @@ On the **Ledger calendar** page:
 
 -  Optional: Each fiscal period for the fiscal year that's being closed can be set to **On hold** to prevent new transactions from being entered. When adjusting entries are identified, the on-hold periods can be reopened so that adjusting entries can be posted, even if the year-end close process has already been run.
 -  Optional: If **Budget control** is being used, the purchase order year-end process should be completed before closing the period or putting it **On hold**. All non-closed budget-controlled documents must be closed or moved to a new year before the year-end can be completed. For information about how purchase orders are processed at the year-end, see [Purchase order year-end process](../budgeting/purchase-order-year-end-process.md).
+
+>[!NOTE]
+> Starting 10.0.45, when closing the last period of the year or putting it **On hold**, the user will be notified if the **Budget control** is being used and any purchase orders that are not closed or do not have POYE performed exists in that period. The following warning message will be displayed: "To close or hold fiscal period, it is recommended to address any open budget-controlled purchase orders for this period. You can do this by either closing the purchase orders or running the Purchase Order Year-End (POYE) process."
 
 On the **Year-end close template setup** page:
 

@@ -1,5 +1,5 @@
 ﻿---
-title: Test instrument calibration (preview)
+title: Test instrument calibration
 description: Learn how to track the calibration schedule and history of individual test instruments, run an ongoing calibration process, and track the use and calibration status of each test instrument.
 author: johanhoffmann
 ms.author: johanho
@@ -11,17 +11,13 @@ ms.custom:
   - bap-template
 ---
 
-# Test instrument calibration (preview)
+# Test instrument calibration
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 *Calibration* is the process of evaluating and adjusting the precision and accuracy of measurement equipment. It's usually defined as a performance comparison against a standard of known accuracy. Proper calibration of test instruments helps ensure a safe working environment. It also helps ensure that valid data is produced for future reference. Test instruments that aren't regularly calibrated can lead to false-positive and/or false-negative quality control tests.
 
 The instrument calibration feature in Microsoft Dynamics 365 Supply Chain Management supports an ongoing calibration process. You can use it to track the calibration schedule and history of individual test instruments. You can also track the use of each test instrument based on the completion of quality order tests.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Instrument calibration is managed primarily through *test instrument tags*. Each test instrument tag is a digital record that represents a specific physical test instrument. This record holds settings for the test instrument and information about it.
 
@@ -39,7 +35,7 @@ The feature also lets you generate and print calibration reports, such as calibr
 Before you can use test instrument calibration features in Supply Chain Management, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="parameters"></a>Set up instrument calibration parameters
 

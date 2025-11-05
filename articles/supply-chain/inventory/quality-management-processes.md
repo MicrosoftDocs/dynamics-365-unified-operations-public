@@ -3,12 +3,12 @@ title: Quality and nonconformance management overview
 description: Learn about the quality and nonconformance management features in Microsoft Dynamics 365 Supply Chain Management and how they help improve product quality.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: overview
-ms.date: 05/27/2024
-ms.custom:
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConformanceTable, InventQualityOrderLineResults, InventQualityOrderTable, InventTestCorrection, InventTestDiagnosticType, InventTestInstrument, InventTestReportSetup, InventTestTable
+ms.topic: overview
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Quality and nonconformance management overview
@@ -38,7 +38,7 @@ Quality management is flexible and can be implemented in various ways to meet th
 - Specify the resources that an inspection operation requires, such as a test area and test instruments.
 
 > [!NOTE]
-> The _Quality management for warehouse processes_ feature extends the capabilities of quality management. If you're using this feature, see [Quality management for warehouse processes](quality-management-for-warehouses-processes.md) for examples that show how quality management works when it's enabled.
+> The *Quality management for warehouse processes* feature extends the capabilities of quality management. If you're using this feature, see [Quality management for warehouse processes](quality-management-for-warehouses-processes.md) for examples that show how quality management works.
 
 ## Controlling the quality management process
 

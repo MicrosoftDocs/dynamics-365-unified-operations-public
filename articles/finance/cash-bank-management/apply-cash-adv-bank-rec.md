@@ -18,7 +18,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to complete cash application in advanced bank reconciliation. As of Microsoft Dynamics 365 Finance version 10.0.39, the **Modern bank reconciliation** feature provides this functionality. 
+This article explains how to complete cash application in advanced bank reconciliation using the **Modern bank reconciliation** feature. 
 
 There might be customer or vendor payments on bank statements in the app. This feature lets users complete cash application in advanced bank reconciliation.
 

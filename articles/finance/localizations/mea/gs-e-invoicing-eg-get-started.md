@@ -5,12 +5,14 @@ author: achansoriya
 ms.author: achansoriya
 ms.topic: how-to
 ms.date: 05/15/2025
-ms.custom: 
-  - bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Egypt
 ms.search.validFrom: 09/19/2024
 ms.dyn365.ops.version: AX 10.0.39
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
 # Electronic invoicing in Egypt

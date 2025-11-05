@@ -1,8 +1,8 @@
 ---
 title: Procurement and sourcing parameters for Landed cost
 description: Learn how to set up the relevant Procurement and sourcing parameters when you use the Landed cost module, including a step-by-step process.
-author: lisascholz91
-ms.author: lisascholz
+author: prasungoel 
+ms.author: prasungoel 
 ms.reviewer: kamaybac
 ms.search.form: SrmParameters
 ms.topic: how-to

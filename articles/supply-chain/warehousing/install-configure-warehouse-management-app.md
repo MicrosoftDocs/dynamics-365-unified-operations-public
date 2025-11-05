@@ -5,15 +5,16 @@ author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
 ms.date: 02/27/2025
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
+ms.custom:
+  - bap-template
+  - sfi-ropc-blocked
 ---
 
 # Install the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article explains how to download and install the Warehouse Management mobile app on each of your mobile devices, and how to configure the app to connect to your Microsoft Dynamics 365 Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
 
@@ -56,10 +57,6 @@ For the Warehouse Management mobile app to function correctly, your internal net
 - \*.applicationinsights.azure.us
 - \*.applicationinsights.azure.cn
 
-### Turn Warehouse Management mobile app features on or off in Supply Chain Management
-
-To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. 
-
 ## Get the Warehouse Management mobile app
 
 For smaller deployments, you might typically install the app on each device from the relevant store and then manually configure the connection to the environments that you're using.
@@ -72,7 +69,7 @@ The easiest way to install the app on a single device is to install it from an a
 
 - **Windows (UWP):** [Warehouse Management on Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 - **Android:** [Warehouse Management on Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
-- **iOS:** [Warehouse Management on Apple App Store](https://apps.apple.com/app/microsoft-warehouse-management/id6444014310)
+- **iOS:** Version 3 is available at the [Apple App Store](https://apps.apple.com/app/microsoft-warehouse-management/id6444014310). Version 4 is currently available through [Apple Test Flight](https://testflight.apple.com/) and is expected to be available on the Apple App Store in January 2026.
 
 ### Download the app from Microsoft App Center
 

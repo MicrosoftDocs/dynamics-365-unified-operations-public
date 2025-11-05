@@ -6,6 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.topic: overview
 ms.date: 05/28/2025
+ms.update-cycle: 180-days
 audience: Application User
 ms.search.region: Global
 ms.search.form: ImmersiveHome, DefaultDashboard, SysUserSetup, AppCopilotAgentActivity, AppCopilotAgentLifecycle
@@ -28,10 +29,16 @@ Immersive Home is a modern, AI-first landing page that adapts to your most impor
 
 ## Prerequisites
 
+### System requirements
+
 To use Immersive Home, your system must meet the following requirements:
 
 - You must be running version 10.0.44 or later of your Microsoft finance and operations apps.
 - The feature that is named *(production ready preview) Immersive Home* must be turned on in [feature management](../get-started/feature-management/feature-management-overview.md).
+
+### Required user privileges
+
+Each user that requires access to Immersive Home must be assigned the *View immersive home* privilege, which is typically assigned through the duty with the same name. By default, this duty is assigned to the *System User* security role.
 
 ## The components of Immersive Home
 

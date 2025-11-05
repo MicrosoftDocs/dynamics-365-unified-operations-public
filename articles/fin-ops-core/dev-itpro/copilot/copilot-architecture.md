@@ -4,7 +4,8 @@ description: Learn about the architecture of Copilot in finance and operations a
 author: jaredha
 ms.author: jaredha
 ms.topic: article
-ms.date: 06/20/2025
+ms.date: 10/08/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.collection:
@@ -32,7 +33,7 @@ The Copilot interface for the chat experience in finance and operations apps use
 Copilot in finance and operations apps is bound to a single chatbot in Copilot Studio. This chatbot is named **Copilot for finance and operations apps**. The chatbot is deployed as part of the Copilot in the finance and operations solution (msdyn\_FnoCopilot). For guidance about how to install the solution and chatbot in your environment, see [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
 
 > [!NOTE]
-> [Generative orchestration](/microsoft-copilot-studio/advanced-generative-actions) isn't yet supported for the **Copilot for finance and operations apps** agent.
+> [Generative orchestration](/microsoft-copilot-studio/advanced-generative-actions) is supported for the **Copilot for finance and operations apps** agent, but isn't enabled by default. You may choose to enable it for the agent in your environment if you extend the agent with new capabilities that require generative orchestration. Learn more in [Turn on generative orchestration for an agent](/microsoft-copilot-studio/advanced-generative-actions#turn-on-generative-orchestration-for-an-agent).
 
 ## Tools
 

@@ -10,6 +10,9 @@ audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
 # Deploy and access development environments

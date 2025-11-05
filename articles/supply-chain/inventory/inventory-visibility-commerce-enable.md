@@ -6,7 +6,7 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form: InventInventoryDataService, KeyVaultParameters
 ms.topic: how-to
-ms.date: 06/21/2024
+ms.date: 08/14/2025
 ms.custom: 
   - bap-template
 ---
@@ -49,9 +49,9 @@ Before you can use the features that this article describes, your system must me
 
 - The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-    - *Inventory Visibility integration with inventory adjustment posting*
-    - *Inventory Visibility integration with inventory adjustment offset*
-    - *Enable warehouse items in Inventory Visibility*
+    - *Inventory Visibility integration with inventory adjustment posting* (As of Supply Chain Management version 10.0.45, this feature is mandatory and can't be turned off.)
+    - *Inventory Visibility integration with inventory adjustment offset* (As of Supply Chain Management version 10.0.45, this feature is mandatory and can't be turned off.)
+    - *Enable warehouse items in Inventory Visibility* (As of Supply Chain Management version 10.0.45, this feature is turned on by default.)
 
 - [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md) must be enabled for your environment.
 
@@ -146,8 +146,19 @@ To set up Supply Chain Management to access the new key vault through the new ap
 
     - **Name** – Enter a name to identify the secret. You'll need this value later. Therefore, copy it, paste it into your temporary text file, and label it.
     - **Description** – Enter a short description.
-    - **Secret** – Enter a value in the form *vault:///\<SecretName\>*, where *\<SecretName\>* is the **Name** value that you copied when you created the secret for the key vault. (See step 10 in the [Create a key vault to hold the client secret for Inventory Visibility](#key-vault) section.) For example, if the name of your key vault secret is *commerce-iv-01-secret*, enter *vault:///commerce-iv-01-secret*.
+    - **Secret** – Enter a value using the following format:
+
+        *vault://\<KeyVaultName\>/\<SecretName\>/\<SecretVersion\>*
+
+        The *\<KeyVaultName\>* and *\<SecretVersion\>* attributes are optional. However, the *\<SecretName\>* attribute is required, and is the **Name** value that you copied when you created the secret for the key vault (see step 10 in the [Create a key vault to hold the client secret for Inventory Visibility](#key-vault) section). If the secret version isn't defined in the Key Vault secret key, the system retrieves the active secret that has the latest expiration date. In most cases, you can define a Key Vault secret key in the following format:
+
+        *vault://\<SecretName\>*
+
+        For example, if the name of your key vault secret is *commerce-iv-01-secret*, enter *vault://commerce-iv-01-secret*.
+
     - **Secret type** – Select *Manual*.
+
+    After filling in all the necessary fields, you can click the **Validate** button to verify your secret.
 
 1. On the **Secrets** FastTab, on the toolbar, select **Validate**. If you correctly entered all the values, you receive the following informational message: "Validation successful." If you receive an error message, double-check your settings, and try again.
 1. On the Action Pane, select **Save**. Be patient, because the save operation takes about two minutes.

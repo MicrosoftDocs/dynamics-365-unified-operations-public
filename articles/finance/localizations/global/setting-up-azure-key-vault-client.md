@@ -4,12 +4,13 @@ description: Learn about storing advanced certificates and defining the certific
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 07/11/2024
 ms.reviewer: johnmichalak
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.10
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Set up the Azure Key Vault client

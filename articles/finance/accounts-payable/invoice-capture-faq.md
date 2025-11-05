@@ -2,9 +2,9 @@
 title: Invoice capture FAQ
 description: Access answers to frequently asked questions about the Invoice capture solution, including questions about error messages.
 author: sunfzam
-ms.author: zezhangzhao
+ms.author: shielas
 ms.topic: faq
-ms.date: 08/21/2023
+ms.date: 09/02/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -32,7 +32,7 @@ The following versions of Microsoft Dynamics 365 Finance are supported:
 
 You've consumed the entitled credits and must subscribe to Electronic Invoicing. Contact the Microsoft account team or your partner cloud solution provider (CSP) to purchase licenses.
 
-### What if invoices that are received are in an unsupported format (for example, they're Word documents)?
+### What if invoices that are received are in an unsupported format (for example, Word documents)?
 
 Word documents aren't yet supported. However, Power Automate can convert a Word document into a PDF file before it calls the invoice capture API.
 
@@ -66,7 +66,7 @@ If an invoice isn't associated with any PO, it's treated as a non-PO invoice. A 
 
 ### Does Invoice capture learn from changes that are made to an invoice if the invoice wasn't correctly processed or it was changed by the AP clerk?
 
-Yes, continuous learning capabilities are available. Invoice capture learns from corrections that were made by the Accounts payable (AP) clerk of a previous invoice. The next time that a similar invoice is captured, Invoice capture applies what it has learned to derive the entities. After the invoice is reviewed and transferred, the mapping between entities and invoice context is recorded. The entities, such as legal entities, vendor accounts, invoice type, items, procurement category, and currency code, are automatically derived for the next time a similar invoice is captured. These capabilities can increase the touchless rate of invoice processing.
+Yes, continuous learning capabilities are available. Invoice capture learns from corrections that were made by the Accounts payable (AP) clerk of a previous invoice. The next time that a similar invoice is captured, Invoice capture applies what it has learned to derive the entities. After the invoice is reviewed and transferred, the mapping between entities and invoice context is recorded. The entities, such as legal entities, vendor accounts, items, and procurement category are automatically derived for the next time a similar invoice is captured. These capabilities can increase the touchless rate of invoice processing.
 
 ### Can I extend the item mapping rule to map between an external item number and an internal item number?
 
@@ -77,5 +77,8 @@ Yes. Invoice capture uses the external item number in Dynamics 365 Finance to de
 Yes. Users can upload multiple invoices (a maximum of 20 files) simultaneously.
 
 ### What languages of invoices are supported?
-
 For a complete list of supported languages, see the [Document intelligence page](/azure/ai-services/document-intelligence/concept-invoice).
+
+### If I'm using a custom model for invoice capture, do I need to purchase AI builder credits in addition to the electronic invoicing credits?   
+When you're training the custom model, you need to purchase AI Builder credits for that activity. However, after the custom model is trained and is being used in Invoice capture, only the electronic invoice credits are used.
+

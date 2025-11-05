@@ -10,6 +10,7 @@ audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: sfi-image-nochange
 ---
 
 # Initialize company data
@@ -46,7 +47,7 @@ This scenario is based on the following assumptions:
 
 ## Prerequisites
 
-- **Azure subscription** – You have **contributor access** to an existing Azure subscription. If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription** – You have **contributor access** to an existing Azure subscription. If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - **Azure storage account** – You have an Azure storage account. If you don't have a storage account, follow the steps in [Create an Azure storage account](/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) to create one.
 - **Azure data factory** – Create an Azure Data Factory resource by following the steps in [Create a data factory](/azure/data-factory/tutorial-copy-data-portal#create-a-data-factory).
 - **Finance and operations app** – Use the Data management framework to export the data in CSV format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, customers are exported by using the **CustCustomerV3Entity** table.

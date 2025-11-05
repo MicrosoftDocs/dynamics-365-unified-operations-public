@@ -4,7 +4,7 @@ description: Learn about the Budget control statistics and Budget analysis repor
 author: music727
 ms.author: mibeinar
 ms.topic: how-to
-ms.date: 06/02/2025
+ms.date: 07/14/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -40,6 +40,9 @@ The following table describes differences between the two reports.
 
 > [!NOTE]
 > The **Budget analysis** report doesn't distinguish between operating periods and closing periods.
+
+> [!NOTE]
+> The **Display legacy budget analysis inquiry** parameter on the **Budgeting parameters** page controls which version of the **Budget analysis** page displayed. Enabling this parameter displays the *BudgetAnalysisInquiry* page, which doesn't include profit and loss accounts. If parameter is disabled, the *BudgetAnalysisDimensionFocusSummary* page is displayed which includes profit and loss accounts.
 
 Budget reports and inquiry pages can display different default exchange rates.
 The following pages use either the default exchange rate in Ledger setup or the manually updated exchange rate in the **Total actuals amounts** field:

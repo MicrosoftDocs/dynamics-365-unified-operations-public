@@ -150,7 +150,6 @@ To set up vendor filter codes, follow these steps.
 
 ## Related information
 
-[For more information see the blog post WMS-Warehouse Filter Codes](http://blog.dynamics-for-operations.com/2017/09/26/wms-warehouse-filter-codes/)
-
+- [WMS Filter codes](https://community.dynamics.com/blogs/post/?postid=c8043ec2-f368-ef11-bfe3-00224821284b) (blog post)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

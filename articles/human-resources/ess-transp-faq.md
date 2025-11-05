@@ -3,8 +3,9 @@
 
 title: Employee self service leave summary - Transparancy FAQ
 description: This article answers some frequently asked questions about the Employee self service leave summary feature.
-author: jcart
+author: twheeloc
 ms.date: 01/17/2025
+ms.update-cycle: 180-days
 ms.topic: overview
 ms.reviewer: twheeloc
 # optional metadata
@@ -18,7 +19,7 @@ ms.collection: bap-ai-copilot
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resource
 ---

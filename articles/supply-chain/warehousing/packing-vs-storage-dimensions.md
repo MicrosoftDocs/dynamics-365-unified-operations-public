@@ -21,14 +21,11 @@ Some items are packed or stored in such a way that you may need to track physica
 - *Packing* - Packing dimensions are used during containerization and the manual packing process to determine how many of each item will fit in various container types.
 - *Nested packing* - Nested packing dimensions are used when the packing process contains multiple levels.
 
-*Storage* dimensions are supported even when the *Packaging product dimensions* feature isn't enabled. You set these up using the **Physical dimension** page in Supply Chain Management. These dimensions are used by all processes where the packing and nested packing dimensions aren't specified.
+*Storage* dimensions are set up using the **Physical dimension** page in Supply Chain Management. These dimensions are used by all processes where the packing and nested packing dimensions aren't specified.
 
-*Packing* and *nested packing* dimensions are set up using the **Physical product dimensions** page, which is added when you enable the *Packaging product dimensions* feature.
+*Packing* and *nested packing* dimensions are set up using the **Physical product dimensions** page.
+
 This article provides a scenario that illustrates how to use this feature.
-
-## Turn on the packaging product dimensions feature
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Packaging product dimensions* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Example scenario
 

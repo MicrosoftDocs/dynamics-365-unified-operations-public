@@ -1,8 +1,8 @@
 ---
 title: Account reconciliation
 description: Learn how to use the Account reconciliation workspace and the Copilot agent that integrates with it.
-author: rcarlson
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 05/10/2025
 ms.reviewer: twheeloc

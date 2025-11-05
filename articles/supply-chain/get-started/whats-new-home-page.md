@@ -20,6 +20,8 @@ To see what's new or changed in each release of Dynamics 365 Supply Chain Manage
 
 | Version | Build number | Auto-update availability | Learn more |
 |---|---|---|---|
+| 10.0.46 | 10.0.2428 | December 2025 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.46](whats-new-scm-10-0-46.md) |
+| 10.0.45 | 10.0.2345 | September 2025 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.45](whats-new-scm-10-0-45.md) |
 | 10.0.44 | 10.0.2263 | June 2025 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.44](whats-new-scm-10-0-44.md) |
 | 10.0.43 | 10.0.2177 | March 2025 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.43](whats-new-scm-10-0-43.md) |
 | 10.0.42 | 10.0.2095 | December 2024 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.42](whats-new-scm-10-0-42.md) |
@@ -83,6 +85,4 @@ To see what's new or changed in releases before November 2019, see the following
 | Microsoft Dynamics AX | 7.0.1 | 7.0.1265.23014 | May 2016 | [What's new or changed in Dynamics AX application version 7.0.1 (May 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md) |
 | Microsoft Dynamics AX | 7.0 | 7.0.1265.3015 | February 2016 | [What's new or changed in Dynamics AX 7.0 (February 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md) |
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

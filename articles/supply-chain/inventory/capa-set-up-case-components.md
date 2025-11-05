@@ -1,5 +1,5 @@
 ﻿---
-title: Set up CAPA case components (preview)
+title: Set up CAPA case components
 description: Learn how to set up the components needed to categorize and process corrective and preventive action (CAPA) cases.
 author: johanhoffmann
 ms.author: johanho
@@ -11,11 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# Set up CAPA case components (preview)
+# Set up CAPA case components
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 Before you can start to create and work with corrective and preventive action (CAPA) cases, you must set up the components that are needed to categorize and process them.
 
@@ -28,7 +26,7 @@ Each CAPA worker group can include a default worker. This worker is used if no s
 When a CAPA case, CAPA process stage, or CAPA process activity that is assigned to a worker or worker group becomes active, the system sends the worker or worker group an email notification.
 
 > [!TIP]
-> To get started quickly, you can load a set of standard CAPA worker groups from a template that is provided with Microsoft Dynamics 365 Supply Chain Management. You can use the standard groups as-is or modify them to meet your specific needs, as described in the rest of this section. Learn more in [CAPA administration (preview)](capa-admin.md).
+> To get started quickly, you can load a set of standard CAPA worker groups from a template that is provided with Microsoft Dynamics 365 Supply Chain Management. You can use the standard groups as-is or modify them to meet your specific needs, as described in the rest of this section. Learn more in [CAPA administration](capa-admin.md).
 
 To set up CAPA worker groups, follow these steps.
 
@@ -85,7 +83,7 @@ To set up custom CAPA subcategories for a category that uses the *User defined* 
 *CAPA processes* are hierarchical processes that let you manage and resolve CAPA cases. Each CAPA process consists of a series of sequential stages. Each stage can include one or more automatically generated activities. When you create a CAPA case, you assign the CAPA process that is required to guide it to completion.
 
 > [!TIP]
-> To get started quickly, you can load a set of standard CAPA processes from a template that is provided with Supply Chain Management. You can use the standard processes as-is or modify them to meet your specific needs, as described in the rest of this section. Learn more in [CAPA administration (preview)](capa-admin.md).
+> To get started quickly, you can load a set of standard CAPA processes from a template that is provided with Supply Chain Management. You can use the standard processes as-is or modify them to meet your specific needs, as described in the rest of this section. Learn more in [CAPA administration](capa-admin.md).
 
 ### Manage and approve CAPA processes
 

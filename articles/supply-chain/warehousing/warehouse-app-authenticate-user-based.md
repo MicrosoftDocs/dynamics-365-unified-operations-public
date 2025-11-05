@@ -5,9 +5,11 @@ author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
 ms.date: 11/19/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 
 # User-based authentication for the Warehouse Management mobile app

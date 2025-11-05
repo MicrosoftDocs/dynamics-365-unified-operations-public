@@ -5,13 +5,14 @@ author: ikondratenko
 ms.author: ikondratenko
 ms.topic: article
 ms.date: 02/12/2024
-ms.custom: 
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Denmark
 ms.search.validFrom: 2023-12-01
 ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.36
+ms.custom:
+  - sfi-image-nochange
 ---
 
 # Get started with Electronic invoicing for Denmark

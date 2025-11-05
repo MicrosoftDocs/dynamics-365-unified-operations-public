@@ -4,7 +4,7 @@ description: Get an overview of the telemetry that is available in the Monitorin
 author: kennysaelen
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 01/29/2025
+ms.date: 09/15/2025
 ms.author: kesaelen
 ms.reviewer: johnmichalak
 ms.custom: bap-template
@@ -18,16 +18,16 @@ ms.custom: bap-template
 
 ## Form run telemetry
 
-Form run telemetry captures detailed information about forms within the application. It provides insights into the following details:
+Form run telemetry captures detailed information about application forms. It provides insights into the following details:
 
-- The forms that were opened
-- The users who accessed the forms
-- Load times for the forms
+- Opened forms
+- Users who accessed the forms
+- Form load times
 
-Customers can use this data for the following purposes:
+Use this data to:
 
-- Analyze average load times, P90s, and other performance metrics to improve the user experience.
-- Identify frequently accessed forms, and optimize them for better usability.
+- Analyze average load times, P90 values, and other performance metrics to improve user experience.
+- Identify frequently accessed forms and optimize them for better usability.
 - Detect patterns in user behavior to enhance form design and navigation.
 - Monitor trends in form usage to prioritize resources and updates effectively.
 
@@ -37,13 +37,13 @@ Customers can use this data for the following purposes:
 
 ## X++ exceptions
 
-All exceptions that occur in the X++ layer are captured and logged to Application Insights. Customers can use this telemetry for the following purposes:
+The platform captures and logs all X++ layer exceptions to Application Insights. Use this telemetry to:
 
-- Monitor and diagnose application errors to maintain application stability.
-- Track exception trends over time to identify recurring issues.
-- Prioritize resolution efforts based on the frequency and severity of exceptions.
-- Analyze the impact of exceptions on user operations and workflows.
-- Set up alerts for specific exceptions in critical processes or overall exception trend spikes to ensure timely responses.
+- Monitor and diagnose errors to keep the app stable.
+- Track exception trends to spot recurring issues.
+- Prioritize fixes based on exception frequency and severity.
+- Analyze exception impact on user tasks and workflows.
+- Set alerts for specific exceptions in critical processes and spikes in overall exception trends for quick response.
 
 ### Resources
 
@@ -51,23 +51,56 @@ All exceptions that occur in the X++ layer are captured and logged to Applicatio
 
 ## Warehouse telemetry
 
-The warehouse module generates extensive telemetry data. The data offers insights into the following details:
+The warehouse module generates telemetry data. The data shows the following telemetry:
 
 - Warehouse operations and workflows
-- Performance metrics, so that bottlenecks can be identified and fixed
+- Performance metrics to identify and fix bottlenecks
 
-This telemetry can be visualized by using the Power BI dashboards that are provided.
+Use the provided Power BI dashboards to visualize the telemetry.
 
 ### Resources
 
-- Documentation: [View telemetry data in Application Insights](/dynamics365/supply-chain/warehousing/application-insights-monitor-usage-performance#view-telemetry-data-in-power-bi)
-- Power BI dashboard: [Warehouse Power BI Dashboard](https://github.com/microsoft/d365-scm-telemetry/tree/main/samples/PowerBI/Appsource)
+- Documentation: [View telemetry data in Application Insights](/dynamics365/supply-chain/warehousing/application-insights-monitor-usage-performance#view-telemetry-data-in-power-bi).
+- Power BI dashboard: [Warehouse Power BI dashboard](https://github.com/microsoft/d365-scm-telemetry/tree/main/samples/PowerBI/Appsource).
 
 ## DMF errors
 
-Errors from the Data Management Framework (DMF) are logged to the Custom Events table in Application Insights and the exceptions which bubble up to the x++ layer are sent to Exceptions table. As we mature this feature in DMF and start to expose more DMF events through Application Insights, this feature might change. The logged error has an error code associated with it. Learn more about the details for the error codes in the [Data management error descriptions and known limitations](../data-entities/dm-error-descriptions.md) article.
+The Data Management Framework (DMF) logs errors to the Custom Events table in Application Insights. Exceptions that bubble up to the X++ layer go to the Exceptions table. Each logged error has an associated error code. For error code details, see [Data management error descriptions and known limitations](../data-entities/dm-error-descriptions.md).
 
-- Quickly identify and address integration issues.
-- Monitor the health of data pipelines.
+- Identify and fix integration issues
+- Monitor data pipeline health
+
+## Batch telemetry (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [preview-note-d365](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+Telemetry from the batch framework is logged to the CustomEvents table in your Azure Monitor Application Insights instance.
+
+> [!NOTE]
+> - This feature is in **PU69/10.0.45 (build >= 7.0.7690.21)** and backported to **PU68/10.0.44 (build >= 7.0.7606.126)**.
+
+To enable Batch telemetry, activate the following flights:
+- **BatchTelemetryConfigurationFlight**
+- **BatchThreadInfoTelemetryFlight**
+- **BatchTelemetryCallstackFlight**
+
+After you enable the flights, new telemetry signals appear under the **Configure** tab:
+
+- **Batch Start Time** - Logs when a batch job starts.
+- **Batch Stop Time** - Logs when a batch job completes. Support duration tracking.
+- **Batch Throttling** - Captures throttling events and related system metrics (CPU, memory, SQL DTU).
+- **Batch Failure** - Adds diagnostic details when a batch job or task can't schedule. It complements existing Infolog errors by correlating telemetry with the originating batch job.
+- **Batch Queue** - Shows queue sizes for different queues in the priority-based scheduling framework.
+- **Batch Threads** - Shows active threads to help diagnose thread availability issues.
+
+With batch telemetry, you can:
+- Diagnose performance and scheduling bottlenecks
+- Enable proactive monitoring through alerts and dashboards
+- Accelerate resolution of operational issues
+
+### Resources
+
+- Plug and play dashboard: [Batch Monitoring Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/tree/main/Dashboards/AzureDataExplorer/Batch)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

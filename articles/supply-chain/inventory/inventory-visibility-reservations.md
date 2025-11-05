@@ -257,8 +257,8 @@ You can trigger a soft reservation from a Supply Chain Management sales order an
 
 Sign in to Supply Chain Management and make sure that you've enabled the following two features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- *Inventory Visibility integration with reservation offset* – This feature requires Supply Chain Management version 10.0.22 or later.
-- *Inventory Visibility integration with soft reservation on sales order lines* – This feature is recommended if you're running Supply Chain Management version 10.0.33 or later.
+- *Inventory Visibility integration with reservation offset* – This feature requires Supply Chain Management version 10.0.22 or later. As of Supply Chain Management version 10.0.45, this feature is turned on by default.
+- *Inventory Visibility integration with soft reservation on sales order lines* – This feature is recommended if you're running Supply Chain Management version 10.0.33 or later. As of Supply Chain Management version 10.0.45, this feature is turned on by default.
 
 These features are compatible with each other as of build 10.0.1591.98 of Supply Chain Management version 10.0.34 and build 10.0.1627.63 of Supply Chain Management version 10.0.35 (and all builds of versions 10.0.36 and higher). Prior to these versions, the features aren't compatible with each other, so you should only enable the one you want to use. We recommend upgrading to a newer version if you require both features.
 

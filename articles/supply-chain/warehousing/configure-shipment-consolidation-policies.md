@@ -18,38 +18,6 @@ The shipment consolidation process that uses shipment consolidation policies all
 
 The scenarios that are presented in this article show how to set up default and custom shipment consolidation policies.
 
-> [!WARNING]
-> If you upgrade a Microsoft Dynamics 365 Supply Chain Management system where you've been using the legacy shipment consolidation feature, consolidation might stop working as you expect unless you follow the advice that is given here.
->
-> On Supply Chain Management installations where the *Shipment consolidation policies* feature is turned off, you enable shipment consolidation by using the **Consolidate shipment at release to warehouse** setting for each individual warehouse. This feature is mandatory as of version 10.0.29. When it's turned on, the **Consolidate shipment at release to warehouse** setting becomes hidden, and the functionality is replaced by the *shipment consolidation policies* that are described in this article. Each policy establishes consolidation rules and includes a query to control where the policy applies. When you first turn on the feature, no shipment consolidation policies will be defined on the **Shipment consolidation policies** page. When no policies are defined, the system uses the legacy behavior. Therefore, each existing warehouse continues to respect its **Consolidate shipment at release to warehouse** setting, even though that setting is now hidden. However, after you create at least one shipment consolidation policy, the **Consolidate shipment at release to warehouse** settings no longer have any effect, and consolidation functionality is entirely controlled by the policies.
->
-> After you define at least one shipment consolidation policy, the system will check the consolidation policies each time that an order is released to the warehouse. The system processes the policies by using the ranking that is defined by each policy's **Policy sequence** value. It applies the first policy where the query matches the new order. If no queries match the order, each order line generates a separate shipment that has a single load line. Therefore, as a fallback, we recommend that you create a default policy that applies to all warehouses and groups by order number. Give this fallback policy the highest **Policy sequence** value, so that it's processed last.
->
-> To reproduce the legacy behavior, you must create a policy that doesn't group by order number, and that has query criteria that include all the relevant warehouses.
-
-## Turn on the Shipment consolidation policies feature
-
-To use the *Shipment consolidation policies* feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Shipment consolidation policies* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
-## <a name="initial-policies"></a>Set up your initial consolidation policies
-
-If you're working with a new system or a system where you've just turned on the *Shipment consolidation policies* feature for the first time, follow these steps to set up your initial shipment consolidation policies.
-
-1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
-1. On the Action Pane, select **Create default setup** to create the following policies:
-
-    - A policy that is named *Default* for the *Sales orders* policy type.
-    - A policy that is named *Default* for the *Transfer issue* policy type.
-    - A policy that is named *CrossOrder* for the *Transfer issue* policy type. (This policy is created only if you had at least one warehouse where the legacy **Consolidate shipment at release to warehouse** setting was enabled.)
-    - A policy that is named *CrossOrder* for the *Sales orders* policy type. (This policy is created only if you had at least one warehouse where the legacy **Consolidate shipment at release to warehouse** setting was enabled.)
-
-    > [!NOTE]
-    > - Both *CrossOrder* policies consider the same set of fields as the earlier logic. However, they also consider the order number field. (That field is used to consolidate lines into shipments, based on factors such as the warehouse, transportation mode of delivery, and address.)
-    > - Both *Default* policies consider the same set of fields as the earlier logic. However, they also consider the order number field. (That field is used to consolidate lines into shipments, based on factors such as the order number, warehouse, transportation mode of delivery, and address.)
-
-1. If the system generated a *CrossOrder* policy for the *Sales orders* policy type, select it, and then, on the Action Pane, select **Edit query**. In the query editor, you can see which of your warehouses the **Consolidate shipment at release to warehouse** setting was previously enabled for. Therefore, this policy reproduces your previous settings for these warehouses.
-1. Customize the new default policies as required by adding or removing fields and/or editing the queries. You can also add as many new policies as you need. For examples that show how to customize and configure your policies, see the example scenario later in this article.
-
 ## Scenario: Configure custom shipment consolidation policies
 
 This scenario provides an example that shows how to set up custom shipment consolidation policies and then test them by using demo data. Custom policies can support complex business requirements where shipment consolidation depends on several conditions. For each example policy later in this scenario, a short description of the business case is included. These example policies should be set up in a sequence that ensures a pyramid-like evaluation of the queries. (In other words, the policies that have the most conditions should be evaluated as having the highest priority.)
@@ -177,7 +145,7 @@ Follow these steps to create the shipment consolidation policy for this business
 1. On the Action Pane, select **Edit query**.
 1. In the query editor dialog box, on the **Joins** tab, expand and select **Tables \> Load details** in the tree.
 1. Select **Add table join**.
-1. In the grid of relations that appears, find and select the row where the **Relation** field is set to *Warehouse item number (Item number)*, and then select **Select**. 
+1. In the grid of relations that appears, find and select the row where the **Relation** field is set to *Warehouse item number (Item number)*, and then select **Select**.
 1. On the **Range** tab, select **Add** to add a row that has the following settings to the grid:
 
     - **Table:** *Warehouse item number*
@@ -226,7 +194,6 @@ In this example, you will create a *Customers allowing consolidation* policy tha
 
 - The policy will query for a specific order pool to identify customers who accept consolidated shipments.
 - Consolidation with open shipments is turned off.
-- Consolidation is done across orders using the fields selected by default CrossOrder policy (to replicate the previous **Consolidate shipment at release to warehouse** check box).
 
 - You can override the rule on a sales order by selecting a different order pool.
 
@@ -262,9 +229,8 @@ In this example, you will create a *Warehouses allowing consolidation* policy th
 
 - The policy will query for a specific order pool to identify warehouses that can consolidate shipments.
 - Consolidation with open shipments is turned off.
-- Consolidation is done across orders using the fields selected by default CrossOrder policy (to replicate the previous **Consolidate shipment at release to warehouse** check box).
 
-Typically, this business case can be addressed by using the default policies that you created in [Set up your initial consolidation policies](#initial-policies). However, you can also manually create similar policies by following these steps.
+Typically, this business case can be addressed by using the default policies. However, you can also manually create similar policies by following these steps.
 
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. Set the **Policy type** field to *Sales orders*.
@@ -306,10 +272,8 @@ The following scenarios illustrate how you could use the shipment consolidation 
 - Scenario 4: [Consolidate shipments by using the shipment consolidation workbench](../warehousing/consolidate-shipments-manual-workbench.md)
 - Scenario 5: [Consolidate shipments manually by using the Consolidate shipments page](../warehousing/consolidate-shipments-manual-form.md)
 
-
 ## Related information
 
 - [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

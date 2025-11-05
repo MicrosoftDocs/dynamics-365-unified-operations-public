@@ -45,7 +45,7 @@ Follow these steps to define the data source that's used for a custom label and 
     - **Description** – Enter a short description of the data source (for example, *Locations*).
     - **Label layout type** – Select *Custom label*.
     - **Custom label root table** – Select the table that should be used as the main data source for the label (for example, *WMSLocation* to print labels for locations, *InventTable* to print labels for products, or *CustTable* to print labels for customers).
-    - **Join type** – Select the type of joins used when adding related tables. Selecting *Inner join* will only retrieve data if data exists in both joined tables, while selecting *Outer join* will retrieve data from the root table even if there is no data in the related table.
+    - **Join type** – Select the type of joins used when adding related tables. Selecting *Inner join* will only retrieve data if data exists in both joined tables, while selecting *Outer join* will retrieve data from the root table even if there's no data in the related table.
 
     > [!NOTE]
     > Forms that don't have a data source or that use a temporary table as a data source can't use custom labels (for example, the **Registration** page for purchase orders uses `TmpInventTransWMS` as a data source, so custom labels can't be printed for that table). Instead, you must use a standard table.
@@ -64,7 +64,7 @@ Follow these steps to define the data source that's used for a custom label and 
     1. The **Label layout data source parameters** page opens. Use the Action Pane buttons to add or delete rows as needed. For each parameter, specify the following fields:
 
         - **Name** – Enter the name of the parameter. This name is used in the label layout to refer to the parameter (for example, *label_quantity*). It can only include letters A-Z (upper and lower case), numbers, and the underscore (_) character.
-        - **Data types** – Specify the type of data the parameter can hold. Currently, only *String* is supported, which means that no special number or date formatting will be available in label layouts when replacing the placeholder with the value. Using the *String* value should not pose any issues with whole numbers, such as quantity of labels printed.
+        - **Data types** – Specify the type of data the parameter can hold. Currently, only *String* is supported, which means that no special number or date formatting will be available in label layouts when replacing the placeholder with the value. Using the *String* value shouldn't pose any issues with whole numbers, such as quantity of labels printed.
         - **Display name** – Enter the name that will be shown to the user on the custom label printing dialog (for example, *Quantity of labels*).
         - **Mandatory** – Specify whether a value must be given for the parameter on the custom label printing dialog.
         - **Default value** – Enter the value that will be initially presented to the user on the custom label printing dialog (for example, *1*).
@@ -135,6 +135,28 @@ Follow these steps to print a custom label.
     - **Label layout data source parameters** - Specify any parameters defined on the label layout data source (for example, *Quantity of labels*).
 
 1. Select **OK**.
+
+## Print Arabic language labels
+
+To allow Arabic language descriptions to be printed on a Zebra Programming Language (ZPL) printer, you must set up the electronic reporting (ER) framework to generate ZPL labels. Follow these steps:
+
+1. Set up the electronic reporting (ER) Framework.
+
+    Configure the ER parameters in Supply Chain Management to enable label printing. Learn more in [Design a new ER solution to print ZPL labels](../../fin-ops-core/dev-itpro/analytics/er-design-zpl-labels.md).
+
+1. Design a data model.
+
+    Create an ER configuration that includes a warehouse management domain for label printing.
+
+1. Use Unicode-compatible fonts.
+
+    Make sure that your ZPL printer supports Arabic fonts such as *TT0003M_.TTF* or *ZEBRA Swiss Unicode*.
+
+1. Generate ZPL code.
+
+    Use ER to format the label in ZPL II and include Arabic text using the `^CI28` command for character encoding.
+
+1. Print the labels.
 
 ## Related information
 

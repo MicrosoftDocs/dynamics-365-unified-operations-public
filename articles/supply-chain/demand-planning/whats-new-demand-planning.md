@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: whats-new
-ms.date: 05/06/2025
+ms.date: 09/09/2025
 ms.custom: 
   - bap-template
 ---
@@ -15,11 +15,43 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of Demand planning in Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 1.0.0.3424
+
+### New feature introduced in version 1.0.0.3424
+
+This version of Demand planning enhances basic forecast calculations by adding two new features:
+
+- The new *Best fit model - version 2 (preview)* forecast algorithm now applies naive forecasting when an input time series contains a low number of data points. This approach helps improve statistics forecasting results when input data is limited, such as for newly added products. Learn more at [Naive forecasting](naive-forecast-algorithm.md).
+- Time freeze can now preserve all manual forecast adjustments. This option ensures that all manually adjusted cell values remain at the adjusted value even after you recalculate an existing forecast. No freeze rules are required. Learn more at [Limit automatic time series updates with time freezes](time-freeze.md).
+
+### New fixes and improvements in version 1.0.0.3424
+
+This version of Demand planning introduces the following fixes and improvements:
+
+- Increased stability.
+- Improvements to Generative insights.
+- Improved forecast calculation performance.
+
+## Version 1.0.0.3336
+
+### New feature introduced in version 1.0.0.3336
+
+This version of Demand planning enhances the *Copilot grid cursor* feature so that it now shows the impact of the signal input separately from the baseline for a selected forecasted cell. Learn more in [Copilot grid cursor](copilot-grid-cursor.md).
+
+### New fixes and improvements in version 1.0.0.3336
+
+This version of Demand planning introduces the following fixes and improvements:
+
+- Increased stability.
+- Auto-detect seasonality is improved to account for certain data compositions.
+- Forecast calculations now respect the decimal precision set in the forecast profile.
+- Improved the performance of forecast calculations.
+
 ## Version 1.0.0.2999
 
 ## New feature introduced in version 1.0.0.2999
 
-This version of Demand planning marks the public preview of *Generative insights*, which offers detailed insights calculated using AI models. The public preview supports two metrics: *seasonality* and *signal correlation*. The system clusters forecast data based on distinct patterns found for each metric. For each cluster, the system provides insights such as its relative size and confidence level. You can also choose the major contributor across various dimensions in the forecast.
+This version of Demand planning marks the public preview of *Generative insights*, which offers detailed insights calculated using AI models. The production ready preview supports two metrics: *seasonality* and *signal correlation*. The system clusters forecast data based on distinct patterns found for each metric. For each cluster, the system provides insights such as its relative size and confidence level. You can also choose the major contributor across various dimensions in the forecast. Learn more in [Generative insights for Demand planning (production ready preview)](generative-insights.md).
 
 ## New fixes and improvements in version 1.0.0.2999
 
@@ -36,58 +68,15 @@ This version of Demand planning adds several new features, as described in the f
 
 #### Copilot grid cursor
 
-The *Copilot grid cursor* offers detailed insights into a selected cell's value, including its original value, manual adjustments, and full adjustment history. User comments are also shown, to help make the changes easier to understand.
+The *Copilot grid cursor* offers detailed insights into a selected cell's value, including its original value, manual adjustments, and full adjustment history. User comments are also shown, to help make the changes easier to understand. Learn more in [Copilot grid cursor](copilot-grid-cursor.md).
 
 #### New operator in rules: Select all
 
-To improve efficiency and make queries easier to formulate, Demand planning now provides a *select all* operator. The new operator is available in the following policies: *time fence*, *time freeze*, and *row level access*.
+To improve efficiency and make queries easier to formulate, Demand planning now provides a *select all* operator. The new operator is available in the following policies: *time fence*, *time freeze*, and *row level access*. Learn more in learn more in [Using the select all operator](time-fences.md#select-all).
 
-The following table provides an example that shows how the *select all* operator can be used in a time fence rule. As a result of the rules, all products except *Product A* have a two-month time fence. *Product A* has a three-month time fence.
+#### Multiple rules for time freezes
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="4">Conditions</th>
-      <th colspan="4">Ruling</th>
-    </tr>
-    <tr>
-      <th>Table</th>
-      <th>Column</th>
-      <th>Operator</th>
-      <th>Value</th>
-      <th>Time bucket</th>
-      <th>Time bucket size</th>
-      <th>Role</th>
-      <th>Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Product</td>
-      <td>Product name</td>
-      <td>Select all</td>
-      <td>Not applicable</td>
-      <td>Monthly</td>
-      <td>2&nbsp;months</td>
-      <td>All</td>
-      <td>Active</td>
-    </tr>
-    <tr>
-      <td>Product</td>
-      <td>Product name</td>
-      <td>Equals</td>
-      <td>Product&nbsp;A</td>
-      <td>Monthly</td>
-      <td>3&nbsp;months</td>
-      <td>All</td>
-      <td>Active</td>
-    </tr>
-  </tbody>
-</table>
-
-#### Multiple roles for time freezes
-
-Demand planning now lets you assign multiple rules to forecast calculation action cards. Each rule can have a different time freeze horizon. In this way, updates to a continuous forecast calculation are prevented during the selected periods.
+Demand planning now lets you assign multiple time freeze rules to *Forecast* and *Forecast with signals* steps. Each rule can have a different time freeze horizon. In this way, updates to a continuous forecast calculation are prevented during the selected periods. Learn more in [Limit automatic time series updates with time freezes](time-freeze.md).
 
 ### New fixes and improvements in version 1.0.0.2794
 
@@ -108,11 +97,11 @@ Automatic detection of seasonality patterns was introduced in Demand planning ve
 
 #### Time freeze rules
 
-*Time freeze rules* let demand planning managers establish policies that prevent forecast calculations from recalculating and overwriting manual adjustments in an existing forecast during a specified date range. Time freeze rules are based on the dimensions that are available in each forecast, and they are easy to maintain.
+*Time freeze rules* let demand planning managers establish policies that prevent forecast calculations from recalculating and overwriting manual adjustments in an existing forecast during a specified date range. Time freeze rules are based on the dimensions that are available in each forecast, and they are easy to maintain. Learn more in [Limit automatic time series updates with time freezes](time-freeze.md).
 
-#### Generative insights into seasonality patterns (preview)
+#### Generative insights into seasonality patterns (production ready preview)
 
-Generative insights provide AI-generated insights into your data. The initial preview of the feature provides generative insights into your seasonality patterns. Visual displays make it easy for planners to understand seasonality data and make business decisions based on it. Information is clustered (grouped) according to the detected seasonality patterns. For each cluster, generative insights provide a confidence score and describe the seasonality pattern in natural language. The system also indicates the proportion of planning items that follow the pattern.
+Generative insights provide AI-generated insights into your data. The initial preview of the feature provides generative insights into your seasonality patterns. Visual displays make it easy for planners to understand seasonality data and make business decisions based on it. Information is clustered (grouped) according to the detected seasonality patterns. For each cluster, generative insights provide a confidence score and describe the seasonality pattern in natural language. The system also indicates the proportion of planning items that follow the pattern. Learn more in [Generative insights for Demand planning (production ready preview)](generative-insights.md).
 
 #### Simplified security role dependencies
 
@@ -163,7 +152,7 @@ This version of Demand planning introduces the following fixes and improvements:
 
 ### New feature introduced in version 1.0.0.1281
 
-This version adds support for *time fences*, which allow demand planning managers to establish policies that prevent planners from editing certain date ranges of a forecast. Time fences are both flexible and simple to maintain. Managers create time fence rules based on the dimensions available in each plan. For example, a single product could be set up with different time fences for each store or geographical location. Time fence rules can also apply based on each user's role. For example, a role-based time fence rule could allow managers to edit a forecast in a period that can't be edited by planners. Learn more in [Limit time series edits with time fences](time-fences.md).
+This version adds support for *time fences*, which allow demand planning managers to establish policies that prevent planners from editing certain date ranges of a forecast. Time fences are both flexible and simple to maintain. Managers create time fence rules based on the dimensions available in each plan. For example, a single product could be set up with different time fences for each store or geographical location. Time fence rules can also apply based on each user's role. For example, a role-based time fence rule could allow managers to edit a forecast in a period that can't be edited by planners. Learn more in [Limit manual time series edits with time fences](time-fences.md).
 
 ### New fixes and improvements in version 1.0.0.1281
 

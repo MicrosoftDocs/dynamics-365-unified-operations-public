@@ -14,6 +14,7 @@ ms.search.industry: Retail
 ms.author: aneesa
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
+ms.custom: sfi-ropc-nochange
 ---
 
 # Commerce Data Exchange troubleshooting

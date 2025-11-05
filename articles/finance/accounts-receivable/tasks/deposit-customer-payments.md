@@ -1,10 +1,10 @@
 --- 
 title: Deposit customer payments
-description: Learn about how to deposit customer payments, including a step-by-step process that outlines the process of depositing payments.
+description: Learn how to deposit customer payments, including a step-by-step process that outlines the process of depositing payments.
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: how-to
-ms.date: 04/05/2024
+ms.date: 08/04/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 
@@ -18,14 +18,14 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Deposit customer payments. This task uses the USMF demo company.
+This article describes how to deposit customer payments. This task uses the USMF demo company.
 
 1. Go to **Accounts receivable > Payments > Payment journal**.
 2. Select **New**.
 3. In the **Name** field, select **CustPay** in the drop-down menu.
 4. Select **Lines**.
 5. In the **Account** field, select the customer for whom you are recording the payment.
-6. In the **Credit** field, enter the amount of the payment. You can choose to leave the amount blank, and have the system calculate it by selecting the invoices which were paid.  
+6. In the **Credit** field, enter the amount of the payment. You can choose to leave the amount blank, and automatically calculate it by selecting the paid invoices.  
 7. In the **Payment reference** field, type a value. The payment reference could be the check number for the payment you are entering. The payment reference is required in order to include the payment on a deposit slip.  
 8. Mark the **Use a deposit slip** option. If the payment should be included in the deposit, change this setting to **Yes**.  
 9. Select **New**.

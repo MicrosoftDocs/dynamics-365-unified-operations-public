@@ -4,7 +4,8 @@ description: This article describes the Agent management feature in Microsoft Dy
 author: twheeloc
 ms.author: jkhaira
 ms.topic: conceptual
-ms.date: 05/28/2025
+ms.date: 07/21/2025
+ms.update-cycle: 180-days
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -35,7 +36,7 @@ A Power Platform admin center administrator must ensure that the following prere
 
 - A Dataverse environment must be linked to your finance and operations apps environment. To verify, open [LCS](https://lcs.dynamics.com/v2), select your project, and open the **Full details** for your finance and operations apps environment. In the section **Power Platform Integration**, look for your Power Platform Environment information. If no environment information is shown, follow the instructions provided to deploy an associated Dataverse environment.
 
-- The **Copilot for Finance and Operations apps** solution (logical name: msdyn\_fnocopilot) must be installed in the environment. The minimum accepted version is 1.0.03006.1.
+- The **Copilot for Finance and Operations apps** solution (logical name: msdyn\_fnocopilot) must be installed in the environment. The minimum accepted version is 1.0.03021.3.
 - The **Copilot** feature flag must be turned on in the Power Platform admin center.
 
     1. In the Power Platform admin center, go to **Environments**.

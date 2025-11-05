@@ -3,12 +3,12 @@ title: Purchasing policies overview
 description: Learn about purchasing policies, which help procurement administrators implement their procurement strategy by creating policy structures.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: overview
-ms.date: 06/07/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
+ms.topic: overview
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Purchasing policies overview
@@ -19,11 +19,17 @@ This article provides information about purchasing policies. A purchasing policy
 
 A purchasing policy consists of a set of policy rules. When you define a policy rule, you first select a rule type. You then create a rule for the rule type by defining the settings, the start date, and the end date for the rule.  
 
-For example, an administrator creates a policy, selects the **Catalog policy** rule type, and then adds a catalog policy rule to the policy. This catalog policy rule specifies that the Adventure catalog must be used for internal procurement. After the purchasing policy is associated with a particular organization, employees of that organization see the Adventure catalog when they create requisitions.
+For example, an administrator creates a policy, selects the *Catalog policy* rule type, and then adds a catalog policy rule to the policy. This catalog policy rule specifies that the Adventure catalog must be used for internal procurement. After the purchasing policy is associated with a particular organization, employees of that organization see the Adventure catalog when they create requisitions.
+
+## Manage purchasing policies
+
+To manage your purchasing policies, go to **Procurement and sourcing** \> **Setup** \> **Policies** \> **Purchasing policies**. From there, you can create, edit, and delete purchasing policies as needed.
 
 ## Assigning policies to organizations
 
-Before a policy can take effect, it must be associated with an organization. Purchasing policies are associated with the **Procurement internal control** hierarchy purpose. Therefore, purchasing policies apply only to organizations in hierarchies that have a hierarchy purpose of **Procurement internal control**. You can also select organizations from the flat list of legal entities in the CompanyInfo table. These legal entities are designated in the policy framework as *Companies*.
+Before a policy can take effect, it must be associated with an organization. When you create or edit a policy, you can associate it with an organization using the **Policy organization** FastTab of the **Purchase policy** page.
+
+Purchasing policies are associated with the *Procurement internal control* hierarchy purpose. Therefore, purchasing policies apply only to organizations in hierarchies that have a hierarchy purpose of *Procurement internal control*. You can also select organizations from the flat list of legal entities in the CompanyInfo table. These legal entities are designated in the policy framework as *Companies*.
 
 ## Determining which rule to apply
 
@@ -31,36 +37,38 @@ Depending on how you configure your purchasing policies, multiple rules can affe
 
 ### Example 1: Simple purchasing policy configuration
 
-Organizations that are small and less complex can set up purchasing policies by legal entity, and can use only the Companies organization hierarchy.  
+Organizations that are small and less complex can set up purchasing policies by legal entity, and can use only the *Companies* organization hierarchy.  
 
 For Fabrikam, a small business, purchasing requirements vary little across the organization. Purchasing rules vary only among the organization's legal entities. For example, employees of Fabrikam Canada and employees of Fabrikam U.S. purchase goods and services from different catalogs and different vendors. Therefore, Fabrikam sets up its purchasing policies at the legal-entity level.  
 
-Fabrikam creates two purchasing policies. Policy A applies to its U.S. legal entity, 1111. Policy B applies to its Canadian legal entity, 2222. When an employee in legal entity 1111 creates a purchase requisition, the policy rules are derived from policy A. For example, the product catalog that the employee sees is specified in the catalog policy rule for policy A.  
+Fabrikam creates two purchasing policies. *Policy A* applies to its U.S. legal entity, *1111*. *Policy B* applies to its Canadian legal entity, *2222*. When an employee in legal entity *1111* creates a purchase requisition, the policy rules are derived from *policy A*. For example, the product catalog that the employee sees is specified in the catalog policy rule for *policy A*.  
 
-When an employee in legal entity 2222 creates a purchase requisition, the policy rules are derived from policy B.  
+When an employee in legal entity *2222* creates a purchase requisition, the policy rules are derived from *policy B*.  
 
 > [!NOTE]
-> If an employee of legal entity 1111 purchases an item on behalf of an employee of legal entity 2222, the policy rules that are specified for legal entity 2222 (that is, the policy rules from policy B) are applied.
+> If an employee of legal entity *1111* purchases an item on behalf of an employee of legal entity *2222*, the policy rules that are specified for legal entity *2222* (that is, the policy rules from *policy B*) are applied.
 
 ### Example 2: Complex purchasing policy configuration
 
-In the previous example, all purchasing rules were defined in a single organization hierarchy, the Companies organization hierarchy. However, a complex organization might define policies for multiple organization hierarchies.  
+In the previous example, all purchasing rules were defined in a single organization hierarchy, the *Companies* organization hierarchy. However, a complex organization might define policies for multiple organization hierarchies.  
 
-Contoso is a large company that requires complex purchasing rules to control the requisition process. Contoso has defined rules for two different organization hierarchies: Department and Global purchasing control.  
+Contoso is a large company that requires complex purchasing rules to control the requisition process. Contoso has defined rules for two different organization hierarchies: *Department* and *Global purchasing control*.  
 
-Policy 123 is defined for the Department organization hierarchy for the Sales UK – Sales department. In policy 123, the purchase requisition control rule specifies that restrictions must be enforced for minimum order quantities. In this rule, the **Enforce minimum order quantity restrictions** option is selected.  
+*Policy 123* is defined for the *Department* organization hierarchy for the *Sales UK – Sales* department. In *policy 123*, the purchase requisition control rule specifies that restrictions must be enforced for minimum order quantities. In this rule, the **Enforce minimum order quantity restrictions** option is selected.  
 
-Policy 456 is defined for the Global purchasing control organization hierarchy for the Sales and Marketing department. In policy 456, the purchase requisition control rule doesn't specify that restrictions must be enforced for minimum order quantities. In this rule, the **Enforce minimum order quantity restrictions** option is deselected.  
+*Policy 456* is defined for the *Global purchasing control* organization hierarchy for the *Sales and Marketing* department. In *policy 456*, the purchase requisition control rule doesn't specify that restrictions must be enforced for minimum order quantities. In this rule, the **Enforce minimum order quantity restrictions** option is deselected.  
 
-Sam works in the Sales UK – Sales department in Contoso’s United Kingdom office. The policies for both the Department and Global purchasing control organization hierarchies apply to Sam's department. When Sam creates a purchase requisition, the system must determine which policy to apply. The system administrator set up the purchasing policy parameters to specify that purchasing policies must be applied in the following order of precedence:
+Sam works in the *Sales UK – Sales* department in Contoso’s United Kingdom office. The policies for both the *Department* and *Global purchasing control* organization hierarchies apply to Sam's department. When Sam creates a purchase requisition, the system must determine which policy to apply. The system administrator set up the purchasing policy parameters to specify that purchasing policies must be applied in the following order of precedence:
 
-1. Global purchasing control
-1. Department
-1. Companies
+1. *Global purchasing control*
+1. *Department*
+1. *Companies*
 
-Therefore, policy 456 is applied to the purchase requisition that Sam creates, and no minimum order quantity is required for the purchase requisition.
+Therefore, *policy 456* is applied to the purchase requisition that Sam creates, and no minimum order quantity is required for the purchase requisition.
 
 ## Policy rules
+
+When you create or edit a policy, you add and configure its policy rules using the **Policy rules** FastTab of the **Purchase policy** page. Each type of rule has its own set of conditions and actions, as described in the following subsections.
 
 ### Catalog policy rule
 
@@ -78,20 +86,20 @@ The category access policy rule determines which categories users have access to
 
 The category policy rule defines how users can select vendors for each category. It also defines requirements for the receiving and invoicing processes.
 
-### Re-approval rule for purchase orders
+### Reapproval rule for purchase orders
 
-The re-approval rule is an optional rule that defines the criteria for requiring re-approval when a purchase order is changed. The selected fields are evaluated in the purchase order workflow when the "Requires purchase order re-approval" condition is set up in the workflow.
+The reapproval rule is an optional rule that defines the criteria for requiring reapproval when a purchase order is changed. The selected fields are evaluated in the purchase order workflow when the *Requires purchase order reapproval* condition is set up in the workflow.
 
 > [!NOTE]
-> Accounting distribution will always be reset when an approved purchase order with change management enabled is changed. So you should be aware that if you want to avoid a re-approval of a purchase order when certain fields are changed, the field Accounting distribution.changed should NOT be included as a selected field for re-approval.
+> Accounting distribution will always be reset when an approved purchase order with change management enabled is changed. If you want to avoid a reapproval of a purchase order when certain fields are changed, the field Accounting distribution.changed should NOT be included as a selected field for reapproval.
 
 ### Purchase requisition RFQ rule
 
-The purchase requisition RFQ rule defines criteria for requiring a request for quotation (RFQ) for a purchase requisition line. If a line meets the conditions, the "informal RFQ" or "formal RFQ" stamp appears on the requisition line.
+The purchase requisition RFQ rule defines criteria for requiring a request for quotation (RFQ) for a purchase requisition line. If a line meets the conditions, the *informal RFQ* or *formal RFQ* stamp appears on the requisition line.
 
 ### Purchase requisition control rule
 
-The purchase requisition control rule for requisitions of type **consumption** is an optional rule. When you create rules of this type, you can set options on various tabs:
+The purchase requisition control rule for requisitions of type *Consumption* is an optional rule. When you create rules of this type, you can set options on various tabs:
 
 - On the **Workflow submission** tab, you can configure the fields that must be entered on the requisition line for the requisition to be submitted for approval.
 - On the **Order quantities** tab, you can configure the fields that are required on the purchase requisition under certain conditions. You can also enforce order quantities.
@@ -104,11 +112,11 @@ The requisition purpose rule is an optional rule that determines the type of req
 
 ### Replenishment category access policy rule
 
-The replenishment category access policy rule is an optional rule that determines the products that are available to fulfill requisition demand for a specific legal entity when the requisition purpose is **Replenishment**.
+The replenishment category access policy rule is an optional rule that determines the products that are available to fulfill requisition demand for a specific legal entity when the requisition purpose is *Replenishment*.
 
 ### Replenishment control rule
 
-The replenishment control rule is an optional rule that defines the fields that must be entered on the requisition line for the requisition to be submitted for approval when the requisition purpose is **Replenishment**.
+The replenishment control rule is an optional rule that defines the fields that must be entered on the requisition line for the requisition to be submitted for approval when the requisition purpose is *Replenishment*.
 
 ### Purchase order creation and demand consolidation rule
 
@@ -123,9 +131,9 @@ The purchase order creation and demand consolidation rule defines the policy rul
 - On the **Item description transfer** tab, you can transfer the item description from the requisition when it originates from an RFQ.
 - On the **Price Tolerance** tab, you can define rules to route approved purchase requisitions back through the review process when the price of a procurement catalog item increases. Set the maximum amount that the net amount on a line item on a purchase requisition can increase between the time when the purchase requisition is approved and the time when the purchase order is created. The net amount is calculated by using the following formula: (\[Quantity × (Unit price – Discount) ÷ Price unit\] + Purchase miscellaneous charges) × (100 – Discount percent) ÷ 100 Purchase requisition lines that exceed the price tolerance that you set are held for manual processing. The rules that you configure on the **Error processing** tab determine how the purchase requisition lines are processed.
 - On the **Error processing** tab, you can configure the processing rule that is applied to a purchase requisition if it fails validation during purchase order creation because of a vendor error or a price tolerance error. Select one of the following options:
-    - **No action** – The purchase requisition lines remain on the **Release approved purchase requisitions** page. The status of the purchase requisition lines remains **Approved**. However, the errors must be resolved before a purchase order can be generated for the purchase requisition lines.
+    - **No action** – The purchase requisition lines remain on the **Release approved purchase requisitions** page. The status of the purchase requisition lines remains *Approved*. However, the errors must be resolved before a purchase order can be generated for the purchase requisition lines.
     - **Cancel the purchase requisition line** – The purchase requisition lines are canceled. The requester can create a new purchase requisition for the canceled lines if they still want to request the line items.
-    - **Create a new purchase requisition line** – The purchase requisition lines are canceled. New purchase requisitions are then generated that contain only the purchase requisition lines that failed validation. The new purchase requisitions that are generated have a status of **Draft**. These purchase requisitions can be resubmitted for review after the validation errors have been resolved. The preparer of the purchase requisition lines is notified that the lines were canceled, and that new purchase requisitions were generated for the purchase requisition lines that failed.
+    - **Create a new purchase requisition line** – The purchase requisition lines are canceled. New purchase requisitions are then generated that contain only the purchase requisition lines that failed validation. The new purchase requisitions that are generated have a status of *Draft*. These purchase requisitions can be resubmitted for review after the validation errors have been resolved. The preparer of the purchase requisition lines is notified that the lines were canceled, and that new purchase requisitions were generated for the purchase requisition lines that failed.
 - On the **Manual purchase order creation** tab, you can define the parameters that determine whether a purchase requisition must be manually processed, or whether it can be automatically converted to a purchase order. The parameters can apply to internal catalog items, external catalog items, or non-catalog items. Select one of the following options:
     - **Manually create purchase orders** – Manually create purchase orders for all purchase requisitions.
     - **Automatically create purchase orders** – Automatically create purchase orders for all approved purchase requisitions. No purchase requisitions are held for manual purchase order creation.

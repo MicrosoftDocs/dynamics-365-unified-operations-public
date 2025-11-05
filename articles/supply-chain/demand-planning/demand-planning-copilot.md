@@ -5,6 +5,7 @@ author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: overview
 ms.date: 07/02/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.collection:

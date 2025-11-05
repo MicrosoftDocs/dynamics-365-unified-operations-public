@@ -4,7 +4,8 @@ description: Learn how administrators can enable basic Copilot capabilities in f
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
-ms.date: 04/25/2025
+ms.date: 06/17/2025
+ms.update-cycle: 180-days
 ms.custom:
  - bap-template
 ms.reviewer: johnmichalak
@@ -15,9 +16,9 @@ ms.search.region: Global
 ms.search.form:
 ---
 
-[!include [banner](../includes/banner.md)]
-
 # Enable Copilot capabilities in finance and operations apps
+
+[!include [banner](../includes/banner.md)]
 
 This article describes how Microsoft Copilot capabilities in finance and operations apps are constructed, how to enable or disable these capabilities, and how to troubleshoot them.
 
@@ -83,12 +84,15 @@ To check for and install the required apps, follow these steps.
 
 The Copilot sidecar uses conversational bots and the generative answers capability from Copilot Studio.
 
-Generative answers require Bing Search. In addition, depending on the availability of back-office services in your region, your Dataverse environment might have to be set up to support cross-region calls. For more information, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
+Generative answers require Bing Search. In addition, depending on the availability of back-office services in your region, your Dataverse environment might have to be set up to support cross-region calls. Learn more at [Move data across regions for Copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
 
 > [!NOTE]
 > If the required AI services are already available in your Dataverse region, you don't have to set up support for cross-region calls.
 
 If Bing Search is disabled, or if cross-region data movement is required but is disabled, users won't be able to open the Copilot sidecar, or the Copilot sidecar won't provide answers, depending on the situation.
+
+> [!NOTE]
+> In [US Government Community Cloud (GCC) and GCC-High environments](/dynamics365/fin-ops-core/fin-ops/deployment/us-gcc-deployment), Bing Search is off by default and must be explicitly enabled by an administrator. Learn more at [Turn on data movement, Bing search, and Microsoft 365 services for Copilots and generative AI features](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features).
 
 ### Confirm that your Power Platform environment can publish copilots that have AI features
 
@@ -121,7 +125,9 @@ As was previously mentioned, most Copilot features in finance and operations app
 | Dynamics 365 Supply Chain Management | Review and accept changes to confirmed purchase orders | [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md). |
 | Dynamics 365 Supply Chain Management | Workload insights with Copilot in the Warehouse Management mobile app | [Enable Workload insights with Copilot](../../../supply-chain/warehousing/warehouse-management-mobile-app-insights.md). |
 | Dynamics 365 Supply Chain Management | Supplier Communications Agent | [Turn on Supplier Communications Agent features and synchronize mailboxes with Dataverse](../../../supply-chain/procurement/supplier-com-agent-setup.md). |
+| Dynamics 365 Supply Chain Management | Generative insights for Demand planning | Automatically installed and enabled when you [install Demand planning](../../../supply-chain/demand-planning/install-demand-planning.md). |
 
 ## Responsible AI FAQs
 
 For information about the capabilities and limitations of AI-powered Copilot features in finance and operations apps, see [Responsible AI FAQs for the Microsoft Dynamics 365 finance and operations platform](../responsible-ai/responsible-ai-overview.md).
+

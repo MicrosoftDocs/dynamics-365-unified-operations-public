@@ -7,8 +7,9 @@ ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
 ms.date: 01/24/2025
-ms.custom: 
+ms.custom:
   - bap-template
+  - sfi-image-nochange
 ---
 
 # Sealed bidding for RFQs
@@ -34,11 +35,7 @@ When you use sealed bidding, only users who are set as the contact person for a 
 
 Because users who have appropriate permissions and who are set up as vendor contacts can access the sealed bids for a vendor, it's important to track who those users are. The system admin who sets up users and security roles is responsible for limiting access to sealed bids to those users who are allowed to view them.
 
-### Step 2: Enable the sealed bidding feature
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Sealed bidding for RFQs* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
-### Step 3: Set up Azure Key Vault
+### Step 2: Set up Azure Key Vault
 
 Supply Chain Management uses encryption keys to protect all sealed bids and keep them secret until the appropriate time. It takes advantage of the capabilities of Key Vault to generate and manage the required keys. Therefore, you must set up a connection from Supply Chain Management to a key vault to enable the system.
 
@@ -55,7 +52,7 @@ Key Vault generates the key that is used to retrieve the secret when the vendor 
 
 In the next three steps, you'll set up the connection to Key Vault. First, you'll set up a key vault to use with sealed bidding. Next, you'll configure Supply Chain Management to communicate with the key vault. Finally, you'll set the expiration time for the key.
 
-### Step 4: Set up a key vault to use with sealed bidding
+### Step 3: Set up a key vault to use with sealed bidding
 
 To set up your key vault, follow these steps. The order of the steps is important.
 
@@ -63,7 +60,7 @@ To set up your key vault, follow these steps. The order of the steps is importan
 1. Set up a key vault in your separate Azure storage. Learn more in [Maintaining Azure Key Vault storage](https://support.microsoft.com/help/4040294/maintaining-azure-key-vault-storage).
 1. Set up your Supply Chain Management app to work as a client for your key vault. Learn more in [Setting up Azure Key Vault Client](https://support.microsoft.com/help/4040305/setting-up-azure-key-vault-client).
 
-### Step 5: Configure Key Vault parameters in Supply Chain Management
+### Step 4: Configure Key Vault parameters in Supply Chain Management
 
 To configure Supply Chain Management to communicate with the key vault during sealed bidding, follow these steps.
 
@@ -82,7 +79,7 @@ To configure Supply Chain Management to communicate with the key vault during se
 > [!NOTE]
 > You can enable only one key vault configuration for sealed bidding at a time. Before you disable an existing key vault configuration, you must make sure that all sealed bids that use it are unsealed. Inspect every RFQ case of the *Sealed* type, and make sure that all replies for it are unsealed.
 
-### Step 6: Set the key expiration time
+### Step 5: Set the key expiration time
 
 To set the expiration time that is applied to the key that is generated for every new bid, follow these steps.
 

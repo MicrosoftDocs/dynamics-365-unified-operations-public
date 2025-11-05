@@ -1,66 +1,59 @@
 ---
 title: GB-00002 Create a purchase order that includes items subject to reverse charge VAT
-description: Learn about creating a purchase order that includes items subject to reverse charge VAT for the United Kingdom, including a step-by-step process.
+description: Learn how to create a purchase order that includes items subject to reverse charge VAT for the United Kingdom in Microsoft Dynamics 365 Finance.
 author: epodkolzina
 ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/01/2024
+ms.date: 08/04/2025
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2016-06-30
 ms.search.form: 
   - PurchTable, PurchCreateOrder, TaxTmpWorkTrans
   - DefaultDashboard
-ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # GB-00002 Create a purchase order that includes items subject to reverse charge VAT
 
 [!include [banner](../../includes/banner.md)]
 
-This task walks you through creating a purchase order that includes items subject to reverse charge VAT for the United Kingdom. 
+This article explains how to create a purchase order that includes items subject to reverse charge VAT for the United Kingdom in Microsoft Dynamics 365 Finance.
 
-This walkthrough was created using the demo company GBSI.
+The following procedure usies the demo company GBSI.
 
-Prior to this task, the "Set up reverse charge VAT" tasks should be completed.
-
+Before you complete the procedure, you must complete the procedures in [Set up reverse charge VAT item groups, rules, and parameters](gb-00002-reverse-charge-vat-item-groups.md).
 
 ## Create a purchase order
-1. Go to Accounts payable > Purchase orders > All purchase orders.
-2. Click New.
-3. In the Vendor account field, click the drop-down button to open the lookup.
-    * Select 'GB_SI_000002'  
-4. In the list, find and select the desired record.
-    * Select 'GB_SI_000002'  
-5. In the list, click the link in the selected row.
-6. Click OK.
-7. In the list, mark the selected row.
-8. In the Item number field, type a value.
-    * Enter 'S0020'  
-9. In the Quantity field, enter a number.
-    * Set Quantity to '4'  
-10. In the Unit price field, enter a number.
-    * Set Unit price to '1000'  
-11. Click Add line.
-12. In the Item number field, type a value.
-    * Enter 'S0012'  
-13. In the Quantity field, enter a number.
-    * Set Quantity to '6'  
-14. In the Unit price field, enter a number.
-    * Set Unit price to '1000'  
-15. Click Save.
-16. Expand or collapse the Line details section.
-    * Validate that Reverse charge VAT groups are set in Sales tax group and Item tax group  
-17. Click the Setup tab.
-    * Validate that Reverse charge VAT groups are set in Sales tax group and Item tax group: RC-VAT  
-18. In the list, select row 1.
-    * Select the 1st line and validate that Reverse charge VAT groups are set in Sales tax group and Item tax group: RC-VAT  
-19. On the Action Pane, click Purchase.
-20. Click Sales tax.
-    * Observe the calculated Reverse charge VAT transactions:   Sales tax transactions with incoming and outgoing direction  
-21. Click OK.
+
+To create a purchase order, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+1. Select **New**.
+1. In the **Vendor account** field, select the drop-down, and then select **GB_SI_000002**.  
+1. In the list, find and select **GB_SI_000002**.
+1. In the list, select the link in the selected row.
+1. Select **OK**.
+1. In the list, mark the selected row.
+1. In the **Item number** field, enter "S0020".  
+1. In the **Quantity** field, enter "4".  
+1. In the **Unit price** field, enter "1000".  
+1. Select **Add line**.
+1. In the **Item number** field, enter "S0012".  
+1. In the **Quantity** field, enter "6".  
+1. In the **Unit price** field, enter "1000".  
+1. Select **Save**.
+1. Expand or collapse the **Line details** section.
+1. For **Sales tax group** and **Item tax group**, validate that reverse charge VAT groups are set (**RC-VAT**).   
+1. Select the **Setup** tab.
+1. For **Sales tax group** and **Item tax group**, validate that reverse charge VAT groups are set (**RC-VAT**). 
+1. In the list, select row 1.
+1. For **Sales tax group** and **Item tax group**, validate that reverse charge VAT groups are set (**RC-VAT**). 
+1. On the Action Pane, select **Purchase**.
+1. Select **Sales tax**.
+1. Validate that the calculated reverse charge VAT transactions are sales tax transactions with incoming and outgoing directions.  
+1. Select **OK**.
 
 
 

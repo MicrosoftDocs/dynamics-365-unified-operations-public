@@ -18,8 +18,6 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 # Vendor invoices overview
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 This article provides general information about vendor invoices. Vendor invoices are requests for payment for products and services. Vendor invoices might represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.
 
@@ -146,17 +144,6 @@ You can use the filters under the **Record to include** field to further limit t
 
 ### Extend invoice number length
 Beginning in Dynamics 365 Finance version 10.0.40 and later, you can enable the **Extend the length of invoice number for vendor invoice** feature to increase the invoice number from 20 characters to 50 characters in the vendor invoice and invoice journal. Before enabling the feature, create a ticket in Lifeccycle services to open the **EnableEdtStringDatabaseStringLengthAttributeInComputation** flight.
-
-### Reversal of matched purchase orders
-Users can now reverse a posted purchase order invoice in Dynamics 365 Finance. This enhancement eliminates the need for workarounds when an invoiced purchase order requires correction.
-
-## Key Considerations for Reversal:
-
- - Reversal must be performed in the originating module
-Users must reverse the invoice in the module where the transaction was originally posted. For example: If the invoice was created in Accounts payable, it can't be reversed from General ledger.
-
- - Restrictions on reversal
-If the invoice is already settled against a payment voucher, reversal isn't allowed.
 
 ## Additional resources
 

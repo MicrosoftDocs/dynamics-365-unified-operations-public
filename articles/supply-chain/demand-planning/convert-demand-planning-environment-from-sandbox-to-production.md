@@ -56,4 +56,4 @@ To delete tables and time series, follow these steps.
 After you convert a Demand planning environment from sandbox to production, the environment uses production data and generates production forecasts. Therefore, you should review who can access Demand planning, and what kind of data they can view or edit. Learn more in the following articles:
 
 - **Security roles and row-level security:** [Security roles and row-level security in Demand planning](/dynamics365/supply-chain/demand-planning/users-access)
-- **Time fence functionality:** [Limit time series edits with time fences](/dynamics365/supply-chain/demand-planning/time-fences)
+- **Time fence functionality:** [Limit manual time series edits with time fences](/dynamics365/supply-chain/demand-planning/time-fences)

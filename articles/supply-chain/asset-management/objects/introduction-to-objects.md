@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form: EntAssetTimeline, EntAssetObjectTableLookup, EntAssetObjectTableParent, EntAssetObjectOverview, EntAssetObjectImage, EntAssetObjectTable, EntAssetLifecycleStateLog, EntAssetObjectWorkOrderActive, EntAssetObjectAttribute
 ms.topic: overview
-ms.date: 06/28/2024
+ms.date: 08/13/2025
 ms.custom: 
   - bap-template
 ---
@@ -45,8 +45,8 @@ The buttons on the Action Pane are organized on tabs. The following table briefl
 | Project transactions | View all posted transactions that are related to work orders that have been created for the asset. |
 | Asset measures | Create or view asset measures on the asset. |
 | Maintenance schedule | Open the **Open maintenance schedule** list page, where you can view maintenance plans, maintenance requests, and maintenance rounds that are associated with the asset, and that have a status of **Created**. |
-| Update asset state | Update the asset lifecycle state. You can select multiple assets on the **All assets** list page and then update the asset lifecycle state for all of them at the same time. |
-| Lifecycle state log | Open a log that shows the lifecycle states of the selected asset. |
+| Update asset state | Update the asset lifecycle state. You can select multiple assets on the **All assets** list page and then update the asset lifecycle state for all of them at the same time.<br><br>You can add remarks, which are visible in the lifecycle state log. Remarks require Supply Chain Management version 10.0.46 or higher with *Remarks can be associated with each change in lifecycle states* enabled in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). |
+| Lifecycle state log | Open a log that shows the lifecycle states of the selected asset.<br><br>The log includes any remarks that were added by users during manual lifecycle changes. Remarks require Supply Chain Management version 10.0.46 or higher with *Remarks can be associated with each change in lifecycle states* enabled in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). |
 | Asset documents | View a list of the documents that are attached to an asset. These documents are set up at **Asset management** \> **Setup** \> **Asset documents**. |
 | Attributes | Create or view asset attributes. |
 | Image | Select an image for the asset. |

@@ -4,7 +4,7 @@ description: Learn about how to use Barcode data sources to generate bar code im
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 10/21/2020
+ms.date: 10/02/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -278,7 +278,7 @@ The draft version of the selected format is marked as available for use when the
 
 As described in the [Generate printable FTI forms](er-generate-printable-fti-forms.md#finland) article, you can use a special font to produce bar codes in a generated document. In this case, additional transformations of the generated document might depend on the availability of that font in the transformation environment. For example, if you try to convert a document to PDF format or preview it in an environment where the font is missing, bar codes won't be rendered correctly.
 
-However, when you use the **Barcode** data source to produce bar codes, the rendering of those bar codes doesn't depend on any font. Therefore, you can easily convert documents that contain the bar codes to PDF format. The following illustration shows the preview of a generated payment check that has been [converted](electronic-reporting-destinations.md#OutputConversionToPDF) to a PDF, based on the setting of the configured ER [destination](electronic-reporting-destinations.md).
+However, when you use the **Barcode** data source to produce bar codes, the rendering of those bar codes doesn't depend on any font. Therefore, you can easily convert documents that contain the bar codes to PDF format. The following illustration shows the preview of a generated payment check that has been [converted](er-output-conversion-to-pdf.md) to a PDF, based on the setting of the configured ER [destination](electronic-reporting-destinations.md).
 
 ![Preview of the PDF of a payment check.](./media/er-barcode-data-source-cheque4.png)
 

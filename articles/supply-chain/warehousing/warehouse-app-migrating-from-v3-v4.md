@@ -1,20 +1,18 @@
 ---
-title: Migrate the Warehouse Management mobile app from V3 to V4 (preview)
+title: Migrate the Warehouse Management mobile app from V3 to V4
 description: Learn how to migrate from Warehouse Management mobile application from version 3 (V3) to version 4 (V4). The article includes information about compatibility, requirements, and the timeline.
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 06/12/2025
+ms.date: 10/27/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Migrate the Warehouse Management mobile app from V3 to V4 (preview)
+# Migrate the Warehouse Management mobile app from V3 to V4
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 In June 2025, Microsoft will begin to [roll out](#rollout) version 4 (V4) of the Warehouse Management mobile app. This version introduces significant improvements and new features to enhance the user experience and the app's performance.
 
@@ -23,8 +21,6 @@ For V4, we rewrote the code of the Warehouse Management mobile app by using more
 - **Enhanced performance** – Improved application responsiveness and stability.
 - **Better customer support capabilities** – Faster issue resolution and customer assistance.
 - **Future-ready architecture** – Streamlined development of new features and integrations.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## New features in V4
 
@@ -88,12 +84,12 @@ If you're running a newer version of Android, then we recommend using V4 because
 
 When you migrate from V3 to V4, the following compatibility features are available:
 
-- **Customization preservation** – All customizations and configurations from V3 are fully compatible with V4 and remain functional.
-- **Connection migration** – In most cases, existing connections are automatically migrated. If manual reconfiguration is required, QR code generation and scanning capabilities (camera or beam scanner) are available for easy setup. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
+- **Customizations are preserved** – All customizations and configurations from V3 are fully compatible with V4 and remain functional.
+- **Connection settings can be preserved** – When you upgrade the Warehouse Management mobile app from version 3.0.8 or higher to V4, your existing connection settings are automatically migrated to V4. The settings aren't migrated from older versions of V3, so if you're running version 3.0.7 or older, then you should upgrade to version 3.0.8 or later before upgrading to V4. To preserve connection settings, don't uninstall V3, download the V4 installer to the device, and select the **Upgrade** option when running it. If you uninstall V3 and then install V4, your connection settings are lost. Connection settings are only preserved during an upgrade, not during a fresh installation. If manual reconfiguration is required, you can generate and scan QR codes for easy setup. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
 
 ### Authentication
 
-- **One-time reauthentication** – Admins must complete a single authentication process for each device that they migrate to V4. After a device is successfully migrated, it remains authenticated. No further reauthentication is required.
+- **One-time reauthentication** – App users must complete a single authentication process the first time they use the app on each device that is migrated to V4. After a device is successfully migrated, it remains authenticated. You won't need to reauthenticate the device again when updating to future versions of V4.
 - **Windows platform configuration** – For Windows applications, you must follow these steps to add a new redirect URI to your Azure application registration.
 
     1. Open the [Azure portal](https://portal.azure.com).
@@ -105,39 +101,28 @@ When you migrate from V3 to V4, the following compatibility features are availab
 
 ### iOS limitations
 
-Device code authentication isn't available on iOS platforms. Username and password authentication is the only supported method for iOS devices.
+Device code authentication isn't available on iOS platforms. Username/password authentication is the only supported method for iOS devices.
 
-### Lack of support for certificate authentication
+It isn't possible to connect iOS devices to on-premises environments of Supply Chain Management.
 
-V4, like V3, doesn't support certificate authentication. Users must use the device code or username/password authentication method.
+### On-premises limitations
 
-## <a name="rollout"></a>Rollout schedule and transition period support
+For on-premises installations of Supply Chain Management, device code authentication isn't supported for Android devices; only username/password authentication is available for this platform.
 
-### V4 public preview
+## <a name="rollout"></a>Rollout and transition period support
 
-- **Date of availability** – End of June 2025
-- **Distribution channels**
-    – **Windows** – [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
-    - **Android** – Google Beta Testers and [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
+During the transition period, V3 and V4 can operate simultaneously in the same warehouse environment without conflicts provided they're installed on separate devices. This allows for a phased rollout of V4 without disrupting ongoing operations. However, V3 and V4 can't be installed on the same device at the same time. We recommend that you roll out the new version gradually rather than installing it on all devices at once.
 
-- **Concurrent operation** – During the transition period, V3 and V4 can operate simultaneously in the same warehouse environment without conflicts. We recommend that you roll out the new version gradually rather than installing it on all devices at once.
+### V4 general availability
 
-- **Authentication benefits for early adopters** – Each device that you update from V3 to V4 must be reauthenticated after the initial update. However, you won't need to reauthenticate the device again when updating to future versions of V4.
-
-### V4 general availability for Android and Windows
-
-- **Date of availability** – End of August 2025 (estimated)
+- **Date of availability** – WMA is currently GA for all supported platforms (Microsoft Windows, Google Android, and Apple iOS) in all supported regions.
 
 - **Distribution channels**
-    - **Windows** – Microsoft Store and [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
-    - **Android** – Google Play and [App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
+    - **Windows** – [Microsoft App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
+    - **Android** – Google Play (or based on your location, Google Beta Testers) and [Microsoft App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
+    - **iOS** – Currently available through [Apple Test Flight](https://testflight.apple.com/). The app is expected to be available on the Apple App Store in January 2026.
 
 - **Concurrent operation** – V3 and V4 can operate simultaneously in the same warehouse environment without conflicts, but we recommend moving to V4 when it becomes generally available.
-
-### V4 general availability for iOS
-
-- **Date of availability**: End of November 2025 (estimated)
- **Distribution channel** – Apple App Store
 
 ### V3 support timeline
 

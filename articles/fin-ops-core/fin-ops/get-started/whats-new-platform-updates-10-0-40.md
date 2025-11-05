@@ -4,6 +4,7 @@ description: This article lists the features that are included in the platform u
 author: johnmichalak
 ms.author: johnmichalak
 ms.date: 10/23/2024
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
   - bap-template

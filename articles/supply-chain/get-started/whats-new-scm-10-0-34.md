@@ -3,13 +3,14 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.34 (Ju
 description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.34 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
+ms.reviewer: kamaybac
+ms.search.form:
 ms.topic: whats-new
-ms.date: 04/19/2024
+ms.date: 08/05/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen
-ms.reviewer: kamaybac
-ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.34 (July 2023)

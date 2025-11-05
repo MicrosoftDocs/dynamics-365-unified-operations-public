@@ -2,7 +2,7 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 06/24/2025
+ms.date: 10/30/2025
 ms.topic: overview
 ms.reviewer: v-chrgriffin
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -44,58 +44,52 @@ The following list describes the minimum and maximum Adyen firmware versions tha
 
 
 
-# [10.0.38](#tab/10-0-38)
-### Dynamics 365 Retail POS version 10.0.38
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_94p4 | adyen_v1_96p0 |
-
-# [10.0.39](#tab/10-0-39)
-### Dynamics 365 Retail POS version 10.0.39
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_96p0 | adyen_v1_99p6 |
-
-# [10.0.40](#tab/10-0-40)
-### Dynamics 365 Retail POS version 10.0.40
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_99p6 | adyen_v1_105p9 |
-
 # [10.0.41](#tab/10-0-41)
-### Dynamics 365 Retail POS version 10.0.41
+### Dynamics 365 Commerce POS version 10.0.41
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
 | adyen_v1_105p9 | adyen_v1_109 |
 
 # [10.0.42](#tab/10-0-42)
-### Dynamics 365 Retail POS version 10.0.42
+### Dynamics 365 Commerce POS version 10.0.42
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
 | adyen_v1_109 | adyen_v1_109 |
 
 # [10.0.43](#tab/10-0-43)
-### Dynamics 365 Retail POS version 10.0.43
+### Dynamics 365 Commerce POS version 10.0.43
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
 | adyen_v1_109 | adyen_v1_115 |
 
 # [10.0.44](#tab/10-0-44)
-### Dynamics 365 Retail POS version 10.0.44
+### Dynamics 365 Commerce POS version 10.0.44
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
-| adyen_v1_114 | adyen_v1_116 |
+| adyen_v1_114 | adyen_v1_117 |
+
+# [10.0.45](#tab/10-0-45)
+### Dynamics 365 Commerce POS version 10.0.45
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_117 | adyen_v1_120 |
+
+# [10.0.46](#tab/10-0-46)
+### Dynamics 365 Commerce POS version 10.0.46
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_117 | adyen_v1_120 |
 
 ---
 
 > [!NOTE]
-> - Adyen may release minor version updates after Microsoft tests the major version. As long as a major version is supported, it's acceptable to have minor version updates within the same major version. These updates are normally targeted fixes and don't meet the bar for full retesting as long as the same major firmware version was previously tested. Updates shouldn't exceed the maximum Adyen firmware version listed in the documentation. 
+> Adyen may release minor version updates after Microsoft tests the major version. As long as a major version is supported, it's acceptable to have minor version updates within the same major version. These updates are normally targeted fixes and don't meet the bar for full retesting as long as the same major firmware version was previously tested. Updates shouldn't exceed the maximum Adyen firmware version listed in the documentation. 
 
 ### Supported payment terminals
-The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api). It supports all payment terminals that this application programming interface (API) supports. For a complete list of Adyen payment terminals, visit the [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals) page.
+The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnostic [Adyen Terminal API](https://www.adyen.com/knowledge-hub/introducing-the-terminal-api). It supports all payment terminals that this application programming interface (API) supports. For a complete list of Adyen payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
 
 > [!NOTE]
-> We recommend using the payment terminals which are PCI Approved PIN Transaction Security Point of Interaction (PTS POI) devices. The list of approved devices for Adyen can be found here: [PCI PTS POI devices](https://listings.pcisecuritystandards.org/assessors_and_solutions/point_to_point_encryption_solutions?agree=true)
+> Microsoft recommends that you use payment card industry (PCI) approved payment terminals that are PIN Transaction Security Point of Interaction (PTS POI) devices. For a list of approved devices for Adyen, see [PCI PTS POI devices](https://listings.pcisecuritystandards.org/assessors_and_solutions/point_to_point_encryption_solutions?agree=true)
 
 The following video describes the capabilities of the Adyen Castles SE1 Android payment terminal.
 
@@ -172,7 +166,7 @@ The following table lists the current Dynamics 365 Commerce Payment Connector fo
 | WeChat Pay | ✔ | No |
 
 > [!NOTE]
-> Support for Affirm, Alipay, and WeChatPay payment methods is added for "card present" scenarios starting with Commerce version 10.0.40. For information on setup and known limitations, see [Wallet payment support](wallets.md).
+> In Commerce releases before version 10.0.45, to enable using digital wallets to place orders via POS and return those orders in call center, you must contact Microsoft to enable the **RetailPaymentCreateNonRecurringCreditCardFlight** flight. For information on setup and the known limitations for digital wallets, see [Wallet payment support](wallets.md).
 
 #### Supported card present input methods
 
