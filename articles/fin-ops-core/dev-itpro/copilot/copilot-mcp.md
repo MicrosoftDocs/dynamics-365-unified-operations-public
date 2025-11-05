@@ -95,9 +95,24 @@ The system administrator must explicitly grant access to any other agent platfor
 
 ## Known limitations
 The following are known limitations with the current implementation of the Dynamics 365 ERP MCP (Preview) server:
-1. **Language:** The MCP server is currently supported only in US English (en-us). If the authenticated user of the agent has a different locale specified, the form lebels and values returned in the tool context will be translated to the locale. However, any metadata or guidance provided in the MCP responses would be in English. 
-2. **Control limitations:** Agents cannot interact with some controls such as calendar controls, organization chart controls, list view, availability view, HTML editor, image, radio button, and time edit. Custom controls are also not supported.
-3. **Available menu items:** The `find_menu_item` tool returns display and action menu items filtered by items in the left-side navigation pane and items that are accessible to a user role.
-4. **Form tabs:** Form tabs are closed by default. Agents must open form tabs to interact wwith the data and controls under the form tab.
-5. **Output menu items:** Output menu items, which generate and display reports or print results, are not supported in the MCP server.
-6. **Attachments**: Attachments are not supported, including the document viewer DocuUpload, and FileUpload controls.
+1. **Language:** The MCP server is currently supported only in US English (en-us). If the authenticated user of the agent has a different locale specified, the form lebels and values returned in the tool context will be translated to the locale. However, any metadata or guidance provided in the MCP responses would be in English.
+2. **Dates:** Dates, times, and numerics are in ISO format. They do not consider user locale. 
+3. **Control limitations:** Agents cannot interact with some controls such as calendar controls, organization chart controls, list view, availability view, HTML editor, image, radio button, and time edit. Custom controls are also not supported.
+4. **Available menu items:** The `find_menu_item` tool returns display and action menu items filtered by items in the left-side navigation pane and items that are accessible to a user role.
+5. **Form tabs:** Form tabs are closed by default. Agents must open form tabs to interact wwith the data and controls under the form tab.
+6. **Output menu items:** Output menu items, which generate and display reports or print results, are not supported in the MCP server.
+7. **Attachments**: Attachments are not supported, including the document viewer DocuUpload, and FileUpload controls.
+8. **System admin forms:** Some forms related to system admin tasks, like feature management, user management, and managing security, are explicitly excluded from access to the MCP server. The following forms are excluded:
+   | Category | Form label | Form name |
+   | -------- | --------- | ---------- |
+   | Security | Security configuration | SysSecConfiguration |
+   | Security | User role assignment | SysSecUserAddRoles | 
+   | Security | Separation of duties config | SysSecSegrationOfDuties |
+   | Security | Temporary roles | <ul><li>UserSecGovTemporaryRole</li><li>UserSecGovTemporaryRoleAddRoles</li><li>UserSecGovTemporaryRoleAssignOrg</li><li>UserSecGovTemporaryRoleUser</li></ul> |
+   | Security | Privileged access control | <ul><li>UserSecGovPrivilegedUserManagement</li><li>UserSec</li></ul> |
+   | User setup | Users | SysUserInfoPage |
+   | User setup | User groups | SysUserGroupInfo |
+   | Integrations | Microsoft Entra ID applications | SysAADClientTable |
+   | Features | Feature Management | FeatureManagementWorkspace |
+9. **Advanced filters:** Advanced filters on grids are not supported. For example, "before", "after", and "between" operators for date columns are not supported. Only the "matches" operator is supported for filtering.
+   
