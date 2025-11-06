@@ -101,10 +101,11 @@ The best fit model algorithm is available in several versions, as described in t
 |--|--|--|
 | Best fit model - version 1  | Demand planning version 1.0.0.1067 or higher | Works as described in this section |
 | Best fit model - version 2 (preview)  | Demand planning version 1.0.0.3424 or higher | Same as version one, but with the following changes: <ul><li>Adds support for [Naive forecasting](naive-forecast-algorithm.md) as a way to handle low-data scenarios.</li><li>Data used for training and testing models is limited to values from before the forecast start date.</li></ul> |
+| Best fit model - version 3 (preview)  | Demand planning version 1.1.0.4 or higher | Same as version two, but adds support for the [Croston's method](croston-method.md) for forecasting based on intermittent demand, which is demand data with many zero-demand periods with occasional non-zero demands. |
 
 > [!IMPORTANT]
 >
-> - *Best fit model - version 2* is a preview feature.
+> - *Best fit model - version 2* and *Best fit model - version 3* are preview features.
 > - Preview features aren't meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Auto-ARIMA: The time traveler's delight
