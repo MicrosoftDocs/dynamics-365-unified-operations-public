@@ -21,8 +21,8 @@ This article lists new features, fixes, improvements, and known issues for each 
 
 This version of Demand planning enhances basic forecast calculations by adding two new features:
 
-- The new *Best fit model - version 3 (preview)* forecast algorithm now includes the *Croston's method* forecasting model. Designed specifically for intermittent demand, which is demand data with many zero-demand periods with occasional non-zero demands.
-- Forecasting with signals with the *XGBoost* forecast model has been extended to allow up to 5 signals.
+- The new *Best fit model - version 3 (preview)* forecast algorithm now includes the *Croston's method* forecasting model. Designed specifically for intermittent demand, which is demand data with many zero-demand periods with occasional non-zero demands. Learn more in [Croston's method forecasting (preview)](croston-method.md).
+- Forecasting with signals with the *XGBoost* forecast model has been extended to allow up to five signals. Learn more in [Forecast with signals (preview)](forecasts-with-signals.md).
 
 ### New fixes and improvements in version 1.1.0.4
 

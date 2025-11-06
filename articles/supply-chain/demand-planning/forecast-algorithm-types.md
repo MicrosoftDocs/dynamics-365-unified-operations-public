@@ -19,7 +19,7 @@ Demand planning in Microsoft Dynamics 365 Supply Chain Management includes four 
 - Auto-ARIMA is suited for *stationary data*. Stationary data is data that has constant mean, constant standard deviation, and no seasonality.
 - Error, trend, and seasonality (ETS) excels if your business case is simple and the data has various patterns, such linear or exponential trends, *or* if you want the forecast to give more weight to the most recent data.
 - Prophet works best with complex, real-world data.
-- eXtreme Gradient Boosting (XGBoost) can generate a forecast based on two inputs.
+- eXtreme Gradient Boosting (XGBoost) can generate a forecast based on multiple inputs.
 
 In addition, Demand planning provides a *best fit model* algorithm, which automatically selects the best of the available algorithms for each product and dimension combination. Demand planning also lets you develop and use your own custom algorithms.
 
@@ -100,8 +100,8 @@ The best fit model algorithm is available in several versions, as described in t
 | Name | Version required | Description |
 |--|--|--|
 | Best fit model - version 1  | Demand planning version 1.0.0.1067 or higher | Works as described in this section |
-| Best fit model - version 2 (preview)  | Demand planning version 1.0.0.3424 or higher | Same as version one, but with the following changes: <ul><li>Adds support for [Naive forecasting](naive-forecast-algorithm.md) as a way to handle low-data scenarios.</li><li>Data used for training and testing models is limited to values from before the forecast start date.</li></ul> |
-| Best fit model - version 3 (preview)  | Demand planning version 1.1.0.4 or higher | Same as version two, but adds support for the [Croston's method](croston-method.md) for forecasting based on intermittent demand, which is demand data with many zero-demand periods with occasional non-zero demands. |
+| Best fit model - version 2 (preview)  | Demand planning version 1.0.0.3424 or higher | Same as version 1, but with the following changes: <ul><li>Adds support for [Naive forecasting](naive-forecast-algorithm.md) as a way to handle low-data scenarios.</li><li>Data used for training and testing models is limited to values from before the forecast start date.</li></ul> |
+| Best fit model - version 3 (preview)  | Demand planning version 1.1.0.4 or higher | Same as version 2, but adds support for the [Croston's method](croston-method.md) for forecasting based on intermittent demand, which is demand data with many zero-demand periods with occasional non-zero demands. |
 
 > [!IMPORTANT]
 >
@@ -232,7 +232,7 @@ Key:
 
 ## XGBoost
 
-Unlike the other algorithms described in this article, eXtreme Gradient Boosting (XGBoost) generates a forecast based on two inputs. It's currently the only algorithm you can use with the *Forecast with signals* [forecast model](design-forecast-models.md) step in Demand planning. In addition, only that type of step supports it. Learn more about how to set up forecast models that use XGBoost and signals input in [Forecast with signals](forecasts-with-signals.md).
+Unlike the other algorithms described in this article, eXtreme Gradient Boosting (XGBoost) generates a forecast based on multiple inputs. It's currently the only algorithm you can use with the *Forecast with signals* [forecast model](design-forecast-models.md) step in Demand planning. In addition, only that type of step supports it. Learn more about how to set up forecast models that use XGBoost and signals input in [Forecast with signals](forecasts-with-signals.md).
 
 XGBoost is a highly efficient and scalable implementation of gradient boosting. It builds an ensemble of decision trees to make predictions. The following subsections break down each of the components.
 
