@@ -1,6 +1,6 @@
 ---
 title: Calculate prices and discounts without creating sales orders
-description: Learn how to calculate customer and volume-specific prices and discounts without requiring you to create a sales order. This capability is useful both when creating quotes and when integrating with external selling systems.
+description: Learn how to calculate customer and volume-specific prices and discounts without needing to create a sales order. This capability is useful both when creating quotes and when integrating with external selling systems.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
@@ -10,6 +10,10 @@ ms.date: 10/24/2025
 ms.custom:
   - bap-template
 ---
+
+<!-- In lines 90 and 96, "don't" should be "doesn't". -->
+
+
 
 # Calculate prices and discounts without creating sales orders
 
@@ -29,7 +33,7 @@ The first step in the pricing workflow is to collect all relevant input data req
 
 The following list outlines the most common data elements used in pricing scenarios. Use these inputs to populate transaction objects and influence pricing calculations.
 
-- **Item numbers** –  Unique identifiers for the products that customers purchase. These identifiers are mandatory.
+- **Item numbers** – Unique identifiers for the products that customers purchase. These identifiers are mandatory.
 - **Customer account numbers** *(optional)* – Identify the buyer and apply customer-specific pricing, discounts, or loyalty-based rules.
 - **Quantities** *(optional)* – Specifies the number of units per item. Quantity can affect volume-based pricing or tiered discount structures.
 - **Attributes** *(optional)* – Custom fields that provide additional context, such as:
@@ -150,6 +154,10 @@ Set hashKeySet = GUPHashHelper::getPropertyHashKeySetForPricingObject(salesLine,
 ```
 
 ## Step 4: Specify price tree name
+
+
+
+
 
 If your pricing logic depends on a specific pricing structure with different price components, you must define the price tree name. This configuration determines which pricing tree the engine uses to evaluate and apply pricing rules. It allows for differentiated pricing structures across scenarios. The price tree acts as a logical framework that organizes pricing rules. By specifying the correct tree, you ensure that the pricing engine applies the appropriate pricing component structure.
 
