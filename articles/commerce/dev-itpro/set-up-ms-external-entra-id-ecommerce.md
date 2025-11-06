@@ -1,9 +1,8 @@
 ---
-title: Set up a B2C tenant in Commerce
-description: This article describes how to set up your Microsoft Entra External Id  for user site authentication in Microsoft Dynamics 365 eCommerce.
-author: Aditi Pattanaik
-ms.date: 11/06/2025
-audience: Developer, IT Pro
+title: Set up your Microsoft Entra External ID in Commerce
+description: Learn how to set up your Microsoft Entra External ID for user site authentication in Microsoft Dynamics 365 Commerce.
+author: AditiPattanaik
+ms.date: 11/07/2025
 ms.search.region: Global
 ms.author: adpattanaik
 ms.search.validFrom: 2025-11-06
@@ -11,18 +10,17 @@ ms.custom:
   - bap-template
 ---
 
-# Set up a B2C tenant in Commerce
+# Set up your Microsoft Entra External ID in Commerce
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to set up your Microsoft Entra External ID tenant for user site authentication in Microsoft Dynamics 365 eCommerce.
+This article explains how to set up your Microsoft Entra External ID tenant for user site authentication in Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 e-Commerce now supports Microsoft Entra External ID, Microsoft’s next-generation Customer Identity and Access Management (CIAM) solution from release 10.0.45 onwards.This enhancement ensures a modern, secure, and scalable identity experience for B2C and B2B scenarios.
+Dynamics 365 Commerce now supports Microsoft Entra External ID, Microsoft’s next-generation Customer Identity and Access Management (CIAM) solution from release 10.0.45 onwards. This enhancement ensures a modern, secure, and scalable identity experience for business-to-consumer (B2C) and business-to-business (B2B) scenarios.
 
 > [!NOTE] 
-> Following the end of sale for Azure AD B2C,existing Azure AD B2C tenants will continue to be supported until May 2030, with no new feature development.New deployments must be provisioned using Microsoft Entra External ID, as Azure AD B2C is no longer available for new tenants.
+> Following the end of sale for Azure AD B2C, existing Azure AD B2C tenants continue to be supported until May 2030, with no new feature development. New deployments must be provisioned using Microsoft Entra External ID, because Azure AD B2C is no longer available for new tenants.
 
- 
 ## Prerequisites to enable Microsoft Entra External Id in eCommerce
 
 Before you begin, please ensure to create an ICM with eCommerce team to enable the feature flight and follow the steps below to create & enable Microsoft Entra External Id tenant user authentication. 
