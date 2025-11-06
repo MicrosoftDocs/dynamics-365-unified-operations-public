@@ -121,70 +121,59 @@ To update headquarters with the new Microsoft Entra External ID information, fol
 
 To obtain your identity provider issuer string, follow these steps.
 
-- On the Microsoft Entra External ID page of the Azure portal, navigate to your user flow.
-- In **overview section**, select **Run user flow**.
-- Ensure that you set the application to the intended Microsoft Entra External ID you created, and then select the user flow link that appears under the **Run user flow** header that includes `.../.well-known/openid-configuration?appid=<Application_ID>`. Don't select **Run user flow**. A new tab opens that displays the metadata for the policy to collect the issuer string.
-- On the metadata page that's displayed in your browser tab, copy the identity provider issuer string value that starts with `https://` and ends with `/v2.0/`. It should look similar to the following example:
+1. Go to the Azure portal.
+1. On the **Microsoft Entra External ID** page, navigate to your user flow.
+1. In the **Overview section**, select **Run user flow**.
+1. Confirm that you set the application to the intended Microsoft Entra External ID you created, and then under the **Run user flow** header, select the user flow link that includes `.../.well-known/openid-configuration?appid=<Application_ID>`. Don't select **Run user flow**. A new tab opens that displays the metadata for the policy to collect the issuer string.
+1. On the metadata page that's displayed in your browser tab, copy the identity provider issuer string value that starts with `https://` and ends with `/v2.0/`. It should look similar to the following example:
 
-`https://ab12cd34ef56-9999-4bbb-846d-ed4b0283d8d7.ciamlogin.com/ab12cd34ef56-9999-4bbb-846d-ed4b0283d8d7/v2.0`.
+    `https://ab12cd34ef56-9999-4bbb-846d-ed4b0283d8d7.ciamlogin.com/ab12cd34ef56-9999-4bbb-846d-ed4b0283d8d7/v2.0`.
 
-Setting Up an Authentication Profile in Site Builder
+### Set up an authentication profile in Commerce Site Builder
 
-Create **Site Authentication Profile**
+To set up an authentication profile in Commerce Site Builder, follow these steps.
 
-- Navigate to **Tenant Settings** > **Site Authentication Setup**.
+1. In Commerce Site Builder, go to **Tenant settings** \> **Site authentication setup**.
+1. Select **Manage**.
+1. On the right flyout pane, select **Add site authentication profile**.
 
-![Site Authentication siteup](media/9.jpg)
+1. For **Application Name**, enter a name for the authentication profile.
+1. For **Tenant Name**, enter the name of the EEID tenant you created in the Azure portal.
+1. For **Client GUID**, enter the GUID of the app registration associated with the sign-in/sign-up user flow.
 
-2\. Add a New Authentication Profile
+    > [!NOTE]
+    > Once the authentication profile is created, it becomes available for use.
 
-- Select **Manage**.
-- Select **Add Site Authentication Profile**.
+1. Go to **Site settings** \> **Channels**.
+1. Select the channel where you want to update your authentication.
+1. Select the authentication profile you created.
+1. Save and publish your changes.
 
-![Site authentication profile](media/10.jpg)
+The EEID authentication setup is now complete and active for your site.
 
-3\. Fill in Mandatory Fields
+## Edit profile page configuration
 
-- **Application Name**: Provide name for the authentication profile.
-- **Tenant Name**: Specify the name of the EEID tenant as created in the Azure portal.
-- **Client GUID**: Provide the GUID of the app registration associated with the sign-in/sign-up user flow.
+EEID doesn't support custom HTML pages. By default, EEID only supports the edit profile page if it's associated with the "/editprofile" URL endpoint. You must create a new URL for the edit profile page with the **/editprofile** endpoint.
 
-Apply the Authentication Profile to Your Site
+To create a new URL for the edit profile page with the "/editprofile" endpoint, follow these steps.
 
-- Once the authentication profile is created, it becomes available for use.
-- Go to **Site Settings** and then **Channels**.
-- Select the channel where you want to update your authentication.
-- Choose the newly created authentication profile.
-- Save and publish your changes.
-
-**Result**: **EEID** authentication setup is now complete and active for your site.
-
-## Edit Profile Page Configuration
-
-EEID doesn't support custom HTML pages. By default, EEID only supports the edit profile page if it's associated with the **/editprofile** URL endpoint. Create a new URL for the edit profile page with the **/editprofile** endpoint using below steps.
-
-- Go to **URLs** > **Create New URL** with endpoint '**/editprofile**'.
-
-![Edit profile](media/11.jpg)
-
-- Select **Next**, select the profile page, and select **Create**.
-
-![Profile page](media/12.jpg)
-
-- Publish changes
+1. Go to **URLs** \> and select **+ New**.
+1. On the **Create new URL** flyout, create a new URL with the "/editprofile" endpoint.
+1. Select **Next**, and on the **Select a page** flyout pane, select **Profile edit**, and then select **Create**.
+1. Save and publish your changes.
 
 ## Updates to the Account-Profile-Edit Module (Online SDK)
 
-With **AADB2C**, implementing profile editing required only an HTML page that followed a specific contract-AADB2C itself handled the actual rendering of the edit profile page.
+With Azure Active Directory B2C, implementing profile editing required only an HTML page that followed a specific contract. Azure Active Directory B2C itself handled the actual rendering of the edit profile page.
 
-With **EEID**, this approach isn't supported. To address this issue, the account-profile-edit module is enhanced to provide edit profile functionality directly within the Commerce environment, removing the dependency on EEID for rendering. As a result, the module now supports profile updates for both **AADB2C** and **EEID** environments.
+With Entra External ID, this approach isn't supported. To address this issue, the account-profile-edit module is enhanced to provide edit profile functionality directly within the Commerce environment, which removes the dependency on EEID for rendering. As a result, the module supports profile updates for both Azure Active Directory B2C and Entra External ID environments.
 
 When External Entra ID is enabled, the following changes are made to allow a profile update via the OneRF API in account-profile-edit module.
 
-- **account-profile-edit.tsx**: Introduced new state variables and methods (for example, useEntraExternalId, \_renderEntraExternalIdAccount, \_handleOneRFSave) to manage External Entra ID logic and OneRF API calls.
-- **account-profile-edit.view.tsx**: Added conditional rendering using a dedicated entraContainer for External Entra ID scenarios.
-- **account-profile-edit-input.tsx**: Updated the input component to include a disabled parameter.
-- **update-profile-onerf.ts and retail-actions/index.ts**: Added a new OneRF profile update action and exported its associated classes to support the API integration.
+- **account-profile-edit.tsx**: New state variables and methods are added (for example, useEntraExternalId, \_renderEntraExternalIdAccount, \_handleOneRFSave) to manage External Entra ID logic and OneRF API calls.
+- **account-profile-edit.view.tsx**: Conditional rendering using a dedicated entraContainer is added for External Entra ID scenarios.
+- **account-profile-edit-input.tsx**: The input component is updated to include a disabled parameter.
+- **update-profile-onerf.ts and retail-actions/index.ts**: A OneRF profile update action is added that exports its associated classes to support the API integration.
 
 
 
