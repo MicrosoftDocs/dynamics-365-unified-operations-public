@@ -47,7 +47,7 @@ To create a Microsoft Entra External ID tenant in the Azure portal, follow these
 1. Select **Next: Review + create**.
 1. If the information you entered is verified as correct, select **Create**. The tenant creation process can take up to 30 minutes. You can monitor the progress of the tenant creation process in the **Notifications** pane. Once the tenant is created, you can access it in both the Microsoft Entra administrator center and the Azure portal.
 
-## Create a Entra External ID application
+## Create a Microsoft Entra External ID application
 
 After you create your External ID tenant, next you create an application within your new Microsoft Entra tenant to interact with Commerce.
 
@@ -83,42 +83,39 @@ On the **Microsoft Entra External ID - Applications \> New application** screen,
 
 ## Create user flow
 
-User flows are the policies Microsoft Entra External ID uses to provide secure sign in, sign up and forget password user experiences. Dynamics 365 Commerce uses these flows to perform the actions to interact with the Microsoft Entra External ID tenant. When a user interacts with these flows, they're redirected to the Microsoft Entra External ID tenant to perform the actions.
+User flows are the policies Microsoft Entra External ID uses to provide secure sign in, sign up, and forget password user experiences. Dynamics 365 Commerce uses these flows to perform the actions to interact with the Microsoft Entra External ID tenant. When a user interacts with these flows, they're redirected to the Microsoft Entra External ID tenant to perform the actions.
 
-Microsoft Entra External supports only one type of flow as of now, which is used for sign in, sign up and password reset.
+Currently, Microsoft Entra External ID only supports one type of flow which is used for sign in, sign up, and password reset.
 
 For information on customizing the default branding in user flows, see [Customize the neutral branding in your external tenant](/entra/external-id/customers/how-to-customize-branding-customers).
 
 To create user flow in External ID, follow these steps:
 
-- Navigate to **Microsoft Entra ID** in this External ID tenant.
-- Select **External Identities** menu from the left navigation bar.
-- Next select **User flows** in Self-service signup section as shown in the following example image.  
-    ![Self-service signup section](media/7.jpg)
+1. In the Microsoft Entra External ID tenant, navigate to **Microsoft Entra ID**.
+1. On the left navigation pane, select the **External Identities** menu.
+1. On the left navigation pane, under **Self-service signup**, select **User flows**.  
+1. Select **+ New user flow.**
+1. Under **Name**, enter a policy name.
+1. Under **Identity providers**, select an identity provider.
+1. Under **User attributes** select the user attributes to be collected during signup. Selecting the **Email address**, **Given Name**, and **Surname** attributes is mandatory for correct implementation and functionality of the policies.
+1. Select **Create**.
 
-- Select **New User Flow.**
-- Under Name, enter a policy name. Then select any Identity provider. And finally select the User attributes to be collected on signup.  
-    ![Signup flow](media/8.jpg)
-    (**Note:** The **Email address**, **Given Name**, and **Surname** attributes are mandatory for correct implementation and functionality of the policies.)
-- Select **Create**.
-
-## Update Commerce Headquarters with the new Microsoft Entra External ID information
+## Update Commerce headquarters with the new Microsoft Entra External ID information
 
 To update headquarters with the new Microsoft Entra External ID information, follow these steps.
 
-- In Commerce, go to Commerce Shared Parameters and select Identity Providers in the left menu.
-- Under Identity Providers, do the following steps:  
-    In the Issuer box, enter the identity provider issuer string. To find your issuer string, see [Obtain issuer string for headquarters setup](https://microsoftapc-my.sharepoint.com/:w:/g/personal/keshav_microsoft_com/EW4oCtEbyfREufMDcgYfvS8BzKX3gjMjiLdDuSU26IZ9Tw?e=vbN2iz&nav=eyJoIjoiOTQwMDI0MDk1In0%3D) below.
-- In the Name box, enter a name for your issuer record.
-- In the Type box, enter **Open ID Connect**.
-- Under Relying Parties, with the External ID identity provider item selected, do the following steps:
-- In the ClientID box, enter your Entra external ID application ID, which you created in [Create an Entra External ID application](https://microsoftapc-my.sharepoint.com/:w:/g/personal/keshav_microsoft_com/EW4oCtEbyfREufMDcgYfvS8BzKX3gjMjiLdDuSU26IZ9Tw?e=vEOQyB&nav=eyJoIjoiNDA4NjAxMjgifQ%3D%3D).
-- In the Type box, enter Public.
-- In the User Type box, enter Customer.
-- On the action pane, select Save.
-- In the Commerce search box, search for Distribution schedule
-- In the left navigation menu of the Distribution schedules page, select job 1110 Global configuration.
-- On the action pane, select Run Now.
+1. In Commerce, go to **Commerce Shared Parameters**.
+1. In the left navigation pane, select **Identity Providers**.
+1. Under **Identity Providers**, for **Issuer**, enter the identity provider issuer string. For information on how to find your issuer string, see [Obtain issuer string for headquarters setup](set-up-external-entra-id.md#obtain-issuer-string-for-headquarters-setup).
+1. For **Name**, enter a name for your issuer record.
+1. For **Type**, enter "Open ID Connect".
+1. Under **Relying Parties**, with the External ID identity provider item selected, for **ClientID**, enter the Entra external ID application ID you created in [Create a Microsoft Entra External ID application](set-up-external-entra-id.md#create-a-microsoft-entra-external-id-application).
+1. For **Type**, enter "Public".
+1. For **User Type**, enter "Customer".
+1. On the action pane, select **Save**.
+1. In the Commerce search box, search for "Distribution schedules".
+1. On the left navigation pane of the **Distribution schedules** page, select **Job 1110 Global configuration**.
+1. On the action pane, select **Run Now**.
 
 ### Obtain issuer string for headquarters setup
 
