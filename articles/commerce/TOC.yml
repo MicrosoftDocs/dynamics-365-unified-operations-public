@@ -1201,7 +1201,7 @@
         - name: Set up a B2C tenant in Commerce
           items:
           - name: Set up Microsoft External Entra ID in eCommerce
-            href: dev-itpro/set-up-ms-external-entra-id-ecommerce.md
+            href: dev-itpro/set-up-external-entra-id.md
           - name: Set up a B2C tenant
             href: dev-itpro/set-up-B2C-tenant.md
           - name: Create or link to an existing Microsoft Entra B2C tenant
