@@ -28,6 +28,13 @@ To open the **Transactions details** page, follow these steps.
 1. Select the transaction that you want to inspect.
 1. On the Action Pane, select **Transaction details**.
 
+## Inventory transaction details performance improvement
+
+Supply Chain Management version 10.0.39 introduced the *Inventory transaction details page's performance improvement* feature, which improves the performance of the **Inventory transactions details** page. The page now provides a **Filters** pane, which lets you set default filters to ensure that the page opens to show only those types of inventory transactions that you check most frequently. In addition, the page shows only inventory-related fields. As of version 10.0.43, this feature is turned on by default. As of Supply Chain Management version 10.0.45, it's mandatory and can't be turned off.
+
+> [!IMPORTANT]
+> The *Inventory transaction details page's performance improvement* feature changes the form used to create the **Inventory transactions details** page from `InventTrans` to `InventTransNew`. The feature also changes the navigation so that the new form opens when you go to **Inventory management \> Inquiries and reports \> Transactions** (which now opens a URL that resembles `https://contoso.operations.dynamics.com/?cmp=usmf&mi=InventTransNew`). After upgrading to a version of Supply Chain Management that has this feature turned on, you must reproduce any customizations that you made to the old form on the new form.
+
 ## FastTabs overview
 
 The **Transactions details** page is split into several FastTabs. The following table describes the purpose of each FastTab.
