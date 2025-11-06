@@ -97,9 +97,6 @@ There are two scenarios in this situation as follows:
 - If you encounter this issue, please contact **Microsoft Support** for assistance in diagnosing and resolving the underlying cause.
 - In the meantime, you can continue to run other data archive scenarios. For example, you can execute the **Tax Archive** job while the **General Ledger Archive** job remains in a failed state.
 
-
-For full savings, users can purge data from history tables.
-
 ### Common installation failure cases and resolutions
 
 #### Case 1: Status error code or duplicate key error
