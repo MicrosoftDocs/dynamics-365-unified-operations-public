@@ -90,7 +90,7 @@ There are two scenarios in this situation as follows:
 
     If you're signing in after more than 30 days, your organization might take **up to 4 hours** to be marked as active.
 
-## What can I do if archive job ends in an **Error** states in the workspace?
+## What can I do if archive job ends in an **Error** state in the workspace?
 
 - When a data archive job ends in an **Error** state, the system automatically blocks users from scheduling new archive jobs for the same archive scenario. Any existing job in a **Scheduled** state for that scenario will remain in the queue.  
  This behavior is by design and helps prevent further disruptions or data inconsistencies within that specific data archive scenario.
