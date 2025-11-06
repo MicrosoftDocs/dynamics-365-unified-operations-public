@@ -85,7 +85,7 @@ On the **Microsoft Entra External ID - Applications \> New application** screen,
 
 User flows are the policies Microsoft Entra External ID uses to provide secure sign in, sign up, and forget password user experiences. Dynamics 365 Commerce uses these flows to perform the actions to interact with the Microsoft Entra External ID tenant. When a user interacts with these flows, they're redirected to the Microsoft Entra External ID tenant to perform the actions.
 
-Currently, Microsoft Entra External ID only supports one type of flow which is used for sign in, sign up, and password reset.
+Currently, Microsoft Entra External ID only supports one type of flow, which is used for sign in, sign up, and password reset.
 
 For information on customizing the default branding in user flows, see [Customize the neutral branding in your external tenant](/entra/external-id/customers/how-to-customize-branding-customers).
 
@@ -97,7 +97,7 @@ To create user flow in External ID, follow these steps:
 1. Select **+ New user flow.**
 1. Under **Name**, enter a policy name.
 1. Under **Identity providers**, select an identity provider.
-1. Under **User attributes** select the user attributes to be collected during signup. Selecting the **Email address**, **Given Name**, and **Surname** attributes is mandatory for correct implementation and functionality of the policies.
+1. Under **User attributes** select the user attributes to be collected during signup. You must select the mandatory **Email address**, **Given Name**, and **Surname** attributes for correct implementation and functionality of the policies.
 1. Select **Create**.
 
 ## Update Commerce headquarters with the new Microsoft Entra External ID information
@@ -109,7 +109,7 @@ To update headquarters with the new Microsoft Entra External ID information, fol
 1. Under **Identity Providers**, for **Issuer**, enter the identity provider issuer string. For information on how to find your issuer string, see [Obtain issuer string for headquarters setup](set-up-external-entra-id.md#obtain-issuer-string-for-headquarters-setup).
 1. For **Name**, enter a name for your issuer record.
 1. For **Type**, enter "Open ID Connect".
-1. Under **Relying Parties**, with the External ID identity provider item selected, for **ClientID**, enter the Entra external ID application ID you created in [Create a Microsoft Entra External ID application](set-up-external-entra-id.md#create-a-microsoft-entra-external-id-application).
+1. Under **Relying Parties**, with the Microsoft Entra External ID identity provider selected, for **ClientID**, enter the Microsoft Entra External ID application ID you created in [Create a Microsoft Entra External ID application](set-up-external-entra-id.md#create-a-microsoft-entra-external-id-application).
 1. For **Type**, enter "Public".
 1. For **User Type**, enter "Customer".
 1. On the action pane, select **Save**.
@@ -125,7 +125,7 @@ To obtain your identity provider issuer string, follow these steps.
 1. On the **Microsoft Entra External ID** page, navigate to your user flow.
 1. In the **Overview section**, select **Run user flow**.
 1. Confirm that you set the application to the intended Microsoft Entra External ID you created, and then under the **Run user flow** header, select the user flow link that includes `.../.well-known/openid-configuration?appid=<Application_ID>`. Don't select **Run user flow**. A new tab opens that displays the metadata for the policy to collect the issuer string.
-1. On the metadata page that's displayed in your browser tab, copy the identity provider issuer string value that starts with `https://` and ends with `/v2.0/`. It should look similar to the following example:
+1. On the metadata page displayed in your browser tab, copy the identity provider issuer string value that starts with `https://` and ends with `/v2.0/`. It should look similar to the following example:
 
     `https://ab12cd34ef56-9999-4bbb-846d-ed4b0283d8d7.ciamlogin.com/ab12cd34ef56-9999-4bbb-846d-ed4b0283d8d7/v2.0`.
 
@@ -138,7 +138,7 @@ To set up an authentication profile in Commerce Site Builder, follow these steps
 1. On the right flyout pane, select **Add site authentication profile**.
 
 1. For **Application Name**, enter a name for the authentication profile.
-1. For **Tenant Name**, enter the name of the EEID tenant you created in the Azure portal.
+1. For **Tenant Name**, enter the name of the Microsoft Entra External ID tenant you created in the Azure portal.
 1. For **Client GUID**, enter the GUID of the app registration associated with the sign-in/sign-up user flow.
 
     > [!NOTE]
@@ -149,11 +149,11 @@ To set up an authentication profile in Commerce Site Builder, follow these steps
 1. Select the authentication profile you created.
 1. Save and publish your changes.
 
-The EEID authentication setup is now complete and active for your site.
+The Microsoft Entra External ID authentication setup is now complete and active for your site.
 
 ## Edit profile page configuration
 
-EEID doesn't support custom HTML pages. By default, EEID only supports the edit profile page if it's associated with the "/editprofile" URL endpoint. You must create a new URL for the edit profile page with the **/editprofile** endpoint.
+Microsoft Entra External ID doesn't support custom HTML pages. By default, Microsoft Entra External ID only supports the edit profile page when it's associated with the "/editprofile" URL endpoint. You must create a new URL for the edit profile page with the **/editprofile** endpoint.
 
 To create a new URL for the edit profile page with the "/editprofile" endpoint, follow these steps.
 
@@ -166,7 +166,7 @@ To create a new URL for the edit profile page with the "/editprofile" endpoint, 
 
 With Azure Active Directory B2C, implementing profile editing required only an HTML page that followed a specific contract. Azure Active Directory B2C itself handled the actual rendering of the edit profile page.
 
-With Entra External ID, this approach isn't supported. To address this issue, the account-profile-edit module is enhanced to provide edit profile functionality directly within the Commerce environment, which removes the dependency on EEID for rendering. As a result, the module supports profile updates for both Azure Active Directory B2C and Entra External ID environments.
+With Microsoft Entra External ID, this approach isn't supported. To address this issue, the account-profile-edit module is enhanced to provide edit profile functionality directly within the Commerce environment, which removes the dependency on Microsoft Entra External ID for rendering. As a result, the module supports profile updates for both Azure Active Directory B2C and Microsoft Entra External ID environments.
 
 When External Entra ID is enabled, the following changes are made to allow a profile update via the OneRF API in account-profile-edit module.
 
