@@ -3,6 +3,7 @@ title: Set up a Microsoft Entra External ID in Commerce
 description: Learn how to set up a Microsoft Entra External ID for user site authentication in Microsoft Dynamics 365 Commerce.
 author: AditiPattanaik
 ms.date: 11/07/2025
+ms.topic: how-to
 ms.search.region: Global
 ms.author: adpattanaik
 ms.search.validFrom: 2025-11-06
