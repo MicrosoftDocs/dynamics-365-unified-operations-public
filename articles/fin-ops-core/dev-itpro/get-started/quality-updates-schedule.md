@@ -76,9 +76,9 @@ The following table shows the high-level train schedule. It includes a descripti
 
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
-> Canceled* - Deployment will occur only on Station 1. Releases for other stations have been canceled due to the holiday deployment freeze, and the build will be available for manual uptake.
+> Canceled* - PQU will occur only on Station-1. Releases for other stations have been canceled due to the holiday deployment freeze, and the build will be available for manual uptake.
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.43 Release-8 train schedule  [Cancelled due to holiday deployment freeze]
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.43 Release-8 train schedule
 
 **App version: 10.0.2177.203**
 
@@ -112,7 +112,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | October 27 to October 30, 2025 | November 8 to November 9, 2025 |
 | Station 6 | October 28 to October 31, 2025 | November 8 to November 9, 2025 |
 
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.44 Release-5 train schedule [Cancelled due to holiday deployment freeze]
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.44 Release-5 train schedule
 
 **App version: 10.0.2263.157**
 
@@ -146,7 +146,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | November 3 to November 6, 2025 | November 15 to November 16, 2025 |
 | Station 6 | November 4 to November 7, 2025 | November 15 to November 16, 2025 |
 
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.45 Release-2 train schedule [Cancelled due to holiday deployment freeze]
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.45 Release-2 train schedule
 
 **App version: 10.0.2345.96**
 
