@@ -34,10 +34,6 @@ originally published.
 |Accounts receivable|	Performance issue on the **Global transaction** page with huge volume of data|	This feature improves performance issue in **Global transaction** page by changing the join type dynamically to inner.|	On by default |
 | Cash and bank management | Automatic bank reconciliation matching results (Preview) | This feature is released in private preview allowing its usage in nonproduction environments. The **Preview automatic bank reconciliation matching results** feature enables users to preview matching results during the bank reconciliation matching process before transactions are posted. By allowing users to select rules that require review and user checks, the feature ensures accurate matching and minimizes errors. To enable this feature, contact support. | Feature management |
 | Cash and bank management | Delay invoice settlement (Preview) | This feature is released in private preview without the ability to enable it in production environments. The **Preview automatic bank reconciliation matching results" feature enables users to preview matching results during the bank reconciliation matching process before transactions are posted. By allowing users to select rules that require review and user checks, the feature ensures accurate matching and minimizes errors. | Feature management |
-
-
-
-
 |Fixed assets | Create acquisition proposal through recurrence batch job throws error in batch tasks when the created journal is deleted | This update addresses a scenario where the recurrence batch job for creating acquisition proposals fails with an error in batch tasks if the journal created by a previous run is manually deleted. Validation has been added to detect missing journals and handle the error gracefully, ensuring the batch job continues to run without interruption. | On by default |
 |Fixed assets | Retain fixed asset name when acquired through Accounts payable invoice | This feature ensures that the text defined in the **Text** field of a purchase order line for a fixed asset is stored in the **Information 3** field during asset creation and remains unchanged. If the asset is later acquired through additional purchase orders with new text, the new values are appended to the **Information 3** field without removing the existing ones. | On by default|
 |Fixed assets | Correct inventory sold transaction behavior when **Allow asset acquisition from purchasing** is disabled |When acquiring the same fixed asset ID from multiple purchase lines, the Inventory sold transaction is now created when posting the fixed asset acquisition proposal journal. This ensures transactions are generated at the correct stage of the process and prevents premature entries.| On by default|
@@ -53,32 +49,15 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
- |Accounts receivable |	Accounts receivable |	When a free text invoice is created and posted, the posted invoice journal total is incorrect where the calculation doesn't consider all total lines amount. The Ledger entries are correct but the Custtrans and CustInvoiceJour amounts are incorrect. |	Feature management |
- |Accounts receivable |	Accounts receivable |	Invoice and Invoice line details information on the **Associations** FastTab on **My cases** page.  |Feature management |
- |Credit and collections |	Accounts receivable |	The user should be able to view and select the option for the **Due date** and the **Terms of payment** when posting a customer interest note. |	Feature management |
- |Credit and collections |	Accounts receivable |	Email template on the collection process automation uses the variables on the **Subject** line. |	Feature management |
  |Credit and collections |Customer interest note creation – top picking optimization |This feature uses top picking to improve the performance when creating customer interest notes. This helps avoid long-running transactions and ensures faster and more efficient processing when handling large transaction volumes. | Feature management |
 | General ledger | Account reconciliation agent (Production ready preview) | The Account reconciliation agent functionality has been improved to provide suggested actions for **In ledger not in subledger** and **In subledger not in ledger** exception types.| Feature management |
 | General ledger |User ID added to the **Ledger settlement inquiry** page for full visibility. The **User ID** is now in the **Ledger settlement inquiry** page. |The user ID that did the ledger settlement is now displayed in the **Ledger settlement inquiry** page. | Default |
 | General ledger |Performance improvements in Ledger settlements when the **Enable advanced awareness option** feature isn't enabled. | The **Ledger settlements** page has been updated to improve the performance when doing ledger settlements. Customizations may need to be updated to work with the new page. | Default |
- |Subscription billing	 |Subscription billing	 |The discount group setup in the trade agreement for item prices should automatically apply to the billing schedule when it is created for the corresponding customer record.  |	Feature management |
- |Subscription Billing	 |(Preview) Subscription billing deferral COGS adjustment-enhancement | A dedicated dashboard monitors and provides visibility into errors that had occurred during the adjustment process. This dashboard offers actionable insights and a user-friendly interface, allowing users to conveniently reprocess failed adjustments through a rerun batch job—reducing manual effort and enhancing the overall reliability of the deferral.  |	Feature management |
+ |Subscription billing	 | Billing schedule	 |The discount group setup in the trade agreement for item prices should automatically apply to the billing schedule when it is created for the corresponding customer record.  |	Feature management |
+ |Subscription billing	 |(Preview) Subscription billing deferral COGS adjustment-enhancement | A dedicated dashboard monitors and provides visibility into errors that had occurred during the adjustment process. This dashboard offers actionable insights and a user-friendly interface, allowing users to conveniently reprocess failed adjustments through a rerun batch job—reducing manual effort and enhancing the overall reliability of the deferral.  |	Feature management |
  |Subscription billing |	 (Preview) Subscription billing deferral COGS adjustment-enhancement |	A notification message is displayed when the asynchronous process finishes so that the user is notified. |	Feature management |
- |Subscription billing |	Subscription billing |	At the termination of billing schedule, a credit note is created against the invoices (sales orders) with the same exchange rate used at the time of invoicing. |	Feature management |
 
 
-
-## Features turned on by default in this release
-
-The following table lists the features that are turned on by default in version 10.0.46. Most features that have been turned on can be turned off in
-[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). 
-
-| Feature name | Feature state | Module |
-|--------------|---------------|--------|
-|Custom search on **Customer** page	|Mandatory	|Accounts receivable|
-|Copy financial dimensions from sales order header to penny difference voucher transaction|	On by default|	Accounts receivable|
-|Add support for financial tags to the free text invoice entity within data management	|Released	|Accounts receivable|
-|Separate accounts for credit notes|	Mandatory|	Credits and collection|
 
 
 ## More information
