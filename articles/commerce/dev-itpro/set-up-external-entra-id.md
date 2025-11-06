@@ -1,6 +1,6 @@
 ---
-title: Set up your Microsoft Entra External ID in Commerce
-description: Learn how to set up your Microsoft Entra External ID for user site authentication in Microsoft Dynamics 365 Commerce.
+title: Set up a Microsoft Entra External ID in Commerce
+description: Learn how to set up a Microsoft Entra External ID for user site authentication in Microsoft Dynamics 365 Commerce.
 author: AditiPattanaik
 ms.date: 11/07/2025
 ms.search.region: Global
@@ -10,7 +10,7 @@ ms.custom:
   - bap-template
 ---
 
-# Set up your Microsoft Entra External ID in Commerce
+# Set up a Microsoft Entra External ID in Commerce
 
 [!include [banner](../includes/banner.md)]
 
@@ -27,7 +27,7 @@ Before you begin, please ensure to create an ICM with eCommerce team to enable t
 
 ## Create Microsoft Entra external tenant on Azure 
 
-This section describes how to create a Microsoft Entra External tenant in the Microsoft Azure portal. For more information, see Tutorial: [External Tenant Quickstart - Microsoft Entra External ID | Microsoft Learn](https://learn.microsoft.com/en-us/entra/external-id/customers/quickstart-tenant-setup#create-a-new-tenant-with-external-configurations)
+This section describes how to create a Microsoft Entra External tenant in the Microsoft Azure portal. Learn more in [Create a new tenant with external configurations](/entra/external-id/customers/quickstart-tenant-setup#create-a-new-tenant-with-external-configurations).
 
 To create a Microsoft Entra External ID tenant in the Azure portal, follow these steps.
 
@@ -89,8 +89,8 @@ Reply URLs are important as they provide an allow list of the return domains whe
 
 In the **Reply URL** box on the **Microsoft Entra External ID - Applications > New application** screen, you need to add separate lines for both your site domain and (once your environment is provisioned) the Commerce-generated URL. These URLs must always use a valid URL format and must be base URLs only (no trailing forward slashes or paths). The string /\_msdyn365/authresp then needs to be appended to the base URLs, as in the following examples.
 
-- <https://www.fabrikam.com/_msdyn365/authresp> (The domain should match the e-commerce domain completely. If you have multiple domains, you need to add this URL for each domain.)
-- <https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp>
+- `https://www.fabrikam.com/_msdyn365/authresp` (The domain should match the e-commerce domain exactly. If you have multiple domains, you must add this URL for each domain.)
+- `https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp`
 
 ## Create user flow
 
@@ -98,7 +98,7 @@ User flows are the policies Microsoft Entra External ID uses to provide secure s
 
 Microsoft Entra External supports only one type of flow as of now, which is used for sign in, sign up and password reset.
 
-For customizing the default branding in user flows refer: [Customize your branding for your customers - Microsoft Entra External ID | Microsoft Learn](https://learn.microsoft.com/en-us/entra/external-id/customers/how-to-customize-branding-customers)
+For information on customizing the default branding in user flows, see [Customize the neutral branding in your external tenant](/entra/external-id/customers/how-to-customize-branding-customers).
 
 To create user flow in External ID, follow these steps:
 
@@ -140,7 +140,7 @@ To obtain your identity provider issuer string, follow these steps.
 - Ensure that your application is set to your intended Microsoft Entra external id application created above, and then select the user flow link that appears under the Run user flow header that includes .../.well-known/openid-configuration?appid=&lt;Application_id&gt;. (Don't select Run user flow.) A new tab will open displaying metadata for the policy to collect the issuer string.
 - On the metadata page displayed in your browser tab, copy the identity provider issuer string (the value for issuer starting with "https://" and ending with "/v2.0/") that looks similar to the following example:
 
-<https://ab12cd34ef56-9999-4bbb-846d-ed4b0283d8d7.ciamlogin.com/ab12cd34ef56-9999-4bbb-846d-ed4b0283d8d7/v2.0>.
+`https://ab12cd34ef56-9999-4bbb-846d-ed4b0283d8d7.ciamlogin.com/ab12cd34ef56-9999-4bbb-846d-ed4b0283d8d7/v2.0`.
 
 Setting Up an Authentication Profile in Site Builder
 
