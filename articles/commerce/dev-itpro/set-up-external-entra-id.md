@@ -19,11 +19,11 @@ This article explains how to set up your Microsoft Entra External ID tenant for 
 Dynamics 365 Commerce now supports Microsoft Entra External ID, Microsoft’s next-generation Customer Identity and Access Management (CIAM) solution from release 10.0.45 onwards. This enhancement ensures a modern, secure, and scalable identity experience for business-to-consumer (B2C) and business-to-business (B2B) scenarios.
 
 > [!NOTE] 
-> Following the end of sale for Azure AD B2C, existing Azure AD B2C tenants continue to be supported until May 2030, with no new feature development. New deployments must be provisioned using Microsoft Entra External ID, because Azure AD B2C is no longer available for new tenants.
+> After the end of sale for Azure AD B2C, existing Azure AD B2C tenants continue to be supported until May 2030, with no new feature development. New deployments must be provisioned using Microsoft Entra External ID, because Azure AD B2C is no longer available for new tenants.
 
-## Prerequisites to enable Microsoft Entra External Id in eCommerce
+## Prerequisites to enable Microsoft Entra External ID in Commerce
 
-Before you begin, please ensure to create an ICM with eCommerce team to enable the feature flight and follow the steps below to create & enable Microsoft Entra External Id tenant user authentication. 
+Before you begin, ensure that you first create an ICM with the Commerce team to enable the feature flight and then perform the following steps to create and enable Microsoft Entra External ID tenant user authentication. 
 
 ## Create Microsoft Entra external tenant on Azure 
 
@@ -32,9 +32,9 @@ This section describes how to create a Microsoft Entra External tenant in the Mi
 To create a Microsoft Entra External ID tenant in the Azure portal, follow these steps.
 
 - Sign in to the [Azure portal](https://portal.azure.com/)
-- From the Azure portal menu, select **Create a resource**. Be sure to use the subscription and directory that you'll connect with your Commerce environment.
+- From the Azure portal menu, select **Create a resource**. Be sure to use the subscription and directory that you connect with your Commerce environment.
   
-    ![Create a Resource in Azure Portal.](media/0.jpg)
+    ![Create a Resource in Azure portal.](media/0.jpg)
   
 - Go to Identity > Microsoft Entra External ID.  
     On the **Basics** tab, in the **Create a tenant** page, enter the following information:
@@ -58,28 +58,28 @@ To create a Microsoft Entra External ID tenant in the Azure portal, follow these
     ![Screenshot that shows the link to the new tenant.](media/3.jpg)
 
   
-## Create a Entra External Id application
+## Create a Entra External ID application
 
-Once you create your External ID tenant, you'll create an application within your new Microsoft Entra tenant to interact with Commerce.
+Once you create your External ID tenant, you create an application within your new Microsoft Entra tenant to interact with Commerce.
 
 To create the application, follow these steps.
 
-- In the Azure portal, navigate to the tenant you just created.
+- In the Azure portal, navigate to the tenant you created.
 - Select **App registrations**, and then select **New registration**.
 - Under **Name**, enter the name to give this application.
 - Under **Supported account types**, select **Accounts in this organizational directory only (&lt;Tenant Name&gt; only - Single tenant).**
 - For **Redirect URI**, enter your dedicated reply URLs as type **Web**. For information on reply URLs and how to format them, refer [Reply Urls](https://microsoftapc-my.sharepoint.com/:w:/g/personal/keshav_microsoft_com/EW4oCtEbyfREufMDcgYfvS8BzKX3gjMjiLdDuSU26IZ9Tw?e=0ZcweA&nav=eyJoIjoiMTc1MjM5Nzg3OCJ9) section. A redirect URI/reply URL must be entered to enable redirections from Microsoft Entra External ID back to your site when a user authenticates. The reply URLs can be added during the registration process, or can be added later by selecting the **Add URI** link from the **Web Redirect URIs** section in the External ID application's **App Registration -> Manage -> Authentication**  menu.
 - Select **Register**.
 - Select the newly created application and navigate to the **Authentication** menu.
-- If a reply URL is entered, select both the **Access tokens** and **ID tokens** options to enable them for the application, and then select **Save**. You are now able to select both the **Access tokens** and **ID tokens** options. If a reply URL wasn't entered during registration, it can also be added on this page by selecting **Add a platform**, selecting **Web**, and then entering the redirect URI of the application.
+- If a reply URL is entered, select both the **Access tokens** and **ID tokens** options to enable them for the application, and then select **Save**. You're now able to select both the **Access tokens** and **ID tokens** options. If a reply URL wasn't entered during registration, it can also be added on this page by selecting **Add a platform**, selecting **Web**, and then entering the redirect URI of the application.
   
     ![Authentication tab](media/4.jpg)
   
-- Navigate to **API Permissions** menu and **add all the microsoft graph permissions shown in image below and select** "**Grant admin consent for &lt;TenantName&gt;"**.
+- Navigate to **API Permissions** menu, add all the Microsoft graph permissions shown in the following example image, and select **Grant admin consent for &lt;TenantName&gt;**.
   
     ![Admin consent](media/5.jpg)
   
-- Next go to **Token Configuration** menu, select **Add optional claim** button. A sidebar will open, select **ID** in the token type and then select **Family_name** and **Given_name** in claims and click add.  
+- Go to the **Token Configuration** menu, and select **Add optional claim**. In the sidebar that opens, select **ID** in the token type, and then select **Family_name** and **Given_name** in claims and select add.  
     ![Token configuration menu](media/6.jpg)
 - Go to the **Overview** menu of the Azure portal and copy the **Application (client) ID**. Note this ID for later setup steps (referenced later as the **Client GUID**).
 
@@ -94,7 +94,7 @@ In the **Reply URL** box on the **Microsoft Entra External ID - Applications > N
 
 ## Create user flow
 
-User flows are the policies Microsoft Entra External ID uses to provide secure sign in, sign up and forget password user experiences. Dynamics 365 Commerce uses these flows to perform the actions to interact with the Microsoft Entra External ID tenant. When a user interacts with these flows, they're redirected to the Microsoft Entra external id tenant to perform the actions.
+User flows are the policies Microsoft Entra External ID uses to provide secure sign in, sign up and forget password user experiences. Dynamics 365 Commerce uses these flows to perform the actions to interact with the Microsoft Entra External ID tenant. When a user interacts with these flows, they're redirected to the Microsoft Entra External ID tenant to perform the actions.
 
 Microsoft Entra External supports only one type of flow as of now, which is used for sign in, sign up and password reset.
 
@@ -102,9 +102,9 @@ For information on customizing the default branding in user flows, see [Customiz
 
 To create user flow in External ID, follow these steps:
 
-- Navigate to **Microsoft Entra Id** in this External ID tenant.
+- Navigate to **Microsoft Entra ID** in this External ID tenant.
 - Select **External Identities** menu from the left navigation bar.
-- Next select **User flows** in Self-service signup section as shown in image below:  
+- Next select **User flows** in Self-service signup section as shown in the following example image.  
     ![Self-service signup section](media/7.jpg)
 
 - Select **New User Flow.**
@@ -113,17 +113,17 @@ To create user flow in External ID, follow these steps:
     (**Note:** The **Email address**, **Given Name**, and **Surname** attributes are mandatory for correct implementation and functionality of the policies.)
 - Select **Create**.
 
-## Update Commerce Headquarters with the new Microsoft Entra External Id information
+## Update Commerce Headquarters with the new Microsoft Entra External ID information
 
-To update headquarters with the new Microsoft Entra External id information, follow these steps.
+To update headquarters with the new Microsoft Entra External ID information, follow these steps.
 
 - In Commerce, go to Commerce Shared Parameters and select Identity Providers in the left menu.
-- Under Identity Providers, do the following:  
+- Under Identity Providers, do the following steps:  
     In the Issuer box, enter the identity provider issuer string. To find your issuer string, see [Obtain issuer string for headquarters setup](https://microsoftapc-my.sharepoint.com/:w:/g/personal/keshav_microsoft_com/EW4oCtEbyfREufMDcgYfvS8BzKX3gjMjiLdDuSU26IZ9Tw?e=vbN2iz&nav=eyJoIjoiOTQwMDI0MDk1In0%3D) below.
 - In the Name box, enter a name for your issuer record.
 - In the Type box, enter **Open ID Connect**.
-- Under Relying Parties, with the above external id identity provider item selected, do the following:
-- In the ClientID box, enter your Entra external id application ID, which you created in [Create a Entra External Id appliction](https://microsoftapc-my.sharepoint.com/:w:/g/personal/keshav_microsoft_com/EW4oCtEbyfREufMDcgYfvS8BzKX3gjMjiLdDuSU26IZ9Tw?e=vEOQyB&nav=eyJoIjoiNDA4NjAxMjgifQ%3D%3D).
+- Under Relying Parties, with the External ID identity provider item selected, do the following steps:
+- In the ClientID box, enter your Entra external ID application ID, which you created in [Create an Entra External ID application](https://microsoftapc-my.sharepoint.com/:w:/g/personal/keshav_microsoft_com/EW4oCtEbyfREufMDcgYfvS8BzKX3gjMjiLdDuSU26IZ9Tw?e=vEOQyB&nav=eyJoIjoiNDA4NjAxMjgifQ%3D%3D).
 - In the Type box, enter Public.
 - In the User Type box, enter Customer.
 - On the action pane, select Save.
@@ -135,10 +135,10 @@ To update headquarters with the new Microsoft Entra External id information, fol
 
 To obtain your identity provider issuer string, follow these steps.
 
-- On the Microsoft Entra external id page of the Azure portal, navigate to your user flow.
+- On the Microsoft Entra External ID page of the Azure portal, navigate to your user flow.
 - In **overview section**, select **Run user flow**.
-- Ensure that your application is set to your intended Microsoft Entra external id application created above, and then select the user flow link that appears under the Run user flow header that includes .../.well-known/openid-configuration?appid=&lt;Application_id&gt;. (Don't select Run user flow.) A new tab will open displaying metadata for the policy to collect the issuer string.
-- On the metadata page displayed in your browser tab, copy the identity provider issuer string (the value for issuer starting with "https://" and ending with "/v2.0/") that looks similar to the following example:
+- Ensure that you set the application to the intended Microsoft Entra External ID you created, and then select the user flow link that appears under the **Run user flow** header that includes `.../.well-known/openid-configuration?appid=<Application_ID>`. Don't select **Run user flow**. A new tab opens that displays the metadata for the policy to collect the issuer string.
+- On the metadata page that's displayed in your browser tab, copy the identity provider issuer string value that starts with `https://` and ends with `/v2.0/`. It should look similar to the following example:
 
 `https://ab12cd34ef56-9999-4bbb-846d-ed4b0283d8d7.ciamlogin.com/ab12cd34ef56-9999-4bbb-846d-ed4b0283d8d7/v2.0`.
 
@@ -152,7 +152,7 @@ Create **Site Authentication Profile**
 
 2\. Add a New Authentication Profile
 
-- Click **Manage**.
+- Select **Manage**.
 - Select **Add Site Authentication Profile**.
 
 ![Site authentication profile](media/10.jpg)
@@ -160,7 +160,7 @@ Create **Site Authentication Profile**
 3\. Fill in Mandatory Fields
 
 - **Application Name**: Provide name for the authentication profile.
-- **Tenant Name**: Specify the name of the EEID tenant as created in the Azure Portal.
+- **Tenant Name**: Specify the name of the EEID tenant as created in the Azure portal.
 - **Client GUID**: Provide the GUID of the app registration associated with the sign-in/sign-up user flow.
 
 Apply the Authentication Profile to Your Site
@@ -175,13 +175,13 @@ Apply the Authentication Profile to Your Site
 
 ## Edit Profile Page Configuration
 
-EEID does not support custom HTML pages. By default, For EEID, only supports the edit profile page if it is associated with the **/editprofile** URL endpoint. Create a new URL for the edit profile page with the **/editprofile** endpoint using below steps.
+EEID doesn't support custom HTML pages. By default, EEID only supports the edit profile page if it's associated with the **/editprofile** URL endpoint. Create a new URL for the edit profile page with the **/editprofile** endpoint using below steps.
 
 - Go to **URLs** > **Create New URL** with endpoint '**/editprofile**'.
 
 ![Edit profile](media/11.jpg)
 
-- Click **Next**, select the profile page, and click **Create**.
+- Select **Next**, select the profile page, and select **Create**.
 
 ![Profile page](media/12.jpg)
 
@@ -191,11 +191,15 @@ EEID does not support custom HTML pages. By default, For EEID, only supports the
 
 With **AADB2C**, implementing profile editing required only an HTML page that followed a specific contract-AADB2C itself handled the actual rendering of the edit profile page.
 
-With **EEID**, this approach is not supported. To address this, the account-profile-edit module has been enhanced to provide edit profile functionality directly within the commerce environment, removing the dependency on EEID for rendering. As a result, the module now supports profile updates for both **AADB2C** and **EEID** environments.
+With **EEID**, this approach isn't supported. To address this issue, the account-profile-edit module is enhanced to provide edit profile functionality directly within the Commerce environment, removing the dependency on EEID for rendering. As a result, the module now supports profile updates for both **AADB2C** and **EEID** environments.
 
-Below are the changes done to allow profile update via onerf API in account-profile-edit module, when External Entra ID is enabled.
+When External Entra ID is enabled, the following changes are made to allow a profile update via the OneRF API in account-profile-edit module.
 
-- **account-profile-edit.tsx**: Introduced new state variables and methods (e.g., useEntraExternalId, \_renderEntraExternalIdAccount, \_handleOneRFSave) to manage External Entra ID logic and OneRF API calls.
+- **account-profile-edit.tsx**: Introduced new state variables and methods (for example, useEntraExternalId, \_renderEntraExternalIdAccount, \_handleOneRFSave) to manage External Entra ID logic and OneRF API calls.
 - **account-profile-edit.view.tsx**: Added conditional rendering using a dedicated entraContainer for External Entra ID scenarios.
 - **account-profile-edit-input.tsx**: Updated the input component to include a disabled parameter.
 - **update-profile-onerf.ts and retail-actions/index.ts**: Added a new OneRF profile update action and exported its associated classes to support the API integration.
+
+
+
+[!INCLUDE [footer-include](../../includes/footer-banner.md)]
