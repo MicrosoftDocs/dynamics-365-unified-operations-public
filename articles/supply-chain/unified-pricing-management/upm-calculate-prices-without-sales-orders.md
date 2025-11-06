@@ -155,10 +155,6 @@ Set hashKeySet = GUPHashHelper::getPropertyHashKeySetForPricingObject(salesLine,
 
 ## Step 4: Specify price tree name
 
-
-
-
-
 If your pricing logic depends on a specific pricing structure with different price components, you must define the price tree name. This configuration determines which pricing tree the engine uses to evaluate and apply pricing rules. It allows for differentiated pricing structures across scenarios. The price tree acts as a logical framework that organizes pricing rules. By specifying the correct tree, you ensure that the pricing engine applies the appropriate pricing component structure.
 
 - **Set the Price Tree Name from input parameters** – Use a predefined value passed into your service or class to assign the price tree name directly. Use this approach when the pricing structure is known and consistent across transactions.
@@ -210,9 +206,10 @@ PricingEngine::CalculateDiscountsForLines(
 
 ## Step 6: Retrieve and display results
 
-After the pricing engine completes its calculations, the final step is to extract and utilize the computed prices and discounts from the transaction object. This step transforms the pricing engine's output into actionable data that you can present to users or integrate into downstream business processes such as order creation or analytics.
+After the pricing engine completes its calculations, the final step is to extract and use the computed prices and discounts from the transaction object. This step transforms the pricing engine's output into actionable data that you can present to users or integrate into downstream business processes such as order creation or analytics.
 
 The pricing engine populates each sales line in the transaction object with calculated values. These values include the final unit price, discount amount, and potentially other pricing-related metadata. You can iterate through the sales lines to extract these values and format them for display or further processing. This step is critical for ensuring that the pricing logic is correctly applied and that the results are visible and usable.
+
 The following X++ code demonstrates how to loop through each sales line in the transaction and retrieve the final price and discount amount. Typically, you place this code at the end of your pricing service or runnable class, after the pricing engine has been invoked.
 
 ```xpp
