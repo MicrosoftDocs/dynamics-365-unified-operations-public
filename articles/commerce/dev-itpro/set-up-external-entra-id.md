@@ -1,5 +1,5 @@
 ---
-title: Set up a Microsoft Entra External ID in Commerce
+title: Set up a Microsoft Entra External ID for user site authentication
 description: Learn how to set up a Microsoft Entra External ID for user site authentication in Microsoft Dynamics 365 Commerce.
 author: AditiPattanaik
 ms.date: 11/07/2025
@@ -11,84 +11,72 @@ ms.custom:
   - bap-template
 ---
 
-# Set up a Microsoft Entra External ID in Commerce
+# Set up a Microsoft Entra External ID for user site authentication
 
 [!include [banner](../includes/banner.md)]
 
 This article explains how to set up your Microsoft Entra External ID tenant for user site authentication in Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce now supports Microsoft Entra External ID, Microsoft’s next-generation Customer Identity and Access Management (CIAM) solution from release 10.0.45 onwards. This enhancement ensures a modern, secure, and scalable identity experience for business-to-consumer (B2C) and business-to-business (B2B) scenarios.
+Starting with version 10.0.45, Dynamics 365 Commerce supports Microsoft Entra External ID, Microsoft's next-generation Customer Identity and Access Management (CIAM) solution. This enhancement ensures a modern, secure, and scalable identity experience for business-to-consumer (B2C) and business-to-business (B2B) scenarios.
 
 > [!NOTE] 
 > After the end of sale for Azure AD B2C, existing Azure AD B2C tenants continue to be supported until May 2030, with no new feature development. New deployments must be provisioned using Microsoft Entra External ID, because Azure AD B2C is no longer available for new tenants.
 
 ## Prerequisites to enable Microsoft Entra External ID in Commerce
 
-Before you begin, ensure that you first create an ICM with the Commerce team to enable the feature flight and then perform the following steps to create and enable Microsoft Entra External ID tenant user authentication. 
+Before you begin, you must first submit a request to the Commerce team to enable the feature flight, and then perform the following steps to create and enable Microsoft Entra External ID tenant user authentication. 
 
-## Create Microsoft Entra external tenant on Azure 
+## Create a Microsoft Entra external tenant on Azure 
 
 This section describes how to create a Microsoft Entra External tenant in the Microsoft Azure portal. Learn more in [Create a new tenant with external configurations](/entra/external-id/customers/quickstart-tenant-setup#create-a-new-tenant-with-external-configurations).
 
 To create a Microsoft Entra External ID tenant in the Azure portal, follow these steps.
 
-- Sign in to the [Azure portal](https://portal.azure.com/)
-- From the Azure portal menu, select **Create a resource**. Be sure to use the subscription and directory that you connect with your Commerce environment.
-  
-    ![Create a Resource in Azure portal.](media/0.jpg)
-  
-- Go to Identity > Microsoft Entra External ID.  
-    On the **Basics** tab, in the **Create a tenant** page, enter the following information:
-  
-    ![Screenshot of the Basics tab.](media/1.jpg)
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+1. On the Azure portal page, under **Azure Services**, select **Create a resource**. Be sure to use the subscription and directory that you connect with your Commerce environment.
+1. Go to **Identity \> Microsoft Entra External ID**.  
+1. On the **Basics** tab, on the **Create a tenant** page, enter the following information.
+    1. For **Tenant Name**, enter the tenant name (for example, "Contoso Customers").
+    1. For **Domain Name** (for example, "Contosocustomers").
+    1. For **Location**, select your geographic location. Ensure that it's correct, because you can't change this selection later.  
+1. Select **Next: Add a subscription**.  
+1. On the **Add a subscription** tab, enter the following information.
+    1. For **Subscription**, select your subscription.
+    1. For **Resource group**, select a resource group. If there are no available resource groups, select **Create new**, add a name, and then select **OK**.
+    1. If **Resource group location** appears, select the geographic location of the resource group.
+1. Select **Next: Review + create**.
+1. If the information you entered is verified as correct, select **Create**. The tenant creation process can take up to 30 minutes. You can monitor the progress of the tenant creation process in the **Notifications** pane. Once the tenant is created, you can access it in both the Microsoft Entra administrator center and the Azure portal.
 
-- Type your desired Tenant Name (for example Contoso Customers).
-- Type your desired Domain Name (for example Contosocustomers).
-- Select your desired Location. This selection can't be changed later.  
-
-- Select Next: Add a subscription.  
-    On the **Add a subscription** tab, enter the following information:
-  
-    ![Screenshot that shows the subscription settings.](media/2.jpg)
-  
-  - Next to Subscription, select your subscription from the menu.
-  - Next to Resource group, select a resource group from the menu. If there are no available resource groups, select Create new, add a name, and then select OK.
-  - If Resource group location appears, select the geographic location of the resource group from the menu.
-- Select **Next: Review + create**. If the information that you entered is correct, select **Create**. The tenant creation process can take up to 30 minutes. You can monitor the progress of the tenant creation process in the **Notifications** pane. Once the tenant is created, you can access it in both the Microsoft Entra admin center and the Azure portal.
-  
-    ![Screenshot that shows the link to the new tenant.](media/3.jpg)
-
-  
 ## Create a Entra External ID application
 
-Once you create your External ID tenant, you create an application within your new Microsoft Entra tenant to interact with Commerce.
+After you create your External ID tenant, next you create an application within your new Microsoft Entra tenant to interact with Commerce.
 
 To create the application, follow these steps.
 
-- In the Azure portal, navigate to the tenant you created.
-- Select **App registrations**, and then select **New registration**.
-- Under **Name**, enter the name to give this application.
-- Under **Supported account types**, select **Accounts in this organizational directory only (&lt;Tenant Name&gt; only - Single tenant).**
-- For **Redirect URI**, enter your dedicated reply URLs as type **Web**. For information on reply URLs and how to format them, refer [Reply Urls](https://microsoftapc-my.sharepoint.com/:w:/g/personal/keshav_microsoft_com/EW4oCtEbyfREufMDcgYfvS8BzKX3gjMjiLdDuSU26IZ9Tw?e=0ZcweA&nav=eyJoIjoiMTc1MjM5Nzg3OCJ9) section. A redirect URI/reply URL must be entered to enable redirections from Microsoft Entra External ID back to your site when a user authenticates. The reply URLs can be added during the registration process, or can be added later by selecting the **Add URI** link from the **Web Redirect URIs** section in the External ID application's **App Registration -> Manage -> Authentication**  menu.
-- Select **Register**.
-- Select the newly created application and navigate to the **Authentication** menu.
-- If a reply URL is entered, select both the **Access tokens** and **ID tokens** options to enable them for the application, and then select **Save**. You're now able to select both the **Access tokens** and **ID tokens** options. If a reply URL wasn't entered during registration, it can also be added on this page by selecting **Add a platform**, selecting **Web**, and then entering the redirect URI of the application.
-  
-    ![Authentication tab](media/4.jpg)
-  
-- Navigate to **API Permissions** menu, add all the Microsoft graph permissions shown in the following example image, and select **Grant admin consent for &lt;TenantName&gt;**.
-  
-    ![Admin consent](media/5.jpg)
-  
-- Go to the **Token Configuration** menu, and select **Add optional claim**. In the sidebar that opens, select **ID** in the token type, and then select **Family_name** and **Given_name** in claims and select add.  
-    ![Token configuration menu](media/6.jpg)
-- Go to the **Overview** menu of the Azure portal and copy the **Application (client) ID**. Note this ID for later setup steps (referenced later as the **Client GUID**).
+1. In the Azure portal, navigate to the tenant you created.
+1. Select **App registrations**, and then select **New registration**.
+1. Under **Name**, enter the name for this application.
+1. Under **Supported account types**, select **Accounts in this organizational directory only (&lt;Tenant Name&gt; only - Single tenant)**.
+1. For **Redirect URI**, enter your dedicated reply URLs as type **Web**. For information on reply URLs and how to format them, see [Reply URLs](https://microsoftapc-my.sharepoint.com/:w:/g/personal/keshav_microsoft_com/EW4oCtEbyfREufMDcgYfvS8BzKX3gjMjiLdDuSU26IZ9Tw?e=0ZcweA&nav=eyJoIjoiMTc1MjM5Nzg3OCJ9). A redirect URI/reply URL must be entered to enable redirections from Microsoft Entra External ID back to your site when a user authenticates. The reply URLs can be added during the registration process, or can be added later. To add reply URLs later, in the External ID application's **App Registration \> Manage \> Authentication** menu, in the **Web Redirect URIs** section, select **Add URI**.
+1. Select **Register**.
+1. Select the application you created, and then navigate to the **Authentication** menu.
+1. If you entered a reply URL, under **Implicit grant and hybrid flows**, select both the **Access tokens** and **ID tokens** options to enable them for the application, and then select **Save**. You're now able to select both the **Access tokens** and **ID tokens** options. If a reply URL wasn't entered during registration, you can add on this page by selecting **Add a platform**, selecting **Web**, and then entering the redirect URI of the application.
+1. On the **API Permissions** menu, add the following Microsoft graph permissions.
+    - **email**
+    - **offline_access**
+    - **openid**
+    - **profile**
+    - **User.ReadWrite**
+1. Select **Grant admin consent for &lt;TenantName&gt;**.
+1. On the **Token Configuration** menu, select **Add optional claim**.
+1. In the sidebar that opens, under **Token Type** select **ID**, and then under **Claims**, select **Family_name** and **Given_name**, and then select **Add**.  
+1. Go to the **Overview** menu of the Azure portal and copy the **Application (client) ID**. Make a note of this ID (referenced later as the **Client GUID**) for use in later setup steps.
 
 ## Reply URLs
 
-Reply URLs are important as they provide an allow list of the return domains when your site calls Microsoft Entra External ID to authenticate a user. This permits the return of the authenticated user back to the domain from which they're signing into (your site domain).
+Reply URLs are important because they provide an allow list of the return domains when your site calls Microsoft Entra External ID to authenticate a user. This process permits the return of an authenticated user back to the domain from which they're signing into (your site domain).
 
-In the **Reply URL** box on the **Microsoft Entra External ID - Applications > New application** screen, you need to add separate lines for both your site domain and (once your environment is provisioned) the Commerce-generated URL. These URLs must always use a valid URL format and must be base URLs only (no trailing forward slashes or paths). The string /\_msdyn365/authresp then needs to be appended to the base URLs, as in the following examples.
+On the **Microsoft Entra External ID - Applications \> New application** screen, in the **Reply URL** box, you must add separate lines for both your site domain and (once your environment is provisioned) the Commerce-generated URL. These URLs must always use a valid URL format and must be base URLs only, with no trailing forward slashes or paths. Next you must append the `\_msdyn365/authresp` string to the base URLs, as shown in the following examples.
 
 - `https://www.fabrikam.com/_msdyn365/authresp` (The domain should match the e-commerce domain exactly. If you have multiple domains, you must add this URL for each domain.)
 - `https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp`
