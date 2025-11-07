@@ -17,7 +17,8 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../../../finance/includes/banner.md)]
 
-
+> [!IMPORTANT]
+> The Dynamics 365 Field Service integration with finance and operations applications will no longer be available after October 30, 2026. Instead, look to a simpler, more integrated Field Service experience. Learn more in [Connect Field Service to finance and operations](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/connect-field-service-finance-operations) and [Link work orders to projects for unified financials](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/link-work-orders-projects-unified-financials).
 
 Supply Chain Management enables synchronization of business processes between Dynamics 365 Supply Chain Management and Dynamics 365 Field Service. The integration scenarios are configured by using extensible Data integrator templates and Microsoft Dataverse to enable the synchronization of business processes.
 Standard templates can be used to create custom integration projects, where more standard and custom columns and tables can be mapped to adjust the integration and meet specific business needs. 

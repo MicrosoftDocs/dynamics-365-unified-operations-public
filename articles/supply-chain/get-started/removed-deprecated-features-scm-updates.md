@@ -24,6 +24,18 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Supply Chain Management 10.0.46 release
+
+### Dynamics 365 Field Service integration with finance and operations applications
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Microsoft has decided not to continue development and support for this preview feature. |
+| **Replaced by another feature?** | Yes |
+| **Product areas affected** | Microsoft Dynamics 365 finance and operations applications |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Deprecated. The Dynamics 365 Field Service integration with finance and operations applications will no longer be available after October 30, 2026. Instead, look to a simpler, more integrated Field Service experience. Learn more in [Connect Field Service to finance and operations](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/connect-field-service-finance-operations) and [Link work orders to projects for unified financials](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/link-work-orders-projects-unified-financials). |
+
 ## Features removed or deprecated in the Supply Chain Management 10.0.45 release
 
 ### Inventory On-hand mobile app (preview)
