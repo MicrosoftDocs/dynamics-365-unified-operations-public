@@ -35,7 +35,7 @@ Detailed information about objects in finance and operations apps can be found i
 |---|---|
 | **Reason for deprecation/removal** | This functionality is scheduled to be replaced by a simpler, more integrated Field Service experience. |
 | **Replaced by another feature?** | Yes |
-| **Product areas affected** | Microsoft Dynamics 365 finance and operations applications |
+| **Product areas affected** | Microsoft finance and operations applications |
 | **Deployment option** | Cloud and on-premises |
 | **Status** | Deprecated. The Dynamics 365 Field Service integration with finance and operations applications will no longer be available after October 30, 2026. Instead, look to a simpler, more integrated Field Service experience. Learn more in [Connect Field Service to finance and operations](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/connect-field-service-finance-operations) and [Link work orders to projects for unified financials](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/link-work-orders-projects-unified-financials). |
 
