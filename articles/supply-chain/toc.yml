@@ -2107,6 +2107,8 @@
           href: demand-planning/forecast-algorithm-types.md
         - name: Naive forecasting (preview)
           href: demand-planning/naive-forecast-algorithm.md
+        - name: Croston's method forecasting (preview)
+          href: demand-planning/croston-method.md
         - name: Use your own custom Azure Machine Learning algorithms in Demand planning
           href: demand-planning/custom-azure-machine-learning-algorithms.md
         - name: Rolling forecasts
