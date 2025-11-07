@@ -61,7 +61,7 @@ In this example, the demand history (green line) shows that most periods have ze
 
 When you use Croston's method, the following limitations and caveats apply:
 
-- Croston's method isn't a forecasting model that you can choose. The system uses it as a fallback for datasets when most data points are zero. [Check the explainability tables](forecast-profiles#review-forecast-job-run-history) for your forecast jobs to see which planning objects use Croston's method and consider improving the input data quality where possible.
+- Croston's method isn't a forecasting model that you can choose. The system uses it as a fallback for datasets when most data points are zero. [Check the explainability tables](forecast-profiles#review-forecast-job-run-history.md) for your forecast jobs to see which planning objects use Croston's method and consider improving the input data quality where possible.
 - Adding a seasonal hint prevents the best fit algorithm from selecting Croston's method, forcing it to choose an alternative.
 - The method predicts only the average interval between demands—not *when* the next demand will occur—and doesn't provide a probability distribution of sizes. Instead, it produces a flat line for a stable, realistic forecast.
 - The model gives more weight to recent demand activity, allowing the forecast to better reflect current usage volume.
