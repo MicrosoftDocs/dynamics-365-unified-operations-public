@@ -53,7 +53,7 @@ The forecast stays stable and realistic, without reacting to random fluctuations
 
 The following image shows an example time series where Croston's method is a suitable forecasting algorithm.
 
-:::image type="content" source="media/croston-method/crostons-method-example.png" alt-text="An example time series where Croston's method is a suitable forecasting algorithm" lightbox="media/croston-method/crostons-method-example.png":::
+:::image type="content" source="media/crostons-method-example.png" alt-text="An example time series where Croston's method is a suitable forecasting algorithm" lightbox="media/crostons-method-example.png":::
 
 In this example, the demand history (green line) shows that most periods have zero orders, with occasional spikes that don't follow a pattern. This example is a typical case where Croston's method is appropriate. Instead of chasing the noise, Croston's method produces a flat forecast line (the blue line), which reflects the average demand and its frequency weighted toward recent data.
 
