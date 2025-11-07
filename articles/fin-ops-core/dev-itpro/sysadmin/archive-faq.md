@@ -1,13 +1,13 @@
 ---
 title: Finance and operations apps archive with Dataverse long term retention FAQ
 description: Access answers to frequently asked questions about archiving data in finance and operations apps with Dataverse.
-author: pnghub
-ms.author: brijeshjoshi
+author: Weijiesa
+ms.author: Weijiesa
 ms.topic: faq
-ms.date: 04/29/2025
+ms.date: 11/07/2025
 ms.custom: 
   - bap-template
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 ---
 
 # Finance and operations apps archive with Dataverse long term retention FAQ
@@ -62,19 +62,19 @@ You can also view the archived data from within the finance and operations Histo
 
 Dataverse long-term retention isn't supported on Bring Your Own Database (BYOD), and data preservation in BYOD isn't guaranteed.
 
-## I needs to perform periodic data refreshes from the Finance and Operations Production database to their sandbox environment. What guidance should we provide to customers using the Data Archive feature?
+## I needs to perform periodic data refreshes from the Dynamics 365 finance and operations production database to their sandbox environment. What guidance should we provide to customers using the Data Archive feature?
 
 There are two scenarios in this situation as follows:
 
-**Scenario 1: You have executed the Data Archive scenario in the production environment.**
-- You need to restore the AXDB from LCS and copy the Dataverse environment from the Power Platform admin center to ensure both environments are identical at the time of the data refresh.
+Scenario 1 - You have executed the Data Archive scenario in the production environment
+You need to restore the AXDB from LCS and copy the Dataverse environment from the Power Platform admin center to ensure both environments are identical at the time of the data refresh.
 
-> Note: 
-> Please ensure no archival jobs are running, as this could interfere with the execution of LTR jobs on the Sandbox.
+>[!Note]
+>Ensure no archival jobs are running, as this could interfere with the execution of LTR jobs in the sandbox environment.
 
-**Scenario 2: You are testing the Data Archive scenario on the Sandbox environment (Data Archive is not enabled on Production environment).**
-- You need to restore the AXDB from LCS and copy the Dataverse environment from the Power Platform admin center to ensure both environments are identical at the time of the data refresh.
-- After restoring the AXDB and Dataverse environment, you need to repeat all the steps related to the Data Archive setup on the Sandbox. Once this is done, they will be ready to restart their data archive testing from scratch.
+Scenario 2 - You are testing the Data Archive scenario on the sandbox environment and Data Archive isn't enabled in the production environment.
+You need to restore the AXDB from LCS and copy the Dataverse environment from the Power Platform admin center to ensure both environments are identical at the time of the data refresh.
+After restoring the AXDB and Dataverse environments, repeat all the steps related to the Data Archive setup in the Sandbox. After this is completed, restart the data archive testing from scratch.
 
 ## What should I do if the installation or upgrade of the Dynamics 365 Archive with Dataverse long term retention app from Power Platform fails?
 
@@ -92,10 +92,9 @@ There are two scenarios in this situation as follows:
 
 ## What can I do if archive job ends in an **Error** state in the workspace?
 
-- When a data archive job ends in an **Error** state, the system automatically blocks users from scheduling new archive jobs for the same archive scenario. Any existing job in a **Scheduled** state for that scenario will remain in the queue.  
- This behavior is by design and helps prevent further disruptions or data inconsistencies within that specific data archive scenario.
-- If you encounter this issue, please contact **Microsoft Support** for assistance in diagnosing and resolving the underlying cause.
-- In the meantime, you can continue to run other data archive scenarios. For example, you can execute the **Tax Archive** job while the **General Ledger Archive** job remains in a failed state.
+When a data archive job ends in an **Error** state, users are automatically blocked from scheduling new archive jobs for the same archive scenario. Any existing job in a **Scheduled** state for that scenario  remain in the queue. This behavior helps prevent further disruptions or data inconsistencies within that specific data archive scenario.
+If you encounter this issue, contact Support for assistance in diagnosing and resolving the underlying cause.
+You can continue to run other data archive scenarios. For example, you can execute the **Tax archive** job while the **General Ledger archive** job remains in a failed state.
 
 ### Common installation failure cases and resolutions
 
@@ -130,7 +129,7 @@ Wait a few minutes, and then try the installation again. Repeat this process unt
     - msdyn_ArchiveServiceAnchor
     - msdyn_ArchiveService
 
-1. Refresh, and then repeat install **Dynamics 365 Archive with Dataverse long term retention** from the Power Platform admin center.
+1. Refresh, and then repeat the **Dynamics 365 Archive with Dataverse long term retention** installaion from the Power Platform admin center.
 
 #### Case 2: Missing license configuration key
 
