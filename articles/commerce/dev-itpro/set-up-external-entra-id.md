@@ -1,6 +1,6 @@
 ---
-title: Set up a Microsoft Entra External ID for user site authentication
-description: Learn how to set up a Microsoft Entra External ID for user site authentication in Microsoft Dynamics 365 Commerce.
+title: Set up a Microsoft Entra External ID for user site authentication in Commerce e-commerce
+description: Learn how to set up a Microsoft Entra External ID for user site authentication in Microsoft Dynamics 365 Commerce e-commerce.
 author: AditiPattanaik
 ms.date: 11/07/2025
 ms.topic: how-to
@@ -17,7 +17,7 @@ ms.custom:
 
 This article explains how to set up your Microsoft Entra External ID tenant for user site authentication in Microsoft Dynamics 365 Commerce.
 
-Starting with version 10.0.45, Dynamics 365 Commerce supports Microsoft Entra External ID, Microsoft's next-generation Customer Identity and Access Management (CIAM) solution. This enhancement ensures a modern, secure, and scalable identity experience for business-to-consumer (B2C) and business-to-business (B2B) scenarios.
+Starting with version 10.0.45, Dynamics 365 Commerce e-commerce supports Microsoft Entra External ID, Microsoft's next-generation Customer Identity and Access Management (CIAM) solution. This enhancement ensures a modern, secure, and scalable identity experience for business-to-consumer (B2C) and business-to-business (B2B) scenarios.
 
 > [!NOTE] 
 > After the end of sale for Azure AD B2C, existing Azure AD B2C tenants continue to be supported until May 2030, with no new feature development. New deployments must be provisioned using Microsoft Entra External ID, because Azure AD B2C is no longer available for new tenants.
@@ -57,7 +57,7 @@ To create the application, follow these steps.
 1. Select **App registrations**, and then select **New registration**.
 1. Under **Name**, enter the name for this application.
 1. Under **Supported account types**, select **Accounts in this organizational directory only (&lt;Tenant Name&gt; only - Single tenant)**.
-1. For **Redirect URI**, enter your dedicated reply URLs as type **Web**. For information on reply URLs and how to format them, see [Reply URLs](https://microsoftapc-my.sharepoint.com/:w:/g/personal/keshav_microsoft_com/EW4oCtEbyfREufMDcgYfvS8BzKX3gjMjiLdDuSU26IZ9Tw?e=0ZcweA&nav=eyJoIjoiMTc1MjM5Nzg3OCJ9). A redirect URI/reply URL must be entered to enable redirections from Microsoft Entra External ID back to your site when a user authenticates. The reply URLs can be added during the registration process, or can be added later. To add reply URLs later, in the External ID application's **App Registration \> Manage \> Authentication** menu, in the **Web Redirect URIs** section, select **Add URI**.
+1. For **Redirect URI**, enter your dedicated reply URLs as type **Web**. For information on reply URLs and how to format them, see [Reply URLs](set-up-external-entra-id.md#reply-urls). A redirect URI/reply URL must be entered to enable redirections from Microsoft Entra External ID back to your site when a user authenticates. The reply URLs can be added during the registration process, or can be added later. To add reply URLs later, in the External ID application's **App Registration \> Manage \> Authentication** menu, in the **Web Redirect URIs** section, select **Add URI**.
 1. Select **Register**.
 1. Select the application you created, and then navigate to the **Authentication** menu.
 1. If you entered a reply URL, under **Implicit grant and hybrid flows**, select both the **Access tokens** and **ID tokens** options to enable them for the application, and then select **Save**. You're now able to select both the **Access tokens** and **ID tokens** options. If a reply URL wasn't entered during registration, you can add on this page by selecting **Add a platform**, selecting **Web**, and then entering the redirect URI of the application.
