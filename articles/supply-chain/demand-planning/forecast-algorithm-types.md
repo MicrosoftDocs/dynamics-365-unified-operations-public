@@ -101,7 +101,7 @@ The best fit model algorithm is available in several versions, as described in t
 |--|--|--|
 | Best fit model - version 1  | Demand planning version 1.0.0.1067 or higher | Works as described in this section |
 | Best fit model - version 2 (preview)  | Demand planning version 1.0.0.3424 or higher | Same as version 1, but with the following changes: <ul><li>Adds support for [Naive forecasting](naive-forecast-algorithm.md) as a way to handle low-data scenarios.</li><li>Data used for training and testing models is limited to values from before the forecast start date.</li></ul> |
-| Best fit model - version 3 (preview)  | Demand planning version 1.1.0.4 or higher | Same as version 2, but adds support for the [Croston's method](croston-method.md) for forecasting based on intermittent demand, which is demand data with many zero-demand periods with occasional non-zero demands. |
+| Best fit model - version 3 (preview)  | Demand planning version 1.1.0.4 or higher | Same as version 2, but adds support for the [Croston's method](croston-method.md) for forecasting based on intermittent demand (which is demand data with many zero-demand periods and occasional non-zero demands). |
 
 > [!IMPORTANT]
 >
