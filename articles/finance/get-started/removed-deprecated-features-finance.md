@@ -34,7 +34,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-|Reason for deprecation/removal|Low adoption and dependency on deprecated components (Data Lake Writer, Data Integrator). Strategic shift toward Business performance planning.|
+|Reason for deprecation/removal|Low adoption and dependency on deprecated components (Data Lake Writer). Strategic shift toward Business performance planning.|
 |Replaced by another feature? |Yes – Business performance planning, which offers driver-based planning, workflow approvals, Excel/Power BI integration, and Dataverse compatibility.|
 |Product areas affected |Application|
 |Deployment option |All|
