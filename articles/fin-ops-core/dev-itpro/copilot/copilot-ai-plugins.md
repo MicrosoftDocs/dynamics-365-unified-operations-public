@@ -22,7 +22,7 @@ The tools you create can use the finance and operations business logic that you 
 
 Agents can invoke these classes with business logic in two ways:
 
-1. The **Dynamics 365 ERP MCP** server makes the classes available to find and invoke by using the `find_actions` and `invoke_action` tools. When you create and deploy the classes in the environment, and define appropriate security for the associated menu action item, the actions become automatically accessible through the MCP server. For more information, see [Use Model Context Protocol for finance and operations apps](copilot-mcp.md#using-actions-that-invoke-application-code).
+1. The **Dynamics 365 ERP MCP** server makes the classes available to find and invoke by using the `find_actions` and `invoke_action` tools. When you create and deploy the classes in the environment, and define appropriate security for the associated menu action item, the actions become automatically accessible through the MCP server. Learn more in [Use Model Context Protocol for finance and operations apps](copilot-mcp.md#using-actions-that-invoke-application-code).
 1. You can also build a separate API and related tool in Dataverse to call the class. If you don't use the MCP server, you need to create Dataverse and Copilot Studio objects that make the operation available as a tool in your agent.
 
 Users in copilot chat or autonomous agents can then invoke the business logic in natural language and receive copilot responses that are based on the business logic of the finance and operations code base.
@@ -36,14 +36,14 @@ Finance and operations apps offer many scenarios and opportunities for AI tools.
 | Perform an action | "Approve Paul Cannon's expense report." |
 
 > [!IMPORTANT]
-> This feature is a preview feature. It's subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274). Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that customers can get early access and provide feedback. For more information, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+> This feature is a preview feature. It's subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274). Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that customers can get early access and provide feedback. Learn more in [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
 ## Prerequisites
 
 Before you begin developing AI tools that use finance and operations business logic, your system must meet the following requirements:
 
-- You must have a unified developer environment. You can develop AI tools that use finance and operations business logic only in the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview). For more information about how to create a unified developer environment, see the [unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview) in [Tutorial: Install the Finance and Operations Provisioning App](/power-platform/admin/unified-experience/tutorial-install-finance-operations-provisioning-app).
-- The following solutions must be installed in the Power Platform environment. If they're not already installed, see [Manage Dynamics 365 apps](/power-platform/admin/manage-apps) for information about how to install Dynamics 365 solution packages in Dataverse.
+- You must have a unified developer environment. You can develop AI tools that use finance and operations business logic only in the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview). Learn more about how to create a unified developer environment in [unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview) and in the [Tutorial: Install the Finance and Operations Provisioning App](/power-platform/admin/unified-experience/tutorial-install-finance-operations-provisioning-app).
+- The following solutions must be installed in the Power Platform environment. If they're not already installed, learn more about how to install Dynamics 365 solution packages in Dataverse in [Manage Dynamics 365 apps](/power-platform/admin/manage-apps).
 
   - The Copilot for finance and operations package, which includes the following solutions:
 
@@ -63,7 +63,7 @@ The development of AI tools for finance and operations apps has three key compon
 - A Dataverse Custom API that you create in Dataverse.
 - A tool that you add for the operation in your agent in Copilot Studio.
 
-For more information about the tool architecture and execution, see [Architecture of Copilot in finance and operations](copilot-architecture.md).
+Learn more about the tool architecture and execution in [Architecture of Copilot in finance and operations](copilot-architecture.md).
 
 ## Define the operation in X++
 
@@ -75,7 +75,7 @@ You must add the `AIPluginOperationAttribute` attribute to the new class to defi
 
 ### Data contract
 
-You must add the `DataContract` attribute to the method to define it as a data contract. You can then pass complex data types as input and output parameters of the method, so that serialization and deserialization of the parameters aren't required for communication with Copilot Studio. For more information about how to implement data contracts in X++, see [Using Data Contracts in X++](/dynamicsax-2012/appuser-itpro/using-data-contracts-in-x).
+You must add the `DataContract` attribute to the method to define it as a data contract. You can then pass complex data types as input and output parameters of the method, so that serialization and deserialization of the parameters aren't required for communication with Copilot Studio. Learn more about how to implement data contracts in X++ in [Using Data Contracts in X++](/dynamicsax-2012/appuser-itpro/using-data-contracts-in-x).
 
 ### Custom API
 
@@ -277,10 +277,10 @@ When you enable classic orchestration in an agent, you must create a separate to
     1. If you don't define a response for the tool in the **Completion** section of the tool definition, you might want to add a **Message** node to provide a response to the user or agent after the action runs.
     1. Save the topic, and publish the change to the agent.
 
-For more information, see [Call an existing tool from within a topic](/microsoft-copilot-studio/advanced-plugin-actions#call-an-existing-tool-from-within-a-topic).
+Learn more in [Call an existing tool from within a topic](/microsoft-copilot-studio/advanced-plugin-actions#call-an-existing-tool-from-within-a-topic).
 
 #### Let generative AI orchestrate copilot topics and actions
 
-When you enable generative AI orchestration in an agent, Copilot Studio uses generative AI to determine the user's intent. It then uses generative AI to identify the most appropriate action, topic, or combination of actions and topics that it should invoke to respond to the user prompt or autonomous trigger. In this case, you don't have to create a separate topic to invoke the tool. For more information about generative mode, see [Orchestrate agent behavior with generative AI](/microsoft-copilot-studio/advanced-generative-actions).
+When you enable generative AI orchestration in an agent, Copilot Studio uses generative AI to determine the user's intent. It then uses generative AI to identify the most appropriate action, topic, or combination of actions and topics that it should invoke to respond to the user prompt or autonomous trigger. In this case, you don't have to create a separate topic to invoke the tool. Learn more about generative mode in [Orchestrate agent behavior with generative AI](/microsoft-copilot-studio/advanced-generative-actions).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
