@@ -33,7 +33,7 @@ Detailed information about objects in finance and operations apps can be found i
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Microsoft has decided not to continue development and support for this preview feature. |
+| **Reason for deprecation/removal** | This functionality is scheduled to be replaced by a simpler, more integrated Field Service experience. |
 | **Replaced by another feature?** | Yes |
 | **Product areas affected** | Microsoft Dynamics 365 finance and operations applications |
 | **Deployment option** | Cloud and on-premises |
