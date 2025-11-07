@@ -1200,7 +1200,7 @@
           href: dev-itpro/upload-bulk-redirects.md
         - name: Set up a B2C tenant in Commerce
           items:
-          - name: Set up a Microsoft External Entra ID for user site authentication
+          - name: Set up a Microsoft External Entra ID for user site authentication in Commerce e-commerce
             href: dev-itpro/set-up-external-entra-id.md
           - name: Set up a B2C tenant
             href: dev-itpro/set-up-B2C-tenant.md
