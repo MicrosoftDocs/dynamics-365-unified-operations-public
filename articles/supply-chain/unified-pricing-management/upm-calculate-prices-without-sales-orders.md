@@ -11,10 +11,6 @@ ms.custom:
   - bap-template
 ---
 
-<!-- In lines 90 and 96, "don't" should be "doesn't". -->
-
-
-
 # Calculate prices and discounts without creating sales orders
 
 Unified pricing management in Dynamics 365 Supply Chain Management can calculate customer and volume-specific prices and discounts without requiring you to create a sales order. This capability is useful both when creating quotes and when integrating with external selling systems where you need to calculate prices without creating a sales order. To trigger pricing and discount calculations programmatically, you just need to provide product, quantity, and customer details.
@@ -87,13 +83,13 @@ To ensure accurate and context-aware pricing, the pricing engine relies on attri
 The following X++ sample code demonstrates how to process pricing attributes and generate hash keys for both the transaction header and each sales line that the pricing engine uses to evaluate applicable pricing rules.
 
 ```xpp
-// Put the attribute value into the corresponding field in the temporary sales table. The sales table record don't need to be inserted into the database
+// Put the attribute value into the corresponding field in the temporary sales table. The sales table record doesn't need to be inserted into the database
 SalesTable salesTable;
 salesTable.CustAccount = custTable.AccountNum; // Put the customer account to make sure the customer attribute can be matched
 SalesTable.InventSiteId = 'CENTRAL'; // Put the sales table attribute if that is provided in parameter
 RetailTempOrderItem tempOrderItem;
 
-// Put the attribute value into the corresponding field in the temporary sales line. The sale lines record don't need to be inserted into the database
+// Put the attribute value into the corresponding field in the temporary sales line. The sale lines record doesn't need to be inserted into the database
 SalesLine salesLine;
 salesLine.ItemId = itemId; // Put the itemid to make sure the product attribute can be matched
 salesLine.InventTransId = lineId;
