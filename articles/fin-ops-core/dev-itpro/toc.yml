@@ -2375,7 +2375,7 @@ items:
           items:
           - name: Use Model Context Protocol for finance and operations
             href: copilot/copilot-mcp.md
-          - name: Build an agent with Dynamics 365 ERP MCP (Preview)
+          - name: Build an agent with Dynamics 365 ERP MCP (preview)
             href: copilot/build-agent-mcp.md
         - name: Tutorials
           items:
