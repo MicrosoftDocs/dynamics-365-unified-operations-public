@@ -7,7 +7,7 @@ ms.topic: article
 ms.custom: 
   - bap-template
   - evergreen
-ms.date: 10/01/2025
+ms.date: 11/07/2025
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.search.region: Global
@@ -34,7 +34,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-|Reason for deprecation/removal|Low adoption and dependency on deprecated components (Data Lake Writer, Data Integrator). Strategic shift toward Business performance planning.|
+|Reason for deprecation/removal|Low adoption and dependency on deprecated components (Data Lake Writer). Strategic shift toward Business performance planning.|
 |Replaced by another feature? |Yes – Business performance planning, which offers driver-based planning, workflow approvals, Excel/Power BI integration, and Dataverse compatibility.|
 |Product areas affected |Application|
 |Deployment option |All|
@@ -78,7 +78,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Replaced with Fiscal Journal in Electronic Reporting ER format. For more information, see [Fiscal Journal for Italy](../localizations/italy/emea-ita-fiscal-journal-er.md) | 
+| **Reason for deprecation/removal** | Replaced with Fiscal Journal in Electronic Reporting ER format. For more information, see [Fiscal Journal for Italy](../localizations/italy/emea-ita-fiscal-journal.md) | 
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
