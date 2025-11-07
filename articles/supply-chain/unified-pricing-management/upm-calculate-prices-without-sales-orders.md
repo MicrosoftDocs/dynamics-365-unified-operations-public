@@ -1,6 +1,6 @@
 ---
 title: Calculate prices and discounts without creating sales orders
-description: Learn how to calculate customer and volume-specific prices and discounts without requiring you to create a sales order. This capability is useful both when creating quotes and when integrating with external selling systems.
+description: Learn how to calculate customer and volume-specific prices and discounts without needing to create a sales order. This capability is useful both when creating quotes and when integrating with external selling systems.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
@@ -29,7 +29,7 @@ The first step in the pricing workflow is to collect all relevant input data req
 
 The following list outlines the most common data elements used in pricing scenarios. Use these inputs to populate transaction objects and influence pricing calculations.
 
-- **Item numbers** –  Unique identifiers for the products that customers purchase. These identifiers are mandatory.
+- **Item numbers** – Unique identifiers for the products that customers purchase. These identifiers are mandatory.
 - **Customer account numbers** *(optional)* – Identify the buyer and apply customer-specific pricing, discounts, or loyalty-based rules.
 - **Quantities** *(optional)* – Specifies the number of units per item. Quantity can affect volume-based pricing or tiered discount structures.
 - **Attributes** *(optional)* – Custom fields that provide additional context, such as:
@@ -83,13 +83,13 @@ To ensure accurate and context-aware pricing, the pricing engine relies on attri
 The following X++ sample code demonstrates how to process pricing attributes and generate hash keys for both the transaction header and each sales line that the pricing engine uses to evaluate applicable pricing rules.
 
 ```xpp
-// Put the attribute value into the corresponding field in the temporary sales table. The sales table record don't need to be inserted into the database
+// Put the attribute value into the corresponding field in the temporary sales table. The sales table record doesn't need to be inserted into the database
 SalesTable salesTable;
 salesTable.CustAccount = custTable.AccountNum; // Put the customer account to make sure the customer attribute can be matched
 SalesTable.InventSiteId = 'CENTRAL'; // Put the sales table attribute if that is provided in parameter
 RetailTempOrderItem tempOrderItem;
 
-// Put the attribute value into the corresponding field in the temporary sales line. The sale lines record don't need to be inserted into the database
+// Put the attribute value into the corresponding field in the temporary sales line. The sale lines record doesn't need to be inserted into the database
 SalesLine salesLine;
 salesLine.ItemId = itemId; // Put the itemid to make sure the product attribute can be matched
 salesLine.InventTransId = lineId;
@@ -202,9 +202,10 @@ PricingEngine::CalculateDiscountsForLines(
 
 ## Step 6: Retrieve and display results
 
-After the pricing engine completes its calculations, the final step is to extract and utilize the computed prices and discounts from the transaction object. This step transforms the pricing engine's output into actionable data that you can present to users or integrate into downstream business processes such as order creation or analytics.
+After the pricing engine completes its calculations, the final step is to extract and use the computed prices and discounts from the transaction object. This step transforms the pricing engine's output into actionable data that you can present to users or integrate into downstream business processes such as order creation or analytics.
 
 The pricing engine populates each sales line in the transaction object with calculated values. These values include the final unit price, discount amount, and potentially other pricing-related metadata. You can iterate through the sales lines to extract these values and format them for display or further processing. This step is critical for ensuring that the pricing logic is correctly applied and that the results are visible and usable.
+
 The following X++ code demonstrates how to loop through each sales line in the transaction and retrieve the final price and discount amount. Typically, you place this code at the end of your pricing service or runnable class, after the pricing engine has been invoked.
 
 ```xpp
