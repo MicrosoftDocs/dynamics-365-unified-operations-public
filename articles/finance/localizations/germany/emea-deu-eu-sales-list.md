@@ -75,10 +75,6 @@ For general information about which types of transactions are included in the EU
     | Report file name              | Enter the name of the .xlsx file.                                                                                         |
     | Correction                    | Set this option to **Yes** to create correction files.                                                                    |
 
-6. Select **OK**, and review the generated reports.
-
-
-   ![Table Description automatically generated](../media/EUSL-deu.png)
-    
+6. Select **OK** to generate the files.  
     
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
