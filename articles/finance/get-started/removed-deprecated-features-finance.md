@@ -84,6 +84,16 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: By November 1, 2026, the **Italian Fiscal journal in SSRS format** won't be supported. New **\[Italy\] Fiscal Journal modernization in Electronic Reporting** feature and **Fiscal journal PDF (IT)** ER format is introduced under the **Ledger accounting reports** model. |
 
+### EU Sales list for Germany in TXT format
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced with EU Sales list in CSV format. For more information, see [EU Sales list for Germany](../localizations/germany/emea-deu-eu-sales-list.md) | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By November 1, 2026, the **EU Sales list (DE)** ER format won't be supported. New **EU Sales list CSV (DE)** ER format is introduced. |
+
 ## Features removed or deprecated in the Finance 10.0.43 release
 
 ### Sales tax report for Belgium, Purchase sales tax transactions, Sales tax transactions re sales, Additional sales tax report boxes (design based on reporting codes), and Belgium report layout.
