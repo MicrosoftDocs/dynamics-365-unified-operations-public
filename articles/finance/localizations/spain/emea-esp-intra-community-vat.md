@@ -19,6 +19,9 @@ ms.search.form: VendFormletterParameters, VendParameters, TaxTrans
 
 This article explains how to enable and use the intracommunity value-added tax (VAT) functionality in Microsoft Dynamics 365 Finance, including how to turn on the functionality, calculate and print intracommunity VAT amounts, and review posted intracommunity VAT amounts.
 
+> [!NOTE]
+> For scenarios involving **Intra-community VAT** in Spain, it is recommended to configure and use the [**Reverse charge**](../global/emea-reverse-charge.md) functionality. This approach ensures that reverse charge transactions are reported correctly in the [VAT declaration](emea-esp-vat-declaration-spain.md).  
+
 Information about the intracommunity value-added tax (VAT) can be calculated and posted automatically. When you post a European Union (EU) vendor invoice, two VAT transactions are created. One VAT transaction is created for payable sales tax, and the other VAT transaction is created for receivable sales tax. 
 
 Before you can use the intracommunity VAT functionality, you must enable it.
