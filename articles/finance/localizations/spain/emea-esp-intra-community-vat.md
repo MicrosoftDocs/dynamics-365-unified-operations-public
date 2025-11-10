@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2025
+ms.date: 11/10/2025
 ms.reviewer: johnmichalak
 ms.search.region: Spain
 ms.search.validFrom: 2016-11-30
@@ -17,10 +17,10 @@ ms.search.form: VendFormletterParameters, VendParameters, TaxTrans
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to enable and use the intracommunity value-added tax (VAT) functionality in Microsoft Dynamics 365 Finance, including how to turn on the functionality, calculate and print intracommunity VAT amounts, and review posted intracommunity VAT amounts.
+This article explains how to enable and use the intracommunity value-added tax (VAT) functionality in Microsoft Dynamics 365 Finance. It includes information about how to turn on the functionality, calculate and print intracommunity VAT amounts, and review posted intracommunity VAT amounts.
 
 > [!NOTE]
-> For scenarios involving **Intra-community VAT** in Spain, it is recommended to configure and use the [**Reverse charge**](../global/emea-reverse-charge.md) functionality. This approach ensures that reverse charge transactions are reported correctly in the [VAT declaration](emea-esp-vat-declaration-spain.md).  
+> For scenarios involving **Intra-community VAT** in Spain, configure and use the [**Reverse charge**](../global/emea-reverse-charge.md) functionality. This approach ensures that reverse charge transactions are reported correctly in the [VAT declaration](emea-esp-vat-declaration-spain.md).  
 
 Information about the intracommunity value-added tax (VAT) can be calculated and posted automatically. When you post a European Union (EU) vendor invoice, two VAT transactions are created. One VAT transaction is created for payable sales tax, and the other VAT transaction is created for receivable sales tax. 
 
@@ -28,9 +28,9 @@ Before you can use the intracommunity VAT functionality, you must enable it.
 
 To enable the intracommunity VAT functionality, follow these steps.
 
-1. In Dynamics 365 Finance, go to the **Accounts payable parameters** page (**Accounts payable** \> **Setup** \> **Accounts payable parameters**).
-1. Select the **Ledger and sales tax** tab.
-1. On the **Sales tax** FastTab, enable the the **Intra-community VAT** option.
+1. In Dynamics 365 Finance, go to the **Accounts payable parameters** page (**Accounts payable** \> **Setup** \> **Accounts payable parameters**).
+1. Select the **Ledger and sales tax** tab.
+1. On the **Sales tax** FastTab, enable the **Intra-community VAT** option.
 
 ## Calculate intracommunity VAT for purchase transactions
 
@@ -42,7 +42,7 @@ To calculate intracommunity VAT for purchase transactions, select the **Intra-co
 
 To print the intracommunity VAT on a purchase invoice, follow these steps. 
 
-1. In Dynamics 365 Finance, go to the **Form setup** page (**Accounts payable** \> **Setup** \> **Forms** \> **Form setup**).
+1. In Dynamics 365 Finance, go to the **Form setup** page (**Accounts payable** \> **Setup** \> **Forms** \> **Form setup**).
 1. On the **Invoice** tab, enable the **Print EU sales tax on Spanish invoices** option.
 
 ## Print invoices that have intracommunity VAT amounts
@@ -60,21 +60,21 @@ To print purchase invoices and intracommunity invoices that have intracommunity 
 
 To review posted intracommunity VAT amounts, follow these steps.
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Posted sales tax**.
+1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Posted sales tax**.
 1. Run the **Posted sales tax** query.
-1. On the **General** tab, if the **Intra-community VAT** checkbox is selected, the tax transaction is an intracommunity VAT transaction.
-1. You must set up Spanish VAT books so that posted payable and receivable VAT transactions are reflected in the appropriate sections. To set up Spanish VAT books, go to **Tax** \> **Setup** \> **Sales tax** \> **Spanish VAT books**. Learn more at [Report 340 for Spain](emea-esp-report-340.md).
+1. On the **General** tab, if the **Intra-community VAT** checkbox is selected, the tax transaction is an intracommunity VAT transaction.
+1. You must set up Spanish VAT books so that posted payable and receivable VAT transactions are reflected in the appropriate sections. To set up Spanish VAT books, go to **Tax** \> **Setup** \> **Sales tax** \> **Spanish VAT books**. Learn more at [Report 340 for Spain](emea-esp-report-340.md).
 
 ## Example
 
 The following example procedure shows you how to set up sales tax codes and post and print transactions for Intra-community VAT.
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**. 
-1. On the **Ledger and sales tax** tab, on the **Sales tax** FastTab, set the **Intra-community VAT** option to **Yes**.
+1. On the **Ledger and sales tax** tab, on the **Sales tax** FastTab, set the **Intra-community VAT** option to **Yes**.
 
-    ![Accounts payable parameters page, Ledger and sales tax tab, Intra-community VAT field.](../media/1_Intra-community_VAT.png)
+    :::image type="content" source="../media/1_Intra-community_VAT.png" alt-text="Screenshot of the Accounts payable parameters page, Ledger and sales tax tab, showing the Intra-community VAT field.":::
 
-1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes** and create a pair of sales tax codes with the same tax percentage for each tax rate. One code must have a positive tax percentage, and the other code must have a negative tax percentage. For codes with negative tax percentage, on the **Calculation** FastTab, set the **Allow negative sales tax percentage** option to **Yes**.
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes** and create a pair of sales tax codes with the same tax percentage for each tax rate. One code must have a positive tax percentage, and the other code must have a negative tax percentage. For codes with negative tax percentage, on the **Calculation** FastTab, set the **Allow negative sales tax percentage** option to **Yes**.
 
     | **Sales tax code** | **Percentage** | **Description**                       |
     |--------------------|----------------|---------------------------------------|
@@ -113,7 +113,7 @@ The following example procedure shows you how to set up sales tax codes and post
 
 1. Verify that there are two lines in the **Sales tax transactions** list.
 
-    ![Sales tax transaction lines.](../media/2_Sales_tax.png)
+    :::image type="content" source="../media/2_Sales_tax.png" alt-text="Screenshot of the Sales tax transaction lines.":::
 
 1. Select **Post** to post the transaction, and then select **OK**.
 
