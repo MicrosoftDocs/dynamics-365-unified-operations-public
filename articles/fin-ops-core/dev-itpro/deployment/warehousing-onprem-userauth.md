@@ -19,6 +19,9 @@ The Warehouse Management mobile app supports the following types of user-based a
 - Device code flow authentication
 - User name and password authentication
 
+> [!IMPORTANT]
+> From WMA v4, for on-premises installations of Supply Chain Management, device code authentication isn't supported for **Android** and **iOS** devices; only username/password authentication is available.
+
 ## Device code flow authentication
 
 When you use device code flow authentication, the Warehouse Management mobile app generates and shows a unique device code. The user who is setting up the device must enter this device code. They must also enter credentials (a user name and password) for a Microsoft Active Directory user account that represents either the device itself or the user who is signing in, depending on how the admin implemented the system. In addition to the unique device code, the mobile app shows the URL where the user must enter the code and the credentials for the Active Directory user account.
