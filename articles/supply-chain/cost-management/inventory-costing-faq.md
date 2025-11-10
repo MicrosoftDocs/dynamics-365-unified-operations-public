@@ -19,13 +19,13 @@ ms.custom:
 
 This article answers some frequently asked questions about inventory costing in Microsoft Dynamics 365 Supply Chain Management.
 
-## Inventory close, adjustments, and recalculation
+## Inventory closing, adjustments, recalculation, pre-closing and reverse
 
 ### Why is Inventory Closing required?
 
 The inventory close process matches and settles inventory issue transactions (resulting from Sales, Production Order Issue, Transfer Journals, etc.) to their receipt transactions (such as Purchase, Counting Journals, etc.), based on the inventory valuation method that is defined in the Item Model Group and based on the item’s active financial product, storage and tracking dimensions.  
 
-Inventory closing is performed for Periodic inventory valuation methods(FIFO,LIFO, Weighted Average), and it ensures that the financial statements (Income statement, Balance sheet, Trial balance, etc.) reflect appropriate inventory values, Cost of Goods Sold (COGS) based on all receipts and issues up to the period end. 
+Inventory closing is performed for Periodic inventory valuation methods(FIFO,LIFO, Weighted Average, etc.), and it ensures that the financial statements (Income statement, Balance sheet, Trial balance, etc.) reflect appropriate inventory values, Cost of Goods Sold (COGS) based on all receipts and issues up to the period end. 
 
 Inventory closing should be ideally executed on a regular basis  for a specific period, and once the inventory is closed for that period, you can no longer post any transactions in that period.  
 
@@ -51,7 +51,7 @@ The frequency of inventory recalculation execution depends on business requireme
 
 2. Inventory closing closes the period for which it is being executed, so any further postings in that period are prohibited. Inventory recalculation doesn’t restrict inventory postings for any period. 
 
-3. Inventory closing is mandatory to be executed before making any modifications in an item’s Item Model Group and before archiving old transactions. Besides, inventory closing is always recommended to be executed regularly at periodic intervals to reduce the system load for high transactional volume. Inventory recalculation is not a mandatory process.  
+3. Inventory closing is mandatory to be executed before making any modifications in an item’s _Item Model Group_ and before archiving old transactions. Besides, inventory closing is always recommended to be executed regularly at periodic intervals to reduce the system load for high transactional volume. Inventory recalculation is not a mandatory process.  
 
 ### Is it mandatory to execute Inventory Closing or Recalculation?
 
@@ -94,13 +94,53 @@ As discussed previously, there is no fixed duration for inventory closing/recalc
 
 2. **Executing inventory closing regularly:** If you have a high volume of transactions and are you not executing inventory closing by regularly at periodic intervals, you may experience performance issues as open/unsettled transactions count gradually increase in system. Hence, it is advisable to execute inventory closing regularly (preferably at monthly intervals) for customers having high volume of transactions for better performance. You can check the time stamp for the most recent closing executed. This can be viewed from Closing and Adjustment form and filtering the Type as “Closing”. In case you haven’t executed closing recently and have items using any periodic valuation methods in your inventory, please proceed with closing the inventory for the period nearest to your recalculation period. 
 
-3. **Circularity in inventory transactions:** 
+3. **Circularity in inventory transactions:** Overall execution time largely depends on your inventory transactions and nature of source documents. BOM Journals are one of the source documents which consumes considerable amount of time in calculating the cost of final product where the BOM structure is quite complicated, having lots of depth, consumption of scrap products, circular link in production and consumption, etc. If you have inventory transactions pertaining to any BOM journal, you can perform basic BOM circularity check and eliminate any circular link. BOM circularity doesn’t throw errors in the closing/recalculation process, as we have specific design to handle such scenarios, but BOM circularity increases the overall execution time to a large extent. Same is the case with Transfer Order Circularity. Consider the scenario when there is transfer from site 1 to site 2 and then again from site 2 to site 1. Hence, it is recommended to reduce and eliminate the possibility of any such circularity either in BOM Journals or Transfer Orders to expect better performance. Please refer the below FAQs to know more on the BOM Circularity Check strageties.
 
-4. **Review inventory performance parameters:** 
+4. **Review inventory performance parameters:** We have few configurable parameters to control the performance of closing/recalculation. These can be navigated from _Inventory Management_ -> _Setup_ -> _Inventory and warehouse management parameters_ -> _Inventory accounting_ -> _Closing_. The parameter “_Extra Batch Helpers_” decides the number of extra threads to spawn based on thread pool availability, to aid the execution of the respective batch job. Default value for this parameter is 8. This can be increased based on the availability of your system resources. For better understanding, please refer [batch capacity](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-capacity).
 
-### How do I check circularity in the inventory transactions?
+   The other parameter “_Number of items per bundle_” decides the maximum number of items to be kept in a bundle. Default value is 40. An item is always present in a single bundle, and a bundle is always processed by a single thread/task. If your transactions have many items and relatively comparable number of transactions per item, consider keeping this value at 40. If your inventory transactions don’t have lot of items or instead have large number of transactions only for few items, pls consider keeping this value at utmost 10. These values should be modified before the commencement of the closing/recalculation process, and not somewhere in between the execution process.
 
+   We have another parameter called “_Maximum number of iterations allowed per item_” in the closing/recalculation dialog box. This parameter pertains to cost calculations for circular links and is a trade-off between performance and accuracy. It determines the number of iterations for which the closing/recalculation process to be executed, as every iteration would adjust the cost of item involved in circular BOM. Hence, the more the number of iterations, better would be the cost accuracy for those items in circular BOM. But this cannot be practically executed infinitely, hence we use the default iteration value of 100. If your business transactions don’t have many circular inventory transactions, or you are fine with some approximate cost adjustments, you can consider reducing this valueas this will reduce the overall execution time.
 
+   Just next to the previous parameter, we have another parameter “_Minimum amount allowed… to be expensed_”. This parameter determines the minimum adjustment amount to be expensed while processing inventory transactions in every iteration. This parameter is again a tradeoff, like the previous one, but instead, performance here is reversely proportional to the value. A lower value would contribute to poorer performance but more accurate results. Default value is 1.00 in the accounting currency, and most of the time, customers do not modify this value. But it is up to your business requirements to conclude an optimized value.
+
+   Hence, it has already been discussed previously that it is recommended to eliminate any circular links from your inventory transactions to improve the closing/recalculation performance. 
+
+In case you feel that the operation is executing for an unusual amount of time, please reach out to Microsoft Support or your Partner to monitor the real time execution status and resource utilization.  
+
+### How do I check circularity in BOM Journals?
+
+Navigate to _Inventory Management_ -> _Setup_ -> _Inventory and warehouse management parameters_ -> _Bill of materials_. You can mention the required values in _Level of circularity_ and _Circularity check strategy_. The _Circularity check strategy_ option works in conjunction with the _Level of circularity_ option, so the first thing to look at is selection made for the _Level of Circularity_ option.  
+
+The _Level of circularity_ option has three available policy selections: _Never_, _BOM_, and _Line_. The selected setting for this option determines when the system will check for circularity in BOM structures. A circular BOM exists when an item has been defined as a component of itself within a BOM structure. A BOM will be considered circular regardless of whether it is a first-level component or a lower-level component in the BOM structure that is referenced.  
+
+1. **Line:** The circularity check occurs when the BOM line is saved.  This prevents a BOM line from being added when the component item causes BOM circularity. 
+
+2. **Never:** There is no circularity check. You can perform a manual check using the Check function in the BOM line form to identify any BOM circularity errors that might exist.  If circularity does exist, the circularity error would also be reported when you perform cost rollup calculations and planning calculations. 
+
+3. **BOM:** The circularity check occurs when you do either of the following activities: close the Bills of materials form, use the Check function in the Bills of materials form, or associate a BOM with a BOM version 
+
+Note that the controls preventing a circular BOM do not apply to a production BOM on a production order. You can manually add a component or consume a component that would ultimately create BOM circularity. When the component consumption reflects BOM circularity, the inventory closing process might not calculate a sensible cost for a manufactured item that has an inventory valuation method using actual cost. In such an occurrence, the use of a manufacturing indirect cost of the surcharge type can also cause problems in inventory closing, because the calculated cost can grow exponentially. 
+
+For Circularity check strategy option, there are two available selections: _Optimize for low complexity_ and _Optimize for high complexity_.  
+
+1. The **Optimize for Low complexity** will request data from disk as it is needed for the circularity check. For single level/simple BOM structures performance will be better by selecting this option. 
+
+2. When **Optimize for High complexity** is selected, the BOM structure and all its’ dependencies are cached before the circularity check is processed. When processing a BOM with many lines it may take a moment for the processing to start since it is loading the information into cache. However, the Optimize for High complexity can significantly improve overall performance of the circularity check.  This is especially true if you are running a task that will be performing a circularity check on multiple BOM’s or if you are doing a consistency check on the Bills of materials. 
+
+For more details, please refer this guide. 
+
+The below SQL query can also be used to fetch the items having circular link, directly from the database (can also be converted to X++ script and executed):
+
+``` sql[]
+select p.itemid, c.itemid, p.REFERENCECATEGORY, c.REFERENCECATEGORY, c.REFERENCEID, p.REFERENCEID, *  
+from INVENTTRANSORIGINASSEMBLYCOMPONENT a, INVENTTRANSORIGIN p, INVENTTRANSORIGIN c  
+where a.ASSEMBLYINVENTTRANSORIGIN=p.RECID  
+  and a.COMPONENTINVENTTRANSORIGIN=c.RECID  
+  and p.ITEMID=c.ITEMID  
+  and p.DATAAREAID=c.DATAAREAID  
+  and p.DATAAREAID = 'abc'; 
+```
 
 
 
