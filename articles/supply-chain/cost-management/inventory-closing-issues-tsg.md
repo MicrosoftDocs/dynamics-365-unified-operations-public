@@ -1,4 +1,23 @@
+---
+title: Inventory costing TSG
+description: Access TSGs for inventory costing issues in Microsoft Dynamics 365 Supply Chain Management.
+author: soumyamoydas
+ms.author: soumyamoydas
+ms.reviewer: kamaybac
+ms.search.form: 
+ms.topic: faq
+ms.date: 10/11/2025
+ms.update-cycle: 1095-days
+ms.custom: 
+  - bap-template
+  - evergreen
+---
+
 # Troubleshooting commonly experienced Inventory Closing/Recalculation/Reverse issues 
+
+[!include [banner](../includes/banner.md)]
+
+This is a troubleshooting guide for some common issues related to inventory closing, recalculation and reverse in Microsoft Dynamics 365 Supply Chain Management.
 
 ## “_Unable to edit a record in abc table_” - How to resolve the Inventory Closing/Recalculation/Reverse for this SQL issue?
 
