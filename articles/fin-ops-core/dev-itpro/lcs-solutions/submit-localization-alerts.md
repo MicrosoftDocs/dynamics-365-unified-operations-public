@@ -12,13 +12,13 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: b37140b4-5d6f-460f-ae36-f0d7bd90c0d3
 ---
 
-# Submit alerts about country- or region-specific regulatory features
+# Submit alerts about country or region-specific regulatory features
 
 [!include [banner](../includes/banner.md)]
 
 This article describes how to use Microsoft Dynamics 365 Lifecycle Services to submit alerts through the Dynamics 365 regulatory alert submission service. This article also explains how to track planned and released regulatory features through Lifecycle Services Issue search. 
 
-A regulatory alert is a notification for Microsoft about an **upcoming** (that is, not yet enforced) change in country- or region-specific laws or regulations that might affect business processes supported in Dynamics 365 finance and operations apps. Microsoft processes such alerts and decides whether any changes in Dynamics 365 finance and operations apps are required to support the regulatory changes. Microsoft then releases corresponding [regulatory updates](../../../finance/localizations/global/regulatory-updates.md).
+A regulatory alert is a notification for Microsoft about an **upcoming** (that is, not yet enforced) change in country or region-specific laws or regulations that might affect business processes supported in Dynamics 365 finance and operations apps. Microsoft processes such alerts and decides whether any changes in Dynamics 365 finance and operations apps are required to support the regulatory changes. Microsoft then releases corresponding [regulatory updates](../../../finance/localizations/global/regulatory-updates.md).
 
 > [!IMPORTANT]
 > Don't use the Dynamics regulatory alert submission service to communicate information about issues in existing regulatory features, missing regulatory features, or unsupported existing regulatory requirements. In such cases, contact Microsoft support for further guidance.
