@@ -18,7 +18,7 @@ ms.reviewer: johnmichalak
 This article provides information about the European Union (EU) sales list report. The German EU sales list report contains information about the sale of goods and services for reporting in CSV format.
 
 > [!NOTE]
-> The **EU Sales list (DE)** ER format (TXT) is deprecated and replaced by **EU Sales list CSV (DE)** ER format. Learn more in [Features removed or deprecated in the Finance](/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10046-release).
+> The **EU Sales list (DE)** ER format (TXT) is deprecated and replaced by **EU Sales list CSV (DE)** ER format. Learn more in [Features removed or deprecated in the Finance](/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10-0-46-release).
 
 ## Setup
 
