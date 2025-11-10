@@ -1,10 +1,10 @@
 ---
 title: Requirements for publishing apps on AppSource
-description: Access resources that will help you understand the requirements for creating solutions for finance and operations apps.
+description: Access resources that help you understand the requirements for creating solutions for finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 07/31/2018
+ms.date: 11/10/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -15,9 +15,9 @@ ms.assetid: 6a5b4272-c6f3-4747-a7bf-9664d7950dad
 
 [!include[banner](../includes/banner.md)]
 
-Lifecycle Services (LCS) solution packages for Microsoft AppSource are partner-designed and developed solutions that can be automatically deployed on Microsoft Azure to deliver an end-to-end solution, using industry and vertical-specific content.
+Lifecycle Services solution packages for Microsoft AppSource are partner-designed and developed solutions that you can automatically deploy on Microsoft Azure to deliver an end-to-end solution, using industry and vertical-specific content.
 
-This article points to resources that will help you understand the requirements for creating LCS solutions for Microsoft AppSource. The requirements for creating an LCS solution package fall into the following groups.
+This article points to resources that help you understand the requirements for creating Lifecycle Services solutions for Microsoft AppSource. The requirements for creating a Lifecycle Services solution package fall into the following groups.
 
 -   [App validation](app-validation-lcs-solutions.md)
 -   [Code migration](code-migration-lcs-solutions.md)

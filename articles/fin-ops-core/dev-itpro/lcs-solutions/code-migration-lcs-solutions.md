@@ -1,10 +1,10 @@
 ---
 title: Migrate code for finance and operations apps solutions
-description: Learn about how to upgrade and analyze your code in Microsoft Dynamics Lifecycle Services (LCS), include code examples for commands.
+description: Learn about how to upgrade and analyze your code in Microsoft Dynamics Lifecycle Services, include code examples for commands.
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: upgrade-and-migration-article
-ms.date: 06/13/2018
+ms.date: 11/10/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -15,7 +15,7 @@ ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
 
 [!include[banner](../includes/banner.md)]
 
-To complete your solution package, the first step is to upgrade your code by using the best practices in **Migrate and Create finance and operations Apps Solutions** in Microsoft Dynamics Lifecycle Services (LCS). After that step is completed, you must run the Customization Analysis Report (CAR). This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
+To complete your solution package, the first step is to upgrade your code by using the best practices in **Migrate and Create finance and operations Apps Solutions** in Microsoft Dynamics Lifecycle Services. After that step is completed, you must run the Customization Analysis Report (CAR). This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
 
 To generate the CAR, run the following command on a development environment.
 
@@ -23,7 +23,7 @@ To generate the CAR, run the following command on a development environment.
 xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
 ```
 
-Here is an example of this command.
+Here's an example of this command.
 
 ```Console
 xppbp.exe -metadata=C:\Packages -all -model=MyAppSuiteCustomizations -xmlLog=C:\temp\BPCheckLogcd.xml -module=ApplicationSuite -car=c:\temp\CAReport.xlsx
@@ -34,7 +34,7 @@ The xppbp.exe file is located in c:\\packages\\bin or I:\\AosService\\Packages\\
 ## Extensibility
 In Microsoft Dynamics 365 Finance version 8.0 (April 2018), all product models are sealed. Therefore, only extension-based customizations are currently supported. For more information about extensibility, see [Extensibility](../extensibility/extensibility-home-page.md).
 
-The first step in completing your solution package is to upgrade your code using the best practices in <strong>Migrate and Create finance and operations Apps Solutions</strong> in LCS. After this step is complete, you must run the Customization Analysis report. This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
+The first step in completing your solution package is to upgrade your code using the best practices in <strong>Migrate and Create finance and operations Apps Solutions</strong> in Lifecycle Services. After this step is complete, you must run the Customization Analysis report. This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
 
 To generate the Customization Analysis report (CAR), run the following command on a development environment.
 
