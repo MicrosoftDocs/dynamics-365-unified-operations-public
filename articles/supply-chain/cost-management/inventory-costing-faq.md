@@ -19,23 +19,193 @@ ms.custom:
 
 This article answers some frequently asked questions about inventory costing in Microsoft Dynamics 365 Supply Chain Management.
 
-## Inventory close, adjustments, and recalculation
+## Inventory closing, adjustments, recalculation, pre-closing and reverse
 
-### Is the inventory close required?
+### Why is Inventory Closing required?
 
-If you plan to use the inventory archiving feature, the inventory close is required. If you don't plan to use the inventory archiving feature, we strongly recommend that you still run the inventory close, regardless of the costing models that you use.
+The inventory close process matches and settles inventory issue transactions (resulting from Sales, Production Order Issue, Transfer Journals, etc.) to their receipt transactions (such as Purchase, Counting Journals, etc.), based on the inventory valuation method that is defined in the Item Model Group and based on the item’s active financial product, storage and tracking dimensions.  
 
-### How often should the inventory close be run?
+Inventory closing is performed for Periodic inventory valuation methods(FIFO,LIFO, Weighted Average, etc.), and it ensures that the financial statements (Income statement, Balance sheet, Trial balance, etc.) reflect appropriate inventory values, Cost of Goods Sold (COGS) based on all receipts and issues up to the period end. 
 
-The inventory close should be run at least once per ledger period. For example, if your ledger is set to a calendar month–based fiscal calendar, you should run the inventory close once per month.
+Inventory closing should be ideally executed on a regular basis  for a specific period, and once the inventory is closed for that period, you can no longer post any transactions in that period.  
 
-### Is the inventory recalculation required?
+The frequency of inventory close run varies by company. However, transaction volume should determine how often you decide to run inventory close. In general, most companies run inventory closing as part of their month-end closing and reconciliation procedures, and before any audit activities. 
 
-No, the inventory recalculation isn't required. If you use a periodic costing model such as first in, first out (FIFO), last in, first out (LIFO), or weighted average, you should carefully consider whether you'll run the inventory recalculation. It can provide more accurate costing in the heuristic models that you've selected.
+It is recommended to execute inventory closing regularly, once inventory transactions are finalized for a period typically at a monthly frequency to balance out the transactional load.  
 
-### How often should the inventory recalculation be run?
+Besides, executing inventory closing is mandatory if you are planning to change the valuation model in Item Model Group of an item from Periodic to Perpetual, or planning to archive old inventory transactions.
 
-If you're planning to run the inventory recalculation, we recommend that you consider running it daily as a batch process. If your organization doesn't require frequent reporting of the inventory values for periodic costing models, you can consider running the inventory calculation less often.
+### Why is Inventory Recalculation required?
+
+If adjustments to inventory and the general ledger are required during a month or other inventory period, you can run inventory recalculation instead of inventory close. Inventory recalculation adjusts the inventory transactions as per the applicable valuation method but doesn't make settlements to inventory transactions. Like inventory closing, inventory recalculation can be executed only for periodic inventory valuation methods. 
+
+During inventory recalculation, on-hand and inventory transactions are adjusted. These tasks affect any ledger account that is linked to the original inventory transaction. 
+
+Inventory recalculation doesn’t close any period, unlike inventory closing, hence you can still post transactions in the period for which you have already executed inventory recalculation. 
+
+The frequency of inventory recalculation execution depends on business requirements. You can execute recalculations on a daily, weekly or monthly basis to adjust the on-hand and inventory transactions, to reflect the accurate cost of the items based on their valuation method. However, executing inventory recalculation is an optional procedure and not a pre-requisite to inventory closing. We recommend executing inventory closing monthly. Once closing is executed, all the recalculations executed for dates after the closing date will be automatically cancelled. Please note that running many recalculations or executing scheduled recalculations has a performance impact.  
+
+### What are the differences between Inventory Closing and Inventory Recalculation?
+
+1. Inventory closing matches and settles transactions whereas inventory recalculation adjusts transactions.  
+
+2. Inventory closing closes the period for which it is being executed, so any further postings in that period are prohibited. Inventory recalculation doesn’t restrict inventory postings for any period. 
+
+3. Inventory closing is mandatory to be executed before making any modifications in an item’s _Item Model Group_ and before archiving old transactions. Besides, inventory closing is always recommended to be executed regularly at periodic intervals to reduce the system load for high transactional volume. Inventory recalculation is not a mandatory process.  
+
+### Is it mandatory to execute Inventory Closing or Recalculation?
+
+Inventory closing is mandatory to be executed before making any modifications in an item’s Item Model Group and before archiving old inventory transactions. Besides, inventory closing is always recommended to be executed regularly at periodic intervals to reduce the system load for high transactional volume, as inventory closing closes the settled inventory transactions, thereby excluding the closed transactions from further inventory processes. Inventory recalculation is not a mandatory process but is executed as per your business requirements either on a daily, weekly or monthly basis to adjust the on-hand and inventory transactions, for reporting the accurate cost of the items based on the valuation method. We recommend closing your inventory monthly to observe better performance. 
+
+### What is Inventory Pre-Closing? 
+
+Preclosing replaced the "Activate closing of non-financial transfer" that was available in the previous versions of Dynamics365 SCM. Pre-closing will close the "non-financial transfers", so that the inventory closing procedure can ignore them as closing/recalculation only impact the financial transactions.​ “Non-financial transfers” are inventory transactions that have no effect on inventory costing, like inventory movement journal between two warehouses in the same site if warehouse isn’t a financial dimension. Pre-closing can be explicitly executed, if required as per the business requirements. Moreover, pre-closing is always implicitly executed in the closing/recalculation procedure. 
+
+### What is Inventory Reversal? How is it different from Cancellation of Closing?
+
+If you are required to revert the settlements/adjustments made by a closing/recalculation voucher, you can select the respective voucher and carry out “Reverse”. It would post the equal but opposite settlements/adjustments in the ledger, thereby balancing the changes made by the respective closing/recalculation voucher.  
+
+Besides, inventory reversal is executed when you are required to post any transaction in an already closed inventory period. In that case, the closing voucher is reversed, thereby opening the period, following which we can post any transactions. 
+
+Inventory reversal and cancellation refer to the same operation and can be used interchangeably.  
+
+### What is Inventory Revaluation?
+
+For perpetual valuation models like Moving Average or Standard Cost, Inventory Revaluation can be followed to revalue the on-hand inventory. Inventory revaluation works similar to inventory recalculation. 
+Inventory revaluation is used for adjusting the recorded value of inventory items to reflect changes in cost, market conditions, accounting corrections, or policy updates. This adjustment can either increase (appreciate) or decrease (depreciate) the value of inventory on hand in the system and general ledger.
+
+### What is the typical duration required to complete the Inventory Closing and Recalculation process, and what factors impact the execution time? 
+
+The duration required to complete the Inventory Closing/Recalculation process can vary widely depending on several factors and could ranges from a few minutes to several hours for most environments. Overall time for execution depends on: 
+- Volume of inventory transactions (issues vs receipts)
+- Type of inventory transactions (source documents)
+- Length of the period
+- Number of Items and Inventory Dimensions (site, warehouse, location, etc.)
+- Real time resource utilization and availability,
+- Parallel processes being executed at the same time, number of active sessions, etc. 
+ 
+Since Closing process could run from few minutes to several hours, it is recommended to schedule the process at off peak hours to avoid any business disruptions. 
+
+### Why is my Inventory Closing or Recalculation executing for a prolonged duration ? Can I improve the execution speed? 
+
+As discussed previously, there is no fixed duration for inventory closing/recalculation as the overall execution depends on the open/unsettled transactions’ count, nature of source documents, resource availability, parallel processing, parallel user sessions, etc. Below are recommendations on analyzing the Closing process: 
+
+1. **Track progress of the execution:** You can always track the progress of the closing/recalculation voucher from Closing and Adjustment form, select the specific voucher and go to “Progress details”. You can find the bundles that have completed execution and the ones which are still pending. 
+
+2. **Executing inventory closing regularly:** If you have a high volume of transactions and are you not executing inventory closing by regularly at periodic intervals, you may experience performance issues as open/unsettled transactions count gradually increase in system. Hence, it is advisable to execute inventory closing regularly (preferably at monthly intervals) for customers having high volume of transactions for better performance. You can check the time stamp for the most recent closing executed. This can be viewed from Closing and Adjustment form and filtering the Type as “Closing”. In case you haven’t executed closing recently and have items using any periodic valuation methods in your inventory, please proceed with closing the inventory for the period nearest to your recalculation period. 
+
+3. **Circularity in inventory transactions:** Overall execution time largely depends on your inventory transactions and nature of source documents. BOM Journals are one of the source documents which consumes considerable amount of time in calculating the cost of final product where the BOM structure is quite complicated, having lots of depth, consumption of scrap products, circular link in production and consumption, etc. If you have inventory transactions pertaining to any BOM journal, you can perform basic BOM circularity check and eliminate any circular link. BOM circularity doesn’t throw errors in the closing/recalculation process, as we have specific design to handle such scenarios, but BOM circularity increases the overall execution time to a large extent. Same is the case with Transfer Order Circularity. Consider the scenario when there is transfer from site 1 to site 2 and then again from site 2 to site 1. Hence, it is recommended to reduce and eliminate the possibility of any such circularity either in BOM Journals or Transfer Orders to expect better performance. Please refer the below FAQs to know more on the BOM Circularity Check strageties.
+
+4. **Review inventory performance parameters:** We have few configurable parameters to control the performance of closing/recalculation. These can be navigated from _Inventory Management_ -> _Setup_ -> _Inventory and warehouse management parameters_ -> _Inventory accounting_ -> _Closing_. The parameter “_Extra Batch Helpers_” decides the number of extra threads to spawn based on thread pool availability, to aid the execution of the respective batch job. Default value for this parameter is 8. This can be increased based on the availability of your system resources. For better understanding, please refer [batch capacity](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-capacity).
+
+   The other parameter “_Number of items per bundle_” decides the maximum number of items to be kept in a bundle. Default value is 40. An item is always present in a single bundle, and a bundle is always processed by a single thread/task. If your transactions have many items and relatively comparable number of transactions per item, consider keeping this value at 40. If your inventory transactions don’t have lot of items or instead have large number of transactions only for few items, pls consider keeping this value at utmost 10. These values should be modified before the commencement of the closing/recalculation process, and not somewhere in between the execution process.
+
+   We have another parameter called “_Maximum number of iterations allowed per item_” in the closing/recalculation dialog box. This parameter pertains to cost calculations for circular links and is a trade-off between performance and accuracy. It determines the number of iterations for which the closing/recalculation process to be executed, as every iteration would adjust the cost of item involved in circular BOM. Hence, the more the number of iterations, better would be the cost accuracy for those items in circular BOM. But this cannot be practically executed infinitely, hence we use the default iteration value of 100. If your business transactions don’t have many circular inventory transactions, or you are fine with some approximate cost adjustments, you can consider reducing this valueas this will reduce the overall execution time.
+
+   Just next to the previous parameter, we have another parameter “_Minimum amount allowed… to be expensed_”. This parameter determines the minimum adjustment amount to be expensed while processing inventory transactions in every iteration. This parameter is again a tradeoff, like the previous one, but instead, performance here is reversely proportional to the value. A lower value would contribute to poorer performance but more accurate results. Default value is 1.00 in the accounting currency, and most of the time, customers do not modify this value. But it is up to your business requirements to conclude an optimized value.
+
+   Hence, it has already been discussed previously that it is recommended to eliminate any circular links from your inventory transactions to improve the closing/recalculation performance. 
+
+In case you feel that the operation is executing for an unusual amount of time, please reach out to Microsoft Support or your Partner to monitor the real time execution status and resource utilization.  
+
+### How do I check circularity in BOM Journals?
+
+Navigate to _Inventory Management_ -> _Setup_ -> _Inventory and warehouse management parameters_ -> _Bill of materials_. You can mention the required values in _Level of circularity_ and _Circularity check strategy_. The _Circularity check strategy_ option works in conjunction with the _Level of circularity_ option, so the first thing to look at is selection made for the _Level of Circularity_ option.  
+
+The _Level of circularity_ option has three available policy selections: _Never_, _BOM_, and _Line_. The selected setting for this option determines when the system will check for circularity in BOM structures. A circular BOM exists when an item has been defined as a component of itself within a BOM structure. A BOM will be considered circular regardless of whether it is a first-level component or a lower-level component in the BOM structure that is referenced.  
+
+1. **Line:** The circularity check occurs when the BOM line is saved.  This prevents a BOM line from being added when the component item causes BOM circularity. 
+
+2. **Never:** There is no circularity check. You can perform a manual check using the Check function in the BOM line form to identify any BOM circularity errors that might exist.  If circularity does exist, the circularity error would also be reported when you perform cost rollup calculations and planning calculations. 
+
+3. **BOM:** The circularity check occurs when you do either of the following activities: close the Bills of materials form, use the Check function in the Bills of materials form, or associate a BOM with a BOM version 
+
+Note that the controls preventing a circular BOM do not apply to a production BOM on a production order. You can manually add a component or consume a component that would ultimately create BOM circularity. When the component consumption reflects BOM circularity, the inventory closing process might not calculate a sensible cost for a manufactured item that has an inventory valuation method using actual cost. In such an occurrence, the use of a manufacturing indirect cost of the surcharge type can also cause problems in inventory closing, because the calculated cost can grow exponentially. 
+
+For Circularity check strategy option, there are two available selections: _Optimize for low complexity_ and _Optimize for high complexity_.  
+
+1. The **Optimize for Low complexity** will request data from disk as it is needed for the circularity check. For single level/simple BOM structures performance will be better by selecting this option. 
+
+2. When **Optimize for High complexity** is selected, the BOM structure and all its’ dependencies are cached before the circularity check is processed. When processing a BOM with many lines it may take a moment for the processing to start since it is loading the information into cache. However, the Optimize for High complexity can significantly improve overall performance of the circularity check.  This is especially true if you are running a task that will be performing a circularity check on multiple BOM’s or if you are doing a consistency check on the Bills of materials. 
+
+For more details, please refer this guide. 
+
+The below SQL query can also be used to fetch the items having circular link, directly from the database (can also be converted to X++ script and executed):
+
+``` sql[]
+select p.itemid, c.itemid, p.REFERENCECATEGORY, c.REFERENCECATEGORY, c.REFERENCEID, p.REFERENCEID, *  
+from INVENTTRANSORIGINASSEMBLYCOMPONENT a, INVENTTRANSORIGIN p, INVENTTRANSORIGIN c  
+where a.ASSEMBLYINVENTTRANSORIGIN=p.RECID  
+  and a.COMPONENTINVENTTRANSORIGIN=c.RECID  
+  and p.ITEMID=c.ITEMID  
+  and p.DATAAREAID=c.DATAAREAID  
+  and p.DATAAREAID = 'abc'; 
+```
+
+
+
+
+### What are the best practices to be followed while executing inventory closing/recalculations?
+
+It is recommended to execute inventory closing and recalculation during off peak business hours when the overall system load is relatively lower, thereby increasing the availability of resources.  
+
+Always execute inventory closing/recalculation/resume calculation as a batch process for better performance and better error tracing.  
+
+Please verify  the inventory closing parameters to analyze if  it is fine as per your business operations.  
+
+In case of high transactional volume for a period that are likely to prolong the closing run, it is suggested to divide the period into smaller time intervals and close those periods consecutively.  
+
+If recalculation takes longer time, check when was the last instance of Closing excuted. You can view this from Closing and Adjustment form and filtering the Type as “Closing”.. In case you haven’t executed closing anytime recently and have items using any periodic valuation methods in your inventory, please proceed with closing the inventory for the period nearest to your recalculation period.  
+
+Closing the inventory closes the transactions and reduces the scope/volume for further inventory operations. Recalculation, however, is executed based on your business requirements to report the accurate costs of the items. 
+
+### How to analyze the issue and receipt transactions as part of Inventory Closing/Recalculation process?
+
+Inventory closing/recalculation settles/adjusts issue transactions to receipt transactions. If there are insufficient receipt transactions, then lots of issue transactions would be temporarily stored in the memory while processing closing/recalculation. Hence, it’s recommended to execute inventory closing or recalculation when there are comparable number of issue and receipt transactions. The summarized view of issue vs receipt transactions can be viewed from the inventory value report.  
+
+The same can also be viewed directly from the database by executing the below query: 
+
+``` sql[]
+select ITEMID, STATUSISSUE, count(*) countOfOpenTrans 
+from InventTrans 
+where PARTITION = 5637144576 
+  and DATAAREAID = 'abc' 
+  and STATUSISSUE <= 1 
+  and STATUSRECEIPT <= 1 
+  and VALUEOPEN = 1 
+  and DATEFINANCIAL <= 'closing_trans_date' 
+group by ITEMID, STATUSISSUE 
+order by ITEMID, STATUSISSUE, countOfOpenTrans desc;
+```
+
+### What are the best practices to be followed while executing inventory reversals? 
+
+It is recommended to execute inventory reversals during off peak business hours to make better use of system resources.  
+
+Always execute inventory reversals one at a time, else it might lead to errors or even ledger data corruption. 
+
+The parameter “Extra batch helpers” from Inventory and Warehouse Closing parameters decides the number of parallel threads to execute for the reversal task, based on the thread pool availability. The recommended and default number of extra batch helpers is 8. If your reversal execution is very slow, you can consider increasing this value based on the real time system resources availability.  
+
+### Why did my Inventory Closing/Recalculation end in an error? What should be done? 
+
+There can be several reasons behind inventory closing/recalculation/reverse ending in error. Please trace the exact error message from the Batch Jobs form for the related batch job and from the Closing and Adjustment form after selecting the specific voucher, then view Log details. In case you are unable to fix such issues please reach out to Microsoft Support or your Partner. 
+
+Possible reasons for errors:  
+
+Over-utilization of the system resources, - ??? 
+
+SQL deadlock or availability issues??? 
+
+, business data corruption and inconsistencies like rounding or currency issues 
+
+, incorrect business practices,  
+
+configurations issues like ledger, account 
+
+, project or warehouse setup, and many more. 
+
+
+
 
 ### When should I use the on-hand inventory adjustment on the Closing and adjustments page?
 
@@ -60,10 +230,6 @@ When you create a return that is related to a sales order, the value of the **Un
 For a return of a standard cost item that is related to a sales order, the system will use the standard cost from the time of the original sales order, even if a new standard cost is active for the item.
 
 When you create a return that isn't related to a sales order, the **Return cost price** field is set to the active item price that you have for the item in the site that you're creating the return order for. If you don't have an active cost price in a costing version for the item, the value will be 0 (zero). If you leave the value as 0 (zero), you'll receive a warning that states that the return lot ID or return cost price isn't specified.
-
-### What is the expected performance of the inventory close?
-
-Many factors can affect the performance of the inventory close. These factors include the total number of items, the total number of transactions in the period, the inventory models that you use, and the number of batch helpers that you configure in the inventory and warehouse management parameters. You can expect that the closing might take as little as a few minutes or as much as several hours. There's no specific guidance about the amount of time that the close should take to run. You should define your nonfunctional business requirements for the performance of the inventory close and work closely with your partner to define the schedule for running the inventory close process. If you experience unexpectedly low performance of the inventory close process, you should open a support ticket.
 
 ## Costing sheet and indirect costs
 
