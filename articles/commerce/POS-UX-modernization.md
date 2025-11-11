@@ -104,7 +104,14 @@ Product images can now be displayed on the transaction grid.
 
 Make sure to correctly set up and manage images for Store Commerce for this feature to work. Learn more in [Set up and manage images for Store Commerce](set-up-manage-images-retail-mpos.md).
 
-This feature is available starting with the Commerce 10.0.42 release. To enable this feature in your environment, contact Microsoft support.
+This feature is available starting with the Commerce 10.0.42 release. To enable this feature in your environment follow these steps:
+
+1. Go to the **Feature management** workspace (**System administration \> Workspaces \> Feature management**).
+1. Search for the **Enable Modern Transaction Grid in POS Transaction View** feature, and then select it.
+1. In the right pane, select **Enable now**.
+1. Search for the **Enable product images on modern transaction grid** feature, and then select it.
+1. In the right pane, select **Enable now**.
+1. Run the **Registers (1090)** job to implement the change in POS.
 
 ## Streamlined workflow for adding items to a transaction from the product page
 
@@ -153,3 +160,4 @@ This feature is available starting with the Commerce 10.0.39 release.
 The modernization and move to React-based controls on the transaction page keeps full parity with existing extensibility capabilities. Custom columns, fields, and controls continue to work as expected, making it easier to adopt the new experience without extra development effort.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
