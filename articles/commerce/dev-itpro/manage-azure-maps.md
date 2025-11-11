@@ -19,10 +19,10 @@ ms.custom:
 
 This article describes how to manage Microsoft Azure Maps in Dynamics 365 Commerce.
 
-When Azure Maps is enabled in Commerce headquarters, you can use it with the Commerce distributed order management (DOM) feature and Store Commerce app.
+When Azure Maps is enabled in Commerce headquarters, you can use it with the Commerce Distributed Order Management (DOM) feature and store locator functionality in e-commerce and Store Commerce app which allows people to view a map of a store, warehouse, or other location when placing orders.
 
 > [!NOTE]
-> Azure Maps is only available for DOM in the Commerce 10.0.43 release. Azure Maps will be made available for store locator functionality in Commerce and the Store Commerce app in version 10.0.45. To use Azure Maps in version 10.0.44, contact Microsoft Support.
+> Azure Maps is available for DOM starting from the 10.0.43 release. Azure Maps is available for store locator functionality in e-commerce and the Store Commerce app from the 10.0.45 release.
 
 ## Enable Azure Maps
 
