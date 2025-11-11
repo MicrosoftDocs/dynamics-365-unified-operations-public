@@ -2359,14 +2359,12 @@ items:
           href: copilot/extend-copilot-generative-help.md
         - name: Enable enhanced user feedback for Copilot and related experiences
           href: copilot/enable-copilot-feedback.md
-      - name: Extending Copilot capabilities in finance and operations apps
+      - name: Building Copilot and agent capabilities
         items:
         - name: Overview
           href: copilot/extend-copilot.md
         - name: Architecture of Copilot for finance and operations
           href: copilot/copilot-architecture.md
-        - name: Use Model Context Protocol for finance and operations
-          href: copilot/copilot-mcp.md
         - name: Using application context with Copilot
           href: copilot/copilot-application-context.md
         - name: Create client plugins for Copilot in finance and operations apps
@@ -2377,6 +2375,12 @@ items:
           href: copilot/copilot-attachments.md
         - name: Customize the zero prompt experience (preview)
           href: copilot/copilot-zero-prompt.md
+        - name: MCP for finance and operations apps
+          items:
+          - name: Use Model Context Protocol for finance and operations
+            href: copilot/copilot-mcp.md
+          - name: Build an agent with Dynamics 365 ERP MCP (preview)
+            href: copilot/build-agent-mcp.md
         - name: Tutorials
           items:
           - name: Extend Copilot capabilities with low-code plugins
