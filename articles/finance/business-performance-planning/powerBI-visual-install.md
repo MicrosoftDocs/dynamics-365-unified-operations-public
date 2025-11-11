@@ -2,7 +2,7 @@
 title: Install business performance planning visuals
 description: Learn how to install business performance planning visuals, including prerequisites and a step-by-step process for connecting your data.
 author: ShielaSogge
-ms.author: romainp
+ms.author: romainpham
 ms.topic: install-set-up-deploy
 ms.date: 11/14/2025
 ms.reviewer: twheeloc
@@ -32,8 +32,8 @@ This article describes how to install business performance planning visuals. To 
     > - Use the SQL Server connector to ensure the write back works properly. The Dataverse connector isn’t supported for write-back as it doesn’t expose the logical names required by Business performance planning.
 
 ### Install visuals from Microsoft appsource
-To install visuals from Microsoft appsource, follow these steps:
 
+To install visuals from Microsoft appsource, follow these steps:
 1. Open Power BI, and select the workspace or report where you intend to configure the visual.
 2. In the Visualizations pane, select the ellipsis (⋯) > Get more visuals.
 3. Search for Business performance planning.
@@ -49,7 +49,7 @@ To install visuals from Microsoft appsource, follow these steps:
 5. Select **Add**. The visuals appear in the Power BI Visualizations pane.
 
 >[!TIP]
->Always install visuals directly from Microsoft AppSource to ensure you’re using the latest certified version with SSO and write-back support.   
+> Always install visuals directly from Microsoft AppSource to ensure you’re using the latest certified version with SSO and write-back support.   
     
 ## Connect Power BI to your Dataverse data
 
@@ -85,9 +85,9 @@ To select SQL Server as a data source, follow these steps.
 - The names of planning cube tables have the "msdyn\_xpnacube" prefix, and the names of planning dimension tables have the "msdyn\_xpnadim" prefix. Use these prefixes to search for the cube or dimensions when you connect via SQL Server and Direct Query.
 - After the cube is selected on the **Navigator** page, select **Select related tables** to automatically load data relationships between the cube and the dimension into Power BI.
 
-After the data is loaded, select Transform Data in Power BI to review and optimize your model.
+After the data is loaded, select **Transform data** in Power BI to review and optimize your model.
 
- - Import only the required columns - To improve performance and simplify modeling, import only the columns that will be used for your drivers and relationships.
+ - Import only the required columns - To improve performance and simplify modeling, import only the columns that are used for your drivers and relationships.
         - From the cube table (msdyn_xpnacube_) - Keep only driver columns following the pattern: msdyn_<drivername>. For example, msdyn_Amount, msdyn_Quantity.
         - Keep only the dimension link columns used to relate the cube to each dimension: msdyn_xpnadim_<dimensionname>name. For example: msdyn_xpnadim_Accountname, msdyn_xpnadim_CostCentername.
         - Don't select columns named msdyn_xpnadim_<dimensionname> without the name suffix — these are internal Dataverse ID columns, not the values stored in your dimension table.
@@ -96,10 +96,10 @@ After the data is loaded, select Transform Data in Power BI to review and optimi
 
  - Validate relationships
 Ensure Power BI automatically creates relationships between: - msdyn_xpnadim_<dimensionname>name (in the cube table), and - msdyn_name (in the corresponding dimension table).
-If not, create these relationships manually in Model view.
+If not, create these relationships manually in **Model** view.
 
  - Performance tip
-Reducing unused columns and removing unnecessary system tables significantly improves model performance — especially in DirectQuery mode — and ensures faster refreshes and write-back operations.
+Reducing unused columns and removing unnecessary system tables significantly improves model performance, especially in DirectQuery mode, and ensures faster refreshes and write-back operations.
 
 ### Configure the visual
 To configure the Business performance planning visual, follow these steps:
@@ -108,7 +108,7 @@ To configure the Business performance planning visual, follow these steps:
 3. Expand the **API details** section and enter:
  - **API base URL** - The environment URL where Business performance planning is installed.
  - Example: https://contoso.crm.dynamics.com
- - **Cube name** - The name of your planning cube (optional if pre-configured).
+ - **Cube name** - The name of your planning cube (optional if preconfigured).
 4. **Save** and refresh the report. When configured correctly, the visual connects automatically and displays your cube data.
 
 > [!NOTE]
@@ -156,6 +156,6 @@ Resolution: - Confirm the API base URL matches your environment (for example, ht
 > [!TIP]
 > Most setup issues are resolved by validating three key settings:
 > 1. Server name syntax (no www or /)
-> 2. Active Power BI token (re-authenticate if expired)
+> 2. Active Power BI token (reauthenticate if expired)
 > 3. Correct API URL and cube name in the visual configuration
 
