@@ -116,7 +116,7 @@ If you feel that the operation is executing for an unusual amount of time, conta
 
 ### How do I check circularity in BOM journals?
 
-Navigate to *Inventory Management* > *Setup* > *Inventory and warehouse management parameters* > *Bill of materials*. Enter the required values in *Level of circularity* and *Circularity check strategy*. The *Circularity check strategy* option works in conjunction with the *Level of circularity* option, so the first thing to look at is selection made for the *Level of Circularity* option.  
+Navigate to **Inventory Management** > **Setup** > **Inventory and warehouse management parameters** > **Bill of materials**. Enter the required values in **Level of circularity** and **Circularity check strategy**. The **Circularity check strategy** option works in conjunction with the **Level of circularity** option, so the first thing to look at is selection made for the **Level of Circularity** option.  
 
 The **Level of circularity** field has three options: *Never*, *BOM*, and *Line*. This setting determines when the system checks for circularity in BOM structures. A circular BOM exists when an item is defined as a component of itself within a BOM structure. A BOM is considered circular regardless of whether it is a first-level component or a lower-level component in the BOM structure that is referenced.
 
