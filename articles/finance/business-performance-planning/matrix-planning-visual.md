@@ -1,8 +1,17 @@
 ---
 title: Matrix planning visual performance considerations
 description: Learn the capabilities, how to use and configure the Matrix planning visual in Business Performance Planning.
-author: romainpham
-
+ms.author: romainpham
+author: ShielaSogge
+ms.author: twheeloc
+ms.topic: article
+ms.date: 12/07/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2023-12-03
+ms.search.form: 
+ms.dyn365.ops.version:
 ---
 
 # Matrix planning visual performance considerations
@@ -109,3 +118,4 @@ If users experience slow rendering or timeout issues:
 - [Matrix planning visual overview](matrix-planning.md)  
 - [Graphical planning visual](graphical-planning.md)  
 - [Write-back and allocation in BPP](write-back.md)
+
