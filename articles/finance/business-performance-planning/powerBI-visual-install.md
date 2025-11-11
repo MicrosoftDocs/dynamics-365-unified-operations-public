@@ -88,14 +88,14 @@ To select SQL Server as a data source, follow these steps.
 After the data is loaded, select **Transform data** in Power BI to review and optimize your model.
 
  - Import only the required columns - To improve performance and simplify modeling, import only the columns that are used for your drivers and relationships.
-        - From the cube table (msdyn_xpnacube_) - Keep only driver columns following the pattern: msdyn_<drivername>. For example, msdyn_Amount, msdyn_Quantity.
-        - Keep only the dimension link columns used to relate the cube to each dimension: msdyn_xpnadim_<dimensionname>name. For example: msdyn_xpnadim_Accountname, msdyn_xpnadim_CostCentername.
-        - Don't select columns named msdyn_xpnadim_<dimensionname> without the name suffix — these are internal Dataverse ID columns, not the values stored in your dimension table.
+        - From the cube table (msdyn_xpnacube_) - Keep only driver columns following the pattern: msdyn_\<drivername>\. For example, msdyn_Amount, msdyn_Quantity.
+        - Keep only the dimension link columns used to relate the cube to each dimension: msdyn_xpnadim_\<dimensionname>\. For example: msdyn_xpnadim_Accountname, msdyn_xpnadim_CostCentername.
+        - Don't select columns named msdyn_xpnadim_\<dimensionname>\ without the name suffix — these are internal Dataverse ID columns, not the values stored in your dimension table.
         - From each dimension table (msdyn_xpnadim_*) - Keep the following key columns: - msdyn_name: the primary ID of the dimension, used to link to the cube table.
-        - Additional descriptive columns following the pattern msdyn_<dimensionname> (for example, msdyn_AccountCategory, msdyn_CostCenterGroup).
+        - Additional descriptive columns following the pattern msdyn_\<dimensionname>\ (for example, msdyn_AccountCategory, msdyn_CostCenterGroup).
 
  - Validate relationships
-Ensure Power BI automatically creates relationships between: - msdyn_xpnadim_<dimensionname>name (in the cube table), and - msdyn_name (in the corresponding dimension table).
+Ensure Power BI automatically creates relationships between: - msdyn_xpnadim_\<dimensionname>\name (in the cube table), and - msdyn_name (in the corresponding dimension table).
 If not, create these relationships manually in **Model** view.
 
  - Performance tip
