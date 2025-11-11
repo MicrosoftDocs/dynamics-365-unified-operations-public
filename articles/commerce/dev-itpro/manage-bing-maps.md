@@ -20,7 +20,9 @@ ms.custom:
 Learn how you can manage Bing Maps for your application. When Bing Maps is turned on, people can view a map of a store, warehouse, or other location when creating orders. 
 
 > [!IMPORTANT]
-> Bing Maps for Enterprise is deprecated and slated for retirement. Customers with an enterprise license can continue to use Bing Maps for Enterprise until **June 30th, 2028**, and customers on the free and basic license for Bing Maps for Enterprise can continue to use Bing Maps for Enterprise until **June 30th, 2025**. For more information about the Bing Maps for Enterprise deprecation, see [Has Bing Maps for Enterprise been deprecated?](https://www.microsoft.com/en-us/maps/bing-maps/discontinued-services?msockid=0f45df6be4b865532bd6cc06e57f64a1). Microsoft plans to add support for Azure Maps to Dynamics 365 Commerce in upcoming releases.
+> Bing Maps for Enterprise is deprecated and slated for retirement. Customers with an enterprise license can continue to use Bing Maps for Enterprise until **June 30th, 2028**, and customers on the free and basic license for Bing Maps for Enterprise can continue to use Bing Maps for Enterprise until **June 30th, 2025**. For more information about the Bing Maps for Enterprise deprecation, see [Has Bing Maps for Enterprise been deprecated?](https://www.microsoft.com/en-us/maps/bing-maps/discontinued-services?msockid=0f45df6be4b865532bd6cc06e57f64a1).
+>
+> Dynamics 365 Commerce now **supports Azure Maps** in place of Bing Maps. To learn more, visit [Manage Azure Maps for your organization](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/manage-azure-maps)
 
 ## Enable Bing Maps
 
