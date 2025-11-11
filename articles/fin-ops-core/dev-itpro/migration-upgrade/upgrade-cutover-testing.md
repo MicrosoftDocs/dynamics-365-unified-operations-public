@@ -4,7 +4,7 @@ description: Learn about how to test the cutover process between turning off a M
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: upgrade-and-migration-article
-ms.date: 08/27/2021
+ms.date: 11/11/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -22,15 +22,15 @@ ms.dyn365.ops.version: Platform update 8
 
 There are three main workstreams during a cutover:
 
-- **Technical workstream** – This workstream includes the data upgrade execution process. Your business will enforce a limit on the amount of downtime that is allowed. During this downtime, neither AX 2012 nor finance and operations will be available. This workstream might have to tune the data upgrade procedure to meet the business's downtime limit.
+- **Technical workstream** – This workstream includes the data upgrade execution process. Your business enforces a limit on the amount of downtime that is allowed. During this downtime, neither AX 2012 nor finance and operations is available. This workstream might have to tune the data upgrade procedure to meet the business's downtime limit.
 - **Functional workstream** – This workstream includes the configuration tasks that are performed after the data upgrade is completed. All these tasks must be documented and quantified, and a resource must be assigned, because both the functional workstream and the technical workstream must fit within the business's downtime limit.
-- **AX 2012 rollback** - This workstream includes rolling back to an AX 2012 environment. Although it's unlikely that you will have to roll back, it's very important that you have a tested process in case you require it.
+- **AX 2012 rollback** - This workstream includes rolling back to an AX 2012 environment. Although it's unlikely that you have to roll back, it's important that you have a tested process in case you require it.
 
-The following illustration shows the overall process for cutover to go-live as it will occur in the production environment.
+The following illustration shows the overall process for cutover to go-live as it occurs in the production environment.
 
-![Cutover process](./media/cutover-selfservice_01.png)
+:::image type="content" source="./media/cutover-selfservice_01.png" alt-text="Screenshot of Cutover process.":::
 
-The mock cutover process is very similar to data upgrade validation in a sandbox environment. We assume that you are familiar with that process, and have already performed it. Mock cutover differs in the following ways:
+The mock cutover process is similar to data upgrade validation in a sandbox environment. We assume that you're familiar with that process, and have already performed it. Mock cutover differs in the following ways:
 
 - After you perform a data upgrade in the sandbox environment, see the instructions in [Self-service database refresh](../database/database-refresh.md#self-service-database-refresh) to copy your upgraded database from the data upgrade sandbox environment into your production environment. 
 
@@ -63,7 +63,7 @@ Typically, functional tasks involve changing the values of specific system param
 
 Larger changes might require that a new custom data upgrade script be written to update the data during the data upgrade process. However, the functional resource can manually run smaller changes through the new system after data upgrade.
 
-Larger changes that have new data upgrade scripts must be tested. Therefore, one or more additional iterations of the MajorVersionDataUpgrade.zip package will have to be run. It's important that you weigh the cost of running the package again against the cost of manual data entry.
+Larger changes that have new data upgrade scripts must be tested. Therefore, one or more iterations of the MajorVersionDataUpgrade.zip package will have to be run. It's important that you weigh the cost of running the package again against the cost of manual data entry.
 
 For each manual change, a task must be added to the cutover plan document. This task must show the following details:
 
@@ -76,7 +76,7 @@ When you have fully configured your environment, add users, and perform appropri
 
 ## Roll back to AX 2012
 
-The goal of this task is to restore the database by using the backup that was made when AX 2012 was turned off, and then turn AX 2012 back on. The state of integrated systems might also have to be restored. However, because integrated systems vary from business to business, you must plan for this scenario independently, based on your specific circumstances. Although it's unlikely that you will have to roll back, it's very important that you have a tested process in case you require it.
+The goal of this task is to restore the database by using the backup that was made when AX 2012 was turned off, and then turn AX 2012 back on. The state of integrated systems might also have to be restored. However, because integrated systems vary from business to business, you must plan for this scenario independently, based on your specific circumstances. Although it's unlikely that you have to roll back, it's important that you have a tested process in case you require it.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

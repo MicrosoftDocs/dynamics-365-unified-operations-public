@@ -4,7 +4,7 @@ description: Learn about using the Support tool to on Microsoft Dynamics Lifecyc
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 02/16/2021
+ms.date: 11/11/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -19,96 +19,96 @@ ms.custom: sfi-image-nochange
 
 
 ## Open a new incident
-1. In LCS, go to the project for which you want to file a support incident. 
+1. In Lifecycle Services, go to the project for which you want to file a support incident. 
 
-2. Click the **Support** tile.
+1. Select the **Support** tile.
 
-   ![Support menu.](media/CPS1.png)
+   :::image type="content" source="media/CPS1.png" alt-text="Screenshot of Support menu.":::
 
-3. On the **Submitted to Microsoft** tab, click the **Submit an incident** button.
+1. On the **Submitted to Microsoft** tab, select the **Submit an incident** button.
 
-   ![Support button.](media/CPS2.png)
+   :::image type="content" source="media/CPS2.png" alt-text="Screenshot of Support button.":::
 
-4. Select an issue category.
+1. Select an issue category.
 
-5. Select an issue area.
+1. Select an issue area.
 
-6. In the **Describe your issue** area, enter the following:
+1. In the **Describe your issue** area, enter the following information:
 
    - Select **Yes** if the issue occurred in an environment. Select the environment name.  
    - Enter a short description of your issue in the **Title** field.
-   - Provide details about the issue detail and the steps needed to reproduce the error.
+   - Provide details about the issue and the steps needed to reproduce the error.
    - If applicable, enter an error message. 
-   - If possible, attach screenshots that illustrate the problem. To do this, click **Attach file from computer**.
+   - If possible, attach screenshots that illustrate the problem. To do this, select **Attach file from computer**.
  
  
    > [!NOTE]
-   > When you create an incident, Issue search will populate the top 10 "Possible issue solutions" search results based on the your selection and input, and dynamically refresh these results as more details are provided during support case creation. 
+   > When you create an incident, Issue search populates the top 10 "Possible issue solutions" search results based on your selection and input, and dynamically refreshes these results as you provide more details during support case creation. 
    > 
-   > Standalone Issue search is still accessible using the drop-down menu if you need to search for more solutions. 
+   > You can still access standalone Issue search by using the drop-down menu if you need to search for more solutions. 
  
-7. Enter the primary contact information. These contact details will be used by the customer support team to contact you about the case.
+1. Enter the primary contact information. The customer support team uses these contact details to contact you about the case.
 
-8. Select the support contract and the severity level. 
+1. Select the support contract and the severity level. 
     
    - Support contracts for on-premises environments have a limited incident count. 
    - Support contracts for cloud environments have an unlimited incident count. 
-   - For on-premises products or cloud environments, from the list of available support contracts, select the support option to use if you have multiple tier support contracts. 
+   - For on-premises products or cloud environments, select the support option to use if you have multiple tier support contracts. 
   
-9. Click **Submit**. 
+1. Select **Submit**. 
 
-After you click **Submit**, an incident is created and added to the **Incidents** list. You will receive an email message from the Microsoft Support Engineer assigned to your case. 
+After you select **Submit**, an incident is created and added to the **Incidents** list. You receive an email message from the Microsoft Support Engineer assigned to your case. 
 
 
 ## Support plans in Lifecycle Services
-Support plan entitlements are derived based on several different identifiers. Not all will apply to your situation. If you are missing a support plan or entitlement in LCS, determine which identifier is needed to tie it to your project in LCS. If there is more than one organization, note which one is current by clicking on your name in the upper-right corner of LCS. Select the organization that applies to your scenario and contains the benefits that you want to utilize.
+Support plan entitlements are based on several different identifiers. Not all identifiers apply to your situation. If you're missing a support plan or entitlement in Lifecycle Services, determine which identifier you need to tie it to your project in Lifecycle Services. If there's more than one organization, note which one is current by selecting your name in the upper-right corner of Lifecycle Services. Select the organization that applies to your scenario and contains the benefits that you want to use.
 
 ### Unique contract ID/access ID
-The following online support plans require a unique contract ID/access ID combination linked to your sign-in in LCS:
+The following online support plans require a unique contract ID/access ID combination linked to your sign-in in Lifecycle Services:
 
 -   Unified
 -   Premier
 -   Advanced support for partners
 
-If you do not know your unique contract ID/access ID combination, contact your Microsoft account manager to have an ID created for you.
+If you don't know your unique contract ID/access ID combination, contact your Microsoft account manager to have an ID created for you.
 
 To link your contract ID/access ID to your account, complete the following steps:
 
-1. From within a project, select **Support** from the main menu, and then select **Manage Support plans**. 
-2. Select **Add contract**.
+1. From within a project, select **Support** from the main menu, then select **Manage Support plans**. 
+1. Select **Add contract**.
 
-   ![Add contract.](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
+   :::image type="content" source="media/56c7bfd469f6d850d456e9e7a89e0d8d.png" alt-text="Screenshot of Add contract.":::
 
-3. Enter your access ID and your password or contract ID, and then select **Add contract**.
+1. Enter your access ID and your password or contract ID, then select **Add contract**.
 
-   ![Add contract credentials.](media/4abba1127549ef484a58daf51609d924.png)
+   :::image type="content" source="media/4abba1127549ef484a58daf51609d924.png" alt-text="Screenshot of Add contract credentials.":::
 
 ### PartnerSource Business Center account
-The following support plan incidents can be used as part of your PartnerSource Business Center (PSBC) account if they exist: 
+You can use the following support plan incidents as part of your PartnerSource Business Center (PSBC) account if they exist: 
 
 > [!NOTE]
-> No online support plans can be utilized through the PSBC account.
+> You can't use online support plans through the PSBC account.
 
 -   Advanced support for partners on-premises incidents.
 -   Advantage or Advantage + on-premises incidents.
 -   Other pay per incident types of plans with an existing incident count in PSBC.
 
-If you do not find the PartnerSource Business Center account, ensure that your sign in is added as a professional in your organization in PSBC. Make sure that you are signing in with the same Microsoft or work account login. This account is only applicable in an on-premises project.
+If you don't find the PartnerSource Business Center account, make sure that your sign in is added as a professional in your organization in PSBC. Make sure that you're signing in with the same Microsoft or work account authentication. This account is only applicable in an on-premises project.
 
-![Add contract.](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
+:::image type="content" source="media/56c7bfd469f6d850d456e9e7a89e0d8d.png" alt-text="Screenshot of Add contract.":::
 
 ### Sign-in specific options
-The following incidents and support benefits will appear based on your sign in, if applicable:
+The following incidents and support benefits appear based on your sign in, if applicable:
 
 -   MPN gold and silver incidents.
 -   Signature cloud support.
--   Individual incidents and 5 packs purchased on [support.microsoft.com/supportforbusiness]. 
+-   Individual incidents and five packs purchased on [support.microsoft.com/supportforbusiness]. 
 
    > [!NOTE]
-   > Incidents must be purchased with a Microsoft account such as \@hotmail.com or \@outlook.com. Work or Microsoft Entra accounts cannot have incidents tied to them.
+   > You must purchase incidents with a Microsoft account such as \@hotmail.com or \@outlook.com. Work or Microsoft Entra accounts can't have incidents tied to them.
 
 ### Tenant subscription
-The following entitlements will appear based on your subscription and ProDirect
+The following entitlements appear based on your subscription and ProDirect
 purchases within your tenant organization:
 
 -   Subscription
@@ -119,15 +119,15 @@ The following entitlements can be added by linking a subscription number and con
 
 -   Software assurance
 
-To add, select **Add a Software Assurance plan** when you create the support incident. Enter the subscription number and the contact email, and then click **Continue**.
+To add these entitlements, select **Add a Software Assurance plan** when you create the support incident. Enter the subscription number and the contact email, then select **Continue**.
 
-![Software Assurance plan.](media/cd8f65a32c30722ea687dfbc5cc30874.png)
+:::image type="content" source="media/cd8f65a32c30722ea687dfbc5cc30874.png" alt-text="Screenshot of Software Assurance plan.":::
    
 ## Report production outage
-For a quick and effective way to escalate issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable, see [Report a production outage](report-production-outage.md).
+For a quick and effective way to escalate issues to Microsoft Support when the services in a production environment are degraded or become unavailable, see [Report a production outage](report-production-outage.md).
 
 ## Phone support
-We prefer that you contact Support following the steps in [Open a new incident](cloud-powered-support-lcs.md#open-a-new-incident). If you're unable to open a new incident in LCS, phone support is available using [Premier phone support](https://support.microsoft.com/premier/contacts).
+Contact Support by following the steps in [Open a new incident](cloud-powered-support-lcs.md#open-a-new-incident). If you're unable to open a new incident in Lifecycle Services, phone support is available through [Premier phone support](https://support.microsoft.com/premier/contacts).
 
 
 
