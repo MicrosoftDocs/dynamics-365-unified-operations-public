@@ -438,10 +438,10 @@ It might be possible to add additional tables for master company data sharing po
 | WorkCalendarTable                    | Calendar                                   |
 | WrkCtrPropertyLine                   | Property                                   |
 
-Additional Supply Chain Management tables when the (Private Preview) cross-company data sharing for products feature is enabled.
+Additional Supply Chain Management tables when the *Cross-company data sharing for products* feature is enabled.
 
 >[!NOTE]
-> The following tables can be added to a master company data sharing policy but are only supported when the “Cross-company data sharing for products” feature is enabled, which is currently in Private Preview.
+> The following tables can be added to a master company data sharing policy but are only supported when the *Cross-company data sharing for products* feature is enabled.
 
 | **Table name**                            | **Table description (Label)**                  |
 |-------------------------------------------|------------------------------------------------|

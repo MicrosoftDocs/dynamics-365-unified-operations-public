@@ -95,7 +95,7 @@ Before Business performance analytics can be installed, confirm the users are en
 4. Select **Edit**, and then select **Enabled**.
 5. Select **Save**.
 
-#### Required configurations in Dynamics 365 Finance
+### Required configurations in Dynamics 365 Finance
 
 Before you install Business performance analytics, the following setup is required in Dynamics 365 Finance:
 

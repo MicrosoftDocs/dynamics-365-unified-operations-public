@@ -14,7 +14,6 @@ ms.custom:
 # Onboard vendors
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 New vendors can be onboarded and registered as vendors in Microsoft Dynamics 365 Supply Chain Management, based on information that is collected from a person who represents the vendor.
 
@@ -26,6 +25,9 @@ The process consists of the following steps, where various roles perform actions
 4. **Vendor registration wizard** – The vendor's contact person signs in by using the new user account. They complete a vendor registration wizard to provide information such as addresses, business information, procurement categories, and questionnaire responses.
 5. **Approval workflow** – A vendor request that includes the registration information is created. This vendor request is submitted to a workflow, and is routed for review and approval.
 6. **Creation of a vendor master and user role modification** – When the vendor request is approved, a vendor record is created. The user account of the vendor's contact person is either granted permission to vendor collaboration or deactivated.
+
+> [!TIP]  
+> If you have a vendor user that's having trouble accessing the vendor collaboration interface after being removed and then reonboarded, you can get troubleshooting advice in [Vendors can't access the Vendor Collaboration Portal (VCP) after reonboarding](/troubleshoot/dynamics-365/supply-chain/procurement/vendor-unable-to-access-vendor-collaboration-portal).
 
 The following table shows the steps and roles that are involved in the process.
 

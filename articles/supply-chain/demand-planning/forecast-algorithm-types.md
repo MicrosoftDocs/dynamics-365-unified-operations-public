@@ -3,7 +3,7 @@ title: Demand forecasting algorithms
 description: Learn how each of the available forecasting algorithms works in Demand planning. In addition, learn about each algorithm's suitability for different types of historical demand data.
 author: AndersEvenGirke
 ms.author: aevengir
-ms.topic: how-to
+ms.topic: concept-article
 ms.date: 11/29/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
@@ -19,7 +19,7 @@ Demand planning in Microsoft Dynamics 365 Supply Chain Management includes four 
 - Auto-ARIMA is suited for *stationary data*. Stationary data is data that has constant mean, constant standard deviation, and no seasonality.
 - Error, trend, and seasonality (ETS) excels if your business case is simple and the data has various patterns, such linear or exponential trends, *or* if you want the forecast to give more weight to the most recent data.
 - Prophet works best with complex, real-world data.
-- eXtreme Gradient Boosting (XGBoost) can generate a forecast based on two inputs.
+- eXtreme Gradient Boosting (XGBoost) can generate a forecast based on multiple inputs.
 
 In addition, Demand planning provides a *best fit model* algorithm, which automatically selects the best of the available algorithms for each product and dimension combination. Demand planning also lets you develop and use your own custom algorithms.
 
@@ -29,7 +29,7 @@ This article describes how each algorithm works and its suitability for differen
 
 ## When to use each forecasting algorithm
 
-The demand forecasting algorithm that you should use depends on the specific characteristics of your historical data. The following table shows which single-input forecasting algorithms are best suited to each of several different business scenarios. XGBoost is excluded from this table, because it's always used for multi-input forecasting. For most other scenarios, the best fit model algorithm is recommended, because it automatically selects the correct forecasting algorithm for each product and dimension combination.
+The demand forecasting algorithm that you use depends on the specific characteristics of your historical data. The following table shows which single-input forecasting algorithms are best suited to each of several different business scenarios. XGBoost is excluded from this table, because it's always used for multi-input forecasting. For most other scenarios, use the best fit model algorithm, because it automatically selects the correct forecasting algorithm for each product and dimension combination.
 
 | Scenario | Auto-ARIMA | ETS | Prophet |
 |---|---|---|---|
@@ -43,7 +43,9 @@ The demand forecasting algorithm that you should use depends on the specific cha
 
 ## Best fit model algorithm
 
-The best fit model algorithm automatically determines which of the other available single-input algorithms (auto-ARIMA, ETS, or Prophet) best fits your data for each product and dimension combination. In this way, different models can be used for different products. In most cases, we recommend that you use the best fit model, because it combines the strengths of all the other standard models. The following example shows how.
+The best fit model algorithm automatically determines which of the other available single-input algorithms (auto-ARIMA, ETS, or Prophet) best fits your data for each product and dimension combination. In this way, you can use different models for different products. In most cases, use the best fit model, because it combines the strengths of all the other standard models. The following example shows how.
+
+### Example of how the best fit model algorithm works
 
 For this example, you have historical demand time series data that includes the following dimension combinations.
 
@@ -81,7 +83,7 @@ When you run a forecast calculation by using the best fit model, the system opti
 | B | 1 | 0.65 | 0.09 | 0.21 | Auto-ARIMA | 0.09 |
 | B | 2 | 0.10 | 0.27 | 0.31 | Prophet | 0.10 |
 
-The following chart shows the overall sales forecast across all dimensions (all products in all stores) over the next nine months, found by using three different forecast models. The green line represents the best fit model. Because the best fit model selects the best forecast model for each product and dimension combination, it avoids the outliers that can occur if a single model if used for all dimension combinations. As a result, the overall best fit forecast resembles an average of the single-model forecasts.
+The following chart shows the overall sales forecast across all dimensions (all products in all stores) over the next nine months, found by using three different forecast models. The green line represents the best fit model. Because the best fit model selects the best forecast model for each product and dimension combination, it avoids the outliers that can occur if a single model is used for all dimension combinations. As a result, the overall best fit forecast resembles an average of the single-model forecasts.
 
 :::image type="content" source="media/forecast-model-compare-graph.png" alt-text="Chart that shows forecast results from three different forecast models, based on the same historical data":::
 
@@ -91,11 +93,26 @@ Legend:
 - **Blue** – ETS only.
 - **Green** – Best fit.
 
+### Best fit model versions
+
+The best fit model algorithm is available in several versions, as described in the following table. Usually, you should use the newest version that's available, but to ensure that all of your existing forecast models continue to work, the older versions remain available and supported until further notice. To use one of these algorithms, select the appropriate version in the [configuration settings](design-forecast-models.md) for the *Forecast* step in your forecast model.
+
+| Name | Version required | Description |
+|--|--|--|
+| Best fit model - version 1  | Demand planning version 1.0.0.1067 or higher | Works as described in this section |
+| Best fit model - version 2 (preview)  | Demand planning version 1.0.0.3424 or higher | Same as version 1, but with the following changes: <ul><li>Adds support for [Naive forecasting](naive-forecast-algorithm.md) as a way to handle low-data scenarios.</li><li>Data used for training and testing models is limited to values from before the forecast start date.</li></ul> |
+| Best fit model - version 3 (preview)  | Demand planning version 1.1.0.4 or higher | Same as version 2, but adds support for the [Croston's method](croston-method.md) for forecasting based on intermittent demand (which is demand data with many zero-demand periods and occasional non-zero demands). |
+
+> [!IMPORTANT]
+>
+> - *Best fit model - version 2* and *Best fit model - version 3* are preview features.
+> - Preview features aren't meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
+
 ## Auto-ARIMA: The time traveler's delight
 
 The auto-ARIMA algorithm is like a time machine. It takes you on a journey through past demand patterns so that you can make informed predictions about the future.
 
-Auto-ARIMA uses a technique that is known as ARIMA. The name ARIMA is an abbreviation for the three key components that the technique combines:
+Auto-ARIMA uses a technique that's known as ARIMA. The name ARIMA is an abbreviation for the three key components that the technique combines:
 
 - *AR* is short for "auto regressive." This component regresses the time series on its own previous values. It captures the influence of past values on the current value. 
 - *I* is short for "integrated." This component, which is also known as *differencing*, is a step that the model takes to morph a nonstationary time series into stationary data.
@@ -109,13 +126,13 @@ The auto-ARIMA algorithm automatically identifies the best combination of the th
 1. Find correlation between lagged data points.
 1. Calculate moving average error.
 
-Auto-ARIMA works especially well with time series data that shows a stable pattern over time, such as seasonal fluctuations or trends. If your historical demand follows a reasonably consistent path, you might prefer to use auto-ARIMA as your forecasting method. 
+Auto-ARIMA works especially well with time series data that shows a stable pattern over time, such as seasonal fluctuations or trends. If your historical demand follows a reasonably consistent path, you might prefer to use auto-ARIMA as your forecasting method.
 
 ### Auto-ARIMA algorithm equations
 
 #### Auto regressive calculation
 
-The AR component applies the following equation:
+The AR component uses the following equation:
 
 Y(t) = c &plus; ɸ1Y(t&minus;1) &plus; ɸ2Y(t&minus;2) &plus; &hellip; &plus; ɸpY(t&minus;p) &plus; ϵ(t)
 
@@ -128,7 +145,7 @@ Key:
 
 #### Moving average calculation
 
-The MA component applies the following equation:
+The MA component uses the following equation:
 
 Y(t) = c &plus; ϵ(t) &plus; ϴ1ϵ(t&minus;1) &plus; ϴ2ϵ(t&minus;2) &plus; &hellip; &plus; ϴqϵ(t&minus;q)
 
@@ -147,7 +164,7 @@ ARIMA = AR &plus; MA (after differencing the time series)
 
 ## ETS: The shape-shifter
 
-ETS is a versatile demand forecasting algorithm that adapts to the shape of your data. It can change its approach based on the characteristics of your historical demand. Therefore, it's suitable for a wide range of scenarios.
+ETS is a versatile demand forecasting algorithm that adapts to the shape of your data. It changes its approach based on the characteristics of your historical demand. Therefore, it's suitable for a wide range of scenarios.
 
 The name ETS is an abbreviation for the three essential components that the algorithm decomposes the time series data into:
 
@@ -157,24 +174,24 @@ The name ETS is an abbreviation for the three essential components that the algo
 
 By understanding and modeling these components, ETS generates forecasts that capture the underlying patterns in your data.
 
-ETS forecasts future data points by applying varying weights to different observations. More recent data points carry more weight than older ones. ETS can also decompose the time series into error, trend, and seasonality components. (The error comes from noise and fluctuations in the time series.) ETS uses the seasonal period parameter that the user sets as a seasonal index, estimates the trend in the upcoming horizon, and tries multiple values to determine what fits. Finally, it forecasts the error and combines it with the estimated trend and seasonality components.
+ETS forecasts future data points by applying varying weights to different observations. More recent data points carry more weight than older ones. ETS can also decompose the time series into error, trend, and seasonality components. (The error comes from noise and fluctuations in the time series.) ETS uses the seasonal period parameter that you set as a seasonal index, estimates the trend in the upcoming horizon, and tries multiple values to determine what fits. Finally, it forecasts the error and combines it with the estimated trend and seasonality components.
 
 Demand planning in Supply Chain Management determines which "flavor" of ETS is most suitable for each time series and applies it accordingly.
 
-Here is a step-by-step explanation of the algorithm:
+Here's a step-by-step explanation of the algorithm:
 
-1. **Decompose components.** The time series is broken down into the three components: error (E), trend (T), and seasonality (S).
-2. **Select models for the components.** Each component follows an *additive* model:
+1. **Decompose components.** Break down the time series into the three components: error (E), trend (T), and seasonality (S).
+1. **Select models for the components.** Each component follows an *additive* model:
 
     *ETS(A,A,A)* – Additive error, additive trend, additive seasonality.
 
-3. **Specify the initial states.** Initial values for the *level*, *trend*, and *seasonality* states of the model are calculated to start the recursive update process. The *level* is the baseline forecast, which is updated as the model is trained.
-4. **Update the states.** As new data points arrive, the states of the model (*level*, *trend*, and *seasonality*) are updated by using weighted smoothing equations.
-5. **Forecast.** Future values are predicted by combining the most recent estimates of the *level*, *trend*, and *seasonality*.
+1. **Specify the initial states.** Calculate initial values for the *level*, *trend*, and *seasonality* states of the model to start the recursive update process. The *level* is the baseline forecast, which the model updates as it trains.
+1. **Update the states.** As new data points arrive, update the states of the model (*level*, *trend*, and *seasonality*) by using weighted smoothing equations.
+1. **Forecast.** Predict future values by combining the most recent estimates of the *level*, *trend*, and *seasonality*.
 
 ### ETS algorithm equation
 
-The ETS algorithm applies the following equation:
+The ETS algorithm uses the following equation:
 
 F(t&plus;1) = αA(t) &plus; \[1&minus;α\]F(t)
 
@@ -202,26 +219,26 @@ The Prophet algorithm follows these steps to generate forecasts:
 
 ### Prophet algorithm equation
 
-The Prophet algorithm applies the following equation:
+The Prophet algorithm uses the following equation:
 
 y(t) = g(t) &plus; s(t) &plus; h(t) &plus; ϵ(t)
 
 Key:
 
-- *g(t)* – A value that captures the nonperiodic trend changes over time. It's calculated by using a piecewise linear trend equation.
-- *s(t)* – A value that represents recurring seasonality patterns (for example, daily, weekly, or yearly). It's modeled by using Fourier series.
-- *h(t)* – A value that accounts for known, irregular effects that are caused by holidays or special events. It treats these effects as additional regressors that allow for flexibility in the modeling of special events.
+- *g(t)* – A value that captures the nonperiodic trend changes over time. The algorithm calculates this value by using a piecewise linear trend equation.
+- *s(t)* – A value that represents recurring seasonality patterns, such as daily, weekly, or yearly patterns. The algorithm models this value by using Fourier series.
+- *h(t)* – A value that accounts for known, irregular effects caused by holidays or special events. The algorithm treats these effects as additional regressors, which provide flexibility in modeling special events.
 - *ϵ(t)* – Random noise or unexplained variability.
 
 ## XGBoost
 
-Unlike the other algorithms that this article describes, eXtreme Gradient Boosting (XGBoost) can generate a forecast based on two inputs. It's currently the only algorithm that you can use with the *Forecast with signals* [forecast model](design-forecast-models.md) step in Demand planning. In addition, it's supported only by that type of step. Learn more about how to set up forecast models that use XGBoost and signals input in [Forecast with signals](forecasts-with-signals.md).
+Unlike the other algorithms described in this article, eXtreme Gradient Boosting (XGBoost) generates a forecast based on multiple inputs. It's currently the only algorithm you can use with the *Forecast with signals* [forecast model](design-forecast-models.md) step in Demand planning. In addition, only that type of step supports it. Learn more about how to set up forecast models that use XGBoost and signals input in [Forecast with signals](forecasts-with-signals.md).
 
 XGBoost is a highly efficient and scalable implementation of gradient boosting. It builds an ensemble of decision trees to make predictions. The following subsections break down each of the components.
 
 ### Decision trees
 
-A *decision tree* is a machine learning model that splits data into subsets based on signals values (also known as *dimensions* or *features*) and forms a tree-like structure. The following example shows sales based on weather data.
+A *decision tree* is a machine learning model that splits data into subsets based on signal values (also known as *dimensions* or *features*) and forms a tree-like structure. The following example shows sales based on weather data.
 
 ```plaintext
                           [Is temp > 25°C?]
@@ -262,19 +279,19 @@ This decision tree progresses in the following way:
 
 ### Ensemble learning
 
-*Ensemble learning* is a machine learning approach that combines multiple models (often referred to as *weak learners*) to make predictions. The idea is that the combined output of many models is often more accurate and robust than any single model.
+*Ensemble learning* is a machine learning approach that combines multiple models (often called *weak learners*) to make predictions. The combined output of many models is often more accurate and robust than any single model.
 
 One type of ensemble learning is known as *boosting*. In this approach, models are built sequentially, and each model corrects the errors of the previous one.
 
 ### Gradient boosting
 
-*Gradient boosting* is a powerful machine learning technique that is used for both regression (which is the case here) and classification problems. An ensemble of weak models (typically decision trees) is built sequentially, and each model focuses on reducing the errors (*residuals*) that the previous models made.
+*Gradient boosting* is a powerful machine learning technique that you can use for both regression (which is the case here) and classification problems. It builds an ensemble of weak models (typically decision trees) sequentially, and each model focuses on reducing the errors (*residuals*) that the previous models made.
 
-Gradient boosting is effective at capturing complex relationships between signals (also known as *exogenous variables*) and the input data (also known as the *target variable*). It also provides better predictive performance than other methods.
+Gradient boosting effectively captures complex relationships between signals (also known as *exogenous variables*) and the input data (also known as the *target variable*). It also provides better predictive performance than other methods.
 
 ### How the XGBoost algorithm works
 
-XGBoost is a highly efficient and scalable implementation of gradient boosting. It builds an ensemble of decision trees to make predictions. Here is a step-by-step explanation of how it works:
+XGBoost is a highly efficient and scalable implementation of gradient boosting. It builds an ensemble of decision trees to make predictions. Here's a step-by-step explanation of how it works:
 
 1. Initialize predictions.
 
@@ -284,7 +301,7 @@ XGBoost is a highly efficient and scalable implementation of gradient boosting. 
 1. Calculate residuals (gradients).
 
     - **Task** – Compute the residuals or gradients, which represent the difference between the predicted and actual values.
-    - **Purpose** – These residuals serve as the error signal that the model will try to minimize.
+    - **Purpose** – These residuals serve as the error signal that the model tries to minimize.
 
 1. Fit a decision tree.
 
@@ -317,7 +334,7 @@ XGBoost is a highly efficient and scalable implementation of gradient boosting. 
     - **Stopping criteria**
 
         - A fixed number of trees are implemented in the algorithm of the Demand planning app.
-        - There is no significant improvement in the loss function (*convergence*).
+        - There's no significant improvement in the loss function (*convergence*).
 
 1. Combine trees for the final prediction.
 

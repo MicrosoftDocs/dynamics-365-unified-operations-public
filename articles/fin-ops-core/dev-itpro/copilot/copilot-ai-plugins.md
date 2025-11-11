@@ -7,7 +7,7 @@ ms.reviewer: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/20/2025
+ms.date: 10/08/2025
 
 ---
 
@@ -149,8 +149,6 @@ After you create and deploy the classes and security objects, you can verify the
 - It has an associated action menu item that is included in a security privilege that is assigned to a duty/role.
 
 > [!NOTE]
-> In earlier releases the **Dataverse Custom APIs** page had a **Synchronize** action to automatically create the related Dataverse objects for the custom API. This action was removed in preview to improve solution awareness and management of the Dataverse objects. These objects must now be manually created, as outlined in the following steps. 
->
 > After deploying the new classes to your environment, you need to ensure the extension cache is flushed before the new classes can be invoked. Flushing the cache is done as part of database synchronization, or by running the `SysFlushAOD` class in your environment. Run `SysFlushAOD` by adding the class runner to your environment URL:
 >
 > `https://<environment>.operations.dynamics.com/?cmp=usmf&mi=SysClassRunner&cls=SysFlushAOD`
@@ -279,8 +277,5 @@ Learn more in [Call an existing tool from within a topic](/microsoft-copilot-stu
 #### Let generative AI orchestrate copilot topics and actions
 
 When you enable generative AI orchestration in an agent, Copilot Studio uses generative AI to determine the user's intent. It then uses generative AI to identify the most appropriate action, topic, or combination of actions and topics that should be invoked to respond to the user prompt or autonomous trigger. In this case, you don't have to create a separate topic to invoke the tool. Learn more about generative mode in [Orchestrate agent behavior with generative AI](/microsoft-copilot-studio/advanced-generative-actions).
-
-> [!IMPORTANT]
-> Generative mode isn't currently supported by Copilot for finance and operations apps. It becomes supported and enabled by default in Copilot for finance and operations apps in a future release, as feature and quality benchmarks are validated.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

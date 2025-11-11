@@ -2,11 +2,11 @@
 title: Set up sales tax authorities
 description: Sales tax authorities are entities to which collected sales tax needs to be reported and paid, including a step-by-step process.
 author: twheeloc
-ms.author: kfend
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:
-ms.reviewer: kfend   
+ms.reviewer: twheeloc   
 audience: Application User  
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30

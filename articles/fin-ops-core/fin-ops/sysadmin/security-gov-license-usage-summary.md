@@ -1,6 +1,6 @@
 ---
-title: User security governance license usage summary (preview)
-description: Learn about the user security governance license usage summary report that is in preview for Dynamics 365 finance and operations apps.
+title: User security governance license usage summary
+description: Learn about the user security governance license usage summary report.
 author: ceian  
 ms.author: ceian
 ms.topic: concept-article
@@ -14,14 +14,11 @@ ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm,
 ms.dyn365.ops.version: Version 7.0.0
 ---
 
-# Understand the User license summary (Preview) in User security governance
+# Understand the User license summary in User security governance
 
-[!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 If you're unfamiliar with how Dynamics 365 licenses work or want to review the licensing model, see [Dynamics 365 Licensing Resources](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all) for the most up-to-date details on licensing.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 The **User license summary** page in the **User security governance** workspace helps administrators understand how security roles and respective permissions define the license requirements across their Dynamics 365 finance and operations environment.
 

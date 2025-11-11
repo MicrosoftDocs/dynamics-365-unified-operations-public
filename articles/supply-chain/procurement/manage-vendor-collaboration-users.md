@@ -14,9 +14,8 @@ ms.custom:
 # Manage vendor collaboration users
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
-This article describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
+This article describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts.
 
 The vendor collaboration interface in Dynamics 365 Supply Chain Management exposes information about purchase orders, invoices, and consignment stock to external vendors. You can create new vendor collaboration contacts and request that new users are provisioned if you're working as an external vendor with the **Vendor admin (external)** security role, or similar permissions. You can also perform these tasks if you're working as a procurement professional. In this article, this role refers to a procurement professional who is working within the company that owns the instance of Supply Chain Management. For more information about how to use vendor collaboration if you're an external vendor, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 

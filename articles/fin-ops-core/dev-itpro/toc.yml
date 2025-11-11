@@ -15,14 +15,14 @@ items:
         items:
         - name: What's new or changed in Platform updates home page
           href: ../fin-ops/get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.46 (October 2025)
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-46.md
         - name: Platform updates for version 10.0.45 (September 2025)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-45.md
         - name: Platform updates for version 10.0.44 (April 2025)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-44.md
         - name: Platform updates for version 10.0.43 (January 2025)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-43.md
-        - name: Platform updates for version 10.0.42 (December 2024)
-          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-42.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -493,7 +493,7 @@ items:
             href: deployment/on-premises-overview.md
           - name: Plan and prepare for on-premises deployments
             href: deployment/plan-onprem-deployment.md
-          - name: On-premises supported software
+          - name: Supported software
             href: deployment/onprem-compatibility.md
           - name: Hardware sizing requirements
             href: get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
@@ -1873,7 +1873,7 @@ items:
           items:
             - name: User security governance overview
               href: ../fin-ops/sysadmin/security-gov-overview.md
-            - name: License usage summary report (preview)
+            - name: License usage summary report
               href: ../fin-ops/sysadmin/security-gov-license-usage-summary.md
             - name: Set up security categories
               href: ../fin-ops/sysadmin/security-category.md
@@ -1911,8 +1911,12 @@ items:
           href: sysadmin/extensible-data-security-policies.md
         - name: Create a security policy
           href: sysadmin/create-simple-security-policy.md
-      - name: Stay compliant with user licensing requirements
-        href: sysadmin/stay-compliant-user-license-requirement.md
+      - name: Compliance
+        items:
+        - name: Stay compliant with user licensing requirements
+          href: sysadmin/stay-compliant-user-license-requirement.md
+        - name: Prepare for User validation
+          href: sysadmin/prepare-for-user-validation.md
       - name: View independent software vendor license status
         href: sysadmin/view-isv-license-status.md
       - name: Process automation
@@ -2369,14 +2373,24 @@ items:
           href: copilot/copilot-client-plugins.md
         - name: Create AI tools with finance and operations business logic (preview)
           href: copilot/copilot-ai-plugins.md
+        - name: Extend attachments with Copilot
+          href: copilot/copilot-attachments.md
+        - name: Customize the zero prompt experience (preview)
+          href: copilot/copilot-zero-prompt.md
         - name: Tutorials
           items:
-          - name: Extending Copilot capabilities with low-code plugins
+          - name: Extend Copilot capabilities with low-code plugins
             href: copilot/tutorial-create-low-code-plugins.md
           - name: Create client plugins for Copilot in finance and operations apps
             href: copilot/tutorial-create-client-plugins.md
           - name: Create AI tools with finance and operations business logic
             href: copilot/tutorial-create-ai-plugins.md
+          - name: Trigger autonomous agents with business events
+            href: copilot/tutorial-agent-triggers.md
+          - name: Add knowledge to agents
+            href: copilot/tutorial-agent-knowledge.md
+          - name: Enable agent data operations with connectors
+            href: copilot/tutorial-agent-connector.md
     - name: Responsible AI
       items:
       - name: Overview

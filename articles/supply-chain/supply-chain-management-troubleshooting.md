@@ -14,7 +14,6 @@ ms.search.form:
 # Supply Chain Management troubleshooting and FAQs
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../includes/azure-ad-to-microsoft-entra-id.md)]
 
 ## Troubleshooting articles
 

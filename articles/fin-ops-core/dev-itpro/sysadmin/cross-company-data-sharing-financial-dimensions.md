@@ -1,11 +1,11 @@
 ---
 title: Cross-company data sharing for financial dimensions
 description: Learn about cross-company data sharing for financial dimensions.
-author: rcarlson
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 11/12/2024
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2024-11-11
 ms.search.form: SysDataSharingConfiguration

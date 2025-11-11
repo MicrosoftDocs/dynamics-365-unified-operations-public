@@ -118,9 +118,9 @@ Follow these steps to create a quality association:
         - *Create item sampling work only* – Uses a minimal quality process that creates quality item sampling work but doesn't create quality orders or inventory blocking. This option only applies when the **Applicable warehouse type** is set to *Quality order for warehouse processes only*.
 
 1. On the **Specifications** FastTab, make the following settings:
-    - **Test group** – Select a test group with tests defined for acceptance sampling. Learn more in [Acceptance sampling (preview)](quality-acceptance-sampling.md)
-    - **Item sampling** – Select an item sampling defined for acceptance sampling. Learn more in [Acceptance sampling (preview)](quality-acceptance-sampling.md)
-    - **Acceptable quality level** – Choose the acceptable quality level (AQL) to be used for the quality association. The AQL determines whether the quality order passes or fails validation. <!-- KFM: Maybe improve this. Is this specific for acceptance sampling? -->
+    - **Test group** – Select a test group with tests defined for acceptance sampling or sample management. Learn more in [Acceptance sampling (preview)](quality-acceptance-sampling.md) and [Enable and configure sample management (preview)](quality-sample-management-admin.md).
+    - **Item sampling** – Select an item sampling defined for acceptance sampling or sample management. Learn more in [Acceptance sampling (preview)](quality-acceptance-sampling.md) and [Enable and configure sample management (preview)](quality-sample-management-admin.md).
+    - **Acceptable quality level** – Choose the acceptable quality level (AQL) to be used for the quality association. The AQL determines whether the quality order passes or fails validation.
     - **Flexible sampling** – Choose whether to use the flexible sampling plans as part of this quality association.
     - **Flexible sampling plan code** – If **Flexible sampling** is set to *Yes*, then select a flexible sampling plan code.
     - **Effective** – Select the date on which this quality association becomes effective.
@@ -131,7 +131,7 @@ Follow these steps to create a quality association:
 
 ## Quality associations and flexible sampling plans
 
-Instead of selecting a fixed test group and item sampling, you can set up a *flexible sampling plan*. A flexible sampling plan is a test strategy where you can change both the test and sample sizes over time, based on successful test validation. To use flexible sampling, on the **Specification** FastTab, select **Flexible sampling**. Then, in the **Flexible sampling plan code** field, select the code for a flexible sampling plan. Learn more in [Flexible sampling plans (preview)](quality-flexible-sampling-plans.md).
+Instead of selecting a fixed test group and item sampling, you can set up a *flexible sampling plan*. A flexible sampling plan is a test strategy where you can change both the test and sample sizes over time, based on successful test validation. To use flexible sampling, on the **Specification** FastTab, select **Flexible sampling**. Then, in the **Flexible sampling plan code** field, select the code for a flexible sampling plan. Learn more in [Flexible sampling plans](quality-flexible-sampling-plans.md).
 
 ## Examples of automatic generation of quality orders
 

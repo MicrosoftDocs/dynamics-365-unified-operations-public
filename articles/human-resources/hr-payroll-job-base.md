@@ -3,7 +3,7 @@
 
 title: Job base entity
 description: This article provides details and an example query for the Job base entity in Microsoft Dynamics 365 Human Resources.
-author: jcart
+author: twheeloc
 ms.date: 04/04/2024
 ms.topic: how-to
 
@@ -17,7 +17,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: twheeloc
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---

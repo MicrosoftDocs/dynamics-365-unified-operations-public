@@ -27,10 +27,10 @@ Before you can generate and print IGV withholding tax reports, the following pre
 - You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - You must download the following formats:
 
-    - Last twelve months (LTM) Tax Report mapping
-    - LTM Tax Report
-    - Withholdings (PER) (text)
-    - Withholdings (PER) (Excel)
+    - :::no-loc text="Tax Report mapping":::
+    - :::no-loc text="LTM Tax Report":::
+    - :::no-loc text="Withholdings (PER) (text)":::
+    - :::no-loc text="Withholdings (PER) (Excel)":::
 
 ## Additional configuration required for the IGV withholding tax report
 

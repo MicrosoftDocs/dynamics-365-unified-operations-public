@@ -56,34 +56,7 @@ To add product dimensions:
 
 ### Step 3: Generate product variants
 
-> [!NOTE]
-> This section describes how to generate product variants when the *Variant suggestions page improvements* feature isn't enabled. See the next section for details about how to generate product variants when that feature is available.
-
-To generate product variants:
-
-1. With your new product master still open, select **Product variants** on the Action Pane.
-1. Select **Variant suggestions** on the Action Pane.
-1. The system generates a list with all possible combinations of the sizes and colors you defined for the product. Select **Select all** on the toolbar.
-    - In this example, select all of the possible variants. If you only want to use a subset of the possible product dimension combinations, select only the required check boxes as needed.  
-1. Select **Create**.
-1. Select **Save**.
-
-## Improved variant suggestions
-
-The *Variant suggestions page improvements* feature improves the **Variant suggestions** page to address performance and usability issues for companies that have a high number of product dimension combinations. The enhanced process for selecting the product dimension values for which to generate variant suggestions makes it faster and easier to identify and release the relevant set of product variants.
-
-The following improvements are added by this feature:
-
-- **Deferred generation of variant suggestions** – The **Variant suggestions** page no longer shows suggestions when you first open it. Instead, you must explicitly choose which values you'll need and then select the **Suggest** button to generate the combinations. This makes the process more visible and interactive.
-- **Selection of dimensions values** – When you have many dimension values, you're typically interested in generating variant suggestions that include just a few of them (such as when introducing a new set of colors or styles). With the improved design, you can select the dimension values for which you want to generate product variant suggestions. This greatly increases the relevance of the suggested variants and improves both system performance and user productivity.
-
-### Turn the Variant suggestions page improvements feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Variant suggestions page improvements* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
-### Work with the improved variant suggestions
-
-To generate product variant suggestions when the *Variant suggestions page improvements* feature is enabled:
+To generate product variants based on suggestions, follow these steps:
 
 1. Open or create a product master and add the required product dimensions to it, as described in the previous section.
 1. With the product master open, select **Product variants** on the Action Pane.

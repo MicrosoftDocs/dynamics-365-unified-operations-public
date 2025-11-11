@@ -15,12 +15,11 @@ ms.custom:
 # Install and set up Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
 
 > [!TIP]
-> If you're a feature consultant or solution consultant, we recommend that you join the [Inventory Visibility Add-in Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=46697168896), where you can read about the latest developments, exchange tips with other consultants and developers, and discuss features.
+> If you're a feature consultant or solution consultant, we recommend that you join the [D365 SCM Inventory Management and Inventory Visibility](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc3NDgxNTg0NjQifQ) community on Microsoft Viva Engage, where you can read about the latest developments, exchange tips with other consultants and developers, and discuss features.
 >
 > For useful code samples and troubleshooting guides, visit the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples).
 >

@@ -22,11 +22,11 @@ Yes, source code will be available after the hard seal. It's required for effect
 
 ## How do I contact Microsoft if I have an extensibility request?
 
-There is a special extensibility request form on the Lifecycle Services (LCS) site. 
+There is a special extensibility request form on the Lifecycle Services (LCS) site.
 
 ## Where can I ask questions about extensibility patterns?
 
-You can gain access to the Operations Extensibility group in Yammer. Operations Extensibility is an active group that has a significant amount of partner engagement. You get access via the Connect site by signing an NDA.
+You can gain access to the Operations Extensibility group on Microsoft Viva Engage. Operations Extensibility is an active group that has a significant amount of partner engagement. You get access via the Connect site by signing an NDA.
 
 ## Where can I find documentation about extensibility patterns?
 
@@ -34,7 +34,7 @@ Documentation about extensibility patterns is available on the [Extensibility ho
 
 ## Where can I get information about extensibility training?
 
-We will announce training sessions in multiple ways. AppSource partners might receive direct invitations for some sessions. We will also announce workshops in the Operations Extensibility Yammer group and other forums.  
+We will announce training sessions in multiple ways. AppSource partners might receive direct invitations for some sessions. We will also announce workshops in the Operations Extensibility group on Microsoft Viva Engage and other forums.  
 
 ## What is the goal of sealing the application?
 
@@ -44,7 +44,7 @@ Extension packages enable better performance at design time, faster build automa
 
 ## What is Microsoft working on to support this move?
 
-There are several areas where the product team is working to improve the extensibility of the product. This work ranges from platform changes that have broad impact to refactored application code that provides additional hook points. For details, see the Operations Extensibility Yammer group and the product release plans.
+There are several areas where the product team is working to improve the extensibility of the product. This work ranges from platform changes that have broad impact to refactored application code that provides additional hook points. For details, see the Operations Extensibility group on Microsoft Viva Engage and the product release plans.
 
 ## After the application is sealed, what should customers do in a critical situation if they must make a quick change?
 
@@ -52,12 +52,12 @@ This scenario is very similar to a scenario where a critical bug fix is required
 
 ## Can I overlayer an ISV solution after the hard seal of the application code?
 
-We recommend that ISVs also seal their models. This step helps achieve the broader goal of reducing upgrade costs. 
+We recommend that ISVs also seal their models. This step helps achieve the broader goal of reducing upgrade costs.
 
 ## Will I be able to overlayer an on-premises solution?
 
 On-premises solutions will follow the same patterns as cloud solutions. Therefore, no overlayering of Microsoft code will be supported.
-    
+
 ## How often will Microsoft provide external updates so that partners can see what extensibility enhancements have been made?
 
 We plan to provide monthly updates of platform and application after Microsoft Dynamics 365 for Finance and Operations release 8.0.
@@ -69,7 +69,7 @@ Some extensibility requests break changes. Some of the more common potentially b
 ### Why can't EDT.StringSize be made extensible?
 
 - Request: Make EDT.StringSize changeable via extension.
-- Problem: When a table string field (FieldX) is of type “parent EDT" and is associated (through table relations) with another table’s field (FieldY) of type EDT2 (EDT2 is derived from “parent EDT”). If FieldY could have a larger string by allowing EDT2.StringSize to increase, FieldX would not be able to handle the new string size. 
+- Problem: When a table string field (FieldX) is of type “parent EDT" and is associated (through table relations) with another table’s field (FieldY) of type EDT2 (EDT2 is derived from “parent EDT”). If FieldY could have a larger string by allowing EDT2.StringSize to increase, FieldX would not be able to handle the new string size.
 - Workaround: Create a new EDT and use that for the table field FieldY.
 
 ### Why can't a unique table index be made extensible?
@@ -79,24 +79,27 @@ Some extensibility requests break changes. Some of the more common potentially b
 - Workaround: Add "soft" constraints in the validateWrite or validateInsert methods.
 
 ### Why can't CountryRegionCode be made extensible? (*it already is*)
+
 - Request: Make CountryRegionCode changeable via extension.
 - Problem: Starting with Platform update 14, changes to CountryRegionCode are supported if the CountryRegionCode property already has a value. Empty CountryRegionCode properties cannot be changed because that change is more restrictive (the element would now only be available for certain countries/regions) and therefore would be a breaking change.
 - Workaround: Use the existing CountryRegionCode extension capability when the element is already country/region specific.
 
 ### Why can't the Table Field properties AllowEdit, AllowEditOnCreate, Mandatory, or IgnoreEDTRelation be made extensible?
+
 - Request: Make Table Field properties AllowEdit, AllowEditOnCreate, Mandatory, and/or IgnoreEDTRelation changeable via extension.
 - Problem: The ability to change the "Allow Edit", "Allow Edit On Create", "Mandatory", and "IgnoreEDTRelation" properties on Table Fields would result in breaking changes. Changing a field to allow editing changes the intent of the field. Not allowing a field to be edited can break existing behavior. Changing a relation breaks the original intent of that relation, which is a breaking change. Making a field mandatory can result in breaking existing behavior.
 - Workaround: Add new Table Fields via extension and control those as needed.
 
 ### Why can't Security Privileges be made extensible?
+
 - Request: Make Security Privilege changeable via extension.
 - Problem: The ability to change the Security Privilege would result in breaking changes because this is the lowest level of security metadata.
 - Workaround: Create a new Security Privilege if needed and use that.
 
 ### Why should I avoid calling and extending APIs that are marked with InternalUseOnlyAttribute?
+
 Throughout the application, an effort has been made to avoid breaking changes to APIs made by customers, partners, or ISVs. When a class or method has the **InternalUseOnlyAttribute** applied to it, this means that the API is for internal use only and could change without warning. If customers, partners, or ISVs use or extend an API with **InternalUseOnlyAttribute**, this could create issues because the API could change at any time, which would require changes in their extensions before an update can be applied. This could result in urgent changes and the need to recompile. Developers should not depend on these classes and methods remaining unchanged.
 
-Calls to classes and methods with the **InternalUseOnlyAttribute** will result in compiler warnings. Starting in Platform update 20 to Platform update 24, targeting classes and methods with **InternalUseOnlyAttribute** using Chain of Command will result in compiler errors. In Platform update 25 and later, we plan to continue to issue compiler warnings. 
-
+Calls to classes and methods with the **InternalUseOnlyAttribute** will result in compiler warnings. Starting in Platform update 20 to Platform update 24, targeting classes and methods with **InternalUseOnlyAttribute** using Chain of Command will result in compiler errors. In Platform update 25 and later, we plan to continue to issue compiler warnings.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

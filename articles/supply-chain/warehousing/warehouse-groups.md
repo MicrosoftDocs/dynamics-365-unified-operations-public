@@ -19,10 +19,6 @@ Warehouse groups let you establish groups of warehouses that you can associate w
 > - Each warehouse can be assigned to any number of warehouse groups.
 > - Only warehouses that are enabled for advanced warehouse processes (WMS) can be assigned to warehouse groups.
 
-## Prerequisites
-
-This feature requires Supply Chain Management version 10.0.32 or later.
-
 ## Create and manage warehouse groups
 
 To create and manage your warehouse groups, follow these steps.

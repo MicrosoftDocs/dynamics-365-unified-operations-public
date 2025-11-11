@@ -1,8 +1,8 @@
 ---
 title: Dimension Expression Builder subpattern
 description: This article describes the Dimension Expression Builder subpattern, which is applied to container controls that use the Dimension Expression Builder control.  
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.custom: 
   - bap-template

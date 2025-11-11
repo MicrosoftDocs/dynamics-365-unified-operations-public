@@ -4,7 +4,7 @@ description: Learn about how you can use Electronic reporting (ER) labels to des
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 05/31/2022
+ms.date: 10/02/2025
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -178,7 +178,7 @@ ER supports different ways to specify the culture for a generated report. Theref
 > - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
 > - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
 >
-> In version 10.0.20 and later, the locale of format components of the **Common\\File** and **Excel\\File** types is used to format values during [PDF conversion](electronic-reporting-destinations.md#OutputConversionToPDF) of a generated document.
+> In version 10.0.20 and later, the locale of format components of the **Common\\File** and **Excel\\File** types is used to format values during [PDF conversion](er-output-conversion-to-pdf.md) of a generated document.
 
 ## Translation
 

@@ -2,7 +2,7 @@
 title: Service description for finance and operations apps
 description: Learn about the service description for finance and operations apps, including an overview on operating models.
 author: tomhig
-ms.author: whigginb
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 11/06/2023
 ms.reviewer: johnmichalak
@@ -332,8 +332,7 @@ Microsoft is committed to an availability rate of 99.9 percent per month of the 
 ## Important resources
 
 - **[Trust Center](https://www.microsoft.com/trust-center)** – Get information about where your finance and operations data is stored, plus additional information about privacy, compliance, and security procedures.
-- **[Licensing terms and documentation](https://www.microsoftvolumelicensing.com/)** – Quickly access licensing terms, conditions, and supplemental information that is relevant to the use of products and services that are licensed through Microsoft volume licensing programs.
-- **[Licensing terms](https://www.microsoft.com/licensing/product-licensing/)** – The resources on this page define the terms and conditions for the software and online services products that you purchase through Microsoft commercial licensing programs.
+- **[Licensing terms and documentation](https://www.microsoftvolumelicensing.com/)** – Quickly access licensing terms, conditions, and supplemental information that is relevant to the use of products and services that are licensed through Microsoft volume licensing and Microsoft commercial licensing programs.
 - **[Microsoft Lifecycle Policy](/lifecycle/)** – This page provides consistent and predictable guidelines for the availability of support throughout the life of a product.
 - **[Licensing guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** – Use this guide to learn more about how to license Dynamics 365.
 - **[Customer support](https://dynamics.microsoft.com/support/)** – Get industry-leading support for your Dynamics 365 apps.

@@ -26,12 +26,12 @@ To use the Copilot grid cursor, follow these steps:
 
 1. Select the Copilot grid cursor icon to open the **Cell analysis** dialog for your selected cell.
 
-    :::image type="content" source="media/copilot-grid-cursor-info.png" alt-text="The Copilot grid cursor dialog.":::
+    :::image type="content" source="media/copilot-grid-cursor-with-signal.png" alt-text="Screenshot of Copilot grid cursor with signal impact" lightbox="media/copilot-grid-cursor-with-signal.png":::
 
 1. Use the following features of the **Cell analysis** dialog to analyze the selected cell:
 
     - **Summary** – At the top of the dialog, you can see a summary of the cell's value and its history.
-    - **Breakdown** – Select this button to see a graph that shows how the cell's value has been adjusted over time.
+    - **Breakdown** – Select this button to see a graph that shows how the cell's value has been adjusted over time. The previous screenshot shows an example that indicates (from left to right) the baseline value (primary input), the signal impact, manual adjustments, and the current final value of a selected cell.
     - **Adjustment history** – Select this button to see a timeline that lists each time the cell was edited. To read the comments associated with a listed event, select the **Show details** button for the relevant row.
 
 1. When you're done exploring the cell history, select the **Close** button in the upper-right corner of the dialog.

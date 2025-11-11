@@ -4,7 +4,7 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: v-omerorhan
 ms.author: v-omerorhan
 ms.topic: overview
-ms.date: 07/23/2025
+ms.date: 10/09/2025
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye
 ms.search.validFrom: 2025-02-16
@@ -40,7 +40,7 @@ Learn how to configure exchange rate providers, define exchange rate types, and 
 
 ## Use continuous serial numbering of packing slips and invoices
 
-This section provides guidance and reference link on setting up and managing serial numbering for financial and legal documents within Microsoft Dynamics 365 Finance in Türkiye.
+This section provides guidance and reference link on setting up and managing serial numbering for financial and legal documents within Finance in Türkiye.
 
 Learn how to configure number sequences, assign them to documents, and maintain numbering continuity across business processes to support accurate document tracking.
 
@@ -62,6 +62,14 @@ It provides comprehensive guidance on setting up and managing currency conversio
 It covers the necessary configurations and procedures to ensure accurate and compliant financial operations.
 
 - [Use currency conversion](../../localizations/turkiye/emea-tur-currency-conversion.md)
+
+## Use checks and promissory notes
+
+This section provides guidance and a reference link on how to manage commercial payment instruments such as checks and promissory notes in Finance for Türkiye.
+
+Learn how to configure portfolio codes, transaction codes, bank branches, and rediscount accounting, and manage the full lifecycle of checks and promissory notes including issuance, transfer, collection endorsement, and return.
+
+- [Use checks and promissory notes](../../localizations/turkiye/emea-turkiye-checks-and-promissory-notes.md)
 
 ## Generate e-Ledger
 

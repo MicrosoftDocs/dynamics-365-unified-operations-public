@@ -13,7 +13,6 @@ ms.search.form: COOExportControlParameters
 # Enable and configure advanced export management
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 ## Prerequisites
 
