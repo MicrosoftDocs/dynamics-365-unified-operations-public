@@ -4,7 +4,7 @@ description: Learn how to create calculated columns by using formulas in Microso
 author: ShielaSogge
 ms.author: romainpham
 ms.topic: how-to
-ms.date: 06/11/2025
+ms.date: 11/11/2025
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
@@ -12,6 +12,9 @@ ms.search.validFrom: 2023-12-03
 ms.search.form: 
 ms.dyn365.ops.version: 
 ---
+
+> [!NOTE]
+> This article describes the legacy cube creation process, available in Business performance planning versions 1.13 and earlier. Starting in version 1.14, a new experience is available under Cubes (Preview). For the new experience, see Creating cubes (Preview).
 
 # Calculated columns in Dynamics 365 Finance business performance planning
 
