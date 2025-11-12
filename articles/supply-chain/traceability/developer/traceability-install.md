@@ -6,7 +6,7 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 09/06/2024
+ms.date: 11/12/2025
 ms.custom: 
   - bap-template
 ---
@@ -16,7 +16,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article describes how to Install, update, or uninstall the various components of the Traceability Add-in for Dynamics 365 Supply Chain Management.
+This article describes how to install, update, or uninstall the various components of the Traceability Add-in for Dynamics 365 Supply Chain Management.
 
 ## Prerequisites
 
@@ -74,7 +74,7 @@ To install the Traceability app in Power Apps, complete the following steps.
     - **I agree to the terms of service** – Select this checkbox.
 
     > [!NOTE]
-    > If you don't see the **Enter application ID of service** and/or **Enter tenant ID of service** fields, you should contact the Traceability product team at [d365-sct-team@microsoft.com](mailto:d365-sct-team@microsoft.com).
+        > If you don't see the **Enter application ID of service** and/or **Enter tenant ID of service** fields, contact the Traceability product team at [d365-sct-team@microsoft.com](mailto:d365-sct-team@microsoft.com).
 
 1. Select **Install**.
 1. When installation is complete, you should see that an app called *Dynamics 365 Supply Chain Traceability* is shown with a status of *Installed* in the list of **Dynamics 365 apps** for your environment.
@@ -87,16 +87,16 @@ To install the Traceability app in Power Apps, complete the following steps.
 
 ## Update the Traceability app in Power Apps
 
-This section describes how to see when an update of the Traceability app is available and how to apply the update.
+This section describes how to check for updates to the Traceability app and how to apply them.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. On the left navigation pane, select **Environments**.
 1. Open the environment where you want to update the Traceability app.
 1. From the **Resources** tile, select **Dynamics 365 apps**.
-1. Find the app called *Dynamics 365 Supply Chain Traceability* in the list and note its **Status**. If the **Status** is *Installed*, then the app is up to date and you can skip the rest of this procedure. If the **Status**  is *Update available*, continue with this procedure to apply the update.
-1. Select **More application actions** (the **...** button) next to the app name to open a menu and then select **Update**.
+1. Find the app called *Dynamics 365 Supply Chain Traceability* in the list and check its **Status**. If the **Status** is *Installed*, then the app is up to date and you can skip the rest of this procedure. If the **Status** is *Update available*, continue with this procedure to apply the update.
+1. Select **More application actions** (the **...** button) next to the app name to open a menu, then select **Update**.
 1. The **Update Dynamics 365 Supply Chain Traceability** dialog opens. Select **I agree to the terms of service** and then select **Update**.
-1. When the update is complete, you should be able to see that the *Dynamics 365 Supply Chain Traceability* app now shows a **Status** of *Installed*.
+1. When the update is complete, you should see that the *Dynamics 365 Supply Chain Traceability* app now shows a **Status** of *Installed*.
 1. Open the [Power Apps maker portal](https://make.powerapps.com/).
 1. On the left navigation pane, select **Solutions**.
 1. On the **Solutions** page, select **All**.
@@ -116,7 +116,7 @@ To remove the Traceability app from your Power Apps environment, complete the fo
 
 1. Sign in to [Power Platform maker](https://make.powerapps.com/).
 1. On the left navigation pane, select **Solutions**.
-1. The **Solutions** page opens. Open the **Managed** tab
+1. The **Solutions** page opens. Open the **Managed** tab.
 1. Find and delete each of the following solutions. To delete a solution, select the **Commands** button next to its name and then select **Delete**.
     - *Dynamics 365 Supply Chain Traceability anchor solution*
     - *Dynamics 365 Supply Chain Traceability portal solution*
