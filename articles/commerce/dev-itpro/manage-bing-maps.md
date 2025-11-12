@@ -2,7 +2,7 @@
 title: Manage Bing Maps for your organization
 description: This article describes how to manage Bing Maps for your application.
 author: ShalabhjainMSFT
-ms.date: 02/27/2025
+ms.date: 11/15/2025
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -20,22 +20,24 @@ ms.custom:
 Learn how you can manage Bing Maps for your application. When Bing Maps is turned on, people can view a map of a store, warehouse, or other location when creating orders. 
 
 > [!IMPORTANT]
-> Bing Maps for Enterprise is deprecated and slated for retirement. Customers with an enterprise license can continue to use Bing Maps for Enterprise until **June 30th, 2028**, and customers on the free and basic license for Bing Maps for Enterprise can continue to use Bing Maps for Enterprise until **June 30th, 2025**. For more information about the Bing Maps for Enterprise deprecation, see [Has Bing Maps for Enterprise been deprecated?](https://www.microsoft.com/en-us/maps/bing-maps/discontinued-services?msockid=0f45df6be4b865532bd6cc06e57f64a1).
->
-> Dynamics 365 Commerce now **supports Azure Maps** in place of Bing Maps. To learn more, visit [Manage Azure Maps for your organization](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/manage-azure-maps)
+> - Bing Maps for Enterprise is deprecated and slated for retirement. Customers with an enterprise license can continue to use Bing Maps for Enterprise until **June 30th, 2028**, and customers on the free and basic license for Bing Maps for Enterprise can continue to use Bing Maps for Enterprise until **June 30th, 2025**. For more information about the Bing Maps for Enterprise deprecation, see [Has Bing Maps for Enterprise been deprecated?](https://www.microsoft.com/en-us/maps/bing-maps/discontinued-services?msockid=0f45df6be4b865532bd6cc06e57f64a1).
+> - Dynamics 365 Commerce now supports Azure Maps in place of Bing Maps. Learn more in [Manage Azure Maps for your organization](manage-azure-maps.md).
 
 ## Enable Bing Maps
 
+To enable Bing Maps, follow these steps.
+
 1. Go to **Commerce shared Parameters \> Bing Maps**.
-2. Select **Enable Bing Maps** to turn on Bing Maps functionality.
+1. Select **Enable Bing Maps** to turn on Bing Maps functionality.
 
 ## Enter a Bing Maps key
 
-Go to the [Bing Maps licensing page](https://go.microsoft.com/fwlink/p/?LinkID=390116) for details about how to
-obtain a key.
+Go to the [Bing Maps licensing page](https://go.microsoft.com/fwlink/p/?LinkID=390116) for details about how to obtain a key.
+
+To enter a Bing Maps key, follow these steps.
 
 1. Go to **Commerce shared Parameters \> Bing Maps**.
-2. Enter the license key in the **Bing Maps Key** field.
+1. Enter the license key in the **Bing Maps Key** field.
 
 ## Privacy notice
 
