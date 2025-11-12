@@ -1,38 +1,36 @@
 ---
 title: Create a cube from JSON (Preview)
-description: Learn how to create planning cubes by importing a JSON cube schema using the Data Model Builder (Preview) experience in Business Performance Planning.
-author: romainpham
+description: Learn how to create planning cubes by importing a JSON cube schema using the Data model builder (Preview) experience in Business performance planning.
+author: ShielaSogge
 ms.author: romainpham
 ms.topic: how-to
-ms.date: 10/23/2025
-ms.reviewer: tammywheelock
+ms.date: 11/14/2025
+ms.reviewer: twheeloc
 ms.collection: get-started
 ---
 
 # Create a cube from JSON (Preview)
 
 > [!IMPORTANT]
-> This article describes the **Data Model Builder (Preview)** experience, available under **Cubes (Preview)** in the **Business Performance Planning** navigation pane.  
+> This article describes the **Data Model Builder (Preview)** experience, available under **Cubes (Preview)** in the **Business performance planning** navigation pane.  
 > The existing **Cubes** page remains available for backward compatibility until migration to the new experience is complete.  
 > To use the classic cube creation flow, see [Create a cube (Classic)](create-cubes.md).
 
----
 
 ## Overview
 
 The **Create cube from JSON (Preview)** feature allows you to import a complete cube definition—including facts, dimensions, relationships, and drivers—from a preconfigured JSON file.  
-This option is ideal for partners, consultants, or administrators who need to **deploy or migrate predefined planning models** across Business Performance Planning (BPP) environments.
+This option is ideal for partners, consultants, or administrators who need to **deploy or migrate predefined planning models** across Business performance planning environments.
 
 Unlike the Excel or dimension-based workflows, the JSON import defines the entire cube schema in a single step—making it especially efficient for template deployment or environment setup.
 
 > [!TIP]
-> If you're new to cubes, facts, dimensions, or drivers, see [Key concepts in cube design](creating-cubes-preview.md#key-concepts) for an overview of how cubes are structured and used in Business Performance Planning.
+> If you're new to cubes, facts, dimensions, or drivers, see [Key concepts in cube design](creating-cubes-preview.md#key-concepts) for an overview of how cubes are structured and used in Business performance planning.
 
----
 
-## Create a cube from JSON
+### Create a cube from JSON
 
-### Step 1: Choose data source
+1: Choose data source
 
 From **Model > Cubes (Preview)**, select **+ New cube**.  
 In the **Data source** step, choose **Import cube (JSON)**.
@@ -42,13 +40,11 @@ This option lets you:
 - Deploy standardized planning templates across tenants or environments.  
 - Restore cubes from backup configurations.
 
----
-
 ### Step 2: Upload JSON file
 
 Upload your JSON file by dragging it into the upload box or selecting **Browse files**.
 
-After upload, BPP validates the file and checks that it contains a valid cube structure—including:
+After upload, Business performance planning validates the file and checks that it contains a valid cube structure—including:
 - One **fact table** definition  
 - One or more **dimension definitions**  
 - Relationship mappings  
@@ -61,7 +57,6 @@ After upload, BPP validates the file and checks that it contains a valid cube st
 
 Once validated, a live preview of your cube model appears on the right-hand pane.
 
----
 
 ### Step 3: Review imported structure
 
@@ -74,21 +69,20 @@ It displays:
 - Dimensions and detected relationships  
 
 At this stage, the only editable property is the **cube name**.  
-All other elements—drivers, relationships, and dimensions—are imported directly from the JSON file and cannot be modified until the cube is created in draft mode.
+All other elements—drivers, relationships, and dimensions—are imported directly from the JSON file and can't be modified until the cube is created in draft mode.
 
 > [!TIP]
 > If validation errors appear, check that all referenced dimensions exist in your environment or update the JSON to use valid dimension names.
 
----
 
 ### Step 4: Create draft cube
 
 Select **Create** to generate the cube in **Draft** mode.  
-In the **Data Model View**, you can now edit the structure just like with other creation methods:
+In the **Data model view**, you can now edit the structure just like with other creation methods:
 
 - Rename cube
 - Rename, add or delete drivers  
-- Rename, add or delete dimensions (from existing BPP dimensions, Excel files, or manually created dimensions)  
+- Rename, add or delete dimensions (from existing Business performance planning dimensions, Excel files, or manually created dimensions)  
 - Enable or disable features under **Properties > Advanced**, including:  
   - **Audit**, which tracks write-back and user changes  
   - **Non-Clustered Columnstore Index (NCCI)**, which improves performance for large datasets  
@@ -116,7 +110,6 @@ Once published, you can:
 > [!IMPORTANT]
 > Computed columns and data import become available only **after the cube has been published**.
 
----
 
 ## Example JSON file
 
@@ -182,25 +175,26 @@ Here’s a valid example of a cube definition JSON file that can be imported thr
 
 ## Known limitations (Preview)
 
-The following limitations currently apply to the Data Model Builder (Cube Preview) experience:
+The following limitations currently apply to the Data model builder (preview) experience:
 
-- **Published dimensions can’t be modified directly in the Cube (Preview) interface.**  
-  After a cube is published, you can’t add or remove columns within a dimension from the Cube (Preview) workspace.
+- **Published dimensions can’t be modified directly in the Cube (preview) interface.**  
+  After a cube is published, you can’t add or remove columns within a dimension from the Cube (preview) workspace.
 
-- **Changes made to dimensions outside the Cube (Preview) experience aren’t reflected in the model view.**  
-  If you update a dimension—for example, by adding or deleting columns—in the **Dimensions** area of the Business Performance Planning app or in the **Power Apps maker portal**, those updates won’t currently appear in the Cube (Preview) visual interface.
+- **Changes made to dimensions outside the Cube (preview) experience aren’t reflected in the model view.**  
+  If you update a dimension, for example, by adding or deleting columns—in the **Dimensions** area of the Business performance planning app or in the **Power Apps maker portal**, those updates won’t currently appear in the Cube (preview) visual interface.
 
-  However, these changes **are still applied at the Dataverse level**.  
-  This means the updated structure and data **remain available in Power BI and Excel** reports connected to the same environment.
+However, these changes are still applied at the Dataverse level.  
+This means the updated structure and data remain available in Power BI and Excel reports connected to the same environment.
 
 > [!NOTE]
-> This limitation will be removed in an upcoming release. Future versions of the Data Model Builder will reflect dimension updates automatically in the Cube (Preview) interface.
+> This limitation will be removed in an upcoming release. Future versions of the Data model builder will reflect dimension updates automatically in the Cube (preview) interface.
 
 ---
 
 ## Next steps
 
-- [Create a cube from Excel (Preview)](create-cube-from-excel-preview.md)  
-- [Create a cube from JSON (Preview)](create-cube-from-json-preview.md)  
+- [Create a cube from Excel (preview)](create-cube-from-excel-preview.md)  
+- [Create a cube from JSON (preview)](create-cube-from-json-preview.md)  
 - [Load data using dataflows](load-data-into-bpp-using-dataflows.md)  
 - [Create calculated columns](create-calculated-columns.md)
+
