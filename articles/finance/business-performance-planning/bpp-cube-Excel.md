@@ -1,11 +1,11 @@
 ---
 title: Create a cube from Excel (Preview)
-description: Learn how to create planning cubes in Business Performance Planning by importing Excel files using the Data Model Builder (Preview) experience.
+description: Learn how to create planning cubes in Business performance planning by importing Excel files using the Data Model Builder (Preview) experience.
 author: romainpham
 ms.author: romainpham
 ms.topic: how-to
-ms.date: 10/23/2025
-ms.reviewer: tammywheelock
+ms.date: 11/23/2025
+ms.reviewer: twheeloc
 ms.collection: get-started
 ---
 
@@ -184,4 +184,5 @@ The following limitations currently apply to the Data Model Builder Create a cub
 - [Create a cube from existing dimensions (Preview)](create-cube-from-existing-dimensions-preview.md)  
 - [Create a cube from JSON (Preview)](create-cube-from-json-preview.md)  
 - [Load data using dataflows](load-data-into-bpp-using-dataflows.md)  
+
 - [Create calculated columns](create-calculated-columns.md)
