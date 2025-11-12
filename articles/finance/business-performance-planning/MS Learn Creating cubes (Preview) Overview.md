@@ -4,8 +4,8 @@ description: Learn how to create planning cubes using the new Data Model Builder
 author: romainpham
 ms.author: romainpham
 ms.topic: overview
-ms.date: 10/23/2025
-ms.reviewer: tammywheelock
+ms.date: 11/23/2025
+ms.reviewer: theeloc
 ms.collection: get-started
 ---
 
@@ -104,3 +104,4 @@ The following limitations apply to the current Cube (Preview) experience:
 - [Create a cube from JSON (Preview)](create-cube-from-json-preview.md)  
 - [Load data using dataflows](load-data-into-bpp-using-dataflows.md)  
 - [Create calculated columns](create-calculated-columns.md)
+
