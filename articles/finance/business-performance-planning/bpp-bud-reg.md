@@ -2,7 +2,15 @@
 title: Set up Finance & Operations user roles for BRE write-back
 description: Learn which roles and duties are required in Dynamics 365 Finance for Business Performance Planning to successfully export data to Budget Register Entry.
 author: romainpham
-
+ms.author: romainpham
+ms.topic: install-set-up-deploy
+ms.date: 11/14/2025
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2023-12-03
+ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Set up Finance & Operations user roles for BRE write-back
@@ -61,4 +69,5 @@ After verifying the roles and user configuration:
 - Ensure the **Finance connection variable** and **virtual entities** are correctly configured in Dataverse.  
 - For detailed setup steps, see:  
   ➡️ [Configure the Finance connection and virtual entities for BRE write-back](./configure-finance-connection-virtual-entities.md)
+
 
