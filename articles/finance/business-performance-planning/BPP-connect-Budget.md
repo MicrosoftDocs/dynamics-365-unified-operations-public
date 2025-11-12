@@ -2,6 +2,15 @@
 title: Configure the Finance connection and virtual entities for BRE write-back
 description: Learn how to configure the Finance connection variable and enable required virtual entities for Business Performance Planning write-back to Budget Register Entry.
 author: romainpham
+ms.author: romainpham
+ms.topic: install-set-up-deploy
+ms.date: 11/14/2025
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2023-12-03
+ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Configure the Finance connection and virtual entities for BRE write-back
@@ -88,3 +97,4 @@ After completing setup:
 - [Write back to D365 Finance Budget Register Entry](./write-back-to-bre.md)  
 - [Set up Finance & Operations user roles for BRE write-back](./setup-finance-roles-bre-writeback.md)  
 - [Business Performance Planning overview](https://learn.microsoft.com/en-us/dynamics365/finance/business-performance-planning/overview)
+
