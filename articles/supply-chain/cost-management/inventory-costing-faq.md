@@ -6,7 +6,7 @@ ms.author: prasungoel
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: faq
-ms.date: 07/10/2025
+ms.date: 11/12/2025
 ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
