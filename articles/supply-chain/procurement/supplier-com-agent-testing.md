@@ -19,7 +19,7 @@ ms.custom:
 
 Learn how to test the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management.
 
-The agent has two indepependent features:
+The agent has two independent features:
 
 - *Follow-up with vendors* (writing reminders)
 - *Updates from vendors* (reading vendor emails).
@@ -34,14 +34,14 @@ Use the user interface to [set up the feature](supplier-com-agent-follow-up.md) 
 
 ## Test the "Updates from vendors" (reading emails) feature
 
-This feature needs more setup permissions, test email addresses, and multiple scenarios. Start small and then expand, as described below.
+This feature needs more setup permissions, test email addresses, and multiple scenarios. Start small and then expand, as described in the following subsections.
 
 ### Phase 1: Forward some emails to a testing email address in a sandbox environment
 
-This phase lets you test the smallest possible scope. Regardless of whether you use the purchaser's email when you go to production or use a common mailbox for the purchasing department where the vendors write to, start by using a test email address so you can test without any risk.
+This phase lets you test the smallest possible scope. Start with a test email address so you can test without risk. It doesn’t matter if you plan to use the purchaser’s email in production or a common mailbox for the purchasing department.
 
 - Ask your Microsoft Exchange admin to create the test email address. 
-- Connect that email address to the sandbox environment where you will do the testing.
+- Connect that email address to the sandbox environment where you'll do the testing.
 - Refresh your data (copy production data to the sandbox) or forward older emails so the system can match them.
 - Forward emails in batches—for example, five emails at a time. Check results and note if there's anything unexpected, and continue until you have a good idea of how it performs.
 
@@ -62,7 +62,7 @@ Create an auto-forwarding rule for all vendor emails to the testing address. Inv
 
 Now you're ready for the final test: testing in production. Set up the agent in production using real email addresses. Stop the agent from working in your sandbox.
 
-Testing in production is safe. The feature doesnt interfere with standard business processes. At best, the agent does the work automatically. At worst, if the agent doesn't understand something correctly, the purchaser still needs to do it manually.
+Testing in production is safe. The feature doesn't interfere with standard business processes. At best, the agent does the work automatically. At worst, if the agent doesn't understand something correctly, the purchaser still needs to do it manually.
 
 This is a production-ready preview feature. It has the quality of a generally available (GA) feature and you can go live with it. The reason it's not fully GA is that the agent is under continuous development. We keep it designated as a production-ready preview so we can continue improving it.
 
