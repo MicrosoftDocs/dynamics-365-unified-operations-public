@@ -24,9 +24,7 @@ The agent has two independent features:
 - *Follow-up with vendors* (writing reminders)
 - *Updates from vendors* (reading vendor emails).
 
-Test the feature you need first.
-
-If you plan to use both, start with *Follow-up with vendors* feature because it's easier to set up, configure, and test.
+Test the feature you need first. If you plan to use both, start with *Follow-up with vendors* feature because it's easier to set up, configure, and test.
 
 ## Test the "Follow-up with vendors" (writing reminders) feature
 
@@ -38,7 +36,7 @@ This feature needs more setup permissions, test email addresses, and multiple sc
 
 ### Phase 1: Forward some emails to a testing email address in a sandbox environment
 
-This phase lets you test the smallest possible scope. Start with a test email address so you can test without risk. It doesn’t matter if you plan to use the purchaser’s email in production or a common mailbox for the purchasing department.
+This phase lets you test the smallest possible scope. Start with a test email address so you can test without risk. It doesn’t matter if you plan to use the purchaser's email in production or a common mailbox for the purchasing department.
 
 - Ask your Microsoft Exchange admin to create the test email address.
 - Connect that email address to the sandbox environment where you'll do the testing.
