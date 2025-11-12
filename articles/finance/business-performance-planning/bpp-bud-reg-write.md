@@ -1,7 +1,18 @@
 ---
-title: Write back to D365 Finance Budget Register Entry
+title: Write back to Dynamics 365 Finance Budget Register Entry
 description: Learn how to export finalized budgets and forecasts from Business Performance Planning to Dynamics 365 Finance Budget Register Entry, ensuring governance and accuracy.
 author: romainpham
+ms.author: romainpham
+ms.topic: install-set-up-deploy
+ms.date: 11/14/2025
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2023-12-03
+ms.search.form: 
+ms.dyn365.ops.version: 
+
+
 ---
 
 # Write back to D365 Finance Budget Register Entry
@@ -310,3 +321,4 @@ You can review all previously created exports from the same Planning Cube.
 - [Basic budgeting overview configuration](https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/basic-budgeting-overview-configuration#configuration)  
 - [Create and configure Planning Cubes in BPP](https://learn.microsoft.com/en-us/dynamics365/finance/business-performance-planning/create-cubes)  
 - [Manage security roles and privileges in BPP](https://learn.microsoft.com/en-us/dynamics365/finance/business-performance-planning/bpp-security)
+
