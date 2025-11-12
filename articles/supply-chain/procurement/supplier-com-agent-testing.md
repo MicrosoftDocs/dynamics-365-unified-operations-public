@@ -1,4 +1,4 @@
-﻿---
+---
 title: Test the Supplier Communications Agent (production ready preview)
 description: Learn how to effectively test the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management, ensuring smooth implementation and optimal performance.
 author: t-benebo
@@ -19,11 +19,11 @@ ms.custom:
 
 This article provides advice for how to test the Supplier Communications Agent.
 
-*Follow-up with vendors* (writing reminders) and *Updates from vendors* (reading vendor emails) are independent features. Therefore, it makes sense that you test what you need first.
+The agent has two indepependent features, *Follow-up with vendors* (writing reminders) and *Updates from vendors* (reading vendor emails). Test the feature you need first.
 
-If you would benefit from both features or want to know how they work, start by testing the *follow-up with vendors* feature because it's easier to set up, configure, and test.
+If you plan to use both, start by testing the *follow-up with vendors* feature because it's easier to set up, configure, and test.
 
-## Test the "Follow-up with vendors" (writing reminders) feature first
+## Test the "Follow-up with vendors" (writing reminders) feature
 
 To test this feature, use the user interface to [set up the feature](supplier-com-agent-follow-up.md) to fit your needs and then test to make sure that the emails work as expected.
 
