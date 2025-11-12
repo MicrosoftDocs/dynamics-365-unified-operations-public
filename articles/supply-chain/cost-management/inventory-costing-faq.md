@@ -23,7 +23,7 @@ This article answers some frequently asked questions about inventory costing in 
 
 ### Why is inventory closing required?
 
-The inventory close process matches and settles inventory issue transactions (resulting from sales, production order issue, transfer journals, and other transactions) to their receipt transactions (such as purchase, counting journals, and other transactions). The process uses the inventory valuation method that you define in the item model group and considers the item's active financial product, storage, and tracking dimensions.
+The inventory close process matches and settles inventory issue transactions (resulting from sales, production order issue, transfer journals, and other transactions) to their receipt transactions (such as purchase, counting journals, production receipts, and other transactions). The process uses the inventory valuation method that you define in the item's _item model group_ and considers the item's active financial _product_, _storage_, and _tracking dimensions_.
 
 You perform inventory closing for periodic inventory valuation methods (FIFO, LIFO, Weighted Average, and other methods). It ensures that the financial statements (income statement, balance sheet, trial balance, and other statements) reflect appropriate inventory values and cost of goods sold (COGS) based on all receipts and issues up to the period end.
 
@@ -33,7 +33,7 @@ The frequency of inventory close run varies by company. However, transaction vol
 
 To balance out the transactional load, execute inventory closing regularly, once inventory transactions are finalized for a period, typically at a monthly frequency.  
 
-You must execute inventory closing if you plan to change the valuation model in Item Model Group of an item from periodic to perpetual, or if you plan to archive old inventory transactions.
+You must execute inventory closing if you plan to change the valuation model in _item model group_ of an item from periodic to perpetual, or if you plan to archive old inventory transactions.
 
 ### Why is inventory recalculation required?
 
@@ -51,11 +51,11 @@ The frequency of inventory recalculation execution depends on your business requ
 
 1. Inventory closing closes the period for which you execute it, so you can't post any further transactions in that period. Inventory recalculation doesn't restrict inventory postings for any period.
 
-1. You must execute inventory closing before making any modifications in an item's item model group* and before archiving old transactions. Besides, you should regularly execute inventory closing at periodic intervals to reduce the system load for high transactional volume. Inventory recalculation isn't a mandatory process.  
+1. You must execute inventory closing before making any modifications in an item's _item model group_ and before archiving old transactions. Besides, you should regularly execute inventory closing at periodic intervals to reduce the system load for high transactional volume. Inventory recalculation isn't a mandatory process.  
 
 ### Is it mandatory to execute inventory closing or recalculation?
 
-You must execute inventory closing before making any modifications in an item's item model group and before archiving old inventory transactions. Besides, you should regularly execute inventory closing at periodic intervals to reduce the system load for high transactional volume. Inventory closing closes the settled inventory transactions, thereby excluding the closed transactions from further inventory processes. Inventory recalculation isn't a mandatory process. You can execute it according to your business requirements either daily, weekly, or monthly to adjust the on-hand and inventory transactions for reporting the accurate cost of the items based on the valuation method. We recommend closing your inventory monthly for better performance.
+You must execute inventory closing before making any modifications in an item's _item model group_ and before archiving old inventory transactions. Besides, you should regularly execute inventory closing at periodic intervals to reduce the system load for high transactional volume. Inventory closing closes the settled inventory transactions, thereby excluding the closed transactions from further inventory processes. Inventory recalculation isn't a mandatory process. You can execute it according to your business requirements either daily, weekly, or monthly to adjust the inventory transactions for reporting the accurate cost of the items based on the valuation method. We recommend closing your inventory monthly for better performance.
 
 ### What is inventory pre-closing?
 
@@ -75,16 +75,16 @@ For perpetual valuation models like moving average or standard cost, use invento
 
 ### What is the typical duration required to complete the Inventory Closing and Recalculation process, and what factors impact the execution time?
 
-The duration required to complete the Inventory Closing/Recalculation process can vary widely depending on several factors and could ranges from a few minutes to several hours for most environments. Overall time for execution depends on:
+The duration required to complete the Inventory Closing and Recalculation process can vary widely depending on several factors and could range from a few minutes to several hours for most environments. Overall time for execution depends on:
 
 - Volume of inventory transactions (issues vs receipts)
 - Type of inventory transactions (source documents)
 - Length of the period
 - Number of Items and Inventory Dimensions (site, warehouse, location, etc.)
-- Real time resource utilization and availability,
+- Real time resource utilization and availability
 - Parallel processes being executed at the same time, number of active sessions, etc.
 
-Since Closing process could run from few minutes to several hours, it is recommended to schedule the process at off peak hours to avoid any business disruptions.
+Since closing process could run from few minutes to several hours, it is recommended to schedule the process at off peak hours to avoid any business disruptions.
 
 ### Why is my inventory closing or recalculation executing for a prolonged duration? Can I improve the execution speed?
 
@@ -94,11 +94,13 @@ As discussed previously, there's no fixed duration for inventory closing or reca
 
 1. **Execute inventory closing regularly** – If you have a high volume of transactions and don't execute inventory closing regularly at periodic intervals, you might experience performance issues as the count of open or unsettled transactions gradually increases in the system. Hence, execute inventory closing regularly (preferably at monthly intervals) for customers with a high volume of transactions for better performance. You can check the time stamp for the most recent closing executed. You can view this information from the **Closing and adjustment** page by filtering the **Type** as *Closing*. If you didn't execute closing recently and have items that use any periodic valuation methods in your inventory, proceed with closing the inventory for the period nearest to your recalculation period.
 
+1. **Count of issue and receipt transactions** - During the adjustment process, issue transactions are adjusted with the receipt transactions. So, a huge difference in the count of issue transactions and receipt transactions can impact the overall performance as the system might not find the required number of receipts to settle huge quantity of issues. 
+
 1. **Circularity in inventory transactions** – Overall execution time largely depends on your inventory transactions and the nature of source documents. BOM journals are one of the source documents that consume a considerable amount of time in calculating the cost of the final product when the BOM structure is quite complicated, with lots of depth, consumption of scrap products, circular links in production and consumption, and other factors. If you have inventory transactions that pertain to any BOM journal, you can perform a basic BOM circularity check and eliminate any circular link. BOM circularity doesn't throw errors in the closing or recalculation process because the process has a specific design to handle such scenarios. However, BOM circularity increases the overall execution time to a large extent. The same situation applies to transfer order circularity. Consider the scenario when there's a transfer from site 1 to site 2 and then again from site 2 to site 1. To improve performance, reduce and eliminate the possibility of any such circularity in BOM journals or transfer orders. For more information about BOM circularity check strategies, refer to the other FAQs in this article.
 
 1. **Review inventory performance parameters** – You can configure a few parameters to control the performance of closing and recalculation.
 
-    Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** and open the **Inventory accounting** tab. In the**Closing** section, make the following settings:
+    Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** and open the **Inventory accounting** tab. In the **Closing** section, make the following settings:
 
     - **Extra Batch Helpers** – Set the number of extra threads to spawn based on thread pool availability to aid the execution of the respective batch job. The default value for this parameter is *8*. You can increase this value based on the availability of your system resources. Learn more in [batch capacity](../../fin-ops-core/dev-itpro/sysadmin/batch-capacity).
 
@@ -122,19 +124,17 @@ The **Level of circularity** field has three options: *Never*, *BOM*, and *Line*
 
 1. **Line:** The circularity check occurs when you save the BOM line. This setting prevents you from adding a BOM line when the component item causes BOM circularity.
 
-1. **Never:** The system doesn't check for circularity. You can manually check for circularity errors by using the **Check** function on the **BOM line** page. If circularity exists, the error is also reported when you perform cost rollup calculations and planning calculations.
+1. **Never:** The system doesn't check for circularity. You can manually check for circularity errors by using the **Check** function on the **BOM line** page. If circularity exists, the error is also reported when you perform cost rollup and planning calculations.
 
 1. **BOM:** The circularity check occurs when you do any of the following activities: close the **Bills of materials** page, use the **Check** function on the **Bills of materials** page, or associate a BOM with a BOM version.
 
-Note that the controls preventing a circular BOM don't apply to a production BOM on a production order. You can manually add a component or consume a component that creates BOM circularity. When the component consumption reflects BOM circularity, the inventory closing process might not calculate a sensible cost for a manufactured item that has an inventory valuation method using actual cost. In such an occurrence, the use of a manufacturing indirect cost of the surcharge type can also cause problems in inventory closing, because the calculated cost can grow exponentially.
+Note that the controls preventing a circular BOM don't apply to a production BOM or a production order. You can manually add a component or consume a component that creates BOM circularity. When the component consumption reflects BOM circularity, the inventory closing process might not calculate a sensible cost for a manufactured item that has an inventory valuation method using actual cost. In such an occurrence, the use of a manufacturing indirect cost of the surcharge type can also cause problems in inventory closing, because the calculated cost can grow exponentially.
 
 For the **Circularity check** field, two selections are available: *Optimize for low complexity* and *Optimize for high complexity*.
 
 1. The *Optimize for low complexity* option requests data from storage as it's needed for the circularity check. For single-level or simple BOM structures, performance is better when you select this option.
 
-1. When you select *Optimize for High complexity*, the system caches the BOM structure and all its dependencies before processing the circularity check. When processing a BOM with many lines, it might take a moment for the processing to start since it's loading the information into cache. However, the Optimize for High complexity option can significantly improve overall performance of the circularity check. This improvement is especially true if you're running a task that performs a circularity check on multiple BOMs or if you're doing a consistency check on the Bills of materials.
-
-For more details, see this guide. <!-- KFM: Is a link missing here? What guide do you mean? -->
+1. When you select *Optimize for High complexity*, the system caches the BOM structure and all its dependencies before processing the circularity check. When processing a BOM with many lines, it might take a moment for the processing to start since it's loading the information into cache. However, the *Optimize for High complexity* option can significantly improve overall performance of the circularity check. This improvement is especially true if you're running a task that performs a circularity check on multiple BOMs or if you're doing a consistency check on the Bill of materials.
 
 You can also use the following SQL query to fetch the items with circular links directly from the database. You can also convert this query to an X++ script and execute it.
 
@@ -150,23 +150,21 @@ where a.ASSEMBLYINVENTTRANSORIGIN=p.RECID
 
 ### What are the best practices for executing inventory closing and recalculations?
 
-Run inventory closing and recalculation during off-peak business hours when the overall system load is lower. This schedule increases the availability of resources.  
+1. Run inventory closing and recalculation during off-peak business hours when the overall system load is lower. This schedule increases the availability of resources.  
 
-Always run inventory closings, recalculations, and resume calculations as batch processes for better performance and error tracing.  
+1. Always run inventory closings, recalculations, and resume calculations as batch processes for better performance and error tracing.  
 
-Verify the inventory closing parameters to ensure they fit your business operations.  
+1. Verify the inventory closing parameters to ensure they fit your business operations.  
 
-If you have a high transactional volume for a period that might prolong the closing run, divide the period into smaller time intervals and close those periods consecutively.  
+1. If you have a high transactional volume for a period that might prolong the closing run, divide the period into smaller time intervals and close those periods consecutively.  
 
-If recalculation takes a long time, check when you last ran closing. You can view this information on the **Closing and adjustment** page by filtering the **Type** as *Closing*. If you didn't run closing recently and your inventory includes items that use periodic valuation methods, run inventory closing for the period nearest to your recalculation period.  
-
-Closing the inventory closes the transactions and reduces the scope and volume for further inventory operations. Recalculation runs based on your business requirements to report the accurate costs of the items.
+1. If recalculation takes a long time, check when you last ran closing. You can view this information on the **Closing and adjustment** page by filtering the **Type** as *Closing*. If you didn't run closing recently and your inventory includes items that use periodic valuation methods, run inventory closing for the period nearest to your recalculation period. Closing the inventory closes the transactions and reduces the scope and volume for further inventory operations. 
 
 ### How can I analyze the issue and receipt transactions as part of the inventory closing and recalculation process?
 
-Inventory closing and recalculation settle and adjust issue transactions to receipt transactions. If there aren't enough receipt transactions, the process temporarily stores many issue transactions in memory while processing closing and recalculation. Run inventory closing or recalculation when the number of issue and receipt transactions is comparable. You can view the summarized view of issue versus receipt transactions in the inventory value report.  
+Inventory closing and recalculation settle and adjust issue transactions to receipt transactions. If there aren't enough receipt transactions, the process temporarily stores many issue transactions in memory during the adjustment process. Run inventory closing or recalculation when the number of issue and receipt transactions is comparable. You can have the summarized view of issue versus receipt transactions in the inventory value report.  
 
-You can also view this information directly from the database by running the following query:
+You can also have this information directly from the database by running the following SQL query (can be converted to X++ script as well):
 
 ``` sql
 select ITEMID, STATUSISSUE, count(*) countOfOpenTrans 
@@ -183,29 +181,28 @@ order by ITEMID, STATUSISSUE, countOfOpenTrans desc;
 
 ### What are the best practices for executing inventory reversals?
 
-Run inventory reversals during off-peak business hours to make better use of system resources.  
+1. Run inventory reversals during off-peak business hours to make better use of system resources.  
 
-Always run inventory reversals one at a time. Running multiple reversals at the same time might lead to errors or even ledger data corruption.
+1. Always run inventory reversals one at a time. Running multiple reversals at the same time might lead to errors (like, *duplicate reverse is not allowed*) or even ledger data corruption.
 
-The **Extra batch helpers** field on the **Inventory and warehouse closing parameters** page <!-- KFM: I can't find this page, Please add navitagion info. --> decides the number of parallel threads to use for the reversal task, based on thread pool availability. The recommended and default number of extra batch helpers is *8*. If your reversal execution is very slow, consider increasing this value based on the real-time system resources availability.  
+1. You can navigate to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** and open the **Inventory accounting** tab. The **Extra batch helpers** field **Closing** section decides the number of parallel threads to use for the reversal task, based on thread pool availability. The recommended and default number of extra batch helpers is *8*. If your reversal execution is very slow, consider increasing this value based on the real-time system resources availability. 
 
 ### Why did my inventory closing or recalculation end in an error? What should I do?
 
-Several issues can cause inventory closing, recalculation, or reverse to end in an error. To find the exact error message, check the **Batch jobs** pagefor the related batch job and the **Closing and adjustment** page after you select the specific voucher, then view log details. If you can't fix these issues, contact Microsoft Support or your partner.
+Several issues can cause inventory closing, recalculation, or reverse to end in an error. To find the exact error message, check the **Batch jobs** page for the related batch job and the **Closing and adjustment** page after you select the specific voucher, then view *log* details. If you can't fix these issues, contact Microsoft Support or your partner.
 
 Possible reasons for errors include:  
 
-- Overutilization of system resources
+- Overutilization of system resources: As these operations consume quite a considerable amount of resources, try executing these operations during off peak business hours and minimizing other parallel and background processes and user sessions. Also check whether the closing parameters are as per your business requirements and resource availability. More on this has been discussed in the previous FAQs.
 
-- SQL deadlock or availability issues
+- SQL deadlock or availability issues: Most of the SQL issues are transient. Retry the operation after selecting the specific voucher and clicking _Resume Calculation_. In case the issue persists, check for the exact error from the **Batch jobs** or **Closing and adjustment** page and share them with your partner.
 
-- Business data corruption and inconsistencies like rounding or currency issues
+- Business data corruption and inconsistencies like rounding or currency issues: Execute consistency check (for an item) from **System administration** -> **Periodic tasks** -> **Database** -> **Check/Fix error** -> **Inventory management** -> **Item** -> Enable checkbox for _Inventory transactions_ and _On-hand_, then filter the exact item from the _dialog_. If required, this process can be executed as a batch process in the background. The final check/fix logs can be viewed from the batch job logs or in the notification panel. If consistency check doesn't highlight or fix any issues, **Potential conflicts report** and **Inventory value report storage** may be used to drill down further into the discrepancies and inventory postings respectively.
 
-- Incorrect business practices  
+- Incorrect business practices
 
 - Configuration issues like ledger, account, project, or warehouse setup
 
-- And many more
 
 ### When should I use the on-hand inventory adjustment on the Closing and adjustments page?
 
