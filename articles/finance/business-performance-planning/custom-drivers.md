@@ -4,7 +4,7 @@ description: Learn how to define and use custom drivers in business performance 
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 06/11/2025
+ms.date: 11/11/2025
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
@@ -13,7 +13,11 @@ ms.search.form:
 ms.dyn365.ops.version: 
 ---
 
+>[!NOTE]
+> This article describes the legacy cube creation process, available in Business performance planning versions 1.13 and earlier. Starting in version 1.14, a new experience is available under Cubes (Preview). For the new experience, see Creating cubes (Preview).
+
 # Custom drivers in Dynamics 365 Finance business performance planning
+
 
 This article explains how to extend a planning cube by adding drivers such as **Price**, **Quantity**, or **Discount** to the default **Amount** driver. In this way, you can support more granular or driver-based planning logic.
 
