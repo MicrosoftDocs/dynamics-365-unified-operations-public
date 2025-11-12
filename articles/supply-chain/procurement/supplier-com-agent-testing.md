@@ -1,6 +1,6 @@
 ---
 title: Test the Supplier Communications Agent (production ready preview)
-description: Learn how to test the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management, for smooth implementation and optimal performance.
+description: Learn how to test the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management for smooth implementation and optimal performance.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
