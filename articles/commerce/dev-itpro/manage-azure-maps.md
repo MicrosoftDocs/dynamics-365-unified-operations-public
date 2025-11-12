@@ -19,11 +19,11 @@ ms.custom:
 
 This article describes how to manage Microsoft Azure Maps in Dynamics 365 Commerce.
 
-When Azure Maps is enabled in Commerce headquarters, you can use it with the Commerce Distributed Order Management (DOM) feature, the store locator functionality in Commerce e-commerce, and the Store Commerce app to allows customers to view a map of a store, warehouse, or other location when placing orders.
+When you enable Azure Maps in Commerce headquarters, you can then use Azure Maps with the Commerce Distributed Order Management (DOM) feature, the store locator in Commerce e-commerce, and the Store Commerce app to allows customers to view a map of a store, warehouse, or other location when placing orders.
 
 > [!NOTE]
 > - Azure Maps is available for use with DOM starting with the Commerce version 10.0.43 release.
-> - Azure Maps is available for use with the store locator functionality in Commerce e-commerce and the Store Commerce app starting with the Commerce version 10.0.45 release.
+> - Azure Maps is available for use with the store locator in Commerce e-commerce and the Store Commerce app starting with the Commerce version 10.0.45 release.
 
 ## Enable Azure Maps
 
@@ -50,6 +50,6 @@ To manage your Azure Maps key securely, rotate it frequently. Learn more in [Man
 
 If you enable the Azure Maps feature, address information is automatically sent over the internet to the Azure Maps service, so that an online map of the address can be shown in the application. Your use of Azure Maps is governed by the [Azure Maps Terms of Use](https://azure.microsoft.com/support/legal/). Learn about Azure Map's geographic scope and how to limit data residency in [Consent management](/azure/azure-maps/consent-management).
 
-Administrators can turn the Azure Maps feature on or off in headquarters at **Commerce shared Parameters \> Azure Maps**. Turning the Azure Maps app off makes the feature unavailable in Commerce.
+Administrators can turn the Azure Maps feature on or off in headquarters at **Commerce shared Parameters \> Azure Maps**. Turning off the Azure Maps app makes the feature unavailable in Commerce.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
