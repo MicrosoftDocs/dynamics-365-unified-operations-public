@@ -40,7 +40,7 @@ This feature needs more setup permissions, test email addresses, and multiple sc
 
 This phase lets you test the smallest possible scope. Start with a test email address so you can test without risk. It doesn’t matter if you plan to use the purchaser’s email in production or a common mailbox for the purchasing department.
 
-- Ask your Microsoft Exchange admin to create the test email address. 
+- Ask your Microsoft Exchange admin to create the test email address.
 - Connect that email address to the sandbox environment where you'll do the testing.
 - Refresh your data (copy production data to the sandbox) or forward older emails so the system can match them.
 - Forward emails in batches—for example, five emails at a time. Check results and note if there's anything unexpected, and continue until you have a good idea of how it performs.
@@ -66,7 +66,7 @@ Testing in production is safe. The feature doesn't interfere with standard busin
 
 This is a production-ready preview feature. It has the quality of a generally available (GA) feature and you can go live with it. The reason it's not fully GA is that the agent is under continuous development. We keep it designated as a production-ready preview so we can continue improving it.
 
-For this test, we recommend that you: 
+For this test, we recommend that you:
 
 - Have purchasers work with the agent to do their daily tasks.
 - Start with just one or a few purchasers.
