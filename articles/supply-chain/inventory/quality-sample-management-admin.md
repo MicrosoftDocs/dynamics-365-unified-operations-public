@@ -67,8 +67,13 @@ To design and configure sample label layouts, follow these steps:
 
 Make one or both of the following assignments to specify which label layout to use for printing sample labels:
 
-- Assign the default label layout, which applies to all samples that don't have a more specific layout assigned to them. To do this, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**. Open the **Quality management** tab, and then set the **Default sample label layout** field to the desired label layout.
-- Assign a custom label layout to each specific sample type as needed (overrides the default). To do this, go to **Inventory management** \> **Setup** \> **Sample management** \> **Sample types**. Select a sample type, and then set the **Label layout** field to the desired label layout.
+- Assign the default label layout, which applies to all samples that don't have a more specific layout assigned to them.
+
+  To do this, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**. Open the **Quality management** tab, and then set the **Default sample label layout** field to the desired label layout.
+
+- Assign a custom label layout to each specific sample type as needed (overrides the default).
+
+  To do this, go to **Inventory management** \> **Setup** \> **Sample management** \> **Sample types**. Select a sample type, and then set the **Label layout** field to the desired label layout.
 
 ## Configure lifecycle states
 
