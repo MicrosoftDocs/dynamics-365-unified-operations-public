@@ -110,12 +110,6 @@ Follow these steps to manage your procedure types:
 
 Sample procedures define the specific steps or actions required for handling samples. These configurations ensure that you process samples consistently and in compliance with organizational and regulatory requirements.
 
-
-
-
-
-
-
 Follow these steps to manage your sample procedures:
 
 1. Go to **Inventory management** \> **Setup** \> **Sample management** \> **Sample procedures**.
@@ -177,6 +171,11 @@ Follow these steps to define and configure sample associations:
 ## Configure item sampling policies
 
 Item sampling policies define the criteria for selecting samples. Configuring these settings ensures that you select samples consistently and in compliance with quality standards.
+
+
+
+
+
 
 Follow these steps to define an item sampling policy:
 
