@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 11/04/2025
+ms.date: 11/13/2025
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -17,6 +17,15 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 4.0.26.0
+
+Version 4.0.26.0 adds the following fixes and improvements:
+
+- Resolved an issue where old values were not removed after scanning items from a work list.
+- Fixed a bug that caused the page to auto-submit when a worker pressed the physical scan button on a device during a summary step.
+- Corrected mobile mass deployment (MDM) property retrieval to handle case differences in `connection.json` files.
+- Enhanced Windows security.
 
 ## Version 4.0.25.0
 
