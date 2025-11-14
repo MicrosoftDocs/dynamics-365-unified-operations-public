@@ -2112,10 +2112,13 @@
                          href: localizations/brazil/brazil-reform-calculation-sales-quotation.md
                        - name: Calculation in Sales order in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-sales-order.md
+                       - name: Calculation in Purchase requisition in Brazil Reformed Tax
+                         href: localizations/brazil/brazil-reform-calculation-purchase-requisition.md                         
                        - name: Calculation in Purchase order in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-purchase-order.md
                        - name: Calculation in Project in Brazil Reformed Tax
-                         href: localizations/brazil/brazil-reform-calculation-project.md                  
+                         href: localizations/brazil/brazil-reform-calculation-project.md
+
                     - name: Fiscal books
                       items:
                         - name: Brazil fiscal books overview
