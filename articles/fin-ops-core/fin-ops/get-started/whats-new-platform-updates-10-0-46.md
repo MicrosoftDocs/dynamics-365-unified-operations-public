@@ -29,7 +29,7 @@ This section lists the features included in this release when available. We migh
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-|No changes reported at this time|---|---|---|
+| No changes reported at this time |---|---|---|
 
 ## Feature enhancements included in this release
 
