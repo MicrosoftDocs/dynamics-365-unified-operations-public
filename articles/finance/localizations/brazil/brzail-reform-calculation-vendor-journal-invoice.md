@@ -45,6 +45,7 @@ To check the tax calculation results, follow these steps.
 1. Select **sales tax** on top in the **List** page.
    - The targeted tax codes are displayed. 
    - During the transition period, **No posting** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
+1. Select **OK**.
    - Based on the applicability rule settings, the default values for the new tax types (**CBS**,**IBS**) appear in the **Tax group for tax reform** and **Item tax group for tax reform**.
    - You can change these defaults by setting the **Use override** checkbox to be **YES**, then specifying the desired values in the **Tax group** and **Item tax group**.
 1. Select **General** page
