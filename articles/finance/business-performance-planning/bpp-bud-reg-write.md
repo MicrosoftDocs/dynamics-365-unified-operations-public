@@ -46,7 +46,7 @@ Before using the Write back to budget register entry feature, ensure the followi
 
 > [!IMPORTANT]
 > In **Dynamics 365 Finance**, a default account structure must be configured before budget register entry can be created.  
-> For setup guidance, see [Budget overview configuration](../../budgeting/basic-budgeting-overview-configuration.md#configuration).
+> For setup guidance, see [Budget overview configuration](../budgeting/basic-budgeting-overview-configuration.md).
 
 
 ### Finance and operations user and security prerequisites
@@ -118,7 +118,7 @@ In this setup:
 > If export fails with the **No permission to execute Finance operation** error, verify that the flow owner (for example, User B) has both required roles and that all Power Automate flows are owned and connected under their account.
 
 
-For more information, see [Set up Dynamics 365 Finance user roles for budget register entry write-back](./setup-finance-roles-bre-writeback.md)
+For more information, see [Set up Dynamics 365 Finance user roles for budget register entry write-back](bpp-bud-reg-user.md)
 
 ### Dynamics 365 Finance connection and virtual entities
 
@@ -132,7 +132,7 @@ During installation, Business performance planning automatically creates an envi
 If the Dynamics 365 Finance environment wasn’t linked during deployment, this variable must be configured manually.  
 In addition, several virtual entities must be enabled in Dataverse so that Business performance planning can access Dynamics 365 Finance data such as ledgers, budget models, and dimension parameters.
 
-For configuration guidance, see [Configure the Dynamics 365 Finance connection and virtual entities for budget register entry write-back](./configure-finance-connection-virtual-entities.md)
+For configuration guidance, see [Configure the Dynamics 365 Finance connection and virtual entities for budget register entry write-back](BPP-connect-Budget.md)
 
 ### Power Automate workflows and connections
 
@@ -271,15 +271,14 @@ To review all previously created exports from the same planning cube, follow the
 - **Reusability:** Previous configurations can be reused for faster future exports.  
 - **Flexibility:** Support for cubes at a lower granularity ensures planners can model data in more detail without losing consistency in Dynamics 365 Finance.  
 
----
+### Related links
 
-## Related links
+- [Set up Dynamics 365 Finance user roles for budget register entry write-back](bpp-bud-reg-user.md)  
+- [Configure the Dynamics 365 Finance connection and virtual entities for budget register entry write-back](BPP-connect-Budget.md)  
+- [Set up Budget Models in Dynamics 365 Finance](../budgeting/budget-models.md)  
+- [Basic budgeting overview configuration](../budgeting/basic-budgeting-overview-configuration.md#configuration)  
+- [Create and configure Planning cubes in Business performance planning](create-cubes.md)  
+- [Manage security roles and privileges in Business performance planning](bpp-security,md)
 
-- [Set up Dynamics 365 Finance user roles for budget register entry write-back](./setup-finance-roles-bre-writeback.md)  
-- [Configure the Dynamics 365 Finance connection and virtual entities for budget register entry write-back](./configure-finance-connection-virtual-entities.md)  
-- [Set up Budget Models in Dynamics 365 Finance](../budgeting/budget-models)  
-- [Basic budgeting overview configuration](../budgeting/basic-budgeting-overview-configuration#configuration)  
-- [Create and configure Planning Cubes in Business performance planning](/create-cubes)  
-- [Manage security roles and privileges in Business performance planning](/bpp-security)
 
 
