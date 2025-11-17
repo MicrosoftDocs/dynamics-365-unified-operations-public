@@ -21,15 +21,15 @@ This article describes how to install business performance planning visuals. To 
 
 1. A Dynamics 365 Finance or Business performance planning environment with Dataverse enabled.
 2. Import business performance planning visuals from [Microsoft AppSource](https://appsource.microsoft.com). For more information, see [Import visuals](/power-bi/developer/visuals/import-visual).
-3. Connect Power BI to your Dataverse environment. For more information, see [Use Direct Query in Power BI Desktop](/power-bi/connect-data/desktop-use-directquery).
+3. Connect Power BI to your Dataverse environment. For more information, see [Use direct query in Power BI Desktop](/power-bi/connect-data/desktop-use-directquery).
 4. To work with the visuals and publish to a Power BI workspace, a Power BI license is required. For more information, see [Licenses and subscriptions for business users](/power-bi/consumer/end-user-license).
 5. You must have authentication for Power BI enabled for the visuals to work. For more information, see [Obtain Microsoft Entra access token](/fabric/admin/organizational-visuals#obtain-microsoft-entra-access-token).
 6. When you connect to a cube in Power BI, you must select SQL Server as the data source.
 
 
     > [!NOTE]
-    > - You must have the AppSource Custom Visuals SSO feature enabled in step 4. If this feature isn't enabled, you receive the following error: **Unable to authenticate to Dataverse service**.
-    > - Use the SQL Server connector to ensure the write back works properly. The Dataverse connector isn’t supported for write-back as it doesn’t expose the logical names required by Business performance planning.
+    > You must have the AppSource Custom Visuals SSO feature enabled in step 4. If this feature isn't enabled, you receive an **Unable to authenticate to Dataverse service** error.
+    > Use the SQL Server connector to ensure the write back works properly. The Dataverse connector isn’t supported for write-back as it doesn’t expose the logical names required by Business performance planning.
 
 ### Install visuals from Microsoft appsource
 
