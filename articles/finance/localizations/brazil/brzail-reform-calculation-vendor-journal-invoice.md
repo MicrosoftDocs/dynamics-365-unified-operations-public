@@ -24,11 +24,11 @@ You can create a vendor invoice journal by specifying fiscal information, such a
 
 To create a vendor invoice journal that uses Brazilian taxes, follow these steps.
 
-1. In Dynamics 365 Finance, go to **Account Receivable** \> **Invoices** \> **Invoice journal**.
+1. In Dynamics 365 Finance, go to **Account Payable** \> **Invoices** \> **Invoice journal**.
 1. Select **New**.
 2. In the **Name** field, enter or select a value.
 3. Select **Lines**.
-4. In the **Account type** field, select vendor.
+4. In the **Account type** field, select **Vendor**.
 2. In the **Account** field, enter or select a vendor account.
 1. In the **Sales tax group** field, enter or select a value.
 1. In the **Item sales tax group** field, enter or select a value.
