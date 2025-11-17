@@ -1,18 +1,18 @@
 ---
 title: Matrix planning visual in Business performance planning
 description: Learn the recommended practices to improve performance and responsiveness when using the Matrix planning visual.
-author: romainpham
+author: twheeloc
 ms.author: romainpham
 ms.topic: overview
 ms.date: 11/23/2025
-ms.reviewer: theeloc
+ms.reviewer: twheeloc
 ms.collection: get-started
 
 ---
 
 # Matrix planning visual in Business performance planning
 
-The **Matrix planning visual** is the default planning visual available in Business performance planning. It enables users to enter, adjust, and allocate data directly in Power BI reports, with automatic write-back to Dataverse tables. This visual supports both top-down and bottom-up planning at any level of detail, making it ideal for financial, operational, and workforce planning scenarios.
+The Matrix planning visual is the default planning visual available in Business performance planning. It enables users to enter, adjust, and allocate data directly in Power BI reports, with automatic write-back to Dataverse tables. This visual supports both top-down and bottom-up planning at any level of detail, making it ideal for financial, operational, and workforce planning scenarios.
 
 
 ## Overview
@@ -329,4 +329,5 @@ Always confirm that the filters applied match the intended planning scope before
 - [Reporting visual](reporting-visual.md)  
 - [Comments visual](comments-visual.md)  
 - [Write-back and allocation in Business performance planning](write-back.md)
+
 
