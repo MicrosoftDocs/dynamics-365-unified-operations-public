@@ -2118,6 +2118,10 @@
                          href: localizations/brazil/brazil-reform-calculation-purchase-order.md
                        - name: Calculation in Project in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-project.md
+                       - name: Calculation in free text invoice in Brazil Reformed Tax
+                         href: localizations/brazil/brazil-reform-calculation-free-text-invoice.md
+                       - name: Calculation in vendor invoice journal in Brazil Reformed Tax
+                         href: localizations/brazil/brazil-reform-calculation-vendor-invoice-journal.md‎
 
                     - name: Fiscal books
                       items:
