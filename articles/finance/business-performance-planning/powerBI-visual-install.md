@@ -28,8 +28,8 @@ This article describes how to install business performance planning visuals. To 
 
 
     > [!NOTE]
-    > You must have the AppSource Custom Visuals SSO feature enabled in step 4. If this feature isn't enabled, you receive an **Unable to authenticate to Dataverse service** error.
-    > Use the SQL Server connector to ensure the write back works properly. The Dataverse connector isn’t supported for write-back as it doesn’t expose the logical names required by Business performance planning.
+    > You must have the AppSource Custom Visuals single sign-on (SSO) feature enabled in step 4. If this feature isn't enabled, you receive an **Unable to authenticate to Dataverse service** error.
+    > Use the SQL Server connector to ensure the write-back works properly. The Dataverse connector isn’t supported for write-back as it doesn’t expose the logical names required by Business performance planning.
 
 ### Install visuals from Microsoft appsource
 
@@ -72,13 +72,13 @@ To select SQL Server as a data source, follow these steps.
 
 6. After you select the cube, enable the **Load selected tables** option to automatically select any dimension tables that are used in the cube.
 7. Review the list of tables to be imported. 
- - Power BI may also select system tables such as asyncoperation, processsession, or systemuser.
+ - Power BI may also select system tables such as async operation, process session, or system user.
  - These tables aren’t required for planning and should be unticked before loading.
  - To confirm what will be imported, select **Display options** > **Only selected items** in the **Navigator** panel.
 8. Select **Load**. This operation might take a few minutes. After it's completed, your data appears in the **Data** view in Power BI.
 
 >[!NOTE]
-> If you’re unsure of your cube name, go to Business performance planning in Dynamics 365 Finance, select the cube, and copy the Write-back table name from the cube properties
+> If you’re unsure of your cube name, go to Business performance planning in Dynamics 365 Finance, select the cube, and copy the write-back table name from the cube properties.
 
 ### Recommendations for transform data
 
@@ -128,7 +128,7 @@ When connecting Power BI to Dataverse or configuring the Business performance pl
  - Incorrect server address when using the SQL Server connector: Entering the server name with https://, www, or a trailing / causes a connection failure.
 Example error:
 Microsoft SQL: A network-related or instance-specific error occurred while establishing a connection to SQL Server.
-The server wasn't found or was not accessible (provider: Named Pipes Provider, error: 40 – Could not open a connection to SQL Server).
+The server wasn't found or wasn't accessible (provider: Named Pipes Provider, error: 40 – Could not open a connection to SQL Server).
 
 Resolution: - Enter only orgname.crm.dynamics.com.
 - Remove https://, www, and /.
