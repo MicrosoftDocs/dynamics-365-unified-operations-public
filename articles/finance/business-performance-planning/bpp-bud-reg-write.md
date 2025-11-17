@@ -276,9 +276,10 @@ To review all previously created exports from the same planning cube, follow the
 - [Set up Dynamics 365 Finance user roles for budget register entry write-back](bpp-bud-reg-user.md)  
 - [Configure the Dynamics 365 Finance connection and virtual entities for budget register entry write-back](BPP-connect-Budget.md)  
 - [Set up Budget Models in Dynamics 365 Finance](../budgeting/budget-models.md)  
-- [Basic budgeting overview configuration](../budgeting/basic-budgeting-overview-configuration.md#configuration)  
+- [Basic budgeting overview configuration](../budgeting/basic-budgeting-overview-configuration.md#)  
 - [Create and configure Planning cubes in Business performance planning](create-cubes.md)  
 - [Manage security roles and privileges in Business performance planning](bpp-security,md)
+
 
 
 
