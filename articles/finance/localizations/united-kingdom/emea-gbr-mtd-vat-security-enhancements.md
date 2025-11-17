@@ -33,6 +33,9 @@ To meet security requirements, Microsoft is updating the direct system-to-system
 
 Prerequisites are essential requirements and foundational elements that are needed before you can enable the feature. Completion of these prerequisites is critical to achieving optimal functionality and a seamless transition to the more secure integration with the external web service.
 
+> [!IMPORTANT]
+> Before you proceed with the steps in this topic, all the steps specified in [Prepare your environment to interoperate with HMRC's MTD VAT web service](emea-gbr-mtd-vat-integration-setup.md) must be completed. These steps are mandatory and must be done beforehand to ensure proper configuration and compliance.
+
 ### Check the system version
 
 The **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature is introduced in Finance version 10.0.43.
