@@ -4,7 +4,7 @@ description: Learn about features that have been removed, or that are planned fo
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 07/10/2025
+ms.date: 11/17/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -29,7 +29,7 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective October 2025
 
-### The data integrator templates for Dynamics 365 Field Service will no longer be available after October 30, 2026
+### The Data Integrator templates for Dynamics 365 Field Service will no longer be available after October 30, 2026
 
 | &nbsp;  | &nbsp;  |
 |---|---|
@@ -37,7 +37,7 @@ Detailed information about objects in finance and operations apps can be found i
 | **Replaced by another feature?** | Yes |
 | **Product areas affected** | Microsoft finance and operations applications |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | Deprecated. The data integrator templates for Dynamics 365 Field Service will no longer be available after October 30, 2026. This integration works by synchronizing work orders, agreements, inventory, and projects between Field Service and Supply Chain Management. Instead, look to a simpler, more integrated Field Service experience. Learn more in [Connect Field Service to finance and operations](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/connect-field-service-finance-operations) and [Link work orders to projects for unified financials](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/link-work-orders-projects-unified-financials). |
+| **Status** | Deprecated. The Data Integrator templates for Dynamics 365 Field Service will no longer be available after October 30, 2026. This integration works by synchronizing work orders, agreements, inventory, and projects between Field Service and Supply Chain Management. Instead, look to a simpler, more integrated Field Service experience. Learn more in [Connect Field Service to finance and operations](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/connect-field-service-finance-operations) and [Link work orders to projects for unified financials](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/link-work-orders-projects-unified-financials). |
 
 ## Feature deprecation effective April 2025
 
