@@ -29,7 +29,7 @@ This section lists the features included in this release when available. We migh
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| No changes reported at this time |---|---|---|
+| System Administration | DMF Telemetry integrates with Application Insights| We’re enhancing the Monitoring and Telemetry feature by introducing **DMF telemetry integration** with Application Insights. This capability is currently behind feature flights. While you may notice additional events in the UI, the underlying telemetry is **planned for preview in January 2026**. Additional details will be shared as soon as the feature becomes available. | Feature Management |
 
 ## Feature enhancements included in this release
 
