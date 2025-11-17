@@ -1,4 +1,4 @@
-
+---
 title: Use tax calculation in vendor invoice journal in Brazil tax reform
 description: Learn about tax calculation in vendor invoice journal in Brazil tax reform solution
 author: yanansong
