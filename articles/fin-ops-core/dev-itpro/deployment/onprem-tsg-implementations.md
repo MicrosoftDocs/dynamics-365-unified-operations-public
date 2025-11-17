@@ -538,6 +538,11 @@ Write-Output "Successfully updated the configuration HTTPS (443) for Reporting S
 The following script addresses an issue where the Dynamics 365 Reporting services extensions fail to install. This problem arises due to the version of Microsoft.Identity.Client bundled with Dynamics 365. During installation, the Reporting services configuration updates the SSRS DLLs and configuration files with outdated binding redirect versions, leading to compatibility issues.
 
 > [!NOTE]
+> This issue is resolved in the following versions, note specific plaform version needed.
+> - 10.0.45 - Platform Version - 7.0.7690.82
+> - 10.0.44 - Platform Version - 7.0.7606.173
+
+> [!NOTE]
 > The script relies on WinRM for remote execution. If you're unable to run PowerShell scripts remotely, you can extract the embedded script content from the $scriptContent variable and save it locally on your BI nodes as LBDUpdateSSRSClientIdentity.ps1. In that case, you need to run the script manually on each BI node during deployment.
 
 ```PowerShell
