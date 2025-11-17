@@ -29,7 +29,7 @@ This section lists the features included in this release when available. We migh
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| System Administration | DMF Telemetry integrates with Application Insights| We’re enhancing the Monitoring and Telemetry feature by introducing **DMF telemetry integration** with Application Insights. This capability is currently behind feature flights. While you may notice additional events in the UI, the underlying telemetry is **planned for preview in January 2026**. Additional details will be shared as soon as the feature becomes available. | Feature Management |
+|No changes reported at this time|---|---|---|
 
 ## Feature enhancements included in this release
 
@@ -38,6 +38,7 @@ This section has a table that lists enhancements included in this release when a
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 | System administration | Dynamics 365 ERP Model Context Protocol server | In this release the capabilities of the Dynamics 365 ERP MCP server are enhanced by increasing the number of functions the server can perform, and enabling the server to work with extensions and personalization in the environment. For more information, see [Use Model Context Protocol for finance and operations apps](../../dev-itpro/copilot/copilot-mcp.md) | System administrator |
+| System Administration | DMF Telemetry integrates with Application Insights| We’re enhancing the Monitoring and Telemetry feature by introducing **DMF telemetry integration** with Application Insights. This capability is currently behind feature flights. While you may notice additional events in the UI, the underlying telemetry is **planned for preview in January 2026**. Additional details will be shared as soon as the feature becomes available. | Feature Management |
 
 
 ### Bug fixes
