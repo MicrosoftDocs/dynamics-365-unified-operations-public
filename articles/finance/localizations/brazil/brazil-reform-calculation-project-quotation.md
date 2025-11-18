@@ -66,5 +66,8 @@ To create a project quotation that uses Brazilian taxes, follow these steps.
    - During the transition period, you might see targeted groups for both legacy tax types and reformed tax types coexisting under the **Sales tax** group and the **Tax reform** group.
 1. Select **Totals** in the **project quotation** tab.
    - You can view the summary by tax type for Brazilian tax.
-
+   - 
+> [!IMPORTANT] 
+> The **tax group** and **item tax group** are not populated when the line is saved in Brazil tax reform 2026. They will be populated once tax calculation is triggered — for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
+> 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
