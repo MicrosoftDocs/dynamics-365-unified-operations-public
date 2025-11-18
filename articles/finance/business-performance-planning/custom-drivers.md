@@ -13,11 +13,10 @@ ms.search.form:
 ms.dyn365.ops.version: 
 ---
 
->[!NOTE]
-> This article describes the legacy cube creation process, available in Business performance planning versions 1.13 and earlier. Starting in version 1.14, a new experience is available under Cubes (Preview). For the new experience, see Creating cubes (Preview).
-
 # Custom drivers in Dynamics 365 Finance business performance planning
 
+>[!NOTE]
+> This article describes the legacy cube creation process, available in Business performance planning versions 1.13 and earlier. Starting in version 1.14, a new experience is available under Cubes (preview). 
 
 This article explains how to extend a planning cube by adding drivers such as **Price**, **Quantity**, or **Discount** to the default **Amount** driver. In this way, you can support more granular or driver-based planning logic.
 
