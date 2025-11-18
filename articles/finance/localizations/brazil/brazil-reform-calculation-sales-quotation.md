@@ -29,7 +29,6 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
 1. In the **Account type** field, select an option.
 1. In the **Customer account** field, enter or select a value.
 1. Select **OK**.
-1. Select **Yes**.
 1. In the **Lines or header** field, select an option.
 1. In the **Final user** field, select **Yes** if all lines from the quotation are for a final user. If you select **Yes**, the Imposto Sobre Circulação de Mercadorias e Serviços (ICMS) tax includes the Imposto Sobre Produtos Industrializados (IPI) tax and any freight charges.  
 1. In the **Item** field, enter or select a value.
@@ -41,6 +40,9 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
 1. Select the **Setup** tab.
 1. In the **Sales tax group** field, enter or select a value.
 1. In the **Item sales tax group** field, enter or select a value.
+2. In the **Use override** field, select a value if required.
+3. In the **Tax group** field under **Tax reform** group, enter or select a value.
+1. In the **Item tax group** field  under **Tax reform** group, enter or select a value.
 1. Select **Save**.
 1. On the Action Pane, select **Quotation**.
 1. Select **Send quotation**.
@@ -53,6 +55,8 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
 1. In the **Reason** field, enter or select a value.
 1. Select the **Print confirmation** checkbox.
 1. Select **OK**.
+
+## Check the results for tax calculation in Brazil.
 1. Select **sales tax** in the **Quotation** tab.
    - The targeted tax codes are displayed during the transition period.
    - **No posting** is marked for **CBS** and **IBS** to ensure compliance with the current policy from Brazilian government.
