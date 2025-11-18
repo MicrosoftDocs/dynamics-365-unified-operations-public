@@ -59,5 +59,12 @@ To check the tax calculation results, follow these steps.
    - You can change these defaults by setting the **Use override** checkbox to be **YES**, then specifying the desired values in the **Tax group** and **Item tax group**.
    - During the transition period, you might see targeted groups for both legacy tax types and reformed tax types coexisting under the **Sales tax** group and the **Tax reform** group.
   
+> [!IMPORTANT] 
+> The **tax group** and **item tax group** are not populated when the line is saved in Brazil tax reform 2026. They will be populated once tax calculation is triggered — for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
+>
+> [!TIP]
+> For using tax calculation in transfer orders, refer to the Brazil tax reform: Calcaulation in sales orders video.
+
+> [!video https://learn-video.azurefd.net/vod/player?id=271d2617-666b-48eb-8058-46ce067f832f]
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
