@@ -42,7 +42,7 @@ You can specify whether each master plan should consider forecasts when it runs.
             - If actual order transactions exceed the forecasted requirements, the remaining transactions aren't forwarded to the next forecast period.
 
         > [!NOTE]
-                > The **Method used to reduce forecast requirements** setting also applies to demand forecasts if you enable them for the master plan, and it affects them in a similar way. Learn more in  [Master planning with demand forecasts](demand-forecast.md).
+        > The **Method used to reduce forecast requirements** setting also applies to demand forecasts if you enable them for the master plan, and it affects them in a similar way. Learn more in  [Master planning with demand forecasts](demand-forecast.md).
 
 ## Set reduction options for coverage groups
 
