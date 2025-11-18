@@ -1,8 +1,8 @@
 ---
 title: Inventory costing FAQ
 description: Access answers some frequently asked questions about inventory costing in Microsoft Dynamics 365 Supply Chain Management.
-author: prasungoel
-ms.author: prasungoel
+author: soumyamoydas
+ms.author: soumyamoydas
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: faq
