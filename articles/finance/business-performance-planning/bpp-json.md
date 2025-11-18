@@ -18,12 +18,12 @@ ms.collection: get-started
 
 ## Overview
 
-The **Create cube from JSON (Preview)** feature allows you to import a complete cube definition—including facts, dimensions, relationships, and drivers—from a preconfigured JSON file.  
+The **Create cube from JSON (preview)** feature allows you to import a complete cube definition—including facts, dimensions, relationships, and drivers—from a preconfigured JSON file.  
 This option is ideal for partners, consultants, or administrators who need to deploy or migrate predefined planning models across Business performance planning environments.
 
 Unlike the Excel or dimension-based workflows, the JSON import defines the entire cube schema in a single step—making it especially efficient for template deployment or environment setup.
 
-For more information about cubes, facts, dimensions, or drivers, see [Key concepts in cube design](creating-cubes-preview.md#key-concepts) for an overview of how cubes are structured and used in Business performance planning.
+For more information about cubes, facts, dimensions, or drivers, see [Key concepts in cube design](bpp-create-cubes.md#key-concepts) for an overview of how cubes are structured and used in Business performance planning.
 
 
 ### Create a cube from JSON
@@ -81,7 +81,7 @@ In the **Data model view**, you can now edit the structure:
   - **Audit** - track write-back and user changes  
   - **Non-Clustered Columnstore Index (NCCI)** - improves performance for large datasets  
 
-The JSON import creates only the cube schema, no data is imported. To load data into your cube, use [Dataflows](load-data-into-bpp-using-dataflows.md) after publishing.
+The JSON import creates only the cube schema, no data is imported. To load data into your cube, use [Dataflows](load-data-dataflows.md) after publishing.
 When satisfied with the structure, select **Publish**.
 
 ### Publish the cube
@@ -174,9 +174,10 @@ These changes are applied at the Dataverse level in which the updated structure 
 
 ## Next steps
 
-- [Create a cube from Excel (preview)](create-cube-from-excel-preview.md)  
-- [Create a cube from JSON (preview)](create-cube-from-json-preview.md)  
-- [Load data using dataflows](load-data-into-bpp-using-dataflows.md)  
-- [Create calculated columns](create-calculated-columns.md)
+- [Create a cube from Excel (preview)](bpp-create-cube.md)  
+- [Create a cube from JSON (preview)](bpp-json.md)  
+- [Load data using dataflows](load-data-dataflows.md)  
+- [Create calculated columns](calculated-columns.md)
+
 
 
