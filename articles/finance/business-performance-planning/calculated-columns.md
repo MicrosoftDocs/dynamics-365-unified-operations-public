@@ -13,10 +13,10 @@ ms.search.form:
 ms.dyn365.ops.version: 
 ---
 
-> [!NOTE]
-> This article describes the legacy cube creation process, available in Business performance planning versions 1.13 and earlier. Starting in version 1.14, a new experience is available under Cubes (Preview). For the new experience, see Creating cubes (Preview).
+# Calculated columns in Dynamics 365 Finance Business performance planning
 
-# Calculated columns in Dynamics 365 Finance business performance planning
+> [!NOTE]
+> This article describes the legacy cube creation process, available in Business performance planning versions 1.13 and earlier. Starting in version 1.14, a new experience is available under Cubes (preview).
 
 Business performance planning in Microsoft Dynamics 365 Finance supports calculated columns that are known as *computed columns*. You can use them to define formula-based logic directly in your planning cube. These columns use the Dataverse formula column engine to drive financial modeling, workforce planning, revenue calculations, and more.
 
