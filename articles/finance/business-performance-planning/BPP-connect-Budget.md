@@ -1,7 +1,7 @@
 ---
 title: Configure the Finance connection and virtual entities for Budget register entry write-back
-description: Learn how to configure the Finance connection variable and enable required virtual entities for Business performance planning write-back to Budget register entry.
-author: romainpham
+description: Learn how to configure the Finance connection for Business performance planning write-back to Budget register entry.
+author: twheeloc
 ms.author: romainpham
 ms.topic: install-set-up-deploy
 ms.date: 11/14/2025
@@ -47,12 +47,9 @@ If not, it must be set manually.
 > [!NOTE]
 > This variable is automatically created during installation. If the Finance–Dataverse link was configured later, you must update this variable manually to establish the connection.
 
----
-
 ## Enable virtual entities in Dataverse
 
-Business performance planning relies on virtual entities to access Finance data such as ledgers, budget models, and dimension structures.  
-These must be visible and accessible in the environment.
+Business performance planning relies on virtual entities to access Finance data such as ledgers, budget models, and dimension structures. These must be visible and accessible in the environment.
 
 The following are required virtual entities:
 - LedgerEntity  
@@ -67,33 +64,32 @@ The following are required virtual entities:
 ### Enable virtual entities
 
 To enable virtual entities, follow these steps:
-1. Open **Power Platform Admin Center (PPAC)**.  
-2. Select your environment and go to **Settings > Advanced settings**.  
-3. Click **Filter** icon in the top-right corner.  
-4. Search for **Available Finance and Operations entities**, and select **Continue**.  
-5. For each entity listed above:  
+1. Open **Power Platform Admin Center**.  
+2. Select your environment.
+3. Go to **Settings > Advanced settings**.  
+4. Click **Filter** and search for **Available finance and operations entities**.
+5. Select **Continue**.  
+6. For each entity listed above:  
    a. Add a filter condition matching the entity name.  
    b. Click **Apply**.  
    c. Open the entity record.  
    d. Select the **Visible** checkbox.  
    e. Click **Save and close**.  
-6. Repeat for all required entities.
+7. Repeat for all required entities.
 
-These steps make the Finance virtual entities visible and accessible to Business performance planning for write-back operations.  
-If any entity remains hidden, the export fails with the error message, Unable to load Finance entity definitions.
+These steps make the Finance virtual entities visible and accessible to Business performance planning for write-back operations. If any entity remains hidden, the export fails with **Unable to load Finance entity definitions** error.
 
 ### Validation
 
-After completing setup, follow these steps to validate the connection:
+After completing the setup, follow these steps to validate the connection:
 - Restart your export in Business performance planning.  
 - Verify that the Finance entities are successfully loaded and the connection variable points to the correct URL.  
-- If you continue to experience export failures, confirm the finance and operations user roles are configured correctly. For more information, see [Set up Finance and Operations user roles for budget register entry write-back](./setup-finance-roles-bre-writeback.md).
+- If you continue to experience export failures, confirm the Dynamics 365 finance and operations user roles are configured correctly. For more information, see [Set up Finance and Operations user roles for budget register entry write-back](bpp-bud-reg-user.md).
 
----
 
 ## Related links
-- [Write back to Dynamics 365 Finance budget register entry](./write-back-to-bre.md)  
-- [Set up Finance and Operations user roles for budget register entry write-back](./setup-finance-roles-bre-writeback.md)  
-- [Business performance planning overview](https://learn.microsoft.com/en-us/dynamics365/finance/business-performance-planning/overview)
+- [Write back to Dynamics 365 Finance budget register entry](write-back-to-bre.md)  
+- [Business performance planning overview](overview.md)
+
 
 
