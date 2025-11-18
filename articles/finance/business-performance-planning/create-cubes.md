@@ -13,14 +13,14 @@ ms.search.form:
 ms.dyn365.ops.version: 
 ---
 
-[!include [banner](../includes/banner.md)]
-
 # Business performance planning cubes
+
+[!include [banner](../includes/banner.md)]
 
 ## Key terms
 
 > [!NOTE]
-> This article describes the legacy cube creation process, available in Business performance planning versions 1.13 and earlier. Starting in version 1.14, a new experience is available under Cubes (preview). 
+> This article describes the cube creation process that's available in Business performance planning versions 1.13 and earlier. Starting in version 1.14, a new cube creation process is available. For more information, see [Cubes (preview)](bpp-create-cubes.md). 
 
 A cube is a collection of dimensions and fact data. It's made up of fact data that's used for modeling and analytical purposes. The dimensions in a cube are descriptors that define the facts. They're typically how you want to slice and view fact data. Common dimensions are people, product, place, and time. A dimension consists of one or more columns. For example, a time dimension might contain the date, month, year, and other aggregation details or attributes. These columns can be used to analyze the transactions. They can also be used to create a hierarchical structure that lets you drill down from Year to Month to Date.
 
