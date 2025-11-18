@@ -254,7 +254,7 @@ To enter the Buyer schema codes, follow these steps.
 > [!NOTE]
 > For the buyer's identification, schema **9925** (Belgium VAT number) is used by default if you don't define another schema. Schema codes that you define through electronic document property types take priority over the other built-in **0088**, **0208**, or **9925** schema codes. The value of the **EndpointID** is retrieved from the buyer's active registration number, which you must create with the type that exactly matches the value of the buyer's **CustomerEndpointType** parameter.
 
-:::image type="content" source="emea-bel-einoices-endpoint.jpg" alt-text="Screenshot of that shows the customer Endpoint.":::
+:::image type="content" source="emea-bel-electronic-invoices-endpoint.jpg" alt-text="Screenshot of that shows the customer Endpoint.":::
 
 ## Configure units of measure
 
