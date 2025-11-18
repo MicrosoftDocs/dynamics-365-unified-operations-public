@@ -11,9 +11,8 @@ ms.collection: get-started
 
 # Create a cube from JSON (Preview)
 
-> [!IMPORTANT]
-> This article describes the **Data model builder (preview)** experience. The existing **Cubes** page remains available for backward compatibility until migration to the new experience is complete.  
-> To use the classic cube creation flow, see [Create a cube (Classic)](create-cubes.md).
+> [!NOTE]
+> This article describes the **Data model builder (preview)** experience. The existing **Cubes** page is still available. For information about classic cube creation, see [Create a cube](create-cubes.md).
 
 
 ## Overview
@@ -23,7 +22,7 @@ This option is ideal for partners, consultants, or administrators who need to de
 
 Unlike the Excel or dimension-based workflows, the JSON import defines the entire cube schema in a single step—making it especially efficient for template deployment or environment setup.
 
-For more information about cubes, facts, dimensions, or drivers, see [Key concepts in cube design](bpp-create-cubes.md#key-concepts) for an overview of how cubes are structured and used in Business performance planning.
+For more information about cubes, facts, dimensions, or drivers, see [Cubes (preview)](bpp-create-cubes.md#key-concepts) for an overview of how cubes are structured and used in Business performance planning.
 
 
 ### Create a cube from JSON
@@ -49,7 +48,7 @@ After upload, Business performance planning validates the file and checks that i
 - Driver and column definitions  
 
 > [!NOTE]
-> The **Data Model Builder (Preview)** currently supports importing only one cube per JSON file. If the uploaded file contains multiple cubes, an error message is displayed:  
+> The **Data model builder (preview)** currently supports importing only one cube per JSON file. If the uploaded file contains multiple cubes, an error message is displayed:  
 > **“Error parsing JSON: Multiple cubes import isn't supported. Upload one cube at a time.”**
 
 Once validated, a live preview of your cube model appears on the right-hand pane.
@@ -174,10 +173,11 @@ These changes are applied at the Dataverse level in which the updated structure 
 
 ## Next steps
 
-- [Create a cube from Excel (preview)](bpp-create-cube.md)  
+- [Create a cube from Excel (preview)](bpp-create-cubes.md)  
 - [Create a cube from JSON (preview)](bpp-json.md)  
 - [Load data using dataflows](load-data-dataflows.md)  
 - [Create calculated columns](calculated-columns.md)
+
 
 
 
