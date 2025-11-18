@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Human Resources
 [!include [banner](../includes/banner.md)]
 
 >[!NOTE]
-> This article describes the legacy cube creation process, available in Business performance planning versions 1.13 and earlier. Starting in version 1.14, a new experience is available under Cubes (Preview). For the new experience, see Creating cubes (Preview).
+> This article describes the legacy cube creation process, available in Business performance planning versions 1.13 and earlier. Starting in version 1.14, a new experience is available under Cubes (preview). 
 
 Fact data is a combination of multiple sources, or some level of transformation must be done to get the data into the correct structure for planning. When you load production data, we recommend that you use dataflows. Dataflows provide better support for typical production volume and complexity. They also provide a transformation experience, detailed status results when data is loaded, and the option to schedule refreshes of the data.
 
