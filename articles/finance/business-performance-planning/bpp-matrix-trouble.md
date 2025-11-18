@@ -9,13 +9,16 @@ ms.reviewer: twheeloc
 ms.collection: get-started
 
 ---
+
+
 # Matrix planning visual troubleshooting
 
 This article describes some known issues in the Matrix planning visual in Business performance planning.
 
-If the Edit button is unavailable or the visual doesn’t allow write-back, check the following common causes.
+## The Edit button is unavailable or the visual doesn’t allow write-back
+If the **Edit** button isn't available or the visual isn't allowing write-back, check the following common causes.
 
-## Missing fields from one or more cube dimensions
+### Missing fields from one or more cube dimensions
 To enable editing, the Matrix visual must include at least one field from every cube dimension. If even one dimension is missing, the **Edit** button remains disabled.
 
 Example:
