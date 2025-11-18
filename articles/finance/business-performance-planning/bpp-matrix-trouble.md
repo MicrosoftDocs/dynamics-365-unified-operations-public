@@ -1,11 +1,11 @@
 ---
 title: Matrix planning visual troubleshooting 
 description: Learn about some current known issues in the Matrix planning visual in Business performance planning.
-author: romainpham
-ms.author: twheeloc
+author: twheeloc
+ms.author: romainpham
 ms.topic: overview
 ms.date: 11/23/2025
-ms.reviewer: theeloc
+ms.reviewer: twheeloc
 ms.collection: get-started
 
 ---
