@@ -2117,7 +2117,9 @@
                        - name: Calculation in Free text invoice in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-free-text-invoice.md                        
                        - name: Calculation in Purchase requisition in Brazil Reformed Tax
-                         href: localizations/brazil/brazil-reform-calculation-purchase-requisition.md                         
+                         href: localizations/brazil/brazil-reform-calculation-purchase-requisition.md
+                       - name: Calculation in Purchase requisition for quotation (RFQ)in Brazil Reformed Tax
+                         href: localizations/brazil/brazil-reform-calculation-requisition-for-quotation.md         
                        - name: Calculation in Purchase order in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-purchase-order.md
                        - name: Calculation in Vendor invoice journal in Brazil Reformed Tax
