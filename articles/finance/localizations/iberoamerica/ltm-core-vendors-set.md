@@ -4,7 +4,7 @@ description: Learn about the vendor set configuration for Latin America, includi
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 11/18/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -17,18 +17,21 @@ You can define which document classes are allowed in transactions for vendors as
 
 ## Prerequisites
 
-Before you set up a vendor set, the following prerequisites must be met:
+Before you set up a vendor set, make sure that you meet the following prerequisites:
+
 - The legal entity has an address in a country or region within the LATAM localization.
 - The country or region-specific LATAM feature and the general feature are enabled.
-- Document classes that will be included must already exist.
+- Document classes that you want to include already exist.
 
 ## Set up a vendor set
 
+To set up a vendor set, follow these steps:
+
 1. Go to **Accounts payable** \> **Setup** \> **LATAM** \> **Vendors set** and create a new record.
-1. In the **Customers/Vendors set** section, complete the **Customers/Vendors set** field with a code that identifies the set.
+1. In the **Customers/Vendors set** section, enter a code that identifies the set in the **Customers/Vendors set** field.
 1. In the **Description** field, enter a brief description of the set.
 1. In the **Authorized vouchers** section, select the document classes for the set.
-1. In the **Default document class for documents** section, set the predetermined document classes that will be selected by default for each transaction type.
+1. In the **Default document class for documents** section, set the predetermined document classes that are selected by default for each transaction type.
 
     | Field                | Transaction                                |
     |----------------------|--------------------------------------------|
