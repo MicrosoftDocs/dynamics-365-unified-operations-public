@@ -17,14 +17,13 @@ ms.dyn365.ops.version:
 
 ## Overview
 
-To enable Business performance planning to write back budgets and forecasts to Dynamics 365 Finance, Dataverse must be connected to the corresponding Finance environment.  
-This connection is defined using an environment variable and a set of virtual entities that provide access to Finance data such as ledgers, budget models, and dimension structures.
+To enable Business performance planning to write back budgets and forecasts to Dynamics 365 Finance, Dataverse must be connected to the corresponding Finance environment. This connection is defined using an environment variable and a set of virtual entities that provide access to Finance data such as ledgers, budget models, and dimension structures.
 
 If this setup is incomplete, the export fails with errors: 
  - Finance service not reachable
  - No permission to execute
 
-## Configure the Finance connection environment variable
+### Configure the Finance connection environment variable
 
 During package deployment, the environment variable is created automatically. If your Dataverse environment was already linked to Dynamics 365 Finance, the variable value is populated automatically.  
 If not, it must be set manually.
@@ -47,7 +46,7 @@ If not, it must be set manually.
 > [!NOTE]
 > This variable is automatically created during installation. If the Finance–Dataverse link was configured later, you must update this variable manually to establish the connection.
 
-## Enable virtual entities in Dataverse
+### Enable virtual entities in Dataverse
 
 Business performance planning relies on virtual entities to access Finance data such as ledgers, budget models, and dimension structures. These must be visible and accessible in the environment.
 
@@ -88,8 +87,9 @@ After completing the setup, follow these steps to validate the connection:
 
 
 ## Related links
-- [Write back to Dynamics 365 Finance budget register entry](write-back-to-bre.md)  
-- [Business performance planning overview](overview.md)
+- [Write back to Dynamics 365 Finance budget register entry](bpp-bud-reg-write.md)  
+- [Business performance planning overview](business-performance-planning-overview.md)
+
 
 
 
