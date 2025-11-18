@@ -33,7 +33,7 @@ The first step is to select a data source that lets you:
 - Restore cubes from backup configurations.
 
 To create a cube from a JSON file, follow these steps:
-1. Go to **Model > Cubes (Preview)**, select **+ New cube**.
+1. Go to **Model > Cubes (preview)**, select **+ New cube**.
 2. In the **Data source** step, choose **Import cube (JSON)**.
 
 
@@ -49,7 +49,7 @@ After upload, Business performance planning validates the file and checks that i
 
 > [!NOTE]
 > The **Data model builder (preview)** currently supports importing only one cube per JSON file. If the uploaded file contains multiple cubes, an error message is displayed:  
-> **“Error parsing JSON: Multiple cubes import isn't supported. Upload one cube at a time.”**
+> **Error parsing JSON: Multiple cubes import isn't supported. Upload one cube at a time.**
 
 Once validated, a live preview of your cube model appears on the right-hand pane.
 
@@ -59,7 +59,7 @@ Once validated, a live preview of your cube model appears on the right-hand pane
 The **Review** page summarizes the cube configuration extracted from the JSON file and displays:
 - The cube name and its associated Dataverse table name  
 - Drivers (numeric columns)
-- Calculated columns (if any)  
+- Calculated columns   
 - Fact table  
 - Dimensions and detected relationships  
 
@@ -177,6 +177,7 @@ These changes are applied at the Dataverse level in which the updated structure 
 - [Create a cube from JSON (preview)](bpp-json.md)  
 - [Load data using dataflows](load-data-dataflows.md)  
 - [Create calculated columns](calculated-columns.md)
+
 
 
 
