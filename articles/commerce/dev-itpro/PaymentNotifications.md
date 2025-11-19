@@ -1,26 +1,43 @@
+---
+title: Enable critical payment notifications using the Adyen connector 
+description: Learn how to receive critical payment notifications in the Commerce HQ using the Adyen payment connector.
+author: shajain
+ms.date: 11/20/2025
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: shajain
+ms.search.validFrom: 2025-11-15
+---
 
+# Enable critical payment notifications via Adyen connector
 
-This article explains how merchants can leverage the Asynchronous Payment Notification framework to receive crucial and actionable updates from Adyen, which are then displayed in the Commerce HQ. This system provides the operations team with the necessary visibility to take timely actions based on the received information.
+[!include [banner](../includes/banner.md)]
+
+This article explains how merchants can leverage the Asynchronous Payment Notification framework to receive crucial and actionable notifications from Adyen, which are then displayed in the Commerce HQ. This system provides the operations team with the necessary visibility to take timely actions based on the received information.
  
-Minimum required version
+## Minimum required version
 Commerce headquarters: 10.0.46
  
-Prerequisites:
-##Link your Commerce environment to a Dataverse environment
-The payment notification service uses Dataverse. Therefore, to receive payment notifications, you must link your Commerce environment to a corresponding Dataverse environment. Learn more in Connect finance and operations apps with a new Microsoft Dataverse instance and Connect finance and operations apps with an existing Microsoft Dataverse instance.
+## Prerequisites:
+### Link your Commerce environment to a Dataverse environment
+The payment notification service uses Dataverse. Therefore, to receive payment notifications, you must link your Commerce environment to a corresponding Dataverse environment. Learn more in [Connect finance and operations apps with a new Microsoft Dataverse instance](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv) and [Connect finance and operations apps with an existing Microsoft Dataverse instance](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv).
  
-##Required role to complete the setup
+## Required role to complete the setup
 Some of the steps require a Commerce headquarters user who is either an administrator or has the Commerce Payment Administrator role assigned to them in Microsoft Power platform.
-#Setup
-The following setup steps are same as the steps required to enable the Pay by Link capability. So, if you have enabled the Pay by Link feature, then the steps mentioned in the sections "Enable the features required for receiving the payment notifications" and "Create a webhook to receive payment notifications from Adyen" could be skipped as they would already be completed.
-##Enable the features required for receiving the payment notifications
+
+## Setup
+The following setup steps are same as the steps required to enable the Pay by Link capability. So, if you have enabled the Pay by Link feature, then the steps mentioned in the following two sections **"Enable the features required for receiving the payment notifications"** and **"Create a webhook to receive payment notifications from Adyen"** could be skipped as they would already be completed.
+
+### Enable the features required for receiving the payment notifications
 To enable payment notifications for pay by link, enable the following features in the Feature management workspace:
-•	Enhanced wallet support and payment improvements. Learn more in Wallet payment support.
-•	The unified payments experience in POS. Learn more in Check out faster with optimized payment flows.
-•	The Payments Notification feature.
+- Enhanced wallet support and payment improvements. Learn more in [Wallet payment support](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/wallets).
+- The unified payments experience in POS. Learn more in [Check out faster with optimized payment flows](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/faster-checkout-pos).
+- "Enable Payments Notification Feature".
  
- 
-## Create a webhook to receive payment notifications from Adyen
+### Create a webhook to receive payment notifications from Adyen
 Refer the instructions mentioned in the following link and complete the steps until the section "Test the connection to the payment notification service: https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/pay-by-link-overview#create-a-webhook-to-receive-payment-notifications-from-adyen. 
  
 With these steps Dynamics 365 Commerce can receive authorization notifications from Adyen. However, to enable the payments notification service to send other business critical notifications to Commerce HQ navigate to Commerce shared parameters -> Payment notifications form and enable the "Persist payment processor notifications" configuration. 
