@@ -127,6 +127,11 @@ To import e-invoicing configuration files, follow these steps.
 > 1. Fiscal documents mapping
 > 1. NF-e submit export format
 
+> [!TIP]
+> For importing the configuration files, refer to the Brazil tax reform video: Import configuration.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=379f59fe-54cf-40f4-af7e-3fe7c09cc082] 
+
 ## Create tax calculation feature 
 
 To create the tax calculation feature, follow these steps.
@@ -257,6 +262,11 @@ To enable advanced tax calculation, follow these steps.
    - **Currency**.
 1. The **Business process** field is inactive.
 
+> [!TIP]
+> For creating , configuring and enabling the tax calculation feature, refer to the Brazil tax reform: Configuring video.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cc8feb98-d26a-4c07-bc14-015648a1a360)
+
 ## Hints
 
 - Create and maintain reformed tax codes exclusively within the tax feature of the Advanced Tax Calculation engine (for example, CBS and IBS).
@@ -267,7 +277,9 @@ To enable advanced tax calculation, follow these steps.
 ## Related set up information
 
 - **Sales tax authorities**: Learn more avout Sales tax authorities in [Set up sales tax authorities](/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-authorities).
--**Ledger posting groups**: Learn more about Ledger posting groups in [Set up Ledger posting groups for sales tax](/dynamics365/finance/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax).
--**Settlement periods**: Learn more about Settlement periods in [Set up sales tax settlement periods](/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-settlement-periods).
+- **Ledger posting groups**: Learn more about Ledger posting groups in [Set up Ledger posting groups for sales tax](/dynamics365/finance/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax).
+- **Settlement periods**: Learn more about Settlement periods in [Set up sales tax settlement periods](/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-settlement-periods).
+- **Import configuration**: Learn more about importing the configuration files in the video [Brazil tax reform : Import configuration](https://learn-video.azurefd.net/vod/player?id=379f59fe-54cf-40f4-af7e-3fe7c09cc082)
+- **Configuring** : Learn more about creating, configuring and enabling tax calculation feature in the video [Brazil tax reform: Configuring](https://learn-video.azurefd.net/vod/player?id=cc8feb98-d26a-4c07-bc14-015648a1a360)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn about the budget funds available parameter and how to configu
 author: music727
 ms.author: mibeinar
 ms.topic: article
-ms.date: 07/24/2024
+ms.date: 09/15/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -19,8 +19,7 @@ ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 
 [!include [banner](../includes/banner.md)]
 
-
-This article explains the **Only track amounts in the budget funds available calculation** parameter and provides information that helps you configure budget control to optimize management of your organization's financial resources.
+This article provides information that helps configure budget control to optimize management of your organization's financial resources.
 
 ## Enhanced calculation parameter for budget funds available
 
@@ -30,10 +29,27 @@ Some budget control configuration options must have specific settings for this p
 
 | If this option is selected | This option must also be selected |
 | ------------------------- | -------------------------------- |
-| Budget reservations for pre-encumbrances | Budget reservations for encumbrances *and* Actual expenditures |
+| Budget reservations for preencumbrances | Budget reservations for encumbrances *and* Actual expenditures |
 | Budget reservations for encumbrances | Actual expenditures |
-| Budget reservations for encumbrances with Purchase Requisition type documents | Budget reservations for pre-encumbrances |
+| Budget reservations for encumbrances with Purchase requisition type documents | Budget reservations for preencumbrances |
 
-This parameter affects only new documents as well as new budget control configurations during activation. Amounts for existing documents will continue to be tracked and shown in the budget control statistics inquiry until a budget funds available setting is changed and the new budget control configuration is activated. At that point, budget tracking data will be removed for documents that were removed from the budget funds available calculation. If you try to activate new budget control configuration that doesn't align with the requirements defined in the table above, an error message will appear. 
+This parameter affects only new documents and new budget control configurations during activation. Amounts for existing documents continue to be tracked and shown in the budget control statistics inquiry until a budget funds available setting is changed and the new budget control configuration is activated. At that point, budget tracking data is removed for documents that were removed from the budget funds available calculation. If you try to activate new budget control configuration that doesn't align with the requirements defined in the table above, an error message appears. 
 
-We recommend that you leave the **Unposted actual expenditures** option cleared. If it's selected, a time-consuming budget control calculation will be done on unposted documents, such as pending vendor invoices.
+We recommend that you leave the **Unposted actual expenditures** option cleared. If it's selected, a time-consuming budget control calculation is done on unposted documents, such as pending vendor invoices.
+
+To prevent incorrect setup on the **Document and journals** tab in the **Budget control configuration** that could lead to the inaccurate budget tracking, the following specific configuration options must be applied:
+
+| If this option is selected to include on Documents and journals tab | Select this option on the Budget funds available tab | This option is optional on the Budget funds available tab |
+| ------------------------- | -------------------------------- |-------------------------------- |
+| **Purchase order** (header or line entry) | **Budget reservations for encumbrances** | **Budget reservations for unconfirmed encumbrances** and **Reduction to Budget reservations for unconfirmed encumbrances** |
+| **Purchase requisition** (header or line entry) | **Budget reservations for preencumbrances** | **Budget reservations for unconfirmed preencumbrances** |
+| **General budget reservation** (header or line entry) | **Budget reservations for encumbrances** | **Budget reservations for unconfirmed encumbrances** and **Reduction to Budget reservations for unconfirmed encumbrances** |
+
+In addition, to ensure that spending is properly tracked and controlled throughout the procurement and financial process, some **Budget control** transaction types cannot be turned off when related processes or features are active. If user attempts to change these settings, the system displays a warning.
+
+| When warning appears | Reason for warning |
+| ------------------------- | -------------------------------- |
+| When user tries to turn off budget checks for **Vendor invoices** while **Purchase orders** are enabled or **Budget reservations** are enabled | **Vendor invoice** budget tracking must remain active to properly reduce commitments created by purchase orders or reservations |
+| When user tries to turn off budget checks for **Purchase orders** while **Purchase requisitions** are enabled or **Commitments** are enabled or **Budget reservations for purchase orders** are enabled | **Purchase order** budget tracking must remain active to relieve pre-commitments created by requisitions or commitments |
+| When **French regulatory features** are enabled | French compliance rules require purchase requisitions to remain active for proper budget control |
+| When the **Budget reservation** functionality is not enabled | If the feature is turned off, this setting cannot be changed because its functionality is unavailable. |

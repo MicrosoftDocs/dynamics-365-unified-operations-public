@@ -18,13 +18,6 @@ Some high-volume or space-constrained warehouses must ship more quantity of an i
 
 The feature enables more replenishment work to be created than can fit in a location, and it blocks replenishment work from being completed when the location is full. As inventory in the picking location drops below a configurable threshold, more replenishment work is made available.
 
-## Turn on the Replenishment over location capacity feature
-
-To make this feature available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order):
-
-1. *Organization-wide work blocking* (As of Supply Chain Management version 10.0.21, this feature is mandatory and can't be turned off again.)
-1. *Replenishment over location capacity* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off again.)
-
 ## Set up the feature for the example scenario
 
 This section provides guidelines and an example that shows how to set up this feature and prepare sample data for the example scenario that is provided later in this article.
@@ -93,9 +86,6 @@ Enable the replenish over capacity functionality on the location profile.
 > Location profile replenishment settings only affect replenishment work. Other types of work are still subject to configured stocking limits.
 
 ### Wave step code
-
-> [!NOTE]
-> To set up a wave step code as described here, you might first have to use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the feature that is named *Organization wide wave step code*. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.
 
 1. Go to **Warehouse Management \> Setup \> Waves \> Wave step codes**.
 1. Select **New**, and set the following values:

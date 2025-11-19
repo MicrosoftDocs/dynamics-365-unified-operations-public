@@ -38,16 +38,20 @@ For more information about how to resolve issues in on-premises environments, se
     # If you have multiple folders in there from older deployments, then please remove those.
     # It is not recommended to use the same agent share for multiple environments.
 
+    #& $agentShare\scripts\TSG_SysClassRunner.ps1 -agentShare $agentShare
+    
     #& $agentShare\scripts\TSG_UpdateFRDeployerConfig.ps1 -agentShare $agentShare
 
     #& $agentShare\scripts\TSG_WindowsAzureStorage.ps1 -agentShare $agentShare
 
-    #& $agentShare\scripts\TSG_SysClassRunner.ps1 -agentShare $agentShare
     
     #& $agentShare\scripts\TSG_RemoveFilesFromZip.ps1 -agentShare $agentShare -filesToRemove 'Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingMapping.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingMapping.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingServiceContracts.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingServiceContracts.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics.ElectronicReporting.Instrumentation.dll','Packages\TaxEngine\bin\Microsoft.Dynamics.ElectronicReporting.Instrumentation.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkForAx.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkForAx.pdb'
 
     #& $agentShare\scripts\TSG_EnableGMSAForAOS.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-AXSF$
+    
     #& $agentShare\scripts\TSG_EnableDixfService.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-Dixf$ -DMFShare "\\servername\dixf-share"
+
+    #& $agentShare\scripts\TSG_DisableMRDeployment.ps1 -agentShare $agentShare
 
     # The following script (when enabled) configures HTTPS for SSRS, and enables reporting services to run under a gMSA account.
     # NOTE!!! If you have used an IP address in LCS for your SSRS server, update the IP address to a Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed on the Environment page. Go to Maintain > Update settings.
@@ -532,6 +536,11 @@ Write-Output "Successfully updated the configuration HTTPS (443) for Reporting S
 ## <a name="SSRSIdentityClient"></a>TSG\_UpdateSSRSIdentityClient.ps1
 
 The following script addresses an issue where the Dynamics 365 Reporting services extensions fail to install. This problem arises due to the version of Microsoft.Identity.Client bundled with Dynamics 365. During installation, the Reporting services configuration updates the SSRS DLLs and configuration files with outdated binding redirect versions, leading to compatibility issues.
+
+> [!NOTE]
+> This issue is resolved in the following versions: 
+> - 10.0.45 - Platform version - 7.0.7690.82
+> - 10.0.44 - Platform version - 7.0.7606.173
 
 > [!NOTE]
 > The script relies on WinRM for remote execution. If you're unable to run PowerShell scripts remotely, you can extract the embedded script content from the $scriptContent variable and save it locally on your BI nodes as LBDUpdateSSRSClientIdentity.ps1. In that case, you need to run the script manually on each BI node during deployment.

@@ -24,7 +24,9 @@ The app log stores a record of local app operations, including sign-in attempts,
 To view the app log, open the **Local log view** page as described in the following procedure.
 
 1. Open the Warehouse Management mobile app on the device where you're having trouble.
-1. On the **Welcome** page, select **Set up connection** (or select **Connect** and then select **Set up connection**).
+1. Do one of the following steps:
+    - On the **Welcome** page, select **Set up connection** (or select **Connect** and then select **Set up connection**).
+    - On the **Main menu** page, select **Connection settings** and then select **Set up connection**.
 1. On the **Connection setup** pop-up menu, select **Diagnostics**.
 1. On the **Diagnostics** page, select **Local log view**.
 

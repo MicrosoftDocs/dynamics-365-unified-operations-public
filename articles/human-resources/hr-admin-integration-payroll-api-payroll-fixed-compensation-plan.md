@@ -3,7 +3,7 @@
 
 title: Payroll fixed compensation plan
 description: This article provides details and an example query for the Payroll fixed compensation plan entity in Dynamics 365 Human Resources.
-author: jcart
+author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
 # optional metadata
@@ -16,7 +16,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: twheeloc
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---

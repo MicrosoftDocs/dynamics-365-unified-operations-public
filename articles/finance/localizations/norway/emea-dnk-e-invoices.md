@@ -146,7 +146,7 @@ To additionally configure sales tax codes, follow these steps.
 
 When you generate electronic invoices in OIOUBL format, the tax information in the output XML file must be hierarchically structured in a specific way.
 
-The top level of the hierarchy is **Tax Scheme**. <!-- The provided link appears to be broken For the official list of tax schemes that are applicable to the OIOUBL format, see [OIOUBL Tax Schemes](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TaxSchemeID-1.5.pdf). -->
+The top level of the hierarchy is **Tax Scheme**. <!-- The provided link appears to be broken For the official list of tax schemes that are applicable to the OIOUBL format, see [OIOUBL Tax Schemes](https://oioubl21.oioubl.dk/documents/da/da/Kodelister/OIOUBL_CODE_TAXSCHEMEID.pdf). -->
 
 The next level of tax data grouping, within the tax scheme, is **Tax Category**. For the official list of tax categories that are applicable to the OIOUBL format, see [OIOUBL Tax Categories](https://oioubl21.oioubl.dk/documents/da/da/Kodelister/OIOUBL_CODE_TAXCATEGORYID.pdf). 
 

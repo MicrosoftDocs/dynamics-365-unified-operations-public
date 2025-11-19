@@ -1,10 +1,9 @@
 ---
 title: Set up Dynamics 365 Payment Connector for Adyen
-description: This article describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
+description: Learn how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 06/24/2025
+ms.date: 11/04/2025
 ms.topic: how-to
-audience: IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: rassadi
@@ -27,10 +26,10 @@ To use the Dynamics 365 Payment Connector for Adyen, you must have a separate ag
 ## Setup and configuration
 
 > [!NOTE]
-> These instructions assume that you've already signed up for a merchant account with Adyen, and that you have access to the Adyen merchant dashboard.
+> These instructions assume that you already signed up for a merchant account with Adyen, and that you have access to the Adyen merchant dashboard.
 
 > [!IMPORTANT]
-> Adyen no longer supports [hosted payment pages](https://docs.adyen.com/online-payments/classic-integrations/hosted-payment-pages) as of October 2022. When configuring the Dynamics 365 Payment Connector for Adyen, version V001 is no longer be supported for call center and Commerce e-commerce because it uses hosted payment pages from Adyen. You should instead use version V002 (with origin key) or version V003 (with client key). Microsoft recommends using version V003, which is available in Commerce versions 10.0.29 and later. Ensure that you set the **Allowed Origins** in the Adyen configuration by adding the full URL (for example, 'https://www.adventure-works.com') for your site (for e-commerce) or Commerce headquarters (for call center).
+> Adyen no longer supports [hosted payment pages](https://docs.adyen.com/online-payments/classic-integrations/hosted-payment-pages) as of October 2022. When you configure the Dynamics 365 Payment Connector for Adyen, version V001 is no longer be supported for call center and Commerce e-commerce because it uses hosted payment pages from Adyen. You should instead use version V002 (with origin key) or version V003 (with client key). Microsoft recommends using version V003, which is available in Commerce versions 10.0.29 and later. Ensure that you set the **Allowed Origins** in the Adyen configuration by adding the full URL (for example, 'https://www.adventure-works.com') for your site (for e-commerce) or Commerce headquarters (for call center).
 
 ### Prerequisites
 
@@ -140,10 +139,10 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
     | Version | Set to **V003** for EFT settings in the hardware profile. **V002** is required for call center and storefront only. Version **V001** is no longer supported. | Yes | Yes | "V003" |
-    | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
+    | Gateway environment | Enter the Adyen gateway environment to which to map. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Optional Domain | The optional domain is required for live environments and should be obtained by contacting Adyen. This domain is the unique identifier for your live environment in the format **[random]-[company name]**, and is present as the prefix inside the API URLs under **Account \> API URLs** in your company's live account on the Adyen Customer Area portal. For more information, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints).| Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
-    | Terminal architecture | This field must be set to **Local** for local communications. For more information about the different Terminal API architectures, see the [Introducing the Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) page on the Adyen website. | Yes | Yes | Local |
+    | Terminal architecture | This field must be set to **Local** for local communications. | Yes | Yes | Local |
     | Local Password phrase | Enter the Adyen key passphrase for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | keypassphrase123 |
     | Local Key Identifier | Enter the Adyen key identifier for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | mykey |
     | Local Key Version | Enter the Adyen key version for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | 0 |
@@ -180,7 +179,7 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Optional Domain | The optional domain is required for live environments and should be obtained by contacting Adyen. This domain is the unique identifier for your live environment in the format **[random]-[company name]**, and is present as the prefix inside the API URLs under **Account \> API URLs** in your company's live account on the Adyen Customer Area portal. For more information, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints).| Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
-    | Terminal architecture | This field must be set to **Cloud** for cloud communication with the payment terminal. For more information about the different terminal API architectures, see the [Introducing the Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) page on the Adyen website. | Yes | Yes | Cloud |
+    | Terminal architecture | This field must be set to **Cloud** for cloud communication with the payment terminal. | Yes | Yes | Cloud |
     | Local Password phrase | This setting is used for local payment terminal communication only. | No | No | *leave blank* |
     | Local Key Identifier | This setting is used for local payment terminal communication only. | No | No | *leave blank* |
     | Local Key Version | This setting is used for local payment terminal communication only. | No | No | *leave blank* |
@@ -202,13 +201,35 @@ The Adyen payment connector can be configured to communicate with devices via th
 
 ##### Configure the PIN pad
 
+To configure the PIN pad, follow these steps.
+
 1. On the **PIN pad** FastTab, in the **PIN pad** field, select **Network**.
 1. In the **Device name** field, enter **MicrosoftAdyenDeviceV001**.
+
+##### Route to the region specific Adyen endpoint for payment terminals
+
+Starting with Commerce version 10.0.44, you can use region-specific endpoints for Adyen endpoints. You can enter the following supported values in the **Gateway environment** property of the payment connector in the hardware profile used by the POS register.
+ 
+- test
+- live
+- live-us
+- live-au
+- live-apse
+ 
+> [!NOTE]
+> The **Optional Domain** property of the payment connector should be empty for POS use. If a value is specified, it's ignored. 
+ 
+This change is behind a flight named **UseNewGatewayMappingForTerminal**, and its status for the various versions is as follows:  
+
+- Commerce version 10.0.46: Enabled by default.
+- Commerce versions 10.0.45 and 10.0.44: Disabled by default. 
+ 
+For Commerce versions 10.0.44 and 10.0.45, customers can enable this functionality themselves by adding "UseNewGatewayMapping: true" to the **Custom settings** property of the connector.  
 
 #### Set up a Dynamics 365 register
 
 > [!NOTE]
-> These instructions assume that there is a dedicated mapping between a POS register and an Adyen payment terminal. For a hardware station that is based on Microsoft Internet Information Services (IIS), go to **Retail and Commerce \> Channels \> Stores \> All stores**, and select the store that you're setting up. Then, on the page for that store, on the **Hardware Stations** FastTab, follow the same instructions.
+> These instructions assume that there's a dedicated mapping between a POS register and an Adyen payment terminal. For a hardware station that's based on Microsoft Internet Information Services (IIS), go to **Retail and Commerce \> Channels \> Stores \> All stores**, and select the store that you're setting up. Then, on the page for that store, on the **Hardware Stations** FastTab, follow the same instructions.
 
 Payment terminals can't be used by multiple hardware stations. If a payment terminal is shared by multiple POS devices, an IIS hardware station must be deployed to manage communications with the payment terminal. 
 
@@ -222,7 +243,7 @@ Payment terminals can't be used by multiple hardware stations. If a payment term
 1. On the Action Pane, on the **Register** tab, in the **Hardware** group, select **Configure IP addresses**.
     1. **If using the "Local" architecture:** On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the IP address of the terminal in the following format: `https://<IP address>:8443/nexo/<POIID>`. **\<IP address\>** and **\<POIID\>** are the values that you made a note of when you onboarded the Adyen payment terminal (for example, `https://192.168.1.3:8443/nexo/MX925-123456789`). The values in this URL are case-sensitive.
     1. **If using the "Cloud" architecture:** On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the **POIID** value that you made a note of when you onboarded the Adyen payment terminal (for example, `MX925-123456789`). The values in this field are case-sensitive.
-1. If the payment terminal includes an onboard printer and you want to print receipts from the processor using that printer, enter **123** in the **Port** field that is separate from the **IP address** field in the **PIN pad** FastTab.
+1. If the payment terminal includes an onboard printer and you want to print receipts from the processor using that printer, enter **123** in the **Port** field that's separate from the **IP address** field in the **PIN pad** FastTab.
 
 #### Update the Store Commerce app or IIS Hardware Station configuration
 
@@ -247,7 +268,7 @@ If you're packaging your own version of the Store Commerce app by using the Comm
 
 To configure the Dynamics 365 Payment Connector for Adyen for call center payments, follow the instructions in the [Set up a processor for new credit cards](#set-up-a-processor-for-new-credit-cards) section earlier in this article.
 
-The configuration in headquarters at **Accounts receivable \> Payments setup \> Payment service** is the connector configuration used in the call center. 3D Secure (3DS) authentication isn't supported in call center. Digital wallet modern payment methods that require users to sign in are also not supported in call center, because call center agents are prohibited from collecting or using user passwords on behalf of customers.
+The configuration in headquarters at **Accounts receivable \> Payments setup \> Payment service** is the connector configuration used in the call center. 3D Secure (3DS) authentication isn't supported in call center. Digital wallet modern payment methods that require users to sign in also aren't supported in call center, because call center agents are prohibited from collecting or using user passwords on behalf of customers.
 
 > [!NOTE]
 > Merchants should train call center users to ensure credit and debit card information is only entered in the iFrame payment form to reduce the changes of sensitive data breach.
@@ -292,10 +313,31 @@ To configure the Adyen connector for online stores, follow these steps.
 
 > [!IMPORTANT]
 > - If 3D Secure (3DS) is enabled with Adyen, you must complete the following required steps if they apply to your setup.
->      1. If you're using Commerce versions 10.0.40, 10.0.41, or 10.0.42, in Commerce headquarters, navigate to the online channel that's mapped to your e-commerce website.
+>      1. If you're using Commerce versions 10.0.40, 10.0.41, or 10.0.42, in Commerce headquarters, navigate to the online channel mapped to your e-commerce website.
 >      1. Expand the Adyen payment connector setup section, and in the **Custom settings** property of the payment connector, add the following key value pair: `{"D365PaymentsIsCheckoutThreeDS1AuthorisationBehaviorEnabled": "true"}`.
 >      1. Run the **1070** and **1110** distribution schedule jobs. Once these jobs are completed, you must contact Adyen customer support to set the **checkoutThreeDS1AuthorisationBehavior** parameter to **Manual** for your merchant account.
 > -  Starting with Commerce version 10.0.43, you don't need to update the **Custom settings** property in Commerce headquarters because it's enabled by default. However, you must still contact Adyen customer support to set the **checkoutThreeDS1AuthorisationBehavior** parameter to **Manual** for your merchant account. 
+
+### Route to the region specific Adyen endpoint for call center and online stores
+
+Starting with Commerce version 10.0.44, you can use region-specific endpoints for Adyen endpoints. You can enter the following supported values in the **Gateway environment** property of the payment connector on the **Payment services** form (for call center) or **Online store** form (for e-commerce).
+ 
+- test
+- live
+- live-us
+- live-au
+- live-apse
+ 
+A prefix is required for all live gateways (includes live-xx) to ensure that all requests are routed to the correct server. To find the prefix value, on the Adyen portal under **Developers \> API URLs**, select the appropriate data center based on your region and then copy the prefix value. Depending on the channel where you're making this change, paste the prefix into the **Optional Domain** property field of the payment connector under the **Payment services** form or the **Online store** form. Adyen's guidance is to use endpoints that are geographically closest to the region in which your infrastructure is deployed. To use location-based live endpoints, contact the Adyen Support team. 
+
+> [!IMPORTANT]
+> If the **Optional Domain** value isn't specified, then payment processing issues occur because the checkout gateway uses the incorrect endpoint.
+
+This change is behind a flight named **UseNewGatewayMapping**, and its status for the various versions is as follows:  
+- Commerce version 10.0.46: Enabled by default  
+- Commerce versions 10.0.45 and 10.0.44: Disabled by default 
+ 
+For Commerce versions 10.0.44 and 10.0.45, customers can enable this functionality themselves by adding "UseNewGatewayMapping: true" to the **Custom settings** property of the connector.  
 
 ## Next steps
 
@@ -312,3 +354,6 @@ For answers to frequently asked questions regarding the Dynamics 365 Payment Con
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
+
+
+

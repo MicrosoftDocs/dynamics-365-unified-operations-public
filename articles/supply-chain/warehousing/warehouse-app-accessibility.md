@@ -52,4 +52,5 @@ By supporting these screen readers, the Warehouse Management mobile app helps en
 
 ## Next steps
 
+- [User settings, color themes, and sound themes](warehouse-app-user-settings-themes.md)
 - [Mobile device user settings](mobile-device-user-settings.md)

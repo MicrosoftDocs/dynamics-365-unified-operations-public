@@ -43,7 +43,7 @@ Yes, the Asset Management mobile app is available in all the same languages as S
 
 ## Where can I go to discuss the app with the community and submit suggestions to Microsoft?
 
-The [Asset Management Viva Engage (Yammer) group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=17556554&view=all) is a great place to go if you want to exchange tips, ask questions, or submit suggestions for improvement. Yammer group participants include Microsoft partners, customers, experts, and employees.
+The [Asset Management](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc3MjY5OTg1MjgifQ) community on Microsoft Viva Engage is a great place to go if you want to exchange tips, ask questions, or submit suggestions for improvement. Viva Engage community participants include Microsoft partners, customers, experts, and employees.
 
 ## How can I diagnose "Error when trying to retrieve data from the network" issues?
 

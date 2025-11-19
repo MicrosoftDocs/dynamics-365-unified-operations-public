@@ -15,14 +15,14 @@ items:
         items:
         - name: What's new or changed in Platform updates home page
           href: ../fin-ops/get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.46 (October 2025)
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-46.md
         - name: Platform updates for version 10.0.45 (September 2025)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-45.md
         - name: Platform updates for version 10.0.44 (April 2025)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-44.md
         - name: Platform updates for version 10.0.43 (January 2025)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-43.md
-        - name: Platform updates for version 10.0.42 (December 2024)
-          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-42.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1873,7 +1873,7 @@ items:
           items:
             - name: User security governance overview
               href: ../fin-ops/sysadmin/security-gov-overview.md
-            - name: License usage summary report (preview)
+            - name: License usage summary report
               href: ../fin-ops/sysadmin/security-gov-license-usage-summary.md
             - name: Set up security categories
               href: ../fin-ops/sysadmin/security-category.md
@@ -1911,8 +1911,12 @@ items:
           href: sysadmin/extensible-data-security-policies.md
         - name: Create a security policy
           href: sysadmin/create-simple-security-policy.md
-      - name: Stay compliant with user licensing requirements
-        href: sysadmin/stay-compliant-user-license-requirement.md
+      - name: Compliance
+        items:
+        - name: Stay compliant with user licensing requirements
+          href: sysadmin/stay-compliant-user-license-requirement.md
+        - name: Prepare for User validation
+          href: sysadmin/prepare-for-user-validation.md
       - name: View independent software vendor license status
         href: sysadmin/view-isv-license-status.md
       - name: Process automation
@@ -2343,8 +2347,6 @@ items:
         href: ../fin-ops/copilot/immersive-home.md
       - name: Chat with finance and operations data
         href: copilot/chat-with-fno-data.md
-      - name: Use attachments with Copilot
-        href: copilot/copilot-attachments.md
       - name: Enable Copilot capabilities and features
         items:
         - name: Enable Copilot capabilities in finance and operations apps
@@ -2357,28 +2359,42 @@ items:
           href: copilot/extend-copilot-generative-help.md
         - name: Enable enhanced user feedback for Copilot and related experiences
           href: copilot/enable-copilot-feedback.md
-      - name: Extending Copilot capabilities in finance and operations apps
+      - name: Building Copilot and agent capabilities
         items:
         - name: Overview
           href: copilot/extend-copilot.md
         - name: Architecture of Copilot for finance and operations
           href: copilot/copilot-architecture.md
-        - name: Use Model Context Protocol for finance and operations
-          href: copilot/copilot-mcp.md
         - name: Using application context with Copilot
           href: copilot/copilot-application-context.md
         - name: Create client plugins for Copilot in finance and operations apps
           href: copilot/copilot-client-plugins.md
         - name: Create AI tools with finance and operations business logic (preview)
           href: copilot/copilot-ai-plugins.md
+        - name: Extend attachments with Copilot
+          href: copilot/copilot-attachments.md
+        - name: Customize the zero prompt experience (preview)
+          href: copilot/copilot-zero-prompt.md
+        - name: MCP for finance and operations apps
+          items:
+          - name: Use Model Context Protocol for finance and operations
+            href: copilot/copilot-mcp.md
+          - name: Build an agent with Dynamics 365 ERP MCP (preview)
+            href: copilot/build-agent-mcp.md
         - name: Tutorials
           items:
-          - name: Extending Copilot capabilities with low-code plugins
+          - name: Extend Copilot capabilities with low-code plugins
             href: copilot/tutorial-create-low-code-plugins.md
           - name: Create client plugins for Copilot in finance and operations apps
             href: copilot/tutorial-create-client-plugins.md
           - name: Create AI tools with finance and operations business logic
             href: copilot/tutorial-create-ai-plugins.md
+          - name: Trigger autonomous agents with business events
+            href: copilot/tutorial-agent-triggers.md
+          - name: Add knowledge to agents
+            href: copilot/tutorial-agent-knowledge.md
+          - name: Enable agent data operations with connectors
+            href: copilot/tutorial-agent-connector.md
     - name: Responsible AI
       items:
       - name: Overview

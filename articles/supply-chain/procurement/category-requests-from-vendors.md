@@ -17,11 +17,7 @@ The category request process lets vendors request that new procurement categorie
 
 Category requests are initiated by vendors in the **Vendor information** workspace. They are then submitted to your agency for review and approval. Approved categories are added to the list of procurement categories for the vendor's account.
 
-## Turn the category requests from vendors feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, it's turned on by default. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Allow vendors to apply for procurement categories through vendor collaboration* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-If this feature is turned on, you can still manually add procurement categories to vendor accounts. For information, see [Approve vendors for specific procurement categories](tasks/approve-vendors-specific-procurement-categories.md).
+You can also manually add procurement categories to vendor accounts. Learn more in [Approve vendors for specific procurement categories](tasks/approve-vendors-specific-procurement-categories.md).
 
 ## Vendor collaboration requirements
 

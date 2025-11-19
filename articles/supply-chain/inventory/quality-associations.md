@@ -118,9 +118,9 @@ Follow these steps to create a quality association:
         - *Create item sampling work only* – Uses a minimal quality process that creates quality item sampling work but doesn't create quality orders or inventory blocking. This option only applies when the **Applicable warehouse type** is set to *Quality order for warehouse processes only*.
 
 1. On the **Specifications** FastTab, make the following settings:
-    - **Test group** – Select a test group with tests defined for acceptance sampling. Learn more in [Acceptance sampling (preview)](quality-acceptance-sampling.md)
-    - **Item sampling** – Select an item sampling defined for acceptance sampling. Learn more in [Acceptance sampling (preview)](quality-acceptance-sampling.md)
-    - **Acceptable quality level** – Choose the acceptable quality level (AQL) to be used for the quality association. The AQL determines whether the quality order passes or fails validation. <!-- KFM: Maybe improve this. Is this specific for acceptance sampling? -->
+    - **Test group** – Select a test group with tests defined for acceptance sampling or sample management. Learn more in [Acceptance sampling (preview)](quality-acceptance-sampling.md) and [Enable and configure sample management (preview)](quality-sample-management-admin.md).
+    - **Item sampling** – Select an item sampling defined for acceptance sampling or sample management. Learn more in [Acceptance sampling (preview)](quality-acceptance-sampling.md) and [Enable and configure sample management (preview)](quality-sample-management-admin.md).
+    - **Acceptable quality level** – Choose the acceptable quality level (AQL) to be used for the quality association. The AQL determines whether the quality order passes or fails validation.
     - **Flexible sampling** – Choose whether to use the flexible sampling plans as part of this quality association.
     - **Flexible sampling plan code** – If **Flexible sampling** is set to *Yes*, then select a flexible sampling plan code.
     - **Effective** – Select the date on which this quality association becomes effective.

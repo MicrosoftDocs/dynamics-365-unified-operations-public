@@ -50,12 +50,6 @@ To create work orders that are based on your maintenance schedule, follow these 
 
 This feature lets you define rules for grouping work order lines under a single work order when the system is set up to generate work orders automatically, based on a maintenance plan. Previously, automatically generated work orders could contain only one line. However, you can now group work orders by, for example, asset, asset type, or functional location. (Manually generated work orders could already be grouped in this way, as described in the previous section of this article.)
 
-### Enable grouping for automatically generated work orders
-
-Before you can use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Apply rules for grouping work orders while running a maintenance plan* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
-### Set up grouping for automatically generated work orders
-
 To set up grouping for automatically generated work orders, follow these steps.
 
 1. Go to **Asset management \> Setup \> Preventative maintenance \> Maintenance plans**.
@@ -69,12 +63,11 @@ To set up grouping for automatically generated work orders, follow these steps.
 1. Set the **Automatically create work order from schedule** option to *Yes*.
 1. In the **Work order** section, select one of the following options:
 
-    - **One work order per line** – Create one work order per maintenance schedule line. (This option provides the same functionality that is available when the *Apply rules for grouping work orders while running a maintenance plan* feature is turned off.)
+    - **One work order per line** – Create one work order per maintenance schedule line.
     - **One work order per** – Create work orders that are grouped according to the settings of the other options that become available when you select this option.
 
 1. If you want the options to apply when you run only some of your maintenance plans, on the **Records to include** FastTab, add filters as you require, just as you might do for other batch jobs in Microsoft Dynamics 365 Supply Chain Management.
 1. On the **Run in the background** FastTab, set up batch and scheduling options as you require, just as you might do for other batch jobs in Supply Chain Management.
 1. Select **OK** to run and/or schedule the selected maintenance plans.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

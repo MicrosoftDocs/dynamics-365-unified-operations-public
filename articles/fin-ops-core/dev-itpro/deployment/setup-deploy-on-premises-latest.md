@@ -19,7 +19,7 @@ ms.dyn365.ops.version: Platform update 56
 
 This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Application version 10.0.32 later. Application version 10.0.32 includes platform update 56.
 
-The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is available. There, you can post any questions or feedback that you have about the on-premises deployment.
+The [Local Business Data](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc5NDAxNDYxNzYifQ) community on Microsoft Viva Engage is available. There, you can post any questions or feedback that you have about the on-premises deployment.
 
 ## Finance + Operations (on-premises) components
 
@@ -116,7 +116,7 @@ Plan your infrastructure and Service Fabric cluster based on the recommended siz
 The following table shows an example of a hardware layout. This example is used throughout this article to demonstrate the setup. When you complete the setup, you'll have to replace the machine names and IP addresses that are provided in the following instructions with the names and IP addresses of the machines in your environment.
 
 > [!NOTE]
-> The Primary node of the Service Fabric cluster must have at least three nodes. In this example, **OrchestratorType** is designated as the Primary node type. If you have a node type that has more than three VMs, consider making that node type your Primary (Seed) node type to help increase the reliability of the cluster. 
+> The Primary node of the Service Fabric cluster must have at least three nodes. In this example, **OrchestratorType** is designated as the Primary node type. If you have a node type that has more than three VMs, consider making that node type your Primary (Seed) node type to help increase the reliability of the cluster.
 
 | Machine purpose          | Service Fabric node type | Machine name    | IP address    |
 |--------------------------|--------------------------|-----------------|---------------|
@@ -256,7 +256,7 @@ Self-signed certificates can be used only for testing purposes. For the sake of 
 | Data Signing certificate                     | AOS uses this certificate to sign sensitive information. | <p>This certificate is separate from the Data Encryption certificate.</p><ul><li>**CN:** DataSigning</li><li>**DNS name:** DataSigning</li></ul> |
 | Financial Reporting Client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and AOS. | <ul><li>**CN:** FinancialReporting</li><li>**DNS name:** FinancialReporting</li></ul> |
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and AOS. | <p>**Important:** Do **not** reuse the Financial Reporting Client certificate.</p><ul><li>**CN:** ReportingService</li><li>**DNS name:** ReportingService</li></ul> |
-| SSRS Web Server certificate                  | This certificate is used as the server certificate that's presented to the client (AOS) for the SSRS web server. | <p>The domain name of the certificate should match the FQDN of the SSRS node.</p><ul><li>**CN:** BI1.contoso.com</li><li>**DNS name:** BI1.contoso.com</li></ul>
+| SSRS Web Server certificate                  | This certificate is used as the server certificate that's presented to the client (AOS) for the SSRS web server. | <p>The domain name of the certificate should match the FQDN of the SSRS node.</p><ul><li>**CN:** BI1.contoso.com</li><li>**DNS name:** BI1.contoso.com</li></ul> |
 | On-premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that's hosted on-premises and on Lifecycle Services. It enables the local agent to act on behalf of your Microsoft Entra tenant, and to communicate with Lifecycle Services to orchestrate and monitor deployments.</p> | <ul><li>**CN:** OnPremLocalAgent</li><li>**DNS name:** OnPremLocalAgent</li></ul> |
 
 To reduce the number of certificates that are required, you can combine the Service Fabric Server certificate with the AOS SSL certificate. We don't recommend that you use a wildcard certificate. Instead, use a certificate that has multiple subject alternative names (SANs).
@@ -293,7 +293,7 @@ You must create several user or service accounts for Finance + Operations (on-pr
 | Local Deployment Agent Service Account                  | gMSA | The local agent uses this account to orchestrate the deployment on various nodes. | Contoso\\Svc-LocalAgent$ |
 | Data Management Framework Service Account               | gMSA | | Contoso\\svc-DIXF$ |
 
-\* These accounts shouldn't have their regional settings changed. They should have the default US English (EN-US) region settings. 
+\* These accounts shouldn't have their regional settings changed. They should have the default US English (EN-US) region settings.
 
 \*\* If the password of the SQL user contains special characters, you might encounter issues during deployment.
 
@@ -402,6 +402,7 @@ You must set up the following SMB 3.0 file shares:
 For information about how to enable SMB 3.0, see [SMB Security Enhancements](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn551363(v=ws.11)#BKMK_disablesmb1).
 
 > [!IMPORTANT]
+>
 > - Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.0 to SMB 1.0. Therefore, we strongly recommend that you disable the SMB 1.0 server. In this way, you can take advantage of the full capabilities of SMB encryption. For information about how to disable SMB 1.0, see [How to detect, enable and disable SMBv1, SMBv2, and SMBv3 in Windows](/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3#how-to-remove-smbv1).
 > - To help ensure that your data is protected while it's at rest in your environment, you must enable BitLocker Drive Encryption on every machine. For information about how to enable BitLocker, see [BitLocker: How to deploy on Windows Server 2012 and later](/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server).
 
@@ -477,7 +478,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     > ```
 
 1. In the **ProtectTo** field for each certificate, specify a semicolon-separated list of Active Directory users or groups. Only users and groups that are specified in the **ProtectTo** field have the permission to import the certificates that are exported by using the scripts. The scripts don't support passwords to help protect the exported certificates.
-1. Export the certificates into .pfx files. As part of the export process, the following command checks that the correct cryptographic provider is set for your certificates. 
+1. Export the certificates into .pfx files. As part of the export process, the following command checks that the correct cryptographic provider is set for your certificates.
 
     ```powershell
     # Exports certificates into a directory VMs\<VMName>. All the certs are written to the infrastructure\Certs folder.
@@ -566,12 +567,14 @@ You can configure more than one SSRS node. For more information, see [Configurin
     | The .NET Framework version 4.7.2 (CLR 4.0) | [.NET Framework 4.7.2 Offline Installer](https://dotnet.microsoft.com/download/thank-you/net472-offline) | ndp472-x86-x64-allos-enu.exe | 10.0.0 | 10.0.41 |
 
 > [!IMPORTANT]
+>
 > - Make sure that the Management Studio setup is in US English.
 > - Make sure that the installer files have the names that are specified in the "Expected file name" column of the preceding table. Rename any files that don't have the expected name. Otherwise, you'll encounter errors when you run the Configure-PreReqs.ps1 script.
 
 Next, follow these steps for each VM, or use remoting from a single machine.
 
 > [!NOTE]
+>
 > - The following procedure requires execution on multiple VMs. However, to simplify the process, you can use the remoting scripts that are provided. These scripts let you run the required scripts from a single machine, such as the same machine that's used to run the **.\\Export-Scripts.ps1** command. When the remoting scripts are available, they're declared after a **\# If Remoting** comment in the Windows PowerShell sections. If you use the remoting scripts, you might not have to run the remaining scripts in a section. In these cases, see the section text.
 > - Remoting uses [WinRM](/windows/win32/winrm/portal). In some cases, it requires that [CredSSP](/windows/win32/secauthn/credential-security-support-provider) be enabled. The remoting module enables and disables CredSSP on an execution-by-execution basis. We recommend that you disable CredSSP when it isn't used. Otherwise, there's a risk of credential theft. When you've completed the setup, see the [Tear down CredSSP, if remoting was used](#teardowncredssp) section later in this article.
 
@@ -707,7 +710,6 @@ You can verify that everything has been configured correctly by running the foll
     1. Restart the SQL service.
 
 1. If you used self-signed certificates, export the certificate (.cer file), and install it in the trusted root of each Service Fabric node. You'll have only one certificate for all the nodes in your SQL Server cluster.
-
 
 > [!IMPORTANT]
 > If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Tear down CredSSP, if remoting was used](#teardowncredssp) section later in this article.
@@ -928,7 +930,7 @@ You've now completed the setup of the infrastructure. The following sections des
 1. Sign in to [Lifecycle Services](https://lcs.dynamics.com/), and open your on-premises implementation project.
 1. Select the Menu button (sometimes referred to as the hamburger or the hamburger button), and then select **Project settings**.
 1. Select **On-premises connectors**.
-1. Select **Add** to create a new on-premises connector. 
+1. Select **Add** to create a new on-premises connector.
 1. On the **1: Setup host infrastructure** tab, select **Download agent installer**.
 1. After the zip file is downloaded, verify that it's unblocked. Select and hold (or right-click) the file, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
 1. Unzip the agent installer on one of the Service Fabric nodes of the **OrchestratorType** type.
@@ -944,7 +946,7 @@ You've now completed the setup of the infrastructure. The following sections des
 
 1. Save the configuration, and then select **Download configurations** to download the **localagent-config.json** configuration file.
 1. Copy the **localagent-config.json** file to the machine where the agent installer package is located.
-1. The local agent has some optional configurations that can be set to specify environment-specific setup/requirements. For information about the options, see [Deployment configurations for the local agent](./onprem-localagent-options.md). 
+1. The local agent has some optional configurations that can be set to specify environment-specific setup/requirements. For information about the options, see [Deployment configurations for the local agent](./onprem-localagent-options.md).
 1. In a **PowerShell** window, go to the folder that contains the agent installer, and run the following command.
 
     ```powershell
@@ -1010,7 +1012,7 @@ The following illustration shows a successful deployment. Notice that the upper-
 
 ## Known issues
 
-### When you run the .\Create-GMSAAccounts.ps1 script, you receive the following error message: "Key does not exist" 
+### When you run the .\Create-GMSAAccounts.ps1 script, you receive the following error message: "Key does not exist"
 
 If you're creating and generating gMSA passwords in your domain for the first time, you must first create the Key Distribution Services KDS Root Key. For more information, see [Create the Key Distribution Services KDS Root Key](/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key).
 

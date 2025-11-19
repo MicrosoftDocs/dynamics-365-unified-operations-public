@@ -1,24 +1,27 @@
 ---
 title: Planning Optimization release process and release history
-description: Learn about the release process and release history for Planning Optimization, including a table outling various changes.
+description: Learn about the release process and release history for Planning Optimization, including a table outlining various changes.
 author: Henrikan
 ms.author: henrikan
-ms.topic: concept-article
-ms.date: 02/20/2023
 ms.reviewer: kamaybac
+ms.search.form: 
+ms.topic: concept-article
+ms.date: 09/30/2025
+ms.custom:
+  - bap-template
 ---
 
 # Planning Optimization release process and release history
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft updates Planning Optimization on a monthly basis. However, based on business requirements, we occasionally release other updates between the scheduled releases.
+Microsoft updates Planning Optimization monthly. However, based on business requirements, we occasionally release other updates between the scheduled releases.
 
 Each release is published to the individual regions where Planning Optimization is available. The process typically takes three days.
 
 While Planning Optimization is being updated, master planning might run a bit more slowly than usual.
 
-All environments that use Planning Optimization automatically receive the latest release regardless which version of Supply Chain Management you are using. Therefore, no backports are needed. No user action is required: the service is automatically updated. However, no breaking-change functionality is ever automatically pushed to environments. By default, any changes that are considered breaking are turned off and must be explicitly turned on by using [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Therefore, those changes won't appear in environments until you choose to enable them.
+All environments that use Planning Optimization automatically receive the latest release regardless of which version of Supply Chain Management you're using. Therefore, you don't need to backport updates. No user action is required: the service is automatically updated. However, no breaking-change functionality is ever automatically pushed to environments. By default, any changes that are considered breaking are turned off and must be explicitly turned on by using [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Therefore, those changes don't appear in environments until you choose to enable them.
 
 Because notifications aren't shown when Planning Optimization is updated in your environment, you can review the release notes in the following table to determine when changes were released and what functionality they introduced. This table shows the changes that were released for Planning Optimization, whether those changes are associated with a feature from feature management, and the date of the release.
 
@@ -50,13 +53,13 @@ Because notifications aren't shown when Planning Optimization is updated in your
 | <p>[Centralized calendar maintenance](../supply-chain-calendars-master-planning.md)</p><p>[Suggestions to optimize existing supply](../action-messages.md)</p><p>[Support for subcontracting](../../production-control/manage-subcontract-work-production.md)</p><p>General performance, quality, and stability improvements</p> | No feature management required | March 7–11, 2022 |
 | Planning priority support for production orders | Available with version 10.0.25 as part of the feature named *Priority driven MRP support for Planning Optimization*. | November 12–18, 2021 |
 | General performance, quality, and stability improvements | No feature management required | November 12–18, 2021 |
-| <p>Support for process time calculation formulas, production route with overlap, and production operation number on requirement transactions</p><p>Enhanced error messages for production scheduling related to timeout, capacity couldn't be found, and cyclic route</p><p>Improved consistency when calculating receipt dates and issue dates on both planned orders and firmed orders</p><p>General performance, quality, and stability improvements</p> | Feature name: *Infinite capacity scheduling for Planning Optimization* | October 22–27, 2021 |
-| <p>Support for considering scrap percentage in processing time calculation</p><p>Support for operation number and materials usage during scheduling</p> | Feature name: *Infinite capacity scheduling for Planning Optimization* | October 5–7, 2021 |
-| <p>Support for production route job types: **Queue before**, **Queue after**, and **Transport time**</p><p>General performance, quality, and stability improvements</p> | Feature name: *Infinite capacity scheduling for Planning Optimization* | September 25–30, 2021 |
-| <p>Support for master plans with **Scheduling method** set to *Operations scheduling*</p><p>On the **Route groups** page, respect settings for the **Activation**, **Working time**, and **Capacity** check boxes for rows with a **Route/job type** of *Setup* or *Process* </p><p>General performance, quality, and stability improvements</p> | <p>Operations scheduling is available in feature management as of version 10.0.20</p><p>Feature name: *Infinite capacity scheduling for Planning Optimization*</p> | September  9–17, 2021 |
+| <p>Support for process time calculation formulas, production route with overlap, and production operation number on requirement transactions</p><p>Enhanced error messages for production scheduling related to timeout, capacity couldn't be found, and cyclic route</p><p>Improved consistency when calculating receipt dates and issue dates on both planned orders and firmed orders</p><p>General performance, quality, and stability improvements</p> | No feature management required as of Supply Chain Management version 10.0.43. | October 22–27, 2021 |
+| <p>Support for considering scrap percentage in processing time calculation</p><p>Support for operation number and materials usage during scheduling</p> | No feature management required as of Supply Chain Management version 10.0.43. | October 5–7, 2021 |
+| <p>Support for production route job types: **Queue before**, **Queue after**, and **Transport time**</p><p>General performance, quality, and stability improvements</p> | No feature management required as of Supply Chain Management version 10.0.43. | September 25–30, 2021 |
+| <p>Support for master plans with **Scheduling method** set to *Operations scheduling*</p><p>On the **Route groups** page, respect settings for the **Activation**, **Working time**, and **Capacity** check boxes for rows with a **Route/job type** of *Setup* or *Process* </p><p>General performance, quality, and stability improvements</p> | No feature management required as of Supply Chain Management version 10.0.43. | September  9–17, 2021 |
 | General performance, quality, and stability improvements | No feature management required | August 25–30, 2021 |
 | <p>Added **Lead time** field to planned orders.</p><p>General performance, quality, and stability improvements.</p> | No feature management required | August 12–17, 2021 |
-| <p>Added resource type requirements for infinite capacity scheduling</p><p>Improved resource efficiency and calendar efficiency for infinite capacity scheduling</p><p>Learn more in [Scheduling with infinite capacity](infinite-capacity-planning.md)</p> | <p>Available in feature management as of version 10.0.20</p><p>Feature name: *Infinite capacity scheduling for Planning Optimization*</p> | July 6–12, 2021 |
+| <p>Added resource type requirements for infinite capacity scheduling</p><p>Improved resource efficiency and calendar efficiency for infinite capacity scheduling</p><p>Learn more in [Scheduling with infinite capacity](infinite-capacity-planning.md)</p> | No feature management required as of Supply Chain Management version 10.0.43. | July 6–12, 2021 |
 | General quality improvements | No feature management required | July 6–12, 2021 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

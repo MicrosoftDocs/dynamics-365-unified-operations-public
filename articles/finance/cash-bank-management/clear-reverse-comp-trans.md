@@ -18,7 +18,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to clear reversal company transactions in advanced bank reconciliation. As of Microsoft Dynamics 365 Finance version 10.0.39, the **Modern bank reconciliation** feature provides this functionality. 
+This article explains how to clear reversal company transactions in advanced bank reconciliation using the **Modern bank reconciliation** feature. 
 
 There might be payment journals that are reversed in the system, but that don't have any records at the bank. This feature lets users clear reversal company transactions in advanced bank reconciliation without matching them to bank statement transactions.
 

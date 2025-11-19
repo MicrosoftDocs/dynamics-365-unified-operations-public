@@ -18,7 +18,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to post vouchers to the general ledger in advanced bank reconciliation. As of Microsoft Dynamics 365 Finance version 10.0.39, the **Modern bank reconciliation** feature provides this functionality. 
+This article explains how to post vouchers to the general ledger in advanced bank reconciliation using the **Modern bank reconciliation** feature. 
 
 There might be bank statement transactions that aren't related to specific customer or vendor payments. Examples include bank interest income and bank fees. This feature lets users post bank statement transactions of this type directly to the general ledger.
 

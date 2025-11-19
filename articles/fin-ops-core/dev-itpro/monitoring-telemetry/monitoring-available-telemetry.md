@@ -1,12 +1,12 @@
 ---
 title: Available telemetry
 description: Get an overview of the telemetry that is available in the Monitoring and telemetry feature.
-author: kennysaelen
+author: rijoshi1 
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 09/15/2025
-ms.author: kesaelen
-ms.reviewer: johnmichalak
+ms.date: 11/15/2025
+ms.author: rijoshi 
+ms.reviewer: twheeloc
 ms.custom: bap-template
 ---
 
@@ -79,13 +79,14 @@ Telemetry from the batch framework is logged to the CustomEvents table in your A
 
 > [!NOTE]
 > - This feature is in **PU69/10.0.45 (build >= 7.0.7690.21)** and backported to **PU68/10.0.44 (build >= 7.0.7606.126)**.
+> - The three flights below are enabled for all sandbox environments. To activate them in production, contact Microsoft support.
 
 To enable Batch telemetry, activate the following flights:
 - **BatchTelemetryConfigurationFlight**
 - **BatchThreadInfoTelemetryFlight**
 - **BatchTelemetryCallstackFlight**
 
-After you enable the flights, new telemetry signals appear under the **Configure** tab:
+After the flights are enabled, new telemetry signals appear under the **Configure** tab:
 
 - **Batch Start Time** - Logs when a batch job starts.
 - **Batch Stop Time** - Logs when a batch job completes. Support duration tracking.

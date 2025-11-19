@@ -2,7 +2,7 @@
 title: Configure access rights for a cost object controller
 description: Use this procedure to configure access rights for a cost object controller, including procedures for assigning cost object controller roles.
 author: twheeloc
-ms.author: kfend
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 03/27/2023
 ms.custom:

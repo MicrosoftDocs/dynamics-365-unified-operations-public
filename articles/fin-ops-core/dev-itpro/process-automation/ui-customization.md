@@ -1,12 +1,12 @@
 ---
 title: Customize the user interface
 description: Learn about how to customize the user interface by using the process automation framework, including an overview of the weekly calendar view.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 06/10/2024
 ms.custom: 
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2020-09-10
@@ -194,3 +194,4 @@ The **ProcessExecutionMessageLogContract** contract lets you limit the message l
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

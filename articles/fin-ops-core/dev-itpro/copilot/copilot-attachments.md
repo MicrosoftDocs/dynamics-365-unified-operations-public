@@ -4,7 +4,7 @@ description: Learn how to use file attachments with Copilot for finance and oper
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 09/09/2025
+ms.date: 10/08/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -13,7 +13,7 @@ ms.collection:
 ms.search.region: Global
 ---
 
-# Use file attachments in Copilot for finance and operations apps
+# File attachments in Copilot for finance and operations apps
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,7 +32,9 @@ To use attachments with Copilot for finance and operations apps, make sure these
     - Copilot for finance and operations generation solution.
     - Copilot for finance and operations anchor solution.
   - Finance and Operations Virtual Entity.
-- Turn on the **Enable user attachments in Copilot sidecar** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
+- To enable the respective attachment experiences, turn on the following features in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md):
+  - **Enable user attachments in Copilot sidecar**
+  - **Enable ability for user to attach a screenshot to Copilot sidecar**
 
 ## Attaching files to a chat session
 
@@ -61,7 +63,8 @@ When you attach a file to the chat session, Copilot Studio adds it to the **Syst
 
 This example shows how to extend Copilot for finance and operations apps with a custom topic that uses attachment files from the chat session to give the user more capabilities. In this scenario, you add a topic that reviews an attached screenshot of an error from Copilot for finance and operations apps, and Copilot gives guidance to the user to fix the error.
 
-[!NOTE] This example assumes [generative AI orchestration](/microsoft-copilot-studio/advanced-generative-actions) is enabled for the agent.
+> [!NOTE]
+> This example assumes [generative AI orchestration](/microsoft-copilot-studio/advanced-generative-actions) is enabled for the agent.
 
 ### Create a new topic
 

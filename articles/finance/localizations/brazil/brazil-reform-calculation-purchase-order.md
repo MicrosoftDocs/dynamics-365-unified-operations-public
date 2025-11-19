@@ -4,7 +4,7 @@ description: Learn about tax calculation in purchase orders in the Brazil tax re
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 10/06/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -69,5 +69,14 @@ To check the tax calculation results, follow these steps.
 1. Select **Posted sales tax**.
    - View the targeted tax codes.
    - During the transition period, the system marks **Prevent posting of ledger accounting entities for sales tax transactions** for **CBS** and **IBS** to comply with the current policy from the Brazilian government.
+
+> [!IMPORTANT] 
+> The **tax group** and **item tax group** are not populated when the line is saved in Brazil tax reform 2026. They will be populated once tax calculation is triggered — for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
+
+> [!TIP]
+> For using tax calculation in purchase orders, refer to the Brazil tax reform: Calculation in purchase orders video.
+
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=dd430006-9300-485a-8c9c-766e06d48a06] 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

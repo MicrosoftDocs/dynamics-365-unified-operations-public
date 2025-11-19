@@ -1,13 +1,14 @@
 ---
 title: Business performance analytics FAQ
 description: This article answers some frequently asked questions about Business performance analytics, including questions about signing up for public previews of analytics.
-author: jinniew
-ms.author: jiwo
+author: yashkv1
+ms.author: yvishwa
 ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 08/11/2025
+ms.date: 11/05/2025
+
 ---
 
 # Business performance analytics FAQ
@@ -69,11 +70,16 @@ Business performance analytics has data for the most recent eight quarters. This
 
 Data is refreshed twice per day, at 12:00:00 AM and 12:00:00 PM (Coordinated Universal Time). To view exactly when a report's data was last refreshed, open the report. Near the top of the page, the rightmost item shows when the data for the report was last refreshed.
 
+## Demo database swap after installing Business performance analytics
+
+If you swap a demo database in sandbox or production after installing Business performance analytics, profile rehydration is required to reset the metadata that the transform jobs rely on. Contact support to reset the metadata after the swap.    
+
 ## Reports
 
 ### What should I do if reports in Business performance analytics suddenly stop working and keep showing errors?
 
 If you encounter a full-page error with the message "An unknown error has occurred. Try again or contact your app administrator" while opening reports, the following steps may help resolve it. These steps don't address issues like no data displayed, refresh errors, or blank pages.
+
 
 >[!Note]
 > These steps are safe to execute and prevents data loss
@@ -95,6 +101,10 @@ Each time Business performance analytics refreshes, your source data are transfo
 
 > [!IMPORTANT]
 > Customers affected by storage capacity growth after updating to Business performance analytics version 2.0.29241185 or later should contact support and request to enable the temporary files cleanup routine for their environment.
+
+## BI entity customization
+
+BI entities can't be customized. If a BI entity has been modified with a custom view or custom data sources, the Business performance analytics installation fails. 
 
 ## Uninstall
 ### How do I uninstall Business performance analytics?
@@ -143,5 +153,4 @@ This approach ensures Business performance analytics remains adaptable to your b
 ## Support and news
 ### How do I receive the latest news about Business performance analytics?
 
-To receive the latest updates about Business performance analytics, join the Business performance analytics Viva Engage group.
-Join the [Business performance analytics Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=73748324352&view=unviewed).
+To receive the latest updates about Business performance analytics, join the [Business performance analytics](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc3NDU0NTUxMDQifQ) community on Microsoft Viva Engage.
