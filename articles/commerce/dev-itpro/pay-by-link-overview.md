@@ -37,8 +37,11 @@ The payment notification service uses Dataverse. Therefore, to receive payment n
 The pay by link feature is available as of the Commerce 10.0.44 release. The following minimum versions of the various components are required:
 
 - **Store Commerce App/ Cloud Point of Sale**: 9.54.25148.1
-- **Commerce Scale Unit**: 9.54.25137.4
+- **Commerce Scale Unit**: v9.54.25295.4 (for 10.0.44) and (9.55.25295.1) for 10.0.45.
 - **Commerce headquarters**: 10.0.44
+
+> [!NOTE]
+> A separate Commerce Scale Unit version is provided for 10.0.45 because an important fix was backported to these two versions after the feature was released.
 
 ### Required role to complete the setup
 
