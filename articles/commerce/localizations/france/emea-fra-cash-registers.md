@@ -383,7 +383,7 @@ To enforce daily shift closing, you must make the following changes:
 - Set the **Shift closing time** and **Shift closing interval (minutes)** fields.
 
  > [!NOTE]
- > in France, it's required that the daily closing period doesn't exceed 24 hours unless the daily closing is executed before the start of the next daily period. Also, a new shift shouldn't be opened until the previous shift is closed.
+ > In France, it's required that the daily closing period doesn't exceed 24 hours, unless the daily closing is executed before the start of the next daily period. Also, a new shift shouldn't be opened until the previous shift is closed.
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
