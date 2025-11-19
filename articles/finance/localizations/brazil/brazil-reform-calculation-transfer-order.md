@@ -4,7 +4,7 @@ description: Learn about tax calculation in transfer orders in Brazil tax reform
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 11/19/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -26,20 +26,20 @@ To create a transfer order that uses Brazilian taxes, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Inbound order** \> **Transfer orders** or **Inventory management** \> **Outbound orders** \> **Transfer order**
 1. Select **New**.
-2. Expand the **Lines** section.
-1. In the **From warehouse** field, senter or select a value.
+1. Expand the **Lines** section.
+1. In the **From warehouse** field, enter or select a value.
 1. In the **To warehouse** field, enter or select a value.
 1. Select **Save**.
 1. Expand the **Transfer order Lines** section.
 1. In the **Item** field, enter or select a value.
 1. In the **Transfer Quantity** field, enter a number.
-2. In the **CFOP** field, enter or select a value.
+1. In the **CFOP** field, enter or select a value.
 1. Expand the **Line details** section.
-2. Select the **Fiscal information** tab.
+1. Select the **Fiscal information** tab.
 1. In the **Sales tax group** field, enter or select a value.
 1. In the **Item sales tax group** field, enter or select a value.
-1. Set the **Use override** checkbox to be **YES** if required.
-2. In the **Tax group** field under the **Tax reform** group, enter or select a value.
+1. Set the **Use override** checkbox to be **YES** if necessary.
+1. In the **Tax group** field under the **Tax reform** group, enter or select a value.
 1. In the **Item tax group** field under the **Tax reform** group, enter or select a value.
 1. Select **Save**.
 1. On the Action Pane, select **Sales tax** under **View** group in the **Transfer order** page.
@@ -60,10 +60,10 @@ To check the tax calculation results, follow these steps.
    - During the transition period, you might see targeted groups for both legacy tax types and reformed tax types coexisting under the **Sales tax** group and the **Tax reform** group.
   
 > [!IMPORTANT] 
-> The **tax group** and **item tax group** are not populated when the line is saved in Brazil tax reform 2026. They will be populated once tax calculation is triggered — for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
+> The **tax group** and **item tax group** aren't populated when the line is saved in Brazil tax reform 2026. They are populated once tax calculation is triggered—for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
 >
 > [!TIP]
-> For using tax calculation in transfer orders, refer to the Brazil tax reform: Calcaulation in sales orders video.
+> For using tax calculation in transfer orders, refer to the Brazil tax reform: Calculation in sales orders video.
 
 > [!video https://learn-video.azurefd.net/vod/player?id=271d2617-666b-48eb-8058-46ce067f832f]
 

@@ -4,7 +4,7 @@ description: Learn how to calculate taxes in sales quotations using the Brazil t
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 11/19/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -16,7 +16,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to calculate taxes in sales quotations using the Brazil tax reform solution.
+This article describes how to calculate taxes in sales quotations by using the Brazil tax reform solution.
 
 ## Create a sales quotation with Brazilian taxes
 
@@ -40,8 +40,8 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
 1. Select the **Setup** tab.
 1. In the **Sales tax group** field, enter or select a value.
 1. In the **Item sales tax group** field, enter or select a value.
-2. In the **Use override** field, select a value if required.
-3. In the **Tax group** field under **Tax reform** group, enter or select a value.
+1. In the **Use override** field, select a value if necessary.
+1. In the **Tax group** field under **Tax reform** group, enter or select a value.
 1. In the **Item tax group** field  under **Tax reform** group, enter or select a value.
 1. Select **Save**.
 1. On the Action Pane, select **Quotation**.
@@ -56,7 +56,10 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
 1. Select the **Print confirmation** checkbox.
 1. Select **OK**.
 
-## Check the results for tax calculation in Brazil.
+## Check the results for tax calculation in Brazil
+
+To check the results for tax calculation in Brazil, follow these steps.
+
 1. Select **sales tax** in the **Quotation** tab.
    - The targeted tax codes are displayed during the transition period.
    - **No posting** is marked for **CBS** and **IBS** to ensure compliance with the current policy from Brazilian government.
@@ -68,6 +71,6 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
    - You can view the summary by tax type for Brazilian tax.
 
 > [!IMPORTANT] 
-> The **tax group** and **item tax group** are not populated when the line is saved in Brazil tax reform 2026. They will be populated once tax calculation is triggered — for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
+> The **tax group** and **item tax group** aren't populated when the line is saved in Brazil tax reform 2026. They'll be populated once tax calculation is triggered—for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
 > 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
