@@ -53,6 +53,8 @@ To check a purchase quotation that uses Brazliaian taxes, follow these steps.
  In the **CFOP** field, enter or select a value.
 
 ## Check the tax calculation results
-No tax calculation for RFQ.
+
+1. Select **Totals** button on top to check the amount for tax.
+2. No Sales tax transaction for RFQ.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
