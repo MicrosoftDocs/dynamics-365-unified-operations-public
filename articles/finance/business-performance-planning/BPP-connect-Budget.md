@@ -23,6 +23,10 @@ If this setup is incomplete, the export fails with errors:
  - Finance service not reachable
  - No permission to execute
 
+> [!NOTE]
+> The **Write back to budget register entry** feature is available as part of the Business performance planning app version 1.14 (November 2025 release).  
+> This capability is accessible within the new Data model builder experience, under the **Cube (preview)** page, and is only available for cubes created using the **Cube (preview)**.
+
 ### Configure the Finance connection environment variable
 
 During package deployment, the environment variable is created automatically. If your Dataverse environment was already linked to Dynamics 365 Finance, the variable value is populated automatically.  
@@ -89,6 +93,7 @@ After completing the setup, follow these steps to validate the connection:
 ## Related links
 - [Write back to Dynamics 365 Finance budget register entry](bpp-bud-reg-write.md)  
 - [Business performance planning overview](business-performance-planning-overview.md)
+
 
 
 
