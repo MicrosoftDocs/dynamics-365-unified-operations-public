@@ -18,21 +18,19 @@ ms.dyn365.ops.version:
 > [!NOTE]
 > This article describes the cube creation process that's available in Business performance planning versions 1.13 and earlier. Starting in version 1.14, a new cube creation process is available. For more information, see [Cubes (preview)](bpp-create-cubes.md). 
 
-Business performance planning in Microsoft Dynamics 365 Finance supports calculated columns that are known as *computed columns*. You can use them to define formula-based logic directly in your planning cube. These columns use the Dataverse formula column engine to drive financial modeling, workforce planning, revenue calculations, and more.
+Business performance planning in Microsoft Dynamics 365 Finance supports calculated columns that are known as computed columns. You can use them to define formula-based logic directly in your planning cube. These columns use the Dataverse formula column engine to drive financial modeling, workforce planning, revenue calculations, and more.
 
-This article explains how to create computed columns inside a cube by using expressions that are powered by Dataverse formula columns. In this way, you enable dynamic and context-aware calculations. The article also highlights typical financial planning and analysis use cases. In addition, it provides best practices for using computed columns to optimize performance for the direct query data model in Power BI and Excel.
+This article explains how to create computed columns inside a cube by using expressions that are powered by Dataverse formula columns. In this way, you enable dynamic and context-aware calculations. 
 
 ## Prerequisites
-
 - Access to business performance planning in Dynamics 365 Finance.
 - An existing cube where dimensions and drivers are defined.
 - A security role that has permissions to edit cubes and add computed columns.
 - An understanding of the syntax for Dataverse formula columns. Learn more in [Work with formula columns](/power-apps/maker/data-platform/formula-columns).
 
-## Create a calculated column
+### Create a calculated column
 
 To create a calculated column, follow these steps.
-
 1. In business performance planning, select **Cubes**.
 1. Open the cube that you want to add a computed column to.
 1. In **Computed columns**, select **Add**.
@@ -51,10 +49,6 @@ You can reference the following elements:
 You can't reference the following elements:
 - Rows other than the current row (In other words, lookup/aggregation across rows can't be done.)
 - Reference dimensions that aren't included in the cube
-
-
-
-## Example formulas
 
 ### Revenue planning: Price &times; Quantity
 Use this formula for revenue forecast modeling by stock-keeping unit (SKU), region, or channel.
