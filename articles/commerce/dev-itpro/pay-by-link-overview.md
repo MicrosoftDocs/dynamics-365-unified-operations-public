@@ -52,8 +52,8 @@ To enable payment notifications for pay by link, enable the following features i
 
 - Enhanced wallet support and payment improvements. Learn more in [Wallet payment support](/dynamics365/commerce/dev-itpro/wallets).
 - The unified payments experience in POS. Learn more in [Check out faster with optimized payment flows](/dynamics365/commerce/dev-itpro/faster-checkout-pos).
-- The **Payments Notification** feature.
-- The **Pay By Link Payment** feature.
+- The **Enable Payments Notification Feature** feature.
+- The **Enable Pay By Link Payment Feature** feature.
 
 ### Create a webhook to receive payment notifications from Adyen
 
