@@ -4,7 +4,7 @@ description: Learn about the payment proposal options and includes some examples
 author: music727
 ms.author: mibeinar
 ms.topic: article
-ms.date: 06/25/2025
+ms.date: 11/19/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -45,9 +45,7 @@ The payment proposal query contains various tabs, each of which has different op
 - **Summarized payment date** – This is only used when the **Period** field on the method of payment is set to **Total**. If a date is defined, all payments are created on this date. The **Minimum payment date** field is ignored.
 - **Additional filters** – On the **Records to include** FastTab, you can define additional ranges of criteria. For example, if you want to pay only a range of vendors, you can define a filter for the vendor range. This functionality is often used to select invoices for a specific of method of payment. For example, if you define a filter where **Method of payment** = **Check**, only invoices that have that method of payment are selected for payment, provided that they also meet other criteria that are specified in the query.
 
->[!Important]
->Starting 10.0.40, customer can enable **Payment proposal performance improvement by splitting into even batches** feature which improves the performance of payment proposal by dividing the data into even batches.
->In addition, **Vendor payment proposal automation** functionality allows to define a recurring schedule to automate the vendor payment proposal runs. For more details, please see [Automate vendor payment proposals](automate-vendor-payment-proposal.md).
+Starting in Dynamics 365 Finance version 10.0.40, customers can enable the **Payment proposal performance improvement by splitting into even batches** feature. This feature improves the performance of payment proposal by dividing the data into even batches. The **Vendor payment proposal automation** functionality allows customers to define a recurring schedule to automate the vendor payment proposal runs. For more information, see [Automate vendor payment proposals](automate-vendor-payment-proposal.md).
 
 ## Scenarios
 
