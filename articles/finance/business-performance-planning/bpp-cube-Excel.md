@@ -45,9 +45,7 @@ In this step, assign each selected table as either a **Fact** or **Dimension**.
 - If you tag **Dimensions** first, the system won’t automatically tag any table as **Fact**. You’ll need to select one manually.
 - After the **Fact** is tagged, all tables appear in the **Preview** pane, showing the detected relationships between them.
 
-> [!TIP]
-> Business performance planning validates that one fact table is tagged. If not, you'll receive a **Tag at least one table as Fact** error.
-
+Business performance planning validates that one fact table is tagged. If not, you'll receive a **Tag at least one table as Fact** error.
 
 ### Set relationships
 Relationships are detected between the fact table and dimensions based on matching sheet names or matching column names.  
@@ -115,6 +113,7 @@ To workaround this issues, follow these steps:
 - [Create a cube from JSON](bpp-json.md)  
 - [Load data using dataflows](load-data-dataflows.md)  
 - [Create calculated columns](calculated-columns.md)
+
 
 
 
