@@ -21,7 +21,10 @@ For Business performance planning to export finalized budgets or forecasts to bu
 
 If these roles aren’t present, the write-back operation fails with a **No permission to execute** error.
 
-## Required user configuration
+> [!NOTE]
+> The **Write back to budget register entry** feature is available as part of the Business performance planning app version 1.14 (November 2025 release).  
+> This capability is accessible within the new Data model builder experience, under the **Cube (preview)** page, and is only available for cubes created using the **Cube (preview)**.
+
 
 ### Add the export user to Dynamics 365 Finance
 
@@ -60,6 +63,7 @@ To assign roles and duties, follow these steps:
 
 After verifying the roles and user configuration, ensure the Finance connection variable and virtual entities are correctly configured in Dataverse.  
 For more information, see [Configure the Finance connection and virtual entities for write-back](bpp-bud-reg-write.md).
+
 
 
 
