@@ -1,8 +1,8 @@
 ---
 title: Cash register functionality for France
-description: This article provides an overview of the cash register functionality available for France in Microsoft Dynamics 365 Commerce.
+description: Learn about the cash register functionality available for France in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 07/29/2025
+ms.date: 11/19/2025
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.search.region: France
@@ -383,7 +383,7 @@ To enforce daily shift closing, you must make the following changes:
 - Set the **Shift closing time** and **Shift closing interval (minutes)** fields.
 
  > [!NOTE]
- > It is requirement in France that the daily closing period should not exceed 24 hours, unless the daily closing is executed before the start of the next daily period. Additionally, a new shift should not be opened until the previous shift is closed.
+ > in France, it's required that the daily closing period doesn't exceed 24 hours unless the daily closing is executed before the start of the next daily period. Also, a new shift shouldn't be opened until the previous shift is closed.
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
