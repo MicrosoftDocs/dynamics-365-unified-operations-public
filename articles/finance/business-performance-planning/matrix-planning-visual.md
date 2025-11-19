@@ -15,7 +15,7 @@ ms.dyn365.ops.version:
 
 # Matrix planning visual performance considerations
 
-The **Matrix planning visual** in Business performance planning provides interactive data entry and write-back capabilities directly in Power BI.  
+The Matrix planning visual in Business performance planning provides interactive data entry and write-back capabilities directly in Power BI.  
 Because the visual handles both data rendering and user interactions, performance can vary depending on report design, data model size, and configuration choices.
 
 This article describes recommended practices to improve performance and responsiveness when using the Matrix planning visual.
@@ -26,10 +26,7 @@ This article describes recommended practices to improve performance and responsi
 
 Always include a **Filter measure** when configuring the Matrix planning visual. Without a **Filter measure**, Power BI can’t pass filtered context to the visual. This forces the visual to retrieve all data from the dataset before applying filters, significantly increasing load times.
 
-A **Filter measure** ensures that only the relevant subset of data is retrieved from Dataverse before rendering.
-
-> [!TIP]
-> A simple **Filter measure (for example, `SUM(FactTable[Amount])`) is sufficient to enable Power BI to push filters efficiently.
+A **Filter measure** ensures that only the relevant subset of data is retrieved from Dataverse before rendering. A simple Filter measure (for example, `SUM(FactTable[Amount])`) is sufficient to enable Power BI to push filters efficiently.
 
 
 ## Manage subtotals and hierarchies
@@ -101,5 +98,6 @@ If users experience slow rendering or timeout issues:
 - [Matrix planning visual overview](matrix-planning.md)  
 - [Graphical planning visual](graphical-planning.md)  
 - [Write-back and allocation in BPP](write-back.md)
+
 
 
