@@ -12,7 +12,7 @@ ms.collection: get-started
 # Create a cube from Excel
 
 > [!NOTE]
-> This article describes the **Data model builder (preview)** experience. The existing **Cubes** page is still available. For information about classic cube creation, see [Create a cube](create-cubes.md)
+> This article describes the **Data model builder (preview)** experience. The existing **Cubes** page is still available. For information about classic cube creation, see [Create a cube](create-cubes.md).
 
 ## Create a cube 
 
@@ -115,6 +115,7 @@ To workaround this issues, follow these steps:
 - [Create a cube from JSON](bpp-json.md)  
 - [Load data using dataflows](load-data-dataflows.md)  
 - [Create calculated columns](calculated-columns.md)
+
 
 
 
