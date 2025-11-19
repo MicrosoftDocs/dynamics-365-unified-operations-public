@@ -1,10 +1,10 @@
 ---
 title: Cash application in advanced bank reconciliation
 description: Learn how to complete cash application in advanced bank reconciliation, including prerequisites and step-by-step processes.
-author: EricWangChen
-ms.author: wangchen
+author: music727
+ms.author: mibeinar
 ms.topic: how-to
-ms.date: 5/15/2025
+ms.date: 11/19/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -142,21 +142,22 @@ To use matching rules to automatically generate vendor payments without settling
 
 ## Preview matching results before posting
 
-Starting in version 10.0.46, organizations using **Modern bank reconciliation** can enable the feature **Preview automatic bank reconciliation matching results**. This enhancement allows users to review and approve reconciliation matching rule results before transactions are posted and marked as matched.
-When the **Preview automatic bank reconciliation matching results** feature is enabled, a new parameter **Require review before posting** becomes available in **Cash and bank management** \> **Setup** \> **Advanced bank reconciliation setup** \> **Reconciliation matching rules**.
-- If this parameter is set to **Yes**, the results of the reconciliation matching rule run are displayed in the **Pending review** tab of the **Bank reconciliation worksheet**.
-- Users can also manually mark transactions for review during journal or voucher creation by setting **Require review before posting** to **Yes**.
-- In addition, a new parameter **Default value of Require review before posting parameter in the bank reconciliation rules form** is available at the **Cash and bank management parameters** > **Bank reconciliation**. When set to **Yes**, all newly created reconciliation rules will have **Require review before posting** enabled by default.
+Starting in Dynamics 365 Finance version 10.0.46, organizations using **Modern bank reconciliation** can enable the **Preview automatic bank reconciliation matching results** feature. This enhancement allows users to review and approve reconciliation matching rule results before transactions are posted and marked as matched.
 
-Users with appropriate permissions will be able to:
-- Review the results of the reconciliation matching rules
-- Validate associated draft journals and vouchers
-- **Approve** or **Reject** transactions directly within the **Bank reconciliation worksheet**
+When the **Preview automatic bank reconciliation matching results** feature is enabled, a new **Require review before posting** parameter is available in **Cash and bank management** \> **Setup** \> **Advanced bank reconciliation setup** \> **Reconciliation matching rules**.
+- If this parameter is set to **Yes**, the results of the reconciliation matching rule run are displayed on the **Bank reconciliation worksheet** > **Pending review** tab .
+- Users can manually mark transactions for review during journal or voucher creation by setting **Require review before posting** to **Yes**.
+- In addition, a new **Default value of Require review before posting** on the Bank reconciliation rules page is available. When set to **Yes**, all newly created reconciliation rules have **Require review before posting** enabled by default.
+
+Users with appropriate permissions can: 
+- Review the results of the reconciliation matching rules.
+- Validate associated draft journals and vouchers.
+- **Approve** or **Reject** transactions directly within the **Bank reconciliation worksheet**.
 
 Once approved, the journals and vouchers are posted, and the matching results are moved to the **Matched transactions** tab.
 
 > [!NOTE]
-> Customer and vendor payment journals, as well as general ledger vouchers associated with bank statement records and visible in the **Pending review** tab, cannot be edited. They should be **Rejected** and recreated. These journals and transactions can also only be posted from the **Bank reconciliation worksheet** page.
+> Customer and vendor payment journals, as well as general ledger vouchers associated with bank statement records and visible in the **Pending review** tab, can't be edited. They should be **Rejected** and recreated. These journals and transactions can also only be posted from the **Bank reconciliation worksheet** page.
 
 ## Enable default descriptions for advanced bank reconciliation
 
