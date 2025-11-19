@@ -73,14 +73,14 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.45 PQU-7 | March 25, 2026 | March 30, 2026 to May 3, 2026| Not Started |
 | 10.0.45 PQU-8 | April 22, 2026 | April 27, 2026 to May 30, 2026| Not Started |
 | 10.0.45 PQU-9 | May 27, 2026 | June 1, 2026 to July 5, 2026| Not Started |
-| 10.0.46 PQU-1 | February 2, 2026 | February 12, 2025 to March 17, 2026 | Not Started |
-| 10.0.46 PQU-2 | March 2, 2026 | March 12, 2026 to April 14, 2026| Not Started |
-| 10.0.46 PQU-3 | March 30, 2026 | April 9, 2026 to May 12, 2026| Not Started |
-| 10.0.46 PQU-4 | April 27, 2026 | May 7, 2026 to June 9, 2026| Not Started |
-| 10.0.46 PQU-5 | May 25, 2026 | June 4, 2026 to July 7, 2026| Not Started |
-| 10.0.46 PQU-6 | June 22, 2026 | July 2, 2026 to August 4, 2026| Not Started |
-| 10.0.46 PQU-7 | July 20, 2026 | July 30, 2026 to September 1, 2026| Not Started |
-| 10.0.46 PQU-8 | Ausust 21 22, 2026 | August 31, 2026 to October 3, 2026| Not Started |
+| 10.0.46 PQU-1 | February 4, 2026 | February 9, 2025 to March 14, 2026 | Not Started |
+| 10.0.46 PQU-2 | March 4, 2026 | March 9, 2026 to April 11, 2026| Not Started |
+| 10.0.46 PQU-3 | April 1, 2026 | April 6, 2026 to May 9, 2026| Not Started |
+| 10.0.46 PQU-4 | April 29, 2026 | May 4, 2026 to June 6, 2026| Not Started |
+| 10.0.46 PQU-5 | May 27, 2026 | June 1, 2026 to July 4, 2026| Not Started |
+| 10.0.46 PQU-6 | June 24, 2026 | June 29, 2026 to August 1, 2026| Not Started |
+| 10.0.46 PQU-7 | July 22, 2026 | July 27, 2026 to August 29, 2026| Not Started |
+| 10.0.46 PQU-8 | Ausust 21 22, 2026 | Augus  t 31, 2026 to October 3, 2026| Not Started |
 
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
