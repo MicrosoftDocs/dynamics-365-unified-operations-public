@@ -4,7 +4,7 @@ description: Learn about tax calculation in purchase requisitions in the Brazil 
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 11/19/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -27,23 +27,23 @@ To create a purchase requisition that uses Brazilian taxes, follow these steps.
 1. In Dynamics 365 Finance, go to **Procurement and sourcing** \> **purchase requisitions** \> **All purchase requisitions**.
 1. Select **New**.
 1. In the **Name** field, enter or select a value.
-1. Select **Select default project** if required.
-2. Then select **Buying legal entity** and **Project**.
-3. Select **OK**.
+1. Select **Select default project** if necessary.
+1. Then select **Buying legal entity** and **Project**.
+1. Select **OK**.
 1. Expand the **Lines** section.
-2. In the **Operation type** field, enter or select a value.
-3. In the **Buying legal entity** field, enter or select a value of the legal entity in Brazil.
+1. In the **Operation type** field, enter or select a value.
+1. In the **Buying legal entity** field, enter or select a value of the legal entity in Brazil.
 1. In the **Item** field, enter or select a value.
 1. In the **Quantity** field, enter a number.
-2. In the **Vendor account** field, enter or select a value.
+1. In the **Vendor account** field, enter or select a value.
 1. In the **Site** field, enter or select a value.
 1. In the **Warehouse** field, enter or select a value.
 1. In the **CFOP** field, enter or select a value.
 1. Expand the **Line details** section.
 1. Select the **Details** tab.
-1. Select **USe Override** option if required.
-3. Under **Tax Reform** group, in the **Item sales tax group** field, enter or select a value.
-4. Under **Tax Reform** group, in the **Sales tax group** field, enter or select a value.
+1. Select the **Use Override** option if necessary.
+1. Under **Tax Reform** group, in the **Item sales tax group** field, enter, or select a value.
+1. Under **Tax Reform** group, in the **Sales tax group** field, enter, or select a value.
 1. Select the **Fiscal information** tab.
 1. Select **Save**.
   

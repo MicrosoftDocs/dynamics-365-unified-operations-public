@@ -4,7 +4,7 @@ description: Learn about tax calculation in sales order in Brazil tax reform sol
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 11/19/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -51,10 +51,10 @@ To create a sales order that uses Brazilian taxes, follow these steps.
 
 To check the tax calculation results, follow these steps.
 
-1. Select **sales tax** in **Sell** tab.
+1. Select **sales tax** in the **Sell** tab.
    - The targeted tax codes are displayed. 
    - During the transition period, **No posting** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
-1. Select **Financials** in **Sales order lines** section.
+1. Select **Financials** in the **Sales order lines** section.
 1. Select **Sales tax** option.
    - The targeted tax codes are displayed. During the transition period,
    - **No posting** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
@@ -71,10 +71,10 @@ To check the tax calculation results, follow these steps.
    - During the transition period, **Prevent posting of ledger accounting entities for sales tax transactions** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
 
 > [!IMPORTANT] 
-> The **tax group** and **item tax group** are not populated when the line is saved in Brazil tax reform 2026. They will be populated once tax calculation is triggered — for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
+> The **tax group** and **item tax group** aren't populated when you save the line in Brazil tax reform 2026. They populate once tax calculation is triggered—for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
 
 > [!TIP]
-> For using tax calculation in sales orders, refer to the Brazil tax reform: Calcaulation in sales orders video.
+> For using tax calculation in sales orders, refer to the Brazil tax reform: Calculation in sales orders video.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=c5c1b7bb-1ba0-4281-addc-2d1835ff3632]
 

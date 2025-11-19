@@ -4,7 +4,7 @@ description: Learn how to calculate taxes in sales quotations using the Brazil t
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 11/19/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -16,7 +16,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to calculate taxes in sales quotations using the Brazil tax reform solution.
+This article describes how to calculate taxes in sales quotations by using the Brazil tax reform solution.
 
 ## Create a sales quotation with Brazilian taxes
 
@@ -64,6 +64,6 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
    - You can view the summary by tax type for Brazilian tax.
 
 > [!IMPORTANT] 
-> The **tax group** and **item tax group** are not populated when the line is saved in Brazil tax reform 2026. They will be populated once tax calculation is triggered — for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
+> The **tax group** and **item tax group** aren't populated when the line is saved in Brazil tax reform 2026. They are populated once tax calculation is triggered—for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
 > 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

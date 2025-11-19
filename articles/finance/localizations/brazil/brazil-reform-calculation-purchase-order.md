@@ -4,7 +4,7 @@ description: Learn about tax calculation in purchase orders in the Brazil tax re
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 10/06/2025
+ms.date: 11/19/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -37,9 +37,9 @@ To create a purchase order that uses Brazilian taxes, follow these steps.
 1. In the **CFOP** field, enter or select a value.
 1. Expand the **Line details** section.
 1. Select the **Setup** tab.
-2. Select **USe Override** option if required.
-3. Under **Tax Reform** group, in the **Item sales tax group** field, enter or select a value.
-4. Under **Tax Reform** group, in the **Sales tax group** field, enter or select a value.
+1. Select **Use Override** option if necessary.
+1. Under **Tax Reform** group, in the **Item sales tax group** field, enter, or select a value.
+1. Under **Tax Reform** group, in the **Sales tax group** field, enter, or select a value.
 1. Select the **Fiscal information** tab.
 1. Select **Save**.
 1. On the Action Pane, select **Purchase**.
@@ -71,7 +71,7 @@ To check the tax calculation results, follow these steps.
    - During the transition period, the system marks **Prevent posting of ledger accounting entities for sales tax transactions** for **CBS** and **IBS** to comply with the current policy from the Brazilian government.
 
 > [!IMPORTANT] 
-> The **tax group** and **item tax group** are not populated when the line is saved in Brazil tax reform 2026. They will be populated once tax calculation is triggered — for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
+> The **tax group** and **item tax group** aren't populated when the line is saved in Brazil tax reform 2026. They are populated once tax calculation is triggered—for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
 
 > [!TIP]
 > For using tax calculation in purchase orders, refer to the Brazil tax reform: Calculation in purchase orders video.

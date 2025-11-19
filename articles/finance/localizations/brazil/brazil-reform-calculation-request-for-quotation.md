@@ -16,7 +16,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes tax calculation in Request for quotation (RFQ) in the Brazil tax reform solution.
+This article describes tax calculation in request for quotation (RFQ) in the Brazil tax reform solution.
 
 ## Create a purchase requisition with Brazilian taxes
 
@@ -53,7 +53,7 @@ To check a purchase quotation that uses Brazilian taxes, follow these steps.
 
 ## Check the tax calculation results
 
-1. Select **Totals** button on top to check the amount for tax.
-1. No Sales tax transaction for RFQ.
+1. Select the **Totals** button at the top to check the amount for tax.
+1. No sales tax transaction exists for RFQ.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

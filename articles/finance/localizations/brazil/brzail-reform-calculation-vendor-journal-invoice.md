@@ -4,7 +4,7 @@ description: Learn about tax calculation in vendor invoice journal in Brazil tax
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 11/19/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -26,14 +26,14 @@ To create a vendor invoice journal that uses Brazilian taxes, follow these steps
 
 1. In Dynamics 365 Finance, go to **Account Payable** \> **Invoices** \> **Invoice journal**.
 1. Select **New**.
-2. In the **Name** field, enter or select a value.
-3. Select **Lines**.
-4. In the **Account type** field, select **Vendor**.
-2. In the **Account** field, enter or select a vendor account.
+1. In the **Name** field, enter or select a value.
+1. Select **Lines**.
+1. In the **Account type** field, select **Vendor**.
+1. In the **Account** field, enter or select a vendor account.
 1. In the **Sales tax group** field, enter or select a value.
 1. In the **Item sales tax group** field, enter or select a value.
-2. Select **Use override for tax reform** if required.
-3. In the **Tax group for tax reform** field, enter or select a value.
+1. Select **Use override for tax reform** if necessary.
+1. In the **Tax group for tax reform** field, enter or select a value.
 1. In the **Item tax group for tax reform** field, enter or select a value.
 1. Select the **Fiscal information** tab.
 1. Select **Save**.
