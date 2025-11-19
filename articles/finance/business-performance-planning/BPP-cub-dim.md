@@ -52,9 +52,7 @@ The **Data model builder** opens to help with:
  - Dimensions - Search previously created Business performance planning dimensions in your environment. When you select each dimension, it automatically appears in the model preview pane, displaying relationships between facts and dimensions. You can add or remove dimensions while the cube is in **Draft** mode. 
  - Drivers - Drivers appear as a numeric column in the cube’s fact table, are the core inputs of your planning model, and can be directly written back from Power BI **Matrix Planning visuals** or from Excel.  
 
-> [!NOTE]
-> In this creation flow, the cube only defines its **structure**.  
-> Data, calculated columns, and advanced logic are added **after publication**, once the cube exists in Dataverse.
+In this cube creation, the cube only defines its structure. Data, calculated columns, and advanced logic are added after the cube is published, once the cube exists in Dataverse.
 
  - Review - The **Review** page summarizes your configuration. You can rename the cube and delete existing drivers or dimensions. Select **Create** to save your draft cube. In **Draft** mode, you can further refine the model by adding or removing drivers and dimensions before publishing.
  - Visualize and publish - After creation, your cube opens in the **Data Model View**, displaying all relationships between the cube, its dimensions, and drivers.  
@@ -95,6 +93,7 @@ The following limitations currently apply to the Data model builder (preview):
 - [Create a cube from JSON](bpp-json.md)  
 - [Load data using dataflows](load-data-dataflows.md)  
 - [Create calculated columns](calculated-columns.md)
+
 
 
 
