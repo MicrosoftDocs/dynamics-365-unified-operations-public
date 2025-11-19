@@ -61,10 +61,9 @@ The user who installs or updates the app, as well as the user designated as the 
 By default, the user who installs or updates the Business performance planning app automatically becomes the default owner of all Power Automate flows related to the budget register entry export process.  
 This means that:
 - Their **Dataverse connection** is used by default for all flows.  
-- Their **current access level** to the **Finance virtual entities** is inherited during installation.  
+- Their current access level to the **Finance virtual entities** is inherited during installation.  
 
-If this installer user doesn’t have the correct Finance roles or connections, the export may fail.  
-In such cases, ownership of the flows should be reassigned to a user with the required Finance privileges (typically the Business performance planning administrator or flow owner).
+If this installer user doesn’t have the correct Finance roles or connections, the export may fail. In such cases, ownership of the flows should be reassigned to a user with the required Finance privileges (typically the Business performance planning administrator or flow owner).
 
 
 #### Required roles and duties in Dynamics 365 Finance
@@ -275,10 +274,10 @@ To review all previously created exports from the same planning cube, follow the
 
 - [Set up Dynamics 365 Finance user roles for budget register entry write-back](bpp-bud-reg-user.md)  
 - [Configure the Dynamics 365 Finance connection and virtual entities for budget register entry write-back](BPP-connect-Budget.md)  
-- [Set up Budget Models in Dynamics 365 Finance](../budgeting/budget-models.md)  
 - [Basic budgeting overview configuration](../budgeting/basic-budgeting-overview-configuration.md)  
-- [Create and configure Planning cubes in Business performance planning](create-cubes.md)  
-- [Manage security roles and privileges in Business performance planning](bpp-security,md)
+- [Create and configure cubes in Business performance planning](create-cubes.md)  
+- [Manage security roles and privileges in Business performance planning](bpp-security.md)
+
 
 
 
