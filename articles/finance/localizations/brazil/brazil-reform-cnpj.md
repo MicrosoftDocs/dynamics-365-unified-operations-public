@@ -35,3 +35,4 @@ To support flexible handling of CNPJ formats, the Brazilian tax reform 2026 solu
 > Existing numeric CNPJs remain valid. New registrations use the alphanumeric format starting **July 2026**.
 >
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
