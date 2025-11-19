@@ -93,8 +93,9 @@ The following limitations currently apply to the Data model builder (preview):
 
 - [Create a cube from Excel](bpp-cube-Excel.md)  
 - [Create a cube from JSON](bpp-json.md)  
-- [Load data using dataflows](load-data-dataflowss.md)  
+- [Load data using dataflows](load-data-dataflows.md)  
 - [Create calculated columns](calculated-columns.md)
+
 
 
 
