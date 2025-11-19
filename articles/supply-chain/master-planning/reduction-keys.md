@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqPlanSched, ReqReduceKeyDefaultDataWizard, ReqReduceKey
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 11/19/2025
 ms.custom:
   - bap-template
 ---
@@ -20,7 +20,7 @@ This article provides information about the different methods that you can use t
 
 ## Methods to reduce forecast requirements
 
-When you include a forecast in a master plan, you can select how the forecast requirements are reduced when actual demand is included. Note that master planning excludes forecast requirements from the past, which means all forecast requirements before today's date.
+When you include a forecast in a master plan, you can select how the forecast requirements are reduced when actual demand is included. Master planning excludes forecast requirements from the past, which means all forecast requirements before today's date.
 
 To include a forecast in a master plan and select the method to reduce forecast requirements, go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**. In the **Forecast model** field, select a forecast model. In the **Method used to reduce forecast requirements** field, select a method. The following options are available:
 
@@ -200,7 +200,7 @@ Use a forecast reduction key with the *Transactions - reduction key* and *Percen
 
     - The **Effective date** field indicates the date when creation of the periods starts. When the **Use the effective date** option is set to *Yes*, the periods start on the effective date. When it's set to *No*, the periods start on the date when master planning is run.
     - Define the periods that the forecast reduction should occur during.
-    - For a specific period, specify the percentages that the forecast requirements should be reduced by. You can enter positive values to decrease requirements or negative values to increase requirements.
+    - For a specific period, specify the percentages that the forecast requirements should be reduced by. Enter positive values to decrease requirements or negative values to increase requirements.
 
 ## Use a reduction key
 
