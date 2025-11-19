@@ -114,6 +114,7 @@ To workaround this issues, follow these steps:
 - [Create a cube from existing dimensions](BPP-cub-dim.md)  
 - [Create a cube from JSON](bpp-json.md)  
 - [Load data using dataflows](load-data-dataflows.md)  
-- [Create calculated columns](create-calculated-columns.md)
+- [Create calculated columns](calculated-columns.md)
+
 
 
