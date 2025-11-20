@@ -6,7 +6,7 @@ ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: WHSLoadTemplate, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
 ms.topic: how-to
-ms.date: 07/30/2024
+ms.date: 11/19/2025
 ms.custom: 
   - bap-template
 ---
@@ -26,7 +26,7 @@ This article describes how to set up load templates, and how to associate a load
 1. In the row for the new or existing template, set the following fields:
 
     - **Load template ID** – Enter a unique identifier (ID) for the load template.
-    - **Equipment** – Select the equipment that should be used to ship the load.
+    - **Equipment** – Select the equipment that you want to use to ship the load.
     - **Load height**, **Load width**, and **Load depth** – Enter the dimensions of the load.
     - **Max. allowed load volume** and **Max. allowed load weight** – Enter the maximum allowed volume and weight of the load.
     - **Maximum allowed gross weight** – Enter the maximum allowed gross weight of the load. A load's gross weight includes both its tare weight and its loading weight.
