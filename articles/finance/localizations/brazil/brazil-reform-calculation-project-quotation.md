@@ -1,7 +1,7 @@
 ---
-title: Use tax calculation in sales quotation in Brazil tax reform
-description: Learn how to calculate taxes in sales quotations using the Brazil tax reform solution. Follow step-by-step instructions to ensure compliance and accuracy.
-#customer intent: As a sales manager, I want to create a sales quotation with Brazilian taxes so that I can ensure compliance with Brazil's tax reform requirements.
+title: Use tax calculation in project quotation in Brazil tax reform
+description: Learn how to calculate taxes in project quotations using the Brazil tax reform solution. Follow step-by-step instructions to ensure compliance and accuracy.
+#customer intent: As a project manager in Brazil, I want to calculate taxes in project quotations so that I can ensure compliance with the Brazil tax reform.
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
@@ -13,30 +13,29 @@ ms.custom:
   - bap-template
 ---
 
-# Use tax calculation in sales quotation in Brazil tax reform
+# Use tax calculation in project quotation in Brazil tax reform
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to calculate taxes in sales quotations by using the Brazil tax reform solution.
+This article describes how to calculate taxes in project quotations by using the Brazil tax reform solution.
 
-## Create a sales quotation with Brazilian taxes
+## Create a project quotation with Brazilian taxes
 
 Create a quotation by specifying fiscal information like the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a quotation line, select a CFOP code in the **CFOP** field. The CFOP codes available in this field depend on the fiscal establishment of the site selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules maintained in Global studio. 
 
-To create a sales quotation that uses Brazilian taxes, follow these steps:
+To create a project quotation that uses Brazilian taxes, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Sales and marketing** \> **Sales quotations** \> **All quotations**.
+1. In Dynamics 365 Finance, go to **Project management and accountings** \> **Quotations** \> **Project quotations**.
 1. Select **New**.
 1. In the **Account type** field, select an option.
 1. In the **Customer account** field, enter or select a value.
 1. Select **OK**.
-1. In the **Lines or header** field, select an option.
-1. In the **Final user** field, select **Yes** if all lines from the quotation are for a final user. If you select **Yes**, the Imposto Sobre Circulação de Mercadorias e Serviços (ICMS) tax includes the Imposto Sobre Produtos Industrializados (IPI) tax and any freight charges.  
-1. In the **Item** field, enter or select a value.
+1. Expand the **Lines** section.
+1. In the **Transaction type** field, enter or select a value.
+1. In the **Project category** field, enter or select a value.
 1. In the **Quantity** field, enter a number.
-1. In the **Site** field, enter or select a value.
-1. In the **Warehouse** field, enter or select a value.
-1. In the **CFOP** field, enter or select a value.
+1. In the **Unit price** field, enter a number.
+1. In the **Line property** field, enter or select a value.
 1. Expand the **Line details** section.
 1. Select the **Setup** tab.
 1. In the **Sales tax group** field, enter or select a value.
@@ -45,8 +44,8 @@ To create a sales quotation that uses Brazilian taxes, follow these steps:
 1. In the **Tax group** field under **Tax reform** group, enter or select a value.
 1. In the **Item tax group** field  under **Tax reform** group, enter or select a value.
 1. Select **Save**.
-1. On the Action Pane, select **Quotation**.
-1. Select **Send quotation**.
+1. On the Action Pane, select **Quote**.
+1. Select **Send quotation** under **Process**.
 1. In the **Print quotation** field, select **Yes**.
 1. Select **OK**.
 1. Close the page.
@@ -61,17 +60,17 @@ To create a sales quotation that uses Brazilian taxes, follow these steps:
 
 To check the results for tax calculation in Brazil, follow these steps:
 
-1. Select **sales tax** in the **Quotation** tab.
-   - The targeted tax codes are displayed during the transition period.
+1. Select **sales tax** in the **Quote** tab.
+   - The targeted tax codes appear during the transition period.
    - **No posting** is marked for **CBS** and **IBS** to ensure compliance with the current policy from Brazilian government.
 1. Expand the **Line details** section, then select the **Setup** tab.
    - Based on the applicability rule settings, the default values for the new tax types (**CBS**, **IBS**) appear in the **Tax group** and **Item tax group** under the **Tax reform** group.
-   - You can change these defaults by setting the **Use override** checkbox to be **YES**, then specifying the desired values in the **Tax group** and **Item tax group**.
+   - You can change these defaults by setting the **Use override** checkbox to **YES**, then specifying the desired values in the **Tax group** and **Item tax group**.
    - During the transition period, you might see targeted groups for both legacy tax types and reformed tax types coexisting under the **Sales tax** group and the **Tax reform** group.
-1. Select **Total** in the **Sales quotation** tab.
+1. Select **Totals** in the **project quotation** tab.
    - You can view the summary by tax type for Brazilian tax.
 
 > [!IMPORTANT] 
-> The **tax group** and **item tax group** aren't populated when the line is saved in Brazil tax reform 2026. They'll be populated once tax calculation is triggered—for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
+> The **tax group** and **item tax group** aren't populated when you save the line in Brazil tax reform 2026. They populate once tax calculation is triggered—for example, by selecting the **Sales tax** or **Totals** button, or during document confirmation or posting.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
