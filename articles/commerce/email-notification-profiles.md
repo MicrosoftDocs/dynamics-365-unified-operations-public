@@ -69,6 +69,13 @@ The following image shows some example event notification settings.
 
 ![Event notification settings.](media/email-notification-profile.png)
 
+##  Associate the email notification profile to channel
+
+The email notification profile created above can activated by associating it with the channel e.g., brick and mortal store, Online channel or call center channel. To do so, navigate to the channel form and select the desired email notification profile. 
+
+> [!NOTE]
+> The email notification profile can also be defaulted at the **Commerce parameters -> General** section, but it is recommended to define these at the individual channel level.
+
 ## Enable the optimized order notifications processing feature
 
 When the **Optimized order notifications processing** feature is enabled, the email notification process job is executed in parallel and more emails can be processed at a time.
