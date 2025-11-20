@@ -7,7 +7,7 @@ ms.topic: article
 ms.date: 08/25/2025
 ms.update-cycle: 1095-days
 ms.custom: evergreen
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 11
