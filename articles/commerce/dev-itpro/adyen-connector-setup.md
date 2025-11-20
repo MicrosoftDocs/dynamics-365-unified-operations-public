@@ -207,7 +207,7 @@ To configure the PIN pad, follow these steps.
 1. In the **Device name** field, enter **MicrosoftAdyenDeviceV001**.
 
 > [!NOTE]
-> To route to region specific endpoints, see [Route to the region specific Adyen endpoint](adyen-connector-setup.md#route-to-the-region-specific-dyen-endpoint).
+> To route to region specific endpoints, see [Route to the region specific Adyen endpoint](adyen-connector-setup.md#route-to-the-region-specific-adyen-endpoint).
 
 #### Set up a Dynamics 365 register
 
@@ -368,6 +368,7 @@ For answers to frequently asked questions regarding the Dynamics 365 Payment Con
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
+
 
 
 
