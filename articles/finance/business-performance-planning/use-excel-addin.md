@@ -46,8 +46,13 @@ To connect to Dataverse and load a data model, follow these steps.
 6. Select the **Select multiple items** checkbox.
 7. Search for and select your cube.
 8. Select **Select related tables** to have the system automatically select all the dimensions.
-9. Select **Load**. Your data model is loaded, and data is brought from Dataverse into your Excel workbook. The data load might take some time, depending on the volume of data in Dataverse.
-10. We recommend that you save your workbook at this point.
+9. Review the list of tables to be imported:
+Power BI may also select system tables such as asyncoperation, processsession, or systemuser.
+These tables aren’t required for planning and should be unticked before loading.
+To confirm what will be imported, select Display Options ▸ Only selected items in the Navigator panel.
+Clear any text filters in the search bar to see all selected items.
+10. Select **Load**. Your data model is loaded, and data is brought from Dataverse into your Excel workbook. The data load might take some time, depending on the volume of data in Dataverse.
+11. We recommend that you save your workbook at this point.
 
 ## Create a PivotTable based on your data model
 
