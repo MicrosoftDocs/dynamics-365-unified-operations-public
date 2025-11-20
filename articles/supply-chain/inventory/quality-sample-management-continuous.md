@@ -22,7 +22,7 @@ ms.custom:
 To prepare your environment for inline sampling, set up the following elements as described in [Enable and configure sample management (preview)](quality-sample-management-admin.md):
 
 - A number sequence for generating sample IDs.
-- Sample life cycle states.
+- Sample lifecycle states.
 - Sample type used for continuous sampling.
 - Sample procedures and sample procedure types.
 - An [item sampling](quality-item-sampling.md) policy set up for continuous sampling. It must have the following settings on the **Sample management** FastTab:
