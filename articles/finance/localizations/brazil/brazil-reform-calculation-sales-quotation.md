@@ -1,6 +1,7 @@
 ---
 title: Use tax calculation in sales quotation in Brazil tax reform
-description: Learn how to calculate taxes in sales quotations using the Brazil tax reform solution
+description: Learn how to calculate taxes in sales quotations using the Brazil tax reform solution. Follow step-by-step instructions to ensure compliance and accuracy.
+#customer intent: As a sales manager, I want to create a sales quotation with Brazilian taxes so that I can ensure compliance with Brazil's tax reform requirements.
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
@@ -22,7 +23,7 @@ This article describes how to calculate taxes in sales quotations by using the B
 
 Create a quotation by specifying fiscal information like the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a quotation line, select a CFOP code in the **CFOP** field. The CFOP codes available in this field depend on the fiscal establishment of the site selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules maintained in Global studio. 
 
-To create a sales quotation that uses Brazilian taxes, follow these steps.
+To create a sales quotation that uses Brazilian taxes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Sales and marketing** \> **Sales quotations** \> **All quotations**.
 1. Select **New**.
@@ -58,7 +59,7 @@ To create a sales quotation that uses Brazilian taxes, follow these steps.
 
 ## Check the results for tax calculation in Brazil
 
-To check the results for tax calculation in Brazil, follow these steps.
+To check the results for tax calculation in Brazil, follow these steps:
 
 1. Select **sales tax** in the **Quotation** tab.
    - The targeted tax codes are displayed during the transition period.
@@ -72,5 +73,5 @@ To check the results for tax calculation in Brazil, follow these steps.
 
 > [!IMPORTANT] 
 > The **tax group** and **item tax group** aren't populated when the line is saved in Brazil tax reform 2026. They'll be populated once tax calculation is triggered—for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
-> 
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

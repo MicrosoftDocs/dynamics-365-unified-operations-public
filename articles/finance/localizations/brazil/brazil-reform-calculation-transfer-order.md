@@ -1,6 +1,7 @@
 ---
 title: Use tax calculation in transfer orders in Brazil tax reform
-description: Learn about tax calculation in transfer orders in Brazil tax reform solution
+description: Learn how to calculate taxes in transfer orders under Brazil's tax reform. Follow step-by-step instructions to ensure compliance with updated fiscal policies.
+#customer intent: As a finance professional in Brazil, I want to understand how to calculate taxes in transfer orders so that I can ensure compliance with the Brazil tax reform.
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
@@ -22,7 +23,7 @@ This article describes tax calculation in transfer orders in Brazil tax reform s
 
 You can create a quotation by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a transfer order line, you can select a CFOP code in the **CFOP** field. The CFOP codes that are available in this field depend on the fiscal establishment of the site that you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules in Globalization studio. 
 
-To create a transfer order that uses Brazilian taxes, follow these steps.
+To create a transfer order that uses Brazilian taxes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Inbound order** \> **Transfer orders** or **Inventory management** \> **Outbound orders** \> **Transfer order**
 1. Select **New**.
@@ -49,7 +50,7 @@ To create a transfer order that uses Brazilian taxes, follow these steps.
 
 ## Check the tax calculation results
 
-To check the tax calculation results, follow these steps.
+To check the tax calculation results, follow these steps:
 
 1. On the Action Pane, select **Sales tax** under **View** group in the **Transfer order** page.
    - The targeted tax codes are displayed. 
@@ -61,7 +62,7 @@ To check the tax calculation results, follow these steps.
   
 > [!IMPORTANT] 
 > The **tax group** and **item tax group** aren't populated when the line is saved in Brazil tax reform 2026. They are populated once tax calculation is triggered—for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
->
+
 > [!TIP]
 > For using tax calculation in transfer orders, refer to the Brazil tax reform: Calculation in sales orders video.
 
