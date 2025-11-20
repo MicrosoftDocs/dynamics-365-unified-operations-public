@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 11/19/2025
 ms.custom:
   - bap-template
 ---
@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-For some organizations, logistics operations depend on other legal entities (companies) in the organization. These operations are handled by using intercompany sales and purchases, because each legal entity has a separate chart of accounts.
+For some organizations, logistics operations depend on other legal entities (companies) in the organization. Handle these operations by using intercompany sales and purchases because each legal entity has a separate chart of accounts.
 
 This article describes intercompany planning and explains how to configure intercompany planning in Microsoft Dynamics 365 Supply Chain Management.
 
@@ -50,7 +50,7 @@ Follow these steps to configure your master plan so that it includes planned dow
 
 ## Peg across companies by using multilevel pegging
 
-In multilevel pegging, you can view pegging across companies to see the initial source of demand that's being covered by a supply.
+In multilevel pegging, you can view pegging across companies to see the initial source of demand that's covered by a supply.
 
 To view multilevel pegging information, follow these steps.
 
