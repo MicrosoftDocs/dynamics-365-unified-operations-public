@@ -223,34 +223,35 @@ In Commerce version 10.0.44, the pay by link payment method supports scenarios w
 
 ## Payment link for customer orders in POS
 
-Many times customers visiting the store like the products but need more time to evaluate before making the purchase. When the customers are ready to purchase, they often choose to order online as they now understand what they want and they often prefer avoiding another trip to the store. This not only results in the loss of sale for the physical store but also a lost commission for the store associate who helped the customer evaluate the product. To mitigate such losses, the stores can leverage the pay by link capability via the Adyen connector to create the order and a corresponding payment link which is emailed to the customer. If the customer makes a payment within a predefined duration then the order can released for processing, else the order gets systematically cancelled. This ensures that the sales is credited to the store and store associate who helped the customer with the sale.
+Customers visiting a physical store often like the products on offer, but need more time to evaluate before making a purchase. When customers are ready to purchase products, they often choose to order them online because they'd rather avoid another trip to the physical store. This not only results in the loss of sale for the physical store, but also a lost commission for the store associate who helped the customer evaluate the product. To mitigate such losses, stores can use the Adyen connector's pay by link functionality to create the order and email the corresponding payment link to the customer. If the customer makes a payment within a predefined duration, then the order can released for processing, otherwise the order is cancelled by the system. This flow ensures that the sale is credited to the store and the store associate who helped the customer with the sale.
 
 > [!NOTE]
 > This feature is available as a private preview starting with Commerce version 10.0.46.
 
-### Setup for supporting Pay by link for orders in POS
+### Set up pay by link functionality for orders in POS
 
-In addition to the generic pay by link setup described in the above sections of the document, the following steps are required to enable the pay later via payment link capability.
+In addition to the generic pay by link setup described earlier in this article, the following additional steps are required to enable the pay later via payment link functionality.
 
-1. Enable the feature named **Enable asynchronous payments for sales orders** via the Feature management workspace. However, since this is a private preview feature, please contact Microsoft support to enable this feature in your environment.
-1. To ensure all the new tables are initialized run the **Initialize commerce scheduler** job while keeping the **Delete existing configuration** and **Update subjobs only** configurations to **No**.
-1. Define the hold code that should be applied to orders which will be paid later via payment link. To do so, navigate to **Account receivable parameters -> General -> Sales setup** fast tab and choose a hold code for configuration **Hold code for payment confirmation**.
-1. Define the duration in minutes that is allowed for the customer to make a payment for the order. If the customer does not make a payment during this duration, then the order will be systematically cancelled. To do so, navigate to **Account receivable parameters -> General -> Sales setup** fast tab and choose a value for configuration  **Order hold timeout for pending payments (minutes)**.
-1. By default only managers can create orders with deferred payments. To grant this permission to a worker you can enable the POS permission named **Allow conclude transaction with deferred payments** for the desired worker and then associate this permission to a new operation named **Conclude and pay later**.
-1. Schedule the batch job **Process asynchronous payments for sales orders** to run at the desired interval (e.g., every 15 mins) to check for customer payments
-1. To automatically send the payment link to the customer, refer the [documentation](/dynamics365/commerce/email-notification-profiles) to enable the standard email capability in Commerce headquarters.
-   - For the email notification profile associated with the store, add a new Email notification type named **Payment link created** and define the email format for this event.
-   - The following properties can be added to the email format to send the payment link related details
-     - paymentlinkurl - Payment link URL
-     - paymentlinkamountdue - Amount associated with the payment link
-     - paymentlinkid - Payment link ID
-     - referenceid - Merchant reference id
-     - paymentlinkqrcode - QR code for the payment link URL. However, this field is only supported for the payment link created and cancelled via call center but not for POS.
+To enable the pay later via payment link functionality, follow these steps.
 
-   > [!NOTE]
-   > There is an additional Email notification type named **Payment link cancelled** which can send the email when the payment link is cancelled. However, the **Payment link cancelled** notification type is only supported for the call center orders and not for POS as of 10.0.46. 
+1. In Commerce headquarters, enable the **Enable asynchronous payments for sales orders** feature in the **Feature management** workspace. However, since this is a private preview feature, you must first contact Microsoft support to include this feature in your environment.
+1. To ensure that all the new tables are initialized, run the **Initialize commerce scheduler** job while keeping the **Delete existing configuration** and **Update subjobs only** configurations set to **No**.
+1. Define the hold code to be applied to orders that will be paid later via a payment link. To do so, go to the **Account receivable parameters** \> **General** \> **Sales setup** FastTab, and foir the **Hold code for payment confirmation** configuration, select a hold code.
+1. Define the duration in minutes that is allowed for the customer to make a payment for the order. If the customer doesn't make a payment during this duration, then the order is systematically cancelled. To define the payment duration, go to the **Account receivable parameters** \> **General** \> **Sales setup** FastTab and select a value for the **Order hold timeout for pending payments (minutes)** configuration.
+1. By default, only managers can create orders with deferred payments. To grant this permission to a worker, you must enable the **Allow conclude transaction with deferred payments** POS permission for the the worker, and then associate this permission to a new operation named **Conclude and pay later**.
+1. Schedule the **Process asynchronous payments for sales orders** batch job to run at the desired interval (for example, every 15 minutes) to check for customer payments.
+1. To automatically send the payment link to the customer, follow the instructions in [Set up an email notification profile](../email-notification-profiles.md) to enable the standard email capability in Commerce headquarters.
+1. For the email notification profile associated with the store, add a new **Payment link created** email notification type and define the email format for this event. You can add the following properties to the email format to send the payment link related details:
+    - **paymentlinkurl**: The payment link URL
+    - **paymentlinkamountdue**: The amount associated with the payment link.
+    - **paymentlinkid**: The payment link ID.
+    - **referenceid**: The merchant reference ID.
+    - **paymentlinkqrcode**: The QR code for the payment link URL. This field is only supported for the payment link created and cancelled via call center, not for POS.
 
-1. Run the distribution schedule job 9999 to ensure the setup data is synchronized with the channel database.	
+    > [!NOTE]
+    > There's an additional **Payment link cancelled** email notification type that can send an email when the payment link is cancelled. However, as of Commerce version as of 10.0.46, the **Payment link cancelled** notification type is only supported for the call center orders and not for POS. 
+
+1. Run the **9999** distribution schedule job to ensure that the setup data is synchronized with the channel database.	
 
 ### End to end user experience for customer orders in POS
 1. The sales associate helps the customer choose a chair in the store, but the customer needs more time to decide.
