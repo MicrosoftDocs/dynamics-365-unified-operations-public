@@ -3,11 +3,12 @@ title: Warehouse management only mode overview
 description: Learn about Warehouse management only mode, which enables the integration of warehouse management functionality in Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: overview
-ms.date: 04/27/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: 
+ms.topic: overview
+ms.date: 11/20/2025
+ms.custom:
+  - bap-template
 ---
 
 # Warehouse management only mode overview
