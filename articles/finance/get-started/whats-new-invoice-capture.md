@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in Invoice capt
 author: shielas  
 ms.author: shielas
 ms.topic: whats-new
-ms.date: 10/01/2025
+ms.date: 11/20/2025
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.custom: 
@@ -27,19 +27,18 @@ This article provides information about the Invoice capture solution that automa
 
 ## November 2025 
 The November release of the Invoice capture solution version 1.9.11.x contains the following feature enhancements and bug fixes.
-
-**Our next scheduled release will be in **January 2026.**
+Our next scheduled release is in January 2026.
 
 | Feature  | Description |
 | --- |--- |
-|	Invoice derivation plugin |Changes to allow automatic retries in event of failure.  Users can select to retry invoice(s) that are in an “In processing” state.   This will reduce the number of times the user will have invoices that remain in the ‘In Processing’ state.   |
-|Charges (Private preview)** | Support automatic detection of charges for standard invoicing models.  Ability to select charges that are embedded as line items, and move them to the charges section. (Does not apply to custom models) | 
-|Bug fix – Prevent continuous learning updates where signature is empty|Known issue 5808585 - Continuous Learning uses specific fields to generate a signature and store the corresponding results. However, the current implementation is creating continuous learning records even when some or all of the underlying fields used for signature generation are null.   The fix ensures that only meaningful data is stored in the continuous learning table. |
-|Bug fix – support continuous learning for decimal separator in live level amounts. | Known issue:  5417896 – Continuous learning is not working on decimal format derivation for the line amount.   |
-|Bug Fix – Performance improvements while deleting invoice lines on the side by side document viewer |When attempting to delete 100+ invoice lines in the side by side view, the performance was slow and the page appears unresponsive.|
-|Bug fix - Excluding duplicate detection rule from external document info entity |Performance improvement fix.  This bug fix excludes the duplicate detection rule from External document info entity by default, as the setting was causing a performance degradation.  This can be overridden within the maker portal:  Enable and disable duplicate detection (Microsoft Dataverse) - Power Apps | Microsoft Learn|
+|	Invoice derivation plugin |Changes to allow automatic retries in event of failure. Users can select to retry invoice(s) that are in an “In processing” state. This reduces the number of times the user has invoices that remain in the ‘In Processing’ state.   |
+|Charges (Private preview) | Support automatic detection of charges for standard invoicing models. Ability to select charges that are embedded as line items, and move them to the charges section. This doeso't apply to custom models. | 
+|Bug fix – Prevent continuous learning updates where signature is empty| Continuous learning uses specific fields to generate a signature and store the corresponding results. However, the current implementation creates continuous learning records even when some or all of the underlying fields used for signature generation are null. The fix ensures that only meaningful data is stored in the continuous learning table. |
+|Bug fix – Support continuous learning for decimal separator in live level amounts. | Continuous learning isn't working on decimal format derivation for the line amount.   |
+|Bug Fix – Performance improvements while deleting invoice lines on the side by side document viewer |When attempting to delete more than 100 invoice lines in the side by side view, the performance was slow and the page appears unresponsive.|
+|Bug fix - Excluding duplicate detection rule from external document info entity |Performance improvement fix. This bug fix excludes the duplicate detection rule from External document info entity by default, as the setting was causing a performance degradation.|
 
-**If you are interested in participating in the private preview of the charges enhancements please reach out to shielas@microsoft.com and achansoriya@microsoft.com.  Please include your Org ID.**
+If you are interested in participating in the private preview of the charges enhancements, reach out to shielas@microsoft.com and achansoriya@microsoft.com and with your Org ID.
 
 ## September 2025 
 The September release of the Invoice capture solution version 1.9.9.x contains the following feature enhancements and bug fixes.
