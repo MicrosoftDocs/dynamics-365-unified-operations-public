@@ -1,7 +1,7 @@
 ---
 title: Use tax calculation in sales quotation in Brazil tax reform
 description: Learn how to calculate taxes in sales quotations using the Brazil tax reform solution. Follow step-by-step instructions to ensure compliance and accuracy.
-#customer intent: As a sales manager, I want to create a sales quotation with Brazilian taxes so that I can ensure compliance with Brazil's tax reform requirements.
+#customer intent: As a sales manager in Brazil, I want to calculate taxes in sales quotations so that I can ensure compliance with the Brazil tax reform.
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
@@ -71,7 +71,7 @@ To check the results for tax calculation in Brazil, follow these steps:
 1. Select **Total** in the **Sales quotation** tab.
    - You can view the summary by tax type for Brazilian tax.
 
-> [!IMPORTANT] 
-> The **tax group** and **item tax group** aren't populated when the line is saved in Brazil tax reform 2026. They'll be populated once tax calculation is triggered—for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
+> [!IMPORTANT]
+> The **tax group** and **item tax group** aren't populated when the line is saved in Brazil tax reform 2026. They are populated once tax calculation is triggered—for example, by selecting the **Sales tax** or **Totals** button, or during document confirmation or posting.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
