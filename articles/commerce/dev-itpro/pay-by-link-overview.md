@@ -1,8 +1,8 @@
 ---
-title: Enable pay by link in POS by using the Adyen connector 
+title: Enable pay by link in POS by using the Adyen connector (preview)
 description: Learn how to set up and enable the pay by link payment method to capture payments in Microsoft Dynamics 365 Commerce.
 author: shajain
-ms.date: 11/20/2025
+ms.date: 11/21/2025
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -12,20 +12,23 @@ ms.author: shajain
 ms.search.validFrom: 2025-06-15
 ---
 
-# Enable pay by link in POS by using the Adyen connector
+# Enable pay by link in POS by using the Adyen connector (preview)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article explains how to set up and enable the pay by link payment method to capture payments in Microsoft Dynamics 365 Commerce.
 
-Pay by link functionality enables merchants to offer modern payment methods that give customers the flexibility to choose their preferred payment method. Pay by link eliminates the need for a payment terminal. Therefore, store associates can be mobile and accept various types of payments. In addition, pay by link enables customers to pay from their current location. In this way, it can help reduce checkout lines and therefore expedite the checkout process. Moreover, starting 10.0.46, pay by link is also available for orders created from POS and call center. 
+Pay by link functionality enables merchants to offer modern payment methods that give customers the flexibility to choose their preferred payment method. Pay by link eliminates the need for a payment terminal. Therefore, store associates can be mobile and accept various types of payments. In addition, pay by link enables customers to pay from their current location. In this way, it can help reduce checkout lines and therefore expedite the checkout process.
 
+> [!NOTE]
+> Starting with Commerce version 10.0.46, pay by link functionality is also available for orders created from point of sale (POS) and call center. 
 
 ## Prerequisites
 
 ### Enable OAuth authentication
 
-Payment notifications for the pay by link payment method use Open Authorization (OAuth)–based authentication. OAuth related fields are available by default starting 10.0.46, however for prior versions, you must contact Microsoft Support and ask to have a flight enabled in your Commerce environments.
+Payment notifications for the pay by link payment method use Open Authorization (OAuth)–based authentication. Starting with Commerce version 10.0.46, OAuth-related fields are available by default. For earlier Commerce versions, you must contact Microsoft Support and ask to have the flight enabled in your Commerce environments.
 
 ### Link your Commerce environment to a Dataverse environment
 
@@ -33,13 +36,14 @@ The payment notification service uses Dataverse. Therefore, to receive payment n
 
 ### Minimum required versions
 
-Pay by link for cash and carry transactions is available as of the Commerce 10.0.44 release. The following minimum versions of the various components are required:
+Pay by link for cash and carry transactions is available starting with the Commerce 10.0.44 release. The following minimum versions of the various components are required:
 
-- **Store Commerce App/ Cloud Point of Sale**: 9.54.25148.1 and any version for 10.0.45
-- **Commerce Scale Unit**: v9.54.25295.4 (for 10.0.44) and (9.55.25295.1) for 10.0.45
+- **Store Commerce app/Cloud POS**: Version 9.54.25148.1, or any version starting with Commerce version 10.0.45.
+- **Commerce Scale Unit (CSU)**: Version 9.54.25295.4 for Commerce version 10.0.44, and version 9.55.25295.1 starting with Commerce version 10.0.45.
 - **Commerce headquarters**: 10.0.44 and any version for 10.0.45
 
-Pay by link for **customer orders** across POS and call center is available as of the Commerce 10.0.46 release. However, these capabilities are in private preview.
+> [!NOTE]
+> Pay by link functionality for customer orders in POS and call center is available starting with the Commerce 10.0.46 release. However, these capabilities are in private preview.
 
 ### Required role to complete the setup
 
@@ -49,12 +53,12 @@ Some of the steps require a Commerce headquarters user who is either an administ
 
 ### Enable the features required for pay by link
 
-To enable payment notifications for pay by link, enable the following features in the **Feature management** workspace:
+To enable payment notifications for pay by link, you must enable the following features in the **Feature management** workspace:
 
-- Enhanced wallet support and payment improvements. Learn more in [Wallet payment support](/dynamics365/commerce/dev-itpro/wallets). Please ensure that any payment method that will be available on the payment link for the customer, must be mapped to a payment method associated with the store else, the system will assume that the payment method is not supported and payment could be declined.
+- Enhanced wallet support and payment improvements. Learn more in [Wallet payment support](/dynamics365/commerce/dev-itpro/wallets). Any payment method that's available on the payment link for the customer must be mapped to a payment method associated with the store, otherwise the system assumes that the payment method isn't supported and the payment can be declined.
 - The unified payments experience in POS. Learn more in [Check out faster with optimized payment flows](/dynamics365/commerce/dev-itpro/faster-checkout-pos).
-- The **Enable Payments Notification Feature** feature.
-- The **Enable Pay By Link Payment Feature** feature.
+- The **Enable Payments Notification** feature.
+- The **Enable Pay By Link Payment** feature.
 
 ### Create a webhook to receive payment notifications from Adyen
 
@@ -167,11 +171,11 @@ Pay by link doesn't require that Hardware station is enabled for Cloud POS or th
 
 ### Define the behavior for the payment link
 
-You can control some payment link experiences by configuring key-value pairs in the **Custom Settings** property in the **Adyen connector** used for the register or store (in case of call center orders). You can control the following experiences:
+You can control some payment link experiences by configuring key-value pairs in the **Custom Settings** property in the Adyen connector that's used for the register or store (in case of call center orders). You can control the following experiences:
 
 - **Payment expiration duration**
-  - To control this value for **cash and carry** transactions, add a value for the **PaymentLinkDuration** key.
-  - To control this value for **customer orders**, add a value for the **PaymentLinkDuration_Orders** key.
+    - To control this value for cash and carry transactions, add a value for the **PaymentLinkDuration** key.
+    - To control this value for customer orders, add a value for the **PaymentLinkDuration_Orders** key.
 - **Inclusion of the Adyen store information in the payment link** - To control this experience, add a value for the **Store** key.
 - **Requirement for shoppers to enter their information before payment** - To control this experience, add a value for the **RequiredShopperFields** key.
 
@@ -179,7 +183,7 @@ You can skip any of the preceding key-value pairs in **Custom Settings**. If you
 
 For example, you add the value `{"PaymentLinkDuration":"02:00", "Store":"Test_Store", "RequiredShopperFields":"email,name,phone,billingAddress,deliveryAddress"}` for the **Custom Settings** property. In this case, the Adyen payment connector sets the payment link expiration to two hours, the payment link is associated with the **Test_Store** store, and customers must enter their name, email address, phone number, delivery address, and billing address before they make the payment.
 
-For test environments, you must set the **Gateway environment** property of the Adyen connector in the hardware profile to **Test**. For production environments, set the value of the **Gateway environment** property to **Live** (or region specific value), and set the **Optional Domain** property to the prefix value that's found in the Adyen customer portal.
+For test environments, you must set the **Gateway environment** property of the Adyen connector in the hardware profile to **Test**. For production environments, set the value of the **Gateway environment** property to **Live** (or a region-specific value), and set the **Optional Domain** property to the prefix value that's found in the Adyen customer portal.
 
 To set up the Adyen connector in the hardware profile, follow these steps.
 
@@ -189,7 +193,7 @@ To set up the Adyen connector in the hardware profile, follow these steps.
 1. Copy the prefix value, and paste it into the **Optional Domain** property field of the Adyen connector.
 1. Run the **9999** distribution schedule job.
 
-## Payment experience using pay by link for cash and carry transactions
+## Payment experience when using pay by link for cash and carry transactions
 
 When the pay by link payment method is selected, the POS displays a dialog. This dialog shows basic customer information, such as the name, email address, and primary delivery address. The values are automatically taken from the customer who is added to the transaction. However, the cashier can change the values before they create the payment link. If no customer is added to the transaction, the name and email fields are blank, and the store's address is used as the default delivery address.
 
@@ -203,7 +207,7 @@ Some payment methods, such as "buy now, pay later," require that a billing addre
 
 While the customer is making the payment, the system automatically checks the payment status every five seconds. The cashier can also manually check the payment status by selecting **Check status**.
 
-:::image type="content" source="media/pay-by-link-main.png" alt-text="Screenshot that shows the pay by link user experience in POS, including the QR code and payment link, the indicator for the system's automatic check for payment status, and the Check status button.":::
+:::image type="content" source="media/pay-by-link-main.png" alt-text="Screenshot that shows the pay by link user experience in POS, including the QR code, payment link, indicator for the system's automatic check for payment status, and the Check status button.":::
 
 Sometimes, the cashier might have to cancel the payment link. For example, cancellation might be required because the customer wants to add or remove items. In this case, the cashier can select **Exit Pay By Link** and then **Cancel payment link**. After the payment link is canceled, it's considered expired and can't be used to accept payments.
 
@@ -217,13 +221,15 @@ When the shift is being closed, if the **Void when closing shift** configuration
 
 In Commerce version 10.0.44, the pay by link payment method supports scenarios where the payment must be captured, and the customer is in the store and wants to make a payment. Pay by link can also be used to capture customer order deposits, payment for invoices, and customer account deposits in POS. In future releases, the capability to create orders that have pending payments will allow for other scenarios. For example, a store associate can create a customer order that has the customer's shipping details and generate a payment link for the customer. The customer can then make the payment whenever they're ready. If the payment isn't received within the predefined duration, the order is canceled.
 
-## Payment link for customer orders in POS 
+## Payment link for customer orders in POS
+
 Many times customers visiting the store like the products but need more time to evaluate before making the purchase. When the customers are ready to purchase, they often choose to order online as they now understand what they want and they often prefer avoiding another trip to the store. This not only results in the loss of sale for the physical store but also a lost commission for the store associate who helped the customer evaluate the product. To mitigate such losses, the stores can leverage the pay by link capability via the Adyen connector to create the order and a corresponding payment link which is emailed to the customer. If the customer makes a payment within a predefined duration then the order can released for processing, else the order gets systematically cancelled. This ensures that the sales is credited to the store and store associate who helped the customer with the sale.
 
 > [!NOTE]
-> This feature is available as private preview starting 10.0.46
+> This feature is available as a private preview starting with Commerce version 10.0.46.
 
 ### Setup for supporting Pay by link for orders in POS
+
 In addition to the generic pay by link setup described in the above sections of the document, the following steps are required to enable the pay later via payment link capability.
 
 1. Enable the feature named **Enable asynchronous payments for sales orders** via the Feature management workspace. However, since this is a private preview feature, please contact Microsoft support to enable this feature in your environment.
