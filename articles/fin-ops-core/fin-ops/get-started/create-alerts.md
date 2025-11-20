@@ -1,10 +1,10 @@
 ---
 title: Create alert rules
-description: Learn about alerts and ow to create an alert rule, including overviews on ensuring alert batch jobs are running, events, event types, and conditions.
+description: Learn about alerts and how to create an alert rule, including overviews on ensuring alert batch jobs are running, events, event types, and conditions.
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 10/08/2020
+ms.date: 11/20/2025
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Application user
@@ -22,7 +22,7 @@ ms.dyn365.ops.version: Platform update 15
 
 Before you set up an alert rule, decide when or in what situations you want to receive alerts. When you know which event you want to be notified about, find the page where the data that causes that event appears. The event can be a date that arrives or a specific change that occurs. Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears. After you have this information, you can create the alert rule.
 
-When you create an alert rule, you define the criteria that must be met before an alert is triggered. Criteria is basically the match between the occurrence of an event and the fulfillment of specific conditions. When an event occurs, the system starts to perform a check according to the conditions that are set up.
+When you create an alert rule, you define the criteria that must be met before an alert is triggered. Criteria are basically the match between the occurrence of an event and the fulfillment of specific conditions. When an event occurs, the system starts to perform a check according to the conditions that are set up.
 
 ## Ensure the alert batch jobs are running
 
@@ -30,7 +30,7 @@ The batch jobs for data change and due date alerts need to be running for the al
 
 ## Events
 
-The event that triggers an alert rule can be a date that arrives or a specific change that occurs. Triggers for events are defined on the **Alert me when** FastTab of the **Create alert rule** dialog box. The events that are available for a particular field depend on the trigger that is selected.
+The event that triggers an alert rule can be a date that arrives or a specific change that occurs. You define triggers for events on the **Alert me when** FastTab of the **Create alert rule** dialog box. The events that are available for a particular field depend on the trigger that you select.
 
 For example, if you're setting up an alert rule for the **Start date** field, due date events are appropriate. Therefore, the `is due in` event type is available for that field. However, for a field such as **Cost center**, a due date event isn't appropriate. Therefore, the `is due in` event type isn't available. Instead, the `has changed` event type is available.
 
@@ -53,7 +53,7 @@ For example, you can specify that the system should alert you when the status of
 Next, you must decide which purchase orders you want to be alerted about. For example, you can select one of the following options. These options define the conditions for the alert rule.
 
 - **Current selected record** – You receive an alert when the status of a specific purchase order changes to **Received**.
-- **All records** – You receive an alert when the status of a purchase order is changed for an item in the active page view. You can use the advanced filtering that is available on the page to create rules for a specific set of records. For example, you can create an alert that is triggered for all purchase orders for the customers in a specific customer group.
+- **All records** – You receive an alert when the status of a purchase order is changed for an item in the active page view. You can use the advanced filtering that's available on the page to create rules for a specific set of records. For example, you can create an alert that is triggered for all purchase orders for the customers in a specific customer group.
 	
 ## Expiry of rule
 
@@ -73,29 +73,32 @@ You can send alerts externally using the business events framework. When creatin
 
 ## Create an alert rule
 
-0. Ensure the alert batch jobs are running (see above).
+To create an alert rule, follow these steps:
+
+1. Ensure the alert batch jobs are running (see preceding).
 1. Open the page that contains the data to monitor.
-2. On the Action Pane, on the **Options** tab, in the **Share** group, select **Create alert rule**.
-3. In the **Create alert rule** dialog box, in the **Field** field, select the field to monitor.
-4. In the **Event** field, select the type of event.
-5. On the **Alert me for** FastTab, select the desired option. If you want to send the alert as a business event, set the **Organization-wide** value to **No**.
-6. If the alert rule should become inactive on a specific date, on the **Alert me until** FastTab, select an end date.
-7. On the **Alert me with** FastTab, in the **Subject** field, accept the default subject heading for the email message, or enter a new subject. The text becomes the subject heading for the email message that you receive when an alert is triggered. If you want to send the alert as a business event, set **Send externally** to **Yes**.
-8. In the **Message** field, enter an optional message. The text becomes the message that you receive when an alert is triggered.
-9. Select **OK** to save the settings and create the alert rule.
+1. On the Action Pane, on the **Options** tab, in the **Share** group, select **Create alert rule**.
+1. In the **Create alert rule** dialog box, in the **Field** field, select the field to monitor.
+1. In the **Event** field, select the type of event.
+1. On the **Alert me for** FastTab, select the desired option. If you want to send the alert as a business event, set the **Organization-wide** value to **No**.
+1. If the alert rule should become inactive on a specific date, on the **Alert me until** FastTab, select an end date.
+1. On the **Alert me with** FastTab, in the **Subject** field, accept the default subject heading for the email message, or enter a new subject. The text becomes the subject heading for the email message that you receive when an alert is triggered. If you want to send the alert as a business event, set **Send externally** to **Yes**.
+1. In the **Message** field, enter an optional message. The text becomes the message that you receive when an alert is triggered.
+1. Select **OK** to save the settings and create the alert rule.
 
 ## Limitations and workarounds
 
 ### Workaround for creating alerts for the secondary data sources of a form
-You can't create alerts for some secondary data sources on forms. For example, when creating alerts on the customer or vendor posting profiles form, only the fields on the header (CustLedger or VendLedger) are available and not the dimension accounts. The workaround for this limitation is to use **SysTableBrowser** to open that table as primary data source. 
+You can't create alerts for some secondary data sources on forms. For example, when creating alerts on the customer or vendor posting profiles form, only the fields on the header (CustLedger or VendLedger) are available and not the dimension accounts. The workaround for this limitation is to use **SysTableBrowser** to open that table as primary data source.
+
 1. Open the table in the **SysTableBrowser** form.
 	```
     	https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>
 	```
-2. Create an alert from the SysTableBrowser form.
+1. Create an alert from the SysTableBrowser form.
 
-### Change based alerts do not work for batch status changes
-Change based Alerts does not work with batch status changes because it is turned off for performance reasons. Instead, you should set up the **Batch alerts** capability. For more information, see [Set up alerts for batch enhanced forms](../../dev-itpro/sysadmin/alerts.md#set-up-alerts-for-batch-enhanced-forms).
+### Change based alerts don't work for batch status changes
+Change based Alerts doesn't work with batch status changes because it's turned off for performance reasons. Instead, you should set up the **Batch alerts** capability. For more information, see [Set up alerts for batch enhanced forms](../../dev-itpro/sysadmin/alerts.md#set-up-alerts-for-batch-enhanced-forms).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

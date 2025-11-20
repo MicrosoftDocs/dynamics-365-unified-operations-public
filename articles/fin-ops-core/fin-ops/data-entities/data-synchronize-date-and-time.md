@@ -4,7 +4,7 @@ description: Learn about how to synchronize date and time in import jobs to Coor
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 12/01/2020
+ms.date: 11/20/2025
 ms.reviewer: johnmichalak
 audience: Application user
 ms.search.region: Global
@@ -17,22 +17,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-It's important to set the time zone for your import job to Coordinated Universal Time (UTC). You might see unexpected dates and times in your imported data if you use a different setting. Without the correct setting, the import process converts the UTC date to the local format, and then system settings converts it again.
+Set the time zone for your import job to Coordinated Universal Time (UTC). If you use a different setting, you might see unexpected dates and times in your imported data. Without the correct setting, the import process converts the UTC date to the local format, and then system settings convert it again.
 
 This dual conversion causes dates to change between applications. For example, the dual conversion could cause an employee's start date to be different between Dynamics 365 Human Resources and Dynamics 365 Finance due to differences in local time zones. Setting the import job to UTC resolves this problem.
 
+To synchronize date and time in import jobs, follow these steps:
+
 1. In Dynamics 365 finance and operations, select **Data management**.
-
-2. Select **Import projects**, and then select the project.
-
-3. Under **Source date format**, select **CSV-Unicode**.
-
-   <!-- [![Change source date format to UTC.](../../dev-itpro/data-entities/media/data-source-date-format.png)](/media/data-source-date-format.png) -->
-
-4. Change **Timezone** to **Coordinated Universal Timezone**, and change **Language** to **En-US**.
-
-
-
+1. Select **Import projects**, then select the project.
+1. Under **Source date format**, select **CSV-Unicode**.
+1. Change **Timezone** to **Coordinated Universal Timezone**, and change **Language** to **En-US**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

@@ -4,7 +4,7 @@ description: Learn about how to use a previously defined record template to crea
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 08/12/2019
+ms.date: 11/20/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
@@ -21,10 +21,8 @@ This procedure shows how to use a previously defined record template to create a
 This procedure uses the USMF company.
 
 1. In the **Navigation pane**, go to **Fixed assets > Fixed assets > Fixed assets**.
-2. Click **New**. You will be prompted to select a template. Select the one that corresponds to your business need.  
-3. In the list, find and select the desired record.
-4. Click **OK**.
-
-
+1. Select **New**. You're prompted to select a template. Select the one that corresponds to your business need.  
+1. In the list, find and select the desired record.
+1. Select **OK**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn about batch processing of alerts, including overviews on sett
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 08/24/2021
+ms.date: 11/20/2025
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Application user
@@ -18,18 +18,18 @@ ms.dyn365.ops.version: Platform update 15
 
 [!include [banner](../includes/banner.md)]
 
-Alerts are processed by the batch processing functionality. You must set up batch processing before the process and deliver alerts.
+Batch processing functionality processes alerts. You must set up batch processing before the process and deliver alerts.
 
 Batch processing functionality supports two types of events:
 
-- Events triggered by change-based events. These events are also referred to as create/delete and update events.
+- Events triggered by change-based events. These events are also referred to as create, delete, and update events.
 - Events triggered by due dates.
 
 You can set up batch processes for each type of event.
 
 ## Batch processing for change-based events
 
-The system reads all change-based events that have occurred since batch processing was last run. Change-based events include updates to fields, the deletion of records, and the creation of records. These events are compared with the conditions that you set up in alert rules. When an event matches the conditions in a rule, the batch process generates an alert.
+The system reads all change-based events that occur since batch processing last ran. Change-based events include updates to fields, the deletion of records, and the creation of records. The system compares these events with the conditions that you set up in alert rules. When an event matches the conditions in a rule, the batch process generates an alert.
 
 ### Frequency for change-based events
 
@@ -41,14 +41,16 @@ Therefore, when you set up the frequency of batch processing for change-based ev
 
 #### The risks of low batch frequency
 
-If you set up a low frequency for batch processing for change-based events, data that is relevant to the conditions in alert rules might change before processing. Therefore, you might lose alerts.
+If you set up a low frequency for batch processing for change-based events, data that's relevant to the conditions in alert rules might change before processing. Therefore, you might lose alerts.
 
 For example, you create an alert to trigger when the event is **customer contact changes** and the condition is **customer = BB**. In other words, when the customer contact for customer BB changes, the process logs the event. However, the batch processing system is set up so that batch processing occurs less often than data entry. If the customer name changes from **BB** to **AA** before the event is processed, the data in the database no longer matches the condition in the rule, **customer = BB**. Therefore, when the event is finally processed, no alert is generated.
 
 ### Set up processing for change-based alerts
 
+To set up processing for change-based alerts, follow these steps:
+
 1. Go to **System administration** &gt; **Periodic tasks** &gt; **Alerts** &gt; **Change based alerts**.
-2. In the **Change based alerts** dialog box, enter the appropriate information.
+1. In the **Change based alerts** dialog box, enter the appropriate information.
 
 ## Batch processing for due-date events
 
@@ -73,8 +75,10 @@ If you set up a batch processing window, an alert is sent when the alert rule is
 
 ### Set up processing for due-date alerts
 
+To set up processing for due-date alerts, follow these steps:
+
 1. Go to **System administration** &gt; **Periodic tasks** &gt; **Alerts** &gt; **Due date alerts**.
-2. In the **Due date alerts** dialog box, enter the appropriate information.
+1. In the **Due date alerts** dialog box, enter the appropriate information.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

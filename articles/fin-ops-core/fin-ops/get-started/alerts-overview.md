@@ -1,10 +1,10 @@
 ---
 title: Alerts overview
-description: Learn about about alerts, which you can use to stay informed about events that you want to track during the workday, including various scenarios.
+description: Learn about alerts, which you can use to stay informed about events that you want to track during the workday, including various scenarios.
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 09/04/2019
+ms.date: 11/20/2025
 ms.reviewer: johnmichalak
 audience: Application user
 ms.search.region: Global
@@ -18,30 +18,34 @@ ms.dyn365.ops.version: Platform update 15
 [!include [banner](../includes/banner.md)]
 
 ## About alerts
-Alerts form a notification system for critical events in the system. You can use alerts to stay informed about events that you want to track during the workday. You can easily create your own set of alert rules so that you're alerted about deliveries that are overdue, orders that are deleted, prices that change, or other events that you must respond to.
+Alerts from a notification system for critical events in the system. Use alerts to stay informed about events that you want to track during the workday. You can easily create your own set of alert rules so that you're alerted about deliveries that are overdue, orders that are deleted, prices that change, or other events that you must respond to.
 
-In enterprise resource planning (ERP), there are several typical scenarios where the alerts feature can be used. Here are some examples.
+In enterprise resource planning (ERP), there are several typical scenarios where you can use the alerts feature. Here are some examples.
 
 ### Scenario 1: Create an alert rule for new sales orders
 
+To create an alert rule for new sales orders, follow these steps:
+
 1. Open the **All sales orders** page.
-2. On the Action Pane, on the **Options** tab, in the **Share** group, select **Create a custom alert**.
-3. In the **Create alert rule** dialog box, on the **Alert me when** FastTab, in the **Event** field, select **Record has been created**.
+1. On the Action Pane, on the **Options** tab, in the **Share** group, select **Create a custom alert**.
+1. In the **Create alert rule** dialog box, on the **Alert me when** FastTab, in the **Event** field, select **Record has been created**.
 
 ### Scenario 2: Create an alert rule for postponement of a delivery date
 
+To create an alert rule for new sales orders, follow these steps:
+
 1. Open the **All purchase orders** page.
-2. Select a purchase order ID to access the purchase order details.
-3. Expand the **Purchase order header** FastTab.
-4. On the Action Pane, on the **Options** tab, in the **Share** group, select **Create a custom alert**.
-5. In the **Create alert rule** dialog box, on the **Alert me when** FastTab, in the **Field** field, select **Delivery date**.
-6. In the **Event** field, select **has been postponed**.
+1. Select a purchase order ID to access the purchase order details.
+1. Expand the **Purchase order header** FastTab.
+1. On the Action Pane, on the **Options** tab, in the **Share** group, select **Create a custom alert**.
+1. In the **Create alert rule** dialog box, on the **Alert me when** FastTab, in the **Field** field, select **Delivery date**.
+1. In the **Event** field, select **has been postponed**.
 	
 After you close the **Create alert rule** dialog box, your rule appears on the **Manage alert rules** page. You can use the **Manage alert rules** page to update your existing alert rules. For example, you can modify event triggers, update event notifications, and update expiration dates. To open the **Manage alert rules** page, use the **Alert me** button on the **Options** tab of the Action Pane.
 
-## What occurs when an alert rule is created?
+## What happens when you create an alert rule?
 
-When you create alert rules, you can associate a predefined event with a specific field. For example, the date that is specified in the field arrives, or the contents of the field change. Alternatively, you can associate an event with the records on a specific page. For example, a record is created, or a record is deleted.
+When you create alert rules, you can associate a predefined event with a specific field. For example, the event can be the date that you specify in the field, or the contents of the field change. Alternatively, you can associate an event with the records on a specific page. For example, a record is created, or a record is deleted.
 
 When the selected event occurs for the field or for a record on the page, an alert is sent to you. For example, you create a rule where you associate the **Delivery date** field on a specific purchase order line with the **was due this amount of time ago** event. You set the time frame to five days. In this case, an alert is sent five days after the delivery date of that purchase order line.
 
@@ -70,13 +74,13 @@ An alert rule has five components:
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=f9d42474-b1ab-40a1-a938-06175dfa9554]
 
-The [How to use alerts to monitor filtered data](https://youtu.be/ZYKMcv6kl9s) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [How to use alerts to monitor filtered data](https://youtu.be/ZYKMcv6kl9s) video (shown preceding) is part of the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) on YouTube.
 
 ### Alert rule options
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=24a11730-58ba-4054-9b20-9b708073999a]
 
-The [Alert rule options](https://youtu.be/cpzimwOjicM) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [Alert rule options](https://youtu.be/cpzimwOjicM) video (shown preceding) is part of the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) on YouTube.
 
 
 
