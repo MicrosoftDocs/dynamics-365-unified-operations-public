@@ -105,7 +105,7 @@ With batch telemetry, you can:
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [preview-note-d365](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-We’re enhancing the Monitoring and Telemetry feature by introducing **DMF telemetry** integration with Application Insights. This capability is currently behind feature flights. While you may notice additional events in the UI, the underlying telemetry is planned for **preview in January 2026**. Additional details will be shared as soon as the feature becomes available.
+We’re enhancing the **Monitoring** and **Telemetry** features by introducing **DMF telemetry** integration with Application Insights. This capability is currently behind feature flights. While you may notice additional events in the UI, the underlying telemetry is planned for preview in January 2026. Additional details will be shared as soon as the feature becomes available.
 
 ### Resources
 
