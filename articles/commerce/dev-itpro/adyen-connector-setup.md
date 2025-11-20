@@ -206,25 +206,8 @@ To configure the PIN pad, follow these steps.
 1. On the **PIN pad** FastTab, in the **PIN pad** field, select **Network**.
 1. In the **Device name** field, enter **MicrosoftAdyenDeviceV001**.
 
-##### Route to the region specific Adyen endpoint for payment terminals
-
-Starting with Commerce version 10.0.44, you can use region-specific endpoints for Adyen endpoints. You can enter the following supported values in the **Gateway environment** property of the payment connector in the hardware profile used by the POS register.
- 
-- test
-- live
-- live-us
-- live-au
-- live-apse
- 
-> [!NOTE]
-> The **Optional Domain** property of the payment connector should be empty for POS use. If a value is specified, it's ignored. 
- 
-This change is behind a flight named **UseNewGatewayMappingForTerminal**, and its status for the various versions is as follows:  
-
-- Commerce version 10.0.46: Enabled by default.
-- Commerce versions 10.0.45 and 10.0.44: Disabled by default. 
- 
-For Commerce versions 10.0.44 and 10.0.45, customers can enable this functionality themselves by adding "UseNewGatewayMapping: true" to the **Custom settings** property of the connector.  
+> [!Note]
+> To route to region specific endpoints, refer the instructions at the end of this article
 
 #### Set up a Dynamics 365 register
 
@@ -318,7 +301,37 @@ To configure the Adyen connector for online stores, follow these steps.
 >      1. Run the **1070** and **1110** distribution schedule jobs. Once these jobs are completed, you must contact Adyen customer support to set the **checkoutThreeDS1AuthorisationBehavior** parameter to **Manual** for your merchant account.
 > -  Starting with Commerce version 10.0.43, you don't need to update the **Custom settings** property in Commerce headquarters because it's enabled by default. However, you must still contact Adyen customer support to set the **checkoutThreeDS1AuthorisationBehavior** parameter to **Manual** for your merchant account. 
 
-### Route to the region specific Adyen endpoint for call center and online stores
+## Route to the region specific Adyen endpoint
+The below table represents the minimum version requirement by component to leverage the region-specific Adyen endpoints.
+
+| Component                            | 10.0.44       | 10.0.45       | 10.0.46            |
+|--------------------------------------|---------------|---------------|--------------------|
+| Cloud Point of Sale                  | 9.54.25283.4  | 9.55.25283.6  | Enabled by default |
+| Store Commerce App                   | 9.54.25290.2  | 9.55.25283.5  | Enabled by default |
+| Hardware Station                     | 9.54.25283.3  | 9.55.25289.8  | Enabled by default |
+| Commerce Headquarters                | 10.0.2263.95  | 10.0.2345.19  | Enabled by default |
+
+### Setup for in-person payments via payment terminals
+
+Starting with Commerce version 10.0.44, you can use region-specific endpoints for Adyen endpoints. You can enter the following supported values in the **Gateway environment** property of the payment connector in the hardware profile used by the POS register.
+ 
+- test
+- live
+- live-us
+- live-au
+- live-apse
+ 
+> [!NOTE]
+> The **Optional Domain** property of the payment connector should be empty for POS use. If a value is specified, it's ignored. 
+ 
+This change is behind a flight named **UseNewGatewayMappingForTerminal**, and its status for the various versions is as follows:  
+
+- Commerce version 10.0.46: Enabled by default.
+- Commerce versions 10.0.45 and 10.0.44: Disabled by default. 
+ 
+For Commerce versions 10.0.44 and 10.0.45, customers can enable this functionality themselves by adding the string **"UseNewGatewayMappingForTerminal": true, "UseNewGatewayMapping": true** to the **Custom settings** property of the connector.  
+
+### Setup for card not present payments via call center and online stores
 
 Starting with Commerce version 10.0.44, you can use region-specific endpoints for Adyen endpoints. You can enter the following supported values in the **Gateway environment** property of the payment connector on the **Payment services** form (for call center) or **Online store** form (for e-commerce).
  
@@ -337,7 +350,7 @@ This change is behind a flight named **UseNewGatewayMapping**, and its status fo
 - Commerce version 10.0.46: Enabled by default  
 - Commerce versions 10.0.45 and 10.0.44: Disabled by default 
  
-For Commerce versions 10.0.44 and 10.0.45, customers can enable this functionality themselves by adding "UseNewGatewayMapping: true" to the **Custom settings** property of the connector.  
+For Commerce versions 10.0.44 and 10.0.45, customers can enable this functionality themselves by adding the string **"UseNewGatewayMapping": true** to the **Custom settings** property of the connector.  
 
 ## Next steps
 
@@ -354,6 +367,7 @@ For answers to frequently asked questions regarding the Dynamics 365 Payment Con
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
+
 
 
 
