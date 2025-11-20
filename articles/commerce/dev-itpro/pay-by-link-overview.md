@@ -264,8 +264,8 @@ The call center users can manually check the payment status of an order as well.
 ## Payment link for call center orders 
 Sending a payment link to customers via email for phone orders provides customers with a wide range of payment options, enhancing their convenience and flexibility. Additionally, it builds customer trust as it avoids the need for asking for the customer's phone over the call. 
 
-	> [!NOTE]
-	> This feature is available as private preview starting 10.0.46
+> [!NOTE]
+> This feature is available as a private preview in the Commerce version 10.0.46 release.
 
 ### Setup for supporting Pay by link for orders in call center
 
