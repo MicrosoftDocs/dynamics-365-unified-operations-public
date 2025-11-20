@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 ms.topic: concept-article
-ms.date: 09/30/2025
+ms.date: 11/19/2025
 ms.custom:
   - bap-template
 ---
