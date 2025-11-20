@@ -1,6 +1,7 @@
 ---
 title: Use tax calculation in purchase requisitions in Brazil tax reform
-description: Learn about tax calculation in purchase requisitions in the Brazil tax reform solution
+description: Learn how to calculate taxes in purchase requisitions under Brazil's tax reform. Follow step-by-step instructions to ensure compliance with updated regulations.
+#customer intent: As a procurement manager, I want to create a purchase requisition with Brazilian tax codes so that I can ensure compliance with Brazil's tax reform policies.
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
@@ -22,7 +23,7 @@ This article describes tax calculation in purchase requisitions in the Brazil ta
 
 You can create a purchase requisition by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a purchase requisition line, you can select a CFOP code in the **CFOP** field. The CFOP codes that are available in this field depend on the fiscal establishment of the site that you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules in Globalization studio. 
 
-To create a purchase requisition that uses Brazilian taxes, follow these steps.
+To create a purchase requisition that uses Brazilian taxes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Procurement and sourcing** \> **purchase requisitions** \> **All purchase requisitions**.
 1. Select **New**.
@@ -50,7 +51,7 @@ To create a purchase requisition that uses Brazilian taxes, follow these steps.
 
 ## Check the tax calculation results
 
-To check the tax calculation results, follow these steps.
+To check the tax calculation results, follow these steps:
 
 1. In the **Purchase order lines** section, select **Financials**.
 1. Select **Sales tax**.
@@ -59,6 +60,6 @@ To check the tax calculation results, follow these steps.
 1. Expand the **Line details** section, and then select the **Details** tab.
    - Based on the applicability rule settings, the default values for the new tax types (**CBS**, **IBS**) appear in the **Tax group** and **Item tax group** under the **Tax reform** group.
    - You can change these defaults by setting the **Use override** checkbox to **YES**, then specifying the desired values in **Tax group** and **Item tax group**.
-   - During the transition period, targeted groups for both legacy tax types and reformed tax types might coexist under **Sales tax** and **Tax reform**.   
-   
+   - During the transition period, targeted groups for both legacy tax types and reformed tax types might coexist under **Sales tax** and **Tax reform**.
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

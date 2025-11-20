@@ -1,6 +1,7 @@
 ---
 title: Use tax calculation in sales order in Brazil tax reform
-description: Learn about tax calculation in sales order in Brazil tax reform solution
+description: Learn how to calculate taxes in sales orders under Brazil's tax reform. Follow step-by-step instructions to ensure compliance with updated policies.
+#customer intent: As a sales manager in Brazil, I want to understand how to create a sales order with Brazilian taxes so that I can ensure compliance with the Brazil tax reform.
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
@@ -67,10 +68,10 @@ To check the tax calculation results, follow these steps.
    - You can view the targeted tax codes.  
 1. Select **Invoice** journal in **Invoice** tab after generation.
 1. Select **Posted sales tax**.
-   - You can view the targeted tax codes.     
+   - You can view the targeted tax codes.
    - During the transition period, **Prevent posting of ledger accounting entities for sales tax transactions** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > The **tax group** and **item tax group** aren't populated when you save the line in Brazil tax reform 2026. They populate once tax calculation is triggered—for example, by clicking the **Sales tax** or **Totals** button, or during document confirmation or posting.
 
 > [!TIP]

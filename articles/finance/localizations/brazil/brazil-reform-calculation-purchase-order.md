@@ -1,6 +1,7 @@
 ---
 title: Use tax calculation in purchase orders in Brazil tax reform
-description: Learn about tax calculation in purchase orders in the Brazil tax reform solution
+description: Learn how to calculate taxes in purchase orders under Brazil's tax reform. Follow step-by-step instructions to ensure compliance with updated fiscal policies.
+#customer intent: As a procurement officer, I want to create a purchase order with Brazilian taxes so that I can ensure compliance with Brazil's tax reform policies.
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
@@ -22,7 +23,7 @@ This article describes tax calculation in purchase orders in the Brazil tax refo
 
 You can create a purchase order by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a purchase order line, you can select a CFOP code in the **CFOP** field. The CFOP codes that are available in this field depend on the fiscal establishment of the site that you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules in Globalization studio. 
 
-To create a purchase order that uses Brazilian taxes, follow these steps.
+To create a purchase order that uses Brazilian taxes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Procurement and sourcing** \> **Purchase orders** \> **All purchase orders**.
 1. Select **New**.
@@ -49,7 +50,7 @@ To create a purchase order that uses Brazilian taxes, follow these steps.
 
 ## Check the tax calculation results
 
-To check the tax calculation results, follow these steps.
+To check the tax calculation results, follow these steps:
 
 1. In the **Purchase** tab, select **sales tax**.
    - The targeted tax codes appear. 

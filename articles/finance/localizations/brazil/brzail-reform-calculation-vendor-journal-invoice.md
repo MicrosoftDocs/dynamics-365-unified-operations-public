@@ -1,6 +1,7 @@
 ---
 title: Use tax calculation in vendor invoice journal in Brazil tax reform
-description: Learn about tax calculation in vendor invoice journal in Brazil tax reform solution
+description: Learn how to calculate taxes in vendor invoice journals under Brazil's tax reform. Follow step-by-step instructions to ensure compliance with updated regulations.
+#customer intent: As a finance professional in Brazil, I want to create a vendor invoice journal with Brazilian taxes so that I can comply with the Brazil tax reform requirements.
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
@@ -22,7 +23,7 @@ This article describes tax calculation in vendor invoice journal in Brazil tax r
 
 You can create a vendor invoice journal by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a vendor invoice journal line, you can select a CFOP code in the **CFOP** field. The CFOP codes that are available in this field depend on the fiscal establishment of the site that you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules in Globalization studio. 
 
-To create a vendor invoice journal that uses Brazilian taxes, follow these steps.
+To create a vendor invoice journal that uses Brazilian taxes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Account Payable** \> **Invoices** \> **Invoice journal**.
 1. Select **New**.
@@ -37,10 +38,10 @@ To create a vendor invoice journal that uses Brazilian taxes, follow these steps
 1. In the **Item tax group for tax reform** field, enter or select a value.
 1. Select the **Fiscal information** tab.
 1. Select **Save**.
-   
+
 ## Check the tax calculation results
 
-To check the tax calculation results, follow these steps.
+To check the tax calculation results, follow these steps:
 
 1. Select **sales tax** on top in the **List** page.
    - The targeted tax codes are displayed. 
@@ -52,5 +53,5 @@ To check the tax calculation results, follow these steps.
    - Based on the applicability rule settings, the default values for the new tax types (**CBS**,**IBS**) appear in the **Tax group** and **Item tax group** under **Tax reform** group 
    - You can change these defaults by setting the **Use override** checkbox to be **YES**, then specifying the desired values in the **Tax group** and **Item tax group**.
    - During the transition period, you might see targeted groups for both legacy tax types and reformed tax types coexisting under the **Sales tax** group and the **Tax reform** group.
-   - 
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

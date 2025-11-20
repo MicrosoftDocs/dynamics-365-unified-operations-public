@@ -1,6 +1,7 @@
 ---
 title: Use tax calculation in free text invoices in Brazil tax reform
-description: Learn about tax calculation in free text invoices in Brazil tax reform solution
+description: Learn how to calculate taxes in free text invoices under Brazil's tax reform. Follow step-by-step instructions to ensure compliance with updated regulations.
+#customer intent: As a finance professional in Brazil, I want to create a free text invoice with Brazilian taxes so that I can comply with local tax regulations.
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
@@ -22,7 +23,7 @@ This article describes tax calculation in free text invoices in Brazil tax refor
 
 You can create a free text invoice by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a free text invoice line, you can select a CFOP code in the **CFOP** field. The CFOP codes that are available in this field depend on the fiscal establishment of the site that you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules in Globalization studio. 
 
-To create a free text invoice that uses Brazilian taxes, follow these steps.
+To create a free text invoice that uses Brazilian taxes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Account Receivable** \> **Invoices** \> **All free text invoices**.
 1. Select **New**.
@@ -46,13 +47,13 @@ To create a free text invoice that uses Brazilian taxes, follow these steps.
    
 ## Check the tax calculation results
 
-To check the tax calculation results, follow these steps.
+To check the tax calculation results, follow these steps:
 
 1. Select **sales tax** at the top.
    - The targeted tax codes are displayed. 
    - During the transition period, **No posting** is marked for **CBS** and **IBS** to ensure compliance with the current policy from the Brazilian government.
 1. Select line
-   - Based on the applicability rule settings, the default values for the new tax types (**CBS**,**IBS**) appear in the **Tax group for tax reform** and **Item tax group for tax reform** .
+   - Based on the applicability rule settings, the default values for the new tax types (**CBS**,**IBS**) appear in the **Tax group for tax reform** and **Item tax group for tax reform**.
    - You can change these defaults by setting the **Use override** checkbox to **YES**, then specifying the desired values in the **Tax group** and **Item tax group**.
    - During the transition period, you might see targeted groups for both legacy tax types and reformed tax types coexisting under the **Sales tax** group and the **Tax reform** group.
    
