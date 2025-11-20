@@ -2,7 +2,7 @@
 title: Service update availability
 description: Learn about service update availability and the different release options, including an overview on targeted release schedules.
 author: hmahl
-ms.author: hmahl
+ms.author: kschaff
 ms.topic: article
 ms.date: 08/25/2025
 ms.update-cycle: 1095-days
