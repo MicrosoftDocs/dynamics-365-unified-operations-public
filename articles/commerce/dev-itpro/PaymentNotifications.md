@@ -23,7 +23,7 @@ Commerce headquarters: 10.0.46
  
 ## Prerequisites:
 ### Link your Commerce environment to a Dataverse environment
-The payment notification service uses Dataverse. Therefore, to receive payment notifications, you must link your Commerce environment to a corresponding Dataverse environment. Learn more in [Connect finance and operations apps with a new Microsoft Dataverse instance](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv) and [Connect finance and operations apps with an existing Microsoft Dataverse instance](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv).
+The payment notification service uses Dataverse. Therefore, to receive payment notifications, you must link your Commerce environment to a corresponding Dataverse environment. Learn more in [Connect finance and operations apps with a new Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv) and [Connect finance and operations apps with an existing Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv).
  
 ## Required role to complete the setup
 Some of the steps require a Commerce headquarters user who is either an administrator or has the Commerce Payment Administrator role assigned to them in Microsoft Power platform.
@@ -33,19 +33,19 @@ The following setup steps are same as the steps required to enable the Pay by Li
 
 ### Enable the features required for receiving the payment notifications
 To enable payment notifications for pay by link, enable the following features in the Feature management workspace:
-- Enhanced wallet support and payment improvements. Learn more in [Wallet payment support](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/wallets).
-- The unified payments experience in POS. Learn more in [Check out faster with optimized payment flows](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/faster-checkout-pos).
+- Enhanced wallet support and payment improvements. Learn more in [Wallet payment support](/dynamics365/commerce/dev-itpro/wallets).
+- The unified payments experience in POS. Learn more in [Check out faster with optimized payment flows](/dynamics365/commerce/dev-itpro/faster-checkout-pos).
 - The "Enable Payments Notification Feature".
  
 ### Create a webhook to receive payment notifications from Adyen
-Refer the instructions mentioned in the following [link](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/pay-by-link-overview#create-a-webhook-to-receive-payment-notifications-from-adyen) and complete the steps until the section **"Test the connection to the payment notification service**.
+Refer the instructions mentioned in the following [link](/dynamics365/commerce/dev-itpro/pay-by-link-overview#create-a-webhook-to-receive-payment-notifications-from-adyen) and complete the steps until the section **"Test the connection to the payment notification service**.
  
 With these steps, Dynamics 365 Commerce can receive **authorization** notifications from Adyen. However, to receive non-authorization type notifications such as failure to capture or refund payments, navigate to **Commerce shared parameters -> Payment notifications** form and enable the **"Persist payment processor notifications"** configuration. 
  
 Now to select which notifications should be sent to the Dynamics 365 Commerce, navigate Adyen customer portal and open the webhook created in the above steps. Under the Events section where we previously only selected Authorization, additionally select the business-critical events which are actionable for your business. Please refer the [link](https://docs.adyen.com/api-explorer/Webhooks/1/overview) to learn more about various events that can be sent by Adyen. 
 
-> [!Important]
-> It is important to only select the business-critical events as notifications volume can grow quickly and consume critical storage space in the Commerce HQ. We recommend start by choosing three to four events such as Capture, Capture_failed, Refund, and Refund_failed. 
+> [!IMPORTANT]
+> It is important to only select the business-critical events as notifications volume can grow quickly and consume critical storage space in the Commerce HQ. We recommend start by choosing three to four events such as Capture, Capture_failed, Refund, and Refund_failed.
  
 Once the events are selected, save the changes and test the webhook from Adyen customer portal by selecting the chosen events one by one to ensure the events are received by the Commerce notifications service. However, please note that not all the selected events are sent to Commerce HQ, rather **some events are just acknowledged and ignored**. This is done to prevent overloading the Commerce HQ and Commerce notifications service. The below list shows which events can be saved to the Commerce HQ and which will be ignored. Let's take a few examples from the below list to understand the expected behavior. 
  
