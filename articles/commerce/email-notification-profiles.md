@@ -4,7 +4,6 @@ description: Learn how to create an email notification profile in Microsoft Dyna
 author: bicyclingfool
 ms.date: 11/24/2025
 ms.topic: how-to
-audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
