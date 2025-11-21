@@ -31,8 +31,8 @@ Our next scheduled release is in January 2026.
 
 | Feature  | Description |
 | --- |--- |
-|	Invoice derivation plugin |Changes to allow automatic retries in event of failure. Users can select to retry invoices that are in an “In processing” state. This change reduces the number of times the user has invoices that remain in the ‘In Processing’ state.   |
-|Charges (Private preview) | Support automatic detection of charges for standard invoicing models. Ability to select charges that are embedded as line items, and move them to the charges section. This doeso't apply to custom models. | 
+|	Invoice derivation plugin |Changes to allow automatic retries in event of failure. Users can select to retry invoices that are in an **In processing** state. This change reduces the number of times the user has invoices that remain in the **In Processing** state.   |
+|Charges (Private preview) | Support automatic detection of charges for standard invoicing models. Ability to select charges that are embedded as line items, and move them to the charges section. This doesn't apply to custom models. | 
 |Bug fix – Prevent continuous learning updates where signature is empty| Continuous learning uses specific fields to generate a signature and store the corresponding results. However, the current implementation creates continuous learning records even when some or all of the underlying fields used for signature generation are null. The fix ensures that only meaningful data is stored in the continuous learning table. |
 |Bug fix – Support continuous learning for decimal separator in live level amounts. | Continuous learning isn't working on decimal format derivation for the line amount.   |
 |Bug Fix – Performance improvements while deleting invoice lines on the side by side document viewer |When attempting to delete more than 100 invoice lines in the side by side view, the performance was slow and the page appears unresponsive.|
