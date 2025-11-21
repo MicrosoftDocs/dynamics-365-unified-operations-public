@@ -1,8 +1,8 @@
 ---
-title: Enable critical payment notifications using the Adyen connector 
-description: Learn how to receive critical payment notifications in the Commerce HQ using the Adyen payment connector.
+title: Enable critical payment notifications using the Dynamics 365 Payment Connector for Adyen (preview)
+description: Learn how to receive critical payment notifications in Microsoft Dynamics 365 Commerce headquarters using the Dynamics 365 Payment Connector for Adyen.
 author: shajain
-ms.date: 11/20/2025
+ms.date: 11/24/2025
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -12,64 +12,78 @@ ms.author: shajain
 ms.search.validFrom: 2025-11-15
 ---
 
-# Enable critical payment notifications via Adyen connector
+# Enable critical payment notifications using the Dynamics 365 Payment Connector for Adyen (preview)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-This article explains how merchants can leverage the Asynchronous Payment Notification framework to receive crucial and actionable notifications from Adyen, which are then displayed in the Commerce HQ. This system provides the operations team with the necessary visibility to take timely actions based on the received information.
+This article explains how to receive critical payment notifications in Microsoft Dynamics 365 Commerce headquarters using the Dynamics 365 Payment Connector for Adyen.
+
+Merchants can use the asynchronous payment notification framework to receive crucial and actionable notifications from Adyen, which are then displayed in Commerce headquarters. This functionality provides the operations team with the necessary visibility to take timely actions based on the notifications received.
  
-## Minimum required version
-Commerce headquarters: 10.0.46
- 
-## Prerequisites:
+## Prerequisites
+
+### Minimum required version
+
+The minimum required version of Commerce headquarters to use the payment notification service is Commerce version 10.0.46.
+
 ### Link your Commerce environment to a Dataverse environment
-The payment notification service uses Dataverse. Therefore, to receive payment notifications, you must link your Commerce environment to a corresponding Dataverse environment. Learn more in [Connect finance and operations apps with a new Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv) and [Connect finance and operations apps with an existing Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv).
+
+The payment notification service uses Microsoft Dataverse. To receive payment notifications, you must link your Commerce environment to a corresponding Dataverse environment.
+
+Learn more in [Connect finance and operations apps with a new Microsoft Dataverse instance](../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md) and [Connect finance and operations apps with an existing Microsoft Dataverse instance](../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv.md).
  
-## Required role to complete the setup
-Some of the steps require a Commerce headquarters user who is either an administrator or has the Commerce Payment Administrator role assigned to them in Microsoft Power platform.
+### Required role to complete the setup
+
+Some of the setup steps require a Commerce headquarters user who is either an administrator or has the Commerce Payment Administrator role assigned to them in Microsoft Power platform.
 
 ## Setup
-The following setup steps are same as the steps required to enable the Pay by Link capability. So, if you have enabled the Pay by Link feature, then the steps mentioned in the following two sections **"Enable the features required for receiving the payment notifications"** and **"Create a webhook to receive payment notifications from Adyen"** could be skipped as they would already be completed.
 
-### Enable the features required for receiving the payment notifications
-To enable payment notifications for pay by link, enable the following features in the Feature management workspace:
-- Enhanced wallet support and payment improvements. Learn more in [Wallet payment support](/dynamics365/commerce/dev-itpro/wallets).
-- The unified payments experience in POS. Learn more in [Check out faster with optimized payment flows](/dynamics365/commerce/dev-itpro/faster-checkout-pos).
-- The "Enable Payments Notification Feature".
+The following setup steps are the same as the steps required to enable pay by link functionality. If you've enabled the pay by link feature, you can skip the steps in [Enable the features required for receiving the payment notifications](payment-notifications.md#enable-the-features-required-for-receiving-the-payment-notifications) and [Create a webhook to receive payment notifications from Adyen](payment-notifications.md#create-a-webhook-to-receive-payment-notifications-from-adyen) since they are already completed.
+
+Learn more in [Enable pay by link in POS by using the Dynamics 365 Payment Connector for Adyen](pay-by-link-overview.md).
+
+### Enable the features required for receiving payment notifications
+
+To enable payment notifications functionality for pay by link, you must enable the following features in the Commerce headquarters **Feature management** workspace:
+- **Enhanced wallet support and payment improvements**
+    - Learn more in [Wallet payment support](wallets.md).
+- **Enable unified payments experience in POS**
+    - Learn more in [Check out faster with optimized payment flows](faster-checkout-pos.md).
+- **Enable Payments Notification**
  
 ### Create a webhook to receive payment notifications from Adyen
-Refer the instructions mentioned in the following [link](/dynamics365/commerce/dev-itpro/pay-by-link-overview#create-a-webhook-to-receive-payment-notifications-from-adyen) and complete the steps until the section **"Test the connection to the payment notification service**.
+
+To create a webhook to receive payment notifications from Adyen, complete the steps in [Create a webhook to receive payment notifications from Adyen](pay-by-link-overview.md#create-a-webhook-to-receive-payment-notifications-from-adyen) before **Test the connection to the payment notification service**.
  
-With these steps, Dynamics 365 Commerce can receive **authorization** notifications from Adyen. However, to receive non-authorization type notifications such as failure to capture or refund payments, navigate to **Commerce shared parameters -> Payment notifications** form and enable the **"Persist payment processor notifications"** configuration. 
+After completing the steps, Commerce can receive authorization notifications from Adyen. However, to receive nonauthorization type notifications such as failure to capture or refund payments, in headquarters you must go to the **Commerce shared parameters** \> **Payment notifications** form and enable the **Persist payment processor notifications** configuration. 
  
-Now to select which notifications should be sent to the Dynamics 365 Commerce, navigate Adyen customer portal and open the webhook created in the above steps. Under the Events section where we previously only selected Authorization, additionally select the business-critical events which are actionable for your business. Please refer the [link](https://docs.adyen.com/api-explorer/Webhooks/1/overview) to learn more about various events that can be sent by Adyen. 
+To select which notifications should be sent to Commerce, go to the Adyen customer portal and open the webhook you created. Under the **Events** section where you previously only selected **Authorization**, select the business-critical events that are actionable for your business. Learn more about the various events that can be sent by Adyen in [Webhooks](https://docs.adyen.com/api-explorer/Webhooks/latest/overview).
 
 > [!IMPORTANT]
-> It is important to only select the business-critical events as notifications volume can grow quickly and consume critical storage space in the Commerce HQ. We recommend start by choosing three to four events such as Capture, Capture_failed, Refund, and Refund_failed.
+> You should only select business-critical events because notifications volume can grow quickly and consume critical storage space in headquarters. Microsoft recommends that you start by selecting three to four events such as **Capture**, **Capture_failed**, **Refund**, and **Refund_failed**.
  
-Once the events are selected, save the changes and test the webhook from Adyen customer portal by selecting the chosen events one by one to ensure the events are received by the Commerce notifications service. However, please note that not all the selected events are sent to Commerce HQ, rather **some events are just acknowledged and ignored**. This is done to prevent overloading the Commerce HQ and Commerce notifications service. The below list shows which events can be saved to the Commerce HQ and which will be ignored. Let's take a few examples from the below list to understand the expected behavior. 
- 
-- **AUTHORIZATION**: If you select this event in the Adyen customer portal, then Adyen will send both successful and failed authorizations information as events, irrespective of where these events are generated i.e., payment terminal, e-commerce etc. This could result in thousands of events every minute but these are not actionable because these failures will be visible to the sales associate (using POS) or the customer (using e-commerce site). Thus, the Commerce system ignores all authorizations except the ones related to the Pay by Link which originate from one of the commerce channels.
-- **CAPTURE**:  If you select this event in the Adyen customer portal, then like the authorization event, Adyen will send both successful and failed Capture events irrespective of where these events are generated. These would likely also be a large amount and the success events are not actionable and hence ignored. However, any capture that fails then Adyen sends the Capture event with a property named "Success" with value False. These failures are actionable as it means that product has been sold but the payment could not be captured. Thus the operations team could investigate the capture failure and manually recover the payment.
-- **CAPTURE_FAILURE**: Capture_failure event is different from Capture with success value false. In rare cases, it is possible that Adyen sends the Capture notification with Success property as True, but the payment capture still fails due to rejection by the card scheme (learn more [here]( https://docs.adyen.com/api-explorer/Webhooks/1/post/CAPTURE_FAILED). Thus, such events, if configured from the Adyen portal, are always saved in the Commerce HQ as they are actionable and these should have low volume.
+After you select the business-critical events, save the changes and test the webhook from the Adyen customer portal by selecting the chosen events one by one to ensure that the events are received by the Commerce notifications service. However, not all of the selected events are sent to headquarters, because some events are just acknowledged and ignored. This is done to prevent overloading headquarters and the Commerce notifications service. 
+
+The following table lists which events can be saved to headquarters, and which events are ignored. 
   	
-| Webhook Name                                      | Saved to Commerce HQ?                                                   |
+| Webhook name                                      | Saved to headquarters?                                                   |
 |---------------------------------------------------|-------------------------------------------------------------------------|
-| AUTHORISATION                                     | No. Only the Pay by Link related authorizations are saved              |
-| AUTHORISATION_ADJUSTMENT                          | Partially. Only when the "Success" property of the event is False      |
-| AUTORESCUE                                        | Partially. Only when the "Success" property of the event is False      |
-| CANCEL_AUTORESCUE                                 | Partially. Only when the "Success" property of the event is False      |
-| CANCEL_OR_REFUND                                  | Partially. Only when the "Success" property of the event is False      |
-| CANCELLATION                                      | Partially. Only when the "Success" property of the event is False      |
-| CAPTURE                                           | Partially. Only when the "Success" property of the event is False      |
-| ORDER_CLOSED                                      | Partially. Only when the "Success" property of the event is False      |
-| ORDER_OPENED                                      | Partially. Only when the "Success" property of the event is False      |
-| POSTPONED_REFUND                                  | Partially. Only when the "Success" property of the event is False      |
-| RECURRING_CONTRACT                                | Partially. Only when the "Success" property of the event is False      |
-| REFUND                                            | Partially. Only when the "Success" property of the event is False      |
-| REFUND_WITH_DATA                                  | Partially. Only when the "Success" property of the event is False      |
-| REFUNDED_REVERSED                                 | Partially. Only when the "Success" property of the event is False      |
-| VOID_PENDING_REFUND                               | Partially. Only when the "Success" property of the event is False      |
+| AUTHORISATION                                     | No. Only the Pay by Link related authorizations are saved.            |
+| AUTHORISATION_ADJUSTMENT                          | Partially. Only saved to headquarters when the **Success** property value for the event is **False**.      |
+| AUTORESCUE                                        | Partially. Only saved to headquarters when the **Success** property value for the event is **False**.      |
+| CANCEL_AUTORESCUE                                 | Partially. Only saved to headquarters when the **Success** property value for the event is **False**.      |
+| CANCEL_OR_REFUND                                  | Partially. Only saved to headquarters when the **Success** property value for the event is **False**.      |
+| CANCELLATION                                      | Partially. Only saved to headquarters when the **Success** property value for the event is **False**.      |
+| CAPTURE                                           | Partially. Only saved to headquarters when the **Success** property value for the event is **False**.      |
+| ORDER_CLOSED                                      | Partially. Only saved to headquarters when the **Success** property value for the event is **False**.      |
+| ORDER_OPENED                                      | Partially. Only saved to headquarters when the **Success** property value for the event is **False**.      |
+| POSTPONED_REFUND                                  | Partially. Only saved to headquarters when the **Success** property value for the event is **False**.      |
+| RECURRING_CONTRACT                                | Partially. Only saved to headquarters when the **Success** property value for the event is **False**.      |
+| REFUND                                            | Partially. Only saved to headquarters when the **Success** property value for the event is **False**.      |
+| REFUND_WITH_DATA                                  | Partially. Only saved to headquarters when the **Success** property value for the event is **False**.      |
+| REFUNDED_REVERSED                                 | Partially. Only saved to headquarters when the **Success** property value for the event is **False**.      |
+| VOID_PENDING_REFUND                               | Partially. Only saved to headquarters when the **Success** property value for the event is **False**.      |
 | CAPTURE_FAILED                                    | Yes                                                                     |
 | CHARGEBACK                                        | Yes                                                                     |
 | CHARGEBACK_REVERSED                               | Yes                                                                     |
@@ -90,10 +104,20 @@ Once the events are selected, save the changes and test the webhook from Adyen c
 | REQUEST_FOR_INFORMATION                           | Yes                                                                     |
 | SECOND_CHARGEBACK                                 | Yes                                                                     |
 | TECHNICAL_CANCEL                                  | Yes                                                                     |
+
+The following examples from the table can help you understand the expected behavior. 
  
-## View notifications in Commerce Headquarters
-The events which are saved to Commerce HQ can be viewed in the form named **"Payment process notifications"** present under **Retail and Commerce -> Inquiries and reports -> Payment notifications**.
+- **AUTHORIZATION**: If you select this event in the Adyen customer portal, Adyen sends both successful and failed authorizations information as events, irrespective of where these events are generated (for example, payment terminal or e-commerce). This can result in thousands of event notifications every minute, but these notifications aren't actionable because the failures are visible to the sales associate using POS, or the customer using the e-commerce site. The Commerce system ignores all authorizations except those related to the pay by link functionality that originate from one of the Commerce channels.
+- **CAPTURE**: If you select this event in the Adyen customer portal, Adyen sends both successful and failed capture event notifications, irrespective of where these events are generated. This can likely result in a large amount of notifications, but success events aren't actionable and are ignored. However, for any capture that fails, Adyen sends the capture event with the **Success** property set to **False**. These failures are actionable becuase the product has been sold, but the payment can't be captured. The operations team can then investigate the capture failure and manually recover the payment.
+- **CAPTURE_FAILURE**: This event is different from the **CAPTURE** event notification with the **Success** property set to **False**. In rare cases, it's possible that Adyen sends the **CAPTURE** event notification with the **Success** property set to **True**, but the payment capture still fails due to rejection by the card scheme. Such events, if configured from the Adyen portal, are always saved in headquarters because they are actionable and are generated in low volume. Learn more in [Capture request failed due to scheme rejection](https://docs.adyen.com/api-explorer/Webhooks/1/post/CAPTURE_FAILED).
+
+## View notifications in headquarters
+
+To view event notifications saved to headquarters, go to **Retail and Commerce** \> **Inquiries and reports** \> **Payment notifications** and look under **Payment process notifications**.
 
 ## Purge old payment notifications
-To ensure that the old notifications are deleted to save the storage consumed by these notifications and keep the notifications form actionable, the notifications can be either be deleted manually from the "Payment process notifications" form, or deleted automatically via using a batch job named "Purge payment provider notifications data". The batch job allows the user to specify the number of days indicating the notifications older than this value will be deleted.
 
+To ensure that old notifications are deleted to save the storage and keep the notifications form actionable, you can either manually delete notifications from the **Payment process notifications** form, or automatically delete notifications by running the **Purge payment provider notifications data** batch job. This batch job allows you to specify the number of days before which notifications are deleted.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
