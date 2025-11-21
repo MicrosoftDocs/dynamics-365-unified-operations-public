@@ -269,7 +269,7 @@ The following example describes a typical end-to-end user experience for custome
 - After a few minutes, the **Process asynchronous payments for sales orders** batch job runs, which processes the payment, links it with the order, and removes the order from hold.
 - If the customer doesn't pay the order within the specified duration window, the **Process asynchronous payments for sales orders** batch job cancels the order.
 
-### Manually the check payment status for an order
+### Manually check the payment status for an order
 
 Call center users can manually check the payment status of an order. 
 
@@ -307,58 +307,38 @@ To enable the functionality to allow customers to pay the money later via a paym
 
 ## End-to-end user experience for call center orders
 
-The following example describes a typical end-to-end user experience for call center orders.
+The following example describes a typical end-to-end user experience for a call center order.
 
-- The call center user is helping create an order for the customer over the phone.
-- When the order is ready for payment, the call center user presses the "Complete" button on the sales order.
-- The sales order summary opens with a Payment section.
-- The call center user adds a new payment and views the list of support payment methods including all the card types such as Visa, Mastercard, Discover etc., along with the newly added card type 'Payment link', if added as described in the previous section.
-- The call center user can choose any of the existing card types or the Payment link card type and then selects the Payment input type as **Pay By Link**.
-- A form is displayed with the customer information prefilled and it will be used for creating the payment link.
-- After updating any information as needed, press the "Create link" which creates the payment link. If the email is configured, then the system sends an email to the customer with the payment link details.
+- A call center user helps create an order for a customer over the phone.
+- When the order is ready for payment, the call center user selects **Complete** on the sales order. A sales order summary with a **Payment** section opens.
+- The call center user selects any of the existing card types from the list of supported payment methods, or selects the **Payment link** card type and then selects the **Payment input type** as **Pay By Link**. A form is displayed used for creating the payment link that has the customer information prepopulated.
+- If the customer changes their mind or requests more time for making a payment, the call center user can either cancel the payment link from the payment link dialog, or they can use the **Pay later** option if it's enabled in the call center parameters. If the **Pay later** option is used, the order is placed on a hold and the customer can make a payment within the predefined duration window to process the order. Otherwise, the order is cancelled by the system.
+- After updating the customer information as needed, the call center user selects **Create link** to create the payment link. If an email notification profile is configured in headquarters, the system sends an email to the customer with the payment link details.
 - The customer opens the payment link from their phone or computer to complete the payment.
-- The call center user's screen is auto refreshed every five seconds to check if the payment has been made. Once the payment has been received, a corresponding payment line is added to the order as **Authorized**.
+- The call center user's screen is automatically refreshed every five seconds to check if the payment has been made. Once the payment has been received, a corresponding payment line is added to the order as **Authorized**.
 - The call center user submits the order and completes the sale.
-- If after step 6, the customer changes their mind or request for more time for making a payment, then the call center user can either cancel the payment link from the payment link dialog or they can use the 'Pay later' option, if enabled via call center parameters. If the Pay later option is used, the order is placed on a hold and the customer can make a payment within the predefined hours to process the order, else the order will be systematically cancelled.
 
-### Manually check payment status for call center orders
-As described in the section #manually-check-payment-status-for-orders the call center or headquarter user can manually check the payment status for the call center orders as well.
+### Manually check the payment status for a call center order
 
-## Known limitations
+Call center users can manually check the payment status of a call center order. 
+
+To manually check the payment status of a call center order, follow these steps.
+
+1. In headquarters, go to the **All sales orders** form and open the sales order waiting for payment.
+1. On the **Sales order** tab, under the **Payments** submenu, select **Asynchronous payments**. This action opens a form with the payment links associated with the order. If the payment link status is shown as **Active**, this means that the payments against this link are either not yet processed or the customer hasnt yet paid.
+1. To check the latest status, select **Check status** to reload the current payment link status. This form also has a **Cancel** button to cancel the payment link. The payment link can only be cancelled if the customer hasn't used the link for payment.
+
+## Known limitations of the pay by link payment method
 
 The pay by link payment method has the following known limitations:
-- Pay by link doesn't support unreferenced returns. Therefore, a payment link can't be generated for negative amounts. However, the original payment is automatically refunded if there are referenced returns.
-- Pay by link supports only payment capture. The links can't be used to authorize the remaining balance on customer orders.
-- For 10.0.44, Pay by link doesn't support partial payments through the payment link. In addition, customers can't use a gift card to pay part of the amount and then a different payment method to pay the balance. Instead, the cashier can create a payment link for the partial amount and send it to the customer. After the payment is received, the cashier can create a second link for the balance. This limitation is mitigated in the Commerce version 10.0.45 release.
-- No payment link can be created while the POS is in offline mode. If a payment link is created while the POS is online, but the POS then goes offline, the system can't check the payment status. The cashier can't cancel the payment link, but they can proceed without canceling it.
-- For 10.0.44, Pay by link doesn't support some payment methods, such as Klarna, that require that a country/region code to be provided while creating the payment link. This limitation is mitigated in the Commerce version 10.0.45 release.
+- The pay by link payment method doesn't support unreferenced returns. Therefore, a payment link can't be generated for negative amounts. However, the original payment is automatically refunded if there are referenced returns.
+- The pay by link payment method only supports payment capture. The links can't be used to authorize the remaining balance on customer orders.
+- For Commerce version 10.0.44, the pay by link payment method doesn't support partial payments using the payment link. In addition, customers can't use a gift card to pay part of the amount and then use a different payment method to pay the balance. Instead, the cashier can create a payment link for the partial amount and send it to the customer. After the payment is received, the cashier can create a second link for the balance. This limitation is mitigated in Commerce version 10.0.45.
+- No payment link can be created while the POS is in offline mode. If a payment link is created while the POS is online, but the POS then goes offline, the system can't check the payment status. The cashier can't cancel the payment link, but they can proceed without cancelling it.
+- For Commerce version 10.0.44, the pay by link payment method doesn't support some payment methods (for example, Klarna) that require that a country/region code is provided while creating the payment link. This limitation is mitigated in Commerce version 10.0.45.
 
-## Troubleshooting
+## Purge old payment authorization notifications
 
-In case of issues related to payment capture via Pay by Link for customer orders here are some of the recommended troubleshooting steps that can be performed by the operations team:
-	1. Navigate to the Adyen customer portal to view the problematic payment link in the list of payment links shown in the "Pay by Link" section of the portal. This view can provide details on whether the payment was successful or not.
-	1. If the payment was successful but the corresponding order is not linked to it, then copy the PSP number and save it for later use. Navigate to a form named **Payment authorization notifications** under **Retail and Commerce -> Inquiries and reports -> Payment notifications** in Commerce HQ. This is the form that shows all the authorizations received from the payment processor. 
-		a. Filter the "Payment identifier" column and enter the PSP number copied above to search for the notification. If the notification is not displayed in the form, then raise a support ticket to Microsoft. If the notification is displayed but the "Processing status" column does not show it as "Processed" then likely the batch job responsible for processing the notifications is not working. Check the status of the job to ensure it is running. However, to process this notification manually, navigate to the order details form in Commerce HQ and manually process the payment notification as described in the section #manually-check-payment-status-for-orders. If this still does not processes the payment, then create a support ticket to Microsoft.
-
-### What-if scenarios
-
-Although Microsoft thoroughly tested various scenarios, there are edge cases that are hard to predict. The following tips can help cashiers fix issues that they encounter.
-
-#### Scenario 1: The cashier wants to cancel the payment, but payment link cancellation fails
-
-The payment link dialog is modal, and the cashier can close it only if the payment link is canceled or the transaction is suspended. If cancellation of the payment link fails either because of connectivity issues or because the POS is offline, the cashier can suspend the transaction. Then, when the POS is online again, the cashier can recall or void the transaction.
-
-However, if a partial payment exists for the transaction, the transaction can't be suspended. Whenever a payment link can't be canceled, the system shows an error message. However, it also gives the cashier the option to continue without canceling the payment link. If the cashier selects **Yes**, the payment link dialog is closed. The cashier can then void the existing payment and suspend the transaction.
-
-If a transaction that has a payment link is voided, the system tries to expire the active payment link. However, cancellation isn't guaranteed. If there are no connectivity issues, and the payment wasn't made by using the payment link, the payment link is canceled. However, if there are connectivity issues, or the payment was made, the payment link isn't canceled even though the transaction is voided.
-
-#### Scenario 2: The customer made a payment or claims they completed the payment, but the POS can't receive the payment
-
-Although the payment process is fast, some payment methods might take a few extra seconds. If the POS doesn't receive the payment after a minute, the cashier can try to cancel the payment link. If cancellation of the payment link fails, the customer made the payment. If the payment link is canceled, the customer payment wasn't successful, and the customer's balance isn't affected.
-
-If payment cancellation fails because the customer made the payment, the cashier can suspend the transaction and make a note of the transaction details for reference. A headquarters user must then refund the payment from the Adyen portal. The cashier can create a new transaction for the customer and assure them that their previous payment is refunded.
-
-## Purge old payment authorization notifications:
-To ensure that the old notifications are deleted to save the storage consumed by these authorization notifications and keep the notifications form manageable, the notifications can be either be deleted manually from the **Payment authorization notifications** form, or deleted automatically via using a batch job named **Purge payment authorization notifications data**. The batch job allows the user to specify the number of days indicating the notifications older than this value will be deleted.
+To ensure that old authorization notifications are deleted to save the storage and keep the notifications form manageable, old notifications can either be deleted manually from the **Payment authorization notifications** form, or deleted automatically by running the **Purge payment authorization notifications data** batch job. The batch job allows you to specify the number of days that pass before notifications are deleted.
 
 
