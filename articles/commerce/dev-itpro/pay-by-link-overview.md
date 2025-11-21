@@ -253,53 +253,73 @@ To enable the pay later via payment link functionality, follow these steps.
 
 1. Run the **9999** distribution schedule job to ensure that the setup data is synchronized with the channel database.	
 
-### End to end user experience for customer orders in POS
-1. The sales associate helps the customer choose a chair in the store, but the customer needs more time to decide.
-1. The sales associate suggests that they can reserve this item for the customer and can ship the item to their home if they decide to buy it later and make a payment within 24 hours. The customer agrees.
-1. The sales associates creates the customer record, adds the item to the cart, adds the shipping address and generates a payment link. If the email is configured, then an email is sent to the customer with the payment link details. The email address used for the email is the one that is provided during the payment link creation.
-   > [!NOTE]
-   > The order related emails such as order creation, order fulfillment etc., will go to the email associated with the order which could be different from the email provided during payment link creation.
-   
-1. On the Pay by Link dialog, the sales associates then presses the **Exit Pay By Link** button and then presses **Conclude and pay later** button and the transaction is completed. This puts the order on a hold and the inventory is reserved against this order.
-1. Later that day, the customer decides to buy the chair and opens the payment from the email received earlier. The customer chooses from the list of payment options displayed on the payment and completes the payment.
-1. After a few minutes, when the batch job named **Process asynchronous payments for sales orders** runs which processes the payment, links it with the order and removes the order from hold.
-1. If the customer does not pay the order within the specified duration, the **Process asynchronous payments for sales orders** batch job cancels the order.
+### End-to-end user experience for customer orders in POS
 
-### Manually check payment status for orders
-The call center users can manually check the payment status of an order as well. To do so, navigate to the "All sales orders" form and open the sales order waiting for payment. Under the "Sales order" tab, under Payments sub menu, press the button named **Asynchronous payments**. This opens a form with the payment links associated with this order. If the Payment link status is shown as "Active" that means the payments against this link is either not yet processed or the customer has not yet paid the money. To check the latest status, press the **Check status** button to reload the current payment link status. This form also has a "Cancel" button to cancel the payment link. The payment link can only be cancelled if the customer not used the link for payment.
+The following example describes a typical end-to-end user experience for customer orders in POS.
+
+- A sales associate helps a customer choose a chair in the physical store, but the customer needs more time to decide.
+- The sales associate suggests that they can reserve the chair, and if the customer decides to buy it later and makes a payment within 24 hours, they can ship it to the customer's home. The customer agrees.
+- The sales associates creates a customer record, adds the item to the cart, adds the shipping address, and generates a payment link. If an email notification profile is configured in headquarters, then an email is sent to the customer with the payment link details. The email address used is the one that's provided during payment link creation.
+
+    > [!NOTE]
+    > Order-related emails such as order creation and order fulfillment go to the email address associated with the order, which could be different from the email address provided during payment link creation.
+   
+- On the **Pay by Link** dialog, the sales associates selects **Exit Pay By Link**, and then selects **Conclude and pay later** to complete the transaction. These actions put the order on hold and inventory is reserved against the order.
+- Later that day, the customer decides to buy the chair and opens the payment link from the email that was sent earlier. The customer selects a payment option from the list displayed on the payment page and completes the payment.
+- After a few minutes, the **Process asynchronous payments for sales orders** batch job runs, which processes the payment, links it with the order, and removes the order from hold.
+- If the customer doesn't pay the order within the specified duration window, the **Process asynchronous payments for sales orders** batch job cancels the order.
+
+### Manually the check payment status for an order
+
+Call center users can manually check the payment status of an order. 
+
+To manually check the payment status of an order, follow these steps.
+
+1. In headquarters, go to the **All sales orders** form and open the sales order waiting for payment.
+1. On the **Sales order** tab, under the **Payments** submenu, select **Asynchronous payments**. This action opens a form with the payment links associated with the order. If the payment link status is shown as **Active**, this means that the payments against this link are either not yet processed or the customer hasnt yet paid.
+1. To check the latest status, select **Check status** to reload the current payment link status. This form also has a **Cancel** button to cancel the payment link. The payment link can only be cancelled if the customer hasn't used the link for payment.
 
 ## Payment link for call center orders 
-Sending a payment link to customers via email for phone orders provides customers with a wide range of payment options, enhancing their convenience and flexibility. Additionally, it builds customer trust as it avoids the need for asking for the customer's phone over the call. 
+
+Sending a payment link to customers via email for phone orders provides customers with a wide range of payment options, providing convenience and flexibility. This process builds customer trust because it avoids the need to ask for the customer's phone number while on the call. 
 
 > [!NOTE]
 > This feature is available as a private preview in the Commerce version 10.0.46 release.
 
-### Setup for supporting Pay by link for orders in call center
+### Set up for pay by link for orders in call center
 
-Refer the setup steps described in the #Payment-link-for-customer-orders-in-POS section. Once done, the following features and configurations should be enabled: 
-- Feature **Enable asynchronous payments for sales orders** is enabled.
-- Account receivable parameter configurations **Hold code for payment confirmation** and **Order hold timeout for pending payments (minutes)** are updated.
-- Batch job **Process asynchronous payments for sales orders** is configured to run at the desired interval to check for payment status.
-- Automated emails configured, if needed.
+To set up for pay by link for orders in call center, complete the setup steps described in [Payment-link-for-customer-orders-in-POS](pay-by-link-overview.md#payment-link-for-customer-orders-in-POS). After you complete the setup steps, the following changes should result.
 
-Additionally, navigate to the call center channel and open the Payment methods associated with the channel. Select the payment method which is defined to accept cards i.e., its "Function" property should be set to "Card" and it should mapped to "Pay card" operation. For such payment method, a new button named **Payment input type** should be enabled. Open the Payment input type form and select from the two available options i.e., **Manual entry** and **Pay By Link**. Manual entry enables the traditional manual card entry whereas Pay By Link enables the payment link creation. This is similar to how the Payment input type is defined for the physical stores as described [here](/dynamics365/commerce/dev-itpro/pay-by-link-overview#set-up-the-pay-by-link-payment-method-for-the-store)
+- The **Enable asynchronous payments for sales orders** feature is enabled.
+- The **Hold code for payment confirmation** and **Order hold timeout for pending payments (minutes)** account receivable parameter configurations are updated.
+- The **Process asynchronous payments for sales orders** batch job is configured to check for payment status by running at the desired duration interval.
+- Automated emails are configured, if needed.
 
-With the above setup, when the call center user opens the payment experience, all the card types i.e., Visa, Mastercard etc. will show two options i.e., Manual entry and Pay By Link. So, the **call center user** can select a card type e.g., Visa and create a payment link, however, **customer** can choose any available payment method shown on the payment link i.e., not just Visa. Thus, to avoid any confusion for your call center users, you can optionally create a new **Card type** e.g., 'Payment link' and add it as an **Electronic payment method** to the existing payment method for the call center channel. With this setup, when the call center user opens the payment experience, they will see the 'Payment link' as one of the card options shown in the payments drop down. The user can select this card type and then choose the Pay by Link option to create the payment link. Now, when the customer accesses the payment link, the can choose any available payment method and a corresponding payment line will be added to the order with the appropriate payment method used e.g., Visa, Mastercard etc.
+To finish setting up pay by link for orders in call center, follow these steps.
 
-To enable the capability to allow the customers to pay the money later via payment link, navigate to the "Call center parameters" form and under the "Payments" tab, enable **Allow pay later** configuration. This is an optional step needed if you want to support the pay later functionality. Without this enabled, the customer will have to make a payment via payment link while on the call with the call center user.	
+1. Go to the call center channel and open the payment methods associated with the channel.
+1. Select the payment method that's defined to accept cards. The payment method's **Function** property should be set to **Card**, and it should mapped to to the **Pay card** operation.
+1. A **Payment input type** button must be enabled for the payment method. To enable the button, open the **Payment input type** form and select from the two available options, **Manual entry** and **Pay By Link**. Manual entry enables manual card entry, while the **Pay By Link** option enables the creation of a payment link. This is similar to how the payment input type is defined for the physical stores as described in [Set up the pay by link payment method for the store](pay-by-link-overview.md#set-up-the-pay-by-link-payment-method-for-the-store).
 
-## End to end user experience for call center orders
-1. The Call center user is helping create an order for the customer over the phone.
-1. When the order is ready for payment, the call center user presses the "Complete" button on the sales order.
-1. The sales order summary opens with a Payment section.
-1. The call center user adds a new payment and views the list of support payment methods including all the card types such as Visa, Mastercard, Discover etc., along with the newly added card type 'Payment link', if added as described in the previous section.
-1. The call center user can choose any of the existing card types or the Payment link card type and then selects the Payment input type as **Pay By Link**.
-1. A form is displayed with the customer information prefilled and it will be used for creating the payment link.
-1. After updating any information as needed, press the "Create link" which creates the payment link. If the email is configured, then the system sends an email to the customer with the payment link details.
-1. The customer opens the payment link from their phone or computer to complete the payment.
-1. The call center user's screen is auto refreshed every five seconds to check if the payment has been made. Once the payment has been received, a corresponding payment line is added to the order as **Authorized**.
-1. The call center user submits the order and completes the sale.
-1. If after step 6, the customer changes their mind or request for more time for making a payment, then the call center user can either cancel the payment link from the payment link dialog or they can use the 'Pay later' option, if enabled via call center parameters. If the Pay later option is used, the order is placed on a hold and the customer can make a payment within the predefined hours to process the order, else the order will be systematically cancelled.
+With this configuration, when the call center user opens the payment experience, all the card types (for example, Visa and Mastercard) show two options: **Manual entry** and **Pay By Link**. Call center users can then select a card type and create a payment link. However, the customer can select any available payment method shown on the payment link. To avoid any confusion for call center users, you can optionally create a new **Card type** (for example, **Payment link**) and add it as an **Electronic payment method** to the existing payment method for the call center channel. With this setup, when call center users open the payment experience, on the **Payments** dropdown menu they see **Payment link** as one of the card options. Call center users can select this card type, and then select the **Pay by Link** option to create the payment link. When the customer accesses the payment link, they can select any available payment method, and a corresponding payment line is added to the order with the appropriate payment method used (for example, Visa or Mastercard).
+
+To enable the functionality to allow customers to pay the money later via a payment link, in headquarters go to the **Call center parameters** form. On the **Payments** tab, enable the **Allow pay later** configuration. This optional step is only required if you want to support the pay later functionality. Without this functionality enabled, customers must make a payment via a payment link while on the call with a call center user.
+
+## End-to-end user experience for call center orders
+
+The following example describes a typical end-to-end user experience for call center orders.
+
+- The call center user is helping create an order for the customer over the phone.
+- When the order is ready for payment, the call center user presses the "Complete" button on the sales order.
+- The sales order summary opens with a Payment section.
+- The call center user adds a new payment and views the list of support payment methods including all the card types such as Visa, Mastercard, Discover etc., along with the newly added card type 'Payment link', if added as described in the previous section.
+- The call center user can choose any of the existing card types or the Payment link card type and then selects the Payment input type as **Pay By Link**.
+- A form is displayed with the customer information prefilled and it will be used for creating the payment link.
+- After updating any information as needed, press the "Create link" which creates the payment link. If the email is configured, then the system sends an email to the customer with the payment link details.
+- The customer opens the payment link from their phone or computer to complete the payment.
+- The call center user's screen is auto refreshed every five seconds to check if the payment has been made. Once the payment has been received, a corresponding payment line is added to the order as **Authorized**.
+- The call center user submits the order and completes the sale.
+- If after step 6, the customer changes their mind or request for more time for making a payment, then the call center user can either cancel the payment link from the payment link dialog or they can use the 'Pay later' option, if enabled via call center parameters. If the Pay later option is used, the order is placed on a hold and the customer can make a payment within the predefined hours to process the order, else the order will be systematically cancelled.
 
 ### Manually check payment status for call center orders
 As described in the section #manually-check-payment-status-for-orders the call center or headquarter user can manually check the payment status for the call center orders as well.
