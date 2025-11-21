@@ -35,8 +35,6 @@ items:
           href: ./get-started/hr-whats-new-10-0-45.md   
         - name: Human Resources 10.0.44  
           href: ./get-started/hr-whats-new-10-0-44.md  
-        - name: Human Resources 10.0.43
-          href: ./get-started/hr-whats-new-10-0-43.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
