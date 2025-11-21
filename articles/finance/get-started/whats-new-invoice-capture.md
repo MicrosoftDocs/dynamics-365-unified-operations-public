@@ -27,9 +27,9 @@ This article provides information about the Invoice capture solution that automa
 
 
 ## Software lifecycle policy and cloud releases
-The Invoice capture solution follows the Modern Lifecycle Policy. The Modern Lifecycle Policy covers product and services that are continuously serviced and supported.  For more information about this policy, see [Modern Lifecycle Policy](https://learn.microsoft.com/en-us/lifecycle/policies/modern).   Licensed customers must stay current with updates to the Invoice Capture online service in accordance with the following servicing requirements:  
-
-Customers who purchase subscriptions of Finance and operations apps experience continuous udpates that are published by Microsoft.  Customers have the option to postpone one consecutive release of Invoice Capture.
+The Invoice capture solution follows the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are continuously serviced and supported. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881). 
+Licensed customers must stay current with updates to the Invoice Capture online service in accordance with the following servicing requirements:  
+ - Customers who purchase subscriptions of finance and operations apps experience continuous updates that are managed by Microsoft. Customers have the option to postpone one consecutive service update..  Customers have the option to postpone one consecutive release of Invoice Capture.
 
 
 
