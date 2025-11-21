@@ -4,7 +4,7 @@ description: Learn about new or changed features in Microsoft Dynamics AX applic
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: whats-new
-ms.date: 07/12/2024
+ms.date: 11/21/2025
 ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
