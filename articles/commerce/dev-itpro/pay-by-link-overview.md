@@ -288,7 +288,7 @@ Sending a payment link to customers via email for phone orders provides customer
 
 ### Set up for pay by link for orders in call center
 
-To set up for pay by link for orders in call center, complete the setup steps described in [Payment-link-for-customer-orders-in-POS](pay-by-link-overview.md#payment-link-for-customer-orders-in-POS). After you complete the setup steps, the following changes should result.
+To set up for pay by link for orders in call center, complete the setup steps described in [Payment-link-for-customer-orders-in-POS](pay-by-link-overview.md#payment-link-for-customer-orders-in-pos). After you complete the setup steps, the following changes should result.
 
 - The **Enable asynchronous payments for sales orders** feature is enabled.
 - The **Hold code for payment confirmation** and **Order hold timeout for pending payments (minutes)** account receivable parameter configurations are updated.
