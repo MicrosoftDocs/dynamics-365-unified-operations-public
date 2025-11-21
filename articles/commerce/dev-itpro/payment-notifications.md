@@ -39,7 +39,7 @@ Some of the setup steps require a Commerce headquarters user who is either an ad
 
 ## Setup
 
-The following setup steps are the same as the steps required to enable pay by link functionality. If you've enabled the pay by link feature, you can skip the steps in [Enable the features required for receiving the payment notifications](payment-notifications.md#enable-the-features-required-for-receiving-the-payment-notifications) and [Create a webhook to receive payment notifications from Adyen](payment-notifications.md#create-a-webhook-to-receive-payment-notifications-from-adyen) since they are already completed.
+The following setup steps are the same as the steps required to enable pay by link functionality. If you've enabled the pay by link feature, you can skip the steps in [Enable the features required for receiving the payment notifications](payment-notifications.md#enable-the-features-required-for-receiving-payment-notifications) and [Create a webhook to receive payment notifications from Adyen](payment-notifications.md#create-a-webhook-to-receive-payment-notifications-from-adyen) since they are already completed.
 
 Learn more in [Enable pay by link in POS by using the Dynamics 365 Payment Connector for Adyen](pay-by-link-overview.md).
 
@@ -120,4 +120,4 @@ To view event notifications saved to headquarters, go to **Retail and Commerce**
 To ensure that old notifications are deleted to save the storage and keep the notifications form actionable, you can either manually delete notifications from the **Payment process notifications** form, or automatically delete notifications by running the **Purge payment provider notifications data** batch job. This batch job allows you to specify the number of days before which notifications are deleted.
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
