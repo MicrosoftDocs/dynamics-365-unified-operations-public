@@ -2,7 +2,7 @@
 title: Enable pay by link in POS by using the Adyen connector (preview)
 description: Learn how to set up and enable the pay by link payment method to capture payments in Microsoft Dynamics 365 Commerce.
 author: shajain
-ms.date: 11/21/2025
+ms.date: 11/24/2025
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -153,7 +153,7 @@ In both cases, the pay by link option is shown only if the administrator selects
 > [!NOTE]
 > The **Payment Input Type** button is available only for payment methods where the **Function** field is set to **Card** or **Wallet**, and the **Operation name** field is set to **Pay card**.
 
-:::image type="content" source="media/payment-input-type.png" alt-text="Screenshot that shows the payment input type options on the Payment Input Type page that's opened from a selected payment method in Commerce headquarters.":::
+:::image type="content" source="media/payment-input-type.png" alt-text="Screenshot that shows the payment input type options on the Payment Input Type page opened from a selected payment method in Commerce headquarters.":::
 
 If **Manual entry** is added as a payment input type, when a cashier selects the payment method in POS, the customer is prompted to manually enter their credit card number on the payment terminal. In addition, when the manual entry option is enabled, the **Allow manual card numbers** property (**Electronic payment setup** \> **Allow manual card numbers**) is set to **True** and disabled. If the manual entry option is removed, the **Allow manual card numbers** property remains disabled, but it can be edited by the user.
 
@@ -171,7 +171,7 @@ Pay by link doesn't require that Hardware station is enabled for Cloud POS or th
 
 ### Define the behavior for the payment link
 
-You can control some payment link experiences by configuring key-value pairs in the **Custom Settings** property in the Adyen connector that's used for the register or store (in case of call center orders). You can control the following experiences:
+You can control some payment link experiences by configuring key-value pairs in the **Custom Settings** property in the Adyen connector that's used for the register or store (in the case of call center orders). You can control the following experiences:
 
 - **Payment expiration duration**
     - To control this value for cash and carry transactions, add a value for the **PaymentLinkDuration** key.
@@ -183,7 +183,7 @@ You can skip any of the preceding key-value pairs in **Custom Settings**. If you
 
 For example, you add the value `{"PaymentLinkDuration":"02:00", "Store":"Test_Store", "RequiredShopperFields":"email,name,phone,billingAddress,deliveryAddress"}` for the **Custom Settings** property. In this case, the Adyen payment connector sets the payment link expiration to two hours, the payment link is associated with the **Test_Store** store, and customers must enter their name, email address, phone number, delivery address, and billing address before they make the payment.
 
-For test environments, you must set the **Gateway environment** property of the Adyen connector in the hardware profile to **Test**. For production environments, set the value of the **Gateway environment** property to **Live** (or a region-specific value), and set the **Optional Domain** property to the prefix value that's found in the Adyen customer portal.
+For test environments, you must set the **Gateway environment** property of the Adyen connector in the hardware profile to **Test**. For production environments, set the value of the **Gateway environment** property to **Live** (or a region-specific value), and set the **Optional Domain** property to the prefix value specified in the Adyen customer portal.
 
 To set up the Adyen connector in the hardware profile, follow these steps.
 
@@ -197,19 +197,19 @@ To set up the Adyen connector in the hardware profile, follow these steps.
 
 When the pay by link payment method is selected, the POS displays a dialog. This dialog shows basic customer information, such as the name, email address, and primary delivery address. The values are automatically taken from the customer who is added to the transaction. However, the cashier can change the values before they create the payment link. If no customer is added to the transaction, the name and email fields are blank, and the store's address is used as the default delivery address.
 
-Although none of this information is required to generate the payment link, it's recorded against the customer details for the payment link. Some payment methods might require some of this payment information, so those payment methods don't work if the information is missing.
+Although none of this information is required to generate the payment link, the information is recorded against the customer details for the payment link. Some payment methods might require some of this payment information, so those payment methods don't work if the information is missing.
 
 After the payment link is created, the system shows the payment link and a corresponding QR code. The cashier can copy the payment link and send it to the customer via any communication method that's available on their device. Alternatively, the customer can scan the QR code from their phone.
 
 The payment link is an Adyen-hosted webpage that can be branded to meet your needs. To learn more about the branding options, contact Adyen.
 
-Some payment methods, such as "buy now, pay later," require that a billing address is provided for the customer. By default, the payment link that's created excludes billing address information. If the **RequiredShopperFields:billingAddress** key-value pair is added in the **Custom Settings** property of the hardware profile, when the payment link is opened, the customer must enter their billing address to view the payment options.
+Some payment methods, such as "buy now, pay later," require that a billing address is provided for the customer. By default, the payment link created excludes billing address information. If the **RequiredShopperFields:billingAddress** key-value pair is added in the **Custom Settings** property of the hardware profile, when the payment link is opened, the customer must enter their billing address to view the payment options.
 
 While the customer is making the payment, the system automatically checks the payment status every five seconds. The cashier can also manually check the payment status by selecting **Check status**.
 
-:::image type="content" source="media/pay-by-link-main.png" alt-text="Screenshot that shows the pay by link user experience in POS, including the QR code, payment link, indicator for the system's automatic check for payment status, and the Check status button.":::
+:::image type="content" source="media/pay-by-link-main.png" alt-text="Screenshot that shows the pay by link user experience in POS.":::
 
-Sometimes, the cashier might have to cancel the payment link. For example, cancellation might be required because the customer wants to add or remove items. In this case, the cashier can select **Exit Pay By Link** and then **Cancel payment link**. After the payment link is canceled, it's considered expired and can't be used to accept payments.
+Sometimes, the cashier might have to cancel the payment link. For example, cancellation might be required because the customer wants to add or remove items. In this case, the cashier can select **Exit Pay By Link** and then **Cancel payment link**. After the payment link is canceled, it expires and can't be used to accept payments.
 
 If the customer needs more time, and the cashier wants to help other customers in the meantime, the cashier can select **Cancel payment link** and then **Suspend payment link**. If the cashier has the required permissions, this action suspends the transaction. The cashier can then help the next customer in line. This action can also be helpful for "line busting" scenarios, where a store associate scans customer items, generates a payment link, and then suspends the transaction. The customer can then make the payment at any time before they reach the counter. When they reach the counter, the cashier can resume the suspended transaction and check for the payment. If the payment was received, a payment line is added when the transaction is resumed. If the payment wasn't received, the cashier can check the payment status by viewing the incomplete payment line in the **Payments** section of the transaction.
 
@@ -219,11 +219,11 @@ The suspended transaction screen now includes a **Has payment link** column. A v
 
 When the shift is being closed, if the **Void when closing shift** configuration is enabled in the functionality profile for the store, the system follows the previously described logic. It tries to expire unused payment links before the suspended transactions are voided.
 
-In Commerce version 10.0.44, the pay by link payment method supports scenarios where the payment must be captured, and the customer is in the store and wants to make a payment. Pay by link can also be used to capture customer order deposits, payment for invoices, and customer account deposits in POS. In future releases, the capability to create orders that have pending payments will allow for other scenarios. For example, a store associate can create a customer order that has the customer's shipping details and generate a payment link for the customer. The customer can then make the payment whenever they're ready. If the payment isn't received within the predefined duration, the order is canceled.
+In Commerce version 10.0.44, the pay by link payment method supports scenarios where the payment must be captured, and the customer is in the store and wants to make a payment. Pay by link can also be used to capture customer order deposits, payment for invoices, and customer account deposits in POS. In future releases, the capability to create orders that have pending payments allow for other scenarios. For example, a store associate can create a customer order that has the customer's shipping details and generate a payment link for the customer. The customer can then make the payment whenever they're ready. If the payment isn't received within the predefined duration, the order is canceled.
 
 ## Payment link for customer orders in POS
 
-Customers visiting a physical store often like the products on offer, but need more time to evaluate before making a purchase. When customers are ready to purchase products, they often choose to order them online because they'd rather avoid another trip to the physical store. This not only results in the loss of sale for the physical store, but also a lost commission for the store associate who helped the customer evaluate the product. To mitigate such losses, stores can use the Adyen connector's pay by link functionality to create the order and email the corresponding payment link to the customer. If the customer makes a payment within a predefined duration, then the order can released for processing, otherwise the order is cancelled by the system. This flow ensures that the sale is credited to the store and the store associate who helped the customer with the sale.
+Customers visiting a physical store often like the products on offer, but need more time to evaluate before making a purchase. When customers are ready to purchase products, they often choose to order them online because they'd rather avoid another trip to the physical store. This not only results in the loss of sale for the physical store, but also a lost commission for the store associate who helped the customer evaluate the product. To mitigate such losses, stores can use the Adyen connector's pay by link functionality to create the order and email the corresponding payment link to the customer. If the customer makes a payment within a predefined duration, then the order can be released for processing, otherwise the system cancels the order. This flow ensures that the sale is credited to the store and the store associate who helped the customer with the sale.
 
 > [!NOTE]
 > This feature is available as a private preview starting with Commerce version 10.0.46.
@@ -234,11 +234,11 @@ In addition to the generic pay by link setup described earlier in this article, 
 
 To enable the pay later via payment link functionality, follow these steps.
 
-1. In Commerce headquarters, enable the **Enable asynchronous payments for sales orders** feature in the **Feature management** workspace. However, since this is a private preview feature, you must first contact Microsoft support to include this feature in your environment.
+1. In Commerce headquarters, enable the **Enable asynchronous payments for sales orders** feature in the **Feature management** workspace. However, since this feature is a private preview feature, you must first contact Microsoft support to include this feature in your environment.
 1. To ensure that all the new tables are initialized, run the **Initialize commerce scheduler** job while keeping the **Delete existing configuration** and **Update subjobs only** configurations set to **No**.
-1. Define the hold code to be applied to orders that will be paid later via a payment link. To do so, go to the **Account receivable parameters** \> **General** \> **Sales setup** FastTab, and foir the **Hold code for payment confirmation** configuration, select a hold code.
-1. Define the duration in minutes that is allowed for the customer to make a payment for the order. If the customer doesn't make a payment during this duration, then the order is systematically cancelled. To define the payment duration, go to the **Account receivable parameters** \> **General** \> **Sales setup** FastTab and select a value for the **Order hold timeout for pending payments (minutes)** configuration.
-1. By default, only managers can create orders with deferred payments. To grant this permission to a worker, you must enable the **Allow conclude transaction with deferred payments** POS permission for the the worker, and then associate this permission to a new operation named **Conclude and pay later**.
+1. Define the hold code to be applied to orders to be paid later via a payment link. To do so, go to the **Account receivable parameters** \> **General** \> **Sales setup** FastTab, and for the **Hold code for payment confirmation** configuration, select a hold code.
+1. Define the duration in minutes that is allowed for the customer to make a payment for the order. If the customer doesn't make a payment during this duration, then the system cancels the order. To define the payment duration, go to the **Account receivable parameters** \> **General** \> **Sales setup** FastTab and select a value for the **Order hold timeout for pending payments (minutes)** configuration.
+1. By default, only managers can create orders with deferred payments. To grant this permission to a worker, you must enable the **Allow conclude transaction with deferred payments** POS permission for the worker, and then associate this permission to a new operation named **Conclude and pay later**.
 1. Schedule the **Process asynchronous payments for sales orders** batch job to run at the desired interval (for example, every 15 minutes) to check for customer payments.
 1. To automatically send the payment link to the customer, follow the instructions in [Set up an email notification profile](../email-notification-profiles.md) to enable the standard email capability in Commerce headquarters.
 1. For the email notification profile associated with the store, add a new **Payment link created** email notification type and define the email format for this event. You can add the following properties to the email format to send the payment link related details:
@@ -246,10 +246,10 @@ To enable the pay later via payment link functionality, follow these steps.
     - **paymentlinkamountdue**: The amount associated with the payment link.
     - **paymentlinkid**: The payment link ID.
     - **referenceid**: The merchant reference ID.
-    - **paymentlinkqrcode**: The QR code for the payment link URL. This field is only supported for the payment link created and cancelled via call center, not for POS.
+    - **paymentlinkqrcode**: The QR code for the payment link URL. This field is only supported for the payment link created and canceled via call center, not for POS.
 
     > [!NOTE]
-    > There's an additional **Payment link cancelled** email notification type that can send an email when the payment link is cancelled. However, as of Commerce version as of 10.0.46, the **Payment link cancelled** notification type is only supported for the call center orders and not for POS. 
+    > There's an additional **Payment link canceled** email notification type that can send an email when the payment link is canceled. However, as of Commerce version as of 10.0.46, the **Payment link canceled** notification type is only supported for the call center orders and not for POS. 
 
 1. Run the **9999** distribution schedule job to ensure that the setup data is synchronized with the channel database.	
 
@@ -259,12 +259,12 @@ The following example describes a typical end-to-end user experience for custome
 
 - A sales associate helps a customer choose a chair in the physical store, but the customer needs more time to decide.
 - The sales associate suggests that they can reserve the chair, and if the customer decides to buy it later and makes a payment within 24 hours, they can ship it to the customer's home. The customer agrees.
-- The sales associates creates a customer record, adds the item to the cart, adds the shipping address, and generates a payment link. If an email notification profile is configured in headquarters, then an email is sent to the customer with the payment link details. The email address used is the one that's provided during payment link creation.
+- The sales associate creates a customer record, adds the item to the cart, adds the shipping address, and generates a payment link. If an email notification profile is configured in headquarters, then an email is sent to the customer with the payment link details. The email address used is the address provided during payment link creation.
 
     > [!NOTE]
     > Order-related emails such as order creation and order fulfillment go to the email address associated with the order, which could be different from the email address provided during payment link creation.
    
-- On the **Pay by Link** dialog, the sales associates selects **Exit Pay By Link**, and then selects **Conclude and pay later** to complete the transaction. These actions put the order on hold and inventory is reserved against the order.
+- On the **Pay by Link** dialog, the sales associate selects **Exit Pay By Link**, and then selects **Conclude and pay later** to complete the transaction. These actions put the order on hold and inventory is reserved against the order.
 - Later that day, the customer decides to buy the chair and opens the payment link from the email that was sent earlier. The customer selects a payment option from the list displayed on the payment page and completes the payment.
 - After a few minutes, the **Process asynchronous payments for sales orders** batch job runs, which processes the payment, links it with the order, and removes the order from hold.
 - If the customer doesn't pay the order within the specified duration window, the **Process asynchronous payments for sales orders** batch job cancels the order.
@@ -276,8 +276,8 @@ Call center users can manually check the payment status of an order.
 To manually check the payment status of an order, follow these steps.
 
 1. In headquarters, go to the **All sales orders** form and open the sales order waiting for payment.
-1. On the **Sales order** tab, under the **Payments** submenu, select **Asynchronous payments**. This action opens a form with the payment links associated with the order. If the payment link status is shown as **Active**, this means that the payments against this link are either not yet processed or the customer hasnt yet paid.
-1. To check the latest status, select **Check status** to reload the current payment link status. This form also has a **Cancel** button to cancel the payment link. The payment link can only be cancelled if the customer hasn't used the link for payment.
+1. On the **Sales order** tab, under the **Payments** submenu, select **Asynchronous payments**. This action opens a form with the payment links associated with the order. If the payment link status is shown as **Active**, the payments against this link are either not yet processed or the customer hasn't yet paid.
+1. To check the latest status, select **Check status** to reload the current payment link status. This form also has a **Cancel** button to cancel the payment link. The payment link can only be canceled if the customer hasn't yet used the link for payment.
 
 ## Payment link for call center orders 
 
@@ -298,8 +298,8 @@ To set up for pay by link for orders in call center, complete the setup steps de
 To finish setting up pay by link for orders in call center, follow these steps.
 
 1. Go to the call center channel and open the payment methods associated with the channel.
-1. Select the payment method that's defined to accept cards. The payment method's **Function** property should be set to **Card**, and it should mapped to to the **Pay card** operation.
-1. A **Payment input type** button must be enabled for the payment method. To enable the button, open the **Payment input type** form and select from the two available options, **Manual entry** and **Pay By Link**. Manual entry enables manual card entry, while the **Pay By Link** option enables the creation of a payment link. This is similar to how the payment input type is defined for the physical stores as described in [Set up the pay by link payment method for the store](pay-by-link-overview.md#set-up-the-pay-by-link-payment-method-for-the-store).
+1. Select the payment method defined to accept cards. The payment method's **Function** property should be set to **Card**, and it should be mapped to the **Pay card** operation.
+1. A **Payment input type** button must be enabled for the payment method. To enable the button, open the **Payment input type** form and select from the two available options, **Manual entry** and **Pay By Link**. Manual entry enables manual card entry, while the **Pay By Link** option enables the creation of a payment link. This scenario is similar to how the payment input type is defined for the physical stores as described in [Set up the pay by link payment method for the store](pay-by-link-overview.md#set-up-the-pay-by-link-payment-method-for-the-store).
 
 With this configuration, when the call center user opens the payment experience, all the card types (for example, Visa and Mastercard) show two options: **Manual entry** and **Pay By Link**. Call center users can then select a card type and create a payment link. However, the customer can select any available payment method shown on the payment link. To avoid any confusion for call center users, you can optionally create a new **Card type** (for example, **Payment link**) and add it as an **Electronic payment method** to the existing payment method for the call center channel. With this setup, when call center users open the payment experience, on the **Payments** dropdown menu they see **Payment link** as one of the card options. Call center users can select this card type, and then select the **Pay by Link** option to create the payment link. When the customer accesses the payment link, they can select any available payment method, and a corresponding payment line is added to the order with the appropriate payment method used (for example, Visa or Mastercard).
 
@@ -312,10 +312,10 @@ The following example describes a typical end-to-end user experience for a call 
 - A call center user helps create an order for a customer over the phone.
 - When the order is ready for payment, the call center user selects **Complete** on the sales order. A sales order summary with a **Payment** section opens.
 - The call center user selects any of the existing card types from the list of supported payment methods, or selects the **Payment link** card type and then selects the **Payment input type** as **Pay By Link**. A form is displayed used for creating the payment link that has the customer information prepopulated.
-- If the customer changes their mind or requests more time for making a payment, the call center user can either cancel the payment link from the payment link dialog, or they can use the **Pay later** option if it's enabled in the call center parameters. If the **Pay later** option is used, the order is placed on a hold and the customer can make a payment within the predefined duration window to process the order. Otherwise, the order is cancelled by the system.
-- After updating the customer information as needed, the call center user selects **Create link** to create the payment link. If an email notification profile is configured in headquarters, the system sends an email to the customer with the payment link details.
+- If the customer changes their mind or requests more time for making a payment, the call center user can either cancel the payment link from the payment link dialog, or they can use the **Pay later** option if the functionality is enabled in the call center parameters. If the **Pay later** option is used, the order is placed on a hold and the customer can make a payment within the predefined duration window to process the order. Otherwise, the system cancels the order.
+- After the call center user updates the customer information as needed, the call center user selects **Create link** to create the payment link. If an email notification profile is configured in headquarters, the system sends an email to the customer with the payment link details.
 - The customer opens the payment link from their phone or computer to complete the payment.
-- The call center user's screen is automatically refreshed every five seconds to check if the payment has been made. Once the payment has been received, a corresponding payment line is added to the order as **Authorized**.
+- The call center user's screen is automatically refreshed every five seconds to check if the payment is tendered. Once the payment is received, a corresponding payment line is added to the order as **Authorized**.
 - The call center user submits the order and completes the sale.
 
 ### Manually check the payment status for a call center order
@@ -325,8 +325,8 @@ Call center users can manually check the payment status of a call center order.
 To manually check the payment status of a call center order, follow these steps.
 
 1. In headquarters, go to the **All sales orders** form and open the sales order waiting for payment.
-1. On the **Sales order** tab, under the **Payments** submenu, select **Asynchronous payments**. This action opens a form with the payment links associated with the order. If the payment link status is shown as **Active**, this means that the payments against this link are either not yet processed or the customer hasnt yet paid.
-1. To check the latest status, select **Check status** to reload the current payment link status. This form also has a **Cancel** button to cancel the payment link. The payment link can only be cancelled if the customer hasn't used the link for payment.
+1. On the **Sales order** tab, under the **Payments** submenu, select **Asynchronous payments**. This action opens a form with the payment links associated with the order. If the payment link status is shown as **Active**, the payments against this link are either not yet processed or the customer hasn't yet paid.
+1. To check the latest status, select **Check status** to reload the current payment link status. This form also has a **Cancel** button to cancel the payment link. The payment link can only be canceled if the customer hasn't yet used the link for payment.
 
 ## Known limitations of the pay by link payment method
 
@@ -334,7 +334,7 @@ The pay by link payment method has the following known limitations:
 - The pay by link payment method doesn't support unreferenced returns. Therefore, a payment link can't be generated for negative amounts. However, the original payment is automatically refunded if there are referenced returns.
 - The pay by link payment method only supports payment capture. The links can't be used to authorize the remaining balance on customer orders.
 - For Commerce version 10.0.44, the pay by link payment method doesn't support partial payments using the payment link. In addition, customers can't use a gift card to pay part of the amount and then use a different payment method to pay the balance. Instead, the cashier can create a payment link for the partial amount and send it to the customer. After the payment is received, the cashier can create a second link for the balance. This limitation is mitigated in Commerce version 10.0.45.
-- No payment link can be created while the POS is in offline mode. If a payment link is created while the POS is online, but the POS then goes offline, the system can't check the payment status. The cashier can't cancel the payment link, but they can proceed without cancelling it.
+- No payment link can be created while the POS is in offline mode. If a payment link is created while the POS is online, but the POS then goes offline, the system can't check the payment status. The cashier can't cancel the payment link, but they can proceed without canceling it.
 - For Commerce version 10.0.44, the pay by link payment method doesn't support some payment methods (for example, Klarna) that require that a country/region code is provided while creating the payment link. This limitation is mitigated in Commerce version 10.0.45.
 
 ## Purge old payment authorization notifications
@@ -342,3 +342,4 @@ The pay by link payment method has the following known limitations:
 To ensure that old authorization notifications are deleted to save the storage and keep the notifications form manageable, old notifications can either be deleted manually from the **Payment authorization notifications** form, or deleted automatically by running the **Purge payment authorization notifications data** batch job. The batch job allows you to specify the number of days that pass before notifications are deleted.
 
 
+[!INCLUDE [footer-include](../../includes/footer-banner.md)]
