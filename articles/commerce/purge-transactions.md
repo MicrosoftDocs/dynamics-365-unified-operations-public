@@ -23,7 +23,7 @@ Because the retention of large amounts of data in Commerce back end systems can 
 Users who have the appropriate role can select a date range for the deletion of transactions regardless of their posting status. Currently, the date range is limited to a maximum of six months at a time, and both the start and end dates must be before the previous calendar year. For example, if the current year is 2024, both the start and end dates of the date range must be in 2022 or earlier.
 
 > [!NOTE]
-> The deleted transactions cannot be recovered. Due to the risks involved, so this capability is restricted to users who are assigned to the **Information technology officer** role.
+> The deleted transactions cannot be recovered. Due to the risks involved, this capability is restricted to users who are assigned to the **Information technology officer** role.
 
 The purge job runs as a batch job. There can be only one active job per legal entity. After the purge batch job is completed, the information log for the job shows details of the tables and record counts that were deleted. The purge job doesn't lock the tables that it deletes transactions from. Therefore, the system can continue to use those tables for other business processes.
 
@@ -98,6 +98,7 @@ If the **Only delete logs and error files** configuration isn't selected, then t
 
 > [!NOTE]
 > Two more tables (**RetailTransactionPriceTrans** and **RetailReceiptsContent**) will be added to the list in upcoming releases.
+
 
 
 
