@@ -55,7 +55,7 @@ Some of the steps require a Commerce headquarters user who is either an administ
 
 To enable payment notifications for pay by link, you must enable the following features in the **Feature management** workspace:
 
-- Enhanced wallet support and payment improvements. Learn more in [Wallet payment support](/dynamics365/commerce/dev-itpro/wallets). Any payment method that's available on the payment link for the customer must be mapped to a payment method associated with the store, otherwise the system assumes that the payment method isn't supported and the payment can be declined.
+- Enhanced wallet support and payment improvements. Learn more in [Wallet payment support](/dynamics365/commerce/dev-itpro/wallets).
 - The unified payments experience in POS. Learn more in [Check out faster with optimized payment flows](/dynamics365/commerce/dev-itpro/faster-checkout-pos).
 - The **Enable Payments Notification** feature.
 - The **Enable Pay By Link Payment** feature.
@@ -183,6 +183,9 @@ You can skip any of the preceding key-value pairs in **Custom Settings**. If you
 
 For example, you add the value `{"PaymentLinkDuration":"02:00", "Store":"Test_Store", "RequiredShopperFields":"email,name,phone,billingAddress,deliveryAddress"}` for the **Custom Settings** property. In this case, the Adyen payment connector sets the payment link expiration to two hours, the payment link is associated with the **Test_Store** store, and customers must enter their name, email address, phone number, delivery address, and billing address before they make the payment.
 
+> [!NOTE}
+> To define the payment link duration to be more than a day, see [System.TimeSpan.Parse method](/dotnet/fundamentals/runtime-libraries/system-timespan-parse) for instructions on how to specify the value for **PaymentLinkDuration** property.
+
 For test environments, you must set the **Gateway environment** property of the Adyen connector in the hardware profile to **Test**. For production environments, set the value of the **Gateway environment** property to **Live** (or a region-specific value), and set the **Optional Domain** property to the prefix value specified in the Adyen customer portal.
 
 To set up the Adyen connector in the hardware profile, follow these steps.
@@ -223,7 +226,7 @@ In Commerce version 10.0.44, the pay by link payment method supports scenarios w
 
 ## Payment link for customer orders in POS
 
-Customers visiting a physical store often like the products on offer, but need more time to evaluate before making a purchase. When customers are ready to purchase products, they often choose to order them online because they'd rather avoid another trip to the physical store. This not only results in the loss of sale for the physical store, but also a lost commission for the store associate who helped the customer evaluate the product. To mitigate such losses, stores can use the Adyen connector's pay by link functionality to create the order and email the corresponding payment link to the customer. If the customer makes a payment within a predefined duration, then the order can be released for processing, otherwise the system cancels the order. This flow ensures that the sale is credited to the store and the store associate who helped the customer with the sale.
+Customers visiting a physical store often like the products on display, but need more time to evaluate before making a purchase. When customers are ready to purchase products, they often choose to order them online because they'd rather avoid another trip to the physical store. This not only results in the loss of sale for the physical store, but also a lost commission for the store associate who helped the customer evaluate the product. To mitigate such losses, stores can use the Adyen connector's pay by link functionality to create the order and email the corresponding payment link to the customer. If the customer makes a payment within a predefined duration, then the order can be released for processing, otherwise the system cancels the order. This flow ensures that the sale is credited to the store and the store associate who helped the customer with the sale.
 
 > [!NOTE]
 > This feature is available as a private preview starting with Commerce version 10.0.46.
@@ -312,8 +315,8 @@ The following example describes a typical end-to-end user experience for a call 
 - A call center user helps create an order for a customer over the phone.
 - When the order is ready for payment, the call center user selects **Complete** on the sales order. A sales order summary with a **Payment** section opens.
 - The call center user selects any of the existing card types from the list of supported payment methods, or selects the **Payment link** card type and then selects the **Payment input type** as **Pay By Link**. A form is displayed used for creating the payment link that has the customer information prepopulated.
-- If the customer changes their mind or requests more time for making a payment, the call center user can either cancel the payment link from the payment link dialog, or they can use the **Pay later** option if the functionality is enabled in the call center parameters. If the **Pay later** option is used, the order is placed on a hold and the customer can make a payment within the predefined duration window to process the order. Otherwise, the system cancels the order.
 - After the call center user updates the customer information as needed, the call center user selects **Create link** to create the payment link. If an email notification profile is configured in headquarters, the system sends an email to the customer with the payment link details.
+- If the customer changes their mind or requests more time for making a payment, the call center user can either cancel the payment link from the payment link dialog, or they can use the **Pay later** option if the functionality is enabled in the call center parameters. If the **Pay later** option is used, the order is placed on a hold and the customer can make a payment within the predefined duration window to process the order. Otherwise, the system cancels the order.
 - The customer opens the payment link from their phone or computer to complete the payment.
 - The call center user's screen is automatically refreshed every five seconds to check if the payment is tendered. Once the payment is received, a corresponding payment line is added to the order as **Authorized**.
 - The call center user submits the order and completes the sale.
