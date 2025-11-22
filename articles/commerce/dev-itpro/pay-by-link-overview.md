@@ -184,7 +184,7 @@ You can skip any of the preceding key-value pairs in **Custom Settings**. If you
 For example, you add the value `{"PaymentLinkDuration":"02:00", "Store":"Test_Store", "RequiredShopperFields":"email,name,phone,billingAddress,deliveryAddress"}` for the **Custom Settings** property. In this case, the Adyen payment connector sets the payment link expiration to two hours, the payment link is associated with the **Test_Store** store, and customers must enter their name, email address, phone number, delivery address, and billing address before they make the payment.
 
 > [!NOTE}
-> To define the payment link duration to be more than a day, see [System.TimeSpan.Parse method](/dotnet/fundamentals/runtime-libraries/system-timespan-parse) for instructions on how to specify the value for **PaymentLinkDuration** property.
+> To define the payment link duration to be more than one day, see [System.TimeSpan.Parse method](/dotnet/fundamentals/runtime-libraries/system-timespan-parse) for instructions on how to specify the value for the **PaymentLinkDuration** property.
 
 For test environments, you must set the **Gateway environment** property of the Adyen connector in the hardware profile to **Test**. For production environments, set the value of the **Gateway environment** property to **Live** (or a region-specific value), and set the **Optional Domain** property to the prefix value specified in the Adyen customer portal.
 
