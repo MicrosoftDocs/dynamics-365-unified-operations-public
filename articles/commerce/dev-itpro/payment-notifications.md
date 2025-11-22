@@ -56,7 +56,7 @@ To enable payment notifications functionality for pay by link, you must enable t
 
 To create a webhook to receive payment notifications from Adyen, complete the steps in [Create a webhook to receive payment notifications from Adyen](pay-by-link-overview.md#create-a-webhook-to-receive-payment-notifications-from-adyen) before **Test the connection to the payment notification service**.
  
-After you complete the steps, Commerce can receive authorization notifications from Adyen. However, to receive nonauthorization type notifications such as failure to capture or refund payments, in headquarters you must go to the **Commerce shared parameters** \> **Payment notifications** form and enable the **Persist payment processor notifications** configuration. 
+After you complete the steps, Commerce can receive authorization notifications from Adyen. However, to receive non-authorization type notifications such as failure to capture or refund payments, in headquarters you must go to the **Commerce shared parameters** \> **Payment notifications** form and enable the **Persist payment processor notifications** configuration. 
  
 To select which notifications should be sent to Commerce, go to the Adyen customer portal and open the webhook you created. Under the **Events** section where you previously only selected **Authorization**, select the business-critical events that are actionable for your business. Learn more about the various event notifications that Adyen can send in [Webhooks](https://docs.adyen.com/api-explorer/Webhooks/latest/overview).
 
