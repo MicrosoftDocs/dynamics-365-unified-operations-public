@@ -28,11 +28,14 @@ The following image shows an example of a cart icon module that displays a mini 
 ## Module properties
 
 - **Show mini cart** – When this property is set to **True**, a cart summary (mini cart) is shown when users hover over the cart icon. This functionality is supported only for desktop view ports.
-- **Allow anonymous checkout** – When this property is set to **True**, the mini cart allows users who aren't signed in to do a guest checkout. This property is available in the Commerce version 10.0.21 release, as part of the Commerce module library package.
-- **Order of items** – This property controls the order in which items appear in the mini cart. When the **New items added to top of the list** option is selected, new items that are added to the cart appear at the top of the list of mini cart items. When the default option, **New items added to bottom of the list**, is selected, new items that are added to the cart appear at the bottom of the list of mini cart items. This property is available as of the Commerce version 10.0.21 release, as part of the Commerce module library package.
+- **Allow anonymous checkout** – When this property is set to **True**, the mini cart allows users who aren't signed in to do a guest checkout. Starting 10.0.45, an additional configuration named **Allow anonymous checkout** needs to be enabled at the functionality profile associated with the online channel.
 
 > [!IMPORTANT]
-> The **Allow anonymous checkout** and **Order of items** properties are available as of the Commerce version 10.0.21 release. They require that Commerce module library package version 9.31 be installed.
+> The **Allow anonymous checkout** configuration at the functionality profile is disabled by default.
+
+- **Order of items** – This property controls the order in which items appear in the mini cart. When the **New items added to top of the list** option is selected, new items that are added to the cart appear at the top of the list of mini cart items. When the default option, **New items added to bottom of the list**, is selected, new items that are added to the cart appear at the bottom of the list of mini cart items. This property is available as of the Commerce version 10.0.21 release, as part of the Commerce module library package.
+
+
 
 ## Module properties and slots in the Adventure Works theme
 
