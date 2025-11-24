@@ -17,6 +17,8 @@ ms.dyn365.ops.version:
 
 # Write back to Dynamics 365 Finance budget register entry
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 ## Overview
 
 The **Write back to budget register entry** feature allows organizations to seamlessly export finalized budgets and forecasts from Business performance planning into Dynamics 365 Finance.
@@ -277,6 +279,7 @@ To review all previously created exports from the same planning cube, follow the
 - [Basic budgeting overview configuration](../budgeting/basic-budgeting-overview-configuration.md)  
 - [Create and configure cubes in Business performance planning](create-cubes.md)  
 - [Manage security roles and privileges in Business performance planning](bpp-security.md)
+
 
 
 
