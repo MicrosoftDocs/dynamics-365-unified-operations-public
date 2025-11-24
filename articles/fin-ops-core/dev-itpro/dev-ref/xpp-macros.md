@@ -88,7 +88,7 @@ You can test a macro to determine whether it has a value. You can also determine
 
 | Macro value | defInc Value |  Behavior |
 |-------------------|----------|---|
-| (+55)      | 56 | The positive sign (+) prefix makes the precompiler treat this value as a non-numeric string. |The precompiler treats all non-numeric strings as 0 when it handles a `#defInc` (or `#defDec`) directive. |
+| (+55)      | 56 | The positive sign (+) prefix makes the precompiler treat this value as a non-numeric string. The precompiler treats all non-numeric strings as 0 when it handles a `#defInc` (or `#defDec`) directive. |
 | ("3")      | 1 | Integers enclosed in quotation marks are treated as 0. |
 | ( )               | 1 | A string of spaces is treated as 0. |
 | ()                | 1 | A zero-length string is treated as 0. |
