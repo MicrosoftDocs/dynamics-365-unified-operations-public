@@ -1750,7 +1750,7 @@
                           href: localizations//iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/finance 
                         - name: Paraguay
                           href: localizations//iberoamerica/ltm-paraguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance                          
-                        - name: Poland (preview)
+                        - name: Poland
                           href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
                         - name: Saudi Arabia
                           items:
