@@ -34,9 +34,9 @@ To confirm the correct test VAT registration number:
 2. Expand the **Message additional fields** FastTab
 3. Check the value of the **Tax registration number** additional field is the VAT registration number obtained from HMRC test user.
 
-For more details, see [Obtain test user credentials](emea-gbr-mtd-vat-integration-sandbox#user).
+For more details, see [Obtain test user credentials](emea-gbr-mtd-vat-integration-sandbox.md#user).
 
-## 3. I have enabled the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but it gives a 404 response during submission. What should I do?
+## <a id="q-3"> 3. I have enabled the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but I get an error with 404 response during submission. What should I do?
 
 This issue could happen if the `UK MTD VAT setup_v6_KB5008136 from 10.0.22 ONLY.zip` package was re-imported after enabling the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature.
 
@@ -68,3 +68,9 @@ If so,  follow these steps to mitigate the problem:
 
 These settings are provided automaticaty to you system when you enable the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature. However, these setting can be reverted back to the previouse state when the `UK MTD VAT setup_v6_KB5008136 from 10.0.22 ONLY.zip` package was re-imported. 
 This causes the error 404 during submission of queries to HMRC's APIs, when the feature is enabled.
+
+## 4. I have enabled the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but I still get a warning to enable the new feature during submission. What should I do?
+
+This usually means HMRC data was set up after enabling the new security feature.
+
+Follow the mitigation steps suggest in the [previouse question](emea-gbr-mtd-vat-frequently-asked-questions.md#q-3).
