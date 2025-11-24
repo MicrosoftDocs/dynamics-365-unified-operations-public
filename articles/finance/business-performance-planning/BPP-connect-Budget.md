@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Configure the Finance connection and virtual entities for Budget register entry write-back
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 ## Overview
 
 To enable Business performance planning to write back budgets and forecasts to Dynamics 365 Finance, Dataverse must be connected to the corresponding Finance environment. This connection is defined using an environment variable and a set of virtual entities that provide access to Finance data such as ledgers, budget models, and dimension structures.
@@ -93,6 +95,7 @@ After completing the setup, follow these steps to validate the connection:
 ## Related links
 - [Write back to Dynamics 365 Finance budget register entry](bpp-bud-reg-write.md)  
 - [Business performance planning overview](business-performance-planning-overview.md)
+
 
 
 
