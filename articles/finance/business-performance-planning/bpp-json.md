@@ -11,6 +11,8 @@ ms.collection: get-started
 
 # Create a cube from JSON (Preview)
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 > [!NOTE]
 > This article describes the **Data model builder (preview)** experience. The existing **Cubes** page is still available. For information about classic cube creation, see [Create a cube](create-cubes.md).
 
@@ -177,6 +179,7 @@ These changes are applied at the Dataverse level in which the updated structure 
 - [Create a cube from JSON (preview)](bpp-json.md)  
 - [Load data using dataflows](load-data-dataflows.md)  
 - [Create calculated columns](calculated-columns.md)
+
 
 
 
