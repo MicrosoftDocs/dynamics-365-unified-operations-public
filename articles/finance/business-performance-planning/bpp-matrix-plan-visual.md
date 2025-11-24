@@ -12,6 +12,8 @@ ms.collection: get-started
 
 # Matrix planning visual in Business performance planning
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 The Matrix planning visual is the default planning visual available in Business performance planning. It enables users to enter, adjust, and allocate data directly in Power BI reports, with automatic write-back to Dataverse tables. This visual supports both top-down and bottom-up planning at any level of detail, making it ideal for financial, operational, and workforce planning scenarios.
 
 
@@ -293,6 +295,7 @@ Always confirm that the filters applied match the intended planning scope before
 - [Reporting visual](reporting-visual.md)  
 - [Comments visual](comments-visual.md)  
 - [Write-back and allocation in Business performance planning](write-back.md)
+
 
 
 
