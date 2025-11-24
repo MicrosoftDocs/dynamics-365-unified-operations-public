@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Set up Dynamics 365 Finance user roles for budget register entry write-back
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 ## Overview
 
 For Business performance planning to export finalized budgets or forecasts to budget register entry in Dynamics 365 Finance, the user account used by the export process (the *flow installer account*) must also exist as a user in Dynamics 365 Finance and have the correct security roles.
@@ -63,6 +65,7 @@ To assign roles and duties, follow these steps:
 
 After verifying the roles and user configuration, ensure the Finance connection variable and virtual entities are correctly configured in Dataverse.  
 For more information, see [Configure the Finance connection and virtual entities for write-back](bpp-bud-reg-write.md).
+
 
 
 
