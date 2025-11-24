@@ -13,6 +13,14 @@ ms.search.validFrom: 2025-03-25
 
 # Making Tax Digital (MTD) – VAT return integration - frequently asked questions
 
+This section provides answers to frequently asked questions about Making Tax Digital (MTD) – VAT return integration in Dynamics 365 Finance. It is intended to help organizations, partners, and customers resolve common configuration and operational issues when working with the MTD VAT integration feature. The guidance covers setup requirements, security enhancements, troubleshooting submission errors, and best practices for compliance with HMRC standards.
+Use this FAQ as a quick reference when:
+
+- Enabling or configuring the MTD VAT integration feature.
+- Encountering errors during VAT return submission.
+- Verifying prerequisites for secure communication with HMRC.
+
+For detailed implementation steps, refer to the official documentation linked in each answer.
 
 ## 1. I can't enable the new "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, what should I do?
 
@@ -23,7 +31,7 @@ Ensure you have:
 
 For more details, see [Security enhancements in UK MTD VAT integration \(cloud-based deployments only\)](emea-gbr-mtd-vat-security-enhancements.md#prerequisites).
 
-## 2. I have enabled the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but I get an error with 500 response code during submission. What should I do?
+## 2. I have enabled the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but I get an error with response code 500 during submission. What should I do?
 
 Check that you are using:
 - The correct combination of HMRC test user ID and password to generate the auth code.
@@ -36,7 +44,7 @@ To confirm the correct test VAT registration number:
 
 For more details, see [Obtain test user credentials](emea-gbr-mtd-vat-integration-sandbox.md#user).
 
-## <a id="q-3"> 3. I have enabled the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but I get an error with 404 response during submission. What should I do?
+## <a id="q-3"> 3. I have enabled the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but I get an error with response code 404 during submission. What should I do?
 
 This issue could happen if the `UK MTD VAT setup_v6_KB5008136 from 10.0.22 ONLY.zip` package was re-imported after enabling the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature.
 
@@ -74,3 +82,33 @@ This causes the error 404 during submission of queries to HMRC's APIs, when the 
 This usually means HMRC data was set up after enabling the new security feature.
 
 Follow the mitigation steps suggest in the [previouse question](emea-gbr-mtd-vat-frequently-asked-questions.md#q-3).
+
+## 5. I have enabled the feature, but I get a Forbidden error with code 403 during submission. What should I do?
+
+This error can appear when the Security enhancements in UK MTD VAT integration (cloud-based deployments only) feature is not yet enabled and you are using your own sandbox web application created in your developer account on the HMRC portal. In this situation, make sure that your sandbox web application on the HMRC portal is subscribed to the `VAT (MTD) API`.
+
+For more details, see [Create a sandbox application in the HMRC Developer Hub](emea-gbr-mtd-vat-integration-sandbox.md#create-a-sandbox-application-in-the-hmrc-developer-hub).
+
+## 6. I have successfully retrieved VAT obligations, but I do not get any records when i click "Collect data" button on the Electronic messages page. What should I do?
+
+**Sales tax payments** table is the source of **Message items** for UK MTD VAT feature when you click the **Collect data** button on the **Electronic messages** page. If the expected **Sales tax payment** record was not collected, it could mean that it is already linked to another electronic message.
+
+To check this, follow these steps.
+1. Go to **Tax** > **Electronic messages** > **Electronic message items**.
+2. Locate the corresponding **Sales tax payment** record in the list of message items.
+3. Review the status of the **Electronic message item** line and act accordingly. If it was incorrectly linked to another electronic message, you can delete that **Electronic message item** line. This will allow you to add the line again to the new electronic message.
+
+## 7. I do not see the 'fraud prevention headers' confirmation page or get an error related to fraud prevention headers during submission. What should I do?
+
+Ensure the fraud prevention headers setup is completed as specified in the documentation: [Set up application-specific parameters for MTD VAT web request headers format](emea-gbr-mtd-vat-integration-setup.md#headers).
+
+## 8. I have NOT enabled the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but I do not see the auth code box, while trying to obtain the access token.
+
+If the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature is NOT enabled but you do not see the dialog on **Web applications** page by **Get authorization code** button on the Action pane, 
+make sure you are using the following version ER configurations:
+
+- MTD VAT model mapping, version 46.**72**, under the Electronic Messages framework model
+- MTD VAT authorization format (UK), version 46.**15**, under the Electronic Messages framework model
+- MTD VAT web request headers format (UK), version 46.**47**, under the Electronic Messages framework model
+- MTD VAT return response importing JSON (UK), version 46.**13**, under the Electronic Messages framework model
+- MTD VAT interoperation (UK), version 31.**10**, under the Tax declaration model
