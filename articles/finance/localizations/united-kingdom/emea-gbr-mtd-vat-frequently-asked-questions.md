@@ -21,9 +21,9 @@ Ensure you have:
 - Imported the data package `UK MTD VAT setup_v6_KB5008136 from 10.0.22 ONLY.zip`.
 - Installed the E-Invoicing add-in.
 
-For more details, see [Security enhancements in UK MTD VAT integration \(cloud-based deployments only\)](emea-gbr-mtd-vat-security-enhancements#prerequisites).
+For more details, see [Security enhancements in UK MTD VAT integration \(cloud-based deployments only\)](emea-gbr-mtd-vat-security-enhancements.md#prerequisites).
 
-## 2. I have enabled the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but it is giving a 500 response code during submission. What should I do?
+## 2. I have enabled the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but I get an error with 500 response code during submission. What should I do?
 
 Check that you are using:
 - The correct combination of HMRC test user ID and password to generate the auth code.
