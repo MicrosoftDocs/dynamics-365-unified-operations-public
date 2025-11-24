@@ -86,8 +86,8 @@ You can test a macro to determine whether it has a value. You can also determine
 
 `#defInc` and `#defDec` are the only directives that interpret the value of a macro. They apply only to macros that have a value that the precompiler can convert to the formal **int** type. These directives change the numeric value of a macro at compile time. The value can only contain numbers. The only non-numeric character allowed is a leading negative sign (-). The integer value is treated as an X++ **int**, not as an **int64**. For macro names that the `#defInc` directive uses, the `#define` directive that creates the macro shouldn't reside in a class declaration. The behavior of `#defInc` in these cases is unpredictable. Instead, define such macros in only a method. Use the `#defInc` and `#defDec` directives only for macros that have an integer value. The precompiler follows special rules for `#defInc` when the macro value isn't an integer, or when the value is unusual or extreme. The following table lists the values that `#defInc` converts to zero (0) and then increments. When `#defInc` converts a value to 0, you can't recover the original value, not even by using `#defDec`.
 
-| Macro value       | defInc Value |  Behavior |
-|-------------------|----------| --- |
+| Macro value | defInc Value |  Behavior |
+|-------------------|----------|---|
 | (+55)      | 56 | The positive sign (+) prefix makes the precompiler treat this value as a non-numeric string. |The precompiler treats all non-numeric strings as 0 when it handles a `#defInc` (or `#defDec`) directive. |
 | ("3")      | 1 | Integers enclosed in quotation marks are treated as 0. |
 | ( )               | 1 | A string of spaces is treated as 0. |
