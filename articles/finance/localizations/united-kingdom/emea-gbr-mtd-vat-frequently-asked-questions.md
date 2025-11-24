@@ -44,7 +44,7 @@ To confirm the correct test VAT registration number:
 
 For more details, see [Obtain test user credentials](emea-gbr-mtd-vat-integration-sandbox.md#user).
 
-## <a id="q-3"> 3. I have enabled the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but I get an error with response code 404 during submission. What should I do?
+## <a id="q-3"></a> 3. I have enabled the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but I get an error with response code 404 during submission. What should I do?
 
 This issue could happen if the `UK MTD VAT setup_v6_KB5008136 from 10.0.22 ONLY.zip` package was re-imported after enabling the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature.
 
