@@ -34,8 +34,8 @@ For more details, see [Security enhancements in UK MTD VAT integration \(cloud-b
 ## 2. I have enabled the "Security enhancements in UK MTD VAT integration (cloud-based deployments only)" feature, but I get an error with response code 500 during submission. What should I do?
 
 Check that you are using:
-- The correct combination of HMRC test user ID and password to generate the auth code.
-- The correct VAT registration number.
+- The correct combination of HMRC test user ID and password to generate the authorization code.
+- The correct VAT registration number provided with test is ID.
 
 To confirm the correct test VAT registration number:
 1. Go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing** > **UK MTD VAT testing**)
