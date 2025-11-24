@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-[!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] include robust, out-of-box telemetry capabilities when Application Insights is enabled. These capabilities provide critical insights into various aspects of the system and help customers monitor performance, diagnose issues, and optimize operations. This article provides an overview of the types of telemetry that are available and corresponding resources.
+[!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] include robust, out-of-box telemetry capabilities when you enable Application Insights. These capabilities provide critical insights into various aspects of the system and help you monitor performance, diagnose issues, and optimize operations. This article provides an overview of the types of telemetry that are available and corresponding resources.
 
 ## Form run telemetry
 
@@ -72,24 +72,19 @@ The Data Management Framework (DMF) logs errors to the Custom Events table in Ap
 
 ## Batch telemetry (preview)
 
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-[!INCLUDE [preview-note-d365](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
-Telemetry from the batch framework is logged to the CustomEvents table in your Azure Monitor Application Insights instance.
-
-> [!NOTE]
+> [!IMPORTANT]
 > - This feature is in **PU69/10.0.45 (build >= 7.0.7690.21)** and backported to **PU68/10.0.44 (build >= 7.0.7606.126)**.
-> - The three flights below are enabled for all sandbox environments. To activate them in production, contact Microsoft support.
+> - The following three flights are enabled for all sandbox environments. To activate them in production, contact Microsoft support.
 
-To enable Batch telemetry, activate the following flights:
-- **BatchTelemetryConfigurationFlight**
-- **BatchThreadInfoTelemetryFlight**
-- **BatchTelemetryCallstackFlight**
+To enable batch telemetry, activate the following flights:
+1. **BatchTelemetryConfigurationFlight**
+1. **BatchThreadInfoTelemetryFlight**
+1. **BatchTelemetryCallstackFlight**
 
-After the flights are enabled, new telemetry signals appear under the **Configure** tab:
+After you enable the flights, new telemetry signals appear under the **Configure** tab:
 
 - **Batch Start Time** - Logs when a batch job starts.
-- **Batch Stop Time** - Logs when a batch job completes. Support duration tracking.
+- **Batch Stop Time** - Logs when a batch job completes. Supports duration tracking.
 - **Batch Throttling** - Captures throttling events and related system metrics (CPU, memory, SQL DTU).
 - **Batch Failure** - Adds diagnostic details when a batch job or task can't schedule. It complements existing Infolog errors by correlating telemetry with the originating batch job.
 - **Batch Queue** - Shows queue sizes for different queues in the priority-based scheduling framework.
@@ -105,7 +100,7 @@ With batch telemetry, you can:
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [preview-note-d365](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-We’re enhancing the **Monitoring** and **Telemetry** features by introducing **DMF telemetry** integration with Application Insights. This capability is currently behind feature flights. While you may notice additional events in the UI, the underlying telemetry is planned for preview in January 2026. Additional details will be shared as soon as the feature becomes available.
+We're enhancing the **Monitoring** and **Telemetry** features by introducing **DMF telemetry** integration with Application Insights. This capability is currently behind feature flights. While you might notice additional events in the UI, the underlying telemetry is planned for preview in January 2026. We share additional details as soon as the feature becomes available.
 
 ### Resources
 
