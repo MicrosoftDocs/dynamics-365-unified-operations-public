@@ -1,10 +1,9 @@
 ---
 title: Cart icon module
-description: This article covers the cart icon module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+description: Learn how to to add the cart icon module to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/26/2024
+ms.date: 11/24/2025
 ms.topic: how-to
-audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
@@ -17,9 +16,9 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article covers the cart icon module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+This article explains how to to add the cart icon module to site pages in Microsoft Dynamics 365 Commerce.
 
-The cart icon module represents the cart in the header module of the page, and shows the number of items in the cart. The cart icon module also displays a cart summary (also known as a mini cart) when the cart icon is hovered over. The mini cart provides the user with a summary of the items in the cart without having to navigate to the cart page. In addition, it also allows the user to directly go to checkout page if they are happy with the summary. This reduces the number of page navigations and makes checkout faster. 
+The cart icon module represents the cart in the header module of the page, and shows the number of items in the cart. The cart icon module also displays a cart summary (also known as a mini cart) when the cart icon is hovered over. The mini cart provides the user with a summary of the items in the cart without having to navigate to the cart page. It also allows the user to proceed directly to the checkout page if they're happy with the summary. This flow reduces the number of page navigation clicks and makes checkout faster. 
 
 The following image shows an example of a cart icon module that displays a mini cart in the Fabrikam header.
 
@@ -28,14 +27,12 @@ The following image shows an example of a cart icon module that displays a mini 
 ## Module properties
 
 - **Show mini cart** – When this property is set to **True**, a cart summary (mini cart) is shown when users hover over the cart icon. This functionality is supported only for desktop view ports.
-- **Allow anonymous checkout** – When this property is set to **True**, the mini cart allows users who aren't signed in to do a guest checkout. Starting 10.0.45, an additional configuration named **Allow anonymous checkout** needs to be enabled at the functionality profile associated with the online channel.
+- **Allow anonymous checkout** – When this property is set to **True**, the mini cart allows users who aren't signed in to do a guest checkout. Starting in Commerce version 10.0.45, you must enable the **Allow anonymous checkout** configuration in the functionality profile associated with the online channel.
 
-> [!IMPORTANT]
-> The **Allow anonymous checkout** configuration at the functionality profile is disabled by default.
+    > [!IMPORTANT]
+    > The **Allow anonymous checkout** configuration in the functionality profile is disabled by default.
 
-- **Order of items** – This property controls the order in which items appear in the mini cart. When the **New items added to top of the list** option is selected, new items that are added to the cart appear at the top of the list of mini cart items. When the default option, **New items added to bottom of the list**, is selected, new items that are added to the cart appear at the bottom of the list of mini cart items. This property is available as of the Commerce version 10.0.21 release, as part of the Commerce module library package.
-
-
+- **Order of items** – This property controls the order in which items appear in the mini cart. When you select the **New items added to top of the list** option, new items added to the cart appear at the top of the list of mini cart items. When you select the default option **New items added to bottom of the list**, new items added to the cart appear at the bottom of the list of mini cart items. This property is available as part of the Commerce module library package starting with Commerce version 10.0.21.
 
 ## Module properties and slots in the Adventure Works theme
 
