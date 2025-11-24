@@ -16,6 +16,9 @@ ms.dyn365.ops.version: Human Resources
 # Load data into Business performance planning using dataflows
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+
 
 > [!NOTE]
 > This article describes the cube creation process that's available in Business performance planning versions 1.13 and earlier. Starting in version 1.14, a new cube creation process is available. For more information, see [Cubes (preview)](bpp-create-cubes.md). 
