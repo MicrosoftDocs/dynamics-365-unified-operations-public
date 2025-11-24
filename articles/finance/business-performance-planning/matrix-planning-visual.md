@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Matrix planning visual performance considerations
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 The Matrix planning visual in Business performance planning provides interactive data entry and write-back capabilities directly in Power BI.  
 Because the visual handles both data rendering and user interactions, performance can vary depending on report design, data model size, and configuration choices.
 
@@ -98,6 +100,7 @@ If users experience slow rendering or timeout issues:
 - [Matrix planning visual overview](matrix-planning.md)  
 - [Graphical planning visual](graphical-planning.md)  
 - [Write-back and allocation in BPP](write-back.md)
+
 
 
 
