@@ -2,7 +2,7 @@
 title: Preview features in Dynamics 365 Commerce 10.0.45 (September 2025)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.45. 
 author: johnmichalak
-ms.date: 09/02/2025
+ms.date: 11/24/2025
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -36,7 +36,7 @@ The following table lists the features that are included in this release. We mig
 | E-commerce | Azure Maps support in Commerce | With the retirement of the Bing Maps Free and Basic license in 2025, Commerce now supports Azure Maps with this release. Azure Maps can be used to power key location-based experiences including store selector, buy online pick up in store (BOPIS), and address lookup for shipping or delivery. Microsoft continues to support Bing Maps under the Enterprise license on Commerce until 2028. Learn more in [Azure Maps module](../azure-maps-module.md). | Admins |
 | E-commerce  | Canonical URL redirection for category and product pages | In Commerce version 10.0.45, Microsoft introduces support for automatic redirection to canonical URLs for category and product detail pages. This enhancement ensures that users and search engines consistently access clean, SEO-friendly URLs—eliminating unnecessary segments or "garbage" values that may appear between the domain and the product/category ID. Learn more in [Redirect category and product pages to canonical URLs](../e-commerce-extensibility/add-custom-redirect.md). | Admins     |
 | E-commerce  | Typescript update  | Typescript is upgraded from 3.9.7 to 4.2.4 to make the Commerce platform more scalable, reliable, and maintainable.|  |
-| E-commerce  | Anonymous checkout | To allow anonymous checkouts on an e-commerce site, enable "Allow anonymous checkout" configuration on the online functionality profile associated with the online channel along with enabling the anonymous checkout in the site builder.| Admins |
+| E-commerce  | Anonymous checkout | To allow anonymous checkouts on an e-commerce site, you must enable the **Allow anonymous checkout** configuration on the online functionality profile associated with the online channel, and also enable anonymous checkout in Commerce site builder.| Admins |
 | Unified pricing management | Enable custom price attributes for POS and e-commerce | The unified pricing feature provides a simplified approach for defining custom attributes for customers and products in Dynamics 365 Commerce headquarters. You can easily implement these custom attributes with minimal customization using the Commerce Scale Unit (CSU), enabling pricing flexibility in POS and e-commerce store operations. | Admins     |
 
 ## Features turned on by default in this release
@@ -46,7 +46,7 @@ The following table lists the features that became turned on by default in versi
 | Module | Feature name | More information |
 |--|--|--|
 | Retail and commerce | Validate mode of delivery on retail channel sales quotation | This feature ensures that only valid modes of delivery are used with e-commerce sales quotations. |
-| Retail and commerce | Enable generation of a stronger channel reference ID | This feature generates a more secure 12-character channel reference ID (also known as a order confirmation ID) that's passed in the query string when an order is looked up. |
+| Retail and commerce | Enable generation of a stronger channel reference ID | This feature generates a more secure 12-character channel reference ID (also known as an order confirmation ID) that's passed in the query string when an order is looked up. |
 
 ## Resources
 
