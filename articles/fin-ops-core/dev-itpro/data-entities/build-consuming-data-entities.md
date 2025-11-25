@@ -58,7 +58,7 @@ FMLabCustomerEntity
 | Name          | Mapping                     |
 |---------------|-----------------------------|
 | CellPhone     | FMCustomer.CellPhone        |
-| DriversLicense | FMCustomer.DriversLicense    |
+| DriversLicense| FMCustomer.DriversLicense   |
 | Email         | FMCustomer.Email            |
 | FirstName     | FMCustomer.FirstName        |
 | LastName      | FMCustomer.LastName         |
@@ -68,7 +68,7 @@ FMLabCustomerEntity
 | City          | FMAddressTable.City         |
 | State         | FMAddressTable.State        |
 | ZipCode       | FMAddressTable.ZipCode      |
-| Country/region       | FMAddressTable.Country      |
+| Country/region| FMAddressTable.Country      |
 
 #### Corresponding staging table
 
