@@ -4,7 +4,7 @@
 title: Expire jobs and titles (Preview)
 description: This article describes how jobs and titles can be expired. 
 author: ramagadu;twheeloc
-ms.date: 11/25/2026
+ms.date: 11/25/2025
 ms.topic: how-to 
  
 # optional metadata 
