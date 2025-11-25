@@ -57,7 +57,7 @@ The process of submitting a VAT return has two parts:
 
 ## Retrieve VAT obligations from HMRC
 
-After you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in your Finance sandbox environment, your environment is ready to work with MTD endpoints of HMRC.
+After you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in your Finance environment, your environment is ready to work with MTD endpoints of HMRC.
 
 Before you submit a VAT return, you must retrieve VAT obligations from HMRC. To retrieve VAT obligations from HMRC, follow these steps.
 
