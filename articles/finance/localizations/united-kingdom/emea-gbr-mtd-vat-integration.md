@@ -21,7 +21,7 @@ This article explains how to set up the Making Tax Digital for VAT (MTD VAT) fea
 
 On July 13, 2017, the Financial Secretary to the Treasury and Paymaster General in the UK announced that MTD for VAT would take effect on April 1, 2019.
 
-MTD introduces an obligation for VAT-registered businesses to keep their records digitally (for VAT purposes only) and to provide VAT return information to Her Majesty's Revenue and Customs (HMRC) through software that is functionally compatible with MTD. As of April 1, 2019, MTD for VAT is mandatory for businesses that have turnover that exceeds the VAT registration threshold (currently £85,000). For VAT-registered businesses that have turnover that is below the VAT registration threshold, MTD for VAT will remain voluntary.
+MTD introduces an obligation for VAT-registered businesses to keep their records digitally (for VAT purposes only) and to provide VAT return information to His Majesty's Revenue and Customs (HMRC) through software that is functionally compatible with MTD. As of April 1, 2019, MTD for VAT is mandatory for businesses that have turnover that exceeds the VAT registration threshold (currently £85,000). For VAT-registered businesses that have turnover that is below the VAT registration threshold, MTD for VAT will remain voluntary.
 
 VAT returns must be submitted to HMRC by using software that is compatible with MTD. VAT returns can no longer be submitted by using the HMRC portal. Software that is compatible with MTD must support the following requirements:
 
