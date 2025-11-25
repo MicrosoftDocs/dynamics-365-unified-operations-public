@@ -4,7 +4,7 @@ description: Learn how to export finalized budgets and forecasts from Business p
 author: twheeloc
 ms.author: romainpham
 ms.topic: install-set-up-deploy
-ms.date: 11/14/2025
+ms.date: 11/25/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -279,6 +279,7 @@ To review all previously created exports from the same planning cube, follow the
 - [Basic budgeting overview configuration](../budgeting/basic-budgeting-overview-configuration.md)  
 - [Create and configure cubes in Business performance planning](create-cubes.md)  
 - [Manage security roles and privileges in Business performance planning](bpp-security.md)
+
 
 
 
