@@ -19,16 +19,24 @@ Document classes without a letter configuration are supported. If a document cla
 
 ## Prerequisites
 
-Before you can create the letter codes for the configuration, the length of the document class letter prefix must be configured on the **LATAM Parameters** page.
+Before you set up a document class letter record, the following prerequisites must be met:
+- The legal entity must have an address in a country within the LATAM localization.
+- Both the region-specific LATAM feature and the general feature must be enabled.
+
+- The maximum length of the document class letter prefix must be configured on the **LATAM Parameters** page.
 
 ## Set up a document class letter
 
-1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class letter**.
-2. In the **Document class letter Id** field, enter a code to identify the register that's being created.
-3. In the **Description** field, enter a description of the document class letter.
+1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class letter** and on the Action Pane, click in **New**.
+2. In the **Document class letter Id** field, enter a code to identify the record.
+3. In the **Description** field, enter a brief description of the document class letter.
 
     > [!NOTE]
     > The **Document class letter Id** and **Description** fields are mandatory.
 
-4. Complete the prefix by specifying the letter or letters that are required to identify the document class.
+4. Complete the **Prefix** field by specifying the letter or letters that are required to identify the document class in transactions.
+
+    > [!NOTE]
+    > This field can be left blank if no prefix is needed.
+
 5. On the Action Pane, select **Save**.
