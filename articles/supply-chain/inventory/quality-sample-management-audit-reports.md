@@ -17,7 +17,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article describes tools that support quality management through reporting, auditing, and procedural guidance. Reports provide insights into trends in test results for specific tests, helping you monitor quality performance over time. Audit trails track changes and actions for compliance and traceability. Sample procedures are step-by-step instructions that workers can access while processing samples through different life cycle states, ensuring consistency in activities such as collection and testing.
+This article describes tools that support quality management through reporting, auditing, and procedural guidance. Reports provide insights into trends in test results for specific tests, helping you monitor quality performance over time. Audit trails track changes and actions for compliance and traceability. Sample procedures are step-by-step instructions that workers can access while processing samples through different lifecycle states, ensuring consistency in activities such as collection and testing.
 
 ## Analyze sample test results for a production order
 
@@ -28,7 +28,7 @@ To analyze sample test results for a production order, follow these steps:
 1. Go to **Production control** \> **Production orders** \> **All production orders**.
 1. Find and select the order you want to analyze.
 1. From the Action Pane, open the **View** tab and, from the **Manage quality** group, select **Analyze inline sample results** or **Analyze continuous sample results**, depending on which type of sample you want to analyze.
-1. In the dialog, set the following fields
+1. In the dialog, set the following fields:
     - **Test** – Select the test you want to analyze.
     - **Item number** – For production orders, this value is read-only (the order you selected). For batch orders, select a formula item or co-product.
 1. Select **OK** to see the report.

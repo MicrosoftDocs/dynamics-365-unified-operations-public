@@ -17,7 +17,9 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Sample management is a component of quality control in manufacturing. It ensures that products meet regulatory and quality standards. The processes described in this article serve as an example of how you can implement sample management. However, the specific details might vary depending on your company's branch, industry, and practices. By tailoring the sample management process to your organization's needs, you can maintain compliance, improve operational efficiency, and ensure product integrity. Use this guide as a framework to understand the key steps involved, and adapt them to align with your unique requirements and workflows. Proper implementation of sample management can significantly enhance traceability, accountability, and overall quality assurance.
+Sample management is a component of quality control in manufacturing. It ensures that products meet regulatory and quality standards. The processes described in this article serve as an example of how you can implement sample management. However, the specific details might vary depending on your company's branch, industry, and practices. By tailoring the sample management process to your organization's needs, you can maintain compliance, improve operational efficiency, and ensure product integrity. 
+
+Use this guide as a framework to understand the key steps involved, and adapt them to align with your unique requirements and workflows. Proper implementation of sample management can significantly enhance traceability, accountability, and overall quality assurance.
 
 The following video provides a high-level overview of sample management capabilities and a demo of how to work with them.
 
@@ -26,6 +28,7 @@ The following video provides a high-level overview of sample management capabili
 ## Understanding the lifecycle of a sample in sample management
 
 In modern manufacturing and quality control environments, the ability to systematically manage product samples is essential for ensuring compliance, traceability, and consistent product quality. Sample management provides a structured framework for handling samples from their creation through to disposal. It integrates seamlessly with production workflows and quality assurance protocols.
+
 The lifecycle of a sample begins with its registration. You can trigger registration either manually or automatically based on predefined sampling plans. Tailor these plans to the production context, whether *inline sampling*, which occurs during active production before inventory is finalized, or *continuous sampling*, which monitors quality at regular intervals throughout batch production.
 
 Once registered, the system assigns each sample a unique identifier and categorizes it by sample type. The sample type determines its handling procedure, retention policy, and applicable lifecycle states. These lifecycle states, such as *Quality order created*, *Quality order validated*, and *Sample scrapped*, are system-defined and visually tracked to ensure clarity and accountability throughout the sample's journey.
@@ -42,13 +45,13 @@ The remaining sections of this article provide an overview of the activities con
 
 *Sample registration* is the first step in the sample management process. It serves as the foundation for ensuring quality control in manufacturing. This step involves creating a database record that uniquely identifies each sample, which you can use for accurate tracking and management throughout its lifecycle. By registering samples, manufacturing managers can ensure that the system records all quality-related data and makes it easily accessible. You can register samples in multiple ways, but usually production personnel register them manually as [inline samples](quality-sample-management-inline.md), or periodically based on a [continuous sampling setup](quality-sample-management-continuous.md).
 
-### Register new samples automatically with continuous sampling
-
-Use the [continuous sampling method](quality-sample-management-continuous.md) to register new samples automatically based on predefined sampling plans.
-
 ### Register new samples manually with inline sampling
 
 The [inline sampling method](quality-sample-management-inline.md) lets you register new samples directly during the production or inspection process.
+
+### Register new samples automatically with continuous sampling
+
+Use the [continuous sampling method](quality-sample-management-continuous.md) to automatically register new samples based on predefined sampling plans.
 
 ### Register new samples manually from the sample management workbench
 
@@ -75,7 +78,7 @@ Workers typically use the sample management workbench to find sample registratio
 
 ### Print labels
 
-Printed labels ensure proper identification and traceability of a sample throughout the testing process. The label includes the sample ID and other information, such as batch or license plate ID, preventing mix-ups and supporting compliance. After you register a sample in the system, you can generate and print a label for it directly from the sample management workbench. First collect the sample, and then attach the label before storage or analysis. Use the following procedure to print labels for one or more samples.
+Printed labels ensure proper identification and traceability of a sample throughout the testing process. The label includes the sample ID and other information, such as batch or license plate ID. This prevents mix-ups and supports compliance. After you register a sample in the system, you can generate and print a label for it directly from the sample management workbench. First collect the sample, and then attach the label before storage or analysis. Use the following procedure to print labels for one or more samples.
 
 1. Go to **Inventory management** > **Periodic tasks** > **Quality management** > **Sample Management Workbench**.
 1. Find the sample registrations that you want to print a label for by using the **Filter** field or column filters.
@@ -111,14 +114,18 @@ Here's an example of how to test an inline sample:
 
 As with inline samples, workers can identify continuous samples that are ready for testing by using the sample management workbench and applying filters to find samples according to their inspection method or lifecycle state.
 
-When you use continuous sampling, the system automatically generates samples according to a predefined sampling plan set up on the item sampling configuration. Learn more about item sampling in [Configure item sampling policies](quality-sample-management-admin.md#configure-item-sampling-policies). For example, if the item sampling plan specifies that a sample should be created for every second license plate produced and a quality order should be produced for every second sample, then for every four license plates manufactured, the system creates two sample registrations and one quality order. The one quality order covers all four license plates. This means that the validation of that single quality order determines the inventory status for all four plates. If the quality order fails, the system updates the status of all four plates to *Blocked*, ensuring that none of them can be used or shipped. If a worker wants to perform more detailed testing, they can manually create a quality order from the sample management workbench for a sample that doesn't yet have one associated. When this manual test passes, the system automatically updates the inventory status of the related plates, such as the first two, to indicate availability. This method reduces the number of quality orders required for routine checks while still allowing targeted testing when necessary, and it ensures that inventory status always reflects the outcome of quality validations across the linked items.
+When you use continuous sampling, the system automatically generates samples according to a predefined sampling plan set up on the item sampling configuration. Learn more about item sampling in [Configure item sampling policies](quality-sample-management-admin.md#configure-item-sampling-policies). 
+
+For example, if the item sampling plan specifies that a sample should be created for every second license plate produced and a quality order should be produced for every second sample, then for every four license plates manufactured, the system creates two sample registrations and one quality order. The one quality order covers all four license plates. This means that the validation of that single quality order determines the inventory status for all four plates. If the quality order fails, the system updates the status of all four plates to *Blocked*, ensuring that none of them can be used or shipped. 
+
+If a worker wants to perform more detailed testing, they can manually create a quality order from the sample management workbench for a sample that doesn't yet have one associated. When this manual test passes, the system automatically updates the inventory status of the related plates, such as the first two, to indicate availability. This method reduces the number of quality orders required for routine checks while still allowing targeted testing when necessary, and it ensures that inventory status always reflects the outcome of quality validations across the linked items.
 
 Here's an example of how to test a continuous sample:
 
 1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Sample Management Workbench**.
 1. Select a row that shows the **Item number** you want to test.
 1. On the Action Pane, open the **Sample** tab and select **Sample relationships**. The **Sample relationships** page shows information about samples and license plates related to the selected sample. You can find the following information here:
-    - There is record for each license plate that has been reported as finished and is waiting for quality testing.
+    - There is a record for each license plate that has been reported as finished and is waiting for quality testing.
     - Some license plates have samples registered for them (for example, every second license plate), as configured in the item sampling setup.
     - Some of the sampled license plates also have quality orders created for them (for example, every second sample), as configured in the item sampling setup.
 1. Go back to the sample management workbench and select the specific sample that you want to test. The sample should be for the item you selected that has a quality order associated with it.
@@ -131,7 +138,7 @@ Here's an example of how to test a continuous sample:
     - All the license plates listed in the grid will be assigned the **Update inventory status to** status, which is based on the test result.
     - A failed status typically prevents the license plate from being used in any warehouse or inventory transactions.
 1. Select **OK** to confirm the dialog and assign the inventory status to each of the listed license plates.
-1. Go back to the sample management workbench and confirm that the license plates for each sample has the updated inventory status that you expect to see. If you don't see the inventory status in the grid, select **Dimensions display** on the Action Pane to add it.
+1. Go back to the sample management workbench and confirm that the license plates for each sample have the updated inventory status that you expect to see. If you don't see the inventory status in the grid, select **Dimensions display** on the Action Pane to add it.
 
 ## Sample archiving
 
@@ -147,7 +154,7 @@ Use the following procedure to change the lifecycle state:
 
 ## Sample disposal
 
-Disposal involves safely and compliantly disposing of samples that reached the end of their retention period or are no longer needed for testing or quality assurance. Proper disposal minimizes environmental impact, prevents contamination, and ensures compliance with regulatory requirements.
+Disposal involves safely and compliantly disposing of samples that reach the end of their retention period or are no longer needed for testing or quality assurance. Proper disposal minimizes environmental impact, prevents contamination, and ensures compliance with regulatory requirements.
 
 The system uses the sample lifecycle state to show when a sample is disposed, marking its transition from active testing to disposal. To identify samples that have expired in the sample management workbench, you can filter for those whose expiration date has passed.
 

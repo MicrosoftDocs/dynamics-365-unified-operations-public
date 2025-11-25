@@ -67,8 +67,13 @@ To design and configure sample label layouts, follow these steps:
 
 Make one or both of the following assignments to specify which label layout to use for printing sample labels:
 
-- Assign the default label layout, which applies to all samples that don't have a more specific layout assigned to them. To do this, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**. Open the **Quality management** tab, and then set the **Default sample label layout** field to the desired label layout.
-- Assign a custom label layout to each specific sample type as needed (overrides the default). To do this, go to **Inventory management** \> **Setup** \> **Sample management** \> **Sample types**. Select a sample type, and then set the **Label layout** field to the desired label layout.
+- Assign the default label layout, which applies to all samples that don't have a more specific layout assigned to them.
+
+  To do this, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**. Open the **Quality management** tab, and then set the **Default sample label layout** field to the desired label layout.
+
+- Assign a custom label layout to each specific sample type as needed (overrides the default).
+
+  To do this, go to **Inventory management** \> **Setup** \> **Sample management** \> **Sample types**. Select a sample type, and then set the **Label layout** field to the desired label layout.
 
 ## Configure lifecycle states
 
@@ -79,11 +84,14 @@ Follow these steps to manage your lifecycle states:
 1. Go to **Inventory management** \> **Setup** \> **Sample management** \> **Sample lifecycle states**.
 1. Use the buttons on the Action Pane to create a new lifecycle state or edit an existing one as required. You can also delete existing lifecycle states.
 1. Enter the following details for your new or selected lifecycle state:
+
    - **Sample lifecycle state** – Enter a unique name for the lifecycle state, such as *Registered*, *Tested*, *Archived*, or *Scrapped*.
    - **Sample lifecycle state description** – Add a brief description of the lifecycle state.
-   - **Quality order created** – Select this check box for the lifecycle state that a sample should be updated to when you create a quality order for it.
-   - **Quality order validated** – Select this check box for the lifecycle state that a sample should be updated to when you validate a quality order against it.
-   - **Sample scrapped** – Select this check box for the lifecycle state which, when you assign it manually, triggers an audit trail logging for *Scrapped by* and *Scrapped date/time*. Only samples with this property selected can be deleted from the **Sample management workbench**.
+   - **Quality order created** – Select this checkbox for the lifecycle state that a sample should be updated to when you create a quality order for it.
+   - **Quality order validated** – Select this checkbox for the lifecycle state that a sample should be updated to when you validate a quality order against it.
+   - **Sample scrapped** – Select this checkbox for the lifecycle state that, when you assign it manually, triggers an audit trail logging for *Scrapped by* and *Scrapped date/time*.
+    
+     Only samples with this property selected can be deleted from the **Sample management workbench**.
 
 1. On the Action Pane, select **Save**.
 
@@ -197,23 +205,24 @@ The following subsections describe other important settings for sample managemen
 ### Quality associations
 
 Configure quality associations to trigger sample management when production orders are reported as finished for specific items. This setup references test groups and item sampling policies to ensure consistency and automation in quality control. For inline samples, you don't need a quality association because you collect these samples on demand directly from the production order. Learn more in [Quality associations](../inventory/quality-associations.md). The following settings for quality associations are particularly relevant for sample management:
-    - **Reference type** – Select *Production* which is the only supported type for sample management.
-    - **Event type** – Select *Report as finished*.
-    - **Execution** – Select *After*.
-    - **Test group** – Select the test group that should be used for quality orders generated for samples.
-    - **Item sampling** – Select the item sampling configuration used for sample management. This configuration determines whether the *Inline* or *Continuous* sampling method is applied, along with related details for how each method is used.
+
+- **Reference type** – Select *Production*, which is the only supported type for sample management.
+- **Event type** – Select *Report as finished*.
+- **Execution** – Select *After*.
+- **Test group** – Select the test group that should be used for quality orders generated for samples.
+- **Item sampling** – Select the item sampling configuration used for sample management. This configuration determines whether the *Inline* or *Continuous* sampling method is applied, along with related details for how each method is used.
 
 ### Configure default item status
 
 The default item status establishes the initial inventory status assigned to new items in inventory. This is relevant when samples are configured to be generated for each license plate produced. Typically, you should define the default inventory status as *On-hold*, which indicates that the license plate is awaiting inspection. You can configure the default item status to apply for an individual item or for all transactions at a specific warehouse.
 
-To configure the default item status for a specific item follow these steps:
+To configure the default item status for a specific item, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Inventory** \> **Default item status**.
 1. On the Action Pane, select **New** to create a new record.
 1. Enter the following details for your new record:
     - **Item number** – Select the product you want to configure for sample management.
-    - **Module** – Select *Inventory* which is the only applicable value for sample management.
+    - **Module** – Select *Inventory*, which is the only applicable value for sample management.
     - **Default inventory status ID** – From the list, select the inventory status that should be used as default when a sample with an associated license plate is created in sample management. <!-- KFM: The system won't let me choose a status set to blocking, but that is what we are asking for. What should we do? -->
 
 To configure the default item status that is applicable for all item transactions at a specific warehouse, follow these steps:
@@ -230,18 +239,18 @@ To configure the default item status that is applicable for all item transaction
 
 If you configured sample management to generate samples per license plate, then the **Inventory status** is used to control the status of the license plate. To control the initial status of the license plates generated during production report as finished, set the following fields on the relevant test group:
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**
-1. Select and existing test group or create a new one.
-1. Select the **General** Tab and make the following settings:
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**.
+1. Select an existing test group or create a new one.
+1. Select the **General** tab and make the following settings:
     - **Update inventory status** – Set to *Yes* to enable inventory status updates based on test results.
     - **Failed quality order status** – Specify the inventory status to apply to the license plate when a quality order fails. This setting only applies when **Update inventory status** is set to *Yes*.
     - **Passed quality order status** – Specify the inventory status to apply to the license plate when a quality order passes. This setting only applies when **Update inventory status** is set to *Yes*.
 
 If you configured sample management to generate samples per product batch number, then the batch disposition master is used to control the status of the individual batch number. To control the initial status on batch numbers generated during report as finished, set the following fields on each test group:
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**
-1. Select and existing test group or create a new one.
-1. Select the **General** Tab and make the following settings:
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**.
+1. Select an existing test group or create a new one.
+1. Select the **General** tab and make the following settings:
     - **Update batch disposition** – Set to *Yes* to enable update of the tested batch number based on whether the quality order is failing or passing.
     - **Failed quality order batch disposition** – Specify the batch disposition master to apply to the tested batch number when a quality order fails. This setting only applies when **Update batch disposition** is set to *Yes*.
     - **Passed quality order batch disposition** – Specify the batch disposition master to apply to the tested batch number when a quality order passes. This setting only applies when **Update batch disposition** is set to *Yes*.
