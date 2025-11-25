@@ -1,6 +1,6 @@
 ---
 title: Migrate to unified pricing management (preview)
-description: Learn how to migrate to unified pricing management in Microsoft Dynamics 365 Commerce to simplify pricing strategies with centralized control and flexible rules.
+description: Learn how to migrate to unified pricing management in Microsoft Dynamics 365 Commerce version 10.0.46 to simplify pricing strategies with centralized control and flexible rules.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: v-griffinc
