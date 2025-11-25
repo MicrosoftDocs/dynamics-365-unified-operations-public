@@ -13,54 +13,68 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-You can configure the different types of document classes that your company will use. Use this configuration to group the document classes according to the characteristics that they have in common.
+You can configure the different types of document classes that your company will use.
 
 ## Prerequisites
 
-Before you can configure a document class type, the prefix length configuration must already be set on the **LATAM Parameters** menu.
+Before you can configure a document class type, the following prerequisites must be met:
+- The legal entity must have an address in a country within the LATAM localization.
+- Both the region-specific LATAM feature and the general feature must be enabled.
+- The prefix length configuration must already be set on the **LATAM Parameters** menu.
+- If a **Tax application Id** will be referenced in the document class type configuration, it must already exist.
 
 ## Set up a document class type for Latin America
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class type**.
-2. On the Action Pane, select **New**.
-3. In the **General** section, set the following fields.
-
-    | Field                       | Description |
-    |-----------------------------|-------------|
-    | Document class type Id.     | Enter a code to identify the register. |
-    | Description                 | Enter a description of the document class type. |
-    | Prefix                      | Enter a prefix to use in the complete document number. |
-    | Unique document per voucher | Activate this option to specify that only one document of this document class type can be posted in a voucher. |
-    | Unique account per voucher  | Activate this option to specify that only one account type can be posted in a voucher that uses this document class type. |
-
-4. In the **Payment method**, **Invoices**, **Credit notes**, and **Packing Slip** sections, set the following options.
+1. On the Action Pane, select **New**.
+1. In the **General** section, complete the **Document class type Id.** field with a code that represents the record.
+1. Complete the **Description** field with a brief description of the document class type.
+1. Complete the **Prefix** field with a prefix that will be part of the complete document number.
+1. Enable the **Unique document per voucher** toggle to ensure that the document class linked with this document class type can only be selected once within the same journal entry.
+1. Enable the **Unique account per voucher** toggle to ensure that only one account type can be posted in a voucher that uses this document class type.
+1. Configure the following options in the **Payment methods** section.
 
     | Option                          | Description |
     |---------------------------------|-------------|
-    | Payment method                  | Set this option to **Yes** to use the document as a payment document. |
+    | Payment media                  | Set this option to **Yes** to use the document as a payment document. This option can only be selected if no other toggles are enabled|
     | Unique per voucher              | Set this option to **Yes** to specify that only one payment document is allowed per voucher posting. |
-    | Replicates header information   | Set this option to **Yes** to copy the information of the document class to the rest of the voucher's lines. |
+    | Replicates header information   | Set this option to **Yes** to copy the information of the document class to the rest of the voucher lines in the transaction. |
+
+1. Configure the following options in the **Invoices** section.
+
+    | Option                          | Description |
+    |---------------------------------|-------------|
     | Sales invoice                   | Set this option to **Yes** to use the document as a sales invoice in a sales order. |
-    | Free text invoice               | Set this option to **Yes** to use the document in a free text invoice transaction. |
-    | Purchase invoice                | Set this option to **Yes** to use the document in an invoice journal and a purchase order. |
+    | Free Text Invoice               | Set this option to **Yes** to use the document in a free text invoice transaction. |
+    | Purchase invoice                | Set this option to **Yes** to use the document as a purchase invoice in a purchase order. |
     | Project invoice                 | Set this option to **Yes** to use the document as a project invoice. |
-    | Sales credit note               | Set this option to **Yes** to use the document as a credit note. |
+
+1. Configure the following options in the **Credit notes** section.
+
+    | Option                          | Description |
+    |---------------------------------|-------------|
+    | Sales credit note               | Set this option to **Yes** to use the document as a credit note in sales orders |
     | Free text credit note           | Set this option to **Yes** to use the document as a credit note in a free text invoice transaction. |
     | Purchase credit note            | Set this option to **Yes** to use the document as a credit note in purchase orders. |
     | Project credit note             | Set this option to **Yes** to use the document as a project credit note. |
+
+1. Configure the following options in the **Packing Slip** section.
+
+    | Option                          | Description |
+    |---------------------------------|-------------|
     | Packing slip                    | Set this option to **Yes** to use the document as a packing slip in sales and purchase orders. |
-    | Return packing slip             | Set this option to **Yes** to use the document as a return packing slip in sales and purchase orders. |
+    | Return packing slip             | Set this option to **Yes** to use the document as a return packing slip for credit notes in sales and purchase orders. |
     | Inventory transfer packing slip | Set this option to **Yes** to use the document as a packing slip in inventory transfer transactions. |
     | Project packing slip            | Set this option to **Yes** to use the document as a packing slip in a project. |
-    | Project return delivery note    | Set this option to **Yes** to use the document as a return packing slip in a project. |
+    | Project return delivery note    | Set this option to **Yes** to use the document as a return packing slip for project credit notes. |
 
-    > [!NOTE]
-    > The options in the different sections are mutually exclusive. Therefore, if you set an option to **Yes** in one section, the same option is automatically set to **No** in the other sections.
-
-5. In the **Journals** section, set the options to use the document on journal lines that use the defined account type.
+1. In the **Journals** section, define how the document can be used on journal lines for each account type.
 
     | Option       | Description |
     |--------------|-------------|
+    | Debit       | Activate this option to indicate that the document can be applied to journal lines with debit amounts for the selected account type. |
+    | Credit       | Activate this option to indicate that the document can be applied to journal lines with credit amounts for the selected account type. |
+    | Admits reverse       | Activate this option to indicate that the document can be used when reversing transactions for the selected account type. |
     | Ledger       | Activate this option to use the document on ledger type voucher lines. |
     | Vendor       | Activate this option to use the document on vendor type voucher lines. |
     | Project      | Activate this option to use the document on project type voucher lines. |
@@ -68,15 +82,11 @@ Before you can configure a document class type, the prefix length configuration 
     | Fixed assets | Activate this option to use the document on fixed assets type voucher lines. |
     | Bank         | Activate this option to use the document on bank type voucher lines. |
 
-## Add the fiscal codification provided by the fiscal authorities
+1. On the **Action Pane**, click in **Tax Application** to configure a fiscal codification for the sales point.
+1. In the **Tax application Id** field, select a value.
+1. In the **Tax application code** field, enter the code given by the fiscal authority to identify the document class type.
 
-You can use the **Tax application** option to add this codification.
-
-1.	Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class type**.
-2.	On the Action Pane, select **Tax application**.
-3.	Select **New** to add a line to the grid.
-4.	In the **Tax application Id.** field, select a value.
-5.	In the **Tax application code** field, enter the code that the fiscal authority uses to identify the document class type.
-6.	Select **Save**.
+> [!NOTE]
+> You can use the **User-defined field** (1 to 4) to add additional codifications if needed. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
