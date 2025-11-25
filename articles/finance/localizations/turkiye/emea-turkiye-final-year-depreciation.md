@@ -164,7 +164,7 @@ This scenario demonstrates that when Prorate depreciation is set to **Yes**, the
 Only the months in service are depreciated in the acquisition year. The depreciation amount that cannot be recognized for the remaining months of that year is included in the final year’s depreciation calculation. 
 The system adds this amount to the regular depreciation for the final year and distributes the combined total evenly across all 12 months, without extending the asset’s depreciation period. 
 
-For detailed information about using prorated depreciation with last year depreciation by month, see [Use prorated depreciation with Reducing balance (Türkiye) depreciation method](emea-turkiye-prorated-depreciation.md#use-prorated-depreciation-with-reducing-balance-turkiye-depreciation-method).  
+For detailed information about using prorated depreciation with last year depreciation by month, see [Use prorated depreciation with Reducing balance (Türkiye) depreciation method](emea-turkiye-prorated-depreciation.md#use-prorated-depreciation-with-reducing-balance-türkiye-depreciation-method).  
 
 | Parameter | Value | 
 |--------------------|--------------| 
@@ -226,7 +226,7 @@ Follow these steps to configure depreciation parameters for an asset book with t
 > If you select the standard **Straight line service life** depreciation method, prorated depreciation is not applied in the acquisition year.  
 > Use the **Straight line service life (Türkiye)** depreciation method for prorated depreciation correctly across the acquisition and final years.  
 
-For detailed information about using prorated depreciation with last year depreciation by month, see [Use prorated depreciation with Straight line service life (Türkiye) depreciation method](emea-turkiye-prorated-depreciation.md#use-prorated-depreciation-with-straight-line-service-life-turkiye-depreciation-method).  
+For detailed information about using prorated depreciation with last year depreciation by month, see [Use prorated depreciation with Straight line service life (Türkiye) depreciation method](emea-turkiye-prorated-depreciation.md#use-prorated-depreciation-with-straight-line-service-life-türkiye-depreciation-method).  
 
 ---
 
