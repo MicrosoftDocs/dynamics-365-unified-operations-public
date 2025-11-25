@@ -4427,8 +4427,6 @@
                           href: localizations/united-kingdom/emea-gbr-mtd-vat-integration-em-setup-checklist.md
                         - name: Test interoperation with the MTD VAT sandbox
                           href: localizations/united-kingdom/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: Authorize your Finance environment to interoperate with HMRC's MTD web service
-                          href: localizations/united-kingdom/emea-gbr-mtd-vat-integration-authorization.md
                         - name: Submit a VAT return to HMRC's MTD web service
                           href: localizations/united-kingdom/emea-gbr-mtd-vat-integration-submission.md
                         - name: Retrieve information about VAT payments and liabilities from HMRC
