@@ -90,7 +90,8 @@ The last step of the processing is an **Import VAT obligations** action of the *
 
 All the actions that are performed for electronic messages are logged and can be viewed on the **Action log** FastTab.
 
-HMRC uniquely identifies each VAT return period by using a **periodKey** parameter. This parameter is stored in Finance. However, according to HMRC requirements, users must not be able to see the **periodKey** value in the user interface (UI). Therefore, the **periodKey** additional field is used to store the **periodKey** value in **UK MTD VAT returns** processing. This field is set up as a hidden field, so that users can't see its value. To ensure compliance with HMRC requirements, don't change this setup for the **periodKey** additional field.
+> [!IMPORTANT]
+> HMRC uniquely identifies each VAT return period by using a **periodKey** parameter. This parameter is stored in Finance. However, according to HMRC requirements, users must not be able to see the **periodKey** value in the user interface (UI). Therefore, the **periodKey** additional field is used to store the **periodKey** value in **UK MTD VAT returns** processing. This field is set up as a hidden field, so that users can't see its value. To ensure compliance with HMRC requirements, don't change this setup for the **periodKey** additional field.
 
 The following illustration shows the lifecycle of electronic message processing for the retrieval of VAT obligations.
 
