@@ -48,7 +48,7 @@ Applications use the Document Routing Agent to manage the spooling of documents 
 1. Open the **Manage network printers** page (**Organization administration** &gt; **Setup** &gt; **Network printers**).
 1. On the **Options** tab, in the **Application** group, select **Download document routing agent installer**.
 
-    :::image type="content" source="./media/download-document-routing-agent-installer.png" alt-text="Screenshot of download document routing agent installer button." lightbox="./media/download-document-routing-agent-installer.png":::
+    :::image type="content" source="media/download-document-routing-agent-installer.png" alt-text="Screenshot of download document routing agent installer button." lightbox="./media/download-document-routing-agent-installer.png":::
 
 1. Run the downloaded file to begin the installation process.
 1. Complete the setup process.
@@ -63,7 +63,7 @@ Use the following procedure to configure the client application so that it can c
 1. On your desktop, run the Document Routing Agent.
 1. On the toolbar, select **Settings**.
 
-    :::image type="content" source="./media/the-document-routing-agent-window.png" alt-text="Screenshot of the Document Routing Agent window with Settings button highlighted.":::
+    :::image type="content" source="media/the-document-routing-agent-window.png" alt-text="Screenshot of the Document Routing Agent window with Settings button highlighted.":::
 
 1. Add the following settings:
 
@@ -86,7 +86,7 @@ Before you complete this procedure, make sure that you installed all the network
 1. On the toolbar, select **Printers**.
 1. Select the printers to make available in the applications.
 
-    :::image type="content" source="./media/printers-to-add.png" alt-text="Screenshot of printers to add dialog showing available printer options.":::
+    :::image type="content" source="media/printers-to-add.png" alt-text="Screenshot of printers to add dialog showing available printer options.":::
 
 1. Specify a default name for the printer.
 1. Select **OK**.
@@ -99,7 +99,7 @@ Use client pages to manage access to the network printers that one or more Docum
 
 1. Open the **Manage network printers** page (**Organization administration** &gt; **Setup** &gt; **Network printers**).
 
-    :::image type="content" source="./media/manage-network-printers-page.png" alt-text="Screenshot of manage network printers page showing printer configuration options.":::
+    :::image type="content" source="media/manage-network-printers-page.png" alt-text="Screenshot of manage network printers page showing printer configuration options.":::
 
 1. Edit the existing entries that are mapped to each network printer. As part of your changes, edit the connection path.
 1. To include a printer as an option in the **Print Destinations** field, set the **Active** field to **Yes**.
