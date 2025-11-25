@@ -1,31 +1,29 @@
 ---
-title: Migrate to unified pricing management
+title: Migrate to unified pricing management (preview)
 description: Learn how to migrate to unified pricing management in Microsoft Dynamics 365 Commerce to simplify pricing strategies with centralized control and flexible rules.
-author: johnmichalak
-ms.author: johnmichalak
-ms.reviewer: johnmichalak
+author: sherry-zheng
+ms.author: chuzheng
+ms.reviewer: v-griffinc
 ms.date: 11/25/2025
 ms.topic: how-to
 ms.custom: 
   - bap-template
 ---
 
-# Migrate to unified pricing management
+# Migrate to unified pricing management (preview)
 
 [!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](../includes/preview-banner.md)]
 
-This article explains how to migrate to unified pricing management (UPM) in Microsoft Dynamics 365 Commerce to simplify pricing strategies with centralized control and flexible rules.
+This article explains how to migrate to unified pricing management (UPM) in Microsoft Dynamics 365 Commerce version 10.0.46 to simplify pricing strategies with centralized control and flexible rules.
 
-UPM migration helps Dynamics 365 Commerce customers transition from the legacy Commerce pricing engine to the unified pricing management framework without heavy configuration or disruption.
+UPM migration helps Dynamics 365 Commerce customers transition from the legacy Commerce pricing engine to the unified pricing management framework without extensive configuration or disruption.
 
 This enhancement simplifies adoption, so you can quickly experience the benefits of centralized and flexible pricing management. It lays the groundwork for you to later extend your pricing strategies by incorporating more pricing attributes for greater precision and control.
 
-The migration is structured into three incremental phases from Commerce versions 10.0.46 to 10.0.48, so you can move at your own pace and address various user scenarios and existing Commerce pricing engine configurations.
+UPM migration is structured into three incremental phases from Commerce versions 10.0.46 to 10.0.48, so you can move at your own pace and address various user scenarios and existing Commerce pricing engine configurations.
 
-> [!NOTE]
-> This section provides a clearer overview of the contents included in the 10.0.46 migration script.
-
-The following table describes whether or not various rules are supported for pricing features.
+The following table describes whether various rules are supported for pricing features.
 
 |Feature |Current nonattribute rule |New nonattribute rules |New attribute-based rules |
 |----------|-----------------------------|--------------------------|----------------------------|
@@ -41,9 +39,9 @@ The following table describes whether or not various rules are supported for pri
 
 ## Prerequisites
 
-Before you can use unified pricing management, you must  be using version 10.0.46.
+You must be running Commerce version 10.0.46 to use unified pricing management.
 
-## Migration process
+## Migrate to UPM
 
 To migrate to UPM, follow these steps.
 
@@ -54,7 +52,7 @@ To migrate to UPM, follow these steps.
     > [!NOTE]
     > When you enable the feature, you unlock the migration options to migrate from the Commerce pricing engine to UPM.
 
-1. Go to **Retail and Commerce \> Migration \> Set up Price group mapping for migration**. You see the following options:
+1. Go to **Retail and Commerce \> Migration \> Set up Price group mapping for migration**. You see the following:
 
     - The system automatically converts all existing Commerce price groups to UPM price groups.  
     - Each new group keeps the same price group conditions as its legacy configuration. 
@@ -70,6 +68,6 @@ To migrate to UPM, follow these steps.
 1. If you want to continue applying existing trade agreements without attributes, configure the corresponding parameters accordingly.
 1. Select **X** to start the migration.
 
-When the migration completes, your data and configurations are successfully migrated to UPM, providing a foundation for future enhancements to flexible pricing strategy.
+When the migration is complete, your data and configurations are successfully migrated to UPM, providing a foundation for future enhancements to flexible pricing strategy.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
