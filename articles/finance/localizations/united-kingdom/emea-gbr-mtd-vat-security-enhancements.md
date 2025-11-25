@@ -80,7 +80,7 @@ Learn more in [Install the add-in for Electronic invoicing microservices](../glo
 > [!IMPORTANT]
 > Before you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, make sure this step is completed for all legal entities that interact with HMRC’s APIs: [Import a package of data entities that includes a predefined EM setup](emea-gbr-mtd-vat-integration-setup#entities).
 
-To enable the **\Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, follow these steps.
+To enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, follow these steps.
 
 1. Go to **Workspaces** \> **Feature management**.
 2. In the list of features, search for **Security enhancements in UK MTD VAT integration (cloud-based deployments only)**.
@@ -130,7 +130,7 @@ To validate the integration with sandbox MTD endpoints of HMRC from your sandbox
 
 ## Steps after you activate the feature in your production environment
 
-After you enable the **\Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in your Finance production environment, your environment is ready to work with MTD endpoints of HMRC.
+After you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in your Finance production environment, your environment is ready to work with MTD endpoints of HMRC.
 
 To integrate with production MTD endpoints of HMRC, use the user ID and password for authorization.
 
