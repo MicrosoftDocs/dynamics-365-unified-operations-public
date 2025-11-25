@@ -84,7 +84,7 @@ The scenario demonstrates that how prorated depreciation works when it is applie
 Depreciation is calculated only for the months in service in the acquisition year.
 The remaining depreciation amount of **13,500.00 TRY** from Year 2024 is added to Year 2028. The system completes depreciation within the existing service life and distributes the final year amount across 12 months. 
 
-For more information about how to allocate the final year depreciation equally across all months, see [Straight line service life (Türkiye) depreciation method](../../../finance/localizations/turkiye/emea-turkiye-final-year-depreciation.md#straight-line-service-life-turkiye-depreciation-method).
+For more information about how to allocate the final year depreciation equally across all months, see [Straight line service life (Türkiye) depreciation method](../../../finance/localizations/turkiye/emea-turkiye-final-year-depreciation.md#straight-line-service-life-türkiye-depreciation-method).
 
 ---
 
@@ -120,7 +120,7 @@ The scenario demonstrates that how prorated depreciation works when it is applie
 Depreciation is calculated only for the months in service in the acquisition year.
 The remaining depreciation amount of **27,000.00 TRY** from Year 2024 is added to Year 2028. The system completes depreciation within the existing service life and distributes the final year amount across 12 months.
 
-For more information about how to allocate the final year depreciation equally across all months, see [Reducing balance (Türkiye) depreciation method](../../../finance/localizations/turkiye/emea-turkiye-final-year-depreciation.md#reducing-balance-turkiye-depreciation-method).  
+For more information about how to allocate the final year depreciation equally across all months, see [Reducing balance (Türkiye) depreciation method](../../../finance/localizations/turkiye/emea-turkiye-final-year-depreciation.md#reducing-balance-türkiye-depreciation-method).  
 
 ---
 
