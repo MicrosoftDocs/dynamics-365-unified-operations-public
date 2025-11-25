@@ -78,13 +78,13 @@ Learn more in [Install the add-in for Electronic invoicing microservices](../glo
 ## Enable security enhancements in UK MTD VAT integration
 
 > [!IMPORTANT]
-> Before you enable the **\Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, make sure this step is completed for all legal entities that interact with HMRC’s APIs: [Import a package of data entities that includes a predefined EM setup](emea-gbr-mtd-vat-integration-setup#entities).
+> Before you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, make sure this step is completed for all legal entities that interact with HMRC’s APIs: [Import a package of data entities that includes a predefined EM setup](emea-gbr-mtd-vat-integration-setup#entities).
 
 To enable the **\Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, follow these steps.
 
 1. Go to **Workspaces** \> **Feature management**.
-1. In the list of features, search for **\Security enhancements in UK MTD VAT integration (cloud-based deployments only)**.
-1. Select **Enable now**.
+2. In the list of features, search for **Security enhancements in UK MTD VAT integration (cloud-based deployments only)**.
+3. Select **Enable now**.
 
 > [!NOTE]
 > - This feature is for companies that use direct integration of their **cloud-based** Finance instance with MTD VAT APIs of HMRC.
@@ -101,32 +101,32 @@ After you enable the **Security enhancements in UK MTD VAT integration (cloud-ba
 To integrate with sandbox MTD endpoints of HMRC and create a test user, follow these steps.
 
 1. On HMRC Developer Hub, create a test user. Learn more in [Create test user - HMRC Developer Hub - GOV.UK](https://developer.service.hmrc.gov.uk/api-test-user).
-1. In Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, and select the **UK MTD VAT TEST** processing.
-1. On the **Message additional fields** FastTab, select the **Tax registration number** field, and enter the **VAT Registration Number** value of the test user that you created.  
+2. In Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, and select the **UK MTD VAT TEST** processing.
+3. On the **Message additional fields** FastTab, select the **Tax registration number** field, and enter the **VAT Registration Number** value of the test user that you created.  
 
 To validate the integration with sandbox MTD endpoints of HMRC from your sandbox environment, follow these steps.
 
 1. In Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the **UK MTD VAT TEST** processing.
-1. On the **Messages** FastTab, select **New**.
-1. In the **Run processing** dialog, in the **Action** field, select **Create VAT obligation request**. Then select **OK**. A new electronic message is created that has a status of **New obligation request**.
-1. Enter dates in the **From date** and **To date** fields. These fields are mandatory for electronic messages that retrieve VAT obligations. However, the response from HMRC's sandbox application doesn't depend on the values. It always contains the same information about obligation periods.
-1. In the **Description** field, enter a description of your message. This field is optional for electronic messages that retrieve VAT obligations.
-1. Select **Send report** to initialize the retrieval of VAT obligation information from HMRC.
-1. In the **Run processing** dialog, the **Test retrieve VAT obligations** action is automatically defined, and information is filled in by the system. Select **OK**.
-1. You receive the following warning message in the dialog. The message indicates which endpoint (sandbox or production) the request is sent to.
+2. On the **Messages** FastTab, select **New**.
+3. In the **Run processing** dialog, in the **Action** field, select **Create VAT obligation request**. Then select **OK**. A new electronic message is created that has a status of **New obligation request**.
+4. Enter dates in the **From date** and **To date** fields. These fields are mandatory for electronic messages that retrieve VAT obligations. However, the response from HMRC's sandbox application doesn't depend on the values. It always contains the same information about obligation periods.
+5. In the **Description** field, enter a description of your message. This field is optional for electronic messages that retrieve VAT obligations.
+6. Select **Send report** to initialize the retrieval of VAT obligation information from HMRC.
+7. In the **Run processing** dialog, the **Test retrieve VAT obligations** action is automatically defined, and information is filled in by the system. Select **OK**.
+8. You receive the following warning message in the dialog. The message indicates which endpoint (sandbox or production) the request is sent to.
 
     > By selecting this action, a request will be sent to HMRC's **sandbox** endpoint. Do you want to proceed?
 
     Select **Yes** to continue or **No** to cancel.
 
-1. The **System administrator consent** dialog is shown the first time that you enable the integration in your Finance instance. Select **Agree** to continue or **Disagree** to cancel.
-1. You're taken to the HMRC's web portal for authorization. (The address of the page begins with `https://test-www.tax.service.gov.uk/oauth/`.) Select **Continue**.
-1. In the HMRC portal, select **Sign in**, and provide the user ID and password of the test user that you created.
-1. Select **Give permission**.
-1. The next page shows the authorization code. Select **Copy** to copy the code to the clipboard.
-1. In your browser, switch to the Finance page where you're working with electronic messages. There should be a dialog that includes an **Authorization code** parameter. As the value of this parameter, paste the authorization code that you copied. Then select **OK** to continue.
-1. In this step, the authorization is completed, and the VAT obligation request starts. In the **Fraud prevention headers** dialog, select **Submit** to continue.
-1. On the **Messages** FastTab, you should notice that two new electronic messages were created as a result of the successful VAT obligation request to HMRC's sandbox endpoint.
+9. The **System administrator consent** dialog is shown the first time that you enable the integration in your Finance instance. Select **Agree** to continue or **Disagree** to cancel.
+10. You're taken to the HMRC's web portal for authorization. (The address of the page begins with `https://test-www.tax.service.gov.uk/oauth/`.) Select **Continue**.
+11. In the HMRC portal, select **Sign in**, and provide the user ID and password of the test user that you created.
+12. Select **Give permission**.
+13. The next page shows the authorization code. Select **Copy** to copy the code to the clipboard.
+14. In your browser, switch to the Finance page where you're working with electronic messages. There should be a dialog that includes an **Authorization code** parameter. As the value of this parameter, paste the authorization code that you copied. Then select **OK** to continue.
+15. In this step, the authorization is completed, and the VAT obligation request starts. In the **Fraud prevention headers** dialog, select **Submit** to continue.
+16. On the **Messages** FastTab, you should notice that two new electronic messages were created as a result of the successful VAT obligation request to HMRC's sandbox endpoint.
 
 ## Steps after you activate the feature in your production environment
 
@@ -140,32 +140,32 @@ To integrate with production MTD endpoints of HMRC, use the user ID and password
 To validate the integration with production MTD endpoints of HMRC from your production environment, follow these steps.
 
 1. In Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the **UK MTD VAT returns** processing.
-1. On the **Messages** FastTab, select **New**.
-1. In the **Run processing** dialog, in the **Action** field, select **Create VAT obligation request**. Then select **OK**. A new electronic message is created that has a status of **New obligation request**.
-1. Enter dates in the **From date** and **To date** fields.
-1. In the **Description** field, enter a description of your message. This field is optional for electronic messages that retrieve VAT obligations.
-1. Select **Send report** to initialize the retrieval of VAT obligation information from HMRC.
-1. In the **Run processing** dialog, the **Retrieve VAT obligations** action is automatically defined, and information is filled in by the system. Select **OK**.
-1. You receive the following warning message in the dialog. The message indicates which endpoint (sandbox or production) the request is sent to.
+2. On the **Messages** FastTab, select **New**.
+3. In the **Run processing** dialog, in the **Action** field, select **Create VAT obligation request**. Then select **OK**. A new electronic message is created that has a status of **New obligation request**.
+4. Enter dates in the **From date** and **To date** fields.
+5. In the **Description** field, enter a description of your message. This field is optional for electronic messages that retrieve VAT obligations.
+6. Select **Send report** to initialize the retrieval of VAT obligation information from HMRC.
+7. In the **Run processing** dialog, the **Retrieve VAT obligations** action is automatically defined, and information is filled in by the system. Select **OK**.
+8. You receive the following warning message in the dialog. The message indicates which endpoint (sandbox or production) the request is sent to.
 
     > By selecting this action, a request is sent to HMRC's **production** endpoint. Do you want to proceed?
 
     Select **Yes** to continue or **No** to cancel.
 
-1. The **System administrator consent** dialog is shown the first time that you enable the integration in your Finance instance. Select **Agree** to continue or **Disagree** to cancel.
-1. You're taken to the HMRC web portal for authorization. Select **Continue**.
-1. In the HMRC portal, select **Sign in**, and provide your user ID and password.
-1. Select **Give permission**.
-1. The next page shows the authorization code. Select **Copy** to copy the code to the clipboard.
-1. In your browser, switch to the Finance page where you're working with electronic messages. There should be a dialog that includes an **Authorization code** parameter. As the value of this parameter, paste the authorization code that you copied. Then select **OK** to continue.
-1. In this step, the authorization is completed, and the VAT obligation request begins. In the **Fraud prevention headers** dialog, select **Submit** to continue.
-1. On the **Messages** FastTab, you should notice that new electronic messages were created as a result of the successful VAT obligation request to HMRC's production endpoint.
+9. The **System administrator consent** dialog is shown the first time that you enable the integration in your Finance instance. Select **Agree** to continue or **Disagree** to cancel.
+10. You're taken to the HMRC web portal for authorization. Select **Continue**.
+11. In the HMRC portal, select **Sign in**, and provide your user ID and password.
+12. Select **Give permission**.
+13. The next page shows the authorization code. Select **Copy** to copy the code to the clipboard.
+14. In your browser, switch to the Finance page where you're working with electronic messages. There should be a dialog that includes an **Authorization code** parameter. As the value of this parameter, paste the authorization code that you copied. Then select **OK** to continue.
+15. In this step, the authorization is completed, and the VAT obligation request begins. In the **Fraud prevention headers** dialog, select **Submit** to continue.
+16. On the **Messages** FastTab, you should notice that new electronic messages were created as a result of the successful VAT obligation request to HMRC's production endpoint.
 
-The authorization lasts 100 days. After the authorization expires, it's automatically reinitiated when a request to an HMRC endpoint is initiated. You don't have to reauthorize from the **Web application** page.
+**The authorization lasts 100 days**. After the authorization expires, it's automatically reinitiated when a request to an HMRC endpoint is initiated. You don't have to reauthorize from the **Web application** page.
 
 ## Further details
 
-When you enable the **\Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, you don't need to authorize from the **Web application** page. The authorization from the **Web application** page isn't available anymore. Instead, the system automatically controls the authorization period (100 days). It initiates the authorization when required during a request to an HMRC endpoint.
+When you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, you don't need to authorize from the **Web application** page. The authorization from the **Web application** page isn't available anymore. Instead, the system automatically controls the authorization period (100 days). It initiates the authorization when required during a request to an HMRC endpoint.
 
 The **Client ID** and **Client secret** fields that were previously available on the **Web application** page aren't used in the **UK MTD VAT TEST** and **UK MTD VAT returns** processing. The Electronic Invoicing add-in automatically provides client ID and client secret information while it transfers the requests to HMRC endpoints.
 
