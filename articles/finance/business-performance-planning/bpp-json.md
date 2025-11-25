@@ -1,15 +1,15 @@
 ---
-title: Create a cube from JSON (Preview)
-description: Learn how to create planning cubes by importing a JSON cube schema using the Data model builder (Preview) experience in Business performance planning.
+title: Create a cube from JSON (preview)
+description: Learn how to create planning cubes by importing a JSON cube schema using the Data model builder (preview) experience in Business performance planning.
 author: ShielaSogge
 ms.author: romainpham
 ms.topic: how-to
-ms.date: 11/14/2025
+ms.date: 11/25/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 ---
 
-# Create a cube from JSON (Preview)
+# Create a cube from JSON (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -179,6 +179,7 @@ These changes are applied at the Dataverse level in which the updated structure 
 - [Create a cube from JSON (preview)](bpp-json.md)  
 - [Load data using dataflows](load-data-dataflows.md)  
 - [Create calculated columns](calculated-columns.md)
+
 
 
 
