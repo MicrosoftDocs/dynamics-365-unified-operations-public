@@ -27,7 +27,7 @@ This section contains a table that lists the features that are included in this 
 
 | Module or feature area | Feature name | More information 
 |---|---|---|
-| Personnel Management | Expire jobs and job titles (Preview) |This feature allows Human Resources Teams to set expiration dates for jobs and job titles in Dynamics 365 Human Resources. Expired items are hidden from selection lists and can’t be assigned to new positions, but all historical data is retained for reporting and compliance. |
+| Personnel Management | Expire jobs and job titles (preview) |This feature allows Human Resources Teams to set expiration dates for jobs and job titles in Dynamics 365 Human Resources. Expired items are hidden from selection lists and can’t be assigned to new positions, but all historical data is retained for reporting and compliance. |
 
 
 
