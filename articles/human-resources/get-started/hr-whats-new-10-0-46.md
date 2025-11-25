@@ -25,9 +25,9 @@ This article lists the features that are new or changed for Microsoft Dynamics 3
 ## Features included in this release
 This section contains a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
 
-| Module or feature area | Feature name | More information | Enabled by |
-|---|---|---|---|
-| Recruiting | Expire jobs and job titles (Preview) |This feature allows Human Resources Teams to set expiration dates for jobs and job titles in Dynamics 365 Human Resources. Expired items are hidden from selection lists and can’t be assigned to new positions, but all historical data is retained for reporting and compliance. | Default |
+| Module or feature area | Feature name | More information 
+|---|---|---|
+| Personnel Management | Expire jobs and job titles (Preview) |This feature allows Human Resources Teams to set expiration dates for jobs and job titles in Dynamics 365 Human Resources. Expired items are hidden from selection lists and can’t be assigned to new positions, but all historical data is retained for reporting and compliance. |
 
 
 
