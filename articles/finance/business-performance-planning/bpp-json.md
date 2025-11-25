@@ -16,7 +16,6 @@ ms.collection: get-started
 > [!NOTE]
 > This article describes the **Data model builder (preview)** experience. The existing **Cubes** page is still available. For information about classic cube creation, see [Create a cube](create-cubes.md).
 
-
 ## Overview
 
 The **Create cube from JSON (preview)** feature allows you to import a complete cube definition—including facts, dimensions, relationships, and drivers—from a preconfigured JSON file.  
@@ -26,24 +25,25 @@ Unlike the Excel or dimension-based workflows, the JSON import defines the entir
 
 For more information about cubes, facts, dimensions, or drivers, see [Cubes (preview)](bpp-create-cubes.md#key-concepts) for an overview of how cubes are structured and used in Business performance planning.
 
-
 ### Create a cube from JSON
 
 The first step is to select a data source that lets you:
+
 - Import a cube definition previously exported from another environment using the **Import and export cubes and dimensions** feature.  
 - Deploy standardized planning templates across tenants or environments.  
 - Restore cubes from backup configurations.
 
 To create a cube from a JSON file, follow these steps:
-1. Go to **Model > Cubes (preview)**, select **+ New cube**.
-2. In the **Data source** step, choose **Import cube (JSON)**.
 
+1. Go to **Model > Cubes (preview)**, select **+ New cube**.
+1. In the **Data source** step, choose **Import cube (JSON)**.
 
 ### Upload JSON file
 
 Upload your JSON file by dragging it into the upload box or selecting **Browse files**.
 
 After upload, Business performance planning validates the file and checks that it contains a valid cube structure—including:
+
 - One fact table definition  
 - One or more dimension definitions  
 - Relationship mappings  
@@ -55,10 +55,10 @@ After upload, Business performance planning validates the file and checks that i
 
 Once validated, a live preview of your cube model appears on the right-hand pane.
 
-
 ### Review imported structure
 
 The **Review** page summarizes the cube configuration extracted from the JSON file and displays:
+
 - The cube name and its associated Dataverse table name  
 - Drivers (numeric columns)
 - Calculated columns   
@@ -70,11 +70,11 @@ The only editable property is the cube name. All other elements, drivers, relati
 > [!TIP]
 > If a validation errors appear, check that all referenced dimensions exist in your environment or update the JSON to use valid dimension names.
 
-
 ### Create draft cube
 
 Select **Create** to generate the cube in **Draft** mode.  
 In the **Data model view**, you can now edit the structure:
+
 - Rename cube
 - Rename, add or delete drivers  
 - Rename, add or delete dimensions (from existing Business performance planning dimensions, Excel files, or manually created dimensions)  
@@ -82,7 +82,7 @@ In the **Data model view**, you can now edit the structure:
   - **Audit** - track write-back and user changes  
   - **Non-Clustered Columnstore Index (NCCI)** - improves performance for large datasets  
 
-The JSON import creates only the cube schema, no data is imported. To load data into your cube, use [Dataflows](load-data-dataflows.md) after publishing.
+The JSON import creates only the cube schema, no data is imported. To load data into your cube, use [Dataflows](load-data-dataflows.md) after publishing.  
 When satisfied with the structure, select **Publish**.
 
 ### Publish the cube
@@ -90,13 +90,13 @@ When satisfied with the structure, select **Publish**.
 Publishing the cube converts the imported cube schema into physical **Dataverse** tables and relationships. The cube status is **Published**, and becomes available for analytics, planning, and write-back in Power BI or Excel.
 
 After the cube is published, you can:
+
 - Load fact data using Dataflows.  
 - Define calculated columns using the Dataverse formula column engine  
 - Connect your cube to Power BI or Excel for data entry and scenario planning
 
 > [!IMPORTANT]
 > Computed columns and data import become available only after the cube has been published.
-
 
 ## Example JSON file
 
@@ -158,7 +158,6 @@ Here’s a valid example of a cube definition JSON file that can be imported thr
   ]
 }
 ```
----
 
 ## Known limitations (Preview)
 
@@ -171,18 +170,10 @@ These changes are applied at the Dataverse level in which the updated structure 
 > [!NOTE]
 > This limitation will be removed in an upcoming release. Future versions of the Data model builder will reflect dimension updates automatically in the Cube (preview) interface.
 
----
-
 ## Next steps
 
 - [Create a cube from Excel (preview)](bpp-create-cubes.md)  
 - [Create a cube from JSON (preview)](bpp-json.md)  
 - [Load data using dataflows](load-data-dataflows.md)  
 - [Create calculated columns](calculated-columns.md)
-
-
-
-
-
-
 
