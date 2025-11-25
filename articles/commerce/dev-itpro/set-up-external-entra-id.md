@@ -90,7 +90,7 @@ Currently, Microsoft Entra External ID only supports one type of flow, which is 
 For information on customizing the default branding in user flows, see [Customize the neutral branding in your external tenant](/entra/external-id/customers/how-to-customize-branding-customers).
 
 > [!NOTE] 
-> Customizing the login screen further currently involves using [Native authentication in Microsoft Entra External ID](/entra/identity-platform/concept-native-authentication). Modules can be built to interact with these APIs directly.
+> Customizing the login screen further currently involves using [Native authentication in Microsoft Entra External ID](/entra/identity-platform/concept-native-authentication). Modules can be built to interact with these APIs directly. [Code Samples](/entra/external-id/customers/samples-ciam-all?tabs=apptype#samples-and-guides). 
 
 To create user flow in External ID, follow these steps:
 
