@@ -4,7 +4,7 @@ description: Learn how to create planning cubes in Business performance planning
 author: twheeloc
 ms.author: romainpham
 ms.topic: how-to
-ms.date: 11/23/2025
+ms.date: 11/25/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 ---
@@ -115,6 +115,7 @@ To workaround this issues, follow these steps:
 - [Create a cube from JSON](bpp-json.md)  
 - [Load data using dataflows](load-data-dataflows.md)  
 - [Create calculated columns](calculated-columns.md)
+
 
 
 
