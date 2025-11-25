@@ -49,6 +49,6 @@ For details about dates and versions for releases, see the [What's new or change
 
 For finance and operations apps, updates to the downloadable virtual hard drive (VHD) are released twice per year, concurrently with the major releases in April and October. Because the VHD is bundled with the latest service update, its release always follows the release of the associated service update for production use. You can expect the VHD update to be released after the generally available (self-update) date of the service update. For finance and operations release dates, see [Targeted release schedule (dates subject to change)](../get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
 
-Use of the VHDs is subject to the [Software license terms](https://go.microsoft.com/fwlink/?linkid=851163).
+Use of the VHDs is subject to the Software license terms.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

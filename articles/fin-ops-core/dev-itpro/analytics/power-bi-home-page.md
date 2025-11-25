@@ -51,7 +51,7 @@ The Shared assets library of LCS provides the following PowerBI.com solutions. C
 The following PowerBI.com solutions are available from [Microsoft AppSource](https://appsource.microsoft.com).
 
 > [!NOTE]
-> These solutions are deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-onappsource).
+> These solutions are deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 - Cost management
 - [Financial performance](financial-performance-power-bi-content-pack.md)

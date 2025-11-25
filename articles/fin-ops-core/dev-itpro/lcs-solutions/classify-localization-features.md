@@ -2,7 +2,7 @@
 title: Classification of localization features
 description: Learn about the difference between regulatory and competitive feature and shows how the feature type is used in the title of the feature.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 11/10/2025
 ms.reviewer: johnmichalak
