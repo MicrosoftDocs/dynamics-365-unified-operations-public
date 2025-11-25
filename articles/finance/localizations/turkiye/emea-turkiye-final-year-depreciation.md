@@ -155,6 +155,8 @@ In contrast, the **Reducing balance (Türkiye)** depreciation method distributes
 
 The next scenario explains how depreciation behaves when **Prorate depreciation** is set to **Yes**, where only the months in service are depreciated in the acquisition year and the remaining amount is carried forward to the final year.
 
+---
+
 ### Scenario – Reducing balance (Türkiye) with prorated depreciation
 
 This scenario demonstrates that when Prorate depreciation is set to **Yes**, the system begins calculating depreciation starting from the month in which the asset is placed in service. 
@@ -162,7 +164,7 @@ This scenario demonstrates that when Prorate depreciation is set to **Yes**, the
 Only the months in service are depreciated in the acquisition year. The depreciation amount that cannot be recognized for the remaining months of that year is included in the final year’s depreciation calculation. 
 The system adds this amount to the regular depreciation for the final year and distributes the combined total evenly across all 12 months, without extending the asset’s depreciation period. 
 
-For detailed information about using prorated depreciation with last year depreciation by month, see [Use prorated depreciation with Reducing balance (Türkiye)](emea-tur-prorated-depreciation.md#use-prorated-depreciation-with-reducing-balance-türkiye).  
+For detailed information about using prorated depreciation with last year depreciation by month, see [Use prorated depreciation with Reducing balance (Türkiye) depreciation method](emea-turkiye-prorated-depreciation.md#use-prorated-depreciation-with-reducing-balance-turkiye-depreciation-method).  
 
 | Parameter | Value | 
 |--------------------|--------------| 
@@ -224,7 +226,7 @@ Follow these steps to configure depreciation parameters for an asset book with t
 > If you select the standard **Straight line service life** depreciation method, prorated depreciation is not applied in the acquisition year.  
 > Use the **Straight line service life (Türkiye)** depreciation method for prorated depreciation correctly across the acquisition and final years.  
 
-For detailed information about using prorated depreciation with last year depreciation by month, see [Use prorated depreciation with Straight line service life (Türkiye)](emea-tur-prorated-depreciation.md#use-prorated-depreciation-with-straight-line-service-life-türkiye).  
+For detailed information about using prorated depreciation with last year depreciation by month, see [Use prorated depreciation with Straight line service life (Türkiye) depreciation method](emea-turkiye-prorated-depreciation.md#use-prorated-depreciation-with-straight-line-service-life-turkiye-depreciation-method).  
 
 ---
 
@@ -264,6 +266,8 @@ The scenario also demonstrates how the final year depreciation amount is adjuste
 > To calculate depreciation correctly across the acquisition and final years, you should use the **Straight line service life (Türkiye)** depreciation method together with the **Prorate depreciation** option set to **Yes**.  
 > When the **Prorate depreciation** option is set to **No**, both the standard **Straight line service life** depreciation method and the localized **Straight line service life (Türkiye)** depreciation method calculate a full year of depreciation for the acquisition year.
 
+---
+
 ### Comparison with standard Straight line service life depreciation method  
 
 | Method                               | Prorate depreciation | Final year calculation                                                                 | Result in monthly postings                           | Example (Year 5) |
@@ -283,4 +287,4 @@ The scenario also demonstrates how the final year depreciation amount is adjuste
 - [Set up fixed asset groups](../../../finance/fixed-assets/tasks/set-up-fixed-asset-groups.md)  
 - [Create a fixed asset](../../../finance/fixed-assets/tasks/create-fixed-asset.md)  
 - [Set up value models](../../../finance/fixed-assets/tasks/set-up-value-models.md)  
-- [Use prorated depreciation on fixed assets](../../../finance/localizations/turkiye/emea-tur-prorated-depreciation.md)  
+- [Use prorated depreciation on fixed assets](../../../finance/localizations/turkiye/emea-turkiye-prorated-depreciation.md)  
