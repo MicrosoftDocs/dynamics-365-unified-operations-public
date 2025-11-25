@@ -4,7 +4,7 @@ description: Learn the recommended practices to improve performance and responsi
 author: twheeloc
 ms.author: romainpham
 ms.topic: overview
-ms.date: 11/23/2025
+ms.date: 11/25/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 
@@ -295,6 +295,7 @@ Always confirm that the filters applied match the intended planning scope before
 - [Reporting visual](reporting-visual.md)  
 - [Comments visual](comments-visual.md)  
 - [Write-back and allocation in Business performance planning](write-back.md)
+
 
 
 
