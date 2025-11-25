@@ -4,7 +4,7 @@ description: Learn how to migrate to unified pricing management in Microsoft Dyn
 author: johnmichalak
 ms.author: johnmichalak
 ms.reviewer: johnmichalak
-ms.date: 10/27/2025
+ms.date: 11/25/2025
 ms.topic: how-to
 ms.custom: 
   - bap-template
