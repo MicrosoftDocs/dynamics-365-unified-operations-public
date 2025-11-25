@@ -4714,6 +4714,24 @@
                   items:
                     - name: Audit dimensions
                       href: business-performance-planning/dimensions-audit.md
+            - name: Cubes (preview)
+              items:
+                - name: Cubes
+                  href: business-performance-planning/bpp-create-cubes.md
+                - name: Create a cube from existing dimensions
+                  href: business-performance-planning/BPP-cub-dim.md
+                - name: Create a cube from Excel
+                  href: business-performance-planning/bpp-cube-Excel.md
+                - name: Create a cube from JSON
+                  href: business-performance-planning/bpp-json.md
+                - name: Write-back to budget register entries
+                  items:
+                    - name: Set up user roles for write-back
+                      href: business-performance-planning/bpp-bud-reg-user.md
+                    - name: Configure the connection for write-back
+                      href: business-performance-planning/BPP-connect-Budget.md
+                    - name: Write-back to budget register entry
+                      href: business-performance-planning/bpp-bud-reg-write.md                  
             - name: Cubes
               items:
                 - name: Creating cubes
@@ -4734,8 +4752,12 @@
               items:
                 - name: Overview
                   href: business-performance-planning/bpp-customs-visual-overview.md
-                - name: Matrix
-                  href: business-performance-planning/matrix-planning.md
+                - name: Matrix planning
+                  href: business-performance-planning/bpp-matrix-plan-visual.md
+                - name: Matrix planning troubleshooting
+                  href: business-performance-planning/bpp-matrix-trouble.md
+                - name: Matrix planning visual performance  
+                  href: business-performance-planning/matrix-planning-visual.md                  
                 - name: Graphical planning
                   href: business-performance-planning/graphical-planning.md
                 - name: Reporting
