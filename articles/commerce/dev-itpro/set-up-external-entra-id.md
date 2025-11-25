@@ -87,7 +87,10 @@ User flows are the policies Microsoft Entra External ID uses to provide secure s
 
 Currently, Microsoft Entra External ID only supports one type of flow, which is used for sign in, sign up, and password reset.
 
-For information on customizing the default branding in user flows, see [Customize the neutral branding in your external tenant](/entra/external-id/customers/how-to-customize-branding-customers).
+For information on customizing the default branding in user flows, see [Customize the neutral branding in your external tenant](https://learn.microsoft.com/entra/external-id/customers/how-to-customize-branding-customers).
+
+> [!NOTE] 
+> Customizing the login screen further currently involves using [Native authentication in Microsoft Entra External ID](https://learn.microsoft.com/entra/identity-platform/concept-native-authentication). Modules can be built to interact with these APIs directly.
 
 To create user flow in External ID, follow these steps:
 
