@@ -814,7 +814,7 @@
           href: ../supply-chain/unified-pricing-management/upm-pricing-management-overview.md?context=/dynamics365/context/commerce
         - name: Turn on the Unified pricing management module for your system
           href: ../supply-chain/unified-pricing-management/upm-pricing-management-enable.md?context=/dynamics365/context/commerce
-        - name: Migrate to unified pricing management
+        - name: Migrate to unified pricing management (preview)
           href: unified-pricing-management.md
         - name: Price attributes
           items:
