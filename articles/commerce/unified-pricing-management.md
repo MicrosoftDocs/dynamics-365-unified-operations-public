@@ -49,12 +49,12 @@ To migrate to UPM, follow these steps.
 
 1. In Dynamics 365 Commerce headquarters, go to the **Feature Management** workspace at **System administration \> Workspaces \> Feature management**.
 1. Search for the **Unified pricing management pricing rule performance and enhancement** feature.
-1. Select the feature, and then select **Enable**.
+1. Select the feature, then select **Enable**.
 
     > [!NOTE]
     > When you enable the feature, you unlock the migration options to migrate from the Commerce pricing engine to UPM.
 
-1. Go to **Retail and Commerce \> Migration \> Set up Price group mapping for migration**. You'll see the following:
+1. Go to **Retail and Commerce \> Migration \> Set up Price group mapping for migration**. You see the following options:
 
     - The system automatically converts all existing Commerce price groups to UPM price groups.  
     - Each new group keeps the same price group conditions as its legacy configuration. 
