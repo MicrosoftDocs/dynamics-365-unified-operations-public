@@ -59,7 +59,7 @@ You must run inventory closing before making any modifications in an item's *ite
 
 ### What is inventory pre-closing?
 
-Pre-closing replaces the *activate closing of non-financial transfer* functionality that was available in older versions of Supply Chain Management. Pre-closing finalizes non-financial transfers; this allows the inventory closing process to safely ignore them, since closing and recalculation only affect financial transactions. *Non-financial transfers* are inventory transactions that have no effect on inventory costing, like inventory movement journal between two warehouses in the same site if warehouse isn't a financial dimension. You can explicitly run pre-closing if required as per the business requirements. Moreover, the closing and recalculation procedure always implicitly runs pre-closing.
+Pre-closing replaces the *activate closing of non-financial transfer* functionality that was available in older versions of Supply Chain Management. Pre-closing finalizes non-financial transfers; this allows the inventory closing process to safely ignore them, since closing and recalculation only affect financial transactions. *Non-financial transfers* are inventory transactions that have no effect on inventory costing, like inventory movement journal between two warehouses in the same site if warehouse isn't a financial dimension. You can explicitly run pre-closing if required as per the business requirements. Moreover, the closing and recalculation procedure always implicitly runs pre-closing for the non-financial transfers (among the transfer orders) against which markings are present.
 
 ### What is inventory reversal? How is it different from cancelling a closing?
 
@@ -219,6 +219,50 @@ When you create a return that relates to a sales order, the system copies the va
 For a return of a standard cost item that relates to a sales order, the system uses the standard cost from the time of the original sales order, even if a new standard cost is active for the item.
 
 When you create a return that doesn't relate to a sales order, the system sets the **Return cost price** field to the active item price that you have for the item in the site that you're creating the return order for. If you don't have an active cost price in a costing version for the item, the value is 0 (zero). If you leave the value as 0 (zero), you receive a warning that states that the return lot ID or return cost price isn't specified.
+
+### Why are my inventory transactions posted at a different cost price?
+
+Please note that issue transactions are always posted at the running average cost, and the receipt transactions are posted at the cost specified during posting the document line, or the latest activated cost price. 
+
+The system estimates this running average cost price for an item by using the following formula: 
+
+Estimated price = (Physical amount + Financial amount) ÷ (Physical quantity + Financial quantity) 
+
+If the “Include physical value” option isn't selected for an item in its Item Model Group, the system uses 0 (zero) for both the physical amount and the physical quantity. 
+
+For more understanding, [this](./cost-management/running-average-cost-price) can be referred.
+
+### Why is item cost inflated? 
+
+Pricing several inventory issue transactions having enough receipt transactions can cause estimates of the running average cost to be inflated. This is normally observed when “Include physical value” is enabled in conjunction to the enablement of “Negative physical inventory” in the Item model group. If “Include physical value” is disabled but this issue is still observed, please check whether “Negative financial inventory” is enabled. 
+
+Please refer [this](./cost-management/running-average-cost-price#avoiding-pricing-amplification) for more details.
+
+### Why does the cost change after running inventory closing or recalculation? 
+
+Inventory closing or recalculation is meant to adjust the on-hand and inventory transactions. Hence, post these operations, it is expected that the cost adjusted/settled would modify resultant cost of the inventory transactions. 
+
+### Why are already closed inventory transactions being reopened and adjusted again? 
+
+This behavior is by design and might be observed for items using Weighted Average (Date) as the valuation model.  
+
+As per the design of carrying out settlements/adjustments through inventory closing/recalculation, a summarized transaction is created each for all issues and receipts separately, and these summarized transactions settle/adjust issues to receipts. Now, post-closing, if any manual adjustment is posted to any inventory transaction which was involved in any of the previous summarized transactions, and a fresh closing/recalculation is executed, then correspondingly all the inventory transactions which made up the summarized transaction contributing to the settlement/adjustment process, would be reopened and re-settled/re-adjusted. 
+
+### I am getting abnormal inventory costs reported for an item. How can we use the system to initially check/fix the issue for us?  
+
+Run a consistency check for the relevant item. Go to **System administration** \> **Periodic tasks** \> **Database** \> **Consistency check**. In the **Consistency check** dialog, set **Module** to *Inventory management*, and set **Check/Fix** to *Check* or *Fix error* (depending or your business requirements). Then expand the **Item** tree and select the checkboxes for **Inventory transactions** and **On-hand**. Then open the **More** menu (three dots) and select *Dialog*. Use the dialog to filter for the exact item you want to check. If required, you can run the check as a batch process in the background. You can view the final check/fix logs from the batch job logs or in the notification panel. If the consistency check doesn't highlight or fix any issues, use the **Potential conflicts - inventory and general ledger** and **Inventory value report storage** reports to drill down further into the discrepancies and inventory postings respectively. Once this is completed and if the valuation method for that item is periodic, it would be better to execute closing or recalculation to adjust the valuation and on-hand as per the valuation method.  
+
+### Why does my ledger Trial Balance differ from Inventory Value post execution of closing/recalculation/reverse? 
+
+Normally this issue is resolved after rebuilding the Trial Balance for the corresponding Main Accounts from **General Ledger** \> **Inquiries and reports** \> **Trial Balance**.
+
+Verify whether inventory closing, recalculation or reverse execution has been completed successfully and whether voucher postings are present. Cross check the status of batch job with the voucher execution status. Check the logs in the Closing and Adjustment form for the correponding voucher. Once verified, rebuild the trial balance for the specific account where you are observing the differences. 
+
+If the issue persists, this means there is inconsistency between the general ledger and inventory postings. Try generating potential conflicts report to trace the items resulting in conflicts.  
+
+Next, inventory value report can be generated for those specific items to trace the inconsistent inventory transactions. Consistency check shall be executed for those items for on-hand and inventory transactions to check whether it resolves the data inconsistencies. If the consistency check fix makes any changes to the inventory postings, execute inventory closing again and rebuild the trial balances to check whether the balance matches now.  
+
+In case none of these help, please reach out to Microsoft support or your partner. 
 
 ## Costing sheet and indirect costs
 
@@ -393,7 +437,7 @@ You can create unlimited inventory value report configurations. Evaluate your sp
 
 ### Can I use the inventory value report to analyze the cost of an item in each warehouse?
 
-Yes. You can enable the **View** or **Total** option for each **Warehouse** dimension in the inventory value report configuration. However, the report shows values only for dimensions where the **Financial inventory** option is enabled for the storage dimension group. For other dimensions, it shows blank columns. Learn more in [Inventory value report examples and logic](inventory-value-report-examples.md).
+Yes. You can enable the **View** or **Total** option for each **Warehouse** dimension in the inventory value report configuration. However, the report shows values only for dimensions where the **Financial inventory** option is enabled for the storage dimension group. For other dimensions, it shows blank columns. Learn more in [Inventory value report examples and logic](inventory-value-report-examples.md).
 
 ### How can I view the inventory quantity as of a specific date with the weighted average?
 
