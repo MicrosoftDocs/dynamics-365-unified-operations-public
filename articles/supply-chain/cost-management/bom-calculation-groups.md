@@ -1,8 +1,8 @@
 ---
 title: BOM calculations groups
 description: Learn about calculation groups for bills of materials (BOMs) and how to set them up, including an outline on purposes of BOM calculation groups.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 ms.topic: how-to

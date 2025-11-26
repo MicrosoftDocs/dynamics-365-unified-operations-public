@@ -1,8 +1,8 @@
 ---
 title: Prerequisites for standard costs
 description: Learn about the basic steps for using standard costs, including a step-by-step process for setting up standard costs and additional resources. 
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventStdCostConv, CostingVersion
 ms.topic: how-to
