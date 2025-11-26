@@ -242,7 +242,7 @@ Please refer [this](./cost-management/running-average-cost-price#avoiding-pricin
 
 Inventory closing or recalculation is meant to adjust the on-hand and inventory transactions. Hence, post these operations, it is expected that the cost adjusted/settled would modify resultant cost of the inventory transactions. 
 
-### Why am I finding already closed inventory transactions being reopened and settled/adjusted again? 
+### Why are already closed inventory transactions being reopened and adjusted again? 
 
 This behavior is by design and might be observed for items using Weighted Average (Date) as the valuation model.  
 
