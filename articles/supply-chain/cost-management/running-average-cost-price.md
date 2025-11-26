@@ -48,6 +48,8 @@ The following table shows when the system posts inventory transactions by using 
 > [!NOTE]
 > If the **Include physical value** option isn't selected for an item, the system uses 0 (zero) for both the physical amount and the physical quantity. For information about this option, see [Options for including physical value in cost calculations](include-physical-value.md).
 
+<a name="avoid-pricing-amp"></a>
+
 ## Avoiding pricing amplification
 
 On rare occasions, the system prices several issues before it has enough receipts to base the price on. This scenario can cause estimates of the running average cost price to be overly inflated. However, there are steps that you can take to avoid pricing amplification, or to reduce its impact when it does occur.
