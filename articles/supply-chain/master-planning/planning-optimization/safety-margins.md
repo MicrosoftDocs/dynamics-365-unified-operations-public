@@ -159,3 +159,7 @@ This situation usually occurs when you sell an item with an issue margin from a 
 - **If on-hand supply exists in WH13** – On WH11, the system applies the margin between the sales order date and the transfer order receipt date. However, on WH13, the date of the transfer order shipment is the same as the receipt date because there's on-hand supply, so the system doesn't apply any issue margin.
 
 - **If on-hand supply doesn't exist in WH13** – If there's no on-hand supply, and WH13 is to be replenished by other means (such as a purchase order), then the system applies the issue margin between the transfer order receipt date and the purchase order receipt date.
+
+## Related information
+
+- [Create a working time calendar](../../../human-resources/hr-leave-and-absence-working-time-calendar.md)

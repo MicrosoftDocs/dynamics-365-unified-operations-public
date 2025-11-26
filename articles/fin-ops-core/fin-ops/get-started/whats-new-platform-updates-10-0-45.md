@@ -3,7 +3,7 @@ title: Platform updates for version 10.0.45 of finance and operations apps (Sept
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.45 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
-ms.date: 09/15/2025
+ms.date: 11/21/2025
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -59,4 +59,4 @@ The [Removed or deprecated platform features](../../fin-ops/get-started/removed-
 
 Deprecation notices appear in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before any feature is removed.
 
-For breaking changes that affect only compilation time, but are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. These changes are functional updates that must be made to the compiler.
+For breaking changes that affect only compilation time, but are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. These changes are functional updates that you must make to the compiler.

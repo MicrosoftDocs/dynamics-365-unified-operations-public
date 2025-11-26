@@ -1,8 +1,8 @@
 ---
 title: Options for including physical value in cost calculations
 description: Learn how to use the "Include physical value" and "Include physical value in weighted average recalculation" options for cost calculations.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventModelGroup
 ms.topic: how-to

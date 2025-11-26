@@ -1,8 +1,8 @@
 ---
 title: Container activities entity
 description: Learn about container activities, which are used to track the progress of shipping containers with a table that defines various names. 
-author: prasungoel 
-ms.author: prasungoel 
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: article
 ms.date: 05/27/2022
 ms.reviewer: kamaybac
