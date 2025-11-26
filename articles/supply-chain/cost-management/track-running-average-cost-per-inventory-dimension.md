@@ -1,8 +1,8 @@
 ---
 title: Track running average cost per inventory dimension
 description: The running average cost price of an item is calculated based on the selected inventory dimensions that are being tracked financially.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventOnhandItem
 ms.topic: how-to

@@ -1,8 +1,8 @@
 ---
 title: Get started with Global Inventory Accounting
 description: Learn how to get started with Global Inventory Accounting, including an outline on how to get the Global Inventory Accounting add-in.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to

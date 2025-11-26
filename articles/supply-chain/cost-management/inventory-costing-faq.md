@@ -1,7 +1,7 @@
 ---
 title: Inventory costing FAQ
 description: Access answers some frequently asked questions about inventory costing in Microsoft Dynamics 365 Supply Chain Management.
-author: aevengir
+author: AndersEvenGirke
 ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
@@ -234,7 +234,7 @@ Learn more in [Running average cost price](running-average-cost-price.md)
 
 ### Why is item cost inflated?
 
-The running average cost can be inflated when you price several inventory issue transactions that don't have enough receipt transactions. This issue can occur when you enable both **Include physical value** for the item and **Negative physical inventory** for the item model group. If you disable **Include physical value** but still see this issue, check whether **Negative financial inventory** is enabled for the item model group.
+The running average cost can be inflated when you price several inventory issue transactions that don't have enough receipt transactions. This issue can occur when you enable both **Include physical value** and **Physical negative inventory** for the item model group. If you disable **Include physical value** but still see this issue, make sure that you have also disabled **Physical negative inventory** for the item model group.
 
 Learn more in [Avoiding pricing amplification](running-average-cost-price.md#avoid-pricing-amp).
 

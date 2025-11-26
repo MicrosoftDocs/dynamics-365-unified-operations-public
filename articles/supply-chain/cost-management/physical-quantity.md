@@ -1,8 +1,8 @@
 ---
 title: Inventory object values
 description: Learn about how the values of an inventory object are calculated, including a table that outlines various aspects of object types. 
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventCostOnhandItem
 ms.topic: article
