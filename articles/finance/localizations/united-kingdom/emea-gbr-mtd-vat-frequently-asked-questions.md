@@ -14,7 +14,9 @@ ms.search.validFrom: 2025-03-25
 
 # Frequently Asked Questions: Making Tax Digital (MTD) VAT return integration
 
-This section provides answers to frequently asked questions about Making Tax Digital (MTD) – VAT return integration in Dynamics 365 Finance. It helps organizations, partners, and customers resolve common configuration and operational issues when working with the MTD VAT integration feature. The guidance covers setup requirements, security enhancements, troubleshooting submission errors, and best practices for compliance with HMRC standards.
+[!include [banner](../../includes/banner.md)]
+
+This section provides answers to frequently asked questions about Making Tax Digital (MTD) – VAT return integration in Microsoft Dynamics 365 Finance. It helps organizations, partners, and customers resolve common configuration and operational issues when working with the MTD VAT integration feature. The guidance covers setup requirements, security enhancements, troubleshooting submission errors, and best practices for compliance with HMRC standards.
 Use this FAQ as a quick reference when:
 
 - Enabling or configuring the MTD VAT integration feature.
@@ -94,7 +96,8 @@ For more information, see [Create a sandbox application in the HMRC Developer Hu
 
 The **Sales tax payments** table is the source of **Message items** for UK MTD VAT feature when you select the **Collect data** button on the **Electronic messages** page. If the expected **Sales tax payment** record isn't collected, it could mean that it's already linked to another electronic message.
 
-To check this issue, follow these steps.
+To check this issue, follow these steps:
+
 1. Go to **Tax** > **Electronic messages** > **Electronic message items**.
 1. Locate the corresponding **Sales tax payment** record in the list of message items.
 1. Review the status of the **Electronic message item** line and act accordingly. If it was incorrectly linked to another electronic message, you can delete that **Electronic message item** line. This action allows you to add the line again to the new electronic message.
@@ -113,3 +116,5 @@ make sure you're using the following version ER configurations:
 - MTD VAT web request headers format (UK), version 46.**47**, under the Electronic Messages framework model
 - MTD VAT return response importing JSON (UK), version 46.**13**, under the Electronic Messages framework model
 - MTD VAT interoperation (UK), version 31.**10**, under the Tax declaration model
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
