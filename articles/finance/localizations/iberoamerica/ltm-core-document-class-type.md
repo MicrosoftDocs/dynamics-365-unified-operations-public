@@ -18,7 +18,7 @@ You can configure the different types of document classes that your company will
 ## Prerequisites
 
 Before you can configure a document class type, the following prerequisites must be met:
-- The legal entity must have an address in a country within the LATAM localization.
+- The legal entity must have an address in a country/region within the LATAM localization.
 - Both the region-specific LATAM feature and the general feature must be enabled.
 - The prefix length configuration must already be set on the **LATAM Parameters** menu.
 
