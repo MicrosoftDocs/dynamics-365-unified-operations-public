@@ -18,7 +18,7 @@ You can configure the sales point prefixes that some fiscal authorities require 
 ## Prerequisites
 
 Before you set up a sales point prefix record, the following prerequisites must be met:
-- The legal entity must have an address in a country within the LATAM localization.
+- The legal entity must have an address in a country/region within the LATAM localization.
 - Both the region-specific LATAM feature and the general feature must be enabled.
 - Warehouses that will be added to the sales point prefix configuration must already exist.
 
