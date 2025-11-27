@@ -33,7 +33,7 @@ Before you begin the procedures in this article, complete the following prerequi
 
 - The primary address of the legal entity must be in Poland.
 - The legal entity must be registered as a taxpayer in Poland and must have a valid tax identification number (*Numer identyfikacji podatkowej* \[NIP\]).
-- Sign in to the Polish National system for electronic invoicing ([Krajowy System e-Faktur \[KSeF\]](https://ksef.mf.gov.pl/web/)) via a trusted profile, qualified signature, or qualified seal. Obtain the certificate of the **Authentication in KSEF system** type that the Invoicing Service can use to securely communicate with KSeF. For more information, see the video from the Ministry of Finance: [Applying for and Managing Certificates](https://www.youtube.com/watch?v=SE0IHuPHtRE)
+- Sign in to the Polish National system for electronic invoicing ([Krajowy System e-Faktur \[KSeF\]](https://ksef.mf.gov.pl/web/)) via a trusted profile, qualified signature, or qualified seal. Obtain the certificate of the **Authentication in KSeF system** type that the Invoicing Service can use to securely communicate with KSeF. For more information, see the video from the Ministry of Finance: [Applying for and Managing Certificates](https://www.youtube.com/watch?v=SE0IHuPHtRE)
 - Obtain the **public key** (in PEM format) from the appropriate [KSeF environment](https://ksef.mf.gov.pl/). The environment can be of the test, pre-production, or production type.
 - Become familiar with electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
@@ -44,7 +44,7 @@ Create an Azure Key Vault to store the required secrets that are issued for your
 
 Add the following required elements in the key vault:
 
-- The secret for the obtained **certificate**.
+- The certificate for the obtained **KSeF certificate**.
 - The secret for the **client ID**, which must equal the taxpayer's tax identification number (NIP).
 - The secret for the obtained **public key**.
 
