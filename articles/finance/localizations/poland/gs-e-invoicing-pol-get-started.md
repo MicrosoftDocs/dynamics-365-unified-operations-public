@@ -316,7 +316,7 @@ If you use project invoices, follow these steps.
 > [!NOTE]
 > The QR code that's shown on the printouts of invoices represents the URL that takes you to the official portal of the **KSeF** system, where you can find the details of the related electronic invoice.
 > 
-> QR codes are printed only for invoices that were successfully submitted, validated, and accepted by the **KSeF** system.
+> QR codes are printed only for invoices that were successfully submitted, validated, and accepted by the **KSeF** system. Printing of QR codes for **Offline24** mode is not supported in this implementation.
 
 ## Receive incoming electronic invoices
 
