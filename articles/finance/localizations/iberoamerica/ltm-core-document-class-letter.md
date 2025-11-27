@@ -20,7 +20,7 @@ Document classes without a letter configuration are supported. If a document cla
 ## Prerequisites
 
 Before you set up a document class letter record, the following prerequisites must be met:
-- The legal entity must have an address in a country within the LATAM localization.
+- The legal entity must have an address in a country/region within the LATAM localization.
 - Both the region-specific LATAM feature and the general feature must be enabled.
 - The maximum length of the document class letter prefix must be configured on the **LATAM Parameters** page.
 
