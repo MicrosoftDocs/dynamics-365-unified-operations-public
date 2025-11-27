@@ -33,7 +33,7 @@ Before you begin the procedures in this article, complete the following prerequi
 
 - The primary address of the legal entity must be in Poland.
 - The legal entity must be registered as a taxpayer in Poland and must have a valid tax identification number (*Numer identyfikacji podatkowej* \[NIP\]).
-- Sign in to the Polish National system for electronic invoicing ([Krajowy System e-Faktur \[KSeF\]](https://ksef.mf.gov.pl/web/)) via a trusted profile, qualified signature, or qualified seal. Obtain the certificate of the **Authentication in KSEF system** type that the Invoicing Service can use to securely communicate with KSeF.
+- Sign in to the Polish National system for electronic invoicing ([Krajowy System e-Faktur \[KSeF\]](https://ksef.mf.gov.pl/web/)) via a trusted profile, qualified signature, or qualified seal. Obtain the certificate of the **Authentication in KSEF system** type that the Invoicing Service can use to securely communicate with KSeF. For more information, see the video from the Ministry of Finance: [Applying for and Managing Certificates](https://www.youtube.com/watch?v=SE0IHuPHtRE)
 - Obtain the **public key** (in PEM format) from the appropriate [KSeF environment](https://ksef.mf.gov.pl/). The environment can be of the test, pre-production, or production type.
 - Become familiar with electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
@@ -130,11 +130,7 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
     - **PolishImportDataChannel** – enter the [name of the data channel](#ImpChn) that you previously defined.
     - **PolishPublicKey** – select the name of the [public key](#PK) that you previously created.
     - **PolishCertificate** – select the name of the [certificate](#Tok) that you previously created.
-    - !!!!!!!!!!!!!!!!!!!!!
-    - CHANGE or DELETE the screenshot below 
-
-    ![Screenshot that shows the Feature parameters tab configured for the Globalization feature for Poland.](e-inv-pol-feature-parameters.jpg)
-
+   
 1. On the **Setups** tab, in the grid, select the **Import vendor invoices derived** feature setup and select **Edit**.
 1. On the **Applicability rules** tab, in the **Set up applicability rule** section, in the **Value** field, enter the [name of the data channel](#ImpChn) that you previously defined.
 1. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you will use it in later configuration steps.
