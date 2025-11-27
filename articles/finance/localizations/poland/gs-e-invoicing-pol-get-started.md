@@ -301,26 +301,22 @@ To enable QR code printing in invoices, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
 1. Select **Print management**.
-1. Select the **Customer invoice** report, and then, in the **Report format** field, reference the **SalesInvoice.ReportFull\_MY** or **SalesInvoice.ReportSimplified\_MY** layout.
-1. Select the **Free text invoice** report, and then, in the **Report format** field, reference the **FreeTextInvoice.ReportFull\_MY** or **FreeTextInvoice.ReportSimplified\_MY** layout.
+1. Select the **Customer invoice** report, and then, in the **Report format** field, reference the **SalesInvoice.ReportPL** layout.
+1. Select the **Free text invoice** report, and then, in the **Report format** field, reference the **FreeTextInvoice.ReportPL** layout.
+1. Select the **Sales advance invoice** report, and then, in the **Report format** field, reference the **CustAdvanceInvoice.ReportPL** layout.
 
 If you use project invoices, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Project management and accounting** \> **Setup** \> **Forms** \> **Form setup**.
 1. Select **Print management**.
-1. Select the **Project invoices without billing rules** report, and then, in the **Report format** field, reference the **PSAProjInvoice.ReportFull\_MY** or **PSAProjInvoice.ReportSimplified\_MY** layout.
-1. Select the **Project invoices with billing rules** report, and then, in the **Report format** field, reference the **PSAContractLineInvoice.ReportFull\_MY** or **PSAContractLineInvoice.ReportSimplified\_MY** layout.
-
-If you use self invoices, follow these steps.
-
-1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Forms** \> **Form setup**.
-1. Select **Print management**.
-1. Select the **Vendor invoice** report, and then, in the **Report format** field, reference the **VendInvoiceDocument.ReportMY** layout.
+1. Select the **Project invoices without billing rules** report, and then, in the **Report format** field, reference the **PSAProjInvoice.ReportPL** layout.
+1. Select the **Project invoices with billing rules** report, and then, in the **Report format** field, reference the **PSAContractLineInvoice.ReportPL** layout.
+1. Select the **User defined project invoice** report, and then, in the **Report format** field, reference the **PSAManageInvoice.ReportPL** layout.
 
 > [!NOTE]
-> The QR code that's shown on the printouts of invoices represents the URL that takes you to the official portal of **MyInvois** system, where you can find the details of the related electronic invoice.
+> The QR code that's shown on the printouts of invoices represents the URL that takes you to the official portal of the **KSeF** system, where you can find the details of the related electronic invoice.
 > 
-> QR codes are printed only for invoices that were successfully submitted, validated, and accepted by the **MyInvois** system.
+> QR codes are printed only for invoices that were successfully submitted, validated, and accepted by the **KSeF** system.
 
 ## Receive incoming electronic invoices
 
