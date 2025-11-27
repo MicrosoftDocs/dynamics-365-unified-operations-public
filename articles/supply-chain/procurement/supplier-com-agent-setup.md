@@ -46,7 +46,10 @@ Before you can use the Supplier Communications Agent, your system must meet the 
     - Make sure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
         - First, install *Copilot for finance and operations apps* version 1.0.3048.2 or later. If it's already installed, update it to the latest version.
         - Then, install *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03071.1 or later. If it's already installed, update it to the latest version.
-    - The following connectors should be allowed: _Direct Line channels in Copilot Studio_, _Microsoft Copilot Studio_, and _Microsoft Dataverse_. Get detailed instructions in [Configure data policies for agents](/microsoft-copilot-studio/admin-data-loss-prevention) and in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).
+    - Normally, the Microsoft Copilot Studio agents needed for the Supplier Communications Agent to run should be published automatically. But there might be DLP policies on the environment that prevents the publishment of these agents. To check this, navigate to the [Copilot Studio](https://copilotstudio.microsoft.com/). Find your environment and make sure that the following Microsoft Copilot Studio agents are published in that environment:
+        - Supplier Communications Agent - inbound
+        - Supplier Communications Agent - outbound.
+    - If the two agents are not published, follow the guide to [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).
 
 - Optional: If you want the agent to send emails automatically, turn on the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature in Feature management. We recommend that you turn off this feature for sandbox environments, where data such as purchase orders might not be up to date, or vendor email addresses might be missing.
 
