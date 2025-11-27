@@ -21,7 +21,6 @@ Before you can configure a document class type, the following prerequisites must
 - The legal entity must have an address in a country within the LATAM localization.
 - Both the region-specific LATAM feature and the general feature must be enabled.
 - The prefix length configuration must already be set on the **LATAM Parameters** menu.
-- If a **Tax application Id** will be referenced in the document class type configuration, it must already exist.
 
 ## Set up a document class type for Latin America
 
@@ -82,11 +81,17 @@ Before you can configure a document class type, the following prerequisites must
     | Fixed assets | Activate this option to use the document on fixed assets type voucher lines. |
     | Bank         | Activate this option to use the document on bank type voucher lines. |
 
-1. On the **Action Pane**, click in **Tax Application** to configure a fiscal codification for the sales point.
-1. In the **Tax application Id** field, select a value.
-1. In the **Tax application code** field, enter the code given by the fiscal authority to identify the document class type.
+## Add the fiscal codification provided by the fiscal authorities
 
-> [!NOTE]
-> You can use the **User-defined field** (1 to 4) to add additional codifications if needed. 
+You can use the **Tax application** option to add this codification.
+
+1.	Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class type**.
+2.	On the Action Pane, select **Tax application**.
+3.	Select **New** to add a line to the grid.
+4.	In the **Tax application Id.** field, select a value.
+5.	In the **Tax application code** field, enter the code that the fiscal authority uses to identify the document class type.
+6.	Select **Save**.
+
+Learn more in [Tax application for Latin America](ltm-core-tax-application.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
