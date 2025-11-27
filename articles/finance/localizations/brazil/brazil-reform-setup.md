@@ -195,7 +195,7 @@ To set up the Tax group and assign tax codes, follow these steps.
 1. Highlight the tax group record and select values in **Tax codes** to define the relationship between the tax group and the tax codes.
 
 > [!NOTE]
-> Because the new tax reform takes effect in 2026, customers who configure the **Tax group** in advance (for example, in 2025) should add **Header.FromTransitionDate** and **Line.FromTransitionDat**, and set both to **January 1, 2026**, to prevent unexpected errors.
+> Because the new tax reform takes effect in 2026, customers who configure the **Tax group** in advance (for example, in 2025) should add **Header.FromTransactionDate** and **Line.FromTransactionDate**, and set both to **January 1, 2026**, to prevent unexpected errors.
 
 ### Set up the Item Tax group and assign tax codes
 
@@ -208,7 +208,7 @@ To set up the Item Tax group and assign tax codes, follow these steps.
 1. Highlight the tax group record, and select the values in **Tax codes** to define the relationship between the item tax group and the tax codes.
 
 > [!NOTE]
-> Because the new tax reform takes effect in 2026, add **Header.FromTransitionDate** and **Line.FromTransitionDat**, and set both to **January 1, 2026**, if you configure the **Item Tax group** in advance (for example, in 2025) to prevent unexpected errors.
+> Because the new tax reform takes effect in 2026, add **Header.FromTransactionDate** and **Line.FromTransactionDate**, and set both to **January 1, 2026**, if you configure the **Item Tax group** in advance (for example, in 2025) to prevent unexpected errors.
 
 > [!IMPORTANT]
 > To prevent unexpected errors, specify the FromDate for either the tax group or the item tax group. You can optionally configure both.
@@ -232,7 +232,7 @@ To define applicability rules for item tax group, follow these steps.
 1. Input the values in the selected fields.
 
 > [!NOTE]
-> Because the new tax reform takes effect in 2026, add **Header.FromTransitionDate** and **Line.FromTransitionDat**, and set both to **January 1, 2026**, to prevent unexpected errors if you configure the **Item tax group applicability** in advance (for example, in 2025).
+> Because the new tax reform takes effect in 2026, add **Header.FromTransactionDate** and **Line.FromTransactionDate**, and set both to **January 1, 2026**, to prevent unexpected errors if you configure the **Item tax group applicability** in advance (for example, in 2025).
 > 
 > Learn about determination logic in [Sales tax applicability and sales tax group determination logic - Finance](/dynamics365/finance/localizations/global/global-sales-tax-group-determination?context=%2Fdynamics365%2Fcontext%2Ffinance).
 
