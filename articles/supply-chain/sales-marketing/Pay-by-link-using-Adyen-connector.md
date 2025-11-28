@@ -152,13 +152,13 @@ The following example describes a typical end-to-end user experience for a SCM o
 
 - A SCM user helps create an order for a customer over the phone.
 - When the order is ready for payment, navigate to the order header and under the "Price and discount" fast tab, select the Payment and Method of payment for which the configuration "Allow pay by link" was enabled. Additionally, like credit cards, the property "Settlement type" under the "Setup " fast tab might need to set to "None".
-Open the **Manage** tab for the sales order and expand the **Credit card** dropdown. A button named "Create payment link" is displayed. Refer the below image showcasing this button. 
+Open the **Manage** tab for the sales order and expand the **Credit card** dropdown. A button named "Create payment link" is displayed. Refer the below image showcasing this button.
+ ![Create payment link](./media/PBL_SCM.png "Create payment link button for SCM orders")
 
 - The SCM user selects the "Create payment link" button and a form is displayed. This form is used for creating the payment link and has the customer information prepopulated.
-- After the SCM user updates the customer information as needed, the SCM user selects **Create link** to create the payment link. 
-
-> [!NOTE]
-> To send this payment link to the customer, the SCM user can use any communication mechanism available to them on the device where they are using SCM application.
+- After the SCM user updates the customer information as needed, the SCM user selects **Create link** to create the payment link.
+  > [!NOTE]
+  > To send this payment link to the customer, the SCM user can use any communication mechanism available on the device where they are using SCM application.
 
 - If the customer changes their mind or requests more time for making a payment, the SCM user can either cancel the payment link from the payment link dialog, or they can use the **Pay later** button on the payment link dialog, if the functionality is enabled. If the **Pay later** option is used, the order is placed on a hold and the customer can make a payment within the predefined duration to process the order. Otherwise, the system cancels the order.
 - The customer opens the payment link from their phone or computer to complete the payment.
