@@ -16,10 +16,28 @@ audience: Application User
 
 This article provides information about what's new or changed in Business performance analytics.  
 
-## August 2025
+## October 2025
 
->[!Important]
-> To ensure quality, the August release of Business performance analytics is paused and will be available with the 2.5 release.  
+The October release of Business performance analytics version 2.5 and contains the following features.
+
+## Feature enhancements
+
+| Category | Feature | Description |
+|----------|---------|-------------|
+| Transform changes | Optimize O2C Value Chain - SalesPaymentFact | Improve data transformation performance for SalesPaymentFact |
+| Transform changes | Optimize O2C Value Chain - BankStatementFact | Improved performance for O2C transformations |
+| Transform changes | Optimize O2C Value Chain - ReturnAuthorizationFact | Improved performance for O2C transformations |
+| Transform changes | Enable CDS3 implementation for BPA | this would accelerate the data sync process |
+| Transform changes | SalesPaymentMatchedNumberKey and SalesPaymentMatchingNumberKey use identical value in the transform | The correct customer transaction will be related to its corresponding SalesPaymentMatchingFact record |
+| Transform changes | 502 status MEF job led to multiple records and broke flow logic | this will prevent the V2 flow from not working in an edge case |
+| Data model additions and changes | Optimize purchase payment fact joins | Optimize purchase payment fact |
+| Reports changes | Deleted or Canceled Purchase Order Lines Still Appearing in Reports | Customers will now be able to see if the purchase order line has been deleted or not and will be able to adjust the filter to show or hide them |
+| Reports changes | Force full refresh when duplicate is detected on PowerBI Refresh | Improve PBI refresh reliability by adding dataset clear and refresh when duplicates are detected |
+| Other changes | When turning on rls off by default we see that the field for off by default on the filter is not being returned | When the row level security is turned on, upgrade fails due to a null reference error |
+| Other changes | Determine if we should restrict first time setup to adimins or remove the restriction | System admin can now manage users in BPA without being BPA admin |
+| Other changes | Uninstalling BPA does not cleanup temp/FA Tables data | When uninstalling BPA there is as option to remove data |
+
+## August 2025
 
 The August release of Business performance analytics version 2.4 and contains the following features.
 
