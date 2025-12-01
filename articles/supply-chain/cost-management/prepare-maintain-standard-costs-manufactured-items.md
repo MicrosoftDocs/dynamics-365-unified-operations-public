@@ -1,8 +1,8 @@
 ---
 title: Prepare to maintain standard costs for manufactured items
 description: Learn about the steps for preparing to maintain costs for manufactured items, including a step-by-step process for preparing to maintain costs. 
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventStdCostConv 
 ms.topic: how-to

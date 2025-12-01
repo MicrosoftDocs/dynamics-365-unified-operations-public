@@ -22,7 +22,7 @@ ms.custom:
 To prepare your environment for inline sampling, set up the following elements as described in [Enable and configure sample management (preview)](quality-sample-management-admin.md):
 
 - A number sequence for generating sample IDs.
-- Sample life cycle states.
+- Sample lifecycle states.
 - Sample type used for continuous sampling.
 - Sample procedures and sample procedure types.
 - An [item sampling](quality-item-sampling.md) policy set up for continuous sampling. It must have the following settings on the **Sample management** FastTab:
@@ -36,8 +36,9 @@ To prepare your environment for inline sampling, set up the following elements a
 ## Continuous sampling example scenario
 
 This section illustrates how to configure and use continuous sampling. The example assumes the following setup for generating samples and quality orders:
-    - A sample is created for every second license plate that is reported as finished.
-    - A quality order is created for every second sample that is generated.
+
+- A sample is created for every second license plate that is reported as finished.
+- A quality order is created for every second sample that is generated.
 
 To work through a scenario that shows how to set up and use continuous sampling, follow these steps:
 
@@ -65,16 +66,17 @@ To work through a scenario that shows how to set up and use continuous sampling,
     - **Reference type** – Select **Production*.
     - **Item code** – Select *Table*.
     - **Item** – Select the item from the production or batch order you created for this scenario.
-    - **Event type** – Select *Report as finished*
+    - **Event type** – Select *Report as finished*.
     - **Execution** – Select *After*.
     - **Item sampling** – Select the item sampling policy that you created for this exercise.
     - **Test group** – Select the test group that you created for this exercise.
 
 1. Return to the production or batch order that you created for this scenario.
 1. Bring the order into status *Started*.
-1. Report four license plates as finish by following these steps:
+1. Report four license plates as finished by following these steps:
+ 
     1. On the Action Pane, open the **Production order** tab and, from the **Process** group, select **Report as finished**.
-    1. The **Report as finished** dialog opens. Check that the **License plate** dimension is visible in the grid. If it's not visible, select **Inventory** \> **Display dimensions** from the toolbar and then select the **License plate** check box in the **Display dimensions** dialog.
+    1. The **Report as finished** dialog opens. Check that the **License plate** dimension is visible in the grid. If it's not visible, select **Inventory** \> **Display dimensions** from the toolbar and then select the **License plate** checkbox in the **Display dimensions** dialog.
     1. Create four new license plates by following these steps:
         - Right-click on the right side of the **License plate** field. Then select **View details** from the context menu to open the **License plates** page.
         - On the Action Pane, select **New** to create a new license plate.
@@ -89,5 +91,5 @@ To work through a scenario that shows how to set up and use continuous sampling,
     1. Complete three more report-as-finished operations for this production order—one for each of the remaining three license plates. Make sure to set the **Good quantity** field to *20* for each license plate.
     1. Verify that two samples and one quality order were created by following these steps:
         - On the Action Pane, open the **View** tab and, from the **Manage quality** group, select **Sample management workbench**.
-        - Verify that two samples were created for separate license plates, and that these license plates are blocked according their default inventory status. Learn more about configuring the default item status in [Enable and configure sample management](quality-sample-management-admin.md). <!-- KFM: Where do we check these? On the **Dimensions** tab? Status shows available, so I tried to set a default status that blocks, But the system doesn't let me set a default status that blocks (see comment in admin topic). -->
+        - Verify that two samples were created for separate license plates, and that these license plates are blocked according to their default inventory status. Learn more about configuring the default item status in [Enable and configure sample management](quality-sample-management-admin.md). <!-- KFM: Where do we check these? On the **Dimensions** tab? Status shows available, so I tried to set a default status that blocks, But the system doesn't let me set a default status that blocks (see comment in admin topic). -->
         - Select the last sample and open the **References** tab in the bottom section to confirm that the sample has an associated **Quality order**.

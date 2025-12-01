@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/finance/accounts-payable/project-invoicing.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-invoicing",
+      "redirect_document_id": "false"  
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/archive-invent-doc.md",
       "redirect_url": "/dynamics365/fin-ops-core/fin-ops/",
       "redirect_document_id": "false"  
@@ -28508,4 +28513,5 @@
   ]
 
 }
+
 
