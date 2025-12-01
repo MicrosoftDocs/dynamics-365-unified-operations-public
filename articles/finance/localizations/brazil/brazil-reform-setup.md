@@ -4,7 +4,7 @@ description: Learn about the steps to set up Brazilian tax reform within scope o
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 12/01/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -71,7 +71,7 @@ Configuration files for e-invoicing:
 
 ## Import the configuration files for tax calculation and e-invoicing
 
-Once you’ve downloaded the files, import the configuration files into the system.
+After you download the files, import the configuration files into the system.
 
 ### Import the configuration files for tax calculation
 
@@ -81,8 +81,8 @@ To import tax calculation configuration files, follow these steps.
 1. Select the **Tax configurations** tile.
 1. On **Configurations**, select **Exchange**.
 1. Select the **Load from XML file** option.
-1. Select a file using the **Browse** button.
-1. Upload all files in sequence, and then go to step 7.
+1. Select a file by using the **Browse** button.
+1. Upload all files in sequence, then go to step 7.
 1. Return to the **Configurations** page. Select **FNO Model Mapping** under **Tax Calculation Data Model**. Set **Default for model mapping** to **YES**.
 1. Return to the **Configurations** page. Select **FNO Model Mapping(Brazil)** under **FNO Model Mapping**. Set **Default for model mapping** to **YES**.
  
@@ -105,7 +105,7 @@ To import tax calculation configuration files, follow these steps.
 > 1. Select **Synchronize**.
 > 1. Return to the previous steps to continue.
     
-### Import the configuration files For e-invoicing
+### Import the configuration files for e-invoicing
 
 To import e-invoicing configuration files, follow these steps.
 
@@ -147,7 +147,7 @@ To create the tax calculation feature, follow these steps.
 To configure the created feature, follow these steps.
 
 1. After you create the feature, on the right side of the page, select the **Versions** tab.
-1. Select the version with status **Draft**, and then select **Edit** to configure the feature.
+1. Select the version with status **Draft**, then select **Edit** to configure the feature.
 
 > [!NOTE]
 > If you don't see **Edit**, select **the three dots** because screen resolution might hide the option.
@@ -178,9 +178,9 @@ To set up Tax codes for new tax types (CBS/IBS), follow these steps.
 1. Go to the **Rate** FastTab. Enter values for all related fields (for example, **Tax Rate**).
 
 > [!NOTE]
-> Tax codes created here in advanced tax engine can be synchronized in **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax codes** form once the feature is enabled in the parameter.
+> Tax codes that you create here in advanced tax engine can be synchronized in **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax codes** form once the feature is enabled in the parameter.
 > 
-> **Settlement period** and **Ledger posting group** in tax codes aren't specified. You are prompted to define them when enabling the feature in Advanced tax calculation engine in the tax parameter.
+> You don't specify **Settlement period** and **Ledger posting group** in tax codes. You're prompted to define them when enabling the feature in Advanced tax calculation engine in the tax parameter.
 > 
 > Learn more about the synchronization between advanced tax engine and legacy system in [Sync the tax setup from the Tax Calculation feature to Dynamics 365 Finance](/dynamics365/finance/localizations/global/global-master-data-sync-tax-calculation-service-finance).
 
@@ -203,7 +203,7 @@ To set up the Item Tax group and assign tax codes, follow these steps.
 
 1. Go to the **Tax codes and groups** FastTab. On the **Item Tax group** tab, select **Manage columns**.
 1. Select the relevant columns to define the elements of the item tax groups definition (for example, TransactionDate on header and line).
-1. Move them by using the right arrow, and confirm with **OK**.
+1. Use the right arrow to move the columns, and select **OK**.
 1. Select **Add**, and enter values in **Lines.Item Tax group** and other selected fields through **Manage columns**.
 1. Highlight the tax group record, and select the values in **Tax codes** to define the relationship between the item tax group and the tax codes.
 
@@ -219,7 +219,7 @@ To define applicability rules for Tax group, follow these steps.
 
 1. Go to the **Applicability rules** FastTab. On the **Tax group applicability** tab, select **Manage columns**.
 1. Select relevant columns to define the elements of the applicability rules used to determine the **tax group** (for example, Business process, CFOP code, Ship to City, Fiscal establishment, and Fiscal classification code).
-1. Move them by using the right arrow, and confirm with **OK**.
+1. Use the right arrow to move the columns, and select **OK**.
 1. Enter the values in the selected fields.
 
 ### Define applicability rules for item tax group
@@ -228,8 +228,8 @@ To define applicability rules for item tax group, follow these steps.
 
 1. Go to the **Applicability rules** FastTab. On the **Item tax group applicability** tab, select **Manage columns**.
 1. Select relevant columns to define the elements of the applicability rules used to determine the **item tax group** (for example, Business process, CFOP code, Ship to City, Fiscal establishment, and Fiscal classification code).
-1. Move them by using the right arrow and confirm with **OK**.
-1. Input the values in the selected fields.
+1. Use the right arrow to move the columns and select **OK**.
+1. Enter the values in the selected fields.
 
 > [!NOTE]
 > Because the new tax reform takes effect in 2026, add **Header.FromTransactionDate** and **Line.FromTransactionDate**, and set both to **January 1, 2026**, to prevent unexpected errors if you configure the **Item tax group applicability** in advance (for example, in 2025).
@@ -238,12 +238,12 @@ To define applicability rules for item tax group, follow these steps.
 
 ### Complete and change status
 
-After completing all configuration steps, such as tax codes, tax groups, item tax groups, and rules, change the status of current version from **Draft** to **Completed**.
+After you complete all configuration steps, such as setting up tax codes, tax groups, item tax groups, and rules, change the status of the current version from **Draft** to **Completed**.
 
-To complete and change status, follow these steps.
+To complete and change the status, follow these steps.
 
 1. Go to **Workspace** \> **Globalization Studio** \> **Tax calculation**.
-1. On the Tax calculation feature form, highlight the current version.
+1. On the Tax calculation feature form, select the current version.
 1. Select **Change status**, then select **Complete**.
 
 ## Enable advanced tax calculation
@@ -263,7 +263,7 @@ To enable advanced tax calculation, follow these steps.
 1. The **Business process** field is inactive.
 
 > [!TIP]
-> For creating , configuring and enabling the tax calculation feature, refer to the Brazil tax reform: Configuring video.
+> For creating, configuring, and enabling the tax calculation feature, refer to the Brazil tax reform: Configuring video.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=cc8feb98-d26a-4c07-bc14-015648a1a360)
 
@@ -276,10 +276,10 @@ To enable advanced tax calculation, follow these steps.
 
 ## Related set up information
 
-- **Sales tax authorities**: Learn more avout Sales tax authorities in [Set up sales tax authorities](/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-authorities).
-- **Ledger posting groups**: Learn more about Ledger posting groups in [Set up Ledger posting groups for sales tax](/dynamics365/finance/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax).
-- **Settlement periods**: Learn more about Settlement periods in [Set up sales tax settlement periods](/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-settlement-periods).
+- **Sales tax authorities**: Learn more about sales tax authorities in [Set up sales tax authorities](/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-authorities).
+- **Ledger posting groups**: Learn more about ledger posting groups in [Set up Ledger posting groups for sales tax](/dynamics365/finance/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax).
+- **Settlement periods**: Learn more about settlement periods in [Set up sales tax settlement periods](/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-settlement-periods).
 - **Import configuration**: Learn more about importing the configuration files in the video [Brazil tax reform : Import configuration](https://learn-video.azurefd.net/vod/player?id=379f59fe-54cf-40f4-af7e-3fe7c09cc082)
-- **Configuring** : Learn more about creating, configuring and enabling tax calculation feature in the video [Brazil tax reform: Configuring](https://learn-video.azurefd.net/vod/player?id=cc8feb98-d26a-4c07-bc14-015648a1a360)
+- **Configuring** : Learn more about creating, configuring, and enabling tax calculation feature in the video [Brazil tax reform: Configuring](https://learn-video.azurefd.net/vod/player?id=cc8feb98-d26a-4c07-bc14-015648a1a360)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
