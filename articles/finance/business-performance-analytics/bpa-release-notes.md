@@ -20,7 +20,7 @@ This article provides information about what's new or changed in Business perfor
 
 The October release of Business performance analytics version 2.5 and contains the following features.
 
-## Feature enhancements
+### Feature enhancements
 
 | Category | Feature | Description |
 |----------|---------|-------------|
