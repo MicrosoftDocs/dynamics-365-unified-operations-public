@@ -2122,20 +2122,20 @@
                          href: localizations/brazil/brazil-reform-calculation-free-text-invoice.md                        
                        - name: Calculation in Purchase requisition in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-purchase-requisition.md
-                       - name: Calculation in Purchase requisition for quotation (RFQ)in Brazil Reformed Tax
-                         href: localizations/brazil/brazil-reform-calculation-requisition-for-quotation.md         
+                       - name: Calculation in Purchase request for quotation (RFQ)in Brazil Reformed Tax
+                         href: localizations/brazil/brazil-reform-calculation-request-for-quotation.md         
                        - name: Calculation in Purchase order in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-purchase-order.md
                        - name: Calculation in Vendor invoice journal in Brazil Reformed Tax
-                         href: localizations/brazil/brazil-reform-calculation-vendor-invoice-journal.md‎
+                         href: localizations/brazil/brazil-reform-calculation-vendor-invoice-journal.md
                        - name: Calculation in transfer order in Brazil Reformed Tax
-                         href: localizations/brazil/brazil-reform-calculation-transfer-order.md‎
+                         href: localizations/brazil/brazil-reform-calculation-transfer-order.md
                        - name: Calculation in Project in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-project.md
                        - name: Calculation in Project quotation in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-project-quotation.md                       
                        - name: Calculation in General journal in Brazil Reformed Tax
-                         href: localizations/brazil/brazil-reform-calculation-general-journal.md‎  
+                         href: localizations/brazil/brazil-reform-calculation-general-journal.md
 
                     - name: Fiscal books
                       items:
