@@ -82,6 +82,9 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.46 PQU-7 | July 22, 2026 | July 27, 2026 to August 29, 2026| Not Started |
 | 10.0.46 PQU-8 | August 21, 2026 | August 31, 2026 to October 3, 2026| Not Started |
 
+> [!IMPORTANT]
+> The PQU schedule for updates 10.0.47, 10.0.48, and 10.0.49 will be published on January 15, 2025.
+
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 > Canceled* - PQU will occur only on Station-1. Releases for other stations have been canceled due to the holiday deployment freeze, and the build will be available for manual uptake.
