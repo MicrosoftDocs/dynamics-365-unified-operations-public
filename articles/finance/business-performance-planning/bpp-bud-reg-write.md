@@ -11,8 +11,6 @@ ms.search.region: Global
 ms.search.validFrom: 2023-12-03
 ms.search.form: 
 ms.dyn365.ops.version: 
-
-
 ---
 
 # Write-back to Dynamics 365 Finance budget register entry
@@ -21,18 +19,18 @@ ms.dyn365.ops.version:
 
 ## Overview
 
-The **Write-back to budget register entry** feature enables organizations to export finalized budgets and forecasts from Business performance planning into Dynamics 365 Finance.
+The **Write back to budget register entry** feature enables organizations to export finalized budgets and forecasts from Business performance planning into Dynamics 365 Finance.
 
 This integration ensures that budgets created in Business performance planning are validated and recorded in the budget register entry tables of Dynamics 365 Finance. It preserves governance and compliance while eliminating manual uploads or data transformation steps.
 
 With this capability, finance teams can:
 
-- Write-back budgets and forecasts at the same level of detail defined in their **Budget Model** in Dynamics 365 Finance.
+- Write back budgets and forecasts at the same level of detail defined in their **Budget Model** in Dynamics 365 Finance.
 - Maintain full schema validation, ensuring field alignment and dimensional accuracy.
 - Automate data transfer between **Power BI–based planning** and **ERP governance**.
 
 > [!NOTE]
-> The **Write-back to budget register entry** feature is available as part of the **Business performance planning app version 1.14 (November 2025 release)**.  
+> The **Write back to budget register entry** feature is available as part of the **Business performance planning app version 1.14 (November 2025 release)**.  
 > You can access this capability within the new Data model builder experience, under the **Cube (preview)** page. It's only available for cubes created using the **Cube (preview)**.
 
 ## Prerequisites
@@ -58,12 +56,12 @@ The user who installs or updates the app, as well as the user designated as the 
 #### Default flow ownership behavior
 
 By default, the user who installs or updates the Business performance planning app automatically becomes the default owner of all Power Automate flows related to the budget register entry export process.  
-This default ownership means that:
+This behavior means that:
 
-- Their **Dataverse connection** is used by default for all flows.  
-- Their current access level to the **Finance virtual entities** is inherited during installation.  
+- All flows use their **Dataverse connection** by default.  
+- The installation process inherits their current access level to the **Finance virtual entities**.  
 
-If this installer user doesn’t have the correct Finance roles or connections, the export might fail. In such cases, reassign ownership of the flows to a user with the required Finance privileges (typically the Business performance planning administrator or flow owner).
+If this installer user doesn't have the correct Finance roles or connections, the export fails. In such cases, reassign ownership of the flows to a user with the required Finance privileges (typically the Business performance planning administrator or flow owner).
 
 #### Required roles and duties in Dynamics 365 Finance
 
@@ -83,7 +81,7 @@ Consider the following scenario:
 - **User A – IT Administrator**  
   - Installs or updates Business performance planning in the environment.  
   - Automatically becomes the default flow owner after installation.  
-  - Doesn't have any Dynamics 365 Finance security roles and doesn’t want to be assigned them.  
+  - Doesn't have any Dynamics 365 Finance security roles and doesn't want to be assigned them.  
 
 - **User B – Business performance planning Administrator**  
   - Responsible for maintaining the Power Automate workflows and managing exports.  
@@ -99,7 +97,7 @@ Consider the following scenario:
 In this setup:
 
 - **User B** must open Power Automate, Dynamics 365 Finance extended planning and analysis workflows, and reassign ownership of all budget register entry related flows: **BREExportFromDataverseToFnO**, **CountTotalCubeRows**, and **BREExportFnOStatusUpdate**.  
-- When taking ownership, **User B** must reconnect both Dataverse and Dynamics 365 Finance connections using their own credentials (the credentials that have the required roles).  
+- When taking ownership, **User B** must reconnect both Dataverse and Dynamics 365 Finance connections by using their own credentials (the credentials that have the required roles).  
 - Any export triggered by any user creates budget register entry records under User B’s Dynamics 365 Finance account, as the export runs in their context.
 
 #### Summary of role and ownership requirements
@@ -111,9 +109,9 @@ In this setup:
 | End user (Export Trigger) | User C | Data management operations user | Initiates exports from the Business performance planning app. The export runs under the flow owner’s context. |
 
 > [!TIP]  
-> If export fails with the **No permission to execute Finance operation** error, verify that the flow owner (for example, User B) has both required roles and that all Power Automate flows are owned and connected under their account.
+> If the export fails with the **No permission to execute Finance operation** error, verify that the flow owner (for example, User B) has both required roles and that all Power Automate flows are owned and connected under their account.
 
-For more information, see [Set up Dynamics 365 Finance user roles for budget register entry write-back](bpp-bud-reg-user.md).
+For more information, see [Set up Dynamics 365 Finance user roles for budget register entry write-back](bpp-bud-reg-user.md)
 
 ### Dynamics 365 Finance connection and virtual entities
 
@@ -208,14 +206,14 @@ A sliding configuration pane opens. This pane guides you through setting up the 
 
 ### Map your fields
 
-After selecting the Budget model, the **Mapping parameters** section displays all mandatory fields required by Dynamics 365 Finance, such as:
+After you select the Budget model, the **Mapping parameters** section displays all mandatory fields required by Dynamics 365 Finance, such as:
 
 - Financial dimensions (for example, Main account, Department, Cost center, Business unit)  
 - Date (needs to be mapped with a column Date type)
 - Amount 
 - Currency (optional)
 
-Map each of these fields to the corresponding columns from your planning cube. You must resolve any unmapped required fields.
+Map each of these fields to the corresponding columns from your planning cube. The system highlights any unmapped required field until you resolve it.
 
 > [!NOTE]
 > The planning cube in Business performance planning can contain data at a different or lower granularity than the budget model defined in Dynamics 365 Finance.  
@@ -226,7 +224,7 @@ Map each of these fields to the corresponding columns from your planning cube. Y
 Optionally, define filters to limit which lines are included in the export. For example, you can filter by department, period, or scenario to focus on a specific subset of data.
 
 >[!NOTE]
-> Currently, you can't filter on Linked columns from Column link dimensions. For example, if you want to filter scenarios where the status is approved, and that status value comes from a linked column, you can't use the Status linked column as a filter criterion.
+> Currently, filtering on Linked columns from Column link dimensions isn't supported. For example, if you want to filter scenarios where the status is approved, and that status value comes from a linked column, you can't use the Status linked column as a filter criterion.
 
 ### Export to Dynamics 365 Finance
 

@@ -1,8 +1,8 @@
 ---
 title: Restrictions on costing versions for standard costs
 description: Learn about the restrictions that apply to a costing version for standard costs, including an outline on restrictions that help guarantee adherence to principles.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: CostingVersion
 ms.topic: how-to

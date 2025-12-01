@@ -1,10 +1,10 @@
 ---
 title: Custom service development
-description: Learn about how to create a custom service including an oultine and key changes of SOAP-based custom services.
-author: sericks007
-ms.author: sericks
+description: Learn about how to create a custom service including an outline and key changes of SOAP-based custom services.
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 02/07/2020
+ms.date: 10/29/2025
 ms.reviewer: johnmichalak
 audience: Developer
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
@@ -18,27 +18,27 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-You can develop custom services for finance and operations. When a developer writes a custom service under a service group, the service group is always deployed on two endpoints:
+You can develop custom services for finance and operations apps. When a developer writes a custom service under a service group, the service group is always deployed on two endpoints:
 
 - SOAP endpoint
 - JSON endpoint
 
-### SOAP-based custom service
+## SOAP-based custom services
 
 SOAP-based services remain the same as they were in Dynamics AX 2012.
 
 Code examples for consuming custom services using SOAP are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/SoapConsoleApplication).
 
-#### Key changes
+### Key changes
 
-- All the service groups under the **AOTService group** node are automatically deployed.
-- All services that must be deployed must be part of a service group.
+- All service groups under the **AOTService group** node are automatically deployed.
+- All services that need deployment must be part of a service group.
 
-**Example endpoint for a dev environment**
+#### Example endpoint for a dev environment
 
 `https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/UserSessionService?wsdl`
 
-**Example endpoint for a non-dev environment**
+#### Example endpoint for a non-dev environment
 
 `https://<baseurl>/soap/services/UserSessionService?wsdl`
 
@@ -47,18 +47,16 @@ For more information about custom services, see:
 - [Using Custom Services \[AX 2012\] (TechNet)](/dynamicsax-2012/appuser-itpro/using-custom-services)
 - [Walkthrough: Exposing an X++ Class as a Data Contract (TechNet)](/dynamicsax-2012/appuser-itpro/walkthrough-exposing-an-x-class-as-a-data-contract)
 
-### JSON-based custom service
+### JSON-based custom services
 
-This feature enables X++ classes to be consumed as JSON services. In other words, the return data set is in JSON format. JSON, which stands for JavaScript Object Notation, is a compact, lightweight format that is commonly used communicate data between the client and the server.
+This feature enables X++ classes to be consumed as JSON services. In other words, the return data set is in JSON format. JSON, which stands for JavaScript Object Notation, is a compact, lightweight format that is commonly used to communicate data between the client and the server.
 
 The JSON Endpoint is at `https://host_uri/api/services/service_group_name/service_group_service_name/operation_name`.
 
-**Example**
+#### Example
 
 `https://usnconeboxax1aos.cloud.onebox.dynamics.com/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo`
 
 Code examples for consuming JSON services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/JsonConsoleApplication).
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

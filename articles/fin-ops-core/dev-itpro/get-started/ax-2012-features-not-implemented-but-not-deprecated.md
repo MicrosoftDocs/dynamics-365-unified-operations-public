@@ -1,10 +1,10 @@
 ---
 title: AX 2012 features that were postponed
 description: Learn about features of Microsoft Dynamics AX 2012 that were postponed, and indicates whether the features have been implemented since the AX 7.0 release.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 09/20/2019
+ms.date: 10/30/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.assetid: 26793616-9b3f-41f5-8500-6983769c51d8
@@ -72,19 +72,19 @@ For a detailed list of the release date for each version, see [Software lifecycl
 <td>Not implemented</td>
 </tr>
 <tr>
-<td>Customizable help topics</td>
-<td>The ability to create customized help topics has not yet been implemented. Custom task guides and custom field help are available. This feature will be available in a future update.</td>
+<td>Customizable help articles</td>
+<td>The ability to create customized help articles hasn't yet been implemented. Custom task guides and custom field help are available. This feature will be available in a future update.</td>
 <td>Not implemented</td>
 </tr>
 <tr>
 <td>Employee self-service (ESS)</td>
-<td>ESS shows employees several tiles that have task-related and career-related information on a single page. Employees can view pending work items and click links that open pages where they can take action on their tasks. ESS pages also show employees the status of their certifications, when their next performance reviews are scheduled, skills, goals, and compensation information, and other information, such as balances for vacation and sick time. Employees can also access a company directory from their ESS page.</td>
+<td>ESS shows employees several tiles that have task-related and career-related information on a single page. Employees can view pending work items and select links that open pages where they can take action on their tasks. ESS pages also show employees the status of their certifications, when their next performance reviews are scheduled, skills, goals, and compensation information, and other information, such as balances for vacation and sick time. Employees can also access a company directory from their ESS page.</td>
 <td>Implemented in version 1611</td>
 </tr>
 <tr>
 <td>External questionnaire and recruiting functionality</td>
 <td>Functionality for externally posting questionnaires and open jobs will be added to Human Resources in a future update.</td>
-<td>External questionnaire functionality hasn't been implemented.
+<td>External questionnaire functionality isn't implemented.
 <p>Recruiting functionality is available in Microsoft Dynamics 365 Talent: Attract.</p>
 </td>
 </tr>
@@ -100,7 +100,7 @@ For a detailed list of the release date for each version, see [Software lifecycl
 </tr>
 <tr>
 <td><strong>Graphics</strong> tab on the <strong>Fixed asset value model</strong> and <strong>Depreciation book profile</strong> pages</td>
-<td>The chart shows the depreciation, accumulated depreciation, and net book value over time. Users can click the <strong>Data</strong> tab to view more detailed information than the chart shows. This chart will be redesigned in a future update.</td>
+<td>The chart shows the depreciation, accumulated depreciation, and net book value over time. Users can select the <strong>Data</strong> tab to view more detailed information than the chart shows. This chart will be redesigned in a future update.</td>
 <td>Not implemented</td>
 </tr>
 <tr>
@@ -120,12 +120,12 @@ For a detailed list of the release date for each version, see [Software lifecycl
 </tr>
 <tr>
 <td>Secure global address book</td>
-<td>The ability to help secure the global address book by legal entity and address book is not available. This feature will be available in a future update.</td>
+<td>The ability to help secure the global address book by legal entity and address book isn't available. This feature will be available in a future update.</td>
 <td>Not implemented</td>
 </tr>
 <tr>
 <td>Specifications for Electronic reporting (ER) payment formats</td>
-<td>Currently, you must enter the payment format specifications manually. In a future update, you will be able to select payment format specifications in a list. The following payment specifications are currently supported per payment format.
+<td>Currently, you must enter the payment format specifications manually. In a future update, you are able to select payment format specifications in a list. The following payment specifications are currently supported per payment format.
 <strong>NOTE: </strong>Values for these supported payment specifications are used as payment specification parameters on the <strong>Payment specification</strong> page for a selected method of payment.
 <p><strong>BTL91 for the Netherlands</strong></p>
 <table>
@@ -455,7 +455,7 @@ For a detailed list of the release date for each version, see [Software lifecycl
 </tr>
 <tr>
 <td>[Russia] Cash Flow Management</td>
-<td>The functionality which obtains a cash flow forecast and performs an analysis, manages payments on a daily basis using payment schedule journals, controls the company's cash position, and maintains the company's cash flows with centralized control,</td>
+<td>The functionality, which obtains a cash flow forecast and performs an analysis, manages payments on a daily basis using payment schedule journals, controls the company's cash position, and maintains the company's cash flows with centralized control,</td>
 <td>Implemented in version 10.0.1</td>
 </tr>
 <tr>
@@ -495,17 +495,17 @@ For a detailed list of the release date for each version, see [Software lifecycl
 </tr>
 <tr>
 <td>[Russia] Inventory owner</td>
-<td>Inventory dimension used to track owner of inventory (consignment stock, bailment, tolling, etc.).</td>
+<td>Inventory dimension used to track owner of inventory (consignment stock, bailment, tolling, and similar arrangements).</td>
 <td>Implemented in version 10.0.1</td>
 </tr>
 <tr>
 <td>[Russia] AP/AR - Third-party miscellaneous charges</td>
-<td>Registration of third-party miscellaneous charges and allocation by the following regimes: Inclusion into cost of purchased goods (allocation to invoices lines from other vendors), and redrawing to other parties re-allocation to other expense accounts.</td>
+<td>Registration of third-party miscellaneous charges and allocation by the following regimes: Inclusion into cost of purchased goods (allocation to invoices lines from other vendors), and redrawing to other parties reallocation to other expense accounts.</td>
 <td>Implemented in version 8.1.1</td>
 </tr>
 <tr>
 <td>[Russia] Goods in transit from vendor</td>
-<td>Registering goods in transit from vendor by special posting profile with Item type "purchased items en route". Creating Act of inventory holdings en route. (INV-6)</td>
+<td>Registering goods in transit from vendor by special posting profile with Item type "purchased items en route." Creating Act of inventory holdings en route. (INV-6)</td>
 <td>Implemented in version 8.1.2</td>
 </tr>
 <tr>

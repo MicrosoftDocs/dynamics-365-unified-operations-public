@@ -1,8 +1,8 @@
 ---
 title: View current WIP status on a production order
 description: Learn how to view a work in progress (WIP) statement for a production order, including a step-by-step process.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, ProdTable, CostStatement
 ms.topic: how-to

@@ -1,8 +1,8 @@
 ---
 title: Production order cost analysis
 description: You can analyze the estimated costs and actual costs by using the Price calculation page or the Cost estimates and costings report.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage, ProdSetupHistoricalCost
 ms.topic: article
