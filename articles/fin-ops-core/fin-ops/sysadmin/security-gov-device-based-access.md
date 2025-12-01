@@ -36,9 +36,9 @@ The table below lists the device based security roles that can be assigned based
 | Retail store manager | Device based - Retail store manager |
 | Warehouse worker | Device based - Warehouse worker |
 
+
 # Requirements for using device based security roles
 Before assigning device based security roles to users administrators must ensure that the following requirements are met.
-
 
 | Requirement | Description |
 |--- | --- |
