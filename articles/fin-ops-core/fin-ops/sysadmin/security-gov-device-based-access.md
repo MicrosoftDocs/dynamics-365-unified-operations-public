@@ -39,6 +39,7 @@ The table below lists the device based security roles that can be assigned based
 # Requirements for using device based security roles
 Before assigning device based security roles to users administrators must ensure that the following requirements are met.
 
+
 | Requirement | Description |
 |--- | --- |
 | Device based security roles must be used only for users in specific job functions and with specific requirements | <ul><li>Production floor worker who needs to access Dynamics 365 Supply Chain Management functionality beyond the [production floor execution interface](../../../supply-chain/production-control/production-floor-execution-configure.md).</li><ul><li>If the functionality in the production floor execution interface is sufficient for the production floor worker to perform their job, they do not need this role.</li></ul><li>Retail store manager who needs to access Dynamics 365 Commerce functionality beyond the [point-of-sale (POS) app](../../../commerce/dev-itpro/store-commerce.md).</li><ul><li>If the functionality in the point-of-sale app is sufficient for the retail store manager to perform their job, they do not need this role.</li></ul><li>Warehouse worker who needs to access Dynamics 365 Supply Chain Management functionality beyond the [warehouse management app](../../../supply-chain/warehousing/install-configure-warehouse-management-app.md).</li><ul><li>If the functionality in the warehouse management app is sufficient for the warehouse worker to perform their job, they do not need this role.</li></ul></ul> |
