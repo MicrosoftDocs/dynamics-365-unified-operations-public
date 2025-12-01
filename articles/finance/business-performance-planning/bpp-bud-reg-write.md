@@ -1,10 +1,10 @@
 ---
-title: Write back to Dynamics 365 Finance budget register entry
+title: Write-back to Dynamics 365 Finance budget register entry
 description: Learn how to export finalized budgets and forecasts from Business performance planning to Dynamics 365 Finance budget register entry.
 author: twheeloc
 ms.author: romainpham
 ms.topic: install-set-up-deploy
-ms.date: 11/14/2025
+ms.date: 11/25/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -13,7 +13,7 @@ ms.search.form:
 ms.dyn365.ops.version: 
 ---
 
-# Write back to Dynamics 365 Finance budget register entry
+# Write-back to Dynamics 365 Finance budget register entry
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -37,12 +37,12 @@ With this capability, finance teams can:
 
 Before using the Write back to budget register entry feature, ensure the following requirements are met:
 
-- You have the **Business performance planning administrator** or **Business performance planning Power User** security role assigned.
-- Your Business performance planning environment is connected to a Dynamics 365 Finance environment through Dataverse (via virtual tables or Dual-write).
-- At least one **Budget model** exists in Dynamics 365 Finance under the target legal entity.
-- The planning cube in Business performance planning was created through the **Cube (preview)** page in the new Data model builder, and contains the financial dimensions and measures required by the target Budget model (such as Main account, Department, Cost center, Date, and Amount).
-- Supported environments: both **Sandbox** and **Production** with valid Dynamics 365 Finance linkage.
-- At least one column in your Date dimension link to your cube you want to export, must be of Date type.
+1. You have the **Business performance planning administrator** or **Business performance planning Power User** security role assigned.
+1. Your Business performance planning environment is connected to a Dynamics 365 Finance environment through Dataverse (via virtual tables or Dual-write).
+1. At least one **Budget model** exists in Dynamics 365 Finance under the target legal entity.
+1. You created the planning cube in Business performance planning through the **Cube (preview)** page in the new Data model builder, and it contains the financial dimensions and measures required by the target Budget model (such as Main account, Department, Cost center, Date, and Amount).
+1. Supported environments: both **Sandbox** and **Production** with valid Dynamics 365 Finance linkage.
+1. At least one column in your Date dimension link to your cube you want to export, must be of Date type.
 
 > [!IMPORTANT]
 > In **Dynamics 365 Finance**, you must configure a default account structure before you can create a budget register entry.  
@@ -99,8 +99,6 @@ In this setup:
 - **User B** must open Power Automate, Dynamics 365 Finance extended planning and analysis workflows, and reassign ownership of all budget register entry related flows: **BREExportFromDataverseToFnO**, **CountTotalCubeRows**, and **BREExportFnOStatusUpdate**.  
 - When taking ownership, **User B** must reconnect both Dataverse and Dynamics 365 Finance connections by using their own credentials (the credentials that have the required roles).  
 - Any export triggered by any user creates budget register entry records under User B’s Dynamics 365 Finance account, as the export runs in their context.
-
----
 
 #### Summary of role and ownership requirements
 
