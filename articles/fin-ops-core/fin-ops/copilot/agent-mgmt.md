@@ -3,7 +3,7 @@ title: Set up Agent management (production ready preview)
 description: This article describes the Agent management feature in Microsoft Dynamics 365 finance and operations apps.
 author: twheeloc
 ms.author: jkhaira
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/21/2025
 ms.update-cycle: 180-days
 ms.custom:
