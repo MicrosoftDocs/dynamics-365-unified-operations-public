@@ -2122,20 +2122,20 @@
                          href: localizations/brazil/brazil-reform-calculation-free-text-invoice.md                        
                        - name: Calculation in Purchase requisition in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-purchase-requisition.md
-                       - name: Calculation in Purchase requisition for quotation (RFQ)in Brazil Reformed Tax
-                         href: localizations/brazil/brazil-reform-calculation-requisition-for-quotation.md         
+                       - name: Calculation in Purchase request for quotation (RFQ)in Brazil Reformed Tax
+                         href: localizations/brazil/brazil-reform-calculation-request-for-quotation.md         
                        - name: Calculation in Purchase order in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-purchase-order.md
                        - name: Calculation in Vendor invoice journal in Brazil Reformed Tax
-                         href: localizations/brazil/brazil-reform-calculation-vendor-invoice-journal.md‎
+                         href: localizations/brazil/brzail-reform-calculation-vendor-journal-invoice.md
                        - name: Calculation in transfer order in Brazil Reformed Tax
-                         href: localizations/brazil/brazil-reform-calculation-transfer-order.md‎
+                         href: localizations/brazil/brazil-reform-calculation-transfer-order.md
                        - name: Calculation in Project in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-project.md
                        - name: Calculation in Project quotation in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-project-quotation.md                       
                        - name: Calculation in General journal in Brazil Reformed Tax
-                         href: localizations/brazil/brazil-reform-calculation-general-journal.md‎  
+                         href: localizations/brazil/brazil-reform-calculation-general-journal.md
 
                     - name: Fiscal books
                       items:
@@ -4425,8 +4425,6 @@
                           href: localizations/united-kingdom/emea-gbr-mtd-vat-integration-em-setup-checklist.md
                         - name: Test interoperation with the MTD VAT sandbox
                           href: localizations/united-kingdom/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: Authorize your Finance environment to interoperate with HMRC's MTD web service
-                          href: localizations/united-kingdom/emea-gbr-mtd-vat-integration-authorization.md
                         - name: Submit a VAT return to HMRC's MTD web service
                           href: localizations/united-kingdom/emea-gbr-mtd-vat-integration-submission.md
                         - name: Retrieve information about VAT payments and liabilities from HMRC
@@ -4437,6 +4435,8 @@
                           href: localizations/united-kingdom/emea-gbr-mtd-vat-integration-vat100.md
                         - name: Security enhancements in UK MTD VAT integration
                           href: localizations/united-kingdom/emea-gbr-mtd-vat-security-enhancements.md
+                        - name: Frequently Asked Questions - Making Tax Digital (MTD) – VAT return integration
+                          href: localizations/united-kingdom/emea-gbr-mtd-vat-frequently-asked-questions.md
                     - name: Statistics on payment practices report
                       href: localizations/united-kingdom/emea-gbr-statistics-on-payment-practices-report.md
                     - name: EU sales list
