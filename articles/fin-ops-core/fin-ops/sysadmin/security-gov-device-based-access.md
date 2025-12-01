@@ -19,7 +19,6 @@ With [improved user license management and validation](https://www.microsoft.com
 administrators can now use [enhanced tools and reporting]*TODO: ADD LINK* to optimize access and licensing within Dynamics 365 Finance and Operations applications. As a part of this change users without assigned licenses will no longer be able access to Dynamics 365 Finance and Operations applications.
 
 While the vast majority of users require user licenses as a part of their job functions, there is a small subset of users that may need to access Dynamics 365 Finance and Operations applications using licensed devices instead.
-
 | Job function | Job function requirements |
 |--- | --- |
 | Production floor worker | Production floor worker who needs to access Dynamics 365 Supply Chain Management functionality beyond the [production floor execution interface](../../../supply-chain/production-control/production-floor-execution-configure.md). |
