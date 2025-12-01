@@ -90,7 +90,7 @@ Follow the mitigation steps suggested in the [previous question](emea-gbr-mtd-va
 
 This error can appear when you didn't enable the Security enhancements in UK MTD VAT integration (cloud-based deployments only) feature and you're using your own sandbox web application that you created in your developer account on the HMRC portal. In this situation, make sure that your sandbox web application on the HMRC portal is subscribed to the `VAT (MTD) API`.
 
-For more information, see [Create a sandbox application in the HMRC Developer Hub](emea-gbr-mtd-vat-integration-sandbox.md#create-a-sandbox-application-in-the-hmrc-developer-hub).
+For more information, see [Create a sandbox application in the HMRC Developer Hub](emea-gbr-mtd-vat-integration-sandbox.md).
 
 ## 6. I successfully retrieved VAT obligations, but I don't get any records when I select the "Collect data" button on the Electronic messages page. What should I do?
 
