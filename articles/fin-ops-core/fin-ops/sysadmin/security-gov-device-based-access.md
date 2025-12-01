@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 # Manage device based user access to Dynamics 365 Finance and Operations applications
 
 With [improved user license management and validation](https://www.microsoft.com/dynamics-365/blog/it-professional/2025/09/25/simplifying-license-management-dynamics-365-finance-operations/) 
-administrators can now use [enhanced tools and reporting]*TODO: ADD LINK* to optimize access and licensing within Dynamics 365 Finance and Operations applications. As a part of this change users without assigned licenses will no longer be able access to Dynamics 365 Finance and Operations applications. They will instead be prompted to request the appropriate licenses from their administrator.
+administrators can now use [enhanced tools and reporting]*TODO: ADD LINK* to optimize access and licensing within Dynamics 365 Finance and Operations applications. As a part of this change users without assigned licenses will no longer be able access to Dynamics 365 Finance and Operations applications.
 
 While the vast majority of users require user licenses as a part of their job functions, there is a small subset of users that may need to access Dynamics 365 Finance and Operations applications using licensed devices instead.
 
@@ -29,17 +29,14 @@ While the vast majority of users require user licenses as a part of their job fu
 To ensure continued access for users who rely solely on licensed devices to access Dynamics 365 Finance and Operations applications, administrators must temporarily assign device based security roles until device license enforcement takes effect at a later date. 
 
 The table below lists the device based security roles that can be assigned based on the job function.
-
 | Job function | Device based security role |
 |--- | --- |
 | Production floor worker | Device based - Production floor worker |
 | Retail store manager | Device based - Retail store manager |
 | Warehouse worker | Device based - Warehouse worker |
 
-
 # Requirements for using device based security roles
 Before assigning device based security roles to users administrators must ensure that the following requirements are met.
-
 | Requirement | Description |
 |--- | --- |
 | Device based security roles must be used only for users in specific job functions and with specific requirements | <ul><li>Production floor worker who needs to access Dynamics 365 Supply Chain Management functionality beyond the [production floor execution interface](../../../supply-chain/production-control/production-floor-execution-configure.md).</li><ul><li>If the functionality in the production floor execution interface is sufficient for the production floor worker to perform their job, they do not need this role.</li></ul><li>Retail store manager who needs to access Dynamics 365 Commerce functionality beyond the [point-of-sale (POS) app](../../../commerce/dev-itpro/store-commerce.md).</li><ul><li>If the functionality in the point-of-sale app is sufficient for the retail store manager to perform their job, they do not need this role.</li></ul><li>Warehouse worker who needs to access Dynamics 365 Supply Chain Management functionality beyond the [warehouse management app](../../../supply-chain/warehousing/install-configure-warehouse-management-app.md).</li><ul><li>If the functionality in the warehouse management app is sufficient for the warehouse worker to perform their job, they do not need this role.</li></ul></ul> |
