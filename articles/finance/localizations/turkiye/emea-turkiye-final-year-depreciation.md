@@ -271,6 +271,6 @@ The scenario also demonstrates how the final year depreciation amount is adjuste
 - [Set up fixed asset groups](../../../finance/fixed-assets/tasks/set-up-fixed-asset-groups.md)  
 - [Create a fixed asset](../../../finance/fixed-assets/tasks/create-fixed-asset.md)  
 - [Set up value models](../../../finance/fixed-assets/tasks/set-up-value-models.md)  
-- [Use prorated depreciation on fixed assets](/finance/localizations/turkiye/emea-turkiye-prorated-depreciation.md)
+- [Use prorated depreciation on fixed assets](../../../finance/localizations/turkiye/emea-turkiye-prorated-depreciation.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
