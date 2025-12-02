@@ -4,7 +4,7 @@
 title: Human resources to bookable resource integration
 description: This article provides details about the integration of Microsoft Dynamics 365 Human Resources workers to bookable resources.
 author: twheeloc
-ms.date: 5/15/2024
+ms.date: 12/02/2025
 ms.topic: article
 ms.reviewer: twheeloc
 # optional metadata
