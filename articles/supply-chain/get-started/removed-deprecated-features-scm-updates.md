@@ -4,7 +4,7 @@ description: Learn about features that have been removed, deprecated, or that ar
 author: kamaybac
 ms.author: kamaybac
 ms.topic: article
-ms.date: 11/17/2025
+ms.date: 12/02/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
