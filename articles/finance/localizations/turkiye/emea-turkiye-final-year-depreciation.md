@@ -24,7 +24,7 @@ In Türkiye, you must distribute the remaining depreciation amount in the final 
 Finance supports this requirement with the **Reducing balance (Türkiye)** and **Straight line service life (Türkiye)** depreciation methods.  
 When you select one of these methods in a depreciation profile, the system automatically distributes the final year's depreciation evenly across each month.  
 
-For more information about standard depreciation methods, see [Depreciation methods and conventions](/finance/fixed-assets/depreciation-methods-conventions).  
+For more information about standard depreciation methods, see [Depreciation methods and conventions](../../../finance/fixed-assets/depreciation-methods-conventions.md).  
 
 Using this functionality helps your organization:
 
@@ -77,7 +77,7 @@ To create a depreciation profile with the **Reducing balance (Türkiye)** deprec
 1. Set the **Full depreciation** option to **Yes**.
 1. Save the profile.
 
-For more information about creating or editing depreciation profiles, see [Set up and create depreciation profiles](/finance/fixed-assets/tasks/set-up-depreciation-profiles).
+For more information about creating or editing depreciation profiles, see [Set up and create depreciation profiles](../../../finance/fixed-assets/tasks/set-up-depreciation-profiles.md).
 
 ### Configure depreciation parameters in the asset book  
 
@@ -201,7 +201,7 @@ To create a depreciation profile with the **Straight line service life (Türkiye
 1. In the **Period frequency** field, select **Monthly**.
 1. Save the profile.
 
-For more information about creating or editing depreciation profiles, see [Set up and create depreciation profiles](/finance/fixed-assets/tasks/set-up-depreciation-profiles).  
+For more information about creating or editing depreciation profiles, see [Set up and create depreciation profiles](../../../finance/fixed-assets/tasks/set-up-depreciation-profiles.md).  
 
 ### Configure depreciation parameters in the asset book
 
@@ -266,11 +266,11 @@ The scenario also demonstrates how the final year depreciation amount is adjuste
 
 ## See also  
 
-- [Türkiye overview](/finance/localizations/turkiye/turkiye)  
-- [Fixed assets home page](/finance/fixed-assets/fixed-assets)  
-- [Set up fixed asset groups](/finance/fixed-assets/tasks/set-up-fixed-asset-groups)  
-- [Create a fixed asset](/finance/fixed-assets/tasks/create-fixed-asset)  
-- [Set up value models](/finance/fixed-assets/tasks/set-up-value-models)  
-- [Use prorated depreciation on fixed assets](/finance/localizations/turkiye/emea-turkiye-prorated-depreciation)
+- [Türkiye overview](../../../finance/localizations/turkiye/turkiye.md)  
+- [Fixed assets home page](../../../finance/fixed-assets/fixed-assets.md)  
+- [Set up fixed asset groups](../../../finance/fixed-assets/tasks/set-up-fixed-asset-groups.md)  
+- [Create a fixed asset](../../../finance/fixed-assets/tasks/create-fixed-asset.md)  
+- [Set up value models](../../../finance/fixed-assets/tasks/set-up-value-models.md)  
+- [Use prorated depreciation on fixed assets](/finance/localizations/turkiye/emea-turkiye-prorated-depreciation.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
