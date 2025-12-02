@@ -2,7 +2,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.6 (November 2019)
 description: Learn about features that are either new or changed in Dynamics 365 Finance 10.0.6 distributed in November 2019 with an outline on feature management enhancements.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom:
   - bap-template

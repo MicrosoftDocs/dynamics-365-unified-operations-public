@@ -2,7 +2,7 @@
 title: Netherlands overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for the Netherlands, including links to resources about electronic tax declarations.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 05/06/2020
 ms.reviewer: johnmichalak

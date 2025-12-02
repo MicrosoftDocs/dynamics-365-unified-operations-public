@@ -2,7 +2,7 @@
 title: Search for country/region-specific regulatory updates
 description: Access links to planned and released country/region-specific regulatory updates for Microsoft Dynamics 365 Finance for various regions.
 author: AdamTrukawka
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 01/20/2022
 ms.reviewer: johnmichalak

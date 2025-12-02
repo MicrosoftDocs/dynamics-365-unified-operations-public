@@ -2,7 +2,7 @@
 title: Set up mandatory payment references
 description: Learn how to set up a mandatory payment reference for a specific ledger account and post a payment in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/04/2025
 ms.custom: 

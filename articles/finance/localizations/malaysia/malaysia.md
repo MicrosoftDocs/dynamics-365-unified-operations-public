@@ -2,7 +2,7 @@
 title: Malaysia overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Malaysia, including links to resources about generating notes and managing vendors.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: johnmichalak

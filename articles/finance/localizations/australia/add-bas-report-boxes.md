@@ -2,7 +2,7 @@
 title: Add BAS report boxes and generate the Australia Business Activity Statement BAS
 description: This article describes how to add BAS report boxes and generate the BAS in Australia with Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/11/2025
 ms.reviewer: johnmichalak

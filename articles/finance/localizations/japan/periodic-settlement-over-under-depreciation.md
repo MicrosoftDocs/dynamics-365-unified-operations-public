@@ -2,7 +2,7 @@
 title: Periodic settlement of over and under depreciation
 description: Learn how to calculate and record depreciation expense for deductible expense in Japan with Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/02/2025
 ms.reviewer: johnmichalak

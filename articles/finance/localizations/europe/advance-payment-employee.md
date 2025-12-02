@@ -2,7 +2,7 @@
 title: EEU-00047 Advance payment to employee
 description: This article describes how to set up and register transactions for an advance holder in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/27/2025
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: Settle customer consolidated invoices by using a payment journal
 description: Learn how to settle customer consolidated invoices using a payment journal for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/09/2025
 ms.reviewer: johnmichalak

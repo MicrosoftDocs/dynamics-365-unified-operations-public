@@ -2,7 +2,7 @@
 title: Acquire a fixed asset with asset retirement obligations
 description: Learn how to acquire a fixed asset with an asset retirement obligation (ARO) in Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/10/2025
 ms.reviewer: johnmichalak

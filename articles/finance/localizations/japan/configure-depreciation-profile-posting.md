@@ -2,7 +2,7 @@
 title: Configure depreciation profile and posting profile for additional depreciation
 description: Learn how to configure a depreciation profile and a posting profile for special depreciation in Japan with Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/10/2025
 ms.reviewer: johnmichalak

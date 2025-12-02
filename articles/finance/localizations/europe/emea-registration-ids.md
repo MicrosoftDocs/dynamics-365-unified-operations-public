@@ -2,7 +2,7 @@
 title: Registration IDs
 description: Learn about setting up and using registration IDs, including outlines on registration type creation assigning registration types to registration categories.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 11/08/2017
 ms.reviewer: johnmichalak

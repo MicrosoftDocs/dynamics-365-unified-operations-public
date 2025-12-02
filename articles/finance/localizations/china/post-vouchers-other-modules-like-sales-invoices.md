@@ -2,7 +2,7 @@
 title: Post vouchers from other modules, like sales invoices
 description: This article describes how to post Chinese vouchers from the general ledger, inventory movement journals, sales invoices, and purchase invoices for China in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/11/2025
 ms.reviewer: johnmichalak

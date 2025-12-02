@@ -2,7 +2,7 @@
 title: REPEAT ER function
 description: Learn about how to use the REPEAT Electronic reporting (ER) function, including syntax strings, arguments, return values, usage notes, and examples.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 08/01/2022
 ms.custom:

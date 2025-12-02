@@ -2,7 +2,7 @@
 title: Change the depreciation method during the asset life for one asset
 description: Learn how to change the depreciation method during the asset life for one asset in Japan with Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/10/2025
 ms.reviewer: johnmichalak

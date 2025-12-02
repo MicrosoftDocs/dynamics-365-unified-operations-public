@@ -2,7 +2,7 @@
 title: Create and confirm a customer consolidated invoice
 description: Learn how to consolidate customer invoices each month to calculate the due amount in Japan with Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/18/2025
 ms.custom: 

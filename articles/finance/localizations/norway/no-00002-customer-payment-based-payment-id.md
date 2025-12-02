@@ -2,7 +2,7 @@
 title: NO-00002 Customer payment based on payment ID
 description: Learn how to set up and maintain customer payment based on payment IDs for Norway in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 06/12/2025
 ms.reviewer: johnmichalak  

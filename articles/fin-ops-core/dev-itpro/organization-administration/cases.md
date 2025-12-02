@@ -2,7 +2,7 @@
 title: Case management overview
 description: Learn about case management, including planning, tracking, and analyzing, in Microsoft Dynamics, with various examples. 
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 11/20/2020
 ms.reviewer: johnmichalak

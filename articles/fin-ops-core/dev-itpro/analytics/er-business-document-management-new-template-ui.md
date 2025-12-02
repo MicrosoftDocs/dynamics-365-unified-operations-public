@@ -2,7 +2,7 @@
 title: Microsoft Office-style user interface in Business document management
 description: This article explains how to use the new user interface in the Business document management feature of Electronic reporting (ER) framework.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 01/05/2022
 ms.reviewer: johnmichalak 

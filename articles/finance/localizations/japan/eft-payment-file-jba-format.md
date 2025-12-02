@@ -2,7 +2,7 @@
 title: Generate EFT payment file with JBA format
 description: Learn how to generate an EFT file with the JBA file format for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.reviewer: johnmichalak

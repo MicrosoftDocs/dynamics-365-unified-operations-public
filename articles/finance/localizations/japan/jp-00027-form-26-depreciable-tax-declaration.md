@@ -2,7 +2,7 @@
 title: JP-00027 Form 26 for depreciable tax declaration
 description: Learn how to assign a registration number to a fixed asset and print the Form 26 report for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.reviewer: johnmichalak

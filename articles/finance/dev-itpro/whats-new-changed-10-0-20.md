@@ -2,7 +2,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.20 (August 2021)
 description: Learn aboutfeatures that are either new or changed in the Dynamics 365 Finance version 10.0.20 preview release distributed in August 2021.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom:
   - bap-template

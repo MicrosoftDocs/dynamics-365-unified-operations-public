@@ -2,7 +2,7 @@
 title: France overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for France to help you set up legal entities with a primary address in France. 
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 03/04/2022
 ms.reviewer: johnmichalak

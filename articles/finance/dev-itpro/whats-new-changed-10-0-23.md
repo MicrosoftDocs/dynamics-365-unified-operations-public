@@ -2,7 +2,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.23 
 description: Learn about features that are either new or changed in the Dynamics 365 Finance version 10.0.23 preview release distributed in January 2022.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom:
   - bap-template

@@ -2,7 +2,7 @@
 title: Europe overview
 description: Access a list of links to Microsoft Dynamics 365 Finance documentation resources that can help you set up legal entities with a primary address in Europe. 
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 01/15/2022
 ms.reviewer: johnmichalak

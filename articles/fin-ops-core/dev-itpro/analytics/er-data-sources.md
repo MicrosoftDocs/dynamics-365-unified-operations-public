@@ -2,7 +2,7 @@
 title: Supported data source types for ER components
 description: Learn about the data sources that are supported in the Electronic reporting (ER) framework, including how to add new data sources.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/28/2023
 ms.reviewer: johnmichalak

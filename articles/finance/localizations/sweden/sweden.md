@@ -2,7 +2,7 @@
 title: Sweden overview
 description: Access links to documentation resources for Sweden, including links to resources about declarations, functionality, statistics, and sales lists. 
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 09/30/2025
 ms.reviewer: johnmichalak

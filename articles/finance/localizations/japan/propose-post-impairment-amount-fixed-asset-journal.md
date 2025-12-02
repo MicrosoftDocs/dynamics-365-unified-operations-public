@@ -2,7 +2,7 @@
 title: Propose and post the impairment amount by using fixed asset journal
 description: Learn how to propose and post the impairment amount by using a fixed asset journal for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/02/2025
 ms.reviewer: johnmichalak

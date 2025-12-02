@@ -2,7 +2,7 @@
 title: Finance and operations application architecture
 description: Learn about the architecture of finance and operations applications, including definitions for various conceptual areas for cloud architecture.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 04/24/2020
 ms.reviewer: johnmichalak

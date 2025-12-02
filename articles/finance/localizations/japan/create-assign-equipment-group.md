@@ -2,7 +2,7 @@
 title: Create and assign an equipment group
 description: Learn how to create and configure an equipment group for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/18/2025
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: Set up Japan consumption tax report
 description: Learn how to set up the system to support the Japan consumption tax report in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/09/2025
 ms.reviewer: johnmichalak

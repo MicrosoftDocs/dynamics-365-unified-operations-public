@@ -2,7 +2,7 @@
 title: Set up a customer and sales order to be target of consolidated invoice
 description: Learn how to set up customers and sales orders to be targets of consolidated invoices for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/02/2025
 ms.reviewer: johnmichalak

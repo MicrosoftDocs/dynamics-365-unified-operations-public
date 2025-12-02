@@ -2,7 +2,7 @@
 title: Fixed asset impairment accounting on cash-generating units for Japan
 description: Learn about the conceptual model for impairment accounting for Japan, including outlines on cash-generating units and impairment recognition tests.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 07/28/2021
 ms.reviewer: johnmichalak

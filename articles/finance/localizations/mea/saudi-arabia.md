@@ -2,7 +2,7 @@
 title: Saudi Arabia overview
 description: Access links to documentation resources for Saudi Arabia, including links that direct to resources about sales tax, Zakat reporting, and electronic invoices.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 10/26/2021
 ms.reviewer: johnmichalak

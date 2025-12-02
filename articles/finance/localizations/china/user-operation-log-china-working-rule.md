@@ -2,7 +2,7 @@
 title: CN-00016 User operation log by China working rule
 description: This article describes how to generate a user operation log for China in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/11/2025
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: Depreciation of fixed assets with reduction entry posted
 description: Learn how to run fixed asset depreciation with reduction entries for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.reviewer: johnmichalak

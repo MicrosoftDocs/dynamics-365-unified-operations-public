@@ -2,7 +2,7 @@
 title: Pay a vendor transaction by endorsing a customer bill of exchange
 description: Learn how to pay a vendor transaction by endorsing a customer bill of exchange in Japan with Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.reviewer: johnmichalak

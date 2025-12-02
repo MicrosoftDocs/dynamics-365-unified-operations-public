@@ -2,7 +2,7 @@
 title: Create CGU groups and cash generating units
 description: Learn how to create cash generating unit (CGU) groups and CGUs for Japan with Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/18/2025
 ms.reviewer: johnmichalak

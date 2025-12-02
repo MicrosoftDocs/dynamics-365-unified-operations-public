@@ -2,7 +2,7 @@
 title: Practice manager Power BI content
 description: Learn about what is included in the Practice manager Power BI content, including a table outlining reports that are included in the Power BI content.
 author: sericks007
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 12/18/2017
 ms.reviewer: johnmichalak

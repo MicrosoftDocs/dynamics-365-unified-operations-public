@@ -2,7 +2,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.10 (May 2020)
 description: Learn about features that are either new or changed in Dynamics 365 Finance 10.0.10 released in May 2020, including an outline on included features.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.date: 07/15/2024
 ms.update-cycle: 1095-days

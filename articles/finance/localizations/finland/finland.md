@@ -2,7 +2,7 @@
 title: Finland overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Finland, including resources for Finnish Intrastrat and EU sales lists for Finland.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 03/22/2022
 ms.reviewer: johnmichalak

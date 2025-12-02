@@ -2,7 +2,7 @@
 title: Iceland overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Iceland, including links directing to resources about reports and invoices.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: johnmichalak

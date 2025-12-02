@@ -2,7 +2,7 @@
 title: Inquiries of the asset retirement obligation related transactions
 description: Learn how to view asset retirement obligation related amounts and transactions for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.reviewer: johnmichalak

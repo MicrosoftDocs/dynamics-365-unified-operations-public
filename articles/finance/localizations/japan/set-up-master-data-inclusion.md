@@ -2,7 +2,7 @@
 title: Set up master data for inclusion of deductible expenses for multiple posting layers
 description: Learn how to create fixed asset rules with required master data for inclusion of deductible expenses for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/09/2025
 ms.reviewer: johnmichalak

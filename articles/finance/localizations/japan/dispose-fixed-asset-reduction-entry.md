@@ -2,7 +2,7 @@
 title: Dispose of a fixed asset with reduction entry
 description: Learn how to dispose of a fixed asset with reduction entry for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: Advanced formatting options in financial reporting
 description: Learn about advanced formatting functions, including filters, restrictions, non-printing rows, and conditional statements in calculations.
 author: panolte
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/26/2019
 ms.reviewer: johnmichalak

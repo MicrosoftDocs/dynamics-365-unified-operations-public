@@ -2,7 +2,7 @@
 title: Set up Chinese vouchers
 description: This article describes how to set up Chinese vouchers using specific demo data in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/11/2025
 ms.reviewer: johnmichalak

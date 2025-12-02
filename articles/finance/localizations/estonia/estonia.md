@@ -2,7 +2,7 @@
 title: Estonia overview
 description: Learn about functionality specific to Estonia and resources that should be considered for legal entities with a primary address in Estonia.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: johnmichalak

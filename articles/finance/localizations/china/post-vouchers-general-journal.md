@@ -2,7 +2,7 @@
 title: Post vouchers from the general journal
 description: This article describes how to post Chinese vouchers using the general journal for China in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/11/2025
 ms.reviewer: johnmichalak

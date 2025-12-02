@@ -2,7 +2,7 @@
 title: Reopen and edit a customer consolidated invoice
 description: Learn how to reopen and modify a confirmed customer consolidated invoice for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/02/2025
 ms.reviewer: johnmichalak

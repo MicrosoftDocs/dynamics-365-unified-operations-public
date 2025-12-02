@@ -2,7 +2,7 @@
 title: Inquiry on deductible expenses
 description: Learn how to run an inquiry on deductible expenses for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.reviewer: johnmichalak

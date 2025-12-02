@@ -2,7 +2,7 @@
 title: United Kingdom overview
 description: Access links to documentation resources for the United Kingdom, including links to resources about creating credits on settlement discounts, and VAT information. 
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 09/07/2021
 ms.reviewer: johnmichalak

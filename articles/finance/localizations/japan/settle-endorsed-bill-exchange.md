@@ -2,7 +2,7 @@
 title: Settle an endorsed bill of exchange
 description: Learn how to settle an endorsed bill of exchange for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/09/2025
 ms.reviewer: johnmichalak

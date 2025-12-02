@@ -2,7 +2,7 @@
 title: JP-00005 Input journal in T account form (Japan)
 description: Learn how to create a journal entry using the T-account format for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: Generate Japan consumption tax report
 description: Learn how to generate the Japan consumption tax report in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.reviewer: johnmichalak

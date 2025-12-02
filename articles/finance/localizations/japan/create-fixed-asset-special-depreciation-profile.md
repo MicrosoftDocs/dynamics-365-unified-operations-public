@@ -2,7 +2,7 @@
 title: Create a fixed asset with special depreciation profile
 description: Learn how to create a fixed asset with a special depreciation profile for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/18/2025
 ms.reviewer: johnmichalak

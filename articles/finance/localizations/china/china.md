@@ -2,7 +2,7 @@
 title: China overview
 description: Learn about functionality specific to China with resources that can help you set up legal entities with a primary address in China.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: johnmichalak

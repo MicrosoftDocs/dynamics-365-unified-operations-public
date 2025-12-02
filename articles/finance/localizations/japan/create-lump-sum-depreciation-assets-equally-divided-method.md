@@ -2,7 +2,7 @@
 title: Create lump sum depreciation assets using equally divided method
 description: Learn how to create lump sum depreciation assets using the equally divided method for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/18/2025
 ms.reviewer: johnmichalak

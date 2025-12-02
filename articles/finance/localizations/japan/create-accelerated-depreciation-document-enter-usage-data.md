@@ -2,7 +2,7 @@
 title: Create an accelerated depreciation document and enter usage data
 description: Learn how to create an accelerated depreciation document and enter usage data for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/18/2025
 ms.reviewer: johnmichalak

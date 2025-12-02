@@ -2,7 +2,7 @@
 title: Create a corrective invoice (Spain)
 description: Learn how to create a corrective invoice for Spain in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 07/11/2025
 ms.reviewer: johnmichalak

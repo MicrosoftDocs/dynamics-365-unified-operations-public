@@ -2,7 +2,7 @@
 title: Guatemala overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Guatemala to help you set up legal entities with a primary address in Guatemala. 
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 10/31/2023
 ms.reviewer: johnmichalak

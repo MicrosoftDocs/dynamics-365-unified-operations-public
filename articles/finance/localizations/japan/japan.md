@@ -2,7 +2,7 @@
 title: Japan overview
 description: Learn about functionality specific to Japan with links to resources about cash and bank management, fixed assets, invoicing, payments, and taxes.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 01/18/2024
 ms.reviewer: johnmichalak

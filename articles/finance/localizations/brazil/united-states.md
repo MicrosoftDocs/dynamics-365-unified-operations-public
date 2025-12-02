@@ -2,7 +2,7 @@
 title: United States
 description: Access links to documentation resources for the United States, including links to to year-end 1099 reporting for the United States and public sector.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 07/25/2018
 ms.custom: 

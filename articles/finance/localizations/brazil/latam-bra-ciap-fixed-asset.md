@@ -2,7 +2,7 @@
 title: Acquire and dispose a CIAP fixed asset
 description: This article describes how to acquire and dispose of a CIAP fixed asset in Brazil with Microsoft Dynamics 365 Finance.
 author: v-gonode
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/27/2025
 ms.custom: 

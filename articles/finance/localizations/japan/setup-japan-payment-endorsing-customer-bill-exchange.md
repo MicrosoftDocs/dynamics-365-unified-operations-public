@@ -2,7 +2,7 @@
 title: Set up Japan payment by endorsing a customer bill of exchange
 description: Learn how to set up payments by endorsing a customer bills of exchange for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/09/2025
 ms.reviewer: johnmichalak

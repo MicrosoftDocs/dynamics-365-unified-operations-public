@@ -2,7 +2,7 @@
 title: Set up asset retirement obligation documents and enter ARO amount on a fixed asset
 description: Learn how to set up asset retirement obligation documents and enter the ARO amount on a fixed asset for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/02/2025
 ms.reviewer: johnmichalak

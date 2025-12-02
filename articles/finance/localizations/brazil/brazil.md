@@ -2,7 +2,7 @@
 title: Brazil overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Brazil, including links to fiscal books, taxes, and additional resources. 
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 01/20/2022
 ms.reviewer: johnmichalak

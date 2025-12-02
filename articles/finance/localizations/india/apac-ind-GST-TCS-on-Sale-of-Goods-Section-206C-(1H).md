@@ -2,7 +2,7 @@
 title: TCS on sales of goods 
 description: Learn about the functionality for Tax Collection at Source (TCS) on sales of goods, including an outline on base amount for TCS deduction.
 author: prabhatb
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/16/2021
 ms.reviewer: johnmichalak 

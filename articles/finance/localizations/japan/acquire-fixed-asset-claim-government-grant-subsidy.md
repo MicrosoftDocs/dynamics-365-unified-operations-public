@@ -2,7 +2,7 @@
 title: Acquire a fixed asset and claim for the government grant subsidy
 description: Learn how to acquire a fixed asset and claim it for a government grant in Japan with Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/10/2025
 ms.reviewer: johnmichalak

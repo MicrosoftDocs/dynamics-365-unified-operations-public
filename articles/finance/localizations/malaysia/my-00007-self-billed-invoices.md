@@ -2,7 +2,7 @@
 title: MY-00007 Self-billed invoices
 description: Learn how to create and print a vendor self-billed invoice for Malaysia in Microsoft Dynamics 365 Finance. 
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/29/2025
 ms.reviewer: johnmichalak 

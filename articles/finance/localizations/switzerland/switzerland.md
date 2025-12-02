@@ -2,7 +2,7 @@
 title: Switzerland overview
 description: Access links to documentation resources for Switzerland, including links directing to resources about ESR customer payments import and VAT declarations.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: Use disassemble list for fixed assets
 description: Learn how to use a disassemble list for fixed assets for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/09/2025
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: Lithuania overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Lithuania, including links to resources about sales lists and statement details. 
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: johnmichalak

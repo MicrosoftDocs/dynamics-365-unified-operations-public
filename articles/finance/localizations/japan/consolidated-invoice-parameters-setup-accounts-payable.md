@@ -2,7 +2,7 @@
 title: Configure consolidated invoice parameters and setup for accounts payable
 description: Learn how to set up and configure consolidated invoices for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/18/2025
 ms.reviewer: johnmichalak

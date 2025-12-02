@@ -2,7 +2,7 @@
 title: Create and confirm a vendor consolidated invoice
 description: Learn how to consolidate vendor invoices each month to calculate the due amount, including a step-by-step process using the JPMF demo data company.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 10/04/2021
 ms.reviewer: johnmichalak

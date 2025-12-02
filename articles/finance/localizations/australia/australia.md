@@ -2,7 +2,7 @@
 title: Australia overview
 description: Access an overview of Dynamics 365 Finance functionality that is specific to Australia, including a table that provides interfaces for various bank names.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 04/13/2021
 ms.reviewer: johnmichalak

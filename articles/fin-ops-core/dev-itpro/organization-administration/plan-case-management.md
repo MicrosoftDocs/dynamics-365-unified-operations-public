@@ -2,7 +2,7 @@
 title: Plan case category security, case processes, and case categories
 description: Learn about the considerations and decisions that you must make during the planning process, before you begin to configure cases.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak

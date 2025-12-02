@@ -2,7 +2,7 @@
 title: Settle vendor consolidated invoices by using settle transactions
 description: Learn how to settle vendor consolidated invoices for Japan by using settle transactions functionality in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/09/2025
 ms.reviewer: johnmichalak

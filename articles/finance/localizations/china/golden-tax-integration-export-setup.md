@@ -2,7 +2,7 @@
 title: Golden tax integration export setup
 description: This article describes how to configure the export format for golden tax integration for China in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/11/2025
 ms.reviewer: johnmichalak

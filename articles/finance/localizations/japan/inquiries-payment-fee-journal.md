@@ -2,7 +2,7 @@
 title: Inquiries of payment fee on journal
 description: Learn how to view payment fee summaries for a journal for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: Set up fixed asset depreciation allocation
 description: This article describes how to create a fixed asset allocation rule and assign a fixed asset allocation rule to a posting profile in Japan with Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/11/2025
 ms.reviewer: johnmichalak
