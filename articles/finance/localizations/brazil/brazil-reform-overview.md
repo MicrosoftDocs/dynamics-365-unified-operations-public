@@ -50,9 +50,9 @@ Import and set up your Tax Calculation configuration with the version that match
 
 | Finance or Supply Chain Management version | Tax configuration version |
 |--------------------------------------------|------------------------------------------|
-| 10.0.46 <br> Build 10.0.2411.0             | - Tax Data Model: 47.                   <br>- Tax Calculation Data Model: 47.73. <br>- FNO Model Mapping: 47.73.44.         <br>- Tax Calculation Configuration: 47.73.265. <br>- Tax Calculation Data Model (Brazil): 47.73.18. <br>- FNO Model Mapping (Brazil): 47.73.44.18. <br>- Tax Calculation Configuration (Brazil): 47.73.265.48. |
-| 10.0.45 <br> Build 10.0.2345.67            | - Tax Data Model: 47                    <br>- Tax Calculation Data Model: 47.73  <br>- FNO Model Mapping: 47.73.44         <br>- Tax Calculation Configuration: 47.73.265 <br>- Tax Calculation Data Model (Brazil): 47.73.18 <br>- FNO Model Mapping (Brazil): 47.73.44.18 <br>- Tax Calculation Configuration (Brazil): 47.73.265.48 |
-| 10.0.44 <br> Build 10.0.2263.141           | - Tax Data Model: 47                    <br>- Tax Calculation Data Model: 47.73  <br>- FNO Model Mapping: 47.73.44         <br>- Tax Calculation Configuration: 47.73.265 <br>- Tax Calculation Data Model (Brazil): 47.73.18 <br>- FNO Model Mapping (Brazil): 47.73.44.18 <br>- Tax Calculation Configuration (Brazil): 47.73.265.48 |
+| 10.0.46 <br> Build 10.0.2428.58             | - Tax Data Model: 50.                   <br>- Tax Calculation Data Model: 50.78  <br>- FNO Model Mapping: 50.78.48         <br>- Tax Calculation Configuration: 50.78.269. <br>- Tax Calculation Data Model (Brazil): 50.78.21. <br>- FNO Model Mapping (Brazil): 50.78.48.21. <br>- Tax Calculation Configuration (Brazil): 50.78.269.55. |
+| 10.0.45 <br> Build 10.0.2345.124            | - Tax Data Model: 50                    <br>- Tax Calculation Data Model: 50.78  <br>- FNO Model Mapping: 50.78.48         <br>- Tax Calculation Configuration: 50.78.269 <br>- Tax Calculation Data Model (Brazil): 50.78.21 <br>- FNO Model Mapping (Brazil): 50.78.48.21 <br>- Tax Calculation Configuration (Brazil): 50.78.269.55 |
+| 10.0.44 <br> Build 10.0.2263.182           | - Tax Data Model: 50                    <br>- Tax Calculation Data Model: 50.78  <br>- FNO Model Mapping: 50.78.48         <br>- Tax Calculation Configuration: 50.78.269 <br>- Tax Calculation Data Model (Brazil): 50.78.21 <br>- FNO Model Mapping (Brazil): 50.78.48.21 <br>- Tax Calculation Configuration (Brazil): 50.78.269.55 |
 
 ## Supported transactions
 
