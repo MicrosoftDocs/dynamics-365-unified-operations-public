@@ -18,17 +18,16 @@ ms.search.region: Global
 [!include [banner](../../includes/preview-banner.md)]
 
 This article lists the features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.46. This version has a build number of 10.0.2428 and is available on the following schedule:
-1. **Preview of release:** October 2025
-1. **General availability of release (self-update):** December 2025
-1. **General availability of release (auto-update):** February 2026
+ - **Preview of release:** October 2025
+ - **General availability of release (self-update):** December 2025
+ - **General availability of release (auto-update):** February 2026
 
 ## Features included in this release
 This section contains a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
 
 | Module or feature area | Feature name | More information |
 |---|---|---|
-| Personnel Management | Expire jobs and job titles (preview) |This feature allows Human Resources Teams to set expiration dates for jobs and job titles in Dynamics 365 Human Resources. Expired items are hidden from selection lists and can’t be assigned to new positions, but all historical data is retained for reporting and compliance. |
-
+| Personnel Management | Expire jobs and job titles (preview) |This feature allows Human resources teams to set expiration dates for jobs and job titles in Dynamics 365 Human Resources. Expired items are hidden from selection lists and can’t be assigned to new positions, but all historical data is retained for reporting and compliance. |
 
 
 ## Feature enhancements included in this release
