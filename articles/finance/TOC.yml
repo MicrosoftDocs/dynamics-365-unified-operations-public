@@ -4379,6 +4379,10 @@
                       href: localizations/turkiye/emea-tur-exchange-difference-invoicing.md
                     - name: Use currency conversion
                       href: localizations/turkiye/emea-tur-currency-conversion.md
+                    - name: Use final year depreciation allocation across months for fixed assets
+                      href: localizations/turkiye/emea-turkiye-final-year-depreciation.md
+                    - name: Use prorated depreciation on fixed assets
+                      href: localizations/turkiye/emea-turkiye-prorated-depreciation.md
                     - name: Export of customer electronic invoices
                       href: localizations/turkiye/emea-turkiye-customer-electronic-invoices.md
                     - name: Use checks and promissory notes

@@ -479,6 +479,8 @@ items:
         href: hr-personnel-personnel-management-workspace.md
       - name: Set up the components of a job
         href: hr-personnel-jobs.md
+      - name: Expire jobs and titles (preview)
+        href: hr-personnel-expire-job-title.md
       - name: Define departments
         href: hr-personnel-define-departments.md
       - name: Add a department to a hierarchy
