@@ -157,7 +157,7 @@ These parameters are general-purpose and are used across the different actions i
 
 ### Outbound flow pipeline
 
-There are six electronic invoice formats for Costa Rica included in the **Costa Rica Electronic Invoice (CR) feature**. Each format requires its own setup and configuration. The formats are:
+There are ten electronic invoice formats for Costa Rica included in the **Costa Rica Electronic Invoice (CR) feature**. Each format requires its own setup and configuration. The formats are:
 
 - **Inventory e-invoice (CRI)**
 - **Inventory Credit Note (CRI)**
@@ -170,13 +170,13 @@ There are six electronic invoice formats for Costa Rica included in the **Costa 
 - **Project Export e-Invoice (CRI)**
 - **Purchase e-invoice (CRI)**
 
-The following sections have guidance on the general configuration steps that apply to all six formats. Specific considerations and requirements for each individual format are explained, so you can ensure that each one is configured correctly according to its unique needs.
+The following sections have guidance on the general configuration steps that apply to all ten formats. Specific considerations and requirements for each individual format are explained, so you can ensure that each one is configured correctly according to its unique needs.
 
 ## Electronic invoice feature
 
 ### Setups-View
 
-After importing the feature, in the second screenshot, five tabs are available: **Versions**, **Configuration**, **Feature parameters**, **Setups**, and **Tags**. Select the **Setups** tab, and then select **View**. This opens the page **Feature version setup**:
+After importing the feature, in the second screenshot, five tabs are available: **Versions**, **Configurations**, **Feature parameters**, **Setups**, and **Tags**. Select the **Setups** tab, and then select **View**. This opens the page **Feature version setup**:
 
 ## Feature version setup
 This page allows you to review and configure the details of the feature setup for Costa Rica. On the left side of this page, there are four sections: **Processing pipeline**, **Applicability rules**, **Variables**, and **Parameters**.
@@ -239,18 +239,6 @@ When configuring the **Transform document** action in the processing pipeline, e
 
 > [!TIP]
 > If the feature name contains "Project", use `InvoiceProject`. If it contains "Inventory", use `InvoiceCustomer`. Incorrect settings will result in empty XML or missing required data.
-
-#### Transform Document parameters
-
-| Name | Description | Value |
-|---|---|---|
-| Input file | Source file provides to the action the data to be executed. | Variable: BusinessDocumentDataModel |
-| Direction | Direction describes which format will be used: import or export | export |
-| Configuration | Configuration describes format which will be executed | Inventory e-invoice (CR): Inventory e-invoice (CR) |
-| Configuration Integration point | Source file provides a data to the reporting runtime | InvoiceCustomer |
-| Custom file name | Custom file name from the client | |
-
-#### Integrate with Edicom parameters
 
 #### Integrate with Edicom parameters
 
@@ -423,8 +411,10 @@ The following grid defines the link between the source table in Dynamics 365 Fin
 
 | Table name               | Context model / Context                  | Electronic document mapping      | Mapping name         | Description                                                                                  |
 |--------------------------|------------------------------------------|----------------------------------|----------------------|----------------------------------------------------------------------------------------------|
-| Customer invoice journal | Customer invoice context model / Customer invoice context | Invoice Model mapping LATAM      | Customer E-Invoice   | Maps customer invoices from the CustInvoiceJour table to the LATAM invoice model for electronic submission. |
-| Project invoice          | Customer invoice context model / Project invoice context  | Invoice Model mapping LATAM      | Project E-Invoice    | Maps project invoices to the LATAM invoice model for electronic submission.                   |
+| Customer invoice journal | Customer invoice context model / Customer invoice context | Invoice Model mapping LATAM      | Customer E-Invoice   | Maps customer invoices to the LATAM invoice model for electronic submission |
+| Project invoice          | Customer invoice context model / Project invoice context  | Invoice Model mapping LATAM      | Project E-Invoice    | Maps project invoices to the LATAM invoice model for electronic submission |
+| Vendor invoice journal   | Customer invoice context model / Self invoice context     | Invoice Model mapping LATAM      | Vendor E-Invoice     | Maps vendor invoices to the LATAM invoice model for electronic submission |
+| Customer transactions    | Customer invoice context model / Payment invoice          | Invoice Model mapping LATAM      | Customer Payments    | Maps customer payments to the LATAM invoice model for electronic submission |
 
 > [!TIP]
 > Ensure that the Context and Mapping name match the document type. Incorrect mappings cause errors in XML generation or submission to DGI.
@@ -467,8 +457,9 @@ Configure the grid as follows:
 | Table name               | Microsoft-owned | Document context model         | Document context         | Electronic document model mapping | Mapping name        |
 |--------------------------|-----------------|--------------------------------|--------------------------|-----------------------------------|---------------------|
 | Customer invoice journal | No              | Customer invoice context model | Customer invoice context | Invoice Model mapping LATAM       | Customer E-Invoice  |
+| Customer transactions    | No              | Customer invoice context model | Payment invoice          | Invoice Model mapping LATAM       | Customer Payments   |
 | Project invoice          | No              | Customer invoice context model | Project invoice context  | Invoice Model mapping LATAM       | Project E-Invoice   |
-
+| Vendor invoice journal   | No              | Customer invoice context model | Vendor invoice journal   | Invoice Model mapping LATAM       | Vendor E-Invoice    |
    
 1. Save your changes, and close the page.
 1. For each table name, follow these steps:
