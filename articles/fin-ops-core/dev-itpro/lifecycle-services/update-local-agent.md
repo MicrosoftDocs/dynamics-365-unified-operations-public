@@ -19,7 +19,7 @@ ms.assetid:
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to update the local agent. The latest version of the local agent is version 3.3.0, which was released in January 2024.
+This article explains how to update the local agent. The latest version of the local agent is version 3.4.0, which was released in February 2025.
 
 > [!IMPORTANT]
 > Do not update the local agent during a servicing operation, even if the preparation phase has been completed. 
