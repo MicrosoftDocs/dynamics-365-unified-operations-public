@@ -57,7 +57,7 @@ If you close earlier months of the acquisition year (for example, after e-Ledger
 
 The following sections show how the system calculates depreciation in the acquisition year and the final year for each Türkiye-specific depreciation method.
 
-## R
+## Reducing balance (Türkiye) depreciation method
 
 The **Reducing balance (Türkiye)** depreciation method automatically adjusts and distributes any remaining depreciation amount evenly in the final year.  
 
