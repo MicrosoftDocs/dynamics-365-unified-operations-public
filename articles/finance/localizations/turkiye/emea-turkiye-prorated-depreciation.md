@@ -3,7 +3,7 @@ title: Use prorated depreciation on fixed assets
 description: Learn how to use prorated depreciation on fixed assets in Microsoft Dynamics 365 Finance for Türkiye.
 author: v-omerorhan
 ms.author: v-omerorhan
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/02/2025
 ms.reviewer: johnmichalak
 audience: Application User
@@ -23,7 +23,7 @@ Prorated depreciation is a calculation method that starts depreciation based on 
 If you use one of the Türkiye-specific depreciation methods, the system adds any depreciation amount that it can't recognize in the acquisition year to the final year and distributes it evenly across all 12 months. This method ensures that both the first year and final year depreciation are calculated proportionally.
 
 Use this behavior for assets where depreciation must begin from the month of acquisition.
-Enable prorated depreciation if you need depreciation to start from the acquisition month rather than applying a full annual amount. 
+Enable prorated depreciation if you need depreciation to start from the acquisition month rather than applying a full annual amount.
 
 Finance supports this feature through the **Prorate depreciation** option in fixed asset books.  
 This option automates the proportional calculation for both the first and the final year of depreciation.  
@@ -38,13 +38,17 @@ Set the **Prorate depreciation** option either:
 - at the fixed asset book level (individual assets), or  
 - at the asset group book level (asset groups).  
 
-### Configure prorated depreciation for a fixed asset
+## Configure prorated depreciation for a fixed asset
+
+To configure prorated depreciation for a fixed asset, follow these steps:
 
 1. Go to **Fixed assets > Fixed assets > Books**.  
 1. Select a fixed asset and open the **Books** page.  
 1. On the **Depreciation** FastTab, set **Prorate depreciation** to **Yes**.  
 
-### Configure prorated depreciation for an asset group  
+### Configure prorated depreciation for an asset group
+
+To configure prorated depreciation for an asset group, follow these steps:  
 
 1. Go to **Fixed assets > Setup > Asset groups**.  
 1. Select an asset group and open the **Asset group books** page.  
@@ -84,7 +88,7 @@ The scenario demonstrates how prorated depreciation works when you apply it with
 | 2028 | 2,625.00 TRY         | 18,000.00 + 13.500.00 = 31,500.00 TRY   | 90,000.00 TRY            | 0.00 TRY       | Includes adjustment from Year 2024 |
 
 The system calculates depreciation only for the months in service in the acquisition year.
-The remaining depreciation amount of **13,500.00 TRY** from Year 2024 is added to Year 2028. The system completes depreciation within the existing service life and distributes the final year amount across 12 months. 
+The remaining depreciation amount of **13,500.00 TRY** from Year 2024 is added to Year 2028. The system completes depreciation within the existing service life and distributes the final year amount across 12 months.
 
 For more information about how to allocate the final year depreciation equally across all months, see [Straight line service life (Türkiye) depreciation method](../../../finance/localizations/turkiye/emea-turkiye-final-year-depreciation.md#straight-line-service-life-türkiye-depreciation-method).
 
@@ -129,7 +133,7 @@ This section compares the Türkiye-specific Prorate depreciation option with the
 Don't confuse the **Prorate depreciation** option in **Fixed asset books** with the **Calculate prorated depreciation** parameter in **Fixed asset parameters**.  
 The standard parameter calculates depreciation in the first year based on the number of days or months that the asset is in service, and it applies to all countries and regions.
 
-The Türkiye-specific **Prorate depreciation** option determines whether depreciation should begin from the acquisition month. This option overrides the behavior of the standard parameter for legal entities in Türkiye and ensures correct calculation in both the acquisition year and the final year. 
+The Türkiye-specific **Prorate depreciation** option determines whether depreciation should begin from the acquisition month. This option overrides the behavior of the standard parameter for legal entities in Türkiye and ensures correct calculation in both the acquisition year and the final year.
 
 | Parameter                              | Location in Finance                        | Scope                  | Purpose |
 |----------------------------------------|--------------------------------------------|------------------------|---------|
@@ -145,7 +149,7 @@ The Türkiye-specific **Prorate depreciation** option determines whether depreci
 
 - [Türkiye localization overview](../../../finance/localizations/turkiye/turkiye.md)
 - [Fixed assets home page](../../../finance/fixed-assets/fixed-assets.md)  
-- [Set up fixed asset groups](../../../finance/fixed-assets/tasks/set-up-fixed-asset-groups.md) 
+- [Set up fixed asset groups](../../../finance/fixed-assets/tasks/set-up-fixed-asset-groups.md)
 - [Create a fixed asset](../../../finance/fixed-assets/tasks/create-fixed-asset.md)  
 - [Use final year depreciation allocation across months for fixed assets](../../../finance/localizations/turkiye/emea-turkiye-final-year-depreciation.md)
 

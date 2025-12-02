@@ -3,7 +3,7 @@ title: Use final year depreciation allocation across months for fixed assets
 description: Learn how to use final year depreciation allocation across months for fixed assets in Microsoft Dynamics 365 Finance for Türkiye.
 author: v-omerorhan
 ms.author: v-omerorhan
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/02/2025
 ms.reviewer: johnmichalak
 audience: Application User
@@ -16,13 +16,11 @@ ms.dyn365.ops.version: AX 10.0.45
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-This article provides an overview of the fixed asset depreciation methods that are specific to Türkiye for final year depreciation allocation in Microsoft Dynamics 365 Finance.  
-It explains how depreciation is calculated in the final year of an asset's useful life.  
+This article provides an overview of the fixed asset depreciation methods that are specific to Türkiye for final year depreciation allocation in Microsoft Dynamics 365 Finance. It explains how depreciation is calculated in the final year of an asset's useful life.  
 
 In Türkiye, you must distribute the remaining depreciation amount in the final year equally across all 12 months.  
 
-Finance supports this requirement with the **Reducing balance (Türkiye)** and **Straight line service life (Türkiye)** depreciation methods.  
-When you select one of these methods in a depreciation profile, the system automatically distributes the final year's depreciation evenly across each month.  
+Finance supports this requirement with the **Reducing balance (Türkiye)** and **Straight line service life (Türkiye)** depreciation methods. When you select one of these methods in a depreciation profile, the system automatically distributes the final year's depreciation evenly across each month.  
 
 For more information about standard depreciation methods, see [Depreciation methods and conventions](../../../finance/fixed-assets/depreciation-methods-conventions.md).  
 
@@ -34,14 +32,13 @@ Using this functionality helps your organization:
 > [!IMPORTANT]  
 > This functionality applies only when you use the **Reducing balance (Türkiye)** and **Straight line service life (Türkiye)** depreciation methods together with the **Full month** depreciation convention.
 >
-> In addition, for the **Reducing balance (Türkiye)** depreciation method, you must enable **Full depreciation** in the depreciation profile.
-> In this case, the system ensures full depreciation within the service life by distributing any remaining net book value across the final year.  
+> In addition, for the **Reducing balance (Türkiye)** depreciation method, you must enable **Full depreciation** in the depreciation profile. In this case, the system ensures full depreciation within the service life by distributing any remaining net book value across the final year.  
 
 ## Behavior when Prorate depreciation is enabled or disabled
 
 The **Straight line service life (Türkiye)** and **Reducing balance (Türkiye)** depreciation methods behave differently depending on the **Prorate depreciation** option.
 
-When you set Prorate depreciation to **No**;
+When you set Prorate depreciation to **No**:
 
 - The system calculates a **full year of depreciation for the acquisition year**, even if you acquire the asset later in the year.  
 - Depreciation is distributed evenly across all 12 months.  
@@ -50,7 +47,7 @@ When you set Prorate depreciation to **No**;
 
 When you enable **Summarize depreciation**, the system posts all depreciation amounts—both prior-period cumulative depreciation and the acquisition-month depreciation—in one summarized proposal. This approach ensures consistent postings without creating entries in closed periods.
 
-When you set Prorate depreciation to **Yes**;
+When you set Prorate depreciation to **Yes**:
 
 - The system calculates depreciation **only for the months in service** during the acquisition year.  
 - Depreciation for the **remaining months** of the acquisition year is carried forward to the final year.  
@@ -60,11 +57,11 @@ If you close earlier months of the acquisition year (for example, after e-Ledger
 
 The following sections show how the system calculates depreciation in the acquisition year and the final year for each Türkiye-specific depreciation method.
 
-## Reducing balance (Türkiye) depreciation method
+## R
 
 The **Reducing balance (Türkiye)** depreciation method automatically adjusts and distributes any remaining depreciation amount evenly in the final year.  
 
-### Set up the depreciation profile  
+### Set up the depreciation profile using the reducing balance (Türkiye) depreciation method
 
 To create a depreciation profile with the **Reducing balance (Türkiye)** depreciation method, follow these steps:
 
@@ -90,11 +87,9 @@ To configure depreciation parameters in a specific asset book, follow these step
 
 ### Scenario – Reducing balance (Türkiye)
 
-This scenario shows how depreciation is calculated when you set the **Prorate depreciation** option to **No**. 
-In this case, the system calculates a full year of depreciation for the acquisition year, even if you acquire the asset later in the year.
+This scenario shows how depreciation is calculated when you set the **Prorate depreciation** option to **No**. In this case, the system calculates a full year of depreciation for the acquisition year, even if you acquire the asset later in the year.
 
-When you generate the first depreciation proposal in the acquisition month, the system can include cumulative depreciation for earlier unposted months of the year.  
-To consolidate this amount with the depreciation for the acquisition month in a single posting, enable the **Summarize depreciation** option in the depreciation proposal.
+When you generate the first depreciation proposal in the acquisition month, the system can include cumulative depreciation for earlier unposted months of the year. To consolidate this amount with the depreciation for the acquisition month in a single posting, enable the **Summarize depreciation** option in the depreciation proposal.
 
 | Parameter          | Value             |
 |--------------------|-------------------|
@@ -120,8 +115,7 @@ To consolidate this amount with the depreciation for the acquisition month in a 
 | 2027 | 720.00 TRY           | 8,640.00 TRY        | 87,040.00 TRY            | 12,960.00 TRY    | Standard annual depreciation |
 | 2028 | 1,080.00 TRY         | 12,960.00 TRY       | 100,000.00 TRY           | 0.00 TRY         | Final year depreciation (12,960.00 TRY) is divided equally across 12 months, resulting in 1,080.00 TRY per month |
 
-When you set the **Prorate depreciation** option to **No**, the system always calculates the full annual depreciation amount for the acquisition year.  
-In the final year, the system distributes the remaining net book value evenly across all 12 months.
+When you set the **Prorate depreciation** option to **No**, the system always calculates the full annual depreciation amount for the acquisition year. In the final year, the system distributes the remaining net book value evenly across all 12 months.
 
 ### Comparison with standard Reducing balance depreciation method  
 
@@ -191,7 +185,7 @@ For detailed information about using prorated depreciation with last year deprec
 
 The **Straight line service life (Türkiye)** depreciation method automatically distributes any remaining depreciation amount equally across all 12 months in the final year when prorated depreciation is used.  
 
-### Set up the depreciation profile
+### Set up the depreciation profile using the straight line service life (Türkiye) depreciation method
 
 To create a depreciation profile with the **Straight line service life (Türkiye)** depreciation method, follow:
 
