@@ -45,7 +45,7 @@ Before assigning device based security roles to users administrators must ensure
 | Device based security roles must be used only for users who would not otherwise require a user license | <ul><li>Any production floor workers, retail store managers, or warehouse workers who require and will be assigned a user license will already have continued access and do not need the device based security role assignment.</li></ul> |
 | Users with device based security roles must ensure scoped access | <ul><li>All production floor workers, retail store managers, or warehouse workers who are assigned device based security roles must not access functionality beyond the scope of their respective job function as defined in the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544). |
 
-In addition to the above requirements, administrators should also be aware that
+In addition to the above requirements, administrators should be aware that
 - **Device based security roles are temporary**
   - Device based security roles are meant to enable access until device license enforcement takes effect at a later date.
   - When device license enforcement takes effect Microsoft will validate that the access is coming from a licensed device. These roles will then be deprecated, and eventually removed.
