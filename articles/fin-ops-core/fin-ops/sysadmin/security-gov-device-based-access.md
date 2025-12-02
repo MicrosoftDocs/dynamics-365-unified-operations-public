@@ -28,7 +28,7 @@ While the vast majority of users require user licenses as a part of their job fu
 
 To ensure continued access for users who rely solely on licensed devices to access Dynamics 365 Finance and Operations applications, administrators must temporarily assign device based security roles until device license enforcement takes effect at a later date. 
 
-The table below lists the device based security roles that can be assigned based on the job function.
+The table below lists the device based security roles that can be assigned for each corresponding job function.
 
 | Job function | Device based security role |
 |--- | --- |
