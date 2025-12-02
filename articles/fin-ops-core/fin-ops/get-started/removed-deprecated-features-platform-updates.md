@@ -4,7 +4,7 @@ description: Learn about features that have been removed, or that are planned fo
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 11/17/2025
+ms.date: 12/02/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -27,9 +27,9 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that are changed or removed in each version of finance and operations apps.
 
-## Feature deprecation effective October 2025
+## Feature deprecation effective February 2027
 
-### The Data Integrator templates for Dynamics 365 Field Service will no longer be available after October 30, 2026
+### The Data Integrator templates for Dynamics 365 Field Service will no longer be available after February 28, 2027
 
 | &nbsp;  | &nbsp;  |
 |---|---|
@@ -37,7 +37,7 @@ Detailed information about objects in finance and operations apps can be found i
 | **Replaced by another feature?** | Yes |
 | **Product areas affected** | Microsoft finance and operations applications |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | Deprecated. The Data Integrator templates for Dynamics 365 Field Service will no longer be available after October 30, 2026. This integration works by synchronizing work orders, agreements, inventory, and projects between Field Service and Supply Chain Management. Instead, look to a simpler, more integrated Field Service experience. Learn more in [Connect Field Service to finance and operations](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/connect-field-service-finance-operations) and [Link work orders to projects for unified financials](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/link-work-orders-projects-unified-financials). |
+| **Status** | Deprecated. The Data Integrator templates for Dynamics 365 Field Service will no longer be available after February 28, 2027. This integration works by synchronizing work orders, agreements, inventory, and projects between Field Service and Supply Chain Management. Instead, look to a simpler, more integrated Field Service experience. Learn more in [Connect Field Service to finance and operations](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/connect-field-service-finance-operations) and [Link work orders to projects for unified financials](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/link-work-orders-projects-unified-financials). |
 
 ## Feature deprecation effective April 2025
 
@@ -52,12 +52,12 @@ Detailed information about objects in finance and operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | Dynamics 365 Translation Service deprecated, and will reach end-of-support on October 15, 2025. |
 
-### Anonymous access is disabled for Finance and Operations managed storage accounts.
+### Anonymous access is disabled for Finance and Operations managed storage accounts
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | As part of our ongoing commitment to strengthening security, a recent review has identified that some storage accounts are currently configured to allow anonymous access. To enhance the protection of data, anonymous access is disabled for the storage accounts. Anonymous access presents a potential security risk. |
-| Replaced by another feature?     | None | 
+| Replaced by another feature?     | None |
 | What do you need to do?          | <p>This change allows for greater control and security where you can manage access policies. For more details, visit [Create & Secure Your Own Storage Account](/azure/storage/common/storage-account-create?tabs=azure-portal). </p><p>Use secure access methods instead of public url's: Replace public URLs with User Delegation SAS urls. For more details, visit [Grant Limited Access with SAS](/azure/storage/common/storage-sas-overview).</p> |
 | Product areas affected             | Any integration/interaction with a finance and operations managed storage account is affected. |
 | Deployment option                  | All |
@@ -74,7 +74,7 @@ Detailed information about objects in finance and operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | <p>Starting July 1, 2025, the changes will be automatically applied to all newly created environments. Rollout for the change has started in the existing Sandbox environments from April 15, 2025 to July 31, 2025. Following this, in the Production environments from May 1, 2025 to August 31, 2025 in a phased manner based on the PQU schedules. Changes are backported to 10.0.42 (PU66) and all later releases. No exceptions will be provided for any environments. </p><p>For more information, and for updates about this change, see [Finance and operations storage account security updates](../../dev-itpro/sysadmin/storage-acct-security.md).</p> |
 
-### Platform is changing the authentication protocol from password based auth to Microsoft Entra ID based authentication for 10.0.39 and greater releases.
+### Platform is changing the authentication protocol from password based auth to Microsoft Entra ID based authentication for 10.0.39 and greater releases
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -92,15 +92,15 @@ Detailed information about objects in finance and operations apps can be found i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The Active Directory Authentication Library (ADAL) doesn't meet the needs for safe authentication and is no longer maintained. |
-| Replaced by another feature?     | Microsoft Authentication Library (MSAL) | 
-| What do you need to do?          | The reference to the assembly implementing ADAL was removed. This removal causes compilation errors if the ADAL APIs are referenced from your code. You must port your code and replace ADAL references with Microsoft Authentication Library (MSAL) as described in [Migrate applications to the Microsoft Authentication Library](/entra/identity-platform/msal-migration).
+| Replaced by another feature?     | Microsoft Authentication Library (MSAL) |
+| What do you need to do?          | The reference to the assembly implementing ADAL was removed. This removal causes compilation errors if the ADAL APIs are referenced from your code. You must port your code and replace ADAL references with Microsoft Authentication Library (MSAL) as described in [Migrate applications to the Microsoft Authentication Library](/entra/identity-platform/msal-migration). |
 | Product areas affected             | All code that references ADAL APIs |
 | Deployment option                  | All |
 | **Status**                         | Effective as of version 10.0.43 |
 
 ## Feature deprecation effective October 2024
 
-### User Authentication Changes in Finance and Operations: Transition to Object ID and Tenant ID 
+### User Authentication Changes in Finance and Operations: Transition to Object ID and Tenant ID
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -126,7 +126,7 @@ Detailed information about objects in finance and operations apps can be found i
 
 ### End of support for sharing storage account connection strings via public API GetCsuStorageConnectionString
 
-Public method **Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString()** will be deprecated. 
+Public method **Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString()** will be deprecated.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -137,7 +137,7 @@ Public method **Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetC
 | **Deployment option**              | All |
 | **Status**                         | <p>The rollout of this change is being done in phases, beginning with sandbox environments. The change will then be applied in production environments for tenants that were created after August 19, 2024. The full rollout is estimated in October 2024. Changes will be backported to 10.0.39 (PU63) and all later releases. The method will be fully deprecated for all finance and operations customers in 10.0.43 (PU67) service updates (March 2025). For more information, see the [service updates schedule](../../dev-itpro/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).</p><p>For updates, see [Finance and operations storage account security updates](../../dev-itpro/sysadmin/storage-acct-security.md).</p> |
 
-### Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022.
+### Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -188,7 +188,7 @@ Public method **Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetC
 
 ## Feature deprecation effective April 2024
 
-### Token resource or audience without an environment URL in finance and operations apps 
+### Token resource or audience without an environment URL in finance and operations apps
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -200,7 +200,7 @@ Public method **Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetC
 
 To troubleshoot unauthorized 401 errors, see [Check token compliance](../../dev-itpro/data-entities/troubleshoot-service-authentication.md#check-token-compliance).
 
-### Multitenant apps without a service principal in the Microsoft Entra ID tenant 
+### Multitenant apps without a service principal in the Microsoft Entra ID tenant
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -215,7 +215,7 @@ To troubleshoot unauthorized 401 errors, see [Check token compliance](../../dev-
 
 ## Feature deprecation effective March 2024
 
-### Non Microsoft Entra ID external user sign-in 
+### Non Microsoft Entra ID external user sign-in
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -232,9 +232,9 @@ To troubleshoot unauthorized 401 errors, see [Check token compliance](../../dev-
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The SHA1 algorithm was widely recognized as vulnerable to security breaches due to its susceptibility to collision attacks. To address this security requirement, imports for ISV licenses that are generated using the SHA1 cryptographic algorithm are longer supported. |
-| **Replaced by another feature?**   | SHA256 - To ensure the security and integrity of your system and data, we strongly encourage all our customers to migrate to the more secure SHA256 algorithm for generating ISV licenses. 
+| **Replaced by another feature?**   | SHA256 - To ensure the security and integrity of your system and data, we strongly encourage all our customers to migrate to the more secure SHA256 algorithm for generating ISV licenses. |
 
-Migrating to SHA256 is straightforward: You need to use signature version 2 or keep this field empty while generating license using AxUtil tool to generate a new license using SHA256. For more information, see [Independent software vendor (ISV) licensing](../../dev-itpro/dev-tools/isv-licensing.md). 
+Migrating to SHA256 is straightforward: You need to use signature version 2 or keep this field empty while generating license using AxUtil tool to generate a new license using SHA256. For more information, see [Independent software vendor (ISV) licensing](../../dev-itpro/dev-tools/isv-licensing.md).
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -244,7 +244,7 @@ Migrating to SHA256 is straightforward: You need to use signature version 2 or k
 
 ## Feature deprecation effective January 2024
 
-### System Admin > Inquiries > User Log 
+### System Admin > Inquiries > User Log
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -266,7 +266,7 @@ Migrating to SHA256 is straightforward: You need to use signature version 2 or k
 
 ## Feature deprecation effective October 2022
 
-### Microsoft SQL Server 14.x or older 
+### Microsoft SQL Server 14.x or older
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -275,7 +275,6 @@ Migrating to SHA256 is straightforward: You need to use signature version 2 or k
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. End of support date is targeted for 10.0.28 (PU 52), which went out of support on October 21, 2022. |
-
 
 ## Feature deprecation effective August 2022
 
@@ -309,7 +308,6 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | AX 2012 versions | Yes | No | No |
 | Work items stored in Lifecycle Services storage | Yes | Yes | No |
 | Hotfix requests | Yes | Yes | No |
- 
 
 ### Transport Layer Security (TLS) RSA cipher suites
 
@@ -321,10 +319,9 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Deployment option**              | Cloud deployments |
 | **Status**                         | Deprecated. Customers must upgrade their servers before January 2023. For more information about configuring TLS Cipher Suite order, see [Manage Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
 
-
 ## Feature deprecation effective June 2022
 
-### Finance and operations (Dynamics 365) mobile application and mobile platform 
+### Finance and operations (Dynamics 365) mobile application and mobile platform
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -333,7 +330,6 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. End of support date is targeted for October 2024. |
-
 
 ## Platform updates for version 10.0.29 of finance and operations apps
 
@@ -347,10 +343,9 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. |
 
-
 ## Feature deprecation effective April 2022
 
-### XML URL resolution in Data management 
+### XML URL resolution in Data management
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -394,7 +389,6 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
 | **Status**                         | Removed |
 
-
 ## Feature deprecation effective October 2021
 
 ### "Show related document attachments" feature
@@ -419,7 +413,6 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. Planned removal date is October 2022. |
 
-
 ### SystemNotificationsManager.AddNotification API
 
 | &nbsp;  | &nbsp; |
@@ -441,7 +434,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. The **Skype enabled** setting was turned off starting in release 10.0.21. The removal of this setting is targeted for April 2022; however, the feature stops functioning after the Skype team shuts down the service. |
- 
+
 ## Feature deprecation effective August 2021
 
 ### Microsoft Azure SQL reports in Lifecycle Services
@@ -476,7 +469,6 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Deployment option**              | Cloud deployment |
 | **Status**                         | Deprecated: Planned removal date is May 2022. |
 
-
 ## Feature removed effective January 28, 2021
 
 ### Batch job to handle SQL index defragmentation
@@ -489,9 +481,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Deployment option**              | Cloud deployment - affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
 | **Status**                         | This feature is removed. |
 
-
 ## Platform updates for version 10.0.17 of finance and operations apps
-
 
 ### Visual Studio 2015
 
@@ -503,7 +493,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: After you update to version 10.0.17, the previous X++ tools are removed from Visual Studio 2015, and the updated tools won't install on Visual Studio 2015. There isn't an impact on hosted builds. For build virtual machines, the build pipeline (build definition) needs to be manually updated to change the dependency from MSBuild 14.0 (Visual Studio 2015) to MSBuild 15.0 (Visual Studio 2017) as described in [Update a legacy pipeline in Azure Pipelines](../../dev-itpro/dev-tools/pipeline-msbuild-update.md). |
 
-### User avatar 
+### User avatar
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -547,10 +537,9 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Deployment option**              | Development virtual machines |
 | **Status**                         | With version 10.0.15, the add-in is no longer included in the Visual Studio tools. |
 
-
 ## Platform updates for version 10.0.14 of finance and operations apps
 
-### Online users page 
+### Online users page
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -560,11 +549,9 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Deployment option**              | All |
 | **Status**                         | This page will be removed in a future release.   |
 
-
 ## Platform updates for version 10.0.13 of finance and operations apps
 
-
-### Custom code defined in SSRS report properties 
+### Custom code defined in SSRS report properties
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -574,11 +561,11 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Deployment option**              | All |
 | **Status**                         | With version 10.0.13, the compiler begins issuing a warning for instances where custom code is detected in an SSRS report definition. To fix the issue, open the report design definition and remove all custom code artifacts. This warning will be replaced with a compiler error in a future update.   |
 
-### Upgrade of three jQuery component libraries 
+### Upgrade of three jQuery component libraries
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Three jQuery component libraries are being updated for security fixes and to maintain currency.   
+| **Reason for deprecation/removal** | Three jQuery component libraries are being updated for security fixes and to maintain currency. |
 | **Replaced by another feature?**   | The following libraries are being affected: jQuery (to version 3.5.0 from version 2.1.4), jQuery UI (to version 1.12.1 from version 1.11.4), jQuery qTip (to version 3.0.3 from 2.2.1). Migration guidance was provided online by jQuery.  |
 | **Product areas affected**         | Extensible controls, custom JavaScript code utilizing deprecated, or removed APIs. |
 | **Deployment option**              | All |
@@ -594,7 +581,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Deployment option**              | All |
 | **Status**                         | The new grid control is mandatory with the October 2022 release (version 10.0.29). The **forceLegacyGrid()** API is currently still being honored if the old grid is still needed; however, this API is deprecated in the October 2023 release. When the deprecation of this API is announced, it's available for at least 12 months before no longer being available. |
 
-### Personalization without saved views 
+### Personalization without saved views
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -603,7 +590,6 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
 | **Status**                         | In version 10.0.13/Platform update 37, the saved views feature is generally available, and customers can optionally turn on this feature. The saved views feature becomes mandatory in the October 2021 release. |
-
 
 ## Platform updates for version 10.0.12 of finance and operations apps
 
@@ -671,7 +657,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Deployment option**              | All |
 | **Status**                         | The user selection drop-down list was removed from the request change dialog box in Platform update 32. Request change requests are automatically sent to the originator as intended. For more information about this functionality, see [Actions in workflow approval processes](../organization-administration/workflow-actions.md?toc=%2fdynamics365%2fcommerce%2ftoc.json#request-change). |
 
-### Embedded drill-through links are no longer supported in paginated documents rendered by the cloud-hosted service 
+### Embedded drill-through links are no longer supported in paginated documents rendered by the cloud-hosted service
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -682,8 +668,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Status**                         | This feature is actively being removed from the service.<br><br>The modern client offers numerous options for producing views that include auto generated links to help navigating the application. Paginated documents rendered by the service are recommended for external communications that are emailed, archived, and printed for recipients. We improved the experience for previewing documents directly in the browser, which offers direct access to local printers. For more information, see [Preview PDF documents with an embedded viewer](../../dev-itpro/analytics/preview-pdf-documents.md). |
 
 ## Previous announcements about removed or deprecated features
+
 To learn more about removed or deprecated features in previous releases, see [Removed or deprecated features in previous releases](../../dev-itpro/migration-upgrade/deprecated-features.md).
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
