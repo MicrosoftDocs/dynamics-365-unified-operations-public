@@ -404,6 +404,8 @@
             href: dev-itpro/MPOS-or-CPOS.md
           - name: Store Commerce app for mobile platforms
             href: dev-itpro/store-commerce-mobile.md
+          - name: Enable Camera-Based Product Identification in Store Commerce
+            href: enable-camera-based-product-identification.md
           - name: Enable self-checkout in the Store Commerce app
             href: store-commerce-self-check-out.md
           - name: Migrate Modern POS to Store Commerce
