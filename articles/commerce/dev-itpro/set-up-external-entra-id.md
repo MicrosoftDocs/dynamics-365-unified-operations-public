@@ -91,6 +91,7 @@ For information on customizing the default branding in user flows, see [Customiz
 
 > [!NOTE] 
 > Customizing the login screen further currently involves using [Native authentication in Microsoft Entra External ID](/entra/identity-platform/concept-native-authentication). Modules can be built to interact with these APIs directly.
+> Modules changes supporting EEID are present in SSK version 9.55.8. Ensure you reference this version or later for full compatibility with Entra External ID features.
 
 To create user flow in External ID, follow these steps:
 
