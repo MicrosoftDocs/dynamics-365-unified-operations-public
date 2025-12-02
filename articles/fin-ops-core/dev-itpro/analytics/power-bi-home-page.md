@@ -1,10 +1,10 @@
 ---
 title: Power BI content home page
 description: Learn about PowerBI.com solutions that are available and points you to resources where you can learn more about the solutions.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 10/02/2019
+ms.date: 10/27/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: IT Pro
@@ -23,10 +23,10 @@ The following PowerBI.com solutions are available for application environments.
 
 ## PowerBI.com solutions available from Lifecycle Services (LCS)
 
-The following PowerBI.com solutions are available in the Shared assets library of LCS. Refer to the version information in the Shared assets library to download the correct version for your environment.
+The Shared assets library of LCS provides the following PowerBI.com solutions. Check the version information in the Shared assets library to download the correct version for your environment.
 
 > [!NOTE]
-> Most of the PowerBI.com solutions in the following list have been embedded in analytical workspaces in recent versions. Using analytical workspaces eliminates the need to download these solutions from the Shared assets library in LCS. The topics in this list indicate where these PowerBI.com solutions have been embedded where applicable.
+> Most of the PowerBI.com solutions in the following list are embedded in analytical workspaces in recent versions. By using analytical workspaces, you don't need to download these solutions from the Shared assets library in LCS. The topics in this list indicate where these PowerBI.com solutions are embedded where applicable.
 
 - [Actual vs budget](ledger-budgets-power-bi.md)
 - [Cash overview](../../../finance/cash-bank-management/Cash-Overview-Power-BI-content.md)
@@ -51,11 +51,10 @@ The following PowerBI.com solutions are available in the Shared assets library o
 The following PowerBI.com solutions are available from [Microsoft AppSource](https://appsource.microsoft.com).
 
 > [!NOTE]
-> These solutions have been deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> These solutions are deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 - Cost management
 - [Financial performance](financial-performance-power-bi-content-pack.md)
 - [Retail channel performance](retail-channel-performance-dashboard-power-bi-data.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

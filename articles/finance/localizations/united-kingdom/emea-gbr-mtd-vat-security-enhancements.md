@@ -1,18 +1,18 @@
 ---
-title: Security enhancements in UK MTD VAT integration for cloud-based deployments (preview)
+title: Security enhancements in UK MTD VAT integration for cloud-based deployments
 description: Learn how to enable the security enhancements in the UK Making Tax Digital (MTD) value-added tax (VAT) integration for cloud-based deployments feature in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 11/18/2025
+ms.date: 11/25/2025
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2025-03-25
 ---
 
-# Security enhancements in UK MTD VAT integration (cloud-based deployments only)(preview)
+# Security enhancements in UK MTD VAT integration (cloud-based deployments only)
 
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE[banner](../../includes/preview-banner.md)]
@@ -21,13 +21,15 @@ ms.search.validFrom: 2025-03-25
 > - This feature is a production-ready preview feature.
 > - This feature is subject to supplemental terms of use. By enabling this feature, you confirm that you read and understood the preview feature terms and conditions. [View the preview terms.](https://go.microsoft.com/fwlink/?linkid=2105274)
 
-This article explains how to enable the security enhancements in the UK Making Tax Digital (MTD) value-added tax (VAT) integration for cloud-based deployments feature in Microsoft Dynamics 365 Finance. It also describes changes to the user experience that are introduced together with this feature. This feature doesn't introduce any changes to on-premises deployments of Dynamics 365 Finance.
+This article explains how to enable the security enhancements in the UK Making Tax Digital (MTD) value-added tax (VAT) integration for cloud-based deployments feature in Microsoft Dynamics 365 Finance. It also describes changes to the user experience that are introduced together with this feature. This feature doesn't introduce any changes to **on-premises deployments** of Dynamics 365 Finance.
 
 To meet security requirements, Microsoft is updating the direct system-to-system integration of Dynamics 365 Finance with the His Majesty's Revenue and Customs (HMRC) web service that's used to submit VAT returns for companies that are registered for VAT in the United Kingdom. These changes involve the adoption of an electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials that are essential for software authorization in the HMRC application programming interfaces (APIs).
 
 > [!NOTE]
-> - By June 6, 2025, the direct integration with external endpoints that His Majesty's Revenue and Customs (HMRC) provides for the submission of VAT returns from on-premises deployments of Finance won't be accessible. Learn more in [Features removed or deprecated in the Finance 10.0.43 release](../../get-started/removed-deprecated-features-finance.md#making-tax-digital--vat-return-submission-in-the-united-kingdom-for-on-premises-deployments).
-> - By June 6, 2025, we plan to end support for batch-mode submission of VAT returns in the Making Tax Digital feature. However, the report (VAT 100) in Excel and JavaScript Object Notation (JSON) formats can still be generated in batch mode. Learn more in [Features removed or deprecated in the Finance 10.0.43 release](../../get-started/removed-deprecated-features-finance.md#batch-submission-of-vat-returns-in-the-uk-via-making-tax-digital-for-vat-in-cloud-deployments).
+> - The **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature strengthens the security of integrations with external web services (HMRC's APIs). Plan your transition and adopt this feature in a timely manner. However, although encouraged, the **feature is not mandatory**, and organizations can continue using the existing integration approach, with the feature disabled, when interacting with HMRC's APIs until they're ready to enable it. An announcement will be made when the feature is scheduled to become mandatory.
+> - By June 6, 2025, the direct integration with external endpoints that His Majesty's Revenue and Customs (HMRC) provides for the submission of VAT returns from **on-premises deployments** of Finance won't be accessible. Learn more in [Features removed or deprecated in the Finance 10.0.43 release](../../get-started/removed-deprecated-features-finance.md#making-tax-digital--vat-return-submission-in-the-united-kingdom-for-on-premises-deployments).
+> - By June 6, 2025, Microsoft plans to **end support for batch-mode submission** of VAT returns in the Making Tax Digital feature. However, the **report (VAT 100) in Excel and JavaScript Object Notation (JSON) formats can still be generated in batch** mode. Learn more in [Features removed or deprecated in the Finance 10.0.43 release](../../get-started/removed-deprecated-features-finance.md#batch-submission-of-vat-returns-in-the-uk-via-making-tax-digital-for-vat-in-cloud-deployments).
+> - If you encounter any issues or have questions about this feature, please refer to the [FAQ article](emea-gbr-mtd-vat-frequently-asked-questions.md) for more guidance and troubleshooting steps.
 
 ## Prerequisites
 
@@ -49,32 +51,43 @@ It's also available in the following versions of Finance:
 
 ### Import the required ER configuration updates
 
-To work with the **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature, you must import the following versions or later of Electronic Reporting (ER) configurations into Finance:
+To work with the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature, you must import the following versions or later of Electronic Reporting (ER) configurations into Finance:
 
-- MTD VAT model mapping, version 46.74, under the Electronic Messages framework model
-- MTD VAT authorization format (UK), version 46.17, under the Electronic Messages framework model
-- MTD VAT web request headers format (UK), version 46.48, under the Electronic Messages framework model
-- MTD VAT return response importing JSON (UK), version 46.14, under the Electronic Messages framework model
-- MTD VAT interoperation (UK), version 31.11, under the Tax declaration model
+- MTD VAT model mapping, version 46.**75**, under the Electronic Messages framework model
+- MTD VAT authorization format (UK), version 46.**20**, under the Electronic Messages framework model
+- MTD VAT web request headers format (UK), version 46.**49**, under the Electronic Messages framework model
+- MTD VAT return response importing JSON (UK), version 46.**14**, under the Electronic Messages framework model
+- MTD VAT interoperation (UK), version 31.**12**, under the Tax declaration model
   
-Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+For more information about how to import ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+
+> [!IMPORTANT]
+> When you turn off the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in your environment, and you submit requests to HMRC—such as retrieving VAT obligations or submitting a VAT return—use the following versions of the ER configurations:
+> - MTD VAT model mapping, version 46.**72**, under the Electronic Messages framework model
+> - MTD VAT authorization format (UK), version 46.**15**, under the Electronic Messages framework model
+> - MTD VAT web request headers format (UK), version 46.**47**, under the Electronic Messages framework model
+> - MTD VAT return response importing JSON (UK), version 46.**13**, under the Electronic Messages framework model
+> - MTD VAT interoperation (UK), version 31.**10**, under the Tax declaration model
 
 ### Enable the Electronic Invoicing add-in
 
 To comply with security requirements, you must enable the Electronic Invoicing add-in. This add-in acts as an intermediary, and ensures secure storage and management of credentials that are required for software authorization in the HMRC APIs. Enabling this functionality is a crucial step in maintaining a secure and compliant integration between Finance and the HMRC web service for the submission of VAT returns.
 
-Learn more in [Install the add-in for Electronic invoicing microservices](../global/gs-e-invoicing-set-up-overview.md#install-the-add-in-for-electronic-invoicing-microservices).
+For more information, see [Install the add-in for Electronic invoicing microservices](../global/gs-e-invoicing-set-up-overview.md#install-the-add-in-for-electronic-invoicing-microservices).
 
 ## Enable security enhancements in UK MTD VAT integration
 
-To enable the **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, follow these steps.
+> [!IMPORTANT]
+> Before you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, make sure you complete this step for all legal entities that interact with HMRC's APIs: [Import a package of data entities that includes a predefined EM setup](emea-gbr-mtd-vat-integration-setup.md#entities).
+
+To enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, follow these steps.
 
 1. Go to **Workspaces** \> **Feature management**.
-1. In the list of features, search for **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration (cloud-based deployments only)**.
+1. In the list of features, search for **Security enhancements in UK MTD VAT integration (cloud-based deployments only)**.
 1. Select **Enable now**.
 
 > [!NOTE]
-> - This feature is a production-ready preview feature for companies that use direct integration of their **cloud-based** Finance instance with MTD VAT APIs of HMRC.
+> - This feature is for companies that use direct integration of their **cloud-based** Finance instance with MTD VAT APIs of HMRC.
 > - When you enable this feature, your UK MTD VAT TEST and UK MTD VAT return electronic messaging processing automatically updates to enhance the security of your Finance integration for direct submission of VAT returns for your UK VAT registration.
 > - The following actions of the **Web service** type changed to the **Executable class** type: Retrieve VAT obligations, Test retrieve VAT obligations, Submit VAT return, Test submit VAT return, Request VAT liabilities, and Request VAT payments.
 > - After you enable this feature, you can't disable it.
@@ -117,7 +130,7 @@ To validate the integration with sandbox MTD endpoints of HMRC from your sandbox
 
 ## Steps after you activate the feature in your production environment
 
-After you enable the **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in your Finance production environment, your environment is ready to work with MTD endpoints of HMRC.
+After you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in your Finance production environment, your environment is ready to work with MTD endpoints of HMRC.
 
 To integrate with production MTD endpoints of HMRC, use the user ID and password for authorization.
 
@@ -148,15 +161,12 @@ To validate the integration with production MTD endpoints of HMRC from your prod
 1. In this step, the authorization is completed, and the VAT obligation request begins. In the **Fraud prevention headers** dialog, select **Submit** to continue.
 1. On the **Messages** FastTab, you should notice that new electronic messages were created as a result of the successful VAT obligation request to HMRC's production endpoint.
 
-The authorization lasts 100 days. After the authorization expires, it's automatically reinitiated when a request to an HMRC endpoint is initiated. You don't have to reauthorize from the **Web application** page.
+**The authorization lasts 100 days**. After the authorization expires, it's automatically reinitiated when a request to an HMRC endpoint is initiated. You don't have to reauthorize from the **Web application** page.
 
 ## Further details
 
-When you enable the **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, you don't need to authorize from the **Web application** page. The authorization from the **Web application** page isn't available anymore. Instead, the system automatically controls the authorization period (100 days). It initiates the authorization when required during a request to an HMRC endpoint.
+When you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in Finance, you don't need to authorize from the **Web application** page. The authorization from the **Web application** page isn't available anymore. Instead, the system automatically controls the authorization period (100 days). It initiates the authorization when required during a request to an HMRC endpoint.
 
 The **Client ID** and **Client secret** fields that were previously available on the **Web application** page aren't used in the **UK MTD VAT TEST** and **UK MTD VAT returns** processing. The Electronic Invoicing add-in automatically provides client ID and client secret information while it transfers the requests to HMRC endpoints.
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

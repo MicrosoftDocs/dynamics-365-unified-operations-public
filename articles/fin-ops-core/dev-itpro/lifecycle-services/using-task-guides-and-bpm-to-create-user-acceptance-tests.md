@@ -1,8 +1,8 @@
 ---
 title: Create and automate user acceptance tests
 description: Learn about using Task guides and BPM to create and execute acceptance test suites, including the process of creating a scenario acceptance testing BPM library.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 09/30/2025
 ms.reviewer: johnmichalak

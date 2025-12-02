@@ -2,9 +2,9 @@
 title: Classification of localization features
 description: Learn about the difference between regulatory and competitive feature and shows how the feature type is used in the title of the feature.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 11/10/2025
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global
@@ -17,9 +17,9 @@ ms.assetid: 7e2031b4-a092-482e-a76d-1e582edecd86
 
 [!include [banner](../includes/banner.md)]
 
-As part of the requirements for LCS solutions for localization and translation, localization features must be classified as either regulatory or competitive in the business process modeler (BPM) library in Microsoft Dynamics Lifecycle Services (LCS). This article explains the difference between these two types of feature and shows how the feature type is used in the title of the feature.
+As part of the requirements for Lifecycle Services solutions for localization and translation, localization features must be classified as either regulatory or competitive in the business process modeler (BPM) library in Microsoft Dynamics Lifecycle Services (LCS). This article explains the difference between these two types of feature and shows how the feature type is used in the title of the feature.
 
-Localization features must be classified as either regulatory or competitive in the Business process modeler (BPM) library in Microsoft Dynamics Lifecycle Services (LCS). The following definitions will help you distinguish the two types of features:
+Localization features must be classified as either regulatory or competitive in the Business process modeler (BPM) library in Microsoft Dynamics Lifecycle Services. The following definitions will help you distinguish the two types of features:
 
 -   **Regulatory features** – Organizations that do business in a particular country/region must comply with country/region-specific laws and regulations as they handle their daily business transactions and operations, and meet their legal obligations for activities that are conducted in that country/region. These laws and regulations are enforced, and non-adherence can lead to severe consequences for an organization that does business in that country/region.
 -   **Competitive features** – This category includes all other features that aren't considered regulatory features according to the preceding definition.
