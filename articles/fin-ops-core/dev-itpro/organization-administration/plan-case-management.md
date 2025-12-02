@@ -4,7 +4,7 @@ description: Learn about the considerations and decisions that you must make dur
 author: kfend
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 12/02/2025
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -24,7 +24,7 @@ You can use the case functionality to resolve both issues that are external to y
 
 ## Case category security by role
 
-Only appropriate employees in an organization should have access to cases and related information. To control which employees have access to view, create, and update different types of cases, you can assign security roles to case category types. You must determine which security roles should have access to the various case category types.
+Only appropriate employees in an organization should have access to cases and related information. To control which employees have access to view, create, and update different types of cases, assign security roles to case category types. Determine which security roles should have access to the various case category types.
 
 **Decision:** Determine which security roles should have access to the following case category types. Your organization might not use all these category types, so make decisions only for those categories that are appropriate.
 
@@ -43,36 +43,36 @@ Only appropriate employees in an organization should have access to cases and re
 
 ## Case processes
 
-You should set up processes that employees must follow for the cases that are opened in your organization. Processes help guarantee consistency for the people who are involved in cases, and also help employees resolve cases faster and more efficiently. You can set up a process for each case category that cases are assigned to. Although planning a separate process for each case type takes time, case resolution will go much more smoothly if the processes are planned out.
+Set up processes that employees must follow for the cases they open in your organization. Processes help guarantee consistency for the people involved in cases, and they help employees resolve cases faster and more efficiently. Set up a process for each case category that you assign cases to. Although planning a separate process for each case type takes time, case resolution goes much more smoothly if you plan out the processes.
 
-**Decisions:** For each case process, you must make the following decisions:
+**Decisions:** For each case process, make the following decisions:
 
 - What are the name and description of the process?
 - Is the process active, and should employees use it when they handle a case that the process is assigned to?
-- Who in the organization will be responsible for applying the process to a case? For example, Cost accounting or Human resources might be responsible for some case processes. Note that multiple areas can be responsible for completing one process.
+- Who in the organization is responsible for applying the process to a case? For example, cost accounting or human resources might be responsible for some case processes. Multiple areas can be responsible for completing one process.
 
 ## Case categories
 
-The Case category hierarchy provides a list of categories that you can assign cases to (see the "Case category security by role" section). Each top-level category includes subcategories, so that you can create more specific categories for the cases that your organization works with. Review the list of existing categories and subcategories to determine whether you must create more. If you must create more categories and subcategories, you must make the following decisions for each addition.
+The case category hierarchy provides a list of categories that you can assign cases to (see the "Case category security by role" section). Each top-level category includes subcategories, so that you can create more specific categories for the cases that your organization works with. Review the list of existing categories and subcategories to determine whether you need to create more. If you need to create more categories and subcategories, make the following decisions for each addition.
 
 **Decisions:**
 
 - Are you creating a new top-level category?
 
-    - What is the name of the category
+    - What is the name of the category?
 
 - Are you creating a new subcategory?
 
     - What is the parent category of the subcategory?
     - What is the name of the subcategory?
-    - Which worker will own the subcategory?
+    - Which worker owns the subcategory?
     - What department is the subcategory assigned to?
-    - What case process will be assigned to this subcategory?
+    - What case process is assigned to this subcategory?
     - What is the default service level agreement (SLA) that is assigned to this subcategory?
     - Should an activity be created when a case that this subcategory is assigned to is opened?
-    - If so, what are the activity category, type, purpose, and phase?
+    - If so, what is the activity category, type, purpose, and phase?
     - Should a follow-up activity for the case be created?
-    - If so, what are the follow-up activity category, type, purpose, and phase?
+    - If so, what is the follow-up activity category, type, purpose, and phase?
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

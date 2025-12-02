@@ -4,7 +4,7 @@ description: Learn about the Actual vs budget Power BI content. It explains how 
 author: kfend
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 12/18/2017
+ms.date: 12/02/2025
 ms.custom:
 ms.reviewer: johnmichalak
 audience: IT Pro
@@ -22,10 +22,10 @@ This article describes the **Actual vs budget** Microsoft Power BI content. It e
 
 ## Overview
 
-The **Actual vs budget** Power BI content was created for individuals who are responsible for monitoring actual versus budget performance in their organization. The **Actual vs budget** Power BI content provides visibility into your budget variances. You can analyze budget for the current year by account category, budget code, main account, main account descriptions, or fiscal period to get a better understanding of the cause of any variances.
+The **Actual vs budget** Power BI content is designed for individuals who monitor actual versus budget performance in their organization. The **Actual vs budget** Power BI content provides visibility into your budget variances. You can analyze the budget for the current year by account category, budget code, main account, main account descriptions, or fiscal period to get a better understanding of the cause of any variances.
 
 ## Accessing the Power BI content
-Reports from the **Actual vs budget** Power BI content are shown in the **Ledger budget and forecasts** and **CFO** workspaces.
+Reports from the **Actual vs budget** Power BI content appear in the **Ledger budget and forecasts** and **CFO** workspaces.
 
 ## Reports that are included in the Power BI content
 The following table provides details about the metrics that are found on each report page in the **Actual vs budget** Power BI content.
@@ -46,9 +46,9 @@ The following table provides details about the metrics that are found on each re
 | Budget Activities         | Transaction amounts for the budget register                                      |
 | Main Accounts             | Main accounts to filter reports by                                               |
 | Fiscal Calendars          | Fiscal calendars to filter reports by                                            |
-| Ledgers                   | Ledgers that can be used to filter the report to the current ledger              |
+| Ledgers                   | Ledgers that you can use to filter the report to the current ledger              |
 | Budget Codes              | Budget codes to filter reports by                                                |
-| Legal Entities            | Legal entities that can be used to filter the report to the current legal entity |
+| Legal Entities            | Legal entities that you can use to filter the report to the current legal entity |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

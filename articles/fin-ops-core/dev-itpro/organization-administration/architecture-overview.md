@@ -4,7 +4,7 @@ description: Learn about the architecture of finance and operations applications
 author: kfend
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 04/24/2020
+ms.date: 12/02/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: IT Pro
@@ -19,9 +19,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-The finance and operations application cloud architecture contains all the elements that are common to all Microsoft cloud offerings, as described in [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings). Beyond this, it also includes services that automate software deployment and provisioning, operational monitoring and reporting, and seamless application lifecycle management.
+The finance and operations application cloud architecture contains all the elements that are common to all Microsoft cloud offerings, as described in [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings). Beyond this architecture, it also includes services that automate software deployment and provisioning, operational monitoring and reporting, and seamless application lifecycle management.
 
-![Cloud architecture.](../../fin-ops/imp-lifecycle/media/cloud-architecture.png)
+:::image type="content" source="../../fin-ops/imp-lifecycle/media/cloud-architecture.png" alt-text="Screenshot of the cloud architecture diagram.":::
 
 The cloud architecture consists of these conceptual areas:
 
@@ -35,24 +35,24 @@ The cloud architecture consists of these conceptual areas:
 
     An organization can have multiple Microsoft Entra tenants. If there are multiple tenants, make sure that any subscriptions for finance and operations apps are associated with the correct tenant.
 
-- **Microsoft Entra ID (Microsoft Entra ID)** – Microsoft Entra ID is the multi-tenant, cloud-based directory and identity management service from Microsoft that combines core directory services, application access management, and identity protection in a single solution. For more information, see [Microsoft Entra ID](/azure/active-directory/). Finance and operations apps use Microsoft Entra ID as the store for identity. Access to Microsoft Entra ID is provided as part of a subscription to finance and operations apps.
-- **Microsoft 365 admin center** – Microsoft 365 admin center is the subscription management portal that Microsoft 365 provides for administrators. It's used to provide management functions for users (Microsoft Entra ID) and subscriptions. As part of these management functions, it provides information about service health. For more information, see [About the Microsoft 365 admin center](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23).
+- **Microsoft Entra ID (Microsoft Entra ID)** – Microsoft Entra ID is the multitenant, cloud-based directory, and identity management service from Microsoft that combines core directory services, application access management, and identity protection in a single solution. For more information, see [Microsoft Entra ID](/azure/active-directory/). Finance and operations apps use Microsoft Entra ID as the store for identity. Access to Microsoft Entra ID is provided as part of a subscription to finance and operations apps.
+- **Microsoft 365 admin center** – Microsoft 365 admin center is the subscription management portal that Microsoft 365 provides for administrators. Use it to provide management functions for users (Microsoft Entra ID) and subscriptions. As part of these management functions, it provides information about service health. For more information, see [About the Microsoft 365 admin center](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23).
 
     > [!NOTE]
-    > You don't have to have an Microsoft 365 license to deploy finance and operations apps. However, you might require a license for specific Office integration scenarios. For more information, see [Office integration overview](../office-integration/office-integration.md).
+    > You don't need a Microsoft 365 license to deploy finance and operations apps. However, you might require a license for specific Office integration scenarios. For more information, see [Office integration overview](../office-integration/office-integration.md).
 
 - **Microsoft Dynamics Lifecycle Services (LCS)** – LCS is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your implementations. For more information, see [Lifecycle Services resources](../lifecycle-services/lcs.md). After you purchase and activate a subscription for a finance and operations app, an **Implementation project** workspace is provisioned in LCS when the tenant administrator signs in for the first time.
 
     > [!NOTE]
-    > An implementation project is an LCS project for the cloud service. As a Microsoft partner, you can also provision non-implementation LCS projects for your own purposes. For more information, see [Lifecycle Services (LCS) for finance and operations apps partners](../lifecycle-services/getting-started-lcs.md).
+    > An implementation project is an LCS project for the cloud service. As a Microsoft partner, you can also provision nonimplementation LCS projects for your own purposes. For more information, see [Lifecycle Services (LCS) for finance and operations apps partners](../lifecycle-services/getting-started-lcs.md).
 
-- **Finance and operations apps** – finance and operations apps are deployed through LCS. Various topologies are available: development/test/build, acceptance test, performance test, and high-availability production. For more information about the various topologies, download the [latest Microsoft Dynamics 365 Licensing Guide from Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
-- **Microsoft Azure DevOps** – Azure DevOps is used primarily for code version control, development, and to deploy a build environment. Azure DevOps is also used to track support incidents, such as work items in Azure DevOps that are submitted to Microsoft through Cloud-powered support, and to integrate the Business process modeler (BPM) library hierarchy into your Azure DevOps project as a hierarchy of work items. Azure DevOps is also used during code upgrade.
+- **Finance and operations apps** – Deploy finance and operations apps through LCS. Various topologies are available: development/test/build, acceptance test, performance test, and high-availability production. For more information about the various topologies, download the [latest Microsoft Dynamics 365 Licensing Guide from Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
+- **Microsoft Azure DevOps** – Use Azure DevOps primarily for code version control, development, and to deploy a build environment. Use Azure DevOps to track support incidents, such as work items in Azure DevOps that are submitted to Microsoft through Cloud-powered support, and to integrate the Business process modeler (BPM) library hierarchy into your Azure DevOps project as a hierarchy of work items. Use Azure DevOps during code upgrade.
 
 "Under the hood," finance and operations apps use many features of the Azure platform, such as Azure Storage, networking, monitoring, and Azure SQL Database, to name just a few. Shared services put into operation and orchestrate the application lifecycle of the environments for participants. Together, Azure functionality and LCS offer a robust cloud service.
 
 > [!NOTE]
-> Although many features of the Azure platform are used, you don't have to have an Azure subscription to deploy finance and operations apps in the Microsoft-managed cloud. You must have an Azure subscription only if you want to deploy finance and operations apps cloud-hosted environments in your own Azure subscription.
+> Although many features of the Azure platform are used, you don't need an Azure subscription to deploy finance and operations apps in the Microsoft-managed cloud. You must have an Azure subscription only if you want to deploy finance and operations apps cloud-hosted environments in your own Azure subscription.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
