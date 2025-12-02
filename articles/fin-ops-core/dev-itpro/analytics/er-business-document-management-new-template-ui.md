@@ -110,7 +110,7 @@ Follow these steps to provide the required information before you upload a templ
 
 1. On the **Data source** tab, on the **Filter** FastTab, select **Apply filter**. In the **Data source** section, the **Name** field is automatically filled in, or you can manually select a value. You can use the filter to search for the appropriate data source name by name, description, country/region code, and business document type.
 
-:::image type="content" source="./media/BDM_overview_new_UI_import_31.jpg" alt-text="Screenshot of Data source tab on the Upload tab of the Create a new template page.":::
+   :::image type="content" source="./media/BDM_overview_new_UI_import_31.jpg" alt-text="Screenshot of Data source tab on the Upload tab of the Create a new template page.":::
 
     > [!NOTE]
     > The **Filter** FastTab is used to search the correct data source (that is, the ER model configuration). You can edit all filter fields to find the most appropriate data source for the document that you're uploading.
@@ -119,7 +119,7 @@ Follow these steps to provide the required information before you upload a templ
 
 1. On the **Mapping** tab, select **Auto detect**. The **Root definition** field is automatically filled in, or you can manually select a value. This tab shows the end mapping for the elements from the template and the model.
 
-:::image type="content" source="./media/BDM_overview_new_UI_import_41.jpg" alt-text="Screenshot of Mapping tab on the Upload tab of the Create a new template page.":::
+   :::image type="content" source="./media/BDM_overview_new_UI_import_41.jpg" alt-text="Screenshot of Mapping tab on the Upload tab of the Create a new template page.":::
 
     > [!NOTE]
     > The mapping in the **Template structure** section uses the full match of the labels or descriptions in the data source in the user's language, and in the cell name in the template.
