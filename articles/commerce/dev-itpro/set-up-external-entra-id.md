@@ -91,7 +91,7 @@ For information on customizing the default branding in user flows, see [Customiz
 
 > [!NOTE] 
 > Customizing the login screen further currently involves using [Native authentication in Microsoft Entra External ID](/entra/identity-platform/concept-native-authentication). Modules can be built to interact with these APIs directly.
-> Modules changes supporting EEID are present in SSK version 9.55.8. Ensure you reference this version or later for full compatibility with Entra External ID features.
+
 
 To create user flow in External ID, follow these steps:
 
@@ -165,8 +165,10 @@ To create a new URL for the edit profile page with the "/editprofile" endpoint, 
 1. On the **Create new URL** flyout, create a new URL with the "/editprofile" endpoint.
 1. Select **Next**, and on the **Select a page** flyout pane, select **Profile edit**, and then select **Create**.
 1. Save and publish your changes.
+    > [!NOTE]
+    > Modules changes supporting EEID are present in SSK version 9.55.8. Ensure you reference this version or later for full compatibility with Entra External ID features.
+## Updates to the Account-Profile-Edit Module (Online SDK) 
 
-## Updates to the Account-Profile-Edit Module (Online SDK)
 
 With Azure Active Directory B2C, implementing profile editing required only an HTML page that followed a specific contract. Azure Active Directory B2C itself handled the actual rendering of the edit profile page.
 
