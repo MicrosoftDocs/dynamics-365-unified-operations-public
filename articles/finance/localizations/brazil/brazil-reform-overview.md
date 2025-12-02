@@ -4,7 +4,7 @@ description: Learn how the Advanced Tax Calculation engine supports new tax type
 author: yanansong
 ms.author: yanansong
 ms.topic: overview
-ms.date: 09/30/2025
+ms.date: 12/02/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
