@@ -36,9 +36,7 @@ The table below lists the device based security roles that can be assigned based
 | Retail store manager | Device based - Retail store manager |
 | Warehouse worker | Device based - Warehouse worker |
 
-<br/>
-
-# Requirements for using device based security roles
+## Requirements for using device based security roles
 Before assigning device based security roles to users administrators must ensure that the following requirements are met.
 
 | Requirement | Description |
@@ -55,17 +53,17 @@ In addition to the above requirements, administrators should also be aware that
   - Microsoft will be monitoring the assignment of device based security roles and users that are using them to ensure that the licensing requirements as outlined in the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544) are met.  
   - If any misuse is detected, organizations will be notified to gather additional information and/or to acquire the appropriate licenses for continued access.
 
-# Manage users with device based security roles
+## Manage users with device based security roles
 The steps below outline how administrators can add or remove users from device based security roles.
 
-## Add users to device based security roles
+### Add users to device based security roles
 1. Go to **Navigation pane > Modules > System administration > Security > Assign users to roles**.
 2. In the tree, select one of the device based security roles: **Device based - Production floor worker, Device based - Retail store manager, or Device based - Warehouse worker**.
 3. In the **Users assigned to role** section, select **Manually assign/exclude users**.
 4. In the **Assign users to or exclude users from role** form, select one or more users that should be assigned the role.
 5. In the **Action pane**, select **Assign to role**.
 
-## Remove users from device based security roles
+### Remove users from device based security roles
 1. Go to **Navigation pane > Modules > System administration > Security > Assign users to roles**.
 2. In the tree, select one of the device based security roles: **Device based - Production floor worker, Device based - Retail store manager, or Device based - Warehouse worker**.
 3. To remove a single user
