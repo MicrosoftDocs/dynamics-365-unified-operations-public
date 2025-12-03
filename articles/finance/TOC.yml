@@ -2865,7 +2865,7 @@
                       items:
                         - name: German audit file overview
                           href: localizations/germany/emea-deu-gdpdu-audit-data-export.md
-                        - name: Import audit file configuration
+                        - name: Prepare your environment to generate a GDPdU audit file
                           href: localizations/germany/import-german-audit-file-configuration.md
                         - name: Generate audit file
                           href: localizations/germany/german-audit-file.md
