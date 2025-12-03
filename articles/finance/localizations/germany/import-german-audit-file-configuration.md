@@ -4,7 +4,7 @@ description: Learn how to prepare your environment to generate a GDPdU audit fil
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 04/04/2025
+ms.date: 12/03/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -27,7 +27,7 @@ Before you can generate a GDPdU audit file, you must import the latest versions 
 | German audit file output | Format        | The exporting format in the GDPdU audit file structure. |
 
 > [!NOTE]
-> After you import all the ER configurations in the previous table, on the **Configurations** page, set the **Default for model mapping** option to **Yes** for the **Data export model** configuration.
+> After you import all the ER configurations in the previous table, on the **Configurations** page, set the **Default for model mapping** option to **Yes** for the **Data export model** configuration.
 
 Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 

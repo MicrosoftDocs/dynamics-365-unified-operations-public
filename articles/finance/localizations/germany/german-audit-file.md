@@ -4,7 +4,7 @@ description: Learn how to generate a German audit file with Germany as the regio
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 04/04/2025
+ms.date: 12/03/2025
 ms.custom:
   - bap-template
 ms.reviewer: johnmichalak   
@@ -21,16 +21,16 @@ This article explains how to generate a German audit file in Microsoft Dynamics 
 To generate a GDPdU audit file, follow these steps.
 
 1. In Dynamics 365 Finance, go to **General ledger \> Periodic tasks \> Data export**.
-2. In the **Format mapping** field, select **German audit file output** and select **OK**.
-3. On the **Electronic report parameters** dialog, fill in the following parameters as necessary.
+1. In the **Format mapping** field, select **German audit file output** and select **OK**.
+1. On the **Electronic report parameters** dialog, fill in the following parameters as necessary.
 - **Comment** - specify the comment that wil be reported in the `<Comment>` tag of the index file.
 - **Media** - specify the media that will be reported in the `<Media><Name>` tag of the index file; this value will be used as the folder name in the export archive.
 - **Version** - specify the version that wil be reported in the `<Version>` tag of the index file.
-4. In the **Table Group** field, select one of the values from the list: [Ledger accounts](emea-deu-gdpdu-audit-data-export.md#general-ledger), [Tax codes](emea-deu-gdpdu-audit-data-export.md#tax-ledger), [Accounts payable](emea-deu-gdpdu-audit-data-export.md#accounts-payable), [Accounts receivable](emea-deu-gdpdu-audit-data-export.md#accounts-receivable), [Fixed assets](emea-deu-gdpdu-audit-data-export.md#fixed-assets).
-5. In the **Period - date from** and **Period - date to** fields, specify the start and end dates of the period that you want to generate the report for.
-6. Select **Include "Create by"** checkbox to include the **Created by** information for transactions in the export file.
-7. Select **Show only main accounts without dimensions** checkbox to exclude dimensions information for transactions in the export file, only Main account without dimensions will be reported.
-6. Select **OK** to generate GDPdU audit file.
+1. In the **Table Group** field, select one of the values from the list: [Ledger accounts](emea-deu-gdpdu-audit-data-export.md#general-ledger), [Tax codes](emea-deu-gdpdu-audit-data-export.md#tax-ledger), [Accounts payable](emea-deu-gdpdu-audit-data-export.md#accounts-payable), [Accounts receivable](emea-deu-gdpdu-audit-data-export.md#accounts-receivable), [Fixed assets](emea-deu-gdpdu-audit-data-export.md#fixed-assets).
+1. In the **Period - date from** and **Period - date to** fields, specify the start and end dates of the period that you want to generate the report for.
+1. Select **Include "Create by"** checkbox to include the **Created by** information for transactions in the export file.
+1. Select **Show only main accounts without dimensions** checkbox to exclude dimensions information for transactions in the export file, only Main account without dimensions will be reported.
+1. Select **OK** to generate GDPdU audit file.
 
 A GDPdU audit file for a long time period, such as a quarter or a year, can include a large amount of data and take a long time to be generated. 
 Therefore, we recommend that you use batch jobs. The dialog for the **Electronic report parameters** includes a **Run in the background** tab where you can set up report generation in batch mode. 
@@ -39,8 +39,8 @@ Set the **Batch processing** option to **Yes**. Learn more about batch processin
 To review batch jobs or find a generated file, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
-2. Find a line that is related to your job, and then select **Show log**. If nothing is shown, no messages were produced when the file was generated.
-3. To view a file, select **Show files**, find the file that you need, and then select **Open**.
+1. Find a line that is related to your job, and then select **Show log**. If nothing is shown, no messages were produced when the file was generated.
+1. To view a file, select **Show files**, find the file that you need, and then select **Open**.
 
 Learn more about how to configure a destination for each ER format configuration and its output component in [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
