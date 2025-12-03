@@ -46,4 +46,4 @@ This sample shows how to enable **camera-based product identification** in the D
 - **Kiosks and self-service**: Enable customers to find products or similar items by taking a photo.
 - **AI-powered discovery**: Go beyond identification—call APIs to find similar products, suggest alternatives, or recommend complementary items.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
