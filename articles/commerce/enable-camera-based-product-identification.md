@@ -20,7 +20,7 @@ The sample CRT extension shows how to enable camera-based product identification
 
 ## What the sample CRT extension does
 
-The sample CRT extension does the following:
+The sample CRT extension does the following things:
 
 - Adds a camera button near the search screen.
 - Captures a product image and sends it to a vision model endpoint.
@@ -35,18 +35,18 @@ You can access the sample CRT extension at [Product recognition sample](https://
 
 ## How the sample CRT extension works
 
-The sample CRT extension works as follows:
+The sample CRT extension works in the following ways:
 
 - User adds a camera button to the POS or search page.
 - User snaps a photo of the product.
 - The CRT extension sends the image to the configured model endpoint.
-- The model returns one or more product IDs.
+- The model returns one or more product identifiers (IDs).
 - If multiple matches are found, the sample displays a list for user selection.
 - The selected item is inserted into the transaction or search flow.
 
 ## Use cases
 
-The sample CRT extension has the following use cases.
+The sample CRT extension has the following use cases:
 
 - **POS transactions**: Quickly look up a product without typing or scanning.
 - **Inventory counting**: Walk the aisle and capture product images for faster stock checks.
