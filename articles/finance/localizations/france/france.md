@@ -19,6 +19,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article includes information and links to resources that can help you set up legal entities with a primary address in France. 
 
+> [!NOTE]
+> | Microsoft Dynamics 365 Finance is certified in accordance with NF203 standards. <br> Certification No **203/346-4** issued by INFOCERT in France. | <img src="../media/fr-nf203.png" alt="INFOCERT" width="150"/> |
+> |:------------|-----------|
+
 - Public sector
   - [Public sector accounting](emea-fra-public-sector-accounting.md)
   - [Commitments](emea-fra-commitments-public-sector.md)
