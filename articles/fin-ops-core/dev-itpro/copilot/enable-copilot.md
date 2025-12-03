@@ -16,9 +16,9 @@ ms.search.region: Global
 ms.search.form:
 ---
 
-[!include [banner](../includes/banner.md)]
-
 # Enable Copilot capabilities in finance and operations apps
+
+[!include [banner](../includes/banner.md)]
 
 This article describes how Microsoft Copilot capabilities in finance and operations apps are constructed, how to enable or disable these capabilities, and how to troubleshoot them.
 
@@ -130,3 +130,4 @@ As was previously mentioned, most Copilot features in finance and operations app
 ## Responsible AI FAQs
 
 For information about the capabilities and limitations of AI-powered Copilot features in finance and operations apps, see [Responsible AI FAQs for the Microsoft Dynamics 365 finance and operations platform](../responsible-ai/responsible-ai-overview.md).
+

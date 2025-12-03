@@ -14,14 +14,14 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.46 (December 2025)
+          href: get-started/whats-new-scm-10-0-46.md
         - name: Supply Chain Management 10.0.45 (September 2025)
-          href: get-started/whats-new-scm-10-0-45.md         
+          href: get-started/whats-new-scm-10-0-45.md
         - name: Supply Chain Management 10.0.44 (June 2025)
-          href: get-started/whats-new-scm-10-0-44.md         
+          href: get-started/whats-new-scm-10-0-44.md
         - name: Supply Chain Management 10.0.43 (March 2025)
-          href: get-started/whats-new-scm-10-0-43.md         
-        - name: Supply Chain Management 10.0.42 (December 2024)
-          href: get-started/whats-new-scm-10-0-42.md
+          href: get-started/whats-new-scm-10-0-43.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -537,6 +537,8 @@
           href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
         - name: Maintenance downtime activities
           href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+        - name: Manage test instrument calibration with Asset Management (preview)
+          href: asset-management/preventive-and-reactive-maintenance/asset-management-test-instrument-calibration.md
       - name: Capacity planning
         items:
         - name: Calculate capacity load
@@ -1625,6 +1627,20 @@
             href: inventory/quality-operations.md
           - name: Nonconformance operation charges
             href: inventory/quality-charges.md
+        - name: Sample management (preview)
+          items: 
+          - name: Sample management overview
+            href: inventory/quality-sample-management-overview.md
+          - name: Enable and configure sample management
+            href: inventory/quality-sample-management-admin.md
+          - name: Set up continuous sampling
+            href: inventory/quality-sample-management-continuous.md
+          - name: Initiate an inline sample
+            href: inventory/quality-sample-management-inline.md
+          - name: Manage and process samples
+            href: inventory/quality-sample-management-use.md
+          - name: Sample management reports and auditing
+            href: inventory/quality-sample-management-audit-reports.md
         - name: Test instrument calibration
           href: inventory/quality-instrument-calibration.md
         - name: Flexible sampling plans
@@ -2091,6 +2107,8 @@
           href: demand-planning/forecast-algorithm-types.md
         - name: Naive forecasting (preview)
           href: demand-planning/naive-forecast-algorithm.md
+        - name: Croston's method forecasting (preview)
+          href: demand-planning/croston-method.md
         - name: Use your own custom Azure Machine Learning algorithms in Demand planning
           href: demand-planning/custom-azure-machine-learning-algorithms.md
         - name: Rolling forecasts
@@ -2293,6 +2311,10 @@
           href: unified-pricing-management/upm-price-attribute-groups.md
         - name: Customer and product price attribute groups
           href: unified-pricing-management/upm-customer-product-attribute-groups.md
+        - name: Add custom pricing attributes for Dynamics 365 Commerce Point of Sale
+          href: unified-pricing-management/upm-support-custom-attributes.md
+        - name: Example custom request handler code
+          href: unified-pricing-management/upm-custom-request-handler-example.md
       - name: Price groups
         items:
         - name: Price groups overview
@@ -2343,6 +2365,8 @@
           href: unified-pricing-management/upm-concurrence-within-codes.md
         - name: Resolving concurrency across price component codes
           href: unified-pricing-management/upm-concurrence-cross-codes.md
+      - name: Calculate prices and discounts without creating sales orders
+        href: unified-pricing-management/upm-calculate-prices-without-sales-orders.md
     - name: Procurement and sourcing
       items:
       - name: Procurement and sourcing overview
@@ -2429,6 +2453,8 @@
           href: procurement/supplier-com-agent-setup.md
         - name: Solve common problems when setting up the Supplier Communications Agent
           href: procurement/supplier-com-agent-setup-faq.md
+        - name: Test the Supplier Communications Agent
+          href: procurement/supplier-com-agent-testing.md
         - name: Follow up on purchase orders using the Supplier Communications Agent
           href: procurement/supplier-com-agent-follow-up.md
         - name: Review and apply purchase order changes received in vendor emails
@@ -3929,10 +3955,8 @@
           items:
           - name: Install the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
-          - name: Migrate the Warehouse Management mobile app from V3 to V4 (preview)
+          - name: Migrate the Warehouse Management mobile app from V3 to V4
             href: warehousing/warehouse-app-migrating-from-v3-v4.md
-          - name: Install Warehouse Management mobile app V4 on Windows (preview)
-            href: warehousing/warehouse-app-install-certificate.md
           - name: Use a QR code to connect the mobile app to Supply Chain Management
             href: warehousing/warehouse-app-qr-code.md
           - name: User-based authentication
@@ -3959,6 +3983,8 @@
             href: warehousing/warehouse-app-accessibility.md
           - name: User settings, color themes, and sound themes
             href: warehousing/warehouse-app-user-settings-themes.md
+          - name: Data submission behavior in the Warehouse Management mobile app
+            href: warehousing/warehouse-app-autosubmit-behavior.md
           - name: Workload insights with Copilot
             href: warehousing/warehouse-management-mobile-app-insights.md
           - name: Warehouse Management mobile app calculator
@@ -4061,8 +4087,6 @@
             href: warehousing/wave-template-grouping.md
           - name: Wave allocation
             href: warehousing/wave-allocation-method.md
-          - name: Schedule work creation during wave
-            href: warehousing/configure-wave-schedule-work-creation.md
           - name: Automatic rewaving of nonallocated shipment lines
             href: warehousing/auto-rewave-shipments.md
           - name: Wave execution notifications

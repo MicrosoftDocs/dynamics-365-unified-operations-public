@@ -14,7 +14,6 @@ ms.custom:
 # Inventory Visibility public APIs
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article describes the public APIs that are provided by Inventory Visibility.
 

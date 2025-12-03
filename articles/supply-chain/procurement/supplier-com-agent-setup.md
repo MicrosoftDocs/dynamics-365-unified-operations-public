@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 05/28/2025
+ms.date: 12/02/2025
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -39,21 +39,26 @@ Before you can use the Supplier Communications Agent, your system must meet the 
     - [*(Production ready preview) Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
     - *(Production ready preview) Supplier Communications Agent*
 
-> [!TIP]
-> If you can't enable the *Agent management* features, then make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
+    > [!TIP]
+    > If you can't enable the *Agent management* features, then make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
 
 - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
     - First, install *Copilot for finance and operations apps* version 1.0.3048.2 or later. If it's already installed, update it to the latest version.
     - Then, install *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03071.1 or later. If it's already installed, update it to the latest version.
+- Normally, the Microsoft Copilot Studio agents needed for the Supplier Communications Agent to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
+    - *Supplier Communications Agent - inbound*
+    - *Supplier Communications Agent - outbound*.
 
-- Optional: If you want the agent to send emails automatically, turn on the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature in Feature management. We recommend that you turn off this feature for sandbox environments, where data such as purchase orders might not be up to date, or vendor email addresses might be missing.
+    If the two agents aren't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).
+
+- Optional: If you want the agent to send emails automatically, turn on the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). We recommend that you turn off this feature for sandbox environments, where data such as purchase orders might not be up to date, or vendor email addresses might be missing.
 
 ## <a name="set-up-agent-identity"></a>Set up an agent identity
 
 The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to do its work. You must select the identity that is used for these interactions and create the required connections.
 
 > [!TIP]
-> For security and ease of maintenance, we recommend that you use a dedicated identity for the agent.
+> For security and ease of maintenance, use a dedicated identity for the agent.
 
 ### Set up agent identity users and assign security roles
 
@@ -61,15 +66,15 @@ Use the user management features for your tenant to create an *agent identity us
 
 #### License requirements
 
-The Suppler Communications Agent utilizes premium tier connectors, so the agent identify user must have a license that permits those. Find more information in the [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq) or download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+The Supplier Communications Agent uses premium tier connectors, so the agent identity user must have a license that permits those connectors. Learn more in [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq) or download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-Examples of sufficient licenses include *Power Apps Premium*, *Power Automate Premium* or *Dynamics 365 Supply Chain Management*.
+Examples of sufficient licenses include *Power Apps Premium*, *Power Automate Premium*, or *Dynamics 365 Supply Chain Management*.
 
 Use the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?referrer=entra#/licenses) to assign the required licenses.
 
 #### Required security roles
 
-Add the agent identity user both to the Dataverse environment and to Supply Chain Management. Assign the agent identify user the security roles shown in the following lists.
+Add the agent identity user both to the Dataverse environment and to Supply Chain Management. Assign the agent identity user the security roles shown in the following lists.
 
 - Required Dataverse user roles:
 
@@ -105,7 +110,8 @@ To create the required connections, follow these steps.
 
 To finish setting up the agent identity, you must activate the triggering Power Automate flows. A Canvas app is provided to help you do this. To use the app, follow these steps.
 
-1. Sign in to [Power Apps](https://make.powerapps.com) as an environment administrator user.
+1. Sign in to the [Power Apps Maker portal](https://make.powerapps.com) as an environment administrator user.
+1. Select your environment from the **Environment** drop-down list in the page header.
 1. In the left pane, select **Solutions**.
 1. Open the **Managed** tab.
 1. Find and open the solution with a **Display name** of *Copilot in Supply Chain Management solution*.
@@ -121,7 +127,7 @@ To finish setting up the agent identity, you must activate the triggering Power 
 
 All Dynamics 365 Supply Chain Management users working with the agent must also be created as Dataverse users (if they aren't already). To learn how, go to [Create users](/power-platform/admin/create-users).
 
-Additionally, they be assigned the roles described in the following subsections.
+Additionally, assign the roles described in the following subsections.
 
 ### Permissions for users who manage the agent configuration
 
@@ -153,11 +159,11 @@ To enable the email analysis and delivery features of the Supplier Communication
 ### Private mailbox
 
 > [!IMPORTANT]
-> Only the owner of a private mailbox can create an agent configuration and review agent results that are related to it. The owner must have permissions to [manage the agent configuration](./supplier-com-agent-setup.md#permissions-for-users-who-manage-the-agent-configuration) and [review agent results](./supplier-com-agent-setup.md#permissions-for-users-who-review-agent-results).
+> Only the owner of a private mailbox can create an agent configuration and review agent results related to it. The owner must have permissions to [manage the agent configuration](./supplier-com-agent-setup.md#permissions-for-users-who-manage-the-agent-configuration) and [review agent results](./supplier-com-agent-setup.md#permissions-for-users-who-review-agent-results).
 
 To set up a private mailbox, follow these steps.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a user who has a system administrator security role. (Although users who don't have an administrator role can enable synchronization for their own mailboxes, administrator approval might be required.)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a user with the system administrator security role. (Although users without an administrator role can enable synchronization for their own mailboxes, administrator approval might be required.)
 1. Select the environment that you want to set up.
 1. On the command bar, select **Settings**.
 1. On the **Settings** page, under **Email**, select **Mailboxes**.
@@ -170,7 +176,7 @@ After a private mailbox is set up, the user who owns it must update the personal
 To enable tracking of all emails for a private mailbox that you own, follow these steps.
 
 1. Go to the URL of your environment.
-1. Select the **Settings** button (gear symbol) in the upper right, and then select **Personalization Settings**.
+1. Select the **Settings** button (gear symbol) in the upper right, then select **Personalization Settings**.
 1. In the **Set Personal Options** dialog, on the **Email** tab, in the **Track** field, select *All email messages*.
 1. Select **OK**.
 
@@ -178,7 +184,7 @@ To enable tracking of all emails for a private mailbox that you own, follow thes
 
 If you're using a shared mailbox, create a queue so that all users who work on the shared mailbox can access email contents.
 
-1. Sign in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as user who has a system administrator security role.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a user who has a system administrator security role.
 1. Select the environment that you want to set up.
 1. On the command bar, select **Settings**.
 1. On the **Settings** page, under **Users + permissions**, select **Teams**.
@@ -191,8 +197,8 @@ If you're using a shared mailbox, create a queue so that all users who work on t
     > All users who create an agent configuration and review agent results that are related to this mailbox must be added as team members.
 
 1. Select **Next**.
-1. In the **Manage security roles** dialog, select **Finance and Operations Basic User** and **Basic User**, and then select **Save**.
-1. Return to the **Settings** page for your environment, and then, under **Business** section, select **Queues**.
+1. In the **Manage security roles** dialog, select **Finance and Operations Basic User** and **Basic User**, then select **Save**.
+1. Return to the **Settings** page for your environment, and then, under the **Business** section, select **Queues**.
 1. Select **New** to create a **Queue** entity record.
 1. Enter a name, set the **Incoming email** field to the email address of the shared mailbox, and set the **Owner** field to the team that you created earlier.
 1. Select **Save**.
@@ -215,7 +221,7 @@ Get detailed instructions in [Set up server-side synchronization of email](/powe
 
 #### Issues with setting up Supplier Communications Agent
 
-To solve issues that might occur when setting up the Supplier Communications Agent, go to [FAQ and solving typical issues when setting up and configure the Supplier Communications Agent](supplier-com-agent-setup-faq.md)
+To solve issues that might occur when setting up the Supplier Communications Agent, go to [FAQ and solving typical issues when setting up and configure the Supplier Communications Agent](supplier-com-agent-setup-faq.md).
 
 #### Issues with server-side synchronization
 
@@ -227,16 +233,16 @@ After you enable the Supplier Communications Agent in a sandbox environment, we 
 
 ## <a name="own-email"></a>Set your email address as a vendor contact for testing
 
-When you use the [review and apply purchase order changes received in vendor emails](supplier-com-agent-apply-email-changes.md) feature, the agent only reads emails from vendor domains. This means that when you're testing the system (and want to send/forward vendor emails from your own email account), you must add your email address as a vendor contact. To do so, follow these steps.
+When you use the [review and apply purchase order changes received in vendor emails](supplier-com-agent-apply-email-changes.md) feature, the agent only reads emails from vendor domains. This limitation means that when you're testing the system and want to send or forward vendor emails from your own email account, you must add your email address as a vendor contact. To add your email address, follow these steps.
 
 1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
 1. Create or select a vendor.
-1. On the **Contact information** FastTab, add a row with your own email address (the one you'll send/forward test messages from).
+1. On the **Contact information** FastTab, add a row with your own email address (the one you'll send or forward test messages from).
 
 ## <a name="sample-script"></a>Activate the triggering Power Automate flows by using a PowerShell script
 
 > [!NOTE]
-> This section describes one of two ways to activate the triggering Power Automate flows. The other way is to use a Canvas app, which is described in the [Activate the triggering Power Automate flows](#trigger-flows) section earlier in this article. You don't need to do both; you can choose the method that you prefer.
+> This section describes one of two ways to activate the triggering Power Automate flows. The other way is to use a Canvas app, which is described in the [Activate the triggering Power Automate flows](#trigger-flows) section earlier in this article. You don't need to use both methods; choose the method that you prefer.
 
 This sample PowerShell script finishes [setting up the agent identity](#set-up-agent-identity) by updating the connection references for the agent and activating the triggering Power Automate flows.
 

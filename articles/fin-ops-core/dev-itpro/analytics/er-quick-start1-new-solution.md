@@ -4,7 +4,7 @@ description: Learn how to design an Electronic reporting (ER) solution to print 
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 08/10/2020
+ms.date: 10/02/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer, IT Pro
@@ -1188,7 +1188,7 @@ Notice that the footer of the generated report doesn't contain the name of ER fo
 1. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting destination**.
 2. On the **Electronic reporting destination** page, add a destination record for the configured **Questionnaire report** ER format.
 3. On the **File destination** FastTab, set up the **Screen** [destination](er-destination-type-screen.md) for the **Report** format component that has been [added](#AddFormatRootElement) as the root element of the configured **Questionnaire report** ER format.
-4. On the **PDF conversion settings** FastTab, configure the destination to convert a report to [PDF format](electronic-reporting-destinations.md#OutputConversionToPDF) that uses the **Landscape** page orientation.
+4. On the **PDF conversion settings** FastTab, configure the destination to convert a report to [PDF format](er-output-conversion-to-pdf.md) that uses the **Landscape** page orientation.
 
 ![Configuring the custom Screen destination for the ER format on the Electronic reporting destination page.](./media/er-quick-start1-destination.png)
 

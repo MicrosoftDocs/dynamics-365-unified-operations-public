@@ -16,13 +16,6 @@ ms.search.form:  WHSWorkLocationChange, WHSWorkLineDetails
 
 The **Work line details** page shows a comprehensive, sortable, and filterable list of the individual work lines in your system. It provides a complete overview of work that is being planned and executed in the warehouse. You can easily switch between viewing all work lines and viewing only open work lines. Details that are provided for each line include the work status, item number, location, work quantity, load ID, and shipment ID.
 
-## Turn on the work line details feature
-
-As of Supply Chain Management version 10.0.21, this feature is turned on by default. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable or disable it if needed. Here, the feature is listed as:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Work line details*
-
 ## Open and use the Work line details page
 
 To view the list of work line details, go to **Warehouse management \> Work \> Work line details**. From here, you can perform the following actions:

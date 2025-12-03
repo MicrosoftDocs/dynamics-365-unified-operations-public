@@ -1,13 +1,13 @@
 ---
 title: What's new or changed in Dynamics 365 for Finance and Operations platform update 26 (May 2019)
 description: Learn about features that are in preview in Dynamics 365 for Finance and Operations platform update 26 (May 2019).
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
-ms.date: 04/12/2024
+ms.date: 11/21/2025
 ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.search.region: Global

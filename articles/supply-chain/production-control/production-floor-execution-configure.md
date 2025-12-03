@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 04/25/2025
+ms.date: 10/29/2025
 ms.custom: 
   - bap-template
 ---
@@ -47,7 +47,7 @@ There are two versions of this feature. One supports items that *are not* enable
 
 This feature lets workers and managers register batch/serial numbers for materials and components that are used in manufacturing processes. They can then associate those numbers with the batch/serial numbers of the products that are produced. In this way, manufacturers can optimize their processes, enhance product quality, and respond quickly to any issues that arise. Managers can use the item tracing report to effectively track batch/serial numbers that are registered through the *Tracked components* feature.
 
-Before you can use this feature, your system must meet the following requirements:
+To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
 - The feature that's named *Tracked components* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
@@ -59,7 +59,7 @@ For more information about this feature, see [Register batch/serial numbers for 
 
 When configuring the production floor execution interface, supervisors can select one of several default color themes, ranging from dark to light. Each worker can also select their own preferred theme, which overrides the default each time that worker signs in.
 
-Before you can use this feature, your system must meet the following requirements:
+To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
 - The feature that's named *Select color themes on production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
@@ -68,7 +68,7 @@ Before you can use this feature, your system must meet the following requirement
 
 Workers reporting job scrap from the production floor execution interface can choose to work from a list view that shows several jobs at once, or from a detail view that shows more information about one job at a time. Previously, only the detail view was available.
 
-Before you can use this feature, your system must meet the following requirements:
+To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
 - The feature that's named *List view for reporting job scrap from the production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
@@ -77,7 +77,7 @@ Before you can use this feature, your system must meet the following requirement
 
 This feature streamlines the process for workers to register for indirect activities. Without this feature, when a worker registered for an indirect activity, a dialog box would open, asking them whether they wanted to stop the activity or log it at the end of their shift. This feature removes the dialog. Instead, the system automatically adds the indirect activity to the worker's active job list. The system stops the indirect activity when the worker begins a new task (such as a production job), another indirect activity, or a project job
 
-Before you can use this feature, your system must meet the following requirements:
+To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.42 or later.
 - The feature that's named *Streamlined registration process for indirect activities on the Production floor execution* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
@@ -86,7 +86,7 @@ Before you can use this feature, your system must meet the following requirement
 
 This feature lets workers reporting job progress to select the desired status on multiple jobs in the report-progress list view.
 
-Before you can use this feature, your system must meet the following requirements:
+To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.42 or later.
 - The feature that's named *Set the desired status on selected jobs in report progress list view in the production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
@@ -95,10 +95,53 @@ Before you can use this feature, your system must meet the following requirement
 
 The enhanced numpad input control replaces the previous one. It is now an element of type *Real* instead of type *String*, which makes the decimal separator consistent with the regional settings.
 
-Before you can use this feature, your system must meet the following requirements:
+To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.45 or later.
 - The feature that's named *Enhanced numpad control for production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+### View material list
+
+This feature allows production floor workers to view the list of materials required for a job directly within the production floor execution interface. This feature enhances visibility into material requirements, helping workers ensure that all necessary components are available before starting or continuing a production task.
+
+To use this feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.46 or later.
+- The feature that's named *Material list on the production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+To show the material list, set **View materials** to *Yes* on the **Report progress** FastTab of the **Configure production floor execution** page for the relevant production floor execution configurations.
+
+### Report serial numbers beyond single unit
+
+This feature lets workers use the production floor execution interface to report a quantity greater than one for items that are tracked by serial number but not strictly controlled by it. To enable this functionality, the item must be linked to a tracking dimension group where the **Serial number control setting** is set to *No* for the serial number dimension.
+
+To use this feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.46 or later.
+- The feature that's named *Serial number reporting beyond single unit* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+### Record test results from the production floor execution interface (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice. -->
+
+This feature allows workers to record test results on quality orders directly from the production floor execution interface.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+To use this feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.46 or later.
+- The feature that's named *(Preview) Record test results from the production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+### Auto-complete secondary operation with primary
+
+This feature completes secondary operations automatically when a worker uses the production floor execution interface to complete their related primary operation. The time recorded for the secondary operation matches the time registered for the primary operation. Supervisors can activate this functionality by enabling the **Complete secondary operation with primary** parameter on the route group associated the secondary operation.
+
+To use this feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.46 or later.
+- The feature that's named *Auto-complete secondary operation with primary* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Work with production floor execution configurations
 
@@ -118,6 +161,7 @@ The following settings are available on the **General** FastTab:
 - **Lock employee** – When this option is set to *No*, workers will be signed out immediately after they make a registration (such as a new job). The interface will then return to the sign-in page. When this option is set to *Yes*, workers will stay signed in to the production floor execution interface. However, a worker can manually sign out so that another worker can sign in while the production floor execution interface continues to run under the same system user account.
 - **Use the actual time of registration** – Set this option to *Yes* to set the time for each new registration to the exact time when the worker submitted the registration. When this option is set to *No*, the sign-in time is used instead. You will usually want to set this option to *Yes* if you've set the **Lock employee** and/or **Single worker** option to *Yes* in cases where workers often remain signed in for longer periods.
 - **Single worker** – Set this option to *Yes* if only one worker uses each production floor execution interface where this configuration is active. When this option is set to *Yes*, the **Lock employee** option is automatically set to *Yes*. In addition, this setting removes the requirement (and ability) for the worker to sign in by using a badge ID or personnel number. Instead, the worker signs in to Microsoft Dynamics 365 Supply Chain Management by using a system user account that is linked to a *time registered worker*, and gets signed in to the production floor execution interface as that worker at the same time. Learn more in [Set up worker accounts to use the production floor execution interface](production-floor-execution-worker-accounts.md).
+- **Suppress numpad keyboard** – Select this option to prevent the numpad keyboard from opening when you need to change or enter a quantity.
 
 ### The Tab selection FastTab
 
@@ -144,9 +188,12 @@ The following settings are available on the **Main view** FastTab:
 
 The following settings are available on the **Report progress** FastTab:
 
-- **Skip product selection** – Set this option to *Yes* to skip the page where workers identify which items they want to report progress on (formula item, co-products, and by-products). If you choose to skip this page, workers will go straight to the page where they specify the finished quantity and dimensions of each produced formula item, co-product, and by-product. <!-- KFM: I added this because I saw it in the UI. Are we keeping this? -->
+- **Skip product selection** – Set this option to *Yes* to skip the page where workers identify which items they want to report progress on (formula item, co-products, and by-products). If you choose to skip this page, workers will go straight to the page where they specify the finished quantity and dimensions of each produced formula item, co-product, and by-product.
+- **View materials** – Set to *Yes* to allow production floor workers to view the list of materials for a production order from the **Report progress** dialogue. This feature enhances visibility into material requirements, helping workers ensure that all necessary components are available before starting or continuing a production task.
 - **Enable adjust material** – Set this option to *Yes* to include the **Adjust material** button in the **Report progress** dialog box. Workers can select this button to adjust material consumption for the job.
 - **Default remaining quantity** – Set this option to *Yes* to pre-fill the expected remaining quantity for a production job in the **Report progress** dialog box.
+- **Default nominal quantity** – Set to *Yes* to pre-populate the nominal quantity for catch weight items in the report progress dialog. Set to *No* to leave the field blank, which allows workers to enter the quantity manually.
+- **Require existing license plate** – Choose whether workers should be required to specify an existing license plate when reporting as finished. Set to *Yes* to require workers to specify a license plate that already exists in the system. Set to *No* to allow the worker to specify any license plate. If the reported license plate doesn't already exist, the system will create it.
 - **Generate license plate** – Set this option to *Yes* to generate a new license plate every time that a worker uses the production floor execution interface to report as finished. The license plate number is generated from a number sequence that is set up on the **Warehouse management parameters** page. When this option is set to *No*, workers must specify an existing license plate when they report as finished.
 - **Print label** – Set this option to *Yes* to print a license plate label when a worker uses the production floor execution interface to report as finished. The configuration of the label is set up in document routing, as described in [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md).
 - **Add material line** – Set this option to *Yes* to enable the addition and deletion of material lines within the adjust material dialog.

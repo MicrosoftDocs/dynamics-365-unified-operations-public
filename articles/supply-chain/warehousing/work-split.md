@@ -19,16 +19,6 @@ Work split functionality lets you split large work IDs (that is, work orders tha
 > [!IMPORTANT]
 > You can split only work orders that have a status of *Open* or *In-progress*.
 
-## Turn on the work split functionality
-
-Before you can use the work split functionality, you must turn on the feature and its prerequisite feature in your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on as required. Turn on the following features in the following order:
-
-1. *Organization-wide work blocking* (As of Supply Chain Management version 10.0.21, this feature is mandatory and can't be turned off.)
-1. *Work split* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
-
-> [!NOTE]
-> The first time you turn on the *Organization-wide work blocking* feature, a data upgrade is automatically applied across all legal entities.
-
 ## Enhancements to the Work details and All work pages
 
 The *Work split* feature adds the following two buttons to the **Work** tab on the Action Pane of the **Work details** and **All work** pages:

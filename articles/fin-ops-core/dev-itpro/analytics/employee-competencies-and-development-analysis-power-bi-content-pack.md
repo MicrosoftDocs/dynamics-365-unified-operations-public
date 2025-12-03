@@ -1,8 +1,8 @@
 ---
 title: Employee competencies and development Power BI content
 description: Learn about how the Employee competencies and development Power BI content, including how to understand the data model and entities.
-author: jcart1106
-ms.author: jcart
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 12/19/2017
 ms.reviewer: twheeloc

@@ -2,7 +2,7 @@
 title: Configure parameters for collection process automation
 description: Learn about the parameters that affect automated collection processes and provides guidance for setting them to reflect your intentions and expectations.
 author: JodiChristiansen
-ms.author: sunitacharya
+ms.author: jchrist
 ms.topic: article
 ms.date: 01/25/2024
 ms.custom:

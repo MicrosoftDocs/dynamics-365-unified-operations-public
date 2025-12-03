@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ms.topic: how-to
-ms.date: 09/19/2025
+ms.date: 09/30/2025
 ms.custom:
   - bap-template
 ---
@@ -115,22 +115,22 @@ The system can handle a setup where one or more calendars are defined. The follo
 
 #### Calendar that is used for the duration
 
-The defined calendars control the actual total lead time in calendar days, from the supply order date to the demand requirement date. The following calendar prioritization is used:
+The defined calendars control the actual total lead time in calendar days, from the supply order date to the demand requirement date. The system uses the following calendar prioritization:
 
 - **Purchase lead time** – Only the coverage group calendar is considered.
-- **Receipt margin** – The coverage group calendar is used, if it's defined. Otherwise, the warehouse calendar is used.
-- **Issue margin** – The coverage group calendar is used, if it's defined. Otherwise, the warehouse calendar is used.
+- **Receipt margin** – The system uses the coverage group calendar, if it's defined. Otherwise, it uses the warehouse calendar.
+- **Issue margin** – The system uses the coverage group calendar, if it's defined. Otherwise, it uses the warehouse calendar.
 - **Order margin** – Only the coverage group calendar is considered.
 
 #### Calendar that is used for the final date
 
 The following rules determine whether the planning engine can use a given date for a given date type:
 
-- **Purchase receipt date** – The vendor calendar is used, if it's defined. Otherwise, the coverage group calendar is used, if it's defined. If neither of those calendars is defined, the warehouse calendar is used.
-- **Transfer receipt date** – The coverage group calendar is used, if it's defined. Otherwise, the warehouse calendar is used.
-- **Production receipt date** – The coverage group calendar is used, if it's defined. Otherwise, the warehouse calendar is used.
-- **Demand issue open day** – The warehouse calendar is used, if it's defined. Otherwise, the coverage group calendar is used.
-- **Order open day** – A combination (intersection) of the coverage group calendar and the vendor calendar is used. Both calendars must be open to use the date. If only one of the calendars is defined, that calendar is used alone.
+- **Purchase receipt date** – The system uses the vendor calendar, if it's defined. Otherwise, it uses the coverage group calendar, if it's defined. If neither of those calendars is defined, the system uses the warehouse calendar.
+- **Transfer receipt date** – The system uses the coverage group calendar, if it's defined. Otherwise, it uses the warehouse calendar.
+- **Production receipt date** – The system uses the coverage group calendar, if it's defined. Otherwise, it uses the warehouse calendar.
+- **Demand issue open day** – The system uses the warehouse calendar, if it's defined. Otherwise, it uses the coverage group calendar.
+- **Order open day** – The system uses a combination (intersection) of the coverage group calendar and the vendor calendar. Both calendars must be open to use the date. If only one of the calendars is defined, the system uses that calendar alone.
 
 #### Calendar setup overview matrix
 
@@ -159,3 +159,7 @@ This situation usually occurs when you sell an item with an issue margin from a 
 - **If on-hand supply exists in WH13** – On WH11, the system applies the margin between the sales order date and the transfer order receipt date. However, on WH13, the date of the transfer order shipment is the same as the receipt date because there's on-hand supply, so the system doesn't apply any issue margin.
 
 - **If on-hand supply doesn't exist in WH13** – If there's no on-hand supply, and WH13 is to be replenished by other means (such as a purchase order), then the system applies the issue margin between the transfer order receipt date and the purchase order receipt date.
+
+## Related information
+
+- [Create a working time calendar](../../../human-resources/hr-leave-and-absence-working-time-calendar.md)

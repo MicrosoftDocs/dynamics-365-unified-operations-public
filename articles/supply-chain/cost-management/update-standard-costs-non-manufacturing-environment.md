@@ -1,8 +1,8 @@
 ---
 title: Update standard costs in a non-manufacturing environment
 description: Learn about updating standard costs in a non-manufacturing environment, including a list of guidelines for defining costing versions.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: CostingVersion, InventItemPrice
 ms.topic: how-to

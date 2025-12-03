@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 09/16/2025
+ms.date: 11/13/2025
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -15,23 +15,118 @@ ms.custom:
 # What's new or changed in the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
-## Versions 4.0.9.0 – 4.0.18.0
+## Version 4.0.26.0
+
+Version 4.0.26.0 adds the following fixes and improvements:
+
+- Resolved an issue where old values were not removed after scanning items from a work list.
+- Fixed a bug that caused the page to auto-submit when a worker pressed the physical scan button on a device during a summary step.
+- Corrected mobile mass deployment (MDM) property retrieval to handle case differences in `connection.json` files.
+- Enhanced Windows security.
+
+## Version 4.0.25.0
+
+Version 4.0.25.0 adds the following fixes and improvements:
+
+- Resolved a rendering issue on the **Item Inquiry** page.
+- Fixed a server request timeout that occurred after the quantity spinner component reset incorrectly when navigating between pages.
+- Stopped the quantity spinner from flickering when it landed between two values.
+- Enhanced diagnostic tools for improved troubleshooting.
+- Improved translation quality across the app.
+- Refined device code error messages for greater clarity.
+- Fixed a synchronization issue between the calculator and quantity spinner when using a comma as the decimal separator.
+
+## Version 4.0.24.0
+
+### General availability for all platforms in all regions
+
+Version 4.0.24.0 of the Warehouse Management mobile app is the first general availability (GA) release of version 4 for all supported platforms (Microsoft Windows, Google Android, and Apple iOS) in all supported regions. Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
+
+### What's new in version 4.0.24.0
+
+Version 4.0.24.0 adds the following fixes and improvements:
+
+- Addressed a compatibility issue with French keyboards.
+- Fixed a bug where quantity spinner components reset incorrectly when navigating between pages.
+- Corrected an issue where the title bar was displayed incorrectly when a step title was missing.
+- Enabled search functionality in comboboxes when the number of items exceeds 16.
+- Fixed an issue that prevented the search bar in the work list from automatically receiving focus.
+- Ensured that inquiry descriptions wrap correctly.
+- Updated the combobox modal behavior to display only when the selected property is empty.
+- Resolved an issue where the product photo on the banner would disappear when the app size changed.
+- Addressed an issue where an empty page title failed to display the correct step banner.
+
+## Versions 4.0.9.0 – 4.0.23.0
 
 Version 4 introduces many new features and improvements that enhance your warehouse management experience. Learn more at [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md).
 
 ### General availability for Android devices in some regions
 
-These versions of the Warehouse Management mobile app are general availability (GA) releases for Google Android devices in some regions (starting with Sweden and Denmark). We are gradually rolling out GA releases to all remaining regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store.
+These versions of the Warehouse Management mobile app are general availability (GA) releases for Google Android devices in some regions. We are gradually rolling out GA releases to all remaining regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store.
 
 ### Preview release for Android devices in other regions and Windows and iOS devices in all regions
 
 These versions of the Warehouse Management mobile app for Microsoft Windows and Apple iOS are preview releases in all regions. They're also preview releases for Android devices in some regions. If you're in a region where the app is still in preview, the download is listed as a beta version in the Google Play store. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
 
-If you have any feedback about a preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
+If you have feedback about a preview version of this app, please submit a post on the [Warehouse Management App](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc4MjczMDEzNzYifQ) community on Microsoft Viva Engage.
+
+### What's new in version 4.0.23.0
+
+Version 4.0.23.0 adds the following fixes and improvements:
+
+- Resolved an issue that could occur when scanning with the camera.
+- Fixed an issue where filters weren't applied on the **Work list** page.
+- Fixed an issue where fields were incorrectly listed on work cards.
+- Fixed an issue related to selecting the primary input when no step title is defined.
+
+### What's new in version 4.0.22.0
+
+Version 4.0.22.0 adds the following fixes and improvements:
+
+- Resolved certificate issues in on-premises environments with Android devices.
+- Fixed a bug where work list filters reset after navigating back and reopening.
+- Addressed focus behavior issues in the step view.
+
+### What's new in version 4.0.21.0
+
+Version 4.0.21.0 adds the following fixes and improvements:
+
+- Resolved an issue with device code authentication on Android.
+- Fixed an issue where pressing Enter on the sign-in page switched focus to the **Change connection** button instead of submitting credentials.
+
+### What's new in version 4.0.20.0
+
+Version 4.0.20.0 adds the following fixes and improvements:
+
+- Added an [option to control auto-submit behavior](warehouse-app-autosubmit-behavior.md) after scanning for a more consistent user experience.
+- Fixed focus issues in step view.
+- Resolved *Invalid Work Execution Mode* errors during detours.
+- Addressed telemetry server request issues with millisecond durations.
+- Fixed missing filter options in the work list.
+- Corrected incorrect values on the step banner.
+- Fixed errors during intense scanning with multiple inputs.
+- Restored visibility of action items for multi-scan patterns.
+- Enhanced telemetry with exception tracking.
+- Fixed an issue that prevented guest users from signing in.
+
+### What's new in version 4.0.19.0
+
+Version 4.0.19.0 adds the following fixes and improvements:
+
+- Auto-submit now works in override-location flows.
+- Fixed an issue that caused a critical error message.
+- Fixed an issue that could cause incorrect values to be submitted from a text field.
+- Fixed an issue that could cause incorrect quantities to be displayed based on the selected unit of measure.
+- Fixed an issue that could cause incorrect values to appear in the calculator.
+- Fixed a decimal display issue in the calculator.
+- Added support for the remote `ConnectionsJSON` parameter, which allows mobile mass deployment (MDM) systems to push individual parameter values to devices.
+- Users can now submit the sign-in form by pressing the enter key.
+- User settings for buttons and sliders now work as expected.
+- Table footers now render correctly.
+- Fixed issues related to telemetry and internal server errors.
 
 ### What's new in version 4.0.18.0
 
@@ -101,7 +196,7 @@ Version 4 introduces many new features and improvements that enhance your wareho
 
 These versions of the Warehouse Management mobile app are preview releases. By installing a preview release of this app, you are confirming that you have read and understand the [preview feature terms and conditions](https://go.microsoft.com/fwlink/?linkid=2173149).
 
-If you have any feedback about a preview version of this app, please send us an email at [D365WMA-feedback@microsoft.com](mailto:D365WMA-feedback@microsoft.com).
+If you have feedback about a preview version of this app, please submit a post on the [Warehouse Management App](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc4MjczMDEzNzYifQ) community on Microsoft Viva Engage.
 
 ### What's new in version 4.0.8.0
 

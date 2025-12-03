@@ -1,8 +1,8 @@
 ---
 title: Estimate and manage landed costs
 description: The system uses your auto cost setup to determine an estimate for your landed cost. Learn how you can define various scenarios to deliver a more accurate estimate.
-author: prasungoel 
-ms.author: prasungoel 
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: ITMCostTemplateTable, ITM CostEstimateDialog, ITMCostEstimateTable, SysOperationTemplateForm
 ms.topic: how-to
@@ -163,7 +163,10 @@ This feature enables you to include landed costs in the accounting distribution 
 
 ### Prerequisites
 
-To use this feature, you must be running Supply Chain Management 10.0.34 or later, and you must turn on the *Source document and accounting distribution support for Landed Cost* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use this feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.34 or later.
+- The feature that is named *Source document and accounting distribution support for Landed Cost* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.
 
 ### View landed costs in the accounting distribution of product receipts
 
