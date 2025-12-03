@@ -33,7 +33,7 @@ Set of exported data includes the following master data and transaction tables:
 ## Table groups and table definitions
 The following sections list the tables that are set up as examples in the **German audit file** electronic reporting data model configuration. You can use these tables out of the box to export the data. You can also customize existing table groups and extend the list of supported table groups in the configuration of the **German audit file** electronic reporting data model.
 
-### General ledger
+### <a name="general-ledger"></a> General ledger
 
 The following tables show the General ledger data structure definitions.
 
@@ -74,7 +74,7 @@ The following tables show the General ledger data structure definitions.
 | 19  | GEGENKONTO             | Zeichen   | Nummer des Gegenkontos                            | $GeneralJournalEntry/RecId                                          |
 | 20  | DOKUMENT               | Zeichen   | Dokument                                          | $GeneralJournalEntry/DocumentNumber                                 |
 
-### Tax ledger
+### <a name="tax-ledger"></a> Tax ledger
 
 The following tables show the Tax data structure definitions.
 
@@ -121,7 +121,7 @@ The following tables show the Tax data structure definitions.
 | 16  | SACHKONTO              | Zeichen   | Sachkonto                                   | $TaxTrans/accountNameOperational()                         |
 | 17  | ARTIKEL\_MWST\_GRUPPE  | Zeichen   | Artikel-Mehrwertsteuergruppe                | $TaxTrans/TaxItemGroup                                   |
 
-### Accounts receivable
+### <a name="accounts-receivable"></a> Accounts receivable
 
 The following tables show the Accounts receivable data structure definitions.
 
@@ -160,7 +160,7 @@ The following tables show the Accounts receivable data structure definitions.
 | 11  | LETZTER\_AUSGLEICH       | Datum     | Letzter Ausgleich                     | $CustTrans/LastSettleDate                                 |
 | 12  | BUCHUNGSART              | Zeichen   | Buchungsart                           | $CustTrans/TransType                                      |
 
-### Accounts payable
+### <a name="accounts-payable"></a> Accounts payable
 
 The following tables show the Accounts payable data structure definitions.
 
@@ -198,7 +198,7 @@ The following tables show the Accounts payable data structure definitions.
 | 12  | BUCHUNGSART              | Zeichen   | Buchungsart                           | $VendTrans/TransType                                      |
 | 13  | STATUS                   | Zeichen   | Status                                | $VendTrans/Approved                                       |
 
-### Fixed assets
+### <a name="fixed-assets"></a> Fixed assets
 
 Starting in version **33** of the **Data export model** configuration, Fixed assets data export is supported.
 
