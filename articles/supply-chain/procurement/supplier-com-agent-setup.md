@@ -116,8 +116,7 @@ To finish setting up the agent identity, you must activate the triggering Power 
 1. Find and open the solution with a **Display name** of *Copilot in Supply Chain Management solution*.
 1. On the **Objects** pane, select **Apps**.
 1. Select the app with a **Display name** of *(Production ready preview) Setup Supplier Communications Agent*.
-1. On the command bar, select **Share**.
-1. Add your name and select **Share**.
+1. If **Play** is disabled on the command bar, select **Share**, add your name and select **Share**.
 1. Select the *(Production ready preview) Setup Supplier Communications Agent* app again and then select **Play** on the command bar.
 1. Under **Connections**, select the connections you created in the previous section for both *Microsoft Dataverse* and *Microsoft Copilot Studio*.
 1. Select **Apply** at the bottom-right of the page and wait for all of the flows listed under **Agent trigger flows status** to switch to a state of *Activated*.
