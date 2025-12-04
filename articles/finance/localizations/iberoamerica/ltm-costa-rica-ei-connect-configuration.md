@@ -17,7 +17,7 @@ This article provides information to help you get started with Electronic invoic
 
 After you configure Electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the [Edicom](https://edicomgroup.com/electronic-invoicing/costa-rica) authorized certification provider (PAC) according to the [regulatory requirements in Costa Rica](https://www.hacienda.go.cr/).
 
-:::image type="content" source="ltm-Costa_Rica-electronic-invoice-workflow.png" alt-text="Screenshot of the electronic invoicing workflow diagram in Costa Rica.":::
+:::image type="content" source="ltm-costa-rica-electronic-invoice-workflow.png" alt-text="Screenshot of the electronic invoicing workflow diagram in Costa Rica.":::
 
 > [!NOTE]
 > The electronic invoicing approach that this article describes uses an invoicing service that's applicable only to cloud deployments of Finance or Supply Chain Management.
