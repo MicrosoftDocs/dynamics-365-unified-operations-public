@@ -116,7 +116,7 @@ Learn more in [Configure and send email](../../fin-ops-core/dev-itpro/organizati
 The Supplier Communications Agent includes a batch job that runs the agent automatically. To change the default configuration of the job, follow these steps:
 
 1. Go to **System Administration** \> **Inquiries** \> **Batch jobs**.
-1. Find and select the job that has a **Job description** that matches the name of the agent configuration, which is described in [Configure query criteria and email settings](#configure-task-criteria-and-email-settings). For example, if the agent name is *Send follow-up emails to vendors with Supplier Communications Agent*, you can locate its batch job quickly by using this text in the **Job description** column header filter. The agent name might be different on your system, so you should check the name before proceeding.
+1. Find and select the job that has a **Job description** that matches the name of the agent configuration, which is described in [Configure task criteria and email settings](#configure-task-criteria-and-email-settings). For example, if the agent name is *Send follow-up emails to vendors with Supplier Communications Agent*, you can locate its batch job quickly by using this text in the **Job description** column header filter. The agent name might be different on your system, so you should check the name before proceeding.
 
     :::image type="content" source="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png" alt-text="Screenshot showing the column filter for finding a batch job by its description." lightbox="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png":::
 
