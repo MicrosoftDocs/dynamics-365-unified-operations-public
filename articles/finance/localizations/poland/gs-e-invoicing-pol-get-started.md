@@ -88,7 +88,7 @@ To import the electronic invoicing feature, follow these steps.
     - **Customer invoice context model**
     - **Response message model**
     - **Response message model mapping to destination (PL)**
-    - **KSeF response data import format (PL)**
+    - **KSeF response message import (PL)**
 
     > [!NOTE]
     > If due to some reason the mentioned Electronic reporting configurations were not imported then import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
@@ -155,7 +155,10 @@ To configure electronic document parameters, follow these steps.
 
     - In the **Response type** field, enter **ResponseData** (the default value).
     - In the **Submission status** field, select **Pending**.
-    - In the **Model mapping** field, select **KSeF response data import format (PL)**.
+    - In the **Model mapping** field, select **KSeF response message import (PL)**.
+
+      > [!IMPORTANT]
+      > Make sure that the **Response message model mapping to destination (PL)** Electronic Reporting configuration is marked as **Default for model mapping**.
 
     :::image type="content" source="e-inv-pol-response-type.jpg" alt-text="Screenshot of the setup of the new response type on the Electronic document tab of the Electronic document parameters page.":::
 
