@@ -91,7 +91,7 @@ Here are some examples of other tasks that you might set up:
 
 ## Configure the addresses that emails are sent from
 
-Emails that are sent automatically, without user review, are sent from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address. The generated content of the emails contains at the end a "Best regards" signature, which includes the name that has been configured for the agent identity user.
+Emails that are sent automatically, without user review, are sent from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address. The generated content of the emails contains. at the end a "Best regards" signature. This signature includes the name that has been configured for the agent identity user.
 
 Emails that are drafted by the agent and then reviewed by a user are sent from the email address of the user that presses **Send**.
 
@@ -107,7 +107,9 @@ Edit each message as required, and then select **Send** to send it to the vendor
 
 If emails should be sent automatically, without user review, an administrator must use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature. This feature is optional and is turned off by default. Learn more in [Set up and configure the Supplier Communications Agent](supplier-com-agent-setup.md).
 
-When you turn on the feature, the system uses the email address of the administrator who set up the agent as the sender for each email that the system automatically sends.
+Turn on **Batch email provider**: in **System administration** \> **Setup** \> **Email** \> **Email parameters**, choose the **Configuration** tab and under the **General** section and set **Batch email provider** to *Graph*.
+
+To specifically set up the sender email, go to **Common** \> **Setup** \> **User options**. In the **Account** tab, find the **Email provider selection** section and set the **Sender email** to the email of the user logged in, and set **Email provider ID** to *Graph*.
 
 Learn more in [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
 
