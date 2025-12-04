@@ -24,56 +24,44 @@ The Supplier Communications Agent helps you identify and follow up on purchase o
 
 The Supplier Communications Agent helps you perform the following actions:
 
-- Create queries to find purchase orders that require follow-up. Queries are unique for each user. Therefore, you can create and adjust them to meet your specific business needs. Two default queries are provided. One is used to follow up on unconfirmed purchase orders, and the other is used to follow up on late deliveries. You can modify or delete the default queries as required to meet your business needs.
-- Configure how emails are generated for each query.
+- Create agent tasks to find purchase orders that require follow-up. Tasks are unique for each user. Therefore, you can create and adjust them to meet your specific business needs. Two default tasks are provided. One is used to follow up on unconfirmed purchase orders, and the other is used to follow up on late deliveries. You can modify or delete the default tasks as required to meet your business needs.
+- Configure how emails are generated for each task.
 - Review the draft emails that the agent generates. After you review each message, you can modify it, copy it to your email client, and send it. To generate the emails, the agent uses data from the purchase order lines and related tables.
 
-By default, the system provides two premade queries that you can use to find purchase orders that require action:
+By default, the system provides two premade tasks that you can use to find purchase orders that require action:
 
-- *Unconfirmed purchase orders* – This query finds purchase orders that are assigned to you, have a delivery date within the next 60 days, and aren't yet confirmed by the vendor (that is, the confirmed delivery date is blank). The query uses the following specific criteria:
+- *Unconfirmed purchase orders* – This task finds purchase orders that are assigned to you, have a delivery date within the next 60 days, and aren't yet confirmed by the vendor (that is, the confirmed delivery date is blank). The task uses the following specific criteria:
 
-    - The **Confirmed delivery date** field is blank.
-    - The **Owner** field is set to your user account (the current user).
-    - The **Deliver remainder** field is set to a value other than *0* (zero).
+    - The **Deliver remainder (line)** field is set to a value other than *0* (zero).
+    - The **Confirmed receipt date (line)** field is blank.
+    - The **Requested receipt date (line)** field is set to a date that is earlier than the current date.
+    - The **Orderer (header)** field is set to your user account (the current user).
+    - The **Document status (header)** field is not *None*.
 
-- *Delayed purchase orders* – This query finds purchase orders that are assigned to you and that are delayed (that is, the confirmed delivery date was one or more days ago). The query uses the following specific criteria:
+- *Delayed purchase orders* – This task finds purchase orders that are assigned to you and that are delayed (that is, the confirmed delivery date was one or more days ago). The task uses the following specific criteria:
 
-    - The **Confirmed delivery date** field is set to a date that is earlier than the current date.
-    - The **Owner** field is set to your user account (the current user).
-    - The **Deliver remainder** field is set to a value other than *0* (zero).
+    - The **Deliver remainder (line)** field is set to a value other than *0* (zero).
+    - The **Confirmed receipt date** field is set to a date that is earlier than the current date.
+    - The **Orderer (header)** field is set to your user account (the current user).
 
-## Configure query criteria and email settings
+## Configure task criteria and email settings
 
-The following procedure explains how to set up queries to find purchase orders that require follow-up. It also explains how to configure the way that Copilot generates vendor email content for each query.
+The following procedure explains how to set up agent tasks to find purchase orders that require follow-up. It also explains how to configure the way that Copilot generates vendor email content for each task.
 
-1. Open the **(Preview) Follow-up emails** page by following one of these steps:
+1. Open the **(Preview) Follow-up emails** page by following either one of these steps:
 
     - Go to **Procurement and Sourcing** \> **(Preview) Supplier Communications Agent** \> **(Preview) Follow-up emails**.
     - Open the **Purchase order receipt and follow-up** workspace. A tile named **(Preview) Follow-up emails** indicates the number of emails that require review. Select the tile.
 
 1. Follow one of these steps:
 
-    - To edit an existing query, select it in the list, then select **Edit**.
-    - To delete an existing query, select it in the list, then select **Delete**.
-    - To create a new query, select **Configure agents**. Then, under **Library**, select **Send follow-up emails with Supplier Communications Agent**.
+    - To edit an existing task, select it in the list, then select **Edit**.
+    - To delete an existing task, select it in the list, then select **Delete**.
+    - To create a new task, select **Configure agents**. Then, under **Library**, select **Send follow-up emails to vendors with Supplier Communications Agent**.
 
-1. Edit the name of the query as required. (The default name is *Send follow-up emails for purchase orders*.)
-1. Select whether you want the query to find unconfirmed purchase orders or delayed purchase orders.
-1. Modify the criteria to define which purchase orders require follow-up. For example, you might want the query to find unconfirmed orders for the next two months, orders that were created more than three days ago, or orders that were sent but not confirmed.
-
-    - If you set the query to find delayed purchase orders, the following default criteria are used:
-
-        - The **Deliver remainder** field on the line is set to a value other than *0* (zero).
-        - The **Confirmed receipt date** field on the line is set to a date that is between 60 days and 1 day before the current date.
-        - The **Orderer** field on the header is set to your user account (the current user).
-
-    - If you set the query to find unconfirmed purchase orders, the following default criteria are used:
-
-        - The **Deliver remainder** field on the line is set to a value other than *0* (zero).
-        - The **Confirmed receipt date** field on the line is blank.
-        - The **Orderer** field on the header is set to your user account (the current user).
-        - The **Document status** field on the header is set to a value other than *None*.
-
+1. Edit the name of the task as required. (The default name is *Send follow-up emails to vendors with Supplier Communications Agent*.)
+1. Select whether you want the task to find unconfirmed purchase orders or delayed purchase orders.
+1. Modify the criteria to define which purchase orders require follow-up. For example, you might want the task to find unconfirmed orders for the next two months, orders that were created more than three days ago, or orders that were sent but not confirmed.
 1. Select the fields that should be included in the email, such as the delivery dates or the address.
 1. To add a signature, select **Signature**, and enter the desired text. You can also add an email footer that has text such as "This email was written with the help of AI."
 
@@ -84,21 +72,21 @@ The following procedure explains how to set up queries to find purchase orders t
 
 ### Examples
 
-Here are some examples of other queries that you might set up:
+Here are some examples of other tasks that you might set up:
 
 - To generate emails for orders that were created less than three days ago, and that aren't yet confirmed, specify the following criteria:
 
-    - The **Deliver remainder** field on the line is set to a value other than *0* (zero).
-    - The **Confirmed receipt date** field on the line is blank.
+    - The **Deliver remainder (line)** field on the line is set to a value other than *0* (zero).
+    - The **Confirmed receipt date (line)** field on the line is blank.
     - The **Created date** field is set to a date that's between three days before the current date and current date.
-    - The **Orderer** field on the header is set to your user account (the current user).
+    - The **Orderer (header)** field on the header is set to your user account (the current user).
 
 - To generate emails for orders for vendor group A that were created less than three days ago, and that aren't yet confirmed, specify the following criteria:
 
-    - The **Deliver remainder** field on the line is set to a value other than *0* (zero).
-    - The **Confirmed receipt date** field on the line is blank.
+    - The **Deliver remainder (line)** field on the line is set to a value other than *0* (zero).
+    - The **Confirmed receipt date (line)** field on the line is blank.
     - The **Created date** field is set to a date that's between three days before the current date and current date.
-    - The **Orderer** field on the header is set to your user account (the current user).
+    - The **Orderer (header)** field on the header is set to your user account (the current user).
     - The **Vendor (group)** field is set to *A*.
 
 ## Configure the addresses that emails are sent from
@@ -128,7 +116,7 @@ Learn more in [Configure and send email](../../fin-ops-core/dev-itpro/organizati
 The Supplier Communications Agent includes a batch job that runs the agent automatically. To change the default configuration of the job, follow these steps:
 
 1. Go to **System Administration** \> **Inquiries** \> **Batch jobs**.
-1. Find and select the job that has a **Job description** that matches the name of the agent configuration, which is described in [Configure query criteria and email settings](#configure-query-criteria-and-email-settings). For example, if the agent name is *Send follow-up emails to vendors with Supplier Communications Agent*, you can locate its batch job quickly by using this text in the **Job description** column header filter. The agent name might be different on your system, so you should check the name before proceeding.
+1. Find and select the job that has a **Job description** that matches the name of the agent configuration, which is described in [Configure query criteria and email settings](#configure-task-criteria-and-email-settings). For example, if the agent name is *Send follow-up emails to vendors with Supplier Communications Agent*, you can locate its batch job quickly by using this text in the **Job description** column header filter. The agent name might be different on your system, so you should check the name before proceeding.
 
     :::image type="content" source="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png" alt-text="Screenshot showing the column filter for finding a batch job by its description." lightbox="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png":::
 
