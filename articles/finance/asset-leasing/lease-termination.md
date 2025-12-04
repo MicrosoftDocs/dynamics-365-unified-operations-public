@@ -154,7 +154,7 @@ The following tables show the values that are set on the **General** and **Payme
 
 The lease status should now be **Terminated**. No additional journal entries will be posted against this lease unless the termination is reversed.
 
-In Dynamics 365 Finance version 10.0.44, the lease termination proposal cancelation feature introduces a **Cancel** option for lease termination proposals. Mark them as **Canceled** and clear their termination status from the lease book and set it to **None**.
+In Dynamics 365 Finance version 10.0.44, the lease termination proposal cancellation feature introduces a **Cancel** option for lease termination proposals. Mark them as **Canceled** and clear their termination status from the lease book and set it to **None**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
