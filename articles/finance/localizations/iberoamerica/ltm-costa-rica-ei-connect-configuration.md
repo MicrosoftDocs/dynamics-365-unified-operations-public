@@ -93,7 +93,7 @@ Each of these interactions requires common parameters, such as Edicom connection
 
 1. Import the latest version of the **Costa Rica Electronic Invoice (CR)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). The following illustrations show what the feature looks like after you import it from Dataverse.
 
-    :::image type="content" source="ltm-Costa_Rica-electronic-invoice-globalization-feature-imported.png" alt-text="Screenshot of the imported Globalization feature for Costa Rica on the Electronic invoicing features page.":::
+    :::image type="content" source="ltm-costa-rica-electronic-invoice-globalization-feature-imported.png" alt-text="Screenshot of the imported Globalization feature for Costa Rica on the Electronic invoicing features page.":::
 
 
     If you go to the Configuration tab, as shown in the previous screenshot, you see a page that displays information similar to the following table:
