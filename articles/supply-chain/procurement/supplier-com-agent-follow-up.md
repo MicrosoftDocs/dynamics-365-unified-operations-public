@@ -91,7 +91,7 @@ Here are some examples of other tasks that you might set up:
 
 ## Configure the addresses that emails are sent from
 
-Emails that are sent automatically, without user review, are sent from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address.
+Emails that are sent automatically, without user review, are sent from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address. The generated content of the emails contains at the end a "Best regards" signature, which includes the name that has been configured for the agent identity user.
 
 Emails that are drafted by the agent and then reviewed by a user are sent from the email address of the user that presses **Send**.
 
