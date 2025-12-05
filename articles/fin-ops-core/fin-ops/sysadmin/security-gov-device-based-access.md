@@ -26,7 +26,7 @@ While the vast majority of users require user licenses as a part of their job fu
 | Retail store manager | Retail store manager who needs to access Dynamics 365 Commerce functionality beyond the [point-of-sale (POS) app](../../../commerce/dev-itpro/store-commerce.md). |
 | Warehouse worker | Warehouse worker who needs to access Dynamics 365 Supply Chain Management functionality beyond the [warehouse management app](../../../supply-chain/warehousing/install-configure-warehouse-management-app.md). |
 
-To ensure continued access for users who rely solely on licensed devices to access Dynamics 365 Finance and Operations applications, administrators must temporarily assign device based security roles until device license enforcement takes effect at a later date. 
+To ensure continued access for users who rely solely on licensed devices to access Dynamics 365 Finance and Operations applications, administrators must temporarily assign device based security roles until device license validation takes effect at a later date. 
 
 The table below lists the device based security roles that can be assigned for each corresponding job function.
 
@@ -47,8 +47,8 @@ Before assigning device based security roles to users administrators must ensure
 
 In addition to the above requirements, administrators should be aware that
 - **Device based security roles are temporary**
-  - Device based security roles are meant to enable access until device license enforcement takes effect at a later date.
-  - When device license enforcement takes effect Microsoft will validate that the access is coming from a licensed device. These roles will then be deprecated, and eventually removed.
+  - Device based security roles are meant to enable access until device license validation takes effect at a later date.
+  - When device license validation takes effect Microsoft will validate that the access is coming from a licensed device. These roles will then be deprecated, and eventually removed.
 - **Monitoring will be in effect to detect misuse**
   - Microsoft will be monitoring the assignment of device based security roles and users that are using them to ensure that the licensing requirements as outlined in the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544) are met.  
   - If any misuse is detected, organizations will be notified to gather additional information and/or to acquire the appropriate licenses for continued access.
