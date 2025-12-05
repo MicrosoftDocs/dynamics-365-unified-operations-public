@@ -2735,8 +2735,6 @@
             href: pim/tasks/approve-product-configuration-model.md
           - name: Transfer data for product models
             href: pim/tasks/transfer-data-product-models.md
-      - name: Product information management FAQ
-        href: pim/product-information-faq.md
     - name: Engineering change management
       items:
       - name: Engineering change management overview
