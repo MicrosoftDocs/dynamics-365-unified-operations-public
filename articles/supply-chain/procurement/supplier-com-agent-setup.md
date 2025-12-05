@@ -38,7 +38,7 @@ Before you can use the Supplier Communications Agent, your system must meet the 
     - [*(Production ready Preview) Immersive Home*](../../fin-ops-core/fin-ops/copilot/immersive-home.md)
     - [*(Production ready preview) Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
     - *(Production ready preview) Supplier Communications Agent*
-    - Optional: If you want the agent to send emails automatically, turn on the feature *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails*. We recommend that you turn off this feature for sandbox environments, where data such as purchase orders might not be up to date, or vendor email addresses might be missing.
+    - Optional: If you want the agent to send emails automatically, turn on the feature *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails*. We recommend that you turn off this feature for sandbox environments. The reason is that data (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
 
     > [!TIP]
     > If you can't enable the *Agent management* features, then make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
@@ -107,7 +107,7 @@ To create the required connections, follow these steps.
 > [!NOTE]
 > This section describes one of two ways to activate the triggering Power Automate flows. The other way is to use a PowerShell script, which is described in the [Activate the triggering Power Automate flows by using a PowerShell script](#sample-script) section later in this article. You don't need to do both; you can choose the method that you prefer.
 
-To finish setting up the agent identity, you must activate the triggering Power Automate flows. A Canvas app is provided to help you do this. To use the app, follow these steps.
+To finish setting up the agent identity, you must activate the triggering Power Automate flows. Follow these steps, to use a Canvas app and finish the setup.
 
 1. Sign in to the [Power Apps Maker portal](https://make.powerapps.com) as an environment administrator user.
 1. Select your environment from the **Environment** drop-down list in the page header.
@@ -116,7 +116,7 @@ To finish setting up the agent identity, you must activate the triggering Power 
 1. Find and open the solution with a **Display name** of *Copilot in Supply Chain Management solution*.
 1. On the **Objects** pane, select **Apps**.
 1. Select the app with a **Display name** of *(Production ready preview) Setup Supplier Communications Agent*.
-1. If **Play** is disabled on the command bar, select **Share**, add your name and select **Share**.
+1. If **Play** is disabled on the command bar, select **Share**, add your name, and select **Share**.
 1. Select the *(Production ready preview) Setup Supplier Communications Agent* app again and then select **Play** on the command bar.
 1. Under **Connections**, select the connections you created in the previous section for both *Microsoft Dataverse* and *Microsoft Copilot Studio*.
 1. Select **Apply** at the bottom-right of the page and wait for all of the flows listed under **Agent trigger flows status** to switch to a state of *Activated*.
