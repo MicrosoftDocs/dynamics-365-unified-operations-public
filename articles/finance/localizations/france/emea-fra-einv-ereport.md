@@ -1,5 +1,5 @@
 ---
-title: Electronic invoicing for Singapore
+title: Electronic invoicing and Electronic reporting for France
 description: Learn how to work with Electronic invoicing and Electronic reporting for France in Microsoft Dynamics 365 Finance.
 author: ilikond
 ms.author: ikondratenko
@@ -13,7 +13,7 @@ ms.search.validFrom: 2026-03-01
 ms.dyn365.ops.version: AX 10.0.45
 ---
 
-# Electronic invoicing and Electronic reporting in France
+# Electronic invoicing and Electronic reporting for France
 
 This article helps you get started with electronic invoicing for Singapore. Set up the system to generate, submit, and receive electronic invoices in the Singaporean extension of the [PEPPOL International (PINT)](https://www.peppolguide.sg/billing/) format in Microsoft Dynamics 365 Finance by using the last mile connector.
 
