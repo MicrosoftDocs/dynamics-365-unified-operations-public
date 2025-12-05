@@ -4,7 +4,7 @@ description: You can print accounts statements for customers and vendors that di
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 08/01/2023
+ms.date: 12/05/2025
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Application User
@@ -18,22 +18,22 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-You can print accounts statements for customers and vendors that display information for a time period that you select. This functionality is available for legal entities whose primary address is in France.
+You can print account statements for customers and vendors that display information for a time period that you select. You can use this functionality for legal entities whose primary address is in France.
 
 ## Print the customer account statement report
+
 1. Go to **Accounts receivable** > **Inquiries and reports** > **Customers** > **Customer account statement report - France**.
-2. In the **From date** field, enter a date.
-3. In the **To date** field, enter a date.
-4. In the **Assessment date** field, enter a date.
-5. Select **OK**.
+1. In the **From date** field, enter a date.
+1. In the **To date** field, enter a date.
+1. In the **Assessment date** field, enter a date.
+1. Select **OK**.
 
 ## Print the vendor account statement report
+
 1. Go to **Accounts payable** > **Inquiries and reports** > **Vendor reports** > **Account statement**.
-2. In the **From date** field, enter a date.
-3. In the **To date** field, enter a date.
-4. In the **Assessment date** field, enter a date.
-5. Select **OK**.
-
-
+1. In the **From date** field, enter a date.
+1. In the **To date** field, enter a date.
+1. In the **Assessment date** field, enter a date.
+1. Select **OK**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: kfend
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 06/29/2021
+ms.date: 12/05/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: India
@@ -42,7 +42,6 @@ This article provides links to documentation resources for India.
 - [What's new or changed for India GST in 10.0.1 (April 2019)](apac-ind-news-letter-10-0-01.md)
 - [What's new or changed for India GST in 10.0.0 (April 2019)](apac-ind-news-letter-10-0-00.md)
 
-  
 ## Indirect taxes
 
 ### India GST
@@ -50,6 +49,7 @@ This article provides links to documentation resources for India.
 - [India Goods and Services Tax (GST) overview](apac-ind-gst.md)
 
 #### Tax engine
+
 - [Tax engine overview](../../general-ledger/tax-engine.md)
 - [Tax engine import configuration](../../dev-itpro/tax-engine-import-configuration.md)
 - [Electronic reporting advanced formula editor](../../../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md)
@@ -61,6 +61,7 @@ This article provides links to documentation resources for India.
 - [Troubleshoot GTE](../tax-engine-trouble-shooting.md)
 
 #### Master data setup
+
 - [Create a business vertical](apac-ind-GST-create-business-vertical.md)
 - [Update the state code and union territory](apac-ind-GST-update-state-code-union-territory.md)
 - [Create a GSTIN master](apac-ind-GST-create-gstin-master.md)
@@ -70,8 +71,9 @@ This article provides links to documentation resources for India.
 - [Create main accounts for the GST posting type](apac-ind-GST-create-main-accounts-GST-posting-type.md)
 - [Create a tax settlement period](apac-ind-GST-create-tax-settlement-period.md)
 - [Attach the GSTIN to a tax registration group](apac-ind-GST-attach-GSTIN-tax-registration-group.md)
- 
+
 #### Tax setup
+
 - [Define a tax configuration and deploy it to legal entities](apac-ind-GST-define-tax-configuration-deploy-legal-entities.md)
 - [Map configuration tax types - Customs](apac-ind-GST-map-configuration-tax-types.md)
 - [Set up rate and percentage tables](apac-ind-GST-set-up-rate-percentage-tables.md)
@@ -188,7 +190,5 @@ This article provides links to documentation resources for India.
 
 ## Request new features and functionality 
 You can visit [Dynamics 365 Application Ideas](https://experience.dynamics.com/) to view, search, or vote for existing ideas, or to add new ideas.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

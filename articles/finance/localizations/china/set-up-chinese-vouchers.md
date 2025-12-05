@@ -4,7 +4,7 @@ description: This article describes how to set up Chinese vouchers using specifi
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 03/11/2025
+ms.date: 12/05/2025
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
@@ -17,11 +17,11 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to set up Chinese vouchers using specific demo data in Microsoft Dynamics 365 Finance.
+This article describes how to set up Chinese vouchers by using specific demo data in Microsoft Dynamics 365 Finance.
 
-Chinese voucher numbers are the foundation for Chinese financial reporting. You must set them up before you do any financial transaction posting. You can set up the vouchers one at a time or you can use the Voucher type setup wizard.
+Chinese voucher numbers form the foundation for Chinese financial reporting. You must set them up before you post any financial transactions. You can set up the vouchers one at a time or use the Voucher type setup wizard.
 
-The following procedures walk you through how to set up Chinese vouchers with specific demo data. These procedures were created using the demo data company CNMF.
+The following procedures walk you through how to set up Chinese vouchers with specific demo data. This procedure uses the demo data company CNMF.
 
 ## Set up a Chinese voucher type
 
@@ -32,7 +32,7 @@ To set up a Chinese voucher type, follow these steps.
 1. In the **Voucher type** field, enter a value.
 1. In the **Voucher type number** field, enter a value. This value is used as the **Type ID** in the GB/T24589 export file.  
 1. In the **Description** field, enter a value.
-1. In the **Priority** field, enter a number. For financial vouchers such as posting sales invoices that are generated from source documents, if more than one voucher type is matched according to the voucher type rule, the first priority voucher type is assigned. You also can set a voucher type as **Default**, which sets it as the default voucher type.  
+1. In the **Priority** field, enter a number. For financial vouchers such as posting sales invoices that are generated from source documents, if more than one voucher type matches according to the voucher type rule, the first priority voucher type is assigned. You can also set a voucher type as **Default**, which sets it as the default voucher type.  
 1. In the **Number sequence code** field, enter or select a value.
 1. In the **Print layout group** field, enter or select a value.
 1. Enter the name of the person who is responsible for making this type of voucher. This name is used in the GB/T24589 export file, and should be for a person other than the person who can approve this type of voucher.  
@@ -74,11 +74,11 @@ To set up a Chinese voucher type, follow these steps.
 1. In the **Main account** field, enter **HKDBANK**.
 1. Select **Save**.
 
-## Set up additional parameters
+## Set up more parameters
 
-To set up additional parameters, follow these steps.
+To set up more parameters, follow these steps.
 
-1. In Dynamics 365 Finance, go to **General ledger \> Ledger setup \> General ledger parameters**. On the **General ledger parameters** page, you must first enable **Chinese voucher**, and then allow duplicate vouchers in the fiscal year. Chinese vouchers must be renumbered starting from "1" for each fiscal period.  
+1. In Dynamics 365 Finance, go to **General ledger \> Ledger setup \> General ledger parameters**. On the **General ledger parameters** page, first enable **Chinese voucher**, then allow duplicate vouchers in the fiscal year. Chinese vouchers must be renumbered starting from "1" for each fiscal period.  
 1. In the **Check for voucher used** field, select an option.
 
 ## Set up the print layout
@@ -94,7 +94,5 @@ To set up the print layout, follow these steps.
 1. Select **Add**.
 1. In the **Print layout code** field, select an option.
 1. Select **Save**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

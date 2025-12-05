@@ -4,7 +4,7 @@ description: Learn how to set up a mandatory payment reference for a specific le
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/04/2025
+ms.date: 12/05/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak  
@@ -48,8 +48,5 @@ To create a payment with a payment reference, follow these steps.
 1. On the **Payment** tab, in the **Payment reference** field, enter a value.
 1. Select **Save**.
 1. Select **Post**.
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

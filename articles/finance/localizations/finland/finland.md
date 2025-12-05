@@ -4,7 +4,7 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: kfend
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 03/22/2022
+ms.date: 12/05/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Finland
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 10.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This article includes information and links to resources that can help you set up legal entities with a primary address in Finland.
+This article includes information and links to resources that help you set up legal entities with a primary address in Finland.
 
 - [Sales tax payment report for Finland](../norway/emea-fin-sales-tax-payment-report-finland.md)
 - [VAT declaration (Finland)](emea-fin-vat-declaration.md)
@@ -29,6 +29,5 @@ This article contains information about the Finnish Intrastat report.
 This article contains information about the EU sales list for Finland.
 
 - [EU sales list for Finland](emea-fin-eu-sales-list.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

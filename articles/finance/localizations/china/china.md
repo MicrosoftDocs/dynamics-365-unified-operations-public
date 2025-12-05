@@ -4,7 +4,7 @@ description: Learn about functionality specific to China with resources that can
 author: kfend
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 07/25/2019
+ms.date: 12/05/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: China (PRC)
@@ -40,8 +40,8 @@ This article includes information and links to resources that can help you set u
 -   [GB/T 24589-2010 export](apac-chn-gbt-24589-2010.md)
 
 ## Additional resources
+
 - [Electronic reporting overview](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: This article describes how to set up and register transactions for 
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 03/27/2025
+ms.date: 12/05/2025
 ms.reviewer: johnmichalak
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.search.validFrom: 2016-06-30
@@ -19,7 +19,7 @@ ms.custom:
 
 This article describes how to set up and register transactions for an advance holder in Microsoft Dynamics 365 Finance.
 
-The following procedures demonstrate how to set up and register transactions for an advance holder. The procedures were created using the demo data company DEMF with a primary address in Lithuania, and only work for legal entities with a primary address in Poland, Lithuania, Latvia, Estonia, Czech Republic, or Hungary.
+The following procedures demonstrate how to set up and register transactions for an advance holder. The procedures use the demo data company DEMF with a primary address in Lithuania, and only work for legal entities with a primary address in Poland, Lithuania, Latvia, Estonia, Czech Republic, or Hungary.
 
 ## Create a new cash account
 
@@ -64,7 +64,7 @@ To create an advance holder group, follow these steps.
 
 To create an employee posting profile, follow these steps.
 
-1. In Dynamics 365 Finance, go to Accounts payable \> Setup \> Advance holders \> Employee posting profiles.
+1. In Dynamics 365 Finance, go to **Accounts payable \> Setup \> Advance holders \> Employee posting profiles**.
 1. Select **New**.
 1. In the **Posting profile** field, enter a value.
 1. In the **Description** field, enter a value.
