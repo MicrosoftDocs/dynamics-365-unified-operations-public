@@ -26,11 +26,11 @@ The Supplier Communications Agent helps you perform the following actions:
 
 - Create agent tasks to find purchase orders that require follow-up. Tasks are unique for each user. Therefore, you can create and adjust them to meet your specific business needs. Two default tasks are provided. One is used to follow up on unconfirmed purchase orders, and the other is used to follow up on late deliveries. You can modify or delete the default tasks as required to meet your business needs.
 - Configure how emails are generated for each task.
-- Review the draft emails that the agent generates. After you review each message, you can modify it, copy it to your email client, and send it. To generate the emails, the agent uses data from the purchase order lines and related tables.
+- Review the draft emails that the agent generates. After you review each message, you can modify it, and send it. To generate the emails, the agent uses data from the purchase order lines and related tables.
 
 By default, the system provides two premade tasks that you can use to find purchase orders that require action:
 
-- *Unconfirmed purchase orders* – This task finds purchase orders that are assigned to you, have a delivery date within the next 60 days, and aren't yet confirmed by the vendor (that is, the confirmed delivery date is blank). The task uses the following specific criteria:
+- *Unconfirmed purchase orders* – This task finds purchase orders that are assigned to you, have a delivery date within the next 60 days, and the vendor didn't yet confirm (that is, the confirmed delivery date is blank). The task uses the following specific criteria:
 
     - The **Deliver remainder (line)** field is set to a value other than *0* (zero).
     - The **Confirmed receipt date (line)** field is blank.
@@ -61,7 +61,7 @@ The following procedure explains how to set up agent tasks to find purchase orde
 
 1. Edit the name of the task as required. (The default name is *Send follow-up emails to vendors with Supplier Communications Agent*.)
 1. Select whether you want the task to find unconfirmed purchase orders or delayed purchase orders.
-1. Modify the criteria to define which purchase orders require follow-up. For example, you might want the task to find unconfirmed orders for the next two months, orders that were created more than three days ago, or orders that were sent but not confirmed.
+1. Modify the criteria to define which purchase orders require follow-up. For example, you might want the task to find: unconfirmed orders for the next two months, or orders created more than three days ago, or orders sent but not confirmed.
 1. Select the fields that should be included in the email, such as the delivery dates or the address.
 1. To add a signature, select **Signature**, and enter the desired text. You can also add an email footer that has text such as "This email was written with the help of AI."
 
@@ -93,15 +93,15 @@ Here are some examples of other tasks that you might set up:
 
 Emails that are drafted by the agent and then reviewed by a user are sent from the email address of the user that presses **Send**.
 
-Emails that are sent automatically, without user review, are sent from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address. The generated content of the emails contains, at the end, a "Best regards" signature. This signature includes the name that has been configured for the agent identity user.
+Emails that are sent automatically, without user review, are sent from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address. The generated content of the emails contains, at the end, a "Best regards" signature. This signature includes the name configured for the agent identity user.
 
-To learn how to view and edit the email address of the agent identity user or any other user, go to [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
+To learn how to view and edit the email address of the agent identity user (or any other user), go to [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
 
 ## Configure the receivers of the follow-up emails
 
-A new email type, named *Purchase Order Communications*, has been introduced, to be used for sending follow-up emails with the **(Preview) Supplier Communication Agent** feature. 
+A new email type, named *Purchase Order Communications*, is introduced, to be used for sending follow-up emails with the **(Preview) Supplier Communication Agent** feature. 
 
-To set it up, open **Accounts payable** \> **Vendors** \> **All vendors**. Select the desired vendor from the list and open it. On the vendor card, find the **Contact information** section. Select the contact to whom the follow-up emails should be sent and click on **Edit contact information**. Set the field **Purpose** to *Purchase Order Communications*. This ensures that this contact's email and name will be the ones used as receivers when addressing the follow-up emails, both in the header and in the body of the email text.
+To set it up, open **Accounts payable** \> **Vendors** \> **All vendors**. Select the desired vendor from the list and open it. On the vendor card, find the **Contact information** section. Select the contact to whom the follow-up emails should be sent and click on **Edit contact information**. Set the field **Purpose** to *Purchase Order Communications*. The agent will use this contact's email and name for the selected vendor, in the header and in the body of the follow-up emails.
 
 ## Review and send drafted emails
 
