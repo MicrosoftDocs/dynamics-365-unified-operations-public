@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 06/17/2025
+ms.date: 12/05/2025
 ms.update-cycle: 180-days
 audience: Application User
 ms.search.region: Global
@@ -31,42 +31,34 @@ Copilot brings a growing set of skills that help users complete various tasks. I
 
 ## Available Copilot features in finance and operations apps
 
-The following Copilot features are currently available in finance and operations apps:
+[!INCLUDE[ai-all-finops-apps](../../../../finops-shared/ai-all-fin-ops.md)]
 
-- For all finance and operations apps:
+### Dynamics 365 Commerce
 
-    - [Generative help and guidance with Copilot](copilot-generative-help.md)
-    - [Workflow history summary](../organization-administration/workflow-history-summary.md)
-    - [Enhanced user feedback for Copilot and related experiences](../../dev-itpro/copilot/enable-copilot-feedback.md)
-    - [Chat with finance and operations data](../../dev-itpro/copilot/chat-with-fno-data.md)
-    - [Immersive Home (production ready preview)](immersive-home.md)
+- [Customer insights by Copilot](../../../commerce/copilot-pos-customer-insights.md)
+- [Store report insights by Copilot](../../../commerce/copilot-pos-report-insights.md)
+- [Enable Copilot statement posting summaries](../../../commerce/copilot-statement-summaries.md)
+- [Streamline your merchandising process with Copilot-based insights](../../../commerce/copilot-based-merch-insights.md)
+- [Use Copilot in site builder to enrich product detail pages](../../../commerce/copilot-site-builder.md)
 
-- For Dynamics 365 Commerce:
+### Dynamics 365 Finance
 
-    - [Customer insights by Copilot](../../../commerce/copilot-pos-customer-insights.md)
-    - [Store report insights by Copilot](../../../commerce/copilot-pos-report-insights.md)
-    - [Enable Copilot statement posting summaries](../../../commerce/copilot-statement-summaries.md)
-    - [Streamline your merchandising process with Copilot-based insights](../../../commerce/copilot-based-merch-insights.md)
-    - [Use Copilot in site builder to enrich product detail pages](../../../commerce/copilot-site-builder.md)
+- [Collections coordinator summary](../../../finance/accounts-receivable/CollectionsCoordinatorSummary.md)
+- [Customer page summary](../../../finance/accounts-receivable/CustomerPageSummary.md)
 
-- For Dynamics 365 Finance:
+### Dynamics 365 Project Operations
 
-    - [Collections coordinator summary](../../../finance/accounts-receivable/CollectionsCoordinatorSummary.md)
-    - [Customer page summary](../../../finance/accounts-receivable/CustomerPageSummary.md)
+- [Copilot for project overview](/dynamics365/project-operations/project-management/copilot-features)
+- [Use Copilot in time entry](/dynamics365/project-operations/time/copilot-in-time-entry)
 
-- For Dynamics 365 Project Operations:
+### Dynamics 365 Supply Chain Management
 
-    - [Copilot for project overview](/dynamics365/project-operations/project-management/copilot-features)
-    - [Use Copilot in time entry](/dynamics365/project-operations/time/copilot-in-time-entry)
-
-- For Dynamics 365 Supply Chain Management:
-
-    - [AI summaries with Copilot](../../../supply-chain/get-started/copilot-summaries-overview.md)
-    - [Analyze demand plans with Copilot](../../../supply-chain/demand-planning/demand-planning-copilot.md)
-    - [Review and accept changes to confirmed purchase orders](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md)
-    - [Workload insights with Copilot in the Warehouse Management mobile app](../../../supply-chain/warehousing/warehouse-management-mobile-app-insights.md)
-    - [Supplier Communications Agent overview (production ready preview)](../../../supply-chain/procurement/supplier-com-agent-overview.md)
-    - [Generative insights for Demand planning (production ready preview)](../../../supply-chain/demand-planning/generative-insights.md)
+- [AI summaries with Copilot](../../../supply-chain/get-started/copilot-summaries-overview.md)
+- [Analyze demand plans with Copilot](../../../supply-chain/demand-planning/demand-planning-copilot.md)
+- [Review and accept changes to confirmed purchase orders](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md)
+- [Workload insights with Copilot in the Warehouse Management mobile app](../../../supply-chain/warehousing/warehouse-management-mobile-app-insights.md)
+- [Supplier Communications Agent overview (production ready preview)](../../../supply-chain/procurement/supplier-com-agent-overview.md)
+- [Generative insights for Demand planning (production ready preview)](../../../supply-chain/demand-planning/generative-insights.md)
 
 ## Responsible AI
 
