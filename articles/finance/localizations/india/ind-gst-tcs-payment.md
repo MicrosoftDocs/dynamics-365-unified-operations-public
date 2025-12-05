@@ -22,7 +22,7 @@ Under the GST law, e-commerce aggregators are responsible for deducting and depo
 
 All dealers and traders that sell goods and services online must be registered under the GST law, even if their turnover is less than the prescribed limit for claiming the tax that is deducted by e-commerce operators.
 
-![Flowchart to determine tax liability.](../media/gst-tcs-payment-01.png)
+:::image type="content" source="../media/gst-tcs-payment-01.png" alt-text="Flowchart to determine tax liability.":::
 
 ## Value that GST TCS must be deducted on
 For the deduction of TCS, the net value of taxable supplies from another supplier is considered when the tax that must be collected is calculated. If the invoice value includes GST, the tax amount can be excluded.
