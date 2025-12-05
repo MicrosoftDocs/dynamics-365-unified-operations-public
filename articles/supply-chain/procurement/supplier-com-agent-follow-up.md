@@ -89,13 +89,19 @@ Here are some examples of other tasks that you might set up:
     - The **Orderer (header)** field on the header is set to your user account (the current user).
     - The **Vendor (group)** field is set to *A*.
 
-## Configure the addresses that emails are sent from
-
-Emails that are sent automatically, without user review, are sent from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address. The generated content of the emails contains. at the end a "Best regards" signature. This signature includes the name that has been configured for the agent identity user.
+## Configure the email sender
 
 Emails that are drafted by the agent and then reviewed by a user are sent from the email address of the user that presses **Send**.
 
+Emails that are sent automatically, without user review, are sent from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address. The generated content of the emails contains, at the end, a "Best regards" signature. This signature includes the name that has been configured for the agent identity user.
+
 To learn how to view and edit the email address of the agent identity user or any other user, go to [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
+
+## Configure the receivers of the follow-up emails
+
+A new email type, named *Purchase Order Communications*, has been introduced, to be used for sending follow-up emails with the **(Preview) Supplier Communication Agent** feature. 
+
+To set it up, open **Accounts payable** \> **Vendors** \> **All vendors**. Select the desired vendor from the list and open it. On the vendor card, find the **Contact information** section. Select the contact to whom the follow-up emails should be sent and click on **Edit contact information**. Set the field **Purpose** to *Purchase Order Communications*. This ensures that this contact's email and name will be the ones used as receivers when addressing the follow-up emails, both in the header and in the body of the email text.
 
 ## Review and send drafted emails
 
@@ -103,7 +109,7 @@ To review the emails that were previously created for the various configurations
 
 Edit each message as required, and then select **Send** to send it to the vendor.
 
-## Automatically send follow-up emails
+## Configure automatic sending of follow-up emails
 
 If emails should be sent automatically, without user review, an administrator must use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature. This feature is optional and is turned off by default. Learn more in [Set up and configure the Supplier Communications Agent](supplier-com-agent-setup.md).
 
@@ -113,7 +119,7 @@ To specifically set up the sender email, go to **Common** \> **Setup** \> **User
 
 Learn more in [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
 
-## Set up the agent run schedule and batch job options
+## Set up the periodic agent run schedule and batch job options
 
 The Supplier Communications Agent includes a batch job that runs the agent automatically. To change the default configuration of the job, follow these steps:
 
