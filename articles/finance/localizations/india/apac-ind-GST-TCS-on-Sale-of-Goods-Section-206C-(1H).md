@@ -25,7 +25,7 @@ One important aspect of this feature is that if multiple customers have the same
 
 The following illustration shows the process flow for this feature.
 
-:::image type="content" source="../media/TCS-on-Sale-of-Goods-001.PNG" " alt-text="Flow diagram.":::
+:::image type="content" source="../media/TCS-on-Sale-of-Goods-001.PNG" alt-text="Flow diagram.":::
 
 ## Base amount for TCS deduction
 
