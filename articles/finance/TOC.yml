@@ -1741,9 +1741,9 @@
                         - name: France
                           items:
                             - name: E-invoicing and E-reporting for France via EDICOM
-                              href: href: localizations/france/emea-fra-einv-ereport.md?context=/dynamics365/context/finance
+                              href: localizations/france/emea-fra-einv-ereport.md?context=/dynamics365/context/finance
                             - name: Electronic invoicing for France via Chorus Pro
-                              href: href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
+                              href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
                         - name: Indonesia
                           href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
                         - name: Italy
