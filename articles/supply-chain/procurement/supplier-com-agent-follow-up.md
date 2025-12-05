@@ -34,21 +34,21 @@ By default, the system provides two premade tasks that you can use to find purch
 
     - The **Deliver remainder (line)** field is set to a value other than *0* (zero).
     - The **Confirmed receipt date (line)** field is blank.
-    - The **Requested receipt date (line)** field is set to a date that is earlier than the current date.
+    - The **Requested receipt date (line)** field is set to a date that is before the current date.
     - The **Orderer (header)** field is set to your user account (the current user).
     - The **Document status (header)** field is not *None*.
 
 - *Delayed purchase orders* – This task finds purchase orders that are assigned to you and that are delayed (that is, the confirmed delivery date was one or more days ago). The task uses the following specific criteria:
 
     - The **Deliver remainder (line)** field is set to a value other than *0* (zero).
-    - The **Confirmed receipt date** field is set to a date that is earlier than the current date.
+    - The **Confirmed receipt date** field is set to a date that is before the current date.
     - The **Orderer (header)** field is set to your user account (the current user).
 
 ## Configure task criteria and email settings
 
 The following procedure explains how to set up agent tasks to find purchase orders that require follow-up. It also explains how to configure the way that Copilot generates vendor email content for each task.
 
-1. Open the **(Preview) Follow-up emails** page by following either one of these steps:
+1. Open the **(Preview) Follow-up emails** page by following one of these steps:
 
     - Go to **Procurement and Sourcing** \> **(Preview) Supplier Communications Agent** \> **(Preview) Follow-up emails**.
     - Open the **Purchase order receipt and follow-up** workspace. A tile named **(Preview) Follow-up emails** indicates the number of emails that require review. Select the tile.
@@ -91,31 +91,46 @@ Here are some examples of other tasks that you might set up:
 
 ## Configure the email sender
 
-Emails that are drafted by the agent and then reviewed by a user are sent from the email address of the user that presses **Send**.
+When a user reviews and sends an email that the agent drafts, the email comes from that user's email address.
 
-Emails that are sent automatically, without user review, are sent from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address. The generated content of the emails contains, at the end, a "Best regards" signature. This signature includes the name configured for the agent identity user.
+When the system automatically sends an email without user review, the email comes from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address. The generated content of the emails conclude with a "Best regards" signature that includes the name configured for the agent identity user. <!-- KFM: In the section "Configure automatic sending of follow-up emails", it seems like we now provide a procedure for defining this. Should we link to that instead of saying it's the agent identity user? -->
 
-To learn how to view and edit the email address of the agent identity user (or any other user), go to [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
+Learn more about how to view and edit the email address of the agent identity user (or any other user) in [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md). <!-- KFM: Maybe we don't need this anymore either? -->
 
 ## Configure the receivers of the follow-up emails
 
-A new email type, named *Purchase Order Communications*, is introduced, to be used for sending follow-up emails with the **(Preview) Supplier Communication Agent** feature. 
+The agent uses emails of type *Purchase order communications* to send follow-up messages. You must choose which contact should receive these emails for each vendor. The selected contact's name and email address appear in the header and in the body of the follow-up emails that are sent to the vendor.
 
-To set it up, open **Accounts payable** \> **Vendors** \> **All vendors**. Select the desired vendor from the list and open it. On the vendor card, find the **Contact information** section. Select the contact to whom the follow-up emails should be sent and click on **Edit contact information**. Set the field **Purpose** to *Purchase Order Communications*. The agent will use this contact's email and name for the selected vendor, in the header and in the body of the follow-up emails.
+To choose the contact who receives follow-up emails for a vendor, follow these steps:
+
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+1. Find and open the desired vendor from the list.
+1. On the **Contact information** FastTab, select the contact who should receive the follow-up emails and select **Edit contact information** from the FastTab toolbar.
+1. In the **Edit contact information** dialog, set **Purpose** to *Purchase order communications*.
+1. Select **OK**.
 
 ## Review and send drafted emails
 
 To review the emails that were previously created for the various configurations, go to **Procurement and Sourcing** \> **(Preview) Supplier Communications Agent** \> **(Preview) Follow-up emails**. The configurations appear on the left, and the emails for each configuration appear on the right.
 
-Edit each message as required, and then select **Send** to send it to the vendor.
+Edit each message as required, then select **Send** to send it to the vendor.
 
 ## Configure automatic sending of follow-up emails
 
-If emails should be sent automatically, without user review, an administrator must use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature. This feature is optional and is turned off by default. Learn more in [Set up and configure the Supplier Communications Agent](supplier-com-agent-setup.md).
+To configure automatic sending of follow-up emails without requiring user review, follow these steps:
 
-Turn on **Batch email provider**: in **System administration** \> **Setup** \> **Email** \> **Email parameters**, choose the **Configuration** tab and under the **General** section and set **Batch email provider** to *Graph*.
-
-To specifically set up the sender email, go to **Common** \> **Setup** \> **User options**. In the **Account** tab, find the **Email provider selection** section and set the **Sender email** to the email of the user logged in, and set **Email provider ID** to *Graph*.
+1. Sign in to Supply Chain Management as an administrator.
+1. Go to **System administration** \> **Workspaces** \> **Feature management**.
+1. Make sure the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature is turned on. This feature is optional and is turned off by default. Learn more in [Set up and configure the Supplier Communications Agent](supplier-com-agent-setup.md).
+1. Go to **System administration** \> **Setup** \> **Email** \> **Email parameters**.
+1. Open the **Configuration** tab.
+1. On the **General** FastTab, set **Batch email provider** to *Graph*. This setting turns on the batch email provider.
+1. Sign in to Supply Chain Management as the user you want unreviewed follow-up emails to come from. <!-- KFM: I'm not sure about this step. Should this instead be that admin? Or does it matter? -->
+1. Go to **Common** \> **Setup** \> **User options**.
+1. Open the **Account** tab.
+1. On the **Email provider selection** FastTab, make the following settings: <!-- KFM: Does this contradict the information we provided earlier in the section "Configure the email sender"? There, we say emails come from the agent identity user -->
+    - **Sender email** – Enter the email address of the signed-in user. This is the email address that appears in the **From** field of the follow-up emails.
+    - **Email provider type** – Set to *Graph*.
 
 Learn more in [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
 

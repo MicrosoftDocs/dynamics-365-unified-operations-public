@@ -54,7 +54,7 @@ Before you can use the Supplier Communications Agent, your system must meet the 
 
 ## <a name="set-up-agent-identity"></a>Set up an agent identity
 
-The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to do its work. You must select the identity that is used for these interactions and create the required connections.
+The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to do its work. You must select the identity that the agent uses for these interactions and create the required connections.
 
 > [!TIP]
 > For security and ease of maintenance, use a dedicated identity for the agent.
@@ -107,7 +107,7 @@ To create the required connections, follow these steps.
 > [!NOTE]
 > This section describes one of two ways to activate the triggering Power Automate flows. The other way is to use a PowerShell script, which is described in the [Activate the triggering Power Automate flows by using a PowerShell script](#sample-script) section later in this article. You don't need to do both; you can choose the method that you prefer.
 
-To finish setting up the agent identity, you must activate the triggering Power Automate flows. Follow these steps, to use a Canvas app and finish the setup.
+To finish setting up the agent identity, you must activate the triggering Power Automate flows. Follow these steps to use a Canvas app and finish the setup.
 
 1. Sign in to the [Power Apps Maker portal](https://make.powerapps.com) as an environment administrator user.
 1. Select your environment from the **Environment** drop-down list in the page header.
@@ -169,7 +169,7 @@ To set up a private mailbox, follow these steps.
 1. Select the checkbox for each mailbox that you want to use with the Supplier Communications Agent.
 1. On the command bar, select **Test & enable mailbox** to enable synchronization for the selected mailboxes.
 
-After a private mailbox is set up, the user who owns it must update the personalization settings to specify that all emails should be tracked.
+After you set up a private mailbox, the user who owns it must update the personalization settings to specify that all emails should be tracked.
 
 To enable tracking of all emails for a private mailbox that you own, follow these steps.
 
@@ -180,7 +180,7 @@ To enable tracking of all emails for a private mailbox that you own, follow thes
 
 ### Shared mailbox
 
-If you're using a shared mailbox, create a queue so that all users who work on the shared mailbox can access email contents.
+If you use a shared mailbox, create a queue so that all users who work on the shared mailbox can access email contents.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a user who has a system administrator security role.
 1. Select the environment that you want to set up.
