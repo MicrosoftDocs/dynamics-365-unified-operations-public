@@ -28,7 +28,7 @@ This article describes recommended practices to improve performance and responsi
 To optimized data loading, use Power BI filters and slicers to limit the amount of data shown in the visual. The visual runs inside the Power BI engine, it inherits Power BI’s data-loading constraints. If too many rows are returned, both rendering and write-back operations can slow down or fail. 
 To optimize performance: 
 - Use slicers and report/page filters to restrict the visible data to the scenario, period range, entity, or business unit being planned.
-- Avoid loading large unfiltered datasets into the Matrix. DirectQuery imposes strict limits on query size and intermediate results. For more information, see [Direct query](/power-bi/connect-data/desktop-directquery-about.md#directquery-limitations).
+- Avoid loading large unfiltered datasets into the Matrix. DirectQuery imposes strict limits on query size and intermediate results. For more information, see [Direct query](https://power-bi/connect-data/desktop-directquery-about#directquery-limitations).
 - Ensure users plan at a manageable level of detail. For example, one scenario and one time horizon at a time. 
 
 
@@ -101,6 +101,7 @@ If users experience slow rendering or timeout issues:
 - [Matrix planning visual overview](matrix-planning.md)  
 - [Graphical planning visual](graphical-planning.md)  
 - [Write-back and allocation in Business performance planning](bpp-bud-reg-write.md)
+
 
 
 
