@@ -151,8 +151,8 @@ Learn more about electronic invoicing for a specific courntry/region by selectin
 |-----------|-------------|
 | Belgium | [Electronic invoicing for Belgium](../belgium/emea-bel-e-invoices.md) |
 | Chile | <ul><li>[Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md)</li><li>[Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md)</li></ul> |
-| Colombia | [Get started with Electronic invoicing for Colombia](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md)|
-| Costa Rica | [Get started with Electronic invoicing for Costa Rica](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md) |
+| Colombia | [Get started with Electronic invoicing for Colombia](../iberoamerica/ltm-costa-rica-ei-connect-configuration.md)|
+| Costa Rica | [Get started with Electronic invoicing for Costa Rica](../iberoamerica/ltm-costa-rica-ei-connect-configuration.md) |
 | Denmark | [Use electronic invoicing for Denmark](../denmark/gs-e-invoicing-dk-get-started.md)|
 | Panama | [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md) |
 | Paraguay |  [Get started with electronic invoicing for Paraguay](../iberoamerica/ltm-paraguay-electronic-invoice-configuration.md). |

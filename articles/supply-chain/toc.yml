@@ -305,7 +305,7 @@
                   - name: Vendor electronic invoice import in Chile
                     href: ../finance/localizations/iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/supply-chain
               - name: Costa Rica
-                href: ../finance/localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/supply-chain                        
+                href: ../finance/localizations/iberoamerica/ltm-costa-rica-ei-connect-configuration.md?context=/dynamics365/context/supply-chain                        
               - name: Denmark
                 href: ../finance/localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/supply-chain
               - name: Egypt
