@@ -58,13 +58,16 @@ Here are some key features of the side-by-side viewer:
 
 | Status | Description | Action |
 |---|---|---|
-| In process | The invoice has been successfully captured and is currently in pre-processing and validation. | No action is required. |
-| Captured | Exceptions occurred during the pre-processing and validation steps. Manual intervention is required to correct the invoice. | Select **Classify invoice**, **Start review**, or **Void**. |
+| Created | The invoice was successfully sent to AI builder, and the recognition has been completed.  The invoice has been created in Invoice Capture. | No action is required. |
+| Deriving | This state occurs after the invoice is created or can be invoked manually by selecting ‘Derive and Check’.  The data received from AI builder is being mapped to the data that exists in Dynamics 365 Finance| If stuck in this step for a long time, select **Retry**. |
+| Validating | This status occurs after derivation is completed. The invoice will be validated to ensure that the mandatory fields are populated and totals are correct. | If stuck in this step for a long time, select **Retry**. |
+| Captured |The invoice moves to a captured state after derivation and validation is completed.  If there are errors from the derivation and validation process, user intervention will be needed.  | Select **Classify invoice**, **Start review**, or **Void**. |
 | In review | The invoice is being reviewed and corrected in the side-by-side viewer. | Select **Classify invoice**, **Complete review**, or **Void**. |
 | Verified | The invoice has been reviewed but not transferred. | Select **Transfer**, **Classify invoice**, **Start review**, or **Void**. |
+| Transferring| The invoice has been submitted to the waiting list so that the automation job in Dynamics 365 Finance can pick it up for further processing.  | No action is required. |
 | Transferred | The invoice was successfully transferred to Dynamics 365 Finance. | Open the invoice in Dynamics 365 Finance. |
 | Voided | The invoice is no longer needed and is obsolete. | <p>Select **Obsolete**.</p><p>When you select **Obsolete**, both captured invoices and received files are permanently deleted from Dataverse.</p> |
-| Awaiting | The invoice has been submitted to the waiting list so that the automation job in Dynamics 365 Finance can pick it up for further processing. | No action is required. |
+
 
 ### Navigate to the side-by-side viewer
 
