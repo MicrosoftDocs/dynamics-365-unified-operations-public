@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/finance/localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md",
+      "redirect_url": "/dynamics365/finance/localizations/iberoamerica/ltm-costa-rica-ei-connect-configuration",
+      "redirect_document_id": "false"  
+    },
+    {
       "source_path": "articles/finance/accounts-payable/project-invoicing.md",
       "redirect_url": "/dynamics365/project-operations/prod-pma/project-invoicing",
       "redirect_document_id": "false"  
