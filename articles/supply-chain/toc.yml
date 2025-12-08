@@ -2302,6 +2302,8 @@
       - name: Turn on the Unified pricing management module for your system
         href: unified-pricing-management/upm-pricing-management-enable.md
       - name: Price attributes
+        - name: Migrate to unified pricing management (preview)
+          href: unified-pricing-management/upm-migrate-to-unified-pricing-management.md
         items:
         - name: Price attributes overview
           href: unified-pricing-management/upm-price-attributes-overview.md
