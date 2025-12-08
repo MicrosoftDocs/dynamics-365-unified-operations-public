@@ -1,10 +1,10 @@
 ---
 title: Invoice capture solution workspace
 description: Learn about the Invoice capture solution workspace, including on outline on the side-by-side viewer and captured invoice statuses.
-author: sunfzam
-ms.author: zezhangzhao
+author: ShielaSogge
+ms.author: shielas
 ms.topic: overview
-ms.date: 08/08/2024
+ms.date: 12/08/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -58,10 +58,10 @@ Here are some key features of the side-by-side viewer:
 
 | Status | Description | Action |
 |---|---|---|
-| Created | The invoice was successfully sent to AI builder, and the recognition has been completed.  The invoice has been created in Invoice Capture. | No action is required. |
-| Deriving | This state occurs after the invoice is created or can be invoked manually by selecting ‘Derive and Check’.  The data received from AI builder is being mapped to the data that exists in Dynamics 365 Finance| If stuck in this step for a long time, select **Retry**. |
-| Validating | This status occurs after derivation is completed. The invoice will be validated to ensure that the mandatory fields are populated and totals are correct. | If stuck in this step for a long time, select **Retry**. |
-| Captured |The invoice moves to a captured state after derivation and validation is completed.  If there are errors from the derivation and validation process, user intervention will be needed.  | Select **Classify invoice**, **Start review**, or **Void**. |
+| Created | The invoice was successfully sent to AI builder, and the recognition has been completed. The invoice has been created in Invoice capture. | No action is required. |
+| Deriving | This state occurs after the invoice is created or can be invoked manually by selecting **Derive and check**. The data received from AI builder is being mapped to the data that exists in Dynamics 365 Finance.| Select **Retry** if the process is stuck in this step for a long time. |
+| Validating | This status occurs after derivation is completed. The invoice is validated to ensure that the mandatory fields are populated and totals are correct. | Select **Retry** if the process is stuck in this step for a long time.  |
+| Captured |The invoice moves to a captured state after derivation and validation is completed. If there are errors from the derivation and validation process, user intervention is needed.  | Select **Classify invoice**, **Start review**, or **Void**. |
 | In review | The invoice is being reviewed and corrected in the side-by-side viewer. | Select **Classify invoice**, **Complete review**, or **Void**. |
 | Verified | The invoice has been reviewed but not transferred. | Select **Transfer**, **Classify invoice**, **Start review**, or **Void**. |
 | Transferring| The invoice has been submitted to the waiting list so that the automation job in Dynamics 365 Finance can pick it up for further processing.  | No action is required. |
