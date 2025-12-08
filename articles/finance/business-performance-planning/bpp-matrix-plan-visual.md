@@ -4,7 +4,7 @@ description: Learn the recommended practices to improve performance and responsi
 author: twheeloc
 ms.author: romainpham
 ms.topic: overview
-ms.date: 11/25/2025
+ms.date: 12/08/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 
@@ -299,6 +299,7 @@ Always confirm that the filters you apply match the intended planning scope befo
 - [Graphical planning visual](graphical-planning.md)  
 - [Reporting visual](reporting.md)  
 - [Comments visual](comments.md)  
+
 
 
 
