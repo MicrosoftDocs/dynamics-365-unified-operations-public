@@ -267,7 +267,7 @@ The Matrix planning visual integrates with the **Comments** visual to capture us
 
 #### Performance considerations
 
-- Always use a **Filter measure** to limit the dataset loaded into the visual.  
+- Always leverage slicers to limit the dataset loaded into the visual to the data that's relevant to the user. 
 - Minimize subtotals and nested hierarchies.  
 - Limit conditional formatting and cell locks to key metrics only.  
 - Use **Active Directory (Entra ID)** authentication for improved performance and SSO.  
@@ -301,6 +301,7 @@ Always confirm that the filters you apply match the intended planning scope befo
 - [Graphical planning visual](graphical-planning.md)  
 - [Reporting visual](reporting.md)  
 - [Comments visual](comments.md)  
+
 
 
 
