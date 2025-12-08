@@ -4,7 +4,7 @@ description: Learn how to propose and post the impairment amount by batch for Ja
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/02/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -32,13 +32,11 @@ To propose and post the impairment amount by batch, follow these steps.
 1. Expand the **Run in the background** section.
 1. In the **Batch processing** field, select **Yes**.
 1. Select **Create journal**.
-1. Go to **Fixed assets \> Journal entries \> Fixed assets journal**. The batch is processed asynchronously, so the journal may not be created yet.  
-1. Refresh the page to see the latest information. You may need to refresh multiple times depending on when the batch is processed.  
-1. In the list, find and select the desired record. You may need to refresh the page multiple times depending on when the batch is been processed.  
+1. Go to **Fixed assets \> Journal entries \> Fixed assets journal**. The batch processes asynchronously, so the journal might not be created yet.  
+1. Refresh the page to see the latest information. You might need to refresh multiple times depending on when the batch is processed.  
+1. In the list, find and select the desired record. You might need to refresh the page multiple times depending on when the batch is processed.  
 1. Select **Lines**.
 1. Confirm that the correct fixed assets are created and that they have the correct impairment amount.  
 1. Select **Post**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

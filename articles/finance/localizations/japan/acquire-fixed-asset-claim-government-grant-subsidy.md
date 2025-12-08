@@ -4,7 +4,7 @@ description: Learn how to acquire a fixed asset and claim it for a government gr
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/10/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -13,7 +13,7 @@ ms.custom:
   - bap-template
 ---
 
-# Acquire a fixed asset and claim for the government grant subsidy
+# Acquire a fixed asset and claim the government grant subsidy
 
 [!include [banner](../../includes/banner.md)]
 
@@ -21,7 +21,7 @@ This article explains how to acquire a fixed asset and claim it for a government
 
 The following procedures walk you through how to acquire a fixed asset and claim it for a government grant. The procedures use the JPMF demo data.
 
-Before you complete the procedures, you must first select the **Fixed Asset** configuration key.
+Before you complete the procedures, select the **Fixed Asset** configuration key.
 
 ## Acquire the fixed asset
 
@@ -56,7 +56,5 @@ To claim the fixed asset for a government grant, follow these steps.
 1. In the **Date** field, enter the accounting date on which to journalize the subsidy.  
 1. In the **Credit** field, enter the amount of the government grant.  
 1. Select **Post**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn how to reverse an endorsed bill of exchange from the accounts
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/02/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -36,7 +36,5 @@ To reverse an endorsed bill of exchange, follow these steps.
 1. Select  **Inquiry**.
 1. Select  **Voucher**.
 1. Verify that an accounting voucher was generated for the reversal.  
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn how to create a journal entry using the T-account format for 
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/25/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -17,13 +17,13 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to create a journal entry using the T-account format for Japan in Microsoft Dynamics 365 Finance.
+This article explains how to create a journal entry by using the T-account format for Japan in Microsoft Dynamics 365 Finance.
 
-In Japan, the T-account format is commonly used to input journal entries. 
+In Japan, use the T-account format to input journal entries.
 
 The following procedure uses the JPMF demo company data.
 
-To create a journal entry using the T-account format, follow these steps.
+To create a journal entry by using the T-account format, follow these steps.
 
 1. In Dynamics 365 Finance, go to **General ledger > Journal entries > General journals**.
 1. Select **New**.
@@ -42,7 +42,5 @@ To create a journal entry using the T-account format, follow these steps.
 1. Select **Save**.
 1. Close the page.
 1. Select **Post**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

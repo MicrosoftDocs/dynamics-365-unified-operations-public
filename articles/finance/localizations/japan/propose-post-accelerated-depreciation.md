@@ -4,7 +4,7 @@ description: Learn how to propose and post accelerated depreciation for Japan in
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/02/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -19,11 +19,11 @@ ms.custom:
 
 This article explains how to propose and post accelerated depreciation for Japan in Microsoft Dynamics 365 Finance.
 
-For Japan, you can propose an accelerated depreciation based on the data on confirmed accelerated depreciation documents. The accelerated depreciation proposal doesn't propose ordinary depreciation. The following procedure must be completed after you post ordinary depreciation.
+For Japan, you can propose accelerated depreciation based on the data on confirmed accelerated depreciation documents. The accelerated depreciation proposal doesn't propose ordinary depreciation. You must complete the following procedure after you post ordinary depreciation.
 
 Before you complete the procedure, you must first select the **Fixed Asset** configuration key.
 
-The procedure was created using the demo data company JPMF.
+The procedure uses the demo data company JPMF.
 
 To propose and post accelerated depreciation, follow these steps.
 
@@ -41,7 +41,5 @@ To propose and post accelerated depreciation, follow these steps.
 1. Close the page.
 1. Go to **Fixed assets \> Periodic tasks \> Accelerated depreciation \> Accelerated depreciation document**.
 1. Confirm that the status of posted document has been updated.  
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

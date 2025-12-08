@@ -4,7 +4,7 @@ description: Learn how to run fixed asset depreciation with reduction entries fo
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/25/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -19,9 +19,9 @@ ms.custom:
 
 This article explains how to run fixed asset depreciation with reduction entries for Japan in Microsoft Dynamics 365 Finance.
 
-The following procedure was created using the JPMF demo data company.
+The following procedure uses the JPMF demo data company.
 
-Before you complete the procedure, you must first select the **Fixed Asset** configuration key.
+Before you complete the procedure, select the **Fixed Asset** configuration key.
 
 To run fixed asset depreciation with reduction entries, follow these steps.
 
@@ -38,7 +38,5 @@ To run fixed asset depreciation with reduction entries, follow these steps.
 1. Select **OK**.
 1. Select **OK**. The depreciation that is attributed to the reduction entry is separated from that of the underline fixed asset by document type.  
 1. Select **Post**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

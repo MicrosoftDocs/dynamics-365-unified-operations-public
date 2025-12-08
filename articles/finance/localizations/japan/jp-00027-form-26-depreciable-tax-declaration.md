@@ -4,7 +4,7 @@ description: Learn how to assign a registration number to a fixed asset and prin
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/25/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -19,9 +19,9 @@ ms.custom:
 
 This article explains how to assign a registration number to a fixed asset and print the Form 26 report for Japan in Microsoft Dynamics 365 Finance.
 
-The following procedure walk you through how to assign a registration number to a fixed asset and print the form 26 report. The procedures use the JPMF demo company data. 
+The following procedure shows you how to assign a registration number to a fixed asset and print the form 26 report. The procedures use the JPMF demo company data. 
 
-Before you complete the procedures, you must first select the **Fixed Asset** configuration key.
+Before you complete the procedures, select the **Fixed Asset** configuration key.
 
 ## Create a registration number
 
@@ -105,7 +105,5 @@ To verify the Form 26 report, follow these steps.
 1. In the **Registration number** field, enter or select a value.
 1. Open and save the report in the required location.
 1. Validate the printed report. The fixed assets should be sorted and grouped by registration number. Similar sorting of fixed assets is also provided for the Form 26-1 n Form 26-2 reports.  
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

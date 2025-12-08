@@ -4,7 +4,7 @@ description: Learn how to set up consolidated invoices for Japan in Microsoft Dy
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/02/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -19,7 +19,7 @@ ms.custom:
 
 This article explains how to set up consolidated invoices for Japan in Microsoft Dynamics 365 Finance.
 
-In Japan, consolidated invoices can be enabled to fit the Japanese business practices. The following procedures walk you through how to set up consolidated invoice functionality.
+In Japan, you can enable consolidated invoices to fit the Japanese business practices. The following procedures walk you through how to set up consolidated invoice functionality.
 
 ## Configure accounts receivable parameters for consolidated invoices
 
@@ -45,7 +45,5 @@ To configure terms of payment, follow these steps.
 1. Select **Edit**.
 1. In the **Payment method** field, select **Cutoff day**.
 1. In the **Payment day** field, enter a value.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

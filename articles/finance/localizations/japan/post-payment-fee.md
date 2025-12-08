@@ -4,7 +4,7 @@ description: Learn how to generate and post a payment fee for Japan in Microsoft
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/02/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -34,7 +34,5 @@ To generate and post a payment fee, follow these steps.
 1. Select the **Payment fee** tab.
 1. Verify that the payment fee is generated correctly. You can also try to change the amount of payment, third party bank account, or the bank account to check if different combinations of these fields result in a different payment fee amount.  
 1. Select **Post**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

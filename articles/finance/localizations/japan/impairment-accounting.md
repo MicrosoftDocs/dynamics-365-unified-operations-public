@@ -4,7 +4,7 @@ description: Learn how to define impairment accounting common parameters and pos
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/25/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -19,9 +19,9 @@ ms.custom:
 
 This article explains how to define impairment accounting common parameters and posting profiles for Japan in Microsoft Dynamics 365 Finance.
 
-Thhe following procedures use the JPMF demo company data.
+The following procedures use the JPMF demo company data.
 
-Before you complete the procedures, you must first select the **Fixed Asset** configuration key.
+Before you complete the procedures, select the **Fixed Asset** configuration key.
 
 ## Set up impairment parameters
 
@@ -33,7 +33,7 @@ To set up impairment parameters, follow these steps.
 1. Select the **Number sequences** tab and confirm that the following number sequence codes are set up:  
     - **Document ID for impairment**
     - **Impairment test ID**
-    - **Cash generating unit number**        
+    - **Cash generating unit number**
 
 ## Set up a posting profile
 
@@ -49,7 +49,5 @@ To set up a posting profile, follow these steps.
 1. In the **Main account** field, enter a value.
 1. In the **Offset account** field, enter a value.
 1. Select **Save**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

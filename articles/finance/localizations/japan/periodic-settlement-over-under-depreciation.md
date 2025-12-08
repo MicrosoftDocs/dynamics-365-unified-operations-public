@@ -4,7 +4,7 @@ description: Learn how to calculate and record depreciation expense for deductib
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/02/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -52,12 +52,10 @@ To calculate and record over and under depreciation settlements, follow these st
 1. In the **Criteria** field, enter a value. For example, enter "BUILM-000005".  
 1. Select **OK**.
 1. Select **OK**.
-1. Refresh the page to see if the result is created. The results may not appear instantly. 
+1. Refresh the page to see if the result is created. The results might not appear instantly. 
 1. In the list, find and select the new result with **Status** = **Draft**.  
 1. Select **View settlement results**.
 1. Verify that the correct result is created.  
 1. Select **Post**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
