@@ -139,8 +139,8 @@ Set up ledger accounts for bad debt and collected bad debt that you use to selec
 
 ### Appendix 1-3 - Consumption tax amount calculation table by tax rate and consumption tax amount calculation sheet that serves as the tax base for local consumption tax
 
-    > [!NOTE]
-    > In the "Calculation" column of the following table, brackets (\[…\]) in the formulas enclose the values of the reporting codes.
+> [!NOTE]
+> In the "Calculation" column of the following table, brackets (\[…\]) in the formulas enclose the values of the reporting codes.
 
     | Field   | Description | Calculation |
     |---------|-------------|-------------|
@@ -164,8 +164,8 @@ Set up ledger accounts for bad debt and collected bad debt that you use to selec
 
 ### Appendix 2-3 - Calculation table for taxable sales ratio, deductible purchase tax amount, and other values
 
-    > [!NOTE]
-    > In the "Calculation" column of the following table, brackets (\[…\]) in the formulas enclose the values of the reporting codes.
+>[!NOTE]
+> In the "Calculation" column of the following table, brackets (\[…\]) in the formulas enclose the values of the reporting codes.
 
     | Field  | Description | Calculation |
     |--------|-------------|-------------|
