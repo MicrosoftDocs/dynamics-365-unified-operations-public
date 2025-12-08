@@ -69,5 +69,3 @@ To migrate to Unified pricing management, follow these steps.
 1. Select **X** to start the migration.
 
 When the migration is complete, your data and configurations are successfully migrated to Unified pricing management, providing a foundation for future enhancements to flexible pricing strategy.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
