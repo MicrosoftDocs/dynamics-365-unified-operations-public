@@ -4,7 +4,7 @@ description: Learn the capabilities, how to use and configure the Matrix plannin
 ms.author: romainpham
 author: ShielaSogge
 ms.topic: article
-ms.date: 11/11/2025
+ms.date: 12/08/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -100,6 +100,7 @@ If users experience slow rendering or timeout issues:
 - [Matrix planning visual overview](matrix-planning.md)  
 - [Graphical planning visual](graphical-planning.md)  
 - [Write-back and allocation in BPP](write-back.md)
+
 
 
 
