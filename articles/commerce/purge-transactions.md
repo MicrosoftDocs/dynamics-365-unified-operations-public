@@ -19,7 +19,7 @@ ms.search.validFrom: 2024-09-30
 
 This article describes how to use the Purge Commerce sales transactions capability to delete old transactional data that is no longer needed in Microsoft Dynamics 365 Commerce.
 
-Because the retention of large amounts of data in Commerce backend systems can increase data costs and affect system performance, organizations often want to remove outdated data. The Commerce version 10.0.42 release gives organizations the capability to delete old transactional data themselves. The **Purge commerce sales transactions** dialog is available in Commerce headquarters at **Retail and Commerce IT** \> **Clean up** \> **Purge commerce sales transactions**. However, before Commerce version 10.0.47, this capability is hidden behind a flighting flag and organizations must contact the Microsoft support team to enable the capability in their environments. Starting with Commerce version 10.0.47, this capability is enabled by default in all environments.
+Because the retention of large amounts of data in Commerce backend systems can increase data costs and affect system performance, organizations often want to remove outdated data. The Commerce version 10.0.42 release gives organizations the capability to delete old transactional data themselves. The **Purge commerce sales transactions** dialog is available in Commerce headquarters at **Retail and Commerce IT** \> **Clean up** \> **Purge commerce sales transactions**. However, before Commerce version 10.0.47, this capability is hidden behind a flighting flag and organizations must contact the Microsoft support team to enable the capability in their environments. For Commerce versions 10.0.47 and later, this capability is enabled by default in all environments.
 
 Users who have the appropriate role can select a date range for the deletion of transactions regardless of their posting status. Currently, the date range is limited to a maximum of six months at a time, and both the start and end dates must be before the previous calendar year. For example, if the current year is 2024, both the start and end dates of the date range must be in 2022 or earlier.
 
@@ -34,7 +34,7 @@ The following image shows an example of the **Purge commerce sales transactions*
 
 ## Purge only log and error files
 
-With Commerce version 10.0.46, Microsoft has enabled an additional configuration named **Only delete logs and error files** on the **Purge commerce sales transaction** dialog. If this configuration is enabled, then the system only deletes the log and error files that include the following files: 
+With Commerce version 10.0.46, Microsoft enables an additional configuration named **Only delete logs and error files** on the **Purge commerce sales transaction** dialog. If this configuration is enabled, then the system only deletes the log and error files that include the following files: 
 
 - RetailEodStatementControllerLog
 - RetailEodStatementEventLog
@@ -98,9 +98,10 @@ If the **Only delete logs and error files** configuration isn't selected, then t
 - RetailStatementVoucher
 
 > [!NOTE]
-> Two more tables (**RetailTransactionPriceTrans** and **RetailReceiptsContent**) will be added to the list in upcoming releases.
+> There are plans to add two more tables (**RetailTransactionPriceTrans** and **RetailReceiptsContent**) to the list in upcoming releases.
 
 
 
 
 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
