@@ -141,7 +141,7 @@ After you set up your charge codes, follow these steps to define the auto charge
     - **Category** – Select one of the following values:
 
         - *Fixed* – Enter the charge as a fixed amount on the line. You can use fixed charges on charges both in the order header and on the order lines.
-                - *Pcs* – Base the charge on unit with no unit of measure conversion. *Pcs* in this case represents any unit of measure and not the specific *Pcs* unit of measure. You can use these charges only on order lines. They appear when you calculate the order total.
+        - *Pcs* – Base the charge on unit with no unit of measure conversion. *Pcs* in this case represents any unit of measure and not the specific *Pcs* unit of measure. You can use these charges only on order lines. They appear when you calculate the order total.
         - *Percent* – Enter the charge as a percentage on the line. You can use percentage charges on charges both in the order header and on the order lines.
         - *Intercompany percent* – Enter the charge as a percentage on the line for intercompany orders. You can use intercompany percentage charges only on order lines.
         - *External* – A third-party service that's associated with one or more shipping carriers calculates the charge.
