@@ -2,9 +2,9 @@
 title: Post vouchers from the general journal
 description: This article describes how to post Chinese vouchers using the general journal for China in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 03/11/2025
+ms.date: 12/05/2025
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
@@ -17,13 +17,13 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to post Chinese vouchers using the general journal for China in Microsoft Dynamics 365 Finance.
+This article describes how to post Chinese vouchers by using the general journal for China in Microsoft Dynamics 365 Finance.
 
-The following procedure walks you through posting Chinese vouchers using the general journal. This procedure was created using the demo data company CNMF.
+The following procedure walks you through posting Chinese vouchers by using the general journal. This procedure uses the demo data company CNMF.
 
 For the CNMF demo data, you must create fiscal years through the current year in the fiscal calendar **Fiscal_CN**.
 
-Before you can complete this procedure, ensure that you've created all of the necessary fiscal calendars. 
+Before you can complete this procedure, ensure that you create all of the necessary fiscal calendars.
 
 ## Post vouchers from general ledger journals
 
@@ -44,7 +44,7 @@ To post vouchers from general ledger journals, follow these steps.
 1. Select **Offset account**.
 1. In the **Cashflow_CN** field, enter or select a value.
 1. Select **OK**.
-1. Select **Validate**. For this example, the criteria for the voucher of type Pay must be met. This means that one of the debit and credit accounts must be a bank account that is a cash account, otherwise the validation doesn't pass.  
+1. Select **Validate**. For this example, the criteria for the voucher of type Pay must be met. This requirement means that one of the debit and credit accounts must be a bank account that is a cash account, otherwise the validation doesn't pass.  
 1. Select **Validate**.
 1. Select **Post**.
 1. Select **Print**.
@@ -52,7 +52,5 @@ To post vouchers from general ledger journals, follow these steps.
 1. In the **Print layout code** field, enter or select a value.
 1. Select the **Print account dimension** checkbox.
 1. Select **OK**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,9 @@
 title: MY-00007 Self-billed invoices
 description: Learn how to create and print a vendor self-billed invoice for Malaysia in Microsoft Dynamics 365 Finance. 
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/29/2025
+ms.date: 12/09/2025
 ms.reviewer: johnmichalak 
 ms.search.region: Malaysia
 ms.search.validFrom: 2016-06-30
@@ -40,9 +40,9 @@ To print a self-billed invoice, follow these steps.
 1. In the **Invoice type** field, select a value.
 1. In the **Approval number** field, enter a value, and then select **Save**.
 1. In the list, mark the selected row.
-1. In the **Item number** field, select a value
+1. In the **Item number** field, select a value.
 1. In the **Unit price** field, enter a number.
-1. In the **Line details** section, on the **Setup** tab, in the **Item sales tax group** field, select a value. 
+1. In the **Line details** section, on the **Setup** tab, in the **Item sales tax group** field, select a value.
 1. In the **Sales tax group** field, select a value and then select **Save**.
 1. On the Action Pane, select **Purchase** \> **Sales tax.**
 1. Verify that the calculated sales tax amount for tax code is correct, and then select **OK**.  
@@ -53,8 +53,6 @@ To print a self-billed invoice, follow these steps.
 1. On the Action Pane, select **Process** \> **Print setup** \> **Print options**.
 1. Select the **Print invoice** checkbox and then select **OK**.
 1. Select **Post**, and then select **OK**.
-1. Review the **Self-billed invoice** report for accuracy. Verify that the report includes the GST summary section, the GST code, the amount origin, the quantity, and the GST amount.    
-
-
+1. Review the **Self-billed invoice** report for accuracy. Verify that the report includes the GST summary section, the GST code, the amount origin, the quantity, and the GST amount.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

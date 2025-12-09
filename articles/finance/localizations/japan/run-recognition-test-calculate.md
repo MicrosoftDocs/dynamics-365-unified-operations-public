@@ -2,9 +2,9 @@
 title: Run the impairment recognition test and calculate the impairment amount on individual assets
 description: Learn how to run the impairment recognition test and calculate the impairment amount on individual assets for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/02/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -36,8 +36,6 @@ To run the impairment recognition test and calculate the impairment amount on in
 1. Select **Save impairment** to open the drop dialog.
 1. In the **Description** field, enter a value.
 1. In the **Date** field, enter a date.
-1. Select **OK**. The confirmation form of the impaired fixed assets is displayed and the impairment test ID is issued.   
-
-
+1. Select **OK**. The confirmation form of the impaired fixed assets is displayed and the impairment test ID is issued.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

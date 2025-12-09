@@ -1,6 +1,6 @@
 ---
-title: Migrate to unified pricing management (preview)
-description: Learn how to migrate to unified pricing management in Microsoft Dynamics 365 Commerce version 10.0.46 to simplify pricing strategies with centralized control and flexible rules.
+title: Migrate to Unified pricing management (preview)
+description: Learn how to migrate to Unified pricing management in Microsoft Dynamics 365 Commerce version 10.0.46 to simplify pricing strategies with centralized control and flexible rules.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: v-griffinc
@@ -10,18 +10,18 @@ ms.custom:
   - bap-template
 ---
 
-# Migrate to unified pricing management (preview)
+# Migrate to Unified pricing management (preview)
 
 [!INCLUDE[banner](../includes/banner.md)]
 [!INCLUDE[banner](../includes/preview-banner.md)]
 
-This article explains how to migrate to unified pricing management (UPM) in Microsoft Dynamics 365 Commerce version 10.0.46 to simplify pricing strategies with centralized control and flexible rules.
+This article explains how to migrate to Unified pricing management in Microsoft Dynamics 365 Commerce version 10.0.46 to simplify pricing strategies with centralized control and flexible rules.
 
-UPM migration helps Dynamics 365 Commerce customers transition from the legacy Commerce pricing engine to the unified pricing management framework without extensive configuration or disruption.
+Unified pricing management migration helps Dynamics 365 Commerce customers transition from the legacy Commerce pricing engine to the Unified pricing management framework without extensive configuration or disruption.
 
 This enhancement simplifies adoption, so you can quickly experience the benefits of centralized and flexible pricing management. It lays the groundwork for you to later extend your pricing strategies by incorporating more pricing attributes for greater precision and control.
 
-UPM migration is structured into three incremental phases from Commerce versions 10.0.46 to 10.0.48, so you can move at your own pace and address various user scenarios and existing Commerce pricing engine configurations.
+Unified pricing management migration is structured into three incremental phases from Commerce versions 10.0.46 to 10.0.48, so you can move at your own pace and address various user scenarios and existing Commerce pricing engine configurations.
 
 The following table describes whether various rules are supported for pricing features.
 
@@ -39,26 +39,26 @@ The following table describes whether various rules are supported for pricing fe
 
 ## Prerequisites
 
-You must be running Commerce version 10.0.46 to use unified pricing management.
+You must be running Commerce version 10.0.46 to use Unified pricing management.
 
-## Migrate to UPM
+## Migrate to Unified pricing management
 
-To migrate to UPM, follow these steps.
+To migrate to Unified pricing management, follow these steps.
 
-1. In Dynamics 365 Commerce headquarters, go to the **Feature Management** workspace at **System administration \> Workspaces \> Feature management**.
+1. In Dynamics 365 Commerce headquarters, go to the **Feature Management** workspace at **System administration** \> **Workspaces** \> **Feature management**.
 1. Search for the **Unified pricing management pricing rule performance and enhancement** feature.
 1. Select the feature, then select **Enable**.
 
     > [!NOTE]
-    > When you enable the feature, you unlock the migration options to migrate from the Commerce pricing engine to UPM.
+    > When you enable the feature, you unlock the migration options to migrate from the Commerce pricing engine to Unified pricing management.
 
-1. Go to **Retail and Commerce \> Migration \> Set up Price group mapping for migration**. You see the following:
+1. Go to **Retail and Commerce** \> **Migration** \> **Set up Price group mapping for migration**. You see the following:
 
-    - The system automatically converts all existing Commerce price groups to UPM price groups.  
-    - Each new group keeps the same price group conditions as its legacy configuration. 
+    - The system automatically converts all existing Commerce price groups to Unified pricing management price groups.  
+    - Each new group keeps the same price group conditions as its legacy configuration.
 
 1. If duplicate mappings exist, the system prompts you to resolve them manually. After resolving any duplicates, select **Validate** before proceeding.
-1. Go to **Retail and Commerce \> Migration \> Migrate Commerce Pricing Setup**. This page lets you run the migration job that transitions your current Commerce pricing engine data into the UPM framework.
+1. Go to **Retail and Commerce** \> **Migration** \> **Migrate Commerce Pricing Setup**. This page lets you run the migration job that transitions your current Commerce pricing engine data into the Unified pricing management framework.
 
     > [!NOTE]
     > In Commerce version 10.0.46, price adjustments aren't included. Price adjustments migration support is included in Commerce version 10.0.47.
@@ -68,6 +68,4 @@ To migrate to UPM, follow these steps.
 1. If you want to continue applying existing trade agreements without attributes, configure the corresponding parameters accordingly.
 1. Select **X** to start the migration.
 
-When the migration is complete, your data and configurations are successfully migrated to UPM, providing a foundation for future enhancements to flexible pricing strategy.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+When the migration is complete, your data and configurations are successfully migrated to Unified pricing management, providing a foundation for future enhancements to flexible pricing strategy.
