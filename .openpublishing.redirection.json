@@ -28514,6 +28514,16 @@
       "source_path": "articles/supply-chain/warehousing/warehouse-app-install-certificate.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-migrating-from-v3-v4",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pim/product-information-faq.md",
+      "redirect_url": "/dynamics365/supply-chain/supply-chain-management-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/unified-pricing-management.md",
+      "redirect_url": "/dynamics365/supply-chain/unified-pricing-management/upm-migrate-to-unified-pricing-management?context=/dynamics365/context/commerce",
+      "redirect_document_id": false
     }
   ]
 

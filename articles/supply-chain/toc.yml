@@ -2301,6 +2301,8 @@
         href: unified-pricing-management/upm-pricing-management-overview.md
       - name: Turn on the Unified pricing management module for your system
         href: unified-pricing-management/upm-pricing-management-enable.md
+      - name: Migrate to unified pricing management (preview)
+        href: unified-pricing-management/upm-migrate-to-unified-pricing-management.md
       - name: Price attributes
         items:
         - name: Price attributes overview
@@ -2735,8 +2737,6 @@
             href: pim/tasks/approve-product-configuration-model.md
           - name: Transfer data for product models
             href: pim/tasks/transfer-data-product-models.md
-      - name: Product information management FAQ
-        href: pim/product-information-faq.md
     - name: Engineering change management
       items:
       - name: Engineering change management overview
