@@ -22,7 +22,7 @@ This feature will ensure that when a user is posting a document with LATAM infor
 Before you can complete this form make sure the following prerequisites are met:
 
 - Enable the country/region-specific Latin American (LATAM) feature, and the general LATAM feature.
-- Set the company’s address to a country within the LATAM Globalization expansion.
+- Set the company’s address to a country/region within the LATAM Globalization expansion.
 
 ## Predefine a sales point to a user
 
