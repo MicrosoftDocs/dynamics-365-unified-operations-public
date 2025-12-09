@@ -4,7 +4,7 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: kfend
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 07/25/2019
+ms.date: 12/09/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Lithuania
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides links to documentation resources for Lithuania. 
+This article provides links to documentation resources for Lithuania.
 
 - [Fixed asset repair statement](emea-ltu-fixed-asset-repair-statement.md)
 - [Generate a fixed asset transfer between warehouses document](lt-00003-fixed-asset-transfer.md)

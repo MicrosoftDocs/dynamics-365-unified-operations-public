@@ -4,7 +4,7 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: kfend
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 07/25/2019
+ms.date: 12/09/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Malaysia
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides links to documentation resources for Malaysia. 
+This article provides links to documentation resources for Malaysia.
 
 - [Generate Customer Credit note for Project sales](my-00011-03-customer-credit-note-project-sales.md)
 - [Generate Customer Debit Note for Project sales (November 2016)](my-00011-02-customer-debit-note-project-sales-2016-11.md)
@@ -34,6 +34,5 @@ This article provides links to documentation resources for Malaysia.
 <!-- Broken link - [Microsoft Dynamics Localization Portal: China report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/malaysia.html) -->
 - [Electronic reporting overview](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
