@@ -165,6 +165,12 @@ After your charges codes are set up, follow these steps to define the auto charg
 > - [Auto charge compounding and sequencing](../sales-marketing/auto-charge-sequence-compound.md)
 > - [Units of measure for line-level charges](../sales-marketing/line-charges-specific-unit.md)
 
+
+> [!NOTE]
+> When configuring auto charges in Accounts Payable in Dynamics 365 Finance, users may experience duplicate charge calculations if auto charges are set up for both specific vendors (Table) and for all vendors (All). This occurs because the system applies all relevant auto charge configurations, regardless of   hierarchy, whenever a purchase order is created.
+>
+> For example, if a charge code is set up with account code "All," it will be applied to every purchase order, regardless of any other specific vendor or group configurations that may also exist.
+
 ## Allocate charges from the header to a line
 
 The following procedure shows how to allocate header-level charges to a line. Before you start this procedure, you should already have a header-level charge of the *fixed amount* type and an order where that charge is applied. Additionally, the order should already include at least one line item.
