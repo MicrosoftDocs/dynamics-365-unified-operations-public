@@ -1895,7 +1895,7 @@ items:
               href: ../fin-ops/sysadmin/security-version.md
             - name: Privileged user management
               href: ../fin-ops/sysadmin/priv-user-mgmt.md            
-             - name: Manage device based user access
+            - name: Manage device based user access
               href: ../fin-ops/sysadmin/security-gov-device-based-access.md 
             - name: Available reports for security
               href: ../fin-ops/sysadmin/security-reports.md 
