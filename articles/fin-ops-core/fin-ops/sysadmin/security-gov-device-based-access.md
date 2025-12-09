@@ -1,6 +1,6 @@
 ---
 title: Manage device based user access to finance and operations apps
-description: Learn how to manage device-based user access for finance and operations apps. Discover steps to assign roles and ensure compliance with licensing requirements.
+description: Learn how to manage device based user access for finance and operations apps. Discover steps to assign roles and ensure compliance with licensing requirements.
 author: aneesa
 ms.author: aneesa
 ms.topic: how-to
@@ -29,15 +29,15 @@ While most users require user licenses as a part of their job functions, a small
 | Retail store manager | Retail store manager who needs to access Dynamics 365 Commerce functionality beyond the [point-of-sale (POS) app](../../../commerce/dev-itpro/store-commerce.md). |
 | Warehouse worker | Warehouse worker who needs to access Dynamics 365 Supply Chain Management functionality beyond the [warehouse management app](../../../supply-chain/warehousing/install-configure-warehouse-management-app.md). |
 
-To ensure continued access for users who rely solely on licensed devices to access finance and operations apps, administrators must temporarily assign device-based security roles until device license validation takes effect at a later date.
+To ensure continued access for users who rely solely on licensed devices to access finance and operations apps, administrators must temporarily assign device based security roles until device license validation takes effect at a later date.
 
-The following table lists the device-based security roles that you can assign for each corresponding job function.
+The following table lists the device based security roles that you can assign for each corresponding job function.
 
-| Job function | Device-based security role |
+| Job function | Device based security role |
 |--- | --- |
-| Production floor worker | Device-based - Production floor worker |
-| Retail store manager | Device-based - Retail store manager |
-| Warehouse worker | Device-based - Warehouse worker |
+| Production floor worker | Device based - Production floor worker |
+| Retail store manager | Device based - Retail store manager |
+| Warehouse worker | Device based - Warehouse worker |
 
 ## Requirements for using device based security roles
 
@@ -53,7 +53,7 @@ In addition to the preceding requirements:
 
 - **Device based security roles are temporary**
   - Device based security roles enable access until device license validation takes effect at a later date.
-  - When device license validation takes effect, Microsoft validates that the access comes from a licensed device. These roles are then deprecated, and eventually removed.
+  - When device license validation takes effect Microsoft will validate that the access is coming from a licensed device. These roles will then be deprecated, and eventually removed.
 - **Monitoring is in effect to detect misuse**
   - Microsoft monitors the assignment of device based security roles and users that use them to ensure that the licensing requirements outlined in the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544) are met.  
   - If any misuse is detected, organizations are notified to gather additional information and/or to acquire the appropriate licenses for continued access.
