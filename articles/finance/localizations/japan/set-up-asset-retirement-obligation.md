@@ -2,9 +2,9 @@
 title: Set up asset retirement obligation documents and enter ARO amount on a fixed asset
 description: Learn how to set up asset retirement obligation documents and enter the ARO amount on a fixed asset for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/02/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -19,11 +19,11 @@ ms.custom:
 
 This article explains how to set up asset retirement obligation documents and enter the asset retirement obligation (ARO) amount on a fixed asset for Japan in Microsoft Dynamics 365 Finance.
 
-For Japan, an asset retirement obligation (ARO) document identifies one type of asset retirement obligation. When you assign an ARO document to a fixed asset book, you can specify the cash flow that is expected to perform the obligation at asset retirement. 
+For Japan, an asset retirement obligation (ARO) document identifies one type of asset retirement obligation. When you assign an ARO document to a fixed asset book, you can specify the cash flow that is expected to perform the obligation at asset retirement.
 
 Use the following procedures to create an ARO document, assign it to a fixed asset, and enter the estimated retirement cost.
 
-In order to complete the following procedures, you must first select the **Fixed Asset** configuration key.
+To complete the following procedures, you must first select the **Fixed Asset** configuration key.
 
 The procedures use the demo data company JPMF.
 
@@ -60,6 +60,5 @@ To enter the asset retirement obligation amounts, follow these steps.
 1. In the **Transaction date** field, enter the date on which to recognize the asset retirement obligation.
 1. In the **Estimated retirement cost adjustment** field, enter the cash flow amount.
 1. Select **OK**.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

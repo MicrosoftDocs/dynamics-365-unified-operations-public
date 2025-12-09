@@ -4,7 +4,7 @@ description: Learn the capabilities, how to use and configure the Matrix plannin
 ms.author: romainpham
 author: ShielaSogge
 ms.topic: article
-ms.date: 11/11/2025
+ms.date: 12/08/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -23,12 +23,13 @@ Because the visual handles both data rendering and user interactions, performanc
 This article describes recommended practices to improve performance and responsiveness when using the Matrix planning visual.
 
 ---
+## Optimize data loading using Power BI filters and slicers 
 
-## Optimize data loading using a filter measure
-
-Always include a **Filter measure** when configuring the Matrix planning visual. Without a **Filter measure**, Power BI can’t pass filtered context to the visual. This forces the visual to retrieve all data from the dataset before applying filters, significantly increasing load times.
-
-A **Filter measure** ensures that only the relevant subset of data is retrieved from Dataverse before rendering. A simple Filter measure (for example, `SUM(FactTable[Amount])`) is sufficient to enable Power BI to push filters efficiently.
+To optimized data loading, use Power BI filters and slicers to limit the amount of data shown in the visual. The visual runs inside the Power BI engine, it inherits Power BI’s data-loading constraints. If too many rows are returned, both rendering and write-back operations can slow down or fail. 
+To optimize performance: 
+- Use slicers and report/page filters to restrict the visible data to the scenario, period range, entity, or business unit being planned.
+- Avoid loading large unfiltered datasets into the Matrix. DirectQuery imposes strict limits on query size and intermediate results. For more information, see [Direct query](/power-bi/connect-data/desktop-directquery-about#directquery-limitations).
+- Ensure users plan at a manageable level of detail. For example, one scenario and one time horizon at a time. 
 
 
 ## Manage subtotals and hierarchies
@@ -99,7 +100,13 @@ If users experience slow rendering or timeout issues:
 
 - [Matrix planning visual overview](matrix-planning.md)  
 - [Graphical planning visual](graphical-planning.md)  
-- [Write-back and allocation in BPP](write-back.md)
+- [Write-back and allocation in Business performance planning](bpp-bud-reg-write.md)
+
+
+
+
+
+
 
 
 

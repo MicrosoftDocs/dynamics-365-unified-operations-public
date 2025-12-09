@@ -2,9 +2,9 @@
 title: Reopen and edit a vendor consolidated invoice
 description: Learn how to reopen and modify a confirmed vendor consolidated invoice for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/02/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -19,9 +19,9 @@ ms.custom:
 
 This article explains how to reopen and modify a confirmed vendor consolidated invoice for Japan in Microsoft Dynamics 365 Finance.
 
-In Japan, when you miss an invoice during the consolidation process, you must reopen the consolidated invoice to add the missed invoice. 
+In Japan, if you miss an invoice during the consolidation process, you must reopen the consolidated invoice to add the missed invoice.
 
-The following procedures walk you through how to reopen a confirmed consolidated invoice and modify it. Before you can complete the procedures you must have a confirmed consolidated invoice.
+The following procedures walk you through how to reopen a confirmed consolidated invoice and modify it. Before you can complete the procedures, you must have a confirmed consolidated invoice.
 
 The procedures use the demo data company JPMF.
 
@@ -33,9 +33,9 @@ To reopen a consolidated invoice, follow these steps.
 1. In the list, find and select the desired record.
 1. Select **Reopen**.
 
-## Remove a purchase order a consolidated invoice
+## Remove a purchase order from a consolidated invoice
 
-To remove a purchase order a consolidated invoice, follow these steps.
+To remove a purchase order from a consolidated invoice, follow these steps.
 
 1. In the list, select the link in the selected row.
 1. Select **Edit**.
@@ -50,7 +50,5 @@ To add purchase orders and confirm the consolidated invoice, follow these steps.
 1. Select **OK**.
 1. Confirm that the purchase orders were invoiced before the consolidation date was added.
 1. Select **Confirm**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

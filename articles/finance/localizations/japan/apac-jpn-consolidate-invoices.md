@@ -4,7 +4,7 @@ description: In Japan, invoices are consolidated each month for payment. Learn a
 author: EricWangChen
 ms.author: reetuchopra
 ms.topic: article
-ms.date: 07/23/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 audience: Application User 
 ms.search.region: Japan
@@ -40,16 +40,16 @@ After you create and confirm a consolidated invoice on the **Consolidated invoic
 - **Invoice amount during consolidation period** – The total invoice amount for the current consolidated invoice. This amount includes the sales tax.
 - **Total invoice amount** – The new total invoice amount for the current invoice. This amount is calculated by using the following formula: Outstanding amount + Invoice amount during consolidation period.
 
-If the user generates one consolidated invoice per consolidation period (e.g., monthly), then the total invoice amount from the immediate previous period is displayed directly on a monthly basis. However, if the user generates two or more consolidated invoices within the same consolidation period, then the amounts are accumulated for that period and displayed as **Previous consolidated period invoice amount**. 
+If the user generates one consolidated invoice per consolidation period (for example, monthly), then the total invoice amount from the immediate previous period is displayed directly on a monthly basis. However, if the user generates two or more consolidated invoices within the same consolidation period, then the amounts are accumulated for that period and displayed as **Previous consolidated period invoice amount**.
 
 Let’s say consolidated invoices A, B, and C are generated:
- - If A, B, and C are each posted in different consolidation periods, the **Previous consolidated period invoice amount** and **Invoice paid amount** is displayed.
- - In period B, invoice A's consolidated period invoice details are displayed.
- - In period C, invoice B’s consolidated period invoice details are displayed.
- - If A, B, and C are all posted in the same consolidation period, then invoices A,B,C values are accummlated and displayed on invoice D which is posted in next consolidation period.
- - For invoices A, B, and C, the **Previous consolidated period** field is blank.
- - In the next consolidation period, invoice D, the **Previous consolidated period invoice amount** is the sum of A + B + C.
 
+- If A, B, and C are each posted in different consolidation periods, the **Previous consolidated period invoice amount** and **Invoice paid amount** is displayed.
+- In period B, invoice A's consolidated period invoice details are displayed.
+- In period C, invoice B’s consolidated period invoice details are displayed.
+- If A, B, and C are all posted in the same consolidation period, then invoices A,B,C values are accumulated and displayed on invoice D, which is posted in next consolidation period.
+- For invoices A, B, and C, the **Previous consolidated period** field is blank.
+- In the next consolidation period, invoice D, the **Previous consolidated period invoice amount** is the sum of A + B + C.
 
 ## Calculating the due date for a consolidated invoice
 
@@ -82,30 +82,26 @@ To support the QIS requirements that affect consolidated invoices, the following
 After you create and post a customer consolidated invoice, the consolidated consumption tax is calculated and adjusted in the following way at the consolidated invoice level in Accounts receivable and Accounts payable:
 
 - The posted sales tax transactions for each sales tax code for all invoices that are included in the consolidated invoice are summed (in transaction currency) for the following values:
-
-    - Amount origin
-    - Actual sales tax amount
-    - Actual nondeductible sales tax
-
+  - Amount origin
+  - Actual sales tax amount
+  - Actual nondeductible sales tax
 - The consolidated tax is calculated as *Sum of the amount origin* &times; *Sales tax code rate value* &divide; 100. This calculation is done for each sales tax code, including nondeductible amounts, and rounded according to the rule in the sales tax code.
 - The tax difference is calculated as *Consolidated tax* – *Sum of the actual sales tax amount*. If there's a difference per sales tax code, a tax adjustment is posted through a general ledger journal by using customer or vendor transactions, as appropriate.
 - Posted transactions that are offset to the tax adjustment can be settled against invoice payments.
 
 > [!NOTE]
-> For a consolidated invoice from a vendor, a tax difference can occur only when manually entered actual consolidated tax amounts from the vendor invoice differ from the calculated amounts. In this case, the tax adjustment, including the non-deductible part, is posted to an expense or capitalizing account.
+> For a consolidated invoice from a vendor, a tax difference can occur only when manually entered actual consolidated tax amounts from the vendor invoice differ from the calculated amounts. In this case, the tax adjustment, including the nondeductible part, is posted to an expense or capitalizing account.
 
 ### Assumptions and limitations
 
 Here are the main considerations for this functionality in Microsoft Dynamics 365 Finance:
 
 - Sales tax calculation parameters should be configured in the following way. For more information, see [Set up sales tax for JCT](apac-jpn-qualified-invoice-system.md#set-up-sales-tax-for-jct).
-
-    - All sales tax codes have an appropriate value for the **Tax type** field (**Standard** or **Reduced**).
-    - The **Origin** field is set to **Percentage of net amount**.
-    - The **Marginal base** field is set to **Net amount of invoice balance**.
-    - The **Calculation method** field is set to **Whole amount**.
-
-- Sales tax code parameters should not change during the invoicing period.
+  - All sales tax codes have an appropriate value for the **Tax type** field (**Standard** or **Reduced**).
+  - The **Origin** field is set to **Percentage of net amount**.
+  - The **Marginal base** field is set to **Net amount of invoice balance**.
+  - The **Calculation method** field is set to **Whole amount**.
+- Sales tax code parameters shouldn't change during the invoicing period.
 - Tax-inclusive scenarios aren't supported. 
 - Vendor invoices that are posted via a vendor invoice journal aren't included in consolidation.
 - Free text invoices and project invoices aren't included in consolidation for customers.
@@ -135,7 +131,7 @@ To issue consolidated invoices to customers and post the tax adjustments, follow
 1. Go to **Accounts receivable** \> **Periodic tasks** \> **Consolidated invoice**, and select **New**.
 1. Specify the required **Execution date** and **Consolidation date** values. Add the **Customer account** value to the filter as required. Then select **OK**. The resulting consolidated invoice includes all invoices that were previously posted in the specified period and that match the filter criteria.
 1. Review the data, and then select **Consolidated invoice** \> **Confirm**. The invoice status is changed to **Confirmed**.
-1. Select **Consolidated invoice** \> **Sales tax**. The **Sales tax transactions** dialog box appears and shows unposted sales tax transactions for the tax adjustments for the consolidated invoice. The **Overview** tab contains additional fields for the consolidated amount origin, consolidated posted sales tax, and actual consolidated sales tax.
+1. Select **Consolidated invoice** \> **Sales tax**. The **Sales tax transactions** dialog box appears and shows unposted sales tax transactions for the tax adjustments for the consolidated invoice. The **Overview** tab contains more fields for the consolidated amount origin, consolidated posted sales tax, and actual consolidated sales tax.
 1. On the **Consolidated invoice** page, select **Post**. The following actions occur:
 
     1. Sales tax adjustments and a corresponding customer transaction are posted. The posting date is the consolidation date of the consolidated invoice.
