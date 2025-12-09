@@ -1,29 +1,30 @@
 ---
-title: Purge Commerce transactions
+title: Purge Commerce transactions (preview)
 description: Learn how to use the Purge Commerce sales transactions capability to delete old transactional data that's no longer needed in Microsoft Dynamics 365 Commerce.
 author: shajain
-ms.date: 10/24/2025
+ms.date: 12/09/2025
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2024-09-30
 ---
 
-# Purge Commerce transactions
+# Purge Commerce transactions (preview)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article describes how to use the Purge Commerce sales transactions capability to delete old transactional data that is no longer needed in Microsoft Dynamics 365 Commerce.
 
-Because the retention of large amounts of data in Commerce back end systems can increase data costs and affect system performance, organizations often want to remove outdated data. The Commerce version 10.0.42 release gives organizations the capability to delete old transactional data themselves. The **Purge commerce sales transactions** dialog is available in Commerce headquarters at **Retail and Commerce IT** \> **Clean up** \> **Purge commerce sales transactions**. However, before 10.0.47, this capability is hidden behind a flighting flag and organizations must contact the Microsoft support team to enable the capability in their environments. Starting 10.0.47, this capability is enabled by default in all environments.
+Because the retention of large amounts of data in Commerce backend systems can increase data costs and affect system performance, organizations often want to remove outdated data. The Commerce version 10.0.42 release gives organizations the capability to delete old transactional data themselves. The **Purge commerce sales transactions** dialog is available in Commerce headquarters at **Retail and Commerce IT** \> **Clean up** \> **Purge commerce sales transactions**. However, before Commerce version 10.0.47, this capability is hidden behind a flighting flag and organizations must contact the Microsoft support team to enable the capability in their environments. Starting with Commerce version 10.0.47, this capability is enabled by default in all environments.
 
 Users who have the appropriate role can select a date range for the deletion of transactions regardless of their posting status. Currently, the date range is limited to a maximum of six months at a time, and both the start and end dates must be before the previous calendar year. For example, if the current year is 2024, both the start and end dates of the date range must be in 2022 or earlier.
 
 > [!NOTE]
-> The deleted transactions cannot be recovered. Due to the risks involved, this capability is restricted to users who are assigned to the **Information technology officer** role.
+> Deleted transactions can't be recovered. Due to the risks involved, this capability is restricted to users who are assigned to the **Information technology officer** role.
 
 The purge job runs as a batch job. There can be only one active job per legal entity. After the purge batch job is completed, the information log for the job shows details of the tables and record counts that were deleted. The purge job doesn't lock the tables that it deletes transactions from. Therefore, the system can continue to use those tables for other business processes.
 
@@ -98,6 +99,7 @@ If the **Only delete logs and error files** configuration isn't selected, then t
 
 > [!NOTE]
 > Two more tables (**RetailTransactionPriceTrans** and **RetailReceiptsContent**) will be added to the list in upcoming releases.
+
 
 
 
