@@ -3613,6 +3613,8 @@
                         href: localizations/iberoamerica/ltm-core-additional-ca.md
                       - name: Sales point prefixes for Latin America
                         href: localizations/iberoamerica/ltm-core-sales-point-prefixes.md
+                      - name: Set up predefined sales point per user
+                        href: localizations/iberoamerica/ltm-core-user-sales-point-setup.md
                       - name: Sales point relation for sales documents and remission
                         href: localizations/iberoamerica/ltm-core-point-relation.md
                       - name: Field list configuration for Latin America
