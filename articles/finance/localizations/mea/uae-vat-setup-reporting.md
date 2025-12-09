@@ -2,11 +2,11 @@
 title: Set up and report value-added tax (VAT)
 description: Learn how to set up and report value-added tax (VAT) for United Arab Emirates (UAE) in Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/05/2025
+ms.date: 12/09/2025
 ms.reviewer: johnmichalak
 ms.search.region: UAE
 ms.search.validFrom: 2019-05-29
@@ -16,29 +16,29 @@ ms.search.validFrom: 2019-05-29
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up and report value-added tax (VAT) for United Arab Emirates (UAE) in Microsoft Dynamics 365 Finance.
+This article explains how to set up and report value-added tax (VAT) for the United Arab Emirates (UAE) in Microsoft Dynamics 365 Finance.
 
-Value-added tax (VAT) was introduced in the United Arab Emirates (UAE) on January 1, 2018. Businesses in the UAE are responsible for carefully documenting their business income, costs, and associated VAT charges.
+The United Arab Emirates (UAE) introduced value-added tax (VAT) on January 1, 2018. Businesses in the UAE are responsible for carefully documenting their business income, costs, and associated VAT charges.
 
 Registered businesses and traders charge VAT to all their customers at the current rate, and they incur VAT on goods and services that they buy from suppliers. The difference between these sums is reclaimed or paid to the government. Federal Decree Law No. (8) of 2017 on Value Added Tax outlines the tax scope, rate, responsibility for tax, and supply of goods and services in all cases. These cases include supply in special cases, supply of more than one component, supply via agent, supply by government entities, and cases of deemed supply. For more detailed information about VAT regulations, see the [Federal Tax Authorities of United Arab Emirates website](https://government.ae/information-and-services/finance-and-investment/taxation/valueaddedtaxvat).
 
 ## <a name="header-information"></a>Configure a legal entity for VAT
 
-According to the *Requirements Document for Tax Accounting Software* that the Federal Tax Authority (FTA) issued, additional information must be set up when you configure a legal entity. 
+According to the *Requirements Document for Tax Accounting Software* that the Federal Tax Authority (FTA) issued, you must set up additional information when you configure a legal entity.
 
 To configure a legal entity for VAT, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. On the **Value added tax** FastTab, set the following fields:
+1. On the **Value added tax** FastTab, set the following fields:
 
-    - **Taxable person name** – Electronic VAT reports require the name of the taxable person. Names in English and Arabic will be filled in on reports. If the user interface (UI) language of the legal entity is set to English, the **Known as** field on the **Global address book** page can be used to store names in another language, such as Arabic.
-    - **Tax agency name** and **Tax agent name** – The name and Tax Agency Number (TAN) of the tax agency, and the name and Tax Agent Approval Number (TAAN) of the tax agent, are required when electronic VAT reports are prepared by a contracted tax agent or vendor.
-    - **Declarant name** – The electronic VAT report will include information about the person who is preparing a VAT declaration.
-    - **VAT refund required (if any)** – Set this option to **Yes** if a VAT refund is due and the company has requested to receive it.
+    - **Taxable person name** – Electronic VAT reports require the name of the taxable person. Reports include names in English and Arabic. If you set the user interface (UI) language of the legal entity to English, you can use the **Known as** field on the **Global address book** page to store names in another language, such as Arabic.
+    - **Tax agency name** and **Tax agent name** – When a contracted tax agent or vendor prepares electronic VAT reports, you must provide the name and Tax Agency Number (TAN) of the tax agency, and the name and Tax Agent Approval Number (TAAN) of the tax agent.
+    - **Declarant name** – The electronic VAT report includes information about the person who prepares a VAT declaration.
+    - **VAT refund required (if any)** – Set this option to **Yes** if a VAT refund is due and the company requests to receive it.
     - **Profit margin scheme** – Set this option to **Yes** if the company operates in a special business scheme by using the Profit Margin scheme.
     - **VAT on behalf of customer** – Set this option to **Yes** if the company operates as an agent that pays import VAT on behalf of another taxable person.
 
-[![Value added tax FastTab on the Legal entities page.](../media/uae_vat_02.jpg)]
+:::image type="content" source="../media/uae_vat_02.jpg" alt-text="Screenshot of the Value added tax FastTab on the Legal entities page.":::
 
 To prepare your legal entity in Finance for VAT accounting and reporting, use the [Sales tax](../../general-ledger/indirect-taxes-overview.md) functionality. For more detailed information, see the following articles:
 
@@ -55,21 +55,21 @@ To prepare your legal entity in Finance for VAT accounting and reporting, use th
 
 ## Configure the tax authority
 
-The FTA must be set up as a sales tax authority. After the vendor account is associated with the tax authority, the system creates automatic payments to vendor payables during the settlement process.
+Set up the FTA as a sales tax authority. When you associate the vendor account with the tax authority, the system automatically creates payments to vendor payables during the settlement process.
 
-Go to **Tax** \> **Sales tax** \> **Sales tax authorities**, and set up the address information of your FTA office. Be sure to select **UAE report layout** in the **Report layout** field.
+Go to **Tax** \> **Sales tax** \> **Sales tax authorities**, and enter the address information for your FTA office. Be sure to select **UAE report layout** in the **Report layout** field.
 
-[![Sales tax authorities page.](../media/uae_vat_03.jpg)]
+:::image type="content" source="../media/uae_vat_03.jpg" alt-text="Screenshot of the Sales tax authorities page.":::
 
-When you've finished, you can associate sales tax settlement periods with the tax authority that you just configured and with sales tax codes.
+When you're done, associate sales tax settlement periods with the tax authority that you configured and with sales tax codes.
 
 ## Configure sales tax codes and sales tax reporting codes
 
-The electronic VAT declaration report is based on the configuration of a specific UAE report layout for sales tax. This layout should be selected as the default layout in the setup of the tax authority.
+The electronic VAT declaration report is based on the configuration of a specific UAE report layout for sales tax. Select this layout as the default layout in the setup of the tax authority.
 
-Set up sales tax codes by following the appropriate procedure for the profile of your company's business in [Sales Tax section](../../general-ledger/indirect-taxes-overview.md) of the Help documentation.
+Set up sales tax codes by following the appropriate procedure for the profile of your company's business in the [Sales Tax section](../../general-ledger/indirect-taxes-overview.md) of the Help documentation.
 
-To run the UAE report layout that includes the electronic VAT declaration, you must first set up the appropriate number of reporting codes that are associated with the amount that is reporting in each VAT declaration.
+To run the UAE report layout that includes the electronic VAT declaration, you must first set up the appropriate number of reporting codes that are associated with the amount that's reporting in each VAT declaration.
 
 Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax reporting codes**, and create or update sales tax reporting codes according to the information in the following table.
 
@@ -150,7 +150,7 @@ Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax reporting code
 
 Use the information in the "Report setup" column of the preceding table to configure sales tax codes and associate them with sales tax reporting codes on the **Report setup** FastTab of each sales tax code that is relevant to your company's business.
 
-[![Report setup FastTab.](../media/uae_vat_05.jpg)]
+:::image type="content" source="../media/uae_vat_05.jpg" alt-text="Screenshot of the Report setup FastTab.":::
 
 ## Set up the VAT declaration for UAE
 
@@ -164,30 +164,29 @@ To use the VAT declaration in a legal entity that has its primary address in UAE
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-After all the configurations are uploaded, the configuration tree should be present in **Electronic reporting** > **Reporting configurations**.
+After you upload all the configurations, the configuration tree appears in **Electronic reporting** > **Reporting configurations**.
 
-![Configuration tree.](../media/uae-vat-er.png)
+:::image type="content" source="../media/uae-vat-er.png" alt-text="Screenshot of the configuration tree.":::
 
 > [!IMPORTANT]
-> After all the ER configurations from the previous table are imported, set the **Default for model mapping** option to **Yes** for the **VAT declaration model mapping** configuration.
+> After you import all the ER configurations from the previous table, set the **Default for model mapping** option to **Yes** for the **VAT declaration model mapping** configuration.
 
 ## Generate a VAT declaration in Excel
 
 To generate the VAT declaration report for UAE in Excel, use the standard **Report sales tax for settlement reporting period** procedure (**Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement reporting period**), and print the VAT declaration report.
 
-To generate the VAT declaration after a VAT settlement is completed, go to **Tax** \> **Sales tax inquiries** \> **Sales tax payments**, and select the required sales tax payment. Then, on the Action Pane, select **Export VAT file**. (For more information, see [Create a sales tax payment](../../general-ledger/tasks/create-sales-tax-payment.md).)
+To generate the VAT declaration after a VAT settlement is completed, go to **Tax** \> **Sales tax inquiries** \> **Sales tax payments**, and select the required sales tax payment. Then, on the Action Pane, select **Export VAT file**. For more information, see [Create a sales tax payment](../../general-ledger/tasks/create-sales-tax-payment.md).
 
-[![Sales tax parameters line item.](../media/uae_vat_12.jpg)]
+:::image type="content" source="../media/uae_vat_12.jpg" alt-text="Screenshot of the Sales tax parameters line item.":::
 
 In the **Export VAT file** dialog box, specify the required information.
 
-[![Export VAT file dialog box.](../media/uae_vat_13.jpg)]
+:::image type="content" source="../media/uae_vat_13.jpg" alt-text="Screenshot of the Export VAT file dialog box.":::
 
 You're prompted to save the downloaded Excel file for the VAT declaration to your local computer. Save the file, and verify the content of the reported data.
 
-According to the requirements of the FTA accounting systems, an electronic reporting file can't be edited after it's generated from the system. Any corrections that are required must be made in the system. After you've finished making corrections, generate a new reporting file.
+According to the requirements of the FTA accounting systems, you can't edit an electronic reporting file after it's generated from the system. You must make any corrections in the system. After you finish making corrections, generate a new reporting file.
 
 After the reporting file is validated, upload it to the FTA e-Tax portal by using procedures that are specific to your company registration with FTA.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

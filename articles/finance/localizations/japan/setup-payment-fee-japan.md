@@ -2,9 +2,9 @@
 title: Set up payment fee for Japan
 description: Learn how to set up a payment fee for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/09/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -95,14 +95,14 @@ To create a payment fee, follow these steps.
 1. In the **Groupings** field, select an option. For example, select **Group**.  
 1. In the **Bank relation** field, select the drop-down button to open the lookup.
 1. In the list, select the link in the selected row. For example, select **0001_009**.  
-1. In the **Vendor group type** field, select an option. If you select **Group**, it can be easier to configure.  
+1. In the **Vendor group type** field, select an option. If you select **Group**, it's easier to configure.  
 1. In the **Vendor account/group** field, enter a value. For example, enter **VendPayFee**.  
 1. In the **Method of payment** field, select the drop-down button to open the lookup.
 1. In the list, select the link in the selected row. For example, select **Bank**.  
 1. In the **Bank rule ID for payment fee** field, enter a value. For example, enter **DiffBank**.  
 1. Select the **General** tab.
 1. In the **Payment currency** field, enter a value. For example, enter "JPY".  
-1. In the **Minimum** field, enter a number. 
+1. In the **Minimum** field, enter a number.
 1. In the **Percentage/Amount** field, select an option. For example, select **Amount**.  
 1. In the **Fee amount** field, enter a number.
 1. In the **Fee currency** field, enter a value. For example, enter "JPY".  
@@ -111,7 +111,5 @@ To create a payment fee, follow these steps.
 1. In the **Item sales tax group** field, select the drop-down button to open the lookup.
 1. In the list, select the link in the selected row. For example, select **Taxable**.  
 1. Select **Save**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

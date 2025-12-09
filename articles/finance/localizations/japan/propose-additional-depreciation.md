@@ -2,9 +2,9 @@
 title: Propose additional depreciation
 description: Learn how to propose additional depreciation for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/02/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -19,9 +19,9 @@ ms.custom:
 
 This article explains how to propose additional depreciation for Japan in Microsoft Dynamics 365 Finance.
 
-In Japan, an additional depreciation is permitted under certain conditions. 
+In Japan, you can use additional depreciation under certain conditions.
 
-Use the following procedure to propose additional depreciation. Before you begin, ensure that the fixed asset has been acquired and the ordinary depreciation has been posted. 
+Use the following procedure to propose additional depreciation. Before you begin, make sure that you acquired the fixed asset and posted the ordinary depreciation.
 
 Before you complete the procedure, you must first select the **Fixed Asset** configuration key.
 
@@ -41,7 +41,5 @@ To propose additional depreciation, follow these steps.
 1. Select **OK**.
 1. Select **OK**.
 1. Select **Post**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

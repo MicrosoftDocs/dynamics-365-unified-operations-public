@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 06/27/2024
+ms.date: 12/05/2025
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-11-30
@@ -21,23 +21,24 @@ ms.assetid: e399ab34-4bfa-4b6d-a956-d425c1395ea3
 
 This article provides information about BOM comparison for China.
 
-A product might be accompanied by several versions of its bill of materials (BOM) over the course of its life cycle, because many products are redesigned or modified to meet changing requirements. In general, the cost of a BOM reflects the actual cost of production, and is derived from the components and materials that are used, in addition to the direct and indirect costs of creating the final product. The price of the BOM can be assigned manually, or it can be calculated by marking up the costs that are incurred during the manufacture or construction of the product. Use the **BOM comparison** page to compare the component quantities and inventory cost, or the latest purchase price of the components, among the various BOM versions. BOM comparison also lets you to perform the following tasks:
+A product might have several versions of its bill of materials (BOM) during its life cycle because many products are redesigned or modified to meet changing requirements. In general, the cost of a BOM reflects the actual cost of production. It comes from the components and materials that you use, plus the direct and indirect costs of creating the final product. You can assign the price of the BOM manually, or you can calculate it by marking up the costs that you incur during the manufacture or construction of the product. Use the **BOM comparison** page to compare the component quantities and inventory cost, or the latest purchase price of the components, among the various BOM versions. BOM comparison also lets you perform the following tasks:
 
--   Create a new BOM for an existing product, and base the new BOM on earlier versions.
--   Compare and highlight differences in components among a group of similar products.
--   Answer customer inquiries about product differences and uses.
--   Maintain accurate inventory records in industrial and manufacturing environments.
--   Maintain accurate operational and personnel records, and maintain accurate data.
--   Respond quickly to changing production levels and requirements.
--   Control inventory levels.
--   Identify and reduce inventory of obsolete parts.
--   Lower overall manufacturing costs.
--   Improve design and construction processes.
--   Meet client requirements by customizing designs and processes at various budget levels.
--   Generate conceptual estimates or customer quotes that are based on actual experience.
+- Create a new BOM for an existing product, and base the new BOM on earlier versions.
+- Compare and highlight differences in components among a group of similar products.
+- Answer customer inquiries about product differences and uses.
+- Maintain accurate inventory records in industrial and manufacturing environments.
+- Maintain accurate operational and personnel records, and maintain accurate data.
+- Respond quickly to changing production levels and requirements.
+- Control inventory levels.
+- Identify and reduce inventory of obsolete parts.
+- Lower overall manufacturing costs.
+- Improve design and construction processes.
+- Meet client requirements by customizing designs and processes at various budget levels.
+- Generate conceptual estimates or customer quotes that are based on actual experience.
 
 ## Example
-The following table shows how a BOM comparison is done. In this example, products FG001 and FG003, each of which has one active BOM, and product FG002, which has two active BOMs, are compared. The report lists each component in a BOM version, shows the component quantity in the appropriate units, and shows the inventory cost or latest purchase price.
+
+The following table shows how to compare BOMs. In this example, you compare products FG001 and FG003, each with one active BOM, and product FG002, which has two active BOMs. The report lists each component in a BOM version, shows the component quantity in the appropriate units, and shows the inventory cost or latest purchase price.
 
 | Product | BOM     | Site   | Components | Quantity | Unit | Cost      |
 |---------|---------|--------|------------|----------|------|-----------|
@@ -53,11 +54,5 @@ The following table shows how a BOM comparison is done. In this example, product
 | FG003   | FG003V1 |        | MT003      | 4        | pcs  | USD 30.00 |
 |         |         |        | MT004      | 2        | box  | USD 23.00 |
 |         |         |        | MT005      | 3        | kg   | USD 18.00 |
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
