@@ -4,7 +4,7 @@ description: Learn about the parameter configuration for Latin America, includin
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 12/03/2024
+ms.date: 12/10/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak	
 ---
@@ -44,7 +44,7 @@ This article provides a description of the Latin America (LATAM) parameter confi
     | Update "Reason" status for conciliated transactions | Use the reason that's selected in the **Reason code for Conciliated Status** field in bank reconciliations. |
     | Reason code for Conciliated Status                  | Select a reason that's configured in **Master of Financial Reasons** for the lines of the **Bank account** type. |
     | Remove IBAN field validation                        | Don't use the native validation of the **IBAN** field in the bank account master. |
-    | Show payment transactions                           | Hide value documents while transactions are settled. |
+    | Show payment transactions                           | Set this slider to yes to show payment transactions and transactions without LATAM information. |
 
 6. On the **Dimension allocations** tab, enable the addition of third-party information as a dimension in transactions.
 
