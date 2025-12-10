@@ -60,9 +60,19 @@ The **Continuous** field must be set to **Yes** for number sequences that are us
 The chart of accounts that is used by the legal entity with primary address in France must comply with the standard chart of accounts of France (Livre des procédures fiscales, article A47 A-1, chapter VII: "Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français"). 
 Only main accounts starting with **1**, **2**, **3**, **4**, **5**, **6**, or **7** must be used.
 
+For more information about chart of accounts in Finance, see [Plan your chart of accounts](../../general-ledger/plan-chart-of-accounts.md), [Plan your local chart of accounts](../../general-ledger/plan-local-chart-of-accounts.md).
+
 ### Posting profiles
 
 Use a posting profile for all customer and supplier balance accounts. These main accounts start with **41** and **40**. The **Do not allow manual entry** parameter must be enabled for them.
+
+For more information about posting profiles in Finance, see:
+- [Posting profiles overview](../../general-ledger/pstg-prfles-ovrvw.md)
+- [Accounts receivable posting](../../general-ledger/accts-recvble-posting.md)
+- [Customer posting profiles](../../accounts-receivable/customer-posting-profiles.md)
+- [Accounts payable posting](../../general-ledger/accts-payble-posting.md)
+- [Vendor posting profiles](../../accounts-payable/vendor-posting-profiles.md)
+- [Recommended practices for posting profiles](../../general-ledger/recommended-practices-pstg-prfles.md)
 
 ### Source documents for general ledger transactions
 
@@ -71,6 +81,8 @@ Store all the source documents for general ledger transactions during the period
 ### Currency
 
 Accounting documents that are subject for [FEC file](emea-fra-fec-audit-file.md) must be posted in EURO and in French. 
+
+For more information about configuring currencies for the ledger in Finance, see [Configuring currencies for the ledger](../../general-ledger/configure-ledger.md#configuring-currencies-for-the-ledger).
 
 ### Fichier des écritures comptables (FEC)
 
