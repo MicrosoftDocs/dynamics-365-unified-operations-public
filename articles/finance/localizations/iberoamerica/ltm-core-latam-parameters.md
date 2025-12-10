@@ -4,7 +4,7 @@ description: Learn about the parameter configuration for Latin America, includin
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 12/03/2024
+ms.date: 12/10/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak	
 ---
