@@ -125,3 +125,21 @@ The transaction records contain date, amount, text, creation date, and created-b
 - [View journal entries and transactions, Audit trail](../../general-ledger/view-journal-entries-transactions.md#audit-trail)
 - [Data retention, deletion, and destruction in Microsoft 365](../../../../compliance/assurance/assurance-data-retention-deletion-and-destruction-overview.md)
 
+### Code 180 - Generating an export file of accounting entries
+
+Event 180 is satisfied by the [FEC file](emea-fra-fec-audit-file.md) export functionality in Dynamics 365 Finance, combined with the [Archive ER destination type](../../..//fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md) setup and batch logging mechanism. 
+
+#### Archive destination setup
+
+The [FEC file](emea-fra-fec-audit-file.md) generation process requires that an [Archive ER destination type](../../..//fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md) be configured in the system. This ensures that the exported file is stored in a designated, secure archive location.
+
+#### Audit logging
+
+The batch execution automatically records metadata about the generation process, including:
+- Who initiated the export (user identity)
+- When the export was performed (timestamp)
+- Job status and execution details
+
+*Documentation links*
+- [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md)
+- [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md)
