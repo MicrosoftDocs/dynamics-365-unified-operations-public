@@ -40,7 +40,41 @@ The following table shows the Dynamics 365 Finance documentation that is related
 | Organizational documentation | This documentation describes the process that is established to control software product compliance. | [Globalization resources](../../../fin-ops-core/fin-ops/lcs/country-region.md) |
 | Maintenance documentation | This documentation describes implementation and maintenance of the software solution. | [Service description](../../../fin-ops-core/dev-itpro/get-started/service-description.md)<br>[Before you buy](../../../fin-ops-core/fin-ops/get-started/before-you-buy.md)</p><p>[Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/grid/Microsoft-Dynamics-365)<br>[Implementation lifecycle management home page](../../../fin-ops-core/dev-itpro/organization-administration/implementation-lifecycle.md)<br>[Dynamics 365 Support](https://dynamics.microsoft.com/support/)<br>[Submit service requests](../../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md)<br>[One Version service updates overview](../../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md) |
 
-## 
+## Software Requirements in France
+
+### Number of openning exercices
+
+According to the Software Requirements in France, the number of openning exercices must be limited to two.
+
+The following setup in Dynamics 365 Finance is recommended to satisfy this requirement. The value of the **Limited number of open fiscal years** field in **General ledger parameters** must not be more than **2**. 
+This field limits the total number of fiscal years that can be open at the same time. Article 921-4 of the General Accounting Plan (Principes généraux) states that a closing procedure must be executed no later than the end of the next period.
+
+### Number sequences
+
+Set up number sequences for vouchers. Each voucher series must contain a piece of text that will be considered a value for the **JournalCode** field in the [FEC file](emea-fra-fec-audit-file.md). For example, define the voucher series for vendor invoice journals as **FRSIFACF-\#\#\#\#\#\#\#\#** to get the value **FRSIFACF** in the **JournalCode** field in the FEC.
+
+The **Continuous** field must be set to **Yes** for number sequences that are used for invoice numbers and for general ledger transactions for vouchers. This setting accommodates article 100 of BOI-CF-IOR-60-40-20. The numbering  must increase over time, and it should not include any break. The numbering must be either unique throughout the fiscal period or specific to each journal. (The original French text states, "La numérotation dans le champ «EcritureNum» doit être croissante dans le temps et ne pas comporter de rupture. Cette numérotation peut être unique sur l'ensemble du fichier ou être propre à chaque journal."). For more information about set up and use chronological numbers for invoices and vouchers, see [Chronological invoice and voucher numbers](emea-fra-chronological-invoices-vouchers.md).
+
+### Chart of accounts
+
+The chart of accounts that is used by the legal entity with primary address in France must comply with the standard chart of accounts of France (Livre des procédures fiscales, article A47 A-1, chapter VII: "Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français"). 
+Only main accounts starting with **1**, **2**, **3**, **4**, **5**, **6**, or **7** must be used.
+
+### Posting profiles
+
+Use a posting profile for all customer and supplier balance accounts. These main accounts start with **41** and **40**. The **Do not allow manual entry** parameter must be enabled for them.
+
+### Source documents for general ledger transactions
+
+Store all the source documents for general ledger transactions during the period of time required by the accounting obligations of France.
+
+### Currency
+
+Accounting documents that are subject for [FEC file](emea-fra-fec-audit-file.md) must be posted in EURO and in French. 
+
+### Fichier des écritures comptables (FEC)
+
+For specific settings in Dynamics 365 Finance recommended for [FEC file](emea-fra-fec-audit-file.md) generation in compliance with regulatory requirements in France, see [Prerequisites to generate an FEC audit file in France](emea-fra-fec-audit-file-pre-requisites.md).
 
 ## Registration of audit events
 
