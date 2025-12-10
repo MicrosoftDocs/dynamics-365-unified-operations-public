@@ -4,7 +4,7 @@ description: Learn the recommended practices to improve performance and responsi
 author: twheeloc
 ms.author: romainpham
 ms.topic: overview
-ms.date: 11/25/2025
+ms.date: 12/08/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 
@@ -39,11 +39,13 @@ To build a Matrix planning visual, follow these steps:
 1. Drag and drop your data fields into the following areas:
    - **Rows** - The hierarchy or dimension you want to display as row headers. For example, Account or Cost center.  
    - **Columns** - The hierarchy or dimension you want to show across columns. For example, Period or Scenario.  
-   - **Values** - The measure or amount to plan. For example, Budget amount.  
-   - **Filter measure** recommended - Add a measure that limits the dataset retrieved for better performance.
+   - **Values** - The measure or amount to plan. For example, Budget amount.
+   - Use Power BI filters and slicers to restrict the data displayed in the Matrix to only what needs to be reviewed and edited.
 
-> [!NOTE]
-> Always define a **Filter measure**. Without it, Power BI retrieves unfiltered data, which causes long rendering times.
+>[Note!]
+> Filter the Matrix to a manageable slice of your cube. For example, one company, one scenario, and one year at a time.
+
+
 
 ### Granularity and dimensional selection
 
@@ -265,7 +267,7 @@ The Matrix planning visual integrates with the **Comments** visual to capture us
 
 #### Performance considerations
 
-- Always use a **Filter measure** to limit the dataset loaded into the visual.  
+- Always leverage slicers to limit the dataset loaded into the visual to the data that's relevant to the user. 
 - Minimize subtotals and nested hierarchies.  
 - Limit conditional formatting and cell locks to key metrics only.  
 - Use **Active Directory (Entra ID)** authentication for improved performance and SSO.  
@@ -299,6 +301,9 @@ Always confirm that the filters you apply match the intended planning scope befo
 - [Graphical planning visual](graphical-planning.md)  
 - [Reporting visual](reporting.md)  
 - [Comments visual](comments.md)  
+
+
+
 
 
 
