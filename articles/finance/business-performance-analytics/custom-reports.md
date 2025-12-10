@@ -29,53 +29,47 @@ The process has two main stages:
 Before you import or export reports, the following prerequisites must be in place:
 
 - You must have a system administrator role.
-- Both the target organization and the source organizations must have Business performance analytics version 2.0.29241185 or later.
-- You must update the connection of the **Business performance analytics backup custom reports** and **Business performance analytics restore custom reports** flows in the target and source organizations. To update the connection, follow these steps.
-
-    1. Go to [Power Apps](https://make.powerapps.com).
-    1. Select one of the organizations (source or target).
-    1. Go to **Flows**, and select one of the flows in the list.
-    1. Select **Edit**.
-    1. Either select an existing connection or create a new one.
-    1. Select **Save**.
-    1. Repeat the preceding steps for the other flow.
-    1. Repeat the preceding steps for the other organization.
+- Both the target organization and the source organizations must have Business performance analytics version 2.2.3079.1350 or later.
 
 ## Export
 
 To export custom reports from the source organization, follow these steps.
 
-1. Go to [Power Apps](https://make.powerapps.com).
-1. Confirm that you're in the source organization.
-1. Create a solution in the organization. Learn more in [Create a solution](/power-apps/maker/data-platform/create-solution).
+1. Navigate to the administration home page in the source environment.
+2. Select **Manage** on the **Import/Export reports** tile.
+3. Select the **Export** tab, and then select **+ New** on the ribbon.
+4. Either create a new solution or select an existing unmanaged solution:
 
-    - Follow the steps for creating a solution in the first part of the article.
-    - Make a note of the value that you enter in the **Name** field. You will need this value later.
+    - **To select an existing solution:**
+        1. Select the solution that the reports should be exported to.
+        
+        > [!NOTE]
+        > We don't recommend that you use an unmanaged solution that contains objects other than reports, because it might cause issues with the export.
 
-1. Go to **Flows**.
-1. Find the **Business performance analytics backup custom reports** flow, and select **Run**.
+    - **To create a new solution:**
+        1. Select a publisher.
+        2. Enter a display name and unique name.
+        
+        > [!NOTE]
+        > The display name is limited to 256 characters. The unique name is limited to 256 characters, including the publisher prefix, and must not contain spaces or special characters other than underscores (_).
 
-    1. In the **Solution unique name** field, enter the **Name** value that you made a note of.
-    1. Select **Run flow**.
-
-1. The run time depends on the number of existing reports. You can monitor the progress in the **Business performance analytics move custom reports to solution** flow.
-1. When the flow finishes running, go to the **Solutions** page.
-1. Export the solution that you created. Learn more in [Export from Power Apps](/power-apps/maker/data-platform/export-solutions#export-from-power-apps).
-
-    In the **Export this solution** dialog box, select either **Managed** or **Unmanaged** as the type of package to export.
+5. After the setup is complete, select the solution from the list, and then select **Export** in the upper right.
+6. Remain on the page until the export is complete. A green banner appears with a **Download solution** button. Select this button to download the solution as a .zip file.
 
 ## Import
 
 To import custom reports into the target organization, follow these steps.
 
-1. Go to [Power Apps](https://make.powerapps.com).
-1. Confirm that you're in the target organization.
-1. Import the solution that was exported from the source organization. Learn more in [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions).
-1. When the import is completed, go to **Flows**.
-1. Find the **Business performance analytics restore custom reports** flow, and select **Run**.
-1. The run time depends on the number of reports in the system. You can monitor the progress in the **Business performance analytics custom report restore flow** flow.
+1. Navigate to the administration home page in the target environment.
+2. Select **Manage** on the **Import/Export reports** tile.
+3. Select the **Import** tab, and then select **+ New** on the ribbon.
+4. Find the .zip or .cab file that contains the exported reports.
+5. Remain on the page until the import is complete.
+6. After a green banner appears that indicates a successful import, select **Import** in the upper right.
 
-When the flow finishes running, the reports are ready to use.
+    > [!NOTE]
+    > You don't have to remain on the page after you select this button. Your reports should appear within a few minutes.
+
 
 ## Notes and limitations
 
@@ -90,12 +84,13 @@ When the flow finishes running, the reports are ready to use.
     - The name of the report isn't updated.
 
 - If you import reports again from the same source organization, any backups of those reports in target organizations are overwritten by the values in the imported solution.
+
 - **Managed solutions (not recommended):** We don't recommend that you export and then import your backup solution as a managed solution. However, if you do, the following information applies:
 
     - Any backups in the target organization layer their changes on top of the imported backup solution. 
     - To move your reports from the target organization to any other organization, import the managed backup solution first.
     - If you imported the managed solution, deleted it, and then backed up the target organization, you can't import again from the same source organization. Otherwise, conflicts are created.
-    - The backed-up version in the unmanaged solution overwrites the contents of the managed solution.
+    - The backed-up version in the unmanaged solution overwrites the contents of the managed solution (even if imported again).
 
     > [!NOTE]
     > We recommend that you use a managed solution only if you don't plan to back up the target organization.

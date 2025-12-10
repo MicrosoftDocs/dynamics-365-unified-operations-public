@@ -150,6 +150,14 @@ Business performance analytics’s semantic model includes a flexible date dimen
 
 This approach ensures Business performance analytics remains adaptable to your business’s timekeeping practices while maintaining modeling best practices and analytic clarity.
 
+
+## Troubleshooting flow ownership  
+
+### How do I reassign flow ownership when the original owner has left the organization?
+
+If flows in Business performance analytics become orphaned because the original owner has left the organization, you need to reassign ownership. For detailed instructions, see [Reassign Business performance analytics flow ownership](bpa-flow-owner.md).
+
+
 ## Support and news
 ### How do I receive the latest news about Business performance analytics?
 
