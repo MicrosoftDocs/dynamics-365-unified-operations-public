@@ -89,3 +89,39 @@ Once a period is closed, no new postings or modifications can occur in that peri
 #### Audit trail
 
 All postings and period status changes are logged. Users cannot modify transactions in closed periods; corrections require reversing entries in an open period.
+
+### Code 60 - Fiscal year closing
+
+#### Year-end closing process
+
+Dynamics 365 Finance provides a dedicated [Year-end close](../../general-ledger/year-end-close.md) process through the **General Ledger** > **Year-end close** functionality. 
+This process transfers balances to the next fiscal year and marks the previous year as closed.
+
+*Documentation links*
+- [Year-end close](../../general-ledger/year-end-close.md)
+
+#### Immutability of closed periods
+
+In Dynamics 365 Finance transactions cannot be modified. Any corrections must be made using reversing and adjusting entries in an open period, preserving the integrity of historical data. 
+When a fiscal year status is set to **Permanently closed**, the closed year can't be reopened, no transactions can be posted in this period.
+
+*Documentation links*
+- [Close the fiscal year](../../general-ledger/tasks/close-fiscal-year.md)
+  
+#### Audit Trail
+
+All postings and period status changes are logged in the system. The audit trail includes user identity, timestamps, and job execution details, ensuring traceability for compliance audits.
+
+### Code 90 - Detection of an integrity flaw in secure data or in a tax archive
+
+In Dynamics 365 Finance the data security and immutability are satisfied with [FEC file](emea-fra-fec-audit-file.md) generated using [Electronic Reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) (ER) and [Audit Trail](../../general-ledger/view-journal-entries-transactions.md#audit-trail) features. 
+
+When FEC is generated and archived, the file is stored in a secure location (e.g., Azure Blob or SharePoint) with access controlled by a system administrator.
+The Dynamics 365 Finance does not allow modification of archived files through standard UI - immutability is enforced by storage and permissions defined by a system administrator.
+In Dynamics 365 Finance the accounting entries are stored in the `GeneralJournalEntry` and `GeneralJournalAccountEntry` tables, together with their related references. 
+The transaction records contain date, amount, text, creation date, and created-by fields. An accounting entry can be corrected only by adding new reversing and correcting entries, not by changing the existing records. Dynamics 365 Finance doesn't provide any way for users to alter these records.
+
+*Documentation links*
+- [View journal entries and transactions, Audit trail](../../general-ledger/view-journal-entries-transactions.md#audit-trail)
+- [Data retention, deletion, and destruction in Microsoft 365](../../../../compliance/assurance/assurance-data-retention-deletion-and-destruction-overview.md)
+
