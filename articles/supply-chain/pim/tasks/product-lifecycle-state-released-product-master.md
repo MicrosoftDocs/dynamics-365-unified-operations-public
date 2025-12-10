@@ -10,6 +10,8 @@ ms.reviewer: kamaybac
 ms.search.form: 
 ---
 
+<!-- KFM: SAFE TO DELETE -->
+
 # Assign a product lifecycle state to a released product master
 
 [!include [banner](../../includes/banner.md)]

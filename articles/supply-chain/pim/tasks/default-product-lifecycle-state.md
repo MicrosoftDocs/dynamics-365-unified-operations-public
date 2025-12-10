@@ -10,6 +10,8 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
+<!-- KFM: SAFE TO DELETE -->
+
 # Create a default product lifecycle state
 
 [!include [banner](../../includes/banner.md)]

@@ -10,6 +10,9 @@ ms.reviewer: kamaybac
 ms.search.form:  
 ---
 
+<!-- KFM: SAFE TO DELETE -->
+
+
 # Create a product lifecycle state to exclude products from Master planning
 
 [!include [banner](../../includes/banner.md)]
