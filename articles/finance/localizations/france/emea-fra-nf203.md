@@ -68,9 +68,24 @@ Administrative changes to number sequences are recorded in the system logs, whic
 
 ### Code 30 - Fiscal year archiving
 
-In Dynamics 365 Finance, fiscal year archiving is satisfied through the combination of: [Electronic Reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) (ER) for generating the legally required [VAT declaration](emea-fra-vat-declaration-preview-france.md), fiscal documents and [FEC file](emea-fra-fec-audit-file.md) at year-end and [Archive ER destination type](../../..//fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md) setup to store these electronic reports and related fiscal documents in a secure location (e.g., Azure Blob Storage or SharePoint) with access controlled by system administrators.
+In Dynamics 365 Finance, fiscal year archiving is satisfied through the combination of: [Electronic Reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) (ER) 
+for generating the legally required [VAT declaration](emea-fra-vat-declaration-preview-france.md), fiscal documents and [FEC file](emea-fra-fec-audit-file.md) at year-end and [Archive ER destination type](../../..//fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md) setup to store these electronic reports and related fiscal documents in a secure location (e.g., Azure Blob Storage or SharePoint) with access controlled by system administrators.
 
 #### Immutability and audit trail
 
 Archived files cannot be modified through the ERP interface. Posting logic ensures that once a fiscal period is closed, accounting entries cannot be altered; corrections are made only through reversing and adjusting entries. 
 Audit trail logs capture metadata such as user, timestamp, and job execution details for the archiving process.
+
+### Code 50 - Period closing
+
+#### Period closing functionality
+
+Dynamics 365 Finance provides functionality to close fiscal periods (daily, monthly, or yearly) through the [Fiscal calendars, fiscal years, and periods](../../budgeting/fiscal-calendars-fiscal-years-periods.md) and [Financial period close workspace](../../general-ledger/financial-period-close-workspace.md). 
+Once a period is closed, no new postings or modifications can occur in that period, ensuring data integrity and compliance.
+
+*Documentation links*
+- [Year-end close](../../general-ledger/year-end-close.md)
+
+#### Audit trail
+
+All postings and period status changes are logged. Users cannot modify transactions in closed periods; corrections require reversing entries in an open period.
