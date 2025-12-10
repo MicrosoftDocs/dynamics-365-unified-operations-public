@@ -38,3 +38,39 @@ The following table shows the Dynamics 365 Finance documentation that is related
 | Organizational documentation | This documentation describes the process that is established to control software product compliance. | [Globalization resources](../../../fin-ops-core/fin-ops/lcs/country-region.md) |
 | Maintenance documentation | This documentation describes implementation and maintenance of the software solution. | [Service description](../../../fin-ops-core/dev-itpro/get-started/service-description.md)<br>[Before you buy](../../../fin-ops-core/fin-ops/get-started/before-you-buy.md)</p><p>[Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/grid/Microsoft-Dynamics-365)<br>[Implementation lifecycle management home page](../../../fin-ops-core/dev-itpro/organization-administration/implementation-lifecycle.md)<br>[Dynamics 365 Support](https://dynamics.microsoft.com/support/)<br>[Submit service requests](../../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md)<br>[One Version service updates overview](../../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md) |
 
+## Registration of audit events
+
+This section describes how audit mechanisms in Dynamics 365 Finance ensure traceability, integrity, and compliance for all NF203-certified computerized accounting events, 
+including logging, monitoring, and verification of key actions.
+
+### Code 10 or 15 - Change in the continuous sequence management mode
+
+#### Continuous numbering management
+
+Dynamics 365 Finance uses **Number Sequences** to manage continuous numbering for vouchers and other documents. 
+These sequences ensure that document numbers are assigned without gaps, meeting French legal requirements.
+
+*Documentation links*
+- [Number Sequence Overview](../../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
+
+#### Change handling
+
+Any change in numbering configuration (such as scope, format, or periodicity) is performed through the **Number Sequence** setup by an administrator. 
+These changes are logged in system administration history, ensuring traceability.
+
+#### Immutability of existing documents
+
+Documents already created retain their original numbers. Dynamics 365 Finance does not allow retroactive renumbering, preserving integrity and compliance.
+
+#### Audit trail
+
+Administrative changes to number sequences are recorded in the system logs, which can be reviewed for compliance audits.
+
+### Code 30 - Fiscal year archiving
+
+In Dynamics 365 Finance, fiscal year archiving is satisfied through the combination of: [Electronic Reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) (ER) for generating the legally required [VAT declaration](emea-fra-vat-declaration-preview-france.md), fiscal documents and [FEC file](emea-fra-fec-audit-file.md) at year-end and [Archive ER destination type](../../..//fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md) setup to store these electronic reports and related fiscal documents in a secure location (e.g., Azure Blob Storage or SharePoint) with access controlled by system administrators.
+
+#### Immutability and audit trail
+
+Archived files cannot be modified through the ERP interface. Posting logic ensures that once a fiscal period is closed, accounting entries cannot be altered; corrections are made only through reversing and adjusting entries. 
+Audit trail logs capture metadata such as user, timestamp, and job execution details for the archiving process.
