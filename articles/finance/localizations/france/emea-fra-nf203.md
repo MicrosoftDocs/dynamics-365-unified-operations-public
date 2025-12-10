@@ -93,6 +93,8 @@ For specific settings in Dynamics 365 Finance recommended for [FEC file](emea-fr
 This section describes how audit mechanisms in Dynamics 365 Finance ensure traceability, integrity, and compliance for all NF203-certified computerized accounting events, 
 including logging, monitoring, and verification of key actions.
 
+For information about database logging in Dynamics 365 Finance, see [Configure database logging](../../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
+
 ### Code 10 or 15 - Change in the continuous sequence management mode
 
 #### Continuous numbering management
@@ -174,6 +176,8 @@ The transaction records contain date, amount, text, creation date, and created-b
 *Documentation links*
 - [View journal entries and transactions, Audit trail](../../general-ledger/view-journal-entries-transactions.md#audit-trail)
 - [Data retention, deletion, and destruction in Microsoft 365](../../../../compliance/assurance/assurance-data-retention-deletion-and-destruction-overview.md)
+
+For information about database logging in Dynamics 365 Finance, see [Configure database logging](../../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
 
 ### Code 180 - Generating an export file of accounting entries
 
