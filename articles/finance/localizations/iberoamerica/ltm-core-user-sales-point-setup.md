@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Set up predefined sales point per user
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article explains how to set up a predefined sales point for each user. This feature ensures that when a user posts a document with LATAM information and has multiple sales points available, the form selects the sales point assigned to the user by default.
 
