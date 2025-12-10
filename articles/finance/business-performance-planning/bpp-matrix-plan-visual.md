@@ -152,6 +152,9 @@ To use **Allocation like**, follow these steps:
 
 The new value is then distributed across the children according to the reference pattern.
 
+>[Note!]
+> Allocation operations in Business performance planning are limited to 50,000 rows per operation. Above this threshold, the allocation fails with a maximum row limit error. Use slicers and filters to narrow the allocation scope before retrying.
+
 ### Validation and editing lock
 
 To maintain governance and data integrity, the Matrix planning visual allows defining validation rules and editing locks. These rules are evaluated dynamically based on driver values present in the Matrix.
