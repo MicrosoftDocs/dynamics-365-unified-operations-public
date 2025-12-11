@@ -2601,7 +2601,7 @@
           items:
           - name: Product lifecycle states
             href: pim/product-lifecycle.md
-          - name: Find obsolete product variants
+          - name: Find obsolete released products or variants
             href: pim/tasks/obsolete-product-variants.md
         - name: Create a bar code for a product
           href: pim/tasks/create-bar-code-product.md

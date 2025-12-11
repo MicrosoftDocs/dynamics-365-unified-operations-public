@@ -44,6 +44,8 @@ For example, suppose you only want to sell one variant (red) of a given product 
 
 ## Default product lifecycle states
 
+The **Default when released to a legal entity** setting for lifecycle states doesn't apply to [engineering products](../engineering-change-management/product-engineering-overview.md). Instead, the lifecycle state of an engineering product version after it's created in the engineering company is specified in its engineering change category. When the product is released to an operational company, the lifecycle state of the product is copied. In other words, when an engineering product is released to an operational company, it has the same lifecycle state that it had in the engineering company. The lifecycle state can be overwritten in the operational company.
+
 The default lifecycle state for an engineering version is specified by its engineering category. The state will be defaulted when you create a new engineering version, including the first version of a new product.
 
 When you create a new product or engineering product, you can also set the default lifecycle state by specifying it on the template released product of the release policy assigned to the product.

@@ -39,7 +39,7 @@ The following procedure describes how to create, configure, and manage product l
     - **Is active for planning** – Set to *Yes* to include products that are in this lifecycle state in calculations at the master planning and bill of materials (BOM) levels. Set it to *No* to exclude products that are in this lifecycle state from the calculations.
 
     > [!IMPORTANT]
-    > The **Default when released to a legal entity** setting doesn't apply to [engineering products](../engineering-change-management/product-engineering-overview.md). The lifecycle state of an engineering product version after it's created in the engineering company is specified in its engineering change category. When the product is released to an operational company, the lifecycle state of the product is copied. In other words, when an engineering product is released to an operational company, it has the same lifecycle state that it had in the engineering company. The lifecycle state can be overwritten in the operational company. Learn more in [Product lifecycle states and transactions](../engineering-change-management/product-lifecycle-state-transactions.md).
+    > The **Default when released to a legal entity** setting doesn't apply to [engineering products](../engineering-change-management/product-engineering-overview.md). Learn more in [Product lifecycle states and transactions](../engineering-change-management/product-lifecycle-state-transactions.md).
 
 1. Use the **Enabled business processes** FastTab to control which of the available business processes can be used with products in the current lifecycle state. For each process that is listed on the FastTab, set the following fields:
 
@@ -52,7 +52,7 @@ The following procedure describes how to create, configure, and manage product l
 
 1. On the Action Pane, select **Save** to save your new or updated product lifecycle state.
 
-The following table lists and describes the business processes that might appear on the **Enabled business processes** FastTab.
+The following table lists and describes the business processes available on the **Enabled business processes** FastTab.
 
 | Process  | Process area | Description |
 |---|---|---|
@@ -83,9 +83,9 @@ The following table lists and describes the business processes that might appear
 
 There are multiple ways to associate a product lifecycle state to newly released products or product variants.
 
-- **On creation of a new released product** – The system assigns the lifecycle state marked as default to the **Product lifecycle state** field of the new released product.
-- **On release of a product to a legal entity** – The system assigns the lifecycle state marked as default to the **Product lifecycle state** field of the new released product.
-- **On release of a product variant to a legal entity** – The system assigns the lifecycle state assigned to the released product master in this legal entity to the **Product lifecycle state** field of the new variant.
+- *On creation of a new released product* – The system assigns the lifecycle state that has **Default when released to a legal entity** selected to the **Product lifecycle state** field of the new released product.
+- *On release of a product to a legal entity* – The system assigns the lifecycle state that has **Default when released to a legal entity** selected to the **Product lifecycle state** field of the new released product.
+- *On release of a product variant to a legal entity* – The system assigns the lifecycle state assigned to the released product master in this legal entity to the **Product lifecycle state** field of the new variant.
 
 > [!IMPORTANT]
 > The **Default when released to a legal entity** setting doesn't apply to [engineering products](../engineering-change-management/product-engineering-overview.md). The lifecycle state of an engineering product version after it's created in the engineering company is specified in its engineering change category. When the product is released to an operational company, the lifecycle state of the product is copied. In other words, when an engineering product is released to an operational company, it has the same lifecycle state that it had in the engineering company. The lifecycle state can be overwritten in the operational company. Learn more in [Product lifecycle states and transactions](../engineering-change-management/product-lifecycle-state-transactions.md).
@@ -123,29 +123,11 @@ Product lifecycle states are supported by data entities, and the lifecycle state
 
 ## Find obsolete products and products variants
 
-You can run a simulation analysis to find the obsolete released products or product variants and then update their product lifecycle status. Learn more in [Find obsolete product variants and assign a product lifecycle state](tasks/obsolete-product-variants.md).
-
-## Criteria to select and update released products or product variants
-
-<!-- KFM: What is this? Maybe this belongs in [Find obsolete product variants and assign a product lifecycle state](tasks/obsolete-product-variants.md)? -->
-
-Use the following criteria to select and update the released products and product variants:
-
-- The product lifecycle state of the product or product variant must be different from the new desired state.
-- The product or product variant was created some days ago based on the number of days that you enter in the selection dialog box.
-- There are no open production orders (= status < ended) for the product or product variant.
-- There are no open inventory transactions (= status issue ReservPhysical to QuotationIssue or status receipt Registered to QuotationReceipt) for the product or product variant.
-- There are no inventory transactions within the last number of days for the product or product variant.
-- There's no future demand or supply forecast for the product or product variant.  
-- No minimum stock level has been set in item coverage for the product or product variant.
-- No active fixed quantity kanban rule for the product or product variant.  
-- No service order line for the product or product variant.
-- No active or future sales or purchase agreement lines for the product or product variant.
-- The product or product variant isn't used in a BOM that is associated with a non-expired approved BOM version for a product or variant that is active for planning.
+You can run a simulation analysis to find the obsolete released products or product variants and then update their product lifecycle status. Learn more in [Find obsolete released products or variants](tasks/obsolete-product-variants.md).
 
 ## Related information
 
-- [Find obsolete product variants and assign a product lifecycle state](tasks/obsolete-product-variants.md)
+- [Find obsolete released products or variants](tasks/obsolete-product-variants.md)
 - [Product lifecycle states and transactions](../engineering-change-management/product-lifecycle-state-transactions.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
