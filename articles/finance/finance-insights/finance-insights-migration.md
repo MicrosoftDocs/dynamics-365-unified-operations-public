@@ -1,8 +1,8 @@
 ---
 title: Finance Insights migration guide
 description: This article provides comprehensive guidance for migrating from Finance Insights 1.0.0.x with Export to Data Lake to Finance Insights 1.2.x with Business Performance Analytics.
-author: ShivamPandeyMSFT
-ms.author: shpandey
+author: wei-msft
+ms.author: zhuw
 ms.topic: article
 ms.date: 12/10/2025
 ms.reviewer: twheeloc

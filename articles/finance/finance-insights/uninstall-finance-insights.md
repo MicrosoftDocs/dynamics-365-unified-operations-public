@@ -1,8 +1,8 @@
 ---
 title: Uninstall Finance insights
 description: This article explains how to uninstall Finance Insights from your Dynamics 365 Finance environment.
-author: ShivamPandeyMSFT
-ms.author: shpandey
+author: wei-msft
+ms.author: zhuw
 ms.topic: article
 ms.date: 12/10/2025
 ms.reviewer: twheeloc
