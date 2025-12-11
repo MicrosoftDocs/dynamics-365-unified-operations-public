@@ -19,58 +19,58 @@ This article answers frequently asked questions about migrating from Finance ins
 
 
 ### Why is this migration happening?
-Microsoft is modernizing Finance insights to use Business performance analytics as its data backend instead of Export to Data Lake. This provides better performance, reliability, and aligns with Microsoft's Power Platform strategy. Export to Data Lake is being deprecated and will be discontinued in Q1 2026.
+Microsoft is modernizing Finance insights to use Business performance analytics as its data backend instead of Export to Data Lake. This provides better performance, reliability, and aligns with Microsoft's Power Platform strategy. Export to Data Lake is being deprecated and will be discontinued early in 2026.
 
 ### When do I need to migrate?
-You must migrate before Q1 2026 when Export to Data Lake is discontinued. Microsoft will manage the migration process and will contact you at least 30 days before your scheduled migration window. You don't need to take immediate action.
+You must migrate before early in 2026 when Export to Data Lake is discontinued. Microsoft manages the migration process and contacts you at least 30 days before your scheduled migration window. You don't need to take immediate action.
 
 ### Do I have to migrate?
-Yes, if you want to continue using Finance insights. Export to Data Lake will be discontinued in Q1 2026, and Finance insights 1.0.0.x will no longer function after that date. The migration to Finance insights 1.2.x with Business performance analytics is required to maintain functionality.
+Yes, if you want to continue using Finance insights. Export to Data Lake will be discontinued early in 2026, and Finance insights 1.0.0.x will no longer function after that date. The migration to Finance insights 1.2.x with Business performance analytics is required to maintain functionality.
 
 ### Who manages the migration?
-Microsoft manages the migration process. You'll receive advance notice and preparation instructions, but Microsoft performs the actual migration of your Finance Insights configuration and models.
+Microsoft manages the migration process. You'll receive advance notice and preparation instructions, but Microsoft performs the actual migration of your Finance insights configuration and models.
 
 ### How much does the migration cost?
 There is no separate migration fee. However, Finance insights 1.2.x requires Business performance analytics, which is included with Dynamics 365 Finance licenses. You may need to purchase additional Dataverse capacity depending on your data volume.
 
 ### Can I opt out of the migration?
-If you choose not to migrate, you'll lose access to Finance insights features after Q1 2026 when Export to Data Lake is discontinued. There is no option to continue using Finance insights 1.0.0.x beyond that date.
+If you choose not to migrate, you'll lose access to Finance insights features when Export to Data Lake is discontinued. There's no option to continue using Finance insights 1.0.0.x after this is discontinued. 
 
 If you'd like to opt out of the migration and discontinue using Finance insights entirely, uninstall Finance insights before your scheduled migration date. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md). Uninstalling Finance insights removes all Finance insights functionality, including prediction models and historical data.
 
 
 ### How will I know when my migration is scheduled?
-Microsoft will contact you via email and LCS notifications at least 30 days before your scheduled migration. The notification includes your specific migration window and preparation checklist.
+Microsoft will contact you using email and LCS notifications at least 30 days before your scheduled migration. The notification includes your specific migration window and preparation checklist.
 
 ### What version of Dynamics 365 Finance do I need?
-You must be on Dynamics 365 Finance version 10.0.38 or later before migration. If you're on an earlier version, you'll need to upgrade before Microsoft can migrate your Finance insights configuration.
+You must be on Dynamics 365 Finance version 10.0.38 or later before migration. If you're on an earlier version, you need to upgrade before Microsoft can migrate your Finance insights configuration.
 
 ### Do I need to install Business performance analytics?
-No, Microsoft will install Business performance analytics version 2.3 or later as part of the migration process. 
+No, Microsoft installs Business performance analytics version 2.3 or later as part of the migration process. 
 
 ### Will my environment be down during migration?
 Your Dynamics 365 Finance environment remains available during migration. However, Finance insights features (payment predictions, cash flow forecasting) will be unavailable for 2-4 hours during the migration window. Plan the migration during a low-usage period if possible.
 
 ### How long does migration take?
-The migration typically takes 2-4 hours. Microsoft will provide a specific timeframe when they schedule your migration. During this time, Finance insights features are unavailable, but the rest of your Finance environment remains accessible.
+The migration typically takes 2-4 hours. Microsoft provides a specific timeframe when they schedule your migration. During this time, Finance insights features are unavailable, but the rest of your Finance environment remains accessible.
 
 ### Can users still work in Dynamics 365 Finance during migration?
 Yes, users can continue working in Finance during migration. Only Finance insights features (payment predictions, cash flow forecasting workspaces) are temporarily unavailable.
 
 ### What if something goes wrong during migration?
-Microsoft's migration team monitors the process and resolves any issues. If migration fails, Microsoft works with you to reschedule and address any blocking issues. Your original Finance insights 1.0.0.x configuration will remain intact until migration completes successfully.
+Microsoft's migration team monitors the process and resolves any issues. If migration fails, Microsoft works with you to reschedule and address any blocking issues. Your original Finance insights 1.0.0.x configuration remains intact until migration completes successfully.
 
 ### Will I lose my prediction models?
 No, customer payment prediction models and cash flow forecast models are automatically migrated and preserved. 
 
 ### Will historical prediction data be preserved?
-Yes, historical predictions and model training data are preserved during migration. You'll maintain continuity in your prediction accuracy and historical analysis.
+Yes, historical predictions and model training data are preserved during migration. You maintain continuity in your prediction accuracy and historical analysis.
 
 ### Do I need to reconfigure Finance insights features?
 No, your Finance insights feature configurations are migrated automatically. Users can access the same workspaces and features without reconfiguration.
 
 ### How long before predictions start working again?
-After migration completes, Business performance analytices needs to perform an initial data sync. This can take several hours depending on your data volume. Predictions resume automatically after the data sync completes.
+After migration completes, Business performance analytics performs an initial data sync. This can take several hours depending on your data volume. Predictions resume automatically after the data sync completes.
 
 ### What's the difference between Finance insights 1.0.0.x and 1.2.x?
 Finance insights 1.0.0.x:
@@ -101,7 +101,7 @@ AI Builder credit usage remains the same. Finance insights continues to use the 
 Microsoft's migration process is designed to be low-risk and is tested extensively. However, if you have multiple environments (production and sandbox both using Finance insights), Microsoft will typically migrate sandbox environments first to allow you to validate before production migration.
 
 ### What if I have multiple environments?
-If you have multiple Finance environments using Finance insights (e.g., production and sandbox), each environment needs to be migrated separately. Microsoft will coordinate migration schedules with you.
+If you have multiple Finance environments using Finance insights (for example, production and sandbox), each environment needs to be migrated separately. Microsoft coordinates migration schedules with you.
 
 ### Do Finance insights features work differently after migration?
 The user experience remains the same. The Finance insights workspaces, prediction workflows, and AI models function identically. Only the underlying data pipeline changes from Export to Data Lake to Business performance analytics.
@@ -143,10 +143,10 @@ If Business performance analytics shows errors after migration, contact Microsof
 Upgrade to Finance 10.0.38 and later before your scheduled migration. The migration can't proceed if you're on an earlier version. Plan your Finance upgrade well in advance of migration.
 
 ### Can I delay migration beyond Q1 2026?
-No, Export to Data Lake will be discontinued in Q1 2026, and Finance insights 1.0.0.x will stop functioning. All migrations must be completed before that deadline.
+No, Export to Data Lake will be discontinued early 2026, and Finance insights 1.0.0.x will stop functioning. All migrations must be completed before that deadline.
 
-### What happens if I don't migrate by Q1 2026?
-Finance insights features stop working when Export to Data Lake is discontinued. You will lose:
+### What happens if I don't migrate by early 2026?
+Finance insights features stop working when Export to Data Lake is discontinued. You lose:
 - Customer payment predictions
 - Cash flow forecasting
 - All Finance insights functionality
@@ -177,7 +177,7 @@ Phase 4 - Validation: You verify functionality.
 Phase 5 - Decommission: Microsoft removes old configuration.
 
 ### Can I perform the migration myself?
-No, this is a Microsoft-managed migration. Microsoft performs the technical migration to ensure data integrity and model preservation. You'll be responsible for validation and updating any custom integrations afterward.
+No, this is a Microsoft-managed migration. Microsoft performs the technical migration to ensure data integrity and model preservation. You're responsible for validation and updating any custom integrations afterward.
 
 ### What if I need to reschedule?
 Microsoft schedules your migration with advance notice. If the scheduled date doesn't work for your organization, you must uninstall Finance insights before the scheduled migration date to opt out of the migration. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md).
