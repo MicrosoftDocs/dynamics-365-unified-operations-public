@@ -26,7 +26,7 @@ When you run the analysis in simulation mode, it displays the products and produ
 To find obsolete product variants and assign a product lifecycle state to them, follow these steps:
 
 1. Go to **Product information management** \> **Periodic tasks** \> **Change lifecycle state for obsolete products**.
-1. In the **New product lifecycle state** field, enter or select a value.
+1. In the **New product lifecycle state** field, select the [product lifecycle state](../product-lifecycle.md) that your company uses to indicate obsolete products.
 1. Set **Run simulation without updating product data** to *Yes*.
 1. In the **Exclude products created within this number of days** field, enter a number.
 1. In the **Exclude products used in transactions (in number of days)** field, enter a number.
