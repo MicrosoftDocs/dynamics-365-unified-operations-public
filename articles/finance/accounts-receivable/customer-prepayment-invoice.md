@@ -30,7 +30,7 @@ In this process, the buyer makes an initial partial payment to secure goods, ser
 
 In this process, the seller issues a real prepayment invoice to the buyer. This invoice includes sales taxes, if they are applicable. The buyer pays the invoice amount up front. Then, when the payment is completed, the seller can proceed with the delivery of goods or services. Later, the official invoice is sent out. The value of this invoice is the total outstanding amount, which is the difference between the total sales order value and the total prepaid amount.
 
-This article explains how the **Customer prepayment invoice** feature should be configured and what the process looks like. In the first release, only scenario A is supported. Scenario B is planned on the product roadmap and will be available in a later release.
+This article explains how the **Customer prepayment invoice** feature should be configured and what the process looks like. 
 
 ### Example of a customer prepayment invoice
 
@@ -142,4 +142,6 @@ When you receive the payment for the prepayment, the customer payment journal is
 
     After the sales order invoice is posted, the selected prepayment is applied to the invoice when the **Automated prepayment settlement posting** background process is successfully run.
     If **Synchronous prepayment settlement** is enabled in **Accounts receivable parameters**, this step happens in real-time.
-3. The remaining amount of the sales order invoice can be settled through a customer payment journal and shows the outstanding amount. As the final invoice is issued, expande the **Prepayment invoice** FastTab to verify the application of the prepayment.  
+3. The remaining amount of the sales order invoice can be settled through a customer payment journal and shows the outstanding amount.
+
+As the final invoice is issued, expand the **Prepayment invoice** FastTab to verify the application of the prepayment.  
