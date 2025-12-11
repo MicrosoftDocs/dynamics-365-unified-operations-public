@@ -11,7 +11,7 @@ ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.38
 ---
 
-# Finance insights 1.2.x Migration
+# Finance insights 1.2.x migration
 
 [!include [banner](../includes/banner.md)]
 
@@ -19,7 +19,7 @@ This article provides comprehensive guidance for migrating Finance insights from
 
 ## Overview
 
-Finance insights is transitioning to Business performance analytics as its data backend. This migration is necessary due to the Export to Data Lake service deprecation. Microsoft will manage the migration process for all customers.
+Finance insights is transitioning to Business performance analytics as its data backend. This migration is necessary due to the Export to Data Lake service deprecation. Microsoft manages the migration process for all customers.
 
 **Important dates:**
 - Export to Data Lake deprecated: November 2024
@@ -35,7 +35,7 @@ The Finance insights migration delivers four key benefits:
 Performance improvements come from:
   - Parallel processing of multiple entities simultaneously
   - Incremental extraction (only changed data, not full snapshots)
-  - Optimized transformations with pre-computed aggregations
+  - Optimized transformations with precomputed aggregations
   - Dataverse performance optimized for Power Platform workloads
 
 2. Enhanced reliability and scalability:
@@ -53,17 +53,17 @@ Performance improvements come from:
 3. The Business performance analytics backend provides a modern, extensible platform that enables Microsoft to deliver new Finance insights features more rapidly.
   - Dimensional data model covering full Order-to-Cash value chain and beyond
   - Extensible design with new dimensions and facts added quarterly
-  - Mature infrastructure leveraging proven Business performance analytics capabilities
+  - Mature infrastructure using proven Business performance analytics capabilities
 
-4. Seamless integration with Business performance analytics analytics - If you use or plan to use Business performance analytics, Finance insights now shares the same data foundation, eliminating data inconsistencies and enabling unified analysis.
+4. Seamless integration with Business performance analytics - If you use or plan to use Business performance analytics, Finance insights now shares the same data foundation, eliminating data inconsistencies and enabling unified analysis.
 - Finance insights predictions based on same Business performance analytics analytical models
 - Unified Order-to-Cash facts and dimensions
 - Synchronized data refresh schedules
 
 ### Migration process
-Microsoft will handle the migration for all customers. Customers receive advance notification (minimum 30 days before migration), are informed of migration schedule and status, and receive support throughout the migration process.
+Microsoft handles the migration for all customers. Customers receive advance notification (minimum 30 days before migration), are informed of migration schedule and status, and receive support throughout the migration process.
 
-Customer don't need to manually uninstall Export to Data Lake, configure Business performance analytics for Finance insights, migrate machine learning models or recreate predictions.
+Customers don't need to manually uninstall Export to Data Lake, configure Business performance analytics for Finance insights, migrate machine learning models or recreate predictions.
 
 ### Opting out of migration
 
