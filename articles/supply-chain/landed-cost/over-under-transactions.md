@@ -1,8 +1,8 @@
 ---
 title: Process over/under transactions
 description: Learn how to set up the details of policies for over/under transactions, so that the system can determine how to manage over-processing of goods.
-author: lisascholz91
-ms.author: lisascholz
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: ITMOverUnderTrans, ITMOverUnderToleranceTable, ITMOverUnderReasonTable, ITMOverUnderToleranceGroup
 ms.topic: how-to

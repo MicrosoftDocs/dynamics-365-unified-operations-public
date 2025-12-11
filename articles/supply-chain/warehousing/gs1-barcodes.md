@@ -1,16 +1,17 @@
 ---
-title: GS1 bar codes
+title: GS1 bar codes and QR codes
 description: Learn how to set up GS1 bar codes and QR codes so that labels can be scanned in a warehouse with an outline on the GS1 bar code format.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: how-to
-ms.date: 05/26/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSGS1ParsingSetup, WHSGS1GenericSetup, WHSGS1PolicyTable, WHSWorkUserSession
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
-# GS1 bar codes
+# GS1 bar codes and QR codes
 
 [!include [banner](../includes/banner.md)]
 
@@ -98,18 +99,6 @@ After the data has been parsed from the bar code, it will be fed into the mobile
 > [!WARNING]
 > The default bar code data policies have been tested to work without unexpected behavior. However, customization of bar code data policies that are linked to menu items can cause unexpected behavior, because the flow might not expect some data to be available at a particular time.
 
-## Turn on GS1 features for your system
-
-To use GS1 bar codes, the *Scan GS1 barcodes* feature must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Scan GS1 barcodes* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-If you use GS1 bar codes, we recommend that you also turn on the *Enhanced parser for GS1 barcodes* feature. (As of Supply Chain Management version 10.0.32, this feature is turned on by default. As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.) This feature provides an improved implementation of the GS1 bar code parser. It adds the following improvements:
-
-- It follows the GS1 General Specification algorithm for symbol data parsing and validates that the data in the symbol is valid according to the specification.
-- It doesn't require that you set up a **Maximum length of identifier** value and uses longest prefix matching from configured application identifiers.
-- It lets you more easily configure decimal application identifiers by using the letter *n* to match any number. For example, you can configure just one application identifier (*310n*) instead of separate application identifiers (*3101*, *3102*, *3103*, and so on).
-- It fixes an issue where incorrectly encoded data is interpreted as field data.
-- It comes as a separate class that can be reused in other contexts and enables an extensibility point to be used to manipulate scanned data before the flow fields are filled in.
-
 ## <a name="set-gs1-options"></a>Set up global GS1 options
 
 The **Warehouse management parameters** page provides a few settings that establish global GS1 options.
@@ -166,7 +155,7 @@ To set up and customize your GS1 own application identifiers, follow these steps
 
 1. Set the following fields for the new or selected identifier:
 
-    - **Application identifier** – Enter the identification code for the application identifier. Typically, this code is a two-digit integer, but it can be longer. For decimal values, the last digit indicates the number of decimal places. For more information, see the description of the **Decimal** checkbox later in this list. If the *Enhanced parser for GS1 barcodes* feature is enabled, you can create a single application identifier for all decimal place variants by using the letter *n* as the last character in the application identifier. For example, you can configure just one application identifier (*310n*) instead of a separate application identifier for each number of decimal places (*3101*, *3102*, *3103*, and so on).
+    - **Application identifier** – Enter the identification code for the application identifier. Typically, this code is a two-digit integer, but it can be longer. For decimal values, the last digit indicates the number of decimal places. For more information, see the description of the **Decimal** checkbox later in this list. You can create a single application identifier for all decimal place variants by using the letter *n* as the last character in the application identifier. For example, you can configure just one application identifier (*310n*) instead of a separate application identifier for each number of decimal places (*3101*, *3102*, *3103*, and so on).
     - **Description** – Enter a short description of the identifier.
     - **Fixed length** – Select this checkbox if values that are scanned by using this application identifier have a fixed number of characters. Clear this checkbox if the length of values is variable. In this case, you must indicate the end of the value by using the group separator character that you specified on the **Warehouse management parameters** page.
     - **Length** – Enter the maximum number of characters that can appear in the values that are scanned by using this application identifier. If the **Fixed length** checkbox is selected, exactly this number of characters is expected.
@@ -264,7 +253,7 @@ To set up and customize your bar code data policies, follow these steps.
 >
 > - For bar codes that include more than one identical application identifier, you *must* use the **Sorting** field to establish the order of the fields.
 > - When **Auto Submit** is set to *Yes*, the mobile device immediately sends scanned information to the system. After the information is received, the mobile device displays a new screen, ready for the next input. This feature allows for a quick and efficient scanning process. The device only displays data after scanning when user interaction is required.
-> - Select the **Allow overwriting** checkbox for rows where scanned information should replace the default data in the system. For example, if there is a purchase order for 10 pieces, but you only need to scan 5 pieces, this option will allow the scanned data to override the default quantity.
+> - Select the **Allow overwriting** checkbox for rows where scanned information should replace the default data in the system. For example, if there's a purchase order for 10 pieces, but you only need to scan 5 pieces, this option will allow the scanned data to override the default quantity.
 
 ## Assign bar code data policies to mobile device menu items
 

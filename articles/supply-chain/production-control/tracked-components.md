@@ -3,12 +3,12 @@ title: Register and track batch/serial numbers for finished products and their c
 description: Learn how workers and managers can register batch/serial numbers for materials and components that are used in manufacturing processes.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: how-to
-ms.date: 04/29/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 08/13/2025
+ms.custom:
+  - bap-template
 ---
 
 # Register and track batch/serial numbers for finished products and their components
@@ -25,7 +25,7 @@ Workers and managers can register batch/serial numbers for materials and compone
 Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
-- The feature that's named *Tracked components* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Tracked components* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
 
 ## Enable registration of tracked component information
 

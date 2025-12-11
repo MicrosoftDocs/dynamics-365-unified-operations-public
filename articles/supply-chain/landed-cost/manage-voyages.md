@@ -1,8 +1,8 @@
 ---
 title: Manage voyages
 description: Learn how to work with voyages, which typically represent vessels, including outlines on the All voyages page and its action pane.
-author: lisascholz91
-ms.author: lisascholz
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: ITMTableListPage, ITMTable
 ms.topic: how-to

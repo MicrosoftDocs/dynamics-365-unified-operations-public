@@ -1,10 +1,10 @@
 ---
 title: Archive customization
 description: Learn about how the archive feature in Microsoft Dynamics 365 finance and operations apps supports table customizations, including code examples.
-author: pnghub
-ms.author: fangzhan
+author: Weijiesa 
+ms.author: Weijiesa 
 ms.topic: how-to
-ms.date: 03/24/2025
+ms.date: 09/29/2025
 ms.custom:
 ms.reviewer: twheeloc
 
@@ -96,7 +96,7 @@ final class LedgerArchiveAutomationJobRequestCreator_GeneralLedger_Extension
 |---|---|---|---|---|
 | Finance General ledger | GENERALJOURNALACCOUNTENTRY | GENERALJOURNALACCOUNTENTRYHISTORY | GeneraljournalaccountentryBiEntity | mserp\_GeneraljournalaccountentryBiEntity |
 | | GENERALJOURNALACCOUNTENTRY\_W | GENERALJOURNALACCOUNTENTRYHISTORY\_W | GeneraljournalaccountentrywBiEntity | mserp\_GeneraljournalaccountentrywBiEntity |
-| | GENERALJOURNALENTRY | GENERALJOURNALENTRYHISTORY | cus | mserp\_GeneraljournalentryBiEntity |
+| | GENERALJOURNALENTRY | GENERALJOURNALENTRYHISTORY | GeneraljournalentryBiEntity | mserp\_GeneraljournalentryBiEntity |
 | | GENERALJOURNALENTRY\_W | GENERALJOURNALENTRYHISTORY\_W | GeneraljournalentrywBiEntity | mserp\_GeneraljournalentrywBiEntity |
 | | LEDGERCONSOLIDATEHISTREF | LEDGERCONSOLIDATEHISTREFHISTORY | LedgerconsolidatehistrefBiEntity | mserp\_LedgerconsolidatehistrefBiEntity |
 | | LEDGERENTRY | LEDGERENTRYHISTORY | LedgerentryBiEntity | mserp\_LedgerentryBiEntity |

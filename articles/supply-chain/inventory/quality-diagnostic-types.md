@@ -36,21 +36,16 @@ When you configure the diagnostic types, you can create multiple records, each o
 
 1. Close the page.
 
-## Diagnostic groups (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
+## Diagnostic groups
 
 Use *diagnostic groups* to collect related diagnostic types so that you can quickly apply them all at once as corrections to a nonconformance. For example, you might create a group of diagnostic types that together describe how to diagnose an issue with raw material quality (such as repair and retest).
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Prerequisites
 
 Before you can use diagnostic groups, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Manage diagnostic groups
 

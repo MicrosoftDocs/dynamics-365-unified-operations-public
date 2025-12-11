@@ -2,9 +2,9 @@
 title: Adjustment of the asset retirement obligation estimate
 description: Learn how to adjust the asset retirement obligation (ARO) estimate in Japan with Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/10/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30

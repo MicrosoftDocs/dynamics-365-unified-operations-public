@@ -5,15 +5,16 @@ author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
 ms.date: 02/27/2025
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
+ms.custom:
+  - bap-template
+  - sfi-ropc-blocked
 ---
 
 # Install the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article explains how to download and install the Warehouse Management mobile app on each of your mobile devices, and how to configure the app to connect to your Microsoft Dynamics 365 Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
 
@@ -56,10 +57,6 @@ For the Warehouse Management mobile app to function correctly, your internal net
 - \*.applicationinsights.azure.us
 - \*.applicationinsights.azure.cn
 
-### Turn Warehouse Management mobile app features on or off in Supply Chain Management
-
-To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. 
-
 ## Get the Warehouse Management mobile app
 
 For smaller deployments, you might typically install the app on each device from the relevant store and then manually configure the connection to the environments that you're using.
@@ -72,7 +69,7 @@ The easiest way to install the app on a single device is to install it from an a
 
 - **Windows (UWP):** [Warehouse Management on Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 - **Android:** [Warehouse Management on Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
-- **iOS:** [Warehouse Management on Apple App Store](https://apps.apple.com/app/microsoft-warehouse-management/id6444014310)
+- **iOS:** Version 3 is available at the [Apple App Store](https://apps.apple.com/app/microsoft-warehouse-management/id6444014310). Version 4 is currently available through [Apple Test Flight](https://testflight.apple.com/) and is expected to be available on the Apple App Store in January 2026.
 
 ### Download the app from Microsoft App Center
 
@@ -112,7 +109,7 @@ If a device is lost or compromised, you can revoke its authentication by followi
 - Service-based authentication (deprecated): [Remove access for a device that authenticates by using a certificate or client secret](warehouse-app-authenticate-service-based.md#revoke)
 
 > [!NOTE]
-> Note that [Shared Device Mode](/entra/identity-platform/msal-shared-devices) authentication isn't currently supported for the Warehouse Management mobile app. 
+> [Shared Device Mode](/entra/identity-platform/msal-shared-devices) authentication isn't currently supported for the Warehouse Management mobile app.
 
 ## Configure the application by importing connection settings
 
@@ -120,7 +117,7 @@ To make it easier to maintain and deploy the application on many mobile devices,
 
 ### <a name="connection-file-qr"></a>Create a connection settings file or QR code
 
-You can import connection settings from either a file or a QR code. For both approaches, you must first create a settings file that uses JavaScript Object Notation (JSON) format and syntax. The file must include a connection list that contains the individual connections that have to be added. The following table summarizes the parameters that you must specify in the connection settings file.
+You can import connection settings from either a file or a QR code. (Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).) For both approaches, you must first create a settings file that uses JavaScript Object Notation (JSON) format and syntax. The file must include a connection list that contains the individual connections that have to be added. The following table summarizes the parameters that you must specify in the connection settings file.
 
 | Parameter | Description |
 |---|---|
@@ -201,7 +198,7 @@ The following example shows a valid connection settings file that contains two c
 }
 ```
 
-You can either save the information as a JSON file or generate a QR code that has the same content. If you save the information as a file, we recommend that you save it by using the default name, *connections.json*, especially if you'll store it in the default location on each mobile device.
+You can either save the information as a JSON file or [generate a QR code](warehouse-app-qr-code.md) that has the same content. If you save the information as a file, we recommend that you save it by using the default name, *connections.json*, especially if you'll store it in the default location on each mobile device.
 
 ### Save the connection settings file on each device
 
@@ -226,9 +223,9 @@ Usually, the paths are automatically created after the first run of the app. How
 
 Follow these steps to import connection settings from a file or a QR code.
 
-1. Start the Warehouse Management mobile app on your mobile device. The first time that you start the app, a welcome message is shown. Select **Select a connection**.
+1. Start the Warehouse Management mobile app on your mobile device. The first time that you start the app, a welcome message is shown. Select **Connect**.
 1. If you're importing the connection settings from a file, and the default name and location were used when the file was saved, the app might already have found the file. In this case, skip ahead to step 4. Otherwise, select **Set up connection**, and then continue to step 3.
-1. In the **Connection setup** dialog box, select **Add from file** or **Add from QR code**, depending on how you want to import the settings:
+1. In the **Connection setup** dialog, select **Add from file** or **Add from QR code**, depending on how you want to import the settings:
 
     - If you're importing the connection settings from a file, select **Add from file**, browse to the file on your local device, and select it. If you select a custom location, the app will store it and automatically use it the next time.
     - If you're importing the connection settings by scanning a QR code, select **Add from QR code**. The app prompts you for permission to use the device's camera. After you give permission, the camera is started, so that you can use it for scanning. Depending on the quality of the device's camera and the complexity of the QR code, you might find it difficult to get a correct scan. In that case, try to reduce the complexity of the QR code by generating only one connection per QR code. (Currently, you can use only the device's camera to scan the QR code.)

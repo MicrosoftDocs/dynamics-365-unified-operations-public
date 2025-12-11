@@ -1,10 +1,11 @@
 ---
 title: What's new or changed in Dynamics 365 for Operations version 1611 (November 2016)
 description: Learn about new or changed features in Dynamics 365 for Operations version 1611. This version was released in November 2016.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
-ms.date: 07/12/2024
+ms.date: 11/21/2025
+ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
   - evergreen
@@ -819,7 +820,7 @@ Currently, Retail Modern POS is available only as a Windows 8.1 application for 
 | Enable vendors to respond to each purchase order line and suggest changes. | In some cases, vendors want to accept some purchase order lines but reject others. Vendors can now individually manage purchase order lines. Each line can be rejected, accepted, or accepted with changes. For example, vendors can change the delivery date, split the delivery and quantity, or suggest an alternative item. |
 | Enable vendors to manage contact person information. | Vendors can maintain contact person information for their company. This information includes names, email addresses, and phone numbers. Access to this feature is granted through a dedicated security role. |
 | Share documents that are related to purchase orders with vendors. | When you must share a document with a vendor, such as a document about requirements, it's convenient to link the document to the relevant purchase order. The vendor can then share notes and attachments with the customer by linking the document to their response to the purchase order. Document management is the underlying supporting framework, and only notes and attachments that are classified as "external" can be shared with vendors. |
-| Provision new vendor users. | If your vendors use the vendor collaboration interface, they have a seamless way to request new user accounts when new contacts require access to vendor collaboration. Procurement professionals can submit a request for a user account for a contact person at the vendor organization. A vendor contact person who is already a vendor collaboration user can also submit this type of request. This request eventually creates a new user in Dynamics 365 for Operations that has vendor-specific security roles. It also facilitates a request to the Microsoft Azure B2B portal to provision the user with a new Microsoft Entra user account. Vendors can also request that specific vendor user accounts be inactivated, or that security roles be modified. |
+| Provision new vendor users. | If your vendors use the vendor collaboration interface, they have a seamless way to request new user accounts when new contacts require access to vendor collaboration. Procurement professionals can submit a request for a user account for a contact person at the vendor organization. A vendor contact person who is already a vendor collaboration user can also submit this type of request. This request eventually creates a new user in Dynamics 365 for Operations that has vendor-specific security roles. It also facilitates a request to the Microsoft Azure B2B portal to provision the user with a new Microsoft Entra user account. Vendors can also request that specific vendor user accounts be deactivated, or that security roles be modified. |
 | Find out more about support for vendor collaboration in Dynamics 365 for Operations. | For more information about vendor collaboration, see [Vendor collaboration with external vendors](../../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md), [Vendor collaboration with customers](../../../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md), [Manage vendor collaboration users](../../../supply-chain/procurement/manage-vendor-collaboration-users.md), [Set up and maintain vendor collaboration](../../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md), and [Vendor collaboration invoicing workspace](../../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). |
 
 ### Intercompany order processing

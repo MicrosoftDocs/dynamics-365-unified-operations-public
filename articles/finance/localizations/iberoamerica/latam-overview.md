@@ -4,7 +4,7 @@ description: Access an overview of functionality specific to Latin American, inc
 author: EvgenyPopovMBS
 ms.author: evgenypopov 
 ms.topic: overview
-ms.date: 03/21/2025
+ms.date: 08/27/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak  
 ---
@@ -36,10 +36,10 @@ Some of the functionality that's referred to in this article might not yet be av
 | Uruguay | Available | Available |
 | Bolivia | Not planned | Available |
 | Ecuador | Not planned | Available |
-| Dominican Republic | Not planned | 2025 wave 1 |
-| Peru | Not planned  | 2025 wave 1 |
-| Venezuela | Not planned | 2025 wave 1 |
-| Argentina | 2025 wave 2 | 2026 wave 1 |
+| Dominican Republic | Not planned | Available |
+| Peru | Not planned  | Available |
+| Venezuela | Not planned | Available |
+| Argentina | 2026 wave 1 | 2026 wave 2 |
 
 ## See also
 

@@ -1,8 +1,8 @@
 ---
 title: Standard cost conversion overview
 description: Learn how to set up and run a standard cost conversion, to be completed after you've completed the prerequisites for a standard cost conversion. 
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: CostingVersion, InventStdCostConv
 ms.topic: overview
@@ -90,6 +90,6 @@ The **Variance analysis statement** report lets you analyze revaluation variance
 
 ## Related information
 
-[Prerequisites for a standard cost conversion](prerequisites-standard-cost-conversion.md)
+- [Prerequisites for a standard cost conversion](prerequisites-standard-cost-conversion.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

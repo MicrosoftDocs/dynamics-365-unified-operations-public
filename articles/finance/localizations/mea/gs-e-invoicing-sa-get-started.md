@@ -5,12 +5,13 @@ author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
 ms.date: 06/05/2025
-ms.custom: 
-  - bap-template
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global
 ms.search.validFrom: 2024-09-12
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Electronic invoicing in Saudi Arabia 

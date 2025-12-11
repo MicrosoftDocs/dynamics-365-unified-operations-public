@@ -3,6 +3,7 @@ title: What's new or changed in Dynamics 365 Commerce 10.0.35 (August 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.35. 
 author: josaw1
 ms.date: 04/12/2024
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 audience: Application User
 ms.custom: 

@@ -1,10 +1,10 @@
 ---
 title: Create vendor payments by using a payment proposal
 description: Learn about the payment proposal options and includes some examples that show how payment proposals work, including parameters and advanced options.
-author: twheeloc
-ms.author: shpandey
+author: music727
+ms.author: mibeinar
 ms.topic: article
-ms.date: 05/09/2025
+ms.date: 11/19/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -20,16 +20,16 @@ ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 
 This article provides an overview of the payment proposal options and includes some examples that show how payment proposals work. Payment proposals are often used to create vendor payments, because the query can be used to quickly select vendor invoices for payment, based on criteria such as the due date and cash discount. 
 
-Organizations often use payment proposals to create vendor payments, because the payment proposal query can be used to quickly select vendor invoices for payment, based on the due date, cash discount, and other criteria. 
+Organizations often use payment proposals to create vendor payments by selecting vendor invoices for payment, based on the due date, cash discount, and other criteria. 
 
-The payment proposal query contains various tabs, each of which has different options for selecting invoices to pay. The **Parameter** tab contains options that a majority of organization use most often. On the **Records to include** FastTab, you can specify which invoices or vendors to include for payment by defining ranges for various characteristics. For example, if you want to pay only a specific range of vendors, you can define a filter for the vendor range. This functionality is often used to select invoices for a specific of method of payment. For example, if you define a filter where **Method of payment** = **Check**, only invoices that have that method of payment are selected for payment, provided that they also meet other criteria that are specified in the query. The **Advanced parameters** tab contains additional options, some of which might not be relevant to your organization. For example, this tab contains the options for paying invoices for centralized payments.
+The payment proposal query contains various tabs, each of which has different options for selecting invoices to pay. The **Parameter** tab contains options that a majority of organization use most often. On the **Records to include** FastTab, you can specify which invoices or vendors to include for payment by defining ranges for various characteristics. For example, if you want to pay only a specific range of vendors, you can define a filter for the vendor range. This functionality is often used to select invoices for a specific of method of payment. For example, if you define a filter where **Method of payment** = **Check**, only invoices that have that method of payment are selected for payment, if they also meet other criteria that are specified in the query. The **Advanced parameters** tab contains additional options, some of which might not be relevant to your organization. For example, this tab contains the options for paying invoices for centralized payments.
 
 ## Parameters
 -   **Select invoices by** – Invoices within the date range that is specified by the **From date** and **To date** fields can be selected by due date, cash discount date, or both. If you use the cash discount date, the system first looks for invoices that have a cash discount date between the from date and to date. The system then determines whether the invoice is eligible for the cash discount by using the session date to make sure that the cash discount date hasn’t already passed.
 -   **From date** and **To date** – Invoices that have a due date or cash discount date within this date range are selected for payment.
 -   **Minimum payment date** – Enter the minimum payment date. For example, the **From date** and **To date** fields specify a range from September 1 to September 10, and the minimum payment date is September 5. In this case, all invoices that have a due date from September 1 to September 5 have a payment date of September 5. However, all invoices that have a due date from September 5 to September 10 have a payment date that is equal to the due date of each invoice.
 -   **Amount limit** – Enter the maximum total amount for all payments.
--   **Create payments without invoice preview** – If this option is set to **Yes**, payments will be created immediately on the **Vendor payments** page. The **Payment proposal** page will be skipped. Therefore, payments will be created more quickly. Payments can still be modified from the **Vendor payments** page. Alternatively, you can return to the **Payment proposal** page by using the **Edit invoices for select payment** button.
+-   **Create payments without invoice preview** – If this option is set to **Yes**, payments are created immediately on the **Vendor payments** page. The **Payment proposal** page is skipped. Therefore, payments are created more quickly. Payments can still be modified from the **Vendor payments** page. Alternatively, you can return to the **Payment proposal** page by using the **Edit invoices for select payment** button.
 
 ## Advanced options
 - **Check vendor balance** – If this option is set to **Yes**, the vendor is verified that there isn't a debit balance before any invoice is paid. If a vendor does have a debit balance, no payment is created. For example, the vendor might have credit memos, or payments that have been posted but haven't been settled yet. In these cases, the vendor should not be paid. Instead, the credit memos or payments should be settled against the outstanding invoices.
@@ -44,6 +44,8 @@ The payment proposal query contains various tabs, each of which has different op
 - **Offset account type** and **Offset account** – Set these fields to define a specific account type (such as **Ledger** or **Bank**) and offset account (such as a specific bank account). The method of payment for the invoice defines the default offset account type and offset account, but you can use these fields to override the default values.
 - **Summarized payment date** – This is only used when the **Period** field on the method of payment is set to **Total**. If a date is defined, all payments are created on this date. The **Minimum payment date** field is ignored.
 - **Additional filters** – On the **Records to include** FastTab, you can define additional ranges of criteria. For example, if you want to pay only a range of vendors, you can define a filter for the vendor range. This functionality is often used to select invoices for a specific of method of payment. For example, if you define a filter where **Method of payment** = **Check**, only invoices that have that method of payment are selected for payment, provided that they also meet other criteria that are specified in the query.
+
+Starting in Dynamics 365 Finance version 10.0.40, customers can enable the **Payment proposal performance improvement by splitting into even batches** feature. This feature improves the performance of payment proposal by dividing the data into even batches. The **Vendor payment proposal automation** functionality allows customers to define a recurring schedule to automate the vendor payment proposal runs. For more information, see [Automate vendor payment proposals](automate-vendor-payment-proposal.md).
 
 ## Scenarios
 
@@ -92,15 +94,27 @@ The following invoices aren't included in the proposal:
 
 -   1001, because the discount date of June 29 has already expired, so this invoice is no longer eligible for the cash discount, and the due date of July 15 is also outside the date range.
 
+>[!NOTE]
+>To edit invoices and their details that were defined for the payment lines, follow these steps:
+>1. Go to the **Payment proposal** section.
+>2. In the action pane of the payment journal lines, select **Edit invoices for selected payment**.
+>This allows you to modify the invoice details as needed.
+
+>[!Important]
+> When running payment proposals, the behavior of vendor bank account updates depends on the status of the public sector configuration key:
+> Public sector configuration key is turned on - Changes made on the vendor bank accounts aren't moved to the payment journal lines. 
+> Public sector configuration key is turned off - Editing is possible at the time of the proposal run, and changes made during this step are moved to the payment journal lines.
+> This prevents scenarios where payments are redirected without proper oversight and ensure required segregation of duties and the audit trail is in place.
+
 ## Country/Region specific considerations
 ### Norway
 
 #### Dimension control
 
-Dimension control allows you to control grouping of generated lines by payment proposal and set default dimensions based on financial dimensions used for the applied invoices. Under Norwegian country/region context for each method of payment there is financial dimension tab where you can activate dimension control as well as enable grouping for each dimension. Possible options are:
+Dimension control allows you to control grouping of generated lines by payment proposal and set default dimensions based on financial dimensions used for the applied invoices. Under Norwegian country/region context for each method of payment there is financial dimension tab where you can activate dimension control and enable grouping for each dimension. Possible options are:
 
 -   **Dimension control** field is disabled. The payment proposal behaves as for any other country/region.
--   **Dimension control** field is activated without further defining the dimensions. The payment proposal will be created without taking dimensions into consideration. The created transaction inherits no dimensions from the applied entry.
+-   **Dimension control** field is activated without further defining the dimensions. The payment proposal is created without taking dimensions into consideration. The created transaction inherits no dimensions from the applied entry.
 -   **Dimension control** field is activated and the further dimensions are enabled. Now you define how the dimensions will be copied to the journal. For example: • Select the **BusinessUnit** check box to create a payment proposal per business unit for the method of payment, • Select the **CostCenter** check box to create a payment proposal per cost center for the method of payment
 
 >[!NOTE]
@@ -110,7 +124,7 @@ Dimension control allows you to control grouping of generated lines by payment p
 
 #### Use future due date
 
-When generating a payment proposal for Italian legal entities, an additional **Use future due date** parameter is available on **Advanced parameters** in the **Payment proposal** sidebar. If **Use future due date** isn't enabled during the payment proposal run, the payment date for all retrieved invoices is set to the **Minimum payment date** defined during the run. If **Use future due date** is enabled during the payment proposal run, the invoices that have a due date later than the defined **Minimum payment date** will have a payment date that is equal to the due date of each invoice. Invoices that have a due date earlier or equal to the **Minimum payment date** will default to the **Minimum payment date**.
+When generating a payment proposal for Italian legal entities, an additional **Use future due date** parameter is available on **Advanced parameters** in the **Payment proposal** sidebar. If **Use future due date** isn't enabled during the payment proposal run, the payment date for all retrieved invoices is set to the **Minimum payment date** defined during the run. If **Use future due date** is enabled during the payment proposal run, the invoices that have a due date later than the defined **Minimum payment date** has a payment date that is equal to the due date of each invoice. Invoices that have a due date earlier or equal to the **Minimum payment date** default to the **Minimum payment date**.
 
 
 #### Bank account selection

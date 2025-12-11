@@ -8,9 +8,9 @@ ms.custom:
   - responsible-ai-faqs
   - copilot-learning-hub
 ms.topic: overview
-author: v-chgri
-ms.author: v-chrgriffin
-ms.reviewer: v-chrgriffin
+author: ashishmsft
+ms.author: asharchw
+ms.reviewer: v-griffinc
 ---
 
 # Responsible AI FAQs for Microsoft Dynamics 365 Commerce

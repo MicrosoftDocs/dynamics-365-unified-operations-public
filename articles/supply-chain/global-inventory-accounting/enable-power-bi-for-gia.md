@@ -1,8 +1,8 @@
 ---
 title: Enable Power BI for Global Inventory Accounting
 description: Learn how to enable Microsoft Power BI for Global Inventory Accounting, including prerequisites and an outline and step-by-step process on setup.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: PowerBIConfiguration
 ms.topic: how-to
@@ -14,7 +14,6 @@ ms.custom:
 # Enable Power BI for Global Inventory Accounting
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 You can pin tiles, dashboards, and reports from your [PowerBI.com](https://powerbi.com/) account to your Microsoft Dynamics 365 application workspace.
 
@@ -32,8 +31,7 @@ The following prerequisites must be in place before you can enable Power BI repo
 
 To set up the Power BI integration, follow these steps.
 
-1. Sign in to [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index).
-1. Go to **Shared asset library**, select **Power BI report model** as the asset type, and download the **Global Inventory Accounting** package.
+1. Go to the [*Global Inventory Accounting Add-in Templates* repo on GitHub](https://github.com/microsoft/Global-Inventory-Accounting-Add-in-Templates/releases) and download the latest *Global inventory accounting- production costing* file (for example, `Global.inventory.accounting-.production.costing.Preview.-.v2.1.pbix`).
 1. Sign in to [PowerBI.com](https://app.powerbi.com/), upload and configure the **Global Inventory Accounting** Power BI report file by following these steps:
     1. Upload **Global Inventory Accounting** Power BI file by following these steps:
         1. Select **New**.

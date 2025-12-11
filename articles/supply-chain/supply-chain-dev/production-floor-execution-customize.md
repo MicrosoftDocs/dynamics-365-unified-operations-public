@@ -3,10 +3,12 @@ title: Customize the production floor execution interface
 description: Learn how to extend current forms or create new forms and buttons for the production floor execution interface with a process for adding new buttons.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: how-to
-ms.date: 05/04/2022
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Customize the production floor execution interface
@@ -41,7 +43,7 @@ When you've finished, the new button (action) will automatically be listed on th
 
 ## Add a new main view
 
-1. Create a new form that has the desired elements and functionality. Note that this form is a new form, not an extension. Name the form `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>`, where:
+1. Create a new form that has the desired elements and functionality. This is a new form, not an extension. Name the form `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>`, where:
 
     - `<ExtensionPrefix>` uniquely identifies your solution, typically by using your company name.
     - `<FormName>` is a unique name for the form.
@@ -64,7 +66,7 @@ When you've finished, the new main view will automatically be listed in the **Ma
 
 ## Add a details view
 
-1. Create a new form that has the desired elements and functionality. Note that this form is new, not an extension. Name the form `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>Detail`, where: 
+1. Create a new form that has the desired elements and functionality. This is a new form, not an extension. Name the form `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>Detail`, where:
 
     - `<ExtensionPrefix>` uniquely identifies your solution, typically by using your company name.
     - `<FormName>` is a unique name for the form.
@@ -145,6 +147,26 @@ This section shows how to add date and time controls to a form or dialog. The to
 
 The following procedure shows an example of how to add date and time controls to a form.
 
+1. To add date and time controls, add a standard form part to the form. In the initialize method of the form part, set the target name to `JmgProductionFloorExecutionDateControl` for the date control or `JmgProductionFloorExecutionTimeControl` for the time control.
+
+    ```xpp
+    public void initialize()
+    {
+        super();
+
+        this.targetName(menuItemDisplayStr(JmgProductionFloorExecutionDateControl));
+    }
+    ```
+
+    ```xpp
+    public void initialize()
+    {
+        super();
+
+        this.targetName(menuItemDisplayStr(JmgProductionFloorExecutionTimeControl));
+    }
+    ```
+
 1. Add a controller to the form for each date and time control that the form should contain. (The number of controllers must equal the number of date and time controls in the form.)
 
     ```xpp
@@ -205,6 +227,31 @@ The following procedure shows an example of how to add date and time controls to
         DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, null);
     }
     ```
+
+1. Remember to unsubscribe from events when the form is closed.
+
+     ```xpp
+    public void close()
+    {
+        DateFromFormPart.getPartFormRun().close();
+        TimeFromFormPart.getPartFormRun().close();
+
+        dateFromController.setDateControlValueToCallerFormDelegate -= eventhandler(this.setFromDateTime);
+        timeFromController.setDateControlValueToCallerFormDelegate -= eventhandler(this.setFromDateTime);
+
+        super();
+    }
+    ```
+
+## Execute a query on the main form
+
+If you need to run a query to refresh or update the data on the main form after a specific action, use the following approach:
+
+ ```xpp
+ parentForm.parmChangeEvent().raiseEvent();
+ ```
+
+ Where `parentForm` is `JmgProductionFloorExecution` form.
 
 ## Related information
 

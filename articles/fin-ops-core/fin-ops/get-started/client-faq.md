@@ -5,6 +5,7 @@ author: jasongre
 ms.author: jasongre
 ms.topic: faq
 ms.date: 12/31/2024
+ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

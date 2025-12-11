@@ -6,7 +6,7 @@ ms.author: ikondratenko
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 04/25/2025
+ms.date: 07/30/2025
 ms.reviewer: johnmichalak
 
 ---
@@ -37,6 +37,8 @@ The submission status is updated only when you send a request to the Electronic 
 The submission log includes the following additional commands:
 
 - <a id="Cancel"></a>**Functions** \> **Cancel submissions** – This function enables a special submission process when the electronic invoice must be approved by an external web service. It instructs Electronic invoicing to send the web service a specific message that is intended to cancel the status of an approved electronic invoice in the web service database.
+   > [!NOTE]
+   > The cancellation functionality is controlled by the **BusinessDocumentEnableCancelForCompleteSubmissionFlight** flight which is disabled by default. The flight must be intentionally enabled per request to activate the functionality.
 - **Functions** \> **Resubmit document** – Resubmit an electronic document that has already been submitted to Electronic invoicing. A new log is created on the **Submission details** page. In this case, no data is sent to the Electronic invoicing service. Instead, the Electronic invoicing service reruns the processing of previously submitted data.
 - **Functions** \> **Send related submission** – Send the same document from Finance or Supply Chain Management.
 - **Inquiries** \> **Submission details** – View the details of the main submission. The visualization shows the complete execution log of the actions that are configured in the electronic invoicing feature. You can download the files that are created as a result of each action during the processing. When the invoice must be approved by an external web service, you can view the status of the invoice.

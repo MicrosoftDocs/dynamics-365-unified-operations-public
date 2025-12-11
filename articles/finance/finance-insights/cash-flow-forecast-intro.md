@@ -1,11 +1,11 @@
 ---
 title: Cash forecast
 description: Learn about the cash flow forecasting capability, including outlines on challenges for accurate cash flow forecasting and details of the Cash flow forecasts capability.
-author: ShivamPandeyMSFT
-ms.author: shpandey
+author: music727
+ms.author: mibeinar
 ms.topic: article
-ms.date: 12/21/2021
-ms.reviewer: kfend
+ms.date: 06/09/2025
+ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
 ms.search.region: Global
@@ -46,5 +46,6 @@ The Cash flow forecasts feature includes the following functionality.
 
 The cash flow forecasting functionality in Dynamics 365 Finance will empower your organization to transform tedious, complex, yet repetitive cash flow projection to a simple, automated process. Automating the most tedious aspects of cash flow forecasting lets you focus on critical decision making to drive desired business outcomes.
 
+For more information about cash flow forecasting configuration and calculation, see [Cash flow forecasting](../../finance/cash-bank-management/cash-flow-forecasting.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

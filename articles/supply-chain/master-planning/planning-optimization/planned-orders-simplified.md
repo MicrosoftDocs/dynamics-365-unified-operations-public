@@ -1,8 +1,8 @@
 ---
 title: Planned orders simplified
 description: Learn how you can view, manage, and firm planned orders by using the Planned orders simplified page, including an outline on toggling this feature.
-author: t-benebo
-ms.author: benebotg
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 01/24/2022
 ms.reviewer: kamaybac
@@ -16,10 +16,6 @@ ms.search.form: ReqCreatePlanWorkspace
 This article describes how you can view, manage, and firm planned orders by using the **Planned orders simplified** page.
 
 The **Planned orders simplified** page is a simplified version of the **Planned orders** page. It provides fewer options but is faster to work with when all you have to do is review, approve, and firm your planned orders.
-
-## Turn on this feature for your system
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Planned orders simplified* feature in the [**Feature management** workspace](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## View, manage, and firm planned orders
 

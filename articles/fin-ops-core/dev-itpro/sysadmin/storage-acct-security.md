@@ -4,13 +4,14 @@ description: This article describes the latest security enhancements in the fina
 author: mansijainms
 ms.author: mansijain 
 ms.topic: how-to
-ms.custom: 
-  - bap-template
-ms.date: 01/15/2025
+ms.date: 07/30/2025
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2024-09-12
 ms.dyn365.ops.version: 
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 
 # Finance and operations storage account security updates
@@ -20,6 +21,42 @@ ms.dyn365.ops.version:
 This article describes the latest security enhancements in the finance and operations storage account.
 
 ## Frequently asked questions
+
+### I get error 'System.IO.IOException: The parameter is incorrect' or 'System.UnauthorizedAccessException: Access to the path \\storageAccount.file.core.windows.net\dixfshare\' is denied.
+
+The Dynamics for finance and operations apps data import/export framework stops mounting the file share as a drive accessible from AOS instances with disablement of access keys. Access is only allowed through the Azure storage interface to enhance security. Most users aren't affected, but custom code using **getSharedFilePath** is affected. The **getSharedFilePath** method now places files in the AOS temp folder instead of the file share, returning the new path. This ensures temporary file operations continue to work without code updates, provided you’re only reading or verifying file contents.
+
+Key limitations:
+-	The temp folder is unique to each AOS instance; don't store file paths in a database for cross-instance access.
+-	Avoid using the file share for permanent storage. Files older than one day are deleted.
+-	Don’t query the **DMFParameters** table’s **SharedFolderPath** field for cloud environments; its value isn't accurate outside local/dev setups.
+
+#### What if I need to create or modify a file on the export file share?
+Avoid using the data import/export file share in customizations. If necessary, use the **DMFFileShareHelper** class and its **createFileFromStream** method to save a stream to the file share. This method returns a file interface for confirming creation, downloading, or deleting the file.
+
+#### X++ Code example to create, read, and delete a file on dixf share
+
+``` csharp
+// creating a new file on the dixf share
+str filename = 'FrmStm.txt';
+str expectedContents = 'file contents';
+System.Byte[] byteArray = System.Text.Encoding::UTF8.GetBytes(expectedContents);
+MemoryStream stream = new MemoryStream(byteArray);
+
+IFile newFile = DMFFileShareHelper::createFileFromStream(filename, stream);
+stream.Dispose();
+
+// reading the file contents using IFile
+// To get an IFile instance for an existing file, DMFFileShareHelper::findFileOnShare(filename) can be called.
+Stream stream2 = newFile.Download();
+StreamReader reader = new StreamReader(stream2);
+str actualContent = reader.ReadToEnd();
+reader.Close();
+
+// deleting a file using IFile
+newFile.Delete();
+```
+You can also look at method getSharedFilePathV2 in **DMFStagingWriter** for an example of use of **DMFFileShareHelper** to download a file from shared storage and put it on the data import and export share.
 
 ### I receive the following error on my developer machine/customer-hosted environment: "Fetching a valid storage connection string is disabled." How can I fix this error?
 
@@ -71,13 +108,13 @@ The following APIs are available in **SharedServiceUnitStorage**:
 
 We plan to retire all APIs that provide access to the connection string, such as **CloudInfrastructure.GetCsuStorageConnectionString()**. Although there might be alternative ways to obtain a handle to the connection string, other restrictions are put in place to render those methods ineffective.
 
-In the future, when the managed identity–based integration is enabled, it won't be possible to connect to the storage account by using connection strings that are shared through APIs outside the finance and operations process, such as interactive AOS, Batch AOS, or the Data Import/Export Framework (DIXF) service.
+When the managed identity–based integration is enabled, it isn't possible to connect to the storage account by using connection strings shared through APIs outside the finance and operations process, such as interactive AOS, Batch AOS, or the Data Import/Export Framework (DIXF) service.
 
-Because we're disabling the account access key at the storage account level, any access that uses the account access key won't work.
+Because we're disabling the account access key at the storage account level, any access that uses the account access key doesn't work.
 
 ### What happens when I invoke CloudInfrastructure.GetCsuStorageConnectionString() in environments when the managed identity–based integration is also enabled?
 
-When the managed identity–based integration is enabled, an invalid connection string is returned in this situation.
+When enabled, the managed identity–based integration an invalid connection string is returned in this situation.
 
 If you use the invalid connection string, all the existing constructs continue to work, if they're accessed within the AOS process space. The exceptions are those constructs that are tightly coupled with the access key, such as **GetSharedAccessSignature**.
 
@@ -110,7 +147,7 @@ No, you can't generate a user-delegated SAS URL by using **WindowsAzure.Storage 
 
 ### Can a user-delegated SAS URL that is generated by using WindowsAzure.Storage v12 or later work with a codebase that is written by using WindowsAzure.Storage v9.3.3?
 
-Yes, a user-delegated SAS URL that is generated by using **Azure.Storage v12** works with **WindowsAzure.Storage v9.3.3** constructs. It's validated in the same way by using internal workflows and various test code.
+Yes, a user-delegated SAS URL that is generated by using **Azure.Storage v12** works with **WindowsAzure.Storage v9.3.3** constructs. It's validated in the same way by using internal workflows and various test codes.
 
 > [!NOTE]
 > If you don't manually parse the SAS URL or token (by searching for various tokens, such as **se** and **st**, which might cause you to bump into a new token), you're OK, because the URL patterns are different.
@@ -148,12 +185,65 @@ Yes, this is a more secure method for connecting to the storage account compared
 
 We're moving away from connection string, also known as account access key, and rotation of an account access key isn't needed.
 
-### We have a process for LBD customers migrating from Dynamics 365 Finance on-premises (LBD) to cloud. Currently for the finance and operations attachments we provide customers with a SAS token. Is this affected by the changes? If so, do we need to have a way to help out customers migrate their attachments.
+### We have a process for LBD customers migrating from Dynamics 365 Finance + Operations (on-premises) (LBD) to cloud. Currently for the finance and operations attachments we provide customers with a SAS token. Is this affected by the changes? If so, do we need to have a way to help out customers migrate their attachments.
 
 It works. If Managed Identity is enabled, a user-delegated SAS URL can be used to generate a SAS URL that can be shared with customers. However, a user-delegated SAS URL is valid for a maximum of seven days. Azure Storage doesn't support generating SAS URLs with a longer validity period. 
 
 ### Will a SAS URL that was created previously stop working once the storage account access key is disabled?
 
- Yes, previously created SAS URLs stop working when the account access key is disabled, because seven days are the maximum TimeToLive value (Validity of the URL). Therefore, the SAS URL expires and won't work after seven days.
- 
+ Yes, previously created SAS URLs stop working when the account access key is disabled, because seven days are the maximum TimeToLive value (Validity of the URL). Therefore, the SAS URL expires and doesn't work after seven days.
+
+### Resolving the Error: "The remote server returned an error: (409) Conflict" When Using File.UseFileFromURL for any file operations (Import/export/upload/downlaod)
+
+This error may occur when the user-delegated SAS URL provided to the File.UseFileFromURL method is being truncated due to insufficient string length in the variable used.
+
+**Cause:**
+The user-delegated SAS URL, which is often long, may be cut off if the variable holding it isn't large enough to store the full value. This truncation results in an invalid or incomplete URL, triggering a 409 Conflict error from the remote server.
+
+**Resolution**:
+1. Check the Variable Type and Length:
+- Ensure the variable used to store the SAS URL is of type string.
+- Confirm that it has a minimum length capacity of 500 characters.
+2. If You're Using an Extended Data Type (EDT):
+- Replace the current EDT with one that supports longer strings.
+- We recommend using the EDT SharedServiceUnitURL, which has a string length of 1,000 characters, sufficient to accommodate most SAS URLs.
+
+By ensuring the variable can store the entire URL without truncation, the error should be resolved.
+
+### UserDelegatedSASURL Length Consideration
+
+UserDelegatedSASURL can be up to or slightly below 500 characters in length. To ensure reliability, it's recommended you treat the 500 characters as the minimum expected size. Always use a variable type that can safely accommodate the full URL as described in the resolution in the previous section.
+
+> [!IMPORTANT]
+> If the URL is truncated due to insufficient variable length, users may encounter errors such as (403) Forbidden, (404) Not Found, (409) Conflict, or PublicAccessNotPermitted-especially when the access key is disabled.
+
+### Error: "403 (Forbidden): Server failed to authenticate the request."
+This error typically occurs when using an old or cached connection string for finance and operations apps managed storage accounts. This error is often triggered when secret rotation occurs following scheduled platform maintenance.
+
+**What to check first:**
+Before proceeding with troubleshooting, check your Message Center for any recent communications regarding planned maintenance for secret rotation. For example, you may see a message like:
+"During this maintenance, the secrets for your storage accounts rotate. This activity is essential to ensure the security and integrity of your data."
+If your environment was included in such a communication, the connection string may have changed.
+
+**Resolution**
+If you're using or caching a connection string for the storage account, it may no longer be valid. To restore access, retrieve a new connection string after the environment restarts.
+
+**How to Retrieve the Updated Connection String**
+You can retrieve the current connection string for your finance and operations apps managed storage account using either of the following two methods in X++:
+
+```
+// Method 1: Using the CloudInfrastructure service wrapper
+var connectionString1 = Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString();
+
+// Method 2: Using the application environment context
+var environment = Microsoft.Dynamics.ApplicationPlatform.Environment.EnvironmentFactory::GetApplicationEnvironment();
+var connectionString2 = environment.AzureStorage.StorageConnectionString;
+
+// Output the connection strings
+info("Connection Strings via GetCsuStorageConnectionString method");
+info(connectionString1);
+info("Connection Strings via EnvironmentFactory");
+info(connectionString2);
+```
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

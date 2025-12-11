@@ -5,6 +5,7 @@ title: What's new or changed in Dynamics 365 Human Resources 10.0.25
 description: This article describes features that are either new or changed in the Dynamics 365 Human Resources version 10.0.25 preview release.
 author: twheeloc
 ms.date: 01/24/2022
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: evergreen
 
@@ -19,7 +20,7 @@ ms.reviewer: twheeloc
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2022-01-31 
 ms.dyn365.ops.version: 10.0.25
 

@@ -1,8 +1,8 @@
 ---
 title: Custom report migration
 description: Learn how to import, export, and restore custom reports in Business performance analytics.
-author: lizmota
-ms.author: lizmota
+author: twheeloc
+ms.author: twheeloc
 ms.custom:
 ms.topic: how-to
 ms.reviewer: twheeloc 

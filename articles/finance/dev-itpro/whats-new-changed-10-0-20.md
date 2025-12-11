@@ -2,12 +2,13 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.20 (August 2021)
 description: Learn aboutfeatures that are either new or changed in the Dynamics 365 Finance version 10.0.20 preview release distributed in August 2021.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom:
   - bap-template
   - evergreen
-ms.date: 07/15/2024
+ms.date: 12/02/2025
+ms.update-cycle: 1095-days
 ms.reviewer: kfend
 ms.search.region: Global
 ms.search.validFrom: 2021-05-28
@@ -27,7 +28,7 @@ This article lists features that are new or changed for Microsoft Dynamics 365 F
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365/release-plans/) for official release dates for each feature. We may update this article to include features that made it into the build after this article was initially published.
+This release includes the following features. Some of the listed features are still in preview, while others are generally available. See the [release plan](/dynamics365/release-plans/) for official release dates for each feature. We might update this article to include features that made it into the build after this article was initially published.
 
 | Feature area | Feature | More information |
 |----|----|----|
@@ -38,16 +39,16 @@ The following features are included in this release. Some of the listed features
 | Finance insights | [Treasurer workspace](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/treasurer-workspace) | [Cash position](../finance-insights/cash-position.md) |
 
 > [!Note]
-> The Finance insights add-in must be installed from Lifecycle Services (LCS) before you can turn on Finance insights in the **Feature management** workspace. 
+> You must install the Finance insights add-in from Lifecycle Services (LCS) before you can turn on Finance insights in the **Feature management** workspace. 
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements included in this release. Each of these provides an incremental improvement to an existing feature. Because they are only enhancements, they are not listed in the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted). If you want to use any of these features, you must explicitly enable them in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The following table lists the feature enhancements included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they're not listed in the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements don't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted). If you want to use any of these features, you must explicitly enable them in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 | Feature area | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
 |---|---|---|
 | Cost management | Enable user-defined batch number setup for inventory closing reverse|Inventory closing reverse creates batch jobs for each impacted item, which might throttle the batch server if there are too many items. This feature enables the process to use the 'Extra batch helpers', which is currently used by the inventory closing process. You can adjust the setting to optimize the performance considering your environment. |
-| General ledger | Enhanced filtering on the cash position inquiry | This feature enhances financial dimension filtering on the cash position inquiry. When enabled, only records that match all entered segment criteria will be returned on the inquiry. Otherwise records that match any entered segment criteria will be returned.  |
+| General ledger | Enhanced filtering on the cash position inquiry | This feature enhances financial dimension filtering on the cash position inquiry. When enabled, only records that match all entered segment criteria are returned on the inquiry. Otherwise, records that match any entered segment criteria are returned.  |
 
 ## Additional resources
 
@@ -68,14 +69,14 @@ Check out the [Dynamics 365: 2021 release wave 1 plan](/dynamics365-release-plan
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features in Dynamics 365 Finance](../get-started/removed-deprecated-features-finance.md) article describes features that have been removed or deprecated for Dynamics 365 Finance.
+The [Removed or deprecated features in Dynamics 365 Finance](../get-started/removed-deprecated-features-finance.md) article describes features that are removed or deprecated for Dynamics 365 Finance.
 
 - A *removed* feature is no longer available in the product.
-- A *deprecated* feature is not in active development and may be removed in a future update.
+- A *deprecated* feature isn't in active development and might be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Finance](../get-started/removed-deprecated-features-finance.md) article 12 months prior to the removal.
+Before removing any feature from the product, the deprecation notice is announced in the [Removed or deprecated features in Dynamics 365 Finance](../get-started/removed-deprecated-features-finance.md) article 12 months prior to the removal.
 
-For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+For breaking changes that only affect compilation time but are binary compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are functional updates that you need to make to the compiler.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

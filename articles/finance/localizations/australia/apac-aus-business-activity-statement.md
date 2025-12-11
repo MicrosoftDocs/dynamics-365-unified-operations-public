@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 11/12/2025
 ms.reviewer: johnmichalak
 ms.search.region: Australia
 
@@ -590,7 +590,7 @@ You can also set up the following reporting codes. However, we recommend that yo
 1. Go to **Tax > Setup > Sales tax > BAS PAYG reason codes**.
 2. Select **New**, and set the **Reason code** and **Description** fields.
 
-For a list of PAYG reason codes, see [PAYG reason codes](https://www.ato.gov.au/Rates/PAYG-installment-variations---reason-codes/).
+For a list of PAYG reason codes, see [PAYG reason codes](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/payg-instalments/how-to-vary-your-payg-instalments).
 
 ### <a name= "_Set_up_fringe"></a>Set up fringe benefit reason codes
 
@@ -1478,14 +1478,13 @@ In the **Print Australian BAS** dialog box, set the **Generate E-BAS** option to
 For example, create an XML template file that contains the following information.
 ```
 <?xml version="1.0" encoding="UTF-8"?>
-
 <DATA>
-        field ID="fA1">BAS1</field>
+    <FIELD_LIST>
+        <field ID="fA1">BAS1</field>
         <field ID="fA3">1/1/2020</field>
         <field ID="fA4">31/3/2020</field>
         <field ID="fMANUAL_MODE">true</field>
-    <FIELD\_LIST>
-    </FIELD\_LIST>
+    </FIELD_LIST>
 </DATA>
 ```
 Replace the values in the **fA1**, **fA3**, and **fA4** fields with the document identification number and dates that you require. To use this XML file as a template, browse to it on the **Select a file** page.
@@ -2340,7 +2339,7 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 </tbody>
 </table>
 
-13. Create an XML file that contains the following information.
+13. Create an XML file that contains the following information. Ensure that the date format is `DD/MM/YYYY`.
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <DATA>
@@ -2367,23 +2366,57 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <DATA>
+    <FIELD_LIST>
         <field ID="fA1">BAS1</field>
         <field ID="fA3">1/1/2020</field>
         <field ID="fA4">31/3/2020</field>
         <field ID="fMANUAL_MODE">true</field>
-    <FIELD_LIST>
-    <FIELD
-    ID="fG10"><VALUE>3120</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD
-    ID="fG1"><VALUE>3900</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD
-    ID="f1E"><VALUE>30</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD
-    ID="fG2"><VALUE>1200</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD
-    ID="fG3"><VALUE>500</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD
-    ID="fG9"><VALUE>200</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD
-    ID="fG14"><VALUE>700</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD
-    ID="fG15"><VALUE>385</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD
-    ID="fG20"><VALUE>185</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD>
+      <FIELD ID="fG10">
+        <VALUE>3120</VALUE>
+        <IS_EDITABLE>true</IS_EDITABLE>
+        <VISIBILITY>normal</VISIBILITY>
+      </FIELD>
+      <FIELD ID="fG1">
+        <VALUE>3900</VALUE>
+        <IS_EDITABLE>true</IS_EDITABLE>
+        <VISIBILITY>normal</VISIBILITY>
+      </FIELD>
+      <FIELD ID="f1E">
+        <VALUE>30</VALUE>
+        <IS_EDITABLE>true</IS_EDITABLE>
+        <VISIBILITY>normal</VISIBILITY>
+      </FIELD>
+      <FIELD ID="fG2">
+        <VALUE>1200</VALUE>
+        <IS_EDITABLE>true</IS_EDITABLE>
+        <VISIBILITY>normal</VISIBILITY>
+      </FIELD>
+      <FIELD ID="fG3">
+        <VALUE>500</VALUE>
+        <IS_EDITABLE>true</IS_EDITABLE>
+        <VISIBILITY>normal</VISIBILITY>
+      </FIELD>
+      <FIELD ID="fG9">
+        <VALUE>200</VALUE>
+        <IS_EDITABLE>true</IS_EDITABLE>
+        <VISIBILITY>normal</VISIBILITY>
+      </FIELD>
+      <FIELD ID="fG14">
+        <VALUE>700</VALUE>
+        <IS_EDITABLE>true</IS_EDITABLE>
+        <VISIBILITY>normal</VISIBILITY>
+      </FIELD>
+      <FIELD ID="fG15">
+        <VALUE>385</VALUE>
+        <IS_EDITABLE>true</IS_EDITABLE>
+        <VISIBILITY>normal</VISIBILITY>
+      </FIELD>
+      <FIELD ID="fG20">
+        <VALUE>185</VALUE>
+        <IS_EDITABLE>true</IS_EDITABLE>
+        <VISIBILITY>normal</VISIBILITY>
+      </FIELD>
     </FIELD_LIST>
-
 </DATA>
 ```
 

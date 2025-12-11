@@ -4,7 +4,8 @@ description: Learn about features that are either new or changed in Dynamics 365
 author: kamaybac
 ms.author: kamaybac
 ms.topic: whats-new
-ms.date: 05/28/2024
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen
@@ -48,7 +49,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 - [Saved views for inventory and logistics](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - Learn more in [Standard saved views for Supply Chain Management](../get-started/saved-views-scm.md).
 
-- [Schedule warehouse work creation](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - Learn more in [Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md).
+- [Schedule warehouse work creation](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)
 
 - [Set default financial dimensions for inventory standard cost revaluation vouchers](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - Learn more in [Manage standard cost updates](../cost-management/manage-standard-cost-updates.md).
 

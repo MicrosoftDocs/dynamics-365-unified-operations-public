@@ -5,6 +5,7 @@ title: What's new and changed in Dynamics 365 Commerce 10.0.19 (June 2021)
 description: This article describes features that are either new or changed in Dynamics 365 Commerce 10.0.19. 
 author: josaw1
 ms.date: 04/12/2024
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 audience: Developer, IT Pro
 ms.reviewer: josaw

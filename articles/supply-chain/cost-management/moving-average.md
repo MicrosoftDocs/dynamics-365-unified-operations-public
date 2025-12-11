@@ -1,22 +1,23 @@
 ---
 title: Moving average
-description: Moving average is a perpetual costing method based on the average principle, where the costs on inventory issues do not change when the purchase cost does.
-author: prasungoel
-ms.author: prasungoel
-ms.topic: how-to
-ms.date: 03/01/2024
-ms.custom: bap-template
+description: Moving average is a perpetual costing method based on the average principle, where the costs on inventory issues don't change when the purchase cost does.
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventModelGroup
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Moving average
 
 [!include [banner](../includes/banner.md)]
 
-Moving average is a perpetual costing method based on the average principle, where the costs on inventory issues do not change when the purchase cost does. The difference is capitalized and is based on a proportional calculation. The amount that remains is expensed.
+Moving average is a perpetual costing method based on the average principle, where the costs on inventory issues don't change when the purchase cost does. The difference is capitalized and is based on a proportional calculation. The amount that remains is expensed.
 
-When you use moving average, inventory settlements and inventory marking are not supported. Inventory close does not affect products that have moving average as the inventory model group, and it does not generate any settlements between the transactions.
+When you use moving average, inventory settlements and inventory marking aren't supported. Inventory close doesn't affect products that have moving average as the inventory model group, and it doesn't generate any settlements between the transactions.
 
 The following are prerequisites when you use moving average cost as a costing method.
 
@@ -26,27 +27,27 @@ The following are prerequisites when you use moving average cost as a costing me
     > By default, when **Moving average** is selected, the **Post physical inventory** and **Post financial inventory** fields are also selected.
 
 1. On the **Posting** page, assign accounts to the **Price difference for moving average**. You use the **Price difference for moving average** account when cost has to be proportionally expensed. This occurs in following two scenarios:
-    - There is a difference in cost between a purchase receipt and the purchase invoice because there is a difference between the original inventory quantity and the current on-hand quantity.
-    - The transactions bring the inventory from negative to zero, and there is a difference between the transaction cost and the current moving average cost.
+    - There's a difference in cost between a purchase receipt and the purchase invoice because there's a difference between the original inventory quantity and the current on-hand quantity.
+    - The transactions bring the inventory from negative to zero, and there's a difference between the transaction cost and the current moving average cost.
 
 1. On the **Posting** page, assign accounts to the **Cost revaluation for moving average** accounts on the **Inventory** tab. You use the **Cost revaluation for moving average** account when you want to adjust the moving average cost for a product to a new unit price.
 
 1. On the **Released products** page, assign the moving average item model group to the product.
 
     > [!NOTE]
-    > The inventory close process only closes the accounting period. It does not affect products that have moving average assigned to them as an item model group.
+    > The inventory close process only closes the accounting period. It doesn't affect products that have moving average assigned to them as an item model group.
 
 ## Convert to the moving average costing method
 
-Products can be converted to use the moving average inventory valuation method. This type of conversion is usually done at the end of the year, after the last month of the current year is closed. It is done by using the product’s current costing model. You can change your inventory costing method from a costing method that is based on average cost or standard cost to a method that is based on moving average.
+Products can be converted to use the moving average inventory valuation method. This type of conversion is usually done at the end of the year, after the last month of the current year is closed. It's done by using the product's current costing model. You can change your inventory costing method from a costing method that is based on average cost or standard cost to a method that is based on moving average.
 
-If you are changing your costing method from a standard costing method to a moving average method, you have to complete the following tasks:
+If you're changing your costing method from a standard costing method to a moving average method, you have to complete the following tasks:
 
 1. Make adjustments to get inventory quantities and values down to 0 (zero).
 1. After the inventory value and quantity are 0 (zero), change the item model group to moving average.
 1. Make adjustments to get the quantity and value back into inventory.
 
-You cannot change your inventory costing method from a moving average method to a First in, First out (FIFO) method, a Last in, First out (LIFO) method, or a weighted average method.
+You can't change your inventory costing method from a moving average method to a First in, First out (FIFO) method, a Last in, First out (LIFO) method, or a weighted average method.
 
 > [!NOTE]
 > Converting from standard cost to moving weighted average is a manual process.
@@ -60,7 +61,7 @@ The following examples illustrate the effect of using the moving average costing
 
 ## Purchase order and proportionally expensed cost difference
 
-With moving average, the product’s cost is determined by the purchase receipt. When the purchase invoice is posted, if there is a difference in cost between the purchase receipt and the purchase invoice, the difference is proportionally adjusted to the current products in stock, and any remaining amount is expensed.
+With moving average, the purchase receipt determines the product's cost. When the purchase invoice is posted, if there's a difference in cost between the purchase receipt and the purchase invoice, the difference is proportionally adjusted to the current products in stock, and any remaining amount is expensed.
 
 In this example, a purchase order is created and received at one cost, and the purchase invoice is posted with a different cost.
 
@@ -69,34 +70,34 @@ In this example, a purchase order is created and received at one cost, and the p
 1. Create a sales order for a quantity of 1 and a unit price of 10.00.
 1. Create a purchase invoice for a quantity of 2 and a unit price of 12.00.
 
-The difference in unit price, 2.00, is posted to the Price difference for moving average account when the purchase invoice is posted. The reason is that two products were purchased for a cost of 20.00. One of the products was sold for a unit price of 10.00. The purchase invoice was posted at a unit price of 12.00 with a quantity of 2. The unit price of the product cannot be posted at 14.00.
+The difference in unit price, 2.00, is posted to the Price difference for moving average account when the purchase invoice is posted. The reason is that two products were purchased for a cost of 20.00. One of the products was sold for a unit price of 10.00. The purchase invoice was posted at a unit price of 12.00 with a quantity of 2. The unit price of the product can't be posted at 14.00.
 
 ## Moving average product and inventory adjustment
 
-If you need to adjust the moving average cost of a product, inventory adjustments are allowed as of today’s date. You cannot backdate an inventory adjustment to correct the moving average cost of a product. You cannot have the cost flow through subsequent transactions.
+If you need to adjust the moving average cost of a product, inventory adjustments are allowed as of today's date. You can't backdate an inventory adjustment to correct the moving average cost of a product. You can't have the cost flow through subsequent transactions.
 
 In this example, the moving average cost is adjusted for a product.
 
-1. Select the product that you want to adjust the moving average cost for. 
+1. Select the product that you want to adjust the moving average cost for.
 
- > [!NOTE]
- > The **Revaluation for moving average** page examines the inventory available for a product. The product selected has a posted quantity of 1, a posted a value of 12.00, a posted unit cost of 12.00, and a unit cost of 12.00.
-    
+    > [!NOTE]
+    > The **Revaluation for moving average** page examines the inventory available for a product. The product selected has a posted quantity of 1, a posted a value of 12.00, a posted unit cost of 12.00, and a unit cost of 12.00.
+
 1. Update the **Unit cost** field to 16.00. The system calculates the remaining fields.
 1. The adjustment is posted.
 
 > [!NOTE]
-> You can only adjust the moving average cost as of today’s date.
+> You can only adjust the moving average cost as of today's date.
 
 On the **Settlements for voucher** page, you can see an adjustment of 4.00 posted to the Cost revaluation for moving average account.
 
 ## Moving average with production
 
-Moving average supports produced items. If you plan to use moving average in a production environment, select **Use estimated cost price** on the **Production control parameters** page. This means that the cost price that is calculated during estimation is used instead of the actual BOM calculation cost price.
+Moving average supports produced items. If you plan to use moving average in a production environment, select **Use estimated cost price** on the **Production control parameters** page. This means that the cost price that is calculated during estimation is used instead of the actual bill of material (BOM) calculation cost price.
 
 ## Moving average with a backdated transaction
 
-Backdated transactions are assigned the current moving average cost, and the product’s physical quantity is updated, but the product’s moving average cost is not affected. In this moving average example, a backdated transaction for a moving average product is posted.
+Backdated transactions are assigned the current moving average cost, and the product's physical quantity is updated, but the product's moving average cost isn't affected. In this moving average example, a backdated transaction for a moving average product is posted.
 
 1. Create an inventory adjustment for the moving average product for a quantity of 1 and a cost of 20.00.
 1. The inventory transaction history for the product would resemble the following:
@@ -104,7 +105,7 @@ Backdated transactions are assigned the current moving average cost, and the pro
     - An inventory adjustment of 1, a cost of 20.00, a posting date of January 1, and a transaction date of January 15.
 1. Post the adjustment.
 
-On the **Inventory transactions** page, you can see that 4.00 is expensed as the current moving average for the product is 16.00. You can post in the past, but the difference in cost is expensed, so the moving average cost is not affected.
+On the **Inventory transactions** page, you can see that 4.00 is expensed as the current moving average for the product is 16.00. You can post in the past, but the difference in cost is expensed, so the moving average cost isn't affected.
 
 ## Negative inventory balances
 
@@ -112,7 +113,7 @@ Transactions are handled differently depending on whether the new on-hand quanti
 
 ### New balance is negative or zero
 
-If the new on-hand quantity is negative or zero, the transaction is costed at the current average costs. If there is a difference between the purchase price and the current average costs, it's posted to **Price difference for moving average**.
+If the new on-hand quantity is negative or zero, the transaction is costed at the current average costs. If there's a difference between the purchase price and the current average costs, it's posted to **Price difference for moving average**.
 
 ### New balance is positive
 

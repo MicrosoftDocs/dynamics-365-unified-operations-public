@@ -5,6 +5,7 @@ title: Preview features in Dynamics 365 Retail version 10.0.7
 description: This article describes features that are new and changed in Dynamics 365 Retail. 
 author: josaw1
 ms.date: 04/12/2024
+ms.update-cycle: 1095-days
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: josaw

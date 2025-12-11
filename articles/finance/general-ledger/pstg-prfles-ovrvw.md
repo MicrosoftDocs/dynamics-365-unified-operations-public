@@ -1,10 +1,11 @@
 ---
 title: Posting profiles overview
 description: Learn how posting profiles are used throughout Microsoft Dynamics 365 apps, including overviews on posting types and detail settings for a posting profile.
-author: rcarlson
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: concept-article
 ms.date: 04/29/2024
+ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
 audience: Application User
@@ -21,7 +22,7 @@ In finance and operations apps, the term *posting profiles* is used to describe 
 
 Some modules and features have a page that includes the words "posting profile" in the name (for example, **Customer posting profile** or **Vendor posting profile**). Additionally, some modules have multiple options for configuring the ledger posting for transactions that are generated from the subledger. For example, in the **Production control** module, you can set up the posting by production group, resource, or resource group.
 
-Note that, for many types of transactions, there is an alternative to posting profiles: posting definitions. For supported documents, you can use posting definitions instead of posting profiles to classify main accounts and financial dimensions for accounting entries. If you plan to use encumbrances or pre-encumbrances, a posting definition is required to define the accounts for the accounting entries.
+Ror many types of transactions, there is an alternative to posting profiles: posting definitions. For supported documents, you can use posting definitions instead of posting profiles to classify main accounts and financial dimensions for accounting entries. If you plan to use encumbrances or preencumbrances, a posting definition is required to define the accounts for the accounting entries.
 
 Before you can configure the posting profiles, posting definitions, or the **Accounts for automatic transactions** page, you must configure the chart of accounts on the **Ledger** page in the legal entity that you want to configure.
 
@@ -29,7 +30,7 @@ Before you can configure the posting profiles, posting definitions, or the **Acc
 
 In finance and operations apps, a posting type is used to define a general category for a debit or a credit. This category is independent of the main account in General ledger. There are posting types for each debit or credit in General ledger.
 
-A single voucher can have one or more posting types. For example, a transaction that is posted through a general journal where the account and offset account are set to **Ledger** will have a posting type of **Ledger journal** for both the debit and the credit. By contrast, a vendor invoice will have multiple posting types. Those posting types will include one line for the vendor balance and additional lines for the offset entry, such as **Ledger journal**.
+A single voucher can have one or more posting types. For example, a transaction that is posted through a general journal where the account and offset account are set to **Ledger** will have a posting type of **Ledger journal** for both the debit and the credit. By contrast, a vendor invoice has multiple posting types. Those posting types include one line for the vendor balance and additional lines for the offset entry, such as **Ledger journal**.
 
 You can view the posting type in the **Posting type** field on the **General** tab of the **Voucher transactions** page.
 
@@ -40,7 +41,7 @@ You can view the posting type in the **Posting type** field on the **General** t
 
 When you configure posting profiles, the **Account code** field defines the level of the setting. The following options are available: **Table**, **Group**, and **All**. The matching stops after the first match, and the order is from the most specific level to the least specific level. Although the **Account code** field might have a slightly different name in some cases, the behavior and function of the field remain the same. For example, the inventory posting profile includes an **Item code** field and an **Account code** field. Both fields have **Table**, **Group**, and **All** values.
 
-If the **Main account** field is left blank for a posting profile, and you haven't configured a main account on the **Accounts for automatic transaction** page or on a module-specific or feature-specific page, you will receive an error message when you post a transaction that uses the posting type. Typically, the message will be, "The account for \[Posting type\] can't be found."
+If the **Main account** field is left blank for a posting profile, and you haven't configured a main account on the **Accounts for automatic transaction** page or on a module-specific or feature-specific page, you receive an error message when you post a transaction that uses the posting type. Typically, the message is, "The account for \[Posting type\] can't be found."
 
 ### Table value
 
@@ -96,22 +97,13 @@ Many modules in Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dyna
 
 - [Accounts for automatic transactions](accounts-for-auto-transactions.md)
 - [Accounts payable posting](accts-payble-posting.md)
-- [Accounts receiveable posting](accts-recvble-posting.md)
+- [Accounts receivable posting](accts-recvble-posting.md)
 - [Asset leasing posting](../asset-leasing/set-up-lease-posting-accts.md)
-- Asset management posting (Coming soon)
-- Cash and bank management (Coming soon)
-- Currency revaluation posting accounts (Coming soon)
-- Expense management posting (Coming soon)
 - [Fixed asset posting profile](../fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md)
 - Intercompany accounting posting (Coming soon)
 - [Inventory posting](inventory-posting.md)
 - [Landed cost posting](../../supply-chain/landed-cost/costing-parameters-setup.md)
 - [Posting definitions overview](posting-definitions.md)
 - [Production posting](production-posting.md)
-- Project management and accounting posting (Coming soon)
-- Service management posting (Coming soon)
-- Tax posting (Coming soon)
-- Time and attendance posting (Coming soon)
-- Transportation management posting (Coming soon)
-- Rebate management posting profiles (Coming soon)
+
 

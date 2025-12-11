@@ -1,8 +1,8 @@
 ---
 title: Translation memory files
 description: Learn about when and where translation memory files can be created, edited, and used to result in a quality translation output file.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 10/24/2021
 ms.reviewer: johnmichalak
@@ -12,6 +12,7 @@ ms.search.validFrom: 2018-03-27
 ms.search.form: 
 ms.dyn365.ops.version: AX 7.3.0
 ms.assetid: 
+ms.custom: sfi-image-nochange
 ---
 
 # Translation memory files

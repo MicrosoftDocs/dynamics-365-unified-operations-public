@@ -15,7 +15,7 @@ ms.search.form:
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-<!-- KFM: Preview until further notice.-->
+<!-- KFM: Preview until 10.0.46 GA.-->
 
 Organizations that have many companies (legal entities) and a large product portfolio (for example, large sales and distribution networks) often experience a high level of duplicated product data. The [cross-company data sharing capabilities](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md) of Microsoft Dynamics 365 Supply Chain Management let you share data about released products across multiple companies. In this way, you can reduce the volume of data that must be maintained and at the same time simplify the task of maintaining product master data.
 
@@ -28,9 +28,7 @@ To use the features described in this article, your system must meet the followi
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
 - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
     - *Master company data sharing*
-    - *(Preview) Cross-company data sharing for products*
-
-If you are running Supply Chain Management version 10.0.42 or older and would like to use this feature, then send an email with your environment ID in Microsoft Dynamics Lifecycle Services to the [Cross-company product sharing team](mailto:productsharing@service.microsoft.com). The Microsoft team that's responsible for the feature will then enable it for your environment. You must also follow the instructions provided in the [Set up your system for product sharing in version 10.0.42 and older](#old-version-setup) section later in this article.
+    - *Cross-company data sharing for products*
 
 ## Get started with cross-company data sharing
 
@@ -55,24 +53,6 @@ Before you enable cross-company data sharing for products, work through the foll
 - **Enable policies in the correct order.** Duplicate shared policies must be enabled before single record sharing policies.
 - **Specify the default parameters for each company.** You might want to align default parameters across all companies in the data sharing policy.
 - **Consider whether any of your business processes are affected by the single record sharing functionality.** Read the detailed list of [limitations and notes that apply for shared products](#limitations) later in this article, and prepare your system as required.
-
-## <a name="old-version-setup"></a>Set up your system for product sharing in version 10.0.42 and older
-
-As mentioned in the [prerequisites](#prerequisites), if you are running Supply Chain Management version 10.0.42 or older, you can only enable this feature with assistance from the [Cross-company product sharing team](mailto:productsharing@service.microsoft.com). After the team enables the feature for you, you must also complete the following procedure. Don't do this if you are running version 10.0.43 or later.
-
-1. Enable the following flights. If you don't know how to complete this step, contact Microsoft Support.
-
-   - `DbSyncEnableSingleRecordSharing`
-   - `EnableSysSharing`
-   - `EnableSysDataSharingTypeTableConfiguration`
-   - `InventTableDataSharingFeature`
-
-2. Do a database synchronization.
-3. Restart Internet Information Services (IIS).
-4. Put your environment in [maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-5. Go to the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the [*(Preview) Master company data sharing*](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md#master-company-sharing-preview) feature.
-6. Turn off [maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-7. Go to the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *(Preview) Cross-company data sharing for products* feature. This feature won't appear in the **Feature management** workspace until after you've turned on the "*(Preview) Master company data sharing*" feature.
 
 ## Set up sharing policies for products and product-related information
 

@@ -1,12 +1,12 @@
 ---
 title: Tax Calculation overview
 description: Learn about the overall scope and features of the Tax Calculation capability, including outlines on versions, data flows, and supported transactions.
-author: EricWangChen
-ms.author: wangchen
+author: epodkolzina
+ms.author: epodkolzina
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 02/12/2025
+ms.date: 10/14/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
@@ -38,12 +38,10 @@ We recommend that you import and set up your Tax Calculation configuration with 
 
 | Finance or Supply Chain Management version | Tax configuration version |
 | --------------- | --------------------------------------- |
-| 10.0.43         | Tax Calculation Configuration 44.70.262 |
+| 10.0.45         | Tax Calculation Configuration 47.73.265 |
+| 10.0.44         | Tax Calculation Configuration 47.73.265 |
+| 10.0.43         | Tax Calculation Configuration 47.73.265 |
 | 10.0.42         | Tax Calculation Configuration 44.70.262 |
-| 10.0.41         | Tax Calculation Configuration 43.68.254 |
-| 10.0.40         | Tax Calculation Configuration 43.68.254 |
-| 10.0.39         | Tax Calculation Configuration 40.65.249 |
-| 10.0.38         | Tax Calculation Configuration 40.61.246 |
 
 
 ## Data flow

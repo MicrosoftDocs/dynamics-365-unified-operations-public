@@ -4,7 +4,8 @@ description: Learn how to use a Model Context Protocol (MCP) server to create an
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 06/03/2025
+ms.date: 11/05/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.collection:
@@ -12,541 +13,115 @@ ms.collection:
 ms.search.region: Global
 ---
 
-# Use Model Context Protocol for finance and operations apps
+# Use Model Context Protocol for finance and operations apps (preview)
 
 [!include [banner](../includes/banner.md)]
 
-The [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol) is an open standard that facilitates the connection of AI agents to various data systems to enhance the relevance of agent responses. MCP standardizes how applications provide context to large language models (LLMs). Because it enables seamless integration between LLM applications and external data sources, the protocol is useful for building AI-powered tools and workflows.
-
-The **Microsoft Dynamics 365 ERP MCP** server is now available. This server exposes tools for Dynamics 365 finance and operations apps to agent platforms that support MCP. Standardization on the common protocol enables the following capabilities:
+The [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol) is an open standard that connects AI agents to various data systems to enhance the relevance of agent responses. MCP standardizes how applications provide context to large language models (LLMs). Because it enables seamless integration between LLM applications and external data sources, the protocol is useful for building AI-powered tools and workflows. MCP defines a common language for how agents and applications interact with enterprise data and business logic. Instead of relying on custom APIs or point-to-point integrations, MCP provides a unified framework that standardizes access to ERP operations, ensuring consistency, context, and control. Standardization on the common protocol enables:
 
 - Agent access to data and business logic in multiple apps
 - Reuse of agents across enterprise resource planning (ERP) systems
 - Access to tools in finance and operations apps from any compatible agent platform
 - A simplified agent development experience
+- Consistent data access, permissions, and auditability across all agent integrations
+
+The **Dynamics 365 ERP MCP (Preview)** server provides a dynamic framework for agents to perform data operations and access the business logic of finance and operations apps. Developers can build agents that work with data and perform nearly any function that's available to a user through the application interface, without the need for custom code, connectors, or APIs.
+
+> [!IMPORTANT]
+> This feature is a preview feature. It's subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274). Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that customers can get early access and provide feedback. Learn more about preview releases in [One version service updates FAQ](../../dev-itpro/get-started/one-version.md).
 
 ## Prerequisites
 
-Before you can use the Dynamics 365 ERP MCP server, the following prerequisites must be met:
+Before you can use the Dynamics 365 ERP MCP (Preview) server, you must meet the following prerequisites:
 
-- The product version of finance and operations apps must be at least **10.0.2263.17**.
-- The version of the **Copilot in Microsoft Dynamics 365 Finance** solution must be at least **1.0.3049.1**.
-- The version of the **Copilot in Microsoft Dynamics 365 Supply Chain Management** solution must be at least **1.1.03046.2**.
+- The product version of finance and operations apps must be at least **10.0.2428.15**.
+- The **(Preview) Dynamics 365 ERP Model Context Protocol server** feature must be enabled in [Feature Management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
+- The agent platform on which you're building your agent must be allowed in the **Allowed MCP Clients** form. Learn more in [Allowed MCP clients](copilot-mcp.md#allowed-mcp-clients).
+- Your environment is Tier 2 or above, or a Unified Developer Environment. The MCP server isn't supported on Cloud Hosted Environments (CHE).
 
-## Use the Dynamics 365 ERP MCP server in Copilot Studio
+> [!NOTE]
+> An earlier version of the MCP server, known as the "static Dynamics 365 ERP MCP" server, is also available in public preview. This server, built on the Dataverse connector framework, has 13 tools enabling specific business functions for Dynamics 365 Finance and Supply Chain Management. This static server is **retired in the 2026 calendar year**. The server is still available in finance and operations apps environments with version 10.0.2263.17 and greater. However, to avoid disruption when the static server is retired, use the new dynamic Dynamics 365 ERP MCP server that is the subject of this documentation.
 
-You can use the Dynamics 365 ERP MCP server to create agents in Microsoft Copilot Studio. The server provides tools for actions in Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+## Dynamic MCP tools
 
-To add the tools to your agent, follow these steps.
+The tools in the MCP server enable the agent to navigate server forms to complete tasks. The agent works with the application data and business logic through server APIs the same way a human would perform the task in the application client. Rather than having static tools for specific actions, like Find Approved Vendors or Release Purchase Requisition Lines, the agent uses the tools to open forms, set field values, and select actions available on the form. This interaction pattern unlocks millions of ERP functions across the Dynamics 365 ERP applications, which become instantly accessible through MCP. The agent works with the application like a human with the same security access would perform the actions.
 
-1. In [Copilot Studio](https://copilotstudio.microsoft.com), open an existing agent, or create a new one.
-1. In the agent, on the **Tools** tab, select **Add a tool**.
-1. In the **Add tool** dialog, select the **Model Context Protocol** filter, and search for **Dynamics 365 ERP MCP**.
-1. Create a connection to the server.
-1. Select **Add to agent**.
+### Dynamic context
 
-After the Dynamics 365 ERP MCP server is added, the agent has access to the tools on it and can use them to perform actions for the related finance and operations apps. To view the list of available tools on the server, open the Dynamics 365 ERP MCP server in the agent.
+The MCP server dynamically updates the context it provides to the agent with each tool call based on the agent's security permissions and application configuration, extensions, and personalization. This approach ensures the agent works with an accurate view of available actions and data for the given context, and ensures that any extensions or personalization in the environment are automatically available for agents to access through the MCP framework.
 
-## MCP tools
-The following list of MCP tools currently available in the **Microsoft Dynamics 365 ERP MCP** server. This is a static list of tools that isn't currently extensible. For each tool, the details include the following information:
-- The **description** of the tool.
-- The **Dataverse custom API** that shows the tool schema and makes the call to perform the operation. The custom API can be found in the related Dataverse solution, either **Copilot in Microsoft Dynamics 365 Finance** or **Copilot in Microsoft Dynamics 365 Supply Chain Management**.
-- A table outlining the **inputs** for the tool.
-- A table defining the **outputs** of the tool.
+When the tools respond to the agent, they return the application view model to the agent orchestration. This view model is the same one presented to the application to be rendered for a user in the client. The security role of the authenticated user for the agent determines which objects are returned in the view model. For example, if the agent is assigned to a Purchasing Agent security role in finance and operations apps, then it only has access to the objects assigned to the duties and privileges for that security role.
 
-### **Find Approved Vendors**
-- **Name:** `findapprovedvendors`
-- **Description:** Finds vendors that are approved to supply specific items. The request can include item number and vendor account number as filters.
-- **Custom API:** `msdyn_FindApprovedVendors`
+When the agent calls the `find_menu_item` tool, it returns only menu items to which that security role has access. When the view model for a form is returned to the agent, it includes only data, fields, and actions to which the user role has access. The system rejects any explicit calls to actions or objects to which the user role doesn't have access.
 
-**Inputs**
+Limiting the menu items with roles is important for limiting the scope of the agent. It's also a way to improve agent orchestration by limiting the context the agent needs to orchestrate over to find the right form, data, or actions.
 
-| Property Name       | Description                                      | Data Type | Required |
-|---------------------|--------------------------------------------------|----------|----------|
-| `itemNumber`       | Item number. Can be blank if no filter required. | `string` | No       |
-| `vendorAccountNumber` | Vendor account number. Can be blank if no filter needed. | `string` | No |
+### Dynamics 365 ERP MCP tools
 
-**Outputs**
+The following tools are available in the Dynamics 365 ERP MCP (Preview) server. The agent orchestration uses these tools to translate natural language prompts into actions in the finance and operations apps environment.
 
-| Output | Description | Data type |
-| ------ | ----------- | --------- |
-| `itemnumber` | The item number | `string` |
-| `approvedvendoraccountnumber` | The vendor account number of the approved vendor for the item | `string` |
-| `validfrom` | The date and time from which the approval is valid | `datetime` |
-| `validto` | The date and time from to which the approval is valid | `datetime` |
+| Tool name | Description |
+| --------- | ----------- |
+| `click_control` | Select a control or a subelement of a control on the form. Clicking on a subelement of a control is done through the actionId parameter. |
+| `close_form` | Close form |
+| `filter_form` | Applies a filter on the form |
+| `filter_grid` | Filter on a grid |
+| `find_menu_item` | Find a menu item |
+| `find_actions` | Finds actions available to invoke |
+| `invoke_action` | Invokes an action |
+| `open_lookup` | Open a lookup control on the form |
+| `open_menu_item` | Opens menu item |
+| `open_or_close_tab` | Open or close a tab on the form |
+| `save_form` | Saves form |
+| `select_grid_row` | Select a row in a grid |
+| `set_control_value` | Set the value of a field |
+| `sort_grid_column` | Sort a grid by a grid column |
 
-**Example output**
+### Using actions that invoke application code
 
-```json
-[ 
-  { 
-    "itemnumber": "1000", 
-    "approvedvendoraccountnumber": "1001", 
-    "validfrom": "2012-01-15T00:00:00", 
-    "validto": "2154-12-31T00:00:00" 
-  }, 
-  { 
-    "itemnumber": "1000", 
-    "approvedvendoraccountnumber": "US-104", 
-    "validfrom": "2012-01-15T00:00:00", 
-    "validto": "2154-12-31T00:00:00" 
-  }, 
-  { 
-    "itemnumber": "1000", 
-    "approvedvendoraccountnumber": "US-101", 
-    "validfrom": "2012-01-01T00:00:00", 
-    "validto": "2154-12-31T00:00:00" 
-  } 
-]
-```
+Most of the tools in the MCP server work through server form interactions. However, the `find_actions` and `invoke_action` tools are exceptions to this pattern. These tools enable the agent to find and directly invoke classes in finance and operations apps code that are enabled for use by agents. While working through form interactions makes millions of actions available to agents, there might be scenarios where the action or business logic isn't available through the application client or the agent needs direct access to the logic through code.
 
-### **Find Requisitions**
-- **Name:** `findrequisitions`
-- **Description:** Finds open purchase requisitions, with an option to filter by approval status.
-- **Custom API:** `msdyn_FindRequisitions`
+In these situations, a developer can write a class in finance and operations apps code to make the business logic available through the MCP server. The developer creates the class by using the AI tool framework. Any classes created as AI tools that implement the `ICustomAPI` interface and have appropriate security defined for the associated menu action item are available to find in the MCP server with the `find_actions` tool and invoke with the `invoke_action` tool. Classes that are configured correctly to use the `ICustomAPI` interface as AI tools are displayed in the list on the **Synchronize Dataverse Custom APIs** (CustomApiTable) form.
 
-**Inputs**
+For more information on creating AI tools that expose business logic and actions in the Dynamics 365 ERP MCP server, see [Create AI tools with finance and operations business logic](copilot-ai-plugins.md).
 
-| Property Name   | Description                                              | Data Type | Required |
-|----------------|----------------------------------------------------------|----------|----------|
-| `approvedOnly` | Controls whether the list is filtered to approved requisitions. | `boolean` | Yes |
+## Allowed MCP clients
 
-**Example input**
-```json
-[
-  {
-    "approvedOnly": false
-  }
-]
-```
+When you enable the Dynamics 365 ERP MCP (Preview) server in your environment, you decide which agent platforms can access the server. By default, only the following two platforms can access the MCP server:
 
-**Outputs**
-For each purchase requisition there may be zero to many requisition lines returned in the output.
+| Platform | Client ID |
+| -------- | --------- |
+| Microsoft Copilot Studio | 7ab7862c-4c57-491e-8a45-d52a7e023983 |
+| GitHub Copilot | aebc6443-996d-45c2-90f0-388ff96faa56 |
 
-| Output | Description | Data type |
-| ------ | ----------- | --------- |
-| `requisitionnumber` | The requisition number | `string` |
-| `requisitionname` | The requisition name | `string` |
-| `requisitionstatus` | The current status of the requisition | Enum, with the following value options: <ul><li>`200000000`: Draft <li>`200000001`: In review <li>`200000002`: Rejected <li>`200000003`: Approved <li>`200000004`: Canceled <li>`200000005`: Closed <li>`200000006`: Budget reserved </ul> |
-| `lines/requisitionlinenumber` | The requisition line number | `integer` |
-| `lines/itemnumber` | The item number for the line | `string` |
-| `lines/linedescription` | The description of the line | `string` |
-| `lines/productname` | The line product name | `string` |
-| `lines/procurementproductcategoryname` | The procurement category for the product | `string` |
-| `lines/requestedpurchasequantity` | The requested purchase quantity | `decimal` |
-| `lines/purchaseprice` | The purchase price per unit | `decimal` |
-| `lines/lineamount` | The total amount for the line | `decimal` |
-| `lines/currencycode` | The currency code for the line currency values | `string` |
-| `lines/requesteddate` | The requested date for the line item | `datetime` |
+You must grant access to any other agent platforms that need to access the MCP server. To add new agent platforms, you need to:
 
-**Example output**
-```json
-[ 
-  { 
-    "requisitionnumber": "000031", 
-    "requisitionname": "test", 
-    "requisitionstatus": { 
-      "Value": 200000000 
-    }, 
-    "lines": [ 
-      { 
-        "requisitionlinenumber": 1, 
-        "itemnumber": "", 
-        "linedescription": "OFFICE EQUIPMENT AND ACCESSORIES AND SUPPLIES\nOFFICE EQUIPMENT AND ACCESSORIES AND SUPPLIES", 
-        "productname": "1000", 
-        "procurementproductcategoryname": "CORP PROCUREMENT CATEGORIES", 
-        "requestedpurchasequantity": 0.0, 
-        "purchaseprice": 100.0, 
-        "lineamount": 0.0, 
-        "currencycode": "USD", 
-        "requesteddate": "2025-04-23T00:00:00" 
-      } 
-    ] 
-  } 
-] 
-```
+1. Register the application in Microsoft Entra ID. For more information, see [Register an application in Microsoft Entra ID](/entra/identity-platform/quickstart-register-app).
+1. Add the registered client ID value in the **Allowed MCP clients** form, setting the **Allowed** property to `true`.
 
-### **Release Purchase Requisition Lines**
-- **Name:** `releasepurchaserequisitionlines`
-- **Description:** Releases purchase requisition lines and creates purchase orders for them.
-- **Custom API:** `msdyn_ReleasePurchaseRequisitionLines`
+## Known limitations
 
-**Inputs**
+The current implementation of the Dynamics 365 ERP MCP (Preview) server has the following limitations:
 
-| Property Name               | Description                                                      | Data Type | Required |
-|-----------------------------|------------------------------------------------------------------|----------|----------|
-| `defaultVendorAccountNumber` | The vendor account number to use for lines without assigned vendors. | `string` | No |
-| `linesToRelease`            | JSON array of lines to release: `[{ "requisitionnumber": "REQ0001", "requisitionlinenumber": 1 }]`. | `string` | Yes |
+1. **Language:** The MCP server supports only US English (en-us). If the authenticated user of the agent specifies a different locale, the form labels and values returned in the tool context appear in that locale. However, the MCP responses always provide metadata and guidance in English.
+1. **Dates:** Dates, times, and numerics use ISO format. They don't consider user locale. 
+1. **Control limitations:** Agents can't interact with some controls, such as calendar controls, organization chart controls, list view, availability view, HTML editor, image, radio button, and time edit. Custom controls aren't supported.
+1. **Available menu items:** The `find_menu_item` tool returns display and action menu items filtered by items in the left-side navigation pane and items that a user role can access.
+1. **Form tabs:** Form tabs are closed by default. Agents must open form tabs to interact with the data and controls under the form tab.
+1. **Output menu items:** The MCP server doesn't support output menu items that generate and display reports or print results.
+1. **Attachments:** The MCP server doesn't support attachments, including the document viewer DocuUpload, and FileUpload controls.
+1. **System admin forms:** The MCP server doesn't provide access to some forms related to system admin tasks, like feature management, user management, and managing security. The following forms are excluded:
+   
+   | Category | Form label | Form name |
+   | -------- | --------- | ---------- |
+   | Security | Security configuration | SysSecConfiguration |
+   | Security | User role assignment | SysSecUserAddRoles | 
+   | Security | Separation of duties config | SysSecSegrationOfDuties |
+   | Security | Temporary roles | <ul><li>UserSecGovTemporaryRole</li><li>UserSecGovTemporaryRoleAddRoles</li><li>UserSecGovTemporaryRoleAssignOrg</li><li>UserSecGovTemporaryRoleUser</li></ul> |
+   | Security | Privileged access control | <ul><li>UserSecGovPrivilegedUserManagement</li><li>UserSec</li></ul> |
+   | User setup | Users | SysUserInfoPage |
+   | User setup | User groups | SysUserGroupInfo |
+   | Integrations | Microsoft Entra ID applications | SysAADClientTable |
+   | Features | Feature Management | FeatureManagementWorkspace |
 
-**Example input**
-```json
-[
-  {
-    "defaultVendorAccountNumber": "US-001",
-    "linesToRelease": [
-      {
-        "requisitionnumber":"REQ1001", 
-        "requisitionlinenumber": 1
-      }
-    ]
-  }
-] 
-```
-
-**Outputs**
-
-| Output | Description | Data type |
-| ------ | ----------- | --------- |
-| `result` | The result of the operation to release the lines | `string` |
-
-**Example output**
-```json
-[
-  {
-    "result": "OK"
-  }
-]
-```
-
-### **Find Inventory**
-- **Name:** `findinventory`
-- **Description:** Finds available inventory for a given item number.
-- **Custom API:** `msdyn_FindInventory`
-
-**Inputs**
-
-| Property Name  | Description                                                   | Data Type | Required |
-|---------------|---------------------------------------------------------------|----------|----------|
-| `itemNumber`  | Item number.                                                   | `string` | Yes |
-| `siteId`      | Site ID. Can be blank to include all locations.                | `string` | No |
-| `warehouseId` | Warehouse ID. Can be blank to include all locations.           | `string` | No |
-
-**Example input**
-```json
-[
-  {
-    "itemNumber": "1000",
-    "siteId": "1",
-    "warehouseId": "11"
-  }
-]
-```
-
-**Outputs**
-
-| Output | Description | Data type |
-| ------ | ----------- | --------- |
-| `ItemNumber` | The item number | `string` | 
-| `SiteID` | Site ID | `string` | 
-| `WarehouseID` | Warehouse ID | `string` |
-| `AvailablePhysical` | The available physical inventory for the item, site, and warehouse | `decimal` |
-
-**Example output**
-```json
-[ 
-  { 
-    "ItemNumber": "1000", 
-    "SiteID": "1", 
-    "WarehouseID": "11", 
-    "AvailablePhysical": 500.0 
-  }, 
-  { 
-    "ItemNumber": "1000", 
-    "SiteID": "1", 
-    "WarehouseID": "13", 
-    "AvailablePhysical": 410.0 
-  } 
-]
-```
-
-### **Create Transfer Order for Single Item**
-- **Name:** `createtransferorderforsingleitem`
-- **Description:** Creates a transfer order for the specified item.
-- **Custom API:** `msdyn_CreateTransferOrderForSingleItem`
-
-**Inputs**
-
-| Property Name   | Description                                           | Data Type | Required |
-|----------------|-------------------------------------------------------|----------|----------|
-| `itemNumber`   | The item number of the product being transferred.     | `string` | Yes |
-| `quantity`     | Quantity of the specified item to be transferred.     | `int`    | Yes |
-| `fromWarehouseId` | Warehouse from which the item is being transferred. | `string` | Yes |
-| `toWarehouseId`   | Warehouse to which the item is being transferred.   | `string` | Yes |
-
-**Example input**
-```json
-[
-  {
-    "itemNumber": "1000",
-    "quantity": 1,
-    "fromWarehouseId": "11",
-    "toWarehouseId": "12"  
-  }
-]
-```
-
-**Output**
-
-| Output | Description | Data type |
-| ------ | ----------- | --------- |
-| `result` | A message indicating the result of the transfer operation | `string` | 
-
-**Example output**
-```json
-[
-  {
-    "result": "Transfer order is created."
-  }
-]
-```
-
-### **Find Purchase Trade Agreements**
-- **Name:** `findpurchasetradeagreements`
-- **Description:** Finds the most favorable purchase trade agreements based on item number, quantity, vendor, and expected purchase date.
-- **Custom API:** `msdyn_FindPurchaseTradeAgreements`
-
-**Inputs**
-
-| Property Name            | Description                                           | Data Type | Required |
-|--------------------------|-------------------------------------------------------|----------|----------|
-| `itemNumber`            | Item number required to find agreements.              | `string` | Yes |
-| `vendorAccountNumber`   | Vendor account number for filtering.                   | `string` | No |
-| `expectedPurchaseDate`  | Expected purchase date. Leave blank if not applicable. | `string` | No |
-| `expectedPurchaseQuantity` | Expected purchase quantity required for agreements. | `string` | Yes |
-
-**Example input**
-```json
-[
-  {
-    "itemNumber": "1000",
-    "expectedPurcahseQuantity": 1
-  }
-]
-```
-
-**Output**
-
-| Output | Description | Data type |
-| ------ | ----------- | --------- |
-| `price` | The price for the trade agreement with the vendor. | `decimal` | 
-| `currency` | The currency code of the price. | `string` | 
-| `siteID` | The site for the purchase agreement | `string` | 
-| `warehouseID` | The warehouse ID for the purchase agreement | `string` |
-| `vendoraccountnumber` | Vendor account number | `string` |
-| `itemnumber` | Item number | `string` |
-| `unit` | Unit of measure | `string` |
-
-**Example output**
-```json
-[ 
-  { 
-    "price": 330.0, 
-    "currency": "USD", 
-    "siteID": "", 
-    "warehouseID": "", 
-    "vendoraccountnumber": "", 
-    "itemnumber": "1000", 
-    "unit": "ea" 
-  }, 
-  { 
-    "price": 200.0, 
-    "currency": "USD", 
-    "siteID": "", 
-    "warehouseID": "", 
-    "vendoraccountnumber": "1001", 
-    "itemnumber": "1000", 
-    "unit": "ea" 
-  } 
-] 
-```
-
-### **Find Released Products**
-- **Name:** `findreleasedproducts`
-- **Description:** Finds released products using a keyword that matches either the product name or product number.
-- **Custom API:** `msdyn_FindReleasedProducts`
-
-**Inputs**
-
-| Property Name               | Description                         | Data Type | Required |
-|-----------------------------|-------------------------------------|----------|----------|
-| `productNameOrProductNumber` | Product name or product number to search. | `string` | Yes |
-
-**Example input**
-```json
-[
-  {
-    "productNameOrProductNumber": "1000"
-  }
-]
-```
-
-**Output**
-
-| Output | Description | Data type |
-| ------ | ----------- | --------- |
-| `itemnumber` | Item number | `string` |
-| `displayproductnumber` | Display product number | `string` |
-| `product_name` | Array of product names for the release products | `string` |
-
-**Example output**
-```json
-[ 
-  { 
-    "itemnumber": "1000", 
-    "displayproductnumber": "1000", 
-    "product_name": [ 
-      { 
-        "productname": "Surface Pro 128 GB" 
-      } 
-    ] 
-  }, 
-  { 
-    "itemnumber": "1405", 
-    "displayproductnumber": "1405", 
-    "product_name": [ 
-      { 
-        "productname": "Proseware LCD19 E1000" 
-      } 
-    ] 
-  }, 
-  { 
-    "itemnumber": "1613", 
-    "displayproductnumber": "1613", 
-    "product_name": [ 
-      { 
-        "productname": "SV 64GB USB Flash Memory E1000" 
-      } 
-    ] 
-  } 
-] 
-```
-
-### **Find Invoice Overview**
-- **Name:** `findinvoiceoverview`
-- **Description:** Get vendor invoice context.
-- **Custom API:** `msdyn_VendInvoiceGetInvoiceContextCustomAPI`
-
-**Inputs**
-
-| Property Name                                      | Description             | Data Type | Required |
-|----------------------------------------------------|-------------------------|----------|----------|
-| `invoiceId`                                       | Vendor invoice number.  | `string` | Yes |
-| `vendAccount`                                     | Vendor account number.  | `string` | Yes |
-
-**Outputs**<br>
-The purchase invoice can include zero to many invoice lines in the output response.
-
-| Output | Description | Data type |
-| ------ | ----------- | --------- |
-| `VendName` | Vendor name | `string` |
-| `EmployeeResponsible` | The responsible employee for the vendor | `string` |
-| `PurchId` | The ID of the purchase invoice | `string` | 
-| `ItemList/Item` | The item number of the item in the list | `string` |
-| `ItemList/Received` | The received quantity of the item on the invoice line | `decimal` |
-| `ItemList/Pending` | The pending quantity of the item on the invoice line | `decimal` |
-
-### **Find Invoice Match Status**
-- **Name:** `findinvoicematchstatus`
-- **Description:** Check vendor invoice match status.
-- **Custom API:** `msdyn_VendInvoiceGetInvoiceMatchStatusCustomAPI`
-
-**Inputs**
-
-| Property Name | Description                        | Data Type | Required |
-|--------------|------------------------------------|----------|----------|
-| `invoiceId` | Vendor invoice number of the invoice. | `string` | Yes |
-
-**Outputs**
-
-| Output | Description | Data type |
-| ------ | ----------- | --------- |
-| `vendAccount` | Vendor account number | `string` |
-| `invoiceStatus` | Invoice status | `VendInvoiceCopilotExceptionStatus` enum |
-| `productReceiptToMatch` | Product receipt to match | `integer` |
-
-**Example output**
-
-```json
-[
-  { 
-    "vendAccount": "1001", 
-    "invoiceStatus": "2", 
-    "productReceiptToMatch": "5", 
-  }
-]
-```
-
-### **Match Invoice**
-- **Name:** `matchinvoice`
-- **Description:** Match vendor invoice with product receipt.
-- **Custom API:** `msdyn_VendInvoiceMatchProductReceiptCustomAPI`
-
-**Inputs**
-
-| Property Name | Description                            | Data Type | Required |
-|--------------|----------------------------------------|----------|----------|
-| `invoiceId` | Vendor invoice number to be matched.  | `string` | Yes |
-
-**Outputs**
-
-| Output | Description | Data type |
-| ------ | ----------- | --------- |
-| `fullyMatched` | Whether the invoice has been fully matched | Boolean<br><ul><li>1 = matched <li>0 = not matched </ul> |
-
-
-### **Notify Responsible Employee**
-- **Name:** `notifyresponsibleemployee`
-- **Description:** Sends a notification to the vendor's responsible employee.
-- **Custom API:** `msdyn_VendInvoiceNotifyVendorResponsibleEmployeeCustomAPI`
-
-| Property Name | Description | Data Type | Required |
-|--------------|-------------|----------|----------|
-| `notificationMessage` | Notification message to be sent to the vendor's responsible employee. | `string` | Yes |
-| `vendAccount` | Vendor account of the vendor invoice. | `string` | Yes |
-
-**Output**: There are no outputs for this tool.
-
-### **Find Unmatched Invoices**
-- **Name:** `findunmatchedinvoices`
-- **Description:** Retrieves a list of vendor invoices that haven't been matched.
-- **Custom API:** `msdyn_VendInvoiceGetUnmatchedInvoicesCustomAPI`
-
-**Input**: This tool doesn't require input properties.
-
-**Output**
-
-| Output | Description | Data type |
-| ------ | ----------- | --------- |
-| `invoiceId` | The invoice ID of the unmatched invoice | `string` |
-| `vendorAccount` | The vendor account number | `string` |
-
-**Output example**
-
-```json
-{ 
-  "invoices": [ 
-    {"invoiceId": "INV001", "vendorAccount": "ACC001"}, 
-    {"invoiceId": "INV002", "vendorAccount": "ACC002"}, 
-    {"invoiceId": "INV003", "vendorAccount": "ACC003"} 
-  ] 
-} 
-```
-
-### **Submit Invoice to Workflow**
-- **Name:** `submittoworkflow`
-- **Description:** Submits an invoice to the workflow for processing.
-- **Custom API:** `msdyn_VendInvoiceSubmitToWorkflowCustomAPI`
-
-| Property Name | Description | Data Type | Required |
-|--------------|-------------|----------|----------|
-| `invoiceId` | Vendor invoice number of the given invoice. | `string` | Yes |
-| `comment` | Workflow submission comment. | `string` | Yes |
-
-**Output**
-
-| Output | Description | Data type |
-| ------ | ----------- | --------- |
-| `status` | Status of the workflow submission | Enum <br><ul><li>Success <li>Failure </ul> |
-| `message` | Failure details when there's a Failure status | `string` |
-
-
+1. **Advanced filters:** The MCP server doesn't support advanced filters on grids. For example, it doesn't support the "before," "after," and "between" operators for date columns. It supports only the "matches" operator for filtering.

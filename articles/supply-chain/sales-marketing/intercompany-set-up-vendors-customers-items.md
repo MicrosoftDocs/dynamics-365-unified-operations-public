@@ -31,7 +31,7 @@ To prepare your organization for intercompany trade, you must define the vendors
 1. Expand the **Miscellaneous details** FastTab and set **Create intercompany orders** to *Yes*. If you also want orders to be delivered directly to customers, set **Direct delivery** to *Yes*.
 
     > [!NOTE]
-    > If there are some items that your organization stocks and delivers to customers, you might not want to create intercompany orders automatically, even when you have the item in stock. To inactivate the automatic generation of orders for items that you might sometimes have in stock, set **Create intercompany orders** to *No*.
+    > If there are some items that your organization stocks and delivers to customers, you might not want to create intercompany orders automatically, even when you have the item in stock. To deactivate the automatic generation of orders for items that you might sometimes have in stock, set **Create intercompany orders** to *No*.
 
 1. If you want to allow extra lines to be created indirectly on a sales order, set **Create indirect order lines** to *Yes*. A user can then add lines to the original sales order from the intercompany sales order.
 

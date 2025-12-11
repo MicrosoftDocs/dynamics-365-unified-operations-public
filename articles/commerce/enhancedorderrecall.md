@@ -3,6 +3,7 @@ title: Recall order operation in POS
 description: This article describes feature capabilities available for improved order recall pages in POS in Microsoft Dynamics 365 Commerce.
 author: hhainesms
 ms.date: 05/28/2024
+ms.update-cycle: 1095-days
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chrgriffin

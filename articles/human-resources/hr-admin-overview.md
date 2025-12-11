@@ -33,7 +33,7 @@ This article provides a list of the help topics and other resources to set up, m
 ## Configure Power BI workspaces
 1.	If you are using Power BI, configure Power BI with the FinOps entity store. For additional information, see [Power BI integration with the entity store](../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md). 
 
-2.	Enable the relevant aggregate measure based on the workspace where you want to enable Power BI. For addtional information, see the table below:  
+2.	Enable the relevant aggregate measure based on the workspace where you want to enable Power BI. For additional information, see the table below:  
 
 |Workspace name	|Measurement name|
 |-------------|-----------------|

@@ -1,8 +1,8 @@
 ---
 title: Net customer and vendor balances 
 description: Learn about customer and vendor balance netting in Microsoft Dynamics 365 Finance, including processes for setting up journal names and netting agreements. 
-author: EricWangChen
-ms.author: wangchen
+author: music727
+ms.author: mibeinar
 ms.topic: how-to
 ms.date: 02/18/2025
 ms.custom:
@@ -132,3 +132,4 @@ Here is an example of the vouchers that are generated. For this example, USMF is
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -1,12 +1,12 @@
 ---
 title: Onboard the Approvals Management mobile app
 description: This article explains how administrators can prepare Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Approvals Management mobile app. It also explains how to install the app on mobile devices.
-author: kamaybac
-ms.author: akshaykmr
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 07/29/2024
+ms.date: 08/13/2025
 ms.custom: 
   - bap-template
 ---
@@ -20,6 +20,10 @@ This article explains how administrators can prepare your Microsoft Dynamics 365
 ## Prerequisites
 
 Before you can start to onboard the Approvals Management mobile app, you must meet the requirements that are outlined in this section.
+
+### License requirements
+
+Use of the Approvals Management mobile app requires a license. You can find complete and up-to-date licensing information in the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544). Licensing terms are subject to change without notice.
 
 ### System requirements
 

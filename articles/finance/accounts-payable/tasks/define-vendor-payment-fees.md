@@ -1,10 +1,11 @@
 --- 
 title: Define vendor payment fees
-description: Learn about how to set up vendor payment fees, which is a task that uses the USMF demo company, including a step-by-step process. 
+description: Learn about how to set up vendor payment fees. 
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 01/08/2024
+ms.date: 08/04/2025
+ms.update-cycle: 1095-days
 ms.custom: evergreen 
 ms.reviewer: twheeloc
 audience: Application User
@@ -18,7 +19,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Set up vendor payment fees. This task uses the USMF demo company.
+This article explains how to set up vendor payment fees. This task uses the USMF demo company.
 
 1. Go to **Accounts payable > Payment setup > Payment fee**.
 2. Click **New**.
@@ -28,19 +29,19 @@ Set up vendor payment fees. This task uses the USMF demo company.
 5. In the **Fee description** field, type a value.
     * Add a description to provide more detail on when the fee is assessed.  
 6. In the **Charge** field, select either **Vendor** or **Ledger**.
-    * **Ledger** is used when the fee will be expensed to your organization. **Vendor** is used when the fee will be assessed to the vendor.  
+    * **Ledger** is used when the fee will be expensed to your organization. **Vendor** is used when the fee is assessed to the vendor.  
 7. Enter a main account for where the fee will be expensed.
     * This option is only available when selecting **Ledger** as the **Charge** option.  
 8. Select the journal on which this fee can be used. 
-    * For a vendor payment fee, you would select the journal 'Vendor disbursement.'  
-9. Click S**ave**.
+    * For a vendor payment fee, you would select the **Vendor disbursement** journal.  
+9. Click **Save**.
 10. Click **Payment fee setup**.
     * Continue to the **Payment fee setup** to define when the fee should default onto the journal you selected.  
 11. Select either **Table**, **Group** or **All**.
     * **Table** is used to select a single bank account, **Group** is used to select a bank group, and **All** is to use this fee setup for all bank accounts.  
 12. Select either a bank group or a bank account.
-    * The lookup will show bank group if you selected **Group**, and will show bank accounts if you selected **Table**.  
-13. Select the method of payment for when this fee will be assessed.
+    * The lookup shows bank groups if you selected **Group**, and shows bank accounts if you selected **Table**.  
+13. Select the method of payment for when this fee is assessed.
 14. Select the **Payment specification** for the selected method of payment.
     * The **Payment specification** is used with electronic fund transfer methods of payment.  
 15. Select whether the fee is a percentage, amount or interval.

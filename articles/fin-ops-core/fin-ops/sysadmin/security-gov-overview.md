@@ -20,6 +20,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 User security governance helps organizations create a security architecture that is closely aligned with their business processes. It empowers organizations to apply precise role management, advanced audit capabilities, and comprehensive license optimization tools.
 
+:::image type="content" source="media/security-governance-sysadmin.png" alt-text="Security governance in the system admin user experience." lightbox="media/security-governance-sysadmin.png":::
+
 User security governance provides the following capabilities:
 
 - Detailed reporting about segregation of duties and separation of privileges

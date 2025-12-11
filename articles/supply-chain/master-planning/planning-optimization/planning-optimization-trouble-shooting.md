@@ -1,13 +1,14 @@
 ---
 title: Troubleshoot Planning Optimization
 description: Learn how to fix issues that you might encounter while working with Planning Optimization with an outline on possible errors when installing the add-in.
-author: t-benebo
-ms.author: benebotg
-ms.topic: troubleshooting-general
-ms.date: 05/01/2023
-ms.custom: bap-template
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
+ms.topic: troubleshooting-general
+ms.date: 07/21/2025
+ms.custom:
+  - bap-template
 ---
 
 # Troubleshoot Planning Optimization
@@ -22,13 +23,13 @@ If you're having trouble installing the Planning Optimization Add-in, consider t
 
 ### Make sure your environment meets the prerequisites
 
-Planning Optimization requires a Microsoft Dynamics Lifecycle Services–enabled, high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.23 or later. If you try to install the add-in on a OneBox environment, the installation won't be completed.
+Planning Optimization requires a Microsoft Dynamics Lifecycle Services–enabled, high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.23 or later. If you try to install the add-in on a OneBox environment, the installation won't complete.
 
 **Fix**: Cancel the installation and use a high-availability environment, tier 2 or higher (not a OneBox environment).
 
 ### Make sure your user account meets the prerequisites
 
-The Planning Optimization Add-in requires a successfully linked Power Platform environment. To install the add-in, you must sign in to your Microsoft Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you try to install the add-in using an account with insufficient permissions, you may see one of the following error messages:
+The Planning Optimization Add-in requires a successfully linked Power Platform environment. To install the add-in, you must sign in to your Microsoft Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you try to install the add-in using an account with insufficient permissions, you might see one of the following error messages:
 
 > Current user does not have enough permission on Power platform environment to complete installation for Planning optimization. Consider changing user Access Mode to Read-write on Power platform admin center.
 
@@ -42,11 +43,11 @@ The Planning Optimization Add-in requires a successfully linked Power Platform e
 
 The Planning Optimization Add-in might fail to install due to an error on your Power Platform environment.
 
-**Fix**: Check the error details and modify your Power Platform organization settings accordingly. It might be a temporary error, so try to install again later. If the issue persists, please contact Microsoft Support.
+**Fix**: Check the error details and modify your Power Platform organization settings accordingly. It might be a temporary error, so try to install again later. If the issue persists, contact Microsoft Support.
 
 ## Planning Optimization job times out
 
-Planning Optimization has a set time-out of 60 minutes. Therefore, if it runs for more than 60 minutes, the planning job will be stopped because of a time-out.
+Planning Optimization has a set timeout of 60 minutes. Therefore, if it runs for more than 60 minutes, the planning job stops because of a timeout.
 
 If your Planning Optimization jobs frequently time out, consider implementing one or more of the options that are described in the following subsections.
 
@@ -76,7 +77,7 @@ Follow these steps to review your setup and remove time fences and other options
         - **Approved requisitions time fence (days)**
 
     > [!IMPORTANT]
-    > The coverage time fence has the largest impact on the time that planning takes to run. Adjust it to the lowest possible value that still fulfills your business needs. 
+    > The coverage time fence has the largest impact on the time that planning takes to run. Adjust it to the lowest possible value that still fulfills your business needs.
 
 1. On the **Master plans** page, review the following settings for each plan. Set each option to *No* unless it applies to your master plan. Don't leave any option set to *Yes* if it isn't needed for your business processes.
 
@@ -108,15 +109,15 @@ Review the following settings to make sure that you're planning only for the pro
 
 ### Split large planning jobs into several smaller jobs
 
-If you have a large planning job that frequently times out, you might be able to prevent the time-out by splitting the job into several smaller jobs.
+If you have a large planning job that frequently times out, you might be able to prevent the timeout by splitting the job into several smaller jobs.
 
 #### Option 1: Run the same master plan but only for a subset of products
 
-For example, you have a master plan that's named *PlanA*. It runs nightly as a batch job for 1,000 items that have item numbers ranging from *A0001* through *A1000*. If this job often times out after 60 minutes, you can split it into three jobs, each of which runs for a third of the items. You run *PlanA* for the first third (*A0001* through *A0333*), then for the second third (*A0334* through *A0666*), and then for the last third (*A0667* through *A1000*). In this way, each smaller job has the full 60-minute time-out window. You aren't trying to use the same 60 minutes to plan all 1,000 items.
+For example, you have a master plan that's named *PlanA*. It runs nightly as a batch job for 1,000 items that have item numbers ranging from *A0001* through *A1000*. If this job often times out after 60 minutes, you can split it into three jobs, each of which runs for a third of the items. You run *PlanA* for the first third (*A0001* through *A0333*), then for the second third (*A0334* through *A0666*), and then for the last third (*A0667* through *A1000*). In this way, each smaller job has the full 60-minute timeout window. You aren't trying to use the same 60 minutes to plan all 1,000 items.
 
 To split a large job into several jobs, follow these steps.
 
-1. Go to **System administration \> Inquiries \> Batch jobs**.
+1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
 1. In the grid, find the recurring planning job that's timing out. Then select the value in the **Job ID** column to open the job details.
 1. On the Action Pane, select **Change status**.
 1. In the **Select new status** dialog box, select *Withhold*, and then select **OK**.
@@ -156,7 +157,7 @@ To split a large job into several jobs, follow these steps.
 
 #### Option 2: Different master plans, each for a subset of products
 
-If your products have different characteristics with regard to planning, you should consider running different master plans, each for a subset of products.
+If your products have different characteristics that affect planning, you should consider running different master plans, each for a subset of products.
 
 For example, you have a master plan for purchasing items that have a long lead time (such as a year) but that are used to produce manufactured products that have a short manufacturing lead time (such as a week). In this case, you can make one master plan for purchased products (*PlanPurch*) that has a coverage time fence of 365 days. Then make another plan for manufactured items (*PlanManuf*) that has a coverage time fence of 30 days. Because each set of products is in a different master plan, you can run both master plan jobs in parallel. When you run different plans in different batch tasks, each batch task can run in parallel. They don't have to run sequentially.
 
@@ -164,7 +165,7 @@ To implement this strategy, follow these steps.
 
 1. Open your existing master plan, and modify it so that it covers only a subset of the original items (for example, purchased items). You can make this modification by adding a filter as described in [Applying a plan filter](plan-filters.md#apply-a-plan-filter).
 1. Create another master plan to cover the remaining items. Again, set up a [plan filter](plan-filters.md#apply-a-plan-filter) to include only the items that you want to include in this plan (for example, manufactured items). This plan can be a copy of the original plan that you modify to filter for a different set of items.
-1. Go to **System administration \> Inquiries \> Batch jobs**.
+1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
 1. In the grid, find the recurring planning job that's timing out. Then select the value in the **Job ID** column to open the job details.
 1. On the Action Pane, select **Change status**.
 1. In the **Select new status** dialog box, select *Withhold*, and then select **OK**.
@@ -193,7 +194,7 @@ Consider whether you can split large resource groups (with many resources) into 
 
 ## Data export timeout
 
-The following message will appear if a data export times out for Planning Optimization:
+The following message appears if a data export times out for Planning Optimization:
 
 > Master planning job timed out when exporting the data to perform the calculation. This can be a temporary issue - try running the job again later. If you see this message often then please review your setup to limit the amount of data used for planning, as indicated in (this page).
 
@@ -203,7 +204,7 @@ If you receive this message, we recommend that you try one or both of the approa
 
 Follow these steps to review your setup for time fences and options that you don't need.
 
-1. Go to **Master Planning \> Setup \> Coverage \> Coverage groups**.
+1. Go to **Master Planning** \> **Setup** \> **Coverage** \> **Coverage groups**.
 1. Review the following settings for each coverage group on the **Coverage groups** page. Consider whether some or all of the values can be smaller but still fulfill your business needs for the different time fences.
 
     - **Coverage time fence (days)**
@@ -213,7 +214,7 @@ Follow these steps to review your setup for time fences and options that you don
     - **Action time fence**
     - **Calculated delays time fence**
 
-1. Go to **Master planning \> Setup \> Plans \> Master plans**.
+1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
 1. On the **Master plans** page, check whether the time fences have been overwritten, and consider whether the values can be smaller but still fulfill your business needs for the different time fences. Review the following settings for each plan:
 
     - **Coverage**
@@ -226,7 +227,7 @@ Follow these steps to review your setup for time fences and options that you don
 
 1. If your plan is timing out because it generates a large number of orders, consider changing your business strategy for replenishing items. Here are some examples:
 
-    - If you use coverage groups where the **Coverage code** field is set to *Requirement*, a specific supply will be created for it each time that there's a demand. Consider whether a **Coverage code** value of *Period* will work for your business. In this case, the system will group all demand for a selected number of days into a single supply order that covers that period. This approach will also make planned orders easier to manage. Alternatively, consider using a **Coverage code** value of *Min/Max*. In this case, a planned order will be created only when the on-hand inventory falls below the minimum value. The on-hand inventory will then be replenished to its maximum value.
+    - If you use coverage groups where the **Coverage code** field is set to *Requirement*, a specific supply is created for it each time that there's a demand. Consider whether a **Coverage code** value of *Period* will work for your business. In this case, the system groups all demand for a selected number of days into a single supply order that covers that period. This approach also makes planned orders easier to manage. Alternatively, consider using a **Coverage code** value of *Min/Max*. In this case, a planned order is created only when the on-hand inventory falls below the minimum value. The on-hand inventory is then replenished to its maximum value.
     - Consider whether you can purchase or produce items in larger amounts. If you can, increase the **Max. order quantity** value on **Default order settings** page for each item that you're ordering. The higher the value, the fewer orders you're likely to generate for that item.
 
 ### Plan only for the products that are needed
@@ -246,7 +247,7 @@ If master planning ran by didn't create any orders, check the following settings
 
 ## Planning of batch jobs fails when Planning Optimization is enabled
 
-When you enable Planning Optimization, the deprecated master planning engine is automatically disabled. Master planning batch jobs that were created for the deprecated master planning engine will fail if they're triggered while Planning Optimization is enabled. You may receive an error message such as *This operation triggered master planning that isn't supported when Planning Optimization is enabled*.
+When you enable Planning Optimization, the deprecated master planning engine is automatically disabled. Master planning batch jobs that were created for the deprecated master planning engine will fail if they're triggered while Planning Optimization is enabled. You might receive an error message such as *This operation triggered master planning that isn't supported when Planning Optimization is enabled*.
 
 **Fix**: Cancel all master planning batch jobs that were created for the deprecated master planning engine.
 

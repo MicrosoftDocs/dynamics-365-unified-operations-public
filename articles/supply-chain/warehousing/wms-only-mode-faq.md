@@ -18,7 +18,9 @@ This article provides answers to frequently asked questions about Warehouse mana
 
 ## What should I do when a message is shown as Failed in the message processor?
 
-The [message processor](../supply-chain-dev/message-processor.md) retries three times before it fails. You can use [business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) to be notified about this failure. Follow the [view log](../supply-chain-dev/message-processor.md#view-message-log) information for the **Message processor messages** page, and use that information to take the next appropriate action: queue the message (that is, move it back into the processing queue), cancel it, or [manually update it](wms-only-mode-shared-and-external-detail-use.md#maintain-messages).
+The [message processor](../message-processor/message-processor.md) retries three times before it fails. Follow the [view log](../message-processor/message-processor.md#view-message-log) information for the **Message processor messages** page, and use that information to take the next appropriate action: queue the message (that is, move it back into the processing queue), cancel it, or [manually update it](wms-only-mode-shared-and-external-detail-use.md#maintain-messages).
+
+You can also use [business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) to be notified about this failure. Learn more in [Business events, custom message queues, and custom message types](../message-processor/developer/message-processor-develop.md)
 
 > [!NOTE]
 > Usually, you must correct errors in the data before it makes sense to try to reprocess a failed message.

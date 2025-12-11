@@ -1,10 +1,10 @@
 --- 
 title: Create advanced rules for journals
-description: Learn about the process of creating advanced rules for journals, including a step-by-step process for setting up journal control.
+description: Learn about the process of creating advanced rules for journals.
 author: aprilolson
 ms.author: aolson
 ms.topic: how-to
-ms.date: 03/28/2023
+ms.date: 09/05/2025
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User  
@@ -24,11 +24,11 @@ This procedure steps through creating advanced rules for journals. This includes
 1. Go to **General ledger > Journal setup > Journal names**.
 2. In the list, find and select the desired record.
 3. On the **Action pane**, click **Journal control**.
-4. In the **Which account types can be posted** FastTab, click **Add**.
+4. On the **Which account types can be posted** FastTab, click **Add**.
 5. In the **Company accounts** field, click the drop-down button to open the lookup.
 6. In the list, find and select the desired record.
 7. In the list, click the link in the selected row.
-8. In the **Which segment values are valid for this journal** FastTab, click **Add**.
+8. On the **Which segment values are valid for this journal** FastTab, click **Add**.
 9. In the **Account structure** field, click the drop-down button to open the lookup.
 10. In the list, find and select the desired record.
 11. In the list, click the link in the selected row.

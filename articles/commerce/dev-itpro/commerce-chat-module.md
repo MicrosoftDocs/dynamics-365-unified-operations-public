@@ -2,9 +2,8 @@
 title: Commerce Chat with Omnichannel for Customer Service module
 description: This article describes the Commerce Chat with Omnichannel for Customer Service module in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 07/30/2024
+ms.date: 09/09/2025
 ms.topic: how-to
-audience: IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
@@ -62,7 +61,7 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 
 1. In site builder for your site, go to **Fragments**.
 1. Select **New**.
-1. In the **Select a fragment** dialog box, select the **Commerce Chat with Omnichannel for Customer Service** module, enter a name for the fragment, and then select **OK**.
+1. In the **Select a fragment** dialog, select the **Commerce Chat with Omnichannel for Customer Service** module, enter a name for the fragment, and then select **OK**.
 1. In the outline view, select the **Msdyn365 cs chat connector** slot.
 1. In the **Chat properties** pane on the right, follow these steps:
 
@@ -76,7 +75,7 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 1. Go to **Fragments**, and open the header fragment for your site.
 1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add fragment**.
-1. In the **Select modules** dialog box, select the chat fragment that you created earlier, and then select **OK**.
+1. In the **Select modules** dialog, select the chat fragment that you created earlier, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
 > [!NOTE]
@@ -157,7 +156,7 @@ For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).
 
 [Commerce chat features overview](commerce-chat-overview.md)
 
-[Commerce Chat with Power Virtual Agents module](chat-module-pva.md)
+[Commerce Chat with Microsoft Copilot Studio module](chat-module-pva.md)
 
 [Commerce chat module proactive chat parameters](chat-proactive-chat-parameters.md)
 

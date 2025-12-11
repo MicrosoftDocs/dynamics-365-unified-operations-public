@@ -20,6 +20,7 @@ ms.search.region: Global
 ms.author: ajitchandran
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
+ms.custom: sfi-image-nochange
 
 ---
 

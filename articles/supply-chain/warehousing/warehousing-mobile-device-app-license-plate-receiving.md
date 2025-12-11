@@ -47,41 +47,29 @@ You can use the license plate receiving process without creating work. If you de
 > - You must define at least one location for a work policy in the **Inventory locations** section. You can't specify the same location for multiple work policies.
 > - The **Print label** option for mobile device menu items won't print a license plate label without work creation. However, you can print a license plate label as part of the [deferred receiving process](#deferred-receiving).
 
-To make this functionality available on your system, you must turn on the *License plate receiving enhancements* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.32, this feature is turned on by default. As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.
-
 ### Receive inventory on a location that doesn't track license plates
 
 It's possible to use a warehouse location that is assigned to a location profile even when **Use license plate tracking** isn't turned on. Therefore, when you receive inventory, you can directly register the on-hand inventory on a location without work creation.
 
 ## Add mobile device menu items for each receiving location in a warehouse
 
-The *License plate receiving enhancements* feature lets you receive at any location in a warehouse by adding location-specific license plate receiving (and put away) menu items to the Warehousing mobile app. Previously, the system supported receiving only at the default location that is defined for each warehouse. However, when this feature is turned on, mobile device menu items for license plate receiving (and put away) now provide the **Use default data** option, which lets you select a custom "to" location for each menu item. (This option was already available for some other types of menu items.)
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *License plate receiving enhancements* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+The *License plate receiving enhancements* feature lets you receive at any location in a warehouse by adding location-specific license plate receiving (and put away) menu items to the Warehousing mobile app. Previously, the system supported receiving only at the default location that is defined for each warehouse. However, this features allows mobile device menu items for license plate receiving (and put away) to provide the **Use default data** option, which lets you select a custom "to" location for each menu item.
 
 ## Show or skip the receiving summary page
 
-You can use the *Control whether to display a receiving summary page on mobile devices* feature to take advantage of an additional detailed Warehouse Management mobile app flow as part of the license plate receiving process.
-
-When this feature is turned on, mobile device menu items for license plate receiving or license plate receiving and put-away will provide a **Display receiving summary page** setting. This setting has the following options:
+You can use the *Control whether to display a receiving summary page on mobile devices* feature to take advantage of an additional detailed Warehouse Management mobile app flow as part of the license plate receiving process. With this feature, mobile device menu items for license plate receiving or license plate receiving and put-away will provide a **Display receiving summary page** setting. This setting has the following options:
 
 - **Display a detailed summary** – During license plate receiving, workers will see an extra page that shows the full ASN information.
 - **Skip the summary** – Workers won't see the full ASN information. Warehouse workers also won't be able to set a disposition code or add exceptions during the receiving process.
 
-To use this functionality, the *Control whether to display a receiving summary page on mobile devices* feature must be turned on for your system. As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Control whether to display a receiving summary page on mobile devices* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
 ## Prevent transfer order–shipped license plates from being used at warehouses other than the destination warehouse
 
-A license plate receiving process can't be used if an ASN contains a license plate ID that already exists and has physical on-hand data at a warehouse location other than the warehouse location where the license plate registration occurs.
-
-For transfer order scenarios where the transit warehouse doesn't track license plates (and therefore also doesn't track physical on-hand inventory per license plate), you can use the *Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse* feature to prevent physical on-hand updates of license plates that are in transit. To make this functionality available, the *Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then admins can turn this feature on or off by searching for it in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
-To manage the functionality when this feature is available, follow these steps.
+A license plate receiving process can't be used if an ASN contains a license plate ID that already exists and has physical on-hand data at a warehouse location other than the warehouse location where the license plate registration occurs. For transfer order scenarios where the transit warehouse doesn't track license plates (and therefore also doesn't track physical on-hand inventory per license plate), you can use the *Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse* feature to prevent physical on-hand updates of license plates that are in transit. To manage the functionality provided by this feature, follow these steps.
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
 1. On the **General** tab, on the **License plates** FastTab, set the **Transit warehouse license plate policy** field to one of the following values:
 
-    - **Allow reuse of non-tracked license plate** – The system works the same way that it works when the *Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse* feature isn't available. This value is the default setting when you first activate the feature.
+    - **Allow reuse of non-tracked license plate** – Non-tracked license plates can be reused.
     - **Prevent reuse of non-tracked license plate** – Only on-hand updates that are related to a shipped license plate will be allowed at the destination warehouse until the transfer order has been received.
 
 ## <a name="deferred-receiving"></a>Deferred receiving processing

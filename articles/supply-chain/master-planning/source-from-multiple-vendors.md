@@ -1,13 +1,14 @@
 ---
 title: Source products and materials from multiple vendors
 description: Learn how to enable the system to automatically suggest a vendor for each planned purchase order so that, over time, specified percentages are respected.
-author: t-benebo
-ms.author: benebotg
-ms.topic: how-to
-ms.date: 12/02/2022
-ms.custom: bap-template
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: MpsMultiSourcePolicy, MpsMultiSourcePolicyAssignment
+ms.topic: how-to
+ms.date: 08/22/2025
+ms.custom:
+  - bap-template
 ---
 
 # Source products and materials from multiple vendors
@@ -32,10 +33,7 @@ Automatic vendor selection that's based on predefined splits helps improve suppl
 
 ## Prerequisites
 
-Before you can use this feature, your system must meet the following requirements:
-
-- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.31 or later.
-- The feature that's named *Source products and materials from multiple vendors using Planning Optimization* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.36, this feature is turned on by default.
+To use this feature, it must be enabled for your system. As of version 10.0.36, this feature is turned on by default. As of Supply Chain Management version 10.0.43, it's mandatory and can't be turned off. If you're running a version older than 10.0.43, then admins can turn this functionality on or off by searching for the *Source products and materials from multiple vendors using Planning Optimization* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Define multisource policies
 
@@ -175,9 +173,9 @@ The system uses the following rules to select the vendor for a new planned order
     - If the multisource policy includes a relevant minimum order quantity for the vendor, that minimum quantity will also be applied. Therefore, the higher of the two minimum order values (the default order settings and the minimum vendor quantity) will take effect.
 
 > [!IMPORTANT]
-> Vendor calendars aren't taken into account when you use multi-vendor sourcing. In some cases, this may result in an order arriving later than it could if you chose a vendor manually.
+> Vendor calendars aren't taken into account when you use multi-vendor sourcing. In some cases, this can result in an order arriving later than it could if you chose a vendor manually.
 >
-> For example, suppose it's Monday and you have demand for Wednesday for an item provided by two vendors. One vendor is open all days while the second vendor is only open on Fridays. If the sourcing algorithm determines that the second vendor should supply (based on the target percentages), then this vendor will be chosen even though the demand won't arrive until Friday. Therefore, you may want to assign a vendor manually when fulfilling short-term demand.
+> For example, suppose it's Monday and you have demand for Wednesday for an item provided by two vendors. One vendor is open all days while the second vendor is only open on Fridays. If the sourcing algorithm determines that the second vendor should supply (based on the target percentages), then this vendor will be chosen even though the demand won't arrive until Friday. Therefore, you might want to assign a vendor manually when fulfilling short-term demand.
 
 ### Example: How vendors are selected based on a multisource policy
 

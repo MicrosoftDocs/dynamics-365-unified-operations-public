@@ -1,10 +1,10 @@
 --- 
 title: Calculate and adjust sales tax on a vendor invoice
-description: Learn how to adjust sales tax on a vendor invoice in Dynamics 365 Finance, including a step-by-step process that uses the DEMF demo company. 
+description: Learn how to adjust sales tax on a vendor invoice in Dynamics 365 Finance. 
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 04/01/2024
+ms.date: 09/05/2025
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User  

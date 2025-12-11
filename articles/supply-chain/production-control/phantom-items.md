@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: SysOperationTemplateForm
 ms.topic: article
-ms.date: 06/28/2024
+ms.date: 08/13/2025
 ms.custom: 
   - bap-template
 ---
@@ -19,7 +19,7 @@ This article describes, in detail, how the *Phantom* line type can be used for t
 
 In figure 1, (a) is the BOM for product H and parts F and G, and (b) is the route sheet for products H and part F.
 
-![Figure 1: Engineering BOM.](media/product-H-part-F.png)
+:::image type="content" source="media/product-H-part-F.png" alt-text="Figure 1: Engineering BOM." lightbox="media/product-H-part-F.png":::
 *Figure 1: Engineering BOM*
 
 Figure 1 shows an example of a BOM structure in two levels. Finished product H represents a product for a machine assembly. The machine assembly consists of two parts, an electrical unit (F) that has two materials (A and B) and a group of packaging materials (G) that also has two materials (C and D). Another material (E) is used during the general assembly of the machine.
@@ -34,7 +34,7 @@ Therefore, although an Engineering BOM provides great value for the design of a 
 
 Figure 2 shows how the preceding Engineering BOM is transitioned into a Manufacturing BOM. In figure 2, (a) is the BOM for product H, and b is the route sheet for product H.
 
-![Figure 2: Manufacturing BOM.](media/product-H-part-B.png)
+:::image type="content" source="media/product-H-part-B.png" alt-text="Figure 2: Manufacturing BOM." lightbox="media/product-H-part-B.png":::
 *Figure 2: Manufacturing BOM*
 
 In this structure, you can see that there's no notion of parts F and G, and the materials that these parts consist of have been elevated to the next BOM level.
@@ -47,24 +47,24 @@ The transition between the Engineering BOM and the Manufacturing BOM is enabled 
 
 The *Phantom* line type can be used in multilevel BOM structures, as shown in figure 3. In figure 3, (a) is the BOM for product G, and (b) is the route sheet for parts E and F and product G.
 
-![Figure 3: Engineering BOM part G.](media/product-G.png)
+:::image type="content" source="media/product-G.png" alt-text="Figure 3: Engineering BOM part G." lightbox="media/product-G.png":::
 *Figure 3: Engineering BOM part G*
 
 Figure 4 shows the resulting Manufacturing BOM and route sheet if the BOM lines for parts E and F are configured so that the line type is *Phantom*. In figure 4, (a) is the BOM for product G, and (b) is the route sheet for product G.
 
-![Figure 4: Manufacturing BOM part G.](media/product-G-route-sheet-G.png)
+:::image type="content" source="media/product-G-route-sheet-G.png" alt-text="Figure 4: Manufacturing BOM part G." lightbox="media/product-G-route-sheet-G.png":::
 *Figure 4: Manufacturing BOM part G*
 
 ## Phantom and route network
 
 Phantom BOMs can also be used for a BOM that has a route network. In a route network, one or more operations run in parallel. Figure 5 shows an example of a route network that is used in a multilevel BOM. In figure 5, (a) is the BOM for product G and part F, and (b) is the route sheet for product G and part F, which has a route network.
 
-![Figure 5: Engineering BOM part G, route network.](media/product-G-part-F.png)
+:::image type="content" source="media/product-G-part-F.png" alt-text="Figure 5: Engineering BOM part G, route network." lightbox="media/product-G-part-F.png":::
 *Figure 5: Engineering BOM part G, route network*
 
 In figure 6, (a) is the BOM for product G and part F, and (b) is the route sheet for product G and part F.
 
-![Figure 6: Manufacturing BOM part G, route network.](media/product-G-part-F-with-route-sheet.png)
+:::image type="content" source="media/product-G-part-F-with-route-sheet.png" alt-text="Figure 6: Manufacturing BOM part G, route network." lightbox="media/product-G-part-F-with-route-sheet.png":::
 *Figure 6: Manufacturing BOM part G, route network*
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

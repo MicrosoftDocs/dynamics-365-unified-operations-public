@@ -1,12 +1,13 @@
 ---
 title: Overview of Copilot capabilities in finance and operations apps
-description: Learn about Copilot capabilities in finance and operations apps and explains how to use them, including an outline on responsible use of AI.
+description: Learn about Copilot capabilities in finance and operations apps, how to use them, and guidelines for using AI responsibly.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 04/25/2025
+ms.date: 06/17/2025
+ms.update-cycle: 180-days
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -24,9 +25,9 @@ Copilot gives users access to AI capabilities that augment the application exper
 
 Copilot brings a growing set of skills that help users complete various tasks. It can appear in many different user experiences. Here are some examples:
 
-- **Sidecar** – Copilot sits alongside the application as a *sidecar* and provides conversational support to the user. The sidecar is the primary Copilot interface in finance and operations apps. It provides a natural language chat experience that helps users work with application functionality and data. For example, the [generative help and guidance with Copilot](copilot-generative-help.md) feature is provided as a sidecar.
-- **Embedded** – These Copilot features add intelligent capabilities to the application itself. In this way, they bring AI to the center of the application experience. For example, in the [Confirmed purchase orders with changes workspace](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md), AI capabilities that are built into the page help users understand and react to changes in confirmed purchase orders.
-- **Outside** – External agents help orchestrate across different apps and tasks. For example, users can use Copilot to ask questions about finance and operations data. For more information, see [Chat with finance and operations data](../../dev-itpro/copilot/chat-with-fno-data.md).
+- **Sidecar**: Copilot sits alongside the application as a *sidecar* and provides conversational support to the user. The sidecar is the primary Copilot interface in finance and operations apps. It provides a natural language chat experience that helps users work with application functionality and data. For example, the [generative help and guidance with Copilot](copilot-generative-help.md) feature is provided as a sidecar.
+- **Embedded**: These Copilot features add intelligent capabilities to the application itself. In this way, they bring AI to the center of the application experience. For example, in the [Confirmed purchase orders with changes workspace](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md), AI capabilities that are built into the page help users understand and react to changes in confirmed purchase orders.
+- **Outside**: External agents help orchestrate across different apps and tasks. For example, users can use Copilot to ask questions about finance and operations data. For more information, go to [Chat with finance and operations data](../../dev-itpro/copilot/chat-with-fno-data.md).
 
 ## Available Copilot features in finance and operations apps
 
@@ -65,6 +66,7 @@ The following Copilot features are currently available in finance and operations
     - [Review and accept changes to confirmed purchase orders](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md)
     - [Workload insights with Copilot in the Warehouse Management mobile app](../../../supply-chain/warehousing/warehouse-management-mobile-app-insights.md)
     - [Supplier Communications Agent overview (production ready preview)](../../../supply-chain/procurement/supplier-com-agent-overview.md)
+    - [Generative insights for Demand planning (production ready preview)](../../../supply-chain/demand-planning/generative-insights.md)
 
 ## Responsible AI
 

@@ -1,12 +1,12 @@
 ---
 title: Approvals Management mobile app FAQ and known issues
 description: This article answers frequently asked questions about the Approvals Management mobile app. It also describes known issues that affect the app and explains how to work around them.
-author: kamaybac
-ms.author: akshaykmr
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 07/29/2024
+ms.date: 06/30/2025
 ms.custom: 
   - bap-template
 ---
@@ -47,7 +47,7 @@ Yes, the Approvals Management mobile app is available in all the same languages 
 
 ## Where can I go to discuss the mobile app with the community and submit suggestions to Microsoft?
 
-The [Dynamics 365 Procurement and Sourcing group on Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=69010219008&view=all) is a great place to go if you want to exchange tips, ask questions, or submit suggestions for improvement. Viva Engage group participants include Microsoft partners, customers, experts, and employees.
+The [D365 Procurement and Sourcing](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc3NDcyOTAxMTIifQ) community on Microsoft Viva Engage is a great place to go if you want to exchange tips, ask questions, or submit suggestions for improvement. Viva Engage community participants include Microsoft partners, customers, experts, and employees.
 
 ## I receive the following error: "Error when trying to retrieve data from the network." How can I diagnose the issue?
 
@@ -72,6 +72,15 @@ This error can occur because the *Approvals Management app* role doesn't have th
 The Approvals Management mobile app is a canvas app. The update process fails with an error if it detects that the canvas app has been customized. This behavior helps prevent the updater from overwriting your customizations. To fix the error, remove any customization layers by restoring the oldest version of the app. If the oldest version is more than six months old, you must manually delete the `msdyn_ApprovalsManagementAnchor` and `msdyn_ApprovalsManagement` solutions, and then reinstall the app from Dynamics 365 apps or AppSource.
 
 Consider cloning the canvas app before you remove your customizations, just in case you want to copy the customizations to the updated app.
+
+To delete the solutions, follow these steps:
+
+1. Open the [Power Apps Maker portal](https://make.powerapps.com) for your environment.
+1. On the left navigation pane, select **Solutions**.
+1. Open the **Managed** tab to view managed solutions.
+1. Find and delete each of the following solutions. The **Search** field in the top-right corner of the page can help you find the solutions quickly. The **Delete** button is available in the **Commands** menu (three dots) provided for each solution.
+    - Dynamics 365 Approvals Management Anchor Solution
+    - Dynamics 365 Approvals Management Solution
 
 > [!NOTE]
 > Microsoft doesn't support [customizing or extending](#customize) the Approvals Management mobile app.

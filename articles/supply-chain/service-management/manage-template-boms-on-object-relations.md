@@ -3,11 +3,14 @@ title: Manage template BOMs on object relations
 description: Learn how you can manage template BOMs on object relations, including a step-by-step process for attaching template BOMs to service objective. 
 author: Henrikan
 ms.author: henrikan
-ms.topic: how-to
-ms.date: 05/03/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMAAgreementTable
+ms.topic: how-to
+ms.date: 07/10/2025
+ms.update-cycle: 1095-days
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 

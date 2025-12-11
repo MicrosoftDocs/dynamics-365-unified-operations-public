@@ -3,11 +3,14 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.43 (Ma
 description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.43 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
-ms.topic: whats-new
-ms.date: 01/27/2025
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: whats-new
+ms.date: 08/05/2025
+ms.update-cycle: 1095-days
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.43 (March 2025)
@@ -79,7 +82,7 @@ The following table lists the features that became turned on by default in versi
 | Asset management | *Change types on assets and functional locations* | [Change the type of existing functional locations](../asset-management/functional-locations/change-functional-location-type.md)<br><br>[Change the asset type of existing assets](../asset-management/objects/change-asset-type.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
 | Asset management | *Material availability check on maintenance work orders* | [Material availability check for work orders](../asset-management/work-orders/material-availability-check-work-orders.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.37 (November 2023)](whats-new-scm-10-0-37.md) |
 | Inventory and warehouse management | *(India) Improvements in unit price and cost price handling in Stock transfer orders* | [Stock transfer orders for India](../../finance/localizations/india/apac-ind-stock-transfer.md) |
-| Inventory and warehouse management | *Inventory transaction details page's performance improvement.* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (April 2024)](whats-new-scm-10-0-39.md) |
+| Inventory and warehouse management | *Inventory transaction details page's performance improvement.* | [Inventory transaction details](../inventory/inventory-transactions-details.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (April 2024)](whats-new-scm-10-0-39.md) |
 | Master planning | *Actions based on requested date for Planning Optimization* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (April 2024)](whats-new-scm-10-0-39.md) |
 | Master planning | *Clean up data from failed Demand planning import jobs* | [Feature enhancements included in this release](#enhancements) |
 | Master planning | *Dynamic positive days for Planning Optimization* | [Dynamic positive days for last-minute orders](../master-planning/dynamic-positive-days.md) |
@@ -107,7 +110,7 @@ The following table lists the features that became turned on by default in versi
 | Production control | *Material availability check for operations scheduled production orders* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.34 (July 2023)](whats-new-scm-10-0-34.md)<br><br>**Note:** This feature was mandatory in versions 10.0.41 and 10.0.42, but can now be turned off. |
 | Production control | *Optimized report as finished process for serialized products* | N/A |
 | Sales and marketing | *Recalculate delivery dates upon creation of direct delivery* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.40 (June 2024)](whats-new-scm-10-0-40.md) |
-| Sales and marketing | *Unit of measure for line level charges* |  [Units of measure for line-level charges](../sales-marketing/line-charges-specific-unit.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md)<br><br>**Note:** This feature was mandatory in versions 10.0.41 and 10.0.42, but can now be turned off.|
+| Sales and marketing | *Unit of measure for line level charges* |  [Units of measure for line-level charges](../sales-marketing/line-charges-specific-unit.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md)<br><br>**Note:** This feature was mandatory in versions 10.0.41 and 10.0.42, but can now be turned off in versions 10.0.43 and 10.0.44. As of version 10.0.45, it is mandatory again. |
 | Transportation management | *Integrate Microsoft Sustainability Manager with transportation management* | [Integrate with Microsoft Sustainability Manager](../transportation/sustainability-manager-integration-setup.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
 
 ## Features becoming mandatory in this release
@@ -131,7 +134,7 @@ The following table lists the features that became mandatory in version 10.0.43.
 | Procurement and sourcing | *Synchronize updates of the Requested ship and receipt dates on intercompany sales and purchase order lines* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
 | Product information management | *Apply sales tax group for product variants in sales and procurement* | [Predefined product variants](../pim/tasks/create-predefined-product-variants.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.34 (July 2023)](whats-new-scm-10-0-34.md) |
 | Production control | *Add filter to hide completed jobs on the Kanban board* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.41 (September 2024)](whats-new-scm-10-0-41.md) |
-| Production control | *Change BOM item* | [React to last-minute changes in production](../production-control/react-to-last-minute-changes.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)] |
+| Production control | *Change BOM item* | [React to last-minute changes in production](../production-control/react-to-last-minute-changes.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
 | Production control | *Default order settings for Change production order BOM item* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (April 2024)](whats-new-scm-10-0-39.md) |
 | Production control | *Enable partial receipt of subcontracted items and fix an issue with the calculation of scrap for BOM lines of type Vendor.* | N/A |
 | Production control | *Leverage production order defaults in manufacturing execution system integration* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.37 (November 2023)](whats-new-scm-10-0-37.md) |

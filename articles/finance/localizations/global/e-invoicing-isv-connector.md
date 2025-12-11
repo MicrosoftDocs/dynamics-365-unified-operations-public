@@ -4,12 +4,13 @@ description: Learn how to configure and use the Electronic Invoicing service ISV
 author: ikondratenko
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 02/10/2025
+ms.date: 10/01/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global
 ms.search.validFrom: 2023-12-01
 ms.dyn365.ops.version: AX 10.0.37
+ms.custom: sfi-image-nochange
 ---
 
 # Electronic Invoicing service ISV last-mile connector
@@ -29,6 +30,9 @@ Before you begin the procedures in this article, the following prerequisites mus
 - Consult the list of available country/region-specific [Electronic invoicing features](e-invoicing-country-specific-availability.md). The capability to use the ISV last-mile connector for submission complements this list.
 
 ## Integration with Edicom
+
+> [!NOTE]
+> The integration of the Electronic Invoicing service with the ISV last-mile connector is described based on **Danish electronic invoicing** example. For other countries/regions please refer to the respective section in the [Country/region-specific scenarios implemented via Edicom](#Countries/regions) chapter.
 
 You can configure and use the Electronic Invoicing service ISV last-mile connector's integration with the Global e-Invoicing Platform that [Edicom](https://edicomgroup.com/electronic-invoicing) provides. For more information refer to: [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/edicom-microsoft?365).
 
@@ -138,23 +142,22 @@ The name of this variable must be used as the name of the import source for the 
 
 ![Screenshot that shows the ResponseXml import source on the Electronic document parameters page.](../media/isv_connector_import_channel.jpg)
 
-### Electronic invoicing in Chile
 
-For more information about electronic invoicing in Chile, see:
-[Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md),
-[Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md).
+### <a id="Countries/regions"></a>Country/region-specific scenarios implemented via Edicom
 
-### Electronic invoicing in Costa Rica
+Learn more about electronic invoicing for a specific courntry/region by selecting the appropriate article from the following table.
 
-For more information about electronic invoicing in Costa Rica, see [Get started with Electronic invoicing for Costa Rica](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md).
-
-### Electronic invoicing in Denmark
-
-For more information about electronic invoicing in Denmark, including the integration with the [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, see [Get started with Electronic invoicing for Denmark](../denmark/gs-e-invoicing-dk-get-started.md).
-
-### Electronic invoicing in Panama
-
-For more information about electronic invoicing in Panama, see [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md).
+| Country/region | Documentation article |
+|-----------|-------------|
+| Belgium | [Electronic invoicing for Belgium](../belgium/emea-bel-e-invoices.md) |
+| Chile | <ul><li>[Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md)</li><li>[Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md)</li></ul> |
+| Colombia | [Get started with Electronic invoicing for Colombia](../iberoamerica/ltm-costa-rica-ei-connect-configuration.md)|
+| Costa Rica | [Get started with Electronic invoicing for Costa Rica](../iberoamerica/ltm-costa-rica-ei-connect-configuration.md) |
+| Denmark | [Use electronic invoicing for Denmark](../denmark/gs-e-invoicing-dk-get-started.md)|
+| Panama | [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md) |
+| Paraguay |  [Get started with electronic invoicing for Paraguay](../iberoamerica/ltm-paraguay-electronic-invoice-configuration.md). |
+| Singapore | [Electronic invoicing for Singapore](../singapore/apac-singapore-electronic-invoices.md) |
+| Uruguay | [Get started with Electronic invoicing for Uruguay](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md) |
 
 ## Additional resources
 

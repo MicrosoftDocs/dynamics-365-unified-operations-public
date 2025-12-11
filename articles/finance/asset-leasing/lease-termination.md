@@ -3,9 +3,9 @@ title: Lease termination proposal
 description: Learn how to propose a lease for termination, including tables that outline the debit and credit availability for various types of transactions.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
-ms.date: 06/05/2025
-ms.reviewer: twheeloc
+ms.topic: how-to
+ms.date: 07/02/2025
+ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-1-28
@@ -39,14 +39,17 @@ If the lease book is classified as a deferred rent book, the entry writes off th
 | Cr. Deferred rent                     |             | X            |
 | Dr. Gain (loss) on lease modification | X           |              |
 
-If the lease book is connected to a fixed asset, the ROU asset is accounted for in Fixed assets. This accounting includes the accounting for early terminations. Asset leasing produces the following journal entry to write off the lease liability.
+When a lease book is linked to a fixed asset, the right-of-use (ROU) asset is managed within Fixed assets, including scenarios such as early terminations.
 
-| Transaction                           | Debit (Dr.) | Credit (Cr.) |
-|---------------------------------------|-------------|--------------|
-| Dr. Lease liability                   | X           |              |
-| Cr. Gain (loss) on lease modification |             | X            |
+Starting with version 10.0.45, lease termination transactions are automatically posted to the Fixed assets subledger. This functionality ensures that when a fixed asset associated with a lease is terminated, the system posts the termination transaction directly to the subledger.
 
-For information about the correct way to dispose of an ROU asset, see [Dispose of a fixed asset as scrap](../fixed-assets/dispose-of-a-fixed-asset-as-scrap.md).
+| Transaction                                    | Debit (Dr.) | Credit (Cr.) |
+|------------------------------------------------|-------------|--------------|
+| Dr. Lease liability                            | X           |              |
+| Dr. Accumulated depreciation (Fixed asset ID)  | X           |              |
+| Dr. Gain (loss) on lease modification          | X           |              |
+| Cr. Lease asset (Fixed asset ID)               |             | X            |
+| Cr. Termination offset                         |             | X            |
 
 ## Propose a lease for termination
 
@@ -151,5 +154,7 @@ The following tables show the values that are set on the **General** and **Payme
 
 The lease status should now be **Terminated**. No additional journal entries will be posted against this lease unless the termination is reversed.
 
+In Dynamics 365 Finance version 10.0.44, the lease termination proposal cancelation feature introduces a **Cancel** option for lease termination proposals. Mark them as **Canceled** and clear their termination status from the lease book and set it to **None**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

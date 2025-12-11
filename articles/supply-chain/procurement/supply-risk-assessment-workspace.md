@@ -1,8 +1,8 @@
 ---
 title: Actionable workspace for discovering and handling supplier risks
 description: Learn aboutthe Supply Risk Assessment workspace, which provides a direct view of top key insights that are related to supplier performance and related risks.
-author: cabeln
-ms.author: cabeln
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 05/22/2024
 ms.custom: bap-template

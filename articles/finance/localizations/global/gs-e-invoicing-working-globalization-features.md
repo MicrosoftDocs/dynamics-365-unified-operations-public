@@ -1,6 +1,6 @@
 ---
 title: Globalization feature components
-description: Access an overview of Globalization feature components, including an overview on acessing electronic invoicing feature components.
+description: Access an overview of Globalization feature components, including an overview on accessing electronic invoicing feature components.
 author: ilikond
 ms.author: ikondratenko
 ms.topic: article

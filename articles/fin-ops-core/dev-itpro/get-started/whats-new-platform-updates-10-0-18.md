@@ -1,10 +1,11 @@
 ---
 title: Platform updates for version 10.0.18 of finance and operations apps (May 2021)
 description: Learn about the features that are included in the platform updates for version 10.0.18 of finance and operations apps.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
-ms.date: 07/12/2024
+ms.date: 10/31/2025
+ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
   - evergreen
@@ -26,15 +27,15 @@ This article lists the features that are included in the platform updates for ve
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
+This release includes the following features. Some of the listed features are in preview, while others are generally available. See the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
--  [Authentication for finance and operations apps upgraded to OWIN OpenID Connect](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/authentication-finance-operations-apps-upgraded-owin-openid-connect)
+- [Authentication for finance and operations apps upgraded to OWIN OpenID Connect](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/authentication-finance-operations-apps-upgraded-owin-openid-connect)
 
--  [Allow configuration of the publish batch size for the Excel add-in](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/allow-configuration-publish-batch-size-excel-add-in)<br>- For more information, see [View and update entity data with Excel](../office-integration/use-excel-add-in.md).
+- [Allow configuration of the publish batch size for the Excel add-in](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/allow-configuration-publish-batch-size-excel-add-in)<br>- For more information, see [View and update entity data with Excel](../office-integration/use-excel-add-in.md).
 
 - [Extra NuGet file requires manual update to hosted Azure DevOps build pipeline](../dev-tools/pipeline-nuget-split.md)
 
--  [Align interaction patterns for combo boxes with those of look-up controls](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/align-interaction-patterns-combo-boxes-those-look-up-controls)
+- [Align interaction patterns for combo boxes with those of look-up controls](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/align-interaction-patterns-combo-boxes-those-look-up-controls)
 
 - [(Preview) Ensure required unbound controls are filled in](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/ensure-required-unbound-controls-are-filled)
 
@@ -42,15 +43,15 @@ The following features are included in this release. Some of the listed features
 
 - Updates to the global address book<br>- For more information, see [Address books FAQ](../../fin-ops/organization-administration/qa-address-books.md).
 
--  [Automatic retry settings for batch jobs](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/automatic-retry-settings-batch-jobs)
+- [Automatic retry settings for batch jobs](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/automatic-retry-settings-batch-jobs)
 
-Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them. Some of the listed features are still in preview, while others may already be generally available. 
+Enable most of these features by using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). 
 
 ## Additional resources
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=561679&dbType=3&qc=13bb1641c1be430ead8b21ae3d4e0f800d5b81c39b3a56e890db1de7ede59e46).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=561679&dbType=3&qc=13bb1641c1be430ead8b21ae3d4e0f800d5b81c39b3a56e890db1de7ede59e46).
 
 ### Dynamics 365: 2021 release wave 1 plan
 
@@ -65,6 +66,6 @@ The [Removed or deprecated platform features](../../fin-ops/get-started/removed-
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.
 
-A deprecation notice will be added in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
+A deprecation notice is added in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
 
-For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
+For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are functional updates that must be made to the compiler.

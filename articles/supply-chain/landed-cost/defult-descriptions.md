@@ -1,8 +1,8 @@
 ---
 title: Default descriptions for the general ledger
 description: Learn how default descriptions can be used to update the Description field in voucher postings to the general ledger with a table defining description types.
-author: lisascholz91
-ms.author: lisascholz
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: TransactionTexts
 ms.topic: how-to

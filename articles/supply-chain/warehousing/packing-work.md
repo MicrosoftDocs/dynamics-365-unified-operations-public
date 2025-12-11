@@ -18,16 +18,9 @@ This article describes the *Packing* work order type, which manages work for pac
 Packing work is automatically created when inventory that is related to source document work is put in locations of the *Packing location* type. The work consists of two lines, one for *Pick* and one for *Put*, and is automatically maintained as part of a container close/reopen process.
 
 > [!NOTE]
-> Packing work is usually maintained automatically by the system rather than directly by a user. Therefore, some fields (such as **User ID**) might not be populated like they are for other work order types.
+> In Supply Chain Management version 10.0.45 and later, the Warehouse Management mobile app can record the worker IDs of workers that use it to do packing work. Learn more in [Create containers](warehouse-app-packing-containers.md#create-containers), [Close containers](warehouse-app-packing-containers.md#close-containers), and [Pack inventory into containers](warehouse-app-packing-containers.md#pack-inventory-into-containers).
 
 For more information about how to set up and use the container packing process, see [Pack containers for shipment](packing-containers.md).
-
-## Turn on the feature
-
-If your system doesn't already include the features that are described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the following features in the following order. Both features are part of the **Warehouse management** module.
-
-1. *Confirm and transfer* (As of Supply Chain Management version 10.0.25, this feature is mandatory and can't be turned off.)
-1. *Packing work for packing stations* (As of Supply Chain Management version 10.0.32, this feature is turned on by default. As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.)
 
 ## Set up a location for packing work
 
@@ -39,7 +32,7 @@ Use the following procedure to set up packing locations. For each location, you 
 
     - **Warehouse** – Select or enter the warehouse where the packing location is located.
     - **Location** – Select or enter the packing location. This location must be assigned to a location profile that uses the location type that is configured as the packing location type for your company on the **Warehouse management parameters** page. Learn more in [Pack containers for shipment](packing-containers.md).
-    - **Create packing work** – Select this checkbox to create packing work each time that items are delivered to the packing location. The work will include links to related load lines, so that partial loads can be packed and shipped.
+    - **Create packing work** – Select this checkbox to create packing work each time that items are delivered to the packing location. The work includes links to related load lines, so that partial loads can be packed and shipped.
 
 > [!CAUTION]
 > Before enabling the **Create packing work** option, make sure the packing station is empty (no items are present).
@@ -87,7 +80,7 @@ Learn more in [Confirm and transfer](Confirm-and-transfer.md).
 
 Follow these steps to process a sales order and partially ship it.
 
-1. Complete the [example scenario](packing-containers.md#scenario) that is provided in [Pack containers for shipment](packing-containers.md). During that scenario, you will create a sales order for two pieces of one item. You will then pack just one of the pieces into a container and close the container. You should make a note of the shipment ID that you create, as instructed in the scenario.
+1. Complete the [example scenario](packing-containers.md#scenario) that is provided in [Pack containers for shipment](packing-containers.md). During that scenario, you'll create a sales order for two pieces of one item. You'll then pack just one of the pieces into a container and close the container. You should make a note of the shipment ID that you create, as instructed in the scenario.
 1. Go to **Warehouse management \> Work \> All work**.
 1. In the filter area, select the **Show closed work** checkbox. Then enter the shipment ID in the **Filter** field, and select to filter by **Shipment ID** value. You should now see three work headers. One is for the sales order picking work and has a status of *Closed*. Two are for the packing process: one is related to the closed container and has a status of *Closed*, and the other is related to the unpacked remaining item and has a status of *Open*.
 1. Select the **Load ID** value for any of the work headers to open **Load details** page for the load.

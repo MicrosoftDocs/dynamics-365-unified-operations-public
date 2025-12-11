@@ -2,12 +2,13 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.24 
 description: Learn about features that are either new or changed in the Dynamics 365 Finance version 10.0.24 preview release distributed in February 2022.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom:
   - bap-template
   - evergreen
-ms.date: 07/15/2024
+ms.date: 12/02/2025
+ms.update-cycle: 1095-days
 ms.reviewer: kfend 
 ms.search.region: Global
 ms.search.validFrom: 2021-12-03
@@ -33,7 +34,7 @@ The following table lists the features that are included in this release. We mig
 |----|----|----|----|
 | Tax Calculation   | Using tax jurisdiction parameters for cash discount calculation setup    | When a single legal entity has several value-added tax (VAT) registrations in different countries or regions, the requirements for calculating cash discounts and sales tax might vary by country or region. This feature calculates cash discount and sales tax with different parameters under a single legal entity. For more information, see [Tax jurisdiction parameters for cash discount calculation setup](../localizations/global/global-tax-jurisdiction-cash-discount-setup.md).    | Feature management   |
 | Tax Calculation   | Importing tax codes in Globalization feature    | This feature helps you import tax codes into Globalization features. For more information, see [Import and export tax calculation feature](https://go.microsoft.com/fwlink/?linkid=2182833).    | Enabled by default   |
-| Tax Settlement   | Separate sales tax payment report generation from sales tax settlement    | This feature can separate sales tax payment report generation from sales tax settlement. If this feature is enabled, the sales tax settlement report will not be run automatically after the sales tax settlement program is completed.    | Feature management   |
+| Tax Settlement   | Separate sales tax payment report generation from sales tax settlement    | This feature can separate sales tax payment report generation from sales tax settlement. If you enable this feature, the sales tax settlement report doesn't run automatically after the sales tax settlement program is completed.    | Feature management   |
 
 
 
@@ -84,7 +85,7 @@ The [Removed or deprecated features in Dynamics 365 Finance](../get-started/remo
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Finance](../get-started/removed-deprecated-features-finance.md) article 12 months prior to the removal.
+Before removing any feature from the product, the deprecation notice is announced in the [Removed or deprecated features in Dynamics 365 Finance](../get-started/removed-deprecated-features-finance.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 

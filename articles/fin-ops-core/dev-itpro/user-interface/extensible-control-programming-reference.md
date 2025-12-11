@@ -5,6 +5,7 @@ author: jasongre
 ms.author: jasongre
 ms.topic: how-to
 ms.date: 12/31/2024
+ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -788,7 +789,7 @@ The *$control* scope variable provides the bindings in the HTML template with ac
 
 #### $data
 
-The *$data* scope variable provides elements with access to their current binding context. Only variables defined in $data (the binding context) or scope variables, can be used inside of HTML bindings. Variables that don't exist in the current binding context and don't exist as current scope variable can't be accessed from an HTML binding. In most cases the binding context will be the control’s JavaScript instance, so *$data* and *$control* will be equivalent. However, in some cases the binding context can change. For example, for elements inside of a **foreach** binding, *$data* provides the elements with access to the current array item. In cases involving multiple nested **foreach** bindings, elements in a nested binding may need access to the array item in a parent **foreach** binding. To access items in the parent **foreach** binding, you may create a scope variable which will be accessible to elements in the nested **foreach** biding. For an example, see the foreach binding handler examples.
+The *$data* scope variable provides elements with access to their current binding context. Only variables defined in $data (the binding context) or scope variables, can be used inside of HTML bindings. Variables that don't exist in the current binding context and don't exist as current scope variable can't be accessed from an HTML binding. In most cases the binding context will be the control’s JavaScript instance, so *$data* and *$control* will be equivalent. However, in some cases the binding context can change. For example, for elements inside of a **foreach** binding, *$data* provides the elements with access to the current array item. In cases involving multiple nested **foreach** bindings, elements in a nested binding may need access to the array item in a parent **foreach** binding. To access items in the parent **foreach** binding, you may create a scope variable which will be accessible to elements in the nested **foreach** binding. For an example, see the foreach binding handler examples.
 
 #### $index
 

@@ -2,12 +2,13 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.22 (November 2021)
 description: Learn about features that are either new or changed in the Dynamics 365 Finance version 10.0.22 preview release distributed in November 2021.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom:
   - bap-template
   - evergreen
-ms.date: 07/15/2024
+ms.date: 12/02/2025
+ms.update-cycle: 1095-days
 ms.reviewer: kfend
 ms.search.region: Global
 ms.search.validFrom: 2021-09-023
@@ -27,11 +28,11 @@ This article lists features that are new or changed for Microsoft Dynamics 365 F
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements included in this release. Each of these provides an incremental improvement to an existing feature. Because they are only enhancements, they are not listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance). If you want to use or turn off any of these features, you must do that in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The following table lists the feature enhancements included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they're not listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance). To use or turn off any of these features, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 | Feature area | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
 |---|---|---|
-| General ledger  | Generate the **Sales tax payment by code** report in the sales tax currency   | Prior to 10.0.22, this feature wasn't enabled by default. To use this feature, you had to manually enable it. With the release of 10.0.22, this feature is now enabled by default. For more information about this feature, see [Print the Sales tax by payment code report](../general-ledger/print-sales-tax-payment-by-code-report.md).   |
+| General ledger  | Generate the **Sales tax payment by code** report in the sales tax currency   | Before 10.0.22, this feature wasn't enabled by default. To use this feature, you had to manually enable it. With the release of 10.0.22, this feature is now enabled by default. For more information about this feature, see [Print the Sales tax by payment code report](../general-ledger/print-sales-tax-payment-by-code-report.md).   |
 
 
 
@@ -60,7 +61,7 @@ The [Removed or deprecated features in Dynamics 365 Finance](../get-started/remo
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Finance](../get-started/removed-deprecated-features-finance.md) article 12 months prior to the removal.
+Before removing any feature from the product, the deprecation notice is announced in the [Removed or deprecated features in Dynamics 365 Finance](../get-started/removed-deprecated-features-finance.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 

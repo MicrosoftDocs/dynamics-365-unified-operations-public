@@ -3,17 +3,17 @@ title: Mobile device user accounts
 description: Learn how to set up and manage warehouse worker records and their associated mobile device user accounts, which enable workers to sign in and use the warehouse app.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: how-to
-ms.date: 03/07/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: how-to
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Mobile device user accounts
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 Every time that a worker starts to use the warehouse app, they must sign in by using a user name and password. Any number of warehouse app users can be associated with each warehouse worker in the system, and warehouses are typically associated with each of those warehouse app users. Various options are also configured for each warehouse worker record, to establish default settings and other settings that are relevant to using the warehouse app.
 
@@ -84,7 +84,7 @@ For each user record that you created in the previous section, you must create a
     - **User name** – Enter a name for the ID.
     - **Default warehouse** – Set the default warehouse where the worker usually works. You can use the toolbar to assign additional warehouses, and the worker can switch between warehouses by using the **Change warehouse** indirect activity of the mobile device menu item.
     - **Menu name** – Select the root menu that will be the starting page for the worker. The ability to set up a root menu for each worker is useful because it lets you control the menu structure that each worker can use. For example, the menu for workers that are active only in the outbound area can be tailored for tasks that are related to outbound operations for that area.
-    - **Inactive** – A selected checkbox indicates that the mobile device user account is inactive. The mobile device user account is automatically inactivated if a worker enters the wrong password five times in a row in the warehouse app. However, you can also manually select this checkbox. Clear the checkbox to make the user active again.
+    - **Inactive** – A selected checkbox indicates that the mobile device user account is inactive. The mobile device user account is automatically deactivated if a worker enters the wrong password five times in a row in the warehouse app. However, you can also manually select this checkbox. Clear the checkbox to make the user active again.
     - **Default user** – Select this checkbox for the mobile device user account that should be the default account for the worker, if the worker should have a default account. If you're using a sign-in scenario where you have a unique Microsoft Entra ID user account for each human warehouse worker, the Warehouse Management mobile app automatically signs in by using the default mobile device user account when the human worker signs in to the device by using their Microsoft Entra ID user account. (Learn more in [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).)
 
 1. On the **Work** FastTab, set the following fields:

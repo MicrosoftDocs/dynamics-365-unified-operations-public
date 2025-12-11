@@ -5,6 +5,7 @@ title: What's new and changed in Dynamics 365 Commerce 10.0.14 (November 2020)
 description: This article describes features that are either new or changed in Dynamics 365 Commerce 10.0.14. 
 author: josaw1
 ms.date: 04/12/2024
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 audience: Developer, IT Pro
 ms.reviewer: josaw

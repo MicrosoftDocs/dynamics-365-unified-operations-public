@@ -1,5 +1,5 @@
 ﻿---
-title: Flexible sampling plans (preview)
+title: Flexible sampling plans
 description: Learn how to use flexible sampling plans to inspect randomly selected units of items from a lot. The results from the inspected sample determine whether the whole lot passes or fails testing.
 author: johanhoffmann
 ms.author: johanho
@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Flexible sampling plans (preview)
+# Flexible sampling plans
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 A *flexible sampling plan* defines the criteria for inspecting randomly selected units of items from a lot. The results from the inspected sample determine whether the whole lot passes or fails testing. Typically, the number of units that are selected for inspection is proportional to the total size of the lot. The quality association that is defined for a plan identifies the activity for the inspection. For example, the activity might be a quality order to inspect a product before it's released to a customer on a sales order. Alternatively, it might be a quality order to inspect a manufactured product after production is completed.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Flexible sampling plans offer other features that you can use to modify your criteria over time, based on previous testing results.
 
@@ -34,7 +30,7 @@ Because flexible sampling plans give you the flexibility to perform lot-by-lot i
 Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up flexible sampling plans
 

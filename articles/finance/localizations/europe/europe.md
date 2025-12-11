@@ -2,9 +2,9 @@
 title: Europe overview
 description: Access a list of links to Microsoft Dynamics 365 Finance documentation resources that can help you set up legal entities with a primary address in Europe. 
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
-ms.date: 01/15/2022
+ms.date: 12/05/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: global
@@ -17,11 +17,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This article includes information and links to resources that can help you set up legal entities with a primary address in Europe. 
+This article includes information and links to resources that help you set up legal entities with a primary address in Europe.
 
 - [Advance holders overview](emea-advance-holders.md)
- - [Advance holder transactions](emea-advance-holders-transactions.md)
- - [Advance payment to employee](advance-payment-employee.md)
+  - [Advance holder transactions](emea-advance-holders-transactions.md)
+  - [Advance payment to employee](advance-payment-employee.md)
 - [Advance invoices for Eastern Europe](emea-advance-invoice.md)
 - [Bank statement and payment reconciliation](emea-bank-reconciliation.md)
 - [Corrective invoicing](emea-corrective-invoice.md)
@@ -93,6 +93,5 @@ This article includes information and links to resources that can help you set u
 
 - [Electronic reporting overview](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

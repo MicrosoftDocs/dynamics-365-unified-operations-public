@@ -5,6 +5,7 @@ title: What's new or changed in Dynamics 365 Human Resources February 22, 2021
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for February 22, 2021.
 author: marcelbf
 ms.date: 02/22/2021
+ms.update-cycle: 1095-days
 ms.topic: whats-new
 # optional metadata
 
@@ -58,7 +59,7 @@ The following bug fixes are included in this release.
 | 529994 | Modifying **Known As** field on **Worker** form doesn't trigger a Dataverse update | Fixed an issue where Dataverse doesn't update when the **Known As** field is updated on the **Worker** form. |
 | 532651 | Compensation analytics PBI report doesn't use currency conversion when calculating metrics for all company | Fixed an issue where Compensation analytics PBI report didn't correctly do currency conversions. |
 | 552226 | Life event processing closes and reopens plans multiple times for single life event  | Fixed an issue where an employee is in multiple legal entities and a life event occurs, a life event record generates for each legal entity the employee is in. When processing life events, the legal entity to process must be selected. However, the processing logic doesn't constrain itself to this legal entity. Instead, it processes for all legal entities and closes and reopens the plans in the selected legal entity. This action a life event to process multiple times in the same legal entity, resulting in multiple close/reopens of each plan affected by the life event. |
-| 518064 | Only one dependant selected on eligible plans when more than one are marked as default designees | Fixed an issue where multiple default designees aren't autoselected in eligible plans. You can also now designate a primary beneficiary for a personal contact. The primary beneficiary is listed as 100% in eligible plans when there are multiple beneficiaries. |
+| 518064 | Only one dependent selected on eligible plans when more than one are marked as default designees | Fixed an issue where multiple default designees aren't autoselected in eligible plans. You can also now designate a primary beneficiary for a personal contact. The primary beneficiary is listed as 100% in eligible plans when there are multiple beneficiaries. |
 | 552365 | Bring your own database (BYOD) export jobs are failing after upgrading to Platform update 40 | Fixed an issue where BYOD exports fail after Platform update 40 is applied to the environment. |
 | 547123 | Limit the number of tasks queried in To-do list on dashboard | The number of tasks shown in the To-do list is now limited to 15 to fix a performance issue caused by an excessive number of tasks trying to load. |
 

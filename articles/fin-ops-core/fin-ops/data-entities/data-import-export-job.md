@@ -6,7 +6,7 @@ ms.author: priysharma
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 03/11/2025
+ms.date: 07/11/2025
 ms.reviewer: johnmichalak 
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -158,6 +158,9 @@ New Design: There's one regular batch job (Job1) that creates a new runtime chil
 > [!NOTE]
 > If you've customized your code that involves DMFBatchImporter, DMFImportTaskScheduler, DMFBatchExporter, DMFExportTaskScheduler classes, you may encounter issues with the import/export in batch feature under the new design. For example, if you have created your own custom batch task and are adding task to Job1 as per previous design, then you're adding tasks to the wrong job. You should now add your custom tasks to job2 instead of job1 as per new design.
 
+> [!NOTE]
+> If you have any use case that depends on the enddateTime of the DMFBatchImporter or DMFBatchExporter tasks to track completion of DMF Execution, you may notice that these values now differ from the DMF execution end datetime. This change is due to the recent retry design updates: DMFBatchImporter/DMFBatchExporter now creates a new batch job2, marks them complete, and job2 handles adding and waiting for other required tasks to finish. As a result, if your use case depends on the enddatetime of DMFBatchImporter or DMFBatchExporter, you should now monitor the enddatetime of the last DMFImportTaskScheduler or DMFExportTaskScheduler task instead, as this provides accurate information about the completion of DMFExecution.
+
 ## Validate that the job ran as expected
 The job history is available for troubleshooting and investigation on both import and export jobs. Historical job runs are organized by time ranges.
 
@@ -191,7 +194,7 @@ To speed up the import of data, parallel processing of importing a file can be e
     - In the **Import task count** field, enter the count of import tasks. The count must not exceed the max batch threads allocated for batch processing in **System administration \>Server configuration**.
 
 > [!NOTE]
-> Adding too many parallel tasks causes the underlying infrastructure to use the resource capacity at 100% and impacta the environment performance and other operations. It's suggested you understand the resource capacity of the environment and consumption based on the parallel import tasks configured and limit the number of tasks.
+> Adding too many parallel tasks causes the underlying infrastructure to use the resource capacity at 100% and impacts the environment performance and other operations. It's suggested you understand the resource capacity of the environment and consumption based on the parallel import tasks configured and limit the number of tasks.
 
 ## Job history cleanup 
 By default, job history entries and related staging table data that are older than 90 days are automatically deleted. The job history cleanup functionality in data management can be used to configure periodic cleanup of the execution history with a lower retention period than this default. This functionality replaces the previous staging table cleanup functionality, which is now deprecated. The following tables are cleaned up by the cleanup process.

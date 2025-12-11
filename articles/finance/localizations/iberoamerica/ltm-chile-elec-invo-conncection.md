@@ -4,9 +4,11 @@ description: Learn how to get started with Electronic invoicing for Chile in Mic
 author: Fhernandez0088
 ms.author: ankviklis
 ms.topic: get-started
-ms.date: 02/10/2025
-ms.custom: bap-template
+ms.date: 06/24/2025
 ms.reviewer: johnmichalak
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Get started with Electronic invoicing for Chile
@@ -63,6 +65,7 @@ The **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile conn
 | Name | Code | Original name |
 |---|---|---|
 | Invoice | 33 | Factura Electrónica |
+| Untaxed Invoice | 34 | Factura no afecta Electrónica |
 | Packing slip (e-shipping guide) | 52 | Guía de Despacho Electrónica |
 | Debit note | 56 | Nota de Débito Electrónica |
 | Credit note | 61 | Nota de Crédito Electrónica |

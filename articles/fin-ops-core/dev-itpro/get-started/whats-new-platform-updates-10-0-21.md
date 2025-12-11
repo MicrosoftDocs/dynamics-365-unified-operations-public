@@ -1,10 +1,11 @@
 ---
 title: Platform updates for version 10.0.21 of finance and operations apps (October 2021)
 description: Learn about the features that are included in the platform updates for version 10.0.21 of finance and operations apps.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
-ms.date: 07/12/2024
+ms.date: 10/31/2025
+ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
   - evergreen
@@ -26,7 +27,7 @@ This article lists the features that are included in the platform updates for ve
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
+This release includes the following features. Some of the listed features are still in preview, while others are generally available. See the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
 Some features must be enabled by using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
@@ -40,7 +41,7 @@ Some features must be enabled by using [Feature management](../../fin-ops/get-st
 
 ## Features turned on by default in this release
 
-The following table lists the features that are turned on by default in 10.0.21. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
+The following table lists the features that are turned on by default in 10.0.21. Most features that are turned on by default can be turned off in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 | Feature name | Enable date | Feature added | Feature state | Module |
 | :--- | :--- | :--- | :--- | :--- |
@@ -70,7 +71,7 @@ The following table lists the features that are turned on by default in 10.0.21.
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=605166).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=605166).
 
 ### Dynamics 365: 2021 release wave 2 plan
 
@@ -80,12 +81,12 @@ Check out the [Dynamics 365: 2021 release wave 2 plan](/dynamics365-release-plan
 
 ### Removed and deprecated platform features
 
-The [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
+The [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article describes features that are removed or planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.
 
-A deprecation notice will be added in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
+A deprecation notice is added in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
 
-For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
+For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are functional updates that you must make to the compiler.
 

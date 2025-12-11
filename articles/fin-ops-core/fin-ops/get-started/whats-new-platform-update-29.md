@@ -1,13 +1,14 @@
 ---
 title: What's new or changed in Platform update 29 for finance and operations apps (October 2019)
 description: Learn about features in Platform update 29 for finance and operations apps, including overviews on feature management.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
-ms.date: 04/12/2024
+ms.date: 11/21/2025
+ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2019-08-30

@@ -4,7 +4,7 @@ description: Settle a postdated check issued to a vendor when the bank has clear
 author: kweekley
 ms.author: kweekley
 ms.topic: how-to
-ms.date: 11/15/2022
+ms.date: 08/25/2025
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User  
@@ -21,12 +21,8 @@ ms.dyn365.ops.version: Version 7.0.0
 Settle a postdated check issued to a vendor when the bank has cleared the check transaction after the check has been overdue and cleared by the bank. 
 
 Complete the following procedures before you start this one.
-
-1) Set up postdated checks
-
-2) Register and post a postdated check for a vendor
-
-
+ - Set up postdated checks
+ - Register and post a postdated check for a vendor
 
 The role of this procedure is Treasurer. This procedure uses the USMF demo company.
 

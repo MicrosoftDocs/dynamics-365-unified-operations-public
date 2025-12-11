@@ -66,7 +66,7 @@ A new browser tab or window is opened, where you can validate your style overrid
 After you've previewed and approved the CSS override file, you can activate it on your live site.
 
 > [!NOTE]
-> Only one CSS override file can be active on your site at a time. If you activate a new override file, the previous override file is inactivated. Therefore, make sure that all required overrides are present in a single CSS override file.
+> Only one CSS override file can be active on your site at a time. If you activate a new override file, the previous override file is deactivated. Therefore, make sure that all required overrides are present in a single CSS override file.
 
 To activate a CSS override file, follow these steps.
 

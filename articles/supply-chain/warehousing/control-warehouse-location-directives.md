@@ -4,7 +4,7 @@ description: Learn how to use work templates and location directives to determin
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 04/19/2024
+ms.date: 08/06/2025
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -23,18 +23,18 @@ The instructions that warehouse workers receive on a mobile device are determine
 
 The **Work templates** page lets you define the work operations that must be performed in the warehouse. Typically, warehouse work operations consist of a pair of actions: a warehouse worker picks up on-hand inventory in one location and then puts the picked inventory down in another location.
 
-Work templates consists of a header and associated lines. Each work template is for a specific *work order type*. Many work order types are associated with source documents, such as purchase or sales orders. However, other work order types represent separate warehouse processes, such as cycle counting. The *work pool ID* lets you organize work into groups.
+Work templates consist of a header and associated lines. Each work template is for a specific *work order type*. Many work order types are associated with source documents, such as purchase or sales orders. However, other work order types represent separate warehouse processes, such as cycle counting. The *work pool ID* lets you organize work into groups.
 
-Use the settings in the work header definition to determine when a new piece of work should be created. For example, you can set a maximum number of pick lines and a maximum expected pick time. Then, if the work for a sales order picking process exceeds either of those values, that work is split into two pieces of work.
+Use the settings in the work header definition to determine when a new work record should be created. For example, you can set a maximum number of pick lines and a maximum expected pick time. Then, if the work for a sales order picking process exceeds either of those values, that work is split into two pieces of work. Use the  **General** tab of the work template to set limits associated with each work record and set up work-split criteria such as **Estimated pick time**, **Volume**, **Weight**, **Quantity**, and **Unit**.
+
+> [!NOTE]
+> Items associated with multiple units of measure (such as pieces, boxes, and pallets) should be set up with a unit sequence group and relevant conversion ratios. These settings allow you, for example, to create an order using one unit (such as boxes) and then use a different unit (such as pieces) to split the work associated with the order. Learn more in [Unit of measure and stocking policies](unit-measure-stocking-policies.md).
 
 Use the **Work header breaks** button to define when the system should create new work headers. For example, to create a work header for each *order number*, select **Edit query** on the Action Pane, and then add the **Order number** field to the **Sorting** tab of the query editor. Fields that are added to the **Sorting** tab are available for selection as *grouping fields*. To set your grouping fields, select **Work header breaks** on the Action Pane, and then, for each field that you want to use as a grouping field, select the check box in the **Group by this field** column.
 
 The work lines represent the physical tasks that are required to process the work. For example, for an outbound warehouse process, there might be one line for picking up the items in the warehouse and another line for putting those items into a staging area. There can then be an additional line for picking the items from staging and another line for putting the items into a truck as part of the loading process. You can set a *directive code* on work template lines. A directive code is linked to a location directive, and therefore helps ensure that the warehouse work is processed in the correct location in the warehouse.
 
 You can set up a query to control when a particular work template is used. For example, you can set a limitation so that a particular template can be used for work only in a specific warehouse. Alternatively, you might have several templates that create work for outbound sales order processing, depending on the sales origin. The system uses the **Sequence number** field to determine the order that the available work templates are assessed in. Therefore, if you have a very specific query for a particular work template, you should give it a low sequence number. That query will then be evaluated before the other, more general queries.
-
-> [!NOTE]
-> To prevent the system from automatically overwriting work template *sequence numbers* after a template has been deleted, turn on the *Preserve work template sequence numbers on delete* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 To stop or pause a work process, you can use the **Stop work** setting on the work line. In that case, the worker who is performing the work won't be asked to perform the next work line step. To move on to the next step, that worker or another worker must select the work again. You can also separate the tasks within a piece of work by using a different *work class ID* on the work template lines.
 

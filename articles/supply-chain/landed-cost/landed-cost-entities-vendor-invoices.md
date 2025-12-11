@@ -1,12 +1,14 @@
 ---
 title: Vendor invoice entities
 description: Learn about vendor invoice entities, which enable cost type codes to be configured for internal costs or externally derived costs.
-author: lisascholz91
-ms.author: lisascholz
-ms.topic: article
-ms.date: 05/27/2022
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: reference
+ms.date: 06/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Vendor invoice entities
@@ -91,7 +93,7 @@ The vendor transfer order line cost allocations data entity enables a vendor inv
 | Cost transaction line number | ITMLedgerJournalCostLines.CostTransRefRecId | Numeric(32, 16) | **Yes** | No |
 | Journal line number | ITMLedgerJournalCostLines.RefRecId | Numeric(32, 16) | **Yes** | No |
 | Journal number | ITMLedgerJournalCostLines.RefRecId | Nvarchar(20) | **Yes** | No |
-| Transfer order | ITMLedgerJournalCostLines.CostTransRefRecId | Nvarchar(20) | **Yes** | No |
+| Transfer order | ITMLedgerJournalCostLines.CostTransRefRecId | Nvarchar(20) | **Yes** | No |    
 | Transfer order line number | ITMLedgerJournalCostLines.CostTransRefRecId | Numeric(32, 16) | **Yes** | No |
 
 ### Reference table
@@ -118,7 +120,7 @@ The following table lists the fields that the **Landed cost** module adds to the
 The main/offset account for an invoice journal line that is associated with a Landed cost voyage is determined by the cost type code. When the cost type code is included on the invoice journal line, the clearing account for the code will be used as either the main account or the offset account, depending on the scenario:
 
 - **Single-line journal** – If a main account (in other words, the vendor account) is defined, and a cost type code is provided, the clearing account value for that cost type code will be entered in the offset account.
-- **Multiple-line journal** – If a main account isn't defined, but a cost type code is provided, the clearing account value for the that cost type code will be entered in the main account. The journal line that is crediting the vendor won't reference a cost type code.
+- **Multiple-line journal** – If a main account isn't defined, but a cost type code is provided, then the clearing account value for that cost type code will be entered in the main account. The journal line that is crediting the vendor won't reference a cost type code.
 
 ## Sequencing
 
