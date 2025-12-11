@@ -21,7 +21,7 @@ This article provides an overview of the official NF203 certification for comput
 
 Microsoft Dynamics 365 Finance version 10.0 passed an audit according to the NF203 certification requirements in France and was granted a certificate of compliance.
 
-| Certification No **203/346-4** issued by INFOCERT in France <br> Computerized Accounting <br> Category F: <br>- Accounting; <br>- Sales Management;<br>- Purchasing Management;<br>- Fixed Assets;<br>- Inventories and Stocks | <img src="../media/fr-nf203.png" alt="INFOCERT" width="150"/> |
+| Certification No **203/346-4** issued by INFOCERT in France <br> Computerized Accounting <br> Category F: <br>- Accounting; <br>- Sales Management;<br>- Purchasing Management;<br>- Fixed Assets;<br>- Inventories and Stocks | <img src="../media/france-nf203.png" alt="INFOCERT" width="150"/> |
 |:------------|-----------|
 
 You can find an up-to-date certificate on the [portal of the certification body](https://certificates.infocert.org/).
@@ -177,7 +177,7 @@ The transaction records contain date, amount, text, creation date, and created-b
 *Documentation links*
 
 - [View journal entries and transactions, Audit trail](../../general-ledger/view-journal-entries-transactions.md#audit-trail)
-- [Data retention, deletion, and destruction in Microsoft 365](../../../../compliance/assurance/assurance-data-retention-deletion-and-destruction-overview.md)
+- [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview)
 
 For information about database logging in Finance, see [Configure database logging](../../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
 

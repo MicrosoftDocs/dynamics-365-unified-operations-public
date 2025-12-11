@@ -19,7 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article includes information and links to resources that can help you set up legal entities with a primary address in France.
 
-- [NF203 Computerized Accounting Certification in France](emea-fra-nf203.md)
+- [NF203 Computerized Accounting Certification in France](emea-france-nf203.md)
 - Public sector
   - [Public sector accounting](emea-fra-public-sector-accounting.md)
   - [Commitments](emea-fra-commitments-public-sector.md)
