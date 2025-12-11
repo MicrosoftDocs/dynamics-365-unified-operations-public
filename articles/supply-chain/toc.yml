@@ -2597,12 +2597,10 @@
           href: pim/share-products-across-companies.md
         - name: Product data entities
           href: pim/data-entities.md
-        - name: Product lifecycle state
-          items:
-          - name: Product lifecycle states
-            href: pim/product-lifecycle.md
-          - name: Find obsolete released products or variants
-            href: pim/tasks/obsolete-product-variants.md
+        - name: Product lifecycle states
+          href: pim/product-lifecycle.md
+        - name: Find obsolete released products or variants
+          href: pim/tasks/obsolete-product-variants.md
         - name: Create a bar code for a product
           href: pim/tasks/create-bar-code-product.md
         - name: Enter the GTIN code for a product
