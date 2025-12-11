@@ -2790,7 +2790,7 @@
                     - name: France overview
                       href: localizations/france/france.md
                     - name: NF203 Computerized Accounting Certification in France
-                      href: localizations/france/emea-fra-nf203.md
+                      href: localizations/france/emea-france-nf203.md
                     - name: Public sector
                       items:
                         - name: Public sector accounting
