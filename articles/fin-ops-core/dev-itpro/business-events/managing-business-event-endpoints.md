@@ -102,10 +102,11 @@ For more information about how to subscribe to finance and operations apps busin
 
 ### Application Secret Expiry Notification and Managment
 
-The Business Event endpoint confiquration requires developers to create an application ID secret in Azure Microsoft Entra ID. Often seen the developers once after confiquration , don't go and update the secret in endpoint which results in failure in sending the business events using the affected endpoint when the secret expires. This requires developers to go and update the endpoint using the new secret, this contributes to event loss. We have added a new column in the Business Event Endpoint confiquration form called SecretExpiryDate. Developers now can fill in the secret expiry date mentioned in Azure while confiquring the endpoint. 
+The Business Event endpoint configuration requires developers to create an application secret in Microsoft Entra ID. However, after completing the initial setup, developers often forget to update the endpoint when the secret expires. As a result, business events sent through that endpoint fail until the new secret is manually updated, which can lead to event loss.
+To address this issue, we added a new field, SecretExpiryDate, to the Business Event Endpoint configuration page. Developers can now enter the secret’s expiry date from Microsoft Entra ID when configuring the endpoint.
 <img width="1347" height="575" alt="image" src="https://github.com/user-attachments/assets/bc8b078c-6401-4569-97b6-2032f1b63c86" />
 
-Using this new data available , FinOps will now proactively alert the developer handling the business events confiquration for any expiry secret as a notification banner.
+Using this new information, Finance and Operations apps now proactively notify developers about upcoming secret expirations through a banner alert in the Business Event configuration page.
 <img width="1829" height="808" alt="image" src="https://github.com/user-attachments/assets/ec9d796b-4240-4794-b01c-0c68f9effbad" />
 
 #### Banner classification
