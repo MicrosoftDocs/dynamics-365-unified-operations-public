@@ -68,7 +68,7 @@ The following procedure explains how to set up agent tasks to find purchase orde
     > [!IMPORTANT]
     > If your system is set up to send emails automatically, the email footer is mandatory.
 
-1. Select the tone of the emails (*Casual* or *Formal*, or *Urgent* or *Nonurgent*).
+1. Select the tone of the emails (*Casual* or *Formal*, or *Urgent* or *Non-urgent*).
 
 ### Examples
 
@@ -104,9 +104,9 @@ To choose the recipient of the follow-up emails for a vendor, follow these steps
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Find and open the vendor you want from the list.
 1. On the **Contact information** FastTab, define a list of contacts for the vendor. The agent chooses which contact to use, as follows:
-        - If it exists, the agent gives first priority to a contact information line with the **Purpose** of type *Purchase order communications*. Learn more in [Create vendor contact information of type *Purchase order communications*](#optional-create-vendor-contact-information-of-type-purchase-order-communications). This option has priority, no matter whether the agent task is set up to group emails per vendor or not.
-        - If the agent task is configured to send emails grouped per vendor, the agent uses the contact information of that vendor, which has the field **Primary** set. If there's no line set as **Primary**, then one of the lines of **Type** = *Email address* is chosen.
-        - If the agent task generates emails per purchase order, the agent prioritizes the **Email** field of the purchase order, if set. Otherwise, it falls back on the vendor's contact information.
+    - If it exists, the agent gives first priority to a contact information line with the **Purpose** of type *Purchase order communications*. Learn more in [Create vendor contact information of type *Purchase order communications*](#optional-create-vendor-contact-information-of-type-purchase-order-communications). This option has priority, no matter whether the agent task is set up to group emails per vendor or not.
+    - If the agent task is configured to send emails grouped per vendor, the agent uses the contact information of that vendor, which has the field **Primary** set. If there's no line set as **Primary**, then one of the lines of **Type** = *Email address* is chosen.
+    - If the agent task generates emails per purchase order, the agent prioritizes the **Email** field of the purchase order, if set. Otherwise, it falls back on the vendor's contact information.
 
 ## (Optional) Create vendor contact information of type *Purchase order communications*
 
