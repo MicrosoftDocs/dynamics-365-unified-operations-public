@@ -114,7 +114,7 @@ To manually update the product lifecycle state of existing released products or 
 
 Master planning and bill of materials (BOM) level calculations exclude items assigned a product lifecycle state when the **Is active for planning** option is set to *No*.
 
-> [!NOTE]
+> [!TIP]
 > For performance reasons, associate all obsolete released products and variants with a product lifecycle state that deactivates master planning, especially when working with non-reusable product configuration variants.  
 
 ## Default migration, import, and export
@@ -123,7 +123,7 @@ Data entities support product lifecycle states. You can set the lifecycle state 
 
 ## Find obsolete products and products variants
 
-Run a simulation analysis to find obsolete released products or product variants. Then, update their product lifecycle status. Learn more in [Find obsolete released products or variants](tasks/obsolete-product-variants.md).
+The *Change lifecycle state for obsolete products* periodic task makes it easy to find obsolete products or variants and update their product lifecycle status. Learn more in [Find obsolete released products or variants](tasks/obsolete-product-variants.md).
 
 ## Related information
 
