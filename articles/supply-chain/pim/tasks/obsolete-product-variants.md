@@ -31,7 +31,7 @@ To find obsolete product variants and assign a product lifecycle state to them, 
 1. In the **Exclude products created within this number of days** field, enter a number.
 1. In the **Exclude products used in transactions (in number of days)** field, enter a number.
 1. If you want to limit the scope of the simulation, expand the **Records to include** FastTab and select **Filter** to open the standard query dialog, where you can define selection criteria. The fields work just as they do for other types of queries in Supply Chain Management. The next section lists a few ways to identify obsolete products and variants that you can use as filter criteria.
-1. On the **Run in the background** FastTab, specify how, when, and how often the job runs. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
+1. On the **Run in the background** FastTab, specify how, when, and how often the job runs. The fields work just as they do for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
 
     > [!TIP]
     > Run the simulation in batch if you expect to search a large number of products. Also, don't run the simulation during the most active working time of the company.  
@@ -64,6 +64,6 @@ Here are some signs that a released product or product variant is obsolete:
 ## Related information
 
 - [Product lifecycle states](../product-lifecycle.md)
-- [Product lifecycle states and transactions](../engineering-change-management/product-lifecycle-state-transactions.md)
+- [Product lifecycle states and transactions](../../engineering-change-management/product-lifecycle-state-transactions.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
