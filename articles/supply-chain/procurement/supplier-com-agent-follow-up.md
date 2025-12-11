@@ -14,7 +14,7 @@ ms.custom:
   - ai-seo-date:04/24/2025
 ---
 
-# Follow up on purchase orders using the Supplier Communications Agent (production ready preview)
+# Follow up on purchase orders by using the Supplier Communications Agent (production ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -24,7 +24,7 @@ The Supplier Communications Agent helps you identify and follow up on purchase o
 
 The Supplier Communications Agent helps you perform the following actions:
 
-- Create agent tasks to find purchase orders that require follow-up. Tasks are unique for each user. Therefore, you can create and adjust them to meet your specific business needs. Two default tasks are provided. One is used to follow up on unconfirmed purchase orders, and the other is used to follow up on late deliveries. You can modify or delete the default tasks as required to meet your business needs.
+- Create agent tasks to find purchase orders that require follow-up. Each user has unique tasks, so you can create and adjust them to meet your specific business needs. Two default tasks are provided. One is used to follow up on unconfirmed purchase orders, and the other is used to follow up on late deliveries. You can modify or delete the default tasks as required to meet your business needs.
 - Configure how emails are generated for each task.
 - Review the draft emails that the agent generates. After you review each message, you can modify it, and send it. To generate the emails, the agent uses data from the purchase order lines and related tables.
 
@@ -36,9 +36,9 @@ By default, the system provides two premade tasks that you can use to find purch
     - The **Confirmed receipt date (line)** field is blank.
     - The **Requested receipt date (line)** field is set to a date that is before the current date.
     - The **Orderer (header)** field is set to your user account (the current user).
-    - The **Document status (header)** field is not *None*.
+    - The **Document status (header)** field isn't *None*.
 
-- *Delayed purchase orders* – This task finds purchase orders that are assigned to you and that are delayed (that is, the confirmed delivery date was one or more days ago). The task uses the following specific criteria:
+- *Delayed purchase orders* – This task finds purchase orders that are assigned to you and that are delayed (that is, the confirmed delivery date is one or more days ago). The task uses the following specific criteria:
 
     - The **Deliver remainder (line)** field is set to a value other than *0* (zero).
     - The **Confirmed receipt date** field is set to a date that is before the current date.
@@ -55,20 +55,20 @@ The following procedure explains how to set up agent tasks to find purchase orde
 
 1. Follow one of these steps:
 
-    - To edit an existing task, select it in the list, then select **Edit**.
-    - To delete an existing task, select it in the list, then select **Delete**.
+    - To edit an existing task, select it in the list, and then select **Edit**.
+    - To delete an existing task, select it in the list, and then select **Delete**.
     - To create a new task, select **Configure agents**. Then, under **Library**, select **Send follow-up emails to vendors with Supplier Communications Agent**.
 
 1. Edit the name of the task as required. (The default name is *Send follow-up emails to vendors with Supplier Communications Agent*.)
 1. Select whether you want the task to find unconfirmed purchase orders or delayed purchase orders.
 1. Modify the criteria to define which purchase orders require follow-up. For example, you might want the task to find: unconfirmed orders for the next two months, or orders created more than three days ago, or orders sent but not confirmed.
-1. Select the fields that should be included in the email, such as the delivery dates or the address.
+1. Select the fields that you want to include in the email, such as the delivery dates or the address.
 1. To add a signature, select **Signature**, and enter the desired text. You can also add an email footer that has text such as "This email was written with the help of AI."
 
     > [!IMPORTANT]
     > If your system is set up to send emails automatically, the email footer is mandatory.
 
-1. Select the tone of the emails (*Casual* or *Formal*, or *Urgent* or *Non-urgent*).
+1. Select the tone of the emails (*Casual* or *Formal*, or *Urgent* or *Nonurgent*).
 
 ### Examples
 
@@ -93,20 +93,35 @@ Here are some examples of other tasks that you might set up:
 
 When a user reviews and sends an email that the agent drafts, the email comes from that user's email address.
 
-When the system automatically sends an email without user review, the email comes from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address. The generated content of the emails conclude with a "Best regards" signature that includes the name configured for the agent identity user. <!-- KFM: In the section "Configure automatic sending of follow-up emails", it seems like we now provide a procedure for defining this. Should we link to that instead of saying it's the agent identity user? -->
+When the system automatically sends an email without user review, the email comes from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address. The generated content of the emails concludes with a "Best regards" signature that includes the name configured for the agent identity user. <!-- KFM: In the section "Configure automatic sending of follow-up emails", it seems like we now provide a procedure for defining this. Should we link to that instead of saying it's the agent identity user? -->
 
 Learn more about how to view and edit the email address of the agent identity user (or any other user) in [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md). <!-- KFM: Maybe we don't need this anymore either? -->
 
 ## Configure the receivers of the follow-up emails
 
-The agent uses emails of type *Purchase order communications* to send follow-up messages. You must choose which contact should receive these emails for each vendor. The selected contact's name and email address appear in the header and in the body of the follow-up emails that are sent to the vendor.
-
-To choose the contact who receives follow-up emails for a vendor, follow these steps:
+To choose the recipient of the follow-up emails for a vendor, follow these steps:
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
-1. Find and open the desired vendor from the list.
+1. Find and open the vendor you want from the list.
+1. On the **Contact information** FastTab, define a list of contacts for the vendor. The agent chooses which contact to use, as follows:
+        - If it exists, the agent gives first priority to a contact information line with the **Purpose** of type *Purchase order communications*. Learn more in [Create vendor contact information of type *Purchase order communications*](#optional-create-vendor-contact-information-of-type-purchase-order-communications). This option has priority, no matter whether the agent task is set up to group emails per vendor or not.
+        - If the agent task is configured to send emails grouped per vendor, the agent uses the contact information of that vendor, which has the field **Primary** set. If there's no line set as **Primary**, then one of the lines of **Type** = *Email address* is chosen.
+        - If the agent task generates emails per purchase order, the agent prioritizes the **Email** field of the purchase order, if set. Otherwise, it falls back on the vendor's contact information.
+
+## (Optional) Create vendor contact information of type *Purchase order communications*
+
+First, create an address and contact information purpose type:
+
+1. Go to **Organization administration** \> **Global address book** \> **Address and contact information purpose**.
+1. Select the three dots icon to insert a new column **Type**.
+1. Create a new line in the list, set **Type** to *Purchase Order Communications*, and set a checkmark in the field **Contact information**. Give it a name, such as *Purchase Order Agent Communications*, and save it.
+
+Second, use the new type on the vendor's contact information:
+
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+1. Find and open the vendor you want from the list.
 1. On the **Contact information** FastTab, select the contact who should receive the follow-up emails and select **Edit contact information** from the FastTab toolbar.
-1. In the **Edit contact information** dialog, set **Purpose** to *Purchase order communications*.
+1. In the **Edit contact information** dialog, set **Purpose** to *Purchase Order Agent Communications*.
 1. Select **OK**.
 
 ## Review and send drafted emails
@@ -141,11 +156,11 @@ Learn more in [Configure and send email](../../fin-ops-core/dev-itpro/organizati
 The Supplier Communications Agent includes a batch job that runs the agent automatically. To change the default configuration of the job, follow these steps:
 
 1. Go to **System Administration** \> **Inquiries** \> **Batch jobs**.
-1. Find and select the job that has a **Job description** that matches the name of the agent configuration, which is described in [Configure task criteria and email settings](#configure-task-criteria-and-email-settings). For example, if the agent name is *Send follow-up emails to vendors with Supplier Communications Agent*, you can locate its batch job quickly by using this text in the **Job description** column header filter. The agent name might be different on your system, so you should check the name before proceeding.
+1. Find and select the job that has a **Job description** that matches the name of the agent configuration, which is described in [Configure task criteria and email settings](#configure-task-criteria-and-email-settings). For example, if the agent name is *Send follow-up emails to vendors with Supplier Communications Agent*, you can locate its batch job quickly by using this text in the **Job description** column header filter. The agent name might be different on your system, so check the name before proceeding.
 
     :::image type="content" source="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png" alt-text="Screenshot showing the column filter for finding a batch job by its description." lightbox="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png":::
 
-1. With the job selected, choose **Recurrence** from the Action Pane.
+1. Select the job, and then select **Recurrence** from the Action Pane.
 1. In the **Define recurrence** dialog, set up the run schedule as desired, then select **OK**.
 
     :::image type="content" source="media/supplier-com-agent-follow-up/supplier-agent-batch-job-schedule.png" alt-text="Screenshot showing the settings provided for scheduling a batch job." lightbox="media/supplier-com-agent-follow-up/supplier-agent-batch-job-schedule.png":::
