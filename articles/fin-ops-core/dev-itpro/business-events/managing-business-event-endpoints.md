@@ -2,7 +2,7 @@
 title: Manage business event endpoints
 description: Learn about how to manage endpoints for finance and operations apps business events, including a table that provides tutorials for various endpoint types.
 author: jaredha
-ms.author: kamanick
+ms.author: riverma
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -104,6 +104,7 @@ For more information about how to subscribe to finance and operations apps busin
 
 The Business Event endpoint configuration requires developers to create an application secret in Microsoft Entra ID. However, after completing the initial setup, developers often forget to update the endpoint when the secret expires. As a result, business events sent through that endpoint fail until the new secret is manually updated, which can lead to event loss.
 To address this issue, we added a new field, SecretExpiryDate, to the Business Event Endpoint configuration page. Developers can now enter the secret’s expiry date from Microsoft Entra ID when configuring the endpoint.
+
 <img width="1347" height="575" alt="image" src="https://github.com/user-attachments/assets/bc8b078c-6401-4569-97b6-2032f1b63c86" />
 
 Using this new information, Finance and Operations apps now proactively notify developers about upcoming secret expirations through a banner alert in the Business Event configuration page.
