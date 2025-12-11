@@ -1,8 +1,8 @@
 ---
 title: Finance insights home page
 description: Finance insights provides configurable and extensible models to help you accurately and intelligently predict your company's cash flow.
-author: ShivamPandeyMSFT
-ms.author: shpandey
+author: wei-msft
+ms.author: zhuw
 ms.topic: article
 ms.date: 12/10/2025
 ms.update-cycle: 1095-days
