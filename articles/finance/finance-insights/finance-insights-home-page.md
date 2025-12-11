@@ -21,14 +21,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 [!include [banner](../includes/banner.md)]
 
-> [!IMPORTANT]
-> **Finance Insights Migration Notice**
->
-> Finance Insights is transitioning from Export to Data Lake to Business Performance Analytics (BPA) as its data backend. Export to Data Lake will be discontinued in Q1 2026.
->
-> - **If you want to use Finance Insights:** Please wait until February 2026 when Finance Insights 1.2.x with BPA will be generally available for new installations. For more information, see [Finance Insights migration guide](finance-insights-migration.md).
-> - **If you're an existing Finance Insights customer:** Microsoft will manage your migration. You'll receive advance notice before your scheduled migration. See [Finance Insights migration FAQ](finance-insights-migration-faq.md) for details.
-> - **If you need immediate assistance:** Contact Microsoft Support at https://support.microsoft.com/en-us
+[!include [finance-insights-preview-banner](includes/finance-insights-preview-banner.md)]
 
 Finance insights provides configurable and extensible solutions to help you intelligently predict your company's cash flow, predict when you may receive payment for outstanding receivables, and generate a budget proposal that can help speed up your budgeting process. These features use intelligent machine learning templates to build models using data you provide (including data from a third party such as consumer report information from a bureau). These intelligent capabilities inform decision making and helps you take action to respond effectively to current and anticipated business challenges. You are responsible for any data used with, or output from, Finance insights.
 
