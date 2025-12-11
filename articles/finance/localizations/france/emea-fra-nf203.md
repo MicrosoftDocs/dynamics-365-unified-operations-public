@@ -19,7 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides an overview of the official NF203 certification for computerized accounting in France.  
 
-Microsoft Dynamics 365 for Finance and Operations, version 10.0 passed an audit according to the NF203 certification requirements in France and was granted a certificate of compliance.
+Microsoft Dynamics 365 Finance version 10.0 passed an audit according to the NF203 certification requirements in France and was granted a certificate of compliance.
 
 | Certification No **203/346-4** issued by INFOCERT in France <br> Computerized Accounting <br> Category F: <br>- Accounting; <br>- Sales Management;<br>- Purchasing Management;<br>- Fixed Assets;<br>- Inventories and Stocks | <img src="../media/fr-nf203.png" alt="INFOCERT" width="150"/> |
 |:------------|-----------|
@@ -30,7 +30,7 @@ INFOCERT is a French specialist in software certification. It acts as the techni
 
 ## NF203 compliance documentation
 
-The following table shows the Dynamics 365 Finance documentation that relates to the NF203 certification.
+The following table shows the Finance documentation that relates to the NF203 certification.
 
 | Document | Description | Links |
 |----------|-------------|-------|
@@ -46,7 +46,7 @@ The following table shows the Dynamics 365 Finance documentation that relates to
 
 According to the Software Requirements in France, limit the number of opening exercises to two.
 
-To satisfy this requirement, set up Dynamics 365 Finance as follows. Set the value of the **Limited number of open fiscal years** field in **General ledger parameters** to no more than **2**. 
+To satisfy this requirement, set up Finance as follows. Set the value of the **Limited number of open fiscal years** field in **General ledger parameters** to no more than **2**. 
 This field limits the total number of fiscal years that can be open at the same time. Article 921-4 of the General Accounting Plan (Principes généraux) states that a closing procedure must be executed no later than the end of the next period.
 
 ### Number sequences
@@ -87,19 +87,19 @@ For more information about configuring currencies for the ledger in Finance, see
 
 ### Fichier des écritures comptables (FEC)
 
-For specific settings in Dynamics 365 Finance recommended for [FEC file](emea-fra-fec-audit-file.md) generation in compliance with regulatory requirements in France, see [Prerequisites to generate an FEC audit file in France](emea-fra-fec-audit-file-pre-requisites.md).
+For specific settings in Finance recommended for [FEC file](emea-fra-fec-audit-file.md) generation in compliance with regulatory requirements in France, see [Prerequisites to generate an FEC audit file in France](emea-fra-fec-audit-file-pre-requisites.md).
 
 ## Registration of audit events
 
-This section describes how audit mechanisms in Dynamics 365 Finance ensure traceability, integrity, and compliance for all NF203-certified computerized accounting events, including logging, monitoring, and verification of key actions.
+This section describes how audit mechanisms in Finance ensure traceability, integrity, and compliance for all NF203-certified computerized accounting events, including logging, monitoring, and verification of key actions.
 
-For information about database logging in Dynamics 365 Finance, see [Configure database logging](../../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
+For information about database logging in Finance, see [Configure database logging](../../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
 
 ### Code 10 or 15 - Change in the continuous sequence management mode
 
 #### Continuous numbering management
 
-Dynamics 365 Finance uses **Number Sequences** to manage continuous numbering for vouchers and other documents. These sequences ensure that document numbers are assigned without gaps, meeting French legal requirements.
+Finance uses **Number Sequences** to manage continuous numbering for vouchers and other documents. These sequences ensure that document numbers are assigned without gaps, meeting French legal requirements.
 
 *Documentation links*
 
@@ -112,7 +112,7 @@ The system logs these changes in system administration history, ensuring traceab
 
 #### Immutability of existing documents
 
-Documents you already created keep their original numbers. Dynamics 365 Finance doesn't allow retroactive renumbering, preserving integrity and compliance.
+Documents you already created keep their original numbers. Finance doesn't allow retroactive renumbering, preserving integrity and compliance.
 
 #### Audit trail
 
@@ -120,7 +120,7 @@ The system logs administrative changes to number sequences. You can review these
 
 ### Code 30 - Fiscal year archiving
 
-In Dynamics 365 Finance, fiscal year archiving is satisfied through the combination of: [Electronic Reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) (ER) for generating the legally required [VAT declaration](emea-fra-vat-declaration-preview-france.md), fiscal documents, and [FEC file](emea-fra-fec-audit-file.md) at year-end and [Archive ER destination type](../../..//fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md) setup to store these electronic reports and related fiscal documents in a secure location (for example, Azure Blob Storage or SharePoint) with access controlled by system administrators.
+In Finance, fiscal year archiving is satisfied through the combination of: [Electronic Reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) (ER) for generating the legally required [VAT declaration](emea-fra-vat-declaration-preview-france.md), fiscal documents, and [FEC file](emea-fra-fec-audit-file.md) at year-end and [Archive ER destination type](../../..//fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md) setup to store these electronic reports and related fiscal documents in a secure location (for example, Azure Blob Storage or SharePoint) with access controlled by system administrators.
 
 #### Immutability and audit trail
 
@@ -130,7 +130,7 @@ Archived files can't be modified through the ERP interface. Posting logic ensure
 
 #### Period closing functionality
 
-Dynamics 365 Finance provides functionality to close fiscal periods (daily, monthly, or yearly) through the [Fiscal calendars, fiscal years, and periods](../../budgeting/fiscal-calendars-fiscal-years-periods.md) and [Financial period close workspace](../../general-ledger/financial-period-close-workspace.md). 
+Finance provides functionality to close fiscal periods (daily, monthly, or yearly) through the [Fiscal calendars, fiscal years, and periods](../../budgeting/fiscal-calendars-fiscal-years-periods.md) and [Financial period close workspace](../../general-ledger/financial-period-close-workspace.md). 
 Once a period is closed, no new postings or modifications can occur in that period, ensuring data integrity and compliance.
 
 *Documentation links*
@@ -145,7 +145,7 @@ All postings and period status changes are logged. Users can't modify transactio
 
 #### Year-end closing process
 
-Dynamics 365 Finance provides a dedicated [Year-end close](../../general-ledger/year-end-close.md) process through the **General Ledger** > **Year-end close** functionality.
+Finance provides a dedicated [Year-end close](../../general-ledger/year-end-close.md) process through the **General Ledger** > **Year-end close** functionality.
 This process transfers balances to the next fiscal year and marks the previous year as closed.
 
 *Documentation links*
@@ -154,7 +154,7 @@ This process transfers balances to the next fiscal year and marks the previous y
 
 #### Immutability of closed periods
 
-In Dynamics 365 Finance, you can't modify transactions in closed periods. To correct errors, use reversing and adjusting entries in an open period. This approach preserves the integrity of historical data. 
+In Finance, you can't modify transactions in closed periods. To correct errors, use reversing and adjusting entries in an open period. This approach preserves the integrity of historical data. 
 When you set a fiscal year status to **Permanently closed**, you can't reopen the closed year or post transactions in this period.
 
 *Documentation links*
@@ -167,23 +167,23 @@ The system logs all postings and period status changes. The audit trail includes
 
 ### Code 90 - Detection of an integrity flaw in secure data or in a tax archive
 
-In Dynamics 365 Finance, the data security and immutability requirements are satisfied with the [FEC file](emea-fra-fec-audit-file.md) generated by using [Electronic Reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) (ER) and [Audit Trail](../../general-ledger/view-journal-entries-transactions.md#audit-trail) features.
+In Finance, the data security and immutability requirements are satisfied with the [FEC file](emea-fra-fec-audit-file.md) generated by using [Electronic Reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) (ER) and [Audit Trail](../../general-ledger/view-journal-entries-transactions.md#audit-trail) features.
 
 When you generate and archive the FEC, you store the file in a secure location, such as Azure Blob or SharePoint, with access controlled by a system administrator.
-Dynamics 365 Finance doesn't allow modification of archived files through the standard UI - immutability is enforced by storage and permissions defined by a system administrator.
-In Dynamics 365 Finance, the accounting entries are stored in the `GeneralJournalEntry` and `GeneralJournalAccountEntry` tables, together with their related references.
-The transaction records contain date, amount, text, creation date, and created-by fields. You can correct an accounting entry only by adding new reversing and correcting entries, not by changing the existing records. Dynamics 365 Finance doesn't provide any way for users to alter these records.
+Finance doesn't allow modification of archived files through the standard UI - immutability is enforced by storage and permissions defined by a system administrator.
+In Finance, the accounting entries are stored in the `GeneralJournalEntry` and `GeneralJournalAccountEntry` tables, together with their related references.
+The transaction records contain date, amount, text, creation date, and created-by fields. You can correct an accounting entry only by adding new reversing and correcting entries, not by changing the existing records. Finance doesn't provide any way for users to alter these records.
 
 *Documentation links*
 
 - [View journal entries and transactions, Audit trail](../../general-ledger/view-journal-entries-transactions.md#audit-trail)
 - [Data retention, deletion, and destruction in Microsoft 365](../../../../compliance/assurance/assurance-data-retention-deletion-and-destruction-overview.md)
 
-For information about database logging in Dynamics 365 Finance, see [Configure database logging](../../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
+For information about database logging in Finance, see [Configure database logging](../../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
 
 ### Code 180 - Generating an export file of accounting entries
 
-Event 180 is satisfied by the [FEC file](emea-fra-fec-audit-file.md) export functionality in Dynamics 365 Finance, combined with the [Archive ER destination type](../../..//fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md) setup and batch logging mechanism.
+Event 180 is satisfied by the [FEC file](emea-fra-fec-audit-file.md) export functionality in Finance, combined with the [Archive ER destination type](../../..//fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md) setup and batch logging mechanism.
 
 #### Archive destination setup
 
