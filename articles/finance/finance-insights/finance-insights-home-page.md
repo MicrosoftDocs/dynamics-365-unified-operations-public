@@ -23,7 +23,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 [!include [finance-insights-migration-banner](includes/finance-insights-migration-banner.md)]
 
-Finance insights provides configurable and extensible solutions to help you intelligently predict your company's cash flow, predict when you may receive payment for outstanding receivables, and generate a budget proposal that can help speed up your budgeting process. These features use intelligent machine learning templates to build models using data you provide (including data from a third party such as consumer report information from a bureau). These intelligent capabilities inform decision making and helps you take action to respond effectively to current and anticipated business challenges. You are responsible for any data used with, or output from, Finance insights.
+Finance insights provides configurable and extensible solutions to help you intelligently predict your company's cash flow, predict when you may receive payment for outstanding receivables, and generate a budget proposal that can help speed up your budgeting process. These features use intelligent machine learning templates to build models using data you provide (including data from a third party such as consumer report information from a bureau). These intelligent capabilities inform decision making and helps you take action to respond effectively to current and anticipated business challenges. You're responsible for any data used with, or output from, Finance insights.
 
 > [!NOTE]
 > Finance insights is available for deployment in the United States of America, Canada, the United Kingdom, Europe, Asia Pacific, Japan, Australia, and New Zealand.
@@ -46,7 +46,7 @@ Finance insights uses AI Builder credits to create financial predictions. All th
 
 ### Historical data requirements
 
-At least one year's worth of customer invoices is required to correctly train the machine learning model that is used for the Customer payment predictions feature. Three years of historical data are recommended for cash flow forecasts. Three years of historical budget and/or actuals are recommended for intelligent budget proposals.
+At least one year's worth of customer invoices is required to correctly train the machine learning model that is used for the **Customer payment predictions** feature. Three years of historical data are recommended for cash flow forecasts. Three years of historical budget and/or actuals are recommended for intelligent budget proposals.
 
 ## Configure Finance insights
 
@@ -61,7 +61,7 @@ You'll need to create a data integrator project so that data that the machine le
 When you've completed the configuration steps and set up demo data, you must set up each capability that you plan to use: customer payment predictions, cash flow forecasting, and budget proposals.
 
 ### Enable Customer payment predictions
-If you are using demo data to test customer payment predictions, you may have to import additional demo data to create your AI model successfully. 
+If you're using demo data to test customer payment predictions, you may have to import additional demo data to create your AI model successfully. 
 
 To enable Customer payment predictions, you must complete a set of steps to build a machine learning model that uses your organization's data to generate predictions about when customers are likely to pay outstanding invoices and when specific invoices are likely to be paid. For more information and the specific steps to complete, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md). 
 
