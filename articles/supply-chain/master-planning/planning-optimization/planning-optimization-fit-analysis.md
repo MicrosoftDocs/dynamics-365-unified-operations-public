@@ -87,6 +87,7 @@ The following table shows the various results that can appear after a fit analys
 | Sales quotations | Master plans with sales quotations enabled: *\#* | This feature is now supported, see [Plan based on quotations and RFQs](quotation-planning.md) | Supported |
 | Shelf life | Master plans with shelf life enabled: *\#* | This feature is now supported. | Supported |
 | Custom inventory dimensions | Tracking dimension groups with one or more custom inventory dimensions: *\#* | This feature is now supported for all versions of Supply Chain Management. No set up is required. | Supported |
+| Intercompany Planning | Setup Intercompany planning execution with planning optimization: *\#* | This scenario isn't yet supported. It is not yet possible to setup Planning Optimization to execute automatically across legal entities according to the Intercompany planning group setup and using the run menu item to invoke the actual planning execution. It is possible to run the cross legal entity planning execution manually or by setting up sequentially scheduled batch jobs for each legal entity planning execution | Future wave |
 
 ## Related information
 
