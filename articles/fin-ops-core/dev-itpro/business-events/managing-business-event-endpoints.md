@@ -111,7 +111,6 @@ Using this new information, Finance and Operations apps now proactively notify d
 
 #### Banner classification
 
-
-1. Info : if secret expiry is happening within 30 days from today 
-2. Warning : if secret expiry is happening witin 15 days from today
-3. Error : if secret expiry is happening within 1 day or it has already expired
+Info – The secret expires within the next 30 days.
+Warning – The secret expires within the next 15 days.
+Error – The secret expires within 1 day or has already expired.
