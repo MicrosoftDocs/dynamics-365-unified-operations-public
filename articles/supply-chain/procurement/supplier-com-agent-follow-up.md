@@ -123,9 +123,9 @@ To configure the email address of any user (including the agent identity user):
 
 If you're a user without administrator rights in Supply Chain Management, you can configure your own parameters to use in the email communication. The procedure is almost identical. The only difference is the location of your own **User Options** page. To find it, select the settings gear icon at the upper right side of the screen, and choose **User Options** from the menu.
 
-## Configure the receivers of the follow-up emails
+## Configure the email receivers
 
-To choose the recipient of the follow-up emails for a vendor, follow these steps:
+To choose the recipient of the follow-up emails for a specific vendor, follow these steps:
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Find and open the vendor you want from the list.
