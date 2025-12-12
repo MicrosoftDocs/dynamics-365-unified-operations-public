@@ -28,7 +28,7 @@ The Supplier Communications Agent helps you perform the following actions:
 - Configure how emails are generated for each task.
 - Review the draft emails that the agent generates. After you review each message, you can modify it, and send it. To generate the emails, the agent uses data from the purchase order lines and related tables.
 
-By default, the system provides two premade tasks that you can use to find purchase orders that require action:
+By default, the system provides two "out of the box" tasks that you can use to find purchase orders that require action:
 
 - *Unconfirmed purchase orders* – This task finds purchase orders that are assigned to you, have a delivery date within the next 60 days, and the vendor didn't yet confirm (that is, the confirmed delivery date is blank). The task uses the following specific criteria:
 
@@ -100,7 +100,7 @@ To configure automatic sending of follow-up emails without requiring user review
 1. Open the **Configuration** tab.
 1. On the **General** FastTab, set **Batch email provider** to *Graph*. This setting turns on the batch email provider.
 1. On the **Enabled interactive email providers** FastTab, ensure that *Graph* is listed in the **Enabled** column.
-1. On the **Microsoft Graph settings**, ensure that the **Application ID** and **Application secret** fields had been filled in by your organization's Azure tenant admin. Learn more in [Configure Microsoft Graph in Dynamics 365 finance and operations apps](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md#configure-microsoft-graph-in-dynamics-365-finance-and-operations-apps).
+1. On the **Microsoft Graph settings** tab, ensure that your organization's Azure tenant admin fills in the **Application ID** and **Application secret** fields. For more information, see [Configure Microsoft Graph in Dynamics 365 finance and operations apps](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md#configure-microsoft-graph-in-dynamics-365-finance-and-operations-apps).
 <!-- KFM: Do we also need to ensure that *Graph* is listed in the **Enabled** column on the **Enabled interactive email providers** FastTab? > <!-- Bogdana: yes, good catch! I added it. -->
 <!-- KFM: Should we also mention the settings on the **Microsoft Graph settings** tab? This was highlighted (but not otherwise mentioned) in https://msdyneng.visualstudio.com/FinOps/_workitems/edit/1036647.> <!-- Bogdana: yes, this is correct. Their tenant admin should do this part, I had added the step and link to the documentation. The field **Application key** mentioned in that documentation, it changed name to **Application secret** in the UI. My team doesn't own that part of the documentation, but I can update it anyways, as long as I don't step on anybody's feet. Shall I do that? -->
 
@@ -111,6 +111,7 @@ When a user reviews and sends an email that the agent drafts, the email comes fr
 When the system automatically sends an email without user review, the email comes from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address. <!-- KFM: In the section "Configure automatic sending of follow-up emails", it seems like we now provide a procedure for defining this. Should we link to that instead of saying it's the agent identity user? --> <!-- Bogdana: I moved it from there, here below, as that part was the admin part in Azure, and here is the admin part in FnO. It makes more sense now. Much cleaner and delimited. Thanks for the comment. -->
 
 To configure the email address of any user (including the agent identity user):
+
 1. Sign in to Supply Chain Management as an administrator. <!-- KFM: I'm not sure about this step. Should this instead be that admin? Or does it matter? Or maybe it needs to be the agent identity user (as implied in https://msdyneng.visualstudio.com/FinOps/_workitems/edit/1045291)? --> <!-- Bogdana: This is an awesome review comment. The steps as they were when you commented, were valid only for the current user, to edit their own email setup. Not valid for agent identity setup of email and name. There is a variation of these steps, intended for the FnO admin, where they can configure all users, so it will apply to both a human user and to an agent identity user. I'll use that variation, so that it applies to all.-->
 1. Go to **System administration** \> **Users**.
 1. Select the user you want to configure, and open **User options**.
@@ -120,7 +121,7 @@ To configure the email address of any user (including the agent identity user):
     - **Sender email** – Enter the email address that should appear in the **From** field of the follow-up emails.
     - **Name** - The generated content of the emails concludes with a "Best regards" signature that includes the name configured in this field.
 
-If you are an user without administrator rights in Supply Chain Management, you can configure your own parameters to be used in the email communication. The procedure is almost identical. The only difference is the location of your own **User Options** page. To find it, click on the settings gear icon at the upper right side of the screen, and choose **User Options** from the menu.
+If you're a user without administrator rights in Supply Chain Management, you can configure your own parameters to use in the email communication. The procedure is almost identical. The only difference is the location of your own **User Options** page. To find it, select the settings gear icon at the upper right side of the screen, and choose **User Options** from the menu.
 
 ## Configure the receivers of the follow-up emails
 
@@ -129,11 +130,11 @@ To choose the recipient of the follow-up emails for a vendor, follow these steps
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Find and open the vendor you want from the list.
 1. On the **Contact information** FastTab, define a list of contacts for the vendor. The agent chooses which contact to use, as follows:
-    - If it exists, the agent gives first priority to a contact information line with the **Purpose** of type *Purchase order communications*. Learn more in [Create vendor contact information of type *Purchase order communications*](#optional-create-vendor-contact-information-of-type-purchase-order-communications). This option has priority, no matter whether the agent task is set up to group emails per vendor or not.
+    - If it exists, the agent gives first priority to a contact information line with the **Purpose** of type *Purchase order communications*. Learn more in [Create vendor contact information of type *Purchase order communications*](#optional-create-vendor-contact-information-for-purchase-order-communications-type). This option has priority, no matter whether the agent task is set up to group emails per vendor or not.
     - If the agent task is configured to send emails grouped per vendor, the agent uses the contact information of that vendor, which has the field **Primary** set. If there's no line set as **Primary**, then one of the lines of **Type** = *Email address* is chosen.
     - If the agent task generates emails per purchase order, the agent prioritizes the **Email** field of the purchase order, if set. Otherwise, it falls back on the vendor's contact information.
 
-## (Optional) Create vendor contact information of type *Purchase order communications*
+## (Optional) Create vendor contact information for *Purchase order communications* type
 
 First, create an address and contact information purpose type:
 
@@ -165,7 +166,7 @@ The Supplier Communications Agent includes a batch job that runs the agent autom
     :::image type="content" source="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png" alt-text="Screenshot showing the column filter for finding a batch job by its description." lightbox="media/supplier-com-agent-follow-up/supplier-agent-batch-job.png":::
 
 1. Select the job, and then select **Recurrence** from the Action Pane.
-1. In the **Define recurrence** dialog, set up the run schedule as desired, then select **OK**.
+1. In the **Define recurrence** dialog, set up the run schedule as desired, and then select **OK**.
 
     :::image type="content" source="media/supplier-com-agent-follow-up/supplier-agent-batch-job-schedule.png" alt-text="Screenshot showing the settings provided for scheduling a batch job." lightbox="media/supplier-com-agent-follow-up/supplier-agent-batch-job-schedule.png":::
 
