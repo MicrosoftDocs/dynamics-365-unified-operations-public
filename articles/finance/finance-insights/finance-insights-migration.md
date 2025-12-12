@@ -19,89 +19,97 @@ This article provides comprehensive guidance for migrating Finance insights from
 
 ## Overview
 
-Finance insights is transitioning to Business performance analytics as its data backend. This migration is necessary due to the Export to Data Lake service deprecation. Microsoft manages the migration process for all customers.
+Finance insights is transitioning to Business performance analytics as its data backend. This migration is necessary due to the deprecation of the Export to Data Lake service. Microsoft manages the migration process for all customers.
 
-**Important dates:**
-- Export to Data Lake deprecated: November 2024
-- Migration window: Now through Q1 2026
-- Export to Data Lake discontinuation: Q1 2026
+> [!IMPORTANT]
+> **Important dates:**
+>
+> - Export to Data Lake deprecated: November 2024
+> - Migration window: Now through Q1 2026
+> - Export to Data Lake discontinuation: Q1 2026
 
 For more information about the Export to Data Lake deprecation, see [Export to Data Lake in finance and operations apps](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md).
 
 ### Migration benefits
 
 The Finance insights migration delivers four key benefits:
+
 1. Improved data refresh performance - Data refresh is the process of extracting transaction data from Dynamics 365 finance and operations, transforming it for analytics, and making it available in Business performance analytics for Finance insights predictions.
-Performance improvements come from:
-  - Parallel processing of multiple entities simultaneously
-  - Incremental extraction (only changed data, not full snapshots)
-  - Optimized transformations with precomputed aggregations
-  - Dataverse performance optimized for Power Platform workloads
+   Performance improvements come from:
+   - Parallel processing of multiple entities simultaneously
+   - Incremental extraction (only changed data, not full snapshots)
+   - Optimized transformations with precomputed aggregations
+   - Dataverse performance optimized for Power Platform workloads
 
-2. Enhanced reliability and scalability:
-  - Automatic retry logic for failed transformations
-  - Data validation ensuring consistency between Finance & Operations and BPA
-  - Data pipeline health monitoring and alerting
-  - Self-healing with automatic recovery from transient failures
+1. Enhanced reliability and scalability:
+   - Automatic retry logic for failed transformations
+   - Data validation ensuring consistency between Finance & Operations and BPA
+   - Data pipeline health monitoring and alerting
+   - Self-healing with automatic recovery from transient failures
 
-- Scalability improvements:
-  - Elastic compute that scales automatically with data volume
-  - Storage that can expand as needed
-  - Optimized for enterprises with many legal entities
+   - Scalability improvements:
+     - Elastic compute that scales automatically with data volume
+     - Storage that can expand as needed
+     - Optimized for enterprises with many legal entities
 
+1. The Business performance analytics backend provides a modern, extensible platform that enables Microsoft to deliver new Finance insights features more rapidly.
+   - Dimensional data model covering full Order-to-Cash value chain and beyond
+   - Extensible design with new dimensions and facts added quarterly
+   - Mature infrastructure using proven Business performance analytics capabilities
 
-3. The Business performance analytics backend provides a modern, extensible platform that enables Microsoft to deliver new Finance insights features more rapidly.
-  - Dimensional data model covering full Order-to-Cash value chain and beyond
-  - Extensible design with new dimensions and facts added quarterly
-  - Mature infrastructure using proven Business performance analytics capabilities
-
-4. Seamless integration with Business performance analytics - If you use or plan to use Business performance analytics, Finance insights now shares the same data foundation, eliminating data inconsistencies and enabling unified analysis.
-- Finance insights predictions based on same Business performance analytics analytical models
-- Unified Order-to-Cash facts and dimensions
-- Synchronized data refresh schedules
+1. Seamless integration with Business performance analytics - If you use or plan to use Business performance analytics, Finance insights now shares the same data foundation, eliminating data inconsistencies and enabling unified analysis.
+   - Finance insights predictions based on same Business performance analytics analytical models
+   - Unified Order-to-Cash facts and dimensions
+   - Synchronized data refresh schedules
 
 ### Migration process
-Microsoft handles the migration for all customers. Customers receive advance notification (minimum 30 days before migration), are informed of migration schedule and status, and receive support throughout the migration process.
 
-Customers don't need to manually uninstall Export to Data Lake, configure Business performance analytics for Finance insights, migrate machine learning models or recreate predictions.
+Microsoft handles the migration for all customers. Customers receive advance notification (at least 30 days before migration), are informed of the migration schedule and status, and receive support throughout the migration process.
+
+Customers don't need to manually uninstall Export to Data Lake, configure Business performance analytics for Finance insights, migrate machine learning models, or recreate predictions.
 
 ### Opting out of migration
 
-If you choose not to migrate, you'll lose access to Finance insights features after Q1 2026 when Export to Data Lake is discontinued. There's no option to continue using Finance Insights 1.0.0.x beyond that date.
+If you choose not to migrate, you lose access to Finance insights features after Q1 2026 when Export to Data Lake is discontinued. There's no option to continue using Finance Insights 1.0.0.x beyond that date.
 
-If you'd like to opt out of the migration and discontinue using Finance insights entirely, uninstall Finance insights before your scheduled migration date. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md). 
+If you want to opt out of the migration and discontinue using Finance insights entirely, uninstall Finance insights before your scheduled migration date. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md).
 Uninstalling Finance insights removes all Finance insights functionality, including prediction models and historical data.
 
 ### What's changed
-Storage: 
-From: Azure Data Lake
-To: Dataverse
 
-Data pipeline:
-From: Export to Data Lake
-To: Business performance analytics
+**Storage:**  
+From: Azure Data Lake  
+To: Dataverse  
+
+**Data pipeline:**  
+From: Export to Data Lake  
+To: Business performance analytics  
 
 ### What stays the same
 
-Finance insights features:
+**Finance insights features:**
+
 - Customer payment predictions
 - Cash flow forecasting
 - Same user interface in Dynamics 365 Finance
 - Same AI Builder integration
 
-Your models:
-- Existing prediction models 
+**Your models:**
+
+- Existing prediction models
 - Historical predictions retained
 - No retraining required - models transfer automatically
 
-User experience:
+**User experience:**
+
 - Finance insights workspaces unchanged
 - Same workflows for predictions
 - Same AI Builder credit usage model
 
 ### Getting support
 
-For questions and support on this migration, contact Microsoft support and provide: 
+For questions and support on this migration, contact Microsoft support and provide:
+
 - Environment ID and name
 - Migration date
 - Specific error messages or issues
@@ -111,7 +119,7 @@ For questions and support on this migration, contact Microsoft support and provi
 #### Additional resources
 
 - [Finance insights migration FAQ](finance-insights-migration-faq.md) - Common questions about migration
-- [Business performance analytics home page](../business-performance-analytics/business-performance-analytics-home-page.md) 
+- [Business performance analytics home page](../business-performance-analytics/business-performance-analytics-home-page.md)
 - [Finance insights home page](finance-insights-home-page.md) - Overview of Finance Insights
 - [Uninstall Finance insights](uninstall-finance-insights.md) - Opt-out instructions
 
@@ -119,6 +127,6 @@ For questions and support on this migration, contact Microsoft support and provi
 
 ---
 
-**Last updated:** December 2025
-**Applies to:** Customers using Finance Insights 1.0.0.x
+**Last updated:** December 2025  
+**Applies to:** Customers using Finance Insights 1.0.0.x  
 **Migration deadline:** Q1 2026
