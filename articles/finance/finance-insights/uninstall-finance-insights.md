@@ -20,11 +20,13 @@ This article explains how to uninstall Finance insights from your Dynamics 365 F
 ## Overview
 
 You may need to uninstall Finance insights if you:
+
 - Want to opt out of the Finance insights 1.0.0.x -> 1.2.x migration before your scheduled migration date
 - No longer need Finance insights capabilities
 - Are troubleshooting issues and need to perform a clean reinstall
 
 Uninstalling Finance insights permanently deletes:
+
 - All customer payment prediction models
 - All cash flow forecast models
 - Historical prediction data
@@ -35,10 +37,11 @@ This action can't be undone. Make sure to back up any data you need before unins
 ## Prerequisites
 
 Before uninstalling Finance insights, ensure you have:
+
 - System administrator access to your Dynamics 365 finance and operations environment
 - Access to Power Platform admin center
 
-### Uninstall Finance insights 1.0.0.x
+## Uninstall Finance insights 1.0.0.x
 
 Two options are available for uninstalling Finance insights 1.0.0.x: code-based uninstallation and manual uninstallation.
 
@@ -49,7 +52,7 @@ Before uninstalling, disable Finance insights features in your environment:
 1. Start by navigating to the Finance insights set up page within the Dynamics 365 finance and operations portal. Do this by:
    - Opening Finance and Operations
    - Searching for "Finance insights" and selecting one of the setup payments such as customer payment predictions or cash flow forecast
-2. In each setup page, disable the **Enable feature** switch for any active model. Doing so helps to clean up any legacy metadata from the current version
+1. In each setup page, disable the **Enable feature** switch for any active model. Doing so helps to clean up any legacy metadata from the current version.
 
 ### Step 2: Uninstall Finance insights solutions
 
@@ -118,21 +121,21 @@ Choose one of the following uninstallation methods:
     start();
     ```
 
-2. If the operation is successful, you receive the following message: "Finance insights solutions removed successfully."
+1. If the operation is successful, you receive the following message: "Finance insights solutions removed successfully."
 
 #### Option 2: Manual uninstallation
 
 You can manually uninstall Finance insights through the Power Platform admin center. The solutions must be manually deleted in the following order:
 
 1. Finance insights service anchor
-2. Finance insights solution anchor
-3. Finance insights identities PROD
-4. Finance insights AI solution
-5. Dynamics 365 finance and operations insights anchor
-6. Dynamics 365 finance and operations insights
-7. Finance insights service permissions PROD
-8. Finance insights service
-9. Dynamics 365 finance and operations MDL folder prod
+1. Finance insights solution anchor
+1. Finance insights identities PROD
+1. Finance insights AI solution
+1. Dynamics 365 finance and operations insights anchor
+1. Dynamics 365 finance and operations insights
+1. Finance insights service permissions PROD
+1. Finance insights service
+1. Dynamics 365 finance and operations MDL folder prod
 
 To delete each of the solutions, follow these steps:
 
@@ -145,10 +148,10 @@ Deleting all of the solutions requires approximately 30 minutes. If the operatio
 
 ### Step 3: Uninstall Business performance analytics (optional, Finance insights 1.2.x only)
 
-If you're using Finance insights 1.2.x and you're not using Business performance analytics for other purposes, you can optionally uninstall Business performance analytics to free up Dataverse storage.
-
 > [!IMPORTANT]
 > Only uninstall Business performance analytics if you're not using it otherwise. If you're unsure, keep Business performance analytics installed.
+
+If you're using Finance insights 1.2.x and you're not using Business performance analytics for other purposes, you can optionally uninstall Business performance analytics to free up Dataverse storage.
 
 For more information about uninstalling Business performance analytics, see [Uninstall Business performance analytics](../business-performance-analytics/uninstall-bpa.md).
 
@@ -157,26 +160,29 @@ For more information about uninstalling Business performance analytics, see [Uni
 After uninstalling, verify that Finance insights have been removed:
 
 1. In Dynamics 365 Finance, navigate to **Credit and collections** workspace.
-2. Verify that payment prediction tiles are no longer visible.
-3. Navigate to **Cash and bank management** workspace.
-4. Verify that cash flow forecast tiles are no longer visible.
-5. In LCS, verify that Finance insights add-in is no longer listed under environment add-ins.
+1. Verify that payment prediction tiles are no longer visible.
+1. Navigate to **Cash and bank management** workspace.
+1. Verify that cash flow forecast tiles are no longer visible.
+1. In LCS, verify that Finance insights add-in is no longer listed under environment add-ins.
 
 ### Reenabling Finance insights
 
 If you need to reinstall Finance insights after uninstalling:
 
 For Finance insights 1.2.x:
+
 - Follow the installation instructions in [Configuration for Finance insights](configure-for-fin-insites.md).
 - You'll need to retrain all prediction models.
 - Historical prediction data will not be recoverable.
 
 For Finance insights 1.0.0.x:
+
 - Finance insights 1.0.0.x is deprecated and won't be available after Q1 2026.
 
 ### Impact of uninstalling
 
 Data loss - uninstalling Finance insights results in permanent deletion of:
+
 - All trained prediction models (customer payment predictions, cash flow forecasts).
 - Historical prediction results.
 - Model training history.
@@ -184,6 +190,7 @@ Data loss - uninstalling Finance insights results in permanent deletion of:
 - Finance insights configuration settings.
 
 After uninstalling, you'll lose access to:
+
 - Customer payment prediction capabilities
 - Cash flow forecasting with AI predictions
 - Finance insights workspaces and tiles
@@ -195,18 +202,21 @@ After uninstalling, you'll lose access to:
 ### Troubleshooting
 
 If the uninstallation fails:
- - Check that you have necessary permissions
- - Verify no active jobs or processes are using Finance insights
- - Try the uninstallation again
- - Contact Microsoft support if issues persist
+
+- Check that you have necessary permissions
+- Verify no active jobs or processes are using Finance insights
+- Try the uninstallation again
+- Contact Microsoft support if issues persist
 
 If Finance insights features remain visible after uninstalling:
- - Wait up to 1 hour for cleanup to complete
- - Clear browser cache and restart browser
- - Verify all steps were completed
- - Contact Microsoft support if issues persist
+
+- Wait up to 1 hour for cleanup to complete
+- Clear browser cache and restart browser
+- Verify all steps were completed
+- Contact Microsoft support if issues persist
 
 For assistance with uninstalling Finance insights, contact Microsoft support and provide:
+
 - Environment ID and name
 - Finance insights version (1.0.0.x or 1.2.x)
 - Steps completed before encountering issues
