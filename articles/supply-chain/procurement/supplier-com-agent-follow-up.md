@@ -68,7 +68,7 @@ The following procedure explains how to set up agent tasks to find purchase orde
     > [!IMPORTANT]
     > If your system is set up to send emails automatically, the email footer is mandatory.
 
-1. Select the tone of the emails (*Casual* or *Formal*, or *Urgent* or *Non-urgent*).
+1. Select the tone of the emails (*Casual* or *Formal*, *Urgent* or *Non-urgent*).
 
 ### Examples
 
@@ -89,13 +89,38 @@ Here are some examples of other tasks that you might set up:
     - The **Orderer (header)** field on the header is set to your user account (the current user).
     - The **Vendor (group)** field is set to *A*.
 
+## Configure automatic sending of follow-up emails
+
+To configure automatic sending of follow-up emails without requiring user review, follow these steps:
+
+1. Sign in to Supply Chain Management as an administrator. <!-- KFM: Other requirements here? Should this user also be the one from whom the emails are sent? OR maybe this should be the agent identity user? --> <!-- Bogdana: here it just needs an admin. -->
+1. Go to **System administration** \> **Workspaces** \> **Feature management**.
+1. Make sure the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature is turned on. This feature is optional and is turned off by default. Learn more in [Set up and configure the Supplier Communications Agent](supplier-com-agent-setup.md).
+1. Go to **System administration** \> **Setup** \> **Email** \> **Email parameters**.
+1. Open the **Configuration** tab.
+1. On the **General** FastTab, set **Batch email provider** to *Graph*. This setting turns on the batch email provider.
+1. On the **Enabled interactive email providers** FastTab, ensure that *Graph* is listed in the **Enabled** column.
+1. On the **Microsoft Graph settings**, ensure that the **Application ID** and **Application secret** fields had been filled in by your organization's Azure tenant admin. Learn more in [Configure Microsoft Graph in Dynamics 365 finance and operations apps](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md#configure-microsoft-graph-in-dynamics-365-finance-and-operations-apps).
+<!-- KFM: Do we also need to ensure that *Graph* is listed in the **Enabled** column on the **Enabled interactive email providers** FastTab? > <!-- Bogdana: yes, good catch! I added it. -->
+<!-- KFM: Should we also mention the settings on the **Microsoft Graph settings** tab? This was highlighted (but not otherwise mentioned) in https://msdyneng.visualstudio.com/FinOps/_workitems/edit/1036647.> <!-- Bogdana: yes, this is correct. Their tenant admin should do this part, I had added the step and link to the documentation. The field **Application key** mentioned in that documentation, it changed name to **Application secret** in the UI. My team doesn't own that part of the documentation, but I can update it anyways, as long as I don't step on anybody's feet. Shall I do that? -->
+
 ## Configure the email sender
 
 When a user reviews and sends an email that the agent drafts, the email comes from that user's email address.
 
-When the system automatically sends an email without user review, the email comes from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address. The generated content of the emails concludes with a "Best regards" signature that includes the name configured for the agent identity user. <!-- KFM: In the section "Configure automatic sending of follow-up emails", it seems like we now provide a procedure for defining this. Should we link to that instead of saying it's the agent identity user? -->
+When the system automatically sends an email without user review, the email comes from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address. <!-- KFM: In the section "Configure automatic sending of follow-up emails", it seems like we now provide a procedure for defining this. Should we link to that instead of saying it's the agent identity user? --> <!-- Bogdana: I moved it from there, here below, as that part was the admin part in Azure, and here is the admin part in FnO. It makes more sense now. Much cleaner and delimited. Thanks for the comment. -->
 
-Learn more about how to view and edit the email address of the agent identity user (or any other user) in [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md). <!-- KFM: Maybe we don't need this anymore either? -->
+To configure the email address of any user (including the agent identity user):
+1. Sign in to Supply Chain Management as an administrator. <!-- KFM: I'm not sure about this step. Should this instead be that admin? Or does it matter? Or maybe it needs to be the agent identity user (as implied in https://msdyneng.visualstudio.com/FinOps/_workitems/edit/1045291)? --> <!-- Bogdana: This is an awesome review comment. The steps as they were when you commented, were valid only for the current user, to edit their own email setup. Not valid for agent identity setup of email and name. There is a variation of these steps, intended for the FnO admin, where they can configure all users, so it will apply to both a human user and to an agent identity user. I'll use that variation, so that it applies to all.-->
+1. Go to **System administration** \> **Users**.
+1. Select the user you want to configure, and open **User options**.
+1. Open the **Account** tab.
+1. On the **Email provider selection** FastTab, make the following settings:
+    - **Email provider ID** – Set to *Graph*.
+    - **Sender email** – Enter the email address that should appear in the **From** field of the follow-up emails.
+    - **Name** - The generated content of the emails concludes with a "Best regards" signature that includes the name configured in this field.
+
+If you are an user without administrator rights in Supply Chain Management, you can configure your own parameters to be used in the email communication. The procedure is almost identical. The only difference is the location of your own **User Options** page. To find it, click on the settings gear icon at the upper right side of the screen, and choose **User Options** from the menu.
 
 ## Configure the receivers of the follow-up emails
 
@@ -129,27 +154,6 @@ Second, use the new type on the vendor's contact information:
 To review the emails that were previously created for the various configurations, go to **Procurement and Sourcing** \> **(Preview) Supplier Communications Agent** \> **(Preview) Follow-up emails**. The configurations appear on the left, and the emails for each configuration appear on the right.
 
 Edit each message as required, then select **Send** to send it to the vendor.
-
-## Configure automatic sending of follow-up emails
-
-To configure automatic sending of follow-up emails without requiring user review, follow these steps:
-
-1. Sign in to Supply Chain Management as an administrator. <!-- KFM: Other requirements here? Should this user also be the one from whom the emails are sent? OR maybe this should be the agent identity user? -->
-1. Go to **System administration** \> **Workspaces** \> **Feature management**.
-1. Make sure the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature is turned on. This feature is optional and is turned off by default. Learn more in [Set up and configure the Supplier Communications Agent](supplier-com-agent-setup.md).
-1. Go to **System administration** \> **Setup** \> **Email** \> **Email parameters**.
-1. Open the **Configuration** tab.
-1. On the **General** FastTab, set **Batch email provider** to *Graph*. This setting turns on the batch email provider.
-<!-- KFM: Do we also need to ensure that *Graph* is listed in the **Enabled** column on the **Enabled interactive email providers** FastTab? -->
-<!-- KFM: Should we also mention the settings on the **Microsoft Graph settings** tab? This was highlighted (but not otherwise mentioned) in https://msdyneng.visualstudio.com/FinOps/_workitems/edit/1036647. -->
-1. Sign in to Supply Chain Management as the user you want unreviewed follow-up emails to come from. <!-- KFM: I'm not sure about this step. Should this instead be that admin? Or does it matter? Or maybe it needs to be the agent identity user (as implied in https://msdyneng.visualstudio.com/FinOps/_workitems/edit/1045291)? -->
-1. Go to **Common** \> **Setup** \> **User options**.
-1. Open the **Account** tab.
-1. On the **Email provider selection** FastTab, make the following settings: <!-- KFM: Does this contradict the information we provided earlier in the section "Configure the email sender"? There, we say emails come from the agent identity user -->
-    - **Email provider ID** – Set to *Graph*.
-    - **Sender email** – Enter the email address that should appear in the **From** field of the follow-up emails.
-
-Learn more in [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
 
 ## Set up the periodic agent run schedule and batch job options
 
