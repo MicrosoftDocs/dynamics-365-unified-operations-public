@@ -4,7 +4,7 @@ description: Learn about the document class type configuration for Latin America
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 12/12/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -13,29 +13,30 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-You can configure the different types of document classes that your company will use.
+You can configure the different types of document classes that your company uses.
 
 ## Prerequisites
 
-Before you can configure a document class type, the following prerequisites must be met:
+Before you can configure a document class type, make sure the following prerequisites are met:
+
 - The legal entity must have an address in a country/region within the LATAM localization.
-- Both the region-specific LATAM feature and the general feature must be enabled.
-- The prefix length configuration must already be set on the **LATAM Parameters** menu.
+- Both the region-specific LATAM feature and the general feature are enabled.
+- The prefix length configuration is already set on the **LATAM Parameters** menu.
 
 ## Set up a document class type for Latin America
 
-1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class type**.
+1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class type**.
 1. On the Action Pane, select **New**.
-1. In the **General** section, complete the **Document class type Id.** field with a code that represents the record.
-1. Complete the **Description** field with a brief description of the document class type.
-1. Complete the **Prefix** field with a prefix that will be part of the complete document number.
-1. Enable the **Unique document per voucher** toggle to ensure that the document class linked with this document class type can only be selected once within the same journal entry.
-1. Enable the **Unique account per voucher** toggle to ensure that only one account type can be posted in a voucher that uses this document class type.
+1. In the **General** section, enter a code that represents the record in the **Document class type Id.** field.
+1. Enter a brief description of the document class type in the **Description** field.
+1. Enter a prefix to use as part of the complete document number in the **Prefix** field.
+1. Select the **Unique document per voucher** toggle to ensure that the document class linked with this document class type can only be selected once within the same journal entry.
+1. Select the **Unique account per voucher** toggle to ensure that only one account type can be posted in a voucher that uses this document class type.
 1. Configure the following options in the **Payment methods** section.
 
     | Option                          | Description |
     |---------------------------------|-------------|
-    | Payment media                  | Set this option to **Yes** to use the document as a payment document. This option can only be selected if no other toggles are enabled|
+    | Payment media                  | Set this option to **Yes** to use the document as a payment document. You can only select this option if you don't enable any other toggles. |
     | Unique per voucher              | Set this option to **Yes** to specify that only one payment document is allowed per voucher posting. |
     | Replicates header information   | Set this option to **Yes** to copy the information of the document class to the rest of the voucher lines in the transaction. |
 
@@ -83,14 +84,14 @@ Before you can configure a document class type, the following prerequisites must
 
 ## Add the fiscal codification provided by the fiscal authorities
 
-You can use the **Tax application** option to add this codification.
+Use the **Tax application** option to add this codification.
 
-1.	Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class type**.
-2.	On the Action Pane, select **Tax application**.
-3.	Select **New** to add a line to the grid.
-4.	In the **Tax application Id.** field, select a value.
-5.	In the **Tax application code** field, enter the code that the fiscal authority uses to identify the document class type.
-6.	Select **Save**.
+1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class type**.
+1. On the Action Pane, select **Tax application**.
+1. Select **New** to add a line to the grid.
+1. In the **Tax application ID.** field, select a value.
+1. In the **Tax application code** field, enter the code that the fiscal authority uses to identify the document class type.
+1. Select **Save**.
 
 Learn more in [Tax application for Latin America](ltm-core-tax-application.md)
 
