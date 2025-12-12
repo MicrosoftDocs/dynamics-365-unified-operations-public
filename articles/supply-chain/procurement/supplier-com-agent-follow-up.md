@@ -136,18 +136,18 @@ To choose the recipient of the follow-up emails for a specific vendor, follow th
 
 ## (Optional) Create vendor contact information of type *Purchase order communications*
 
-First, create an address and contact information purpose type:
+First, create an **Address and contact information purpose** of type *Purchase order communications*:
 
 1. Go to **Organization administration** \> **Global address book** \> **Address and contact information purpose**.
 1. Select the three dots icon to insert a new column **Type**.
-1. Create a new line in the list, set **Type** to *Purchase Order Communications*, and set a checkmark in the field **Contact information**. Give it a name, such as *Purchase Order Agent Communications*, and save it.
+1. Create a new line in the list, set **Type** to *Purchase Order Communications*, and set a checkmark in the field **Contact information**. Give it a name, such as *My Purchase Order Agent Communications*, and save it.
 
 Second, use the new type on the vendor's contact information:
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Find and open the vendor you want from the list.
 1. On the **Contact information** FastTab, select the contact who should receive the follow-up emails and select **Edit contact information** from the FastTab toolbar.
-1. In the **Edit contact information** dialog, set **Purpose** to *Purchase Order Agent Communications*.
+1. In the **Edit contact information** dialog, set **Purpose** to the previously created type *My Purchase Order Agent Communications*.
 1. Select **OK**.
 
 ## Review and send drafted emails
