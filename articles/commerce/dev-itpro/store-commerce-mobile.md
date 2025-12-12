@@ -89,7 +89,7 @@ To create and set up a new device, follow these steps.
 1. Create a new device, and select either **Modern POS - Android** or **Modern POS - iOS** as the application type, depending on the mobile app that you're deploying. 
 
     > [!NOTE] 
-    > The **Modern POS - Android** and **Modern POS - iOS** application types are also used to deploy the current hybrid apps for Android and iOS. After the deprecation of MPOS, the labels for these application types will be updated to **Store Commerce - Android** and **Modern POS - iOS**. 
+    > The **Modern POS - Android** and **Modern POS - iOS** application types are also used to deploy the current hybrid apps for Android and iOS. After the deprecation of MPOS, the labels for these application types will be updated to **Store Commerce - Android** and **Store Commerce - iOS**. 
 
 ### Register setup
 
@@ -99,7 +99,7 @@ You can create a new register and associate it with the device that you created,
 
 If you're repurposing a screen layout included in the demo data that is provided with your Dynamics 365 Commerce license, the Store Commerce app automatically selects the included compact layout if the screen resolution of your device is less than 480 x 853 pixels in the portrait orientation. However, if you're creating a screen layout from scratch, or if your mobile device uses a larger resolution than the compact layout supports, ensure that you create a resolution and associated button grids that are appropriate for the phone or tablet that you plan to deploy to. For more information about screen layout configurations, see [POS user interface visual configurations](../pos-screen-layouts.md). 
 
-After devices and registers are configured, in Commerce headquarters go to **Retail and Commerce \> Retail and Commerce ID \> Distribution Schedules** and run the registers job.
+After devices and registers are configured, in Commerce headquarters go to **Retail and Commerce \> Retail and Commerce IT \> Distribution Schedules** and run the registers job.
 
 ## Activate a device
 
