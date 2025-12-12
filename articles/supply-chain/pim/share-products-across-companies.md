@@ -1,5 +1,5 @@
 ---
-title: Cross-company product sharing (preview)
+title: Cross-company product sharing
 description: Learn how to share released-product data across companies to reduce the volume of data that must be maintained and simplify maintaining product master data.
 author: sgmsft
 ms.author: shwgarg
@@ -10,16 +10,11 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Cross-company product sharing (preview)
+# Cross-company product sharing
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-<!-- KFM: Preview until 10.0.46 GA.-->
 
 Organizations that have many companies (legal entities) and a large product portfolio (for example, large sales and distribution networks) often experience a high level of duplicated product data. The [cross-company data sharing capabilities](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md) of Microsoft Dynamics 365 Supply Chain Management let you share data about released products across multiple companies. In this way, you can reduce the volume of data that must be maintained and at the same time simplify the task of maintaining product master data.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 

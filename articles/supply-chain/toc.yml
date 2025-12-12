@@ -1645,7 +1645,7 @@
           href: inventory/quality-instrument-calibration.md
         - name: Flexible sampling plans
           href: inventory/quality-flexible-sampling-plans.md
-        - name: Acceptance sampling (preview)
+        - name: Acceptance sampling
           href: inventory/quality-acceptance-sampling.md
         - name: Work with quality orders
           href: inventory/quality-orders.md
@@ -1853,7 +1853,7 @@
           href: master-planning/not-enough-capacity-error-resolution.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
-        - name: Lean manufacturing for Planning Optimization (preview)
+        - name: Lean manufacturing for Planning Optimization
           href: master-planning/lean-for-planning-optimization.md
         - name: Unified developer experience for planning optimization (preview)
           href: supply-chain-dev/planning-optimization-dev.md
@@ -2593,7 +2593,7 @@
           href: pim/uom-conversion-per-product-variant.md
         - name: Create a released product for a single company
           href: pim/tasks/create-released-product-single-company.md
-        - name: Cross-company product sharing (preview)
+        - name: Cross-company product sharing
           href: pim/share-products-across-companies.md
         - name: Product data entities
           href: pim/data-entities.md
