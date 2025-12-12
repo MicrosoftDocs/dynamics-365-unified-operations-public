@@ -150,6 +150,13 @@ See the [Payment terminals and PIN pads](../retail-peripherals-overview.md#payme
 
 [!include [banner](../includes/banner.md)]
 
+
+> [!IMPORTANT]  
+> Offline functionality for iOS and Android is **not built into the Store Commerce App for Mobile**.  
+>  
+> Customers who require offline workflows must **build and deploy their own mobile application** (for example, by using the Store Commerce SDK). The out‑of‑box mobile app does not support offline mode, and a custom app is required to enable offline capabilities.
+
+
 Starting with the Commerce version 10.0.45 release, the following offline capabilities for iOS and Android are available.
 
 - **Data synchronization scenarios in SQLite**: Enables efficient data synchronization using SQLite. 
