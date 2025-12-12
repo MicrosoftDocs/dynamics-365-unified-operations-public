@@ -1,7 +1,7 @@
 ---
 title: Reassign Business performance analytics flow ownership
 description: Learn how to reassign ownership of Business performance analytics flows when the original owner has left the organization or is no longer available.
-author: yvishwa
+author: yvishwa1
 ms.author: yvishwa
 ms.topic: how-to
 ms.custom:
@@ -28,45 +28,43 @@ This article explains how to reassign ownership of Business performance analytic
    <org url>/api/data/v9.1/workflows?<flowid>
    ```
 
-- For each flow returned:
-
+For each flow returned:
   - Go to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).
   - Select the affected environment.
   - Navigate to **Resources** > **Flows**.
-  - Follow [these instructions](/troubleshoot/power-platform/power-automate/flow-management/manage-orphan-flow-when-owner-leaves-org#assign-new-co-owners-to-an-orphaned-flow) to assign new owners for each affected flow.
+  - To assign new owners for each affected flow, see [Manage orphan flows](/troubleshoot/power-platform/power-automate/flow-management/manage-orphan-flow-when-owner-leaves-org#assign-new-co-owners-to-an-orphaned-flow).
 
-1. After adding new owners, have the new owner complete these steps:
-
-   - Go to [Power Apps](https://make.powerapps.com/).
-   - Select the correct environment in the upper right corner.
-   - Go to **Flows** in the left menu.
-   - Open the details of each impacted flow.
+After adding new owners, have the new owner complete these steps:
+1. Go to [Power Apps](https://make.powerapps.com/).
+2. Select the correct environment in the upper right corner.
+3. Go to **Flows** in the left menu.
+4. Open the details of each impacted flow.
       > [!NOTE]
       > The flow might be in the **Shared with me** tab.
-   - On the right, select **Co-Owners** > **Set primary owner**.
-   - Replace the existing user with yourself.
-   - Select **Save**.
+5. On the right, select **Co-Owners** > **Set primary owner**.
+6. Replace the existing user with yourself.
+7. Select **Save**.
 
-- If the query doesn't return any records, follow these steps:
-  - Add share with yourself
-    - Go to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).
-    - Select the affected environment.
-    - Navigate to **Resources** > **Flows**.
-    - Find all flows that start with "Business performance analytics", excluding:
-      - "Business performance analytics transform job"
-      - "Business performance analytics initialization job"
-    - Follow [these instructions](/troubleshoot/power-platform/power-automate/flow-management/manage-orphan-flow-when-owner-leaves-org#assign-new-co-owners-to-an-orphaned-flow) to assign yourself as a co-owner for each affected flow.
+If the query doesn't return any records, follow these steps:
+1. Go to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).
+2. Select the affected environment.
+3. Navigate to **Resources** > **Flows**.
+4. Find all flows that start with "Business performance analytics", excluding:
+   - "Business performance analytics transform job"
+   - "Business performance analytics initialization job"
+5. For more information, see [Manage orphan flows](/troubleshoot/power-platform/power-automate/flow-management/manage-orphan-flow-when-owner-leaves-org#assign-new-co-owners-to-an-orphaned-flow) to assign yourself as a co-owner for each affected flow.
 
-  - After adding yourself as the owner:
-    - Go to [Power Apps](https://make.powerapps.com/).
-    - Select the correct environment in the upper right corner.
-    - Go to **Flows** in the left menu.
-    - Find all flows that start with "Business performance analytics", excluding:
+
+After adding yourself as the owner:
+1. Go to [Power Apps](https://make.powerapps.com/).
+2. Select the correct environment in the upper right corner.
+3. Go to **Flows** in the left menu.
+4. Find all flows that start with "Business performance analytics", excluding:
       - "Business performance analytics transform job"
       - "Business performance analytics initialization job"
             > [!NOTE]
             > The flows might be in the **Shared with me** tab.
-    - Open the details of each impacted flow.
-    - On the right, select **Co-Owners** > **Set primary owner**.
-    - Replace the existing user with yourself.
-    - Select **Save**.
+5. Open the details of each impacted flow.
+6. On the right, select **Co-Owners** > **Set primary owner**.
+7. Replace the existing user with yourself.
+8. Select **Save**.
