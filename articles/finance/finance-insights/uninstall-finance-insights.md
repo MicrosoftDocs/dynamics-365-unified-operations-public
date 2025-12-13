@@ -21,7 +21,7 @@ This article explains how to uninstall Finance insights from your Dynamics 365 F
 
 You may need to uninstall Finance insights if you:
 
-- Want to opt out of the Finance insights 1.0.0.x -> 1.2.x migration before your scheduled migration date
+- Want to opt out of the Finance insights 1.0.0.x -> 1.2.x update before your scheduled update date
 - No longer need Finance insights capabilities
 - Are troubleshooting issues and need to perform a clean reinstall
 
@@ -226,8 +226,8 @@ For assistance with uninstalling Finance insights, contact Microsoft support and
 #### Additional resources
 
 - [Finance insights home page](finance-insights-home-page.md)
-- [Finance insights migration guide](finance-insights-migration.md)
-- [Finance insights migration FAQ](finance-insights-migration-faq.md)
+- [Finance insights update guide](finance-insights-update.md)
+- [Finance insights update FAQ](finance-insights-update-faq.md)
 - [Configuration for Finance insights](configure-for-fin-insites.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: Finance insights migration guide
-description: This article provides guidance for migrating from Finance insights 1.0.0.x with Export to Data Lake to Finance insights 1.2.x with Business performance analytics.
+title: Finance insights update guide
+description: This article provides guidance for updating from Finance insights 1.0.0.x with Export to Data Lake to Finance insights 1.2.x with Business performance analytics.
 author: wei-msft
 ms.author: zhuw
 ms.topic: article
@@ -11,15 +11,15 @@ ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.38
 ---
 
-# Finance insights 1.2.x migration
+# Finance insights 1.2.x update
 
 [!include [banner](../includes/banner.md)]
 
-This article provides comprehensive guidance for migrating Finance insights from 1.0.0.x to 1.2.x.
+This article provides comprehensive guidance for updating Finance insights from 1.0.0.x to 1.2.x.
 
 ## Overview
 
-Finance insights is transitioning to Business performance analytics as its data backend. This migration is necessary due to the deprecation of the Export to Data Lake service. Microsoft manages the migration process for all customers.
+Finance insights is transitioning to Business performance analytics as its data backend. This update is necessary due to the deprecation of the Export to Data Lake service. Microsoft manages the update process for all customers.
 
 > [!IMPORTANT]
 > **Important dates:**
@@ -32,7 +32,7 @@ For more information about the Export to Data Lake deprecation, see [Export to D
 
 ### Migration benefits
 
-The Finance insights migration delivers four key benefits:
+The Finance insights update delivers four key benefits:
 
 1. Improved data refresh performance - Data refresh is the process of extracting transaction data from Dynamics 365 finance and operations, transforming it for analytics, and making it available in Business performance analytics for Finance insights predictions.
    Performance improvements come from:
@@ -64,15 +64,15 @@ The Finance insights migration delivers four key benefits:
 
 ### Migration process
 
-Microsoft handles the migration for all customers. Customers receive advance notification (at least 30 days before migration), are informed of the migration schedule and status, and receive support throughout the migration process.
+Microsoft handles the update for all customers. Customers receive advance notification (at least 30 days before update), are informed of the update schedule and status, and receive support throughout the update process.
 
-Customers don't need to manually uninstall Export to Data Lake, configure Business performance analytics for Finance insights, migrate machine learning models, or recreate predictions.
+Customers don't need to manually uninstall Export to Data Lake, configure Business performance analytics for Finance insights, update machine learning models, or recreate predictions.
 
-### Opting out of migration
+### Opting out of update
 
-If you choose not to migrate, you lose access to Finance insights features after Q1 2026 when Export to Data Lake is discontinued. There's no option to continue using Finance Insights 1.0.0.x beyond that date.
+If you choose not to update, you lose access to Finance insights features after Q1 2026 when Export to Data Lake is discontinued. There's no option to continue using Finance Insights 1.0.0.x beyond that date.
 
-If you want to opt out of the migration and discontinue using Finance insights entirely, uninstall Finance insights before your scheduled migration date. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md).
+If you want to opt out of the update and discontinue using Finance insights entirely, uninstall Finance insights before your scheduled update date. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md).
 Uninstalling Finance insights removes all Finance insights functionality, including prediction models and historical data.
 
 ### What's changed
@@ -108,7 +108,7 @@ To: Business performance analytics
 
 ### Getting support
 
-For questions and support on this migration, contact Microsoft support and provide:
+For questions and support on this update, contact Microsoft support and provide:
 
 - Environment ID and name
 - Migration date
@@ -118,7 +118,7 @@ For questions and support on this migration, contact Microsoft support and provi
 
 #### Additional resources
 
-- [Finance insights migration FAQ](finance-insights-migration-faq.md) - Common questions about migration
+- [Finance insights update FAQ](finance-insights-update-faq.md) - Common questions about update
 - [Business performance analytics home page](../business-performance-analytics/business-performance-analytics-home-page.md)
 - [Finance insights home page](finance-insights-home-page.md) - Overview of Finance Insights
 - [Uninstall Finance insights](uninstall-finance-insights.md) - Opt-out instructions
