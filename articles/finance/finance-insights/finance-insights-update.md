@@ -25,8 +25,8 @@ Finance insights is transitioning to Business performance analytics as its data 
 > **Important dates:**
 >
 > - Export to Data Lake deprecated: November 2024
-> - Migration window: Now through Q1 2026
-> - Export to Data Lake discontinuation: Q1 2026
+> - Update window: February 1, 2026 (midnight UTC) through March 31, 2026 (midnight UTC)
+> - Export to Data Lake discontinuation: February 2026
 
 For more information about the Export to Data Lake deprecation, see [Export to Data Lake in finance and operations apps](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md).
 
@@ -70,9 +70,9 @@ Customers don't need to manually uninstall Export to Data Lake, configure Busine
 
 ### Opting out of update
 
-If you choose not to update, you lose access to Finance insights features after Q1 2026 when Export to Data Lake is discontinued. There's no option to continue using Finance Insights 1.0.0.x beyond that date.
+If you choose not to update, you will lose access to Finance insights features when Export to Data Lake is discontinued. There's no option to continue using Finance Insights 1.0.0.x beyond that date.
 
-If you want to opt out of the update and discontinue using Finance insights entirely, uninstall Finance insights before your scheduled update date. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md).
+If you want to opt out of the update and discontinue using Finance insights entirely, you must uninstall Finance insights before February 1, 2026. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md).
 Uninstalling Finance insights removes all Finance insights functionality, including prediction models and historical data.
 
 ### What's changed
@@ -129,4 +129,4 @@ For questions and support on this update, contact Microsoft support and provide:
 
 **Last updated:** December 2025  
 **Applies to:** Customers using Finance Insights 1.0.0.x  
-**Migration deadline:** Q1 2026
+**Update deadline:** March 31, 2026

@@ -177,7 +177,7 @@ For Finance insights 1.2.x:
 
 For Finance insights 1.0.0.x:
 
-- Finance insights 1.0.0.x is deprecated and won't be available after Q1 2026.
+- Finance insights 1.0.0.x is deprecated and won't be available after the Export to Data Lake service is discontinued.
 
 ### Impact of uninstalling
 
