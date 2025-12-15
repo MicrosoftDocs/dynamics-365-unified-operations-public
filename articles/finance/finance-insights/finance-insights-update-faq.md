@@ -21,12 +21,12 @@ This article answers frequently asked questions about updating from Finance insi
 Microsoft is modernizing Finance insights to use Business performance analytics as its data backend instead of Export to Data Lake. This change provides better performance and reliability, and it aligns with Microsoft's Power Platform strategy. Export to Data Lake is deprecated and will be discontinued in February 2026.
 
 ## When do I need to update?
-Starting on February 1, 2026, Finance insights will be updated to use Business Performance Analytics (BPA) for the data pipeline. The update period runs from February 1, 2026 (midnight UTC) through March 31, 2026 (midnight UTC).
+Starting on February 1, 2026, Finance insights will be updated to use Business performance analytics for the data pipeline. The update period runs from February 1, 2026 (midnight UTC) through March 31, 2026 (midnight UTC).
 
-Microsoft manages the update process and will update your environment automatically during this window. Customers with Payment Prediction and Cashflow Forecast that refresh periodically are considered active and will be updated.
+Microsoft manages the update process and updates your environment automatically during this window. Customers with **Payment prediction** and **Cashflow forecast** that refresh periodically are considered active and are updated.
 
 ## Do I have to update?
-Yes, if you want to continue using Finance insights. Export to Data Lake will be discontinued and Finance insights 1.0.0.x will no longer function after that date. The update to Finance insights 1.2.x with Business performance analytics will occur automatically during the February 1 - March 31, 2026 window.
+Yes, if you want to continue using Finance insights. Export to Data Lake will be discontinued and Finance insights 1.0.0.x no longer functions after that date. The update to Finance insights 1.2.x with Business performance analytics will occur automatically during the February 1 - March 31, 2026 window.
 
 ## Who manages the update?
 Microsoft manages the update process and performs the actual update of your Finance insights configuration and models automatically.
@@ -34,7 +34,7 @@ Microsoft manages the update process and performs the actual update of your Fina
 ## How much does the update cost?
 There's no separate update fee. However, Finance insights 1.2.x requires Business performance analytics, which is included with Dynamics 365 Finance licenses.
 
-The installation of BPA will result in additional storage consumption and your organization's storage costs may increase depending on your Dynamics 365 ERP data volume. Check your Dataverse license entitlement and usage in the [Power Platform admin center](https://aka.ms/ppac).
+The installation of Business performance analytics results in additional storage consumption and your organization's storage costs may increase depending on your Dynamics 365 Finance data volume. Check your Dataverse license entitlement and usage in the [Power Platform admin center](https://aka.ms/ppac).
 
 ## Can I opt out of the update?
 If you choose not to update, you lose access to Finance insights features when Export to Data Lake is discontinued. There's no option to continue using Finance insights 1.0.0.x after this date. 
@@ -140,7 +140,7 @@ If Business performance analytics shows errors after update, contact Microsoft s
 Upgrade to Finance 10.0.38 and later before the update window begins on February 1, 2026. The update can't proceed if you're on an earlier version.
 
 ## Can I opt out of the update?
-If you do not want to proceed with the update, you must uninstall Finance insights from your environment before February 1, 2026. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md). Uninstalling Finance insights removes all Finance insights functionality, including prediction models and historical data.
+If you don't want to proceed with the update, you must uninstall Finance insights from your environment before February 1, 2026. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md). Uninstalling Finance insights removes all Finance insights functionality, including prediction models and historical data.
 
 ## What happens if I don't update?
 Finance insights features stop working when Export to Data Lake is discontinued. You lose:
@@ -175,7 +175,7 @@ No, the update preserves your trained models and historical data. Prediction acc
 No, this update is managed by Microsoft. Microsoft handles the technical update to ensure data integrity and model preservation. You're responsible for validating the update and updating any custom integrations afterward.
 
 ## What if I need to reschedule?
-Microsoft manages the update automatically during the February 1 - March 31, 2026 window. If you do not want to proceed with the update, you must uninstall Finance insights before February 1, 2026. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md).
+Microsoft manages the update automatically during the February 1 - March 31, 2026 window. If you don't want to proceed with the update, you must uninstall Finance insights before February 1, 2026. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md).
 
 ## Is there a rollback plan if update fails?
 Yes, if the update fails, Microsoft rolls back to your original Finance insights 1.0.0.x configuration. Your environment and data remain safe during update attempts.
