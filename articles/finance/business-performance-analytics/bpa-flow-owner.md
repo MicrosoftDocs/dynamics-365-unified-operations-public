@@ -1,6 +1,6 @@
 ---
-title: Reassign Business performance analytics flow ownership
-description: Learn how to reassign ownership of Business performance analytics flows when the original owner has left the organization or is no longer available.
+title: Reassign ownership of Business performance analytics flows 
+description: Learn how to reassign ownership of Business performance analytics flows.
 author: yashkv1
 ms.author: yvishwa
 ms.topic: how-to
@@ -10,7 +10,7 @@ audience: Application User
 ms.date: 12/09/2025
 ---
 
-# Reassign Business performance analytics flow ownership
+# Reassign ownership of Business performance analytics flows 
 
 This article explains how to reassign ownership of Business performance analytics flows when the original owner leaves the organization or is no longer available.
 
