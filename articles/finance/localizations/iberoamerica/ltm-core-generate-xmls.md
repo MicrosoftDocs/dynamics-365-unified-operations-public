@@ -4,7 +4,7 @@ description: Learn the configurations and steps needed to generate invoices XMLs
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: how-to
-ms.date: 12/12/2025
+ms.date: 12/15/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
