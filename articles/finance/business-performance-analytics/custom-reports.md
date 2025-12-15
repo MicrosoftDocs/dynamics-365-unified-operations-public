@@ -1,7 +1,7 @@
 ---
 title: Custom report migration
 description: Learn how to import, export, and restore custom reports in Business performance analytics.
-author: twheeloc
+author: yashkv1 
 ms.author: twheeloc
 ms.custom:
 ms.topic: how-to
@@ -39,22 +39,17 @@ To export custom reports from the source organization, follow these steps.
 2. Select **Manage** on the **Import/Export reports** tile.
 3. Select the **Export** tab, and then select **+ New** on the ribbon.
 4. Either create a new solution or select an existing unmanaged solution:
+    - To select an existing solution, follow these steps:
+        1. Select the solution that the reports should be exported to. We don't recommend using an unmanaged solution that contains objects other than reports, it might cause issues with the export.
 
-    - **To select an existing solution:**
-        1. Select the solution that the reports should be exported to.
-        
-        > [!NOTE]
-        > We don't recommend that you use an unmanaged solution that contains objects other than reports, because it might cause issues with the export.
-
-    - **To create a new solution:**
+    - To create a new solution, follow these steps:
         1. Select a publisher.
         2. Enter a display name and unique name.
-        
-        > [!NOTE]
-        > The display name is limited to 256 characters. The unique name is limited to 256 characters, including the publisher prefix, and must not contain spaces or special characters other than underscores (_).
+           The display name is limited to 256 characters. The unique name is limited to 256 characters, including the publisher prefix, and mustn't contain spaces or special characters other than underscores (_).
 
 5. After the setup is complete, select the solution from the list, and then select **Export** in the upper right.
-6. Remain on the page until the export is complete. A green banner appears with a **Download solution** button. Select this button to download the solution as a .zip file.
+6. Remain on the page until the export is complete. 
+7. To download the solution as a .zip file, click the **Download solution** button. 
 
 ## Import
 
@@ -90,7 +85,7 @@ To import custom reports into the target organization, follow these steps.
     - Any backups in the target organization layer their changes on top of the imported backup solution. 
     - To move your reports from the target organization to any other organization, import the managed backup solution first.
     - If you imported the managed solution, deleted it, and then backed up the target organization, you can't import again from the same source organization. Otherwise, conflicts are created.
-    - The backed-up version in the unmanaged solution overwrites the contents of the managed solution (even if imported again).
+    - The backed-up version in the unmanaged solution overwrites the contents of the managed solution even if imported again.
 
     > [!NOTE]
     > We recommend that you use a managed solution only if you don't plan to back up the target organization.
