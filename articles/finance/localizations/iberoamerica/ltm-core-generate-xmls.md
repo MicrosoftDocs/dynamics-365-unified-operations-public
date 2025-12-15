@@ -22,7 +22,7 @@ Before generating an invoice XML, make sure you meet the following prerequisites
 - Enable the country/region-specific Latin American (LATAM) feature, and the general LATAM feature.
 - Set the company's address to a country/region within the LATAM Globalization expansion.
 - Download the e-invoice format you want.
-- Complete the e-invoice configuration by following the steps in the corresponding Microsoft Learning article found in the country's/region's section.
+- Complete the e-invoice configuration by following the steps in the corresponding Microsoft Learning article found in the section for the country/region.
 
 ## Configure Electronic Invoice feature to generate an invoice XML
 
