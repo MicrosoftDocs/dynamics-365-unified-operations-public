@@ -4,7 +4,7 @@ description: This article explains how to uninstall Finance insights from your D
 author: wei-msft
 ms.author: zhuw
 ms.topic: article
-ms.date: 12/10/2025
+ms.date: 12/15/2025
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-20
