@@ -139,9 +139,6 @@ If Business performance analytics shows errors after update, contact Microsoft s
 ## Should I upgrade to Finance 10.0.38 before or during update?
 Upgrade to Finance 10.0.38 and later before the update window begins on February 1, 2026. The update can't proceed if you're on an earlier version.
 
-## Can I opt out of the update?
-If you don't want to proceed with the update, you must uninstall Finance insights from your environment before February 1, 2026. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md). Uninstalling Finance insights removes all Finance insights functionality, including prediction models and historical data.
-
 ## What happens if I don't update?
 Finance insights features stop working when Export to Data Lake is discontinued. You lose:
 - Customer payment predictions
