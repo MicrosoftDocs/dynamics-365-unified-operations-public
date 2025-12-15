@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Generate invoice XMLs by using the electronic document feature
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article explains how to configure and generate invoice XMLs by using the native electronic document feature. Use this method to generate XMLs if you don't need the LATAM feature.
 
