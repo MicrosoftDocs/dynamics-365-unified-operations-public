@@ -23,9 +23,6 @@ Released products and variants where the **Product lifecycle state** field is le
 
 ## Related resources
 
-For more information about product lifecycle states, see [Product lifecycle state overview](../../pim/product-lifecycle.md).
-
-For detailed information that includes steps for using product lifecycle states to exclude products from master planning and BOM-level calculations, see [Create a product lifecycle state to exclude products from Master planning](../../pim/tasks/exclude-products-master-planning.md).
-
+To learn more about product lifecycle states, including how to exclude products from master planning and BOM-level calculations, go to [Product lifecycle states](../../pim/product-lifecycle.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
