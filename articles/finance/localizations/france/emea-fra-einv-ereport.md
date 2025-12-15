@@ -144,12 +144,12 @@ Review and update the **Singaporean electronic invoice (SG)** feature configurat
 
 If these registration types and categories already exist, skip this procedure.
 
-To configure registration numbers, follow these steps.
-
 ### <a id="SIREN"></a>Set up SIREN number
 
 > [!NOTE]
 > When the output files of electronic invoices are generated, registration numbers of the **Enterprise ID (COID)** category are used as *Système d'identification du répertoire des entreprises* numbers (**SIREN**). If the **Enterprise ID (COID)** registration category already exists and has been assigned to a registration type, skip this procedure.
+
+To configure the **SIREN** registration number, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
 1. Create a registration type.
@@ -160,6 +160,8 @@ To configure registration numbers, follow these steps.
 1. In the **Registration categories** field, select **Enterprise ID (COID)**.
 
 ### <a id="SIRET"></a>Set up SIRET number
+
+To configure the *Système d’identification du répertoire des établissements* (**SIRET**) registration number, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
 1. Create a registration type.
