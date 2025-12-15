@@ -132,7 +132,7 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
     - **PolishCertificate** – select the name of the [certificate](#Tok) that you previously created.
    
 1. On the **Setups** tab, in the grid, select the **Import vendor invoices derived** feature setup and select **Edit**.
-1. On the **Applicability rules** tab, in the **Set up applicability rule** section, in the **Value** field, enter the [name of the data channel](#ImpChn) that you previously defined.
+1. On the **Import channel** tab, in the **Parameters** section, in the **Value** field for the **Start Date** parameter, enter the date starting from which the import is to be performed.
 1. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you use it in later configuration steps.
 1. Select **Save**, and close the page.
 1. The copy of the feature is always created as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
