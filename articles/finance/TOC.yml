@@ -3671,6 +3671,8 @@
                         href: localizations/iberoamerica/ltm-ledger-posting-report.md
                       - name: VAT book printing configuration
                         href: localizations/iberoamerica/ltm-vat-book.md
+                      - name: Generate invoices XMLs using electronic document feature
+                        href: localizations/iberoamerica/ltm-core-generate-xmls.md  
                       - name: Tax application for Latin America
                         href: localizations/iberoamerica/ltm-core-tax-application.md                                    
                 - name: Latvia
