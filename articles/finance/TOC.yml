@@ -4666,6 +4666,8 @@
                   href: business-performance-analytics/set-up-security.md
                 - name: Custom report import, export, and migration
                   href: business-performance-analytics/custom-reports.md
+                - name: Reassign ownership of Business performance analytics workflow
+                  href: business-performance-analytics/bpa-flow-owner.md
             - name: Key concepts in business performance analytics
               items:
                 - name: Business performance analytics data model
