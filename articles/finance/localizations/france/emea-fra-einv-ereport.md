@@ -144,13 +144,30 @@ Review and update the **Singaporean electronic invoice (SG)** feature configurat
 
 If these registration types and categories already exist, skip this procedure.
 
-### <a id="UEN"></a>Set up UEN number
+To configure registration numbers, follow these steps.
 
-To set up the Unique Entity Number (UEN) registration number, see [UEN of the business user](apac-sgp-iras-audit-file.md#company-uen).
+### <a id="SIREN"></a>Set up SIREN number
 
-### <a id="GST"></a>Set up GST number
+> [!NOTE]
+> When the output files of electronic invoices are generated, registration numbers of the **Enterprise ID (COID)** category are used as *Système d'identification du répertoire des entreprises* numbers (**SIREN**). If the **Enterprise ID (COID)** registration category already exists and has been assigned to a registration type, skip this procedure.
 
-To set up the Goods and Services Tax (GST) registration number, see [GST Registration Number of the business user](apac-sgp-iras-audit-file.md#company-gst).
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
+1. Create a registration type.
+1. In the **Country/region** field, select **FRA - France**.
+1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration categories**.
+1. Create a registration category.
+1. In the **Registration types** field, select the registration type that you created in step 2.
+1. In the **Registration categories** field, select **Enterprise ID (COID)**.
+
+### <a id="SIRET"></a>Set up SIRET number
+
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
+1. Create a registration type.
+1. In the **Country/region** field, select **FRA - France**.
+1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration categories**.
+1. Create a registration category.
+1. In the **Registration types** field, select the registration type that you created in step 2.
+1. In the **Registration categories** field, select **SIRET**.
 
 ## Set up address structure
 
