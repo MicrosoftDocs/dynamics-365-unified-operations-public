@@ -1,7 +1,7 @@
 ---
 title: Reassign Business performance analytics flow ownership
 description: Learn how to reassign ownership of Business performance analytics flows when the original owner has left the organization or is no longer available.
-author: yvishwa1
+author: yashkv1
 ms.author: yvishwa
 ms.topic: how-to
 ms.custom:
@@ -34,7 +34,7 @@ For each flow returned:
   - Navigate to **Resources** > **Flows**.
   - To assign new owners for each affected flow, see [Manage orphan flows](/troubleshoot/power-platform/power-automate/flow-management/manage-orphan-flow-when-owner-leaves-org#assign-new-co-owners-to-an-orphaned-flow).
 
-After adding new owners, have the new owner complete these steps:
+After adding new owners, follow these steps:
 1. Go to [Power Apps](https://make.powerapps.com/).
 2. Select the correct environment in the upper right corner.
 3. Go to **Flows** in the left menu.
@@ -52,7 +52,7 @@ If the query doesn't return any records, follow these steps:
 4. Find all flows that start with "Business performance analytics", excluding:
    - "Business performance analytics transform job"
    - "Business performance analytics initialization job"
-5. For more information, see [Manage orphan flows](/troubleshoot/power-platform/power-automate/flow-management/manage-orphan-flow-when-owner-leaves-org#assign-new-co-owners-to-an-orphaned-flow) to assign yourself as a co-owner for each affected flow.
+5. To assign yourself as a co-owner for each affected flow, see [Manage orphan flows](/troubleshoot/power-platform/power-automate/flow-management/manage-orphan-flow-when-owner-leaves-org#assign-new-co-owners-to-an-orphaned-flow).
 
 
 After adding yourself as the owner:
