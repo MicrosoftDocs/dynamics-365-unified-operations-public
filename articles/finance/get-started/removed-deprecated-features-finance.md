@@ -29,7 +29,20 @@ Use this list to help you plan for these removals and deprecations.
 > [!NOTE]
 > For detailed information about objects in finance and operations apps, see the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that changed or were removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Finance 10.0.47 release
+
+### Audit file (NL) Electronic Reporting format for Netherlands 
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced with **Audit File Financial XAF 4.0 in XML (NL)** ER format under the **Audit file model** model. For more information, see [Audit file (XML Auditfile Financieel, XAF)](../localizations/netherlands/emea-nl-audit-file.md). | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By January 1, 2027, the **Audit file (NL)** Electronic Reporting (ER) format under the **Audit file model** won't be supported. |
+
 ## Features removed or deprecated in the Finance release
+
 ### Budget proposal (Finance insights)
 
 | &nbsp;  | &nbsp;  |
