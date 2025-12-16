@@ -4,7 +4,7 @@
 title: Personnel management workspace
 description: This article describes the conceptual elements of the Personnel management workspace. 
 author: twheeloc
-ms.date: 05/08/2024
+ms.date: 12/02/2025
 ms.topic: article
 # optional metadata
 
@@ -57,7 +57,7 @@ When candidates appear in the **Candidates to hire** section, you can perform th
 - **Hire**
 
 > [!NOTE]
-> If the candidate list is being populated from Microsoft Dataverse, the same candidates will display across all legal entities because a legal entity has not been associated to the candidate.
+> If the candidate list is being populated from Microsoft Dataverse, the same candidates display across all legal entities because a legal entity has not been associated to the candidate.
 
 ### Starting soon
 
@@ -183,3 +183,4 @@ The **Approvals** tile provides a count of all workflow items that are pending t
 The **Address changes** tile provides a count of all the address changes that occurred during the number of days that is specified on the **Human Resources parameters** page. When you select the **Address changes** tile, a new page shows the details of any address changes. In the upper-right corner of the page, you can select **Include future address changes** to view address changes that have a future date.
 
 For more information about how to view and manage address changes, see [View and manage address changes](hr-personnel-view-address-changes.md).
+
