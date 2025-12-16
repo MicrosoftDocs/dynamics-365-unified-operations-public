@@ -33,6 +33,9 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
+| Indonesia | August 2025 | 10.0.46, also available in prior versions | Regulatory update to support  generating the e-Bupot file 
+ \([Withholding tax report for Indonesia](../localizations/indonesia/apac-idn-wht-declaration.md)\) for reporting periods starting from 2025 based on the withholding tax transactions.  |	
+| Indonesia | August 2025 | 10.0.46, also available in prior versions | Regulatory update to support  generating the [SPT Masa PPN \(Pajak Pertambahan Nilai\) VAT declaration](../localizations/indonesia/apac-idn-ppn-declaration.md) in Excel format for reporting periods starting from 2025. |	
 | Estonia | July 2025 | 10.0.46, also available in prior versions | Regulatory update to support changes in VAT declaration format for Estonia 2025. [VAT declaration for Estonia](../estonia/emea-est-vat-declaration.md) |
 | Australia | May 2025| 10.0.45, 10.0.44HF, 10.0.43HF, 10.0.42HF | Regulatory update to support changes in Payment times reporting schema (PTRS) required for Australian legal entities for periods from July 1, 2024. [Payment times reporting schema](../australia/apac-aus-payment-times-report.md) |
 | Czech Republic | May 2025 | 10.0.45, also available in prior versions | Regulatory update to support changes in VAT declaration format for Czech Republic 2025. [VAT declaration - Czech Republic](../czech-republic/emea-cze-vat-declaration-tax-declaration-model.md) |
