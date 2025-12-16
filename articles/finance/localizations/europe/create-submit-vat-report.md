@@ -2,7 +2,7 @@
 title: Create and submit VAT report
 description: This article describes how to create and submit a VAT report to the German authority with Microsoft Dynamics 365 Finance.
 author: mrolecki
-ms.author: mrolecki
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/27/2025
 ms.custom: 
@@ -28,7 +28,5 @@ To create and submit a VAT report to the German authority, follow these steps.
 1. Select **OK**.
 1. In the **Create electronic tax document** field, select **Yes**.
 1. Select **OK**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

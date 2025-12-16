@@ -2,9 +2,9 @@
 title: DE-00002 Depreciation adjustments for additional acquisitions in the second year
 description: Learn how to set up the calculation of depreciation for additional acquisitions in Microsoft Dynamics 365 Finance.
 author: mrolecki
-ms.author: mrolecki
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/04/2025
+ms.date: 12/16/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak   
@@ -19,9 +19,9 @@ ms.search.form: AssetParameters, AssetDepreciationProfile
 
 This article explains how to set up the calculation of depreciation for additional acquisitions in Microsoft Dynamics 365 Finance.
 
-This guide demonstrates how to set up the calculation of depreciation for additional acquisitions. 
+This guide demonstrates how to set up the calculation of depreciation for additional acquisitions.
 
-The following procedures were created using the DEMF demo data company.
+The following procedures were created by using the DEMF demo data company.
 
 ## Allow multiple acquisitions
 
@@ -43,7 +43,5 @@ To set up a depreciation profile, follow these steps.
 1. In the **Period frequency** field, select **Monthly**.
 1. Select the **Full year depreciation on additional acquisitions** checkbox.
 1. Select **Save**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
