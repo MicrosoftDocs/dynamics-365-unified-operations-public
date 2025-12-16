@@ -79,15 +79,15 @@ By default, the production floor execution interface automatically signs out if 
 
 To allow sessions to extend past 12 hours, the feature named *(Preview) Enables session management for users* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### Extend the session
+### Set the session timeout for a device
 
-To extend the timeout limit past 12 hours, follow these steps:
+To set the session timeout for a device, follow these steps:
 
 1. Go to **System administration \> Users \> User session management**.
 1. Do one of the following steps:
     - Find and select the row where **User ID** shows the account that you use to sign in to the device.
     - If the relevant user account isn't listed, select **New** on the Action Pane and then select the relevant **User ID** for the new row.
-1. Set **Maximum session length (hours)** to the desired number of hours, up to 2,160 hours (90 days).
+1. For your new or selected row, set **Maximum session length (hours)** to the desired number of hours, up to 2,160 hours (90 days).
 1. On the Action Pane, select **Save**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -173,7 +173,7 @@ The best practice is to clarify who is responsible for assigning and updating ca
 
 ## Related information
 
-- [Calculate requested ship dates for purchase orders](../supplier-requested-confirmed-dates.md)
-- [Improve scheduling engine performance](../scheduling-engine-performance.md)
-- [Date and time parameters used by Planning Optimization](date-time-used.md)
-- [Safety margins](safety-margins.md)
+- [Calculate requested ship dates for purchase orders](supplier-requested-confirmed-dates.md)
+- [Improve scheduling engine performance](scheduling-engine-performance.md)
+- [Date and time parameters used by Planning Optimization](planning-optimization/date-time-used.md)
+- [Safety margins](planning-optimization/safety-margins.md)

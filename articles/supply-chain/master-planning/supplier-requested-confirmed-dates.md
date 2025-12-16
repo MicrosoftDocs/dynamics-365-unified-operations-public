@@ -444,7 +444,7 @@ This scenario shows how requested ship and receipt dates are calculated when you
 
 ## Related information
 
-- [Calendars and master planning](../supply-chain-calendars-master-planning.md)
-- [Improve scheduling engine performance](../scheduling-engine-performance.md)
-- [Date and time parameters used by Planning Optimization](date-time-used.md)
-- [Safety margins](safety-margins.md)
+- [Calendars and master planning](supply-chain-calendars-master-planning.md)
+- [Improve scheduling engine performance](scheduling-engine-performance.md)
+- [Date and time parameters used by Planning Optimization](planning-optimization/date-time-used.md)
+- [Safety margins](planning-optimization/safety-margins.md)

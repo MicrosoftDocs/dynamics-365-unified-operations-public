@@ -323,7 +323,7 @@ The value for **Optimization attempts timeout** controls how many seconds can at
 
 ## Related information
 
-- [Calendars and master planning](../supply-chain-calendars-master-planning.md)
-- [Calculate requested ship dates for purchase orders](../supplier-requested-confirmed-dates.md)
-- [Date and time parameters used by Planning Optimization](date-time-used.md)
-- [Safety margins](safety-margins.md)
+- [Calendars and master planning](supply-chain-calendars-master-planning.md)
+- [Calculate requested ship dates for purchase orders](supplier-requested-confirmed-dates.md)
+- [Date and time parameters used by Planning Optimization](planning-optimization/date-time-used.md)
+- [Safety margins](planning-optimization/safety-margins.md)
