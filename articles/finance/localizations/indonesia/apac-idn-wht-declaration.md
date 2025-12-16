@@ -38,8 +38,8 @@ In the **Electronic reporting** workspace, import the latest version **WHT PPh s
 ## Set up General ledger parameters
 
 1. Go to **Tax** \> **Setup** \> **General ledger parameters**.
-1. On the **Withholding tax** tab, in the **WHT declaration format mapping** field, select **WHT PPh schema import (ID)**. 
-1. Go to **Tax** \> **Setup** \> **Withholding tax** \> **Withholding tax revenue types** to set up the **Kode Bukti Potong** withholding tax revenue type and then assign the codes to the related item withholding tax groups. The codes are required to generate the integration file by using the e-Bupot application. 
+2. On the **Withholding tax** tab, in the **WHT declaration format mapping** field, select **WHT PPh schema import (ID)**. 
+3. Go to **Tax** \> **Setup** \> **Withholding tax** \> **Withholding tax revenue types** to set up the **Kode Bukti Potong** withholding tax revenue type and then assign the codes to the related item withholding tax groups. The codes are required to generate the integration file by using the e-Bupot application. 
 
 ## Generate the withholding import file
 
@@ -47,11 +47,11 @@ The process of preparing and generating the e-Bupot file for a specific period i
 
 Follow these steps to generate the file.
 
-1. Go to **Tax** \> **Declarations** \> **Withholding tax** \> **PPH import file e-bupot 23 and 26**.
-1. Select the start and end dates for the report, then select the settlement period.
-1. Enter the transaction date, then select **OK**.
-1. Select the language. All reports are translated into US English (**en-us**) and Indonesian (**id**).
-1. Select the business type, then enter the check and document numbers. 
-1. Check whether the manager signed the report. The file includes this information. 
+1. Go to **Tax** \> **Declarations** \> **Withholding tax** \> **Withholding tax declaration (Indonesia)**.
+2. Select the start and end dates for the report, then select the settlement period.
+3. Enter the transaction date, then select **OK**.
+4. Select the language. All reports are translated into US English (**en-us**) and Indonesian (**id**).
+5. Select the business type, then enter the check and document numbers. 
+6. Check whether the manager signed the report. The file includes this information. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
