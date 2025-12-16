@@ -1466,6 +1466,14 @@
           items:
             - name: Finance insights home page
               href: finance-insights/finance-insights-home-page.md
+            - name: Migrate to Business performance analytics
+              items:
+                - name: Finance insights update
+                  href: finance-insights/finance-insights-update.md
+                - name: Finance insights update FAQ
+                  href: finance-insights/finance-insights-update-faq.md
+                - name: Uninstall Finance insights
+                  href: finance-insights/uninstall-finance-insights.md              
             - name: Setup and administration
               items:
                 - name: Configure Finance insights
