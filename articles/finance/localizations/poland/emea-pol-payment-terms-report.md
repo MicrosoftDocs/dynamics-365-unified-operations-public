@@ -44,20 +44,6 @@ Import the most recent versions of the configurations. The version description u
 > [!NOTE]
 > After you import all the ER configurations from the preceding table, set **Default for model mapping** to **Yes** for the **Payment terms model mapping** configuration.
 
-### Enable features in Feature management
-
-Microsoft recommends that you enable features to improve performance of the **Payment terms in commercial transactions** report.
-
-To enable features in Feature management, follow these steps.
-
-1. In Dynamics 365 Finance, go to **Feature management** \> **All**.
-1. In the feature list, find and select the following features:
-
-    - **Optimization of query data source creation time during execution of ER reports**
-    - **Optimize datasets memory consumption at ER reports runtime**
-
-1. Select **Enable now**.
-
 ## Scenarios covered
 
 Report generation covers the following scenarios:
@@ -79,6 +65,9 @@ Report generation covers the following scenarios:
 - Correction notes
 - Compensation between vendor and customer accounts
 - Advance invoices or prepayments
+- General journal (from 10.0.46 version of Finance) 
+
+As of version 10.0.46 of Finance, the **Payment transaction type** parameter is available in the **Calculate statistics** dialog of **Statistics on invoices** process. This parameter allows to select the types of payment transactions to include in the statistics.
 
 > [!NOTE]
 > The report doesn't include credit notes that are fully settled.
@@ -94,28 +83,29 @@ Before you generate the Payment terms report, run the **Statistics on invoices**
 To run the statistics on invoices process, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Periodic tasks** \> **Statistics on invoices** or **Accounts receivable** \> **Periodic tasks** \> **Statistics on invoices**.
-1. Select **Calculate statistics**.
-1. Select the **From** and **To** dates.
-1. Select one or more vendor or customer posting profiles. Posting profiles let you easily include vendor or customer transactions for all vendors or customers, a group of vendors or customers, or a single vendor or customer on the report that is generated. To select all available vendors and customers, leave the field blank.
-1. Optional: Select the vendor or customer group to apply an additional transaction filter. To select all available vendors and customers, leave the field blank.
-1. Select **OK** to run the process.
+2. Select **Calculate statistics**.
+3. Select the **From** and **To** dates.
+4. Select one or more **Vendor or Customer posting profiles**. Posting profiles let you easily include vendor or customer transactions for all vendors or customers, a group of vendors or customers, or a single vendor or customer on the report that is generated. To select all available vendors and customers, leave the field blank.
+5. Optional: Select the **Vendor or Customer group** to apply an additional transaction filter, to select all available vendors and customers, leave the field blank.
+6. Optional: Select the **Payment transaction types** to apply an additional transaction filter (available from 10.0.46 version of Finance), to select the types of payment transactions to include in the statistics. If this parameter is not filled in the following types will be included by default: Payment, Compensation.
+7. Select **OK** to run the process.
 
 ## Generate a payment terms report
 
 To generate a payment terms report, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Periodic tasks** \> **Statistics on invoices** or **Accounts receivable** \> **Periodic tasks** \> **Statistics on invoices**.
-1. Select **Payment terms report**, and then select the related ER format.
-1. In the **Details** field, select the detail type for the report. You can select multiple options.
+2. Select **Payment terms report**, and then select the related ER format.
+3. In the **Details** field, select the detail type for the report. You can select multiple options.
 
 	- AP details
 	- AR details
 	- Resume
 
-1. Select the report language. The current report is translated into US English (**en-us**) and Polish (**pl**).
-1. Select the **From** and **To** dates.
-1. Select the vendor or customer group to filter for specific transactions.
-1. Select the customer or vendor profile to filter for specific transactions.
-1. Select **OK** to generate the reports.
+4. Select the report language. The current report is translated into US English (**en-us**) and Polish (**pl**).
+5. Select the **From** and **To** dates.
+6. Select the vendor or customer group to filter for specific transactions.
+7. Select the customer or vendor profile to filter for specific transactions.
+8. Select **OK** to generate the reports.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
