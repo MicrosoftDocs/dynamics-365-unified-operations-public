@@ -41,7 +41,9 @@ originally published.
 |Subscription billing|	Reduce chattiness in SubBillDeferralRecognitionProcessing and SubBillDeferralRecognitionProcessingBatch| This change successfully reduced a significant amount of chattiness in the batch process. This is controlled by SubBillDeferralRecogProcChattinessReductionFlight	|On by default|
 |Subscription billing	 | Fix generate invoice with sales order performance problems|	This introduced a posting sales order batch job for billing schedule invoicing batch processing for the sales order posting process. This enables multithreaded posting resulting in parallelism and faster execution time. This is controlled by SubBillGenerateInvoiceMultiThreadedPostingFlight|	On by default|
 |Subscription billing	|Performance improvements for deferral recognition batch (Preview) |	This feature enhances the subscription billing deferral recognition batch process by processing deferral data in parallel, allowing each run to complete more efficiently.|	Feature management|
-
+|Regulatory reporting	| [Withholding tax report for Indonesia](../localizations/indonesia/apac-idn-wht-declaration.md) |	Support generating the e-Bupot file for reporting periods starting from 2025 based on the withholding tax transactions.|	Electronic Reporting configurations |
+|Regulatory reporting	| [VAT (Pajak Pertambahan Nilai) declaration for Indonesia](../localizations/indonesia/apac-idn-ppn-declaration.md) |	Support generating the SPT Masa PPN (Pajak Pertambahan Nilai) in Excel format for reporting periods starting from 2025.|	Electronic Reporting configurations |
+|Regulatory reporting	| [VAT declaration for Estonia - KMD5, KMD6](../localizations/estonia/emea-est-vat-declaration.md) |	Support generating the VAT declaration for Estonia - KMD5 for reporting periods from January to June 2025, KMD6 for reporting periods starting from July 2025.|	Electronic Reporting configurations |
 
 ## Feature enhancements included in this release
 
@@ -62,7 +64,6 @@ This section contains a table that lists the enhancements that are included in t
  |Regulatory reporting | \(Preview\) \[Italy\] Fiscal Journal modernization in Electronic Reporting |	This feature replaces the legacy SSRS-based report with a modern, PDF-based solution built on Electronic Reporting. It offers improved performance, enhances the ability to process large volumes of data across extended reporting periods, including up to a full fiscal year, while ensuring compliance with Italian fiscal requirements. |	Feature management |
  |Regulatory reporting | Enhancement of Calculate statistics for [Payment terms in commercial transactions report for Poland](../localizations/poland/emea-pol-payment-terms-report.md) |	As of version 10.0.46 of Finance, the **Payment transaction type** parameter is available in the **Calculate statistics** dialog of **Statistics on invoices** process. This parameter allows to select the types of payment transactions to include in the statistics. |	Default |
  |Regulatory reporting | Define application of exchange rates in Intrastat reporting |	This feature introduces flexibility in how amounts are calculated for Intrastat, enabling alignment with tax calculation logic. [Intrastat overview - Foreign trade parameters](../localizations/europe/emea-intrastat.md#foreign-trade-parameters) |	Default |
-
 
 ## More information
 
