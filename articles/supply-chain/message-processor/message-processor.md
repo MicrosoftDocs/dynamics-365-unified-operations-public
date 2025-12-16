@@ -104,7 +104,7 @@ You can configure the number of processor tasks that should be dedicated to each
 
 1. On the Action Pane, select **Save**.
 
-## Additional resources
+## Related information
 
 - [Clean up processed and canceled message processor messages](message-processor-cleanup.md)
 - [Business events, custom message queues, and custom message types](developer/message-processor-develop.md)

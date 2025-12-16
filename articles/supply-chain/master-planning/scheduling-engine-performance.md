@@ -321,4 +321,9 @@ The value for **Optimization attempts timeout** controls how many seconds can at
 > [!NOTE]
 > The values set for the timeouts will be applied both for scheduling of released production orders and of planned orders as part of MRP. As a result, setting very high values could significantly add to the run time of MRP when running for a plan with many planned production orders.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+## Related information
+
+- [Calendars and master planning](../supply-chain-calendars-master-planning.md)
+- [Calculate requested ship dates for purchase orders](../supplier-requested-confirmed-dates.md)
+- [Date and time parameters used by Planning Optimization](date-time-used.md)
+- [Safety margins](safety-margins.md)
