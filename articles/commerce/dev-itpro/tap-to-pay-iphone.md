@@ -53,7 +53,7 @@ To enable Tap to Pay in the hardware profile, follow these steps.
 1. In Commerce headquarters, go to **Retail and commerce** \> **Channel setup** \> **POS setup**.
 1. On the **Registers** page, open the register that is used to run the Store Commerce app on iPhone. 
 1. Open the associated hardware profile.
-1. Ensure that the Adyen connector is configured to accept the credit cards that you want to accept via Tap to Pay on iPhone, such as Visa, MasterCard, and American Express. If the Adyen connector isn't set up yet, you must do that setup first. Learn how to configure the Adyen connector in [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md).
+1. Ensure that you configure the Adyen connector to accept the credit cards that you want to accept via Tap to Pay on iPhone, such as Visa, MasterCard, and American Express. If the Adyen connector isn't set up yet, you must do that setup first. Learn how to configure the Adyen connector in [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md).
 
 > [!NOTE]
 > Only the cloud architecture for Adyen connector is supported for Tap To Pay on iPhone. Therefore, be sure to set the **Terminal architecture** property of the Adyen connector to **Cloud** instead of **Local**.
@@ -92,8 +92,8 @@ To support these additional use cases, it's useful to pair the iPhone that runs 
 If you need to share the Adyen store information with the authorization request, it can be provided using any one of the following three methods: 
 
 - Add a key value pair in the **Custom setting** property of the Adyen connector in the hardware profile. For example, you can add "AdyenStore: AdyenStoreName", replacing "AdyenStoreName" with your Adyen store name. You can use this method if you don't share a hardware profile with more than one Adyen store. If you provide the Adyen store information at the hardware profile level, this setting overrides the Adyen store value that may be set using either of the two following methods.
-- Add the Adyen store name as a part of register name by including the Adyen store name within opening and closing hash symbols ("#"). For example, if you name your register "HOUSTON-Register 14 #AdyenStoreName#", then "AdyenStoreName" represents the Adyen store that's associated with the register. You can use this method if you want the flexibility to provide the Adyen store name by register. If you provide the Adyen store information at the register level, this setting overrides the Adyen store value that may be set at the store level.
-- Add the Adyen store name as a part of the store name by including it within opening and closing hash symbols ("#"). For example, if you name your Store "HOUSTON #AdyenStoreName#", then "AdyenStoreName" represents the Adyen store that's associated with the store. You can use this method if you have one Adyen store corresponding to one store.
+- Add the Adyen store name as a part of register name by including the Adyen store name within opening and closing hash symbols ("#"). For example, if you name your register "HOUSTON-Register 14 #AdyenStoreName#", then "AdyenStoreName" represents the Adyen store associated with the register. You can use this method if you want the flexibility to provide the Adyen store name by register. If you provide the Adyen store information at the register level, this setting overrides the Adyen store value that may be set at the store level.
+- Add the Adyen store name as a part of the store name by including it within opening and closing hash symbols ("#"). For example, if you name your Store "HOUSTON #AdyenStoreName#", then "AdyenStoreName" represents the Adyen store associated with the store. You can use this method if you have one Adyen store corresponding to one store.
 
 > [!NOTE]
 > This capability was backported to Commerce versions 10.0.45 and 10.0.46, and is hidden behind a flighting flag. If you need to enable this capability in your environment, contact Microsoft support. 
@@ -133,7 +133,7 @@ After you set the **Gateway environment** property, in headquarters, go to **Ret
 - Selecting **Tender payment** activates the Tap to Pay screen on the iPhone. This screen shows the selected amount.
 - The store associate can then ask the customer to tap their physical card, or their mobile device that has a digital wallet, on the iPhone.
 - After the payment is successful, the user receives an approval message, and a payment line is added to the transaction.
-- The **Change due** dialog box appears, unless it's configured to be hidden if no balance is due. This step concludes the transaction.
+- The **Change due** dialog appears, unless it's configured to be hidden if no balance is due. This step concludes the transaction.
 
 The following example image shows screenshots of the user experience in the Store Commerce app when Tap to Pay on iPhone is enabled.
 
@@ -148,5 +148,6 @@ Tap to Pay on iPhone can't be used to authorize the remaining balance of a custo
 - Pair the iPhone with a physical PIN pad device, and use that device for balance authorizations.
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
+
 
 
